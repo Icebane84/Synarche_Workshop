@@ -1,0 +1,31 @@
+C:\Users\Chris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\langsmith\schemas.py:23: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1 import (
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.0.2, pluggy-1.6.0
+rootdir: C:\Users\Chris\Synarche_Workspace
+configfile: pyproject.toml
+plugins: anyio-4.12.0, langsmith-0.5.0
+collected 0 items / 1 error
+
+=================================== ERRORS ====================================
+__________ ERROR collecting axion-core/tests/test_agent_template.py ___________
+tests\test_agent_template.py:2: in <module>
+    from src.agents.axion.agent_template import AxionRuntime
+src\agents\axion\agent_template.py:38: in <module>
+    from .config import AxionConfig, settings
+src\agents\axion\config.py:75: in <module>
+    settings = AxionConfig()
+               ^^^^^^^^^^^^^
+src\agents\axion\config.py:45: in __init__
+    super().__init__(**kwargs)
+..\..\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for AxionConfig
+E   SOPHIA_PATH
+E     Input is not a valid path for <class 'pathlib.Path'> [type=path_type, input_value=None, input_type=NoneType]
+E   SENTINEL_PATH
+E     Input is not a valid path for <class 'pathlib.Path'> [type=path_type, input_value=None, input_type=NoneType]
+=========================== short test summary info ===========================
+ERROR tests\test_agent_template.py - pydantic_core._pydantic_core.ValidationE...
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+============================== 1 error in 0.52s ===============================

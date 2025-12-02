@@ -1,0 +1,5 @@
+# Protocol-aligned, formatter-friendly config.
+select = ["B", "D", "E", "F", "I"]
+
+# Never enforce `E501` (line length violations). This should be handled by formatters.
+ignore = ["E501", "D100"] # D100 ignored as it conflicts with standard UIP headers if not careful

@@ -1,0 +1,62 @@
+{
+  "folders": [
+    {
+      "name": "🧠 THE MIND",
+      "path": ".agent",
+    },
+    {
+      "name": "📜 THE LAW",
+      "path": "_governance",
+    },
+    {
+      "name": "⚙️ THE ENGINE",
+      "path": "axion-core",
+    },
+    {
+      "name": "🧪 THE LAB",
+      "path": "nova_forge",
+    },
+    {
+      "name": "📂 ROOT",
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      ".agent": true,
+      "_governance": true,
+      "axion-core": true,
+      "nova_forge": true,
+      ".learnings": true,
+      ".trunk": true,
+      ".vscode": true,
+      ".mypy_cache": true,
+      ".pytest_cache": true,
+      "tmp": true,
+    },
+    "cSpell.words": [
+      "Badass",
+      "DQUEST",
+      "EMPR",
+      "Episemantics",
+      "Gemification",
+      "GVRN",
+      "HIER",
+      "KAELEN",
+      "MAGN",
+      "Oathkeep",
+      "Oathkeeper",
+      "OSLM",
+      "PGPS",
+      "Pythonic",
+      "synarche",
+      "SYNG",
+    ],
+  },
+}

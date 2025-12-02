@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_WALKTHROUGH",
+  "summary": "Documented the implementation of the Soul Forging Skill.\nIncludes directory structure, registry integration, and barrel index creation.",
+  "updatedAt": "2026-03-22T08:53:49.260313200Z",
+  "version": "14"
+}

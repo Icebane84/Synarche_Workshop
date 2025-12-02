@@ -1,0 +1,38 @@
+1. Core Concepts & Themes/Themes/WLF-THEM-016_Hope_v1.0.md
+2. World & Setting/Locations/WLF-WRLD-016_WhisperingStones_v1.0.md
+2. World & Setting/WLF-WRLD-006_FortressLibrary_v1.0.md
+3. History, Lore, & Mythology/WLF-LORE-016_TheSacrifice_v1.0.md
+6. Characters/WLF-CHAR-001_Kaelen_v1.0.md
+6. Characters/WLF-CHAR-002_Garrett_v1.0.md
+6. Characters/WLF-CHAR-003_Serafina_v1.0.md
+6. Characters/WLF-CHAR-004_Valerius_v1.0.md
+6. Characters/WLF-CHAR-005_Brother_Caius_v1.0.md
+6. Characters/WLF-CHAR-006_Eldrin_v1.0.md
+6. Characters/WLF-CHAR-007_Shadow_Self_v1.0.md
+6. Characters/WLF-CHAR-008_Oathbringer_v1.0.md
+6. Characters/WLF-CHAR-009_Borin_v1.0.md
+6. Characters/WLF-CHAR-010_Elara_v1.0.md
+6. Characters/WLF-CHAR-011_Lyra_v1.0.md
+Design and Technical/beyond-oaths-a-found-familys-loyalty-aga-2026-01-04T06-58.mm
+Docs/WLF-DOC-006_CharacterBible_v1.0.md
+Docs/WLF-LORE-006_Symbols_Motifs_v1.0.md
+Unfiltered/Where Light Fades-20251218T165712Z-1-001.zip
+Unfiltered/Where Light Fades/Master Documents/Archive/6. Where Light Fades - Key Symbols & Motifs_ (Glossary of Unique Concepts.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/6. Where Light Fades - Key Symbols & Motifs_ (Glossary of Unique Concepts.md
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Ashen Abomination.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Brother Caius.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Brother Caius.pdf
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Eldrin Fallen.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Eldrin Pre.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Garret.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Ghoul Group.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Ghoul.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Hallowed Chapel (Inside).jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Kaelen Transformed.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Kaelen and Oathbringer.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Mirelurker.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Serafina.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Strays.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Valerius.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Valerius.pdf
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/where-light-fades-writing-guide-2026-01-14T06-56.mm

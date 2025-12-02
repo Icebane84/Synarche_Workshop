@@ -1,0 +1,66 @@
+# -----------------------------------------------------------------------------
+# PHOENIX SYNARCHE PROTOCOL - TRUNK CONFIGURATION
+# -----------------------------------------------------------------------------
+#
+# UNIVERSAL IDENTIFICATION & PROVENANCE (UIP)
+# 1. Artifact ID:    CFG-TRUNK-001
+# 2. Official Name:  trunk.yaml
+# 3. Version:        v11.3 (The Meta-Enforcer)
+# 4. Provenance:     Reforged: 2026-01-31
+# 5. Domain:         GVRN
+# 6. Evolution:      Authentic Persona
+# 7. Celestial Class: [STAR]
+# 8. Tier:           Strategic
+# 9. Status (State): [ACTIVE]
+# 10. Ethos:         Guardian of Linters
+# 11. Catalyst:      Agentic Readiness
+# 12. Relations:     LINK: [GVRN-SYNERGY-001], LINK: [pyproject.toml]
+# 13. Integrity Hash: [AUTO-GENERATED]
+#
+# -----------------------------------------------------------------------------
+
+# This file controls the behavior of Trunk: https://docs.trunk.io/cli
+# To learn more about the format of this file, see https://docs.trunk.io/reference/trunk-yaml
+version: 0.1
+cli:
+    version: 1.25.0
+# Trunk provides extensibility via plugins. (https://docs.trunk.io/plugins)
+plugins:
+    sources:
+        - id: trunk
+          ref: v1.7.4
+          uri: https://github.com/trunk-io/plugins
+# Many linters and tools depend on runtimes - configure them here. (https://docs.trunk.io/runtimes)
+runtimes:
+    enabled:
+        - node@22.16.0
+        - python@3.10.8
+# This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
+lint:
+    enabled:
+        - black@26.3.1
+        - bandit@1.9.3
+        - checkov@3.2.500
+        - dotenv-linter@4.0.0
+
+        - eslint@9.39.2
+        - git-diff-check
+        - hadolint@2.14.0
+        - markdownlint@0.47.0
+        - osv-scanner@2.3.2
+        - oxipng@10.1.0
+        - prettier@3.8.1
+        - ruff@0.15.0
+        - trufflehog@3.93.0
+        - yamllint@1.38.0
+    ignore:
+        - linters: [ALL]
+          paths:
+              - "open_notebook/api/routers/chat.py" # Temporary ignore while refactoring
+actions:
+    disabled:
+        - trunk-announce
+    enabled:
+        - trunk-upgrade-available
+        - trunk-check-pre-push
+        - trunk-fmt-pre-commit

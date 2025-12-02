@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Axion Celestial Chart</title>
+        <style>
+            :root {
+                --bg-deep: #050510;
+                --star-white: #e0e0f0;
+                --gold-accent: #ffd700;
+                --void-dark: #000000;
+                --glass-panel: rgba(20, 20, 35, 0.8);
+                --slot-border: rgba(100, 100, 255, 0.3);
+            }
+
+            body {
+                background-color: var(--bg-deep);
+                color: var(--star-white);
+                font-family: "Segoe UI", sans-serif;
+                margin: 0;
+                display: flex;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            /* Sidebar - Stats */
+            .sidebar {
+                width: 300px;
+                background: var(--glass-panel);
+                border-right: 1px solid var(--slot-border);
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .avatar-hex {
+                width: 200px;
+                height: 200px;
+                margin: 20px auto;
+                border: 2px solid var(--gold-accent);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2em;
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+            }
+
+            .stat-row {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0;
+                padding: 5px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            /* Main Stage - Inventory */
+            .main-stage {
+                flex-grow: 1;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: radial-gradient(circle at center, #1a1a2e 0%, #050510 100%);
+            }
+
+            .slots-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                max-width: 600px;
+            }
+
+            .slot {
+                width: 120px;
+                height: 120px;
+                background: rgba(0, 0, 0, 0.5);
+                border: 2px dashed var(--slot-border);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                position: relative;
+            }
+
+            .slot:hover {
+                border-color: var(--gold-accent);
+                box-shadow: 0 0 15px rgba(100, 100, 255, 0.5);
+            }
+
+            .slot-label {
+                font-size: 0.8em;
+                color: #888;
+                margin-bottom: 5px;
+            }
+
+            .item-card {
+                width: 90%;
+                height: 80%;
+                background: linear-gradient(135deg, #2b2b40 0%, #1a1a2e 100%);
+                border: 1px solid #444;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 0.9em;
+                text-align: center;
+                position: relative;
+            }
+
+            .item-card[data-provenance="true"] {
+                border-color: #00ff88;
+            }
+
+            .provenance-tooltip {
+                position: absolute;
+                bottom: 110%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #000;
+                border: 1px solid #fff;
+                padding: 10px;
+                width: 200px;
+                font-size: 0.8em;
+                display: none;
+                z-index: 10;
+            }
+
+            .item-card:hover .provenance-tooltip {
+                display: block;
+            }
+
+            /* Layout Positions */
+            .slot-head {
+                grid-column: 2;
+            }
+            .slot-body {
+                grid-column: 2;
+            }
+            .slot-hand {
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .slot-core {
+                grid-column: 3;
+                grid-row: 2;
+            }
+            .slot-template {
+                grid-column: 2;
+                grid-row: 3;
+                border-color: var(--gold-accent);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <h2>Axion Avatar</h2>
+            <div class="avatar-hex">🔮</div>
+            <div id="stats-panel">
+                <!-- Stats Injected Here -->
+            </div>
+        </div>
+
+        <div class="main-stage">
+            <h1>System Loadout</h1>
+            <div class="slots-container">
+                <!-- Head -->
+                <div class="slot slot-head" id="slot-Head">
+                    <span class="slot-label">HEAD (Lens)</span>
+                </div>
+
+                <!-- Body -->
+                <div class="slot slot-body" id="slot-Body">
+                    <span class="slot-label">BODY (Governance)</span>
+                </div>
+
+                <!-- Hand -->
+                <div class="slot slot-hand" id="slot-Hand">
+                    <span class="slot-label">HAND (Exec)</span>
+                </div>
+
+                <!-- Core -->
+                <div class="slot slot-core" id="slot-Core">
+                    <span class="slot-label">CORE (Seed)</span>
+                </div>
+
+                <!-- Template -->
+                <div class="slot slot-template" id="slot-Template">
+                    <span class="slot-label">TEMPLATE (Pattern)</span>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="./chart_logic.js"></script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: nova_forge
+Version: 0.1.0a0
+Requires-Dist: requests>=2.28.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: graphviz
+Dynamic: requires-dist

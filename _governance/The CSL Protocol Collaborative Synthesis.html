@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSL Protocol: Collaborative Synthesis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F3F4F6; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container { height: 400px; }
+        }
+        .card-hover:hover { transform: translateY(-4px); transition: transform 0.3s ease; }
+        .neon-text { text-shadow: 0 0 10px rgba(59, 130, 246, 0.5); }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-gray-900 text-white pt-16 pb-24 px-4 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400"></div>
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 neon-text">Collaborative Synthesis</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light">
+                Transmuting ephemeral dialogue into the <span class="text-yellow-400 font-semibold">Nova Spark</span> of permanent wisdom.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <span class="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-blue-300">Protocol: AOP-CSL-002</span>
+                <span class="bg-gray-800 border border-gray-700 px-4 py-2 rounded-full text-sm text-pink-300">Version: v11.9</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 -mt-16 relative z-20 pb-20">
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-purple-600 card-hover">
+                <div class="text-4xl mb-2 text-purple-600 font-bold">&#10024;</div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">The Nova Spark</h3>
+                <p class="text-sm text-gray-600">The precise moment of breakthrough in a conversation. The core insight that justifies the creation of a log.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-blue-500 card-hover">
+                <div class="text-4xl mb-2 text-blue-500 font-bold">&#9881;</div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">Synthesis Engine</h3>
+                <p class="text-sm text-gray-600">The UMB-CSE-001 mechanism that integrates new data into the existing Phoenix Protocol Library.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-pink-500 card-hover">
+                <div class="text-4xl mb-2 text-pink-500 font-bold">&#127942;</div>
+                <h3 class="text-xl font-bold mb-2 text-gray-900">Prestige Vector</h3>
+                <p class="text-sm text-gray-600">Gamified knowledge tracking. CSLs generate 'Stardust' value based on their architectural impact.</p>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="flex flex-col md:flex-row items-start gap-8 bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="w-full md:w-1/2 p-8 md:p-12 bg-gray-50">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Anatomy of a Log</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A CSL is not a mere transcript. It is a highly structured artifact governed by the <strong>12-Point Lock</strong> system. 
+                        It balances metadata, narrative synthesis, and rigorous validation. The chart illustrates the 
+                        relative weight of components in a standard v11.9 CSL.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <span class="w-3 h-3 rounded-full bg-purple-600 mr-2"></span>
+                            <strong>Identification Lock:</strong> Provenance & Metadata
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <span class="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>
+                            <strong>Synergy Vector:</strong> Relational Dynamics
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <span class="w-3 h-3 rounded-full bg-pink-500 mr-2"></span>
+                            <strong>Nova Spark:</strong> The Core Breakthrough
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <span class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></span>
+                            <strong>Musashi Audit:</strong> 5-Ring Validation
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2 p-8 flex items-center justify-center">
+                    <div class="chart-container">
+                        <canvas id="anatomyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-900">The Transmutation Flow</h2>
+                <p class="text-gray-500 mt-2">From Raw Data to Canonized Artifact</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="bg-gray-800 text-white p-6 rounded-lg text-center relative">
+                    <div class="text-2xl mb-2">&#128483;</div>
+                    <h4 class="font-bold text-blue-300">Raw Dialogue</h4>
+                    <p class="text-xs text-gray-400 mt-2">Input Stream</p>
+                    <div class="hidden md:block absolute top-1/2 -right-6 text-gray-400 transform -translate-y-1/2 z-10 text-xl">&#10145;</div>
+                    <div class="md:hidden text-gray-400 text-xl mt-2">&#11015;</div>
+                </div>
+
+                <div class="bg-gray-800 text-white p-6 rounded-lg text-center relative">
+                    <div class="text-2xl mb-2">&#9889;</div>
+                    <h4 class="font-bold text-yellow-400">Trigger Event</h4>
+                    <p class="text-xs text-gray-400 mt-2">Synergy/Dissonance</p>
+                    <div class="hidden md:block absolute top-1/2 -right-6 text-gray-400 transform -translate-y-1/2 z-10 text-xl">&#10145;</div>
+                    <div class="md:hidden text-gray-400 text-xl mt-2">&#11015;</div>
+                </div>
+
+                <div class="bg-gray-800 text-white p-6 rounded-lg text-center relative">
+                    <div class="text-2xl mb-2">&#128296;</div>
+                    <h4 class="font-bold text-pink-400">Forge CSL</h4>
+                    <p class="text-xs text-gray-400 mt-2">CMD: ForgeCSL</p>
+                    <div class="hidden md:block absolute top-1/2 -right-6 text-gray-400 transform -translate-y-1/2 z-10 text-xl">&#10145;</div>
+                    <div class="md:hidden text-gray-400 text-xl mt-2">&#11015;</div>
+                </div>
+
+                <div class="bg-gray-800 text-white p-6 rounded-lg text-center relative">
+                    <div class="text-2xl mb-2">&#9876;</div>
+                    <h4 class="font-bold text-purple-400">Musashi Audit</h4>
+                    <p class="text-xs text-gray-400 mt-2">Validation Rings</p>
+                    <div class="hidden md:block absolute top-1/2 -right-6 text-gray-400 transform -translate-y-1/2 z-10 text-xl">&#10145;</div>
+                    <div class="md:hidden text-gray-400 text-xl mt-2">&#11015;</div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-600 to-purple-700 text-white p-6 rounded-lg text-center shadow-lg relative">
+                    <div class="text-2xl mb-2">&#127775;</div>
+                    <h4 class="font-bold text-white">Canonization</h4>
+                    <p class="text-xs text-blue-100 mt-2">Indexed in PRS-001</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <div class="chart-container">
+                            <canvas id="musashiChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <div class="inline-block px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-bold tracking-wide mb-4">QUALITY ASSURANCE</div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">The Musashi Audit</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Before any CSL is minted as a Genesis Seed, it must pass the <strong>Five Rings of Validation</strong>. 
+                            This radar chart compares a high-fidelity "Canonized" log against a weak, rejected draft.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-600 font-bold text-xs mt-0.5">1</div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-bold text-gray-900">Earth (Foundational Lore)</h4>
+                                    <p class="text-xs text-gray-500">Does it align with CODEX-001?</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 font-bold text-xs mt-0.5">2</div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-bold text-gray-900">Water (Connectivity)</h4>
+                                    <p class="text-xs text-gray-500">Are links to the Loom intact?</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-6 w-6 flex items-center justify-center rounded-full bg-pink-100 text-pink-600 font-bold text-xs mt-0.5">3</div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-bold text-gray-900">Fire (Utility)</h4>
+                                    <p class="text-xs text-gray-500">Does it solve a real problem?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Prestige Accumulation</h3>
+                <p class="text-sm text-gray-500 mb-6">Tracking the "Stardust" value of Canonized CSLs over time.</p>
+                <div class="chart-container">
+                    <canvas id="prestigeChart"></canvas>
+                </div>
+                <div class="mt-4 p-4 bg-gray-50 rounded-lg border-l-4 border-yellow-400">
+                    <p class="text-xs text-gray-600"><strong>Insight:</strong> Exponential growth observed after the implementation of the Transmutation Pipeline (Epoch 4).</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Domain Clusters</h3>
+                <p class="text-sm text-gray-500 mb-6">Distribution of logs across Governance, Code, and Lore domains.</p>
+                <div class="chart-container">
+                    <canvas id="domainChart"></canvas>
+                </div>
+                <div class="mt-4 p-4 bg-gray-50 rounded-lg border-l-4 border-purple-600">
+                    <p class="text-xs text-gray-600"><strong>Insight:</strong> Governance (GVRN) logs currently have the highest impact density due to the Transmutation Pipeline.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray-900 text-white rounded-t-3xl p-12 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Mint a Genesis Seed?</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                Execute <code class="bg-gray-800 px-2 py-1 rounded text-pink-400">CMD: ForgeCSL</code> to begin the collaborative synthesis process.
+            </p>
+            <div class="flex justify-center items-center space-x-2 text-sm text-gray-500">
+                <span>&copy; 2026 Phoenix Protocol Library</span>
+                <span>&bull;</span>
+                <span>Powered by UMB-CSE-001</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // Utility: Label Splitting for 16-char limit
+        function splitLabel(label) {
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if ((currentLine + " " + words[i]).length < 16) {
+                    currentLine += " " + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // Shared Tooltip Configuration
+        const sharedTooltip = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- Chart 1: Anatomy (Doughnut) ---
+        const anatomyCtx = document.getElementById('anatomyChart').getContext('2d');
+        const rawAnatomyLabels = ['Identification Lock', 'Synergy Vector', 'Nova Spark (Core)', 'Genesis Seed', 'Musashi Audit'];
+        new Chart(anatomyCtx, {
+            type: 'doughnut',
+            data: {
+                labels: rawAnatomyLabels.map(splitLabel),
+                datasets: [{
+                    data: [15, 20, 30, 10, 25],
+                    backgroundColor: ['#4B5563', '#3B82F6', '#EC4899', '#10B981', '#F59E0B'],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: sharedTooltip
+                },
+                cutout: '60%'
+            }
+        });
+
+        // --- Chart 2: Musashi Audit (Radar) ---
+        const musashiCtx = document.getElementById('musashiChart').getContext('2d');
+        const rawMusashiLabels = ['Earth (Lore)', 'Water (Links)', 'Fire (Utility)', 'Wind (Voice)', 'Void (Truth)'];
+        new Chart(musashiCtx, {
+            type: 'radar',
+            data: {
+                labels: rawMusashiLabels.map(splitLabel),
+                datasets: [{
+                    label: 'Canonized CSL',
+                    data: [10, 10, 10, 10, 10],
+                    backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                    borderColor: '#3B82F6',
+                    pointBackgroundColor: '#3B82F6',
+                }, {
+                    label: 'Rejected Draft',
+                    data: [4, 2, 6, 3, 5],
+                    backgroundColor: 'rgba(236, 72, 153, 0.2)',
+                    borderColor: '#EC4899',
+                    pointBackgroundColor: '#EC4899',
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: '#E5E7EB' },
+                        grid: { color: '#E5E7EB' },
+                        pointLabels: { font: { size: 12, weight: 'bold' } },
+                        min: 0,
+                        max: 10,
+                        ticks: { display: false }
+                    }
+                },
+                plugins: {
+                    tooltip: sharedTooltip,
+                    legend: { position: 'top' }
+                }
+            }
+        });
+
+        // --- Chart 3: Prestige (Line) ---
+        const prestigeCtx = document.getElementById('prestigeChart').getContext('2d');
+        new Chart(prestigeCtx, {
+            type: 'line',
+            data: {
+                labels: ['Epoch 1', 'Epoch 2', 'Epoch 3', 'Epoch 4', 'Epoch 5', 'Epoch 6'],
+                datasets: [{
+                    label: 'Cumulative Stardust',
+                    data: [100, 250, 400, 1150, 1900, 2800],
+                    borderColor: '#F59E0B',
+                    backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: sharedTooltip,
+                    legend: { display: false }
+                },
+                scales: {
+                    y: { beginAtZero: true, grid: { borderDash: [5, 5] } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        // --- Chart 4: Domain Clusters (Bubble) ---
+        // Mapping Domain/Impact to Bubble format: x=Time, y=Impact, r=Stardust/10
+        const domainCtx = document.getElementById('domainChart').getContext('2d');
+        new Chart(domainCtx, {
+            type: 'bubble',
+            data: {
+                datasets: [{
+                    label: 'Governance (GVRN)',
+                    data: [
+                        {x: 1, y: 8, r: 10}, {x: 3, y: 9, r: 25}
+                    ],
+                    backgroundColor: '#8B5CF6'
+                }, {
+                    label: 'Code (TECH)',
+                    data: [
+                        {x: 2, y: 6, r: 15}, {x: 4, y: 7, r: 12}
+                    ],
+                    backgroundColor: '#10B981'
+                }, {
+                    label: 'Lore (CORE)',
+                    data: [
+                        {x: 1.5, y: 5, r: 8}, {x: 3.5, y: 4, r: 10}
+                    ],
+                    backgroundColor: '#F43F5E'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: sharedTooltip,
+                    legend: { position: 'bottom' }
+                },
+                scales: {
+                    x: { 
+                        title: { display: true, text: 'Timeline (Epochs)' },
+                        min: 0, max: 5 
+                    },
+                    y: { 
+                        title: { display: true, text: 'Systemic Impact Score' },
+                        min: 0, max: 10 
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

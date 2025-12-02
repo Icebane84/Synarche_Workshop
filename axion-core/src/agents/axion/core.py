@@ -1,0 +1,97 @@
+"""# AGENTS-AXION-CORE: The Event Horizon Orchestrator
+# v14.0 [OMEGA] - Unified Cognitive Processing Loop.
+"""
+
+import logging
+import time
+
+# Absolute imports from the src root (assuming src is in sys.path)
+from logic.memory.memory_system import MemorySystem
+from logic.nlp.analytical_tagger import AnalyticalTagger
+from logic.nlp.nlp_engine import AxionCognition
+from logic.utils.explanation_generator import ExplanationGenerator
+
+logger = logging.getLogger(__name__)
+
+# --- CONSTANTS ---
+MIN_QUERY_LENGTH: int = 10  # Minimum query length to trigger auto-memory storage
+
+
+class AxionAgentCore:
+    """The central orchestration engine for Axion Core.
+    Coordinates the 'Event Horizon' loop for transparent memory-augmented reasoning.
+    """
+
+    def __init__(self, db_path: str | None = None) -> None:
+        self.cognition = AxionCognition()
+        self.memory = MemorySystem(db_path=db_path)
+        self.explanation = ExplanationGenerator(self.cognition)
+        self.tagger = AnalyticalTagger()
+
+        self.session_id = f"AXION-{int(time.time())}"
+        logger.info(f"AxionAgentCore initialized. Session: {self.session_id}")
+
+    def process_event(self, user_query: str) -> str:
+        """Executes the 'Event Horizon' processing loop.
+        :param user_query: Raw user input.
+        :return: Synthesized transparent response.
+        """
+        start_time = time.time()
+        logger.info(f"Processing Event: {user_query[:50]}...")
+
+        try:
+            # 1. ANALYZE: Neural Linguistic Processing
+            self.cognition.process(user_query)
+
+            # 2. RETRIEVE: Cognitive Memory Access
+            memories = self.memory.retrieve_memories(user_query, limit=5)
+
+            # 3. SYNTHESIZE: Transparent Explanation Generation
+            response = self.explanation.generate_explanation(user_query, memories)
+
+            # 4. TAG: Analytical Metadata Extraction
+            tags = self.tagger.tag_content(response)
+
+            # 5. LOG: Experience Trace Persistence
+            duration = time.time() - start_time
+            self.memory.log_experience(
+                event_type="EVENT_HORIZON_COMPLETED",
+                module="AxionAgentCore",
+                details={
+                    "query_length": len(user_query),
+                    "match_count": len(memories),
+                    "duration_ms": int(duration * 1000),
+                    "tags": tags.get("tags", []),
+                    "session_id": self.session_id,
+                },
+                impact=0.1 if memories else 0.05,
+            )
+
+            # 6. LEARN: Auto-store interaction
+            if len(user_query) > MIN_QUERY_LENGTH:
+                self.memory.add_memory(
+                    content=f"User asked: {user_query} | Response: {response[:100]}...",
+                    domain="InteractionHistory",
+                    relevance=0.4,
+                    confidence=0.9,
+                    tags=tags.get("tags", []),
+                    source="AgentCore",
+                )
+
+        except Exception as e:
+            logger.exception("Event Horizon collapsed")
+            return f"I encountered a cognitive dissonance while processing that request: {e}"
+        else:
+            return response
+
+    def run_maintenance(self) -> None:
+        """Triggers the memory decay and transition cycle."""
+        logger.info("Starting cognitive maintenance cycle...")
+        self.memory.maintenance_cycle()
+
+
+if __name__ == "__main__":
+    # Sample Test Run
+    logging.basicConfig(level=logging.INFO)
+    agent = AxionAgentCore()
+    logger.info(agent.process_event("Tell me what you know about the Phoenix Protocol."))

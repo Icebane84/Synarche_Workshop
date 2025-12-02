@@ -1,0 +1,10 @@
+commit 706449afae3675c23529eb1dfad3a319da2e5f68
+Author: Icebane84 <rcvtiger@hotmail.com>
+Date:   Tue Jan 20 04:53:45 2026 -0500
+
+    Lore Reframing: Institutional Guilt, Eldrin's Martyrdom, and the Great Cover-Up standardized.
+
+ delete mode 100644 3. History, Lore, & Mythology/Eras_Events/Eldrin_s Era.md
+ delete mode 100644 3. History, Lore, & Mythology/Eras_Events/Eldrin_s Fall.md
+ delete mode 100644 3. History, Lore, & Mythology/Eras_Events/Eldrins Fall.md
+ delete mode 100644 3. History, Lore, & Mythology/Eras_Events/The Cover-Up.md

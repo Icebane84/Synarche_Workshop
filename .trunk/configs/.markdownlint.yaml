@@ -1,0 +1,14 @@
+# Prettier friendly markdownlint config
+extends: markdownlint/style/prettier
+
+# Phoenix Protocol Custom Rules
+customRules:
+    - "../../axion-core/tools/rules/axion-rules.cjs"
+
+rules:
+    MD001: true # Heading increment
+    MD003: { "style": "atx" } # Heading style
+    MD022: true # Blanks around headings
+    MD041: true # First line should be H1
+    MD007: { "indent": 4 } # List indentation (Law 25)
+    MD024: { "siblings_only": true } # Duplicate headings

@@ -1,0 +1,58 @@
+# Implementation Plan: Project Hephaestus Core Engine
+
+## Goal
+Transform the "Hephaestus Quartet" governance protocols into executable Python logic within [axion-core](file:///c:/Users/Chris/Synarche_Workspace/axion-core). This will enable Axion to autonomously scan, simulate, teach, and optimize.
+
+## Architecture
+We will create a new package `axion_core.hephaestus` with the following modules:
+
+```text
+axion_core/
+└── src/
+    └── hephaestus/
+        ├── __init__.py
+        ├── sentinel.py       # AOP-SENTINEL-SCAN-001 (Autonomous Audit)
+        ├── gaze.py           # AOP-ARCH-GAZE-001 (Impact Simulation)
+        ├── mentor.py         # UMB-DIDACTIC-001 (Didactic Generator)
+        └── soul.py           # METRIC-AES-001 (Elegance Metric)
+```
+
+## User Review Required
+> [!IMPORTANT]
+> This is a foundational structural change. It introduces background processing concepts (Sentinel) and AST parsing (Gaze).
+
+## Proposed Changes
+
+### [NEW] `axion_core.hephaestus` Package
+
+#### 1. The Sentinel (`sentinel.py`)
+-   **Function:** `scan_codebase(path: str) -> List[DissonanceQuest]`
+-   **Logic:**
+    -   Walks the directory tree.
+    -   Checks file timestamps/hashes to detect changes.
+    -   Runs `flake8`, `eslint` (via subprocess), and custom pattern matchers.
+    -   Calculates "Blast Radius" (stubbed for now, waiting for Gaze).
+
+#### 2. The Architect's Gaze (`gaze.py`)
+-   **Function:** `simulate_impact(target_file: str) -> ImpactReport`
+-   **Logic:**
+    -   Parses `import` statements (Python/JS) to build a dependency graph.
+    -   Recursively finds files that import the target.
+    -   Returns a list of affected files and a "Risk Score".
+
+#### 3. The Mentor's Voice (`mentor.py`)
+-   **Function:** `generate_lesson(violation_type: str, context: str) -> DidacticModule`
+-   **Logic:**
+    -   Maps error codes (e.g., "E501") to `GUIDE-AI-CODE-001` Principles.
+    -   Generates a Markdown snippet explaining the "Why".
+
+#### 4. The Artificer's Soul (`soul.py`)
+-   **Function:** `calculate_aes(code_snippet: str) -> float`
+-   **Logic:**
+    -   Heuristic analysis (Tokens per LOC, Cyclomatic Complexity).
+    -   Returns a score 1-10.
+
+## Verification Plan
+### Automated Tests
+-   Create `tests/test_hephaestus_sentinel.py` to verify scanning.
+-   Create `tests/test_hephaestus_gaze.py` to verify dependency resolution.

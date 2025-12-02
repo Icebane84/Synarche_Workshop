@@ -1,0 +1,7 @@
+C:\Users\Chris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\langchain_core\_api\deprecation.py:26: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1.fields import FieldInfo as FieldInfoV1
+Traceback (most recent call last):
+  File "c:\Users\Chris\Synarche_Workspace\axion-core\src\agents\axion\oathkeeper.py", line 140, in <module>
+    memory = MemorySystem(obsidian_bridge=bridge) if MemorySystem else None
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MemorySystem.__init__() got an unexpected keyword argument 'obsidian_bridge'
