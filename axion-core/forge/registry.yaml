@@ -1,0 +1,237 @@
+################################################
+# AXION-CORE FORGE REGISTRY
+# AUTO-GENERATED FOR OMEGA V15.0 CONTINUITY
+################################################
+
+TOOL-ASSEMBLER:
+  artifact_id: TOOL-ASSEMBLER
+  content_hash: 7812e42979c1b34567a709ffb3c803af41e5a944fc8b889fa135f91ea09b8350
+  domain: FORGE
+  official_name: assembler.py
+  path: axion-core/forge/assembler.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+defined:
+  artifact_id: defined
+  content_hash: 1a8df2f5f718ca0a805743e9d0799fdfbde275036bb75080e442386d973247fc
+  domain: FORGE
+  official_name: canonize.py
+  path: axion-core/forge/canonize.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+CORE-CARP-001:
+  artifact_id: CORE-CARP-001
+  content_hash: 974ed0a30a70fd35b4e97071648351abe480e39d9134fb3f60c5d158aebb7023
+  domain: FORGE
+  official_name: carp.py
+  path: axion-core/forge/carp.py
+  status: '[CANONIZED]'
+  version: v15.0 [OMEGA]
+TOOL-CHRONOS:
+  artifact_id: TOOL-CHRONOS
+  content_hash: 6a1cecdc4e1da8f2efd725ef8785bf33203035b518d56da935deaab27b173fe6
+  domain: FORGE
+  official_name: chronos.py
+  path: axion-core/forge/chronos.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-DRAGONSLAYER:
+  artifact_id: TOOL-DRAGONSLAYER
+  content_hash: 23d40034e660a848da5622c853929d2f59f02b31dbae4fd58d95918211206cfe
+  domain: FORGE
+  official_name: dragonslayer.py
+  path: axion-core/forge/dragonslayer.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+CORE-EMW-001:
+  artifact_id: CORE-EMW-001
+  content_hash: 755dd75e89a0aa2ea65fe885b83df95bd895d2fa676c27470d2391b91fa36038
+  domain: FORGE
+  official_name: emw.py
+  path: axion-core/forge/emw.py
+  status: '[CANONIZED]'
+  version: v15.0 [OMEGA]
+TOOL-ENUMS:
+  artifact_id: TOOL-ENUMS
+  content_hash: 1c2e858e132ba0474b8b657eb453bd2dc71394ea7ba32cc0226a64cef58a5704
+  domain: FORGE
+  official_name: enums.py
+  path: axion-core/forge/enums.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-EQUIP:
+  artifact_id: TOOL-EQUIP
+  content_hash: 48c8ef5a03792133cff908e5a43fc579555b557ba3bd955b0904c8a2f5f314b7
+  domain: FORGE
+  official_name: equip.py
+  path: axion-core/forge/equip.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-EXCEPTIONS:
+  artifact_id: TOOL-EXCEPTIONS
+  content_hash: 3d9b00069f04b1a1f7d5ca9bcd22290a75e42078d416da211858d4c48e278856
+  domain: FORGE
+  official_name: exceptions.py
+  path: axion-core/forge/exceptions.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-FORGE:
+  artifact_id: TOOL-FORGE
+  content_hash: 33041dc283c4dee970deb1065a89ddccc939e25574dbc971f44663602dad8f7d
+  domain: FORGE
+  official_name: forge.py
+  path: axion-core/forge/forge.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+CORE-HEPH-GAZE-001:
+  artifact_id: CORE-HEPH-GAZE-001
+  content_hash: 88e8f289e0265e8ceb43bf25c68555a313e2ce882bd80499306d7ae5e7a5ef40
+  domain: FORGE
+  official_name: gaze.py
+  path: axion-core/forge/gaze.py
+  status: '[CANONIZED]'
+  version: v15.0 [OMEGA]
+TOOL-GENERATE_BARRELS:
+  artifact_id: TOOL-GENERATE_BARRELS
+  content_hash: e251280313b9c6663c5dc4fee196a1f636e851ffb3817ccee848e38b9ee66a55
+  domain: FORGE
+  official_name: generate_barrels.py
+  path: axion-core/forge/generate_barrels.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-INGEST_VAULT:
+  artifact_id: TOOL-INGEST_VAULT
+  content_hash: 5cc1f905ca19a82f1137e104398c6c21773feb7b92e2e2644c8f826852ff51b9
+  domain: FORGE
+  official_name: ingest_vault.py
+  path: axion-core/forge/ingest_vault.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-LINT:
+  artifact_id: TOOL-LINT
+  content_hash: ff083d3c31904296871e10480840002b24495ed94e7ce00347cdb5eb33e4ad00
+  domain: FORGE
+  official_name: lint.py
+  path: axion-core/forge/lint.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-LOOM:
+  artifact_id: TOOL-LOOM
+  content_hash: 78878e2c65dae748110e64f81798ad1462658a98cf2e3b0db73349f5d0cc9a32
+  domain: FORGE
+  official_name: loom.py
+  path: axion-core/forge/loom.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+CORE-HEPH-MENTOR-001:
+  artifact_id: CORE-HEPH-MENTOR-001
+  content_hash: 4c81c7da7bbd085adee6121e8f4da16576ac8aad8c56a0c473146a4df67fa01e
+  domain: FORGE
+  official_name: mentor.py
+  path: axion-core/forge/mentor.py
+  status: '[CANONIZED]'
+  version: v15.0 [OMEGA]
+CORE-METRICS-001:
+  artifact_id: CORE-METRICS-001
+  content_hash: 483948dee816f73bd604c9ede204d422322736814f3320caf53787972e31b163
+  domain: FORGE
+  official_name: metrics.py
+  path: axion-core/forge/metrics.py
+  status: '[CANONIZED]'
+  version: v15.0 [OMEGA]
+TOOL-MILESTONE:
+  artifact_id: TOOL-MILESTONE
+  content_hash: 04d7b1df4c107e21f476b7a7eac58ecbfac766c1a77544d2faa7c849666a91f8
+  domain: FORGE
+  official_name: milestone.py
+  path: axion-core/forge/milestone.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+and:
+  artifact_id: and
+  content_hash: 6b53092290a32bdf0a0d6b03af82f667d6201fc51755375306fcee86df13b10b
+  domain: FORGE
+  official_name: mint_seed.py
+  path: axion-core/forge/mint_seed.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-OUROBOROS:
+  artifact_id: TOOL-OUROBOROS
+  content_hash: 4f74414debdba26ff27724314fe386b54d73ff43765f5177586618e4600d61b4
+  domain: FORGE
+  official_name: ouroboros.py
+  path: axion-core/forge/ouroboros.py
+  status: '[ACTIVE]'
+  version: v1.0 [OMEGA]
+TOOL-REFORGE:
+  artifact_id: TOOL-REFORGE
+  content_hash: 89d37dafb34cf1c40ce66cef7625ec03c5b72c595f2750d975e7c8d0e77b75ad
+  domain: FORGE
+  official_name: reforge.py
+  path: axion-core/forge/reforge.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-SENTINEL:
+  artifact_id: TOOL-SENTINEL
+  content_hash: 1def31b72d45c8c0535ea236ff4f0fb0aa4375cf49a1861a173060e022688ee0
+  domain: FORGE
+  official_name: sentinel.py
+  path: axion-core/forge/sentinel.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+CORE-HEPH-SOUL-001:
+  artifact_id: CORE-HEPH-SOUL-001
+  content_hash: 6770ee19794044af5293e54880969037ea51dd813123ef905d9984a26e6c6bd9
+  domain: FORGE
+  official_name: soul.py
+  path: axion-core/forge/soul.py
+  status: '[CANONIZED]'
+  version: v15.0 [OMEGA]
+TOOL-SYNC:
+  artifact_id: TOOL-SYNC
+  content_hash: 1172cd2a8c0ab2bb09b211e5a98d230752a53ac3de2976a9cb056fac1d98d81d
+  domain: FORGE
+  official_name: sync.py
+  path: axion-core/forge/sync.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-TRANSCLUDE_ENGINE:
+  artifact_id: TOOL-TRANSCLUDE_ENGINE
+  content_hash: a9b5711d5b3f5af645546d8d25347da170e5b4f8c9ead26b4878ef0b0eab7d5d
+  domain: FORGE
+  official_name: transclude_engine.py
+  path: axion-core/forge/transclude_engine.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-TRANSMUTATION_PIPELINE:
+  artifact_id: TOOL-TRANSMUTATION_PIPELINE
+  content_hash: 2c6287ea3c56e5cec293487ecf0a540811a6e77a32085e29695f37c4476c13a8
+  domain: FORGE
+  official_name: transmutation_pipeline.py
+  path: axion-core/forge/transmutation_pipeline.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-TRANSMUTER:
+  artifact_id: TOOL-TRANSMUTER
+  content_hash: dea342a6e762a738f2331464284e7886268afbaee494fad8f79422356442d6fd
+  domain: FORGE
+  official_name: transmuter.py
+  path: axion-core/forge/transmuter.py
+  status: '[ACTIVE]'
+  version: v13.0
+TOOL-VERIFY_AST:
+  artifact_id: TOOL-VERIFY_AST
+  content_hash: 0c52b6bbda93d2a4b2732b77910c14ccc86748341b5cbd00a7227adb00880fca
+  domain: FORGE
+  official_name: verify_ast.py
+  path: axion-core/forge/verify_ast.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-WEAVER:
+  artifact_id: TOOL-WEAVER
+  content_hash: bc679f77bfe15c77b93da8e2bc7fe8aae89fe0f95def7f96ef723a657f3ea773
+  domain: FORGE
+  official_name: weaver.py
+  path: axion-core/forge/weaver.py
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]

@@ -1,0 +1,80 @@
+{
+    "timestamp": "2026-02-23T02:48:56.098096",
+    "target": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core",
+    "coherence_score": 72.72727272727273,
+    "tool_results": {
+        "compliance_audit.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "",
+                "error": "Auditing Library: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\r\n\r\n=== COMPLIANCE AUDIT SUMMARY ===\r\nTotal Scanned: 175\r\nPASSED:        2\r\nWARNING:       3\r\nFAILED:        170\r\n================================\r\n\r\n--- Top 5 Most Dissonant (FAIL) ---\r\n[FAIL] templates\\blocks\\SELT-HEADER-000.md (Score: 0.00)\r\n  !! UIP: Missing required key 'Artifact ID'.\r\n  !! UIP: Missing required key 'Official Name'.\r\n  !! UIP: Missing required key 'Evolution'.\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Celestial Class'.\r\n  !! UIP: Missing required key 'Integrity Hash'.\r\n  !! UIP: Invalid or missing Evolutionary Alignment.\r\n  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).\r\n[FAIL] tools\\analyze_docs_compliance.py (Score: 0.00)\r\n  !! UIP: Missing required key 'Artifact ID'.\r\n  !! UIP: Missing required key 'Official Name'.\r\n  !! UIP: Missing required key 'Version'.\r\n  !! UIP: Missing required key 'Evolution'.\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Celestial Class'.\r\n  !! UIP: Missing required key 'Integrity Hash'.\r\n  !! UIP: Invalid or missing Evolutionary Alignment.\r\n[FAIL] tools\\canonize.py (Score: 0.00)\r\n  !! UIP: Missing required key 'Official Name'.\r\n  !! UIP: Missing required key 'Version'.\r\n  !! UIP: Missing required key 'Evolution'.\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Celestial Class'.\r\n  !! UIP: Invalid or missing Evolutionary Alignment.\r\n[FAIL] tools\\workspace_gardener.py (Score: 0.10)\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Celestial Class'.\r\n  !! UIP: Missing required key 'Integrity Hash'.\r\n  !! UIP: Invalid or missing Evolutionary Alignment.\r\n[FAIL] tools\\apply_standard.py (Score: 0.15)\r\n  !! UIP: Missing required key 'Evolution'.\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Celestial Class'.\r\n  !! UIP: Missing required key 'Integrity Hash'."
+            }
+        },
+        "ide_sentinel.py": {
+            "status": "ERROR",
+            "message": "'utf-8' codec can't decode byte 0x97 in position 161: invalid start byte"
+        },
+        "lint_artifact.py": {
+            "status": "ERROR",
+            "message": "'utf-8' codec can't decode byte 0x97 in position 160: invalid start byte"
+        },
+        "analyze_docs_compliance.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "UMB-CSP-001.md                                | OK         | FAIL    \r\n  UMB-SOT-001.md                                | OK         | FAIL    \r\n  (Multiple Artifacts)AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md | FAIL       | FAIL    \r\n      - Missing: \\[ARTIFACT END\\]\r\n  SELT-UWB-001_Universal_Workflow_Blueprint_Template_v1.0.md | FAIL       | FAIL    \r\n      - Missing: \\[ARTIFACT END\\]\r\n\r\n  ... and 87 more files.\r\n================================================================================",
+                "error": ""
+            }
+        },
+        "diagnose_paths.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": ">>> PATH DIAGNOSTIC: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\r\n\r\n  [ERROR] Failed to read file: [Errno 13] Permission denied: 'C:\\\\Users\\\\Chris\\\\Synarche_Workspace\\\\axion-core'",
+                "error": ""
+            }
+        },
+        "verify_ast.py": {
+            "status": "ERROR",
+            "message": "'utf-8' codec can't decode byte 0x97 in position 165: invalid start byte"
+        },
+        "aes_calculator.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "y                                 | 5.95   | 7.0   | 3.5     | 100.0 \r\ngenerate_barrels.py                              | 1.02   | 20.4  | 12.3    | 0.0   \r\nreforge.py                                       | 0.34   | 0.4   | 6.2     | 100.0 \r\narmory_audit.py                                  | 0.00   | 30.9  | 15.0    | 0.0   \r\nfix_md013.py                                     | 0.00   | 31.2  | 18.0    | 0.0   \r\n=====================================================================================",
+                "error": "<unknown>:123: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:123: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:128: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:128: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:133: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:133: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:134: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:134: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option."
+            }
+        },
+        "synergy_calculator.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "---------------------------\r\n              FINAL GSS SCORE:    53.88 / 100.0             \r\n============================================================\r\n\r\n[!] Top Orphaned Nodes (Require Synergistic Linking):\r\n  - SYNERGY_REPORT.md\r\n  - VERIFY_OMEGA.md\r\n  - AOP-AG-003_AxionAgentConfiguration_v3.0.md\r\n  - AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md\r\n  - AOP-SCA-001_Audit_Log.md\r\n\r\n[*] Primary Knowledge Hubs:\r\n  - CHAR-AXION-001_AgentAxionPersona_v1.0.md\r\n  - UMB-EMOJICXT-001_Tab15_Version.md",
+                "error": ""
+            }
+        },
+        "sot_scanner.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "tially link to: AOP-AG-003_AxionAgentConfiguration_v3.0.md, AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md\r\n[*] verify_ast.py\r\n    Should potentially link to: (Multiple Artifacts)AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md, aes_calculator.py\r\n[*] workspace_gardener.py\r\n    Should potentially link to: AOP-AG-003_AxionAgentConfiguration_v3.0.md, Context_Data_Packet_Session_Archival.md\r\n\r\n>>> Total Opportunities Flagged: 152\r\n======================================================================",
+                "error": ""
+            }
+        },
+        "resonance_scanner.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": ">>> SEMANTIC RESONANCE: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\r\n\r\n  >>> RESONANCE: canonize.py <==> canonize.md\r\n      [SCORE] 46.9/100.0\r\n  >>> RESONANCE: reforge.py <==> reforge.md\r\n      [SCORE] 46.9/100.0\r\n\r\n>>> AGGREGATE RESONANCE: 46.90% (Across 2 pairs)",
+                "error": ""
+            }
+        },
+        "entropy_auditor.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "iles Scanned:       183\r\n Entropy Vectors:     19 infected files\r\n------------------------------------------------------------\r\n TODO Markers:        10 (Mass: x5)\r\n FIXME Markers:       9 (Mass: x15)\r\n Shadow Code Lines:   98 (Mass: x2)\r\n------------------------------------------------------------\r\n TOTAL DEBT MASS:     381\r\n SYSTEM STABILITY:    23.8 / 100.0\r\n============================================================\r\n\r\n[!] CRITICAL ENTROPY: System is unstable. Immediate Code Scrub required.",
+                "error": ""
+            }
+        }
+    },
+    "dissonance_alerts": [
+        "Tool ide_sentinel.py status: ERROR",
+        "Tool lint_artifact.py status: ERROR",
+        "Tool verify_ast.py status: ERROR"
+    ]
+}

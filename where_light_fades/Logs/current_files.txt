@@ -1,0 +1,308 @@
+.gitignore
+1. Core Concepts & Themes/Themes/WLF-THEM-010_Betrayal_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-011_Conspiracy_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-012_Corruption_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-013_CycleOfViolence_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-014_FaithVsDoubt_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-015_FreeWillVsDestiny_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-016_Hope_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-017_Isolation_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-018_LossAndGrief_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-019_LostKnowledge_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-020_MoralAmbiguity_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-021_Mystery_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-022_PowerVsControl_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-023_Resistance_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-024_StatusQuoVsTruth_v1.0.md
+1. Core Concepts & Themes/Themes/WLF-THEM-025_Temptation_v1.0.md
+1. Core Concepts & Themes/WLF-GDD-001_TheShatteredMind_v1.0.md
+1. Core Concepts & Themes/WLF-THEM-000_Overview_v1.0.md
+1. Core Concepts & Themes/WLF-THEM-001_Inspirations_v1.0.md
+1. Core Concepts & Themes/WLF-THEM-002_Logline_v1.0.md
+1. Core Concepts & Themes/WLF-THEM-003_Synopsis_v1.0.md
+10. Key Symbols & Motifs/Nyx_s Bile - Oily Residue.md
+10. Key Symbols & Motifs/Symbol of Binding.md
+10. Key Symbols & Motifs/Symbol_Black Feather.md
+10. Key Symbols & Motifs/Symbol_Cracked Stained Glass.md
+10. Key Symbols & Motifs/Symbol_Whispering Blade.md
+11. Concepts_Misc/Heartstone (Oakhaven).md
+11. Concepts_Misc/Heartstones (Destabilization).md
+11. Concepts_Misc/Heartstones (Discovery Legend).md
+11. Concepts_Misc/Heartstones (Origin).md
+11. Concepts_Misc/Kaelen (Dark Mode).md
+11. Concepts_Misc/Kaelen (Internal Struggle).md
+11. Concepts_Misc/Kaelen (Light Mode).md
+11. Concepts_Misc/Shadow Realm (Concept).md
+2. World & Setting/Locations/WLF-WRLD-010_AshenWastes_v1.0.md
+2. World & Setting/Locations/WLF-WRLD-011_FortressOfLight_v1.0.md
+2. World & Setting/Locations/WLF-WRLD-012_HallowedChapel_v1.0.md
+2. World & Setting/Locations/WLF-WRLD-013_Oakhaven_v1.0.md
+2. World & Setting/Locations/WLF-WRLD-014_RuinsOfEldoria_v1.0.md
+2. World & Setting/Locations/WLF-WRLD-015_SpineOfDespair_v1.0.md
+2. World & Setting/Locations/WLF-WRLD-016_WhisperingStones_v1.0.md
+2. World & Setting/Locations/WLF-WRLD-017_Whisperwood_v1.0.md
+2. World & Setting/WLF-WRLD-000_Overview_v1.0.md
+2. World & Setting/WLF-WRLD-001_Geography_v1.0.md
+2. World & Setting/WLF-WRLD-002_Map_v1.0.md
+2. World & Setting/WLF-WRLD-003_NullZones_v1.0.md
+2. World & Setting/WLF-WRLD-004_CorruptedFauna_v1.0.md
+2. World & Setting/WLF-WRLD-005_CorruptedFlora_v1.0.md
+2. World & Setting/WLF-WRLD-006_FortressLibrary_v1.0.md
+3. History, Lore, & Mythology/Eldoria (Civilization).md
+3. History, Lore, & Mythology/Eras_Events/Age of Eldoria.md
+3. History, Lore, & Mythology/Eras_Events/Age of the White Flame.md
+3. History, Lore, & Mythology/Eras_Events/Dawn Age.md
+3. History, Lore, & Mythology/Eras_Events/Present Day (Kaelen_s Era).md
+3. History, Lore, & Mythology/Eras_Events/The Great Sundering.md
+3. History, Lore, & Mythology/Eras_Events/WLF-LORE-011_AgeOfEldoria_v1.0.md
+3. History, Lore, & Mythology/Eras_Events/WLF-LORE-012_AgeOfTheWhiteFlame_v1.0.md
+3. History, Lore, & Mythology/Eras_Events/WLF-LORE-013_DawnAge_v1.0.md
+3. History, Lore, & Mythology/Eras_Events/WLF-LORE-015_EldrinsFall_v1.0.md
+3. History, Lore, & Mythology/Eras_Events/WLF-LORE-018_TheCoverUp_v1.0.md
+3. History, Lore, & Mythology/Legends_Prophecies/Legend_Whispering Blade.md
+3. History, Lore, & Mythology/Legends_Prophecies/Prophecy_Sundered Blade.md
+3. History, Lore, & Mythology/Timeline_Shattered Lands.md
+3. History, Lore, & Mythology/WLF-LORE-010_Timeline_v1.0.md
+3. History, Lore, & Mythology/WLF-LORE-016_TheSacrifice_v1.0.md
+3. History, Lore, & Mythology/WLF-LORE-017_TheProphecy_v1.0.md
+4. Society, Cultures, & Factions/Cult of Nyx.md
+4. Society, Cultures, & Factions/Hierarchy_Order of the White Flame.md
+4. Society, Cultures, & Factions/Language_Cult of Nyx.md
+4. Society, Cultures, & Factions/Order of the White Flame (Secrets).md
+4. Society, Cultures, & Factions/Order of the White Flame.md
+4. Society, Cultures, & Factions/Paladin Code.md
+4. Society, Cultures, & Factions/Rituals_Cult of Nyx.md
+4. Society, Cultures, & Factions/Rituals_Order of the White Flame.md
+5. Magic and Power Systems/Heartstones.md
+5. Magic and Power Systems/Inner Flame.md
+5. Magic and Power Systems/Magic System Overview.md
+5. Magic and Power Systems/Magic_Corrupted.md
+5. Magic and Power Systems/Magic_Dark.md
+5. Magic and Power Systems/Magic_Light (Healing).md
+5. Magic and Power Systems/Magic_Light.md
+5. Magic and Power Systems/White Flame.md
+6. Characters/WLF-CHAR-001_Kaelen_v1.0.md
+6. Characters/WLF-CHAR-002_Garrett_v1.0.md
+6. Characters/WLF-CHAR-003_Serafina_v1.0.md
+6. Characters/WLF-CHAR-004_Valerius_v1.0.md
+6. Characters/WLF-CHAR-005_Brother_Caius_v1.0.md
+6. Characters/WLF-CHAR-006_Eldrin_v1.0.md
+6. Characters/WLF-CHAR-007_Shadow_Self_v1.0.md
+6. Characters/WLF-CHAR-008_Oathbringer_v1.0.md
+6. Characters/WLF-CHAR-009_Borin_v1.0.md
+6. Characters/WLF-CHAR-010_Elara_v1.0.md
+6. Characters/WLF-CHAR-011_Lyra_v1.0.md
+7. Bestiary & Races/Creature_Ash Walkers.md
+7. Bestiary & Races/Creature_Ashen Abominations.md
+7. Bestiary & Races/Creature_Ghouls.md
+7. Bestiary & Races/Creature_Whispering Winds.md
+7. Bestiary & Races/Humans.md
+7. Bestiary & Races/Races_Overview.md
+7. Bestiary & Races/Whispering Winds.md
+8. Artifacts Key Items/Elara_s Blue Stone Fragment.md
+8. Artifacts Key Items/Hand of Purity.md
+8. Artifacts Key Items/Heartstones.md
+8. Artifacts Key Items/Oathbringer.md
+8. Artifacts Key Items/Serafina_s Locket.md
+8. Artifacts Key Items/Valerius_s Journal.md
+9. Plot and Narrative Structure/Act 1 Outline.md
+9. Plot and Narrative Structure/Act 2 Outline.md
+9. Plot and Narrative Structure/Chapter 1 Summary_Fractured Reflections.md
+9. Plot and Narrative Structure/Event_Elara_s Death and Kaelen_s Dark Mode.md
+9. Plot and Narrative Structure/Event_Elara_s Death.md
+9. Plot and Narrative Structure/Event_Kaelen_s Imprisonment.md
+9. Plot and Narrative Structure/Master Outline Overview.md
+9. Plot and Narrative Structure/Plot Point_Kaelen_s Dark Mode Usage.md
+Archives/Ashen_Oath_Inner_Flame_Echoes/audio.js
+Archives/Ashen_Oath_Inner_Flame_Echoes/index.html
+Archives/Ashen_Oath_Inner_Flame_Echoes/script.js
+Archives/Ashen_Oath_Inner_Flame_Echoes/styles.css
+Archives/Where_Light_Fades_Brother Caius - Detailed Profile.docx
+Archives/Where_Light_Fades_Brother Caius - Detailed Profile.md
+Archives/Where_Light_Fades_Eldrin - Definitive Character Profile.docx
+Archives/Where_Light_Fades_Eldrin - Definitive Character Profile.md
+Archives/Where_Light_Fades_Garrett - Detailed Profile.docx
+Archives/Where_Light_Fades_Garrett - Detailed Profile.md
+Archives/Where_Light_Fades_Kaelen - Detailed Profile.docx
+Archives/Where_Light_Fades_Kaelen - Detailed Profile.md
+Archives/Where_Light_Fades_Oathbringer - Detailed Profile.docx
+Archives/Where_Light_Fades_Oathbringer - Detailed Profile.md
+Archives/Where_Light_Fades_Serafina - Detailed Profile.docx
+Archives/Where_Light_Fades_Serafina - Detailed Profile.md
+Archives/Where_Light_Fades_Shadow Self - Detailed Profile.docx
+Archives/Where_Light_Fades_Shadow Self - Detailed Profile.md
+Archives/Where_Light_Fades_Valerius - Detailed Profile.docx
+Archives/Where_Light_Fades_Valerius - Detailed Profile.md
+CHANGELOG.md
+Design and Technical/Narrative_Integrity_Nexus_Guardian.pdf
+Design and Technical/Soul_of_Shadow_and_Steel.pdf
+Design and Technical/beyond-oaths-a-found-familys-loyalty-aga-2026-01-04T06-58.mm
+Docs/WLF-DOC-000_PhoenixProtocols_v1.0.md
+Docs/WLF-DOC-006_CharacterBible_v1.0.md
+Docs/WLF-DOC-007_GameManual_v1.0.md
+Docs/WLF-DOC-008_LoreContradictionReport_v1.0.md
+Docs/WLF-DOC-009_ConceptualAnchors_v1.0.md
+Docs/WLF-GUIDE-001_WritingGuide_v1.0.md
+Docs/WLF-LORE-001_History_Chronology_v1.0.md
+Docs/WLF-LORE-002_CosmicForces_Magic_v1.0.md
+Docs/WLF-LORE-003_SocialStructures_Factions_v1.0.md
+Docs/WLF-LORE-004_Legends_Prophecies_v1.0.md
+Docs/WLF-LORE-005_Bestiary_v1.0.md
+Docs/WLF-LORE-006_Symbols_Motifs_v1.0.md
+Docs/WLF-LORE-007_Geography_Locations_v1.0.md
+README.md
+Unfiltered/Where Light Fades-20251218T165712Z-1-001.zip
+Unfiltered/Where Light Fades/Alternative-Rough/7_5_25 Why_Where_Light_Fades.docx
+Unfiltered/Where Light Fades/Alternative-Rough/7_5_25 Why_Where_Light_Fades.md
+Unfiltered/Where Light Fades/Alternative-Rough/Rough Drafts.docx
+Unfiltered/Where Light Fades/Alternative-Rough/Rough Drafts.md
+Unfiltered/Where Light Fades/Alternative-Rough/Seeds of Doubt.docx
+Unfiltered/Where Light Fades/Alternative-Rough/Seeds of Doubt.md
+Unfiltered/Where Light Fades/Master Documents/Archive/1. Where Light Fades - Core History & Chronology.md
+Unfiltered/Where Light Fades/Master Documents/Archive/2. Where Light Fades - Cosmic Forces & Magic System.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/2. Where Light Fades - Cosmic Forces & Magic System.md
+Unfiltered/Where Light Fades/Master Documents/Archive/3. Where Light Fades - Social Structures & Major Factions.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/3. Where Light Fades - Social Structures & Major Factions.md
+Unfiltered/Where Light Fades/Master Documents/Archive/4. Where Light Fades - Legends & Prophecies.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/4. Where Light Fades - Legends & Prophecies.md
+Unfiltered/Where Light Fades/Master Documents/Archive/5. Where Light Fades - Bestiary & Corrupted Creatures.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/5. Where Light Fades - Bestiary & Corrupted Creatures.md
+Unfiltered/Where Light Fades/Master Documents/Archive/6. Where Light Fades - Key Symbols & Motifs_ (Glossary of Unique Concepts.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/6. Where Light Fades - Key Symbols & Motifs_ (Glossary of Unique Concepts.md
+Unfiltered/Where Light Fades/Master Documents/Archive/7. Where Light Fades - Geography & Key Locations.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/7. Where Light Fades - Geography & Key Locations.md
+Unfiltered/Where Light Fades/Master Documents/Archive/How_To_Create_Where_Light_Fades.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/How_To_Create_Where_Light_Fades.md
+Unfiltered/Where Light Fades/Master Documents/Archive/Master_Outline_Where_Light_Fades.md
+Unfiltered/Where Light Fades/Master Documents/Archive/Master_Refined_Where_Light_Fades.md
+Unfiltered/Where Light Fades/Master Documents/Archive/Script_Where_Light_Fades.md
+Unfiltered/Where Light Fades/Master Documents/Archive/Script_Where_Light_Fades_Fixed.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/Where_Light_Fades_Bestiary.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/Where_Light_Fades_Bestiary.md
+Unfiltered/Where Light Fades/Master Documents/Archive/Where_Light_Fades_Key_Documents_References.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/Where_Light_Fades_Key_Documents_References.md
+Unfiltered/Where Light Fades/Master Documents/Archive/Where_Light_Fades_Visual Guide to the Worldbuilding_.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/Where_Light_Fades_Visual Guide to the Worldbuilding_.md
+Unfiltered/Where Light Fades/Master Documents/Archive/Worldbuilding_Lore_Where_Light_Fades.docx
+Unfiltered/Where Light Fades/Master Documents/Archive/Worldbuilding_Lore_Where_Light_Fades.md
+Unfiltered/Where Light Fades/Master Documents/Archive/Worldbuilding_Lore_Where_Light_Fades_Converted.md
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Character Consistency.xlsx
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Ashen Abomination.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Brother Caius.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Brother Caius.pdf
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Eldrin Fallen.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Eldrin Pre.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Garret.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Ghoul Group.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Ghoul.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Hallowed Chapel (Inside).jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Kaelen Transformed.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Kaelen and Oathbringer.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Mirelurker.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Serafina.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Strays.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Valerius.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Characters - Monsters - Items/Valerius.pdf
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Ash Walker.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Ashen Abomination.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Concept Art Collection.docx
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Concept Art Collection.md
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Elara.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Eldrin.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Kaelen (Act II).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Kaelen (Pre Act I).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Kaelen (Shadows Vessel).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Kaelen (Twilight).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Kaelen Act I.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Serafina.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Brother Caius (Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Garrett (Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Ghoul (Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Kaelen (Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Oathbringer (Greatsword, Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Oathbringer (Pristine, Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Oathbringer (Stained, Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Serafina (Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Shard of Sorrow (Creature, Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Shards of Sorrow (Items, Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Concept Art/Set 1/Valerius (Set).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Book Cover 1.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Oathbringer/Oathbringer 1.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Oathbringer/Oathbringer 2.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Oathbringer/Oathbringer 3.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Oathbringer/Oathbringer Fully Transformed.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Oathbringer/Oathbringer Transforming.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Oathbringer/Oathbringer.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/The Hand of Purity.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Title.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Where Light Fades Cover(1).jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Images/Where Light Fades Cover.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Character Web.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Chronicles of the Shattered Lands - A History of Eldoria.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Comprehensive Writing Guidelines Where Light Fades.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Dark Fantasy Novel Writing Guidlines.pdf
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Eldorias Fall.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Kaelens Inner Struggle.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Kaelens Internal Conflict.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Magic System.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Oathbringer -  Nature History Connections and Transformations.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Struggle for the Shattered Lands.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Svg/Character Web.svg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Svg/Eldorias Fall.svg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Svg/Kaelens Inner Struggle.svg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Svg/Kaelens Internal Conflict.svg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Svg/Magic System.svg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Svg/Struggle for the Shattered Lands.svg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Svg/Where Light Fades Mindmap.svg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Svg/svgtopng.zip
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/WLF Mindmap - Themes and Elements.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/WLFMM Kaelen_s Internal Conflict.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Where Light Fades -  Conflict and Shadow.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Where Light Fades - Narrative Architecture and Style Manual.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Where Light Fades Magic System.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Where Light Fades Mindmap.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/Where Light Fades Setting, Lore, and Themes.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/_Where Light Fades_ Novel Writing Guidlines.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/Mindmaps/where-light-fades-writing-guide-2026-01-14T06-56.mm
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Fortress of Light.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Fractured Monolith Heartstone.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Order of the Flames Fortress.pdf
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Pulsing Core Heartstone.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Shattered Land (Continent).jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Shattered Lands Map (1).png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Shattered Lands Map.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Shattered Lands Panorama.jpg
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/The Shattered Lands Map.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Veiled Light Heartstone.png
+Unfiltered/Where Light Fades/Visuals for Where Light Fades/World - Locations/Weeping Heartstone.png
+Unfiltered/Where Light Fades/_Where Light Fades_ Blog.docx
+Unfiltered/Where Light Fades/_Where Light Fades_ Blog.md
+Unfiltered/Where Light Fades/_Where_Light_Fades__Writing.docx
+Unfiltered/Where Light Fades/_Where_Light_Fades__Writing.md
+Visuals/After Last Rations.png
+Visuals/Garrett_Profile.png
+Visuals/Garrett_Psych_Profile.png
+Visuals/Kaelen_Anatomy_1.png
+Visuals/Kaelen_Anatomy_2.png
+Visuals/Oathbringer_Profile.png
+Visuals/Serafina_Profile.png
+Visuals/Serafina_Psych_Profile.png
+Visuals/Soul_of_Shadow_and_Steel.pdf
+Visuals/Symbol_of_Binding.png
+Visuals/The Last Ration.jpg
+Visuals/The_Sundered_Trio.png
+Visuals/good, bu Kaelen needs long black hair.png
+Where Light Fades.code-workspace
+audit_report.txt
+character_audit_report.txt
+doc_audit_report.txt
+doc_audit_report_v2.txt
+final_character_audit.txt
+final_character_audit_v2.txt
+final_docs_audit.txt
+final_final_docs_audit.txt
+final_submission_audit.txt
+final_verify_audit.txt
+final_verify_audit_2.txt
+final_verify_audit_3.txt
+indent_matches.txt

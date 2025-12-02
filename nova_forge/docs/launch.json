@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Debug synarche_status",
+      "type": "python",
+      "request": "launch",
+      "module": "nova_forge.commands.synarche_status",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

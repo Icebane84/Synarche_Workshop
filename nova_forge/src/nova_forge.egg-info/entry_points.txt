@@ -1,0 +1,2 @@
+[console_scripts]
+nova-forge = nova_forge.cli.commands:main

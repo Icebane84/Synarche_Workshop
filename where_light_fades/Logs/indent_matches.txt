@@ -1,0 +1,33 @@
+
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:91:  - Kaelen's style is a blend of discipline and raw, barely-contained fury.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:99:  - **"Light Mode" (Inner Flame)**:
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:102:  - **"Dark Mode" (Shadow Self)**:
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:108:  - **In Light Mode**: When Kaelen finds clarity, he acts as the "Shield of Truth," helping his friends resist the Whispering Winds.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:109:  - **Heroic Actions**:
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:113:  - **Internal Cost**: Every act of heroic grounding drains Kaelen's Inner Flame, making him more susceptible to the Shadow Self's whispers. Heroism is not free; it is a slow hollowing out of his own soul to preserve theirs.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:115:  - Starts as a **True Believer** in the Order.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:116:  - Becomes a **Fugitive** after discovering the Truth.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:117:  - Must choose: **Sacrifice** (die to bind the Shadow) or **Synthesis** (fuse with Eldrin to master the Balance).
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:157:  - **Trigger**: The Winds and Kaelen's increasing recklessness or "Dark Mode" outbursts.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:158:  - **The Spiral**: Garrett’s logical mind begins to interpret Kaelen’s struggles as an unacceptable tactical risk. He starts to suspect Kaelen's motives, wondering if the "Shadow" is already the pilot.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:159:  - **Manifestation**: He distances himself from Kaelen, considering whether aligning with Valerius (the "devil he knows") might be the only way to save the world, even if it means abandoning his friend.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:178:  - Devoted to protection and disruption, rarely involving direct, lethal offense.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:179:  - Wields a simple, elegant staff as a conductor and focus for White Flame energy.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:190:  - **The Anchor**: She prevents Kaelen's total collapse.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:191:  - **The Bridge**: Her Lorekeeper heritage is the key to the **Synthesis** ending—she discovers the ancient rites that allow Kaelen to fuse with, rather than destroy, the Shadow.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:193:  - **Trigger**: The Winds' psychic pressure, Kaelen's erratic behavior, and the terrifying nature of his "Dark Mode."
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:194:  - **The Spiral**: Serafina begins to question if Kaelen can truly be saved. She starts to fear him—a visceral, physical reaction she tries to hide. She becomes vulnerable to Valerius's lies, wondering if "controlled containment" (imprisoning Kaelen) is more compassionate than letting him suffer.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:195:  - **Manifestation**: Loss of faith in her own healing abilities; she starts to have disturbing visions of the "Mire" consuming them all, with Kaelen at the center.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:208:  - **The Witness**: He was Eldrin's apprentice. He saw Eldrin fail to control the Shadow and decided, "He was weak. I will be strong."
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:209:  - **The Dark Shepherd**: His ideology is **"Controlled Chaos."** He believes the Order is too weak and Eldrin was too messy. He seeks to *master* Nyx, not destroy it.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:210:  - **Twisted Guardianship**: He adopted Kaelen *because* he was the last Guardian. He raised him to be a weapon—a living vessel he could control. He genuinely "loves" Kaelen, but only as a craftsman loves his masterpiece.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:212:  - **Style**: Cold, calculated efficiency. "Master of the Dark Arts."
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:213:  - **Abilities**:
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:218:  - **The Catalyst**: He orchestrates the Oakhaven deployment to break Kaelen.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:219:  - **The Mirror**: He represents what Kaelen *could* become if he chooses Control over Balance.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:228:  - **Contrast**: Despite his martial title, he appears more scholar than warrior. He wears simple, ink-stained brown robes rather than shining plate.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:229:  - **Features**: An older man with a long white beard and small, round spectacles. His hands sometimes tremble—not from age, but from the weight of the truths he carries.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:230:  - **Key Item**: A heavy iron key worn around his neck; symbolic of his role as the keeper of the Order's dark history.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:232:  - **Strategic Inaction**: He often appears passive or cryptic. This is a calculated choice; he knows that premature revelation of the Truth (Eldrin's fate) would destroy the Order before a solution is found.
+Docs\WLF-DOC-006_CharacterBible_v1.0.md:233:  - **The Burden**: He is one of the only living souls who knows the full truth of the **Eldrin Affair** and the **Living Seal**. He carries the guilt of not stopping it then, which drives his protection of Kaelen now.
+

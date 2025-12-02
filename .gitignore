@@ -1,0 +1,85 @@
+# Artifact ID: FILE-GIT-001
+# Context: Synarche Sovereign Workspace (v15.0 [OMEGA])
+# Scope: Unified Ignore Policy
+
+# --- SECTION 1: UNIVERSAL SUBSTRATES (Glob Ignored) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+node_modules/
+*.bak
+*.tmp
+*.swp
+*.log*
+.DS_Store
+Thumbs.db
+.cache/
+.venv/
+*.zip
+
+# --- SECTION 2: SECURITY & SECRETS (CRITICAL) ---
+.env
+.env.local
+secrets.json
+token.txt
+*.crt
+*.key
+
+# --- SECTION 3: IDE & TOOLING (.vscode, .idea, .trunk) ---
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+.ruff_cache/
+.trunk/*
+!.trunk/trunk.yaml
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+
+# --- SECTION 4: DOMAIN: THE ENGINE (axion-core/) ---
+axion-core/build/
+axion-core/dist/
+axion-core/.next/
+axion-core/.nuxt/
+axion-core/vendor/
+axion-core/lib/
+axion-core/lib64/
+axion-core/.venv/
+axion-core/env/
+axion-core/ENV/
+
+# --- SECTION 5: DOMAIN: THE LAW (_governance/) ---
+_governance/archive/2026-03-Pruning/
+_logs/
+
+# --- SECTION 6: DOMAIN: THE LAB (nova_forge/) ---
+nova_forge/build/
+nova_forge/dist/
+nova_forge/playground/
+
+# --- SECTION 7: MISC & LEGACY ---
+surreal.db/
+.tmp.*/
+
+# `[OMNI-ANCHOR] ID: SYNG.GIT.Rules VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-17`
+
+# InsForge & AI agent skills
+.insforge
+.agent
+.agents
+.augment
+.claude
+.cline
+.github/copilot*
+.kilocode
+.qoder
+.qwen
+.roo
+.trae
+.windsurf

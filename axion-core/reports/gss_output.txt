@@ -1,0 +1,25 @@
+
+============================================================
+               GRAPH SYNERGY SCORE (GSS) REPORT             
+============================================================
+ Nodes Analyzed:     474
+ Orphan Entities:    6 (1.27%)
+ Knowledge Hubs:     50
+ Avg. Connectivity:  2.34
+------------------------------------------------------------
+              FINAL GSS SCORE:    100.0 / 100.0             
+============================================================
+
+[!] Top Orphaned Nodes (Require Synergistic Linking):
+  - GVRN.Log.Turn.005.md
+  - GVRN.Log.Turn.006.md
+  - GVRN.Log.Turn.007.md
+  - GVRN.Log.Turn.008.md
+  - GVRN.Log.Turn.009.md
+
+[*] Primary Knowledge Hubs:
+  - AOP-AI-PROTO-001_AIProtocol.md
+  - DOC-STD-001.md
+  - Phoenix Architectural Pre-Flight Checklist.md
+  - CORE-CODEX-001_ThePhoenixCodex_v13.1.md
+  - GVRN.Catalog.Master.md

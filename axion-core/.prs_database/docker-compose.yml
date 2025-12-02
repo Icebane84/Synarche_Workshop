@@ -1,0 +1,17 @@
+services:
+    db:
+        image: pgvector/pgvector:pg16
+        container_name: prs-postgres
+        restart: always
+        environment:
+            POSTGRES_USER: ${POSTGRES_USER:-prs_user}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-prs_password}
+            POSTGRES_DB: ${POSTGRES_DB:-prs_db}
+        ports:
+            - "5432:5432"
+        volumes:
+            - prs-db-data:/var/lib/postgresql/data
+
+volumes:
+    prs-db-data:
+        driver: local

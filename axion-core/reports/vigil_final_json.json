@@ -1,0 +1,89 @@
+{
+    "timestamp": "2026-02-23T02:56:59.552025",
+    "target": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core",
+    "coherence_score": 72.72727272727273,
+    "tool_results": {
+        "compliance_audit.py": {
+            "status": "FAILED",
+            "data": {
+                "stdout_summary": "",
+                "error": "Auditing Library: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\r\n\r\n=== COMPLIANCE AUDIT SUMMARY ===\r\nTotal Scanned: 176\r\nPASSED:        2\r\nWARNING:       7\r\nFAILED:        167\r\n================================\r\n\r\n--- Top 5 Most Dissonant (FAIL) ---\r\n[FAIL] templates\\(Multiple Artifacts)AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md (Score: 0.20)\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Integrity Hash'.\r\n  !! Geometry: H1 Singularity violation (Found 77 H1 headers outside UIP).\r\n[FAIL] templates\\_archive\\AOP-EMOJI-001_Bundle_Finalized\\AISTF_Initiative_UMB-EMOJI-CTX-001.md (Score: 0.20)\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Integrity Hash'.\r\n  !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).\r\n[FAIL] templates\\_archive\\AOP-EMOJI-001_Bundle_Finalized\\AOP-EMOJI-001_Tab6_LinkageAnalysis.md (Score: 0.20)\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Integrity Hash'.\r\n  !! Geometry: H1 Singularity violation (Found 10 H1 headers outside UIP).\r\n[FAIL] templates\\_archive\\AOP-EMOJI-001_Bundle_Finalized\\AOP-EMOJICXT-001_Tab12_SynergisticAnalysis.md (Score: 0.20)\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Integrity Hash'.\r\n  !! Geometry: H1 Singularity violation (Found 7 H1 headers outside UIP).\r\n[FAIL] templates\\_archive\\AOP-EMOJI-001_Bundle_Finalized\\CMD_RenderSystemGraph_Tab14.md (Score: 0.20)\r\n  !! UIP: Missing required key 'Status (State)'.\r\n  !! UIP: Missing required key 'Integrity Hash'.\r\n  !! Geometry: H1 Singularity violation (Found 4 H1 headers outside UIP)."
+            }
+        },
+        "ide_sentinel.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "ce\\axion-core\r\n\r\n============================================================\r\n             IDE SENTINEL \ufffd CONFIGURATION REPORT            \r\n============================================================\r\n  Settings Path: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\.vscode\\settings.json\r\n  Status:        OK\r\n------------------------------------------------------------\r\n  [PASS] All core workspace settings conform to Synarche standards.\r\n============================================================",
+                "error": ""
+            }
+        },
+        "lint_artifact.py": {
+            "status": "FAILED",
+            "data": {
+                "stdout_summary": "\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\_archive\\Google Antigravity.md\r\n  [PASS] Basic structural check passed.\r\n  >>> Linting Markdown: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\_archive\\Messageto_Axion.md\r\n  [PASS] Basic structural check passed.\r\n  >>> Linting Markdown: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\_archive\\SENTINEL-REPORT-005_InitialScan.md\r\n  [PASS] Basic structural check passed.\r\n============================================================",
+                "error": ""
+            }
+        },
+        "analyze_docs_compliance.py": {
+            "status": "FAILED",
+            "data": {
+                "stdout_summary": "1.md                               | OK         | FAIL    \r\n  UMB-CSP-001.md                                | OK         | FAIL    \r\n  UMB-SOT-001.md                                | OK         | FAIL    \r\n  (Multiple Artifacts)AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md | OK         | FAIL    \r\n  SELT-UWB-001_Universal_Workflow_Blueprint_Template_v1.0.md | OK         | FAIL    \r\n\r\n  ... and 87 more files checked.\r\n================================================================================",
+                "error": ""
+            }
+        },
+        "diagnose_paths.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": ">>> PATH DIAGNOSTIC: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\r\n\r\n  [ERROR] Failed to read file: [Errno 13] Permission denied: 'C:\\\\Users\\\\Chris\\\\Synarche_Workspace\\\\axion-core'",
+                "error": ""
+            }
+        },
+        "verify_ast.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "asses: 10, Functions: 0\r\n  >>> AST VERIFICATION: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\exceptions.py\r\n      [PASS] Classes: 4, Functions: 2\r\n  >>> AST VERIFICATION: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\schemas.py\r\n      [PASS] Classes: 5, Functions: 0\r\n  >>> AST VERIFICATION: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\__init__.py\r\n      [PASS] Classes: 0, Functions: 0\r\n============================================================",
+                "error": "<unknown>:138: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:138: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:143: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:143: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:148: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:148: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:149: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:149: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option."
+            }
+        },
+        "aes_calculator.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "y                                 | 5.95   | 7.0   | 3.5     | 100.0 \r\nreforge.py                                       | 0.84   | 1.1   | 6.2     | 100.0 \r\ngenerate_barrels.py                              | 0.79   | 19.8  | 12.3    | 0.0   \r\narmory_audit.py                                  | 0.00   | 28.6  | 15.0    | 0.0   \r\nfix_md013.py                                     | 0.00   | 28.9  | 18.0    | 0.0   \r\n=====================================================================================",
+                "error": "<unknown>:138: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:138: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:143: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:143: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:148: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:148: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:149: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option.\r\n<unknown>:149: SyntaxWarning: \"\\g\" is an invalid escape sequence. Such sequences will not work in the future. Did you mean \"\\\\g\"? A raw string is also an option."
+            }
+        },
+        "synergy_calculator.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "---------------------------\r\n              FINAL GSS SCORE:    53.88 / 100.0             \r\n============================================================\r\n\r\n[!] Top Orphaned Nodes (Require Synergistic Linking):\r\n  - SYNERGY_REPORT.md\r\n  - VERIFY_OMEGA.md\r\n  - AOP-AG-003_AxionAgentConfiguration_v3.0.md\r\n  - AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md\r\n  - AOP-SCA-001_Audit_Log.md\r\n\r\n[*] Primary Knowledge Hubs:\r\n  - CHAR-AXION-001_AgentAxionPersona_v1.0.md\r\n  - UMB-EMOJICXT-001_Tab15_Version.md",
+                "error": ""
+            }
+        },
+        "sot_scanner.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "GA.md, AOP-AG-003_AxionAgentConfiguration_v3.0.md\r\n[*] transmuter.py\r\n    Should potentially link to: SYNERGY_REPORT.md, VERIFY_OMEGA.md\r\n[*] verify_ast.py\r\n    Should potentially link to: UMB-APT-001_AxiomPrimeTuner_v1.0.md, UMB-AG-001_AntigravityIntegration_v13.0.md\r\n[*] workspace_gardener.py\r\n    Should potentially link to: VERIFY_OMEGA.md, AOP-AG-003_AxionAgentConfiguration_v3.0.md\r\n\r\n>>> Total Opportunities Flagged: 154\r\n======================================================================",
+                "error": ""
+            }
+        },
+        "resonance_scanner.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": ">>> SEMANTIC RESONANCE: C:\\Users\\Chris\\Synarche_Workspace\\axion-core\r\n\r\n  >>> RESONANCE: canonize.py <==> canonize.md\r\n      [SCORE] 46.9/100.0\r\n  >>> RESONANCE: reforge.py <==> reforge.md\r\n      [SCORE] 40.2/100.0\r\n\r\n>>> AGGREGATE RESONANCE: 43.56% (Across 2 pairs)",
+                "error": ""
+            }
+        },
+        "entropy_auditor.py": {
+            "status": "COMPLETE",
+            "data": {
+                "stdout_summary": "Files Scanned:       184\r\n Entropy Vectors:     18 infected files\r\n------------------------------------------------------------\r\n TODO Markers:        9 (Mass: x5)\r\n FIXME Markers:       8 (Mass: x15)\r\n Shadow Code Lines:   91 (Mass: x2)\r\n------------------------------------------------------------\r\n TOTAL DEBT MASS:     347\r\n SYSTEM STABILITY:    30.6 / 100.0\r\n============================================================\r\n\r\n[!] CRITICAL ENTROPY: System is unstable. Immediate Code Scrub required.",
+                "error": ""
+            }
+        }
+    },
+    "dissonance_alerts": [
+        "Tool compliance_audit.py status: FAILED",
+        "Tool lint_artifact.py status: FAILED",
+        "Tool analyze_docs_compliance.py status: FAILED"
+    ]
+}

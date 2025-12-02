@@ -1,0 +1,29 @@
+# Axion Core Dependencies
+# Core is currently stdlib-only
+# Development & Quality Assurance
+pytest
+black
+flake8
+pylint
+mypy
+
+# Agent Runtime & Architecture
+pydantic>=2.0
+pydantic-settings
+structlog
+python-dotenv
+langgraph
+langchain-core
+
+# Database & Infrastructure
+psycopg2-binary
+
+# Testing
+pytest-asyncio
+
+# NLP & Machine Learning
+spacy>=3.0.0
+sentence-transformers
+numpy
+PyYAML
+sqlite-vec

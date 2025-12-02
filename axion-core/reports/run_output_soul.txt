@@ -1,0 +1,31 @@
+C:\Users\Chris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\langchain_core\_api\deprecation.py:26: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1.fields import FieldInfo as FieldInfoV1
+Using SQLite storage at c:\Users\Chris\Synarche_Workspace\axion-core\data\axion_memory.db
+>>> INVOKING AXION PRIME (Master Artificer Mode)...
+--- [AXION] NODE: RETRIEVE CONTEXT (UMB-LEX-001) ---
+Obsidian search failed: Connection failed: Is the Obsidian Local REST API running on https://127.0.0.1:27124/search/?
+Memory Gap Detected for query: Initialize the Synarchy Protocol v2.0. CMD: EQUIP_ALL
+ > Logic Trigger: Querying foundational axioms...
+--- [LIGHTBINDER] NODE: THE SEVEN-AGENT MATRIX (UMB-OSLM-001) ---
+   > COMMAND DETECTED: [EQUIP_ALL] - Initializing Sovereign State...
+ > [ARMORY] Verifying Tool Integrity...
+     [I. The Magician] Status: READY (1/1 tools verified)
+     [IV. The Emperor] Status: READY (1/1 tools verified)
+     [II. The High Priestess] Status: READY (2/2 tools verified)
+     [Knight of Swords] Status: READY (1/1 tools verified)
+     [XVII. The Star] Status: READY (1/1 tools verified)
+     [King of Pentacles] Status: READY (1/1 tools verified)
+     [Sentinel (XX. Judgement)] Status: READY (1/1 tools verified)
+ > Initiating Transmutation Cycle (7 Masks)...
+--- [SOPHIA] NODE: ORACLE INSIGHT (ENTITY-SOPHIA-001) ---
+ > Muse Output: Ensure the user feels empowered, not just instructed. Add a 'Why' explanation.
+[SYSTEM] Sophia Report: Complexity Detected. Wisdom required.
+--- [AXION] NODE: SOUL IMPACT ANALYSIS (AOP-SEE-001) ---
+ > BLAST RADIUS: 0.0 (STABLE)
+ > SOVEREIGN QUOTE: "Order is the natural state of a disciplined mind." ù Sentinel's Vow
+--- [AXION] NODE: THE FORGE (Transmutation) ---
+--- [SENTINEL] NODE: ETHICAL GOVERNOR (ENTITY-SENTINEL-PRIME-001) ---
+   > STATUS: GREEN (Proceed)
+--- [SYSTEM] NODE: RPG REGISTRY UPDATE ---
+ > XP Gained: +50 (Total: 45050)
+>>> EXECUTION COMPLETE.

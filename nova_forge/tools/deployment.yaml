@@ -1,0 +1,25 @@
+apiVersion: apps/v1        # The API version for Deployments
+kind: Deployment           # The type of resource we are creating
+metadata:
+  name: nginx-web-server   # The internal ID of this deployment in the cluster
+  labels:
+    app: my-web-app        # Tags to help you organize/search for this later
+spec:                      # --- THE DESIRED STATE ---
+  replicas: 3              # "I want exactly 3 copies of this running at all times"
+  selector:                # How the Deployment finds the Pods it owns
+    matchLabels:
+      app: my-web-app      # "I manage any Pod with this label"
+  template:                # --- THE BLUEPRINT FOR THE PODS ---
+    metadata:
+      labels:
+        app: my-web-app    # The label given to every new Pod (matches selector above)
+    spec:
+      containers:          # The actual software running inside
+      - name: nginx
+        image: nginx:1.25  # The Docker image to download
+        ports:
+        - containerPort: 80
+        resources:         # Hardware limits (Crucial for stability)
+          limits:
+            memory: "128Mi"
+            cpu: "500m"    # 0.5 CPU Cores

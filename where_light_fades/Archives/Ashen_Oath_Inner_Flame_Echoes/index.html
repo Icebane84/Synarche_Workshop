@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashen Oath: Inner Flame Echoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ATMOSPHERE LAYERS -->
+    <div class="vignette-overlay"></div>
+    <div class="noise-overlay"></div>
+    <div class="pulse-overlay" id="sanity-pulse"></div>
+
+    <!-- AUDIO START OVERLAY -->
+    <div id="start-overlay">
+        <div class="overlay-content">
+            <div class="title-icon">🕯️</div>
+            <h1>Ashen Oath</h1>
+            <p>Where Light Fades</p>
+            <br>
+            <small>Headphones Recommended</small>
+            <br><br>
+            <button onclick="startGame()">Enter the Void</button>
+        </div>
+    </div>
+
+    <!-- MODALS & OVERLAYS -->
+    <div id="modal-overlay" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h2 id="modal-title">Event Title</h2>
+            <p id="modal-desc">Event description goes here...</p>
+            <div id="modal-choices" class="modal-choices"></div>
+        </div>
+    </div>
+
+    <div id="hallucination-overlay"></div>
+    <div id="tooltip-overlay"></div>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="header-content">
+                <div class="logo">⚔️</div>
+                <div>
+                    <h1>Ashen Oath</h1>
+                    <div class="subtitle">Inner Flame Echoes</div>
+                </div>
+            </div>
+            
+            <div class="system-controls">
+                <button id="btn-dark-mode" onclick="toggleDarkMode()" style="display: none; border-color: #9b59b6; color: #9b59b6;">🌑 Dark Mode</button>
+                <button onclick="saveGame()">💾 Save</button>
+                <button onclick="exportSave()">📤 Export</button>
+                <button onclick="importSave()">📥 Import</button>
+                <button onclick="resetGame()" class="danger">☠️ Hard Reset</button>
+            </div>
+        </header>
+
+        <!-- NAVIGATION TABS -->
+        <nav class="main-nav">
+            <button class="nav-btn active" onclick="switchTab('sanctum')">🏰 Sanctum</button>
+            <button class="nav-btn" onclick="switchTab('research')">📜 The Nova Ascent</button>
+            <button class="nav-btn" onclick="switchTab('codex')">📖 Codex</button>
+            <button id="btn-tab-ascension" class="nav-btn prestige-btn" onclick="switchTab('ascension')" style="display: none;">✨ Ascension</button>
+        </nav>
+
+        <!-- TAB: SANCTUM (Main Game) -->
+        <div id="tab-sanctum" class="tab-content active">
+            
+            <!-- PSYCHE DASHBOARD -->
+            <section class="psyche-dashboard">
+                <div class="meter-container">
+                    <div class="meter-label">Sanity <span id="val-sanity">100</span>%</div>
+                    <div class="meter-bar-bg">
+                        <div id="bar-sanity" class="meter-bar-fill sanity-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="meter-container">
+                    <div class="meter-label">Resonance</div>
+                    <div class="resonance-bar-bg">
+                        <div class="resonance-marker" id="marker-resonance"></div>
+                    </div>
+                    <div class="resonance-labels">
+                        <span class="shadow-text">👁️ Shadow</span>
+                        <span class="light-text">🕯️ Light</span>
+                    </div>
+                    <div class="meter-desc" id="resonance-status">Balanced Echoes</div>
+                </div>
+            </section>
+
+            <!-- RESOURCES -->
+            <section class="resource-container">
+                <!-- Faith -->
+                <div class="resource-card faith" 
+                     onmouseover="showTooltip('faith', event)" 
+                     onmouseout="hideTooltip()"
+                     onmousemove="moveTooltip(event)">
+                    <div class="icon-large">🕯️</div>
+                    <h2>Faith</h2>
+                    <div class="res-value"><span id="res-faith">0</span></div>
+                    <div class="res-rate">+<span id="rate-faith">0</span>/s</div>
+                    <button class="action-btn" onclick="manualGather('faith', event)">Prayer</button>
+                </div>
+
+                <!-- Doubt -->
+                <div class="resource-card doubt"
+                     onmouseover="showTooltip('doubt', event)" 
+                     onmouseout="hideTooltip()"
+                     onmousemove="moveTooltip(event)">
+                    <div class="icon-large">👁️</div>
+                    <h2>Doubt</h2>
+                    <div class="res-value"><span id="res-doubt">0</span></div>
+                    <div class="res-rate">+<span id="rate-doubt">0</span>/s</div>
+                    <button class="action-btn" onclick="manualGather('doubt', event)">Endure Whispers</button>
+                </div>
+
+                <!-- Resolve -->
+                <div class="resource-card resolve"
+                     onmouseover="showTooltip('resolve', event)" 
+                     onmouseout="hideTooltip()"
+                     onmousemove="moveTooltip(event)">
+                    <div class="icon-large">🛡️</div>
+                    <h2>Resolve</h2>
+                    <div class="res-value"><span id="res-resolve">0</span></div>
+                    <div class="res-rate">+<span id="rate-resolve">0</span>/s</div>
+                    <button class="action-btn" onclick="manualGather('resolve', event)">Focus Will</button>
+                </div>
+            </section>
+
+            <!-- STRUCTURES -->
+            <section class="structures-container">
+                <h3>Internal Structures</h3>
+                
+                <div class="building-card">
+                    <div class="building-icon">⛪</div>
+                    <div class="building-info">
+                        <h4>Hallowed Chapel</h4>
+                        <p>A place of Order. Generates Faith.</p>
+                    </div>
+                    <div class="building-controls">
+                        <div class="cost">Cost: <span id="cost-sanctum-faith">10</span> Faith</div>
+                        <button id="btn-buy-sanctum" onclick="buyBuilding('sanctum')">Build</button>
+                    </div>
+                    <div class="building-count"><span id="count-sanctum">0</span></div>
+                </div>
+
+                <div class="building-card">
+                    <div class="building-icon">🔮</div>
+                    <div class="building-info">
+                        <h4>Obsidian Shard</h4>
+                        <p>A conduit for Nyx. Generates Doubt.</p>
+                    </div>
+                    <div class="building-controls">
+                        <div class="cost">Cost: <span id="cost-spire-doubt">10</span> Doubt</div>
+                        <button id="btn-buy-spire" onclick="buyBuilding('spire')">Build</button>
+                    </div>
+                    <div class="building-count"><span id="count-spire">0</span></div>
+                </div>
+
+                <!-- Censer (Hidden) -->
+                <div id="container-censer" class="building-card" style="display: none; border-color: var(--col-sanity);">
+                    <div class="building-icon">🏺</div>
+                    <div class="building-info">
+                        <h4 style="color: var(--col-sanity);">Serafina's Ward</h4>
+                        <p>Soothing incense. Restores Sanity.</p>
+                    </div>
+                    <div class="building-controls">
+                        <div class="cost">Cost: <span id="cost-censer-faith">100</span> F / <span id="cost-censer-resolve">20</span> R</div>
+                        <button id="btn-buy-censer" onclick="buyBuilding('censer')">Build</button>
+                    </div>
+                    <div class="building-count"><span id="count-censer">0</span></div>
+                </div>
+
+                <div class="building-card">
+                    <div class="building-icon">⚔️</div>
+                    <div class="building-info">
+                        <h4>Sentinel's Drill</h4>
+                        <p>Garrett's training methods. Generates Resolve.</p>
+                    </div>
+                    <div class="building-controls">
+                        <div class="cost">Cost: <span id="cost-regimen-faith">5</span> F / <span id="cost-regimen-doubt">5</span> D</div>
+                        <button id="btn-buy-regimen" onclick="buyBuilding('regimen')">Build</button>
+                    </div>
+                    <div class="building-count"><span id="count-regimen">0</span></div>
+                </div>
+            </section>
+
+            <!-- HEARTSTONE CRUCIBLE -->
+            <section id="heartstone-section" class="heartstone-container" style="display: none;">
+                <div class="heartstone-header">
+                    <h3><span id="hs-name">Corrupted Heartstone</span> (Lvl <span id="hs-level">1</span>)</h3>
+                    <div class="heartstone-icon" id="hs-icon">🖤</div>
+                </div>
+                
+                <p class="hs-desc">The anchor of reality is destabilizing. Channel your power to cleanse it before Nyx takes hold.</p>
+
+                <div class="hs-battlefield">
+                    <div class="hs-bar-container">
+                        <div class="hs-bar-label">Corruption (Nyx)</div>
+                        <div class="hs-bar-bg">
+                            <div id="bar-corruption" class="hs-bar-fill corruption-fill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="hs-bar-container">
+                        <div class="hs-bar-label">Purification (Light)</div>
+                        <div class="hs-bar-bg">
+                            <div id="bar-purification" class="hs-bar-fill purification-fill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hs-controls">
+                    <button id="btn-hs-start" class="action-btn" onclick="startHeartstoneEncounter()">Begin Ritual</button>
+                    
+                    <div id="hs-active-controls" style="display: none;">
+                        <button class="action-btn holy-btn" onclick="channelHeartstone('faith')">
+                            Channel Faith (-<span id="cost-hs-faith">100</span>)
+                        </button>
+                        <button class="action-btn resolve-btn" onclick="channelHeartstone('resolve')">
+                            Strike (-<span id="cost-hs-resolve">50</span>)
+                        </button>
+                    </div>
+                </div>
+                <div class="hs-status" id="hs-status-text">The stone is dormant.</div>
+            </section>
+        </div>
+
+        <!-- TABS -->
+        <div id="tab-research" class="tab-content" style="display: none;">
+            <h3>The Nova Ascent</h3>
+            <p class="section-desc">Unlock hidden truths to strengthen the mind or embrace the void.</p>
+            <div id="research-container" class="research-grid"></div>
+        </div>
+
+        <div id="tab-codex" class="tab-content" style="display: none;">
+            <h3>The Codex</h3>
+            <p class="section-desc">Fragments of memory recovered from the Ash.</p>
+            <div id="codex-container" class="codex-list"></div>
+        </div>
+
+        <div id="tab-ascension" class="tab-content" style="display: none;">
+            <div class="ascension-header">
+                <h3>The Cycle Ends</h3>
+                <p>Sacrifice your current mind to gain eternal wisdom.</p>
+                <div class="prestige-currency">Soul Echoes: <span id="val-echoes">0</span></div>
+                <div class="prestige-preview">Reset now to gain: <span id="val-pending-echoes" style="color: #fff; font-weight: bold;">0</span> Echoes</div>
+                <button onclick="prestige()" class="ascend-btn">ASCEND (RESET)</button>
+            </div>
+
+            <!-- TRUE ENDING SECTION -->
+            <div id="fusion-container" class="heartstone-container" style="display: none; border-color: #f1c40f;">
+                <div class="heartstone-header">
+                    <h3>The Secret Outcome</h3>
+                    <div class="heartstone-icon">🌟</div>
+                </div>
+                <p class="hs-desc">The prophecy was never about destruction. It was about balance. Kaelen and Eldrin must become one.</p>
+                <div class="hs-controls">
+                    <div class="cost" style="color: #aaa; margin-bottom: 10px;">Requires: 5000 Faith, 5000 Doubt, 5000 Resolve</div>
+                    <button id="btn-fusion" class="action-btn" onclick="attemptFusion()" style="border-color: #f1c40f; color: #f1c40f;">ATTEMPT FUSION</button>
+                </div>
+            </div>
+
+            <h4>Ancestral Upgrades</h4>
+            <div id="prestige-upgrades-container" class="research-grid"></div>
+        </div>
+
+        <hr class="divider">
+        <section class="event-log-container">
+            <h3>Chronicle of Ash</h3>
+            <div id="event-log" class="event-log">
+                <div class="log-entry system">The mind stirs...</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="audio.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

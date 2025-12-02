@@ -1,0 +1,586 @@
+{
+  "status": "FAIL",
+  "total_issues": 116,
+  "issues": [
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\cli.py",
+      "rule": "MISSING_OMEGA_HEADER",
+      "message": "File does not start with a module docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function 'load_registry' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function 'get_all_categories' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function 'search_commands' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_ARG_TYPE",
+      "message": "Function 'search_commands' lacks argument type annotations."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function 'get_command_spec' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_ARG_TYPE",
+      "message": "Function 'get_command_spec' lacks argument type annotations."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function '_recursive_search' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_ARG_TYPE",
+      "message": "Function '_recursive_search' lacks argument type annotations."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_recursive_search' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "rule": "MISSING_OMEGA_HEADER",
+      "message": "File does not start with a module docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\__init__.py",
+      "rule": "MISSING_OMEGA_HEADER",
+      "message": "File does not start with a module docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\__init__.py",
+      "rule": "MISSING_OMEGA_HEADER",
+      "message": "File does not start with a module docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\gaze.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\gaze.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\gaze.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\mentor.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\mentor.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\mentor.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\soul.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\soul.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\soul.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\__init__.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\__init__.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\hephaestus\\__init__.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\enums.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\enums.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\__init__.py",
+      "rule": "MISSING_OMEGA_HEADER",
+      "message": "File does not start with a module docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\utils\\experience_logger.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function '_ensure_log_dir_exists' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\utils\\experience_logger.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function '_ensure_db_exists' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\utils\\experience_logger.py",
+      "rule": "MISSING_CLASS_DOCSTRING",
+      "message": "Class 'ExperienceLogger' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\utils\\experience_logger.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_ensure_log_dir_exists' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\utils\\experience_logger.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'get_last_log' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\utils\\experience_logger.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\utils\\experience_logger.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\adaptive_retriever.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\adaptive_retriever.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\adaptive_retriever.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\association_manager.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function 'load_from_dict' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\association_manager.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'get_linked_memories' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\association_manager.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'save_to_dict' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\association_manager.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'load_from_dict' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\association_manager.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\association_manager.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\association_manager.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\explanation_generator.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\explanation_generator.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\index.py",
+      "rule": "MISSING_OMEGA_HEADER",
+      "message": "File does not start with a module docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\main.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function 'run_cognitive_memory_test' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\main.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\main.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_handle_active_transition' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_handle_fading_transition' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_handle_consolidated_transition' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_handle_archived_transition' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'add_memory' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'retrieve_memories' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'vector_search' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'update_memory' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'boost_access' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'get_all_active' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_ensure_tables' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'add_memory' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'retrieve_memories' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'vector_search' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'boost_access' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'get_all_active' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_ensure_tables' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'retrieve_memories' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'boost_access' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'get_all_active' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'retrieve_memories' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '__del__' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_system.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\memory_tagger.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\persistence_test.py",
+      "rule": "MISSING_OMEGA_HEADER",
+      "message": "File does not start with a module docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\retrieval_engine.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\retrieval_engine.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\__init__.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\memory\\__init__.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\analytical_tagger.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\analytical_tagger.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\emotion_analyzer.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\emotion_analyzer.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\emotion_analyzer.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\nlp_engine.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'tokenize' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\nlp_engine.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'lemmatize' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\nlp_engine.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'extract_entities' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\nlp_engine.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'detect_emotions' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\nlp_engine.py",
+      "rule": "LEGACY_VERSION",
+      "message": "Module docstring must specify OMEGA v15.0."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\nlp_engine.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\nlp_engine.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\nlp\\__init__.py",
+      "rule": "MISSING_OMEGA_HEADER",
+      "message": "File does not start with a module docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\utils\\explanation_generator.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\utils\\explanation_generator.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\utils\\sentinel_utils.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\utils\\sentinel_utils.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\utils\\soul_analyzer.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\utils\\__init__.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\logic\\utils\\__init__.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\agent_template.py",
+      "rule": "MISSING_RETURN_TYPE",
+      "message": "Function 'run_test' lacks return type annotation."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\agent_template.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'run_test' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\agent_template.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\agent_template.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\config.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function '_load_sovereign_config' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\config.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'tools_dir' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\config.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\core.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\core.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\oathkeeper.py",
+      "rule": "MISSING_FUNCTION_DOCSTRING",
+      "message": "Function 'sentinel_gate' lacks a docstring."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\__init__.py",
+      "rule": "MISSING_UIP_V15",
+      "message": "Module docstring lacks UIP-V15 block structure."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\nodes\\context.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\nodes\\forge.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\nodes\\insight.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    },
+    {
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\agents\\axion\\nodes\\mechanics.py",
+      "rule": "MISSING_IDENTITY",
+      "message": "Module docstring lacks Sovereign Identity marker (High Priestess)."
+    }
+  ]
+}

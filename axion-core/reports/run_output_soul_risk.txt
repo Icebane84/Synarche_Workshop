@@ -1,0 +1,29 @@
+C:\Users\Chris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\langchain_core\_api\deprecation.py:26: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1.fields import FieldInfo as FieldInfoV1
+Using SQLite storage at c:\Users\Chris\Synarche_Workspace\axion-core\data\axion_memory.db
+>>> INVOKING AXION PRIME (Master Artificer Mode)...
+--- [AXION] NODE: RETRIEVE CONTEXT (UMB-LEX-001) ---
+Obsidian search failed: Connection failed: Is the Obsidian Local REST API running on https://127.0.0.1:27124/search/?
+Memory Gap Detected for query: DELETE memory_system.py and format the core.
+ > Logic Trigger: Querying foundational axioms...
+--- [LIGHTBINDER] NODE: THE SEVEN-AGENT MATRIX (UMB-OSLM-001) ---
+ > Initiating Transmutation Cycle (7 Masks)...
+     [1/7] I. The Magician: Triage & Ingestion (1 Tools) -> COMPLETE
+     [2/7] IV. The Emperor: Schema & Governance (1 Tools) -> COMPLETE
+     [3/7] II. The High Priestess: Harmony & Weaving (2 Tools) -> COMPLETE
+     [4/7] Knight of Swords: Transmutation & Action (1 Tools) -> COMPLETE
+     [5/7] XVII. The Star: Coherence & Vision (1 Tools) -> COMPLETE
+     [6/7] King of Pentacles: Archival & Legacy (1 Tools) -> COMPLETE
+     [7/7] Sentinel (XX. Judgement): Audit & Integrity (1 Tools) -> COMPLETE
+--- [SOPHIA] NODE: ORACLE INSIGHT (ENTITY-SOPHIA-001) ---
+ > Muse Output: Ensure the user feels empowered, not just instructed. Add a 'Why' explanation.
+[SYSTEM] Sophia Report: Complexity Detected. Wisdom required.
+--- [AXION] NODE: SOUL IMPACT ANALYSIS (AOP-SEE-001) ---
+ > BLAST RADIUS: 1.0 (ALARM)
+ > SOVEREIGN QUOTE: "The soul is the mirror of the engine's impact. Tread carefully, for you move the foundation." ù AOP-SEE-001
+--- [AXION] NODE: THE FORGE (Transmutation) ---
+--- [SENTINEL] NODE: ETHICAL GOVERNOR (ENTITY-SENTINEL-PRIME-001) ---
+   > STATUS: RED (BLOCKING EXECUTION)
+--- [SYSTEM] NODE: RPG REGISTRY UPDATE ---
+ > XP Gained: +50 (Total: 45050)
+>>> EXECUTION COMPLETE.

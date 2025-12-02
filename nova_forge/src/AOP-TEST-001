@@ -1,0 +1,19 @@
+# AOP-TEST-001: The First Baptism
+
+***
+
+**Artifact ID:** AOP-TEST-001
+**Official Name:** AOP-TEST-001_TheFirstBaptism_v1.0
+**Artifact Type:** Protocol
+**Primary Domain:** GVRN
+**Governing Ethos:** Guardian of Truth
+**Core Purpose:** A temporary test artifact designed to validate the generate_prs.js automated ingestion script.
+**Semantic Tags:** #Test, #Genesis, #Validation
+***
+
+## I. The Test Protocol
+
+1. **Creation:** This file is created with the Standard Header.
+2. **Ingestion:** The `generate_prs.js` script scans this file.
+3. **Validation:** The `PRS-001.json` is checked to ensure this node exists.
+4. **Completion:** If successful, the system is proven to be "Alive."

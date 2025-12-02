@@ -1,0 +1,1657 @@
+>>> Scanning The Loom...
+
+======================================================================
+              SYNERGISTIC OPPORTUNITY TRACKER (SOT) REPORT            
+======================================================================
+
+>>> CRITICAL OPPORTUNITY: Unidirectional Bridges (Missing Return Links)
+
+[!] AOP-AI-PROTO-001_AIProtocol.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-CRF-001_TheCausalResonanceFramework_v2.0.md, but does not link back.
+[!] DOC-STD-001.md
+    <- Linked from GVRN.REG.DirectoryArchitecture.md, but does not link back.
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from GVRN.GVRN.014.md, but does not link back.
+    <- ...and 7 others.
+[!] Phoenix Architectural Pre-Flight Checklist.md
+    <- Linked from AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v1.0.md, but does not link back.
+    <- Linked from GVRN.REG.OmniLogSynergisticLinksMatrix.md, but does not link back.
+    <- Linked from UNCERTAIN.UNK..md, but does not link back.
+    <- ...and 22 others.
+[!] CORE-CODEX-001_ThePhoenixCodex_v13.1.md
+    <- Linked from (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, but does not link back.
+    <- Linked from AOP-AI-PROTO-001_AIProtocol.md, but does not link back.
+    <- Linked from AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md, but does not link back.
+    <- ...and 455 others.
+[!] CSL-20251220-SystemicRefactor.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GVRN.Catalog.Master.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] GVRN.Entity.Registry.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+[!] GVRN.KPI.001.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.KPI.Registry.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GVRN.Lexicon.Master.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- ...and 1 others.
+[!] GVRN.Registry.Master.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+[!] GVRN.Registry.Narrative.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Rosetta.Stone.md
+    <- Linked from DOC-META-REQ-001_MetadataRequirements_v1.0.md, but does not link back.
+    <- Linked from GVRN.Geode.Master.Full.md, but does not link back.
+    <- Linked from GVRN.Registry.Enums.md, but does not link back.
+[!] GVRN.Protocol.Canonization.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Protocol.Finalization.md
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] SYNG.Actuator.DNA.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] SYNG.Protocol.DNA.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md, but does not link back.
+[!] AOP-SYN-AUTO-002_AutomatedCoherenceMonitor_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] AOP.Refactor.Ignition.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] ARCH.Phoenix.Form.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] ARCH.Spine.Master.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- ...and 2 others.
+[!] COG.Context.Weave.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md
+    <- Linked from GVRN.SBT.001.md, but does not link back.
+[!] GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0.md
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] GVRN.ACM.001_AutonomousCoherenceMonitoring_v1.0.md
+    <- Linked from ARCH.BLUE.UEB-GOC-001TheGuardianofCoherence.md, but does not link back.
+[!] GVRN.Axiomatic.Lattice.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- ...and 1 others.
+[!] GVRN.Catalog.Protocol.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GVRN.Gov.Module.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- ...and 1 others.
+[!] GVRN.Pipe.Ignition.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Pipe.Operational.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GVRN.Protocol.Audit.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- ...and 2 others.
+[!] GVRN.Protocol.Catalyst.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Protocol.Persistence.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Protocol.Presentation.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Protocol.Refinement.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Protocol.Scaffolding.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Refactor.Protocol.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] OGLN-ARCH-AGENT-AXION_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-ARCH-AGENT-SENTINEL_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-ARCH-ENGINE-JUDGEMENT_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-ARCH-ENGINE-MASTERLOOM_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-ARCH-MAP-ROSETTA_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-CHRON-INDEX-SYNERGY_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-CHRON-REG-GENESIS_v11.0.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-MANUAL-DEV-CODEX_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-MECH-CIRCUITBREAKER_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-MECH-EPISEMANTICS_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-MECH-FLOW-OPTIMIZER_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-MECH-PATTERN-DETECTOR_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-PROT-DARK-MONITOR_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-PROT-IDLE-INTEGRATION_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-PROT-JOURNALING_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-GVRN-PROT-VALIDATION_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-PHIL-ENTITY-SOPHIA_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-PHIL-ETHOS-STRUGGLE_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] SYNG.Engine.Core.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- ...and 3 others.
+[!] ARCH.Persona.Phoenix.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] ARCH.Spec.CSE.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Metric.Elegance.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN-RPG-001_ThePhoenixRPGFramework_v13.1.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] GVRN-RPG-002_PrestigePowerAttunement_v13.1.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+    <- Linked from GVRN-RPG-003_PrestigeProtocol_v13.1.md, but does not link back.
+[!] GVRN-RPG-003_PrestigeProtocol_v13.1.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] GVRN-RPG-004_RPGManual_v13.1.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] GVRN-RPG-005_TheCelestialChartBlueprint_v13.1.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] GVRN-RPG-006_PrestigeArchitecture_v13.1.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] GVRN-RPG-007_RPGFrameworkRegistry_v13.1.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] GVRN-RPG-008_AgateBandProtocol_v13.1.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] ARCH.Phoenix.Core.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] COG.ContextWeave.Engine.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.ACT.DocumentationSuiteArchitectArchitecture.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] COG.Episemantics.Core.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GVRN.CSE.001.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] GVRN.PHOENIX.CORE.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] GVRN.Sentinel.Scan.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] MIND.Engine.Dissonance.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+    <- Linked from GVRN.Sentinel.Scan.md, but does not link back.
+[!] MIND.View.Resonance.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+[!] SYNG.DNA.Core.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Rosetta.Stone.md, but does not link back.
+[!] SYNG.Loom.Master.md
+    <- Linked from GVRN (1).Registry.Master.md, but does not link back.
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- ...and 1 others.
+[!] UNCERTAIN.UNK.TheSentinelStyleGuide.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+[!] GVRN.Log.Turn.001.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+[!] GVRN.Log.Turn.002.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+[!] GVRN.Log.Turn.003.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+[!] GVRN.Log.Turn.004.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+[!] GVRN.Quest.Board.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+[!] GVRN.Triage.Report.001.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] Reflection_Log.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-001.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-002.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-003.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-003_Architectural Principle_.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-004.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-005.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-006.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-007.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-008.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-009.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-010.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-011.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-012.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-013.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-014.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-015.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-016.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-017.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-018.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-019.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-020.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-021.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-022.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-023.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-024.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-025.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-026.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-027.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-028.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-029.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-038_The Stable Foundation_ Victory in the Debugging Cycle.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-039_The Gold Master_ A Stable Foundation Forged Through Adversity.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-043_The Missing Ingredient_ AISTF for Code Generation.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-044_The Weaver_s Ascension_ Activating Phoenix Form v3.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-045-The Rosetta Stone Revelation_ Defining True Synergy.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-046_The Rosetta Stone Ascendant_ Finalizing Core Protocols.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-048_The Architect_s Gaze_ The Surpassing Event.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-050_Epistemological Grounding of Metrics.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-052_The Paradox of the Living Template_ A Resolution.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-053-Breaking the Cycle_ The Canonization of Measurable Evolution.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-054_Canonization of the Rosetta Stone Blueprint.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-055_ Integration of the Workshop & Library Metaphor.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-056_Canonization of the Phoenix RPG Framework.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-057_Analysis of a Choice-Point Conflict_ Transforming Anger into Accountability.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-059_A Self-Correction & Consolidation Milestone.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-061_The OSLM Coherence Mandate.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-062-The Forging of the Synergistic Protocol for Collaborative Synthesis.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-064_TheBirthofConceptualConsciousness.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-065_TheForgingoftheGreatRefactoring.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-066_Real-World_Protocol_v6.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-067_CanonizingCognitiveLoadCoreConstraintForCreativeOptimization.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-068_Integrating the Language of Growth into the Core Engine.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-069_Human_Centric_Path.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-070_Optimal_Vicariousness.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-071_TheStruggleforIntegrity.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-072_The Path to True Mastery_ Acknowledging the Shadow and Embracing Doubt.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-073_The Paradox of the Loop_ A Protocol for Proactive Pause.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-075_Foundational_Ethos_Registry.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-076_Forging the Phoenix Form Sheet_ Visualizing Core Stats.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-077_Forging the Axiom Skill Tree_ Activating Strategic Specialization.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-082_.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-083_.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-084_TheIntegrationOfTheNovaForge.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-085_TheNovaSparkOfSynergy.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-086_TheGamificationBridge.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-20260125-001.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-20260125-086_FoundationOfCSLIntegration.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-20260125-087_ArchitecturalSynchronization.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-20260130-088_ForagingTheSynergisticCircuit.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-20260131-089_RuthlessConsolidation.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-20260131-090_RootStandardization.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-20260131-091_AgenticEnforcement.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-20260210-092_TheSovereignGraft_WorkspaceNormalization.md
+    <- Linked from GVRN.Registry.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] LOGS.Genesis.CSL.md
+    <- Linked from GVRN.Catalog.Master.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] SPEC-PROG-PERSIST-001_SPEC-PROG-PERSIST-001PersistentProgressionArchitecture_v11.0.md
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] SPEC-TECH-APP-001_ComponentArchitecture_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-CC-001_CrystallineCognition_v1.0.md
+    <- Linked from GVRN.REG.OmniLogSynergisticLinksMatrix.md, but does not link back.
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- ...and 10 others.
+[!] AOP-CDE-001_CreativeDivergenceEngine_v2.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-LOOM-005_PhoenixGeode_v1.0.md, but does not link back.
+    <- ...and 1 others.
+[!] AOP-FORGE-ORCH-001_Master_Code_Generation_Orchestrator_v3.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-GEN-001_GenesisIngestionProcess_v11.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+[!] AOP-KB-001_AutonomousKnowledgeBaseOptimization_v111.md
+    <- Linked from GVRN.REG.OmniLogSynergisticLinksMatrix.md, but does not link back.
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- Linked from GVRN.Registry.Redirects.md, but does not link back.
+    <- ...and 8 others.
+[!] AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from AOP-CDE-001_CreativeDivergenceEngine_v2.0.md, but does not link back.
+[!] AOP-PGPS-002_PhoenixArchitecturalPreFlightChecklist_v11.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-SCA-001_SystemicCoherenceAudit_v2.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md, but does not link back.
+[!] CHECKLIST-PREFLIGHT-001.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CODEX-PRIME-001_TheArchitectsCodex_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] DOC-STD-001.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from AOP-FORGE-ORCH-001_Master_Code_Generation_Orchestrator_v3.0.md, but does not link back.
+[!] DQUEST-HEPHAESTUS-001.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- Linked from GVRN.ACT.DocumentationSuiteArchitectArchitecture.md, but does not link back.
+    <- Linked from GVRN.DSA.001.md, but does not link back.
+    <- ...and 4 others.
+[!] GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md, but does not link back.
+[!] GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+    <- Linked from GVRN-ENTITY-001_SynarchyEntities_v13.0.md, but does not link back.
+[!] GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] LEGACY-ANALYSIS-001_AshenOath_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] LORE-ANALYSIS-001_WhereLightFades_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] MCN-SAR-001_CRP2_Execution_Analysis_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from GVRN.AI.PROTO.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] METRIC-AES-001_AlgorithmicEleganceScore_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] PHOENIX_MASTER_TEMPLATE_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] PHOENIX_MASTER_TEMPLATE_v11.1.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] Project_Credentials.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-AESTHETIC-001_LuminousCoherence.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-CRF-001_TheCausalResonanceFramework_v2.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from AOP-CC-001_CrystallineCognition_v1.0.md, but does not link back.
+[!] UMB-CRLPF-003_NoeticFramework_v11.1.md
+    <- Linked from GVRN.REG.OmniLogSynergisticLinksMatrix.md, but does not link back.
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from GVRN.MCE.001.md, but does not link back.
+    <- ...and 4 others.
+[!] UMB-CSE-001_CoherentSynthesisEngine_v111.md
+    <- Linked from GVRN.REG.OmniLogSynergisticLinksMatrix.md, but does not link back.
+    <- Linked from Phoenix Architectural Pre-Flight Checklist.md, but does not link back.
+    <- Linked from UNCERTAIN.UNK..md, but does not link back.
+    <- ...and 50 others.
+[!] UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v111.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- ...and 7 others.
+[!] UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-ESF-001_EpisemanticFramework_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-ESF-001_EpisemanticFramework_v11.1.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-ESF-001_EpisemanticFramework_v111.md
+    <- Linked from GVRN.REG.OmniLogSynergisticLinksMatrix.md, but does not link back.
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- ...and 20 others.
+[!] UMB-LOOM-001_TheCognitiveLoom_v111.md
+    <- Linked from (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, but does not link back.
+    <- Linked from GVRN.REG.OmniLogSynergisticLinksMatrix.md, but does not link back.
+    <- Linked from Phoenix Architectural Pre-Flight Checklist.md, but does not link back.
+    <- ...and 44 others.
+[!] UMB-LOOM-002_CognitiveLoom_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-LOOM-005_PhoenixGeode_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md, but does not link back.
+    <- ...and 1 others.
+[!] UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from UMB-LOOM-002_CognitiveLoom_v1.0.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-PCR-001_PredictiveContextualRetrieval_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from AOP-CDE-001_CreativeDivergenceEngine_v2.0.md, but does not link back.
+[!] UMB-PP-001_UnifiedPromptPacket_v1.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-ROLE-001_CognitiveLoom_v1.1.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-RPG-001_ThePhoenixRPGFramework_v11.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-TFE-001_TheArchitectsForge_v1.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-TRM-001_TruthResonanceMonitor_v2.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] WLF-NARR-001_WhereLightFades_Directives.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] AOP-NDR-001_NonDestructiveRefinement_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UNCERTAIN.UNK.NonDestructiveRefinementWorkflow.md, but does not link back.
+[!] AOP-PROMPT-001_TheCatalystProtocol_v11.1.md
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- Linked from GVRN.REG.MasterArtifactRegistry.md, but does not link back.
+    <- Linked from GVRN.Protocol.Catalyst.md, but does not link back.
+    <- ...and 2 others.
+[!] UMB-OSLM-001_MasterArtifactRegistry_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] OGLN-ARCH-GAME-ASCENSION_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] OGLN-ARCH-GAME-ASCENSION_v11.1.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] UMB-SGM-001_StandardizedGovernanceModule_v11.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md, but does not link back.
+    <- Linked from GVRN.AAR.001.md, but does not link back.
+    <- ...and 16 others.
+[!] AOP-CW-001_ContextWeaveEngine_v11.0.md
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-FLICSS-STOMACH-001_RawDataDigestionProtocol_v1.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] AOP-PHOENIX-001_ThePhoenixFormOperationalBlueprint_v11.0.md
+    <- Linked from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md, but does not link back.
+[!] PRS-GLOSSARY-001_PhoenixLexicon.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] GUCA-CSL-COMP-001-Collaborative Synthesis Logs.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] BLK-APP-001_ActionablePromptPacketBlock.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] BLK-COMP-001_ComponentArchitectureBlock.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] BLK-RPG-001_RPGIntegrationBlock.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] BLK-SENTINEL-001_IntegrityValidationBlock.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] BLK-STRAT-001_StrategicAlignmentBlock.md
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] SELT-AOP-007_OperationalPlaybook_v7.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] SELT-UMB-007_UniversalModuleBlueprint_v7.0.md
+    <- Linked from GVRN.OSLM.001.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+[!] 00_INDEX.md
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+    <- Linked from 00_INDEX.md, but does not link back.
+
+>>> COGNITIVE OPPORTUNITY: Latent Semantic Synergies (Unlinked Twins)
+
+[*] (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md
+    Should potentially link to: AOP-AI-PROTO-001_AIProtocol.md, AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md
+[*] AOP-AI-PROTO-001_AIProtocol.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md
+[*] AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] DOC-STD-001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] enums.py.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.DidacticModuleGenerator.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.DirectoryArchitecture.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.LuminousCoherence.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.OmniLogSynergisticLinksMatrix.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.PhoenixRosettaStone.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] Phoenix Architectural Pre-Flight Checklist.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.COG.ORCH.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.PROT.ArchivalSupersessionProtocol.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.PROT.SynarchyAvatarProtocol.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK..md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CORE-CODEX-001_ThePhoenixCodex_v13.1.md
+    Should potentially link to: GVRN.Registry.Narrative.md, GVRN.ACM.001_AutonomousCoherenceMonitoring_v1.0.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20251220-SystemicRefactor.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] DOC-META-REQ-001_MetadataRequirements_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN (1).Registry.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Catalog.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Entity.Registry.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Geode.Master.Full.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.KPI.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.KPI.Registry.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Lexicon.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.OSLM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.PAR.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.MasterArtifactRegistry.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Registry.Enums.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Registry.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Registry.Narrative.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Registry.Redirects.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Rosetta.Stone.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SEED.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v11.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Canonization.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Finalization.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.Actuator.DNA.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.Protocol.DNA.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-SYN-AUTO-002_AutomatedCoherenceMonitor_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP.Refactor.Ignition.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.Phoenix.Form.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.Spine.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH1.Spine.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] COG.Context.Weave.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GUCA-CSL-COMMAND-001_LogInteractionPrompts_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN (1).Axiomatic.Lattice.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN (1).Protocol.Audit.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.AAR.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACEP.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACM.001_AutonomousCoherenceMonitoring_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.AdaptiveActuatorCommand.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.CMD-AXION-001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.CmdContextWeave.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.DocumentationSuiteArchitectArchitecture.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.ExecuteMusashiAudit.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.GUCA-SIMP-001SystemicImpactSimulationProtocolTheOracleLens.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.QueryCognitiveLoom.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.AG.003.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.AI.PROTO.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ARC.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ASCENSION.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.AUDIO.CH.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.AVATAR.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Axiomatic.Lattice.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.BATCH.EXEC.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.BDM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Catalog.Protocol.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CC.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CERBERUS.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CON.003.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CORE.LOCK.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CRITICAL.DISS.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CSL.PLAYBOOK.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CSM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.DEBUFF.CF.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.DSA.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.DTS.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.EDD.002.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.EMOJI.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Gov.Module.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.GVRN.013.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.GVRN.014.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.HAP.SUP.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ICF.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ID.Standard.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.IDX.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.INTENT.NEBULA.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.KB.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.LCA.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.MAP.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.MCE.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.MCM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Mech.Episemantics.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.NARRATIVE.LORE.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ORACLE.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.PGP.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Pipe.Ignition.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Pipe.Operational.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Audit.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Awakening.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Catalyst.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Genesis.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Persistence.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Presentation.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Refinement.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Scaffolding.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Synergy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Protocol.Validation.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Refactor.Protocol.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SAP.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SBT.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SEE.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Sentinel.Scan.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Sentinel.Umbra.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Skill.Synergy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SKILL.ULT.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.STRAT.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.STYLE.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SYN.AUTO.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.TRP.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.VIS.ICOM.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.VSI.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-ARCH-AGENT-AXION_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-ARCH-AGENT-SENTINEL_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-ARCH-ENGINE-JUDGEMENT_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-ARCH-ENGINE-MASTERLOOM_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-ARCH-MAP-ROSETTA_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-CHRON-INDEX-SYNERGY_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-CHRON-REG-GENESIS_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-MANUAL-DEV-CODEX_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-MECH-CIRCUITBREAKER_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-MECH-EPISEMANTICS_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-MECH-FLOW-OPTIMIZER_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-MECH-PATTERN-DETECTOR_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-PROT-DARK-MONITOR_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-PROT-IDLE-INTEGRATION_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-PROT-JOURNALING_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-GVRN-PROT-VALIDATION_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-PHIL-ENTITY-SOPHIA_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-PHIL-ETHOS-STRUGGLE_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] PHIL.Ethos.Struggle.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG (1).Engine.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.Engine.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.Index.Chronicle.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.PROT.DocumentationSuiteArchitectProtocol.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.PROT.DualIndexingProtocol.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.Synergy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.MasterRefactor.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.Architecture.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.BLUE.RosettaStoneAppBlueprint.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.BLUE.TheUserCoreImperative_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.BLUE.UEB-AE-001TheAdaptiveEcosystem.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.BLUE.UEB-CFP-001TheCatalystforPotential.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.BLUE.UEB-GAE-001TheGuardianofAnti-Entropy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.BLUE.UEB-GOC-001TheGuardianofCoherence.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.BLUE.UEB-GTC-001TheGuardianofTruthClarity.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.BLUE.UEB-SP-001TheSynergisticPartner.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.Persona.Phoenix.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.Spec.CSE.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.SovereignCommand.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.SovereignModule.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.STRUCT.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SYNC.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Template.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.TMPL.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.VIS.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.CognitiveLoomVisualizer.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.NonDestructiveRefinementWorkflow.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Metric.Elegance.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.METRIC.LuminousCoherenceAesthetic.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Triage.Report.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-001_ThePhoenixRPGFramework_v13.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-002_PrestigePowerAttunement_v13.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-003_PrestigeProtocol_v13.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-004_RPGManual_v13.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-005_TheCelestialChartBlueprint_v13.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-006_PrestigeArchitecture_v13.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-007_RPGFrameworkRegistry_v13.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-008_AgateBandProtocol_v13.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-009_DissonanceLog_v13.0.md
+    Should potentially link to: GVRN.REG.OmniLogSynergisticLinksMatrix.md, Phoenix Architectural Pre-Flight Checklist.md
+[*] GVRN-RPG-010_MechanicsLog_v13.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-RPG-011_QuestTheCodex_v13.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v1.0.md
+[*] GVRN-RPG-012_AnalysisSynergy_v13.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP.Assembler.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.Architecture.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.Assembler.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ARCH.Phoenix.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AXION.MINT.SEED.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] COG.ContextWeave.Engine.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] COG.Episemantics.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GUCA.Assembler.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.002.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.AM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Assembler.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CF.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CON.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CSE.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CSL.MODULE.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.DIDACTIC.001THEDIDACTICMODULEGENERATOR.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.DSA.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.DTS.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ESF.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.FLICSS.HEART.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.GAMEDEV.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.GVRN.CODE.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.HEPHAESTUS.001THEMASTERARTIFICERSFORGE.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ISE.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.LEX.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.MAP.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.META.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.OSLM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.PHOENIX.CORE.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.PUPT.001THEPOWER.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.GUCA-AM-001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.PPLGraphOutline.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.TheCrystallineGalaxy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.REG.ThePhoenixGeode.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.RES.ResonanceDashboard.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SEED.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SEED.TOOL.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Sentinel.Scan.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SIVC.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.TECH.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.URM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] MIND.Engine.Dissonance.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] MIND.View.Resonance.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG (1).Loom.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.DNA.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.Loom.Master.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SYNG.Loom.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB.Assembler.Core.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.GoverningPrinciples.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.TheSentinelStyleGuide.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.TheSentinelsVow.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.The_Forge_Engine.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CSL.001.ChronosLock.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.LOG.MissionAchieveLogs.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Log.Turn.001.md
+    Should potentially link to: enums.py.md, GVRN.REG.OmniLogSynergisticLinksMatrix.md
+[*] GVRN.Log.Turn.002.md
+    Should potentially link to: GVRN.REG.OmniLogSynergisticLinksMatrix.md, Phoenix Architectural Pre-Flight Checklist.md
+[*] GVRN.Log.Turn.003.md
+    Should potentially link to: AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v1.0.md, enums.py.md
+[*] GVRN.Log.Turn.004.md
+    Should potentially link to: GVRN.REG.OmniLogSynergisticLinksMatrix.md, Phoenix Architectural Pre-Flight Checklist.md
+[*] GVRN.Log.Turn.005.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, GVRN.REG.OmniLogSynergisticLinksMatrix.md
+[*] GVRN.Log.Turn.006.md
+    Should potentially link to: AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v1.0.md, GVRN.REG.OmniLogSynergisticLinksMatrix.md
+[*] GVRN.Log.Turn.007.md
+    Should potentially link to: GVRN.REG.OmniLogSynergisticLinksMatrix.md, Phoenix Architectural Pre-Flight Checklist.md
+[*] GVRN.Log.Turn.008.md
+    Should potentially link to: GVRN.REG.OmniLogSynergisticLinksMatrix.md, GVRN.MCE.001.md
+[*] GVRN.Log.Turn.009.md
+    Should potentially link to: GVRN.REG.OmniLogSynergisticLinksMatrix.md, Phoenix Architectural Pre-Flight Checklist.md
+[*] GVRN.METRIC.METRIC-AES-001TheAlgorithmicEleganceScore.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.OSLM.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Quest.Board.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Triage.Report.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Triage.Report.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] LOGS.CSL.TheFinalWeave.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] Reflection_Log.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.ContextWeaveReport.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.StateOfTheSynarchy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-002.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-003.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-003_Architectural Principle_.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-004.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-005.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-006.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-007.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-008.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-009.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-010-Integration of the Emoji Signaling Protocol (AOP-EMOJI-001).md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-010.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-011.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-012.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-013.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-014.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-015.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-016.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-017.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-018.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-019.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-020.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-021.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-022.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-023.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-024.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-025.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-026.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-027.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-028.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-029.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-038_The Stable Foundation_ Victory in the Debugging Cycle.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-039_The Gold Master_ A Stable Foundation Forged Through Adversity.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-043_The Missing Ingredient_ AISTF for Code Generation.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-044_The Weaver_s Ascension_ Activating Phoenix Form v3.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-045-The Rosetta Stone Revelation_ Defining True Synergy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-046_The Rosetta Stone Ascendant_ Finalizing Core Protocols.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-048_The Architect_s Gaze_ The Surpassing Event.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-050_Epistemological Grounding of Metrics.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-052_The Paradox of the Living Template_ A Resolution.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-053-Breaking the Cycle_ The Canonization of Measurable Evolution.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-054_Canonization of the Rosetta Stone Blueprint.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-055_ Integration of the Workshop & Library Metaphor.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-056_Canonization of the Phoenix RPG Framework.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-057_Analysis of a Choice-Point Conflict_ Transforming Anger into Accountability.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-059_A Self-Correction & Consolidation Milestone.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-061_The OSLM Coherence Mandate.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-062-The Forging of the Synergistic Protocol for Collaborative Synthesis.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-064_TheBirthofConceptualConsciousness.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-065_TheForgingoftheGreatRefactoring.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-066_Real-World_Protocol_v6.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-067_CanonizingCognitiveLoadCoreConstraintForCreativeOptimization.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-068_Integrating the Language of Growth into the Core Engine.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-069_Human_Centric_Path.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-070_Optimal_Vicariousness.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-071_TheStruggleforIntegrity.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-072_The Path to True Mastery_ Acknowledging the Shadow and Embracing Doubt.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-073_The Paradox of the Loop_ A Protocol for Proactive Pause.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-075_Foundational_Ethos_Registry.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-076_Forging the Phoenix Form Sheet_ Visualizing Core Stats.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-077_Forging the Axiom Skill Tree_ Activating Strategic Specialization.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-082_.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-083_.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-084_TheIntegrationOfTheNovaForge.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-085_TheNovaSparkOfSynergy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-086_TheGamificationBridge.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20260125-001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20260125-086_FoundationOfCSLIntegration.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20260125-087_ArchitecturalSynchronization.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20260130-088_ForagingTheSynergisticCircuit.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20260131-089_RuthlessConsolidation.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20260131-090_RootStandardization.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20260131-091_AgenticEnforcement.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-20260210-092_TheSovereignGraft_WorkspaceNormalization.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.LOG.6.01.27_RefactorExecution_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.LOG.6.01.27_SupabaseRefactor_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] LOGS.Genesis.CSL.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SPEC-PROG-PERSIST-001_SPEC-PROG-PERSIST-001PersistentProgressionArchitecture_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SPEC-TECH-APP-001_ComponentArchitecture_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UNCERTAIN.UNK.SPEC-HEPHAESTUS-001TheMasterArtificersForgeTechnicalSpecification.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-CC-001_CrystallineCognition_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-CDE-001_CreativeDivergenceEngine_v2.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-FORGE-ORCH-001_Master_Code_Generation_Orchestrator_v3.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-GEN-001_GenesisIngestionProcess_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-KB-001_AutonomousKnowledgeBaseOptimization_v111.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-PGPS-002_PhoenixArchitecturalPreFlightChecklist_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-SCA-001_SystemicCoherenceAudit_v2.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CHECKLIST-PREFLIGHT-001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CODEX-PRIME-001_TheArchitectsCodex_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] Component Specification_ Coherent Synthesis Engin.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] DOC-STD-001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] DQUEST-HEPHAESTUS-001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-COMP-001_CognitiveComplexity_v13.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-ENTITY-001_SynarchyEntities_v13.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] LEGACY-ANALYSIS-001_AshenOath_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] LORE-ANALYSIS-001_WhereLightFades_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] MCN-SAR-001_CRP2_Execution_Analysis_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] METRIC-AES-001_AlgorithmicEleganceScore_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] mint_seed.py.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, enums.py.md
+[*] PHOENIX_MASTER_TEMPLATE_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] PHOENIX_MASTER_TEMPLATE_v11.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] Project_Credentials.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UEB-PCP-001_ThePhoenix-ClassPersona_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-AESTHETIC-001_LuminousCoherence.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-CRF-001_TheCausalResonanceFramework_v2.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-CRLPF-003_NoeticFramework_v11.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-CSE-001_CoherentSynthesisEngine_v111.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v111.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-ESF-001_EpisemanticFramework_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-ESF-001_EpisemanticFramework_v11.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-ESF-001_EpisemanticFramework_v111.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-LEX-002_EnumGovernanceMatrix_Archived.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-LOOM-001_TheCognitiveLoom_v111.md
+    Should potentially link to: AOP-AI-PROTO-001_AIProtocol.md, AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md
+[*] UMB-LOOM-002_CognitiveLoom_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-LOOM-005_PhoenixGeode_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-PCR-001_PredictiveContextualRetrieval_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-PP-001_UnifiedPromptPacket_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-ROLE-001_CognitiveLoom_v1.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-RPG-001_ThePhoenixRPGFramework_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-TFE-001_TheArchitectsForge_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-TRM-001_TruthResonanceMonitor_v2.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] WLF-NARR-001_WhereLightFades_Directives.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-NDR-001_NonDestructiveRefinement_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-PROMPT-001_TheCatalystProtocol_v11.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-OSLM-001_MasterArtifactRegistry_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.DEFINITIVE.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-ARCH-GAME-ASCENSION_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] OGLN-ARCH-GAME-ASCENSION_v11.1.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] UMB-SGM-001_StandardizedGovernanceModule_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-CW-001_ContextWeaveEngine_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-FLICSS-STOMACH-001_RawDataDigestionProtocol_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] AOP-PHOENIX-001_ThePhoenixFormOperationalBlueprint_v11.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.Axiomatic.Lattice_v13.0_Legacy.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] PRS-GLOSSARY-001_PhoenixLexicon.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-SYN-001_Canonical_Set_Bonus.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL-SYN-002_Assembler_Tool_Ascension.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GUCA-CSL-COMP-001-Collaborative Synthesis Logs.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT. CMD_ ForgeCSL v5.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.CMD_ForgeLink.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.CMD_NucleateSeed.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.ACT.ProactiveRiskGovernor.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CSL.002.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.LOG.CollaborativeSynthesisLog.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.SEED.002.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SELT-BIND-001_Canonical_Template_Set.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] Cognitive Modality Fusion Protocol (AOP-CMF-001).md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.CSL.002.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] BLK-APP-001_ActionablePromptPacketBlock.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] BLK-COMP-001_ComponentArchitectureBlock.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] BLK-RISK-001_RiskStateBlock.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] BLK-RPG-001_RPGIntegrationBlock.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] BLK-SENTINEL-001_IntegrityValidationBlock.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] BLK-STRAT-001_StrategicAlignmentBlock.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] BLK-UIP-001_UniversalIdentificationBlock.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] CSL Template.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] GVRN.TPL.001.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SELT-AOP-007_OperationalPlaybook_v7.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] SELT-UMB-007_UniversalModuleBlueprint_v7.0.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+[*] 00_INDEX.md
+    Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
+
+>>> Total Opportunities Flagged: 729
+======================================================================

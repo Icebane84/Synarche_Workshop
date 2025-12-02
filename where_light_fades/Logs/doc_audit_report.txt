@@ -1,0 +1,48 @@
+=== PHOENIX COMPLIANCE AUDIT REPORT ===
+Date: 2026-01-19 15:27:48.510887
+Target: c:\Users\Chris\Synarche_Workspace\where-light-fades\Docs
+
+[FAIL] WLF-LORE-001_LoreBible_v1.0.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 9 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] WLF-DOC-006_CharacterBible_v1.0.md (Score: 0.70)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] WLF-DOC-000_PhoenixProtocols_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] WLF-DOC-007_GameManual_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] WLF-DOC-009_ConceptualAnchors_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] WLF-GUIDE-001_WritingGuide_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] WLF-LORE-002_CosmicForces_Magic_v1.0.md (Score: 0.95)
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] WLF-LORE-006_Symbols_Motifs_v1.0.md (Score: 0.95)
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] WLF-LORE-007_Geography_Locations_v1.0.md (Score: 0.95)
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[PASS] WLF-LORE-001_History_Chronology_v1.0.md (Score: 1.00)
+
+[PASS] WLF-LORE-003_SocialStructures_Factions_v1.0.md (Score: 1.00)
+
+[PASS] WLF-LORE-004_Legends_Prophecies_v1.0.md (Score: 1.00)
+
+[PASS] WLF-LORE-005_Bestiary_v1.0.md (Score: 1.00)
+

@@ -1,0 +1,51 @@
+
+>>> DOC COMPLIANCE ANALYZER: C:\Users\Chris\Synarche_Workspace\axion-core
+
+================================================================================
+                           GOVERNANCE COMPLIANCE REPORT                         
+================================================================================
+  FILENAME                                      | STATUS     | NAMING  
+--------------------------------------------------------------------------------
+  SYNERGY_REPORT.md                             | OK         | FAIL    
+  UMB-NULL-PROTOCOL-001.md                      | FAIL       | FAIL    
+      - Missing: Block D: Standardized Synergy Block
+  VERIFY_OMEGA.md                               | FAIL       | FAIL    
+      - Missing: Block D: Standardized Synergy Block
+  AOP-AG-003_AxionAgentConfiguration_v3.0.md    | OK         | FAIL    
+  AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md | OK         | FAIL    
+  AOP-SCA-001_Audit_Log.md                      | OK         | FAIL    
+  Context_Data_Packet_Session_Archival.md       | OK         | FAIL    
+  Google Antigravity.md                         | OK         | FAIL    
+  Messageto_Axion.md                            | OK         | FAIL    
+  primary_directive.md                          | OK         | FAIL    
+  SENTINEL-REPORT-005_InitialScan.md            | OK         | FAIL    
+  UMB-APT-001_AxiomPrimeTuner_v1.0.md           | OK         | FAIL    
+  README.md                                     | OK         | FAIL    
+  QUARANTINE_REQD.md                            | FAIL       | FAIL    
+      - Missing: Block A: The Identification Lock
+      - Missing: Block D: Standardized Synergy Block
+  TEST-CHRONICLE.md                             | FAIL       | FAIL    
+      - Missing: Block A: The Identification Lock
+      - Missing: \[ARTIFACT START\]
+      - Missing: \[ARTIFACT END\]
+      - Missing: Block D: Standardized Synergy Block
+  SELT-COGNITION-001.md                         | FAIL       | FAIL    
+      - Missing: Block A: The Identification Lock
+      - Missing: \[ARTIFACT START\]
+      - Missing: \[ARTIFACT END\]
+      - Missing: Block D: Standardized Synergy Block
+  SELT-GATE-CIV-001.md                          | FAIL       | FAIL    
+      - Missing: Block A: The Identification Lock
+      - Missing: \[ARTIFACT START\]
+      - Missing: \[ARTIFACT END\]
+      - Missing: Block D: Standardized Synergy Block
+  README.md                                     | FAIL       | FAIL    
+      - Missing: Block A: The Identification Lock
+      - Missing: \[ARTIFACT START\]
+      - Missing: \[ARTIFACT END\]
+      - Missing: Block D: Standardized Synergy Block
+  CHAR-AXION-001_AgentAxionPersona_v1.0.md      | OK         | FAIL    
+  canonize.md                                   | OK         | FAIL    
+
+  ... and 284 more files checked.
+================================================================================

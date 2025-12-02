@@ -1,0 +1,17 @@
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   3. History, Lore, & Mythology/Eras_Events/Eldrin_s Era.md
+	new file:   3. History, Lore, & Mythology/Eras_Events/Eldrin_s Fall.md
+	new file:   3. History, Lore, & Mythology/Eras_Events/Eldrins Fall.md
+	new file:   3. History, Lore, & Mythology/Eras_Events/The Cover-Up.md
+	modified:   3. History, Lore, & Mythology/WLF-LORE-016_TheSacrifice_v1.0.md
+	modified:   Unfiltered/Where Light Fades/Master Documents/Archive/Master_Outline_Where_Light_Fades.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	all_deleted.txt
+	characters_at_start.txt
+	potential_matches.txt
+	status_full.txt
+

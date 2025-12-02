@@ -1,0 +1,11 @@
+C:\Users\Chris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\langchain_core\_api\deprecation.py:26: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1.fields import FieldInfo as FieldInfoV1
+Using SQLite storage at c:\Users\Chris\Synarche_Workspace\axion-core\data\axion_memory.db
+Traceback (most recent call last):
+  File "c:\Users\Chris\Synarche_Workspace\axion-core\src\agents\axion\oathkeeper.py", line 140, in <module>
+    memory = MemorySystem(obsidian_bridge=bridge) if MemorySystem else None
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Chris\Synarche_Workspace\axion-core\src\logic\memory\memory_system.py", line 608, in __init__
+    self.emotions = EmotionAnalyzer()
+                    ^^^^^^^^^^^^^^^
+NameError: name 'EmotionAnalyzer' is not defined
