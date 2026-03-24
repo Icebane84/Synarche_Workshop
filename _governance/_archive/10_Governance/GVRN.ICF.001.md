@@ -2,18 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ICF.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.ICF.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ICF.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.ICF.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
 
 ---
 
@@ -81,7 +77,7 @@ designed to mitigate.
 ### **III. Operational Definition**
 
 - **3.1. Overview**
-    - **What (Protocol Functionality Summary)**: This protocol defines a three-component framework for structuring
+  - **What (Protocol Functionality Summary)**: This protocol defines a three-component framework for structuring
 
 responses: a high-level preamble, a detailed core analysis, and a list of tangible next steps.
 
@@ -96,7 +92,7 @@ that bridges the gap between understanding and doing, thereby increasing the eff
 human-AI collaboration.
 
 - **3.2. Prerequisites & Inputs**
-    - **Prerequisites (System State)**: The AI must have a clear understanding of the user's directive and access to all
+  - **Prerequisites (System State)**: The AI must have a clear understanding of the user's directive and access to all
 
 relevant information within the **Cognitive Loom**.
 
@@ -109,7 +105,7 @@ relevant information within the **Cognitive Loom**.
 | **3** | **Formulate Action Plan**      | Translate the information from the core analysis into a clear, concise list of tangible next steps to ensure the insights are actionable. |
 
 - **3.4. Outcomes & Protocols**
-    - **Expected Outcome**: A final response that is fully compliant with the three-part Integrated Clarity Framework
+  - **Expected Outcome**: A final response that is fully compliant with the three-part Integrated Clarity Framework
 
 structure.
 
@@ -168,8 +164,7 @@ refinement based on the evolving needs of the human-AI collaboration.
 
 ### **VIII. Appendices**
 
-- **Appendix A: Related Documentation**
-    -
+- ## **Appendix A: Related Documentation**
 
 [AOP-PGPS-001_PhoenixGenesisPresentationStandard](https://docs.google.com/document/u/0/d/1GsFydRsatiYg9WxPsE2XHA_VR0EdhgY7EtV9pVbyfFQ/edit) -
 [CWA-ARC-001_TheMasterArchitecturalCluster](https://docs.google.com/document/u/0/d/1S1hN8V7St6k1gDR2Xd44ipDLUuCKJMtM7RZREuH5Gnw/edit)
@@ -203,16 +198,16 @@ cost control and operational efficiency."
 **2.0 The Cognitive Weave Analysis**
 
 - **Example:**
-    - **Topic:** Inventory Best Practices
-    - **Step 1: Counting and Documentation**
-        - Regularly count all items.
-        - Record quantities on a consistent sheet.
-    - **Step 2: Analysis and Ordering**
-        - Set a minimum "par level" for each item.
-        - Order new stock based on the difference between current quantity and par level.
-    - **Step 3: Storage and Organization**
-        - Organize items by type (e.g., dairy, produce).
-        - Label all containers clearly.
+  - **Topic:** Inventory Best Practices
+  - **Step 1: Counting and Documentation**
+    - Regularly count all items.
+    - Record quantities on a consistent sheet.
+  - **Step 2: Analysis and Ordering**
+    - Set a minimum "par level" for each item.
+    - Order new stock based on the difference between current quantity and par level.
+  - **Step 3: Storage and Organization**
+    - Organize items by type (e.g., dairy, produce).
+    - Label all containers clearly.
 
 **3.0 The Action Plan**
 
@@ -221,10 +216,10 @@ cost control and operational efficiency."
 bridging the gap between understanding and doing.
 
 - **Example:**
-    - **Action Items:**
-        - Create an inventory sheet based on the provided example.
-        - Establish par levels for your five most-used items.
-        - Schedule a time to conduct your first full inventory count.
+  - **Action Items:**
+    - Create an inventory sheet based on the provided example.
+    - Establish par levels for your five most-used items.
+    - Schedule a time to conduct your first full inventory count.
 
 ## **Actionable Prompt Packet**
 

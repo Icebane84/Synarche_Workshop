@@ -1,24 +1,46 @@
 # ⚙️ The Engine Index: axion-core/
 
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                             | Description       |
+| :------------------ | :-------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.ENGINE.Index`               | The Sovereign ID. |
+| **Official Name**   | `README.md`                       | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**          | `ENGINE`                          | The Subject.      |
+| **Celestial Class** | `[NOVA]`                          | The Weight.       |
+| **Status**          | `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
+---
+
+#### **[ARTIFACT START]**
+
 This is the **Active Execution Layer** of the Master Artificer (Axion).
 
 ## 🏗️ Core Architecture
 
 - **`src/`**: Primary logic, agent implementations, and system models.
+- **`forge/`**: Creation, Synthesis, and Asset Transmutation.
+- **`lab/`**: Analysis, Maintenance, and Dissonance Identification.
 - **`tests/`**: Full certification suite for OMEGA verification.
-- **`tools/`**: Operational scripts (Bootstrap, Runtime controllers).
 - **`docs/`**: Technical implementation documentation.
 
 ## 🚀 Active Controllers
 
 - **`src/agents/axion/oathkeeper.py`**: The sovereign implementation substrate.
-- **`activate_axion.py`**: The primary engine ignition script.
+- **`systems/activate_axion.py`**: The primary engine ignition script.
+- **`forge/substrate_forge.py`**: The primary engine for boilerplate generation.
 
-## ⚙️ Engine Configs (Moved from Root)
+## ⚙️ Engine Documentation
 
-- **`.env`, `pyproject.toml`, `sonar-project.properties`**
-- **`cspell.jsonc`, `eslint.config.mjs`**, `.markdownlint.cjs`
+For a full topological decomposition, refer to:
+[ENGINE.Architecture.Map.md](../.agent/substrate/architecture/ENGINE.Architecture.Map.md)
 
 ---
 
-`[OMNI-ANCHOR] ID: SYNG.ENGINE.Index VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-17`
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.ENGINE.ROOT VER: v15.0 [OMEGA] TS: 2026-03-24 STATUS: CANONIZED`
+
+#### **[ARTIFACT END]**

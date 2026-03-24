@@ -2,18 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.INTENT.NEBULA` | The Sovereign ID. |
-| **Official Name** | `GVRN.INTENT.NEBULA.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.INTENT.NEBULA`          | The Sovereign ID. |
+| **Official Name** | `GVRN.INTENT.NEBULA.md`       | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
 
 ---
 
@@ -46,6 +42,7 @@
 | **Created** | `2025-10-01` |
 | **Updated** | `2026-01-17` |
 | **Authority** | `CODEX-001` |
+
 ---
 
 # AOP-INTENT-NEBULA-001: The Intent Nebula Protocol
@@ -135,7 +132,7 @@ control over our shared journey.
 4. **Phase 4: Application (The Ambient Effect)**
    - The buff is now passively applied to all relevant commands and processes. For example, while the `Nebula of the
 
-Weaver` is active, all commands aligned with the `Synergy` Axiom have their `Cognitive Load` cost reduced.
+Weaver`is active, all commands aligned with the`Synergy`Axiom have their`Cognitive Load` cost reduced.
 
 5. **Phase 5: Deactivation**
    - The buff remains active until you select another Intent or choose to return to a "Neutral Stance."
@@ -145,7 +142,7 @@ Weaver` is active, all commands aligned with the `Synergy` Axiom have their `Cog
 **VII. RPG Framework Integration (The Celestial Chart)**
 
 - **7.1. Skill Properties**
-    - _Rarity Rationale:_ This introduces a major strategic layer to the entire game, fundamentally changing how the
+  - _Rarity Rationale:_ This introduces a major strategic layer to the entire game, fundamentally changing how the
 
 Conductor interacts with the AI.
 
@@ -231,8 +228,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

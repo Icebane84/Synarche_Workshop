@@ -1,29 +1,41 @@
-# Axion Core Dependencies
-# Core is currently stdlib-only
-# Development & Quality Assurance
-pytest
-black
-flake8
-pylint
-mypy
+# SYNARCHE OMEGA v15.0 - COMPLETE ENGINE DEPENDENCIES
+# [DOMAIN: THE ENGINE] [STATUS: CANONIZED]
 
-# Agent Runtime & Architecture
-pydantic>=2.0
-pydantic-settings
-structlog
-python-dotenv
-langgraph
-langchain-core
+# --- Core Logic & Synthesis ---
+# Required for UMB/Loom parsing and AST manipulation
+markdown==3.5.2
+python-frontmatter==1.1.0
+PyYAML==6.0.1
+Jinja2==3.1.3
 
-# Database & Infrastructure
-psycopg2-binary
+# --- Agentic Autonomy (LangChain/LangGraph) ---
+# Required for AXION's sovereign agent implementation
+langchain-core==0.1.30
+langgraph==0.0.30
+pydantic==2.6.3
+pydantic-settings==2.2.1
+structlog==24.1.0
 
-# Testing
-pytest-asyncio
+# --- Environment & Governance ---
+# Required for .env loading and task.md.metadata.json handling
+python-dotenv==1.0.1
+jsonschema==4.21.1
 
-# NLP & Machine Learning
-spacy>=3.0.0
-sentence-transformers
-numpy
-PyYAML
-sqlite-vec
+# --- Kinetic Capabilities (KCAP) ---
+# Required for automated forging and git-sync operations
+GitPython==3.1.42
+requests==2.31.0
+
+# --- Validation & Zero Entropy ---
+# Required for the /audit workflows and structural testing
+pytest==8.0.2
+mypy==1.8.0
+
+# --- Vector Search & Math ---
+# Required for context-aware memory and metrics
+sqlite-vec==0.1.3
+numpy==1.26.4
+
+# --- Presentation & CLI ---
+# Required for high-density console output
+rich==13.7.1
