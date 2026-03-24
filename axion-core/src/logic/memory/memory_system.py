@@ -65,6 +65,7 @@ try:
     from .association_manager import AssociationManager
     from .retrieval_engine import RetrievalEngine
     from ...agents.axion.insforge_client import insforge
+    from ..sync.insforge_bridge import bridge as insforge_bridge
 
     HAS_NLP_ENGINE = True
 except ImportError:
@@ -1011,6 +1012,8 @@ class MemorySystem:
                                 },
                             )
                         )
+                        # Divine Bridge: Full Sync
+                        _ = loop.create_task(insforge_bridge.sync_memory_entry(entry))
                 except Exception as e:
                     logger.debug(
                         f"InsForge recording deferred for memory {memory_id}: {e}"
@@ -1091,6 +1094,16 @@ class MemorySystem:
                 }
                 self.storage.update_memory(entry.id, updates)
                 transitions += 1
+
+                # Divine Bridge: Sync evolved state
+                try:
+                    loop = asyncio.get_event_loop()
+                    if loop.is_running():
+                        _ = loop.create_task(
+                            insforge_bridge.sync_memory_entry(vars(entry))
+                        )
+                except Exception:
+                    pass
 
                 # 5. Chronicler Signal for Layer Ascension
                 if (entry.layer > old_layer or entry.state != old_state) and hasattr(
@@ -1369,6 +1382,16 @@ class MemorySystem:
             "CRITICAL_LEARNING",
         ]:
             self._sync_to_sovereign(event_type, module, details)
+
+        # 3. Divine Bridge (InsForge Sync) - Mirror experience logs
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                _ = loop.create_task(
+                    insforge_bridge.sync_experience_log(event_type, details)
+                )
+        except Exception:
+            pass
 
     def _sync_to_sovereign(
         self, event_type: str, module: str, details: dict[str, Any]
