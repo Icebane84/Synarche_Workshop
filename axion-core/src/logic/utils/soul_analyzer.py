@@ -1,10 +1,20 @@
-"""CORE-LOGIC-UTILS-004 (soul_analyzer.py)
-Status: [DRAFT]
-Genesis Stamp: 2026-03-10.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
- LOGIC-SOUL-ANALYZER: The Architectural Empathy Engine
- v14.0 [OMEGA] - Risk Assessment & Sovereign Identity
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-UTIL-SOUL-001`    | The Sovereign ID. |
+| **Official Name**   | `soul_analyzer.py`            | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-UTILS`            | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
+**The Spirit Bomb Axiom: Empathy Resonance (Law 28)**
+> Implemented from Blueprint `GVRN.REG.EmpathyResonance.md`.
+> Ethos: The Impact is Seed; The Empathy is Truth.
 """
 
 import logging
@@ -43,7 +53,11 @@ class SoulImpactAnalyzer:
             "quote": "Measure twice, cut once. The loom requires precise weaving.",
             "source": "Scribal Laws",
         },
-        {"threshold": 0.0, "quote": "Order is the natural state of a disciplined mind.", "source": "Sentinel's Vow"},
+        {
+            "threshold": 0.0,
+            "quote": "Order is the natural state of a disciplined mind.",
+            "source": "Sentinel's Vow",
+        },
     ]
 
     def calculate_risk(self, input_text: str) -> dict[str, Any]:
@@ -52,11 +66,17 @@ class SoulImpactAnalyzer:
         factors = []
 
         # Simple keyword-based risk detection
-        if any(word in input_text.lower() for word in ["delete", "remove", "wipe", "format"]):
+        if any(
+            word in input_text.lower()
+            for word in ["delete", "remove", "wipe", "format"]
+        ):
             risk_score += 0.4
             factors.append("DESTRUCTIVE_ACTION_DETECTED")
 
-        if any(word in input_text.lower() for word in ["critical", "core", "foundation", "axiom"]):
+        if any(
+            word in input_text.lower()
+            for word in ["critical", "core", "foundation", "axiom"]
+        ):
             risk_score += 0.2
             factors.append("CORE_MODULE_MODIFICATION")
 
@@ -85,6 +105,9 @@ class SoulImpactAnalyzer:
     def get_sovereign_quote(self, score: float) -> str:
         """Returns a contextual quote based on the risk score."""
         for entry in self.SOVEREIGN_QUOTES:
-            if score >= entry["threshold"]:
-                return f'"{entry["quote"]}" — {entry["source"]}'
-        return self.SOVEREIGN_QUOTES[-1]["quote"]
+            threshold = float(entry["threshold"])
+            if score >= threshold:
+                quote = str(entry["quote"])
+                source = str(entry["source"])
+                return f'"{quote}" — {source}'
+        return str(self.SOVEREIGN_QUOTES[-1]["quote"])

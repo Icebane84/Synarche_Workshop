@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-ROLE-001-COGNITIVELOOM-V1.1-001` | The Sovereign ID. |
-| **Official Name** | `UMB-ROLE-001_CognitiveLoom_v1.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-ROLE-001_CognitiveLoom_v1.1.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `GVRN`                                     | The Subject.      |
+| **Status**        | `ACTIVE`                                   | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
 
 ---
 
@@ -83,9 +80,9 @@ structure:
 
 ```json
 {
-    "instruction": "[A complex user query or scenario derived from the text]",
-    "input": "",
-    "output": "<|start|>assistant<|channel|>analysis<|message|>\n[THE THOUGHT TRACE]\n\n<|channel|>final<|message|>\n[THE PHOENIX RESPONSE]"
+  "instruction": "[A complex user query or scenario derived from the text]",
+  "input": "",
+  "output": "<|start|>assistant<|channel|>analysis<|message|>\n[THE THOUGHT TRACE]\n\n<|channel|>final<|message|>\n[THE PHOENIX RESPONSE]"
 }
 ```
 

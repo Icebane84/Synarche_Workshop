@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                             | Description       |
+| :---------------- | :------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-LORE-ANALYSIS-001-WHERELIGHTFADES-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `LORE-ANALYSIS-001_WhereLightFades_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `LORE-ANALYSIS-001_WhereLightFades_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                 | The Standard.     |
+| **Domain**        | `GVRN`                                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
 
 ---
 
@@ -74,11 +71,11 @@
 
 - **Kaelen:** The Broken Hero. Defined by guilt, loss (Elara/Parents), and a desperate need for redemption. Wields
 
-    _Oathbringer_.
+  _Oathbringer_.
 
 - **The Shadow Self:** The Internal Antagonist. A whispering voice of "truth" that tempts Kaelen with power and reveals
 
-    the Order's hypocrisy. It is _not_ a separate demon, but a darkened reflection of Kaelen's own psyche.
+  the Order's hypocrisy. It is _not_ a separate demon, but a darkened reflection of Kaelen's own psyche.
 
 - **Valerius:** The External Manipulator. Represents the "Order" that must be maintained at all costs, even truth.
 
@@ -102,7 +99,7 @@
 2. **Tone:** Oppressive, Gritty, Introspective.
 3. **Mechanism:** Use `CMD: ContextWeave` to align code comments and documentation with this lore (e.g., error messages
 
-    as "Whispers").
+   as "Whispers").
 
 ---
 

@@ -5,17 +5,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Learning.Improvement` | The Sovereign ID. |
-| **Official Name** | `GVRN.Learning.Improvement.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Learning.Improvement`     | The Sovereign ID. |
+| **Official Name** | `GVRN.Learning.Improvement.md`  | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -42,9 +39,9 @@
 
 | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
 | :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`       | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Learning.Shard`     | `FEEDS`           | Persistent session learnings are stored here.   |
-| `GVRN.Learning.Gem`       | `INSPIRES`        | High-impact user insights are extracted here.   |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Learning.Shard`   | `FEEDS`           | Persistent session learnings are stored here.   |
+| `GVRN.Learning.Gem`     | `INSPIRES`        | High-impact user insights are extracted here.   |
 
 ---
 

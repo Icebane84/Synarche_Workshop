@@ -4,15 +4,12 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Mech.Episemantics` | The Sovereign ID. |
-| **Official Name** | `GVRN.Mech.Episemantics.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Artifact ID**   | `GVRN.Mech.Episemantics`          | The Sovereign ID. |
+| **Official Name** | `GVRN.Mech.Episemantics.md`       | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 

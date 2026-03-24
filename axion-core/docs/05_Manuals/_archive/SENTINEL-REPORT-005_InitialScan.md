@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
 | **Artifact ID**   | `ARCH-SENTINEL-REPORT-005-INITIALSCAN-001` | The Sovereign ID. |
-| **Official Name** | `SENTINEL-REPORT-005_InitialScan.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `SENTINEL-REPORT-005_InitialScan.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `ARCH`                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
 
 ---
 
@@ -66,16 +63,16 @@
 ## II. Remediation Actions Taken
 
 1. **Hash Mismatch Resolved:**
-    - Identified that `src/nova_forge/cli/check_integrity.py` contained a placeholder hash.
-    - Calculated the correct SHA256 hash of `setup.py`:
+   - Identified that `src/nova_forge/cli/check_integrity.py` contained a placeholder hash.
+   - Calculated the correct SHA256 hash of `setup.py`:
 
-        `e7322c25eca3a48169fddf27412dcf3e97c4041987f2646db577fcdf3f82ab0c`.
+     `e7322c25eca3a48169fddf27412dcf3e97c4041987f2646db577fcdf3f82ab0c`.
 
-    - Updated the `KNOWN_SETUP_PY_HASH` constant.
-    - **Result:** Integrity check now passes.
+   - Updated the `KNOWN_SETUP_PY_HASH` constant.
+   - **Result:** Integrity check now passes.
 
 2. **Linting Fixes:**
-    - Removed unnecessary f-string in `check_integrity.py` (Line 41).
+   - Removed unnecessary f-string in `check_integrity.py` (Line 41).
 
 ## III. Operational Directives
 

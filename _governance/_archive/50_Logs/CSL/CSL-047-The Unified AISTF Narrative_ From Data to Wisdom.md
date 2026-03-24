@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                               | Description       |
+| :---------------- | :------------------------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-047-THE-UNIFIED-AISTF-NARRATIVE--FROM-DATA-TO-WISDOM-001` | The Sovereign ID. |
-| **Official Name** | `CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                   | The Standard.     |
+| **Domain**        | `GVRN`                                                              | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                          | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                       | The Network.      |
 
 ---
 

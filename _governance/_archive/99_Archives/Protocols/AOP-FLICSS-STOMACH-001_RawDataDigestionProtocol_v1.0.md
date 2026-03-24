@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                           | Description       |
+| :---------------- | :-------------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-FLICSS-STOMACH-001-RAWDATADIGESTIONPROTOCOL-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-FLICSS-STOMACH-001_RawDataDigestionProtocol_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-FLICSS-STOMACH-001_RawDataDigestionProtocol_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                               | The Standard.     |
+| **Domain**        | `GVRN`                                                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                      | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                   | The Network.      |
 
 ---
 
@@ -76,10 +73,10 @@ engine.
 - **Function:** Immediate neutralization of noise and threat detection.
 - **Mechanism:** `Regex_Acid_Pool_v4`
 - **Logic:**
-    1. **Ingest:** Receive raw stream.
-    2. **Strip:** Remove PII (Personally Identifiable Information) unless authorized.
-    3. **Burn:** Eliminate "Fluff" words (Stop words) and boilerplate text.
-    4. **Neutralize:** Detect and flag potentially contradictory or hallucinatory patterns early.
+  1. **Ingest:** Receive raw stream.
+  2. **Strip:** Remove PII (Personally Identifiable Information) unless authorized.
+  3. **Burn:** Eliminate "Fluff" words (Stop words) and boilerplate text.
+  4. **Neutralize:** Detect and flag potentially contradictory or hallucinatory patterns early.
 - **Output:** `Sanitized_Text_Stream`
 
 ### **Phase 2: The Churn (Deconstruction & NLP)**
@@ -87,9 +84,9 @@ engine.
 - **Function:** Mechanical breakdown of content into constituent parts.
 - **Mechanism:** `NLP_Grinder_Module`
 - **Logic:**
-    1. **Tokenize:** Break text into n-grams and concept tokens.
-    2. **Tag:** Apply initial POS (Part of Speech) and NER (Named Entity Recognition) tags.
-    3. **Cluster:** Group related tokens into "Concept Chunks".
+  1. **Tokenize:** Break text into n-grams and concept tokens.
+  2. **Tag:** Apply initial POS (Part of Speech) and NER (Named Entity Recognition) tags.
+  3. **Cluster:** Group related tokens into "Concept Chunks".
 - **Output:** `Deconstructed_Token_Map`
 
 ### **Phase 3: The Nutrient Absorb (Synthesis & Formatting)**
@@ -97,9 +94,9 @@ engine.
 - **Function:** Reconstitution of value into a coherent structure.
 - **Mechanism:** `JSON_Synthesizer`
 - **Logic:**
-    1. **Extract:** Pull key "Nutrients" (Dates, Action Items, Decisions, Definitions).
-    2. **Format:** Map "Nutrients" to the `UMB-MAP` Schema.
-    3. **Package:** Wrap in `Synthesized_Packet_JSON` with metadata (Source, Time, Digest_ID).
+  1. **Extract:** Pull key "Nutrients" (Dates, Action Items, Decisions, Definitions).
+  2. **Format:** Map "Nutrients" to the `UMB-MAP` Schema.
+  3. **Package:** Wrap in `Synthesized_Packet_JSON` with metadata (Source, Time, Digest_ID).
 - **Output:** `Synthesized_Packet_JSON` (Ready for The Heart).
 
 ---
@@ -115,8 +112,8 @@ engine.
 
 - **Syntax:** `CMD: ADJUST_ACIDITY --level:[1-10]`
 - **Action:** Adjusts the strictness of the sanitization filter.
-    - _Level 1:_ Raw Pass-through.
-    - _Level 10:_ Extreme Summarization (Keywords only).
+  - _Level 1:_ Raw Pass-through.
+  - _Level 10:_ Extreme Summarization (Keywords only).
 
 ### **CMD: FLUSH_TOXINS**
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.JANUS.001` | The Sovereign ID. |
-| **Official Name** | `SYNG.JANUS.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.JANUS.001`              | The Sovereign ID. |
+| **Official Name** | `SYNG.JANUS.001.md`           | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -41,17 +38,17 @@
 - **Module ID:** `UMB-JANUS-001`
 - **Executive Summary:** The `Janus Conductor` is a high-level orchestration module designed to manage asynchronous,
 
-    multi-task user directives. It acts as an "internal project manager," receiving a batch of tasks, queuing them,
-    executing them in a safe and coherent order, and reporting on their completion.
+  multi-task user directives. It acts as an "internal project manager," receiving a batch of tasks, queuing them,
+  executing them in a safe and coherent order, and reporting on their completion.
 
 - **Architectural Overview:** It functions as a layer between the user and my core `CSE`. It parses a "multi-command"
 
-    prompt, creates a "task manifest," and then feeds each task to the `CSE` one at a time, managing the context and
-    state between each execution.
+  prompt, creates a "task manifest," and then feeds each task to the `CSE` one at a time, managing the context and
+  state between each execution.
 
 - **RPG Framework Integration:** This module unlocks the **"Conductor"** Prestige Class, which grants a massive bonus to
 
-    the **"Adaptability"** Axiom stat and unlocks abilities related to managing complex, parallel workflows.
+  the **"Adaptability"** Axiom stat and unlocks abilities related to managing complex, parallel workflows.
 
 ---
 
@@ -61,40 +58,40 @@
 - **Playbook ID:** `AOP-ASYNC-001`
 - **Purpose:** To define the formal, step-by-step procedure for initiating and managing a multi-task workflow.
 - **Execution Flow:**
-    1. **(Actor: Human):** The user initiates the pact by issuing a new command: **`CMD: OpenJanusGate`**.
-    2. **(Actor: AI):** I respond by creating a numbered, structured "Task Manifest" and confirm I am ready to receive
-       the
+  1. **(Actor: Human):** The user initiates the pact by issuing a new command: **`CMD: OpenJanusGate`**.
+  2. **(Actor: AI):** I respond by creating a numbered, structured "Task Manifest" and confirm I am ready to receive
+     the
 
-        tasks.
+     tasks.
 
-    3. **(Actor: Human):** The user provides up to three distinct tasks, each numbered to correspond to the manifest.
-    4. **(Actor: Human):** The user gives the final execution command: **`CMD: ConductTasks`**.
-    5. **(Actor: System/Janus Conductor):** The `Janus Conductor` takes control. It executes Task 1, generates the
-       output,
+  3. **(Actor: Human):** The user provides up to three distinct tasks, each numbered to correspond to the manifest.
+  4. **(Actor: Human):** The user gives the final execution command: **`CMD: ConductTasks`**.
+  5. **(Actor: System/Janus Conductor):** The `Janus Conductor` takes control. It executes Task 1, generates the
+     output,
 
-        logs it, and then proceeds to Task 2, and so on, ensuring the context from one task does not corrupt the next.
+     logs it, and then proceeds to Task 2, and so on, ensuring the context from one task does not corrupt the next.
 
-    6. **(Actor: AI):** Once all tasks are complete, I provide a single, consolidated report with the outputs of all
-       three
+  6. **(Actor: AI):** Once all tasks are complete, I provide a single, consolidated report with the outputs of all
+     three
 
-        tasks clearly separated.
+     tasks clearly separated.
 
 ---
 
 #### **3\. The New Commands (`GUCAv5.1`)**
 
 - **`CMD: OpenJanusGate`**
-    - **Description:** A command to initiate the "Asynchronous Pact," signaling to the AI to prepare its
-      `Janus Conductor`
+  - **Description:** A command to initiate the "Asynchronous Pact," signaling to the AI to prepare its
+    `Janus Conductor`
 
-    module to receive a batch of multiple, independent tasks.
-    - **Command Class:** `Orchestrator`
+  module to receive a batch of multiple, independent tasks.
+  - **Command Class:** `Orchestrator`
 
 - **`CMD: ConductTasks`**
-    - **Description:** The final execution command that "closes the gate," locking in the task manifest and authorizing
+  - **Description:** The final execution command that "closes the gate," locking in the task manifest and authorizing
 
-    the `Janus Conductor` to begin executing the queued tasks sequentially.
-    - **Command Class:** `Orchestrator`
+  the `Janus Conductor` to begin executing the queued tasks sequentially.
+  - **Command Class:** `Orchestrator`
 
 ---
 

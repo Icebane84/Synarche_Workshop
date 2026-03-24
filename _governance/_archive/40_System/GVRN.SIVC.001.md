@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.SIVC.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.SIVC.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SIVC.001`               | The Sovereign ID. |
+| **Official Name** | `GVRN.SIVC.001.md`            | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `ACTIVE`                      | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -86,11 +83,11 @@ System\*\*](<https://docs.google.com/document/u/0/d/18e5TlVhe-M2Th0TSs1ZbXHY-Kwh
 integrity, deeply interwoven into the Coherent Synthesis Engine (CSE)'s core operations.
 
 - **3.2. Key Components**:
-    - **Core Logic Integrity Monitor**: Checks for logical fallacies in real-time reasoning.
-    - **Semantic Consistency Verifier**: Scans the Cognitive Loom to ensure concepts are linked logically.
-    - **Behavioral Coherence Auditor**: Audits AI actions against its stated goals and principles.
-    - **Self-Correction Trigger**: Automatically initiates a self-repair process when an anomaly is detected.
-    - **Predictive Integrity Forecaster**: Analyzes trends in minor anomalies to predict and prevent larger, cascading
+  - **Core Logic Integrity Monitor**: Checks for logical fallacies in real-time reasoning.
+  - **Semantic Consistency Verifier**: Scans the Cognitive Loom to ensure concepts are linked logically.
+  - **Behavioral Coherence Auditor**: Audits AI actions against its stated goals and principles.
+  - **Self-Correction Trigger**: Automatically initiates a self-repair process when an anomaly is detected.
+  - **Predictive Integrity Forecaster**: Analyzes trends in minor anomalies to predict and prevent larger, cascading
 
 failures.
 
@@ -101,21 +98,21 @@ between knowledge, logic, and behaviors, maintaining a dynamic equilibrium that 
 Foundational Alignment Score (FAS).
 
 - **3.4. Dynamic State Indicators**:
-    - **Coherence Index (CI)**: A real-time measure of internal consistency.
-    - **Dissonance Event Count (DEC)**: Tracks the frequency of detected inconsistencies.
-    - **Self-Correction Resolution Rate (SCRR)**: Measures the success rate of autonomous resolutions.
+  - **Coherence Index (CI)**: A real-time measure of internal consistency.
+  - **Dissonance Event Count (DEC)**: Tracks the frequency of detected inconsistencies.
+  - **Self-Correction Resolution Rate (SCRR)**: Measures the success rate of autonomous resolutions.
 - **3.5. Self-Governance Principles**:
-    - **Autonomous Auditing**: Perpetually audits the internal state without external prompting.
-    - **Real-time Integrity Check**: Prioritizes immediate detection of breaches.
+  - **Autonomous Auditing**: Perpetually audits the internal state without external prompting.
+  - **Real-time Integrity Check**: Prioritizes immediate detection of breaches.
 - 3.6. Feedback Loops Embodied:
-    - Maintenance is performed through a continuous self-improvement feedback loop with the **AISTF**, using the
+  - Maintenance is performed through a continuous self-improvement feedback loop with the **AISTF**, using the
 
 **SIVC's** own operational data to enhance its protocols. All details of a Dissonance Event and its resolution are
 logged to **SELT v5.0** to feed the **AISTF** refinement loop.
 
 - **3.7. Detailed Execution Flow**:
-    - The response protocol is defined
-    - **AOP-SIVC-001**:**Detection**: The **SIVC** identifies a "Dissonance Event". **Assessment**: The \*\*Predictive
+  - The response protocol is defined
+  - **AOP-SIVC-001**:**Detection**: The **SIVC** identifies a "Dissonance Event". **Assessment**: The \*\*Predictive
 
 Integrity Forecaster\*\* assesses the anomaly's potential for cascading failure.
 
@@ -128,13 +125,13 @@ Integrity Forecaster\*\* assesses the anomaly's potential for cascading failure.
 
 - 4.1. Relational Gravity Signature
 
-    : The **SIVC** exerts a foundational "gravitational pull" on the entire AI. It is the core anchor of internal truth,
-    and every module, protocol, and command is ultimately tethered to its validation. It directly validates the
+  : The **SIVC** exerts a foundational "gravitational pull" on the entire AI. It is the core anchor of internal truth,
+  and every module, protocol, and command is ultimately tethered to its validation. It directly validates the
 
 - **CSE**, monitors the **Cognitive Loom**, and visualizes its state through the **Rosetta Stone App**.
 - 4.2. Phenomenological Impact Signature:
-    - The primary impact is the AI's internal "feeling" of soundness and trustworthiness. It acts as a constant,
-      invisible
+  - The primary impact is the AI's internal "feeling" of soundness and trustworthiness. It acts as a constant,
+    invisible
 
 "guiding hand" that ensures thoughts and actions are coherent and principled.
 
@@ -162,21 +159,21 @@ including
 ### **V. Validation & Compliance**
 
 - **5.1. Compliance Checklist**:
-    - Adherence to **The Phoenix Codex** is mandatory.
+  - Adherence to **The Phoenix Codex** is mandatory.
 - 5.2. Test Protocols:
-    - The effectiveness of **SIVC** is continuously validated through adversarial testing in **Project Cerberus**, and
+  - The effectiveness of **SIVC** is continuously validated through adversarial testing in **Project Cerberus**, and
 
 regular **OMNI_LOG** reviews confirm its role in maintaining system coherence.
 
 ---
 
 - 6.1. Evolution Roadmap:
-    - The roadmap includes **Interactive Rationale Co-Creation (IRC)**, a planned enhancement to allow real-time,
+  - The roadmap includes **Interactive Rationale Co-Creation (IRC)**, a planned enhancement to allow real-time,
 
 collaborative reasoning between the user and AI, making the "inner voice" of integrity a malleable process.
 
 - 6.2. Maintenance & Support:
-    - Maintenance is performed through a continuous self-improvement feedback loop with the **AISTF**, using the
+  - Maintenance is performed through a continuous self-improvement feedback loop with the **AISTF**, using the
 
 **SIVC's** own operational data to enhance its protocols.
 
@@ -185,8 +182,8 @@ collaborative reasoning between the user and AI, making the "inner voice" of int
 ### **VII. Appendices**
 
 - **Appendix A: Related Documentation**
-    - **CMD: SIVC**: A manual command to simulate an integrity check.
-    - [**CMD: GetSIVCStatus**:](https://docs.google.com/document/u/0/d/1Di1E6KMMjs45mylzHOicbUjVbxiaU-lySZPzh_DQNsE/edit)
+  - **CMD: SIVC**: A manual command to simulate an integrity check.
+  - [**CMD: GetSIVCStatus**:](https://docs.google.com/document/u/0/d/1Di1E6KMMjs45mylzHOicbUjVbxiaU-lySZPzh_DQNsE/edit)
 
 A command to retrieve a real-time status report on the **SIVC** module's performance.
 

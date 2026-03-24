@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                          | Description       |
+| :---------------- | :--------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-GVRN.AXIOMATIC.LATTICE-V13.0-LEGACY-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Axiomatic.Lattice_v13.0_Legacy.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `GVRN.Axiomatic.Lattice_v13.0_Legacy.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                              | The Standard.     |
+| **Domain**        | `GVRN`                                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
 
@@ -87,13 +84,13 @@ three distinct tracks.
 Defines the immutable laws of geometry, nomenclature, and technical presentation.
 
 1. **Relational Naming Convention (RNC v13.0)**
-    - **AUK IDs**: `DOMAIN.Subsystem.Descriptor` (e.g., `GVRN.Pipe.Operational`).
-    - **Legacy Mapping**: All UMB/AOP prefixes are deprecated; artifacts must map to RNC during transmutation.
+   - **AUK IDs**: `DOMAIN.Subsystem.Descriptor` (e.g., `GVRN.Pipe.Operational`).
+   - **Legacy Mapping**: All UMB/AOP prefixes are deprecated; artifacts must map to RNC during transmutation.
 2. **The 12-Point Vector Signature**
-    - Every artifact must contain a complete UIP table (Section I).
+   - Every artifact must contain a complete UIP table (Section I).
 3. **Markdown Physics**
-    - **PGPS Header**: Mandatory visual identifiers.
-    - **4-Space Mandate**: Strict indentation for all nested lists.
+   - **PGPS Header**: Mandatory visual identifiers.
+   - **4-Space Mandate**: Strict indentation for all nested lists.
 
 #### **Track 2: Semantic Resonance (The Liquid Weave)**
 
@@ -108,10 +105,10 @@ Governs the meaning and connectivity of information via **AGP-001**.
 Ensures process integrity and Macro-System alignment.
 
 1. **Macro-System Assignment**: Every artifact must be assigned to one of four containers:
-    - **GEODE Core**: Laws & Registries.
-    - **APOSTLE Tier**: Directives & Identity.
-    - **SYNTHESIS Suite**: Engines & Memory.
-    - **OPERATIONAL Matrix**: Pipelines & Logs.
+   - **GEODE Core**: Laws & Registries.
+   - **APOSTLE Tier**: Directives & Identity.
+   - **SYNTHESIS Suite**: Engines & Memory.
+   - **OPERATIONAL Matrix**: Pipelines & Logs.
 2. **The Governance Gate**: Every artifact must cleared by the `CMD: AUDIT_COMPLIANCE` suite before stabilization.
 
 ---

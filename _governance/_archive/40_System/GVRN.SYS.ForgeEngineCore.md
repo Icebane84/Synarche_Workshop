@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.SYS.001` | The Sovereign ID. |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SYS.001`                | The Sovereign ID. |
 | **Official Name** | `GVRN.SYS.ForgeEngineCore.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -124,9 +121,9 @@ _(Derived from CBM-FORGE-001.json)_
 ### 4.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Coherence +5, Adaptability +5**
-    - _Mechanism_: Synthesizing artifacts correctly stabilizes the knowledge graph.
+  - _Mechanism_: Synthesizing artifacts correctly stabilizes the knowledge graph.
 - **Passive Ability**: **Forgemaster's Focus**
-    - _Effect_: Increases the success rate of automated refactors by 15%.
+  - _Effect_: Increases the success rate of automated refactors by 15%.
 
 ### 4.2 Resource Economics
 

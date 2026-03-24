@@ -1,5 +1,20 @@
-"""# AGENTS-AXION-CORE: The Event Horizon Orchestrator
-# v14.0 [OMEGA] - Unified Cognitive Processing Loop.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-AGENT-CORE-001`         | The Sovereign ID. |
+| **Official Name**   | `core.py`                     | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-AGENTS`                 | The Subject.      |
+| **Celestial Class** | `[VESSEL]`                    | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Event Horizon (Law 28)**
+> Implemented from Blueprint `GVRN.REG.EventHorizon.md`.
+> Ethos: The Core is Seed; The Orchestration is Truth.
 """
 
 import logging
@@ -23,6 +38,7 @@ class AxionAgentCore:
     """
 
     def __init__(self, db_path: str | None = None) -> None:
+        """Initialize the Axion Agent Core Vessel."""
         self.cognition = AxionCognition()
         self.memory = MemorySystem(db_path=db_path)
         self.explanation = ExplanationGenerator(self.cognition)
@@ -94,4 +110,6 @@ if __name__ == "__main__":
     # Sample Test Run
     logging.basicConfig(level=logging.INFO)
     agent = AxionAgentCore()
-    logger.info(agent.process_event("Tell me what you know about the Phoenix Protocol."))
+    logger.info(
+        agent.process_event("Tell me what you know about the Phoenix Protocol.")
+    )

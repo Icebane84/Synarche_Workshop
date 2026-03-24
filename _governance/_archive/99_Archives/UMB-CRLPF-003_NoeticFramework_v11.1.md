@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `UMB-CRLPF-003` | The Sovereign ID. |
+| Key               | Value                                    | Description       |
+| :---------------- | :--------------------------------------- | :---------------- |
+| **Artifact ID**   | `UMB-CRLPF-003`                          | The Sovereign ID. |
 | **Official Name** | `UMB-CRLPF-003_NoeticFramework_v11.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `LINK: UMB-PRS-001, LINK: UMB-CSE-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                        | The Standard.     |
+| **Domain**        | `GVRN`                                   | The Subject.      |
+| **Status**        | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**     | `LINK: UMB-PRS-001, LINK: UMB-CSE-001`   | The Network.      |
 
 ---
 
@@ -67,8 +64,8 @@
 ### 1.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Wisdom +15**
-    - _Mechanism_: Regular introspection and self-correction increases the system's "Wisdom" stat, unlocking higher-tier
-      reasoning.
+  - _Mechanism_: Regular introspection and self-correction increases the system's "Wisdom" stat, unlocking higher-tier
+    reasoning.
 - **System Slot**: `[PCM]` (Persona Core Module)
 - **Synergy Set**: `The Examined Life`
 

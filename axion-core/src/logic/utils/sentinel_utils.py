@@ -1,10 +1,20 @@
 """
-CORE-LOGIC-UTIL-SENTINEL-001 (sentinel_utils.py)
-Status: [CANONIZED]
-Genesis Stamp: 2026-03-07
+### **Block A: The Identification Lock (UIP-V15)**
 
- SENTINEL-UTIL-001: The Sentinel Gate (Secure Execution)
- v14.0 [OMEGA] - Centralizes all external command execution to ensure compliance with security protocols.
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-UTIL-SENT-001`    | The Sovereign ID. |
+| **Official Name**   | `sentinel_utils.py`           | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-UTILS`            | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Secure Execution (Law 28)**
+> Implemented from Blueprint `GVRN.REG.SecureExecution.md`.
+> Ethos: The Command is Seed; The Safety is Truth.
 """
 
 import logging
@@ -14,7 +24,7 @@ from typing import Any
 logger = logging.getLogger("sentinel")
 
 
-def safe_run_command(cmd: list[str], **kwargs: Any) -> subprocess.CompletedProcess:
+def safe_run_command(cmd: list[str], **kwargs: Any) -> subprocess.CompletedProcess[str]:
     """
     Executes a shell command securely and logs the outcome.
     centralizes 'subprocess.run' to satisfy MD/Ruff security checks.
@@ -35,7 +45,9 @@ def safe_run_command(cmd: list[str], **kwargs: Any) -> subprocess.CompletedProce
         )
 
         if result.returncode != 0:
-            logger.error(f"   > FAILURE (Code {result.returncode}): {result.stderr.strip()}")
+            logger.error(
+                f"   > FAILURE (Code {result.returncode}): {result.stderr.strip()}"
+            )
         else:
             logger.info("   > SUCCESS")
 

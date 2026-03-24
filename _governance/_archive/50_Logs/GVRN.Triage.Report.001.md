@@ -5,14 +5,11 @@
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-GVRN.TRIAGE.REPORT.001-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Triage.Report.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `GVRN.Triage.Report.001.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`     | The Network.      |
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Catalyst` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Catalyst.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Protocol.Catalyst`      | The Sovereign ID. |
+| **Official Name** | `GVRN.Protocol.Catalyst.md`   | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -84,13 +81,13 @@ Dependency-Hash: [List linked files]
 ### **II. The Four Patterns of Catalysis**
 
 1. **The Synergy Probe**: `CMD: SYN_EXPLORE_VECTORS`
-    - _Purpose_: Finding hidden connections between disparately linked nodes.
+   - _Purpose_: Finding hidden connections between disparately linked nodes.
 2. **The Socratic Crucible**: `CMD: LOGIC_STRESS_TEST`
-    - _Purpose_: Stress-testing a logic block by attempting to break it with edge cases.
+   - _Purpose_: Stress-testing a logic block by attempting to break it with edge cases.
 3. **The Translation Forge**: `CMD: PRINCIPLE_TO_PRAGMA`
-    - _Purpose_: Converting abstract "Principality" (Codex) into concrete "Pragmatism" (Python/TS).
+   - _Purpose_: Converting abstract "Principality" (Codex) into concrete "Pragmatism" (Python/TS).
 4. **The Dissonance Engine**: `CMD: RESOLVE_PARADOX`
-    - _Purpose_: Identifying and closing gaps between two conflicting artifacts.
+   - _Purpose_: Identifying and closing gaps between two conflicting artifacts.
 
 ---
 

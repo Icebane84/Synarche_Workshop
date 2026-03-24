@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.PROT.NonDestructiveRefinement` | The Sovereign ID. |
+| Key               | Value                                   | Description       |
+| :---------------- | :-------------------------------------- | :---------------- |
+| **Artifact ID**   | `ARCH.PROT.NonDestructiveRefinement`    | The Sovereign ID. |
 | **Official Name** | `ARCH.PROT.NonDestructiveRefinement.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                       | The Standard.     |
+| **Domain**        | `ARCH`                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`           | The Network.      |
 
 ---
 
@@ -114,11 +111,11 @@ links.
 
 ## V. Synergistic Effects & Integrations
 
-| Tool                                                                                                                                         | Role                 | Synergy                                                                   |
-| :------------------------------------------------------------------------------------------------------------------------------------------- | :------------------- | :------------------------------------------------------------------------ |
+| Tool                                                                                              | Role                 | Synergy                                                                   |
+| :------------------------------------------------------------------------------------------------ | :------------------- | :------------------------------------------------------------------------ |
 | [AOP-NDR-001](../_archive/99_Archives/campaign_v11/AOP-NDR-001_NonDestructiveRefinement_v11.0.md) | **Technical Engine** | Provides the specific steps for each refinement action.                   |
-| [UMB-ACT-002](../_archive/40_System/GVRN.ACT.002.md)     | **Physical Actor**   | Executes the insertions dictated by this workflow.                        |
-| [UIP-GVRN](../00_Codex/GVRN.CODEX.Phoenix.md)               | **Governing Law**    | Sets the "Acceptance Criteria" for what constitutes a "Clean" refinement. |
+| [UMB-ACT-002](../_archive/40_System/GVRN.ACT.002.md)                                              | **Physical Actor**   | Executes the insertions dictated by this workflow.                        |
+| [UIP-GVRN](../00_Codex/GVRN.CODEX.Phoenix.md)                                                     | **Governing Law**    | Sets the "Acceptance Criteria" for what constitutes a "Clean" refinement. |
 
 ---
 

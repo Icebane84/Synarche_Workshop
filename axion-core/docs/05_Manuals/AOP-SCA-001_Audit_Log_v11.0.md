@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                  | Description       |
+| :---------------- | :------------------------------------- | :---------------- |
 | **Artifact ID**   | `ARCH-AOP-SCA-001-AUDIT-LOG-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-SCA-001_Audit_Log_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-SCA-001_Audit_Log_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                      | The Standard.     |
+| **Domain**        | `ARCH`                                 | The Subject.      |
+| **Status**        | `[ACTIVE]`                             | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`          | The Network.      |
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Validation` | The Sovereign ID. |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Protocol.Validation`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Protocol.Validation.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -87,9 +84,9 @@ Every piece of data entering the cognitive loom must be tagged:
 ### **IV. Actionable Prompt Packet (APP)**
 
 - ✨ **Check Origin**: `CMD: CHECK_ORIGIN --target:"[Data_Packet]"`
-    - _Effect:_ Returns the origin tag for a specific string or block.
+  - _Effect:_ Returns the origin tag for a specific string or block.
 - 🛠️ **Fix Hallucination**: `CMD: FIX_HALLUCINATION --context:"[Statement]"`
-    - _Effect:_ Rewrites a statement to correctly attribute sources.
+  - _Effect:_ Rewrites a statement to correctly attribute sources.
 
 ---
 

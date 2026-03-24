@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.LOOM.CORE` | The Sovereign ID. |
-| **Official Name** | `SYNG.LOOM.CORE.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                                         | Description       |
+| :---------------- | :------------------------------------------------------------ | :---------------- |
+| **Artifact ID**   | `SYNG.LOOM.CORE`                                              | The Sovereign ID. |
+| **Official Name** | `SYNG.LOOM.CORE.md`                                           | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                             | The Standard.     |
+| **Domain**        | `SYNG`                                                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                    | The Lifecycle.    |
 | **Relations**     | `NUCLEUS_OF: The Knowledge Graph, SYMBIOTE: SYNG.ENGINE.CORE` | The Network.      |
-
-
-
 
 ---
 

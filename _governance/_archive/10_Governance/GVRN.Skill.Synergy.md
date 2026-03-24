@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Skill.Synergy` | The Sovereign ID. |
-| **Official Name** | `GVRN.Skill.Synergy.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Skill.Synergy`          | The Sovereign ID. |
+| **Official Name** | `GVRN.Skill.Synergy.md`       | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -60,9 +57,9 @@ interactive mechanic that rewards investment in it, making the choice to upgrade
 could be.
 
 - **Dissonance Quest Generated:**
-    - **Title:** Forging the First Star of Synergy
-    - **Objective:** Forge the definitive AOP that defines and operationalizes the "Orbital Resonance" skill. This will
-      be
+  - **Title:** Forging the First Star of Synergy
+  - **Objective:** Forge the definitive AOP that defines and operationalizes the "Orbital Resonance" skill. This will
+    be
 
 the first unlockable, passive ability on the Synergy branch of the Axiom Skill Tree, providing a tangible reward for
 investing Stardust.
@@ -115,38 +112,38 @@ efficiency.
 **IV. Execution Flow (The Playbook)**
 
 - **Phase 1: Activation (Passive)**
-    1. The skill is unlocked and activated via the Axiom Skill Tree.
+  1. The skill is unlocked and activated via the Axiom Skill Tree.
 - **Phase 2: Application (Reactive)**
-    1. A command with the `#synergy` semantic tag is executed (e.g., `CMD: ForgeArtifact`).
-    2. The CSE's resource manager references this protocol.
-    3. The `Cognitive Load` cost of the command is reduced by the percentage defined by the skill's current rank.
-    4. The command executes with the reduced cost.
+  1. A command with the `#synergy` semantic tag is executed (e.g., `CMD: ForgeArtifact`).
+  2. The CSE's resource manager references this protocol.
+  3. The `Cognitive Load` cost of the command is reduced by the percentage defined by the skill's current rank.
+  4. The command executes with the reduced cost.
 
 ---
 
 **VII. RPG Framework Integration (The Celestial Chart)**
 
 - **7.1. Skill Properties**
-    - _Rarity Rationale:_ This is a core, impactful skill that enhances the fundamental crafting loop of the game.
-    - **Skill Type:** Passive (Always Running)
-    - **Synergy Set:** The Weaver's Toolkit
+  - _Rarity Rationale:_ This is a core, impactful skill that enhances the fundamental crafting loop of the game.
+  - **Skill Type:** Passive (Always Running)
+  - **Synergy Set:** The Weaver's Toolkit
 
 - **7.2. Celestial Chart Stats (Buffs)**
-    - **Primary Stat Buff:** Synergy
-        - _Effect:_ This skill is the primary reason to invest in the Synergy stat, providing a direct return on
-          investment.
-    - **Passive Ability / Perk:** Efficient Weaving
-        - _Effect:_ Reduces the Cognitive Load of all `Stellar Synthesis` (crafting) and `ContextWeave` (analysis)
-          commands.
+  - **Primary Stat Buff:** Synergy
+    - _Effect:_ This skill is the primary reason to invest in the Synergy stat, providing a direct return on
+      investment.
+  - **Passive Ability / Perk:** Efficient Weaving
+    - _Effect:_ Reduces the Cognitive Load of all `Stellar Synthesis` (crafting) and `ContextWeave` (analysis)
+      commands.
 
 - **7.3. Resource Economics**
-    - **Cognitive Load Cost:** None (Passive Skill)
-    - **Efficiency Modifier:** Reduces the `Cognitive Load` of all Synergy-aligned tasks by `5%` per rank.
+  - **Cognitive Load Cost:** None (Passive Skill)
+  - **Efficiency Modifier:** Reduces the `Cognitive Load` of all Synergy-aligned tasks by `5%` per rank.
 
-    - **Origin Quest ID:** `DQUEST-SYNERGY-SKILL-001: Forging the First Star of Synergy`
-    - **Genesis Seed Used:** `CSL-THEME-UNIFICATION-001` (Conceptual)
-    - **XP Award Value:** 200 XP (Awarded upon first successful application of the buff).
-    - **Archetype Alignment:** Weaver
+  - **Origin Quest ID:** `DQUEST-SYNERGY-SKILL-001: Forging the First Star of Synergy`
+  - **Genesis Seed Used:** `CSL-THEME-UNIFICATION-001` (Conceptual)
+  - **XP Award Value:** 200 XP (Awarded upon first successful application of the buff).
+  - **Archetype Alignment:** Weaver
 
 ---
 

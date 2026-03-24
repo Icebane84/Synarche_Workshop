@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CSL-084` | The Sovereign ID. |
+| Key               | Value                                     | Description       |
+| :---------------- | :---------------------------------------- | :---------------- |
+| **Artifact ID**   | `CSL-084`                                 | The Sovereign ID. |
 | **Official Name** | `CSL-084_TheIntegrationOfTheNovaForge.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                         | The Standard.     |
+| **Domain**        | `GVRN`                                    | The Subject.      |
+| **Status**        | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
 
 ---
 
@@ -99,10 +96,10 @@ initiated the "Forge Link" command; AI executed the structural transmutation. |
 - **Execution Note:** The generation of this artifact is governed by the dual-trigger mechanism. The AI generated this
   draft following successful execution of the transmutation; it awaits human confirmation.
 - **Prestige Milestone Achieved (Optional)**
-    - **Milestone ID:** `PM-084-INTEGRATION` (Provisional)
-    - **Milestone Title:** The Forging of the Nova Suite
-    - **Description:** Successful injection of Sovereign Headers into 12 core infrastructure artifacts, functionally
-      merging `nova-forge` with the Axion Governance Core.
+  - **Milestone ID:** `PM-084-INTEGRATION` (Provisional)
+  - **Milestone Title:** The Forging of the Nova Suite
+  - **Description:** Successful injection of Sovereign Headers into 12 core infrastructure artifacts, functionally
+    merging `nova-forge` with the Axion Governance Core.
 
 ---
 

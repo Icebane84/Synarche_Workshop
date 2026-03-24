@@ -1,39 +1,20 @@
-"""# NLP-EMOTION-ANALYZER: Sentiment & Affective Context (Axion NLP Layer).
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
-## Genesis Stamp: 2026-03-03 | Domain: NLP | State: ACTIVE | Criticality: Intelligence
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-EMO-ANLZ-001`     | The Sovereign ID. |
+| **Official Name**   | `emotion_analyzer.py`         | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-NLP`              | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-# I. Universal Identification & Provenance (UIP-V13)
-
-| Key | Value |
-| :--- | :--- |
-| **Artifact ID** | `NLP-EMOTION-ANALYZER-v1.0` |
-| **Official Name** | `emotion_analyzer.py` |
-| **Version** | **v1.0 [ALPHA]** |
-| **Domain** | `NLP` |
-| **Evolution** | **Cognitive Ascension** |
-| **Celestial Class** | `[MOON]` |
-| **Status (State)** | `[ACTIVE]` |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` |
-| **Provenance** | `Date Reforged: 2026-03-03` |
-
----
-
-# II. Axiomatic Governance & Purpose
-To provide lightweight, lexicon-based emotional analysis of memory content and user interactions within Axion Prime.
-
-# III. The Architectural Spine
-- **Attributes**: `lexicons` (dict)
-- **Methods**: `detect_emotions`
-
-# V. Systemic Relationships & Impact
-- `MemorySystem`: Uses this to tag memories with emotional context.
-- `ExperienceLogger`: Provides the raw text for analysis.
-
-# VI. RPG Framework Integration
-- **Affective Resonance**: Matching the agent's response to the detected emotion increases resonance stats.
-
-# VII. Actionable Prompt Packet
-- "Analyze the emotional trajectory of the last 10 interactions."
+**The Spirit Bomb Axiom: Affective resonance (Law 28)**
+> Implemented from Blueprint `GVRN.REG.AffectiveResonance.md`.
+> Ethos: The Feeling is Seed; The Harmony is Truth.
 """
 
 import logging
@@ -73,7 +54,7 @@ class EmotionAnalyzer:
     lexicons and triggers.
     """
 
-    def __init__(self, lexicon: dict | None = None) -> None:
+    def __init__(self, lexicon: dict[str, dict[str, list[str]]] | None = None) -> None:
         self.lexicons = lexicon if lexicon is not None else INITIAL_EMOTION_LEXICON
         if not isinstance(self.lexicons, dict) or "keyword" not in self.lexicons:
             log.warning("Invalid or missing 'keyword' triggers in lexicon.")

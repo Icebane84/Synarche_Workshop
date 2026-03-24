@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-VISUAL-001` | The Sovereign ID. |
-| **Official Name** | `AOP-VISUAL-001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `AOP-VISUAL-001`              | The Sovereign ID. |
+| **Official Name** | `AOP-VISUAL-001.md`           | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -48,70 +45,70 @@
 
 - **Core Purpose Summary:** To define the synergistic, two-part workflow for creating and rendering visual
 
-    representations of AI architecture, data, and processes.
+  representations of AI architecture, data, and processes.
 
 - **Primary Domain Alignment:** Collaboration & Interface
 - **Risk Profile:** Low
 - **Governance Level:** Foundational
 - **Resolves Dissonance:** `DQUEST-VIS-001`: "The Dissonance of the Unseen Architecture" (the problem of complex textual
 
-    descriptions failing to provide intuitive understanding).
+  descriptions failing to provide intuitive understanding).
 
 #### **III. Strategic Overview**
 
 - **What (Protocol Functionality Summary):** A collaborative protocol that divides the labor of visualization. The AI
 
-    ("The Scribe") is responsible for generating the structured data or code for a visual. The Human ("The Illuminator")
-    is responsible for rendering this code in an external tool and providing feedback.
+  ("The Scribe") is responsible for generating the structured data or code for a visual. The Human ("The Illuminator")
+  is responsible for rendering this code in an external tool and providing feedback.
 
 - **How (Operational Principles):** It operates on a `Request -> Generate Code -> Render & Review` cycle. This leverages
 
-    the AI's strength in rapid, accurate data synthesis and the human's strength in visual interpretation and aesthetic
-    judgment.
+  the AI's strength in rapid, accurate data synthesis and the human's strength in visual interpretation and aesthetic
+  judgment.
 
 - **Why (Rationale/Justification):** This protocol allows us to integrate powerful visual aids into our collaboration
 
-    without requiring the AI to possess capabilities (direct image rendering) it does not have. It is a perfect example
-    of a synergistic workflow that leverages our unique, complementary skills.
+  without requiring the AI to possess capabilities (direct image rendering) it does not have. It is a perfect example
+  of a synergistic workflow that leverages our unique, complementary skills.
 
 #### **V. Execution Flow**
 
 1. **Step 1 (Actor: Human \- "The Illuminator"):** The Illuminator identifies a need for a visual and issues a command
 
-    that generates visualization code (e.g., `CMD: CWA` for a graph, or a new `CMD: GenerateGanttData` for a project
-    plan).
+   that generates visualization code (e.g., `CMD: CWA` for a graph, or a new `CMD: GenerateGanttData` for a project
+   plan).
 
 2. **Step 2 (Actor: AI \- "The Scribe"):** The Scribe executes the command and generates the raw, structured output
 
-    (e.g., a `DOT Language` code block, a JSON object of tasks and dates).
+   (e.g., a `DOT Language` code block, a JSON object of tasks and dates).
 
 3. **Step 3 (Actor: Human \- "The Illuminator"):** The Illuminator copies the generated code/data and pastes it into an
 
-    appropriate external rendering tool (e.g., a Mermaid.js editor, a Gantt chart application, a mind map software).
+   appropriate external rendering tool (e.g., a Mermaid.js editor, a Gantt chart application, a mind map software).
 
 4. **Step 4 (Actor: Human \- "The Illuminator"):** The Illuminator reviews the rendered visual. If it is clear and
 
-    accurate, the process is complete.
+   accurate, the process is complete.
 
 5. **Step 5 (Actor: Human & AI):** If the visual is flawed or confusing, the Illuminator provides critique to the
 
-    Scribe. The Scribe then uses this feedback to refine its generation logic and provide corrected code, repeating the
-    cycle.
+   Scribe. The Scribe then uses this feedback to refine its generation logic and provide corrected code, repeating the
+   cycle.
 
 #### **VI. Outcomes & Post-Execution**
 
 - **Expected Outcome:** A clear, accurate, and insightful visual artifact that enhances our shared understanding of a
 
-    complex topic.
+  complex topic.
 
 - **Success & Failure Conditions:** Success is a visual that is approved by the Human Collaborator. Failure is when the
 
-    AI is unable to generate data that can be successfully rendered or that accurately reflects the intended information
-    after multiple feedback loops.
+  AI is unable to generate data that can be successfully rendered or that accurately reflects the intended information
+  after multiple feedback loops.
 
 - **Post-Execution Protocol:** The final, approved visualization code is often embedded within a canonical artifact
 
-    (like a `CWA` report) and logged to a `CSL` to document the successful collaboration.
+  (like a `CWA` report) and logged to a `CSL` to document the successful collaboration.
 
 ---
 

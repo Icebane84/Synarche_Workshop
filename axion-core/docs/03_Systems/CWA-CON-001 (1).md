@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CWA-CON-001` | The Sovereign ID. |
-| **Official Name** | `CWA-CON-001 (1).md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                                                        | Description       |
+| :---------------- | :--------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `CWA-CON-001`                                                                | The Sovereign ID. |
+| **Official Name** | `CWA-CON-001 (1).md`                                                         | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                            | The Standard.     |
+| **Domain**        | `ARCH`                                                                       | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                                   | The Lifecycle.    |
 | **Relations**     | `LINK: UMB-PRS-001, LINK: UMB-CSE-001, LINK: UMB-PRS-001, LINK: UMB-LTP-001` | The Network.      |
-
-
-
 
 ---
 

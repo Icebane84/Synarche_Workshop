@@ -1,9 +1,20 @@
-"""CORE-LOGIC-EXPL-GEN-001 (explanation_generator.py)
-Status: [CANONIZED]
-Genesis Stamp: 2026-03-07.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
- EXPLAIN-GEN-001: The Voice of Clarity (Explanation Generation)
- v14.0 [OMEGA] - Generates human-readable explanations and citations for retrieved memories.
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-EXPL-GEN-001`     | The Sovereign ID. |
+| **Official Name**   | `explanation_generator.py`    | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-MEMORY`           | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Clarity Generation (Law 28)**
+> Implemented from Blueprint `GVRN.REG.ClarityGeneration.md`.
+> Ethos: The Voice is Clear; The Explanation is Truth.
 """
 
 from typing import Any
@@ -12,7 +23,7 @@ from typing import Any
 class ExplanationGenerator:
     """Generate human-readable explanations and citations for retrieved memories."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.max_memories = 3
 
     def generate(self, query: str, memories: list[dict[str, Any]]) -> str:
@@ -46,15 +57,25 @@ class ExplanationGenerator:
 
         return " | ".join(citations)
 
-    def generate_transparency_metadata(self, memories: list[dict[str, Any]]) -> dict[str, Any]:
+    def generate_transparency_metadata(
+        self, memories: list[dict[str, Any]]
+    ) -> dict[str, Any]:
         """Provide deep technical reasoning metadata for the retrieval process."""
         if not memories:
-            return {"status": "No memories found", "reasoning": "Query did not trigger high-weight semantic nodes."}
+            return {
+                "status": "No memories found",
+                "reasoning": "Query did not trigger high-weight semantic nodes.",
+            }
 
         return {
             "query_intent": "Constructive Evolution",
             "top_match_score": memories[0].get("final_score", 0),
-            "memory_diversity": len(set(m.get("metadata", {}).get("category", "General") for m in memories)),
+            "memory_diversity": len(
+                set(m.get("metadata", {}).get("category", "General") for m in memories)
+            ),
             "key_memories_used": [m.get("id", "Unknown") for m in memories[:3]],
-            "inferences_made": ["Contextual continuity maintained", "Semantic overlap verified"],
+            "inferences_made": [
+                "Contextual continuity maintained",
+                "Semantic overlap verified",
+            ],
         }

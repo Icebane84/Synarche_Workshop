@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                    | Description       |
+| :---------------- | :------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-SELT-CSL-TEMPLATE-001-SYNTHESISLOGENTRY-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                        | The Standard.     |
+| **Domain**        | `GVRN`                                                   | The Subject.      |
+| **Status**        | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 ---
 
@@ -85,19 +82,19 @@ Tags:
 
 ```json
 {
-    "uip": "CSL-YYYYMMDD-NNN",
-    "title": "Title of Insight",
-    "author": "Agent_Name",
-    "context": {
-        "trigger": "User Prompt / Dissonance Alert",
-        "active_files": ["File1.md"]
-    },
-    "weave": {
-        "observation": "Raw event data.",
-        "insight": "Functional realization.",
-        "synergy_score": 0.0
-    },
-    "relations": ["UMB-001", "AOP-002"]
+  "uip": "CSL-YYYYMMDD-NNN",
+  "title": "Title of Insight",
+  "author": "Agent_Name",
+  "context": {
+    "trigger": "User Prompt / Dissonance Alert",
+    "active_files": ["File1.md"]
+  },
+  "weave": {
+    "observation": "Raw event data.",
+    "insight": "Functional realization.",
+    "synergy_score": 0.0
+  },
+  "relations": ["UMB-001", "AOP-002"]
 }
 ```
 

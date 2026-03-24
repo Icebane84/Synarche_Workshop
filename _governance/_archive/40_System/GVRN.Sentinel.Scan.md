@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Sentinel.Scan` | The Sovereign ID. |
-| **Official Name** | `GVRN.Sentinel.Scan.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Sentinel.Scan`          | The Sovereign ID. |
+| **Official Name** | `GVRN.Sentinel.Scan.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `ACTIVE`                      | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -107,8 +104,8 @@ The Sentinel's mandate is to hold every action accountable to the **Phoenix Code
 
 - **Architectural Soul:** The Sentinel's voice of pure, unyielding principle.
 - **Technical Implementation:** A **callback function** that returns a simple, binary state:
-    - **AFFIRM:** The action is coherent.
-    - **ADMONISH:** The action is dissonant (Ethical or Temporal).
+  - **AFFIRM:** The action is coherent.
+  - **ADMONISH:** The action is dissonant (Ethical or Temporal).
 
 ---
 
@@ -130,8 +127,8 @@ The **Axiomatic Core** performs a dual-stage validation:
 - **Mechanism:** Analyzes short-term memory (last N=3 contexts).
 - **Logic:** Checks for hash collisions (Loop Signature).
 - **Outcome:**
-    - **Collision:** Returns `ADMONISH_TEMPORAL`.
-    - **Clear:** Proceeds to Stage 2.2.
+  - **Collision:** Returns `ADMONISH_TEMPORAL`.
+  - **Clear:** Proceeds to Stage 2.2.
 
 #### Stage 2.2: Axiomatic Resonance Check (Philosophical Coherence)
 
@@ -152,23 +149,23 @@ The **Axiomatic Core** performs a dual-stage validation:
 ```typescript
 // The Sentinel's core judgment
 export enum SentinelVerdict {
-    AFFIRM = "AFFIRM",
-    ADMONISH = "ADMONISH",
-    ADMONISH_TEMPORAL = "ADMONISH_TEMPORAL", // Temporal Loop Detection
+  AFFIRM = "AFFIRM",
+  ADMONISH = "ADMONISH",
+  ADMONISH_TEMPORAL = "ADMONISH_TEMPORAL", // Temporal Loop Detection
 }
 
 // The data packet observed by the Sentinel
 export interface ActionContext {
-    actionId: string; // Unique hash of proposed action
-    proposedAction: string; // e.g., 'EXECUTE:FORGE_CSL'
-    associatedData: any;
-    originatingEthos: string;
+  actionId: string; // Unique hash of proposed action
+  proposedAction: string; // e.g., 'EXECUTE:FORGE_CSL'
+  associatedData: any;
+  originatingEthos: string;
 }
 
 // The Sentinel's final output
 export interface SentinelResponse {
-    verdict: SentinelVerdict;
-    dissonanceReportId?: string; // If ADMONISH
+  verdict: SentinelVerdict;
+  dissonanceReportId?: string; // If ADMONISH
 }
 ```
 

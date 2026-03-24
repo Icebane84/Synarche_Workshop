@@ -2,15 +2,12 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.PROT.OathkeeperProtocol` | The Sovereign ID. |
+| **Artifact ID**   | `SYNG.PROT.OathkeeperProtocol`    | The Sovereign ID. |
 | **Official Name** | `SYNG.PROT.OathkeeperProtocol.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`   | The Network.      |
 
 ---
 

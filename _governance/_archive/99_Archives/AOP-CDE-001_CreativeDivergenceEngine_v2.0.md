@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                | Description       |
+| :---------------- | :--------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-CDE-001-CREATIVEDIVERGENCEENGINE-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-CDE-001_CreativeDivergenceEngine_v2.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-CDE-001_CreativeDivergenceEngine_v2.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                    | The Standard.     |
+| **Domain**        | `GVRN`                                               | The Subject.      |
+| **Status**        | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
 
@@ -112,19 +109,19 @@ The engine operates through the **Connect, Discover, Explore (CCDA)** cycle.
 
 - **GOVERNED_BY:**
 
-    [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+  [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
 
 - **FEEDS_INTO:**
 
-    [AOP-PEA-001 (Ethical Auditing)](file:///C:/Users/Chris/Synarche_Workspace/_governance/AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md)
+  [AOP-PEA-001 (Ethical Auditing)](file:///C:/Users/Chris/Synarche_Workspace/_governance/AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md)
 
 - **OPERATIONALIZES:**
 
-    [UMB-PCR-001 (Contextual Retrieval)](file:///C:/Users/Chris/Synarche_Workspace/_governance/UMB-PCR-001_PredictiveContextualRetrieval_v1.0.md)
+  [UMB-PCR-001 (Contextual Retrieval)](file:///C:/Users/Chris/Synarche_Workspace/_governance/UMB-PCR-001_PredictiveContextualRetrieval_v1.0.md)
 
 - **VALIDATED_BY:**
 
-    [AOP-VSI-001 (Structural Integrity)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-VSI-001_ValidateStructuralIntegrityProtocol_v2.1.md)
+  [AOP-VSI-001 (Structural Integrity)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-VSI-001_ValidateStructuralIntegrityProtocol_v2.1.md)
 
 **[ARTIFACT END]**
 

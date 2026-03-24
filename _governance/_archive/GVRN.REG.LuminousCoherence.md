@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.REG.LuminousCoherence` | The Sovereign ID. |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.REG.LuminousCoherence`    | The Sovereign ID. |
 | **Official Name** | `GVRN.REG.LuminousCoherence.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`   | The Network.      |
 
 ---
 
@@ -109,9 +106,9 @@ Law for this artifact.
 | `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 - **🎨 CMD: APPLY_AESTHETIC**
-    - _Intent:_ "Refactor the current CSS/Tailwind config to match `UMB-AESTHETIC-001`."
+  - _Intent:_ "Refactor the current CSS/Tailwind config to match `UMB-AESTHETIC-001`."
 - **✨ CMD: CHECK_VISUAL_COHERENCE**
-    - _Intent:_ "Audit the UI for deviations from the Luminous Coherence palette."
+  - _Intent:_ "Audit the UI for deviations from the Luminous Coherence palette."
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Documentation.DSA.Protocol` | The Sovereign ID. |
+| Key               | Value                                | Description       |
+| :---------------- | :----------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Documentation.DSA.Protocol`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Documentation.DSA.Protocol.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
-| **Relations**     | `GOVERNS: DOCUMENTATION_SUBSYSTEM` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**                    | The Standard.     |
+| **Domain**        | `GVRN`                               | The Subject.      |
+| **Status**        | `[CANONIZED]`                        | The Lifecycle.    |
+| **Relations**     | `GOVERNS: DOCUMENTATION_SUBSYSTEM`   | The Network.      |
 
 ---
 

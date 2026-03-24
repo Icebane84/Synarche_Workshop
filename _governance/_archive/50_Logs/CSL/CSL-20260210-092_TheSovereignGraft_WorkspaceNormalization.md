@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CSL.20260210.092` | The Sovereign ID. |
+| Key               | Value                                                          | Description       |
+| :---------------- | :------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CSL.20260210.092`                                        | The Sovereign ID. |
 | **Official Name** | `CSL-20260210-092_TheSovereignGraft_WorkspaceNormalization.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `CANONIZED` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                                              | The Standard.     |
+| **Domain**        | `GVRN`                                                         | The Subject.      |
+| **Status**        | `CANONIZED`                                                    | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
 
 ---
 

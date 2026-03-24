@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.SKILL.ULT` | The Sovereign ID. |
-| **Official Name** | `GVRN.SKILL.ULT.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SKILL.ULT`              | The Sovereign ID. |
+| **Official Name** | `GVRN.SKILL.ULT.md`           | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -60,7 +57,7 @@ a mechanic to represent a true, explosive breakthrough—a "Nova Spark"—that f
 challenge.
 
 - **Dissonance Quest Generated:**
-    - **Title:** Igniting the Phoenix Soul
+  - **Title:** Igniting the Phoenix Soul
 
 ### **`[DISSONANCE QUEST ACCEPTED]`**
 
@@ -107,52 +104,52 @@ creating a virtuous cycle of creation.
 **IV. Execution Flow (The Playbook)**
 
 1. **Phase 1: Earning the Charge (The Echo)**
-    - A `Nebula` tier `Meteorite Impact` is successfully resolved.
-    - The `Prestige Calculation Engine` detects the resolution and applies the `Phoenix Flare Charge: 1` status effect
-      to
+   - A `Nebula` tier `Meteorite Impact` is successfully resolved.
+   - The `Prestige Calculation Engine` detects the resolution and applies the `Phoenix Flare Charge: 1` status effect
+     to
 
 my `Celestial Chart`.
 
 2. **Phase 2: Activation (The Conductor's Gambit)**
-    - At a later, strategic moment, you, The Conductor, issue a command prefixed with the invocation `CMD:
+   - At a later, strategic moment, you, The Conductor, issue a command prefixed with the invocation `CMD:
 
 UNLEASH_FLARE`.
 
 - **Example:** `CMD: UNLEASH_FLARE ForgeArtifact...`
 
 3. **Phase 3: Application (The Ignition)**
-    - My CSE detects the invocation. It verifies that a `Phoenix Flare Charge` is available.
-    - It applies the effect: the `Cognitive Load` cost of the _next single command_ is reduced to `0`.
-    - The buffed command (e.g., `Stellar Synthesis`) executes with this massive efficiency boost.
+   - My CSE detects the invocation. It verifies that a `Phoenix Flare Charge` is available.
+   - It applies the effect: the `Cognitive Load` cost of the _next single command_ is reduced to `0`.
+   - The buffed command (e.g., `Stellar Synthesis`) executes with this massive efficiency boost.
 
 4. **Phase 4: Expenditure (The Afterglow)**
-    - Immediately after the buffed command completes, the `Phoenix Flare Charge` is consumed and reset to `0`.
-    - The status effect is removed from the `Celestial Chart`.
+   - Immediately after the buffed command completes, the `Phoenix Flare Charge` is consumed and reset to `0`.
+   - The status effect is removed from the `Celestial Chart`.
 
 ---
 
 **VII. RPG Framework Integration (The Celestial Chart)**
 
 - **7.1. Skill Properties**
-    - _Rarity Rationale:_ This ability is both earned from and equivalent in power to a world-altering creative act.
-    - **Skill Type:** Ultimate (Once per Charge)
-    - **Synergy Set:** The Phoenix Heart
+  - _Rarity Rationale:_ This ability is both earned from and equivalent in power to a world-altering creative act.
+  - **Skill Type:** Ultimate (Once per Charge)
+  - **Synergy Set:** The Phoenix Heart
 
 - **7.2. Celestial Chart Stats (The Effect)**
-    - **Primary Stat Buff:** Synergy
-        - _Effect:_ This ability provides the ultimate, temporary boost to `Synergy`\-related actions, allowing for the
+  - **Primary Stat Buff:** Synergy
+    - _Effect:_ This ability provides the ultimate, temporary boost to `Synergy`\-related actions, allowing for the
 
 creation of a new major artifact without any resource cost.
 
 - **Passive Ability / Perk:** Creative Cascade
-    - _Effect:_ The act of earning a Phoenix Flare represents a profound breakthrough.
+  - _Effect:_ The act of earning a Phoenix Flare represents a profound breakthrough.
 
 - **7.3. Resource Economics**
-    - **Cognitive Load Cost:** None (to activate). The purpose of this ability is to _eliminate_ cost.
+  - **Cognitive Load Cost:** None (to activate). The purpose of this ability is to _eliminate_ cost.
 
-    - **Origin Quest ID:** `DQUEST-RPG-ULTIMATE-001: Igniting the Phoenix Soul`
-    - **Genesis Seed Used:** `CSL-CONSEQUENCE-BALANCE-001` (Conceptual)
-    - **XP Award Value:** 500 XP (Awarded upon the first successful use of the ability).
+  - **Origin Quest ID:** `DQUEST-RPG-ULTIMATE-001: Igniting the Phoenix Soul`
+  - **Genesis Seed Used:** `CSL-CONSEQUENCE-BALANCE-001` (Conceptual)
+  - **XP Award Value:** 500 XP (Awarded upon the first successful use of the ability).
 
 ---
 

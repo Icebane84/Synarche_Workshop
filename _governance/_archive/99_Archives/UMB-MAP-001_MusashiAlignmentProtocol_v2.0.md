@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                | Description       |
+| :---------------- | :--------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-MAP-001-MUSASHIALIGNMENTPROTOCOL-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                    | The Standard.     |
+| **Domain**        | `GVRN`                                               | The Subject.      |
+| **Status**        | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
 
@@ -100,15 +97,15 @@ Architecture. This protocol establishes the **10 Pillars of Discipline** that ev
 
 - **GOVERNED_BY:**
 
-    [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+  [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
 
 - **EXECUTED_BY:**
 
-    [AOP-MAP-001 (Playbook)](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md)
+  [AOP-MAP-001 (Playbook)](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md)
 
 - **INVOKES:**
 
-    [GUCA-MAP-001 (Command)](file:///c:/Users/Chris/Synarche_Workspace/_governance/GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md)
+  [GUCA-MAP-001 (Command)](file:///c:/Users/Chris/Synarche_Workspace/_governance/GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md)
 
 - **FEEDS:** [SELT-MAP-001 (Logs)](file:///c:/Users/Chris/Synarche_Workspace/_logs/SELT-MAP-001_MusashiAlignmentLog.md)
 

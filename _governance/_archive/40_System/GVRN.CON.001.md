@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CON.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.CON.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `Proposed` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CON.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.CON.001.md`             | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `Proposed`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -142,10 +139,10 @@ Upon processing, entries are transformed into:
 
 ```json
 {
-    "term": "[Term]",
-    "designation": "[Designation]",
-    "canonicalDefinition": "[Definition]",
-    "linkages": ["Related Term A", "Related Term B"]
+  "term": "[Term]",
+  "designation": "[Designation]",
+  "canonicalDefinition": "[Definition]",
+  "linkages": ["Related Term A", "Related Term B"]
 }
 ```
 

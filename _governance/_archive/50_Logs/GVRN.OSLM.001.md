@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.OSLM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.OSLM.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.OSLM.001`               | The Sovereign ID. |
+| **Official Name** | `GVRN.OSLM.001.md`            | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -142,10 +139,10 @@ These terms are used to define the nature of the **Bidirectional Links** between
 ## **VIII. Actionable Prompt Packet (APP)**
 
 - **CMD: QUERY_OSLM**
-    - `--target:"[ArtifactID]"`
-    - `--depth:"[RecursionLevel]"`
+  - `--target:"[ArtifactID]"`
+  - `--depth:"[RecursionLevel]"`
 - **CMD: INJECT_BIDIRECTIONAL_LINK**
-    - `--source:"[ID]" --target:"[ID]" --type:"[Relation]"`
+  - `--source:"[ID]" --target:"[ID]" --type:"[Relation]"`
 
 ---
 

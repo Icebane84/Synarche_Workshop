@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `LOGS.CSL.TheFinalWeave` | The Sovereign ID. |
-| **Official Name** | `LOGS.CSL.TheFinalWeave.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `LOGS` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                                           | Description       |
+| :---------------- | :---------------------------------------------- | :---------------- |
+| **Artifact ID**   | `LOGS.CSL.TheFinalWeave`                        | The Sovereign ID. |
+| **Official Name** | `LOGS.CSL.TheFinalWeave.md`                     | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                               | The Standard.     |
+| **Domain**        | `LOGS`                                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                                   | The Lifecycle.    |
 | **Relations**     | `CAPTURES: [UMB-META-001], DEFINES: [PEF-v2.0]` | The Network.      |
-
-
-
 
 ---
 

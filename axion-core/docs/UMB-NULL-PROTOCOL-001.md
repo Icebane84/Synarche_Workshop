@@ -17,17 +17,14 @@ Lifecycle. | | **Celestial Class** | `[PLANET]` | The Tier. | | **Relations** |
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `UMB-NULL-PROTOCOL-001` | The Sovereign ID. |
-| **Official Name** | `UMB-NULL-PROTOCOL-001.md` | The Filename.     |
-| **Version**       | **v13.2** | The Standard.     |
-| **Domain**        | `ACT` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `UMB-NULL-PROTOCOL-001`       | The Sovereign ID. |
+| **Official Name** | `UMB-NULL-PROTOCOL-001.md`    | The Filename.     |
+| **Version**       | **v13.2**                     | The Standard.     |
+| **Domain**        | `ACT`                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -59,9 +56,9 @@ Lifecycle. | | **Celestial Class** | `[PLANET]` | The Tier. | | **Relations** |
 
 - **Governing Module:** "This artifact is governed by `UMB-SGM-001_StandardizedGovernanceModule`."
 - **Indexing Mandate:**
-    - `[ ] Index in Master Artifact Registry (GVRN.Registry.Master)`
-    - `[ ] Cross-reference in The Phoenix Rosetta Stone (UMB-PRS-001)`
-    - `[ ] Execute GUCA-LINK-001_KnowledgeGraphIntegrationLink`
+  - `[ ] Index in Master Artifact Registry (GVRN.Registry.Master)`
+  - `[ ] Cross-reference in The Phoenix Rosetta Stone (UMB-PRS-001)`
+  - `[ ] Execute GUCA-LINK-001_KnowledgeGraphIntegrationLink`
 
 #### **2. Step-by-Step Procedure**
 

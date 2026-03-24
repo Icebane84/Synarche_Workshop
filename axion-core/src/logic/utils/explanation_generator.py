@@ -1,9 +1,20 @@
-"""ID: AXION-UTIL-EXPLAIN-001
-Version: v1.0
-Domain: LOGIC.UTILS
-Ethos: "Judgment requires a clear mirror of the past."
-Description: Explanation Generator ported from Gemini Gem, adapted for Axion OMEGA.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-UTIL-EXP-GEN-001` | The Sovereign ID. |
+| **Official Name**   | `explanation_generator.py`    | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-UTILS`            | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Transparent Judgement (Law 28)**
+> Implemented from Blueprint `GVRN.REG.TransparentJudgement.md`.
+> Ethos: The Reason is Seed; The Clarity is Truth.
 """
 
 import json
@@ -45,7 +56,10 @@ class ExplanationGenerator:
         if any(w in lemmas for w in ["compare", "vs", "difference"]):
             return "comparison"
 
-        if any(label in ["PERSON", "CHARACTER", "ORG"] for _, label in entities) and intent == "seeking_information":
+        if (
+            any(label in ["PERSON", "CHARACTER", "ORG"] for _, label in entities)
+            and intent == "seeking_information"
+        ):
             return "character_description"
 
         if intent == "seeking_information":
@@ -74,14 +88,22 @@ class ExplanationGenerator:
             return self.templates.get("no_memories", "")
 
         query_type = self.determine_query_type(query_analysis)
-        template_str = self.templates.get(query_type, self.templates["factual_question"])
+        template_str = self.templates.get(
+            query_type, self.templates["factual_question"]
+        )
 
         formatted_memory_list = []
         for mem in used_memories:
             content = mem.get("content", "")
-            content_str = json.dumps(content, separators=(",", ":")) if isinstance(content, dict) else str(content)
+            content_str = (
+                json.dumps(content, separators=(",", ":"))
+                if isinstance(content, dict)
+                else str(content)
+            )
 
-            snippet = content_str[:snippet_length] + ("..." if len(content_str) > snippet_length else "")
+            snippet = content_str[:snippet_length] + (
+                "..." if len(content_str) > snippet_length else ""
+            )
             citation = self._format_memory_citation(mem)
             formatted_memory_list.append(f"* {snippet} {citation}")
 
@@ -91,7 +113,8 @@ class ExplanationGenerator:
         format_kwargs = {
             "memories_formatted": memories_formatted,
             "memory_ids_list": memory_ids,
-            "inferred_relationship_text": inferred_relationship or "a conceptual resonance",
+            "inferred_relationship_text": inferred_relationship
+            or "a conceptual resonance",
         }
 
         try:

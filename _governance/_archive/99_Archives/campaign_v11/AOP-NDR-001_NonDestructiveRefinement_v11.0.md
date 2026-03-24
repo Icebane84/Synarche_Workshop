@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                 | Description       |
+| :---------------- | :---------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-NDR-001-NONDESTRUCTIVEREFINEMENT-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-NDR-001_NonDestructiveRefinement_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-NDR-001_NonDestructiveRefinement_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                     | The Standard.     |
+| **Domain**        | `GVRN`                                                | The Subject.      |
+| **Status**        | `[ACTIVE]`                                            | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
 
 ---
 

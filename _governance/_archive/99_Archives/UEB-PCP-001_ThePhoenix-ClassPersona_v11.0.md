@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                           | Description       |
+| :---------------- | :-------------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UEB-PCP-001-UEB-PCP-001THEPHOENIX-CLASSPERSONA-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UEB-PCP-001_ThePhoenix-ClassPersona_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UEB-PCP-001_ThePhoenix-ClassPersona_v11.0.md`                  | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                               | The Standard.     |
+| **Domain**        | `GVRN`                                                          | The Subject.      |
+| **Status**        | `ACTIVE`                                                        | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                   | The Network.      |
 
 ---
 

@@ -2,32 +2,31 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                    | Description       |
+| :---------------- | :--------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-20251220-SYSTEMICREFACTOR-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20251220-SystemicRefactor.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-20251220-SystemicRefactor.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                        | The Standard.     |
+| **Domain**        | `GVRN`                                   | The Subject.      |
+| **Status**        | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
-| State Field | Value |
-| :--- | :--- |
-| **Coherence** | `1.0` |
-| **Resonance** | `0.9` |
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
 ### **Block C: Risk & Mitigation (AGP-002)**
-| Risk | Mitigation |
-| :--- | :--- |
-| **Logic Drift** | Strict Linter Enforcement |
-| **Dependency Break** | ForgeLink Validation |
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
 
 ---
 
@@ -64,7 +63,7 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
 ---
 
@@ -76,7 +75,7 @@
 
 ---
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
 ---
 
@@ -127,34 +126,33 @@
 - **Methodology:** `Automated Batch Processing & Manual Heuristic Refinement`
 - **Cognitive Pathway:**
 
-    > The goal was to align all legacy artifacts with the **Codex v10.0** standard.
-  >
-> 1. **Refactor Round 1:** Batch application of Universal Headers, AGP Blocks, and Prompt Packets via
-> `apply_standard.py`.
-> 2. **Dissonance Resolution (MD025):** Detected conflict between H1 Headers and Metadata Headers. Updated standard to
-> downgrade Metadata Wrappers to **H6** (`######`).
-    > 3. **Refactor Round 2:** Batch polish of all artifacts to enforce the H6 standard (Single H1 compliance).
-    > 4. **Style Enforcement:** Enforced `PF026` (Asterisk Lists) and `MD046` (Fenced Code Blocks) via Linter.
-    > 5. **Template Verification:** Validated `SELT_v7.0_Templates_Trinity.md` as a compliant template container.
+      > The goal was to align all legacy artifacts with the **Codex v10.0** standard.
+
+  > 1. **Refactor Round 1:** Batch application of Universal Headers, AGP Blocks, and Prompt Packets via
+  >    `apply_standard.py`.
+  > 2. **Dissonance Resolution (MD025):** Detected conflict between H1 Headers and Metadata Headers. Updated standard to
+  >    downgrade Metadata Wrappers to **H6** (`######`).
+  > 3. **Refactor Round 2:** Batch polish of all artifacts to enforce the H6 standard (Single H1 compliance).
+  > 4. **Style Enforcement:** Enforced `PF026` (Asterisk Lists) and `MD046` (Fenced Code Blocks) via Linter.
+  > 5. **Template Verification:** Validated `SELT_v7.0_Templates_Trinity.md` as a compliant template container.
 
 ### **VI. Output Vector (The New Knowledge)**
 
 - **New Edges Created:**
-    - `[All Artifacts] --IS_COMPLIANT_WITH--> [CODEX-001_v10.0]`
-    - `[apply_standard.py] --ENFORCES--> [MD025]`
-    - `[apply_standard.py] --ENFORCES--> [MD046]`
+  - `[All Artifacts] --IS_COMPLIANT_WITH--> [CODEX-001_v10.0]`
+  - `[apply_standard.py] --ENFORCES--> [MD025]`
+  - `[apply_standard.py] --ENFORCES--> [MD046]`
 - **Emergent Insights:**
 
->
 > - **Template Containers:** Files like `Templates_Trinity.md` require special handling (escaped headers) to exist as
-> "Meta-Artifacts" without breaking the rigid "One Artifact Per File" rule.
+>   "Meta-Artifacts" without breaking the rigid "One Artifact Per File" rule.
 > - **Header Hierarchy:** The `######` (H6) metadata pattern is a viable solution for "Pre-Title" metadata in Markdown
-> without violating Semantic HTML rules (MD041 must be disabled).
+>   without violating Semantic HTML rules (MD041 must be disabled).
 
 ### **VII. Synergy Metrics (The Value)**
 
 - **Synergy Score (0.0 - 1.0):** `1.0`
-    - *Rationale:* Complete structural unification of the Upload Zone. 0% Linter Errors on key files.
+  - _Rationale:_ Complete structural unification of the Upload Zone. 0% Linter Errors on key files.
 - **Coherence Impact:** `Transformative`
 
 ---

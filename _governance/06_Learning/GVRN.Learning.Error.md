@@ -6,17 +6,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Learning.Error` | The Sovereign ID. |
-| **Official Name** | `GVRN.Learning.Error.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Learning.Error`           | The Sovereign ID. |
+| **Official Name** | `GVRN.Learning.Error.md`        | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -30,20 +27,20 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 
 ## 🏛️ Block B: Error Ledger
 
-| Timestamp  | ID          | Failure              | Root Cause                                    | Status      |
-| :--------- | :---------- | :------------------- | :-------------------------------------------- | :---------- |
-| 2026-03-16 | ERR-LOG-001 | Mypy Daemon Missing  | dmypy not found in PATH                       | [FIXED]     |
-| 2026-03-16 | ERR-LOG-002 | Link Fragmentation   | Broken links in Rosetta Stone Matrix          | [RESOLVING] |
-| 2026-03-17 | ERR-LOG-003 | Test Collection Fail | Absolute imports (src.) in tests              | [FIXED]     |
-| 2026-03-17 | ERR-LOG-004 | Runtime Signature    | Deprecated config injection in init           | [FIXED]     |
-| 2026-03-18 | ERR-LOG-005 | Pathway Dissonance   | MCP pointing to empty local scripts           | [FIXED]     |
-| 2026-03-18 | ERR-LOG-006 | Registry Decay       | Unregistered types (trunk/Java)               | [RESOLVED]  |
-| 2026-03-19 | ERR-LOG-007 | Metadata Omission    | `write_to_file` missing ArtifactMetadata      | [FIXED]     |
-| 2026-03-19 | ERR-LOG-008 | Content Dissonance   | `multi_replace` target mismatch               | [FIXED]     |
-| 2026-03-16 | ERR-LOG-009 | Reductive Synthesis  | Rule synthesis too concise; lost TIER context | [FIXED]     |
-| 2026-03-22 | ERR-LOG-010 | Header Dissonance    | Broken/Legacy UIP headers in core subsystems  | [FIXED]     |
-| 2026-03-22 | ERR-LOG-011 | Layout Inconsistency | Missing blank lines around headings/fences   | [REMEDIED]  |
-| 2026-03-23 | ERR-LOG-012 | Loom Regex Dissonance| Block boundary matched text inside tables     | [FIXED]     |
+| Timestamp  | ID          | Failure               | Root Cause                                    | Status      |
+| :--------- | :---------- | :-------------------- | :-------------------------------------------- | :---------- |
+| 2026-03-16 | ERR-LOG-001 | Mypy Daemon Missing   | dmypy not found in PATH                       | [FIXED]     |
+| 2026-03-16 | ERR-LOG-002 | Link Fragmentation    | Broken links in Rosetta Stone Matrix          | [RESOLVING] |
+| 2026-03-17 | ERR-LOG-003 | Test Collection Fail  | Absolute imports (src.) in tests              | [FIXED]     |
+| 2026-03-17 | ERR-LOG-004 | Runtime Signature     | Deprecated config injection in init           | [FIXED]     |
+| 2026-03-18 | ERR-LOG-005 | Pathway Dissonance    | MCP pointing to empty local scripts           | [FIXED]     |
+| 2026-03-18 | ERR-LOG-006 | Registry Decay        | Unregistered types (trunk/Java)               | [RESOLVED]  |
+| 2026-03-19 | ERR-LOG-007 | Metadata Omission     | `write_to_file` missing ArtifactMetadata      | [FIXED]     |
+| 2026-03-19 | ERR-LOG-008 | Content Dissonance    | `multi_replace` target mismatch               | [FIXED]     |
+| 2026-03-16 | ERR-LOG-009 | Reductive Synthesis   | Rule synthesis too concise; lost TIER context | [FIXED]     |
+| 2026-03-22 | ERR-LOG-010 | Header Dissonance     | Broken/Legacy UIP headers in core subsystems  | [FIXED]     |
+| 2026-03-22 | ERR-LOG-011 | Layout Inconsistency  | Missing blank lines around headings/fences    | [REMEDIED]  |
+| 2026-03-23 | ERR-LOG-012 | Loom Regex Dissonance | Block boundary matched text inside tables     | [FIXED]     |
 
 ---
 

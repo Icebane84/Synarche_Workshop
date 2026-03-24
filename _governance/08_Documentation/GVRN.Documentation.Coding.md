@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Documentation.Coding` | The Sovereign ID. |
+| Key               | Value                          | Description       |
+| :---------------- | :----------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Documentation.Coding`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Documentation.Coding.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
-| **Relations**     | `GOVERNS: ALL_DEVELOPMENT` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `GVRN`                         | The Subject.      |
+| **Status**        | `[CANONIZED]`                  | The Lifecycle.    |
+| **Relations**     | `GOVERNS: ALL_DEVELOPMENT`     | The Network.      |
 
 ---
 
@@ -31,11 +28,13 @@
 "Analyze Rigorously. Seek Clarity. Context is King."
 
 ### 1. Structure
+
 - Explicit strict mode.
 - Feature-based folders.
 - Barrel exports.
 
 ### 2. Logic
+
 - Dependency Injection for loose coupling.
 - DTOs for validation.
 - AST-based analysis for elegance scoring (soul.py).

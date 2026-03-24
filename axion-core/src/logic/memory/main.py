@@ -1,9 +1,20 @@
-"""CORE-LOGIC-MEM-MAIN-001 (main.py)
-Status: [ACTIVE]
-Ethos: "Kinetic entry point for Cognitive Memory operations."
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
-This script demonstrates the connection between the Axion NLP Engine (Cognition)
-and the Sovereign Memory System.
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-MEM-MAIN-001`     | The Sovereign ID. |
+| **Official Name**   | `main.py`                     | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-MEMORY`           | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Kinetic Entry (Law 28)**
+> Implemented from Blueprint `GVRN.REG.KineticEntry.md`.
+> Ethos: The Entry is Final; The Logic is Absolute.
 """
 
 import logging
@@ -26,7 +37,9 @@ except ImportError:
     except ImportError:
         logging.basicConfig(level=logging.ERROR)
         logger = logging.getLogger(__name__)
-        logger.error("Failed to import core logic components. Ensure pathing is correct.")
+        logger.error(
+            "Failed to import core logic components. Ensure pathing is correct."
+        )
         sys.exit(1)
 
 # Configure OMEGA logging
@@ -37,7 +50,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def run_cognitive_memory_test():
+def run_cognitive_memory_test() -> None:
     """Demonstrates the integration of NLP processing into the Memory Retrieval loop."""
     logger.info("Initializing Sovereign Cognitive Memory Bridge...")
 
@@ -59,7 +72,9 @@ def run_cognitive_memory_test():
         if results:
             logger.info(f"Found {len(results)} matches in Sovereign Memory.")
             for i, res in enumerate(results):
-                logger.info(f"Match {i + 1} [Score: {res.get('final_score', 'N/A')}]: {res.get('content')[:100]}...")
+                logger.info(
+                    f"Match {i + 1} [Score: {res.get('final_score', 'N/A')}]: {res.get('content')[:100]}..."
+                )
         else:
             logger.warning("No direct matches found. Triggering Uncertainty Protocol.")
             fallback = memory.handle_no_information(test_query, analysis)

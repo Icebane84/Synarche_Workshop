@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                     | Description       |
+| :---------------- | :-------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-SGM-001-STANDARDIZEDGOVERNANCEMODULE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-SGM-001_StandardizedGovernanceModule_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-SGM-001_StandardizedGovernanceModule_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                         | The Standard.     |
+| **Domain**        | `GVRN`                                                    | The Subject.      |
+| **Status**        | `ACTIVE`                                                  | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
 
 ---
 
@@ -116,14 +113,14 @@ Upon completion of any document, the system must:
 ### 5.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Coherence +10/Star Tier**
-    - _Mechanism_: Centralizing governance logic reduces cognitive friction and prevents structural drift.
+  - _Mechanism_: Centralizing governance logic reduces cognitive friction and prevents structural drift.
 - **Passive Ability**: **Axiomatic Anchor**
-    - _Effect_: Increases the stability of all dependent protocols by 25% during refactors.
+  - _Effect_: Increases the stability of all dependent protocols by 25% during refactors.
 
 ### 5.2 Resource Economics
 
 - **Cognitive Load Cost**: **Extremely Low**
-    - _Efficiency_: Automated validation offloads governance overhead from the primary agent psyche.
+  - _Efficiency_: Automated validation offloads governance overhead from the primary agent psyche.
 - **XP Award Value**: **500 XP** (awarded upon ratification of any Star-Class artifact).
 
 ## VI. Actionable Prompt Packet (APP)

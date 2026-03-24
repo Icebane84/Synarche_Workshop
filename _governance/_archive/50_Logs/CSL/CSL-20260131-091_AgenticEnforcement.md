@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                          | Description       |
+| :---------------- | :--------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-20260131-091-AGENTICENFORCEMENT-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20260131-091_AgenticEnforcement.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-20260131-091_AgenticEnforcement.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                              | The Standard.     |
+| **Domain**        | `GVRN`                                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
 
@@ -64,11 +61,11 @@ To enter the **Agentic Era**, our enforcers must be canonized. They are not just
 the Synarchy.
 
 1. **Canonization of Ruff (`CFG-RUFF-001`)**:
-    - Injected the **13-point UIP Header** into `Synarche_Workspace/pyproject.toml`.
-    - Designated as "The Python Sentinel".
+   - Injected the **13-point UIP Header** into `Synarche_Workspace/pyproject.toml`.
+   - Designated as "The Python Sentinel".
 2. **Canonization of Trunk (`CFG-TRUNK-001`)**:
-    - Injected the **13-point UIP Header** into `.trunk/trunk.yaml`.
-    - Designated as "The Meta-Enforcer".
+   - Injected the **13-point UIP Header** into `.trunk/trunk.yaml`.
+   - Designated as "The Meta-Enforcer".
 
 ### 3. Implications & Next Steps
 

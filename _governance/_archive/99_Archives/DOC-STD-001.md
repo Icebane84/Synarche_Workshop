@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-DOC-STD-001-001` | The Sovereign ID. |
-| **Official Name** | `DOC-STD-001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-DOC-STD-001-001`        | The Sovereign ID. |
+| **Official Name** | `DOC-STD-001.md`              | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -128,19 +125,19 @@ results in a **BLOCKER** status at the Quality Gate.
 
 - **GOVERNED_BY:**
 
-    [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+  [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
 
 - **ENFORCES:**
 
-    [AOP-PCDS-001 (Canonical Design)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-PCDS-001_PhoenixCanonicalDesignStandard.md)
+  [AOP-PCDS-001 (Canonical Design)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-PCDS-001_PhoenixCanonicalDesignStandard.md)
 
 - **FEEDS:**
 
-    [PRS-001 (Rosetta Stone)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/PRS-001_Phoenix_Rosetta_Stone.md)
+  [PRS-001 (Rosetta Stone)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/PRS-001_Phoenix_Rosetta_Stone.md)
 
 - **ROOTS:**
 
-    [AOP-VSI-001 (Structural Integrity)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-VSI-001_ValidateStructuralIntegrityProtocol_v2.1.md)
+  [AOP-VSI-001 (Structural Integrity)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-VSI-001_ValidateStructuralIntegrityProtocol_v2.1.md)
 
 **[ARTIFACT END]**
 

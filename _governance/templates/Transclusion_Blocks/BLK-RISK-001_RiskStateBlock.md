@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                  | Description       |
+| :---------------- | :------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-BLK-RISK-001-RISKSTATEBLOCK-001` | The Sovereign ID. |
-| **Official Name** | `BLK-RISK-001_RiskStateBlock.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Official Name** | `BLK-RISK-001_RiskStateBlock.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                      | The Standard.     |
+| **Domain**        | `GVRN`                                 | The Subject.      |
+| **Status**        | `[ACTIVE]`                             | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix`      | The Network.      |
 
 ---
 
@@ -56,9 +53,9 @@
 ## [Section Number]. The Risk State (Vector Analysis)
 
 - **Internal Risk ($\text{L}_{\text{Internal}}$):** [Score/10]
-    - _Analysis_: [Why is this score assigned?]
+  - _Analysis_: [Why is this score assigned?]
 - **External Risk ($\text{L}_{\text{External}}$):** [Score/10]
-    - _Analysis_: [Why is this score assigned?]
+  - _Analysis_: [Why is this score assigned?]
 - **Target State Vector ($\text{V}_{\text{Safe}}$):** $\langle 10, 10, 10, 10, 10 \rangle$
 - **Vector Breach Trigger:** [What specific condition triggers a Sentinel Intervention?]
 

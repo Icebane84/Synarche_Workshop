@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CSL.001.ChronosLock` | The Sovereign ID. |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CSL.001.ChronosLock`    | The Sovereign ID. |
 | **Official Name** | `GVRN.CSL.001.ChronosLock.md` | The Filename.     |
-| **Version**       | **v13.1 [LOCKED]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| **Version**       | **v13.1 [LOCKED]**            | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[CANONIZED]`                 | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -105,9 +102,9 @@
 
 - **Command**: `CMD: CHRONOS_LOCK --target "[Filename]"`
 - **Effect**:
-    1.  Calculates `SHA-256` of target file.
-    2.  Injects a `<!-- CHRONOS: [Hash] | [Timestamp] -->` comment at the bottom of the file.
-    3.  Updates the `Version` field in Block A to `v[X].1 [LOCKED]`.
+  1.  Calculates `SHA-256` of target file.
+  2.  Injects a `<!-- CHRONOS: [Hash] | [Timestamp] -->` comment at the bottom of the file.
+  3.  Updates the `Version` field in Block A to `v[X].1 [LOCKED]`.
 - **Cost**: `15 Cognitive Load`.
 - **Cooldown**: 5 Minutes (to prevent hash-spamming).
 - **XP Reward**: `+10 Order`.

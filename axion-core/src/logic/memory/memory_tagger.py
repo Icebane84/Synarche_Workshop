@@ -1,10 +1,20 @@
-"""CORE-LOGIC-MEM-TAGGER-001 (memory_tagger.py)
-Status: [CANONIZED]
-Genesis Stamp: 2026-03-07.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
- LOGIC-MEMORY-TAGGER: High-Fidelity Keyword & Entity Extraction
- v14.0 [OMEGA] - GGMA XIV Compliance
- [Chronos Lock: UIP-V13 - Sovereign Priority]
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-MEM-TAGGER-001`   | The Sovereign ID. |
+| **Official Name**   | `memory_tagger.py`            | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-MEMORY`           | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Tagging Integrity (Law 28)**
+> Implemented from Blueprint `GVRN.REG.TaggingIntegrity.md`.
+> Ethos: The Tag is Accurate; The Context is Truth.
 """
 
 import logging
@@ -191,7 +201,11 @@ class MemoryTagger:
     to memory content using the core NLP layer.
     """
 
-    def __init__(self, nlp_processor: Optional["NLPProcessor"] = None, stop_words: set | None = None):
+    def __init__(
+        self,
+        nlp_processor: Optional["NLPProcessor"] = None,
+        stop_words: set | None = None,
+    ):
         """Initializes the MemoryTagger.
 
         Args:
@@ -200,7 +214,9 @@ class MemoryTagger:
 
         """
         if nlp_processor is None:
-            log.warning("NLPProcessor not provided to MemoryTagger. Attempting lazy initialization if possible.")
+            log.warning(
+                "NLPProcessor not provided to MemoryTagger. Attempting lazy initialization if possible."
+            )
             # In a real system, we'd probably want to inject this, but for robustness:
             from ..nlp.nlp_engine import NLPProcessor as CoreNLP
 
@@ -233,7 +249,9 @@ class MemoryTagger:
             filtered_lemmas = [
                 lemma.lower()
                 for lemma in lemmas
-                if lemma.lower() not in self.stop_words and lemma not in string.punctuation and lemma.strip()
+                if lemma.lower() not in self.stop_words
+                and lemma not in string.punctuation
+                and lemma.strip()
             ]
         except Exception as e:
             log.error(f"Error during lemma filtering: {e}")

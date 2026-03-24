@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GUCA.Canonizer.Core` | The Sovereign ID. |
+| Key               | Value                    | Description       |
+| :---------------- | :----------------------- | :---------------- |
+| **Artifact ID**   | `GUCA.Canonizer.Core`    | The Sovereign ID. |
 | **Official Name** | `GUCA.Canonizer.Core.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| **Version**       | **v15.0 [OMEGA]**        | The Standard.     |
+| **Domain**        | `GVRN`                   | The Subject.      |
+| **Status**        | `[CANONIZED]`            | The Lifecycle.    |
 | **Relations**     | `INDEX_OF: 07_Canonizer` | The Network.      |
-
-
-
 
 ---
 
@@ -37,11 +34,11 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. |
-| `AOP.Canonizer.Core` | `UNLEASHES` | Provides the kinetic procedures for commands. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `AOP.Canonizer.Core`    | `UNLEASHES`       | Provides the kinetic procedures for commands.   |
 
 ---
 
@@ -53,9 +50,9 @@
 
 ## **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
 
@@ -71,16 +68,16 @@
 
 - **Intent**: Formally seal an artifact and transition it to a state of `[CANONIZED]`.
 - **Logic**:
-    1. Validates the existence of the target file.
-    2. Hands off to `AOP.Canonizer.Core` for 5-Gate verification.
-    3. Updates the `Artifact Inventory` and `Master Registry` upon success.
+  1. Validates the existence of the target file.
+  2. Hands off to `AOP.Canonizer.Core` for 5-Gate verification.
+  3. Updates the `Artifact Inventory` and `Master Registry` upon success.
 
 ## **II. Operational Logic**
 
-| Parameter | Type     | Description                                         | Required |
-| :-------- | :------- | :-------------------------------------------------- | :------- |
-| `--seed`  | `String` | The target filename or Artifact ID to be canonized. | Yes      |
-| `--force` | `Boolean`| Bypasses soft warnings (Dissonance < 0.2).         | No       |
+| Parameter | Type      | Description                                         | Required |
+| :-------- | :-------- | :-------------------------------------------------- | :------- |
+| `--seed`  | `String`  | The target filename or Artifact ID to be canonized. | Yes      |
+| `--force` | `Boolean` | Bypasses soft warnings (Dissonance < 0.2).          | No       |
 
 ## **III. Execution Hand-off**
 
@@ -91,10 +88,10 @@ When invoked, the command executes the underlying toolchain:
 
 ## **Actionable Prompt Packet (APP)**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: CANONIZE --seed [ID]` | Initiates the sealing of the specified artifact. | Truth Alignment |
-| `CMD: PROTOCOL_AUDIT` | Verifies adherence to the Canonization Gates. | Quality Assurance |
+| Command ID                  | Action                                           | Impact            |
+| :-------------------------- | :----------------------------------------------- | :---------------- |
+| `CMD: CANONIZE --seed [ID]` | Initiates the sealing of the specified artifact. | Truth Alignment   |
+| `CMD: PROTOCOL_AUDIT`       | Verifies adherence to the Canonization Gates.    | Quality Assurance |
 
 ---
 

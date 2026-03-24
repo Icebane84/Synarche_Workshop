@@ -4,15 +4,12 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.SPEC.ForgeTechnicalSpec` | The Sovereign ID. |
+| **Artifact ID**   | `ARCH.SPEC.ForgeTechnicalSpec`    | The Sovereign ID. |
 | **Official Name** | `ARCH.SPEC.ForgeTechnicalSpec.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `ARCH`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`     | The Network.      |
 
 ---
 
@@ -72,21 +69,21 @@
 ```typescript
 // Stored in PostgreSQL
 interface DissonanceQuest {
-    id: string; // DQUEST-SENTINEL-XXX
-    title: string;
-    description: string;
-    filePath: string;
-    lineNumber: number;
-    priority: number; // The Dissonance Score
-    status: "open" | "in_progress" | "completed";
-    xpReward: number;
+  id: string; // DQUEST-SENTINEL-XXX
+  title: string;
+  description: string;
+  filePath: string;
+  lineNumber: number;
+  priority: number; // The Dissonance Score
+  status: "open" | "in_progress" | "completed";
+  xpReward: number;
 }
 
 interface PlayerState {
-    userId: string;
-    xp: number;
-    level: number;
-    prestigeScore: number;
+  userId: string;
+  xp: number;
+  level: number;
+  prestigeScore: number;
 }
 ```
 

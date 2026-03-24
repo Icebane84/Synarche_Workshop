@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                        | Description       |
+| :---------------- | :----------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-ENTITY-SENTINEL-PRIME-001-THEETHICALGOVERNOR-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                            | The Standard.     |
+| **Domain**        | `GVRN`                                                       | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                   | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                | The Network.      |
 
 ---
 
@@ -80,15 +77,15 @@ _Ethical Alignment_ and _Safety_ in every decision Axion makes.
 
 - **GOVERNED_BY:**
 
-    [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+  [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
 
 - **EXECUTED_BY:**
 
-    [AOP-SENTINEL-SCAN-001 v2.1](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md)
+  [AOP-SENTINEL-SCAN-001 v2.1](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md)
 
 - **INTEGRATES:**
 
-    [CMD-PRG-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/CDL/CMD-PRG-001_ProactiveRiskGovernor_v5.0.md)
+  [CMD-PRG-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/CDL/CMD-PRG-001_ProactiveRiskGovernor_v5.0.md)
 
 **[ARTIFACT END]**
 

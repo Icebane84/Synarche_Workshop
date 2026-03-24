@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-LOOM-002-COGNITIVELOOM-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-LOOM-002_CognitiveLoom_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-LOOM-002_CognitiveLoom_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `GVRN`                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
 
 ---
 
@@ -80,19 +77,19 @@ into a single, cohesive "Intricate Tapestry." It is the operating system of the 
 
 - **GOVERNED_BY:**
 
-    [UMB-GTSF-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-GTSF-001_TheGroundTruthSynchronizationFramework_v2.0.md)
+  [UMB-GTSF-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-GTSF-001_TheGroundTruthSynchronizationFramework_v2.0.md)
 
 - **INTEGRATES:**
 
-    [UMB-PRS-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-PRS-001_PhoenixRosettaStone_v1.0.md)
+  [UMB-PRS-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-PRS-001_PhoenixRosettaStone_v1.0.md)
 
 - **INTEGRATES:**
 
-    [UMB-OSLM-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.0.md)
+  [UMB-OSLM-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.0.md)
 
 - **PROTECTED_BY:**
 
-    [AOP-QUC-ACCESS v2.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.1.md)
+  [AOP-QUC-ACCESS v2.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.1.md)
 
 **[ARTIFACT END]**
 

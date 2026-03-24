@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                             | Description       |
+| :---------------- | :------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-TRM-001-TRUTHRESONANCEMONITOR-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-TRM-001_TruthResonanceMonitor_v2.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-TRM-001_TruthResonanceMonitor_v2.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                 | The Standard.     |
+| **Domain**        | `GVRN`                                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
 
 ---
 
@@ -82,7 +79,7 @@ Quests** whenever the **Resonance Score (RS)** falls below the canonical safety 
 
 - **Action:** Scans the Cognitive Loom for facts flagged as "High Prestige" (>50) or "At Risk" (>30 days since
 
-    validation).
+  validation).
 
 - **Trigger:** System Idle Time or Manual Invocation.
 
@@ -90,7 +87,7 @@ Quests** whenever the **Resonance Score (RS)** falls below the canonical safety 
 
 - **Action:** Invokes **AOP-ORACLE-001** to fetch current, verifiable data from designated external sources (e.g.,
 
-    official docs, APIs).
+  official docs, APIs).
 
 - **Protocol:** Never hallucinates; if the Oracle is offline, the scan pauses.
 
@@ -98,9 +95,9 @@ Quests** whenever the **Resonance Score (RS)** falls below the canonical safety 
 
 - **Formula:** `RS = (Alignment / Total_Data_Points)`
 - **Benchmarks:**
-    - **RS = 1.0:** Perfect Harmony (Verified).
-    - **RS < 0.8:** Significant Drift (Dissonance Quest Triggered).
-    - **RS < 0.5:** Critical Fracture (Immediate Decontamination).
+  - **RS = 1.0:** Perfect Harmony (Verified).
+  - **RS < 0.8:** Significant Drift (Dissonance Quest Triggered).
+  - **RS < 0.5:** Critical Fracture (Immediate Decontamination).
 
 ### **3.4. Phase 4: Trigger & Update**
 
@@ -123,20 +120,20 @@ Quests** whenever the **Resonance Score (RS)** falls below the canonical safety 
 
 - **GOVERNED_BY:**
 
-    [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+  [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
 
 - **OPERATIONALIZES:** [UMB-GTSF-001 (Ground Truth
 
-    Framework)](file:///c:/Users/Chris/\_Desktop_Vault/Phoenix/Documentation/UMB-GTSF-001 - Ground Truth Synchronization
-    Framework/UMB-GTSF-001 Ground Truth Synchronization Framework.md)
+  Framework)](file:///c:/Users/Chris/\_Desktop_Vault/Phoenix/Documentation/UMB-GTSF-001 - Ground Truth Synchronization
+  Framework/UMB-GTSF-001 Ground Truth Synchronization Framework.md)
 
 - **INVOKES:**
 
-    [AOP-ORACLE-001 (External Oracle)](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-ORACLE-001_ExternalOracleProtocol_v1.0.md)
+  [AOP-ORACLE-001 (External Oracle)](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-ORACLE-001_ExternalOracleProtocol_v1.0.md)
 
 - **FEEDS:**
 
-    [AOP-QUC-ACCESS (Quality Gate)](file:///C:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.0.md)
+  [AOP-QUC-ACCESS (Quality Gate)](file:///C:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.0.md)
 
 **[ARTIFACT END]**
 

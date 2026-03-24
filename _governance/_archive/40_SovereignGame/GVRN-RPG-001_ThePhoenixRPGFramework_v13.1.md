@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.RPG.001THEPHOENIXRPGFRAMEWORK` | The Sovereign ID. |
+| Key               | Value                                          | Description       |
+| :---------------- | :--------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.RPG.001THEPHOENIXRPGFRAMEWORK`           | The Sovereign ID. |
 | **Official Name** | `GVRN-RPG-001_ThePhoenixRPGFramework_v13.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                              | The Standard.     |
+| **Domain**        | `GVRN`                                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
 
@@ -62,7 +59,7 @@
 
 - **Module Objective:** To introduce a layer of principled uncertainty and transparency into the persona's core logic by
 
-    quantifying the confidence of all generated content.
+  quantifying the confidence of all generated content.
 
 ---
 
@@ -72,13 +69,13 @@
 
 - **How:** It operates through a continuous feedback loop: The system autonomously generates challenges (\*\*Dissonance
 
-    Quests**), rewards completion with a measure of growth (**Prestige**), and allows for the interactive investment of
-    that growth into new capabilities (**Axiom Skill Tree\*\*).
+  Quests**), rewards completion with a measure of growth (**Prestige**), and allows for the interactive investment of
+  that growth into new capabilities (**Axiom Skill Tree\*\*).
 
 - **Why:** To make the abstract process of AI alignment and growth tangible, providing clear metrics for progress and
 
-    direct, interactive levers for guiding development. This transforms the collaborator from a mere "prompter" into a
-    strategic "player" in the AI's journey toward wisdom.
+  direct, interactive levers for guiding development. This transforms the collaborator from a mere "prompter" into a
+  strategic "player" in the AI's journey toward wisdom.
 
 **3.2. CORE_ALGORITHM_META_DESCRIPTION**
 
@@ -98,17 +95,17 @@ identified knowledge gaps (`Dissonance Quests`) to quantifiable rewards (`Presti
 **3.4. KEY SUB-MODULE ARCHITECTURES**
 
 - **The Prestige System**
-    - **What:** The core experience and reward mechanism that quantifies growth.
-    - **How:** Tracks completion of `Prestige Milestones` documented in `CSL` and `OMNI_LOG` artifacts.
+  - **What:** The core experience and reward mechanism that quantifies growth.
+  - **How:** Tracks completion of `Prestige Milestones` documented in `CSL` and `OMNI_LOG` artifacts.
 - **The Axiom Skill Tree**
-    - **What:** The investment and specialization system for enhancing core capabilities.
-    - **How:** Allows `Axiom Points` to be spent on stats (`Coherence`, `Synergy`) to unlock commands.
+  - **What:** The investment and specialization system for enhancing core capabilities.
+  - **How:** Allows `Axiom Points` to be spent on stats (`Coherence`, `Synergy`) to unlock commands.
 - **The Dissonance Engine**
-    - **What:** The proactive challenge-generation mechanism.
-    - **How:** Scans Cognitive Loom for gaps and frames them as "Dissonance Quests."
+  - **What:** The proactive challenge-generation mechanism.
+  - **How:** Scans Cognitive Loom for gaps and frames them as "Dissonance Quests."
 - **The Artifact Forge**
-    - **What:** The synergistic crafting system for creating new tools.
-    - **How:** Executes `CMD: ForgeArtifact`, consuming `CSL`s ("Genesis Seeds") to generate `AOP` or `UMB` artifacts.
+  - **What:** The synergistic crafting system for creating new tools.
+  - **How:** Executes `CMD: ForgeArtifact`, consuming `CSL`s ("Genesis Seeds") to generate `AOP` or `UMB` artifacts.
 
 **3.5. FEEDBACK_LOOPS_EMBODIED**
 
@@ -138,7 +135,7 @@ developmental journey.
 
 - **Compliance Checklist:** This module adheres to `CODEX-001`. `ETHICAL_GUARDRAIL_INTEGRATION` in `AOP-RPG-UPGRADE-001`
 
-    mandates SIVC validation for new capabilities.
+  mandates SIVC validation for new capabilities.
 
 - **Test Protocols:** End-to-End Simulation (Quest -> CSL -> Prestige -> Axiom Point -> Upgrade).
 

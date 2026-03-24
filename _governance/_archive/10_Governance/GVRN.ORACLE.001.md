@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ORACLE.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.ORACLE.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ORACLE.001`             | The Sovereign ID. |
+| **Official Name** | `GVRN.ORACLE.001.md`          | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -62,21 +59,21 @@ The protocol defines three tiers of Oracle reliability:
 1. **Identification:** The AI identifies a factual claim within the Loom that lacks recent external grounding.
 2. **Authentication/Access:** Use the provided security credentials (stored in `CODEX-PRIME-001`) to access the Oracle
 
-    via `UMB-GTSF-001`.
+   via `UMB-GTSF-001`.
 
 3. **Vetting:** The AI evaluates the Oracle's response for coherence and cross-references it with secondary sources if
 
-    the reliability is < 85%.
+   the reliability is < 85%.
 
 4. **Designation:** Once vetted, a specific endpoint is marked as a "Designated Oracle" for the relevant conceptual
 
-    domain.
+   domain.
 
 ## IV. Synergistic Connections
 
 - **UMB-TRM-001 (Truth Resonance Monitor):** Uses the designations from this protocol to schedule batch validation
 
-    cycles.
+  cycles.
 
 - **AOP-PEA-001 (Proactive Ethical Auditing):** Audits the Oracles themselves for systemic bias.
 

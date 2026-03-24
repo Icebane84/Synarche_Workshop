@@ -1,9 +1,20 @@
-"""CORE-LOGIC-MEM-RET-001 (retrieval_engine.py)
-Status: [CANONIZED]
-Genesis Stamp: 2026-03-07.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
- LOGIC-MEMORY-RETRIEVAL: The Adaptive Ranking Engine
- v14.0 [OMEGA] - Multi-Factor Weighted Scoring
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-MEM-RETR-001`     | The Sovereign ID. |
+| **Official Name**   | `retrieval_engine.py`           | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-MEMORY`           | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Adaptive Ranking (Law 28)**
+> Implemented from Blueprint `GVRN.REG.AdaptiveRanking.md`.
+> Ethos: The Ranking is Many; The Truth is One.
 """
 
 import datetime
@@ -59,7 +70,10 @@ class RetrievalEngine:
         logger.info("RetrievalEngine initialized with Adaptive Multi-Factor Weighting.")
 
     def score_memories(
-        self, query: str, candidates: list[dict[str, Any]], conversation_history: list[dict] | None = None
+        self,
+        query: str,
+        candidates: list[dict[str, Any]],
+        conversation_history: list[dict] | None = None,
     ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
         """Scores and ranks a list of candidate memories.
         :param query: The user's input query.
@@ -84,10 +98,14 @@ class RetrievalEngine:
                 # 2.1 Vector Synthesis (Ensure embeddings for external knowledge)
                 self._ensure_vector(mem)
 
-                scores = self._calculate_scores(mem, query_vec, query_lemmas, now, conversation_history)
+                scores = self._calculate_scores(
+                    mem, query_vec, query_lemmas, now, conversation_history
+                )
 
                 # Apply Weights
-                final_score = sum(self.weights.get(k, 0) * scores.get(k, 0) for k in self.weights)
+                final_score = sum(
+                    self.weights.get(k, 0) * scores.get(k, 0) for k in self.weights
+                )
 
                 # 2.2 Sovereign Boost (Obsidian Bias)
                 if mem.get("source") == "Obsidian":
@@ -98,7 +116,9 @@ class RetrievalEngine:
                 scored_memories.append(mem)
 
             # 3. Rank
-            ranked = sorted(scored_memories, key=lambda x: x["final_score"], reverse=True)
+            ranked = sorted(
+                scored_memories, key=lambda x: x["final_score"], reverse=True
+            )
 
             # 4. Generate Rewards (GGMA Insight/Coherence Standards)
             rewards = self._calculate_rpg_rewards(ranked)
@@ -118,7 +138,10 @@ class RetrievalEngine:
         # Only consider top 3 matches for rewards
         for res in results[:3]:
             # Insight reward for semantic accuracy
-            if res.get("score_details", {}).get("semantic", 0) > self.REWARD_THRESHOLD_SEMANTIC:
+            if (
+                res.get("score_details", {}).get("semantic", 0)
+                > self.REWARD_THRESHOLD_SEMANTIC
+            ):
                 rewards["insight_xp"] += self.REWARD_XP_INSIGHT
 
             # Coherence reward for frequent/stable memory
@@ -146,7 +169,9 @@ class RetrievalEngine:
         }
         return scores
 
-    def _score_semantic(self, mem: dict[str, Any], query_vec: list[float] | None) -> float:
+    def _score_semantic(
+        self, mem: dict[str, Any], query_vec: list[float] | None
+    ) -> float:
         """Calculates cosine similarity if vectors are available."""
         if not query_vec or not mem.get("vector"):
             return 0.0
@@ -193,7 +218,9 @@ class RetrievalEngine:
 
         if isinstance(last_time, str):
             try:
-                last_time = datetime.datetime.fromisoformat(last_time.replace("Z", "+00:00"))
+                last_time = datetime.datetime.fromisoformat(
+                    last_time.replace("Z", "+00:00")
+                )
             except ValueError:
                 return 0.5  # Default if parsing fails
 
@@ -212,14 +239,18 @@ class RetrievalEngine:
 
         return math.log1p(usage) / self.FREQUENCY_LOG_BASE
 
-    def _calculate_contextual_bonus(self, mem: dict[str, Any], history: list[dict] | None) -> float:
+    def _calculate_contextual_bonus(
+        self, mem: dict[str, Any], history: list[dict] | None
+    ) -> float:
         """Boosts score if memory overlaps with recent conversation topics."""
         if not history:
             return 0.1
 
         try:
             # Filter out None content and join
-            turns = [turn.get("content", turn.get("Input", "")) for turn in history[-3:]]
+            turns = [
+                turn.get("content", turn.get("Input", "")) for turn in history[-3:]
+            ]
             recent_text = " ".join([str(t) for t in turns if t is not None]).lower()
             mem_content = str(mem.get("content", "")).lower()
 
@@ -236,9 +267,13 @@ class RetrievalEngine:
         except Exception:
             return 0.1
 
-    def adjust_weights(self, success: bool, query: str = "", used_memories: list[dict] | None = None) -> None:
+    def adjust_weights(
+        self, success: bool, query: str = "", used_memories: list[dict] | None = None
+    ) -> None:
         """Adaptive learning: Shift Weights based on resonance."""
-        self.learning_data["query_patterns"][query] = self.learning_data["query_patterns"].get(query, 0) + 1
+        self.learning_data["query_patterns"][query] = (
+            self.learning_data["query_patterns"].get(query, 0) + 1
+        )
 
         if success:
             self.metrics["hits"] += 1
@@ -253,7 +288,9 @@ class RetrievalEngine:
             self.weights["keyword"] = max(0.05, self.weights["keyword"] - 0.005)
         else:
             self.metrics["misses"] += 1
-            self.learning_data["failed_retrievals"][query] = self.learning_data["failed_retrievals"].get(query, 0) + 1
+            self.learning_data["failed_retrievals"][query] = (
+                self.learning_data["failed_retrievals"].get(query, 0) + 1
+            )
 
             self.weights["keyword"] = min(0.4, self.weights["keyword"] + 0.01)
             self.weights["semantic"] = max(0.1, self.weights["semantic"] - 0.01)
@@ -264,7 +301,10 @@ class RetrievalEngine:
                 self.weights[k] /= total
 
         self.learning_data["weight_adjustments"].append(
-            {"timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(), "weights": self.weights.copy()}
+            {
+                "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                "weights": self.weights.copy(),
+            }
         )
 
     def _ensure_vector(self, mem: dict[str, Any]) -> None:

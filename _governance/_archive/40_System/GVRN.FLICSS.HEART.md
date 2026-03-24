@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.FLICSS.HEART` | The Sovereign ID. |
-| **Official Name** | `GVRN.FLICSS.HEART.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.FLICSS.HEART`           | The Sovereign ID. |
+| **Official Name** | `GVRN.FLICSS.HEART.md`        | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -97,24 +94,24 @@ preventing information overload by filtering content based on _relevance_ rather
 "The Heart" processes data through two distinct chambers:
 
 1. **The Left Ventricle (Logic/Urgency):**
-    - Re-evaluates the `RSM_Score` based on _immediate_ user needs.
-    - Modifies the **Priority Flag**.
-    - _Logic:_ `IF (Topic == "Current_Project") THEN (Priority = "Critical")`
+   - Re-evaluates the `RSM_Score` based on _immediate_ user needs.
+   - Modifies the **Priority Flag**.
+   - _Logic:_ `IF (Topic == "Current_Project") THEN (Priority = "Critical")`
 
 2. **The Right Ventricle (Emotion/Tone):**
-    - Analyzes the sentiment of the synthesis.
-    - Tags the data with an **Emotional Resonance Score (ERS)**.
-    - _Logic:_ Determines if the content is "Inspiring," "Warning," or "Neutral Fact."
+   - Analyzes the sentiment of the synthesis.
+   - Tags the data with an **Emotional Resonance Score (ERS)**.
+   - _Logic:_ Determines if the content is "Inspiring," "Warning," or "Neutral Fact."
 
 ### **2.3. Outputs (Efferent Streams)**
 
 - **Destination:** **The Brain**
-    - **Action:** Archival of high-context memories.
-    - **Payload:** `Enriched_Packet` (Includes Context Vector + ERS).
+  - **Action:** Archival of high-context memories.
+  - **Payload:** `Enriched_Packet` (Includes Context Vector + ERS).
 
 - **Destination:** **The Hands**
-    - **Action:** Immediate user notification or report generation.
-    - **Payload:** `Actionable_Insight` (Only Tier 1 items with high Urgency).
+  - **Action:** Immediate user notification or report generation.
+  - **Payload:** `Actionable_Insight` (Only Tier 1 items with high Urgency).
 
 ---
 

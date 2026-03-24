@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                            | Description       |
+| :---------------- | :----------------------------------------------- | :---------------- |
 | **Artifact ID**   | `ARCH-GVRN-PRIME-001-PRIMARYDIRECTIVE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-PRIME-001_PrimaryDirective_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `GVRN-PRIME-001_PrimaryDirective_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                | The Standard.     |
+| **Domain**        | `ARCH`                                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 ---
 
@@ -76,7 +73,7 @@ immutable boundaries for all autonomous actions within the Synarche.
 - **No Hallucination:** Testing must be contained within `localhost`.
 - **User Authorization:** Destructive or global system changes (system-wide installs, deletions) require a pause for
 
-    confirmation.
+  confirmation.
 
 ### 2.2. Standard Compliance
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                            | Description       |
+| :---------------- | :----------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-ESF-001_EpisemanticFramework_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-ESF-001_EpisemanticFramework_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                | The Standard.     |
+| **Domain**        | `GVRN`                                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 ---
 
@@ -81,11 +78,11 @@ semantic understanding of the user's intent.
 
 - **GOVERNED_BY:**
 
-    [UMB-LEX-001 v2.0](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-LEX-001_TheArchitecturalLexicon_v2.0.md)
+  [UMB-LEX-001 v2.0](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-LEX-001_TheArchitecturalLexicon_v2.0.md)
 
 - **ENFORCED_BY:**
 
-    [AOP-CC-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-CC-001_CrystallineCognition_v1.0.md)
+  [AOP-CC-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-CC-001_CrystallineCognition_v1.0.md)
 
 ---
 
@@ -94,11 +91,11 @@ semantic understanding of the user's intent.
 ## IV. Actionable Prompt Packet
 
 - **CMD: VERIFY_INTEGRITY**
-    - **Effect:** Verify artifact structure.
-    - **Impact:** Ensures compliance with Law 14.
+  - **Effect:** Verify artifact structure.
+  - **Impact:** Ensures compliance with Law 14.
 - **⚡ EXECUTE: IMPACT_ANALYSIS**
-    - **Effect:** Assess downstream effects.
-    - **Impact:** Prevents regressions.
+  - **Effect:** Assess downstream effects.
+  - **Impact:** Prevents regressions.
 
 > **[ARTIFACT END]**
 

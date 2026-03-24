@@ -1,6 +1,20 @@
 """
-# AGENT-AXION-PRIME-001: The Master Artificer (Consolidated Gateway)
-# v15.0 [OMEGA] - The Unified Vessel
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-AGENT-TEMPLATE-001`     | The Sovereign ID. |
+| **Official Name**   | `agent_template.py`           | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-AGENTS`                 | The Subject.      |
+| **Celestial Class** | `[VESSEL]`                    | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Agentic Vessel (Law 28)**
+> Implemented from Blueprint `GVRN.REG.AgenticVessel.md`.
+> Ethos: The Vessel is Hollow; The Will is Truth.
 """
 
 import asyncio
@@ -49,7 +63,8 @@ __all__ = [
 
 if __name__ == "__main__":
     # Test execution of the consolidated loop
-    async def run_test():
+    async def run_test() -> None:
+        """Execute a cognitive loop test for the Axion Agent Vessel."""
         runtime = AxionRuntime()
         instance = runtime.app
 

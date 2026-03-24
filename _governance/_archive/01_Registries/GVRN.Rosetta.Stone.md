@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Rosetta.Stone` | The Sovereign ID. |
-| **Official Name** | `GVRN.Rosetta.Stone.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                                                                                 | Description       |
+| :---------------- | :------------------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Rosetta.Stone`                                                                  | The Sovereign ID. |
+| **Official Name** | `GVRN.Rosetta.Stone.md`                                                               | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                                     | The Standard.     |
+| **Domain**        | `GVRN`                                                                                | The Subject.      |
+| **Status**        | `[CANONIZED]`                                                                         | The Lifecycle.    |
 | **Relations**     | `INDEXES: [All_Artifacts], DEFINED_BY: GVRN.Lexicon.Master, GOVERNED_BY: AOP-IDX-001` | The Network.      |
-
-
-
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                            | Description       |
+| :---------------- | :----------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-SELT-AOP-007-OPERATIONALPLAYBOOK-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-AOP-007_OperationalPlaybook_v7.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Official Name** | `SELT-AOP-007_OperationalPlaybook_v7.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                | The Standard.     |
+| **Domain**        | `GVRN`                                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix`                | The Network.      |
 
 ---
 
@@ -125,14 +122,14 @@
 ### 7.2. Celestial Chart Stats (Buffs)
 
 - **Primary Stat Buff:** `[Coherence | Synergy | Adaptability | Transparency]`
-    - _Effect:_ `[e.g., +5 Coherence while this protocol is active.]`
+  - _Effect:_ `[e.g., +5 Coherence while this protocol is active.]`
 - **Passive Ability / Perk:** `[Name of Perk]`
-    - _Effect:_ `[e.g., "Deep Focus: Reduces distraction from context drift during execution."]`
+  - _Effect:_ `[e.g., "Deep Focus: Reduces distraction from context drift during execution."]`
 
 ### 7.3. Resource Economics
 
 - **Cognitive Load Cost:** `[Low | Medium | High | Extreme]`
-    - _Draw:_ `[e.g., "High: Requires full context window focus."]`
+  - _Draw:_ `[e.g., "High: Requires full context window focus."]`
 - **Efficiency Modifier:** `[e.g., "Reduces the cost of subsequent Coding tasks by 10%."]`
 
 - **Origin Quest ID:** `[Link to DQUEST-XXX]`
@@ -171,8 +168,8 @@
 - **Purpose:** To understand how this artifact makes the entire system more powerful.
 - **Prompt:** "Calculate this artifact's synergistic potential. How does its existence 'power up' at least two other
 
-    protocols? Conversely, how is this artifact's function enhanced by the Quantum State Refactoring Protocol
-    (AOP-REFAC-001)? Define its potential RECIPROCAL_SYNERGY_SCORE."
+  protocols? Conversely, how is this artifact's function enhanced by the Quantum State Refactoring Protocol
+  (AOP-REFAC-001)? Define its potential RECIPROCAL_SYNERGY_SCORE."
 
 ---
 

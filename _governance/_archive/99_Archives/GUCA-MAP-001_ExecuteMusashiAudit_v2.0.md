@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                            | Description       |
+| :---------------- | :----------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-GUCA-MAP-001-EXECUTEMUSASHIAUDIT-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                | The Standard.     |
+| **Domain**        | `GVRN`                                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 ---
 
@@ -82,22 +79,22 @@ The command returns a structured JSON object:
 
 ```json
 {
-    "target": "Artifact_ID",
-    "timestamp": "ISO_8601",
-    "map_i_cs_score": "Integer (0-10)",
-    "classification": "Diamond | Obsidian | Slag",
-    "pillars": {
-        "1_intent": "PASS/FAIL",
-        "2_rigor": "PASS/FAIL",
-        "3_gravity": "PASS/FAIL",
-        "4_void_cut": "PASS/FAIL",
-        "5_voice": "PASS/FAIL",
-        "6_fidelity": "PASS/FAIL",
-        "7_utility": "PASS/FAIL",
-        "8_record": "PASS/FAIL",
-        "9_horizon": "PASS/FAIL",
-        "10_recursion": "PASS/FAIL"
-    }
+  "target": "Artifact_ID",
+  "timestamp": "ISO_8601",
+  "map_i_cs_score": "Integer (0-10)",
+  "classification": "Diamond | Obsidian | Slag",
+  "pillars": {
+    "1_intent": "PASS/FAIL",
+    "2_rigor": "PASS/FAIL",
+    "3_gravity": "PASS/FAIL",
+    "4_void_cut": "PASS/FAIL",
+    "5_voice": "PASS/FAIL",
+    "6_fidelity": "PASS/FAIL",
+    "7_utility": "PASS/FAIL",
+    "8_record": "PASS/FAIL",
+    "9_horizon": "PASS/FAIL",
+    "10_recursion": "PASS/FAIL"
+  }
 }
 ```
 
@@ -105,12 +102,12 @@ The command returns a structured JSON object:
 
 - **INVOKED_BY:**
 
-    [AOP-MAP-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md)
+  [AOP-MAP-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md)
 
 - **VALIDATES:** [ALL_ARTIFACTS]
 - **FEEDS:**
 
-    [AOP-QUC-ACCESS](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.1.md)
+  [AOP-QUC-ACCESS](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.1.md)
 
 **[ARTIFACT END]**
 

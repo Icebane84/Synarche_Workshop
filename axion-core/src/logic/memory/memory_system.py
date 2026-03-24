@@ -1,10 +1,22 @@
-"""CORE-LOGIC-MEMORY-001 (memory_system.py)
-Status: [CANONIZED]
-Genesis Stamp: 2026-03-07.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
- LOGIC-MEMORY-SYSTEM: The Cognitive Repository (Axion Memory Layer)
- v14.0 [OMEGA] - PostgreSQL & Cognitive Lifecycle Integration
+| Key               | Value                          | Description       |
+| :---------------- | :----------------------------- | :---------------- |
+| **Artifact ID**   | `CORE-LOGIC-MEMORY-001`         | The Sovereign ID. |
+| **Official Name** | `memory_system.py`             | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE-LOGIC`                   | The Subject.      |
+| **Evolution**     | `Cognitive Repository`         | The Alignment.    |
+| **Status (State)**| `[CANONIZED]`                  | The Lifecycle.    |
+| **Celestial Class**| `[STAR]`                      | The Tier.         |
+| **Relations**     | `IDENTITY: High Priestess`    | The Network.      |
+| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
+| **Genesis Stamp** | `2026-03-07`                   | Creation Date.    |
 
+**The Spirit Bomb Axiom: Cognitive Persistence (Law 28)**
+> Implemented from Blueprint `GVRN.REG.CognitivePersistence.md`.
+> Ethos: Memories are the Ledger of Existence.
 """
 
 import array
@@ -28,7 +40,7 @@ except ImportError:
 
 try:
     import numpy as np
-    
+
     HAS_NUMPY = True
 except ImportError:
     HAS_NUMPY = False
@@ -73,14 +85,14 @@ load_dotenv(DOTENV_PATH)
 
 class MemoryProtocols:
     """OMEGA Standard Global Thresholds for Cognitive Lifecycle."""
-    
+
     # Transition Thresholds
     THRESHOLD_FADING = 0.2
     THRESHOLD_CONSOLIDATED = 0.8
     MIN_USAGE_CONSOLIDATED = 10
     THRESHOLD_ARCHIVED = 0.05
     THRESHOLD_REACTIVATE = 0.3
-    
+
     # Layer Definitions
     LAYER_GEMS = 1
     LAYER_KINETIC = 2
@@ -99,15 +111,20 @@ class GemMemoryAgent:
     def __init__(self, system_reference: "MemorySystem") -> None:
         self.system = system_reference
 
-    def gemify(self, entry_id: int, insight_label: str, importance: float = 1.0) -> bool:
+    def gemify(
+        self, entry_id: int, insight_label: str, importance: float = 1.0
+    ) -> bool:
         """Canonize a memory entry into an L1 Gem."""
         if not self.system.storage:
             return False
-        
+
         try:
             # Update memory_layer in main entry
-            self.system.storage.update_memory(entry_id, {"memory_layer": MemorySystem.LAYER_GEMS, "activation_score": 1.0})
-            
+            self.system.storage.update_memory(
+                entry_id,
+                {"memory_layer": MemorySystem.LAYER_GEMS, "activation_score": 1.0},
+            )
+
             # Add to memory_gems table
             conn = getattr(self.system.storage, "conn", None)
             if conn:
@@ -116,12 +133,12 @@ class GemMemoryAgent:
                     if isinstance(self.system.storage, PostgresMemoryStorage):
                         cur.execute(
                             "INSERT INTO memory_gems (entry_id, insight_label, importance) VALUES (%s, %s, %s) ON CONFLICT (entry_id) DO UPDATE SET importance = EXCLUDED.importance",
-                            (entry_id, insight_label, importance)
+                            (entry_id, insight_label, importance),
                         )
                     else:  # SQLite
                         cur.execute(
                             "INSERT OR REPLACE INTO memory_gems (entry_id, insight_label, importance) VALUES (?, ?, ?)",
-                            (entry_id, insight_label, importance)
+                            (entry_id, insight_label, importance),
                         )
                 return True
             return False
@@ -153,7 +170,11 @@ class MemoryEntry:
         """Applies time-based decay to the activation score."""
         if self.state in ["Active", "Fading", "Consolidated"]:
             # Decay based on time since last retrieval
-            last_time = self.last_retrieved or self.created_at or datetime.datetime.now(datetime.timezone.utc)
+            last_time = (
+                self.last_retrieved
+                or self.created_at
+                or datetime.datetime.now(datetime.timezone.utc)
+            )
             if last_time.tzinfo is None:
                 last_time = last_time.replace(tzinfo=datetime.timezone.utc)
             delta = datetime.datetime.now(datetime.timezone.utc) - last_time
@@ -162,12 +183,14 @@ class MemoryEntry:
             # Relevance slows decay
             effective_rate = base_rate / (1.0 + self.relevance)
             decay_factor = (1 - effective_rate) ** days
-            self.activation_score = max(0.0, min(1.0, self.activation_score * decay_factor))
+            self.activation_score = max(
+                0.0, min(1.0, self.activation_score * decay_factor)
+            )
 
     def transition(self) -> None:
         """Transitions memory state and layer based on activation and usage (OMEGA v15.0)."""
         old_state = self.state
-        
+
         # 1. Active State Management
         if self.state == "Active":
             self._handle_active_transition()
@@ -178,11 +201,14 @@ class MemoryEntry:
             self._handle_consolidated_transition()
         elif self.state == "Archived":
             self._handle_archived_transition()
-        
+
         if self.state != old_state:
-            logger.info(f"Memory {self.id} transitioned: {old_state} -> {self.state} (Score: {self.activation_score:.2f})")
+            logger.info(
+                f"Memory {self.id} transitioned: {old_state} -> {self.state} (Score: {self.activation_score:.2f})"
+            )
 
     def _handle_active_transition(self) -> None:
+        """Process transitions for memories in the 'Active' state."""
         if self.activation_score < MemoryProtocols.THRESHOLD_FADING:
             self.state = "Fading"
         elif (
@@ -194,16 +220,19 @@ class MemoryEntry:
                 self.layer = MemoryProtocols.LAYER_SEMANTIC
 
     def _handle_fading_transition(self) -> None:
+        """Process transitions for memories in the 'Fading' state."""
         if self.activation_score < MemoryProtocols.THRESHOLD_ARCHIVED:
             self.state = "Archived"
         elif self.activation_score > MemoryProtocols.THRESHOLD_REACTIVATE:
             self.state = "Active"
 
     def _handle_consolidated_transition(self) -> None:
+        """Process transitions for memories in the 'Consolidated' state."""
         if self.activation_score < (MemoryProtocols.THRESHOLD_FADING * 1.5):
             self.state = "Fading"
 
     def _handle_archived_transition(self) -> None:
+        """Process transitions for memories in the 'Archived' state."""
         if self.activation_score > MemoryProtocols.THRESHOLD_REACTIVATE:
             self.state = "Active"
 
@@ -215,30 +244,42 @@ class MemoryStorage(ABC):
 
     @abstractmethod
     def add_memory(self, entry: dict[str, Any]) -> int:
+        """Persist a new memory entry. Returns the unique ID (int)."""
         pass
 
     @abstractmethod
     def retrieve_memories(self, query: str, limit: int) -> list[dict[str, Any]]:
+        """Perform a keyword-based retrieval of memories."""
         pass
 
     @abstractmethod
     def vector_search(self, vector: list[float], limit: int) -> list[dict[str, Any]]:
+        """Perform a semantic search using cosine similarity on embeddings."""
         pass
 
     @abstractmethod
-    def add_soft_link(self, source_id: str, target_id: str, rel_type: str, initial_strength: str = "Weak") -> bool:
+    def add_soft_link(
+        self,
+        source_id: str,
+        target_id: str,
+        rel_type: str,
+        initial_strength: str = "Weak",
+    ) -> bool:
         """Add a bidirectional soft link between two memory entries."""
 
     @abstractmethod
     def update_memory(self, memory_id: int, updates: dict[str, Any]) -> bool:
+        """Update fields of an existing memory. Returns success status."""
         pass
 
     @abstractmethod
     def boost_access(self, ids: list[int]) -> None:
+        """Increase usage count and activation score for specified memories."""
         pass
 
     @abstractmethod
     def get_all_active(self) -> list[dict[str, Any]]:
+        """Retrieve all memories currently in a non-archived state."""
         pass
 
 
@@ -264,6 +305,7 @@ class PostgresMemoryStorage(MemoryStorage):
             return None
 
     def _ensure_tables(self) -> None:
+        """Initialize the PostgreSQL schema with vector support and relational tables."""
         if not self.conn:
             return
         try:
@@ -272,7 +314,9 @@ class PostgresMemoryStorage(MemoryStorage):
                 try:
                     cur.execute("CREATE EXTENSION IF NOT EXISTS vector;")
                 except Exception:
-                    logger.warning("pgvector extension not available. Falling back to FLOAT[].")
+                    logger.warning(
+                        "pgvector extension not available. Falling back to FLOAT[]."
+                    )
                     self.conn.rollback()
 
                 # 2. Ensure tables exist
@@ -319,7 +363,9 @@ class PostgresMemoryStorage(MemoryStorage):
                 """)
                 # Ensure memory_layer exists (OMNI-V14 Migration)
                 try:
-                    cur.execute("ALTER TABLE memory_entries ADD COLUMN IF NOT EXISTS memory_layer INTEGER DEFAULT 2;")
+                    cur.execute(
+                        "ALTER TABLE memory_entries ADD COLUMN IF NOT EXISTS memory_layer INTEGER DEFAULT 2;"
+                    )
                 except Exception:
                     self.conn.rollback()
                     # Fallback for older PG versions
@@ -342,7 +388,9 @@ class PostgresMemoryStorage(MemoryStorage):
                     )
                 except Exception:
                     self.conn.rollback()
-                    logger.debug("Native vector type upgrade skipped (pgvector missing).")
+                    logger.debug(
+                        "Native vector type upgrade skipped (pgvector missing)."
+                    )
 
             self.conn.commit()
         except Exception:
@@ -352,6 +400,7 @@ class PostgresMemoryStorage(MemoryStorage):
             self.conn = None
 
     def add_memory(self, entry: dict[str, Any]) -> int:
+        """Persist a memory entry to PostgreSQL and return its serial ID."""
         if not self.conn:
             return -1
         try:
@@ -377,6 +426,7 @@ class PostgresMemoryStorage(MemoryStorage):
             return -1
 
     def retrieve_memories(self, query: str, limit: int) -> list[dict[str, Any]]:
+        """Retrieve memories matching a keyword pattern from PostgreSQL."""
         if not self.conn:
             return []
         try:
@@ -391,6 +441,7 @@ class PostgresMemoryStorage(MemoryStorage):
             return []
 
     def vector_search(self, vector: list[float], limit: int) -> list[dict[str, Any]]:
+        """Perform a semantic vector search in PostgreSQL using the <=> operator."""
         if not self.conn:
             return []
         try:
@@ -415,7 +466,10 @@ class PostgresMemoryStorage(MemoryStorage):
             keys = updates.keys()
             set_clause = ", ".join([f"{k} = %s" for k in keys])
             with self.conn.cursor() as cur:
-                cur.execute(f"UPDATE memory_entries SET {set_clause} WHERE id = %s", (*updates.values(), memory_id))
+                cur.execute(
+                    f"UPDATE memory_entries SET {set_clause} WHERE id = %s",
+                    (*updates.values(), memory_id),
+                )
             self.conn.commit()
             return True
         except Exception:
@@ -424,6 +478,7 @@ class PostgresMemoryStorage(MemoryStorage):
             return False
 
     def boost_access(self, ids: list[int]) -> None:
+        """Atomically increment usage counts and activation scores in PostgreSQL."""
         if not self.conn or not ids:
             return
         try:
@@ -438,7 +493,13 @@ class PostgresMemoryStorage(MemoryStorage):
             if self.conn:
                 self.conn.rollback()
 
-    def add_soft_link(self, source_id: str, target_id: str, rel_type: str, initial_strength: str = "Weak") -> bool:
+    def add_soft_link(
+        self,
+        source_id: str,
+        target_id: str,
+        rel_type: str,
+        initial_strength: str = "Weak",
+    ) -> bool:
         """Add a soft link (association) between two memories in Postgres."""
         if not self.conn:
             return False
@@ -457,6 +518,7 @@ class PostgresMemoryStorage(MemoryStorage):
             return False
 
     def get_all_active(self) -> list[dict[str, Any]]:
+        """Retrieve all non-archived memory entries from the PostgreSQL repository."""
         if not self.conn:
             return []
         try:
@@ -484,6 +546,7 @@ class SQLiteMemoryStorage(MemoryStorage):
         self._ensure_tables()
 
     def _ensure_tables(self) -> None:
+        """Initialize the local SQLite schema with virtual vector tables support."""
         try:
             with self.conn:
                 self.conn.execute("""
@@ -547,7 +610,9 @@ class SQLiteMemoryStorage(MemoryStorage):
                 """)
                 # Ensure memory_layer exists (SQLite Migration)
                 try:
-                    self.conn.execute("ALTER TABLE memory_entries ADD COLUMN memory_layer INTEGER DEFAULT 2;")
+                    self.conn.execute(
+                        "ALTER TABLE memory_entries ADD COLUMN memory_layer INTEGER DEFAULT 2;"
+                    )
                 except sqlite3.OperationalError:
                     pass  # Column already exists
         except Exception:
@@ -578,10 +643,13 @@ class SQLiteMemoryStorage(MemoryStorage):
 
                 # 2. Native Vector Entry (The True Loom integration)
                 vector_data = entry.get("vector")
-                if vector_data and len(vector_data) == self.VECTOR_DIM_OG:  # Legacy hardcoded for now
+                if (
+                    vector_data and len(vector_data) == self.VECTOR_DIM_OG
+                ):  # Legacy hardcoded for now
                     vec_blob = array.array("f", vector_data).tobytes()
                     self.conn.execute(
-                        "INSERT INTO vec_memory_entries(id, embedding) VALUES (?, ?)", (memory_id, vec_blob)
+                        "INSERT INTO vec_memory_entries(id, embedding) VALUES (?, ?)",
+                        (memory_id, vec_blob),
                     )
 
                 return int(memory_id) if memory_id is not None else -1
@@ -590,6 +658,7 @@ class SQLiteMemoryStorage(MemoryStorage):
             return -1
 
     def retrieve_memories(self, query: str, limit: int) -> list[dict[str, Any]]:
+        """Perform a standard SQL LIKE search across the SQLite memory repository."""
         try:
             # Native SQLite keyword search (fallback/base)
             cur = self.conn.execute(
@@ -613,7 +682,9 @@ class SQLiteMemoryStorage(MemoryStorage):
         """Perform semantic search using SQLite-vec or fallback to numpy cosine similarity."""
         try:
             if len(vector) != self.VECTOR_DIM_OG:
-                logger.warning(f"Vector search failed: dimension mismatch ({len(vector)} != {self.VECTOR_DIM_OG})")
+                logger.warning(
+                    f"Vector search failed: dimension mismatch ({len(vector)} != {self.VECTOR_DIM_OG})"
+                )
                 return []
 
             if HAS_SQLITE_VEC:
@@ -630,7 +701,10 @@ class SQLiteMemoryStorage(MemoryStorage):
                 # 2. Fetch full memory details
                 ids = [r["id"] for r in vec_results]
                 placeholders = ",".join(["?"] * len(ids))
-                cur = self.conn.execute(f"SELECT * FROM memory_entries WHERE id IN ({placeholders})", tuple(ids))
+                cur = self.conn.execute(
+                    f"SELECT * FROM memory_entries WHERE id IN ({placeholders})",
+                    tuple(ids),
+                )
                 rows = cur.fetchall()
 
                 # Reconstruct and map distances
@@ -645,17 +719,19 @@ class SQLiteMemoryStorage(MemoryStorage):
                         results.append(d)
 
                 return sorted(results, key=lambda x: x.get("semantic_distance", 1.0))
-            
+
             # --- NUMPY FALLBACK (The True Loom / Intuition Engine script) ---
             if HAS_NUMPY:
-                cur = self.conn.execute("SELECT * FROM memory_entries WHERE state != 'Archived' AND vector IS NOT NULL")
+                cur = self.conn.execute(
+                    "SELECT * FROM memory_entries WHERE state != 'Archived' AND vector IS NOT NULL"
+                )
                 rows = cur.fetchall()
-                
+
                 query_vec = np.array(vector, dtype=np.float32)
                 query_norm = np.linalg.norm(query_vec)
                 if query_norm == 0:
                     return []
-                
+
                 results = []
                 for row in rows:
                     d = dict(row)
@@ -663,14 +739,16 @@ class SQLiteMemoryStorage(MemoryStorage):
                         mem_vec_data = json.loads(d["vector"]) if d["vector"] else None
                         if not mem_vec_data or len(mem_vec_data) != self.VECTOR_DIM_OG:
                             continue
-                            
+
                         mem_vec = np.array(mem_vec_data, dtype=np.float32)
                         mem_norm = np.linalg.norm(mem_vec)
                         if mem_norm == 0:
                             continue
-                            
+
                         # Cosine similarity (1.0 = identical, -1.0 = opposite)
-                        similarity = np.dot(query_vec, mem_vec) / (query_norm * mem_norm)
+                        similarity = np.dot(query_vec, mem_vec) / (
+                            query_norm * mem_norm
+                        )
                         # Convert to distance for consistency (0.0 = identical, 2.0 = opposite)
                         distance = 1.0 - similarity
                         d["semantic_distance"] = float(distance)
@@ -678,15 +756,19 @@ class SQLiteMemoryStorage(MemoryStorage):
                         d["vector"] = mem_vec_data
                         results.append(d)
                     except Exception as e:
-                        logger.warning(f"Error computing numpy similarity for memory {d['id']}: {e}")
-                        
+                        logger.warning(
+                            f"Error computing numpy similarity for memory {d['id']}: {e}"
+                        )
+
                 # Sort by smallest distance (highest similarity)
                 results.sort(key=lambda x: x.get("semantic_distance", 1.0))
                 return results[:limit]
-            
-            logger.warning("Neither sqlite-vec nor numpy is available for vector search.")
+
+            logger.warning(
+                "Neither sqlite-vec nor numpy is available for vector search."
+            )
             return []
-            
+
         except Exception:
             logger.exception("SQLite vector search (fallback) failed")
             return []
@@ -703,7 +785,8 @@ class SQLiteMemoryStorage(MemoryStorage):
             set_clause = ", ".join([f"{k} = ?" for k in keys])
             with self.conn:
                 self.conn.execute(
-                    f"UPDATE memory_entries SET {set_clause} WHERE id = ?", (*updates.values(), memory_id)
+                    f"UPDATE memory_entries SET {set_clause} WHERE id = ?",
+                    (*updates.values(), memory_id),
                 )
             return True
         except Exception:
@@ -711,6 +794,7 @@ class SQLiteMemoryStorage(MemoryStorage):
             return False
 
     def boost_access(self, ids: list[int]) -> None:
+        """Increment usage and activation scores for the specified SQLite entry IDs."""
         if not ids:
             return
         try:
@@ -723,7 +807,13 @@ class SQLiteMemoryStorage(MemoryStorage):
         except Exception:
             logger.exception("SQLite boost failed")
 
-    def add_soft_link(self, source_id: str, target_id: str, rel_type: str, initial_strength: str = "Weak") -> bool:
+    def add_soft_link(
+        self,
+        source_id: str,
+        target_id: str,
+        rel_type: str,
+        initial_strength: str = "Weak",
+    ) -> bool:
         """Add a soft link (association) between two memories in SQLite."""
         try:
             with self.conn:
@@ -737,8 +827,11 @@ class SQLiteMemoryStorage(MemoryStorage):
             return False
 
     def get_all_active(self) -> list[dict[str, Any]]:
+        """Return all SQLite memory entries currently in non-archived states."""
         try:
-            cur = self.conn.execute("SELECT * FROM memory_entries WHERE state != 'Archived'")
+            cur = self.conn.execute(
+                "SELECT * FROM memory_entries WHERE state != 'Archived'"
+            )
             rows = cur.fetchall()
             results = []
             for row in rows:
@@ -765,7 +858,7 @@ class MemorySystem:
     THRESHOLD_REACTIVATE = MemoryProtocols.THRESHOLD_REACTIVATE
     RECENCY_HALFLIFE = MemoryProtocols.RECENCY_HALFLIFE
     COHERENCE_SYNC_THRESHOLD = MemoryProtocols.COHERENCE_SYNC_THRESHOLD
-    
+
     # Layer Constants
     LAYER_GEMS = MemoryProtocols.LAYER_GEMS
     LAYER_KINETIC = MemoryProtocols.LAYER_KINETIC
@@ -774,10 +867,10 @@ class MemorySystem:
     LAYER_META = MemoryProtocols.LAYER_META
 
     def __init__(
-        self, 
-        db_config: dict[str, Any] | None = None, 
-        db_path: str | None = None, 
-        obsidian_bridge: Any | None = None
+        self,
+        db_config: dict[str, Any] | None = None,
+        db_path: str | None = None,
+        obsidian_bridge: Any | None = None,
     ) -> None:
         # 1. Initialize Storage (Polymorphic)
         self.params = db_config or {}
@@ -791,23 +884,36 @@ class MemorySystem:
                 self.storage = PostgresMemoryStorage(self.params)
                 logger.info("Using PostgreSQL storage.")
             except Exception:
-                logger.warning("PostgreSQL initialization failed. Falling back to default SQLite.")
+                logger.warning(
+                    "PostgreSQL initialization failed. Falling back to default SQLite."
+                )
                 self.storage = None
 
         if not self.storage:
             # Sovereign SQLite path resolution (OMEGA v15.0)
             # Prioritize 'data/' for canonical knowledge base
-            data_db = r"c:\Users\Chris\Synarche_Workspace\axion-core\data\axion_memory.db"
-            storage_db = r"c:\Users\Chris\Synarche_Workspace\axion-core\storage\axion_memory.db"
-            
-            final_db_path = db_path or (data_db if os.path.exists(data_db) else storage_db)
+            data_db = (
+                r"c:\Users\Chris\Synarche_Workspace\axion-core\data\axion_memory.db"
+            )
+            storage_db = (
+                r"c:\Users\Chris\Synarche_Workspace\axion-core\storage\axion_memory.db"
+            )
+
+            final_db_path = db_path or (
+                data_db if os.path.exists(data_db) else storage_db
+            )
             os.makedirs(os.path.dirname(final_db_path), exist_ok=True)
             self.storage = SQLiteMemoryStorage(final_db_path)
             logger.info(f"Using SQLite storage at {final_db_path}")
 
         # 2. Sovereign Memory Path (OMEGA v15.0 Pathing)
-        self.sovereign_memory_path = WORKSPACE_ROOT / "_governance" / "06_Learning" / "GVRN.Learning.Evolution.md"
-        
+        self.sovereign_memory_path = (
+            WORKSPACE_ROOT
+            / "_governance"
+            / "06_Learning"
+            / "GVRN.Learning.Evolution.md"
+        )
+
         self.cognition: AxionCognition | None = None
         self.retriever: RetrievalEngine | None = None
         self.associations: AssociationManager | None = None
@@ -850,7 +956,11 @@ class MemorySystem:
             return -1
 
         try:
-            vector = self.cognition.process(content).get("vector") if self.cognition else None
+            vector = (
+                self.cognition.process(content).get("vector")
+                if self.cognition
+                else None
+            )
             entry = {
                 "content": content,
                 "domain": domain,
@@ -860,7 +970,7 @@ class MemorySystem:
                 "vector": vector,
                 "source": source,
                 "memory_layer": layer,
-                "is_sovereign": (layer == MemorySystem.LAYER_SOVEREIGN)
+                "is_sovereign": (layer == MemorySystem.LAYER_SOVEREIGN),
             }
             # Automatically detect emotions and add to tags
             if self.emotions:
@@ -874,7 +984,9 @@ class MemorySystem:
             if memory_id == -1:
                 return -1
 
-            self.log_experience("MEMORY_ADD", "MemorySystem", {"id": memory_id, "domain": domain}, 0.1)
+            self.log_experience(
+                "MEMORY_ADD", "MemorySystem", {"id": memory_id, "domain": domain}, 0.1
+            )
 
             # Trigger automatic linking
             if self.associations:
@@ -886,15 +998,23 @@ class MemorySystem:
                     loop = asyncio.get_event_loop()
                     event_type = "MEMORY_ADD"
                     desc = f"New memory added to {domain} layer {layer}."
-                    
+
                     if loop.is_running():
-                        _ = loop.create_task(insforge.log_event(
-                            type=event_type,
-                            description=desc,
-                            payload={"id": memory_id, "domain": domain, "layer": layer}
-                        ))
+                        _ = loop.create_task(
+                            insforge.log_event(
+                                type=event_type,
+                                description=desc,
+                                payload={
+                                    "id": memory_id,
+                                    "domain": domain,
+                                    "layer": layer,
+                                },
+                            )
+                        )
                 except Exception as e:
-                    logger.debug(f"InsForge recording deferred for memory {memory_id}: {e}")
+                    logger.debug(
+                        f"InsForge recording deferred for memory {memory_id}: {e}"
+                    )
 
             return memory_id
         except Exception:
@@ -919,12 +1039,16 @@ class MemorySystem:
 
             if isinstance(created_at, str):
                 try:
-                    created_at = datetime.datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+                    created_at = datetime.datetime.fromisoformat(
+                        created_at.replace("Z", "+00:00")
+                    )
                 except ValueError:
                     created_at = datetime.datetime.now(datetime.timezone.utc)
             if isinstance(last_retrieved, str):
                 try:
-                    last_retrieved = datetime.datetime.fromisoformat(last_retrieved.replace("Z", "+00:00"))
+                    last_retrieved = datetime.datetime.fromisoformat(
+                        last_retrieved.replace("Z", "+00:00")
+                    )
                 except ValueError:
                     last_retrieved = None
 
@@ -943,7 +1067,7 @@ class MemorySystem:
                 layer=mem.get("memory_layer", 2),
                 vector=mem.get("vector"),
                 created_at=created_at,
-                last_retrieved=last_retrieved
+                last_retrieved=last_retrieved,
             )
 
             old_layer = entry.layer
@@ -955,32 +1079,49 @@ class MemorySystem:
             entry.transition()
 
             # 4. Persistence if shifted significantly (>0.01 score or state/layer change)
-            if entry.layer != old_layer or entry.state != old_state or abs(entry.activation_score - old_score) > 0.01:
+            if (
+                entry.layer != old_layer
+                or entry.state != old_state
+                or abs(entry.activation_score - old_score) > 0.01
+            ):
                 updates = {
                     "memory_layer": entry.layer,
                     "state": entry.state,
-                    "activation_score": entry.activation_score
+                    "activation_score": entry.activation_score,
                 }
                 self.storage.update_memory(entry.id, updates)
                 transitions += 1
 
                 # 5. Chronicler Signal for Layer Ascension
-                if (entry.layer > old_layer or entry.state != old_state) and hasattr(insforge, "log_event"):
+                if (entry.layer > old_layer or entry.state != old_state) and hasattr(
+                    insforge, "log_event"
+                ):
                     try:
                         loop = asyncio.get_event_loop()
                         if loop.is_running():
-                            _ = loop.create_task(insforge.log_event(
-                                type="MEMORY_EVOLUTION",
-                                description=f"Memory {entry.id} evolved: {old_state}(L{old_layer}) -> {entry.state}(L{entry.layer})",
-                                payload={"id": entry.id, "from_layer": old_layer, "to_layer": entry.layer, "score": entry.activation_score}
-                            ))
+                            _ = loop.create_task(
+                                insforge.log_event(
+                                    type="MEMORY_EVOLUTION",
+                                    description=f"Memory {entry.id} evolved: {old_state}(L{old_layer}) -> {entry.state}(L{entry.layer})",
+                                    payload={
+                                        "id": entry.id,
+                                        "from_layer": old_layer,
+                                        "to_layer": entry.layer,
+                                        "score": entry.activation_score,
+                                    },
+                                )
+                            )
                     except Exception:
                         pass
 
-        logger.info(f"--- [COG-MEM] Maintenance Complete. Transitions: {transitions} ---")
+        logger.info(
+            f"--- [COG-MEM] Maintenance Complete. Transitions: {transitions} ---"
+        )
         return transitions
 
-    def gemify(self, entry_id: int, insight_label: str, importance: float = 1.0) -> bool:
+    def gemify(
+        self, entry_id: int, insight_label: str, importance: float = 1.0
+    ) -> bool:
         """Shortcut to elevate a memory to an L1 Gem."""
         return self.muse.gemify(entry_id, insight_label, importance)
 
@@ -992,13 +1133,19 @@ class MemorySystem:
             conn = getattr(self.storage, "conn", None)
             if not conn:
                 return []
-            
+
             cur = conn.cursor()
             try:
                 if isinstance(self.storage, PostgresMemoryStorage):
-                    cur.execute("SELECT * FROM memory_entries WHERE memory_layer = %s LIMIT %s", (layer, limit))
+                    cur.execute(
+                        "SELECT * FROM memory_entries WHERE memory_layer = %s LIMIT %s",
+                        (layer, limit),
+                    )
                 else:
-                    cur.execute("SELECT * FROM memory_entries WHERE memory_layer = ? LIMIT ?", (layer, limit))
+                    cur.execute(
+                        "SELECT * FROM memory_entries WHERE memory_layer = ? LIMIT ?",
+                        (layer, limit),
+                    )
                 return [dict(row) for row in cur.fetchall()]
             finally:
                 cur.close()
@@ -1009,6 +1156,7 @@ class MemorySystem:
     def retrieve_memories(
         self, query: str, limit: int = 5, conversation_history: list[dict] | None = None
     ) -> list[dict[str, Any]]:
+        """Perform contextual hybrid search across all active memory layers and external bridges."""
         if not self.storage:
             return []
         try:
@@ -1032,10 +1180,15 @@ class MemorySystem:
                             "content": res.get("content", ""),
                             "source": "Obsidian",
                             "tags": tags,
-                            "metadata": {"path": res.get("path"), "score": res.get("score", 0.0)},
+                            "metadata": {
+                                "path": res.get("path"),
+                                "score": res.get("score", 0.0),
+                            },
                         }
                         # Deduplicate by content (basic)
-                        if not any(m["content"] == candidate["content"] for m in memories):
+                        if not any(
+                            m["content"] == candidate["content"] for m in memories
+                        ):
                             memories.append(candidate)
                 except Exception as e:
                     logger.warning(f"Obsidian search failed: {e}")
@@ -1056,7 +1209,12 @@ class MemorySystem:
                 analysis = self.cognition.process(query) if self.cognition else {}
                 logger.info(f"Memory Gap Detected for query: {query}")
                 # Log gap to database for future learning
-                self.log_experience("MEMORY_GAP", "MemorySystem", {"query": query, "analysis": analysis}, -0.1)
+                self.log_experience(
+                    "MEMORY_GAP",
+                    "MemorySystem",
+                    {"query": query, "analysis": analysis},
+                    -0.1,
+                )
                 memories = []
 
             # Log the experience
@@ -1088,11 +1246,15 @@ class MemorySystem:
             if self.associations and memory_id != -1:
                 self.associations.trigger_tag_based_linking(str(memory_id), topics)
 
-        response_parts = [f"I couldn't find specific information about '{query[:30]}' in my core memory."]
+        response_parts = [
+            f"I couldn't find specific information about '{query[:30]}' in my core memory."
+        ]
 
         if topics:
             primary_topic = topics[0][0] if isinstance(topics[0], tuple) else topics[0]
-            response_parts.append(f"Could you provide more context about '{primary_topic}'?")
+            response_parts.append(
+                f"Could you provide more context about '{primary_topic}'?"
+            )
         else:
             response_parts.append("Could you please rephrase or provide more details?")
 
@@ -1128,7 +1290,9 @@ class MemorySystem:
                 try:
                     self.storage.conn.execute("PRAGMA integrity_check;")
                 except sqlite3.DatabaseError:
-                    logger.critical("Memory Database Corruption detected. Initiating recovery protocols.")
+                    logger.critical(
+                        "Memory Database Corruption detected. Initiating recovery protocols."
+                    )
                     # In a production scenario, this would trigger backup restoration or re-indexing
 
             # 2. Cognitive Decay & State Transitions
@@ -1146,27 +1310,35 @@ class MemorySystem:
                 mem.transition()
 
                 # Update storage if state, score, or layer changed
-                if mem.activation_score != old_score or mem.state != old_state or mem.layer != row.get("memory_layer"):
+                if (
+                    mem.activation_score != old_score
+                    or mem.state != old_state
+                    or mem.layer != row.get("memory_layer")
+                ):
                     self.storage.update_memory(
                         mem.id,
                         {
-                            "activation_score": mem.activation_score, 
-                            "state": mem.state, 
+                            "activation_score": mem.activation_score,
+                            "state": mem.state,
                             "usage_count": mem.usage_count,
-                            "memory_layer": mem.layer
+                            "memory_layer": mem.layer,
                         },
                     )
                     decayed_count += 1
 
-            logger.info(f"Cognitive maintenance cycle completed. Decayed {decayed_count} entries.")
+            logger.info(
+                f"Cognitive maintenance cycle completed. Decayed {decayed_count} entries."
+            )
         except Exception:
             logger.exception("Maintenance cycle failed")
 
-    def log_experience(self, event_type: str, module: str, details: dict[str, Any], impact: float = 0.0) -> None:
+    def log_experience(
+        self, event_type: str, module: str, details: dict[str, Any], impact: float = 0.0
+    ) -> None:
         """Logs experiences to Kinetic Memory (DB) and potentially Sovereign Memory (MD)."""
         if not self.storage:
             return
-        
+
         # 1. Kinetic Memory (DB)
         try:
             # We use direct connection if available for legacy consistency, or storage methods
@@ -1191,14 +1363,20 @@ class MemorySystem:
             logger.exception("Failed to log experience to Kinetic Memory")
 
         # 2. Sovereign Memory (MD Sync) - Only for significant impact or specific event types
-        if impact >= self.COHERENCE_SYNC_THRESHOLD or event_type in ["ASCENSION", "SYNERGY_FOUND", "CRITICAL_LEARNING"]:
+        if impact >= self.COHERENCE_SYNC_THRESHOLD or event_type in [
+            "ASCENSION",
+            "SYNERGY_FOUND",
+            "CRITICAL_LEARNING",
+        ]:
             self._sync_to_sovereign(event_type, module, details)
 
-    def _sync_to_sovereign(self, event_type: str, module: str, details: dict[str, Any]) -> None:
+    def _sync_to_sovereign(
+        self, event_type: str, module: str, details: dict[str, Any]
+    ) -> None:
         """Synchronizes high-impact events with the Sovereign Memory Ledger."""
         if not self.sovereign_memory_path.exists():
             return
-        
+
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d")
         entry = f"### [{timestamp}] {event_type} ({module})\n"
         entry += f"- **Insight:** {details.get('content', details.get('insight', 'No summary provided.'))}\n"
@@ -1209,7 +1387,7 @@ class MemorySystem:
         try:
             with open(self.sovereign_memory_path, "r", encoding="utf-8") as f:
                 content = f.read()
-            
+
             # Find the "[ARTIFACT START]" or "## **[ARTIFACT START]**" section (OMEGA v15.0)
             marker = "[ARTIFACT START]"
             if marker in content:
@@ -1223,6 +1401,7 @@ class MemorySystem:
             logger.error(f"Failed to sync with Sovereign Memory: {e}")
 
     def __del__(self) -> None:
+        """Ensure storage connections are safely closed upon object destruction."""
         if hasattr(self, "storage") and getattr(self, "storage", None):
             try:
                 conn = getattr(self.storage, "conn", None)

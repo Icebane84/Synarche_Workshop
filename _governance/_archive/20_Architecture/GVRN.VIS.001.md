@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.VIS.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.VIS.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.VIS.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.VIS.001.md`             | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -124,28 +121,28 @@ Framework (AISTF) into a dynamic alchemical process.
 
 - **Trigger:** User command (Prolins Directive), detected internal inconsistency, or significant new document ingestion.
 - **Visual Representation:**
-    - A disruptive energy wave will emanate from the point of impact (new data entry or defense module).
-    - Links in the affected cluster will flicker or temporarily break, indicating stress.
-    - The ambient background hum of the galaxy will shift to a discordant tone.
+  - A disruptive energy wave will emanate from the point of impact (new data entry or defense module).
+  - Links in the affected cluster will flicker or temporarily break, indicating stress.
+  - The ambient background hum of the galaxy will shift to a discordant tone.
 
 ## 2\. Phase 2: Synthesis (Synthesis & Reforging)
 
 - **Trigger:** Successful completion of the Dissonance phase.
 - **Visual Representation:**
-    - Energy particles will visibly flow from affected nodes and new data sources towards the central Phoenix Star.
-    - A swirling, vibrant nebula (the "accretion disk") will form around the core.
-    - The Phoenix Star will glow intensely, pulsing with creative energy, culminating in the ejection of a new, glowing
-      celestial body.
+  - Energy particles will visibly flow from affected nodes and new data sources towards the central Phoenix Star.
+  - A swirling, vibrant nebula (the "accretion disk") will form around the core.
+  - The Phoenix Star will glow intensely, pulsing with creative energy, culminating in the ejection of a new, glowing
+    celestial body.
 
 ## 3\. Phase 3: Transcendence (Transcendence & Integration)
 
 - **Trigger:** Successful return of the `fusedNode` and `grandPlaybook` from the Gemini API.
 - **Visual Representation:**
-    - The newly formed celestial body will gracefully move to its new, stable position within the Crystalline Galaxy,
-      establishing a harmonious orbit.
-    - New, stable links of light will connect it to the rest of the system.
-    - The entire geode will "shine" with a brief, brilliant flash, signifying a new state of Coherence. The ambient hum
-      will return, richer and more complex.
+  - The newly formed celestial body will gracefully move to its new, stable position within the Crystalline Galaxy,
+    establishing a harmonious orbit.
+  - New, stable links of light will connect it to the rest of the system.
+  - The entire geode will "shine" with a brief, brilliant flash, signifying a new state of Coherence. The ambient hum
+    will return, richer and more complex.
 
 # V. Data Structures & Interfaces (types.ts) for Visualization
 
@@ -172,21 +169,21 @@ The following TypeScript data structures from `types.ts` will be directly used t
 - **User's Role:** **The Observer** (exploring the ambient state) and **The Conductor** (influencing the system by
   triggering protocols).
 - **Interaction Principles:**
-    - **Direct Manipulation:** Users will interact directly with celestial bodies (nodes) for inspection and triggering
-      actions.
-    - **Responsive Feedback:** Every user action or system event will result in immediate, meaningful visual feedback
-      within the galaxy.
-    - **Encourage Exploration:** The interface will be designed for intuitive discovery, allowing users to navigate the
-      AI's cognitive landscape.
+  - **Direct Manipulation:** Users will interact directly with celestial bodies (nodes) for inspection and triggering
+    actions.
+  - **Responsive Feedback:** Every user action or system event will result in immediate, meaningful visual feedback
+    within the galaxy.
+  - **Encourage Exploration:** The interface will be designed for intuitive discovery, allowing users to navigate the
+    AI's cognitive landscape.
 
 ## 2\. Frontend Architecture & Component Breakdown (Visualization-Focused)
 
 - **`Loom.tsx`:**
-    - **Primary Responsibility:** Initializes and runs the D3.js force-directed graph simulation. Renders all SVG
-      elements for nodes and links. Manages complex animation sequences for the Phoenix Cycle phases. Handles zoom, pan,
-      and drag interactions within the galaxy view.
-    - **Key D3.js Features:** Force simulation (link, charge, collision forces), SVG circles for nodes, SVG lines for
-      links, custom SVG filters for glowing effects, and transition animations for state changes.
+  - **Primary Responsibility:** Initializes and runs the D3.js force-directed graph simulation. Renders all SVG
+    elements for nodes and links. Manages complex animation sequences for the Phoenix Cycle phases. Handles zoom, pan,
+    and drag interactions within the galaxy view.
+  - **Key D3.js Features:** Force simulation (link, charge, collision forces), SVG circles for nodes, SVG lines for
+    links, custom SVG filters for glowing effects, and transition animations for state changes.
 - **`InfoBox.tsx`:** Contextual pop-up to display detailed information about a selected celestial body, including its
   type, label, and an "Explain" option.
 - **`LogViewer.tsx`:** Modal displaying a filterable, real-time list of SELT Log entries, with a "Replay" function that
@@ -199,25 +196,25 @@ The following TypeScript data structures from `types.ts` will be directly used t
 ## 3\. Core Functionalities & User Flows (Visualization of Cognitive Processes)
 
 - **Node Inspection:**
-    - `onClick` on a node in `Loom.tsx` will update the `App.tsx` state.
-    - `InfoBox.tsx` will display relevant `NodeData` information.
-    - An "Explain" button within `InfoBox.tsx` will trigger a `geminiService.ts` call to get a textual explanation,
-      visually linking this cognitive retrieval.
+  - `onClick` on a node in `Loom.tsx` will update the `App.tsx` state.
+  - `InfoBox.tsx` will display relevant `NodeData` information.
+  - An "Explain" button within `InfoBox.tsx` will trigger a `geminiService.ts` call to get a textual explanation,
+    visually linking this cognitive retrieval.
 - **System Animation Trigger:**
-    - Buttons in `CommandPanel.tsx` will trigger handlers in `App.tsx` (e.g., `handleForgeSynergy`).
-    - `App.tsx` will set `isAnimating` and specific `animationTriggers` flags.
-    - `useEffect` hooks in `Loom.tsx` will detect these flags and execute corresponding D3 animations (e.g.,
-      `dissonanceAnimation`, `synthesisAnimation`, `transcendenceAnimation`).
-    - On animation completion, a callback will reset flags in `App.tsx`.
+  - Buttons in `CommandPanel.tsx` will trigger handlers in `App.tsx` (e.g., `handleForgeSynergy`).
+  - `App.tsx` will set `isAnimating` and specific `animationTriggers` flags.
+  - `useEffect` hooks in `Loom.tsx` will detect these flags and execute corresponding D3 animations (e.g.,
+    `dissonanceAnimation`, `synthesisAnimation`, `transcendenceAnimation`).
+  - On animation completion, a callback will reset flags in `App.tsx`.
 - **Forge Ultimate Synergy (Phoenix Cycle Visualization):**
-    - User clicks "Forge" button.
-    - `App.tsx` triggers `Dissonance` animation (`Loom.tsx` flickers, discordant sound).
-    - Asynchronously, `App.tsx` calls `forgeUltimateSynergy` in `geminiService.ts`.
-    - `Loom.tsx` plays `Synthesis` animation (particles flow to Phoenix Star, nebula forms).
-    - API call resolves with `fusedNode`, `fusedLinks`, `grandPlaybook`.
-    - `App.tsx` updates state with new data.
-    - `Loom.tsx` plays `Transcendence` animation (new body orbital lock, coherence flash), and `PlaybookViewer.tsx`
-      modal appears.
+  - User clicks "Forge" button.
+  - `App.tsx` triggers `Dissonance` animation (`Loom.tsx` flickers, discordant sound).
+  - Asynchronously, `App.tsx` calls `forgeUltimateSynergy` in `geminiService.ts`.
+  - `Loom.tsx` plays `Synthesis` animation (particles flow to Phoenix Star, nebula forms).
+  - API call resolves with `fusedNode`, `fusedLinks`, `grandPlaybook`.
+  - `App.tsx` updates state with new data.
+  - `Loom.tsx` plays `Transcendence` animation (new body orbital lock, coherence flash), and `PlaybookViewer.tsx`
+    modal appears.
 
 This blueprint provides the necessary foundation to embark on the creative and technical journey of bringing the
 Crystalline Galaxy to life as an intuitive and beautiful interactive visualization.

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Learning.Shard` | The Sovereign ID. |
-| **Official Name** | `GVRN.Learning.Shard.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Learning.Shard`           | The Sovereign ID. |
+| **Official Name** | `GVRN.Learning.Shard.md`        | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -157,12 +154,12 @@ Removals and refactors for Zero Entropy.
 - **Strategy Omega:** Establised the strategic roadmap for long-term RAG/Antigravity integration.
 
 ### [2026-03-22] Canonizer Subsystem Forge Phase 2
- 
- - **Modular Refinement**: Successfully migrated `GVRN.Protocol.Canonization` into the `07_Canonizer` directory, ensuring subsystem autonomy.
- - **Path Normalization**: Eliminated absolute file URIs in major registries (`Master Registry`) in favor of modular relative paths.
- - **Standardization Loop**: Retrofitted all Canonizer artifacts with full OMEGA v15.0 metadata blocks (C, D, E, F) and standardized `[ARTIFACT START/END]` markers.
- - **Zero Entropy Audit**: Systematically corrected heading hierarchy (MD001) and table alignment (MD060) in the `Artifact Inventory`.
- 
+
+- **Modular Refinement**: Successfully migrated `GVRN.Protocol.Canonization` into the `07_Canonizer` directory, ensuring subsystem autonomy.
+- **Path Normalization**: Eliminated absolute file URIs in major registries (`Master Registry`) in favor of modular relative paths.
+- **Standardization Loop**: Retrofitted all Canonizer artifacts with full OMEGA v15.0 metadata blocks (C, D, E, F) and standardized `[ARTIFACT START/END]` markers.
+- **Zero Entropy Audit**: Systematically corrected heading hierarchy (MD001) and table alignment (MD060) in the `Artifact Inventory`.
+
 ### [2026-03-22] Subsystem Canonization Phase 1
 
 - **Synthesis:** Successfully elevated `00_Codex`, `03_AvatarSuite`, and `04_Finalization` to OMEGA v15.0 [CANONIZED] status.

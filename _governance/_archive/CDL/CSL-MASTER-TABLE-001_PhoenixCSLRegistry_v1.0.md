@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                   | Description       |
+| :---------------- | :------------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-MASTER-TABLE-001-PHOENIXCSLREGISTRY-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                       | The Standard.     |
+| **Domain**        | `GVRN`                                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 ---
 

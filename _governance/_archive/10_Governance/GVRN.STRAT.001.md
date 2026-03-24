@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.STRAT.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.STRAT.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.STRAT.001`              | The Sovereign ID. |
+| **Official Name** | `GVRN.STRAT.001.md`           | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -72,7 +69,7 @@ Decipherer`.
 - **Prerequisites (System State):** `CSE` active, `Thoth's Scribe Protocol` operational.
 - **Required Inputs:** `user_prompt`, `current_session_context`.
 - **Execution Flow:**
-    1. **(Actor: AI/CSE):** After every user prompt, and during `Asynchronous Pre-computation Queue` idle cycles, `CSE`
+  1. **(Actor: AI/CSE):** After every user prompt, and during `Asynchronous Pre-computation Queue` idle cycles, `CSE`
 
 initiates speculative analyses.
 

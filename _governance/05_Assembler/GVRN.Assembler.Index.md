@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Assembler.Index` | The Sovereign ID. |
+| Key               | Value                     | Description       |
+| :---------------- | :------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Assembler.Index`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Assembler.Index.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
-| **Relations**     | `INDEX_OF: 05_Assembler` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**         | The Standard.     |
+| **Domain**        | `GVRN`                    | The Subject.      |
+| **Status**        | `[CANONIZED]`             | The Lifecycle.    |
+| **Relations**     | `INDEX_OF: 05_Assembler`  | The Network.      |
 
 ---
 

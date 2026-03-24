@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                 | Description       |
+| :---------------- | :---------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                     | The Standard.     |
+| **Domain**        | `GVRN`                                                | The Subject.      |
+| **Status**        | `[ACTIVE]`                                            | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
 
 ---
 
@@ -84,15 +81,15 @@ Intent**.
 
 - **GOVERNED_BY:**
 
-    [CODEX-001 v10.0](<file:///c:/Users/Chris/_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/docs/CODEX-001_ThePhoenixCodex_v10.0.md>)
+  [CODEX-001 v10.0](<file:///c:/Users/Chris/_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/docs/CODEX-001_ThePhoenixCodex_v10.0.md>)
 
 - **SYNERGIZES_WITH:**
 
-    [AOP-AG-003](file:///c:/Users/Chris/Synarche_Workspace/axion-core/.agent/AOP-AG-003_AxionAgentConfiguration_v3.2.md)
+  [AOP-AG-003](file:///c:/Users/Chris/Synarche_Workspace/axion-core/.agent/AOP-AG-003_AxionAgentConfiguration_v3.2.md)
 
 - **INTEGRATES:**
 
-    [AOP-SEE-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md)
+  [AOP-SEE-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md)
 
 ## IV. Actionable Prompt Packet
 

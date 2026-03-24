@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.ARCH.GrandUnifiedArchitecture` | The Sovereign ID. |
+| Key               | Value                                   | Description       |
+| :---------------- | :-------------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.ARCH.GrandUnifiedArchitecture`    | The Sovereign ID. |
 | **Official Name** | `SYNG.ARCH.GrandUnifiedArchitecture.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**        | `ARCH`                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`         | The Network.      |
 
 ---
 
@@ -26,20 +23,20 @@
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                   | Mitigation                       |
-| :--------------------- | :------------------------------- |
-| **Structural Entropy** | Chronos Lock (Provenance)        |
-| **Context Saturation** | Task-Based Memory Fragmentation  |
+| Risk                   | Mitigation                      |
+| :--------------------- | :------------------------------ |
+| **Structural Entropy** | Chronos Lock (Provenance)       |
+| **Context Saturation** | Task-Based Memory Fragmentation |
 
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. |
-| `SYNG.PROT.AvatarProtocol` | `DEFINES` | Establishes the operational persona substrate for this architecture. |
+| Synergistic Artifact ID    | Relationship Type | Synergistic Impact                                                   |
+| :------------------------- | :---------------- | :------------------------------------------------------------------- |
+| `CORE.Codex.Phoenix`       | `GOVERNS`         | Provides the supreme law and ethical framework.                      |
+| `GVRN.Registry.Master`     | `INDEXES`         | Tracks the state and presence of this artifact.                      |
+| `SYNG.PROT.AvatarProtocol` | `DEFINES`         | Establishes the operational persona substrate for this architecture. |
 
 ---
 
@@ -51,9 +48,9 @@
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
 
@@ -104,11 +101,11 @@ Execution is constrained by the `security.yaml` policy, which:
 
 ## V. Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: SCAFFOLD_GUA` | Generate core scaffolding files for the Overplane. | Foundations |
-| `CMD: AUDIT_STUCTURE` | Run a system-wide structural integrity scan. | Coherence |
-| `CMD: REFORGE_ARCH` | Transmute architectural records to OMEGA 15.0. | Evolution |
+| Command ID            | Action                                             | Impact      |
+| :-------------------- | :------------------------------------------------- | :---------- |
+| `CMD: SCAFFOLD_GUA`   | Generate core scaffolding files for the Overplane. | Foundations |
+| `CMD: AUDIT_STUCTURE` | Run a system-wide structural integrity scan.       | Coherence   |
+| `CMD: REFORGE_ARCH`   | Transmute architectural records to OMEGA 15.0.     | Evolution   |
 
 ###### **[ARTIFACT END]**
 

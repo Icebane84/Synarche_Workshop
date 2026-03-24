@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                   | Description       |
+| :---------------- | :------------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-SELT-CSL-TEMPLATE-001-SYNTHESISLOGENTRY-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                       | The Standard.     |
+| **Domain**        | `GVRN`                                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 ---
 
@@ -85,23 +82,23 @@ Tags:
 
 ```json
 {
-    "id": "CSL-YYYYMMDD-NNN",
-    "title": "Brief Title of Insight",
-    "timestamp": "ISO-8601",
-    "author": "Agent_Name",
-    "tags": ["#Tag1", "#Tag2"],
-    "context": {
-        "task_id": "Task_ID_Reference",
-        "active_files": ["File1", "File2"]
-    },
-    "content": {
-        "observation": "Raw observation data.",
-        "insight": "The synthesized realization.",
-        "implication": "Impact on the system."
-    },
-    "relations": {
-        "linked_artifacts": ["UMB-001", "AOP-002"]
-    }
+  "id": "CSL-YYYYMMDD-NNN",
+  "title": "Brief Title of Insight",
+  "timestamp": "ISO-8601",
+  "author": "Agent_Name",
+  "tags": ["#Tag1", "#Tag2"],
+  "context": {
+    "task_id": "Task_ID_Reference",
+    "active_files": ["File1", "File2"]
+  },
+  "content": {
+    "observation": "Raw observation data.",
+    "insight": "The synthesized realization.",
+    "implication": "Impact on the system."
+  },
+  "relations": {
+    "linked_artifacts": ["UMB-001", "AOP-002"]
+  }
 }
 ```
 

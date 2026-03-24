@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AXION.MINT.SEED.001` | The Sovereign ID. |
-| **Official Name** | `AXION.MINT.SEED.001.md` | The Filename.     |
-| **Version**       | **v1.0 [ALPHA]** | The Standard.     |
-| **Domain**        | `AXION` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                                       | Description       |
+| :---------------- | :---------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `AXION.MINT.SEED.001`                                       | The Sovereign ID. |
+| **Official Name** | `AXION.MINT.SEED.001.md`                                    | The Filename.     |
+| **Version**       | **v1.0 [ALPHA]**                                            | The Standard.     |
+| **Domain**        | `AXION`                                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                  | The Lifecycle.    |
 | **Relations**     | `GOVERNS: [Nicemind_Seeds], ALIGNS: GVRN.Axiomatic.Lattice` | The Network.      |
-
-
-
 
 ---
 

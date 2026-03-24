@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                             | Description       |
+| :---------------- | :------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `ARCH.BLUE.UEB-GOC-001_GuardianOfCoherence_v13.0` | The Sovereign ID. |
-| **Official Name** | `ARCH.BLUE.UEB-GOC-001TheGuardianofCoherence.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNS: GVRN.ACM.001` | The Network.      |
-
-
-
+| **Official Name** | `ARCH.BLUE.UEB-GOC-001TheGuardianofCoherence.md`  | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                 | The Standard.     |
+| **Domain**        | `ARCH`                                            | The Subject.      |
+| **Status**        | `ACTIVE`                                          | The Lifecycle.    |
+| **Relations**     | `GOVERNS: GVRN.ACM.001`                           | The Network.      |
 
 ---
 
