@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                           | Description       |
+| :---------------- | :-------------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-GUCA-SIMP-001-SYSTEMICIMPACTSIMULATIONPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                               | The Standard.     |
+| **Domain**        | `GVRN`                                                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                      | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                   | The Network.      |
 
 ---
 
@@ -70,28 +67,28 @@
 - **Command Name:** Systemic Impact Simulation Protocol
 - **Objective:** To provide a predictive analysis of the systemic impact of a proposed code change _before_ it is
 
-    applied, preventing regression and entanglement.
+  applied, preventing regression and entanglement.
 
 ### 2.1. The Mechanism
 
 - **What:** A "Pre-Commit" simulation tool.
 - **How:**
-    1. **Parse:** Generates AST of target file.
-    2. **Traverse:** Maps explicit dependencies.
-    3. **Query:** Checks `OSLM` (Omni-Log Synergistic Matrix) for conceptual links.
-    4. **Fuse:** Combines graphs to find "Risk Nodes."
+  1. **Parse:** Generates AST of target file.
+  2. **Traverse:** Maps explicit dependencies.
+  3. **Query:** Checks `OSLM` (Omni-Log Synergistic Matrix) for conceptual links.
+  4. **Fuse:** Combines graphs to find "Risk Nodes."
 - **Why:** To answer the question: "If I touch this, what breaks?"
 
 ## III. Command Specification
 
 - **API Endpoint:** `POST /api/simulate-impact`
 - **Input:**
-    - `change`: Diff/Code Snippet.
-    - `target`: File Path.
+  - `change`: Diff/Code Snippet.
+  - `target`: File Path.
 - **Output (`ImpactReport`):**
-    - `nodes`: List of affected files/modules.
-    - `riskScore`: 0-100 probability of side effects.
-    - `suggestions`: "Review Interface X before committing."
+  - `nodes`: List of affected files/modules.
+  - `riskScore`: 0-100 probability of side effects.
+  - `suggestions`: "Review Interface X before committing."
 
 ## IV. Integration
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                              | Description       |
+| :---------------- | :------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-SCA-001-SYSTEMICCOHERENCEAUDIT-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-SCA-001_SystemicCoherenceAudit_v2.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-SCA-001_SystemicCoherenceAudit_v2.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                  | The Standard.     |
+| **Domain**        | `GVRN`                                             | The Subject.      |
+| **Status**        | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 ---
 
@@ -69,11 +66,11 @@
 
 - **Core Purpose**: To define the standardized procedure for auditing the entire Phoenix ecosystem for structural,
 
-    logical, and ethical coherence.
+  logical, and ethical coherence.
 
 - **Operational Goal**: To produce a definitive "State of the Weave" report (Log) that identifies Dissonance, Drift, and
 
-    Integrity.
+  Integrity.
 
 - **Why**: Entropy is the enemy. Without regular, structured auditing, the system will succumb to _contextual drift_.
 
@@ -98,7 +95,7 @@
 
 - **FEEDS:**
 
-    [UMB-CORE-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Core/UMB-CORE-001_PhoenixCoreParadigm_v3.0.md)
+  [UMB-CORE-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Core/UMB-CORE-001_PhoenixCoreParadigm_v3.0.md)
 
 - **OUTPUTS:** [AOP-SCA-Log](file:///c:/Users/Chris/Synarche_Workspace/axion-core/logs/audit_log.json)
 - **EXECUTED_BY:** [Sentinel Prime](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/hephaestus/sentinel.py)

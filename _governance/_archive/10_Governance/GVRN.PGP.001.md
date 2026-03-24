@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.PGP.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.PGP.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.PGP.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.PGP.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -56,25 +53,25 @@ The PGP operates in three distinct phases, ensuring that raw chat data is refine
 
 - **Objective**: Generate a complete, well-structured body of raw text formatted in **Markdown**.
 - **Protocol**:
-    1. **Context Loading**: Agent ingests `CORE-CODEX-001` and relevant Context files.
-    2. **Structural Drafting**: Content is drafted using the **SGM-V13 Template**.
-    3. **Pre-Flight**: Content is checked against `GVRN.Protocol.Genesis`.
+  1. **Context Loading**: Agent ingests `CORE-CODEX-001` and relevant Context files.
+  2. **Structural Drafting**: Content is drafted using the **SGM-V13 Template**.
+  3. **Pre-Flight**: Content is checked against `GVRN.Protocol.Genesis`.
 
 #### **Phase 2: The Transfer (Materialization)**
 
 - **Objective**: Move the structured content from the "Ether" (Chat Context) to the "Forge" (Disk).
 - **Protocol**:
-    1. **File Creation**: Use `write_to_file` to instantiate the artifact.
-    2. **Naming**: Enforce `DOMAIN.Subsystem.Descriptor.md` convention.
-    3. **Pathing**: Place in the correct directory (e.g., `_governance/10_Governance`).
+  1. **File Creation**: Use `write_to_file` to instantiate the artifact.
+  2. **Naming**: Enforce `DOMAIN.Subsystem.Descriptor.md` convention.
+  3. **Pathing**: Place in the correct directory (e.g., `_governance/10_Governance`).
 
 #### **Phase 3: Refinement & Governance (Tempering)**
 
 - **Objective**: Transform the raw file into a polished, compliant Sovereign Artifact.
 - **Protocol**:
-    1. **Sentinel Scan**: Run `compliance_audit.py` to verify Block compliance.
-    2. **Synergy Linking**: Manually verify bidirectional links in `Block D`.
-    3. **Registration**: Log the new artifact in `GVRN.Registry.Master.md`.
+  1. **Sentinel Scan**: Run `compliance_audit.py` to verify Block compliance.
+  2. **Synergy Linking**: Manually verify bidirectional links in `Block D`.
+  3. **Registration**: Log the new artifact in `GVRN.Registry.Master.md`.
 
 ---
 

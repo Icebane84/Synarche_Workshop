@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.Canonizer.Core` | The Sovereign ID. |
+| Key               | Value                    | Description       |
+| :---------------- | :----------------------- | :---------------- |
+| **Artifact ID**   | `ARCH.Canonizer.Core`    | The Sovereign ID. |
 | **Official Name** | `ARCH.Canonizer.Core.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| **Version**       | **v15.0 [OMEGA]**        | The Standard.     |
+| **Domain**        | `GVRN`                   | The Subject.      |
+| **Status**        | `[CANONIZED]`            | The Lifecycle.    |
 | **Relations**     | `INDEX_OF: 07_Canonizer` | The Network.      |
-
-
-
 
 ---
 
@@ -37,11 +34,11 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. |
-| `UMB.Canonizer.Core` | `GENERATES` | Provides the systemic vision for the blueprint. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `UMB.Canonizer.Core`    | `GENERATES`       | Provides the systemic vision for the blueprint. |
 
 ---
 
@@ -53,9 +50,9 @@
 
 ## **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
 
@@ -93,9 +90,9 @@ graph TD
 
 ## **Actionable Prompt Packet (APP)**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: ARCH_AUDIT` | Verifies the structural blueprint of an artifact. | Format Integrity |
+| Command ID               | Action                                             | Impact           |
+| :----------------------- | :------------------------------------------------- | :--------------- |
+| `CMD: ARCH_AUDIT`        | Verifies the structural blueprint of an artifact.  | Format Integrity |
 | `CMD: GENERATE_SCAFFOLD` | Creates a new artifact based on the 7-Gate schema. | Rapid Deployment |
 
 ---

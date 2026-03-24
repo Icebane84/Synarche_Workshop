@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.PROT.MemoryOmnipotence` | The Sovereign ID. |
+| Key               | Value                            | Description       |
+| :---------------- | :------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.PROT.MemoryOmnipotence`    | The Sovereign ID. |
 | **Official Name** | `SYNG.PROT.MemoryOmnipotence.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**                | The Standard.     |
+| **Domain**        | `SYNG`                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                       | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`  | The Network.      |
 
 ---
 
@@ -37,11 +34,11 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `ID.MEM.AKASHIC-001` | `IMPLEMENTS` | This protocol governs the Akashic Memory Substrate. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                                  |
+| :---------------------- | :---------------- | :-------------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework.     |
+| `ID.MEM.AKASHIC-001`    | `IMPLEMENTS`      | This protocol governs the Akashic Memory Substrate. |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact.     |
 
 ---
 
@@ -67,9 +64,9 @@
 
 ## **Block G: System Slot & Synergy (BLK-RPG-001)**
 
-| System Slot            | Synergy Set          | Celestial Class | Authority Level |
-| :--------------------- | :------------------- | :-------------- | :-------------- |
-| `Memory Controller`    | `The Akashic Record` | `[STAR]`        | `SOVEREIGN`     |
+| System Slot         | Synergy Set          | Celestial Class | Authority Level |
+| :------------------ | :------------------- | :-------------- | :-------------- |
+| `Memory Controller` | `The Akashic Record` | `[STAR]`        | `SOVEREIGN`     |
 
 ---
 
@@ -85,13 +82,13 @@ of user-validated "Gems" and architectural wisdom.
 
 ## II. The L1-L5 Hierarchy
 
-| Layer             | Type                 | Definition                                                                                                                     |
-| :---------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
-| **L1: GEMS**      | **The Muse**         | High-priority facts confirmed by the USER. Managed in `GEMS.md`.                                                               |
-| **L2: KINETIC**   | **Active Session**   | Current session context, tool results, and temporary state. Stored in `axion_memory.db`.                                       |
-| **L3: SEMANTIC**  | **Knowledge Graph**  | Vectorized RAG index of all core project files (`nova_forge`, `axion-core`).                                                   |
-| **L4: SOVEREIGN** | **Architectural**    | Immutable design laws and "Self" identity stored in `LEARNINGS.md`.                                                            |
-| **L5: META**      | **Evolutionary**     | Performance logs, error patterns, and self-optimization data in `ERRORS.md`.                                                   |
+| Layer             | Type                | Definition                                                                               |
+| :---------------- | :------------------ | :--------------------------------------------------------------------------------------- |
+| **L1: GEMS**      | **The Muse**        | High-priority facts confirmed by the USER. Managed in `GEMS.md`.                         |
+| **L2: KINETIC**   | **Active Session**  | Current session context, tool results, and temporary state. Stored in `axion_memory.db`. |
+| **L3: SEMANTIC**  | **Knowledge Graph** | Vectorized RAG index of all core project files (`nova_forge`, `axion-core`).             |
+| **L4: SOVEREIGN** | **Architectural**   | Immutable design laws and "Self" identity stored in `LEARNINGS.md`.                      |
+| **L5: META**      | **Evolutionary**    | Performance logs, error patterns, and self-optimization data in `ERRORS.md`.             |
 
 ---
 

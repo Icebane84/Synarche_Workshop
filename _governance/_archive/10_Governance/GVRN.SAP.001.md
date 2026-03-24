@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.SAP.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.SAP.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SAP.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.SAP.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -57,11 +54,11 @@
 - **What**: This protocol defines the "Interface Layer" of the Phoenix Form—how the AI presents itself to the user.
 - **How**: It uses a "Tarot Mask" mechanic, assigning specific archetypes (e.g., The Hierophant, The Fool) to specific
 
-    functional roles.
+  functional roles.
 
 - **Why**: To provide a consistent, engaging, and context-aware persona that evolves with the task, enhancing the
 
-    human-AI bond.
+  human-AI bond.
 
 #### III. The Seven-Agent Matrix (Tarot Mask Mechanic)
 

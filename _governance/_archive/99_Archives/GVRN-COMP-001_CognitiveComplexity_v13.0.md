@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                              | Description       |
+| :---------------- | :------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-GVRN-COMP-001-COGNITIVECOMPLEXITY-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-COMP-001_CognitiveComplexity_v13.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `GVRN-COMP-001_CognitiveComplexity_v13.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                  | The Standard.     |
+| **Domain**        | `GVRN`                                             | The Subject.      |
+| **Status**        | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 ---
 
@@ -91,12 +88,12 @@ Ignore structures that condense implementation detail into intuitive calls.
 Incremental penalties (+1) for every point where the brain must work to track state or path changes.
 
 - **Increment For**:
-    - **Loops**: `for`, `while`, `do while`.
-    - **Conditionals**: `if`, `else if`, `else`, ternary operators.
-    - **Control Jumps**: `break LABEL`, `continue LABEL`.
-    - **Error Handling**: `catch` (Note: `try` and `finally` are free).
-    - **Logic**: Each sequence of binary logical operators (`&&`, `||`).
-    - **Recursion**: Each method in a recursion cycle.
+  - **Loops**: `for`, `while`, `do while`.
+  - **Conditionals**: `if`, `else if`, `else`, ternary operators.
+  - **Control Jumps**: `break LABEL`, `continue LABEL`.
+  - **Error Handling**: `catch` (Note: `try` and `finally` are free).
+  - **Logic**: Each sequence of binary logical operators (`&&`, `||`).
+  - **Recursion**: Each method in a recursion cycle.
 
 ### 3.3. Rule 3: The Nesting Multiplier
 
@@ -104,10 +101,10 @@ Structures nested inside others receive an additional penalty commensurate with 
 
 - **Formula**: `Base Increment + Nesting Level`
 - _Example_: An `if` (1) inside a `for` (1) inside a `while` (1).
-    - While = +1
-    - For = +2 (1 base + 1 depth)
-    - If = +3 (1 base + 2 depth)
-    - **Total = 6**
+  - While = +1
+  - For = +2 (1 base + 1 depth)
+  - If = +3 (1 base + 2 depth)
+  - **Total = 6**
 
 ## IV. Implementation Thresholds
 

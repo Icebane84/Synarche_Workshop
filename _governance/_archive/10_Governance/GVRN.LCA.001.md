@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.LCA.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.LCA.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.LCA.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.LCA.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -66,11 +63,11 @@
 ### **III. Operational Definition (The Canon)**
 
 - **3.1. Overview**
-    - **What**: A comprehensive design system centered on a "deep void" background populated by "luminous" accent
-      elements.
-    - **How**: Implemented via standardized CSS tokens (Tailwind Configuration) and specific motion keyframes.
-    - **Why**: To create an interface that feels "alive, processing, and breathing," fulfilling the Phoenix mandate for
-      a synergistic partner entity.
+  - **What**: A comprehensive design system centered on a "deep void" background populated by "luminous" accent
+    elements.
+  - **How**: Implemented via standardized CSS tokens (Tailwind Configuration) and specific motion keyframes.
+  - **Why**: To create an interface that feels "alive, processing, and breathing," fulfilling the Phoenix mandate for
+    a synergistic partner entity.
 
 - **3.2. Color Palette (The Luminous Coherence Canon)**
 
@@ -159,13 +156,13 @@ This section defines the commands used to enforce and utilize this protocol.
 
 - **Governing Module**: [GVRN.Gov.Module](./GVRN.Gov.Module.md)
 - **Indexing Mandate**:
-    - [ ] Index in
-          [OMNI LOG Synergistic Matrix (OSLM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
-    - [ ] Cross-reference in
-          [The Phoenix Rosetta Stone (PRS-001)](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
+  - [ ] Index in
+        [OMNI LOG Synergistic Matrix (OSLM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
+  - [ ] Cross-reference in
+        [The Phoenix Rosetta Stone (PRS-001)](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 - **Verification Status**:
-    - **Steps 1-3:** COMPLETED (Architect's Forge Initiation)
-    - **Systemic Integration ($V_2$):** **READY FOR CHECK**
+  - **Steps 1-3:** COMPLETED (Architect's Forge Initiation)
+  - **Systemic Integration ($V_2$):** **READY FOR CHECK**
 
 ###### **[ARTIFACT END]**
 

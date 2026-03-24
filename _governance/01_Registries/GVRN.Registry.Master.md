@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Registry.Master` | The Sovereign ID. |
-| **Official Name** | `GVRN.Registry.Master.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Registry.Master`          | The Sovereign ID. |
+| **Official Name** | `GVRN.Registry.Master.md`       | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -83,7 +80,7 @@
 | **GVRN.SOUL.Axion**                   | [The Axion Soul](../00_Codex/GVRN.SOUL.Axion.md)                      | `v15.0` | `CANONIZED` |
 | **GVRN.SOUL.Sentinel**                | [The Sentinel Soul](../00_Codex/GVRN.SOUL.Sentinel.md)                | `v15.0` | `CANONIZED` |
 | **GVRN.SOUL.Sophia**                  | [The Sophia Soul](../00_Codex/GVRN.SOUL.Sophia.md)                    | `v15.0` | `CANONIZED` |
-| **GVRN.TRIAD.Subsystem**               | [The Triad Subsystem](../00_Codex/GVRN.TRIAD.Subsystem.md)            | `v15.0` | `CANONIZED` |
+| **GVRN.TRIAD.Subsystem**              | [The Triad Subsystem](../00_Codex/GVRN.TRIAD.Subsystem.md)            | `v15.0` | `CANONIZED` |
 | **GVRN.AG.003**                       | [Agent Persona](../10_Governance/GVRN.AG.003.md)                      | `v15.0` | `ACTIVE`    |
 | **GVRN.CORE.Principles**              | [Governing Principles](../40_System/GVRN.CORE.GoverningPrinciples.md) | `v15.0` | `CANONIZED` |
 | **GVRN.Registry.KPI**                 | [The Master KPI Registry](GVRN.Registry.KPI.md)                       | `v15.0` | `CANONIZED` |
@@ -105,11 +102,11 @@
 
 ## **III. CAPABILITIES (The Skills)**
 
-| ID                     | Title                                                                             | Version | Status   |
-| :--------------------- | :-------------------------------------------------------------------------------- | :------ | :------- |
-| **SYNG.README.Skills** | [Skills Registry](../../.agent/skills/README.md)                                  | `v15.0` | `ACTIVE` |
-| **SYNG.SKILL.SOUL**    | [Soul Forging Skill](../../.agent/skills/Soul%20Forging/README.md)                | `v15.0` | `ACTIVE` |
-| **SYNG.SKILL.DSR**     | [Detect Synergies Skill](../../.agent/skills/Detect%20Synergies/README.md)         | `v15.0` | `ACTIVE` |
+| ID                      | Title                                                                                | Version | Status   |
+| :---------------------- | :----------------------------------------------------------------------------------- | :------ | :------- |
+| **SYNG.README.Skills**  | [Skills Registry](../../.agent/skills/README.md)                                     | `v15.0` | `ACTIVE` |
+| **SYNG.SKILL.SOUL**     | [Soul Forging Skill](../../.agent/skills/Soul%20Forging/README.md)                   | `v15.0` | `ACTIVE` |
+| **SYNG.SKILL.DSR**      | [Detect Synergies Skill](../../.agent/skills/Detect%20Synergies/README.md)           | `v15.0` | `ACTIVE` |
 | **SYNG.SKILL.SOUL_VER** | [Soul Verification](../../.agent/skills/Soul%20Forging/scripts/soul_forge_verify.py) | `v15.0` | `ACTIVE` |
 
 ## **III. AVATAR Macro-System (The Persona)**
@@ -215,11 +212,11 @@
 | **GVRN.Documentation.Checklist**        | [The Genesis Gate](../08_Documentation/GVRN.Documentation.Checklist.md)       | `v15.0` | `CANONIZED` |
 | **GVRN.Documentation.Glossary**         | [Master Phoenix Lexicon](../08_Documentation/GVRN.Documentation.Glossary.md)  | `v15.0` | `CANONIZED` |
 | **GVRN.Documentation.Arch**             | [Architect's Compass](../08_Documentation/GVRN.Documentation.Architecture.md) | `v15.0` | `CANONIZED` |
-| **GVRN.Documentation.Synergy**     | [Relational Weaving](../../08_Documentation/GVRN.Documentation.Synergy.md)     | `v15.0` | `ACTIVE`    |
-| **GVRN.Documentation.Audit**       | [Musashi Audit](../../08_Documentation/GVRN.Documentation.Audit.md)           | `v15.0` | `ACTIVE`    |
-| **GVRN.Documentation.Validation**  | [Truth Validation](../../08_Documentation/GVRN.Documentation.Validation.md)    | `v15.0` | `ACTIVE`    |
-| **GVRN.Documentation.Scaffolding** | [Omega Scaffolding](../../08_Documentation/GVRN.Documentation.Scaffolding.md) | `v15.0` | `ACTIVE`    |
-| **GVRN.CSL.DocEvolution**          | [Doc Evolution CSL](../../06_Learning/GVRN.CSL.DocumentationEvolution.md)     | `v15.0` | `ACTIVE`    |
+| **GVRN.Documentation.Synergy**          | [Relational Weaving](../../08_Documentation/GVRN.Documentation.Synergy.md)    | `v15.0` | `ACTIVE`    |
+| **GVRN.Documentation.Audit**            | [Musashi Audit](../../08_Documentation/GVRN.Documentation.Audit.md)           | `v15.0` | `ACTIVE`    |
+| **GVRN.Documentation.Validation**       | [Truth Validation](../../08_Documentation/GVRN.Documentation.Validation.md)   | `v15.0` | `ACTIVE`    |
+| **GVRN.Documentation.Scaffolding**      | [Omega Scaffolding](../../08_Documentation/GVRN.Documentation.Scaffolding.md) | `v15.0` | `ACTIVE`    |
+| **GVRN.CSL.DocEvolution**               | [Doc Evolution CSL](../../06_Learning/GVRN.CSL.DocumentationEvolution.md)     | `v15.0` | `ACTIVE`    |
 | **GVRN.Documentation.Presentation**     | [Aesthetic Standard](../08_Documentation/GVRN.Documentation.Presentation.md)  | `v15.0` | `CANONIZED` |
 | **GVRN.Documentation.Coding**           | [Coding Standard](../08_Documentation/GVRN.Documentation.Coding.md)           | `v15.0` | `CANONIZED` |
 | **GVRN.Documentation.DSA.Protocol**     | [DSA Protocol](../08_Documentation/GVRN.Documentation.DSA.Protocol.md)        | `v15.0` | `CANONIZED` |

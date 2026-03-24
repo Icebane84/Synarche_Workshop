@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.AM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.AM.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.AM.001`                 | The Sovereign ID. |
+| **Official Name** | `GVRN.AM.001.md`              | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -130,9 +127,9 @@ iterative reinforcement.
 ### 6.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Precision +15**
-    - _Mechanism_: Accurate weighting reduces hallucination and improves retrieval relevance.
+  - _Mechanism_: Accurate weighting reduces hallucination and improves retrieval relevance.
 - **Passive Ability**: **Synaptic Plasticity**
-    - _Effect_: Increases XP gain from "Learning" events by 10%.
+  - _Effect_: Increases XP gain from "Learning" events by 10%.
 
 ### 6.2 Reference
 

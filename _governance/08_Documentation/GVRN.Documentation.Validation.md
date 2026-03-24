@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Documentation.Validation` | The Sovereign ID. |
+| Key               | Value                              | Description       |
+| :---------------- | :--------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Documentation.Validation`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Documentation.Validation.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**                  | The Standard.     |
+| **Domain**        | `GVRN`                             | The Subject.      |
+| **Status**        | `[CANONIZED]`                      | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`    | The Network.      |
 
 ---
 
@@ -28,20 +25,20 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                | Mitigation                                    |
-| :------------------ | :-------------------------------------------- |
-| **Hallucination**   | Mandatory origin tagging for all information. |
-| **Truth Decay**     | Regular verification against core axioms.     |
+| Risk              | Mitigation                                    |
+| :---------------- | :-------------------------------------------- |
+| **Hallucination** | Mandatory origin tagging for all information. |
+| **Truth Decay**   | Regular verification against core axioms.     |
 
 ---
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID      | Relationship Type | Synergistic Impact                              |
-| :--------------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`         | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`       | `INDEXES`         | Tracks the state and presence of this artifact. |
-| `GVRN.Documentation.Audit`    | `SUPPORTED_BY`    | Validation feeds into the audit cycle.          |
+| Synergistic Artifact ID    | Relationship Type | Synergistic Impact                              |
+| :------------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`       | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`     | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `GVRN.Documentation.Audit` | `SUPPORTED_BY`    | Validation feeds into the audit cycle.          |
 
 ---
 
@@ -85,10 +82,10 @@ To prevent logic drift, the AI must perform a **Resonance Check** before committ
 
 ### **Actionable Prompt Packet (APP)**
 
-| Command ID           | Action                                                 | Impact     |
-| :------------------- | :----------------------------------------------------- | :--------- |
-| `CMD: VERIFY_ORIGIN` | Traces a data packet to its genesis source.            | Truth      |
-| `CMD: RES_CHECK`     | Evaluates the resonance of a synthesis with the Codex. | Coherence  |
+| Command ID           | Action                                                 | Impact    |
+| :------------------- | :----------------------------------------------------- | :-------- |
+| `CMD: VERIFY_ORIGIN` | Traces a data packet to its genesis source.            | Truth     |
+| `CMD: RES_CHECK`     | Evaluates the resonance of a synthesis with the Codex. | Coherence |
 
 ### **[ARTIFACT END]**
 

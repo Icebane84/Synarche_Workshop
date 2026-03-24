@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.MasterAudit` | The Sovereign ID. |
-| **Official Name** | `GVRN.ACT.MasterAudit.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                          | Description       |
+| :---------------- | :----------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.MasterAudit`         | The Sovereign ID. |
+| **Official Name** | `GVRN.ACT.MasterAudit.md`      | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `GVRN`                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                     | The Lifecycle.    |
 | **Relations**     | `DEFINED_BY: GVRN.REG.Lexicon` | The Network.      |
-
-
-
 
 ---
 
@@ -35,11 +32,11 @@
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.REG.OSLM` | `VERIFIES` | Audits the relational health of the links matrix. |
-| `GVRN.ID.Standard` | `ENFORCES` | Ensures all IDs across the workspace are compliant. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                                  |
+| :---------------------- | :---------------- | :-------------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework.     |
+| `GVRN.REG.OSLM`         | `VERIFIES`        | Audits the relational health of the links matrix.   |
+| `GVRN.ID.Standard`      | `ENFORCES`        | Ensures all IDs across the workspace are compliant. |
 
 ---
 
@@ -51,9 +48,9 @@
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
 
@@ -77,12 +74,12 @@ Every audit must pass through the following seven gates to achieve OMEGA status:
 
 ## II. Audit Command Suite
 
-| Command | Action | Scope |
-| :--- | :--- | :--- |
-| `CMD: AUDIT_LINKS` | Scans for broken or absolute paths. | Global |
-| `CMD: AUDIT_RNC` | Verifies ID and filename alignment. | Global |
-| `CMD: AUDIT_HEADERS` | Checks for UIP-V15 Block A-G presence. | Global |
-| `CMD: AUDIT_SYNERGY` | Validates OSLM adjacency and bi-directionality. | OSLM |
+| Command              | Action                                          | Scope  |
+| :------------------- | :---------------------------------------------- | :----- |
+| `CMD: AUDIT_LINKS`   | Scans for broken or absolute paths.             | Global |
+| `CMD: AUDIT_RNC`     | Verifies ID and filename alignment.             | Global |
+| `CMD: AUDIT_HEADERS` | Checks for UIP-V15 Block A-G presence.          | Global |
+| `CMD: AUDIT_SYNERGY` | Validates OSLM adjacency and bi-directionality. | OSLM   |
 
 ---
 

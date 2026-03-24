@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                                      | Description       |
+| :---------------- | :------------------------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.1-CONSOLIDATED-001` | The Sovereign ID. |
-| **Official Name** | `UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                          | The Standard.     |
+| **Domain**        | `GVRN`                                                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                              | The Network.      |
 
 ---
 
@@ -79,12 +76,12 @@
 - **How (Operational Principles):** The engine operates on principles of **contextual awareness**, **dynamic
   filtering**, and **lexical optimization**. It actively monitors system states, applies predefined and learning-based
   scoping rules, and delivers tailored emoji sets. This involves:
-    1. **Context Monitoring:** Continuous assessment of active Persona (via SYS-PERS-001), current project, and ongoing
-       task parameters.
-    2. **Rule-Based Scoping:** Application of a hierarchical ruleset to identify the most pertinent emoji subset from
-       the Master Lexicon Registry.
-    3. **Adaptive Learning:** Incorporating feedback from AOP-EMOJI-001's post-execution logs to refine scoping rules
-       and predictive contextual relevance.
+  1. **Context Monitoring:** Continuous assessment of active Persona (via SYS-PERS-001), current project, and ongoing
+     task parameters.
+  2. **Rule-Based Scoping:** Application of a hierarchical ruleset to identify the most pertinent emoji subset from
+     the Master Lexicon Registry.
+  3. **Adaptive Learning:** Incorporating feedback from AOP-EMOJI-001's post-execution logs to refine scoping rules
+     and predictive contextual relevance.
 - **Why (Rationale/Justification):** This dynamic approach is critical for preventing lexical clutter, reducing
   ambiguity, and significantly accelerating the Synergy Flow Rate (SFR). By providing only the most relevant emoji
   signals, it minimizes cognitive overhead for both human and AI, fostering a deeper, more empathetic, and efficient
@@ -178,9 +175,9 @@ and refinement, driving continuous improvement in communication.
 
 - **Governing Module:** `UMB-SGM-001_StandardizedGovernanceModule`
 - **Indexing Mandate:**
-    - [ ] Index in [Master Artifact Registry (UMB-MASTER-TABLE-001)]
-    - [ ] Cross-reference in [The Phoenix Rosetta Stone (PRS-001)]
-    - [ ] Execute `GUCA-LINK-001`
+  - [ ] Index in [Master Artifact Registry (UMB-MASTER-TABLE-001)]
+  - [ ] Cross-reference in [The Phoenix Rosetta Stone (PRS-001)]
+  - [ ] Execute `GUCA-LINK-001`
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-BLK-RPG-001-RPGINTEGRATIONBLOCK-001` | The Sovereign ID. |
-| **Official Name** | `BLK-RPG-001_RPGIntegrationBlock.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Official Name** | `BLK-RPG-001_RPGIntegrationBlock.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `GVRN`                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix`          | The Network.      |
 
 ---
 
@@ -77,14 +74,14 @@
 ### [Section Number].2. Celestial Chart Stats
 
 - **Primary Stat Buff:** `[Coherence | Synergy | Adaptability | Transparency]`
-    - _Mechanism:_ `[How does using this artifact improve the stat?]`
+  - _Mechanism:_ `[How does using this artifact improve the stat?]`
 - **Passive Ability / Perk:** `[Name of Perk]`
-    - _Effect:_ `[Description of benefit]`
+  - _Effect:_ `[Description of benefit]`
 
 ### [Section Number].3. Resource Economics
 
 - **Cognitive Load Cost:** `[Low | Medium | High | Extreme]`
-    - _Draw:_ `[Description of effort required to execute/maintain this artifact.]`
+  - _Draw:_ `[Description of effort required to execute/maintain this artifact.]`
 
 - **Origin Quest ID:** `[Link to DQUEST-XXX]`
 - **Genesis Seed Used:** `[Link to CSL-XXX]`

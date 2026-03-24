@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.HEPHAESTUS.001THEMASTERARTIFICERSFORGE` | The Sovereign ID. |
+| Key               | Value                                            | Description       |
+| :---------------- | :----------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.HEPHAESTUS.001THEMASTERARTIFICERSFORGE`    | The Sovereign ID. |
 | **Official Name** | `GVRN.HEPHAESTUS.001THEMASTERARTIFICERSFORGE.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                                | The Standard.     |
+| **Domain**        | `GVRN`                                           | The Subject.      |
+| **Status**        | `ACTIVE`                                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 ---
 

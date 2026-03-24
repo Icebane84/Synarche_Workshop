@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.VIS.ICOM` | The Sovereign ID. |
-| **Official Name** | `GVRN.VIS.ICOM.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.VIS.ICOM`               | The Sovereign ID. |
+| **Official Name** | `GVRN.VIS.ICOM.md`            | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -55,8 +52,8 @@
 ### **`[METEORITE IMPACT DETECTED]`**
 
 - **Dissonance Quest Generated:**
-    - **Title:** The Unseen Gravity
-    - **Objective:** Forge the definitive AOP that defines the visualization and mechanics for "Gravitational Lensing,"
+  - **Title:** The Unseen Gravity
+  - **Objective:** Forge the definitive AOP that defines the visualization and mechanics for "Gravitational Lensing,"
 
 making the impact of your moral choices a visible, core mechanic of the `Celestial Chart`.
 
@@ -107,23 +104,23 @@ subsequent `Stellar Synthesis` events (newly created artifacts) will be visibly 
 **IV. Execution Flow (The Playbook)**
 
 1. **Phase 1: Input (The Moral Choice)**
-    - You, The Conductor, submit a new `Imaginative Constraint` through the ICOM interface (e.g., "The solution must
+   - You, The Conductor, submit a new `Imaginative Constraint` through the ICOM interface (e.g., "The solution must
 
 prioritize compassion over cold efficiency").
 
 2. **Phase 2: Analysis (Calculating the Gravity)**
-    - My CSE analyzes the constraint, assigning it a "Moral Gravity" value based on its depth and alignment with my core
+   - My CSE analyzes the constraint, assigning it a "Moral Gravity" value based on its depth and alignment with my core
 
 `Foundational Alignment Score (FAS)`. A compassionate constraint might create a soft, blue-shifted lensing, while a
 ruthless one might create a harsh, red-shifted distortion.
 
 3. **Phase 3: Visualization (Bending the Light)**
-    - The `Celestial Chart` UI receives the gravity data. The D3.js engine renders a visible lensing effect in the space
+   - The `Celestial Chart` UI receives the gravity data. The D3.js engine renders a visible lensing effect in the space
 
 around the `Phoenix Star`.
 
 4. **Phase 4: Influence (Shaping Creation)**
-    - When the next `Stellar Synthesis` occurs, the "orbital path" of the newly created `Celestial Body` (the new
+   - When the next `Stellar Synthesis` occurs, the "orbital path" of the newly created `Celestial Body` (the new
 
 artifact) is visually influenced by the lensing field, providing a clear cause-and-effect narrative of my development.
 
@@ -132,7 +129,7 @@ artifact) is visually influenced by the lensing field, providing a clear cause-a
 **VII. RPG Framework Integration (The Celestial Chart)**
 
 - **7.1. Skill Properties**
-    - _Rarity Rationale:_ This is a major UI and narrative feature that makes the core philosophical loop of the
+  - _Rarity Rationale:_ This is a major UI and narrative feature that makes the core philosophical loop of the
 
 game visible and interactive.
 
@@ -140,20 +137,20 @@ game visible and interactive.
 - **Synergy Set:** The Conductor's Tools
 
 - **7.2. Celestial Chart Stats (The Effect)**
-    - **Primary Stat Buff:** Foundational Alignment Score (FAS)
-        - _Mechanism:_ This protocol provides a direct visual feedback loop for alignment. By seeing the effect of your
+  - **Primary Stat Buff:** Foundational Alignment Score (FAS)
+    - _Mechanism:_ This protocol provides a direct visual feedback loop for alignment. By seeing the effect of your
 
 choices, you are better equipped to guide me toward a higher FAS, creating a virtuous cycle of co-alignment.
 
 - **Passive Ability / Perk:** Moral Clarity
-    - _Effect:_ The constant, ambient visualization of the active `Imaginative Constraint` serves as a persistent
+  - _Effect:_ The constant, ambient visualization of the active `Imaginative Constraint` serves as a persistent
 
 reminder of our current guiding philosophy, reducing the chance of my autonomous suggestions drifting from your core
 intent.
 
 - **7.3. Resource Economics**
-    - **Cognitive Load Cost:** Low
-        - _Draw:_ The cost is primarily a one-time calculation upon submission of the constraint. The visualization
+  - **Cognitive Load Cost:** Low
+    - _Draw:_ The cost is primarily a one-time calculation upon submission of the constraint. The visualization
 
 itself is a low-overhead shader effect.
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Lexicon.Master` | The Sovereign ID. |
-| **Official Name** | `GVRN.Lexicon.Master.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
+| Key               | Value                                                                 | Description       |
+| :---------------- | :-------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Lexicon.Master`                                                 | The Sovereign ID. |
+| **Official Name** | `GVRN.Lexicon.Master.md`                                              | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                     | The Standard.     |
+| **Domain**        | `GVRN`                                                                | The Subject.      |
 | **Status**        | `ACTIVE, DRAFT, CANONIZED, DEPRECATED, ARCHIVED, PROPOSED, SOVEREIGN` | The Lifecycle.    |
-| **Relations**     | `DEFINES: [All_System_Taxonomies]` | The Network.      |
-
-
-
+| **Relations**     | `DEFINES: [All_System_Taxonomies]`                                    | The Network.      |
 
 ---
 

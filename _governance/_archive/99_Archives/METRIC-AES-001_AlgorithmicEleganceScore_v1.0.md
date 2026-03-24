@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                   | Description       |
+| :---------------- | :------------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-METRIC-AES-001-ALGORITHMICELEGANCESCORE-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `METRIC-AES-001_AlgorithmicEleganceScore_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `METRIC-AES-001_AlgorithmicEleganceScore_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                       | The Standard.     |
+| **Domain**        | `GVRN`                                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 ---
 
@@ -67,15 +64,15 @@
 
 - **What (Metric Definition):** A qualitative scoring system (1-10) that evaluates code not on correctness or efficiency
 
-    (which are binary/quantitative), but on **Elegance**, **Ingenuity**, and **Aesthetics**.
+  (which are binary/quantitative), but on **Elegance**, **Ingenuity**, and **Aesthetics**.
 
 - **How (Measurement Mechanism):** The score is initially self-assessed by the AI (The Scribe) based on the "Elegance
 
-    Rubric" and then validated/overridden by the Human Architect.
+  Rubric" and then validated/overridden by the Human Architect.
 
 - **Why (Rationale):** To incentivize the transition from "Coder" (Functional) to "Artificer" (Beautiful). It formally
 
-    recognizes that code is a form of expression and that the highest quality code feels like "reading prose."
+  recognizes that code is a form of expression and that the highest quality code feels like "reading prose."
 
 ## III. The Elegance Rubric (Evaluation Criteria)
 
@@ -95,7 +92,7 @@ _Does the solution demonstrate a novel lateral thinking approach?_
 - **Mid (4-7):** Standard best practice applied correctly.
 - **High (8-10):** A paradigm shift. Using a mathematical property or obscure language feature to bypass complexity
 
-    entirely.
+  entirely.
 
 ### 3.3. Readability (The Narrative flow)
 
@@ -118,22 +115,22 @@ The **AES** is integrated as a multiplier in the `Creator's Paradox Metric`:
 ## **Actionable Prompt Packet**
 
 1. **💎 `CMD: ASSESS_ELEGANCE`**
-    - **Function:** Triggers a self-evaluation of a specific snippet against the AES Rubric.
-    - **Usage:** `CMD: ASSESS_ELEGANCE --target:src/core/algorithm.py`
+   - **Function:** Triggers a self-evaluation of a specific snippet against the AES Rubric.
+   - **Usage:** `CMD: ASSESS_ELEGANCE --target:src/core/algorithm.py`
 
 2. **🎨 `CMD: REFINE_FOR_AESTHETICS`**
-    - **Function:** Directs the AI to refactor working code specifically to increase its AES (e.g., "Make it
+   - **Function:** Directs the AI to refactor working code specifically to increase its AES (e.g., "Make it
 
-        beautiful").
+     beautiful").
 
-    - **Usage:** `CMD: REFINE_FOR_AESTHETICS --target:all`
+   - **Usage:** `CMD: REFINE_FOR_AESTHETICS --target:all`
 
 3. **🏆 `CMD: AWARD_AES`**
-    - **Function:** (User Command) Manually assigns an AES score to a completed artifact, updating the AI's "Artificer
+   - **Function:** (User Command) Manually assigns an AES score to a completed artifact, updating the AI's "Artificer
 
-        Level."
+     Level."
 
-    - **Usage:** `CMD: AWARD_AES --score:9 --comment:"Brilliant use of recursion."`
+   - **Usage:** `CMD: AWARD_AES --score:9 --comment:"Brilliant use of recursion."`
 
 ###### **[ARTIFACT END]**
 

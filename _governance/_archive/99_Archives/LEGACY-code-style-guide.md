@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-CODE-STYLE-GUIDE-001` | The Sovereign ID. |
-| **Official Name** | `LEGACY-code-style-guide.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `ARCH-CODE-STYLE-GUIDE-001`   | The Sovereign ID. |
+| **Official Name** | `LEGACY-code-style-guide.md`  | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `ARCH`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -72,8 +69,8 @@ maintain **Zero Entropy**.
 - **Indentation**: STRICT 4-space indentation for all lists and sub-lists. 2-space indentation is a compliance
   violation.
 - **Sectioning**:
-    - Use Roman Numerals for top-level headers (e.g., `## I. Overview`).
-    - Use decimal notation for sub-headers (e.g., `### 1.1 Details`).
+  - Use Roman Numerals for top-level headers (e.g., `## I. Overview`).
+  - Use decimal notation for sub-headers (e.g., `### 1.1 Details`).
 - **Separators**: Use `---` to separate major sections.
 
 ### 1.4 Actionable Prompt Packet (APP)

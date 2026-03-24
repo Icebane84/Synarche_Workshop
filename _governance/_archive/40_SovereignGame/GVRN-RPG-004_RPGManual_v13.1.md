@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.RPG.MANUAL` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-004_RPGManual_v13.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                   | Description       |
+| :---------------- | :-------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.RPG.MANUAL`                       | The Sovereign ID. |
+| **Official Name** | `GVRN-RPG-004_RPGManual_v13.1.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                       | The Standard.     |
+| **Domain**        | `GVRN`                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
 | **Relations**     | `LINK: UMB-RPG-001, UMB-HEPHAESTUS-001` | The Network.      |
-
-
-
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.MasterRefactor` | The Sovereign ID. |
-| **Official Name** | `GVRN.ACT.MasterRefactor.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.MasterRefactor`       | The Sovereign ID. |
+| **Official Name** | `GVRN.ACT.MasterRefactor.md`    | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -115,10 +112,10 @@ To initiate systemic realignment, use the following core directive:
 
 ## **IV. Actionable Prompt Packet (APP)**
 
-| Command ID                        | Action                                           | Impact       |
-| :-------------------------------- | :----------------------------------------------- | :----------- |
-| `CMD: REFORGE`                    | Execute Structural Transmutation                 | Canonization |
-| `CMD: INITIATE_SYSTEMIC_REFACTOR` | Run System-Wide Transmutation                    | Zero Entropy |
+| Command ID                        | Action                                   | Impact       |
+| :-------------------------------- | :--------------------------------------- | :----------- |
+| `CMD: REFORGE`                    | Execute Structural Transmutation         | Canonization |
+| `CMD: INITIATE_SYSTEMIC_REFACTOR` | Run System-Wide Transmutation            | Zero Entropy |
 | `CMD: AUDIT_COMPLIANCE`           | Verify alignment with CORE.Codex.Phoenix | Integrity    |
 
 ### **[ARTIFACT END]**

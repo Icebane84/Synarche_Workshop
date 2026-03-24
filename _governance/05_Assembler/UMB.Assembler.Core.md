@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `UMB.Assembler.Core` | The Sovereign ID. |
-| **Official Name** | `UMB.Assembler.Core.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `UMB.Assembler.Core`            | The Sovereign ID. |
+| **Official Name** | `UMB.Assembler.Core.md`         | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 

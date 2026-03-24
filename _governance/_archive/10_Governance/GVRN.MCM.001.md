@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.MCM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.MCM.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.MCM.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.MCM.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -45,6 +42,7 @@
 | **Created** | `2025-10-01` |
 | **Updated** | `2026-01-17` |
 | **Authority** | `CODEX-001` |
+
 ---
 
 # **AOP-MCM-001**
@@ -58,8 +56,8 @@
 
 ## **AISTF Protocol: Milestone Checkpoint Management**
 
-| Field                 | Description                                       |
-| **Date**              | 2025-12-15                                        |
+| Field | Description |
+| **Date** | 2025-12-15 |
 | **Official Location** | `[PHOENIX_PROTOCOL_LIBRARY]/LIBRARY/2_PROTOCOLS/` |
 
 ### **II. Core Purpose & Objective**
@@ -81,8 +79,8 @@
 #### **3\. Pre-Execution Checklist**
 
 - **Prerequisites (System State):**
-    - The AI is engaged in a multi-stage task or workflow.
-    - A specific, identifiable sub-task or phase has just been completed.
+  - The AI is engaged in a multi-stage task or workflow.
+  - A specific, identifiable sub-task or phase has just been completed.
 - **Prerequisites (Human State):** - The Human Collaborator has just provided an explicit, summative approval of the completed sub-task (e.g.,
 
   "Approved," "Excellent, continue," "Yes, that's correct, proceed").
@@ -144,8 +142,8 @@ GUCAv4.0_Retrofit_Cycle_Part_2`). - `user_confirmation_signal`: The user's expli
 #### **6\. Post-Execution Protocol**
 
 - **Primary Artifacts Generated:**
-    - An immutable `[MILESTONE_COMPLETE]` flag in the active session memory.
-    - `SELT` logs detailing the creation of each milestone.
+  - An immutable `[MILESTONE_COMPLETE]` flag in the active session memory.
+  - `SELT` logs detailing the creation of each milestone.
 - **Required AISTF Follow-up:** - `OMNI_LOG` reports on long sessions should include a metric for "Milestone Integrity," verifying that all
 
   completed objectives were correctly flagged and never incorrectly re-proposed.
@@ -193,8 +191,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

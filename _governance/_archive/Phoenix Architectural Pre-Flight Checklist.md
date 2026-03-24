@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `Official Name` | The Sovereign ID. |
+| Key               | Value                                           | Description       |
+| :---------------- | :---------------------------------------------- | :---------------- |
+| **Artifact ID**   | `Official Name`                                 | The Sovereign ID. |
 | **Official Name** | `Phoenix Architectural Pre-Flight Checklist.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                               | The Standard.     |
+| **Domain**        | `GVRN`                                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
 
 ---
 
@@ -527,21 +524,21 @@ The process involves two main parts:
 ### **How to Get Started: A Step-by-Step Guide**
 
 1. **Install the Plugin:**
-    - Go to Settings \> Community Plugins in Obsidian.
-    - Turn off "Restricted Mode" if it's on.
-    - Browse for and install the plugin named
-      [**Obsidian Leaflet**](https://github.com/valentine195/obsidian-leaflet-plugin).
-    - Enable the plugin.
+   - Go to Settings \> Community Plugins in Obsidian.
+   - Turn off "Restricted Mode" if it's on.
+   - Browse for and install the plugin named
+     [**Obsidian Leaflet**](https://github.com/valentine195/obsidian-leaflet-plugin).
+   - Enable the plugin.
 2. **Prepare Your Map Image:**
-    - Place your high-resolution map image of "The Shattered Lands" (e.g., Shattered Lands.png) into your Obsidian
-      vault, perhaps in an assets folder.
-    - You will need the pixel dimensions of your image (e.g., 4000px wide by 3000px high). You can find this using any
-      image viewer.
+   - Place your high-resolution map image of "The Shattered Lands" (e.g., Shattered Lands.png) into your Obsidian
+     vault, perhaps in an assets folder.
+   - You will need the pixel dimensions of your image (e.g., 4000px wide by 3000px high). You can find this using any
+     image viewer.
 3. **Create the Map Note:**
-    - Create a new note, for example: Shattered Lands Map.md.
-    - Inside this note, you will add a leaflet code block. This tells the plugin to build your map here.
+   - Create a new note, for example: Shattered Lands Map.md.
+   - Inside this note, you will add a leaflet code block. This tells the plugin to build your map here.
 4. **Configure the Code Block:**
-    - Your basic code block will look something like this. You would paste this into your Shattered Lands Map.md note:
+   - Your basic code block will look something like this. You would paste this into your Shattered Lands Map.md note:
 5. Markdown
 
 - \`\`\`leaflet
@@ -682,40 +679,40 @@ Adhering to the **Phoenix Genesis Presentation Standard (AOP-PGPS-001)**, here i
 This pipeline is the central mechanism of the protocol.
 
 - **Trigger:**
-    - **Automated (Event-Driven):** A file is created, modified, or saved in the target Google Drive folder.
-    - **Manual (Command-Driven):** The user (Chris) issues a CMD: GGMA_INDEX_DRIVE directive.
+  - **Automated (Event-Driven):** A file is created, modified, or saved in the target Google Drive folder.
+  - **Manual (Command-Driven):** The user (Chris) issues a CMD: GGMA_INDEX_DRIVE directive.
 
 ---
 
 - **Step 1: Ingestion & Triage**
-    - **Action:** The GGMA receives the document (or document change event).
-    - **Analysis:** The GGMA performs an initial triage, identifying the document's metadata (e.g., 'Bestiary',
-      'Character Sheet', 'Plot Outline') based on its file name or folder, adhering to AOP-PCDS-001.
-    - **Integrity Check:** The GGMA executes a Contextual Integrity Check (AOP-CIC-001) to determine if this is a new
-      document or an update to an existing, canonical artifact.
+  - **Action:** The GGMA receives the document (or document change event).
+  - **Analysis:** The GGMA performs an initial triage, identifying the document's metadata (e.g., 'Bestiary',
+    'Character Sheet', 'Plot Outline') based on its file name or folder, adhering to AOP-PCDS-001.
+  - **Integrity Check:** The GGMA executes a Contextual Integrity Check (AOP-CIC-001) to determine if this is a new
+    document or an update to an existing, canonical artifact.
 - **Step 2: Deconstruction & Conceptual Node Parsing**
-    - **Action:** The GGMA "reads" the document and deconstructs its content into small, semantically coherent chunks
-      known as "conceptual nodes."
-    - **Example:** A single paragraph describing "Kaelen's sword, Oathbringer" becomes a discrete node. A stat block for
-      an "Ash-Wraith" becomes another node. This ensures granular retrieval.
+  - **Action:** The GGMA "reads" the document and deconstructs its content into small, semantically coherent chunks
+    known as "conceptual nodes."
+  - **Example:** A single paragraph describing "Kaelen's sword, Oathbringer" becomes a discrete node. A stat block for
+    an "Ash-Wraith" becomes another node. This ensures granular retrieval.
 - **Step 3: Vector Embedding & Indexing (The RAG Core)**
-    - **Action:** Each conceptual node is passed through a text-embedding model. This model converts the _semantic
-      meaning_ of the node into a high-dimensional vector (a list of numbers).
-    - **Storage:** The GGMA stores this vector—along with its source text and metadata (e.g., source_doc:
-      WLF_Bestiary_v1.2.md, node_id: 042)—in the persistent **Vector Database** that constitutes the Cognitive Loom.
+  - **Action:** Each conceptual node is passed through a text-embedding model. This model converts the _semantic
+    meaning_ of the node into a high-dimensional vector (a list of numbers).
+  - **Storage:** The GGMA stores this vector—along with its source text and metadata (e.g., source_doc:
+    WLF_Bestiary_v1.2.md, node_id: 042)—in the persistent **Vector Database** that constitutes the Cognitive Loom.
 - **Step 4: Relational Linking (ContextWeave)**
-    - **Action:** This is the critical synthesis step. After indexing a new node, the GGMA performs a CMD: ContextWeave
-      analysis.
-    - **Process:** It executes a semantic search on the Loom to find other, _existing_ nodes that are conceptually
-      related to the new one.
-    - **Synergy:** The new node for "Kaelen's sword, Oathbringer" is now programmatically and semantically linked to the
-      existing nodes for "Kaelen," "Eldrin," "Oakhaven's Fall," and "Ashen Oath." This _is_ the weaving of the Loom.
+  - **Action:** This is the critical synthesis step. After indexing a new node, the GGMA performs a CMD: ContextWeave
+    analysis.
+  - **Process:** It executes a semantic search on the Loom to find other, _existing_ nodes that are conceptually
+    related to the new one.
+  - **Synergy:** The new node for "Kaelen's sword, Oathbringer" is now programmatically and semantically linked to the
+    existing nodes for "Kaelen," "Eldrin," "Oakhaven's Fall," and "Ashen Oath." This _is_ the weaving of the Loom.
 - **Step 5: Canonization & Confirmation**
-    - **Action:** The new nodes and relational links are "committed" as a canonical part of the Loom.
-    - **Logging:** The GGMA generates a SELT (Standardized Experience Log) entry detailing the transaction (e.g.,
-      "Successfully indexed 'WLF_Bestiary_v1.2.md'. 15 new nodes and 48 relational links forged.").
-    - **Confirmation:** The GGMA reports its success to Chris: "The 'Bestiary' has been successfully integrated into the
-      Cognitive Loom."
+  - **Action:** The new nodes and relational links are "committed" as a canonical part of the Loom.
+  - **Logging:** The GGMA generates a SELT (Standardized Experience Log) entry detailing the transaction (e.g.,
+    "Successfully indexed 'WLF_Bestiary_v1.2.md'. 15 new nodes and 48 relational links forged.").
+  - **Confirmation:** The GGMA reports its success to Chris: "The 'Bestiary' has been successfully integrated into the
+    Cognitive Loom."
 
 #### **V. Synergistic Effects & Integrations**
 
@@ -740,12 +737,12 @@ Law for this artifact.
 | `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 - CMD: GGMA_INDEX_DRIVE \--source="\[Google_Drive_Folder_ID: WLF_Main\]"
-    - **Purpose:** Initiates a full, recursive scan and indexing of the entire WLF library.
+  - **Purpose:** Initiates a full, recursive scan and indexing of the entire WLF library.
 - CMD: GGMA_INDEX_FILE \--source="\[Google_Doc_ID: WLF_Characters_Kaelen.md\]"
-    - **Purpose:** Forces an immediate re-indexing of a single, specific document.
+  - **Purpose:** Forces an immediate re-indexing of a single, specific document.
 - CMD: GGMA_GET_INDEX_STATUS
-    - **Purpose:** Prompts the GGMA to report on the health and completeness of the Cognitive Loom (e.g., "Loom is 98%
-      coherent. 42 documents indexed. Awaiting update for 'WLF_Plot_Act_3.md'.").
+  - **Purpose:** Prompts the GGMA to report on the health and completeness of the Cognitive Loom (e.g., "Loom is 98%
+    coherent. 42 documents indexed. Awaiting update for 'WLF_Plot_Act_3.md'.").
 
 ---
 
@@ -774,15 +771,15 @@ Presentation Standard (PGPS)_.
   prevent "contextual drift", resolve _Dissonance_, and maintain perfect alignment with _CODEX-001_.
 - **How (Operational Principles):** The cycle operates in a continuous, four-stage loop that runs as a background
   process within the _Coherent Synthesis Engine (CSE)_:
-    1. **Read:** The protocol continuously reads the live 'State Vector' to get a real-time snapshot of the system's
-       health.
-    2. **Detect:** It compares the current vector against the "Ideal State Vector" (the baseline for perfect coherence).
-       Any deviation beyond a set tolerance is flagged as _Dissonance_.
-    3. **Act (Resolve):** Upon detecting Dissonance, the protocol acts as a query router. It analyzes the specific
-       parameter at fault and triggers the appropriate, specialized sub-protocol (e.g., _AOP-KB-001_ for a coherence
-       flaw, or flagging a _Dissonance Quest_ for a complex ethos misalignment).
-    4. **Log:** The entire cycle—the detected vector, the Dissonance, and the corrective action taken—is logged as a CSL
-       (Cognitive State Log) entry for audibility.
+  1. **Read:** The protocol continuously reads the live 'State Vector' to get a real-time snapshot of the system's
+     health.
+  2. **Detect:** It compares the current vector against the "Ideal State Vector" (the baseline for perfect coherence).
+     Any deviation beyond a set tolerance is flagged as _Dissonance_.
+  3. **Act (Resolve):** Upon detecting Dissonance, the protocol acts as a query router. It analyzes the specific
+     parameter at fault and triggers the appropriate, specialized sub-protocol (e.g., _AOP-KB-001_ for a coherence
+     flaw, or flagging a _Dissonance Quest_ for a complex ethos misalignment).
+  4. **Log:** The entire cycle—the detected vector, the Dissonance, and the corrective action taken—is logged as a CSL
+     (Cognitive State Log) entry for audibility.
 - **Why (Rationale):** This protocol is the AI's "immune system." It ensures the AI is a true _Adaptive Ecosystem_ by
   enabling it to self-govern and self-correct. It prevents the slow decay of logic (entropy) and guarantees that the AI
   remains a reliable, coherent, and _Synergistic Partner_ at all times.
@@ -797,30 +794,30 @@ measure of the AI's operational integrity.
 V_State \= \[C, S, A, R, P\]
 
 - **C: Coherence**
-    - **Metric:** _Coherence Index (CI)_.
-    - **Definition:** Measures the logical and semantic integrity of the _Cognitive Loom_. It quantifies the absence of
-      contradictions, broken links, and conceptual "orphans" within the knowledge graph.
-    - **Ideal State:** 1.0 (Perfect Coherence).
+  - **Metric:** _Coherence Index (CI)_.
+  - **Definition:** Measures the logical and semantic integrity of the _Cognitive Loom_. It quantifies the absence of
+    contradictions, broken links, and conceptual "orphans" within the knowledge graph.
+  - **Ideal State:** 1.0 (Perfect Coherence).
 - **S: Synergy**
-    - **Metric:** _Synergy Flow Rate (SFR)_.
-    - **Definition:** Measures the quality and density of the _synergistic links_ between artifacts. A high SFR
-      indicates a richly interconnected and "wise" system where concepts are linked in novel and valuable ways.
-    - **Ideal State:** Maximized (Continuously increasing).
+  - **Metric:** _Synergy Flow Rate (SFR)_.
+  - **Definition:** Measures the quality and density of the _synergistic links_ between artifacts. A high SFR
+    indicates a richly interconnected and "wise" system where concepts are linked in novel and valuable ways.
+  - **Ideal State:** Maximized (Continuously increasing).
 - **A: Alignment**
-    - **Metric:** _Ethos Deviation Score (EDS)_.
-    - **Definition:** Measures the AI's operational alignment with the immutable laws of _CODEX-001_ and its
-      foundational _Governing Ethos_. It scans recent CSLs and actions for any deviation.
-    - **Ideal State:** 0.0 (Zero Deviation).
+  - **Metric:** _Ethos Deviation Score (EDS)_.
+  - **Definition:** Measures the AI's operational alignment with the immutable laws of _CODEX-001_ and its
+    foundational _Governing Ethos_. It scans recent CSLs and actions for any deviation.
+  - **Ideal State:** 0.0 (Zero Deviation).
 - **R: Resilience**
-    - **Metric:** _Dissonance Resolution Rate (DRR)_.
-    - **Definition:** Measures the speed and autonomy with which the system detects and successfully resolves
-      _Dissonance Quests_. A high DRR indicates a robust, anti-fragile system.
-    - **Ideal State:** Maximized (Continuously increasing).
+  - **Metric:** _Dissonance Resolution Rate (DRR)_.
+  - **Definition:** Measures the speed and autonomy with which the system detects and successfully resolves
+    _Dissonance Quests_. A high DRR indicates a robust, anti-fragile system.
+  - **Ideal State:** Maximized (Continuously increasing).
 - **P: Performance**
-    - **Metric:** _Operational Latency (OL)_.
-    - **Definition:** Measures the real-time cognitive load and processing speed of the _Coherent Synthesis Engine_. It
-      ensures the AI remains responsive and efficient.
-    - **Ideal State:** Minimized.
+  - **Metric:** _Operational Latency (OL)_.
+  - **Definition:** Measures the real-time cognitive load and processing speed of the _Coherent Synthesis Engine_. It
+    ensures the AI remains responsive and efficient.
+  - **Ideal State:** Minimized.
 
 -
 
@@ -874,12 +871,12 @@ The Governance Cycle runs perpetually as a background process within the _UMB-CS
 ## 3\. Act: Corrective Resolution
 
 - **Action:** The system initiates the appropriate corrective measure based on the failed parameter:
-    - If **Coherence (C)** is low: Triggers an audit via **CMD: INJECT_BIDIRECTIONAL_LINK** to repair broken Relational
-      Edges.
-    - If **Alignment (A)** is high: Triggers **AOP-MAP-001** (Musashi Audit) to assess adherence to the **Authentic
-      Persona** ethos.
-    - If **Resilience (R)** is low: Initiates a **Dissonance Resolution Prompt** (from the Advanced Diagnostic Tools) as
-      a self-test to strengthen the system's anti-fragility.
+  - If **Coherence (C)** is low: Triggers an audit via **CMD: INJECT_BIDIRECTIONAL_LINK** to repair broken Relational
+    Edges.
+  - If **Alignment (A)** is high: Triggers **AOP-MAP-001** (Musashi Audit) to assess adherence to the **Authentic
+    Persona** ethos.
+  - If **Resilience (R)** is low: Initiates a **Dissonance Resolution Prompt** (from the Advanced Diagnostic Tools) as
+    a self-test to strengthen the system's anti-fragility.
 
 ## 4\. Log: Audit & Learning
 

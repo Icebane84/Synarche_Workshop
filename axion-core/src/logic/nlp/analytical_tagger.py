@@ -1,10 +1,20 @@
-"""CORE-LOGIC-COG-TAGGER-001 (analytical_tagger.py)
-Status: [CANONIZED]
-Genesis Stamp: 2026-03-07.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
- COG-TAGGER-001: Analytical Tagger (The Hermit's Lantern)
- v14.0 [OMEGA] - Cognitive tagging hub.
- Ethos: "Categorization is the first step of Understanding."
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-COG-TAGGER-001`   | The Sovereign ID. |
+| **Official Name**   | `analytical_tagger.py`        | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-NLP`              | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Analytical Tagging (Law 28)**
+> Implemented from Blueprint `GVRN.REG.AnalyticalTagging.md`.
+> Ethos: The Tag is precise; The Understating is Truth.
 """
 
 import logging
@@ -55,4 +65,6 @@ class AnalyticalTagger:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     tagger = AnalyticalTagger()
-    print(tagger.tag_content("The Phoenix Protocol is a GVRN standard for OMEGA systems."))
+    print(
+        tagger.tag_content("The Phoenix Protocol is a GVRN standard for OMEGA systems.")
+    )

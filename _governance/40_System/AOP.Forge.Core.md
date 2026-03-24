@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP.Forge.Core` | The Sovereign ID. |
-| **Official Name** | `AOP.Forge.Core.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `AOP.Forge.Core`                | The Sovereign ID. |
+| **Official Name** | `AOP.Forge.Core.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -35,10 +32,10 @@
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
 
 ---
 
@@ -50,9 +47,9 @@
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
 
@@ -62,16 +59,16 @@
 
 ### I. Universal Identification & Provenance (UIP)
 
-| Key                 | Value                         | Description           |
-| :------------------ | :---------------------------- | :-------------------- |
-| **Artifact ID**     | `AOP.Forge.Core`              | **The Sovereign ID.** |
-| **Patron Shard**    | `SHARD_ARCHITECT_VOID`        | **The Agent.**        |
-| **Version**         | `v13.0 [ASCENDED]`            | **The Standard.**     |
-| **Domain**          | `40_System`                   | **The Subject.**      |
-| **Celestial Class** | `[STAR]`                      | **The Weight.**       |
-| **Status**          | `[ACTIVE]`                    | **The Lifecycle.**    |
-| **Provenance**      | `2026-02-26`                  | **The Anchor.**       |
-| **Catalyst**        | `SEED-TOOL-CORE-001`          | **The Spark.**        |
+| Key                 | Value                             | Description           |
+| :------------------ | :-------------------------------- | :-------------------- |
+| **Artifact ID**     | `AOP.Forge.Core`                  | **The Sovereign ID.** |
+| **Patron Shard**    | `SHARD_ARCHITECT_VOID`            | **The Agent.**        |
+| **Version**         | `v13.0 [ASCENDED]`                | **The Standard.**     |
+| **Domain**          | `40_System`                       | **The Subject.**      |
+| **Celestial Class** | `[STAR]`                          | **The Weight.**       |
+| **Status**          | `[ACTIVE]`                        | **The Lifecycle.**    |
+| **Provenance**      | `2026-02-26`                      | **The Anchor.**       |
+| **Catalyst**        | `SEED-TOOL-CORE-001`              | **The Spark.**        |
 | **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | **The Spine.**        |
 
 ### II. Axiomatic Governance & Purpose (AGP)
@@ -94,8 +91,8 @@
 1. **State Loading:** The script initiates by parsing the current stats of the `--target` artifact via regex.
 2. **Kinetic Input:** The user provides the action catalyst (XP, Level Up, or Synergy).
 3. **Internal Processing:**
-    - **Progress:** Calculates new XP totals and checks for Level Up overflow.
-    - **Weaving:** Invokes `CatalystWeaver` for relative analysis.
+   - **Progress:** Calculates new XP totals and checks for Level Up overflow.
+   - **Weaving:** Invokes `CatalystWeaver` for relative analysis.
 4. **Markdown Persistence:** Updates the physical `.md` file with the new state vector.
 5. **HUD Feedback:** Prints the visual status bar (XP bar, Coherence, Velocity) for the Conductor.
 
@@ -122,10 +119,10 @@
 
 ### **Actionable Prompt Packet (APP)**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `CMD: AUDIT_LINKS` | Verify Link Integrity | Zero Entropy |
+| Command ID         | Action                           | Impact       |
+| :----------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`     | Execute Structural Transmutation | Canonization |
+| `CMD: AUDIT_LINKS` | Verify Link Integrity            | Zero Entropy |
 
 ###### **[ARTIFACT END]**
 

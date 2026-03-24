@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.CMD_ForgeLink` | The Sovereign ID. |
-| **Official Name** | `GVRN.ACT.CMD_ForgeLink.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `PROPOSED` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.CMD_ForgeLink`        | The Sovereign ID. |
+| **Official Name** | `GVRN.ACT.CMD_ForgeLink.md`     | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `PROPOSED`                      | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: GVRN-SYNERGY-001` | The Network.      |
-
-
-
 
 ---
 
@@ -92,9 +89,9 @@ reciprocal link. (Default: `True`) |
 
 - **Success**: Both artifact files are updated and valid; MD5/Integrity hashes are refreshed.
 - **Failure**:
-    - `ERROR_LINK_001`: One or both artifact IDs are invalid.
-    - `ERROR_LINK_002`: `RelationType` is not canonized in `enums.py`.
-    - `ERROR_LINK_003`: Circular dependency detected (Warning only).
+  - `ERROR_LINK_001`: One or both artifact IDs are invalid.
+  - `ERROR_LINK_002`: `RelationType` is not canonized in `enums.py`.
+  - `ERROR_LINK_003`: Circular dependency detected (Warning only).
 
 ---
 

@@ -1,8 +1,20 @@
-"""ID: AXION-NLP-001
-Version: v1.0
-Domain: LOGIC.NLP
-Ethos: "Understanding starts with the Word."
-Description: Ported NLP and Emotion Analysis engine from Gemini Gem.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-NLP-001`          | The Sovereign ID. |
+| **Official Name**   | `nlp_engine.py`               | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-NLP`              | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Semantic Resonance (Law 28)**
+> Implemented from Blueprint `GVRN.REG.SemanticResonance.md`.
+> Ethos: The Word is Seed; The Understanding is Fruit.
 """
 
 import logging
@@ -102,18 +114,21 @@ class NLPProcessor:
             return True
 
     def tokenize(self, text: str) -> list[str]:
+        """Convert input text into a list of atomic tokens."""
         if not self.nlp:
             return text.split()
         doc = self.nlp(text)
         return [token.text for token in doc]
 
     def lemmatize(self, text: str) -> list[str]:
+        """Reduce words to their canonical base form (lemmas)."""
         if not self.nlp:
             return text.lower().split()
         doc = self.nlp(text)
         return [token.lemma_ for token in doc if token.lemma_.strip()]
 
     def extract_entities(self, text: str) -> list[tuple[str, str]]:
+        """Extract named entities (People, Places, Orgs) from the text substrate."""
         if not self.nlp:
             return []
         doc = self.nlp(text)
@@ -127,6 +142,7 @@ class EmotionAnalyzer:
         self.lexicons = lexicon or INITIAL_EMOTION_LEXICON
 
     def detect_emotions(self, text: str) -> dict[str, float]:
+        """Analyze text for emotional triggers and resonance intensities."""
         detected_emotions: dict[str, float] = {}
         if not text:
             return detected_emotions

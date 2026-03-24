@@ -2,32 +2,31 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.Actuator.DNA` | The Sovereign ID. |
-| **Official Name** | `SYNG.Actuator.DNA.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                                  | Description       |
+| :---------------- | :----------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.Actuator.DNA`                                    | The Sovereign ID. |
+| **Official Name** | `SYNG.Actuator.DNA.md`                                 | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                      | The Standard.     |
+| **Domain**        | `SYNG`                                                 | The Subject.      |
+| **Status**        | `[ACTIVE]`                                             | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001, COMMANDS: SYNG.DNA.Core` | The Network.      |
-
-
-
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
-| State Field | Value |
-| :--- | :--- |
-| **Coherence** | `1.0` |
-| **Resonance** | `0.9` |
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
 ### **Block C: Risk & Mitigation (AGP-002)**
-| Risk | Mitigation |
-| :--- | :--- |
-| **Logic Drift** | Strict Linter Enforcement |
-| **Dependency Break** | ForgeLink Validation |
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
 
 ---
 

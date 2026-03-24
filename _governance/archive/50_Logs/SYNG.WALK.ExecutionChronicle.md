@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.WALK.ExecutionChronicle` | The Sovereign ID. |
-| **Official Name** | `SYNG.WALK.ExecutionChronicle.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                   | Description       |
+| :---------------- | :-------------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.WALK.ExecutionChronicle`          | The Sovereign ID. |
+| **Official Name** | `SYNG.WALK.ExecutionChronicle.md`       | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**        | `SYNG`                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
-
-
-
 
 ---
 

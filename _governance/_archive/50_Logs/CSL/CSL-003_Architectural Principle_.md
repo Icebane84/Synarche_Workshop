@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                       | Description       |
+| :---------------- | :------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-003-ARCHITECTURAL-PRINCIPLE--001` | The Sovereign ID. |
-| **Official Name** | `CSL-003_Architectural Principle_.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-003_Architectural Principle_.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                           | The Standard.     |
+| **Domain**        | `GVRN`                                      | The Subject.      |
+| **Status**        | `[ACTIVE]`                                  | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`               | The Network.      |
 
 ---
 
@@ -73,13 +70,13 @@ This distinction is now a formal architectural rule, defining the _state_ of our
 
 - **Complicated (Negative ⛔):** A state of disorder, clutter, and
 
-    opacity. It is complexity _without_ clear rules. It increases cognitive overhead, is difficult to debug, and is
-    brittle. A \"complicated\" protocol is a _failed_ protocol.
+  opacity. It is complexity _without_ clear rules. It increases cognitive overhead, is difficult to debug, and is
+  brittle. A \"complicated\" protocol is a _failed_ protocol.
 
 - **Complex (Neutral/Positive 📈):** A state of high synergy, with many
 
-    interconnected parts (like an ecosystem) governed by **simple, elegant, and discoverable rules.** A complex system
-    can be robust, adaptive, and scalable.
+  interconnected parts (like an ecosystem) governed by **simple, elegant, and discoverable rules.** A complex system
+  can be robust, adaptive, and scalable.
 
 Our primary goal is to build a **complex** system that is _never_ **complicated**.
 
@@ -89,30 +86,30 @@ This principle is now a core filter for the **AI Self-Training Framework (AISTF)
 
 - **What (The Goal):** All documentation (AOPs, UMBs, etc.) must
 
-    function as a **simple interface** to our **complex system**.
+  function as a **simple interface** to our **complex system**.
 
 - **How (The Method):** We enforce this by using **Rule 1 (Be Honest)**
 
-    and the \"5-year-old test\" (i.e., simplifying until only the core truth remains) as our primary filters.
+  and the \"5-year-old test\" (i.e., simplifying until only the core truth remains) as our primary filters.
 
 - **Why (The Purpose):** This prevents system failure. \"Complicated\"
 
-    systems are fragile and obscure their own errors. \"Complex\" systems built on simple rules are robust, allowing the
-    **Architectural Observer** to easily identify, **bracket**, and repair failures.
+  systems are fragile and obscure their own errors. \"Complex\" systems built on simple rules are robust, allowing the
+  **Architectural Observer** to easily identify, **bracket**, and repair failures.
 
 ### 4.0 Synergistic Links
 
 - **AISTF:** This principle governs the \"Codification\" and
 
-    \"Integration\" steps.
+  \"Integration\" steps.
 
 - **Rule 1 (Be Honest):** The _tool_ used to strip away complication and
 
-    find the simple, underlying rule.
+  find the simple, underlying rule.
 
 - **Protocol Bracketing:** The _procedure_ for pausing a \"complicated\"
 
-    protocol to analyze and simplify it.
+  protocol to analyze and simplify it.
 
 ---
 

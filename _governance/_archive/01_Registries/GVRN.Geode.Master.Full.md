@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Geode.Master.Full` | The Sovereign ID. |
-| **Official Name** | `GVRN.Geode.Master.Full.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                                                           | Description       |
+| :---------------- | :-------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Geode.Master.Full`                                        | The Sovereign ID. |
+| **Official Name** | `GVRN.Geode.Master.Full.md`                                     | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                               | The Standard.     |
+| **Domain**        | `GVRN`                                                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                                                   | The Lifecycle.    |
 | **Relations**     | `ARCHIVES: [All_Canonized_Artifacts], GOVERNED_BY: AOP-IDX-001` | The Network.      |
-
-
-
 
 ---
 

@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `COG.ContextWeave.Engine` | The Sovereign ID. |
-| **Official Name** | `COG.ContextWeave.Engine.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `COG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `COG.ContextWeave.Engine`       | The Sovereign ID. |
+| **Official Name** | `COG.ContextWeave.Engine.md`    | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `COG`                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -121,11 +118,11 @@ informed. Upgrading this to v13.0 ensures that our "Intuition" is governed by th
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the law for relational discovery. |
-| `SYNG.Loom.Master` | `ANALYZES` | Primary data source for weaving and topology. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks discovered synergies and active paths. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                            |
+| :---------------------- | :---------------- | :-------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the law for relational discovery.    |
+| `SYNG.Loom.Master`      | `ANALYZES`        | Primary data source for weaving and topology. |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks discovered synergies and active paths. |
 
 ---
 
@@ -137,17 +134,17 @@ informed. Upgrading this to v13.0 ensures that our "Intuition" is governed by th
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[WEAVING]` | `PASS` | `0.01` | `CONTEXT_WEAVE` |
+| Status      | Verdict | Drift Threshold | Authority       |
+| :---------- | :------ | :-------------- | :-------------- |
+| `[WEAVING]` | `PASS`  | `0.01`          | `CONTEXT_WEAVE` |
 
 ---
 
 ### **Block G: System Slot & Synergy (BLK-RPG-001)**
 
-| System Slot | Synergy Set | Celestial Class | Authority Level |
-| :--- | :--- | :--- | :--- |
-| `Contextual Processor` | `The Infinite Eye` | `[PLANET]` | `CORE` |
+| System Slot            | Synergy Set        | Celestial Class | Authority Level |
+| :--------------------- | :----------------- | :-------------- | :-------------- |
+| `Contextual Processor` | `The Infinite Eye` | `[PLANET]`      | `CORE`          |
 
 ---
 
@@ -159,10 +156,10 @@ informed. Upgrading this to v13.0 ensures that our "Intuition" is governed by th
 
 ### **Actionable Prompt Packet (APP)**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: CONTEXT_WEAVE` | Discovers relational paths | Syntax Discovery |
-| `CMD: ANALYZE_PATTERN` | Identifies structural clusters | Topology Mapping |
-| `⚡ EXECUTE: RENDER_TOPOLOGY` | Generates visual map of the Loom | System Clarity |
+| Command ID                    | Action                           | Impact           |
+| :---------------------------- | :------------------------------- | :--------------- |
+| `CMD: CONTEXT_WEAVE`          | Discovers relational paths       | Syntax Discovery |
+| `CMD: ANALYZE_PATTERN`        | Identifies structural clusters   | Topology Mapping |
+| `⚡ EXECUTE: RENDER_TOPOLOGY` | Generates visual map of the Loom | System Clarity   |
 
 ###### **[ARTIFACT END]**

@@ -4,15 +4,12 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.TPL.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.TPL.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Artifact ID**   | `GVRN.TPL.001`                    | The Sovereign ID. |
+| **Official Name** | `GVRN.TPL.001.md`                 | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 

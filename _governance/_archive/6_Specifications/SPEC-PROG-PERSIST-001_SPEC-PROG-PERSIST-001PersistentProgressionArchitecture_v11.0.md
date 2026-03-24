@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                                                         | Description       |
+| :---------------- | :-------------------------------------------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-SPEC-PROG-PERSIST-001-SPEC-PROG-PERSIST-001PERSISTENTPROGRESSIONARCHITECTURE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `SPEC-PROG-PERSIST-001_SPEC-PROG-PERSIST-001PersistentProgressionArchitecture_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `SPEC-PROG-PERSIST-001_SPEC-PROG-PERSIST-001PersistentProgressionArchitecture_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                                             | The Standard.     |
+| **Domain**        | `GVRN`                                                                                        | The Subject.      |
+| **Status**        | `ACTIVE`                                                                                      | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                                                 | The Network.      |
 
 ---
 
@@ -67,19 +64,19 @@
 ## II. Core Architecture
 
 - **The Persistence Bridge (`UMB-PROG-PERSIST-001`)**:
-    - **Hot State (ECS)**: `bitECS`/`Miniplex`. Frame-by-frame metrics.
-    - **Cold State (Zustand)**: `PlayerProfile` (XP, Rank).
-    - **Sync**: Throttled bridge writes "Hot" data to "Cold" store (IndexedDB).
+  - **Hot State (ECS)**: `bitECS`/`Miniplex`. Frame-by-frame metrics.
+  - **Cold State (Zustand)**: `PlayerProfile` (XP, Rank).
+  - **Sync**: Throttled bridge writes "Hot" data to "Cold" store (IndexedDB).
 - **Tech Stack**:
-    - `Zustand` (State Management).
-    - `idb-keyval` (Async Storage).
+  - `Zustand` (State Management).
+  - `idb-keyval` (Async Storage).
 
 ## III. Architectural Velocity Math (`SPEC-PROG-MATH-001`)
 
 - **Concept**: $V_{arch}$ (Architectural Velocity).
 - **Formula**:
 
-    $$ V*{arch} = \frac{(\text{Score} \times \text{Combo}*{mult})}{\text{Time}\_{sec}} \times (1 +
+  $$ V*{arch} = \frac{(\text{Score} \times \text{Combo}*{mult})}{\text{Time}\_{sec}} \times (1 +
 
 \text{Complexity}\_{factor}) $$
 
@@ -87,11 +84,11 @@
 
 - **Formula**: $XP_{req}(L) = 100 \times L^{2.2}$
 - **Ranks**:
-    - Lvl 1: Script Kiddie
-    - Lvl 5: Loop Initiate
-    - Lvl 25: Vector Pilot
-    - Lvl 50: Genesis Architect
-    - Lvl 100: Chronos Paradox
+  - Lvl 1: Script Kiddie
+  - Lvl 5: Loop Initiate
+  - Lvl 25: Vector Pilot
+  - Lvl 50: Genesis Architect
+  - Lvl 100: Chronos Paradox
 
 ---
 

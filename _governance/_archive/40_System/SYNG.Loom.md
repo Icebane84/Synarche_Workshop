@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.Loom` | The Sovereign ID. |
-| **Official Name** | `SYNG.Loom.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.Loom`                   | The Sovereign ID. |
+| **Official Name** | `SYNG.Loom.md`                | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `ACTIVE`                      | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -119,9 +116,9 @@ The Loom operates through a continuous evolutionary loop called **The Phoenix Cy
 
 - **Role**: The "Autonomous Shuttle" that proactively weaves links between nodes.
 - **Key Protocols**:
-    - **Active Relational Weaving**: Background variation of the graph.
-    - **Thematic Clustering**: Grouping nodes by semantic resonance.
-    - **Synergy Scoring**: Quantifying the value of a connection.
+  - **Active Relational Weaving**: Background variation of the graph.
+  - **Thematic Clustering**: Grouping nodes by semantic resonance.
+  - **Synergy Scoring**: Quantifying the value of a connection.
 
 ### **4.2 The Dynamic Tiering System (The Tension Regulator)**
 

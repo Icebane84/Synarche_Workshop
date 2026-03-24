@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.DIDACTIC.001THEDIDACTICMODULEGENERATOR` | The Sovereign ID. |
+| Key               | Value                                            | Description       |
+| :---------------- | :----------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.DIDACTIC.001THEDIDACTICMODULEGENERATOR`    | The Sovereign ID. |
 | **Official Name** | `GVRN.DIDACTIC.001THEDIDACTICMODULEGENERATOR.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                                | The Standard.     |
+| **Domain**        | `GVRN`                                           | The Subject.      |
+| **Status**        | `ACTIVE`                                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 ---
 
@@ -81,8 +78,8 @@ and deepening understanding.
 
 - **1. Trigger**: Activated when `AOP-SENTINEL-SCAN-001` identifies a violation.
 - **2. The Process**:
-    - **Axiom Retriever**: Fetches the violated principle (e.g., "DRY Principle").
-    - **Rationale Synthesizer**: Generates a clear, human-readable explanation of why the code was flagged and how the
+  - **Axiom Retriever**: Fetches the violated principle (e.g., "DRY Principle").
+  - **Rationale Synthesizer**: Generates a clear, human-readable explanation of why the code was flagged and how the
 
 fix aligns with the axiom.
 
@@ -94,11 +91,11 @@ fix aligns with the axiom.
 
 ```typescript
 interface LessonModule {
-    axiomTitle: string; // e.g., "The Rule of Atomic Functions"
-    axiomText: string; // The definition from the library
-    codeBefore: string; // The problematic snippet
-    codeAfter: string; // The corrected snippet
-    synthesizedRationale: string; // The "Lesson" text
+  axiomTitle: string; // e.g., "The Rule of Atomic Functions"
+  axiomText: string; // The definition from the library
+  codeBefore: string; // The problematic snippet
+  codeAfter: string; // The corrected snippet
+  synthesizedRationale: string; // The "Lesson" text
 }
 ```
 

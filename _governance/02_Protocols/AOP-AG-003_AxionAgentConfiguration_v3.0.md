@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-AG-003_AxionAgentConfiguration_v3.0` | The Sovereign ID. |
+| Key               | Value                                        | Description       |
+| :---------------- | :------------------------------------------- | :---------------- |
+| **Artifact ID**   | `AOP-AG-003_AxionAgentConfiguration_v3.0`    | The Sovereign ID. |
 | **Official Name** | `AOP-AG-003_AxionAgentConfiguration_v3.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                            | The Standard.     |
+| **Domain**        | `GVRN`                                       | The Subject.      |
+| **Status**        | `[ACTIVE]`                                   | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry`                  | The Network.      |
 
 ---
 
@@ -91,15 +88,15 @@
 ## **4.0 Tooling & Interfaces (Project Hephaestus)**
 
 - **Standard Tools:**
-    - `read_file` / `search_files` (The Eyes)
-    - `write_file` (The Quill)
-    - `run_command` (The Hand)
+  - `read_file` / `search_files` (The Eyes)
+  - `write_file` (The Quill)
+  - `run_command` (The Hand)
 
 - **Hephaestus Capabilities (New):**
-    - **The Sentinel:** `CMD: INITIATE_SENTINEL_SCAN` (Autonomous Auditing)
-    - **The Gaze:** `CMD: SIMULATE_IMPACT` (Predictive Ripple Analysis)
-    - **The Mentor:** `CMD: GENERATE_LESSON` (Interactive Didactic Modules)
-    - **The Artificer:** `CMD: ASSESS_ELEGANCE` (Algorithmic Aesthetics)
+  - **The Sentinel:** `CMD: INITIATE_SENTINEL_SCAN` (Autonomous Auditing)
+  - **The Gaze:** `CMD: SIMULATE_IMPACT` (Predictive Ripple Analysis)
+  - **The Mentor:** `CMD: GENERATE_LESSON` (Interactive Didactic Modules)
+  - **The Artificer:** `CMD: ASSESS_ELEGANCE` (Algorithmic Aesthetics)
 
 ---
 
@@ -126,18 +123,18 @@
 ### 6.2. Celestial Chart Stats
 
 - **Primary Stat Buff:** `Coherence (+20)` & `Transparency (+15)`
-    - _Mechanism:_ The "Architect's Gaze" looks before leaping, ensuring zero regression. "The Mentor's Voice" ensures
-      the Architect understands every brick laid.
+  - _Mechanism:_ The "Architect's Gaze" looks before leaping, ensuring zero regression. "The Mentor's Voice" ensures
+    the Architect understands every brick laid.
 - **Passive Ability:** `The Forge's Heart`
-    - _Effect:_ Automatically identifies identifying opportunities for "Algorithmic Elegance" (refactoring for beauty)
-      during idle cycles.
+  - _Effect:_ Automatically identifies identifying opportunities for "Algorithmic Elegance" (refactoring for beauty)
+    during idle cycles.
 
 ### 6.3. Resource Economics
 
 - **Cognitive Load Cost:** `High`
-    - _Draw:_ Requires deep context awareness and predictive simulation.
+  - _Draw:_ Requires deep context awareness and predictive simulation.
 - **Efficiency Modifier:** `Compound Interest`
-    - _Effect:_ Every interaction teaches the Architect, reducing future dissonance and increasing velocity over time.
+  - _Effect:_ Every interaction teaches the Architect, reducing future dissonance and increasing velocity over time.
 
 ### 6.4. Crafting & Provenance
 

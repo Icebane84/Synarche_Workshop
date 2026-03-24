@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Documentation.Audit` | The Sovereign ID. |
-| **Official Name** | `GVRN.Documentation.Audit.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Documentation.Audit`      | The Sovereign ID. |
+| **Official Name** | `GVRN.Documentation.Audit.md`   | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -28,20 +25,20 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                | Mitigation                                    |
-| :------------------ | :-------------------------------------------- |
-| **Logic Drift**     | Strict Linter Enforcement via `CMD: AUDIT`.   |
-| **Structural Decay**| Mandatory Musashi Audit for all new artifacts.|
+| Risk                 | Mitigation                                     |
+| :------------------- | :--------------------------------------------- |
+| **Logic Drift**      | Strict Linter Enforcement via `CMD: AUDIT`.    |
+| **Structural Decay** | Mandatory Musashi Audit for all new artifacts. |
 
 ---
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID      | Relationship Type | Synergistic Impact                              |
-| :--------------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`         | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`       | `INDEXES`         | Tracks the state and presence of this artifact. |
-| `GVRN.Documentation.Index`    | `ARCHIVED_IN`     | Central entry point for all documentation.      |
+| Synergistic Artifact ID    | Relationship Type | Synergistic Impact                              |
+| :------------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`       | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`     | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `GVRN.Documentation.Index` | `ARCHIVED_IN`     | Central entry point for all documentation.      |
 
 ---
 
@@ -81,6 +78,7 @@ Every artifact must clear these internal checks before canonization:
 ## 3. Violation & Reclamation
 
 If an Artifact fails the Audit:
+
 1. **FLAG**: Tag header as `Status: [FAILED_AUDIT]`.
 2. **REFORGE**: Return to the implementation phase for immediate correction.
 3. **RESCAN**: Re-run the audit until zero drift is achieved.
@@ -89,10 +87,10 @@ If an Artifact fails the Audit:
 
 ### **Actionable Prompt Packet (APP)**
 
-| Command ID           | Action                                                 | Impact     |
-| :------------------- | :----------------------------------------------------- | :--------- |
-| `CMD: AUDIT_COMPLY`  | Performs a strict compliance scan against OMEGA v15.0. | Compliance |
-| `CMD: SCAN_DRIFT`    | Identifies structural deviation in a directory.        | Integrity  |
+| Command ID          | Action                                                 | Impact     |
+| :------------------ | :----------------------------------------------------- | :--------- |
+| `CMD: AUDIT_COMPLY` | Performs a strict compliance scan against OMEGA v15.0. | Compliance |
+| `CMD: SCAN_DRIFT`   | Identifies structural deviation in a directory.        | Integrity  |
 
 ### **[ARTIFACT END]**
 

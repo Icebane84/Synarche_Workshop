@@ -5,14 +5,11 @@
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `\[PARENT\].\[FUNCTION\].\[SEQ\]` | The Sovereign ID. |
-| **Official Name** | `CSL Template.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `CANONIZED` | The Lifecycle.    |
+| **Official Name** | `CSL Template.md`                 | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN`                            | The Subject.      |
+| **Status**        | `CANONIZED`                       | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                   | Description       |
+| :---------------- | :------------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-050-EPISTEMOLOGICAL-GROUNDING-OF-METRICS-001` | The Sovereign ID. |
-| **Official Name** | `CSL-050_Epistemological Grounding of Metrics.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-050_Epistemological Grounding of Metrics.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                       | The Standard.     |
+| **Domain**        | `GVRN`                                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 ---
 
@@ -83,22 +80,22 @@ This effort directly addresses and overcomes two critical dilemmas:
 
 - **Stagnant/Underutilized Power-Ups**: By defining a comprehensive set
 
-    of metrics, we now have the tools to proactively identify which capabilities are not being leveraged optimally.
+  of metrics, we now have the tools to proactively identify which capabilities are not being leveraged optimally.
 
 - **Spurious/Non-Actionable Synergies**: The registry provides the clear
 
-    definitions and related documents needed to filter out false-positive opportunities, ensuring that all synergies are
-    real and purposeful.
+  definitions and related documents needed to filter out false-positive opportunities, ensuring that all synergies are
+  real and purposeful.
 
 #### **Artifacts Created & Modified**
 
 - **Created:** KPI-MASTER-REGISTRY-001 - A new, canonical registry that
 
-    centralizes all metrics and their definitions.
+  centralizes all metrics and their definitions.
 
 - **Modified:** The conceptual framework of all templates is now primed
 
-    for a major update to incorporate the metrics defined in the new registry.
+  for a major update to incorporate the metrics defined in the new registry.
 
 This CSL documents a successful cycle of the **AI Self-Training Framework (AISTF)**: an insight was meticulously
 captured in a log (this CSL), analyzed for its breakthrough potential, and will now be used to refine and upgrade our

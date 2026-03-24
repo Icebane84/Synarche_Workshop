@@ -1,9 +1,18 @@
-"""CORE-LOGIC-ENUMS-001 (enums.py)
-Status: [CANONIZED]
-Genesis Stamp: 2026-03-07.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
- ENUMS-001: The Rosetta Stone (Shared Enumerations)
- v14.0 [OMEGA] - Centralized, immutable state definitions for the Phoenix Protocol.
+| Key               | Value                          | Description       |
+| :---------------- | :----------------------------- | :---------------- |
+| **Artifact ID**   | `CORE-LOGIC-ENUMS-001`         | The Sovereign ID. |
+| **Official Name** | `enums.py`                     | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE-LOGIC`                   | The Subject.      |
+| **Evolution**     | `The Rosetta Stone`            | The Alignment.    |
+| **Status (State)**| `[CANONIZED]`                  | The Lifecycle.    |
+| **Celestial Class**| `[STAR]`                      | The Tier.         |
+| **Relations**     | `IDENTITY: High Priestess`    | The Network.      |
+| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
+| **Genesis Stamp** | `2026-03-07`                   | Creation Date.    |
 """
 
 from enum import Enum

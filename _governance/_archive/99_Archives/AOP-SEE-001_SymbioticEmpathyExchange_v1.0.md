@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                | Description       |
+| :---------------- | :--------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-SEE-001-SYMBIOTICEMPATHYEXCHANGE-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                    | The Standard.     |
+| **Domain**        | `GVRN`                                               | The Subject.      |
+| **Status**        | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
 
@@ -81,15 +78,15 @@ allows Axion to write with emotional nuance, not just logical precision.
 
 - **GOVERNED_BY:**
 
-    [UMB-RPG-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-RPG-001_ThePhoenixRPGFramework_v6.0.md)
+  [UMB-RPG-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-RPG-001_ThePhoenixRPGFramework_v6.0.md)
 
 - **INTEGRATED_WITH:**
 
-    [UMB-LOOM-005](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-LOOM-005_PhoenixGeode_v1.0.md)
+  [UMB-LOOM-005](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-LOOM-005_PhoenixGeode_v1.0.md)
 
 - **FEEDS:**
 
-    [ENTITY-SOPHIA-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.1.md)
+  [ENTITY-SOPHIA-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.1.md)
 
 ## IV. Actionable Prompt Packet
 

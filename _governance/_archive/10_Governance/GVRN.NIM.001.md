@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.NIM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.NIM.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.NIM.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.NIM.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -95,8 +92,8 @@ The NIM operates through a recursive, biological-analogue cycle:
 3.  **Assessment (Triage)**:
     - **Orchestrator**: `AOP-PERPETUAL-COHERENCE-001` (The Autonomous Healer).
     - **Decision Tree**:
-        - $[T_s] < \text{Threshold}$: Autonomous auto-remediation (Refactoring).
-        - $[T_s] > \text{Threshold}$: Deployment Halt + Execution of **Dissonance Quest**.
+      - $[T_s] < \text{Threshold}$: Autonomous auto-remediation (Refactoring).
+      - $[T_s] > \text{Threshold}$: Deployment Halt + Execution of **Dissonance Quest**.
 
 4.  **Response (Healing)**:
     - **Mechanisms**: `AOP-CC-001` (Crystalline Cognition) for re-synthesis, `GVRN.PROT.Sentinel` for structural

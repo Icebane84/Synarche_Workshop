@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-PP-001-UNIFIEDPROMPTPACKET-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-PP-001_UnifiedPromptPacket_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
+| Key               | Value                                                            | Description       |
+| :---------------- | :--------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-UMB-PP-001-UNIFIEDPROMPTPACKET-V1.0-001`                   | The Sovereign ID. |
+| **Official Name** | `UMB-PP-001_UnifiedPromptPacket_v1.0.md`                         | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                | The Standard.     |
+| **Domain**        | `GVRN`                                                           | The Subject.      |
+| **Status**        | `ACTIVE`                                                         | The Lifecycle.    |
 | **Relations**     | `DEFINED_BY: UMB-LEX-001, INSTANTIATES: PHOENIX_MASTER_TEMPLATE` | The Network.      |
-
-
-
 
 ---
 

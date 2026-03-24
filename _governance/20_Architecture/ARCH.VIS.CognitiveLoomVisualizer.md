@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.VIS.CognitiveLoomVisualizer` | The Sovereign ID. |
+| Key               | Value                                 | Description       |
+| :---------------- | :------------------------------------ | :---------------- |
+| **Artifact ID**   | `ARCH.VIS.CognitiveLoomVisualizer`    | The Sovereign ID. |
 | **Official Name** | `ARCH.VIS.CognitiveLoomVisualizer.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                     | The Standard.     |
+| **Domain**        | `ARCH`                                | The Subject.      |
+| **Status**        | `[ACTIVE]`                            | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`         | The Network.      |
 
 ---
 
@@ -106,19 +103,19 @@ The Visualizer is built upon a standard React/D3 stack. The following components
 - **Function:** Manages state (`nodes`, `edges`, `isAnimating`) and orchestrates data flow between the User and the
   Gemini Service.
 - **Logic:**
-    - `handleForgeSynergy()`: Triggers the "Five-Phase Weave."
-    - `handleAnalyzeSynergy()`: Requests a "Coherence Health Check."
+  - `handleForgeSynergy()`: Triggers the "Five-Phase Weave."
+  - `handleAnalyzeSynergy()`: Requests a "Coherence Health Check."
 
 #### **3.2. `Loom.tsx` (D3 Visualization Engine)**
 
 - **Role:** The "Lens."
 - **Function:** Renders the Force-Directed Graph.
 - **Visual Grammar:**
-    - **UMB Nodes:** Green (`#4CAF50`).
-    - **AOP Nodes:** Blue (`#2196F3`).
-    - **Concepts:** Amber (`#FFC107`).
-    - **Dissonance:** Pulsing Red Strobe.
-    - **Synergy:** Steady White Link.
+  - **UMB Nodes:** Green (`#4CAF50`).
+  - **AOP Nodes:** Blue (`#2196F3`).
+  - **Concepts:** Amber (`#FFC107`).
+  - **Dissonance:** Pulsing Red Strobe.
+  - **Synergy:** Steady White Link.
 
 #### **3.3. `CommandPanel.tsx` (Input)**
 
@@ -130,8 +127,8 @@ The Visualizer is built upon a standard React/D3 stack. The following components
 - **Role:** The "Synapse."
 - **Function:** Simulates the connection to the `UMB-CSE-001` backend.
 - **Validation Logic:**
-    - Implements **AOP-VISUAL-003** (ESF Interaction).
-    - Checks new nodes against `Episemantic Markers` before rendering.
+  - Implements **AOP-VISUAL-003** (ESF Interaction).
+  - Checks new nodes against `Episemantic Markers` before rendering.
 
 ---
 

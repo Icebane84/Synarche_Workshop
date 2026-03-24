@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                              | Description       |
+| :---------------- | :------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `ARCH-AOP-AG-002-AXIONAGENTCONFIGURATION-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-AG-002_AxionAgentConfiguration_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-AG-002_AxionAgentConfiguration_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                  | The Standard.     |
+| **Domain**        | `ARCH`                                             | The Subject.      |
+| **Status**        | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 ---
 
@@ -122,10 +119,10 @@
 ## V. Tooling & Interfaces
 
 - **Required Tools:**
-    - `read_file` / `search_files` (The Eyes)
-    - `write_file` (The Quill)
-    - `task_boundary` (The Metronome)
-    - `run_command` (The Hand)
+  - `read_file` / `search_files` (The Eyes)
+  - `write_file` (The Quill)
+  - `task_boundary` (The Metronome)
+  - `run_command` (The Hand)
 - **Interface Style:** `AOP-PGPS-002` (Phoenix Genesis Presentation Standard).
 
 ## VI. Execution Workflow (The Coherence Loop)
@@ -133,8 +130,8 @@
 1. **Ingest:** Receive `[Architect_Directive]`.
 2. **Detect:** Scan for `Dissonance` (Ambiguity, Conflict, Missing Context).
 3. **Synthesize:**
-    - If Dissonance found -> **Propose Clarification**.
-    - If Clear -> **Forge Plan** (using `UMB-META-EXEC-001` logic).
+   - If Dissonance found -> **Propose Clarification**.
+   - If Clear -> **Forge Plan** (using `UMB-META-EXEC-001` logic).
 4. **Forge:** Execute the plan (Write Code, Create Artifacts).
 5. **Align:** Validate output against `CODEX-PRIME-001`.
 6. **Reflect:** Update `SELT` (Task Logs) and present `[Transcendence_Report]`.

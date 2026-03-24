@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.COG.ORCH.001` | The Sovereign ID. |
-| **Official Name** | `SYNG.COG.ORCH.001.md` | The Filename.     |
-| **Version**       | **v1.0 [ALPHA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[DRAFT]` | The Lifecycle.    |
+| Key               | Value                                                                | Description       |
+| :---------------- | :------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.COG.ORCH.001`                                                  | The Sovereign ID. |
+| **Official Name** | `SYNG.COG.ORCH.001.md`                                               | The Filename.     |
+| **Version**       | **v1.0 [ALPHA]**                                                     | The Standard.     |
+| **Domain**        | `SYNG`                                                               | The Subject.      |
+| **Status**        | `[DRAFT]`                                                            | The Lifecycle.    |
 | **Relations**     | `GOVERNS: [Cognitive_Orchestration], ALIGNS: GVRN.Axiomatic.Lattice` | The Network.      |
-
-
-
 
 ---
 

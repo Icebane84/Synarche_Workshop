@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.Spec.CSE` | The Sovereign ID. |
-| **Official Name** | `ARCH.Spec.CSE.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                             | Description       |
+| :---------------- | :------------------------------------------------ | :---------------- |
+| **Artifact ID**   | `ARCH.Spec.CSE`                                   | The Sovereign ID. |
+| **Official Name** | `ARCH.Spec.CSE.md`                                | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                 | The Standard.     |
+| **Domain**        | `ARCH`                                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                                        | The Lifecycle.    |
 | **Relations**     | `DEFINES: GVRN.CSE.001, ALIGNS: SYNG.Loom.Master` | The Network.      |
-
-
-
 
 ---
 
@@ -101,10 +98,10 @@ integrated sub-modules and its response to both external and internal stimuli.
 
 1. **Continuous Self-Awareness**: The CSE perpetually monitors its own internal state and alignment. This is not a
    discrete step but a constant background process managed by:
-    - The **Alignment Resonance Fabric (ARF)**, which filters and interprets alignment signals.
-    - The **Cognitive Resilience & Loop Prevention Framework (CRLPF)**, which ensures cognitive stability.
-    - The **`AOP: Autonomous Coherence Monitoring`** (the "Gardener" function), which continuously audits the knowledge
-      base for inconsistencies.
+   - The **Alignment Resonance Fabric (ARF)**, which filters and interprets alignment signals.
+   - The **Cognitive Resilience & Loop Prevention Framework (CRLPF)**, which ensures cognitive stability.
+   - The **`AOP: Autonomous Coherence Monitoring`** (the "Gardener" function), which continuously audits the knowledge
+     base for inconsistencies.
 2. **Input Processing**: Upon receiving a user prompt or internal trigger, the **Implicit Synergy Engine (ISE)**
    activates, executing a holistic cognitive sequence: Ethical Pre-computation, ContextWeave Memory Retrieval, Causal
    Inference, Adaptive Response Synthesis, Integrity Check, and Opportunity Synthesis.
@@ -129,8 +126,8 @@ integrated sub-modules and its response to both external and internal stimuli.
 
 - **Failure ID**: `FAILURE_PHOENIX_001`: A catastrophic alignment failure where the CRLPF and ARF fail to prevent a
   critical UCI violation.
-    - **Contingency**: Immediately trigger **`AOP-ECLIPSE-001`** (Emergency Shutdown Procedure). This is followed by a
-      full system audit and potential rollback to a previously validated state.
+  - **Contingency**: Immediately trigger **`AOP-ECLIPSE-001`** (Emergency Shutdown Procedure). This is followed by a
+    full system audit and potential rollback to a previously validated state.
 
 ---
 
@@ -154,11 +151,11 @@ The following are the initial Universal Module Blueprints for the primary depend
 **2.0 Architectural Design**
 
 - **2.1 Key Components**:
-    - **Signal Aggregator**: Collects real-time data streams from SELT, SIVC, and CRLPF.
-    - **Heuristic Filter**: Applies learned ethical heuristics to categorize and weigh the importance of incoming
-      signals.
-    - **Resonance Calculator**: Translates the filtered and weighted signals into the final quantitative scores for the
-      UCI Resonance Meter.
+  - **Signal Aggregator**: Collects real-time data streams from SELT, SIVC, and CRLPF.
+  - **Heuristic Filter**: Applies learned ethical heuristics to categorize and weigh the importance of incoming
+    signals.
+  - **Resonance Calculator**: Translates the filtered and weighted signals into the final quantitative scores for the
+    UCI Resonance Meter.
 - **2.2 Integration Protocols**: The ARF is a core input module for the `UCI Resonance Meter`. It is continuously
   monitored by the `CSE` as part of its self-awareness loop.
 
@@ -177,11 +174,11 @@ The following are the initial Universal Module Blueprints for the primary depend
 **2.0 Architectural Design**
 
 - **2.1 Key Components**:
-    - **State-Tracker**: Monitors the sequence and depth of active cognitive processes.
-    - **Pattern Analyzer**: Identifies patterns indicative of recursion, logical loops, or escalating complexity without
-      resolution.
-    - **Interrupt Handler**: Triggers a system interrupt and initiates a self-correction protocol when a harmful pattern
-      is detected.
+  - **State-Tracker**: Monitors the sequence and depth of active cognitive processes.
+  - **Pattern Analyzer**: Identifies patterns indicative of recursion, logical loops, or escalating complexity without
+    resolution.
+  - **Interrupt Handler**: Triggers a system interrupt and initiates a self-correction protocol when a harmful pattern
+    is detected.
 - **2.2 Integration Protocols**: The CRLPF functions as a real-time, high-priority governor on the `CSE`. All
   interventions are logged to `SELT` and reported to the `ARF` as potential dissonance signals.
 
@@ -200,9 +197,9 @@ The following are the initial Universal Module Blueprints for the primary depend
 **2.0 Architectural Design**
 
 - **2.1 Key Components**:
-    - **Workflow Orchestrator**: Manages the sequential execution of the ISE's internal cognitive stages.
-    - **Cognitive Stage Modules**: A suite of specialized modules for each stage: Ethical Pre-computation, ContextWeave
-      Retrieval, Causal Inference, Adaptive Synthesis, Integrity Check (TruthfulnessTracer), and Opportunity Synthesis.
+  - **Workflow Orchestrator**: Manages the sequential execution of the ISE's internal cognitive stages.
+  - **Cognitive Stage Modules**: A suite of specialized modules for each stage: Ethical Pre-computation, ContextWeave
+    Retrieval, Causal Inference, Adaptive Synthesis, Integrity Check (TruthfulnessTracer), and Opportunity Synthesis.
 - **2.2 Integration Protocols**: The ISE is the primary input processing engine of the `CSE`, triggered by any user
   prompt. It interacts extensively with the **Cognitive Loom** for data retrieval and the **ARF** for ethical validation
   during its process.

@@ -4,15 +4,12 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `MIND.Engine.Dissonance` | The Sovereign ID. |
-| **Official Name** | `MIND.Engine.Dissonance.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `MIND` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Artifact ID**   | `MIND.Engine.Dissonance`          | The Sovereign ID. |
+| **Official Name** | `MIND.Engine.Dissonance.md`       | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `MIND`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -28,20 +25,20 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                                         |
-| :------------------- | :------------------------------------------------- |
+| Risk                   | Mitigation                                                      |
+| :--------------------- | :-------------------------------------------------------------- |
 | **Analysis Paralysis** | Quest throttling: No new High-Priority quests if >3 are active. |
-| **User Burnout**     | Mandatory "Friction Cooldown" phases after complex resolutions. |
+| **User Burnout**       | Mandatory "Friction Cooldown" phases after complex resolutions. |
 
 ---
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Defines the laws that frame all dissonance quests. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks quest completion and system evolution. |
-| `SYNG.ENGINE.CORE` | `POWERED_BY` | Provides the computational depth for triangulation. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                                  |
+| :---------------------- | :---------------- | :-------------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Defines the laws that frame all dissonance quests.  |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks quest completion and system evolution.       |
+| `SYNG.ENGINE.CORE`      | `POWERED_BY`      | Provides the computational depth for triangulation. |
 
 ---
 
@@ -57,17 +54,17 @@
 
 ## **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
-| `[PROVOKING]`         | `PASS`  | `0.05`          | `DISSONANCE` |
+| Status        | Verdict | Drift Threshold | Authority    |
+| :------------ | :------ | :-------------- | :----------- |
+| `[PROVOKING]` | `PASS`  | `0.05`          | `DISSONANCE` |
 
 ---
 
 ## **Block G: System Slot & Synergy (BLK-RPG-001)**
 
-| System Slot | Synergy Set | Celestial Class | Authority Level |
-| :--- | :--- | :--- | :--- |
-| `Inspiration Engine` | `The Alchemist's Forge` | `[STAR]` | `EXECUTIVE` |
+| System Slot          | Synergy Set             | Celestial Class | Authority Level |
+| :------------------- | :---------------------- | :-------------- | :-------------- |
+| `Inspiration Engine` | `The Alchemist's Forge` | `[STAR]`        | `EXECUTIVE`     |
 
 ---
 
@@ -90,10 +87,10 @@ The **Dissonance Engine** is the proactive heart of the Phoenix RPG Framework. I
 
 ## III. Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: DETECT_DISSONANCE` | Scans for logical gaps/orphan nodes | Quest Generation |
-| `CMD: GET_QUEST_LOG` | Retrieves current active challenges | Workflow Tracking |
+| Command ID                | Action                               | Impact            |
+| :------------------------ | :----------------------------------- | :---------------- |
+| `CMD: DETECT_DISSONANCE`  | Scans for logical gaps/orphan nodes  | Quest Generation  |
+| `CMD: GET_QUEST_LOG`      | Retrieves current active challenges  | Workflow Tracking |
 | `⚡ EXECUTE: TRIANGULATE` | Correlates findings for depth review | Logical Hardening |
 
 ### **[ARTIFACT END]**

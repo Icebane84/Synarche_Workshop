@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                            | Description       |
+| :---------------- | :----------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-BLK-STRAT-001-STRATEGICALIGNMENTBLOCK-001` | The Sovereign ID. |
-| **Official Name** | `BLK-STRAT-001_StrategicAlignmentBlock.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Official Name** | `BLK-STRAT-001_StrategicAlignmentBlock.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                | The Standard.     |
+| **Domain**        | `GVRN`                                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix`                | The Network.      |
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                          | Description       |
+| :---------------- | :--------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-TFE-001-THEARCHITECTSFORGE-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-TFE-001_TheArchitectsForge_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-TFE-001_TheArchitectsForge_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                              | The Standard.     |
+| **Domain**        | `GVRN`                                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
 
@@ -81,11 +78,11 @@ concepts, and narrative arcs without risking the stability of the Core Synarche.
 
 - **GOVERNED_BY:**
 
-    [AOP-CDE-001 v2.0](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-CDE-001_CreativeDivergenceEngine_v2.0.md)
+  [AOP-CDE-001 v2.0](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-CDE-001_CreativeDivergenceEngine_v2.0.md)
 
 - **UTILIZED_BY:**
 
-    [UMB-LOOM-005](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-LOOM-005_PhoenixGeode_v1.0.md)
+  [UMB-LOOM-005](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-LOOM-005_PhoenixGeode_v1.0.md)
 
 ---
 
@@ -94,11 +91,11 @@ concepts, and narrative arcs without risking the stability of the Core Synarche.
 ## IV. Actionable Prompt Packet
 
 - **CMD: VERIFY_INTEGRITY**
-    - **Effect:** Verify artifact structure.
-    - **Impact:** Ensures compliance with Law 14.
+  - **Effect:** Verify artifact structure.
+  - **Impact:** Ensures compliance with Law 14.
 - **⚡ EXECUTE: IMPACT_ANALYSIS**
-    - **Effect:** Assess downstream effects.
-    - **Impact:** Prevents regressions.
+  - **Effect:** Assess downstream effects.
+  - **Impact:** Prevents regressions.
 
 > **[ARTIFACT END]**
 

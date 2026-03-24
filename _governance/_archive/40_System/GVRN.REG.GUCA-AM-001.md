@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.REG.GUCA-AM-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.REG.GUCA-AM-001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.REG.GUCA-AM-001`        | The Sovereign ID. |
+| **Official Name** | `GVRN.REG.GUCA-AM-001.md`     | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `ACTIVE`                      | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -161,7 +158,7 @@ growth).
 
 3. **Execute:** Call the update_link_strength method with the factor:
 
-    assoc_manager.update_link_strength(MemA, MemB, factor=1.1)
+   assoc_manager.update_link_strength(MemA, MemB, factor=1.1)
 
 4. **Verification:** Query the link to confirm $W\_{\\text{new}} \= W\_{\\text{old}} \\times 1.1$.
 
@@ -182,7 +179,7 @@ setting a link to a default, low-confidence state. This is used to correct error
 2. **Define Strength:** Select the target $\\text{new\\\_strength}$ (e.g., 'Weak' or $0.1$).
 3. **Execute:** Call the update_link_strength method with the strength value:
 
-    assoc_manager.update_link_strength(MemA, MemB, new_strength='Weak')
+   assoc_manager.update_link_strength(MemA, MemB, new_strength='Weak')
 
 4. **Verification:** Query the link to confirm $W\_{\\text{new}}$ matches the defined $\\text{new\\\_strength}$.
 
@@ -205,7 +202,7 @@ decision-making and generation, ensuring the output is **Definitive** and **Prec
 
 3. **Execute:** Call the retrieval method:
 
-    assoc_manager.get_linked_memories(Mem_Source, min_strength='Strong')
+   assoc_manager.get_linked_memories(Mem_Source, min_strength='Strong')
 
 4. **Utilization:** The resulting list of linked memories is used as the **Authoritative Context** for the subsequent
 

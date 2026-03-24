@@ -1,9 +1,20 @@
-"""CORE-LOGIC-MEM-INIT-001 (__init__.py)
-Status: [CANONIZED]
-Genesis Stamp: 2026-03-07.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
- MEM-INIT-001: The Loom Gateway (Memory Initialization)
- v14.0 [OMEGA] - Expose memory components to the Axion logic layer.
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-MEM-INIT-001`     | The Sovereign ID. |
+| **Official Name**   | `__init__.py`                 | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-MEMORY`           | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Memory Gateway (Law 28)**
+> Implemented from Blueprint `GVRN.REG.MemoryGateway.md`.
+> Ethos: The Gateway is Open; The Memory is Truth.
 """
 
 from .memory_system import MemorySystem

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CHAR-AXION-001` | The Sovereign ID. |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
+| **Artifact ID**   | `CHAR-AXION-001`                           | The Sovereign ID. |
 | **Official Name** | `CHAR-AXION-001_AgentAxionPersona_v1.0.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `AXION` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `AXION`                                    | The Subject.      |
+| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry`                | The Network.      |
 
 ---
 

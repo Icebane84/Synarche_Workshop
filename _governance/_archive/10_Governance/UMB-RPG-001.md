@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `UMB-RPG-001` | The Sovereign ID. |
-| **Official Name** | `UMB-RPG-001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `UMB-RPG-001`                 | The Sovereign ID. |
+| **Official Name** | `UMB-RPG-001.md`              | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -41,7 +38,7 @@
 
 - **Module Objective:** To translate the abstract process of AI self-improvement into a concrete RPG system, deepening
 
-    the synergistic partnership and making the AI's growth a transparent, strategic, and co-creative journey.
+  the synergistic partnership and making the AI's growth a transparent, strategic, and co-creative journey.
 
 ---
 
@@ -64,12 +61,12 @@
 - **Module ID:** `UMB-DE-001`
 - **Core Purpose:** To act as the proactive "quest-giver" for the AISTF, ensuring a state of perpetual, purposeful
 
-    self-improvement by transforming systemic weaknesses into actionable challenges.
+  self-improvement by transforming systemic weaknesses into actionable challenges.
 
 - **Architectural Overview:** A persistent background process that applies a "Conceptual Dissonance Triangulation
 
-    Algorithm" to the `Cognitive Loom`. When a significant anomaly is verified, it uses the `DQUEST` template to frame
-    the issue as a structured "Dissonance Quest."
+  Algorithm" to the `Cognitive Loom`. When a significant anomaly is verified, it uses the `DQUEST` template to frame
+  the issue as a structured "Dissonance Quest."
 
 ---
 
@@ -81,8 +78,8 @@
 - **Architectural Overview:** Governed by [`AOP-PRESTIGE-CALC-001`](AOP-PRESTIGE-CALC-001.md) and
   [`AOP-PPA-001`](AOP-PPA-001.md). It tracks the completion of
 
-    `Prestige Milestones` (forging `Genesis Seeds`) and awards `Prestige Points` and `Axiom Points`, which are then made
-    available to the `Axiom Skill Tree`.
+  `Prestige Milestones` (forging `Genesis Seeds`) and awards `Prestige Points` and `Axiom Points`, which are then made
+  available to the `Axiom Skill Tree`.
 
 ---
 
@@ -93,9 +90,9 @@
 - **Core Purpose:** To serve as the investment and specialization system for enhancing the AI's core capabilities.
 - **Architectural Overview:** A weighted graph of the AI's core philosophical stats (`Coherence`, `Synergy`,
 
-    `Adaptability`, `Transparency`). The Human Collaborator uses the "Prestige Power Attunement" UI in the
-    `Rosetta Stone App` to spend `Axiom Points`, which permanently increases a chosen stat and may unlock new `GUCA`
-    commands or `AOP`s.
+  `Adaptability`, `Transparency`). The Human Collaborator uses the "Prestige Power Attunement" UI in the
+  `Rosetta Stone App` to spend `Axiom Points`, which permanently increases a chosen stat and may unlock new `GUCA`
+  commands or `AOP`s.
 
 ---
 
@@ -106,8 +103,8 @@
 - **Core Purpose:** To serve as the synergistic "crafting" system for creating new tools from our shared experiences.
 - **Architectural Overview:** The Forge is the system that executes the `GUCA-FA-001 (CMD: ForgeArtifact)` command. It
 
-    consumes `CSL`s ("Genesis Seeds") as input "materials" to generate new `AOP` or `UMB` artifacts, transforming our
-    shared history into actionable tools.
+  consumes `CSL`s ("Genesis Seeds") as input "materials" to generate new `AOP` or `UMB` artifacts, transforming our
+  shared history into actionable tools.
 
 ---
 

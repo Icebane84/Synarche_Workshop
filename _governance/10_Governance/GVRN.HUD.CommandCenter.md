@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.HUD.CommandCenter` | The Sovereign ID. |
-| **Official Name** | `GVRN.HUD.CommandCenter.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.HUD.CommandCenter`        | The Sovereign ID. |
+| **Official Name** | `GVRN.HUD.CommandCenter.md`     | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -37,10 +34,10 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID         | Relationship Type | Synergistic Impact |
-| :------------------------------ | :---------------- | :----------------- |
-| `CORE.Codex.Phoenix`          | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`          | `INDEXES`         | Tracks the state and presence of this artifact. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
 
 ---
 
@@ -74,15 +71,15 @@
 
 ## **II. Tactical Sub-Stratum (Governance)**
 
-| Domain           | Path                                                | Description                  |
-| :--------------- | :-------------------------------------------------- | :--------------------------- |
-| **Codex**        | [00_Codex](../00_Codex/CORE.Codex.Phoenix.md)       | The Phoenix Law (v15.0).     |
-| **Registries**   | [01_Registries](../01_Registries/GVRN.REG.ArtifactInventory.md) | Master Registry & OSLM.      |
-| **Protocols**    | [02_Protocols](../02_Protocols/SYNG.PROT.OathkeeperProtocol.md) | AOP/UMB procedures.          |
-| **Governance**   | [10_Governance](../10_Governance/GVRN.HUD.Map.md)   | HUD & Active Nodes.          |
-| **Architecture** | [20_Architecture](../20_Architecture)               | System Blueprints.           |
-| **System**       | [40_System](../40_System/SYNG.Loom.Master.md)       | Loom Master / Services.      |
-| **Logs**         | [50_Logs](../50_Logs)                               | The CSL History.             |
+| Domain           | Path                                                            | Description              |
+| :--------------- | :-------------------------------------------------------------- | :----------------------- |
+| **Codex**        | [00_Codex](../00_Codex/CORE.Codex.Phoenix.md)                   | The Phoenix Law (v15.0). |
+| **Registries**   | [01_Registries](../01_Registries/GVRN.REG.ArtifactInventory.md) | Master Registry & OSLM.  |
+| **Protocols**    | [02_Protocols](../02_Protocols/SYNG.PROT.OathkeeperProtocol.md) | AOP/UMB procedures.      |
+| **Governance**   | [10_Governance](../10_Governance/GVRN.HUD.Map.md)               | HUD & Active Nodes.      |
+| **Architecture** | [20_Architecture](../20_Architecture)                           | System Blueprints.       |
+| **System**       | [40_System](../40_System/SYNG.Loom.Master.md)                   | Loom Master / Services.  |
+| **Logs**         | [50_Logs](../50_Logs)                                           | The CSL History.         |
 
 ---
 
@@ -103,15 +100,15 @@
 
 ## **IV. Actionable Prompt Packet (APP)**
 
-| Command ID                | Action                             | Impact              |
-| :------------------------ | :--------------------------------- | :------------------ |
-| `CMD: HUD_SYNC`           | Synchronize all HUD links.         | Operational Flow    |
-| `CMD: STATUS_REPORT`      | Generate system resonance report.   | Coherence Monitoring|
-| `⚡ EXECUTE: PULSE_CHECK` | Run immediate health scan.         | Stability           |
+| Command ID                | Action                            | Impact               |
+| :------------------------ | :-------------------------------- | :------------------- |
+| `CMD: HUD_SYNC`           | Synchronize all HUD links.        | Operational Flow     |
+| `CMD: STATUS_REPORT`      | Generate system resonance report. | Coherence Monitoring |
+| `⚡ EXECUTE: PULSE_CHECK` | Run immediate health scan.        | Stability            |
 
 ---
 
-***
+---
 
 **Authority**: CORE.Codex.Phoenix **Status**: ACTIVE
 

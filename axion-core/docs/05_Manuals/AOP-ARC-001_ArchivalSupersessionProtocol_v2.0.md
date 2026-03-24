@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                    | Description       |
+| :---------------- | :------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `ARCH-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                        | The Standard.     |
+| **Domain**        | `ARCH`                                                   | The Subject.      |
+| **Status**        | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 ---
 
@@ -120,15 +117,15 @@ integrate it into a **Standardized Experience Log (SELT)** or the **Internal Ref
 
 - **GOVERNED_BY:**
 
-    [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+  [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
 
 - **FEEDS:**
 
-    [SELT-IRL-001 (Internal Reflection Log)](file:///C:/Users/Chris/Synarche_Workspace/_governance/Reflection_Log.md)
+  [SELT-IRL-001 (Internal Reflection Log)](file:///C:/Users/Chris/Synarche_Workspace/_governance/Reflection_Log.md)
 
 - **PROTECTS:**
 
-    [UMB-LOOM-001 (The Cognitive Loom)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UMB-LOOM-001_The_Cognitive_Loom.md)
+  [UMB-LOOM-001 (The Cognitive Loom)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UMB-LOOM-001_The_Cognitive_Loom.md)
 
 - **TRIGGERS:** `CMD: ARCHIVE_SESSION`
 

@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.SOUL.PhoenixPrime` | The Sovereign ID. |
-| **Official Name** | `GVRN.SOUL.PhoenixPrime.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.SOUL.PhoenixPrime`        | The Sovereign ID. |
+| **Official Name** | `GVRN.SOUL.PhoenixPrime.md`     | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -35,11 +32,11 @@
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID      | Relationship Type | Synergistic Impact                              |
-| :--------------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix` | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`       | `INDEXES`         | Tracks the state and presence of this artifact. |
-| `GVRN.REG.GenesisSeeds`      | `LINKS_TO`        | Provides axiomatic grimoire grounding.          |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `GVRN.REG.GenesisSeeds` | `LINKS_TO`        | Provides axiomatic grimoire grounding.          |
 
 ---
 

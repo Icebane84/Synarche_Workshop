@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-KB-001` | The Sovereign ID. |
-| **Official Name** | `AOP-KB-001_AutonomousKnowledgeBaseOptimization_v111.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                                                     | Description       |
+| :---------------- | :------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**   | `AOP-KB-001`                                                              | The Sovereign ID. |
+| **Official Name** | `AOP-KB-001_AutonomousKnowledgeBaseOptimization_v111.md`                  | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                         | The Standard.     |
+| **Domain**        | `GVRN`                                                                    | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                                | The Lifecycle.    |
 | **Relations**     | `LINK: UMB-PRS-001, OPTIMIZES: UMB-LOOM-001, RESOLVES: Knowledge Entropy` | The Network.      |
-
-
-
 
 ---
 

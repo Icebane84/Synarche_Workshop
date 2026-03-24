@@ -4,15 +4,12 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Documentation.Checklist` | The Sovereign ID. |
+| **Artifact ID**   | `GVRN.Documentation.Checklist`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Documentation.Checklist.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN`                            | The Subject.      |
+| **Status**        | `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`   | The Network.      |
 
 ---
 

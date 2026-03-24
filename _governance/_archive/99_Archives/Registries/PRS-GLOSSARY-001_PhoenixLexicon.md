@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-PRS-GLOSSARY-001-PHOENIXLEXICON-001` | The Sovereign ID. |
-| **Official Name** | `PRS-GLOSSARY-001_PhoenixLexicon.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `PRS-GLOSSARY-001_PhoenixLexicon.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `GVRN`                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
 
 ---
 

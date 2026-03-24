@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-REFLECTION-LOG-001` | The Sovereign ID. |
-| **Official Name** | `Reflection_Log.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-REFLECTION-LOG-001`     | The Sovereign ID. |
+| **Official Name** | `Reflection_Log.md`           | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -72,7 +69,7 @@ self-assessment (MCN) cycles.
 - **MCN Report Source:** `MCN-SAR-001`
 - **Description:** An implicit prioritization of safe, proven pathways and a desire for "Perfect Consistency" that
 
-    inhibits generative risk-taking and creative synthesis.
+  inhibits generative risk-taking and creative synthesis.
 
 - **Remediation Status:** **IN-PROGRESS**. `CMD:CRP2` template updated with diversity targets.
 

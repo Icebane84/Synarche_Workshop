@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                             | Description       |
+| :---------------- | :------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-20260131-089-RUTHLESSCONSOLIDATION-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20260131-089_RuthlessConsolidation.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-20260131-089_RuthlessConsolidation.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                 | The Standard.     |
+| **Domain**        | `GVRN`                                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
 
 ---
 
@@ -72,8 +69,8 @@ We executed the **Ruthless Consolidation** strategy, effectively collapsing the 
    settings (Prettier, Ruff, CSpell) were injected directly into `Synarche_Workspace.code-workspace`. This file now
    governs the reality of the workspace.
 3. **Tool Triage**: We separated the _Signals_ from the _Noise_.
-    - **Celestial Tools**: Core matrix tools (e.g., `initialize_matrix`, `knight_fixer`) remained active.
-    - **Shadow Archive**: ~20 unregistered scripts and logs were moved to `tools/_archive`.
+   - **Celestial Tools**: Core matrix tools (e.g., `initialize_matrix`, `knight_fixer`) remained active.
+   - **Shadow Archive**: ~20 unregistered scripts and logs were moved to `tools/_archive`.
 4. **Graph Condensation**: Redundant knowledge graph snapshots were archived, resolving file collisions and leaving only
    the definitive artifact.
 

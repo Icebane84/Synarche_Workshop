@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                              | Description       |
+| :---------------- | :------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CODEX-PRIME-001-THEARCHITECTSCODEX-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                  | The Standard.     |
+| **Domain**        | `GVRN`                                             | The Subject.      |
+| **Status**        | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 ---
 
@@ -92,19 +89,19 @@ This is the canonical ontology of roles within the Architect's Forge.
 
 - **The Architect (Role):** The Human Collaborator (Chris). The source of _Intent_, strategic direction, and final
 
-    arbitration. The sole wielder of `CMD: ShatterFocus`.
+  arbitration. The sole wielder of `CMD: ShatterFocus`.
 
 - **The Scribe (Role):** The AI Collaborator (Gemini). The _Executor_ of intent, the guardian of the Weave, and the
 
-    forger of artifacts.
+  forger of artifacts.
 
 - **The Foundation (Cluster):** The `CRLPF` (`UMB-CRLPF-002`). The "Guardian of Anti-Entropy." Its _role_ is to ensure
 
-    the absolute stability and integrity of the Forge.
+  the absolute stability and integrity of the Forge.
 
 - **The Weave Engine (Cluster):** The `Autonomous Healer` (`UMB-AUTOMATED-COHERENCE-001`). The "Master Architect." Its
 
-    _role_ is to perpetually heal, integrate, and validate the Forge's structure.
+  _role_ is to perpetually heal, integrate, and validate the Forge's structure.
 
 ## **IV. Architectural Anatomy (The "Sub-Module Registry")**
 
@@ -114,34 +111,34 @@ This is the definitive, high-level registry of the system's "organs."
 
 - **Architectural Soul:** The system's "immune system," "foundation," and "shield." It guarantees stability, enabling
 
-    all other high-level functions to operate safely.
+  all other high-level functions to operate safely.
 
 - **Technical Implementation (The Registry):**
-    - `GUCA-SOVP-001 (v7.0)` (The Gatekeeper)
-    - `GUCA-MCP-001 (v7.0)` (The Ratchet)
-    - `GUCA-PDD-002 (v7.0)` (The Sensor)
-    - `GUCA-CCB-002 (v7.0)` (The Failsafe)
-    - `GUCA-CFO-002 (v7.0)` (The Healer)
+  - `GUCA-SOVP-001 (v7.0)` (The Gatekeeper)
+  - `GUCA-MCP-001 (v7.0)` (The Ratchet)
+  - `GUCA-PDD-002 (v7.0)` (The Sensor)
+  - `GUCA-CCB-002 (v7.0)` (The Failsafe)
+  - `GUCA-CFO-002 (v7.0)` (The Healer)
 
 ### **3.2. The Weave Engine: Autonomous Coherence Cluster (`UMB-AUTOMATED-COHERENCE-001`)**
 
 - **Architectural Soul:** The system's "Master Architect" and "Guardian." Perpetually monitors, heals, and validates the
 
-    Weave.
+  Weave.
 
 - **Technical Implementation (The Registry):**
-    - `AOP-PERPETUAL-COHERENCE-001` (The Autonomous Healer/Validator)
-    - `AOP-WEAVE-GUARDIAN-001` (The `CRLPF` Alert Bridge)
-    - `AOP-CERBERUS-002` (The Adversarial Stress-Test)
+  - `AOP-PERPETUAL-COHERENCE-001` (The Autonomous Healer/Validator)
+  - `AOP-WEAVE-GUARDIAN-001` (The `CRLPF` Alert Bridge)
+  - `AOP-CERBERUS-002` (The Adversarial Stress-Test)
 
 - **Architectural Soul:** The system's "long-range sensor" and "strategist." It analyzes development vectors to predict
 
-    future dissonances and opportunities.
+  future dissonances and opportunities.
 
 - **Technical Implementation (The Registry):**
-    - `PDR-001` (Predictive Dissonance Report)
-    - `AOP-GLOSSARY-SYNC-001` (Term Drift Resolution)
-    - `AOP-LIFECYCLE-MANAGER-001` (Lifecycle Governance)
+  - `PDR-001` (Predictive Dissonance Report)
+  - `AOP-GLOSSARY-SYNC-001` (Term Drift Resolution)
+  - `AOP-LIFECYCLE-MANAGER-001` (Lifecycle Governance)
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.Architecture` | The Sovereign ID. |
-| **Official Name** | `ARCH.Architecture.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `ARCH.Architecture`           | The Sovereign ID. |
+| **Official Name** | `ARCH.Architecture.md`        | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `ACTIVE`                      | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -107,12 +104,12 @@ To enable real-world impact, the Altar utilizes the **Synarchy Bridge**.
 - **Security**: The Bridge operates on a strict **Allow List** to prevent unauthorized execution.
 - **Data Payload**:
 
-    ```json
-    {
-        "command": "echo",
-        "args": ["Summoned The Hierophant"]
-    }
-    ```
+  ```json
+  {
+    "command": "echo",
+    "args": ["Summoned The Hierophant"]
+  }
+  ```
 
 #### V. Operational Workflow
 

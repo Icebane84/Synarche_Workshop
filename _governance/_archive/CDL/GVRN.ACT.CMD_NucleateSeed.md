@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.CMD_NucleateSeed` | The Sovereign ID. |
+| Key               | Value                          | Description       |
+| :---------------- | :----------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.CMD_NucleateSeed`    | The Sovereign ID. |
 | **Official Name** | `GVRN.ACT.CMD_NucleateSeed.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `PROPOSED` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `GVRN`                         | The Subject.      |
+| **Status**        | `PROPOSED`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 
 ---
 
@@ -88,9 +85,9 @@ core "Nova Spark" from a finalized Collaborative Synthesis Log and formalizes it
 
 - **Success**: The seed is correctly formatted, the link to the CSL is valid, and both registries are synchronized.
 - **Failure**:
-    - `ERROR_SEED_001`: Source CSL ID not found.
-    - `ERROR_SEED_002`: CSL does not contain a valid `Synthesis Block` or `Nova Spark`.
-    - `ERROR_SEED_003`: Human approval not detected or provided.
+  - `ERROR_SEED_001`: Source CSL ID not found.
+  - `ERROR_SEED_002`: CSL does not contain a valid `Synthesis Block` or `Nova Spark`.
+  - `ERROR_SEED_003`: Human approval not detected or provided.
 
 ---
 

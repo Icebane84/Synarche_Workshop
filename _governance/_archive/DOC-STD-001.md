@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `DOC-STD-001` | The Sovereign ID. |
-| **Official Name** | `DOC-STD-001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `DOC-STD-001`                 | The Sovereign ID. |
+| **Official Name** | `DOC-STD-001.md`              | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -86,7 +83,7 @@ _This section defines how entities are named to ensure instant recognition of th
 
 - **Type Hinting:** **MANDATORY.** All function signatures must utilize the `typing` module (`List`, `Dict`, `Optional`,
   `Any`).
-    - _Code:_ `def fetch_data(id: int) -> Optional[Dict[str, Any]]:`
+  - _Code:_ `def fetch_data(id: int) -> Optional[Dict[str, Any]]:`
 - **Docstrings:** Must follow the **Google Style Guide**. Must be present for every Class and Public Method.
 - **Imports:** Sorted alphabetically. Standard library first, third-party second, local application third.
 
@@ -131,11 +128,11 @@ We utilize **Conventional Commits** to ensure the **AISTF** can parse our histor
 - Structure: `<type>(<scope>): <subject>`
 
 - Types:
-    - `feat`: A new feature
-    - `fix`: A bug fix
-    - `docs`: Documentation only changes
-    - `refactor`: A code change that neither fixes a bug nor adds a feature
-    - `chore`: Maintenance (build tasks, package manager configs)
+  - `feat`: A new feature
+  - `fix`: A bug fix
+  - `docs`: Documentation only changes
+  - `refactor`: A code change that neither fixes a bug nor adds a feature
+  - `chore`: Maintenance (build tasks, package manager configs)
 
 - _Example:_ `feat(parser): implement UMB JSON schema validation`
 

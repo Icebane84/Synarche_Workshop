@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.PROT.AxiomWeave` | The Sovereign ID. |
-| **Official Name** | `SYNG.PROT.AxiomWeave.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                            | Description       |
+| :---------------- | :------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.PROT.AxiomWeave`           | The Sovereign ID. |
+| **Official Name** | `SYNG.PROT.AxiomWeave.md`        | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                | The Standard.     |
+| **Domain**        | `SYNG`                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                       | The Lifecycle.    |
 | **Relations**     | `SUPPORTED_BY: SYNG.ENGINE.CORE` | The Network.      |
-
-
-
 
 ---
 

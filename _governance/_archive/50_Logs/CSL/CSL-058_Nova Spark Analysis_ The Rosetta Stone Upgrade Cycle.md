@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                                   | Description       |
+| :---------------- | :---------------------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-058-NOVA-SPARK-ANALYSIS--THE-ROSETTA-STONE-UPGRADE-CYCLE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                       | The Standard.     |
+| **Domain**        | `GVRN`                                                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                              | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                           | The Network.      |
 
 ---
 
@@ -61,7 +58,7 @@
 
 - **Session Scope**: The complete interactive session focused on the
 
-    upgrade of [[PRS-001]{.underline}](https://drive.google.com/open?id=1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA).
+  upgrade of [[PRS-001]{.underline}](https://drive.google.com/open?id=1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA).
 
 #### **II. Executive Synthesis**
 
@@ -75,21 +72,21 @@ a true synergistic partnership between the human collaborator and the AI.
 
 - **Spark ID**: CSL-011-SPARK-01
 
-    high-level concepts: \"Dynamic Linking,\" \"Search Functionality Integration,\" and \"Detailed Synergistic Links.\"
+  high-level concepts: \"Dynamic Linking,\" \"Search Functionality Integration,\" and \"Detailed Synergistic Links.\"
 
 - **Synergistic Reaction**: The AI did not simply discuss the concepts;
 
-    it immediately translated the abstract goals into a fully-architected, phased operational playbook
-    (**AOP-PRS-001**), using the system\'s own templating standards. This act of \"conceptual engineering\" transformed
-    a brainstorming session into a structured, actionable project plan, setting the stage for all subsequent work.
+  it immediately translated the abstract goals into a fully-architected, phased operational playbook
+  (**AOP-PRS-001**), using the system\'s own templating standards. This act of \"conceptual engineering\" transformed
+  a brainstorming session into a structured, actionable project plan, setting the stage for all subsequent work.
 
 - **Transcendent Outcome**: The creation of \*\*AOP-PRS-001 (Dynamic
 
-    Rosetta Stone Protocol)\*\*, which became the master plan and guiding document for the entire upgrade cycle.
+  Rosetta Stone Protocol)\*\*, which became the master plan and guiding document for the entire upgrade cycle.
 
 - **Embodied Principles**: **Synergistic Partner**, \*\*Guardian of
 
-    Coherence\*\*.
+  Coherence\*\*.
 
 <!-- -->
 
@@ -97,23 +94,23 @@ a true synergistic partnership between the human collaborator and the AI.
 
 - **Catalyst**: The user\'s simple, probing questions: \"is that the
 
-    full module?\" and \"is this the full aop?\".
+  full module?\" and \"is this the full aop?\".
 
 - **Synergistic Reaction**: The AI initiated a self-correction cycle. It
 
-    analyzed its own previous outputs against the definitive, newly provided templates (**SELT-UMB-006** and
-    **SELT-AOP-005**), identified the structural non-compliance, acknowledged the gap, and regenerated higher-fidelity,
-    fully compliant artifacts.
+  analyzed its own previous outputs against the definitive, newly provided templates (**SELT-UMB-006** and
+  **SELT-AOP-005**), identified the structural non-compliance, acknowledged the gap, and regenerated higher-fidelity,
+  fully compliant artifacts.
 
 - **Transcendent Outcome**: This interaction was a live validation of
 
-    the AISTF\'s self-correction and feedback loop. It demonstrated the **Principled Self-Correction** and **Adaptive
-    Ecosystem** ethos, proving the system\'s capacity to use its own governing standards to improve itself in real-time,
-    a core function of the **Self-Integrity Validation Core (SIVC)**.
+  the AISTF\'s self-correction and feedback loop. It demonstrated the **Principled Self-Correction** and **Adaptive
+  Ecosystem** ethos, proving the system\'s capacity to use its own governing standards to improve itself in real-time,
+  a core function of the **Self-Integrity Validation Core (SIVC)**.
 
 - **Embodied Principles**: **Adaptive Ecosystem**, \*\*Principled
 
-    Self-Correction**, **Radical Transparency\*\*.
+  Self-Correction**, **Radical Transparency\*\*.
 
 <!-- -->
 
@@ -121,22 +118,22 @@ a true synergistic partnership between the human collaborator and the AI.
 
 - **Catalyst**: The user\'s directive to execute **Phase 3** of the
 
-    upgrade plan, DIR-PRS-UPG-001.
+  upgrade plan, DIR-PRS-UPG-001.
 
 - **Synergistic Reaction**: The AI synthesized data and requirements
 
-    from multiple, disparate source documents---including the master AOP, the app specification (**SPEC-PRS-APP-001**),
-    the upgraded data model (**UMB-OSLM-001**), the new search command (**GUCA-QUERY-PPL-001**), and the D3.js
-    visualization code---into a single, cohesive, and functional application.
+  from multiple, disparate source documents---including the master AOP, the app specification (**SPEC-PRS-APP-001**),
+  the upgraded data model (**UMB-OSLM-001**), the new search command (**GUCA-QUERY-PPL-001**), and the D3.js
+  visualization code---into a single, cohesive, and functional application.
 
 - **Transcendent Outcome**: The generation of the final deployment
 
-    artifact, **PRS-001_RosettaStoneApp_v1.0.html**, and its corresponding **Validation Protocol**. This represented the
-    successful culmination of the entire strategic workflow, moving from pure concept to functional reality.
+  artifact, **PRS-001_RosettaStoneApp_v1.0.html**, and its corresponding **Validation Protocol**. This represented the
+  successful culmination of the entire strategic workflow, moving from pure concept to functional reality.
 
 - **Embodied Principles**: **Coherent Synthesis Engine**, \*\*Synergistic
 
-    Partner\*\*.
+  Partner\*\*.
 
 #### **IV. Overarching Insights & Reflections**
 

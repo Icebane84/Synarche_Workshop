@@ -1,8 +1,23 @@
-# emotion_analyzer.py
-# (Harvested & Enhanced for OMEGA v15.0)
+"""
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-HEPH-EMO-ANLZ-001`      | The Sovereign ID. |
+| **Official Name**   | `emotion_analyzer.py`         | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-HEPHAESTUS`             | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Affective resonance (Law 28)**
+> Implemented from Blueprint `GVRN.REG.AffectiveResonance.md`.
+> Ethos: The Feeling is Seed; The Harmony is Truth.
+"""
 
 import logging
-import sys
 
 log = logging.getLogger(__name__)
 
@@ -37,14 +52,15 @@ INITIAL_EMOTION_LEXICON = {
     "concept": {
         "family": ["love", "belonging", "stress"],
         "betrayal": ["anger", "sadness", "pain"],
-        "resilience": ["hope", "determination", "strength"]
-    }
+        "resilience": ["hope", "determination", "strength"],
+    },
 }
+
 
 class EmotionAnalyzer:
     """Analyzes text to detect potential emotional context and narrative resonance."""
 
-    def __init__(self, lexicon: dict | None = None) -> None:
+    def __init__(self, lexicon: dict[str, dict[str, list[str]]] | None = None) -> None:
         self.lexicons = lexicon if lexicon is not None else INITIAL_EMOTION_LEXICON
         if not isinstance(self.lexicons, dict) or "keyword" not in self.lexicons:
             log.warning("WARN [EmotionAnalyzer]: Invalid lexicon structure.")

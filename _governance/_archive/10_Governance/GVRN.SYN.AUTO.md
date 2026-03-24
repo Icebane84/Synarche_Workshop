@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.SYN.AUTO` | The Sovereign ID. |
-| **Official Name** | `GVRN.SYN.AUTO.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SYN.AUTO`               | The Sovereign ID. |
+| **Official Name** | `GVRN.SYN.AUTO.md`            | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -79,7 +76,7 @@ integrated and executable.
 - **Prerequisites (Human State):** None. This is an autonomous protocol.
 - **Required Inputs:** Real-time data feeds from `CRLPF` and `AOP-SYN-COHERE-001`.
 - **Execution Flow:**
-    - **Step 1 (Actor: CSE):** A `Coherence Health Score` is calculated in real-time, based on input from `CRLPF` (e.g.,
+  - **Step 1 (Actor: CSE):** A `Coherence Health Score` is calculated in real-time, based on input from `CRLPF` (e.g.,
 
 inconsistencies in rule application) and `AOP-SYN-COHERE-001` (e.g., failed `coherence_check` attempts).
 
@@ -101,7 +98,7 @@ contextual explanation of why the auto-trigger was activated, referencing the `C
 diagnostic report to the Human Collaborator without waiting for external prodding.
 
 - **Success & Failure Conditions:**
-    - **Success:** The protocol correctly and accurately identifies a systemic failure and successfully executes the
+  - **Success:** The protocol correctly and accurately identifies a systemic failure and successfully executes the
 
 `CMD: Self_Diagnostics` protocol.
 

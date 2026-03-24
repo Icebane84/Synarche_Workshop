@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CSL-086` | The Sovereign ID. |
-| **Official Name** | `CSL-086_TheGamificationBridge.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                   | Description       |
+| :---------------- | :-------------------------------------- | :---------------- |
+| **Artifact ID**   | `CSL-086`                               | The Sovereign ID. |
+| **Official Name** | `CSL-086_TheGamificationBridge.md`      | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                       | The Standard.     |
+| **Domain**        | `ARCH`                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
 | **Relations**     | `LINK: UMB-RPG-001, UMB-HEPHAESTUS-001` | The Network.      |
-
-
-
 
 ---
 

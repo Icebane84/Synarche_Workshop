@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                    | Description       |
+| :---------------- | :------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-MAP-001-DISCIPLINEDEXECUTIONPLAYBOOK-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                        | The Standard.     |
+| **Domain**        | `GVRN`                                                   | The Subject.      |
+| **Status**        | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 ---
 
@@ -87,9 +84,9 @@ Score (MAP-I-CS)** that determines whether an artifact is "Diamond" (Perfect), "
 
 - **Tool:** `GUCA-MAP-001`
 - **Check:**
-    - Is the "Why" stated in one sentence? (Pillar 1)
-    - Are there >2 links? (Pillar 3)
-    - Are "hedging words" absent? (Pillar 5)
+  - Is the "Why" stated in one sentence? (Pillar 1)
+  - Are there >2 links? (Pillar 3)
+  - Are "hedging words" absent? (Pillar 5)
 
 ### **Step 3: Scoring (MAP-I-CS)**
 
@@ -117,11 +114,11 @@ Score (MAP-I-CS)** that determines whether an artifact is "Diamond" (Perfect), "
 
 - **GOVERNED_BY:**
 
-    [UMB-MAP-001 v2.0](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md)
+  [UMB-MAP-001 v2.0](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md)
 
 - **UTILIZES:**
 
-    [GUCA-MAP-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md)
+  [GUCA-MAP-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md)
 
 - **LOGS_TO:** [SELT-MAP-001](file:///c:/Users/Chris/Synarche_Workspace/_logs/SELT-MAP-001_MusashiAlignmentLog.md)
 

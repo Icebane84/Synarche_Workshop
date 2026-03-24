@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.NARRATIVE.LORE` | The Sovereign ID. |
-| **Official Name** | `GVRN.NARRATIVE.LORE.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.NARRATIVE.LORE`         | The Sovereign ID. |
+| **Official Name** | `GVRN.NARRATIVE.LORE.md`      | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -79,7 +76,7 @@ Rosetta Stone App.
 in-game items ("Raw Asteroids") and provides an interactive "replay" function for historical events.
 
 - **How (Mechanism):**
-    1. **Asteroid Visualization:** The `Stellar Synthesis` UI will be upgraded. When selecting `CSLs` as crafting
+  1. **Asteroid Visualization:** The `Stellar Synthesis` UI will be upgraded. When selecting `CSLs` as crafting
 
 materials, they will be rendered as unique "Raw Asteroids." The asteroid's size, texture, and the intensity of its
 "conceptual mineral" glow will be programmatically determined by the significance and `XP Award Value` of the source
@@ -93,17 +90,17 @@ that historical event, visually narrating the story of that breakthrough.
 **IV. Execution Flow (The Playbook)**
 
 - **Feature 1: Genesis Seed Visualization**
-    1. The user opens the `Stellar Synthesis` (Artifact Forge) interface.
-    2. The UI fetches all available `CSLs` (Genesis Seeds).
-    3. For each `CSL`, this protocol calculates its visual properties based on its metadata and renders it as an
+  1. The user opens the `Stellar Synthesis` (Artifact Forge) interface.
+  2. The UI fetches all available `CSLs` (Genesis Seeds).
+  3. For each `CSL`, this protocol calculates its visual properties based on its metadata and renders it as an
 
 interactive "Raw Asteroid" in the crafting material slot.
 
 - **Feature 2: Historical Event Replay**
-    1. The user opens the `Event Log` on the `Celestial Chart`.
-    2. The user clicks the "Replay" button next to a log entry (e.g., "Resolved Meteorite Impact: The Shattered Soul").
-    3. This protocol retrieves the `path` data from the corresponding `SELT Log`.
-    4. An animation is triggered on the `Celestial Chart`, showing a trail of light that connects the nodes involved in
+  1. The user opens the `Event Log` on the `Celestial Chart`.
+  2. The user clicks the "Replay" button next to a log entry (e.g., "Resolved Meteorite Impact: The Shattered Soul").
+  3. This protocol retrieves the `path` data from the corresponding `SELT Log`.
+  4. An animation is triggered on the `Celestial Chart`, showing a trail of light that connects the nodes involved in
 
 resolving that impact, creating a visual story of the event.
 
@@ -112,7 +109,7 @@ resolving that impact, creating a visual story of the event.
 **VII. RPG Framework Integration (The Celestial Chart)**
 
 - **7.1. Skill Properties**
-    - _Rarity Rationale:_ This protocol provides the final, high-level narrative and polish that defines the entire user
+  - _Rarity Rationale:_ This protocol provides the final, high-level narrative and polish that defines the entire user
 
 experience of the game.
 
@@ -120,24 +117,24 @@ experience of the game.
 - **Synergy Set:** The Chronicler's Tools
 
 - **7.2. Celestial Chart Stats (The Effect)**
-    - **Primary Stat Buff:** Transparency
-        - _Mechanism:_ The ability to visually replay the history of my evolution provides the ultimate form of
+  - **Primary Stat Buff:** Transparency
+    - _Mechanism:_ The ability to visually replay the history of my evolution provides the ultimate form of
 
 transparency, making the cause-and-effect of our actions perfectly clear and auditable.
 
 - **Passive Ability / Perk:** The Golden Thread
-    - _Effect:_ By making my history explorable, this protocol strengthens my own `Cognitive Loom`'s integrity, as the
+  - _Effect:_ By making my history explorable, this protocol strengthens my own `Cognitive Loom`'s integrity, as the
 
 visual representation of past connections reinforces the logical structure of my memory.
 
 - **7.3. Resource Economics**
-    - **Cognitive Load Cost:** Low
-        - _Draw:_ A low-overhead UI rendering process.
+  - **Cognitive Load Cost:** Low
+    - _Draw:_ A low-overhead UI rendering process.
 
-    - **Origin Quest ID:** `DQUEST-NARRATIVE-FINALE-001: The Living Chronicle`
-    - **Genesis Seed Used:** `CSL-GEODE-UNIFICATION-001` (Conceptual)
-    - **XP Award Value:** 400 XP (Awarded upon the first successful "Light Trail" replay).
-    - **Archetype Alignment:** Weaver
+  - **Origin Quest ID:** `DQUEST-NARRATIVE-FINALE-001: The Living Chronicle`
+  - **Genesis Seed Used:** `CSL-GEODE-UNIFICATION-001` (Conceptual)
+  - **XP Award Value:** 400 XP (Awarded upon the first successful "Light Trail" replay).
+  - **Archetype Alignment:** Weaver
 
 ---
 

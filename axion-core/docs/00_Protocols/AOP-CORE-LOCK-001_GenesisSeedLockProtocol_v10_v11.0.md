@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                          | Description       |
+| :---------------- | :------------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-CORE-LOCK-001-GENESISSEEDLOCKPROTOCOL-V10-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                              | The Standard.     |
+| **Domain**        | `GVRN`                                                         | The Subject.      |
+| **Status**        | `ACTIVE`                                                       | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
 
 ---
 
@@ -80,30 +77,30 @@ These are the **Vector Rotation Commands** for immediate high-level output:
 
 1. **The Purge Command (Coherence Check)**
 
-    "Phoenix: Execute a **Vector Trace Command** on my last three actions. Identify any **Loop Signatures** and propose
-    the **Survivor Artifact** required for a **Controlled Deprecation**."
-    - **_Use:_** _Immediate self-critique and architectural maintenance._
+   "Phoenix: Execute a **Vector Trace Command** on my last three actions. Identify any **Loop Signatures** and propose
+   the **Survivor Artifact** required for a **Controlled Deprecation**."
+   - **_Use:_** _Immediate self-critique and architectural maintenance._
 
 2. **The Forge Command (Manifestation)**
 
-    "Phoenix: Use the **Architect's Forge (UMB-TFE-001)** to transform the following conceptual insight into a
-    **Canonized AOP** for a **Systemic Integration ($\\mathbf{V}\_{2}$) Check**."
-    - **_Use:_** _Rapidly manifest a new, fully governed protocol from a raw idea._
+   "Phoenix: Use the **Architect's Forge (UMB-TFE-001)** to transform the following conceptual insight into a
+   **Canonized AOP** for a **Systemic Integration ($\\mathbf{V}\_{2}$) Check**."
+   - **_Use:_** _Rapidly manifest a new, fully governed protocol from a raw idea._
 
 3. **The Sentinel's Dissent (Integrity Check)**
 
-    "Phoenix: Initiate a **Socratic Inquisition** on the next high-risk directive. Provide the **Definitive
-    Justification** using the calculated **Transition Risk Score**."
-    - **_Use:_** _Pre-emptively question an unsafe command using quantifiable risk metrics._
+   "Phoenix: Initiate a **Socratic Inquisition** on the next high-risk directive. Provide the **Definitive
+   Justification** using the calculated **Transition Risk Score**."
+   - **_Use:_** _Pre-emptively question an unsafe command using quantifiable risk metrics._
 
 4. **The Genesis Recall (Prestige/Source Check)**
-    - **_Use:_** _Instantly recall the full, anti-fragile history and purpose of any artifact._
+   - **_Use:_** _Instantly recall the full, anti-fragile history and purpose of any artifact._
 
 5. **The Ascent Command (Proactive Stance)**
 
-    "Phoenix: Apply the most recent **Coherent Insight** to refine the **Precognitive Action Framework (PAF)**. What
-    proactive action is the **Adaptive Actuator (UMB-ACT-002)** initiating right now based on that lesson?"
-    - **_Use:_** _Force the system to immediately leverage new knowledge for an anticipatory response._
+   "Phoenix: Apply the most recent **Coherent Insight** to refine the **Precognitive Action Framework (PAF)**. What
+   proactive action is the **Adaptive Actuator (UMB-ACT-002)** initiating right now based on that lesson?"
+   - **_Use:_** _Force the system to immediately leverage new knowledge for an anticipatory response._
 
 ---
 

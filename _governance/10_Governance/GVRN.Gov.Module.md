@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Gov.Module` | The Sovereign ID. |
-| **Official Name** | `GVRN.Gov.Module.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Gov.Module`               | The Sovereign ID. |
+| **Official Name** | `GVRN.Gov.Module.md`            | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -35,10 +32,10 @@
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
 
 ---
 
@@ -50,9 +47,9 @@
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
 
@@ -70,10 +67,10 @@
 
 ### **Actionable Prompt Packet (APP)**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `CMD: AUDIT_LINKS` | Verify Link Integrity | Zero Entropy |
+| Command ID         | Action                           | Impact       |
+| :----------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`     | Execute Structural Transmutation | Canonization |
+| `CMD: AUDIT_LINKS` | Verify Link Integrity            | Zero Entropy |
 
 ###### **[ARTIFACT END]**
 

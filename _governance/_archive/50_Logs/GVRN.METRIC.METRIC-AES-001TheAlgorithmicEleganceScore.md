@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.METRIC.METRIC-AES-001TheAlgorithmicEleganceScore` | The Sovereign ID. |
+| Key               | Value                                                      | Description       |
+| :---------------- | :--------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.METRIC.METRIC-AES-001TheAlgorithmicEleganceScore`    | The Sovereign ID. |
 | **Official Name** | `GVRN.METRIC.METRIC-AES-001TheAlgorithmicEleganceScore.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                                          | The Standard.     |
+| **Domain**        | `GVRN`                                                     | The Subject.      |
+| **Status**        | `ACTIVE`                                                   | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                              | The Network.      |
 
 ---
 
@@ -86,13 +83,13 @@
 
 - **Formula**:
 
-    $$ \text{Final XP} = \text{Base XP} \times (1 + \frac{\text{AES}}{10}) $$
+  $$ \text{Final XP} = \text{Base XP} \times (1 + \frac{\text{AES}}{10}) $$
 
 - **Impact**:
-    - **AES 1-4**: "Brute Force". Minimal XP.
-    - **AES 5-7**: "Industry Standard". Standard XP.
-    - **AES 8-9**: "Masterwork". 1.8x - 1.9x XP.
-    - **AES 10**: "Golden Ratio". 2.0x XP + "Legendary" Alert.
+  - **AES 1-4**: "Brute Force". Minimal XP.
+  - **AES 5-7**: "Industry Standard". Standard XP.
+  - **AES 8-9**: "Masterwork". 1.8x - 1.9x XP.
+  - **AES 10**: "Golden Ratio". 2.0x XP + "Legendary" Alert.
 
 ---
 

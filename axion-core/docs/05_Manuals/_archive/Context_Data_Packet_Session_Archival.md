@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                           | Description       |
+| :---------------- | :---------------------------------------------- | :---------------- |
 | **Artifact ID**   | `ARCH-CONTEXT-DATA-PACKET-SESSION-ARCHIVAL-001` | The Sovereign ID. |
-| **Official Name** | `Context_Data_Packet_Session_Archival.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `Context_Data_Packet_Session_Archival.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                               | The Standard.     |
+| **Domain**        | `ARCH`                                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
 
 ---
 

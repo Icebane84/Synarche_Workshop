@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `Context_Data_Packet_Session_Archival` | The Sovereign ID. |
+| Key               | Value                                     | Description       |
+| :---------------- | :---------------------------------------- | :---------------- |
+| **Artifact ID**   | `Context_Data_Packet_Session_Archival`    | The Sovereign ID. |
 | **Official Name** | `Context_Data_Packet_Session_Archival.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                         | The Standard.     |
+| **Domain**        | `GVRN`                                    | The Subject.      |
+| **Status**        | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry`               | The Network.      |
 
 ---
 

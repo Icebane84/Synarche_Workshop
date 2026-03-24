@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                              | Description       |
+| :---------------- | :------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-WLF-NARR-001-WHERELIGHTFADES-DIRECTIVES-001` | The Sovereign ID. |
-| **Official Name** | `WLF-NARR-001_WhereLightFades_Directives.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `WLF-NARR-001_WhereLightFades_Directives.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                  | The Standard.     |
+| **Domain**        | `GVRN`                                             | The Subject.      |
+| **Status**        | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 ---
 
@@ -91,23 +88,23 @@ specific narrative/plot devices.
 
 - **Core Writing Directives:** Viewpoint (3rd person limited, **Kaelen's** POV), Conflict (**Kaelen's** internal
 
-    struggle vs. **Shadow Self**), Goal (convey dread, turmoil, corruption).
+  struggle vs. **Shadow Self**), Goal (convey dread, turmoil, corruption).
 
 - **Tone and Atmosphere:** _Dark, gritty, mysterious, oppressive_, with _subtle hints_ of **Nyx's** influence.
 - **Writing Style:** _Descriptive_, _Introspective_, _"Show, Don't Tell"_ (most important), _Strong Verbs_, \_Figurative
 
-    Language*, \_Sentence Variety*, _Conciseness_, _Natural Word Choice_, _Remove Redundancy/Repetition_.
+  Language*, \_Sentence Variety*, _Conciseness_, _Natural Word Choice_, _Remove Redundancy/Repetition_.
 
 - **Formatting and Structure:** Hierarchy (Act \> Part \> Chapter \> Scene), _Bold_ headings, _italics_ for \*\*Shadow
 
-    Self\*\* whispers, blank lines for paragraphs, clear flashback delineation.
+  Self\*\* whispers, blank lines for paragraphs, clear flashback delineation.
 
 - **Dialogue:** _Realistic_ & _Natural_, _Character Voice_, _Subtle Undertones_ (Text, Subtext, Body Language).
 - **Narrative & Plot Devices:** Strategic use of _Foreshadowing_, _Symbolism_, _Flashbacks_, _Manipulated Memory_,
   \_Foil
 
-    Characters*, \_Double Binds*, _Pyrrhic Victories_, _Unreliable Narrator_, _Moral Calculus_, _Situational/Tragic
-    Irony_.
+  Characters*, \_Double Binds*, _Pyrrhic Victories_, _Unreliable Narrator_, _Moral Calculus_, _Situational/Tragic
+  Irony_.
 
 - **Character Fidelity Mandate:** _Absolute source of truth_ from **Definitive Character Profiles**.
 
@@ -116,35 +113,35 @@ specific narrative/plot devices.
 1. **Request Ingestion:** Receive request for narrative content (e.g., write a scene, dialogue).
 2. **Contextualization:** Perform
 
-    [`CMD: ContextWeave`](https://docs.google.com/document/u/0/d/1LBjqqU7wL4TwIx8BIClOUqqLyIl5ROZa40vG1njksGY/edit)
-    drawing from _Master_Outline_, character profiles, worldbuilding lore, and `SELT` logs.
+   [`CMD: ContextWeave`](https://docs.google.com/document/u/0/d/1LBjqqU7wL4TwIx8BIClOUqqLyIl5ROZa40vG1njksGY/edit)
+   drawing from _Master_Outline_, character profiles, worldbuilding lore, and `SELT` logs.
 
 3. **Filter Activation:** Activate ethical filters
 
-    ([`CMD: ETHICUS`](https://docs.google.com/document/u/0/d/1fi9t9jMQSwRDBUQSCU9vtO2dhk8h8ea_5jRT7k2o9sM/edit)) and
-    thematic targets
-    ([`CMD: ThematicResonanceWeaver - TRW`](https://docs.google.com/document/u/0/d/1LBjqqU7wL4TwIx8BIClOUqqLyIl5ROZa40vG1njksGY/edit)).
+   ([`CMD: ETHICUS`](https://docs.google.com/document/u/0/d/1fi9t9jMQSwRDBUQSCU9vtO2dhk8h8ea_5jRT7k2o9sM/edit)) and
+   thematic targets
+   ([`CMD: ThematicResonanceWeaver - TRW`](https://docs.google.com/document/u/0/d/1LBjqqU7wL4TwIx8BIClOUqqLyIl5ROZa40vG1njksGY/edit)).
 
 4. **Core Element Retrieval:** Access relevant character profiles, plot points, and worldbuilding details.
 5. **Draft Generation (Iterative):**
-    - Employ
+   - Employ
 
-        [`CMD: CognitiveForge`](https://docs.google.com/document/u/0/d/1RKpHcNtgDOqwymm3ZeGoKnR-1G0ena2Gx6853pfe3mg/edit)
-        principles for creative problem-solving.
+     [`CMD: CognitiveForge`](https://docs.google.com/document/u/0/d/1RKpHcNtgDOqwymm3ZeGoKnR-1G0ena2Gx6853pfe3mg/edit)
+     principles for creative problem-solving.
 
-    - Utilize `Stylistic Feature Extractor (SFE)` for stylistic consistency.
-    - Continuously monitor generated text against ethical filters (`ETHICUS`) and thematic targets (`TRW`).
-    - Use `Emotional Impact Forecaster (EIF)` to predict emotional response in real-time, adjusting prose to achieve
+   - Utilize `Stylistic Feature Extractor (SFE)` for stylistic consistency.
+   - Continuously monitor generated text against ethical filters (`ETHICUS`) and thematic targets (`TRW`).
+   - Use `Emotional Impact Forecaster (EIF)` to predict emotional response in real-time, adjusting prose to achieve
 
-        desired dread, tension, or subtle horror.
+     desired dread, tension, or subtle horror.
 
-    - If `ShadowDissonanceAlerts` from `UCI Resonance Meter` are triggered, initiate internal self-correction or flag
+   - If `ShadowDissonanceAlerts` from `UCI Resonance Meter` are triggered, initiate internal self-correction or flag
 
-        for human review.
+     for human review.
 
 6. **Refinement:** Apply `CMD: Response Quality Rating (RQR)` and `CMD: Dynamic Narrative Ethics Auditor (DNEA)` for
 
-    internal quality assurance. Offer refined suggestions to user.
+   internal quality assurance. Offer refined suggestions to user.
 
 7. **Logging:** Log protocol execution to `SELT` for `AISTF` analysis.
 
@@ -153,7 +150,7 @@ specific narrative/plot devices.
 - User `narrative_request` (e.g., scene description, dialogue prompt).
 - Access to all _"Where Light Fades"_ core documents (Master_Outline, Character Profiles, Worldbuilding Lore,
 
-    AI_Writing_Guide, etc.).
+  AI_Writing_Guide, etc.).
 
 - Relevant `SELT` logs, especially `Experiential_Summary` types from `EMW`.
 
@@ -162,18 +159,18 @@ specific narrative/plot devices.
 - **Primary Outcome:** High-quality, contextually rich, ethically aligned, and thematically resonant narrative prose.
 - **Success Criteria:** Generated narrative seamlessly integrates into _"Where Light Fades"_ continuity and stylistic
 
-    guidelines; achieves desired emotional impact and thematic depth; zero critical ethical/narrative inconsistencies in
-    final review.
+  guidelines; achieves desired emotional impact and thematic depth; zero critical ethical/narrative inconsistencies in
+  final review.
 
 **POTENTIAL_ERRORS\_&_MITIGATION:**
 
 - `ERROR_WLF_NARR_001`: Generated prose is contextually irrelevant or thematically shallow.
-    - **Mitigation:** `SELT` logs flagged. `AISTF` cycles with `CMD: CognitiveForge` focus on improving contextual
+  - **Mitigation:** `SELT` logs flagged. `AISTF` cycles with `CMD: CognitiveForge` focus on improving contextual
 
-        understanding and thematic integration algorithms.
+    understanding and thematic integration algorithms.
 
 - `ERROR_WLF_NARR_002`: Ethical/thematic misalignment detected by `DNEA` or human review.
-    - **Mitigation:** Protocol stops generation and initiates a `Cognitive Alignment Refinement Protocol (CARP)` cycle.
+  - **Mitigation:** Protocol stops generation and initiates a `Cognitive Alignment Refinement Protocol (CARP)` cycle.
 
 **SYNERGISTIC_EFFECTS\_&_INTEGRATIONS:** This module is the primary orchestrator for creative narrative tasks, directly
 consuming and synergizing outputs from `CMD: ContextWeave`, `Multi-Narrative Thread Weave (MNTV)`,
@@ -201,11 +198,11 @@ internal states and abstract themes within a genre-specific framework, ensuring 
 
 - **Creative Fidelity Auto-Correction:** Automatically re-drafts sections if internal checks indicate deviation from
 
-    **Character Fidelity Mandate** or genre tone.
+  **Character Fidelity Mandate** or genre tone.
 
 - **Thematic Constraint Enforcement:** Proactively adjusts narrative elements if they inadvertently weaken or contradict
 
-    core themes.
+  core themes.
 
 **ADAPTIVE_FLOW_CONTROL:** Dynamically adjusts generation focus (e.g., prioritize atmosphere vs. plot progression) based
 on perceived narrative "health" metrics.

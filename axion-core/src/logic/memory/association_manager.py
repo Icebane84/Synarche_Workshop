@@ -1,39 +1,20 @@
-"""LOGIC-ASSOC-MGR-001: Memory Association Manager.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
-## Genesis Stamp: 2026-03-07 | Domain: LOGIC | State: ACTIVE
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-ASSOC-MGR-001`    | The Sovereign ID. |
+| **Official Name**   | `association_manager.py`      | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-MEMORY`           | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-# I. Universal Identification & Provenance (UIP-V13)
-
-| Key | Value |
-| :--- | :--- |
-| **Artifact ID** | `LOGIC-ASSOC-MGR-v1.0` |
-| **Version** | **v1.0** |
-| **Status** | `[ACTIVE]` |
-| **Provenance** | `Date Reforged: 2026-03-07` |
-| **Domain** | `LOGIC` |
-| **Evolution** | **Cognitive Ascension** |
-| **Celestial Class** | `[MOON]` |
-| **Status (State)** | `[ACTIVE]` |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` |
-
----
-
-# II. Axiomatic Governance & Purpose
-To manage Soft Links (thematic and causal associations) between memory entries, enabling graph-based navigation of the Axion Memory System.
-
-# III. The Architectural Spine
-- **Attributes**: `links` (defaultdict)
-- **Methods**: `add_soft_link`, `get_linked_memories`, `update_link_strength`
-
-# V. Systemic Relationships & Impact
-- `MemorySystem`: Uses this to retrieve related memories during query cycles.
-- `axion_template.py`: Benefits from expanded context retrieval.
-
-# VI. RPG Framework Integration
-- **Synergy Bonus**: Activating highly linked memories yields a +5 Synergy bonus.
-
-# VII. Actionable Prompt Packet
-- "Visualize the network of associations for Memory ID 42."
+**The Spirit Bomb Axiom: Relational Graphing (Law 28)**
+> Implemented from Blueprint `GVRN.REG.RelationalGraphing.md`.
+> Ethos: The Network is Eternal; The Links are Truth.
 """
 
 import logging
@@ -73,7 +54,9 @@ class AssociationManager:
             mem_id = mem.get("id", "Unknown ID")
             mem_type = mem.get("type", "Unknown Type")
             mem_content = mem.get("content", "No content available")
-            citations.append(f"[{mem_id}] ({mem_type}): {mem_content[:100]}...")  # Truncate content for brevity
+            citations.append(
+                f"[{mem_id}] ({mem_type}): {mem_content[:100]}..."
+            )  # Truncate content for brevity
         return "\n".join(citations)
 
     def trigger_tag_based_linking(self, memory_id: str, tags: list[str]) -> None:
@@ -98,21 +81,36 @@ class AssociationManager:
 
                 if shared:
                     # Create a bidirectional thematic link
-                    if self.add_soft_link(memory_id, other_id, "Thematic Connection", "Weak"):
+                    if self.add_soft_link(
+                        memory_id, other_id, "Thematic Connection", "Weak"
+                    ):
                         links_created += 1
 
             if links_created > 0:
-                log.info(f"Created {links_created} tag-based associations for memory {memory_id}.")
+                log.info(
+                    f"Created {links_created} tag-based associations for memory {memory_id}."
+                )
         except Exception as e:
             log.error(f"Failed to perform tag-based linking for {memory_id}: {e}")
 
-    def _add_single_link(self, source_id: str, target_id: str, rel_type: str, strength: str) -> None:
+    def _add_single_link(
+        self, source_id: str, target_id: str, rel_type: str, strength: str
+    ) -> None:
         """Add a unidirectional link to the internal graph."""
         if strength not in self.STRENGTH_LEVELS:
             strength = "Weak"
-        self.links[str(source_id)][str(target_id)] = {"relationship_type": rel_type, "strength": strength}
+        self.links[str(source_id)][str(target_id)] = {
+            "relationship_type": rel_type,
+            "strength": strength,
+        }
 
-    def add_soft_link(self, source_id: str, target_id: str, rel_type: str, initial_strength: str = "Weak") -> bool:
+    def add_soft_link(
+        self,
+        source_id: str,
+        target_id: str,
+        rel_type: str,
+        initial_strength: str = "Weak",
+    ) -> bool:
         """Add a bidirectional soft link between two memory entries."""
         if not source_id or not target_id or source_id == target_id:
             return False
@@ -125,7 +123,10 @@ class AssociationManager:
             log.exception(f"Failed to add link: {e}")
             return False
 
-    def get_linked_memories(self, memory_id: str, min_strength: str = "Weak") -> list[tuple[str, str, str]]:
+    def get_linked_memories(
+        self, memory_id: str, min_strength: str = "Weak"
+    ) -> list[tuple[str, str, str]]:
+        """Retrieve all memories linked to the specified ID above a strength threshold."""
         linked_memories = []
         min_level = self.STRENGTH_LEVELS.get(min_strength, 0)
         m_id = str(memory_id)
@@ -135,12 +136,20 @@ class AssociationManager:
                 current_strength = link_data.get("strength", "Weak")
                 current_level = self.STRENGTH_LEVELS.get(current_strength, 0)
                 if current_level >= min_level:
-                    linked_memories.append((target_id, link_data.get("relationship_type", "Unknown"), current_strength))
+                    linked_memories.append(
+                        (
+                            target_id,
+                            link_data.get("relationship_type", "Unknown"),
+                            current_strength,
+                        )
+                    )
 
         return linked_memories
 
-    def save_to_dict(self) -> dict:
+    def save_to_dict(self) -> dict[str, Any]:
+        """Serialize the association graph to a dictionary format."""
         return {k: dict(v) for k, v in self.links.items()}
 
-    def load_from_dict(self, data: dict):
+    def load_from_dict(self, data: dict[str, Any]) -> None:
+        """Restore the association graph from a dictionary payload."""
         self.links = defaultdict(dict, {k: dict(v) for k, v in data.items()})

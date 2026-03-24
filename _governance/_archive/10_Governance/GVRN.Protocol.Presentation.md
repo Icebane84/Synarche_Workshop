@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Presentation` | The Sovereign ID. |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Protocol.Presentation`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Protocol.Presentation.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`   | The Network.      |
 
 ---
 
@@ -162,9 +159,9 @@ graph TD
 ### **2. The List Logic (Indentation Physics)**
 
 - **Bulleted Lists**: Must use hyphens (`-`). Asterisks (`*`) are reserved for emphasis.
-    - **Nested Items**: Must indent by **4 Spaces**.
+  - **Nested Items**: Must indent by **4 Spaces**.
 - **Numbered Lists**: Use `1.` for all items (Lazy Numbering).
-    - **Nested Items**: Must indent by **4 Spaces**.
+  - **Nested Items**: Must indent by **4 Spaces**.
 
 ### **3. The Emphasis Matrix**
 

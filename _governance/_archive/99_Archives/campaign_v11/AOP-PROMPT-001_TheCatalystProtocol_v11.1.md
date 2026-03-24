@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-PROMPT-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PROMPT-001_TheCatalystProtocol_v11.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                                | Description       |
+| :---------------- | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `AOP-PROMPT-001`                                     | The Sovereign ID. |
+| **Official Name** | `AOP-PROMPT-001_TheCatalystProtocol_v11.1.md`        | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                    | The Standard.     |
+| **Domain**        | `GVRN`                                               | The Subject.      |
+| **Status**        | `[ACTIVE]`                                           | The Lifecycle.    |
 | **Relations**     | `GUIDES: UMB-CSE-001, IMPLEMENTS: The Forge Analogy` | The Network.      |
-
-
-
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.PROT.Sentinel` | The Sovereign ID. |
-| **Official Name** | `GVRN.PROT.Sentinel.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.PROT.Sentinel`          | The Sovereign ID. |
+| **Official Name** | `GVRN.PROT.Sentinel.md`       | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -85,8 +82,8 @@ the Synarche, preventing technical debt and structural rot (Entropy).
 1. **Trigger**: Git commit or `CMD: RunSentinel`.
 2. **Execution**: The Coherent Synthesis Engine audits the target.
 3. **Result**:
-    - **PASS**: Commit proceeds; indexed in `GVRN.OSLM.001`.
-    - **FAIL**: Commit rejected; **Dissonance Quest** generated.
+   - **PASS**: Commit proceeds; indexed in `GVRN.OSLM.001`.
+   - **FAIL**: Commit rejected; **Dissonance Quest** generated.
 
 ---
 

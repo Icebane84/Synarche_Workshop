@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                          | Description       |
+| :---------------- | :----------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-PROJECT-CREDENTIALS-001` | The Sovereign ID. |
-| **Official Name** | `Project_Credentials.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `Project_Credentials.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `GVRN`                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 
 ---
 
@@ -79,12 +76,12 @@ https://us-central1-aiplatform.googleapis.com/v1/projects/studio-9371668286-aabb
 
 - **Supabase URL:**
 
-    ```text
-    https://rtjkhpotguwngfpvhfej.supabase.co
-    ```
+  ```text
+  https://rtjkhpotguwngfpvhfej.supabase.co
+  ```
 
-    _(Note: Updated to the live URL found in .env.local, matching the 'Project info' description rather than the
-    confused URL in the previous version)_
+  _(Note: Updated to the live URL found in .env.local, matching the 'Project info' description rather than the
+  confused URL in the previous version)_
 
 ### API Keys (Critical)
 

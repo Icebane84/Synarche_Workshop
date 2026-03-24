@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.PROT.CSLV119` | The Sovereign ID. |
-| **Official Name** | `CSL_TEMPLATE_v11_9.md` | The Filename.     |
-| **Version**       | **v11.9 [OGLN]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `SYNG.PROT.CSLV119`             | The Sovereign ID. |
+| **Official Name** | `CSL_TEMPLATE_v11_9.md`         | The Filename.     |
+| **Version**       | **v11.9 [OGLN]**                | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 

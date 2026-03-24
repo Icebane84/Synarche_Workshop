@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-GVRN.TEMPLATE.MASTER-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Template.Master.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `GVRN.Template.Master.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`   | The Network.      |
 
 ---
 
@@ -85,7 +82,7 @@ synergistic link's value]. [Target_ID_2], [RELATION_TYPE], [Description of the s
 
 - List item 1
 - List item 2
-    - Nested item (4 spaces)
+  - Nested item (4 spaces)
 
 ---
 

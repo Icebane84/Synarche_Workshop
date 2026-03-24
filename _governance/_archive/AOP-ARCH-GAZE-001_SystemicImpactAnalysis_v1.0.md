@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0` | The Sovereign ID. |
+| Key               | Value                                              | Description       |
+| :---------------- | :------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0`    | The Sovereign ID. |
 | **Official Name** | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                                  | The Standard.     |
+| **Domain**        | `GVRN`                                             | The Subject.      |
+| **Status**        | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 ---
 
@@ -73,17 +70,17 @@
 When this command is invoked, the Coherent Synthesis Engine (CSE) performs the following recursive traversal:
 
 1. **Direct Dependency Check (AST Level):**
-    - Identifies all functions/classes that _import_ or _call_ the modified target.
-    - Identifies all unit tests that cover the modified target.
+   - Identifies all functions/classes that _import_ or _call_ the modified target.
+   - Identifies all unit tests that cover the modified target.
 
 2. **Synergistic Link Check (OSLM Level):**
-    - Queries the `Omni-Log Synergistic Links Matrix` for artifacts linked via "Relational Adjectives" (e.g.,
-      `DEPENDS ON`, `IMPLEMENTS`, `GOVERNS`).
-    - Identifies governance documents (AOPs) that cite the target code as a dependency.
+   - Queries the `Omni-Log Synergistic Links Matrix` for artifacts linked via "Relational Adjectives" (e.g.,
+     `DEPENDS ON`, `IMPLEMENTS`, `GOVERNS`).
+   - Identifies governance documents (AOPs) that cite the target code as a dependency.
 
 3. **Recursive Blast Radius Calculation:**
-    - The engine repeats the check for the _second-order_ dependencies (dependencies of dependencies) up to a defined
-      depth (default: 3 levels).
+   - The engine repeats the check for the _second-order_ dependencies (dependencies of dependencies) up to a defined
+     depth (default: 3 levels).
 
 ### 3.3. Output: The Impact Report
 
@@ -92,9 +89,9 @@ The output is a structured visualization presented in the "Interactive Code View
 - **Visual Graph:** A node-link diagram showing the target node and all affected nodes, color-coded by impact severity.
 - **Risk Assessment:** A high-level score (0-100) indicating the `Coherence Risk`.
 - **Affected Artifacts List:** A categorized list of files that may require updates or regression testing.
-    - _Directly Broken:_ Code that will definitely fail to compile/run.
-    - _Conceptually Drifted:_ Documentation that may become outdated.
-    - _Synergistically Impacted:_ Other modules that rely on the logic but may not break immediately.
+  - _Directly Broken:_ Code that will definitely fail to compile/run.
+  - _Conceptually Drifted:_ Documentation that may become outdated.
+  - _Synergistically Impacted:_ Other modules that rely on the logic but may not break immediately.
 
 ## IV. Synergistic Impact & Predictive Evolution
 
@@ -120,15 +117,15 @@ Law for this artifact.
 | `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 1. **🔮 `CMD: SIMULATE_IMPACT`**
-    - **Function:** Triggers the predictive analysis engine for a specific target file.
-    - **Usage:** `CMD: SIMULATE_IMPACT --target:src/core/auth_module.ts`
+   - **Function:** Triggers the predictive analysis engine for a specific target file.
+   - **Usage:** `CMD: SIMULATE_IMPACT --target:src/core/auth_module.ts`
 
 2. **📊 `CMD: GET_BLAST_RADIUS`**
-    - **Function:** Returns a quick numerical summary of dependencies for a target (lighter version of simulation).
-    - **Usage:** `CMD: GET_BLAST_RADIUS --target:src/utils/logger.py`
+   - **Function:** Returns a quick numerical summary of dependencies for a target (lighter version of simulation).
+   - **Usage:** `CMD: GET_BLAST_RADIUS --target:src/utils/logger.py`
 
 3. **🕸️ `CMD: VISUALIZE_DEPENDENCIES`**
-    - **Function:** Generates a Mermaid diagram representing the local dependency graph for the target.
-    - **Usage:** `CMD: VISUALIZE_DEPENDENCIES --target:src/core/ --depth:2`
+   - **Function:** Generates a Mermaid diagram representing the local dependency graph for the target.
+   - **Usage:** `CMD: VISUALIZE_DEPENDENCIES --target:src/core/ --depth:2`
 
 ###### **[ARTIFACT END]**

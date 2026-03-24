@@ -1,30 +1,20 @@
-"""LOGIC-MEMORY-RETRIEVE-001: Adaptive Retrieval Engine.
+"""
+### **Block A: The Identification Lock (UIP-V15)**
 
-## Genesis Stamp: 2026-03-07 | Domain: LOGIC | State: ACTIVE
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-LOGIC-ADAPT-RETR-001`   | The Sovereign ID. |
+| **Official Name**   | `adaptive_retriever.py`       | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-LOGIC-MEMORY`           | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Structural Integrity`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-# I. Universal Identification & Provenance (UIP-V13)
-| Key | Value |
-| :--- | :--- |
-| **Artifact ID** | `LOGIC-MEMORY-RETRIEVE-v1.0` |
-| **Version** | **v1.0** |
-| **Status** | `[ACTIVE]` |
-| **Provenance** | `Date Reforged: 2026-03-07` |
-
----
-# II. Axiomatic Governance & Purpose
-Handles multi-factor scoring for memory retrieval.
-
-# III. The Architectural Spine
-- `AdaptiveRetriever`
-
-# V. Systemic Relationships & Impact
-- Exposes memory scoring and RPG reward calculation.
-
-# VI. RPG Framework Integration
-- Calculates XP and Stat buffs based on retrieval performance.
-
-# VII. Actionable Prompt Packet
-- N/A
+**The Spirit Bomb Axiom: Adaptive Scoring (Law 28)**
+> Implemented from Blueprint `GVRN.REG.AdaptiveScoring.md`.
+> Ethos: The Factors are Many; The Score is Truth.
 """
 
 import logging
@@ -48,9 +38,16 @@ class AdaptiveRetriever:
     def __init__(self, cognition_engine: Any = None) -> None:
         """Initialize the AdaptiveRetriever."""
         self.cognition = cognition_engine
-        self.weights = {"semantic": 0.4, "keyword": 0.3, "recency": 0.2, "frequency": 0.1}
+        self.weights = {
+            "semantic": 0.4,
+            "keyword": 0.3,
+            "recency": 0.2,
+            "frequency": 0.1,
+        }
 
-    def score_memories(self, query: str, memories: list[dict]) -> tuple[list[dict], dict[str, Any]]:
+    def score_memories(
+        self, query: str, memories: list[dict]
+    ) -> tuple[list[dict], dict[str, Any]]:
         """Score a list of memories against a query.
 
         Each memory is expected to have: content, relevance, timestamp, activation_score, vector.
@@ -67,7 +64,9 @@ class AdaptiveRetriever:
         current_time = time.time()
 
         for mem in memories:
-            scores = self._calculate_all_scores(mem, query_vector, query_lemmas, current_time)
+            scores = self._calculate_all_scores(
+                mem, query_vector, query_lemmas, current_time
+            )
 
             # Final Weighted Score
             mem["final_score"] = sum(scores[f] * self.weights[f] for f in self.weights)
@@ -82,7 +81,11 @@ class AdaptiveRetriever:
         return scored_results, rewards
 
     def _calculate_all_scores(
-        self, mem: dict, query_vector: list[float] | None, query_lemmas: set[str], current_time: float
+        self,
+        mem: dict,
+        query_vector: list[float] | None,
+        query_lemmas: set[str],
+        current_time: float,
     ) -> dict[str, float]:
         """Calculate local scores for a single memory entry."""
         scores = {"semantic": 0.0, "keyword": 0.0, "recency": 0.0, "frequency": 0.0}

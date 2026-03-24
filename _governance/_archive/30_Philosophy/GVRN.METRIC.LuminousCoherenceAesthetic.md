@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.METRIC.LuminousCoherenceAesthetic` | The Sovereign ID. |
+| Key               | Value                                       | Description       |
+| :---------------- | :------------------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.METRIC.LuminousCoherenceAesthetic`    | The Sovereign ID. |
 | **Official Name** | `GVRN.METRIC.LuminousCoherenceAesthetic.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `error` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                           | The Standard.     |
+| **Domain**        | `GVRN`                                      | The Subject.      |
+| **Status**        | `error`                                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`               | The Network.      |
 
 ---
 
@@ -94,21 +91,21 @@ The aesthetic incorporates subtle, continuous movement to suggest life and data 
 
 ```javascript
 module.exports = {
-    theme: {
-        extend: {
-            colors: {
-                "base-black": "#000000",
-                "deep-void": "rgb(12 10 17 / <alpha-value>)",
-                "coherence-high": "rgb(52 211 255 / <alpha-value>)",
-                "coherence-mid": "rgb(139 92 246 / <alpha-value>)",
-                "coherence-low": "rgb(99 102 241 / <alpha-value>)",
-            },
-            animation: {
-                "geode-pulse": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-                "data-flow": "flow 6s linear infinite",
-            },
-        },
+  theme: {
+    extend: {
+      colors: {
+        "base-black": "#000000",
+        "deep-void": "rgb(12 10 17 / <alpha-value>)",
+        "coherence-high": "rgb(52 211 255 / <alpha-value>)",
+        "coherence-mid": "rgb(139 92 246 / <alpha-value>)",
+        "coherence-low": "rgb(99 102 241 / <alpha-value>)",
+      },
+      animation: {
+        "geode-pulse": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "data-flow": "flow 6s linear infinite",
+      },
     },
+  },
 };
 ```
 

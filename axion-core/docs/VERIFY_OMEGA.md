@@ -12,17 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `VERIFY_OMEGA` | The Sovereign ID. |
-| **Official Name** | `VERIFY_OMEGA.md` | The Filename.     |
-| **Version**       | **v13.1** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `DRAFT` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `VERIFY_OMEGA`                | The Sovereign ID. |
+| **Official Name** | `VERIFY_OMEGA.md`             | The Filename.     |
+| **Version**       | **v13.1**                     | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `DRAFT`                       | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
 
 ---
 
@@ -36,13 +33,13 @@
 
 ### **III.B. The Cognitive Spine (Axiomatic Mapping)**
 
-| Axiom | State | Vector |
-| :--- | :--- | :--- |
-| **Mind ($\psi$)** | `ACTIVE` | **Reasoning Layer:** Utilized by ``. |
-| **Memory ($\mu$)** | `STABLE` | **Substrate Layer:** Woven into the `Synarche_Vault`. |
-| **Law ($\Lambda$)** | `ENFORCED` | **Governance Layer:** Governed by `CORE-CODEX-001`. |
-| **Index ($\iota$)** | `INDEXED` | **Navigational Layer:** Registered in `GVRN.Registry.Master`. |
-| **Evolution ($\epsilon$)**| `Omega Ascension` | **Growth Layer:** Tracks progress toward `Omega Ascension`. |
+| Axiom                      | State             | Vector                                                        |
+| :------------------------- | :---------------- | :------------------------------------------------------------ |
+| **Mind ($\psi$)**          | `ACTIVE`          | **Reasoning Layer:** Utilized by ``.                          |
+| **Memory ($\mu$)**         | `STABLE`          | **Substrate Layer:** Woven into the `Synarche_Vault`.         |
+| **Law ($\Lambda$)**        | `ENFORCED`        | **Governance Layer:** Governed by `CORE-CODEX-001`.           |
+| **Index ($\iota$)**        | `INDEXED`         | **Navigational Layer:** Registered in `GVRN.Registry.Master`. |
+| **Evolution ($\epsilon$)** | `Omega Ascension` | **Growth Layer:** Tracks progress toward `Omega Ascension`.   |
 
 ---
 
@@ -65,7 +62,7 @@
 - [ ] Metadata Validated
 
 ## 2. Validation Proof
->
+
 > [!IMPORTANT]
 > This artifact has been verified by the Axion Sentinel on 2026-02-06.
 

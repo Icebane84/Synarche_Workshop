@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                   | Description       |
+| :---------------- | :------------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-CRF-001-THECAUSALRESONANCEFRAMEWORK-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-CRF-001_TheCausalResonanceFramework_v2.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-CRF-001_TheCausalResonanceFramework_v2.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                       | The Standard.     |
+| **Domain**        | `GVRN`                                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 ---
 
@@ -83,11 +80,11 @@ The framework operates through three primary mechanics.
 
 - **Action:** For any new synthesis, the CRF recursively asks "Why?" until the trace resolves to a foundational
 
-    **Conceptual Anchor** in the Cognitive Loom or an axiom in the **Phoenix Codex**.
+  **Conceptual Anchor** in the Cognitive Loom or an axiom in the **Phoenix Codex**.
 
 - **Constraint:** If the trace breaks or relies on purely statistical probability without a logical link, the synthesis
 
-    is rejected.
+  is rejected.
 
 ### **3.2. Causal Graphing (The Chain of Truth)**
 
@@ -114,20 +111,20 @@ The framework operates through three primary mechanics.
 
 - **GOVERNED_BY:**
 
-    [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+  [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
 
 - **FEEDS:**
 
-    [UMB-TRM-001 (Truth Resonance Monitor)](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-TRM-001_TruthResonanceMonitor_v1.0.md)
+  [UMB-TRM-001 (Truth Resonance Monitor)](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-TRM-001_TruthResonanceMonitor_v1.0.md)
 
 - **ENFORCES:**
 
-    [AOP-AI-PROTO-001 (AI Protocol)](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-AI-PROTO-001_AIProtocol.md)
+  [AOP-AI-PROTO-001 (AI Protocol)](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-AI-PROTO-001_AIProtocol.md)
 
 - **INTEGRATES:** [UMB-GTSF-001 (Ground Truth
 
-    Sync)](file:///c:/Users/Chris/\_Desktop_Vault/Phoenix/Documentation/UMB-GTSF-001 - Ground Truth Synchronization
-    Framework/UMB-GTSF-001 Ground Truth Synchronization Framework.md)
+  Sync)](file:///c:/Users/Chris/\_Desktop_Vault/Phoenix/Documentation/UMB-GTSF-001 - Ground Truth Synchronization
+  Framework/UMB-GTSF-001 Ground Truth Synchronization Framework.md)
 
 **[ARTIFACT END]**
 

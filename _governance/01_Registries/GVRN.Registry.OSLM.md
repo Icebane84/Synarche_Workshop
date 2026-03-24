@@ -1,16 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Registry.OSLM` | The Sovereign ID. |
-| **Official Name** | `GVRN.Registry.OSLM.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Registry.OSLM`            | The Sovereign ID. |
+| **Official Name** | `GVRN.Registry.OSLM.md`         | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
 
 ---
 
@@ -35,10 +32,10 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID      | Relationship Type | Synergistic Impact                                        |
-| :--------------------------- | :---------------- | :-------------------------------------------------------- |
-| `CORE.Codex.Phoenix` | `GOVERNS`         | The Codex provides the supreme law and ethical framework. |
-| `GVRN.Registry.DataOSLM`     | `BLUEPRINTS`      | This artifact defines the schema for the relay substrate. |
+| Synergistic Artifact ID  | Relationship Type | Synergistic Impact                                        |
+| :----------------------- | :---------------- | :-------------------------------------------------------- |
+| `CORE.Codex.Phoenix`     | `GOVERNS`         | The Codex provides the supreme law and ethical framework. |
+| `GVRN.Registry.DataOSLM` | `BLUEPRINTS`      | This artifact defines the schema for the relay substrate. |
 
 ---
 

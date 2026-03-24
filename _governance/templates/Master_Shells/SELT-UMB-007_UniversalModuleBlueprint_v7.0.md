@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                 | Description       |
+| :---------------- | :---------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-SELT-UMB-007-UNIVERSALMODULEBLUEPRINT-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-UMB-007_UniversalModuleBlueprint_v7.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
-
+| **Official Name** | `SELT-UMB-007_UniversalModuleBlueprint_v7.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                     | The Standard.     |
+| **Domain**        | `GVRN`                                                | The Subject.      |
+| **Status**        | `[ACTIVE]`                                            | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix`                     | The Network.      |
 
 ---
 
@@ -112,21 +109,21 @@
 - _Rarity Rationale:_ `[Why is this module this tier? e.g., "Forged from a High-Fidelity Genesis Seed."]`
 - **System Slot:** `[Core Engine (Always On) | Utility (Equip on Demand) | Passive Expansion]`
 - **Synergy Set:** `[Name of Set, e.g., "The Governance Suite" or "N/A"]`
-    - _Set Bonus:_ `[Effect when paired with other set items. e.g., "+5% Coherence if GVRN.Gov.Module is active."]`
+  - _Set Bonus:_ `[Effect when paired with other set items. e.g., "+5% Coherence if GVRN.Gov.Module is active."]`
 
 ### 8.2. Celestial Chart Stats (The Buffs)
 
 - **Primary Stat Buff:** `[Coherence | Synergy | Adaptability | Transparency]`
-    - _Value:_ `[e.g., +5 (Planet Tier) / +10 (Star Tier)]`
-    - _Mechanism:_ `[How does this module mechanically improve this stat?]`
+  - _Value:_ `[e.g., +5 (Planet Tier) / +10 (Star Tier)]`
+  - _Mechanism:_ `[How does this module mechanically improve this stat?]`
 - **Secondary Stat Buff:** `[Select Stat or N/A]`
 - **Passive Ability / Perk:** `[Name of Perk]`
-    - _Effect:_ `[e.g., "Reduces risk of skipping steps in long protocols."]`
+  - _Effect:_ `[e.g., "Reduces risk of skipping steps in long protocols."]`
 
 ### 8.3. Resource Economics
 
 - **Cognitive Load Draw:** `[Low | Medium | High | Extreme]`
-    - _Cost Description:_ `[The mental energy cost to keep this module active.]`
+  - _Cost Description:_ `[The mental energy cost to keep this module active.]`
 - **Efficiency Modifier:** `[e.g., "Reduces Cognitive Load of all 'Formatting' tasks by 20%."]`
 
 - **Origin Quest ID:** `[Link to DQUEST-XXX]`
@@ -165,8 +162,8 @@
 - **Purpose:** To understand how this artifact makes the entire system more powerful.
 - **Prompt:** "Calculate this artifact's synergistic potential. How does its existence 'power up' at least two other
 
-    protocols? Conversely, how is this artifact's function enhanced by the Quantum State Refactoring Protocol
-    (AOP-REFAC-001)? Define its potential RECIPROCAL_SYNERGY_SCORE."
+  protocols? Conversely, how is this artifact's function enhanced by the Quantum State Refactoring Protocol
+  (AOP-REFAC-001)? Define its potential RECIPROCAL_SYNERGY_SCORE."
 
 ---
 

@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                    | Description       |
+| :---------------- | :------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-DIDACTIC-001-DIDACTICMODULEGENERATOR-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                        | The Standard.     |
+| **Domain**        | `GVRN`                                                   | The Subject.      |
+| **Status**        | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 ---
 
@@ -79,18 +76,18 @@
 
 - **What (Module Functionality):** This module transforms the "Coding Master Agent" from a passive critic into an active
 
-    mentor. It automatically generates interactive "Lesson Modules" whenever a significant optimization or correction is
-    proposed.
+  mentor. It automatically generates interactive "Lesson Modules" whenever a significant optimization or correction is
+  proposed.
 
 - **How (Operational Mechanism):** When Dissonance is detected, the module queries `GUIDE-AI-CODE-001` for the relevant
 
-    axiom. It then constructs a structured interface element containing the principle, a diff view (Before/After), and a
-    semantic explanation of the "Why."
+  axiom. It then constructs a structured interface element containing the principle, a diff view (Before/After), and a
+  semantic explanation of the "Why."
 
 - **Why (Rationale):** To close the knowledge gap between the AI and the Human. Instead of blindly accepting fixes, the
 
-    Human Collaborator learns _why_ the fix is necessary, fostering a true "Synergistic Partnership" where both parties
-    evolve together.
+  Human Collaborator learns _why_ the fix is necessary, fostering a true "Synergistic Partnership" where both parties
+  evolve together.
 
 ## III. Architectural Definition (The Lesson Schema)
 
@@ -114,7 +111,7 @@ When triggered, the module generates a `Lesson Object` with the following struct
 - **Example:** \_"Using a Set lookup here reduces complexity from O(n) to O(1), preventing performance degradation
   during
 
-    high-load events."\_
+  high-load events."\_
 
 ## IV. Synergistic Gamification (The Reward)
 
@@ -124,21 +121,21 @@ To reinforce learning, this module integrates with the **Phoenix Prestige Game**
 2. **XP Award:** The User receives **Knowledge Points (KP)** or **Prestige**.
 3. **Feedback Loop:** High engagement with Didactic Modules increases the AI's "Teacher Confidence" score, unlocking
 
-    more advanced architectural suggestions.
+   more advanced architectural suggestions.
 
 ## **Actionable Prompt Packet**
 
 1. **🎓 `CMD: GENERATE_LESSON`**
-    - **Function:** Manually triggers the generation of a lesson module for a specific file or code block.
-    - **Usage:** `CMD: GENERATE_LESSON --target:src/utils/parser.ts --violation:Complexity`
+   - **Function:** Manually triggers the generation of a lesson module for a specific file or code block.
+   - **Usage:** `CMD: GENERATE_LESSON --target:src/utils/parser.ts --violation:Complexity`
 
 2. **🧠 `CMD: EXPLAIN_WHY`**
-    - **Function:** Asks the AI to elaborate on a specific suggestion using the Didactic Framework.
-    - **Usage:** `CMD: EXPLAIN_WHY --suggestion_id:FIX-001`
+   - **Function:** Asks the AI to elaborate on a specific suggestion using the Didactic Framework.
+   - **Usage:** `CMD: EXPLAIN_WHY --suggestion_id:FIX-001`
 
 3. **📚 `CMD: VIEW_LESSON_HISTORY`**
-    - **Function:** Displays a log of all lessons generated and completed by the user.
-    - **Usage:** `CMD: VIEW_LESSON_HISTORY --limit:5`
+   - **Function:** Displays a log of all lessons generated and completed by the user.
+   - **Usage:** `CMD: VIEW_LESSON_HISTORY --limit:5`
 
 ###### **[ARTIFACT END]**
 

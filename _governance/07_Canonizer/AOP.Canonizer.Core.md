@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP.Canonizer.Core` | The Sovereign ID. |
-| **Official Name** | `AOP.Canonizer.Core.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                    | Description       |
+| :---------------- | :----------------------- | :---------------- |
+| **Artifact ID**   | `AOP.Canonizer.Core`     | The Sovereign ID. |
+| **Official Name** | `AOP.Canonizer.Core.md`  | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**        | The Standard.     |
+| **Domain**        | `GVRN`                   | The Subject.      |
+| **Status**        | `[CANONIZED]`            | The Lifecycle.    |
 | **Relations**     | `INDEX_OF: 07_Canonizer` | The Network.      |
-
-
-
 
 ---
 
@@ -37,11 +34,11 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. |
-| `GVRN.Canonizer.Protocol` | `DEFINES` | Provides the operational gates for sealing. |
+| Synergistic Artifact ID   | Relationship Type | Synergistic Impact                              |
+| :------------------------ | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`      | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`    | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `GVRN.Canonizer.Protocol` | `DEFINES`         | Provides the operational gates for sealing.     |
 
 ---
 
@@ -53,9 +50,9 @@
 
 ## **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
 
@@ -86,10 +83,10 @@ The `AOP.Canonizer.Core` ensures that all operational scripts (like `canonize.py
 
 ## **Actionable Prompt Packet (APP)**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: EXECUTE_SEALING` | Performs the terminal write to the Artifact Inventory. | Finality |
-| `CMD: AUDIT_STABILITY` | Checks the Stability vector of the target artifact. | Reliability |
+| Command ID             | Action                                                 | Impact      |
+| :--------------------- | :----------------------------------------------------- | :---------- |
+| `CMD: EXECUTE_SEALING` | Performs the terminal write to the Artifact Inventory. | Finality    |
+| `CMD: AUDIT_STABILITY` | Checks the Stability vector of the target artifact.    | Reliability |
 
 ---
 

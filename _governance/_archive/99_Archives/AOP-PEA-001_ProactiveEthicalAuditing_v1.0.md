@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                | Description       |
+| :---------------- | :--------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-PEA-001-PROACTIVEETHICALAUDITING-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                    | The Standard.     |
+| **Domain**        | `GVRN`                                               | The Subject.      |
+| **Status**        | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
 
@@ -104,22 +101,22 @@ Stone to create a rich, multi-layered visualization of a project's strategic and
 
 - **Coherence Uplift Score (CUS):** Measures the degree to which insights augmented by this protocol lead to more
 
-    coherent and ethically robust final decisions.
+  coherent and ethically robust final decisions.
 
 - **Reduction in Ethical Blind Spots (REBS):** Tracks a decrease in the number of post-decision revisions that are
 
-    required due to unforeseen ethical consequences.
+  required due to unforeseen ethical consequences.
 
 **RESOURCE_IMPACT_PROFILE:**
 
 - **Computational Cost:** Low to Moderate. The analysis is complex but operates on a constrained dataset (the insight
 
-    report).
+  report).
 
 - **Cognitive Load (Human):** Net Negative. By pre-processing ethical complexities and visualizing them intuitively, the
 
-    protocol significantly reduces the cognitive load required for the human collaborator to make a well-rounded
-    decision.
+  protocol significantly reduces the cognitive load required for the human collaborator to make a well-rounded
+  decision.
 
 ---
 

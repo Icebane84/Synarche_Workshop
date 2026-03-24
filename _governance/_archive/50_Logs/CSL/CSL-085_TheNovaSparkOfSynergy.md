@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CSL-085` | The Sovereign ID. |
+| Key               | Value                              | Description       |
+| :---------------- | :--------------------------------- | :---------------- |
+| **Artifact ID**   | `CSL-085`                          | The Sovereign ID. |
 | **Official Name** | `CSL-085_TheNovaSparkOfSynergy.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Version**       | **v13.0 [OMEGA]**                  | The Standard.     |
+| **Domain**        | `SYNG`                             | The Subject.      |
+| **Status**        | `[ACTIVE]`                         | The Lifecycle.    |
 | **Relations**     | `LINK: UMB-CSE-001, UMB-CRLPF-003` | The Network.      |
-
-
-
 
 ---
 

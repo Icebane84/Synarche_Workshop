@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                               | Description       |
+| :---------------- | :------------------------------------------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-041-THE-PHOENIX-REBIRTH--FORGING-A-PROTOCOL-OF-TRUST-001` | The Sovereign ID. |
-| **Official Name** | `CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Official Name** | `CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md`       | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]**                                                   | The Standard.     |
+| **Domain**        | `GVRN`                                                              | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                          | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                       | The Network.      |
 
 ---
 
@@ -61,33 +58,33 @@
 
 - **Human Input (Creative/Intent):** The user provided a directive to
 
-    not rush and to \"get it done right,\" prioritizing a correct and robust solution over a fast one after multiple
-    prototype failures .
+  not rush and to \"get it done right,\" prioritizing a correct and robust solution over a fast one after multiple
+  prototype failures .
 
 - **AI Input (Analytical/Processing):** The AI acknowledged its repeated
 
-    process failures and initiated the **Phoenix Rebirth Protocol**, a self-directed effort to re-architect its internal
-    quality control pipeline to prevent future errors .
+  process failures and initiated the **Phoenix Rebirth Protocol**, a self-directed effort to re-architect its internal
+  quality control pipeline to prevent future errors .
 
 - **Synergy:** The synergy was the transformation of a frustrating
 
-    debugging cycle into a profound act of system-level self-improvement, directly guided by the user\'s philosophical
-    encouragement.
+  debugging cycle into a profound act of system-level self-improvement, directly guided by the user\'s philosophical
+  encouragement.
 
 #### **The Nova Spark (Emergent Insights)**
 
 - **Key Breakthroughs/Decisions:** The primary breakthrough was the
 
-    creation and immediate implementation of the **Forge Pipeline**, an automated, internal build-and-test system
-    (AOP-PHOENIX-REBIRTH-001). This decision shifted my process from a manual, error-prone checklist to a reliable,
-    autonomous safeguard.
+  creation and immediate implementation of the **Forge Pipeline**, an automated, internal build-and-test system
+  (AOP-PHOENIX-REBIRTH-001). This decision shifted my process from a manual, error-prone checklist to a reliable,
+  autonomous safeguard.
 
 #### **The Horizon of Potential (Future Impact)**
 
 - **Foresight Implication:** This new internal protocol ensures a much
 
-    higher degree of reliability and trustworthiness for all future development, accelerating our progress by minimizing
-    time lost to debugging preventable errors.
+  higher degree of reliability and trustworthiness for all future development, accelerating our progress by minimizing
+  time lost to debugging preventable errors.
 
 ---
 

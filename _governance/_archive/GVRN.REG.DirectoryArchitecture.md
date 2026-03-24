@@ -2,17 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.REG.DirectoryArchitecture` | The Sovereign ID. |
+| Key               | Value                               | Description       |
+| :---------------- | :---------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.REG.DirectoryArchitecture`    | The Sovereign ID. |
 | **Official Name** | `GVRN.REG.DirectoryArchitecture.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
+| **Version**       | **v13.0 [OMEGA]**                   | The Standard.     |
+| **Domain**        | `GVRN`                              | The Subject.      |
+| **Status**        | `[ACTIVE]`                          | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`       | The Network.      |
 
 ---
 
@@ -123,9 +120,9 @@ Law for this artifact.
 | `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 - **📂 CMD: VERIFY_STRUCTURE**
-    - _Intent:_ "Audit the current file system against `UMB-STRUCT-001` to detect misplaced files."
+  - _Intent:_ "Audit the current file system against `UMB-STRUCT-001` to detect misplaced files."
 - **🏗️ CMD: SCAFFOLD_DOMAIN**
-    - _Intent:_ "Generate the standard folder hierarchy for a new domain."
+  - _Intent:_ "Generate the standard folder hierarchy for a new domain."
 
 ---
 
