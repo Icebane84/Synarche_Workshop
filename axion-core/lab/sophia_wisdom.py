@@ -1,29 +1,26 @@
-"""| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `TOOL-SOPHIA-WISDOM-001`                | The Sovereign ID. |
-| **Official Name** | `sophia_wisdom.py`                   | The Filename.     |
-| **Version**       | **v13.1**                      | The Standard.     |
-| **Domain**        | `GVRN`                         | The Subject.      |
-| **Evolution**     | **Autonomous Vigil**           | The Alignment.    |
-| **Status (State)**| `[CANONIZED]`                  | The Lifecycle.    |
-| **Celestial Class**| `[PLANET]`                    | The Tier.         |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
-| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-02-23`                       | Creation Date.    |.
 """
-
-#!/usr/bin/env python3
-"""
-ENTITY-SOPHIA-001: Sophia's Wisdom
-Domain: COG | State: ACTIVE | Version: v13.0
-Objective: Provide cognitive insight and complexity analysis.
+IDENTIFICATION: TOOL-SOPHIA-WISDOM-001
+VERSION: v15.0 [OMEGA]
+STATUS: [CANONIZED]
+TIMESTAMP: 2026-03-24
 """
 
 import argparse
 import random
+from typing import Literal
+
+#!/usr/bin/env python3
+"""
+ENTITY-SOPHIA-WISDOM-001: The Knowledge Weaver
+Domain: ARCH | State: ACTIVE | Version: v15.0 [OMEGA]
+Objective: Map knowledge structures and maintain the Loom.
+"""
 
 
-def get_insight(mode="complexity", _target="."):
+def get_insight(
+    mode: Literal["complexity", "governance", "general"] = "complexity",
+    _target: str = ".",
+) -> str:
     insights = [
         "Structure aligns with the Prime Directive.",
         "Dissonance detected in module coupling. Seek synthesis.",
@@ -41,9 +38,13 @@ def get_insight(mode="complexity", _target="."):
         return "Wisdom shared: Excellence is a process, not a state."
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="Sophia's Wisdom Engine")
-    parser.add_argument("--mode", choices=["complexity", "governance", "general"], default="complexity")
+    parser.add_argument(
+        "--mode",
+        choices=["complexity", "governance", "general"],
+        default="complexity",
+    )
     parser.add_argument("--target", default=".")
 
     args = parser.parse_args()

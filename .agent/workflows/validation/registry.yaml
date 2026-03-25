@@ -1,0 +1,9 @@
+category: VALIDATION
+last_updated: '2026-03-20T00:52:36.268977'
+workflows:
+- id: debug
+  path: .agent/workflows/validation/debug.md
+- id: finalize_artifact
+  path: .agent/workflows/validation/finalize_artifact.md
+- id: test
+  path: .agent/workflows/validation/test.md

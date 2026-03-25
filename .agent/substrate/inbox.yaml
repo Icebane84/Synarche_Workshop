@@ -1,0 +1,18 @@
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.CFG.Inbox`                          | The Sovereign ID. |
+| **Official Name**   | `inbox.yaml`                        | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `SYNG`                                  | The Subject.      |
+| **Celestial Class** | `[STAR]`                                | The Weight.       |
+| **Evolution**       | `Coordination`                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
+| **Relations**       | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+
+---
+
+blockers: []
+pending_approvals: []
+status: active

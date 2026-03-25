@@ -1,0 +1,20 @@
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.CFG.Layout`                          | The Sovereign ID. |
+| **Official Name**   | `layout.yaml`                        | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `SYNG`                                  | The Subject.      |
+| **Celestial Class** | `[STAR]`                                | The Weight.       |
+| **Evolution**       | `Flow Optimization`                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
+| **Relations**       | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+
+---
+
+layout: triptych
+panels:
+- Editor
+- Browser
+- Terminal

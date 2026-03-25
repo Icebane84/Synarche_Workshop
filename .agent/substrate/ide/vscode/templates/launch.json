@@ -1,0 +1,51 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SYNG: Axion IDE Host",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/axion-core",
+        "${workspaceFolder}"
+      ],
+      "outFiles": ["${workspaceFolder}/axion-core/out/**/*.js"],
+      "preLaunchTask": "npm: compile"
+    },
+    {
+      "name": "SYNG: Sentinel Compliance Audit",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/axion-core/forge/sentinel.py",
+      "args": ["${workspaceFolder}/_governance"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "SYNG: Artifact Reforger",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/axion-core/forge/reforge.py",
+      "args": ["${file}"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Engine: FastAPI Open Notebook",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["api.main:app", "--reload", "--port", "8000"],
+      "cwd": "${workspaceFolder}/open-notebook/open_notebook",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Substrate: Deno Service",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.ts",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "C:\\Users\\Chris\\.deno\\bin\\deno.EXE",
+      "runtimeArgs": ["run", "--unstable", "--inspect-wait", "--allow-all"],
+      "attachSimplePort": 9229
+    }
+  ]
+}

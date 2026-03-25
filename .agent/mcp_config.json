@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp",
+        "--api-key",
+        "YOUR_UPSTASH_API_KEY_HERE"
+      ]
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": ["-y", "shadcn@latest", "mcp"]
+    },
+    "synarche-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\Chris\\Synarche_Workspace"
+      ]
+    },
+    "antigravity-forge": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_server_command",
+        "--allow-path",
+        "C:\\Users\\Chris\\.gemini\\.agent\\scripts"
+      ]
+    },
+    "supabase-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "sbp_6a0337c6f442fc85187df71a4615dfba114bc276"
+      ],
+      "env": {}
+    }
+  }
+}

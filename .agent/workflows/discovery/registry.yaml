@@ -1,0 +1,5 @@
+category: DISCOVERY
+last_updated: '2026-03-20T00:52:36.267424'
+workflows:
+- id: brainstorm
+  path: .agent/workflows/discovery/brainstorm.md

@@ -1,0 +1,25 @@
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.CFG.Security`                          | The Sovereign ID. |
+| **Official Name**   | `security.yaml`                        | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `SYNG`                                  | The Subject.      |
+| **Celestial Class** | `[STAR]`                                | The Weight.       |
+| **Evolution**       | `Hardening`                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
+| **Relations**       | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+
+---
+
+approval_required:
+- global_install
+- external_request
+blocked_commands:
+- rm -rf
+- curl -X DELETE
+redactions:
+- .env
+- .gemini/secrets
+version: v15.0

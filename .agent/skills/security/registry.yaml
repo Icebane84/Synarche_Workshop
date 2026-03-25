@@ -1,0 +1,12 @@
+domain: SECURITY
+last_updated: '2026-03-20T00:52:36.264745'
+skills:
+- documented: false
+  id: auditing
+  path: .agent/skills/security/auditing
+- documented: true
+  id: red-team-tactics
+  path: .agent/skills/security/red-team-tactics
+- documented: true
+  id: vulnerability-scanner
+  path: .agent/skills/security/vulnerability-scanner

@@ -14,7 +14,7 @@
 
 ---
 
-#### **[ARTIFACT START]**
+### **[ARTIFACT START]**
 
 > [!NOTE]
 > This is the collective barrel index for the Synarchy Triad, established and canonized under the OMEGA v15.0 standard.

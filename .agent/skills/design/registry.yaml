@@ -1,0 +1,21 @@
+domain: DESIGN
+last_updated: '2026-03-20T00:52:36.256288'
+skills:
+- documented: true
+  id: frontend-design
+  path: .agent/skills/design/frontend-design
+- documented: true
+  id: geo-fundamentals
+  path: .agent/skills/design/geo-fundamentals
+- documented: true
+  id: mobile-design
+  path: .agent/skills/design/mobile-design
+- documented: true
+  id: seo-fundamentals
+  path: .agent/skills/design/seo-fundamentals
+- documented: true
+  id: tailwind-patterns
+  path: .agent/skills/design/tailwind-patterns
+- documented: true
+  id: web-design-guidelines
+  path: .agent/skills/design/web-design-guidelines

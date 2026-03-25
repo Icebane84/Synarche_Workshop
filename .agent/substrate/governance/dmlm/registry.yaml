@@ -1,0 +1,27 @@
+# OMEGA v15.0 DMLM Registry
+# Authoritative mapping of AI Models, Datasets, and Lifecycle Stages.
+
+models:
+  - id: "gemini-2.5-flash"
+    status: "STABLE"
+    provider: "google"
+    role: "Core Reasoner"
+    last_sync: "2026-03-18"
+    dataset_ref: "SYN-DATA-001"
+
+  - id: "gemini-2.0-flash-lite"
+    status: "EXPERIMENTAL"
+    provider: "google"
+    role: "Fast Validator"
+    last_sync: "2026-03-18"
+    dataset_ref: "SYN-DATA-002"
+
+datasets:
+  - id: "SYN-DATA-001"
+    description: "Sovereign Architectural Patterns v15.0"
+    storage: "insforge://datasets/syn-data-001"
+    integrity_hash: "SHA256:7722BC..."
+
+  - id: "SYN-DATA-002"
+    description: "Real-time Feedback Signal dataset"
+    storage: "local://substrate/governance/dmlm/feedback_001.json"

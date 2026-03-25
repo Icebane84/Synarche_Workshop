@@ -1,0 +1,84 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SYNG: Sentinel Scan [Auto-Fix]",
+      "detail": "Execute Sentinel's Sword to auto-fix architectural and linting dissonance.",
+      "type": "shell",
+      "command": "python",
+      "args": ["axion-core/lab/sentinel_sword.py"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SYNG: Governance Scan [Sophia]",
+      "detail": "Scan _governance and substrate for protocol compliance.",
+      "type": "shell",
+      "command": "python",
+      "args": ["axion-core/lab/sophia_wisdom.py", "--mode", "governance"],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SYNG: Complexity Scan [Sophia]",
+      "detail": "Analyze code complexity and entropy across the engine.",
+      "type": "shell",
+      "command": "python",
+      "args": ["axion-core/lab/sophia_wisdom.py", "--mode", "complexity"],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SYNG: Reforge Artifact [Context]",
+      "detail": "Apply OMEGA v15.0 standardization to the active file.",
+      "type": "shell",
+      "command": "python",
+      "args": ["axion-core/forge/reforge.py", "${file}"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SYNG: Reforge Workspace [Omni]",
+      "detail": "Standardize all artifacts across the workspace.",
+      "type": "shell",
+      "command": "python",
+      "args": ["axion-core/forge/reforge.py"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SYNG: Trunk Audit [Security]",
+      "detail": "Perform a full workspace security and quality audit via Trunk.",
+      "type": "shell",
+      "command": "trunk",
+      "args": ["check", "--all", "--no-fix"],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

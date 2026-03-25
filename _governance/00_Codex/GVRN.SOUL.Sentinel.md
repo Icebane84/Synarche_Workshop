@@ -14,7 +14,7 @@
 
 ---
 
-#### **[ARTIFACT START]**
+### **[ARTIFACT START]**
 
 > [!NOTE]
 > This is the canonical soul artifact for the Sentinel Agent, forged through Socratic Synthesis and canonized under the OMEGA v15.0 standard.
