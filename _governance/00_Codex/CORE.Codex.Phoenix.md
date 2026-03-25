@@ -234,16 +234,16 @@ All operations are navigated via the **[GVRN.Codex.EternalLaw](GVRN.Codex.Eterna
 - **Node Type**: `NODE:AXIOM`
 - **Relational Edges (The 20 Pillars):**
   - CORE.Codex.Phoenix -- **GOVERNS** --> `[ALL_ARTIFACTS]` (The Supreme Law).
-  - CORE.Codex.Phoenix -- **STRUCTURES** --> [`ARCH.Spine.Master`](../10_Governance/ARCH.Spine.Master.md) (The
+  - CORE.Codex.Phoenix -- **STRUCTURES** --> [`GVRN.ID.Standard`](../10_Governance/GVRN.ID.Standard.md) (The
     Skeleton).
   - CORE.Codex.Phoenix -- **INDEXES** --> `[MASTER_REGISTRIES]` (The Catalogs).
-  - CORE.Codex.Phoenix -- **ENABLES** --> [`UMB.ASSEMBLER.CORE`](../40_System/UMB.Assembler.Core.md) (The
+  - CORE.Codex.Phoenix -- **ENABLES** --> [`UMB.Assembler.Core`](../05_Assembler/UMB.Assembler.Core.md) (The
     Mind).
-  - CORE.Codex.Phoenix -- **MANIFESTS** --> [`UMB.LOOM.CORE`](../40_System/SYNG.LOOM.CORE.md) (The Memory).
-  - CORE.Codex.Phoenix -- **CONNECTS** --> [`UMB.OSLM-001`](../40_System/GVRN.OSLM.001.md) (The Nervous
+  - CORE.Codex.Phoenix -- **MANIFESTS** --> [`SYNG.Loom.Master`](../40_System/SYNG.Loom.Master.md) (The Memory).
+  - CORE.Codex.Phoenix -- **CONNECTS** --> [`GVRN.Registry.DataOSLM`](../01_Registries/GVRN.Registry.DataOSLM.md) (The Nervous
     System).
   - CORE.Codex.Phoenix -- **AUTHORIZES** -->
-    [`ARCH.BLUE.GuardianofCoherence`](../20_Architecture/ARCH.BLUE.GuardianofCoherence.md) (The Guardian).
+    [`ARCH.ARCH.GrandUnifiedArchitecture`](../20_Architecture/ARCH.ARCH.GrandUnifiedArchitecture.md) (The Guardian).
   - CORE.Codex.Phoenix -- **ESTABLISHES_GRAMMAR** -->
     [`GVRN.Taxonomy.Relationships`](../10_Governance/GVRN.Taxonomy.Relationships.md) (The Nexus).
 
@@ -262,6 +262,6 @@ All operations are navigated via the **[GVRN.Codex.EternalLaw](GVRN.Codex.Eterna
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.Codex.Phoenix VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: ETERNAL-V15`
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.Codex.Phoenix VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-25 HASH: ETERNAL-V15`
 
 #### **[ARTIFACT END]**

@@ -8,7 +8,7 @@
 | **Official Name** | `GVRN.Sentinel.Umbra.md`          | The Filename.     |
 | **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
 | **Domain**        | `GVRN`                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
+| **Status**        | `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
@@ -165,7 +165,13 @@ The function returns a rigid JSON assessment:
 | Command ID                  | Action                             | Impact           |
 | :-------------------------- | :--------------------------------- | :--------------- |
 | `CMD: HARDEN_ARTIFACT`      | Scans and fixes structural issues  | Zero Entropy     |
-| `CMD: VERIFY_PROTOCOL`      | Checks if v14.0 is active          | Compliance Audit |
+| `CMD: VERIFY_PROTOCOL`      | Checks if v15.0 is active          | Compliance Audit |
 | `⚡ EXECUTE: SENTINEL_SCAN` | Runs full workspace geometry check | System Health    |
 
 ###### **[ARTIFACT END]**
+
+---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Sentinel.Umbra VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-25 HASH: [CALCULATING]`

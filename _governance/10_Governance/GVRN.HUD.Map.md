@@ -89,7 +89,7 @@ The cognitive architecture containing the brains, skills, and workflows of the S
 The heart of the OMEGA standard, housing the Phoenix Codex and global registries.
 
 - 📜 **[00_Codex/](../00_Codex/CORE.Codex.Phoenix.md)**: The Supreme Law (Phoenix Codex).
-- 🗃️ **[01_Registries/](../01_Registries/GVRN.REG.Data.OSLM.md)**: Master Registry, Inventory, OSLM.
+- 🗃️ **[01_Registries/](../01_Registries/GVRN.Registry.DataOSLM.md)**: Master Registry, Inventory, OSLM.
 - 🎭 **[03_AvatarSuite/](../03_AvatarSuite/GVRN.AvatarSuite.Index.md)**: Avatar Protocol & Sovereign Masks.
 - 🔒 **[04_Finalization/](../04_Finalization/GVRN.Finalization.Index.md)**: The Canonization Gate.
 - 🏗️ **[05_Assembler/](../05_Assembler/GVRN.Assembler.Index.md)**: The Assembly Engine.
@@ -175,4 +175,4 @@ graph TD
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.HUD.Map VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-18 HASH: [CALCULATING]`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.HUD.Map VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-25 HASH: [CALCULATING]`
