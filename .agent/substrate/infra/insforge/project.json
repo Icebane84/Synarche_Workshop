@@ -1,0 +1,19 @@
+{
+  "_metadata": {
+    "artifact_id": "SYNG.INFRA.INSFORGE",
+    "official_name": "project.json",
+    "version": "v15.0 [OMEGA]",
+    "domain": "INFRA",
+    "celestial_class": "[SATELLITE]",
+    "evolution": "Infrastructure Stability",
+    "status": "[ACTIVE]",
+    "genesis_stamp": "2026-03-24"
+  },
+  "project_id": "002344e7-f4e6-4547-ae4b-f9ca688a4c5d",
+  "project_name": "Oathbringer Gemini Learning Nexus",
+  "org_id": "de64c466-95c6-4493-817d-68e4f8604152",
+  "appkey": "x93i6uma",
+  "region": "us-east",
+  "api_key": "ik_5add4d9fc44c8b25e9e2ebc37518c0cf",
+  "oss_host": "https://x93i6uma.us-east.insforge.app"
+}

@@ -1,15 +1,8 @@
-"""| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `TOOL-REFORGE-001`                | The Sovereign ID. |
-| **Official Name** | `reforge.py`                   | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `GVRN`                         | The Subject.      |
-| **Evolution**     | **Autonomous Vigil**           | The Alignment.    |
-| **Status (State)**| `[CANONIZED]`                  | The Lifecycle.    |
-| **Celestial Class**| `[PLANET]`                    | The Tier.         |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
-| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-02-23`                       | Creation Date.    |.
+"""
+IDENTIFICATION: TOOL-REFORGE-001
+VERSION: v15.0 [OMEGA]
+STATUS: [CANONIZED]
+TIMESTAMP: 2026-03-24
 """
 
 import argparse
@@ -54,7 +47,20 @@ TARGET_DIRS = [
 ]
 
 # Codex v13.0 Logic
-VALID_DOMAINS = ["GVRN", "COG", "SYNG", "ARCH", "COMM", "PHL", "CRTV", "NOVA", "WLF", "AXION", "LOGS", "TMPL"]
+VALID_DOMAINS = [
+    "GVRN",
+    "COG",
+    "SYNG",
+    "ARCH",
+    "COMM",
+    "PHL",
+    "CRTV",
+    "NOVA",
+    "WLF",
+    "AXION",
+    "LOGS",
+    "TMPL",
+]
 VALID_EVOLUTIONS = [
     "Cognitive Ascension",
     "Empathetic Sentience",
@@ -144,7 +150,9 @@ def extract_existing_metadata(content: str) -> dict[str, str]:
     """Extracts existing metadata from the UIP table or blockquote."""
     metadata: dict[str, str] = {}
     # Match pipe table rows: | **Key** | `Value` | or | Key | Value |
-    table_rows = re.findall(r"\| \s*\**?\d*\.?\s*(.*?)\**? \s*\| \s*(.*?) \s*\|", content)
+    table_rows = re.findall(
+        r"\| \s*\**?\d*\.?\s*(.*?)\**? \s*\| \s*(.*?) \s*\|", content
+    )
     for key, value in table_rows:
         k = key.strip().strip("*")
         v = re.sub(r"[`\*]", "", value).strip()
@@ -170,7 +178,9 @@ def generate_header(metadata: dict[str, str], filepath: str) -> str:
             domain_code = d
             break
 
-    evo = metadata.get("Evolution", metadata.get("Evolutionary Alignment", DEFAULT_EVOLUTION))
+    evo = metadata.get(
+        "Evolution", metadata.get("Evolutionary Alignment", DEFAULT_EVOLUTION)
+    )
     if evo not in VALID_EVOLUTIONS:
         evo = DEFAULT_EVOLUTION
 
@@ -222,7 +232,9 @@ def _fix_list_markers(line: str) -> str:
     return line
 
 
-def _handle_list_transitions(is_list_item: bool, in_list: bool, current_line: str, history: list[str]) -> bool:
+def _handle_list_transitions(
+    is_list_item: bool, in_list: bool, current_line: str, history: list[str]
+) -> bool:
     """MD032: Add blank lines before/after lists if needed. Returns new 'in_list' state."""
     # Before list starts
     if is_list_item and not in_list:
@@ -273,9 +285,15 @@ def _is_header_start_line(line: str) -> bool:
     if not s:
         return False
 
-    if s.startswith("######") or s.startswith("---") or s.startswith("[ARTIFACT START]"):
+    if (
+        s.startswith("######")
+        or s.startswith("---")
+        or s.startswith("[ARTIFACT START]")
+    ):
         return True
-    if s.startswith("| ") and ("Attribute" in s or "Field" in s or "Value" in s or ":---" in s):
+    if s.startswith("| ") and (
+        "Attribute" in s or "Field" in s or "Value" in s or ":---" in s
+    ):
         return True
 
     metadata_keys = [
@@ -298,7 +316,12 @@ def _is_header_start_line(line: str) -> bool:
         "Downstream",
     ]
 
-    if not (s.startswith("|") or s.startswith("**") or s.startswith("> ") or "stamp" in s.lower()):
+    if not (
+        s.startswith("|")
+        or s.startswith("**")
+        or s.startswith("> ")
+        or "stamp" in s.lower()
+    ):
         return False
 
     return any(key in s for key in metadata_keys)
@@ -373,7 +396,9 @@ def _is_redundant_metadata(line: str, index: int) -> bool:
     ]
     contextual_kill = ["domain", "state", "tags", "criticality", "signal"]
 
-    if "|" in line and any(kw.lower() in sbl_lower for kw in kill_keywords + contextual_kill):
+    if "|" in line and any(
+        kw.lower() in sbl_lower for kw in kill_keywords + contextual_kill
+    ):
         return True
 
     for kw in kill_keywords:
@@ -403,7 +428,9 @@ def _process_body(body_lines: list[str]) -> str:
     return clean_formatting(body_text)
 
 
-def process_file(filepath: str, rationale: str = "Alignment with OMEGA v14.0 Semantic Standards.") -> None:
+def process_file(
+    filepath: str, rationale: str = "Alignment with OMEGA v14.0 Semantic Standards."
+) -> None:
     """Reforges a single file to v14.0 standards."""
     try:
         with open(filepath, encoding="utf-8", errors="ignore") as f:
@@ -436,7 +463,10 @@ def process_file(filepath: str, rationale: str = "Alignment with OMEGA v14.0 Sem
     if "Block D: Standardized Synergy Block" not in body_text:
         if "Actionable Prompt Packet" in body_text:
             body_text = re.sub(
-                r"#+ .*Actionable Prompt Packet.*", formatted_app, body_text, flags=re.IGNORECASE | re.DOTALL
+                r"#+ .*Actionable Prompt Packet.*",
+                formatted_app,
+                body_text,
+                flags=re.IGNORECASE | re.DOTALL,
             )
         else:
             body_text += f"\n\n{formatted_app}"
@@ -477,18 +507,28 @@ def scan_targets(targets: list[str], rationale: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Reforge artifacts to v14.0 standards.")
-    parser.add_argument("targets", nargs="*", help="Optional target directories or files.")
-    parser.add_argument("--heal", action="store_true", help="Automatically fix linter problems.")
+    parser = argparse.ArgumentParser(
+        description="Reforge artifacts to v14.0 standards."
+    )
     parser.add_argument(
-        "--rationale", default="Alignment to v14.0 OMEGA standard.", help="The Architectural Rationale."
+        "targets", nargs="*", help="Optional target directories or files."
+    )
+    parser.add_argument(
+        "--heal", action="store_true", help="Automatically fix linter problems."
+    )
+    parser.add_argument(
+        "--rationale",
+        default="Alignment to v14.0 OMEGA standard.",
+        help="The Architectural Rationale.",
     )
     args = parser.parse_args()
 
     targets = args.targets if args.targets else TARGET_DIRS
     rationale = args.rationale
     logger.info("[AXION] Starting Reforge v14.0 (Axiom Ascension)...")
-    logger.info('> "Entropy is the enemy. Structure is the shield. Coherence is the sword." — UEB-GOC-001\n')
+    logger.info(
+        '> "Entropy is the enemy. Structure is the shield. Coherence is the sword." — UEB-GOC-001\n'
+    )
 
     if args.heal:
         logger.info("[AXION] Activating Heal Protocol...")

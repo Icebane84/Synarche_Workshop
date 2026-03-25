@@ -1,0 +1,22 @@
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.CFG.Knowledge`                          | The Sovereign ID. |
+| **Official Name**   | `knowledge.yaml`                        | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `SYNG`                                  | The Subject.      |
+| **Celestial Class** | `[STAR]`                                | The Weight.       |
+| **Evolution**       | `Semantic Search`                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
+| **Relations**       | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+
+---
+
+external_docs:
+- https://supabase.com/docs
+indexes:
+- src/
+- governance/
+- axion-core/
+rag_engine: active

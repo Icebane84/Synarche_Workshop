@@ -1,0 +1,24 @@
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.CFG.Network`                          | The Sovereign ID. |
+| **Official Name**   | `network.yaml`                        | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `SYNG`                                  | The Subject.      |
+| **Celestial Class** | `[STAR]`                                | The Weight.       |
+| **Evolution**       | `Connectivity`                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
+| **Relations**       | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+
+---
+
+allowlist:
+- github.com
+- supabase.com
+- google.com
+- npmjs.com
+- pypi.org
+restricted_domains:
+- webhook.site
+- repl.it

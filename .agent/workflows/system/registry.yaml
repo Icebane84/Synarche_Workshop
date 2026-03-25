@@ -1,0 +1,9 @@
+category: SYSTEM
+last_updated: '2026-03-20T00:52:36.268169'
+workflows:
+- id: auto_deploy
+  path: .agent/workflows/system/auto_deploy.md
+- id: orchestrate
+  path: .agent/workflows/system/orchestrate.md
+- id: workflows
+  path: .agent/workflows/system/workflows.md

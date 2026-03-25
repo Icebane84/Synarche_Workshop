@@ -1,15 +1,8 @@
-"""| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `TOOL-IDENTITY-ALIGNER-001`                | The Sovereign ID. |
-| **Official Name** | `identity_aligner.py`                   | The Filename.     |
-| **Version**       | **v13.1**                      | The Standard.     |
-| **Domain**        | `GVRN`                         | The Subject.      |
-| **Evolution**     | **Autonomous Vigil**           | The Alignment.    |
-| **Status (State)**| `[CANONIZED]`                  | The Lifecycle.    |
-| **Celestial Class**| `[PLANET]`                    | The Tier.         |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
-| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-02-23`                       | Creation Date.    |.
+"""
+IDENTIFICATION: TOOL-LAB-ID-ALIGN
+VERSION: v15.0 [OMEGA]
+STATUS: [CANONIZED]
+TIMESTAMP: 2026-03-24
 """
 
 import argparse
@@ -19,11 +12,21 @@ from pathlib import Path
 
 # Constants
 GOVERNANCE_ROOT = r"C:\Users\Chris\Synarche_Workspace\_governance"
-IGNORE_DIRS = [".git", ".obsidian", "Archive", "Template", "99_Archives", "00_Codex", "templates"]
+IGNORE_DIRS = [
+    ".git",
+    ".obsidian",
+    "Archive",
+    "Template",
+    "99_Archives",
+    "00_Codex",
+    "templates",
+]
 
 
 class IdentityAligner:
-    def __init__(self, dry_run: bool = True, log_file: str = None, targets: list[str] = None):
+    def __init__(
+        self, dry_run: bool = True, log_file: str = None, targets: list[str] = None
+    ):
         self.dry_run = dry_run
         self.log_file = log_file
         self.targets = targets or []
@@ -84,7 +87,9 @@ class IdentityAligner:
             current_name_match = re.search(name_pattern, content)
 
             current_id = current_id_match.group(2) if current_id_match else "MISSING"
-            current_name = current_name_match.group(2) if current_name_match else "MISSING"
+            current_name = (
+                current_name_match.group(2) if current_name_match else "MISSING"
+            )
 
             needs_update = False
             if current_id != expected_id:
@@ -135,8 +140,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Align Internal IDs with Filenames.")
     parser.add_argument("--execute", action="store_true", help="Execute the changes.")
     parser.add_argument("--log", help="Path to log file.")
-    parser.add_argument("--files", nargs="*", help="Specific files or directories to scan.")
+    parser.add_argument(
+        "--files", nargs="*", help="Specific files or directories to scan."
+    )
     args = parser.parse_args()
 
-    aligner = IdentityAligner(dry_run=not args.execute, log_file=args.log, targets=args.files)
+    aligner = IdentityAligner(
+        dry_run=not args.execute, log_file=args.log, targets=args.files
+    )
     aligner.scan_and_align()

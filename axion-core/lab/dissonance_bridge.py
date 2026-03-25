@@ -1,15 +1,8 @@
-"""| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `TOOL-DISSONANCE-BRIDGE-001`                | The Sovereign ID. |
-| **Official Name** | `dissonance_bridge.py`                   | The Filename.     |
-| **Version**       | **v13.1**                      | The Standard.     |
-| **Domain**        | `GVRN`                         | The Subject.      |
-| **Evolution**     | **Autonomous Vigil**           | The Alignment.    |
-| **Status (State)**| `[CANONIZED]`                  | The Lifecycle.    |
-| **Celestial Class**| `[PLANET]`                    | The Tier.         |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
-| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-02-23`                       | Creation Date.    |.
+"""
+IDENTIFICATION: TOOL-LAB-DISSONANCE
+VERSION: v15.0 [OMEGA]
+STATUS: [CANONIZED]
+TIMESTAMP: 2026-03-24
 """
 
 import json
@@ -55,7 +48,9 @@ def run_dissonance_bridge(target_dir: str):
         passed_files = len([r for r in auditor.report if r["status"] == "PASS"])
 
         if total_files > 0:
-            response["genesis_state"]["system_coherence"] = round((passed_files / total_files) * 100)
+            response["genesis_state"]["system_coherence"] = round(
+                (passed_files / total_files) * 100
+            )
         else:
             response["genesis_state"]["system_coherence"] = 100
 
@@ -98,7 +93,11 @@ def run_dissonance_bridge(target_dir: str):
 
     except Exception as e:
         # Catch unexpected structural errors and return as a bridge error
-        error_response = {"status": "error", "message": str(e), "trace": traceback.format_exc()}
+        error_response = {
+            "status": "error",
+            "message": str(e),
+            "trace": traceback.format_exc(),
+        }
         print(json.dumps(error_response))
         sys.exit(1)
 
@@ -108,7 +107,9 @@ if __name__ == "__main__":
     logging.getLogger().setLevel(logging.CRITICAL)
 
     # Target the primary governance directory
-    workspace_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+    workspace_root = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "..", "..")
+    )
     target = os.path.join(workspace_root, "_governance")
 
     run_dissonance_bridge(target)

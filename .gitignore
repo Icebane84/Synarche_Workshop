@@ -71,7 +71,6 @@ surreal.db/
 
 # InsForge & AI agent skills
 .insforge
-.agent
 .agents
 .augment
 .claude

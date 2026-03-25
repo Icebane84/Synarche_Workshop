@@ -1,0 +1,42 @@
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.CFG.SAVDP`                        | The Sovereign ID. |
+| **Official Name**   | `pipeline_config.yaml`                  | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `GOVERNANCE`                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                              | The Weight.       |
+| **Evolution**       | `Pipeline Stability`                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
+
+---
+
+# 🛠️ SAV-DP Pipeline Configuration
+
+Parameters for the Seamless Absorption, Validation, and Deployment Pipelines.
+
+## 📁 Source Definitions
+
+- **source_name**: `AI_KNOWLEDGE_GRAPH`
+  - **Endpoint**: `https://api.insforge.app/v1/governance/stream`
+  - **Protocol**: `REST/JSON`
+  - **Security**: `EncryptedPayload`, `GenesisStampCheck`
+
+## 🧪 Validation Mandates
+
+- **simulation_fidelity**: `HIGH`
+- **canary_ratio**: `0.05` (5%)
+- **rollback_threshold**: `0.10` (Error rate > 10% triggers auto-revert)
+
+## 📡 Tool Hooks (OMEGA v15.0)
+
+Integrated hooks for autonomous governance operations:
+
+- **Validation Engine**: `python axion-core/forge/sentinel.py --mode fast`
+- **Complexity Audit**: `python axion-core/lab/sophia_wisdom.py --threshold 15`
+- **Refactor Trigger**: `python axion-core/forge/reforge.py --auto`
+- **Registry Sync**: `python axion-core/forge/generate_barrels.py`
+
+---
+`[OMNI-ANCHOR] ID: SYNG.CFG.SAVDP VER: v15.0 [OMEGA] STATUS: ACTIVE TS: 2026-03-24`

@@ -105,9 +105,9 @@ class SoulImpactAnalyzer:
     def get_sovereign_quote(self, score: float) -> str:
         """Returns a contextual quote based on the risk score."""
         for entry in self.SOVEREIGN_QUOTES:
-            threshold = float(entry["threshold"])
+            threshold: float = float(entry["threshold"])
             if score >= threshold:
                 quote = str(entry["quote"])
                 source = str(entry["source"])
                 return f'"{quote}" — {source}'
-        return str(self.SOVEREIGN_QUOTES[-1]["quote"])
+        return "Frequencies stable. Proceed with clarity."

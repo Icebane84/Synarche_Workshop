@@ -1,0 +1,15 @@
+domain: BIN
+last_updated: '2026-03-20T00:48:00Z'
+scripts:
+- id: auto_preview
+  path: .agent/substrate/bin/auto_preview.py
+- id: checklist
+  path: .agent/substrate/bin/checklist.py
+- id: refresh_registry
+  path: .agent/substrate/bin/refresh_registry.py
+- id: session_manager
+  path: .agent/substrate/bin/session_manager.py
+- id: update_nav_hubs
+  path: .agent/substrate/bin/update_nav_hubs.py
+- id: verify_all
+  path: .agent/substrate/bin/verify_all.py

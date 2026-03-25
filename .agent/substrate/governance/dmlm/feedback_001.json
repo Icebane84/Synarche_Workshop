@@ -1,0 +1,6 @@
+{
+  "signal": "OPTIMIZE_LATENCY",
+  "priority": "HIGH",
+  "recommendation": "Migrate L2 cache to memory-resident store.",
+  "source": "CFL_Monitor_V1"
+}

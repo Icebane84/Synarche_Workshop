@@ -1,15 +1,8 @@
-"""| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `TOOL-WORKSPACE-GARDENER-001`                | The Sovereign ID. |
-| **Official Name** | `workspace_gardener.py`                   | The Filename.     |
-| **Version**       | **v13.1**                      | The Standard.     |
-| **Domain**        | `GVRN`                         | The Subject.      |
-| **Evolution**     | **Autonomous Vigil**           | The Alignment.    |
-| **Status (State)**| `[CANONIZED]`                  | The Lifecycle.    |
-| **Celestial Class**| `[PLANET]`                    | The Tier.         |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
-| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-02-23`                       | Creation Date.    |.
+"""
+IDENTIFICATION: TOOL-LAB-GARDENER
+VERSION: v15.0 [OMEGA]
+STATUS: [CANONIZED]
+TIMESTAMP: 2026-03-24
 """
 
 import argparse
@@ -76,7 +69,10 @@ class WorkspaceGardener:
                         # If file is outside root, skip it for orphan scanning
                         continue
 
-        logging.info("Registries loaded: %d unique artifacts authorized.", len(self.registered_files))
+        logging.info(
+            "Registries loaded: %d unique artifacts authorized.",
+            len(self.registered_files),
+        )
 
     def scan_for_orphans(self) -> None:
         """Identifies files on disk that are not in the Master Registry."""
@@ -86,7 +82,11 @@ class WorkspaceGardener:
             abs_file = file_path.resolve()
 
             # Ignore hidden files, .gemini files, and archives
-            if ".gemini" in str(abs_file) or "99_Archives" in str(abs_file) or abs_file.name.startswith("."):
+            if (
+                ".gemini" in str(abs_file)
+                or "99_Archives" in str(abs_file)
+                or abs_file.name.startswith(".")
+            ):
                 continue
 
             try:
@@ -113,7 +113,10 @@ class WorkspaceGardener:
             if re.search(r"^\s*\* ", content, re.MULTILINE):
                 needs_fix = True
                 self.report.drifted_files.append(
-                    {"path": str(file_path.relative_to(self.root)), "issue": "Marker Drift (Asterisks detected)"}
+                    {
+                        "path": str(file_path.relative_to(self.root)),
+                        "issue": "Marker Drift (Asterisks detected)",
+                    }
                 )
                 logging.warning("DRIFT DETECTED: %s (Marker Alignment)", file_path.name)
 
@@ -121,7 +124,9 @@ class WorkspaceGardener:
                 logging.info("PRUNING: Correcting markers in %s...", file_path.name)
                 # Convert '*' to '-' for list markers
                 # Using a more careful regex to avoid matching things inside code blocks (simple heuristic)
-                fixed_content = re.sub(r"^(\s*)\* ", r"\1- ", content, flags=re.MULTILINE)
+                fixed_content = re.sub(
+                    r"^(\s*)\* ", r"\1- ", content, flags=re.MULTILINE
+                )
                 file_path.write_text(fixed_content, encoding="utf-8")
 
     def validate_axiomatic_spine(self) -> None:
@@ -135,11 +140,15 @@ class WorkspaceGardener:
 
             # Check for Identification Block A
             if "Block A:" not in content:
-                self.report.axiomatic_violations.append(f"{file_path.name}: Missing Block A")
+                self.report.axiomatic_violations.append(
+                    f"{file_path.name}: Missing Block A"
+                )
 
             # Check for APP (Actionable Prompt Packet)
             if "Actionable Prompt Packet" not in content and "APP" not in content:
-                self.report.axiomatic_violations.append(f"{file_path.name}: Missing APP")
+                self.report.axiomatic_violations.append(
+                    f"{file_path.name}: Missing APP"
+                )
 
             # Check for the 5 Axioms Presence (Greek or LaTeX symbols)
             # psi (Mind), mu (Memory), Lambda (Law), iota (Index), epsilon/epsilon (Entropy)
@@ -161,8 +170,12 @@ class WorkspaceGardener:
             return 1.0
 
         orphan_penalty = (len(self.report.orphans) / self.report.total_scanned) * 0.4
-        drift_penalty = (len(self.report.drifted_files) / self.report.total_scanned) * 0.3
-        spine_penalty = (len(self.report.axiomatic_violations) / self.report.total_scanned) * 0.3
+        drift_penalty = (
+            len(self.report.drifted_files) / self.report.total_scanned
+        ) * 0.3
+        spine_penalty = (
+            len(self.report.axiomatic_violations) / self.report.total_scanned
+        ) * 0.3
 
         coherence = 1.0 - (orphan_penalty + drift_penalty + spine_penalty)
         self.report.coherence_score = max(0.0, round(coherence, 2))
@@ -185,7 +198,14 @@ class WorkspaceGardener:
         for orphan in self.report.orphans:
             report_text.append(f"| {orphan} | `UNREGISTERED` |")
 
-        report_text.extend(["", "## 2. Protocol Drift (Law 7 Violation)", "| Path | Issue |", "| :--- | :--- |"])
+        report_text.extend(
+            [
+                "",
+                "## 2. Protocol Drift (Law 7 Violation)",
+                "| Path | Issue |",
+                "| :--- | :--- |",
+            ]
+        )
 
         for drift in self.report.drifted_files:
             report_text.append(f"| {drift['path']} | {drift['issue']} |")
@@ -213,11 +233,21 @@ def main() -> None:
     parser.add_argument(
         "--registries",
         nargs="+",
-        default=["_governance/01_Registries/GVRN.Registry.Master.md", "_governance/01_Registries/GVRN.OSLM.001.md"],
+        default=[
+            "_governance/01_Registries/GVRN.Registry.Master.md",
+            "_governance/01_Registries/GVRN.OSLM.001.md",
+        ],
         help="Master Registry paths",
     )
-    parser.add_argument("--mode", choices=["PASSIVE", "ACTIVE"], default="PASSIVE", help="Gardening Mode")
-    parser.add_argument("--output", default="gardening_report.md", help="Report output path")
+    parser.add_argument(
+        "--mode",
+        choices=["PASSIVE", "ACTIVE"],
+        default="PASSIVE",
+        help="Gardening Mode",
+    )
+    parser.add_argument(
+        "--output", default="gardening_report.md", help="Report output path"
+    )
 
     args = parser.parse_args()
 

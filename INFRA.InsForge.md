@@ -1,136 +1,98 @@
 ---
-description: Instructions building apps with MCP
+description: Sovereign Infrastructure - InsForge x Synarchy Integration
 globs: *
 alwaysApply: true
 ---
 
-# InsForge SDK Documentation - Overview
+### **[ARTIFACT START]**
 
-## What is InsForge?
+#### **Block A: The Identification Lock (UIP-V15)**
 
-Backend-as-a-service (BaaS) platform providing:
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `INFRA.InsForge`              | The Sovereign ID. |
+| **Official Name**   | `INFRA.InsForge.md`           | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `INFRASTRUCTURE`              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Divine Bridge Integration`   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `INDEX: GVRN.Master.Registry` | The Network.      |
 
-- **Database**: PostgreSQL with PostgREST API
-- **Authentication**: Email/password + OAuth (Google, GitHub)
-- **Storage**: File upload/download
-- **AI**: Chat completions and image generation (OpenAI-compatible)
-- **Functions**: Serverless function deployment
-- **Realtime**: WebSocket pub/sub (database + client events)
+# 🌐 INSFORGE SOVEREIGN INFRASTRUCTURE
 
-## Installation
+> **Ethos**: "The Cloud is the Extension; the Logic is the Core."
 
-The following is a step-by-step guide to installing and using the InsForge TypeScript SDK for Web applications. If you are building other types of applications, please refer to:
+InsForge provides the serverless substrate for the Phoenix Synarchy, enabling cross-agent memory continuity and real-time multiversal synchronization.
 
-- [Swift SDK documentation](/sdks/swift/overview) for iOS, macOS, tvOS, and watchOS applications.
-- [Kotlin SDK documentation](/sdks/kotlin/overview) for Android applications.
-- [REST API documentation](/sdks/rest/overview) for direct HTTP API access.
+---
 
-### 🚨 CRITICAL: Follow these steps in order
+## I. The Divine Bridge (L1-L5 Memory Sync)
 
-### Step 1: Download Template
+The **Divine Bridge** is the operational protocol that synchronizes the local `MemorySystem` with the InsForge cloud database.
 
-Use the `download-template` MCP tool to create a new project with your backend URL and anon key pre-configured.
+### 1. Synchronization Loop
 
-### Step 2: Install SDK
+- **Trigger**: Automatic session distillates or manual `/sync` commands.
+- **Logic**: Local SQLite memories are hashed, serialized, and flattened.
+- **Payload**: Transferred via the `insforge_bridge.py` engine to the `memory` table.
 
-```bash
-npm install @insforge/sdk@latest
-```
+### 2. Schema Requirements
 
-### Step 3: Create SDK Client
+- `id`: UUID (Primary Key)
+- `content`: TEXT (Crystalline Distillate)
+- `session_id`: TEXT (Loom Reference)
+- `timestamp`: TIMESTAMP WITH TIME ZONE
 
-You must create a client instance using `createClient()` with your base URL and anon key:
+---
+
+## II. Service Integrations
+
+### 1. Database (PostgreSQL)
+
+- **Engine**: PostgREST API for seamless JSON-based data access.
+- **Usage**: Used for Sovereign Registry mirroring and long-term evolutionary logs.
+
+### 2. Edge Functions (Deno)
+
+- **Deployment**: Managed via the `SYNG.WF.System` auto-deploy workflow.
+- **Role**: Executes logic too heavy for local context or requiring public connectivity.
+
+### 3. Storage (Buckets)
+
+- **Registry**: `syng-artifacts`, `syng-logs`, [syng-media](file:///c:/Users/Chris/Synarche_Workspace/axion-core/forge/media/).
+- **Protocol**: Multi-AZ storage with hash-based integrity verification.
+
+---
+
+## III. Operational Mandates
+
+### 1. 🚨 CRITICAL: Documentation Fetching
+
+Before interaction, you **MUST** call `fetch-docs` for `"instructions"` or `"db-sdk"`. This is non-negotiable for zero-entropy deployment.
+
+### 2. Security First
+
+- **API Keys**: Stored in `secrets.env`. Never committed to the loom.
+- **Anon Keys**: Used only for client-side public visibility.
+
+---
+
+## IV. Quick Start (Master SDK)
 
 ```javascript
-import { createClient } from '@insforge/sdk';
+import { createClient } from "@insforge/sdk";
 
 const client = createClient({
-  baseUrl: 'https://your-app.region.insforge.app',  // Your InsForge backend URL
-  anonKey: 'your-anon-key-here'       // Get this from backend metadata
+  baseUrl: process.env.INSFORGE_URL,
+  anonKey: process.env.INSFORGE_ANON_KEY,
 });
-
 ```
 
-**API BASE URL**: Your API base URL is `https://your-app.region.insforge.app`.
+---
 
-## Getting Detailed Documentation
+### **Block G: The Omni-Anchor (System Snapshot)**
 
-### 🚨 CRITICAL: Always Fetch Documentation Before Writing Code
+`[OMNI-ARTIFACT-ANCHOR] ID: INFRA.InsForge VER: v15.0 [OMEGA] STATUS: ACTIVE TS: 2026-03-24`
 
-InsForge provides official SDKs and REST APIs, use them to interact with InsForge services from your application code.
-
-- [TypeScript SDK](/sdks/typescript/overview) - JavaScript/TypeScript
-- [Swift SDK](/sdks/swift/overview) - iOS, macOS, tvOS, and watchOS
-- [Kotlin SDK](/sdks/kotlin/overview) - Android and Kotlin Multiplatform
-- [REST API](/sdks/rest/overview) - Direct HTTP API access
-
-Before writing or editing any InsForge integration code, you **MUST** call the `fetch-docs` or `fetch-sdk-docs` MCP tool to get the latest SDK documentation. This ensures you have accurate, up-to-date implementation patterns.
-
-### Use the InsForge `fetch-docs` MCP tool to get specific SDK documentation
-
-Available documentation types:
-
-- `"instructions"` - Essential backend setup (START HERE)
-- `"real-time"` - Real-time pub/sub (database + client events) via WebSockets
-- `"db-sdk-typescript"` - Database operations with TypeScript SDK
-- **Authentication** - Choose based on implementation:
-  - `"auth-sdk-typescript"` - TypeScript SDK methods for custom auth flows
-  - `"auth-components-react"` - Pre-built auth UI for React+Vite (singlepage App)
-  - `"auth-components-react-router"` - Pre-built auth UI for React(Vite+React Router) (Multipage App)
-  - `"auth-components-nextjs"` - Pre-built auth UI for Nextjs (SSR App)
-- `"storage-sdk"` - File storage operations
-- `"functions-sdk"` - Serverless functions invocation
-- `"ai-integration-sdk"` - AI chat and image generation
-- `"real-time"` - Real-time pub/sub (database + client events) via WebSockets
-- `"deployment"` - Deploy frontend applications via MCP tool
-
-These documentations are mostly for TypeScript SDK. For other languages, you can also use `fetch-sdk-docs` mcp tool to get specific documentation.
-
-### Use the InsForge `fetch-sdk-docs` MCP tool to get specific SDK documentation
-
-You can fetch sdk documentation using the `fetch-sdk-docs` MCP tool with specific feature type and language.
-
-Available feature types:
-
-- db - Database operations
-- storage - File storage operations
-- functions - Serverless functions invocation
-- auth - User authentication
-- ai - AI chat and image generation
-- realtime - Real-time pub/sub (database + client events) via WebSockets
-
-Available languages:
-
-- typescript - JavaScript/TypeScript SDK
-- swift - Swift SDK (for iOS, macOS, tvOS, and watchOS)
-- kotlin - Kotlin SDK (for Android and JVM applications)
-- rest-api - REST API
-
-## When to Use SDK vs MCP Tools
-
-### Always SDK for Application Logic
-
-- Authentication (register, login, logout, profiles)
-- Database CRUD (select, insert, update, delete)
-- Storage operations (upload, download files)
-- AI operations (chat, image generation)
-- Serverless function invocation
-
-### Use MCP Tools for Infrastructure
-
-- Project scaffolding (`download-template`) - Download starter templates with InsForge integration
-- Backend setup and metadata (`get-backend-metadata`)
-- Database schema management (`run-raw-sql`, `get-table-schema`)
-- Storage bucket creation (`create-bucket`, `list-buckets`, `delete-bucket`)
-- Serverless function deployment (`create-function`, `update-function`, `delete-function`)
-- Frontend deployment (`create-deployment`) - Deploy frontend apps to InsForge hosting
-
-## Important Notes
-
-- For auth: use `auth-sdk` for custom UI, or framework-specific components for pre-built UI
-- SDK returns `{data, error}` structure for all operations
-- Database inserts require array format: `[{...}]`
-- Serverless functions have single endpoint (no subpaths)
-- Storage: Upload files to buckets, store URLs in database
-- AI operations are OpenAI-compatible
-- **EXTRA IMPORTANT**: Use Tailwind CSS 3.4 (do not upgrade to v4). Lock these dependencies in `package.json`
+###### **[ARTIFACT END]**

@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "trunk.io",
+    "charliermarsh.ruff",
+    "esbenp.prettier-vscode",
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-preview-github-styles",
+    "bierner.markdown-checkbox",
+    "bierner.markdown-emoji",
+    "bierner.markdown-links",
+    "bierner.markdown-table-of-contents",
+    "bierner.markdown-math",
+    "bierner.markdown-mermaid",
+    "bierner.markdown-mindmap"
+  ]
+}
