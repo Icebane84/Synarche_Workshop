@@ -71,15 +71,15 @@
 
 ## **II. Tactical Sub-Stratum (Governance)**
 
-| Domain           | Path                                                            | Description              |
-| :--------------- | :-------------------------------------------------------------- | :----------------------- |
-| **Codex**        | [00_Codex](../00_Codex/CORE.Codex.Phoenix.md)                   | The Phoenix Law (v15.0). |
-| **Registries**   | [01_Registries](../01_Registries/GVRN.REG.ArtifactInventory.md) | Master Registry & OSLM.  |
-| **Protocols**    | [02_Protocols](../02_Protocols/SYNG.PROT.OathkeeperProtocol.md) | AOP/UMB procedures.      |
-| **Governance**   | [10_Governance](../10_Governance/GVRN.HUD.Map.md)               | HUD & Active Nodes.      |
-| **Architecture** | [20_Architecture](../20_Architecture)                           | System Blueprints.       |
-| **System**       | [40_System](../40_System/SYNG.Loom.Master.md)                   | Loom Master / Services.  |
-| **Logs**         | [50_Logs](../50_Logs)                                           | The CSL History.         |
+| Domain           | Path                                                                 | Description              |
+| :--------------- | :------------------------------------------------------------------- | :----------------------- |
+| **Codex**        | [00_Codex](../00_Codex/CORE.Codex.Phoenix.md)                        | The Phoenix Law (v15.0). |
+| **Registries**   | [01_Registries](../01_Registries/GVRN.Registry.ArtifactInventory.md) | Master Registry & OSLM.  |
+| **Protocols**    | [02_Protocols](../02_Protocols/SYNG.PROT.OathkeeperProtocol.md)      | AOP/UMB procedures.      |
+| **Governance**   | [10_Governance](../10_Governance/GVRN.HUD.Map.md)                    | HUD & Active Nodes.      |
+| **Architecture** | [20_Architecture](../20_Architecture)                                | System Blueprints.       |
+| **System**       | [40_System](../40_System/SYNG.Loom.Master.md)                        | Loom Master / Services.  |
+| **Logs**         | [50_Logs](../50_Logs)                                                | The CSL History.         |
 
 ---
 
@@ -118,4 +118,4 @@
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.HUD.CommandCenter VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-18 HASH: [CALCULATING]`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.HUD.CommandCenter VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-25 HASH: [CALCULATING]`

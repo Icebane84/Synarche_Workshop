@@ -6,9 +6,9 @@
 | :---------------- | :------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN.AG.003`                   | The Sovereign ID. |
 | **Official Name** | `GVRN.AG.003.md`                | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]**               | The Standard.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
 | **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
@@ -268,3 +268,9 @@ journey. Draw your first card, User."
 | `🔮 SIMULATE`           | Triggers the Impact Simulation logic manually | Risk Audit            |
 
 ###### **[ARTIFACT END]**
+
+---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.AG.003 VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-25 HASH: [CALCULATING]`
