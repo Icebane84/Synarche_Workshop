@@ -1,63 +1,52 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
-ID: AXION-NODE-CONTEXT-001
-Official Name: context.py
-Version: v15.0 [OMEGA]
-Domain: AXION
-Status: [ACTIVE]
-Ethos: "Clarity through Cognition. Intent Decoded."
-Relations: IDENTITY: High Priestess | The Sovereign.
+## **[ARTIFACT START]**
+
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.context`                | The Sovereign ID. |
+| **Official Name** | `context.py`                   | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
+---
+
+## **Block B: State Vector (AGP-001)**
+
+| State Field   | Value     |
+| :------------ | :-------- |
+| **Coherence** | `{resonance}`     |
+| **Resonance** | `{resonance}`     |
+| **Stability** | `Stable`  |
+
+---
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Semantic Decay**   | Axiomatic Compass Audit   |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+
+## **[ARTIFACT END]**
 """
 
-import asyncio
-import logging
-from typing import Any
+"""
+#
 
-# Project Imports
-from ..insforge_client import insforge
-from ..schemas import AxionState
-from logic.nlp.nlp_engine import AxionCognition
+---
 
-logger = logging.getLogger("axion.nodes.context")
+### **Block G: The Omni-Anchor (System Snapshot)**
 
-
-def node_retrieve_context(state: AxionState) -> dict[str, Any]:
-    """
-    Triangulates narrative and logic context using the AxionCognition engine.
-    Aligned with GVRN.CognitiveLoom requirements.
-    """
-    logger.info("--- [AXION] NODE: RETRIEVE CONTEXT ---")
-    
-    # Ensure we are working with the state object
-    state_obj = state if isinstance(state, AxionState) else AxionState(**state)
-    
-    # Invoke Cognition Engine (Modular Synthesis)
-    cognition = AxionCognition()
-    analysis = cognition.process(state_obj.input)
-    
-    # Map analysis to state
-    state_obj.narrative_context = (
-        f"Decoded Intent: {analysis.get('intent', 'Unknown')} | "
-        f"Entities: {', '.join(analysis.get('entities', [])) if analysis.get('entities') else 'None'}"
-    )
-    state_obj.logic_context = (
-        f"Tone: {analysis.get('tone', 'Neutral')} | "
-        f"Emotive Vector: {analysis.get('emotions', 'Stable')}"
-    )
-    
-    # Authoritative Logging to InsForge
-    try:
-        loop = asyncio.get_event_loop()
-        if loop.is_running():
-            loop.create_task(insforge.log_event(
-                type="NODE_RETRIEVAL",
-                description="Axion retrieved cognitive context.",
-                payload={
-                    "intent": analysis.get("intent"),
-                    "tone": analysis.get("tone")
-                }
-            ))
-    except Exception as e:
-        logger.warning(f"InsForge Signal Blocked: {e}")
-        
-    return state_obj.model_dump()
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.context VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 510ec799f4bf2f51`

@@ -1,20 +1,45 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
+## **[ARTIFACT START]**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `CORE-LOGIC-UTIL-SOUL-001`    | The Sovereign ID. |
-| **Official Name**   | `soul_analyzer.py`            | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
-| **Domain**          | `CORE-LOGIC-UTILS`            | The Subject.      |
-| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
-| **Evolution**       | `Structural Integrity`         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+## **Block A: The Identification Lock (UIP-V15)**
 
-**The Spirit Bomb Axiom: Empathy Resonance (Law 28)**
-> Implemented from Blueprint `GVRN.REG.EmpathyResonance.md`.
-> Ethos: The Impact is Seed; The Empathy is Truth.
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.soul.analyzer`                | The Sovereign ID. |
+| **Official Name** | `soul_analyzer.py`                   | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
+---
+
+## **Block B: State Vector (AGP-001)**
+
+| State Field   | Value     |
+| :------------ | :-------- |
+| **Coherence** | `{resonance}`     |
+| **Resonance** | `{resonance}`     |
+| **Stability** | `Stable`  |
+
+---
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Semantic Decay**   | Axiomatic Compass Audit   |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+
+## **[ARTIFACT END]**
 """
 
 import logging
@@ -111,3 +136,11 @@ class SoulImpactAnalyzer:
                 source = str(entry["source"])
                 return f'"{quote}" — {source}'
         return "Frequencies stable. Proceed with clarity."
+
+# ---
+# 
+# ---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.soul.analyzer VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 5678cba83454dded`

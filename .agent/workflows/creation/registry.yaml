@@ -1,9 +1,9 @@
 category: CREATION
-last_updated: '2026-03-28T02:46:07.798705'
+last_updated: "2026-03-28T08:30:09.872999"
 workflows:
-- id: create
-  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/creation/create.md
-- id: enhance
-  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/creation/enhance.md
-- id: ui-ux-pro-max
-  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/creation/ui-ux-pro-max.md
+  - id: create
+    path: /.agent/workflows/creation/create.md
+  - id: enhance
+    path: /.agent/workflows/creation/enhance.md
+  - id: ui-ux-pro-max
+    path: /.agent/workflows/creation/ui-ux-pro-max.md

@@ -1,20 +1,45 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
+## **[ARTIFACT START]**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `CORE-LOGIC-NLP-001`          | The Sovereign ID. |
-| **Official Name**   | `nlp_engine.py`               | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
-| **Domain**          | `CORE-LOGIC-NLP`              | The Subject.      |
-| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
-| **Evolution**       | `Structural Integrity`         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+## **Block A: The Identification Lock (UIP-V15)**
 
-**The Spirit Bomb Axiom: Semantic Resonance (Law 28)**
-> Implemented from Blueprint `GVRN.REG.SemanticResonance.md`.
-> Ethos: The Word is Seed; The Understanding is Fruit.
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.nlp.engine`                | The Sovereign ID. |
+| **Official Name** | `nlp_engine.py`                   | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
+---
+
+## **Block B: State Vector (AGP-001)**
+
+| State Field   | Value     |
+| :------------ | :-------- |
+| **Coherence** | `{resonance}`     |
+| **Resonance** | `{resonance}`     |
+| **Stability** | `Stable`  |
+
+---
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Semantic Decay**   | Axiomatic Compass Audit   |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+
+## **[ARTIFACT END]**
 """
 
 import logging
@@ -222,3 +247,11 @@ class AxionCognition:
             score -= 0.2
 
         return round(max(0.1, score), 2)
+
+# ---
+# 
+# ---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.nlp.engine VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: b66317b25fa07eaa`

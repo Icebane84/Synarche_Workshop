@@ -1,24 +1,24 @@
 domain: LANG
-last_updated: '2026-03-28T02:46:07.784114'
+last_updated: "2026-03-28T08:30:09.865003"
 skills:
-- documented: true
-  id: bash-linux
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/lang/bash-linux
-- documented: true
-  id: i18n-localization
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/lang/i18n-localization
-- documented: true
-  id: nextjs-react-expert
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/lang/nextjs-react-expert
-- documented: true
-  id: nodejs-best-practices
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/lang/nodejs-best-practices
-- documented: true
-  id: powershell-windows
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/lang/powershell-windows
-- documented: true
-  id: python-patterns
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/lang/python-patterns
-- documented: true
-  id: rust-pro
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/lang/rust-pro
+  - documented: true
+    id: bash-linux
+    path: /.agent/skills/lang/bash-linux
+  - documented: true
+    id: i18n-localization
+    path: /.agent/skills/lang/i18n-localization
+  - documented: true
+    id: nextjs-react-expert
+    path: /.agent/skills/lang/nextjs-react-expert
+  - documented: true
+    id: nodejs-best-practices
+    path: /.agent/skills/lang/nodejs-best-practices
+  - documented: true
+    id: powershell-windows
+    path: /.agent/skills/lang/powershell-windows
+  - documented: true
+    id: python-patterns
+    path: /.agent/skills/lang/python-patterns
+  - documented: true
+    id: rust-pro
+    path: /.agent/skills/lang/rust-pro

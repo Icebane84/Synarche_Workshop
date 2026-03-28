@@ -60,12 +60,12 @@ except ImportError:
 
 # Synarche Imports
 try:
+    from ...agents.axion.insforge_client import insforge
     from ..nlp.emotion_analyzer import EmotionAnalyzer
     from ..nlp.nlp_engine import AxionCognition
+    from ..sync.insforge_bridge import bridge as insforge_bridge
     from .association_manager import AssociationManager
     from .retrieval_engine import RetrievalEngine
-    from ...agents.axion.insforge_client import insforge
-    from ..sync.insforge_bridge import bridge as insforge_bridge
 
     HAS_NLP_ENGINE = True
 except ImportError:
@@ -1432,3 +1432,11 @@ class MemorySystem:
                     conn.close()
             except Exception:
                 pass
+
+
+# ---
+#
+# ### **Block G: The Omni-Anchor (System Snapshot)**
+#
+# `[OMNI-ARTIFACT-ANCHOR] ID: CORE.memory.system VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [SYNTHESIZED] TS: 2026-03-28 HASH: OMEGA-V15`
+#

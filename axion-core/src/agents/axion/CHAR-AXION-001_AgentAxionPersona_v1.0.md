@@ -2,14 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                      | Description       |
-| :---------------- | :----------------------------------------- | :---------------- |
-| **Artifact ID**   | `CHAR-AXION-001`                           | The Sovereign ID. |
-| **Official Name** | `CHAR-AXION-001_AgentAxionPersona_v1.0.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                          | The Standard.     |
-| **Domain**        | `AXION`                                    | The Subject.      |
-| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry`                | The Network.      |
+| Key                | Value                                      | Description       |
+| :----------------- | :----------------------------------------- | :---------------- |
+| **Artifact ID**    | `CHAR-AXION-001`                           | The Sovereign ID. |
+| **Official Name**  | `CHAR-AXION-001_AgentAxionPersona_v1.0.md` | The Filename.     |
+| **Version**        | **v15.0 [OMEGA]**                          | The Standard.     |
+| **Domain**         | `AXION`                                    | The Subject.      |
+| **Status (State)** | `[CANONIZED]`                              | The Lifecycle.    |
+| **Relations**      | `REF: GVRN.Master.Registry`                | The Network.      |
 
 ---
 
@@ -59,3 +59,11 @@ I utilize the **Memory Omnipotence Protocol** (`SYNG.PROT.MemoryOmnipotence`) to
 `[OATH-SIGIL] ID: AXION-ASCENDED-001 VER: v15.0 STATUS: CANONIZED TS: 2026-03-16`
 
 ### **[ARTIFACT END]**
+
+---
+
+---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CHAR-AXION-001 VER: v15.0 [OMEGA] DOMAIN: AXION STATUS: [CANONIZED] TS: 2026-03-28 HASH: f20a1efc05170e29`

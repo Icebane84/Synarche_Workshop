@@ -1,22 +1,45 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
+## **[ARTIFACT START]**
 
-| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `CORE-HEPH-INIT-001`           | The Sovereign ID. |
-| **Official Name** | `__init__.py`                  | The Filename.     |
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE...init..`                | The Sovereign ID. |
+| **Official Name** | `__init__.py`                   | The Filename.     |
 | **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE-HEPH`                    | The Subject.      |
-| **Evolution**     | `Structural Integrity`         | The Alignment.    |
-| **Status (State)**| `[CANONIZED]`                  | The Lifecycle.    |
-| **Celestial Class**| `[SATELLITE]`                 | The Tier.         |
-| **Relations**     | `IDENTITY: High Priestess`    | The Network.      |
-| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-03-07`                   | Creation Date.    |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
-**The Spirit Bomb Axiom: Foundational Integrity (Law 28)**
-> Implemented from Blueprint `GVRN.REG.FoundationIntegrity.md`.
-> Ethos: The Void is Silent; We Fill It with Order.
+---
+
+## **Block B: State Vector (AGP-001)**
+
+| State Field   | Value     |
+| :------------ | :-------- |
+| **Coherence** | `{resonance}`     |
+| **Resonance** | `{resonance}`     |
+| **Stability** | `Stable`  |
+
+---
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Semantic Decay**   | Axiomatic Compass Audit   |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+
+## **[ARTIFACT END]**
 """
 
 from .mentor import DidacticMentor
@@ -28,3 +51,11 @@ __all__ = [
     "DidacticMentor",
     "SoulImpactAnalyzer",
 ]
+
+# ---
+# 
+# ---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE...init.. VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: a49104102a5120e1`

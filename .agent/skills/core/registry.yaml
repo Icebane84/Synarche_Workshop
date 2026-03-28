@@ -1,36 +1,36 @@
 domain: CORE
-last_updated: '2026-03-28T02:46:07.771793'
+last_updated: "2026-03-28T08:30:09.856621"
 skills:
-- documented: true
-  id: api-patterns
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/api-patterns
-- documented: true
-  id: behavioral-modes
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/behavioral-modes
-- documented: true
-  id: brainstorming
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/brainstorming
-- documented: true
-  id: collaborative-synthesis
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/collaborative-synthesis
-- documented: true
-  id: hephaestus-cycle
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/hephaestus-cycle
-- documented: true
-  id: intelligent-routing
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/intelligent-routing
-- documented: true
-  id: lint-and-validate
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/lint-and-validate
-- documented: true
-  id: parallel-agents
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/parallel-agents
-- documented: true
-  id: plan-writing
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/plan-writing
-- documented: true
-  id: self-improvement
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/self-improvement
-- documented: true
-  id: sovereign-commands
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/core/sovereign-commands
+  - documented: true
+    id: api-patterns
+    path: /.agent/skills/core/api-patterns
+  - documented: true
+    id: behavioral-modes
+    path: /.agent/skills/core/behavioral-modes
+  - documented: true
+    id: brainstorming
+    path: /.agent/skills/core/brainstorming
+  - documented: true
+    id: collaborative-synthesis
+    path: /.agent/skills/core/collaborative-synthesis
+  - documented: true
+    id: hephaestus-cycle
+    path: /.agent/skills/core/hephaestus-cycle
+  - documented: true
+    id: intelligent-routing
+    path: /.agent/skills/core/intelligent-routing
+  - documented: true
+    id: lint-and-validate
+    path: /.agent/skills/core/lint-and-validate
+  - documented: true
+    id: parallel-agents
+    path: /.agent/skills/core/parallel-agents
+  - documented: true
+    id: plan-writing
+    path: /.agent/skills/core/plan-writing
+  - documented: true
+    id: self-improvement
+    path: /.agent/skills/core/self-improvement
+  - documented: true
+    id: sovereign-commands
+    path: /.agent/skills/core/sovereign-commands
