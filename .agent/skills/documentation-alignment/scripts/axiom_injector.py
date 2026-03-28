@@ -44,9 +44,10 @@
 ---
 """
 
-import logging
 import argparse
+import logging
 from pathlib import Path
+
 from governance_utils import ShadowLogger, apply_alignment  # Reusing alignment logic
 
 

@@ -4,16 +4,16 @@ VERSION: v15.0 [OMEGA]
 DOMAIN: CORE.LOGIC.MEMORY
 """
 
-import sys
-import os
 import asyncio
+import os
+import sys
 from pathlib import Path
+
+from logic.memory.memory_system import MemorySystem
 
 # Anchor to axion-core
 ROOT_DIR = Path(__file__).parent
 sys.path.append(str(ROOT_DIR / "src"))
-
-from logic.memory.memory_system import MemorySystem
 
 
 async def crystallize():

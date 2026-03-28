@@ -3,7 +3,6 @@
  * Official Name: ContextWeave Algorithm
  * Type: Algorithm
  * Semantic Tags: Search, Logic, Backend
- *
  * Core Purpose:
  * The core associative engine that actively processes information to form weighted, bidirectional links between memories.
  */

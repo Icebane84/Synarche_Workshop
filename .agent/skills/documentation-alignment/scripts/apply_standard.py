@@ -47,16 +47,17 @@
 import argparse
 import os
 import shutil
-from pathlib import Path
 from datetime import date
+from pathlib import Path
+
 from governance_utils import (
-    ShadowLogger,
     UIP_V15_MD_TEMPLATE,
     UIP_V15_PY_TEMPLATE,
-    get_artifact_id,
-    strip_legacy_headers,
-    is_v15_compliant,
+    ShadowLogger,
     generate_omni_anchor,
+    get_artifact_id,
+    is_v15_compliant,
+    strip_legacy_headers,
 )
 
 

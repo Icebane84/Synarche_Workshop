@@ -3,8 +3,8 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.standardize.docs`                | The Sovereign ID. |
-| **Official Name** | `standardize_docs.py`                   | The Filename.     |
+| **Artifact ID**   | `GVRN.analyze.docs.compliance`                | The Sovereign ID. |
+| **Official Name** | `analyze_docs_compliance.py`                   | The Filename.     |
 | **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
 | **Domain**        | `GVRN`                     | The Subject.      |
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
@@ -46,61 +46,52 @@
 
 import argparse
 import os
+import sys
 from pathlib import Path
+
 from governance_utils import ShadowLogger, is_v15_compliant
 
 
-def standardize_docs(directory: str):
-    """Scan directory and report compliance with OMEGA v15.0."""
-    shadow = ShadowLogger("Standardize")
-    root = Path(directory).resolve()
-    print(f"\n>>> STANDARDIZE DOCS (v15.0): {root}\n")
+def analyze_docs(target_dir: str):
+    """Deep audit for OMEGA v15.0 compliance."""
+    shadow = ShadowLogger("Audit")
+    root = Path(target_dir).resolve()
+    print(f"\n>>> OMEGA v15.0 COMPLIANCE AUDIT: {root}\n")
 
+    files = list(root.glob("**/*.md")) + list(root.glob("**/*.py"))
     total = 0
     compliant = 0
-    violations = []
 
-    files = list(root.rglob("*.md")) + list(root.rglob("*.py"))
+    print("-" * 80)
+    print(f"  {'FILENAME':<50} | {'STATUS':<15}")
+    print("-" * 80)
 
     for f in files:
-        if any(
-            skip in str(f)
-            for skip in [".git", "node_modules", ".venv", "__pycache__", ".v13bak"]
-        ):
+        if ".git" in str(f) or "__pycache__" in str(f) or ".venv" in str(f):
             continue
 
         total += 1
-        content = f.read_text(encoding="utf-8")
-        if is_v15_compliant(content):
-            compliant += 1
-        else:
-            violations.append(f.name)
-            shadow.log_dissonance(str(f), "Non-compliant with OMEGA v15.0 structure")
+        try:
+            content = f.read_text(encoding="utf-8")
+            if is_v15_compliant(content):
+                compliant += 1
+                print(f"  {f.name:<50} | [OK]")
+            else:
+                shadow.log_dissonance(str(f), "Missing Block A or UIP-V15 compliance")
+                print(f"  {f.name:<50} | [FAIL]")
+        except Exception as e:
+            print(f"  {f.name:<50} | [ERROR: {e}]")
 
-    print("=" * 70)
-    print("  OMEGA v15.0 COMPLIANCE REPORT".center(70))
-    print("=" * 70)
-    print(f"  Files Scanned:   {total}")
-    print(f"  Fully Resonant:  {compliant}")
-    print(f"  Dissonant:       {len(violations)}")
     rate = (compliant / total * 100) if total > 0 else 100.0
-    print(f"  Resonance Rate:  {rate:.1f}%")
-    print("-" * 70)
-
-    for v in violations[:20]:
-        print(f"  [!] DISSONANCE DETECTED: {v}")
-
-    if len(violations) > 20:
-        print(f"  ... and {len(violations) - 20} more.")
-
-    summary = f"Audit complete. Resonance: {rate:.1f}%"
+    summary = f"Scanned {total} files. {compliant} compliant ({rate:.1f}%)."
+    print(f"\n>>> {summary}")
     shadow.finalize(summary)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Standardize Docs - OMEGA v15.0 Checker"
+        description="Analyze Docs Compliance - OMEGA v15.0"
     )
-    parser.add_argument("target", help="Directory to scan")
+    parser.add_argument("target", help="Directory to audit")
     args = parser.parse_args()
-    standardize_docs(args.target)
+    analyze_docs(args.target)
