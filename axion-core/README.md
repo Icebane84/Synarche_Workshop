@@ -14,7 +14,7 @@
 
 ---
 
-#### **[ARTIFACT START]**
+### **[ARTIFACT START]**
 
 This is the **Active Execution Layer** of the Master Artificer (Axion).
 
@@ -35,7 +35,7 @@ This is the **Active Execution Layer** of the Master Artificer (Axion).
 ## ⚙️ Engine Documentation
 
 For a full topological decomposition, refer to:
-[ENGINE.Architecture.Map.md](../.agent/substrate/architecture/ENGINE.Architecture.Map.md)
+[ENGINE.Architecture.Map.md](./.agent/substrate/architecture/ENGINE.Architecture.Map.md)
 
 ---
 
@@ -43,4 +43,4 @@ For a full topological decomposition, refer to:
 
 `[OMNI-ARTIFACT-ANCHOR] ID: SYNG.ENGINE.ROOT VER: v15.0 [OMEGA] TS: 2026-03-24 STATUS: CANONIZED`
 
-#### **[ARTIFACT END]**
+### **[ARTIFACT END]**

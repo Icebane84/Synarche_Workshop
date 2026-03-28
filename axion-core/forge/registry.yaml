@@ -5,7 +5,7 @@
 
 TOOL-GVRN.LOOM.REGISTRY:
   artifact_id: TOOL-GVRN.LOOM.REGISTRY
-  content_hash: 407293026ab33f14bafd98ee0d6fa6f369b101152c7c761c943755d254843182
+  content_hash: 08a513efd924923d835339e66c16caef26cc5cdf6b8b50f92c6e0c5caa02da8d
   domain: FORGE
   official_name: GVRN.Loom.Registry.py
   path: axion-core/forge/GVRN.Loom.Registry.py
@@ -75,6 +75,14 @@ TOOL-EQUIP:
   path: axion-core/forge/equip.py
   status: "[ACTIVE]"
   version: v15.0 [OMEGA]
+TOOL-EVOLUTION_ENGINE:
+  artifact_id: TOOL-EVOLUTION_ENGINE
+  content_hash: 417510f5001fa8715e64e71a5523757a5ba1fcabff775a2b9c5c088a6070e5d0
+  domain: FORGE
+  official_name: evolution_engine.py
+  path: axion-core/forge/evolution_engine.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 TOOL-EXCEPTIONS:
   artifact_id: TOOL-EXCEPTIONS
   content_hash: 3d9b00069f04b1a1f7d5ca9bcd22290a75e42078d416da211858d4c48e278856
@@ -85,7 +93,7 @@ TOOL-EXCEPTIONS:
   version: v15.0 [OMEGA]
 TOOL-FORGE:
   artifact_id: TOOL-FORGE
-  content_hash: 33041dc283c4dee970deb1065a89ddccc939e25574dbc971f44663602dad8f7d
+  content_hash: 4cb50cd5e7a3043b1e281881f5e7168fbe82c4e8bb9d079da547ec01b6da8a2c
   domain: FORGE
   official_name: forge.py
   path: axion-core/forge/forge.py
@@ -125,7 +133,7 @@ TOOL-LINT:
   version: v15.0 [OMEGA]
 TOOL-LOOM:
   artifact_id: TOOL-LOOM
-  content_hash: 78878e2c65dae748110e64f81798ad1462658a98cf2e3b0db73349f5d0cc9a32
+  content_hash: 2d8a767063a451adac8eb9561e82b71c26aadd3b4fdcc41a672e2be7f24eb970
   domain: FORGE
   official_name: loom.py
   path: axion-core/forge/loom.py
@@ -173,7 +181,7 @@ TOOL-OUROBOROS:
   version: v1.0 [OMEGA]
 TOOL-REFORGE:
   artifact_id: TOOL-REFORGE
-  content_hash: 89d37dafb34cf1c40ce66cef7625ec03c5b72c595f2750d975e7c8d0e77b75ad
+  content_hash: 5e05a2445f8544fa345307f293b25e625e4774c0195fe1c0764db38fb593198a
   domain: FORGE
   official_name: reforge.py
   path: axion-core/forge/reforge.py
@@ -203,12 +211,28 @@ CORE-HEPH-SOUL-001:
   path: axion-core/forge/soul.py
   status: "[CANONIZED]"
   version: v15.0 [OMEGA]
+TOOL-SUBSTRATE_FORGE:
+  artifact_id: TOOL-SUBSTRATE_FORGE
+  content_hash: ea98902a91cfd7330c78122e019b2d530ede766c6592e60e6f6d456314dbe1f1
+  domain: FORGE
+  official_name: substrate_forge.py
+  path: axion-core/forge/substrate_forge.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 TOOL-SYNC:
   artifact_id: TOOL-SYNC
   content_hash: 1172cd2a8c0ab2bb09b211e5a98d230752a53ac3de2976a9cb056fac1d98d81d
   domain: FORGE
   official_name: sync.py
   path: axion-core/forge/sync.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+TOOL-TOOL_ROUTER:
+  artifact_id: TOOL-TOOL_ROUTER
+  content_hash: ff8c8a78436a72b61c8ef6e18777b114ffb4afce8e552e9eb4a4e47a96cec72e
+  domain: FORGE
+  official_name: tool_router.py
+  path: axion-core/forge/tool_router.py
   status: "[ACTIVE]"
   version: v15.0 [OMEGA]
 TOOL-TRANSCLUDE_ENGINE:

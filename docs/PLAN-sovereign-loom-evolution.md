@@ -14,12 +14,12 @@ Establish the "Absolute Substrate" for the Synarchy by evolving the Sovereign Lo
 
 ### Phase 1: The Concrete Floor (Integrity & Bootstrap)
 
-#### [MODIFY] [GVRN.Loom.Registry.py](file:///c:/Users/Chris/Synarche_Workspace/axion-core/tools/02_Forge/GVRN.Loom.Registry.py)
+#### [MODIFY] [GVRN.Loom.Registry.py](file:///c:/Users/Chris/Synarche_Workspace/axion-core/forge/GVRN.Loom.Registry.py)
 
 - **Integrity Hashing**: Implement SHA-256 calculation for artifact bodies.
 - **Sync Logic**: Add `last_synced_hash` to `GVRN.Master.Registry.yaml` to detect "Dissonance" (unauthorized external edits).
 
-#### [NEW] [GVRN.Protocol.SystemicBootstrap.md](file:///c:/Users/Chris/Synarche_Workspace/_governance/02_Protocols/GVRN.Protocol.SystemicBootstrap.md)
+#### [NEW] [GVRN.Protocol.SystemicBootstrap.md](file:///c:/Users/Chris/Synarche_Workspace/axion-core/governance/02_Protocols/GVRN.Protocol.SystemicBootstrap.md)
 
 - **Content**: The "Dark Start" guide. Defines the bare-metal requirements (Python/Standard Libs) and orientation steps for any cold-starting agent.
 
@@ -31,15 +31,17 @@ Establish the "Absolute Substrate" for the Synarchy by evolving the Sovereign Lo
 
 - **Transclusion Engine**: Support `## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNC.PLAN.Loom.Evolution` | The Sovereign ID. |
-| **Official Name** | `implementation_plan.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `APPROVED TS` | The Lifecycle.    |
+| Key               | Value                       | Description       |
+| :---------------- | :-------------------------- | :---------------- |
+| **Artifact ID**   | `SYNC.PLAN.Loom.Evolution`  | The Sovereign ID. |
+| **Official Name** | `implementation_plan.md`    | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**           | The Standard.     |
+| **Domain**        | `GVRN`                      | The Subject.      |
+| **Status**        | `APPROVED TS`               | The Lifecycle.    |
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+
 ` placeholders in markdown headers, allowing the Loom to inject standardized metadata automatically.
+
 - **Cognitive Graph**: Auto-parse `REF:` and `LINK:` strings in the `Relations` field to build a dependency map in the registry.
 
 ---

@@ -1,9 +1,11 @@
 category: VALIDATION
-last_updated: '2026-03-28T02:46:07.803178'
+last_updated: "2026-03-28T02:46:07.803178"
 workflows:
-- id: debug
-  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/validation/debug.md
-- id: finalize_artifact
-  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/validation/finalize_artifact.md
-- id: test
-  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/validation/test.md
+  - id: canonize
+    path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/validation/canonize.md
+  - id: debug
+    path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/validation/debug.md
+  - id: finalize_artifact
+    path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/validation/finalize_artifact.md
+  - id: test
+    path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/validation/test.md

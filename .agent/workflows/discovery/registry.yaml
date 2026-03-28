@@ -1,5 +1,9 @@
 category: DISCOVERY
-last_updated: '2026-03-28T02:46:07.800958'
+last_updated: "2026-03-28T02:46:07.800958"
 workflows:
-- id: brainstorm
-  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/discovery/brainstorm.md
+  - id: brainstorm
+    path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/discovery/brainstorm.md
+  - id: plan
+    path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/discovery/plan.md
+  - id: status
+    path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/discovery/status.md
