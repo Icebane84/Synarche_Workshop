@@ -1,23 +1,36 @@
 import hashlib
+import os
 import re
 import sys
 from pathlib import Path
 
 import yaml
-from governance_utils import ShadowLogger, generate_omni_anchor, is_v15_compliant
+
+# Absolute Path Calibration: Resolve .agent directory relative to this script
+# canonize_ritual.py is in .agent/skills/canonization/scripts/
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Traversal: scripts -> canonization -> skills -> .agent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(SCRIPT_DIR)))
+# Sync Root: parent of .agent
+SYNC_ROOT = os.path.dirname(BASE_DIR)
 
 # Adjust path to include the skill directory where governance_utils lives
-UTILS_PATH = Path(
-    "c:/Users/Chris/Synarche_Workspace/.agent/skills/documentation-alignment/governance_utils.py"
+UTILS_PATH = (
+    Path(BASE_DIR) / "skills/documentation-alignment/scripts/governance_utils.py"
 )
-sys.path.append(str(UTILS_PATH))
+sys.path.append(str(UTILS_PATH.parent))
 
+from governance_utils import ShadowLogger, generate_omni_anchor, is_v15_compliant
 
-REGISTRY_PATH = Path(
-    "c:/Users/Chris/Synarche_Workspace/_governance/01_Registries/GVRN.Master.Registry.yaml"
-)
+REGISTRY_PATH = Path(SYNC_ROOT) / "_governance/01_Registries/GVRN.Master.Registry.yaml"
 
 CANONIZED_STATUS = "[CANONIZED]"
+
+
+def normalize_path(abs_path):
+    """Converts an absolute path to a root-relative modular path."""
+    rel = os.path.relpath(abs_path, SYNC_ROOT).replace("\\", "/")
+    return f"/{rel}" if not rel.startswith("/") else rel
 
 
 def calculate_sha256(filepath):
@@ -85,9 +98,7 @@ def update_registry_status(
             "artifact_id": artifact_id,
             "domain": domain,
             "official_name": target_path.name,
-            "path": str(
-                target_path.relative_to("c:/Users/Chris/Synarche_Workspace")
-            ).replace("\\", "/"),
+            "path": normalize_path(target_path),
             "version": version,
         }
 
@@ -213,13 +224,35 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Execute the Synarche Canonization Ritual."
     )
+    parser.add_argument("--target", help="Path to the artifact to canonize.")
     parser.add_argument(
-        "--target", required=True, help="Path to the artifact to canonize."
+        "--directory", help="Path to a directory of artifacts to mass-canonize."
     )
     parser.add_argument(
         "--dry-run", action="store_true", help="Perform validation without writing."
     )
     args = parser.parse_args()
 
-    success = canonize_artifact(args.target, args.dry_run)
-    sys.exit(0 if success else 1)
+    if args.directory:
+        dir_path = Path(args.directory).absolute()
+        if not dir_path.exists() or not dir_path.is_dir():
+            print(f"[!] Error: Directory {dir_path} does not exist.")
+            sys.exit(1)
+
+        success_count = 0
+        total_count = 0
+        for p in dir_path.glob("**/*"):
+            if p.suffix in [".py", ".md"]:
+                total_count += 1
+                if canonize_artifact(p, args.dry_run):
+                    success_count += 1
+        print(
+            f"\n[ Ritual ] Mass Canonization Complete: {success_count}/{total_count} files."
+        )
+        sys.exit(0 if success_count == total_count else 1)
+    elif args.target:
+        success = canonize_artifact(args.target, args.dry_run)
+        sys.exit(0 if success else 1)
+    else:
+        print("[!] Error: Either --target or --directory must be specified.")
+        sys.exit(1)

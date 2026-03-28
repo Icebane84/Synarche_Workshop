@@ -14,9 +14,17 @@ Purpose: Auto-scan and index skills and workflows into registries.
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # Traversal: bin -> substrate -> .agent
 BASE_DIR = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+# Sync Root: parent of .agent
+SYNC_ROOT = os.path.dirname(BASE_DIR)
 
 # Sovereign Constants
 OMNI_IGNORE = "README.md"
+
+
+def normalize_path(abs_path):
+    """Converts an absolute path to a root-relative modular path."""
+    rel = os.path.relpath(abs_path, SYNC_ROOT).replace("\\", "/")
+    return f"/{rel}" if not rel.startswith("/") else rel
 
 
 def scan_skills():
@@ -43,7 +51,7 @@ def scan_skills():
                 registry["skills"].append(
                     {
                         "id": skill_dir,
-                        "path": skill_path.replace("\\", "/"),
+                        "path": normalize_path(skill_path),
                         "documented": has_doc,
                     }
                 )
@@ -74,7 +82,7 @@ def scan_workflows():
                 registry["workflows"].append(
                     {
                         "id": wf_file.replace(".md", ""),
-                        "path": os.path.join(category_path, wf_file).replace("\\", "/"),
+                        "path": normalize_path(os.path.join(category_path, wf_file)),
                     }
                 )
 

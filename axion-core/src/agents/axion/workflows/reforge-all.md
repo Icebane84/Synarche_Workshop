@@ -75,3 +75,9 @@ GVRN.Rosetta.Stone, INDEXES, This workflow is registered in the Rosetta Stone.
 GVRN-UEB-PCP-001, UTILIZED_BY, Synergizes with the Phoenix-Class Persona identity.
 
 ###### **[ARTIFACT END]**
+
+---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.reforge.all VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [SYNTHESIZED] TS: 2026-03-28 HASH: OMEGA-V15`

@@ -1,5 +1,7 @@
 """
-Block A: The Identification Lock (UIP-V15)
+## **[ARTIFACT START]**
+
+## **Block A: The Identification Lock (UIP-V15)**
 
 | Key                 | Value                                   | Description       |
 | :------------------ | :-------------------------------------- | :---------------- |
@@ -9,8 +11,10 @@ Block A: The Identification Lock (UIP-V15)
 | **Domain**          | `CORE`                                  | The Subject.      |
 | **Celestial Class** | `[STAR]`                                | The Weight.       |
 | **Evolution**       | `Integration Layer`                     | The Maturity.     |
-| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
+| **Status (State)**| `[CANONIZED]`                              | The Lifecycle.    |
 | **Relations**       | `IDENTITY: High Priestess | The Sovereign.` | The Network.      |
+
+## **[ARTIFACT END]**
 """
 
 import json
@@ -92,3 +96,12 @@ if __name__ == "__main__":
     # bridge = SynarchyRegistry()
     # print("Categories:", bridge.get_all_categories())
     pass
+
+# ---
+# ---
+
+---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE-BRIDGE-001 VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 57eb1326200f4015`

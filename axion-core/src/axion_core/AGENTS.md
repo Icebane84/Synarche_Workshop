@@ -1,7 +1,24 @@
+## **[ARTIFACT START]**
+
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key                | Value                             | Description       |
+| :----------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**    | `CORE.AGENTS`                     | The Sovereign ID. |
+| **Official Name**  | `AGENTS.md`                       | The Filename.     |
+| **Version**        | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**         | `CORE`                            | The Subject.      |
+| **Status (State)** | `[ACTIVE]`                        | The Lifecycle.    |
+| **Relations**      | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 ---
+
+---
+
 description: Instructions building apps with MCP
-globs: *
+globs: \*
 alwaysApply: true
+
 ---
 
 # InsForge SDK Documentation - Overview
@@ -133,3 +150,9 @@ Available languages:
 - Storage: Upload files to buckets, store URLs in database
 - AI operations are OpenAI-compatible
 - **EXTRA IMPORTANT**: Use Tailwind CSS 3.4 (do not upgrade to v4). Lock these dependencies in `package.json`
+
+---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.AGENTS VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [SYNTHESIZED] TS: 2026-03-28 HASH: OMEGA-V15`

@@ -1,12 +1,12 @@
 domain: SECURITY
-last_updated: '2026-03-28T02:46:07.789339'
+last_updated: "2026-03-28T08:30:09.868262"
 skills:
-- documented: false
-  id: auditing
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/security/auditing
-- documented: true
-  id: red-team-tactics
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/security/red-team-tactics
-- documented: true
-  id: vulnerability-scanner
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/security/vulnerability-scanner
+  - documented: false
+    id: auditing
+    path: /.agent/skills/security/auditing
+  - documented: true
+    id: red-team-tactics
+    path: /.agent/skills/security/red-team-tactics
+  - documented: true
+    id: vulnerability-scanner
+    path: /.agent/skills/security/vulnerability-scanner

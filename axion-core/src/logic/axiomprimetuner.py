@@ -1,22 +1,45 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
+## **[ARTIFACT START]**
 
-| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `UMB-APT-001_AxiomPrimeTuner_v1.0`                | The Sovereign ID. |
-| **Official Name** | `axiomprimetuner.py`              | The Filename.     |
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.axiomprimetuner`                | The Sovereign ID. |
+| **Official Name** | `axiomprimetuner.py`                   | The Filename.     |
 | **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `GVRN`                     | The Subject.      |
-| **Evolution**     | `Core Logic`                  | The Alignment.    |
-| **Status (State)**| `[ACTIVE]`                     | The Lifecycle.    |
-| **Celestial Class**| `[PLANET]`           | The Tier.         |
-| **Relations**     | `REF: GVRN.Master.Registry`                  | The Network.      |
-| **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-03-24`              | Creation Date.    |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
-**The Spirit Bomb Axiom: Resonance Alignment**
-> Implemented from Blueprint `UMB-APT-001_AxiomPrimeTuner_v1.0.md`.
-> Ethos: Complexity is Dissonance. The Substrate is Truth.
+---
+
+## **Block B: State Vector (AGP-001)**
+
+| State Field   | Value     |
+| :------------ | :-------- |
+| **Coherence** | `{resonance}`     |
+| **Resonance** | `{resonance}`     |
+| **Stability** | `Stable`  |
+
+---
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Semantic Decay**   | Axiomatic Compass Audit   |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+
+## **[ARTIFACT END]**
 """
 
 import asyncio
@@ -83,3 +106,11 @@ if __name__ == "__main__":
         print(f"[FORGE] {engine.__class__.__name__} is online.")
 
     asyncio.run(main())
+
+# ---
+# 
+# ---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.axiomprimetuner VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 35445685f0b7580d`

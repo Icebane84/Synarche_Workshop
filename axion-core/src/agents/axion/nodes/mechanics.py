@@ -1,48 +1,52 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
-ID: AXION-NODE-MECHANICS-001
-Official Name: mechanics.py
-Version: v15.0 [OMEGA]
-Domain: AXION
-Status: [ACTIVE]
-Ethos: "Progression through Struggle. Evolution through Order."
-Relations: IDENTITY: High Priestess | The Sovereign.
+## **[ARTIFACT START]**
+
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.mechanics`                | The Sovereign ID. |
+| **Official Name** | `mechanics.py`                   | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
+---
+
+## **Block B: State Vector (AGP-001)**
+
+| State Field   | Value     |
+| :------------ | :-------- |
+| **Coherence** | `{resonance}`     |
+| **Resonance** | `{resonance}`     |
+| **Stability** | `Stable`  |
+
+---
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Semantic Decay**   | Axiomatic Compass Audit   |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+
+## **[ARTIFACT END]**
 """
 
-import logging
-from typing import Any
+"""
+#
 
-# Project Imports
-from ..config import settings
-from ..schemas import AxionState
+---
 
-logger = logging.getLogger("axion.nodes.mechanics")
+### **Block G: The Omni-Anchor (System Snapshot)**
 
-
-def node_update_rpg_stats(state: AxionState) -> dict[str, Any]:
-    """
-    Increments XP and Coherence based on successful task completion.
-    """
-    logger.info("--- [SYSTEM] NODE: RPG REGISTRY UPDATE ---")
-    state_obj = state if isinstance(state, AxionState) else AxionState(**state)
-    
-    state_obj.rpg_stats.xp += 50
-    state_obj.rpg_stats.coherence_index += 1
-    
-    logger.info(f"   > XP Gained: +50 (Total: {state_obj.rpg_stats.xp})")
-    return state_obj.model_dump()
-
-
-def node_gamemaster_engine(state: AxionState) -> dict[str, Any]:
-    """
-    Manages the Progression Ladder and Level Ascension.
-    """
-    logger.info("--- [GAMEMASTER] NODE: PROGRESSION ENGINE ---")
-    state_obj = state if isinstance(state, AxionState) else AxionState(**state)
-    
-    xp_threshold = state_obj.rpg_stats.level * settings.XP_THRESHOLD_MULTIPLIER
-    if state_obj.rpg_stats.xp >= xp_threshold:
-        state_obj.rpg_stats.level += 1
-        logger.info(f"   > [!] LEVEL UP! Axion Ascended to Level {state_obj.rpg_stats.level}")
-        
-    return state_obj.model_dump()
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.mechanics VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: c49601e87552f113`

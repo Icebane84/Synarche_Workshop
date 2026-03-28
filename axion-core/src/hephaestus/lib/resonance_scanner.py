@@ -1,20 +1,45 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
+## **[ARTIFACT START]**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `CORE-HEPH-RESO-SCAN-001`     | The Sovereign ID. |
-| **Official Name**   | `resonance_scanner.py`        | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
-| **Domain**          | `CORE-HEPHAESTUS`             | The Subject.      |
-| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
-| **Evolution**       | `Structural Integrity`         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+## **Block A: The Identification Lock (UIP-V15)**
 
-**The Spirit Bomb Axiom: Resonance Geometry (Law 28)**
-> Implemented from Blueprint `GVRN.REG.ResonanceGeometry.md`.
-> Ethos: The Frequency is High; The Alignment is Truth.
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.resonance.scanner`                | The Sovereign ID. |
+| **Official Name** | `resonance_scanner.py`                   | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
+---
+
+## **Block B: State Vector (AGP-001)**
+
+| State Field   | Value     |
+| :------------ | :-------- |
+| **Coherence** | `{resonance}`     |
+| **Resonance** | `{resonance}`     |
+| **Stability** | `Stable`  |
+
+---
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Semantic Decay**   | Axiomatic Compass Audit   |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+
+## **[ARTIFACT END]**
 """
 
 import math
@@ -82,3 +107,11 @@ def calculate_similarity(text1: str, text2: str) -> float:
     denominator = math.sqrt(sum1) * math.sqrt(sum2)
 
     return float(numerator) / denominator if denominator else 0.0
+
+# ---
+# 
+# ---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.resonance.scanner VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: c357324dd52f06fb`

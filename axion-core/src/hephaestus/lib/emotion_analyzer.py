@@ -1,20 +1,45 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
+## **[ARTIFACT START]**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `CORE-HEPH-EMO-ANLZ-001`      | The Sovereign ID. |
-| **Official Name**   | `emotion_analyzer.py`         | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
-| **Domain**          | `CORE-HEPHAESTUS`             | The Subject.      |
-| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
-| **Evolution**       | `Structural Integrity`         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+## **Block A: The Identification Lock (UIP-V15)**
 
-**The Spirit Bomb Axiom: Affective resonance (Law 28)**
-> Implemented from Blueprint `GVRN.REG.AffectiveResonance.md`.
-> Ethos: The Feeling is Seed; The Harmony is Truth.
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.emotion.analyzer`                | The Sovereign ID. |
+| **Official Name** | `emotion_analyzer.py`                   | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
+---
+
+## **Block B: State Vector (AGP-001)**
+
+| State Field   | Value     |
+| :------------ | :-------- |
+| **Coherence** | `{resonance}`     |
+| **Resonance** | `{resonance}`     |
+| **Stability** | `Stable`  |
+
+---
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Semantic Decay**   | Axiomatic Compass Audit   |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+| :---------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+
+## **[ARTIFACT END]**
 """
 
 import logging
@@ -80,3 +105,11 @@ class EmotionAnalyzer:
                     if emotion not in detected_emotions:
                         detected_emotions[emotion] = 0.5
         return detected_emotions
+
+# ---
+# 
+# ---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: CORE.emotion.analyzer VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 7af8e959db234c8c`

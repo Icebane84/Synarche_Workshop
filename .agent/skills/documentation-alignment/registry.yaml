@@ -1,9 +1,12 @@
 domain: DOCUMENTATION-ALIGNMENT
-last_updated: '2026-03-28T02:46:07.780360'
+last_updated: "2026-03-28T08:30:09.862237"
 skills:
-- documented: false
-  id: .mypy_cache
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/documentation-alignment/.mypy_cache
-- documented: false
-  id: __pycache__
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/documentation-alignment/__pycache__
+  - documented: false
+    id: .mypy_cache
+    path: /.agent/skills/documentation-alignment/.mypy_cache
+  - documented: false
+    id: scripts
+    path: /.agent/skills/documentation-alignment/scripts
+  - documented: false
+    id: __pycache__
+    path: /.agent/skills/documentation-alignment/__pycache__

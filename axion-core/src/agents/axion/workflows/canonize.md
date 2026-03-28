@@ -2,14 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.Prot.Canonize`          | The Sovereign ID. |
-| **Official Name** | `canonize.md`                 | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**             | The Standard.     |
-| **Domain**        | `ARCH`                        | The Subject.      |
-| **Status**        | `[CANONIZED]`                 | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key                | Value                             | Description       |
+| :----------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**    | `ARCH.Prot.Canonize`              | The Sovereign ID. |
+| **Official Name**  | `canonize.md`                     | The Filename.     |
+| **Version**        | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**         | `ARCH`                            | The Subject.      |
+| **Status (State)** | `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**      | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
 
@@ -25,10 +25,10 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                  | Mitigation                 |
-| :-------------------- | :------------------------- |
+| Risk                     | Mitigation                  |
+| :----------------------- | :-------------------------- |
 | **Sovereign Dissonance** | Triple-Seal Ritual Protocol |
-| **Registry Drift**      | Atomic YAML update          |
+| **Registry Drift**       | Atomic YAML update          |
 
 ---
 
@@ -49,6 +49,7 @@ python axion-core/scripts/canonize_ritual.py --target "{{target}}"
 ### **2. The Seven Gates Audit**
 
 The script executes the following validations:
+
 1. **Block Map Scan**: Ensures Blocks A-G are structured.
 2. **Registry Handshake**: Confirms entry in `GVRN.Master.Registry.yaml`.
 3. **Linter Pass**: (Optional) Verifies standard markdown compliance.
@@ -72,6 +73,8 @@ The script executes the following validations:
 
 ---
 
+---
+
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: ARCH.Prot.Canonize VER: v15.0 [OMEGA] DOMAIN: ARCH STATUS: CANONIZED TS: 2026-03-26 HASH: AR-CAN-V15-LV`
+`[OMNI-ARTIFACT-ANCHOR] ID: ARCH.Prot.Canonize VER: v15.0 [OMEGA] DOMAIN: ARCH STATUS: [CANONIZED] TS: 2026-03-28 HASH: 2f0a72316f3928fa`

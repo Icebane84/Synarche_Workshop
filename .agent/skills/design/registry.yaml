@@ -1,21 +1,21 @@
 domain: DESIGN
-last_updated: '2026-03-28T02:46:07.775041'
+last_updated: "2026-03-28T08:30:09.858881"
 skills:
-- documented: true
-  id: frontend-design
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/design/frontend-design
-- documented: true
-  id: geo-fundamentals
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/design/geo-fundamentals
-- documented: true
-  id: mobile-design
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/design/mobile-design
-- documented: true
-  id: seo-fundamentals
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/design/seo-fundamentals
-- documented: true
-  id: tailwind-patterns
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/design/tailwind-patterns
-- documented: true
-  id: web-design-guidelines
-  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/design/web-design-guidelines
+  - documented: true
+    id: frontend-design
+    path: /.agent/skills/design/frontend-design
+  - documented: true
+    id: geo-fundamentals
+    path: /.agent/skills/design/geo-fundamentals
+  - documented: true
+    id: mobile-design
+    path: /.agent/skills/design/mobile-design
+  - documented: true
+    id: seo-fundamentals
+    path: /.agent/skills/design/seo-fundamentals
+  - documented: true
+    id: tailwind-patterns
+    path: /.agent/skills/design/tailwind-patterns
+  - documented: true
+    id: web-design-guidelines
+    path: /.agent/skills/design/web-design-guidelines
