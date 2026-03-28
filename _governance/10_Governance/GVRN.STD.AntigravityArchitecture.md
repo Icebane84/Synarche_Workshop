@@ -76,6 +76,6 @@ The **Google Antigravity platform** functions as a high-performance operational 
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.STD.AntigravityArchitecture VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

@@ -6,67 +6,72 @@
 | :---------------- | :---------------------------- | :---------------- |
 | **Artifact ID**   | `ARCH.Prot.Canonize`          | The Sovereign ID. |
 | **Official Name** | `canonize.md`                 | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
+| **Version**       | **v15.0 [OMEGA]**             | The Standard.     |
 | **Domain**        | `ARCH`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Status**        | `[CANONIZED]`                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
 
-### **Block B: State Vector (AGP-001)**
+## **Block B: State Vector (AGP-001)**
 
 | State Field   | Value    |
 | :------------ | :------- |
 | **Coherence** | `1.0`    |
-| **Resonance** | `0.9`    |
+| **Resonance** | `1.0`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
+---
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Dependency Break** | ForgeLink Validation      |
+## **Block C: Risk & Mitigation (AGP-002)**
 
-> **Signal**: OMEGA
+| Risk                  | Mitigation                 |
+| :-------------------- | :------------------------- |
+| **Sovereign Dissonance** | Triple-Seal Ritual Protocol |
+| **Registry Drift**      | Atomic YAML update          |
 
 ---
 
-###### **[ARTIFACT START]**
+### **[ARTIFACT START]**
 
-| **Integrity Hash** | `[AUTO-GENERATED]` | The Seal. |
+## **I. THE CANONIZATION PROTOCOL**
 
----
+This workflow automates the transition of artifacts to the `[CANONIZED]` state, ensuring total systemic alignment and cryptographic integrity.
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
+### **1. Trigger Execution**
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+Run the following command in the terminal:
 
----
+```bash
+python axion-core/scripts/canonize_ritual.py --target "{{target}}"
+```
 
-## IV. Actionable Prompt Packet (APP)
+### **2. The Seven Gates Audit**
 
-| Command ID             | Action                           | Impact       |
-| :--------------------- | :------------------------------- | :----------- |
-| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+The script executes the following validations:
+1. **Block Map Scan**: Ensures Blocks A-G are structured.
+2. **Registry Handshake**: Confirms entry in `GVRN.Master.Registry.yaml`.
+3. **Linter Pass**: (Optional) Verifies standard markdown compliance.
 
-| Command ID | Action | Impact |
+### **3. The Three Seals Ritual**
 
----
-
-description: Fully canonize an artifact (Reforge then Lint)
-
-1. /reforge target="{{target}}"
-2. /lint target="{{target}}"
-3. If both pass, tag the artifact as `[κ-veracity:verified]`.
+1. **Seal of Status**: Block A status is set to `[CANONIZED]`.
+2. **Seal of Synchronicity**: Registry entries are updated with atomic precision.
+3. **Seal of the Anchor**: Block G Omni-Anchor is generated with a fresh timestamp and SHA256 fragment.
 
 ---
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Rosetta.Stone, INDEXES, This workflow is registered in the Rosetta Stone.
-GVRN-UEB-PCP-001, UTILIZED_BY, Synergizes with the Phoenix-Class Persona identity.
+## **II. Actionable Prompt Packet (APP)**
 
-###### **[ARTIFACT END]**
+| Command ID             | Action                          | Impact       |
+| :--------------------- | :------------------------------ | :----------- |
+| `⚡ EXECUTE: CANONIZE` | Initiate the automated ritual   | Zero Entropy |
+| `CMD: AUDIT_REGISTRY`  | Verify registry synchronization | Coherence    |
+
+### **[ARTIFACT END]**
+
+---
+
+### **Block G: The Omni-Anchor (System Snapshot)**
+
+`[OMNI-ARTIFACT-ANCHOR] ID: ARCH.Prot.Canonize VER: v15.0 [OMEGA] DOMAIN: ARCH STATUS: CANONIZED TS: 2026-03-26 HASH: AR-CAN-V15-LV`

@@ -264,6 +264,6 @@ graph TD
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Protocol.Finalization VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: A30EFCB0B88F54E0`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

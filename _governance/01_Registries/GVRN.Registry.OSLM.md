@@ -125,6 +125,6 @@ The specific adjacency matrix and resonance scores are managed in the decentrali
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Registry.OSLM VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-21 HASH: OSLM-V15-RESONANCE`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

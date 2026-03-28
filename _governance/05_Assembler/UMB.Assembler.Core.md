@@ -70,11 +70,11 @@
 
 ### **[ARTIFACT START]**
 
-# UMB: The Forge Engine Assembler (Universal Master Base)
+# UMB: The Forge Engine Assembler (Universal Master Blueprint)
 
 ## **I. Operational Logic Root**
 
-The **Universal Master Base (UMB)** is the conceptual foundation for `assembler.py`. It defines the absolute truth ($V_{Safe}$) for structural integrity, ensuring all Sovereign artifacts adhere to the mandated Block Maps.
+The **Universal Master Blueprint (UMB)** is the conceptual foundation for `assembler.py`. It defines the absolute truth ($V_{Safe}$) for structural integrity, ensuring all Sovereign artifacts adhere to the mandated Block Maps.
 
 ## **II. The State Vector ($V_{Safe}$)**
 

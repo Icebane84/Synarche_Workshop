@@ -1,15 +1,15 @@
-# GVRN.Canonizer.Index: The Seal of the Phoenix
+# **📂 GVRN.Canonizer.Index: The Forge's Register**
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                     | Description       |
-| :---------------- | :------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.Canonizer.Index`    | The Sovereign ID. |
-| **Official Name** | `GVRN.Canonizer.Index.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**         | The Standard.     |
-| **Domain**        | `GVRN`                    | The Subject.      |
-| **Status**        | `[CANONIZED]`             | The Lifecycle.    |
-| **Relations**     | `INDEX_OF: 07_Canonizer`  | The Network.      |
+| Key               | Value                     | Description                                         |
+| :---------------- | :------------------------ | :-------------------------------------------------- |
+| **Artifact ID**   | `GVRN.Canonizer.Index`    | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
+| **Official Name** | `GVRN.Canonizer.Index.md` | **The Filename.**                                   |
+| **Version**       | **v15.0 [OMEGA]**         | **The Standard.** (OMEGA v15.0 compliant)           |
+| **Domain**        | `GVRN`                    | **The Subject.**                                    |
+| **Status**        | `[CANONIZED]`             | **The Lifecycle.**                                  |
+| **Relations**     | `INDEX_OF: 07_Canonizer`  | **The Network.**                                    |
 
 ---
 
@@ -25,10 +25,10 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                                        |
-| :------------------- | :------------------------------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement via `CMD: AUDIT`.       |
-| **Dependency Break** | ForgeLink Validation of all `[[Internal_Links]]`. |
+| Risk               | Mitigation                                        |
+| :----------------- | :------------------------------------------------ |
+| **Registry Drift** | Verification of entry-state before Forge trigger. |
+| **Identity Fade**  | Redundant HASH validation in Block G.             |
 
 ---
 
@@ -39,12 +39,14 @@
 | `CORE.Codex.Phoenix`      | `GOVERNS`         | Provides the supreme law and ethical framework. |
 | `GVRN.Registry.Master`    | `INDEXES`         | Tracks the state and presence of this artifact. |
 | `GVRN.Canonizer.Protocol` | `DEFINES`         | Provides the technical sealing protocol.        |
+| `GVRN.Finalization.Index` | `SYNERGIZES_WITH` | Logic-to-truth transition gate.                 |
+| `GVRN.Registry.Master`    | `INDEXES`         | Real-time state of the Canonizer Forge.         |
 
 ---
 
 ## **Block E: Ethos (The Why)**
 
-> **"To preserve absolute truth through the final sealing and canonization of all Synarchic artifacts."**
+> **"To record the transformation of knowledge into law. The Canonizer Index tracks every strike of the Sovereign Forge."**
 
 ---
 
@@ -58,36 +60,36 @@
 
 ### **[ARTIFACT START]**
 
-## **Core Pillars**
+## 1. Domain Overview
 
-1. **The Final Seal**: Applying the terminal validation and permanent registry entry.
-2. **Integrity Preservation**: Ensuring zero-entropy transitions from `[ACTIVE]` to `[CANONIZED]`.
-3. **Cross-Domain Verification**: Harmonizing canonization logic across AOP, ARCH, GUCA, GVRN, and UMB domains.
+The **Canonizer Subsystem** (`07_Canonizer`) executes the final write operations for Sovereign Law. It is the destination for all artifacts proved by the Sentinel plane.
+
+## 2. Artifact Repository
+
+### 2.1 Core Protocols
+
+- [GVRN.Canonizer.Protocol.md](GVRN.Canonizer.Protocol.md): Ritual of sealing and the Triple-Seal audit.
+- [GVRN.Protocol.Canonization.md](GVRN.Protocol.Canonization.md): The underlying canonization protocol.
+
+### 2.2 Specialized Cores (The Alchemist's Furnace)
+
+- [GVRN.Canonizer.Core.md](GVRN.Canonizer.Core.md): Governance Core.
+- [AOP.Canonizer.Core.md](AOP.Canonizer.Core.md): Actionable Object Core.
+- [ARCH.Canonizer.Core.md](ARCH.Canonizer.Core.md): Architecture Core.
+- [GUCA.Canonizer.Core.md](GUCA.Canonizer.Core.md): Global Universal Compliance Core.
+- [UMB.Canonizer.Core.md](UMB.Canonizer.Core.md): Umbral Core.
+
+### 2.3 Tools & Validation
+
+- `soul_forge_verify.py`: AST validation tool for Forge strikes.
 
 ---
 
-## **I. Subsystem Map**
+### **Actionable Prompt Packet (APP)**
 
-### 📐 **Foundational Nodes**
-
-- **[Canonizer Protocol](GVRN.Canonizer.Protocol.md)**: The Ritual of Sealing.
-
-### ⚙️ **Domain-Specific Cores**
-
-- **[GVRN.Canonizer.Core](GVRN.Canonizer.Core.md)**: Governance canonization boundaries.
-- **[UMB.Canonizer.Core](UMB.Canonizer.Core.md)**: Universal Master Base truth sealing.
-- **[ARCH.Canonizer.Core](ARCH.Canonizer.Core.md)**: Architectural blueprint stabilization.
-- **[AOP.Canonizer.Core](AOP.Canonizer.Core.md)**: Operational finality procedures.
-- **[GUCA.Canonizer.Core](GUCA.Canonizer.Core.md)**: Universal command authority for sealing.
-
----
-
-## **II. Actionable Prompt Packet (APP)**
-
-| Command ID             | Action                                            | Impact          |
-| :--------------------- | :------------------------------------------------ | :-------------- |
-| `CMD: CANONIZE_NODE`   | Initiates the final sealing of a governance node. | Truth Alignment |
-| `CMD: INTEGRITY_AUDIT` | Verifies the Omni-Anchor and Link integrity.      | Zero Entropy    |
+| Command ID      | Action                                  | Impact    |
+| :-------------- | :-------------------------------------- | :-------- |
+| `CMD: RE-INDEX` | Refreshes the Canonizer artifact links. | Coherence |
 
 ### **[ARTIFACT END]**
 
@@ -95,4 +97,4 @@
 
 ## **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Canonizer.Index VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: CANON-IND-V15`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Canonizer.Index VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-25 HASH: CAN-INDEX-SYNC-V15`

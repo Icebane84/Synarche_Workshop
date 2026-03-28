@@ -50,9 +50,3 @@ The Sentinel operates the **PTAS Protocol**, the mandatory gatekeeper for all da
 - **ANCHORED_BY**: [GVRN.Codex.EternalLaw.md](GVRN.Codex.EternalLaw.md)
 
 ---
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.SOUL.SENTINEL VER: v15.0 [OMEGA] TS: 2026-03-24 STATUS: CANONIZED`
-
-#### **[ARTIFACT END]**

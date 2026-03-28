@@ -45,14 +45,14 @@
 """
 
 import argparse
-import os
-from pathlib import Path
 from datetime import date
+from pathlib import Path
+
 from governance_utils import (
     UIP_V15_MD_TEMPLATE,
     UIP_V15_PY_TEMPLATE,
-    get_artifact_id,
     generate_omni_anchor,
+    get_artifact_id,
 )
 
 MD_SCAFFOLD = """\

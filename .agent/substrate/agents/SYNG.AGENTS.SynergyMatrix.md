@@ -2,8 +2,8 @@
 
 | Key               | Value                           | Description       |
 | :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `SYNG.AGENTS.SynergyMatrix`     | The Sovereign ID. |
-| **Official Name** | `SYNG.AGENTS.SynergyMatrix.md`  | The Filename.     |
+| **Artifact ID**   | `SYNG.Agents.SynergyMatrix`     | The Sovereign ID. |
+| **Official Name** | `SYNG.Agents.SynergyMatrix.md`  | The Filename.     |
 | **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
 | **Domain**        | `SYNG`                          | The Subject.      |
 | **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
@@ -56,4 +56,4 @@ Every Shard carries a signature derived from its Triad parent.
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ANCHOR] ID: SYNG.AGENTS.SynergyMatrix VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-17`
+`[OMNI-ANCHOR] ID: SYNG.Agents.SynergyMatrix VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-17`

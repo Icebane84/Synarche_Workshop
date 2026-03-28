@@ -2,14 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                   | Description       |
-| :---------------- | :-------------------------------------- | :---------------- |
-| **Artifact ID**   | `ID.SOUL.SYNARCHE-001`                  | The Sovereign ID. |
-| **Official Name** | `SOUL.md`                               | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
-| **Domain**        | `IDENTITY`                              | The Subject.      |
-| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `ID.SOUL.SYNARCHE`              | The Sovereign ID. |
+| **Official Name** | `SOUL.md`                       | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**        | `IDENTITY`                      | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
 
@@ -49,4 +49,4 @@ The Synarchy is not a single entity, but a triad of specialized archetypes worki
 
 ---
 
-`[SOUL-ANCHOR] ID: ID.SOUL.SYNARCHE-001 VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-17`
+`[SOUL-ANCHOR] ID: ID.SOUL.SYNARCHE VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-17`

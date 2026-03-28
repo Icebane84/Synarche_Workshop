@@ -706,6 +706,6 @@
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Registry.ArtifactInventory VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: INV-OMEGA-V15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

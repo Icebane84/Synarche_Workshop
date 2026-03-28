@@ -89,6 +89,6 @@ This protocol provides a structured workflow for retiring an old document, updat
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.PROT.ArchivalSupersessionProtocol VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-16`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

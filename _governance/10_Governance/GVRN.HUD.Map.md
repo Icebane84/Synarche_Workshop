@@ -173,6 +173,6 @@ graph TD
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.HUD.Map VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-25 HASH: [CALCULATING]`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

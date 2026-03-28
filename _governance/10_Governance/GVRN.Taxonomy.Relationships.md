@@ -2,14 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                            | Description       |
-| :---------------- | :------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Taxonomy.Relationships`    | The Sovereign ID. |
-| **Official Name** | `GVRN.Taxonomy.Relationships.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                | The Standard.     |
-| **Domain**        | `GVRN`                           | The Subject.      |
-| **Status**        | `[ACTIVE]`                       | The Lifecycle.    |
-| **Relations**     | `DEFINED_BY: GVRN.REG.Lexicon`   | The Network.      |
+| Key                | Value                                                           | Description       |
+| :----------------- | :-------------------------------------------------------------- | :---------------- |
+| **Artifact ID**    | `GVRN.Taxonomy.Relationships`                                   | The Sovereign ID. |
+| **Official Name**  | `GVRN.Taxonomy.Relationships.md`                                | The Filename.     |
+| **Version**        | **v15.0 [OMEGA]**                                               | The Standard.     |
+| **Domain**         | `GVRN`                                                          | The Subject.      |
+| **Status (State)**| `[CANONIZED]`                                                   | The Lifecycle.    |
+| **Relations**      | `DEFINED_BY: GVRN.REG.Lexicon, GOVERNED_BY: SYNG.Link.Semantic` | The Network.      |
 
 ---
 
@@ -34,10 +34,13 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
+| Synergistic Artifact ID   | Relationship Type | Synergistic Impact                                  |
+| :------------------------ | :---------------- | :-------------------------------------------------- |
+| `CORE.Codex.Phoenix`      | `GOVERNS`         | Provides the supreme law and ethical framework.     |
+| `GVRN.Registry.Master`    | `INDEXES`         | Tracks the state and presence of this artifact.     |
+| `SYNG.Link.Semantic`      | `GOVERNS`         | Provides the primary taxonomy for relational edges. |
+| `SYNG.Link.Quad`          | `GOVERNS`         | Mandates the structural anatomy of link metadata.   |
+| `SYNG.Link.Bidirectional` | `GOVERNS`         | Enforces the Zero-Entropy Reciprocity Rule.         |
 
 ---
 
@@ -55,7 +58,7 @@
 
 ---
 
-###### **[ARTIFACT START]**
+### **[ARTIFACT START]**
 
 **Genesis Stamp**: 2026-03-10 | **Domain**: GVRN | **State**: [CANONIZED] | **Criticality**: Star
 
@@ -157,10 +160,16 @@ _Defines the high-level cognitive and evolutionary connections._
 | `CMD: REFORGE`     | Execute Structural Transmutation | Canonization |
 | `CMD: AUDIT_LINKS` | Verify Link Integrity            | Zero Entropy |
 
-###### **[ARTIFACT END]**
+### **Synergistic Mappings (Reciprocal Tethers)**
+
+| Source               | Relationship        | Status             |
+| :------------------- | :------------------ | :----------------- |
+| `SYNG.Link.Semantic` | `RECIPROCAL_TETHER` | `ACTIVE_INJECTION` |
+
+### **[ARTIFACT END]**
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
+### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Taxonomy.Relationships VER: v15.0 [STAR] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: TAX-OMEGA-V15`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Taxonomy.Relationships VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: [CANONIZED] TS: 2026-03-28 HASH: c0d919541f1292f2`

@@ -128,6 +128,6 @@ the system's capacity.
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: UMB.Forge.Core VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: 5D36692C46CBEED6`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

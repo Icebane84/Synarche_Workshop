@@ -170,6 +170,6 @@ A single-line Omni-Anchor for quick validation and hashing.
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Protocol.Scaffolding VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: 36D5385C345C081C`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

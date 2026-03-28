@@ -45,6 +45,7 @@ The **Learning Subsystem (GVRN.Learning)** is the formal governance layer for se
 
 - [GVRN.Learning.Evolution.md](GVRN.Learning.Evolution.md): The Historical Macro-Milestones.
 - 🧩 **[Shard](GVRN.Learning.Shard.md)**: Session Learnings (Atomic insights).
+- 📜 **[Archive & Evolve](GVRN.LEARN.ArchiveAndEvolve.md)**: The Cartographer's Lesson (Law 5.14).
 - [GVRN.Learning.Gem.md](GVRN.Learning.Gem.md): The High-Impact Preference Ledger.
 - ⚠️ **[Error](GVRN.Learning.Error.md)**: Log of logical dissonance and operational failures.
 - [GVRN.CSL.DocumentationEvolution.md](GVRN.CSL.DocumentationEvolution.md): Breakthrough Log (Archivist's Loom).

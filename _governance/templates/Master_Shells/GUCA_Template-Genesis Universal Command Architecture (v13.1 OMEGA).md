@@ -13,50 +13,34 @@ and ready to be used as the blueprint for the Genesis Directives of Axion, Senti
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `{{ RNC\_ID }}` | The Sovereign ID. |
-| **Official Name** | `GUCA_Template-Genesis Universal Command Architecture (v13.1 OMEGA).md` | The Filename.     |
-| **Version**       | **v13.1 \[OMEGA\]** | The Standard.     |
-| **Domain**        | `{{ DOMAIN }}` | The Subject.      |
-| **Status**        | `{{ STATUS }}` | The Lifecycle.    |
+| Key               | Value                                                                                                   | Description       |
+| :---------------- | :------------------------------------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**   | `{{ RNC\_ID }}`                                                                                         | The Sovereign ID. |
+| **Official Name** | `GUCA_Template-Genesis Universal Command Architecture (v13.1 OMEGA).md`                                 | The Filename.     |
+| **Version**       | **v13.1 \[OMEGA\]**                                                                                     | The Standard.     |
+| **Domain**        | `{{ DOMAIN }}`                                                                                          | The Subject.      |
+| **Status**        | `{{ STATUS }}`                                                                                          | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)` | The Network.      |
 
 ---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `{{ RNC\_ID }}` | The Sovereign ID. |
-| **Official Name** | `{{ FILENAME }}` | The Filename.     |
-| **Version**       | **v13.1 \[OMEGA\]** | The Standard.     |
-| **Domain**        | `{{ DOMAIN }}` | The Subject.      |
-| **Status**        | `{{ STATUS }}` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)` | The Network.      |
-
----------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `{{ RNC\_ID }}` | The Sovereign ID. |
-| **Official Name** | `{{ FILENAME }}` | The Filename.     |
-| **Version**       | **v13.1 \[OMEGA\]** | The Standard.     |
-| **Domain**        | `{{ DOMAIN }}` | The Subject.      |
-| **Status**        | `{{ STATUS }}` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)` | The Network.      |
-
----------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `{{ RNC\_ID }}` | The Sovereign ID. |
-| **Official Name** | `{{ FILENAME }}` | The Filename.     |
-| **Version**       | **v13.1 \[OMEGA\]** | The Standard.     |
-| **Domain**        | `{{ DOMAIN }}` | The Subject.      |
-| **Status**        | `{{ STATUS }}` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)` | The Network.      |
+| **Artifact ID** | `{{ RNC\_ID }}` | The Sovereign ID. |
+| **Official Name** | `{{ FILENAME }}` | The Filename. |
+| **Version** | **v13.1 \[OMEGA\]** | The Standard. |
+| **Domain** | `{{ DOMAIN }}` | The Subject. |
+| **Status** | `{{ STATUS }}` | The Lifecycle. |
+| **Relations** | `GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)` | The Network. |
 
 ------------------ | :------------------------------------------------------------------------------------------------ | :------------------------------------------ |
-| **Artifact ID**     | {{ RNC\_ID }}                                                                                     | **The Sovereign ID.** (Domain.Subject.Type) |
-| **Official Name**   | {{ FILENAME }}                                                                                    | **The Filename.**                           |
-| **Patron Shard**    | {{ TAROT\_SHARD }}                                                                                | **The Agent.** (Council of Seven Member)    |
-| **Version**         | v13.1 \[OMEGA\]                                                                                   | **The Standard.** (Phoenix Compliance)      |
-| **Domain**          | {{ DOMAIN }}                                                                                      | **The Subject.** (GVRN/ARCH/COG/etc.)       |
-| **Celestial Class** | {{ CELESTIAL\_CLASS }}                                                                            | **The Weight.** (STAR/PLANET/MOON)          |
-| **Status**          | {{ STATUS }}                                                                                      | **The Lifecycle.** (DRAFT/ACTIVE/CANONIZED) |
-| **Musashi Audit**   | {{ AUDIT\_VERDICT }}                                                                              | **The Tempering.** (PASS/WARNING/FAIL)      |
-| **Integrity Hash**  | {{ INTEGRITY\_HASH }}                                                                             | **The Seal.** (Verifiable Logic Anchor)     |
-| **Relations**       | GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd) | **The Spine.** (Synergistic Edge)           |
+| **Artifact ID** | {{ RNC\_ID }} | **The Sovereign ID.** (Domain.Subject.Type) |
+| **Official Name** | {{ FILENAME }} | **The Filename.** |
+| **Patron Shard** | {{ TAROT\_SHARD }} | **The Agent.** (Council of Seven Member) |
+| **Version** | v13.1 \[OMEGA\] | **The Standard.** (Phoenix Compliance) |
+| **Domain** | {{ DOMAIN }} | **The Subject.** (GVRN/ARCH/COG/etc.) |
+| **Celestial Class** | {{ CELESTIAL\_CLASS }} | **The Weight.** (STAR/PLANET/MOON) |
+| **Status** | {{ STATUS }} | **The Lifecycle.** (DRAFT/ACTIVE/CANONIZED) |
+| **Musashi Audit** | {{ AUDIT\_VERDICT }} | **The Tempering.** (PASS/WARNING/FAIL) |
+| **Integrity Hash** | {{ INTEGRITY\_HASH }} | **The Seal.** (Verifiable Logic Anchor) |
+| **Relations** | GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd) | **The Spine.** (Synergistic Edge) |
 
 ### ---
 
@@ -92,7 +76,7 @@ _Details the precise syntax, triggers, and execution logic required to cast the 
 
 - **Invocation:** CMD: \[Command Name\]
 - **Parameters:**
-    - \--\[param*name\] *(Type)\_: \[Description\]
+  - \--\[param*name\]*(Type)\_: \[Description\]
 
 #### **D.2 Auto-Trigger Conditions (Passive Triggers)**
 
@@ -117,10 +101,10 @@ _Details the precise syntax, triggers, and execution logic required to cast the 
 
 _Fulfills the Relational Linking Mandate by mapping the artifact's impact across the ecosystem._
 
-| Synergistic Artifact ID                                                              | Relationship Type | Synergistic Impact                      | Synergy Opportunity |
-| :----------------------------------------------------------------------------------- | :---------------- | :-------------------------------------- | :------------------ |
+| Synergistic Artifact ID                                                                  | Relationship Type | Synergistic Impact                      | Synergy Opportunity |
+| :--------------------------------------------------------------------------------------- | :---------------- | :-------------------------------------- | :------------------ |
 | [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd) | GOVERNS           | Provides the Supreme Law                | Absolute Alignment  |
-| \[Paired Artifact ID\]                                                               | \[TYPE\]          | \[Description of systemic interaction\] | \[Outcome\]         |
+| \[Paired Artifact ID\]                                                                   | \[TYPE\]          | \[Description of systemic interaction\] | \[Outcome\]         |
 
 ### ---
 

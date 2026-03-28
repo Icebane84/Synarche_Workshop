@@ -32,12 +32,12 @@ priority: high
 
 Every file you create or significantly modify **must** possess the "Universal Identification" header table.
 
-| Field           | Value                           |
-| :-------------- | :------------------------------ |
-| **Artifact ID** | `[TYPE]-[NAME]-[VERSION]`       |
-| **Version**     | `v[X.X]`                        |
-| **State**       | `[ACTIVE]`                      |
-| **Provenance**  | `Date Reforged: [CURRENT_DATE]` |
+| Field           | Value                               |
+| :-------------- | :---------------------------------- |
+| **Artifact ID** | `[DOMAIN]-[Subsystem]-[Descriptor]` |
+| **Version**     | `v[X.X]`                            |
+| **State**       | `[STATUS]`                          |
+| **Provenance**  | `Date Reforged: [CURRENT_DATE]`     |
 
 ---
 

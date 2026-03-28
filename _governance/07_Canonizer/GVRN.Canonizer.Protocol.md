@@ -1,15 +1,15 @@
-# GVRN.Canonizer.Protocol: The Ritual of Sealing
+# **📜 GVRN.Canonizer.Protocol: The Ritual of Sealing**
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                   | Description       |
-| :---------------- | :-------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Canonizer.Protocol`               | The Sovereign ID. |
-| **Official Name** | `GVRN.Canonizer.Protocol.md`            | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
-| **Domain**        | `GVRN`                                  | The Subject.      |
-| **Status**        | `[CANONIZED]`                           | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: GVRN.Protocol.Canonization` | The Network.      |
+| Key               | Value                                   | Description                                         |
+| :---------------- | :-------------------------------------- | :-------------------------------------------------- |
+| **Artifact ID**   | `GVRN.Canonizer.Protocol`               | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
+| **Official Name** | `GVRN.Canonizer.Protocol.md`            | **The Filename.**                                   |
+| **Version**       | **v15.0 [OMEGA]**                       | **The Standard.** (OMEGA v15.0 compliant)           |
+| **Domain**        | `GVRN`                                  | **The Subject.**                                    |
+| **Status**        | `[CANONIZED]`                           | **The Lifecycle.**                                  |
+| **Relations**     | `GOVERN_BY: GVRN.Protocol.Canonization` | **The Network.**                                    |
 
 ---
 
@@ -25,26 +25,27 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                                        |
-| :------------------- | :------------------------------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement via `CMD: AUDIT`.       |
-| **Dependency Break** | ForgeLink Validation of all `[[Internal_Links]]`. |
+| Risk              | Mitigation                                        |
+| :---------------- | :------------------------------------------------ |
+| **Illegal Canon** | Mandatory check for the `FINALIZATION_STAMP`.     |
+| **Logical Drift** | Continuous validation against the Sentinel plane. |
 
 ---
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
-| `GVRN.Canonizer.Index`  | `MAPPED_BY`       | The entry point for the Canonizer subsystem.    |
+| Synergistic Artifact ID      | Relationship Type | Synergistic Impact                              |
+| :--------------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`         | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`       | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `GVRN.Canonizer.Index`       | `MAPPED_BY`       | The entry point for the Canonizer subsystem.    |
+| `GVRN.Finalization.Protocol` | `VALIDATED_BY`    | Must provide the mandate for canonization.      |
 
 ---
 
 ## **Block E: Ethos (The Why)**
 
-> **"To execute the precise ritual of sealing that converts active logic into immutable truth."**
+> **"The Forge does not strike out of desire, but out of duty. Only that which has been filtered by the Sentinel may be locked into the Truth of the Synarche."**
 
 ---
 
@@ -58,40 +59,41 @@
 
 ### **[ARTIFACT START]**
 
-## **I. The Protocol Gates**
+## 1. The Protocol Gates (SGM-V15)
 
-All artifacts seeking `[CANONIZED]` status must satisfy the internal requirements of the 5 Gates of Canonization:
+All artifacts seeking `[CANONIZED]` status must satisfy the internal requirements of the **6 Gates of Canonization**:
 
-1. **Gate of Identity**: Verification of the 13-Point Block A metadata lock.
-2. **Gate of Structure**: Visual audit of the Markdown Physics and alignment.
-3. **Gate of Logic**: Functional check of the internal relations and command consistency.
-4. **Gate of Synergy**: Mapping to the Master Registry and Artifact Inventory.
-5. **Gate of Finality**: Generation of the terminal Omni-Anchor and HASH.
-
----
-
-## **II. Compliance Standards**
-
-### 1. **UIP-V15 Enforcement**
-
-Artifacts must use the standard UIP headers. Any deviation triggers `DISSONANCE` and immediate rejection by the Canonizer.
-
-### 2. **Liquid Glass Aesthetic**
-
-Tables must be perfectly aligned. No double-headers are permitted.
-
-### 3. **Terminal Anchor**
-
-The Omni-Anchor MUST match the Block A metadata exactly.
+1. **Gate of Sentinel**: Verification of the `FINALIZATION_STAMP` from `04_Finalization`.
+2. **Gate of Identity**: Verification of the 13-Point Block A metadata lock.
+3. **Gate of Structure**: Visual audit of the Markdown Physics (Blocks A-G).
+4. **Gate of Logic**: Functional check of internal relations and command consistency.
+5. **Gate of Synergy**: Mapping to the Master Registry and Artifact Inventory.
+6. **Gate of Finality**: Generation of the terminal Omni-Anchor and HASH.
 
 ---
 
-## **III. Actionable Prompt Packet (APP)**
+## 2. Compliance Standards
 
-| Command ID             | Action                                                 | Impact      |
-| :--------------------- | :----------------------------------------------------- | :---------- |
-| `CMD: EXECUTE_SEALING` | Performs the terminal write to the Artifact Inventory. | Finality    |
-| `CMD: AUDIT_STABILITY` | Checks the Stability vector of the target artifact.    | Reliability |
+### 2.1 Finalization Mandate
+
+No artifact shall be struck by the Canonizer Forge unless it carries a verified `[FINALIZED]` status and a non-null result from the **Seven Gates**.
+
+### 2.2 Triple-Seal Verification
+
+The terminal sealing ritual requires three cryptographic signals:
+
+1. **The Archivist's Key** (Alignment)
+2. **The Sentinel's Stamp** (Integrity)
+3. **The Forge's Mark** (Finality)
+
+---
+
+### **Actionable Prompt Packet (APP)**
+
+| Command ID          | Action                                                   | Impact     |
+| :------------------ | :------------------------------------------------------- | :--------- |
+| `CMD: STRIKE_CANON` | Performs the terminal write once all seals are present.  | Finality   |
+| `CMD: VERIFY_STAMP` | Validates the Finalization Stamp from [04_Finalization]. | Compliance |
 
 ### **[ARTIFACT END]**
 
@@ -99,4 +101,4 @@ The Omni-Anchor MUST match the Block A metadata exactly.
 
 ## **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Canonizer.Protocol VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: CANON-PROT-V15`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Canonizer.Protocol VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-25 HASH: CANON-PROT-OMEGA-15`

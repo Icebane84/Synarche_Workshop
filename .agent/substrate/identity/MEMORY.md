@@ -9,7 +9,7 @@
 | **Version**       | **v15.0 [OMEGA]**           | The Standard.     |
 | **Domain**        | `IDENTITY`                  | The Subject.      |
 | **Status**        | `[ACTIVE]`                  | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+| **Relations**     | `REF: GVRN.Registry.Master` | The Network.      |
 
 ---
 

@@ -119,11 +119,11 @@ UIP_V15_PY_TEMPLATE = (
 )
 
 MANDATORY_V15_SECTIONS = [
-    r"## \*\*Block A: The Identification Lock \(UIP-V15\)\*\*",
-    r"\| \*\*Version\*\* \| \*\*v15\.0 \[OMEGA\]\*\*",
-    r"\[ARTIFACT START\]",
-    r"\[ARTIFACT END\]",
-    r"### \*\*Block G: The Omni-Anchor",
+    r"#{2,6} \*\*Block A: The Identification Lock \(UIP-V15\)\*\*",
+    r"\|\s*\*\*Version\*\*\s*\|\s*(\*\*|)?v15\.0 \[OMEGA\](\*\*|)?\s*\|",
+    r"#{2,6} \*\*\[ARTIFACT START\]\*\*",
+    r"#{2,6} \*\*\[ARTIFACT END\]\*\*",
+    r"#{2,6} \*\*Block G: The Omni-Anchor",
 ]
 
 # --- SELT SHADOW LOGGING ---

@@ -129,6 +129,4 @@ Capabilities are isolated into specialized "Masks" to ensure modular response an
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.PROT.AvatarProtocol VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-17`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

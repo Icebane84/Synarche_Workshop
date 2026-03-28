@@ -144,6 +144,6 @@ When invoked, the command acts as the physical spark:
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GUCA.Forge.Core VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: 35F260D8AD56A4DF`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

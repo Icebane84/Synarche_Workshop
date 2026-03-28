@@ -131,7 +131,7 @@ mkdir -p .agent/skills/license-header-adder/resources
 
 **`.agent/skills/license-header-adder/resources/HEADER.txt`**:
 
-```
+```text
 /*
  * Copyright (c) 2026 YOUR_COMPANY_NAME LLC.
  * All rights reserved.
