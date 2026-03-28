@@ -4,7 +4,7 @@
 | :---------------- | :------------------------------ | :---------------- |
 | **Artifact ID**   | `SYNG.Loom.Master`              | The Sovereign ID. |
 | **Official Name** | `SYNG.Loom.Master.md`           | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]**               | The Standard.     |
+| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
 | **Domain**        | `GVRN`                          | The Subject.      |
 | **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
@@ -45,11 +45,17 @@
 
 ---
 
-### **Block F: The Integrity Gate (CIV-GATE)**
+{{ TRANSCLUDE: SELT-GATE-CIV-001.md }}
 
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
-| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
+---
+
+{{ TRANSCLUDE: SELT-CSL-NOVA-001.md }}
+
+---
+
+{{ TRANSCLUDE: SELT-SYNERGY-LOOM.md }}
+
+---
 
 ---
 
@@ -132,6 +138,4 @@ The Loom operates in a four-phase cycle, mirroring the `SYNG.PROT.ContextWeave` 
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.Loom.Master VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: 2ED9431CB3A859A1`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

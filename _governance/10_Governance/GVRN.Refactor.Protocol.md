@@ -131,6 +131,6 @@ Geode** topology.
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Refactor.Protocol VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: 2D274153E74869E7`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

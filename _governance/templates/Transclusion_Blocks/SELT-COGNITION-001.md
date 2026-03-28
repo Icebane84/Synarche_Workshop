@@ -1,13 +1,13 @@
-""" ID: SELT-COGNITION-001 Version: v1.0 Domain: ARCH.COG Ethos: "The artifact is aware of its intent." Description:
-Cognitive Block for self-aware Synarchy artifacts. """
+# **Cognitive Block (SELT-COGNITION-001)**
 
----
+> **Domain**: ARCH.COG | **Ethos**: "The artifact is aware of its intent."
+> **Version**: v15.0 [OMEGA]
 
-### Cognitive Metadata
+## Cognitive Metadata
 
-- **Intent Hash**: {intent_hash}
-- **Primary Resonance**: {primary_resonance}
-- **Emotional Signature**: {emotional_signature}
-- **Cognitive Efficiency**: {magician_efficiency}
+- **Intent Hash**: {{ intent_hash if intent_hash else "PENDING_REFLECTION" }}
+- **Primary Resonance**: {{ primary_resonance if primary_resonance else "1.0" }}
+- **Emotional Signature**: {{ emotional_signature if emotional_signature else "NEUTRAL" }}
+- **Cognitive Efficiency**: {{ magician_efficiency if magician_efficiency else "0.0" }}
 
 ---

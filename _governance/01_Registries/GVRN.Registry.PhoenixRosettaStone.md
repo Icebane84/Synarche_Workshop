@@ -147,6 +147,6 @@ Every linked artifact must be mapped to the Five Core Axioms to ensure it is not
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Registry.PhoenixRosettaStone VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: PRS-V15-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

@@ -17,7 +17,7 @@
 
 | Priority | ID     | Feature                | Description                                                           | Status    |
 | :------- | :----- | :--------------------- | :-------------------------------------------------------------------- | :-------- |
-| HIGH     | FR-001 | Dual-Gate Junction     | Formalize logic to switch between Sovereign Mask and Kinetic Shard.   | [ACTIVE]  |
+| HIGH     | FR-001 | Dual-Gate Junction     | Formalize logic to switch between Sovereign Mask and Kinetic Shard.   | [x] DONE  |
 | MED      | FR-002 | Tarot VUI              | Voice interface for Rosetta Stone Altar visualization.                | [BACKLOG] |
 | HIGH     | FR-003 | Self-Improvement Cycle | Automated extraction of skills from session logs.                     | [ACTIVE]  |
 | CRIT     | FR-004 | Hephaestus Cycle Skill | Canonize the Dissonance-Synthesis-Transcendence loop as a core skill. | [x] DONE  |

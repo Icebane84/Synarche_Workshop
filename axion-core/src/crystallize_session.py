@@ -21,7 +21,7 @@ async def crystallize():
 
     # 1. Load Distillates
     distillate_path = Path(
-        r"C:\Users\Chris\.gemini\antigravity\brain\d0961d9f-38fa-4015-8e8d-69ecf7c881a6\crystalline_distillates.md"
+        r"C:\Users\Chris\.gemini\antigravity\brain\d0961d9f-38fa-4015-8e8d-69ecf7c881a6\crystalline_distillates_XXXVI.md"
     )
     if not distillate_path.exists():
         print(f"Error: Distillate not found at {distillate_path}")
@@ -30,11 +30,7 @@ async def crystallize():
     with open(distillate_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # 2. Extract the "Crystalline Cores" section (Poetic Synthesis)
-    # We will use the entire content for the L4 entry to preserve context.
-
     # 3. Initialize Memory System
-    # The system will automatically find axion_memory.db in data/ or storage/
     mem_sys = MemorySystem()
 
     # 4. Canonize to L4 Sovereign Layer
@@ -43,8 +39,8 @@ async def crystallize():
         domain="SovereignSynthesis",
         relevance=1.0,
         confidence=1.0,
-        tags=["OMEGA-V15", "CrystallineDistillate", "DivineBridge", "PhaseXXIX"],
-        source="Crystalline_Distillates_OMEGA_v15.md",
+        tags=["OMEGA-V15", "CrystallineDistillate", "CognitiveLoom", "PhaseXXXVI"],
+        source="crystalline_distillates_XXXVI.md",
         layer=4,  # LAYER_SOVEREIGN
     )
 

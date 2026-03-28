@@ -1,0 +1,64 @@
+GVRN.Finalization.SevenGates:
+  artifact_id: GVRN.Finalization.SevenGates
+  content_hash: 94e9414505694a20113164fe2d5f0cb8b0282d96c2e00cbd378d43346bbcb7ba
+  domain: GVRN
+  official_name: GVRN.Finalization.SevenGates.md
+  path: _governance/04_Finalization/GVRN.Finalization.SevenGates.md
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+GVRN.Finalization.CanonizationRitual:
+  artifact_id: GVRN.Finalization.CanonizationRitual
+  content_hash: c2150c63efd43a6172d8c570970e1d42a8d91cbd4978587df6a2df93ee6915ff
+  domain: GVRN
+  official_name: GVRN.Finalization.CanonizationRitual.md
+  path: _governance/04_Finalization/GVRN.Finalization.CanonizationRitual.md
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+GVRN.Finalization.Protocol:
+  artifact_id: GVRN.Finalization.Protocol
+  content_hash: 5437ca8fd97f202b27d2b40dc3eb7162d02354148e5053cef84d2180d92a85c6
+  domain: GVRN
+  official_name: GVRN.Finalization.Protocol.md
+  path: _governance/04_Finalization/GVRN.Finalization.Protocol.md
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+GVRN.Finalization.Index:
+  artifact_id: GVRN.Finalization.Index
+  content_hash: 7e6520c354bf256a1828789c0f491eb0a6643d710320e76c7449ee6c1b727c24
+  domain: GVRN
+  official_name: GVRN.Finalization.Index.md
+  path: _governance/04_Finalization/GVRN.Finalization.Index.md
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+GVRN.Canonizer.Protocol:
+  artifact_id: GVRN.Canonizer.Protocol
+  content_hash: 1c11a5f3a51fa8ac2d24e36a8a110772dce9515a8c220ac23ed8725152338193
+  domain: GVRN
+  official_name: GVRN.Canonizer.Protocol.md
+  path: _governance/07_Canonizer/GVRN.Canonizer.Protocol.md
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+GVRN.Canonizer.Core:
+  artifact_id: GVRN.Canonizer.Core
+  content_hash: cf659cbfb21d029e39ab38727ce77f117e22b2878f27d23582843bb9b4981cba
+  domain: GVRN
+  official_name: GVRN.Canonizer.Core.md
+  path: _governance/07_Canonizer/GVRN.Canonizer.Core.md
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+GVRN.Canonizer.Index:
+  artifact_id: GVRN.Canonizer.Index
+  content_hash: ea780da64b57dedbb491d899c30b1a6f2e10b540343f8f210705934f21dfdb3d
+  domain: GVRN
+  official_name: GVRN.Canonizer.Index.md
+  path: _governance/07_Canonizer/GVRN.Canonizer.Index.md
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+GVRN.AvatarSuite.Junction:
+  artifact_id: GVRN.AvatarSuite.Junction
+  content_hash: 5c02ae77e7c1ce9e20b42238ed5e7a6b317b89ddf4be7179800ac570d59612ec
+  domain: GVRN
+  official_name: GVRN.AvatarSuite.Junction.md
+  path: _governance/03_AvatarSuite/GVRN.AvatarSuite.Junction.md
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]

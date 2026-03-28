@@ -9,7 +9,7 @@
 | **Version**       | **v15.0 [OMEGA]**                    | The Standard.     |
 | **Domain**        | `GVRN`                               | The Subject.      |
 | **Status**        | `[CANONIZED]`                        | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry`          | The Network.      |
+| **Relations**     | `REF: GVRN.HUD.Map`                  | The Network.      |
 
 ---
 
@@ -19,7 +19,7 @@ This protocol defines the standard methodology for AI agents (the "Artificers") 
 
 ## II. THE REGISTRY-FIRST ARCHITECTURE
 
-The **GVRN.Master.Registry.yaml** is the single source of truth for all 900+ artifacts.
+The **GVRN.Master.Registry.yaml** is the single source of truth for all artifacts.
 
 ### 1. Orientation Loop
 
@@ -29,13 +29,9 @@ Before initiating a `search_files` or recursive `list_dir`, the agent MUST:
 2. Search the registry for relevant `artifact_id` or `path` pointers.
 3. Directly access the target file using the registry-provided path.
 
-### 2. The Identification Lock (Block A)
-
-All artifacts MUST contain a `Block A` metadata table in their header. This table is the "DNA" of the file and is used by the Sovereign Loom for indexing.
-
 ## III. THE SOVEREIGN LOOM (`GVRN.Loom.Registry.py`)
 
-To maintain synchronization, all metadata changes (Status, Version, ID) MUST be funneled through the Loom tool.
+All metadata changes (Status, Version, ID) MUST be funneled through the Loom tool to maintain synchronization.
 
 - **Harvest (`pull`)**: Updates the Registry with local file changes.
 - **Propagate (`push`)**: Pushes Registry-level updates into all associated files.
@@ -47,6 +43,23 @@ To maintain synchronization, all metadata changes (Status, Version, ID) MUST be 
 - **Maintain Zero Entropy**: Always verify metadata resonance after a modification.
 - **Recursive Documentation**: Any major systemic change MUST be reflected in the Registry.
 
+## V. THE ONBOARDING CYCLE (Mandatory)
+
+All agents entering a new session MUST execute the following sequence:
+
+1. **Read High Gate**: Consume `@[GEMINI.md]` to establish sovereign guardrails.
+2. **Verify Topology**: Consult `@[GVRN.HUD.Map.md]` to confirm boundaries.
+3. **Sync Mission**: Read `@[task.md]` to identify the current operational phase.
+4. **Zero Entropy Execution**: Redirect all output to canonical domain folders (NO ROOT LITTER).
+
+## VI. TOPOLOGICAL ANCHORING
+
+Agents MUST anchor their navigational logic in the **HUD Map (`GVRN.HUD.Map.md`)**. Any modification that alters the project's folder structure MUST be preceded by an update to the HUD Map in PLANNING mode.
+
+## VII. EVOLUTIONARY FEEDBACK (AISTF)
+
+Any discovered cognitive dissonance (broken links, misidentified artifacts, or structural orphans) MUST be reported to the **Evolution Engine (`11_Evolution`)**. This information is used by the AISTF loop to trigger self-correcting simulations and protocol upgrades.
+
 ---
 
-`[GATE-ANCHOR] ID: SYNC.PROTO.NAV VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-23`
+`[GATE-ANCHOR] ID: SYNC.PROTO.NAV VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-26`

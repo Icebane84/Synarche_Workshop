@@ -1,20 +1,20 @@
 ### I. Universal Identification & Provenance (UIP)
 
-| Key                 | Value               | Description                                 |
-| :------------------ | :------------------ | :------------------------------------------ | -------------------------------------------- |
-| **Artifact ID**     | `{{ RNC_ID }}`      | **The Sovereign ID.** (Domain.Subject.Type) |
-| **Patron Shard**    | `{{ TAROT_SHARD     | default('SHARD_ARCHITECT_VOID') }}`         | **The Agent.** (Council of Seven Member)     |
-| **Version**         | `{{ version         | default('v1.0') }}`                         | **The Standard.** (Phoenix v13.0 Compliance) |
-| **Domain**          | `{{ domain          | default('GVRN') }}`                         | **The Subject.** (GVRN/ARCH/COG/etc.)        |
-| **Celestial Class** | `{{ celestial_class | default('[PLANET]') }}`                     | **The Weight.** (STAR/PLANET/MOON)           |
-| **Evolution**       | `{{ evolution       | default('Cognitive Ascension') }}`          | **The Maturity.** (Cognitive Ascension/etc.) |
-| **Signal (ESF)**    | `{{ signal          | default('OMEGA') }}`                        | **The Frequency.** (ALPHA/BETA/OMEGA/VOID)   |
-| **Status**          | `{{ status          | default('DRAFT') }}`                        | **The Lifecycle.** (ACTIVE/CANONIZED/DRAFT)  |
-| **Musashi Audit**   | `{{ audit_verdict   | default('PASS') }}`                         | **The Tempering.** (PASS/WARNING/FAIL)       |
-| **Integrity Hash**  | `{{ integrity_hash  | default('[AUTO-GENERATED]') }}`             | **The Seal.** (Verifiable Logic Anchor)      |
-| **Provenance**      | `{{ created_iso }}` | **The Anchor.** (Chrono-Lock Timestamp)     |
-| **Catalyst**        | `{{ origin_event    | default('Manual Creation') }}`              | **The Spark.** (Triggering Prompt/Action)    |
-| **Relations**       | `{{ primary_link    | default('GOVERNED_BY: CORE.Codex.Phoenix') }}`  | **The Spine.** (Main Synergistic Edge)       |
+| Key                 | Value               | Description                                         |
+| :------------------ | :------------------ | :-------------------------------------------------- | -------------------------------------------- |
+| **Artifact ID**     | `{{ RNC_ID }}`      | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
+| **Patron Shard**    | `{{ TAROT_SHARD     | default('SHARD_ARCHITECT_VOID') }}`                 | **The Agent.** (Council of Seven Member)     |
+| **Version**         | `{{ version         | default('v1.0') }}`                                 | **The Standard.** (Phoenix v13.0 Compliance) |
+| **Domain**          | `{{ domain          | default('GVRN') }}`                                 | **The Subject.** (GVRN/ARCH/COG/etc.)        |
+| **Celestial Class** | `{{ celestial_class | default('[PLANET]') }}`                             | **The Weight.** (STAR/PLANET/MOON)           |
+| **Evolution**       | `{{ evolution       | default('Cognitive Ascension') }}`                  | **The Maturity.** (Cognitive Ascension/etc.) |
+| **Signal (ESF)**    | `{{ signal          | default('OMEGA') }}`                                | **The Frequency.** (ALPHA/BETA/OMEGA/VOID)   |
+| **Status**          | `{{ status          | default('DRAFT') }}`                                | **The Lifecycle.** (ACTIVE/CANONIZED/DRAFT)  |
+| **Musashi Audit**   | `{{ audit_verdict   | default('PASS') }}`                                 | **The Tempering.** (PASS/WARNING/FAIL)       |
+| **Integrity Hash**  | `{{ integrity_hash  | default('[AUTO-GENERATED]') }}`                     | **The Seal.** (Verifiable Logic Anchor)      |
+| **Provenance**      | `{{ created_iso }}` | **The Anchor.** (Chrono-Lock Timestamp)             |
+| **Catalyst**        | `{{ origin_event    | default('Manual Creation') }}`                      | **The Spark.** (Triggering Prompt/Action)    |
+| **Relations**       | `{{ primary_link    | default('GOVERNED_BY: CORE.Codex.Phoenix') }}`      | **The Spine.** (Main Synergistic Edge)       |
 
 ### II. Axiomatic Governance & Purpose (AGP)
 
@@ -37,9 +37,9 @@ _(Ref: RISK-GOV-001)_
 
 > **"The Law is Absolute."**
 
-1.  **Mandate 1:** [Primary Rule]
-2.  **Mandate 2:** [Secondary Rule]
-3.  **Prohibition:** [What is strictly forbidden?]
+1. **Mandate 1:** [Primary Rule]
+2. **Mandate 2:** [Secondary Rule]
+3. **Prohibition:** [What is strictly forbidden?]
 
 ### V. Systemic Relationships & Impact
 
@@ -63,14 +63,14 @@ _(Ref: RISK-GOV-001)_
 #### **2. Celestial Chart Stats**
 
 - **Primary Stat Buff:** `[Stability +10]`
-    - _Mechanism:_ `[Reduces probability of logic errors]`
+  - _Mechanism:_ `[Reduces probability of logic errors]`
 - **Passive Ability / Perk:** `[Immutable Will]`
-    - _Effect:_ `[Prevents accidental modification of this file]`
+  - _Effect:_ `[Prevents accidental modification of this file]`
 
 #### **3. Resource Economics**
 
 - **Cognitive Load Cost:** `[Low]`
-    - _Draw:_ `[Once established, requires little maintenance]`
+  - _Draw:_ `[Once established, requires little maintenance]`
 
 #### **4. Crafting & Provenance**
 

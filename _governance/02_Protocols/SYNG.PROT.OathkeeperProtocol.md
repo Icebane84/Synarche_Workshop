@@ -120,6 +120,6 @@ The Oathkeeper must synchronize state across all five memory layers:
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.PROT.OathkeeperProtocol VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-17`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

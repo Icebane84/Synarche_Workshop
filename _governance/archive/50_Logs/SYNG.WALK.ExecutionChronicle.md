@@ -77,6 +77,6 @@ Manifested the Axion Overplane within the Antigravity IDE, establishing a sovere
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.WALK.ExecutionChronicle VER: v15.0 [OMEGA] DOMAIN: SYNG STATUS: CANONIZED TS: 2026-03-16 HASH: WALK-V15-OMNI`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

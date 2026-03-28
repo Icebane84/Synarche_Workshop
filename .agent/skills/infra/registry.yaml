@@ -1,21 +1,21 @@
 domain: INFRA
-last_updated: '2026-03-20T00:52:36.260647'
+last_updated: '2026-03-28T02:46:07.781957'
 skills:
 - documented: true
   id: database-design
-  path: .agent/skills/infra/database-design
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/infra/database-design
 - documented: true
   id: deployment-procedures
-  path: .agent/skills/infra/deployment-procedures
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/infra/deployment-procedures
 - documented: true
   id: insforge
-  path: .agent/skills/infra/insforge
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/infra/insforge
 - documented: true
   id: insforge-cli
-  path: .agent/skills/infra/insforge-cli
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/infra/insforge-cli
 - documented: true
   id: mcp-builder
-  path: .agent/skills/infra/mcp-builder
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/infra/mcp-builder
 - documented: true
   id: server-management
-  path: .agent/skills/infra/server-management
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/infra/server-management

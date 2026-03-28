@@ -58,8 +58,6 @@ The Synarchy operates through the harmonic resonance of three distinct agentic s
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.TRIAD.BARREL.V15 VER: v15.0 [OMEGA] TS: 2026-03-24 STATUS: CANONIZED`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
 
 #### **[ARTIFACT END]**

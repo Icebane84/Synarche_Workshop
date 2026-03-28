@@ -1,4 +1,4 @@
-# UMB-TPL-001_UniversalModuleBlueprint_v10.0.md
+# **📜 GVRN.TPL.001: Universal Module Blueprint (v15.0)**
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -6,12 +6,14 @@
 | :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN.TPL.001`                    | The Sovereign ID. |
 | **Official Name** | `GVRN.TPL.001.md`                 | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                 | The Standard.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
 | **Domain**        | `GVRN`                            | The Subject.      |
 | **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
+
+{{ TRANSCLUDE: SELT-SYNERGY-LOOM.md }}
 
 ### **Block B: State Vector (AGP-001)**
 

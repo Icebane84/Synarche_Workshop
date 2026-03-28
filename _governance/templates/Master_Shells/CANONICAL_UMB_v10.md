@@ -4,21 +4,21 @@
 
 _(Ref: SELT-HEADER-UIP-001)_
 
-| Key                 | Value               | Description                                 |
-| :------------------ | :------------------ | :------------------------------------------ | -------------------------------------------- |
-| **Artifact ID**     | `{{ RNC_ID }}`      | **The Sovereign ID.** (Domain.Subject.Type) |
-| **Patron Shard**    | `{{ TAROT_SHARD     | default('SHARD_ARCHITECT_VOID') }}`         | **The Agent.** (Council of Seven Member)     |
-| **Version**         | `{{ version         | default('v13.0 [ASCENDED]') }}`             | **The Standard.** (Phoenix v13.0 Compliance) |
-| **Domain**          | `{{ domain }}`      | **The Subject.** (GVRN/ARCH/COG/etc.)       |
-| **Celestial Class** | `{{ celestial_class | default('[PLANET]') }}`                     | **The Weight.** (STAR/PLANET/MOON)           |
-| **Evolution**       | `{{ evolution       | default('Cognitive Ascension') }}`          | **The Maturity.** (Cognitive Ascension/etc.) |
-| **Signal (ESF)**    | `{{ signal          | default('OMEGA') }}`                        | **The Frequency.** (ALPHA/BETA/OMEGA/VOID)   |
-| **Status**          | `{{ status          | default('ACTIVE') }}`                       | **The Lifecycle.** (ACTIVE/CANONIZED/DRAFT)  |
-| **Musashi Audit**   | `{{ audit_verdict   | default('PASS') }}`                         | **The Tempering.** (PASS/WARNING/FAIL)       |
-| **Integrity Hash**  | `{{ integrity_hash  | default('[AUTO-GENERATED]') }}`             | **The Seal.** (Verifiable Logic Anchor)      |
-| **Provenance**      | `{{ created_iso }}` | **The Anchor.** (Chrono-Lock Timestamp)     |
-| **Catalyst**        | `{{ origin_event    | default('Manual Creation') }}`              | **The Spark.** (Triggering Prompt/Action)    |
-| **Relations**       | `{{ primary_link    | default('GOVERNED_BY: CORE.Codex.Phoenix') }}`  | **The Spine.** (Main Synergistic Edge)       |
+| Key                 | Value               | Description                                         |
+| :------------------ | :------------------ | :-------------------------------------------------- | -------------------------------------------- |
+| **Artifact ID**     | `{{ RNC_ID }}`      | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
+| **Patron Shard**    | `{{ TAROT_SHARD     | default('SHARD_ARCHITECT_VOID') }}`                 | **The Agent.** (Council of Seven Member)     |
+| **Version**         | `{{ version         | default('v13.0 [ASCENDED]') }}`                     | **The Standard.** (Phoenix v13.0 Compliance) |
+| **Domain**          | `{{ domain }}`      | **The Subject.** (GVRN/ARCH/COG/etc.)               |
+| **Celestial Class** | `{{ celestial_class | default('[PLANET]') }}`                             | **The Weight.** (STAR/PLANET/MOON)           |
+| **Evolution**       | `{{ evolution       | default('Cognitive Ascension') }}`                  | **The Maturity.** (Cognitive Ascension/etc.) |
+| **Signal (ESF)**    | `{{ signal          | default('OMEGA') }}`                                | **The Frequency.** (ALPHA/BETA/OMEGA/VOID)   |
+| **Status**          | `{{ status          | default('ACTIVE') }}`                               | **The Lifecycle.** (ACTIVE/CANONIZED/DRAFT)  |
+| **Musashi Audit**   | `{{ audit_verdict   | default('PASS') }}`                                 | **The Tempering.** (PASS/WARNING/FAIL)       |
+| **Integrity Hash**  | `{{ integrity_hash  | default('[AUTO-GENERATED]') }}`                     | **The Seal.** (Verifiable Logic Anchor)      |
+| **Provenance**      | `{{ created_iso }}` | **The Anchor.** (Chrono-Lock Timestamp)             |
+| **Catalyst**        | `{{ origin_event    | default('Manual Creation') }}`                      | **The Spark.** (Triggering Prompt/Action)    |
+| **Relations**       | `{{ primary_link    | default('GOVERNED_BY: CORE.Codex.Phoenix') }}`      | **The Spine.** (Main Synergistic Edge)       |
 
 ### II. Axiomatic Governance & Purpose (AGP)
 
@@ -72,14 +72,14 @@ _(Ref: SELT-RPG-INT-001)_
 #### 2. Celestial Chart Stats
 
 - **Primary Stat Buff:** `{{ stat_buff | default('[Coherence | Synergy | Adaptability]') }}`
-    - _Mechanism:_ `[How does using this artifact improve the stat?]`
+  - _Mechanism:_ `[How does using this artifact improve the stat?]`
 - **Passive Ability / Perk:** `{{ perk_name | default('[Name of Perk]') }}`
-    - _Effect:_ `[Description of benefit]`
+  - _Effect:_ `[Description of benefit]`
 
 #### 3. Resource Economics
 
 - **Cognitive Load Cost:** `{{ cost | default('[Low | Medium | High | Extreme]') }}`
-    - _Draw:_ `[Description of effort required to execute/maintain this artifact.]`
+  - _Draw:_ `[Description of effort required to execute/maintain this artifact.]`
 
 #### 4. Crafting & Provenance
 

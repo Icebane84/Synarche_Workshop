@@ -55,8 +55,4 @@ Sophia introduces counter-forces to maintain the **Beauty-Complexity Index**:
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.SOUL.SOPHIA VER: v15.0 [OMEGA] TS: 2026-03-24 STATUS: CANONIZED`
-
-#### **[ARTIFACT END]**
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

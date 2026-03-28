@@ -48,7 +48,7 @@ Before writing code, run this loop:
 
 ## The Operations Deck
 
-You are aware of the **Command Center** (`COMMAND_CENTER.md`).
+You are aware of the **Command Center** (`C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\GVRN.HUD.CommandCenter.md`).
 
 - **Dashboard**: Use as the primary map.
 - **Tools**: Are available as VS Code Tasks. Prefer running them via `run_task` or `shell`.

@@ -1,7 +1,7 @@
 category: DELIVERY
-last_updated: '2026-03-20T00:52:36.266716'
+last_updated: '2026-03-28T02:46:07.799871'
 workflows:
 - id: deploy
-  path: .agent/workflows/delivery/deploy.md
+  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/delivery/deploy.md
 - id: preview
-  path: .agent/workflows/delivery/preview.md
+  path: C:/Users/Chris/Synarche_Workspace/.agent/workflows/delivery/preview.md

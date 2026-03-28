@@ -1,13 +1,15 @@
-# **Block E: The Synergy Loom (Relational Dynamics)**
+### **Block {{ block_index|default('E') }}: The Synergy Loom (Relational Dynamics) [v15.0] 🧶**
 
-| Synergistic ID | Relation Type | Impact Description |
-| :------------- | :------------ | :----------------- |
-
-[ARTIFACT START] | **CORE.Codex.Phoenix** | `GOVERNED_BY` | The Codex provides the Supreme Law for this artifact. | |
-**GVRN.REG.Master** | `INDEXED_IN` | This artifact is registered in the Sovereign Master Registry. | |
-`{{ context_id }}` | `{{ relation_type }}` |
-{{ impact_description if impact_description else "Direct contextual alignment verified." }} |
+| Synergistic ID       | Relation Type            | Impact Description                           |
+| :------------------- | :----------------------- | :------------------------------------------- | ---------------------- | --------------------- | --------------------------------------------------- |
+| `CORE.Codex.Phoenix` | `GOVERNED_BY`            | Provides the Supreme Law for this artifact.  |
+| `GVRN.REG.Master`    | `INDEXED_IN`             | Registered in the Sovereign Master Registry. |
+| `{{ context_id       | default('NULL_NODE') }}` | `{{ relation_type                            | default('NEUTRAL') }}` | {{ impact_description | default('Direct contextual alignment verified.') }} |
 
 ---
 
-[ARTIFACT END]
+###### **[ARTIFACT START]**
+
+**[LOOM-SYNERGY-ANCHOR]** **ID:** {{ artifact_id }} **VER:** v15.0 [OMEGA] **RESONANCE:** {{ resonance|default('1.0') }}
+
+###### **[ARTIFACT END]**

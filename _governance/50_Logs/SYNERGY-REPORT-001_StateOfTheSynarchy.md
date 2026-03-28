@@ -86,6 +86,6 @@ future intent, ensuring that every shift in the Synarche is documented with math
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNERGY-REPORT-001_StateOfTheSynarchy VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: 36D10C883FFC36CA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

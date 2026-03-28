@@ -1,21 +1,21 @@
 domain: QA
-last_updated: '2026-03-20T00:52:36.263457'
+last_updated: '2026-03-28T02:46:07.786847'
 skills:
 - documented: true
   id: code-review-checklist
-  path: .agent/skills/qa/code-review-checklist
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/qa/code-review-checklist
 - documented: true
   id: performance-profiling
-  path: .agent/skills/qa/performance-profiling
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/qa/performance-profiling
 - documented: true
   id: systematic-debugging
-  path: .agent/skills/qa/systematic-debugging
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/qa/systematic-debugging
 - documented: true
   id: tdd-workflow
-  path: .agent/skills/qa/tdd-workflow
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/qa/tdd-workflow
 - documented: true
   id: testing-patterns
-  path: .agent/skills/qa/testing-patterns
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/qa/testing-patterns
 - documented: true
   id: webapp-testing
-  path: .agent/skills/qa/webapp-testing
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/qa/webapp-testing

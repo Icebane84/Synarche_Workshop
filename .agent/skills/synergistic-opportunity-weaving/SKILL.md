@@ -7,7 +7,7 @@ description: Operational directive instructing the active Agent to compute the G
 
 ## Objective
 
-Optimize the Synarchic Knowledge Graph by identifying unlinked concepts (Latent Synergies) and broken semantic bridges (Unidirectional Links), explicitly weaving new relationships to maximize the global Graph Synergy Score (GSS).
+Optimize the Synarche Knowledge Graph by identifying unlinked concepts (Latent Synergies) and broken semantic bridges (Unidirectional Links), explicitly weaving new relationships to maximize the global Graph Synergy Score (GSS).
 
 ## Triggers
 

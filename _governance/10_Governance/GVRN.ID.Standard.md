@@ -85,7 +85,7 @@ Identifies the Macro-System / Sovereign Domain.
 | Domain  | Description                                     | Example                 |
 | :------ | :---------------------------------------------- | :---------------------- |
 | `GVRN`  | Governance, Law, Standards, and Ethics          | `GVRN.Audit.Compliance` |
-| `SYNG`  | Synergy Engines, Synthesis, Logic, and Linking  | `SYNG.Loom.Structure`   |
+| `SYNG`  | Synergy Engines, Synthesis, Logic, and Linking  | `SYNG.Link.Semantic`    |
 | `ARCH`  | Infrastructure, Core Blueprints, and Foundation | `ARCH.System.Base`      |
 | `AOP`   | Active Operational Procedures (The Playbooks)   | `AOP.Dev.Harden`        |
 | `UMB`   | Universal Module Blueprints (The Contracts)     | `UMB.PRS.001`           |
@@ -96,7 +96,7 @@ Identifies the Macro-System / Sovereign Domain.
 
 Categorizes the functional area or "Cabinet" the artifact belongs to.
 
-- **Audit**, **Registry**, **Protocol**, **Metric**, **Tool**, **Experience**, **Standard**, **Index**
+- **Audit**, **Registry**, **Protocol**, **Metric**, **Tool**, **Experience**, **Standard**, **Index**, **Link**, **Edge**
 
 ### 3. The Descriptor (The Leaf)
 
@@ -141,6 +141,6 @@ A human-readable semantic keyword that defines the artifact's specific purpose.
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.ID.Standard VER: v15.0 [STAR] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: ID-OMEGA-V15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

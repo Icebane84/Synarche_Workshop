@@ -111,6 +111,6 @@ Execution is constrained by the `security.yaml` policy, which:
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.ARCH.GrandUnifiedArchitecture VER: v15.0 [OMEGA] DOMAIN: ARCH STATUS: CANONIZED TS: 2026-03-17`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

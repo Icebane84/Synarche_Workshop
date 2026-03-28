@@ -23,6 +23,16 @@ All agents MUST query the substrate version for:
 
 ---
 
+## 🛡️ SOVEREIGN GUARDRAILS (Anti-Hallucination)
+
+To prevent structural drift and cognitive dissonance, all agents MUST adhere to:
+
+1. **Registry Primacy**: If an artifact ID is not registered in [GVRN.Master.Registry.yaml](_governance/01_Registries/GVRN.Master.Registry.yaml), it is non-canonical. Search the registry before assuming paths.
+2. **Root Sanitization**: The workspace root MUST remain pristine. No loose items are permitted. Relocate entropy to `_governance/` or `axion-core/` immediately.
+3. **Link Integrity**: Never provide a file link unless you have verified its existence via `list_dir` or `view_file`.
+
+---
+
 ## 🗺️ NAVIGATION
 
 For full cartographic situational awareness, agents should refer to the **HUD Navigation Map**:
@@ -31,4 +41,4 @@ For full cartographic situational awareness, agents should refer to the **HUD Na
 
 ---
 
-`[GATE-ANCHOR] ID: SYNC.RULE.GEMINI-GATE VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-18`
+`[GATE-ANCHOR] ID: SYNC.RULE.GEMINI-GATE VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-26`

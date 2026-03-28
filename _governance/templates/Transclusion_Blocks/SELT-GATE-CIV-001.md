@@ -1,24 +1,22 @@
-[ARTIFACT START]
+### **Block F: The Integrity Gate (CIV-GATE)**
 
-# CONTEXTUAL INTEGRITY: {{ artifact_id }}
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
-## **IV. The Integrity Gate (Sentinel Protocol)**
+---
 
-**Conceptual Integrity Validator (CIV) Status:** `[MONITORING_ACTIVE]` **Sentinel Verdict:** `PASS` **Drift Threshold:**
-`< 0.1`
+**Mandate:** If the **Sentimental Engine** or the **Judgement Shard** detects a variance in **Phoenix-Class Resonance**
+or a violation of **v15.0 [OMEGA]** standards, this artifact state is to be quarantined for **REFORGE** remediation.
 
-**Mandate:** If the **Judgement Shard** detects a variance in **Phoenix-Class Voice** or a violation of **v13.0
-Enumerations**, this artifact's state-vector is to be quarantined immediately for **AOP-REFAC-001** remediation.
+### **1. OMEGA Compliance Checklist**
 
-### **1. Compliance Checklist**
+- [ ] **UIP-V15 Header** verified and locked.
+- [ ] **State Vector** resonance at 1.0.
+- [ ] **Loom Signature** established and valid.
+- [ ] **ForgeLink Integrity** confirmed (Zero Entropy).
 
-- [ ] Adheres to v13.0 Standards
-- [ ] All Links Verified
-- [ ] Metadata Validated
+### **2. Sentinel Verification Proof**
 
-### **2. Validation Proof**
-
-> [!IMPORTANT] This artifact has been verified by the {{ validator_id if validator_id else "Axion Sentinel" }} on
-> {{ validation_date if validation_date else "2026-02-06" }}.
-
-[ARTIFACT END]
+> [!IMPORTANT] This artifact has been verified by `{{ portal_entity_id if portal_entity_id else "SENTINEL-PRIME" }}` on
+> `{{ validation_ts if validation_ts else current_date }}`. **Verdict**: `CANONIZED`

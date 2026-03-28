@@ -1,21 +1,21 @@
 domain: DEV
-last_updated: '2026-03-20T00:52:36.259219'
+last_updated: '2026-03-28T02:46:07.778007'
 skills:
 - documented: true
   id: app-builder
-  path: .agent/skills/dev/app-builder
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/dev/app-builder
 - documented: true
   id: architecture
-  path: .agent/skills/dev/architecture
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/dev/architecture
 - documented: true
   id: autonomous-governance-pilot
-  path: .agent/skills/dev/autonomous-governance-pilot
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/dev/autonomous-governance-pilot
 - documented: true
   id: clean-code
-  path: .agent/skills/dev/clean-code
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/dev/clean-code
 - documented: true
   id: documentation-templates
-  path: .agent/skills/dev/documentation-templates
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/dev/documentation-templates
 - documented: true
   id: game-development
-  path: .agent/skills/dev/game-development
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/dev/game-development

@@ -118,6 +118,6 @@ Synarchy.
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.SOUL.PhoenixPrime VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-16 HASH: 7BC884D0D0FFD8EC`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

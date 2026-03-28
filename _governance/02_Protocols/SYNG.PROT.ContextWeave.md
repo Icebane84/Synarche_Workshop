@@ -103,6 +103,6 @@ transforms raw data into a cohesive tapestry by identifying non-obvious emergent
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.PROT.ContextWeave VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: 9385797F580A3E2C`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

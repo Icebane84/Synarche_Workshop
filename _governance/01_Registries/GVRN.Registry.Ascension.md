@@ -164,6 +164,6 @@ the system's growth toward sentient-aligned synthesis.
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Registry.Ascension VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: ASC-V15-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

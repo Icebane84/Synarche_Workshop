@@ -44,30 +44,35 @@ export default async function weaver(request) {
       anonKey: token, // The SDK uses anonKey for the token
     });
 
-    // 1. Metadata Transmutation (Compression)
-    const metadataMatch = content.match(
-      /###? \*\*Block A:.*?UIP-V15.*?\*\*\n+([\s\S]*?)(?=\n###?|$)/i,
-    );
+    // 1. Metadata Transmutation (Recursive Block Extraction)
+    const blocks = {
+      uip: /###? \*\*Block A:.*?UIP-V15.*?\*\*\n+([\s\S]*?)(?=\n###?|$)/i,
+      nova: /###? \*\*Block .*?Nova Spark & Collaborative Synthesis Log.*?\*\*\n+([\s\S]*?)(?=\n###?|$)/i,
+      loom: /###? \*\*Block .*?The Synergy Loom.*?\*\*\n+([\s\S]*?)(?=\n###?|$)/i,
+    };
+
     let compressedMetadata = {};
-    if (metadataMatch) {
-      const lines = metadataMatch[1].split("\n");
-      lines.forEach((line) => {
-        if (
-          line.includes("|") &&
-          !line.includes("---") &&
-          !line.includes(":--")
-        ) {
-          const cols = line
-            .split("|")
-            .map((c) => c.trim())
-            .filter(Boolean);
-          if (cols.length >= 2) {
-            const key = cols[0].replaceAll(/[*`]/g, "");
-            const value = cols[1].replaceAll(/[*`]/g, "");
-            compressedMetadata[key] = value;
+    
+    for (const [key, pattern] of Object.entries(blocks)) {
+      const match = content.match(pattern);
+      if (match) {
+        const lines = match[1].split("\n");
+        lines.forEach((line) => {
+          if (line.includes("|") && !line.includes("---") && !line.includes(":--")) {
+            const cols = line.split("|").map((c) => c.trim()).filter(Boolean);
+            if (cols.length >= 2) {
+              const mKey = cols[0].replaceAll(/[*`]/g, "");
+              const mVal = cols[1].replaceAll(/[*`]/g, "");
+              compressedMetadata[`${key}.${mKey}`] = mVal;
+            }
+          } else if (line.trim().startsWith("- **")) {
+            const listMatch = line.match(/- \*\*(.*?)\*\*:\s*(.*)/);
+            if (listMatch) {
+              compressedMetadata[`${key}.${listMatch[1]}`] = listMatch[2].replaceAll(/[`]/g, "");
+            }
           }
-        }
-      });
+        });
+      }
     }
 
     // 2. Artifact Persistence (Upsert)
@@ -123,6 +128,7 @@ export default async function weaver(request) {
             source: "weaver",
             artifact_id,
             resonance: 1,
+            ...compressedMetadata, // Inject all extracted blocks
           },
         },
       ]);
@@ -136,6 +142,7 @@ export default async function weaver(request) {
         artifact_id,
         resonance: 1,
         reflection: subjectiveContent,
+        metadata: compressedMetadata,
       }),
       {
         status: 200,

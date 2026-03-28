@@ -115,6 +115,6 @@ This seed has nucleated the following core tools:
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.SEED.TOOL.001 VER: v14.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-15 HASH: 462FF7F97ED9CC68`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+

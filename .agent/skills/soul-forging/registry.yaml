@@ -1,0 +1,9 @@
+domain: SOUL-FORGING
+last_updated: '2026-03-28T02:46:07.792037'
+skills:
+- documented: false
+  id: assets
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/soul-forging/assets
+- documented: false
+  id: scripts
+  path: C:/Users/Chris/Synarche_Workspace/.agent/skills/soul-forging/scripts
