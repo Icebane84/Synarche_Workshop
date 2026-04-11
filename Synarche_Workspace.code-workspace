@@ -115,6 +115,13 @@
         "command": "python axion-core/forge/evolution_engine.py --root .",
         "problemMatcher": [],
       },
+      {
+        "label": "GVRN: Run Canonization Audit",
+        "type": "shell",
+        "command": "python axion-core/scripts/canonization_audit.py",
+        "problemMatcher": [],
+      }
+      },
     ],
   },
 }
