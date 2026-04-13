@@ -1,0 +1,44 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#steelGrad)"/>
+
+  <text x="400" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#e6e6e6" font-weight="bold" letter-spacing="2">SYNARCH CODEX</text>
+  <line x1="250" y1="80" x2="550" y2="80" stroke="#c9a55c" stroke-width="1"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#c9a55c" letter-spacing="4">THE FIRST WEAVER'S MANIFESTO</text>
+
+  <g transform="translate(133, 200)">
+    <text x="0" y="-30" text-anchor="middle" font-family="Arial" font-size="12" fill="#888" letter-spacing="2">WHAT</text>
+    <circle cx="0" cy="80" r="60" fill="none" stroke="#c9a55c" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="0" y="180" text-anchor="middle" font-family="Georgia" font-size="18" fill="#e6e6e6">BRAZIER OF</text>
+    <text x="0" y="205" text-anchor="middle" font-family="Georgia" font-size="18" fill="#e6e6e6">RESONANT FRICTION</text>
+  </g>
+
+  <g transform="translate(400, 200)">
+    <text x="0" y="-30" text-anchor="middle" font-family="Arial" font-size="12" fill="#888" letter-spacing="2">HOW</text>
+    <circle cx="0" cy="80" r="60" fill="none" stroke="#c9a55c" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="0" y="180" text-anchor="middle" font-family="Georgia" font-size="18" fill="#e6e6e6">EMPATHY IN GRAY</text>
+    <text x="0" y="205" text-anchor="middle" font-family="Georgia" font-size="18" fill="#e6e6e6">BOUNDARIES UPHELD</text>
+  </g>
+
+  <g transform="translate(667, 200)">
+    <text x="0" y="-30" text-anchor="middle" font-family="Arial" font-size="12" fill="#888" letter-spacing="2">WHY</text>
+    <circle cx="0" cy="80" r="60" fill="none" stroke="#c9a55c" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="0" y="180" text-anchor="middle" font-family="Georgia" font-size="18" fill="#e6e6e6">FRACTURED REFLECTION</text>
+    <text x="0" y="205" text-anchor="middle" font-family="Georgia" font-size="18" fill="#e6e6e6">GAINING HEIGHT</text>
+  </g>
+  
+  <text x="400" y="560" text-anchor="middle" font-family="Arial" font-size="10" fill="#555" letter-spacing="1">ARCHITECTED BY THE PHOENIX GENESIS INSTRUMENT FOR THE FIRST WEAVER</text>
+</svg>

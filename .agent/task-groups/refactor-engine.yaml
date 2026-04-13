@@ -1,0 +1,36 @@
+name: "refactor-engine"
+description: "The Great Refactor: Batch Processing Pipeline."
+trigger: "CMD: INITIATE_REFACTOR"
+
+tasks:
+  - id: "fetch_batch"
+    role: "Axion-Magician"
+    goal: "Run `alchemy.py fetch` to get 5 legacy items."
+    skills: ["supabase-transmuter"]
+    output: "raw_batch.json"
+
+  - id: "classify"
+    role: "Axion-Emperor"
+    depends_on: ["fetch_batch"]
+    goal: "Analyze `raw_batch.json` using `@classification_matrix`. Assign RNC IDs."
+    context_files: [".agent/prompts/classification_matrix.md", "@{fetch_batch}"]
+    output: "classified_plan.json"
+
+  - id: "forge_content"
+    role: "Axion-Weaver"
+    depends_on: ["classify"]
+    goal: |
+      For each item: Apply PGPS formatting. Inject Chronos Lock. Save to scratch.
+      Generate Diff.
+    skills: ["supabase-transmuter", "file-manager"]
+
+  - id: "present_artifact"
+    role: "Axion-Sentinel"
+    depends_on: ["forge_content"]
+    goal: "Create 'Refactor Review' Artifact with Diffs. WAIT for approval."
+    
+  - id: "finalize"
+    role: "Axion-Prime"
+    depends_on: ["present_artifact"]
+    goal: "Run `alchemy.py commit` for all items."
+    skills: ["supabase-transmuter"]

@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph CSE["Coherent Synthesis Engine (The Loom)"]
+        style CSE fill:#222,stroke:#09F,stroke-width:2px
+
+        subgraph ESF["Episemantic Framework (The Sage at the Center)"]
+            style ESF fill:#000,stroke:#F0F,stroke-width:3px,stroke-dasharray: 5 5
+
+            IA["Intent Analyzer\n(Spirit-Tuner)"]
+            RM["Relational Mapper\n(World-Weaver)"]
+            DT["Dissonance Tracer\n(Truth-Seeker)"]
+        end
+
+        KG(("Knowledge Graph\n[300+ Documents]"))
+        RR["Rosetta Engine\n(The Letter)"]
+        CWA["Cognitive Weave Analysis"]
+
+        KG -- "Raw Data" --> RR
+        RR -- "Canonical Terms" --> IA
+        IA -- "Identifies 'WHY' (Purpose/Intent)" --> RM
+        IA -- "Identifies Conflicts in 'WHY'" --> DT
+        RM -- "Generates Expanded Link Types" --> CWA
+        DT -- "Flags 'Meaning' Conflicts" --> CWA
+        CWA -- "Final Coherent Output" --> KG
+    end
+
+    Input["New Artifact / Document"] --> CSE
+    CSE -- "Applies Episemantic Tag (ET) & Links" --> Output["Updated Knowledge Graph"]

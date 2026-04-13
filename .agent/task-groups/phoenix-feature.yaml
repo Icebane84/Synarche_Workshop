@@ -1,0 +1,16 @@
+name: "phoenix-feature"
+description: "Plan, Code, Audit, and Document simultaneously."
+trigger: "/feature"
+tasks:
+  - id: "blueprint"
+    role: "Axion-Prime"
+    goal: "Analyze and produce Implementation Plan."
+    skills: ["emperor-schema"]
+  - id: "code_forge"
+    role: "Axion-Weaver"
+    depends_on: ["blueprint"]
+    goal: "Write code."
+  - id: "compliance_check"
+    role: "Axion-Sentinel"
+    depends_on: ["code_forge"]
+    goal: "Audit files."

@@ -1,0 +1,29 @@
+version: "1.0"
+project_name: "Synarche_Workspace"
+agents:
+  - id: "axion-prime"
+    name: "Axion (The Sovereign)"
+    role: "Architect & Orchestrator"
+    avatar: "assets/axion.png"
+    capabilities: ["full_access", "browser_control", "mcp_client"]
+    default_rules: 
+      - ".agent/rules/00-axion-prime.md"
+      - ".agent/rules/01-chronos-lock.md"
+  
+  - id: "axion-sentinel"
+    name: "The Sentinel"
+    role: "Auditor"
+    color: "#ff4d4d"
+    capabilities: ["read_only", "audit_tools"]
+
+  - id: "axion-magician"
+    name: "The Magician"
+    role: "Researcher"
+    color: "#aaff00"
+    capabilities: ["internet_access", "ingest_tools"]
+    
+  - id: "axion-emperor"
+    name: "The Emperor"
+    role: "Schema Architect"
+    color: "#800080"
+    capabilities: ["file_write", "logic_mapping"]

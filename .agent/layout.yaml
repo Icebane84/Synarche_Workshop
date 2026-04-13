@@ -1,0 +1,19 @@
+layouts:
+  - name: "war_room"
+    grid:
+      columns:
+        - type: "editor"
+          width: "33%"
+        - type: "browser_subagent"
+          width: "33%"
+        - type: "terminal"
+          width: "33%"
+  - name: "blueprint"
+    grid:
+      columns:
+        - type: "task_list"
+          width: "25%"
+        - type: "artifact_viewer"
+          width: "50%"
+        - type: "inbox"
+          width: "25%"

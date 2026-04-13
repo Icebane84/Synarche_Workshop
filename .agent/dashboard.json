@@ -1,0 +1,11 @@
+{
+  "widgets": [
+    {
+      "title": "Refactor Progress",
+      "type": "progress_bar",
+      "source": "supabase_query",
+      "target": 1500,
+      "color": "#FFD700"
+    }
+  ]
+}

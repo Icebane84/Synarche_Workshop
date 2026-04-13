@@ -1,0 +1,8 @@
+version: "1.0"
+servers:
+  - name: "github-context"
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-github"]
+  - name: "synarche-db"
+    command: "docker"
+    args: ["run", "-i", "--rm", "mcp/postgres", "postgresql://user:pass@localhost:5432/synarche"]

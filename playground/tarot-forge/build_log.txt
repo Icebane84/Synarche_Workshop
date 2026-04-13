@@ -1,0 +1,5 @@
+
+> tarot-forge@0.0.0 build
+> tsc -b && vite build
+
+src/App.tsx(112,14): error TS1382: Unexpected token. Did you mean `{'>'}` or `&gt;`?

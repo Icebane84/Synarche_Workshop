@@ -1,0 +1,9 @@
+Auditing Library: c:\Users\Chris\Synarche_Workspace\_governance\10_Governance\GVRN.Axiomatic.Lattice.md
+
+=== COMPLIANCE AUDIT SUMMARY ===
+Total Scanned: 1
+PASSED:        0
+WARNING:       1
+FAILED:        0
+================================
+

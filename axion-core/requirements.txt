@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # SYNARCHE OMEGA v15.0 - COMPLETE ENGINE DEPENDENCIES
 # [DOMAIN: THE ENGINE] [STATUS: CANONIZED]
 
@@ -39,3 +40,23 @@ numpy==1.26.4
 # --- Presentation & CLI ---
 # Required for high-density console output
 rich==13.7.1
+=======
+# Axion Core Dependencies
+
+# Development & Quality Assurance
+pytest
+ruff
+
+# Agent Dependencies
+langgraph
+langchain-core
+langchain
+chromadb
+sentence-transformers
+lxml
+
+# Dynamic Template Forge (Phase XV)
+jinja2>=3.1.0
+pyyaml>=6.0
+rich>=13.0.0
+>>>>>>> Stashed changes

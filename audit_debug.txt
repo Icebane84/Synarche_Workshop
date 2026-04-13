@@ -1,0 +1,9 @@
+Auditing Library: c:\Users\Chris\Synarche_Workspace\axion-core\src\agents\axion\agent_template.py
+
+=== COMPLIANCE AUDIT SUMMARY ===
+Total Scanned: 1
+PASSED:        0
+WARNING:       1
+FAILED:        0
+================================
+

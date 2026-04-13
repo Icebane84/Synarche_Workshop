@@ -1,0 +1,7 @@
+strategy:
+  default_model: "gemini-2.0-pro"
+  tier_overrides:
+    - task: "compliance_audit"
+      model: "gemini-2.0-ultra"
+    - task: "browser_interaction"
+      model: "gemini-2.0-flash"

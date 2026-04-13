@@ -1,0 +1,16 @@
+\U0001f31f Starting RAG Graph Generation in C:\Users\Chris\Synarche_Workspace\axion-core
+\U0001f31f Starting RAG Graph Generation in C:\Users\Chris\Synarche_Workspace\axion-core
+   Target Directories: ['Documentation', 'docs', 'c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation']
+   Skipping missing directory: C:\Users\Chris\Synarche_Workspace\axion-core\Documentation
+   Using C:\Users\Chris\Synarche_Workspace\axion-core\docs (19 files)
+   Using c:\Users\Chris\_Desktop_Vault\Phoenix\Documentation (618 files)
+   Processing 637 files...
+
+========================================
+GRAPH GENERATION COMPLETE
+Nodes: 5811
+Edges: 14580
+Output: C:\Users\Chris\Synarche_Workspace\axion-core\phoenix_knowledge_graph.json
+========================================
+Parsing Explicit Edges from UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v2.1.md...
+   Extracted 0 OSLM Relationships.

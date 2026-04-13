@@ -1,0 +1,18 @@
+
+> tarot-forge@0.0.0 build
+> tsc -b && vite build
+
+src/api/SynapseBridge.ts(1,10): error TS1484: 'CommandDefinitionGUCAv5' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/api/SynapseBridge.ts(1,35): error TS1484: 'DispatchResult' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/api/SynapseBridge.ts(80,33): error TS6133: 'location' is declared but its value is never read.
+src/api/SynapseBridge.ts(80,51): error TS6133: 'focus' is declared but its value is never read.
+src/App.tsx(111,14): error TS2304: Cannot find name 'OracleTerminal'.
+src/components/CommandPreview.tsx(19,41): error TS2307: Cannot find module '../types' or its corresponding type declarations.
+src/components/CommandResultView.tsx(17,29): error TS2307: Cannot find module 'react-router-dom' or its corresponding type declarations.
+src/components/CommandResultView.tsx(19,10): error TS1484: 'DispatchResult' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/common/ArtifactSelector.tsx(3,10): error TS1484: 'GraphNode' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/common/ArtifactSelector.tsx(77,32): error TS6133: 'e' is declared but its value is never read.
+src/components/ParameterWeaver.tsx(4,10): error TS1484: 'CommandDefinitionGUCAv5' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/TheSynapse.tsx(8,10): error TS1484: 'CommandDefinitionGUCAv5' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/TheSynapse.tsx(8,35): error TS1484: 'DispatchResult' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/TheSynapse.tsx(50,69): error TS6133: 'resetTranscript' is declared but its value is never read.
