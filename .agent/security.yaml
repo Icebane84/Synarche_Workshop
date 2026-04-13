@@ -1,0 +1,23 @@
+version: "1.0"
+mode: "strict"
+
+secrets:
+  patterns: ["sk-proj-*", "ghp_*", "**/.env", "SUPABASE_*"]
+  inject_env: true 
+
+filesystem:
+  read_only: [".git/", ".agent/security.yaml", "node_modules/"]
+  blocked_operations: ["delete **/*"] 
+
+terminal:
+  require_approval: ["npm publish", "docker system prune", "rm -rf *", "git push --force"]
+  blocked: ["sudo", "curl | bash", "ssh"]
+
+network:
+  policy: "allowlist"
+  allow:
+    - "github.com"
+    - "npmjs.com"
+    - "localhost:*"
+    - "docs.*"
+    - "*.supabase.co"

@@ -1,0 +1,12 @@
+{
+  "resonance": {
+    "score": 67.0,
+    "total": 200,
+    "aligned": 134
+  },
+  "loom": {
+    "nodes": 154,
+    "edges": 39,
+    "semantic_weaves": 1
+  }
+}

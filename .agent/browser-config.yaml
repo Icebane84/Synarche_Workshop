@@ -1,0 +1,6 @@
+policy:
+  allow_external: true
+  headless: false
+  viewport: 
+    width: 1920
+    height: 1080

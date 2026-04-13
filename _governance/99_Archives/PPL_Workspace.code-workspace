@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../.dev"
+		},
+		{
+			"path": "../../_Desktop_Vault"
+		},
+		{
+			"path": "../../.gemini"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "Synarche_Workspace"
+	}
+}

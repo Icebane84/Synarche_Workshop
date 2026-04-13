@@ -1,0 +1,4 @@
+version: "1.0"
+routing:
+  - triggers: ["secure_mode_request", "plan_approval"]
+    channel: "urgent"

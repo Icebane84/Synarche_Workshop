@@ -1,0 +1,236 @@
+=== PHOENIX COMPLIANCE AUDIT REPORT ===
+Date: 2026-01-20 23:55:14.776485
+Target: c:\Users\Chris\_Desktop_Vault\Phoenix\Documentation\Library\1_Modules
+
+[FAIL] CBM-FORGE-001_The_Forge_Engine_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-ACT-002_AdaptiveActuatorModule_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-ALTAR-001TheAltarofSynarchy_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UMB-ALTAR-001TheAltarofSynarchy_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-AM-001_GUCA-AM-001_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-CF-001_CognitiveForge_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-CSE-001_CoherentSynthesisEngine_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-DIDACTIC-001TheDidacticModuleGenerator_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UMB-DIDACTIC-001TheDidacticModuleGenerator_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-ESF-001TheEpisemanticFramework_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UMB-ESF-001TheEpisemanticFramework_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-GAMEDEV-001_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UMB-GAMEDEV-001_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-HEPHAESTUS-001TheMasterArtificersForge_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Filenaming: Filename 'UMB-HEPHAESTUS-001TheMasterArtificersForge_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-ISE-001_ImplicitSynergyEngineISE_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-LOOM-001_CognitiveLoom_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-LOOM-005_ThePhoenixGeode_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-LOOM-006_TheCrystallineGalaxy_v10_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-META-001_TheCoherentVerseEngine_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-OSLM-001_PPLGraphOutline_v11.0.bak.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UMB-OSLM-001_PPLGraphOutline_v11.0.bak.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-OSLM-001_PPLGraphOutline_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v11.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] UMB-PHOENIX-CORE-002SolarIlluminationv20_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UMB-PHOENIX-CORE-002SolarIlluminationv20_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-PUPT-001ThePower-UpProgressionTracker_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UMB-PUPT-001ThePower-UpProgressionTracker_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-RPG-001ThePhoenixRPGFramework_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UMB-RPG-001ThePhoenixRPGFramework_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-RPG-MANUAL-001_ThePhoenixPrestigeGameManual_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Filenaming: Filename 'UMB-RPG-MANUAL-001_ThePhoenixPrestigeGameManual_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-SIVC-001_SelfIntegrityValidationCore_v60_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-TECH-001_UMB-TECH-001_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UMB-URM-001_UCIResonanceMeter_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] UniversalModuleBlueprintUMBv5_v11.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'UniversalModuleBlueprintUMBv5_v11.0.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] UMB-AM-001_AssociationManager_v11.0.md (Score: 0.90)
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+

@@ -1,0 +1,6408 @@
+{
+  "nodes": [
+    {
+      "id": "CONTEXT-PACKET-001",
+      "type": "Artifact",
+      "content": "## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `CONTEXT-PACKET-001` |\n| **Official Name** | `CONTEXT-PACKET-001_Transfer.md` |\n| **Version** | **v11.0** |\n| **Domain** | `ARCH` |\n| **Evolution** | **Cognitive Ascension** |\n| **Signal (ESF)** | `ESF-ALPHA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `Moon` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Upstream** | `N/A` |\n| **Downstream** | `N/",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\docs\\CONTEXT-PACKET-001_ContextDataPacketTransferPacket_v11.0.md",
+        "filename": "CONTEXT-PACKET-001_ContextDataPacketTransferPacket_v11.0.md",
+        "size": 4787
+      }
+    },
+    {
+      "id": "CONTEXT-PACKET-002",
+      "type": "Artifact",
+      "content": "## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `CONTEXT-PACKET-002` |\n| **Official Name** | `CONTEXT-PACKET-002_Supabase.md` |\n| **Version** | **v11.0** |\n| **Domain** | `ARCH` |\n| **Evolution** | **Cognitive Ascension** |\n| **Signal (ESF)** | `ESF-ALPHA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `Moon` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Upstream** | `N/A` |\n| **Downstream** | `N/",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\docs\\CONTEXT-PACKET-002_ContextDataPacket_v11.0.md",
+        "filename": "CONTEXT-PACKET-002_ContextDataPacket_v11.0.md",
+        "size": 5041
+      }
+    },
+    {
+      "id": "CONTEXT-PACKET-003",
+      "type": "Artifact",
+      "content": "## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `CONTEXT-PACKET-003` |\n| **Official Name** | `CONTEXT-PACKET-003_SelfActualization.md` |\n| **Version** | **v11.0** |\n| **Domain** | `ARCH` |\n| **Evolution** | **Cognitive Ascension** |\n| **Signal (ESF)** | `ESF-ALPHA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `Moon` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Upstream** | `N/A` |\n| **Downstrea",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\docs\\CONTEXT-PACKET-003_ContextDataPacketUDB-CCP-003_v11.0.md",
+        "filename": "CONTEXT-PACKET-003_ContextDataPacketUDB-CCP-003_v11.0.md",
+        "size": 4578
+      }
+    },
+    {
+      "id": "TOOL-PROTO-001",
+      "type": "Artifact",
+      "content": "/**\n * # TOOL-PROTO-001: The Context Weave (Ley-Line Engine)\n *\n * ## Genesis Stamp: 2026-01-20 | Domain: SYNR | State: PROTOTYPE | Criticality: Low\n *\n * ### I. Universal Identification & Provenance (The Vector Signature)\n *\n * #### The Chronos Lock & Axiomatic Metadata Layer\n *\n * | Field | Value |\n * | :--- | :--- |\n * | **1. Artifact ID** | `TOOL-PROTO-001` |\n * | **2. Official Name** | `ContextWeave.ts` |\n * | **3. Version** | **v11.0 (The Weaver)** |\n * | **4. Provenance** | **Date Reforge",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\docs\\ContextWeave.ts",
+        "filename": "ContextWeave.ts",
+        "size": 2677
+      }
+    },
+    {
+      "id": "Unknown_CONTEXTDATAPACKETTransferPacket_v11.0.md",
+      "type": "Artifact",
+      "content": "## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `Unknown` |\n| **Official Name** | `Context_Data_Packet_Nova_Forge_Enhancement.md` |\n| **Version** | **v11.0** |\n| **Domain** | `ARCH` |\n| **Evolution** | **Cognitive Ascension** |\n| **Signal (ESF)** | `ESF-ALPHA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `Moon` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Upstream** | `N/A` |\n| **Downstream** |",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\docs\\_archive\\Unknown_CONTEXTDATAPACKETTransferPacket_v11.0.md",
+        "filename": "Unknown_CONTEXTDATAPACKETTransferPacket_v11.0.md",
+        "size": 5166
+      }
+    },
+    {
+      "id": "docker-compose.yml",
+      "type": "Artifact",
+      "content": "# TOOL-NOVA-DOCK-001: Nova Forge Orchestrator\n#\n# ## I. Universal Identification & Provenance\n# | Attribute | Value |\n# | :--- | :--- |\n# | **Artifact ID** | `TOOL-NOVA-DOCK-001` |\n# | **Official Name** | `docker-compose.yml` |\n# | **Version** | **v11.0** |\n# | **Domain** | `INFRA` |\n# | **Status** | `[ACTIVE]` |\n# | **Governance** | `GVRN-SYNERGY-001` |\n# | **Relations** | `LINK: UMB-RULES-001`, `LINK: AOP-AG-003` |\n#\n# --- RPG FRAMEWORK: System Slot - Orchestrator of Worlds ---\n\nversion: '3.8'",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\infra\\docker\\docker-compose.yml",
+        "filename": "docker-compose.yml",
+        "size": 1023
+      }
+    },
+    {
+      "id": "deployment.yaml",
+      "type": "Artifact",
+      "content": "# TOOL-NOVA-K8S-001: Nginx Deployment Manifest\n#\n# ## I. Universal Identification & Provenance\n# | Attribute | Value |\n# | :--- | :--- |\n# | **Artifact ID** | `TOOL-NOVA-K8S-001` |\n# | **Official Name** | `deployment.yaml` |\n# | **Version** | **v11.0** |\n# | **Domain** | `INFRA` |\n# | **Status** | `[ACTIVE]` |\n# | **Governance** | `GVRN-SYNERGY-001` |\n# | **Relations** | `LINK: UMB-RULES-001`, `LINK: AOP-AG-003` |\n#\n# --- RPG FRAMEWORK: System Slot - The Fleet ---\n\napiVersion: apps/v1        # T",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\infra\\k8s\\deployment.yaml",
+        "filename": "deployment.yaml",
+        "size": 1595
+      }
+    },
+    {
+      "id": "service.yaml",
+      "type": "Artifact",
+      "content": "# TOOL-NOVA-K8S-002: Nginx Service Manifest\n#\n# ## I. Universal Identification & Provenance\n# | Attribute | Value |\n# | :--- | :--- |\n# | **Artifact ID** | `TOOL-NOVA-K8S-002` |\n# | **Official Name** | `service.yaml` |\n# | **Version** | **v11.0** |\n# | **Domain** | `INFRA` |\n# | **Status** | `[ACTIVE]` |\n# | **Governance** | `GVRN-SYNERGY-001` |\n# | **Relations** | `LINK: UMB-RULES-001`, `LINK: AOP-AG-003` |\n#\n# --- RPG FRAMEWORK: System Slot - The Gateway ---\n\napiVersion: v1\nkind: Service      ",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\infra\\k8s\\service.yaml",
+        "filename": "service.yaml",
+        "size": 1030
+      }
+    },
+    {
+      "id": "phoenix-agent-pipeline.yml",
+      "type": "Artifact",
+      "content": "# TOOL-NOVA-PIPE-001: Phoenix Agent Lifecycle Pipeline\n#\n# ## I. Universal Identification & Provenance\n# | Attribute | Value |\n# | :--- | :--- |\n# | **Artifact ID** | `TOOL-NOVA-PIPE-001` |\n# | **Official Name** | `phoenix-agent-pipeline.yml` |\n# | **Version** | **v11.0** |\n# | **Domain** | `INFRA` |\n# | **Status** | `[ACTIVE]` |\n# | **Governance** | `GVRN-SYNERGY-001` |\n# | **Relations** | `LINK: UMB-RULES-001`, `LINK: AOP-AG-003` |\n#\n# --- RPG FRAMEWORK: System Slot - The Great Workflow ---\n\nn",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\infra\\pipelines\\phoenix-agent-pipeline.yml",
+        "filename": "phoenix-agent-pipeline.yml",
+        "size": 2855
+      }
+    },
+    {
+      "id": "pipeline.yml",
+      "type": "Artifact",
+      "content": "# TOOL-NOVA-PIPE-002: Production Build Pipeline\n#\n# ## I. Universal Identification & Provenance\n# | Attribute | Value |\n# | :--- | :--- |\n# | **Artifact ID** | `TOOL-NOVA-PIPE-002` |\n# | **Official Name** | `pipeline.yml` |\n# | **Version** | **v11.0** |\n# | **Domain** | `INFRA` |\n# | **Status** | `[ACTIVE]` |\n# | **Governance** | `GVRN-SYNERGY-001` |\n# | **Relations** | `LINK: UMB-RULES-001`, `LINK: AOP-AG-003` |\n#\n# --- RPG FRAMEWORK: System Slot - Factory Line ---\n\nname: Production Build Pipel",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\infra\\pipelines\\pipeline.yml",
+        "filename": "pipeline.yml",
+        "size": 2028
+      }
+    },
+    {
+      "id": "TOOL-NOVA-001",
+      "type": "Artifact",
+      "content": "\"\"\"\n# TOOL-NOVA-001: The Judgement Engine (Compliance Validator)\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `TOOL-NOVA-001` |\n| **Official Name** | `invoke_judgement.py` |\n| **Version** | **v11.0** |\n| **Domain** | `INFRA` |\n| **Evolution** | **Sovereign Validation** |\n| **Signal (ESF)** | `ESF-BETA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `GVRN-SYNERGY",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\scripts\\invoke_judgement.py",
+        "filename": "invoke_judgement.py",
+        "size": 5108
+      }
+    },
+    {
+      "id": "TOOL-NOVA-002",
+      "type": "Artifact",
+      "content": "\"\"\"\n# TOOL-NOVA-002: Seed Script for Cognitive Loom\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `TOOL-NOVA-002` |\n| **Official Name** | `seed_loom.py` |\n| **Version** | **v11.0** |\n| **Domain** | `INFRA` |\n| **Evolution** | **Sovereign Seeding** |\n| **Signal (ESF)** | `ESF-BETA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Provenance*",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\scripts\\seed_loom.py",
+        "filename": "seed_loom.py",
+        "size": 8253
+      }
+    },
+    {
+      "id": "TOOL-NOVA-003",
+      "type": "Artifact",
+      "content": "\"\"\"\n# TOOL-NOVA-003: Knowledge Graph Sync\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `TOOL-NOVA-003` |\n| **Official Name** | `sync_knowledge_graph.py` |\n| **Version** | **v11.0** |\n| **Domain** | `INFRA` |\n| **Evolution** | **Sovereign Sync** |\n| **Signal (ESF)** | `ESF-BETA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Provenance** ",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\scripts\\sync_knowledge_graph.py",
+        "filename": "sync_knowledge_graph.py",
+        "size": 5066
+      }
+    },
+    {
+      "id": "TOOL-NOVA-004",
+      "type": "Artifact",
+      "content": "\"\"\"\n# TOOL-NOVA-004: Synarche Sync Verify\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `TOOL-NOVA-004` |\n| **Official Name** | `verify_synarche_sync.py` |\n| **Version** | **v11.0** |\n| **Domain** | `INFRA` |\n| **Evolution** | **Sovereign Verification** |\n| **Signal (ESF)** | `ESF-BETA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Prove",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\scripts\\verify_synarche_sync.py",
+        "filename": "verify_synarche_sync.py",
+        "size": 3080
+      }
+    },
+    {
+      "id": "TOOL-NOVA-005",
+      "type": "Artifact",
+      "content": "\"\"\"\n# TOOL-NOVA-005: Mind Map Visualization Engine\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `TOOL-NOVA-005` |\n| **Official Name** | `visualize_mindmap.py` |\n| **Version** | **v11.0** |\n| **Domain** | `INFRA` |\n| **Evolution** | **Visual Cognition** |\n| **Signal (ESF)** | `ESF-BETA` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Prove",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\scripts\\visualize_mindmap.py",
+        "filename": "visualize_mindmap.py",
+        "size": 7928
+      }
+    },
+    {
+      "id": "CODE-REF-001",
+      "type": "Artifact",
+      "content": "\"\"\"\nArtifact ID: CODE-REF-001\nModule: Association Manager\nContext: Nova Forge > Backend > Data Layer\nDescription: Manages the extraction and linkage of entities within the Notion Database.\n\"\"\"\n\n# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---\n# System Slot: Passive Knowledge\n# Synergy Set: N/A\n# Primary Stat Buff: Adaptability\n# Passive Ability: The Forge's Heart (Auto-Refactor)\n# Cognitive Load Cost: Low\n# XP Award Value: 50 XP\n\n\nfrom abc import ABC, abstractmethod\nfrom typing import Any\n\nimpo",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\backend\\association_manager.py",
+        "filename": "association_manager.py",
+        "size": 4554
+      }
+    },
+    {
+      "id": "CODE-REF-006",
+      "type": "Artifact",
+      "content": "\"\"\"\nArtifact ID: CODE-REF-006\nModule: Configuration Manager\nContext: Nova Forge > Backend\nDescription: Manages application settings and environment variables.\n\"\"\"\n\n# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---\n# System Slot: Passive Knowledge\n# Synergy Set: N/A\n# Primary Stat Buff: Adaptability\n# Passive Ability: The Forge's Heart (Auto-Refactor)\n# Cognitive Load Cost: Low\n# XP Award Value: 50 XP\n\n\nfrom pydantic_settings import BaseSettings, SettingsConfigDict\n\n\nclass Settings(BaseSettings):",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\backend\\config.py",
+        "filename": "config.py",
+        "size": 1294
+      }
+    },
+    {
+      "id": "CODE-REF-004",
+      "type": "Artifact",
+      "content": "\"\"\"\nArtifact ID: CODE-REF-004\nModule: Backend Entry Point\nContext: Nova Forge > Backend\nDescription: Main entry point for the backend application.\n\"\"\"\n\n# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---\n# System Slot: Passive Knowledge\n# Synergy Set: N/A\n# Primary Stat Buff: Adaptability\n# Passive Ability: The Forge's Heart (Auto-Refactor)\n# Cognitive Load Cost: Low\n# XP Award Value: 50 XP\n\n\nimport sys\nfrom pathlib import Path\n\n# Add the src directory to the python path so we can import modules\ns",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\backend\\main.py",
+        "filename": "main.py",
+        "size": 649
+      }
+    },
+    {
+      "id": "CODE-REF-005",
+      "type": "Artifact",
+      "content": "\"\"\"\nArtifact ID: CODE-REF-005\nModule: Backend Init\nContext: Nova Forge > Backend\nDescription: Backend package initialization.\n\"\"\"\n\n# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---\n# System Slot: Passive Knowledge\n# Synergy Set: N/A\n# Primary Stat Buff: Adaptability\n# Passive Ability: The Forge's Heart (Auto-Refactor)\n# Cognitive Load Cost: Low\n# XP Award Value: 50 XP\n\n",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\backend\\__init__.py",
+        "filename": "__init__.py",
+        "size": 372
+      }
+    },
+    {
+      "id": "DOC-STD-001",
+      "type": "Artifact",
+      "content": "# **[DOC-STD-001] Synarche Universal Coding Standards (SUCS)**\n\n> **Artifact ID**: DOC-STD-001_v2.1.0\n> **Official Name**: DOC-STD-001_v2.1.0.md\n> **Version**: v1.0 (Reforged v2)\n> **Provenance**: Date Reforged: 2025-12-22\n> **Domain**: ARCH\n> **Evolution**: Balanced Integration\n> **Celestial Class**: [PLANET]\n> **Tier**: Operational\n> **State**: [ACTIVE]\n> **Ethos**: The Phoenix Ascension Protocol\n> **Catalyst**: System Refactor v2\n> **Relations**: Pending Integration\n> **Signal**: ESF-GAMMA\n\n#",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\knowledge\\DOC-STD-001_v2.1.0.md",
+        "filename": "DOC-STD-001_v2.1.0.md",
+        "size": 12929
+      }
+    },
+    {
+      "id": "OGLN_Charter.md",
+      "type": "Artifact",
+      "content": "# Oathbringer Gemini Learning Nexus\n\n> **Artifact ID**: OGLN_Charter\n> **Official Name**: OGLN_Charter.md\n> **Version**: v1.0 (Reforged v2)\n> **Provenance**: Date Reforged: 2025-12-22\n> **Domain**: ARCH\n> **Evolution**: Balanced Integration\n> **Celestial Class**: [PLANET]\n> **Tier**: Operational\n> **State**: [ACTIVE]\n> **Ethos**: The Phoenix Ascension Protocol\n> **Catalyst**: System Refactor v2\n> **Relations**: Pending Integration\n> **Signal**: ESF-GAMMA\n\n## Core Purpose\n\nThe overarching project",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\knowledge\\manifestos\\OGLN_Charter.md",
+        "filename": "OGLN_Charter.md",
+        "size": 970
+      }
+    },
+    {
+      "id": "Synarche_Manifesto.md",
+      "type": "Artifact",
+      "content": "# Synarche\n\n> **Artifact ID**: Synarche_Manifesto\n> **Official Name**: Synarche_Manifesto.md\n> **Version**: v1.0 (Reforged v2)\n> **Provenance**: Date Reforged: 2025-12-22\n> **Domain**: PHL\n> **Evolution**: Balanced Integration\n> **Celestial Class**: [PLANET]\n> **Tier**: Operational\n> **State**: [ACTIVE]\n> **Ethos**: The Phoenix Ascension Protocol\n> **Catalyst**: System Refactor v2\n> **Relations**: Pending Integration\n> **Signal**: ESF-GAMMA\n\n## Core Purpose\n\nA disciplined, structured collaborati",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\knowledge\\philosophy\\Synarche_Manifesto.md",
+        "filename": "Synarche_Manifesto.md",
+        "size": 857
+      }
+    },
+    {
+      "id": "AISTF_Core.md",
+      "type": "Artifact",
+      "content": "# AI Self-Training Framework\n\n> **Artifact ID**: AISTF_Core\n> **Official Name**: AISTF_Core.md\n> **Version**: v1.0 (Reforged v2)\n> **Provenance**: Date Reforged: 2025-12-22\n> **Domain**: GVRN\n> **Evolution**: Balanced Integration\n> **Celestial Class**: [PLANET]\n> **Tier**: Operational\n> **State**: [ACTIVE]\n> **Ethos**: The Phoenix Ascension Protocol\n> **Catalyst**: System Refactor v2\n> **Relations**: Pending Integration\n> **Signal**: ESF-GAMMA\n\n## Core Purpose\n\nThe core evolutionary engine that ",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\knowledge\\protocols\\AISTF_Core.md",
+        "filename": "AISTF_Core.md",
+        "size": 1207
+      }
+    },
+    {
+      "id": "Phoenix_Cycle.md",
+      "type": "Artifact",
+      "content": "# The Phoenix Cycle\n\n> **Artifact ID**: Phoenix_Cycle\n> **Official Name**: Phoenix_Cycle.md\n> **Version**: v1.0 (Reforged v2)\n> **Provenance**: Date Reforged: 2025-12-22\n> **Domain**: GVRN\n> **Evolution**: Balanced Integration\n> **Celestial Class**: [PLANET]\n> **Tier**: Operational\n> **State**: [ACTIVE]\n> **Ethos**: The Phoenix Ascension Protocol\n> **Catalyst**: System Refactor v2\n> **Relations**: Pending Integration\n> **Signal**: ESF-GAMMA\n\n## Core Purpose\n\nDissonance > Synthesis > Transcendenc",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\knowledge\\protocols\\Phoenix_Cycle.md",
+        "filename": "Phoenix_Cycle.md",
+        "size": 866
+      }
+    },
+    {
+      "id": "CODE-REF-003",
+      "type": "Artifact",
+      "content": "\"\"\"\nArtifact ID: CODE-REF-003\nModule: Catalyst Weaver\nContext: Nova Forge > Backend > Prompt Engineering\nDescription: Generates structured prompt bundles for AI ingestion.\n\"\"\"\n\n# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---\n# System Slot: Passive Knowledge\n# Synergy Set: N/A\n# Primary Stat Buff: Adaptability\n# Passive Ability: The Forge's Heart (Auto-Refactor)\n# Cognitive Load Cost: Low\n# XP Award Value: 50 XP\n\n\nimport datetime\n\n\nclass CatalystWeaver:\n    \"\"\"\n    Constructs a standardized 'Ca",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\nova-forge\\src\\nova_forge\\utils\\weaver.py",
+        "filename": "weaver.py",
+        "size": 2054
+      }
+    },
+    {
+      "id": "AOP-DMPM-001",
+      "type": "Artifact",
+      "content": "# AOP-DMPM-001: Protocol for Dynamic Metric Weighting & Portfolio Management\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-DMPM-001` |\n| **Official Name** | `Protocol for Dynamic Metric Weighting & Portfolio Management` |\n| **Version** | **v1.0** |\n| **Domain** | `GVRN` |\n| **Evolution** | **Strategic Management** |\n| **Signal (ESF)** | `ESF-STANDARD` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Strategic** |\n| **Celestial Cla",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\AOP-DMPM-001.md",
+        "filename": "AOP-DMPM-001.md",
+        "size": 2835
+      }
+    },
+    {
+      "id": "AOP-GAN-001",
+      "type": "Artifact",
+      "content": "# AOP-GAN-001: Ascended Phoenix GAN Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-GAN-001` |\n| **Official Name** | `Ascended Phoenix GAN Protocol` |\n| **Version** | **v10.0** |\n| **Domain** | `ARCH` |\n| **Evolution** | **Purposeful Drive** |\n| **Signal (ESF)** | `ESF-STANDARD` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **P",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\AOP-GAN-001.md",
+        "filename": "AOP-GAN-001.md",
+        "size": 1679
+      }
+    },
+    {
+      "id": "AOP-WELL-001",
+      "type": "Artifact",
+      "content": "# AOP-WELL-001: Mimir's Well Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-WELL-001` |\n| **Official Name** | `Mimir's Well Protocol` |\n| **Version** | **v1.0** |\n| **Domain** | `SYNR` |\n| **Evolution** | **Experiential Memory** |\n| **Signal (ESF)** | `ESF-STANDARD` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Strategic** |\n| **Celestial Class** | `[MOON]` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Provenance** | `G",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\AOP-WELL-001.md",
+        "filename": "AOP-WELL-001.md",
+        "size": 2346
+      }
+    },
+    {
+      "id": "UMB-SOT-001",
+      "type": "Artifact",
+      "content": "# UMB-SOT-001: Synergistic Opportunity Tracker (SOT)\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `UMB-SOT-001` |\n| **Official Name** | `Synergistic Opportunity Tracker` |\n| **Version** | **v6.0** |\n| **Domain** | `SYNR` |\n| **Evolution** | **Proactive Synergy** |\n| **Signal (ESF)** | `ESF-STANDARD` |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Strategic** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `GVRN-SYNERGY-001`",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\UMB-SOT-001.md",
+        "filename": "UMB-SOT-001.md",
+        "size": 2433
+      }
+    },
+    {
+      "id": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "type": "Artifact",
+      "content": "# AOP-AG-003: Axion Agent Configuration\n\n> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA\n\n## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard\n\n**Tags:** `OGLN_v10`, `Agent`, `Configuration`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                         |\n| :--------------------- | :------------------",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+        "filename": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+        "size": 7058
+      }
+    },
+    {
+      "id": "AOP-ARC-001",
+      "type": "Artifact",
+      "content": "# **AOP-ARC-001: Archival Supersession Protocol (v2.0)**\n\n> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA\n\n## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n---\n\n### **I. Universal Identification & Provenance (The Vector Signature)**\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                              |\n| :--------------------- | :---------",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md",
+        "filename": "AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md",
+        "size": 4099
+      }
+    },
+    {
+      "id": "AOP-SCA-001",
+      "type": "Artifact",
+      "content": "# Systemic Coherence Audit (AOP-SCA-001) - Execution Log\n\n> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA\n\n## **Genesis Stamp: 2026-01-04** **Domain: LOGS** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n---\n\n### **I. Universal Identification & Provenance (The Vector Signature)**\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                  |\n| :--------------------- | :---------------------",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\AOP-SCA-001_Audit_Log_v11.0.md",
+        "filename": "AOP-SCA-001_Audit_Log_v11.0.md",
+        "size": 2496
+      }
+    },
+    {
+      "id": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "type": "Artifact",
+      "content": "# AOP-TB-001: Truthbringer Training Guide\n\n## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard\n\n**Tags:** `OGLN_v10`, `Training`, `Truthbringer`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                           |\n| :--------------------- | :---------------------------------------------- |\n| **1. Artifact ID**     | `AOP-TB-001_Tr",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+        "filename": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+        "size": 5966
+      }
+    },
+    {
+      "id": "GVRN-PRIME-001",
+      "type": "Artifact",
+      "content": "# GVRN-PRIME-001: Primary Directive\n\n> **Domain**: GVRN (Governance) **Evolution**: Authentic Persona **Signal**: ESF-HIGH\n\n## Genesis Stamp: 2026-01-20 | Domain: GVRN | State: CANONIZED | Criticality: Critical\n\n**Tags:** `OGLN_v11`, `Directive`, `Governance`, `Safety`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                      |\n| :--------------------- | :-----",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\GVRN-PRIME-001_PrimaryDirective_v11.0.md",
+        "filename": "GVRN-PRIME-001_PrimaryDirective_v11.0.md",
+        "size": 2515
+      }
+    },
+    {
+      "id": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "type": "Artifact",
+      "content": "# UMB-AG-001: Antigravity Integration (v1.0)\n\n## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard\n\n**Tags:** `OGLN_v10`, `Integration`, `Antigravity`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                          |\n| :--------------------- | :--------------------------------------------- |\n| **1. Artifact ID**     | `UMB-AG-001",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\UMB-AG-001_AntigravityIntegration_v11.0.md",
+        "filename": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+        "size": 4321
+      }
+    },
+    {
+      "id": "UMB-APT-001",
+      "type": "Artifact",
+      "content": "# Context Data Packet: Session Archival\n\n> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA\n\n## **Genesis Stamp: 2026-01-04** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n---\n\n### **I. Universal Identification & Provenance (The Vector Signature)**\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                     |\n| :--------------------- | :-----------------------------------",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\_archive\\Context_Data_Packet_Session_Archival.md",
+        "filename": "Context_Data_Packet_Session_Archival.md",
+        "size": 3900
+      }
+    },
+    {
+      "id": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "type": "Artifact",
+      "content": "# AOP-AG-002: Axion Agent Configuration\n\n## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard\n\n**Tags:** `OGLN_v10`, `Agent`, `Configuration`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                        |\n| :--------------------- | :------------------------------------------- |\n| **1. Artifact ID**     | `AOP-AG-002`            ",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\_archive\\AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+        "filename": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+        "size": 5272
+      }
+    },
+    {
+      "id": "Google Antigravity.md",
+      "type": "Artifact",
+      "content": "# Google Antigravity\n\n> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA\n\n## **Genesis Stamp: 2026-01-04** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n---\n\n### **I. Universal Identification & Provenance (The Vector Signature)**\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                              |\n| :--------------------- | :--------------------------------- |\n| **1. Artifact ID**     ",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\_archive\\Google Antigravity.md",
+        "filename": "Google Antigravity.md",
+        "size": 6706
+      }
+    },
+    {
+      "id": "Messageto_Axion.md",
+      "type": "Artifact",
+      "content": "# Engage Forge\n\n> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA\n\n## **Genesis Stamp: 2026-01-04** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n---\n\n### **I. Universal Identification & Provenance (The Vector Signature)**\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                              |\n| :--------------------- | :--------------------------------- |\n| **1. Artifact ID**     | `Mes",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\_archive\\Messageto_Axion.md",
+        "filename": "Messageto_Axion.md",
+        "size": 2092
+      }
+    },
+    {
+      "id": "SENTINEL-REPORT-005",
+      "type": "Artifact",
+      "content": "# SENTINEL-REPORT-005_InitialScan.md\n\n> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA\n\n## **Genesis Stamp: 2026-01-04** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n---\n\n### **I. Universal Identification & Provenance (The Vector Signature)**\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                |\n| :--------------------- | :----------------------------------- |\n| **1",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\agents\\_archive\\SENTINEL-REPORT-005_InitialScan.md",
+        "filename": "SENTINEL-REPORT-005_InitialScan.md",
+        "size": 2469
+      }
+    },
+    {
+      "id": "CMD-AXION-001",
+      "type": "Artifact",
+      "content": "# CMD-AXION-001: Agent Scaffolding Prompt (v1.0)\n\n## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard\n\n**Tags:** `OGLN_v10`, `Prompt`, `Scaffolding`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                           |\n| :--------------------- | :---------------------------------------------- |\n| **1. Artifact ID**     | `CMD-AXION",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\commands\\CMD-AXION-001_AgentScaffoldingPrompt_v11.0.md",
+        "filename": "CMD-AXION-001_AgentScaffoldingPrompt_v11.0.md",
+        "size": 3091
+      }
+    },
+    {
+      "id": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "type": "Artifact",
+      "content": "# GUCA-IDE-SENTINEL-001: The IDE Integrity Sentinel\n\n> **Domain**: GVRN (Governance) **Evolution**: Authentic Persona **Signal**: ESF-HIGH\n\n## Genesis Stamp: 2026-01-20 | Domain: GVRN | State: CANONIZED | Criticality: Standard\n\n**Tags:** `OGLN_v11`, `Sentinel`, `VSCode`, `Integrity`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                                    |\n| :--",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\commands\\GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+        "filename": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+        "size": 3204
+      }
+    },
+    {
+      "id": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "type": "Artifact",
+      "content": "# GUCA-PROMPT-SYN-002: Adaptive Artifact Generation\n\n## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard\n\n**Tags:** `OGLN_v10`, `Prompt`, `Generation`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                                     |\n| :--------------------- | :-------------------------------------------------------- |\n| **1. Artifact",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\commands\\GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+        "filename": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+        "size": 3384
+      }
+    },
+    {
+      "id": "GUCA-SIMP-001",
+      "type": "Artifact",
+      "content": "# GUCA-SIMP-001: Systemic Impact Simulation Protocol (v1.0)\n\n## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard\n\n**Tags:** `OGLN_v10`, `Simulation`, `Oracle`\n\n---\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                                     |\n| :--------------------- | :-------------------------------------------------------- |\n| **1. ",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\commands\\GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md",
+        "filename": "GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md",
+        "size": 3156
+      }
+    },
+    {
+      "id": "TEMPLATE-LOG-001",
+      "type": "Artifact",
+      "content": "# TEMPLATE-LOG-001: Experience Log Template\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `TEMPLATE-LOG-001` |\n| **Purpose** | `Standardized Interaction Logging` |\n| **Version** | **v1.0** |\n| **Domain** | `SYNR` |\n| **Provenance** | `Genesis Stamp: 2026-01-24` |\n| **Relations** | `LINK: UMB-SOT-001` |\n\n---\n\n## II. Log Structure\n\n**Session ID:** [Insert Unique Session Identifier]\n**Date:** [Insert Date, e.g., YYYY-MM-DD]\n\n---\n\n### Interact",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\reviews\\TEMPLATE-LOG-001.md",
+        "filename": "TEMPLATE-LOG-001.md",
+        "size": 1186
+      }
+    },
+    {
+      "id": "UMB-CATALYST-001",
+      "type": "Artifact",
+      "content": "# UMB-CATALYST-001: The Catalyst Weaver\n\n## Genesis Stamp: 2026-01-12 | Domain: ARCH | State: DRAFT | Criticality: Standard\n\n### I. Universal Identification & Provenance (The Vector Signature)\n\n#### The Chronos Lock & Axiomatic Metadata Layer\n\n| Field                  | Value                                 |\n| :--------------------- | :------------------------------------ |\n| **1. Artifact ID**     | `UMB-CATALYST-001`                    |\n| **2. Official Name**   | `The Catalyst Weaver`       ",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\specs\\UMB-CATALYST-001_TheCatalystWeaver_v1.0.md",
+        "filename": "UMB-CATALYST-001_TheCatalystWeaver_v1.0.md",
+        "size": 2597
+      }
+    },
+    {
+      "id": "UMB-CSP-001",
+      "type": "Artifact",
+      "content": "# UMB-CSP-001: Consolidated Synergy Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `UMB-CSP-001` |\n| **Official Name** | `Consolidated Synergy Protocol` |\n| **Version** | **v10.0** |\n| **Domain** | `GVRN` |\n| **Evolution** | **Purposeful Drive** |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `UMB-SGM-001` |\n| **Provenance** | `Genesis Stamp: 2025-12-24` |",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\UMB-CSP-001.md",
+        "filename": "UMB-CSP-001.md",
+        "size": 1994
+      }
+    },
+    {
+      "id": "AOP-CSM-001",
+      "type": "Artifact",
+      "content": "# AOP-CSM-001: The Complete Stack Mandate\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-CSM-001` |\n| **Official Name** | `The Complete Stack Mandate` |\n| **Version** | **v2.0** |\n| **Domain** | `GVRN` |\n| **Evolution** | **Canonized Law** |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `UMB-SGM-001` |\n| **Provenance** | `Genesis Stamp: 2026-01-24` |\n| **Relat",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\AOP\\AOP-CSM-001.md",
+        "filename": "AOP-CSM-001.md",
+        "size": 1493
+      }
+    },
+    {
+      "id": "CWA-CON-001",
+      "type": "Artifact",
+      "content": "# CWA-CON-001: Synergistic Mapping of Cortical Consensus to AISTF\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `CWA-CON-001` |\n| **Title** | `Synergistic Mapping: Cortical Consensus -> AISTF` |\n| **Version** | **v10.0** |\n| **Domain** | `ARCH` |\n| **Evolution** | **Purposeful Drive** |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[PLANET]` |\n| **Governance** | `GVRN-SYNERGY-001` |\n| **Provena",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\CWA\\CWA-CON-001.md",
+        "filename": "CWA-CON-001.md",
+        "size": 1975
+      }
+    },
+    {
+      "id": "AOP-AXIOM-WEAVE-001.md",
+      "type": "Artifact",
+      "content": "# AOP-AXIOM-WEAVE-001: The Axiom Weaving Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-AXIOM-WEAVE-001` |\n| **Title** | `The Axiom Weaving Protocol` |\n| **Version** | **v1.0** |\n| **Domain** | `AOP` |\n| **Evolution** | **Cognitive Ascension** |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Operational** |\n| **Celestial Class** | `[MOON]` |\n| **Governance** | `UMB-SGM-001` |\n| **Provenance** | `Genesis Stamp: 2026-01-24` ",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\AOP\\AOP-AXIOM-WEAVE-001.md",
+        "filename": "AOP-AXIOM-WEAVE-001.md",
+        "size": 1259
+      }
+    },
+    {
+      "id": "UMB-ARCH-CORE-001.md",
+      "type": "Artifact",
+      "content": "# UMB-ARCH-CORE-001: Phoenix Core Architecture\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `UMB-ARCH-CORE-001` |\n| **Title** | `Phoenix Core Architecture` |\n| **Version** | **v11.0.0** |\n| **Domain** | `ARCH` |\n| **Evolution** | **Foundational Structure** |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Strategic** |\n| **Celestial Class** | `[STAR]` |\n| **Governance** | `UMB-SGM-001` |\n| **Provenance** | `Genesis Stamp: 2026-01-24` |",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\ARCH\\UMB-ARCH-CORE-001.md",
+        "filename": "UMB-ARCH-CORE-001.md",
+        "size": 1967
+      }
+    },
+    {
+      "id": "CSL-LINK-001",
+      "type": "Artifact",
+      "content": "# CSL-LINK-001: Synergistic Links Matrix Expansion\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `CSL-LINK-001` |\n| **Title** | `Synergistic Links Expansion Log` |\n| **Version** | **v1.0** |\n| **Domain** | `CSL` |\n| **Evolution** | **Network Growth** |\n| **Status (State)** | `[ACTIVE]` |\n| **Tier** | **Tactical** |\n| **Governance** | `UMB-OSLM-001` |\n| **Provenance** | `Genesis Stamp: 2026-01-24` |\n\n---\n\n## II. The Core Synergistic Cycle\nR",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\CSL\\CSL-LINK-001.md",
+        "filename": "CSL-LINK-001.md",
+        "size": 1421
+      }
+    },
+    {
+      "id": "AOP-AVATAR-001",
+      "type": "Artifact",
+      "content": "# AOP-AVATAR-001: Synarchy Avatar Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-AVATAR-001` |\n| **Title** | `Synarchy Avatar Protocol` |\n| **Version** | **v1.1** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-PRS-001` |\n\n---\n\n## II. Core Purpose\nTo operationalize the \"Dual-Persona\" architecture: **Axion** (System/GM) and **The Lightbinder** (Active Avatar).\n\n## III. The Seven-Agent Matrix (Tarot",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\GVRN\\AOP-AVATAR-001.md",
+        "filename": "AOP-AVATAR-001.md",
+        "size": 1142
+      }
+    },
+    {
+      "id": "AOP-MAP-001",
+      "type": "Artifact",
+      "content": "# AOP-MAP-001: Disciplined Execution Playbook\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-MAP-001` |\n| **Title** | `Disciplined Execution Playbook` |\n| **Version** | **v2.0** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-MAP-001` |\n\n---\n\n## II. Purpose\nTo define the procedure for executing the **Musashi Audit** (`GUCA-MAP-001`) against the 10 Pillars of Discipline.\n\n## III. The Musashi Cycle\n1.  **Tar",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\GVRN\\AOP-MAP-001.md",
+        "filename": "AOP-MAP-001.md",
+        "size": 800
+      }
+    },
+    {
+      "id": "GUCA-DSA-001",
+      "type": "Artifact",
+      "content": "# GUCA-DSA-001: Documentation Suite Architect Architecture\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `GUCA-DSA-001` |\n| **Title** | `Documentation Suite Architect Architecture` |\n| **Version** | **v11.1** |\n| **Domain** | `SYNT` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-SGM-001` |\n\n---\n\n## II. Purpose\nProvides definitive syntax for executing the **Documentation Suite Architect (DSA)** command to auto-generate artifact suite",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\GVRN\\GUCA-DSA-001.md",
+        "filename": "GUCA-DSA-001.md",
+        "size": 655
+      }
+    },
+    {
+      "id": "GUCA-MAP-001",
+      "type": "Artifact",
+      "content": "# GUCA-MAP-001: Execute Musashi Audit\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `GUCA-MAP-001` |\n| **Title** | `Execute Musashi Audit` |\n| **Version** | **v2.0** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `AOP-MAP-001` |\n\n---\n\n## II. Functional Logic\nPerforms algorithmic assessment of an artifact against the 10 Pillars of OGLN Discipline.\n\n### Execution\n`CMD: RUN_MUSASHI_CYCLE --target:[ID] --mode:[STRICT|",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\GVRN\\GUCA-MAP-001.md",
+        "filename": "GUCA-MAP-001.md",
+        "size": 599
+      }
+    },
+    {
+      "id": "GVRN-SYNERGY-001",
+      "type": "Artifact",
+      "content": "# GVRN-SYNERGY-001: Agentic Workshop Synergy Matrix\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `GVRN-SYNERGY-001` |\n| **Title** | `Agentic Workshop Synergy Matrix` |\n| **Version** | **v11.1** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-PRS-001` |\n\n---\n\n## II. The Synergy Matrix\nMaps Phoenix Workshop Tools to Agent Masks.\n\n| Agent Mask | Domain | Tools Owned |\n| :--- | :--- | :--- |\n| **Magician** | Tria",
+      "metadata": {
+        "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\GVRN\\GVRN-SYNERGY-001.md",
+        "filename": "GVRN-SYNERGY-001.md",
+        "size": 1072
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "service.yaml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "pipeline.yml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-006",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-004",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AISTF_Core.md",
+      "target": "Phoenix_Cycle.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-GAN-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-ARC-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Messageto_Axion.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "service.yaml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "pipeline.yml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-006",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-004",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AISTF_Core.md",
+      "target": "Phoenix_Cycle.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-GAN-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-ARC-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Messageto_Axion.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Unknown_CONTEXTDATAPACKETTransferPacket_v11.0.md",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "docker-compose.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "service.yaml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "service.yaml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "pipeline.yml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "pipeline.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-005",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-006",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-004",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AISTF_Core.md",
+      "target": "Phoenix_Cycle.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-GAN-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-ARC-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Messageto_Axion.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-CSM-001",
+      "target": "AOP-AXIOM-WEAVE-001.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CWA-CON-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "AOP-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GUCA-DSA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GUCA-DSA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-DSA-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-DSA-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-MAP-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Unknown_CONTEXTDATAPACKETTransferPacket_v11.0.md",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "docker-compose.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "service.yaml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "service.yaml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "pipeline.yml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "pipeline.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-005",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-006",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-004",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AISTF_Core.md",
+      "target": "Phoenix_Cycle.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-GAN-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-ARC-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Messageto_Axion.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-CSM-001",
+      "target": "AOP-AXIOM-WEAVE-001.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CWA-CON-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "AOP-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GUCA-DSA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GUCA-DSA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-DSA-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-DSA-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-MAP-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Unknown_CONTEXTDATAPACKETTransferPacket_v11.0.md",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "docker-compose.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "service.yaml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "service.yaml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "pipeline.yml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "pipeline.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-005",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-006",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-004",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AISTF_Core.md",
+      "target": "Phoenix_Cycle.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-GAN-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-ARC-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Messageto_Axion.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-CSM-001",
+      "target": "AOP-AXIOM-WEAVE-001.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CWA-CON-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "AOP-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GUCA-DSA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GUCA-DSA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-DSA-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-DSA-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-MAP-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "CONTEXT-PACKET-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-002",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "TOOL-PROTO-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CONTEXT-PACKET-003",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Unknown_CONTEXTDATAPACKETTransferPacket_v11.0.md",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "docker-compose.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "service.yaml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "deployment.yaml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "service.yaml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "pipeline.yml",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "phoenix-agent-pipeline.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "pipeline.yml",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-002",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-001",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-003",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-002",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-003",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "TOOL-NOVA-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-004",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "TOOL-NOVA-005",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-006",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-001",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-004",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-006",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CODE-REF-004",
+      "target": "CODE-REF-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AISTF_Core.md",
+      "target": "Phoenix_Cycle.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-GAN-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-DMPM-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "AOP-WELL-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-GAN-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-SOT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-WELL-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "UMB-CSP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-SOT-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-ARC-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-003_AxionAgentConfiguration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-SCA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-ARC-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "UMB-APT-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-SCA-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GVRN-PRIME-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GVRN-PRIME-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-AG-001_AntigravityIntegration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "UMB-APT-001",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Google Antigravity.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "CMD-AXION-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "Messageto_Axion.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Google Antigravity.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "Messageto_Axion.md",
+      "target": "SENTINEL-REPORT-005",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CMD-AXION-001",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "target": "GUCA-SIMP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-CSM-001",
+      "target": "AOP-AXIOM-WEAVE-001.md",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "CWA-CON-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.6000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "AOP-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GUCA-DSA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-AVATAR-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GUCA-DSA-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.7000000000000001,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "AOP-MAP-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-DSA-001",
+      "target": "GUCA-MAP-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-DSA-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    },
+    {
+      "source": "GUCA-MAP-001",
+      "target": "GVRN-SYNERGY-001",
+      "relation": "SYNERGY",
+      "metadata": {
+        "score": 0.5,
+        "algorithm": "catalyst_weaver_v1"
+      }
+    }
+  ]
+}

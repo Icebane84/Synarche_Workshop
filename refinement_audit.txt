@@ -1,0 +1,14 @@
+Auditing Library: c:\Users\Chris\Synarche_Workspace\_governance\10_Governance\GVRN.Protocol.Refinement.md
+
+=== COMPLIANCE AUDIT SUMMARY ===
+Total Scanned: 1
+PASSED:        0
+WARNING:       0
+FAILED:        1
+================================
+
+--- Top 5 Most Dissonant (FAIL) ---
+[FAIL] . (Score: 0.30)
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Invalid or missing Evolutionary Alignment.

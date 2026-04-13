@@ -1,0 +1,12 @@
+Auditing Library: c:\Users\Chris\Synarche_Workspace\axion-core\docs\SYNG\SYNG.DNA.CORE-001_DynamicNexusArchitect_v13.0.md
+
+=== COMPLIANCE AUDIT SUMMARY ===
+Total Scanned: 1
+PASSED:        0
+WARNING:       0
+FAILED:        1
+================================
+
+--- Top 5 Most Dissonant (FAIL) ---
+[FAIL] . (Score: 0.70)
+  !! UIP: Invalid or missing Evolutionary Alignment.

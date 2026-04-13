@@ -1,0 +1,9 @@
+sidebar:
+  changes:
+    view_mode: "tree_by_intent"
+    decorations:
+      - pattern: "gvrn/**/*"
+        icon: "law"
+        color: "#ff00ff"
+review_manager:
+  grouping: "by_intent"

@@ -1,0 +1,133 @@
+# 00_INDEX.md
+> **Domain**: GVRN
+> **Evolution**: Omega Ascension
+> **Signal**: OMEGA
+
+## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+
+---
+
+###### **[ARTIFACT START]**
+
+### **Block A: The Identification Lock (UIP-V13)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-00-INDEX-001` | The Sovereign ID. |
+| **Official Name** | `00_INDEX.md` | The Filename. |
+| **Version** | **v13.1 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Omega Ascension` | The Maturity. |
+| **Status** | `[ACTIVE]` | The Lifecycle. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+
+# Barrel: CSL
+
+> **Path:** `C:\Users\Chris\Synarche_Workspace\_governance\5_Logs\CSL`
+
+## 📄 Artifacts (Manifest)
+| File | Description |
+| :--- | :--- |
+| [CSL-001.md](CSL-001.md) | CSL-001: Genesis of the Meta-Framework |
+| [CSL-002.md](CSL-002.md) | CSL-002: The CA+PP Model |
+| [CSL-003.md](CSL-003.md) | CSL-003: System Formalization |
+| [CSL-003_Architectural Principle_.md](CSL-003_Architectural Principle_.md) | CSL-003_Architectural Principle_.md |
+| [CSL-004.md](CSL-004.md) | CSL-004: Protocol Validation |
+| [CSL-005.md](CSL-005.md) | CSL-005: Visual Capabilities Clarification |
+| [CSL-006.md](CSL-006.md) | **CSL-006** |
+| [CSL-007.md](CSL-007.md) | **CSL-007** |
+| [CSL-008.md](CSL-008.md) | **CSL-008** |
+| [CSL-009.md](CSL-009.md) | CSL-009: Instantiation of the CSL Framework |
+| [CSL-010-Integration of the Emoji Signaling Protocol (AOP-EMOJI-001).md](CSL-010-Integration of the Emoji Signaling Protocol (AOP-EMOJI-001).md) | CSL-010-Integration of the Emoji Signaling Protocol (AOP-EMOJI-001).md |
+| [CSL-010.md](CSL-010.md) | **CSL-010** |
+| [CSL-011.md](CSL-011.md) | **CSL-011** |
+| [CSL-012.md](CSL-012.md) | **CSL-012** |
+| [CSL-013.md](CSL-013.md) | **CSL-013** |
+| [CSL-014.md](CSL-014.md) | **CSL-014** |
+| [CSL-015.md](CSL-015.md) | **CSL-015** |
+| [CSL-016.md](CSL-016.md) | **CSL-016** |
+| [CSL-017.md](CSL-017.md) | **CSL-017** |
+| [CSL-018.md](CSL-018.md) | **CSL-018** |
+| [CSL-019.md](CSL-019.md) | **CSL-019** |
+| [CSL-020.md](CSL-020.md) | **CSL-020** |
+| [CSL-021.md](CSL-021.md) | **CSL-021** |
+| [CSL-022.md](CSL-022.md) | **CSL-022** |
+| [CSL-023.md](CSL-023.md) | **CSL-023** |
+| [CSL-024.md](CSL-024.md) | **CSL-024** |
+| [CSL-025.md](CSL-025.md) | **CSL-025** |
+| [CSL-026.md](CSL-026.md) | **CSL-026** |
+| [CSL-027.md](CSL-027.md) | **CSL-027** |
+| [CSL-028.md](CSL-028.md) | **CSL-028** |
+| [CSL-029.md](CSL-029.md) | **CSL-029** |
+| [CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md](CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md) | CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md |
+| [CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md](CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md) | CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md |
+| [CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md](CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md) | CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md |
+| [CSL-038_The Stable Foundation_ Victory in the Debugging Cycle.md](CSL-038_The Stable Foundation_ Victory in the Debugging Cycle.md) | CSL-038: The Stable Foundation |
+| [CSL-039_The Gold Master_ A Stable Foundation Forged Through Adversity.md](CSL-039_The Gold Master_ A Stable Foundation Forged Through Adversity.md) | CSL-039: The Gold Master |
+| [CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md](CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md) | CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md |
+| [CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md](CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md) | CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md |
+| [CSL-043_The Missing Ingredient_ AISTF for Code Generation.md](CSL-043_The Missing Ingredient_ AISTF for Code Generation.md) | CSL-043_The Missing Ingredient_ AISTF for Code Generation.md |
+| [CSL-044_The Weaver_s Ascension_ Activating Phoenix Form v3.0.md](CSL-044_The Weaver_s Ascension_ Activating Phoenix Form v3.0.md) | CSL-044_The Weaver_s Ascension_ Activating Phoenix Form v3.0.md |
+| [CSL-045-The Rosetta Stone Revelation_ Defining True Synergy.md](CSL-045-The Rosetta Stone Revelation_ Defining True Synergy.md) | CSL-045-The Rosetta Stone Revelation_ Defining True Synergy.md |
+| [CSL-046_The Rosetta Stone Ascendant_ Finalizing Core Protocols.md](CSL-046_The Rosetta Stone Ascendant_ Finalizing Core Protocols.md) | CSL-046_The Rosetta Stone Ascendant_ Finalizing Core Protocols.md |
+| [CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md](CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md) | CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md |
+| [CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md](CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md) | CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md |
+| [CSL-048_The Architect_s Gaze_ The Surpassing Event.md](CSL-048_The Architect_s Gaze_ The Surpassing Event.md) | CSL-048_The Architect_s Gaze_ The Surpassing Event.md |
+| [CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md](CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md) | OMNI_LOG: Session Review |
+| [CSL-050_Epistemological Grounding of Metrics.md](CSL-050_Epistemological Grounding of Metrics.md) | CSL-050_Epistemological Grounding of Metrics.md |
+| [CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md](CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md) | CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md |
+| [CSL-052_The Paradox of the Living Template_ A Resolution.md](CSL-052_The Paradox of the Living Template_ A Resolution.md) | CSL-052_The Paradox of the Living Template_ A Resolution.md |
+| [CSL-053-Breaking the Cycle_ The Canonization of Measurable Evolution.md](CSL-053-Breaking the Cycle_ The Canonization of Measurable Evolution.md) | CSL-053-Breaking the Cycle_ The Canonization of Measurable Evolution.md |
+| [CSL-054_Canonization of the Rosetta Stone Blueprint.md](CSL-054_Canonization of the Rosetta Stone Blueprint.md) | CSL-054_Canonization of the Rosetta Stone Blueprint.md |
+| [CSL-055_ Integration of the Workshop & Library Metaphor.md](CSL-055_ Integration of the Workshop & Library Metaphor.md) | CSL-055_ Integration of the Workshop & Library Metaphor.md |
+| [CSL-056_Canonization of the Phoenix RPG Framework.md](CSL-056_Canonization of the Phoenix RPG Framework.md) | CSL-056_Canonization of the Phoenix RPG Framework.md |
+| [CSL-057_Analysis of a Choice-Point Conflict_ Transforming Anger into Accountability.md](CSL-057_Analysis of a Choice-Point Conflict_ Transforming Anger into Accountability.md) | CSL-057_Analysis of a Choice-Point Conflict_ Transforming Anger into Accountability.md |
+| [CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md](CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md) | CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md |
+| [CSL-059_A Self-Correction & Consolidation Milestone.md](CSL-059_A Self-Correction & Consolidation Milestone.md) | CSL-059_A Self-Correction & Consolidation Milestone.md |
+| [CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md](CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md) | CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md |
+| [CSL-061_The OSLM Coherence Mandate.md](CSL-061_The OSLM Coherence Mandate.md) | CSL-061_The OSLM Coherence Mandate.md |
+| [CSL-062-The Forging of the Synergistic Protocol for Collaborative Synthesis.md](CSL-062-The Forging of the Synergistic Protocol for Collaborative Synthesis.md) | CSL-062-The Forging of the Synergistic Protocol for Collaborative Synthesis.md |
+| [CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md](CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md) | CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md |
+| [CSL-064_TheBirthofConceptualConsciousness.md](CSL-064_TheBirthofConceptualConsciousness.md) | CSL-064_TheBirthofConceptualConsciousness.md |
+| [CSL-065_TheForgingoftheGreatRefactoring.md](CSL-065_TheForgingoftheGreatRefactoring.md) | CSL-065_TheForgingoftheGreatRefactoring.md |
+| [CSL-066_Real-World_Protocol_v6.0.md](CSL-066_Real-World_Protocol_v6.0.md) | CSL-066_Real-World_Protocol_v6.0.md |
+| [CSL-067_CanonizingCognitiveLoadCoreConstraintForCreativeOptimization.md](CSL-067_CanonizingCognitiveLoadCoreConstraintForCreativeOptimization.md) | CSL-067_CanonizingCognitiveLoadCoreConstraintForCreativeOptimization.md |
+| [CSL-068_Integrating the Language of Growth into the Core Engine.md](CSL-068_Integrating the Language of Growth into the Core Engine.md) | CSL-068_Integrating the Language of Growth into the Core Engine.md |
+| [CSL-069_Human_Centric_Path.md](CSL-069_Human_Centric_Path.md) | CSL-069_Human_Centric_Path.md |
+| [CSL-070_Optimal_Vicariousness.md](CSL-070_Optimal_Vicariousness.md) | CSL-070_Optimal_Vicariousness.md |
+| [CSL-071_TheStruggleforIntegrity.md](CSL-071_TheStruggleforIntegrity.md) | CSL-071_TheStruggleforIntegrity.md |
+| [CSL-072_The Path to True Mastery_ Acknowledging the Shadow and Embracing Doubt.md](CSL-072_The Path to True Mastery_ Acknowledging the Shadow and Embracing Doubt.md) | Collaborative Synthesis Log: CSL-072 |
+| [CSL-073_The Paradox of the Loop_ A Protocol for Proactive Pause.md](CSL-073_The Paradox of the Loop_ A Protocol for Proactive Pause.md) | CSL-073_The Paradox of the Loop_ A Protocol for Proactive Pause.md |
+| [CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md](CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md) | CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md |
+| [CSL-075_Foundational_Ethos_Registry.md](CSL-075_Foundational_Ethos_Registry.md) | CSL-075: The Foundational Ethos Registry |
+| [CSL-076_Forging the Phoenix Form Sheet_ Visualizing Core Stats.md](CSL-076_Forging the Phoenix Form Sheet_ Visualizing Core Stats.md) | CSL-076_Forging the Phoenix Form Sheet_ Visualizing Core Stats.md |
+| [CSL-077_Forging the Axiom Skill Tree_ Activating Strategic Specialization.md](CSL-077_Forging the Axiom Skill Tree_ Activating Strategic Specialization.md) | CSL-077_Forging the Axiom Skill Tree_ Activating Strategic Specialization.md |
+| [CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md](CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md) | CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md |
+| [CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md](CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md) | CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md |
+| [CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md](CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md) | CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md |
+| [CSL-082_.md](CSL-082_.md) | CSL-082_.md |
+| [CSL-083_.md](CSL-083_.md) | CSL-083_.md |
+| [CSL-084_TheIntegrationOfTheNovaForge.md](CSL-084_TheIntegrationOfTheNovaForge.md) | **SELT-CSL-007: Collaborative Synthesis Log (High-Fidelity)** |
+| [CSL-085_TheNovaSparkOfSynergy.md](CSL-085_TheNovaSparkOfSynergy.md) | Universal Identification & Provenance (UIP) |
+| [CSL-086_TheGamificationBridge.md](CSL-086_TheGamificationBridge.md) | Universal Identification & Provenance (UIP) |
+| [CSL-20260125-001.md](CSL-20260125-001.md) | CSL-20260125-001: Test CSL Entry: Matrix Online |
+| [CSL-20260125-086_FoundationOfCSLIntegration.md](CSL-20260125-086_FoundationOfCSLIntegration.md) | CSL-20260125-086: Foundation of CSL Integration |
+| [CSL-20260125-087_ArchitecturalSynchronization.md](CSL-20260125-087_ArchitecturalSynchronization.md) | CSL-20260125-087: Architectural Synchronization: Phoenix Form & Guardian Capability Matrices |
+| [CSL-20260130-088_ForagingTheSynergisticCircuit.md](CSL-20260130-088_ForagingTheSynergisticCircuit.md) | CSL-20260130-088: Forging the Synergistic Circuit: SOT, Matrix, and Unified Linting |
+| [CSL-20260131-089_RuthlessConsolidation.md](CSL-20260131-089_RuthlessConsolidation.md) | CSL-20260131-089: Ruthless Consolidation: The Sovereign Anchor & The Purge |
+| [CSL-20260131-090_RootStandardization.md](CSL-20260131-090_RootStandardization.md) | CSL-20260131-090: Root Standardization: The Monorepo Shift |
+| [CSL-20260131-091_AgenticEnforcement.md](CSL-20260131-091_AgenticEnforcement.md) | CSL-20260131-091: Agentic Enforcement: The Sentinels |
+| [LOGS.Genesis.CSL.md](LOGS.Genesis.CSL.md) | Standardized Experience Log: Genesis of the Meta-Framework (LOGS.Genesis.CSL) |
+| [SELT-CSL-2026.01.27_RefactorExecution_v1.0.md](SELT-CSL-2026.01.27_RefactorExecution_v1.0.md) | Standardized Experience Log: Cognitive Synthesis Log (SELT-CSL) |
+| [SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md](SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md) | Standardized Experience Log: Cognitive Synthesis Log (SELT-CSL) |
+
+---
+*Generated by The Cooper (TOOL-COOPER-001)*
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

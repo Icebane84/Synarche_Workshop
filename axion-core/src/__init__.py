@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 """
 ## **[ARTIFACT START]**
 
@@ -51,3 +52,14 @@
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
 `[OMNI-ARTIFACT-ANCHOR] ID: CORE...init.. VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 719add66cf3122d0`
+=======
+
+# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+# System Slot: Passive Knowledge
+# Synergy Set: N/A
+# Primary Stat Buff: Adaptability
+# Passive Ability: The Forge's Heart (Auto-Refactor)
+# Cognitive Load Cost: Low
+# XP Award Value: 50 XP
+
+>>>>>>> Stashed changes
