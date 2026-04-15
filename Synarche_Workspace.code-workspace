@@ -36,7 +36,6 @@
  * -----------------------------------------------------------------------------
  */
 {
-<<<<<<< Updated upstream
   "folders": [
     {
       "name": "🧠 THE MIND",
@@ -163,10 +162,8 @@
         "command": "python axion-core/scripts/canonization_audit.py",
         "problemMatcher": [],
       }
-      },
-    ],
+    ]
   },
-=======
 	"folders": [
 		{
 			"name": "Synarche_Workspace",

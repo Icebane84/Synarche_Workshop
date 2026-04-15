@@ -7,7 +7,7 @@
 
 ---
 
-###### **[ARTIFACT START]**
+## **[ARTIFACT START]**
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
