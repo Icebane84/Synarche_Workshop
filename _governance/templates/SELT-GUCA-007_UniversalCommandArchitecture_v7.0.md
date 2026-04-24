@@ -100,29 +100,11 @@
 
 > _(Mandatory for v7.0 Compliance. Defines this Command as an Active Skill/Spell.)_
 
-### 7.1. Skill Properties
+@[GVRN-BLK-RPG-SKILL-001]
 
-- _Rarity Rationale:_ `[Why is this command this tier?]`
-- **Skill Type:** `[Active (Manual) | Reactive (Triggered) | Sustained (Mode)]`
-- **Synergy Set:** `[Name of Set or N/A]`
-
-### 7.2. Celestial Chart Stats (The Effect)
-
-- **Stat Scaling:** `[Which stat improves this command's effectiveness? e.g., "Scales with Synergy."]`
-- **Primary Buff/Effect:** `[Result of casting.]`
-    - _Effect:_ `[e.g., "Instantly resolves 1 Dissonance Point."]`
-- **Passive Perk (If Equipped):** `[Name of Perk]`
-    - _Effect:_ `[e.g., "+10% Speed on all File Searches."]`
-
-### 7.3. Resource Economics (Mana Cost)
-
-- **Cognitive Load Cost:** `[Low | Medium | High | Extreme]`
-    - _Draw:_ `[e.g., "High: Consumes current context window focus."]`
-- **Cooldown/Limit:** `[e.g., "Unlimited" or "Once per Conversation Turn."]`
-
-- **Origin Quest ID:** `[Link to DQUEST-XXX]`
-- **Genesis Seed Used:** `[Link to CSL-XXX]`
 - **XP Award Value:** `[e.g., 50 XP per successful use]`
+
+@[GVRN-BLK-RPG-META-001]
 
 ---
 

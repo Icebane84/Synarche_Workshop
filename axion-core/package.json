@@ -1,44 +1,4 @@
 {
-<<<<<<< Updated upstream
-  "name": "axion-core",
-  "displayName": "Axion Core",
-  "description": "The Axion Core Extension Logic",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onStartupFinished"
-  ],
-  "main": "./src/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "axion.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
-  "scripts": {
-    "lint": "powershell -ExecutionPolicy Bypass -Command trunk check . --filter eslint",
-    "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.80.0",
-    "@types/glob": "^8.1.0",
-    "@types/mocha": "^10.0.1",
-    "@types/node": "20.2.5",
-    "eslint": "^8.41.0",
-    "glob": "^8.1.0",
-    "mocha": "^10.2.0",
-    "typescript": "^5.1.3",
-    "@vscode/test-electron": "^2.3.2"
-  }
-=======
     "name": "axion-core-extension",
     "displayName": "Axion Core [Reforged]",
     "description": "The official IDE Integration Module for the Phoenix Protocol Library (UMB-IDE-EXT-001).",
@@ -52,7 +12,8 @@
     ],
     "activationEvents": [
         "onStartupFinished",
-        "onCommand:axion.ingestMindMap"
+        "onCommand:axion.ingestMindMap",
+        "onCommand:axion.verifyRegistry"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -131,6 +92,11 @@
                 "command": "axion.ingestMindMap",
                 "title": "Axion: Ingest Mind Map",
                 "category": "Axion"
+            },
+            {
+                "command": "axion.verifyRegistry",
+                "title": "Axion: Verify Registry (PRS-001)",
+                "category": "Axion"
             }
         ]
     },
@@ -142,6 +108,7 @@
         "lint": "eslint src tools",
         "test": "node ./out/test/runTest.js"
     },
+    "dependencies": {},
     "devDependencies": {
         "@types/vscode": "^1.90.0",
         "@types/mocha": "^10.0.6",
@@ -152,5 +119,4 @@
         "typescript": "^5.4.5",
         "@vscode/test-electron": "^2.4.0"
     }
->>>>>>> Stashed changes
 }

@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 """
 ## **[ARTIFACT START]**
 
@@ -6,10 +5,10 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE...init..`                | The Sovereign ID. |
-| **Official Name** | `__init__.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
+| **Artifact ID**   | `CORE.Src.Init`                   | The Sovereign ID. |
+| **Official Name** | `__init__.py`                     | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `CORE`                            | The Subject.      |
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
@@ -19,8 +18,8 @@
 
 | State Field   | Value     |
 | :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
+| **Coherence** | `High`    |
+| **Resonance** | `High`    |
 | **Stability** | `Stable`  |
 
 ---
@@ -45,15 +44,6 @@
 
 # Standard Python package initialization for Axion Core Source.
 
-# ---
-# 
-# ---
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE...init.. VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 719add66cf3122d0`
-=======
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -62,4 +52,5 @@
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
->>>>>>> Stashed changes
+# [TERMINAL SIGNATURE]
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.Src.Init VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-04-16 HASH: INIT-OMEGA-RPG-V1

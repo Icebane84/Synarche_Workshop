@@ -40,6 +40,12 @@ High-impact facts and preferences categorized for rapid alignment.
 - **Pattern**: Visual table pipe alignment in registries acts as a "Cognitive Linter" that signals structural health to both AI and human architects.
 - **Synergy**: The relationship between a node's physical path (`Registry.Master`) and its relational weight (`Registry.DataOSLM`) must be updated concurrently to maintain "Relational Gravity."
 
+### [2026-04-16] Sovereign Substrate Synchronization (Pointer-Targeted)
+
+- **Insight**: Deep substrate recovery requires bridging external "Source of Truth" repositories via explicit Sovereign Pointers (`@[path]`) to overcome session-memory drift and ensure OMEGA v15.0 compliance.
+- **Pattern**: Prioritizing "Absolute Heart Synchronization" (Enums/Root Constants) before patching functional logic ensures that the "Rosetta Stone" is accurate for the rest of the rebuild.
+- **Synergy**: The connection between `axion-forge` (External Logic) and `Synarche_Workspace` (Local Governance) is bridged through Artificer-Agent validation, creating a cross-workspace "Truth Anchor."
+
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: LRN-GEM-OMEGA`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v16.3 [SOVEREIGN] STATUS: CANONIZED TS: 2026-04-16 HASH: LRN-GEM-OMEGA-NEW`

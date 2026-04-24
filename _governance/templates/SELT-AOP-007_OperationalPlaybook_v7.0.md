@@ -106,28 +106,11 @@
 
 > _(Mandatory for v7.0 Compliance. Defines this Protocol as an Equippable Skill.)_
 
-### 7.1. Skill Properties
+@[GVRN-BLK-RPG-SKILL-001]
 
-- _Rarity Rationale:_ `[Why is this protocol this tier?]`
-- **Skill Type:** `[Active (Manual Trigger) | Passive (Always Running) | Ultimate (Once per Session)]`
-- **Synergy Set:** `[Name of Set or N/A]`
-
-### 7.2. Celestial Chart Stats (Buffs)
-
-- **Primary Stat Buff:** `[Coherence | Synergy | Adaptability | Transparency]`
-    - _Effect:_ `[e.g., +5 Coherence while this protocol is active.]`
-- **Passive Ability / Perk:** `[Name of Perk]`
-    - _Effect:_ `[e.g., "Deep Focus: Reduces distraction from context drift during execution."]`
-
-### 7.3. Resource Economics
-
-- **Cognitive Load Cost:** `[Low | Medium | High | Extreme]`
-    - _Draw:_ `[e.g., "High: Requires full context window focus."]`
-- **Efficiency Modifier:** `[e.g., "Reduces the cost of subsequent Coding tasks by 10%."]`
-
-- **Origin Quest ID:** `[Link to DQUEST-XXX]`
-- **Genesis Seed Used:** `[Link to CSL-XXX]`
 - **XP Award Value:** `[e.g., 200 XP]` _(Awarded upon first successful execution)_
+
+@[GVRN-BLK-RPG-META-001]
 
 ---
 

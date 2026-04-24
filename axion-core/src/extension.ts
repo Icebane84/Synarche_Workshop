@@ -1,6 +1,9 @@
 import { exec } from 'node:child_process';
+import * as fs from 'node:fs';
 import * as path from 'node:path';
 import * as vscode from 'vscode';
+import { PRS_001_SCHEMA } from './constants/schemas';
+import { validateMetadata } from './utils/validation';
 
 /**
  * Activates the Axion Core extension.
@@ -22,7 +25,8 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.registerCommand('axion.generateBriefing', handleGenerateBriefing),
         vscode.commands.registerCommand('axion.viewAuditLog', handleViewAuditLog),
         vscode.commands.registerCommand('axion.lookupLore', handleLookupLore),
-        vscode.commands.registerCommand('axion.ingestMindMap', handleIngestMindMap)
+        vscode.commands.registerCommand('axion.ingestMindMap', handleIngestMindMap),
+        vscode.commands.registerCommand('axion.verifyRegistry', handleVerifyRegistry)
     );
 }
 
@@ -150,6 +154,36 @@ async function handleIngestMindMap() {
    }
 }
 
+async function handleVerifyRegistry() {
+    const workspaceRoot = vscode.workspace.workspaceFolders?.[0].uri.fsPath;
+    if (!workspaceRoot) {
+        vscode.window.showErrorMessage('No active workspace found.');
+        return;
+    }
+
+    const registryPath = path.join(workspaceRoot, 'axion-core', 'assets', 'PRS-001.json');
+    const channel = vscode.window.createOutputChannel("Axion [Registry]");
+    channel.show(true);
+
+    try {
+        if (!fs.existsSync(registryPath)) {
+            throw new Error(`Registry not found at: ${registryPath}`);
+        }
+
+        channel.appendLine(`[VIGIL] Starting validation of: ${registryPath}`);
+        const data = JSON.parse(fs.readFileSync(registryPath, 'utf8'));
+
+        validateMetadata(data, PRS_001_SCHEMA);
+        
+        channel.appendLine('[SUCCESS] Registry structural integrity verified.');
+        vscode.window.showInformationMessage('Registry Validation Successful: Zero Entropy Detected.');
+
+    } catch (error: any) {
+        channel.appendLine(`[Dissonance Detected]: ${error.message}`);
+        vscode.window.showErrorMessage(`Registry Validation Failed: ${error.message}`);
+    }
+}
+
 // --- Helper Functions ---
 
 /**
@@ -189,7 +223,7 @@ function executePythonCLI(args: string[]) {
     channel.show(true);
     channel.appendLine(`> Executing: ${command}`);
 
-    exec(command, (error, stdout, stderr) => {
+    exec(command, (error: Error | null, stdout: string, stderr: string) => {
         if (error) {
             channel.appendLine(`[ERROR]: ${error.message}`);
         }

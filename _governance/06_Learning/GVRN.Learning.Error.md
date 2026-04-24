@@ -27,22 +27,6 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 
 ## 🏛️ Block B: Error Ledger
 
-<<<<<<< Updated upstream
-| Timestamp  | ID          | Failure               | Root Cause                                    | Status      |
-| :--------- | :---------- | :-------------------- | :-------------------------------------------- | :---------- |
-| 2026-03-16 | ERR-LOG-001 | Mypy Daemon Missing   | dmypy not found in PATH                       | [FIXED]     |
-| 2026-03-16 | ERR-LOG-002 | Link Fragmentation    | Broken links in Rosetta Stone Matrix          | [RESOLVING] |
-| 2026-03-17 | ERR-LOG-003 | Test Collection Fail  | Absolute imports (src.) in tests              | [FIXED]     |
-| 2026-03-17 | ERR-LOG-004 | Runtime Signature     | Deprecated config injection in init           | [FIXED]     |
-| 2026-03-18 | ERR-LOG-005 | Pathway Dissonance    | MCP pointing to empty local scripts           | [FIXED]     |
-| 2026-03-18 | ERR-LOG-006 | Registry Decay        | Unregistered types (trunk/Java)               | [RESOLVED]  |
-| 2026-03-19 | ERR-LOG-007 | Metadata Omission     | `write_to_file` missing ArtifactMetadata      | [FIXED]     |
-| 2026-03-19 | ERR-LOG-008 | Content Dissonance    | `multi_replace` target mismatch               | [FIXED]     |
-| 2026-03-16 | ERR-LOG-009 | Reductive Synthesis   | Rule synthesis too concise; lost TIER context | [FIXED]     |
-| 2026-03-22 | ERR-LOG-010 | Header Dissonance     | Broken/Legacy UIP headers in core subsystems  | [FIXED]     |
-| 2026-03-22 | ERR-LOG-011 | Layout Inconsistency  | Missing blank lines around headings/fences    | [REMEDIED]  |
-| 2026-03-23 | ERR-LOG-012 | Loom Regex Dissonance | Block boundary matched text inside tables     | [FIXED]     |
-=======
 | Timestamp  | ID          | Failure                  | Root Cause                                           | Status      |
 | :--------- | :---------- | :----------------------- | :--------------------------------------------------- | :---------- |
 | 2026-03-16 | ERR-LOG-001 | Mypy Daemon Missing      | dmypy not found in PATH                              | [FIXED]     |
@@ -61,8 +45,7 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 | 2026-04-08 | ERR-LOG-014 | Orchestration Bloat      | Monolithic synthesis logic exceeding complexity 15   | [FIXED]     |
 | 2026-04-08 | ERR-LOG-015 | Multi-Header Mutilation  | Naive regex replacement lacking idempotency logic    | [RESOLVED]  |
 | 2026-04-09 | ERR-LOG-016 | Metadata Truncation      | Lack of state-buffering in text replacement tool     | [FIXED]     |
-| 2026-04-12 | ERR-LOG-017 | Python Shadowing failure | forge/enum.py shadowed the stdlib enum module        | [FIXED]     |
->>>>>>> Stashed changes
+| 2026-04-12 | ERR-LOG-017 | Python Shadowing         | Local enum.py colliding with stdlib enum             | [FIXED]     |
 
 ---
 
@@ -113,11 +96,6 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 - **Analysis:** The Loom's `push` logic used native substring search (`.find("---")`) to locate the `Block A` terminator. Because `---` is valid Markdown table alignment syntax, the Loom cleaved the block inside the table and aggressively appended a duplicate on every cycle, corrupting 982 files with cascading stacked headers.
 - **Remediation:** Transmuted the substring search in `GVRN.Loom.Registry.py` to a strict multiline regex (`^\s*---\s*$`). Executed a systemic `push` to excise all redundant blocks, followed by a `pull` to reestablish pristine Component Hashes.
 
-<<<<<<< Updated upstream
----
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Error VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: LRN-ERR-OMEGA`
-=======
 ### ERR-LOG-013: Syntactic Barrier Breach (Header Dissonance)
 
 - **Analysis:** Embedding Markdown-formatted `Block A` tables and OMNI-Anchors in the headers of Python scripts caused "IndentationError" and "Invalid Syntax" triggers in linters.
@@ -131,10 +109,15 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 ### ERR-LOG-015: Multi-Header Mutilation
 
 - **Analysis:** The `MassStandardizerPro` engine was naively appending/replacing OMEGA metadata blocks without purging pre-existing or legacy signatures. This caused a feedback loop during mass-standardization sweeps, where artifacts accumulated multiple redundant Block A and OMNI-Anchor signatures.
-- **Remediation:** Implemented the **Forge v5 ("Heart Extractor")** logic.
-  1. **Scorch Strategy**: Aggressive purging of existing signatures before applying fresh ones.
-  2. **Bidirectional Boundary Scan**: Isolating artifact content between the Top-Down metadata terminator and the Bottom-Up terminal signature.
-  3. **Absolute Idempotency**: Preliminary scan to verify presence of resonant signatures before attempting writes.
+- **Remediation:** Implemented the **Forge v5 ("Heart Extractor")** logic. 
+    1. **Scorch Strategy**: Aggressive purging of existing signatures before applying fresh ones.
+    2. **Bidirectional Boundary Scan**: Isolating artifact content between the Top-Down metadata terminator and the Bottom-Up terminal signature.
+    3. **Absolute Idempotency**: Preliminary scan to verify presence of resonant signatures before attempting writes.
+
+### ERR-LOG-016: Metadata Replacement Truncation
+
+- **Analysis:** Attempting bulk metadata updates using text-based line matching (`multi_replace`) on artifacts with variable spacing or multi-header blocks. The tool can fail to match exact character sequences if the file state shifted slightly or if block boundaries were ambiguous, leading to empty (0-byte) files.
+- **Remediation:** "The Sovereign Shield": All bulk taxonomy changes must use **Buffered-Write** patterns (Read entire content -> Programmatic transformation -> Atomic Write) to guarantee data integrity.
 
 ### ERR-LOG-017: Python Shadowing (enum.py)
 
@@ -143,13 +126,6 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Error VER: v16.6 [SOVEREIGN] STATUS: CANONIZED TS: 2026-04-12 HASH: LRN-ERR-OMEGA-V4`
->>>>>>> Stashed changes
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Error VER: v16.6 [SOVEREIGN] STATUS: CANONIZED TS: 2026-04-16 HASH: LRN-ERR-OMEGA-V5`
 
-| ERR-20260319-705 | 2026-03-19 04:35:02 | | 1 | [ ] |
-
-> **Context**:
-
-| ERR-20260319-963 | 2026-03-19 23:52:02 | | 1 | [ ] |
-
-> **Context**:
+- [[GVRN.Learning.Index]]

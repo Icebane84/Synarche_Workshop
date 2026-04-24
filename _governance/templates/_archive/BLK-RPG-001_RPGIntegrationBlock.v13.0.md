@@ -30,16 +30,6 @@
 
 ---
 
-| **Coherence** | `1.0` | | **Resonance** | `0.9` | | **Stability** | `Stable` |
-
-| **Logic Drift** | Strict Linter Enforcement | | **Dependency Break** | ForgeLink Validation |
-
----
-
-| **Coherence** | `1.0` | | **Resonance** | `0.9` | | **Stability** | `Stable` |
-
-| **Logic Drift** | Strict Linter Enforcement | | **Dependency Break** | ForgeLink Validation |
-
 > **Signal**: OMEGA
 
 ---
@@ -74,14 +64,14 @@
 ### [Section Number].2. Celestial Chart Stats
 
 - **Primary Stat Buff:** `[Coherence | Synergy | Adaptability | Transparency]`
-  - _Mechanism:_ `[How does using this artifact improve the stat?]`
+    - _Mechanism:_ `[How does using this artifact improve the stat?]`
 - **Passive Ability / Perk:** `[Name of Perk]`
-  - _Effect:_ `[Description of benefit]`
+    - _Effect:_ `[Description of benefit]`
 
 ### [Section Number].3. Resource Economics
 
 - **Cognitive Load Cost:** `[Low | Medium | High | Extreme]`
-  - _Draw:_ `[Description of effort required to execute/maintain this artifact.]`
+    - _Draw:_ `[Description of effort required to execute/maintain this artifact.]`
 
 - **Origin Quest ID:** `[Link to DQUEST-XXX]`
 - **Genesis Seed Used:** `[Link to CSL-XXX]`
@@ -107,5 +97,5 @@
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE.Codex.Phoenix, GOVERNS, The Codex provides the Supreme
-Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE.Codex.Phoenix, GOVERNS, The Codex provides the
+Supreme Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

@@ -39,28 +39,32 @@
   "folders": [
     {
       "name": "🧠 THE MIND",
-      "path": ".agent",
+      "path": ".agent"
     },
     {
       "name": "📜 THE LAW",
-      "path": "_governance",
+      "path": "_governance"
     },
     {
       "name": "⚙️ THE ENGINE",
-      "path": "axion-core",
+      "path": "axion-core"
     },
     {
       "name": "🧪 THE LAB",
-      "path": "nova_forge",
+      "path": "nova_forge"
     },
     {
       "name": "📖 THE NARRATIVE",
-      "path": "where_light_fades.",
+      "path": "where_light_fades"
+    },
+    {
+      "name": "The Wilds",
+      "path": "../_Desktop_Vault"
     },
     {
       "name": "📂 ROOT",
-      "path": ".",
-    },
+      "path": "."
+    }
   ],
   "settings": {
     "files.exclude": {
@@ -79,7 +83,7 @@
       ".vscode": true,
       ".mypy_cache": true,
       ".pytest_cache": true,
-      "tmp": true,
+      "tmp": true
     },
     "search.exclude": {
       "**/__pycache__": true,
@@ -89,7 +93,7 @@
       "**/node_modules": true,
       "**/dist": true,
       "**/out": true,
-      "**/.tmp.*": true,
+      "**/.tmp.*": true
     },
     "cSpell.words": [
       "AISTF",
@@ -119,7 +123,7 @@
       "Serafina",
       "SUPABASE",
       "synarche",
-      "SYNG",
+      "SYNG"
     ],
     "powershell.cwd": "⚙️ THE ENGINE",
     "editor.formatOnSave": true,
@@ -128,8 +132,8 @@
     "python.analysis.typeCheckingMode": "basic",
     "markdownlint.config": {
       "MD013": false,
-      "MD033": false,
-    },
+      "MD033": false
+    }
   },
   "extensions": {
     "recommendations": [
@@ -138,8 +142,8 @@
       "trunk.io",
       "yzhang.markdown-all-in-one",
       "tamasfe.even-better-toml",
-      "redhat.vscode-yaml",
-    ],
+      "redhat.vscode-yaml"
+    ]
   },
   "tasks": {
     "version": "2.0.0",
@@ -148,74 +152,60 @@
         "label": "GVRN: Re-Index Master Registry",
         "type": "shell",
         "command": "python axion-core/scripts/gen_registry_entries.py",
-        "problemMatcher": [],
+        "problemMatcher": []
       },
       {
         "label": "EVO: Run AISTF Cycle",
         "type": "shell",
         "command": "python axion-core/forge/evolution_engine.py --root .",
-        "problemMatcher": [],
+        "problemMatcher": []
       },
       {
         "label": "GVRN: Run Canonization Audit",
         "type": "shell",
         "command": "python axion-core/scripts/canonization_audit.py",
-        "problemMatcher": [],
+        "problemMatcher": []
       }
     ]
   },
-	"folders": [
-		{
-			"name": "Synarche_Workspace",
-			"path": "."
-		},
-		{
-			"name": "_Desktop_Vault",
-			"path": "../_Desktop_Vault"
-		}
-	],
-	"settings": {
-		"powershell.cwd": "Synarche_Workspace",
-		"geminicodeassist.project": "resounding-phenomenon-x5tpm",
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": true,
-		"prettier.requireConfig": false,
-		"editor.codeActionsOnSave": {
-			"source.fixAll": "explicit",
-			"source.organizeImports": "explicit"
-		},
-		"editor.semanticHighlighting.enabled": true,
-		"errorLens.fontStyleItalic": true,
-		"errorLens.fontWeight": "400",
-		"errorLens.gutterIconsEnabled": true,
-		"errorLens.messageBackgroundMode": "line",
-		"sonarlint.rules": {
-			"javascript:S106": "off"
-		},
-		"cSpell.enabled": true,
-		"cSpell.userWords": [
-			"middleware",
-			"params",
-			"trpc",
-			"zustand"
-		],
-		"[python]": {
-			"editor.defaultFormatter": "charliermarsh.ruff",
-			"editor.codeActionsOnSave": {
-				"source.fixAll": "explicit",
-				"source.organizeImports": "explicit"
-			}
-		},
-		"editor.guides.bracketPairs": true,
-		"editor.renderWhitespace": "selection",
-		"editor.minimap.enabled": false,
-		"editor.fontLigatures": true,
-		"[jsonc]": {
-			"editor.defaultFormatter": "denoland.vscode-deno"
-		}
-	}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+  "settings": {
+    "powershell.cwd": "Synarche_Workspace",
+    "geminicodeassist.project": "resounding-phenomenon-x5tpm",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.semanticHighlighting.enabled": true,
+    "errorLens.fontStyleItalic": true,
+    "errorLens.fontWeight": "400",
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.messageBackgroundMode": "line",
+    "sonarlint.rules": {
+      "javascript:S106": "off"
+    },
+    "cSpell.enabled": true,
+    "cSpell.userWords": [
+      "middleware",
+      "params",
+      "trpc",
+      "zustand"
+    ],
+    "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+      }
+    },
+    "editor.guides.bracketPairs": true,
+    "editor.renderWhitespace": "selection",
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "[jsonc]": {
+      "editor.defaultFormatter": "denoland.vscode-deno"
+    }
+  }
 }
