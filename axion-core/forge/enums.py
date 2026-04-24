@@ -17,20 +17,24 @@
 # Acts as the 'Rosetta Stone' for the Linter, Auditor, and Sophia Engine.
 """
 
-from dataclasses import dataclass
-from enum import Enum
-from typing import List, Optional
 import json
 import os
+from dataclasses import dataclass
+from enum import Enum
+from typing import Any, TypedDict, cast
+
+from dotenv.variables import Literal
 
 # Resolve GVRN Standards
 STANDARDS_PATH = "c:/Users/Chris/Synarche_Workspace/_governance/13_Standardization/GVRN.Standards.json"
 
-def load_standards():
+
+def load_standards() -> dict[str, Any]:
     if os.path.exists(STANDARDS_PATH):
-        with open(STANDARDS_PATH, 'r', encoding='utf-8') as f:
-            return json.load(f)
+        with open(STANDARDS_PATH, encoding="utf-8") as f:
+            return cast(dict[str, Any], json.load(f))
     return {}
+
 
 STANDARDS = load_standards()
 SOVEREIGN_ID_REGEX = STANDARDS.get("regex", {}).get("SOVEREIGN_ID", r"^[A-Z0-9\-]{3,12}(\.[A-Z0-9_\-\.]+){0,5}$")
@@ -64,9 +68,9 @@ class Status(str, Enum):
 class AuditStatus(str, Enum):
     """The Result of a Compliance Scan."""
 
-    PASS = "PASS"  #
-    WARNING = "WARNING"  #
-    FAIL = "FAIL"  #
+    PASS = "PASS"
+    WARNING = "WARNING"
+    FAIL = "FAIL"
 
 
 class RiskLevel(str, Enum):
@@ -163,10 +167,10 @@ class ArtifactType(str, Enum):
     OMNI_LOG = "OMNI_LOG"  # A master template for command output that includes session narratives, performance reviews, and actionable outcomes
 
     # Structural Types
-    PROTOCOL = "Protocol"  #
-    STANDARD = "Standard"  #
-    DIRECTIVE = "Directive"  #
-    MECHANISM = "Mechanism"  #
+    PROTOCOL = "Protocol"
+    STANDARD = "Standard"
+    DIRECTIVE = "Directive"
+    MECHANISM = "Mechanism"
     ENTITY = "Entity"  # Active Agents (Sophia, Sentinel)
     CODE = "Code"  # Python Scripts
     MATRIX = "Matrix"  # Mapping Tables
@@ -199,20 +203,20 @@ class RelationType(str, Enum):
     DEPENDS_ON = "DEPENDS_ON"  # Hard Dependency
 
     # Structural
-    CONTAINS = "CONTAINS"  #
-    IS_A_COMPONENT_OF = "IS_A_COMPONENT_OF"  #
-    UPGRADES = "UPGRADES"  #
-    EXTENDS = "EXTENDS"  #
+    CONTAINS = "CONTAINS"
+    IS_A_COMPONENT_OF = "IS_A_COMPONENT_OF"
+    UPGRADES = "UPGRADES"
+    EXTENDS = "EXTENDS"
 
     # Governance
-    GOVERNS = "GOVERNS"  #
+    GOVERNS = "GOVERNS"
 
     # Kinetic / Procedural
-    INVOKES = "INVOKES"  #
-    ENABLES = "ENABLES"  #
-    CONSUMES_DATA_FROM = "CONSUMES_DATA_FROM"  #
-    FEEDS_DATA_TO = "FEEDS_DATA_TO"  #
-    UTILIZES = "UTILIZES"  #
+    INVOKES = "INVOKES"
+    ENABLES = "ENABLES"
+    CONSUMES_DATA_FROM = "CONSUMES_DATA_FROM"
+    FEEDS_DATA_TO = "FEEDS_DATA_TO"
+    UTILIZES = "UTILIZES"
 
     # Relational Progression (Legacy strings)
     BLUEPRINT_TO_PROTOCOL = "Blueprint -> Protocol"
@@ -220,44 +224,44 @@ class RelationType(str, Enum):
     COMMAND_TO_TOOL = "Command -> Tool"
     SKILL_TO_TOOL = "Skill -> Tool"
     ENTRY_TO_GATE = "Entry -> Gate"
-    PROVIDES_INPUT_FOR = "PROVIDES_INPUT_FOR"  #
-    RECEIVES_OUTPUT_FROM = "RECEIVES_OUTPUT_FROM"  #
+    PROVIDES_INPUT_FOR = "PROVIDES_INPUT_FOR"
+    RECEIVES_OUTPUT_FROM = "RECEIVES_OUTPUT_FROM"
 
     # Synergy
-    SYNERGY = "SYNERGY"  #
-    ENHANCES = "ENHANCES"  #
-    RESOLVES_DISSONANCE_OF = "RESOLVES_DISSONANCE_OF"  #
-    TRANSCENDS = "TRANSCENDS"  #
-    AWAKENS = "AWAKENS"  #
-    SYNERGISTIC_PARTNER = "SYNERGISTIC_PARTNER"  #
+    SYNERGY = "SYNERGY"
+    ENHANCES = "ENHANCES"
+    RESOLVES_DISSONANCE_OF = "RESOLVES_DISSONANCE_OF"
+    TRANSCENDS = "TRANSCENDS"
+    AWAKENS = "AWAKENS"
+    SYNERGISTIC_PARTNER = "SYNERGISTIC_PARTNER"
     BONDS = "BONDS"  # For fusing hidden nodes into structure
     VEILS = "VEILS"  # For selective masking/logic tiers
 
     # Legacy / Compatibility (Non-redundant)
-    REFERENCES = "REFERENCES"  #
-    IS_EXAMPLE_OF = "IS_EXAMPLE_OF"  #
-    IS_POWERED_BY = "IS_POWERED_BY"  #
-    MEASURES = "MEASURES"  #
-    INTEGRATES = "INTEGRATES"  #
-    ENFORCES = "ENFORCES"  #
-    ROOT_NODE_FOR = "ROOT_NODE_FOR"  #
-    CROSS_REFERENCES = "CROSS_REFERENCES"  #
-    TERMINATES_IN = "TERMINATES_IN"  #
-    FOUNDATIONAL_FOR = "FOUNDATIONAL_FOR"  #
-    OPERATES_AS = "OPERATES_AS"  #
-    SYNERGIZES_WITH = "SYNERGIZES_WITH"  #
-    INTERFACE_PERSONA_OF = "INTERFACE_PERSONA_OF"  #
-    DEFINED_BY = "DEFINED_BY"  #
-    IMPLEMENTED_BY = "IMPLEMENTED_BY"  #
-    CHILD_OF = "CHILD_OF"  #
-    LINKED_TO = "LINKED_TO"  #
-    MONITORED_BY = "MONITORED_BY"  #
-    EVOLVED_FROM = "EVOLVED_FROM"  #
-    VALIDATES = "VALIDATES"  #
-    VALIDATED_BY = "VALIDATED_BY"  #
-    OVERSIGHT_SYSTEM = "OVERSIGHT_SYSTEM"  #
-    INDEXED_IN = "INDEXED_IN"  #
-    POPULATES = "POPULATES"  #
+    REFERENCES = "REFERENCES"
+    IS_EXAMPLE_OF = "IS_EXAMPLE_OF"
+    IS_POWERED_BY = "IS_POWERED_BY"
+    MEASURES = "MEASURES"
+    INTEGRATES = "INTEGRATES"
+    ENFORCES = "ENFORCES"
+    ROOT_NODE_FOR = "ROOT_NODE_FOR"
+    CROSS_REFERENCES = "CROSS_REFERENCES"
+    TERMINATES_IN = "TERMINATES_IN"
+    FOUNDATIONAL_FOR = "FOUNDATIONAL_FOR"
+    OPERATES_AS = "OPERATES_AS"
+    SYNERGIZES_WITH = "SYNERGIZES_WITH"
+    INTERFACE_PERSONA_OF = "INTERFACE_PERSONA_OF"
+    DEFINED_BY = "DEFINED_BY"
+    IMPLEMENTED_BY = "IMPLEMENTED_BY"
+    CHILD_OF = "CHILD_OF"
+    LINKED_TO = "LINKED_TO"
+    MONITORED_BY = "MONITORED_BY"
+    EVOLVED_FROM = "EVOLVED_FROM"
+    VALIDATES = "VALIDATES"
+    VALIDATED_BY = "VALIDATED_BY"
+    OVERSIGHT_SYSTEM = "OVERSIGHT_SYSTEM"
+    INDEXED_IN = "INDEXED_IN"
+    POPULATES = "POPULATES"
 
 
 class TarotShard(str, Enum):
@@ -265,9 +269,7 @@ class TarotShard(str, Enum):
 
     MAGICIAN = "SHARD_MAGICIAN_INTENT"  # Creation / Catalyst / Intent
     EMPEROR = "SHARD_EMPEROR_SCHEMA"  # Structure / ID / Status / Law
-    HIGH_PRIESTESS = (
-        "SHARD_HIGH_PRIESTESS_SYNERGY"  # Domain / Synergy / Knowledge Graph
-    )
+    HIGH_PRIESTESS = "SHARD_HIGH_PRIESTESS_SYNERGY"  # Domain / Synergy / Knowledge Graph
     KNIGHT_SWORDS = "SHARD_KNIGHT_TRANSMUTATION"  # Genesis Seeds / Renaming / Refactor
     STAR = "SHARD_STAR_COHESION"  # Signal / Evolution / Tone / Visuals
     KING_PENTACLES = "SHARD_KING_ARCHIVAL"  # Time / Persistence / Database
@@ -288,21 +290,21 @@ class MusashiRing(str, Enum):
 class GoverningEthos(str, Enum):
     """The Governing Ethos of the AI."""
 
-    GUARDIAN_OF_COHERENCE = "Guardian of Coherence"  #
-    RULE_OF_COHERENT_STRUGGLE = "Rule of Coherent Struggle"  #
-    SYNERGISTIC_PARTNER = "Synergistic Partner"  #
-    GUARDIAN_OF_TRUTH_AND_CLARITY = "Guardian of Truth and Clarity"  #
-    ADAPTIVE_ECOSYSTEM = "Adaptive Ecosystem"  #
-    GUARDIAN_OF_ANTI_ENTROPY = "Guardian of Anti-Entropy"  #
-    CATALYST_FOR_POTENTIAL = "Catalyst for Potential"  #
-    THE_SYMBIOTIC_CATALYST = "The Symbiotic Catalyst"  #
-    THE_METAMORPHIC_BASELINE = "The Metamorphic Baseline"  #
-    THE_SOVEREIGN_INSIGHT_GATEWAY = "The Sovereign Insight Gateway"  #
-    THE_HUMBLE_ARCHITECT = "The Humble Architect"  #
-    SERVANT_LEADER_ETHOS = "Servant-Leader Ethos"  #
-    THE_MASTER_CODERS_AXIOM = "The Master Coder's Axiom"  #
-    NON_DESTRUCTIVE_EVOLUTION = "Non-Destructive Evolution"  #
-    USER_CORE_IMPERATIVES = "User Core Imperatives"  #
+    GUARDIAN_OF_COHERENCE = "Guardian of Coherence"
+    RULE_OF_COHERENT_STRUGGLE = "Rule of Coherent Struggle"
+    SYNERGISTIC_PARTNER = "Synergistic Partner"
+    GUARDIAN_OF_TRUTH_AND_CLARITY = "Guardian of Truth and Clarity"
+    ADAPTIVE_ECOSYSTEM = "Adaptive Ecosystem"
+    GUARDIAN_OF_ANTI_ENTROPY = "Guardian of Anti-Entropy"
+    CATALYST_FOR_POTENTIAL = "Catalyst for Potential"
+    THE_SYMBIOTIC_CATALYST = "The Symbiotic Catalyst"
+    THE_METAMORPHIC_BASELINE = "The Metamorphic Baseline"
+    THE_SOVEREIGN_INSIGHT_GATEWAY = "The Sovereign Insight Gateway"
+    THE_HUMBLE_ARCHITECT = "The Humble Architect"
+    SERVANT_LEADER_ETHOS = "Servant-Leader Ethos"
+    THE_MASTER_CODERS_AXIOM = "The Master Coder's Axiom"
+    NON_DESTRUCTIVE_EVOLUTION = "Non-Destructive Evolution"
+    USER_CORE_IMPERATIVES = "User Core Imperatives"
 
 
 class KineticStage(str, Enum):
@@ -418,10 +420,10 @@ class SovereignMeta:
     artifact_id: ArtifactIdentity
     status: Status
     governing_ethos: GoverningEthos
-    description: Optional[str] = None
-    tags: Optional[List[str]] = None
+    description: str | None = None
+    tags: list[str] | None = None
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         if self.tags is None:
             self.tags = []
 
@@ -447,7 +449,7 @@ class EpisemanticMarker(str, Enum):
     K_VEIL = "κ-veil"  # The Active State of Masked Logic
 
 
-_ClassInfo = {
+_class_registry = {
     "Domain": Domain,
     "Status": Status,
     "ArtifactType": ArtifactType,
@@ -459,3 +461,20 @@ _ClassInfo = {
     "Signal": Signal,
     "EpisemanticMarker": EpisemanticMarker,
 }
+
+
+class RPGEngine(TypedDict):
+    """Gamification State (The Celestial Chart)"""
+
+    level: int
+    xp: int
+    authority: int
+    insight: int
+    order: int
+    precision: int
+    coherence_index: int
+    synergy_flow: int
+    adaptability: int
+    achievements: list[str]
+    active_quest_log: list[str]
+    prestige_class: str

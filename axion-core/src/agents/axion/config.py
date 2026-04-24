@@ -1,52 +1,22 @@
-"""
-## **[ARTIFACT START]**
+import os
+from pydantic_settings import BaseSettings
 
-## **Block A: The Identification Lock (UIP-V15)**
+class Settings(BaseSettings):
+    """Configuration settings for the Axion Agent."""
+    PROJECT_NAME: str = "Axion Core"
+    VERSION: str = "v15.0 [OMEGA]"
+    
+    # API Keys & Endpoints
+    SUPABASE_URL: str = os.getenv("SUPABASE_URL", "")
+    SUPABASE_ANON_KEY: str = os.getenv("SUPABASE_ANON_KEY", "")
+    
+    # Agent Logic Config
+    MAX_MEMORY_RECALL: int = 5
+    ENABLE_SENTINEL: bool = True
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.config`                | The Sovereign ID. |
-| **Official Name** | `config.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+    class Config:
+        env_file = ".env"
+        case_sensitive = True
+        extra = "ignore"
 
----
-
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-
-## **[ARTIFACT END]**
-"""
-
-"""
-#
-
----
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.config VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 1697062af85d2df5`
+settings = Settings()

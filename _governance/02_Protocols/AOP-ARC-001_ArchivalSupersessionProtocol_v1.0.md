@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-ARC-001_ARCHIVALSUPERSESSIONPROTOCOL_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AISTF Operational Playbook: AOP-ARC-001 (Archival Supersession Protocol)
 
 ## **Block A: The Identification Lock (UIP-V15)**

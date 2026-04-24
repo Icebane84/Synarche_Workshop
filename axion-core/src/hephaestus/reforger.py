@@ -39,7 +39,7 @@ UIP_HEADER_TEMPLATE = """# {official_name}
 > **Evolution**: {evolution}
 > **Signal**: {signal}
 
-## **Genesis Stamp: {date}** **Domain: {domain}** **State: {status}** **Tags:** `OGLN_v13, {domain}, Reforged` **Criticality: {criticality}**
+# **Genesis Stamp: {date}** **Domain: {domain}** **State: {status}** **Tags:** `OGLN_v13, {domain}, Reforged` **Criticality: {criticality}**
 
 ---
 

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `PRIMARY_DIRECTIVE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # 🛡️ PRIMARY DIRECTIVE: SAFE & STANDARDIZED DEVELOPMENT
 
 ## **Block A: The Identification Lock (UIP-V15)**

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-043_THE MISSING INGREDIENT_ AISTF FOR CODE GENERATION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-043_The Missing Ingredient_ AISTF for Code Generation.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CWA-CW-001_CONTEXTWEAVEREPORT` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CWA-CW-001_ContextWeaveReport.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

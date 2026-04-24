@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-LOOM-002_COGNITIVELOOM_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-LOOM-002_CognitiveLoom_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -21,8 +21,8 @@ from typing import Any
 def extract_metadata(content: str) -> dict[str, str]:
     """Extracts artifact metadata from the UIP block."""
     meta = {}
-    lines = content.splitlines()
-    for line in lines:
+    # Table format
+    for line in content.splitlines():
         if "|" in line:
             # Look for **Artifact ID** | `XYZ-001`
             match = re.search(r"\*\*(.*?)\*\*\s*\|\s*`?([^`|]+)`?", line)
@@ -30,14 +30,23 @@ def extract_metadata(content: str) -> dict[str, str]:
                 key = match.group(1).strip()
                 val = match.group(2).strip()
                 meta[key] = val
+    
+    # YAML format (artifact_anchor)
+    yaml_match = re.search(r"artifact_anchor:\s*\n(\s+id:.*?\n(\s+.*?\n)*)", content, re.MULTILINE)
+    if yaml_match:
+        yaml_content = yaml_match.group(1)
+        id_match = re.search(r"id:\s*\"?([^\n\"]+)\"?", yaml_content)
+        if id_match:
+            meta["Artifact ID"] = id_match.group(1).strip()
+            
     return meta
 
 
 def extract_outbound_links(content: str) -> list[str]:
     """Extracts outgoing links or mentioned artifact IDs from markdown."""
     links = []
-    # Match standard markdown links to local .md files
-    md_links = re.findall(r"\[.*?\]\(([^)]+\.md)\)", content)
+    # Match standard markdown links to local files
+    md_links = re.findall(r"\[.*?\]\(([^)]+)\)", content)
     for link in md_links:
         if not link.startswith("http"):
             links.append(os.path.basename(link))
@@ -48,9 +57,7 @@ def extract_outbound_links(content: str) -> list[str]:
         for p in rel.split(","):
             links.append(p.strip().replace("`", ""))
 
-    # Match synergy table elements
-    # Usually Artifact ID, Relationship, Impact
-    # Here we just look for common ID patterns: XXX-YYY-001
+    # Match common ID patterns: XXX-YYY-001
     id_patterns = re.findall(r"\b[A-Z]{3,4}-[A-Z]+-\d{3}\b", content)
     links.extend(id_patterns)
 
@@ -62,11 +69,12 @@ def calculate_gss(directory: str) -> dict[str, Any]:
     artifact_id_to_file = {}
 
     # Pass 1: Discover nodes
+    extensions = (".md", ".py", ".ts", ".js", ".groovy", ".java", ".json")
     for root, _, files in os.walk(directory):
         for f in files:
-            if f.endswith(".md"):
+            if f.lower().endswith(extensions):
                 filepath = os.path.join(root, f)
-                with open(filepath, encoding="utf-8") as file:
+                with open(filepath, encoding="utf-8", errors="ignore") as file:
                     content = file.read()
 
                 meta = extract_metadata(content)

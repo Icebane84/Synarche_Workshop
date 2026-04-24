@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.CSM.001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-CSM-001_TheCompleteStackMandate_v2.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

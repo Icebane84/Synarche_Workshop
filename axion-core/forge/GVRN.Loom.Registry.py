@@ -3,6 +3,7 @@ import json
 import logging
 import os
 import re
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -12,18 +13,12 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger("gvrn_loom")
 
 WORKSPACE_ROOT = Path(r"c:\Users\Chris\Synarche_Workspace")
-REGISTRY_PATH = (
-    WORKSPACE_ROOT / "_governance" / "01_Registries" / "GVRN.Master.Registry.yaml"
-)
-MANIFEST_JSON = (
-    WORKSPACE_ROOT / "_governance" / "01_Registries" / "GVRN.Registry.Manifest.json"
-)
+REGISTRY_PATH = WORKSPACE_ROOT / "_governance" / "01_Registries" / "GVRN.Master.Registry.yaml"
+MANIFEST_JSON = WORKSPACE_ROOT / "_governance" / "01_Registries" / "GVRN.Registry.Manifest.json"
 
 # Regex for Block A extraction & replacement
 BLOCK_A_HEADER_RE = re.compile(r"^#+ \*\*Block A:.*?\*\*", re.MULTILINE | re.IGNORECASE)
-TABLE_ROW_RE = re.compile(
-    r"\| \s*\*\*([^*]+)\*\*\s* \| \s*`?([^`|]+)`?\s* \|", re.IGNORECASE
-)
+TABLE_ROW_RE = re.compile(r"\| \s*\*\*([^*]+)\*\*\s* \| \s*`?([^`|]+)`?\s* \|", re.IGNORECASE)
 ANCHOR_RE = re.compile(
     r"\[(?:OMNI|GATE)-ANCHOR\] ID: ([\w.-]+) VER: ([\w. \[\]]+) STATUS: ([\w. \[\]]+)",
     re.IGNORECASE,
@@ -59,10 +54,7 @@ def parse_markdown_metadata(content: str) -> dict[str, Any] | None:
             if "Block A:" in line:
                 in_block = True
                 continue
-            if in_block and (
-                line.strip() == "---"
-                or (line.startswith("##") and "Block A:" not in line)
-            ):
+            if in_block and (line.strip() == "---" or (line.startswith("##") and "Block A:" not in line)):
                 break
             if in_block:
                 m = TABLE_ROW_RE.search(line)
@@ -146,24 +138,15 @@ class GVRNLoom:
                             meta = parse_markdown_metadata(content)
                             if meta and "artifact_id" in meta:
                                 aid = meta["artifact_id"]
-                                rel_path = str(
-                                    fpath.relative_to(WORKSPACE_ROOT)
-                                ).replace("\\", "/")
+                                rel_path = str(fpath.relative_to(WORKSPACE_ROOT)).replace("\\", "/")
                                 meta["path"] = rel_path
 
                                 # HEAL: Enforce Filename as Official Name
                                 meta["official_name"] = fpath.name
 
                                 # Deduplication: find if this path is already used by another ID
-                                path_to_id = {
-                                    m.get("path"): k
-                                    for k, m in self.registry.items()
-                                    if m.get("path")
-                                }
-                                if (
-                                    rel_path in path_to_id
-                                    and path_to_id[rel_path] != aid
-                                ):
+                                path_to_id = {m.get("path"): k for k, m in self.registry.items() if m.get("path")}
+                                if rel_path in path_to_id and path_to_id[rel_path] != aid:
                                     old_id = path_to_id[rel_path]
                                     logger.info(
                                         f"Deduplicating: Removing old ID {old_id} in favor of {aid} for {rel_path}"
@@ -172,9 +155,7 @@ class GVRNLoom:
                                         del self.registry[old_id]
 
                                 self.registry[aid] = meta
-                                self.registry[aid]["content_hash"] = (
-                                    calculate_content_hash(content)
-                                )
+                                self.registry[aid]["content_hash"] = calculate_content_hash(content)
                                 found_count += 1
                     except Exception as e:
                         logger.warning(f"Error reading {fpath}: {e}")
@@ -220,18 +201,11 @@ class GVRNLoom:
                     if match:
                         start_pos = match.start()
                         # STRICT MATCH: Find the true section separator, ignoring table borders.
-                        end_match = re.search(
-                            r"^\s*---\s*$", content[start_pos:], re.MULTILINE
-                        )
+                        end_match = re.search(r"^\s*---\s*$", content[start_pos:], re.MULTILINE)
                         if end_match:
                             end_pos = start_pos + end_match.start()
                             # Replace the entire span from Block A header to the separator
-                            new_content = (
-                                content[:start_pos]
-                                + new_block_md
-                                + "\n"
-                                + content[end_pos:]
-                            )
+                            new_content = content[:start_pos] + new_block_md + "\n" + content[end_pos:]
                             if new_content != content:
                                 with open(fpath, "w", encoding="utf-8") as f:
                                     f.write(new_content)
@@ -240,7 +214,7 @@ class GVRNLoom:
                 else:
                     logger.debug(f"Skipping {aid}: No Block A found to overwrite.")
             except Exception as e:
-                logger.error(f"Failed to update {aid}: {e}")
+                logger.exception(f"Failed to update {aid}: {e}")
 
         logger.info(f"Propagation complete. {push_count} files updated.")
 
@@ -269,9 +243,7 @@ class GVRNLoom:
                 current_hash = calculate_content_hash(content)
                 stored_hash = meta.get("content_hash")
                 if current_hash != stored_hash:
-                    logger.warning(
-                        f"[DRIFT] {aid}: Hash mismatch! Workspace drifted from Registry."
-                    )
+                    logger.warning(f"[DRIFT] {aid}: Hash mismatch! Workspace drifted from Registry.")
                     dissonance_found = True
 
                 # 2. Name Compliance
@@ -286,7 +258,7 @@ class GVRNLoom:
                         dissonance_found = True
 
             except Exception as e:
-                logger.error(f"Error auditing {aid}: {e}")
+                logger.exception(f"Error auditing {aid}: {e}")
 
         if not dissonance_found:
             logger.info("Status: RESONANCE. All artifacts aligned.")
@@ -309,9 +281,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="GVRN Loom: Metadata Synchronizer")
-    parser.add_argument(
-        "action", choices=["pull", "push", "both", "audit"], help="Sync action"
-    )
+    parser.add_argument("action", choices=["pull", "push", "both", "audit"], help="Sync action")
     parser.add_argument("--id", help="Filter by artifact ID")
     args = parser.parse_args()
 
@@ -321,7 +291,7 @@ if __name__ == "__main__":
     if args.action == "audit":
         valid = loom.audit()
         if not valid:
-            exit(1)
+            sys.exit(1)
     if args.action in ["push", "both"]:
         loom.propagate_to_workspace(args.id)
     loom.export_json()

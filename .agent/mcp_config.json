@@ -25,9 +25,10 @@
       "command": "python",
       "args": [
         "-m",
-        "mcp_server_command",
+        "-"
+        "@mcpservercommand",
         "--allow-path",
-        "C:\\Users\\Chris\\.gemini\\.agent\\scripts"
+        "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\forge"
       ]
     },
     "supabase-mcp-server": {

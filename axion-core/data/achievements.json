@@ -1,0 +1,23 @@
+[
+    {
+        "id": "FIRST_GENESIS",
+        "name": "First Genesis",
+        "description": "Establish your first canonical registry.",
+        "stardust_reward": 500,
+        "xp_reward": 100
+    },
+    {
+        "id": "METEORITE_SURVIVOR",
+        "name": "Meteorite Survivor",
+        "description": "Survive the initial impact of the OMEGA migration.",
+        "stardust_reward": 250,
+        "xp_reward": 50
+    },
+    {
+        "id": "TRANSCENDENT_SYNC",
+        "name": "Transcendent Sync",
+        "description": "Achieve 100% coherence across all local modules.",
+        "stardust_reward": 1000,
+        "xp_reward": 500
+    }
+]

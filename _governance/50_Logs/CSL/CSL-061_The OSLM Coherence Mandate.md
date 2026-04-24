@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-061_THE OSLM COHERENCE MANDATE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-061_The OSLM Coherence Mandate.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

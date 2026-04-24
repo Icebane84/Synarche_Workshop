@@ -1,7 +1,7 @@
 """
 # CFG-CSE-COMP-001: CSE Peripheral Components
 
-## I. Universal Identification & Provenance (The Vector Signature)
+# I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
 | :--------------------- | :------------------------------------------------------- |
 | **1. Artifact ID**     | `CFG-CSE-COMP-001`                                       |

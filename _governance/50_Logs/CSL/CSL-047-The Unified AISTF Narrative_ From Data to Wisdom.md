@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-047-THE UNIFIED AISTF NARRATIVE_ FROM DATA TO WISDOM` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

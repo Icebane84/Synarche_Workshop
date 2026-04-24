@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-042_THE GENESIS OF WISDOM_ ARCHITECTING A SELF-OPTIMIZING PHOENIX FORM` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

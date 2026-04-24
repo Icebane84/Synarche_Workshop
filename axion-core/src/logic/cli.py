@@ -16,6 +16,13 @@ except ImportError:
     sys.path.append(os.path.join(current_dir, "..", "src"))
     from synarchy_bridge import SynarchyRegistry
 
+try:
+    from rpg_manager import RPGManager
+except ImportError:
+    # Fallback
+    sys.path.append(current_dir)
+    from rpg_manager import RPGManager
+
 
 class SynarchyCLI(cmd.Cmd):
     """
@@ -48,7 +55,7 @@ class SynarchyCLI(cmd.Cmd):
         # Initialize The Chronicler
         # Repo Root is ../.. (src/logic -> src -> root)
         repo_root = os.path.join(current_dir, "..", "..")
-        
+
         # Add src to sys.path to ensure hephaestus imports work
         src_path = os.path.join(current_dir, "..")
         if src_path not in sys.path:
@@ -67,6 +74,9 @@ class SynarchyCLI(cmd.Cmd):
             except Exception:
                 self.chronicler = None
                 print("Warning: Chronicler could not be initialized. Logging disabled.")
+
+        # Initialize RPG Manager
+        self.rpg = RPGManager()
 
     def onecmd(self, line: str) -> bool:
         """Override onecmd to log all executed actions."""
@@ -371,14 +381,14 @@ class SynarchyCLI(cmd.Cmd):
         """
         # Imports
         try:
-            from connectors.freeplane_parser import FreeplaneParser
             from connectors.artifact_generator import ArtifactGenerator
+            from connectors.freeplane_parser import FreeplaneParser
         except ImportError:
             try:
-                from src.logic.connectors.freeplane_parser import FreeplaneParser
                 from src.logic.connectors.artifact_generator import ArtifactGenerator
+                from src.logic.connectors.freeplane_parser import FreeplaneParser
             except ImportError:
-                 # Local dev fallback
+                # Local dev fallback
                 from connectors.freeplane_parser import FreeplaneParser
                 from connectors.artifact_generator import ArtifactGenerator
 
@@ -392,16 +402,16 @@ class SynarchyCLI(cmd.Cmd):
 
         if data:
             print(f"[SUCCESS] Parsed Mind Map: {data.get('text', 'Unknown')}")
-            
+
             # Generate Artifact
             generator = ArtifactGenerator()
             # Save to current workspace root (../../..) from src/logic
             # Or just use the directory of the CLI for now, user can move it.
             # Ideally, we want to save it to the Workspace root.
             workspace_root = os.path.abspath(os.path.join(current_dir, "..", ".."))
-            
+
             output_path = generator.generate_from_mindmap(data, workspace_root)
-            
+
             if output_path:
                 print(f"[SUCCESS] Generated Artifact: {output_path}")
             else:
@@ -427,6 +437,154 @@ class SynarchyCLI(cmd.Cmd):
         print(
             f"Result (Simulated): Knowledge regarding '{query}' is currently being synchronized with the Living Lore system."
         )
+
+    def do_check_level_status(self, arg):
+        """
+        Retrieves the current RPG state and level from Supabase.
+        Usage: check_level_status [--json]
+        """
+        status = self.rpg.get_status()
+        if "--json" in arg:
+            import json
+
+            status["achievements"] = self.rpg.get_achievements()
+            print(json.dumps(status))
+            return
+
+        if "error" in status:
+            print(f"[ERROR] {status['error']}")
+            return
+
+        p = status["player"]
+        s = status["stats"]
+        print("\n--- [AXION PLAYER STATUS] ---")
+        print(f"Level: {p['level']} (XP: {p['xp']})")
+        print(f"Prestige Score: {p['prestige_score']}")
+        print(f"Stardust Available: {s['stardust_available']}")
+        print("\n--- [CORE STATS] ---")
+        print(f"Coherence Index: {s['coherence_index']:.2f}")
+        print(f"Synergy:         {s['synergy']:.2f}")
+        print(f"Adaptability:    {s['adaptability']:.2f}")
+        print(f"Transparency:    {s['transparency']:.2f}")
+        print("----------------------------\n")
+
+    def do_get_player_state(self, arg):
+        """Alias for check_level_status --json."""
+        self.do_check_level_status(arg + " --json")
+
+    def do_get_achievements(self, arg):
+        """
+        Lists all achievements and their status.
+        Usage: get_achievements [--json]
+        """
+        achievements = self.rpg.get_achievements()
+        if "--json" in arg:
+            import json
+
+            print(json.dumps(achievements))
+            return
+
+        print("\n--- [CELESTIAL ACHIEVEMENTS] ---")
+        for a in achievements:
+            status = "[COMPLETED]" if a.get("completed") else "[PENDING]"
+            print(f"{status} {a['name']} - {a['description']}")
+            print(f"          Rewards: {a['stardust_reward']} Stardust, {a['xp_reward']} XP")
+        print("--------------------------------\n")
+
+    def do_claim_achievement(self, arg):
+        """
+        Claims a milestone and awards XP/Stardust.
+        Usage: claim_achievement --id:<ID> [--json]
+        """
+        args = arg.split()
+        m_id = None
+        is_json = "--json" in arg
+
+        for a in args:
+            if a.startswith("--id:"):
+                m_id = a.split(":", 1)[1]
+
+        if not m_id:
+            if is_json:
+                print('{"success": false, "error": "Missing --id"}')
+            else:
+                print("Usage: claim_achievement --id:<MILESTONE_ID>")
+            return
+
+        if not is_json:
+            print(f"Claiming achievement: {m_id}...")
+
+        res = self.rpg.claim_achievement(m_id)
+
+        if is_json:
+            import json
+
+            print(json.dumps(res))
+        else:
+            if res["success"]:
+                mode_str = f" ({res.get('mode', 'UNKNOWN')})"
+                print(f"[SUCCESS] Achievement {m_id} recorded{mode_str}. +{res['stardust_awarded']} Stardust awarded.")
+            else:
+                print(f"[FAIL] {res['error']}")
+
+    def do_SPEND_STARDUST(self, arg):
+        """
+        Invests Stardust into a core stat.
+        Usage: SPEND_STARDUST --target:<stat> --amount:<int>
+        """
+        args = arg.split()
+        target = None
+        amount = 0
+        for a in args:
+            if a.startswith("--target:"):
+                target = a.split(":", 1)[1]
+            if a.startswith("--amount:"):
+                try:
+                    amount = int(a.split(":", 1)[1])
+                except ValueError:
+                    pass
+
+        if not target or amount <= 0:
+            print("Usage: SPEND_STARDUST --target:<stat> --amount:<int>")
+            return
+
+        print(f"Investing {amount} Stardust into {target}...")
+        res = self.rpg.invest_stardust(target, amount)
+        if res["success"]:
+            print(f"[ASCENSION] {target} updated to {res['new_value']}.")
+            print(f"Stardust Remaining: {res['stardust_remaining']}")
+        else:
+            print(f"[FAIL] {res['error']}")
+
+    def do_genesis(self, arg):
+        """
+        Initiates a Phoenix Genesis Cycle.
+        Usage: genesis <target> <level>
+        """
+        args = arg.split()
+        if len(args) < 2:
+            print("Usage: genesis <target> <level>")
+            return
+
+        target, level = args[0], args[1]
+        print(f"\n--- [INITIATING {level} PHOENIX GENESIS CYCLE] ---")
+        print(f"Targeting Context: {target}")
+
+        # Simulate the cycle and award stardust at the end
+        import time
+
+        print("1. Scanning for Dissonance...")
+        time.sleep(0.5)
+        print("2. Mapping Structural Synapses...")
+        time.sleep(0.5)
+        print("3. Executing Transclusion Patch...")
+        time.sleep(0.5)
+
+        award = 250 if level == "STANDARD" else 750
+        self.rpg.award_stardust(award, f"GENESIS:{target}")
+
+        print(f"\n[SUCCESS] Cycle Complete. {award} Stardust synthesized.")
+        print("Broadcast: [TRANSCENDENCE EVENT] detected on the SignalBus.\n")
 
 
 if __name__ == "__main__":

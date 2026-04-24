@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `WLF-NARR-001_WHERELIGHTFADES_DIRECTIVES` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # WLF-NARR-001_WhereLightFades_Directives.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

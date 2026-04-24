@@ -3,9 +3,9 @@
 
 ## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: High
 
-### I. Universal Identification & Provenance (The Vector Signature)
+## I. Universal Identification & Provenance (The Vector Signature)
 
-#### The Chronos Lock & Axiomatic Metadata Layer
+### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field | Value |
 | :--- | :--- |
@@ -147,7 +147,7 @@ class CodeSentinel:
             findings_count = len(report.get("detailed_findings", []))
 
             log_entry = f"""
-## [{timestamp_str}] Sentinel Scan
+# [{timestamp_str}] Sentinel Scan
 > **Score**: {score:.1f}% | **Status**: {status}
 > **Target**: `{root_path}` | **Dissonance**: {findings_count} files
 

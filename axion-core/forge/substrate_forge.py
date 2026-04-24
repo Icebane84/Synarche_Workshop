@@ -17,7 +17,7 @@ import datetime
 import logging
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 # Constants
 GOVERNANCE_DIR = Path(r"c:\Users\Chris\Synarche_Workspace\_governance")
@@ -90,12 +90,12 @@ class SubstrateForge:
     def __init__(self, dry_run=False):
         self.dry_run = dry_run
 
-    def scan_umbs(self) -> List[Path]:
+    def scan_umbs(self) -> list[Path]:
         """Find all UMB files in governance."""
         logger.info("[FORGE] Scanning for blueprints...")
         return list(GOVERNANCE_DIR.rglob("UMB-*.md"))
 
-    def extract_metadata(self, file_path: Path) -> Optional[Dict[str, str]]:
+    def extract_metadata(self, file_path: Path) -> dict[str, str] | None:
         """Extract metadata from UMB markdown."""
         try:
             content = file_path.read_text(encoding="utf-8")
@@ -147,8 +147,7 @@ class SubstrateForge:
             name_parts = [parts[0]]
 
         metadata["class_name"] = "".join(
-            "".join(word.capitalize() for word in re.split(r"[- ]", p))
-            for p in name_parts
+            "".join(word.capitalize() for word in re.split(r"[- ]", p)) for p in name_parts
         )
 
         # Core Functions / Methods extraction
@@ -163,15 +162,13 @@ class SubstrateForge:
                     metadata["methods"].append({"name": snaked, "description": clean_m})
 
         # Rationale extraction
-        rationale_match = re.search(
-            r"## II\. Core Purpose & Objective\n\n- \*\*Core Purpose\*\*: (.*)", content
-        )
+        rationale_match = re.search(r"## II\. Core Purpose & Objective\n\n- \*\*Core Purpose\*\*: (.*)", content)
         if rationale_match:
             metadata["rationale"] = rationale_match.group(1).strip()
 
         return metadata
 
-    def forge(self, metadata: Dict[str, Any]):
+    def forge(self, metadata: dict[str, Any]):
         """Generate the Python file."""
         # Determine target path
         target_stem = re.sub(r"[\W_]+", "_", metadata["class_name"]).lower().strip("_")

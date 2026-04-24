@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-CSE-001_MASTER_BLUEPRINT_OF_THE_COHERENT_SYNTHESIS_ENGINE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **UMB-CSE-001-MASTER-REFORGED**
 
 ## **⚡ EXECUTE: CANONIZE**

@@ -1,4 +1,14 @@
 ---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `STRATEGY-OMEGA` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+---
 Artifact ID: STRATEGY-OMEGA-001
 Official Name: STRATEGY-OMEGA.md
 Version: v15.0 [OMEGA]

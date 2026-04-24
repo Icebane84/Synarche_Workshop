@@ -1,18 +1,19 @@
 """
-# SOV-CENT-001: The Axion Activator (Sovereign Entry Point)
+[CORE] [SYSTEM] [ACTIVATOR]
+Artifact ID: CORE.System.Activator
+Official Name: activate_axion.py
+Version: v15.0 [OMEGA]
+Status: [CANONIZED]
+Description: The Sovereign Entry Point for Axion Prime.
 
-## Genesis Stamp: 2026-02-02 | Domain: SYNR | State: ACTIVE | Criticality: Foundational
-
-### Block A: The Identification Lock (UIP-V13)
-
+[UIP-V15]
 | Key | Value |
 | :--- | :--- |
-| **Artifact ID** | `SOV-CENT-001` |
+| **Artifact ID** | `CORE.System.Activator` |
 | **Official Name** | `activate_axion.py` |
-| **Version** | **v13.1 [OMEGA]** |
-| **Domain** | `SYNR` |
-| **Evolution** | **Omega Ascension** |
-| **Status** | `[ACTIVE]` |
+| **Version** | **v15.0 [OMEGA]** |
+| **Domain** | `CORE` |
+| **Status** | `[CANONIZED]` |
 | **Relations** | `WIELDS: ALL_TOOLS`, `GOVERNED_BY: CORE-CODEX-001` |
 
 ### Block D: Standardized Synergy Block (The Loom Signature)
@@ -25,29 +26,31 @@ import sys
 from pathlib import Path
 
 # Configure Bootstrap Logging
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - [AXION] - %(levelname)s - %(message)s")
-logger = logging.getLogger("AxionBoot")
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - [AXION] - %(levelname)s - %(message)s",
+)
+logger = logging.getLogger("AxionPrime")
 
 
-def bootstrap():
+def bootstrap() -> None:
     """
     Initializes the Axion Environment.
     """
     logger.info("Initializing Axion Prime [v13.1 Omega]...")
 
-    # 1. Align Path
-    SCRIPT_DIR = Path(__file__).resolve().parent
-    SRC_PATH = SCRIPT_DIR / "src"
-    if str(SRC_PATH) not in sys.path:
-        sys.path.insert(0, str(SRC_PATH))
+    # 1. Align Path (Add project root to allow 'src.' prefix)
+    script_dir: Path = Path(__file__).resolve().parent
+    if str(script_dir) not in sys.path:
+        sys.path.insert(0, str(script_dir))
 
-    logger.info(f"Source Path Aligned: {SRC_PATH}")
+    logger.info(f"Project Root Aligned: {script_dir}")
 
     # 2. Import Engine
     try:
-        from agents.axion.agent_template import RPGEngine, app
+        from src.agents.axion import RPGEngine, app
 
-        logger.info("RPGEngine Module Loaded.")
+        logger.info("Axion Engine [agent_template] Loaded.")
         return app
     except ImportError as e:
         logger.error(f"CRITICAL FAILURE: Could not import Axion Engine. {e}")
@@ -64,3 +67,5 @@ if __name__ == "__main__":
         # app_instance.run() # Uncomment if interactive
     else:
         sys.exit(1)
+
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.System.Activator VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23

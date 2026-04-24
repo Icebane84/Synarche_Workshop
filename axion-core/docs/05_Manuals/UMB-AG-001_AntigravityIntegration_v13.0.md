@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-AG-001_ANTIGRAVITYINTEGRATION_V13.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-AG-001_AntigravityIntegration_v13.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**

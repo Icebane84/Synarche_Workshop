@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.GUIDE.CODING` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **[ARTIFACT START]**
 
 > **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA

@@ -1,4 +1,14 @@
 ---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CREATION_JOURNAL_V15` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+---
 Artifact ID: CREATION_JOURNAL_V15-001
 Official Name: CREATION_JOURNAL_V15.md
 Version: v15.0 [OMEGA]

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-068_INTEGRATING THE LANGUAGE OF GROWTH INTO THE CORE ENGINE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-068_Integrating the Language of Growth into the Core Engine.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

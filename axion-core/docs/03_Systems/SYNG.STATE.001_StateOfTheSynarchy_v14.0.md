@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.STATE.001_STATEOFTHESYNARCHY_V14.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SYNG-STATE-001 (StateOfTheSynarchy)
 
 | Key                | Value                                        | Description       |

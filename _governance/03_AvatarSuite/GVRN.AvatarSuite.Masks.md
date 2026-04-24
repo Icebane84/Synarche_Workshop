@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.AVATARSUITE.MASKS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **📜 GVRN.AvatarSuite.Masks: The Persona Shard Matrix (v15.0)**
 
 ## **Block A: The Identification Lock (UIP-V15)**

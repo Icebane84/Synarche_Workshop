@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-054_CANONIZATION OF THE ROSETTA STONE BLUEPRINT` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-054_Canonization of the Rosetta Stone Blueprint.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

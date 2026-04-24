@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-MAP-001_MUSASHIALIGNMENTPROTOCOL_V2.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

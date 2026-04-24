@@ -1,0 +1,4 @@
+/* VSCode theme variable overrides if needed */
+:root {
+    --vscode-font-family: var(--vscode-editor-font-family, 'Inter', sans-serif);
+}

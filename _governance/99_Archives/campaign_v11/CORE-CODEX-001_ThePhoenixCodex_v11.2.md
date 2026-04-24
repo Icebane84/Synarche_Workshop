@@ -1,4 +1,14 @@
 ---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CORE-CODEX-001_THEPHOENIXCODEX_V11.2` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+---
 # CORE-CODEX-001_ThePhoenixCodex_v11.2
 # [STAR] (The Central Gravity)
 

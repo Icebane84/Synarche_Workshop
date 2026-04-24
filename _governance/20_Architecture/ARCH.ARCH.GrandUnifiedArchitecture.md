@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `ARCH.ARCH.GRANDUNIFIEDARCHITECTURE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # ARCH.ARCH.GrandUnifiedArchitecture (NOVA v15.0)
 
 ## **Block A: The Identification Lock (UIP-V15)**

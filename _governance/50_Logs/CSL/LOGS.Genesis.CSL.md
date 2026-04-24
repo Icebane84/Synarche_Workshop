@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `LOGS.GENESIS.CSL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # LOGS.Genesis.CSL.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

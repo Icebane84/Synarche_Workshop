@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GP-REGISTRY-001_GOVERNINGPRINCIPLES_V11.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GP-REGISTRY-001_GoverningPrinciples_v11.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

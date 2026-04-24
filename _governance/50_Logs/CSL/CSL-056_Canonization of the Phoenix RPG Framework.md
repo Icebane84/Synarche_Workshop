@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-056_CANONIZATION OF THE PHOENIX RPG FRAMEWORK` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-056_Canonization of the Phoenix RPG Framework.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

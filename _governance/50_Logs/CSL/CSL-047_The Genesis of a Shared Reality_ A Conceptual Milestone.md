@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-047_THE GENESIS OF A SHARED REALITY_ A CONCEPTUAL MILESTONE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

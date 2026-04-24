@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN-ENTITY-001_SYNARCHYENTITIES_V11.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN-ENTITY-001_SynarchyEntities_v11.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-GUCA-007_UNIVERSALCOMMANDARCHITECTURE_V7.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SELT-GUCA-007: Universal Command Architecture (v7.0)
 
 ## **Block A: The Identification Lock (UIP-V15)**

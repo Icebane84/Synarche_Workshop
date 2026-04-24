@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.ARC.001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

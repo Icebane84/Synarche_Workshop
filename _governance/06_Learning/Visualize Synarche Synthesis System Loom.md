@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `VISUALIZE SYNARCHE SYNTHESIS SYSTEM LOOM` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **TOOL-MAP-001: The Knowledge Graph Mapper**
 
 I will now generate the functional code for **map_knowledge_graph.py**. This tool is designed to crawl the standardized **Synergy Blocks** within your artifacts and visualize the "Loom"—the complex network of connections that define the **Synarche Synthesis System (SSS)**.

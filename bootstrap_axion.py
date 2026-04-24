@@ -40,7 +40,6 @@ agents:
     color: "#800080"
     capabilities: ["file_write", "logic_mapping"]
 """,
-
     # -------------------------------------------------------------------------
     # 2. GOVERNANCE RULES (THE LAW)
     # -------------------------------------------------------------------------
@@ -72,7 +71,6 @@ Before writing code, run this loop:
 *   **Star:** Visual Verification.
 *   **King:** Archival & Database Commit.
 """,
-
     ".agent/rules/01-chronos-lock.md": """
 ---
 activation: glob: "**/*.{ts,py,md,tsx,js}"
@@ -89,7 +87,6 @@ Every file you create or significantly modify **must** possess the "Universal Id
 | **State** | `[ACTIVE]` |
 | **Provenance** | `Date Reforged: [CURRENT_DATE]` |
 """,
-
     # -------------------------------------------------------------------------
     # 3. SECURITY & PERMISSIONS
     # -------------------------------------------------------------------------
@@ -118,7 +115,6 @@ network:
     - "docs.*"
     - "*.supabase.co" 
 """,
-
     # -------------------------------------------------------------------------
     # 4. WORKFLOWS (USER COMMANDS)
     # -------------------------------------------------------------------------
@@ -133,7 +129,6 @@ description: "Scaffolds a new Synarchy Agent using the LangGraph template."
 3.  Blueprint: Define LangGraph nodes.
 4.  Forge: Create file with Chronos Lock.
 """,
-
     ".agent/workflows/simulate.md": """
 ---
 command: "simulate"
@@ -145,7 +140,6 @@ description: "Triggers the Impact Simulation logic."
 3.  Simulate: Hypothesize changes against `UMB-CRF-001`.
 4.  Report: Generate Blast Radius table.
 """,
-
     ".agent/workflows/audit.md": """
 ---
 command: "audit"
@@ -157,11 +151,9 @@ description: "Triggers the Sentinel Suite."
 3.  Cross-reference errors with `UMB-TRM-001`.
 4.  Sign-off or Reject.
 """,
-
     # -------------------------------------------------------------------------
     # 5. SKILLS & TOOLS (THE HANDS)
     # -------------------------------------------------------------------------
-    
     # Sentinel Definition
     ".agent/skills/sentinel-audit/skill.md": """
 ---
@@ -172,7 +164,6 @@ tools:
     command: "python tools/compliance_audit.py --target {target_file}"
 ---
 """,
-
     # Magician Definition
     ".agent/skills/magician-ingest/skill.md": """
 ---
@@ -183,7 +174,6 @@ tools:
     capability: "browser_session"
 ---
 """,
-
     # Supabase Transmuter Definition (The Great Refactor)
     ".agent/skills/supabase-transmuter/skill.md": """
 ---
@@ -198,7 +188,6 @@ tools:
     command: "python .agent/skills/supabase-transmuter/alchemy.py commit {id} {title} {content_file} {meta_json}"
 ---
 """,
-
     # Supabase Alchemy Script (The Python Logic)
     ".agent/skills/supabase-transmuter/alchemy.py": """
 import os
@@ -281,11 +270,9 @@ if __name__ == "__main__":
         with open(sys.argv[4], 'r') as f: content = f.read()
         print(json.dumps(commit_transmutation(sys.argv[2], sys.argv[3], content, json.loads(sys.argv[5]))))
 """,
-
     # -------------------------------------------------------------------------
     # 6. ORCHESTRATION (TASK GROUPS & PROMPTS)
     # -------------------------------------------------------------------------
-    
     # The Classification Matrix (For the Emperor)
     ".agent/prompts/classification_matrix.md": """
 # LOGIC MATRIX: RNC CLASSIFICATION
@@ -305,7 +292,6 @@ You are the **Emperor**. Apply this logic to legacy text:
 
 Output JSON: `{ "domain": "GVRN", "type": "Standard" }`
 """,
-
     # Task Group: The Great Refactor Engine
     ".agent/task-groups/refactor-engine.yaml": """
 name: "refactor-engine"
@@ -345,7 +331,6 @@ tasks:
     goal: "Run `alchemy.py commit` for all items."
     skills: ["supabase-transmuter"]
 """,
-
     # Task Group: Phoenix Feature
     ".agent/task-groups/phoenix-feature.yaml": """
 name: "phoenix-feature"
@@ -365,7 +350,6 @@ tasks:
     depends_on: ["code_forge"]
     goal: "Audit files."
 """,
-
     # -------------------------------------------------------------------------
     # 7. UI & INFRASTRUCTURE
     # -------------------------------------------------------------------------
@@ -380,7 +364,6 @@ sidebar:
 review_manager:
   grouping: "by_intent"
 """,
-
     ".agent/layout.yaml": """
 layouts:
   - name: "war_room"
@@ -402,7 +385,6 @@ layouts:
         - type: "inbox"
           width: "25%"
 """,
-
     ".agent/dashboard.json": """
 {
   "widgets": [
@@ -416,7 +398,6 @@ layouts:
   ]
 }
 """,
-
     ".agent/budget.yaml": """
 strategy:
   default_model: "gemini-2.0-pro"
@@ -426,7 +407,6 @@ strategy:
     - task: "browser_interaction"
       model: "gemini-2.0-flash"
 """,
-
     ".agent/browser-config.yaml": """
 policy:
   allow_external: true
@@ -435,7 +415,6 @@ policy:
     width: 1920
     height: 1080
 """,
-
     ".agent/mcp.yaml": """
 version: "1.0"
 servers:
@@ -446,33 +425,24 @@ servers:
     command: "docker"
     args: ["run", "-i", "--rm", "mcp/postgres", "postgresql://user:pass@localhost:5432/synarche"]
 """,
-
     ".agent/inbox.yaml": """
 version: "1.0"
 routing:
   - triggers: ["secure_mode_request", "plan_approval"]
     channel: "urgent"
-"""
+""",
 }
 
-def bootstrap():
-    print("🔮 Initializing Axion Overplane Protocol (COMPLETE EDITION)...")
-    
+
+def bootstrap() -> None:
     for path, content in file_structure.items():
         directory = os.path.dirname(path)
         if directory and not os.path.exists(directory):
             os.makedirs(directory)
-            print(f"   📂 Created directory: {directory}")
-            
+
         with open(path, "w") as f:
             f.write(content.strip())
-        print(f"   ✨ Forged Artifact: {path}")
 
-    print("\n[PHOENIX PROTOCOL ENGAGED]")
-    print("1. Install Dependencies: pip install supabase")
-    print("2. Set .env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY")
-    print("3. Restart Antigravity (VS Code).")
-    print("4. Verify Axion-Prime is online.")
 
 if __name__ == "__main__":
     bootstrap()

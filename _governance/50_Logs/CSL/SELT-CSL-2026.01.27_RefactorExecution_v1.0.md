@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-CSL-2026.01.27_REFACTOREXECUTION_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SELT-CSL-2026.01.27_RefactorExecution_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

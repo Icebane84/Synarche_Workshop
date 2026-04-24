@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-AESTHETIC-001_LUMINOUSCOHERENCE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-AESTHETIC-001_LuminousCoherence.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

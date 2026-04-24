@@ -4,7 +4,7 @@
 
 ## Genesis Stamp: 2026-01-11 | Domain: AXION | State: PROTOTYPE | Criticality: Standard
 
-### I. Universal Identification & Provenance (The Vector Signature)
+## I. Universal Identification & Provenance (The Vector Signature)
 
 | Field | Value |
 | :--- | :--- |
@@ -92,25 +92,25 @@ class AgentState(TypedDict):
     Aligned with AxionState Schema.
     """
 
-    # [Input Layer]
+#     [Input Layer]
     input: str
 
-    # [Context Layer]
+#     [Context Layer]
     narrative_context: str
     logic_context: str
 
-    # [Evaluation Layer]
+#     [Evaluation Layer]
     sophia_insight: str
     sentinel_status: str
     sentinel_reason: str
 
-    # [Gamification Layer]
+#     [Gamification Layer]
     rpg_stats: RPGEngine
     gamemaster_state: GamemasterState
     lightbinder_state: LightbinderState
     transmutation_log: list[TransmutationLog]
 
-    # [Output Layer]
+#     [Output Layer]
     final_output: str
     messages: Annotated[list[BaseMessage], operator.add]
 

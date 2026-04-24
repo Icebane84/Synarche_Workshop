@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `COGNITIVE MODALITY FUSION PROTOCOL (AOP-CMF-001)` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # Cognitive Modality Fusion Protocol (AOP-CMF-001).md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

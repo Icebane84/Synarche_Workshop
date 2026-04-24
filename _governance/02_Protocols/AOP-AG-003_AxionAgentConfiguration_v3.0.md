@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-AG-003_AXIONAGENTCONFIGURATION_V3.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **AOP-AG-003: Axion Agent Configuration**
 
 ## **Block A: The Identification Lock (UIP-V15)**

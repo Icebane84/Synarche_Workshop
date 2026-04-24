@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `DQUEST-HEPHAESTUS-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # DQUEST-HEPHAESTUS-001.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

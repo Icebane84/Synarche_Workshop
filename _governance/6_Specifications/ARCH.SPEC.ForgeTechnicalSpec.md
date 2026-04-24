@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `ARCH.SPEC.FORGETECHNICALSPEC` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # ARCH.SPEC.ForgeTechnicalSpec (The Master Artificer's Forge)
 
 ## **Block A: The Identification Lock (UIP-V15)**

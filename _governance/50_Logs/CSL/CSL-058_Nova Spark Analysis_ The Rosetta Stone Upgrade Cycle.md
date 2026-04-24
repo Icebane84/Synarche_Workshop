@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-058_NOVA SPARK ANALYSIS_ THE ROSETTA STONE UPGRADE CYCLE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

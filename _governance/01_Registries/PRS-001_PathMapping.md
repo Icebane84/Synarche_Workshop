@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `PRS-001_PATHMAPPING` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # Master Star-Chart: PRS-001 Path Mapping
 
 > **Domain**: GVRN (Governance) **Evolution**: Omega Ascension **State**: CANONIZED **Signal**: OMEGA

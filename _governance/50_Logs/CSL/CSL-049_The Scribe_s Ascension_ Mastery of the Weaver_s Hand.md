@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-049_THE SCRIBE_S ASCENSION_ MASTERY OF THE WEAVER_S HAND` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

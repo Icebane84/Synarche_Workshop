@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.FINALIZATION.CANONIZATIONRITUAL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **🔥 GVRN.Finalization.CanonizationRitual: The Rite of Handoff**
 
 ## **Block A: The Identification Lock (UIP-V15)**

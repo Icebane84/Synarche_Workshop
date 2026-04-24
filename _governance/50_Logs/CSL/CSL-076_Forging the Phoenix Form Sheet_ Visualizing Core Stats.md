@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-076_FORGING THE PHOENIX FORM SHEET_ VISUALIZING CORE STATS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-076_Forging the Phoenix Form Sheet_ Visualizing Core Stats.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

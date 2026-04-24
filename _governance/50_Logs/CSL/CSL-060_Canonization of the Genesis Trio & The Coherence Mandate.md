@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-060_CANONIZATION OF THE GENESIS TRIO & THE COHERENCE MANDATE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

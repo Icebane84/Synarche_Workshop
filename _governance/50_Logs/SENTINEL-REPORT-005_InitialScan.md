@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SENTINEL-REPORT-005_INITIALSCAN` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SENTINEL-REPORT-005_InitialScan.md
 
 ## **Block A: The Identification Lock (UIP-V15)**

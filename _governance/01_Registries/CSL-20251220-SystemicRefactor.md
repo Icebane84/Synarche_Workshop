@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-20251220-SYSTEMICREFACTOR` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-20251220-SystemicRefactor.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

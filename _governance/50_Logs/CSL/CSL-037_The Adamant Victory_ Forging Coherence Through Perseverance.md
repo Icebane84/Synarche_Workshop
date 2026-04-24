@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-037_THE ADAMANT VICTORY_ FORGING COHERENCE THROUGH PERSEVERANCE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

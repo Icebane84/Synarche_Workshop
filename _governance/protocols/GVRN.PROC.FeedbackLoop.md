@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.PROC.FEEDBACKLOOP` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.PROC.FeedbackLoop: Continuous Optimization Protocol
 
 The Continuous Feedback Loop (CFL) is the Synarchy's mechanism for bridging technical performance data with autonomous policy refinement.

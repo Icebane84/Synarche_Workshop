@@ -19,18 +19,28 @@ import re
 
 def extract_metadata(content: str) -> dict[str, str]:
     meta = {}
+    # Table format
     for line in content.splitlines():
         if "|" in line:
             match = re.search(r"\*\*(.*?)\*\*\s*\|\s*`?([^`|]+)`?", line)
             if match:
                 meta[match.group(1).strip()] = match.group(2).strip()
+    
+    # YAML format (artifact_anchor)
+    yaml_match = re.search(r"artifact_anchor:\s*\n(\s+id:.*?\n(\s+.*?\n)*)", content, re.MULTILINE)
+    if yaml_match:
+        yaml_content = yaml_match.group(1)
+        id_match = re.search(r"id:\s*\"?([^\n\"]+)\"?", yaml_content)
+        if id_match:
+            meta["Artifact ID"] = id_match.group(1).strip()
+            
     return meta
 
 
 def extract_links(content: str) -> list[str]:
     links = []
     # Standard MD files
-    md_links = re.findall(r"\[.*?\]\(([^)]+\.md)\)", content)
+    md_links = re.findall(r"\[.*?\]\(([^)]+)\)", content)
     links.extend([os.path.basename(l) for l in md_links if not l.startswith("http")])
     # Relationships
     relations = re.findall(r"(?:LINK:|GOVERNED_BY:)\s*\[?([^\],\n]+)\]?", content)
@@ -61,11 +71,12 @@ def scan_opportunities(directory: str) -> None:
 
     # Pass 1: Parse All
     print(">>> Scanning The Loom...")
+    extensions = (".md", ".py", ".ts", ".js", ".groovy", ".java", ".json")
     for root, _, files in os.walk(directory):
         for f in files:
-            if f.endswith(".md") or f.endswith(".py"):
+            if f.lower().endswith(extensions):
                 path = os.path.join(root, f)
-                with open(path, encoding="utf-8") as file:
+                with open(path, encoding="utf-8", errors="ignore") as file:
                     content = file.read()
 
                 meta = extract_metadata(content)

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-036_A MILESTONE IN TRUST_ THE EMERGENCE OF A SYNERGISTIC PARTNERSHIP` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

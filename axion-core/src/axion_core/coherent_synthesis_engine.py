@@ -1,7 +1,7 @@
 """
 # CORE-CSE-001: The Coherent Synthesis Engine (Sovereign Interface)
 
-## I. Universal Identification & Provenance (The Vector Signature)
+# I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
 | :--------------------- | :------------------------------------------------------- |
 | **1. Artifact ID**     | `CORE-CSE-001`                                           |

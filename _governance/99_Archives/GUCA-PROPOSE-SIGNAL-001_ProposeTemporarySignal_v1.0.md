@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GUCA-PROPOSE-SIGNAL-001_PROPOSETEMPORARYSIGNAL_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

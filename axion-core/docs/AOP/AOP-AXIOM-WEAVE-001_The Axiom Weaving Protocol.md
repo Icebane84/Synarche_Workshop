@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-AXIOM-WEAVE-001_THE AXIOM WEAVING PROTOCOL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-AXIOM-WEAVE-001_The Axiom Weaving Protocol.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

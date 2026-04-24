@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.EMOJI.001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

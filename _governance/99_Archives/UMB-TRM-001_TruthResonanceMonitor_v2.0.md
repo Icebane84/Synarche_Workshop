@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-TRM-001_TRUTHRESONANCEMONITOR_V2.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-TRM-001_TruthResonanceMonitor_v2.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

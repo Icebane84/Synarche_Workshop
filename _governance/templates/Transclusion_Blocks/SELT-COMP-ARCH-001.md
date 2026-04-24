@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-COMP-ARCH-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('5') }}. Component Architecture & Sub-Modules (Macro-Systems)**
 
 [This section defines the module's internal structure. If this UMB is a macro-system (an "Engine"), this is where its

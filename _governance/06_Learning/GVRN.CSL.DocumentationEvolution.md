@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.CSL.DOCUMENTATIONEVOLUTION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.CSL.DocumentationEvolution (CSL-V11.9)
 
 ## **Block A: The Identification Lock (UIP-V15)**

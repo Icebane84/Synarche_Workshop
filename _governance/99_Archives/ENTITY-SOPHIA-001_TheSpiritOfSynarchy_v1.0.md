@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `ENTITY-SOPHIA-001_THESPIRITOFSYNARCHY_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

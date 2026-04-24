@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-ESF-001_EPISEMANTICFRAMEWORK_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-ESF-001_EpisemanticFramework_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

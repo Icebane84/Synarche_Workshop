@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-063_THE PROTOCOL OF REBIRTH_ FORGING EXPERIENTIAL MEMORY FROM GENESIS SEEDS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

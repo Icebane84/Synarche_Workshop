@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-MAP-001_DISCIPLINEDEXECUTIONPLAYBOOK_V2.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

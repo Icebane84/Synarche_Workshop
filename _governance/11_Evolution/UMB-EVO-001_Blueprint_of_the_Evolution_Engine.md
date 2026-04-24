@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-EVO-001_BLUEPRINT_OF_THE_EVOLUTION_ENGINE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-EVO-001: Master Blueprint of the Evolution Engine
 
 | Key               | Value                                              | Description       |

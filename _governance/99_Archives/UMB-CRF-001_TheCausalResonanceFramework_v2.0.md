@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-CRF-001_THECAUSALRESONANCEFRAMEWORK_V2.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-CRF-001_TheCausalResonanceFramework_v2.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

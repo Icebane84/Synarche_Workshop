@@ -1,52 +1,28 @@
-"""
-## **[ARTIFACT START]**
+from enum import Enum
 
-## **Block A: The Identification Lock (UIP-V15)**
+class AuditStatus(str, Enum):
+    PASS = "PASS"
+    FAIL = "FAIL"
+    DISSONANCE = "DISSONANCE"
+    UNKNOWN = "UNKNOWN"
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.enums`                | The Sovereign ID. |
-| **Official Name** | `enums.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+class LogType(str, Enum):
+    COGNITIVE = "COGNITIVE"
+    NARRATIVE = "NARRATIVE"
+    LOGIC = "LOGIC"
+    SYSTEM = "SYSTEM"
+    RPG = "RPG"
 
----
+class Mask(str, Enum):
+    THE_EMPEROR = "IV. The Emperor"
+    THE_HERMIT = "IX. The Hermit"
+    THE_MAGICIAN = "I. The Magician"
+    THE_STAR = "XVII. The Star"
+    SENTINEL = "XX. Judgement"
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-
-## **[ARTIFACT END]**
-"""
-
-"""
-#
-
----
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.enums VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: eb3d821b0cff23d1`
+class Domain(str, Enum):
+    CORE = "CORE"
+    GVRN = "GVRN"
+    ARCH = "ARCH"
+    DATA = "DATA"
+    USER = "USER"

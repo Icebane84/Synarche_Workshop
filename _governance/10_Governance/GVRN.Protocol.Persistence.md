@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.PROTOCOL.PERSISTENCE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # The Phoenix Persistence Protocol (GVRN.Protocol.Persistence)
 
 > **Domain**: GVRN (Governance)

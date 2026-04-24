@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.OSLM.001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

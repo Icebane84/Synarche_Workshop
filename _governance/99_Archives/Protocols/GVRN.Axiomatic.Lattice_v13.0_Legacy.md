@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.AXIOMATIC.LATTICE_V13.0_LEGACY` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Axiomatic.Lattice_v13.0_Legacy.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

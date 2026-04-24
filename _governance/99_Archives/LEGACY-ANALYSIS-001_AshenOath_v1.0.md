@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `LEGACY-ANALYSIS-001_ASHENOATH_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # LEGACY-ANALYSIS-001_AshenOath_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -1,8 +1,6 @@
 """
 ## **[ARTIFACT START]**
-
 ## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `CORE.nlp.engine`                | The Sovereign ID. |
@@ -11,34 +9,6 @@
 | **Domain**        | `CORE`                     | The Subject.      |
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
----
-
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-
 ## **[ARTIFACT END]**
 """
 
@@ -53,14 +23,12 @@ if TYPE_CHECKING:
 try:
     import spacy
     from spacy.cli import download as spacy_download
-
     SPACY_AVAILABLE = True
 except Exception:
     SPACY_AVAILABLE = False
 
 try:
     from sentence_transformers import SentenceTransformer
-
     TRANSFORMERS_AVAILABLE = True
 except ImportError:
     TRANSFORMERS_AVAILABLE = False
@@ -68,7 +36,6 @@ except ImportError:
 # Configure logging
 log = logging.getLogger(__name__)
 
-# --- EMOTION LEXICON ---
 INITIAL_EMOTION_LEXICON = {
     "keyword": {
         "happy": ["joy", "contentment"],
@@ -91,90 +58,50 @@ INITIAL_EMOTION_LEXICON = {
         "hope": ["hope", "anticipation"],
         "lost": ["sadness", "confusion", "fear"],
         "fail": ["disappointment", "frustration", "sadness"],
-        # WLF Specific examples
-        "shadow self": ["anxiety", "fear", "dread"],
-        "oathbringer": ["unease", "power", "fear"],
-        "inner flame": ["hope", "resilience", "determination"],
-        "valerius": ["suspicion", "unease", "respect"],
-        "serafina": ["compassion", "trust", "hope"],
-        "garrett": ["loyalty", "pragmatism", "concern"],
-    },
-    "concept": {
-        "family": ["love", "belonging", "stress"],
-        "betrayal": ["anger", "sadness", "pain"],
-        "resilience": ["hope", "determination", "strength"],
-    },
-    "contextual": {
-        "dark forest": ["fear", "mystery", "unease"],
-        "battle": ["fear", "anger", "excitement", "determination"],
-    },
+    }
 }
 
-
 class NLPProcessor:
-    """Handles core NLP tasks like tokenization and entity extraction."""
-
     def __init__(self, spacy_model_name: str = "en_core_web_sm") -> None:
-        self.model_name = spacy_model_name
-        self.nlp: spacy.language.Language | None = None
+        self.nlp = None
         if SPACY_AVAILABLE:
-            self._load_spacy_model(self.model_name)
-        else:
-            log.warning("spaCy not installed. NLP functionality will be limited.")
-
-    def _load_spacy_model(self, model_name: str) -> bool:
-        """Attempt to load or download the SpaCy model."""
-        try:
-            self.nlp = spacy.load(model_name)
-        except OSError:
-            log.warning(f"spaCy model {model_name} not found. Attempting download...")
             try:
-                spacy_download(model_name)
-                self.nlp = spacy.load(model_name)
-                return True
-            except Exception:
-                log.exception("Failed to load SpaCy model")
-                return False
-        else:
-            return True
+                self.nlp = spacy.load(spacy_model_name)
+            except OSError:
+                try:
+                    spacy_download(spacy_model_name)
+                    self.nlp = spacy.load(spacy_model_name)
+                except Exception:
+                    log.exception("Failed to load SpaCy model")
 
     def tokenize(self, text: str) -> list[str]:
-        """Convert input text into a list of atomic tokens."""
         if not self.nlp:
             return text.split()
         doc = self.nlp(text)
         return [token.text for token in doc]
 
     def lemmatize(self, text: str) -> list[str]:
-        """Reduce words to their canonical base form (lemmas)."""
         if not self.nlp:
             return text.lower().split()
         doc = self.nlp(text)
         return [token.lemma_ for token in doc if token.lemma_.strip()]
 
     def extract_entities(self, text: str) -> list[tuple[str, str]]:
-        """Extract named entities (People, Places, Orgs) from the text substrate."""
         if not self.nlp:
             return []
         doc = self.nlp(text)
         return [(ent.text, ent.label_) for ent in doc.ents]
 
-
 class EmotionAnalyzer:
-    """Analyzes text for emotional resonance."""
-
     def __init__(self, lexicon: dict | None = None) -> None:
         self.lexicons = lexicon or INITIAL_EMOTION_LEXICON
 
     def detect_emotions(self, text: str) -> dict[str, float]:
-        """Analyze text for emotional triggers and resonance intensities."""
         detected_emotions: dict[str, float] = {}
         if not text:
             return detected_emotions
-
         normalized_text = text.lower()
         keyword_triggers = self.lexicons.get("keyword", {})
-
         for keyword, associated_emotions in keyword_triggers.items():
             if keyword in normalized_text:
                 for emotion in associated_emotions:
@@ -182,16 +109,11 @@ class EmotionAnalyzer:
                         detected_emotions[emotion] = 0.5
         return detected_emotions
 
-
 class AxionCognition:
-    """Core NLP engine for Axion, handling embeddings, NER, and sentiment."""
-
-    LONG_TEXT_THRESHOLD = 20
-
     def __init__(self, model_name: str = "all-MiniLM-L6-v2") -> None:
         self.nlp = NLPProcessor()
         self.emotions = EmotionAnalyzer()
-        self.embeddings: SentenceTransformer | None = None
+        self.embeddings = None
         if TRANSFORMERS_AVAILABLE:
             try:
                 self.embeddings = SentenceTransformer(model_name)
@@ -199,22 +121,17 @@ class AxionCognition:
                 log.exception("Failed to load sentence-transformers")
 
     def process(self, text: str) -> dict[str, Any]:
-        """Full cognitive processing of input text."""
         tokens = self.nlp.tokenize(text)
         lemmas = self.nlp.lemmatize(text)
         entities = self.nlp.extract_entities(text)
         emotions = self.emotions.detect_emotions(text)
-
         vector = None
         if self.embeddings:
             try:
                 vector = self.embeddings.encode(text).tolist()
             except Exception:
                 log.exception("Vector search encoding failed")
-
-        # Calculate Magician Efficiency based on Intent/Signal
         efficiency = self.get_magician_efficiency(text)
-
         return {
             "tokens": tokens,
             "lemmas": lemmas,
@@ -225,33 +142,10 @@ class AxionCognition:
         }
 
     def get_magician_efficiency(self, text: str) -> float:
-        """Calculates the 'Magician' efficiency multiplier based on detected intent.
-        High alignment with 'Omega' concepts or clear structure yields higher scores.
-        """
         score = 1.0
         normalized = text.lower()
-        lemmas = set(self.nlp.lemmatize(text))
-
-        # Intent triggers (using lemmas for better coverage, e.g., 'solution' -> 'solve')
-        if "omega" in normalized:
-            score += 0.5
-        if "catalyst" in normalized:
-            score += 0.3
-        if "manifest" in normalized or "manifest" in lemmas:
-            score += 0.2
-        if "solve" in normalized or "solution" in normalized or "solve" in lemmas:
-            score += 0.2
-
-        # Penalty for ambiguity
-        if "?" in text and len(text) < self.LONG_TEXT_THRESHOLD:
-            score -= 0.2
-
+        if "omega" in normalized: score += 0.5
+        if "catalyst" in normalized: score += 0.3
         return round(max(0.1, score), 2)
 
-# ---
-# 
-# ---
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.nlp.engine VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: b66317b25fa07eaa`
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.nlp.engine VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: b66317b25fa07eaa

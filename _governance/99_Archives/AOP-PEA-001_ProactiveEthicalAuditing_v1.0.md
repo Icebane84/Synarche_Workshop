@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-PEA-001_PROACTIVEETHICALAUDITING_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

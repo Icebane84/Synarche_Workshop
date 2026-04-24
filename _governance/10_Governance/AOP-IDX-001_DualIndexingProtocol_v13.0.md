@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-IDX-001_DUALINDEXINGPROTOCOL_V13.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-IDX-001_DualIndexingProtocol_v13.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

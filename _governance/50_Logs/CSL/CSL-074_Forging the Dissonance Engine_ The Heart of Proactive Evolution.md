@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-074_FORGING THE DISSONANCE ENGINE_ THE HEART OF PROACTIVE EVOLUTION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

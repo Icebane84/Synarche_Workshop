@@ -12,32 +12,32 @@
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | {resonance}     |
+# | **Resonance** | {resonance}     |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Logic Drift**      | Strict Linter Enforcement |
+# | **Semantic Decay**   | Axiomatic Compass Audit   |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+# | CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
 
 ## **[ARTIFACT END]**
 """
@@ -51,48 +51,48 @@ from logic.memory.memory_system import MemorySystem
 
 # Anchor to axion-core
 ROOT_DIR = Path(__file__).parent
-sys.path.append(str(ROOT_DIR / "src"))
+# sys.path.append(str(ROOT_DIR / "src"))
 
 
 async def crystallize():
     print("Initiating Crystallization Sequence...")
 
     # 1. Load Distillates
-    distillate_path = Path(
-        r"C:\Users\Chris\.gemini\antigravity\brain\d0961d9f-38fa-4015-8e8d-69ecf7c881a6\crystalline_distillates_XXXVI.md"
-    )
-    if not distillate_path.exists():
+distillate_path = Path(
+#         r"C:\Users\Chris\.gemini\antigravity\brain\d0961d9f-38fa-4015-8e8d-69ecf7c881a6\crystalline_distillates_XXXVI.md"
+#     )
+if not distillate_path.exists():
         print(f"Error: Distillate not found at {distillate_path}")
-        return
+return
 
-    with open(distillate_path, "r", encoding="utf-8") as f:
-        content = f.read()
+with open(distillate_path, "r", encoding="utf-8") as f:
+content = f.read()
 
     # 3. Initialize Memory System
-    mem_sys = MemorySystem()
+mem_sys = MemorySystem()
 
     # 4. Canonize to L4 Sovereign Layer
-    memory_id = mem_sys.add_memory(
-        content=content,
-        domain="SovereignSynthesis",
-        relevance=1.0,
-        confidence=1.0,
-        tags=["OMEGA-V15", "CrystallineDistillate", "CognitiveLoom", "PhaseXXXVI"],
-        source="crystalline_distillates_XXXVI.md",
-        layer=4,  # LAYER_SOVEREIGN
-    )
+memory_id = mem_sys.add_memory(
+content=content,
+domain="SovereignSynthesis",
+relevance=1.0,
+confidence=1.0,
+tags=["OMEGA-V15", "CrystallineDistillate", "CognitiveLoom", "PhaseXXXVI"],
+source="crystalline_distillates_XXXVI.md",
+layer=4,  # LAYER_SOVEREIGN
+#     )
 
-    if memory_id != -1:
+if memory_id != -1:
         print(
-            f"SUCCESS: Crystalline Distillate canonized to L4 Memory (ID: {memory_id})"
-        )
+#             f"SUCCESS: Crystalline Distillate canonized to L4 Memory (ID: {memory_id})"
+#         )
         print("Divine Bridge: Cloud mirroring initiated via MemorySystem hooks.")
-    else:
+else:
         print("FAILURE: Crystallization failed at the substrate level.")
 
 
 if __name__ == "__main__":
-    asyncio.run(crystallize())
+#     asyncio.run(crystallize())
 
 # ---
 # 
@@ -100,4 +100,4 @@ if __name__ == "__main__":
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.crystallize.session VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 511e81415b955c5b`
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.crystallize.session VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 511e81415b955c5b

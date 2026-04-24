@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `ARCH.CANONIZER.CORE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # ARCH.Canonizer.Core: The Blueprint of Finality
 
 ## **Block A: The Identification Lock (UIP-V15)**

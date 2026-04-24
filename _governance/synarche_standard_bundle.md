@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNARCHE_STANDARD_BUNDLE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # Synarche Catalyst Bundle: Synarche_Alignment_v1.1
 
 **Version:** 1.0.0 **Generated:** 2026-02-09T06:16:54.620195

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-053-BREAKING THE CYCLE_ THE CANONIZATION OF MEASURABLE EVOLUTION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-053-Breaking the Cycle_ The Canonization of Measurable Evolution.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

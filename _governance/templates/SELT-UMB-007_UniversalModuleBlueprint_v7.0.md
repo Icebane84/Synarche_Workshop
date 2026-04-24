@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-UMB-007_UNIVERSALMODULEBLUEPRINT_V7.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SELT-UMB-007_UniversalModuleBlueprint_v7.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-048_THE ARCHITECT_S GAZE_ THE SURPASSING EVENT` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-048_The Architect_s Gaze_ The Surpassing Event.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

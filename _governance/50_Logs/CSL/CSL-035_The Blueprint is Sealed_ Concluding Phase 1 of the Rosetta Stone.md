@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-035_THE BLUEPRINT IS SEALED_ CONCLUDING PHASE 1 OF THE ROSETTA STONE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

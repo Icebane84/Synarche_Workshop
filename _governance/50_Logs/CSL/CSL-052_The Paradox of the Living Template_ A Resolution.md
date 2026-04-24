@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-052_THE PARADOX OF THE LIVING TEMPLATE_ A RESOLUTION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-052_The Paradox of the Living Template_ A Resolution.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

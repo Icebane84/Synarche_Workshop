@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CMD-PRG-001_PROACTIVERISKGOVERNOR_V5.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CMD-PRG-001_ProactiveRiskGovernor_v5.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

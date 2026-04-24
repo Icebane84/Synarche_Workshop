@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.PROT.CONTEXTWEAVE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SYNG.PROT.ContextWeave [DEPRECATED — SEE: _governance/02_Protocols/SYNG.PROT.ArchivalSupersessionProtocol.md]
 
 ## **Block A: The Identification Lock (UIP-V15)**

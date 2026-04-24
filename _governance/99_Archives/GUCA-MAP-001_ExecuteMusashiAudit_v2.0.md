@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GUCA-MAP-001_EXECUTEMUSASHIAUDIT_V2.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

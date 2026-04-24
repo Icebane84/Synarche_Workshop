@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-GATE-CIV` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **IV. The Integrity Gate (Sentinel Protocol)**
 
 **Conceptual Integrity Validator (CIV) Status:** `[MONITORING_ACTIVE]`

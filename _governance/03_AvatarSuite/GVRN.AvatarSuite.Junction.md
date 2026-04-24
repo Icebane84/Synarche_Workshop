@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.AVATARSUITE.JUNCTION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **📜 GVRN.AvatarSuite.Junction: The Dual-Gate Protocol (FR-001)**
 
 ## **Block A: The Identification Lock (UIP-V15)**

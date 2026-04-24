@@ -1,0 +1,179 @@
+"""
+---
+# Block A: Universal Identification & Provenance (UIP-V15)
+artifact_anchor:
+  id: "TOOL.Forge.SourceMap"
+  version: "v1.1.0"
+  provenance: "2026-04-23"
+  domain: "TOOL"
+  celestial_class: "STAR"
+  tier: "AXIOMATIC"
+  state: "CANONIZED"
+  ethos: "ZERO-ENTROPY"
+  layer: "@system/"
+  relations:
+    - type: "UTILIZED_BY"
+      node: "TOOL.Forge.Daemon"
+    - type: "IMPLEMENTS"
+      node: "ARCH.CSE.SourceMapProtocol"
+    - type: "SYNERGIZES_WITH"
+      node: "TOOL.GUCA.Command"
+    - type: "GOVERNED_BY"
+      node: "CODEX-LAW-03"
+---
+
+TOOL.Forge.SourceMap — The Volar-Equivalent Source Map Engine
+==============================================================
+Canonical path: @system/sourcemap
+Physical path:  axion-core/src/cse/sourcemap.py
+
+Maintains a mathematically strict mapping of generated character offsets
+to their sovereign source blocks. Supports real-time delta updates and
+binary search offset tracing (O(log n)).
+
+Relations:
+  UTILIZED_BY: TOOL.Forge.Daemon
+  IMPLEMENTS:  ARCH.CSE.SourceMapProtocol
+  SYNERGIZES_WITH: TOOL.GUCA.Command
+  GOVERNED_BY: CODEX-LAW-03 (Zero-Gravity Portability)
+
+[OMNI-ARTIFACT-ANCHOR] ID: TOOL.Forge.SourceMap VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23
+"""
+
+import re
+import bisect
+from dataclasses import dataclass
+from typing import Optional, Tuple
+
+
+@dataclass
+class SourceMapping:
+    generated_start: int
+    generated_end: int
+    source_id: str      # e.g., "Transclusion_Blocks/Auth_Protocol.md"
+    source_start: int   # Offset within the source block itself
+
+
+class ForgeSourceMap:
+    """
+    AXION Forge equivalent of Volar's SourceMap.
+    Maintains a mathematically strict mapping of generated character offsets
+    to their sovereign source blocks.
+
+    Relations:
+        UTILIZED_BY: TOOL.Forge.Daemon
+        SYNERGIZES_WITH: TOOL.GUCA.Command
+    """
+    def __init__(self):
+        # Mappings must be strictly sorted by generated_start for binary search
+        self._mappings: list[SourceMapping] = []
+        self._keys: list[int] = []  # Cached keys for bisect
+
+    def add_mapping(self, gen_start: int, gen_end: int, source_id: str, src_start: int = 0):
+        mapping = SourceMapping(gen_start, gen_end, source_id, src_start)
+        self._mappings.append(mapping)
+        self._keys.append(gen_start)
+
+    def trace_offset(self, generated_offset: int) -> Optional[Tuple[str, int]]:
+        """
+        Mimics Volar's translateOffset using binary search.
+        Given an absolute character offset in the final compiled Markdown,
+        returns the (Source Block ID, Exact Offset Inside Block).
+        """
+        if not self._mappings:
+            return None
+
+        # Binary search to find the closest mapping block
+        idx = bisect.bisect_right(self._keys, generated_offset) - 1
+
+        if idx >= 0:
+            mapping = self._mappings[idx]
+            if mapping.generated_start <= generated_offset < mapping.generated_end:
+                delta = generated_offset - mapping.generated_start
+                exact_source_offset = mapping.source_start + delta
+                return mapping.source_id, exact_source_offset
+
+        return "Master_Shell", generated_offset
+
+    def apply_delta_update(self, offset: int, length_diff: int):
+        """
+        Handles real-time source updates, adjusting generated indices.
+        Operates similarly to a Language Server processing document changes.
+
+        :param offset: The character offset where the edit occurred.
+        :param length_diff: The change in length (+ for insertions, - for deletions).
+        """
+        if length_diff == 0:
+            return
+
+        for mapping in self._mappings:
+            if offset <= mapping.generated_start:
+                mapping.generated_start += length_diff
+                mapping.generated_end += length_diff
+            elif mapping.generated_start < offset < mapping.generated_end:
+                mapping.generated_end = max(
+                    mapping.generated_start,
+                    mapping.generated_end + length_diff
+                )
+
+        # Re-synchronize the binary search keys
+        self._keys = [m.generated_start for m in self._mappings]
+
+
+class TranscludeEngine:
+    """
+    Two-pass transclusion compiler that wraps content in mapping boundaries,
+    then strips markers and generates the SourceMap in a single pass.
+
+    Relations:
+        SYNERGIZES_WITH: TOOL.Forge.Daemon
+    """
+    MARKER_START = "\x00MAP_START:{}\x00"
+    MARKER_END = "\x00MAP_END\x00"
+    MARKER_REGEX = re.compile(r'\x00MAP_START:(.*?)\x00|\x00MAP_END\x00')
+
+    def compile_with_sourcemap(self, raw_jinja_output: str) -> Tuple[str, ForgeSourceMap]:
+        """The Second Pass: Strips markers, calculates offsets, generates the map."""
+        sourcemap = ForgeSourceMap()
+        final_output = []
+
+        current_gen_offset = 0
+        stack = []
+
+        parts = self.MARKER_REGEX.split(raw_jinja_output)
+        matches = self.MARKER_REGEX.finditer(raw_jinja_output)
+
+        if parts[0]:
+            final_output.append(parts[0])
+            current_gen_offset += len(parts[0])
+
+        part_idx = 1
+        for match in matches:
+            match_str = match.group(0)
+
+            if match_str == self.MARKER_END:
+                if stack:
+                    block_id, block_start_offset = stack.pop()
+                    sourcemap.add_mapping(
+                        gen_start=block_start_offset,
+                        gen_end=current_gen_offset,
+                        source_id=block_id
+                    )
+            else:
+                block_id = match.group(1)
+                stack.append((block_id, current_gen_offset))
+
+            text_chunk = parts[part_idx + 1] if part_idx + 1 < len(parts) else ""
+            if text_chunk:
+                final_output.append(text_chunk)
+                current_gen_offset += len(text_chunk)
+
+            part_idx += 2
+
+        compiled_markdown = "".join(final_output)
+        return compiled_markdown, sourcemap
+
+    def inject_transclude(self, block_id: str, block_content: str) -> str:
+        """Wraps content in strict mapping boundaries for first-pass rendering."""
+        start = self.MARKER_START.format(block_id)
+        return f"{start}{block_content}{self.MARKER_END}"

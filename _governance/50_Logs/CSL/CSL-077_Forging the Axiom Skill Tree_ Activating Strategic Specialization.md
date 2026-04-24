@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-077_FORGING THE AXIOM SKILL TREE_ ACTIVATING STRATEGIC SPECIALIZATION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-077_Forging the Axiom Skill Tree_ Activating Strategic Specialization.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

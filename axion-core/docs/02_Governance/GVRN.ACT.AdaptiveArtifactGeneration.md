@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.ACT.ADAPTIVEARTIFACTGENERATION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**

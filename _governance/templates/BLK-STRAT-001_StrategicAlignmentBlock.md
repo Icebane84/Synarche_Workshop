@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `BLK-STRAT-001_STRATEGICALIGNMENTBLOCK` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # BLK-STRAT-001_StrategicAlignmentBlock.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

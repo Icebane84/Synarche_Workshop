@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-EMOJICXT-001_EMOJICONTEXTUALSCOPINGENGINE_V1.1_CONSOLIDATED` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

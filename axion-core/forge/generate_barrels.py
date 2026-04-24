@@ -51,26 +51,18 @@ PATTERNS = {
         r"(?:(?:\*\*|#+\s*)?(?:Official Name|Module Name|Blueprint Title|Playbook Title|Command Title|Metric Title|Log Title)(?:\*\*)?):\s*(.*)",
         re.IGNORECASE,
     ),
-    "type": re.compile(
-        r"(?:(?:\*\*|#+\s*)?(?:Artifact Type|Type)(?:\*\*)?):\s*(.*)", re.IGNORECASE
-    ),
+    "type": re.compile(r"(?:(?:\*\*|#+\s*)?(?:Artifact Type|Type)(?:\*\*)?):\s*(.*)", re.IGNORECASE),
     "domain": re.compile(
         r"(?:(?:\*\*|#+\s*)?(?:Primary Domain Alignment|Primary Domain|Domain)(?:\*\*)?):\s*(.*)",
         re.IGNORECASE,
     ),
-    "ethos": re.compile(
-        r"(?:(?:\*\*|#+\s*)?(?:Governing Ethos)(?:\*\*)?):\s*(.*)", re.IGNORECASE
-    ),
+    "ethos": re.compile(r"(?:(?:\*\*|#+\s*)?(?:Governing Ethos)(?:\*\*)?):\s*(.*)", re.IGNORECASE),
     "purpose": re.compile(
         r"(?:(?:\*\*|#+\s*)?(?:Core Purpose|Purpose|Objective|What \(.*\))(?:\*\*)?):\s*(.*)",
         re.IGNORECASE,
     ),
-    "tags": re.compile(
-        r"(?:(?:\*\*|#+\s*)?(?:Semantic Tags|Tags)(?:\*\*)?):\s*(.*)", re.IGNORECASE
-    ),
-    "refs": re.compile(
-        r"(?:UMB|AOP|GUCA|SELT|DOC|gw)-[A-Z]{2,}-\d{3}|AISTF|OGLN|Synarche|Phoenix_Cycle|ContextWeave"
-    ),
+    "tags": re.compile(r"(?:(?:\*\*|#+\s*)?(?:Semantic Tags|Tags)(?:\*\*)?):\s*(.*)", re.IGNORECASE),
+    "refs": re.compile(r"(?:UMB|AOP|GUCA|SELT|DOC|gw)-[A-Z]{2,}-\d{3}|AISTF|OGLN|Synarche|Phoenix_Cycle|ContextWeave"),
 }
 
 

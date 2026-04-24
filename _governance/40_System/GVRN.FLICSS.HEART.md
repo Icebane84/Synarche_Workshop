@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.FLICSS.HEART` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-FLICSS-HEART-001_ContextUrgencyOrchestrator_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

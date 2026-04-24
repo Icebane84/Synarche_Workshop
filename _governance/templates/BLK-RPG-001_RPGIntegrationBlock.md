@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `BLK-RPG-001_RPGINTEGRATIONBLOCK` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # BLK-RPG-001_RPGIntegrationBlock.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

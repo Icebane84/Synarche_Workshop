@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-FUSION-001_OPENCLAWFUSION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **AOP // THE OPENCLAW FUSION: Mapping the Phoenix to the Terminal**
 
 **Status:** ARCHITECTURAL EXECUTION

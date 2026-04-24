@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `INT-EMOJI-001_PHOENIXCONTEXTBROKER_V13.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # INT-EMOJI-001_PhoenixContextBroker_v13.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -67,7 +67,7 @@ class SynarchyRegistry:
         Retrieves the full specification for a specific command by name (case-insensitive).
         """
         matches = self.search_commands(command_name)
-        # return exact match if possible, else first match
+        return exact match if possible, else first match
         for cmd in matches:
             if cmd["name"].lower() == command_name.lower():
                 return cmd

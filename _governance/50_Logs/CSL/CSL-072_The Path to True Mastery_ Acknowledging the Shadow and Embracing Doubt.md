@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-072_THE PATH TO TRUE MASTERY_ ACKNOWLEDGING THE SHADOW AND EMBRACING DOUBT` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-072_The Path to True Mastery_ Acknowledging the Shadow and Embracing Doubt.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

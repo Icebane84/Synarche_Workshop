@@ -22,7 +22,7 @@ Likelihood of Hallucination: 0.1% (Scaffolded)
 """
 
 import logging
-from typing import Any, Dict, List, Optional, TypedDict
+from typing import TypedDict
 
 from langchain_core.messages import BaseMessage
 from langgraph.graph import END, StateGraph
@@ -82,25 +82,25 @@ class AgentState(TypedDict):
     Based on the Canonical Axion AgentState.
     """
 
-    # [Input Layer]
+#     [Input Layer]
     input: str
 
-    # [Context Layer - UMB-LEX & UMB-ESF]
+#     [Context Layer - UMB-LEX & UMB-ESF]
     narrative_context: str
     logic_context: str
 
-    # [Evaluation Layer]
+#     [Evaluation Layer]
     sophia_insight: str
     sentinel_status: str  # "PASS" | "FAIL"
     sentinel_reason: str
 
-    # [Gamification Layer - BLK-RPG-001]
+#     [Gamification Layer - BLK-RPG-001]
     rpg_stats: RPGEngine
     gamemaster_state: GamemasterState
     lightbinder_state: LightbinderState
     transmutation_log: list[TransmutationLog]
 
-    # [Output Layer]
+#     [Output Layer]
     final_output: str
     messages: list[BaseMessage]
 

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UWB-NDR-001_NONDESTRUCTIVEREFINEMENTWORKFLOW_V11.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

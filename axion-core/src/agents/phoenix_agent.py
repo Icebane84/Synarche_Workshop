@@ -22,7 +22,7 @@ Likelihood of Hallucination: 0.05% (Sentinel Active)
 """
 
 import logging
-from typing import List, TypedDict
+from typing import TypedDict
 
 from langchain_core.messages import BaseMessage
 from langgraph.graph import END, StateGraph
@@ -46,8 +46,8 @@ class RPGEngine(TypedDict):
     coherence_index: int
     synergy_flow: int
     adaptability: int
-    achievements: List[str]
-    active_quest_log: List[str]
+    achievements: list[str]
+    active_quest_log: list[str]
     prestige_class: str
 
 
@@ -62,11 +62,11 @@ class GamemasterState(TypedDict):
 class LightbinderState(TypedDict):
     """The Weaver that connects Artifacts and Emotions."""
 
-    synergy_links: List[str]
+    synergy_links: list[str]
     empathy_vector: str
     metric_weights: dict
     tarot_manifest: dict
-    active_masks: List[str]
+    active_masks: list[str]
 
 
 class TransmutationLog(TypedDict):
@@ -81,27 +81,27 @@ class AgentState(TypedDict):
     The Memory (State) of the Phoenix Agent.
     """
 
-    # [Input Layer]
+#     [Input Layer]
     input: str
 
-    # [Context Layer - UMB-LEX & UMB-ESF]
+#     [Context Layer - UMB-LEX & UMB-ESF]
     narrative_context: str
     logic_context: str
 
-    # [Evaluation Layer]
+#     [Evaluation Layer]
     sophia_insight: str
     sentinel_status: str
     sentinel_reason: str
 
-    # [Gamification Layer - BLK-RPG-001]
+#     [Gamification Layer - BLK-RPG-001]
     rpg_stats: RPGEngine
     gamemaster_state: GamemasterState
     lightbinder_state: LightbinderState
-    transmutation_log: List[TransmutationLog]
+    transmutation_log: list[TransmutationLog]
 
-    # [Output Layer]
+#     [Output Layer]
     final_output: str
-    messages: List[BaseMessage]
+    messages: list[BaseMessage]
 
 
 # --- NODE DEFINITIONS ---

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CORE-CODEX-001_THEPHOENIXCODEX_V13.1` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CORE-CODEX-001: The Phoenix Codex
 
 > **Domain**: GVRN (Governance)

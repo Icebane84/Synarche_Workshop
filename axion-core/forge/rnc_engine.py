@@ -1,10 +1,20 @@
 """
-[GVRN] [CORE] [ENGINE]
+[CORE] [ENGINE] [RNC_ENGINE]
 Artifact ID: CORE.Engine.RNCEngine
 Official Name: rnc_engine.py
-Version: v16.3 [SOVEREIGN]
+Version: v15.0 [OMEGA]
 Status: [CANONIZED]
 Description: Validates RNC IDs and maps them to canonical filesystem paths.
+
+[UIP-V15]
+| Key | Value |
+| :--- | :--- |
+| **Artifact ID** | `CORE.Engine.RNCEngine` |
+| **Official Name** | `rnc_engine.py` |
+| **Version** | **v15.0 [OMEGA]** |
+| **Domain** | `CORE` |
+| **Status** | `[CANONIZED]` |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` |
 """
 
 import os
@@ -123,4 +133,4 @@ class RNCEngine:
 
 
 # [TERMINAL SIGNATURE]
-# [OMNI-ARTIFACT-ANCHOR] ID: CORE.Engine.RNCEngine VER: v16.3 STATUS: CANONIZED TS: 2026-04-16 HASH: RNC-V16-SOVEREIGN
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.Engine.RNCEngine VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23

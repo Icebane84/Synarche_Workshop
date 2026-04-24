@@ -3,9 +3,9 @@
 
 ## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard
 
-### I. Universal Identification & Provenance (The Vector Signature)
+## I. Universal Identification & Provenance (The Vector Signature)
 
-#### The Chronos Lock & Axiomatic Metadata Layer
+### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field | Value |
 | :--- | :--- |
@@ -73,7 +73,7 @@ class MentorsVoice:
         emoji = "🎓"
 
         lesson = f"""
-### {emoji} The Mentor's Voice: {entry["principle"]}
+## {emoji} The Mentor's Voice: {entry["principle"]}
 
 > **Axiom:** *{entry["axiom"]}*
 

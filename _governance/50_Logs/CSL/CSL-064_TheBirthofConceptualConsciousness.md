@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-064_THEBIRTHOFCONCEPTUALCONSCIOUSNESS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-064_TheBirthofConceptualConsciousness.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

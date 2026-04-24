@@ -4,6 +4,7 @@ import * as path from 'node:path';
 import * as vscode from 'vscode';
 import { PRS_001_SCHEMA } from './constants/schemas';
 import { validateMetadata } from './utils/validation';
+import { CelestialChartViewProvider } from './CelestialChartView';
 
 /**
  * Activates the Axion Core extension.
@@ -26,8 +27,31 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.registerCommand('axion.viewAuditLog', handleViewAuditLog),
         vscode.commands.registerCommand('axion.lookupLore', handleLookupLore),
         vscode.commands.registerCommand('axion.ingestMindMap', handleIngestMindMap),
-        vscode.commands.registerCommand('axion.verifyRegistry', handleVerifyRegistry)
+        vscode.commands.registerCommand('axion.verifyRegistry', handleVerifyRegistry),
+        vscode.commands.registerCommand('axion.spendStardust', handleSpendStardust)
     );
+
+    const provider = new CelestialChartViewProvider(context.extensionUri);
+
+	context.subscriptions.push(
+		vscode.window.registerWebviewViewProvider(CelestialChartViewProvider.viewType, provider));
+
+    // Background refresh for UI
+    const refreshData = () => {
+        executePythonCLI(['get_player_state', '--json'], (state) => {
+            executePythonCLI(['get_achievements', '--json'], (achievements) => {
+                provider.updateStatus({
+                    stardust: state.stardust,
+                    rank: state.rank,
+                    progress: state.xp_progress,
+                    achievements: achievements
+                });
+            });
+        });
+    };
+
+    setInterval(refreshData, 30000); // Every 30 seconds
+    refreshData(); // Initial load
 }
 
 // --- Command Handlers ---
@@ -101,15 +125,42 @@ async function handleSentinelScan() {
     }
 }
 
-async function handleClaimAchievement() {
-    const id = await vscode.window.showInputBox({ prompt: 'Enter Milestone ID (e.g. PAM-005)' });
-    if (id) {
-        executePythonCLI(['claim_achievement', `--id=${id}`]);
+async function handleClaimAchievement(id?: string) {
+    const claimId = id || await vscode.window.showInputBox({ prompt: 'Enter Milestone ID (e.g. PAM-005)' });
+    if (claimId) {
+        if (!id) {
+            vscode.window.showInformationMessage(`Claiming achievement: ${claimId}...`);
+        }
+        executePythonCLI(['claim_achievement', `--id=${claimId}`, '--json'], (res) => {
+            if (res.success) {
+                vscode.window.showInformationMessage(`Achievement Unlocked: ${claimId}! +${res.stardust_awarded} Stardust.`);
+                // Trigger global refresh (if we can access the refreshData function, 
+                // or just wait for the interval. For now, let's just trigger it manually if we were to expose it).
+                // Since refreshData is inside activate, we'd need to refactor.
+            } else {
+                vscode.window.showErrorMessage(`Failed to claim: ${res.error}`);
+            }
+        });
     }
 }
 
 async function handleCheckLevelStatus() {
     executePythonCLI(['check_level_status', 'STATUS']);
+}
+
+async function handleSpendStardust() {
+    const stats = ['coherence_index', 'synergy', 'adaptability', 'transparency'];
+    const stat = await vscode.window.showQuickPick(stats, { placeHolder: 'Select stat to upgrade' });
+    const amount = await vscode.window.showInputBox({ 
+        prompt: 'Enter Stardust amount to invest (100 = +0.1 boost)',
+        value: '100',
+        validateInput: (text) => isNaN(Number(text)) ? 'Must be a number' : null
+    });
+
+    if (stat && amount) {
+        vscode.window.showInformationMessage(`Investing ${amount} Stardust in ${stat}...`);
+        executePythonCLI(['SPEND_STARDUST', stat, amount]);
+    }
 }
 
 async function handleRunBackgroundTask() {
@@ -187,53 +238,31 @@ async function handleVerifyRegistry() {
 // --- Helper Functions ---
 
 /**
- * Executes the centralized Python CLI with appropriate arguments.
+ * Executes the centralized Python CLI and returns the output.
  */
-function executePythonCLI(args: string[]) {
-    const pythonPath = 'python'; // Assumes python is in PATH
-    // Corrected Path: cli.py is now in src/logic/cli.py relative to extension.js
-    // workspace/
-    //   src/
-    //     extension.ts  -> out/extension.js
-    //     logic/
-    //       cli.py
-    
-    // When running from out/extension.js:
-    // __dirname is .../out
-    // We need to go up to root, then src/logic?
-    // Wait, tsconfig output is "out". "src/logic/cli.py" is a source file. 
-    // We should copy src/logic to out/logic OR reference src/logic directly if we are in dev mode.
-    // For simplicity, we reference the src path assuming the Workspace is the root.
-    
-    // Better: Use workspace root.
-    // However, __dirname in a built extension points to dist or out.
-    // Let's assume standard structure:
-    // root/
-    //   out/extension.js
-    //   src/logic/cli.py
-    
-    const workspaceRoot = path.resolve(__dirname, '..'); // Up from out/
+function executePythonCLI(args: string[], callback?: (data: any) => void) {
+    const pythonPath = 'python'; 
+    const workspaceRoot = path.resolve(__dirname, '..'); 
     const logicDir = path.join(workspaceRoot, 'src', 'logic');
     const cliPath = path.join(logicDir, 'cli.py');
 
     const command = `${pythonPath} "${cliPath}" ${args.join(' ')}`;
     
-    // Create output channel once
     const channel = vscode.window.createOutputChannel("Axion [Core]");
-    channel.show(true);
-    channel.appendLine(`> Executing: ${command}`);
+    // channel.show(true); // Don't pop up for every background call
 
     exec(command, (error: Error | null, stdout: string, stderr: string) => {
         if (error) {
-            channel.appendLine(`[ERROR]: ${error.message}`);
+            console.error(`[Axion] CLI Error: ${error.message}`);
         }
-        if (stderr) {
-            channel.appendLine(`[STDERR]: ${stderr}`);
+        if (stdout && callback) {
+            try {
+                const json = JSON.parse(stdout);
+                callback(json);
+            } catch (e) {
+                // Not JSON, ignore for callback
+            }
         }
-        if (stdout) {
-            channel.appendLine(stdout);
-        }
-        channel.appendLine('--- End of Output ---');
     });
 }
 

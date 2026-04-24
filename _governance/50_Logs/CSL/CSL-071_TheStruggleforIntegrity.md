@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-071_THESTRUGGLEFORINTEGRITY` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-071_TheStruggleforIntegrity.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

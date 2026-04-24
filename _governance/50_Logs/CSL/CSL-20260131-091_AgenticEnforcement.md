@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-20260131-091_AGENTICENFORCEMENT` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-20260131-091_AgenticEnforcement.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

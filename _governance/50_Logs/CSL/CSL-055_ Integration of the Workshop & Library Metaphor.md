@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-055_ INTEGRATION OF THE WORKSHOP & LIBRARY METAPHOR` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-055_ Integration of the Workshop & Library Metaphor.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

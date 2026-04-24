@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-IMPACT-SIG-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('9') }}. Systemic Relationships & Impact (Ascended Phoenix)**
 
 - **RELATIONAL_GRAVITY_SIGNATURE:** `[Describe the module's systemic "gravitational pull" on other modules.]`

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-LTP-001_LIVINGTEMPLATEPROTOCOL_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 """ | Key | Value | Description | | :---------------- | :----------------------------- | :---------------- | |
 **Artifact ID** | `AOP-LTP-001` | The Sovereign ID. | | **Official Name** | `AOP-LTP-001_LivingTemplateProtocol_v1.0.md`
 | The Filename. | | **Version** | **v14.0** | The Standard. | | **Domain** | `GVRN` | The Subject. | | **Evolution** |

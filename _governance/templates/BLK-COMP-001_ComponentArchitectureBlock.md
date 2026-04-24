@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `BLK-COMP-001_COMPONENTARCHITECTUREBLOCK` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # BLK-COMP-001_ComponentArchitectureBlock.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GUCA-CSL-COMP-001-COLLABORATIVE SYNTHESIS LOGS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GUCA-CSL-COMP-001-Collaborative Synthesis Logs.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

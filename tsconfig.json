@@ -1,19 +1,17 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@forge": ["nova_forge/playground/tarot-forge/src/radio/index.ts"],
-      "@forge/*": ["nova_forge/playground/tarot-forge/src/*"],
-      "@system/*": ["axion-core/src/*"],
-      "@domain/*": ["_governance/*"],
-      "@nexus/*": ["C:/Users/Chris/Freeplane/*"],
-      "@fabric/*": ["design-system/*"],
-      "@atlas/*": ["_governance/01_Registries/*"],
-      "@essence/*": ["axion-core/src/types/*"],
-      "@shield/*": ["axion-core/sentinel/*"],
-      "@pulse/*": ["axion-core/_logs/*"],
-      "@loom/*": ["_governance/templates/*"],
-      "@archive/*": ["_governance/99_Archives/*"]
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@system/*":  ["axion-core/src/cse/*"],
+            "@domain/*":  ["axion-core/src/02_domain/*"],
+            "@nexus/*":   ["axion-core/src/nexus/*"],
+            "@fabric/*":  ["design-system/tarot-forge/src/*"],
+            "@atlas/*":   ["_governance/01_Registries/*"],
+            "@essence/*": ["axion-core/src/types/*"],
+            "@shield/*":  ["axion-core/sentinel/*"],
+            "@pulse/*":   ["axion-core/_logs/*"],
+            "@loom/*":    ["_governance/templates/*"],
+            "@archive/*": ["_governance/99_Archives/*"]
+        }
     }
-  }
 }

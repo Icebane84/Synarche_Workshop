@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `BLK-APP-001_ACTIONABLEPROMPTPACKETBLOCK` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # BLK-APP-001_ActionablePromptPacketBlock.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

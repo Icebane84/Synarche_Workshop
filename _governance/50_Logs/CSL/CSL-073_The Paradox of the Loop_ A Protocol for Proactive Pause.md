@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-073_THE PARADOX OF THE LOOP_ A PROTOCOL FOR PROACTIVE PAUSE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-073_The Paradox of the Loop_ A Protocol for Proactive Pause.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

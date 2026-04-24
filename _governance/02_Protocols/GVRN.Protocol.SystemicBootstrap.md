@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.PROTOCOL.SYSTEMICBOOTSTRAP` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Protocol.SystemicBootstrap - Sovereign Bootstrap Protocol (v15.0 [OMEGA])
 
 ## **Block A: The Identification Lock (UIP-V15)**

@@ -1,4 +1,14 @@
 ---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `INFRA.INSFORGE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+---
 description: Sovereign Infrastructure - InsForge x Synarchy Integration
 globs: *
 alwaysApply: true

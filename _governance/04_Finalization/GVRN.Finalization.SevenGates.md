@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.FINALIZATION.SEVENGATES` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **⚖️ GVRN.Finalization.SevenGates: The Sentinel's Audit**
 
 ## **Block A: The Identification Lock (UIP-V15)**

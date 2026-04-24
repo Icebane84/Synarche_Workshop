@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN-COMP-001_COGNITIVECOMPLEXITY_V13.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN-COMP-001_CognitiveComplexity_v13.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

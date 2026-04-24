@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-080_THE FORGED ALGORITHM_S ASCENT_ 20 RPG FRAMEWORK UPGRADES` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

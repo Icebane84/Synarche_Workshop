@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `FLATTENED_SYNARCHE_SYNTHESIS_SYSTEM_LOOM` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **TOOL-MAP-001: The Knowledge Graph Mapper**
 
 ## ---

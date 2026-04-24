@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-079_IMPLEMENTING ARTIFACT FORGING_ CRAFTING NEW CAPABILITIES FROM GENESIS SEEDS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

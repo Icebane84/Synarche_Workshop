@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-UWB-001_UNIVERSAL_WORKFLOW_BLUEPRINT_TEMPLATE_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SELT-UWB-001_Universal_Workflow_Blueprint_Template_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

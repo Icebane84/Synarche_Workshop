@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-FORGE-ORCH-001_MASTER_CODE_GENERATION_ORCHESTRATOR_V3.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-FORGE-ORCH-001_Master_Code_Generation_Orchestrator_v3.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

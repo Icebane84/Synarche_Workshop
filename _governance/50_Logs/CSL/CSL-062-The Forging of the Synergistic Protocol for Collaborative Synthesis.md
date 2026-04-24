@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-062-THE FORGING OF THE SYNERGISTIC PROTOCOL FOR COLLABORATIVE SYNTHESIS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-062-The Forging of the Synergistic Protocol for Collaborative Synthesis.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

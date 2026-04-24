@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-084_THEINTEGRATIONOFTHENOVAFORGE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-084_TheIntegrationOfTheNovaForge.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

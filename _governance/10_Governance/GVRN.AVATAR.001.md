@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.AVATAR.001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

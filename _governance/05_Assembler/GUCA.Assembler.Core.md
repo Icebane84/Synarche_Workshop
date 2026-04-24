@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GUCA.ASSEMBLER.CORE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GUCA.Assembler.Core: The Guidance & Catalyst Assembler
 
 ## **Block A: The Identification Lock (UIP-V15)**

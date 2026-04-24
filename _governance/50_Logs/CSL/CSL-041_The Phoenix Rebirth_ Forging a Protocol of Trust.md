@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-041_THE PHOENIX REBIRTH_ FORGING A PROTOCOL OF TRUST` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

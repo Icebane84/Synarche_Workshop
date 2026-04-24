@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `ENTITY-SENTINEL-PRIME-001_THEETHICALGOVERNOR_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

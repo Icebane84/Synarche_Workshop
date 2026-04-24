@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-078_IMPLEMENTING PRESTIGE POINT AWARDING_ OPERATIONALIZING GROWTH METRICS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

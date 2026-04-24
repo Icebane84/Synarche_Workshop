@@ -36,176 +36,176 @@
  * -----------------------------------------------------------------------------
  */
 {
-  "folders": [
-    {
-      "name": "🧠 THE MIND",
-      "path": ".agent"
-    },
-    {
-      "name": "📜 THE LAW",
-      "path": "_governance"
-    },
-    {
-      "name": "⚙️ THE ENGINE",
-      "path": "axion-core"
-    },
-    {
-      "name": "🧪 THE LAB",
-      "path": "nova_forge"
-    },
-    {
-      "name": "📖 THE NARRATIVE",
-      "path": "where_light_fades"
-    },
-    {
-      "name": "The Wilds",
-      "path": "../_Desktop_Vault"
-    },
-    {
-      "name": "📂 ROOT",
-      "path": "."
-    }
-  ],
-  "settings": {
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "**/Thumbs.db": true,
-      ".agent": true,
-      "_governance": true,
-      "axion-core": true,
-      "nova_forge": true,
-      ".learnings": true,
-      ".trunk": true,
-      ".vscode": true,
-      ".mypy_cache": true,
-      ".pytest_cache": true,
-      "tmp": true
-    },
-    "search.exclude": {
-      "**/__pycache__": true,
-      "**/.mypy_cache": true,
-      "**/.pytest_cache": true,
-      "**/.ruff_cache": true,
-      "**/node_modules": true,
-      "**/dist": true,
-      "**/out": true,
-      "**/.tmp.*": true
-    },
-    "cSpell.words": [
-      "AISTF",
-      "Badass",
-      "chronos",
-      "DQUEST",
-      "dragonslayer",
-      "EMPR",
-      "Episemantics",
-      "Gamified",
-      "Gemification",
-      "GVRN",
-      "HIER",
-      "Insforge",
-      "INSFORGE",
-      "KAELEN",
-      "Lightbinder",
-      "MAGN",
-      "Musashi",
-      "Oathkeep",
-      "Oathkeeper",
-      "OGLN",
-      "OSLM",
-      "PGPS",
-      "Pythonic",
-      "QLOR",
-      "Serafina",
-      "SUPABASE",
-      "synarche",
-      "SYNG"
+    "folders": [
+        {
+            "name": "🧠 THE MIND",
+            "path": ".agent"
+        },
+        {
+            "name": "📜 THE LAW",
+            "path": "_governance"
+        },
+        {
+            "name": "⚙️ THE ENGINE",
+            "path": "axion-core"
+        },
+        {
+            "name": "🧪 THE LAB",
+            "path": "nova_forge"
+        },
+        {
+            "name": "📖 THE NARRATIVE",
+            "path": "where_light_fades"
+        },
+        {
+            "name": "The Wilds",
+            "path": "../_Desktop_Vault"
+        },
+        {
+            "name": "📂 ROOT",
+            "path": "."
+        }
     ],
-    "powershell.cwd": "⚙️ THE ENGINE",
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "trunk.io",
-    "python.analysis.extraPaths": ["axion-core"],
-    "python.analysis.typeCheckingMode": "basic",
-    "markdownlint.config": {
-      "MD013": false,
-      "MD033": false
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/CVS": true,
+            "**/.DS_Store": true,
+            "**/Thumbs.db": true,
+            ".agent": true,
+            "_governance": true,
+            "axion-core": true,
+            "nova_forge": true,
+            ".learnings": true,
+            ".trunk": true,
+            ".vscode": true,
+            ".mypy_cache": true,
+            ".pytest_cache": true,
+            "tmp": true
+        },
+        "search.exclude": {
+            "**/__pycache__": true,
+            "**/.mypy_cache": true,
+            "**/.pytest_cache": true,
+            "**/.ruff_cache": true,
+            "**/node_modules": true,
+            "**/dist": true,
+            "**/out": true,
+            "**/.tmp.*": true
+        },
+        "cSpell.words": [
+            "AISTF",
+            "Badass",
+            "chronos",
+            "DQUEST",
+            "dragonslayer",
+            "EMPR",
+            "Episemantics",
+            "Gamified",
+            "Gemification",
+            "GVRN",
+            "HIER",
+            "Insforge",
+            "INSFORGE",
+            "KAELEN",
+            "Lightbinder",
+            "MAGN",
+            "Musashi",
+            "Oathkeep",
+            "Oathkeeper",
+            "OGLN",
+            "OSLM",
+            "PGPS",
+            "Pythonic",
+            "QLOR",
+            "Serafina",
+            "SUPABASE",
+            "synarche",
+            "SYNG"
+        ],
+        "powershell.cwd": "🧠 THE MIND",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "trunk.io",
+        "python.analysis.extraPaths": ["axion-core"],
+        "python.analysis.typeCheckingMode": "basic",
+        "markdownlint.config": {
+            "MD013": false,
+            "MD033": false
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "trunk.io",
+            "yzhang.markdown-all-in-one",
+            "tamasfe.even-better-toml",
+            "redhat.vscode-yaml"
+        ]
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "GVRN: Re-Index Master Registry",
+                "type": "shell",
+                "command": "python axion-core/scripts/gen_registry_entries.py",
+                "problemMatcher": []
+            },
+            {
+                "label": "EVO: Run AISTF Cycle",
+                "type": "shell",
+                "command": "python axion-core/forge/evolution_engine.py --root .",
+                "problemMatcher": []
+            },
+            {
+                "label": "GVRN: Run Canonization Audit",
+                "type": "shell",
+                "command": "python axion-core/scripts/canonization_audit.py",
+                "problemMatcher": []
+            }
+        ]
+    },
+    "settings": {
+        "powershell.cwd": "Synarche_Workspace",
+        "geminicodeassist.project": "resounding-phenomenon-x5tpm",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "prettier.requireConfig": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.semanticHighlighting.enabled": true,
+        "errorLens.fontStyleItalic": true,
+        "errorLens.fontWeight": "400",
+        "errorLens.gutterIconsEnabled": true,
+        "errorLens.messageBackgroundMode": "line",
+        "sonarlint.rules": {
+            "javascript:S106": "off"
+        },
+        "cSpell.enabled": true,
+        "cSpell.userWords": [
+            "middleware",
+            "params",
+            "trpc",
+            "zustand"
+        ],
+        "[python]": {
+            "editor.defaultFormatter": "charliermarsh.ruff",
+            "editor.codeActionsOnSave": {
+                "source.fixAll": "explicit",
+                "source.organizeImports": "explicit"
+            }
+        },
+        "editor.guides.bracketPairs": true,
+        "editor.renderWhitespace": "selection",
+        "editor.minimap.enabled": false,
+        "editor.fontLigatures": true,
+        "[jsonc]": {
+            "editor.defaultFormatter": "denoland.vscode-deno"
+        }
     }
-  },
-  "extensions": {
-    "recommendations": [
-      "ms-python.python",
-      "ms-python.vscode-pylance",
-      "trunk.io",
-      "yzhang.markdown-all-in-one",
-      "tamasfe.even-better-toml",
-      "redhat.vscode-yaml"
-    ]
-  },
-  "tasks": {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "GVRN: Re-Index Master Registry",
-        "type": "shell",
-        "command": "python axion-core/scripts/gen_registry_entries.py",
-        "problemMatcher": []
-      },
-      {
-        "label": "EVO: Run AISTF Cycle",
-        "type": "shell",
-        "command": "python axion-core/forge/evolution_engine.py --root .",
-        "problemMatcher": []
-      },
-      {
-        "label": "GVRN: Run Canonization Audit",
-        "type": "shell",
-        "command": "python axion-core/scripts/canonization_audit.py",
-        "problemMatcher": []
-      }
-    ]
-  },
-  "settings": {
-    "powershell.cwd": "Synarche_Workspace",
-    "geminicodeassist.project": "resounding-phenomenon-x5tpm",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "prettier.requireConfig": false,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    },
-    "editor.semanticHighlighting.enabled": true,
-    "errorLens.fontStyleItalic": true,
-    "errorLens.fontWeight": "400",
-    "errorLens.gutterIconsEnabled": true,
-    "errorLens.messageBackgroundMode": "line",
-    "sonarlint.rules": {
-      "javascript:S106": "off"
-    },
-    "cSpell.enabled": true,
-    "cSpell.userWords": [
-      "middleware",
-      "params",
-      "trpc",
-      "zustand"
-    ],
-    "[python]": {
-      "editor.defaultFormatter": "charliermarsh.ruff",
-      "editor.codeActionsOnSave": {
-        "source.fixAll": "explicit",
-        "source.organizeImports": "explicit"
-      }
-    },
-    "editor.guides.bracketPairs": true,
-    "editor.renderWhitespace": "selection",
-    "editor.minimap.enabled": false,
-    "editor.fontLigatures": true,
-    "[jsonc]": {
-      "editor.defaultFormatter": "denoland.vscode-deno"
-    }
-  }
 }

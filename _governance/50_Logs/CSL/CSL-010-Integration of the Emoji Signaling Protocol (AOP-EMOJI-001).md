@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-010-INTEGRATION OF THE EMOJI SIGNALING PROTOCOL (AOP-EMOJI-001)` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-010-Integration of the Emoji Signaling Protocol (AOP-EMOJI-001).md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

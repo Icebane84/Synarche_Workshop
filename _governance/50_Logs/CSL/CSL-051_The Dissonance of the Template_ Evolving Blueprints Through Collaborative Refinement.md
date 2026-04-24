@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-051_THE DISSONANCE OF THE TEMPLATE_ EVOLVING BLUEPRINTS THROUGH COLLABORATIVE REFINEMENT` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -3,7 +3,7 @@
 
 ## Genesis Stamp: 2026-01-18 | Domain: GVRN | State: CANONIZED | Criticality: Critical
 
-### I. Universal Identification & Provenance (The Vector Signature)
+## I. Universal Identification & Provenance (The Vector Signature)
 
 | Field | Value |
 | :--- | :--- |

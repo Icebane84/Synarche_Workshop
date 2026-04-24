@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-CSL-NOVA-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('N') }}: The Nova Spark & Collaborative Synthesis Log (CSL) [v15.0] 💥**
 
 This section is the core **Evolutionary Context Index (ECI)** record, capturing the breakthrough in a machine-readable format.

@@ -3,9 +3,9 @@
 
 ## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: High
 
-### I. Universal Identification & Provenance (The Vector Signature)
+## I. Universal Identification & Provenance (The Vector Signature)
 
-#### The Chronos Lock & Axiomatic Metadata Layer
+### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field | Value |
 | :--- | :--- |
@@ -69,7 +69,7 @@ class ArtificersSoul:
                 elif isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
                     complexity += 1  # Base complexity for function
 
-            # Score = 10 - (0.1 * Complexity)
+            Score = 10 - (0.1 * Complexity)
             # A complexity of 50 (very high) results in 5.0 score.
             score = 10.0 - (complexity * 0.1)
             return max(0.0, min(10.0, score))
@@ -91,7 +91,7 @@ class ArtificersSoul:
                 if not stripped:
                     continue
 
-                # Indentation (approx 4 spaces per level)
+                Indentation (approx 4 spaces per level)
                 indent_level = (len(line) - len(stripped)) / 4
                 if indent_level > MAX_INDENT_LEVEL:
                     indent_penalty += 0.5

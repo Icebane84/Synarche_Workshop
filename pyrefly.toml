@@ -16,4 +16,4 @@
 displayTypeErrors = "force-on"
 
 # Project Roots
-source_directories = ["axion-core", "src"]
+source_directories = ["axion-core"]

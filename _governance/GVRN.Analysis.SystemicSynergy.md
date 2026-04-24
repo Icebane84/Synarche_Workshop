@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.ANALYSIS.SYSTEMICSYNERGY` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Analysis.SystemicSynergy - Sovereign Analysis of Systemic Synergies
 
 ## **Block A: The Identification Lock (UIP-V15)**

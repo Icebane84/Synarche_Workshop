@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `DOC-META-REQ-001_METADATAREQUIREMENTS_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # DOC-META-REQ-001_MetadataRequirements_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

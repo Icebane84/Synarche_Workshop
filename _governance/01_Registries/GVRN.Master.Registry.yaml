@@ -11719,3 +11719,221 @@ primary_directive:
   relations: "REF: GVRN.Master.Registry"
   status: "[ACTIVE]"
   version: v15.0 [OMEGA]
+CORE.System.Activator:
+  artifact_id: CORE.System.Activator
+  content_hash: 8c441ab7a6aa03e40a7b2c0d70b94cc142b984644139c83ba10376f13646686c
+  domain: CORE
+  official_name: activate_axion.py
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/activate_axion.py
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+CORE.Engine.RNCEngine:
+  artifact_id: CORE.Engine.RNCEngine
+  content_hash: 94b44a7653396ed5684623a2d88c8d9b23aa9c051348f4d9925e537e006bff8f
+  domain: CORE
+  official_name: rnc_engine.py
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/forge/rnc_engine.py
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+CORE.Engine.CSEEngine:
+  artifact_id: CORE.Engine.CSEEngine
+  content_hash: 882193faf813fb5fbc1307313b459ac761fa33c89baa357f9cb7b9bdf4ee75e3
+  domain: CORE
+  official_name: cse_engine.py
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/forge/cse_engine.py
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+
+# --- @NEXUS TRANSCLUDE INGESTION — 2026-04-23 ---
+
+FABRIC.Synapse.Logic:
+  artifact_id: FABRIC.Synapse.Logic
+  domain: NEXUS
+  official_name: useSynapseLogic.ts
+  path: axion-core/src/nexus/useSynapseLogic.ts
+  layer: "@nexus/"
+  parsed_relations:
+    - SYNERGIZES_WITH:NEXUS.Worker.State
+    - GOVERNED_BY:CODEX-LAW-03
+    - IMPLEMENTS:ARCH.VIS.CognitiveLoomVisualizer
+  relations: "SYNERGIZES_WITH: NEXUS.Worker.State, GOVERNED_BY: CODEX-LAW-03, IMPLEMENTS: ARCH.VIS.CognitiveLoomVisualizer"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+GVRN.CI.ForgePR:
+  artifact_id: GVRN.CI.ForgePR
+  domain: GVRN
+  official_name: axion_forge_pr.yml
+  path: .github/workflows/axion_forge_pr.yml
+  layer: "@shield/"
+  parsed_relations:
+    - SYNERGIZES_WITH:TOOL.Coverage.Gate
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: TOOL.Coverage.Gate, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+NEXUS.Layer.Gateway:
+  artifact_id: NEXUS.Layer.Gateway
+  domain: NEXUS
+  official_name: index.ts
+  path: axion-core/src/nexus/index.ts
+  layer: "@nexus/"
+  parsed_relations:
+    - EXPORTS:FABRIC.Synapse.Logic
+    - EXPORTS:NEXUS.Worker.State
+    - EXPORTS:NEXUS.Worker.Handshake
+    - GOVERNED_BY:ARCH.NexusPattern
+  relations: "EXPORTS: FABRIC.Synapse.Logic, EXPORTS: NEXUS.Worker.State, GOVERNED_BY: ARCH.NexusPattern"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+NEXUS.Worker.Handshake:
+  artifact_id: NEXUS.Worker.Handshake
+  domain: NEXUS
+  official_name: nexus_handshake.js
+  path: axion-core/src/nexus/nexus_handshake.js
+  layer: "@nexus/@shield/"
+  parsed_relations:
+    - SYNERGIZES_WITH:SHIELD.Challenge.Client
+    - UTILIZED_BY:TOOL.Forge.Daemon
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: SHIELD.Challenge.Client, UTILIZED_BY: TOOL.Forge.Daemon, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+NEXUS.Worker.State:
+  artifact_id: NEXUS.Worker.State
+  domain: NEXUS
+  official_name: nexus_worker.js
+  path: axion-core/src/nexus/nexus_worker.js
+  layer: "@nexus/"
+  parsed_relations:
+    - SYNERGIZES_WITH:FABRIC.Synapse.Logic
+    - SYNERGIZES_WITH:NEXUS.Worker.Handshake
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: FABRIC.Synapse.Logic, SYNERGIZES_WITH: NEXUS.Worker.Handshake, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+SELT.NexusIngestion.ShadowLog:
+  artifact_id: SELT.NexusIngestion.ShadowLog
+  domain: SELT
+  official_name: SELT.NexusIngestion.ShadowLog.md
+  path: _governance/10_Governance/SELT.NexusIngestion.ShadowLog.md
+  layer: "@atlas/"
+  parsed_relations:
+    - DOCUMENTS:TOOL.Forge.Daemon
+    - DOCUMENTS:TOOL.Forge.SourceMap
+    - GOVERNED_BY:GVRN.WF.Finalization
+    - SYNERGIZES_WITH:SKILL.SynergisticOpportunityWeaving
+  relations: "DOCUMENTS: TOOL.Forge.Daemon, GOVERNED_BY: GVRN.WF.Finalization"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+SHIELD.Challenge.Client:
+  artifact_id: SHIELD.Challenge.Client
+  domain: SHIELD
+  official_name: shield_challenge.js
+  path: axion-core/src/nexus/shield_challenge.js
+  layer: "@shield/"
+  parsed_relations:
+    - SYNERGIZES_WITH:NEXUS.Worker.Handshake
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: NEXUS.Worker.Handshake, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+SYSTEM.CSE.Gateway:
+  artifact_id: SYSTEM.CSE.Gateway
+  domain: CORE
+  official_name: index.ts
+  path: axion-core/src/cse/index.ts
+  layer: "@system/"
+  parsed_relations:
+    - EXPORTS:TOOL.Forge.SourceMap
+    - EXPORTS:TOOL.GUCA.Command
+    - GOVERNED_BY:ARCH.NexusPattern
+  relations: "EXPORTS: TOOL.Forge.SourceMap, EXPORTS: TOOL.GUCA.Command, GOVERNED_BY: ARCH.NexusPattern"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+TOOL.Coverage.Gate:
+  artifact_id: TOOL.Coverage.Gate
+  domain: TOOL
+  official_name: check_coverage.py
+  path: axion-core/tools/check_coverage.py
+  layer: "@shield/"
+  parsed_relations:
+    - SYNERGIZES_WITH:GVRN.CI.ForgePR
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: GVRN.CI.ForgePR, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+TOOL.Forge.Daemon:
+  artifact_id: TOOL.Forge.Daemon
+  domain: TOOL
+  official_name: forge_daemon.py
+  path: axion-core/tools/forge_daemon.py
+  layer: "@system/"
+  parsed_relations:
+    - UTILIZES:TOOL.Forge.SourceMap
+    - SYNERGIZES_WITH:GVRN.CI.ForgePR
+    - BROADCASTS_TO:NEXUS.Worker.Handshake
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "UTILIZES: TOOL.Forge.SourceMap, BROADCASTS_TO: NEXUS.Worker.Handshake, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+TOOL.Forge.SourceMap:
+  artifact_id: TOOL.Forge.SourceMap
+  domain: TOOL
+  official_name: sourcemap.py
+  path: axion-core/src/cse/sourcemap.py
+  layer: "@system/"
+  parsed_relations:
+    - UTILIZED_BY:TOOL.Forge.Daemon
+    - SYNERGIZES_WITH:TOOL.GUCA.Command
+    - IMPLEMENTS:ARCH.CSE.SourceMapProtocol
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "UTILIZED_BY: TOOL.Forge.Daemon, SYNERGIZES_WITH: TOOL.GUCA.Command, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+TOOL.Forge.UMB:
+  artifact_id: TOOL.Forge.UMB
+  domain: TOOL
+  official_name: Forge__UMB.js
+  path: _governance/tools/Forge__UMB.js
+  layer: "@loom/"
+  parsed_relations:
+    - GOVERNED_BY:CORE.Codex.Phoenix
+    - SYNERGIZES_WITH:ARCH.NexusPattern
+  relations: "GOVERNED_BY: CORE.Codex.Phoenix"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+
+TOOL.GUCA.Command:
+  artifact_id: TOOL.GUCA.Command
+  domain: TOOL
+  official_name: guca_command.py
+  path: axion-core/src/cse/guca_command.py
+  layer: "@system/"
+  parsed_relations:
+    - SYNERGIZES_WITH:TOOL.Forge.SourceMap
+    - INTEGRATES_WITH:TOOL.StructureEnforcer
+    - GOVERNED_BY:CODEX-LAW-01
+  relations: "SYNERGIZES_WITH: TOOL.Forge.SourceMap, INTEGRATES_WITH: TOOL.StructureEnforcer, GOVERNED_BY: CODEX-LAW-01"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]

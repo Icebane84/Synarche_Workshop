@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-057_ANALYSIS OF A CHOICE-POINT CONFLICT_ TRANSFORMING ANGER INTO ACCOUNTABILITY` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-057_Analysis of a Choice-Point Conflict_ Transforming Anger into Accountability.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

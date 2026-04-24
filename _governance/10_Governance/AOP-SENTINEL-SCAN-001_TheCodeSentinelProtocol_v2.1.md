@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-SENTINEL-SCAN-001_THECODESENTINELPROTOCOL_V2.1` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-066_REAL-WORLD_PROTOCOL_V6.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-066_Real-World_Protocol_v6.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

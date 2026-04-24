@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-045-THE ROSETTA STONE REVELATION_ DEFINING TRUE SYNERGY` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-045-The Rosetta Stone Revelation_ Defining True Synergy.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

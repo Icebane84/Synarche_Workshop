@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `PRS-GLOSSARY-001_PHOENIXLEXICON` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # PRS-GLOSSARY-001_PhoenixLexicon.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

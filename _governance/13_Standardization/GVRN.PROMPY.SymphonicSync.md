@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.PROMPY.SYMPHONICSYNC` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.PROMPY.SymphonicSync [OMEGA v15.0]
 
 > **Objective**: Maintain cross-language mathematical resonance between TypeScript (Axion Core) and Python (Axion Forge)

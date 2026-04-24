@@ -82,7 +82,7 @@ class SynarchyRegistry:
         Retrieves the full specification for a specific command by name (case-insensitive).
         """
         matches = self.search_commands(command_name)
-        # return exact match if possible, else first match
+        return exact match if possible, else first match
         for cmd in matches:
             if cmd["name"].lower() == command_name.lower():
                 return cmd
@@ -93,15 +93,15 @@ class SynarchyRegistry:
 
 if __name__ == "__main__":
     # Simple self-test
-    # bridge = SynarchyRegistry()
-    # print("Categories:", bridge.get_all_categories())
+    bridge = SynarchyRegistry()
+    print("Categories:", bridge.get_all_categories())
     pass
 
 # ---
 # ---
 
----
+# ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE-BRIDGE-001 VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 57eb1326200f4015`
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE-BRIDGE-001 VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 57eb1326200f4015

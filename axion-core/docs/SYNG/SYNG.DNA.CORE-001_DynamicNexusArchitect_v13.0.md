@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.DNA.CORE-001_DYNAMICNEXUSARCHITECT_V13.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SYNG.DNA.CORE-001_DynamicNexusArchitect_v13.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension

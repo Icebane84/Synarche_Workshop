@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `MIND.ENGINE.DISSONANCE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # MIND.Engine.Dissonance: The Proactive Heart
 
 ## **Block A: The Identification Lock (UIP-V15)**

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.SENTINEL.SCAN` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # The Code Sentinel Protocol (GVRN.Sentinel.Scan)
 
 > **Domain**: GVRN (Governance)
