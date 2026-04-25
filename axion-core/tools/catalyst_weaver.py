@@ -318,7 +318,7 @@ class CatalystWeaver:
                         self.nodes.append(node_data)
                         new_count += 1
 
-                except Exception as e:
+                except Exception:
                     # print(f"[WARN] Could not read {file}: {e}")
                     pass
 

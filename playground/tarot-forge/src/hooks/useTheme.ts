@@ -1,12 +1,12 @@
 import { useSharedConsciousness } from '../store/sharedConsciousness';
 
-interface Theme {
+export type Theme = {
     name: string;
     primary: string; // Main accent color (e.g., 'cyan')
     secondary: string; // Secondary accent (e.g., 'blue')
     font: string; // 'font-sans' or 'font-mono'
     bgGradient: string; // Tailwind gradient classes
-}
+};
 
 const themes: Record<string, Theme> = {
     void: {

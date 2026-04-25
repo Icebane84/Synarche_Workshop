@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { useSharedConsciousness } from '../store/sharedConsciousness';
 
-export interface BiometricHistory {
+export type BiometricHistory = {
     pulse: number[]; // FPS
     pressure: number[]; // Cognitive Load (mapped from dissonance?)
     temp: number[]; // Inverted Coherence (Entropy)
-}
+};
 
 const HISTORY_LENGTH = 30; // Number of data points to keep
 

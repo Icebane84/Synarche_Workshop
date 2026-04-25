@@ -16,6 +16,7 @@ import argparse
 import json
 import logging
 import sys
+from pathlib import Path
 
 from weaver_engine import ASLWeaverEngine
 
@@ -23,14 +24,19 @@ from weaver_engine import ASLWeaverEngine
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Synarche Celestial Weaver CLI")
     parser.add_argument("--config", default="asl_weaver_config.json", help="Path to config JSON")
     parser.add_argument("--root", default=".", help="Workspace root directory")
-    parser.add_argument("--mode", choices=["check", "forge", "audit"], default="check", 
-                        help="check: passive audit, forge: active links, audit: LIS only")
+    parser.add_argument(
+        "--mode",
+        choices=["check", "forge", "audit"],
+        default="check",
+        help="check: passive audit, forge: active links, audit: LIS only",
+    )
     parser.add_argument("--output", help="Path to save JSON report")
-    
+
     args = parser.parse_args()
 
     try:
@@ -39,15 +45,15 @@ def main() -> None:
 
         report = {
             "mode": args.mode,
-            "timestamp": None, # Could add if needed
+            "timestamp": None,  # Could add if needed
             "forge_plan": {},
-            "audit_results": {}
+            "audit_results": {},
         }
 
         if args.mode in ["check", "forge"]:
             plan = engine.plan_weave()
             report["forge_plan"] = plan
-            
+
             if not plan:
                 logger.info("✅ Zero entropy detected. All artifacts are coherent.")
             else:
@@ -64,7 +70,9 @@ def main() -> None:
             audit = engine.audit_lis()
             report["audit_results"] = audit
             logger.info(f"\n📊 Sentinel LIS: {audit['lis_score']}")
-            logger.info(f"   (Valid Links: {audit['metrics']['valid_links']} / Total: {audit['metrics']['total_links']})")
+            logger.info(
+                f"   (Valid Links: {audit['metrics']['valid_links']} / Total: {audit['metrics']['total_links']})"
+            )
 
         if args.output:
             with open(args.output, "w", encoding="utf-8") as f:
@@ -74,6 +82,7 @@ def main() -> None:
     except Exception:
         logger.exception("Celestial Weaver encountered a critical failure")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()

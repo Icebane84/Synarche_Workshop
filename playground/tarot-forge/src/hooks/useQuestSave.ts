@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { supabase } from '../api/supabaseClient';
 
-export interface QuestData {
+export type QuestData = {
     stage: number;
     inventory: string[];
     // Add other persistent state here
-}
+};
 
 export function useQuestSave(): {
     saveQuest: (data: QuestData) => Promise<void>;
@@ -32,7 +32,7 @@ export function useQuestSave(): {
                 .from('user_quests')
                 .upsert(
                     { user_id: user.id, quest_data: data, updated_at: new Date().toISOString() },
-                    { onConflict: 'user_id' }
+                    { onConflict: 'user_id' },
                 );
 
             if (upsertError) throw upsertError;

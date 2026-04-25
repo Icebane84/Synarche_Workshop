@@ -28,7 +28,7 @@ import logging
 import os
 import re
 import sys
-from typing import Any, Dict, List
+from typing import Any
 
 # ------------------------------------------
 # 3. KINETIC EXECUTION LOGIC
@@ -47,8 +47,8 @@ log = setup_logger()
 class OracleLensParser:
     def __init__(self, target_dir: str):
         self.target_dir = target_dir
-        self.nodes: List[Dict[str, Any]] = []
-        self.edges: List[Dict[str, Any]] = []
+        self.nodes: list[dict[str, Any]] = []
+        self.edges: list[dict[str, Any]] = []
 
         # OMEGA v15.0 Extraction Regex Patterns
         self.re_id = re.compile(r"\|\s*\*\*Artifact ID\*\*\s*\|\s*(?:`?)([^`\|]+)(?:`?)\s*\|")
@@ -66,7 +66,7 @@ class OracleLensParser:
         self.re_synergy_row = re.compile(r"\|\s*`([^`]+)`\s*\|\s*`([A-Z_]+)`\s*\|")
 
     def parse_file(self, filepath: str):
-        with open(filepath, "r", encoding="utf-8") as f:
+        with open(filepath, encoding="utf-8") as f:
             content = f.read()
 
         # Phase 1: Identity Extraction (Block A)

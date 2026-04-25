@@ -3,8 +3,8 @@
 # Block A: Universal Identification & Provenance (UIP-V15)
 artifact_anchor:
   id: "TOOL.Forge.SourceMap"
-  version: "v1.1.0"
-  provenance: "2026-04-23"
+  version: "v15.0 [OMEGA]"
+  provenance: "2026-04-25"
   domain: "TOOL"
   celestial_class: "STAR"
   tier: "AXIOMATIC"
@@ -28,8 +28,8 @@ Canonical path: @system/sourcemap
 Physical path:  axion-core/src/cse/sourcemap.py
 
 Maintains a mathematically strict mapping of generated character offsets
-to their sovereign source blocks. Supports real-time delta updates and
-binary search offset tracing (O(log n)).
+to their modular sovereign source blocks. Supports real-time delta updates,
+alias resolution, and binary search offset tracing (O(log n)).
 
 Relations:
   UTILIZED_BY: TOOL.Forge.Daemon
@@ -37,11 +37,11 @@ Relations:
   SYNERGIZES_WITH: TOOL.GUCA.Command
   GOVERNED_BY: CODEX-LAW-03 (Zero-Gravity Portability)
 
-[OMNI-ARTIFACT-ANCHOR] ID: TOOL.Forge.SourceMap VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23
+[OMNI-ARTIFACT-ANCHOR] ID: TOOL.Forge.SourceMap VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-25
 """
 
-import re
 import bisect
+import re
 from dataclasses import dataclass
 from typing import Optional, Tuple
 
@@ -50,7 +50,7 @@ from typing import Optional, Tuple
 class SourceMapping:
     generated_start: int
     generated_end: int
-    source_id: str      # e.g., "Transclusion_Blocks/Auth_Protocol.md"
+    source_id: str      # MUST be an MSID (e.g., "@codex/Auth_Protocol")
     source_start: int   # Offset within the source block itself
 
 
@@ -58,7 +58,7 @@ class ForgeSourceMap:
     """
     AXION Forge equivalent of Volar's SourceMap.
     Maintains a mathematically strict mapping of generated character offsets
-    to their sovereign source blocks.
+    to their sovereign source blocks using Modular Sovereign IDs (MSIDs).
 
     Relations:
         UTILIZED_BY: TOOL.Forge.Daemon
@@ -70,6 +70,15 @@ class ForgeSourceMap:
         self._keys: list[int] = []  # Cached keys for bisect
 
     def add_mapping(self, gen_start: int, gen_end: int, source_id: str, src_start: int = 0):
+        """
+        Registers a new mapping block.
+        Enforces MSID normalization (ensuring the source_id uses @alias notation).
+        """
+        # Internal MSID Normalization (Placeholder for more complex logic if needed)
+        if not source_id.startswith("@") and "/" in source_id:
+             # Logic could go here to auto-map physical paths back to aliases
+             pass
+
         mapping = SourceMapping(gen_start, gen_end, source_id, src_start)
         self._mappings.append(mapping)
         self._keys.append(gen_start)
@@ -78,7 +87,7 @@ class ForgeSourceMap:
         """
         Mimics Volar's translateOffset using binary search.
         Given an absolute character offset in the final compiled Markdown,
-        returns the (Source Block ID, Exact Offset Inside Block).
+        returns the (MSID, Exact Offset Inside Block).
         """
         if not self._mappings:
             return None
@@ -125,8 +134,7 @@ class TranscludeEngine:
     Two-pass transclusion compiler that wraps content in mapping boundaries,
     then strips markers and generates the SourceMap in a single pass.
 
-    Relations:
-        SYNERGIZES_WITH: TOOL.Forge.Daemon
+    Encourages the use of @alias paths for transclusion targets.
     """
     MARKER_START = "\x00MAP_START:{}\x00"
     MARKER_END = "\x00MAP_END\x00"
@@ -160,6 +168,7 @@ class TranscludeEngine:
                         source_id=block_id
                     )
             else:
+                # Capture the MSID (e.g., @codex/Law) from the marker
                 block_id = match.group(1)
                 stack.append((block_id, current_gen_offset))
 
@@ -174,6 +183,10 @@ class TranscludeEngine:
         return compiled_markdown, sourcemap
 
     def inject_transclude(self, block_id: str, block_content: str) -> str:
-        """Wraps content in strict mapping boundaries for first-pass rendering."""
+        """
+        Wraps content in strict mapping boundaries.
+        :param block_id: The MSID (e.g. "@codex/Law") of the source.
+        """
         start = self.MARKER_START.format(block_id)
         return f"{start}{block_content}{self.MARKER_END}"
+

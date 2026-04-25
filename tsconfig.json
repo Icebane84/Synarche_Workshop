@@ -2,16 +2,33 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@system/*":  ["axion-core/src/cse/*"],
-            "@domain/*":  ["axion-core/src/02_domain/*"],
-            "@nexus/*":   ["axion-core/src/nexus/*"],
-            "@fabric/*":  ["design-system/tarot-forge/src/*"],
-            "@atlas/*":   ["_governance/01_Registries/*"],
+            /* 🧠 COGNITIVE TIER */
+            "@agent/*": [".agent/*"],
+            "@shield/*": ["axion-core/sentinel/*"],
+            
+            /* ⚖️ GOVERNANCE TIER */
+            "@codex/*": ["_governance/00_Codex/*"],
+            "@atlas/*": ["_governance/01_Registries/*"],
+            "@protocol/*": ["_governance/02_Protocols/*"],
+            "@hud/*": ["_governance/10_Governance/*"],
+            "@standard/*": ["_governance/13_Standardization/*"],
+            "@loom/*": ["_governance/templates/*"],
+            "@archive/*": ["_governance/99_Archives/*"],
+
+            /* ⚙️ ENGINE TIER */
+            "@system/*": ["axion-core/src/cse/*"],
+            "@domain/*": ["axion-core/src/02_domain/*"],
+            "@nexus/*": ["axion-core/src/nexus/*"],
             "@essence/*": ["axion-core/src/types/*"],
-            "@shield/*":  ["axion-core/sentinel/*"],
-            "@pulse/*":   ["axion-core/_logs/*"],
-            "@loom/*":    ["_governance/templates/*"],
-            "@archive/*": ["_governance/99_Archives/*"]
+            "@forge/*": ["axion-core/forge/*"],
+            "@pulse/*": ["axion-core/_logs/*"],
+
+            /* 🎨 FABRIC TIER */
+            "@fabric/*": ["design-system/tarot-forge/src/*"],
+
+            /* 🧪 LABORATORY TIER */
+            "@lab/*": ["playground/*"],
+            "@incoming/*": ["incoming/*"]
         }
     }
 }

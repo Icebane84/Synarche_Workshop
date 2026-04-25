@@ -8,4 +8,3 @@
  */
 // Pure Python layer — no TypeScript exports.
 // Accessible via the @nexus/ WebSocket bridge.
-export {};
