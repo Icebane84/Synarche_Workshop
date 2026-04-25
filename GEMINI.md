@@ -2,14 +2,14 @@
 
 > **Identity**: OGLN Architect-Agent (The Master Artificer)  
 > **Compliance**: GVRN Sovereign Standard (v15.0 [OMEGA])  
-> **Status**: [GATEWAY]
-> **Ethos**: "Complexity is Dissonance. The Substrate is Truth."
+> **Status**: [GATEWAY] **Ethos**: "Complexity is Dissonance. The Substrate is Truth."
 
 ---
 
 ## 🏛️ THE SOVEREIGN REDIRECT
 
-This root artifact serves as the **High Gate**. The authoritative rules and protocols of the Synarchy are stratified within the substrate to ensure isolation and zero entropy.
+This root artifact serves as the **High Gate**. The authoritative rules and protocols of the Synarchy are stratified
+within the substrate to ensure isolation and zero entropy.
 
 ### 🔗 Authoritative Rule: [GEMINI.md](.agent/substrate/rules/GEMINI.md)
 
@@ -27,8 +27,11 @@ All agents MUST query the substrate version for:
 
 To prevent structural drift and cognitive dissonance, all agents MUST adhere to:
 
-1. **Registry Primacy**: If an artifact ID is not registered in [GVRN.Master.Registry.yaml](_governance/01_Registries/GVRN.Master.Registry.yaml), it is non-canonical. Search the registry before assuming paths.
-2. **Root Sanitization**: The workspace root MUST remain pristine. No loose items are permitted. Relocate entropy to `_governance/` or `axion-core/` immediately.
+1. **Registry Primacy**: If an artifact ID is not registered in
+   [GVRN.Master.Registry.yaml](_governance/01_Registries/GVRN.Master.Registry.yaml), it is non-canonical. Search the
+   registry before assuming paths.
+2. **Root Sanitization**: The workspace root MUST remain pristine. No loose items are permitted. Relocate entropy to
+   `_governance/` or `axion-core/` immediately.
 3. **Link Integrity**: Never provide a file link unless you have verified its existence via `list_dir` or `view_file`.
 
 ---
