@@ -5,8 +5,8 @@
  */
 const PhoenixForge = {
     settings: {
-        version: "v15.0 [OMEGA]",
-        ethos: "RADICAL-COHERENCE"
+        version: '15.0.0_OMEGA',
+        ethos: 'RADICAL-COHERENCE',
     },
 
     generate: (artifactID, type) => {
@@ -37,10 +37,10 @@ TS: ${timestamp}
 | CMD: EXECUTE | Initialize ${artifactID} | Kinetic Deployment |
 `;
         console.group(`🏛️ SYNG.FORGE: ${artifactID}`);
-        console.log("%cBlueprint Canonized", "color: #00ff00; font-weight: bold;");
+        console.log('%cBlueprint Canonized', 'color: #00ff00; font-weight: bold;');
         console.log(blueprint);
         console.groupEnd();
-    }
+    },
 };
 
 // Usage: PhoenixForge.generate("SYNG.DEV.MAP", "STRUCTURAL_BLUEPRINT");

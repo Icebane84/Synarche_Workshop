@@ -56,3 +56,5 @@ This mapping defines the aetheric bridge between the physical filesystem and the
 ---
 
 > [!NOTE] **Validated by Antigravity AI on 2026-04-19. Radical Coherence Achieved.**
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

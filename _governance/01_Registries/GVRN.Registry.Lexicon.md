@@ -52,7 +52,8 @@
 
 ### **Block E: Ethos (The Essence)**
 
-> **"To provide the definitive, non-negotiable grammar and vocabulary for the Synarchy, ensuring absolute consensus between Human and AI agents."**
+> **"To provide the definitive, non-negotiable grammar and vocabulary for the Synarchy, ensuring absolute consensus
+> between Human and AI agents."**
 
 ---
 
@@ -142,6 +143,4 @@ _Derived from and synced with `GVRN.Registry.OSLM` and `GVRN.Taxonomy.Relationsh
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Registry.Lexicon VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: LEX-OMEGA-V15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

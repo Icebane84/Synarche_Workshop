@@ -1,27 +1,20 @@
 """
-# UMB-CRF-001: The Causal Resonance Framework (CRF)
+### **Block A: The Identification Lock (UIP-V15)**
 
-## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-CRF-001`                 | The Sovereign ID. |
+| **Official Name**   | `crf.py`                      | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `ARCH-CRF`                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-## I. Universal Identification & Provenance (The Vector Signature)
-
-### The Chronos Lock & Axiomatic Metadata Layer
-
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `UMB-CRF-001` |
-| **2. Official Name** | `crf.py` |
-| **3. Version** | **v2.0 (Hephaestus Implementation)** |
-| **4. Provenance** | **Date Reforged: 2026-01-10** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Authentic Persona** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Truth** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: UMB-TRM-001` |
-
+**The Causal Axiom: Traceable Truth (Law 4)**
+> Implemented from Blueprint `GVRN.ARCH.Crf.md`.
+> Ethos: Guardian of Truth.
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---

@@ -3,35 +3,14 @@
  * PHOENIX SYNARCHE PROTOCOL - WORKSPACE CONFIGURATION
  * -----------------------------------------------------------------------------
  *
- * ###### [ARTIFACT START]
- *
- * ### Block A: The Identification Lock (UIP-V13)
- *
- * Key               | Value                           | Description
- * :---              | :---                            | :---
  * Artifact ID       | CFG-WORKSPACE-001               | The Sovereign ID.
  * Official Name     | Synarche_Workspace.code-workspace| The Filename.
- * Version           | v13.0 [OMEGA]                   | The Standard.
+ * Version           | v13.1 [OMEGA]                   | The Standard.
  * Domain            | GVRN                            | The Subject.
  * Celestial Class   | [STAR]                          | The Weight.
  * Evolution         | Omega Ascension                 | The Maturity.
  * Status            | [ACTIVE]                        | The Lifecycle.
  * Relations         | GOVERNED_BY: CORE-CODEX-001     | The Network.
- *
- * ---
- *
- * ### Block B: The Ethos Field (IDM-001)
- *
- * > "The Code is the Law."
- *
- * *   **The Mandate**: This configuration governs the VS Code environment for the Phoenix Synarche.
- *
- * ---
- *
- * ### Block D: Standardized Synergy Block (The Loom Signature)
- *
- * Synergistic Artifact ID, Relationship Type, Synergistic Impact
- * CORE-CODEX-001, GOVERNS, The Codex defines the rules enforced here.
  *
  * -----------------------------------------------------------------------------
  */
@@ -46,8 +25,12 @@
             "path": "_governance"
         },
         {
-            "name": "⚙️ THE ENGINE",
+            "name": "⚙️ THE ENGINE (AXION)",
             "path": "axion-core"
+        },
+        {
+            "name": "📔 THE NOTEBOOK",
+            "path": "open-notebook"
         },
         {
             "name": "🧪 THE LAB",
@@ -56,10 +39,6 @@
         {
             "name": "📖 THE NARRATIVE",
             "path": "where_light_fades"
-        },
-        {
-            "name": "The Wilds",
-            "path": "../_Desktop_Vault"
         },
         {
             "name": "📂 ROOT",
@@ -77,6 +56,7 @@
             ".agent": true,
             "_governance": true,
             "axion-core": true,
+            "open-notebook": true,
             "nova_forge": true,
             ".learnings": true,
             ".trunk": true,
@@ -96,43 +76,65 @@
             "**/.tmp.*": true
         },
         "cSpell.words": [
-            "AISTF",
-            "Badass",
-            "chronos",
-            "DQUEST",
-            "dragonslayer",
-            "EMPR",
-            "Episemantics",
-            "Gamified",
-            "Gemification",
-            "GVRN",
-            "HIER",
-            "Insforge",
-            "INSFORGE",
-            "KAELEN",
-            "Lightbinder",
-            "MAGN",
-            "Musashi",
-            "Oathkeep",
-            "Oathkeeper",
-            "OGLN",
-            "OSLM",
-            "PGPS",
-            "Pythonic",
-            "QLOR",
-            "Serafina",
-            "SUPABASE",
-            "synarche",
-            "SYNG"
+            "AISTF", "Badass", "chronos", "DQUEST", "dragonslayer", "EMPR",
+            "Episemantics", "Gamified", "Gemification", "GVRN", "HIER",
+            "Insforge", "INSFORGE", "KAELEN", "Lightbinder", "MAGN",
+            "Musashi", "Oathkeep", "Oathkeeper", "OGLN", "OSLM", "PGPS",
+            "Pythonic", "QLOR", "Serafina", "SUPABASE", "synarche", "SYNG",
+            "importmap", "scanlines", "omni-anchor", "middleware", "params",
+            "trpc", "zustand"
         ],
-        "powershell.cwd": "🧠 THE MIND",
+        "editor.fontSize": 18,
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "trunk.io",
-        "python.analysis.extraPaths": ["axion-core"],
+        "editor.semanticHighlighting.enabled": true,
+        "editor.guides.bracketPairs": true,
+        "editor.renderWhitespace": "selection",
+        "editor.minimap.enabled": false,
+        "editor.fontLigatures": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "python.analysis.extraPaths": ["axion-core", "open-notebook"],
         "python.analysis.typeCheckingMode": "basic",
+        "python-envs.pythonProjects": [
+            {
+                "path": "axion-core",
+                "envManager": "ms-python.python:venv",
+                "packageManager": "ms-python.python:pip"
+            },
+            {
+                "path": "open-notebook",
+                "envManager": "ms-python.python:venv",
+                "packageManager": "ms-python.python:pip"
+            }
+        ],
         "markdownlint.config": {
             "MD013": false,
             "MD033": false
+        },
+        "markdownlint.customRules": [
+            "./.agent/substrate/rules/markdownlint/axion-rules.cjs"
+        ],
+        "markdownlint.run": "onSave",
+        "prettier.requireConfig": false,
+        "errorLens.fontStyleItalic": true,
+        "errorLens.fontWeight": "400",
+        "errorLens.gutterIconsEnabled": true,
+        "errorLens.messageBackgroundMode": "line",
+        "sonarlint.rules": {
+            "javascript:S106": "off"
+        },
+        "[python]": {
+            "editor.defaultFormatter": "charliermarsh.ruff",
+            "editor.codeActionsOnSave": {
+                "source.fixAll": "explicit",
+                "source.organizeImports": "explicit"
+            }
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "denoland.vscode-deno"
         }
     },
     "extensions": {
@@ -167,45 +169,5 @@
                 "problemMatcher": []
             }
         ]
-    },
-    "settings": {
-        "powershell.cwd": "Synarche_Workspace",
-        "geminicodeassist.project": "resounding-phenomenon-x5tpm",
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
-        "prettier.requireConfig": false,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
-        },
-        "editor.semanticHighlighting.enabled": true,
-        "errorLens.fontStyleItalic": true,
-        "errorLens.fontWeight": "400",
-        "errorLens.gutterIconsEnabled": true,
-        "errorLens.messageBackgroundMode": "line",
-        "sonarlint.rules": {
-            "javascript:S106": "off"
-        },
-        "cSpell.enabled": true,
-        "cSpell.userWords": [
-            "middleware",
-            "params",
-            "trpc",
-            "zustand"
-        ],
-        "[python]": {
-            "editor.defaultFormatter": "charliermarsh.ruff",
-            "editor.codeActionsOnSave": {
-                "source.fixAll": "explicit",
-                "source.organizeImports": "explicit"
-            }
-        },
-        "editor.guides.bracketPairs": true,
-        "editor.renderWhitespace": "selection",
-        "editor.minimap.enabled": false,
-        "editor.fontLigatures": true,
-        "[jsonc]": {
-            "editor.defaultFormatter": "denoland.vscode-deno"
-        }
     }
 }

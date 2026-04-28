@@ -41,7 +41,7 @@
 | **Logic Drift** | Strict Linter Enforcement | | **Dependency Break** | ForgeLink Validation |
 
 > [!NOTE] **REFORGED**: This file has been consolidated into the **Master Rosetta Stone**. All technical and
-> philosophical enumerations are now managed in [GVRN.Rosetta.Stone.md](./GVRN.Rosetta.Stone.md).
+> philosophical enumerations are now managed in [GVRN.Rosetta.Stone.md](./GVRN``.Rosetta.Stone.md).
 
 ---
 

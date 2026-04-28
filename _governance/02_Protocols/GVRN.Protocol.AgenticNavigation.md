@@ -72,4 +72,4 @@ Any discovered cognitive dissonance (broken links, misidentified artifacts, or s
 
 ---
 
-`[GATE-ANCHOR] ID: SYNC.PROTO.NAV VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-26`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

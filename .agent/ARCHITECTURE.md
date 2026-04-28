@@ -37,8 +37,8 @@ Antigravity Kit is a modular system consisting of:
 
 ## 🤖 Agents (20)
 
-Specialist AI personas for different domains, now stratified into the sovereign substrate.
-Actual Path: `.agent/substrate/agents/`
+Specialist AI personas for different domains, now stratified into the sovereign substrate. Actual Path:
+`.agent/substrate/agents/`
 
 | Agent                    | Focus                      | Skills Used                                              |
 | ------------------------ | -------------------------- | -------------------------------------------------------- |
@@ -210,7 +210,8 @@ Critical files governing the behavior and formatting of the Agent Kit.
 
 ## 🏗️ The Overplane Fusion (Substrate Layer)
 
-The `substrate/` directory is the **Overplane Fusion** layer, where the kinetic MIND is anchored to the system's INFRASTRUCTURE.
+The `substrate/` directory is the **Overplane Fusion** layer, where the kinetic MIND is anchored to the system's
+INFRASTRUCTURE.
 
 ### Identity & Cognitive State (`substrate/identity/`)
 
@@ -259,8 +260,7 @@ skill-name/
 
 ## � Scripts (2)
 
-Master validation scripts that orchestrate skill-level operations.
-Actual Path: `.agent/substrate/bin/`
+Master validation scripts that orchestrate skill-level operations. Actual Path: `.agent/substrate/bin/`
 
 ### Master Scripts
 
@@ -311,11 +311,8 @@ For details, see [scripts/README.md](scripts/README.md)
 
 ## 📊 Statistics
 
-| **Total Agents** | 20 (Substrate-stratified) |
-| **Total Skills** | 36 (Modular) |
-| **Total Workflows** | 11 (Slash commands) |
-| **Total Binaries** | 8 (Master substrate scripts) |
-| **Coverage** | ~90% web/mobile development |
+| **Total Agents** | 20 (Substrate-stratified) | | **Total Skills** | 36 (Modular) | | **Total Workflows** | 11 (Slash
+commands) | | **Total Binaries** | 8 (Master substrate scripts) | | **Coverage** | ~90% web/mobile development |
 
 ---
 

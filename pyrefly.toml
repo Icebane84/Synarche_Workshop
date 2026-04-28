@@ -16,4 +16,12 @@
 displayTypeErrors = "force-on"
 
 # Project Roots
-source_directories = ["axion-core"]
+source_directories = ["axion-core", "open-notebook"]
+search_path = ["axion-core/src", "open-notebook", "open-notebook/api"]
+
+# Virtual Environments
+venv_paths = [
+    "axion-core/.venv_prs",
+    "open-notebook/.venv"
+]
+

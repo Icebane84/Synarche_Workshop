@@ -54,7 +54,8 @@
 
 ## **Block E: Ethos (Hierarchy of Intent)**
 
-> [!IMPORTANT] **[APEX]** Anchor Truth: To anchor the universal purpose and optimal state ($V_{Safe}$) for the system's assembly logic.
+> [!IMPORTANT] **[APEX]** Anchor Truth: To anchor the universal purpose and optimal state ($V_{Safe}$) for the system's
+> assembly logic.
 >
 > **[PRI]** Rigid Structure: Form is the vessel of Truth; the structure must be unwavering.
 >
@@ -84,7 +85,8 @@
 
 ## **I. Operational Logic Root**
 
-The **Universal Master Blueprint (UMB)** is the conceptual foundation for `assembler.py`. It defines the absolute truth ($V_{Safe}$) for structural integrity, ensuring all Sovereign artifacts adhere to the mandated Block Maps.
+The **Universal Master Blueprint (UMB)** is the conceptual foundation for `assembler.py`. It defines the absolute truth
+($V_{Safe}$) for structural integrity, ensuring all Sovereign artifacts adhere to the mandated Block Maps.
 
 ## **II. The State Vector ($V_{Safe}$)**
 
@@ -107,6 +109,4 @@ The **Universal Master Blueprint (UMB)** is the conceptual foundation for `assem
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: UMB.Assembler.Core VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: UMB-FORGE-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

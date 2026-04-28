@@ -1,0 +1,781 @@
+=== PHOENIX COMPLIANCE AUDIT REPORT ===
+Date: 2026-04-28 05:29:46.289275
+Target: C:\Users\Chris\Synarche_Workspace\axion-core\src
+
+[FAIL] agents\axion\CHAR-AXION-001_AgentAxionPersona_v1.0.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\rules\code-style-guide.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'code-style-guide.md' does not strictly match v13.0 RNC pattern.
+
+[FAIL] agents\axion\workflows\canonize.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'canonize.md' does not strictly match v13.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] agents\axion\workflows\codex-submission.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'codex-submission.md' does not strictly match v13.0 RNC pattern.
+
+[FAIL] agents\axion\workflows\harden.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'harden.md' does not strictly match v13.0 RNC pattern.
+
+[FAIL] agents\axion\workflows\lint.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'lint.md' does not strictly match v13.0 RNC pattern.
+
+[FAIL] agents\axion\workflows\reforge-all.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'reforge-all.md' does not strictly match v13.0 RNC pattern.
+
+[FAIL] agents\axion\workflows\reforge-library.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'reforge-library.md' does not strictly match v13.0 RNC pattern.
+
+[FAIL] agents\axion\workflows\reforge.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'reforge.md' does not strictly match v13.0 RNC pattern.
+
+[FAIL] agents\axion\workflows\trace.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'trace.md' does not strictly match v13.0 RNC pattern.
+
+[FAIL] axion_core\AGENTS.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Geometry: Detected 2-space indentation (v13.0 mandates 4 spaces).
+  -- Filenaming: Filename 'AGENTS.md' does not strictly match v13.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\Coherent Synthesis Engine Room.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'Coherent Synthesis Engine Room.md' does not strictly match v13.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\guca_command.py (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\sourcemap.py (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\README.md (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- Filenaming: Filename 'README.md' does not strictly match v13.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] utils\guca_healer.py (Score: 0.00)
+  !! UIP: Missing required key 'Artifact ID'.
+  !! UIP: Missing required key 'Official Name'.
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cli.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] crystallize_session.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] __init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\__init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\exceptions.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\insforge_client.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\oathkeeper.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\__init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\nodes\context.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\nodes\forge.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\nodes\insight.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\nodes\mechanics.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\nodes\__init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\__init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\lib\emotion_analyzer.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\lib\resonance_scanner.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\axiomprimetuner.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\__init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\adaptive_retriever.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\association_manager.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\index.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\main.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\memory_tagger.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\persistence_test.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\retrieval_engine.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\__init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\nlp\analytical_tagger.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\nlp\emotion_analyzer.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\nlp\nlp_engine.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\nlp\__init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\sync\insforge_bridge.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\utils\explanation_generator.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\utils\sentinel_utils.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] logic\utils\soul_analyzer.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\utils\__init__.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] phoenix\base.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] utils\experience_logger.py (Score: 0.10)
+  !! UIP: Missing required key 'Evolution'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\reforger.py (Score: 0.30)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\syngarchcoherentverseengine.py (Score: 0.30)
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\explanation_generator.py (Score: 0.30)
+  !! UIP: Missing required key 'Celestial Class'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] synarchy_bridge.py (Score: 0.50)
+  !! UIP: Missing required key 'Integrity Hash'.
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\scout\scout.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\auditor.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] hephaestus\chronicler.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\crf.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\gate.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] hephaestus\gaze.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\mentor.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\oslm_gps.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\sentinel.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] hephaestus\soul.py (Score: 0.50)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] axion_core\coherent_synthesis_engine.py (Score: 0.70)
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] axion_core\components.py (Score: 0.70)
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\ecs\README.md (Score: 0.70)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- Filenaming: Filename 'README.md' does not strictly match v13.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\memory\memory_system.py (Score: 0.70)
+  !! UIP: Invalid or missing Evolutionary Alignment.
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\genesis_agent.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\phoenix_agent.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\agent_template.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\config.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\core.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\enums.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\runtime.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] agents\axion\schemas.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] axion_core\cse.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] axion_core\loom.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] axion_core\sophia_interface.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] axion_core\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\engine\engine.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\engine\engine_v2.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\engine\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\loggers\selt_logger.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\loggers\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\managers\guca_parser.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\managers\mcp_injector.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\managers\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\parsers\loom_parser.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\parsers\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\validators\law_validator.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] cse\validators\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\clock.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\engine.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\executor.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\graph.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\parallel_scheduler.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\scheduler.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\state.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\task.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\deterministic\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\ecs\component.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\ecs\manager.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\ecs\resonance.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\ecs\synergy.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\ecs\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\persistence\insforge_transmuter.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] engine\persistence\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\cli.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] logic\rpg_manager.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\synarchy_bridge.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\connectors\artifact_generator.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\connectors\freeplane_parser.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] logic\connectors\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] nexus\decorators\synarche_audit.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] phoenix\__init__.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] system\oracle_lens.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] system\logging\phoenix_logger.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] utils\debug_env.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] utils\simulate_impact.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[WARNING] logic\enums.py (Score: 0.90)
+  -- UIP: Version is not v13.0.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+

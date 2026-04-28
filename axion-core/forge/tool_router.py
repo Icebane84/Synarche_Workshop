@@ -47,7 +47,7 @@ try:
 except ImportError:
     # Fallback: Try absolute import if the package is installed in the environment
     try:
-        from axion_core.src.logic.enums import (
+        from forge.enums import (
             FIELD_GOVERNANCE,
             ArtifactType,
             AuditStatus,

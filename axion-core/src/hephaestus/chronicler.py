@@ -1,25 +1,20 @@
 """
-# UMB-LOG-001: The Chronicler (Agentic Logging System)
+### **Block A: The Identification Lock (UIP-V15)**
 
-## Genesis Stamp: 2026-01-15 | Domain: GVRN | State: PROTOTYPE | Criticality: High
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-LOG-001`                 | The Sovereign ID. |
+| **Official Name**   | `chronicler.py`               | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN-LOG`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Operational`                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-## I. Universal Identification & Provenance (The Vector Signature)
-
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `UMB-LOG-001` |
-| **2. Official Name** | `chronicler.py` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Forged: 2026-01-15** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[SATELLITE]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Memory** |
-| **11. Catalyst** | **Agentic Versioning** |
-| **12. Relations** | `LINK: AOP-SCA-001` |
-
+**The Chronicler Axiom: Immutable Trace (Law 12)**
+> Implemented from Blueprint `GVRN.LOG.Chronicler.md`.
+> Ethos: Guardian of Memory.
 """
 
 import hashlib
@@ -51,6 +46,7 @@ class Chronicler:
         self._ensure_log_dir()
 
     def _ensure_log_dir(self) -> None:
+        """Verifies existence of log directory and creates it if necessary."""
         if not self.log_dir.exists():
             try:
                 self.log_dir.mkdir(parents=True, exist_ok=True)

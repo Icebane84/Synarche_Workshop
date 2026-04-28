@@ -1,3 +1,22 @@
+"""
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-AGT-TMP-001`            | The Sovereign ID. |
+| **Official Name**   | `agent_template.py`           | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-AGT`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Agentic Integrity (Law 35)**
+> Implemented from Blueprint `GVRN.REG.AgentTemplate.md`.
+> Ethos: Purpose through Template.
+"""
+
 import asyncio
 
 import structlog
@@ -45,7 +64,11 @@ __all__ = [
 if __name__ == "__main__":
     # Test execution of the consolidated loop
     async def run_test() -> None:
-        """Execute a cognitive loop test for the Axion Agent Vessel."""
+        """
+        Executes a cognitive loop test for the Axion Agent Vessel.
+        
+        Initializes the runtime and streams events based on a test state.
+        """
         runtime = AxionRuntime()
         instance = runtime.app
 
@@ -75,5 +98,3 @@ if __name__ == "__main__":
             print(event)
 
     asyncio.run(run_test())
-
-# [OMNI-ARTIFACT-ANCHOR] ID: CORE.agent.template VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 2f6c3aeb7ffad045

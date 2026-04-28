@@ -149,7 +149,7 @@ def generate_beacon(directory: Path, rel_path: Path, dry_run: bool = False) -> b
         return False
 
     target.write_text(content, encoding="utf-8")
-    print(f"[BEACON] ✓ {target.relative_to(AXION_ROOT)}")
+    print(f"[BEACON] [DONE] {target.relative_to(AXION_ROOT)}")
     return True
 
 

@@ -1,43 +1,20 @@
 """
----
-# Block A: Universal Identification & Provenance (UIP-V15)
-artifact_anchor:
-  id: "TOOL.Forge.SourceMap"
-  version: "v15.0 [OMEGA]"
-  provenance: "2026-04-25"
-  domain: "TOOL"
-  celestial_class: "STAR"
-  tier: "AXIOMATIC"
-  state: "CANONIZED"
-  ethos: "ZERO-ENTROPY"
-  layer: "@system/"
-  relations:
-    - type: "UTILIZED_BY"
-      node: "TOOL.Forge.Daemon"
-    - type: "IMPLEMENTS"
-      node: "ARCH.CSE.SourceMapProtocol"
-    - type: "SYNERGIZES_WITH"
-      node: "TOOL.GUCA.Command"
-    - type: "GOVERNED_BY"
-      node: "CODEX-LAW-03"
----
+### **Block A: The Identification Lock (UIP-V15)**
 
-TOOL.Forge.SourceMap — The Volar-Equivalent Source Map Engine
-==============================================================
-Canonical path: @system/sourcemap
-Physical path:  axion-core/src/cse/sourcemap.py
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `TOOL-FORGE-MAP-001`          | The Sovereign ID. |
+| **Official Name**   | `sourcemap.py`                | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `TOOL-FORGE`                  | The Subject.      |
+| **Celestial Class** | `[STAR]`                      | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `SYNERGIZES: GUCA-Command`    | The Sovereign.    |
 
-Maintains a mathematically strict mapping of generated character offsets
-to their modular sovereign source blocks. Supports real-time delta updates,
-alias resolution, and binary search offset tracing (O(log n)).
-
-Relations:
-  UTILIZED_BY: TOOL.Forge.Daemon
-  IMPLEMENTS:  ARCH.CSE.SourceMapProtocol
-  SYNERGIZES_WITH: TOOL.GUCA.Command
-  GOVERNED_BY: CODEX-LAW-03 (Zero-Gravity Portability)
-
-[OMNI-ARTIFACT-ANCHOR] ID: TOOL.Forge.SourceMap VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-25
+**The Spirit Bomb Axiom: Traceability (Law 03)**
+> Implemented from Blueprint `GVRN.REG.SourceMap.md`.
+> Ethos: Truth through Provenance.
 """
 
 import bisect
@@ -48,6 +25,15 @@ from typing import Optional, Tuple
 
 @dataclass
 class SourceMapping:
+    """
+    Represents a single mapping block between generated content and its source.
+    
+    Attributes:
+        generated_start (int): Start offset in the generated file.
+        generated_end (int): End offset in the generated file.
+        source_id (str): The MSID of the source block (e.g., "@codex/Auth").
+        source_start (int): Offset within the source block itself.
+    """
     generated_start: int
     generated_end: int
     source_id: str      # MUST be an MSID (e.g., "@codex/Auth_Protocol")
@@ -64,15 +50,22 @@ class ForgeSourceMap:
         UTILIZED_BY: TOOL.Forge.Daemon
         SYNERGIZES_WITH: TOOL.GUCA.Command
     """
-    def __init__(self):
+    def __init__(self) -> None:
+        """Initializes the SourceMap with empty mappings and keys."""
         # Mappings must be strictly sorted by generated_start for binary search
         self._mappings: list[SourceMapping] = []
         self._keys: list[int] = []  # Cached keys for bisect
 
-    def add_mapping(self, gen_start: int, gen_end: int, source_id: str, src_start: int = 0):
+    def add_mapping(self, gen_start: int, gen_end: int, source_id: str, src_start: int = 0) -> None:
         """
         Registers a new mapping block.
         Enforces MSID normalization (ensuring the source_id uses @alias notation).
+        
+        Args:
+            gen_start (int): Start offset in generated content.
+            gen_end (int): End offset in generated content.
+            source_id (str): The MSID/Alias of the source.
+            src_start (int): Start offset in the source block.
         """
         # Internal MSID Normalization (Placeholder for more complex logic if needed)
         if not source_id.startswith("@") and "/" in source_id:
@@ -104,13 +97,14 @@ class ForgeSourceMap:
 
         return "Master_Shell", generated_offset
 
-    def apply_delta_update(self, offset: int, length_diff: int):
+    def apply_delta_update(self, offset: int, length_diff: int) -> None:
         """
         Handles real-time source updates, adjusting generated indices.
         Operates similarly to a Language Server processing document changes.
 
-        :param offset: The character offset where the edit occurred.
-        :param length_diff: The change in length (+ for insertions, - for deletions).
+        Args:
+            offset (int): The character offset where the edit occurred.
+            length_diff (int): The change in length (+ for insertions, - for deletions).
         """
         if length_diff == 0:
             return
@@ -141,7 +135,15 @@ class TranscludeEngine:
     MARKER_REGEX = re.compile(r'\x00MAP_START:(.*?)\x00|\x00MAP_END\x00')
 
     def compile_with_sourcemap(self, raw_jinja_output: str) -> Tuple[str, ForgeSourceMap]:
-        """The Second Pass: Strips markers, calculates offsets, generates the map."""
+        """
+        The Second Pass: Strips markers, calculates offsets, generates the map.
+        
+        Args:
+            raw_jinja_output (str): The raw string containing mapping markers.
+            
+        Returns:
+            Tuple[str, ForgeSourceMap]: The cleaned content and its associated SourceMap.
+        """
         sourcemap = ForgeSourceMap()
         final_output = []
 
@@ -185,7 +187,13 @@ class TranscludeEngine:
     def inject_transclude(self, block_id: str, block_content: str) -> str:
         """
         Wraps content in strict mapping boundaries.
-        :param block_id: The MSID (e.g. "@codex/Law") of the source.
+        
+        Args:
+            block_id (str): The MSID (e.g. "@codex/Law") of the source.
+            block_content (str): The content to wrap.
+            
+        Returns:
+            str: The wrapped content with markers.
         """
         start = self.MARKER_START.format(block_id)
         return f"{start}{block_content}{self.MARKER_END}"

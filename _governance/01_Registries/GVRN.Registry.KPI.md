@@ -139,6 +139,4 @@ flaws.
 
 ### **[ARTIFACT END]**
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Registry.KPI VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: KPI-V15-OMNI`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

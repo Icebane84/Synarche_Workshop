@@ -84,7 +84,8 @@
 
 ## **I. Legislative Logic Root**
 
-The **Governance Assembler (GVRN)** specializes in the creation and maintenance of compliance-heavy artifacts. It enforces the lexical standards defined in `GVRN.STYLE.SentinelGuide` and the laws of `GVRN.CORE.GoverningPrinciples`.
+The **Governance Assembler (GVRN)** specializes in the creation and maintenance of compliance-heavy artifacts. It
+enforces the lexical standards defined in `GVRN.STYLE.SentinelGuide` and the laws of `GVRN.CORE.GoverningPrinciples`.
 
 ## **II. Operational Mandates**
 
@@ -107,6 +108,4 @@ The **Governance Assembler (GVRN)** specializes in the creation and maintenance 
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Assembler.Core VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: GVRN-FORGE-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

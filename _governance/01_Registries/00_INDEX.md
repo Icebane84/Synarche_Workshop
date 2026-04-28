@@ -9,9 +9,8 @@
 ---
 
 # 00_INDEX.md
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+
+> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
 
 ## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
@@ -21,43 +20,45 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-00-INDEX-001` | The Sovereign ID. |
-| **Official Name** | `00_INDEX.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-00-INDEX-001`           | The Sovereign ID. |
+| **Official Name**   | `00_INDEX.md`                 | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Barrel: 0_Registries
 
 > **Path:** `C:\Users\Chris\Synarche_Workspace\_governance\0_Registries`
 
 ## 📄 Artifacts (Manifest)
-| File | Description |
-| :--- | :--- |
-| [CSL-20251220-SystemicRefactor.md](CSL-20251220-SystemicRefactor.md) | **CSL-20251220-SystemicRefactor (v10.0)** |
-| [DOC-META-REQ-001_MetadataRequirements_v1.0.md](DOC-META-REQ-001_MetadataRequirements_v1.0.md) | - **Official Name** |
-| [GVRN.Catalog.Master.md](GVRN.Catalog.Master.md) | Standardized Registry: The Phoenix Geode Catalog (GVRN.Catalog.Master) |
-| [GVRN.Entity.Registry.md](GVRN.Entity.Registry.md) | Synarchy Entities & Ascension Registry (GVRN.Entity.Registry) |
-| [GVRN.KPI.Registry.md](GVRN.KPI.Registry.md) | Standardized Registry: KPI Master Registry (GVRN.KPI.Registry) |
-| [GVRN.Lexicon.Master.md](GVRN.Lexicon.Master.md) | Standardized Lexicon: The Phoenix Synarchy Vocabulary (GVRN.Lexicon.Master) |
-| [GVRN.Registry.Master.md](GVRN.Registry.Master.md) | The Master Artifact Registry (GVRN.Registry.Master) |
-| [PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v11.1.md](PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v11.1.md) | Universal Identification & Provenance (UIP) |
-| [UMB-KPI-001_MasterRegistry_v1.0.md](UMB-KPI-001_MasterRegistry_v1.0.md) | KPI Master Registry (UMB-KPI-001) |
-| [UMB-OSLM-001_MasterArtifactRegistry_v11.0.md](UMB-OSLM-001_MasterArtifactRegistry_v11.0.md) | Universal Identification & Provenance (UIP) |
-| [UMB-OSLM-001_MasterArtifactRegistry_v11.1.md](UMB-OSLM-001_MasterArtifactRegistry_v11.1.md) | Universal Identification & Provenance (UIP) |
-| [UMB-PAR-001_PrestigeAscensionRegistry_v11.0.md](UMB-PAR-001_PrestigeAscensionRegistry_v11.0.md) | Universal Identification & Provenance (UIP) |
+
+| File                                                                                                                                     | Description                                                                 |
+| :--------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| [CSL-20251220-SystemicRefactor.md](CSL-20251220-SystemicRefactor.md)                                                                     | **CSL-20251220-SystemicRefactor (v10.0)**                                   |
+| [DOC-META-REQ-001_MetadataRequirements_v1.0.md](DOC-META-REQ-001_MetadataRequirements_v1.0.md)                                           | - **Official Name**                                                         |
+| [GVRN.Catalog.Master.md](GVRN.Catalog.Master.md)                                                                                         | Standardized Registry: The Phoenix Geode Catalog (GVRN.Catalog.Master)      |
+| [GVRN.Entity.Registry.md](GVRN.Entity.Registry.md)                                                                                       | Synarchy Entities & Ascension Registry (GVRN.Entity.Registry)               |
+| [GVRN.KPI.Registry.md](GVRN.KPI.Registry.md)                                                                                             | Standardized Registry: KPI Master Registry (GVRN.KPI.Registry)              |
+| [GVRN.Lexicon.Master.md](GVRN.Lexicon.Master.md)                                                                                         | Standardized Lexicon: The Phoenix Synarchy Vocabulary (GVRN.Lexicon.Master) |
+| [GVRN.Registry.Master.md](GVRN.Registry.Master.md)                                                                                       | The Master Artifact Registry (GVRN.Registry.Master)                         |
+| [PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v11.1.md](PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v11.1.md) | Universal Identification & Provenance (UIP)                                 |
+| [UMB-KPI-001_MasterRegistry_v1.0.md](UMB-KPI-001_MasterRegistry_v1.0.md)                                                                 | KPI Master Registry (UMB-KPI-001)                                           |
+| [UMB-OSLM-001_MasterArtifactRegistry_v11.0.md](UMB-OSLM-001_MasterArtifactRegistry_v11.0.md)                                             | Universal Identification & Provenance (UIP)                                 |
+| [UMB-OSLM-001_MasterArtifactRegistry_v11.1.md](UMB-OSLM-001_MasterArtifactRegistry_v11.1.md)                                             | Universal Identification & Provenance (UIP)                                 |
+| [UMB-PAR-001_PrestigeAscensionRegistry_v11.0.md](UMB-PAR-001_PrestigeAscensionRegistry_v11.0.md)                                         | Universal Identification & Provenance (UIP)                                 |
 
 ---
-*Generated by The Cooper (TOOL-COOPER-001)*
----
+
+## _Generated by The Cooper (TOOL-COOPER-001)_
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
+Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

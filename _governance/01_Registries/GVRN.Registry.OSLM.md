@@ -110,8 +110,8 @@ The OSLM defines the "Adjectives" that connect the "Nouns" (Artifacts) in the Sy
 
 Artifacts are not isolated islands. They orbit **Axiomatic Centers** (Laws).
 
-> [!TIP] **Agentic Hammering**
-> When creating a new file, an agent MUST "Hammer" the link into the matrix by executing `CMD: WEAVE_LINK`. A file without an edge is a "Ghost Artifact" and contributes to entropy.
+> [!TIP] **Agentic Hammering** When creating a new file, an agent MUST "Hammer" the link into the matrix by executing
+> `CMD: WEAVE_LINK`. A file without an edge is a "Ghost Artifact" and contributes to entropy.
 
 ---
 
@@ -133,8 +133,4 @@ The specific adjacency matrix and resonance scores are managed in the decentrali
 
 ###### **[ARTIFACT END]**
 
----
-
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

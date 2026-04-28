@@ -101,6 +101,4 @@ The Synarche Substrate employs a **Dual-State** mechanism for high-resonance kno
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.PROT.DualArtifacts VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: DUAL-V15-STAR`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

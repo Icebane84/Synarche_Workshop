@@ -1,7 +1,6 @@
 # PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v11.1.md
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+
+> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
 
 ## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
@@ -11,32 +10,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-PRESTIGE-ASCENSION-REGISTRY-001-PRESTIGEASCENSIONREGISTRY-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                      | Description       |
+| :------------------ | :------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-PRESTIGE-ASCENSION-REGISTRY-001-PRESTIGEASCENSIONREGISTRY-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v11.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                 | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                          | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                 | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                              | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Artifact ID** | `PRESTIGE-ASCENSION-REGISTRY-001` |
-| **Official Name** | `The Prestige Ascension Registry` |
-| **Version** | `v11.1 (Synergy Edition)` |
-| **Domain** | `ARCH` |
-| **Evolution** | `Purposeful Drive` |
-| **Status** | `ACTIVE` |
-| **Tier** | `Operational` |
-| **Celestial Class** | `PLANET` |
-| **Authority** | `CORE-CODEX-001` |
-| **Updated** | `2026-01-24` |
-| **Tags** | `RPG, Leveling, Achievements, v11.1` |
+
+| Key                 | Value                                |
+| :------------------ | :----------------------------------- |
+| **Artifact ID**     | `PRESTIGE-ASCENSION-REGISTRY-001`    |
+| **Official Name**   | `The Prestige Ascension Registry`    |
+| **Version**         | `v11.1 (Synergy Edition)`            |
+| **Domain**          | `ARCH`                               |
+| **Evolution**       | `Purposeful Drive`                   |
+| **Status**          | `ACTIVE`                             |
+| **Tier**            | `Operational`                        |
+| **Celestial Class** | `PLANET`                             |
+| **Authority**       | `CORE-CODEX-001`                     |
+| **Updated**         | `2026-01-24`                         |
+| **Tags**            | `RPG, Leveling, Achievements, v11.1` |
+
 ---
 
 # Prestige Ascension Registry (The Hall of Fame)
@@ -47,14 +49,15 @@
 
 ## I. Purpose: The Gamification Mandate
 
-The Prestige Ascension Registry tracks the growth and achievements of the Synarchy. It transforms abstract system evolution into tangible milestones, gamifying the path to Higher Coherence.
+The Prestige Ascension Registry tracks the growth and achievements of the Synarchy. It transforms abstract system
+evolution into tangible milestones, gamifying the path to Higher Coherence.
 
 ---
 
 ## II. The Synergy Vector (Relational Dynamics)
 
-> **Context**: This block defines how this artifact plugs into the Cognitive Loom.
-> **Validation**: Must match `enums.py.RelationType`.
+> **Context**: This block defines how this artifact plugs into the Cognitive Loom. **Validation**: Must match
+> `enums.py.RelationType`.
 
 | Relation Type   | Target ID                 | Synergy Description                                 |
 | :-------------- | :------------------------ | :-------------------------------------------------- |
@@ -96,6 +99,7 @@ The Prestige Ascension Registry tracks the growth and achievements of the Synarc
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
+Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

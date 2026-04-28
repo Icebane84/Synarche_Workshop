@@ -59,5 +59,6 @@ module.exports = {
     PF021: true,
     PF022: true,
     PF023: true,
+    PF032: true,
     customRules: [require("./tools/rules/axion-rules.cjs")],
 };

@@ -1,0 +1,14 @@
+# -----------------------------------------------------------------------------
+# OPEN NOTEBOOK - PYREFLY CONFIGURATION (v1.0)
+# -----------------------------------------------------------------------------
+
+[tool.pyrefly]
+displayTypeErrors = "force-on"
+
+# Project Roots for Open Notebook
+source_directories = ["."]
+search_path = [".", "api", "open_notebook"]
+
+# Virtual Environment Path
+# This tells Pyrefly to use the local .venv for type checking and imports
+venv_path = ".venv"

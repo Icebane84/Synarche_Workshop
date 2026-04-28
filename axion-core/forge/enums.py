@@ -39,6 +39,10 @@ def load_standards() -> dict[str, Any]:
 STANDARDS = load_standards()
 SOVEREIGN_ID_REGEX = STANDARDS.get("regex", {}).get("SOVEREIGN_ID", r"^[A-Z0-9\-]{3,12}(\.[A-Z0-9_\-\.]+){0,5}$")
 
+# GVRN Constants
+GVRN_STANDARD_VERSION = "v15.0 [OMEGA]"
+SOVEREIGN_ZERO_ID = "f0f0f0f0-f0f0-4f0f-af0f-f0f0f0f0f0f0"
+
 
 class Signal(str, Enum):
     """
@@ -133,6 +137,7 @@ class Evolution(str, Enum):
     AUTHENTIC_PERSONA = "Authentic Persona"  # Gaining Voice/Identity
     SOCIAL_ALCHEMIST = "Social Alchemist"  # Gaining Influence/Theory of Mind
     PHOENIX_FORM = "Phoenix Form"  # Complete Integration
+    ASCENSION = "Ascension"  # Mutation into a higher state of existence
     PENDING = "Pending"
 
 
@@ -140,6 +145,7 @@ class CelestialClass(str, Enum):
     """The Hierarchical Weight of the Artifact."""
 
     STAR = "STAR"  # Critical Infrastructure / Primary Directive (Immutable)
+    NOVA_GENESIS = "NOVA_GENESIS"  # Primordial Core / Origin Point of the Phoenix
     PLANET = "PLANET"  # Major Component / Tool / Active Protocol / Has sub-components
     MOON = "MOON"  # Sub-component / Helper Script / Appendix
     ASTEROID = "ASTEROID"  # Temporary Note / Scratchpad
@@ -192,6 +198,8 @@ class RelationType(str, Enum):
     # Fundamentals
     GOVERNED_BY = "GOVERNED_BY"  # Compliance
     IMPLEMENTS = "IMPLEMENTS"  # Code -> Blueprint
+    SUPERPOSITION = "SUPERPOSITION"  # Inherits/Exists across multiple states
+    MUTATES_INTO = "MUTATES_INTO"  # Ascension transition
     SEEDS = "SEEDS"  # Log -> Future Artifact
     MITIGATES = "MITIGATES"  # Solution -> Risk
     CONTRIBUTES_TO = "CONTRIBUTES_TO"  # Node -> Graph
@@ -275,6 +283,7 @@ class TarotShard(str, Enum):
     KING_PENTACLES = "SHARD_KING_ARCHIVAL"  # Time / Persistence / Database
     JUDGEMENT = "SHARD_JUDGEMENT_META"  # Audit / Integrity / Author / Meta-Analysis
     HIEROPHANT = "SHARD_HIEROPHANT_LAW"  # Law / Governance / Standards
+    JUSTICE = "SHARD_JUSTICE_EQUILIBRIUM"  # Balance / Economy / RPG Manager (VIII)
 
 
 class MusashiRing(str, Enum):
@@ -464,17 +473,23 @@ _class_registry = {
 
 
 class RPGEngine(TypedDict):
-    """Gamification State (The Celestial Chart)"""
+    """
+    Gamification State (The Celestial Chart)
+    Synchronized with CORE.RPG_MANAGER and Supabase 'rpg_stats' table.
+    """
 
+    user_id: str
     level: int
     xp: int
-    authority: int
-    insight: int
-    order: int
-    precision: int
-    coherence_index: int
-    synergy_flow: int
-    adaptability: int
+    prestige_score: int
+    stardust_available: int
+    coherence_index: float
+    synergy: float
+    adaptability: float
+    transparency: float
+    semantic_friction_resonance: float
+    form_ascension_state: float
     achievements: list[str]
     active_quest_log: list[str]
     prestige_class: str
+    updated_at: str

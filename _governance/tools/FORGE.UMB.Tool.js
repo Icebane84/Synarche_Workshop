@@ -20,25 +20,37 @@
  *   node FORGE.UMB.Tool.js --id SYNG.DEV.Map --type DEV_MAP --dry-run
  */
 
-"use strict";
+'use strict';
 
-const fs   = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
 // ---------------------------------------------------------------------------
 // Constants
 // ---------------------------------------------------------------------------
 
-const VERSION = "v15.0 [OMEGA]";
+const VERSION = 'v15.0 [OMEGA]';
 
 /** Valid domain tokens per the OGLN Star-Chart. */
 const VALID_DOMAINS = new Set([
-  "ARCH", "GVRN", "SYNG", "CSE", "NEXUS", "LOOM", "DEV",
-  "FORGE", "SHIELD", "ATLAS", "CORE", "RPG", "AOP", "SELT",
+    'ARCH',
+    'GVRN',
+    'SYNG',
+    'CSE',
+    'NEXUS',
+    'LOOM',
+    'DEV',
+    'FORGE',
+    'SHIELD',
+    'ATLAS',
+    'CORE',
+    'RPG',
+    'AOP',
+    'SELT',
 ]);
 
 /** Celestial elevation ladder — ascension moves the class up. */
-const CELESTIAL_LADDER = ["[ASTEROID]", "[MOON]", "[PLANET]", "[STAR]"];
+const CELESTIAL_LADDER = ['[ASTEROID]', '[MOON]', '[PLANET]', '[STAR]'];
 
 // ============================================================================
 // CLASS: NovaGenesis — The Primordial Substrate
@@ -55,59 +67,58 @@ const CELESTIAL_LADDER = ["[ASTEROID]", "[MOON]", "[PLANET]", "[STAR]"];
  * the evolved form that superpositions NovaGenesis and mutates beyond it.
  */
 class NovaGenesis {
+    constructor(opts = {}) {
+        this.id = opts.id || 'SYNG.NOVA.Seed';
+        this.type = opts.type || 'STRUCTURAL_BLUEPRINT';
+        this.domain = opts.domain || this.id.split('.')[0];
+        this.celestialClass = opts.celestialClass || '[ASTEROID]';
+        this.governedBy = opts.governedBy || 'CORE.Codex.Phoenix';
+        this.relations = opts.relations || '';
+        this.dryRun = opts.dryRun || false;
+        this.overwrite = opts.overwrite || false;
 
-  constructor(opts = {}) {
-    this.id             = opts.id            || "SYNG.NOVA.Seed";
-    this.type           = opts.type          || "STRUCTURAL_BLUEPRINT";
-    this.domain         = opts.domain        || this.id.split(".")[0];
-    this.celestialClass = opts.celestialClass || "[ASTEROID]";
-    this.governedBy     = opts.governedBy    || "CORE.Codex.Phoenix";
-    this.relations      = opts.relations     || "";
-    this.dryRun         = opts.dryRun        || false;
-    this.overwrite      = opts.overwrite     || false;
-
-    /** Mutation record — populated during ascension by PhoenixClass. */
-    this.mutations = [];
-  }
-
-  // ── Validation ─────────────────────────────────────────────────────────────
-
-  /**
-   * Validates an artifact ID against RNC grammar: DOMAIN.Subject.Type
-   * @returns {{ valid: boolean, errors: string[] }}
-   */
-  validateArtifactId() {
-    const errors = [];
-    const id = this.id;
-
-    if (!id || typeof id !== "string") {
-      return { valid: false, errors: ["Artifact ID must be a non-empty string."] };
+        /** Mutation record — populated during ascension by PhoenixClass. */
+        this.mutations = [];
     }
 
-    const parts = id.split(".");
-    if (parts.length < 2) {
-      errors.push(`RNC_VIOLATION: '${id}' must follow DOMAIN.Subject[.Type] (min 2 segments).`);
+    // ── Validation ─────────────────────────────────────────────────────────────
+
+    /**
+     * Validates an artifact ID against RNC grammar: DOMAIN.Subject.Type
+     * @returns {{ valid: boolean, errors: string[] }}
+     */
+    validateArtifactId() {
+        const errors = [];
+        const id = this.id;
+
+        if (!id || typeof id !== 'string') {
+            return { valid: false, errors: ['Artifact ID must be a non-empty string.'] };
+        }
+
+        const parts = id.split('.');
+        if (parts.length < 2) {
+            errors.push(`RNC_VIOLATION: '${id}' must follow DOMAIN.Subject[.Type] (min 2 segments).`);
+        }
+
+        if (!VALID_DOMAINS.has(parts[0])) {
+            errors.push(`UNKNOWN_DOMAIN: '${parts[0]}' not in OGLN registry. Valid: ${[...VALID_DOMAINS].join(', ')}`);
+        }
+
+        return { valid: errors.length === 0, errors };
     }
 
-    if (!VALID_DOMAINS.has(parts[0])) {
-      errors.push(`UNKNOWN_DOMAIN: '${parts[0]}' not in OGLN registry. Valid: ${[...VALID_DOMAINS].join(", ")}`);
-    }
+    // ── Base Template (NovaGenesis cannot see the Phoenix Cycle) ───────────────
 
-    return { valid: errors.length === 0, errors };
-  }
+    /**
+     * Generates the base UMB scaffold — the seed form, not the ascended form.
+     * @returns {string}
+     */
+    _baseTemplate() {
+        const ts = new Date().toISOString().slice(0, 10);
+        const filename = `UMB-${this.id.replaceAll('.', '-')}_v1.0.md`;
+        const subject = this.id.split('.').slice(1).join(' ');
 
-  // ── Base Template (NovaGenesis cannot see the Phoenix Cycle) ───────────────
-
-  /**
-   * Generates the base UMB scaffold — the seed form, not the ascended form.
-   * @returns {string}
-   */
-  _baseTemplate() {
-    const ts       = new Date().toISOString().slice(0, 10);
-    const filename = `UMB-${this.id.replace(/\./g, "-")}_v1.0.md`;
-    const subject  = this.id.split(".").slice(1).join(" ");
-
-    return `---
+        return `---
 # Universal Identification & Provenance (UIP-V15)
 | Key                  | Value                              | Description              |
 | :------------------- | :--------------------------------- | :----------------------- |
@@ -119,7 +130,7 @@ class NovaGenesis {
 | **Evolution**        | \`${this._evolutionLabel()}\`      | Maturity marker          |
 | **Status**           | \`[DRAFT]\`                        | Lifecycle state          |
 | **Governed By**      | \`${this.governedBy}\`             | Supreme law reference    |
-| **Relations**        | \`${this.relations || "—"}\`       | Related artifact IDs     |
+| **Relations**        | \`${this.relations || '—'}\`       | Related artifact IDs     |
 ---
 
 # UMB-${this.id}: ${subject}
@@ -178,63 +189,63 @@ class NovaGenesis {
 
 \`[OMNI-ARTIFACT-ANCHOR] ID: ${this.id} VER: ${VERSION} STATUS: DRAFT TS: ${ts}\`
 `;
-  }
-
-  /** Override point — NovaGenesis uses the base label. PhoenixClass mutates this. */
-  _evolutionLabel() {
-    return "Initial Forging";
-  }
-
-  /**
-   * Generate UMB content. PhoenixClass overrides this to append the Phoenix Cycle blocks.
-   * @returns {string}
-   */
-  generate() {
-    return this._baseTemplate();
-  }
-
-  // ── File I/O ────────────────────────────────────────────────────────────────
-
-  write(content) {
-    const filename  = `UMB-${this.id.replace(/\./g, "-")}_v1.0.md`;
-    const toolsDir  = __dirname;
-    const outputDir = path.resolve(toolsDir, "../docs/architecture");
-    const outPath   = path.join(outputDir, filename);
-
-    if (this.dryRun) {
-      console.log(`\n[DRY-RUN] Would write: ${outPath}`);
-      console.log("─".repeat(60));
-      console.log(content);
-      return outPath;
     }
 
-    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
-
-    if (fs.existsSync(outPath) && !this.overwrite) {
-      throw new Error(`File exists: ${outPath}\nPass --overwrite to replace.`);
+    /** Override point — NovaGenesis uses the base label. PhoenixClass mutates this. */
+    _evolutionLabel() {
+        return 'Initial Forging';
     }
 
-    fs.writeFileSync(outPath, content, "utf-8");
-    console.log(`[FORGE] Canonized: ${outPath}`);
-    return outPath;
-  }
+    /**
+     * Generate UMB content. PhoenixClass overrides this to append the Phoenix Cycle blocks.
+     * @returns {string}
+     */
+    generate() {
+        return this._baseTemplate();
+    }
 
-  // ── The Ascension Factory ───────────────────────────────────────────────────
+    // ── File I/O ────────────────────────────────────────────────────────────────
 
-  /**
-   * NovaGenesis recognizes its own limit and instantiates its evolved form.
-   * The act of instantiation causes PhoenixClass to mutate beyond NovaGenesis:
-   *   - Celestial class is elevated one rung
-   *   - Phoenix Cycle blocks are appended to the UMB
-   *   - Sentinel Gate and KPI blocks become available
-   *   - Mutation is recorded in the instance
-   *
-   * @param {object} opts - Same options passed to NovaGenesis constructor
-   * @returns {PhoenixClass}
-   */
-  static ascend(opts) {
-    return new PhoenixClass(opts);
-  }
+    write(content) {
+        const filename = `UMB-${this.id.replaceAll('.', '-')}_${VERSION}.md`;
+        const toolsDir = __dirname;
+        const outputDir = path.resolve(toolsDir, '../docs/architecture');
+        const outPath = path.join(outputDir, filename);
+
+        if (this.dryRun) {
+            console.log(`\n[DRY-RUN] Would write: ${outPath}`);
+            console.log('─'.repeat(60));
+            console.log(content);
+            return outPath;
+        }
+
+        if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+
+        if (fs.existsSync(outPath) && !this.overwrite) {
+            throw new Error(`File exists: ${outPath}\nPass --overwrite to replace.`);
+        }
+
+        fs.writeFileSync(outPath, content, 'utf-8');
+        console.log(`[FORGE] Canonized: ${outPath}`);
+        return outPath;
+    }
+
+    // ── The Ascension Factory ───────────────────────────────────────────────────
+
+    /**
+     * NovaGenesis recognizes its own limit and instantiates its evolved form.
+     * The act of instantiation causes PhoenixClass to mutate beyond NovaGenesis:
+     *   - Celestial class is elevated one rung
+     *   - Phoenix Cycle blocks are appended to the UMB
+     *   - Sentinel Gate and KPI blocks become available
+     *   - Mutation is recorded in the instance
+     *
+     * @param {object} opts - Same options passed to NovaGenesis constructor
+     * @returns {PhoenixClass}
+     */
+    static ascend(opts) {
+        return new PhoenixClass(opts);
+    }
 }
 
 // ============================================================================
@@ -251,49 +262,48 @@ class NovaGenesis {
  * It is the execution model.
  */
 class PhoenixClass extends NovaGenesis {
+    constructor(opts = {}) {
+        super(opts);
 
-  constructor(opts = {}) {
-    super(opts);
+        // ── Mutation 1: Celestial Elevation ──────────────────────────────────────
+        const prevClass = this.celestialClass;
+        this.celestialClass = this._elevate(prevClass);
+        this.mutations.push(
+            `CELESTIAL_ELEVATION: ${prevClass} → ${this.celestialClass}`,
+            'EVOLUTION_OVERRIDE: Initial Forging → Structural Transcendence',
+        );
 
-    // ── Mutation 1: Celestial Elevation ──────────────────────────────────────
-    const prevClass = this.celestialClass;
-    this.celestialClass = this._elevate(prevClass);
-    this.mutations.push(`CELESTIAL_ELEVATION: ${prevClass} → ${this.celestialClass}`);
+        // ── Mutation 3: Phoenix Cycle Awareness ──────────────────────────────────
+        this.phoenixCycleActive = true;
+        this.mutations.push('PHOENIX_CYCLE: KINETIC');
 
-    // ── Mutation 2: Evolution Label Override ─────────────────────────────────
-    this.mutations.push("EVOLUTION_OVERRIDE: Initial Forging → Structural Transcendence");
+        // ── Mutation 4: Sentinel Gate Integration ────────────────────────────────
+        this.sentinelVerdict = 'AFFIRM'; // PhoenixClass starts post-gate; it already passed
+        this.mutations.push('SENTINEL_GATE: PASSED — AFFIRM issued');
+    }
 
-    // ── Mutation 3: Phoenix Cycle Awareness ──────────────────────────────────
-    this.phoenixCycleActive = true;
-    this.mutations.push("PHOENIX_CYCLE: KINETIC");
+    // ── Mutation: Evolution Label ───────────────────────────────────────────────
 
-    // ── Mutation 4: Sentinel Gate Integration ────────────────────────────────
-    this.sentinelVerdict = "AFFIRM";   // PhoenixClass starts post-gate; it already passed
-    this.mutations.push("SENTINEL_GATE: PASSED — AFFIRM issued");
-  }
+    _evolutionLabel() {
+        return 'Structural Transcendence';
+    }
 
-  // ── Mutation: Evolution Label ───────────────────────────────────────────────
+    // ── Mutation: Celestial Elevation ──────────────────────────────────────────
 
-  _evolutionLabel() {
-    return "Structural Transcendence";
-  }
+    /**
+     * Elevates the celestial class one rung up the ascension ladder.
+     * [ASTEROID] → [MOON] → [PLANET] → [STAR] (ceiling)
+     */
+    _elevate(current) {
+        const idx = CELESTIAL_LADDER.indexOf(current);
+        if (idx === -1) return '[PLANET]'; // unknown → default elevated
+        return CELESTIAL_LADDER[Math.min(idx + 1, CELESTIAL_LADDER.length - 1)];
+    }
 
-  // ── Mutation: Celestial Elevation ──────────────────────────────────────────
+    // ── Mutation: Phoenix Cycle Block (unavailable to NovaGenesis) ─────────────
 
-  /**
-   * Elevates the celestial class one rung up the ascension ladder.
-   * [ASTEROID] → [MOON] → [PLANET] → [STAR] (ceiling)
-   */
-  _elevate(current) {
-    const idx = CELESTIAL_LADDER.indexOf(current);
-    if (idx === -1) return "[PLANET]";                          // unknown → default elevated
-    return CELESTIAL_LADDER[Math.min(idx + 1, CELESTIAL_LADDER.length - 1)];
-  }
-
-  // ── Mutation: Phoenix Cycle Block (unavailable to NovaGenesis) ─────────────
-
-  _phoenixCycleBlock() {
-    return `
+    _phoenixCycleBlock() {
+        return `
 ---
 
 ## 🔥 Block E: The Phoenix Cycle (Mutation Block — PhoenixClass only)
@@ -327,21 +337,21 @@ Virtuous cycle target: \`CI ↑\` → \`SFR ↑\` → \`SER ↓\` → \`CI ↑\`
 This UMB was generated by **PhoenixClass**, which superpositioned **NovaGenesis**
 and mutated during instantiation. The following mutations were applied:
 
-${this.mutations.map(m => `- \`${m}\``).join("\n")}
+${this.mutations.map((m) => `- \`${m}\``).join('\n')}
 `;
-  }
+    }
 
-  // ── Override: generate() — appends Phoenix blocks to base ──────────────────
+    // ── Override: generate() — appends Phoenix blocks to base ──────────────────
 
-  /**
-   * PhoenixClass generates the base UMB (inherited from NovaGenesis)
-   * then appends the Phoenix Cycle, KPI, and Ascension Manifest blocks.
-   * NovaGenesis.generate() produces only Blocks A–D.
-   * PhoenixClass.generate() produces Blocks A–G.
-   */
-  generate() {
-    return super.generate() + this._phoenixCycleBlock();
-  }
+    /**
+     * PhoenixClass generates the base UMB (inherited from NovaGenesis)
+     * then appends the Phoenix Cycle, KPI, and Ascension Manifest blocks.
+     * NovaGenesis.generate() produces only Blocks A–D.
+     * PhoenixClass.generate() produces Blocks A–G.
+     */
+    generate() {
+        return super.generate() + this._phoenixCycleBlock();
+    }
 }
 
 // ============================================================================
@@ -349,19 +359,19 @@ ${this.mutations.map(m => `- \`${m}\``).join("\n")}
 // ============================================================================
 
 function parseArgs(argv) {
-  const args = {};
-  for (let i = 2; i < argv.length; i++) {
-    if (argv[i].startsWith("--")) {
-      const key = argv[i].slice(2);
-      const val = argv[i + 1] && !argv[i + 1].startsWith("--") ? argv[++i] : true;
-      args[key] = val;
+    const args = {};
+    for (let i = 2; i < argv.length; i++) {
+        if (argv[i].startsWith('--')) {
+            const key = argv[i].slice(2);
+            const val = argv[i + 1] && !argv[i + 1].startsWith('--') ? argv[++i] : true;
+            args[key] = val;
+        }
     }
-  }
-  return args;
+    return args;
 }
 
 function showHelp() {
-  console.log(`
+    console.log(`
 FORGE.UMB.Tool.js — Superposition Ascension Pattern (v15.0 [OMEGA])
 ────────────────────────────────────────────────────────────────────
 Architecture:
@@ -385,50 +395,53 @@ Usage:
 }
 
 function main() {
-  const args = parseArgs(process.argv);
+    const args = parseArgs(process.argv);
 
-  if (args.help || !args.id) { showHelp(); process.exit(0); }
+    if (args.help || !args.id) {
+        showHelp();
+        process.exit(0);
+    }
 
-  const opts = {
-    id:             args.id,
-    type:           args.type || "STRUCTURAL_BLUEPRINT",
-    domain:         args.domain || args.id.split(".")[0],
-    celestialClass: args.celestial || "[ASTEROID]",
-    governedBy:     args["governed-by"] || "CORE.Codex.Phoenix",
-    relations:      args.relations || "",
-    dryRun:         !!args["dry-run"],
-    overwrite:      !!args.overwrite,
-  };
+    const opts = {
+        id: args.id,
+        type: args.type || 'STRUCTURAL_BLUEPRINT',
+        domain: args.domain || args.id.split('.')[0],
+        celestialClass: args.celestial || '[ASTEROID]',
+        governedBy: args['governed-by'] || 'CORE.Codex.Phoenix',
+        relations: args.relations || '',
+        dryRun: !!args['dry-run'],
+        overwrite: !!args.overwrite,
+    };
 
-  // Choose instantiation mode
-  const generator = args.nova
-    ? new NovaGenesis(opts)         // Seed form — no ascension
-    : NovaGenesis.ascend(opts);     // PhoenixClass — full mutation
+    // Choose instantiation mode
+    const generator = args.nova
+        ? new NovaGenesis(opts) // Seed form — no ascension
+        : NovaGenesis.ascend(opts); // PhoenixClass — full mutation
 
-  const mode = args.nova ? "NovaGenesis (Seed)" : "PhoenixClass (Ascended)";
+    const mode = args.nova ? 'NovaGenesis (Seed)' : 'PhoenixClass (Ascended)';
 
-  // Validate
-  const validation = generator.validateArtifactId();
-  if (!validation.valid) {
-    console.error(`[FORGE] Validation failed (${mode}):`);
-    validation.errors.forEach(e => console.error(`  • ${e}`));
-    process.exit(1);
-  }
+    // Validate
+    const validation = generator.validateArtifactId();
+    if (!validation.valid) {
+        console.error(`[FORGE] Validation failed (${mode}):`);
+        validation.errors.forEach((e) => console.error(`  • ${e}`));
+        process.exit(1);
+    }
 
-  console.log(`[FORGE] Generator: ${mode}`);
-  if (!args.nova) {
-    console.log(`[FORGE] Mutations applied during ascension:`);
-    generator.mutations.forEach(m => console.log(`  + ${m}`));
-  }
+    console.log(`[FORGE] Generator: ${mode}`);
+    if (!args.nova) {
+        console.log(`[FORGE] Mutations applied during ascension:`);
+        generator.mutations.forEach((m) => console.log(`  + ${m}`));
+    }
 
-  const content = generator.generate();
+    const content = generator.generate();
 
-  try {
-    generator.write(content);
-  } catch (err) {
-    console.error(`[FORGE] Error: ${err.message}`);
-    process.exit(1);
-  }
+    try {
+        generator.write(content);
+    } catch (err) {
+        console.error(`[FORGE] Error: ${err.message}`);
+        process.exit(1);
+    }
 }
 
 main();

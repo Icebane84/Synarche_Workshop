@@ -6,18 +6,20 @@
 
 ## Purpose
 
-This directory holds **inert structural blueprints** — template definitions used by the Substrate Forge (`forge/substrate_forge.py`) to generate canonical Python modules, governance artifacts, and workflow documents. Nothing here executes. Nothing here is imported. Templates are raw material, not products.
+This directory holds **inert structural blueprints** — template definitions used by the Substrate Forge
+(`forge/substrate_forge.py`) to generate canonical Python modules, governance artifacts, and workflow documents. Nothing
+here executes. Nothing here is imported. Templates are raw material, not products.
 
 ---
 
 ## What Belongs Here
 
-| Type | Example | Governance |
-|:--|:--|:--|
-| Universal Module Blueprints (UMBs) | `UMB-GENSEED-001_*.md` | `GVRN.Assembler.Core` |
-| Workflow Blueprint Templates (SELTs) | `SELT-UWB-001_*.md` | `AOP-PGPS-001` |
-| Artifact JSON schemas | `artifact_template.json` | `GVRN.Style.001` |
-| Emoji/Protocol bundles | `AOP-EMOJI-001_*.md` | `GVRN.Protocol.Scaffolding` |
+| Type                                 | Example                  | Governance                  |
+| :----------------------------------- | :----------------------- | :-------------------------- |
+| Universal Module Blueprints (UMBs)   | `UMB-GENSEED-001_*.md`   | `GVRN.Assembler.Core`       |
+| Workflow Blueprint Templates (SELTs) | `SELT-UWB-001_*.md`      | `AOP-PGPS-001`              |
+| Artifact JSON schemas                | `artifact_template.json` | `GVRN.Style.001`            |
+| Emoji/Protocol bundles               | `AOP-EMOJI-001_*.md`     | `GVRN.Protocol.Scaffolding` |
 
 ### Sub-directories
 
@@ -42,17 +44,18 @@ UMB-*.md  →  substrate_forge.py  →  src/[domain]/[module].py
 SELT-*.md →  Agent workflow execution (read by AI, not Python)
 ```
 
-The Substrate Forge reads UMB files, extracts metadata (class name, methods, rationale), and scaffolds the corresponding Python implementation. The AI agent then fills in the logic.
+The Substrate Forge reads UMB files, extracts metadata (class name, methods, rationale), and scaffolds the corresponding
+Python implementation. The AI agent then fills in the logic.
 
 ---
 
 ## Governance
 
-| Governing artifact | Location |
-|:--|:--|
-| `GVRN.Assembler.Core` | `_governance/05_Assembler/` |
+| Governing artifact                             | Location                      |
+| :--------------------------------------------- | :---------------------------- |
+| `GVRN.Assembler.Core`                          | `_governance/05_Assembler/`   |
 | `AOP-PGPS-001` (Genesis Presentation Standard) | `_governance/03_AvatarSuite/` |
-| `GVRN.Style.001` (Coding Standards) | `_governance/02_GVRN/` |
+| `GVRN.Style.001` (Coding Standards)            | `_governance/02_GVRN/`        |
 
 ---
 

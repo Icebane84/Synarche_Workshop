@@ -1,3 +1,34 @@
+"""
+## **[ARTIFACT START]**
+
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.utils.simulate_impact`              | The Sovereign ID. |
+| **Official Name** | `simulate_impact.py`               | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `CORE`                     | The Subject.      |
+| **Status (State)**| `[ACTIVE]`                        | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
+# ---
+
+## **Block B: State Vector (AGP-001)**
+
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | {resonance}     |
+# | **Resonance** | {resonance}     |
+# | **Stability** | Stable  |
+
+## **[ARTIFACT END]**
+
+Phoenix Cycle Simulator: Meteorite Impact -> Resolution -> Prestige Investment.
+Validates the end-to-end flow of the AOP-AXIOM-INVEST-001 protocol.
+Conforms to OGLN/AISTF v15.0 documentation standards.
+"""
+
 import time
 import uuid
 import sys
@@ -15,10 +46,12 @@ except ImportError:
     print("Error: Could not import RPGManager. Ensure it is in src/logic/")
     sys.exit(1)
 
-# Phoenix Cycle Simulator: Meteorite Impact -> Resolution -> Prestige Investment
-# Validates the end-to-end flow of the AOP-AXIOM-INVEST-001 protocol
 
 def simulate_phoenix_cycle() -> None:
+    """
+    Executes a simulated Phoenix Cycle, following the Dissonance-Synthesis-Transcendence workflow.
+    Validates stardust awarding and investment logic within the RPG framework.
+    """
     print("--- [SIMULATION START: THE PHOENIX CYCLE] ---")
     
     rpg = RPGManager()
@@ -66,5 +99,10 @@ def simulate_phoenix_cycle() -> None:
     print(f"Stardust: {status['stats']['stardust_available']}")
     print(f"Coherence: {status['stats']['coherence_index']}")
 
+
 if __name__ == "__main__":
     simulate_phoenix_cycle()
+
+# ---
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.utils.simulate_impact VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [ACTIVE] TS: 2026-03-28
+# ---

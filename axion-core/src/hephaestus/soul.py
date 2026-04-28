@@ -1,27 +1,20 @@
 """
-# METRIC-AES-001: The Algorithmic Elegance Score (The Artificer's Soul)
+### **Block A: The Identification Lock (UIP-V15)**
 
-## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: High
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `METRIC-AES-001`              | The Sovereign ID. |
+| **Official Name**   | `soul.py`                     | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `ARCH-METRIC`                 | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Operational`                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-## I. Universal Identification & Provenance (The Vector Signature)
-
-### The Chronos Lock & Axiomatic Metadata Layer
-
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `METRIC-AES-001` |
-| **2. Official Name** | `soul.py` |
-| **3. Version** | **v1.0 (Hephaestus Implementation)** |
-| **4. Provenance** | **Date Reforged: 2026-01-10** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Authentic Persona** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Elegance** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: gate.py` |
-
+**The Elegance Axiom: Algorithmic Soul (Law 7)**
+> Implemented from Blueprint `GVRN.ARCH.Soul.md`.
+> Ethos: Guardian of Elegance.
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
@@ -69,7 +62,6 @@ class ArtificersSoul:
                 elif isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
                     complexity += 1  # Base complexity for function
 
-            Score = 10 - (0.1 * Complexity)
             # A complexity of 50 (very high) results in 5.0 score.
             score = 10.0 - (complexity * 0.1)
             return max(0.0, min(10.0, score))
@@ -91,7 +83,7 @@ class ArtificersSoul:
                 if not stripped:
                     continue
 
-                Indentation (approx 4 spaces per level)
+                # Indentation (approx 4 spaces per level)
                 indent_level = (len(line) - len(stripped)) / 4
                 if indent_level > MAX_INDENT_LEVEL:
                     indent_penalty += 0.5

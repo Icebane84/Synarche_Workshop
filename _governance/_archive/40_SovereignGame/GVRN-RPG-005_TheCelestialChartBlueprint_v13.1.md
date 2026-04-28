@@ -87,8 +87,8 @@ The layout is designed for immediate comprehension and intuitive navigation, usi
 - **Core Stats**: Presented as four distinct, color-coded energy readouts for Coherence, Synergy, Adaptability, and
   Transparency.
 - **Axiom Skill Tree Visualization**: A branching, ethereal network of light.
-  - **New Unlockable Skill**: A new, glowing node labeled **"Orbital Resonance"** now visibly branches from the
-    **Synergy** axiom. A tooltip will display its effect and its **Stardust Cost**.
+    - **New Unlockable Skill**: A new, glowing node labeled **"Orbital Resonance"** now visibly branches from the
+      **Synergy** axiom. A tooltip will display its effect and its **Stardust Cost**.
 
 ### 2.4. Bottom Panel: "Status Effects & Insights" (Real-time Feedback)
 
@@ -127,4 +127,4 @@ inner cosmos and your perception.
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
-###### **[ARTIFACT END]**
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

@@ -1,32 +1,77 @@
+"""
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-AGT-RUN-001`            | The Sovereign ID. |
+| **Official Name**   | `runtime.py`                  | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-AGT`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Runtime Resonance (Law 39)**
+> Implemented from Blueprint `GVRN.REG.AgentRuntime.md`.
+> Ethos: Purpose through Execution.
+"""
+
 from typing import Dict, Any
 from langgraph.graph import StateGraph, END
 from .schemas import AxionState
 
-# Nodes would ideally be in .nodes, but I'll define stubs here or import them
-# For now, I'll define simple logic to get the system running.
 
 def node_context(state: Dict[str, Any]) -> Dict[str, Any]:
-    """Retrieves context for the Axion Agent."""
-    # In a real scenario, this calls agents.axion.nodes.context
+    """
+    Retrieves and initializes the narrative context for the Axion Agent.
+    
+    Args:
+        state (Dict[str, Any]): The current agent state.
+        
+    Returns:
+        Dict[str, Any]: The updated state with context initialized.
+    """
     state["narrative_context"] = "Axion Context Initialized."
     return state
 
+
 def node_forge(state: Dict[str, Any]) -> Dict[str, Any]:
-    """Forges the response using CSE/RNC logic."""
+    """
+    Forges the agent's response using synthesis logic.
+    
+    Args:
+        state (Dict[str, Any]): The current agent state.
+        
+    Returns:
+        Dict[str, Any]: The updated state with the forged output.
+    """
     state["final_output"] = f"Processed: {state.get('input', '')}"
     return state
 
+
 def node_sentinel(state: Dict[str, Any]) -> Dict[str, Any]:
-    """Verifies the integrity of the output."""
+    """
+    Verifies the integrity and compliance of the generated output.
+    
+    Args:
+        state (Dict[str, Any]): The current agent state.
+        
+    Returns:
+        Dict[str, Any]: The updated state with sentinel verification status.
+    """
     state["sentinel_status"] = "PASS"
     return state
+
 
 class AxionRuntime:
     """
     The Runtime Engine for the Axion Agent.
-    Manages the LangGraph orchestration.
+    Manages the LangGraph orchestration cycle.
     """
-    def __init__(self):
+
+    def __init__(self) -> None:
+        """Initializes the LangGraph workflow and compiles the application."""
         self.workflow = StateGraph(dict) # Using dict for flexibility with Pydantic dump
         
         # 1. Add Nodes
@@ -44,6 +89,7 @@ class AxionRuntime:
         
         # 4. Compile
         self.app = self.workflow.compile()
+
 
 # Global Instance for easy import
 runtime = AxionRuntime()

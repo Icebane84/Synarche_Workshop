@@ -1,10 +1,20 @@
 """
-UMB-LOOM-002: The Cognitive Loom (Engine)
+### **Block A: The Identification Lock (UIP-V15)**
 
-Genesis Stamp: 2025-12-22
-Domain: TECH.Integration
-Purpose: To weave disparate data streams into a cohesive Knowledge Graph.
-Governed By: UMB-GTSF-001
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-LOOM-002`                | The Sovereign ID. |
+| **Official Name**   | `loom.py`                     | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `TECH.Integration`            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Cognitive Weaving (Law 02)**
+> Purpose: To weave disparate data streams into a cohesive Knowledge Graph.
+> Governed By: UMB-GTSF-001
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
@@ -32,7 +42,7 @@ class CognitiveLoom:
     Ingests artifacts, extracts metadata, and identifies semantic edges.
     """
 
-    def __init__(self, workspace_root: str):
+    def __init__(self, workspace_root: str) -> None:
         self.root = workspace_root
         self.tapestry = {
             "nodes": {},
@@ -111,6 +121,7 @@ class CognitiveLoom:
         return metadata
 
     def _determine_type(self, metadata: dict) -> str:
+        """Determines the artifact type based on its functional domain."""
         domain = metadata.get("Domain", "UNKNOWN")
         if "PHL" in domain:
             return "Entity"
@@ -131,7 +142,7 @@ class CognitiveLoom:
             link[0] for link in links if "http" not in link[1] and hasattr(link, "__getitem__")
         ]  # Internal links only
 
-    def _weave_edges(self, source_id: str, targets: list[str], link_type: str = "references", strength: float = 1.0):
+    def _weave_edges(self, source_id: str, targets: list[str], link_type: str = "references", strength: float = 1.0) -> None:
         """
         Creates weighted edge entries in the Tapestry.
         """
@@ -168,7 +179,7 @@ class CognitiveLoom:
             return "Retained"
         return "Archival"
 
-    def export_tapestry(self, output_path: str):
+    def export_tapestry(self, output_path: str) -> None:
         """
         Persists the current Knowledge Graph to JSON.
         """

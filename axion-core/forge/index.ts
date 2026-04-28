@@ -4,6 +4,8 @@
  * Python modules: assembler.py, canonize.py, carp.py, chronos.py, cse_engine.py, dragonslayer.py, +35 more
  * Other files: registry.yaml
  *
- * [OMNI-ARTIFACT-ANCHOR] ID: FORGE.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-24
+ * [OMNI-ARTIFACT-ANCHOR] ID: FORGE.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28
  */
-export * from './engines';
+// Pure Python layer — no TypeScript exports.
+// Accessible via the @nexus/ WebSocket bridge.
+export {};

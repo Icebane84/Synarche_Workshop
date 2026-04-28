@@ -2,33 +2,27 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            /* 🧠 COGNITIVE TIER */
-            "@agent/*": [".agent/*"],
-            "@shield/*": ["axion-core/sentinel/*"],
-            
-            /* ⚖️ GOVERNANCE TIER */
-            "@codex/*": ["_governance/00_Codex/*"],
-            "@atlas/*": ["_governance/01_Registries/*"],
-            "@protocol/*": ["_governance/02_Protocols/*"],
-            "@hud/*": ["_governance/10_Governance/*"],
-            "@standard/*": ["_governance/13_Standardization/*"],
-            "@loom/*": ["_governance/templates/*"],
-            "@archive/*": ["_governance/99_Archives/*"],
-
-            /* ⚙️ ENGINE TIER */
+            /* --- Layer 1: THE ANCHOR (Governance & Complete Stack) --- */
             "@system/*": ["axion-core/src/cse/*"],
             "@domain/*": ["axion-core/src/02_domain/*"],
             "@nexus/*": ["axion-core/src/nexus/*"],
-            "@essence/*": ["axion-core/src/types/*"],
-            "@forge/*": ["axion-core/forge/*"],
-            "@pulse/*": ["axion-core/_logs/*"],
-
-            /* 🎨 FABRIC TIER */
             "@fabric/*": ["design-system/tarot-forge/src/*"],
+            "@essence/*": ["axion-core/src/types/*"],
+            "@atlas/*": ["_governance/01_Registries/*"],
 
-            /* 🧪 LABORATORY TIER */
-            "@lab/*": ["playground/*"],
-            "@incoming/*": ["incoming/*"]
+            /* --- Layer 2: THE TRIAD (Core Sovereign Logic) --- */
+            "@axion/*": ["axion-core/src/*"],
+            "@sophia/*": ["axion-core/src/logic/nlp/*"],
+            "@sentinel/*": ["axion-core/sentinel/*"],
+
+            /* --- Layer 4: THE CHRONICLE (Vault & Shards) --- */
+            "@logs/*": ["axion-core/_logs/*"],
+
+            /* --- MULTI-LANGUAGE QUAD CLUSTER --- */
+            "@gov/*": ["_governance/*"],
+            "@engine/*": ["nova_forge/*"],
+            "@bridge/*": ["axion-core/*"],
+            "@library/*": ["library/*"]
         }
     }
 }

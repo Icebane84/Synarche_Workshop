@@ -27,6 +27,9 @@ jsonschema==4.21.1
 # Required for automated forging and git-sync operations
 GitPython==3.1.42
 requests==2.31.0
+supabase==2.3.4
+postgrest==0.16.2
+realtime==1.0.0
 
 # --- Validation & Quality Assurance ---
 # Required for the /audit workflows and structural testing
@@ -46,4 +49,4 @@ sentence-transformers==2.5.1
 rich==13.7.1
 
 # [TERMINAL SIGNATURE]
-# [OMNI-ARTIFACT-ANCHOR] ID: CORE.Engine.Requirements VER: v15.5 STATUS: CANONIZED TS: 2026-04-16 HASH: REQ-OMEGA-V5
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.Engine.Requirements VER: v15.0 STATUS: CANONIZED TS: 2026-04-28 HASH: REQ-OMEGA-V15

@@ -56,7 +56,8 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"To contribute to the systemic coherence and functional excellence of the Synarche workspace through machine-readable architecture."**
+> **"To contribute to the systemic coherence and functional excellence of the Synarche workspace through
+> machine-readable architecture."**
 
 ---
 
@@ -104,6 +105,4 @@ Every document must follow the standardized block structure:
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Protocol.Documentation VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: DOC-V15-STAR`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

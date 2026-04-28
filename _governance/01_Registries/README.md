@@ -20,7 +20,8 @@ Master inventories and state-tracking artifacts for the Synarchy.
 
 ## 🛖 Associated Skills
 
-- **[Soul Forging](../../.agent/skills/Soul%20Forging/README.md)**: Used to register new Soul artifacts and ensure relational resonance.
+- **[Soul Forging](../../.agent/skills/Soul%20Forging/README.md)**: Used to register new Soul artifacts and ensure
+  relational resonance.
 
 ## 📂 Core Registries
 
@@ -31,3 +32,5 @@ Master inventories and state-tracking artifacts for the Synarchy.
 ---
 
 `[BARREL-SIGN] ID: SYNG.REGISTRY.INDEX VER: v15.0 [OMEGA]`
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

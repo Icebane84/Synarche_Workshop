@@ -51,3 +51,5 @@ errors). however, it lacks the **Eye of Understanding** (The Codex).
 - `CMD: REVIEW_LOG` -> "Review The Codex quest progression."
 
 ###### **[ARTIFACT END]**
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

@@ -27,11 +27,11 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.REG.OSLM` | `MAPPED_BY` | Relational edges are indexed in the Master Matrix. |
-| `SYNG.Index.Chronicle` | `RECORDS` | Structural evolution of the map is recorded here. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                                 |
+| :---------------------- | :---------------- | :------------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework.    |
+| `GVRN.REG.OSLM`         | `MAPPED_BY`       | Relational edges are indexed in the Master Matrix. |
+| `SYNG.Index.Chronicle`  | `RECORDS`         | Structural evolution of the map is recorded here.  |
 
 ---
 
@@ -57,9 +57,9 @@
 
 ## **Block G: System Slot & Synergy (BLK-RPG-001)**
 
-| System Slot            | Synergy Set          | Celestial Class | Authority Level |
-| :--------------------- | :------------------- | :-------------- | :-------------- |
-| `Topographic Controller` | `The World Map`     | `[STAR]`        | `EXECUTIVE`     |
+| System Slot              | Synergy Set     | Celestial Class | Authority Level |
+| :----------------------- | :-------------- | :-------------- | :-------------- |
+| `Topographic Controller` | `The World Map` | `[STAR]`        | `EXECUTIVE`     |
 
 ---
 
@@ -115,6 +115,4 @@ _The persistent memory layer._
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.REG.DirectoryArchitecture VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: DIR-OMEGA-V15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

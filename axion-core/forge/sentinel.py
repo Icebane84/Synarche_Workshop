@@ -20,13 +20,23 @@
 import ast
 import json
 import logging
+import sys
 from pathlib import Path
 from typing import Any
 
+
 # Hephaestus Lib Imports
-# Stub for missing resonance_scanner
-def is_aligned(path: Path) -> bool:
-    return True
+try:
+    # Add root to sys.path if not present to allow importing from 'tools'
+    root_path = str(Path(__file__).parent.parent)
+    if root_path not in sys.path:
+        sys.path.append(root_path)
+    from tools.resonance_scanner import is_aligned
+except ImportError:
+    # Fallback stub if resonance_scanner is missing
+    def is_aligned(path: Path) -> bool:
+        return True
+
 
 # Configuration
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -65,7 +75,7 @@ class CodeSentinel:
             "total_files": total,
             "aligned_files": aligned,
             "resonance_score": round(score, 2),
-            "unaligned_list": unaligned
+            "unaligned_list": unaligned,
         }
 
     def audit_file(self, file_path: str) -> None:
@@ -100,13 +110,11 @@ class CodeSentinel:
                     continue
 
                 has_return_hint = node.returns is not None
-                has_arg_hints = all(
-                    arg.arg in {"self", "cls"} or arg.annotation is not None for arg in node.args.args
-                )
+                has_arg_hints = all(arg.arg in {"self", "cls"} or arg.annotation is not None for arg in node.args.args)
 
                 if has_return_hint and has_arg_hints:
                     continue
- 
+
                 hints = [("return type", has_return_hint), ("argument type", has_arg_hints)]
                 missing = [t for t, h in hints if not h]
                 self._report(str(path), "MISSING_TYPE_HINT", f"Function '{node.name}' lacks: {', '.join(missing)}")
@@ -119,7 +127,11 @@ class CodeSentinel:
             return  # Already handled
 
         for node in ast.walk(tree):
-            if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)) and not ast.get_docstring(node) and node.name != "__init__":
+            if (
+                isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef))
+                and not ast.get_docstring(node)
+                and node.name != "__init__"
+            ):
                 node_type = "Class" if isinstance(node, ast.ClassDef) else "Function"
                 self._report(
                     str(path),
@@ -147,7 +159,9 @@ class CodeSentinel:
             self._report(str(path), "MISSING_UIP_V15", "Module docstring lacks UIP-V15 block structure.")
 
         if "High Priestess" not in header and "Sovereign" not in header:
-            self._report(str(path), "MISSING_IDENTITY", "Module docstring lacks Sovereign Identity marker (High Priestess).")
+            self._report(
+                str(path), "MISSING_IDENTITY", "Module docstring lacks Sovereign Identity marker (High Priestess)."
+            )
 
     def _report(self, file_path: str, rule: str, message: str) -> None:
         """Log a compliance violation."""

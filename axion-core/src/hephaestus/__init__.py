@@ -47,10 +47,10 @@ from .sentinel import CodeSentinel
 from .soul import SoulImpactAnalyzer
 
 __all__ = [
-#     "CodeSentinel",
-#     "DidacticMentor",
-#     "SoulImpactAnalyzer",
-# ]
+    "CodeSentinel",
+    "DidacticMentor",
+    "SoulImpactAnalyzer",
+]
 
 # ---
 # 

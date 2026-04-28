@@ -1,3 +1,22 @@
+"""
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-AGT-COR-001`            | The Sovereign ID. |
+| **Official Name**   | `core.py`                     | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-AGT`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Core Orchestration (Law 37)**
+> Implemented from Blueprint `GVRN.REG.AgentCore.md`.
+> Ethos: Purpose through Orchestration.
+"""
+
 import logging
 import time
 from typing import Optional
@@ -18,7 +37,12 @@ class AxionAgentCore:
     """The central orchestration engine for Axion Core."""
 
     def __init__(self, db_path: Optional[str] = None) -> None:
-        """Initialize the Axion Agent Core Vessel."""
+        """
+        Initialize the Axion Agent Core Vessel.
+        
+        Args:
+            db_path (Optional[str]): Path to the memory database.
+        """
         self.cognition = AxionCognition()
         self.memory = MemorySystem(db_path=db_path)
         self.explanation = ExplanationGenerator(self.cognition)
@@ -28,7 +52,15 @@ class AxionAgentCore:
         logger.info(f"AxionAgentCore initialized. Session: {self.session_id}")
 
     def process_event(self, user_query: str) -> str:
-        """Executes the 'Event Horizon' processing loop."""
+        """
+        Executes the 'Event Horizon' processing loop.
+        
+        Args:
+            user_query (str): The raw input from the user.
+            
+        Returns:
+            str: The generated response or an error message.
+        """
         start_time = time.time()
         logger.info(f"Processing Event: {user_query[:50]}...")
 

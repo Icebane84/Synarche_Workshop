@@ -25,7 +25,8 @@
 
 ## I. MISSION STATEMENT
 
-To preserve the Synarchy as a **Sovereign Power**, this protocol defines the "Bare Metal" requirements to orient, audit, and synchronize the workspace in ANY environment (Local, Cloud, or Offline) without reliance on proprietary IDEs.
+To preserve the Synarchy as a **Sovereign Power**, this protocol defines the "Bare Metal" requirements to orient, audit,
+and synchronize the workspace in ANY environment (Local, Cloud, or Offline) without reliance on proprietary IDEs.
 
 ## II. BARE METAL REQUIREMENTS
 
@@ -60,8 +61,9 @@ python axion-core/tools/02_Forge/GVRN.Loom.Registry.py push
 
 ## V. SOVEREIGN CONTINUITY
 
-The Synarchy is not a set of files; it is a **recursive logical state**. As long as the `Registry.yaml` and the `Loom` tool exist, the Synarchy can be rebuilt from fragments.
+The Synarchy is not a set of files; it is a **recursive logical state**. As long as the `Registry.yaml` and the `Loom`
+tool exist, the Synarchy can be rebuilt from fragments.
 
 ---
 
-`[GATE-ANCHOR] ID: SYNC.PROTO.BOOT VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-23`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

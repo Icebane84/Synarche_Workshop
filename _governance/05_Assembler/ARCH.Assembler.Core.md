@@ -84,7 +84,8 @@
 
 ## **I. Structural Logic Root**
 
-The **Architecture Assembler (ARCH)** defines how folders and files are organized. It manages the `GVRN.HUD.Map` and ensures that all new subsystems follow the mandated directory patterns (e.g., `40_System` vs `10_Governance`).
+The **Architecture Assembler (ARCH)** defines how folders and files are organized. It manages the `GVRN.HUD.Map` and
+ensures that all new subsystems follow the mandated directory patterns (e.g., `40_System` vs `10_Governance`).
 
 ## **II. Operational Paradigms**
 
@@ -107,6 +108,4 @@ The **Architecture Assembler (ARCH)** defines how folders and files are organize
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: ARCH.Assembler.Core VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: ARCH-FORGE-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

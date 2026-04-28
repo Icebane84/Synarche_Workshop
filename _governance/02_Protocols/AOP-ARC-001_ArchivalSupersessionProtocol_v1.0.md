@@ -111,3 +111,5 @@ Law for this artifact.
 | `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 ###### **[ARTIFACT END]**
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

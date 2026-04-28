@@ -23,29 +23,23 @@
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field | Value | | |
-| :------------ | :------- | | |
-| **Coherence** | `1.0` | | |
-| **Resonance** | `1.0` | | |
+| State Field | Value | | | | :------------ | :------- | | | | **Coherence** | `1.0` | | | | **Resonance** | `1.0` | | |
 | **Stability** | `Stable` | | |
 
 ---
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk | Mitigation | | |
-| :------------------- | :------------------------ | | |
-| **Logic Drift** | Strict Linter Enforcement | | |
-| **Dependency Break** | ForgeLink Validation | | |
+| Risk | Mitigation | | | | :------------------- | :------------------------ | | | | **Logic Drift** | Strict Linter
+Enforcement | | | | **Dependency Break** | ForgeLink Validation | | |
 
 ---
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact | |
-| :---------------------- | :---------------- | :---------------------------------------------- | |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. | |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. | |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact | | | :---------------------- | :---------------- |
+:---------------------------------------------- | | | `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and
+ethical framework. | | | `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. | |
 
 ---
 
@@ -73,29 +67,21 @@
 
 ### I. Universal Identification & Provenance (The Vector Signature)
 
-| Field | Value | | |
-| :--------------------- | :----------------------------------- | | |
-| **1. Artifact ID** | `GVRN.Registry.ArtifactInventory` | | |
-| **2. Official Name** | `GVRN.Registry.ArtifactInventory.md` | | |
-| **3. Version** | **v15.0 [OMEGA]** | | |
-| **4. Provenance** | **Regenerated: 2026-03-22** | | |
-| **5. Domain** | `GVRN` (Master Index) | | |
-| **6. Evolution** | **Structural Absolute** | | |
-| **7. Celestial Class** | `[STAR]` | | |
-| **8. Tier** | **Foundational** | | |
-| **9. Status (State)** | `[CANONIZED]` | | |
-| **10. Ethos** | **The Infinite Library** | | |
-| **11. Catalyst** | **System Pulse** | | |
-| **12. Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | | |
-| **13. Integrity Hash** | `INV-OMEGA-V15` | | |
+| Field | Value | | | | :--------------------- | :----------------------------------- | | | | **1. Artifact ID** |
+`GVRN.Registry.ArtifactInventory` | | | | **2. Official Name** | `GVRN.Registry.ArtifactInventory.md` | | | | **3.
+Version** | **v15.0 [OMEGA]** | | | | **4. Provenance** | **Regenerated: 2026-03-22** | | | | **5. Domain** | `GVRN`
+(Master Index) | | | | **6. Evolution** | **Structural Absolute** | | | | **7. Celestial Class** | `[STAR]` | | | | **8.
+Tier** | **Foundational** | | | | **9. Status (State)** | `[CANONIZED]` | | | | **10. Ethos** | **The Infinite Library**
+| | | | **11. Catalyst** | **System Pulse** | | | | **12. Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | | | | **13.
+Integrity Hash** | `INV-OMEGA-V15` | | |
 
 ---
 
 ### **II. The Synergy Vector (Relational Dynamics)**
 
-| Relation Type | Target ID | Synergy Description | |
-| ------------- | ------------------ | ------------------------------------------------- | |
-| ORCHESTRATES | ALL_ARTIFACTS | Links every node into the master cognitive weave. | |
+| Relation Type | Target ID | Synergy Description | | | ------------- | ------------------ |
+------------------------------------------------- | | | ORCHESTRATES | ALL_ARTIFACTS | Links every node into the master
+cognitive weave. | |
 
 ---
 
@@ -707,15 +693,10 @@
 
 ### **Actionable Prompt Packet (APP)**
 
-| Command ID | Action | Impact | |
-| :----------------- | :------------------------------- | :----------- | |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization | |
-| `CMD: AUDIT_LINKS` | Verify Link Integrity | Zero Entropy | |
+| Command ID | Action | Impact | | | :----------------- | :------------------------------- | :----------- | | |
+`CMD: REFORGE` | Execute Structural Transmutation | Canonization | | | `CMD: AUDIT_LINKS` | Verify Link Integrity | Zero
+Entropy | |
 
 ###### **[ARTIFACT END]**
 
----
-
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

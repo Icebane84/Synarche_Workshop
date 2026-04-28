@@ -113,6 +113,4 @@ transforms raw data into a cohesive tapestry by identifying non-obvious emergent
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

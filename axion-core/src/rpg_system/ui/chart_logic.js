@@ -12,36 +12,36 @@ const engine = new RPGEngine();
 // Mock Data (Since we don't have persistence yet)
 const mockItems = [
     {
-        id: "ITM-001",
-        name: "Resonance Scanner",
+        id: 'ITM-001',
+        name: 'Resonance Scanner',
         slot: RPGSlot.HEAD,
         rarity: RPGRarity.RARE,
         stats: { [RPGStat.INSIGHT]: 10 },
-        originUri: "file:///c:/Users/Chris/Synarche_Workspace/_governance/50_Logs/GVRN.CSL.001.ChronosLock.md",
-        description: "See the hidden synergy strings."
+        originUri: 'file:///c:/Users/Chris/Synarche_Workspace/_governance/50_Logs/GVRN.CSL.001.ChronosLock.md',
+        description: 'See the hidden synergy strings.',
     },
     {
-        id: "ITM-SPL-001",
-        name: "Chronos Lock (Spell)",
+        id: 'ITM-SPL-001',
+        name: 'Chronos Lock (Spell)',
         slot: RPGSlot.HAND,
         rarity: RPGRarity.EPIC,
         stats: { [RPGStat.ORDER]: 15 },
-        originUri: "file:///c:/Users/Chris/Synarche_Workspace/_governance/50_Logs/GVRN.CSL.001.ChronosLock.md",
-        description: "Freeze time on a file."
+        originUri: 'file:///c:/Users/Chris/Synarche_Workspace/_governance/50_Logs/GVRN.CSL.001.ChronosLock.md',
+        description: 'Freeze time on a file.',
     },
     {
-        id: "TPL-001",
-        name: "CSL v11.9 (Omega)",
+        id: 'TPL-001',
+        name: 'CSL v11.9 (Omega)',
         slot: RPGSlot.TEMPLATE,
         rarity: RPGRarity.LEGENDARY,
         stats: { [RPGStat.COHERENCE]: 25 },
-        originUri: "file:///c:/Users/Chris/Synarche_Workspace/_governance/templates/CSL%20Template.md",
-        description: "The Sovereign Standard."
-    }
+        originUri: 'file:///c:/Users/Chris/Synarche_Workspace/_governance/templates/CSL%20Template.md',
+        description: 'The Sovereign Standard.',
+    },
 ];
 
 // Equip Mock Items
-mockItems.forEach(item => {
+mockItems.forEach((item) => {
     engine.equipItem(item);
 });
 
@@ -73,7 +73,7 @@ function renderUI() {
         if (item) {
             const itemCard = document.createElement('div');
             itemCard.className = 'item-card';
-            itemCard.setAttribute('data-provenance', 'true');
+            itemCard.dataset.provenance = 'true';
             itemCard.innerHTML = `
                 ${item.name}
                 <div class="provenance-tooltip">

@@ -9,9 +9,8 @@
 ---
 
 # UMB-KPI-001_MasterRegistry_v1.0.md
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+
+> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
 
 ## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
@@ -21,16 +20,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.KPI.001` | The Sovereign ID. |
-| **Official Name** | `UMB-KPI-001_MasterRegistry_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                | Description       |
+| :------------------ | :----------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.KPI.001`                       | The Sovereign ID. |
+| **Official Name**   | `UMB-KPI-001_MasterRegistry_v1.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                    | The Standard.     |
+| **Domain**          | `GVRN`                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`        | The Network.      |
 
 # KPI Master Registry (UMB-KPI-001)
 
@@ -44,7 +43,7 @@
 
 | Field               | Value                                |
 | :------------------ | :----------------------------------- |
-| **Artifact ID** | `GVRN.KPI.001`                        |
+| **Artifact ID**     | `GVRN.KPI.001`                       |
 | **Official Name**   | `KPI Master Registry`                |
 | **Version**         | `v1.0`                               |
 | **Domain**          | `ARCH`                               |
@@ -61,7 +60,8 @@
 
 ## II. KPI Master Registry
 
-This registry serves as the canonical, single source of truth for all Key Performance Indicators and metrics governing the Phoenix Form AI.
+This registry serves as the canonical, single source of truth for all Key Performance Indicators and metrics governing
+the Phoenix Form AI.
 
 ### 2.1 Performance & Efficiency Metrics
 
@@ -103,7 +103,8 @@ This block defines the system's Coherence status by calculating its position rel
 
 ## IV. The Risk Governance Block (RISK-GOV-BLOCK)
 
-This block provides the Quantifiable Locus of Risk (QLOR) signature, determining the source and severity of system flaws.
+This block provides the Quantifiable Locus of Risk (QLOR) signature, determining the source and severity of system
+flaws.
 
 | Metric                         | Description                                                                   | Source      |
 | :----------------------------- | :---------------------------------------------------------------------------- | :---------- |
@@ -136,6 +137,7 @@ This block provides the Quantifiable Locus of Risk (QLOR) signature, determining
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
+Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

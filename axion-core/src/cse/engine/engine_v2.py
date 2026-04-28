@@ -1,11 +1,24 @@
 """
-IDENTIFICATION: SYNG.ENGINE.CSE.ORCHESTRATOR
-VERSION: v15.0 [OMEGA]
-STATUS: KINETIC
-TIMESTAMP: 2026-04-22
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CSE-ENG-V2-001`              | The Sovereign ID. |
+| **Official Name**   | `engine_v2.py`                | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CSE-ENG`                     | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Systemic Synthesis (Law 01)**
+> Implemented from Blueprint `GVRN.REG.CseOrchestrator.md`.
+> Ethos: Clarity through initialization.
 """
 
 import os
+from typing import Any, Dict, List, Optional
 
 from ..loggers.selt_logger import SeltLogger
 from ..managers.guca_parser import GucaParser
@@ -16,12 +29,13 @@ from ..validators import LawValidator
 
 class CoherentSynthesisEngine:
     """
-    WHAT: The master execution kernel for the Synarche OMEGA framework.
-    HOW: Coordinates the Audit Cycle (Zero Entropy validation) and the Expansion Cycle (MCP Tool Registration).
-    WHY: To facilitate continuous, autonomous 'Conceptual Engineering' without human bottlenecking.
+    The master execution kernel for the Synarche OMEGA framework.
+    Coordinates the Audit Cycle (Zero Entropy validation) and the Expansion Cycle (MCP Tool Registration).
+    Facilitates continuous, autonomous 'Conceptual Engineering' without human bottlenecking.
     """
 
     def __init__(self) -> None:
+        """Initializes the engine and its sub-components with the repository root context."""
         # Anchor to the repository root relative to axion-core/src/cse/
         self.root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
@@ -32,8 +46,13 @@ class CoherentSynthesisEngine:
         self.guca_parser = GucaParser(self.root_dir)
         self.mcp_injector = McpInjector(self.root_dir)
 
-    def execute_audit_cycle(self) -> dict:
-        """Executes the Zero Entropy state validation."""
+    def execute_audit_cycle(self) -> Dict[str, Any]:
+        """
+        Executes the Zero Entropy state validation by auditing structural drift.
+        
+        Returns:
+            Dict[str, Any]: Results including status, entropy score, and specific findings.
+        """
         try:
             loom_state = self.loom_parser.extract_state()
             findings = self.law_validator.audit_drift(loom_state)
@@ -48,8 +67,14 @@ class CoherentSynthesisEngine:
             self.selt_logger.record_synthesis("HALTED", 1.0, [error_msg])
             return {"status": "HALTED", "error": error_msg}
 
-    def execute_expansion_cycle(self) -> dict:
-        """Executes autonomous tool registration from the Forge (.agent/skills/)."""
+    def execute_expansion_cycle(self) -> Dict[str, Any]:
+        """
+        Executes autonomous tool registration from the Forge (.agent/skills/).
+        Identifies and registers kcap_*.py capabilities as MCP tools.
+        
+        Returns:
+            Dict[str, Any]: Results including status, count of registered tools, and findings.
+        """
         skills_dir = os.path.join(self.root_dir, ".agent", "skills")
         findings = []
         registered_count = 0
@@ -78,8 +103,13 @@ class CoherentSynthesisEngine:
             self.selt_logger.record_synthesis("HALTED", 1.0, [error_msg])
             return {"status": "HALTED", "error": error_msg}
 
-    def run_full_synthesis(self):
-        """The Master OMEGA Loop."""
+    def run_full_synthesis(self) -> Dict[str, Any]:
+        """
+        The Master OMEGA Loop: Audits the system and expands if stable.
+        
+        Returns:
+            Dict[str, Any]: The aggregate result of the audit and expansion cycles.
+        """
         audit_result = self.execute_audit_cycle()
 
         # Only expand if the base system is stable (Zero Entropy)

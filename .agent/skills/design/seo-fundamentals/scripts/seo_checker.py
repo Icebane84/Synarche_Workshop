@@ -28,7 +28,7 @@ from datetime import datetime
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 except:
-    pass
+    raise
 
 
 # Directories to skip
@@ -110,10 +110,7 @@ def is_page_file(file_path: Path) -> bool:
         return True
 
     # HTML files are usually pages
-    if file_path.suffix.lower() in [".html", ".htm"]:
-        return True
-
-    return False
+    return file_path.suffix.lower() in [".html", ".htm"]
 
 
 def find_pages(project_path: Path) -> list:
@@ -152,10 +149,7 @@ def check_page(file_path: Path) -> dict:
         issues.append("Missing <title> tag")
 
     # 2. Meta description
-    has_description = (
-        'name="description"' in content.lower()
-        or "name='description'" in content.lower()
-    )
+    has_description = 'name="description"' in content.lower() or "name='description'" in content.lower()
     if not has_description and is_layout:
         issues.append("Missing meta description")
 
@@ -189,9 +183,9 @@ def check_page(file_path: Path) -> dict:
 def main():
     project_path = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
 
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"  SEO CHECKER - Search Engine Optimization Audit")
-    print(f"{'='*60}")
+    print(f"{'=' * 60}")
     print(f"Project: {project_path}")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("-" * 60)

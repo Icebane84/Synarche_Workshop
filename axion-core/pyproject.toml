@@ -13,6 +13,12 @@
         "GitPython",
         "requests",
         "pytest",
-        "mypy"
+        "mypy",
+        "rich",
+        "pyyaml",
+        "jinja2",
+        "pydantic",
+        "langchain",
+        "langgraph"
     ]
     

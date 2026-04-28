@@ -65,6 +65,4 @@ This registry defines the **Sovereign Masks** available for agentic manifestatio
 
 ---
 
-**[OMNI-ARTIFACT-ANCHOR]** **ID:** GVRN.AvatarSuite.Masks **VER:** v15.0 [OMEGA] **STATUS:** ACTIVE **TS:** 2026-03-25
-
-###### **[ARTIFACT END]**
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

@@ -60,4 +60,4 @@ The terminal anchor must contain the exact `ID`, `VER`, `STATUS`, and `TS` value
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Assembler.Protocol VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: GVRN-ASM-PROT-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

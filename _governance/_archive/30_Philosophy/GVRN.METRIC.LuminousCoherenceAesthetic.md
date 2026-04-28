@@ -91,21 +91,21 @@ The aesthetic incorporates subtle, continuous movement to suggest life and data 
 
 ```javascript
 module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        "base-black": "#000000",
-        "deep-void": "rgb(12 10 17 / <alpha-value>)",
-        "coherence-high": "rgb(52 211 255 / <alpha-value>)",
-        "coherence-mid": "rgb(139 92 246 / <alpha-value>)",
-        "coherence-low": "rgb(99 102 241 / <alpha-value>)",
-      },
-      animation: {
-        "geode-pulse": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "data-flow": "flow 6s linear infinite",
-      },
+    theme: {
+        extend: {
+            colors: {
+                'base-black': '#000000',
+                'deep-void': 'rgb(12 10 17 / <alpha-value>)',
+                'coherence-high': 'rgb(52 211 255 / <alpha-value>)',
+                'coherence-mid': 'rgb(139 92 246 / <alpha-value>)',
+                'coherence-low': 'rgb(99 102 241 / <alpha-value>)',
+            },
+            animation: {
+                'geode-pulse': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'data-flow': 'flow 6s linear infinite',
+            },
+        },
     },
-  },
 };
 ```
 
@@ -133,3 +133,5 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, G
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 ###### **[ARTIFACT END]**
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

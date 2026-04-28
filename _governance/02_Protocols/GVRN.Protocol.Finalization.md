@@ -274,6 +274,4 @@ graph TD
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

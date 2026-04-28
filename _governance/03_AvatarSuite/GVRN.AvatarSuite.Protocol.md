@@ -136,6 +136,4 @@ This section distills the **42 Laws of the Phoenix Codex** into actionable manda
 
 ---
 
-[ARTIFACT START]
-**[OMNI-ARTIFACT-ANCHOR]** **ID:** GVRN.PROT.AvatarSuite **VER:** v15.0 [OMEGA] **STATUS:** ACTIVE **TS:** 2026-03-19
-[ARTIFACT END]
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

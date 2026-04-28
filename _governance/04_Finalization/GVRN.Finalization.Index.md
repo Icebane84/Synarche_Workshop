@@ -53,7 +53,8 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"A gateway is useless if its keys cannot be found. The Index ensures that every audit and ritual is accessible to the Sentinel."**
+> **"A gateway is useless if its keys cannot be found. The Index ensures that every audit and ritual is accessible to
+> the Sentinel."**
 
 ---
 
@@ -69,7 +70,8 @@
 
 ## 1. Domain Overview
 
-The **Finalization Subsystem** (`04_Finalization`) serves as the pre-canonization audit hub. It enforces the **Seven Gates of Ingestion** and prepares artifacts for the **Sovereign Forge**.
+The **Finalization Subsystem** (`04_Finalization`) serves as the pre-canonization audit hub. It enforces the **Seven
+Gates of Ingestion** and prepares artifacts for the **Sovereign Forge**.
 
 ## 2. Artifact Repository
 
@@ -80,7 +82,8 @@ The **Finalization Subsystem** (`04_Finalization`) serves as the pre-canonizatio
 
 ### 2.2 Operational Rituals
 
-- [GVRN.Finalization.CanonizationRitual.md](GVRN.Finalization.CanonizationRitual.md): The hand-off ritual to the Canonizer.
+- [GVRN.Finalization.CanonizationRitual.md](GVRN.Finalization.CanonizationRitual.md): The hand-off ritual to the
+  Canonizer.
 
 ---
 
@@ -94,6 +97,4 @@ The **Finalization Subsystem** (`04_Finalization`) serves as the pre-canonizatio
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Finalization.Index VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-25 HASH: FIN-INDEX-OMEGA-15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

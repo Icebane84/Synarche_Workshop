@@ -270,4 +270,4 @@ All operations are navigated via the **[GVRN.Codex.EternalLaw](GVRN.Codex.Eterna
 
 ---
 
-{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

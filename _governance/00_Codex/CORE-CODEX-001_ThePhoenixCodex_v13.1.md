@@ -244,3 +244,5 @@ Interaction is gamified. The System assumes the role of **Axion**.
     *   *Function:* Traces a specific rule back to its Axiomatic Source.
 
 **[ARTIFACT END]**
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

@@ -1,10 +1,20 @@
 """
-UMB-CSE-002: The Coherent Synthesis Engine (Source)
+### **Block A: The Identification Lock (UIP-V15)**
 
-Genesis Stamp: 2026-01-25
-Domain: TECH.Engine
-Purpose: To execute the Homeostatic Core Cycle (Sense-Model-Act-Learn) and ensure Systemic Coherence.
-Governed By: GVRN-CODEX-001, UMB-SGM-001
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-CSE-002`                 | The Sovereign ID. |
+| **Official Name**   | `cse.py`                      | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `TECH-ENGINE-CORE`            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Synthesis Axiom: Homeostatic Core (Law 2)**
+> Implemented from Blueprint `GVRN.TECH.Cse.md`.
+> Ethos: To execute the Homeostatic Core Cycle (Sense-Model-Act-Learn) and ensure Systemic Coherence.
 """
 
 import logging

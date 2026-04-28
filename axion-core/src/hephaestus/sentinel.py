@@ -1,27 +1,25 @@
 """
 # AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol
 
-## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: High
-
-## I. Universal Identification & Provenance (The Vector Signature)
-
-### The Chronos Lock & Axiomatic Metadata Layer
-
+# I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
 | :--- | :--- |
 | **1. Artifact ID** | `AOP-SENTINEL-SCAN-001` |
 | **2. Official Name** | `sentinel.py` |
-| **3. Version** | **v2.1 (Hephaestus Implementation)** |
-| **4. Provenance** | **Date Reforged: 2026-01-10** |
+| **3. Version** | **v15.0 [OMEGA]** |
+| **4. Provenance** | **Reforged: 2026-04-28** |
 | **5. Domain** | `ARCH` |
 | **6. Evolution** | **Authentic Persona** |
 | **7. Celestial Class** | `[PLANET]` |
 | **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
+| **9. Status (State)** | `[ACTIVE]` |
 | **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: UMB-CRF-001` |
+| **11. Integrity Hash** | `[UIP-V15-LOCK]` |
 
+---
+
+### **I.B. Axiom Reference**
+> "The sentinel does not sleep, for entropy does not rest." — Axiom of Sentinel
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---

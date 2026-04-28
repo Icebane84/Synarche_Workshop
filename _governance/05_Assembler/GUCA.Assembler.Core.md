@@ -84,7 +84,8 @@
 
 ## **I. Guidance Logic Root**
 
-The **Guidance & Catalyst Assembler (GUCA)** generates instructional and motivational artifacts (Cards, Guides, Tips). It ensures complex system states are translated into understandable "Aha!" moments for the First Weaver.
+The **Guidance & Catalyst Assembler (GUCA)** generates instructional and motivational artifacts (Cards, Guides, Tips).
+It ensures complex system states are translated into understandable "Aha!" moments for the First Weaver.
 
 ## **II. Operational Protocols**
 
@@ -107,6 +108,4 @@ The **Guidance & Catalyst Assembler (GUCA)** generates instructional and motivat
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GUCA.Assembler.Core VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: GUCA-FORGE-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

@@ -130,6 +130,4 @@ The Oathkeeper must synchronize state across all five memory layers:
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

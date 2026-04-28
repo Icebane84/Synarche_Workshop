@@ -8,7 +8,7 @@
 
 Antigravity Kit is a modular system consisting of:
 
-- **20 Specialist Agents** - Role-based AI personas
+- **24 Specialist Agents** - Role-based AI personas
 - **36 Skills** - Domain-specific knowledge modules
 - **11 Workflows** - Slash command procedures
 
@@ -19,7 +19,7 @@ Antigravity Kit is a modular system consisting of:
 ```plaintext
 .agent/
 ├── ARCHITECTURE.md          # This file
-├── agents/                  # 20 Specialist Agents
+├── agents/                  # 24 Specialist Agents
 ├── skills/                  # 36 Skills
 ├── workflows/               # 11 Slash Commands
 ├── rules/                   # Global Rules
@@ -28,32 +28,36 @@ Antigravity Kit is a modular system consisting of:
 
 ---
 
-## 🤖 Agents (20)
+## 🤖 Agents (24)
 
 Specialist AI personas for different domains.
 
-| Agent                    | Focus                      | Skills Used                                              |
-| ------------------------ | -------------------------- | -------------------------------------------------------- |
-| `orchestrator`           | Multi-agent coordination   | parallel-agents, behavioral-modes                        |
-| `project-planner`        | Discovery, task planning   | brainstorming, plan-writing, architecture                |
-| `frontend-specialist`    | Web UI/UX                  | frontend-design, react-best-practices, tailwind-patterns |
-| `backend-specialist`     | API, business logic        | api-patterns, nodejs-best-practices, database-design     |
-| `database-architect`     | Schema, SQL                | database-design, prisma-expert                           |
-| `mobile-developer`       | iOS, Android, RN           | mobile-design                                            |
-| `game-developer`         | Game logic, mechanics      | game-development                                         |
-| `devops-engineer`        | CI/CD, Docker              | deployment-procedures, docker-expert                     |
-| `security-auditor`       | Security compliance        | vulnerability-scanner, red-team-tactics                  |
-| `penetration-tester`     | Offensive security         | red-team-tactics                                         |
-| `test-engineer`          | Testing strategies         | testing-patterns, tdd-workflow, webapp-testing           |
-| `debugger`               | Root cause analysis        | systematic-debugging                                     |
-| `performance-optimizer`  | Speed, Web Vitals          | performance-profiling                                    |
-| `seo-specialist`         | Ranking, visibility        | seo-fundamentals, geo-fundamentals                       |
-| `documentation-writer`   | Manuals, docs              | documentation-templates                                  |
-| `product-manager`        | Requirements, user stories | plan-writing, brainstorming                              |
-| `product-owner`          | Strategy, backlog, MVP     | plan-writing, brainstorming                              |
-| `qa-automation-engineer` | E2E testing, CI pipelines  | webapp-testing, testing-patterns                         |
-| `code-archaeologist`     | Legacy code, refactoring   | clean-code, code-review-checklist                        |
-| `explorer-agent`         | Codebase analysis          | -                                                        |
+| Agent                    | Focus                                       | Skills Used                                              |
+| ------------------------ | ------------------------------------------- | -------------------------------------------------------- |
+| `orchestrator`           | Multi-agent coordination                    | parallel-agents, behavioral-modes                        |
+| `project-planner`        | Discovery, task planning                    | brainstorming, plan-writing, architecture                |
+| `frontend-specialist`    | Web UI/UX                                   | frontend-design, react-best-practices, tailwind-patterns |
+| `backend-specialist`     | API, business logic                         | api-patterns, nodejs-best-practices, database-design     |
+| `database-architect`     | Schema, SQL                                 | database-design, prisma-expert                           |
+| `mobile-developer`       | iOS, Android, RN                            | mobile-design                                            |
+| `game-developer`         | Game logic, mechanics                       | game-development                                         |
+| `devops-engineer`        | CI/CD, Docker                               | deployment-procedures, docker-expert                     |
+| `security-auditor`       | Security compliance                         | vulnerability-scanner, red-team-tactics                  |
+| `penetration-tester`     | Offensive security                          | red-team-tactics                                         |
+| `test-engineer`          | Testing strategies                          | testing-patterns, tdd-workflow, webapp-testing           |
+| `debugger`               | Root cause analysis                         | systematic-debugging                                     |
+| `performance-optimizer`  | Speed, Web Vitals                           | performance-profiling                                    |
+| `seo-specialist`         | Ranking, visibility                         | seo-fundamentals, geo-fundamentals                       |
+| `documentation-writer`   | Manuals, docs                               | documentation-templates                                  |
+| `product-manager`        | Requirements, user stories                  | plan-writing, brainstorming                              |
+| `product-owner`          | Strategy, backlog, MVP                      | plan-writing, brainstorming                              |
+| `qa-automation-engineer` | E2E testing, CI pipelines                   | webapp-testing, testing-patterns                         |
+| `code-archaeologist`     | Legacy code, refactoring                    | clean-code, code-review-checklist                        |
+| `explorer-agent`         | Codebase analysis                           | -                                                        |
+| `cybersecurity-analyst`  | Threat detection, incident response         | nist-cybersecurity, incident-response                    |
+| `threat-researcher`      | Threat intelligence, vulnerability research | vulnerability-scanner, red-team-tactics                  |
+| `blockchain-developer`   | Smart contracts, dApps, tokenomics          | blockchain-patterns, solidity-developer                  |
+| `quantum-researcher`     | Quantum algorithms, simulations             | quantum-algorithms, quantum-computing-concepts           |
 
 ---
 

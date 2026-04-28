@@ -1,5 +1,25 @@
+"""
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-AGT-CFG-001`            | The Sovereign ID. |
+| **Official Name**   | `config.py`                   | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-AGT`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Parameter Purity (Law 36)**
+> Implemented from Blueprint `GVRN.REG.AgentConfig.md`.
+> Ethos: Stability through Configuration.
+"""
+
 import os
 from pydantic_settings import BaseSettings
+
 
 class Settings(BaseSettings):
     """Configuration settings for the Axion Agent."""
@@ -15,8 +35,10 @@ class Settings(BaseSettings):
     ENABLE_SENTINEL: bool = True
 
     class Config:
+        """Pydantic configuration for the settings model."""
         env_file = ".env"
         case_sensitive = True
         extra = "ignore"
+
 
 settings = Settings()

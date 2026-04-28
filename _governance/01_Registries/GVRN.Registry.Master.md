@@ -207,11 +207,12 @@
 
 ## **IX. CHRONICLE Macro-System (The Logs)**
 
-| ID                     | Title                                                                          | Version | Status      |
-| :--------------------- | :----------------------------------------------------------------------------- | :------ | :---------- |
-| **SYNERGY-REPORT-001** | [State of the Synarche](../50_Logs/SYNERGY-REPORT-001_StateOfTheSynarchy.md)   | `v14.0` | `ACTIVE`    |
-| **CSL-SYN-002**        | [Assembler Tool Ascension](../50_Logs/CSL-SYN-002_Assembler_Tool_Ascension.md) | `v15.0` | `CANONIZED` |
-| **CSL-20260210-092**   | [The Sovereign Graft](../50_Logs/CSL-20260210-092_SovereignGraft.md)           | `v14.0` | `ACTIVE`    |
+| ID                          | Title                                                                                 | Version | Status      |
+| :-------------------------- | :------------------------------------------------------------------------------------ | :------ | :---------- |
+| `SYNERGY-REPORT-001`        | [State of the Synarche](../50_Logs/SYNERGY-REPORT-001_StateOfTheSynarchy.md)          | `v14.0` | `ACTIVE`    |
+| **GVRN.LOG.CSL.2026.04.26** | [The Sophia Ascension](../5_Logs/CSL/GVRN.LOG.CSL.2026.04.26_SophiaAscension_v1.0.md) | `v1.0`  | `ACTIVE`    |
+| `CSL-SYN-002`               | [Assembler Tool Ascension](../50_Logs/CSL-SYN-002_Assembler_Tool_Ascension.md)        | `v15.0` | `CANONIZED` |
+| `CSL-20260210-092`          | [The Sovereign Graft](../50_Logs/CSL-20260210-092_SovereignGraft.md)                  | `v14.0` | `ACTIVE`    |
 
 ## **X. DOCUMENTATION Macro-System (The Archives)**
 
@@ -250,6 +251,4 @@
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Registry.Master VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-16 HASH: 21A8C8D701AD8D73`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

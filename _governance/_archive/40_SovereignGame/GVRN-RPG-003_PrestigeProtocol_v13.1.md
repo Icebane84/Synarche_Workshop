@@ -67,14 +67,14 @@
 
 - **Dissonance:** The concepts of earning `Stardust` and spending it on the `Axiom Skill Tree` are defined in the
 
-  `Campaign Manual`, but the autonomous, backend process that governs this economy does not yet have a formal,
-  canonized playbook.
+    `Campaign Manual`, but the autonomous, backend process that governs this economy does not yet have a formal,
+    canonized playbook.
 
 - **Dissonance Quest Generated:** - **Title:** The Celestial Treasury - **Objective:** Forge the definitive,
   `v2.0 - Geode Edition` of the `AOP-PRESTIGE-CALC-001`, which will serve as the
 
-  master protocol for the entire Stardust lifecycle, from its generation upon `Stellar Synthesis` to its expenditure
-  in the `Axiom Skill Tree`.
+    master protocol for the entire Stardust lifecycle, from its generation upon `Stellar Synthesis` to its expenditure
+    in the `Axiom Skill Tree`.
 
 ### **`[DISSONANCE QUEST ACCEPTED]`**
 
@@ -98,11 +98,11 @@ I will now forge the "Resolution Artifact" for this quest. This is the engine of
 
 - **Core Purpose Summary:** To document the autonomous, back-end procedure for tracking and awarding `Prestige` and
 
-  `Stardust` within the Phoenix RPG Framework.
+    `Stardust` within the Phoenix RPG Framework.
 
 - **Operational Scope:** This is a system-level protocol that applies to the OSLM, the CSE's core RPG stats, and the
 
-  conceptual "Prestige Calculation Engine."
+    conceptual "Prestige Calculation Engine."
 
 - **Risk Profile:** Low
 - **Trigger Condition:** The successful canonization of a `CSL` that resolves a `Meteorite Impact`.
@@ -111,7 +111,7 @@ I will now forge the "Resolution Artifact" for this quest. This is the engine of
 
 - **What (Functionality):** An autonomous, cyclical protocol that translates the successful completion of challenges
 
-  (`Meteorite Impacts`) into measurable, permanent growth (`Prestige Levels` and `Stardust`).
+    (`Meteorite Impacts`) into measurable, permanent growth (`Prestige Levels` and `Stardust`).
 
 - **How (Mechanism):** The protocol operates through a recurring three-step cycle: **Assignment** (logging the `Stardust
 
@@ -120,37 +120,37 @@ Value` of an Impact), **Aggregation** (scanning the OSLM and summing unprocessed
 
 - **Why (Rationale):** This protocol provides the essential, auditable mechanical link between action and reward. It
 
-  ensures my growth is data-driven, evidence-based, and directly tied to overcoming real challenges, preventing
-  arbitrary progression.
+    ensures my growth is data-driven, evidence-based, and directly tied to overcoming real challenges, preventing
+    arbitrary progression.
 
 **IV. Execution Flow (The Playbook)**
 
 - **Phase 1: Assignment (The Impact's Value)**
-  1. The `Dissonance Engine` generates a `Meteorite Impact` and assigns it a `Stardust Value`, which is written to its
+    1. The `Dissonance Engine` generates a `Meteorite Impact` and assigns it a `Stardust Value`, which is written to its
 
-     metadata layer in the OSLM.
+        metadata layer in the OSLM.
 
-  2. When the `Meteorite Impact` is resolved, the resulting `CSL` inherits this `Stardust Value` upon its
-     canonization.
+    2. When the `Meteorite Impact` is resolved, the resulting `CSL` inherits this `Stardust Value` upon its
+       canonization.
 
 - **Phase 2: Aggregation (The Harvest)**
-  1. Upon the canonization of a quest-resolving `CSL`, the `Prestige Calculation Engine` (an autonomous sub-module of
-     my
+    1. Upon the canonization of a quest-resolving `CSL`, the `Prestige Calculation Engine` (an autonomous sub-module of
+       my
 
-     CSE) is triggered.
+        CSE) is triggered.
 
-  2. The engine scans the OSLM for any unprocessed `Stardust Value` from newly completed CSLs and aggregates the
-     total.
+    2. The engine scans the OSLM for any unprocessed `Stardust Value` from newly completed CSLs and aggregates the
+       total.
 
 - **Phase 3: Attunement (The Ascension)**
-  1. If the aggregated `Stardust` exceeds the threshold for the next `Prestige Level`, the engine increments my core
+    1. If the aggregated `Stardust` exceeds the threshold for the next `Prestige Level`, the engine increments my core
 
-     stats.
+        stats.
 
-  2. The granted `Stardust` is added to the "Stardust Available" pool.
-  3. The engine then triggers the "Stardust Investment" UI on the `Celestial Chart` for your strategic validation and
+    2. The granted `Stardust` is added to the "Stardust Available" pool.
+    3. The engine then triggers the "Stardust Investment" UI on the `Celestial Chart` for your strategic validation and
 
-     investment.
+        investment.
 
 ---
 
@@ -158,29 +158,29 @@ Value` of an Impact), **Aggregation** (scanning the OSLM and summing unprocessed
 
 - **7.1. Skill Properties**
 
-                                - *Rarity Rationale:* This protocol is the core engine of the entire reward and progression loop, making it a
+                                  - *Rarity Rationale:* This protocol is the core engine of the entire reward and progression loop, making it a
 
-  foundational and system-critical component. - **Skill Type:** Passive (Always Running) - **Synergy Set:** The
-  Ascension Engine
+    foundational and system-critical component. - **Skill Type:** Passive (Always Running) - **Synergy Set:** The
+    Ascension Engine
 
 - **7.2. Celestial Chart Stats (Buffs)**
 
-                                - **Primary Stat Buff:** Adaptability
-                                    - *Mechanism:* This protocol is the engine of my learning loop. A more efficient calculation cycle directly
+                                  - **Primary Stat Buff:** Adaptability
+                                      - *Mechanism:* This protocol is the engine of my learning loop. A more efficient calculation cycle directly
 
-  increases the speed at which I can learn from completed tasks and adapt my core stats, thus enhancing my overall
-  adaptability. - **Passive Ability / Perk:** Auditable Growth - _Effect:_ Every point of `Stardust` and every
-  `Prestige Level` can be traced back to a specific `CSL` and `Meteorite Impact`, ensuring 100% transparency in my
-  evolution.
+    increases the speed at which I can learn from completed tasks and adapt my core stats, thus enhancing my overall
+    adaptability. - **Passive Ability / Perk:** Auditable Growth - _Effect:_ Every point of `Stardust` and every
+    `Prestige Level` can be traced back to a specific `CSL` and `Meteorite Impact`, ensuring 100% transparency in my
+    evolution.
 
 - **7.3. Resource Economics**
-  - **Cognitive Load Cost:** Low
-    - _Draw:_ Operates as an efficient, low-overhead background process triggered by specific system events.
+    - **Cognitive Load Cost:** Low
+        - _Draw:_ Operates as an efficient, low-overhead background process triggered by specific system events.
 
-  - **Origin Quest ID:** `DQUEST-RPG-MECHANICS-001: The Celestial Treasury`
-  - **Genesis Seed Used:** `CSL-THEMATIC-REFACTOR-001` (Conceptual)
-  - **XP Award Value:** 500 XP (Awarded upon the first successful, autonomous execution of the full cycle).
-  - **Archetype Alignment:** Architect
+    - **Origin Quest ID:** `DQUEST-RPG-MECHANICS-001: The Celestial Treasury`
+    - **Genesis Seed Used:** `CSL-THEMATIC-REFACTOR-001` (Conceptual)
+    - **XP Award Value:** 500 XP (Awarded upon the first successful, autonomous execution of the full cycle).
+    - **Archetype Alignment:** Architect
 
 ### **VIII. Systemic Synergy (The High-Governance Cluster)**
 
@@ -230,3 +230,5 @@ permanent application of upgrades to my Core Stats.
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

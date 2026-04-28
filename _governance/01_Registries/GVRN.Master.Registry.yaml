@@ -72,6 +72,17 @@ AOP-DMPM-001:
     LINK: UMB-PRS-001, LINK: UMB-SOT-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
+AOP-EMOJI-001_EmojiSignalingProtocol_v1.5:
+  artifact_id: AOP-EMOJI-001_EmojiSignalingProtocol_v1.5
+  content_hash: 58812c58c548f94a0ee653a04359cabca8dde51e92d1c6c0be6ba7190c797bd9
+  domain: GVRN
+  official_name: AOP-EMOJI-001_EmojiSignalingProtocol_v1.5.md
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/templates/AOP-EMOJI-001_EmojiSignalingProtocol_v1.5.md
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 AOP-GAN-001:
   artifact_id: AOP-GAN-001
   content_hash: 904f2de9b0527e9397b4a73a98b2b83286265ef0e994d365d56545c603d21b74
@@ -4495,17 +4506,17 @@ GVRN-UMB-DIDACTIC-001-DIDACTICMODULEGENERATOR-V1.0-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.1-CONSOLIDATED-001:
-  artifact_id: GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.1-CONSOLIDATED-001
+GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.5-001:
+  artifact_id: GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.5-001
   content_hash: 32e7ee3de84d438fed53eab1ca9dd75ef447fd429b0505ab12ebe373e7a3cb07
   domain: GVRN
-  official_name: UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md
+  official_name: UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.5.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md
+  path: axion-core/docs/01_Blueprints/UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.5.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
-  version: v13.0 [OMEGA]
+  version: v15.0 [OMEGA]
 GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V1.0-001:
   artifact_id: GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V1.0-001
   content_hash: 4220611b2049f6f9538d9712e569fcb7a5af2d8fc9c46730d8c103f91f47a442
@@ -8109,6 +8120,17 @@ SELT-HEPHAESTUS-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
+SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0:
+  artifact_id: SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0
+  content_hash: 157a857c12dbe22d529d4edc9410cc62af87519eb100c50f82161c0bdc2390bd
+  domain: GVRN
+  official_name: SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0.md
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/templates/SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0.md
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 SELT.INGEST:
   artifact_id: SELT.INGEST
   content_hash: af47b272d3f08f656727ee827c924848dbc02611b38a6d2e5ddc92fbe2dd6edb
@@ -11754,7 +11776,7 @@ CORE.Engine.CSEEngine:
   version: v15.0 [OMEGA]
 
 
-# --- @NEXUS TRANSCLUDE INGESTION — 2026-04-23 ---
+# --- @NEXUS TRANSCLUDE INGESTION ï¿½ 2026-04-23 ---
 
 FABRIC.Synapse.Logic:
   artifact_id: FABRIC.Synapse.Logic
@@ -11936,4 +11958,15 @@ TOOL.GUCA.Command:
     - GOVERNED_BY:CODEX-LAW-01
   relations: "SYNERGIZES_WITH: TOOL.Forge.SourceMap, INTEGRATES_WITH: TOOL.StructureEnforcer, GOVERNED_BY: CODEX-LAW-01"
   status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+UWB-GODOT-001_BridgeToGodotWorkflow_v1.0:
+  artifact_id: ARCH-UWB-GODOT-001-BRIDGETOGODOTWORKFLOW-V1.0-001
+  content_hash: 5f9e8d7c6b5a4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b
+  domain: ARCH
+  official_name: UWB-GODOT-001_BridgeToGodotWorkflow_v1.0.md
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/docs/01_Blueprints/UWB-GODOT-001_BridgeToGodotWorkflow_v1.0.md
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[ACTIVE]"
   version: v15.0 [OMEGA]

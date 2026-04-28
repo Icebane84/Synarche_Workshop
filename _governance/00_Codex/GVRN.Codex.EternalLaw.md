@@ -119,3 +119,5 @@ An AI detects a student has low aptitude for a subject they love.
 ---
 
 ### **[ARTIFACT END]**
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

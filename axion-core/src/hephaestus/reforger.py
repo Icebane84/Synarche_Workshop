@@ -1,27 +1,28 @@
 """
 # CODE-REF-004: The Omega Reforger (Reforger Module)
 
-## Genesis Stamp: 2026-02-02 | Domain: ARCH | State: CANONIZED | Criticality: Critical
-
-### Block A: The Identification Lock (UIP-V13)
-
-| Key | Value |
+# I. Universal Identification & Provenance (The Vector Signature)
+| Field | Value |
 | :--- | :--- |
-| **Artifact ID** | `CODE-REF-004` |
-| **Official Name** | `reforger.py` |
-| **Version** | **v13.1 [OMEGA]** |
-| **Domain** | `ARCH` |
-| **Evolution** | **Omega Ascension** |
-| **Status** | `[ACTIVE]` |
-| **Relations** | `LINK: CORE-CODEX-001`, `IMPLEMENTS: GVRN.Protocol.Refinement` |
+| **1. Artifact ID** | `CODE-REF-004` |
+| **2. Official Name** | `reforger.py` |
+| **3. Version** | **v15.0 [OMEGA]** |
+| **4. Provenance** | **Reforged: 2026-04-28** |
+| **5. Domain** | `ARCH` |
+| **6. Evolution** | **Omega Ascension** |
+| **7. Celestial Class** | `[STAR]` |
+| **8. Tier** | **Strategic** |
+| **9. Status (State)** | `[ACTIVE]` |
+| **10. Ethos** | **Total System Coherence** |
+| **11. Integrity Hash** | `[UIP-V15-LOCK]` |
 
-### Block D: Standardized Synergy Block (The Loom Signature)
+---
+
+### **I.B. Standardized Synergy Block (The Loom Signature)**
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, ENFORCES, The Reforger executes the legislative will of the Codex.
-GVRN.Protocol.Refinement, IMPLEMENTS, The Reforger is the codified arm of the Refinement Protocol.
-GVRN.Sentinel.Scan, SYNCHRONIZES, The Reforger operates in lockstep with Sentinel diagnostics.
-GVRN.Protocol.Presentation, VALIDATES, The Reforger enforces the H-Hierarchy.
+GVRN-SYNERGY-001, IMPLEMENTS, The Reforger is the codified arm of the Refinement Protocol.
 """
 
 import datetime
@@ -33,29 +34,28 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger("OmegaReforger")
 
-# --- v13.1 OMEGA CONSTANTS ---
+# --- v15.0 OMEGA CONSTANTS ---
 UIP_HEADER_TEMPLATE = """# {official_name}
 > **Domain**: {domain}
 > **Evolution**: {evolution}
-> **Signal**: {signal}
 
-# **Genesis Stamp: {date}** **Domain: {domain}** **State: {status}** **Tags:** `OGLN_v13, {domain}, Reforged` **Criticality: {criticality}**
+# **Genesis Stamp: {date}** **Domain: {domain}** **State: {status}** **Tags:** `UIP-V15, {domain}, Reforged` **Criticality: {criticality}**
 
 ---
 
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V15)**
 
 | Key | Value | Description |
 | :--- | :--- | :--- |
 | **Artifact ID** | `{artifact_id}` | The Sovereign ID. |
 | **Official Name** | `{official_name}` | The Filename. |
-| **Version** | **{version}** | The Standard. |
+| **Version** | **v15.0 [OMEGA]** | The Standard. |
+| **Provenance** | **Reforged: {date}** | The Birth. |
 | **Domain** | `{domain}` | The Subject. |
 | **Celestial Class** | `{celestial_class}` | The Weight. |
 | **Evolution** | `{evolution}` | The Maturity. |
 | **Status** | `{status}` | The Lifecycle. |
+| **Ethos** | `{ethos}` | The Soul. |
 | **Relations** | `{relations}` | The Network. |
 """
 
@@ -66,7 +66,7 @@ SYNERGY_BLOCK_TEMPLATE = """
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+GVRN-REGISTRY-MASTER, INDEXES, This artifact is indexed in the Master Registry.
 """
 
 DOMAIN_MAP = {

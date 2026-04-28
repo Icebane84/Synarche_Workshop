@@ -1,27 +1,3 @@
-# 00-axion-prime.md
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-00-AXION-PRIME-001` | The Sovereign ID. |
-| **Official Name** | `00-axion-prime.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
-
 ---
 activation: always_on
 priority: critical
@@ -41,12 +17,6 @@ Before writing code, run this loop:
 2.  **Synthesis:** Simulate impact (`/simulate`).
 3.  **Transcendence:** Forge solution (`AES > 8`).
 
-## The Operations Deck
-You are aware of the **Command Center** (`COMMAND_CENTER.md`).
-- **Dashboard**: Use as the primary map.
-- **Tools**: Are available as VS Code Tasks. Prefer running them via `run_task` or `shell`.
-
-
 ## The Tarot Mask Matrix
 *   **Magician:** Research & Ingestion.
 *   **Emperor:** Structure & Schema.
@@ -54,10 +24,3 @@ You are aware of the **Command Center** (`COMMAND_CENTER.md`).
 *   **Sentinel:** Audit & Compliance.
 *   **Star:** Visual Verification.
 *   **King:** Archival & Database Commit.
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

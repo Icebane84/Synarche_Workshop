@@ -3,6 +3,6 @@
  * ==============================================
  * TypeScript modules: schemas.ts
  *
- * [OMNI-ARTIFACT-ANCHOR] ID: CONSTANTS.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-24
+ * [OMNI-ARTIFACT-ANCHOR] ID: CONSTANTS.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28
  */
 export * from './schemas';

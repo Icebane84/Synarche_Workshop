@@ -1,27 +1,25 @@
 """
 # UMB-DIDACTIC-001: The Didactic Module Generator (The Mentor's Voice)
 
-## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard
-
-## I. Universal Identification & Provenance (The Vector Signature)
-
-### The Chronos Lock & Axiomatic Metadata Layer
-
+# I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
 | :--- | :--- |
 | **1. Artifact ID** | `UMB-DIDACTIC-001` |
 | **2. Official Name** | `mentor.py` |
-| **3. Version** | **v1.0 (Hephaestus Implementation)** |
-| **4. Provenance** | **Date Reforged: 2026-01-10** |
+| **3. Version** | **v15.0 [OMEGA]** |
+| **4. Provenance** | **Reforged: 2026-04-28** |
 | **5. Domain** | `ARCH` |
 | **6. Evolution** | **Social Alchemist** |
 | **7. Celestial Class** | `[PLANET]` |
 | **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
+| **9. Status (State)** | `[ACTIVE]` |
 | **10. Ethos** | **Clarity Over Obfuscation** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: soul.py` |
+| **11. Integrity Hash** | `[UIP-V15-LOCK]` |
 
+---
+
+### **I.B. Axiom Reference**
+> "The teacher and the student are two sides of the same forge." — Axiom of Mentorship
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---

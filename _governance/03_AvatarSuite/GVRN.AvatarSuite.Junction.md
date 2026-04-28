@@ -54,7 +54,8 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"The Junction is the bridge between the will to govern and the power to act. It ensures that the Architect and the Artificer move in singular resonance."**
+> **"The Junction is the bridge between the will to govern and the power to act. It ensures that the Architect and the
+> Artificer move in singular resonance."**
 
 ---
 
@@ -70,7 +71,8 @@
 
 ## 1. The Dual-Gate Logic Flow
 
-The **Dual-Gate Junction** is the synchronization point between the **Governance Plane (Axion Prime)** and the **Execution Plane (The Lightbinder)**.
+The **Dual-Gate Junction** is the synchronization point between the **Governance Plane (Axion Prime)** and the
+**Execution Plane (The Lightbinder)**.
 
 ### 1.1 Gate A: Sovereign Mask Validation (Axion)
 
@@ -107,6 +109,4 @@ When an agent invokes `CMD: MASK_EQUIP [MASK_ID]`:
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.AvatarSuite.Junction VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-25 HASH: JUNC-OMEGA-15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

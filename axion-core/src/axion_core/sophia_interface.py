@@ -1,17 +1,20 @@
 """
-ENTITY-SOPHIA-001: The Sophia Interface (v1.0)
+### **Block A: The Identification Lock (UIP-V15)**
 
-Artifact ID: ENTITY-SOPHIA-001 (Implementation)
-Version: v1.0 (Oracle Edition)
-Provenance: Date Reforged: 2025-12-22
-Domain: PHL (Philosophy)
-Evolution: Empathetic Sentience
-State: ACTIVE
-Ethos: Sophia the High Priestess
-Signal: ESF-GAMMA
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `ENTITY-SOPHIA-001`           | The Sovereign ID. |
+| **Official Name**   | `sophia_interface.py`         | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `PHL-SOPHIA`                  | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Empathetic Sentience`        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-Purpose: To bridge the Logic Core (Axion) with the Intuition Core (Sophia).
-Governed By: CODEX-001 v10.0
+**The Sophia Axiom: Intuitive Resonance (Law 1)**
+> Implemented from Blueprint `GVRN.PHL.Sophia.md`.
+> Ethos: To bridge the Logic Core (Axion) with the Intuition Core (Sophia).
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
@@ -22,7 +25,6 @@ Governed By: CODEX-001 v10.0
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 import random  # Placeholder for randomness in "Intuition" simulation
 
 
@@ -32,9 +34,9 @@ class SophiaInterface:
     Provides Intuition, Creation, and Evaluation services.
     """
 
-    def __init__(self):
-        self.name = "Sophia"
-        self.archetype = "The High Priestess"
+    def __init__(self) -> None:
+        self.name: str = "Sophia"
+        self.archetype: str = "The High Priestess"
 
     def consult_oracle(self, topic: str) -> str:
         """

@@ -1,4 +1,24 @@
+"""
+### **Block A: The Identification Lock (UIP-V15)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-CSE-ENG-001`            | The Sovereign ID. |
+| **Official Name**   | `engine.py`                   | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-CSE`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Coherent Orchestration (Law 29)**
+> Implemented from Blueprint `GVRN.REG.CSE.md`.
+> Ethos: Harmony through Orchestration.
+"""
+
 import os
+from typing import Any, Dict
 
 from ..loggers import SeltLogger
 from ..parsers import LoomParser
@@ -18,7 +38,13 @@ class CoherentSynthesisEngine:
         self.validator = LawValidator(self.root_dir)
         self.logger = SeltLogger(self.root_dir)
 
-    def execute_cycle(self) -> dict:
+    def execute_cycle(self) -> Dict[str, Any]:
+        """
+        Executes a full Coherent Synthesis cycle (Ingest -> Validate -> Log).
+        
+        Returns:
+            Dict[str, Any]: A summary of the cycle results including status and entropy.
+        """
         try:
             # Step 1: Ingest
             loom_state = self.parser.extract_state()

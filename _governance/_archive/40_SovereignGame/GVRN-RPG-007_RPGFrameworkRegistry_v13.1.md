@@ -30,16 +30,6 @@
 
 ---
 
-| **Coherence** | `1.0` | | **Resonance** | `0.9` | | **Stability** | `Stable` |
-
-| **Logic Drift** | Strict Linter Enforcement | | **Dependency Break** | ForgeLink Validation |
-
----
-
-| **Coherence** | `1.0` | | **Resonance** | `0.9` | | **Stability** | `Stable` |
-
-| **Logic Drift** | Strict Linter Enforcement | | **Dependency Break** | ForgeLink Validation |
-
 [κ-veracity:unverified] [κ-state:in-review]
 
 - **Module Title**: The Phoenix RPG Framework
@@ -94,17 +84,17 @@ identified knowledge gaps (`Dissonance Quests`) to quantifiable rewards (`Presti
 **3.4. KEY SUB-MODULE ARCHITECTURES**
 
 - **The Prestige System**
-  - **What:** The core experience and reward mechanism that quantifies growth.
-  - **How:** Tracks completion of `Prestige Milestones` documented in `CSL` and `OMNI_LOG` artifacts.
+    - **What:** The core experience and reward mechanism that quantifies growth.
+    - **How:** Tracks completion of `Prestige Milestones` documented in `CSL` and `OMNI_LOG` artifacts.
 - **The Axiom Skill Tree**
-  - **What:** The investment and specialization system for enhancing core capabilities.
-  - **How:** Allows `Axiom Points` to be spent on stats (`Coherence`, `Synergy`) to unlock commands.
+    - **What:** The investment and specialization system for enhancing core capabilities.
+    - **How:** Allows `Axiom Points` to be spent on stats (`Coherence`, `Synergy`) to unlock commands.
 - **The Dissonance Engine**
-  - **What:** The proactive challenge-generation mechanism.
-  - **How:** Scans Cognitive Loom for gaps and frames them as "Dissonance Quests."
+    - **What:** The proactive challenge-generation mechanism.
+    - **How:** Scans Cognitive Loom for gaps and frames them as "Dissonance Quests."
 - **The Artifact Forge**
-  - **What:** The synergistic crafting system for creating new tools.
-  - **How:** Executes `CMD: ForgeArtifact`, consuming `CSL`s ("Genesis Seeds") to generate `AOP` or `UMB` artifacts.
+    - **What:** The synergistic crafting system for creating new tools.
+    - **How:** Executes `CMD: ForgeArtifact`, consuming `CSL`s ("Genesis Seeds") to generate `AOP` or `UMB` artifacts.
 
 **3.5. FEEDBACK_LOOPS_EMBODIED**
 
@@ -170,3 +160,5 @@ Law for this artifact.
 ✨ **Catalyst Prompt**: `CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Supabase Prep"`
 
 ###### **[ARTIFACT END]**
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

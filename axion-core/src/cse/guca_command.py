@@ -1,46 +1,20 @@
 """
----
-# Block A: Universal Identification & Provenance (UIP-V15)
-artifact_anchor:
-  id: "TOOL.GUCA.Command"
-  version: "v1.1.0"
-  provenance: "2026-04-23"
-  domain: "TOOL"
-  celestial_class: "PLANET"
-  tier: "SOVEREIGN"
-  state: "CANONIZED"
-  ethos: "ZERO-ENTROPY"
-  layer: "@system/"
-  relations:
-    - type: "SYNERGIZES_WITH"
-      node: "TOOL.Forge.SourceMap"
-    - type: "SYNERGIZES_WITH"
-      node: "TOOL.Forge.Daemon"
-    - type: "INTEGRATES_WITH"
-      node: "TOOL.StructureEnforcer"
-    - type: "GOVERNED_BY"
-      node: "CODEX-LAW-01"
----
+### **Block A: The Identification Lock (UIP-V15)**
 
-TOOL.GUCA.Command — The Sovereign Command Pipeline
-===================================================
-Canonical path: @system/guca_command
-Physical path:  axion-core/src/cse/guca_command.py
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `TOOL-GUCA-COM-001`           | The Sovereign ID. |
+| **Official Name**   | `guca_command.py`             | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `TOOL-GUCA`                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `SYNERGIZES: SourceMap`       | The Sovereign.    |
 
-Full GUCACommand ABC + GUCAExecutor polymorphic pipeline.
-Implements the four OOP pillars as sovereign architectural axioms:
-  1. Abstraction  → GUCACommand (Abstract Base Class)
-  2. Polymorphism → GUCAExecutor.execute_commands()
-  3. Inheritance  → DataProcessingCommand hierarchy
-  4. Encapsulation → DataStore (private __data)
-
-Relations:
-  SYNERGIZES_WITH: TOOL.Forge.SourceMap
-  SYNERGIZES_WITH: TOOL.Forge.Daemon
-  INTEGRATES_WITH: TOOL.StructureEnforcer
-  GOVERNED_BY: CODEX-LAW-01 (Code-Law: Abstraction Sovereignty)
-
-[OMNI-ARTIFACT-ANCHOR] ID: TOOL.GUCA.Command VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23
+**The Spirit Bomb Axiom: Command Sovereignty (Law 01)**
+> Implemented from Blueprint `GVRN.REG.GucaCommand.md`.
+> Ethos: Action through Abstraction.
 """
 
 import abc
@@ -52,30 +26,60 @@ from typing import Any
 
 
 class GUCACommand(abc.ABC):
-    """Abstract Base Class for all GUCA Commands (Abstraction)."""
+    """
+    Abstract Base Class for all GUCA Commands (Abstraction).
+    Defines the standard interface for executable operations within the pipeline.
+    """
 
     def __init__(self, name: str, description: str) -> None:
+        """
+        Initializes the command with a name and description.
+        
+        Args:
+            name (str): The display name of the command.
+            description (str): A brief description of the command's purpose.
+        """
         self.name = name
         self.description = description
 
     @abc.abstractmethod
     def execute(self, context: dict[str, Any]) -> dict[str, Any]:
-        """Executes the command with the given context."""
+        """
+        Executes the command with the given context.
+        
+        Args:
+            context (dict[str, Any]): The operational context to modify.
+            
+        Returns:
+            dict[str, Any]: The updated operational context.
+        """
         pass
 
     def __str__(self) -> str:
+        """Returns the string representation of the command."""
         return f"[Command: {self.name}] {self.description}"
 
 
 class GUCAExecutor:
     """
     Executes GUCA Commands polymorphically.
-
+    Manages the sequential execution of command pipelines and context propagation.
+    
     Synergy Note: Can wrap calls to structure_enforcer.py as GUCACommand
     subclasses to integrate automated enforcement into any pipeline.
     """
 
     def execute_commands(self, commands: Sequence[GUCACommand], initial_context: dict[str, Any]) -> dict[str, Any]:
+        """
+        Executes a sequence of commands starting with an initial context.
+        
+        Args:
+            commands (Sequence[GUCACommand]): The list of commands to execute.
+            initial_context (dict[str, Any]): The starting context.
+            
+        Returns:
+            dict[str, Any]: The final context after all commands have executed.
+        """
         current_context = initial_context.copy()
         for command in commands:
             current_context = command.execute(current_context)
@@ -86,19 +90,49 @@ class GUCAExecutor:
 
 
 class DataProcessingCommand(GUCACommand):
-    """Base command for data processing operations (Inheritance)."""
+    """
+    Base command for data processing operations (Inheritance).
+    Provides utility methods for getting and setting data within the context.
+    """
 
     def __init__(self, name: str, description: str, data_key: str) -> None:
+        """
+        Initializes the data processing command.
+        
+        Args:
+            name (str): Command name.
+            description (str): Command description.
+            data_key (str): The key in the context to operate on.
+        """
         super().__init__(name, description)
         self.data_key = data_key
 
     def _get_data(self, context: dict[str, Any]) -> Any:
+        """
+        Retrieves data from the context using the data_key.
+        
+        Args:
+            context (dict[str, Any]): The current context.
+            
+        Returns:
+            Any: The retrieved data.
+            
+        Raises:
+            ValueError: If the data_key is missing from the context.
+        """
         data = context.get(self.data_key)
         if data is None:
             raise ValueError(f"Context missing required data_key: {self.data_key}")
         return data
 
     def _set_data(self, context: dict[str, Any], new_data: Any) -> None:
+        """
+        Sets data in the context using the data_key.
+        
+        Args:
+            context (dict[str, Any]): The current context.
+            new_data (Any): The data to set.
+        """
         context[self.data_key] = new_data
 
 
@@ -134,16 +168,36 @@ class FlattenJsonCommand(DataProcessingCommand):
 
 
 class DataStore:
-    """Encapsulates data storage operations (Encapsulation — The Boundary Principle)."""
+    """
+    Encapsulates data storage operations (Encapsulation — The Boundary Principle).
+    Provides a private storage mechanism for processed artifacts.
+    """
 
     def __init__(self) -> None:
+        """Initializes an empty private data dictionary."""
         self.__data: dict[str, Any] = {}
 
     def save(self, key: str, value: Any) -> None:
+        """
+        Saves a value to the private store.
+        
+        Args:
+            key (str): The storage key.
+            value (Any): The value to persist.
+        """
         self.__data[key] = value
         print(f"  - DataStore: Saved '{key}'")
 
     def load(self, key: str) -> Any:
+        """
+        Loads a value from the private store.
+        
+        Args:
+            key (str): The storage key.
+            
+        Returns:
+            Any: The retrieved value, or None if not found.
+        """
         return self.__data.get(key)
 
 

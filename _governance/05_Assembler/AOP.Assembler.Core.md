@@ -84,7 +84,8 @@
 
 ## **I. Kinetic Logic Root**
 
-The **Actionable Optimization Assembler (AOP)** manages the `Actionable Prompt Packet (APP)` layer across all artifacts. It ensures that every `CMD` is executable, version-compliant, and results-focused.
+The **Actionable Optimization Assembler (AOP)** manages the `Actionable Prompt Packet (APP)` layer across all artifacts.
+It ensures that every `CMD` is executable, version-compliant, and results-focused.
 
 ## **II. Operational Vectors**
 
@@ -107,6 +108,4 @@ The **Actionable Optimization Assembler (AOP)** manages the `Actionable Prompt P
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: AOP.Assembler.Core VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: AOP-FORGE-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

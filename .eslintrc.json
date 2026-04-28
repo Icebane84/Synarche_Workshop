@@ -48,6 +48,8 @@
       "error",
       { "fixMixedExportsWithInlineTypeSpecifier": true }
     ],
+    "no-console": "off",
+    "no-console-phoenix": "error",
 
     "no-restricted-imports": [
       "error",

@@ -25,7 +25,9 @@
 
 ## **Overview**
 
-The **Assembler Subsystem** (`05_Assembler`) is the architectural engine responsible for the generation, transmutation, and compliance-injection of all Synarchy artifacts. It serves as the bridge between raw conceptual potential and formal substrate reality.
+The **Assembler Subsystem** (`05_Assembler`) is the architectural engine responsible for the generation, transmutation,
+and compliance-injection of all Synarchy artifacts. It serves as the bridge between raw conceptual potential and formal
+substrate reality.
 
 ## **Core Pillars**
 
@@ -60,4 +62,4 @@ The **Assembler Subsystem** (`05_Assembler`) is the architectural engine respons
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Assembler.Index VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: GVRN-ASM-INDEX-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

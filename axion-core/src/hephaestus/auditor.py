@@ -1,23 +1,25 @@
 """
 # UMB-AUDITOR-001: The Compliance Auditor (Engine Mode)
 
-## Genesis Stamp: 2026-01-18 | Domain: GVRN | State: CANONIZED | Criticality: Critical
-
-## I. Universal Identification & Provenance (The Vector Signature)
-
+# I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
 | :--- | :--- |
 | **1. Artifact ID** | `UMB-AUDITOR-001` |
 | **2. Official Name** | `auditor.py` |
-| **3. Version** | **v1.0 (Hephaestus Core)** |
-| **4. Provenance** | **Date Reforged: 2026-01-18** |
+| **3. Version** | **v15.0 [OMEGA]** |
+| **4. Provenance** | **Reforged: 2026-04-28** |
 | **5. Domain** | `GVRN` |
 | **6. Evolution** | **Purposeful Drive** |
 | **7. Celestial Class** | `[PLANET]` |
 | **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
+| **9. Status (State)** | `[ACTIVE]` |
 | **10. Ethos** | **Zero Entropy** |
+| **11. Integrity Hash** | `[UIP-V15-LOCK]` |
 
+---
+
+### **I.B. Axiom Reference**
+> "Measurement is the first act of governance." — Axiom of Audit
 """
 
 import logging
@@ -29,8 +31,19 @@ from typing import List
 # Configure Logging
 logger = logging.getLogger(__name__)
 
-# v11.0 Standards
-REQUIRED_UIP_KEYS = ["Module ID", "Version", "Evolution", "Status", "Type", "Classification"]
+# OMEGA v15.0 Standards
+REQUIRED_UIP_KEYS = [
+    "Artifact ID", 
+    "Official Name", 
+    "Version", 
+    "Provenance", 
+    "Domain", 
+    "Evolution", 
+    "Celestial Class", 
+    "Tier", 
+    "Status (State)", 
+    "Ethos"
+]
 
 @dataclass
 class AuditResult:
@@ -77,8 +90,8 @@ class ComplianceAuditor:
                 if key.lower() not in block_clean.lower():
                     errors.append(f"UIP: Missing required key '{key}'.")
             
-            if "v11.0" not in block_clean:
-                warnings.append("UIP: Version is not v11.0.")
+            if "v15.0" not in block_clean and "[OMEGA]" not in block_clean:
+                warnings.append("UIP: Version is not v15.0 [OMEGA].")
 
         # 2. H1 Singularity Check
         h1_matches = re.findall(

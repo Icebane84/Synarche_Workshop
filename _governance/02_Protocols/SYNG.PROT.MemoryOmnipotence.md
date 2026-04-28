@@ -133,6 +133,4 @@ of user-validated "Gems" and architectural wisdom.
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.PROT.MemoryOmnipotence VER: v15.0 [OMEGA] DOMAIN: SYNG STATUS: CANONIZED TS: 2026-03-19 HASH: MEM-OMNI-V15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

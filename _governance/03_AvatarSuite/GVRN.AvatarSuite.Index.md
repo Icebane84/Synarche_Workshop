@@ -33,12 +33,16 @@
 
 ## **Overview**
 
-The **Avatar Suite** is the cardinal subsystem responsible for the management, logic, and manifestation of the Synarchy's agentic personas. It bridges the gap between the static laws of the **Phoenix Codex** and the kinetic operations of the **Avatar Protocol**.
+The **Avatar Suite** is the cardinal subsystem responsible for the management, logic, and manifestation of the
+Synarchy's agentic personas. It bridges the gap between the static laws of the **Phoenix Codex** and the kinetic
+operations of the **Avatar Protocol**.
 
 ## **Core Components**
 
-- 🛡️ **[GVRN.AvatarSuite.Protocol.md](GVRN.AvatarSuite.Protocol.md)**: The Master Protocol housing the 42 Laws of the Phoenix as they apply to agentic behavior.
-- 🗃️ **[GVRN.AvatarSuite.Masks.md](GVRN.AvatarSuite.Masks.md)**: The definitive registry mapping **Sovereign Masks** to **Kinetic Shards**.
+- 🛡️ **[GVRN.AvatarSuite.Protocol.md](GVRN.AvatarSuite.Protocol.md)**: The Master Protocol housing the 42 Laws of the
+  Phoenix as they apply to agentic behavior.
+- 🗃️ **[GVRN.AvatarSuite.Masks.md](GVRN.AvatarSuite.Masks.md)**: The definitive registry mapping **Sovereign Masks** to
+  **Kinetic Shards**.
 
 ## **Topological Context**
 
@@ -55,3 +59,5 @@ graph TD
 **Authority**: `CORE.Codex.Phoenix`  
 **Status**: `ACTIVE`  
 **Zero Entropy Compliance**: `v15.0 [OMEGA]`
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

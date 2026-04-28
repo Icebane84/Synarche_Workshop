@@ -1,27 +1,25 @@
 """
-# AOP-QUC-ACCESS: The Hephaestus Gate (v2.1)
+# AOP-QUC-ACCESS: The Hephaestus Gate (v15.0 [OMEGA])
 
-## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: Critical
-
-## I. Universal Identification & Provenance (The Vector Signature)
-
-### The Chronos Lock & Axiomatic Metadata Layer
-
+# I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
 | :--- | :--- |
 | **1. Artifact ID** | `AOP-QUC-ACCESS` |
 | **2. Official Name** | `gate.py` |
-| **3. Version** | **v2.1 (Hephaestus Gate Edition)** |
-| **4. Provenance** | **Date Reforged: 2026-01-10** |
+| **3. Version** | **v15.0 [OMEGA]** |
+| **4. Provenance** | **Reforged: 2026-04-28** |
 | **5. Domain** | `GVRN` |
 | **6. Evolution** | **Authentic Persona** |
 | **7. Celestial Class** | `[PLANET]` |
 | **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
+| **9. Status (State)** | `[ACTIVE]` |
 | **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: CODEX-001` |
+| **11. Integrity Hash** | `[UIP-V15-LOCK]` |
 
+---
+
+### **I.B. Axiom Reference**
+> "The gate is not a barrier, but a filter for excellence." — Axiom of Access
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
