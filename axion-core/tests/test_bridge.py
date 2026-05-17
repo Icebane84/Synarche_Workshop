@@ -13,12 +13,12 @@ import sys
 # Add src to path so we can import modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
 
-from synarchy_bridge import SynarchyRegistry
+from Synarche_bridge import SynarcheRegistry
 
 
 def test_bridge():
-    print("Testing SynarchyRegistry...")
-    bridge = SynarchyRegistry("data/command_registry.json")
+    print("Testing SynarcheRegistry...")
+    bridge = SynarcheRegistry("data/command_registry.json")
 
     categories = bridge.get_all_categories()
     print(f"Categories found: {len(categories)}")

@@ -43,9 +43,18 @@
 """
 
 # Standard Python package initialization for Synarche Logic.
+from .axiomprimetuner import AxiomPrimeTuner
+from .cli import SynarcheCLI
+from .nlp.analytical_tagger import AnalyticalTagger
+from .nlp.emotion_analyzer import EmotionAnalyzer
+from .nlp.nlp_engine import AxionCognition, NLPProcessor
+from .rpg_manager import RPGManager
+from .synarche_verse_engine import CoherentVerseEngine, VerseNode
+from .utils.explanation_generator import ExplanationGenerator
+from .utils.soul_analyzer import SoulImpactAnalyzer
 
 # ---
-# 
+#
 # ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**

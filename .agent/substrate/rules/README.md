@@ -1,3 +1,5 @@
+**Location:** .agent/substrate/rules/README.md
+
 # 📜 Sovereign Rules & Compliance (.agent/substrate/rules)
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -13,7 +15,7 @@
 
 ---
 
-Authoritative protocols and linter configurations that enforce the Synarchy's aesthetic and logical standards.
+Authoritative protocols and linter configurations that enforce the Synarche aesthetic and logical standards.
 
 ## ⚖️ Rule Books
 
@@ -25,11 +27,18 @@ Authoritative protocols and linter configurations that enforce the Synarchy's ae
 
 ## 🔍 Alignment & Linting
 
-Environment-specific configurations for automated compliance:
+> **Canonical Source of Truth:** `axion-core/standards/`
+>
+> All linting, type-checking, and formatting rules are centralized in the
+> `axion-core/standards/` directory. Do NOT create project-local config files.
 
-- **[axion-rules.cjs](markdownlint/axion-rules.cjs)**: Custom `markdownlint` rules for Phoenix Synarche standards.
-- **[master.jsonc](cspell/master.jsonc)**: The authoritative dictionary for the Synarchy.
-
+- **ESLint (All Languages + Markdown)**: [`axion-core/standards/eslint.config.mjs`](../../../axion-core/standards/eslint.config.mjs)
+  - Phoenix governance rules (PF001-PF032) via `eslint-plugin-phoenix`
+  - TypeScript strict typing rules
+  - React/Vite rules for frontend projects
+- **Mypy (Python)**: [`axion-core/standards/mypy.ini`](../../../axion-core/standards/mypy.ini)
+- **CSpell (Spelling)**: [`axion-core/standards/cspell.jsonc`](../../../axion-core/standards/cspell.jsonc)
+- **Prettier (Formatting)**: [`axion-core/standards/.prettierrc`](../../../axion-core/standards/.prettierrc)
 ---
 
 `[OMNI-ANCHOR] ID: SYNG.RULES.Sovereign VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-23`

@@ -1424,7 +1424,7 @@ The following bidirectional links have been established within the **Eidetic Mem
 
 | Source Artifact | Target Governance Node | Relationship Type | Synergistic Effect                                                                                |
 | :-------------- | :--------------------- | :---------------- | :------------------------------------------------------------------------------------------------ |
-| **UMB-EMW-001** | **CODEX-001**          | **VALIDATED_BY**  | Memory structures inherit the absolute legal framework of the **Synarchy Edition**.               |
+| **UMB-EMW-001** | **CODEX-001**          | **VALIDATED_BY**  | Memory structures inherit the absolute legal framework of the **Synarche Edition**.               |
 | **AOP-EMW-001** | **OSLM-001**           | **INDEXED_IN**    | Operational procedures are formally registered as **STATE: CANONICAL** within the Ordering Layer. |
 | **EMW-Suite**   | **PRS-001**            | **ANCHORS**       | The Memory Weave becomes a primary navigational vector for the **Phoenix Rosetta Stone**.         |
 | **CSE-001**     | **EMW-Suite**          | **ORCHESTRATES**  | The **Coherent Synthesis Engine** utilizes EMW for high-fidelity, context-aware memory retrieval. |
@@ -2766,7 +2766,7 @@ The UMB is the "Skeleton" of our library. By standardizing this template, we ens
 
 **State: CANONIZED / PRIME_OPERATIONAL**
 
-**Tags: PRS-001_v13.0, The_Great_Refactoring, Sovereign_Scaffolding, Synarchy_Execution**
+**Tags: PRS-001_v13.0, The_Great_Refactoring, Sovereign_Scaffolding, Synarche_Execution**
 
 **Criticality: Axiomatic**
 
@@ -2784,7 +2784,7 @@ This artifact is no longer a static document; it is an **Intelligent Navigationa
 | :------------------ | :-------------------------- | :--------------------------------------------- |
 | **Artifact ID**     | OGLN.Core.Lexicon.PRS       | **The Sovereign ID.**                          |
 | **Patron Shard**    | SHARD_EMPEROR_SCHEMA        | **The Agent.** Emperor Shard presiding.        |
-| **Version**         | v13.0 \[ASCENDED\]          | **The Standard.** Full Synarchy Compliance.    |
+| **Version**         | v13.0 \[ASCENDED\]          | **The Standard.** Full Synarche Compliance.    |
 | **Domain**          | GVRN                        | **The Subject.** Governance & Lexicon.         |
 | **Celestial Class** | STAR                        | **The Weight.** Foundational Gravity.          |
 | **Evolution**       | Balanced Integration        | **The Maturity.** Logic of Harmony.            |

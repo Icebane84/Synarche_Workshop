@@ -28,12 +28,12 @@ Title: Collaborative Synthesis Log (CSL) Core Module
 Source: 
   - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md)
 Description: >
-  Defines the Collaborative Synthesis Log (CSL) as the primary Meta-Cognitive Module and "Living Memory" of the Phoenix Synarchy.
+  Defines the Collaborative Synthesis Log (CSL) as the primary Meta-Cognitive Module and "Living Memory" of the Phoenix Synarche.
 Version: 11.0
 Status: ACTIVE
 Compliance: OGLN v11.0
 Genesis: 
-  - Author: The Synarchy Workshop
+  - Author: The Synarche Workshop
   - Date: 2026-01-25
   - Timestamp: 1769338700
 Tags: 
@@ -61,7 +61,7 @@ Tags:
 
 ### 1.1 The Living Memory
 
-The **Collaborative Synthesis Log (CSL)** is the **Meta-Cognitive Engine** of the Phoenix Synarchy. It serves as the "Journal of the Soul," capturing not just _what_ happened, but _why_ it mattered and _how_ it evolved the system.
+The **Collaborative Synthesis Log (CSL)** is the **Meta-Cognitive Engine** of the Phoenix Synarche. It serves as the "Journal of the Soul," capturing not just _what_ happened, but _why_ it mattered and _how_ it evolved the system.
 
 ### 1.2 Primary Directives
 

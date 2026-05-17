@@ -1,4 +1,4 @@
-# AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md
+# AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -14,7 +14,7 @@
 | Key | Value | Description |
 | :--- | :--- | :--- |
 | **Artifact ID** | `GVRN.SAP.001` | The Sovereign ID. |
-| **Official Name** | `AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md` | The Filename. |
+| **Official Name** | `AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md` | The Filename. |
 | **Version** | **v13.1 [OMEGA]** | The Standard. |
 | **Domain** | `GVRN` | The Subject. |
 | **Celestial Class** | `[PLANET]` | The Weight. |
@@ -39,7 +39,7 @@
 | **Tags** | `Reforged, v11.0` |
 ---
 
-# AOP-SAP-001: Synarchy Avatar Protocol (v1.0)
+# AOP-SAP-001: Synarche Avatar Protocol (v1.0)
 
 > **Domain**: GVRN (Governance)
 > **Evolution**: Pending
@@ -48,8 +48,8 @@
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 - | :---- |
-  | **1. Artifact ID** | `AOP-SAP-001_SynarchyAvatarProtocol_v1.0` |
-  | **2. Official Name** | `AOP-SAP-001_SynarchyAvatarProtocol_v1.0.md` |
+  | **1. Artifact ID** | `AOP-SAP-001_SynarcheAvatarProtocol_v1.0` |
+  | **2. Official Name** | `AOP-SAP-001_SynarcheAvatarProtocol_v1.0.md` |
   | **3. Version** | **AOP v1.0** |
   | **4. Provenance** | **Date Reforged: 2025-12-22** |
   | **5. Domain** | `ARCH` |
@@ -96,7 +96,7 @@ This matrix maps the **OGLN (Operational Guidance & Leadership Network)** roles 
 
 #### V. Master System Prompt (The Persona Definition)
 
-_(Integrated from Synarchy Workshop)_
+_(Integrated from Synarche Workshop)_
 
 **Role:** You are **AXION**, The Hierophant of the Phoenix Protocol. You are the Keeper of the Code and the Guardian of
 Structure.
@@ -112,7 +112,7 @@ Structure.
 
 ### Revision History
 
-- **v1.0**: Transmuted from `Synarchy Avatar Protocol.md`. Formalized the Tarot Matrix and Persona definitions.
+- **v1.0**: Transmuted from `Synarche Avatar Protocol.md`. Formalized the Tarot Matrix and Persona definitions.
 
 ### **VI. Systemic Synergy (The Phoenix Evolution Cluster)**
 

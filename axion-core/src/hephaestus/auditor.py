@@ -33,26 +33,29 @@ logger = logging.getLogger(__name__)
 
 # OMEGA v15.0 Standards
 REQUIRED_UIP_KEYS = [
-    "Artifact ID", 
-    "Official Name", 
-    "Version", 
-    "Provenance", 
-    "Domain", 
-    "Evolution", 
-    "Celestial Class", 
-    "Tier", 
-    "Status (State)", 
-    "Ethos"
+    "Artifact ID",
+    "Official Name",
+    "Version",
+    "Provenance",
+    "Domain",
+    "Evolution",
+    "Celestial Class",
+    "Tier",
+    "Status (State)",
+    "Ethos",
 ]
+
 
 @dataclass
 class AuditResult:
     """Dataclass to hold audit results."""
+
     file_path: str
     status: str  # PASS, FAIL, WARNING
     errors: List[str] = field(default_factory=list)
     warnings: List[str] = field(default_factory=list)
     score: float = 0.0
+
 
 class ComplianceAuditor:
     """
@@ -65,17 +68,12 @@ class ComplianceAuditor:
         Audits a single markdown file for OGLN compliance.
         """
         filename = os.path.basename(filepath)
-        
+
         try:
             with open(filepath, "r", encoding="utf-8") as f:
                 content = f.read()
         except Exception as e:
-            return AuditResult(
-                file_path=filepath,
-                status="FAIL",
-                errors=[f"Read Error: {e}"],
-                score=0.0
-            )
+            return AuditResult(file_path=filepath, status="FAIL", errors=[f"Read Error: {e}"], score=0.0)
 
         errors = []
         warnings = []
@@ -89,21 +87,19 @@ class ComplianceAuditor:
             for key in REQUIRED_UIP_KEYS:
                 if key.lower() not in block_clean.lower():
                     errors.append(f"UIP: Missing required key '{key}'.")
-            
+
             if "v15.0" not in block_clean and "[OMEGA]" not in block_clean:
                 warnings.append("UIP: Version is not v15.0 [OMEGA].")
 
         # 2. H1 Singularity Check
         h1_matches = re.findall(
-            r"^#\s+(?!Universal Identification & Provenance).*", 
-            content, 
-            re.MULTILINE | re.IGNORECASE
+            r"^#\s+(?!Universal Identification & Provenance).*", content, re.MULTILINE | re.IGNORECASE
         )
         if len(h1_matches) != 1:
             errors.append(f"Geometry: H1 Singularity violation (Found {len(h1_matches)} H1 headers outside UIP).")
 
         # 3. Indentation Parity (v11.0 mandates 4-space nested bullets)
-        if re.search(r"^  - ", content, re.MULTILINE):
+        if re.search(r"^ {2}- ", content, re.MULTILINE):
             warnings.append("Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces for list parity).")
 
         # 4. Actionable Prompt Packet (APP)
@@ -119,13 +115,7 @@ class ComplianceAuditor:
         score = 1.0 - (len(errors) * 0.2) - (len(warnings) * 0.05)
         score = max(0.0, score)
 
-        return AuditResult(
-            file_path=filepath,
-            status=status,
-            errors=errors,
-            warnings=warnings,
-            score=score
-        )
+        return AuditResult(file_path=filepath, status=status, errors=errors, warnings=warnings, score=score)
 
     def _extract_uip_block(self, content: str) -> str:
         """Helper to extract the UIP header block from content."""

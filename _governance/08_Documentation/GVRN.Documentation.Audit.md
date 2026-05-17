@@ -54,7 +54,7 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"The Musashi Audit is the supreme quality gate of the Phoenix Synarchy. It is 'The Sword' that maintains absolute coherence by excising entropy."**
+> **"The Musashi Audit is the supreme quality gate of the Phoenix Synarche. It is 'The Sword' that maintains absolute coherence by excising entropy."**
 
 ---
 
@@ -72,7 +72,7 @@
 
 ## 1. Operational Overview
 
-The **Musashi Audit** is the fundamental verification mechanism for all workspace artifacts. It ensures that every node in the Synarchy adheres to the mathematical and structural standards of OMEGA v15.0.
+The **Musashi Audit** is the fundamental verification mechanism for all workspace artifacts. It ensures that every node in the Synarche adheres to the mathematical and structural standards of OMEGA v15.0.
 
 ## 2. The v15.0 Checklist (The Crystal Gate)
 

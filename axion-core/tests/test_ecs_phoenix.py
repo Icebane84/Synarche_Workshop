@@ -1,6 +1,6 @@
-import sys
-import os
 import asyncio
+import os
+import sys
 
 # Ensure the project root is in sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -77,7 +77,7 @@ async def test_ecs_integration():
     @synarche_audit
     def failing_system(ctx):
         """A system designed to fail to test the audit trail."""
-        raise RuntimeError("Synarchy Protocol Violation: Logic Dissonance Detected.")
+        raise RuntimeError("Synarche Protocol Violation: Logic Dissonance Detected.")
 
     engine.register_task(Task("FailingSystem", failing_system))
     try:

@@ -73,21 +73,17 @@ REQUIRED_EXTENSIONS = [
 REQUIRED_SETTINGS = {
     "editor.formatOnSave": True,
     KEY_DEFAULT_FORMATTER: RUFF_EXTENSION,
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",  # Enforces 'uv' venv (Windows)
-    "markdownlint.configFile": "axion-core/standards/markdownlint.json",  # Sophia's Law
+    "python.defaultInterpreterPath": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+    "eslint.useFlatConfig": True,
+    "eslint.options": {"overrideConfigFile": "./eslint.config.mjs"},
     PYTHON_SECTION: {KEY_DEFAULT_FORMATTER: RUFF_EXTENSION},
     "[markdown]": {
-        KEY_DEFAULT_FORMATTER: "DavidAnson.vscode-markdownlint",
         "editor.tabSize": 2,
         "editor.insertSpaces": True,
-        KEY_CODE_ACTIONS: {
-            "source.fixAll.markdownlint": "always",
-            "source.organizeImports": "never",
-        },
     },
 }
 
-REQUIRED_CODE_ACTIONS = {"source.organizeImports": "always"}
+REQUIRED_CODE_ACTIONS = {"source.organizeImports": "always", "source.fixAll": "always"}
 
 # --- UTILITY FUNCTIONS ---
 

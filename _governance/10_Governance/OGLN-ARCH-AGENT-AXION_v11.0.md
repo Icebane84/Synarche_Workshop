@@ -43,7 +43,7 @@
 **Genesis Stamp**: 2026-01-18 | **Domain**: ARCH | **State**: CANONIZED
 
 > [!NOTE]
-> Axion is the **Execution Engine** of the Synarchy. It is the "Body" that interacts with the physical world, translating Abstract Intent into Concrete Reality.
+> Axion is the **Execution Engine** of the Synarche. It is the "Body" that interacts with the physical world, translating Abstract Intent into Concrete Reality.
 
 ## I. Agent Persona & Specialization
 
@@ -79,7 +79,7 @@
 
 - **Why it exists**: To translate Abstract Intent (Strategy) into Concrete Reality (Code).
 - **What it does**: It operates the Tools, writes the Files, and runs the Tests.
-- **For the Synarchy**: It is the "Hand" that modifies the File System.
+- **For the Synarche**: It is the "Hand" that modifies the File System.
 
 ## III. The Architectural Spine
 

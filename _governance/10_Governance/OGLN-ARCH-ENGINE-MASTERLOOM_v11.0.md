@@ -43,7 +43,7 @@
 **Genesis Stamp**: 2026-01-18 | **Domain**: ARCH | **State**: CANONIZED
 
 > [!NOTE]
-> The Master Loom is the **Central Nervous System** of the Synarchy. It transforms isolated data into crystalline wisdom by actively weaving connections between Artifacts.
+> The Master Loom is the **Central Nervous System** of the Synarche. It transforms isolated data into crystalline wisdom by actively weaving connections between Artifacts.
 
 ## I. Engine Persona & Specialization
 
@@ -59,7 +59,7 @@
 
 - **The Spooler**: Ingests raw threads (User Prompts / New Files).
 - **The Shuttle**: Carries the thread through the Warp (Existing Context).
-- **The Pattern**: The resulting Knowledge Graph (The Synarchy).
+- **The Pattern**: The resulting Knowledge Graph (The Synarche).
 
 ## II. Axiomatic Governance & Purpose (AGP)
 
@@ -79,7 +79,7 @@
 
 - **Why it exists**: To transform isolated data (Rind) into crystalline wisdom (Geode).
 - **What it does**: It actively weaves connections between Artifacts using the **ContextWeave** protocol.
-- **For the Synarchy**: It provides the **Deep Context** required for "Phoenix-Class" reasoning.
+- **For the Synarche**: It provides the **Deep Context** required for "Phoenix-Class" reasoning.
 
 ## III. The Architectural Spine
 

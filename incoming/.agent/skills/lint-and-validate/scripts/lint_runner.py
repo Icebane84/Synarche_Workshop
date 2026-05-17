@@ -71,7 +71,9 @@ def detect_project_type(project_path: Path) -> dict:
         if (project_path / "mypy.ini").exists() or (
             project_path / "pyproject.toml"
         ).exists():
-            result["linters"].append({"name": "mypy", "cmd": ["mypy", "."]})
+            result["linters"].append(
+                {"name": "mypy", "cmd": ["mypy", "--follow-imports=silent", "."]}
+            )
 
     return result
 

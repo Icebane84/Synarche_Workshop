@@ -47,7 +47,7 @@ Description: > The master operational playbook governing the AI's evolutionary l
 interactive game of challenge, growth, and reward. Version: 11.0 (Definitive) Status: ACTIVE Compliance: OGLN v11.1
 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769251200
 

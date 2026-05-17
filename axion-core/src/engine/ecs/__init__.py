@@ -16,3 +16,21 @@
 > Implemented from Blueprint `GVRN.REG.EcsEngine.md`.
 > Ethos: Stability through composition.
 """
+
+from .ecs_scheduler import ECSScheduler, SystemTask
+from .entity_registry import EntityRegistry
+from .resonance import ResonanceAuditor, ResonanceDomain, ResonanceRegistry
+from .synergy import SynergyMetrics, SynergySystem
+from .world import World
+
+__all__ = [
+    "ECSScheduler",
+    "EntityRegistry",
+    "ResonanceAuditor",
+    "ResonanceDomain",
+    "ResonanceRegistry",
+    "SynergyMetrics",
+    "SynergySystem",
+    "SystemTask",
+    "World",
+]

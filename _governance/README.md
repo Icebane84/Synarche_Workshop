@@ -23,7 +23,7 @@ This directory is the **supreme law layer** of the Synarche Workspace. Every gov
 - **`00_Codex/`**: The fundamental laws (The Phoenix Codex).
 - **`00_CORE/`**: Core system laws (OMEGA v15.0 sovereign rules).
 - **`01_Registries/`**: Master inventories of artifacts, entities, and states.
-- **`01_SYNG/`**: Synarchy protocols (OGLN, RNC, AISTF standards).
+- **`01_SYNG/`**: Synarche protocols (OGLN, RNC, AISTF standards).
 - **`02_GVRN/`**: Governance rules, style guides, coding standards.
 - **`02_Protocols/`**: Operational flowcharts (Oathkeeper, Verify, GUCA, SELT).
 - **`03_AvatarSuite/`**: Agent persona protocols ([GVRN.AvatarSuite.Protocol.md](03_AvatarSuite/GVRN.AvatarSuite.Protocol.md)).

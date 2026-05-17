@@ -10,12 +10,10 @@ DESCRIPTION:
 
 import csv
 import json
-import math
-import os
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any
 
 
 @dataclass
@@ -28,7 +26,7 @@ class ResonanceReport:
     stagnation: float  # Redundancy in types/domains
     density: float  # Semantic metadata coverage
     status: str = "STABLE"
-    advice: List[str] = field(default_factory=list)
+    advice: list[str] = field(default_factory=list)
 
     def display(self) -> None:
         print("\n--- SOPHIA RESONANCE REPORT ---")
@@ -43,7 +41,7 @@ class ResonanceReport:
 class SemanticWeaver:
     """Extracts high-resonance metadata from unstructured content."""
 
-    STANDARD_MAP = {
+    STANDARD_MAP: dict[str, str] = {
         "artifact id": "artifact_id",
         "domain": "domain",
         "version": "version",
@@ -57,7 +55,7 @@ class SemanticWeaver:
     }
 
     @staticmethod
-    def weave(content: str) -> Dict[str, str]:
+    def weave(content: str) -> dict[str, str]:
         """Performs deep parse of markdown tables to extract semantic anchors."""
         metadata = {}
         lines = content.split("\n")
@@ -93,16 +91,16 @@ class SemanticWeaver:
 class SophiaRefactorEngine:
     """The core engine responsible for promoting scratch logic to systemic code."""
 
-    def __init__(self, json_path: Path, output_dir: Path):
+    def __init__(self, json_path: Path, output_dir: Path) -> None:
         self.json_path = json_path
         self.output_dir = output_dir
-        self.nodes_data: List[Dict[str, Any]] = []
-        self.edges_data: List[Dict[str, Any]] = []
+        self.nodes_data: list[dict[str, Any]] = []
+        self.edges_data: list[dict[str, Any]] = []
 
     def _load_graph(self) -> None:
         """Loads the standardized graph into memory."""
         print(f"SOPHIA: Loading {self.json_path}...")
-        with open(self.json_path, "r", encoding="utf-8") as f:
+        with open(self.json_path, encoding="utf-8") as f:
             data = json.load(f)
             self.nodes_raw = data.get("nodes", [])
             self.edges_raw = data.get("edges", [])
@@ -204,7 +202,7 @@ class SophiaRefactorEngine:
         header = [k for k in priority if k in all_keys]
         meta_keys = sorted([k for k in all_keys if k.startswith("meta_")])
         header.extend(meta_headers := meta_keys)
-        header.extend(sorted(list(all_keys - set(header))))
+        header.extend(sorted(all_keys - set(header)))
 
         nodes_path = self.output_dir / "resonant_nodes.csv"
         with open(nodes_path, "w", newline="", encoding="utf-8") as f:

@@ -4914,12 +4914,12 @@ Target: C:\Users\Chris\Synarche_Workspace
   -- UIP: Version is not v13.0.
   -- Filenaming: Filename 'SYNG.LOG.ContextWeaveReport.md' does not strictly match v13.0 RNC pattern.
 
-[FAIL] _governance\50_Logs\SYNG.LOG.StateOfTheSynarchy.md (Score: 0.30)
+[FAIL] _governance\50_Logs\SYNG.LOG.StateOfTheSynarche.md (Score: 0.30)
   !! UIP: Missing required key 'Status (State)'.
   !! UIP: Missing required key 'Integrity Hash'.
   !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
   -- UIP: Version is not v13.0.
-  -- Filenaming: Filename 'SYNG.LOG.StateOfTheSynarchy.md' does not strictly match v13.0 RNC pattern.
+  -- Filenaming: Filename 'SYNG.LOG.StateOfTheSynarche.md' does not strictly match v13.0 RNC pattern.
 
 [FAIL] _governance\50_Logs\CSL\00_INDEX.md (Score: 0.30)
   !! UIP: Missing required key 'Status (State)'.
@@ -5876,7 +5876,7 @@ Target: C:\Users\Chris\Synarche_Workspace
   !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
   -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
 
-[FAIL] _governance\99_Archives\ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md (Score: 0.35)
+[FAIL] _governance\99_Archives\ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md (Score: 0.35)
   !! UIP: Missing required key 'Status (State)'.
   !! UIP: Missing required key 'Integrity Hash'.
   !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
@@ -5894,7 +5894,7 @@ Target: C:\Users\Chris\Synarche_Workspace
   !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
   -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
 
-[FAIL] _governance\99_Archives\GVRN-ENTITY-001_SynarchyEntities_v11.0.md (Score: 0.35)
+[FAIL] _governance\99_Archives\GVRN-ENTITY-001_SynarcheEntities_v11.0.md (Score: 0.35)
   !! UIP: Missing required key 'Status (State)'.
   !! UIP: Missing required key 'Integrity Hash'.
   !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
@@ -6162,12 +6162,12 @@ Target: C:\Users\Chris\Synarche_Workspace
   !! UIP: Missing required key 'Integrity Hash'.
   !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
 
-[FAIL] _governance\99_Archives\GVRN-ENTITY-001_SynarchyEntities_v13.0.md (Score: 0.40)
+[FAIL] _governance\99_Archives\GVRN-ENTITY-001_SynarcheEntities_v13.0.md (Score: 0.40)
   !! UIP: Missing required key 'Status (State)'.
   !! UIP: Missing required key 'Integrity Hash'.
   !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
 
-[FAIL] _governance\99_Archives\GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md (Score: 0.40)
+[FAIL] _governance\99_Archives\GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md (Score: 0.40)
   !! UIP: Missing required key 'Status (State)'.
   !! UIP: Missing required key 'Integrity Hash'.
   !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
@@ -7140,10 +7140,10 @@ Target: C:\Users\Chris\Synarche_Workspace
   !! UIP: Missing required key 'Integrity Hash'.
   -- Filenaming: Filename 'GVRN.REG.DirectoryArchitecture.md' does not strictly match v13.0 RNC pattern.
 
-[FAIL] _governance\SYNG.PROT.SynarchyAvatarProtocol.md (Score: 0.55)
+[FAIL] _governance\SYNG.PROT.SynarcheAvatarProtocol.md (Score: 0.55)
   !! UIP: Missing required key 'Status (State)'.
   !! UIP: Missing required key 'Integrity Hash'.
-  -- Filenaming: Filename 'SYNG.PROT.SynarchyAvatarProtocol.md' does not strictly match v13.0 RNC pattern.
+  -- Filenaming: Filename 'SYNG.PROT.SynarcheAvatarProtocol.md' does not strictly match v13.0 RNC pattern.
 
 [FAIL] _governance\00_Codex\CORE-CODEX-001_ThePhoenixCodex_v13.1.md (Score: 0.55)
   !! UIP: Missing required key 'Status (State)'.
@@ -33196,7 +33196,7 @@ Target: C:\Users\Chris\Synarche_Workspace
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] axion-core\src\synarchy_bridge.py (Score: 0.75)
+[FAIL] axion-core\src\Synarche_bridge.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
@@ -33588,19 +33588,19 @@ Target: C:\Users\Chris\Synarche_Workspace
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] nova-forge\src\synarchy\cli.py (Score: 0.75)
+[FAIL] nova-forge\src\Synarche\cli.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] nova-forge\src\synarchy\demo_usage.py (Score: 0.75)
+[FAIL] nova-forge\src\Synarche\demo_usage.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] nova-forge\src\synarchy\synarchy_bridge.py (Score: 0.75)
+[FAIL] nova-forge\src\Synarche\Synarche_bridge.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] nova-forge\src\synarchy\__init__.py (Score: 0.75)
+[FAIL] nova-forge\src\Synarche\__init__.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
@@ -33704,15 +33704,15 @@ Target: C:\Users\Chris\Synarche_Workspace
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] nova_forge\tools\synarchy\cli.py (Score: 0.75)
+[FAIL] nova_forge\tools\Synarche\cli.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] nova_forge\tools\synarchy\demo_usage.py (Score: 0.75)
+[FAIL] nova_forge\tools\Synarche\demo_usage.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] nova_forge\tools\synarchy\synarchy_bridge.py (Score: 0.75)
+[FAIL] nova_forge\tools\Synarche\Synarche_bridge.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 

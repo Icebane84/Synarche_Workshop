@@ -42,8 +42,12 @@
 ## **[ARTIFACT END]**
 """
 
+from .analytical_tagger import AnalyticalTagger
+from .emotion_analyzer import EmotionAnalyzer
+from .nlp_engine import AxionCognition, NLPProcessor
+
 # ---
-# 
+#
 # ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**

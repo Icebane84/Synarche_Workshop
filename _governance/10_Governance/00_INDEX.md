@@ -77,7 +77,7 @@
 | [AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md](AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md) | Universal Identification & Provenance (UIP) |
 | [AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md](AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md) | Universal Identification & Provenance (UIP) |
 | [AOP-PROMPT-001_TheCatalystProtocol_v11.1.md](AOP-PROMPT-001_TheCatalystProtocol_v11.1.md) | Universal Identification & Provenance (UIP) |
-| [AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md](AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md) | Universal Identification & Provenance (UIP) |
+| [AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md](AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md) | Universal Identification & Provenance (UIP) |
 | [AOP-SBT-001_SpiritBombTechnique_v11.0.md](AOP-SBT-001_SpiritBombTechnique_v11.0.md) | [AOP-SBT-001: The Spirit Bomb Technique v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-SBT-001_SpiritBombTechnique_v11.0.md) |
 | [AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md](AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md) | Universal Identification & Provenance (UIP) |
 | [AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md](AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md) | Universal Identification & Provenance (UIP) |

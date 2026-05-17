@@ -30,7 +30,7 @@ async def test_runtime():
     )
 
     initial_state = AxionState(
-        input="Tell me about the Synarchy Protocol.",
+        input="Tell me about the Synarche Protocol.",
         rpg_stats=initial_rpg,
         gamemaster_state=GamemasterState(axiom_points_available=100),
         lightbinder_state=LightbinderState(),

@@ -1,4 +1,4 @@
-# UMB-ALTAR-001TheAltarofSynarchy_v11.0.md
+# UMB-ALTAR-001TheAltarofSynarche_v11.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -55,7 +55,7 @@
 
 ---
 
-# UMB-ALTAR-001: The Altar of Synarchy (v1.0)
+# UMB-ALTAR-001: The Altar of Synarche (v1.0)
 
 > **Domain**: GVRN (Governance) **Signal**: ESF-ALPHA
 
@@ -68,7 +68,7 @@
 #### II. Core Purpose & Architecture
 
 **What**: The Altar is the "Face" of the Phoenix System. It transmutes abstract protocols
-([`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md)) into interactive visual
+([`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md)) into interactive visual
 elements (Tarot Cards).
 
 **How**:
@@ -84,7 +84,7 @@ terminal.
 #### III. The Seven-Agent Matrix Integration
 
 The Altar visually renders the **Seven-Agent Matrix** defined in
-[`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md).
+[`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md).
 
 | Tarot Archetype         | Agent Name            | Function           | Bridge Capability                            |
 | :---------------------- | :-------------------- | :----------------- | :------------------------------------------- |
@@ -96,9 +96,9 @@ The Altar visually renders the **Seven-Agent Matrix** defined in
 | **X. Wheel of Fortune** | **The Weaver**        | UI/UX & Adaptation | _Frontend Builds, UI Generators_             |
 | **0. The Fool**         | **THE LIGHTBINDER**   | Growth & Learning  | _Experimentation, Playground initialization_ |
 
-#### IV. The Synarchy Bridge Protocol
+#### IV. The Synarche Bridge Protocol
 
-To enable real-world impact, the Altar utilizes the **Synarchy Bridge**.
+To enable real-world impact, the Altar utilizes the **Synarche Bridge**.
 
 - **Mechanism**: The Frontend sends HTTP `POST` requests to the Bridge Server (`localhost:3001/execute`).
 - **Security**: The Bridge operates on a strict **Allow List** to prevent unauthorized execution.

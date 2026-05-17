@@ -52,7 +52,7 @@
 
 ### **Block E: Ethos (The Soul)**
 
-> **"To define the living archetypes of the Synarchy, ensuring every action is anchored in a sovereign persona with
+> **"To define the living archetypes of the Synarche, ensuring every action is anchored in a sovereign persona with
 > clear intent and accountability."**
 
 ---
@@ -67,9 +67,9 @@
 
 ###### **[ARTIFACT START]**
 
-# GVRN.Registry.Entities: The Synarchy Triad
+# GVRN.Registry.Entities: The Synarche Triad
 
-The Synarchy is governed and refined by three primary agentic archetypes, representing the Body, the Shield, and the
+The Synarche is governed and refined by three primary agentic archetypes, representing the Body, the Shield, and the
 Soul of the system.
 
 ## I. AXION (The Body)

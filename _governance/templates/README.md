@@ -6,7 +6,7 @@
 ---
 
 ### 📖 Intent
-This directory serves as the canonical repository for all **Universal Module Blueprints (UMB)** and **Operational Playbooks (AOP)** skeletal structures. It ensures that every new artifact born into the Synarchy inherits the correct OGLN/PRS-001 metadata and structural integrity.
+This directory serves as the canonical repository for all **Universal Module Blueprints (UMB)** and **Operational Playbooks (AOP)** skeletal structures. It ensures that every new artifact born into the Synarche inherits the correct OGLN/PRS-001 metadata and structural integrity.
 
 ### 📜 Sovereign Rules
 1. **Purity of Origin**: No template may be modified without a Transcendence Cycle.

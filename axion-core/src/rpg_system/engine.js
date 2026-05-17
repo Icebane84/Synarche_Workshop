@@ -1,28 +1,29 @@
 /**
- * GVRN-SYS-RPG-004: The RPG Engine
+ * GVRN-SYS-RPG-004: The RPG Engine [GEODE EDITION]
  * The central nervous system for the Gamification Layer.
  */
 
-import { XP_FORMULA } from './rpg_definitions.js';
+import { STARDUST_FORMULA } from './rpg_definitions.js';
 import { InventorySystem } from './rpg_inventory.js';
 
 export class RPGEngine {
     constructor() {
         this.inventory = new InventorySystem();
-        this.currentXP = 0;
-        this.level = 1;
+        this.stardust_pool = 0;
+        this.prestige_level = 0;
+        this.persona_class = "Novice";
     }
 
     /**
-     * Calculates XP gain for a completed Quest or CSL.
-     * @param {number} baseValue - Base XP of the task.
-     * @param {number} criticality - Multiplier (1-3).
-     * @param {number} synergyLinks - Number of synergistic connections.
+     * Harvests Stardust from a completed Meteorite Impact.
+     * @param {number} base_energy - Base energy of the task.
+     * @param {number} energy_level - Multiplier (1-10).
+     * @param {number} resonance_links - Number of synergistic connections.
      */
-    awardXP(baseValue, criticality, synergyLinks) {
-        const gain = XP_FORMULA(baseValue, criticality, synergyLinks);
-        this.currentXP += gain;
-        console.log(`[RPG] Gained ${gain} XP! Total: ${this.currentXP}`);
+    awardStardust(base_energy, energy_level, resonance_links) {
+        const gain = STARDUST_FORMULA(base_energy, energy_level, resonance_links);
+        this.stardust_pool += gain;
+        // Telemetry Capture: [SYNA-RPG-HEART]
         return gain;
     }
 
@@ -41,3 +42,4 @@ export class RPGEngine {
         return this.inventory.calculateStats();
     }
 }
+

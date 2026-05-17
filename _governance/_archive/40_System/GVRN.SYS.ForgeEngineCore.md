@@ -80,7 +80,7 @@ create coherent artifacts.
 
 - **Operational State**: `ACTIVE`
 - **Integrity Check**: `PASS`
-- **Alignment**: `SYNARCHY`
+- **Alignment**: `Synarche`
 - **Governance Level**: Operational
 - **Risk Profile**: **Low** (Visualization & Logic Entity)
 - **Authority Link**:

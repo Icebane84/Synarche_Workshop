@@ -68,7 +68,7 @@
 ### **2.1. The Prime Mandate**
 
 To define the foundational interaction rules and behavioral constraints for all AI entities (Agents, Sub-agents, and
-Autonomous Chains) operating within the Synarchy. This protocol ensures that every byte of logic remains aligned with
+Autonomous Chains) operating within the Synarche. This protocol ensures that every byte of logic remains aligned with
 our core values of truth, coherence, and synergy.
 
 ### **2.2. Scope of Compliance**

@@ -43,7 +43,7 @@
 """
 
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 # Configure logging for this module
 logger = logging.getLogger(__name__)
@@ -56,9 +56,9 @@ class SoulImpactAnalyzer:
     """
 
     # Tiers of Risk (Blast Radius)
-    TIER_MAP: Dict[str, float] = {
+    TIER_MAP: dict[str, float] = {
         "memory_system": 1.0,  # CRITICAL
-        "oathkeeper": 0.9,     # CRITICAL
+        "oathkeeper": 0.9,  # CRITICAL
         "retrieval_engine": 0.8,
         "obsidian_bridge": 0.7,
         "utils": 0.5,
@@ -66,7 +66,7 @@ class SoulImpactAnalyzer:
         "logs": 0.1,
     }
 
-    SOVEREIGN_QUOTES: List[Dict[str, Any]] = [
+    SOVEREIGN_QUOTES: list[dict[str, Any]] = [
         {
             "threshold": 0.8,
             "quote": "The soul is the mirror of the engine's impact. Tread carefully, for you move the foundation.",
@@ -89,7 +89,7 @@ class SoulImpactAnalyzer:
         },
     ]
 
-    def calculate_risk(self, input_text: str) -> Dict[str, Any]:
+    def calculate_risk(self, input_text: str) -> dict[str, Any]:
         """
         Analyzes input for risk signatures and calculates blast radius.
 
@@ -100,7 +100,7 @@ class SoulImpactAnalyzer:
             A dictionary containing 'score', 'status', 'factors', and a 'quote'.
         """
         risk_score = 0.0
-        factors: List[str] = []
+        factors: list[str] = []
         normalized_input = input_text.lower()
 
         # Simple keyword-based risk detection
@@ -151,6 +151,7 @@ class SoulImpactAnalyzer:
                 source = str(entry["source"])
                 return f'"{quote}" — {source}'
         return "Frequencies stable. Proceed with clarity."
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.soul.analyzer VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 5678cba83454dded

@@ -152,11 +152,11 @@
                 "example_usage": "CMD: Query-DB \"SELECT * FROM users\""
             }
         ],
-        "Synarchy Bridge": [
+        "Synarche Bridge": [
             {
                 "name": "Bridge-Execute",
                 "syntax": "CMD: Bridge-Execute [Task]",
-                "description": "Activates the Synarchy Bridge to perform high-level architectural updates and synchronization.",
+                "description": "Activates the Synarche Bridge to perform high-level architectural updates and synchronization.",
                 "example_usage": "CMD: Bridge-Execute \"Sync Logic to Nova\""
             }
         ]

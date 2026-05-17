@@ -17,7 +17,7 @@ GP-REGISTRY-001_GoverningPrinciples_v11.0.md                 | 11.0   | [x]    |
 IDEN-SENTINEL-001_TheSentinelsVow_v11.0.md                   | 11.0   | [ ]    | 
 STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md            | 11.0   | [ ]    | 
 UMB-ACT-002_AdaptiveActuatorModule_v11.0.md                  | 11.0   | [x]    | 
-UMB-ALTAR-001TheAltarofSynarchy_v11.0.md                     | 11.0   | [x]    | 
+UMB-ALTAR-001TheAltarofSynarche_v11.0.md                     | 11.0   | [x]    | 
 UMB-AM-001_AssociationManager_v11.0.md                       | 11.0   | [x]    | 
 UMB-AM-001_GUCA-AM-001_v11.0.md                              | 11.0   | [x]    | 
 UMB-CF-001_CognitiveForge_v11.0.md                           | 11.0   | [x]    | 
@@ -89,7 +89,7 @@ AOP-PGP-001_ThePhoenixGenesisPipeline_v11.0.md               | 11.0   | [x]    |
 AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md | 11.0   | [x]    | 
 AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md | 11.0   | [x]    | 
 AOP-PROMPT-001_TheCatalystProtocol_v11.1.md                  | 11.1   | [x]    | 
-AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md       | 11.0   | [x]    | 
+AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md       | 11.0   | [x]    | 
 AOP-SBT-001_SpiritBombTechnique_v11.0.md                     | 11.0   | [ ]    | 
 AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md  | 11.0   | [x]    | 
 AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md             | 11.0   | [x]    | 

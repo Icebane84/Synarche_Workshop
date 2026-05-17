@@ -58,7 +58,7 @@ The workspace possessed powerful enforcement tools, but they lacked "Governance 
 ### 2. The Synthesis (Insight)
 
 To enter the **Agentic Era**, our enforcers must be canonized. They are not just tools; they are the immune system of
-the Synarchy.
+the Synarche.
 
 1. **Canonization of Ruff (`CFG-RUFF-001`)**:
    - Injected the **13-point UIP Header** into `Synarche_Workspace/pyproject.toml`.

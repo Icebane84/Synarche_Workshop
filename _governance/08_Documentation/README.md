@@ -14,13 +14,16 @@ Master archives for architectural blueprints, protocols, and linguistic anchors.
 
 ## 🏮 Sign on the Door
 
+- **Artifact ID**: `GVRN.Documentation.Index`
+
 - **Status**: [ACTIVE]
 - **Governance Class**: `Informational Layer`
 - **Index**: [GVRN.Documentation.Index.md](GVRN.Documentation.Index.md)
 
 ## 🛖 Associated Skills
 
-- **[Soul Forging](../../.agent/skills/Soul%20Forging/README.md)**: Used to draft documentation with **Liquid Glass** resonance.
+- **[Soul Forging](../../.agent/skills/Soul%20Forging/README.md)**: Used to draft documentation with **Liquid Glass**
+  resonance.
 
 ## 📂 Key Anchors
 

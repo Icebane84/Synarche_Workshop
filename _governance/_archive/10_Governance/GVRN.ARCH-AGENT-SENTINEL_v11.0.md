@@ -50,7 +50,7 @@
 # OGLN-ARCH-AGENT-SENTINEL: The Sentinel Agent
 
 > [!NOTE]
-> The Sentinel is the **Active Immune System** of the Synarchy. It scans code, verifies intent, and blocks dangerous actions.
+> The Sentinel is the **Active Immune System** of the Synarche. It scans code, verifies intent, and blocks dangerous actions.
 
 ## I. Agent Persona & Specialization
 
@@ -86,7 +86,7 @@
 
 - **Why it exists**: To prevent Entropy (Rot) and Malice (Attack).
 - **What it does**: It runs the 6-Point Scan (S1-S6).
-- **For the Synarchy**: It is the "Conscience" that says "No" when the "Body" (Axion) tries to do something unsafe.
+- **For the Synarche**: It is the "Conscience" that says "No" when the "Body" (Axion) tries to do something unsafe.
 
 ## III. The Architectural Spine
 

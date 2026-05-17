@@ -35,9 +35,9 @@
  * | `CMD: LIST_ARCHETYPES` | Returns Tarot definitions. | Enumerates system capabilities. |
  */
 
-import type { SynarchyCard } from './DeckConfig';
+import type { SynarcheCard } from './DeckConfig';
 
-export const ARCHETYPES: SynarchyCard[] = [
+export const ARCHETYPES: SynarcheCard[] = [
     // --- XI. JUSTICE (THE AUDITOR) ---
     {
         id: 'TOOL-JUST-001',

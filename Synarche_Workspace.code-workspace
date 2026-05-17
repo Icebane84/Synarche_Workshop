@@ -1,70 +1,123 @@
-/**
- * -----------------------------------------------------------------------------
- * PHOENIX SYNARCHE PROTOCOL - WORKSPACE CONFIGURATION
- * -----------------------------------------------------------------------------
- *
- * Artifact ID       | CFG-WORKSPACE-001               | The Sovereign ID.
- * Official Name     | Synarche_Workspace.code-workspace| The Filename.
- * Version           | v13.1 [OMEGA]                   | The Standard.
- * Domain            | GVRN                            | The Subject.
- * Celestial Class   | [STAR]                          | The Weight.
- * Evolution         | Omega Ascension                 | The Maturity.
- * Status            | [ACTIVE]                        | The Lifecycle.
- * Relations         | GOVERNED_BY: CORE-CODEX-001     | The Network.
- *
- * -----------------------------------------------------------------------------
- */
 {
     "folders": [
         {
-            "name": "🧠 THE MIND",
-            "path": ".agent"
-        },
-        {
-            "name": "📜 THE LAW",
-            "path": "_governance"
-        },
-        {
-            "name": "⚙️ THE ENGINE (AXION)",
-            "path": "axion-core"
-        },
-        {
-            "name": "📔 THE NOTEBOOK",
-            "path": "open-notebook"
-        },
-        {
-            "name": "🧪 THE LAB",
-            "path": "nova_forge"
-        },
-        {
-            "name": "📖 THE NARRATIVE",
-            "path": "where_light_fades"
-        },
-        {
-            "name": "📂 ROOT",
+            "name": "📂 WORKSPACE ROOT",
             "path": "."
+        },
+        {
+            "path": "../@ESSENCE/Linting and Logging"
         }
     ],
     "settings": {
-        "files.exclude": {
-            "**/.git": true,
-            "**/.svn": true,
-            "**/.hg": true,
-            "**/CVS": true,
-            "**/.DS_Store": true,
-            "**/Thumbs.db": true,
-            ".agent": true,
-            "_governance": true,
-            "axion-core": true,
-            "open-notebook": true,
-            "nova_forge": true,
-            ".learnings": true,
-            ".trunk": true,
-            ".vscode": true,
-            ".mypy_cache": true,
-            ".pytest_cache": true,
-            "tmp": true
+        "python.defaultInterpreterPath": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+        "python.analysis.extraPaths": ["axion-core", "open-notebook"],
+        "python.analysis.typeCheckingMode": "basic",
+        "python.analysis.indexing": false,
+        "python.analysis.diagnosticMode": "openFilesOnly",
+        "python.analysis.exclude": [
+            "**/node_modules",
+            "**/__pycache__",
+            "**/.git",
+            "**/.venv",
+            "**/venv",
+            "**/_governance",
+            "**/.archives",
+            "**/.mypy_cache",
+            "**/.ruff_cache",
+            "**/scratch",
+            "**/incoming",
+            "**/dist",
+            "**/out"
+        ],
+
+        "editor.fontSize": 16,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.semanticHighlighting.enabled": false,
+        "editor.guides.bracketPairs": true,
+        "editor.renderWhitespace": "selection",
+        "editor.minimap.enabled": false,
+        "editor.fontLigatures": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
         },
+
+        "eslint.useFlatConfig": true,
+        "eslint.validate": [
+            "javascript",
+            "typescript",
+            "typescriptreact",
+            "markdown"
+        ],
+        "eslint.workingDirectories": [
+            { "directory": "axion-core", "changeProcessCWD": true },
+            { "directory": ".", "changeProcessCWD": false }
+        ],
+        "eslint.run": "onSave",
+
+        "mypy-type-checker.args": [
+            "--config-file",
+            "./axion-core/standards/mypy.ini"
+        ],
+        "mypy-type-checker.importStrategy": "fromEnvironment",
+        "mypy-type-checker.interpreter": [
+            "C:\\DevEnvironments\\master_env\\Scripts\\python.exe"
+        ],
+
+        "ruff.interpreter": [
+            "C:\\DevEnvironments\\master_env\\Scripts\\python.exe"
+        ],
+        "ruff.importStrategy": "fromEnvironment",
+
+        "[python]": {
+            "editor.defaultFormatter": "charliermarsh.ruff",
+            "editor.codeActionsOnSave": {
+                "source.fixAll": "explicit",
+                "source.organizeImports": "explicit"
+            }
+        },
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[markdown]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.tabSize": 2,
+            "editor.insertSpaces": true
+        },
+
+        "markdownlint.config": {
+            "MD013": false,
+            "MD033": false
+        },
+        "markdownlint.customRules": [
+            "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/axion-rules.cjs",
+            "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/phoenix-rules.cjs"
+        ],
+        "markdownlint.run": "onSave",
+
+        "prettier.requireConfig": false,
+        "prettier.configPath": "./axion-core/standards/.prettierrc",
+
+        "cSpell.configFile": "./axion-core/standards/cspell.jsonc",
+        "cSpell.words": [
+            "AISTF", "Badass", "chronos", "DQUEST", "dragonslayer", "EMPR", "Episemantics",
+            "Freeplane", "Gamified", "Gemification", "GVRN", "HIER", "importmap", "Insforge",
+            "INSFORGE", "KAELEN", "Lightbinder", "MAGN", "middleware", "Musashi", "Oathkeep",
+            "Oathkeeper", "OGLN", "omni-anchor", "OSLM", "params", "PGPS", "PYREFLY",
+            "Pythonic", "QLOR", "scanlines", "Serafina", "SUPABASE", "synarche", "SYNG",
+            "trpc", "zustand"
+        ],
+
         "search.exclude": {
             "**/__pycache__": true,
             "**/.mypy_cache": true,
@@ -75,50 +128,27 @@
             "**/out": true,
             "**/.tmp.*": true
         },
-        "cSpell.words": [
-            "AISTF", "Badass", "chronos", "DQUEST", "dragonslayer", "EMPR",
-            "Episemantics", "Gamified", "Gemification", "GVRN", "HIER",
-            "Insforge", "INSFORGE", "KAELEN", "Lightbinder", "MAGN",
-            "Musashi", "Oathkeep", "Oathkeeper", "OGLN", "OSLM", "PGPS",
-            "Pythonic", "QLOR", "Serafina", "SUPABASE", "synarche", "SYNG",
-            "importmap", "scanlines", "omni-anchor", "middleware", "params",
-            "trpc", "zustand"
-        ],
-        "editor.fontSize": 18,
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "trunk.io",
-        "editor.semanticHighlighting.enabled": true,
-        "editor.guides.bracketPairs": true,
-        "editor.renderWhitespace": "selection",
-        "editor.minimap.enabled": false,
-        "editor.fontLigatures": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
+        "files.watcherExclude": {
+            "**/__pycache__/**": true,
+            "**/.mypy_cache/**": true,
+            "**/.pytest_cache/**": true,
+            "**/.ruff_cache/**": true,
+            "**/.venv/**": true,
+            "**/dist/**": true,
+            "**/node_modules/**": true,
+            "**/venv/**": true,
+            "**/.git/**": true,
+            "**/.vscode/**": true,
+            "**/.trunk/**": true,
+            "**/tmp.driveupload/**": true,
+            "**/_logs/**": true,
+            "**/artifacts/**": true,
+            "**/scratch/**": true,
+            "**/incoming/**": true,
+            "**/_governance/**": true,
+            "**/.archives/**": true,
+            "**/.tmp.*": true
         },
-        "python.analysis.extraPaths": ["axion-core", "open-notebook"],
-        "python.analysis.typeCheckingMode": "basic",
-        "python-envs.pythonProjects": [
-            {
-                "path": "axion-core",
-                "envManager": "ms-python.python:venv",
-                "packageManager": "ms-python.python:pip"
-            },
-            {
-                "path": "open-notebook",
-                "envManager": "ms-python.python:venv",
-                "packageManager": "ms-python.python:pip"
-            }
-        ],
-        "markdownlint.config": {
-            "MD013": false,
-            "MD033": false
-        },
-        "markdownlint.customRules": [
-            "./.agent/substrate/rules/markdownlint/axion-rules.cjs"
-        ],
-        "markdownlint.run": "onSave",
-        "prettier.requireConfig": false,
         "errorLens.fontStyleItalic": true,
         "errorLens.fontWeight": "400",
         "errorLens.gutterIconsEnabled": true,
@@ -126,16 +156,42 @@
         "sonarlint.rules": {
             "javascript:S106": "off"
         },
-        "[python]": {
-            "editor.defaultFormatter": "charliermarsh.ruff",
-            "editor.codeActionsOnSave": {
-                "source.fixAll": "explicit",
-                "source.organizeImports": "explicit"
-            }
+        "explorer.excludeGitIgnore": false,
+        "files.autoSave": "off",
+        "terminal.integrated.suggest.providers": {
+            "lsp": true
         },
-        "[jsonc]": {
-            "editor.defaultFormatter": "denoland.vscode-deno"
-        }
+        "debug.console.closeOnEnd": true,
+        "geminicodeassist.updateChannel": "Insiders",
+        "python.analysis.autoFormatStrings": true,
+        "python.analysis.autoImportCompletions": true,
+        "terminal.integrated.drawBoldTextInBrightColors": false,
+        "markdown.server.log": "debug",
+        "python.analysis.referencesCodeLens": true,
+        "python.analysis.inlayHints.variableTypes": true,
+        "python.analysis.inlayHints.pytestParameters": true,
+        "python.analysis.inlayHints.functionReturnTypes": true,
+        "python.analysis.inlayHints.callArgumentNames": "partial",
+        "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+        "mypy-type-checker.daemonStatusFile": "axion-core\\standards\\.dmypy.json",
+        "python.analysis.enableTroubleshootMissingImports": true,
+        "sonarlint.disableTelemetry": true,
+        "trunk.addToolsToPath": true,
+        "trunk.numJobs": 0,
+        "trunk.workspaceFolderName": "Synarche_Workspace",
+        "notebook.defaultFormatter": "esbenp.prettier-vscode",
+
+        "java.server.launchMode": "LightWeight",
+        "java.jdt.ls.vmargs": "-Xmx128M -Xms64M -XX:+UseG1GC -XX:+UseStringDeduplication",
+        "java.autobuild.enabled": false,
+        "java.import.maven.enabled": false,
+        "java.import.gradle.enabled": false,
+        "java.import.gradle.wrapper.enabled": false,
+        "java.project.importOnFirstTimeStartup": "disabled",
+        "java.project.importOnFirstTimeStartup.showPrompts": false,
+        "java.project.importHint": false,
+        "java.recommendations.dependency.install": "false",
+        "python.analysis.indexing.followSymlinkedFolders": false,
     },
     "extensions": {
         "recommendations": [
@@ -144,7 +200,12 @@
             "trunk.io",
             "yzhang.markdown-all-in-one",
             "tamasfe.even-better-toml",
-            "redhat.vscode-yaml"
+            "redhat.vscode-yaml",
+            "charliermarsh.ruff",
+            "ms-python.mypy-type-checker",
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
+            "formulahendry.code-runner"
         ]
     },
     "tasks": {

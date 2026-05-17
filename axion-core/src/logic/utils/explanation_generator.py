@@ -49,7 +49,7 @@ Conforms to OGLN/AISTF v15.0 governance and documentation standards.
 
 import json
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 log = logging.getLogger(__name__)
 
@@ -64,25 +64,26 @@ DEFAULT_TEMPLATES = {
     "action_confirmation": "Understood. Proceeding based on the following context:\n{memories_formatted}",
 }
 
+
 class ExplanationGenerator:
     """
     Generates user-facing explanations for the agent's responses.
     Translates internal cognitive states and memory retrievals into human-readable transparency blocks.
     """
 
-    def __init__(self, templates: Optional[Dict[str, str]] = None) -> None:
+    def __init__(self, templates: dict[str, str] | None = None) -> None:
         """
         Initializes the ExplanationGenerator with optional custom templates.
 
         Args:
             templates: A dictionary of intent-to-template string mappings.
         """
-        self.templates: Dict[str, str] = DEFAULT_TEMPLATES.copy()
+        self.templates: dict[str, str] = DEFAULT_TEMPLATES.copy()
         if templates:
             self.templates.update(templates)
         log.info("ExplanationGenerator (OMEGA) initialized.")
 
-    def determine_query_type(self, query_analysis: Dict[str, Any]) -> str:
+    def determine_query_type(self, query_analysis: dict[str, Any]) -> str:
         """
         Categorizes the query intent to select the appropriate explanation template.
 
@@ -110,7 +111,7 @@ class ExplanationGenerator:
 
         return "factual_question"
 
-    def _format_memory_citation(self, memory: Dict[str, Any]) -> str:
+    def _format_memory_citation(self, memory: dict[str, Any]) -> str:
         """
         Formats a single memory citation block for inclusion in the explanation.
 
@@ -126,9 +127,9 @@ class ExplanationGenerator:
 
     def generate(
         self,
-        query_analysis: Dict[str, Any],
-        used_memories: List[Dict[str, Any]],
-        inferred_relationship: Optional[str] = None,
+        query_analysis: dict[str, Any],
+        used_memories: list[dict[str, Any]],
+        inferred_relationship: str | None = None,
         snippet_length: int = DEFAULT_SNIPPET_LENGTH,
     ) -> str:
         """
@@ -171,6 +172,7 @@ class ExplanationGenerator:
         except Exception as e:
             log.exception(f"Explanation formatting error: {e}")
             return f"Aligned with findings: {memory_ids}"
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.explanation.generator VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28

@@ -1,5 +1,0 @@
-{
-  "status": "PASS",
-  "total_issues": 0,
-  "issues": []
-}

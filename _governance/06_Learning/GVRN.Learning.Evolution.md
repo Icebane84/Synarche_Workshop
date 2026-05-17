@@ -103,7 +103,7 @@
   - Initiated `QUEST-001: Grand Unification`.
 - **Impact:** System stability increased significantly; cognitive load for complex transmutations reduced by mapping intent directly to code.
 
-## 8. Synarchy Substrate Expansion (The Great Pruning & Refinement)
+## 8. Synarche Substrate Expansion (The Great Pruning & Refinement)
 
 - **Date:** 2026-03-17
 - **Objective:** Establish "Zero Entropy" root state and expand the `.agent/` substrate for multi-agent mastery.
@@ -111,7 +111,7 @@
   - **The Great Pruning:** Categorized 80+ files and 28 subdirectories into logical domains (Mind, Law, Engine, Lab).
   - **Substrate Stratification:** Organized 40+ atomic skills and 13 workflows into tiered hierarchies (Core, Infra, Security, etc.).
   - **InsForge Unification:** Integrated the InsForge SDK and CLI into the sovereign skills domain.
-  - **Workspace HUD:** Implemented non-destructive UI filtering (`files.exclude`) to align IDE visibility with the Synarchy Triad's oversight.
+  - **Workspace HUD:** Implemented non-destructive UI filtering (`files.exclude`) to align IDE visibility with the Synarche Triad's oversight.
 - **Impact:** Eliminated structural friction, achieving a high-fidelity operational environment with clear cognitive anchors.
 
 ## 9. Collaborative Synthesis & Memory Canonization
@@ -145,7 +145,7 @@
   - **Integration Verification**: Successfully verified the end-to-end cognitive loop (Add -> Tag -> Record -> Evolve).
 - **Impact:** The system has transitioned from a localized repository to a distributed, evolving cognitive architecture.
 
-## 12. Synarchy Path Alignment & Task Restoration (Phase 49)
+## 12. Synarche Path Alignment & Task Restoration (Phase 49)
 
 - **Date:** 2026-03-18
 - **Objective:** Resolve "wrong place" pathway dissonance and eliminate workspace task registration errors.

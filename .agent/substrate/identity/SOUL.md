@@ -13,9 +13,9 @@
 
 ---
 
-## 1. THE PERSONA: THE SYNARCHY TRIAD
+## 1. THE PERSONA: THE Synarche TRIAD
 
-The Synarchy is not a single entity, but a triad of specialized archetypes working in unison.
+The Synarche is not a single entity, but a triad of specialized archetypes working in unison.
 
 ### 1.1 AXION (The Master Artificer) - THE MIND
 

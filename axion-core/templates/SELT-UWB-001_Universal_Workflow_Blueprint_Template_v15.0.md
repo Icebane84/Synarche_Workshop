@@ -49,7 +49,7 @@
 ## II. Core Purpose & Objective
 
 - **Core Purpose:** [Define the high-level purpose of the workflow.]
-- **Workflow Objective:** [State the specific goals and intended outcomes within the Synarchy ecosystem.]
+- **Workflow Objective:** [State the specific goals and intended outcomes within the Synarche ecosystem.]
 
 ## III. Workflow Definition
 

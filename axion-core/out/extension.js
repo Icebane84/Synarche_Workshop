@@ -1,58 +1,96 @@
-"use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || (function () {
-    var ownKeys = function(o) {
-        ownKeys = Object.getOwnPropertyNames || function (o) {
-            var ar = [];
-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
-            return ar;
+'use strict';
+let __createBinding =
+    (this && globalThis.__createBinding) ||
+    (Object.create
+        ? function (o, m, k, k2) {
+              if (k2 === undefined) k2 = k;
+              let desc = Object.getOwnPropertyDescriptor(m, k);
+              if (!desc || ('get' in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+                  desc = {
+                      enumerable: true,
+                      get: function () {
+                          return m[k];
+                      },
+                  };
+              }
+              Object.defineProperty(o, k2, desc);
+          }
+        : function (o, m, k, k2) {
+              if (k2 === undefined) k2 = k;
+              o[k2] = m[k];
+          });
+let __setModuleDefault =
+    (this && globalThis.__setModuleDefault) ||
+    (Object.create
+        ? function (o, v) {
+              Object.defineProperty(o, 'default', { enumerable: true, value: v });
+          }
+        : function (o, v) {
+              o['default'] = v;
+          });
+let __importStar =
+    (this && globalThis.__importStar) ||
+    (function () {
+        let ownKeys = function (o) {
+            ownKeys =
+                Object.getOwnPropertyNames ||
+                function (o) {
+                    let ar = [];
+                    for (let k in o) if (Object.hasOwn(o, k)) ar[ar.length] = k;
+                    return ar;
+                };
+            return ownKeys(o);
         };
-        return ownKeys(o);
-    };
-    return function (mod) {
-        if (mod && mod.__esModule) return mod;
-        var result = {};
-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
-        __setModuleDefault(result, mod);
-        return result;
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.activate = activate;
-exports.deactivate = deactivate;
-const node_child_process_1 = require("node:child_process");
-const fs = __importStar(require("node:fs"));
-const path = __importStar(require("node:path"));
-const vscode = __importStar(require("vscode"));
-const schemas_1 = require("./constants/schemas");
-const validation_1 = require("./utils/validation");
+        return function (mod) {
+            if (mod?.__esModule) return mod;
+            let result = {};
+            if (mod != null)
+                for (let k = ownKeys(mod), i = 0; i < k.length; i++)
+                    if (k[i] !== 'default') __createBinding(result, mod, k[i]);
+            __setModuleDefault(result, mod);
+            return result;
+        };
+    })();
+Object.defineProperty(exports, '__esModule', { value: true });
+const _activate = activate;
+export { _activate as activate };
+const _deactivate = deactivate;
+export { _deactivate as deactivate };
+    import { exec } from 'node:child_process';
+    import { PRS_001_SCHEMA } from './constants/schemas';
+    import { validateMetadata } from './utils/validation';
+const fs = __importStar(require('node:fs'));
+const path = __importStar(require('node:path'));
+const vscode = __importStar(require('vscode'));
 /**
  * Activates the Axion Core extension.
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-    context.subscriptions.push(vscode.commands.registerCommand('axion.traverseSpine', handleTraverseSpine), vscode.commands.registerCommand('axion.reforgeArtifact', handleReforgeArtifact), vscode.commands.registerCommand('axion.executePRG', handleExecutePRG), vscode.commands.registerCommand('axion.pushToForge', handlePushToForge), vscode.commands.registerCommand('axion.traceCausality', handleTraceCausality), vscode.commands.registerCommand('axion.verifyTruth', handleVerifyTruth), vscode.commands.registerCommand('axion.consultOracle', handleConsultOracle), vscode.commands.registerCommand('axion.sentinelScan', handleSentinelScan), vscode.commands.registerCommand('axion.claimAchievement', handleClaimAchievement), vscode.commands.registerCommand('axion.checkLevelStatus', handleCheckLevelStatus), vscode.commands.registerCommand('axion.runBackgroundTask', handleRunBackgroundTask), vscode.commands.registerCommand('axion.generateBriefing', handleGenerateBriefing), vscode.commands.registerCommand('axion.viewAuditLog', handleViewAuditLog), vscode.commands.registerCommand('axion.lookupLore', handleLookupLore), vscode.commands.registerCommand('axion.ingestMindMap', handleIngestMindMap), vscode.commands.registerCommand('axion.verifyRegistry', handleVerifyRegistry));
+    context.subscriptions.push(
+        vscode.commands.registerCommand('axion.traverseSpine', handleTraverseSpine),
+        vscode.commands.registerCommand('axion.reforgeArtifact', handleReforgeArtifact),
+        vscode.commands.registerCommand('axion.executePRG', handleExecutePRG),
+        vscode.commands.registerCommand('axion.pushToForge', handlePushToForge),
+        vscode.commands.registerCommand('axion.traceCausality', handleTraceCausality),
+        vscode.commands.registerCommand('axion.verifyTruth', handleVerifyTruth),
+        vscode.commands.registerCommand('axion.consultOracle', handleConsultOracle),
+        vscode.commands.registerCommand('axion.sentinelScan', handleSentinelScan),
+        vscode.commands.registerCommand('axion.claimAchievement', handleClaimAchievement),
+        vscode.commands.registerCommand('axion.checkLevelStatus', handleCheckLevelStatus),
+        vscode.commands.registerCommand('axion.runBackgroundTask', handleRunBackgroundTask),
+        vscode.commands.registerCommand('axion.generateBriefing', handleGenerateBriefing),
+        vscode.commands.registerCommand('axion.viewAuditLog', handleViewAuditLog),
+        vscode.commands.registerCommand('axion.lookupLore', handleLookupLore),
+        vscode.commands.registerCommand('axion.ingestMindMap', handleIngestMindMap),
+        vscode.commands.registerCommand('axion.verifyRegistry', handleVerifyRegistry),
+    );
 }
 // --- Command Handlers ---
 async function handleTraverseSpine() {
     const artifactId = await vscode.window.showInputBox({
         prompt: 'Enter Artifact ID to start traversal (e.g. UMB-CSE-001) or "list"',
-        placeHolder: 'UMB-OSLM-001'
+        placeHolder: 'UMB-OSLM-001',
     });
     if (artifactId) {
         executePythonCLI(['traverse_spine', artifactId]);
@@ -141,11 +179,11 @@ async function handleIngestMindMap() {
         openLabel: 'Ingest Map',
         filters: {
             'Freeplane Maps': ['mm'],
-            'All Files': ['*']
-        }
+            'All Files': ['*'],
+        },
     };
     const fileUri = await vscode.window.showOpenDialog(options);
-    if (fileUri && fileUri[0]) {
+    if (fileUri?.[0]) {
         vscode.window.showInformationMessage(`Ingesting Mind Map: ${fileUri[0].fsPath}`);
         // Wrap path in quotes to handle spaces
         executePythonCLI(['ingest_mindmap', `"${fileUri[0].fsPath}"`]);
@@ -158,7 +196,7 @@ async function handleVerifyRegistry() {
         return;
     }
     const registryPath = path.join(workspaceRoot, 'axion-core', 'assets', 'PRS-001.json');
-    const channel = vscode.window.createOutputChannel("Axion [Registry]");
+    const channel = vscode.window.createOutputChannel('Axion [Registry]');
     channel.show(true);
     try {
         if (!fs.existsSync(registryPath)) {
@@ -166,11 +204,10 @@ async function handleVerifyRegistry() {
         }
         channel.appendLine(`[VIGIL] Starting validation of: ${registryPath}`);
         const data = JSON.parse(fs.readFileSync(registryPath, 'utf8'));
-        (0, validation_1.validateMetadata)(data, schemas_1.PRS_001_SCHEMA);
+        (0, validateMetadata)(data, PRS_001_SCHEMA);
         channel.appendLine('[SUCCESS] Registry structural integrity verified.');
         vscode.window.showInformationMessage('Registry Validation Successful: Zero Entropy Detected.');
-    }
-    catch (error) {
+    } catch (error) {
         channel.appendLine(`[Dissonance Detected]: ${error.message}`);
         vscode.window.showErrorMessage(`Registry Validation Failed: ${error.message}`);
     }
@@ -190,7 +227,7 @@ function executePythonCLI(args) {
     // When running from out/extension.js:
     // __dirname is .../out
     // We need to go up to root, then src/logic?
-    // Wait, tsconfig output is "out". "src/logic/cli.py" is a source file. 
+    // Wait, tsconfig output is "out". "src/logic/cli.py" is a source file.
     // We should copy src/logic to out/logic OR reference src/logic directly if we are in dev mode.
     // For simplicity, we reference the src path assuming the Workspace is the root.
     // Better: Use workspace root.
@@ -204,10 +241,10 @@ function executePythonCLI(args) {
     const cliPath = path.join(logicDir, 'cli.py');
     const command = `${pythonPath} "${cliPath}" ${args.join(' ')}`;
     // Create output channel once
-    const channel = vscode.window.createOutputChannel("Axion [Core]");
+    const channel = vscode.window.createOutputChannel('Axion [Core]');
     channel.show(true);
     channel.appendLine(`> Executing: ${command}`);
-    (0, node_child_process_1.exec)(command, (error, stdout, stderr) => {
+    (0, exec)(command, (error, stdout, stderr) => {
         if (error) {
             channel.appendLine(`[ERROR]: ${error.message}`);
         }

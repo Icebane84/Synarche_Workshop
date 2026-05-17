@@ -33,7 +33,7 @@ Version: 1.0
 Status: CANONIZED
 Compliance: OGLN v11.0
 Genesis: 
-  - Author: The Synarchy Workshop
+  - Author: The Synarche Workshop
   - Date: 2026-01-25
   - Timestamp: 1769338850
 Tags: 

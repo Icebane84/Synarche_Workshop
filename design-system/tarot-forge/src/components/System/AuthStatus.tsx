@@ -23,7 +23,7 @@ export const AuthStatus = (): ReactElement => {
     const handleLogin = async (): Promise<void> => {
         // For simplicity, we'll use OAuth or Magic Link.
         // Adjust this to your preferred auth method, e.g., GitHub or Google
-        const email = prompt('Enter email for magic link login:', 'initiate@synarchy.com');
+        const email = prompt('Enter email for magic link login:', 'initiate@Synarche.com');
         if (!email) return;
 
         const { error } = await supabase.auth.signInWithOtp({

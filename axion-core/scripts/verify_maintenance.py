@@ -4,14 +4,14 @@ import os
 import sys
 
 # Add src to path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "src")))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
 from logic.memory.memory_system import MemorySystem
 
 
 async def verify_maintenance() -> None:
     logging.basicConfig(level=logging.INFO)
-    print("--- 🧠 Memory Maintenance & Transition Audit ---")
+    print("--- Memory Maintenance & Transition Audit ---")
     
     mem_sys = MemorySystem()
     if mem_sys.storage is None:

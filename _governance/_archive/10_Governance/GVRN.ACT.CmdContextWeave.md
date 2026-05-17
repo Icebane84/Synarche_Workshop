@@ -46,7 +46,7 @@ UIP: GUCA-CWA-001 Title: ContextWeave Command Definition Source:
 Description: > Defines the logic for establishing "Context Vectors" (Bidirectional Semantic Links) within the Cognitive
 Loom, enabling high-fidelity automated synthesis. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769339000
 

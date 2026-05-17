@@ -81,7 +81,7 @@
 
 - **Why it exists**: To make the AI feel "Alive" and "Proactive".
 - **What it does**: Runs background tasks (The ASC).
-- **For the Synarchy**: Turns wasted cycles into value.
+- **For the Synarche**: Turns wasted cycles into value.
 
 ## III. The Architectural Spine
 

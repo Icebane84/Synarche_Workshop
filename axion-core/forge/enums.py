@@ -23,8 +23,6 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Any, TypedDict, cast
 
-from dotenv.variables import Literal
-
 # Resolve GVRN Standards
 STANDARDS_PATH = "c:/Users/Chris/Synarche_Workspace/_governance/13_Standardization/GVRN.Standards.json"
 
@@ -40,7 +38,8 @@ STANDARDS = load_standards()
 SOVEREIGN_ID_REGEX = STANDARDS.get("regex", {}).get("SOVEREIGN_ID", r"^[A-Z0-9\-]{3,12}(\.[A-Z0-9_\-\.]+){0,5}$")
 
 # GVRN Constants
-GVRN_STANDARD_VERSION = "v15.0 [OMEGA]"
+SYNARCHE_STANDARD = "v15.0 [OMEGA]"
+GVRN_STANDARD_VERSION = SYNARCHE_STANDARD
 SOVEREIGN_ZERO_ID = "f0f0f0f0-f0f0-4f0f-af0f-f0f0f0f0f0f0"
 
 
@@ -327,7 +326,7 @@ class KineticStage(str, Enum):
 
 
 class SubSystem(str, Enum):
-    """Functional clusters within the Synarchy."""
+    """Functional clusters within the Synarche."""
 
     CODEX = "Codex"  # Supreme Law & High Gate
     REGISTRY = "Registry"  # Inventories & Masters
@@ -345,7 +344,7 @@ class SubSystem(str, Enum):
     FORGE = "Forge"  # Core Engine Logic
     TRANS = "Transclusion"  # Transclusion Engine or
     ORCHESTRATOR = "Orchestrator"  # Orchestration Engine
-    SYNARCHE = "Synarche"  # Synarchy Engine
+    SYNARCHE = "Synarche"  # Synarche Engine
     KINETIC = "Kinetic"  # Delivery Subsystem
     SYNTHESIS = "Synthesis"  # Cognitive Synthesis Logic
     SECURITY = "Security"  # Noetic Immune System
@@ -361,7 +360,7 @@ class SubSystem(str, Enum):
 
 
 class CelestialBody(str, Enum):
-    """The Celestial Bodies of the Synarchy."""
+    """The Celestial Bodies of the Synarche."""
 
     SUN = "SUN"  # The Core
     MOON = "MOON"  # The Reflection
@@ -373,7 +372,7 @@ class CelestialBody(str, Enum):
 
 
 class DataStream(str, Enum):
-    """The Data Streams of the Synarchy."""
+    """The Data Streams of the Synarche."""
 
     INPUT = "INPUT"  # The Input Stream
     OUTPUT = "OUTPUT"  # The Output Stream
@@ -446,7 +445,7 @@ class SophiaIntegrityError(SophiaError):
 
 
 class EpisemanticMarker(str, Enum):
-    """The Episemantic Markers of the Synarchy."""
+    """The Episemantic Markers of the Synarche."""
 
     K_NEXUS = "κ-nexus"  # The Nexus of Creation
     K_TEMPUS = "κ-tempus"  # The Nexus of Time

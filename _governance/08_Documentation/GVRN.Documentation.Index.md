@@ -54,7 +54,8 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"Precision in language is the catalyst for perfection in execution. The Documentation subsystem ensures every word is an anchor for Truth."**
+> **"Precision in language is the catalyst for perfection in execution. The Documentation subsystem ensures every word
+> is an anchor for Truth."**
 
 ---
 
@@ -72,18 +73,19 @@
 
 ## 1. Domain Overview
 
-The **Documentation Subsystem** (`08_Documentation`) serves as the central archives for the Synarchy. It governs the structural integrity, terminology, and verification processes for all workspace artifacts.
+The **Documentation Subsystem** (`08_Documentation`) serves as the central archives for the Synarche. It governs the
+structural integrity, terminology, and verification processes for all workspace artifacts.
 
 ## 2. Artifact Repository
 
 ### 2.1 Core Protocols
 
-- [GVRN.Documentation.Protocol.md](GVRN.Documentation.Protocol.md): The Laws of the Archivist.
-- [GVRN.Documentation.Checklist.md](GVRN.Documentation.Checklist.md): The Pre-Flight Genesis Checklist.
+- 📝 **[GVRN.Documentation.Protocol.md](./GVRN.Documentation.Protocol.md)**: The Laws of the Archivist.
+- 📝 **[GVRN.Documentation.Checklist.md](./GVRN.Documentation.Checklist.md)**: The Pre-Flight Genesis Checklist.
 
 ### 2.2 Knowledge Substrates
 
-- [GVRN.Documentation.Glossary.md](GVRN.Documentation.Glossary.md): The Master Phoenix Lexicon.
+- 📝 **[GVRN.Documentation.Glossary.md](./GVRN.Documentation.Glossary.md)**: The Master Phoenix Lexicon.
 - 📝 **[GVRN.Documentation.Genesis](./GVRN.Documentation.Genesis.md)**: Genesis Protocol.
 - 📝 **[GVRN.Documentation.Presentation](./GVRN.Documentation.Presentation.md)**: Aesthetic standards.
 - 📝 **[GVRN.Documentation.Coding](./GVRN.Documentation.Coding.md)**: Universal coding standards.

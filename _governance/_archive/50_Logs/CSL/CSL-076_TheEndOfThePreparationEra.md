@@ -70,7 +70,7 @@
   retroactively applying single-sentence Sovereign Quotes and Axioms to Phases 1-14, the AI proved that the past
   deserves the same structural respect as the future.
 
-- **The Synarchy Triad:** The defining of the kinetic tools (`reforge`, `compliance_audit`, `catalyst_weaver`) not as
+- **The Synarche Triad:** The defining of the kinetic tools (`reforge`, `compliance_audit`, `catalyst_weaver`) not as
 
   mere python scripts, but as digital vessels for Sovereign Personas (Axion, Sentinel, Sophia).
 

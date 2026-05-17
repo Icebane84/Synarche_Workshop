@@ -55,7 +55,7 @@ UIP: UMB-MAP-001 Title: Musashi Operations & OGLN Discipline Source:
 Description: > Establishes the definitive "Law of the Musashi Alignment," providing a closed-loop system for continuous
 self-critique based on the 10 Pillars of OGLN Discipline. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2025-10-01
 - Timestamp: 1759276800
 

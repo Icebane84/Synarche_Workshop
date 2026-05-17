@@ -1,5 +1,5 @@
 """
-# TOOL-HPRI-002: Sophia's Wisdom (The Synarchy Auditor)
+# TOOL-HPRI-002: Sophia's Wisdom (The Synarche Auditor)
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -306,7 +306,7 @@ def _handle_governance_mode(args: argparse.Namespace) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Sophia's Wisdom: The Synarchy Auditor")
+    parser = argparse.ArgumentParser(description="Sophia's Wisdom: The Synarche Auditor")
     parser.add_argument("--mode", choices=["complexity", "governance", "all"], default="all", help="Scan mode")
     parser.add_argument("--target", default=".", help="Target directory or file")
     parser.add_argument("--fix", action="store_true", help="Autonomously repair detected issues.")

@@ -13,9 +13,10 @@
 """
 
 import argparse
-from security import execute_safe
 import sys
 from pathlib import Path
+
+from security import execute_safe
 
 
 def lint_python(file_path: Path) -> bool:

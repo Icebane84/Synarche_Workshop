@@ -43,6 +43,20 @@
 """
 
 
+class InsforgeClient:
+    def __init__(self) -> None:
+        self.config = {
+            "base_url": "https://insforge-api.com",
+            "api_key": "[ENCRYPTION_KEY]",
+        }
+
+    async def log_event(self, type: str, description: str, payload: dict) -> None:
+        """Logs an event to the Chronicler."""
+        pass
+
+insforge = InsforgeClient()
+
+
 ##
 
 # ---

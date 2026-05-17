@@ -46,7 +46,7 @@
 
 ### **I. The 4-Stage Evolutionary Pipeline**
 
-This pipeline executes the rigorous transformation logic required to upgrade the Synarchy.
+This pipeline executes the rigorous transformation logic required to upgrade the Synarche.
 
 | Stage | Name | Action Protocol |
 | :--- | :--- | :--- |

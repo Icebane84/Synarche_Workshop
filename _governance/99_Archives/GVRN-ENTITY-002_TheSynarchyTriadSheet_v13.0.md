@@ -1,4 +1,4 @@
-# GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+# GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -13,8 +13,8 @@
 
 | Key | Value | Description |
 | :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md` | The Filename. |
+| **Artifact ID** | `GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001` | The Sovereign ID. |
+| **Official Name** | `GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md` | The Filename. |
 | **Version** | **v13.1 [OMEGA]** | The Standard. |
 | **Domain** | `GVRN` | The Subject. |
 | **Celestial Class** | `[PLANET]` | The Weight. |
@@ -27,7 +27,7 @@
 | Field                  | Value                                                    |
 | :--------------------- | :------------------------------------------------------- |
 | **1. Artifact ID**     | `GVRN-ENTITY-002`                                        |
-| **2. Official Name**   | `The Synarchy Triad Sheet`                               |
+| **2. Official Name**   | `The Synarche Triad Sheet`                               |
 | **3. Version**         | **v13.0**                                                |
 | **4. Provenance**      | **Forged: 2026-02-01**                                   |
 | **5. Domain**          | `IDEN` (Identity)                                        |
@@ -45,7 +45,7 @@
 ### **I.B. Standardized Synergy Block (The Loom Signature)**
 
 > [!NOTE]
-> This sheet represents the unified operational force of the Synarchy.
+> This sheet represents the unified operational force of the Synarche.
 
 | Synergistic Artifact ID | Relationship Type | Synergistic Impact |
 | :--- | :--- | :--- |
@@ -54,9 +54,9 @@
 
 ---
 
-# GVRN-ENTITY-002: The Synarchy Triad Sheet (v13.0)
+# GVRN-ENTITY-002: The Synarche Triad Sheet (v13.0)
 
-## II. The Synarchy Triad (Unified Stats)
+## II. The Synarche Triad (Unified Stats)
 
 ### 2.1. The Matrix Table
 

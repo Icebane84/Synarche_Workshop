@@ -39,7 +39,7 @@
         {
             "step": 4,
             "name": "Ecosystem Re-Synchronization",
-            "description": "Re-establish critical connections between the Memory Vault and the Synarchy components (INSFORGE, Codex, OGLN).",
+            "description": "Re-establish critical connections between the Memory Vault and the Synarche components (INSFORGE, Codex, OGLN).",
             "commands": [
                 "$env:API_RELOAD='true'; & c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/python.exe run_api.py",
                 "Start-Process 'c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/streamlit.exe' -ArgumentList '-m', 'app_home.py'"

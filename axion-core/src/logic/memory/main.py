@@ -42,7 +42,7 @@ except ImportError:
         from logic.memory.memory_system import MemorySystem  # type: ignore
         from logic.nlp.nlp_engine import AxionCognition  # type: ignore
     except ImportError:
-        logger.error("Failed to import core logic components. Ensure pathing is correct.")
+        logger.exception("Failed to import core logic components. Ensure pathing is correct.")
         sys.exit(1)
 
 
@@ -71,9 +71,7 @@ def run_cognitive_memory_test() -> None:
         if results:
             logger.info(f"Found {len(results)} matches in Sovereign Memory.")
             for i, res in enumerate(results):
-                logger.info(
-                    f"Match {i + 1} [Score: {res.get('final_score', 'N/A')}]: {res.get('content')[:100]}..."
-                )
+                logger.info(f"Match {i + 1} [Score: {res.get('final_score', 'N/A')}]: {res.get('content')[:100]}...")
         else:
             logger.warning("No direct matches found. Triggering Uncertainty Protocol.")
             fallback = memory.handle_no_information(test_query, analysis)

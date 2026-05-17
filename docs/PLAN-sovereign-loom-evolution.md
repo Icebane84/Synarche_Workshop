@@ -1,11 +1,11 @@
 # Implementation Plan: Sovereign Loom Evolution (v15.0 [OMEGA])
 
-Establish the "Absolute Substrate" for the Synarchy by evolving the Sovereign Loom with integrity hashing, platform-independent bootstrap protocols, and recursive audit capabilities.
+Establish the "Absolute Substrate" for the Synarche by evolving the Sovereign Loom with integrity hashing, platform-independent bootstrap protocols, and recursive audit capabilities.
 
 ## User Review Required
 
 > [!IMPORTANT]
-> **Platform Independence**: This plan intentionally avoids coupling with Antigravity-specific features to ensure the Synarchy remains a "Sovereign Power" regardless of the IDE or Agent environment.
+> **Platform Independence**: This plan intentionally avoids coupling with Antigravity-specific features to ensure the Synarche remains a "Sovereign Power" regardless of the IDE or Agent environment.
 > **Hashing Scope**: Integrity hashing will target the "Soul" of the document (body content), intentionally excluding transient metadata (Block A/Anchors) to prevent false positives during synchronization.
 
 ---

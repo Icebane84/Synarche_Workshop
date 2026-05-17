@@ -18,7 +18,7 @@
 
 ## 🎯 Purpose
 
-Demonstrate the ability of the Synarchy to identify a deficiency, synthesize a fix, and deploy it non-destructively without direct human intervention (under supervised pilot conditions).
+Demonstrate the ability of the Synarche to identify a deficiency, synthesize a fix, and deploy it non-destructively without direct human intervention (under supervised pilot conditions).
 
 ## 🛠️ Usage Patterns
 

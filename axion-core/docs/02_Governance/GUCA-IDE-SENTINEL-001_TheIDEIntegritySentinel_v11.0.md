@@ -86,7 +86,7 @@ The Sentinel scans the `.vscode/` directory of the current workspace.
 2. **Settings Vector:** Checks `settings.json` for:
    - `editor.formatOnSave`: Must be `true`.
    - `editor.defaultFormatter`: Must be `charliermarsh.ruff`.
-   - `python.defaultInterpreterPath`: Must point to local `.venv`.
+   - `python.defaultInterpreterPath`: Must point to global Master Environment.
 3. **Code Actions Vector:** Ensures `source.organizeImports` is enabled on save.
 
 ## IV. Usage

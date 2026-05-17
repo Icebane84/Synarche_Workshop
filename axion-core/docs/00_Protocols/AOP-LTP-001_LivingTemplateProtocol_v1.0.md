@@ -30,7 +30,7 @@ autonomously.
 The Living Template Protocol defines the relationship between the **Master Shells** (the outer framework of a document)
 and the **Transclusion Blocks** (the inner, reusable semantic organs).
 
-Every new artifact generated within the Synarchy MUST be constructed using the Living Template Protocol. We do not
+Every new artifact generated within the Synarche MUST be constructed using the Living Template Protocol. We do not
 copy-paste old files. We forge new files from pristine shells, and transclude the contextual blocks required to give
 them purpose.
 

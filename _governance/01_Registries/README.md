@@ -10,7 +10,7 @@
 
 # 🗄️ Sovereign Registries: \_governance/01_Registries/
 
-Master inventories and state-tracking artifacts for the Synarchy.
+Master inventories and state-tracking artifacts for the Synarche.
 
 ## 🏮 Sign on the Door
 
@@ -26,7 +26,7 @@ Master inventories and state-tracking artifacts for the Synarchy.
 ## 📂 Core Registries
 
 - **GVRN.Registry.ArtifactInventory.md**: The physical asset library.
-- **GVRN.Registry.Ethos.md**: The 42 Laws of the Synarchy.
+- **GVRN.Registry.Ethos.md**: The 42 Laws of the Synarche.
 - **GVRN.Registry.OSLM.md**: The relational grammar.
 
 ---

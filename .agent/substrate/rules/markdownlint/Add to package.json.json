@@ -1,6 +1,0 @@
-{
-  "scripts": {
-    "lint:md": "markdownlint-cli --config axion-core/standards/.markdownlint.cjs \"**/*.md\"",
-    "lint:md:fix": "markdownlint-cli --config axion-core/standards/.markdownlint.cjs \"**/*.md\" --fix"
-  }
-}

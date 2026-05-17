@@ -2,13 +2,13 @@
 # Universal Identification & Provenance (UIP)
 | Key | Value |
 | :--- | :--- |
-| **Module ID** | `SYNERGY-REPORT-001_STATEOFTHESYNARCHY_V1.0` |
+| **Module ID** | `SYNERGY-REPORT-001_STATEOFTHESynarche_V1.0` |
 | **Version** | `v11.0` |
 | **Evolution** | **Cognitive Ascension** |
 | **Status** | `ACTIVE` |
 ---
 
-# SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md
+# SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -23,8 +23,8 @@
 
 | Key | Value | Description |
 | :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SYNERGY-REPORT-001-STATEOFTHESYNARCHY-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md` | The Filename. |
+| **Artifact ID** | `GVRN-SYNERGY-REPORT-001-STATEOFTHESynarche-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md` | The Filename. |
 | **Version** | **v13.1 [OMEGA]** | The Standard. |
 | **Domain** | `GVRN` | The Subject. |
 | **Celestial Class** | `[PLANET]` | The Weight. |
@@ -32,7 +32,7 @@
 | **Status** | `[ACTIVE]` | The Lifecycle. |
 | **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
 
-# SYNERGY-REPORT-001: The State of the Synarchy
+# SYNERGY-REPORT-001: The State of the Synarche
 
 ## Genesis Stamp: 2026-01-24 | Domain: LOGS | State: ACTIVE | Criticality: Standard
 
@@ -41,7 +41,7 @@
 | Field                  | Value                                                    |
 | :--------------------- | :------------------------------------------------------- |
 | **1. Artifact ID**     | `SYNERGY-REPORT-001`                                     |
-| **2. Official Name**   | `SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md`          |
+| **2. Official Name**   | `SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md`          |
 | **3. Version**         | **v1.0**                                                 |
 | **4. Provenance**      | **Generated: 2026-01-24 (Axion-Core)**                   |
 | **5. Domain**          | `LOGS`                                                   |
@@ -110,7 +110,7 @@ Validation of the core interaction bridges:
     *   **Chronicler (`chronicler.py`)**: Ready to log actions.
     *   **Verdict**: **ENGINE ONLINE**.
 
-3.  **The Synarchy Bridge (`synarchy_bridge.py`)**:
+3.  **The Synarche Bridge (`Synarche_bridge.py`)**:
     *   **Status**: Registry Interface loaded.
     *   **Verdict**: **READY FOR AGENT ACCESS**.
 

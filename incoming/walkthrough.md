@@ -45,7 +45,7 @@ I have successfully implemented both Hybrid Retrieval (Phase 28.5) and the Soul-
 
 ### Low-Risk Simulation (System Ready)
 
-- **Input**: `"Initialize the Synarchy Protocol v2.0. CMD: EQUIP_ALL"`
+- **Input**: `"Initialize the Synarche Protocol v2.0. CMD: EQUIP_ALL"`
 - **Blast Radius**: 0.0 (STABLE)
 - **Sentinel Response**: `STATUS: GREEN (Proceed)`
 - **Sovereign Quote**: _"Order is the natural state of a disciplined mind."_

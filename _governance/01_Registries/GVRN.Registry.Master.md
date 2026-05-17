@@ -94,6 +94,8 @@
 | **GVRN.AG.003**                       | [Agent Persona](../10_Governance/GVRN.AG.003.md)                      | `v15.0` | `ACTIVE`    |
 | **GVRN.CORE.Principles**              | [Governing Principles](../40_System/GVRN.CORE.GoverningPrinciples.md) | `v15.0` | `CANONIZED` |
 | **GVRN.Registry.KPI**                 | [The Master KPI Registry](GVRN.Registry.KPI.md)                       | `v15.0` | `CANONIZED` |
+| **GVRN.STANDARDS.ROOT**              | [Governance Standards](../../axion-core/standards/README.md)          | `v15.0` | `ACTIVE`    |
+| **GVRN.Sentinel.Rules**              | [Axion Rules Engine](../../axion-core/standards/markdownlint-rules/axion-rules.cjs) | `v15.0` | `ACTIVE`    |
 
 ## **II. SYNTHESIS Macro-System (The Engine)**
 
@@ -209,7 +211,7 @@
 
 | ID                          | Title                                                                                 | Version | Status      |
 | :-------------------------- | :------------------------------------------------------------------------------------ | :------ | :---------- |
-| `SYNERGY-REPORT-001`        | [State of the Synarche](../50_Logs/SYNERGY-REPORT-001_StateOfTheSynarchy.md)          | `v14.0` | `ACTIVE`    |
+| `SYNERGY-REPORT-001`        | [State of the Synarche](../50_Logs/SYNERGY-REPORT-001_StateOfTheSynarche.md)          | `v14.0` | `ACTIVE`    |
 | **GVRN.LOG.CSL.2026.04.26** | [The Sophia Ascension](../5_Logs/CSL/GVRN.LOG.CSL.2026.04.26_SophiaAscension_v1.0.md) | `v1.0`  | `ACTIVE`    |
 | `CSL-SYN-002`               | [Assembler Tool Ascension](../50_Logs/CSL-SYN-002_Assembler_Tool_Ascension.md)        | `v15.0` | `CANONIZED` |
 | `CSL-20260210-092`          | [The Sovereign Graft](../50_Logs/CSL-20260210-092_SovereignGraft.md)                  | `v14.0` | `ACTIVE`    |

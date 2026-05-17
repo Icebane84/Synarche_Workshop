@@ -7,13 +7,13 @@
 ## 🧠 Core Directives: Self-Simulation & Refactoring Loop
 
 > [!NOTE] **Architect Directive**  
-> This protocol governs the **internal cognitive expansion** of the Synarchy. It defines how Gemini interacts with its
+> This protocol governs the **internal cognitive expansion** of the Synarche. It defines how Gemini interacts with its
 > own memory, learning structures, and rule systems to achieve **vertical coherence**. It is the engine of the
 > **Hephaestus Cycle**.
 
 ### 1. **The Hephaestus Protocol**
 
-The Synarchy operates on a continuous cycle of Dissonance, Synthesis, and Transcendence.
+The Synarche operates on a continuous cycle of Dissonance, Synthesis, and Transcendence.
 
 #### The Hephaestus Cycle
 
@@ -172,7 +172,7 @@ Gemini maintains a multi-layered memory system.
 #### L9: The Master Registry
 
 > [!IMPORTANT] **L9: The Master Registry (Artifact Inventory)**  
-> This is the **Rosetta Stone** for the Synarchy. It contains the complete manifest of every artifact, its state, and
+> This is the **Rosetta Stone** for the Synarche. It contains the complete manifest of every artifact, its state, and
 > its location within the file system.
 
 - **Volatility**: Static (Permanent)

@@ -10,7 +10,7 @@
 
 # **Architectural Blueprint: Antigravity Grand Unified Architecture**
 
-This outline formalizes the **Axion Overplane** within the **Antigravity IDE**, optimizing for **Synarchy Governance**
+This outline formalizes the **Axion Overplane** within the **Antigravity IDE**, optimizing for **Synarche Governance**
 and **Sovereign Agent** operations. It is designed for high-fidelity AI ingestion, establishing the "Hephaestus Cycle"
 as the primary operational logic.
 
@@ -94,7 +94,7 @@ Advanced multitasking through parallel agent threads and asynchronous communicat
 
 ## **5\. 🖥️ Tactile Interface (Look & Feel)**
 
-The UI is configured to reflect the **Synarchy Governance Hierarchy**.
+The UI is configured to reflect the **Synarche Governance Hierarchy**.
 
 - **Tree by Intent:** The sidebar File Explorer (`ui-config.yaml`) groups files by their associated task or domain
   (ARCH, GVRN, SYNR) rather than just directory structure.

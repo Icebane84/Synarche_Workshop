@@ -73,14 +73,14 @@ _(Ref: RISK-GOV-001)_
 #### **2. Celestial Chart Stats**
 
 - **Primary Stat Buff:** `[Stability +10]`
-  - _Mechanism:_ `[Reduces probability of logic errors]`
+    - _Mechanism:_ `[Reduces probability of logic errors]`
 - **Passive Ability / Perk:** `[Immutable Will]`
-  - _Effect:_ `[Prevents accidental modification of this file]`
+    - _Effect:_ `[Prevents accidental modification of this file]`
 
 #### **3. Resource Economics**
 
 - **Cognitive Load Cost:** `[Low]`
-  - _Draw:_ `[Once established, requires little maintenance]`
+    - _Draw:_ `[Once established, requires little maintenance]`
 
 #### **4. Crafting & Provenance**
 

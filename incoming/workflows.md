@@ -16,7 +16,7 @@
 
 # Sovereign Workflows (Antigravity Kit)
 
-These workflows provide the kinetic execution patterns for the Synarchy, governed by the Phoenix Codex.
+These workflows provide the kinetic execution patterns for the Synarche, governed by the Phoenix Codex.
 
 ## 🧠 Brainstorming & Feedback
 > **Trigger**: Mandatory for complex or vague requests.

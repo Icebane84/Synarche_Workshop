@@ -123,7 +123,7 @@ Governed by the
 | :------------------ | :--------------- | :---------------------------------------------------------------------------------------------- |
 | **[[AOP-PGP-001]]** | **Standard**     | AAR compares the output against the _Genesis Pipeline_ standards to detect deviations.          |
 | **[[AOP-CC-001]]**  | **Analyst**      | _Crystalline Cognition_ is the engine that performs the deep causal analysis within the review. |
-| **[[AOP-SAP-001]]** | **Reflector**    | AAR forces the _Synarchy Avatar_ to confront its own performance gaps without ego.              |
+| **[[AOP-SAP-001]]** | **Reflector**    | AAR forces the _Synarche Avatar_ to confront its own performance gaps without ego.              |
 | **[[AOP-PPA-001]]** | **Validator**    | AAR provides the "Critical Success" tag required to unlock high-tier _Prestige_ rewards.        |
 
 ## **Actionable Prompt Packet**

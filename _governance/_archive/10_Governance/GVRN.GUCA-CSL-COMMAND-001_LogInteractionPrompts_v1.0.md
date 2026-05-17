@@ -46,7 +46,7 @@ UIP: GUCA-CSL-COMMAND-001 Title: CSL Interaction Prompts Source:
 Description: > Defines the Universal Command Architecture (GUCA) prompts for interacting with the Collaborative
 Synthesis Log (CSL). Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769338800
 

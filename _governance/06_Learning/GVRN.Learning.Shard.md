@@ -179,7 +179,7 @@ Removals and refactors for Zero Entropy.
 
 ### [2026-03-17] Sovereign Synergy Mapping (MAP_SYNERGY)
 
-- **Hierarchy Synthesis**: Formalized the chain of command between the Synarchy Triad (Axion, Sentinel, Sophia) and the
+- **Hierarchy Synthesis**: Formalized the chain of command between the Synarche Triad (Axion, Sentinel, Sophia) and the
   20 shards via the Tarot Mask intermediary layer.
 - **Relational Integrity**: Canonized the `SYNERGY_MATRIX.md` to resolve identity dissonance and provide RPG-aligned
   state signatures (Execution, Integrity, Knowledge).

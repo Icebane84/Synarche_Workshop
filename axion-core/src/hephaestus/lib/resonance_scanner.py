@@ -45,7 +45,50 @@
 import math
 import re
 from pathlib import Path
-from typing import Dict, List, Set, Any
+from typing import Any, Dict, List, Set
+from .task_context import TaskContext
+
+
+class ArtifactTaskContext(TaskContext):
+    def __init__(self, config) -> None:
+        super().__init__(config)
+
+
+class ArtifactScanner:
+    def __init__(self, context: ArtifactTaskContext) -> None:
+        self.context = context
+
+    def scan_directory(self, directory: Path) -> tuple[int, int, list[Path]]:
+        total_files = 0
+        aligned_files = 0
+        unaligned_paths: list[Path] = []
+        
+        # OMEGA v15.1 - Performance Optimization
+        exclude_dirs = {
+            ".git", ".venv", ".venv_prs", "__pycache__", "node_modules", 
+            ".gemini", "artifacts", "brain", ".mypy_cache", 
+            ".pytest_cache", "build", "dist"
+        }
+
+        for file_path in directory.rglob("*"):
+            # Skip excluded directories
+            if any(part in exclude_dirs for part in file_path.parts):
+                continue
+                
+            if file_path.suffix not in VALID_EXTENSIONS:
+                continue
+            
+            if file_path.is_dir():
+                continue
+
+            total_files += 1
+            if is_aligned(file_path):
+                aligned_files += 1
+            else:
+                unaligned_paths.append(file_path)
+        
+        return total_files, aligned_files, unaligned_paths
+
 
 RESONANCE_MARKERS: List[str] = [
     "UMB-",
@@ -122,13 +165,14 @@ def calculate_similarity(text1: str, text2: str) -> float:
 
     v1, v2 = get_freq(terms1), get_freq(terms2)
     intersection = set(v1.keys()) & set(v2.keys())
-    
+
     numerator = sum(v1[x] * v2[x] for x in intersection)
     sum1 = sum(x**2 for x in v1.values())
     sum2 = sum(x**2 for x in v2.values())
     denominator = math.sqrt(sum1) * math.sqrt(sum2)
 
     return float(numerator) / denominator if denominator else 0.0
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.resonance.scanner VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: c357324dd52f06fb

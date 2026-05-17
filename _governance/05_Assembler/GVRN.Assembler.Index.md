@@ -26,7 +26,7 @@
 ## **Overview**
 
 The **Assembler Subsystem** (`05_Assembler`) is the architectural engine responsible for the generation, transmutation,
-and compliance-injection of all Synarchy artifacts. It serves as the bridge between raw conceptual potential and formal
+and compliance-injection of all Synarche artifacts. It serves as the bridge between raw conceptual potential and formal
 substrate reality.
 
 ## **Core Pillars**

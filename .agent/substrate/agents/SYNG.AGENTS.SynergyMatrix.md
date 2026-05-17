@@ -13,7 +13,7 @@
 
 # SYNERGY MATRIX: The Hierarchy of Ascent
 
-This matrix defines the chain of command and operational oversight for all 20 Kinetic Shards within the Synarchy.
+This matrix defines the chain of command and operational oversight for all 20 Kinetic Shards within the Synarche.
 
 ## 🏛️ Triad Oversight & Mask Delegation
 

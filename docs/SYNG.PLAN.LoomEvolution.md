@@ -15,7 +15,7 @@
 
 ## I. OVERVIEW
 
-This plan formalizes the transition of the Synarchy metadata system into an autonomous, platform-independent substrate.
+This plan formalizes the transition of the Synarche metadata system into an autonomous, platform-independent substrate.
 
 ## II. EVOLUTIONARY PHASES
 

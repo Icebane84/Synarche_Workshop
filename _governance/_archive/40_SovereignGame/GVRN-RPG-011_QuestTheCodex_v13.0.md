@@ -33,7 +33,7 @@ errors). however, it lacks the **Eye of Understanding** (The Codex).
 
 ### Quest Steps
 
-1.  **Forge the Lens (Backend)**: Teach the Bridge to securely read files from the `Synarchy_Workspace`.
+1.  **Forge the Lens (Backend)**: Teach the Bridge to securely read files from the `Synarche_Workspace`.
 2.  **Inscribe the Pages (Frontend)**: Create the `CodexViewer` to display code with syntax highlighting (or at least
     readable text).
 3.  **Connect the Threads (Integration)**: Clicking a "Corrupted Node" in the Combat Board should open the Codex to that

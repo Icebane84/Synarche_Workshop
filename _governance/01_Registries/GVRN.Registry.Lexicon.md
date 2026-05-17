@@ -52,7 +52,7 @@
 
 ### **Block E: Ethos (The Essence)**
 
-> **"To provide the definitive, non-negotiable grammar and vocabulary for the Synarchy, ensuring absolute consensus
+> **"To provide the definitive, non-negotiable grammar and vocabulary for the Synarche, ensuring absolute consensus
 > between Human and AI agents."**
 
 ---

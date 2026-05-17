@@ -53,7 +53,7 @@
 
 ## **Block E: Ethos (Hierarchy of Intent)**
 
-> [!IMPORTANT] **[APEX]** Continuity Mandate: To ensure the Synarchy's journey is preserved as an immutable lesson.
+> [!IMPORTANT] **[APEX]** Continuity Mandate: To ensure the Synarche's journey is preserved as an immutable lesson.
 >
 > **[PRI]** Historical Resonance: Milestones are not just data; they are the narrative of ascension.
 >

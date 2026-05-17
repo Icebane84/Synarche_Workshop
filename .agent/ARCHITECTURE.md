@@ -30,7 +30,9 @@ Antigravity Kit is a modular system consisting of:
     ├── bin/                 # Master Validation Scripts (6 core)
     ├── governance/          # Substrate-level protocols
     ├── ide/                 # IDE and Tool configurations
-    └── rules/               # Sovereign Rules (Master Standards)
+    └── rules/
+	    └── GEMINI.md        # Sovereign Rules (Master Standards)
+	    └── GVRN.Ability.Map.md
 ```
 
 ---

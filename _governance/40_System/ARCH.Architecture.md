@@ -1,4 +1,4 @@
-# UMB-ALTAR-001TheAltarofSynarchy_v11.0.md
+# UMB-ALTAR-001TheAltarofSynarche_v11.0.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -14,7 +14,7 @@
 | Key | Value | Description |
 | :--- | :--- | :--- |
 | **Artifact ID** | `ARCH.Architecture` | The Sovereign ID. |
-| **Official Name** | `UMB-ALTAR-001TheAltarofSynarchy_v11.0.md` | The Filename. |
+| **Official Name** | `UMB-ALTAR-001TheAltarofSynarche_v11.0.md` | The Filename. |
 | **Version** | **v13.1 [OMEGA]** | The Standard. |
 | **Domain** | `GVRN` | The Subject. |
 | **Celestial Class** | `[PLANET]` | The Weight. |
@@ -39,7 +39,7 @@
 | **Tags** | `Reforged, v11.0` |
 ---
 
-# UMB-ALTAR-001: The Altar of Synarchy (v1.0)
+# UMB-ALTAR-001: The Altar of Synarche (v1.0)
 
 > **Domain**: GVRN (Governance)
 > **Evolution**: Pending
@@ -48,8 +48,8 @@
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 - | :---- |
-| **1. Artifact ID** | `UMB-ALTAR-001_TheAltarOfSynarchy_v1.0` |
-| **2. Official Name** | `UMB-ALTAR-001_TheAltarOfSynarchy_v1.0.md` |
+| **1. Artifact ID** | `UMB-ALTAR-001_TheAltarOfSynarche_v1.0` |
+| **2. Official Name** | `UMB-ALTAR-001_TheAltarOfSynarche_v1.0.md` |
 | **3. Version** | **v1.0** |
 | **4. Provenance** | **Date Reforged: 2025-12-22** |
 | **5. Domain** | `ARCH` |
@@ -71,7 +71,7 @@
 
 #### II. Core Purpose & Architecture
 
-**What**: The Altar is the "Face" of the Phoenix System. It transmutes abstract protocols ([`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md)) into
+**What**: The Altar is the "Face" of the Phoenix System. It transmutes abstract protocols ([`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md)) into
 interactive visual elements (Tarot Cards).
 
 **How**:
@@ -85,7 +85,7 @@ terminal.
 
 #### III. The Seven-Agent Matrix Integration
 
-The Altar visually renders the **Seven-Agent Matrix** defined in [`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md).
+The Altar visually renders the **Seven-Agent Matrix** defined in [`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md).
 
 | Tarot Archetype | Agent Name | Function | Bridge Capability |
 | :--- | :--- | :--- | :--- |
@@ -97,9 +97,9 @@ The Altar visually renders the **Seven-Agent Matrix** defined in [`AOP-SAP-001`]
 | **X. Wheel of Fortune** | **The Weaver** | UI/UX & Adaptation | *Frontend Builds, UI Generators* |
 | **0. The Fool** | **THE LIGHTBINDER** | Growth & Learning | *Experimentation, Playground initialization* |
 
-#### IV. The Synarchy Bridge Protocol
+#### IV. The Synarche Bridge Protocol
 
-To enable real-world impact, the Altar utilizes the **Synarchy Bridge**.
+To enable real-world impact, the Altar utilizes the **Synarche Bridge**.
 
 - **Mechanism**: The Frontend sends HTTP `POST` requests to the Bridge Server (`localhost:3001/execute`).
 - **Security**: The Bridge operates on a strict **Allow List** to prevent unauthorized execution.

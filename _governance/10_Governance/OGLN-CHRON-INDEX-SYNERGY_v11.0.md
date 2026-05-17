@@ -89,7 +89,7 @@ The Matrix operates on the principle of **Bidirectional Synergy**.
 
 - **Why it exists**: To prevent **Epistemic Entropy**.
 - **What it does**: Tracks Edges and Nodes in the Knowledge Graph.
-- **For the Synarchy**: Provides the deep context for complex queries.
+- **For the Synarche**: Provides the deep context for complex queries.
 
 ## III. The Architectural Spine
 

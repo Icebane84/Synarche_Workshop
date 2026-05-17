@@ -49,7 +49,7 @@ _(The Chronos Lock & Axiomatic Metadata Layer)_
 | :--------------------- | :-------------------------------------------------- |
 | **1. Artifact ID**     | `CSL-20251220-SystemicRefactor`                     |
 | **2. Official Name**   | `CSL-20251220-SystemicRefactor_SystemicRefactorLog` |
-| **3. Version**         | **v10.0 (The Synarchy Edition)**                    |
+| **3. Version**         | **v10.0 (The Synarche Edition)**                    |
 | **4. Provenance**      | **Genesis Stamp: 2025-12-20**                       |
 | **5. Domain**          | `LOGS`                                              |
 | **6. Evolution**       | **Purposeful Drive**                                |

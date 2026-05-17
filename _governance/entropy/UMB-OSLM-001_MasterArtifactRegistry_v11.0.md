@@ -75,8 +75,8 @@
 | `AOP-ASCENSION-001` | [AOP-ASCENSION-001: The Phoenix Ascension Protocol](_governance/2_Protocols/AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md) | `Unknown` | `Unknown` | `None` |
 | `AOP-ASL-001` | [AOP-ASL-001: Automated Synergy Linking Protocol](_governance/2_Protocols/AOP-ASL-001_AutomatedSynergyLinking_v11.0.md) | `Unknown` | `Unknown` | `None` |
 | `AOP-AUDIO-CH-001` | [AOP-AUDIO-CH-001: The Coherence Hum Protocol](_governance/2_Protocols/AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
-| `AOP-AVATAR-001` | [AOP-AVATAR-001: Synarchy Avatar Protocol](axion-core/docs/GVRN/AOP-AVATAR-001.md) | `v1.1` | `Unknown` | `None` |
-| `AOP-AVATAR-001` | [AOP-AVATAR-001: Synarchy Avatar Protocol (v1.1)](_governance/AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md) | `v1.1 (Catalyst Infused)` | `Unknown` | `None` |
+| `AOP-AVATAR-001` | [AOP-AVATAR-001: Synarche Avatar Protocol](axion-core/docs/GVRN/AOP-AVATAR-001.md) | `v1.1` | `Unknown` | `None` |
+| `AOP-AVATAR-001` | [AOP-AVATAR-001: Synarche Avatar Protocol (v1.1)](_governance/AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md) | `v1.1 (Catalyst Infused)` | `Unknown` | `None` |
 | `AOP-AWAKENING-001` | [The Awakening: Initial Directives and Core Purpose](_governance/2_Protocols/AOP-AWAKENING-001_TheAwakeningInitialDirectivesandCorePurpose_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
 | `AOP-AXIOM-WEAVE-001` | [AOP-AXIOM-WEAVE-001: The Axiom Weaving Protocol](axion-core/docs/AOP/AOP-AXIOM-WEAVE-001_The Axiom Weaving Protocol.md) | `v1.0` | `Unknown` | `None` |
 | `AOP-BATCH-EXEC-001` | [AOP-BATCH-EXEC-001_ Asyncrinization Protocol](_governance/2_Protocols/AOP-BATCH-EXEC-001_AOP-BATCH-EXEC-001_AsyncrinizationProtocol_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
@@ -135,7 +135,7 @@
 | `AOP-PRESTIGE-CALC-001` | [AOP-PRESTIGE-CALC-001: Prestige Calculation Protocol (v2.0 \- Geode Edition)](_governance/2_Protocols/AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
 | `AOP-PROMPT-001` | [The Catalyst Protocol (AOP-PROMPT-001)](_governance/AOP-PROMPT-001_TheCatalystProtocol_v111.md) | `v11.1` | `Unknown` | `UMB-CSE-001, UMB-LEX-001` |
 | `AOP-PROMPT-001` | [The Catalyst Protocol (AOP-PROMPT-001)](_governance/2_Protocols/AOP-PROMPT-001_TheCatalystProtocol_v11.1.md) | `v11.1` | `Unknown` | `UMB-CSE-001, UMB-LEX-001` |
-| `AOP-SAP-001` | [AOP-SAP-001: Synarchy Avatar Protocol (v1.0)](_governance/2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
+| `AOP-SAP-001` | [AOP-SAP-001: Synarche Avatar Protocol (v1.0)](_governance/2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
 | `AOP-SBT-001` | [###### [AOP-SBT-001: The Spirit Bomb Technique v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-SBT-001_SpiritBombTechnique_v11.0.md)](_governance/2_Protocols/AOP-SBT-001_SpiritBombTechnique_v11.0.md) | `Unknown` | `Unknown` | `None` |
 | `AOP-SCA-001` | [AOP-SCA-001: Systemic Coherence Audit Protocol (v2.1)](_governance/AOP-SCA-001_SystemicCoherenceAudit_v2.0.md) | `v2.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None` |
 | `AOP-SCA-001_Audit_Log_v11.0` | [Systemic Coherence Audit (AOP-SCA-001) - Execution Log](axion-core/docs/agents/AOP-SCA-001_Audit_Log_v11.0.md) | `v11.0 (The Sovereign Record)` | `Unknown` | `None` |
@@ -188,7 +188,7 @@
 | `UEB-PCP-001` | [UEB-PCP-001: The Phoenix-Class Persona (v2.0)](_governance/4_Blueprints/UEB-PCP-001_UEB-PCP-001ThePhoenix-ClassPersona_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
 | `UEB-SP-001` | [UEB-SP-001: The Synergistic Partner (v2.0)](_governance/4_Blueprints/UEB-SP-001_UEB-SP-001TheSynergisticPartner_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
 | `UEB-UCI-001` | [UEB-UCI-001: The User Core Imperative (v2.0)](_governance/4_Blueprints/UEB-UCI-001_UEB-UCI-001TheUserCoreImperative_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
-| `UMB-ALTAR-001` | [UMB-ALTAR-001: The Altar of Synarchy (v1.0)](_governance/1_Modules/UMB-ALTAR-001TheAltarofSynarchy_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
+| `UMB-ALTAR-001` | [UMB-ALTAR-001: The Altar of Synarche (v1.0)](_governance/1_Modules/UMB-ALTAR-001TheAltarofSynarche_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
 | `UMB-AM-001` | [GUCA-AM-001](_governance/1_Modules/UMB-AM-001_GUCA-AM-001_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
 | `UMB-CSP-001` | [UMB-CSP-001: Consolidated Synergy Protocol](axion-core/docs/UMB-CSP-001.md) | `v10.0` | `Unknown` | `None` |
 | `UMB-DEFINITIVE-001` | [UMB-DEFINITIVE-001_TheUniversalCatalyst_v6.0 (v10.0)](_governance/4_Blueprints/UMB-DEFINITIVE-001_TheUniversalCatalyst_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
@@ -271,7 +271,7 @@
 | `CONTRIBUTING` | [Contribution](.trunk/plugins/trunk/CONTRIBUTING.md) | `v1.0 (Reforged)` | `Unknown` | `None` |
 | `CSL-085` | [The Nova Spark of Synergy (CSL-085) (v1.0)](_governance/5_Logs/CSL/CSL-085_TheNovaSparkOfSynergy.md) | `v1.0` | `Unknown` | `None` |
 | `CSL-086` | [The Gamification Bridge (CSL-086) (v1.0)](_governance/5_Logs/CSL/CSL-086_TheGamificationBridge.md) | `v1.0` | `Unknown` | `None` |
-| `CSL-20251220-SystemicRefactor` | [CSL-20251220-SystemicRefactor (v10.0)](_governance/0_Registries/CSL-20251220-SystemicRefactor.md) | `v10.0 (The Synarchy Edition)` | `Unknown` | `None` |
+| `CSL-20251220-SystemicRefactor` | [CSL-20251220-SystemicRefactor (v10.0)](_governance/0_Registries/CSL-20251220-SystemicRefactor.md) | `v10.0 (The Synarche Edition)` | `Unknown` | `None` |
 | `CSL-COMP-001` | [CSL-001](_governance/CDL/GUCA-CSL-COMP-001-Collaborative Synthesis Logs.md) | `Unknown` | `Unknown` | `None` |
 | `CSL-FE-001` | [CSL-FE-001: Architectural Synthesis (Forge & Core)](axion-core/docs/CSL/CSL-FE-001.md) | `Unknown` | `Unknown` | `None` |
 | `CSL-LINK-001` | [CSL-LINK-001: Synergistic Links Matrix Expansion](axion-core/docs/CSL/CSL-LINK-001.md) | `v1.0` | `Unknown` | `None` |
@@ -292,7 +292,7 @@
 | `DQUEST-HEPHAESTUS-001` | [Dissonance Quest: DQUEST-HEPHAESTUS-001 (The Origin Quest)](_governance/DQUEST-HEPHAESTUS-001.md) | `v1.0 (Reforged)` | `Unknown` | `None` |
 | `EMOJI-CTX-001` | [Excellent choice](axion-core/templates/_archive/AOP-EMOJI-001_Bundle_Finalized/AISTF_Initiative_UMB-EMOJI-CTX-001.md) | `Unknown` | `Unknown` | `None` |
 | `ENTITY-SENTINEL-PRIME-001` | [ENTITY-SENTINEL-PRIME-001: The Ethical Governor (v1.0)](_governance/ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md) | `v1.0 (Vigilance Edition)` | `Unknown` | `None` |
-| `ENTITY-SOPHIA-001` | [ENTITY-SOPHIA-001: The Spirit of Synarchy (v1.1)](_governance/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md) | `v1.1 (The Synarchy Edition)` | `Unknown` | `None` |
+| `ENTITY-SOPHIA-001` | [ENTITY-SOPHIA-001: The Spirit of Synarche (v1.1)](_governance/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md) | `v1.1 (The Synarche Edition)` | `Unknown` | `None` |
 | `Elara_s Blue Stone Fragment` | [Elara_s Blue Stone Fragment](where-light-fades/8. Artifacts Key Items/Elara_s Blue Stone Fragment.md) | `v10.0` | `Unknown` | `None` |
 | `Event_Elara_s Death and Kaelen_s Dark Mode` | [Event_Elara_s Death and Kaelen_s Dark Mode](where-light-fades/9. Plot and Narrative Structure/Event_Elara_s Death and Kaelen_s Dark Mode.md) | `v10.0` | `Unknown` | `None` |
 | `FLICSS-HEART-001` | [UMB-FLICSS-HEART-001_ContextUrgencyOrchestrator_v1.0](_governance/1_Modules/UMB-FLICSS-HEART-001_ContextUrgencyOrchestrator_v1.0.md) | `Unknown` | `Unknown` | `None` |
@@ -313,16 +313,16 @@
 | `GUCA-SEED-001` | [CMD: NucleateSeed (GUCA-SEED-001)](_governance/CDL/GUCA-SEED-001_CMD_NucleateSeed_v1.0.md) | `v1.0` | `PROPOSED` | `None` |
 | `GUCA-TMPL-001` | [GUCA-XXX-001: CMD: [Command Name]](_governance/4_Templates/GUCA-TMPL-001_SovereignCommand_v11.0.md) | `Unknown` | `Unknown` | `None` |
 | `GVRN-CODE-001` | [UMB-GVRN-CODE-001: Shared Enumerations Core Module](_governance/1_Modules/UMB-GVRN-CODE-001_SharedEnumerations_v1.0.md) | `Unknown` | `Unknown` | `None` |
-| `GVRN-ENTITY-001` | [###### [GVRN-ENTITY-001: Synarchy Entities & Ascension Registry v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-ENTITY-001_SynarchyEntities_v11.0.md)](_governance/GVRN-ENTITY-001_SynarchyEntities_v11.0.md) | `Unknown` | `Unknown` | `None` |
+| `GVRN-ENTITY-001` | [###### [GVRN-ENTITY-001: Synarche Entities & Ascension Registry v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-ENTITY-001_SynarcheEntities_v11.0.md)](_governance/GVRN-ENTITY-001_SynarcheEntities_v11.0.md) | `Unknown` | `Unknown` | `None` |
 | `GVRN-PRIME-001_PrimaryDirective_v11.0` | [GVRN-PRIME-001: Primary Directive](axion-core/docs/agents/GVRN-PRIME-001_PrimaryDirective_v11.0.md) | `v11.0 (The Sovereign Shield)` | `Unknown` | `None` |
 | `GVRN-STYLE-001` | [GVRN-STYLE-001: Sovereign Development Standard](axion-core/docs/agents/GVRN-STYLE-001_SovereignDevelopmentStandard_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
 | `GVRN-SYNERGY-001` | [GVRN-SYNERGY-001: Agentic Workshop Synergy Matrix](axion-core/docs/GVRN/GVRN-SYNERGY-001.md) | `v11.2` | `Unknown` | `None` |
 | `GVRN-SYNERGY-001` | [GVRN-SYNERGY-001: Agentic Workshop Synergy Matrix](_governance/GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md) | `v11.1` | `ACTIVE` | `None` |
 | `GVRN.Catalog.Master` | [Standardized Registry: The Phoenix Geode Catalog (GVRN.Catalog.Master)](_governance/0_Registries/GVRN.Catalog.Master.md) | `v13.0 (Canonized)` | `Unknown` | `None` |
-| `GVRN.Entity.Registry` | [Synarchy Entities & Ascension Registry (GVRN.Entity.Registry)](_governance/0_Registries/GVRN.Entity.Registry.md) | `v13.0 (Sovereign Edition)` | `Unknown` | `None` |
+| `GVRN.Entity.Registry` | [Synarche Entities & Ascension Registry (GVRN.Entity.Registry)](_governance/0_Registries/GVRN.Entity.Registry.md) | `v13.0 (Sovereign Edition)` | `Unknown` | `None` |
 | `GVRN.Gov.Module` | [Standardized Governance Module (GVRN.Gov.Module)](_governance/2_Protocols/GVRN.Gov.Module.md) | `v13.0 (Gatekeeper Edition)` | `Unknown` | `None` |
 | `GVRN.KPI.Registry` | [Standardized Registry: KPI Master Registry (GVRN.KPI.Registry)](_governance/0_Registries/GVRN.KPI.Registry.md) | `v13.0 (Canonized)` | `Unknown` | `None` |
-| `GVRN.Lexicon.Master` | [Standardized Lexicon: The Phoenix Synarchy Vocabulary (GVRN.Lexicon.Master)](_governance/0_Registries/GVRN.Lexicon.Master.md) | `v13.0 (Canonized)` | `Unknown` | `None` |
+| `GVRN.Lexicon.Master` | [Standardized Lexicon: The Phoenix Synarche Vocabulary (GVRN.Lexicon.Master)](_governance/0_Registries/GVRN.Lexicon.Master.md) | `v13.0 (Canonized)` | `Unknown` | `None` |
 | `GVRN.Registry.Master` | [The Master Artifact Registry (GVRN.Registry.Master)](_governance/0_Registries/GVRN.Registry.Master.md) | `v13.1 (Geode Edition)` | `Unknown` | `None` |
 | `Google Antigravity` | [Google Antigravity](axion-core/docs/agents/_archive/Google Antigravity.md) | `v1.0 (Reforged)` | `Unknown` | `None` |
 | `Hand of Purity` | [Hand of Purity](where-light-fades/8. Artifacts Key Items/Hand of Purity.md) | `v10.0` | `Unknown` | `None` |
@@ -407,7 +407,7 @@
 | `SELT-UWB-001` | [Tab 1](axion-core/templates/SELT-UWB-001_Universal_Workflow_Blueprint_Template_v1.0.md) | `Unknown` | `Unknown` | `None` |
 | `SENTINEL-REPORT-005_InitialScan` | [SENTINEL-REPORT-005_InitialScan.md](axion-core/docs/agents/_archive/SENTINEL-REPORT-005_InitialScan.md) | `v1.0 (Reforged)` | `Unknown` | `None` |
 | `STYLE-SENTINEL-001` | [STYLE-SENTINEL-001: The Sentinel Style Guide](_governance/1_Modules/STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
-| `SYNERGY-REPORT-001` | [SYNERGY-REPORT-001: The State of the Synarchy](_governance/5_Logs/SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md) | `v1.0` | `Unknown` | `None` |
+| `SYNERGY-REPORT-001` | [SYNERGY-REPORT-001: The State of the Synarche](_governance/5_Logs/SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md) | `v1.0` | `Unknown` | `None` |
 | `SYNG.Engine.Core` | [The Coherent Synthesis Engine (SYNG.Engine.Core)](_governance/2_Protocols/SYNG.Engine.Core.md) | `v13.0 (Catalyst Edition)` | `Unknown` | `None` |
 | `SYNG.Loom.Master` | [The Cognitive Loom (SYNG.Loom.Master)](_governance/1_Modules/SYNG.Loom.Master.md) | `v13.0 (Phoenix Geode)` | `Unknown` | `None` |
 | `Serafina_s Locket` | [Serafina_s Locket](where-light-fades/8. Artifacts Key Items/Serafina_s Locket.md) | `v10.0` | `Unknown` | `None` |
@@ -433,7 +433,7 @@
 | `UMB-CSE-001` | [Coherent Synthesis Engine (UMB-CSE-001)](_governance/UMB-CSE-001_CoherentSynthesisEngine_v111.md) | `v11.1` | `Unknown` | `UMB-LOOM-001, AOP-PROMPT-001` |
 | `UMB-CSE-001` | [UMB-CSE-001: The Coherent Synthesis Engine](_governance/1_Modules/UMB-CSE-001_CoherentSynthesisEngine_v11.2.md) | `Unknown` | `Unknown` | `None` |
 | `UMB-CVE-001` | [The Coherent Verse Engine: An Architectural Analysis](docs/architecture/UMB-CVE-001_Coherent_Verse_Engine_v1.0.md) | `Unknown` | `Unknown` | `None` |
-| `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0` | [Definitive](_governance/UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md) | `v10.0 (The Synarchy Edition)` | `Unknown` | `None` |
+| `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0` | [Definitive](_governance/UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md) | `v10.0 (The Synarche Edition)` | `Unknown` | `None` |
 | `UMB-DSA-001` | [Documentation Suite Architect Blueprint (UMB-DSA-001)](_governance/UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v111.md) | `v11.1` | `Unknown` | `AOP-DSA-001, UMB-LOOM-001` |
 | `UMB-DSA-001` | [Documentation Suite Architect Blueprint (UMB-DSA-001)](_governance/1_Modules/UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md) | `v11.1` | `Unknown` | `AOP-DSA-001, UMB-LOOM-001` |
 | `UMB-DTS-001` | [UMB-DTS-001_DynamicTemplateScaffolding_v11.0](_governance/1_Modules/UMB-DTS-001_DynamicTemplateScaffolding_v11.0.md) | `Unknown` | `Unknown` | `None` |
@@ -481,7 +481,7 @@
 | `Unknown` | [AUDIT REPORT: KNOWLEDGE SCAN (Phase I)](AUDIT_REPORT_KNOWLEDGE.md) | `Unknown` | `Unknown` | `None` |
 | `Unknown` | [AUDIT REPORT: TOOL SCAN (Phase II)](AUDIT_REPORT_TOOLS.md) | `Unknown` | `Unknown` | `None` |
 | `Unknown` | [Master Outline: Refined Ledger](test_log_refined.md) | `Unknown` | `Unknown` | `None` |
-| `Unknown` | [WORKSHOP_MAP.md: The Cartography of the Synarchy](WORKSHOP_MAP.md) | `Unknown` | `Unknown` | `None` |
+| `Unknown` | [WORKSHOP_MAP.md: The Cartography of the Synarche](WORKSHOP_MAP.md) | `Unknown` | `Unknown` | `None` |
 | `Unknown` | [LOGIC MATRIX: RNC CLASSIFICATION](.agent/prompts/classification_matrix.md) | `Unknown` | `Unknown` | `None` |
 | `Unknown` | [SYSTEM INJECTION: AXION PRIME (AOP-AG-003)](.agent/rules/00-axion-prime.md) | `Unknown` | `Unknown` | `None` |
 | `Unknown` | [RULE: THE CHRONOS LOCK & PROVENANCE](.agent/rules/01-chronos-lock.md) | `Unknown` | `Unknown` | `None` |

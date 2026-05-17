@@ -60,7 +60,7 @@
 | [AOP-AI-PROTO-001_AIProtocol.md](AOP-AI-PROTO-001_AIProtocol.md) | **AOP-AI-PROTO-001: Artificial Intelligence Protocol (v3.0)** |
 | [AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md](AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md) | AOP-ARC-001: Archival & Supersession Protocol |
 | [AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md](AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md) | AOP-ARCH-GAZE-001: The Architect's Gaze (v2.1) |
-| [AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md](AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md) | AOP-AVATAR-001: Synarchy Avatar Protocol (v1.1) |
+| [AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md](AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md) | AOP-AVATAR-001: Synarche Avatar Protocol (v1.1) |
 | [AOP-CC-001_CrystallineCognition_v1.0.md](AOP-CC-001_CrystallineCognition_v1.0.md) | Universal Identification & Provenance (UIP) |
 | [AOP-CDE-001_CreativeDivergenceEngine_v2.0.md](AOP-CDE-001_CreativeDivergenceEngine_v2.0.md) | **Creative Divergence Engine (AOP-CDE-001)** |
 | [AOP-DSA-001_DocumentationSuiteArchitectProtocol_v111.md](AOP-DSA-001_DocumentationSuiteArchitectProtocol_v111.md) | Universal Identification & Provenance (UIP) |
@@ -82,11 +82,11 @@
 | [DOC-STD-001.md](DOC-STD-001.md) | **DOC-STD-001: Synarche Universal Documentation Standards (v2.1)** |
 | [DQUEST-HEPHAESTUS-001.md](DQUEST-HEPHAESTUS-001.md) | Dissonance Quest: DQUEST-HEPHAESTUS-001 (The Origin Quest) |
 | [ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md](ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md) | **ENTITY-SENTINEL-PRIME-001: The Ethical Governor (v1.0)** |
-| [ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md](ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md) | ENTITY-SOPHIA-001: The Spirit of Synarchy (v1.1) |
+| [ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md](ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md) | ENTITY-SOPHIA-001: The Spirit of Synarche (v1.1) |
 | [GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md](GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md) | Universal Identification & Provenance (UIP) |
 | [GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md](GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md) | **GUCA-MAP-001: Execute Musashi Audit (v2.0)** |
 | [GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md](GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md) | GUCA-PROPOSE-SIGNAL-001: CMD: ProposeTemporarySignal |
-| [GVRN-ENTITY-001_SynarchyEntities_v11.0.md](GVRN-ENTITY-001_SynarchyEntities_v11.0.md) | [GVRN-ENTITY-001: Synarchy Entities & Ascension Registry v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-ENTITY-001_SynarchyEntities_v11.0.md) |
+| [GVRN-ENTITY-001_SynarcheEntities_v11.0.md](GVRN-ENTITY-001_SynarcheEntities_v11.0.md) | [GVRN-ENTITY-001: Synarche Entities & Ascension Registry v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-ENTITY-001_SynarcheEntities_v11.0.md) |
 | [GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md](GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md) | Universal Identification & Provenance (UIP) |
 | [LEGACY-ANALYSIS-001_AshenOath_v1.0.md](LEGACY-ANALYSIS-001_AshenOath_v1.0.md) | Legacy Analysis: Ashen Oath (Inner Flame Echoes) |
 | [LORE-ANALYSIS-001_WhereLightFades_v1.0.md](LORE-ANALYSIS-001_WhereLightFades_v1.0.md) | Lore Analysis: Where Light Fades (The Narrative Soul) |

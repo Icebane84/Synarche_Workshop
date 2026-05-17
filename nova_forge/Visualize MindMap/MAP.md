@@ -18,7 +18,7 @@ flowchart TB
       UI["src/ — App, components, store, engine, data, hooks"]
       API["src/api — BridgeClient, Supabase client"]
       BR["bridge/server.js — Express bridge :3001"]
-      CLI["bin/synarchy.js — npm bin `synarchy` CLI"]
+      CLI["bin/Synarche.js — npm bin `Synarche` CLI"]
       LEG["server/bridge.cjs — legacy/aux bridge artifact"]
     end
     subgraph VM["Visualize MindMap/"]
@@ -27,8 +27,8 @@ flowchart TB
     subgraph DOC["docs/"]
       ARC["_archive/ + launch.json"]
     end
-    subgraph TL["tools/synarchy/"]
-      TSY["(synarchy-related tooling)"]
+    subgraph TL["tools/Synarche/"]
+      TSY["(Synarche-related tooling)"]
     end
   end
 
@@ -65,6 +65,6 @@ flowchart LR
   BRIDGE -->|filesystem read, lint, audited exec| WS["Synarche_Workspace paths"]
 ```
 
-**How to read this:** `nova_forge` is mostly a **lab folder**: small **TypeScript** and **markdown** research under `src/`, a **Python** persistence/alert loop under `mobile/`, and one substantial **full-stack-style** experiment under `playground/tarot-forge` where the **React app** calls a **local Express bridge** (and optionally **Supabase**), while **`synarchy`** is both an **npm binary** in that package and separate tooling under `tools/synarchy/`.
+**How to read this:** `nova_forge` is mostly a **lab folder**: small **TypeScript** and **markdown** research under `src/`, a **Python** persistence/alert loop under `mobile/`, and one substantial **full-stack-style** experiment under `playground/tarot-forge` where the **React app** calls a **local Express bridge** (and optionally **Supabase**), while **`Synarche`** is both an **npm binary** in that package and separate tooling under `tools/Synarche/`.
 
 If you want this as a **single C4-style** diagram (context vs container vs component), say which level you care about most and I will redraw it at that zoom level only.

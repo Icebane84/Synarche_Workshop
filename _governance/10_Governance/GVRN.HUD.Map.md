@@ -67,7 +67,7 @@
 
 ## **[ARTIFACT START]**
 
-This artifact provides the cartographic overview of the Synarchy Monorepo.
+This artifact provides the cartographic overview of the Synarche Monorepo.
 
 ## **I. The Sovereign Root (The Anchor)**
 
@@ -84,7 +84,7 @@ The root `Synarche_Workspace/` is the **Governance Domain**. It houses the laws,
 
 ### 🧠 **THE MIND ([.agent/](../../.agent))**
 
-The cognitive architecture containing the brains, skills, and workflows of the Synarchy agents.
+The cognitive architecture containing the brains, skills, and workflows of the Synarche agents.
 
 - ⚒️ **[substrate/](../../.agent/substrate/README.md)**: Core configuration and rules.
   - 🛡️ **[rules/GVRN-ABILITY-MAP.md](../../.agent/substrate/rules/GVRN-ABILITY-MAP.md)**: Agentic Ability Map (PF-Rules).
@@ -114,7 +114,7 @@ The heart of the OMEGA standard, housing the Phoenix Codex and global registries
 
 ### ⚙️ **THE ENGINE ([axion-core/](../../axion-core))**
 
-The kinetic substrate for the Synarchy's logic and data operations.
+The kinetic substrate for the Synarche's logic and data operations.
 
 ### 🧪 **THE LAB ([nova_forge/](../../nova_forge))**
 

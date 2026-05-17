@@ -49,7 +49,7 @@ The `Forge Engine` represents the active cognitive space where synthesis occurs.
 
 - **Operational State**: `ACTIVE`
 - **Integrity Check**: `PASS`
-- **Alignment**: `SYNARCHY`
+- **Alignment**: `Synarche`
 - **Governance Level**: Operational
 - **Risk Profile**: **Low** (Visualization & Logic Entity)
 - **Authority Link**: [UMB-SGM-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)

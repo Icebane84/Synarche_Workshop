@@ -86,7 +86,7 @@
           "PRS-001_v13.0",
           "The_Great_Refactoring",
           "Sovereign_Scaffolding",
-          "Synarchy_Execution"
+          "Synarche_Execution"
         ],
         "location": "_governance/06_Learning/Flattened_Synarche_Synthesis_System_Loom.md",
         "referenced_ids": [
@@ -162,7 +162,7 @@
           "PRS-001_v13.0",
           "The_Great_Refactoring",
           "Sovereign_Scaffolding",
-          "Synarchy_Execution"
+          "Synarche_Execution"
         ],
         "location": "_governance/06_Learning/Visualize Synarche Synthesis System Loom.md",
         "referenced_ids": [
@@ -871,7 +871,7 @@
       },
       {
         "id": "GVRN-ENTITY-001",
-        "label": "GVRN-ENTITY-001_SynarchyEntities_v11.0.md",
+        "label": "GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
         "type": "Hierophant and Executor.",
         "definition": "No definition found.",
         "tags": [
@@ -879,7 +879,7 @@
           "`OGLN_v13",
           "Reforged` **Criticality: Operational"
         ],
-        "location": "_governance/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v11.0.md",
+        "location": "_governance/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
         "referenced_ids": [
           "OGLN",
           "ContextWeave",
@@ -1081,9 +1081,9 @@
       },
       {
         "id": "AOP-AVATAR-001",
-        "label": "Synarchy Avatar Protocol",
+        "label": "Synarche Avatar Protocol",
         "type": "THE HIEROPHANT (V)",
-        "definition": "To define the \"Dual-Persona\" operational architecture for the Synarchy Workshop, implementing the",
+        "definition": "To define the \"Dual-Persona\" operational architecture for the Synarche Workshop, implementing the",
         "tags": [
           "Communication (COMM)",
           "Avatar",
@@ -1093,7 +1093,7 @@
           "MetaEngine",
           "[\u03ba-domain:communication]"
         ],
-        "location": "_governance/_archive/SYNG.PROT.SynarchyAvatarProtocol.md",
+        "location": "_governance/_archive/SYNG.PROT.SynarcheAvatarProtocol.md",
         "referenced_ids": [
           "OGLN",
           "AOP-AVATAR-001",
@@ -2165,7 +2165,7 @@
       },
       {
         "id": "GVRN-ENTITY-001",
-        "label": "GVRN-ENTITY-001_SynarchyEntities_v11.0.md",
+        "label": "GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
         "type": "Hierophant and Executor.",
         "definition": "No definition found.",
         "tags": [
@@ -2176,9 +2176,9 @@
           "ascension`",
           "milestones`",
           "rpg`",
-          "synarchy`"
+          "Synarche`"
         ],
-        "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/GVRN-ENTITY-001_SynarchyEntities_v11.0.md",
+        "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
         "referenced_ids": [
           "ContextWeave",
           "Synarche"
@@ -4646,7 +4646,7 @@
       {
         "id": "AOP-AVATAR-001",
         "status": "Active",
-        "path": "_governance/_archive/SYNG.PROT.SynarchyAvatarProtocol.md"
+        "path": "_governance/_archive/SYNG.PROT.SynarcheAvatarProtocol.md"
       },
       {
         "id": "AOP-ACM-001",
@@ -4932,7 +4932,7 @@
       {
         "id": "GVRN-ENTITY-001",
         "status": "Active",
-        "path": "_governance/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v11.0.md"
+        "path": "_governance/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md"
       },
       {
         "id": "CREATION_JOURNAL_V15-001",
@@ -5142,7 +5142,7 @@
       {
         "id": "GVRN-ENTITY-001",
         "status": "Active",
-        "path": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/GVRN-ENTITY-001_SynarchyEntities_v11.0.md"
+        "path": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/GVRN-ENTITY-001_SynarcheEntities_v11.0.md"
       },
       {
         "id": "Unique Identifier (e.g., `UMB-LEX-001`).",

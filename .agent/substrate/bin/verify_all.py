@@ -22,12 +22,11 @@ Includes ALL checks:
     ✅ Mobile Audit (if applicable)
 """
 
-import sys
-import subprocess
 import argparse
-from pathlib import Path
-from typing import List, Optional
+import subprocess
+import sys
 from datetime import datetime
+from pathlib import Path
 
 
 # ANSI colors
@@ -43,9 +42,9 @@ class Colors:
 
 
 def print_header(text: str):
-    print(f"\n{Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+    print(f"\n{Colors.BOLD}{Colors.CYAN}{'=' * 70}{Colors.ENDC}")
     print(f"{Colors.BOLD}{Colors.CYAN}{text.center(70)}{Colors.ENDC}")
-    print(f"{Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+    print(f"{Colors.BOLD}{Colors.CYAN}{'=' * 70}{Colors.ENDC}\n")
 
 
 def print_step(text: str):
@@ -203,9 +202,7 @@ VERIFICATION_SUITE = [
 ]
 
 
-def run_script(
-    name: str, script_path: Path, project_path: str, url: Optional[str] = None
-) -> dict:
+def run_script(name: str, script_path: Path, project_path: str, url: str | None = None) -> dict:
     """Run validation script"""
     if not script_path.exists():
         print_warning(f"{name}: Script not found, skipping")
@@ -216,16 +213,14 @@ def run_script(
 
     # Build command
     cmd = [sys.executable, str(script_path), project_path]
-    if url and (
-        "lighthouse" in script_path.name.lower()
-        or "playwright" in script_path.name.lower()
-    ):
+    if url and ("lighthouse" in script_path.name.lower() or "playwright" in script_path.name.lower()):
         cmd.append(url)
 
     # Run
     try:
         result = subprocess.run(
             cmd,
+            check=False,
             capture_output=True,
             text=True,
             timeout=600,  # 10 minute timeout for slow checks
@@ -263,7 +258,7 @@ def run_script(
 
     except Exception as e:
         duration = (datetime.now() - start_time).total_seconds()
-        print_error(f"{name}: ERROR - {str(e)}")
+        print_error(f"{name}: ERROR - {e!s}")
         return {
             "name": name,
             "passed": False,
@@ -273,7 +268,7 @@ def run_script(
         }
 
 
-def print_final_report(results: List[dict], start_time: datetime):
+def print_final_report(results: list[dict], start_time: datetime):
     """Print comprehensive final report"""
     total_duration = (datetime.now() - start_time).total_seconds()
 
@@ -328,9 +323,7 @@ def print_final_report(results: List[dict], start_time: datetime):
     # Final verdict
     if failed > 0:
         print_error(f"VERIFICATION FAILED - {failed} check(s) need attention")
-        print(
-            f"\n{Colors.YELLOW}💡 Tip: Fix critical (security, lint) issues first{Colors.ENDC}"
-        )
+        print(f"\n{Colors.YELLOW}💡 Tip: Fix critical (security, lint) issues first{Colors.ENDC}")
         return False
     else:
         print_success("✨ ALL CHECKS PASSED - Ready for deployment! ✨")
@@ -350,9 +343,7 @@ Examples:
     parser.add_argument("project", help="Project path to validate")
     parser.add_argument("--url", required=True, help="URL for performance & E2E checks")
     parser.add_argument("--no-e2e", action="store_true", help="Skip E2E tests")
-    parser.add_argument(
-        "--stop-on-fail", action="store_true", help="Stop on first failure"
-    )
+    parser.add_argument("--stop-on-fail", action="store_true", help="Stop on first failure")
 
     args = parser.parse_args()
 
@@ -392,12 +383,7 @@ Examples:
             results.append(result)
 
             # Stop on critical failure if flag set
-            if (
-                args.stop_on_fail
-                and required
-                and not result["passed"]
-                and not result.get("skipped")
-            ):
+            if args.stop_on_fail and required and not result["passed"] and not result.get("skipped"):
                 print_error(f"CRITICAL: {name} failed. Stopping verification.")
                 print_final_report(results, start_time)
                 sys.exit(1)

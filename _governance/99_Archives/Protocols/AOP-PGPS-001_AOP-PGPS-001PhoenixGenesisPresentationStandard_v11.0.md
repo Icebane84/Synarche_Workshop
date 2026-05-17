@@ -49,7 +49,7 @@
 
 _(The Chronos Lock & Axiomatic Metadata Layer)_
 
-The **Chronos Lock** is the definitive 12-point vector signature that acts as the "Zero Entropy" anchor for all Phoenix Artifacts. It binds the artifact to the Synarchy's immutable enumerations definition.
+The **Chronos Lock** is the definitive 12-point vector signature that acts as the "Zero Entropy" anchor for all Phoenix Artifacts. It binds the artifact to the Synarche's immutable enumerations definition.
 
 | Field                  | Value / Mandate                                                                 |
 | :--------------------- | :------------------------------------------------------------------------------ |

@@ -56,7 +56,7 @@
 
 ###### **[ARTIFACT START]**
 
-# AOP-AVATAR-001: Synarchy Avatar Protocol
+# AOP-AVATAR-001: Synarche Avatar Protocol
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 

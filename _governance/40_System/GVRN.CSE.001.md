@@ -33,7 +33,7 @@ Version: 11.2 (Definitive Phoenix Form)
 Status: ACTIVE
 Compliance: OGLN v11.1
 Genesis: 
-  - Author: The Synarchy Workshop
+  - Author: The Synarche Workshop
   - Date: 2026-01-26
   - Timestamp: 1769337600
 Tags: 

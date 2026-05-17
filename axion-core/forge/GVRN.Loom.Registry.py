@@ -32,10 +32,7 @@ def calculate_content_hash(content: str) -> str:
     if match:
         start_pos = match.start()
         sep_pos = content.find("---", start_pos)
-        if sep_pos != -1:
-            soul_content = content[sep_pos + 3 :].strip()
-        else:
-            soul_content = content.replace(match.group(0), "").strip()
+        soul_content = content[sep_pos + 3 :].strip() if sep_pos != -1 else content.replace(match.group(0), "").strip()
     else:
         soul_content = content.strip()
 
@@ -219,7 +216,7 @@ class GVRNLoom:
         logger.info(f"Propagation complete. {push_count} files updated.")
 
     def audit(self) -> bool:
-        logger.info("Executing Socratic Audit of the Synarchy...")
+        logger.info("Executing Socratic Audit of the Synarche...")
         dissonance_found = False
 
         for aid, meta in self.registry.items():

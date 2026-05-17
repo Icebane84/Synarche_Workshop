@@ -4,7 +4,7 @@ Using SQLite storage at c:\Users\Chris\Synarche_Workspace\axion-core\data\axion_
 >>> INVOKING AXION PRIME (Master Artificer Mode)...
 --- [AXION] NODE: RETRIEVE CONTEXT (UMB-LEX-001) ---
 Obsidian search failed: Connection failed: Is the Obsidian Local REST API running on https://127.0.0.1:27124/search/?
-Memory Gap Detected for query: Initialize the Synarchy Protocol v2.0. CMD: EQUIP_ALL
+Memory Gap Detected for query: Initialize the Synarche Protocol v2.0. CMD: EQUIP_ALL
 Failed to log experience
 Traceback (most recent call last):
   File "c:\Users\Chris\Synarche_Workspace\axion-core\src\logic\memory\memory_system.py", line 827, in log_experience

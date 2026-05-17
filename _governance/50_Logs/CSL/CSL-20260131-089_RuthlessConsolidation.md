@@ -38,7 +38,7 @@
 
 ### 1. The Observation
 
-The Synarchy exhibited severe "Split-Brain" dissonance:
+The Synarche exhibited severe "Split-Brain" dissonance:
 1.  **Duplicate Reality**: A legacy `axion-core-extension` existed in `_Desktop_Vault`, competing with the active one in `Synarche_Workspace`.
 2.  **Configuration Entropy**: Settings were scattered across `settings.fixed.json`, `settings.json`, and project-specific configs, with no single authority.
 3.  **Tool Sprawl**: The `tools/` directory contained over 80 scripts, blending active "Celestial" utilities with "Shadow" one-off diagnostics, creating high cognitive load.

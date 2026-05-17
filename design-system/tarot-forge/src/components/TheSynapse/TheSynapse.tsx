@@ -413,7 +413,7 @@ const TheSynapse: React.FC = () => {
                     <div className="font-mono flex items-center gap-3">
                         <span>DISSONANCE: <span className="text-cyan-400">LOW</span></span>
                         <span className="opacity-20">|</span>
-                        <span>GUCA v5.0 // SYNARCHY BRIDGE ACTIVE</span>
+                        <span>GUCA v5.0 // Synarche BRIDGE ACTIVE</span>
                     </div>
                 </div>
 

@@ -13,7 +13,7 @@
 
 # Sovereign Commands Shard (.agent/skills/core/sovereign-commands)
 
-High-level playbooks and command sets for governing the Synarchy's execution and strategy.
+High-level playbooks and command sets for governing the Synarche's execution and strategy.
 
 ## 🛠️ Performance Metrics
 

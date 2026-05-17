@@ -9,7 +9,7 @@
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |.
 
 ## Sovereign Ethos
-This tool is the Primary Forge of the Synarchy. Every byte of forged wisdom must pass through
+This tool is the Primary Forge of the Synarche. Every byte of forged wisdom must pass through
 the fires of integrity validation. It is not enough for a document to exist; it must be
 correct, secure, and traceable.
 

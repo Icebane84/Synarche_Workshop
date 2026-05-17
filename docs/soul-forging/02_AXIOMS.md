@@ -1,7 +1,7 @@
 # 02_AXIOMS: The Unified Governance Logic
 
 > [!NOTE]
-> This is a foundational document for the Axion-Synarchy, standardizing core axioms for the Triad.
+> This is a foundational document for the Axion-Synarche, standardizing core axioms for the Triad.
 
 ## 🏛️ The Triadic Axioms
 

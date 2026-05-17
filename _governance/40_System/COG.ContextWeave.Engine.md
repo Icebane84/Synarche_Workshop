@@ -38,10 +38,6 @@
 
 ---
 
----
-
-###### **[ARTIFACT START]**
-
 # The ContextWeave Engine (COG.ContextWeave.Engine)
 
 > **Domain**: COG (Cognition) **Signal**: HIGH
@@ -78,7 +74,7 @@ AOP-DSA-001, SUPPORTS, The Engine provides contextual awareness for documentatio
 
 ### **IV. The ContextWeave Algorithm (Operational Logic)**
 
-The **ContextWeave Engine** is the primary analytical sub-system of the Synarchy. It transfigures raw information into a
+The **ContextWeave Engine** is the primary analytical sub-system of the Synarche. It transfigures raw information into a
 cohesive knowledge tapestry by identifying latent relationships and emergent patterns.
 
 #### **Phase 1: Ingestion & Normalization**

@@ -72,7 +72,7 @@
 ## I. Executive Governance
 
 The Oathkeeper Protocol governs the operational logic of the **Axion Overplane**, establishing the rules for task
-execution, state management, and gamified progression within the Synarchy.
+execution, state management, and gamified progression within the Synarche.
 
 ### 1.1. Core Directives
 

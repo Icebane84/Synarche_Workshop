@@ -11,10 +11,7 @@
         "Other"
     ],
     "activationEvents": [
-        "onStartupFinished",
-        "onCommand:axion.ingestMindMap",
-        "onCommand:axion.verifyRegistry",
-        "onCommand:axion.spendStardust"
+        "onStartupFinished"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -130,19 +127,27 @@
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",
-        "lint": "eslint src tools",
+        "lint": "cross-env ESLINT_USE_FLAT_CONFIG=true eslint src tools",
         "test": "node ./out/test/runTest.js"
     },
-    "dependencies": {},
     "devDependencies": {
-        "@types/vscode": "^1.90.0",
+        "@eslint/markdown": "^8.0.1",
         "@types/mocha": "^10.0.6",
         "@types/node": "20.x",
+        "@types/vscode": "^1.90.0",
         "@typescript-eslint/eslint-plugin": "^7.11.0",
         "@typescript-eslint/parser": "^7.11.0",
-        "eslint": "^8.57.0",
-        "typescript": "^5.4.5",
         "@vscode/test-electron": "^2.4.0",
-        "@vscode/webview-ui-toolkit": "^1.4.0"
+        "@vscode/webview-ui-toolkit": "^1.4.0",
+        "cross-env": "^10.1.0",
+        "eslint": "^8.57.0",
+        "markdownlint": "^0.40.0",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.4.7",
+        "markdown-it": "^14.1.0"
     }
 }

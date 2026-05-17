@@ -57,29 +57,20 @@ lint:
     ignore:
         - linters: [ALL]
           paths:
+              - ".venv/**" # Ignore virtual environment files
+              - "**.venv/**" # Ignore virtual environment files
+              - "**vendor/**" # Ignore third-party dependencies
+              - "**.gemini/**" # Ignore Gemini files
+              - "**.ruff_cache/**" # Ignore ruff cache files
+              - "**vendor/**" # Ignore third-party dependencies
+              - "**node_modules/**" # Ignore Node.js dependencies
+              - "**dist/**" # Ignore distribution files
+              - "**.git/**" # Ignore Git files
+              - "**.github/**" # Ignore GitHub configuration files
+              - "**.vscode/**" # Ignore VSCode configuration files
+        - linters: [ruff]
+          paths:
               - "open_notebook/api/routers/chat.py" # Temporary ignore while refactoring
-actions:
-    disabled:
-        - trunk-announce
-    enabled:
-        - trunk-upgrade-available
-        - trunk-check-pre-push
-        - trunk-fmt-pre-commit
-  enabled:
-    - bandit@1.9.3
-    - black@26.1.0
-    - checkov@3.2.500
-    - dotenv-linter@4.0.0
-    - git-diff-check
-    - isort@7.0.0
-    - markdownlint@0.47.0
-    - osv-scanner@2.3.2
-    - prettier@3.8.1
-    - ruff@0.15.0
-    - svgo@4.0.0
-    - taplo@0.10.0
-    - trufflehog@3.92.5
-    - yamllint@1.38.0
 actions:
   disabled:
     - trunk-announce
@@ -87,4 +78,3 @@ actions:
     - trunk-fmt-pre-commit
   enabled:
     - trunk-upgrade-available
-

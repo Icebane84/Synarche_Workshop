@@ -1,3 +1,5 @@
+# .agent/substrate/rules/Antigravity Equipment.csv
+
 "COMPONENT_NAME,TYPE,CORE_PURPOSE,KEY_MECHANISM,PRIMARY_CONSTRAINT"
 "PRS-002-PLAN,Directive/Architecture,Transition from automated scripting to fully autonomous engineering,Architecture-first methodology,Every modification must be preceded by a rigorous, multi-layered validation cycle."
 """Measure 3 times, cut once"",Philosophy/Mandate,Transform the agent from a stochastic generator into a deterministic engineering partner,Structural mandate enforced through the Tri-Phase Protocol,Creates a computational air-gap to prevent cascading failures via recursive self-critique."

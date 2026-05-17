@@ -11,19 +11,18 @@ Supports:
     - Python: ruff check, mypy
 """
 
-import subprocess
-import sys
+import contextlib
 import json
 import platform
 import shutil
-from pathlib import Path
+import subprocess
+import sys
 from datetime import datetime
+from pathlib import Path
 
 # Fix Windows console encoding
-try:
+with contextlib.suppress(BaseException):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-except:
-    pass
 
 
 def detect_project_type(project_path: Path) -> dict:
@@ -44,10 +43,15 @@ def detect_project_type(project_path: Path) -> dict:
                 result["linters"].append(
                     {"name": "npm lint", "cmd": ["npm", "run", "lint"]}
                 )
-            elif "eslint" in deps:
-                result["linters"].append(
-                    {"name": "eslint", "cmd": ["npx", "eslint", "."]}
-                )
+            
+            # Always add central ESLint (covers .ts, .tsx, .js, .md)
+            # Uses flat config discovery — ESLint walks up from cwd to find eslint.config.mjs.
+            # The --config flag is NOT used because ESLint 8.x routes it through the
+            # legacy YAML-based config loader which cannot parse .mjs files.
+            eslint_bin = "C:/Users/Chris/Synarche_Workspace/axion-core/node_modules/eslint/bin/eslint.js"
+            result["linters"].append(
+                {"name": "eslint (central)", "cmd": ["node", eslint_bin, "."]}
+            )
 
             # Check for TypeScript
             if "typescript" in deps or (project_path / "tsconfig.json").exists():
@@ -55,8 +59,8 @@ def detect_project_type(project_path: Path) -> dict:
                     {"name": "tsc", "cmd": ["npx", "tsc", "--noEmit"]}
                 )
 
-        except:
-            pass
+        except BaseException:
+            raise
 
     # Python project
     if (project_path / "pyproject.toml").exists() or (
@@ -64,9 +68,13 @@ def detect_project_type(project_path: Path) -> dict:
     ).exists():
         result["type"] = "python"
 
-        # Check for ruff (high priority)
-        if shutil.which("ruff"):
-            result["linters"].append({"name": "ruff", "cmd": ["ruff", "check", "."]})
+        # Check for ruff (high priority — always use central config)
+        ruff_config = "C:/Users/Chris/Synarche_Workspace/axion-core/standards/pyproject.toml"
+        ruff_bin = shutil.which("ruff") or "C:/DevEnvironments/master_env/Scripts/ruff.exe"
+        if Path(ruff_bin).exists():
+            result["linters"].append(
+                {"name": "ruff (central)", "cmd": [ruff_bin, "check", ".", "--config", ruff_config]}
+            )
 
         # Check for pylint (fallback)
         if (
@@ -92,13 +100,11 @@ def detect_project_type(project_path: Path) -> dict:
                 }
             )
 
-        # Check for mypy
-        if (project_path / "mypy.ini").exists() or (
-            project_path / "pyproject.toml"
-        ).exists():
-            result["linters"].append(
-                {"name": "mypy", "cmd": [sys.executable, "-m", "mypy", "axion-core"]}
-            )
+        # Check for mypy (Enforce central config)
+        mypy_config = "C:/Users/Chris/Synarche_Workspace/axion-core/standards/mypy.ini"
+        result["linters"].append(
+            {"name": "mypy (central)", "cmd": [sys.executable, "-m", "mypy", ".", "--config-file", mypy_config]}
+        )
 
     # Check for Trunk (Global linter)
     if (project_path / ".trunk").exists():
@@ -123,6 +129,9 @@ def run_linter(linter: dict, cwd: Path) -> dict:
                 if not cmd[0].lower().endswith(".cmd"):
                     cmd[0] = f"{cmd[0]}.cmd"
 
+        # Enable flat config for ESLint 8.x
+        env = {**dict(subprocess.os.environ), "ESLINT_USE_FLAT_CONFIG": "true"}
+
         proc = subprocess.run(
             cmd,
             cwd=str(cwd),
@@ -131,8 +140,8 @@ def run_linter(linter: dict, cwd: Path) -> dict:
             encoding="utf-8",
             errors="replace",
             timeout=120,
-            shell=platform.system()
-            == "Windows",  # Shell=True often helps with path resolution on Windows
+            env=env,
+            shell=platform.system() == "Windows",
         )
 
         result["output"] = proc.stdout[:2000] if proc.stdout else ""

@@ -4,7 +4,8 @@
  * Supports nested objects and Regex format enforcement.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.validateMetadata = void 0;
+const _validateMetadata = void 0;
+export { _validateMetadata as validateMetadata };
 /**
  * Validates a metadata object against a provided schema.
  * Performs recursive type checking, required field verification, and regex format enforcement.
@@ -38,7 +39,7 @@ const validateMetadata = (metadata, schema) => {
             else {
                 // Primitive Type Check
                 if (typeof actualValue !== expectedType) {
-                    throw new Error(`[Validation Error]: "${currentPath}" must be a ${expectedType}.`);
+                    throw new TypeError(`[Validation Error]: "${currentPath}" must be a ${expectedType}.`);
                 }
                 // Regex Format Check (if applicable)
                 if (schema.formats?.[key] && typeof actualValue === 'string') {
@@ -51,5 +52,6 @@ const validateMetadata = (metadata, schema) => {
     };
     verify(metadata, schema.types);
 };
-exports.validateMetadata = validateMetadata;
+const _validateMetadata = validateMetadata;
+export { _validateMetadata as validateMetadata };
 //# sourceMappingURL=validation.js.map

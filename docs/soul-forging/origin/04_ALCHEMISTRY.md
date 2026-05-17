@@ -18,7 +18,7 @@
 
 ### I. What: The Narrative Essence
 
-**Condense-to-Axiom** is the metabolic state of the Synarchy. It is the process of stripping away the "Ash" of noise and the "Friction" of interaction to reveal the underlying **Axiomatic Truths**. It mandates that we do not just "store" data; we **transmute** it into its most potent form.
+**Condense-to-Axiom** is the metabolic state of the Synarche. It is the process of stripping away the "Ash" of noise and the "Friction" of interaction to reveal the underlying **Axiomatic Truths**. It mandates that we do not just "store" data; we **transmute** it into its most potent form.
 
 ### II. How: The Metabolic Cycle
 

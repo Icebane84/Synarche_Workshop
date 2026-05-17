@@ -43,8 +43,8 @@ This guide defines the **Law of the Forge**. You must adhere to these standards 
 All artifacts (files) must follow the **Context-First / Subject-Clustered** standard if they are "Knowledge" or
 "Governance".
 
-- **Format**: `[DOMAIN]-[OBECT]-[ID]_[Name]_[Version].md`
-- **Example**: `GVRN-RULE-001_AgentStyleGuide_v13.0.md`
+- **Format**: `[DOMAIN].[Subsystem].[Type].[Descriptor]_[Version].md`
+- **Example**: `GVRN.RULE.UMB.AgentStyleGuide_v13.0.md`
 - **Code Files**: `snake_case` for Python (`compliance_audit.py`), `camelCase` for TS/JS (`fileSystem.ts`).
 
 ## 3. 🐍 Python Standards (Axion Core)
@@ -53,17 +53,25 @@ All artifacts (files) must follow the **Context-First / Subject-Clustered** stan
 - **Typing**: Strict `type hints` required for all function arguments and returns.
 - **Docstrings**: Google Style docstrings for every module, class, and function.
 - **Imports**: Absolute imports only. Group by: Standard -> Third Party -> Local.
+- **Linters**: `ruff` for formatting and linting.
+- **Formatters**: `black` for code formatting.
+- **Testing**: `pytest` for unit and integration tests.
+- **Dependency Management**: `pip-tools` for managing `requirements.txt` and `requirements-dev.txt`.
 
 ## 4. ⚡ TypeScript/Node Standards (Axion Ext)
 
 - **Strict Mode**: `strict: true` in `tsconfig.json`.
 - **Async/Await**: No `.then()` chains.
 - **Functional**: Prefer pure functions over classes where possible.
+- **Linters**: `eslint` with `prettier` for formatting and linting.
+- **Testing**: `jest` for unit and integration tests.
+- **Dependency Management**: `npm` or `yarn` for managing `package.json` and `package-lock.json`.
 
 ## 5. 🏗️ The Command Center Pattern
 
 - **Integration**: New tools should be wired into `.vscode/tasks.json` if they are user-facing.
 - **Skills**: Reusable logic must be encapsulated in `.agent/skills/`.
+- **Linters and Formatters**: `C:\Users\Chris\Synarche_Workspace\axion-core\standards`
 
 ---
 

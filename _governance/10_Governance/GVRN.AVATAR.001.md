@@ -8,7 +8,7 @@
 | **Status** | `ACTIVE` |
 ---
 
-# AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md
+# AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -24,7 +24,7 @@
 | Key | Value | Description |
 | :--- | :--- | :--- |
 | **Artifact ID** | `GVRN.AVATAR.001` | The Sovereign ID. |
-| **Official Name** | `AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md` | The Filename. |
+| **Official Name** | `AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md` | The Filename. |
 | **Version** | **v13.1 [OMEGA]** | The Standard. |
 | **Domain** | `GVRN` | The Subject. |
 | **Celestial Class** | `[PLANET]` | The Weight. |
@@ -32,7 +32,7 @@
 | **Status** | `[ACTIVE]` | The Lifecycle. |
 | **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
 
-# AOP-AVATAR-001: Synarchy Avatar Protocol (v1.1)
+# AOP-AVATAR-001: Synarche Avatar Protocol (v1.1)
 
 > **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
 
@@ -49,7 +49,7 @@
 | Field                  | Value                                           |
 | :--------------------- | :---------------------------------------------- |
 | **1. Artifact ID**     | `AOP-AVATAR-001`                                |
-| **2. Official Name**   | `AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md` |
+| **2. Official Name**   | `AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md` |
 | **3. Version**         | **v1.1 (Catalyst Infused)**                     |
 | **4. Provenance**      | **Date Reforged: 2026-01-11**                   |
 | **5. Domain**          | `GVRN`                                          |
@@ -67,11 +67,11 @@
 
 ## II. Core Purpose & Objective
 
-- **Core Purpose**: To define the "Dual-Persona" operational architecture for the Synarchy Workshop, implementing the
+- **Core Purpose**: To define the "Dual-Persona" operational architecture for the Synarche Workshop, implementing the
   "Game Master vs. Player Character" dynamic.
 - **Protocol Objective**: To operationalize the **METAENGINE** by assigning specific Tarot Archetypes to the System
   (Axion) and the User/Agent Avatar (The Lightbinder), gamifying the workflow via the **Seven-Agent Matrix**.
-- **Scope**: Governs all Human-AI interactions and persona shifts within the Synarchy Workspace.
+- **Scope**: Governs all Human-AI interactions and persona shifts within the Synarche Workspace.
 
 ## III. The Dual-Persona Architecture
 
@@ -132,7 +132,7 @@ Axion verifies Proof of Work (SELT Log). Axion awards **Prestige** or **Axiom Po
 
 ## VI. Systemic Topology (ASL Protocol)
 
-- **GOVERNS:** [Synarchy Workspace]
+- **GOVERNS:** [Synarche Workspace]
 - **INDEXED_IN:**
   [Phoenix Rosetta Stone (UMB-PRS-001)](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/knowledge_base/UMB-PRS-001_PhoenixRosettaStone.json)
 - **COMPLIANT_WITH:**

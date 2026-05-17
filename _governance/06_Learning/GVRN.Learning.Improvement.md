@@ -87,11 +87,11 @@
 
 ## I. Purpose: The Mastery Loop
 
-The **Self-Improvement Protocol** defines the mechanism by which the Synarchy's AI agents analyze their own performance,
+The **Self-Improvement Protocol** defines the mechanism by which the Synarche's AI agents analyze their own performance,
 extract project-specific architectural patterns, and refine their own operational logic.
 
 > [!IMPORTANT] **The Immutable Lesson Constraint**
-> Lessons are immutable and cumulative. Older lessons MUST NOT be deleted or pruned to make room for new ones. The repository must be treated as an append-only historical record of systemic evolution, preserving the full trajectory of the Synarchy's growth.
+> Lessons are immutable and cumulative. Older lessons MUST NOT be deleted or pruned to make room for new ones. The repository must be treated as an append-only historical record of systemic evolution, preserving the full trajectory of the Synarche's growth.
 
 It bridges the gap between raw execution and architectural wisdom.
 

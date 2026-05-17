@@ -60,7 +60,7 @@ Redirect created in `GVRN.Registry.Redirects.md`. |
 
 - **Core Purpose**: To define the definitive, system-wide protocol for managing the lifecycle of documentation,
   specifically the process of superseding an outdated artifact with a new, canonical version.
-- **Protocol Objective**: To ensure the **Synarchy Knowledge Base** remains a reliable, single source of truth by
+- **Protocol Objective**: To ensure the **Synarche Knowledge Base** remains a reliable, single source of truth by
   formally archiving obsolete documents and ensuring all navigational and conceptual links point exclusively to the most
   current, approved versions.
 - **Governing Ethos**: Guardian of Anti-Entropy, Guardian of Coherence

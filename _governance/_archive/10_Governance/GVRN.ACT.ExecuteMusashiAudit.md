@@ -47,7 +47,7 @@ Description: > Defines the master command logic for calculating the Musashi Alig
 (MAP-I-CS), providing a quantitative measure of artifact coherence. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0
 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769251200
 

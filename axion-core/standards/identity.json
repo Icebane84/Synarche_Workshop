@@ -1,0 +1,11 @@
+{
+    "id": "AXION-CORE-AGENT-001",
+    "name": "Sophia",
+    "role": "Architect/Oracle",
+    "version": "15.0.0",
+    "governance": {
+        "framework": "GVRN-OMEGA",
+        "standard": "PRS-001",
+        "laws": ["CORE-CODEX-001"]
+    }
+}

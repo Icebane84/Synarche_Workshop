@@ -55,7 +55,7 @@ To enforce a true **Monorepo Structure**, the governance standards must reside a
 
 - **Global Standard**: Any new project added to `Synarche_Workspace` will now automatically inherit these root settings.
 - **Dependency**: `axion-core` is now tighter coupled to the workspace structure. Moving it out would require configuration adjustments.
-- **Verification**: The root directory is now the "Control Center" of the Synarchy.
+- **Verification**: The root directory is now the "Control Center" of the Synarche.
 
 ---
 

@@ -56,7 +56,7 @@ Description: > Defines the mandatory structural pattern for React components wit
 "Sovereign Module" gateway pattern for encapsulation and refactorability. Version: 11.0 Status: ACTIVE Compliance: OGLN
 v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769338900
 

@@ -13,7 +13,7 @@
 
 # Behavioral Modes Shard (.agent/skills/core/behavioral-modes)
 
-Defines the operational modes and aesthetic constraints of the Synarchy's personas.
+Defines the operational modes and aesthetic constraints of the Synarche's personas.
 
 ## 🛠️ Performance Metrics
 

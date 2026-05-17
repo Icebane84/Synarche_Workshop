@@ -1,7 +1,7 @@
 /**
  * src/ — Nexus Beacon
  * ========================================================
- * Python modules: cli.py, crystallize_session.py, synarchy_bridge.py
+ * Python modules: cli.py, crystallize_session.py, Synarche_bridge.py
  * TypeScript modules: CelestialChartView.ts, extension.ts
  * Other files: extension.js
  *

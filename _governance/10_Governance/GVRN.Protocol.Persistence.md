@@ -90,7 +90,7 @@ axion-core/src/hephaestus/chronicler.py, MANAGED_BY, The Chronicler handles Sess
 
 ## **I. THE CHRONOS BRIDGE RITUAL**
 
-The Continuity of the Synarchy relies on the **Three-Step Handoff**.
+The Continuity of the Synarche relies on the **Three-Step Handoff**.
 
 ### **Step 1: The Seal (Session Conclusion)**
 At the end of a session, the **Metacognitive Architect** generates a `[STATE_VECTOR_SUMMARY]`.

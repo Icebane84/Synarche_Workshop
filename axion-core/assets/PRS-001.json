@@ -963,7 +963,7 @@
                 "id": "GVRN.AVATAR.001",
                 "label": "GVRN.AVATAR.001.md",
                 "type": "THE HIEROPHANT (V)",
-                "definition": "To define the \"Dual-Persona\" operational architecture for the Synarchy Workshop, implementing the",
+                "definition": "To define the \"Dual-Persona\" operational architecture for the Synarche Workshop, implementing the",
                 "tags": ["GVRN", "OGLN_v10", "Persona", "Workflow"],
                 "location": "../../_governance/10_Governance/GVRN.AVATAR.001.md",
                 "referenced_ids": [
@@ -2422,7 +2422,7 @@
             },
             {
                 "id": "ARCH.Architecture",
-                "label": "UMB-ALTAR-001TheAltarofSynarchy_v11.0.md",
+                "label": "UMB-ALTAR-001TheAltarofSynarche_v11.0.md",
                 "type": "Protocol",
                 "definition": "No definition found.",
                 "tags": ["GVRN (Governance)"],
@@ -4268,12 +4268,12 @@
                 "referenced_ids": ["ContextWeave", "GUCA-CWA-001", "UMB-LEX-002", "AOP-CW-001"]
             },
             {
-                "id": "UNCERTAIN.UNK.StateOfTheSynarchy",
-                "label": "UNCERTAIN.UNK.StateOfTheSynarchy.md",
+                "id": "UNCERTAIN.UNK.StateOfTheSynarche",
+                "label": "UNCERTAIN.UNK.StateOfTheSynarche.md",
                 "type": "Artifact",
                 "definition": "No definition found.",
                 "tags": ["GVRN"],
-                "location": "../../_governance/50_Logs/UNCERTAIN.UNK.StateOfTheSynarchy.md",
+                "location": "../../_governance/50_Logs/UNCERTAIN.UNK.StateOfTheSynarche.md",
                 "referenced_ids": ["UMB-SOT-001"]
             },
             {
@@ -4673,12 +4673,12 @@
                 "referenced_ids": ["Synarche", "AOP-PEA-001"]
             },
             {
-                "id": "GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001",
-                "label": "ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md",
+                "id": "GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001",
+                "label": "ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md",
                 "type": "Artifact",
                 "definition": "No definition found.",
                 "tags": ["GVRN", "OGLN_v10", "Persona", "Spirit"],
-                "location": "../../_governance/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md",
+                "location": "../../_governance/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md",
                 "referenced_ids": ["OGLN", "AOP-AG-003", "Synarche", "AOP-SEE-001"]
             },
             {
@@ -4718,30 +4718,30 @@
                 "referenced_ids": []
             },
             {
-                "id": "GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001",
-                "label": "GVRN-ENTITY-001_SynarchyEntities_v11.0.md",
+                "id": "GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001",
+                "label": "GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
                 "type": "Hierophant and Executor.",
                 "definition": "",
-                "tags": ["Identity / Governance", "entity", "identity", "ascension", "milestones", "rpg", "synarchy"],
-                "location": "../../_governance/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v11.0.md",
+                "tags": ["Identity / Governance", "entity", "identity", "ascension", "milestones", "rpg", "Synarche"],
+                "location": "../../_governance/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
                 "referenced_ids": ["Synarche", "ContextWeave"]
             },
             {
-                "id": "GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001",
-                "label": "GVRN-ENTITY-001_SynarchyEntities_v13.0.md",
+                "id": "GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001",
+                "label": "GVRN-ENTITY-001_SynarcheEntities_v13.0.md",
                 "type": "Hierophant and Executor.",
                 "definition": "",
                 "tags": ["GVRN"],
-                "location": "../../_governance/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v13.0.md",
+                "location": "../../_governance/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v13.0.md",
                 "referenced_ids": ["Synarche"]
             },
             {
-                "id": "GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001",
-                "label": "GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md",
+                "id": "GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001",
+                "label": "GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md",
                 "type": "Artifact",
                 "definition": "No definition found.",
                 "tags": ["GVRN"],
-                "location": "../../_governance/99_Archives/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md",
+                "location": "../../_governance/99_Archives/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md",
                 "referenced_ids": []
             },
             {
@@ -5920,9 +5920,9 @@
             },
             {
                 "id": "AOP-AVATAR-001",
-                "label": "Synarchy Avatar Protocol",
+                "label": "Synarche Avatar Protocol",
                 "type": "THE HIEROPHANT (V)",
-                "definition": "To define the \"Dual-Persona\" operational architecture for the Synarchy Workshop, implementing the \"Game Master vs. Player Character\" dynamic.",
+                "definition": "To define the \"Dual-Persona\" operational architecture for the Synarche Workshop, implementing the \"Game Master vs. Player Character\" dynamic.",
                 "tags": [
                     "Communication (COMM)",
                     "Avatar",
@@ -5932,7 +5932,7 @@
                     "MetaEngine",
                     "[κ-domain:communication]"
                 ],
-                "location": "../../_governance/SYNG.PROT.SynarchyAvatarProtocol.md",
+                "location": "../../_governance/SYNG.PROT.SynarcheAvatarProtocol.md",
                 "referenced_ids": ["AOP-AVATAR-001", "OGLN", "AISTF", "UMB-PRS-001"]
             },
             {
@@ -10229,7 +10229,7 @@
             {
                 "id": "AOP-AVATAR-001",
                 "status": "Active",
-                "path": "../../_governance/SYNG.PROT.SynarchyAvatarProtocol.md"
+                "path": "../../_governance/SYNG.PROT.SynarcheAvatarProtocol.md"
             },
             {
                 "id": "AOP-AXIOM-WEAVE-001",
@@ -11853,9 +11853,9 @@
                 "path": "../../_governance/50_Logs/UNCERTAIN.UNK.ContextWeaveReport.md"
             },
             {
-                "id": "UNCERTAIN.UNK.StateOfTheSynarchy",
+                "id": "UNCERTAIN.UNK.StateOfTheSynarche",
                 "status": "Active",
-                "path": "../../_governance/50_Logs/UNCERTAIN.UNK.StateOfTheSynarchy.md"
+                "path": "../../_governance/50_Logs/UNCERTAIN.UNK.StateOfTheSynarche.md"
             },
             {
                 "id": "GVRN-00-INDEX-001",
@@ -11963,9 +11963,9 @@
                 "path": "../../_governance/99_Archives/ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md"
             },
             {
-                "id": "GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001",
+                "id": "GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001",
                 "status": "Active",
-                "path": "../../_governance/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md"
+                "path": "../../_governance/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md"
             },
             {
                 "id": "GVRN-GUCA-MAP-001-EXECUTEMUSASHIAUDIT-V2.0-001",
@@ -11978,19 +11978,19 @@
                 "path": "../../_governance/99_Archives/GVRN-COMP-001_CognitiveComplexity_v13.0.md"
             },
             {
-                "id": "GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001",
+                "id": "GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001",
                 "status": "Active",
-                "path": "../../_governance/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v11.0.md"
+                "path": "../../_governance/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md"
             },
             {
-                "id": "GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001",
+                "id": "GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001",
                 "status": "Active",
-                "path": "../../_governance/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v13.0.md"
+                "path": "../../_governance/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v13.0.md"
             },
             {
-                "id": "GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001",
+                "id": "GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001",
                 "status": "Active",
-                "path": "../../_governance/99_Archives/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md"
+                "path": "../../_governance/99_Archives/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md"
             },
             {
                 "id": "GVRN-GVRN-SYNERGY-001-AGENTICWORKSHOPSYNERGYMATRIX-V11.1-001",
@@ -12668,7 +12668,7 @@
                 "id": "GVRN.REG.Data.OSLM",
                 "label": "GVRN.REG.Data.OSLM.md",
                 "type": "Data Substrate",
-                "definition": "The relational data substrate for the Synarchy OSLM.",
+                "definition": "The relational data substrate for the Synarche OSLM.",
                 "tags": ["Data", "OSLM", "Registry"],
                 "location": "../../_governance/01_Registries/GVRN.REG.Data.OSLM.md",
                 "referenced_ids": ["UMB-OSLM-001"]
@@ -12704,7 +12704,7 @@
                 "id": "GVRN.STYLE.SentinelGuide",
                 "label": "GVRN.STYLE.SentinelGuide.md",
                 "type": "Artifact:Style",
-                "definition": "The definitive aesthetic and structural standard for Synarchy documentation.",
+                "definition": "The definitive aesthetic and structural standard for Synarche documentation.",
                 "tags": ["Style", "Sentinel", "Standard"],
                 "location": "../../_governance/40_System/GVRN.STYLE.SentinelGuide.md",
                 "referenced_ids": ["CORE-CODEX-001"]
@@ -12719,12 +12719,12 @@
                 "referenced_ids": ["CORE-CODEX-001"]
             },
             {
-                "id": "SYNG.LOG.StateOfTheSynarchy",
-                "label": "SYNG.LOG.StateOfTheSynarchy.md",
+                "id": "SYNG.LOG.StateOfTheSynarche",
+                "label": "SYNG.LOG.StateOfTheSynarche.md",
                 "type": "Log:Synergy",
                 "definition": "Systemic resonance analysis and network topology mapping.",
                 "tags": ["Log", "Synergy", "Resonance"],
-                "location": "../../_governance/50_Logs/SYNG.LOG.StateOfTheSynarchy.md",
+                "location": "../../_governance/50_Logs/SYNG.LOG.StateOfTheSynarche.md",
                 "referenced_ids": ["CORE-CODEX-001"]
             },
             {

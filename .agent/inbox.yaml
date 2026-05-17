@@ -1,3 +1,4 @@
+# .agent/inbox.yaml
 version: "1.0"
 routing:
   - triggers: ["secure_mode_request", "plan_approval"]

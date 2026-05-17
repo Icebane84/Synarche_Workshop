@@ -54,7 +54,7 @@
 
 ## **Block E: Ethos (Hierarchy of Intent)**
 
-> [!IMPORTANT] **[APEX]** Void to Form: To provide the skeletal structure upon which the Synarchy grows.
+> [!IMPORTANT] **[APEX]** Void to Form: To provide the skeletal structure upon which the Synarche grows.
 >
 > **[PRI]** Logical Topology: The map is the territory; every file must have a home.
 >

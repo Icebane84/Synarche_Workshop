@@ -1,0 +1,15 @@
+﻿Core/Axion_Backend/.env.example
+Core/Axion_Backend/.vscode/extensions.json
+Core/Axion_Backend/.vscode/settings.json
+Core/Axion_Backend/supabase/.gitignore
+Core/Axion_Backend/supabase/config.toml
+Core/Axion_Backend/supabase/functions/on-new-message/.npmrc
+Core/Axion_Backend/supabase/functions/on-new-message/deno.json
+Core/Axion_Backend/supabase/functions/on-new-message/index.ts
+Core/Axion_Backend/supabase/migrations/20251125142334_placeholder.sql
+Core/Axion_Backend/supabase/migrations/20251125152209_placeholder.sql
+Core/Axion_Backend/supabase/migrations/20251205000000_axion_schema.sql
+Library/CDL/CSL_Archive_Extracted/CSL Breakthroughs.xlsx
+Library/UMB-LOOM-001_TheCognitiveLoom_v111.md
+Library/UMB-LOOM-002_CognitiveLoom_v1.0.md
+Library/UMB-LOOM-005_PhoenixGeode_v1.0.md

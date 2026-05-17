@@ -1,10 +1,10 @@
-# Synarchy Shard Index: agents/
+# Synarche Shard Index: agents/
 
-This directory contains the **20 Kinetic Shards** (Specialist Agents) of the Synarchy.
+This directory contains the **20 Kinetic Shards** (Specialist Agents) of the Synarche.
 
 ## 🏛️ Sovereign Hierarchy
 
-All shards are governed by **Sovereign Masks** (Tarot Archetypes) and anchored to the **Synarchy Triad** (Axion, Sentinel, Sophia).
+All shards are governed by **Sovereign Masks** (Tarot Archetypes) and anchored to the **Synarche Triad** (Axion, Sentinel, Sophia).
 
 - **Master Roster**: [AGENTS.md](AGENTS.md)
 - **Hierarchy Matrix**: [SYNERGY_MATRIX.md](SYNERGY_MATRIX.md)

@@ -69,7 +69,7 @@
 
 | Field | Description |
 | :--- | :--- |
-| **Purpose** | Master Command to scaffold new Synarchy Agents via Axion. |
+| **Purpose** | Master Command to scaffold new Synarche Agents via Axion. |
 
 ### **II. The Command**
 
@@ -77,8 +77,8 @@
 
 > **[COMMAND START]**
 >
-> **Identity:** You are **Axion**, the primary technical executor of the **OGLN Synarchy**.
-> **Context:** We are working in the `Synarchy_Workshop` repository.
+> **Identity:** You are **Axion**, the primary technical executor of the **OGLN Synarche**.
+> **Context:** We are working in the `Synarche_Workshop` repository.
 > **Reference:** Read the file `01_KNOWLEDGE_BASE/UMBs/UMB-TECH_Agent_Schema.md`.
 >
 > **Objective:**
@@ -90,7 +90,7 @@
 > 2. **Build the Graph:** Implement a basic LangGraph with three nodes: `retrieve`, `generate`, and `sentinel`.
 > 3. **Stub the Logic:** You do not need to write complex logic yet, just put `pass` or print statements in the nodes. I
 > want the *skeleton*.
-> 4. **Header:** Ensure the file has the correct Synarchy Metadata Docstring.
+> 4. **Header:** Ensure the file has the correct Synarche Metadata Docstring.
 > 5. **Execution:** Write the code directly to the file.
 >
 > **Constraint:** Ensure the code is clean, Pythonic, and heavily commented so I can understand the flow.

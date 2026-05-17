@@ -48,9 +48,8 @@ Conforms to OGLN/AISTF v15.0 governance and documentation standards.
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.system.logging.phoenix VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [ACTIVE] TS: 2026-03-28
 
 import logging
-import os
 from enum import Enum, auto
-from typing import Optional
+
 
 # GVRN-STD-ENUM-001 - Mandates Enum for logging levels
 class ProcessStatus(Enum):
@@ -58,11 +57,13 @@ class ProcessStatus(Enum):
     Standardized enumeration for process logging levels.
     Ensures consistent status reporting across the Axion Core.
     """
+
     INFO = auto()
     WARNING = auto()
     ERROR = auto()
     CRITICAL = auto()
     DEBUG = auto()
+
 
 def setup_synarche_logging(log_file: str = "error_audit.log") -> logging.Logger:
     """
@@ -77,7 +78,7 @@ def setup_synarche_logging(log_file: str = "error_audit.log") -> logging.Logger:
         A configured logging.Logger instance.
     """
     logger = logging.getLogger("PhoenixLogger")
-    
+
     # Ensure we don't add duplicate handlers if initialized multiple times
     if logger.handlers:
         return logger
@@ -85,9 +86,7 @@ def setup_synarche_logging(log_file: str = "error_audit.log") -> logging.Logger:
     logger.setLevel(logging.DEBUG)  # Root captures all; handlers filter
 
     # ISO-8601 Format for V-Control (Temporal Precision)
-    log_format = logging.Formatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    )
+    log_format = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
     # 1. Console Handler (The Pulse) - INFO and above
     c_handler = logging.StreamHandler()
@@ -108,6 +107,7 @@ def setup_synarche_logging(log_file: str = "error_audit.log") -> logging.Logger:
 
     logger.info("PhoenixLogger initialized: Dual-stream logging active.")
     return logger
+
 
 # Export a default instance for convenience across the workspace
 logger = setup_synarche_logging()

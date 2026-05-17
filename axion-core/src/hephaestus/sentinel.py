@@ -38,7 +38,8 @@ from typing import Any
 
 from .auditor import ComplianceAuditor
 from .crf import CausalLinter
-from .lib.resonance_scanner import scan_directory
+from .lib.resonance_scanner import ArtifactScanner
+from .lib.task_context import TaskContext
 from .soul import ArtificersSoul
 
 # Configure logging
@@ -54,15 +55,18 @@ class CodeSentinel:
         self.soul = ArtificersSoul()
         self.crf = CausalLinter()
         self.auditor = ComplianceAuditor()
+        self.task_context = TaskContext()
+        self.scanner = ArtifactScanner(self.task_context)
 
     def scan_causality(self, root_path: str) -> list[dict[str, Any]]:
         """
         [NEW] Scans text artifacts for Causal Resoance.
         """
         causal_report = []
-        for root, _, files in os.walk(root_path):
-            if ".git" in root or "node_modules" in root:
-                continue
+        for root, dirs, files in os.walk(root_path):
+            # OMEGA v15.1 - Performance Optimization
+            exclude_dirs = {".git", ".venv", ".venv_prs", "__pycache__", "node_modules", ".gemini", "artifacts", "brain", ".mypy_cache", ".pytest_cache"}
+            dirs[:] = [d for d in dirs if d not in exclude_dirs]
 
             for file in files:
                 if not file.endswith(".md"):
@@ -95,7 +99,7 @@ class CodeSentinel:
         2. Compliance Audit (Depth/OGLN v11.0)
         """
         # Layer 1: Breadth (Resonance)
-        total, aligned, unaligned_paths = scan_directory(Path(root_path))
+        total, aligned, unaligned_paths = self.scanner.scan_directory(Path(root_path))
         resonance_score = (aligned / total * 100) if total > 0 else 0.0
 
         # Layer 2: Depth (Compliance Auditor)
@@ -135,7 +139,7 @@ class CodeSentinel:
             # If _governance doesn't exist relative to root_path, try to find it up one level or assume fixed path
             if not report_path.parent.exists():
                 # Fallback: Try absolute path relative to known structure
-                # This assumes standard Synarchy layout
+                # This assumes standard Synarche layout
                 # ../../../_governance/5_Logs/GVRN.Triage.Report.md depending on execution context
                 pass
 
@@ -173,3 +177,38 @@ class CodeSentinel:
 
         except Exception as e:
             logger.warning(f"Failed to log to Triage Report: {e}")
+
+
+if __name__ == "__main__":
+    import json
+
+    # Default to scanning one level up from 'src' (the workspace root)
+    # Correct path calculation: axion-core/src/hephaestus/sentinel.py -> axion-core/
+    root_to_scan = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    
+    print(f"[*] SENTINEL: Starting Governance Audit for: {root_to_scan}")
+    sentinel = CodeSentinel()
+    
+    # Layer 1: Governance/Compliance
+    report = sentinel.scan_governance(root_to_scan)
+    
+    # Layer 2: Causality
+    causal_findings = sentinel.scan_causality(root_to_scan)
+    report["causal_dissonance"] = causal_findings
+
+    print("\n[+] AUDIT COMPLETE")
+    print(f"Resonance Score: {report['resonance_score']:.1f}%")
+    print(f"Dissonant Files: {len(report['dissonant_files'])}")
+    print(f"Causal Dissonance: {len(causal_findings)} files")
+    
+    if report['resonance_score'] < 100.0:
+        print("\n[!] Dissonance detected in the following paths:")
+        for path in report['dissonant_files'][:10]:
+            print(f"  - {path}")
+        if len(report['dissonant_files']) > 10:
+            print(f"  - ... and {len(report['dissonant_files']) - 10} more.")
+
+    # Write full JSON report to a temporary artifact
+    with open("sentinel_report.json", "w") as f:
+        json.dump(report, f, indent=4)
+    print("\n[i] Full report written to: sentinel_report.json")

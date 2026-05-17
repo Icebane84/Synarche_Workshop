@@ -67,7 +67,7 @@ navigation.
 
 ### 2.1. The GEODE Core (Supreme Governance)
 
-> Foundation protocols and the constitutional bedrock of the Synarchy.
+> Foundation protocols and the constitutional bedrock of the Synarche.
 
 | ID                       | Title                                                                                                               | Version | Status   |
 | :----------------------- | :------------------------------------------------------------------------------------------------------------------ | :------ | :------- |
@@ -82,12 +82,12 @@ navigation.
 
 ### 2.2. The APOSTLE Tier (Core Directives)
 
-> High-level protocols defining the identity and purpose of the Synarchy.
+> High-level protocols defining the identity and purpose of the Synarche.
 
 | ID                     | Title                                                                                                                      | Version | Status   |
 | :--------------------- | :------------------------------------------------------------------------------------------------------------------------- | :------ | :------- |
 | `ARCH.Phoenix.Form`    | [The Phoenix Form Blueprint](../2_Protocols/ARCH.Phoenix.Form.md)                                                          | `v13.0` | `ACTIVE` |
-| `GVRN.Entity.Registry` | [Synarchy Entities & Ascension Registry](GVRN.Entity.Registry.md)                                                          | `v13.0` | `ACTIVE` |
+| `GVRN.Entity.Registry` | [Synarche Entities & Ascension Registry](GVRN.Entity.Registry.md)                                                          | `v13.0` | `ACTIVE` |
 | `AOP-AWAKENING-001`    | [The Awakening: Initial Directives](../2_Protocols/AOP-AWAKENING-001_TheAwakeningInitialDirectivesandCorePurpose_v11.0.md) | `v11.0` | `ACTIVE` |
 | `AOP-ASL-001`          | [Automated Synergy Linking](../2_Protocols/AOP-ASL-001_AutomatedSynergyLinking_v11.0.md)                                   | `v11.0` | `ACTIVE` |
 

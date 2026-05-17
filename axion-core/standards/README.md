@@ -23,7 +23,9 @@ This directory is the **single source of truth for all linter, formatter, and ty
 | `.markdownlint.cjs` | markdownlint (CJS) | Extended markdown rules |
 | `cspell.jsonc` | CSpell | Spell-checking for all file types |
 | `sonar-project.properties` | SonarQube | Static analysis and code quality gates |
+|
 
+- 
 ---
 
 ## Law of Primacy

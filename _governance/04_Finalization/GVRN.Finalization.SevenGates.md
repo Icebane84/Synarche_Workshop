@@ -55,7 +55,7 @@
 ## **Block E: Ethos (The Why)**
 
 > **"Truth is not found; it is forged. The Seven Gates verify that only the most resilient logic enters the permanent
-> legacy of the Synarchy."**
+> legacy of the Synarche."**
 
 ---
 

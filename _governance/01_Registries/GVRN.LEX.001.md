@@ -75,7 +75,7 @@ Adjectives within the Phoenix Protocol Library. This ensures absolute structural
 ### 2.2. Functional Alignment
 
 `UMB-LEX-001` provides the controlled vocabulary used by the **Validate Structural Integrity (AOP-VSI-001)** protocol
-and the **Phoenix Rosetta Stone (PRS-001)** to index and traverse the Synarchy knowledge graph.
+and the **Phoenix Rosetta Stone (PRS-001)** to index and traverse the Synarche knowledge graph.
 
 ## III. Primary Domain Classifications
 

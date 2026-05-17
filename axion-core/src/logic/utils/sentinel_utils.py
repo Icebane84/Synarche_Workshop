@@ -44,13 +44,13 @@
 
 import logging
 import subprocess
-from typing import Any, List, Optional
+from typing import Any
 
 # Configure logging for this module
 logger = logging.getLogger("sentinel")
 
 
-def safe_run_command(cmd: List[str], **kwargs: Any) -> subprocess.CompletedProcess:
+def safe_run_command(cmd: list[str], **kwargs: Any) -> subprocess.CompletedProcess:
     """
     Executes a shell command securely and logs the outcome.
     Centralizes 'subprocess.run' to satisfy security checks and logging requirements.
@@ -69,19 +69,13 @@ def safe_run_command(cmd: List[str], **kwargs: Any) -> subprocess.CompletedProce
             kwargs["shell"] = False
 
         logger.info(f"--- [SENTINEL] EXECUTING: {' '.join(cmd)} ---")
-        
+
         # Extract common flags with defaults
         capture_output = kwargs.pop("capture_output", True)
         text = kwargs.pop("text", True)
         check = kwargs.pop("check", False)
 
-        result = subprocess.run(
-            cmd,
-            capture_output=capture_output,
-            text=text,
-            check=check,
-            **kwargs
-        )
+        result = subprocess.run(cmd, capture_output=capture_output, text=text, check=check, **kwargs)
 
         if result.returncode != 0:
             stderr_output = result.stderr.strip() if result.stderr else "No stderr output."
@@ -96,7 +90,7 @@ def safe_run_command(cmd: List[str], **kwargs: Any) -> subprocess.CompletedProce
         raise
 
 
-def heal_with_ruff(targets: List[str]) -> None:
+def heal_with_ruff(targets: list[str]) -> None:
     """
     Runs Ruff check with auto-fix enabled for the specified targets.
 
@@ -105,6 +99,7 @@ def heal_with_ruff(targets: List[str]) -> None:
     """
     cmd = ["python", "-m", "ruff", "check", "--fix"] + targets
     safe_run_command(cmd)
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.sentinel.utils VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 0a90931b57f2f549

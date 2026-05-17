@@ -87,7 +87,7 @@ if __name__ == "__main__":
         )
 
         state = AxionState(
-            input="Review the Synarchy Protocol for Zero Entropy.",
+            input="Review the Synarche Protocol for Zero Entropy.",
             rpg_stats=rpg,
             gamemaster_state=GamemasterState(),
             lightbinder_state=LightbinderState(),

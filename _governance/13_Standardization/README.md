@@ -8,7 +8,7 @@
 
 ### 📖 Intent
 
-The High Court of Syntax. This directory codifies the immutable laws of the Synarchy, including the **Relational Naming
+The High Court of Syntax. This directory codifies the immutable laws of the Synarche, including the **Relational Naming
 Convention (RNC)**, the **Universal Metadata Anchor (UAM)**, and the **Phoenix Cycle** execution standards.
 
 ### 📜 Sovereign Rules

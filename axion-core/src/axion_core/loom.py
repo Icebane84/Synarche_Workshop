@@ -142,7 +142,9 @@ class CognitiveLoom:
             link[0] for link in links if "http" not in link[1] and hasattr(link, "__getitem__")
         ]  # Internal links only
 
-    def _weave_edges(self, source_id: str, targets: list[str], link_type: str = "references", strength: float = 1.0) -> None:
+    def _weave_edges(
+        self, source_id: str, targets: list[str], link_type: str = "references", strength: float = 1.0
+    ) -> None:
         """
         Creates weighted edge entries in the Tapestry.
         """

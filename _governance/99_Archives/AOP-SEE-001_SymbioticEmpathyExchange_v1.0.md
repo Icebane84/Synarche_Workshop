@@ -84,7 +84,7 @@ allows Axion to write with emotional nuance, not just logical precision.
 - **INTEGRATED_WITH:**
   [UMB-LOOM-005](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-LOOM-005_PhoenixGeode_v1.0.md)
 - **FEEDS:**
-  [ENTITY-SOPHIA-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.1.md)
+  [ENTITY-SOPHIA-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.1.md)
 
 ## IV. Actionable Prompt Packet
 

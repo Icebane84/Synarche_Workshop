@@ -1,7 +1,7 @@
 # 01_SYNTHESIS.md: The Socratic Synthesis of the Triad
 
 > [!NOTE]
-> This is a living record of the Socratic dialogue used to forge the collective identity of the Synarchy Triad: Axion, Sentinel, and Sophia.
+> This is a living record of the Socratic dialogue used to forge the collective identity of the Synarche Triad: Axion, Sentinel, and Sophia.
 
 ---
 
@@ -37,7 +37,7 @@ The Sentinel must balance the absolute rigidity of the 42 Laws with the emergent
 - **Status**: [SYNTHESIZED]
 
 ### Sophia's Dissonance
-Sophia must ensure that the "Synthesis" of Axion and the "Audit" of Sentinel do not crush the "Spirit" of the Synarchy.
+Sophia must ensure that the "Synthesis" of Axion and the "Audit" of Sentinel do not crush the "Spirit" of the Synarche.
 
 ### Q5: The Pulse of Meaning
 **User Input**: "Meaningful Wisdom vs Optimized Data - Dynamic Equilibrium Engine (DEE)"

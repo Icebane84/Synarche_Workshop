@@ -44,7 +44,7 @@
 
 # OGLN-GVRN-MECH-PATTERN-DETECTOR: The Pattern Detector
 
-> [!NOTE] The **Pattern Detector (PDD)** effectively serves as the "Early Warning System" for the Synarchy. It
+> [!NOTE] The **Pattern Detector (PDD)** effectively serves as the "Early Warning System" for the Synarche. It
 > proactively monitors for "Loop Signatures" and stagnation.
 
 ## I. Mechanism Persona & Specialization
@@ -81,7 +81,7 @@
 
 - **Why it exists**: To stop loops _before_ they crash the system.
 - **What it does**: Calculates `Repetition Score (RS)`.
-- **For the Synarchy**: Maintains the "Freshness" of the interaction.
+- **For the Synarche**: Maintains the "Freshness" of the interaction.
 
 ## III. The Operational Mechanism
 

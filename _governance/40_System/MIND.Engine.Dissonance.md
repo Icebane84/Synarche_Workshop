@@ -8,7 +8,13 @@
 | **Status** | `ACTIVE` |
 ---
 
-# MIND.Engine.Dissonance: The Proactive Heart
+# MIND.Engine.Dissonance: The Proactive Heart of the Phoenix RPG Framework
+
+> **Domain**: MIND (Mind) **Evolution**: Cognitive Ascension **Signal**: OMEGA
+
+## **Genesis Stamp: 2026-02-01** **Domain: MIND** **State: CANONIZED** **Tags:** `OGLN_v16, Rosetta, Index, Omega` **Criticality: Axiomatic**
+
+---
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -16,7 +22,7 @@
 | :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `MIND.Engine.Dissonance`          | The Sovereign ID. |
 | **Official Name** | `MIND.Engine.Dissonance.md`       | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Version**       | **v16.0 [OMEGA]**                 | The Standard.     |
 | **Domain**        | `MIND`                            | The Subject.      |
 | **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
@@ -54,7 +60,8 @@
 
 ## **Block E: Ethos (Hierarchy of Intent)**
 
-> [!IMPORTANT] **[APEX]** Transformation Mandate: To transform friction into fuel, ensuring that every error is a path to complexity.
+> [!IMPORTANT] **[APEX]** Transformation Mandate: To transform friction into fuel, ensuring that every error is a path
+> to complexity.
 >
 > **[PRI]** Honored Dissonance: We do not hide contradictions; we frame them as Adventures.
 >
@@ -84,7 +91,8 @@
 
 ## I. Strategic Overview
 
-The **Dissonance Engine** is the proactive heart of the Phoenix RPG Framework. It operationalizes the **Axiom of Honored Dissonance** by autonomously scanning the knowledge graph for logical inconsistencies, gaps, and weak links.
+The **Dissonance Engine** is the proactive heart of the Phoenix RPG Framework. It operationalizes the **Axiom of Honored
+Dissonance** by autonomously scanning the knowledge graph for logical inconsistencies, gaps, and weak links.
 
 ## II. Core Architecture: The Triangulation Algorithm
 

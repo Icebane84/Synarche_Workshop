@@ -1,28 +1,41 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
         "paths": {
-            /* --- Layer 1: THE ANCHOR (Governance & Complete Stack) --- */
-            "@system/*": ["axion-core/src/cse/*"],
-            "@domain/*": ["axion-core/src/02_domain/*"],
-            "@nexus/*": ["axion-core/src/nexus/*"],
-            "@fabric/*": ["design-system/tarot-forge/src/*"],
-            "@essence/*": ["axion-core/src/types/*"],
-            "@atlas/*": ["_governance/01_Registries/*"],
-
-            /* --- Layer 2: THE TRIAD (Core Sovereign Logic) --- */
-            "@axion/*": ["axion-core/src/*"],
-            "@sophia/*": ["axion-core/src/logic/nlp/*"],
-            "@sentinel/*": ["axion-core/sentinel/*"],
-
-            /* --- Layer 4: THE CHRONICLE (Vault & Shards) --- */
-            "@logs/*": ["axion-core/_logs/*"],
-
-            /* --- MULTI-LANGUAGE QUAD CLUSTER --- */
-            "@gov/*": ["_governance/*"],
-            "@engine/*": ["nova_forge/*"],
-            "@bridge/*": ["axion-core/*"],
-            "@library/*": ["library/*"]
+            /* --- The Master Star-Chart (PRS-001) --- */
+            "@system/*": ["./axion-core/src/*"],
+            "@fabric/*": ["./design-system/*"],
+            "@essence/*": ["./axion-core/src/types/*"],
+            "@shield/*": ["./axion-core/sentinel/*"],
+            "@pulse/*": ["./axion-core/_logs/*"],
+            "@loom/*": ["./axion-core/standards/*"]
         }
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules",
+        "**/node_modules/**/*",
+        "dist",
+        "**/dist",
+        "**/dist/**/*",
+        "out",
+        "**/out",
+        "**/out/**/*",
+        ".git",
+        "**/_governance",
+        "**/_governance/**/*",
+        "**/.archives",
+        "**/.archives/**/*",
+        "**/.mypy_cache",
+        "**/.mypy_cache/**/*",
+        "**/.ruff_cache",
+        "**/.ruff_cache/**/*",
+        "**/.venv",
+        "**/.venv/**/*",
+        "**/venv",
+        "**/venv/**/*",
+        "**/scratch",
+        "**/scratch/**/*",
+        "**/incoming",
+        "**/incoming/**/*"
+    ]
 }

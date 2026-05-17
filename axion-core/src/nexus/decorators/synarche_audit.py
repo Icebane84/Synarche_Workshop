@@ -22,7 +22,8 @@ import functools
 import logging
 import time
 import traceback
-from typing import Any, Callable
+from collections.abc import Callable
+from typing import Any
 
 
 def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
@@ -30,10 +31,10 @@ def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
     The @synarche_audit architectural wrapper.
     Automates function entry/exit/error logging with full stack traces.
     Enforces Rule T201 by routing all diagnostic output through PhoenixLogger.
-    
+
     Args:
         func (Callable): The function to be audited.
-        
+
     Returns:
         Callable: The audited wrapper function (sync or async).
     """
@@ -55,9 +56,8 @@ def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
             logger.info(f"EXEC_SUCCESS: {func.__name__} | Duration: {duration:.4f}s")
             return result
         except Exception as e:
-            logger.error(
-                f"EXEC_FAILURE: {func.__name__} | {type(e).__name__}: {str(e)}\n"
-                f"STACK_TRACE:\n{traceback.format_exc()}"
+            logger.exception(
+                f"EXEC_FAILURE: {func.__name__} | {type(e).__name__}: {e!s}\nSTACK_TRACE:\n{traceback.format_exc()}"
             )
             raise
 
@@ -78,9 +78,8 @@ def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
             logger.info(f"EXEC_SUCCESS: {func.__name__} | Duration: {duration:.4f}s")
             return result
         except Exception as e:
-            logger.error(
-                f"EXEC_FAILURE: {func.__name__} | {type(e).__name__}: {str(e)}\n"
-                f"STACK_TRACE:\n{traceback.format_exc()}"
+            logger.exception(
+                f"EXEC_FAILURE: {func.__name__} | {type(e).__name__}: {e!s}\nSTACK_TRACE:\n{traceback.format_exc()}"
             )
             raise
 

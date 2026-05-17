@@ -27,7 +27,7 @@
 
 ## 🏛️ OPERATIONAL LOGIC
 
-This template defines the step-by-step operational workflows for complex tasks within the Synarchy.
+This template defines the step-by-step operational workflows for complex tasks within the Synarche.
 
 ### 1. Workflow Phases
 

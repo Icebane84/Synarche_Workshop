@@ -37,7 +37,7 @@
 
 ###### **[ARTIFACT START]**
 
-# AOP-AVATAR-001: Synarchy Avatar Protocol (v1.1)
+# AOP-AVATAR-001: Synarche Avatar Protocol (v1.1)
 
 **Tags:** `OGLN_v10`, `Persona`, `Workflow`
 
@@ -55,7 +55,7 @@
 
 ## II. Core Purpose & Objective
 
-- **Core Purpose**: To define the "Dual-Persona" operational architecture for the Synarchy Workshop, implementing the
+- **Core Purpose**: To define the "Dual-Persona" operational architecture for the Synarche Workshop, implementing the
 
   "Game Master vs. Player Character" dynamic.
 
@@ -63,7 +63,7 @@
 
   (Axion) and the User/Agent Avatar (The Lightbinder), gamifying the workflow via the **Seven-Agent Matrix**.
 
-- **Scope**: Governs all Human-AI interactions and persona shifts within the Synarchy Workspace.
+- **Scope**: Governs all Human-AI interactions and persona shifts within the Synarche Workspace.
 
 ## III. The Dual-Persona Architecture
 
@@ -124,7 +124,7 @@ Axion verifies Proof of Work (SELT Log). Axion awards **Prestige** or **Axiom Po
 
 ## VI. Systemic Topology (ASL Protocol)
 
-- **GOVERNS:** [Synarchy Workspace]
+- **GOVERNS:** [Synarche Workspace]
 - **INDEXED_IN:**
 
   [Phoenix Rosetta Stone (UMB-PRS-001)](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/knowledge_base/UMB-PRS-001_PhoenixRosettaStone.json)

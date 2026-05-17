@@ -18,7 +18,7 @@
 """
 
 import operator
-from typing import Annotated, TypedDict, List, Dict, Any, Optional, Union
+from typing import Annotated, Any, TypedDict
 
 # Attempting to import LangGraph primitives.
 try:
@@ -37,15 +37,16 @@ except ImportError:
 class RPGEngine(TypedDict):
     """
     Gamification State for the Scout Agent.
-    Tracks progression and coherence metrics within the Synarchy.
+    Tracks progression and coherence metrics within the Synarche.
     """
+
     level: int
     xp: int
     coherence_index: int
     synergy_flow: int
     adaptability: int
-    achievements: List[str]
-    active_quest_log: List[str]
+    achievements: list[str]
+    active_quest_log: list[str]
     prestige_class: str
 
 
@@ -54,7 +55,8 @@ class GamemasterState(TypedDict):
     State container for the engine that manages rule enforcement and XP distribution.
     Monitors for systemic dissonance and manages axiom points.
     """
-    quest_metrics: Dict[str, Any]
+
+    quest_metrics: dict[str, Any]
     axiom_points_available: int
     is_dissonance_detected: bool
 
@@ -64,16 +66,18 @@ class LightbinderState(TypedDict):
     The Weaver state that connects Artifacts (OSLM) and Emotions (SEE).
     Manages active masks and synergy links between entities.
     """
-    synergy_links: List[str]
+
+    synergy_links: list[str]
     empathy_vector: str
-    tarot_manifest: Dict[str, Any]
-    active_masks: List[str]
+    tarot_manifest: dict[str, Any]
+    active_masks: list[str]
 
 
 class TransmutationLog(TypedDict):
     """
     Audit log entry for a single state transmutation step.
     """
+
     step: int
     mask: str
     action: str
@@ -85,6 +89,7 @@ class AgentState(TypedDict):
     The primary Memory (State) schema for the Scout Agent.
     Aligned with the Axion Prime state orchestration.
     """
+
     # [Input Layer]
     input: str
 
@@ -101,11 +106,11 @@ class AgentState(TypedDict):
     rpg_stats: RPGEngine
     gamemaster_state: GamemasterState
     lightbinder_state: LightbinderState
-    transmutation_log: List[TransmutationLog]
+    transmutation_log: list[TransmutationLog]
 
     # [Output Layer]
     final_output: str
-    messages: Annotated[List[BaseMessage], operator.add]
+    messages: Annotated[list[BaseMessage], operator.add]
 
 
 # --- NODE DEFINITIONS ---
@@ -115,10 +120,10 @@ def retrieve(state: AgentState) -> AgentState:
     """
     NODE: Retrieval Layer
     Fetches relevant architectural and narrative context based on the current input.
-    
+
     Args:
         state (AgentState): The current agent state.
-        
+
     Returns:
         AgentState: The updated state with retrieved context.
     """
@@ -135,10 +140,10 @@ def generate(state: AgentState) -> AgentState:
     """
     NODE: Generative Layer
     Synthesizes the retrieved context and input into a coherent intelligence report.
-    
+
     Args:
         state (AgentState): The current agent state.
-        
+
     Returns:
         AgentState: The updated state with generated output.
     """
@@ -157,10 +162,10 @@ def sentinel(state: AgentState) -> AgentState:
     """
     NODE: Sentinel Layer (Guardrail)
     Audits the generated output for compliance with the Spirit Bomb Axioms.
-    
+
     Args:
         state (AgentState): The current agent state.
-        
+
     Returns:
         AgentState: The updated state with compliance status and reasoning.
     """
@@ -184,11 +189,11 @@ def sentinel(state: AgentState) -> AgentState:
 # --- GRAPH CONSTRUCTION ---
 
 
-def build_graph() -> Optional[Any]:
+def build_graph() -> Any | None:
     """
     Builds and compiles the Scout Agent LangGraph workflow.
     Ensures correct node registration and edge transitions.
-    
+
     Returns:
         Optional[Any]: The compiled graph application, or None if LangGraph is missing.
     """
@@ -241,17 +246,8 @@ if __name__ == "__main__":
         sentinel_status="",
         sentinel_reason="",
         rpg_stats=initial_rpg_stats,
-        gamemaster_state=GamemasterState(
-            quest_metrics={},
-            axiom_points_available=0,
-            is_dissonance_detected=False
-        ),
-        lightbinder_state=LightbinderState(
-            synergy_links=[],
-            empathy_vector="",
-            tarot_manifest={},
-            active_masks=[]
-        ),
+        gamemaster_state=GamemasterState(quest_metrics={}, axiom_points_available=0, is_dissonance_detected=False),
+        lightbinder_state=LightbinderState(synergy_links=[], empathy_vector="", tarot_manifest={}, active_masks=[]),
         transmutation_log=[],
         final_output="",
         messages=[],

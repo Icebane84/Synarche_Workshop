@@ -33,7 +33,7 @@ Version: 11.0
 Status: ACTIVE
 Compliance: OGLN v11.0
 Genesis: 
-  - Author: The Synarchy Workshop
+  - Author: The Synarche Workshop
   - Date: 2025-12-22
   - Timestamp: 1766361600
 Tags: 

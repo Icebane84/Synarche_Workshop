@@ -13,7 +13,7 @@
 
 # Clean Code Shard (.agent/skills/dev/clean-code)
 
-Enforcement of readability, maintainability, and the "Zero Entropy" coding standard across the Synarchy.
+Enforcement of readability, maintainability, and the "Zero Entropy" coding standard across the Synarche.
 
 ## 🛠️ Performance Metrics
 

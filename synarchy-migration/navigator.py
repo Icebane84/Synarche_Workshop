@@ -6,7 +6,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 if current_dir not in sys.path:
     sys.path.insert(0, current_dir)
 
-from synarchy_bridge import SynarchyRegistry
+from Synarche_bridge import SynarcheRegistry
 
 
 def display_menu(menu_options):
@@ -88,7 +88,7 @@ def navigate_library(registry):
         choice = display_menu(main_menu_options)
 
         if choice.lower() == "exit":
-            print("Exiting Synarchy Navigator.")
+            print("Exiting Synarche Navigator.")
             break
 
         if choice.lower() == "search command library":
@@ -117,8 +117,8 @@ def navigate_library(registry):
 
 
 def main():
-    print("Initializing Synarchy Command Navigator...")
-    bridge = SynarchyRegistry()
+    print("Initializing Synarche Command Navigator...")
+    bridge = SynarcheRegistry()
     print("Registry Loaded.")
     navigate_library(bridge)
 

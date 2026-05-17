@@ -2,18 +2,18 @@
 # Universal Identification & Provenance (UIP)
 | Key | Value |
 | :--- | :--- |
-| **Module ID** | `SYNG.STATE.001_STATEOFTHESYNARCHY_V14.0` |
+| **Module ID** | `SYNG.STATE.001_STATEOFTHESynarche_V14.0` |
 | **Version** | `v11.0` |
 | **Evolution** | **Cognitive Ascension** |
 | **Status** | `ACTIVE` |
 ---
 
-# SYNG-STATE-001 (StateOfTheSynarchy)
+# SYNG-STATE-001 (StateOfTheSynarche)
 
 | Key                | Value                                        | Description       |
 | :----------------- | :------------------------------------------- | :---------------- |
 | **Artifact ID**    | `SYNG-STATE-001`                             | The Sovereign ID. |
-| **Official Name**  | `SYNG.STATE.001_StateOfTheSynarchy_v14.0.md` | The Filename.     |
+| **Official Name**  | `SYNG.STATE.001_StateOfTheSynarche_v14.0.md` | The Filename.     |
 | **Version**        | **v14.0 [OMEGA]**                            | The Standard.     |
 | **Domain**         | `SYNG`                                       | The Subject.      |
 | **Status (State)** | `[ACTIVE]`                                   | The Lifecycle.    |

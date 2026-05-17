@@ -1,3 +1,4 @@
+# .agent/task-groups/phoenix-feature.yaml
 name: "phoenix-feature"
 description: "Plan, Code, Audit, and Document simultaneously."
 trigger: "/feature"

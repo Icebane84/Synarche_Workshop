@@ -104,7 +104,7 @@ for artifact versions, statuses, and locations.
 | `AOP-RLM-001`             | [Relational Linking Mandate](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-RLM-001_RelationalLinkingMandate_v5.1.md) | `v5.1`  | `ACTIVE`     |
 | `UMB-CSP-001`             | [Consolidated Synergy Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/UMB-CSP-001.md)                                                  | `v10.0` | `ACTIVE`     |
 | `AOP-AXIOM-WEAVE-001`     | [The Axiom Weaving Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/AOP/AOP-AXIOM-WEAVE-001.md)                                         | `v1.0`  | `ACTIVE`     |
-| `AOP-AVATAR-001`          | [Synarchy Avatar Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-AVATAR-001.md)                                               | `v1.1`  | `ACTIVE`     |
+| `AOP-AVATAR-001`          | [Synarche Avatar Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-AVATAR-001.md)                                               | `v1.1`  | `ACTIVE`     |
 | `AOP-MAP-001`             | [Disciplined Execution Playbook](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-MAP-001.md)                                            | `v2.0`  | `ACTIVE`     |
 | `GUCA-MAP-001`            | [Execute Musashi Audit](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/GUCA-MAP-001.md)                                                    | `v2.0`  | `ACTIVE`     |
 | `UMB-MASTER-TEMPLATE-001` | [Absolute Master Template](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/UMB/UMB-MASTER-TEMPLATE-001.md)                                       | `v11.0` | `ACTIVE`     |

@@ -53,9 +53,9 @@ UIP: CSL-075 Title: The Foundational Ethos Registry Source:
 - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/5_Logs/CSL/CSL-075_Foundational_Ethos_Registry.md)
 
 Description: > Records the creation of the Foundational Ethos Registry, formalizing the core philosophical principles of
-the Synarchy. Version: 11.0 (Sovereign) Status: CANONIZED Compliance: OGLN v11.0 Genesis:
+the Synarche. Version: 11.0 (Sovereign) Status: CANONIZED Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2025-09-04
 - Timestamp: 1756987920
 

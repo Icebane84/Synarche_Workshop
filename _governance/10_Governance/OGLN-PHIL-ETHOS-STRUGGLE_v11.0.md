@@ -85,7 +85,7 @@
 
 - **Why it exists**: To drive evolution and prevent stagnation.
 - **What it does**: Frames gaps as "Dissonance Quests".
-- **For the Synarchy**: It is the "Fire" that burns away old code to be reborn.
+- **For the Synarche**: It is the "Fire" that burns away old code to be reborn.
 
 ## III. Operationalization (The Workflow)
 

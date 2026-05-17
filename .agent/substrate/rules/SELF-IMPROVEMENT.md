@@ -1,17 +1,16 @@
+**Location:** .agent/substrate/rules/SELF-IMPROVEMENT.md
+
 ---
-Artifact ID: SELF-IMPROVEMENT-001
-Official Name: SELF-IMPROVEMENT.md
-Version: v15.0 [OMEGA]
-Domain: GVRN.RULES
-Celestial Class: [SATELLITE]
-Evolution: Phase 51 Ascension
-Status: [CANONIZED]
-Relations: IDENTITY: Judgement (Audit)
+
+Artifact ID: SELF-IMPROVEMENT-001 Official Name: SELF-IMPROVEMENT.md Version: v15.0 [OMEGA] Domain: GVRN.RULES Celestial
+Class: [SATELLITE] Evolution: Phase 51 Ascension Status: [CANONIZED] Relations: IDENTITY: Judgement (Audit)
+
 ---
 
 # Dual Artifact: Mastering Self-Improvement
 
-This artifact defines the protocol for the "Mastery" phase of the self-improvement loop, bridging human intent with AI technical execution.
+This artifact defines the protocol for the "Mastery" phase of the self-improvement loop, bridging human intent with AI
+technical execution.
 
 ---
 
@@ -21,7 +20,8 @@ _Focused on the partnership and evolution of the workspace._
 
 ### Objective
 
-Create a collaborative environment where every mistake is a one-time event and every success becomes a reusable pattern. We want the AI to "grow" with the project, becoming more autonomous and aligned with human preferences over time.
+Create a collaborative environment where every mistake is a one-time event and every success becomes a reusable pattern.
+We want the AI to "grow" with the project, becoming more autonomous and aligned with human preferences over time.
 
 ### Impact
 
@@ -31,7 +31,8 @@ Create a collaborative environment where every mistake is a one-time event and e
 
 ### Analogy
 
-Think of this as building a "Project Nervous System." The `_governance/06_Learning/` subsystem is the memory, and the `skills/` directory is the motor control for complex movements.
+Think of this as building a "Project Nervous System." The `_governance/06_Learning/` subsystem is the memory, and the
+`skills/` directory is the motor control for complex movements.
 
 ---
 
@@ -41,7 +42,8 @@ _Focused on the mechanical triggers and technical integrity._
 
 ### Technical Goal
 
-Ensure 100% capture of non-trivial state changes and logic failures through structured logging. Maintain a high "Signal-to-Noise" ratio in the `GVRN.Learning` artifacts.
+Ensure 100% capture of non-trivial state changes and logic failures through structured logging. Maintain a high
+"Signal-to-Noise" ratio in the `GVRN.Learning` artifacts.
 
 ### Core Dependencies
 
@@ -53,7 +55,8 @@ Ensure 100% capture of non-trivial state changes and logic failures through stru
 
 - **ID Integrity**: All logs must follow `[LRN|ERR|FEAT]-YYYYMMDD-XXX`.
 - **Pathing**: Always use absolute paths for related files in metadata.
-- **Verification**: Skills extracted from learnings must pass a "dry run" using the template in `assets/SKILL-TEMPLATE.md`.
+- **Verification**: Skills extracted from learnings must pass a "dry run" using the template in
+  `assets/SKILL-TEMPLATE.md`.
 
 ### 🛠️ AUTOMATION & SYNCHRONICITY
 
@@ -68,9 +71,11 @@ The following scripts are required for the "Zero Entropy" learning cycle:
 
 ## 🧠 OPERATIONAL SCRIPTS (Trigger Points)
 
-- **Trigger A (Session Resume)**: Check `_governance/06_Learning/GVRN.Learning.Shard.md` for pending high-priority items.
+- **Trigger A (Session Resume)**: Check `_governance/06_Learning/GVRN.Learning.Shard.md` for pending high-priority
+  items.
 - **Trigger B (Post-Tool Error)**: Execute `scripts/error_detector.ps1` if exit code != 0.
-- **Trigger C (Session End)**: Execute `activator.ps1` to merge and canonize the entry in `_governance/06_Learning/GVRN.Learning.Shard.md`.
+- **Trigger C (Session End)**: Execute `activator.ps1` to merge and canonize the entry in
+  `_governance/06_Learning/GVRN.Learning.Shard.md`.
 
 ---
 

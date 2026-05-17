@@ -1,3 +1,4 @@
+# .agent/manifest.yaml
 version: "1.0"
 project_name: "Synarche_Workspace"
 agents:

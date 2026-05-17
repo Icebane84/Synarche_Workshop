@@ -16,7 +16,7 @@ export function useOracleLogs(): {
         {
             id: 'init',
             timestamp: new Date().toLocaleTimeString(),
-            content: 'SYNARCHY KERNEL INITIALIZED...',
+            content: 'Synarche KERNEL INITIALIZED...',
             type: 'system',
         },
     ]);

@@ -33,7 +33,7 @@ Version: 11.0
 Status: ACTIVE
 Compliance: OGLN v11.0
 Genesis: 
-  - Author: The Synarchy Workshop
+  - Author: The Synarche Workshop
   - Date: 2026-01-17
   - Timestamp: 1768646400
 Tags: 
@@ -59,7 +59,7 @@ Tags:
 
 ## I. Executive Summary
 
-The **ContextWeave Engine** is the primary analytical engine for the Phoenix Synarchy. It transfigures raw information into a cohesive knowledge tapestry by identifying latent relationships and emergent patterns across disparate datasets. It is the "Loom" that weaves the threads of data into the fabric of wisdom.
+The **ContextWeave Engine** is the primary analytical engine for the Phoenix Synarche. It transfigures raw information into a cohesive knowledge tapestry by identifying latent relationships and emergent patterns across disparate datasets. It is the "Loom" that weaves the threads of data into the fabric of wisdom.
 
 ---
 

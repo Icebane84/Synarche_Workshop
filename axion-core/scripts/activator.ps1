@@ -2,21 +2,45 @@
 # Synthesizes session state into .learnings/LEARNINGS.md
 
 param (
-    [string]$LearningsPath = "c:\Users\Chris\Synarche_Workspace\.learnings\LEARNINGS.md"
+    [string]$LearningsPath = "c:\Users\Chris\Synarche_Workspace\.learnings\LEARNINGS.md",
+    [Parameter(Mandatory=$true)][string]$Summary,
+    [string]$Details = "Manual synthesis executed.",
+    [ValidateSet("low", "medium", "high", "critical")][string]$Priority = "medium",
+    [string]$Area = "infra"
 )
 
-$Timestamp = Get-Date -Format "yyyy-MM-dd"
+$Date = Get-Date -Format "yyyyMMdd"
+$Timestamp = Get-Date -Format "yyyy-MM-ddTHH:mm:ssZ"
+$RandomID = Get-Random -Minimum 100 -Maximum 999
+$EntryID = "LRN-$Date-$RandomID"
+
 Write-Host ">>> Activating Sovereign Memory Synthesis..."
 
 # Logic: Append a new entry to the Evolutionary Ledger
 $NewLearning = @"
 
-### [$Timestamp] Self-Improvement Cycle Activation
-- **Synthesis:** Operationalized the Self-Improvement Loop with automated PS scripts.
-- **Persistence:** Initialized .learnings substrate for Phase 15 accountability.
-- **Automation:** Deployed activator.ps1 and error_detector.ps1 for continuous learning.
+## [$EntryID] $Summary
+
+**Logged**: $Timestamp
+**Priority**: $Priority
+**Status**: pending
+**Area**: $Area
+
+### Summary
+$Summary
+
+### Details
+$Details
+
+### Suggested Action
+Evaluate systemic impact and promote to CLAUDE.md if applicable.
+
+### Metadata
+- Source: session_outcome
+- Workflow: activator.ps1
+---
 "@
 
 $NewLearning | Out-File -FilePath $LearningsPath -Append -Encoding utf8
 
-Write-Host ">>> Synthesis Complete. Memory Persisted."
+Write-Host ">>> Synthesis Complete. Entry $EntryID Persisted to $LearningsPath" -ForegroundColor Green

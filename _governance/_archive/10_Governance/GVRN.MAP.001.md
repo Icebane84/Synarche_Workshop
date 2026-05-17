@@ -44,7 +44,7 @@ Description: > Defines the step-by-step operational procedure for executing a Mu
 ensuring absolute compliance with the 10 Pillars of OGLN Discipline. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0
 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769251200
 

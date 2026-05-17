@@ -27,7 +27,7 @@ def normalize_path(abs_path):
     return f"/{rel}" if not rel.startswith("/") else rel
 
 
-def scan_skills():
+def scan_skills() -> None:
     skills_root = os.path.join(BASE_DIR, "skills")
     print(f"[*] Scanning skills in {skills_root}...")
 
@@ -62,7 +62,7 @@ def scan_skills():
         print(f"[+] Updated registry: {registry_file}")
 
 
-def scan_workflows():
+def scan_workflows() -> None:
     workflows_root = os.path.join(BASE_DIR, "workflows")
     print(f"[*] Scanning workflows in {workflows_root}...")
 

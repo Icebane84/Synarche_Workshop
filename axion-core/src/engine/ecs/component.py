@@ -19,7 +19,7 @@
 
 import threading
 import uuid
-from typing import Any, Dict, Set, Type, TypeVar, Optional, Tuple
+from typing import Any, TypeVar
 
 from .resonance import ResonanceAuditor, ResonanceDomain
 
@@ -32,15 +32,15 @@ class ComponentStore:
     Includes a ResonanceAuditor to enforce semantic security and domain isolation.
     """
 
-    def __init__(self, auditor: Optional[ResonanceAuditor] = None) -> None:
+    def __init__(self, auditor: ResonanceAuditor | None = None) -> None:
         """
         Initializes the ComponentStore.
-        
+
         Args:
             auditor (Optional[ResonanceAuditor]): The auditor used for access control.
         """
         # type -> {entity_id -> component_instance}
-        self.stores: Dict[Type, Dict[uuid.UUID, Any]] = {}
+        self.stores: dict[type, dict[uuid.UUID, Any]] = {}
         self._lock = threading.Lock()
         self.auditor = auditor
         self._current_system: str = "UNKNOWN"
@@ -49,7 +49,7 @@ class ComponentStore:
     def set_access_context(self, system_name: str, domain: ResonanceDomain) -> None:
         """
         Sets the security context for the currently executing system.
-        
+
         Args:
             system_name (str): The name of the active system.
             domain (ResonanceDomain): The domain associated with the system.
@@ -57,10 +57,10 @@ class ComponentStore:
         self._current_system = system_name
         self._current_domain = domain
 
-    def __getstate__(self) -> Dict[str, Any]:
+    def __getstate__(self) -> dict[str, Any]:
         """
         Custom serialization logic to exclude threading locks.
-        
+
         Returns:
             Dict[str, Any]: The serializable state of the store.
         """
@@ -68,10 +68,10 @@ class ComponentStore:
         del state["_lock"]
         return state
 
-    def __setstate__(self, state: Dict[str, Any]) -> None:
+    def __setstate__(self, state: dict[str, Any]) -> None:
         """
         Custom deserialization logic to restore state and recreate locks.
-        
+
         Args:
             state (Dict[str, Any]): The serialized state.
         """
@@ -81,11 +81,11 @@ class ComponentStore:
     def add_component(self, entity_id: uuid.UUID, component: Any) -> None:
         """
         Associates a component with an entity. Thread-safe and audited.
-        
+
         Args:
             entity_id (uuid.UUID): The entity handle.
             component (Any): The component instance to add.
-            
+
         Raises:
             RuntimeError: If the current system violates resonance boundaries.
         """
@@ -101,17 +101,17 @@ class ComponentStore:
                 self.stores[comp_type] = {}
             self.stores[comp_type][entity_id] = component
 
-    def get_component(self, entity_id: uuid.UUID, comp_type: Type[T]) -> Optional[T]:
+    def get_component(self, entity_id: uuid.UUID, comp_type: type[T]) -> T | None:
         """
         Retrieves a component instance for a given entity and type.
-        
+
         Args:
             entity_id (uuid.UUID): The entity handle.
             comp_type (Type[T]): The class of the component to retrieve.
-            
+
         Returns:
             Optional[T]: The component instance, or None if not found.
-            
+
         Raises:
             RuntimeError: If the current system violates resonance boundaries.
         """
@@ -122,14 +122,14 @@ class ComponentStore:
                 )
         return self.stores.get(comp_type, {}).get(entity_id)
 
-    def remove_component(self, entity_id: uuid.UUID, comp_type: Type) -> None:
+    def remove_component(self, entity_id: uuid.UUID, comp_type: type) -> None:
         """
         Disassociates a component type from an entity. Thread-safe and audited.
-        
+
         Args:
             entity_id (uuid.UUID): The entity handle.
             comp_type (Type): The class of the component to remove.
-            
+
         Raises:
             RuntimeError: If the current system violates resonance boundaries.
         """
@@ -143,14 +143,14 @@ class ComponentStore:
             if comp_type in self.stores:
                 self.stores[comp_type].pop(entity_id, None)
 
-    def get_entities_with(self, *comp_types: Type) -> Set[uuid.UUID]:
+    def get_entities_with(self, *comp_types: type) -> set[uuid.UUID]:
         """
         Returns a set of entity IDs that possess ALL specified component types.
         Used for system queries and filtered processing loops.
-        
+
         Args:
             *comp_types (Type): Variable number of component types to filter by.
-            
+
         Returns:
             Set[uuid.UUID]: A set of entity IDs matching all types.
         """

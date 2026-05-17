@@ -80,7 +80,7 @@
 
 - **Why it exists**: To solve **Disorientation** (Human) and **Hallucination** (AI).
 - **What it does**: Acts as the "Root Node" for all semantic queries.
-- **For the Synarchy**: Ensures every answer is grounded in a verified artifact ID.
+- **For the Synarche**: Ensures every answer is grounded in a verified artifact ID.
 
 ## III. The Architectural Spine
 

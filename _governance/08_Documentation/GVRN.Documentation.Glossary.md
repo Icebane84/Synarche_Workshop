@@ -52,7 +52,7 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"All terminology must possess a singular, canonical definition. This Glossary is the Source of Truth for the Synarchy."**
+> **"All terminology must possess a singular, canonical definition. This Glossary is the Source of Truth for the Synarche."**
 
 ---
 

@@ -1,13 +1,13 @@
 """
 [SAV-DP] Absorber Engine
-Ingests governance artifacts from external AI streams into the Synarchy.
+Ingests governance artifacts from external AI streams into the Synarche.
 Compliant with OMEGA v15.0 security and domain protocols.
 """
 
 import json
 import logging
 import os
-from typing import Any, Dict
+from typing import Any
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -22,7 +22,7 @@ class AbsorberEngine:
         # Placeholder for security.yaml integration
         return ["synarche.org", "insforge.app"]
 
-    def absorb(self, artifact_data: Dict[str, Any], source_domain: str) -> bool:
+    def absorb(self, artifact_data: dict[str, Any], source_domain: str) -> bool:
         """Absorbs an artifact if it passes domain validation."""
         if source_domain not in self.allow_list:
             logger.error(f"Security Breach Attempt: Unauthorized source {source_domain}")
@@ -37,7 +37,7 @@ class AbsorberEngine:
             logger.info(f"Sucessfully absorbed artifact {artifact_id} from {source_domain}")
             return True
         except Exception as e:
-            logger.error(f"Failed to absorb artifact: {str(e)}")
+            logger.error(f"Failed to absorb artifact: {e!s}")
             return False
 
 if __name__ == "__main__":

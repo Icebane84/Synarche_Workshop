@@ -2,7 +2,7 @@
 
 ## Goal
 
-Finalize the OMEGA v15.0 standardization across the Synarchy workspace by centralizing governance constants, identity
+Finalize the OMEGA v15.0 standardization across the Synarche workspace by centralizing governance constants, identity
 vectors, and tarot archetypes to eliminate literal drift and harden the semantic core.
 
 ## Tasks

@@ -55,7 +55,7 @@ UIP: AOP-TMPL-001 Title: Master Sovereign Protocol Template Source:
 Description: > The definitive, Sovereign-class template for forging Operational Playbooks (AOP). Unified v11.0 workflow
 with v7.0 Skill/Skill-Tree depth. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769339200
 

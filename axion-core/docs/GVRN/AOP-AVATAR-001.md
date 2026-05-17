@@ -32,14 +32,14 @@
 | **Status** | `[ACTIVE]` | The Lifecycle. |
 | **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
 
-# AOP-AVATAR-001: Synarchy Avatar Protocol
+# AOP-AVATAR-001: Synarche Avatar Protocol
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
 | Field                  | Value                                                    |
 | :--------------------- | :------------------------------------------------------- |
 | **1. Artifact ID**     | `AOP-AVATAR-001`                                         |
-| **2. Official Name**   | `Synarchy Avatar Protocol`                               |
+| **2. Official Name**   | `Synarche Avatar Protocol`                               |
 | **3. Version**         | **v1.1**                                                 |
 | **4. Provenance**      | **Reforged: 2026-01-30**                                 |
 | **5. Domain**          | `GVRN`                                                   |

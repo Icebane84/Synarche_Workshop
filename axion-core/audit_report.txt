@@ -473,7 +473,7 @@ Target: C:\Users\Chris\Synarche_Workspace\axion-core\src
   -- UIP: Version is not v13.0.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] synarchy_bridge.py (Score: 0.50)
+[FAIL] Synarche_bridge.py (Score: 0.50)
   !! UIP: Missing required key 'Integrity Hash'.
   !! UIP: Invalid or missing Evolutionary Alignment.
   -- UIP: Version is not v13.0.
@@ -735,7 +735,7 @@ Target: C:\Users\Chris\Synarche_Workspace\axion-core\src
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 
-[FAIL] logic\synarchy_bridge.py (Score: 0.75)
+[FAIL] logic\Synarche_bridge.py (Score: 0.75)
   !! UIP: Missing or improperly formatted UIP header.
   -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
 

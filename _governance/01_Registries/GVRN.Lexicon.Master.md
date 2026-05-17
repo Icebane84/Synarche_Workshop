@@ -31,7 +31,7 @@
 | **Status**          | `[ACTIVE]`                     | The Lifecycle.    |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 
-# Standardized Lexicon: The Phoenix Synarchy Vocabulary (GVRN.Lexicon.Master)
+# Standardized Lexicon: The Phoenix Synarche Vocabulary (GVRN.Lexicon.Master)
 
 > **Domain**: GVRN (Governance) **Evolution**: Cognitive Ascension **Signal**: HIGH
 

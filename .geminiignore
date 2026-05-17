@@ -1,0 +1,16 @@
+# Ignore dependency directories
+venv/
+.venv/
+vendor/
+
+# Ignore tool caches (prevents constant re-indexing)
+.mypy_cache/
+.pytest_cache/
+__pycache__/
+
+# Ignore large data/build folders
+trunk/
+dist/
+build/
+.git/
+

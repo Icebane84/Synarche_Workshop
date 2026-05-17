@@ -79,7 +79,7 @@ def count_files(root: Path) -> dict[str, int]:
         "__pycache__",
     }
 
-    for root_dir, dirs, files in os.walk(root):
+    for _root_dir, dirs, files in os.walk(root):
         dirs[:] = [d for d in dirs if d not in exclude]
         stats["total"] += len(files)
 
@@ -109,7 +109,7 @@ def detect_features(root: Path) -> list[str]:
     return features[:10]  # Limit to top 10
 
 
-def print_status(root: Path):
+def print_status(root: Path) -> None:
     info = analyze_package_json(root)
     stats = count_files(root)
     features = detect_features(root)
@@ -134,7 +134,7 @@ def print_status(root: Path):
     print("\n====================\n")
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="Session Manager")
     parser.add_argument("command", choices=["status", "info"], help="Command to run")
     parser.add_argument("path", nargs="?", default=".", help="Project path")

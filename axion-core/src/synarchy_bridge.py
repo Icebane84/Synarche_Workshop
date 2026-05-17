@@ -6,7 +6,7 @@
 | Key                 | Value                                   | Description       |
 | :------------------ | :-------------------------------------- | :---------------- |
 | **Artifact ID**     | `CORE-BRIDGE-001`                       | The Sovereign ID. |
-| **Official Name**   | `synarchy_bridge.py`                    | The Filename.     |
+| **Official Name**   | `Synarche_bridge.py`                    | The Filename.     |
 | **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
 | **Domain**          | `CORE`                                  | The Subject.      |
 | **Celestial Class** | `[STAR]`                                | The Weight.       |
@@ -22,9 +22,9 @@ import os
 from typing import Any
 
 
-class SynarchyRegistry:
+class SynarcheRegistry:
     """
-    Interface for the Synarchy Command Registry.
+    Interface for the Synarche Command Registry.
     Allows agents (AXION, LIGHTBINDER) to programmatically access capabilities.
     """
 
@@ -82,7 +82,7 @@ class SynarchyRegistry:
         Retrieves the full specification for a specific command by name (case-insensitive).
         """
         matches = self.search_commands(command_name)
-        return exact match if possible, else first match
+        # return exact match if possible, else first match
         for cmd in matches:
             if cmd["name"].lower() == command_name.lower():
                 return cmd
@@ -93,7 +93,7 @@ class SynarchyRegistry:
 
 if __name__ == "__main__":
     # Simple self-test
-    bridge = SynarchyRegistry()
+    bridge = SynarcheRegistry()
     print("Categories:", bridge.get_all_categories())
     pass
 

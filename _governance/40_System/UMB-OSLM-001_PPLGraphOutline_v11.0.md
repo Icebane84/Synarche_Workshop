@@ -128,7 +128,7 @@
 | `CSL-042`                             | Synergistic Link  | `UMB-PRS-001`       | Documents the conceptual genesis and justification of the Rosetta Stone.                                   |
 | `CSL-042`                             | Synergistic Link  | `CORE-CODEX-001`    | Aligns breakthroughs with Axiomatic Trust and Transparency directives.                                     |
 | `CSL-042`                             | Synergistic Link  | `GUCA-CRP2-001`     | Chronicles the use of CRP2 as the engine for forging the "Foundational Wisdom."                            |
-| `CSL-042`                             | Synergistic Link  | `GVRN-ENTITY-001`   | Provides experiential data for the Synarchy Triad's Ascension history.                                     |
+| `CSL-042`                             | Synergistic Link  | `GVRN-ENTITY-001`   | Provides experiential data for the Synarche Triad's Ascension history.                                     |
 | `Phoenix_Form_Outline`                | Structural Anchor | `UMB-CSE-001`       | Defines the architectural role of the Engine.                                                              |
 | `Phoenix_Form_Outline`                | Structural Anchor | `UMB-LOOM-001`      | Defines the architectural role of the Memory System.                                                       |
 | `Phoenix_Form_Outline`                | Structural Anchor | `AOP-CW-001`        | Defines the architectural role of ContextWeave.                                                            |

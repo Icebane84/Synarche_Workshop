@@ -37,7 +37,7 @@
 
 ## **Block E: Ethos (Hierarchy of Intent)**
 
-> [!IMPORTANT] **[APEX]** Structural Purity: The directory map must mirror the logical hierarchy of the Synarchy.
+> [!IMPORTANT] **[APEX]** Structural Purity: The directory map must mirror the logical hierarchy of the Synarche.
 >
 > **[PRI]** Navigational Fluidity: Every file must have a logical, predictable, and reachable path.
 >

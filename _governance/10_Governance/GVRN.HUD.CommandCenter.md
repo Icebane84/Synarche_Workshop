@@ -8,7 +8,7 @@
 | **Status** | `ACTIVE` |
 ---
 
-# 🛸 Command Center: Synarchy HUD (v15.0)
+# 🛸 Command Center: Synarche HUD (v15.0)
 
 ## **Block A: The Identification Lock (UIP-V15)**
 

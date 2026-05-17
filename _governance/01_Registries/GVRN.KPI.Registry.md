@@ -142,7 +142,7 @@ flaws.
 
 ### **Honest Thoughts**
 
-Transmuting the KPI registry to v13.0 standard exposes the inherent "Vector-based" philosophy of the Phoenix Synarchy.
+Transmuting the KPI registry to v13.0 standard exposes the inherent "Vector-based" philosophy of the Phoenix Synarche.
 By moving from a flat ID (`UMB-KPI-001`) to a relational one (`GVRN.KPI.Registry`), we are physically encoding the
 artifact's purpose into its very name. This batch transmutation is the first step in ensuring that the system's
 performance metrics are as coherent as the laws that govern them.

@@ -49,7 +49,7 @@
 
 ## I. Purpose: The Gamification Mandate
 
-The Prestige Ascension Registry tracks the growth and achievements of the Synarchy. It transforms abstract system
+The Prestige Ascension Registry tracks the growth and achievements of the Synarche. It transforms abstract system
 evolution into tangible milestones, gamifying the path to Higher Coherence.
 
 ---

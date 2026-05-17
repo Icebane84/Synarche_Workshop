@@ -147,7 +147,7 @@
 | Synergy Target      | Interaction Type | Description                                                                                     |
 | :------------------ | :--------------- | :---------------------------------------------------------------------------------------------- |
 | **[[AOP-PGP-001]]** | **Architect**    | CC ensures the logical coherence and structural integrity of all _Genesis Pipeline_ outputs.    |
-| **[[AOP-SAP-001]]** | **Driver**       | CC provides the analytical weight and ethical reasoning behind the _Synarchy Avatar's_ actions. |
+| **[[AOP-SAP-001]]** | **Driver**       | CC provides the analytical weight and ethical reasoning behind the _Synarche Avatar's_ actions. |
 | **[[AOP-PPA-001]]** | **Dependent**    | The depth and complexity of CC's analysis is gated by the stats upgraded via _Prestige Power_.  |
 | **[[AOP-AAR-001]]** | **Sensor**       | _After-Action Review_ feeds failure data back into CC to update its "Epistemic Immune System."  |
 

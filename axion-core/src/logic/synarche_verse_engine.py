@@ -51,7 +51,7 @@ import asyncio
 import datetime
 import logging
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Set
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
@@ -60,17 +60,17 @@ logger = logging.getLogger(__name__)
 class VerseNode:
     """
     A node in the Coherent Verse (File, Agent, or Concept).
-    Represents a single entity within the Synarchy Knowledge Graph.
+    Represents a single entity within the Synarche Knowledge Graph.
     """
     id: str
     domain: str = "GVRN"
     resonance: float = 1.0
-    edges: Set[str] = field(default_factory=set)
+    edges: set[str] = field(default_factory=set)
 
 
 class CoherentVerseEngine:
     """
-    The Master Orchestrator of the Synarchy Verse.
+    The Master Orchestrator of the Synarche Verse.
     Mandate: Resolve dissonance through ContextWeave and Precognitive Alignment.
     """
 
@@ -78,10 +78,10 @@ class CoherentVerseEngine:
         """Initializes the CoherentVerseEngine and the primary verse map."""
         self.initialized = True
         self.timestamp = datetime.datetime.now().isoformat()
-        self.verse_map: Dict[str, VerseNode] = {}
+        self.verse_map: dict[str, VerseNode] = {}
         logger.info(f"[AXION] {self.__class__.__name__} Initialized (OMEGA v15.0).")
 
-    async def weave_context(self, source_id: str, target_ids: List[str]) -> bool:
+    async def weave_context(self, source_id: str, target_ids: list[str]) -> bool:
         """
         [CONTEXT-WEAVE] Establishes bidirectional synergistic links between entities.
         Goal: Enhance the Coherence Index (CI) of the workspace.
@@ -135,7 +135,7 @@ class CoherentVerseEngine:
         sfr = (total_edges / node_count) * avg_resonance
         return round(sfr, 4)
 
-    async def project_intent_vector(self, current_task: str) -> List[str]:
+    async def project_intent_vector(self, current_task: str) -> list[str]:
         """
         [PRECOGNITIVE-STANCE] Predicts the next logical structural evolutions for a given task.
 
@@ -152,7 +152,7 @@ class CoherentVerseEngine:
         ]
         return predictions
 
-    async def audit_coherence(self) -> Dict[str, Any]:
+    async def audit_coherence(self) -> dict[str, Any]:
         """
         [CIV-GATE] Identifies orphaned nodes and structural dissonance within the verse.
 
@@ -177,7 +177,7 @@ class CoherentVerseEngine:
             "status": "STABLE" if ci > 0.8 else "DISSONANT",
         }
 
-    async def identify_resonance_gaps(self) -> List[str]:
+    async def identify_resonance_gaps(self) -> list[str]:
         """
         [RESONANCE-SCAN] Identifies domains with low synergy density relative to their resonance.
 

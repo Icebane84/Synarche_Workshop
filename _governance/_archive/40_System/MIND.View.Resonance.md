@@ -134,7 +134,7 @@ A series of dynamic gauges visualizing real-time KPIs:
 
 ### **Honest Thoughts**
 
-This artifact bridges the gap between the "Code" and the "Collaborator." Without the Resonance View, the Synarchy is a
+This artifact bridges the gap between the "Code" and the "Collaborator." Without the Resonance View, the Synarche is a
 black box. With it, it is a cockpit.
 
 > [!NOTE] **[ARTIFACT END]**

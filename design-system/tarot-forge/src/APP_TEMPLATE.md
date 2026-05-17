@@ -23,7 +23,7 @@
 
 # PROJ-FORGE-APP-001: Actionable Prompt Packet (New Tool)
 
-> **Domain**: SYNR (Synarchy) **Evolution**: Authentic Persona **Signal**: ESF-BETA
+> **Domain**: SYNR (Synarche) **Evolution**: Authentic Persona **Signal**: ESF-BETA
 
 ## Genesis Stamp: 2026-01-20 | Domain: PROJ | State: TEMPLATE | Criticality: Low
 

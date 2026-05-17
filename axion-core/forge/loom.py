@@ -5,14 +5,15 @@ STATUS: [CANONIZED]
 TIMESTAMP: 2026-03-24
 """
 
+import hashlib
+import json
+import logging
 import os
 import re
-import yaml
-import logging
-import json
-import hashlib
 from pathlib import Path
-from typing import Dict, Any, Optional, List
+from typing import Any
+
+import yaml
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger("gvrn_loom")
@@ -56,8 +57,8 @@ def calculate_content_hash(content: str) -> str:
     return hashlib.sha256(soul_content.encode("utf-8")).hexdigest()
 
 
-def parse_markdown_metadata(content: str) -> Optional[Dict[str, str]]:
-    meta: Dict[str, str] = {}
+def parse_markdown_metadata(content: str) -> dict[str, str] | None:
+    meta: dict[str, str] = {}
     if "Block A:" in content:
         lines = content.split("\n")
         in_block = False
@@ -98,7 +99,7 @@ def parse_markdown_metadata(content: str) -> Optional[Dict[str, str]]:
     return meta if meta else None
 
 
-def generate_block_a(meta: Dict[str, Any]) -> str:
+def generate_block_a(meta: dict[str, Any]) -> str:
     lines = [
         "## **Block A: The Identification Lock (UIP-V15)**",
         "",
@@ -117,9 +118,9 @@ def generate_block_a(meta: Dict[str, Any]) -> str:
 
 class GVRNLoom:
     def __init__(self) -> None:
-        self.registry: Dict[str, Any] = {}
+        self.registry: dict[str, Any] = {}
         if REGISTRY_PATH.exists():
-            with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+            with open(REGISTRY_PATH, encoding="utf-8") as f:
                 self.registry = yaml.safe_load(f) or {}
 
     def sync_from_workspace(self) -> None:
@@ -140,7 +141,7 @@ class GVRNLoom:
                         continue
                     fpath = Path(root) / file
                     try:
-                        with open(fpath, "r", encoding="utf-8") as f:
+                        with open(fpath, encoding="utf-8") as f:
                             content = f.read()
                             meta = parse_markdown_metadata(content)
                             if meta and "artifact_id" in meta:
@@ -181,8 +182,8 @@ class GVRNLoom:
         self.save_registry()
         logger.info(f"Sync complete. Registry updated with {found_count} artifacts.")
 
-    def propagate_to_workspace(self, artifact_id_filter: Optional[str] = None) -> None:
-        logger.info(f"Propagating Registry to Workspace (PUSH)...")
+    def propagate_to_workspace(self, artifact_id_filter: str | None = None) -> None:
+        logger.info("Propagating Registry to Workspace (PUSH)...")
         push_count = 0
 
         for aid, meta in self.registry.items():
@@ -198,7 +199,7 @@ class GVRNLoom:
                 continue
 
             try:
-                with open(fpath, "r", encoding="utf-8") as f:
+                with open(fpath, encoding="utf-8") as f:
                     content = f.read()
 
                 # Phase 2: Transclusion Support
@@ -244,7 +245,7 @@ class GVRNLoom:
         logger.info(f"Propagation complete. {push_count} files updated.")
 
     def audit(self) -> bool:
-        logger.info("Executing Socratic Audit of the Synarchy...")
+        logger.info("Executing Socratic Audit of the Synarche...")
         dissonance_found = False
 
         for aid, meta in self.registry.items():
@@ -261,7 +262,7 @@ class GVRNLoom:
                 continue
 
             try:
-                with open(fpath, "r", encoding="utf-8") as f:
+                with open(fpath, encoding="utf-8") as f:
                     content = f.read()
 
                 # 1. Integrity Hash Audit

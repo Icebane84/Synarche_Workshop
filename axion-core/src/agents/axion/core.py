@@ -39,7 +39,7 @@ class AxionAgentCore:
     def __init__(self, db_path: Optional[str] = None) -> None:
         """
         Initialize the Axion Agent Core Vessel.
-        
+
         Args:
             db_path (Optional[str]): Path to the memory database.
         """
@@ -54,10 +54,10 @@ class AxionAgentCore:
     def process_event(self, user_query: str) -> str:
         """
         Executes the 'Event Horizon' processing loop.
-        
+
         Args:
             user_query (str): The raw input from the user.
-            
+
         Returns:
             str: The generated response or an error message.
         """

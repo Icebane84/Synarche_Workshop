@@ -10,7 +10,7 @@
 
 # GVRN.PROC.FeedbackLoop: Continuous Optimization Protocol
 
-The Continuous Feedback Loop (CFL) is the Synarchy's mechanism for bridging technical performance data with autonomous policy refinement.
+The Continuous Feedback Loop (CFL) is the Synarche's mechanism for bridging technical performance data with autonomous policy refinement.
 
 ## 🏛️ Block A: Identification Lock
 

@@ -22,6 +22,7 @@
 > "To begin is to set the resonance for all that follows." — Axiom of Initiation
 """
 
+
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -29,4 +30,3 @@
 # Passive Ability: The Forge's Heart (Auto-Refactor)
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
-

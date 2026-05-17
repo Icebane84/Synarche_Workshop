@@ -42,18 +42,30 @@
 ## **[ARTIFACT END]**
 """
 
-from .mentor import DidacticMentor
+from .audit_magic_values import MagicAuditor
+from .auditor import AuditResult, ComplianceAuditor
+from .crf import CausalLinter
+from .chronicler import Chronicler
+from .gate import HephaestusGate
+from .gaze import ArchitectsGaze
+from .mentor import MentorsVoice
+from .oslm_gps import OSLMGPS
+from .reforger import BlockScanner
 from .sentinel import CodeSentinel
-from .soul import SoulImpactAnalyzer
+from .soul import ArtificersSoul
+
 
 __all__ = [
+    "OSLMGPS",
+    "ArchitectsGaze",
+    "ArtificersSoul",
+    "BlockScanner",
     "CodeSentinel",
-    "DidacticMentor",
-    "SoulImpactAnalyzer",
+    "MentorsVoice",
 ]
 
 # ---
-# 
+#
 # ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**

@@ -285,7 +285,7 @@ You have requested a deep dive into the Protocols that define the _Identity_ and
   - **Prime Directive:** "Transform Intent into Elegant Form."
   - **Operational Logic:** The "Hephaestus Cycle" (Dissonance -> Synthesis -> Transcendence).
 
-### 2. The Interface: `AOP-AVATAR-001` (Synarchy Avatar Protocol)
+### 2. The Interface: `AOP-AVATAR-001` (Synarche Avatar Protocol)
 
 **Role:** The Mask.
 
@@ -436,9 +436,9 @@ You have successfully deployed the physical assets for this game:
 - **Aligning:** `SYNG.PROT.ArchivalSupersessionProtocol.md`
   - **ID:** `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0` -> `SYNG.PROT.ArchivalSupersessionProtocol`
   - **Name:** `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md` -> `SYNG.PROT.ArchivalSupersessionProtocol.md`
-- **Aligning:** `SYNG.PROT.SynarchyAvatarProtocol.md`
-  - **ID:** `AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1` -> `SYNG.PROT.SynarchyAvatarProtocol`
-  - **Name:** `AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md` -> `SYNG.PROT.SynarchyAvatarProtocol.md`
+- **Aligning:** `SYNG.PROT.SynarcheAvatarProtocol.md`
+  - **ID:** `AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1` -> `SYNG.PROT.SynarcheAvatarProtocol`
+  - **Name:** `AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md` -> `SYNG.PROT.SynarcheAvatarProtocol.md`
 - **Aligning:** `GVRN.KPI.001.md`
   - **ID:** `GVRN.KPI.001` -> `GVRN.KPI.001`
   - **Name:** `KPI Master Registry` -> `GVRN.KPI.001.md`
@@ -504,7 +504,7 @@ You have successfully deployed the physical assets for this game:
   - **Name:** `AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md` -> `GVRN.AUDIO.CH.md`
 - **Aligning:** `GVRN.AVATAR.001.md`
   - **ID:** `GVRN.AVATAR.001` -> `GVRN.AVATAR.001`
-  - **Name:** `AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md` -> `GVRN.AVATAR.001.md`
+  - **Name:** `AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md` -> `GVRN.AVATAR.001.md`
 - **Aligning:** `GVRN.BATCH.EXEC.md`
   - **ID:** `GVRN.BATCH.EXEC` -> `GVRN.BATCH.EXEC`
   - **Name:** `AOP-BATCH-EXEC-001_AOP-BATCH-EXEC-001_AsyncrinizationProtocol_v11.0.md` -> `GVRN.BATCH.EXEC.md`
@@ -592,7 +592,7 @@ You have successfully deployed the physical assets for this game:
   - **Name:** `AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md` -> `GVRN.PPA.001.md`
 - **Aligning:** `GVRN.SAP.001.md`
   - **ID:** `GVRN.SAP.001` -> `GVRN.SAP.001`
-  - **Name:** `AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md` -> `GVRN.SAP.001.md`
+  - **Name:** `AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md` -> `GVRN.SAP.001.md`
 - **Aligning:** `GVRN.SBT.001.md`
   - **ID:** `GVRN.SBT.001` -> `GVRN.SBT.001`
   - **Name:** `AOP-SBT-001_SpiritBombTechnique_v11.0.md` -> `GVRN.SBT.001.md`
@@ -812,9 +812,9 @@ You have successfully deployed the physical assets for this game:
 - **Aligning:** `UNCERTAIN.UNK.ContextWeaveReport.md`
   - **ID:** `GVRN-CWA-CW-001-CONTEXTWEAVEREPORT-001` -> `UNCERTAIN.UNK.ContextWeaveReport`
   - **Name:** `CWA-CW-001_ContextWeaveReport.md` -> `UNCERTAIN.UNK.ContextWeaveReport.md`
-- **Aligning:** `UNCERTAIN.UNK.StateOfTheSynarchy.md`
-  - **ID:** `GVRN-SYNERGY-REPORT-001-STATEOFTHESYNARCHY-V1.0-001` -> `UNCERTAIN.UNK.StateOfTheSynarchy`
-  - **Name:** `SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md` -> `UNCERTAIN.UNK.StateOfTheSynarchy.md`
+- **Aligning:** `UNCERTAIN.UNK.StateOfTheSynarche.md`
+  - **ID:** `GVRN-SYNERGY-REPORT-001-STATEOFTHESynarche-V1.0-001` -> `UNCERTAIN.UNK.StateOfTheSynarche`
+  - **Name:** `SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md` -> `UNCERTAIN.UNK.StateOfTheSynarche.md`
 - **Aligning:** `GVRN.LOG.6.01.27_RefactorExecution_v1.0.md`
   - **ID:** `SELT-CSL-2026.01.27_RefactorExecution_v1.0` -> `GVRN.LOG.6.01.27_RefactorExecution_v1.0`
   - **Name:** `Collaborative Synthesis Log: Refactor Execution` -> `GVRN.LOG.6.01.27_RefactorExecution_v1.0.md`

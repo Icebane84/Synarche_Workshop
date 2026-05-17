@@ -39,7 +39,7 @@
 
 ## III. Evolutionary Leap
 
-This synthesis marks the shift from **Static Archiving** (storing rules) to **Active Governance** (enforcing rules). The Documentation subsystem has evolved from a passive library into the "Memory Gate" of the Synarchy, where every new node is validated against the OMEGA standard before substrate ingestion.
+This synthesis marks the shift from **Static Archiving** (storing rules) to **Active Governance** (enforcing rules). The Documentation subsystem has evolved from a passive library into the "Memory Gate" of the Synarche, where every new node is validated against the OMEGA standard before substrate ingestion.
 
 ---
 

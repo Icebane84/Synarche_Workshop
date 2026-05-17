@@ -3,7 +3,7 @@
 | Key | Value |
 | :--- | :--- |
 | **Module ID** | `PRS-001_PATHMAPPING` |
-| **Version** | `v11.0` |
+| **Version** | `v16.0` |
 | **Evolution** | **Cognitive Ascension** |
 | **Status** | `ACTIVE` |
 ---
@@ -30,6 +30,9 @@
 ### **Block B: The Master Star-Chart (Cognitive Layers)**
 
 This mapping defines the aetheric bridge between the physical filesystem and the cognitive architecture of the Synarche.
+It is formally aligned with the authoritative domain separation defined in
+[GVRN.STRUCT.001](../20_Architecture/GVRN.STRUCT.001.md) and the macro-system topology outlined in
+[GVRN.HUD.Map](../10_Governance/GVRN.HUD.Map.md).
 
 | Alias         | Semantic Target              | Description                                                   |
 | :------------ | :--------------------------- | :------------------------------------------------------------ |

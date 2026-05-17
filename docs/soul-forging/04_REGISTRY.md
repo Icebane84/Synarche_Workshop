@@ -1,7 +1,7 @@
 # 04_REGISTRY: The Triadic Registry Rules
 
 > [!NOTE]
-> This document defines the registration and systemic mapping protocols for the Synarchy Triad.
+> This document defines the registration and systemic mapping protocols for the Synarche Triad.
 
 ## 🏛️ Central Registries
 

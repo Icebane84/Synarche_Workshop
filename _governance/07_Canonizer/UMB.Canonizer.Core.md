@@ -70,7 +70,7 @@
 
 ## **I. Epistemological Core**
 
-`UMB.Canonizer.Core` represents the philosophical and systemic "Why" behind the canonization process. It is the Seal of the Phoenix—the final assurance that an artifact is a true and accurate manifestation of the Synarchy.
+`UMB.Canonizer.Core` represents the philosophical and systemic "Why" behind the canonization process. It is the Seal of the Phoenix—the final assurance that an artifact is a true and accurate manifestation of the Synarche.
 
 ### **The Nature of Canonization**
 
@@ -86,7 +86,7 @@ Canonization is the act of transforming a "Draft" into "Law." The Canonizer acts
 
 ## **III. Systemic Impact**
 
-The `UMB` core ensures that the canonization process is not merely a technical step, but a verification of systemic truth. It prevents entropy from entering the shared memory of the Synarchy.
+The `UMB` core ensures that the canonization process is not merely a technical step, but a verification of systemic truth. It prevents entropy from entering the shared memory of the Synarche.
 
 ---
 

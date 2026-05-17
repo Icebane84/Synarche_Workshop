@@ -10,7 +10,7 @@
 
 # 📜 The Phoenix Codex: \_governance/00_Codex/
 
-This directory contains the **Foundational Laws** of the Synarchy.
+This directory contains the **Foundational Laws** of the Synarche.
 
 ## 🏮 Sign on the Door
 

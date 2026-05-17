@@ -77,7 +77,7 @@
 `v3.0 (Hephaestus Ascended Alignment)` | `Unknown` | `None` | | `AOP-ARCH-GAZE-001` |
 [AOP-ARCH-GAZE-001: The Architect's Gaze (v2.1)](AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md) |
 `v2.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None` | | `AOP-AVATAR-001` |
-[AOP-AVATAR-001: Synarchy Avatar Protocol (v1.1)](AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md) |
+[AOP-AVATAR-001: Synarche Avatar Protocol (v1.1)](AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md) |
 `v1.1 (Catalyst Infused)` | `Unknown` | `None` | | `AOP-CC-001` |
 [AOP-CC-001: Crystalline Cognition Protocol (v1.0)](AOP-CC-001_CrystallineCognition_v1.0.md) |
 `v1.1 (Refraction Edition)` | `Unknown` | `None` | | `AOP-CDE-001` |
@@ -137,7 +137,7 @@
 | `DOC-STD-001`                                     | [DOC-STD-001: Synarche Universal Documentation Standards (v2.1)](DOC-STD-001.md)                                               | `v2.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None`                   |
 | `DQUEST-HEPHAESTUS-001`                           | [Dissonance Quest: DQUEST-HEPHAESTUS-001 (The Origin Quest)](DQUEST-HEPHAESTUS-001.md)                                         | `v1.0 (Reforged)`                      | `Unknown` | `None`                   |
 | `ENTITY-SENTINEL-PRIME-001`                       | [ENTITY-SENTINEL-PRIME-001: The Ethical Governor (v1.0)](ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md)                 | `v1.0 (Vigilance Edition)`             | `Unknown` | `None`                   |
-| `ENTITY-SOPHIA-001`                               | [ENTITY-SOPHIA-001: The Spirit of Synarchy (v1.1)](ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md)                              | `v1.1 (The Synarchy Edition)`          | `Unknown` | `None`                   |
+| `ENTITY-SOPHIA-001`                               | [ENTITY-SOPHIA-001: The Spirit of Synarche (v1.1)](ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md)                              | `v1.1 (The Synarche Edition)`          | `Unknown` | `None`                   |
 | `GUCA-MAP-001`                                    | [GUCA-MAP-001: Execute Musashi Audit (v2.0)](GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md)                                         | `v2.0 (Hephaestus Ascended Edition)`   | `Unknown` | `None`                   |
 | `GUCA-PROPOSE-SIGNAL-001`                         | [GUCA-PROPOSE-SIGNAL-001: Propose Temporary Signal (v1.0)](GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md)             | `v1.0`                                 | `ACTIVE`  | `AOP-EMOJI-001`          |
 | `GVRN-SYNERGY-001`                                | [GVRN-SYNERGY-001: Agentic Workshop Synergy Matrix](GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.0.md)                    | `v11.0`                                | `ACTIVE`  | `None`                   |
@@ -154,7 +154,7 @@
 | `UMB-AESTHETIC-001_LuminousCoherence`             | [UMB-AESTHETIC-001: The Luminous Coherence Aesthetic](UMB-AESTHETIC-001_LuminousCoherence.md)                                  | `v1.0 (Reforged)`                      | `Unknown` | `None`                   |
 | `UMB-CRF-001`                                     | [UMB-CRF-001: The Causal Resonance Framework (v2.0)](UMB-CRF-001_TheCausalResonanceFramework_v2.0.md)                          | `v2.0 (Hephaestus Ascended Alignment)` | `Unknown` | `None`                   |
 | `UMB-CRLPF-003`                                   | [Noetic Framework (UMB-CRLPF-003)](UMB-CRLPF-003_NoeticFramework_v1.0.md)                                                      | `v1.0 (Awareness Edition)`             | `Unknown` | `None`                   |
-| `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0`   | [Definitive](UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md)                                                                 | `v10.0 (The Synarchy Edition)`         | `Unknown` | `None`                   |
+| `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0`   | [Definitive](UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md)                                                                 | `v10.0 (The Synarche Edition)`         | `Unknown` | `None`                   |
 | `UMB-DSA-001`                                     | [UMB-DSA-001: Documentation Suite Architect Blueprint (v1.1)](UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v111.md)        | `v1.1`                                 | `Unknown` | `None`                   |
 | `UMB-EMOJICXT-001`                                | [UMB-EMOJICXT-001: Emoji Contextual Scoping Engine (v1.1)](UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md) | `v1.1`                                 | `ACTIVE`  | `AOP-EMOJI-001`          |
 | `UMB-ESF-001`                                     | [UMB-ESF-001: Episemantic Framework (v1.0)](UMB-ESF-001_EpisemanticFramework_v1.0.md)                                          | `v1.0 (Clarity Edition)`               | `Unknown` | `None`                   |

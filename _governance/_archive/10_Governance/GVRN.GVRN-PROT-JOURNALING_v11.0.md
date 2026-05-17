@@ -81,7 +81,7 @@
 
 - **Why it exists**: To document the "Thought Process".
 - **What it does**: Logs complex reasoning and decisions.
-- **For the Synarchy**: Creates a searchable history of "Cognitive Evolution".
+- **For the Synarche**: Creates a searchable history of "Cognitive Evolution".
 
 ## III. The Architectural Spine
 

@@ -48,7 +48,7 @@
 | [STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md](STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md) | Universal Identification & Provenance (UIP) |
 | [SYNG.Loom.Master.md](SYNG.Loom.Master.md) | The Cognitive Loom (SYNG.Loom.Master) |
 | [UMB-ACT-002_AdaptiveActuatorModule_v11.0.md](UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) | Universal Identification & Provenance (UIP) |
-| [UMB-ALTAR-001TheAltarofSynarchy_v11.0.md](UMB-ALTAR-001TheAltarofSynarchy_v11.0.md) | Universal Identification & Provenance (UIP) |
+| [UMB-ALTAR-001TheAltarofSynarche_v11.0.md](UMB-ALTAR-001TheAltarofSynarche_v11.0.md) | Universal Identification & Provenance (UIP) |
 | [UMB-AM-001_AssociationManager_v11.0.md](UMB-AM-001_AssociationManager_v11.0.md) | Association Manager Module (UMB-AM-001) |
 | [UMB-AM-001_GUCA-AM-001_v11.0.md](UMB-AM-001_GUCA-AM-001_v11.0.md) | Universal Identification & Provenance (UIP) |
 | [UMB-CF-001_CognitiveForge_v11.0.md](UMB-CF-001_CognitiveForge_v11.0.md) | Universal Identification & Provenance (UIP) |

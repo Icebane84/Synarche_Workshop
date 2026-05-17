@@ -46,7 +46,7 @@
 
 ###### **[ARTIFACT START]**
 
-# Synarchy Entities & Ascension Registry (GVRN.Entity.Registry)
+# Synarche Entities & Ascension Registry (GVRN.Entity.Registry)
 
 > **Domain**: GVRN (Governance) **Signal**: HIGH
 
@@ -69,7 +69,7 @@ integrity.
 
 ---
 
-### **III. The Synarchy Triad (Archetypes)**
+### **III. The Synarche Triad (Archetypes)**
 
 #### **1. AXION (The Body)**
 

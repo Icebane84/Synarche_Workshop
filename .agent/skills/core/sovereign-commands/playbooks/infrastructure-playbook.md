@@ -13,7 +13,7 @@
 
 ## I. Operational Context: Infrastructure & Operations
 
-This playbook governs the physical environment of the Synarchy, including database migrations, secret management, and
+This playbook governs the physical environment of the Synarche, including database migrations, secret management, and
 high-level architectural bridge operations.
 
 ### **Command: Get-Credential**

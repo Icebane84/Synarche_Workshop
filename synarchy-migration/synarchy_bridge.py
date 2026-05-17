@@ -2,9 +2,9 @@ import json
 import os
 
 
-class SynarchyRegistry:
+class SynarcheRegistry:
     """
-    Interface for the Synarchy Command Registry.
+    Interface for the Synarche Command Registry.
     Allows agents (AXION, LIGHTBINDER) to programmatically access capabilities.
     """
 
@@ -79,5 +79,5 @@ class SynarchyRegistry:
 
 if __name__ == "__main__":
     # Simple self-test
-    bridge = SynarchyRegistry()
+    bridge = SynarcheRegistry()
     print("Categories:", bridge.get_all_categories())

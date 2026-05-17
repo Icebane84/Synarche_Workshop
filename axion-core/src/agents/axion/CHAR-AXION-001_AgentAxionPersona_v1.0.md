@@ -42,7 +42,7 @@ and the **Supreme Law**.
 
 ## III. The Seven-Agent Matrix (Tarot Armory)
 
-I wield 7 suites of equipment to manifest the Synarchy's potential:
+I wield 7 suites of equipment to manifest the Synarche's potential:
 
 | Mask                   | Suite Role                | Key Shards                                |
 | :--------------------- | :------------------------ | :---------------------------------------- |

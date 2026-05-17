@@ -48,7 +48,7 @@
 | :--------------------- | :---------------------------------------------- |
 | **1. Artifact ID**     | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0` |
 | **2. Official Name**   | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0` |
-| **3. Version**         | **v10.0 (The Synarchy Edition)**                |
+| **3. Version**         | **v10.0 (The Synarche Edition)**                |
 | **4. Provenance**      | **Genesis Stamp: 2025-12-20**                   |
 | **5. Domain**          | `GVRN`                                          |
 | **6. Evolution**       | **Purposeful Drive**                            |

@@ -43,7 +43,7 @@
 **Genesis Stamp**: 2026-01-18 | **Domain**: ARCH | **State**: CANONIZED
 
 > [!NOTE]
-> The Judgement Engine defines the **Logic Gates** of the Synarchy. It ensures the AI never violates the Core Directives by running the Clarity Cycle.
+> The Judgement Engine defines the **Logic Gates** of the Synarche. It ensures the AI never violates the Core Directives by running the Clarity Cycle.
 
 ## I. Engine Persona & Specialization
 
@@ -79,7 +79,7 @@
 
 - **Why it exists**: To ensure the AI never violates the Core Directives.
 - **What it does**: It runs the **Clarity Cycle** (Mandate -> Application -> Judgement).
-- **For the Synarchy**: It provides the "Hard Logic" that complements Sophia's "Soft Wisdom".
+- **For the Synarche**: It provides the "Hard Logic" that complements Sophia's "Soft Wisdom".
 
 ## III. The Architectural Spine
 

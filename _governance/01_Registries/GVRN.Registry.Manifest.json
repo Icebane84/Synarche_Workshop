@@ -2732,15 +2732,15 @@
     "path": "_governance/_archive/99_Archives/ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md",
     "content_hash": "a7013c1f22ff7aed796874cf423819b1348886ce460d9353ccfbc6cebf530800"
   },
-  "GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001": {
-    "artifact_id": "GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001",
-    "official_name": "ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md",
+  "GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001": {
+    "artifact_id": "GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001",
+    "official_name": "ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md",
     "version": "v13.0 [OMEGA]",
     "domain": "GVRN",
     "status": "[ACTIVE]",
     "relations": "GOVERNED_BY: CORE-CODEX-001",
     "parsed_relations": ["GOVERNED_BY:CORE-CODEX-001"],
-    "path": "_governance/_archive/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md",
+    "path": "_governance/_archive/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md",
     "content_hash": "58a6b7ce56e38eda3a00f2cdb4d2238158284f6cf87f3ce4003e85a73a4352b6"
   },
   "GVRN-ENVIRONMENT-REFERENCE-001": {
@@ -2897,37 +2897,37 @@
     "path": "_governance/_archive/99_Archives/GVRN-COMP-001_CognitiveComplexity_v13.0.md",
     "content_hash": "42dca8edfa6ae4a02203aa9d9582f0cfa16033cea4494a8ccc0ca3a789db70f4"
   },
-  "GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001": {
-    "artifact_id": "GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001",
-    "official_name": "GVRN-ENTITY-001_SynarchyEntities_v11.0.md",
+  "GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001": {
+    "artifact_id": "GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001",
+    "official_name": "GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
     "version": "v13.0 [OMEGA]",
     "domain": "GVRN",
     "status": "[ACTIVE]",
     "relations": "GOVERNED_BY: CORE-CODEX-001",
     "parsed_relations": ["GOVERNED_BY:CORE-CODEX-001"],
-    "path": "_governance/_archive/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v11.0.md",
+    "path": "_governance/_archive/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
     "content_hash": "198bd1eac5e010b9e29b82adee69564bf832184e37201e8ffb6b5c082dce6b0b"
   },
-  "GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001": {
-    "artifact_id": "GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001",
-    "official_name": "GVRN-ENTITY-001_SynarchyEntities_v13.0.md",
+  "GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001": {
+    "artifact_id": "GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001",
+    "official_name": "GVRN-ENTITY-001_SynarcheEntities_v13.0.md",
     "version": "v13.0 [OMEGA]",
     "domain": "GVRN",
     "status": "[ACTIVE]",
     "relations": "GOVERNED_BY: CORE-CODEX-001",
     "parsed_relations": ["GOVERNED_BY:CORE-CODEX-001"],
-    "path": "_governance/_archive/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v13.0.md",
+    "path": "_governance/_archive/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v13.0.md",
     "content_hash": "cab7edf65485f65a1cb61b8021fe4252fef61e38e04aa19ae221334af1b7205a"
   },
-  "GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001": {
-    "artifact_id": "GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001",
-    "official_name": "GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md",
+  "GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001": {
+    "artifact_id": "GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001",
+    "official_name": "GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md",
     "version": "v13.0 [OMEGA]",
     "domain": "GVRN",
     "status": "[ACTIVE]",
     "relations": "GOVERNED_BY: CORE-CODEX-001",
     "parsed_relations": ["GOVERNED_BY:CORE-CODEX-001"],
-    "path": "_governance/_archive/99_Archives/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md",
+    "path": "_governance/_archive/99_Archives/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md",
     "content_hash": "90d37fdb39932fd70715326451c02884770feb2bb895a028cb2ac96aae1d41ff"
   },
   "GVRN-GVRN-SYNERGY-001-001": {
@@ -7796,15 +7796,15 @@
     "official_name": "GEMINI.md",
     "content_hash": "9318ea40741caa9fd0988b4490ecef85672237fc7469cbf28e227553bba0d4c5"
   },
-  "SYNERGY-REPORT-001_StateOfTheSynarchy": {
-    "artifact_id": "SYNERGY-REPORT-001_StateOfTheSynarchy",
-    "official_name": "SYNERGY-REPORT-001_StateOfTheSynarchy.md",
+  "SYNERGY-REPORT-001_StateOfTheSynarche": {
+    "artifact_id": "SYNERGY-REPORT-001_StateOfTheSynarche",
+    "official_name": "SYNERGY-REPORT-001_StateOfTheSynarche.md",
     "version": "v14.0 [OMEGA]",
     "domain": "GVRN",
     "status": "[ACTIVE]",
     "relations": "GOVERN_BY: CORE.Codex.Phoenix",
     "parsed_relations": ["GOVERN_BY:CORE.Codex.Phoenix"],
-    "path": "_governance/50_Logs/SYNERGY-REPORT-001_StateOfTheSynarchy.md",
+    "path": "_governance/50_Logs/SYNERGY-REPORT-001_StateOfTheSynarche.md",
     "content_hash": "018c02b64bbfce6a2d1702563f2f0bab80bd389d27d3f811bc6d9d5b758e59d5"
   },
   "SYNG-AXION-SYNTHESIS-001": {
@@ -8033,15 +8033,15 @@
     "path": "_governance/50_Logs/SYNG.LOG.ContextWeaveReport.md",
     "content_hash": "11dfcd25ecb7008237c18e5d9a020580f8db2c826786fe390fd33aad687c76fd"
   },
-  "SYNG.LOG.StateOfTheSynarchy": {
-    "artifact_id": "SYNG.LOG.StateOfTheSynarchy",
-    "official_name": "SYNG.LOG.StateOfTheSynarchy.md",
+  "SYNG.LOG.StateOfTheSynarche": {
+    "artifact_id": "SYNG.LOG.StateOfTheSynarche",
+    "official_name": "SYNG.LOG.StateOfTheSynarche.md",
     "version": "v14.0 [OMEGA]",
     "domain": "SYNG",
     "status": "[ACTIVE]",
     "relations": "GOVERNED_BY: CORE-CODEX-001",
     "parsed_relations": ["GOVERNED_BY:CORE-CODEX-001"],
-    "path": "_governance/50_Logs/SYNG.LOG.StateOfTheSynarchy.md",
+    "path": "_governance/50_Logs/SYNG.LOG.StateOfTheSynarche.md",
     "content_hash": "9383df483dad3e66d9b33d728892f314f759ae7262294b163f3f6c04eec41c9d"
   },
   "SYNG.LOOM.CORE": {
@@ -8223,15 +8223,15 @@
     "path": "axion-core/docs/03_Systems/SYNG.PROT.StandardOfTruth.md",
     "content_hash": "9ed5770a6169ff7091b05861a64dcd681743fc9821a8240d9aa75badac08cafa"
   },
-  "SYNG.PROT.SynarchyAvatarProtocol": {
-    "artifact_id": "SYNG.PROT.SynarchyAvatarProtocol",
-    "official_name": "SYNG.PROT.SynarchyAvatarProtocol.md",
+  "SYNG.PROT.SynarcheAvatarProtocol": {
+    "artifact_id": "SYNG.PROT.SynarcheAvatarProtocol",
+    "official_name": "SYNG.PROT.SynarcheAvatarProtocol.md",
     "version": "v13.0 [OMEGA]",
     "domain": "GVRN",
     "status": "[ACTIVE]",
     "relations": "GOVERNED_BY: CORE-CODEX-001",
     "parsed_relations": ["GOVERNED_BY:CORE-CODEX-001"],
-    "path": "_governance/_archive/SYNG.PROT.SynarchyAvatarProtocol.md",
+    "path": "_governance/_archive/SYNG.PROT.SynarcheAvatarProtocol.md",
     "content_hash": "ad55205ff0b708ccee2e33afc6ee2b872864470404be3fbd021329e2cf2bd782"
   },
   "SYNG.Protocol.DNA": {

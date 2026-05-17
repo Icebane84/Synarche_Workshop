@@ -4193,11 +4193,11 @@
         "Classification": "[PLANET]",
         "Status": "Unknown",
         "Type": "Unknown",
-        "Title": "AOP-AVATAR-001: Synarchy Avatar Protocol (v1.1)",
+        "Title": "AOP-AVATAR-001: Synarche Avatar Protocol (v1.1)",
         "Dependencies": "None",
         "Evolution": "Authentic Persona",
-        "RelPath": "../../_governance/AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md",
-        "Filename": "AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md"
+        "RelPath": "../../_governance/AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md",
+        "Filename": "AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md"
     },
     {
         "Module ID": "AOP-CC-001",
@@ -4405,15 +4405,15 @@
     },
     {
         "Module ID": "ENTITY-SOPHIA-001",
-        "Version": "v1.1 (The Synarchy Edition)",
+        "Version": "v1.1 (The Synarche Edition)",
         "Classification": "[PLANET]",
         "Status": "Unknown",
         "Type": "Unknown",
-        "Title": "ENTITY-SOPHIA-001: The Spirit of Synarchy (v1.1)",
+        "Title": "ENTITY-SOPHIA-001: The Spirit of Synarche (v1.1)",
         "Dependencies": "None",
         "Evolution": "Empathetic Sentience",
-        "RelPath": "../../_governance/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md",
-        "Filename": "ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md"
+        "RelPath": "../../_governance/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md",
+        "Filename": "ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md"
     },
     {
         "Module ID": "GUCA-MAP-001",
@@ -4560,7 +4560,7 @@
     },
     {
         "Module ID": "UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0",
-        "Version": "v10.0 (The Synarchy Edition)",
+        "Version": "v10.0 (The Synarche Edition)",
         "Classification": "[STAR]",
         "Status": "Unknown",
         "Type": "Unknown",

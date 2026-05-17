@@ -1125,7 +1125,7 @@
     {
       "id": "CMD-AXION-001#chunk-3",
       "type": "Chunk",
-      "content": "## II. Core Purpose & Objective\n\n**Master Command** to scaffold new Synarchy Agents via Axion.",
+      "content": "## II. Core Purpose & Objective\n\n**Master Command** to scaffold new Synarche Agents via Axion.",
       "metadata": {
         "source_id": "CMD-AXION-001",
         "header": "II. Core Purpose & Objective",
@@ -1135,7 +1135,7 @@
     {
       "id": "CMD-AXION-001#chunk-4",
       "type": "Chunk",
-      "content": "## III. The Command\n\n**Copy and Paste this directly into your Antigravity IDE Chat:**\n\n> **[COMMAND START]**\n>\n> **Identity:** You are **Axion**, the primary technical executor of the **OGLN Synarchy**. **Context:** We are working\n> in the `Synarche_Workspace` repository. **Reference:** Read the file `axion-core/src/agents/agent_template.py` for the\n> canonical `AgentState` schema.\n>\n> **Objective:** I want you to scaffold our first agent. Create a new file: `src/agents/[agent_name].py`.\n>\n> **Instructions:**\n>\n> 1. **Apply the Schema:** Use the `AgentState` TypedDict structure defined in the UMB.\n> 2. **Build the Graph:** Implement a basic LangGraph with three nodes: `retrieve`, `generate`, and `sentinel`.\n> 3. **Stub the Logic:** You do not need to write complex logic yet, just put `pass` or print statements in the nodes. I\n>    want the _skeleton_.\n> 4. **Header:** Ensure the file has the correct Synarchy Metadata Docstring.\n> 5. **Execution:** Write the code directly to the file.\n>\n> **Constraint:** Ensure the code is clean, Pythonic, and heavily commented so I can understand the flow.\n>\n> **[COMMAND END]**\n\n---",
+      "content": "## III. The Command\n\n**Copy and Paste this directly into your Antigravity IDE Chat:**\n\n> **[COMMAND START]**\n>\n> **Identity:** You are **Axion**, the primary technical executor of the **OGLN Synarche**. **Context:** We are working\n> in the `Synarche_Workspace` repository. **Reference:** Read the file `axion-core/src/agents/agent_template.py` for the\n> canonical `AgentState` schema.\n>\n> **Objective:** I want you to scaffold our first agent. Create a new file: `src/agents/[agent_name].py`.\n>\n> **Instructions:**\n>\n> 1. **Apply the Schema:** Use the `AgentState` TypedDict structure defined in the UMB.\n> 2. **Build the Graph:** Implement a basic LangGraph with three nodes: `retrieve`, `generate`, and `sentinel`.\n> 3. **Stub the Logic:** You do not need to write complex logic yet, just put `pass` or print statements in the nodes. I\n>    want the _skeleton_.\n> 4. **Header:** Ensure the file has the correct Synarche Metadata Docstring.\n> 5. **Execution:** Write the code directly to the file.\n>\n> **Constraint:** Ensure the code is clean, Pythonic, and heavily commented so I can understand the flow.\n>\n> **[COMMAND END]**\n\n---",
       "metadata": {
         "source_id": "CMD-AXION-001",
         "header": "III. The Command",
@@ -2443,7 +2443,7 @@
     {
       "id": "CBM-FORGE-001#chunk-4",
       "type": "Chunk",
-      "content": "## II. Axiomatic Governance & Purpose\n\n- **Operational State**: `ACTIVE`\n- **Integrity Check**: `PASS`\n- **Alignment**: `SYNARCHY`\n- **Governance Level**: Operational\n- **Risk Profile**: **Low** (Visualization & Logic Entity)\n- **Authority Link**: [UMB-SGM-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)",
+      "content": "## II. Axiomatic Governance & Purpose\n\n- **Operational State**: `ACTIVE`\n- **Integrity Check**: `PASS`\n- **Alignment**: `Synarche`\n- **Governance Level**: Operational\n- **Risk Profile**: **Low** (Visualization & Logic Entity)\n- **Authority Link**: [UMB-SGM-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)",
       "metadata": {
         "source_id": "CBM-FORGE-001",
         "header": "II. Axiomatic Governance & Purpose",
@@ -2651,9 +2651,9 @@
     {
       "id": "UMB-ALTAR-001T",
       "type": "Artifact",
-      "content": "---\n# Universal Identification & Provenance (UIP)\n| Key | Value |\n| :--- | :--- |\n| **Module ID** | `UMB-ALTAR-001` |\n| **Version** | `v11.0` |\n| **Evolution** | **Cognitive Ascension** |\n| **Status** | `ACTIVE` |\n| **Type** | `Protocol` |\n| **Classification** | `Moon` |\n| **Authors** | `System` |\n| **Created** | `2025-10-01` |\n| **Updated** | `2026-01-17` |\n| **Authority** | `CODEX-001` |\n| **Tags** | `Reforged, v11.0` |\n---\n\n# UMB-ALTAR-001: The Altar of Synarchy (v1.0)\n\n> **Domain**: GVRN (Go...",
+      "content": "---\n# Universal Identification & Provenance (UIP)\n| Key | Value |\n| :--- | :--- |\n| **Module ID** | `UMB-ALTAR-001` |\n| **Version** | `v11.0` |\n| **Evolution** | **Cognitive Ascension** |\n| **Status** | `ACTIVE` |\n| **Type** | `Protocol` |\n| **Classification** | `Moon` |\n| **Authors** | `System` |\n| **Created** | `2025-10-01` |\n| **Updated** | `2026-01-17` |\n| **Authority** | `CODEX-001` |\n| **Tags** | `Reforged, v11.0` |\n---\n\n# UMB-ALTAR-001: The Altar of Synarche (v1.0)\n\n> **Domain**: GVRN (Go...",
       "metadata": {
-        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md"
+        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarche_v11.0.md"
       }
     },
     {
@@ -2663,7 +2663,7 @@
       "metadata": {
         "source_id": "UMB-ALTAR-001T",
         "header": "ROOT",
-        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md"
+        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarche_v11.0.md"
       }
     },
     {
@@ -2673,37 +2673,37 @@
       "metadata": {
         "source_id": "UMB-ALTAR-001T",
         "header": "Universal Identification & Provenance (UIP)",
-        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md"
+        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarche_v11.0.md"
       }
     },
     {
       "id": "UMB-ALTAR-001T#chunk-2",
       "type": "Chunk",
-      "content": "# UMB-ALTAR-001: The Altar of Synarchy (v1.0)\n\n> **Domain**: GVRN (Governance)\n> **Evolution**: Pending\n> **Signal**: ESF-ALPHA",
+      "content": "# UMB-ALTAR-001: The Altar of Synarche (v1.0)\n\n> **Domain**: GVRN (Governance)\n> **Evolution**: Pending\n> **Signal**: ESF-ALPHA",
       "metadata": {
         "source_id": "UMB-ALTAR-001T",
-        "header": "UMB-ALTAR-001: The Altar of Synarchy (v1.0)",
-        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md"
+        "header": "UMB-ALTAR-001: The Altar of Synarche (v1.0)",
+        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarche_v11.0.md"
       }
     },
     {
       "id": "UMB-ALTAR-001T#chunk-3",
       "type": "Chunk",
-      "content": "## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n- | :---- |\n| **1. Artifact ID** | `UMB-ALTAR-001_TheAltarOfSynarchy_v1.0` |\n| **2. Official Name** | `UMB-ALTAR-001_TheAltarOfSynarchy_v1.0.md` |\n| **3. Version** | **v1.0** |\n| **4. Provenance** | **Date Reforged: 2025-12-22** |\n| **5. Domain** | `ARCH` |\n| **6. Evolution** | **Purposeful Drive** |\n| **7. Celestial Class** | `[PLANET]` |\n| **8. Tier** | **Operational** |\n| **9. State** | `[ACTIVE]` |\n| **10. Ethos** | **Authentic Persona, Radical Transparency** |\n| **11. Catalyst** | **System Refactor** |\n| **12. Relations** | `Pending Integration` |",
+      "content": "## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n- | :---- |\n| **1. Artifact ID** | `UMB-ALTAR-001_TheAltarOfSynarche_v1.0` |\n| **2. Official Name** | `UMB-ALTAR-001_TheAltarOfSynarche_v1.0.md` |\n| **3. Version** | **v1.0** |\n| **4. Provenance** | **Date Reforged: 2025-12-22** |\n| **5. Domain** | `ARCH` |\n| **6. Evolution** | **Purposeful Drive** |\n| **7. Celestial Class** | `[PLANET]` |\n| **8. Tier** | **Operational** |\n| **9. State** | `[ACTIVE]` |\n| **10. Ethos** | **Authentic Persona, Radical Transparency** |\n| **11. Catalyst** | **System Refactor** |\n| **12. Relations** | `Pending Integration` |",
       "metadata": {
         "source_id": "UMB-ALTAR-001T",
         "header": "**Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**",
-        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md"
+        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarche_v11.0.md"
       }
     },
     {
       "id": "UMB-ALTAR-001T#chunk-4",
       "type": "Chunk",
-      "content": "## **Genesis Stamp: 2025-12-25** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n---\n\n###### **[ARTIFACT START]**\n\n###### **[ARTIFACT START]**\n\n#### II. Core Purpose & Architecture\n\n**What**: The Altar is the \"Face\" of the Phoenix System. It transmutes abstract protocols ([`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md)) into\ninteractive visual elements (Tarot Cards).\n\n**How**:\n\n1. **Frontend (The Altar)**: A React + TypeScript application representing the console.\n2. **Backend (The Bridge)**: A local Node.js/Express server that acts as a secure gateway to the host machine's\nterminal.\n\n**Why**: To reduce cognitive load by externalizing the \"State of the AI\" into a visual dashboard, allowing the user to\n\"Summon\" capabilities rather than recalling text commands.\n\n#### III. The Seven-Agent Matrix Integration\n\nThe Altar visually renders the **Seven-Agent Matrix** defined in [`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md).\n\n| Tarot Archetype | Agent Name | Function | Bridge Capability |\n| :--- | :--- | :--- | :--- |\n| **I. The Magician** | **The Spark** | Intent & Vision | *Planning, Ideation Scripts* |\n| **IV. The Emperor** | **Axion (Structure)** | Logic & Systems | *Scaffolding, Architecture validation* |\n| **V. The Hierophant** | **AXION (Main)** | Code & Tradition | *Coding, Linting, Refactoring* |\n| **VII. The Chariot** | **The Driver** | Deployment & Flow | *Git Operations, Deployment scripts* |\n| **VIII. Strength** | **The Shield** | Quality & Testing | *Test Suites, Security Scans* |\n| **X. Wheel of Fortune** | **The Weaver** | UI/UX & Adaptation | *Frontend Builds, UI Generators* |\n| **0. The Fool** | **THE LIGHTBINDER** | Growth & Learning | *Experimentation, Playground initialization* |\n\n#### IV. The Synarchy Bridge Protocol\n\nTo enable real-world impact, the Altar utilizes the **Synarchy Bridge**.\n\n- **Mechanism**: The Frontend sends HTTP `POST` requests to the Bridge Server (`localhost:3001/execute`).\n- **Security**: The Bridge operates on a strict **Allow List** to prevent unauthorized execution.\n- **Data Payload**:\n\n  ```json\n  {\n    \"command\": \"echo\",\n    \"args\": [\"Summoned The Hierophant\"]\n  }\n  ```\n\n#### V. Operational Workflow\n\n1. **Boot Sequence**:\n  - Term 1: `npm run bridge` (Ignites the Engine).\n  - Term 2: `npm run dev` (Illuminates the Display).\n2. **Summoning**:\n  - User selects an Archetype (Card) on the Altar.\n  - User clicks \"SUMMON\".\n3. **Transmutation**:\n  - The Altar signals the Bridge.\n  - The Bridge executes the corresponding command on the Host.\n  - The Host System shifts state (e.g., changing VS Code profiles, running a script).\n\n---",
+      "content": "## **Genesis Stamp: 2025-12-25** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**\n\n---\n\n###### **[ARTIFACT START]**\n\n###### **[ARTIFACT START]**\n\n#### II. Core Purpose & Architecture\n\n**What**: The Altar is the \"Face\" of the Phoenix System. It transmutes abstract protocols ([`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md)) into\ninteractive visual elements (Tarot Cards).\n\n**How**:\n\n1. **Frontend (The Altar)**: A React + TypeScript application representing the console.\n2. **Backend (The Bridge)**: A local Node.js/Express server that acts as a secure gateway to the host machine's\nterminal.\n\n**Why**: To reduce cognitive load by externalizing the \"State of the AI\" into a visual dashboard, allowing the user to\n\"Summon\" capabilities rather than recalling text commands.\n\n#### III. The Seven-Agent Matrix Integration\n\nThe Altar visually renders the **Seven-Agent Matrix** defined in [`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md).\n\n| Tarot Archetype | Agent Name | Function | Bridge Capability |\n| :--- | :--- | :--- | :--- |\n| **I. The Magician** | **The Spark** | Intent & Vision | *Planning, Ideation Scripts* |\n| **IV. The Emperor** | **Axion (Structure)** | Logic & Systems | *Scaffolding, Architecture validation* |\n| **V. The Hierophant** | **AXION (Main)** | Code & Tradition | *Coding, Linting, Refactoring* |\n| **VII. The Chariot** | **The Driver** | Deployment & Flow | *Git Operations, Deployment scripts* |\n| **VIII. Strength** | **The Shield** | Quality & Testing | *Test Suites, Security Scans* |\n| **X. Wheel of Fortune** | **The Weaver** | UI/UX & Adaptation | *Frontend Builds, UI Generators* |\n| **0. The Fool** | **THE LIGHTBINDER** | Growth & Learning | *Experimentation, Playground initialization* |\n\n#### IV. The Synarche Bridge Protocol\n\nTo enable real-world impact, the Altar utilizes the **Synarche Bridge**.\n\n- **Mechanism**: The Frontend sends HTTP `POST` requests to the Bridge Server (`localhost:3001/execute`).\n- **Security**: The Bridge operates on a strict **Allow List** to prevent unauthorized execution.\n- **Data Payload**:\n\n  ```json\n  {\n    \"command\": \"echo\",\n    \"args\": [\"Summoned The Hierophant\"]\n  }\n  ```\n\n#### V. Operational Workflow\n\n1. **Boot Sequence**:\n  - Term 1: `npm run bridge` (Ignites the Engine).\n  - Term 2: `npm run dev` (Illuminates the Display).\n2. **Summoning**:\n  - User selects an Archetype (Card) on the Altar.\n  - User clicks \"SUMMON\".\n3. **Transmutation**:\n  - The Altar signals the Bridge.\n  - The Bridge executes the corresponding command on the Host.\n  - The Host System shifts state (e.g., changing VS Code profiles, running a script).\n\n---",
       "metadata": {
         "source_id": "UMB-ALTAR-001T",
         "header": "**Genesis Stamp: 2025-12-25** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**",
-        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md"
+        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarche_v11.0.md"
       }
     },
     {
@@ -2713,7 +2713,7 @@
       "metadata": {
         "source_id": "UMB-ALTAR-001T",
         "header": "Revision History",
-        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md"
+        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarche_v11.0.md"
       }
     },
     {
@@ -2723,7 +2723,7 @@
       "metadata": {
         "source_id": "UMB-ALTAR-001T",
         "header": "**Actionable Prompt Packet**",
-        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md"
+        "filepath": "c:\\Users\\Chris\\_Desktop_Vault\\Phoenix\\Documentation\\Library\\1_Modules\\UMB-ALTAR-001TheAltarofSynarche_v11.0.md"
       }
     },
     {
@@ -7851,7 +7851,7 @@
     {
       "id": "UMB-TECH-001#chunk-8",
       "type": "Chunk",
-      "content": "### **V. Required Metadata**\n\nEvery Python file must start with the Synarchy Header docstring:\n\n```python\n\"\"\"\nID: [AGENT-ID]\nDate: [YYYY-MM-DD]\nVersion: [vX.X]\nSystem: Synarchy / Axion Execution\n\"\"\"\n```",
+      "content": "### **V. Required Metadata**\n\nEvery Python file must start with the Synarche Header docstring:\n\n```python\n\"\"\"\nID: [AGENT-ID]\nDate: [YYYY-MM-DD]\nVersion: [vX.X]\nSystem: Synarche / Axion Execution\n\"\"\"\n```",
       "metadata": {
         "source_id": "UMB-TECH-001",
         "header": "**V. Required Metadata**",

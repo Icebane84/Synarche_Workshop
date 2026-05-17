@@ -52,7 +52,7 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"Automated documentation is the nervous system of the Synarchy. It ensures every conceptual seed grows into a complete trinity of truth: Playbook, Blueprint, and Command."**
+> **"Automated documentation is the nervous system of the Synarche. It ensures every conceptual seed grows into a complete trinity of truth: Playbook, Blueprint, and Command."**
 
 ---
 
@@ -84,7 +84,7 @@ The **Documentation Suite Architect (DSA)** logic governs the automated generati
 
 ## 3. Systemic Rationale
 
-This architecture ensures that every new function is formally documented across all dimensions of the Synarchy from inception.
+This architecture ensures that every new function is formally documented across all dimensions of the Synarche from inception.
 
 ---
 

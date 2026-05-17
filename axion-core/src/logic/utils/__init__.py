@@ -42,8 +42,12 @@
 ## **[ARTIFACT END]**
 """
 
+from .explanation_generator import ExplanationGenerator
+from .soul_analyzer import SoulImpactAnalyzer
+
+
 # ---
-# 
+#
 # ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**

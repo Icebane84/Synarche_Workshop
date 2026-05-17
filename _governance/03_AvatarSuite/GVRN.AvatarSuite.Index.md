@@ -34,7 +34,7 @@
 ## **Overview**
 
 The **Avatar Suite** is the cardinal subsystem responsible for the management, logic, and manifestation of the
-Synarchy's agentic personas. It bridges the gap between the static laws of the **Phoenix Codex** and the kinetic
+Synarche's agentic personas. It bridges the gap between the static laws of the **Phoenix Codex** and the kinetic
 operations of the **Avatar Protocol**.
 
 ## **Core Components**

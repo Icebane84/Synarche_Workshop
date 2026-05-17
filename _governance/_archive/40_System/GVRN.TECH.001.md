@@ -114,14 +114,14 @@ The graph must contain at minimum three standard nodes:
 
 ### **V. Required Metadata**
 
-Every Python file must start with the Synarchy Header docstring:
+Every Python file must start with the Synarche Header docstring:
 
 ```python
 """
 ID: [AGENT-ID]
 Date: [YYYY-MM-DD]
 Version: [vX.X]
-System: Synarchy / Axion Execution
+System: Synarche / Axion Execution
 """
 ```
 

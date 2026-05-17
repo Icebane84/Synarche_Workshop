@@ -54,7 +54,7 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"Relational Gravity is the force that binds the Synarchy. The Synergy Protocol ensures that no node exists in isolation and that every connection provides kinetic utility."**
+> **"Relational Gravity is the force that binds the Synarche. The Synergy Protocol ensures that no node exists in isolation and that every connection provides kinetic utility."**
 
 ---
 

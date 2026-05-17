@@ -41,7 +41,7 @@
 
 ## **[ARTIFACT END]**
 
-Objective: Standardized enumerations for the Synarchy workspace.
+Objective: Standardized enumerations for the Synarche workspace.
 Conforms to OGLN/AISTF v15.0 governance and documentation standards.
 """
 
@@ -95,6 +95,15 @@ class Domain(str, Enum):
 
 class PhoenixRosettaStone(str, Enum):
     """The Phoenix Rosetta Stone."""
+
+
+class RPGType(str, Enum):
+    """The RPG Engine."""
+
+    CMD = "CMD"
+    MODULES = "MODULES"
+    LOGS = "LOGS"
+    ARTIFACTS = "ARTIFACTS"
 
 
 class Module(str, Enum):

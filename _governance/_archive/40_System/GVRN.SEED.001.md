@@ -85,7 +85,7 @@ _Migrated from `UMB-GENESIS-REGISTRY-001`_
 | :-------------- | :-------------------------- | :---------------- | :------------------ |
 | **UEB-PI-001**  | **Productive Imperfection** | Momentum > Stasis | `AOP-RECOLLECT-001` |
 | **UEB-TRU-001** | **Rule of Truth**           | Fact > Fiction    | `UMB-GTSF-001`      |
-| **UEB-SYN-001** | **The Synarchy**            | 1+1=3             | `UMB-ALTAR-001`     |
+| **UEB-SYN-001** | **The Synarche**            | 1+1=3             | `UMB-ALTAR-001`     |
 
 ---
 

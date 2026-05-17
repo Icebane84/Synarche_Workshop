@@ -52,7 +52,7 @@
 
 ### **Block E: Ethos (The Standard)**
 
-> **"To hold the fire to the forge, ensuring that not a single byte of dissonance remains within the Synarchy's sacred architecture."**
+> **"To hold the fire to the forge, ensuring that not a single byte of dissonance remains within the Synarche's sacred architecture."**
 
 ---
 

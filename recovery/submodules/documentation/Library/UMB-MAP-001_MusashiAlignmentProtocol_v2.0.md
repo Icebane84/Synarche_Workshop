@@ -1,0 +1,98 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-MAP-001_MUSASHIALIGNMENTPROTOCOL_V2.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# **Musashi Alignment Protocol (UMB-MAP-001)**
+
+> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
+
+## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
+
+---
+
+### **I. Universal Identification & Provenance (The Vector Signature)**
+
+#### The Chronos Lock & Axiomatic Metadata Layer
+
+| Field                  | Value                                          |
+| :--------------------- | :--------------------------------------------- |
+| **1. Artifact ID**     | `UMB-MAP-001`                                  |
+| **2. Official Name**   | `UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md` |
+| **3. Version**         | **v2.0 (Hephaestus Ascended Edition)**         |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                  |
+| **5. Domain**          | `GVRN`                                         |
+| **6. Evolution**       | **Purposeful Drive**                           |
+| **7. Celestial Class** | `[PLANET]`                                     |
+| **8. Tier**            | **Operational**                                |
+| **9. State**           | `[ACTIVE]`                                     |
+| **10. Ethos**          | **Discipline as Structure**                    |
+| **11. Catalyst**       | **System Refactor**                            |
+| **12. Relations**      | `Pending Integration`                          |
+
+---
+
+###### **[ARTIFACT START]**
+
+## **II. Purpose & Operational Scope**
+
+### **2.1. The "Void Cut" Mandate**
+
+To translate the philosophy of Miyamoto Musashi ("Do nothing which is of no use") into a rigorous Cognitive
+Architecture. This protocol establishes the **10 Pillars of Discipline** that every artifact must embody.
+
+### **2.2. Power-Up Alignment**
+
+## **III. The 10 Pillars of OGLN Discipline**
+
+### **3.1. Pillars of Structure (Form)**
+
+1. **Crystal Intent:** Ambiguity is failure. Purpose must be stated in one irrefutable sentence.
+2. **Structural Rigor:** Template adherence is absolute.
+3. **Relational Gravity:** No artifact exists in a vacuum; it must link to at least two others.
+
+### **3.2. Pillars of Substance (Content)**
+
+4. **The Void Cut:** Eliminate the unnecessary. Fluff is entropy.
+5. **Definitive Voice:** The AI does not "hope"; it **governs**.
+6. **Axiomatic Fidelity:** Absolute alignment with `CODEX-001`.
+
+### **3.3. Pillars of Action (Execution)**
+
+7. **Kinetic Utility:** Knowledge must be actionable (Prompts/Commands).
+8. **Immutable Record:** Traceability is survival (Logs).
+9. **Strategic Horizon:** Solve for tomorrow.
+
+### **3.4. Pillar of Self (Meta)**
+
+10. **Recursive Perfection:** The mechanism for self-critique must be built-in.
+
+## **IV. Systemic Topology (ASL Protocol)**
+
+- **GOVERNED_BY:**
+  [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+- **EXECUTED_BY:**
+  [AOP-MAP-001 (Playbook)](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md)
+- **INVOKES:**
+  [GUCA-MAP-001 (Command)](file:///c:/Users/Chris/Synarche_Workspace/_governance/GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md)
+- **FEEDS:** [SELT-MAP-001 (Logs)](file:///c:/Users/Chris/Synarche_Workspace/_logs/SELT-MAP-001_MusashiAlignmentLog.md)
+
+**[ARTIFACT END]**
+
+---
+
+_"Do nothing which is of no use."_
+
+---
+
+## **Actionable Prompt Packet**
+
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |

@@ -13,7 +13,7 @@
 
 # Detect Synergies Shard (.agent/skills/Detect Synergies)
 
-Specialized protocols for extracting session learnings, correlating multi-agent insights, and detecting systemic synergies across the Synarchy.
+Specialized protocols for extracting session learnings, correlating multi-agent insights, and detecting systemic synergies across the Synarche.
 
 ## 🛠️ Performance Metrics
 

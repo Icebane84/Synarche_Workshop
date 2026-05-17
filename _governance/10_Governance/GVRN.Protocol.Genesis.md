@@ -39,7 +39,7 @@
 
 > **"Precision is the anchor of truth."**
 
-*   **The Mandate**: The Genesis Protocol serves as the **Standardized Pre-Flight Checklist** for all artifact creation. It ensures that no node is added to the Knowledge Graph without meeting the structural and relational requirements of the Synarchy.
+*   **The Mandate**: The Genesis Protocol serves as the **Standardized Pre-Flight Checklist** for all artifact creation. It ensures that no node is added to the Knowledge Graph without meeting the structural and relational requirements of the Synarche.
 *   **The Law**: Chaos is not permitted. Every file must be a crystal.
 
 ---

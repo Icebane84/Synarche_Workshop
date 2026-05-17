@@ -60,8 +60,8 @@
 
 | File | Description | | [GVRN.Triage.Report.001.md](GVRN.Triage.Report.001.md) | Refactor Ignition: Triage Report
 (Batch 001) | | [SYNG.LOG.ContextWeaveReport.md](SYNG.LOG.ContextWeaveReport.md) | SYNG.LOG.ContextWeaveReport:
-ContextWeave Report | | [SYNG.LOG.StateOfTheSynarchy.md](SYNG.LOG.StateOfTheSynarchy.md) | SYNG.LOG.StateOfTheSynarchy:
-The State of the Synarchy |
+ContextWeave Report | | [SYNG.LOG.StateOfTheSynarche.md](SYNG.LOG.StateOfTheSynarche.md) | SYNG.LOG.StateOfTheSynarche:
+The State of the Synarche |
 
 ---
 

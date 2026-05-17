@@ -61,7 +61,7 @@
 2. **Veracity** (`[κ-veracity]`): The Truth. (e.g., `verified`, `hallucination`).
 3. **State** (`[κ-state]`): The Status. (e.g., `active`, `draft`).
 4. **Tempus** (`[κ-tempus]`): The Time. (e.g., `evergreen`, `obsolete`).
-5. **Stratum** (`[κ-stratum]`): The Layer. (e.g., `synarchy`, `core`).
+5. **Stratum** (`[κ-stratum]`): The Layer. (e.g., `Synarche`, `core`).
 
 ## II. Axiomatic Governance & Purpose (AGP)
 
@@ -81,7 +81,7 @@
 
 - **Why it exists**: To transform static text into "Living Information".
 - **What it does**: Encodes Role, Truth, and State directly into the artifact.
-- **For the Synarchy**: Enables the "Self-Awareness" of the knowledge base.
+- **For the Synarche**: Enables the "Self-Awareness" of the knowledge base.
 
 ## III. Usage Protocol
 

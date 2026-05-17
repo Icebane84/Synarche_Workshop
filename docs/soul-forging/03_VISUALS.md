@@ -1,7 +1,7 @@
 # 03_VISUALS: The Liquid Glass Aesthetic
 
 > [!NOTE]
-> This document defines the visual resonance of the Synarchy Triad, ensuring a premium, high-integrity presentation.
+> This document defines the visual resonance of the Synarche Triad, ensuring a premium, high-integrity presentation.
 
 ## 💎 The Triadic Visual Tokens
 

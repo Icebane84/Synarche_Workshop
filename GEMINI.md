@@ -8,7 +8,7 @@
 
 ## 🏛️ THE SOVEREIGN REDIRECT
 
-This root artifact serves as the **High Gate**. The authoritative rules and protocols of the Synarchy are stratified
+This root artifact serves as the **High Gate**. The authoritative rules and protocols of the Synarche are stratified
 within the substrate to ensure isolation and zero entropy.
 
 ### 🔗 Authoritative Rule: [GEMINI.md](.agent/substrate/rules/GEMINI.md)
@@ -17,7 +17,7 @@ All agents MUST query the substrate version for:
 
 - **The Hephaestus Cycle** (Dissonance / Synthesis / Transcendence)
 - **The Cognitive Loom** (L1-L5 Memory)
-- **The Synarchic Intelligence Hierarchy** (L6-L10 Memory)
+- **The Synarche Intelligence Hierarchy** (L6-L10 Memory)
 - **The Hierarchy of Governance** ([GVRN.Hierarchy.md](_governance/10_Governance/GVRN.Hierarchy.md))
 - **Security & The Faraday Cage**
 - **The Code of Artifact Authority** ([GVRN.AOP.001.md](_governance/10_Governance/GVRN.AOP.001.md))
@@ -32,11 +32,11 @@ All agents MUST query the substrate version for:
 - **The Memory Matrix** ([GVRN.MEMORY.001.md](_governance/10_Governance/GVRN.MEMORY.001.md))
 - **The Finalization Workflow** ([GVRN.FINALIZE.001.md](_governance/10_Governance/GVRN.FINALIZE.001.md))
 - **The Security & The Faraday Cage** ([GVRN.SECURITY.001.md](_governance/10_Governance/GVRN.SECURITY.001.md))
-- **The Master Registry** ([GVRN.REGISTRY.MASTER.001.md](_governance/10_Governance/GVRN.REGISTRY.MASTER.001.md))
+- **The Master Registry** ([GVRN.Master.Registry.yaml](_governance/01_Registries/GVRN.Master.Registry.yaml))
 - **The Hierarchical Registry**
-  ([GVRN.REGISTRY.HIERARCHICAL.001.md](_governance/10_Governance/GVRN.REGISTRY.HIERARCHICAL.001.md))
+  ([GVRN.Hierarchical.Registry.yaml](_governance/01_Registries/GVRN.Hierarchical.Registry.yaml))
 - **The Sovereign Registry**
-  ([GVRN.REGISTRY.SOVEREIGN.001.md](_governance/10_Governance/GVRN.REGISTRY.SOVEREIGN.001.md))
+  ([GVRN.Sovereign.Registry.yaml](_governance/01_Registries/GVRN.Sovereign.Registry.yaml))
 
 ---
 

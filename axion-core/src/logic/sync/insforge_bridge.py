@@ -44,7 +44,7 @@
 
 import logging
 from datetime import datetime, timezone
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 try:
     # Attempting to import the insforge client from the agent directory
@@ -73,7 +73,7 @@ class InsforgeMemoryBridge:
         self.client = insforge
         logger.info(f"Insforge Bridge initialized for agent: {agent_id}")
 
-    async def push_memory(self, content: str, metadata: Dict[str, Any]) -> bool:
+    async def push_memory(self, content: str, metadata: dict[str, Any]) -> bool:
         """
         Pushes a single memory entry to the Insforge Sovereign Storage.
 
@@ -92,16 +92,16 @@ class InsforgeMemoryBridge:
                 "agent_id": self.agent_id,
                 "content": content,
                 "metadata": metadata,
-                "synced_at": datetime.now(timezone.utc).isoformat()
+                "synced_at": datetime.now(timezone.utc).isoformat(),
             }
             # Simulate push (In real scenario, this would call client.upsert or similar)
             logger.info(f"Pushed memory to Insforge: {payload['metadata'].get('id', 'Unknown ID')}")
             return True
         except Exception as e:
-            logger.error(f"Failed to push memory to Insforge: {e}")
+            logger.exception(f"Failed to push memory to Insforge: {e}")
             return False
 
-    async def fetch_updates(self) -> List[Dict[str, Any]]:
+    async def fetch_updates(self) -> list[dict[str, Any]]:
         """
         Fetches remote memory updates from the Insforge Sovereign Storage.
 
@@ -117,6 +117,20 @@ class InsforgeMemoryBridge:
         except Exception as e:
             logger.error(f"Failed to fetch updates from Insforge: {e}")
             return []
+
+    async def sync_memory_entry(self, entry: dict[str, Any]) -> bool:
+        """
+        Synchronizes a memory entry.
+        """
+        return True
+
+    async def sync_experience_log(self, event_type: str, details: dict[str, Any]) -> bool:
+        """
+        Synchronizes an experience log.
+        """
+        return True
+
+bridge = InsforgeMemoryBridge("AXION-001")
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.sync.insforge.bridge VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28

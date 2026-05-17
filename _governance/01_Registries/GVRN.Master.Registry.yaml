@@ -716,10 +716,10 @@ CORE-BRIDGE-001:
   artifact_id: CORE-BRIDGE-001
   content_hash: 57eb1326200f4015f9156b5762f30fdf9ae9ef6a7af2c512513f3cae294010d7
   domain: CORE
-  official_name: synarchy_bridge.py
+  official_name: Synarche_bridge.py
   parsed_relations:
     - "IDENTITY: High Priestess | The Sovereign."
-  path: /axion-core/src/synarchy_bridge.py
+  path: /axion-core/src/Synarche_bridge.py
   relations: "IDENTITY: High Priestess | The Sovereign."
   status: "[CANONIZED]"
   version: v15.0 [OMEGA]
@@ -3207,14 +3207,14 @@ GVRN-ENTITY-SENTINEL-PRIME-001-THEETHICALGOVERNOR-V1.0-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001:
-  artifact_id: GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001
+GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001:
+  artifact_id: GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001
   content_hash: 58a6b7ce56e38eda3a00f2cdb4d2238158284f6cf87f3ce4003e85a73a4352b6
   domain: GVRN
-  official_name: ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+  official_name: ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+  path: _governance/_archive/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
@@ -3372,36 +3372,36 @@ GVRN-GVRN-COMP-001-COGNITIVECOMPLEXITY-V13.0-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001:
-  artifact_id: GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001
+GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001:
+  artifact_id: GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001
   content_hash: 198bd1eac5e010b9e29b82adee69564bf832184e37201e8ffb6b5c082dce6b0b
   domain: GVRN
-  official_name: GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+  official_name: GVRN-ENTITY-001_SynarcheEntities_v11.0.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+  path: _governance/_archive/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001:
-  artifact_id: GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001
+GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001:
+  artifact_id: GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001
   content_hash: cab7edf65485f65a1cb61b8021fe4252fef61e38e04aa19ae221334af1b7205a
   domain: GVRN
-  official_name: GVRN-ENTITY-001_SynarchyEntities_v13.0.md
+  official_name: GVRN-ENTITY-001_SynarcheEntities_v13.0.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v13.0.md
+  path: _governance/_archive/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v13.0.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001:
-  artifact_id: GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001
+GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001:
+  artifact_id: GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001
   content_hash: 90d37fdb39932fd70715326451c02884770feb2bb895a028cb2ac96aae1d41ff
   domain: GVRN
-  official_name: GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+  official_name: GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+  path: _governance/_archive/99_Archives/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
@@ -8280,14 +8280,14 @@ SYNC.RULE.GEMINI-GATE:
   path: GEMINI.md
   status: CANONIZED TS
   version: v15.0 [OMEGA]
-SYNERGY-REPORT-001_StateOfTheSynarchy:
-  artifact_id: SYNERGY-REPORT-001_StateOfTheSynarchy
+SYNERGY-REPORT-001_StateOfTheSynarche:
+  artifact_id: SYNERGY-REPORT-001_StateOfTheSynarche
   content_hash: 018c02b64bbfce6a2d1702563f2f0bab80bd389d27d3f811bc6d9d5b758e59d5
   domain: GVRN
-  official_name: SYNERGY-REPORT-001_StateOfTheSynarchy.md
+  official_name: SYNERGY-REPORT-001_StateOfTheSynarche.md
   parsed_relations:
     - GOVERN_BY:CORE.Codex.Phoenix
-  path: _governance/50_Logs/SYNERGY-REPORT-001_StateOfTheSynarchy.md
+  path: _governance/50_Logs/SYNERGY-REPORT-001_StateOfTheSynarche.md
   relations: "GOVERN_BY: CORE.Codex.Phoenix"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
@@ -8514,14 +8514,14 @@ SYNG.LOG.ContextWeaveReport:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
-SYNG.LOG.StateOfTheSynarchy:
-  artifact_id: SYNG.LOG.StateOfTheSynarchy
+SYNG.LOG.StateOfTheSynarche:
+  artifact_id: SYNG.LOG.StateOfTheSynarche
   content_hash: 9383df483dad3e66d9b33d728892f314f759ae7262294b163f3f6c04eec41c9d
   domain: SYNG
-  official_name: SYNG.LOG.StateOfTheSynarchy.md
+  official_name: SYNG.LOG.StateOfTheSynarche.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/50_Logs/SYNG.LOG.StateOfTheSynarchy.md
+  path: _governance/50_Logs/SYNG.LOG.StateOfTheSynarche.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
@@ -8733,14 +8733,14 @@ SYNG.PROT.StandardOfTruth:
   relations: "MONITORS: SYNG.LOOM.CORE, GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-SYNG.PROT.SynarchyAvatarProtocol:
-  artifact_id: SYNG.PROT.SynarchyAvatarProtocol
+SYNG.PROT.SynarcheAvatarProtocol:
+  artifact_id: SYNG.PROT.SynarcheAvatarProtocol
   content_hash: ad55205ff0b708ccee2e33afc6ee2b872864470404be3fbd021329e2cf2bd782
   domain: GVRN
-  official_name: SYNG.PROT.SynarchyAvatarProtocol.md
+  official_name: SYNG.PROT.SynarcheAvatarProtocol.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/SYNG.PROT.SynarchyAvatarProtocol.md
+  path: _governance/_archive/SYNG.PROT.SynarcheAvatarProtocol.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
@@ -11970,3 +11970,214 @@ UWB-GODOT-001_BridgeToGodotWorkflow_v1.0:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v15.0 [OMEGA]
+
+ENG-ECS-INI-001:
+  artifact_id: ENG-ECS-INI-001
+  content_hash: b3b33ae22855a26921176381f67916af64c60432efde75fec1b3913682e80c7d
+  domain: ENG-ECS
+  official_name: __init__.py
+  path: axion-core/src/engine/ecs/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-WRLD-001:
+  artifact_id: CORE-FDE-ECS-WRLD-001
+  content_hash: ecab2a8375664ef7274897bcf51278d3beef1f070c155d6ff037f802ec95a7de
+  domain: ENG-ECS
+  official_name: world.py
+  path: axion-core/src/engine/ecs/world.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+ENG-ECS-SYN-001:
+  artifact_id: ENG-ECS-SYN-001
+  content_hash: 7ba69f287ab8806027c4c83f65df9f6a7a9459e1ae8907a6f2453c0369caf3c2
+  domain: ENG-ECS
+  official_name: synergy.py
+  path: axion-core/src/engine/ecs/synergy.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+ENG-ECS-RES-001:
+  artifact_id: ENG-ECS-RES-001
+  content_hash: 396afa2c7b9066628abfc6b212ea29e98c9f76ac26d9d156f6df6c48cb0f2fde
+  domain: ENG-ECS
+  official_name: resonance.py
+  path: axion-core/src/engine/ecs/resonance.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+ENG-ECS-MAN-001:
+  artifact_id: ENG-ECS-MAN-001
+  content_hash: 89c20f13022cfefa76c27db9a0f84664abbda8e67de396f3cb5ec098355d5fc0
+  domain: ENG-ECS
+  official_name: manager.py
+  path: axion-core/src/engine/ecs/manager.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-TEST-001:
+  artifact_id: CORE-FDE-TEST-001
+  content_hash: df73e603895f656585e68714a8eb430677bdec11e21ba7cec0678acd27bdd7db
+  domain: ENG-ECS
+  official_name: fde_test_harness.py
+  path: axion-core/src/engine/ecs/fde_test_harness.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-REG-001:
+  artifact_id: CORE-FDE-ECS-REG-001
+  content_hash: 329be893a67da3504b3536f695bbe5a4e780d9ec247aaeb0c89a4b65aa9089a3
+  domain: ENG-ECS
+  official_name: entity_registry.py
+  path: axion-core/src/engine/ecs/entity_registry.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-SCH-001:
+  artifact_id: CORE-FDE-ECS-SCH-001
+  content_hash: f39aefb92ebd933ea939382ce73656aa402c0465b03e87dbe986c1b4e2d394c7
+  domain: ENG-ECS
+  official_name: ecs_scheduler.py
+  path: axion-core/src/engine/ecs/ecs_scheduler.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-006:
+  artifact_id: CORE-FDE-ECS-006
+  content_hash: 1770d89970009597890920947c03bc16e7e5b8421c0017c5d198e45a0a1f1f55
+  domain: ENG-ECS
+  official_name: ecs_hardened_core.py
+  path: axion-core/src/engine/ecs/ecs_hardened_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-005:
+  artifact_id: CORE-FDE-ECS-005
+  content_hash: 13d04e9e512152b830d1cd322b2713252e86ff663b31d554389d8a94528627a2
+  domain: ENG-ECS
+  official_name: ecs_core.py
+  path: axion-core/src/engine/ecs/ecs_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+ENG-ECS-STO-001:
+  artifact_id: ENG-ECS-STO-001
+  content_hash: 9b912e86a83940a3cb76adb51392901da29f7a606142a69adc235f60a7d9a9a5
+  domain: ENG-ECS
+  official_name: component.py
+  path: axion-core/src/engine/ecs/component.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+PHX-LOG-INI-001:
+  artifact_id: PHX-LOG-INI-001
+  content_hash: 47f8044d87920be943a8f2cf454c829a4a1230e0e881fc1468add940df03e9fa
+  domain: PHX-LOG
+  official_name: __init__.py
+  path: axion-core/src/phoenix/logging/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+PHX-LOG-CORE-001:
+  artifact_id: PHX-LOG-CORE-001
+  content_hash: 4cadb07aab7b114df380ab2d4b9eadf3a01fd8c1164177ff63cf26af1935172e
+  domain: PHX-LOG
+  official_name: logger_philosophical_framework.py
+  path: axion-core/src/phoenix/logging/logger_philosophical_framework.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+PHX-LOG-SET-001:
+  artifact_id: PHX-LOG-SET-001
+  content_hash: e258267c72ab6169d44a7c67eeba328a80cb31d8c710dbbfa8d17d46f899318a
+  domain: PHX-LOG
+  official_name: phx_logging_protocol_setup.py
+  path: axion-core/src/phoenix/logging/phx_logging_protocol_setup.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+SYS-REF-INI-001:
+  artifact_id: SYS-REF-INI-001
+  content_hash: 8a1e7bef1f3e5363a022631c2a42d9d93acf7e7ed731b9b41729eef0e4f30125
+  domain: SYS-REF
+  official_name: __init__.py
+  path: axion-core/src/system/refactor/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+SYS-REF-CORE-001:
+  artifact_id: SYS-REF-CORE-001
+  content_hash: ab6979bb1f5aa42bb475b00faa04f3ab1e4742202fdf7b345dc43deab1b15a6a
+  domain: SYS-REF
+  official_name: refactor_protocol_axion.py
+  path: axion-core/src/system/refactor/refactor_protocol_axion.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+SYS-REF-ROLL-001:
+  artifact_id: SYS-REF-ROLL-001
+  content_hash: 388461c548a922900ee74ef5ccd920ad37cffbd459954aa326d7d350af9a6b38
+  domain: SYS-REF
+  official_name: rollback_core.py
+  path: axion-core/src/system/refactor/rollback_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+SYS-REF-PAR-001:
+  artifact_id: SYS-REF-PAR-001
+  content_hash: 0e2d21e63f68a2f660b6f4eb0a58583f5b6f533234a799067110e22412742a91
+  domain: SYS-REF
+  official_name: parallel_executor_v2.py
+  path: axion-core/src/system/refactor/parallel_executor_v2.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE.system.logging.phoenix:
+  artifact_id: CORE.system.logging.phoenix
+  content_hash: 0248f3dfa274ffdb379d3ace846c759f4d93418d8da08ed448912bb2513bbbdf
+  domain: CORE
+  official_name: phoenix_logger.py
+  path: axion-core/src/system/logging/phoenix_logger.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-GRAPH-001-V15-1:
+  artifact_id: CORE-FDE-GRAPH-001-V15-1
+  domain: CORE
+  official_name: compiled_graph.py
+  path: axion-core/src/engine/scheduling/compiled_graph.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+
+CORE-FDE-SCHED-001-V15-1:
+  artifact_id: CORE-FDE-SCHED-001-V15-1
+  domain: CORE
+  official_name: layered_scheduler.py
+  path: axion-core/src/engine/scheduling/layered_scheduler.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+
+CORE-FDE-ECS-COMP-001-V15-1:
+  artifact_id: CORE-FDE-ECS-COMP-001-V15-1
+  domain: CORE
+  official_name: compiler.py
+  path: axion-core/src/engine/ecs/compiler.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+
+CORE-FDE-ECS-WORLD-001-V15-1:
+  artifact_id: CORE-FDE-ECS-WORLD-001-V15-1
+  domain: CORE
+  official_name: world.py
+  path: axion-core/src/engine/ecs/world.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+
+CORE-CSE-ENG-002-V15-1:
+  artifact_id: CORE-CSE-ENG-002-V15-1
+  domain: CORE
+  official_name: engine_v2.py
+  path: axion-core/src/cse/engine/engine_v2.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]

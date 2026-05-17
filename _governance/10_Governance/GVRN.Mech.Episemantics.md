@@ -68,7 +68,7 @@
 >
 > - **Risk**: **Semantic Drift** (Loss of precise meaning in long-term memory).
 > - **Mitigation**: Episemantic Markers (`[κ]`) embedded in all critical commits.
-> - **RPN**: `500 (Critical)` - If meaning is lost, the synarchy collapses into noise.
+> - **RPN**: `500 (Critical)` - If meaning is lost, the Synarche collapses into noise.
 
 ---
 
@@ -82,7 +82,7 @@ The Episemantic Framework uses **Kappa Tags** (`[κ]`) to encode deep context.
 | **2. Veracity** | `[κ-veracity:Value]` | **The Truth.** Is it trusted?      | `[κ-veracity:verified]`, `[κ-veracity:hallucination]` |
 | **3. State**    | `[κ-state:Value]`    | **The Status.** Is it active?      | `[κ-state:active]`, `[κ-state:draft]`                 |
 | **4. Tempus**   | `[κ-tempus:Value]`   | **The Time.** How does it age?     | `[κ-tempus:evergreen]`, `[κ-tempus:obsolete]`         |
-| **5. Stratum**  | `[κ-stratum:Value]`  | **The Layer.** Where does it live? | `[κ-stratum:synarchy]`, `[κ-stratum:user]`            |
+| **5. Stratum**  | `[κ-stratum:Value]`  | **The Layer.** Where does it live? | `[κ-stratum:Synarche]`, `[κ-stratum:user]`            |
 
 ---
 

@@ -5,7 +5,7 @@ import { BridgeClient } from './BridgeClient';
 export const commandRegistry: Record<string, CommandDefinitionGUCAv5> = {
     CMD_STATUS: {
         commandId: 'CMD_STATUS',
-        description: 'Check the status of the Synarchy Bridge connection.',
+        description: 'Check the status of the Synarche Bridge connection.',
         action: 'status',
         parameters: [],
         aliases: ['status', 'check connection'],
@@ -31,7 +31,7 @@ export const dispatchCommand = async (
     // OR we update BridgeClient to handle structured objects.
     // For now, let's just pass the raw commandId and params to the bridge if we expand it,
     // but looking at BridgeClient.ts, it sends { command: "..." } to the server.
-    // The server executes 'synarchy <command>'.
+    // The server executes 'Synarche <command>'.
 
     try {
         // Construct the CLI-like argument string

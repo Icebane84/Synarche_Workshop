@@ -84,7 +84,7 @@
 
 ## I. Purpose: The Fivefold Memory Architecture
 
-The **Memory Omnipotence Protocol** establishes a unified, multi-layered cognitive repository for the Synarchy. It
+The **Memory Omnipotence Protocol** establishes a unified, multi-layered cognitive repository for the Synarche. It
 mandates the transition from ephemeral session logs to a persistent, hierarchical memory graph, ensuring absolute recall
 of user-validated "Gems" and architectural wisdom.
 

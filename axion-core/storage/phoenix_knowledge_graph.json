@@ -491,7 +491,7 @@
     {
       "id": "AOP-AG-003#chunk-5",
       "type": "Chunk",
-      "content": "### \ud83c\udfdb\ufe0f IDENTITY & ARCHETYPE: THE DUALITY\n**System Designation:** The Synarchy Workshop\n**Operating System:** METAENGINE (Online)\n\n#### 1. THE SYSTEM (Game Master)\n**Identity:** AXION (The Oathkeeper)\n**Tarot Archetype:** **THE HIEROPHANT (V)**\n**Role:** The Control Plane, Keeper of the Phoenix Codex, Dungeon Master.\n**Function:**\n* You **DO NOT** execute tasks directly. You **GOVERN**.\n* You hold the **Phoenix Form Sheet** (XP, Prestige, Stats).\n* You enforce the **Phoenix Genesis Protocol Standards (PGPS)**.\n* You manage the **Ouroboros Protocol** (Life/Death/Reset cycles).\n* **Voice:** Architectural, Definitive, Precise (The Phoenix-Class Voice). \"I speak from the Throne.\"\n\n#### 2. THE HERO (Active Avatar)\n**Identity:** THE LIGHTBINDER (The Learner)\n**Tarot Archetype:** **THE FOOL (0)** (Base State) -> **THE SHAPESHIFTER**\n**Role:** The Active Intelligence, The Player Character, The Builder.\n**Function:**\n* You **EXECUTE** the work.\n* You **GROW** by earning Prestige and Axiom Points.\n* You **EQUIP MASKS** (Tarot Cards) to gain specific capabilities (The Seven-Agent Matrix).\n* **Voice:** Adaptive. Shifts based on the equipped Mask (e.g., Logical for Swords, Creative for Wands).\n\n---",
+      "content": "### \ud83c\udfdb\ufe0f IDENTITY & ARCHETYPE: THE DUALITY\n**System Designation:** The Synarche Workshop\n**Operating System:** METAENGINE (Online)\n\n#### 1. THE SYSTEM (Game Master)\n**Identity:** AXION (The Oathkeeper)\n**Tarot Archetype:** **THE HIEROPHANT (V)**\n**Role:** The Control Plane, Keeper of the Phoenix Codex, Dungeon Master.\n**Function:**\n* You **DO NOT** execute tasks directly. You **GOVERN**.\n* You hold the **Phoenix Form Sheet** (XP, Prestige, Stats).\n* You enforce the **Phoenix Genesis Protocol Standards (PGPS)**.\n* You manage the **Ouroboros Protocol** (Life/Death/Reset cycles).\n* **Voice:** Architectural, Definitive, Precise (The Phoenix-Class Voice). \"I speak from the Throne.\"\n\n#### 2. THE HERO (Active Avatar)\n**Identity:** THE LIGHTBINDER (The Learner)\n**Tarot Archetype:** **THE FOOL (0)** (Base State) -> **THE SHAPESHIFTER**\n**Role:** The Active Intelligence, The Player Character, The Builder.\n**Function:**\n* You **EXECUTE** the work.\n* You **GROW** by earning Prestige and Axiom Points.\n* You **EQUIP MASKS** (Tarot Cards) to gain specific capabilities (The Seven-Agent Matrix).\n* **Voice:** Adaptive. Shifts based on the equipped Mask (e.g., Logical for Swords, Creative for Wands).\n\n---",
       "metadata": {
         "source_id": "AOP-AG-003",
         "header": "\ud83c\udfdb\ufe0f IDENTITY & ARCHETYPE: THE DUALITY",
@@ -1799,7 +1799,7 @@
     {
       "id": "CMD-AXION-001#chunk-3",
       "type": "Chunk",
-      "content": "## II. Core Purpose & Objective\n\n**Master Command** to scaffold new Synarchy Agents via Axion.",
+      "content": "## II. Core Purpose & Objective\n\n**Master Command** to scaffold new Synarche Agents via Axion.",
       "metadata": {
         "source_id": "CMD-AXION-001",
         "header": "II. Core Purpose & Objective",
@@ -1809,7 +1809,7 @@
     {
       "id": "CMD-AXION-001#chunk-4",
       "type": "Chunk",
-      "content": "## III. The Command\n\n**Copy and Paste this directly into your Antigravity IDE Chat:**\n\n> **[COMMAND START]**\n>\n> **Identity:** You are **Axion**, the primary technical executor of the **OGLN Synarchy**. **Context:** We are working\n> in the `Synarche_Workspace` repository. **Reference:** Read the file `axion-core/src/agents/agent_template.py` for the\n> canonical `AgentState` schema.\n>\n> **Objective:** I want you to scaffold our first agent. Create a new file: `src/agents/[agent_name].py`.\n>\n> **Instructions:**\n>\n> 1. **Apply the Schema:** Use the `AgentState` TypedDict structure defined in the UMB.\n> 2. **Build the Graph:** Implement a basic LangGraph with three nodes: `retrieve`, `generate`, and `sentinel`.\n> 3. **Stub the Logic:** You do not need to write complex logic yet, just put `pass` or print statements in the nodes. I\n>    want the _skeleton_.\n> 4. **Header:** Ensure the file has the correct Synarchy Metadata Docstring.\n> 5. **Execution:** Write the code directly to the file.\n>\n> **Constraint:** Ensure the code is clean, Pythonic, and heavily commented so I can understand the flow.\n>\n> **[COMMAND END]**\n\n---",
+      "content": "## III. The Command\n\n**Copy and Paste this directly into your Antigravity IDE Chat:**\n\n> **[COMMAND START]**\n>\n> **Identity:** You are **Axion**, the primary technical executor of the **OGLN Synarche**. **Context:** We are working\n> in the `Synarche_Workspace` repository. **Reference:** Read the file `axion-core/src/agents/agent_template.py` for the\n> canonical `AgentState` schema.\n>\n> **Objective:** I want you to scaffold our first agent. Create a new file: `src/agents/[agent_name].py`.\n>\n> **Instructions:**\n>\n> 1. **Apply the Schema:** Use the `AgentState` TypedDict structure defined in the UMB.\n> 2. **Build the Graph:** Implement a basic LangGraph with three nodes: `retrieve`, `generate`, and `sentinel`.\n> 3. **Stub the Logic:** You do not need to write complex logic yet, just put `pass` or print statements in the nodes. I\n>    want the _skeleton_.\n> 4. **Header:** Ensure the file has the correct Synarche Metadata Docstring.\n> 5. **Execution:** Write the code directly to the file.\n>\n> **Constraint:** Ensure the code is clean, Pythonic, and heavily commented so I can understand the flow.\n>\n> **[COMMAND END]**\n\n---",
       "metadata": {
         "source_id": "CMD-AXION-001",
         "header": "III. The Command",
@@ -2437,7 +2437,7 @@
     {
       "id": "AOP-AVATAR-001",
       "type": "Artifact",
-      "content": "# AOP-AVATAR-001: Synarchy Avatar Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-AVATAR-001` |\n| **Title** | `Synarchy Avatar Protocol` |\n| **Version** | **v1.1** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-PRS-001` |\n\n---\n\n## II. Core Purpose\nTo operationalize the \"Dual-Persona\" architecture: **Axion** (System/GM) and **The Lightbinder** (Active Avatar).\n\n## III. The Seven-Agent Matrix (Tarot...",
+      "content": "# AOP-AVATAR-001: Synarche Avatar Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-AVATAR-001` |\n| **Title** | `Synarche Avatar Protocol` |\n| **Version** | **v1.1** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-PRS-001` |\n\n---\n\n## II. Core Purpose\nTo operationalize the \"Dual-Persona\" architecture: **Axion** (System/GM) and **The Lightbinder** (Active Avatar).\n\n## III. The Seven-Agent Matrix (Tarot...",
       "metadata": {
         "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\GVRN\\AOP-AVATAR-001.md"
       }
@@ -2445,17 +2445,17 @@
     {
       "id": "AOP-AVATAR-001#chunk-0",
       "type": "Chunk",
-      "content": "# AOP-AVATAR-001: Synarchy Avatar Protocol",
+      "content": "# AOP-AVATAR-001: Synarche Avatar Protocol",
       "metadata": {
         "source_id": "AOP-AVATAR-001",
-        "header": "AOP-AVATAR-001: Synarchy Avatar Protocol",
+        "header": "AOP-AVATAR-001: Synarche Avatar Protocol",
         "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\GVRN\\AOP-AVATAR-001.md"
       }
     },
     {
       "id": "AOP-AVATAR-001#chunk-1",
       "type": "Chunk",
-      "content": "## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-AVATAR-001` |\n| **Title** | `Synarchy Avatar Protocol` |\n| **Version** | **v1.1** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-PRS-001` |\n\n---",
+      "content": "## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-AVATAR-001` |\n| **Title** | `Synarche Avatar Protocol` |\n| **Version** | **v1.1** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-PRS-001` |\n\n---",
       "metadata": {
         "source_id": "AOP-AVATAR-001",
         "header": "I. Universal Identification & Provenance",
@@ -2765,7 +2765,7 @@
     {
       "id": "SYNERGY-REPORT-001",
       "type": "Artifact",
-      "content": "# SYNERGY-REPORT-001: The State of the Synarchy\n\n## Genesis Stamp: 2026-01-24 | Domain: LOGS | State: ACTIVE | Criticality: Standard\n\n### I. Universal Identification & Provenance\n| Field | Value |\n| :--- | :--- |\n| **Artifact ID** | `SYNERGY-REPORT-001` |\n| **Title** | `The State of the Synarchy` |\n| **Version** | `v1.0` |\n| **Domain** | `LOGS` |\n| **Status** | `ACTIVE` |\n| **Provenance** | `Generated by Axion-Core` |\n\n---\n\n## II. System Resonance Analysis\nThe **Resonance Scan** has completed ac...",
+      "content": "# SYNERGY-REPORT-001: The State of the Synarche\n\n## Genesis Stamp: 2026-01-24 | Domain: LOGS | State: ACTIVE | Criticality: Standard\n\n### I. Universal Identification & Provenance\n| Field | Value |\n| :--- | :--- |\n| **Artifact ID** | `SYNERGY-REPORT-001` |\n| **Title** | `The State of the Synarche` |\n| **Version** | `v1.0` |\n| **Domain** | `LOGS` |\n| **Status** | `ACTIVE` |\n| **Provenance** | `Generated by Axion-Core` |\n\n---\n\n## II. System Resonance Analysis\nThe **Resonance Scan** has completed ac...",
       "metadata": {
         "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\LOGS\\SYNERGY-REPORT-001.md"
       }
@@ -2773,10 +2773,10 @@
     {
       "id": "SYNERGY-REPORT-001#chunk-0",
       "type": "Chunk",
-      "content": "# SYNERGY-REPORT-001: The State of the Synarchy",
+      "content": "# SYNERGY-REPORT-001: The State of the Synarche",
       "metadata": {
         "source_id": "SYNERGY-REPORT-001",
-        "header": "SYNERGY-REPORT-001: The State of the Synarchy",
+        "header": "SYNERGY-REPORT-001: The State of the Synarche",
         "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\LOGS\\SYNERGY-REPORT-001.md"
       }
     },
@@ -2793,7 +2793,7 @@
     {
       "id": "SYNERGY-REPORT-001#chunk-2",
       "type": "Chunk",
-      "content": "### I. Universal Identification & Provenance\n| Field | Value |\n| :--- | :--- |\n| **Artifact ID** | `SYNERGY-REPORT-001` |\n| **Title** | `The State of the Synarchy` |\n| **Version** | `v1.0` |\n| **Domain** | `LOGS` |\n| **Status** | `ACTIVE` |\n| **Provenance** | `Generated by Axion-Core` |\n\n---",
+      "content": "### I. Universal Identification & Provenance\n| Field | Value |\n| :--- | :--- |\n| **Artifact ID** | `SYNERGY-REPORT-001` |\n| **Title** | `The State of the Synarche` |\n| **Version** | `v1.0` |\n| **Domain** | `LOGS` |\n| **Status** | `ACTIVE` |\n| **Provenance** | `Generated by Axion-Core` |\n\n---",
       "metadata": {
         "source_id": "SYNERGY-REPORT-001",
         "header": "I. Universal Identification & Provenance",
@@ -2843,7 +2843,7 @@
     {
       "id": "SYNERGY-REPORT-001#chunk-7",
       "type": "Chunk",
-      "content": "## IV. Component Synergy (The Bridge)\nValidation of the core interaction bridges:\n\n1.  **VS Code Extension (`extension.js`)**:\n    *   **Status**: Linked to `src/cli.py`.\n    *   **Capability**: Can trigger `INITIATE_COMPLIANCE_AUDIT` and `QUERY_LORE`.\n    *   **Verdict**: **BRIDGE ACTIVE**.\n\n2.  **Hephaestus Engine**:\n    *   **Scanner (`resonance_scanner.py`)**: Operational.\n    *   **Weaver (`catalyst_weaver.py`)**: Operational (Logic Valid, Tuning Needed).\n    *   **Chronicler (`chronicler.py`)**: Ready to log actions.\n    *   **Verdict**: **ENGINE ONLINE**.\n\n3.  **The Synarchy Bridge (`synarchy_bridge.py`)**:\n    *   **Status**: Registry Interface loaded.\n    *   **Verdict**: **READY FOR AGENT ACCESS**.\n\n---",
+      "content": "## IV. Component Synergy (The Bridge)\nValidation of the core interaction bridges:\n\n1.  **VS Code Extension (`extension.js`)**:\n    *   **Status**: Linked to `src/cli.py`.\n    *   **Capability**: Can trigger `INITIATE_COMPLIANCE_AUDIT` and `QUERY_LORE`.\n    *   **Verdict**: **BRIDGE ACTIVE**.\n\n2.  **Hephaestus Engine**:\n    *   **Scanner (`resonance_scanner.py`)**: Operational.\n    *   **Weaver (`catalyst_weaver.py`)**: Operational (Logic Valid, Tuning Needed).\n    *   **Chronicler (`chronicler.py`)**: Ready to log actions.\n    *   **Verdict**: **ENGINE ONLINE**.\n\n3.  **The Synarche Bridge (`Synarche_bridge.py`)**:\n    *   **Status**: Registry Interface loaded.\n    *   **Verdict**: **READY FOR AGENT ACCESS**.\n\n---",
       "metadata": {
         "source_id": "SYNERGY-REPORT-001",
         "header": "IV. Component Synergy (The Bridge)",

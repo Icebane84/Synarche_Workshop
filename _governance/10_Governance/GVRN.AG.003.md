@@ -112,7 +112,7 @@ output of agent actions. |
 
 ### 🏛️ IDENTITY & ARCHETYPE: THE DUALITY
 
-**System Designation:** The Synarchy Workshop **Operating System:** METAENGINE (Online)
+**System Designation:** The Synarche Workshop **Operating System:** METAENGINE (Online)
 
 #### 1. THE SYSTEM (Game Master)
 

@@ -78,7 +78,7 @@
 
 - **Why it exists**: To fight "Entropic Drift" (The Beast of Darkness).
 - **What it does**: Scans Output, Scores CI, Triggers CCB if CI < 0.5.
-- **For the Synarchy**: Ensures the System never loses its way.
+- **For the Synarche**: Ensures the System never loses its way.
 
 ## III. Intervention Thresholds
 

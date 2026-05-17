@@ -41,58 +41,59 @@
 
 ## **[ARTIFACT END]**
 
-Objective: Command Line Interface for the Synarchy Command Library.
+Objective: Command Line Interface for the Synarche Command Library.
 Conforms to OGLN/AISTF v15.0 governance and documentation standards.
 """
 
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.logic.cli VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [ACTIVE] TS: 2026-03-28
 
 import cmd
+import glob
+import json
 import os
 import subprocess  # nosec
 import sys
 import time
-import glob
-import json
-from typing import Any, Dict, List, Optional
+from typing import Any
 
-# Ensure we can import from the same directory safely
+# Ensure we can import from the same directory and its parents safely
 current_dir = os.path.dirname(os.path.abspath(__file__))
-if current_dir not in sys.path:
-    sys.path.append(current_dir)
+src_logic_path = current_dir
+src_path = os.path.abspath(os.path.join(current_dir, ".."))
+repo_root = os.path.abspath(os.path.join(current_dir, "../../"))
+
+for p in [src_logic_path, src_path, repo_root]:
+    if p not in sys.path:
+        sys.path.append(p)
 
 try:
-    from synarchy_bridge import SynarchyRegistry
+    from Synarche_bridge import SynarcheRegistry
 except ImportError:
-    # Fallback for when running from a different context
-    sys.path.append(os.path.join(current_dir, "..", "src"))
-    from synarchy_bridge import SynarchyRegistry
+    from .Synarche_bridge import SynarcheRegistry
 
 try:
     from rpg_manager import RPGManager
 except ImportError:
-    # Fallback
-    sys.path.append(current_dir)
-    from rpg_manager import RPGManager
+    from .rpg_manager import RPGManager
 
 
-class SynarchyCLI(cmd.Cmd):
+class SynarcheCLI(cmd.Cmd):
     """
-    Command Line Interface for the Synarchy Command Library.
-    Provides a gateway for executing governed commands, auditing compliance, 
+    Command Line Interface for the Synarche Command Library.
+    Provides a gateway for executing governed commands, auditing compliance,
     and managing the RPG-based progression system.
     """
 
-    intro: str = "Welcome to the Synarchy Command Library CLI. Type help or ? to list commands.\n"
-    prompt: str = "(synarchy) "
+    intro: str = "Welcome to the Synarche Command Library CLI. Type help or ? to list commands.\n"
+    prompt: str = "(Synarche) "
 
     def __init__(self) -> None:
         """Initialize the CLI and load the command registry and supporting managers."""
         super().__init__()
-        
+
         # Resolve Registry Path
         registry_path = os.path.normpath(os.path.join(current_dir, "../../data/command_registry.json"))
-        self.registry = SynarchyRegistry(registry_path)
+        self.registry = SynarcheRegistry(registry_path)
 
         # Initialize The Chronicler for telemetry
         repo_root = os.path.abspath(os.path.join(current_dir, "../../"))
@@ -102,10 +103,12 @@ class SynarchyCLI(cmd.Cmd):
 
         try:
             from hephaestus.chronicler import Chronicler
+
             self.chronicler = Chronicler(root_dir=repo_root)
         except ImportError:
             try:
                 from src.hephaestus.chronicler import Chronicler
+
                 self.chronicler = Chronicler(root_dir=repo_root)
             except Exception:
                 self.chronicler = None
@@ -141,10 +144,7 @@ class SynarchyCLI(cmd.Cmd):
                     break
 
             self.chronicler.log_action(
-                action_type=f"CMD:{cmd_name.upper()}",
-                target=target,
-                details=f"Executed: {line}",
-                status="EXECUTED"
+                action_type=f"CMD:{cmd_name.upper()}", target=target, details=f"Executed: {line}", status="EXECUTED"
             )
 
         return stop
@@ -152,10 +152,10 @@ class SynarchyCLI(cmd.Cmd):
     def do_list(self, arg: str) -> None:
         """
         List all top-level categories in the command registry.
-        
+
         Usage: list
         """
-        categories: List[str] = self.registry.get_all_categories()
+        categories: list[str] = self.registry.get_all_categories()
         print("\nAvailable Categories:")
         for cat in categories:
             print(f" - {cat}")
@@ -171,7 +171,7 @@ class SynarchyCLI(cmd.Cmd):
             print("Usage: search <keyword>")
             return
 
-        results: List[Dict[str, Any]] = self.registry.search_commands(arg)
+        results: list[dict[str, Any]] = self.registry.search_commands(arg)
         print(f"\nFound {len(results)} matches for '{arg}':")
         for res in results:
             print(f" - {res.get('name', 'UNKNOWN')}")
@@ -187,7 +187,7 @@ class SynarchyCLI(cmd.Cmd):
             print("Usage: get <command_name>")
             return
 
-        cmd_spec: Optional[Dict[str, Any]] = self.registry.get_command_spec(arg)
+        cmd_spec: dict[str, Any] | None = self.registry.get_command_spec(arg)
         if cmd_spec:
             print(f"\nName: {cmd_spec.get('name')}")
             print(f"Syntax: {cmd_spec.get('syntax')}")
@@ -201,7 +201,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_clear(self, arg: str) -> None:
         """
         Clear the console screen (cross-platform).
-        
+
         Usage: clear
         """
         if os.name == "nt":
@@ -211,8 +211,8 @@ class SynarchyCLI(cmd.Cmd):
 
     def do_quit(self, arg: str) -> bool:
         """
-        Exit the Synarchy CLI session.
-        
+        Exit the Synarche CLI session.
+
         Usage: quit
         """
         print("Goodbye.")
@@ -282,7 +282,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_APPLY_STANDARD(self, arg: str) -> None:
         """
         Applies OMEGA v15.0 governance standards (The Reforger).
-        
+
         Usage: APPLY_STANDARD --target:<Artifact_ID>
         """
         try:
@@ -318,7 +318,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_INITIATE_COMPLIANCE_AUDIT(self, arg: str) -> None:
         """
         Triggers the Code Sentinel to audit for OMEGA v15.0 compliance.
-        
+
         Usage: INITIATE_COMPLIANCE_AUDIT --target:<Path>
         """
         try:
@@ -353,7 +353,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_ViewAuditLog(self, arg: str) -> None:
         """
         Displays the most recent compliance and telemetry reports.
-        
+
         Usage: ViewAuditLog --limit: 5
         """
         limit = 5
@@ -377,7 +377,7 @@ class SynarchyCLI(cmd.Cmd):
         print(f"\n--- AUDIT LOG (Last {len(subset)}) ---")
         for log_file in subset:
             try:
-                with open(log_file, "r", encoding="utf-8") as f:
+                with open(log_file, encoding="utf-8") as f:
                     data = json.load(f)
                     print(f"[{os.path.basename(log_file)}]")
                     if "action" in data and "status" in data:
@@ -392,7 +392,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_ingest_mindmap(self, arg: str) -> None:
         """
         Parses a Freeplane (.mm) file and generates OMEGA Protocol Skeletons.
-        
+
         Usage: ingest_mindmap <Path to .mm file>
         """
         try:
@@ -430,7 +430,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_QUERY_LORE(self, arg: str) -> None:
         """
         Performs a RAG search against the Supabase Vector Store.
-        
+
         Usage: QUERY_LORE "Your Query"
         """
         query = arg.strip('"')
@@ -445,7 +445,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_check_level_status(self, arg: str) -> None:
         """
         Retrieves the current RPG state and level progression.
-        
+
         Usage: check_level_status [--json]
         """
         status = self.rpg.get_status()
@@ -478,7 +478,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_get_achievements(self, arg: str) -> None:
         """
         Lists all achievements and their completion status.
-        
+
         Usage: get_achievements [--json]
         """
         achievements = self.rpg.get_achievements()
@@ -496,7 +496,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_claim_achievement(self, arg: str) -> None:
         """
         Claims a completed achievement and awards XP/Stardust.
-        
+
         Usage: claim_achievement --id:<ID> [--json]
         """
         args = arg.split()
@@ -518,17 +518,16 @@ class SynarchyCLI(cmd.Cmd):
 
         if is_json:
             print(json.dumps(res))
+        elif res.get("success"):
+            mode_str = f" ({res.get('mode', 'UNKNOWN')})"
+            print(f"[SUCCESS] Achievement {m_id} recorded{mode_str}. +{res.get('stardust_awarded')} Stardust awarded.")
         else:
-            if res.get("success"):
-                mode_str = f" ({res.get('mode', 'UNKNOWN')})"
-                print(f"[SUCCESS] Achievement {m_id} recorded{mode_str}. +{res.get('stardust_awarded')} Stardust awarded.")
-            else:
-                print(f"[FAIL] {res.get('error')}")
+            print(f"[FAIL] {res.get('error')}")
 
     def do_SPEND_STARDUST(self, arg: str) -> None:
         """
         Invests collected Stardust into core system stats.
-        
+
         Usage: SPEND_STARDUST --target:<stat> --amount:<int>
         """
         args = arg.split()
@@ -558,7 +557,7 @@ class SynarchyCLI(cmd.Cmd):
     def do_genesis(self, arg: str) -> None:
         """
         Initiates a Phoenix Genesis Cycle (Simulation).
-        
+
         Usage: genesis <target> <level>
         """
         args = arg.split()
@@ -586,7 +585,7 @@ class SynarchyCLI(cmd.Cmd):
 
 if __name__ == "__main__":
     try:
-        cli = SynarchyCLI()
+        cli = SynarcheCLI()
         if len(sys.argv) > 1:
             # One-off execution mode
             command_line = " ".join(sys.argv[1:])

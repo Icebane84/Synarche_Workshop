@@ -8,8 +8,8 @@ from src.logic.memory.memory_system import MemorySystem
 def seed():
     mem = MemorySystem()
     seeds = [
-        ("The Phoenix Codex establishes the Supreme Law of the Synarchy.", 1.0, ["law", "codex"]),
-        ("Axion is the primary agent of the Synarchy, governed by the Hierophant.", 0.9, ["agent", "axion"]),
+        ("The Phoenix Codex establishes the Supreme Law of the Synarche.", 1.0, ["law", "codex"]),
+        ("Axion is the primary agent of the Synarche, governed by the Hierophant.", 0.9, ["agent", "axion"]),
         ("Gemini Gem provides the cognitive layer for emotional and semantic understanding.", 0.8, ["gemini", "cognition"]),
         ("Emerald City is a metaphor for the target architecture state.", 0.5, ["lore"]),
     ]

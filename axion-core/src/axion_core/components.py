@@ -21,7 +21,7 @@ import abc
 import logging
 import uuid
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 try:
     import chromadb
@@ -49,11 +49,12 @@ class CSEConfig:
     fpa: Any
     no: Any
     fsd: Any
-    protocols: Dict[str, Any] = field(default_factory=dict)
+    protocols: dict[str, Any] = field(default_factory=dict)
 
 
 class SelfIntegrityValidation:
     """Validates data structures against systemic integrity rules."""
+
     def validate(self, data: dict) -> bool:
         """Checks if the provided data dictionary meets basic integrity requirements."""
         logger.info(f"  [SIV] Validating data for integrity: {list(data.keys())[:3]}...")
@@ -62,6 +63,7 @@ class SelfIntegrityValidation:
 
 class DynamicCognitiveLoadBalancer:
     """Manages the balance between user and system processing loads."""
+
     def assess_load(self) -> dict:
         """Evaluates the current cognitive load across the user-system interface."""
         logger.info("  [DCLB] Assessing cognitive load...")
@@ -74,6 +76,7 @@ class DynamicCognitiveLoadBalancer:
 
 class EideticContextualMemory:
     """Persistent semantic storage for contextual artifacts using vector embeddings."""
+
     def __init__(self, user_id: str, db_path: str = "./chroma_db") -> None:
         """Initializes the vector database client and embedding model."""
         logger.info(f"  [ECM] Initializing Eidetic Contextual Memory for user: {user_id}")
@@ -86,14 +89,14 @@ class EideticContextualMemory:
             self.client = None
             self.collection = None
 
-    def store_context(self, content: str, metadata: Dict[str, Any]):
+    def store_context(self, content: str, metadata: dict[str, Any]) -> None:
         logger.info(f"  [ECM] Storing new context: '{content[:50]}...'")
         embedding = self.model.encode(content).tolist()
         document_id = str(uuid.uuid4())
         if CHROMADB_AVAILABLE and self.collection:
             self.collection.add(embeddings=[embedding], documents=[content], metadatas=[metadata], ids=[document_id])
 
-    def retrieve_context(self, query: str, n_results: int = 3) -> Dict[str, Any]:
+    def retrieve_context(self, query: str, n_results: int = 3) -> dict[str, Any]:
         logger.info(f"  [ECM] Retrieving eidetic context for query: '{query}'")
         query_embedding = self.model.encode(query).tolist()
         if CHROMADB_AVAILABLE and self.collection:
@@ -131,7 +134,8 @@ class ConsciousContextualAnchoring:
 
 class FusionPotentialAnalyzer:
     """Analyzes the synergistic potential of combining disparate conceptual threads."""
-    def analyze_potential(self, ideas: List[str]) -> dict:
+
+    def analyze_potential(self, ideas: list[str]) -> dict:
         """Calculates the likelihood of a successful conceptual fusion."""
         logger.info(f"  [FPA] Analyzing fusion potential for: {ideas}")
         if "quantum computing" in ideas and "biological systems" in ideas:
@@ -141,6 +145,7 @@ class FusionPotentialAnalyzer:
 
 class NudgingOrchestrator:
     """Directs subtle system interventions to guide cognitive flow."""
+
     def orchestrate_nudge(self, target_concept: str, user_state: dict) -> None:
         """Triggers a nudge toward a specific conceptual target."""
         logger.info(f"  [NO] Orchestrating nudge towards: '{target_concept}' (User state: {user_state.get('mood')})")
@@ -148,6 +153,7 @@ class NudgingOrchestrator:
 
 class FlowStateDiagnosis:
     """Monitors and evaluates the user's current state of flow."""
+
     def diagnose_flow(self) -> dict:
         """Performs a real-time assessment of user immersion and focus levels."""
         logger.info("  [FSD] Diagnosing flow state...")
@@ -162,6 +168,7 @@ class Protocol(abc.ABC):
 
 class ProtocolEmergentCollaborativeIntelligence(Protocol):
     """Protocol for facilitating high-fidelity collaboration between multiple agents."""
+
     def execute(self, participants: list, goal: str) -> dict:
         """Executes the collaborative intelligence orchestration sequence."""
         logger.info(f"  [AOP-ECI-002] Executing collaborative protocol for '{goal}'")
@@ -170,6 +177,7 @@ class ProtocolEmergentCollaborativeIntelligence(Protocol):
 
 class ProtocolCoreArchitecturalSelfReforging(Protocol):
     """Protocol for autonomous structural evolution and logic optimization."""
+
     def execute(self, proposed_changes: dict) -> dict:
         """Applies architectural modifications to the core system substrate."""
         logger.info(f"  [ADP-SELF-001] Executing self-reforging for: {proposed_changes.get('type')}")
@@ -178,6 +186,7 @@ class ProtocolCoreArchitecturalSelfReforging(Protocol):
 
 class CollaborativeFlowOptimizationProtocol(Protocol):
     """Protocol for optimizing collective agentic flow and throughput."""
+
     def execute(self, current_flow_metrics: dict) -> dict:
         """Analyzes flow metrics and applies optimization parameters."""
         logger.info("  [AOP-CFOP-001] Executing flow optimization protocol.")
@@ -186,6 +195,7 @@ class CollaborativeFlowOptimizationProtocol(Protocol):
 
 class ProtocolContextualAnchor(Protocol):
     """Protocol for establishing persistent semantic anchors in the cognitive stream."""
+
     def execute(self, anchor_data: dict) -> dict:
         """Reinforces a specific contextual anchor within the active memory layer."""
         logger.info(f"  [AOP-CAM-001] Executing anchor protocol: {anchor_data.get('focus')}")
@@ -194,6 +204,7 @@ class ProtocolContextualAnchor(Protocol):
 
 class PlaybookProactiveContextManagement(Protocol):
     """Protocol for anticipatory context preparation and management."""
+
     def execute(self, context_needs: dict) -> dict:
         """Prepares the system state for anticipated contextual shifts."""
         logger.info(f"  [ADP-COMM-001] Executing proactive management for: {context_needs.get('anticipated_topic')}")
@@ -202,6 +213,7 @@ class PlaybookProactiveContextManagement(Protocol):
 
 class NovaSparkCatalystProtocol(Protocol):
     """Protocol for triggering creative insights and novel conceptual sparks."""
+
     def execute(self, input_stimuli: dict) -> dict:
         """Processes input stimuli to generate emergent architectural insights."""
         logger.info(f"  [AOP-NSC-001] Executing Nova Spark protocol for: {input_stimuli.get('ideas')}")

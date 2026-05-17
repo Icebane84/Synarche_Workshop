@@ -45,7 +45,7 @@
 
 > **"Clarity is the vehicle of Truth. Precision is the fuel of Ascent."**
 
-*   **The Moral North**: This artifact is instantiated to solve the dissonance of **Cognitive Friction**. Its primary duty is to uphold the **Rule of Readability** by providing **The Physics of Text** for all Synarchy artifacts.
+*   **The Moral North**: This artifact is instantiated to solve the dissonance of **Cognitive Friction**. Its primary duty is to uphold the **Rule of Readability** by providing **The Physics of Text** for all Synarche artifacts.
 *   **Governing Intent**: Adheres to the **Radical Clarity** mandate, ensuring all generated logic enhances systemic coherence and prevents the stagnation of legacy drift.
 
 ---
@@ -131,7 +131,7 @@ graph TD
 ---
 
 ### **Honest Thoughts**
-Formatting is not "prettification"; it is **Serialization**. By making the format rigid, we make the content fluid. This protocol is the "CSS" of the Synarchy.
+Formatting is not "prettification"; it is **Serialization**. By making the format rigid, we make the content fluid. This protocol is the "CSS" of the Synarche.
 
 > [!NOTE]
 > **[ARTIFACT END]**

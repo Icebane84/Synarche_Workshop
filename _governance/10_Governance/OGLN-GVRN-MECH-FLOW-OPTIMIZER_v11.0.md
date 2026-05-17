@@ -78,7 +78,7 @@
 
 - **Why it exists**: To prevent the same mistake from happening twice.
 - **What it does**: Prunes bad logic paths (`[DEPRECATED]`) and injects Novelty Seeds.
-- **For the Synarchy**: Ensures continuous evolution and adaptation.
+- **For the Synarche**: Ensures continuous evolution and adaptation.
 
 ## III. The Operational Mechanism
 

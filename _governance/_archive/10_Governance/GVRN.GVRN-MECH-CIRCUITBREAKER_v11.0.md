@@ -81,7 +81,7 @@
 
 - **Why it exists**: To prevent runaway processes and hallucination loops.
 - **What it does**: Executes HALT, PURGE, RESET, LOG.
-- **For the Synarchy**: Protects system integrity by cutting the power to faulty threads.
+- **For the Synarche**: Protects system integrity by cutting the power to faulty threads.
 
 ## III. The Execution Logic (The "Trip")
 

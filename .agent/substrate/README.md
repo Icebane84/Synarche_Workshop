@@ -1,3 +1,5 @@
+# .agent/substrate/README.md
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                       | Description       |
@@ -13,25 +15,26 @@
 
 # 🔗 Sovereign Substrate Registry
 
-This directory contains the authoritative configuration files that define the Synarchy's operational boundaries.
+This directory contains the authoritative configuration files that define the Synarche's operational boundaries.
 
 ## 📁 Registry Manifest
 
-| Artifact         | Purpose                                         | Status   |
-| :--------------- | :---------------------------------------------- | :------- |
-| `agents/`        | Authoritative 20 Specialist Agent personas.     | [ACTIVE] |
-| `bin/`           | Master substrate binaries & validation scripts. | [ACTIVE] |
-| `rules/`         | Sovereign standards & linter configurations.    | [ACTIVE] |
-| `ide/`           | IDE integration & environment settings.         | [ACTIVE] |
-| `governance/`    | Substrate-level protocols & codex assets.       | [ACTIVE] |
-| `identity/`      | Agent identity, personas, and voice profiles.   | [ACTIVE] |
-| `infra/`         | Substrate infrastructure & dependency rules.    | [ACTIVE] |
-| `inbox.yaml`     | Task intake and communication routing.          | [ACTIVE] |
-| `knowledge.yaml` | RAG indices and domain knowledge anchors.       | [ACTIVE] |
-| `layout.yaml`    | Structural workspace mapping.                   | [ACTIVE] |
-| `network.yaml`   | External domain access and protocol rules.      | [ACTIVE] |
-| `security.yaml`  | Redaction logic and Faraday Cage settings.      | [ACTIVE] |
-| `ui-config.yaml` | UI/UX aesthetic tokens and display modes.       | [ACTIVE] |
+| Artifact               | Purpose                                         | Status   |
+| :--------------------- | :---------------------------------------------- | :------- |
+| `agents/`              | Authoritative 20 Specialist Agent personas.     | [ACTIVE] |
+| `bin/`                 | Master substrate binaries & validation scripts. | [ACTIVE] |
+| `rules/`               | Sovereign standards & linter configurations.    | [ACTIVE] |
+| `ide/`                 | IDE integration & environment settings.         | [ACTIVE] |
+| `governance/`          | Substrate-level protocols & codex assets.       | [ACTIVE] |
+| `identity/`            | Agent identity, personas, and voice profiles.   | [ACTIVE] |
+| `infra/`               | Substrate infrastructure & dependency rules.    | [ACTIVE] |
+| `inbox.yaml`           | Task intake and communication routing.          | [ACTIVE] |
+| `knowledge.yaml`       | RAG indices and domain knowledge anchors.       | [ACTIVE] |
+| `layout.yaml`          | Structural workspace mapping.                   | [ACTIVE] |
+| `network.yaml`         | External domain access and protocol rules.      | [ACTIVE] |
+| `security.yaml`        | Redaction logic and Faraday Cage settings.      | [ACTIVE] |
+| `ui-config.yaml`       | UI/UX aesthetic tokens and display modes.       | [ACTIVE] |
+| `metadata.schema.json` | Metadata schema and validation rules.           | [ACTIVE] |
 
 ## 🤖 Specialist Agents (20)
 

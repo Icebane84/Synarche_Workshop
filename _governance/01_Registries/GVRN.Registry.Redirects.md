@@ -116,7 +116,7 @@ This registry tracks the **Transmutation** of artifacts from the Legacy (v11.0) 
 | 2026-02-04 | `UMB-SYNC-001` | `GVRN.SYNC.001` | GVRN | [TRANSMUTED] |
 | 2026-02-04 | `UMB-VIS-001` | `GVRN.VIS.001` | GVRN | [TRANSMUTED] |
 | 2026-02-04 | `UMB-ACT-002` | `GVRN.ACT.002` | GVRN | [TRANSMUTED] |
-| 2026-02-04 | `UMB-ALTAR-001TheAltarofSynarchy` | `ARCH.Architecture` | ARCH | [TRANSMUTED] |
+| 2026-02-04 | `UMB-ALTAR-001TheAltarofSynarche` | `ARCH.Architecture` | ARCH | [TRANSMUTED] |
 | 2026-02-04 | `UMB-AM-001` | `GVRN.AM.001` | GVRN | [TRANSMUTED] |
 | 2026-02-04 | `UMB-CF-001` | `GVRN.CF.001` | GVRN | [TRANSMUTED] |
 | 2026-02-04 | `UMB-CON-001` | `GVRN.CON.001` | GVRN | [TRANSMUTED] |

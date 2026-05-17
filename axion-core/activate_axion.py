@@ -41,8 +41,11 @@ def bootstrap() -> None:
 
     # 1. Align Path (Add project root to allow 'src.' prefix)
     script_dir: Path = Path(__file__).resolve().parent
+    workspace_root: Path = script_dir.parent
     if str(script_dir) not in sys.path:
         sys.path.insert(0, str(script_dir))
+    if str(workspace_root) not in sys.path:
+        sys.path.insert(0, str(workspace_root))
 
     logger.info(f"Project Root Aligned: {script_dir}")
 
@@ -53,7 +56,7 @@ def bootstrap() -> None:
         logger.info("Axion Engine [agent_template] Loaded.")
         return app
     except ImportError as e:
-        logger.error(f"CRITICAL FAILURE: Could not import Axion Engine. {e}")
+        logger.exception(f"CRITICAL FAILURE: Could not import Axion Engine. {e}")
         return None
 
 

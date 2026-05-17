@@ -1,6 +1,6 @@
 ---
 command: "scaffold"
-description: "Scaffolds a new Synarchy Agent using the LangGraph template."
+description: "Scaffolds a new Synarche Agent using the LangGraph template."
 ---
 # Workflow: Agent Scaffolding
 1.  Context Loading: Read `agent_template.py`.

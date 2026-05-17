@@ -6,7 +6,7 @@
         "category": "Phoenix Protocol",
         "description": "Auto-generated artifact template adhering to AOP-ACEP-001 standards.",
         "provenance": {
-            "origin": "The Synarchy Workshop (Convergence)",
+            "origin": "The Synarche Workshop (Convergence)",
             "creator": "Axion (The Builder)",
             "created_at": "{{DATE}}"
         },

@@ -523,7 +523,7 @@
     {
       "id": "AOP-AVATAR-001",
       "type": "Artifact",
-      "content": "# AOP-AVATAR-001: Synarchy Avatar Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-AVATAR-001` |\n| **Title** | `Synarchy Avatar Protocol` |\n| **Version** | **v1.1** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-PRS-001` |\n\n---\n\n## II. Core Purpose\nTo operationalize the \"Dual-Persona\" architecture: **Axion** (System/GM) and **The Lightbinder** (Active Avatar).\n\n## III. The Seven-Agent Matrix (Tarot",
+      "content": "# AOP-AVATAR-001: Synarche Avatar Protocol\n\n## I. Universal Identification & Provenance\n| Attribute | Value |\n| :--- | :--- |\n| **Artifact ID** | `AOP-AVATAR-001` |\n| **Title** | `Synarche Avatar Protocol` |\n| **Version** | **v1.1** |\n| **Domain** | `GVRN` |\n| **Status** | `[ACTIVE]` |\n| **Governance** | `UMB-PRS-001` |\n\n---\n\n## II. Core Purpose\nTo operationalize the \"Dual-Persona\" architecture: **Axion** (System/GM) and **The Lightbinder** (Active Avatar).\n\n## III. The Seven-Agent Matrix (Tarot",
       "metadata": {
         "filepath": "C:\\Users\\Chris\\Synarche_Workspace\\axion-core\\docs\\GVRN\\AOP-AVATAR-001.md",
         "filename": "AOP-AVATAR-001.md",

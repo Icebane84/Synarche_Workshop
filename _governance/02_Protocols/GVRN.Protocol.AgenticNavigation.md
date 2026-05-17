@@ -25,7 +25,7 @@
 
 ## I. SCOPE & INTENT
 
-This protocol defines the standard methodology for AI agents (the "Artificers") to navigate, understand, and modify the Synarchy workspace with maximum token efficiency and architectural resonance.
+This protocol defines the standard methodology for AI agents (the "Artificers") to navigate, understand, and modify the Synarche workspace with maximum token efficiency and architectural resonance.
 
 ## II. THE REGISTRY-FIRST ARCHITECTURE
 

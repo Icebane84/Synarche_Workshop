@@ -15,7 +15,7 @@
 
 ## **I. Tactical Intent**
 
-To unify the three core archetypes of the Synarchy—**Kaelen** (Vision), **Garrett** (Structure), and **Serafina** (Harmony)—with the **Grand Unified Command Architecture (GUCA)**.
+To unify the three core archetypes of the Synarche—**Kaelen** (Vision), **Garrett** (Structure), and **Serafina** (Harmony)—with the **Grand Unified Command Architecture (GUCA)**.
 
 ## **II. The Triad Synergy**
 

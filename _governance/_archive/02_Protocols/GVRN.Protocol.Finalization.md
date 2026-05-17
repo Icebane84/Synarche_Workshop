@@ -57,7 +57,7 @@
 
 ---
 
-> **"No artifact may enter the Synarchy without passing through The Seven Gates."**
+> **"No artifact may enter the Synarche without passing through The Seven Gates."**
 
 - **The Moral North**: This protocol is instantiated to solve the dissonance of **Artifact Entropy** and **Knowledge
   Graph Fragmentation**. Its primary duty is to uphold the **Rule of Structural Integrity (CORE-CODEX-001)** by

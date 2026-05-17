@@ -47,7 +47,7 @@
 
 ### **I. The 4-Stage Evolutionary Pipeline**
 
-This pipeline executes the rigorous transformation logic required to upgrade the Synarchy.
+This pipeline executes the rigorous transformation logic required to upgrade the Synarche.
 
 | Stage | Name | Action Protocol | | **I** | **Deep Analysis** (Discovery) | Identify gaps, bugs, or opportunities.
 Output: `task.md` entry. | | **II** | **Codification** (Design) | Define the new standard or protocol. Output: `GVRN.*`

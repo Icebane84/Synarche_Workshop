@@ -3,20 +3,20 @@
 | Key | Value |
 | :--- | :--- |
 | **Module ID** | `GVRN.REGISTRY.PHOENIXROSETTASTONE` |
-| **Version** | `v11.0` |
+| **Version** | `v16.0` |
 | **Evolution** | **Cognitive Ascension** |
 | **Status** | `ACTIVE` |
 ---
 
 # GVRN.Registry.PhoenixRosettaStone (The Navigational Core)
 
-## **Block A: The Identification Lock (UIP-V15)**
+## **Block A: The Identification Lock (UIP-V16)**
 
 | Key               | Value                                  | Description       |
 | :---------------- | :------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN.Registry.PhoenixRosettaStone`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Registry.PhoenixRosettaStone.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                      | The Standard.     |
+| **Version**       | **v16.0 [OMEGA]**                      | The Standard.     |
 | **Domain**        | `GVRN`                                 | The Subject.      |
 | **Status**        | `[CANONIZED]`                          | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`        | The Network.      |
@@ -124,7 +124,7 @@ Every linked artifact must be mapped to the Five Core Axioms to ensure it is not
 - **[SYNG.PROT.SelfImprovement](../02_Protocols/SYNG.PROT.SelfImprovement.md)**: Recursive learning and lesson
   accumulation.
 - **[ARCH.Blueprint.UnifiedArchitecture](../20_Architecture/ARCH.Blueprint.UnifiedArchitecture.md)**: The supreme
-  blueprint for the Synarchy.
+  blueprint for the Synarche.
 
 ### **C. APOSTLE TIER (Actionable Protocols)**
 
