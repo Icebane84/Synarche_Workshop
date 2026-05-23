@@ -1,4 +1,42 @@
+/**
+ * -----------------------------------------------------------------------------
+ * PHOENIX SYNARCHE PROTOCOL - WORKSPACE CONFIGURATION
+ * -----------------------------------------------------------------------------
+ *
+ * ###### [ARTIFACT START]
+ *
+ * ### Block A: The Identification Lock (UIP-V13)
+ *
+ * Key               | Value                           | Description
+ * :---              | :---                            | :---
+ * Artifact ID       | CFG-WORKSPACE-001               | The Sovereign ID.
+ * Official Name     | Synarche_Workspace.code-workspace| The Filename.
+ * Version           | v13.0 [OMEGA]                   | The Standard.
+ * Domain            | GVRN                            | The Subject.
+ * Celestial Class   | [STAR]                          | The Weight.
+ * Evolution         | Omega Ascension                 | The Maturity.
+ * Status            | [ACTIVE]                        | The Lifecycle.
+ * Relations         | GOVERNED_BY: CORE-CODEX-001     | The Network.
+ *
+ * ---
+ *
+ * ### Block B: The Ethos Field (IDM-001)
+ *
+ * > "The Code is the Law."
+ *
+ * *   **The Mandate**: This configuration governs the VS Code environment for the Phoenix Synarche.
+ *
+ * ---
+ *
+ * ### Block D: Standardized Synergy Block (The Loom Signature)
+ *
+ * Synergistic Artifact ID, Relationship Type, Synergistic Impact
+ * CORE-CODEX-001, GOVERNS, The Codex defines the rules enforced here.
+ *
+ * -----------------------------------------------------------------------------
+ */
 {
+<<<<<<< Updated upstream
   "folders": [
     {
       "name": "🧠 THE MIND",
@@ -128,4 +166,59 @@
       },
     ],
   },
+=======
+	"folders": [
+		{
+			"name": "Synarche_Workspace",
+			"path": "."
+		},
+		{
+			"name": "_Desktop_Vault",
+			"path": "../_Desktop_Vault"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "Synarche_Workspace",
+		"geminicodeassist.project": "resounding-phenomenon-x5tpm",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"prettier.requireConfig": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit",
+			"source.organizeImports": "explicit"
+		},
+		"editor.semanticHighlighting.enabled": true,
+		"errorLens.fontStyleItalic": true,
+		"errorLens.fontWeight": "400",
+		"errorLens.gutterIconsEnabled": true,
+		"errorLens.messageBackgroundMode": "line",
+		"sonarlint.rules": {
+			"javascript:S106": "off"
+		},
+		"cSpell.enabled": true,
+		"cSpell.userWords": [
+			"middleware",
+			"params",
+			"trpc",
+			"zustand"
+		],
+		"[python]": {
+			"editor.defaultFormatter": "charliermarsh.ruff",
+			"editor.codeActionsOnSave": {
+				"source.fixAll": "explicit",
+				"source.organizeImports": "explicit"
+			}
+		},
+		"editor.guides.bracketPairs": true,
+		"editor.renderWhitespace": "selection",
+		"editor.minimap.enabled": false,
+		"editor.fontLigatures": true,
+		"[jsonc]": {
+			"editor.defaultFormatter": "denoland.vscode-deno"
+		}
+	}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 }

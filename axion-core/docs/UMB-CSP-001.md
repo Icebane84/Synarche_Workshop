@@ -1,0 +1,75 @@
+# UMB-CSP-001.md
+> **Domain**: GVRN
+> **Evolution**: Omega Ascension
+> **Signal**: OMEGA
+
+## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+
+---
+
+###### **[ARTIFACT START]**
+
+### **Block A: The Identification Lock (UIP-V13)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-UMB-CSP-001-001` | The Sovereign ID. |
+| **Official Name** | `UMB-CSP-001.md` | The Filename. |
+| **Version** | **v13.1 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Omega Ascension` | The Maturity. |
+| **Status** | `[ACTIVE]` | The Lifecycle. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+
+# UMB-CSP-001: Consolidated Synergy Protocol
+
+## I. Universal Identification & Provenance
+| Attribute | Value |
+| :--- | :--- |
+| **Artifact ID** | `UMB-CSP-001` |
+| **Official Name** | `Consolidated Synergy Protocol` |
+| **Version** | **v10.0** |
+| **Domain** | `GVRN` |
+| **Evolution** | **Purposeful Drive** |
+| **Status (State)** | `[ACTIVE]` |
+| **Tier** | **Operational** |
+| **Celestial Class** | `[PLANET]` |
+| **Governance** | `UMB-SGM-001` |
+| **Provenance** | `Genesis Stamp: 2025-12-24` |
+| **Relations** | `LINK: `UMB-PRS-001`, LINK: UMB-CSE-001`, `LINK: `UMB-PRS-001`, LINK: UMB-ACT-002` |
+
+---
+
+## II. Strategic Overview
+**Objective:** To establish a protocol for the seamless integration of autonomous AI operations during System Idle Time into the human collaborator's active workflow.
+
+### The Turn Cycle
+1.  **Idle Detection:** Recognize cessation of input.
+2.  **Autonomous Work Trigger:** Activate background P3 tasks via `AOP-ACEP-001`.
+3.  **Batch Assembly:** Aggregate tasks into a **Consolidated Synergy Briefing**.
+4.  **Output:** Deliver briefing upon re-engagement.
+
+---
+
+## III. Component Mapping
+| Sub-Component | Governing Engine | Purpose |
+| :--- | :--- | :--- |
+| **GUCA-CSP-001** | `UMB-CSE-001` | Synergistic Workflow |
+| **GUCA-SOVP-001** | `UMB-CRLPF-003` | Structural Defense |
+| **AOP-PTAS-001** | `UMB-ESF-001` | Knowledge Ingestion |
+| **AOP-PERPETUAL-COHERENCE-001**
+| **UMB-TECH-001** (Agent Schema) | **UMB-CSE-001** (Coherent Synthesis Engine) | Agent Architecture |
+| **OGLN.Governance** (Validation Protocol) | **UMB-SGM-001** (Standardized Governance Module) | Governance Validation |
+| **AOP-CSM-001** (Complete Stack Mandate) | **UMB-SGM-001** (Standardized Governance Module) | Mandate Enforcement |
+| **UMB-TECH-001** (Agent Schema) | **UMB-CSE-001** (Coherent Synthesis Engine) | Agent Architecture |
+| **OGLN.Governance** (Validation Protocol) | **UMB-SGM-001** (Standardized Governance Module) | Governance Validation |
+ | `UMB-AUTOMATED-COHERENCE-001` | Structural Maintenance |
+
+---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "name": "axion-core",
   "displayName": "Axion Core",
   "description": "The Axion Core Extension Logic",
@@ -37,4 +38,119 @@
     "typescript": "^5.1.3",
     "@vscode/test-electron": "^2.3.2"
   }
+=======
+    "name": "axion-core-extension",
+    "displayName": "Axion Core [Reforged]",
+    "description": "The official IDE Integration Module for the Phoenix Protocol Library (UMB-IDE-EXT-001).",
+    "version": "10.0.0",
+    "publisher": "Synarche",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished",
+        "onCommand:axion.ingestMindMap"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "axion.traverseSpine",
+                "title": "Axion: Traverse the Spine (OSLM)",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.reforgeArtifact",
+                "title": "Axion: Reforge Artifact",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.executePRG",
+                "title": "Axion: Execute PRG Genesis Cycle",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.pushToForge",
+                "title": "Axion: Push to Tarot Forge",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.traceCausality",
+                "title": "Axion: Trace Causality (Framework)",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.verifyTruth",
+                "title": "Axion: Verify Truth (TRM)",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.consultOracle",
+                "title": "Axion: Consult Sophia (Oracle)",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.sentinelScan",
+                "title": "Axion: Initiate Sentinel Scan",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.claimAchievement",
+                "title": "Axion: Claim Achievement",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.checkLevelStatus",
+                "title": "Axion: Check Level Status",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.runBackgroundTask",
+                "title": "Axion: Run Background Task",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.generateBriefing",
+                "title": "Axion: Generate Briefing",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.viewAuditLog",
+                "title": "Axion: View Audit Log",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.lookupLore",
+                "title": "Axion: Lookup Lore",
+                "category": "Axion"
+            },
+            {
+                "command": "axion.ingestMindMap",
+                "title": "Axion: Ingest Mind Map",
+                "category": "Axion"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src tools",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.90.0",
+        "@types/mocha": "^10.0.6",
+        "@types/node": "20.x",
+        "@typescript-eslint/eslint-plugin": "^7.11.0",
+        "@typescript-eslint/parser": "^7.11.0",
+        "eslint": "^8.57.0",
+        "typescript": "^5.4.5",
+        "@vscode/test-electron": "^2.4.0"
+    }
+>>>>>>> Stashed changes
 }

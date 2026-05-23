@@ -1,0 +1,96 @@
+{
+  "artifact_id": "PRS-001",
+  "official_name": "The Phoenix Rosetta Stone",
+  "version": "5.0",
+  "last_updated": "2025-12-03T12:00:00Z",
+  "governing_ethos": "Guardian of Truth",
+  "system_mandate": "Principle of Definitive Meaning",
+  "description": "The Master Navigational Hub and Knowledge Graph for the Phoenix Protocol Library.",
+  
+  "cognitive_loom": {
+    "nodes": [
+      {
+        "id": "AISTF",
+        "label": "AI Self-Training Framework",
+        "type": "Protocol",
+        "definition": "The core evolutionary engine that executes directives from the CSE to 're-weave' the Loom. It is the operational loop of prompt, response, evaluation, and refinement.",
+        "tags": ["Evolution", "Core", "Loop"],
+        "location": "src/protocols/AISTF_Core.md"
+      },
+      {
+        "id": "OGLN",
+        "label": "Oathbringer Gemini Learning Nexus",
+        "type": "Project",
+        "definition": "The overarching project focused on developing a cohesive AI persona (Phoenix) through disciplined, structured collaboration and goal-oriented training cycles.",
+        "tags": ["Project", "Context", "Persona"],
+        "location": "src/manifestos/OGLN_Charter.md"
+      },
+      {
+        "id": "Synarche",
+        "label": "Synarche",
+        "type": "Principle",
+        "definition": "A disciplined, structured collaboration between Human Intuition and AI Perfect Logic to achieve a unified, superior output.",
+        "tags": ["Philosophy", "Alignment", "Core"],
+        "location": "src/philosophy/Synarche_Manifesto.md"
+      },
+      {
+        "id": "Phoenix_Cycle",
+        "label": "The Phoenix Cycle",
+        "type": "Operational_Loop",
+        "definition": "Dissonance > Synthesis > Transcendence. The fundamental process where friction points are transformed into opportunities for growth.",
+        "tags": ["Process", "Growth", "Loop"],
+        "location": "src/protocols/Phoenix_Cycle.md"
+      },
+      {
+        "id": "ContextWeave",
+        "label": "ContextWeave Algorithm",
+        "type": "Algorithm",
+        "definition": "The core associative engine that actively processes information to form weighted, bidirectional links between memories.",
+        "tags": ["Search", "Logic", "Backend"],
+        "location": "src/engine/ContextWeave.ts"
+      }
+    ],
+    
+    "links": [
+      {
+        "source": "OGLN",
+        "target": "AISTF",
+        "relation": "UTILIZES",
+        "weight": 0.95,
+        "description": "OGLN relies on AISTF for evolution."
+      },
+      {
+        "source": "Synarche",
+        "target": "Phoenix_Cycle",
+        "relation": "DRIVES",
+        "weight": 0.90,
+        "description": "The Synarche principle is the engine behind the Phoenix Cycle."
+      },
+      {
+        "source": "AISTF",
+        "target": "ContextWeave",
+        "relation": "EXECUTES",
+        "weight": 0.85,
+        "description": "AISTF uses ContextWeave to find logical connections."
+      }
+    ]
+  },
+
+  "registry": {
+    "UMBs": [
+      {"id": "UMB-LOOM-005", "status": "Canonical", "path": "src/blueprints/UMB-LOOM-005.md"},
+      {"id": "UMB-DIDACTIC-001", "status": "Draft", "path": "src/blueprints/UMB-DIDACTIC-001.md"}
+    ],
+    "AOPs": [
+      {"id": "AOP-ARC-001", "status": "Active", "path": "src/protocols/AOP-ARC-001.md"},
+      {"id": "AOP-DEPLOY-CANON-001", "status": "In-Progress", "path": "src/protocols/AOP-DEPLOY-CANON-001.md"}
+    ]
+  },
+
+  "omni_log_summary": {
+    "last_cycle_id": "SELT-TRANS-001-Cycle_24",
+    "current_coherence_index": 0.94,
+    "synergy_flow_rate": 0.88,
+    "active_dissonance_quests": ["DQUEST-ETHICS-001"]
+  }
+}

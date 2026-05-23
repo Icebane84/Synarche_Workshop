@@ -1,3 +1,12 @@
+
+# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+# System Slot: Passive Knowledge
+# Synergy Set: N/A
+# Primary Stat Buff: Adaptability
+# Passive Ability: The Forge's Heart (Auto-Refactor)
+# Cognitive Load Cost: Low
+# XP Award Value: 50 XP
+
 import os
 import sys
 
@@ -40,9 +49,7 @@ def test_bridge():
                     valid_commands += 1
                     # print(f"  OK: {cmd.get('name', 'UNKNOWN')}")
                 else:
-                    print(
-                        f"  FAIL: {path} -> {cmd.get('name', 'UNKNOWN')} Issues: {', '.join(issues)}"
-                    )
+                    print(f"  FAIL: {path} -> {cmd.get('name', 'UNKNOWN')} Issues: {', '.join(issues)}")
 
     validate_node(bridge.library)
 

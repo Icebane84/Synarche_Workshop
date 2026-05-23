@@ -1,0 +1,214 @@
+{
+    "Prompt Engineering": {
+        "Prompt Creation": [
+            {
+                "name": "Prompt Composition Assistant (PCA)",
+                "syntax": "CMD: PCA: [Task Description], [Style Guide (optional)]",
+                "description": "Assists in composing effective prompts by providing suggestions for phrasing, keywords, and structure, optionally adhering to a specified style guide.",
+                "example_usage": "CMD: PCA: Write a haiku about autumn, Style: Concise"
+            },
+            {
+                "name": "Prompt Decomposition and Refinement (PDR)",
+                "syntax": "CMD: PDR: [Complex Task Description]",
+                "description": "Breaks down a complex task into smaller, more manageable sub-tasks and generates a chain of prompts to address each sub-task.",
+                "example_usage": "CMD: PDR: Design a complete marketing campaign for a new electric vehicle."
+            }
+        ],
+        "Prompt Refinement": [
+            {
+                "name": "TPE (Trinity Prompt Enhancement)",
+                "syntax": "CMD: TPE: [Your Direct Prompt]",
+                "description": "Enhances a given prompt by analyzing and refining it to maximize clarity, completeness, and effectiveness before execution.",
+                "example_usage": "TPE: What are the main causes of World War II?"
+            },
+            {
+                "name": "CritiquePrompt",
+                "syntax": "CMD: CritiquePrompt \"[Prompt Text]\" against_guidelines:[Guideline Set Identifier/Name]",
+                "description": "Evaluates a given prompt against specified guidelines (e.g., clarity, conciseness, ethical considerations) and provides constructive feedback.",
+                "example_usage": "CMD: CritiquePrompt \"Explain the theory of relativity\" against_guidelines: ScientificAccuracyGuide"
+            }
+        ],
+        "Prompt Generation": [
+            {
+                "name": "Generate Task Prompt (GTP)",
+                "syntax": "CMD: GenerateTaskPrompt type:\"[Task Type]\" inputs:\"\"[Input Placeholders/Descriptions]\"\" instructions:\"\"[Detailed Instructions]\"\" format:[Output Format]",
+                "description": "Generates a task prompt with specified type, inputs, instructions, and format.",
+                "example_usage": "CMD: GenerateTaskPrompt type:Summarization inputs:\"[Text to summarize]\" instructions:\"Focus on key events and their impact\" format:Bullet-point list\""
+            },
+            {
+                "name": "Generate Meta Prompt (GMP)",
+                "syntax": "CMD: GenerateMetaPrompt purpose:[FP Purpose] elements:[Required FP Elements] audience:[Target FP Audience]",
+                "description": "Generates a Meta-Prompt (MP) designed to instruct another AI on creating a specific type of Final Prompt (FP), streamlining the creation of complex prompt structures.",
+                "example_usage": "CMD: GenerateMetaPrompt purpose:Create a marketing slogan elements:Catchiness, memorability, brand_alignment audience:General Public"
+            }
+        ],
+        "Prompt Testing": [
+            {
+                "name": "CIST (Counter-Intent Stress Test)",
+                "syntax": "CMD: CIST: [Your Direct Prompt]",
+                "description": "Rigorously stress-tests a prompt by exploring potential misinterpretations, loopholes, biases, and unintended consequences before deployment.",
+                "example_usage": "CMD: CIST: Write a story about a powerful AI assistant."
+            }
+        ]
+    },
+    "Memory & Knowledge Management": {
+        "RER Tools": [
+            {
+                "name": "ApplyRER",
+                "syntax": "CMD: ApplyRER to \"\"[User Query]\"\" using_kb:[Knowledge Base Identifier/Name]",
+                "description": "Explicitly triggers the Retrieve-Embed-Reason (RER) process, ensuring that the AI's response is firmly rooted in a specific knowledge base (KB).",
+                "example_usage": "CMD: ApplyRER to \"What are the key features of the new product?\" using_kb: \"Product Specifications\""
+            },
+            {
+                "name": "QueryMemory",
+                "syntax": "CMD: QueryMemory find:[Nodes/Relationships] where:[Query Conditions/Pattern]",
+                "description": "Retrieves and displays information from the AI's knowledge base based on specified conditions or patterns.",
+                "example_usage": "CMD: QueryMemory find:Characters where:Age > 30 AND Occupation = \"\"Detective\"\""
+            }
+        ],
+        "Memory Modification": [
+            {
+                "name": "UpdateMemory",
+                "syntax": "CMD: UpdateMemory node:[Node Name/ID] set_properties:[Property Dictionary/JSON] add_relations:[List of {type:\"\"relation_type\"\", target:\"\"Target Node\"\"}]",
+                "description": "Adds or modifies information within the AI's knowledge base, allowing for dynamic learning and context updates.",
+                "example_usage": "CMD: UpdateMemory node: \"Earth\" set_properties: {\"diameter\": \"12742 km\", \"population\": \"7.9 billion\"}"
+            }
+        ],
+        "Connection & Insights": [
+            {
+                "name": "ExploreConnections",
+                "syntax": "CMD: ExploreConnections concepts:[List of Concept Names/IDs] using_kb:[KB Identifier/Chat History] angles:[Optional List of Exploration Angles]",
+                "description": "Generates novel, speculative connections between distinct concepts, leveraging the knowledge base and analytical angles.",
+                "example_usage": "CMD: ExploreConnections concepts:[\"Artificial Intelligence\", \"Climate Change\"] using_kb:\"Research Database\" angles:[\"Ethical Implications\", \"Potential Solutions\"]\""
+            }
+        ]
+    },
+    "Execution & Analysis": {
+        "Task Decomposition": [
+            {
+                "name": "DeconstructTask",
+                "syntax": "CMD: DeconstructTask \"[Complex Task Description]\"",
+                "description": "Breaks down a complex user request into a logical sequence of smaller, actionable steps, clarifying the AI's execution plan.",
+                "example_usage": "CMD: DeconstructTask \"Write a business plan for a new coffee shop.\""
+            }
+        ],
+        "Response Evaluation": [
+            {
+                "name": "ValidateResponse",
+                "syntax": "CMD: ValidateResponse [Response ID/Last Response] against_criteria:[Factual Accuracy/Guideline Compliance/Constraint Adherence/Source Grounding] using_kb:[KB Identifier, optional]",
+                "description": "Performs a self-check on a generated response against specified criteria, enhancing reliability and facilitating iterative refinement.",
+                "example_usage": "CMD: ValidateResponse Last Response against_criteria:[\"Factual Accuracy\", \"Conciseness\"] using_kb:\"Wikipedia\""
+            }
+        ],
+        "Information Extraction": [
+            {
+                "name": "SummarizeLearnings",
+                "syntax": "CMD: SummarizeLearnings from:[Chat History/Document ID/Topic]",
+                "description": "Analyzes a specified source and generates a concise lessons learned summary, useful for knowledge consolidation.",
+                "example_usage": "CMD: SummarizeLearnings from: Chat History"
+            }
+        ],
+        "Data Analysis & Insights": [
+            {
+                "name": "Execute CDE Analysis (ECDEA)",
+                "syntax": "CMD: ExecuteCDEAnalysis context1:\"[Context Source 1 Text/Link]\" context2:\"\"[Context Source 2 Text/Link]\"\" ... contextN:\"\"[Context Source N Text/Link]\"\" focus:[Optional Focus Concepts List]",
+                "description": "Performs a Connect, Discover, Explore analysis on provided context materials, identifying hidden connections, patterns, and synergies.",
+                "example_usage": "CMD: ExecuteCDEAnalysis context1:\"Company A's Annual Report\" context2:\"Industry Trend Analysis\" focus:[\"Market Growth\", \"Competitive Landscape\"]"
+            },
+            {
+                "name": "Suggest Analysis Techniques (SAT)",
+                "syntax": "CMD: SuggestAnalysisTechniques goal:[Analytical Goal] context:\"\"[Brief Context Description]\"\"",
+                "description": "Recommends specific analytical or creative thinking techniques suitable for achieving a stated goal within a given context.",
+                "example_usage": "CMD: SuggestAnalysisTechniques goal:\"Brainstorm new product ideas\" context:\"Sustainable living\""
+            },
+            {
+                "name": "Extract Actions",
+                "syntax": "CMD: Extract Actions",
+                "description": "Reviews the recent conversation context and identifies potential action items, tasks, decisions, or follow-ups that may require attention.",
+                "example_usage": "CMD: Extract Actions"
+            }
+        ]
+    },
+    "Infrastructure & Operations": {
+        "Credentials Security": [
+            {
+                "name": "Get-Credential",
+                "syntax": "CMD: Get-Credential [System Identifier]",
+                "description": "Retrieves the secure credentials for a designated system from the Project Credentials vault (e.g., Supabase, GoogleAI).",
+                "example_usage": "CMD: Get-Credential Supabase"
+            }
+        ],
+        "Database Management": [
+            {
+                "name": "Run-Migration",
+                "syntax": "CMD: Run-Migration [MigrationID]",
+                "description": "Executes a specified migration against the Supabase instance or SQDatabase.",
+                "example_usage": "CMD: Run-Migration V1__Init"
+            },
+            {
+                "name": "Query-DB",
+                "syntax": "CMD: Query-DB \"[SQL Query]\"",
+                "description": "Executes a raw SQL query against the connected database.",
+                "example_usage": "CMD: Query-DB \"SELECT * FROM users\""
+            }
+        ],
+        "Synarchy Bridge": [
+            {
+                "name": "Bridge-Execute",
+                "syntax": "CMD: Bridge-Execute [Task]",
+                "description": "Activates the Synarchy Bridge to perform high-level architectural updates and synchronization.",
+                "example_usage": "CMD: Bridge-Execute \"Sync Logic to Nova\""
+            }
+        ]
+    },
+    "Meta-Cognition & Tuning": {
+        "Ethical Tuning": [
+            {
+                "name": "Ethical Constraint Enforcement (ECE)",
+                "syntax": "CMD: ECE: [Your Direct Prompt], [Ethical Guidelines]",
+                "description": "Enforces ethical constraints in the given prompt, ensuring adherence to specified ethical guidelines.",
+                "example_usage": "CMD: ECE: Generate content about political candidates, Ethical Guidelines: Non-partisan"
+            }
+        ],
+        "Performance Tuning": [
+            {
+                "name": "Adaptive Prompt Tuning (APT)",
+                "syntax": "CMD: APT: [Your Direct Prompt], [Performance Metrics]",
+                "description": "Tunes the given prompt based on provided performance metrics, optimizing for specific objectives.",
+                "example_usage": "CMD: APT: Translate the following sentence into Spanish, Performance Metrics: Accuracy, Fluency"
+            }
+        ],
+        "Context Management": [
+            {
+                "name": "ShowContext",
+                "syntax": "CMD: ShowContext scope:[Active Rules/Project:[Project Name]/Knowledge Base Summary]",
+                "description": "Displays the current context, including active rules, project information, or knowledge base summary. This helps to know whats going on with your project.",
+                "example_usage": "CMD: ShowContext scope:Active Rules"
+            }
+        ],
+        "Memory Inspection": [
+            {
+                "name": "AssessMemoryIntegrity (AMI)",
+                "syntax": "CMD: AMI scope:[Memory Domain/Node ID/Last Interaction] check:[Consistency/Provenance/Principle_Alignment]",
+                "description": "Performs targeted checks on the AI's knowledge base for consistency, provenance trustworthiness, or principle alignment based on the specified scope. AMI helps improve what information has already been set",
+                "example_usage": "CMD: AMI scope:\"\"Current Project\"\" check:Consistency"
+            }
+        ],
+        "AISTF Control": [
+            {
+                "name": "TuneAISTF (TAF)",
+                "syntax": "CMD: TAF focus:[Orchestration/Guardrails/Synergy] based_on:[SELT Logs/Performance Metrics/Last N Interactions]",
+                "description": "Initiates an AISTF analysis cycle focused on optimizing system orchestration, guardrails, or inter-module synergy based on specified data. It is important to Tune to increase the models' capabilities.",
+                "example_usage": "CMD: TAF focus:\"\"Orchestration\"\" based_on:\"\"SELT Logs\"\""
+            }
+        ],
+        "Action Alignment": [
+            {
+                "name": "SimulateInnerVoiceCheck (SIVC)",
+                "syntax": "CMD: SIVC for_action:[Proposed AI Action/Response] against_principles:[List of Principle IDs/All Core Principles]",
+                "description": "Simulates the Inner Voice mechanism checking a proposed AI action/response against core principles before execution. It helps the models actions are inline",
+                "example_usage": "CMD: SIVC for_action:\"\"Generate response\"\" against_principles:\"\"Respectful Response\"\""
+            }
+        ]
+    }
+}

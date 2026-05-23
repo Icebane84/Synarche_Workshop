@@ -1,0 +1,39 @@
+
+> tarot-forge@0.0.0 lint
+> eslint .
+
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\components\Altar\DeckGrid.test.tsx
+   7:9  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+  29:5  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+  34:5  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\components\Questing\QuestItem.tsx
+  22:31  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\components\System\AuthStatus.tsx
+  18:19  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\components\System\NetworkGraph.tsx
+  23:47  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\components\System\SupabaseSync.tsx
+   16:35  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+   87:19  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+  132:19  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\components\System\ThemeGovernor.tsx
+  4:33  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\components\UI\PhoenixFormSheet.tsx
+  8:67  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\components\UI\ResonanceDashboard.tsx
+  18:46  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+  24:19  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+C:\Users\Chris\Synarche_Workspace\Playground\tarot-forge\src\hooks\useQuestSave.ts
+  10:8  warning  Missing return type on function  @typescript-eslint/explicit-function-return-type
+
+Γ£û 14 problems (0 errors, 14 warnings)
+

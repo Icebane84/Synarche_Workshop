@@ -1,0 +1,4 @@
+C:\Users\Chris\Synarche_Workspace\nova-forge\docs\_archive\Context_Data_Packet_Nova_Forge_Enhancement.md
+C:\Users\Chris\Synarche_Workspace\nova-forge\docs\CONTEXT-PACKET-001_Transfer.md
+C:\Users\Chris\Synarche_Workspace\nova-forge\docs\CONTEXT-PACKET-002_Supabase.md
+C:\Users\Chris\Synarche_Workspace\nova-forge\docs\CONTEXT-PACKET-003_SelfActualization.md
