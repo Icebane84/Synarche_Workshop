@@ -66,8 +66,8 @@ The Sentinel runs on every commit/save, checking six dimensions of health.
 1. **Trigger**: `git commit` or `CMD: RunSentinel`.
 2. **Execution**: The **Coherent Synthesis Engine** executes the linting suite.
 3. **Result Logic**:
-    - **PASS**: Commit proceeds. `SELT-WEAVE-001` logged.
-    - **FAIL**: Commit rejected. **Dissonance Quest** generated.
+   - **PASS**: Commit proceeds. `SELT-WEAVE-001` logged.
+   - **FAIL**: Commit rejected. **Dissonance Quest** generated.
 
 ## V. Systemic Topology (ASL Protocol)
 

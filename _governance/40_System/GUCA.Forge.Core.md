@@ -154,6 +154,4 @@ When invoked, the command acts as the physical spark:
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

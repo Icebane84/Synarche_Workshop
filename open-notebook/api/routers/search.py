@@ -1,5 +1,5 @@
 import json
-from typing import AsyncGenerator
+from collections.abc import AsyncGenerator
 
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
@@ -18,13 +18,13 @@ router = APIRouter()
 async def search_knowledge_base(search_request: SearchRequest):
     """Search the knowledge base using text or vector search."""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     try:
         if search_request.type == "vector":
@@ -60,11 +60,11 @@ async def search_knowledge_base(search_request: SearchRequest):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except DatabaseOperationError as e:
-        logger.error(f"Database error during search: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
+        logger.error(f"Database error during search: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Search failed: {e!s}")
     except Exception as e:
-        logger.error(f"Unexpected error during search: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
+        logger.error(f"Unexpected error during search: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Search failed: {e!s}")
 
 
 async def stream_ask_response(
@@ -111,7 +111,7 @@ async def stream_ask_response(
         yield f"data: {json.dumps(completion_data)}\n\n"
 
     except Exception as e:
-        logger.error(f"Error in ask streaming: {str(e)}")
+        logger.error(f"Error in ask streaming: {e!s}")
         error_data = {"type": "error", "message": str(e)}
         yield f"data: {json.dumps(error_data)}\n\n"
 
@@ -159,8 +159,8 @@ async def ask_knowledge_base(ask_request: AskRequest):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error in ask endpoint: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Ask operation failed: {str(e)}")
+        logger.error(f"Error in ask endpoint: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Ask operation failed: {e!s}")
 
 
 @router.post("/search/ask/simple", response_model=AskResponse)
@@ -219,5 +219,5 @@ async def ask_knowledge_base_simple(ask_request: AskRequest):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error in ask simple endpoint: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Ask operation failed: {str(e)}")
+        logger.error(f"Error in ask simple endpoint: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Ask operation failed: {e!s}")

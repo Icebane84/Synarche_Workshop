@@ -66,7 +66,9 @@ def test_router():
 
     # --- 4. THE MAGICIAN (Intent) ---
     print("\n🎩 The Magician (Origin)")
-    res = router.route_update("Module", "ACT")  # Correct Enum key (ACT is in Module?) Check ACT-M vs keys
+    res = router.route_update(
+        "Module", "ACT"
+    )  # Correct Enum key (ACT is in Module?) Check ACT-M vs keys
     # Enum definition: ACT = "ACT-M". Keys are ACT.
     assert res["status"] == "VALIDATED"
     print(f"✅ Valid Module: {res['value']}")

@@ -1,5 +1,4 @@
-"""
-# AOP-QUC-ACCESS: The Hephaestus Gate (v15.0 [OMEGA])
+"""# AOP-QUC-ACCESS: The Hephaestus Gate (v15.0 [OMEGA]).
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -38,8 +37,7 @@ MIN_ELEGANCE_SCORE = 8.0
 
 
 class HephaestusGate:
-    """
-    The Guardian of Coherence.
+    """The Guardian of Coherence.
     Executes the 5-Point Audit: Structure, Logic, Truth, Defense, Access.
     """
 
@@ -49,8 +47,7 @@ class HephaestusGate:
         self.crf = CausalLinter()
 
     def execute_gate(self, artifact_path: str, content: str) -> dict:
-        """
-        CMD: EXECUTE_HEPHAESTUS_GATE
+        """CMD: EXECUTE_HEPHAESTUS_GATE
         Runs the full audit suite.
         """
         report = {
@@ -66,10 +63,14 @@ class HephaestusGate:
             report["errors"].append("FAIL: Gate 1 (Structure) - Missing Genesis Header")
 
         # Gate 2: Causal Logic (CRF)
-        logic_scan = self.crf.validate_causality(content)  # Assuming CRF has this method
+        logic_scan = self.crf.validate_causality(
+            content
+        )  # Assuming CRF has this method
         report["scores"]["Logic"] = logic_scan.get("resonance_score", 0.0)
         if not logic_scan.get("is_causal", False):
-            report["errors"].append(f"FAIL: Gate 2 (Logic) - {logic_scan.get('dissonance', 'Unknown Error')}")
+            report["errors"].append(
+                f"FAIL: Gate 2 (Logic) - {logic_scan.get('dissonance', 'Unknown Error')}"
+            )
 
         # Gate 3: Truth Resonance (TRM)
         # Placeholder for Oracle interaction
@@ -80,7 +81,9 @@ class HephaestusGate:
         aes_score = self.soul.calculate_aes(content)
         report["scores"]["AES"] = aes_score
         if aes_score < MIN_ELEGANCE_SCORE:
-            report["errors"].append(f"FAIL: Gate 4 (Elegance) - AES {aes_score} < {MIN_ELEGANCE_SCORE}")
+            report["errors"].append(
+                f"FAIL: Gate 4 (Elegance) - AES {aes_score} < {MIN_ELEGANCE_SCORE}"
+            )
 
         # Gate 5: Access Scope (Loom Integration)
         # Placeholder for ACL validation
@@ -95,7 +98,5 @@ class HephaestusGate:
         return report
 
     def assess_elegance(self, code_snippet: str) -> float:
-        """
-        Direct access to AES calculation.
-        """
+        """Direct access to AES calculation."""
         return self.soul.calculate_aes(code_snippet)

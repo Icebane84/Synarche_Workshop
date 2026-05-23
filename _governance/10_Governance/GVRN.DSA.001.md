@@ -1,4 +1,5 @@
 # AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.DSA.001` | The Sovereign ID. |
-| **Official Name** | `AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                      | Description       |
+| :------------------ | :--------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.DSA.001`                                             | The Sovereign ID. |
+| **Official Name**   | `AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                 | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                          | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                 | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                              | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `GVRN.DSA.001` |
-| **Official Name** | `Documentation Suite Architect Protocol` |
-| **Version** | `v11.1` |
-| **Domain** | `SYNT` |
-| **Evolution** | `Agile Documentation` |
-| **Signal (DSA)** | `SUITE` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Operational` |
-| **Celestial Class** | `MOON` |
-| **Governance** | `UMB-SGM-001` |
-| **Upstream** | `UMB-ESF-001`, `CORE-CODEX-001` |
-| **Downstream** | `UMB-DSA-001`, `GUCA-DSA-001` |
-| **Integrity Hash** | `sha256:888777666555444333222111000abcdef888777666555444333222111000abc` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `IMPLEMENTS: OGLN Agile Format`, `GENERATES: AOP_UMB_GUCA_SETS` |
-| **Tags** | `v11.1, Documentation, Architecture, Automation, Agile` |
+| Attribute           | Value                                                                    |
+| :------------------ | :----------------------------------------------------------------------- |
+| **Artifact ID**     | `GVRN.DSA.001`                                                           |
+| **Official Name**   | `Documentation Suite Architect Protocol`                                 |
+| **Version**         | `v11.1`                                                                  |
+| **Domain**          | `SYNT`                                                                   |
+| **Evolution**       | `Agile Documentation`                                                    |
+| **Signal (DSA)**    | `SUITE`                                                                  |
+| **Status (State)**  | `CANONIZED`                                                              |
+| **Tier**            | `Operational`                                                            |
+| **Celestial Class** | `MOON`                                                                   |
+| **Governance**      | `UMB-SGM-001`                                                            |
+| **Upstream**        | `UMB-ESF-001`, `CORE-CODEX-001`                                          |
+| **Downstream**      | `UMB-DSA-001`, `GUCA-DSA-001`                                            |
+| **Integrity Hash**  | `sha256:888777666555444333222111000abcdef888777666555444333222111000abc` |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                      |
+| **Relations**       | `IMPLEMENTS: OGLN Agile Format`, `GENERATES: AOP_UMB_GUCA_SETS`          |
+| **Tags**            | `v11.1, Documentation, Architecture, Automation, Agile`                  |
 
 ---
 

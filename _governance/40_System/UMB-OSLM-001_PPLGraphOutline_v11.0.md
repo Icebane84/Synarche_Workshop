@@ -1,4 +1,5 @@
 # UMB-OSLM-001_PPLGraphOutline_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,25 +12,28 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-OSLM-001-PPLGRAPHOUTLINE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-OSLM-001_PPLGraphOutline_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                         | Description       |
+| :------------------ | :-------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-OSLM-001-PPLGRAPHOUTLINE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-OSLM-001_PPLGraphOutline_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                             | The Standard.     |
+| **Domain**          | `GVRN`                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                 | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-OSLM-001` |
-| **Version** | `v11.1` |
-| **Status** | `ACTIVE` |
-| **Type** | `Master Matrix` |
+
+| Key           | Value           |
+| :------------ | :-------------- |
+| **Module ID** | `UMB-OSLM-001`  |
+| **Version**   | `v11.1`         |
+| **Status**    | `ACTIVE`        |
+| **Type**      | `Master Matrix` |
+
 ---
 
 # UMB-OSLM-001: Omni-Log Synergistic Links Matrix (Reforged)
@@ -40,8 +44,8 @@
 
 | Source Artifact                       | Relationship      | Target Artifact     | Description                                                                                                |
 | :------------------------------------ | :---------------- | :------------------ | :--------------------------------------------------------------------------------------------------------- |
-| `UMB-CSE-001` | Synergistic Link | `GUCA-CWA-001` | The CSE directly utilizes the Context Weave Command for graph analysis. |
-| `GUCA-CWA-001` | Synergistic Link | `UMB-CSE-001` | The CSE directly utilizes the Context Weave Command for graph analysis. |
+| `UMB-CSE-001`                         | Synergistic Link  | `GUCA-CWA-001`      | The CSE directly utilizes the Context Weave Command for graph analysis.                                    |
+| `GUCA-CWA-001`                        | Synergistic Link  | `UMB-CSE-001`       | The CSE directly utilizes the Context Weave Command for graph analysis.                                    |
 | `UWB-NDR-001`                         | Synergistic Link  | `GUCA-MAP-001`      | Non-destructive refinement workflow utilizes Musashi Audit for structural validation.                      |
 | `GUCA-MAP-001`                        | Synergistic Link  | `UWB-NDR-001`       | Non-destructive refinement workflow utilizes Musashi Audit for structural validation.                      |
 | `UMB-SENTINEL-001`                    | Synergistic Link  | `GVRN-CODEX-001`    | Constitutional enforcement alignment.                                                                      |

@@ -28,7 +28,9 @@ def inspect_db():
     port = "5432"
 
     try:
-        conn = psycopg2.connect(dbname=db_name, user=user, password=password, host=host, port=port)
+        conn = psycopg2.connect(
+            dbname=db_name, user=user, password=password, host=host, port=port
+        )
         print(f"--- CONNECTED TO {db_name} ---")
 
         with conn.cursor(cursor_factory=RealDictCursor) as cur:
@@ -46,15 +48,21 @@ def inspect_db():
 
             # 2. Latest Memories
             print("\n--- LATEST 3 MEMORIES ---")
-            cur.execute("SELECT id, content, tags, last_retrieved FROM memory_entries ORDER BY id DESC LIMIT 3")
+            cur.execute(
+                "SELECT id, content, tags, last_retrieved FROM memory_entries ORDER BY id DESC LIMIT 3"
+            )
             for row in cur.fetchall():
                 print(f"[{row['id']}] {row['content'][:50]}... (Tags: {row['tags']})")
 
             # 3. Latest Experience Logs
             print("\n--- LATEST 3 EXPERIENCE LOGS ---")
-            cur.execute("SELECT id, event_type, module, coherence_impact FROM experience_logs ORDER BY id DESC LIMIT 3")
+            cur.execute(
+                "SELECT id, event_type, module, coherence_impact FROM experience_logs ORDER BY id DESC LIMIT 3"
+            )
             for row in cur.fetchall():
-                print(f"[{row['id']}] {row['event_type']} in {row['module']} (Impact: {row['coherence_impact']})")
+                print(
+                    f"[{row['id']}] {row['event_type']} in {row['module']} (Impact: {row['coherence_impact']})"
+                )
 
         conn.close()
     except Exception as e:

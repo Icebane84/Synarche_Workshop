@@ -9,6 +9,7 @@
 ---
 
 # debugging.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,23 +22,18 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-DEBUGGING-001` | The Sovereign ID. |
-| **Official Name** | `debugging.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-DEBUGGING-001`          | The Sovereign ID. |
+| **Official Name** | `debugging.md`                | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
-*This debugging guide is continuously updated based on real-world troubleshooting experiences. For additional support, join our Discord community or create a GitHub issue with your diagnostic information.*
+_This debugging guide is continuously updated based on real-world troubleshooting experiences. For additional support, join our Discord community or create a GitHub issue with your diagnostic information._
 
 ### V. RPG Framework Integration (BLK-RPG-001)
 

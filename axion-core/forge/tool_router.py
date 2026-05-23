@@ -219,7 +219,10 @@ class ToolRouter:
                     }
 
             elif field in ["Catalyst", "Nova Spark"]:
-                if not isinstance(value, str) or len(value.strip()) <= MIN_LENGTH_GENESIS:
+                if (
+                    not isinstance(value, str)
+                    or len(value.strip()) <= MIN_LENGTH_GENESIS
+                ):
                     return {
                         "status": "ERROR",
                         "governor": "MAGICIAN",
@@ -240,7 +243,10 @@ class ToolRouter:
         """The Knight of Swords: Genesis Seeds & Mutation."""
         try:
             if field == "Genesis Seed":
-                if not isinstance(value, str) or len(value.strip()) <= MIN_LENGTH_GENESIS:
+                if (
+                    not isinstance(value, str)
+                    or len(value.strip()) <= MIN_LENGTH_GENESIS
+                ):
                     return {
                         "status": "ERROR",
                         "governor": "KNIGHT_SWORDS",
@@ -292,7 +298,9 @@ class ToolRouter:
         try:
             if field == "Integrity Hash":
                 # Allow the placeholder OR a real sha256 hex
-                if value != "[AUTO-GEN-SHA256]" and not re.match(r"^sha256:[a-f0-9]{64}$", value):
+                if value != "[AUTO-GEN-SHA256]" and not re.match(
+                    r"^sha256:[a-f0-9]{64}$", value
+                ):
                     return {
                         "status": "ERROR",
                         "governor": "JUDGEMENT",

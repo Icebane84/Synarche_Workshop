@@ -9,6 +9,7 @@
 ---
 
 # GVRN.Triage.Report.001.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GVRN.TRIAGE.REPORT.001-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Triage.Report.001.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                             | Description       |
+| :------------------ | :-------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GVRN.TRIAGE.REPORT.001-001` | The Sovereign ID. |
+| **Official Name**   | `GVRN.Triage.Report.001.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                 | The Standard.     |
+| **Domain**          | `GVRN`                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                        | The Weight.       |
+| **Evolution**       | `Omega Ascension`                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                        | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`     | The Network.      |
 
 # Refactor Ignition: Triage Report (Batch 001)
 
@@ -51,13 +52,13 @@ The scan identified a **Critical Mass of Rind** (Legacy Artifacts) that predates
 
 The following artifacts act as "Keystones" and must be refactored first to prevent dependency breaks during the wider rollout.
 
-| Legacy ID | Proposed RNC ID (v13.0) | Criticality |
-| :--- | :--- | :--- |
-| `UMB-PHOENIX-CORE-002` | **`ARCH.Phoenix.Core`** | **Axiomatic** |
-| `UMB-OSLM-001` | **`GVRN.Registry.Master`** | **Axiomatic** |
-| `UMB-LOOM-001` | **`SYNG.Loom.Master`** | **High** |
-| `UMB-SGM-001` | **`GVRN.Gov.Module`** | **High** |
-| `UMB-ESF-001` | **`COG.Episemantics.Core`** | **High** |
+| Legacy ID              | Proposed RNC ID (v13.0)     | Criticality   |
+| :--------------------- | :-------------------------- | :------------ |
+| `UMB-PHOENIX-CORE-002` | **`ARCH.Phoenix.Core`**     | **Axiomatic** |
+| `UMB-OSLM-001`         | **`GVRN.Registry.Master`**  | **Axiomatic** |
+| `UMB-LOOM-001`         | **`SYNG.Loom.Master`**      | **High**      |
+| `UMB-SGM-001`          | **`GVRN.Gov.Module`**       | **High**      |
+| `UMB-ESF-001`          | **`COG.Episemantics.Core`** | **High**      |
 
 ## III. Operational Queue (The Long Tail)
 

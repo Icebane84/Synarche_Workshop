@@ -1,4 +1,5 @@
 # Google Antigravity.md
+
 > **Domain**: ARCH
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `ARCH-GOOGLE-ANTIGRAVITY-001` | The Sovereign ID. |
-| **Official Name** | `Google Antigravity.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `ARCH` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH-GOOGLE-ANTIGRAVITY-001` | The Sovereign ID. |
+| **Official Name**   | `Google Antigravity.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `ARCH`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Google Antigravity
 
@@ -69,14 +70,14 @@ The most critical settings in Antigravity determine how much autonomy the agents
 **Recommendation:**
 
 1. **Terminal Execution:** Set to **"Auto" (with Allow List)** instead of "Turbo."
-    - _Why:_ "Turbo" executes everything blindly. "Auto" allows safe commands (like ls, git status, npm run build) but
-      pauses to ask you for permission before running potentially destructive commands (like rm, sudo, or external curl
-      requests).
+   - _Why:_ "Turbo" executes everything blindly. "Auto" allows safe commands (like ls, git status, npm run build) but
+     pauses to ask you for permission before running potentially destructive commands (like rm, sudo, or external curl
+     requests).
 2. **Review Policy:** Set to **"Agent Decides"** (Default) $\\rightarrow$ Change to **"Request Review" for Critical
    Files.**
-    - _Action:_ In your .agent/config or workspace settings, enforce a "Review" tag for core configuration files (e.g.,
-      package.json, .env, Dockerfiles). Let the agent auto-edit UI components, but force a pause when it touches
-      infrastructure.
+   - _Action:_ In your .agent/config or workspace settings, enforce a "Review" tag for core configuration files (e.g.,
+     package.json, .env, Dockerfiles). Let the agent auto-edit UI components, but force a pause when it touches
+     infrastructure.
 
 #### **Phase 2: Security Hardening (The "Anti-Hallucination" Layer)**
 
@@ -86,14 +87,14 @@ cloning a malicious repo that contains hidden instructions for the agent).
 **Concrete Steps:**
 
 1. **Browser Allow List:**
-    - **Setting:** Agent Browser \> Allowed Domains
-    - **Action:** Do _not_ leave this open. Restrict the agent's browser access to documentation sites (e.g.,
-      docs.python.org, stackoverflow.com, localhost) and your specific testing URLs.
-    - _Benefit:_ Prevents the agent from accidentally exfiltrating data to unknown servers or downloading malicious code
-      from unverified sources during a "research" task.
+   - **Setting:** Agent Browser \> Allowed Domains
+   - **Action:** Do _not_ leave this open. Restrict the agent's browser access to documentation sites (e.g.,
+     docs.python.org, stackoverflow.com, localhost) and your specific testing URLs.
+   - _Benefit:_ Prevents the agent from accidentally exfiltrating data to unknown servers or downloading malicious code
+     from unverified sources during a "research" task.
 2. **Disable "Auto-Execute" for MCP Tools:**
-    - If you connect external tools (Model Context Protocol), ensure **"Human in the Loop"** is checked. Do not let the
-      agent trigger external API calls (e.g., to Slack or Stripe) without your click-to-confirm.
+   - If you connect external tools (Model Context Protocol), ensure **"Human in the Loop"** is checked. Do not let the
+     agent trigger external API calls (e.g., to Slack or Stripe) without your click-to-confirm.
 
 #### **Phase 3: Workflow Optimization (The ".agent" Directory)**
 
@@ -103,13 +104,13 @@ Procedures" (SOPs) for the AI, ensuring it codes _your_ way.
 **Concrete Steps:**
 
 1. **Create Custom Workflows:**
-    - Navigate to .agent/workflows (or create it).
-    - Create a file named refactor_protocol.md.
-    - **Content:** Write a specific prompt that defines your coding style. "When refactoring, ALWAYS: 1\. Create a
-      backup of the file. 2\. Use TypeScript strict mode. 3\. Add JSDoc comments to new functions. 4\. Run 'npm test'
-      before finishing."
-    - _Benefit:_ Now, when you type "Refactor this" in the chat, the agent follows your strict .md protocol rather than
-      its generic training data.
+   - Navigate to .agent/workflows (or create it).
+   - Create a file named refactor_protocol.md.
+   - **Content:** Write a specific prompt that defines your coding style. "When refactoring, ALWAYS: 1\. Create a
+     backup of the file. 2\. Use TypeScript strict mode. 3\. Add JSDoc comments to new functions. 4\. Run 'npm test'
+     before finishing."
+   - _Benefit:_ Now, when you type "Refactor this" in the chat, the agent follows your strict .md protocol rather than
+     its generic training data.
 
 #### **Phase 4: Model Strategy**
 

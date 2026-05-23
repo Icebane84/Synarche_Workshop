@@ -11,8 +11,7 @@ from typing import Any
 
 @dataclass
 class CatalystBundle:
-    """
-    Data Class representing the 'Weaved Reality'.
+    """Data Class representing the 'Weaved Reality'.
     Acts as the immutable state container for transfer.
     """
 
@@ -26,8 +25,7 @@ class CatalystBundle:
 
 
 class CatalystWeaver:
-    """
-    The Weaver Engine.
+    """The Weaver Engine.
     Aggregates disparate conceptual elements into a single portable artifact.
     """
 
@@ -44,34 +42,26 @@ class CatalystWeaver:
         )
 
     def add_command(self, name: str, logic: str) -> None:
-        """
-        Injects a specific rule or script (The Weft).
-        """
+        """Injects a specific rule or script (The Weft)."""
         # Why: Commands must be named to allow the AI to reference them by handle.
         entry = {"name": name, "logic": logic}
         self.bundle.commands.append(entry)
         # print(f"[WEAVER] Command '{name}' integrated.")
 
     def add_blueprint(self, name: str, schema: dict[str, Any]) -> None:
-        """
-        Injects a structural template (The Warp).
-        """
+        """Injects a structural template (The Warp)."""
         # Why: Blueprints are stored as Dicts to preserve JSON structure.
         entry = {"name": name, "schema": schema}
         self.bundle.blueprints.append(entry)
         # print(f"[WEAVER] Blueprint '{name}' integrated.")
 
     def add_process(self, instruction: str) -> None:
-        """
-        Injects the narrative intent (The Pattern).
-        """
+        """Injects the narrative intent (The Pattern)."""
         self.bundle.processes.append(instruction)
         # print("[WEAVER] Process instruction woven.")
 
     def weave_reality(self) -> str:
-        """
-        Serializes the bundle into a portable Synarche Artifact string.
-        """
+        """Serializes the bundle into a portable Synarche Artifact string."""
         # Why: We use ensure_ascii=False to allow special characters in prompt text.
         raw_json = json.dumps(asdict(self.bundle), indent=4, ensure_ascii=False)
 
@@ -100,9 +90,16 @@ def main():
     parser.add_argument("name", help="Name of the Bundle")
     parser.add_argument("--output", "-o", help="Output file path (default: stdout)")
     parser.add_argument(
-        "--command", "-c", action="append", nargs=2, metavar=("NAME", "LOGIC"), help="Add a Command (Name, Logic)"
+        "--command",
+        "-c",
+        action="append",
+        nargs=2,
+        metavar=("NAME", "LOGIC"),
+        help="Add a Command (Name, Logic)",
     )
-    parser.add_argument("--process", "-p", action="append", help="Add a Process instruction")
+    parser.add_argument(
+        "--process", "-p", action="append", help="Add a Process instruction"
+    )
 
     args = parser.parse_args()
 

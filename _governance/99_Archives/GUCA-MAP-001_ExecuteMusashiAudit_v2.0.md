@@ -9,6 +9,7 @@
 ---
 
 # GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-MAP-001-EXECUTEMUSASHIAUDIT-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                            | Description       |
+| :------------------ | :----------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-MAP-001-EXECUTEMUSASHIAUDIT-V2.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                | The Standard.     |
+| **Domain**          | `GVRN`                                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                       | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 # **GUCA-MAP-001: Execute Musashi Audit (v2.0)**
 
@@ -82,22 +83,22 @@ The command returns a structured JSON object:
 
 ```json
 {
-    "target": "Artifact_ID",
-    "timestamp": "ISO_8601",
-    "map_i_cs_score": "Integer (0-10)",
-    "classification": "Diamond | Obsidian | Slag",
-    "pillars": {
-        "1_intent": "PASS/FAIL",
-        "2_rigor": "PASS/FAIL",
-        "3_gravity": "PASS/FAIL",
-        "4_void_cut": "PASS/FAIL",
-        "5_voice": "PASS/FAIL",
-        "6_fidelity": "PASS/FAIL",
-        "7_utility": "PASS/FAIL",
-        "8_record": "PASS/FAIL",
-        "9_horizon": "PASS/FAIL",
-        "10_recursion": "PASS/FAIL"
-    }
+  "target": "Artifact_ID",
+  "timestamp": "ISO_8601",
+  "map_i_cs_score": "Integer (0-10)",
+  "classification": "Diamond | Obsidian | Slag",
+  "pillars": {
+    "1_intent": "PASS/FAIL",
+    "2_rigor": "PASS/FAIL",
+    "3_gravity": "PASS/FAIL",
+    "4_void_cut": "PASS/FAIL",
+    "5_voice": "PASS/FAIL",
+    "6_fidelity": "PASS/FAIL",
+    "7_utility": "PASS/FAIL",
+    "8_record": "PASS/FAIL",
+    "9_horizon": "PASS/FAIL",
+    "10_recursion": "PASS/FAIL"
+  }
 }
 ```
 

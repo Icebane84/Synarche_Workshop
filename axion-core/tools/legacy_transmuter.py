@@ -1,5 +1,4 @@
-"""
-legacy_transmuter.py
+"""legacy_transmuter.py
 Role: The Alchemist (Renaming Engine)
 Domain: GVRN
 Description: Scans for legacy UMB/AOP artifacts, maps them to Sovereign IDs, renames files, and updates headers.
@@ -43,10 +42,9 @@ MAPPING_TABLE = {
 
 
 def generate_sovereign_id(filename: str) -> str:
-    """
-    Generates a Sovereign ID based on filename heuristics.
+    """Generates a Sovereign ID based on filename heuristics.
     Legacy: UMB-SGM-001_StandardizedGovernanceModule_v11.0.md
-    Target: GVRN.Gov.Module.md (Basename) -> ID: GVRN.Gov.Module
+    Target: GVRN.Gov.Module.md (Basename) -> ID: GVRN.Gov.Module.
     """
     name_part = filename
     if "_" in filename:
@@ -81,7 +79,7 @@ def scan_and_plan(root_dir: str):
     plan = []
     print(f"Scanning {root_dir}...")
 
-    for root, dirs, files in os.walk(root_dir):
+    for root, _dirs, files in os.walk(root_dir):
         # Skip Archive
         if "_archive" in root or "99_Archives" in root or ".git" in root:
             continue
@@ -91,9 +89,15 @@ def scan_and_plan(root_dir: str):
                 continue
 
             # Check for Legacy Prefix
-            if file.startswith("UMB-") or file.startswith("AOP-") or file.startswith("CODEX-"):
+            if (
+                file.startswith("UMB-")
+                or file.startswith("AOP-")
+                or file.startswith("CODEX-")
+            ):
                 full_path = Path(root) / file
-                legacy_id = file.split("_")[0] if "_" in file else file.replace(".md", "")
+                legacy_id = (
+                    file.split("_")[0] if "_" in file else file.replace(".md", "")
+                )
 
                 new_id = generate_sovereign_id(file)
                 new_filename = f"{new_id}.md"
@@ -141,7 +145,9 @@ def execute_transmutation(plan):
             # We will do a generic replace of the Artifact ID if found.
 
             new_content = re.sub(
-                r"\|\s*\*\*Artifact ID\*\*\s*\|\s*`.*?`", f"| **Artifact ID** | `{item['New ID']}`", content
+                r"\|\s*\*\*Artifact ID\*\*\s*\|\s*`.*?`",
+                f"| **Artifact ID** | `{item['New ID']}`",
+                content,
             )
 
             # Update Version to v13.0 [ASCENDED] if not present? Maybe too aggressive.
@@ -168,7 +174,9 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--execute", action="store_true", help="Execute the transmutation")
+    parser.add_argument(
+        "--execute", action="store_true", help="Execute the transmutation"
+    )
     args = parser.parse_args()
 
     plan_data = scan_and_plan(ROOT_DIR)

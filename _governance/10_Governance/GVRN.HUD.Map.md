@@ -12,6 +12,8 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
+---
+
 | Key               | Value                           | Description       |
 | :---------------- | :------------------------------ | :---------------- |
 | **Artifact ID**   | `GVRN.HUD.Map`                  | The Sovereign ID. |
@@ -25,6 +27,8 @@
 
 ## **Block B: State Vector (AGP-001)**
 
+---
+
 | State Field   | Value    |
 | :------------ | :------- |
 | **Coherence** | `1.0`    |
@@ -35,6 +39,8 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
+---
+
 | Risk                 | Mitigation                |
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
@@ -43,6 +49,8 @@
 ---
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
+
+---
 
 | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
 | :---------------------- | :---------------- | :---------------------------------------------- |
@@ -53,11 +61,15 @@
 
 ## **Block E: Ethos (The Why)**
 
+---
+
 > **"To contribute to the systemic coherence and functional excellence of the Synarche workspace."**
 
 ---
 
 ## **Block F: The Integrity Gate (CIV-GATE)**
+
+---
 
 | Status                | Verdict | Drift Threshold | Authority  |
 | :-------------------- | :------ | :-------------- | :--------- |
@@ -67,14 +79,19 @@
 
 ## **[ARTIFACT START]**
 
+---
+
 This artifact provides the cartographic overview of the Synarche Monorepo.
 
 ## **I. The Sovereign Root (The Anchor)**
 
-The root `Synarche_Workspace/` is the **Governance Domain**. It houses the laws, the enforcers, and the configuration anchors for the entire Monorepo.
+---
+
+The root `Synarche_Workspace/` is the **Governance Domain**. It houses the laws, the enforcers, and the configuration
+anchors for the entire Monorepo.
 
 - 🏠 **[Synarche_Workspace](../../)**: The Root Directory.
-- 📄 **[.code-workspace](../../Synarche_Workspace.code-workspace)**: The Sovereign Anchor.
+- 📄 **[.CODE-workspace](../../Synarche_Workspace.code-workspace)**: The Sovereign Anchor.
 - 🛡️ **[GEMINI.md](../../GEMINI.md)**: The High Gate (Gateway Protocol).
 - ⚙️ **[README.md](../../README.md)**: The Root Index.
 
@@ -82,19 +99,28 @@ The root `Synarche_Workspace/` is the **Governance Domain**. It houses the laws,
 
 ## **II. The Domain Layer**
 
+---
+
 ### 🧠 **THE MIND ([.agent/](../../.agent))**
+
+---
 
 The cognitive architecture containing the brains, skills, and workflows of the Synarche agents.
 
-- ⚒️ **[substrate/](../../.agent/substrate/README.md)**: Core configuration and rules.
-  - 🛡️ **[rules/GVRN-ABILITY-MAP.md](../../.agent/substrate/rules/GVRN-ABILITY-MAP.md)**: Agentic Ability Map (PF-Rules).
+- ⚒️ **[substrate/](../../.agent/substrate/README.md)**: CORE configuration and rules.
+  - 🛡️ **[rules/GVRN-ABILITY-MAP.md](../../.agent/substrate/rules/GVRN-ABILITY-MAP.md)**: Agentic Ability Map
+    (PF-Rules).
   - 🏺 **[identity/ASCENT-IMPACT.md](../../.agent/substrate/identity/ASCENT-IMPACT.md)**: Systemic Impact Analysis.
-  - 🧩 **[identity/SYNTHESIS-INSIGHTS.md](../../.agent/substrate/identity/SYNTHESIS-INSIGHTS.md)**: Coherent Synthesis Engine.
+  - 🧩 **[identity/SYNTHESIS-INSIGHTS.md](../../.agent/substrate/identity/SYNTHESIS-INSIGHTS.md)**: Coherent Synthesis
+    Engine.
   - 🧘 **[rules/SELF-IMPROVEMENT.md](../../.agent/substrate/rules/SELF-IMPROVEMENT.md)**: Mastery Protocols.
-- 🧬 **[skills/](../../.agent/skills)**: Specialized agent capabilities.
-- 🔄 **[workflows/](../../.agent/workflows)**: Standard Operating Procedures (SOPs).
+
+* 🧬 **[skills/](../../.agent/skills)**: Specialized agent capabilities.
+* 🔄 **[workflows/](../../.agent/workflows)**: Standard Operating Procedures (SOPs).
 
 ### ⚖️ **THE LAW ([\_governance/](../../_governance))**
+
+---
 
 The heart of the OMEGA standard, housing the Phoenix Codex and global registries.
 
@@ -112,15 +138,21 @@ The heart of the OMEGA standard, housing the Phoenix Codex and global registries
 - 📝 **[50_Logs/](../50_Logs)**: Cumulative Synthesis Logs (CSL).
 - 📔 **[archive/CREATION_JOURNAL_V15.md](../archive/CREATION_JOURNAL_V15.md)**: Obsidian Bridge Log.
 
-### ⚙️ **THE ENGINE ([axion-core/](../../axion-core))**
+### ⚙️ **THE ENGINE ([axion-CORE/](../../axion-core))**
+
+---
 
 The kinetic substrate for the Synarche's logic and data operations.
 
 ### 🧪 **THE LAB ([nova_forge/](../../nova_forge))**
 
+---
+
 The experimental space for creative forging and artifact generation.
 
 ### 🧠 **THE LEARNING SUBSYSTEM ([\_governance/06_Learning/](../06_Learning))**
+
+---
 
 The persistence layer for self-reflection, evolutionary logs, and gemstone insights.
 
@@ -131,11 +163,15 @@ The persistence layer for self-reflection, evolutionary logs, and gemstone insig
 
 ### 📖 **THE NARRATIVE ([where_light_fades/](../../where_light_fades))**
 
+---
+
 The strategic narrative and creative development layer.
 
 ---
 
 ## **III. Topology Visual**
+
+---
 
 ```mermaid
 graph TD
@@ -167,9 +203,11 @@ graph TD
 
 ## **IV. Actionable Prompt Packet (APP)**
 
+---
+
 | Command ID         | Action                            | Impact             |
 | :----------------- | :-------------------------------- | :----------------- |
-| `CMD: HUD_GOTO`    | Quick-jump to specific core node. | Cognitive Velocity |
+| `CMD: HUD_GOTO`    | Quick-jump to specific CORE node. | Cognitive Velocity |
 | `CMD: AUDIT_LINKS` | Verify Link Integrity             | Zero Entropy       |
 | `CMD: REFORGE`     | Execute Structural Transmutation  | Canonization       |
 
@@ -183,6 +221,4 @@ graph TD
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

@@ -9,6 +9,7 @@
 ---
 
 # UMB-LOOM-005_PhoenixGeode_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-LOOM-005-PHOENIXGEODE-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-LOOM-005_PhoenixGeode_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                     | Description       |
+| :------------------ | :---------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-LOOM-005-PHOENIXGEODE-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-LOOM-005_PhoenixGeode_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                         | The Standard.     |
+| **Domain**          | `GVRN`                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
 
 # **UMB-LOOM-005: The Phoenix Geode (v1.0)**
 

@@ -29,14 +29,16 @@ T = TypeVar("T", bound="ObjectModel")
 
 
 class ObjectModel(BaseModel):
-    id: Optional[str] = None
+    id: str | None = None
     table_name: ClassVar[str] = ""
     nullable_fields: ClassVar[set[str]] = set()  # Fields that can be saved as None
-    created: Optional[datetime] = None
-    updated: Optional[datetime] = None
+    created: datetime | None = None
+    updated: datetime | None = None
 
     @classmethod
-    async def get_all(cls: Type[T], order_by=None, filters: Dict[str, Any] = None) -> List[T]:
+    async def get_all(
+        cls: type[T], order_by=None, filters: dict[str, Any] | None = None
+    ) -> list[T]:
         try:
             # If called from a specific subclass, use its table_name
             if cls.table_name:
@@ -59,7 +61,7 @@ class ObjectModel(BaseModel):
                         continue
                     conditions.append(f"{key}=${key}")
                     _vars[key] = value
-                
+
                 if conditions:
                     query += " WHERE " + " AND ".join(conditions)
 
@@ -72,31 +74,31 @@ class ObjectModel(BaseModel):
                 try:
                     objects.append(target_class(**obj))
                 except Exception as e:
-                    logger.critical(f"Error creating object: {str(e)}")
+                    logger.critical(f"Error creating object: {e!s}")
 
             return objects
         except Exception as e:
-            logger.error(f"Error fetching all {cls.table_name}: {str(e)}")
+            logger.error(f"Error fetching all {cls.table_name}: {e!s}")
             logger.exception(e)
             raise DatabaseOperationError(e)
 
     @classmethod
-    async def get(cls: Type[T], id: str) -> T:
+    async def get(cls: type[T], id: str) -> T:
         if not id:
             raise InvalidInputError("ID cannot be empty")
         try:
             # Get the table name from the ID (everything before the first colon)
-            table_name = id.split(":")[0] if ":" in id else id
+            table_name = id.split(":", maxsplit=1)[0] if ":" in id else id
 
             # If we're calling from a specific subclass and IDs match, use that class
             if cls.table_name and cls.table_name == table_name:
-                target_class: Type[T] = cls
+                target_class: type[T] = cls
             else:
                 # Otherwise, find the appropriate subclass based on table_name
                 found_class = cls._get_class_by_table_name(table_name)
                 if not found_class:
                     raise InvalidInputError(f"No class found for table {table_name}")
-                target_class = cast(Type[T], found_class)
+                target_class = cast(type[T], found_class)
 
             result = await repo_query("SELECT * FROM $id", {"id": ensure_record_id(id)})
             if result:
@@ -104,25 +106,24 @@ class ObjectModel(BaseModel):
             else:
                 raise NotFoundError(f"{table_name} with id {id} not found")
         except Exception as e:
-            logger.error(f"Error fetching object with id {id}: {str(e)}")
+            logger.error(f"Error fetching object with id {id}: {e!s}")
             logger.exception(e)
-            raise NotFoundError(f"Object with id {id} not found - {str(e)}")
+            raise NotFoundError(f"Object with id {id} not found - {e!s}")
 
     @classmethod
-    def _get_class_by_table_name(cls, table_name: str) -> Optional[Type["ObjectModel"]]:
+    def _get_class_by_table_name(cls, table_name: str) -> type["ObjectModel"] | None:
         """Find the appropriate subclass based on table_name."""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+        # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+        # System Slot: Passive Knowledge
+        # Synergy Set: N/A
+        # Primary Stat Buff: Adaptability
+        # Passive Ability: The Forge's Heart (Auto-Refactor)
+        # Cognitive Load Cost: Low
+        # XP Award Value: 50 XP
 
-
-        def get_all_subclasses(c: Type["ObjectModel"]) -> List[Type["ObjectModel"]]:
-            all_subclasses: List[Type["ObjectModel"]] = []
+        def get_all_subclasses(c: type["ObjectModel"]) -> list[type["ObjectModel"]]:
+            all_subclasses: list[type[ObjectModel]] = []
             for subclass in c.__subclasses__():
                 all_subclasses.append(subclass)
                 all_subclasses.extend(get_all_subclasses(subclass))
@@ -146,7 +147,7 @@ class ObjectModel(BaseModel):
             data = self._prepare_save_data()
             data["updated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            repo_result: Union[List[Dict[str, Any]], Dict[str, Any]]
+            repo_result: list[dict[str, Any]] | dict[str, Any]
             if self.id is None:
                 data["created"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 repo_result = await repo_create(self.__class__.table_name, data)
@@ -162,7 +163,7 @@ class ObjectModel(BaseModel):
                 )
             # Update the current instance with the result
             # repo_result is a list of dictionaries
-            result_list: List[Dict[str, Any]] = (
+            result_list: list[dict[str, Any]] = (
                 repo_result if isinstance(repo_result, list) else [repo_result]
             )
             for key, value in result_list[0].items():
@@ -182,7 +183,7 @@ class ObjectModel(BaseModel):
             logger.error(f"Error saving record: {e}")
             raise DatabaseOperationError(e)
 
-    def _prepare_save_data(self) -> Dict[str, Any]:
+    def _prepare_save_data(self) -> dict[str, Any]:
         data = self.model_dump()
         return {
             key: value
@@ -198,14 +199,14 @@ class ObjectModel(BaseModel):
             return await repo_delete(self.id)
         except Exception as e:
             logger.error(
-                f"Error deleting {self.__class__.table_name} with id {self.id}: {str(e)}"
+                f"Error deleting {self.__class__.table_name} with id {self.id}: {e!s}"
             )
             raise DatabaseOperationError(
                 f"Failed to delete {self.__class__.table_name}"
             )
 
     async def relate(
-        self, relationship: str, target_id: str, data: Optional[Dict] = {}
+        self, relationship: str, target_id: str, data: dict | None = {}
     ) -> Any:
         if not relationship or not target_id or not self.id:
             raise InvalidInputError("Relationship and target ID must be provided")
@@ -214,7 +215,7 @@ class ObjectModel(BaseModel):
                 source=self.id, relationship=relationship, target=target_id, data=data
             )
         except Exception as e:
-            logger.error(f"Error creating relationship: {str(e)}")
+            logger.error(f"Error creating relationship: {e!s}")
             logger.exception(e)
             raise DatabaseOperationError(e)
 
@@ -239,7 +240,7 @@ class RecordModel(BaseModel):
     auto_save: ClassVar[bool] = (
         False  # Default to False, can be overridden in subclasses
     )
-    _instances: ClassVar[Dict[str, "RecordModel"]] = {}  # Store instances by record_id
+    _instances: ClassVar[dict[str, "RecordModel"]] = {}  # Store instances by record_id
 
     def __new__(cls, **kwargs):
         # If an instance already exists for this record_id, return it
@@ -256,7 +257,7 @@ class RecordModel(BaseModel):
         cls._instances[cls.record_id] = instance
         return instance
 
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs) -> None:
         # Only initialize if this is a new instance
         if not hasattr(self, "_initialized"):
             object.__setattr__(self, "__dict__", {})
@@ -269,7 +270,7 @@ class RecordModel(BaseModel):
             object.__setattr__(self, "_initialized", True)
             object.__setattr__(self, "_db_loaded", False)
 
-    async def _load_from_db(self):
+    async def _load_from_db(self) -> None:
         """Load data from database if not already loaded"""
         if not getattr(self, "_db_loaded", False):
             result = await repo_query(
@@ -319,9 +320,11 @@ class RecordModel(BaseModel):
         }
 
         await repo_upsert(
-            self.__class__.table_name
-            if hasattr(self.__class__, "table_name")
-            else "record",
+            (
+                self.__class__.table_name
+                if hasattr(self.__class__, "table_name")
+                else "record"
+            ),
             self.record_id,
             data,
         )
@@ -339,12 +342,12 @@ class RecordModel(BaseModel):
         return self
 
     @classmethod
-    def clear_instance(cls):
+    def clear_instance(cls) -> None:
         """Clear the singleton instance (useful for testing)"""
         if cls.record_id in cls._instances:
             del cls._instances[cls.record_id]
 
-    async def patch(self, model_dict: dict):
+    async def patch(self, model_dict: dict) -> None:
         """Update model attributes from dictionary and save"""
         for key, value in model_dict.items():
             setattr(self, key, value)

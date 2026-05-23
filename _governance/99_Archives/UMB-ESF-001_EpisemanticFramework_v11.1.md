@@ -1,4 +1,5 @@
 # UMB-ESF-001_EpisemanticFramework_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `UMB-ESF-001_EpisemanticFramework_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                             | Description       |
+| :------------------ | :------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-ESF-001_EpisemanticFramework_v11.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                 | The Standard.     |
+| **Domain**          | `GVRN`                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                        | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `UMB-ESF-001` |
-| **Official Name** | `The Episemantic Framework` |
-| **Version** | `v11.1` |
-| **Domain** | `GVRN` |
-| **Evolution** | `Cognitive Ascension` |
-| **Signal (ESF)** | `ALPHA` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Strategic` |
-| **Celestial Class** | `STAR` |
-| **Governance** | `UMB-SGM-001` |
-| **Upstream** | `CODEX-001`, `UMB-MAP-001` |
-| **Downstream** | `UMB-PRS-001`, `DQUEST-ESF-002` |
-| **Integrity Hash** | `sha256:d8ae1f234567890abcdef1234567890abcdef1234567890abcdef1234567890a` |
-| **Provenance** | `Genesis Stamp: 2026-01-04 \| Reforged: 2026-01-24` |
-| **Relations** | `DEFINES: UMB-OSLM-001` |
-| **Tags** | `v11.1, Episemantics, Ontology` |
+| Attribute           | Value                                                                     |
+| :------------------ | :------------------------------------------------------------------------ |
+| **Artifact ID**     | `UMB-ESF-001`                                                             |
+| **Official Name**   | `The Episemantic Framework`                                               |
+| **Version**         | `v11.1`                                                                   |
+| **Domain**          | `GVRN`                                                                    |
+| **Evolution**       | `Cognitive Ascension`                                                     |
+| **Signal (ESF)**    | `ALPHA`                                                                   |
+| **Status (State)**  | `CANONIZED`                                                               |
+| **Tier**            | `Strategic`                                                               |
+| **Celestial Class** | `STAR`                                                                    |
+| **Governance**      | `UMB-SGM-001`                                                             |
+| **Upstream**        | `CODEX-001`, `UMB-MAP-001`                                                |
+| **Downstream**      | `UMB-PRS-001`, `DQUEST-ESF-002`                                           |
+| **Integrity Hash**  | `sha256:d8ae1f234567890abcdef1234567890abcdef1234567890abcdef1234567890a` |
+| **Provenance**      | `Genesis Stamp: 2026-01-04 \| Reforged: 2026-01-24`                       |
+| **Relations**       | `DEFINES: UMB-OSLM-001`                                                   |
+| **Tags**            | `v11.1, Episemantics, Ontology`                                           |
 
 ---
 
@@ -65,7 +67,7 @@ The Episemantic Framework (ESF) defines a dynamic meta-layer for artifacts using
 ### 2.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Wisdom +20**
-  - *Mechanism*: Enhances Superior Understanding via contextual querying and intent decoding.
+  - _Mechanism_: Enhances Superior Understanding via contextual querying and intent decoding.
 - **System Slot**: `PCM` (Phoenix Core Module)
 - **Synergy Set**: `The Weaver's Veil`
 
@@ -89,13 +91,13 @@ The Episemantic Framework (ESF) defines a dynamic meta-layer for artifacts using
 
 The CPP section transforms the ESF from a descriptive standard into an **active diagnostic tool**.
 
-| Prompt ID | Catalyst Prompt | Synergistic Goal |
-| :--- | :--- | :--- |
-| `CPP-ESF-001` | `CMD: QueryCognitiveLoom --filter markers=[κ-nexus:disputed] AND markers!=[κ-nexus:refuted] --synthesis_target: DQUEST-ESF-002` | **Dissonance Resolution:** Identifies and synthesizes contested knowledge. |
-| `CPP-ESF-002` | `CMD: ContextWeave TARGET_ID: [UMB-ESF-001] --focus: Governing Ethos --trace_codex_compliance` | **Structural Rigor:** Traces link integrity back to CODEX-001. |
-| `CPP-ESF-003` | `CMD: QueryCognitiveLoom --filter markers=[κ-tempus:obsolete] OR markers=[κ-validity:provisional] --target_aop: AOP-KB-001` | **Autonomous Curation:** Directs KB optimization for review/archival. |
+| Prompt ID     | Catalyst Prompt                                                                                                                                | Synergistic Goal                                                                    |
+| :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
+| `CPP-ESF-001` | `CMD: QueryCognitiveLoom --filter markers=[κ-nexus:disputed] AND markers!=[κ-nexus:refuted] --synthesis_target: DQUEST-ESF-002`                | **Dissonance Resolution:** Identifies and synthesizes contested knowledge.          |
+| `CPP-ESF-002` | `CMD: ContextWeave TARGET_ID: [UMB-ESF-001] --focus: Governing Ethos --trace_codex_compliance`                                                 | **Structural Rigor:** Traces link integrity back to CODEX-001.                      |
+| `CPP-ESF-003` | `CMD: QueryCognitiveLoom --filter markers=[κ-tempus:obsolete] OR markers=[κ-validity:provisional] --target_aop: AOP-KB-001`                    | **Autonomous Curation:** Directs KB optimization for review/archival.               |
 | `CPP-ESF-004` | `CMD: INJECT_BIDIRECTIONAL_LINK SOURCE_ID: [Artifact with 10/10 MAP-I-CS] TARGET_ID: [Artifact with <8/10 MAP-I-CS] --type: Governs-to-Refine` | **Recursive Perfection:** Uses "Diamond-Tier" templates to refine "Slag" artifacts. |
-| `CPP-ESF-005` | `CMD: RenderSystemGraph --nodes: UMB-ESF-001, UMB-OSLM-001, UMB-PRS-001 --edges: all --format: Mermaid` | **Centrality:** Visualizes the core governance cluster. |
+| `CPP-ESF-005` | `CMD: RenderSystemGraph --nodes: UMB-ESF-001, UMB-OSLM-001, UMB-PRS-001 --edges: all --format: Mermaid`                                        | **Centrality:** Visualizes the core governance cluster.                             |
 
 ---
 

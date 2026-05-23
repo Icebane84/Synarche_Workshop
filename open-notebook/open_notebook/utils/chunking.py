@@ -74,8 +74,8 @@ _EXTENSION_TO_CONTENT_TYPE = {
 
 
 def detect_content_type_from_extension(
-    file_path: Optional[str],
-) -> Optional[ContentType]:
+    file_path: str | None,
+) -> ContentType | None:
     """
     Detect content type from file extension.
 
@@ -95,7 +95,7 @@ def detect_content_type_from_extension(
         return None
 
 
-def detect_content_type_from_heuristics(text: str) -> Tuple[ContentType, float]:
+def detect_content_type_from_heuristics(text: str) -> tuple[ContentType, float]:
     """
     Detect content type using content heuristics.
 
@@ -222,7 +222,7 @@ def _calculate_markdown_score(text: str) -> float:
     return min(score, 1.0)
 
 
-def detect_content_type(text: str, file_path: Optional[str] = None) -> ContentType:
+def detect_content_type(text: str, file_path: str | None = None) -> ContentType:
     """
     Detect content type using file extension (primary) and heuristics (fallback).
 
@@ -298,7 +298,7 @@ def _get_plain_splitter() -> RecursiveCharacterTextSplitter:
     )
 
 
-def _apply_secondary_chunking(chunks: List[str]) -> List[str]:
+def _apply_secondary_chunking(chunks: list[str]) -> list[str]:
     """
     Apply secondary chunking to ensure no chunk exceeds CHUNK_SIZE.
 
@@ -320,9 +320,9 @@ def _apply_secondary_chunking(chunks: List[str]) -> List[str]:
 
 def chunk_text(
     text: str,
-    content_type: Optional[ContentType] = None,
-    file_path: Optional[str] = None,
-) -> List[str]:
+    content_type: ContentType | None = None,
+    file_path: str | None = None,
+) -> list[str]:
     """
     Split text into chunks using appropriate splitter for content type.
 

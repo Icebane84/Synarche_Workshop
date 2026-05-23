@@ -1,6 +1,7 @@
 import asyncio
 import os
 import sys
+
 from loguru import logger
 
 # Add project root to sys.path
@@ -11,26 +12,20 @@ if project_root not in sys.path:
 from open_notebook.database.repository import repo_query
 
 
-async def main():
+async def main() -> None:
     try:
         commands = await repo_query(
             "SELECT id, name, status, error_message, created FROM command ORDER BY created DESC LIMIT 10"
         )
-        print("Latest Commands:")
-        for cmd in commands:
-            print(
-                f"- {cmd['id']}: {cmd['name']} | Status: {cmd['status']} | Error: {cmd.get('error_message')}"
-            )
+        for _cmd in commands:
+            pass
 
         embeddings = await repo_query(
             "SELECT count() as count FROM source_embedding GROUP ALL"
         )
-        print(
-            f"\nTotal Embeddings in DB: {embeddings[0]['count'] if embeddings else 0}"
-        )
 
     except Exception as e:
-        print(f"Failed: {e}")
+        pass
 
 
 if __name__ == "__main__":

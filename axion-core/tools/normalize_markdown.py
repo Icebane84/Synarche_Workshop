@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-MAGI-003`                                |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **Guardian of Form**                           |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `LINK: [UMB-ACT-002]`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 
 ---
 
@@ -49,8 +48,7 @@ logger = logging.getLogger(__name__)
 
 
 def normalize_markdown(file_path: Path) -> bool:
-    """
-    Applies standard transformations to a markdown file:
+    """Applies standard transformations to a markdown file:
     1. Ensures single H1 title.
     2. Fixes list indentation (2 spaces to 4 spaces, or consistent).
     3. Ensures blank lines around headers.

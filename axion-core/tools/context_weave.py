@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-HPRI-002`                                |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **Pattern Recognition**                        |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `LINK: [UMB-LOOM-001]`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 
 ---
 
@@ -47,7 +46,11 @@ from collections import Counter
 from pathlib import Path
 
 # Configure Logging to STDOUT
-logging.basicConfig(level=logging.INFO, format="%(message)s", handlers=[logging.StreamHandler(sys.stdout)])
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)],
+)
 logger = logging.getLogger("ContextWeave")
 
 STOP_WORDS = {
@@ -160,8 +163,7 @@ STOP_WORDS = {
 
 
 def weave_context(file_path: Path) -> None:
-    """
-    Analyzes a text file to extract key themes (frequency analysis).
+    """Analyzes a text file to extract key themes (frequency analysis).
     This acts as a 'Context Loom', spinning raw text into structured keywords.
     """
     if not file_path.exists():
@@ -213,7 +215,10 @@ def weave_context(file_path: Path) -> None:
 
     # 6. Save Report
     workspace_root = file_path
-    while workspace_root.parent != workspace_root and not (workspace_root / "axion-core").exists():
+    while (
+        workspace_root.parent != workspace_root
+        and not (workspace_root / "axion-core").exists()
+    ):
         workspace_root = workspace_root.parent
 
     log_dir = workspace_root / "_logs"

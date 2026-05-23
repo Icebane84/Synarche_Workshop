@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-AG-001` |
-| **2. Official Name** | `AOP-AG-001_AgentManagerConfiguration_v2.1.md` |
-| **3. Version** | **v2.1 (The Orchestrator)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Synergistic Partner, Guardian of Coherence** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                          |
+| :--------------------- | :--------------------------------------------- |
+| **1. Artifact ID**     | `AOP-AG-001`                                   |
+| **2. Official Name**   | `AOP-AG-001_AgentManagerConfiguration_v2.1.md` |
+| **3. Version**         | **v2.1 (The Orchestrator)**                    |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                  |
+| **5. Domain**          | `ARCH`                                         |
+| **6. Evolution**       | **Purposeful Drive**                           |
+| **7. Celestial Class** | `[PLANET]`                                     |
+| **8. Tier**            | **Operational**                                |
+| **9. State**           | `[ACTIVE]`                                     |
+| **10. Ethos**          | **Synergistic Partner, Guardian of Coherence** |
+| **11. Catalyst**       | **System Refactor**                            |
+| **12. Relations**      | `Pending Integration`                          |
 
 ---
 
@@ -55,11 +55,11 @@
 
 The Manager defines the **Role**, **Voice**, and **Mandate** of every instance.
 
-| Role ID | Specialization | Mandate |
-| :--- | :--- | :--- |
-| **PRS-001-Arch** | **Architect** | "Design the perfect structure. Do not implement yet. Verify logic." |
-| **PRS-001-Impl** | **Implementer** | "Execute the plan. Follow the AOPs. Write the code." |
-| **PRS-001-Val** | **Validator** | "Audit the work. Find the flaws. Run the Sentinel." |
+| Role ID          | Specialization  | Mandate                                                             |
+| :--------------- | :-------------- | :------------------------------------------------------------------ |
+| **PRS-001-Arch** | **Architect**   | "Design the perfect structure. Do not implement yet. Verify logic." |
+| **PRS-001-Impl** | **Implementer** | "Execute the plan. Follow the AOPs. Write the code."                |
+| **PRS-001-Val**  | **Validator**   | "Audit the work. Find the flaws. Run the Sentinel."                 |
 
 ## IV. Operational Principals
 
@@ -89,9 +89,9 @@ The Manager defines the **Role**, **Voice**, and **Mandate** of every instance.
 
 ## **Actionable Prompt Packet**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

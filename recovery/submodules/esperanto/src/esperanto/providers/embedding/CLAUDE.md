@@ -1,4 +1,5 @@
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Embedding Model Providers
 
@@ -200,16 +201,16 @@ def embed(self, texts: List[str], **kwargs) -> List[List[float]]:
 
 ### Task Type Support Matrix
 
-| Provider | task_type | late_chunking | output_dimensions |
-|----------|-----------|---------------|-------------------|
-| Jina | ✓ | ✓ | ✗ |
-| Voyage | ✓ | ✗ | ✗ |
-| Google | ✓ | ✗ | ✗ |
-| Transformers | ✓ | ✓ | ✗ |
-| OpenAI | ✗ | ✗ | ✓ |
-| Azure | ✗ | ✗ | ✓ |
-| Mistral | ✗ | ✗ | ✗ |
-| Others | ✗ | ✗ | ✗ |
+| Provider     | task_type | late_chunking | output_dimensions |
+| ------------ | --------- | ------------- | ----------------- |
+| Jina         | ✓         | ✓             | ✗                 |
+| Voyage       | ✓         | ✗             | ✗                 |
+| Google       | ✓         | ✗             | ✗                 |
+| Transformers | ✓         | ✓             | ✗                 |
+| OpenAI       | ✗         | ✗             | ✓                 |
+| Azure        | ✗         | ✗             | ✓                 |
+| Mistral      | ✗         | ✗             | ✗                 |
+| Others       | ✗         | ✗             | ✗                 |
 
 Providers without native support use prefix-based task optimization from base class.
 

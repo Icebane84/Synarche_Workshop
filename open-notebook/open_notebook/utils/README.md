@@ -9,6 +9,7 @@
 ---
 
 # README.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-README-001` | The Sovereign ID. |
-| **Official Name** | `README.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-README-001`             | The Sovereign ID. |
+| **Official Name**   | `README.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # ContextBuilder
 
@@ -101,7 +102,7 @@ from open_notebook.utils.context_builder import ContextConfig
 config = ContextConfig(
     sources={
         "source:doc1": "insights",
-        "source:doc2": "full content", 
+        "source:doc2": "full content",
         "source:doc3": "not in"  # Exclude
     },
     notes={
@@ -112,7 +113,7 @@ config = ContextConfig(
     max_tokens=3000,
     priority_weights={
         "source": 120,  # Higher priority
-        "note": 80,     # Medium priority  
+        "note": 80,     # Medium priority
         "insight": 100  # High priority
     }
 )
@@ -157,7 +158,7 @@ builder = ContextBuilder(
     notebook_id="notebook:123",
     include_insights=True,
     max_tokens=2000,
-    
+
     # Custom parameters for future extensions
     user_id="user:456",
     custom_filter="advanced",
@@ -175,7 +176,7 @@ The ContextBuilder returns a structured response:
 ```python
 {
     "sources": [...],           # List of source contexts
-    "notes": [...],             # List of note contexts  
+    "notes": [...],             # List of note contexts
     "insights": [...],          # List of insight contexts
     "total_tokens": 1234,       # Total token count
     "total_items": 10,          # Total number of items
@@ -220,6 +221,7 @@ The ContextBuilder handles errors gracefully:
 - Database errors are wrapped in `DatabaseOperationError`
 - Invalid parameters raise `InvalidInputError`
 - All errors include detailed context information
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

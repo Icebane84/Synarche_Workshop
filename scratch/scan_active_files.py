@@ -2,16 +2,29 @@ import os
 
 workspace_root = r"C:\Users\Chris\Synarche_Workspace"
 
-print("Scanning for active JS/TS/PY files (excluding node_modules, .venv, _governance)...")
+print(
+    "Scanning for active JS/TS/PY files (excluding node_modules, .venv, _governance)..."
+)
 
-extensions = ['.ts', '.tsx', '.js', '.jsx', '.py']
-ignored_dirs = ['node_modules', '.venv', 'venv', '.git', '_governance', '.archives', '.mypy_cache', '.ruff_cache', '.trunk', 'scratch']
+extensions = [".ts", ".tsx", ".js", ".jsx", ".py"]
+ignored_dirs = [
+    "node_modules",
+    ".venv",
+    "venv",
+    ".git",
+    "_governance",
+    ".archives",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".trunk",
+    "scratch",
+]
 
 counts = {}
 for root, dirs, files in os.walk(workspace_root):
     # Modify dirs in-place to skip scanning ignored directories
     dirs[:] = [d for d in dirs if d not in ignored_dirs]
-    
+
     rel_path = os.path.relpath(root, workspace_root)
     for f in files:
         _, ext = os.path.splitext(f)

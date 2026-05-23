@@ -113,7 +113,11 @@ def analyze_file(filepath: str, cognition: AxionCognition = None) -> dict[str, A
     with open(filepath, encoding="utf-8") as f:
         content = f.read()
 
-    lines = [line for line in content.splitlines() if line.strip() and not line.strip().startswith("#")]
+    lines = [
+        line
+        for line in content.splitlines()
+        if line.strip() and not line.strip().startswith("#")
+    ]
     loc = len(lines)
 
     visitor = MetricsVisitor()
@@ -126,7 +130,9 @@ def analyze_file(filepath: str, cognition: AxionCognition = None) -> dict[str, A
     # Standard AES Metrics
     total_types_needed = visitor.total_args + visitor.total_returns
     total_types_found = visitor.typed_args + visitor.typed_returns
-    type_coverage = total_types_found / total_types_needed if total_types_needed > 0 else 1.0
+    type_coverage = (
+        total_types_found / total_types_needed if total_types_needed > 0 else 1.0
+    )
 
     avg_complexity = visitor.complexity / max(1, visitor.functions)
     loc / max(1, visitor.functions)
@@ -163,7 +169,9 @@ def analyze_file(filepath: str, cognition: AxionCognition = None) -> dict[str, A
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Algorithmic Elegance Score (AES) — v14.0 [OMEGA]")
+    parser = argparse.ArgumentParser(
+        description="Algorithmic Elegance Score (AES) — v14.0 [OMEGA]"
+    )
     parser.add_argument("target", help="File or directory to scan.")
     args = parser.parse_args()
 
@@ -190,7 +198,9 @@ def main() -> None:
     print("\n" + "=" * 100)
     print("  AES OMEGA REPORT (v14.0)".center(100))
     print("=" * 100)
-    print(f"{'FILE':<40} | {'AES':<6} | {'COMPLIANCE':<10} | {'RESONANCE':<9} | {'COMPLEX':<7} | {'TYPE %':<6}")
+    print(
+        f"{'FILE':<40} | {'AES':<6} | {'COMPLIANCE':<10} | {'RESONANCE':<9} | {'COMPLEX':<7} | {'TYPE %':<6}"
+    )
     print("-" * 100)
     for r in results:
         fname = os.path.basename(r["file"])

@@ -20,19 +20,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.NOTEBOOK.TUTORIAL-001` | The Sovereign ID. |
-| **Official Name** | `first-notebook.md` | The Filename.     |
-| **Version**       | **v2.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.NOTEBOOK.TUTORIAL-001`  | The Sovereign ID. |
+| **Official Name** | `first-notebook.md`           | The Filename.     |
+| **Version**       | **v2.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -103,11 +98,11 @@ Law for this artifact. GVRN.NOTEBOOK.Sources, CONNECTS, Detailed source manageme
 > [!TIP] Use these commands to execute workflows.
 
 1. **Create Entity**
-    - `CMD: CREATE_NOTEBOOK`
-    - _Function:_ Initiates notebook creation via UI.
+   - `CMD: CREATE_NOTEBOOK`
+   - _Function:_ Initiates notebook creation via UI.
 
 2. **Ingest Data**
-    - `CMD: ADD_SOURCE`
-    - _Function:_ Uploads or links data to the notebook.
+   - `CMD: ADD_SOURCE`
+   - _Function:_ Uploads or links data to the notebook.
 
 **[ARTIFACT END]**

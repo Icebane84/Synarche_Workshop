@@ -66,7 +66,9 @@ def log_refactor_milestone(
             fh.write("- [ ] **Sentinel Link**: `[PENDING]`\n\n")
             fh.write("## II. Actionable Prompt Packet\n\n")
             fh.write("- **Goal**: Chronicle and canonize all refactoring milestones.\n")
-            fh.write("- **Trigger**: Manual execution of `log_refactor_milestone.py`.\n\n")
+            fh.write(
+                "- **Trigger**: Manual execution of `log_refactor_milestone.py`.\n\n"
+            )
 
     with open(chronicle_path, "a", encoding="utf-8") as fh:
         fh.write(entry)
@@ -78,12 +80,20 @@ def log_refactor_milestone(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Log Refactor Milestone — Chronicle Appender")
+    parser = argparse.ArgumentParser(
+        description="Log Refactor Milestone — Chronicle Appender"
+    )
     parser.add_argument("chronicle", help="Path to the chronicle markdown file.")
     parser.add_argument("title", help="Short title for the milestone.")
-    parser.add_argument("--summary", default="Milestone completed.", help="Milestone summary text.")
-    parser.add_argument("--phase", default="N/A", help="Phase label (e.g., 'Phase 27').")
-    parser.add_argument("--files", default="N/A", help="Comma-separated list of modified files.")
+    parser.add_argument(
+        "--summary", default="Milestone completed.", help="Milestone summary text."
+    )
+    parser.add_argument(
+        "--phase", default="N/A", help="Phase label (e.g., 'Phase 27')."
+    )
+    parser.add_argument(
+        "--files", default="N/A", help="Comma-separated list of modified files."
+    )
     args = parser.parse_args()
 
     log_refactor_milestone(

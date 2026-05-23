@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.ACM.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ACM.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.ACM.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -77,8 +72,8 @@ entire knowledge base for emergent logical or thematic inconsistencies.
 ## III. Finalization & Indexing Protocol
 
 - **Indexing Mandate:**
-    - [ ] Index in Master Artifact Registry
-    - [ ] Cross-reference in The Phoenix Rosetta Stone
+  - [ ] Index in Master Artifact Registry
+  - [ ] Cross-reference in The Phoenix Rosetta Stone
 
 ## IV. Actionable Prompt Packet
 

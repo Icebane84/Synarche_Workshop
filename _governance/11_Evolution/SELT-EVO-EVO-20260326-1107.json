@@ -1,10 +1,10 @@
 {
-    "cycle_id": "EVO-20260326-1107",
-    "timestamp": "2026-03-26 11:07:00",
-    "seeds_detected": 1,
-    "hypotheses_generated": 1,
-    "simulation_result": "SUCCESS",
-    "evolution_trace": [
-        "SIMULATION SUCCESS: Hypothesis [Evolve protocol asso...] passed Musashi stress tests."
-    ]
+  "cycle_id": "EVO-20260326-1107",
+  "timestamp": "2026-03-26 11:07:00",
+  "seeds_detected": 1,
+  "hypotheses_generated": 1,
+  "simulation_result": "SUCCESS",
+  "evolution_trace": [
+    "SIMULATION SUCCESS: Hypothesis [Evolve protocol asso...] passed Musashi stress tests."
+  ]
 }

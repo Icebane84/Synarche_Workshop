@@ -1,4 +1,5 @@
 # GUCA-CWA-001_CmdContextWeave_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,37 +12,40 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-CWA-001-CMDCONTEXTWEAVE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-CWA-001_CmdContextWeave_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                         | Description       |
+| :------------------ | :-------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-CWA-001-CMDCONTEXTWEAVE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-CWA-001_CmdContextWeave_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                             | The Standard.     |
+| **Domain**          | `GVRN`                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                 | The Network.      |
 
 ---
+
 UIP: GUCA-CWA-001
 Title: ContextWeave Command Definition
-Source: 
-  - [ORIGIN_DIAGRAM](c:\Users\Chris\_Desktop_Vault\Phoenix\PHOENIX_UPLOAD_ZONE\ContextWeaveAnalysis_Diagram.png)
-Description: >
+Source:
+
+- [ORIGIN_DIAGRAM](c:\Users\Chris_Desktop_Vault\Phoenix\PHOENIX_UPLOAD_ZONE\ContextWeaveAnalysis_Diagram.png)
+  Description: >
   Defines the logic for establishing "Context Vectors" (Bidirectional Semantic Links) within the Cognitive Loom, enabling high-fidelity automated synthesis.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769339000
-Tags: 
-  - #Command
-  - #CWA
-  - #ContextWeave
-  - #Synergy
-  - #Architecture
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769339000
+  Tags:
+- #Command
+- #CWA
+- #ContextWeave
+- #Synergy
+- #Architecture
+
 ---
 
 > [!IMPORTANT]

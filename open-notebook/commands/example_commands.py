@@ -7,38 +7,37 @@ from pydantic import BaseModel
 from surreal_commands import command
 
 
-
 class TextProcessingInput(BaseModel):
     text: str
     operation: str = "uppercase"  # uppercase, lowercase, word_count, reverse
-    delay_seconds: Optional[int] = None  # For testing async behavior
+    delay_seconds: int | None = None  # For testing async behavior
 
 
 class TextProcessingOutput(BaseModel):
     success: bool
     original_text: str
-    processed_text: Optional[str] = None
-    word_count: Optional[int] = None
+    processed_text: str | None = None
+    word_count: int | None = None
     processing_time: float
-    error_message: Optional[str] = None
+    error_message: str | None = None
 
 
 class DataAnalysisInput(BaseModel):
-    numbers: List[float]
+    numbers: list[float]
     analysis_type: str = "basic"  # basic, detailed
-    delay_seconds: Optional[int] = None
+    delay_seconds: int | None = None
 
 
 class DataAnalysisOutput(BaseModel):
     success: bool
     analysis_type: str
     count: int
-    sum: Optional[float] = None
-    average: Optional[float] = None
-    min_value: Optional[float] = None
-    max_value: Optional[float] = None
+    sum: float | None = None
+    average: float | None = None
+    min_value: float | None = None
+    max_value: float | None = None
     processing_time: float
-    error_message: Optional[str] = None
+    error_message: str | None = None
 
 
 @command("process_text", app="open_notebook")
@@ -48,13 +47,13 @@ async def process_text_command(input_data: TextProcessingInput) -> TextProcessin
     and demonstrates different processing types.
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     start_time = time.time()
 
@@ -150,6 +149,7 @@ async def analyze_data_command(input_data: DataAnalysisInput) -> DataAnalysisOut
             processing_time=processing_time,
             error_message=str(e),
         )
+
 
 # Add debugging to confirm commands are registered
 logger.info("✅ Commands registered: process_text and analyze_data")

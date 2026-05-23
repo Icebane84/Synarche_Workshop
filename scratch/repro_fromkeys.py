@@ -1,5 +1,6 @@
 from collections import OrderedDict
 from typing import TYPE_CHECKING, Any, Iterable, TypeVar, overload
+
 from typing_extensions import Self
 
 _T = TypeVar("_T")
@@ -11,7 +12,9 @@ _VT = TypeVar("_VT")
 class MyDict(dict[_KT, _VT]):
     @classmethod
     @overload
-    def fromkeys(cls, iterable: Iterable[_T], value: None = None) -> "MyDict[_T, Any | None]": ...
+    def fromkeys(
+        cls, iterable: Iterable[_T], value: None = None
+    ) -> "MyDict[_T, Any | None]": ...
     @classmethod
     @overload
     def fromkeys(cls, iterable: Iterable[_T], value: _S) -> "MyDict[_T, _S]": ...
@@ -23,7 +26,9 @@ class MyDict(dict[_KT, _VT]):
 class MyOrderedDict(OrderedDict[_KT, _VT]):
     @classmethod
     @overload
-    def fromkeys(cls, iterable: Iterable[_T], value: None = None) -> "MyOrderedDict[_T, Any | None]": ...
+    def fromkeys(
+        cls, iterable: Iterable[_T], value: None = None
+    ) -> "MyOrderedDict[_T, Any | None]": ...
     @classmethod
     @overload
     def fromkeys(cls, iterable: Iterable[_T], value: _S) -> "MyOrderedDict[_T, _S]": ...

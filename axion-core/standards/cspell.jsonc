@@ -15,16 +15,10 @@
     "version": "0.2",
     "language": "en",
     "caseSensitive": false,
-    "ignorePaths": [
-        "node_modules/",
-        "package.json",
-        "package-lock.json"
-    ],
-    "import": [
-        "./dictionaries/master.jsonc"
-    ],
+    "ignorePaths": ["node_modules/", "package.json", "package-lock.json"],
+    "import": ["./dictionaries/master.jsonc"],
     "words": [
         // Local overrides for this specific project go here.
         // Master vocabulary is now managed in ./dictionaries/master.jsonc
-    ]
+    ],
 }

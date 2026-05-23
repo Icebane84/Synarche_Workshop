@@ -138,6 +138,4 @@ the system's capacity.
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

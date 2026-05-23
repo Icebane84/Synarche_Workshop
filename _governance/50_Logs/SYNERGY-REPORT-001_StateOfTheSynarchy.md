@@ -96,6 +96,4 @@ future intent, ensuring that every shift in the Synarche is documented with math
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

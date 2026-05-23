@@ -16,7 +16,7 @@
 
 ## [Section Number]. Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: [NAME]` | [Actionable description] | [Expected system change] |
+| Command ID           | Action                           | Impact                   |
+| :------------------- | :------------------------------- | :----------------------- |
+| `CMD: [NAME]`        | [Actionable description]         | [Expected system change] |
 | `⚡ EXECUTE: [NAME]` | [High-priority terminal command] | [Permanent state update] |

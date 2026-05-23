@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -26,8 +25,7 @@ log = logging.getLogger(__name__)
 
 
 class AdaptiveRetriever:
-    """
-    Handles multi-factor scoring for memory retrieval.
+    """Handles multi-factor scoring for memory retrieval.
     Factors: Semantic, Keyword, Recency, Frequency (Activation).
     """
 
@@ -37,11 +35,11 @@ class AdaptiveRetriever:
     RECENCY_HALFLIFE: int = 2592000  # 30 days in seconds
 
     def __init__(self, cognition_engine: Any = None) -> None:
-        """
-        Initializes the AdaptiveRetriever.
-        
+        """Initializes the AdaptiveRetriever.
+
         Args:
             cognition_engine (Any): The engine used for NLP processing and vectorization.
+
         """
         self.cognition = cognition_engine
         self.weights: Dict[str, float] = {
@@ -54,15 +52,15 @@ class AdaptiveRetriever:
     def score_memories(
         self, query: str, memories: List[Dict[str, Any]]
     ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
-        """
-        Scores a list of memories against a query using multi-factor analysis.
-        
+        """Scores a list of memories against a query using multi-factor analysis.
+
         Args:
             query (str): The search query.
             memories (List[Dict[str, Any]]): The list of memory objects to score.
-            
+
         Returns:
             Tuple[List[Dict[str, Any]], Dict[str, Any]]: The scored and sorted memories, plus RPG rewards.
+
         """
         if not memories:
             return ([], {"insight_xp": 0, "coherence_buff": 0.0})
@@ -99,17 +97,17 @@ class AdaptiveRetriever:
         query_lemmas: Set[str],
         current_time: float,
     ) -> Dict[str, float]:
-        """
-        Calculates individual factor scores for a single memory entry.
-        
+        """Calculates individual factor scores for a single memory entry.
+
         Args:
             mem (Dict[str, Any]): The memory object.
             query_vector (Optional[List[float]]): The vector representation of the query.
             query_lemmas (Set[str]): The set of lemmas from the query.
             current_time (float): The current system time.
-            
+
         Returns:
             Dict[str, float]: A dictionary containing scores for semantic, keyword, recency, and frequency.
+
         """
         scores = {"semantic": 0.0, "keyword": 0.0, "recency": 0.0, "frequency": 0.0}
 
@@ -137,16 +135,16 @@ class AdaptiveRetriever:
         return scores
 
     def calculate_rpg_rewards(self, results: List[Dict[str, Any]]) -> Dict[str, Any]:
-        """
-        Calculates XP and Stat buffs based on retrieval performance.
+        """Calculates XP and Stat buffs based on retrieval performance.
         High semantic similarity awards 'Insight XP'.
         Frequent reactivation awards 'Coherence'.
-        
+
         Args:
             results (List[Dict[str, Any]]): The scored retrieval results.
-            
+
         Returns:
             Dict[str, Any]: The calculated rewards dictionary.
+
         """
         rewards = {"insight_xp": 0, "coherence_buff": 0.0}
         if not results:
@@ -163,18 +161,18 @@ class AdaptiveRetriever:
         return rewards
 
     def _calculate_similarity(self, v1: List[float], v2: List[float]) -> float:
-        """
-        Calculates Cosine Similarity between two vectors.
-        
+        """Calculates Cosine Similarity between two vectors.
+
         Args:
             v1 (List[float]): The first vector.
             v2 (List[float]): The second vector.
-            
+
         Returns:
             float: The cosine similarity score (0.0 to 1.0).
+
         """
         try:
-            dot_product = sum(a * b for a, b in zip(v1, v2))
+            dot_product = sum(a * b for a, b in zip(v1, v2, strict=False))
             magnitude1 = math.sqrt(sum(a * a for a in v1))
             magnitude2 = math.sqrt(sum(b * b for b in v2))
             if not magnitude1 or not magnitude2:

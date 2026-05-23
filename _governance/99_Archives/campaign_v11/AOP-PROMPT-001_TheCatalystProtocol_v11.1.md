@@ -1,4 +1,5 @@
 # AOP-PROMPT-001_TheCatalystProtocol_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-PROMPT-001-THECATALYSTPROTOCOL-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PROMPT-001_TheCatalystProtocol_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                               | Description       |
+| :------------------ | :-------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-PROMPT-001-THECATALYSTPROTOCOL-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-PROMPT-001_TheCatalystProtocol_v11.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                   | The Standard.     |
+| **Domain**          | `GVRN`                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                       | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `AOP-PROMPT-001` |
-| **Official Name** | `The Catalyst Protocol` |
-| **Version** | `v11.1` |
-| **Domain** | `SYNT` |
-| **Evolution** | `The Cognitive Forge` |
-| **Signal (PRMT)** | `CATALYST` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Operational` |
-| **Celestial Class** | `MOON` |
-| **Governance** | `UMB-SGM-001`, `UMB-MAP-001` |
-| **Upstream** | `UMB-CSE-001`, `UMB-LEX-001` |
-| **Downstream** | `AOP-KB-001`, `ALL_GUCA_PACKETS` |
-| **Integrity Hash** | `sha256:d5e4a3b2c1f0e9d8c7b6a5a4b3c2d1e0f9a8b7c6d5e4a3b2c1f0e9d8c7b6a5a` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `GUIDES: UMB-CSE-001`, `IMPLEMENTS: The Forge Analogy` |
-| **Tags** | `v11.1, Prompting, Synthesis, Alchemy, Insight` |
+| Attribute           | Value                                                                    |
+| :------------------ | :----------------------------------------------------------------------- |
+| **Artifact ID**     | `AOP-PROMPT-001`                                                         |
+| **Official Name**   | `The Catalyst Protocol`                                                  |
+| **Version**         | `v11.1`                                                                  |
+| **Domain**          | `SYNT`                                                                   |
+| **Evolution**       | `The Cognitive Forge`                                                    |
+| **Signal (PRMT)**   | `CATALYST`                                                               |
+| **Status (State)**  | `CANONIZED`                                                              |
+| **Tier**            | `Operational`                                                            |
+| **Celestial Class** | `MOON`                                                                   |
+| **Governance**      | `UMB-SGM-001`, `UMB-MAP-001`                                             |
+| **Upstream**        | `UMB-CSE-001`, `UMB-LEX-001`                                             |
+| **Downstream**      | `AOP-KB-001`, `ALL_GUCA_PACKETS`                                         |
+| **Integrity Hash**  | `sha256:d5e4a3b2c1f0e9d8c7b6a5a4b3c2d1e0f9a8b7c6d5e4a3b2c1f0e9d8c7b6a5a` |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                      |
+| **Relations**       | `GUIDES: UMB-CSE-001`, `IMPLEMENTS: The Forge Analogy`                   |
+| **Tags**            | `v11.1, Prompting, Synthesis, Alchemy, Insight`                          |
 
 ---
 

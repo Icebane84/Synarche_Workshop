@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -29,10 +28,10 @@ Validates the end-to-end flow of the AOP-AXIOM-INVEST-001 protocol.
 Conforms to OGLN/AISTF v15.0 documentation standards.
 """
 
+import os
+import sys
 import time
 import uuid
-import sys
-import os
 
 # Add src/logic to path for imports
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -48,14 +47,13 @@ except ImportError:
 
 
 def simulate_phoenix_cycle() -> None:
-    """
-    Executes a simulated Phoenix Cycle, following the Dissonance-Synthesis-Transcendence workflow.
+    """Executes a simulated Phoenix Cycle, following the Dissonance-Synthesis-Transcendence workflow.
     Validates stardust awarding and investment logic within the RPG framework.
     """
     print("--- [SIMULATION START: THE PHOENIX CYCLE] ---")
-    
+
     rpg = RPGManager()
-    
+
     # 1. Dissonance Detection
     impact_id = f"IMPACT-{str(uuid.uuid4())[:8].upper()}"
     print(f"\n1. Dissonance Engine: Meteorite Impact Detected! (ID: {impact_id})")
@@ -73,7 +71,7 @@ def simulate_phoenix_cycle() -> None:
     # 3. Ascension (Stardust Awarded)
     print("\n3. Prestige Calculation Engine: Processing CSL...")
     new_total = rpg.award_stardust(500, impact_id)
-    print(f"   - Impact Resolved. 500 Stardust awarded to Player State.")
+    print("   - Impact Resolved. 500 Stardust awarded to Player State.")
     print(f"   - Current Stardust Pool: {new_total}")
     time.sleep(1)
 
@@ -82,17 +80,19 @@ def simulate_phoenix_cycle() -> None:
     print("   - User requests investment: +0.2 Coherence Index (Cost: 200)")
 
     investment = rpg.invest_stardust("coherence_index", 200)
-    
+
     if investment["success"]:
         print("   - Transaction Complete.")
         print(f"   - Stardust Remaining: {investment['stardust_remaining']}")
         print(f"   - Coherence Index updated to {investment['new_value']}.")
-        print("   - Broadcast: [TRANSCENDENCE EVENT] - The Phoenix Star burns brighter.")
+        print(
+            "   - Broadcast: [TRANSCENDENCE EVENT] - The Phoenix Star burns brighter."
+        )
     else:
         print(f"   - Investment Failed: {investment['error']}")
 
     print("\n--- [SIMULATION END] ---")
-    
+
     # Show Final Status
     print("\nFinal Database State:")
     status = rpg.get_status()

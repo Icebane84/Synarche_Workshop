@@ -1,2 +1,2 @@
-export * from './BridgeClient';
-export * from './supabaseClient';
+export * from "./BridgeClient";
+export * from "./supabaseClient";

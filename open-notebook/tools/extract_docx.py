@@ -6,13 +6,11 @@ from docx import Document
 
 def extract_docx_to_markdown(docx_path):
     if not os.path.exists(docx_path):
-        print(f"Error: File not found at {docx_path}")
         return
 
     try:
         doc = Document(docx_path)
     except Exception as e:
-        print(f"Error opening DOCX file: {e}")
         return
 
     markdown_content = []
@@ -84,10 +82,9 @@ def extract_docx_to_markdown(docx_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python extract_docx.py <path_to_docx>")
         sys.exit(1)
 
     docx_path = sys.argv[1]
     content = extract_docx_to_markdown(docx_path)
     if content:
-        print(content)
+        pass

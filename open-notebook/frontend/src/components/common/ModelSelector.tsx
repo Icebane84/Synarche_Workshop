@@ -1,19 +1,25 @@
-import { useId } from 'react'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { Label } from '@/components/ui/label'
-import { useModels } from '@/lib/hooks/use-models'
-import { LoadingSpinner } from '@/components/common/LoadingSpinner'
-import { useTranslation } from '@/lib/hooks/use-translation'
+import { useId } from "react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Label } from "@/components/ui/label";
+import { useModels } from "@/lib/hooks/use-models";
+import { LoadingSpinner } from "@/components/common/LoadingSpinner";
+import { useTranslation } from "@/lib/hooks/use-translation";
 
 interface ModelSelectorProps {
-  id?: string
-  name?: string
-  label?: string
-  modelType: 'language' | 'embedding' | 'speech_to_text' | 'text_to_speech'
-  value: string
-  onChange: (value: string) => void
-  placeholder?: string
-  disabled?: boolean
+  id?: string;
+  name?: string;
+  label?: string;
+  modelType: "language" | "embedding" | "speech_to_text" | "text_to_speech";
+  value: string;
+  onChange: (value: string) => void;
+  placeholder?: string;
+  disabled?: boolean;
 }
 
 export function ModelSelector({
@@ -24,21 +30,29 @@ export function ModelSelector({
   value,
   onChange,
   placeholder,
-  disabled = false
+  disabled = false,
 }: ModelSelectorProps) {
-  const { t } = useTranslation()
-  const { data: models, isLoading } = useModels()
-  const derivedId = useId()
-  const selectId = id || derivedId
+  const { t } = useTranslation();
+  const { data: models, isLoading } = useModels();
+  const derivedId = useId();
+  const selectId = id || derivedId;
 
   // Filter models by type
-  const filteredModels = models?.filter(model => model.type === modelType) || []
+  const filteredModels =
+    models?.filter((model) => model.type === modelType) || [];
   return (
     <div className="space-y-2">
       {label && <Label htmlFor={selectId}>{label}</Label>}
-      <Select name={name} value={value} onValueChange={onChange} disabled={disabled || isLoading}>
+      <Select
+        name={name}
+        value={value}
+        onValueChange={onChange}
+        disabled={disabled || isLoading}
+      >
         <SelectTrigger id={selectId}>
-          <SelectValue placeholder={placeholder || t.settings.embeddingOptionPlaceholder} />
+          <SelectValue
+            placeholder={placeholder || t.settings.embeddingOptionPlaceholder}
+          />
         </SelectTrigger>
         <SelectContent>
           {isLoading ? (
@@ -54,7 +68,9 @@ export function ModelSelector({
               <SelectItem key={model.id} value={model.id}>
                 <div className="flex items-center justify-between w-full">
                   <span>{model.name}</span>
-                  <span className="text-xs text-muted-foreground ml-2">{model.provider}</span>
+                  <span className="text-xs text-muted-foreground ml-2">
+                    {model.provider}
+                  </span>
                 </div>
               </SelectItem>
             ))
@@ -62,5 +78,5 @@ export function ModelSelector({
         </SelectContent>
       </Select>
     </div>
-  )
+  );
 }

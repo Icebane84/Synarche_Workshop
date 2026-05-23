@@ -9,6 +9,7 @@
 ---
 
 # CSL-20260131-089_RuthlessConsolidation.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-20260131-089-RUTHLESSCONSOLIDATION-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20260131-089_RuthlessConsolidation.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                             | Description       |
+| :------------------ | :------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-20260131-089-RUTHLESSCONSOLIDATION-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-20260131-089_RuthlessConsolidation.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                 | The Standard.     |
+| **Domain**          | `GVRN`                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                        | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
 
 # CSL-20260131-089: Ruthless Consolidation: The Sovereign Anchor & The Purge
 
@@ -39,6 +40,7 @@
 ### 1. The Observation
 
 The Synarche exhibited severe "Split-Brain" dissonance:
+
 1.  **Duplicate Reality**: A legacy `axion-core-extension` existed in `_Desktop_Vault`, competing with the active one in `Synarche_Workspace`.
 2.  **Configuration Entropy**: Settings were scattered across `settings.fixed.json`, `settings.json`, and project-specific configs, with no single authority.
 3.  **Tool Sprawl**: The `tools/` directory contained over 80 scripts, blending active "Celestial" utilities with "Shadow" one-off diagnostics, creating high cognitive load.
@@ -49,9 +51,9 @@ We executed the **Ruthless Consolidation** strategy, effectively collapsing the 
 
 1.  **Split-Brain Resolution**: The legacy extension was moved to `_Desktop_Vault/_LEGACY_ARCHIVE`, leaving `Synarche_Workspace/axion-core` as the undisputed **Single Source of Truth**.
 2.  **The Sovereign Anchor**: We rejected the "Master File" approach in favor of the **Workspace Anchor**. All definitive settings (Prettier, Ruff, CSpell) were injected directly into `Synarche_Workspace.code-workspace`. This file now governs the reality of the workspace.
-3.  **Tool Triage**: We separated the *Signals* from the *Noise*.
-    *   **Celestial Tools**: Core matrix tools (e.g., `initialize_matrix`, `knight_fixer`) remained active.
-    *   **Shadow Archive**: ~20 unregistered scripts and logs were moved to `tools/_archive`.
+3.  **Tool Triage**: We separated the _Signals_ from the _Noise_.
+    - **Celestial Tools**: Core matrix tools (e.g., `initialize_matrix`, `knight_fixer`) remained active.
+    - **Shadow Archive**: ~20 unregistered scripts and logs were moved to `tools/_archive`.
 4.  **Graph Condensation**: Redundant knowledge graph snapshots were archived, resolving file collisions and leaving only the definitive artifact.
 
 ### 3. Implications & Next Steps

@@ -9,6 +9,7 @@
 ---
 
 # AOP-IDX-001_DualIndexingProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,21 +22,21 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.IDX.001` | The Sovereign ID. |
-| **Official Name** | `AOP-IDX-001_DualIndexingProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                       | Description       |
+| :------------------ | :------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN.IDX.001`                              | The Sovereign ID. |
+| **Official Name**   | `AOP-IDX-001_DualIndexingProtocol_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                           | The Standard.     |
+| **Domain**          | `GVRN`                                      | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                  | The Weight.       |
+| **Evolution**       | `Omega Ascension`                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                  | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`               | The Network.      |
 
 # ###### [AOP-IDX-001: Dual-Indexing Protocol v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-IDX-001_DualIndexingProtocol_v11.0.md)
 
 ###### [AGP-BLOCK-001: Axiomatic Governance Pillar]
->
+
 > **Artifact ID**: AOP-IDX-001
 > **Version**: 11.0
 > **Status**: Sovereign
@@ -66,6 +67,7 @@
 ### What: The Core Concept
 
 The **Dual-Indexing Protocol (IDX)** ensures that no artifact is "lost" in the scale of the library. Every creation requires two distinct "Semantic Shadows":
+
 1. **The Sovereign Record**: The full, detailed artifact.
 2. **The Rosetta Entry**: A concise, metadata-heavy entry in the `UMB-PRS-001` Map.
 
@@ -98,15 +100,15 @@ Analyze the `Synergistic Effects` table. Identify the "Gravity Well" (Parent Art
 
 ## V. Synergistic Effects & Integrations
 
-| Artifact | Relationship | Rationale |
-| :--- | :--- | :--- |
-| [UMB-PRS-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-PRS-001_ThePhoenixRosettaStone_v11.0.md) | **PROVIDES_INPUT_FOR** | IDX is the data-feeder for the Rosetta Stone. |
-| [UMB-OSLM-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-OSLM-001_PPLGraphOutline_v11.0.md) | **SYNCS_WITH** | Ensures relational vectors are consistent across the Knowledge Graph. |
+| Artifact                                                                                                                                 | Relationship           | Rationale                                                             |
+| :--------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :-------------------------------------------------------------------- |
+| [UMB-PRS-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-PRS-001_ThePhoenixRosettaStone_v11.0.md) | **PROVIDES_INPUT_FOR** | IDX is the data-feeder for the Rosetta Stone.                         |
+| [UMB-OSLM-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-OSLM-001_PPLGraphOutline_v11.0.md)      | **SYNCS_WITH**         | Ensures relational vectors are consistent across the Knowledge Graph. |
 
 ---
 
 ###### [AGP-BLOCK-002: Signature & Seal]
->
+
 > **Signed**: The Sentinel
 > **Verified**: v11.0 Sovereign Logic Gate
 > **Synergy Code**: IDX-SYNC-MANIFEST

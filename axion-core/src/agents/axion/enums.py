@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -93,7 +92,9 @@ class Persona(str, Enum):
     # --------------------------------------------------
 
     ## The Intuitive
-    THE_HIGH_PRIESTESS = "II. The High Priestess"  # Subtlety, Dreams, Unconscious, Receptivity
+    THE_HIGH_PRIESTESS = (
+        "II. The High Priestess"  # Subtlety, Dreams, Unconscious, Receptivity
+    )
 
     ## The Guide
     THE_STAR = "XVII. The Star"  # Hope, Healing, Inspiration, Vision

@@ -125,17 +125,21 @@ class CatalystWeaver:
             return
 
         logging.info("Ingesting Module: %s...", path.name)
-        
+
         # --- Handle JSON Modules ---
         if path.suffix == ".json":
             try:
                 data = json.loads(path.read_text(encoding="utf-8"))
                 if "context_commands" in data:
                     for cmd in data["context_commands"]:
-                        self.add_command(cmd.get("handle", "CMD"), cmd.get("instruction", ""))
+                        self.add_command(
+                            cmd.get("handle", "CMD"), cmd.get("instruction", "")
+                        )
                 if "structural_blueprints" in data:
                     for bp in data["structural_blueprints"]:
-                        self.add_blueprint(bp.get("name", "Blueprint"), bp.get("schema", {}))
+                        self.add_blueprint(
+                            bp.get("name", "Blueprint"), bp.get("schema", {})
+                        )
                 if "operational_processes" in data:
                     for proc in data["operational_processes"]:
                         self.add_process(proc)
@@ -156,7 +160,9 @@ class CatalystWeaver:
 
         # 2. Extract Actionable Prompt Packets (APP)
         # Pattern: Look for "Actionable Prompt Packet" header, then capture CMD: lines
-        app_section = re.search(r"### .*Actionable Prompt Packet.*((?:.|\n)*?)(?:###|---)", content)
+        app_section = re.search(
+            r"### .*Actionable Prompt Packet.*((?:.|\n)*?)(?:###|---)", content
+        )
         if app_section:
             app_content = app_section.group(1)
             cmd_matches = re.finditer(r"`CMD:\s*([^`]+)`", app_content)
@@ -175,9 +181,13 @@ class CatalystWeaver:
 
         # 3. Extract Mechanics (Heuristic: Section II, III, IV, V often contains core logic)
         # We look for H2 or H3 headers that aren't boilerplate
-        mechanic_matches = re.finditer(r"(?:##|###) \*\*(?:II|III|IV|V)\.\s*([^*]+)\*\*", content)
+        mechanic_matches = re.finditer(
+            r"(?:##|###) \*\*(?:II|III|IV|V)\.\s*([^*]+)\*\*", content
+        )
         # Also try without bolding for some older artifacts
-        mechanic_matches_plain = re.finditer(r"(?:##|###) (?:II|III|IV|V)\.\s*(.+)", content)
+        mechanic_matches_plain = re.finditer(
+            r"(?:##|###) (?:II|III|IV|V)\.\s*(.+)", content
+        )
 
         all_titles = set()
         for match in mechanic_matches:
@@ -198,7 +208,9 @@ class CatalystWeaver:
         """Parses a Phoenix Codex file to extract Law axioms."""
         path = Path(path_str)
         if not path.exists():
-            logging.warning("Codex path %s does not exist. Skipping Law extraction.", path_str)
+            logging.warning(
+                "Codex path %s does not exist. Skipping Law extraction.", path_str
+            )
             return
 
         logging.info("Extracting Laws from %s...", path.name)
@@ -207,8 +219,12 @@ class CatalystWeaver:
         # Regex to find Law headings and their content
         # v13.1 Format: ### **Law X: Name**\n\n[Content]
         # v15.0 Format: X. **Name:** `[TAG]`\n   - **Genesis Seed:** [Seed]\n   - **Leap:** [Leap]
-        law_pattern_v13 = re.compile(r"### \*\*(Law \d+): ([^*]+)\*\*\s*\n((?:(?!\n### |---)[\s\S])*)")
-        law_pattern_v15 = re.compile(r"(\d+)\. \*\*([^*:]+):\*\* `\[[A-Z]+\]`[\s\n]+-\s+\*\*Genesis Seed:\*\*\s+_\"([^\"]+)\"_[\s\n]+-\s+\*\*Leap:\*\*\s+([^\n]+)")
+        law_pattern_v13 = re.compile(
+            r"### \*\*(Law \d+): ([^*]+)\*\*\s*\n((?:(?!\n### |---)[\s\S])*)"
+        )
+        law_pattern_v15 = re.compile(
+            r"(\d+)\. \*\*([^*:]+):\*\* `\[[A-Z]+\]`[\s\n]+-\s+\*\*Genesis Seed:\*\*\s+_\"([^\"]+)\"_[\s\n]+-\s+\*\*Leap:\*\*\s+([^\n]+)"
+        )
 
         # Parse v13.1 Laws
         matches_v13 = law_pattern_v13.findall(content)
@@ -255,11 +271,20 @@ def main() -> None:
         metavar=("NAME", "LOGIC"),
         help="Add a Command (Name, Logic)",
     )
-    parser.add_argument("--process", "-p", action="append", help="Add a Process instruction")
+    parser.add_argument(
+        "--process", "-p", action="append", help="Add a Process instruction"
+    )
     # Ascension Flags
-    parser.add_argument("--arise", action="store_true", help="Invoke the Axion Ascension persona.")
+    parser.add_argument(
+        "--arise", action="store_true", help="Invoke the Axion Ascension persona."
+    )
     parser.add_argument("--codex", help="Path to a Phoenix Codex for Law extraction.")
-    parser.add_argument("--module", "-m", action="append", help="Path to a Synarche Module for ingestion.")
+    parser.add_argument(
+        "--module",
+        "-m",
+        action="append",
+        help="Path to a Synarche Module for ingestion.",
+    )
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)

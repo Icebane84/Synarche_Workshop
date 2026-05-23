@@ -35,7 +35,15 @@ logger = logging.getLogger(__name__)
 
 # Constants
 GOVERNANCE_ROOT = r"C:\Users\Chris\Synarche_Workspace\_governance"
-IGNORE_DIRS = [".git", ".obsidian", "Archive", "Template", "99_Archives", "00_Codex", "templates"]
+IGNORE_DIRS = [
+    ".git",
+    ".obsidian",
+    "Archive",
+    "Template",
+    "99_Archives",
+    "00_Codex",
+    "templates",
+]
 
 # The Rosetta Map (Mapping Logic)
 # (Legacy Prefix) -> (Target Domain, Function Tag)
@@ -63,7 +71,10 @@ PREFIX_MAP = {
         "overrides": {},
     },
     "GUCA": {
-        "default": ("GVRN", "ACT"),  # Global Universal Command Arch -> Governance Actuator
+        "default": (
+            "GVRN",
+            "ACT",
+        ),  # Global Universal Command Arch -> Governance Actuator
         "overrides": {},
     },
     "CMD": {
@@ -71,7 +82,10 @@ PREFIX_MAP = {
         "overrides": {},
     },
     "UEB": {
-        "default": ("ARCH", "BLUE"),  # Universal Ecosystem Blueprint -> Architecture Blueprint
+        "default": (
+            "ARCH",
+            "BLUE",
+        ),  # Universal Ecosystem Blueprint -> Architecture Blueprint
         "overrides": {},
     },
     "SELT": {
@@ -91,7 +105,9 @@ class Transmuter:
         self.proposals: list[dict[str, Any]] = []
         self.redirects: list[str] = []
 
-    def scan_and_plan(self, rationale: str = "Alignment with OMEGA v14.0 Semantic Standards.") -> None:
+    def scan_and_plan(
+        self, rationale: str = "Alignment with OMEGA v14.0 Semantic Standards."
+    ) -> None:
         """Walk the directory and generate renaming proposals."""
         logger.info(f"[AXION] 🔮 Scanning {GOVERNANCE_ROOT} for legacy artifacts...")
 
@@ -120,7 +136,9 @@ class Transmuter:
             match = re.match(r"^([A-Z]+)-([A-Z]+)-(\d{3})(.*)\.md$", filename)
 
         if match:
-            prefix, sub, id_num, name_part, _ = match.groups() if len(match.groups()) == 5 else (*match.groups(), "")
+            prefix, sub, id_num, name_part, _ = (
+                match.groups() if len(match.groups()) == 5 else (*match.groups(), "")
+            )
 
             # Consult the Map
             new_domain, new_func = self.resolve_mapping(prefix, sub)
@@ -157,13 +175,22 @@ class Transmuter:
         output_file = Path("renaming_plan.csv")
         with open(output_file, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(
-                f, fieldnames=["original_name", "new_name", "confidence", "original_path", "rationale"]
+                f,
+                fieldnames=[
+                    "original_name",
+                    "new_name",
+                    "confidence",
+                    "original_path",
+                    "rationale",
+                ],
             )
             writer.writeheader()
             for p in self.proposals:
                 writer.writerow({k: v for k, v in p.items() if k != "new_id"})
 
-        logger.info(f"\n[AXION] ✨ Plan Generated: {len(self.proposals)} proposed renames.")
+        logger.info(
+            f"\n[AXION] ✨ Plan Generated: {len(self.proposals)} proposed renames."
+        )
         logger.info(f"[AXION] 📄 Review: {output_file.absolute()}")
 
     def execute_plan(self, plan_file: str = "renaming_plan.csv") -> None:
@@ -173,7 +200,9 @@ class Transmuter:
             return
 
         logger.info("\n=== THE FORGE OF AXION: TRANSMUTATION PROTOCOL ===")
-        logger.info('> "Entropy is the enemy. Structure is the shield. Coherence is the sword." — UEB-GOC-001\n')
+        logger.info(
+            '> "Entropy is the enemy. Structure is the shield. Coherence is the sword." — UEB-GOC-001\n'
+        )
         logger.info(f"[AXION] 🚀 Initiating Transmutation from: {plan_file}")
         logger.warning("[AXION] ⚠️  WARNING: This will rename files on disk.")
 
@@ -185,7 +214,9 @@ class Transmuter:
             reader = csv.DictReader(f)
             rows = list(reader)
 
-            logger.info(f"📋 Found {len(rows)} candidates. Processing High Confidence items...")
+            logger.info(
+                f"📋 Found {len(rows)} candidates. Processing High Confidence items..."
+            )
 
             for row in rows:
                 original_path = row["original_path"]
@@ -193,7 +224,9 @@ class Transmuter:
                 confidence = row["confidence"]
 
                 if confidence != "High":
-                    logger.info(f"⏭️  Skipping (Low Confidence): {row['original_name']}")
+                    logger.info(
+                        f"⏭️  Skipping (Low Confidence): {row['original_name']}"
+                    )
                     skip_count += 1
                     continue
 
@@ -221,7 +254,9 @@ class Transmuter:
                     )
                     success_count += 1
                 except Exception as e:
-                    logger.error(f"[AXION] ❌ Failed to rename {row['original_name']}: {e}")
+                    logger.error(
+                        f"[AXION] ❌ Failed to rename {row['original_name']}: {e}"
+                    )
                     error_count += 1
 
         logger.info("\n[AXION] ✨ Transmutation Complete.")
@@ -231,14 +266,27 @@ class Transmuter:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Transition artifacts to Sovereign Naming.")
+    parser = argparse.ArgumentParser(
+        description="Transition artifacts to Sovereign Naming."
+    )
     parser.add_argument("--dry-run", action="store_true", help="Generate plan only.")
-    parser.add_argument("--execute", action="store_true", help="Execute the renaming plan from renaming_plan.csv.")
-    parser.add_argument("--rationale", help="The Architectural Rationale (The 'Why') for this transmutation.")
+    parser.add_argument(
+        "--execute",
+        action="store_true",
+        help="Execute the renaming plan from renaming_plan.csv.",
+    )
+    parser.add_argument(
+        "--rationale",
+        help="The Architectural Rationale (The 'Why') for this transmutation.",
+    )
     args = parser.parse_args()
 
     transmuter = Transmuter(dry_run=args.dry_run)
-    rationale = args.rationale if args.rationale else "Alignment with OMEGA v14.0 Semantic Standards."
+    rationale = (
+        args.rationale
+        if args.rationale
+        else "Alignment with OMEGA v14.0 Semantic Standards."
+    )
 
     if args.execute:
         transmuter.execute_plan()

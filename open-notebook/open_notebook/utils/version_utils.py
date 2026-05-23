@@ -16,6 +16,7 @@ async def get_version_from_github_async(repo_url: str, branch: str = "main") -> 
     Fetch and parse the version from pyproject.toml in a public GitHub repository (async).
     """
     from urllib.parse import urlparse
+
     import httpx
     import tomli
 
@@ -32,7 +33,9 @@ async def get_version_from_github_async(repo_url: str, branch: str = "main") -> 
     owner, repo = path_parts[0], path_parts[1]
 
     # Construct raw content URL for pyproject.toml
-    raw_url = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/pyproject.toml"
+    raw_url = (
+        f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/pyproject.toml"
+    )
 
     # Fetch the file with timeout using httpx
     async with httpx.AsyncClient(timeout=10.0) as client:
@@ -54,6 +57,7 @@ async def get_version_from_github_async(repo_url: str, branch: str = "main") -> 
             raise KeyError("Version not found in pyproject.toml")
 
     return version_str
+
 
 def get_version_from_github(repo_url: str, branch: str = "main") -> str:
     """

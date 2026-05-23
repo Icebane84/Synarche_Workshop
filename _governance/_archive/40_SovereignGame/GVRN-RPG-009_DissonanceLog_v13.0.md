@@ -49,9 +49,9 @@
 
 - **Strategy**: Hybrid Sovereign (Visual Strategy + CLI Tactics).
 - **Components**:
-    1.  **Bridge Scanner**: Node.js backend logic to detect "Enemies" (Lint Errors).
-    2.  **Quest Board**: React UI to visualize Enemies as Cards.
-    3.  **Strike Protocol**: Bridge command to execute fixes (`npm run lint --fix`).
+  1.  **Bridge Scanner**: Node.js backend logic to detect "Enemies" (Lint Errors).
+  2.  **Quest Board**: React UI to visualize Enemies as Cards.
+  3.  **Strike Protocol**: Bridge command to execute fixes (`npm run lint --fix`).
 
 ---
 

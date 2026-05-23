@@ -121,6 +121,4 @@ Execution is constrained by the `security.yaml` policy, which:
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

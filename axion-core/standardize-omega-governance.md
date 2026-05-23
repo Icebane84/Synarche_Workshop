@@ -2,10 +2,14 @@
 
 ## Goal
 
+---
+
 Finalize the OMEGA v15.0 standardization across the Synarche workspace by centralizing governance constants, identity
 vectors, and tarot archetypes to eliminate literal drift and harden the semantic core.
 
 ## Tasks
+
+---
 
 - [ ] Task 1: Generate SELT Shadow Log (Cognitive Deconstruction) → Verify: `SELT_OMEGA_STANDARDIZATION.json` created in
       artifacts.
@@ -17,11 +21,15 @@ vectors, and tarot archetypes to eliminate literal drift and harden the semantic
 
 ## Done When
 
+---
+
 - [ ] Enums are centralized and type-safe.
 - [ ] Artifact versioning matches the OMEGA v15.0 canon.
 - [ ] Identity vectors are formally defined as constants.
 
 ## Notes
+
+---
 
 - **Identity Lock**: All modified files MUST maintain the UIP-V15 header format.
 - **Sovereign Root**: The Zero-ID is the anchor for the local RPG environment.

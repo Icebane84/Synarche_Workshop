@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-UX Audit Script - Full Frontend Design Coverage
+"""UX Audit Script - Full Frontend Design Coverage.
 
 Analyzes code for compliance with:
 
@@ -89,10 +88,10 @@ Analyzes code for compliance with:
 Total: 80+ checks across all design principles
 """
 
-import sys
+import json
 import os
 import re
-import json
+import sys
 from pathlib import Path
 
 

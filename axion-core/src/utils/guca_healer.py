@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -50,7 +49,6 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import List, Optional
 
 # Ensure standard output uses UTF-8 to handle specialized characters
 sys.stdout.reconfigure(encoding="utf-8")
@@ -59,19 +57,23 @@ WORKSPACE_ROOT = Path("C:/Users/Chris/Synarche_Workspace")
 TARGET_DIRS = ["_governance", "axion-core"]
 
 # Patterns to identify compliance status
-UIP_PATTERN = re.compile(r"## \*\*Block A: The Identification Lock \(UIP-V15\)\*\*", re.IGNORECASE)
-UIP_ALT_PATTERN = re.compile(r"# Universal Identification & Provenance \(UIP\)", re.IGNORECASE)
+UIP_PATTERN = re.compile(
+    r"## \*\*Block A: The Identification Lock \(UIP-V15\)\*\*", re.IGNORECASE
+)
+UIP_ALT_PATTERN = re.compile(
+    r"# Universal Identification & Provenance \(UIP\)", re.IGNORECASE
+)
 
 
 def generate_uip_header(file_name: str) -> str:
-    """
-    Generates a standardized OMEGA v15.0 UIP header for an orphan file.
+    """Generates a standardized OMEGA v15.0 UIP header for an orphan file.
 
     Args:
         file_name: The name of the file to generate the header for.
 
     Returns:
         A multi-line string containing the formatted UIP block.
+
     """
     module_id = file_name.replace(".md", "").upper()
     return f"""---
@@ -95,11 +97,11 @@ def generate_uip_header(file_name: str) -> str:
 
 
 def scan_for_orphans(heal: bool = False) -> None:
-    """
-    Scans the specified target directories for Markdown files missing compliance headers.
+    """Scans the specified target directories for Markdown files missing compliance headers.
 
     Args:
         heal: If True, automatically prepends a generated header to orphan files.
+
     """
     orphan_nodes: list[Path] = []
     scanned_files = 0
@@ -136,7 +138,9 @@ def scan_for_orphans(heal: bool = False) -> None:
                             # Read just the head to look for UIP patterns
                             content = f.read(2048)
 
-                            if not UIP_PATTERN.search(content) and not UIP_ALT_PATTERN.search(content):
+                            if not UIP_PATTERN.search(
+                                content
+                            ) and not UIP_ALT_PATTERN.search(content):
                                 orphan_nodes.append(file_path)
                     except Exception as e:
                         print(f"Error reading {file_path}: {e}")

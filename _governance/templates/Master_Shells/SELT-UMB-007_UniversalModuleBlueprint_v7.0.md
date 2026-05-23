@@ -12,14 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                     | Description       |
-| :---------------- | :---------------------------------------- | :---------------- |
-| **Artifact ID**   | `SELT.UMB.007`                            | The Sovereign ID. |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
+| **Artifact ID**   | `SELT.UMB.007`                             | The Sovereign ID. |
 | **Official Name** | `SELT-UMB-007_UniversalModuleBlueprint.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                         | The Standard.     |
-| **Domain**        | `SELT`                                    | The Subject.      |
-| **Status**        | `[TEMPLATED]`                             | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: GVRN.Codex.Genesis`           | The Network.      |
+| **Version**       | **v15.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `SELT`                                     | The Subject.      |
+| **Status**        | `[TEMPLATED]`                              | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: GVRN.Codex.Genesis`            | The Network.      |
 
 ---
 
@@ -31,11 +31,11 @@ This template define the architectural standard for all software modules in the 
 
 ### 1. Functional Scope
 
-| Field      | Description                             |
-| :--------- | :-------------------------------------- |
-| **Purpose**| Core purpose of the module              |
-| **Exports**| Public API surface                      |
-| **Axioms** | Philosophical alignment                 |
+| Field       | Description                |
+| :---------- | :------------------------- |
+| **Purpose** | Core purpose of the module |
+| **Exports** | Public API surface         |
+| **Axioms**  | Philosophical alignment    |
 
 ### 2. Logic Implementation
 

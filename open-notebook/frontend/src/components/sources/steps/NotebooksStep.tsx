@@ -1,29 +1,29 @@
-"use client"
+"use client";
 
-import { FormSection } from "@/components/ui/form-section"
-import { useTranslation } from "@/lib/hooks/use-translation"
-import { CheckboxList } from "@/components/ui/checkbox-list"
-import { NotebookResponse } from "@/lib/types/api"
+import { FormSection } from "@/components/ui/form-section";
+import { useTranslation } from "@/lib/hooks/use-translation";
+import { CheckboxList } from "@/components/ui/checkbox-list";
+import { NotebookResponse } from "@/lib/types/api";
 
 interface NotebooksStepProps {
-  notebooks: NotebookResponse[]
-  selectedNotebooks: string[]
-  onToggleNotebook: (notebookId: string) => void
-  loading?: boolean
+  notebooks: NotebookResponse[];
+  selectedNotebooks: string[];
+  onToggleNotebook: (notebookId: string) => void;
+  loading?: boolean;
 }
 
 export function NotebooksStep({
   notebooks,
   selectedNotebooks,
   onToggleNotebook,
-  loading = false
+  loading = false,
 }: NotebooksStepProps) {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const notebookItems = notebooks.map((notebook) => ({
     id: notebook.id,
     title: notebook.name,
-    description: notebook.description || undefined
-  }))
+    description: notebook.description || undefined,
+  }));
 
   return (
     <div className="space-y-6">
@@ -40,5 +40,5 @@ export function NotebooksStep({
         />
       </FormSection>
     </div>
-  )
+  );
 }

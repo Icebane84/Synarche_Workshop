@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-"""
-React Performance Checker
+"""React Performance Checker
 Automated performance audit for React/Next.js projects
-Based on Vercel Engineering best practices
+Based on Vercel Engineering best practices.
 """
 
 import os
 import re
-import json
 from pathlib import Path
-from typing import List, Dict, Tuple
 
 
 class PerformanceChecker:
@@ -20,7 +17,7 @@ class PerformanceChecker:
         self.passed = []
 
     def check_waterfalls(self):
-        """Check for sequential await patterns (Section 1)"""
+        """Check for sequential await patterns (Section 1)."""
         print("\n[*] Checking for waterfalls (sequential awaits)...")
 
         for filepath in self.project_path.rglob("*.{ts,tsx,js,jsx}"):
@@ -45,11 +42,11 @@ class PerformanceChecker:
                             "section": "1-async-eliminating-waterfalls.md",
                         }
                     )
-            except Exception as e:
+            except Exception:
                 continue
 
     def check_barrel_imports(self):
-        """Check for barrel imports (Section 2)"""
+        """Check for barrel imports (Section 2)."""
         print("[*] Checking for barrel imports...")
 
         for filepath in self.project_path.rglob("*.{ts,tsx,js,jsx}"):
@@ -77,11 +74,11 @@ class PerformanceChecker:
                             "section": "2-bundle-bundle-size-optimization.md",
                         }
                     )
-            except Exception as e:
+            except Exception:
                 continue
 
     def check_dynamic_imports(self):
-        """Check if large components use dynamic imports (Section 2)"""
+        """Check if large components use dynamic imports (Section 2)."""
         print("[*] Checking for missing dynamic imports...")
 
         for filepath in self.project_path.rglob("*.{ts,tsx}"):
@@ -119,11 +116,11 @@ class PerformanceChecker:
                                     }
                                 )
                                 break
-            except Exception as e:
+            except Exception:
                 continue
 
     def check_useEffect_fetching(self):
-        """Check for data fetching in useEffect (Section 4)"""
+        """Check for data fetching in useEffect (Section 4)."""
         print("[*] Checking for useEffect data fetching...")
 
         for filepath in self.project_path.rglob("*.{ts,tsx}"):
@@ -145,11 +142,11 @@ class PerformanceChecker:
                                 "section": "4-client-client-side-data-fetching.md",
                             }
                         )
-            except Exception as e:
+            except Exception:
                 continue
 
     def check_missing_memoization(self):
-        """Check for missing React.memo, useMemo, useCallback (Section 5)"""
+        """Check for missing React.memo, useMemo, useCallback (Section 5)."""
         print("[*] Checking for missing memoization...")
 
         for filepath in self.project_path.rglob("*.{tsx}"):
@@ -180,11 +177,11 @@ class PerformanceChecker:
                                 "section": "5-rerender-re-render-optimization.md",
                             }
                         )
-            except Exception as e:
+            except Exception:
                 continue
 
     def check_image_optimization(self):
-        """Check for unoptimized images (Section 6)"""
+        """Check for unoptimized images (Section 6)."""
         print("[*] Checking for image optimization...")
 
         for filepath in self.project_path.rglob("*.{ts,tsx,js,jsx}"):
@@ -205,11 +202,11 @@ class PerformanceChecker:
                             "section": "6-rendering-rendering-performance.md",
                         }
                     )
-            except Exception as e:
+            except Exception:
                 continue
 
     def generate_report(self):
-        """Generate final report"""
+        """Generate final report."""
         print("\n" + "=" * 60)
         print("REACT PERFORMANCE AUDIT REPORT")
         print("=" * 60)
@@ -235,7 +232,7 @@ class PerformanceChecker:
             print(f"  ... and {len(self.warnings) - 10} more warnings")
 
         print("\n" + "=" * 60)
-        print(f"SUMMARY:")
+        print("SUMMARY:")
         print(
             f"  Critical Issues: {len([i for i in self.issues if i['type'] == 'CRITICAL'])}"
         )
@@ -249,7 +246,7 @@ class PerformanceChecker:
             print("Priority: CRITICAL > HIGH > MEDIUM > LOW")
 
     def run(self):
-        """Run all checks"""
+        """Run all checks."""
         print("=" * 60)
         print("React Performance Checker (Vercel Engineering)")
         print("=" * 60)

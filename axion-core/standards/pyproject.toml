@@ -61,7 +61,8 @@ target-version = "py314"
 # RUF = Ruff-specific rules
 # ARG = Flake8-Unused-Arguments (S1172)
 select = ["E4", "E7", "E9", "F", "I", "N", "UP", "B", "C901", "SIM", "TRY", "PL", "RUF", "ARG", "ANN", "T20"]
-ignore = ["TRY003", "PLR0913", "ANN101", "ANN102"] # Ignore overly strict message checks, arg count, and self/cls typing
+ignore = ["TRY003", "PLR0913"] # Ignore overly strict message checks, arg count
+
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]

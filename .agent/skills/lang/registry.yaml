@@ -1,24 +1,27 @@
 domain: LANG
-last_updated: "2026-03-28T08:30:09.865003"
+last_updated: '2026-05-19T15:21:38.902332'
 skills:
-  - documented: true
-    id: bash-linux
-    path: /.agent/skills/lang/bash-linux
-  - documented: true
-    id: i18n-localization
-    path: /.agent/skills/lang/i18n-localization
-  - documented: true
-    id: nextjs-react-expert
-    path: /.agent/skills/lang/nextjs-react-expert
-  - documented: true
-    id: nodejs-best-practices
-    path: /.agent/skills/lang/nodejs-best-practices
-  - documented: true
-    id: powershell-windows
-    path: /.agent/skills/lang/powershell-windows
-  - documented: true
-    id: python-patterns
-    path: /.agent/skills/lang/python-patterns
-  - documented: true
-    id: rust-pro
-    path: /.agent/skills/lang/rust-pro
+- documented: true
+  id: bash-linux
+  path: /.agent/skills/lang/bash-linux
+- documented: false
+  id: godot-gdscript-patterns
+  path: /.agent/skills/lang/godot-gdscript-patterns
+- documented: true
+  id: i18n-localization
+  path: /.agent/skills/lang/i18n-localization
+- documented: true
+  id: nextjs-react-expert
+  path: /.agent/skills/lang/nextjs-react-expert
+- documented: true
+  id: nodejs-best-practices
+  path: /.agent/skills/lang/nodejs-best-practices
+- documented: true
+  id: powershell-windows
+  path: /.agent/skills/lang/powershell-windows
+- documented: true
+  id: python-patterns
+  path: /.agent/skills/lang/python-patterns
+- documented: true
+  id: rust-pro
+  path: /.agent/skills/lang/rust-pro

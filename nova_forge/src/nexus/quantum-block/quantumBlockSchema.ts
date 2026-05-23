@@ -4,12 +4,22 @@ import { z } from "zod";
 // 1. CONTEXT VECTOR DEFINITIONS (Environmental States)
 // ----------------------------------------------------------------------------
 const ContextEnvironmentSchema = z.enum(["ENV_PROD", "ENV_DEV", "ENV_TEST"]);
-const ContextClientSchema = z.enum(["CLIENT_WEB", "CLIENT_ENGINE", "CLIENT_CLI"]);
-const ContextAuthSchema = z.enum(["AUTH_VERIFIED", "AUTH_GUEST", "AUTH_SYSTEM"]);
+const ContextClientSchema = z.enum([
+  "CLIENT_WEB",
+  "CLIENT_ENGINE",
+  "CLIENT_CLI",
+]);
+const ContextAuthSchema = z.enum([
+  "AUTH_VERIFIED",
+  "AUTH_GUEST",
+  "AUTH_SYSTEM",
+]);
 
-const ContextVectorSchema = z.array(
-  z.union([ContextEnvironmentSchema, ContextClientSchema, ContextAuthSchema])
-).min(1, { message: "ContextVector must contain at least one state flag." });
+const ContextVectorSchema = z
+  .array(
+    z.union([ContextEnvironmentSchema, ContextClientSchema, ContextAuthSchema]),
+  )
+  .min(1, { message: "ContextVector must contain at least one state flag." });
 
 // ----------------------------------------------------------------------------
 // 2. POLYGLOT PAYLOAD SCHEMAS (The Transformation Strategies)

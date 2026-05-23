@@ -1,5 +1,4 @@
-"""
-# TOOL-SENT-005: Path Diagnostic Tool (Audit Engine)
+"""# TOOL-SENT-005: Path Diagnostic Tool (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -73,7 +72,10 @@ else:
 
     logger.info("-" * 20)
     # Check specifically for the files we miss
-    missing = ["Master_Outline_Where_Light_Fades.md", "Master_Refined_Where_Light_Fades.md"]
+    missing = [
+        "Master_Outline_Where_Light_Fades.md",
+        "Master_Refined_Where_Light_Fades.md",
+    ]
     for m in missing:
         p = os.path.join(target_dir, m)
         if os.path.exists(p):

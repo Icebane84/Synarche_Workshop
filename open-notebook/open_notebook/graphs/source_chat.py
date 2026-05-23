@@ -20,11 +20,11 @@ from open_notebook.utils.context_builder import ContextBuilder
 class SourceChatState(TypedDict):
     messages: Annotated[list, add_messages]
     source_id: str
-    source: Optional[Source]
-    insights: Optional[List[SourceInsight]]
-    context: Optional[str]
-    model_override: Optional[str]
-    context_indicators: Optional[Dict[str, List[str]]]
+    source: Source | None
+    insights: list[SourceInsight] | None
+    context: str | None
+    model_override: str | None
+    context_indicators: dict[str, list[str]] | None
 
 
 def call_model_with_source_context(
@@ -113,7 +113,7 @@ def call_model_with_source_context(
     system_prompt = Prompter(prompt_template="source_chat/system").render(
         data=prompt_data
     )
-    payload = [SystemMessage(content=system_prompt)] + state.get("messages", [])
+    payload = [SystemMessage(content=system_prompt), *state.get("messages", [])]
 
     # Handle async model provisioning from sync context
     def run_in_new_loop():
@@ -176,7 +176,7 @@ def call_model_with_source_context(
     }
 
 
-def _format_source_context(context_data: Dict) -> str:
+def _format_source_context(context_data: dict) -> str:
     """
     Format the context data into a readable string for the prompt.
 

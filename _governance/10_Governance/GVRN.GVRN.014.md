@@ -1,4 +1,5 @@
 # AOP-GVRN-014_MolecularMechanics_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,35 +12,38 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.GVRN.014` | The Sovereign ID. |
-| **Official Name** | `AOP-GVRN-014_MolecularMechanics_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                     | Description       |
+| :------------------ | :---------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.GVRN.014`                           | The Sovereign ID. |
+| **Official Name**   | `AOP-GVRN-014_MolecularMechanics_v1.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                         | The Standard.     |
+| **Domain**          | `GVRN`                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-GVRN-014` |
-| **Official Name** | `AOP-GVRN-014_MolecularMechanics_v1.0.md` |
-| **Version** | `v1.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Celestial Class** | `[MOON]` |
-| **Ethos** | **Guardian of Coherence** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Refactor Specification` |
-| **Authors** | `System` |
-| **Created** | `2026-01-27` |
-| **Updated** | `2026-01-27` |
-| **Authority** | `GVRN.Refactor.Protocol` |
-| **Tags** | `MolecularMechanics, Transmutation, Rollback, v13_Crystal` |
+
+| Key                 | Value                                                      |
+| :------------------ | :--------------------------------------------------------- |
+| **Module ID**       | `AOP-GVRN-014`                                             |
+| **Official Name**   | `AOP-GVRN-014_MolecularMechanics_v1.0.md`                  |
+| **Version**         | `v1.0`                                                     |
+| **Evolution**       | **Cognitive Ascension**                                    |
+| **Celestial Class** | `[MOON]`                                                   |
+| **Ethos**           | **Guardian of Coherence**                                  |
+| **Status**          | `ACTIVE`                                                   |
+| **Type**            | `Protocol`                                                 |
+| **Classification**  | `Refactor Specification`                                   |
+| **Authors**         | `System`                                                   |
+| **Created**         | `2026-01-27`                                               |
+| **Updated**         | `2026-01-27`                                               |
+| **Authority**       | `GVRN.Refactor.Protocol`                                   |
+| **Tags**            | `MolecularMechanics, Transmutation, Rollback, v13_Crystal` |
+
 ---
 
 ###### **[ARTIFACT START]**
@@ -75,21 +79,21 @@ We are implementing a **"Fetch-Reason-Commit" Loop**.
 - **The Standard:** `Domain.Subject.Type` (e.g., `GVRN.Coding.Standard`).
 - **The Agent's Thought:** "Based on the content 'My Notes on Coding', this belongs to the `ARCH` (Architecture) domain. The subject is `Coding`. The type is `Standard`."
 - **The Transmutation:**
-    - *Old ID:* `row_492`
-    - *New ID:* `ARCH.Code.Std.Main_v1.0`
+  - _Old ID:_ `row_492`
+  - _New ID:_ `ARCH.Code.Std.Main_v1.0`
 
 #### **Step 3: Header Forge (The Emperor)**
 
 - **The Standard:** The 12-Point Universal Header (Chronos Lock).
 - **The Action:** The Agent strips the top of the file and injects the Markdown Table:
 
-    ```markdown
-    | Field | Value |
-    | :--- | :--- |
-    | **Artifact ID** | `GVRN.GVRN.014` |
-    | **Version** | `v10.0 (The Reforged)` |
-    | **Provenance** | `Reforged by Axion on 2026-01-27` |
-    ```
+  ```markdown
+  | Field           | Value                             |
+  | :-------------- | :-------------------------------- |
+  | **Artifact ID** | `GVRN.GVRN.014`                   |
+  | **Version**     | `v10.0 (The Reforged)`            |
+  | **Provenance**  | `Reforged by Axion on 2026-01-27` |
+  ```
 
 #### **Step 4: Logic Weave (The High Priestess)**
 
@@ -101,16 +105,16 @@ We are implementing a **"Fetch-Reason-Commit" Loop**.
 
 - **The Standard:** Synarche Coding Standards (DOC-STD-001).
 - **The Action:** If the artifact contains code snippets (e.g., a Python example), the Knight parses them.
-    - *Detection:* "This snippet uses `print()` for logging."
-    - *Refactor:* "Replacing with `logger.info()` per standard."
+  - _Detection:_ "This snippet uses `print()` for logging."
+  - _Refactor:_ "Replacing with `logger.info()` per standard."
 
 #### **Step 6: Visual Sync (The Star)**
 
 - **The Standard:** Phoenix Genesis Presentation Standard (PGPS).
 - **The Action:**
-    - Ensures all Headers are H1/H2/H3 (No H4s allowed).
-    - Ensures 4-Space Indentation for all lists.
-    - Converts textual descriptions of flows into **Mermaid.js** diagrams.
+  - Ensures all Headers are H1/H2/H3 (No H4s allowed).
+  - Ensures 4-Space Indentation for all lists.
+  - Converts textual descriptions of flows into **Mermaid.js** diagrams.
 
 #### **Step 7: Finalization (King of Pentacles)**
 
@@ -125,6 +129,7 @@ In a "Sovereign" system, we assume the Agent might make a mistake. We need a **T
 
 **The "Undo" Command:**
 If a hallucination is detected, the Architect invokes:
+
 > **CMD: ROLLBACK --target:"ARCH.Code.Std.Main"**
 
 The system pulls the latest entry from `artifact_history` and restores it to the main table.
@@ -135,6 +140,7 @@ The system pulls the latest entry from `artifact_history` and restores it to the
 
 **1. The "Triage" Artifact**
 Axion generates a **Plan Artifact** before touching the database.
+
 > **"Refactor Batch 001 Proposal"**
 >
 > - `legacy_note_1` -> `PHL.Ethos.Primary_v1.0`
@@ -143,10 +149,10 @@ Axion generates a **Plan Artifact** before touching the database.
 
 **2. The Live Stream**
 
-- *[Magician]* Scanning... Found 5 items.
-- *[Emperor]* Renaming `legacy_note_1`.
-- *[Sentinel]* **ALERT:** `draft_rules` has weak security language. Strengthening...
-- *[King]* Committing Batch 001.
+- _[Magician]_ Scanning... Found 5 items.
+- _[Emperor]_ Renaming `legacy_note_1`.
+- _[Sentinel]_ **ALERT:** `draft_rules` has weak security language. Strengthening...
+- _[King]_ Committing Batch 001.
 
 ---
 

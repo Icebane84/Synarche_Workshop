@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -29,13 +28,14 @@ from typing import Any
 LOG_DIR_NAME = "_logs"
 
 # --- LOGGING SETUP ---
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
 logger = logging.getLogger(__name__)
 
 
 class Chronicler:
-    """
-    The Chronicler: A system for immutable agentic logging and versioning.
+    """The Chronicler: A system for immutable agentic logging and versioning.
     Tracks actions, intents, and file state hashes to prevent hallucination.
     """
 
@@ -52,7 +52,9 @@ class Chronicler:
                 self.log_dir.mkdir(parents=True, exist_ok=True)
                 logger.info(f"[Chronicler] Log directory initialized: {self.log_dir}")
             except Exception:
-                logger.exception(f"[Chronicler] Failed to create log directory: {self.log_dir}")
+                logger.exception(
+                    f"[Chronicler] Failed to create log directory: {self.log_dir}"
+                )
 
     def _calculate_hash(self, filepath: str | Path) -> str | None:
         """Calculates SHA-256 hash of a file for version verification."""
@@ -82,8 +84,7 @@ class Chronicler:
         status: str = "SUCCESS",
         metadata: dict[str, Any] | None = None,
     ) -> str:
-        """
-        Logs an agentic action with versioning data.
+        """Logs an agentic action with versioning data.
         Returns the Log ID.
         """
         timestamp = datetime.now(timezone.utc).isoformat()
@@ -102,9 +103,7 @@ class Chronicler:
             "target": target,
             "status": status,
             "details": details,
-            "versioning": {
-                "hash_state": before_hash  # Snapshot of state at log time
-            },
+            "versioning": {"hash_state": before_hash},  # Snapshot of state at log time
             "metadata": metadata or {},
         }
 

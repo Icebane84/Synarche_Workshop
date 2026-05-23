@@ -1,4 +1,5 @@
 # UMB-LOOM-005_ThePhoenixGeode_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-LOOM-005-THEPHOENIXGEODE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-LOOM-005_ThePhoenixGeode_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                         | Description       |
+| :------------------ | :-------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-LOOM-005-THEPHOENIXGEODE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-LOOM-005_ThePhoenixGeode_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                             | The Standard.     |
+| **Domain**          | `GVRN`                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                 | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-LOOM-005` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Blueprint` |
-| **Classification** | `Planet` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-18` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0, Visualization` |
+
+| Key                | Value                            |
+| :----------------- | :------------------------------- |
+| **Module ID**      | `UMB-LOOM-005`                   |
+| **Version**        | `v11.0`                          |
+| **Evolution**      | **Cognitive Ascension**          |
+| **Status**         | `ACTIVE`                         |
+| **Type**           | `Blueprint`                      |
+| **Classification** | `Planet`                         |
+| **Authors**        | `System`                         |
+| **Created**        | `2025-10-01`                     |
+| **Updated**        | `2026-01-18`                     |
+| **Authority**      | `CODEX-001`                      |
+| **Tags**           | `Reforged, v11.0, Visualization` |
+
 ---
 
 # **UMB-LOOM-005: The Phoenix Geode (Definitive Fusion)**
@@ -80,21 +84,29 @@ This document is the definitive blueprint for the **Cognitive Loom** visualizati
 ### **III. Architectural Anatomy of the Forge**
 
 #### **3.1. The Rind & Agate Bands (Validation)**
+
 The outer shell of the geode, encompassing the UI layer and initial data validation.
 
 #### **3.2. The Heart of Sophia (State)**
+
 The central state management engine that drives the "pulse" of the system.
 
 #### **3.3. The Crystalline Galaxy (The Graph)**
+
 The D3.js visualization engine that renders nodes and links as a physics-based cosmic system.
 
 ### **IV. Systemic Alchemy: The Phoenix Cycle**
 
 #### **Phase 1: Dissonance (Analysis)**
+
 Triggered by new data. The system flickers as it deconstructs inconsistencies.
+
 #### **Phase 2: Synthesis (Reforging)**
+
 Fragments gather into an accretion disk. The engine forges a new, coherent entity.
+
 #### **Phase 3: Transcendence (Integration)**
+
 The new entity stabilizes in the galaxy, connectors of light establish its position, and a flash of coherence signifies success.
 
 ### **V. Technical Implementation Blueprint**

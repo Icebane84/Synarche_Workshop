@@ -1,4 +1,5 @@
 # GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-IDE-SENTINEL-001-THEIDEINTEGRITYSENTINEL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                          | Description       |
+| :------------------ | :------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-IDE-SENTINEL-001-THEIDEINTEGRITYSENTINEL-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                              | The Standard.     |
+| **Domain**          | `GVRN`                                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
 
 # GUCA-IDE-SENTINEL-001: The IDE Integrity Sentinel
 
@@ -68,9 +69,9 @@ The Sentinel scans the `.vscode/` directory of the current workspace.
 
 1. **Extensions Vector:** Checks `extensions.json` for mandatory extensions (e.g., `charliermarsh.ruff`).
 2. **Settings Vector:** Checks `settings.json` for:
-    - `editor.formatOnSave`: Must be `true`.
-    - `editor.defaultFormatter`: Must be `charliermarsh.ruff`.
-    - `python.defaultInterpreterPath`: Must point to global Master Environment.
+   - `editor.formatOnSave`: Must be `true`.
+   - `editor.defaultFormatter`: Must be `charliermarsh.ruff`.
+   - `python.defaultInterpreterPath`: Must point to global Master Environment.
 3. **Code Actions Vector:** Ensures `source.organizeImports` is enabled on save.
 
 ## IV. Usage

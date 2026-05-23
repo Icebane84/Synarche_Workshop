@@ -1,8 +1,8 @@
-"""
-### System Package
+"""### System Package.
 
 Re-exports from submodules for convenient access.
 """
+
 from .refactor import (
     DeterministicParallelExecutor,
     RefactorEngine,

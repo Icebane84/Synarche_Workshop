@@ -1,4 +1,5 @@
 # SPEC-TECH-APP-001_ComponentArchitecture_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,37 +12,40 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SPEC-TECH-APP-001-COMPONENTARCHITECTURE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `SPEC-TECH-APP-001_ComponentArchitecture_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                    | Description       |
+| :------------------ | :------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SPEC-TECH-APP-001-COMPONENTARCHITECTURE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `SPEC-TECH-APP-001_ComponentArchitecture_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
+| **Domain**          | `GVRN`                                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 ---
+
 UIP: SPEC-TECH-APP-001
 Title: Component Architecture & Sovereign Module Pattern
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/The%20Principle%20of%20Sovereign%20Modules%20%28The%20index.tsx%20Gateway%20Pattern%29.rtf)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/The%20Principle%20of%20Sovereign%20Modules%20%28The%20index.tsx%20Gateway%20Pattern%29.rtf)
+  Description: >
   Defines the mandatory structural pattern for React components within the Phoenix ecosystem, utilizing the "Sovereign Module" gateway pattern for encapsulation and refactorability.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769338900
-Tags: 
-  - #Specification
-  - #React
-  - #Architecture
-  - #SovereignModule
-  - #Frontend
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769338900
+  Tags:
+- #Specification
+- #React
+- #Architecture
+- #SovereignModule
+- #Frontend
+
 ---
 
 > [!IMPORTANT]

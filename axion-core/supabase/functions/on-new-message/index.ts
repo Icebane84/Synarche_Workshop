@@ -111,7 +111,7 @@ Deno.serve(async (req) => {
       {
         headers: { "Content-Type": "application/json" },
         status: 200,
-      }
+      },
     );
   } catch (err) {
     console.error("Error processing message:", err);

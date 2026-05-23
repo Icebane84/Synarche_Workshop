@@ -10,7 +10,7 @@ for entry in os.scandir(workspace_root):
         file_count = 0
         total_size = 0
         try:
-            for root, dirs, files in os.walk(entry.path):
+            for root, _dirs, files in os.walk(entry.path):
                 file_count += len(files)
                 for f in files:
                     try:

@@ -9,6 +9,7 @@
 ---
 
 # quick-start-openai.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-QUICK-START-OPENAI-001` | The Sovereign ID. |
-| **Official Name** | `quick-start-openai.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Official Name** | `quick-start-openai.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -52,6 +48,7 @@ Wait 15-20 seconds for services to start.
 ## Step 3: Access Open Notebook (instant)
 
 Open your browser:
+
 ```
 http://localhost:8502
 ```
@@ -102,6 +99,7 @@ You should see the Open Notebook interface!
 ## Using Different Models
 
 In your notebook, go to **Settings** → **Models** to choose:
+
 - `gpt-4o` - Best quality (recommended)
 - `gpt-4o-mini` - Fast and cheap (good for testing)
 
@@ -112,9 +110,10 @@ In your notebook, go to **Settings** → **Models** to choose:
 ### "Port 8502 already in use"
 
 Change the port in docker-compose.yml:
+
 ```yaml
 ports:
-  - "8503:8502"  # Use 8503 instead
+  - "8503:8502" # Use 8503 instead
 ```
 
 Then access at `http://localhost:8503`
@@ -146,6 +145,7 @@ docker compose restart  # Restart everything
 ## Cost Estimate
 
 OpenAI pricing (approximate):
+
 - **Conversation**: $0.01-0.10 per 1K tokens
 - **Embeddings**: $0.02 per 1M tokens
 - **Typical usage**: $1-5/month for light use, $20-50/month for heavy use

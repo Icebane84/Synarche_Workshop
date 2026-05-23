@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -22,8 +21,7 @@ import re
 
 
 class LoomParser:
-    """
-    WHAT: Extracts active state data from the Synarche Loom.
+    """WHAT: Extracts active state data from the Synarche Loom.
     HOW: Utilizes Regex anchors to pull Mission and Phase variables.
     WHY: To translate human-readable markdown into machine-readable logic.
     """
@@ -32,11 +30,12 @@ class LoomParser:
     PHASE_PATTERN = re.compile(r"Phase:\s*(.*)")
 
     def __init__(self, root_dir: str) -> None:
-        self.loom_path = os.path.join(root_dir, "Flattened_Synarche_Synthesis_System_Loom.md")
+        self.loom_path = os.path.join(
+            root_dir, "Flattened_Synarche_Synthesis_System_Loom.md"
+        )
 
     def extract_state(self) -> dict[str, str]:
-        """
-        Extracts the current mission and phase state from the Loom substrate.
+        """Extracts the current mission and phase state from the Loom substrate.
 
         Returns:
             Dict[str, str]: A dictionary containing the mission and phase values.
@@ -44,6 +43,7 @@ class LoomParser:
         Raises:
             FileNotFoundError: If the Loom file is missing.
             RuntimeError: If the Loom file cannot be read.
+
         """
         if not os.path.exists(self.loom_path):
             raise FileNotFoundError(f"CRITICAL: Substrate missing at {self.loom_path}")

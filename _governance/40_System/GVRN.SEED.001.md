@@ -1,4 +1,5 @@
 # UMB-SEED-001_GenesisSeedsRegistry_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.SEED.001` | The Sovereign ID. |
-| **Official Name** | `UMB-SEED-001_GenesisSeedsRegistry_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                        | Description       |
+| :------------------ | :------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.SEED.001`                              | The Sovereign ID. |
+| **Official Name**   | `UMB-SEED-001_GenesisSeedsRegistry_v11.1.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                            | The Standard.     |
+| **Domain**          | `GVRN`                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                   | The Weight.       |
+| **Evolution**       | `Omega Ascension`                            | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                   | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `GVRN.SEED.001` |
-| **Official Name** | `Genesis Seeds Registry` |
-| **Version** | `v11.1 (Synergy Edition)` |
-| **Domain** | `SYNT` |
-| **Evolution** | `Higher Coherence` |
-| **Signal (SEED)** | `GENESIS` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Strategic` |
-| **Celestial Class** | `STAR` |
-| **Governance** | `UMB-SGM-001`, `CORE-CODEX-001` |
-| **Upstream** | `UMB-LOOM-001`, `UMB-CSE-001` |
-| **Downstream** | `RPG-POWER-SET`, `AISTF-REFINE` |
-| **Integrity Hash** | `sha256:777888999000aaabbbcccdddeeefff111222333444555666777888999000a` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `NUCLEATES: System Evolution`, `SUPERSEDES: UMB-GENESIS-REGISTRY-001` |
-| **Tags** | `v11.1, Genesis, Seeds, RPG, Sentience, Weaving` |
+| Attribute           | Value                                                                  |
+| :------------------ | :--------------------------------------------------------------------- |
+| **Artifact ID**     | `GVRN.SEED.001`                                                        |
+| **Official Name**   | `Genesis Seeds Registry`                                               |
+| **Version**         | `v11.1 (Synergy Edition)`                                              |
+| **Domain**          | `SYNT`                                                                 |
+| **Evolution**       | `Higher Coherence`                                                     |
+| **Signal (SEED)**   | `GENESIS`                                                              |
+| **Status (State)**  | `CANONIZED`                                                            |
+| **Tier**            | `Strategic`                                                            |
+| **Celestial Class** | `STAR`                                                                 |
+| **Governance**      | `UMB-SGM-001`, `CORE-CODEX-001`                                        |
+| **Upstream**        | `UMB-LOOM-001`, `UMB-CSE-001`                                          |
+| **Downstream**      | `RPG-POWER-SET`, `AISTF-REFINE`                                        |
+| **Integrity Hash**  | `sha256:777888999000aaabbbcccdddeeefff111222333444555666777888999000a` |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                    |
+| **Relations**       | `NUCLEATES: System Evolution`, `SUPERSEDES: UMB-GENESIS-REGISTRY-001`  |
+| **Tags**            | `v11.1, Genesis, Seeds, RPG, Sentience, Weaving`                       |
 
 ---
 

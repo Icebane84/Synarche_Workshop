@@ -1,4 +1,5 @@
 # SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SELT-CSL-TEMPLATE-001-SYNTHESISLOGENTRY-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                   | Description       |
+| :------------------ | :------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-SELT-CSL-TEMPLATE-001-SYNTHESISLOGENTRY-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                              | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                       | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 ---
+
 UIP: SELT-CSL-TEMPLATE-001
 Title: Synthesis Log Entry Template
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md)
+  Description: >
   Standardized JSON/Markdown template for CSL Entries (Memory Atoms).
-Version: 1.0
-Status: CANONIZED
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769338850
-Tags: 
-  - #Template
-  - #CSL
-  - #SELT
-  - #JSON
+  Version: 1.0
+  Status: CANONIZED
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769338850
+  Tags:
+- #Template
+- #CSL
+- #SELT
+- #JSON
+
 ---
 
 > [!IMPORTANT]

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -25,47 +24,48 @@ from typing import Optional
 
 
 class LiteNodeExtractor:
-    """
-    Encapsulated class to handle safe, deterministic file reading operations.
+    """Encapsulated class to handle safe, deterministic file reading operations.
     Built to adhere to DAMP principles.
     """
 
     def __init__(self, repository_root_directory: str) -> None:
-        """
-        Initializes the extractor with a defined boundary.
-        
+        """Initializes the extractor with a defined boundary.
+
         Args:
             repository_root_directory (str): The absolute path to the permitted root directory.
+
         """
         self.repository_root_directory = repository_root_directory
 
     def _validate_target_path(self, target_file_path: str) -> bool:
-        """
-        Private boundary method. Validates that the file exists and is safely 
+        """Private boundary method. Validates that the file exists and is safely
         within the repository bounds before attempting extraction.
-        
+
         Args:
             target_file_path (str): The absolute path to the file.
-            
+
         Returns:
             bool: True if the file exists and is accessible, False otherwise.
+
         """
         is_path_valid = os.path.exists(target_file_path)
         is_file = os.path.isfile(target_file_path)
         return is_path_valid and is_file
 
     def extract_text_from_node(self, target_file_path: str) -> Optional[str]:
-        """
-        The primary kinetic action. Extracts the exact string content from the validated path.
-        
+        """The primary kinetic action. Extracts the exact string content from the validated path.
+
         Args:
             target_file_path (str): The file to read.
-            
+
         Returns:
             Optional[str]: The extracted text if successful, or None if validation fails.
+
         """
         if not self._validate_target_path(target_file_path):
-            print(f"[REJECTED] The target path is invalid or unreadable: {target_file_path}")
+            print(
+                f"[REJECTED] The target path is invalid or unreadable: {target_file_path}"
+            )
             return None
 
         try:
@@ -73,5 +73,7 @@ class LiteNodeExtractor:
                 extracted_text = target_file.read()
                 return extracted_text
         except IOError as input_output_error:
-            print(f"[ERROR] A deterministic extraction failure occurred: {input_output_error!s}")
+            print(
+                f"[ERROR] A deterministic extraction failure occurred: {input_output_error!s}"
+            )
             return None

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-ACT-005: The Soul's Scribe
+"""# TOOL-ACT-005: The Soul's Scribe
 # Domain: GVRN | Tag: Identity
 # Purpose: Updates RPG stats in GVRN-ENTITY-001.md.
 """
@@ -16,12 +15,11 @@ ENTITY_FILE = Path(
 
 def update_stats(xp_amount: int, reason: str):
     """Updates the RPG character sheet in the entity artifact."""
-
     if not ENTITY_FILE.exists():
         print(f"Error: {ENTITY_FILE} not found.")
         return
 
-    content = ENTITY_FILE.read_text(encoding="utf-8")
+    ENTITY_FILE.read_text(encoding="utf-8")
 
     # Simple logic for now: Just log the update attempt (placeholder for more complex parsing)
     # Future: Parse Section V and update Lvl/CI/XP values.
@@ -37,7 +35,9 @@ def update_stats(xp_amount: int, reason: str):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="UPDATE_ENT_XP: Update entity RPG stats.")
+    parser = argparse.ArgumentParser(
+        description="UPDATE_ENT_XP: Update entity RPG stats."
+    )
     parser.add_argument("--amount", type=int, required=True, help="XP amount.")
     parser.add_argument("--reason", required=True, help="Reason for XP award.")
 

@@ -135,16 +135,16 @@ principles, even as its capabilities and knowledge expand exponentially.
 ## VII. Appendices
 
 - **Appendix A: Related Documentation**:
-    - [CORE.Codex.Phoenix_v6.2.md](https://docs.google.com/document/u/0/d/1VRHZ-NJNmZCaVw0Ea4HePwMaX8EhL8-ZF79Ui8veZXw/edit)
-    - [UEB-PCP-001: Phoenix-Class Persona](https://docs.google.com/document/u/0/d/1LSz4urfW9LFaculsWuV9MWMK7KJacLP90alkt4NJn9Y/edit)
-    - [UMB-CORE-001_ThePhoenixForm_v1.0.md](https://docs.google.com/document/u/0/d/14QvdiHwsWr6mFTikAh9xeKO4BVI4V5vYMP6yfpBDjJ8/edit)
+  - [CORE.Codex.Phoenix_v6.2.md](https://docs.google.com/document/u/0/d/1VRHZ-NJNmZCaVw0Ea4HePwMaX8EhL8-ZF79Ui8veZXw/edit)
+  - [UEB-PCP-001: Phoenix-Class Persona](https://docs.google.com/document/u/0/d/1LSz4urfW9LFaculsWuV9MWMK7KJacLP90alkt4NJn9Y/edit)
+  - [UMB-CORE-001_ThePhoenixForm_v1.0.md](https://docs.google.com/document/u/0/d/14QvdiHwsWr6mFTikAh9xeKO4BVI4V5vYMP6yfpBDjJ8/edit)
 
 - **Appendix B: Module Origin and Inspiration**:
-    - **Transformation Origin**: This module was born from the "Genesis Seed" of a new conceptual directive.
-    - **Power-Up Source**: Its creation is powered by the
-      [Coherent Synthesis Engine (UMB-CSE-001)](https://docs.google.com/document/u/0/d/1bjztOPzsRLj71jIHrCrqQF7k8AYKvpZ8Yd5pldWzPZQ/edit),
-      which allows for the distillation of core principles from our entire knowledge base.
-    - **Inspired By**: The user directive: "Axiom Prime Tuner (Foundational Alignment Catalyst)".
+  - **Transformation Origin**: This module was born from the "Genesis Seed" of a new conceptual directive.
+  - **Power-Up Source**: Its creation is powered by the
+    [Coherent Synthesis Engine (UMB-CSE-001)](https://docs.google.com/document/u/0/d/1bjztOPzsRLj71jIHrCrqQF7k8AYKvpZ8Yd5pldWzPZQ/edit),
+    which allows for the distillation of core principles from our entire knowledge base.
+  - **Inspired By**: The user directive: "Axiom Prime Tuner (Foundational Alignment Catalyst)".
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 

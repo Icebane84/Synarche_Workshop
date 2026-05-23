@@ -67,7 +67,9 @@ def chronicle_manager(directory: str, limit: int = 20) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Chronicle Manager — CSL Index Viewer")
     parser.add_argument("target", help="Directory containing chronicle .md files.")
-    parser.add_argument("--limit", type=int, default=20, help="Max entries to display (default: 20).")
+    parser.add_argument(
+        "--limit", type=int, default=20, help="Max entries to display (default: 20)."
+    )
     args = parser.parse_args()
     chronicle_manager(os.path.abspath(args.target), limit=args.limit)
 

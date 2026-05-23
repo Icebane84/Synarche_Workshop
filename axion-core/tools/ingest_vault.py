@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-MAGI-001`                                |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **Total Recall**                               |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `LINK: [CHAR-AXION-001]`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 
 ---
 
@@ -88,7 +87,9 @@ def determine_entity_type(rel_path: Path) -> str:
     return type_map.get(parent_dir, "concept")
 
 
-def upsert_batch(client: Any, table: str, data: list[dict[str, Any]], batch_size: int = 100) -> None:
+def upsert_batch(
+    client: Any, table: str, data: list[dict[str, Any]], batch_size: int = 100
+) -> None:
     """Helper to batch upsert data to Supabase."""
     logger.info(f"[INFO] Upserting {len(data)} items into '{table}'...")
     for i in range(0, len(data), batch_size):
@@ -97,7 +98,9 @@ def upsert_batch(client: Any, table: str, data: list[dict[str, Any]], batch_size
             client.table(table).upsert(batch, on_conflict="id").execute()
             logger.info(f"   Processed {i} to {i + len(batch)}")
         except Exception:
-            logger.exception(f"[!] Batch upsert failed for table '{table}' at index {i}")
+            logger.exception(
+                f"[!] Batch upsert failed for table '{table}' at index {i}"
+            )
 
 
 def process_entities(files: list[Path]) -> tuple[list[dict[str, Any]], dict[str, str]]:

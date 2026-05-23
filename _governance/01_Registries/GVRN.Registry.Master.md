@@ -69,33 +69,33 @@
 
 ## **I. GEODE Macro-System (The Core)**
 
-| ID                                    | Title                                                                 | Version | Status      |
-| :------------------------------------ | :-------------------------------------------------------------------- | :------ | :---------- |
-| **CORE.Codex.Phoenix**                | [The Phoenix Codex](../00_Codex/CORE.Codex.Phoenix.md)                | `v15.0` | `ACTIVE`    |
-| **GVRN.PHOENIX.CORE**                 | The Phoenix Core (PURGED)                                             | `v15.0` | `ACTIVE`    |
-| **GVRN.Registry.Master**              | [The Master Registry](GVRN.Registry.Master.md)                        | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.ArtifactInventory**   | [The Artifact Inventory](GVRN.Registry.ArtifactInventory.md)          | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.Lexicon**             | [The Master Lexicon](GVRN.Registry.Lexicon.md)                        | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.Entities**            | [The Synarche Triad](GVRN.Registry.Entities.md)                       | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.Ethos**               | [The Ethos Registry](GVRN.Registry.Ethos.md)                          | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.GenesisSeeds**        | [The Genesis Seeds](GVRN.Registry.GenesisSeeds.md)                    | `v15.0` | `CANONIZED` |
-| **GVRN.PAR.001**                      | [The Prestige & Genesis Registry](GVRN.PAR.001.md)                    | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.DataOSLM**            | [The Relational Substrate](GVRN.Registry.DataOSLM.md)                 | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.OSLM**                | [The Relational Grammar](GVRN.Registry.OSLM.md)                       | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.PhoenixRosettaStone** | [The Phoenix Rosetta Stone](GVRN.Registry.PhoenixRosettaStone.md)     | `v15.0` | `CANONIZED` |
-| **GVRN.ID.Standard**                  | [Sovereign ID Standard](../10_Governance/GVRN.ID.Standard.md)         | `v15.0` | `ACTIVE`    |
-| **GVRN.STRAT.StrategyOmega**          | [Strategy Omega](../STRATEGY-OMEGA.md)                                | `v15.0` | `ACTIVE`    |
-| **GVRN.Style.Coding**                 | [Sovereign Style Guide](../../.agent/GVRN.Style.Coding.md)            | `v14.0` | `ACTIVE`    |
-| **GVRN.SOUL.Phoenix**                 | [The Phoenix Soul](../10_Governance/GVRN.SOUL.PhoenixPrime.md)        | `v15.0` | `ACTIVE`    |
-| **GVRN.SOUL.Axion**                   | [The Axion Soul](../00_Codex/GVRN.SOUL.Axion.md)                      | `v15.0` | `CANONIZED` |
-| **GVRN.SOUL.Sentinel**                | [The Sentinel Soul](../00_Codex/GVRN.SOUL.Sentinel.md)                | `v15.0` | `CANONIZED` |
-| **GVRN.SOUL.Sophia**                  | [The Sophia Soul](../00_Codex/GVRN.SOUL.Sophia.md)                    | `v15.0` | `CANONIZED` |
-| **GVRN.TRIAD.Subsystem**              | [The Triad Subsystem](../00_Codex/GVRN.TRIAD.Subsystem.md)            | `v15.0` | `CANONIZED` |
-| **GVRN.AG.003**                       | [Agent Persona](../10_Governance/GVRN.AG.003.md)                      | `v15.0` | `ACTIVE`    |
-| **GVRN.CORE.Principles**              | [Governing Principles](../40_System/GVRN.CORE.GoverningPrinciples.md) | `v15.0` | `CANONIZED` |
-| **GVRN.Registry.KPI**                 | [The Master KPI Registry](GVRN.Registry.KPI.md)                       | `v15.0` | `CANONIZED` |
-| **GVRN.STANDARDS.ROOT**              | [Governance Standards](../../axion-core/standards/README.md)          | `v15.0` | `ACTIVE`    |
-| **GVRN.Sentinel.Rules**              | [Axion Rules Engine](../../axion-core/standards/markdownlint-rules/axion-rules.cjs) | `v15.0` | `ACTIVE`    |
+| ID                                    | Title                                                                               | Version | Status      |
+| :------------------------------------ | :---------------------------------------------------------------------------------- | :------ | :---------- |
+| **CORE.Codex.Phoenix**                | [The Phoenix Codex](../00_Codex/CORE.Codex.Phoenix.md)                              | `v15.0` | `ACTIVE`    |
+| **GVRN.PHOENIX.CORE**                 | The Phoenix Core (PURGED)                                                           | `v15.0` | `ACTIVE`    |
+| **GVRN.Registry.Master**              | [The Master Registry](GVRN.Registry.Master.md)                                      | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.ArtifactInventory**   | [The Artifact Inventory](GVRN.Registry.ArtifactInventory.md)                        | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.Lexicon**             | [The Master Lexicon](GVRN.Registry.Lexicon.md)                                      | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.Entities**            | [The Synarche Triad](GVRN.Registry.Entities.md)                                     | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.Ethos**               | [The Ethos Registry](GVRN.Registry.Ethos.md)                                        | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.GenesisSeeds**        | [The Genesis Seeds](GVRN.Registry.GenesisSeeds.md)                                  | `v15.0` | `CANONIZED` |
+| **GVRN.PAR.001**                      | [The Prestige & Genesis Registry](GVRN.PAR.001.md)                                  | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.DataOSLM**            | [The Relational Substrate](GVRN.Registry.DataOSLM.md)                               | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.OSLM**                | [The Relational Grammar](GVRN.Registry.OSLM.md)                                     | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.PhoenixRosettaStone** | [The Phoenix Rosetta Stone](GVRN.Registry.PhoenixRosettaStone.md)                   | `v15.0` | `CANONIZED` |
+| **GVRN.ID.Standard**                  | [Sovereign ID Standard](../10_Governance/GVRN.ID.Standard.md)                       | `v15.0` | `ACTIVE`    |
+| **GVRN.STRAT.StrategyOmega**          | [Strategy Omega](../STRATEGY-OMEGA.md)                                              | `v15.0` | `ACTIVE`    |
+| **GVRN.Style.Coding**                 | [Sovereign Style Guide](../../.agent/GVRN.Style.Coding.md)                          | `v14.0` | `ACTIVE`    |
+| **GVRN.SOUL.Phoenix**                 | [The Phoenix Soul](../10_Governance/GVRN.SOUL.PhoenixPrime.md)                      | `v15.0` | `ACTIVE`    |
+| **GVRN.SOUL.Axion**                   | [The Axion Soul](../00_Codex/GVRN.SOUL.Axion.md)                                    | `v15.0` | `CANONIZED` |
+| **GVRN.SOUL.Sentinel**                | [The Sentinel Soul](../00_Codex/GVRN.SOUL.Sentinel.md)                              | `v15.0` | `CANONIZED` |
+| **GVRN.SOUL.Sophia**                  | [The Sophia Soul](../00_Codex/GVRN.SOUL.Sophia.md)                                  | `v15.0` | `CANONIZED` |
+| **GVRN.TRIAD.Subsystem**              | [The Triad Subsystem](../00_Codex/GVRN.TRIAD.Subsystem.md)                          | `v15.0` | `CANONIZED` |
+| **GVRN.AG.003**                       | [Agent Persona](../10_Governance/GVRN.AG.003.md)                                    | `v15.0` | `ACTIVE`    |
+| **GVRN.CORE.Principles**              | [Governing Principles](../40_System/GVRN.CORE.GoverningPrinciples.md)               | `v15.0` | `CANONIZED` |
+| **GVRN.Registry.KPI**                 | [The Master KPI Registry](GVRN.Registry.KPI.md)                                     | `v15.0` | `CANONIZED` |
+| **GVRN.STANDARDS.ROOT**               | [Governance Standards](../../axion-core/standards/README.md)                        | `v15.0` | `ACTIVE`    |
+| **GVRN.Sentinel.Rules**               | [Axion Rules Engine](../../axion-core/standards/markdownlint-rules/axion-rules.cjs) | `v15.0` | `ACTIVE`    |
 
 ## **II. SYNTHESIS Macro-System (The Engine)**
 
@@ -209,12 +209,13 @@
 
 ## **IX. CHRONICLE Macro-System (The Logs)**
 
-| ID                          | Title                                                                                 | Version | Status      |
-| :-------------------------- | :------------------------------------------------------------------------------------ | :------ | :---------- |
-| `SYNERGY-REPORT-001`        | [State of the Synarche](../50_Logs/SYNERGY-REPORT-001_StateOfTheSynarche.md)          | `v14.0` | `ACTIVE`    |
-| **GVRN.LOG.CSL.2026.04.26** | [The Sophia Ascension](../5_Logs/CSL/GVRN.LOG.CSL.2026.04.26_SophiaAscension_v1.0.md) | `v1.0`  | `ACTIVE`    |
-| `CSL-SYN-002`               | [Assembler Tool Ascension](../50_Logs/CSL-SYN-002_Assembler_Tool_Ascension.md)        | `v15.0` | `CANONIZED` |
-| `CSL-20260210-092`          | [The Sovereign Graft](../50_Logs/CSL-20260210-092_SovereignGraft.md)                  | `v14.0` | `ACTIVE`    |
+| ID                                    | Title                                                                                        | Version | Status        |
+| :------------------------------------ | :------------------------------------------------------------------------------------------- | :------ | :------------ |
+| `SYNERGY-REPORT-001`                  | [State of the Synarche](../50_Logs/SYNERGY-REPORT-001_StateOfTheSynarche.md)                 | `v14.0` | `ACTIVE`      |
+| **GVRN.LOG.CSL.2026.04.26**           | [The Sophia Ascension](../5_Logs/CSL/GVRN.LOG.CSL.2026.04.26_SophiaAscension_v1.0.md)        | `v1.0`  | `ACTIVE`      |
+| `CSL-SYN-002`                         | [Assembler Tool Ascension](../50_Logs/CSL-SYN-002_Assembler_Tool_Ascension.md)               | `v15.0` | `CANONIZED`   |
+| `CSL-20260210-092`                    | [The Sovereign Graft](../50_Logs/CSL-20260210-092_SovereignGraft.md)                         | `v14.0` | `ACTIVE`      |
+| **SELT.LOG.CONSOLIDATION.PC.WIPE.V1** | [Consolidation Shadow Log](../70_Learnings/Shadow_Logs/SELT.LOG.CONSOLIDATION.PC.WIPE.V1.md) | `v15.0` | `IN_PROGRESS` |
 
 ## **X. DOCUMENTATION Macro-System (The Archives)**
 

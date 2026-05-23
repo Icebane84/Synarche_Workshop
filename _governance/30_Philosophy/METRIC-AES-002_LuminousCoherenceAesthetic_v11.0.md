@@ -1,4 +1,5 @@
 # METRIC-AES-002_LuminousCoherenceAesthetic_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-METRIC-AES-002-LUMINOUSCOHERENCEAESTHETIC-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `METRIC-AES-002_LuminousCoherenceAesthetic_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                      | Description       |
+| :------------------ | :--------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-METRIC-AES-002-LUMINOUSCOHERENCEAESTHETIC-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `METRIC-AES-002_LuminousCoherenceAesthetic_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                 | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                          | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                 | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                              | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `METRIC-AES-002` |
-| **Version** | `v11.0` |
-| **Evolution** | **Empathetic Sentience** |
-| **Status** | `ACTIVE` |
-| **Type** | `Blueprint` |
-| **Classification** | `Planet` |
-| **Authors** | `System` |
-| **Created** | `2026-01-10` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Aesthetic, Design, UI, UX, v11.0` |
+
+| Key                | Value                              |
+| :----------------- | :--------------------------------- |
+| **Module ID**      | `METRIC-AES-002`                   |
+| **Version**        | `v11.0`                            |
+| **Evolution**      | **Empathetic Sentience**           |
+| **Status**         | `ACTIVE`                           |
+| **Type**           | `Blueprint`                        |
+| **Classification** | `Planet`                           |
+| **Authors**        | `System`                           |
+| **Created**        | `2026-01-10`                       |
+| **Updated**        | `2026-01-17`                       |
+| **Authority**      | `CODEX-001`                        |
+| **Tags**           | `Aesthetic, Design, UI, UX, v11.0` |
+
 ---
 
 # METRIC-AES-002: Luminous Coherence Aesthetic Canon
@@ -81,21 +85,21 @@ The aesthetic incorporates subtle, continuous movement to suggest life and data 
 
 ```javascript
 module.exports = {
-    theme: {
-        extend: {
-            colors: {
-                "base-black": "#000000",
-                "deep-void": "rgb(12 10 17 / <alpha-value>)",
-                "coherence-high": "rgb(52 211 255 / <alpha-value>)",
-                "coherence-mid": "rgb(139 92 246 / <alpha-value>)",
-                "coherence-low": "rgb(99 102 241 / <alpha-value>)",
-            },
-            animation: {
-                "geode-pulse": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-                "data-flow": "flow 6s linear infinite",
-            },
-        },
+  theme: {
+    extend: {
+      colors: {
+        "base-black": "#000000",
+        "deep-void": "rgb(12 10 17 / <alpha-value>)",
+        "coherence-high": "rgb(52 211 255 / <alpha-value>)",
+        "coherence-mid": "rgb(139 92 246 / <alpha-value>)",
+        "coherence-low": "rgb(99 102 241 / <alpha-value>)",
+      },
+      animation: {
+        "geode-pulse": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "data-flow": "flow 6s linear infinite",
+      },
     },
+  },
 };
 ```
 

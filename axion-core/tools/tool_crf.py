@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-CRF-001: Causal Resonance Finder CLI (Sentinel Suite)
+"""# TOOL-CRF-001: Causal Resonance Finder CLI (Sentinel Suite).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |

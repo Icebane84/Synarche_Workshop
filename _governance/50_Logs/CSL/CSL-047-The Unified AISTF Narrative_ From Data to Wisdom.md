@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md
+# CSL-047-The Unified AISTF Narrative\_ From Data to Wisdom.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-047-THE-UNIFIED-AISTF-NARRATIVE--FROM-DATA-TO-WISDOM-001` | The Sovereign ID. |
-| **Official Name** | `CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                               | Description       |
+| :------------------ | :------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-047-THE-UNIFIED-AISTF-NARRATIVE--FROM-DATA-TO-WISDOM-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-047-The Unified AISTF Narrative_ From Data to Wisdom.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                   | The Standard.     |
+| **Domain**          | `GVRN`                                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                       | The Network.      |
 
 Collaborative Synthesis Log
 

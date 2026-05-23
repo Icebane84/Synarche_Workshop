@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-PTAS-001` |
-| **2. Official Name** | `AOP-PTAS-001_TemplateAbsorptionProtocol_v5.2.md` |
-| **3. Version** | **v5.2 (Catalyst Infused)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `[LINK: OGLN.Core.Governance.Codex](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/PHOENIX_UPLOAD_ZONE/OGLN.Core.Governance.Codex_v10.0.md)` |
+| Field                  | Value                                                                                                                                       |
+| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| **1. Artifact ID**     | `AOP-PTAS-001`                                                                                                                              |
+| **2. Official Name**   | `AOP-PTAS-001_TemplateAbsorptionProtocol_v5.2.md`                                                                                           |
+| **3. Version**         | **v5.2 (Catalyst Infused)**                                                                                                                 |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                                                                                                               |
+| **5. Domain**          | `ARCH`                                                                                                                                      |
+| **6. Evolution**       | **Purposeful Drive**                                                                                                                        |
+| **7. Celestial Class** | `[PLANET]`                                                                                                                                  |
+| **8. Tier**            | **Operational**                                                                                                                             |
+| **9. State**           | `[ACTIVE]`                                                                                                                                  |
+| **10. Ethos**          | **Guardian of Coherence**                                                                                                                   |
+| **11. Catalyst**       | **System Refactor**                                                                                                                         |
+| **12. Relations**      | `[LINK: OGLN.Core.Governance.Codex](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/PHOENIX_UPLOAD_ZONE/OGLN.Core.Governance.Codex_v10.0.md)` |
 
 ---
 
@@ -46,7 +46,7 @@
 ## **II. Axiomatic Governance & Purpose (AGP)**
 
 - **What**: The standardized protocol for ingesting, validating, and integrating external data (templates/artifacts)
-into the system.
+  into the system.
 - **Why**: To prevent "Epistemic Entropy" by ensuring all new knowledge passes through the **Eight Gates of Ingestion**.
 - **How**: By transforming raw input -> Distillates -> Canonized Artifacts.
 
@@ -75,11 +75,11 @@ into the system.
 
 ## **Actionable Prompt Packet**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: ABSORB_ARTIFACT` | `CMD: ABSORB_ARTIFACT --source: [File] --mode: [Analyze|Integrate]` | **Ingest:** Runs the 8-Gate Process. |
-| `CMD: CATALYZE_ARTIFACT` | `CMD: CATALYZE_ARTIFACT --target: [ID]` | **Activate:** Checks for transformational potential. |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                                                  | Impact                                               |
+| :--------------------------- | :------------------------------------------------------ | :--------------------------------------------------- | ------------------------------------ |
+| `CMD: ABSORB_ARTIFACT`       | `CMD: ABSORB_ARTIFACT --source: [File] --mode: [Analyze | Integrate]`                                          | **Ingest:** Runs the 8-Gate Process. |
+| `CMD: CATALYZE_ARTIFACT`     | `CMD: CATALYZE_ARTIFACT --target: [ID]`                 | **Activate:** Checks for transformational potential. |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure.                              | Ensures compliance with Law 14.                      |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects.                              | Prevents regressions.                                |
 
 **[ARTIFACT END]**

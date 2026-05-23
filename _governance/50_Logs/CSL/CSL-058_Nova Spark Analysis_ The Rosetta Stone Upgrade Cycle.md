@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md
+# CSL-058*Nova Spark Analysis* The Rosetta Stone Upgrade Cycle.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-058-NOVA-SPARK-ANALYSIS--THE-ROSETTA-STONE-UPGRADE-CYCLE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                   | Description       |
+| :------------------ | :---------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-058-NOVA-SPARK-ANALYSIS--THE-ROSETTA-STONE-UPGRADE-CYCLE-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                              | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                       | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                              | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                           | The Network.      |
 
 **Collaborative Synthesis Log: The Rosetta Stone Upgrade**
 
@@ -131,7 +132,7 @@ AI.
 #### **IV. Overarching Insights & Reflections**
 
 The primary insight from this session is that the Phoenix Protocol
-framework is not just a system for *producing* documentation; it *is*
+framework is not just a system for _producing_ documentation; it _is_
 the documentation in action. We successfully used the system\'s defined
 protocols to build and refine a core component of the system itself,
 proving the viability of its recursive, self-governing design. The

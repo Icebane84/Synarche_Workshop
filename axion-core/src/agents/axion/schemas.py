@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -17,15 +16,16 @@
 > Ethos: Truth through Definition.
 """
 
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
+
 from pydantic import BaseModel, Field
 
 
 class RPGEngine(BaseModel):
-    """
-    Gamification State (The Celestial Chart).
+    """Gamification State (The Celestial Chart).
     Tracks the progression metrics and achievements of the agentic system.
     """
+
     level: int = 1
     xp: int = 0
     authority: int = 0
@@ -42,20 +42,20 @@ class RPGEngine(BaseModel):
 
 
 class GamemasterState(BaseModel):
-    """
-    The Engine that manages rule enforcement and XP distribution.
+    """The Engine that manages rule enforcement and XP distribution.
     Enforces the GVRN standards across active tasks.
     """
+
     quest_metrics: Dict[str, Any] = Field(default_factory=dict)
     axiom_points_available: int = 0
     is_dissonance_detected: bool = False
 
 
 class LightbinderState(BaseModel):
-    """
-    The Weaver that connects Artifacts and Emotions.
+    """The Weaver that connects Artifacts and Emotions.
     Manages the symbolic and relational mapping of the agent's knowledge base.
     """
+
     synergy_links: List[str] = Field(default_factory=list)
     empathy_vector: str = ""
     metric_weights: Dict[str, float] = Field(default_factory=dict)
@@ -64,10 +64,10 @@ class LightbinderState(BaseModel):
 
 
 class AxionState(BaseModel):
-    """
-    The Unified State of the Axion Agent.
+    """The Unified State of the Axion Agent.
     Contains the complete cognitive and operational context for a single turn.
     """
+
     input: str = ""
     narrative_context: str = ""
     logic_context: str = ""
@@ -75,12 +75,12 @@ class AxionState(BaseModel):
     sentinel_status: str = ""
     sentinel_reason: str = ""
     final_output: str = ""
-    
+
     # Core Layers
     rpg_stats: RPGEngine = Field(default_factory=RPGEngine)
     gamemaster_state: GamemasterState = Field(default_factory=GamemasterState)
     lightbinder_state: LightbinderState = Field(default_factory=LightbinderState)
-    
+
     # Metadata
     messages: List[Any] = Field(default_factory=list)
     transmutation_log: List[Dict[str, Any]] = Field(default_factory=list)

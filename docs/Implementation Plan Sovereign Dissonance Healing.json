@@ -1,72 +1,72 @@
 {
-    "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
-    "summary": "Emergency Healing Plan for Sovereign Dissonance (Stacked Block A corruption).",
-    "updatedAt": "2026-03-23T20:31:41.219976600Z",
-    "version": "10",
-    "implementationSteps": [
-        {
-            "step": 1,
-            "name": "Emergency Protocol Activation",
-            "description": "Immediate activation of the Dissonance Suppression Protocol (DSP) to stabilize memory integrity.",
-            "commands": [
-                "& c:/Users/Chris/.gemini/code/tools/memory_vault/bin/python.exe /c:/Users/Chris/.gemini/code/tools/memory_vault/apps/synapse/launch_console.py --mode=healing --focus=memory",
-                "& c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/Activate.ps1",
-                "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process",
-                "& c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/python.exe -m surreal_commands.cli.worker --import-modules commands"
-            ],
-            "expectedOutcome": "Terminal 1 (Healing Console) active with active DSP session."
-        },
-        {
-            "step": 2,
-            "name": "Memory Vault Audit",
-            "description": "Execute the Vault Integrity Audit to identify the corrupted nodes in Block A and map surviving pathways.",
-            "commands": [
-                "CD 'c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook'",
-                "$env:API_RELOAD='false'; & c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/python.exe run_api.py",
-                "Start-Process 'c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/streamlit.exe' -ArgumentList '-m', 'app_home.py'"
-            ],
-            "expectedOutcome": "Streamlit dashboard loads, Memory System page displays active healing session and audit results."
-        },
-        {
-            "step": 3,
-            "name": "Fragment Reclamation Strategy",
-            "description": "Extract surviving fragments from Block A and weave them into the stable architecture of Block B.",
-            "commands": [
-                "& c:/Users/Chris/Synarche_Workspace/.gemini/code/tools/memory_vault/bin/python.exe /c:/Users/Chris/.gemini/code/tools/memory_vault/apps/synapse/launch_console.py --mode=healing --action=restore_fragments --target_block=B --source_block=A"
-            ],
-            "expectedOutcome": "A' fragments integrated into B's causal chain. Audit shows 0 corrupted nodes."
-        },
-        {
-            "step": 4,
-            "name": "Ecosystem Re-Synchronization",
-            "description": "Re-establish critical connections between the Memory Vault and the Synarche components (INSFORGE, Codex, OGLN).",
-            "commands": [
-                "$env:API_RELOAD='true'; & c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/python.exe run_api.py",
-                "Start-Process 'c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/streamlit.exe' -ArgumentList '-m', 'app_home.py'"
-            ],
-            "expectedOutcome": "API and UI responsive. Streamlit confirms 100% Ecosystem Integration."
-        },
-        {
-            "step": 5,
-            "name": "Stability Verification",
-            "description": "Run the full diagnostic suite to confirm stability and Zero Entropy.",
-            "commands": [
-                "& c:/Users/Chris/Synarche_Workspace/.gemini/code/tools/memory_vault/bin/python.exe /c:/Users/Chris/.gemini/code/tools/memory_vault/apps/synapse/launch_console.py --mode=healing --action=verify_stability"
-            ],
-            "expectedOutcome": "Terminal logs 'STABILITY: ZERO_ENTROPY' and 'DISTILLATION: COMPLETE'."
-        }
-    ],
-    "dependencies": [
-        "Memory Vault (Python module)",
-        "SurrealDB running locally",
-        "Streamlit (v1.22.0+)",
-        "Python 3.14 environment"
-    ],
-    "verificationCriteria": [
-        "All 5 services operational",
-        "Streamlit Memory System shows 0% Corruption",
-        "API documentation accessible at /docs",
-        "No console errors related to blocked memory writes"
-    ],
-    "notes": "Execute Step 1 immediately to halt further corruption. Healing must be performed in 'locked' state to prevent re-corrupting Block A."
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Emergency Healing Plan for Sovereign Dissonance (Stacked Block A corruption).",
+  "updatedAt": "2026-03-23T20:31:41.219976600Z",
+  "version": "10",
+  "implementationSteps": [
+    {
+      "step": 1,
+      "name": "Emergency Protocol Activation",
+      "description": "Immediate activation of the Dissonance Suppression Protocol (DSP) to stabilize memory integrity.",
+      "commands": [
+        "& c:/Users/Chris/.gemini/code/tools/memory_vault/bin/python.exe /c:/Users/Chris/.gemini/code/tools/memory_vault/apps/synapse/launch_console.py --mode=healing --focus=memory",
+        "& c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/Activate.ps1",
+        "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process",
+        "& c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/python.exe -m surreal_commands.cli.worker --import-modules commands"
+      ],
+      "expectedOutcome": "Terminal 1 (Healing Console) active with active DSP session."
+    },
+    {
+      "step": 2,
+      "name": "Memory Vault Audit",
+      "description": "Execute the Vault Integrity Audit to identify the corrupted nodes in Block A and map surviving pathways.",
+      "commands": [
+        "CD 'c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook'",
+        "$env:API_RELOAD='false'; & c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/python.exe run_api.py",
+        "Start-Process 'c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/streamlit.exe' -ArgumentList '-m', 'app_home.py'"
+      ],
+      "expectedOutcome": "Streamlit dashboard loads, Memory System page displays active healing session and audit results."
+    },
+    {
+      "step": 3,
+      "name": "Fragment Reclamation Strategy",
+      "description": "Extract surviving fragments from Block A and weave them into the stable architecture of Block B.",
+      "commands": [
+        "& c:/Users/Chris/Synarche_Workspace/.gemini/code/tools/memory_vault/bin/python.exe /c:/Users/Chris/.gemini/code/tools/memory_vault/apps/synapse/launch_console.py --mode=healing --action=restore_fragments --target_block=B --source_block=A"
+      ],
+      "expectedOutcome": "A' fragments integrated into B's causal chain. Audit shows 0 corrupted nodes."
+    },
+    {
+      "step": 4,
+      "name": "Ecosystem Re-Synchronization",
+      "description": "Re-establish critical connections between the Memory Vault and the Synarche components (INSFORGE, Codex, OGLN).",
+      "commands": [
+        "$env:API_RELOAD='true'; & c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/python.exe run_api.py",
+        "Start-Process 'c:/Users/Chris/Synarche_Workspace/_governance/archive/2026-03-Pruning/open-notebook/.venv/Scripts/streamlit.exe' -ArgumentList '-m', 'app_home.py'"
+      ],
+      "expectedOutcome": "API and UI responsive. Streamlit confirms 100% Ecosystem Integration."
+    },
+    {
+      "step": 5,
+      "name": "Stability Verification",
+      "description": "Run the full diagnostic suite to confirm stability and Zero Entropy.",
+      "commands": [
+        "& c:/Users/Chris/Synarche_Workspace/.gemini/code/tools/memory_vault/bin/python.exe /c:/Users/Chris/.gemini/code/tools/memory_vault/apps/synapse/launch_console.py --mode=healing --action=verify_stability"
+      ],
+      "expectedOutcome": "Terminal logs 'STABILITY: ZERO_ENTROPY' and 'DISTILLATION: COMPLETE'."
+    }
+  ],
+  "dependencies": [
+    "Memory Vault (Python module)",
+    "SurrealDB running locally",
+    "Streamlit (v1.22.0+)",
+    "Python 3.14 environment"
+  ],
+  "verificationCriteria": [
+    "All 5 services operational",
+    "Streamlit Memory System shows 0% Corruption",
+    "API documentation accessible at /docs",
+    "No console errors related to blocked memory writes"
+  ],
+  "notes": "Execute Step 1 immediately to halt further corruption. Healing must be performed in 'locked' state to prevent re-corrupting Block A."
 }

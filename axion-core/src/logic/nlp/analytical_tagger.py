@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**
 ## **Block A: The Identification Lock (UIP-V15)**
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
@@ -9,7 +8,7 @@
 | **Domain**        | `CORE`                     | The Subject.      |
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-## **[ARTIFACT END]**
+## **[ARTIFACT END]**.
 """
 
 import logging
@@ -23,6 +22,7 @@ except (ImportError, ValueError):
         AxionCognition = None
 
 logger = logging.getLogger(__name__)
+
 
 class AnalyticalTagger:
     """The Hermit's Lantern — Cognitive Tagging Hub."""
@@ -54,6 +54,7 @@ class AnalyticalTagger:
             tags.add("OMEGA_ALIGNED")
 
         return list(tags) if tags else ["UNTAGGED"]
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)

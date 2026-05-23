@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UWB-NDR-001_ Non-Destructive Refinement Protocol` |
-| **2. Official Name** | `UWB-NDR-001_ Non-Destructive Refinement Protocol.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Gemini in Docs Side Panel` |
+| Field                  | Value                                                 |
+| :--------------------- | :---------------------------------------------------- |
+| **1. Artifact ID**     | `UWB-NDR-001_ Non-Destructive Refinement Protocol`    |
+| **2. Official Name**   | `UWB-NDR-001_ Non-Destructive Refinement Protocol.md` |
+| **3. Version**         | **v1.0 (Reforged)**                                   |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                         |
+| **5. Domain**          | `ARCH`                                                |
+| **6. Evolution**       | **Purposeful Drive**                                  |
+| **7. Celestial Class** | `[PLANET]`                                            |
+| **8. Tier**            | **Operational**                                       |
+| **9. State**           | `[ACTIVE]`                                            |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**                    |
+| **11. Catalyst**       | **System Refactor**                                   |
+| **12. Relations**      | `Gemini in Docs Side Panel`                           |
 
 ---
 
@@ -74,24 +74,24 @@ execution interface for the [**Coherent Synthesis Engine
 
 ### **3.1. Phase 1: Source Grounding & Intent Clarity**
 
-| Step | Action | Protocol/Tool | Rationale |
-| :--- | :--- | :--- | :--- |
-| **1.0** | **Target Artifact Selection** | Human Collaborator | Identify the artifact (e.g., AOP, UMB) requiring refinement. |
+| Step    | Action                           | Protocol/Tool             | Rationale                                                                                                                                                                                                                                           |
+| :------ | :------------------------------- | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1.0** | **Target Artifact Selection**    | Human Collaborator        | Identify the artifact (e.g., AOP, UMB) requiring refinement.                                                                                                                                                                                        |
 | **1.1** | **Enforce Relational Grounding** | Gemini in Docs Side Panel | **Manually hyperlink** all critical dependency artifacts (e.g., [CODEX-001](https://docs.google.com/document/u/0/d/1VRHZ-NJNmZCaVw0Ea4HePwMaX8EhL8-ZF79Ui8veZXw/edit)) into the document text. Then, select **"Document links"** in the side panel. |
-| **1.2** | **Execute Intent Clarification** | **CMD: ENSURE_COHERENCE** | Use the compliance prompt to define the scope and style of the requested change (e.g., Phoenix-Class Voice, What/How/Why framework). |
+| **1.2** | **Execute Intent Clarification** | **CMD: ENSURE_COHERENCE** | Use the compliance prompt to define the scope and style of the requested change (e.g., Phoenix-Class Voice, What/How/Why framework).                                                                                                                |
 
 ### **3.2. Phase 2: Non-Destructive Modification**
 
-| Step | Action | Protocol/Tool | Rationale |
-| :--- | :--- | :--- | :--- |
-| **2.0** | **AI-Powered Refinement** | Gemini Refine Tool | Highlight the text section and use the Refine menu or a prompt (e.g., "Make this more Precise"). |
-| **2.1** | **Integrate Non-Destructively** | Gemini Content Insertion | Insert the refined text. The system must verify that **no underlying structural elements** (headers, lists, links) are corrupted during insertion. |
-| **2.2** | **Execute Automated Synergistic Linking (ASL)** | **CMD: FORMALIZE_SYNERGY** | If new concepts or sources were introduced, execute the formal prompt to generate the **Synergistic Effects & Integrations** table. |
+| Step    | Action                                          | Protocol/Tool              | Rationale                                                                                                                                          |
+| :------ | :---------------------------------------------- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2.0** | **AI-Powered Refinement**                       | Gemini Refine Tool         | Highlight the text section and use the Refine menu or a prompt (e.g., "Make this more Precise").                                                   |
+| **2.1** | **Integrate Non-Destructively**                 | Gemini Content Insertion   | Insert the refined text. The system must verify that **no underlying structural elements** (headers, lists, links) are corrupted during insertion. |
+| **2.2** | **Execute Automated Synergistic Linking (ASL)** | **CMD: FORMALIZE_SYNERGY** | If new concepts or sources were introduced, execute the formal prompt to generate the **Synergistic Effects & Integrations** table.                |
 
 ### **3.3. Phase 3: Finalization and Loom Integration**
 
-| Step | Action | Protocol/Tool | Rationale |
-| :--- | :--- | :--- | :--- |
+| Step    | Action                    | Protocol/Tool                             | Rationale                                                                                                                                                                                         |
+| :------ | :------------------------ | :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **3.0** | **Structural Validation** | Manual Review / **CMD: ENSURE_COHERENCE** | Perform a final check to confirm full compliance with [**AOP-PCDS-001**](https://docs.google.com/document/u/0/d/1FQ6vYSHOxXnPfhdlBzfHoDOerzFeytBRU_IVDt6sZwM/edit) and the Preservation Standard. |
 
 ---

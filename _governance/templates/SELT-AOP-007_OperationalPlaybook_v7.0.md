@@ -9,6 +9,7 @@
 ---
 
 # SELT-AOP-007_OperationalPlaybook_v7.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SELT-AOP-007-OPERATIONALPLAYBOOK-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-AOP-007_OperationalPlaybook_v7.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                            | Description       |
+| :------------------ | :----------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SELT-AOP-007-OPERATIONALPLAYBOOK-V7.0-001` | The Sovereign ID. |
+| **Official Name**   | `SELT-AOP-007_OperationalPlaybook_v7.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                | The Standard.     |
+| **Domain**          | `GVRN`                                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                       | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 # AOP: Operational Playbook (v7.0 Ascended)
 

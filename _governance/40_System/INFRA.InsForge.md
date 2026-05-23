@@ -9,9 +9,11 @@
 ---
 
 ---
+
 description: Sovereign Infrastructure - InsForge x Synarche Integration
-globs: *
+globs: \*
 alwaysApply: true
+
 ---
 
 ### **[ARTIFACT START]**

@@ -2,9 +2,7 @@
     "compilerOptions": {
         "target": "ES2022",
         "module": "NodeNext",
-        "lib": [
-            "ES2022"
-        ],
+        "lib": ["ES2022"],
         "sourceMap": true,
         "outDir": "out",
         "rootDir": "src",
@@ -15,46 +13,22 @@
         "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
         "paths": {
-            "@system/*": [
-                "./src/cse/*"
-            ],
-            "@domain/*": [
-                "./src/02_domain/*"
-            ],
-            "@nexus/*": [
-                "./src/nexus/*"
-            ],
-            "@fabric/*": [
-                "./src/03_fabric/*"
-            ],
-            "@atlas/*": [
-                "./src/01_atlas/*"
-            ],
-            "@essence/*": [
-                "./src/types/*"
-            ],
-            "@shield/*": [
-                "./sentinel/*"
-            ],
-            "@pulse/*": [
-                "./_logs/*"
-            ],
-            "@loom/*": [
-                "./templates/*"
-            ],
-            "@archive/*": [
-                "./archives/*"
-            ],
-            "@universe/*": [
-                "./_universe/*"
-            ]
+            "@system/*": ["./src/cse/*"],
+            "@domain/*": ["./src/02_domain/*"],
+            "@nexus/*": ["./src/nexus/*"],
+            "@fabric/*": ["./src/03_fabric/*"],
+            "@atlas/*": ["./src/01_atlas/*"],
+            "@essence/*": ["./src/types/*"],
+            "@shield/*": ["./sentinel/*"],
+            "@pulse/*": ["./_logs/*"],
+            "@loom/*": ["./templates/*"],
+            "@archive/*": ["./archives/*"],
+            "@universe/*": ["./_universe/*"],
+            "@logging": ["./src/system/logging/index.ts"],
+            "@logging/*": ["./src/system/logging/*"],
+            "@utils/*": ["./src/utils/*"]
         }
     },
-    "include": [
-        "src"
-    ],
-    "exclude": [
-        "node_modules",
-        ".vscode-test"
-    ]
+    "include": ["src"],
+    "exclude": ["node_modules", ".vscode-test", "src/nexus/useNexusHandshake.ts"]
 }

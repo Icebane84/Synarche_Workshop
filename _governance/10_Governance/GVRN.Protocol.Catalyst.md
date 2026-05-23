@@ -9,6 +9,7 @@
 ---
 
 # GVRN.Protocol.Catalyst.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,17 +22,17 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Protocol.Catalyst` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Catalyst.md` | The Filename. |
-| **Legacy ID** | `AOP-PROMPT-001` | The Transmuted ID. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[MOON]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description        |
+| :------------------ | :---------------------------- | :----------------- |
+| **Artifact ID**     | `GVRN.Protocol.Catalyst`      | The Sovereign ID.  |
+| **Official Name**   | `GVRN.Protocol.Catalyst.md`   | The Filename.      |
+| **Legacy ID**       | `AOP-PROMPT-001`              | The Transmuted ID. |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.      |
+| **Domain**          | `GVRN`                        | The Subject.       |
+| **Celestial Class** | `[MOON]`                      | The Weight.        |
+| **Evolution**       | `Omega Ascension`             | The Maturity.      |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.     |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.       |
 
 ---
 
@@ -39,8 +40,8 @@
 
 > **"If the prompt does not burn, the insight will not shine."**
 
-*   **The Mandate**: The Catalyst Protocol defines the **Unified Prompt Packet (UPP)** structure. It transforms vague intent into precise architectural directives. Ideally, all high-fidelity inputs to the System should follow this standard to minimize "Hallucination Drift."
-*   **The Law**: Ambiguity is a defect.
+- **The Mandate**: The Catalyst Protocol defines the **Unified Prompt Packet (UPP)** structure. It transforms vague intent into precise architectural directives. Ideally, all high-fidelity inputs to the System should follow this standard to minimize "Hallucination Drift."
+- **The Law**: Ambiguity is a defect.
 
 ---
 
@@ -49,7 +50,9 @@
 To achieve "Living Documentation," all High-Fidelity Inputs must adhere to this 3-Zone Structure.
 
 #### **Zone 1: The Meta-Layer Heading (The Context)**
+
 Establishes the operational parameters before generation begins.
+
 ```markdown
 [META-LAYER HEADING]
 Packet-ID: [e.g., PP-WLF-001]
@@ -59,7 +62,9 @@ Context-Scope: [Brief definition of the active constraint]
 ```
 
 #### **Zone 2: The Core Instruction (The Meat)**
+
 The specific task using the Triad Framework.
+
 ```markdown
 [CORE INSTRUCTION]
 WHAT: [The primary objective of this turn.]
@@ -68,7 +73,9 @@ WHY: [The architectural intent or goal.]
 ```
 
 #### **Zone 3: The Meta-Anchor (The Checksum)**
+
 Locks the generated artifact into the `Rosetta Stone`.
+
 ```markdown
 [ARTIFACT METADATA ANCHOR]
 Artifact-ID: [Target ID]
@@ -82,13 +89,13 @@ Dependency-Hash: [List linked files]
 ### **II. The Four Patterns of Catalysis**
 
 1.  **The Synergy Probe**: `CMD: SYN_EXPLORE_VECTORS`
-    *   *Purpose*: Finding hidden connections between disparately linked nodes.
+    - _Purpose_: Finding hidden connections between disparately linked nodes.
 2.  **The Socratic Crucible**: `CMD: LOGIC_STRESS_TEST`
-    *   *Purpose*: Stress-testing a logic block by attempting to break it with edge cases.
+    - _Purpose_: Stress-testing a logic block by attempting to break it with edge cases.
 3.  **The Translation Forge**: `CMD: PRINCIPLE_TO_PRAGMA`
-    *   *Purpose*: Converting abstract "Principality" (Codex) into concrete "Pragmatism" (Python/TS).
+    - _Purpose_: Converting abstract "Principality" (Codex) into concrete "Pragmatism" (Python/TS).
 4.  **The Dissonance Engine**: `CMD: RESOLVE_PARADOX`
-    *   *Purpose*: Identifying and closing gaps between two conflicting artifacts.
+    - _Purpose_: Identifying and closing gaps between two conflicting artifacts.
 
 ---
 
@@ -106,9 +113,9 @@ Dependency-Hash: [List linked files]
 > [!TIP]
 > Use these commands to invoke the Catalyst.
 
-*   ✨ **Design Prompt**: `CMD: GENERATE_UPP --target "[Topic]"`
-*   🔬 **Audit Input**: `CMD: CHECK_PROMPT --rules "GVRN.Protocol.Catalyst"`
-*   🚀 **Execute Packet**: `CMD: RUN_PACKET --id "[Packet-ID]"`
+- ✨ **Design Prompt**: `CMD: GENERATE_UPP --target "[Topic]"`
+- 🔬 **Audit Input**: `CMD: CHECK_PROMPT --rules "GVRN.Protocol.Catalyst"`
+- 🚀 **Execute Packet**: `CMD: RUN_PACKET --id "[Packet-ID]"`
 
 ---
 

@@ -1,4 +1,5 @@
 # AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-PGPS-001-AOP-PGPS-001PHOENIXGENESISPRESENTATIONSTANDARD-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                        | Description       |
+| :------------------ | :--------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-PGPS-001-AOP-PGPS-001PHOENIXGENESISPRESENTATIONSTANDARD-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                            | The Standard.     |
+| **Domain**          | `GVRN`                                                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                   | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                            | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                   | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-PGPS-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `AOP-PGPS-001`          |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # AOP-PGPS-001: Phoenix Genesis Presentation Standard
@@ -51,19 +55,19 @@ _(The Chronos Lock & Axiomatic Metadata Layer)_
 
 The **Chronos Lock** is the definitive 12-point vector signature that acts as the "Zero Entropy" anchor for all Phoenix Artifacts. It binds the artifact to the Synarche's immutable enumerations definition.
 
-| Field                  | Value / Mandate                                                                 |
-| :--------------------- | :------------------------------------------------------------------------------ |
-| **1. Artifact ID**     | Unique Identifier (e.g., `UMB-CSE-001`). Matches filename base.                 |
-| **2. Official Name**   | Full filename including version (e.g., `UMB-CSE-001_..._v11.2.md`).             |
-| **3. Version**         | Semantic Version (`v11.2`).                                                     |
-| **4. Provenance**      | Creation/Reforge Date.                                                          |
-| **5. Domain**          | Functional Area (e.g., `ARCH`, `GVRN`, `CORE`).                                 |
-| **6. Evolution**       | The thematic phase of the artifact (e.g., `Purposeful Drive`).                  |
-| **7. Celestial Class** | **[Enum]** `STAR`, `PLANET`, `MOON`. See [[UMB-GVRN-CODE-001#2.2]].             |
-| **8. Tier**            | Operational Tier (e.g., `Operational`, `Strategic`, `Tactical`).                |
-| **9. State**           | **[Enum]** `ACTIVE`, `PENDING`, `DEPRECATED`.                                   |
-| **10. Ethos**          | The guiding qualitative principle (e.g., `The Phoenix Ascension Protocol`).     |
-| **11. Catalyst**       | The event or trigger for this version (e.g., `System Refactor`).                |
+| Field                  | Value / Mandate                                                                        |
+| :--------------------- | :------------------------------------------------------------------------------------- |
+| **1. Artifact ID**     | Unique Identifier (e.g., `UMB-CSE-001`). Matches filename base.                        |
+| **2. Official Name**   | Full filename including version (e.g., `UMB-CSE-001_..._v11.2.md`).                    |
+| **3. Version**         | Semantic Version (`v11.2`).                                                            |
+| **4. Provenance**      | Creation/Reforge Date.                                                                 |
+| **5. Domain**          | Functional Area (e.g., `ARCH`, `GVRN`, `CORE`).                                        |
+| **6. Evolution**       | The thematic phase of the artifact (e.g., `Purposeful Drive`).                         |
+| **7. Celestial Class** | **[Enum]** `STAR`, `PLANET`, `MOON`. See [[UMB-GVRN-CODE-001#2.2]].                    |
+| **8. Tier**            | Operational Tier (e.g., `Operational`, `Strategic`, `Tactical`).                       |
+| **9. State**           | **[Enum]** `ACTIVE`, `PENDING`, `DEPRECATED`.                                          |
+| **10. Ethos**          | The guiding qualitative principle (e.g., `The Phoenix Ascension Protocol`).            |
+| **11. Catalyst**       | The event or trigger for this version (e.g., `System Refactor`).                       |
 | **12. Relations**      | **[Enum]** Relation Types `POWERED_BY`, `GOVERNS`, etc. See [[UMB-GVRN-CODE-001#3.0]]. |
 
 ---

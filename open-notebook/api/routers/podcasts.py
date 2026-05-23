@@ -22,12 +22,12 @@ class PodcastEpisodeResponse(BaseModel):
     episode_profile: dict
     speaker_profile: dict
     briefing: str
-    audio_file: Optional[str] = None
-    audio_url: Optional[str] = None
-    transcript: Optional[dict] = None
-    outline: Optional[dict] = None
-    created: Optional[str] = None
-    job_status: Optional[str] = None
+    audio_file: str | None = None
+    audio_url: str | None = None
+    transcript: dict | None = None
+    outline: dict | None = None
+    created: str | None = None
+    job_status: str | None = None
 
 
 def _resolve_audio_path(audio_file: str) -> Path:
@@ -44,13 +44,13 @@ async def generate_podcast(request: PodcastGenerationRequest):
     Returns immediately with job ID for status tracking.
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     try:
         job_id = await PodcastService.submit_generation_job(
@@ -71,10 +71,8 @@ async def generate_podcast(request: PodcastGenerationRequest):
         )
 
     except Exception as e:
-        logger.error(f"Error generating podcast: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail="Failed to generate podcast"
-        )
+        logger.error(f"Error generating podcast: {e!s}")
+        raise HTTPException(status_code=500, detail="Failed to generate podcast")
 
 
 @router.get("/podcasts/jobs/{job_id}")
@@ -85,13 +83,11 @@ async def get_podcast_job_status(job_id: str):
         return status_data
 
     except Exception as e:
-        logger.error(f"Error fetching podcast job status: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail="Failed to fetch job status"
-        )
+        logger.error(f"Error fetching podcast job status: {e!s}")
+        raise HTTPException(status_code=500, detail="Failed to fetch job status")
 
 
-@router.get("/podcasts/episodes", response_model=List[PodcastEpisodeResponse])
+@router.get("/podcasts/episodes", response_model=list[PodcastEpisodeResponse])
 async def list_podcast_episodes():
     """List all podcast episodes"""
     try:
@@ -139,10 +135,8 @@ async def list_podcast_episodes():
         return response_episodes
 
     except Exception as e:
-        logger.error(f"Error listing podcast episodes: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail="Failed to list podcast episodes"
-        )
+        logger.error(f"Error listing podcast episodes: {e!s}")
+        raise HTTPException(status_code=500, detail="Failed to list podcast episodes")
 
 
 @router.get("/podcasts/episodes/{episode_id}", response_model=PodcastEpisodeResponse)
@@ -183,7 +177,7 @@ async def get_podcast_episode(episode_id: str):
         )
 
     except Exception as e:
-        logger.error(f"Error fetching podcast episode: {str(e)}")
+        logger.error(f"Error fetching podcast episode: {e!s}")
         raise HTTPException(status_code=404, detail="Episode not found")
 
 
@@ -195,7 +189,7 @@ async def stream_podcast_episode_audio(episode_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching podcast episode for audio: {str(e)}")
+        logger.error(f"Error fetching podcast episode for audio: {e!s}")
         raise HTTPException(status_code=404, detail="Episode not found")
 
     if not episode.audio_file:
@@ -236,7 +230,5 @@ async def delete_podcast_episode(episode_id: str):
         return {"message": "Episode deleted successfully", "episode_id": episode_id}
 
     except Exception as e:
-        logger.error(f"Error deleting podcast episode: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail="Failed to delete episode"
-        )
+        logger.error(f"Error deleting podcast episode: {e!s}")
+        raise HTTPException(status_code=500, detail="Failed to delete episode")

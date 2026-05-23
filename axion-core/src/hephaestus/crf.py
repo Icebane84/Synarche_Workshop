@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -30,8 +29,7 @@ PASSING_SCORE = 5.0
 
 
 class CausalLinter:
-    """
-    The Inner Sentinel that validates whether a Synthesis has sufficient
+    """The Inner Sentinel that validates whether a Synthesis has sufficient
     Causal/Axiomatic backing.
     """
 
@@ -52,8 +50,7 @@ class CausalLinter:
         self.axioms = ["UMB-", "AOP-", "GUCA-", "CODEX-", "GDD-"]
 
     def validate_causality(self, thought_distillate: str) -> dict:
-        """
-        Runs a Causal Trace on the provided text.
+        """Runs a Causal Trace on the provided text.
         Returns a verdict on whether the thought is 'Anchored' or 'Floating'.
         """
         if not thought_distillate or not isinstance(thought_distillate, str):
@@ -68,11 +65,15 @@ class CausalLinter:
         trace_log = []
 
         # 1. Linguistic Causality (Does it use causal language?)
-        connector_count = sum(1 for c in self.causal_connectors if c in thought_distillate.lower())
+        connector_count = sum(
+            1 for c in self.causal_connectors if c in thought_distillate.lower()
+        )
         if connector_count > 0:
             # Base score for attempting logic
             score += 2.0
-            found = [c for c in self.causal_connectors if c in thought_distillate.lower()]
+            found = [
+                c for c in self.causal_connectors if c in thought_distillate.lower()
+            ]
             trace_log.append(f"LOGIC_TRACE: Connected via {found}")
         else:
             trace_log.append("DISSONANCE: Lacks causal language (because, therefore).")
@@ -86,7 +87,9 @@ class CausalLinter:
 
         if anchor_matches:
             score += 5.0  # High value for citing sources
-            trace_log.append(f"AXIOM_TRACE: Anchored to {len(anchor_matches)} Governance Artifacts.")
+            trace_log.append(
+                f"AXIOM_TRACE: Anchored to {len(anchor_matches)} Governance Artifacts."
+            )
         else:
             trace_log.append("DISSONANCE: Floating Abstraction (No Governance Link).")
 

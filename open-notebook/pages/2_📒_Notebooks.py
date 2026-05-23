@@ -13,18 +13,18 @@ from pages.stream_app.utils import setup_page, setup_stream_state
 setup_page("📒 Open Notebook", only_check_mandatory_models=True)
 
 
-def notebook_header(current_notebook: Notebook):
+def notebook_header(current_notebook: Notebook) -> None:
     """
     Defines the header of the notebook page, including the ability to edit the notebook's name and description.
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     c1, c2, c3 = st.columns([8, 2, 2])
     c1.header(current_notebook.name)
@@ -57,18 +57,17 @@ def notebook_header(current_notebook: Notebook):
                 current_notebook.archived = True
                 notebook_service.update_notebook(current_notebook)
                 st.toast("Notebook archived", icon="🗃️")
-        else:
-            if c2.button("Unarchive", icon="🗃️"):
-                current_notebook.archived = False
-                notebook_service.update_notebook(current_notebook)
-                st.toast("Notebook unarchived", icon="🗃️")
+        elif c2.button("Unarchive", icon="🗃️"):
+            current_notebook.archived = False
+            notebook_service.update_notebook(current_notebook)
+            st.toast("Notebook unarchived", icon="🗃️")️")
         if c3.button("Delete forever", type="primary", icon="☠️"):
             notebook_service.delete_notebook(current_notebook)
             st.session_state["current_notebook_id"] = None
             st.rerun()
 
 
-def notebook_page(current_notebook: Notebook):
+def notebook_page(current_notebook: Notebook) -> None:
     # Guarantees that we have an entry for this notebook in the session state
     if current_notebook.id not in st.session_state:
         st.session_state[current_notebook.id] = {"notebook": current_notebook}
@@ -86,24 +85,22 @@ def notebook_page(current_notebook: Notebook):
     work_tab, chat_tab = st.columns([4, 2])
     with work_tab:
         sources_tab, notes_tab = st.columns(2)
-        with sources_tab:
-            with st.container(border=True):
-                if st.button("Add Source", icon="➕"):
-                    add_source(current_notebook.id)
-                for source in sources:
-                    source_card(source=source, notebook_id=current_notebook.id)
+        with sources_tab, st.container(border=True):
+            if st.button("Add Source", icon="➕"):
+                add_source(current_notebook.id)
+            for source in sources:
+                source_card(source=source, notebook_id=current_notebook.id)
 
-        with notes_tab:
-            with st.container(border=True):
-                if st.button("Write a Note", icon="📝"):
-                    add_note(current_notebook.id)
-                for note in notes:
-                    note_card(note=note, notebook_id=current_notebook.id)
+        with notes_tab, st.container(border=True):
+            if st.button("Write a Note", icon="📝"):
+                add_note(current_notebook.id)
+            for note in notes:
+                note_card(note=note, notebook_id=current_notebook.id)
     with chat_tab:
         chat_sidebar(current_notebook=current_notebook, current_session=current_session)
 
 
-def notebook_list_item(notebook):
+def notebook_list_item(notebook) -> None:
     with st.container(border=True):
         st.subheader(notebook.name)
         st.caption(

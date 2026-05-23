@@ -24,18 +24,18 @@
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 - | :---- |
-| **1. Artifact ID** | `CMD-AXION-001` |
-| **2. Official Name** | `CMD-AXION-001_AgentScaffoldingPrompt_v1.0.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+  | **1. Artifact ID** | `CMD-AXION-001` |
+  | **2. Official Name** | `CMD-AXION-001_AgentScaffoldingPrompt_v1.0.md` |
+  | **3. Version** | **v1.0** |
+  | **4. Provenance** | **Date Reforged: 2025-12-22** |
+  | **5. Domain** | `ARCH` |
+  | **6. Evolution** | **Purposeful Drive** |
+  | **7. Celestial Class** | `[PLANET]` |
+  | **8. Tier** | **Operational** |
+  | **9. State** | `[ACTIVE]` |
+  | **10. Ethos** | **The Phoenix Ascension Protocol** |
+  | **11. Catalyst** | **System Refactor** |
+  | **12. Relations** | `Pending Integration` |
 
 ---
 
@@ -43,8 +43,8 @@
 
 ## **Agent Scaffolding Prompt**
 
-| Field | Description |
-| :--- | :--- |
+| Field       | Description                                               |
+| :---------- | :-------------------------------------------------------- |
 | **Purpose** | Master Command to scaffold new Synarche Agents via Axion. |
 
 ### **II. The Command**
@@ -65,7 +65,7 @@
 > 1. **Apply the Schema:** Use the `AgentState` TypedDict structure defined in the UMB.
 > 2. **Build the Graph:** Implement a basic LangGraph with three nodes: `retrieve`, `generate`, and `sentinel`.
 > 3. **Stub the Logic:** You do not need to write complex logic yet, just put `pass` or print statements in the nodes. I
-> want the *skeleton*.
+>    want the _skeleton_.
 > 4. **Header:** Ensure the file has the correct Synarche Metadata Docstring.
 > 5. **Execution:** Write the code directly to the file.
 >
@@ -77,9 +77,9 @@
 
 `CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Supabase Prep"`
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

@@ -81,7 +81,8 @@ export const ptBR = {
     built: "Compilado",
     apiUrl: "URL da API",
     frontendUrl: "URL do Frontend",
-    checkConsoleLogs: "Verifique o console do navegador para logs detalhados (procure por mensagens 🔧 [Config])",
+    checkConsoleLogs:
+      "Verifique o console do navegador para logs detalhados (procure por mensagens 🔧 [Config])",
     yes: "Sim",
     no: "Não",
     simple: "Simples",
@@ -165,7 +166,8 @@ export const ptBR = {
     unauthorized: "Acesso não autorizado, verifique sua senha",
     invalidPassword: "Senha inválida",
     missingAuth: "Autenticação ausente",
-    embeddingModelRequired: "Este recurso requer um modelo de embedding. Configure um na seção Modelos.",
+    embeddingModelRequired:
+      "Este recurso requer um modelo de embedding. Configure um na seção Modelos.",
     strategyModelNotFound: "Modelo de estratégia não encontrado",
     answerModelNotFound: "Modelo de resposta não encontrado",
     finalAnswerModelNotFound: "Modelo de resposta final não encontrado",
@@ -176,7 +178,8 @@ export const ptBR = {
     apiTitle: "Não foi possível conectar ao servidor da API",
     apiDesc: "O servidor da API do Open Notebook não pôde ser alcançado",
     dbTitle: "Falha na conexão com o banco de dados",
-    dbDesc: "O servidor da API está rodando, mas o banco de dados não está acessível",
+    dbDesc:
+      "O servidor da API está rodando, mas o banco de dados não está acessível",
     troubleshooting: "Isso geralmente significa:",
     apiUnreachable1: "O servidor da API não está rodando",
     apiUnreachable2: "O servidor da API está rodando em um endereço diferente",
@@ -206,7 +209,8 @@ export const ptBR = {
     signingIn: "Entrando...",
     signIn: "Entrar",
     unhandledError: "Erro não tratado durante login",
-    connectErrorHint: "Não foi possível conectar ao servidor. Verifique se a API está rodando.",
+    connectErrorHint:
+      "Não foi possível conectar ao servidor. Verifique se a API está rodando.",
   },
   navigation: {
     collect: "Coletar",
@@ -236,18 +240,22 @@ export const ptBR = {
     archive: "Arquivar",
     unarchive: "Desarquivar",
     deleteNotebook: "Excluir Caderno",
-    deleteNotebookDesc: "Tem certeza que deseja excluir \"{name}\"? Esta ação não pode ser desfeita.",
+    deleteNotebookDesc:
+      'Tem certeza que deseja excluir "{name}"? Esta ação não pode ser desfeita.',
     deleteNotebookLoading: "Carregando prévia da exclusão...",
     deleteNotebookNotes: "{count} nota(s) serão permanentemente excluídas.",
     deleteNotebookNoNotes: "Nenhuma nota para excluir.",
-    deleteNotebookExclusiveSources: "{count} fonte(s) existem apenas neste caderno.",
-    deleteNotebookSharedSources: "{count} fonte(s) são compartilhadas com outros cadernos e serão desvinculadas.",
+    deleteNotebookExclusiveSources:
+      "{count} fonte(s) existem apenas neste caderno.",
+    deleteNotebookSharedSources:
+      "{count} fonte(s) são compartilhadas com outros cadernos e serão desvinculadas.",
     deleteNotebookNoSources: "Nenhuma fonte neste caderno.",
     deleteExclusiveSourcesLabel: "Excluir fontes exclusivas",
     keepExclusiveSourcesLabel: "Desvincular e manter",
     activeNotebooks: "Cadernos Ativos",
     archivedNotebooks: "Cadernos Arquivados",
-    emptyDescription: "Comece criando seu primeiro caderno para organizar sua pesquisa.",
+    emptyDescription:
+      "Comece criando seu primeiro caderno para organizar sua pesquisa.",
     noActiveNotebooks: "Nenhum caderno ativo",
     noArchivedNotebooks: "Nenhum caderno arquivado",
     notFound: "Caderno não encontrado",
@@ -258,7 +266,8 @@ export const ptBR = {
     addDescription: "Adicionar descrição...",
     noNotesYet: "Nenhuma nota ainda",
     deleteNote: "Excluir Nota",
-    deleteNoteConfirm: "Tem certeza que deseja excluir esta nota? Esta ação não pode ser desfeita.",
+    deleteNoteConfirm:
+      "Tem certeza que deseja excluir esta nota? Esta ação não pode ser desfeita.",
     noteCreatedSuccess: "Nota criada com sucesso",
     failedToCreateNote: "Falha ao criar nota",
     noteUpdatedSuccess: "Nota atualizada com sucesso",
@@ -278,9 +287,11 @@ export const ptBR = {
     addNew: "Adicionar Nova Fonte",
     addExisting: "Adicionar Fonte Existente",
     empty: "Nenhuma fonte ainda",
-    emptyDesc: "Adicione sua primeira fonte para começar a construir sua base de conhecimento.",
+    emptyDesc:
+      "Adicione sua primeira fonte para começar a construir sua base de conhecimento.",
     delete: "Excluir Fonte",
-    deleteMsg: "Tem certeza que deseja excluir esta fonte? Esta ação não pode ser desfeita.",
+    deleteMsg:
+      "Tem certeza que deseja excluir esta fonte? Esta ação não pode ser desfeita.",
     statusPreparing: "Preparando",
     statusQueued: "Na Fila",
     statusProcessing: "Processando",
@@ -292,7 +303,8 @@ export const ptBR = {
     statusCompletedDesc: "Processado com sucesso",
     statusFailedDesc: "Processamento falhou",
     failedToLoad: "Falha ao carregar fontes",
-    allSourcesDesc: "Veja todas as suas fontes aqui. Você pode adicionar novas fontes ou gerenciar as existentes.",
+    allSourcesDesc:
+      "Veja todas as suas fontes aqui. Você pode adicionar novas fontes ou gerenciar as existentes.",
     allSources: "Todas as Fontes",
     insights: "Insights",
     yes: "Sim",
@@ -300,15 +312,19 @@ export const ptBR = {
     loadingMore: "Carregando mais...",
     noSourcesYet: "Nenhuma fonte ainda",
     allSourcesDescShort: "Veja todas as suas fontes aqui.",
-    cannotSaveNoteNoNotebook: "Não é possível salvar nota: ID do caderno não disponível",
-    createFirstSource: "Adicione sua primeira fonte para começar a construir sua base de conhecimento.",
+    cannotSaveNoteNoNotebook:
+      "Não é possível salvar nota: ID do caderno não disponível",
+    createFirstSource:
+      "Adicione sua primeira fonte para começar a construir sua base de conhecimento.",
     deleteSourceConfirm: "Tem certeza que deseja excluir esta fonte?",
     deleteConfirm: "Tem certeza que deseja excluir isto?",
-    deleteConfirmWithTitle: "Tem certeza que deseja excluir \"{title}\"?",
-    deleteSuccess: "Fonte excluída com sucesso. Nota: Para excluir o arquivo do armazenamento, você deve habilitar a opção \"excluir arquivo\" na página de configurações.",
+    deleteConfirmWithTitle: 'Tem certeza que deseja excluir "{title}"?',
+    deleteSuccess:
+      'Fonte excluída com sucesso. Nota: Para excluir o arquivo do armazenamento, você deve habilitar a opção "excluir arquivo" na página de configurações.',
     failedToDelete: "Falha ao excluir fonte",
     sourceQueued: "Fonte Enfileirada",
-    sourceQueuedDesc: "Fonte enviada para processamento em segundo plano. Você pode monitorar o progresso na lista de fontes.",
+    sourceQueuedDesc:
+      "Fonte enviada para processamento em segundo plano. Você pode monitorar o progresso na lista de fontes.",
     sourceAddedSuccess: "Fonte adicionada com sucesso",
     failedToAddSource: "Falha ao adicionar fonte",
     sourceUpdatedSuccess: "Fonte atualizada com sucesso",
@@ -320,10 +336,12 @@ export const ptBR = {
     sourceRequeued: "Fonte Reenfileirada",
     sourceRequeuedDesc: "A fonte foi reenfileirada para processamento.",
     failedToRetry: "Falha ao Tentar Novamente",
-    failedToRetryDesc: "Falha ao tentar processar fonte novamente. Por favor, tente de novo.",
+    failedToRetryDesc:
+      "Falha ao tentar processar fonte novamente. Por favor, tente de novo.",
     sourcesAddedToNotebook: "{count} fonte(s) adicionada(s) ao caderno",
     failedToAddSourcesToNotebook: "Falha ao adicionar fontes ao caderno",
-    partialAddSuccess: "{success} fonte(s) adicionada(s), {failed} falhou(aram)",
+    partialAddSuccess:
+      "{success} fonte(s) adicionada(s), {failed} falhou(aram)",
     sourceRemovedFromNotebook: "Fonte removida do caderno com sucesso",
     failedToRemoveSourceFromNotebook: "Falha ao remover fonte do caderno",
     removeConfirm: "Tem certeza que deseja remover isto do caderno?",
@@ -353,11 +371,14 @@ export const ptBR = {
     generateNewInsight: "Gerar Novo Insight",
     selectTransformation: "Selecione uma transformação...",
     noInsightsYet: "Nenhum insight ainda",
-    createFirstInsight: "Crie seu primeiro insight usando uma transformação acima",
+    createFirstInsight:
+      "Crie seu primeiro insight usando uma transformação acima",
     viewInsight: "Ver Insight",
     deleteInsight: "Excluir Insight",
-    deleteInsightConfirm: "Tem certeza que deseja excluir este insight? Esta ação não pode ser desfeita.",
-    deleteNoteConfirm: "Tem certeza que deseja excluir esta nota? Esta ação não pode ser desfeita.",
+    deleteInsightConfirm:
+      "Tem certeza que deseja excluir este insight? Esta ação não pode ser desfeita.",
+    deleteNoteConfirm:
+      "Tem certeza que deseja excluir esta nota? Esta ação não pode ser desfeita.",
     editNote: "Editar nota",
     createNote: "Criar nota",
     addTitle: "Adicionar título...",
@@ -366,28 +387,36 @@ export const ptBR = {
     saveNote: "Salvar Nota",
     createNoteBtn: "Criar Nota",
     noNotesYet: "Nenhuma nota ainda",
-    createFirstNote: "Crie sua primeira nota para capturar insights e observações.",
+    createFirstNote:
+      "Crie sua primeira nota para capturar insights e observações.",
     deleteNote: "Excluir Nota",
     urlLabel: "URL(s) *",
     fileLabel: "Arquivo(s) *",
     textContentLabel: "Conteúdo de Texto *",
-    enterUrlsPlaceholder: "Digite as URLs, uma por linha\nhttps://exemplo.com/artigo1\nhttps://exemplo.com/artigo2",
+    enterUrlsPlaceholder:
+      "Digite as URLs, uma por linha\nhttps://exemplo.com/artigo1\nhttps://exemplo.com/artigo2",
     batchUrlHint: "Cole múltiplas URLs (uma por linha) para importação em lote",
     invalidUrlsDetected: "URLs inválidas detectadas:",
     lineLabel: "Linha {line}",
-    fixInvalidUrls: "Por favor, corrija ou remova as URLs inválidas para continuar",
-    selectMultipleFilesHint: "Selecione múltiplos arquivos para importação em lote. Suportados: Documentos (PDF, DOC, DOCX, PPT, XLS, EPUB, TXT, MD), Mídia (MP4, MP3, WAV, M4A), Imagens (JPG, PNG), Arquivos (ZIP)",
+    fixInvalidUrls:
+      "Por favor, corrija ou remova as URLs inválidas para continuar",
+    selectMultipleFilesHint:
+      "Selecione múltiplos arquivos para importação em lote. Suportados: Documentos (PDF, DOC, DOCX, PPT, XLS, EPUB, TXT, MD), Mídia (MP4, MP3, WAV, M4A), Imagens (JPG, PNG), Arquivos (ZIP)",
     selectedFiles: "Arquivos selecionados:",
     textPlaceholder: "Cole ou digite seu conteúdo aqui...",
-    htmlDetected: "Conteúdo HTML detectado. Será convertido para Markdown após o processamento.",
+    htmlDetected:
+      "Conteúdo HTML detectado. Será convertido para Markdown após o processamento.",
     titlePlaceholder: "Dê um título descritivo para sua fonte",
-    batchTitlesAuto: "Os títulos serão gerados automaticamente para cada fonte.",
-    batchCommonSettings: "Os mesmos cadernos e transformações serão aplicados a todos os itens.",
+    batchTitlesAuto:
+      "Os títulos serão gerados automaticamente para cada fonte.",
+    batchCommonSettings:
+      "Os mesmos cadernos e transformações serão aplicados a todos os itens.",
     urlsCount: "{count} URL(s)",
     filesCount: "{count} arquivo(s)",
     addSource: "Adicionar Fonte",
     notEmbeddedAlert: "Conteúdo Não Incorporado",
-    notEmbeddedDesc: "Este conteúdo não foi incorporado para busca vetorial. A incorporação habilita recursos avançados de busca e melhor descoberta de conteúdo.",
+    notEmbeddedDesc:
+      "Este conteúdo não foi incorporado para busca vetorial. A incorporação habilita recursos avançados de busca e melhor descoberta de conteúdo.",
     openOnYoutube: "Abrir no YouTube",
     urlCopied: "URL copiada para área de transferência",
     viewSource: "Ver Fonte",
@@ -403,10 +432,12 @@ export const ptBR = {
     retry: "Tentar Novamente",
     progress: "Progresso",
     addExistingTitle: "Adicionar Fontes Existentes",
-    addExistingDesc: "Selecione fontes existentes de todos os seus cadernos para adicionar ao atual.",
+    addExistingDesc:
+      "Selecione fontes existentes de todos os seus cadernos para adicionar ao atual.",
     searchPlaceholder: "Buscar fontes por nome ou URL...",
     noNotebooksFound: "Nenhum caderno encontrado.",
-    showingFirst100: "Mostrando as primeiras 100 fontes. Use a busca para encontrar específicas.",
+    showingFirst100:
+      "Mostrando as primeiras 100 fontes. Use a busca para encontrar específicas.",
     selectedCount: "{count} fontes selecionadas",
     added: "Adicionado em {date}",
     addUrl: "Adicionar URL",
@@ -415,28 +446,36 @@ export const ptBR = {
     processDescription: "O conteúdo será processado e analisado por IA.",
     processingFiles: "Processando seus arquivos...",
     titleRequired: "Um título é obrigatório para conteúdo de texto",
-    titleGenerated: "Se deixado vazio, um título será gerado a partir do conteúdo",
+    titleGenerated:
+      "Se deixado vazio, um título será gerado a partir do conteúdo",
     batchCount: "{count} {type} serão processados",
     enableEmbedding: "Habilitar incorporação para busca",
-    embeddingDesc: "Permite que esta fonte seja encontrada em buscas vetoriais e consultas de IA",
+    embeddingDesc:
+      "Permite que esta fonte seja encontrada em buscas vetoriais e consultas de IA",
     embeddingAlways: "Incorporação habilitada automaticamente",
-    embeddingAlwaysDesc: "Suas configurações estão definidas para sempre incorporar conteúdo para busca vetorial.",
+    embeddingAlwaysDesc:
+      "Suas configurações estão definidas para sempre incorporar conteúdo para busca vetorial.",
     embeddingNever: "Incorporação desabilitada",
-    embeddingNeverDesc: "Suas configurações estão definidas para pular incorporação. Busca vetorial não estará disponível para esta fonte.",
+    embeddingNeverDesc:
+      "Suas configurações estão definidas para pular incorporação. Busca vetorial não estará disponível para esta fonte.",
     changeInSettings: "Você pode alterar isso em Configurações",
     notFound: "Fonte não encontrada",
     noContent: "Nenhum conteúdo disponível",
     insightsDesc: "Insights gerados a partir da análise do modelo",
     uploadedFile: "Arquivo enviado",
-    fileUnavailableDesc: "Este arquivo está indisponível no momento por razões do sistema de armazenamento.",
+    fileUnavailableDesc:
+      "Este arquivo está indisponível no momento por razões do sistema de armazenamento.",
     batchSuccess: "{count} fonte(s) criada(s) com sucesso",
     batchFailed: "Falha ao criar todas as {count} fontes",
     batchPartial: "{success} sucesso, {failed} falhou(aram)",
     submittingSource: "Enviando fonte para processamento...",
-    contentRequired: "Por favor, forneça o conteúdo necessário para o tipo de fonte selecionado",
+    contentRequired:
+      "Por favor, forneça o conteúdo necessário para o tipo de fonte selecionado",
     titleRequiredForText: "Título é obrigatório para fontes de texto",
-    processingBatchSources: "Processando {count} fontes. Isso pode levar alguns momentos.",
-    processingSource: "Sua fonte está sendo processada. Isso pode levar alguns momentos.",
+    processingBatchSources:
+      "Processando {count} fontes. Isso pode levar alguns momentos.",
+    processingSource:
+      "Sua fonte está sendo processada. Isso pode levar alguns momentos.",
     maxFilesAllowed: "Máximo de {count} arquivos permitidos por lote",
   },
   chat: {
@@ -445,7 +484,8 @@ export const ptBR = {
     noSessions: "Nenhuma sessão de chat ainda",
     startChatting: "Comece a conversar sobre suas fontes.",
     deleteSession: "Excluir Sessão",
-    deleteSessionDesc: "Tem certeza que deseja excluir esta sessão de chat? Esta ação não pode ser desfeita.",
+    deleteSessionDesc:
+      "Tem certeza que deseja excluir esta sessão de chat? Esta ação não pode ser desfeita.",
     sendPlaceholder: "Pergunte qualquer coisa sobre suas fontes...",
     newChat: "Novo Chat",
     sessionsTitle: "Sessões de Chat",
@@ -462,7 +502,8 @@ export const ptBR = {
     chatWithNotebook: "Conversar com Caderno",
     unableToLoadChat: "Não foi possível carregar o chat",
     noDescription: "Sem descrição",
-    startByCreating: "Comece criando seu primeiro caderno para organizar sua pesquisa.",
+    startByCreating:
+      "Comece criando seu primeiro caderno para organizar sua pesquisa.",
     messagesCount: "{count} mensagens",
     sessionCreated: "Sessão de chat criada",
     sessionUpdated: "Sessão atualizada",
@@ -474,11 +515,13 @@ export const ptBR = {
     askBeta: "Perguntar (beta)",
     search: "Buscar",
     askYourKb: "Pergunte à Sua Base de Conhecimento (beta)",
-    askYourKbDesc: "O LLM responderá sua consulta com base nos documentos da sua base de conhecimento.",
+    askYourKbDesc:
+      "O LLM responderá sua consulta com base nos documentos da sua base de conhecimento.",
     question: "Pergunta",
     enterQuestionPlaceholder: "Digite sua pergunta...",
     pressToSubmit: "Pressione Cmd/Ctrl+Enter para enviar",
-    noEmbeddingModel: "Você não pode usar este recurso porque não tem um modelo de embedding selecionado. Configure um na página de Modelos.",
+    noEmbeddingModel:
+      "Você não pode usar este recurso porque não tem um modelo de embedding selecionado. Configure um na página de Modelos.",
     usingCustomModels: "Usando Modelos Personalizados",
     usingDefaultModels: "Usando Modelos Padrão",
     advanced: "Avançado",
@@ -488,11 +531,13 @@ export const ptBR = {
     ask: "Perguntar",
     processing: "Processando...",
     saveToNotebooks: "Salvar em Cadernos",
-    searchDesc: "Busque em sua base de conhecimento por palavras-chave ou conceitos específicos",
+    searchDesc:
+      "Busque em sua base de conhecimento por palavras-chave ou conceitos específicos",
     enterSearchPlaceholder: "Digite sua busca...",
     pressToSearch: "Pressione Enter para buscar",
     searchType: "Tipo de Busca",
-    vectorSearchWarning: "Busca vetorial requer um modelo de embedding. Apenas busca por texto está disponível.",
+    vectorSearchWarning:
+      "Busca vetorial requer um modelo de embedding. Apenas busca por texto está disponível.",
     textSearch: "Busca por Texto",
     vectorSearch: "Busca Vetorial",
     searchIn: "Buscar Em",
@@ -500,7 +545,7 @@ export const ptBR = {
     searchNotes: "Buscar Notas",
     resultsFound: "{count} resultados encontrados",
     matches: "Correspondências ({count})",
-    noResultsFor: "Nenhum resultado encontrado para \"{query}\"",
+    noResultsFor: 'Nenhum resultado encontrado para "{query}"',
     notSet: "Não definido",
     saveToNotebook: "Salvar no Caderno",
     saveSuccess: "Salvo no caderno com sucesso",
@@ -509,12 +554,13 @@ export const ptBR = {
     createNewNotebook: "Criar Novo Caderno",
     cancel: "Cancelar",
     searchAndAsk: "Buscar e Perguntar",
-    searchResultsFor: "Resultados da busca para \"{query}\"",
-    askAbout: "Perguntar sobre \"{query}\"",
+    searchResultsFor: 'Resultados da busca para "{query}"',
+    askAbout: 'Perguntar sobre "{query}"',
     orSearchKb: "Ou busque em sua base de conhecimento",
     saving: "Salvando...",
     advancedModelTitle: "Seleção Avançada de Modelo",
-    advancedModelDesc: "Escolha modelos específicos para cada etapa do processo de Perguntar",
+    advancedModelDesc:
+      "Escolha modelos específicos para cada etapa do processo de Perguntar",
     strategyModel: "Modelo de Estratégia",
     answerModel: "Modelo de Resposta",
     finalAnswerModel: "Modelo de Resposta Final",
@@ -526,14 +572,17 @@ export const ptBR = {
   },
   podcasts: {
     generateEpisode: "Gerar Episódio de Podcast",
-    generateEpisodeDesc: "Selecione o conteúdo a incluir e configure os detalhes do episódio antes de gerar um novo episódio de podcast.",
+    generateEpisodeDesc:
+      "Selecione o conteúdo a incluir e configure os detalhes do episódio antes de gerar um novo episódio de podcast.",
     content: "Conteúdo",
-    contentDesc: "Escolha cadernos, fontes e notas para incluir neste episódio.",
+    contentDesc:
+      "Escolha cadernos, fontes e notas para incluir neste episódio.",
     itemsSelected: "{count} itens selecionados",
     tokens: "{count} tokens",
     chars: "{count} caracteres",
     loadingNotebooks: "Carregando cadernos...",
-    noNotebooksFoundInPodcasts: "Nenhum caderno encontrado. Crie um caderno e adicione conteúdo antes de gerar um podcast.",
+    noNotebooksFoundInPodcasts:
+      "Nenhum caderno encontrado. Crie um caderno e adicione conteúdo antes de gerar um podcast.",
     noContentSelected: "Nenhum conteúdo selecionado",
     summary: "Resumo",
     fullContent: "Conteúdo completo",
@@ -545,16 +594,19 @@ export const ptBR = {
     episodeName: "Nome do episódio",
     episodeNamePlaceholder: "ex., IA e o Futuro do Trabalho",
     additionalInstructions: "Instruções adicionais",
-    instructionsPlaceholder: "Qualquer conselho suplementar para adicionar ao briefing do episódio...",
+    instructionsPlaceholder:
+      "Qualquer conselho suplementar para adicionar ao briefing do episódio...",
     generating: "Gerando...",
     generate: "Gerar",
     hostPlaceholder: "Apresentador {number}",
     profileRequired: "Perfil de Episódio Necessário",
-    profileRequiredDesc: "Selecione um perfil de episódio antes de gerar um podcast.",
+    profileRequiredDesc:
+      "Selecione um perfil de episódio antes de gerar um podcast.",
     nameRequired: "Nome do episódio necessário",
     nameRequiredDesc: "Forneça um nome para o episódio.",
     addContext: "Adicionar contexto",
-    addContextDesc: "Selecione pelo menos uma fonte ou nota para incluir no episódio.",
+    addContextDesc:
+      "Selecione pelo menos uma fonte ou nota para incluir no episódio.",
     generationFailed: "Geração do podcast falhou",
     speakerProfile: "Perfil do Locutor",
     usesSpeakerProfile: "Usa perfil de locutor",
@@ -563,17 +615,20 @@ export const ptBR = {
     noSources: "Nenhuma fonte disponível neste caderno.",
     noNotes: "Nenhuma nota disponível neste caderno.",
     selectMode: "Selecionar modo",
-    buildContextFailed: "Falha ao construir contexto. Por favor, revise suas seleções.",
+    buildContextFailed:
+      "Falha ao construir contexto. Por favor, revise suas seleções.",
     podcastTaskStarted: "Tarefa de podcast iniciada",
     loadingProfiles: "Carregando perfis de episódio...",
-    noProfilesFound: "Nenhum perfil de episódio encontrado. Crie um perfil de episódio antes de gerar um podcast.",
+    noProfilesFound:
+      "Nenhum perfil de episódio encontrado. Crie um perfil de episódio antes de gerar um podcast.",
     listTitle: "Podcasts",
     listDesc: "Acompanhe episódios gerados e gerencie templates reutilizáveis.",
     chooseAView: "Escolha uma visualização",
     episodesTab: "Episódios",
     templatesTab: "Templates",
     overviewTitle: "Visão geral dos episódios",
-    overviewDesc: "Monitore trabalhos de geração de podcast e revise os artefatos finais.",
+    overviewDesc:
+      "Monitore trabalhos de geração de podcast e revise os artefatos finais.",
     generateBtn: "Gerar Podcast",
     total: "Total",
     processingLabel: "Processando",
@@ -581,9 +636,11 @@ export const ptBR = {
     failedLabel: "Falharam",
     pendingLabel: "Pendentes",
     loadErrorTitle: "Falha ao carregar episódios",
-    loadErrorDesc: "Não foi possível buscar os episódios de podcast mais recentes. Tente novamente em breve.",
+    loadErrorDesc:
+      "Não foi possível buscar os episódios de podcast mais recentes. Tente novamente em breve.",
     loadingEpisodes: "Carregando episódios…",
-    noEpisodesYet: "Nenhum episódio de podcast ainda. Gere seu primeiro a partir das interfaces de chat de caderno ou fonte.",
+    noEpisodesYet:
+      "Nenhum episódio de podcast ainda. Gere seu primeiro a partir das interfaces de chat de caderno ou fonte.",
     statusRunningTitle: "Processando Atualmente",
     statusRunningDesc: "Episódios que estão gerando ativos ativamente.",
     statusPendingTitle: "Na Fila / Pendentes",
@@ -593,29 +650,43 @@ export const ptBR = {
     statusFailedTitle: "Episódios com Falha",
     statusFailedDesc: "Episódios que encontraram problemas durante a geração.",
     templatesWorkspaceTitle: "Área de trabalho de templates",
-    templatesWorkspaceDesc: "Construa configurações de episódio e locutor reutilizáveis para produção rápida de podcasts.",
-    howTemplatesPowerTitle: "Como os templates potencializam a geração de podcasts",
-    howTemplatesPowerDesc: "Templates dividem o fluxo de trabalho do podcast em dois blocos de construção reutilizáveis. Misture e combine-os sempre que gerar um novo episódio.",
+    templatesWorkspaceDesc:
+      "Construa configurações de episódio e locutor reutilizáveis para produção rápida de podcasts.",
+    howTemplatesPowerTitle:
+      "Como os templates potencializam a geração de podcasts",
+    howTemplatesPowerDesc:
+      "Templates dividem o fluxo de trabalho do podcast em dois blocos de construção reutilizáveis. Misture e combine-os sempre que gerar um novo episódio.",
     episodeProfilesSetFormat: "Perfis de episódio definem o formato",
-    episodeProfilesList1: "Delineiam o número de segmentos e como a história flui",
-    episodeProfilesList2: "Escolhem os modelos de linguagem usados para briefing, outline e escrita do roteiro",
-    episodeProfilesList3: "Armazenam briefings padrão para que cada episódio comece com um tom consistente",
+    episodeProfilesList1:
+      "Delineiam o número de segmentos e como a história flui",
+    episodeProfilesList2:
+      "Escolhem os modelos de linguagem usados para briefing, outline e escrita do roteiro",
+    episodeProfilesList3:
+      "Armazenam briefings padrão para que cada episódio comece com um tom consistente",
     speakerProfilesBringVoices: "Perfis de locutor dão vida às vozes",
     speakerProfilesList1: "Escolhem o provedor e modelo de text-to-speech",
-    speakerProfilesList2: "Capturam personalidade, história e notas de pronúncia por locutor",
-    speakerProfilesList3: "Reutilizam as mesmas vozes de apresentador ou convidado em diferentes formatos de episódio",
+    speakerProfilesList2:
+      "Capturam personalidade, história e notas de pronúncia por locutor",
+    speakerProfilesList3:
+      "Reutilizam as mesmas vozes de apresentador ou convidado em diferentes formatos de episódio",
     recommendedWorkflow: "Fluxo de trabalho recomendado",
     workflowStep1: "Crie perfis de locutor para cada voz que você precisa",
-    workflowStep2: "Construa perfis de episódio que referenciam esses locutores pelo nome",
-    workflowStep3: "Gere podcasts selecionando o perfil de episódio que se encaixa na história",
-    workflowHint: "Perfis de episódio referenciam perfis de locutor pelo nome, então começar com locutores evita atribuições de voz faltantes depois.",
+    workflowStep2:
+      "Construa perfis de episódio que referenciam esses locutores pelo nome",
+    workflowStep3:
+      "Gere podcasts selecionando o perfil de episódio que se encaixa na história",
+    workflowHint:
+      "Perfis de episódio referenciam perfis de locutor pelo nome, então começar com locutores evita atribuições de voz faltantes depois.",
     failedToLoadTemplates: "Falha ao carregar dados de templates",
-    failedToLoadTemplatesDesc: "Certifique-se de que a API está rodando e tente novamente. Algumas seções podem estar incompletas.",
+    failedToLoadTemplatesDesc:
+      "Certifique-se de que a API está rodando e tente novamente. Algumas seções podem estar incompletas.",
     loadingTemplates: "Carregando templates…",
     speakerProfilesTitle: "Perfis de locutor",
-    speakerProfilesDesc: "Configure vozes e personalidades para episódios gerados.",
+    speakerProfilesDesc:
+      "Configure vozes e personalidades para episódios gerados.",
     createSpeaker: "Criar locutor",
-    noSpeakerProfiles: "Nenhum perfil de locutor ainda. Crie um para disponibilizar templates de episódio.",
+    noSpeakerProfiles:
+      "Nenhum perfil de locutor ainda. Crie um para disponibilizar templates de episódio.",
     noDescription: "Nenhuma descrição fornecida.",
     usedByCount_one: "Usado por 1 episódio",
     usedByCount_other: "Usado por {count} episódios",
@@ -627,44 +698,52 @@ export const ptBR = {
     edit: "Editar",
     duplicate: "Duplicar",
     deleteSpeakerProfileTitle: "Excluir perfil de locutor?",
-    deleteSpeakerProfileDesc: "Excluir \"{name}\" não pode ser desfeito.",
-    deleteSpeakerDisabledHint: "Remova este locutor dos perfis de episódio antes de excluí-lo.",
+    deleteSpeakerProfileDesc: 'Excluir "{name}" não pode ser desfeito.',
+    deleteSpeakerDisabledHint:
+      "Remova este locutor dos perfis de episódio antes de excluí-lo.",
     deleting: "Excluindo…",
     episodeProfilesTitle: "Perfis de episódio",
-    episodeProfilesDesc: "Defina configurações de geração reutilizáveis para seus programas.",
+    episodeProfilesDesc:
+      "Defina configurações de geração reutilizáveis para seus programas.",
     createProfile: "Criar perfil",
-    createSpeakerFirst: "Crie um perfil de locutor antes de adicionar um perfil de episódio.",
-    noEpisodeProfiles: "Nenhum perfil de episódio ainda. Crie um para iniciar a geração de podcasts.",
+    createSpeakerFirst:
+      "Crie um perfil de locutor antes de adicionar um perfil de episódio.",
+    noEpisodeProfiles:
+      "Nenhum perfil de episódio ainda. Crie um para iniciar a geração de podcasts.",
     speakerCreated: "Locutor Criado",
-    speakerCreatedDesc: "O locutor \"{name}\" foi adicionado com sucesso.",
+    speakerCreatedDesc: 'O locutor "{name}" foi adicionado com sucesso.',
     failedToCreateSpeaker: "Falha ao criar perfil de locutor",
     speakerUpdated: "Locutor Atualizado",
-    speakerUpdatedDesc: "O locutor \"{name}\" foi atualizado com sucesso.",
+    speakerUpdatedDesc: 'O locutor "{name}" foi atualizado com sucesso.',
     failedToUpdateSpeaker: "Falha ao atualizar perfil de locutor",
     speakerDeleted: "Locutor Excluído",
-    speakerDeletedDesc: "O locutor \"{name}\" foi removido com sucesso.",
+    speakerDeletedDesc: 'O locutor "{name}" foi removido com sucesso.',
     failedToDeleteSpeaker: "Falha ao excluir perfil de locutor",
     speakerDuplicated: "Locutor Duplicado",
-    speakerDuplicatedDesc: "O locutor \"{name}\" foi duplicado com sucesso.",
+    speakerDuplicatedDesc: 'O locutor "{name}" foi duplicado com sucesso.',
     failedToDuplicateSpeaker: "Falha ao duplicar perfil de locutor",
     generationStarted: "Geração Iniciada",
     generationStartedDesc: "A geração do podcast foi enfileirada.",
     failedToStartGeneration: "Falha ao iniciar geração",
     tryAgainMoment: "Por favor, tente novamente em um momento.",
     deleteProfileTitle: "Excluir perfil?",
-    deleteProfileDesc: "Isso removerá \"{name}\". Episódios existentes mantêm seus dados, mas novos não usarão mais esta configuração.",
+    deleteProfileDesc:
+      'Isso removerá "{name}". Episódios existentes mantêm seus dados, mas novos não usarão mais esta configuração.',
     profileCreated: "Perfil Criado",
-    profileCreatedDesc: "O perfil de episódio \"{name}\" foi criado com sucesso.",
+    profileCreatedDesc: 'O perfil de episódio "{name}" foi criado com sucesso.',
     failedToCreateProfile: "Falha ao criar perfil",
     profileUpdated: "Perfil Atualizado",
-    profileUpdatedDesc: "O perfil de episódio \"{name}\" foi atualizado com sucesso.",
+    profileUpdatedDesc:
+      'O perfil de episódio "{name}" foi atualizado com sucesso.',
     failedToUpdateProfile: "Falha ao atualizar perfil",
     profileDeleted: "Perfil Excluído",
-    profileDeletedDesc: "O perfil de episódio \"{name}\" foi removido com sucesso.",
+    profileDeletedDesc:
+      'O perfil de episódio "{name}" foi removido com sucesso.',
     failedToDeleteProfile: "Falha ao excluir perfil",
     failedToDeleteProfileDesc: "Falha ao remover o perfil de episódio.",
     profileDuplicated: "Perfil Duplicado",
-    profileDuplicatedDesc: "O perfil de episódio \"{name}\" foi duplicado com sucesso.",
+    profileDuplicatedDesc:
+      'O perfil de episódio "{name}" foi duplicado com sucesso.',
     failedToDuplicateProfile: "Falha ao duplicar perfil",
     episodeDeleted: "Episódio Excluído",
     episodeDeletedDesc: "O episódio foi excluído com sucesso.",
@@ -683,7 +762,8 @@ export const ptBR = {
     noOutline: "Nenhum outline disponível.",
     noTranscript: "Nenhuma transcrição disponível.",
     deleteEpisodeTitle: "Excluir episódio?",
-    deleteEpisodeDesc: "Isso removerá \"{name}\" e seu arquivo de áudio permanentemente.",
+    deleteEpisodeDesc:
+      'Isso removerá "{name}" e seu arquivo de áudio permanentemente.',
     audioUnavailable: "Áudio indisponível",
     segment: "Segmento",
     speaker: "Locutor",
@@ -696,9 +776,12 @@ export const ptBR = {
     noLanguageModelsAvailable: "Nenhum modelo de linguagem disponível",
     editEpisodeProfile: "Editar Perfil de Episódio",
     createEpisodeProfile: "Criar Perfil de Episódio",
-    episodeProfileFormDesc: "Defina como os episódios devem ser gerados e qual configuração de locutor usar por padrão.",
-    noSpeakerProfilesDesc: "Crie um perfil de locutor antes de configurar um perfil de episódio.",
-    noLanguageModelsDesc: "Adicione modelos de linguagem na seção Modelos para configurar a geração de outline e transcrição.",
+    episodeProfileFormDesc:
+      "Defina como os episódios devem ser gerados e qual configuração de locutor usar por padrão.",
+    noSpeakerProfilesDesc:
+      "Crie um perfil de locutor antes de configurar um perfil de episódio.",
+    noLanguageModelsDesc:
+      "Adicione modelos de linguagem na seção Modelos para configurar a geração de outline e transcrição.",
     profileName: "Nome do perfil",
     profileNamePlaceholder: "ex., Discussão tech",
     descriptionPlaceholder: "Breve resumo de quando usar este perfil",
@@ -706,12 +789,15 @@ export const ptBR = {
     selectSpeakerProfile: "Selecione um perfil de locutor",
     outlineGeneration: "Geração de outline",
     transcriptGeneration: "Geração de transcrição",
-    defaultBriefingPlaceholder: "Delineie a estrutura, tom e objetivos para este formato de episódio",
+    defaultBriefingPlaceholder:
+      "Delineie a estrutura, tom e objetivos para este formato de episódio",
     editSpeakerProfile: "Editar Perfil de Locutor",
     createSpeakerProfile: "Criar Perfil de Locutor",
-    speakerProfileFormDesc: "Configure as configurações de text-to-speech e defina até quatro locutores.",
+    speakerProfileFormDesc:
+      "Configure as configurações de text-to-speech e defina até quatro locutores.",
     noTtsModelsAvailable: "Nenhum modelo de text-to-speech disponível",
-    noTtsModelsDesc: "Adicione modelos TTS na seção Modelos antes de criar um perfil de locutor.",
+    noTtsModelsDesc:
+      "Adicione modelos TTS na seção Modelos antes de criar um perfil de locutor.",
     speakers: "Locutores",
     speakersDesc: "Configure entre uma e quatro vozes para este perfil.",
     addSpeaker: "Adicionar locutor",
@@ -747,10 +833,12 @@ export const ptBR = {
     simple: "Simples",
     docling: "Docling",
     helpMeChoose: "Ajude-me a escolher",
-    docHelp: "· Docling é um pouco mais lento, mas mais preciso, especialmente se os documentos contêm tabelas e imagens. · Simples extrairá qualquer conteúdo do documento sem formatá-lo. · Auto (recomendado) tentará processar através do docling e usará simples como fallback.",
+    docHelp:
+      "· Docling é um pouco mais lento, mas mais preciso, especialmente se os documentos contêm tabelas e imagens. · Simples extrairá qualquer conteúdo do documento sem formatá-lo. · Auto (recomendado) tentará processar através do docling e usará simples como fallback.",
     firecrawl: "Firecrawl",
     jina: "Jina",
-    urlHelp: "· Firecrawl é um serviço pago (com tier gratuito), e muito poderoso. · Jina também é uma boa opção e também tem um tier gratuito. · Simples usará extração HTTP básica e perderá conteúdo em sites baseados em javascript. · Auto (recomendado) tentará usar firecrawl, depois Jina, e finalmente fallback para simples.",
+    urlHelp:
+      "· Firecrawl é um serviço pago (com tier gratuito), e muito poderoso. · Jina também é uma boa opção e também tem um tier gratuito. · Simples usará extração HTTP básica e perderá conteúdo em sites baseados em javascript. · Auto (recomendado) tentará usar firecrawl, depois Jina, e finalmente fallback para simples.",
     embeddingAndSearch: "Embedding e Busca",
     embeddingAndSearchDesc: "Configure opções de busca e embedding",
     defaultEmbeddingOption: "Opção Padrão de Embedding",
@@ -758,12 +846,15 @@ export const ptBR = {
     ask: "Perguntar",
     always: "Sempre",
     never: "Nunca",
-    embeddingHelp: "Incorporar o conteúdo facilitará encontrá-lo por você e seus agentes de IA. Se você está rodando um modelo de embedding local (Ollama, por exemplo), não precisa se preocupar com custo e pode incorporar tudo.",
+    embeddingHelp:
+      "Incorporar o conteúdo facilitará encontrá-lo por você e seus agentes de IA. Se você está rodando um modelo de embedding local (Ollama, por exemplo), não precisa se preocupar com custo e pode incorporar tudo.",
     fileManagement: "Gerenciamento de Arquivos",
-    fileManagementDesc: "Configure opções de manipulação e armazenamento de arquivos",
+    fileManagementDesc:
+      "Configure opções de manipulação e armazenamento de arquivos",
     autoDeleteFiles: "Excluir Arquivos Automaticamente",
     autoDeletePlaceholder: "Selecione a opção de exclusão automática",
-    filesHelp: "Uma vez que seus arquivos são enviados e processados, eles não são mais necessários. A maioria dos usuários deve permitir que o Open Notebook exclua arquivos enviados da pasta de upload automaticamente.",
+    filesHelp:
+      "Uma vez que seus arquivos são enviados e processados, eles não são mais necessários. A maioria dos usuários deve permitir que o Open Notebook exclua arquivos enviados da pasta de upload automaticamente.",
     loadFailed: "Falha ao carregar configurações",
   },
   advanced: {
@@ -772,8 +863,10 @@ export const ptBR = {
     systemInfo: "Informações do Sistema",
     systemInfoDesc: "Visualize o status dos componentes subjacentes do sistema",
     rebuildEmbeddings: "Reconstruir Embeddings",
-    rebuildEmbeddingsDesc: "Reconstruir índice de busca vetorial para todas as fontes",
-    rebuildWarning: "Esta ação pode ser muito demorada dependendo do número de fontes que você tem. Ela limpará os índices vetoriais existentes e regerará embeddings para tudo.",
+    rebuildEmbeddingsDesc:
+      "Reconstruir índice de busca vetorial para todas as fontes",
+    rebuildWarning:
+      "Esta ação pode ser muito demorada dependendo do número de fontes que você tem. Ela limpará os índices vetoriais existentes e regerará embeddings para tudo.",
     startRebuild: "Iniciar Reconstrução",
     rebuilding: "Reconstruindo...",
     rebuildSuccess: "Reconstrução de embedding iniciada com sucesso",
@@ -785,32 +878,40 @@ export const ptBR = {
     upToDate: "Atualizado",
     unknown: "Desconhecido",
     viewOnGithub: "Ver no GitHub",
-    updateCheckFailed: "Não foi possível verificar atualizações. O GitHub pode estar inacessível.",
+    updateCheckFailed:
+      "Não foi possível verificar atualizações. O GitHub pode estar inacessível.",
     rebuild: {
       mode: "Modo de Reconstrução",
       existing: "Existentes",
       all: "Todos",
-      existingDesc: "Re-incorporar apenas itens que já têm embeddings (mais rápido, para troca de modelo)",
-      allDesc: "Re-incorporar itens existentes + criar embeddings para itens sem nenhum (mais lento, abrangente)",
+      existingDesc:
+        "Re-incorporar apenas itens que já têm embeddings (mais rápido, para troca de modelo)",
+      allDesc:
+        "Re-incorporar itens existentes + criar embeddings para itens sem nenhum (mais lento, abrangente)",
       include: "Incluir na Reconstrução",
-      selectOneError: "Por favor, selecione pelo menos um tipo de item para reconstruir",
+      selectOneError:
+        "Por favor, selecione pelo menos um tipo de item para reconstruir",
       starting: "Iniciando Reconstrução...",
       startBtn: "🚀 Iniciar Reconstrução",
       queued: "Na Fila",
       running: "Executando...",
       completed: "Concluído!",
       failed: "Falhou",
-      leavePageHint: "Você pode sair desta página pois isso será executado em segundo plano",
+      leavePageHint:
+        "Você pode sair desta página pois isso será executado em segundo plano",
       startNew: "Iniciar Nova Reconstrução",
       itemsProcessed: "{processed}/{total} itens ({percent}%)",
       failedItems: "{count} itens falharam ao processar",
       time: "Tempo",
       whenToRebuild: "Quando devo reconstruir embeddings?",
-      whenToRebuildAns: "Você deve reconstruir ao trocar modelos, atualizar versões, corrigir corrupção ou após importações em massa.",
+      whenToRebuildAns:
+        "Você deve reconstruir ao trocar modelos, atualizar versões, corrigir corrupção ou após importações em massa.",
       howLong: "Quanto tempo leva a reconstrução?",
-      howLongAns: "O tempo de processamento depende da quantidade de itens, velocidade do modelo e limites de taxa da API. Modelos locais geralmente são muito rápidos.",
+      howLongAns:
+        "O tempo de processamento depende da quantidade de itens, velocidade do modelo e limites de taxa da API. Modelos locais geralmente são muito rápidos.",
       isSafe: "É seguro reconstruir enquanto usa o aplicativo?",
-      isSafeAns: "Sim, reconstruir é seguro! Não exclui conteúdo, apenas substitui embeddings, e lida com erros graciosamente.",
+      isSafeAns:
+        "Sim, reconstruir é seguro! Não exclui conteúdo, apenas substitui embeddings, e lida com erros graciosamente.",
     },
   },
   transformations: {
@@ -819,8 +920,10 @@ export const ptBR = {
     workspace: "Escolha um espaço de trabalho",
     playground: "Playground",
     defaultPrompt: "Prompt de Transformação Padrão",
-    defaultPromptDesc: "Isso será adicionado a todos os seus prompts de transformação",
-    defaultPromptPlaceholder: "Digite suas instruções padrão de transformação...",
+    defaultPromptDesc:
+      "Isso será adicionado a todos os seus prompts de transformação",
+    defaultPromptPlaceholder:
+      "Digite suas instruções padrão de transformação...",
     saveDefault: "Salvar Padrão",
     listTitle: "Transformações Personalizadas",
     createNew: "Criar Nova",
@@ -834,10 +937,12 @@ export const ptBR = {
     name: "Nome",
     namePlaceholder: "Identificador único, ex. topicos_principais",
     titlePlaceholder: "Título exibido, usa o nome por padrão",
-    promptPlaceholder: "Escreva o prompt que vai alimentar esta transformação...",
+    promptPlaceholder:
+      "Escreva o prompt que vai alimentar esta transformação...",
     descriptionPlaceholder: "Descreva o que esta transformação faz.",
     suggestDefault: "Sugerir por padrão em novas fontes",
-    promptHint: "Prompts devem ser escritos com o conteúdo da fonte em mente. Você pode pedir ao modelo para resumir, extrair insights ou produzir saídas estruturadas como tabelas.",
+    promptHint:
+      "Prompts devem ser escritos com o conteúdo da fonte em mente. Você pode pedir ao modelo para resumir, extrair insights ou produzir saídas estruturadas como tabelas.",
     createSuccess: "Transformação criada com sucesso",
     updateSuccess: "Transformação atualizada com sucesso",
     deleteSuccess: "Transformação excluída com sucesso",
@@ -853,7 +958,8 @@ export const ptBR = {
     summary: "Resumo",
     custom: "Personalizado",
     saveChanges: "Salvar Alterações",
-    overrideModelDesc: "Substitua o modelo padrão para esta sessão de chat. Deixe vazio para usar o padrão do sistema.",
+    overrideModelDesc:
+      "Substitua o modelo padrão para esta sessão de chat. Deixe vazio para usar o padrão do sistema.",
     sessionUseReplacement: "Esta sessão usará {name} em vez do modelo padrão.",
     systemDefault: "Padrão do Sistema",
   },
@@ -887,10 +993,12 @@ export const ptBR = {
     providerStatus: "Status do Provedor",
     connectionOk: "Conexão OK",
     connectionFailed: "Conexão falhou",
-    changeEmbeddingWarning: "Alterar o modelo de embedding padrão afetará novas fontes. Fontes existentes podem precisar ser reindexadas.",
+    changeEmbeddingWarning:
+      "Alterar o modelo de embedding padrão afetará novas fontes. Fontes existentes podem precisar ser reindexadas.",
     changeEmbeddingTitle: "Alterar Modelo de Embedding Padrão?",
     aiProviders: "Provedores de IA",
-    providerConfigDesc: "Configure provedores através de variáveis de ambiente para habilitar seus modelos.",
+    providerConfigDesc:
+      "Configure provedores através de variáveis de ambiente para habilitar seus modelos.",
     configuredCount: "{count} de {total} configurados",
     noModels: "Sem modelos",
     learnMore: "Saiba como configurar provedores →",
@@ -909,10 +1017,13 @@ export const ptBR = {
     noProviderModelsConfigured: "Nenhum modelo {provider} configurado",
     showMore: "Mostrar mais {count}",
     deleteModel: "Excluir Modelo",
-    deleteModelDesc: "Tem certeza que deseja excluir \"{name}\"? Esta ação não pode ser desfeita.",
+    deleteModelDesc:
+      'Tem certeza que deseja excluir "{name}"? Esta ação não pode ser desfeita.',
     defaultAssignments: "Atribuições de Modelo Padrão",
-    defaultAssignmentsDesc: "Configure quais modelos usar para diferentes propósitos no Open Notebook",
-    missingRequiredModels: "Modelos obrigatórios ausentes: {models}. O Open Notebook pode não funcionar corretamente sem eles.",
+    defaultAssignmentsDesc:
+      "Configure quais modelos usar para diferentes propósitos no Open Notebook",
+    missingRequiredModels:
+      "Modelos obrigatórios ausentes: {models}. O Open Notebook pode não funcionar corretamente sem eles.",
     selectModelPlaceholder: "Selecione um modelo",
     requiredModelPlaceholder: "⚠️ Obrigatório - Selecione um modelo",
     whichModelToChoose: "Qual modelo devo escolher? →",
@@ -921,9 +1032,11 @@ export const ptBR = {
     transformationModelLabel: "Modelo de Transformação",
     transformationModelDesc: "Usado para resumos, insights e transformações",
     toolsModelLabel: "Modelo de Ferramentas",
-    toolsModelDesc: "Usado para chamadas de função - OpenAI ou Anthropic recomendado",
+    toolsModelDesc:
+      "Usado para chamadas de função - OpenAI ou Anthropic recomendado",
     largeContextModelLabel: "Modelo de Contexto Grande",
-    largeContextModelDesc: "Usado para processar documentos grandes - Gemini recomendado",
+    largeContextModelDesc:
+      "Usado para processar documentos grandes - Gemini recomendado",
     embeddingModelLabel: "Modelo de Embedding",
     embeddingModelDesc: "Usado para busca semântica e embeddings vetoriais",
     ttsModelLabel: "Modelo Text-to-Speech",
@@ -931,7 +1044,8 @@ export const ptBR = {
     sttModelLabel: "Modelo Speech-to-Text",
     sttModelDesc: "Usado para transcrição de áudio",
     addSpecificModel: "Adicionar Modelo de {type}",
-    addSpecificModelDesc: "Configure um novo modelo de {type} dos provedores disponíveis.",
+    addSpecificModelDesc:
+      "Configure um novo modelo de {type} dos provedores disponíveis.",
     noProvidersForType: "Nenhum provedor disponível para modelos de {type}",
     selectProviderPlaceholder: "Selecione um provedor",
     providerRequired: "Provedor é obrigatório",
@@ -941,16 +1055,19 @@ export const ptBR = {
     azureHint: "Para Azure, use o nome do deployment como nome do modelo",
     enterModelName: "Digite o nome do modelo",
     embeddingChangeTitle: "Alteração de Modelo de Embedding",
-    embeddingChangeConfirm: "Você está prestes a alterar seu modelo de embedding de {from} para {to}.",
+    embeddingChangeConfirm:
+      "Você está prestes a alterar seu modelo de embedding de {from} para {to}.",
     rebuildRequired: "Importante: Reconstrução Necessária",
-    rebuildReason: "Alterar seu modelo de embedding requer reconstruir todos os embeddings existentes para manter a consistência. Sem reconstruir, suas buscas podem retornar resultados incorretos ou incompletos.",
+    rebuildReason:
+      "Alterar seu modelo de embedding requer reconstruir todos os embeddings existentes para manter a consistência. Sem reconstruir, suas buscas podem retornar resultados incorretos ou incompletos.",
     whatHappensNext: "O que acontece em seguida:",
     step1: "Seu modelo de embedding padrão será atualizado",
     step2: "Embeddings existentes permanecerão inalterados até a reconstrução",
     step3: "Novo conteúdo usará o novo modelo de embedding",
     step4: "Você deve reconstruir os embeddings o mais rápido possível",
-    proceedToRebuildPrompt: "Gostaria de ir para a página Avançado para iniciar a reconstrução agora?",
+    proceedToRebuildPrompt:
+      "Gostaria de ir para a página Avançado para iniciar a reconstrução agora?",
     changeModelOnly: "Apenas Alterar Modelo",
     changeAndRebuild: "Alterar e Ir para Reconstrução",
-  }
-}
+  },
+};

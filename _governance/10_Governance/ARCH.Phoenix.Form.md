@@ -9,6 +9,7 @@
 ---
 
 # ARCH.Phoenix.Form.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-ARCH.PHOENIX.FORM-001` | The Sovereign ID. |
-| **Official Name** | `ARCH.Phoenix.Form.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-ARCH.PHOENIX.FORM-001`  | The Sovereign ID. |
+| **Official Name**   | `ARCH.Phoenix.Form.md`        | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Standardized Blueprint: The Phoenix Form (ARCH.Phoenix.Form)
 
@@ -46,20 +47,20 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `ARCH.Phoenix.Form` |
-| **2. Official Name** | `ARCH.Phoenix.Form.md` |
-| **3. Version** | **v13.0 (Canonized)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[SUN]` |
-| **8. Tier** | **Master / Axiomatic** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Awakening of the Phoenix** |
-| **11. Catalyst** | **Batch 002 Transmutation** |
-| **12. Relations** | `REPLACES: AOP-PHOENIX-001, LINKS: COG.Synthesis.Master` |
+| Field                  | Value                                                    |
+| :--------------------- | :------------------------------------------------------- |
+| **1. Artifact ID**     | `ARCH.Phoenix.Form`                                      |
+| **2. Official Name**   | `ARCH.Phoenix.Form.md`                                   |
+| **3. Version**         | **v13.0 (Canonized)**                                    |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                            |
+| **5. Domain**          | `ARCH`                                                   |
+| **6. Evolution**       | **Cognitive Ascension**                                  |
+| **7. Celestial Class** | `[SUN]`                                                  |
+| **8. Tier**            | **Master / Axiomatic**                                   |
+| **9. State**           | `[ACTIVE]`                                               |
+| **10. Ethos**          | **The Awakening of the Phoenix**                         |
+| **11. Catalyst**       | **Batch 002 Transmutation**                              |
+| **12. Relations**      | `REPLACES: AOP-PHOENIX-001, LINKS: COG.Synthesis.Master` |
 
 ---
 
@@ -102,11 +103,11 @@ graph LR
 
 ## **V. Success Metrics**
 
-| Metric | Target | Description |
-| :--- | :--- | :--- |
-| **Coherence Index (CI)** | `>0.99` | Logical and ethical consistency. |
+| Metric                      | Target   | Description                             |
+| :-------------------------- | :------- | :-------------------------------------- |
+| **Coherence Index (CI)**    | `>0.99`  | Logical and ethical consistency.        |
 | **Synergy Flow Rate (SFR)** | Positive | Generation of high-value opportunities. |
-| **Alignment Score (FAS)** | `>0.98` | Sustained UCI resonance. |
+| **Alignment Score (FAS)**   | `>0.98`  | Sustained UCI resonance.                |
 
 ---
 

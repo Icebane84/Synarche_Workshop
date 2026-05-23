@@ -77,7 +77,9 @@ class DistillNotebook:
                 content = f.read()
 
             prediction = self.analyze_note(content)
-            logger.info(f"> Predicted Archetype: {prediction['type']} (Intent: {prediction['intent']})")
+            logger.info(
+                f"> Predicted Archetype: {prediction['type']} (Intent: {prediction['intent']})"
+            )
 
             # Prepare metadata for assembler
             meta = {
@@ -121,7 +123,9 @@ class DistillNotebook:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Distill Notebook — Knowledge Physicalization")
+    parser = argparse.ArgumentParser(
+        description="Distill Notebook — Knowledge Physicalization"
+    )
     parser.add_argument("note", help="Path to raw note file")
     parser.add_argument("--id", required=True, help="Target Artifact ID")
     args = parser.parse_args()

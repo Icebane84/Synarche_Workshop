@@ -82,7 +82,9 @@ def reforge_library(path: str) -> None:
     print(f"  Functions Scanned: {total_funcs}")
     print(f"  Fully Compliant:   {total_compliant}")
     print(f"  Violations:        {len(violations)}")
-    compliance_rate = (total_compliant / total_funcs * 100) if total_funcs > 0 else 100.0
+    compliance_rate = (
+        (total_compliant / total_funcs * 100) if total_funcs > 0 else 100.0
+    )
     print(f"  Compliance Rate:   {compliance_rate:.1f}%")
     print("-" * 70)
 
@@ -97,7 +99,9 @@ def reforge_library(path: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Reforge Library — Type Compliance Auditor")
+    parser = argparse.ArgumentParser(
+        description="Reforge Library — Type Compliance Auditor"
+    )
     parser.add_argument("target", help="File or directory to audit.")
     args = parser.parse_args()
     reforge_library(os.path.abspath(args.target))

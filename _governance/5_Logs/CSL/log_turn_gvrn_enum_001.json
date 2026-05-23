@@ -4,10 +4,7 @@
   "turn_id": "CANONIZE-ENUM-STD",
   "cognitive_state": {
     "system_mode": "Anti-Entropy Enforcement",
-    "active_personalities": [
-      "@axion",
-      "@sentinel"
-    ],
+    "active_personalities": ["@axion", "@sentinel"],
     "current_focus": "Eliminating ambiguity in state definitions."
   },
   "telemetry": {

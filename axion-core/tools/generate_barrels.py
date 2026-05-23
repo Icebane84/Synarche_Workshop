@@ -1,5 +1,4 @@
-"""
-# TOOL-COOPER-001: The Barrel Generator (Sovereign Indexes)
+"""# TOOL-COOPER-001: The Barrel Generator (Sovereign Indexes).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -24,7 +23,17 @@ import argparse
 import os
 import sys
 
-IGNORE_DIRS = {".git", "node_modules", "__pycache__", ".vscode", ".agent", ".trunk", ".gemini", "venv", ".venv"}
+IGNORE_DIRS = {
+    ".git",
+    "node_modules",
+    "__pycache__",
+    ".vscode",
+    ".agent",
+    ".trunk",
+    ".gemini",
+    "venv",
+    ".venv",
+}
 INDEX_FILENAME = "00_INDEX.md"
 
 

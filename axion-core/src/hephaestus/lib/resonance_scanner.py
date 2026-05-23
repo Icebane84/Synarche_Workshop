@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -45,7 +44,8 @@
 import math
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Set
+from typing import Dict, List, Set
+
 from .task_context import TaskContext
 
 
@@ -62,22 +62,31 @@ class ArtifactScanner:
         total_files = 0
         aligned_files = 0
         unaligned_paths: list[Path] = []
-        
+
         # OMEGA v15.1 - Performance Optimization
         exclude_dirs = {
-            ".git", ".venv", ".venv_prs", "__pycache__", "node_modules", 
-            ".gemini", "artifacts", "brain", ".mypy_cache", 
-            ".pytest_cache", "build", "dist"
+            ".git",
+            ".venv",
+            ".venv_prs",
+            "__pycache__",
+            "node_modules",
+            ".gemini",
+            "artifacts",
+            "brain",
+            ".mypy_cache",
+            ".pytest_cache",
+            "build",
+            "dist",
         }
 
         for file_path in directory.rglob("*"):
             # Skip excluded directories
             if any(part in exclude_dirs for part in file_path.parts):
                 continue
-                
+
             if file_path.suffix not in VALID_EXTENSIONS:
                 continue
-            
+
             if file_path.is_dir():
                 continue
 
@@ -86,7 +95,7 @@ class ArtifactScanner:
                 aligned_files += 1
             else:
                 unaligned_paths.append(file_path)
-        
+
         return total_files, aligned_files, unaligned_paths
 
 
@@ -103,14 +112,14 @@ VALID_EXTENSIONS: Set[str] = {".md", ".json", ".ts", ".tsx", ".py"}
 
 
 def is_aligned(file_path: Path) -> bool:
-    """
-    Checks if a file is aligned based on Resonance Markers and header integrity.
+    """Checks if a file is aligned based on Resonance Markers and header integrity.
 
     Args:
         file_path: The path to the file to check.
 
     Returns:
         True if aligned, False otherwise.
+
     """
     try:
         # Check filename first
@@ -133,8 +142,7 @@ def is_aligned(file_path: Path) -> bool:
 
 
 def calculate_similarity(text1: str, text2: str) -> float:
-    """
-    Calculates cosine similarity between two text blocks based on term frequency.
+    """Calculates cosine similarity between two text blocks based on term frequency.
 
     Args:
         text1: First text block.
@@ -142,6 +150,7 @@ def calculate_similarity(text1: str, text2: str) -> float:
 
     Returns:
         Cosine similarity score (0.0 to 1.0).
+
     """
 
     def extract_terms(text: str) -> List[str]:

@@ -1,41 +1,44 @@
 {
-    "compilerOptions": {
-        "paths": {
-            /* --- The Master Star-Chart (PRS-001) --- */
-            "@system/*": ["./axion-core/src/*"],
-            "@fabric/*": ["./design-system/*"],
-            "@essence/*": ["./axion-core/src/types/*"],
-            "@shield/*": ["./axion-core/sentinel/*"],
-            "@pulse/*": ["./axion-core/_logs/*"],
-            "@loom/*": ["./axion-core/standards/*"]
-        }
-    },
-    "exclude": [
-        "node_modules",
-        "**/node_modules",
-        "**/node_modules/**/*",
-        "dist",
-        "**/dist",
-        "**/dist/**/*",
-        "out",
-        "**/out",
-        "**/out/**/*",
-        ".git",
-        "**/_governance",
-        "**/_governance/**/*",
-        "**/.archives",
-        "**/.archives/**/*",
-        "**/.mypy_cache",
-        "**/.mypy_cache/**/*",
-        "**/.ruff_cache",
-        "**/.ruff_cache/**/*",
-        "**/.venv",
-        "**/.venv/**/*",
-        "**/venv",
-        "**/venv/**/*",
-        "**/scratch",
-        "**/scratch/**/*",
-        "**/incoming",
-        "**/incoming/**/*"
-    ]
+  "compilerOptions": {
+    "paths": {
+      /* --- The Master Star-Chart (PRS-001) --- */
+      "@logging": ["./axion-core/src/system/logging/index.ts"],
+      "@nexus/*": ["./axion-core/src/nexus/*"],
+      "@utils/*": ["./axion-core/src/utils/*"],
+      "@system/*": ["./axion-core/src/*"],
+      "@fabric/*": ["./design-system/*"],
+      "@essence/*": ["./axion-core/src/types/*"],
+      "@shield/*": ["./axion-core/sentinel/*"],
+      "@pulse/*": ["./axion-core/_logs/*"],
+      "@loom/*": ["./axion-core/standards/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "**/node_modules/**/*",
+    "dist",
+    "**/dist",
+    "**/dist/**/*",
+    "out",
+    "**/out",
+    "**/out/**/*",
+    ".git",
+    "**/_governance",
+    "**/_governance/**/*",
+    "**/.archives",
+    "**/.archives/**/*",
+    "**/.mypy_cache",
+    "**/.mypy_cache/**/*",
+    "**/.ruff_cache",
+    "**/.ruff_cache/**/*",
+    "**/.venv",
+    "**/.venv/**/*",
+    "**/venv",
+    "**/venv/**/*",
+    "**/scratch",
+    "**/scratch/**/*",
+    "**/incoming",
+    "**/incoming/**/*"
+  ]
 }

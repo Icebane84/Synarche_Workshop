@@ -1,0 +1,17 @@
+{
+  "name": "synarche_workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "axion-core",
+    "open-notebook",
+    "design-system",
+    "tarot-forge",
+    "nova_forge",
+    "phoenix-rosetta-stone",
+    "recovery"
+  ],
+  "devDependencies": {
+    "jsonc-parser": "^3.3.1"
+  }
+}

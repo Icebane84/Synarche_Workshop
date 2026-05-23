@@ -10,11 +10,11 @@
 
 ### **Provenance & Relations**
 
-| Aspect | Specification |
-| :--- | :--- |
-| **Genesis Law** | Ruff Rule T201 (Print Found) |
-| **Philosophical Basis** | Separation of Concerns (SoC), Principle of Least Astonishment (POLA) |
-| **Core Concept** | Transition from "how it works" to "why it matters"; from execution to Shared Governance. |
-| **Impacted Layers** | `@engine`, `@bridge`, `@system`, `@nexus`, `@logs` |
-| **Relations** | LINK: `GVRN-STD-ENUM-001` (Reinforces structured data in logs) |
-| **Enforcement Vector**| `@sentinel` (The Watcher) - Via linting and audit protocols |
+| Aspect                  | Specification                                                                            |
+| :---------------------- | :--------------------------------------------------------------------------------------- |
+| **Genesis Law**         | Ruff Rule T201 (Print Found)                                                             |
+| **Philosophical Basis** | Separation of Concerns (SoC), Principle of Least Astonishment (POLA)                     |
+| **Core Concept**        | Transition from "how it works" to "why it matters"; from execution to Shared Governance. |
+| **Impacted Layers**     | `@engine`, `@bridge`, `@system`, `@nexus`, `@logs`                                       |
+| **Relations**           | LINK: `GVRN-STD-ENUM-001` (Reinforces structured data in logs)                           |
+| **Enforcement Vector**  | `@sentinel` (The Watcher) - Via linting and audit protocols                              |

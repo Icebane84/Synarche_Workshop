@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
@@ -8,52 +8,54 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
-import { ModelSelector } from '@/components/common/ModelSelector'
-import { useTranslation } from '@/lib/hooks/use-translation'
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { ModelSelector } from "@/components/common/ModelSelector";
+import { useTranslation } from "@/lib/hooks/use-translation";
 
 interface AdvancedModelsDialogProps {
-  open: boolean
-  onOpenChange: (open: boolean) => void
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
   defaultModels: {
-    strategy: string
-    answer: string
-    finalAnswer: string
-  }
+    strategy: string;
+    answer: string;
+    finalAnswer: string;
+  };
   onSave: (models: {
-    strategy: string
-    answer: string
-    finalAnswer: string
-  }) => void
+    strategy: string;
+    answer: string;
+    finalAnswer: string;
+  }) => void;
 }
 
 export function AdvancedModelsDialog({
   open,
   onOpenChange,
   defaultModels,
-  onSave
+  onSave,
 }: AdvancedModelsDialogProps) {
-  const { t } = useTranslation()
-  const [strategyModel, setStrategyModel] = useState(defaultModels.strategy)
-  const [answerModel, setAnswerModel] = useState(defaultModels.answer)
-  const [finalAnswerModel, setFinalAnswerModel] = useState(defaultModels.finalAnswer)
+  const { t } = useTranslation();
+  const [strategyModel, setStrategyModel] = useState(defaultModels.strategy);
+  const [answerModel, setAnswerModel] = useState(defaultModels.answer);
+  const [finalAnswerModel, setFinalAnswerModel] = useState(
+    defaultModels.finalAnswer,
+  );
 
   // Update local state when defaultModels change
   useEffect(() => {
-    setStrategyModel(defaultModels.strategy)
-    setAnswerModel(defaultModels.answer)
-    setFinalAnswerModel(defaultModels.finalAnswer)
-  }, [defaultModels])
+    setStrategyModel(defaultModels.strategy);
+    setAnswerModel(defaultModels.answer);
+    setFinalAnswerModel(defaultModels.finalAnswer);
+  }, [defaultModels]);
 
   const handleSave = () => {
     onSave({
       strategy: strategyModel,
       answer: answerModel,
-      finalAnswer: finalAnswerModel
-    })
-    onOpenChange(false)
-  }
+      finalAnswer: finalAnswerModel,
+    });
+    onOpenChange(false);
+  };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -95,11 +97,9 @@ export function AdvancedModelsDialog({
           <Button variant="outline" onClick={() => onOpenChange(false)}>
             {t.common.cancel}
           </Button>
-          <Button onClick={handleSave}>
-            {t.searchPage.saveChanges}
-          </Button>
+          <Button onClick={handleSave}>{t.searchPage.saveChanges}</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

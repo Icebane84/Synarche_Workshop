@@ -1,4 +1,3 @@
-
 class DAGCompiler:
     def __init__(self, systems):
         self.systems = systems

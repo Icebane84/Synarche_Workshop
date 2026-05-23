@@ -1,7 +1,6 @@
-# .agent/skills/canonization/registry.yaml
 domain: CANONIZATION
-last_updated: "2026-03-28T08:30:09.855482"
+last_updated: '2026-05-19T15:21:38.884128'
 skills:
-  - documented: false
-    id: scripts
-    path: /.agent/skills/canonization/scripts
+- documented: false
+  id: scripts
+  path: /.agent/skills/canonization/scripts

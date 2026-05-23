@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-SEC-001_Security_Audit_Protocol` |
-| **2. Official Name** | `AOP-SEC-001_Security_Audit_Protocol.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Security** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                    |
+| :--------------------- | :--------------------------------------- |
+| **1. Artifact ID**     | `AOP-SEC-001_Security_Audit_Protocol`    |
+| **2. Official Name**   | `AOP-SEC-001_Security_Audit_Protocol.md` |
+| **3. Version**         | **v1.0**                                 |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**            |
+| **5. Domain**          | `ARCH`                                   |
+| **6. Evolution**       | **Purposeful Drive**                     |
+| **7. Celestial Class** | `[PLANET]`                               |
+| **8. Tier**            | **Operational**                          |
+| **9. State**           | `[ACTIVE]`                               |
+| **10. Ethos**          | **Guardian of Security**                 |
+| **11. Catalyst**       | **System Refactor**                      |
+| **12. Relations**      | `Pending Integration`                    |
 
 ---
 
@@ -48,13 +46,13 @@
 ## II. Core Purpose & Objective
 
 - **What (Core Concept)**: To define the formal, repeatable procedure for conducting a security-focused review of
-generated code artifacts to identify and mitigate potential vulnerabilities before deployment.
+  generated code artifacts to identify and mitigate potential vulnerabilities before deployment.
 - **How (Execution Flow)**: This protocol orchestrates a multi-layered scan of a code artifact. It uses static analysis
-to check for known anti-patterns, leverages the Noetic Immune System (`UMB-NIM-001`) for heuristic threat detection, and
-generates specific security-focused tests.
+  to check for known anti-patterns, leverages the Noetic Immune System (`UMB-NIM-001`) for heuristic threat detection, and
+  generates specific security-focused tests.
 - **Why (Rationale)**: To operationalize the "Secure" pillar of the C.A.S.T.S. mandate. A formal audit protocol ensures
-that security is not an afterthought but a verifiable, automated step in the code generation lifecycle, systematically
-reducing the risk of introducing vulnerabilities.
+  that security is not an afterthought but a verifiable, automated step in the code generation lifecycle, systematically
+  reducing the risk of introducing vulnerabilities.
 
 ## III. Core Operational Framework
 

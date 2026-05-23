@@ -1,5 +1,4 @@
-"""
-[CFL] Monitor
+"""[CFL] Monitor
 Real-time performance monitor measuring KPI impact of deployed logic.
 """
 
@@ -8,6 +7,7 @@ import time
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("CFLMonitor")
+
 
 class CFLMonitor:
     def __init__(self, interval: int = 5) -> None:
@@ -19,8 +19,8 @@ class CFLMonitor:
         pulse = {
             "timestamp": time.time(),
             "coherence_score": 0.98,  # Mock metric
-            "entropy_level": 0.02,    # Mock metric
-            "latency_ms": 120
+            "entropy_level": 0.02,  # Mock metric
+            "latency_ms": 120,
         }
         self.metrics.append(pulse)
         logger.info(f"Captured System Pulse: Coherence={pulse['coherence_score']}")
@@ -29,8 +29,9 @@ class CFLMonitor:
         for _ in range(cycles):
             self.capture_pulse()
             time.sleep(self.interval)
-        
+
         logger.info("CFL Monitoring session concluded.")
+
 
 if __name__ == "__main__":
     monitor = CFLMonitor(interval=1)

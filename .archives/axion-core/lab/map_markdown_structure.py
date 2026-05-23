@@ -1,13 +1,11 @@
-"""
-IDENTIFICATION: TOOL-MAP-MD-001
+"""IDENTIFICATION: TOOL-MAP-MD-001
 VERSION: v15.0 [OMEGA]
 STATUS: [CANONIZED]
-TIMESTAMP: 2026-03-24
+TIMESTAMP: 2026-03-24.
 """
 
 import argparse
 import os
-from typing import Set
 
 #!/usr/bin/env python3
 """

@@ -12,7 +12,7 @@ import json
 import logging
 from collections import defaultdict
 from pathlib import Path
-from typing import Any, List
+from typing import Any
 
 # Hephaestus Lib Imports
 from weaver import CatalystWeaver

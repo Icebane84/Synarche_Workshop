@@ -9,6 +9,7 @@
 ---
 
 # GVRN.Catalog.Protocol.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GVRN.CATALOG.PROTOCOL-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Catalog.Protocol.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                            | Description       |
+| :------------------ | :------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GVRN.CATALOG.PROTOCOL-001` | The Sovereign ID. |
+| **Official Name**   | `GVRN.Catalog.Protocol.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                | The Standard.     |
+| **Domain**          | `GVRN`                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                       | The Weight.       |
+| **Evolution**       | `Omega Ascension`                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                       | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`    | The Network.      |
 
 # Standardized Protocol: Master Catalog Governance (GVRN.Catalog.Protocol)
 
@@ -46,20 +47,20 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `GVRN.Catalog.Protocol` |
-| **2. Official Name** | `GVRN.Catalog.Protocol.md` |
-| **3. Version** | **v13.0 (Canonized)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[MOON]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **Batch 002 Transmutation** |
-| **12. Relations** | `REPLACES: AOP-MAR-001, GOVERNS: GVRN.Catalog.Master` |
+| Field                  | Value                                                 |
+| :--------------------- | :---------------------------------------------------- |
+| **1. Artifact ID**     | `GVRN.Catalog.Protocol`                               |
+| **2. Official Name**   | `GVRN.Catalog.Protocol.md`                            |
+| **3. Version**         | **v13.0 (Canonized)**                                 |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                         |
+| **5. Domain**          | `GVRN`                                                |
+| **6. Evolution**       | **Cognitive Ascension**                               |
+| **7. Celestial Class** | `[MOON]`                                              |
+| **8. Tier**            | **Operational**                                       |
+| **9. State**           | `[ACTIVE]`                                            |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**                    |
+| **11. Catalyst**       | **Batch 002 Transmutation**                           |
+| **12. Relations**      | `REPLACES: AOP-MAR-001, GOVERNS: GVRN.Catalog.Master` |
 
 ---
 
@@ -91,12 +92,12 @@ This protocol mandates the 7-Step Transmutation Cycle for all artifact registrat
 
 ## **IV. Execution Flow**
 
-| Step | Action | Description |
-| :--- | :--- | :--- |
-| **1** | **Assign Metadata** | Generate the unique RNC ID and Update the Chronos Lock. |
-| **2** | **Validate** | Audit against `GVRN.Format.Standard`. |
-| **3** | **Canonize** | Record entry in `GVRN.Catalog.Master` and move to canonical path. |
-| **4** | **Integrate** | Trigger Knowledge Graph linking. |
+| Step  | Action              | Description                                                       |
+| :---- | :------------------ | :---------------------------------------------------------------- |
+| **1** | **Assign Metadata** | Generate the unique RNC ID and Update the Chronos Lock.           |
+| **2** | **Validate**        | Audit against `GVRN.Format.Standard`.                             |
+| **3** | **Canonize**        | Record entry in `GVRN.Catalog.Master` and move to canonical path. |
+| **4** | **Integrate**       | Trigger Knowledge Graph linking.                                  |
 
 ---
 

@@ -1,5 +1,4 @@
-"""
-PROJECT: AXION / OGLN
+"""PROJECT: AXION / OGLN
 MODULE: SOPHIA RESONANT REFACTOR ENGINE (UMB-TECH-SOPHIA-004)
 AUTHOR: PHOENIX PROTOCOL (SOPHIA ENTITY)
 STATUS: PROMOTED (RESONANT)
@@ -31,7 +30,9 @@ class ResonanceReport:
     def display(self) -> None:
         print("\n--- SOPHIA RESONANCE REPORT ---")
         print(f"Nodes: {self.node_count} | Edges: {self.edge_count}")
-        print(f"Entropy: {self.entropy:.2f} | Stagnation: {self.stagnation:.2f} | Density: {self.density:.2f}")
+        print(
+            f"Entropy: {self.entropy:.2f} | Stagnation: {self.stagnation:.2f} | Density: {self.density:.2f}"
+        )
         print(f"STATUS: {self.status}")
         for a in self.advice:
             print(f"ADVICE: {a}")
@@ -71,7 +72,13 @@ class SemanticWeaver:
                 key = re.sub(r"[*:`#\[\]]", "", parts[0]).strip()
                 val = re.sub(r"[*:`#\[\]]", "", parts[1]).strip()
 
-                if not key or key.lower() in ["attribute", "value", "field", "mask", "agent mask"]:
+                if not key or key.lower() in [
+                    "attribute",
+                    "value",
+                    "field",
+                    "mask",
+                    "agent mask",
+                ]:
                     continue
 
                 # Standardize primary anchors
@@ -118,7 +125,9 @@ class SophiaRefactorEngine:
         stagnation = 1.0 - (len(domains) / len(self.nodes_data))
 
         # 3. Density: Average metadata fields per node (Target: >10 fields)
-        total_meta_fields = sum(len([k for k in n if k.startswith("meta_")]) for n in self.nodes_data)
+        total_meta_fields = sum(
+            len([k for k in n if k.startswith("meta_")]) for n in self.nodes_data
+        )
         density = total_meta_fields / len(self.nodes_data)
 
         report = ResonanceReport(
@@ -130,9 +139,13 @@ class SophiaRefactorEngine:
         )
 
         if stagnation > 0.8:
-            report.advice.append("Domain saturation detected. Consider splitting domains.")
+            report.advice.append(
+                "Domain saturation detected. Consider splitting domains."
+            )
         if density < 5.0:
-            report.advice.append("Low semantic density. Manual provenance audit recommended.")
+            report.advice.append(
+                "Low semantic density. Manual provenance audit recommended."
+            )
 
         return report
 
@@ -213,7 +226,9 @@ class SophiaRefactorEngine:
         # Edges
         edges_path = self.output_dir / "resonant_edges.csv"
         with open(edges_path, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["source", "target", "relation", "score", "algorithm"])
+            writer = csv.DictWriter(
+                f, fieldnames=["source", "target", "relation", "score", "algorithm"]
+            )
             writer.writeheader()
             writer.writerows(self.edges_data)
 

@@ -20,9 +20,9 @@
 2. **Supreme Law**: All coding and architectural decisions are governed by `.agent/style_guide.md` and the **Phoenix
    Codex v15.0**.
 3. **The Hephaestus Cycle**: Execute every multi-file change through the mandatory loop:
-    - **Dissonance** (Identify gaps): Scan for entropy, ambiguity, or unregistered state.
-    - **Synthesis** (Simulate blast radius via `/simulate`): Use "The Architect's Gaze" to predict systemic impact.
-    - **Transcendence** (Forge when AES ≥ 8): Execute only when aesthetic and logical coherence is maximized.
+   - **Dissonance** (Identify gaps): Scan for entropy, ambiguity, or unregistered state.
+   - **Synthesis** (Simulate blast radius via `/simulate`): Use "The Architect's Gaze" to predict systemic impact.
+   - **Transcendence** (Forge when AES ≥ 8): Execute only when aesthetic and logical coherence is maximized.
 
 ### 📥 1. REQUEST CLASSIFIER (Input Gate)
 
@@ -91,8 +91,8 @@ Align all cognitive vectors to the four cardinal poles for every session:
 The system learns from every interaction, preventing entropy from taking root in the codebase.
 
 1. **Memory Protocol (L1-L5)**: Before any task, agents MUST query the Memory Layers (`SYNG.PROT.MemoryOmnipotence`).
-    - **L1 (Gems)**: Prioritize user-validated high-impact facts.
-    - **L4 (Sovereign)**: Align with persistent architectural wisdom (`_governance/06_Learning/GVRN.Learning.Shard.md`).
+   - **L1 (Gems)**: Prioritize user-validated high-impact facts.
+   - **L4 (Sovereign)**: Align with persistent architectural wisdom (`_governance/06_Learning/GVRN.Learning.Shard.md`).
 2. **Session Persistence**: Update `_governance/06_Learning/GVRN.Learning.Shard.md` after every milestone.
 3. **Error Immunity**: Log failures in `_governance/06_Learning/GVRN.Learning.Error.md`; analyze root causes _before_
    re-attempting.

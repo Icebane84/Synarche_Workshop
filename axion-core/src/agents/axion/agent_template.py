@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -64,9 +63,8 @@ __all__ = [
 if __name__ == "__main__":
     # Test execution of the consolidated loop
     async def run_test() -> None:
-        """
-        Executes a cognitive loop test for the Axion Agent Vessel.
-        
+        """Executes a cognitive loop test for the Axion Agent Vessel.
+
         Initializes the runtime and streams events based on a test state.
         """
         runtime = AxionRuntime()

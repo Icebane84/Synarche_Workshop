@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -44,8 +43,8 @@
 
 from .audit_magic_values import MagicAuditor
 from .auditor import AuditResult, ComplianceAuditor
-from .crf import CausalLinter
 from .chronicler import Chronicler
+from .crf import CausalLinter
 from .gate import HephaestusGate
 from .gaze import ArchitectsGaze
 from .mentor import MentorsVoice
@@ -53,7 +52,6 @@ from .oslm_gps import OSLMGPS
 from .reforger import BlockScanner
 from .sentinel import CodeSentinel
 from .soul import ArtificersSoul
-
 
 __all__ = [
     "OSLMGPS",

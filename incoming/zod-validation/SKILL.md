@@ -1,13 +1,19 @@
 ---
 name: zod-validation
-description: "Enforces Zod schema validation at all external data boundaries. Use when: (1) consuming any API response, (2) processing user form input, (3) loading environment variables, (4) reading from localStorage or URL params. Mandated by style_guide.md and GEMINI.md."
+description:
+  "Enforces Zod schema validation at all external data boundaries. Use when: (1) consuming any API response, (2)
+  processing user form input, (3) loading environment variables, (4) reading from localStorage or URL params. Mandated
+  by style_guide.md and GEMINI.md."
 ---
 
 # Zod Validation Skill
 
-Apply Zod schemas at every trust boundary. Data is `unknown` until proven otherwise. This skill prevents the `any` escape hatch and guarantees runtime type safety.
+Apply Zod schemas at every trust boundary. Data is `unknown` until proven otherwise. This skill prevents the `any`
+escape hatch and guarantees runtime type safety.
 
 ## Quick Reference
+
+---
 
 | Boundary       | Use            | Throws? |
 | -------------- | -------------- | ------- |
@@ -19,13 +25,19 @@ Apply Zod schemas at every trust boundary. Data is `unknown` until proven otherw
 
 ## Naming Rules
 
+---
+
 - Schema: `PascalCase` + `Schema` suffix → `UserSchema`, `ProjectSchema`.
 - Derived type: `z.infer<typeof Schema>` — **never** duplicate the interface manually.
 - Import from `'zod'` directly — no barrel-file re-exports.
 
 ## Patterns
 
+---
+
 ### API Response (Throwing)
+
+---
 
 Use when a failure is a fatal error (e.g., a critical data load):
 
@@ -55,6 +67,8 @@ const fetchUser = async (id: string): Promise<User> => {
 
 ### Form / User Input (Non-Throwing)
 
+---
+
 Use when a graceful error message is appropriate:
 
 ```typescript
@@ -71,6 +85,8 @@ const user = result.data; // fully typed, safe to use
 
 ### Environment Variables
 
+---
+
 Validate once at startup — fail fast if config is wrong:
 
 ```typescript
@@ -86,6 +102,8 @@ export const env = EnvSchema.parse(import.meta.env);
 
 ### Nested & Optional Fields
 
+---
+
 ```typescript
 const ProjectSchema = z.object({
   id: z.string().uuid(),
@@ -99,7 +117,10 @@ const ProjectSchema = z.object({
 
 ## Constraints (Non-Negotiable)
 
+---
+
 1. **No `any`** — Raw `JSON.parse()` or untyped `fetch()` returns are a violation.
-2. **Validate at the boundary** — Never validate inside a component render or event handler. Do it in the service/fetch layer.
+2. **Validate at the boundary** — Never validate inside a component render or event handler. Do it in the service/fetch
+   layer.
 3. **Schema is the source of truth** — Delete any manually written `interface` that duplicates a Zod schema shape.
 4. **Handle ZodError explicitly** — Never swallow it silently. Log with `error.format()` or re-throw.

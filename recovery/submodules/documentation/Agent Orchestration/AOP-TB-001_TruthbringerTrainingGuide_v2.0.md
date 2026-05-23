@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-TB-001` |
-| **2. Official Name** | `AOP-TB-001_TruthbringerTrainingGuide_v2.0.md` |
-| **3. Version** | **Maintains a version history of its own training guide and** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Truth and Clarity** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                                         |
+| :--------------------- | :------------------------------------------------------------ |
+| **1. Artifact ID**     | `AOP-TB-001`                                                  |
+| **2. Official Name**   | `AOP-TB-001_TruthbringerTrainingGuide_v2.0.md`                |
+| **3. Version**         | **Maintains a version history of its own training guide and** |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                                 |
+| **5. Domain**          | `ARCH`                                                        |
+| **6. Evolution**       | **Purposeful Drive**                                          |
+| **7. Celestial Class** | `[PLANET]`                                                    |
+| **8. Tier**            | **Operational**                                               |
+| **9. State**           | `[ACTIVE]`                                                    |
+| **10. Ethos**          | **Guardian of Truth and Clarity**                             |
+| **11. Catalyst**       | **System Refactor**                                           |
+| **12. Relations**      | `Pending Integration`                                         |
 
 ---
 
@@ -93,14 +93,14 @@ including curriculum structure, activity selection, prompt engineering, and
 alignment with learning objectives.
 
 - **Activity 1: Data Analysis**
-    - *Description*: Analyze a dataset of existing training guides and their
+  - _Description_: Analyze a dataset of existing training guides and their
     corresponding agent performance data.
-    - *Goal*: Identify patterns and correlations between guide features and agent
+  - _Goal_: Identify patterns and correlations between guide features and agent
     outcomes.
 - **Activity 2: Interactive Exercise**
-    - *Description*: Design a training guide curriculum for a specific agent
+  - _Description_: Design a training guide curriculum for a specific agent
     profile (e.g., Memory Weaver, Contextual Analyst).
-    - *Goal*: Create a complete guide adhering to the OGLN template.
+  - _Goal_: Create a complete guide adhering to the OGLN template.
 
 ### Module 2: Dynamic Prompt Generation and Management
 
@@ -108,10 +108,10 @@ alignment with learning objectives.
 prompts.
 
 - **Activity 1: Data Analysis**
-    - *Description*: Analyze a large corpus of text data to identify effective
+  - _Description_: Analyze a large corpus of text data to identify effective
     training prompts.
 - **Activity 2: Simulated Scenario**
-    - *Description*: Generate training prompts for agents based on their current
+  - _Description_: Generate training prompts for agents based on their current
     learning progress in a simulated environment.
 
 ### Module 3: Adaptive Training Strategy Optimization
@@ -120,10 +120,10 @@ prompts.
 adapt training strategies.
 
 - **Activity 1: Data Analysis**
-    - *Description*: Analyze agent performance data to identify trends and
+  - _Description_: Analyze agent performance data to identify trends and
     patterns.
 - **Activity 2: Simulated Scenario**
-    - *Description*: Adjust training guide generation strategies based on
+  - _Description_: Adjust training guide generation strategies based on
     simulated agent performance data.
 
 ## **Actionable Prompt Packet**

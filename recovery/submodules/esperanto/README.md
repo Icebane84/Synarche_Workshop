@@ -1,26 +1,27 @@
-# README.md
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
 
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+# **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
-###### **[ARTIFACT START]**
+## **[ARTIFACT START]**
+
+---
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-README-001` | The Sovereign ID. |
-| **Official Name** | `README.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+---
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-README-001`             | The Sovereign ID. |
+| **Official Name**   | `README.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Esperanto 🌐
 
@@ -30,85 +31,127 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/esperanto)](https://pypi.org/project/esperanto/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Esperanto is a powerful Python library that provides a unified interface for interacting with various Large Language Model (LLM) providers. It simplifies the process of working with different AI models (LLMs, Embedders, Transcribers, and TTS) APIs by offering a consistent interface while maintaining provider-specific optimizations.
+Esperanto is a powerful Python library that provides a unified interface for interacting with various Large Language
+Model (LLM) providers. It simplifies the process of working with different AI models (LLMs, Embedders, Transcribers, and
+TTS) APIs by offering a consistent interface while maintaining provider-specific optimizations.
 
 ## Why Esperanto? 🚀
 
+---
+
 **🪶 Ultra-Lightweight Architecture**
-- **Direct HTTP Communication**: All providers communicate directly via HTTP APIs using `httpx` - no bulky vendor SDKs required
-- **Minimal Dependencies**: Unlike LangChain and similar frameworks, Esperanto has a tiny footprint with zero overhead layers
-- **Production-Ready Performance**: Direct API calls mean faster response times and lower memory usage
+
+- **Direct HTTP Communication**: All providers communicate directly via HTTP APIs using `httpx` - no bulky vendor SDKs
+  required
+
+- **Minimal Dependencies**: Unlike LangChain and similar frameworks, Esperanto has a tiny footprint with zero overhead
+  layers
+
+* **Production-Ready Performance**: Direct API calls mean faster response times and lower memory usage
 
 **🔄 True Provider Flexibility**
-- **Standardized Responses**: Switch between any provider (OpenAI ↔ Anthropic ↔ Google ↔ etc.) without changing a single line of code
+
+- **Standardized Responses**: Switch between any provider (OpenAI ↔ Anthropic ↔ Google ↔ etc.) without changing a single
+  line of CODE
+
 - **Consistent Interface**: Same methods, same response objects, same patterns across all 15+ providers
-- **Future-Proof**: Add new providers or change existing ones without refactoring your application
+
+* **Future-Proof**: Add new providers or change existing ones without refactoring your application
 
 **⚡ Perfect for Production**
-- **Prototyping to Production**: Start experimenting and deploy the same code to production
-- **No Vendor Lock-in**: Test different providers, optimize costs, and maintain flexibility
-- **Enterprise-Ready**: Direct HTTP calls, standardized error handling, and comprehensive async support
 
-Whether you're building a quick prototype or a production application serving millions of requests, Esperanto gives you the performance of direct API calls with the convenience of a unified interface.
+- **Prototyping to Production**: Start experimenting and deploy the same CODE to production
+
+- **No Vendor Lock-in**: TEST different providers, optimize costs, and maintain flexibility
+
+* **Enterprise-Ready**: Direct HTTP calls, standardized error handling, and comprehensive async support
+
+Whether you're building a quick prototype or a production application serving millions of requests, Esperanto gives you
+the performance of direct API calls with the convenience of a unified interface.
 
 ## Features ✨
 
+---
+
 - **Unified Interface**: Work with multiple LLM providers using a consistent API
 - **Provider Support**:
-  - OpenAI (GPT-4o, o1, o3, o4, Whisper, TTS)
-  - OpenAI-Compatible (LM Studio, Ollama, vLLM, custom endpoints)
-  - Anthropic (Claude models)
-  - OpenRouter (Access to multiple models)
-  - xAI (Grok)
-  - Perplexity (Sonar models)
-  - Groq (Mixtral, Llama, Whisper)
-  - Google GenAI (Gemini LLM, Speech-to-Text, Text-to-Speech, Embedding with native task optimization)
-  - Vertex AI (Google Cloud, LLM, Embedding, TTS)
-  - Ollama (Local deployment multiple models)
-  - Transformers (Universal local models - Qwen, CrossEncoder, BAAI, Jina, Mixedbread)
-  - ElevenLabs (Text-to-Speech, Speech-to-Text)
-  - Azure OpenAI (Chat, Embedding, Whisper, TTS)
-  - Mistral (Mistral Large, Small, Embedding, etc.)
-  - DeepSeek (deepseek-chat)
-  - Voyage (Embeddings, Reranking)
-  - Jina (Advanced embedding models with task optimization, Reranking)
-- **Embedding Support**: Multiple embedding providers for vector representations
-- **Reranking Support**: Universal reranking interface for improving search relevance
-- **Speech-to-Text Support**: Transcribe audio using multiple providers
-- **Text-to-Speech Support**: Generate speech using multiple providers
-- **Async Support**: Both synchronous and asynchronous API calls
-- **Streaming**: Support for streaming responses
-- **Structured Output**: JSON output formatting (where supported)
-- **LangChain Integration**: Easy conversion to LangChain chat models
+    - OpenAI (GPT-4o, o1, o3, o4, Whisper, TTS)
+    - OpenAI-Compatible (LM Studio, Ollama, vLLM, custom endpoints)
+    - Anthropic (Claude models)
+    - OpenRouter (Access to multiple models)
+    - xAI (Grok)
+    - Perplexity (Sonar models)
+    - Groq (Mixtral, Llama, Whisper)
+    - Google GenAI (Gemini LLM, Speech-to-Text, Text-to-Speech, Embedding with native task optimization)
+    - Vertex AI (Google Cloud, LLM, Embedding, TTS)
+    - Ollama (Local deployment multiple models)
+    - Transformers (Universal local models - Qwen, CrossEncoder, BAAI, Jina, Mixedbread)
+    - ElevenLabs (Text-to-Speech, Speech-to-Text)
+    - Azure OpenAI (Chat, Embedding, Whisper, TTS)
+    - Mistral (Mistral Large, Small, Embedding, etc.)
+    - DeepSeek (deepseek-chat)
+    - Voyage (Embeddings, Reranking)
+    - Jina (Advanced embedding models with task optimization, Reranking)
+
+* **Embedding Support**: Multiple embedding providers for vector representations
+
+* **Reranking Support**: Universal reranking interface for improving search relevance
+* **Speech-to-Text Support**: Transcribe audio using multiple providers
+* **Text-to-Speech Support**: Generate speech using multiple providers
+* **Async Support**: Both synchronous and asynchronous API calls
+* **Streaming**: Support for streaming responses
+* **Structured Output**: JSON output formatting (where supported)
+* **LangChain Integration**: Easy conversion to LangChain chat models
 
 ## 📚 Documentation
 
+---
+
 - **[Quick Start Guide](https://github.com/lfnovo/esperanto/blob/main/docs/quickstart.md)** - Get started in 5 minutes
 - **[Documentation Index](https://github.com/lfnovo/esperanto/blob/main/docs/README.md)** - Complete documentation hub
-- **[Provider Comparison](https://github.com/lfnovo/esperanto/blob/main/docs/providers/README.md)** - Choose the right provider
+- **[Provider Comparison](https://github.com/lfnovo/esperanto/blob/main/docs/providers/README.md)** - Choose the right
+  provider
 - **[Configuration Guide](https://github.com/lfnovo/esperanto/blob/main/docs/configuration.md)** - Environment setup
 
 ### By Capability
-- [Language Models (LLM)](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/llm.md) - Text generation and chat
+
+---
+
+- [Language Models (LLM)](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/llm.md) - Text generation and
+  chat
+
 - [Embeddings](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/embedding.md) - Vector representations
-- [Reranking](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/reranking.md) - Search relevance
-- [Speech-to-Text](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/speech-to-text.md) - Audio transcription
-- [Text-to-Speech](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/text-to-speech.md) - Voice generation
+
+* [Reranking](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/reranking.md) - Search relevance
+* [Speech-to-Text](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/speech-to-text.md) - Audio
+  transcription
+* [Text-to-Speech](https://github.com/lfnovo/esperanto/blob/main/docs/capabilities/text-to-speech.md) - Voice generation
 
 ### By Provider
-- [Provider Setup Guides](https://github.com/lfnovo/esperanto/blob/main/docs/providers/) - Complete setup for all 17 providers
+
+---
+
+- [Provider Setup Guides](https://github.com/lfnovo/esperanto/blob/main/docs/providers/) - Complete setup for all 17
+  providers
 
 ### Advanced Topics
+
+---
+
 - [Task-Aware Embeddings](https://github.com/lfnovo/esperanto/blob/main/docs/advanced/task-aware-embeddings.md)
+
 - [LangChain Integration](https://github.com/lfnovo/esperanto/blob/main/docs/advanced/langchain-integration.md)
-- [Timeout Configuration](https://github.com/lfnovo/esperanto/blob/main/docs/advanced/timeout-configuration.md)
-- [SSL Configuration](https://github.com/lfnovo/esperanto/blob/main/docs/configuration.md#ssl-verification-configuration)
-- [Model Discovery](https://github.com/lfnovo/esperanto/blob/main/docs/advanced/model-discovery.md)
-- [Transformers Features](https://github.com/lfnovo/esperanto/blob/main/docs/advanced/transformers-features.md)
+
+* [Timeout Configuration](https://github.com/lfnovo/esperanto/blob/main/docs/advanced/timeout-configuration.md)
+* [SSL Configuration](https://github.com/lfnovo/esperanto/blob/main/docs/configuration.md#ssl-verification-configuration)
+* [Model Discovery](https://github.com/lfnovo/esperanto/blob/main/docs/advanced/model-discovery.md)
+* [Transformers Features](https://github.com/lfnovo/esperanto/blob/main/docs/advanced/transformers-features.md)
 
 **[CHANGELOG](https://github.com/lfnovo/esperanto/blob/main/CHANGELOG.md)** - Version history and migration guides
 
 ## Installation 🚀
+
+---
 
 Install Esperanto using pip:
 
@@ -117,6 +160,8 @@ pip install esperanto
 ```
 
 ### Optional Dependencies
+
+---
 
 **Transformers Provider**
 
@@ -127,12 +172,15 @@ pip install "esperanto[transformers]"
 ```
 
 This installs:
-- `transformers` - Core Hugging Face library
+
+- `transformers` - CORE Hugging Face library
+
 - `torch` - PyTorch framework
-- `tokenizers` - Fast tokenization
-- `sentence-transformers` - CrossEncoder support
-- `scikit-learn` - Advanced embedding features
-- `numpy` - Numerical computations
+
+* `tokenizers` - Fast tokenization
+* `sentence-transformers` - CrossEncoder support
+* `scikit-learn` - Advanced embedding features
+* `numpy` - Numerical computations
 
 **LangChain Integration**
 
@@ -155,33 +203,39 @@ pip install "langchain-google-vertexai>=2.0.24"
 
 ## Provider Support Matrix
 
-| Provider     | LLM Support | Embedding Support | Reranking Support | Speech-to-Text | Text-to-Speech | JSON Mode |
-|--------------|-------------|------------------|-------------------|----------------|----------------|-----------|
-| OpenAI       | ✅          | ✅               | ❌                | ✅             | ✅             | ✅        |
-| OpenAI-Compatible | ✅          | ✅               | ❌                | ✅             | ✅             | ⚠️*       |
-| Anthropic    | ✅          | ❌               | ❌                | ❌             | ❌             | ✅        |
-| Groq         | ✅          | ❌               | ❌                | ✅             | ❌             | ✅        |
-| Google (GenAI) | ✅          | ✅               | ❌                | ✅             | ✅             | ✅        |
-| Vertex AI    | ✅          | ✅               | ❌                | ❌             | ✅             | ❌        |
-| Ollama       | ✅          | ✅               | ❌                | ❌             | ❌             | ❌        |
-| Perplexity   | ✅          | ❌               | ❌                | ❌             | ❌             | ✅        |
-| Transformers | ❌          | ✅               | ✅                | ❌             | ❌             | ❌        |
-| ElevenLabs   | ❌          | ❌               | ❌                | ✅             | ✅             | ❌        |
-| Azure OpenAI | ✅          | ✅               | ❌                | ✅             | ✅             | ✅        |
-| Mistral      | ✅          | ✅               | ❌                | ❌             | ❌             | ✅        |
-| DeepSeek     | ✅          | ❌               | ❌                | ❌             | ❌             | ✅        |
-| Voyage       | ❌          | ✅               | ✅                | ❌             | ❌             | ❌        |
-| Jina         | ❌          | ✅               | ✅                | ❌             | ❌             | ❌        |
-| xAI          | ✅          | ❌               | ❌                | ❌             | ❌             | ✅        |
-| OpenRouter   | ✅          | ❌               | ❌                | ❌             | ❌             | ✅        |
+---
 
-*⚠️ OpenAI-Compatible: JSON mode support depends on the specific endpoint implementation
+| Provider          | LLM Support | Embedding Support | Reranking Support | Speech-to-Text | Text-to-Speech | JSON Mode |
+| ----------------- | ----------- | ----------------- | ----------------- | -------------- | -------------- | --------- |
+| OpenAI            | ✅          | ✅                | ❌                | ✅             | ✅             | ✅        |
+| OpenAI-Compatible | ✅          | ✅                | ❌                | ✅             | ✅             | ⚠️\*      |
+| Anthropic         | ✅          | ❌                | ❌                | ❌             | ❌             | ✅        |
+| Groq              | ✅          | ❌                | ❌                | ✅             | ❌             | ✅        |
+| Google (GenAI)    | ✅          | ✅                | ❌                | ✅             | ✅             | ✅        |
+| Vertex AI         | ✅          | ✅                | ❌                | ❌             | ✅             | ❌        |
+| Ollama            | ✅          | ✅                | ❌                | ❌             | ❌             | ❌        |
+| Perplexity        | ✅          | ❌                | ❌                | ❌             | ❌             | ✅        |
+| Transformers      | ❌          | ✅                | ✅                | ❌             | ❌             | ❌        |
+| ElevenLabs        | ❌          | ❌                | ❌                | ✅             | ✅             | ❌        |
+| Azure OpenAI      | ✅          | ✅                | ❌                | ✅             | ✅             | ✅        |
+| Mistral           | ✅          | ✅                | ❌                | ❌             | ❌             | ✅        |
+| DeepSeek          | ✅          | ❌                | ❌                | ❌             | ❌             | ✅        |
+| Voyage            | ❌          | ✅                | ✅                | ❌             | ❌             | ❌        |
+| Jina              | ❌          | ✅                | ✅                | ❌             | ❌             | ❌        |
+| xAI               | ✅          | ❌                | ❌                | ❌             | ❌             | ✅        |
+| OpenRouter        | ✅          | ❌                | ❌                | ❌             | ❌             | ✅        |
+
+\*⚠️ OpenAI-Compatible: JSON mode support depends on the specific endpoint implementation
 
 ## Quick Start 🏃‍♂️
+
+---
 
 You can use Esperanto in two ways: directly with provider-specific classes or through the AI Factory.
 
 ### Using AI Factory
+
+---
 
 The AI Factory provides a convenient way to create model instances and discover available providers:
 
@@ -202,7 +256,7 @@ print(providers)
 
 # Create model instances
 model = AIFactory.create_language(
-    "openai", 
+    "openai",
     "gpt-3.5-turbo",
     config={"structured": {"type": "json"}}
 )  # Language model
@@ -226,6 +280,8 @@ embeddings = await embedder.aembed(texts)
 ```
 
 ### Model Discovery 🔍
+
+---
 
 Esperanto provides a convenient way to discover available models from providers without creating instances:
 
@@ -264,26 +320,35 @@ for model in local_models:
 ```
 
 **Benefits of Static Discovery:**
+
 - ✅ **No instance creation required** - Query models without setting up providers
+
 - ✅ **Cached results** - Model lists are cached for 1 hour to reduce API calls
-- ✅ **Flexible configuration** - Pass provider-specific config (API keys, base URLs, etc.)
-- ✅ **Type filtering** - Filter models by type for multi-model providers
+
+* ✅ **Flexible configuration** - Pass provider-specific config (API keys, base URLs, etc.)
+* ✅ **Type filtering** - Filter models by type for multi-model providers
 
 **Supported Providers:**
-- **OpenAI** - Fetches models via API (supports type filtering)
-- **OpenAI-Compatible** - Fetches models from any OpenAI-compatible endpoint (LM Studio, vLLM, etc.)
-- **Anthropic** - Returns hardcoded list of Claude models
-- **Google/Gemini** - Fetches models via API
-- **Groq** - Fetches models via API
-- **Mistral** - Fetches models via API
-- **Ollama** - Fetches locally available models
-- **Jina** - Returns hardcoded list of embedding/reranking models
-- **Voyage** - Returns hardcoded list of embedding/reranking models
-- **And more...**
 
-> **Note**: This is the recommended way to discover models. The `.models` property on provider instances is deprecated and will be removed in version 3.0.
+- **OpenAI** - Fetches models via API (supports type filtering)
+
+- **OpenAI-Compatible** - Fetches models from any OpenAI-compatible endpoint (LM Studio, vLLM, etc.)
+
+* **Anthropic** - Returns hardcoded list of Claude models
+* **Google/Gemini** - Fetches models via API
+* **Groq** - Fetches models via API
+* **Mistral** - Fetches models via API
+* **Ollama** - Fetches locally available models
+* **Jina** - Returns hardcoded list of embedding/reranking models
+* **Voyage** - Returns hardcoded list of embedding/reranking models
+* **And more...**
+
+> **Note**: This is the recommended way to discover models. The `.models` property on provider instances is deprecated
+> and will be removed in version 3.0.
 
 ### Using Provider-Specific Classes
+
+---
 
 Here's a simple example to get you started:
 
@@ -316,15 +381,20 @@ async def get_response():
 
 ## Standardized Responses
 
-All providers in Esperanto return standardized response objects, making it easy to work with different models without changing your code.
+---
+
+All providers in Esperanto return standardized response objects, making it easy to work with different models without
+changing your CODE.
 
 ### LLM Responses
+
+---
 
 ```python
 from esperanto.factory import AIFactory
 
 model = AIFactory.create_language(
-    "openai", 
+    "openai",
     "gpt-3.5-turbo",
     config={"structured": {"type": "json"}}
 )
@@ -349,7 +419,8 @@ async for chunk in model.achat_complete(messages):
 
 #### Handling Reasoning Traces
 
-Some models (like Qwen3, DeepSeek R1) include chain-of-thought reasoning in `<think>` tags. The `Message` class provides convenient properties to handle this:
+Some models (like Qwen3, DeepSeek R1) include chain-of-thought reasoning in `<think>` tags. The `Message` class provides
+convenient properties to handle this:
 
 ```python
 response = model.chat_complete(messages)
@@ -367,6 +438,8 @@ msg.cleaned_content  # "{\"answer\": 42}"
 
 ### Embedding Responses
 
+---
+
 ```python
 from esperanto.factory import AIFactory
 
@@ -382,6 +455,8 @@ print(response.usage.total_tokens)    # Token usage information
 ```
 
 ### Reranking Responses
+
+---
 
 ```python
 from esperanto.factory import AIFactory
@@ -404,7 +479,10 @@ print(response.model)                        # The model used
 
 ### Task-Aware Embeddings 🎯
 
-Esperanto supports advanced task-aware embeddings that optimize vector representations for specific use cases. This works across **all embedding providers** through a universal interface:
+---
+
+Esperanto supports advanced task-aware embeddings that optimize vector representations for specific use cases. This
+works across **all embedding providers** through a universal interface:
 
 ```python
 from esperanto.factory import AIFactory
@@ -427,30 +505,43 @@ embeddings = model.embed([query])
 ```
 
 **Universal Task Types:**
+
 - `RETRIEVAL_QUERY` - Optimize for search queries
-- `RETRIEVAL_DOCUMENT` - Optimize for document storage  
-- `SIMILARITY` - General text similarity
-- `CLASSIFICATION` - Text classification tasks
-- `CLUSTERING` - Document clustering
-- `CODE_RETRIEVAL` - Code search optimization
-- `QUESTION_ANSWERING` - Optimize for Q&A tasks
-- `FACT_VERIFICATION` - Optimize for fact checking
+
+- `RETRIEVAL_DOCUMENT` - Optimize for document storage
+
+* `SIMILARITY` - General text similarity
+* `CLASSIFICATION` - Text classification tasks
+* `CLUSTERING` - Document clustering
+* `CODE_RETRIEVAL` - CODE search optimization
+* `QUESTION_ANSWERING` - Optimize for Q&A tasks
+* `FACT_VERIFICATION` - Optimize for fact checking
 
 **Provider Support:**
+
 - **Jina**: Native API support for all features
+
 - **Google**: Native task type translation to Gemini API
-- **OpenAI**: Task optimization via intelligent text prefixes
-- **Transformers**: Local emulation with task-specific processing
-- **Others**: Graceful degradation with consistent interface
+
+* **OpenAI**: Task optimization via intelligent text prefixes
+* **Transformers**: Local emulation with task-specific processing
+* **Others**: Graceful degradation with consistent interface
 
 The standardized response objects ensure consistency across different providers, making it easy to:
-- Switch between providers without changing your application code
+
+- Switch between providers without changing your application CODE
+
 - Handle responses in a uniform way
-- Access common attributes like token usage and model information
+
+* Access common attributes like token usage and model information
 
 ## Provider Configuration 🔧
 
+---
+
 ### OpenAI
+
+---
 
 ```python
 from esperanto.providers.llm.openai import OpenAILanguageModel
@@ -469,6 +560,8 @@ model = OpenAILanguageModel(
 ```
 
 ### OpenAI-Compatible Endpoints
+
+---
 
 Use any OpenAI-compatible endpoint (LM Studio, Ollama, vLLM, custom deployments) with the same interface:
 
@@ -506,42 +599,51 @@ for chunk in model.chat_complete(messages, stream=True):
 ```
 
 **Common Use Cases:**
+
 - **LM Studio**: Local model serving with GUI
+
 - **Ollama**: `ollama serve` with OpenAI compatibility
-- **vLLM**: High-performance inference server
-- **Custom Deployments**: Any server implementing OpenAI chat completions API
+
+* **vLLM**: High-performance inference server
+* **Custom Deployments**: Any server implementing OpenAI chat completions API
 
 **Features:**
+
 - ✅ **Streaming**: Real-time response streaming
+
 - ✅ **Pass-through Model Names**: Use any model name your endpoint supports
-- ✅ **Graceful Degradation**: Automatically handles varying feature support
-- ✅ **Error Handling**: Clear error messages for troubleshooting
-- ⚠️ **JSON Mode**: Depends on endpoint implementation
+
+* ✅ **Graceful Degradation**: Automatically handles varying feature support
+* ✅ **Error Handling**: Clear error messages for troubleshooting
+* ⚠️ **JSON Mode**: Depends on endpoint implementation
 
 **Environment Variable Configuration:**
 
 OpenAI-compatible providers support both generic and provider-specific environment variables:
 
 - **Generic variables** (work for all provider types):
-  - `OPENAI_COMPATIBLE_BASE_URL` - Base URL for the endpoint
-  - `OPENAI_COMPATIBLE_API_KEY` - API key (if required)
+    - `OPENAI_COMPATIBLE_BASE_URL` - Base URL for the endpoint
+    - `OPENAI_COMPATIBLE_API_KEY` - API key (if required)
 
-- **Provider-specific variables** (take precedence over generic):
-  - Language Models: `OPENAI_COMPATIBLE_BASE_URL_LLM`, `OPENAI_COMPATIBLE_API_KEY_LLM`
-  - Embeddings: `OPENAI_COMPATIBLE_BASE_URL_EMBEDDING`, `OPENAI_COMPATIBLE_API_KEY_EMBEDDING`
-  - Speech-to-Text: `OPENAI_COMPATIBLE_BASE_URL_STT`, `OPENAI_COMPATIBLE_API_KEY_STT`
-  - Text-to-Speech: `OPENAI_COMPATIBLE_BASE_URL_TTS`, `OPENAI_COMPATIBLE_API_KEY_TTS`
+* **Provider-specific variables** (take precedence over generic):
+    - Language Models: `OPENAI_COMPATIBLE_BASE_URL_LLM`, `OPENAI_COMPATIBLE_API_KEY_LLM`
+    - Embeddings: `OPENAI_COMPATIBLE_BASE_URL_EMBEDDING`, `OPENAI_COMPATIBLE_API_KEY_EMBEDDING`
+    - Speech-to-Text: `OPENAI_COMPATIBLE_BASE_URL_STT`, `OPENAI_COMPATIBLE_API_KEY_STT`
+    - Text-to-Speech: `OPENAI_COMPATIBLE_BASE_URL_TTS`, `OPENAI_COMPATIBLE_API_KEY_TTS`
 
 **Configuration Precedence** (highest to lowest):
+
 1. Direct parameters (`base_url=`, `api_key=`)
 2. Config dictionary (`config={"base_url": ...}`)
 3. Provider-specific environment variables
 4. Generic environment variables
 5. Default values
 
-This allows you to use different OpenAI-compatible endpoints for different AI capabilities without code changes.
+This allows you to use different OpenAI-compatible endpoints for different AI capabilities without CODE changes.
 
 ### Perplexity
+
+---
 
 Perplexity uses an OpenAI-compatible API but includes additional parameters for controlling search behavior.
 
@@ -568,9 +670,14 @@ model = PerplexityLanguageModel(
 
 ## Timeout Configuration ⏱️
 
-Esperanto provides flexible timeout configuration across all provider types with intelligent defaults and multiple configuration methods.
+---
+
+Esperanto provides flexible timeout configuration across all provider types with intelligent defaults and multiple
+configuration methods.
 
 ### Default Timeouts
+
+---
 
 Different provider types have optimized default timeouts based on typical operation duration:
 
@@ -578,6 +685,8 @@ Different provider types have optimized default timeouts based on typical operat
 - **Speech-to-Text, Text-to-Speech**: 300 seconds (audio processing operations)
 
 ### Configuration Methods
+
+---
 
 Configure timeouts using three methods with clear priority hierarchy:
 
@@ -644,6 +753,8 @@ embedder = AIFactory.create_embedding("voyage", "voyage-2")  # Uses ESPERANTO_EM
 
 ### Priority Order
 
+---
+
 Configuration resolves in this priority order:
 
 1. **Config parameter** (highest priority)
@@ -662,6 +773,8 @@ model = AIFactory.create_language(
 
 ### Validation
 
+---
+
 All timeout values are validated with clear error messages:
 
 - **Type**: Must be a number (int or float)
@@ -676,7 +789,10 @@ AIFactory.create_language("openai", "gpt-4", config={"timeout": 4000})       # T
 
 ### Production Use Cases
 
+---
+
 **Batch Processing**
+
 ```python
 # Long timeout for batch embedding operations
 embedder = AIFactory.create_embedding(
@@ -687,6 +803,7 @@ embedder = AIFactory.create_embedding(
 ```
 
 **Real-time Applications**
+
 ```python
 # Shorter timeout for real-time chat
 model = AIFactory.create_language(
@@ -697,6 +814,7 @@ model = AIFactory.create_language(
 ```
 
 **Audio Processing**
+
 ```python
 # Extended timeout for long audio files
 transcriber = AIFactory.create_speech_to_text(
@@ -706,6 +824,8 @@ transcriber = AIFactory.create_speech_to_text(
 ```
 
 ## Streaming Responses 🌊
+
+---
 
 Enable streaming to receive responses token by token:
 
@@ -723,6 +843,8 @@ async for chunk in model.achat_complete(messages):
 ```
 
 ## Structured Output 📊
+
+---
 
 Request JSON-formatted responses (supported by OpenAI and some OpenRouter models):
 
@@ -742,6 +864,8 @@ response = model.chat_complete(messages)
 
 ## LangChain Integration 🔗
 
+---
+
 Convert any provider to a LangChain chat model:
 
 ```python
@@ -755,37 +879,57 @@ chain = ConversationChain(llm=langchain_model)
 
 ## Documentation 📚
 
+---
+
 Complete documentation is available in the [docs](https://github.com/lfnovo/esperanto/tree/main/docs) directory:
 
-- **[Quick Start Guide](https://github.com/lfnovo/esperanto/blob/main/docs/quickstart.md)** - Get up and running in 5 minutes
-- **[Documentation Index](https://github.com/lfnovo/esperanto/blob/main/docs/README.md)** - Navigation hub for all documentation
-- **[Provider Comparison](https://github.com/lfnovo/esperanto/blob/main/docs/providers/README.md)** - Compare and choose providers
-- **[Capability Guides](https://github.com/lfnovo/esperanto/tree/main/docs/capabilities)** - Learn about LLM, Embeddings, Reranking, STT, TTS
-- **[Provider Setup Guides](https://github.com/lfnovo/esperanto/tree/main/docs/providers)** - Setup instructions for all 17 providers
-- **[Advanced Topics](https://github.com/lfnovo/esperanto/tree/main/docs/advanced)** - Task-aware embeddings, LangChain, timeouts, and more
+- **[Quick Start Guide](https://github.com/lfnovo/esperanto/blob/main/docs/quickstart.md)** - Get up and running in 5
+  minutes
+- **[Documentation Index](https://github.com/lfnovo/esperanto/blob/main/docs/README.md)** - Navigation hub for all
+  documentation
+- **[Provider Comparison](https://github.com/lfnovo/esperanto/blob/main/docs/providers/README.md)** - Compare and choose
+  providers
+- **[Capability Guides](https://github.com/lfnovo/esperanto/tree/main/docs/capabilities)** - Learn about LLM,
+  Embeddings, Reranking, STT, TTS
+- **[Provider Setup Guides](https://github.com/lfnovo/esperanto/tree/main/docs/providers)** - Setup instructions for all
+  17 providers
+- **[Advanced Topics](https://github.com/lfnovo/esperanto/tree/main/docs/advanced)** - Task-aware embeddings, LangChain,
+  timeouts, and more
 
 ## Contributing 🤝
 
-We welcome contributions! Please see our [Contributing Guidelines](https://github.com/lfnovo/esperanto/blob/main/CONTRIBUTING.md) for details on how to get started.
+---
+
+We welcome contributions! Please see our
+[Contributing Guidelines](https://github.com/lfnovo/esperanto/blob/main/CONTRIBUTING.md) for details on how to get
+started.
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/lfnovo/esperanto/blob/main/LICENSE) file for details.
+---
+
+This project is licensed under the MIT License - see the
+[LICENSE](https://github.com/lfnovo/esperanto/blob/main/LICENSE) file for details.
 
 ## Development 🛠️
 
+---
+
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/lfnovo/esperanto.git
 cd esperanto
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run tests:
+1. Run tests:
+
 ```bash
 pytest
 
@@ -796,3 +940,4 @@ pytest
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+```

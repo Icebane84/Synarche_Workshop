@@ -9,6 +9,7 @@
 ---
 
 # interface-overview.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-INTERFACE-OVERVIEW-001` | The Sovereign ID. |
-| **Official Name** | `interface-overview.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Official Name** | `interface-overview.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -61,13 +57,13 @@
 
 The top navigation takes you to main sections:
 
-| Icon | Page | What It Does |
-|------|------|--------------|
-| **Notebooks** | Main workspace | Your research projects |
-| **Search** | Ask & Search | Query across all notebooks |
-| **Podcasts** | Audio generation | Manage podcast profiles |
-| **Models** | AI configuration | Set up providers and models |
-| **Settings** | Preferences | App configuration |
+| Icon          | Page             | What It Does                |
+| ------------- | ---------------- | --------------------------- |
+| **Notebooks** | Main workspace   | Your research projects      |
+| **Search**    | Ask & Search     | Query across all notebooks  |
+| **Podcasts**  | Audio generation | Manage podcast profiles     |
+| **Models**    | AI configuration | Set up providers and models |
+| **Settings**  | Preferences      | App configuration           |
 
 ---
 
@@ -109,6 +105,7 @@ Your research materials live here.
 ### Add Source Button
 
 Click to add:
+
 - File upload (PDF, DOCX, etc.)
 - Web URL
 - YouTube video
@@ -151,6 +148,7 @@ Your insights and AI-generated content.
 ### Write Note Button
 
 Click to:
+
 - Create manual note
 - Add your own insights
 - Markdown supported
@@ -212,11 +210,11 @@ Context: 3 sources (12,450 tokens)
 
 ### Per-Source Indicators
 
-| Indicator | Meaning | AI Access |
-|-----------|---------|-----------|
-| 🟢 Full Content | Complete text | Everything |
-| 🟡 Summary Only | AI summary | Key points only |
-| ⛔ Not in Context | Excluded | Nothing |
+| Indicator         | Meaning       | AI Access       |
+| ----------------- | ------------- | --------------- |
+| 🟢 Full Content   | Complete text | Everything      |
+| 🟡 Summary Only   | AI summary    | Key points only |
+| ⛔ Not in Context | Excluded      | Nothing         |
 
 Click any source to change its context level.
 
@@ -253,12 +251,12 @@ Access via navigation bar → Settings:
 
 ### Key Sections
 
-| Section | What It Controls |
-|---------|------------------|
-| **Processing** | Document and URL extraction engines |
-| **Embedding** | Auto-embed settings |
-| **Files** | Auto-delete uploads after processing |
-| **YouTube** | Preferred transcript languages |
+| Section        | What It Controls                     |
+| -------------- | ------------------------------------ |
+| **Processing** | Document and URL extraction engines  |
+| **Embedding**  | Auto-embed settings                  |
+| **Files**      | Auto-delete uploads after processing |
+| **YouTube**    | Preferred transcript languages       |
 
 ---
 
@@ -364,12 +362,12 @@ Podcasts tab → Select profile → Choose sources → [Generate] → Wait → D
 
 ## Keyboard Shortcuts
 
-| Key | Action |
-|-----|--------|
-| `Enter` | Send chat message |
-| `Shift + Enter` | New line in chat |
-| `Escape` | Close dialogs |
-| `Ctrl/Cmd + F` | Browser find |
+| Key             | Action            |
+| --------------- | ----------------- |
+| `Enter`         | Send chat message |
+| `Shift + Enter` | New line in chat  |
+| `Escape`        | Close dialogs     |
+| `Ctrl/Cmd + F`  | Browser find      |
 
 ---
 

@@ -1,5 +1,4 @@
-"""
-# CODE-REF-004: The Omega Reforger (Reforger Module)
+"""# CODE-REF-004: The Omega Reforger (Reforger Module).
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -82,7 +81,12 @@ DOMAIN_MAP = {
     "agents": "ARCH",
 }
 
-EVOLUTION_TRACKS = ["Omega Ascension", "Cognitive Ascension", "Purposeful Drive", "Crystalline Coherence"]
+EVOLUTION_TRACKS = [
+    "Omega Ascension",
+    "Cognitive Ascension",
+    "Purposeful Drive",
+    "Crystalline Coherence",
+]
 
 
 class BlockScanner:
@@ -101,8 +105,7 @@ class BlockScanner:
 
 
 class OmegaReforger:
-    """
-    The v13.1 Omega Reforger.
+    """The v13.1 Omega Reforger.
     Enforces Codex Law across the Synarche System.
     """
 
@@ -124,9 +127,7 @@ class OmegaReforger:
         return f"{domain}-{name}-001"
 
     def reforge_file(self, file_path: Path, dry_run: bool = False) -> bool:
-        """
-        Transmutes a single file to v13.1 Standard.
-        """
+        """Transmutes a single file to v13.1 Standard."""
         try:
             with open(file_path, encoding="utf-8") as f:
                 content = f.read()
@@ -162,7 +163,9 @@ class OmegaReforger:
                 content += SYNERGY_BLOCK_TEMPLATE
 
             if dry_run:
-                logger.info(f"[DRY RUN] Would write {len(content)} bytes to {file_path.name}")
+                logger.info(
+                    f"[DRY RUN] Would write {len(content)} bytes to {file_path.name}"
+                )
                 return True
 
             with open(file_path, "w", encoding="utf-8") as f:
@@ -181,7 +184,9 @@ class OmegaReforger:
         count = 0
         for root, _, files in os.walk(self.target_path):
             for file in files:
-                if file.endswith(".md") and not file.startswith("CORE-CODEX"):  # Don't touch the Law
+                if file.endswith(".md") and not file.startswith(
+                    "CORE-CODEX"
+                ):  # Don't touch the Law
                     full_path = Path(root) / file
                     if self.reforge_file(full_path):
                         count += 1

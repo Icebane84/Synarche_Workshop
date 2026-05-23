@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-HPRI-002: The Context Weave (Cognitive Loom)
+"""# TOOL-HPRI-002: The Context Weave (Cognitive Loom).
 
 ## I. Universal Identification & Provenance
 | Attribute | Value |
@@ -159,8 +158,7 @@ STOP_WORDS = {
 
 
 def weave_context(file_path: Path) -> None:
-    """
-    Analyzes a text file to extract key themes (frequency analysis).
+    """Analyzes a text file to extract key themes (frequency analysis).
     This acts as a 'Context Loom', spinning raw text into structured keywords.
     """
     if not file_path.exists():

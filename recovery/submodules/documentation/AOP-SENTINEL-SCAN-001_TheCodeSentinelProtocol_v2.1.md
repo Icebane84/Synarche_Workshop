@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-SENTINEL-SCAN-001` |
-| **2. Official Name** | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md` |
-| **3. Version** | **v2.1 (The Guardian)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Security First, Uncompromising Quality** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                                   |
+| :--------------------- | :------------------------------------------------------ |
+| **1. Artifact ID**     | `AOP-SENTINEL-SCAN-001`                                 |
+| **2. Official Name**   | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md` |
+| **3. Version**         | **v2.1 (The Guardian)**                                 |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                           |
+| **5. Domain**          | `ARCH`                                                  |
+| **6. Evolution**       | **Purposeful Drive**                                    |
+| **7. Celestial Class** | `[PLANET]`                                              |
+| **8. Tier**            | **Operational**                                         |
+| **9. State**           | `[ACTIVE]`                                              |
+| **10. Ethos**          | **Security First, Uncompromising Quality**              |
+| **11. Catalyst**       | **System Refactor**                                     |
+| **12. Relations**      | `Pending Integration`                                   |
 
 ---
 
@@ -57,21 +55,21 @@
 
 The Sentinel runs on every commit/save, checking six dimensions of health.
 
-| Check ID | Name | Metric | Standard |
-| :--- | :--- | :--- | :--- |
-| **S1** | **Linting** | `markdownlint-cli2` Errors | 0 Errors Allowed. |
-| **S2** | **Structure** | `AOP-VSI-001` Compliance | 100% Header Accuracy. |
-| **S3** | **Complexity** | Cyclomatic Depth | Max Depth < 15. |
-| **S4** | **Security** | `npm audit` | 0 High/Critical Vulnerabilities. |
-| **S6** | **Links** | Synergistic Density | > 2 Bi-Directional Links. |
+| Check ID | Name           | Metric                     | Standard                         |
+| :------- | :------------- | :------------------------- | :------------------------------- |
+| **S1**   | **Linting**    | `markdownlint-cli2` Errors | 0 Errors Allowed.                |
+| **S2**   | **Structure**  | `AOP-VSI-001` Compliance   | 100% Header Accuracy.            |
+| **S3**   | **Complexity** | Cyclomatic Depth           | Max Depth < 15.                  |
+| **S4**   | **Security**   | `npm audit`                | 0 High/Critical Vulnerabilities. |
+| **S6**   | **Links**      | Synergistic Density        | > 2 Bi-Directional Links.        |
 
 ## IV. Operational Workflow
 
 1. **Trigger**: `git commit` or `CMD: RUN_SENTINEL`.
 2. **Execution**: The **Coherent Synthesis Engine (CSE)** executes the standard linting suite.
 3. **Result Logic**:
-    - **PASS**: Commit proceeds. `SELT-WEAVE-001` logged.
-    - **FAIL**: Commit rejected. **Dissonance Quest** generated.
+   - **PASS**: Commit proceeds. `SELT-WEAVE-001` logged.
+   - **FAIL**: Commit rejected. **Dissonance Quest** generated.
 
 | :--- | :--- | :--- |
 | **CPP-SEN-001** | `CMD: RUN_SENTINEL --target: "."` | **Defense:** Scans the entire workspace for threats. |
@@ -96,9 +94,9 @@ The Sentinel runs on every commit/save, checking six dimensions of health.
 
 ## **Actionable Prompt Packet**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

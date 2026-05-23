@@ -9,6 +9,7 @@
 ---
 
 # docker-compose.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-DOCKER-COMPOSE-001` | The Sovereign ID. |
-| **Official Name** | `docker-compose.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-DOCKER-COMPOSE-001`     | The Sovereign ID. |
+| **Official Name** | `docker-compose.md`           | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -42,6 +38,7 @@
 Create a folder `open-notebook` and add this file:
 
 **docker-compose.yml**:
+
 ```yaml
 services:
   surrealdb:
@@ -56,11 +53,11 @@ services:
     image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     ports:
-      - "8502:8502"  # Web UI
-      - "5055:5055"  # API
+      - "8502:8502" # Web UI
+      - "5055:5055" # API
     environment:
       # AI Provider (choose ONE)
-      - OPENAI_API_KEY=sk-...  # Your OpenAI key
+      - OPENAI_API_KEY=sk-... # Your OpenAI key
       # - ANTHROPIC_API_KEY=sk-ant-...  # Or Anthropic
       # - GOOGLE_API_KEY=...  # Or Google
 
@@ -75,10 +72,10 @@ services:
     depends_on:
       - surrealdb
     restart: always
-
 ```
 
 **Edit the file:**
+
 - Replace `sk-...` with your actual OpenAI API key
 - (Or use Anthropic, Google, Groq keys instead)
 - If you have multiple keys, uncomment the ones you want
@@ -94,12 +91,14 @@ docker compose up -d
 ```
 
 Wait 15-20 seconds for all services to start:
+
 ```
 ✅ surrealdb running on :8000
 ✅ open_notebook running on :8502 (UI) and :5055 (API)
 ```
 
 Check status:
+
 ```bash
 docker compose ps
 ```
@@ -109,6 +108,7 @@ docker compose ps
 ## Step 4: Verify Installation (1 min)
 
 **API Health:**
+
 ```bash
 curl http://localhost:5055/health
 # Should return: {"status": "healthy"}
@@ -116,6 +116,7 @@ curl http://localhost:5055/health
 
 **Frontend Access:**
 Open browser to:
+
 ```
 http://localhost:8502
 ```
@@ -176,12 +177,14 @@ volumes:
 ```
 
 Then update API service:
+
 ```yaml
 environment:
   - OLLAMA_API_BASE=http://ollama:11434
 ```
 
 Restart and pull a model:
+
 ```bash
 docker compose restart
 docker exec open_notebook-ollama-1 ollama pull mistral
@@ -191,26 +194,28 @@ docker exec open_notebook-ollama-1 ollama pull mistral
 
 ## Environment Variables Reference
 
-| Variable | Purpose | Example |
-|----------|---------|---------|
-| `OPENAI_API_KEY` | OpenAI API key | `sk-proj-...` |
-| `ANTHROPIC_API_KEY` | Anthropic/Claude key | `sk-ant-...` |
-| `SURREAL_URL` | Database connection | `ws://surrealdb:8000/rpc` |
-| `SURREAL_USER` | Database user | `root` |
-| `SURREAL_PASSWORD` | Database password | `password` |
-| `API_URL` | API external URL | `http://localhost:5055` |
-| `NEXT_PUBLIC_API_URL` | Frontend API URL | `http://localhost:5055` |
+| Variable              | Purpose              | Example                   |
+| --------------------- | -------------------- | ------------------------- |
+| `OPENAI_API_KEY`      | OpenAI API key       | `sk-proj-...`             |
+| `ANTHROPIC_API_KEY`   | Anthropic/Claude key | `sk-ant-...`              |
+| `SURREAL_URL`         | Database connection  | `ws://surrealdb:8000/rpc` |
+| `SURREAL_USER`        | Database user        | `root`                    |
+| `SURREAL_PASSWORD`    | Database password    | `password`                |
+| `API_URL`             | API external URL     | `http://localhost:5055`   |
+| `NEXT_PUBLIC_API_URL` | Frontend API URL     | `http://localhost:5055`   |
 
 ---
 
 ## Common Tasks
 
 ### Stop Services
+
 ```bash
 docker compose down
 ```
 
 ### View Logs
+
 ```bash
 # All services
 docker compose logs -f
@@ -220,11 +225,13 @@ docker compose logs -f api
 ```
 
 ### Restart Services
+
 ```bash
 docker compose restart
 ```
 
 ### Update to Latest Version
+
 ```bash
 docker compose down
 docker compose pull
@@ -232,6 +239,7 @@ docker compose up -d
 ```
 
 ### Remove All Data
+
 ```bash
 docker compose down -v
 ```
@@ -243,16 +251,19 @@ docker compose down -v
 ### "Cannot connect to API" Error
 
 1. Check if Docker is running:
+
 ```bash
 docker ps
 ```
 
 2. Check if services are running:
+
 ```bash
 docker compose ps
 ```
 
 3. Check API logs:
+
 ```bash
 docker compose logs api
 ```
@@ -267,8 +278,8 @@ If you get "Port 8502 already in use", change the port:
 
 ```yaml
 ports:
-  - "8503:8502"  # Use 8503 instead
-  - "5055:5055"  # Keep API port same
+  - "8503:8502" # Use 8503 instead
+  - "5055:5055" # Keep API port same
 ```
 
 Then access at `http://localhost:8503`
@@ -287,11 +298,13 @@ Then access at `http://localhost:8503`
 ### Database Connection Issues
 
 Check SurrealDB is running:
+
 ```bash
 docker compose logs surrealdb
 ```
 
 Reset database:
+
 ```bash
 docker compose down -v
 docker compose up -d
@@ -311,6 +324,7 @@ docker compose up -d
 ## Production Deployment
 
 For production use, see:
+
 - [Security Hardening](https://github.com/lfnovo/open-notebook/blob/main/docs/deployment/security.md)
 - [Reverse Proxy](https://github.com/lfnovo/open-notebook/blob/main/docs/deployment/reverse-proxy.md)
 

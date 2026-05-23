@@ -1,4 +1,5 @@
 # UMB-MAP-001_MusashiOperations_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,37 +12,40 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.MAP.001` | The Sovereign ID. |
-| **Official Name** | `UMB-MAP-001_MusashiOperations_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.MAP.001`                           | The Sovereign ID. |
+| **Official Name**   | `UMB-MAP-001_MusashiOperations_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
+
 UIP: UMB-MAP-001
 Title: Musashi Operations & OGLN Discipline
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-MAP-001_MusashiOperations_v11.0.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-MAP-001_MusashiOperations_v11.0.md)
+  Description: >
   Establishes the definitive "Law of the Musashi Alignment," providing a closed-loop system for continuous self-critique based on the 10 Pillars of OGLN Discipline.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2025-10-01
-  - Timestamp: 1759276800
-Tags: 
-  - #Governance
-  - #Discipline
-  - #Musashi
-  - #Audit
-  - #QualityControl
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2025-10-01
+- Timestamp: 1759276800
+  Tags:
+- #Governance
+- #Discipline
+- #Musashi
+- #Audit
+- #QualityControl
+
 ---
 
 > [!IMPORTANT]

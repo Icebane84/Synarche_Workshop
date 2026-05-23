@@ -49,10 +49,9 @@ def generate_unique_filename(original_filename: str, upload_folder: str) -> str:
     # Check if file exists and generate unique name
     counter = 0
     while True:
-        if counter == 0:
-            new_filename = original_filename
-        else:
-            new_filename = f"{stem} ({counter}){suffix}"
+        new_filename = (
+            original_filename if counter == 0 else f"{stem} ({counter}){suffix}"
+        )
 
         full_path = file_path / new_filename
         if not full_path.exists():
@@ -71,6 +70,7 @@ async def save_uploaded_file(upload_file: UploadFile) -> str:
     try:
         # Save file
         import anyio
+
         async with await anyio.open_file(file_path, "wb") as f:
             content = await upload_file.read()
             await f.write(content)
@@ -87,17 +87,17 @@ async def save_uploaded_file(upload_file: UploadFile) -> str:
 
 def parse_source_form_data(
     type: str = Form(...),
-    notebook_id: Optional[str] = Form(None),
-    notebooks: Optional[str] = Form(None),  # JSON string of notebook IDs
-    url: Optional[str] = Form(None),
-    content: Optional[str] = Form(None),
-    title: Optional[str] = Form(None),
-    transformations: Optional[str] = Form(None),  # JSON string of transformation IDs
+    notebook_id: str | None = Form(None),
+    notebooks: str | None = Form(None),  # JSON string of notebook IDs
+    url: str | None = Form(None),
+    content: str | None = Form(None),
+    title: str | None = Form(None),
+    transformations: str | None = Form(None),  # JSON string of transformation IDs
     embed: str = Form("false"),  # Accept as string, convert to bool
     delete_source: str = Form("false"),  # Accept as string, convert to bool
     async_processing: str = Form("false"),  # Accept as string, convert to bool
-    file: Optional[UploadFile] = File(None),
-) -> tuple[SourceCreate, Optional[UploadFile]]:
+    file: UploadFile | None = File(None),
+) -> tuple[SourceCreate, UploadFile | None]:
     """Parse form data into SourceCreate model and return upload file separately."""
     import json
 
@@ -149,9 +149,9 @@ def parse_source_form_data(
     return source_data, file
 
 
-@router.get("/sources", response_model=List[SourceListResponse])
+@router.get("/sources", response_model=list[SourceListResponse])
 async def get_sources(
-    notebook_id: Optional[str] = Query(None, description="Filter by notebook ID"),
+    notebook_id: str | None = Query(None, description="Filter by notebook ID"),
     limit: int = Query(
         50, ge=1, le=100, description="Number of sources to return (1-100)"
     ),
@@ -163,13 +163,13 @@ async def get_sources(
 ):
     """Get sources with pagination and sorting support."""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     try:
         # Validate sort parameters
@@ -258,14 +258,18 @@ async def get_sources(
                     id=row["id"],
                     title=row.get("title"),
                     topics=row.get("topics") or [],
-                    asset=AssetModel(
-                        file_path=row["asset"].get("file_path")
+                    asset=(
+                        AssetModel(
+                            file_path=(
+                                row["asset"].get("file_path")
+                                if row.get("asset")
+                                else None
+                            ),
+                            url=row["asset"].get("url") if row.get("asset") else None,
+                        )
                         if row.get("asset")
-                        else None,
-                        url=row["asset"].get("url") if row.get("asset") else None,
-                    )
-                    if row.get("asset")
-                    else None,
+                        else None
+                    ),
                     embedded=row.get("embedded", False),
                     embedded_chunks=0,  # Not needed in list view
                     insights_count=row.get("insights_count", 0),
@@ -282,15 +286,13 @@ async def get_sources(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching sources: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error fetching sources: {str(e)}")
+        logger.error(f"Error fetching sources: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error fetching sources: {e!s}")
 
 
 @router.post("/sources", response_model=SourceResponse)
 async def create_source(
-    form_data: tuple[SourceCreate, Optional[UploadFile]] = Depends(
-        parse_source_form_data
-    ),
+    form_data: tuple[SourceCreate, UploadFile | None] = Depends(parse_source_form_data),
 ):
     """Create a new source with support for both JSON and multipart form data."""
     source_data, upload_file = form_data
@@ -312,7 +314,7 @@ async def create_source(
             except Exception as e:
                 logger.error(f"File upload failed: {e}")
                 raise HTTPException(
-                    status_code=400, detail=f"File upload failed: {str(e)}"
+                    status_code=400, detail=f"File upload failed: {e!s}"
                 )
 
         # Prepare content_state for processing
@@ -374,7 +376,7 @@ async def create_source(
 
             try:
                 # Import command modules to ensure they're registered
-                import commands.source_commands  # noqa: F401
+                import commands.source_commands
 
                 # Submit command for background processing
                 command_input = SourceProcessingInput(
@@ -428,7 +430,7 @@ async def create_source(
                     except Exception:
                         pass
                 raise HTTPException(
-                    status_code=500, detail=f"Failed to queue processing: {str(e)}"
+                    status_code=500, detail=f"Failed to queue processing: {e!s}"
                 )
 
         else:
@@ -437,7 +439,7 @@ async def create_source(
 
             try:
                 # Import command modules to ensure they're registered
-                import commands.source_commands  # noqa: F401
+                import commands.source_commands
 
                 # Create source record - let SurrealDB generate the ID
                 source = Source(
@@ -503,16 +505,22 @@ async def create_source(
                     id=processed_source.id or "",
                     title=processed_source.title,
                     topics=processed_source.topics or [],
-                    asset=AssetModel(
-                        file_path=processed_source.asset.file_path
+                    asset=(
+                        AssetModel(
+                            file_path=(
+                                processed_source.asset.file_path
+                                if processed_source.asset
+                                else None
+                            ),
+                            url=(
+                                processed_source.asset.url
+                                if processed_source.asset
+                                else None
+                            ),
+                        )
                         if processed_source.asset
-                        else None,
-                        url=processed_source.asset.url
-                        if processed_source.asset
-                        else None,
-                    )
-                    if processed_source.asset
-                    else None,
+                        else None
+                    ),
                     full_text=processed_source.full_text,
                     embedded=embedded_chunks > 0,
                     embedded_chunks=embedded_chunks,
@@ -548,14 +556,14 @@ async def create_source(
                 pass
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error creating source: {str(e)}")
+        logger.error(f"Error creating source: {e!s}")
         # Clean up uploaded file on unexpected errors if we created it
         if file_path and upload_file:
             try:
                 os.unlink(file_path)
             except Exception:
                 pass
-        raise HTTPException(status_code=500, detail=f"Error creating source: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error creating source: {e!s}")
 
 
 @router.post("/sources/json", response_model=SourceResponse)
@@ -591,7 +599,7 @@ async def _resolve_source_file(source_id: str) -> tuple[str, str]:
     return resolved_path, filename
 
 
-def _is_source_file_available(source: Source) -> Optional[bool]:
+def _is_source_file_available(source: Source) -> bool | None:
     if not source or not source.asset or not source.asset.file_path:
         return None
 
@@ -639,12 +647,14 @@ async def get_source(source_id: str):
             id=source.id or "",
             title=source.title,
             topics=source.topics or [],
-            asset=AssetModel(
-                file_path=source.asset.file_path if source.asset else None,
-                url=source.asset.url if source.asset else None,
-            )
-            if source.asset
-            else None,
+            asset=(
+                AssetModel(
+                    file_path=source.asset.file_path if source.asset else None,
+                    url=source.asset.url if source.asset else None,
+                )
+                if source.asset
+                else None
+            ),
             full_text=source.full_text,
             embedded=embedded_chunks > 0,
             embedded_chunks=embedded_chunks,
@@ -661,8 +671,8 @@ async def get_source(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching source {source_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error fetching source: {str(e)}")
+        logger.error(f"Error fetching source {source_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error fetching source: {e!s}")
 
 
 @router.head("/sources/{source_id}/download")
@@ -674,7 +684,7 @@ async def check_source_file(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error checking file for source {source_id}: {str(e)}")
+        logger.error(f"Error checking file for source {source_id}: {e!s}")
         raise HTTPException(status_code=500, detail="Failed to verify file")
 
 
@@ -691,7 +701,7 @@ async def download_source_file(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error downloading file for source {source_id}: {str(e)}")
+        logger.error(f"Error downloading file for source {source_id}: {e!s}")
         raise HTTPException(status_code=500, detail="Failed to download source file")
 
 
@@ -751,9 +761,9 @@ async def get_source_status(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching status for source {source_id}: {str(e)}")
+        logger.error(f"Error fetching status for source {source_id}: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error fetching source status: {str(e)}"
+            status_code=500, detail=f"Error fetching source status: {e!s}"
         )
 
 
@@ -778,12 +788,14 @@ async def update_source(source_id: str, source_update: SourceUpdate):
             id=source.id or "",
             title=source.title,
             topics=source.topics or [],
-            asset=AssetModel(
-                file_path=source.asset.file_path if source.asset else None,
-                url=source.asset.url if source.asset else None,
-            )
-            if source.asset
-            else None,
+            asset=(
+                AssetModel(
+                    file_path=source.asset.file_path if source.asset else None,
+                    url=source.asset.url if source.asset else None,
+                )
+                if source.asset
+                else None
+            ),
             full_text=source.full_text,
             embedded=embedded_chunks > 0,
             embedded_chunks=embedded_chunks,
@@ -795,8 +807,8 @@ async def update_source(source_id: str, source_update: SourceUpdate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error updating source {source_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error updating source: {str(e)}")
+        logger.error(f"Error updating source {source_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error updating source: {e!s}")
 
 
 @router.post("/sources/{source_id}/retry", response_model=SourceResponse)
@@ -858,7 +870,7 @@ async def retry_source_processing(source_id: str):
 
         try:
             # Import command modules to ensure they're registered
-            import commands.source_commands  # noqa: F401
+            import commands.source_commands
 
             # Submit new command for background processing
             command_input = SourceProcessingInput(
@@ -891,12 +903,14 @@ async def retry_source_processing(source_id: str):
                 id=source.id or "",
                 title=source.title,
                 topics=source.topics or [],
-                asset=AssetModel(
-                    file_path=source.asset.file_path if source.asset else None,
-                    url=source.asset.url if source.asset else None,
-                )
-                if source.asset
-                else None,
+                asset=(
+                    AssetModel(
+                        file_path=source.asset.file_path if source.asset else None,
+                        url=source.asset.url if source.asset else None,
+                    )
+                    if source.asset
+                    else None
+                ),
                 full_text=source.full_text,
                 embedded=embedded_chunks > 0,
                 embedded_chunks=embedded_chunks,
@@ -912,15 +926,15 @@ async def retry_source_processing(source_id: str):
                 f"Failed to submit retry processing command for source {source_id}: {e}"
             )
             raise HTTPException(
-                status_code=500, detail=f"Failed to queue retry processing: {str(e)}"
+                status_code=500, detail=f"Failed to queue retry processing: {e!s}"
             )
 
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error retrying source processing for {source_id}: {str(e)}")
+        logger.error(f"Error retrying source processing for {source_id}: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error retrying source processing: {str(e)}"
+            status_code=500, detail=f"Error retrying source processing: {e!s}"
         )
 
 
@@ -938,11 +952,11 @@ async def delete_source(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting source {source_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error deleting source: {str(e)}")
+        logger.error(f"Error deleting source {source_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error deleting source: {e!s}")
 
 
-@router.get("/sources/{source_id}/insights", response_model=List[SourceInsightResponse])
+@router.get("/sources/{source_id}/insights", response_model=list[SourceInsightResponse])
 async def get_source_insights(source_id: str):
     """Get all insights for a specific source."""
     try:
@@ -965,10 +979,8 @@ async def get_source_insights(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching insights for source {source_id}: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail=f"Error fetching insights: {str(e)}"
-        )
+        logger.error(f"Error fetching insights for source {source_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error fetching insights: {e!s}")
 
 
 @router.post("/sources/{source_id}/insights", response_model=SourceInsightResponse)
@@ -1010,5 +1022,5 @@ async def create_source_insight(source_id: str, request: CreateSourceInsightRequ
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error creating insight for source {source_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error creating insight: {str(e)}")
+        logger.error(f"Error creating insight for source {source_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error creating insight: {e!s}")

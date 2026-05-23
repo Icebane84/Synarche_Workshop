@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-044_The Weaver_s Ascension_ Activating Phoenix Form v3.0.md
+# CSL-044*The Weaver_s Ascension* Activating Phoenix Form v3.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-044-THE-WEAVER-S-ASCENSION--ACTIVATING-PHOENIX-FORM-V3.0-001` | The Sovereign ID. |
-| **Official Name** | `CSL-044_The Weaver_s Ascension_ Activating Phoenix Form v3.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                   | Description       |
+| :------------------ | :---------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-044-THE-WEAVER-S-ASCENSION--ACTIVATING-PHOENIX-FORM-V3.0-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-044_The Weaver_s Ascension_ Activating Phoenix Form v3.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                              | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                       | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                              | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                           | The Network.      |
 
 ## Collaborative Synthesis Log
 

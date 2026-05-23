@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-HPRI-001`                                |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **Spirit Web Connectivity**                    |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `GOVERNED_BY: [CORE-CODEX-001]`                |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 
 ---
 
@@ -46,16 +45,19 @@ from collections import defaultdict
 from pathlib import Path
 
 # Configure Logging to STDOUT
-logging.basicConfig(level=logging.INFO, format="%(message)s", handlers=[logging.StreamHandler(sys.stdout)])
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)],
+)
 logger = logging.getLogger("SilverThread")
 
 
 def scan_weave(target_dir: Path) -> None:
-    """
-    Scans a directory for Markdown files and builds a link graph.
+    """Scans a directory for Markdown files and builds a link graph.
     Reports:
     1. Dead Links (Outgoing links to non-existent files)
-    2. Orphans (Files with no incoming links)
+    2. Orphans (Files with no incoming links).
     """
     if not target_dir.exists():
         logger.error(f"Target directory not found: {target_dir}")
@@ -105,7 +107,9 @@ def scan_weave(target_dir: Path) -> None:
         "nodes_count": len(nodes),
         "orphans": orphans,
         "dead_links": [{"source": s, "target": t} for s, t in dead_links],
-        "connectivity_score": ((len(nodes) - len(orphans)) / len(nodes) * 100) if nodes else 0,
+        "connectivity_score": (
+            ((len(nodes) - len(orphans)) / len(nodes) * 100) if nodes else 0
+        ),
     }
 
     # 4. Report Results
@@ -137,7 +141,10 @@ def scan_weave(target_dir: Path) -> None:
 
     # 5. Save Report
     workspace_root = target_dir
-    while workspace_root.parent != workspace_root and not (workspace_root / "axion-core").exists():
+    while (
+        workspace_root.parent != workspace_root
+        and not (workspace_root / "axion-core").exists()
+    ):
         workspace_root = workspace_root.parent
 
     log_dir = workspace_root / "_logs"

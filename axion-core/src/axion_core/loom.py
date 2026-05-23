@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -32,13 +31,14 @@ import re
 from datetime import datetime
 
 # Setup Logging similar to 'The Void'
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - [LOOM] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - [LOOM] %(message)s"
+)
 logger = logging.getLogger("CognitiveLoom")
 
 
 class CognitiveLoom:
-    """
-    The Weaver.
+    """The Weaver.
     Ingests artifacts, extracts metadata, and identifies semantic edges.
     """
 
@@ -55,9 +55,7 @@ class CognitiveLoom:
         }
 
     def ingest_artifact(self, file_path: str) -> dict | None:
-        """
-        Reads an artifact and parses it into a MemoryNode structure.
-        """
+        """Reads an artifact and parses it into a MemoryNode structure."""
         try:
             abs_path = os.path.abspath(file_path)
             with open(abs_path, encoding="utf-8") as f:
@@ -90,23 +88,26 @@ class CognitiveLoom:
             return None
 
     def _extract_header_metadata(self, content: str) -> dict[str, str]:
-        """
-        Extracts OGLN v10.0 metadata from the file header or table.
+        """Extracts OGLN v10.0 metadata from the file header or table.
         Supports:
         - Genesis Stamp
         - Key-Value pairs (Blockquote or bolded lines)
-        - Table Attributes
+        - Table Attributes.
         """
         metadata = {}
 
         # 1. Genesis Stamp
-        genesis_match = re.search(r"\*\*Genesis Stamp:?\s*(.*?)\*\*", content, re.IGNORECASE)
+        genesis_match = re.search(
+            r"\*\*Genesis Stamp:?\s*(.*?)\*\*", content, re.IGNORECASE
+        )
         if genesis_match:
             metadata["Genesis"] = genesis_match.group(1).strip()
 
         # 2. Key-Value Pairs (Blockquote or bolded lines)
         # Matches: > **Key**: Value  OR  **Key**: Value
-        kv_matches = re.findall(r"\*\*([A-Za-z0-9\s]+?)\*\*[:\s]+(.*?)(?:\n|$)", content)
+        kv_matches = re.findall(
+            r"\*\*([A-Za-z0-9\s]+?)\*\*[:\s]+(.*?)(?:\n|$)", content
+        )
         for key, value in kv_matches:
             if key not in metadata:  # Don't overwrite if already found
                 metadata[key.strip()] = value.strip()
@@ -132,22 +133,25 @@ class CognitiveLoom:
         return "Artifact"
 
     def _extract_links(self, content: str) -> list[str]:
-        """
-        Finds explicit links to other artifacts.
+        """Finds explicit links to other artifacts.
         Matches [ID](path) or specific 'reference' tags.
         """
         # Simple regex for [Text](path) - robust implementation would resolve paths
         links = re.findall(r"\[(.*?)\]\((.*?)\)", content)
         return [
-            link[0] for link in links if "http" not in link[1] and hasattr(link, "__getitem__")
+            link[0]
+            for link in links
+            if "http" not in link[1] and hasattr(link, "__getitem__")
         ]  # Internal links only
 
     def _weave_edges(
-        self, source_id: str, targets: list[str], link_type: str = "references", strength: float = 1.0
+        self,
+        source_id: str,
+        targets: list[str],
+        link_type: str = "references",
+        strength: float = 1.0,
     ) -> None:
-        """
-        Creates weighted edge entries in the Tapestry.
-        """
+        """Creates weighted edge entries in the Tapestry."""
         for target in targets:
             # Check for existing edge to update strength or prevent duplicates
             exists = False
@@ -170,8 +174,7 @@ class CognitiveLoom:
                 )
 
     def _infer_tier(self, metadata: dict) -> str:
-        """
-        Infers the Memory Tier based on artifact metadata.
+        """Infers the Memory Tier based on artifact metadata.
         Tiers: Active (Strategic/Current), Retained (Reference), Archival (Historical).
         """
         status = metadata.get("Status", "ACTIVE").upper()
@@ -182,9 +185,7 @@ class CognitiveLoom:
         return "Archival"
 
     def export_tapestry(self, output_path: str) -> None:
-        """
-        Persists the current Knowledge Graph to JSON.
-        """
+        """Persists the current Knowledge Graph to JSON."""
         self.tapestry["metadata"]["node_count"] = len(self.tapestry["nodes"])
         if self.tapestry["metadata"]["node_count"] > 0:
             self.tapestry["metadata"]["edge_density"] = (

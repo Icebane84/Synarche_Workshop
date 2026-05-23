@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Session Manager - Antigravity Kit
+"""Session Manager - Antigravity Kit.
 =================================
 Analyzes project state, detects tech stack, tracks file statistics, and provides
 a summary of the current session.
@@ -10,11 +9,11 @@ Usage:
     python .agent/scripts/session_manager.py info [path]
 """
 
-import os
-import json
 import argparse
+import json
+import os
 from pathlib import Path
-from typing import Dict, Any, List
+from typing import Any, Dict, List
 
 
 def get_project_root(path: str) -> Path:
@@ -79,7 +78,7 @@ def count_files(root: Path) -> Dict[str, int]:
         "__pycache__",
     }
 
-    for root_dir, dirs, files in os.walk(root):
+    for _root_dir, dirs, files in os.walk(root):
         dirs[:] = [d for d in dirs if d not in exclude]
         stats["total"] += len(files)
 
@@ -118,7 +117,7 @@ def print_status(root: Path):
     print(f"\n📁 Project: {info.get('name', root.name)}")
     print(f"📂 Path: {root}")
     print(f"🏷️  Type: {', '.join(info.get('stack', ['Generic']))}")
-    print(f"📊 Status: Active")
+    print("📊 Status: Active"ve")
 
     print("\n🔧 Tech Stack:")
     for tech in info.get("stack", []):

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -17,7 +16,8 @@
 > Ethos: Frame-accurate simulation through structural rigidity.
 """
 
-from typing import Dict, Set, List, Optional, Any, Union
+from typing import Any, Optional, Union
+
 from ..ecs.component import ComponentStore
 from ..ecs.manager import EntityManager
 from ..ecs.resonance import ResonanceAuditor, ResonanceRegistry
@@ -32,30 +32,36 @@ from .state import StateManager
 
 
 class DeterministicEngine:
-    """
-    The High-Level Interface for the Axion Deterministic Engine.
+    """The High-Level Interface for the Axion Deterministic Engine.
     Encapsulates the graph, scheduler, and executor for easy use.
     Integrated with Insforge Cloud Persistence and ECS Synergy Metrics.
-    
+
     This engine acts as the primary orchestrator for the simulation substrate,
     ensuring that all tasks are executed in a reproducible, frame-accurate manner.
     """
 
-    def __init__(self, dt: float = 1 / 60, use_parallel: bool = False, insforge_key: Optional[str] = None) -> None:
-        """
-        Initializes the deterministic engine with the specified configuration.
-        
+    def __init__(
+        self,
+        dt: float = 1 / 60,
+        use_parallel: bool = False,
+        insforge_key: Optional[str] = None,
+    ) -> None:
+        """Initializes the deterministic engine with the specified configuration.
+
         Args:
             dt (float): The fixed delta time for each simulation frame.
             use_parallel (bool): Whether to use the parallel scheduler.
             insforge_key (Optional[str]): API key for cloud state persistence.
+
         """
         self.graph = TaskGraph()
         self.use_parallel = use_parallel
 
         # Select scheduler based on requested mode
         if use_parallel:
-            self.scheduler: Union[ParallelScheduler, DeterministicScheduler] = ParallelScheduler(self.graph)
+            self.scheduler: Union[ParallelScheduler, DeterministicScheduler] = (
+                ParallelScheduler(self.graph)
+            )
         else:
             self.scheduler = DeterministicScheduler(self.graph)
 
@@ -66,7 +72,9 @@ class DeterministicEngine:
         # Cloud Transmutation
         self.transmuter: Optional[InsforgeTransmuter] = None
         if insforge_key:
-            self.transmuter = InsforgeTransmuter("https://x93i6uma.us-east.insforge.app", insforge_key)
+            self.transmuter = InsforgeTransmuter(
+                "https://x93i6uma.us-east.insforge.app", insforge_key
+            )
 
         # Resonance & Semantic Security
         self.resonance_registry = ResonanceRegistry()
@@ -83,17 +91,16 @@ class DeterministicEngine:
         self.synergy_metrics: Optional[SynergyMetrics] = None
 
     def register_task(self, task: Any) -> None:
-        """
-        Adds a task to the engine's execution graph.
-        
+        """Adds a task to the engine's execution graph.
+
         Args:
             task: The task object to be integrated into the simulation cycle.
+
         """
         self.graph.add_task(task)
 
     def step(self) -> None:
-        """
-        Advances the simulation by a single deterministic frame.
+        """Advances the simulation by a single deterministic frame.
         Triggers execution, state updates, and synergy calculations.
         """
         self.executor.step()
@@ -102,8 +109,7 @@ class DeterministicEngine:
         self.synergy_metrics = self.synergy_system.calculate_gss()
 
     def sync_to_cloud(self) -> None:
-        """
-        Synchronizes the current engine state to the Insforge cloud layer.
+        """Synchronizes the current engine state to the Insforge cloud layer.
         Performs transmutation of entities, components, and binary snapshots.
         """
         if self.transmuter:
@@ -115,29 +121,28 @@ class DeterministicEngine:
             self.transmuter.save_snapshot(self.clock.frame, self.state)
 
     def initialize(self) -> None:
-        """
-        Validates the task graph and initializes all subsystems before simulation starts.
+        """Validates the task graph and initializes all subsystems before simulation starts.
         Ensures the structural integrity of the dependency graph.
         """
         self.graph.validate()
 
     def run(self, frames: int = 1) -> None:
-        """
-        Executes the specified number of simulation frames sequentially.
-        
+        """Executes the specified number of simulation frames sequentially.
+
         Args:
             frames (int): Number of frames to advance. Defaults to 1.
+
         """
         for _ in range(frames):
             self.step()
 
     def rollback(self, steps: int = 1) -> None:
-        """
-        Rolls back the simulation by a specified number of frames.
+        """Rolls back the simulation by a specified number of frames.
         Re-synchronizes high-level entity and component managers with the restored state.
-        
+
         Args:
             steps (int): Number of frames to go back in time.
+
         """
         target_frame = max(0, self.clock.frame - steps)
         self.executor.rollback(target_frame)

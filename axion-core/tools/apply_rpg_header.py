@@ -1,5 +1,4 @@
-"""
-# TOOL-EMPR-004: The RPG Header Injector (Emperor's Catalyst)
+"""# TOOL-EMPR-004: The RPG Header Injector (Emperor's Catalyst).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -64,7 +63,9 @@ logger = logging.getLogger(__name__)
 # --- TEMPLATES ---
 
 
-def get_python_template(slot: str, synergy: str, stat: str, ability: str, cost: str) -> str:
+def get_python_template(
+    slot: str, synergy: str, stat: str, ability: str, cost: str
+) -> str:
     return f"""
 # --- RPG FRAMEWORK INTEGRATION ({RPG_BLOCK_MARKER}) ---
 # System Slot: {slot}
@@ -76,7 +77,9 @@ def get_python_template(slot: str, synergy: str, stat: str, ability: str, cost: 
 """
 
 
-def get_markdown_template(slot: str, synergy: str, stat: str, ability: str, cost: str) -> str:
+def get_markdown_template(
+    slot: str, synergy: str, stat: str, ability: str, cost: str
+) -> str:
     return f"""
 ### V. RPG Framework Integration ({RPG_BLOCK_MARKER})
 
@@ -95,12 +98,11 @@ def get_markdown_template(slot: str, synergy: str, stat: str, ability: str, cost
 
 
 def determine_rpg_stats(path: Path) -> tuple[str, str, str, str, str]:
-    """
-    Returns (System Slot, Synergy Set, Primary Stat, Passive Ability, Cognitive Load)
+    """Returns (System Slot, Synergy Set, Primary Stat, Passive Ability, Cognitive Load)
     Aligned with GVRN-SYNERGY-001 (Seven-Agent Matrix).
     """
     name = path.name.lower()
-    str_path = str(path).lower()
+    str(path).lower()
 
     # Default Fallback
     slot = "Passive Knowledge"
@@ -235,9 +237,13 @@ def process_markdown_file(path: Path, dry_run: bool) -> None:
 
     # Insert before "Actionable Prompt Packet"
     if "Actionable Prompt Packet" in content:
-        new_content = content.replace("## Actionable Prompt Packet", rpg_block + "\n## Actionable Prompt Packet")
+        new_content = content.replace(
+            "## Actionable Prompt Packet", rpg_block + "\n## Actionable Prompt Packet"
+        )
     elif "# Actionable Prompt Packet" in content:
-        new_content = content.replace("# Actionable Prompt Packet", rpg_block + "\n# Actionable Prompt Packet")
+        new_content = content.replace(
+            "# Actionable Prompt Packet", rpg_block + "\n# Actionable Prompt Packet"
+        )
     else:
         # Append to end
         new_content = content + "\n" + rpg_block

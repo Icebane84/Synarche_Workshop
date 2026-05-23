@@ -1,4 +1,5 @@
 # GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GVRN-SYNERGY-001-AGENTICWORKSHOPSYNERGYMATRIX-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                          | Description       |
+| :------------------ | :------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GVRN-SYNERGY-001-AGENTICWORKSHOPSYNERGYMATRIX-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                              | The Standard.     |
+| **Domain**          | `GVRN`                                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN-SYNERGY-001` |
-| **Version** | `v11.1` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Matrix` |
-| **Classification** | `Planet` |
-| **Authors** | `Antigravity` |
-| **Created** | `2026-01-17` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Synergy, Agents, Tooling, Governance` |
+
+| Key                | Value                                  |
+| :----------------- | :------------------------------------- |
+| **Module ID**      | `GVRN-SYNERGY-001`                     |
+| **Version**        | `v11.1`                                |
+| **Evolution**      | **Cognitive Ascension**                |
+| **Status**         | `ACTIVE`                               |
+| **Type**           | `Matrix`                               |
+| **Classification** | `Planet`                               |
+| **Authors**        | `Antigravity`                          |
+| **Created**        | `2026-01-17`                           |
+| **Updated**        | `2026-01-17`                           |
+| **Authority**      | `CODEX-001`                            |
+| **Tags**           | `Synergy, Agents, Tooling, Governance` |
+
 ---
 
 # GVRN-SYNERGY-001: Agentic Workshop Synergy Matrix
@@ -49,14 +53,14 @@ process has a "spiritual owner" responsible for its execution and integrity.
 
 ## II. The Synergy Matrix
 
-| Agent Mask                | Domain        | Primary Responsibility     | Workshop Tools (Owned)                                                                                                               |
-| :------------------------ | :------------ | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| **The Magician**          | Triage        | Ingestion & Discovery      | `ingest_vault.py`, `extract_docx_text.py`, `impact_analysis.py`                                                                                      |
-| **The Emperor**           | Schema        | Standards & Architecture   | `reforge_library.py`, `standardize_docs.py`, `scaffold_engine.py`, `apply_rpg_header.py`, `apply_standard.py`                                        |
-| **The High Priestess**    | Harmony       | Synergy & Relational Logic | `forge_backlinks.py`, `sophia_wisdom.py`, `generate_registry.py`, `find_unlinked.py`, `catalyst_weaver.py`, `resonance_scanner.py`, `GUCA-LINK-002 (CMD: ForgeLink)` |
-| **The Knight of Swords**  | Transmutation | Refactoring & Execution    | `reforge.py`, `test_weaver.py`, `knight_fixer.py`, `reforge_oslm.py`, `transmutation_pipeline.py`                                                    |
-| **The Star**              | Coherence     | Aesthetic & Visualization  | `map_markdown_structure.py`, `generate_prs.js`, `generate_rag_graph.py`                                                                              |
-| **The King of Pentacles** | Archival      | Finalization & Registry    | `log_refactor_milestone.py`, `chronicle_manager.py`                                                                                                  |
+| Agent Mask                | Domain        | Primary Responsibility     | Workshop Tools (Owned)                                                                                                                                                    |
+| :------------------------ | :------------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **The Magician**          | Triage        | Ingestion & Discovery      | `ingest_vault.py`, `extract_docx_text.py`, `impact_analysis.py`                                                                                                           |
+| **The Emperor**           | Schema        | Standards & Architecture   | `reforge_library.py`, `standardize_docs.py`, `scaffold_engine.py`, `apply_rpg_header.py`, `apply_standard.py`                                                             |
+| **The High Priestess**    | Harmony       | Synergy & Relational Logic | `forge_backlinks.py`, `sophia_wisdom.py`, `generate_registry.py`, `find_unlinked.py`, `catalyst_weaver.py`, `resonance_scanner.py`, `GUCA-LINK-002 (CMD: ForgeLink)`      |
+| **The Knight of Swords**  | Transmutation | Refactoring & Execution    | `reforge.py`, `test_weaver.py`, `knight_fixer.py`, `reforge_oslm.py`, `transmutation_pipeline.py`                                                                         |
+| **The Star**              | Coherence     | Aesthetic & Visualization  | `map_markdown_structure.py`, `generate_prs.js`, `generate_rag_graph.py`                                                                                                   |
+| **The King of Pentacles** | Archival      | Finalization & Registry    | `log_refactor_milestone.py`, `chronicle_manager.py`                                                                                                                       |
 | **The Sentinel**          | Audit         | Security & Compliance      | `compliance_audit.py`, `ide_sentinel.py`, `sentinel_sword.py`, `analyze_docs_compliance.py`, `diagnose_paths.py`, `lint_artifact.py`, `audit_weights.py`, `verify_ast.py` |
 
 ## III. Operational Domains

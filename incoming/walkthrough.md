@@ -23,6 +23,7 @@ I have successfully implemented both Hybrid Retrieval (Phase 28.5) and the Soul-
 - **Guardian Logic**: The `Sentinel` node now blocks execution (RED status) if the Soul Impact is too high.
 
 ### 3. [OATHKEEPER] Total Type-Safety Repair ([oathkeeper.py](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/agents/axion/oathkeeper.py))
+
 - **Status**: `[REPAIRED & VERIFIED]`
 - **Refactor**: Converted [AxionState](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/agents/axion/oathkeeper.py#129-143) and sub-states to `Pydantic` models to satisfy `langgraph` generic bounds.
 - **Access Pattern**: Switched to dot-notation (e.g., `state.input`) for Mypy/Ruff compliance.

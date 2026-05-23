@@ -7,6 +7,7 @@ import logging
 import time
 import traceback
 from datetime import datetime
+from typing import Any, Callable, Optional
 
 # --- DEPENDENCIES ---
 # @engine (Python) - Standard operational logic
@@ -19,32 +20,37 @@ from datetime import datetime
 logger = logging.getLogger("PhoenixLogger")
 
 
-def synarche_audit(func):
+def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
     """Architectural wrapper for standardized logging compliance (re-imported for context)."""
 
     @functools.wraps(func)
-    async def wrapper(*args, **kwargs):  # Changed to async for compatibility
-        start_time = time.perf_counter()
+    async def wrapper(*args: Any, **kwargs: Any) -> Any:  # Changed to async for compatibility
 
+        start_time = time.perf_counter()
         logger.debug(f"Executing {func.__name__} | Args: {args} | Kwargs: {kwargs}")
 
         try:
-            result = await func(*args, **kwargs) if asyncio.iscoroutinefunction(func) else func(*args, **kwargs)
+            result = (
+                await func(*args, **kwargs)
+                if asyncio.iscoroutinefunction(func)
+                else func(*args, **kwargs)
+            )
             end_time = time.perf_counter()
             duration = end_time - start_time
             logger.info(f"Finished {func.__name__} in {duration:.4f}s")
             return result
         except Exception as e:
-            logger.error(f"CRITICAL FAILURE in {func.__name__}: {e!s}\n{traceback.format_exc()}")
+            logger.error(
+                f"CRITICAL FAILURE in {func.__name__}: {e!s}\n{traceback.format_exc()}"
+            )
             raise  # Re-raise to ensure system-level awareness
 
     return wrapper
 
 
 @synarche_audit  # Directive Alpha: synarche_audit deployed
-async def parse_error_log_entry(log_line: str):
-    """
-    Simulates OGLN's @mem-proc parsing a single error_audit.log entry.
+async def parse_error_log_entry(log_line: str) -> Optional[dict[str, Any]]:
+    """Simulates OGLN's @mem-proc parsing a single error_audit.log entry.
     This function is now automatically audited for its execution state.
     """
     logger.debug(f"OGLN @mem-proc parsing: {log_line[:50]}...")
@@ -70,7 +76,9 @@ async def parse_error_log_entry(log_line: str):
             "status": "Awaiting Root Cause Analysis",
         }
         # Simulate storing in Eidetic Contextual Memory Matrix
-        print(f"OGLN: Stored processed error in Cognitive Loom: {processed_data['summary']}")
+        print(
+            f"OGLN: Stored processed error in Cognitive Loom: {processed_data['summary']}"
+        )
         await asyncio.sleep(0.05)  # Simulate async processing
         return processed_data
     elif "Database connection failed" in log_line:
@@ -84,7 +92,7 @@ async def parse_error_log_entry(log_line: str):
 
 
 # --- Conceptual Test (run this to demonstrate Directive Alpha & Gamma) ---
-async def demo_ogln_processing():
+async def demo_ogln_processing() -> None:
     # Setup logger (as defined in AOP-LOG-ETHOS-001)
     # This is a minimal setup, actual setup_synarche_logging would be used
     if not logger.handlers:
@@ -96,7 +104,9 @@ async def demo_ogln_processing():
         logger.setLevel(logging.DEBUG)
 
     sample_error_log = "2026-04-16 10:00:00,123 - CoreCognitiveEngine - ERROR - CRITICAL FAILURE in data_processor: Connection refused\nTraceback (most recent call last):\n..."
-    sample_info_log = "2026-04-16 10:01:00,456 - SystemInit - INFO - System initialized."
+    sample_info_log = (
+        "2026-04-16 10:01:00,456 - SystemInit - INFO - System initialized."
+    )
 
     print("\n--- OGLN Error Log Integration Demo ---")
     await parse_error_log_entry(sample_error_log)

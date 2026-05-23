@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-HPRI-001: The Silver Thread (Graph Integrity)
+"""# TOOL-HPRI-001: The Silver Thread (Graph Integrity).
 
 ## I. Universal Identification & Provenance
 | Attribute | Value |
@@ -51,11 +50,10 @@ logger = logging.getLogger(__name__)
 
 
 def scan_weave(target_dir: Path) -> None:
-    """
-    Scans a directory for Markdown files and builds a link graph.
+    """Scans a directory for Markdown files and builds a link graph.
     Reports:
     1. Dead Links (Outgoing links to non-existent files)
-    2. Orphans (Files with no incoming links)
+    2. Orphans (Files with no incoming links).
     """
     if not target_dir.exists():
         logger.error(f"Target directory not found: {target_dir}")
@@ -123,7 +121,9 @@ def scan_weave(target_dir: Path) -> None:
     else:
         logger.info("  None. All threads connect.")
 
-    connectivity_score = ((len(nodes) - len(orphans)) / len(nodes) * 100) if nodes else 0
+    connectivity_score = (
+        ((len(nodes) - len(orphans)) / len(nodes) * 100) if nodes else 0
+    )
     logger.info("\n" + "-" * 40)
     logger.info(f"NETWORK DENSITY SCORE: {connectivity_score:.2f}%")
     logger.info("-" * 40)

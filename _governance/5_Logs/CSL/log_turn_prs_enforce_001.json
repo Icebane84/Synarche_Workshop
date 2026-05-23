@@ -4,11 +4,7 @@
   "turn_id": "PRS-ENFORCE-001",
   "cognitive_state": {
     "system_mode": "Triad Execution Mode",
-    "active_personalities": [
-      "@sentinel",
-      "@axion",
-      "@emperor_mask"
-    ],
+    "active_personalities": ["@sentinel", "@axion", "@emperor_mask"],
     "current_focus": "Architectural Law Enforcement"
   },
   "telemetry": {

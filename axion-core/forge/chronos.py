@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""
-# TOOL-UTIL-001: The Chronos Lock (Timekeeper)
-# Domain: GVRN | State: CANONIZED | Criticality: Critical
+"""# TOOL-UTIL-001: The Chronos Lock (Timekeeper)
+# Domain: GVRN | State: CANONIZED | Criticality: Critical.
 
 ## I. Universal Identification & Provenance
 | Key | Value |
@@ -33,16 +32,23 @@ from datetime import datetime, timezone
 
 # --- ENUM INTEGRATION ---
 try:
-    from enums import Domain, Status, RiskLevel
+    from enums import Domain, RiskLevel, Status
 except ImportError:
     # Fallback for bootstrap
-    class Domain: GVRN = "GVRN"
-    class Status: CANONIZED = "CANONIZED"
-    class RiskLevel: MODERATE = "MODERATE"
+    class Domain:
+        GVRN = "GVRN"
+
+    class Status:
+        CANONIZED = "CANONIZED"
+
+    class RiskLevel:
+        MODERATE = "MODERATE"
+
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger("CHRONOS")
+
 
 class Chronos:
     """The Master Timekeeper."""
@@ -59,9 +65,8 @@ class Chronos:
 
     @staticmethod
     def get_genesis_stamp(domain: str, state: str, risk: str = "Standard") -> str:
-        """
-        Forges the Official GVRN Genesis Stamp.
-        Format: Genesis Stamp: YYYY-MM-DD | Domain: [DOM] | State: [STATE] | Criticality: [RISK]
+        """Forges the Official GVRN Genesis Stamp.
+        Format: Genesis Stamp: YYYY-MM-DD | Domain: [DOM] | State: [STATE] | Criticality: [RISK].
         """
         date = Chronos.get_human_date()
         return f"**Genesis Stamp**: {date} | **Domain**: {domain} | **State**: {state} | **Criticality**: {risk}"
@@ -71,13 +76,19 @@ class Chronos:
         """Returns a safe filename suffix (e.g., _20260124)."""
         return datetime.now(timezone.utc).strftime("_%Y%m%d")
 
+
 def main():
     parser = argparse.ArgumentParser(description="Chronos: The Timekeeper")
-    parser.add_argument("--mode", choices=["iso", "genesis", "suffix"], default="iso", help="Output format")
+    parser.add_argument(
+        "--mode",
+        choices=["iso", "genesis", "suffix"],
+        default="iso",
+        help="Output format",
+    )
     parser.add_argument("--domain", default="GVRN", help="Domain for Genesis Stamp")
     parser.add_argument("--state", default="ACTIVE", help="State for Genesis Stamp")
     parser.add_argument("--risk", default="Standard", help="Risk for Genesis Stamp")
-    
+
     args = parser.parse_args()
 
     if args.mode == "iso":
@@ -86,6 +97,7 @@ def main():
         print(Chronos.get_file_suffix())
     elif args.mode == "genesis":
         print(Chronos.get_genesis_stamp(args.domain, args.state, args.risk))
+
 
 if __name__ == "__main__":
     main()

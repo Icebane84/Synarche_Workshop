@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A

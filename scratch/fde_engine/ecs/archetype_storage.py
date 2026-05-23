@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -11,6 +10,7 @@
 
 **Ethos:** Absolute Determinism. Zero Logic Drift.
 """
+
 # ecs/archetype_storage.py
 
 
@@ -44,4 +44,7 @@ class Archetype:
         return swapped_eid
 
     def snapshot(self):
-        return {"entity_ids": self.entity_ids.copy(), "columns": {k: v.copy() for k, v in self.columns.items()}}
+        return {
+            "entity_ids": self.entity_ids.copy(),
+            "columns": {k: v.copy() for k, v in self.columns.items()},
+        }

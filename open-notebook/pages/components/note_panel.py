@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -20,7 +19,7 @@ models_service = ModelsService()
 notes_service = NotesService()
 
 
-def note_panel(note_id, notebook_id=None):
+def note_panel(note_id, notebook_id=None) -> None:
     default_models = models_service.get_default_models()
     if not default_models.default_embedding_model:
         st.warning(

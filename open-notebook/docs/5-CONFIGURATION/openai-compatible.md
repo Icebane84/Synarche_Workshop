@@ -9,6 +9,7 @@
 ---
 
 # openai-compatible.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OPENAI-COMPATIBLE-001` | The Sovereign ID. |
-| **Official Name** | `openai-compatible.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OPENAI-COMPATIBLE-001`  | The Sovereign ID. |
+| **Official Name**   | `openai-compatible.md`        | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # OpenAI-Compatible Providers
 
@@ -54,14 +55,14 @@ Open Notebook can connect to any server using this format.
 
 ## Common Compatible Servers
 
-| Server | Use Case | URL |
-|--------|----------|-----|
-| **LM Studio** | Desktop GUI for local models | https://lmstudio.ai |
+| Server                    | Use Case                      | URL                                                |
+| ------------------------- | ----------------------------- | -------------------------------------------------- |
+| **LM Studio**             | Desktop GUI for local models  | https://lmstudio.ai                                |
 | **Text Generation WebUI** | Full-featured local inference | https://github.com/oobabooga/text-generation-webui |
-| **vLLM** | High-performance serving | https://github.com/vllm-project/vllm |
-| **Ollama** | Simple local models | (Use native Ollama provider instead) |
-| **LocalAI** | Local AI inference | https://github.com/mudler/LocalAI |
-| **llama.cpp server** | Lightweight inference | https://github.com/ggerganov/llama.cpp |
+| **vLLM**                  | High-performance serving      | https://github.com/vllm-project/vllm               |
+| **Ollama**                | Simple local models           | (Use native Ollama provider instead)               |
+| **LocalAI**               | Local AI inference            | https://github.com/mudler/LocalAI                  |
+| **llama.cpp server**      | Lightweight inference         | https://github.com/ggerganov/llama.cpp             |
 
 ---
 
@@ -263,12 +264,12 @@ services:
 
 The model name must match what your server expects:
 
-| Server | Model Name Format |
-|--------|-------------------|
-| LM Studio | As shown in LM Studio UI |
-| vLLM | HuggingFace model path |
-| Text Gen WebUI | As loaded in UI |
-| llama.cpp | Model file name |
+| Server         | Model Name Format        |
+| -------------- | ------------------------ |
+| LM Studio      | As shown in LM Studio UI |
+| vLLM           | HuggingFace model path   |
+| Text Gen WebUI | As loaded in UI          |
+| llama.cpp      | Model file name          |
 
 ---
 
@@ -381,11 +382,11 @@ Add each as a separate model in Open Notebook settings.
 
 ### Model Selection
 
-| Model Size | RAM Needed | Speed |
-|------------|------------|-------|
-| 7B | 8GB | Fast |
-| 13B | 16GB | Medium |
-| 70B | 64GB+ | Slow |
+| Model Size | RAM Needed | Speed  |
+| ---------- | ---------- | ------ |
+| 7B         | 8GB        | Fast   |
+| 13B        | 16GB       | Medium |
+| 70B        | 64GB+      | Slow   |
 
 ### Quantization
 
@@ -399,6 +400,7 @@ llama-3-8b-f16.gguf     → ~16GB RAM, slower
 ### GPU Acceleration
 
 Enable GPU in your server for much faster inference:
+
 - LM Studio: Settings → GPU layers
 - vLLM: Automatic with CUDA
 - llama.cpp: `--n-gpu-layers 35`
@@ -407,15 +409,16 @@ Enable GPU in your server for much faster inference:
 
 ## Comparison: Native vs Compatible
 
-| Aspect | Native Provider | OpenAI Compatible |
-|--------|-----------------|-------------------|
-| **Setup** | API key only | Server + configuration |
-| **Models** | Provider's models | Any compatible model |
-| **Cost** | Pay per token | Free (local) |
-| **Speed** | Usually fast | Depends on hardware |
-| **Features** | Full support | Basic features |
+| Aspect       | Native Provider   | OpenAI Compatible      |
+| ------------ | ----------------- | ---------------------- |
+| **Setup**    | API key only      | Server + configuration |
+| **Models**   | Provider's models | Any compatible model   |
+| **Cost**     | Pay per token     | Free (local)           |
+| **Speed**    | Usually fast      | Depends on hardware    |
+| **Features** | Full support      | Basic features         |
 
 Use OpenAI-compatible when:
+
 - Running local models
 - Using custom/fine-tuned models
 - Privacy requirements

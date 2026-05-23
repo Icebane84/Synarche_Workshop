@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -21,14 +20,13 @@ import base64
 import logging
 import pickle
 import uuid
-from typing import Any, Dict, List, Optional, Union
+from typing import Any, Dict, List, Optional
 
 import requests
 
 
 class InsforgeTransmuter:
-    """
-    Bridges the Axion Engine state to the Insforge Cloud.
+    """Bridges the Axion Engine state to the Insforge Cloud.
     Handles entity/component upserts and frame snapshotting using REST protocols.
 
     This class implements the 'Transmutation' protocol, allowing
@@ -37,12 +35,12 @@ class InsforgeTransmuter:
     """
 
     def __init__(self, base_url: str, api_key: str) -> None:
-        """
-        Initializes the transmuter with cloud credentials.
-        
+        """Initializes the transmuter with cloud credentials.
+
         Args:
             base_url (str): The endpoint for the Insforge API.
             api_key (str): The authorization token.
+
         """
         self.base_url: str = base_url.rstrip("/")
         self.headers: Dict[str, str] = {
@@ -53,11 +51,11 @@ class InsforgeTransmuter:
         self.logger: logging.Logger = logging.getLogger("PhoenixLogger")
 
     def transmute_entities(self, entities: List[uuid.UUID]) -> None:
-        """
-        Persists the entity registry to the axion_entities table.
-        
+        """Persists the entity registry to the axion_entities table.
+
         Args:
             entities (List[uuid.UUID]): The list of entity handles to save.
+
         """
         if not entities:
             return
@@ -72,12 +70,12 @@ class InsforgeTransmuter:
             self.logger.error(f"Transmutation Failure (Entities): {e}")
 
     def transmute_components(self, component_store: Any) -> None:
-        """
-        Persists all components for all entities to the axion_components table.
+        """Persists all components for all entities to the axion_components table.
         Extracts serializable data from component instances.
-        
+
         Args:
             component_store (Any): The ComponentStore instance containing the data.
+
         """
         payload = []
         # Access the internal stores of the ComponentStore
@@ -93,7 +91,9 @@ class InsforgeTransmuter:
                 else:
                     data = {"value": comp_instance}
 
-                payload.append({"entity_id": str(entity_id), "type": type_name, "data": data})
+                payload.append(
+                    {"entity_id": str(entity_id), "type": type_name, "data": data}
+                )
 
         if not payload:
             return
@@ -106,13 +106,13 @@ class InsforgeTransmuter:
             self.logger.error(f"Transmutation Failure (Components): {e}")
 
     def save_snapshot(self, frame: int, state: Dict[str, Any]) -> None:
-        """
-        Saves a binary save-state to the cloud snapshots table.
+        """Saves a binary save-state to the cloud snapshots table.
         Converts state to base64 encoded pickle data for transport.
-        
+
         Args:
             frame (int): The current simulation frame index.
             state (Dict[str, Any]): The state dictionary to persist.
+
         """
         try:
             # Binary pickle -> Base64 for JSON transport
@@ -128,14 +128,14 @@ class InsforgeTransmuter:
             self.logger.error(f"Snapshot Failure (Frame {frame}): {e}")
 
     def load_snapshot(self, frame: int) -> Optional[Dict[str, Any]]:
-        """
-        Retrieves and restores a snapshot from the cloud.
-        
+        """Retrieves and restores a snapshot from the cloud.
+
         Args:
             frame (int): The target frame index to restore.
-            
+
         Returns:
             Optional[Dict[str, Any]]: The restored state dict, or None if retrieval fails.
+
         """
         url = f"{self.base_url}/api/database/records/axion_snapshots?frame=eq.{frame}"
         try:

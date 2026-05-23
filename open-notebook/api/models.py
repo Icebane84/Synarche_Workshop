@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -19,11 +18,9 @@ class NotebookCreate(BaseModel):
 
 
 class NotebookUpdate(BaseModel):
-    name: Optional[str] = Field(None, description="Name of the notebook")
-    description: Optional[str] = Field(None, description="Description of the notebook")
-    archived: Optional[bool] = Field(
-        None, description="Whether the notebook is archived"
-    )
+    name: str | None = Field(None, description="Name of the notebook")
+    description: str | None = Field(None, description="Description of the notebook")
+    archived: bool | None = Field(None, description="Whether the notebook is archived")
 
 
 class NotebookResponse(BaseModel):
@@ -50,7 +47,7 @@ class SearchRequest(BaseModel):
 
 
 class SearchResponse(BaseModel):
-    results: List[Dict[str, Any]] = Field(..., description="Search results")
+    results: list[dict[str, Any]] = Field(..., description="Search results")
     total_count: int = Field(..., description="Total number of results")
     search_type: str = Field(..., description="Type of search performed")
 
@@ -89,19 +86,19 @@ class ModelResponse(BaseModel):
 
 
 class DefaultModelsResponse(BaseModel):
-    default_chat_model: Optional[str] = None
-    default_transformation_model: Optional[str] = None
-    large_context_model: Optional[str] = None
-    default_text_to_speech_model: Optional[str] = None
-    default_speech_to_text_model: Optional[str] = None
-    default_embedding_model: Optional[str] = None
-    default_tools_model: Optional[str] = None
+    default_chat_model: str | None = None
+    default_transformation_model: str | None = None
+    large_context_model: str | None = None
+    default_text_to_speech_model: str | None = None
+    default_speech_to_text_model: str | None = None
+    default_embedding_model: str | None = None
+    default_tools_model: str | None = None
 
 
 class ProviderAvailabilityResponse(BaseModel):
-    available: List[str] = Field(..., description="List of available providers")
-    unavailable: List[str] = Field(..., description="List of unavailable providers")
-    supported_types: Dict[str, List[str]] = Field(
+    available: list[str] = Field(..., description="List of available providers")
+    unavailable: list[str] = Field(..., description="List of unavailable providers")
+    supported_types: dict[str, list[str]] = Field(
         ..., description="Provider to supported model types mapping"
     )
 
@@ -120,15 +117,13 @@ class TransformationCreate(BaseModel):
 
 
 class TransformationUpdate(BaseModel):
-    name: Optional[str] = Field(None, description="Transformation name")
-    title: Optional[str] = Field(
-        None, description="Display title for the transformation"
-    )
-    description: Optional[str] = Field(
+    name: str | None = Field(None, description="Transformation name")
+    title: str | None = Field(None, description="Display title for the transformation")
+    description: str | None = Field(
         None, description="Description of what this transformation does"
     )
-    prompt: Optional[str] = Field(None, description="The transformation prompt")
-    apply_default: Optional[bool] = Field(
+    prompt: str | None = Field(None, description="The transformation prompt")
+    apply_default: bool | None = Field(
         None, description="Whether to apply this transformation by default"
     )
 
@@ -177,25 +172,23 @@ class DefaultPromptUpdate(BaseModel):
 
 # Notes API models
 class NoteCreate(BaseModel):
-    title: Optional[str] = Field(None, description="Note title")
+    title: str | None = Field(None, description="Note title")
     content: str = Field(..., description="Note content")
-    note_type: Optional[str] = Field("human", description="Type of note (human, ai)")
-    notebook_id: Optional[str] = Field(
-        None, description="Notebook ID to add the note to"
-    )
+    note_type: str | None = Field("human", description="Type of note (human, ai)")
+    notebook_id: str | None = Field(None, description="Notebook ID to add the note to")
 
 
 class NoteUpdate(BaseModel):
-    title: Optional[str] = Field(None, description="Note title")
-    content: Optional[str] = Field(None, description="Note content")
-    note_type: Optional[str] = Field(None, description="Type of note (human, ai)")
+    title: str | None = Field(None, description="Note title")
+    content: str | None = Field(None, description="Note content")
+    note_type: str | None = Field(None, description="Type of note (human, ai)")
 
 
 class NoteResponse(BaseModel):
     id: str
-    title: Optional[str]
-    content: Optional[str]
-    note_type: Optional[str]
+    title: str | None
+    content: str | None
+    note_type: str | None
     created: str
     updated: str
 
@@ -214,9 +207,7 @@ class EmbedResponse(BaseModel):
     message: str = Field(..., description="Result message")
     item_id: str = Field(..., description="ID of the item that was embedded")
     item_type: str = Field(..., description="Type of item that was embedded")
-    command_id: Optional[str] = Field(
-        None, description="Command ID for async processing"
-    )
+    command_id: str | None = Field(None, description="Command ID for async processing")
 
 
 # Rebuild request/response models
@@ -252,52 +243,52 @@ class RebuildStats(BaseModel):
 class RebuildStatusResponse(BaseModel):
     command_id: str = Field(..., description="Command ID")
     status: str = Field(..., description="Status: queued, running, completed, failed")
-    progress: Optional[RebuildProgress] = None
-    stats: Optional[RebuildStats] = None
-    started_at: Optional[str] = None
-    completed_at: Optional[str] = None
-    error_message: Optional[str] = None
+    progress: RebuildProgress | None = None
+    stats: RebuildStats | None = None
+    started_at: str | None = None
+    completed_at: str | None = None
+    error_message: str | None = None
 
 
 # Settings API models
 class SettingsResponse(BaseModel):
-    default_content_processing_engine_doc: Optional[str] = None
-    default_content_processing_engine_url: Optional[str] = None
-    default_embedding_option: Optional[str] = None
-    auto_delete_files: Optional[str] = None
-    youtube_preferred_languages: Optional[List[str]] = None
+    default_content_processing_engine_doc: str | None = None
+    default_content_processing_engine_url: str | None = None
+    default_embedding_option: str | None = None
+    auto_delete_files: str | None = None
+    youtube_preferred_languages: list[str] | None = None
 
 
 class SettingsUpdate(BaseModel):
-    default_content_processing_engine_doc: Optional[str] = None
-    default_content_processing_engine_url: Optional[str] = None
-    default_embedding_option: Optional[str] = None
-    auto_delete_files: Optional[str] = None
-    youtube_preferred_languages: Optional[List[str]] = None
+    default_content_processing_engine_doc: str | None = None
+    default_content_processing_engine_url: str | None = None
+    default_embedding_option: str | None = None
+    auto_delete_files: str | None = None
+    youtube_preferred_languages: list[str] | None = None
 
 
 # Sources API models
 class AssetModel(BaseModel):
-    file_path: Optional[str] = None
-    url: Optional[str] = None
+    file_path: str | None = None
+    url: str | None = None
 
 
 class SourceCreate(BaseModel):
     # Backward compatibility: support old single notebook_id
-    notebook_id: Optional[str] = Field(
+    notebook_id: str | None = Field(
         None, description="Notebook ID to add the source to (deprecated, use notebooks)"
     )
     # New multi-notebook support
-    notebooks: Optional[List[str]] = Field(
+    notebooks: list[str] | None = Field(
         None, description="List of notebook IDs to add the source to"
     )
     # Required fields
     type: str = Field(..., description="Source type: link, upload, or text")
-    url: Optional[str] = Field(None, description="URL for link type")
-    file_path: Optional[str] = Field(None, description="File path for upload type")
-    content: Optional[str] = Field(None, description="Text content for text type")
-    title: Optional[str] = Field(None, description="Source title")
-    transformations: Optional[List[str]] = Field(
+    url: str | None = Field(None, description="URL for link type")
+    file_path: str | None = Field(None, description="File path for upload type")
+    content: str | None = Field(None, description="Text content for text type")
+    title: str | None = Field(None, description="Source title")
+    transformations: list[str] | None = Field(
         default_factory=list, description="Transformation IDs to apply"
     )
     embed: bool = Field(False, description="Whether to embed content for vector search")
@@ -330,68 +321,68 @@ class SourceCreate(BaseModel):
 
 
 class SourceUpdate(BaseModel):
-    title: Optional[str] = Field(None, description="Source title")
-    topics: Optional[List[str]] = Field(None, description="Source topics")
+    title: str | None = Field(None, description="Source title")
+    topics: list[str] | None = Field(None, description="Source topics")
 
 
 class SourceResponse(BaseModel):
     id: str
-    title: Optional[str]
-    topics: Optional[List[str]]
-    asset: Optional[AssetModel]
-    full_text: Optional[str]
+    title: str | None
+    topics: list[str] | None
+    asset: AssetModel | None
+    full_text: str | None
     embedded: bool
     embedded_chunks: int
-    file_available: Optional[bool] = None
+    file_available: bool | None = None
     created: str
     updated: str
     # New fields for async processing
-    command_id: Optional[str] = None
-    status: Optional[str] = None
-    processing_info: Optional[Dict] = None
+    command_id: str | None = None
+    status: str | None = None
+    processing_info: dict | None = None
     # Notebook associations
-    notebooks: Optional[List[str]] = None
+    notebooks: list[str] | None = None
 
 
 class SourceListResponse(BaseModel):
     id: str
-    title: Optional[str]
-    topics: Optional[List[str]]
-    asset: Optional[AssetModel]
+    title: str | None
+    topics: list[str] | None
+    asset: AssetModel | None
     embedded: bool  # Boolean flag indicating if source has embeddings
     embedded_chunks: int  # Number of embedded chunks
     insights_count: int
     created: str
     updated: str
-    file_available: Optional[bool] = None
+    file_available: bool | None = None
     # Status fields for async processing
-    command_id: Optional[str] = None
-    status: Optional[str] = None
-    processing_info: Optional[Dict[str, Any]] = None
+    command_id: str | None = None
+    status: str | None = None
+    processing_info: dict[str, Any] | None = None
 
 
 # Context API models
 class ContextConfig(BaseModel):
-    sources: Dict[str, str] = Field(
+    sources: dict[str, str] = Field(
         default_factory=dict, description="Source inclusion config {source_id: level}"
     )
-    notes: Dict[str, str] = Field(
+    notes: dict[str, str] = Field(
         default_factory=dict, description="Note inclusion config {note_id: level}"
     )
 
 
 class ContextRequest(BaseModel):
     notebook_id: str = Field(..., description="Notebook ID to get context for")
-    context_config: Optional[ContextConfig] = Field(
+    context_config: ContextConfig | None = Field(
         None, description="Context configuration"
     )
 
 
 class ContextResponse(BaseModel):
     notebook_id: str
-    sources: List[Dict[str, Any]] = Field(..., description="Source context data")
-    notes: List[Dict[str, Any]] = Field(..., description="Note context data")
-    total_tokens: Optional[int] = Field(None, description="Estimated token count")
+    sources: list[dict[str, Any]] = Field(..., description="Source context data")
+    notes: list[dict[str, Any]] = Field(..., description="Note context data")
+    total_tokens: int | None = Field(None, description="Estimated token count")
 
 
 # Insights API models
@@ -405,31 +396,34 @@ class SourceInsightResponse(BaseModel):
 
 
 class SaveAsNoteRequest(BaseModel):
-    notebook_id: Optional[str] = Field(None, description="Notebook ID to add note to")
+    notebook_id: str | None = Field(None, description="Notebook ID to add note to")
 
 
 class CreateSourceInsightRequest(BaseModel):
     model_config = ConfigDict(protected_namespaces=())
 
     transformation_id: str = Field(..., description="ID of transformation to apply")
-    model_id: Optional[str] = Field(
+    model_id: str | None = Field(
         None, description="Model ID (uses default if not provided)"
     )
 
+
 # Source status response
 class SourceStatusResponse(BaseModel):
-    status: Optional[str] = Field(None, description="Processing status")
+    status: str | None = Field(None, description="Processing status")
     message: str = Field(..., description="Descriptive message about the status")
-    processing_info: Optional[Dict[str, Any]] = Field(
+    processing_info: dict[str, Any] | None = Field(
         None, description="Detailed processing information"
     )
-    command_id: Optional[str] = Field(None, description="Command ID if available")
+    command_id: str | None = Field(None, description="Command ID if available")
 
 
 # Error response
 class ErrorResponse(BaseModel):
     error: str
     message: str
+
+
 # Notebook delete cascade models
 class NotebookDeletePreview(BaseModel):
     notebook_id: str = Field(..., description="ID of the notebook")

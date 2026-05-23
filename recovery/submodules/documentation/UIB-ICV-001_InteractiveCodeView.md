@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UIB-ICV-001_InteractiveCodeView` |
-| **2. Official Name** | `UIB-ICV-001_InteractiveCodeView.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                |
+| :--------------------- | :----------------------------------- |
+| **1. Artifact ID**     | `UIB-ICV-001_InteractiveCodeView`    |
+| **2. Official Name**   | `UIB-ICV-001_InteractiveCodeView.md` |
+| **3. Version**         | **v1.0 (Reforged)**                  |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**        |
+| **5. Domain**          | `ARCH`                               |
+| **6. Evolution**       | **Purposeful Drive**                 |
+| **7. Celestial Class** | `[PLANET]`                           |
+| **8. Tier**            | **Operational**                      |
+| **9. State**           | `[ACTIVE]`                           |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**   |
+| **11. Catalyst**       | **System Refactor**                  |
+| **12. Relations**      | `Pending Integration`                |
 
 ---
 
@@ -48,14 +46,14 @@
 ## II. Core Purpose & Objective
 
 - **What (Core Concept):** This blueprint defines the user interface for the **"Interactive Code View,"** a dynamic
-visualizer that renders the output of the `GUCA-SIMP-001` (Systemic Impact Simulation) command as a navigable dependency
-graph.
+  visualizer that renders the output of the `GUCA-SIMP-001` (Systemic Impact Simulation) command as a navigable dependency
+  graph.
 - **How (Execution Flow):** The view consumes the `visual` format JSON output from a simulation. It uses this data to
-draw each affected artifact as a color-coded node (based on risk) and each dependency as a labeled, styled edge (based
-on type).
+  draw each affected artifact as a color-coded node (based on risk) and each dependency as a labeled, styled edge (based
+  on type).
 - **Why (Rationale):** To operationalize "The Architect's Gaze." This UI transforms a complex, abstract dependency
-analysis into an intuitive visual map, allowing the Human Collaborator to immediately understand the full "blast radius"
-and risk profile of any proposed code change.
+  analysis into an intuitive visual map, allowing the Human Collaborator to immediately understand the full "blast radius"
+  and risk profile of any proposed code change.
 
 ## III. Visual Concept & Layout
 
@@ -88,13 +86,13 @@ dependency type.
 
 1. **Initiation:** The user executes `CMD: SIMULATE_IMPACT --format:visual`.
 2. **Data Consumption:** The Interactive Code View is launched, consuming the resulting JSON data (e.g.,
-`SIMP-RESULT-001_CSE_Refactor_Impact.json`).
+   `SIMP-RESULT-001_CSE_Refactor_Impact.json`).
 3. **Rendering & Styling:**
    - The view uses a graph library to render the `nodes` and `edges` from the JSON.
    - Nodes are color-coded based on the `risk` property (e.g., CRITICAL = red, HIGH = orange, MEDIUM = yellow).
    - Edges are styled based on the `type` property (e.g., `conceptual` = dashed line, `code` = solid line).
 4. **Inspection:** Hovering over an edge displays the `label` (e.g., "TRIGGERS") and its `Synergy Description` from the
-OSLM.
+   OSLM.
 5. **Drill-Down:** Clicking on a node navigates the user directly to that artifact's source file within the PPL.
 
 ## **Actionable Prompt Packet**

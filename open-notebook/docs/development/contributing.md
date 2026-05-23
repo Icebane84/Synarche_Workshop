@@ -9,6 +9,7 @@
 ---
 
 # contributing.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CONTRIBUTING-001` | The Sovereign ID. |
-| **Official Name** | `contributing.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CONTRIBUTING-001`       | The Sovereign ID. |
+| **Official Name**   | `contributing.md`             | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Contributing to Open Notebook
 
@@ -86,6 +87,7 @@ We use a **feature branch workflow**:
 ### Making Changes
 
 1. **Create a feature branch**:
+
 ```bash
 git checkout -b feature/amazing-new-feature
 ```
@@ -93,6 +95,7 @@ git checkout -b feature/amazing-new-feature
 2. **Make your changes** following our coding standards
 
 3. **Test your changes**:
+
 ```bash
 # Run tests
 uv run pytest
@@ -105,12 +108,14 @@ uv run ruff format .
 ```
 
 4. **Commit your changes**:
+
 ```bash
 git add .
 git commit -m "feat: add amazing new feature"
 ```
 
 5. **Push and create PR**:
+
 ```bash
 git push origin feature/amazing-new-feature
 # Then create a Pull Request on GitHub
@@ -137,12 +142,14 @@ git push origin main
 We follow **PEP 8** with some specific guidelines:
 
 #### Code Formatting
+
 - Use **Ruff** for linting and formatting
 - Maximum line length: **88 characters**
 - Use **double quotes** for strings
 - Use **trailing commas** in multi-line structures
 
 #### Type Hints
+
 Always use type hints for function parameters and return values:
 
 ```python
@@ -158,6 +165,7 @@ async def process_content(
 ```
 
 #### Async/Await Patterns
+
 Use async/await consistently:
 
 ```python
@@ -174,6 +182,7 @@ def fetch_data(url: str) -> Dict[str, Any]:
 ```
 
 #### Error Handling
+
 Use structured error handling with custom exceptions:
 
 ```python
@@ -183,7 +192,7 @@ async def create_notebook(name: str, description: str) -> Notebook:
     """Create a new notebook with validation."""
     if not name.strip():
         raise InvalidInputError("Notebook name cannot be empty")
-    
+
     try:
         notebook = Notebook(name=name, description=description)
         await notebook.save()
@@ -193,6 +202,7 @@ async def create_notebook(name: str, description: str) -> Notebook:
 ```
 
 #### Documentation
+
 Use **Google-style docstrings**:
 
 ```python
@@ -202,15 +212,15 @@ async def vector_search(
     minimum_score: float = 0.2
 ) -> List[SearchResult]:
     """Perform vector search across embedded content.
-    
+
     Args:
         query: Search query string
         limit: Maximum number of results to return
         minimum_score: Minimum similarity score for results
-        
+
     Returns:
         List of search results sorted by relevance score
-        
+
     Raises:
         InvalidInputError: If query is empty or limit is invalid
         DatabaseOperationError: If search operation fails
@@ -220,6 +230,7 @@ async def vector_search(
 ### FastAPI Standards
 
 #### Router Organization
+
 Organize endpoints by domain:
 
 ```python
@@ -238,6 +249,7 @@ async def get_notebooks(
 ```
 
 #### Request/Response Models
+
 Use Pydantic models for validation:
 
 ```python
@@ -258,6 +270,7 @@ class NotebookResponse(BaseModel):
 ```
 
 #### Error Handling
+
 Use consistent error responses:
 
 ```python
@@ -277,6 +290,7 @@ except DatabaseOperationError as e:
 ### Database Standards
 
 #### SurrealDB Patterns
+
 Use the repository pattern consistently:
 
 ```python
@@ -302,6 +316,7 @@ async def update_notebook(notebook_id: str, data: Dict[str, Any]) -> Dict[str, A
 ```
 
 #### Schema Management
+
 Use migrations for schema changes:
 
 ```surrealql
@@ -329,7 +344,7 @@ async def test_create_notebook():
     """Test notebook creation."""
     notebook = Notebook(name="Test Notebook", description="Test description")
     await notebook.save()
-    
+
     assert notebook.id is not None
     assert notebook.name == "Test Notebook"
     assert notebook.created is not None
@@ -398,6 +413,7 @@ async def api_client():
 ### Code Documentation
 
 #### Module Docstrings
+
 ```python
 """
 Notebook domain model and operations.
@@ -408,14 +424,15 @@ managing research notebooks within the Open Notebook system.
 ```
 
 #### Class Docstrings
+
 ```python
 class Notebook(BaseModel):
     """A research notebook containing sources, notes, and chat sessions.
-    
+
     Notebooks are the primary organizational unit in Open Notebook, allowing
     users to group related research materials and maintain separate contexts
     for different projects.
-    
+
     Attributes:
         name: The notebook's display name
         description: Optional description of the notebook's purpose
@@ -426,26 +443,27 @@ class Notebook(BaseModel):
 ```
 
 #### Function Docstrings
-```python
+
+````python
 async def create_notebook(
     name: str,
     description: str = "",
     user_id: Optional[str] = None
 ) -> Notebook:
     """Create a new notebook with validation.
-    
+
     Args:
         name: The notebook name (required, non-empty)
         description: Optional notebook description
         user_id: Optional user ID for multi-user deployments
-        
+
     Returns:
         The created notebook instance
-        
+
     Raises:
         InvalidInputError: If name is empty or invalid
         DatabaseOperationError: If creation fails
-        
+
     Example:
         ```python
         notebook = await create_notebook(
@@ -454,7 +472,7 @@ async def create_notebook(
         )
         ```
     """
-```
+````
 
 ### API Documentation
 
@@ -559,6 +577,7 @@ uv run pre-commit install
 ### Adding a New API Endpoint
 
 1. **Create the endpoint** in the appropriate router:
+
 ```python
 # api/routers/notebooks.py
 @router.post("/notebooks/{notebook_id}/archive")
@@ -568,6 +587,7 @@ async def archive_notebook(notebook_id: str):
 ```
 
 2. **Add request/response models** if needed:
+
 ```python
 # api/models.py
 class ArchiveRequest(BaseModel):
@@ -575,6 +595,7 @@ class ArchiveRequest(BaseModel):
 ```
 
 3. **Update the domain model** if needed:
+
 ```python
 # open_notebook/domain/notebook.py
 async def archive(self, reason: Optional[str] = None) -> None:
@@ -583,6 +604,7 @@ async def archive(self, reason: Optional[str] = None) -> None:
 ```
 
 4. **Write tests**:
+
 ```python
 # tests/test_notebooks.py
 @pytest.mark.asyncio
@@ -596,17 +618,19 @@ async def test_archive_notebook():
 ### Adding a New Domain Model
 
 1. **Create the model**:
+
 ```python
 # open_notebook/domain/new_model.py
 from open_notebook.domain.base import BaseModel
 
 class NewModel(BaseModel):
     """New domain model."""
-    
+
     # Fields and methods
 ```
 
 2. **Create database migration**:
+
 ```surrealql
 -- migrations/N.surrealql
 DEFINE TABLE IF NOT EXISTS new_model SCHEMAFULL;
@@ -614,6 +638,7 @@ DEFINE TABLE IF NOT EXISTS new_model SCHEMAFULL;
 ```
 
 3. **Add API endpoints**:
+
 ```python
 # api/routers/new_model.py
 # Router implementation
@@ -624,6 +649,7 @@ DEFINE TABLE IF NOT EXISTS new_model SCHEMAFULL;
 ### Adding AI Processing Features
 
 1. **Create the graph**:
+
 ```python
 # open_notebook/graphs/new_feature.py
 from langgraph import create_graph
@@ -635,12 +661,14 @@ async def new_feature_graph(state: NewFeatureState):
 ```
 
 2. **Add service layer**:
+
 ```python
 # api/new_feature_service.py
 # Service implementation
 ```
 
 3. **Create API endpoints**:
+
 ```python
 # api/routers/new_feature.py
 # Router implementation
@@ -760,7 +788,6 @@ For questions about this guide or contributing in general, please reach out on [
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
-
 
 - [[code-standards]]
 

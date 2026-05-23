@@ -15,6 +15,27 @@
 # Enable strict type error diagnostics by default
 displayTypeErrors = "force-on"
 
-# Project Roots
-source-directories = ["axion-core/src"]
-search-path = ["axion-core/src", "axion-core/src/logic", "axion-core/tools"]
+[tool.pyrefly.typeChecking]
+reportMissingImports = true
+reportUnknownMethodOrAttribute = "error"
+reportUnknownParameter = "error"
+disallowAny = true
+disallowUntypedDef = true
+strictReturnAnnotation = true
+
+[tool.pyrefly.formatting]
+lineEnding = "lf"
+indentWidth = 4
+useTabs = false
+useSpaces = true
+maxLineLength = 120
+
+# Path Resolution Configuration
+[tool.pyrefly.paths]
+source-directories = ["src"]                # Core source roots
+search-path = ["src", "src/logic", "tools"] # Import resolution paths
+root = "../"
+
+# External dependencies
+[tool.pyrefly.paths.external-dependencies]
+"open-notebook" = "../open-notebook/src" # Symlink to open-notebook

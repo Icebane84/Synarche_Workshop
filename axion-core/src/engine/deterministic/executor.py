@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -17,33 +16,33 @@
 > Ethos: Orchestration through precise synchronization.
 """
 
-from typing import Dict, Any, Union
-from .scheduler import DeterministicScheduler
-from .parallel_scheduler import ParallelScheduler
-from .state import StateManager
+from typing import Any, Dict, Union
+
 from .clock import FixedClock
+from .parallel_scheduler import ParallelScheduler
+from .scheduler import DeterministicScheduler
+from .state import StateManager
 
 
 class Executor:
-    """
-    Coordinates the execution of a frame by linking the scheduler, state, and clock.
+    """Coordinates the execution of a frame by linking the scheduler, state, and clock.
     The Executor is responsible for the discrete simulation step logic, managing
     state snapshots, and handling temporal shifts (rollback).
     """
 
     def __init__(
-        self, 
-        scheduler: Union[DeterministicScheduler, ParallelScheduler], 
-        state_manager: StateManager, 
-        clock: FixedClock
+        self,
+        scheduler: Union[DeterministicScheduler, ParallelScheduler],
+        state_manager: StateManager,
+        clock: FixedClock,
     ) -> None:
-        """
-        Initializes the executor with required simulation components.
-        
+        """Initializes the executor with required simulation components.
+
         Args:
             scheduler (Union[DeterministicScheduler, ParallelScheduler]): The task scheduler.
             state_manager (StateManager): The system for capturing/restoring state snapshots.
             clock (FixedClock): The deterministic time reference.
+
         """
         self.scheduler = scheduler
         self.state_manager = state_manager
@@ -52,8 +51,7 @@ class Executor:
         self.state: Dict[str, Any] = {}
 
     def step(self) -> None:
-        """
-        Advances the simulation by one discrete frame.
+        """Advances the simulation by one discrete frame.
         Captures a state snapshot, executes the task graph, and increments the clock.
         """
         # 1. Capture state snapshot BEFORE execution
@@ -64,7 +62,7 @@ class Executor:
         context: Dict[str, Any] = {
             "state": self.state,
             "dt": self.clock.dt,
-            "frame": self.clock.frame
+            "frame": self.clock.frame,
         }
 
         # 3. Reset and execute the task graph
@@ -75,11 +73,11 @@ class Executor:
         self.clock.tick()
 
     def rollback(self, target_frame: int) -> None:
-        """
-        Reverts the executor state and clock to a specific previous frame.
-        
+        """Reverts the executor state and clock to a specific previous frame.
+
         Args:
             target_frame (int): The destination frame ID for the rollback operation.
+
         """
         if target_frame >= self.clock.frame:
             return

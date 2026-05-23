@@ -2,11 +2,7 @@
   "version": "0.2",
   "language": "en",
   "caseSensitive": false,
-  "ignorePaths": [
-    "node_modules/",
-    "package.json",
-    "package-lock.json"
-  ],
+  "ignorePaths": ["node_modules/", "package.json", "package-lock.json"],
   "words": [
     "ADMP",
     "AISTF",

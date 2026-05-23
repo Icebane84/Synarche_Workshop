@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -26,12 +25,12 @@ from pages.stream_app.consts import source_context_icons
 
 
 @st.dialog("Source", width="large")
-def source_panel_dialog(source_id, notebook_id=None):
+def source_panel_dialog(source_id, notebook_id=None) -> None:
     source_panel(source_id, notebook_id=notebook_id, modal=True)
 
 
 @st.dialog("Add a Source", width="large")
-def add_source(notebook_id):
+def add_source(notebook_id) -> None:
     default_models = models_service.get_default_models()
     if not default_models.default_speech_to_text_model:
         st.warning(
@@ -155,13 +154,13 @@ def add_source(notebook_id):
         st.rerun()
 
 
-def source_card(source, notebook_id):
+def source_card(source, notebook_id) -> None:
     # todo: more descriptive icons
     icon = "🔗"
 
     with st.container(border=True):
         title = (source.title if source.title else "No Title").strip()
-        st.markdown((f"{icon}**{title}**"))
+        st.markdown(f"{icon}**{title}**")
         context_state = st.selectbox(
             "Context",
             label_visibility="collapsed",
@@ -180,7 +179,7 @@ def source_card(source, notebook_id):
     st.session_state[notebook_id]["context_config"][source.id] = context_state
 
 
-def source_list_item(source_id, score=None):
+def source_list_item(source_id, score=None) -> None:
     source_with_metadata = sources_service.get_source(source_id)
     source = source_with_metadata.source
     if not source:

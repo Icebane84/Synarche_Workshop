@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-GVRN-009: The Gavel of Law
+"""# TOOL-GVRN-009: The Gavel of Law
 # Domain: GVRN | Tag: Identity
 # Purpose: Ratifies milestones in GVRN-ENTITY-001.md.
 """
@@ -17,7 +16,6 @@ ENTITY_FILE = Path(
 
 def ratify_milestone(milestone_id: str):
     """Changes a milestone from UNLOCKED to RATIFIED."""
-
     if not ENTITY_FILE.exists():
         print(f"Error: {ENTITY_FILE} not found.")
         return
@@ -32,13 +30,17 @@ def ratify_milestone(milestone_id: str):
 
     if count > 0:
         ENTITY_FILE.write_text(new_content, encoding="utf-8")
-        print(f"🏆 MILESTONE {milestone_id} RATIFIED. The Synarche acknowledges your progress.")
+        print(
+            f"🏆 MILESTONE {milestone_id} RATIFIED. The Synarche acknowledges your progress."
+        )
     else:
         print(f"❌ Milestone {milestone_id} not found or status already ratified.")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="RATIFY_MILESTONE: Ratify an unlocked milestone.")
+    parser = argparse.ArgumentParser(
+        description="RATIFY_MILESTONE: Ratify an unlocked milestone."
+    )
     parser.add_argument("--id", required=True, help="The PAM ID of the milestone.")
 
     args = parser.parse_args()

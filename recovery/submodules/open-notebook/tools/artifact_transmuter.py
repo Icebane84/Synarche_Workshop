@@ -1,4 +1,3 @@
-import argparse
 import os
 import re
 from pathlib import Path
@@ -51,7 +50,9 @@ class ArtifactTransmuter:
                 f"- 🚩 Version: {self.clean_text(ver_match.group(1))}"
             )
         if class_match:
-            identity_nodes.append(f"- ⚖️ Class: {self.clean_text(class_match.group(1))}")
+            identity_nodes.append(
+                f"- ⚖️ Class: {self.clean_text(class_match.group(1))}"
+            )
         if status_match:
             identity_nodes.append(
                 f"- 🔋 Status: {self.clean_text(status_match.group(1))}"
@@ -136,7 +137,7 @@ class ArtifactTransmuter:
                 x in line
                 for x in ["Block A", "Block D", "Identification Lock", "Synergy"]
             ):
-                level = line.count("#")
+                line.count("#")
                 text = self.clean_text(line.replace("#", ""))
                 # Nicemind formatting: Just text. Hierarchy is handled by parent grouping later.
                 # For this parser, we will treat H2/H3 as generic content nodes

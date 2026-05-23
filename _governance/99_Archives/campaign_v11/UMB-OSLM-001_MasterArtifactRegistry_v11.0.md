@@ -1,4 +1,5 @@
 # UMB-OSLM-001_MasterArtifactRegistry_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-OSLM-001-MASTERARTIFACTREGISTRY-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-OSLM-001_MasterArtifactRegistry_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-OSLM-001-MASTERARTIFACTREGISTRY-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-OSLM-001_MasterArtifactRegistry_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-OSLM-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Registry` |
-| **Classification** | `Star` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-27` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Registry, Index, Truth` |
+
+| Key                | Value                    |
+| :----------------- | :----------------------- |
+| **Module ID**      | `UMB-OSLM-001`           |
+| **Version**        | `v11.0`                  |
+| **Evolution**      | **Cognitive Ascension**  |
+| **Status**         | `ACTIVE`                 |
+| **Type**           | `Registry`               |
+| **Classification** | `Star`                   |
+| **Authors**        | `System`                 |
+| **Created**        | `2025-10-01`             |
+| **Updated**        | `2026-01-27`             |
+| **Authority**      | `CODEX-001`              |
+| **Tags**           | `Registry, Index, Truth` |
+
 ---
 
 # Master Artifact Registry (The Library)
@@ -96,7 +100,7 @@
 | `AOP-TRP-001`                                                  | [Template Refactoring Protocol](../2_Protocols/AOP-TRP-001_TemplateRefactoringProtocol_v11.0.md)                                                                                                              | `v11.0` | `ACTIVE` |
 | `AOP-VIS-ICOM-001`                                             | [The Gravitational Lensing Protocol](../2_Protocols/AOP-VIS-ICOM-001_TheGravitationalLensingProtocol_v11.0.md)                                                                                                | `v11.0` | `ACTIVE` |
 | `AOP-VSI-001`                                                  | [AOP-VSI-001: Validate Structural Integrity Protocol](../2_Protocols/AOP-VSI-001_AOP-VSI-001ValidateStructuralIntegrityProtocol_v11.0.md)                                                                     | `v11.0` | `ACTIVE` |
-| `UMB-ARCH-OATH-001`                                            | [UMB-ARCH-OATH-001: Oathbringer System Architecture](../4_Blueprints/UMB-ARCH-OATH-001_OathbringerSystemArchitecture_v11.0.md) | `v11.0` | `ACTIVE` |
+| `UMB-ARCH-OATH-001`                                            | [UMB-ARCH-OATH-001: Oathbringer System Architecture](../4_Blueprints/UMB-ARCH-OATH-001_OathbringerSystemArchitecture_v11.0.md)                                                                                | `v11.0` | `ACTIVE` |
 | `UMB-ARCH-PRESTIGE-001`                                        | [UMB-ARCH-PRESTIGE-001: Phoenix Prestige Architecture](../4_Blueprints/UMB-ARCH-PRESTIGE-001_PhoenixPrestigeArchitecture_v11.0.md)                                                                            | `v11.0` | `ACTIVE` |
 | `CBM-FORGE-001`                                                | [CBM-FORGE-001_The_Forge_Engine (v10.0)](../1_Modules/CBM-FORGE-001_CBM-FORGE-001_The_Forge_Engine_v11.0.md)                                                                                                  | `v11.0` | `ACTIVE` |
 | `CMD-AXION-001`                                                | [CMD-AXION-001](../3_Commands/CMD-AXION-001_CMD-AXION-001_v11.0.md)                                                                                                                                           | `v11.0` | `ACTIVE` |
@@ -200,10 +204,10 @@
 
 ## V. Experience Logs
 
-| Module ID | Title | Version | Status |
-| :-------- | :---- | :------ | :----- |
-| `SELT-CSL-2026.01.27` | [Supabase Refactor & Systemic Alignment](../5_Logs/CSL/SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md) | `v1.0` | `ACTIVE` |
-| `SELT-CSL-2026.01.27` | [Refactor Execution & Metadata Canonization](../5_Logs/CSL/SELT-CSL-2026.01.27_RefactorExecution_v1.0.md) | `v1.0` | `ACTIVE` |
+| Module ID             | Title                                                                                                     | Version | Status   |
+| :-------------------- | :-------------------------------------------------------------------------------------------------------- | :------ | :------- |
+| `SELT-CSL-2026.01.27` | [Supabase Refactor & Systemic Alignment](../5_Logs/CSL/SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md)      | `v1.0`  | `ACTIVE` |
+| `SELT-CSL-2026.01.27` | [Refactor Execution & Metadata Canonization](../5_Logs/CSL/SELT-CSL-2026.01.27_RefactorExecution_v1.0.md) | `v1.0`  | `ACTIVE` |
 
 ## VI. Unclassified / Reference
 

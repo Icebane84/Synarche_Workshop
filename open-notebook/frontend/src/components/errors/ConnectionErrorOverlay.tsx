@@ -1,29 +1,29 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Card } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { useState } from "react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '@/components/ui/collapsible'
-import { Database, Server, ChevronDown, ExternalLink } from 'lucide-react'
-import { ConnectionError } from '@/lib/types/config'
-import { useTranslation } from '@/lib/hooks/use-translation'
+} from "@/components/ui/collapsible";
+import { Database, Server, ChevronDown, ExternalLink } from "lucide-react";
+import { ConnectionError } from "@/lib/types/config";
+import { useTranslation } from "@/lib/hooks/use-translation";
 
 interface ConnectionErrorOverlayProps {
-  error: ConnectionError
-  onRetry: () => void
+  error: ConnectionError;
+  onRetry: () => void;
 }
 
 export function ConnectionErrorOverlay({
   error,
   onRetry,
 }: ConnectionErrorOverlayProps) {
-  const { t } = useTranslation()
-  const [showDetails, setShowDetails] = useState(false)
-  const isApiError = error.type === 'api-unreachable'
+  const { t } = useTranslation();
+  const [showDetails, setShowDetails] = useState(false);
+  const isApiError = error.type === "api-unreachable";
 
   return (
     <div
@@ -38,7 +38,10 @@ export function ConnectionErrorOverlay({
           {isApiError ? (
             <Server className="w-12 h-12 text-destructive" aria-hidden="true" />
           ) : (
-            <Database className="w-12 h-12 text-destructive" aria-hidden="true" />
+            <Database
+              className="w-12 h-12 text-destructive"
+              aria-hidden="true"
+            />
           )}
           <div>
             <h1 className="text-2xl font-bold" id="error-title">
@@ -56,7 +59,9 @@ export function ConnectionErrorOverlay({
 
         {/* Troubleshooting instructions */}
         <div className="space-y-4 border-l-4 border-primary pl-4">
-          <h2 className="font-semibold">{t.connectionErrors.troubleshooting}</h2>
+          <h2 className="font-semibold">
+            {t.connectionErrors.troubleshooting}
+          </h2>
           <ul className="list-disc list-inside space-y-2 text-sm">
             {isApiError ? (
               <>
@@ -73,7 +78,9 @@ export function ConnectionErrorOverlay({
             )}
           </ul>
 
-          <h2 className="font-semibold mt-4">{t.connectionErrors.quickFixes}</h2>
+          <h2 className="font-semibold mt-4">
+            {t.connectionErrors.quickFixes}
+          </h2>
           {isApiError ? (
             <div className="space-y-2 text-sm bg-muted p-4 rounded">
               <p className="font-medium">{t.connectionErrors.setApiUrl}</p>
@@ -82,8 +89,7 @@ export function ConnectionErrorOverlay({
                 <br />
                 docker run -e API_URL=http://your-host:5055 ...
                 <br />
-                <br />
-                # {t.connectionErrors.localDevLabel}:
+                <br /># {t.connectionErrors.localDevLabel}:
                 <br />
                 API_URL=http://localhost:5055
               </code>
@@ -120,11 +126,15 @@ export function ConnectionErrorOverlay({
         {error.details && (
           <Collapsible open={showDetails} onOpenChange={setShowDetails}>
             <CollapsibleTrigger asChild>
-              <Button variant="ghost" size="sm" className="w-full justify-between">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="w-full justify-between"
+              >
                 <span>{t.connectionErrors.showTechnical}</span>
                 <ChevronDown
                   className={`w-4 h-4 transition-transform ${
-                    showDetails ? 'rotate-180' : ''
+                    showDetails ? "rotate-180" : ""
                   }`}
                 />
               </Button>
@@ -133,17 +143,19 @@ export function ConnectionErrorOverlay({
               <div className="space-y-2 text-sm bg-muted p-4 rounded font-mono">
                 {error.details.attemptedUrl && (
                   <div>
-                    <strong>{t.connectionErrors.attemptedUrl}:</strong> {error.details.attemptedUrl}
+                    <strong>{t.connectionErrors.attemptedUrl}:</strong>{" "}
+                    {error.details.attemptedUrl}
                   </div>
                 )}
                 {error.details.message && (
                   <div>
-                    <strong>{t.connectionErrors.message}:</strong> {error.details.message}
+                    <strong>{t.connectionErrors.message}:</strong>{" "}
+                    {error.details.message}
                   </div>
                 )}
                 {error.details.technicalMessage && (
                   <div>
-                    <strong>{t.connectionErrors.technicalDetails}:</strong>{' '}
+                    <strong>{t.connectionErrors.technicalDetails}:</strong>{" "}
                     {error.details.technicalMessage}
                   </div>
                 )}
@@ -171,5 +183,5 @@ export function ConnectionErrorOverlay({
         </div>
       </Card>
     </div>
-  )
+  );
 }

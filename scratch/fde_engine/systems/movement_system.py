@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -11,6 +10,7 @@
 
 **Ethos:** Absolute Determinism. Zero Logic Drift.
 """
+
 # systems/movement_system.py
 
 from dataclasses import dataclass
@@ -32,7 +32,11 @@ class MovementSystem:
     execution_index = 10
 
     def query(self, world):
-        return [arch for sig, arch in world.registry._archetypes.items() if Position in sig and Velocity in sig]
+        return [
+            arch
+            for sig, arch in world.registry._archetypes.items()
+            if Position in sig and Velocity in sig
+        ]
 
     def compute_chunk(self, world, chunk):
         delta = {"mutations": {Position: {}}}

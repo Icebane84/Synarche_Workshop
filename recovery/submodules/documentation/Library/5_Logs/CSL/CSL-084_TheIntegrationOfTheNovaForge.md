@@ -52,6 +52,6 @@
 - **Governing AOP:** [AOP-CSL-002_Synergistic Collaborative Synthesis Log Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
 - **Execution Note:** The generation of this artifact is governed by the dual-trigger mechanism. The AI generated this draft following successful execution of the transmutation; it awaits human confirmation.
 - **Prestige Milestone Achieved (Optional)**
-    - **Milestone ID:** `PM-084-INTEGRATION` (Provisional)
-    - **Milestone Title:** The Forging of the Nova Suite
-    - **Description:** Successful injection of Sovereign Headers into 12 core infrastructure artifacts, functionally merging `nova-forge` with the Axion Governance Core.
+  - **Milestone ID:** `PM-084-INTEGRATION` (Provisional)
+  - **Milestone Title:** The Forging of the Nova Suite
+  - **Description:** Successful injection of Sovereign Headers into 12 core infrastructure artifacts, functionally merging `nova-forge` with the Axion Governance Core.

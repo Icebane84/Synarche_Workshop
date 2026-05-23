@@ -12,13 +12,13 @@ from pathlib import Path
 
 
 class ArtifactTransmuter:
-    def __init__(self, source_path, output_file):
+    def __init__(self, source_path, output_file) -> None:
         self.source_path = Path(source_path)
         self.output_file = Path(output_file)
         self.buffer = []
 
-    def log(self, message):
-        print(f"[CODEX_MINT] {message}")
+    def log(self, message) -> None:
+        pass
 
     def clean_text(self, text):
         """Removes markdown bold/italic clutter for cleaner node titles."""
@@ -51,7 +51,9 @@ class ArtifactTransmuter:
                 f"- 🚩 Version: {self.clean_text(ver_match.group(1))}"
             )
         if class_match:
-            identity_nodes.append(f"- ⚖️ Class: {self.clean_text(class_match.group(1))}")
+            identity_nodes.append(
+                f"- ⚖️ Class: {self.clean_text(class_match.group(1))}"
+            )
         if status_match:
             identity_nodes.append(
                 f"- 🔋 Status: {self.clean_text(status_match.group(1))}"
@@ -144,9 +146,9 @@ class ArtifactTransmuter:
 
         return structure_nodes
 
-    def process_file(self, filepath):
+    def process_file(self, filepath) -> None:
         """Reads a file and converts it into a Mindmap Node Tree."""
-        with open(filepath, "r", encoding="utf-8") as f:
+        with open(filepath, encoding="utf-8") as f:
             content = f.read()
 
         filename = filepath.stem
@@ -190,7 +192,7 @@ class ArtifactTransmuter:
         self.buffer.append("\n".join(tree))
         self.buffer.append("\n")
 
-    def execute(self):
+    def execute(self) -> None:
         if not self.source_path.exists():
             self.log(f"ERROR: Source path '{self.source_path}' not found.")
             return

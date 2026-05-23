@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -66,17 +65,16 @@ DEFAULT_TEMPLATES = {
 
 
 class ExplanationGenerator:
-    """
-    Generates user-facing explanations for the agent's responses.
+    """Generates user-facing explanations for the agent's responses.
     Translates internal cognitive states and memory retrievals into human-readable transparency blocks.
     """
 
     def __init__(self, templates: dict[str, str] | None = None) -> None:
-        """
-        Initializes the ExplanationGenerator with optional custom templates.
+        """Initializes the ExplanationGenerator with optional custom templates.
 
         Args:
             templates: A dictionary of intent-to-template string mappings.
+
         """
         self.templates: dict[str, str] = DEFAULT_TEMPLATES.copy()
         if templates:
@@ -84,14 +82,14 @@ class ExplanationGenerator:
         log.info("ExplanationGenerator (OMEGA) initialized.")
 
     def determine_query_type(self, query_analysis: dict[str, Any]) -> str:
-        """
-        Categorizes the query intent to select the appropriate explanation template.
+        """Categorizes the query intent to select the appropriate explanation template.
 
         Args:
             query_analysis: Dictionary containing processed query metadata (intent, entities, lemmas).
 
         Returns:
             The identifier string for the selected template.
+
         """
         intent = query_analysis.get("user_intent_goal", "unknown")
         entities = query_analysis.get("entities", [])
@@ -112,14 +110,14 @@ class ExplanationGenerator:
         return "factual_question"
 
     def _format_memory_citation(self, memory: dict[str, Any]) -> str:
-        """
-        Formats a single memory citation block for inclusion in the explanation.
+        """Formats a single memory citation block for inclusion in the explanation.
 
         Args:
             memory: The raw memory dictionary.
 
         Returns:
             A formatted citation string (e.g., (Resonance: CORE#123)).
+
         """
         domain = memory.get("domain", "GVRN.NULL")
         mem_id = memory.get("id", "UNK-000")
@@ -132,8 +130,7 @@ class ExplanationGenerator:
         inferred_relationship: str | None = None,
         snippet_length: int = DEFAULT_SNIPPET_LENGTH,
     ) -> str:
-        """
-        Orchestrates the generation of a complete explanation block.
+        """Orchestrates the generation of a complete explanation block.
 
         Args:
             query_analysis: Analysis of the user's query.
@@ -143,18 +140,25 @@ class ExplanationGenerator:
 
         Returns:
             The complete, formatted explanation string.
+
         """
         if not used_memories:
             return self.templates.get("no_memories", "")
 
         query_type = self.determine_query_type(query_analysis)
-        template_str = self.templates.get(query_type, self.templates["factual_question"])
+        template_str = self.templates.get(
+            query_type, self.templates["factual_question"]
+        )
 
         formatted_memory_list = []
         for mem in used_memories:
             content = mem.get("content", "")
-            content_str = json.dumps(content) if isinstance(content, dict) else str(content)
-            snippet = content_str[:snippet_length] + ("..." if len(content_str) > snippet_length else "")
+            content_str = (
+                json.dumps(content) if isinstance(content, dict) else str(content)
+            )
+            snippet = content_str[:snippet_length] + (
+                "..." if len(content_str) > snippet_length else ""
+            )
             citation = self._format_memory_citation(mem)
             formatted_memory_list.append(f"* {snippet} {citation}")
 
@@ -164,7 +168,8 @@ class ExplanationGenerator:
         format_kwargs = {
             "memories_formatted": memories_formatted,
             "memory_ids_list": memory_ids,
-            "inferred_relationship_text": inferred_relationship or "a conceptual resonance",
+            "inferred_relationship_text": inferred_relationship
+            or "a conceptual resonance",
         }
 
         try:

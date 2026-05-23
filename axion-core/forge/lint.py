@@ -24,7 +24,12 @@ def lint_python(file_path: Path) -> bool:
     print(f"  >>> Linting Python: {file_path}")
     try:
         # Check if ruff is installed
-        result = execute_safe(["ruff", "check", str(file_path)], check=False, capture_output=True, text=True)
+        result = execute_safe(
+            ["ruff", "check", str(file_path)],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
         if result.returncode == 0:
             print("  [PASS] No issues found by Ruff.")
             return True
@@ -68,7 +73,9 @@ def process_target(target: Path) -> bool:
             success &= lint_markdown(target)
     elif target.is_dir():
         for item in target.rglob("*"):
-            if item.is_file() and not any(p in item.parts for p in [".git", "node_modules", "__pycache__"]):
+            if item.is_file() and not any(
+                p in item.parts for p in [".git", "node_modules", "__pycache__"]
+            ):
                 if item.suffix == ".py":
                     success &= lint_python(item)
                 elif item.suffix == ".md":
@@ -77,7 +84,9 @@ def process_target(target: Path) -> bool:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Lint Artifact — Static Analysis Auditor")
+    parser = argparse.ArgumentParser(
+        description="Lint Artifact — Static Analysis Auditor"
+    )
     parser.add_argument("target", help="File or directory to lint")
     args = parser.parse_args()
 

@@ -18,8 +18,8 @@
 
 ### [Section Number].1 Component Mapping
 
-| Component ID | Driven By | Output | Purpose |
-| :--- | :--- | :--- | :--- |
+| Component ID | Driven By           | Output            | Purpose         |
+| :----------- | :------------------ | :---------------- | :-------------- |
 | **[Comp-A]** | `[Engine/Protocol]` | `[Artifact/Data]` | [Why it exists] |
 | **[Comp-B]** | `[Engine/Protocol]` | `[Artifact/Data]` | [Why it exists] |
 

@@ -1,5 +1,4 @@
-"""
-# TOOL-HPRI-004: The Link Scanner (Priestess's Insight)
+"""# TOOL-HPRI-004: The Link Scanner (Priestess's Insight).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -50,13 +49,14 @@ GVRN-SYNERGY-001, GOVERNS, This tool is governed by the Workshop Synergy.
 
 import logging
 import os
-import re
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
-DOCS_DIR = r"c:\Users\Chris\_Desktop_Vault\dev\rosetta-stone_-the-phoenix-protocol-(cast)\docs"
+DOCS_DIR = (
+    r"c:\Users\Chris\_Desktop_Vault\dev\rosetta-stone_-the-phoenix-protocol-(cast)\docs"
+)
 TARGETS = ["UMB-OSLM-001", "CODEX-001"]
 
 

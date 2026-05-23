@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.AAR.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.AAR.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.AAR.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.AAR.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -83,16 +78,16 @@ AISTF Refinement Plan of every protocol we create. |
 
 - Governing Module: "This artifact is governed by
 
-    [GVRN.Gov.Module](./GVRN.Gov.Module.md)." (Conceptual)
+  [GVRN.Gov.Module](./GVRN.Gov.Module.md)." (Conceptual)
 
 - Indexing Mandate:
-    - \\\[ \\\] Index in [Master Artifact Registry
+  - \\\[ \\\] Index in [Master Artifact Registry
 
-        (UMB-OSLM-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit)
+    (UMB-OSLM-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit)
 
-    - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
+  - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
 
-        (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
+    (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 
 \\\[ \\\] Execute
 [GUCA-LINK-001_KnowledgeGraphIntegrationLink](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
@@ -111,7 +106,7 @@ Governed by the
 
 - **Purpose**: To create a formal, mandatory feedback loop between real-world performance (events logged in SELT) and
 
-    our official documentation, ensuring our standards are continuously refined by practical application.
+  our official documentation, ensuring our standards are continuously refined by practical application.
 
 - **Key Concepts**: SELT, OMNI_LOG, DLRR, Change Request, Documentation Standards Governance
 

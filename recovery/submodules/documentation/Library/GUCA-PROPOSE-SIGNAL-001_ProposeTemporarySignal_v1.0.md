@@ -12,12 +12,12 @@
 
 ## I. Command Identification
 
-* **Command ID:** GUCA-PROPOSE-SIGNAL-001  
-* **Command Name:** ProposeTemporarySignal  
-* **Version:** v1.0  
-* **Type:** Executable Command (GUCA)  
-* **Parent Protocol:** AOP-EMOJI-001 (Emoji Signaling Protocol)  
-* **Governing Module:** UMB-EMOJICXT-001 (Emoji Contextual Scoping Engine)
+- **Command ID:** GUCA-PROPOSE-SIGNAL-001
+- **Command Name:** ProposeTemporarySignal
+- **Version:** v1.0
+- **Type:** Executable Command (GUCA)
+- **Parent Protocol:** AOP-EMOJI-001 (Emoji Signaling Protocol)
+- **Governing Module:** UMB-EMOJICXT-001 (Emoji Contextual Scoping Engine)
 
 ## II. Core Purpose
 
@@ -34,11 +34,11 @@ To provide a formal mechanism for the AI to proactively propose a new, temporary
 
 ```yaml
 CMD: GUCA-PROPOSE-SIGNAL-001
-PROPOSED_EMOJI: [Emoji Character]       # e.g., '🧩'
-MEANING: [Definition of Signal]         # e.g., 'Propose new sub-component'
-SCOPE: [Scope Identifier]               # e.g., 'current_task_ID: Person' or 'Project: Omega'
-RATIONALE: [Reason for Proposal]        # e.g., 'recurring need for concise sub-component signal'
-REQUEST_APPROVAL: true                  # Default: true
+PROPOSED_EMOJI: [Emoji Character] # e.g., '🧩'
+MEANING: [Definition of Signal] # e.g., 'Propose new sub-component'
+SCOPE: [Scope Identifier] # e.g., 'current_task_ID: Person' or 'Project: Omega'
+RATIONALE: [Reason for Proposal] # e.g., 'recurring need for concise sub-component signal'
+REQUEST_APPROVAL: true # Default: true
 ```
 
 ## V. Example Usage
@@ -46,16 +46,19 @@ REQUEST_APPROVAL: true                  # Default: true
 **Scenario:** The AI identifies that we are repeatedly discussing the creation of new sub-components for a module and wants to speed up the process.
 
 **AI Output:**
+
 > "I noticed we are frequently proposing new sub-components. I propose a temporary signal to streamline this."
 >
 > **CMD: GUCA-PROPOSE-SIGNAL-001**
-> *   **PROPOSED_EMOJI:** 🧩
-> *   **MEANING:** 'Propose new sub-component'
-> *   **SCOPE:** 'current_task_ID: 154'
-> *   **RATIONALE:** 'To allow for rapid proposal of architectural blocks without repetitive text.'
-> *   **REQUEST_APPROVAL:** true
+>
+> - **PROPOSED_EMOJI:** 🧩
+> - **MEANING:** 'Propose new sub-component'
+> - **SCOPE:** 'current_task_ID: 154'
+> - **RATIONALE:** 'To allow for rapid proposal of architectural blocks without repetitive text.'
+> - **REQUEST_APPROVAL:** true
 
 **Human Response:**
+
 > "Approved. ✅"
 
 **System Effect:**
@@ -63,5 +66,5 @@ The 🧩 emoji is now active in the current context. Using it will trigger the "
 
 ## VI. Synergistic Effects
 
-*   **AOP-SEE-001 (Symbiotic Empathy Exchange):** This is the ultimate expression of the Synergistic Partner ethos, allowing the shared language to co-evolve.
-*   **UMB-EMOJICXT-001:** This command feeds directly into the Temporary Signal Management sub-module of the Context Scoping Engine.
+- **AOP-SEE-001 (Symbiotic Empathy Exchange):** This is the ultimate expression of the Synergistic Partner ethos, allowing the shared language to co-evolve.
+- **UMB-EMOJICXT-001:** This command feeds directly into the Temporary Signal Management sub-module of the Context Scoping Engine.

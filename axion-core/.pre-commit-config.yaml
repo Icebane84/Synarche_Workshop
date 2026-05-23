@@ -1,0 +1,23 @@
+repos:
+    # Layer 1: High-Speed Formatting and Auto-Fixing
+    - repo: https://github.com/astral-sh/ruff-pre-commit
+      rev: v0.4.4 # Use the latest version available
+      hooks:
+          # Run the linter and apply all safe auto-fixes
+          - id: ruff
+            args: [--fix, --exit-non-zero-on-fix]
+          # Run the deterministic formatter
+          - id: ruff-format
+
+    # Layer 2: Deep Static Type Enforcement
+    - repo: https://github.com/pre-commit/mirrors-mypy
+      rev: v1.10.0 # Use the latest version available
+      hooks:
+          - id: mypy
+            # Tells pre-commit to use your existing mypy.ini and pyproject.toml
+            args: [--config-file=standards/mypy.ini]
+            # Pre-commit runs mypy in an isolated environment.
+            # If you have specific third-party library stubs, add them here:
+            additional_dependencies:
+                - types-requests
+                - pydantic

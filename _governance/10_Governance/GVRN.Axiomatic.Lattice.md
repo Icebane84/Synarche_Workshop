@@ -9,6 +9,7 @@
 ---
 
 # GVRN.Axiomatic.Lattice.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,17 +22,17 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Axiomatic.Lattice` | The Sovereign ID. |
-| **Official Name** | `GVRN.Axiomatic.Lattice.md` | The Filename. |
-| **Legacy ID** | `UMB-LATTICE-001` | The Transmuted ID. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[STAR]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[CANONIZED]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description        |
+| :------------------ | :---------------------------- | :----------------- |
+| **Artifact ID**     | `GVRN.Axiomatic.Lattice`      | The Sovereign ID.  |
+| **Official Name**   | `GVRN.Axiomatic.Lattice.md`   | The Filename.      |
+| **Legacy ID**       | `UMB-LATTICE-001`             | The Transmuted ID. |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.      |
+| **Domain**          | `GVRN`                        | The Subject.       |
+| **Celestial Class** | `[STAR]`                      | The Weight.        |
+| **Evolution**       | `Omega Ascension`             | The Maturity.      |
+| **Status**          | `[CANONIZED]`                 | The Lifecycle.     |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.       |
 
 ---
 
@@ -39,8 +40,8 @@
 
 > **"Geometry is the silence of Law."**
 
-*   **The Mandate**: The Axiomatic Lattice (PAL) eliminates "Protocol Bloat" by synthesizing fragmented standards into three distinct tracks. It is the invisible geometry that holds the Knowledge Graph together.
-*   **The Law**: Structure must successfully balance rigidity (integrity) and fluidity (growth).
+- **The Mandate**: The Axiomatic Lattice (PAL) eliminates "Protocol Bloat" by synthesizing fragmented standards into three distinct tracks. It is the invisible geometry that holds the Knowledge Graph together.
+- **The Law**: Structure must successfully balance rigidity (integrity) and fluidity (growth).
 
 ---
 
@@ -49,21 +50,27 @@
 The PAL synthesizes governance into three distinct tracks.
 
 #### **Track 1: Structural Integrity (The Crystal Frame)**
+
 Defines the immutable laws of geometry and nomenclature.
-*   **Relational Naming Convention (RNC)**: Enforced by `GVRN.ID.Standard`.
-*   **Omega Template (SGM-V13)**: The Block A-F structure enforced by `GVRN.Protocol.Scaffolding`.
-*   **Markdown Physics**: Strict H-Hierarchy and indentation rules enforced by `GVRN.Protocol.Presentation`.
+
+- **Relational Naming Convention (RNC)**: Enforced by `GVRN.ID.Standard`.
+- **Omega Template (SGM-V13)**: The Block A-F structure enforced by `GVRN.Protocol.Scaffolding`.
+- **Markdown Physics**: Strict H-Hierarchy and indentation rules enforced by `GVRN.Protocol.Presentation`.
 
 #### **Track 2: Semantic Resonance (The Liquid Weave)**
+
 Governs the meaning and connectivity of information.
-*   **Bidirectional Enforcement**: Every `LINK` edge must be reciprocated.
-*   **Synergy Mapping**: Mandatory Block D (Loom Signature) to visualize edges.
-*   **Traceability**: Changes are tracked via `GVRN.Registry.Redirects`.
+
+- **Bidirectional Enforcement**: Every `LINK` edge must be reciprocated.
+- **Synergy Mapping**: Mandatory Block D (Loom Signature) to visualize edges.
+- **Traceability**: Changes are tracked via `GVRN.Registry.Redirects`.
 
 #### **Track 3: Systemic State (The Solid Core)**
+
 Ensures process integrity and Macro-System alignment.
-*   **Macro-System Assignment**: Every artifact falls into `GEODE` (Laws), `APOSTLE` (Identity), `SYNTHESIS` (Engines), or `OPERATIONAL` (Pipelines).
-*   **The Governance Gate**: Every artifact must pass the `GVRN.Sentinel.Scan` before stabilization.
+
+- **Macro-System Assignment**: Every artifact falls into `GEODE` (Laws), `APOSTLE` (Identity), `SYNTHESIS` (Engines), or `OPERATIONAL` (Pipelines).
+- **The Governance Gate**: Every artifact must pass the `GVRN.Sentinel.Scan` before stabilization.
 
 ---
 
@@ -80,8 +87,8 @@ Ensures process integrity and Macro-System alignment.
 > [!TIP]
 > Use these commands to invoke the Lattice.
 
-*   ✨ **Verify Geometry**: `CMD: AUDIT_COMPLIANCE --standard:GVRN.Axiomatic.Lattice`
-*   🔬 **Trace Edges**: `CMD: MAP_DEPENDENCIES --target "[Artifact]"`
+- ✨ **Verify Geometry**: `CMD: AUDIT_COMPLIANCE --standard:GVRN.Axiomatic.Lattice`
+- 🔬 **Trace Edges**: `CMD: MAP_DEPENDENCIES --target "[Artifact]"`
 
 ---
 

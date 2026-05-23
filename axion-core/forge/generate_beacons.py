@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""
-IDENTIFICATION: FORGE.BeaconGenerator
+"""IDENTIFICATION: FORGE.BeaconGenerator
 VERSION: v1.0.0 [OMEGA]
 STATUS: KINETIC
-TIMESTAMP: 2026-04-24
+TIMESTAMP: 2026-04-24.
 
 Automatically generates or regenerates index.ts Nexus Beacons for every
 directory under a given root. Scans directory contents to produce accurate
@@ -123,7 +122,7 @@ def generate_beacon(directory: Path, rel_path: Path, dry_run: bool = False) -> b
         for ts_file in ts_files:
             stem = Path(ts_file).stem
             export_lines.append(f"export * from './{stem}';")
-    
+
     if sub_dirs:
         for sub in sub_dirs:
             export_lines.append(f"export * from './{sub}';")
@@ -190,7 +189,9 @@ def clean_orphan_beacons(root: Path, dry_run: bool = False) -> int:
         py, ts, _ = describe_files(directory)
         if not py and not ts:
             if dry_run:
-                print(f"[DRY-RUN] Would remove orphan beacon: {beacon.relative_to(AXION_ROOT)}")
+                print(
+                    f"[DRY-RUN] Would remove orphan beacon: {beacon.relative_to(AXION_ROOT)}"
+                )
             else:
                 beacon.unlink()
                 print(f"[CLEAN] [X] Removed orphan: {beacon.relative_to(AXION_ROOT)}")
@@ -201,6 +202,7 @@ def clean_orphan_beacons(root: Path, dry_run: bool = False) -> int:
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(
@@ -230,17 +232,23 @@ def main() -> None:
         sys.exit(1)
 
     print(f"[FORGE] Scanning: {root}")
-    print(f"[FORGE] Mode: {'DRY-RUN ' if args.dry_run else ''}{'CLEAN' if args.clean else 'WRITE'}")
+    print(
+        f"[FORGE] Mode: {'DRY-RUN ' if args.dry_run else ''}{'CLEAN' if args.clean else 'WRITE'}"
+    )
     print("-" * 60)
 
     if args.clean:
         count = clean_orphan_beacons(root, dry_run=args.dry_run)
         print("-" * 60)
-        print(f"[FORGE] {'Would remove' if args.dry_run else 'Removed'} {count} orphan beacon(s).")
+        print(
+            f"[FORGE] {'Would remove' if args.dry_run else 'Removed'} {count} orphan beacon(s)."
+        )
     else:
         count = walk_and_generate(root, dry_run=args.dry_run)
         print("-" * 60)
-        print(f"[FORGE] {'Previewed' if args.dry_run else 'Generated'} {count} beacon(s).")
+        print(
+            f"[FORGE] {'Previewed' if args.dry_run else 'Generated'} {count} beacon(s)."
+        )
 
 
 if __name__ == "__main__":

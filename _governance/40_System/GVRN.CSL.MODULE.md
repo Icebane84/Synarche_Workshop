@@ -1,4 +1,5 @@
 # UMB-CSL-MODULE-001_CollaborativeSynthesisLog_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.CSL.MODULE` | The Sovereign ID. |
-| **Official Name** | `UMB-CSL-MODULE-001_CollaborativeSynthesisLog_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                  | Description       |
+| :------------------ | :----------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.CSL.MODULE`                                      | The Sovereign ID. |
+| **Official Name**   | `UMB-CSL-MODULE-001_CollaborativeSynthesisLog_v1.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                      | The Standard.     |
+| **Domain**          | `GVRN`                                                 | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                             | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                      | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                             | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                          | The Network.      |
 
 ---
+
 UIP: UMB-CSL-MODULE-001
 Title: Collaborative Synthesis Log (CSL) Core Module
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md)
+  Description: >
   Defines the Collaborative Synthesis Log (CSL) as the primary Meta-Cognitive Module and "Living Memory" of the Phoenix Synarche.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769338700
-Tags: 
-  - #Module
-  - #CSL
-  - #Memory
-  - #MetaCognition
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769338700
+  Tags:
+- #Module
+- #CSL
+- #Memory
+- #MetaCognition
+
 ---
 
 > [!IMPORTANT]

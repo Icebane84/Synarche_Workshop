@@ -53,6 +53,7 @@ axion-core/lib64/
 axion-core/.venv/
 axion-core/env/
 axion-core/ENV/
+axion-core/out/
 
 # --- SECTION 5: DOMAIN: THE LAW (_governance/) ---
 _governance/archive/2026-03-Pruning/
@@ -82,3 +83,5 @@ surreal.db/
 .roo
 .trae
 .windsurf
+
+.fake

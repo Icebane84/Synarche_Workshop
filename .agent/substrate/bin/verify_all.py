@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Full Verification Suite - Antigravity Kit
+"""Full Verification Suite - Antigravity Kit.
 ==========================================
 
 Runs COMPLETE validation including all checks + performance + E2E.
@@ -202,8 +201,10 @@ VERIFICATION_SUITE = [
 ]
 
 
-def run_script(name: str, script_path: Path, project_path: str, url: str | None = None) -> dict:
-    """Run validation script"""
+def run_script(
+    name: str, script_path: Path, project_path: str, url: str | None = None
+) -> dict:
+    """Run validation script."""
     if not script_path.exists():
         print_warning(f"{name}: Script not found, skipping")
         return {"name": name, "passed": True, "skipped": True, "duration": 0}
@@ -213,7 +214,10 @@ def run_script(name: str, script_path: Path, project_path: str, url: str | None 
 
     # Build command
     cmd = [sys.executable, str(script_path), project_path]
-    if url and ("lighthouse" in script_path.name.lower() or "playwright" in script_path.name.lower()):
+    if url and (
+        "lighthouse" in script_path.name.lower()
+        or "playwright" in script_path.name.lower()
+    ):
         cmd.append(url)
 
     # Run
@@ -269,7 +273,7 @@ def run_script(name: str, script_path: Path, project_path: str, url: str | None 
 
 
 def print_final_report(results: list[dict], start_time: datetime):
-    """Print comprehensive final report"""
+    """Print comprehensive final report."""
     total_duration = (datetime.now() - start_time).total_seconds()
 
     print_header("📊 FULL VERIFICATION REPORT")
@@ -323,7 +327,9 @@ def print_final_report(results: list[dict], start_time: datetime):
     # Final verdict
     if failed > 0:
         print_error(f"VERIFICATION FAILED - {failed} check(s) need attention")
-        print(f"\n{Colors.YELLOW}💡 Tip: Fix critical (security, lint) issues first{Colors.ENDC}")
+        print(
+            f"\n{Colors.YELLOW}💡 Tip: Fix critical (security, lint) issues first{Colors.ENDC}"
+        )
         return False
     else:
         print_success("✨ ALL CHECKS PASSED - Ready for deployment! ✨")
@@ -343,7 +349,9 @@ Examples:
     parser.add_argument("project", help="Project path to validate")
     parser.add_argument("--url", required=True, help="URL for performance & E2E checks")
     parser.add_argument("--no-e2e", action="store_true", help="Skip E2E tests")
-    parser.add_argument("--stop-on-fail", action="store_true", help="Stop on first failure")
+    parser.add_argument(
+        "--stop-on-fail", action="store_true", help="Stop on first failure"
+    )
 
     args = parser.parse_args()
 
@@ -383,7 +391,12 @@ Examples:
             results.append(result)
 
             # Stop on critical failure if flag set
-            if args.stop_on_fail and required and not result["passed"] and not result.get("skipped"):
+            if (
+                args.stop_on_fail
+                and required
+                and not result["passed"]
+                and not result.get("skipped")
+            ):
                 print_error(f"CRITICAL: {name} failed. Stopping verification.")
                 print_final_report(results, start_time)
                 sys.exit(1)

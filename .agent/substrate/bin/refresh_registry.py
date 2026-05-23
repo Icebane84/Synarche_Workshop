@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+from typing import Any
 
 import yaml
 
@@ -21,7 +22,7 @@ SYNC_ROOT = os.path.dirname(BASE_DIR)
 OMNI_IGNORE = "README.md"
 
 
-def normalize_path(abs_path):
+def normalize_path(abs_path: str) -> str:
     """Converts an absolute path to a root-relative modular path."""
     rel = os.path.relpath(abs_path, SYNC_ROOT).replace("\\", "/")
     return f"/{rel}" if not rel.startswith("/") else rel
@@ -37,24 +38,26 @@ def scan_skills() -> None:
         if not os.path.isdir(domain_path) or domain == OMNI_IGNORE:
             continue
 
-        registry = {
-            "domain": domain.upper(),
-            "last_updated": datetime.now().isoformat(),
-            "skills": [],
-        }
+        skills_list: list[dict[str, Any]] = []
 
         for skill_dir in os.listdir(domain_path):
             skill_path = os.path.join(domain_path, skill_dir)
             if os.path.isdir(skill_path):
                 skill_file = os.path.join(skill_path, "SKILL.md")
                 has_doc = os.path.exists(skill_file)
-                registry["skills"].append(
+                skills_list.append(
                     {
                         "id": skill_dir,
                         "path": normalize_path(skill_path),
                         "documented": has_doc,
                     }
                 )
+
+        registry = {
+            "domain": domain.upper(),
+            "last_updated": datetime.now().isoformat(),
+            "skills": skills_list,
+        }
 
         registry_file = os.path.join(domain_path, "registry.yaml")
         with open(registry_file, "w", encoding="utf-8") as f:
@@ -71,20 +74,22 @@ def scan_workflows() -> None:
         if not os.path.isdir(category_path) or category == OMNI_IGNORE:
             continue
 
-        registry = {
-            "category": category.upper(),
-            "last_updated": datetime.now().isoformat(),
-            "workflows": [],
-        }
+        workflows_list: list[dict[str, Any]] = []
 
         for wf_file in os.listdir(category_path):
             if wf_file.endswith(".md") and wf_file != OMNI_IGNORE:
-                registry["workflows"].append(
+                workflows_list.append(
                     {
                         "id": wf_file.replace(".md", ""),
                         "path": normalize_path(os.path.join(category_path, wf_file)),
                     }
                 )
+
+        registry = {
+            "category": category.upper(),
+            "last_updated": datetime.now().isoformat(),
+            "workflows": workflows_list,
+        }
 
         registry_file = os.path.join(category_path, "registry.yaml")
         with open(registry_file, "w", encoding="utf-8") as f:

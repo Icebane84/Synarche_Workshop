@@ -1,3 +1,9 @@
+---
+name: Hephaestus Cycle
+description: The Hephaestus Cycle is the mandatory three-stage cognitive loop for all high-stakes architecture and coding operations in the Synarche.
+allowed_tools: architect_gaze.ps1, sentinel_suite.ps1, muse.ps1
+---
+
 # Hephaestus Cycle (The Artificer's Loop)
 
 The Hephaestus Cycle is the mandatory three-stage cognitive loop for all high-stakes architecture and coding operations

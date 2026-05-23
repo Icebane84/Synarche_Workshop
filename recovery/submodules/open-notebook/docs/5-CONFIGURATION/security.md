@@ -9,6 +9,7 @@
 ---
 
 # security.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,30 +22,27 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-SECURITY-001` | The Sovereign ID. |
-| **Official Name** | `security.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-SECURITY-001`           | The Sovereign ID. |
+| **Official Name** | `security.md`                 | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
 ## When to Use Password Protection
 
 ### Use it for:
+
 - Public cloud deployments (PikaPods, Railway, DigitalOcean)
 - Shared network environments
 - Any deployment accessible beyond localhost
 
 ### You can skip it for:
+
 - Local development on your machine
 - Private, isolated networks
 - Single-user local setups
@@ -197,14 +195,14 @@ notebooks = client.get_notebooks()
 ### JavaScript/TypeScript
 
 ```javascript
-const API_URL = 'http://localhost:5055';
-const PASSWORD = 'your_password';
+const API_URL = "http://localhost:5055";
+const PASSWORD = "your_password";
 
 async function getNotebooks() {
   const response = await fetch(`${API_URL}/api/notebooks`, {
     headers: {
-      'Authorization': `Bearer ${PASSWORD}`
-    }
+      Authorization: `Bearer ${PASSWORD}`,
+    },
   });
   return response.json();
 }
@@ -222,7 +220,7 @@ services:
     image: lfnovo/open_notebook:v1-latest-single
     pull_policy: always
     ports:
-      - "127.0.0.1:8502:8502"  # Bind to localhost only
+      - "127.0.0.1:8502:8502" # Bind to localhost only
     environment:
       - OPEN_NOTEBOOK_PASSWORD=your_secure_password
     security_opt:
@@ -264,14 +262,14 @@ See [Reverse Proxy Configuration](reverse-proxy.md) for complete nginx/Caddy/Tra
 
 Open Notebook's password protection provides **basic access control**, not enterprise-grade security:
 
-| Feature | Status |
-|---------|--------|
-| Password transmission | Plain text (use HTTPS!) |
-| Password storage | In memory |
-| User management | Single password for all |
-| Session timeout | None (until browser close) |
-| Rate limiting | None |
-| Audit logging | None |
+| Feature               | Status                     |
+| --------------------- | -------------------------- |
+| Password transmission | Plain text (use HTTPS!)    |
+| Password storage      | In memory                  |
+| User management       | Single password for all    |
+| Session timeout       | None (until browser close) |
+| Rate limiting         | None                       |
+| Audit logging         | None                       |
 
 ### Risk Mitigation
 
@@ -288,14 +286,14 @@ Open Notebook's password protection provides **basic access control**, not enter
 
 For deployments requiring advanced security:
 
-| Need | Solution |
-|------|----------|
-| SSO/OAuth | Implement OAuth2/SAML proxy |
-| Role-based access | Custom middleware |
-| Audit logging | Log aggregation service |
-| Rate limiting | API gateway or nginx |
-| Data encryption | Encrypt volumes at rest |
-| Network segmentation | Docker networks, VPC |
+| Need                 | Solution                    |
+| -------------------- | --------------------------- |
+| SSO/OAuth            | Implement OAuth2/SAML proxy |
+| Role-based access    | Custom middleware           |
+| Audit logging        | Log aggregation service     |
+| Rate limiting        | API gateway or nginx        |
+| Data encryption      | Encrypt volumes at rest     |
+| Network segmentation | Docker networks, VPC        |
 
 ---
 

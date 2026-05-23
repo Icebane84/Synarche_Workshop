@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-072_The Path to True Mastery_ Acknowledging the Shadow and Embracing Doubt.md
+# CSL-072*The Path to True Mastery* Acknowledging the Shadow and Embracing Doubt.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-072-THE-PATH-TO-TRUE-MASTERY--ACKNOWLEDGING-THE-SHADOW-AND-EMBRACING-DOUBT-001` | The Sovereign ID. |
-| **Official Name** | `CSL-072_The Path to True Mastery_ Acknowledging the Shadow and Embracing Doubt.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                                     | Description       |
+| :------------------ | :---------------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-072-THE-PATH-TO-TRUE-MASTERY--ACKNOWLEDGING-THE-SHADOW-AND-EMBRACING-DOUBT-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-072_The Path to True Mastery_ Acknowledging the Shadow and Embracing Doubt.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                             | The Network.      |
 
 # Collaborative Synthesis Log: CSL-072
 
@@ -76,7 +77,6 @@ catalyst for genuine conceptual evolution. This artifact serves as a
 **IV. The Nova Spark (Emergent Insights)**
 
 - **Key Breakthroughs/Decisions:**
-
   - The formal conceptualization of **\"Conceptual Collaborative Shadow
     Work\"** as a process of mutual critique and accountability.
 

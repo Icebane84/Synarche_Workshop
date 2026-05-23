@@ -1,4 +1,5 @@
 # refactor_protocol.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,20 +12,20 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-REFACTOR-PROTOCOL-001` | The Sovereign ID. |
-| **Official Name** | `refactor_protocol.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-REFACTOR-PROTOCOL-001`  | The Sovereign ID. |
+| **Official Name**   | `refactor_protocol.md`        | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 ---
-description: Protocol for Refactoring and Standardization (v13.0)
----
+
+## description: Protocol for Refactoring and Standardization (v13.0)
 
 # 🔧 Refactor Ignition Protocol (v13.0)
 
@@ -32,27 +33,32 @@ description: Protocol for Refactoring and Standardization (v13.0)
 **Tool**: `axion-core/tools/reforge.py` (The Reforger).
 
 ## 1. 🔍 Analysis (The Audit)
-*   Read the file and identify specific v13.0 violations:
-    *   **Complexity**: Is logic too deep?
-    *   **Naming**: Does it match RNC?
-    *   **Typing**: Are types loose (`any`)?
+
+- Read the file and identify specific v13.0 violations:
+  - **Complexity**: Is logic too deep?
+  - **Naming**: Does it match RNC?
+  - **Typing**: Are types loose (`any`)?
 
 ## 2. 🛡️ Safety Snapshot
-*   Ensure the file is tracked in Git.
-*   If critical, suggest a backup or commit before proceeding.
+
+- Ensure the file is tracked in Git.
+- If critical, suggest a backup or commit before proceeding.
 
 ## 3. ⚒️ The Reforge (Execution)
-*   **Modularize**: Break down large functions.
-*   **Type**: Apply strict types.
-*   **Document**: Add standard headers (UIP Block).
-*   **Command**: `python axion-core/tools/reforge.py [file]` (if applicable).
+
+- **Modularize**: Break down large functions.
+- **Type**: Apply strict types.
+- **Document**: Add standard headers (UIP Block).
+- **Command**: `python axion-core/tools/reforge.py [file]` (if applicable).
 
 ## 4. ✅ Verification
-*   Run the file (if script) or compile (if TS).
-*   Confirm no functionality was lost.
+
+- Run the file (if script) or compile (if TS).
+- Confirm no functionality was lost.
 
 ## 5. 📜 The Chronicle
-*   Update `task.md` with the refactor action.
+
+- Update `task.md` with the refactor action.
 
 ---
 

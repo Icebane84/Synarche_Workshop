@@ -9,7 +9,7 @@ files = [
     r"c:\Users\Chris\Synarche_Workspace\_governance\07_Canonizer\GVRN.Canonizer.Protocol.md",
     r"c:\Users\Chris\Synarche_Workspace\_governance\07_Canonizer\GVRN.Canonizer.Core.md",
     r"c:\Users\Chris\Synarche_Workspace\_governance\07_Canonizer\GVRN.Canonizer.Index.md",
-    r"c:\Users\Chris\Synarche_Workspace\_governance\03_AvatarSuite\GVRN.AvatarSuite.Junction.md"
+    r"c:\Users\Chris\Synarche_Workspace\_governance\03_AvatarSuite\GVRN.AvatarSuite.Junction.md",
 ]
 
 for f in files:

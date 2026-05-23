@@ -1,4 +1,5 @@
 # CSL-075_Foundational_Ethos_Registry.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-075-FOUNDATIONAL-ETHOS-REGISTRY-001` | The Sovereign ID. |
-| **Official Name** | `CSL-075_Foundational_Ethos_Registry.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-075-FOUNDATIONAL-ETHOS-REGISTRY-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-075_Foundational_Ethos_Registry.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
+
 UIP: CSL-075
 Title: The Foundational Ethos Registry
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/5_Logs/CSL/CSL-075_Foundational_Ethos_Registry.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/5_Logs/CSL/CSL-075_Foundational_Ethos_Registry.md)
+  Description: >
   Records the creation of the Foundational Ethos Registry, formalizing the core philosophical principles of the Synarche.
-Version: 11.0 (Sovereign)
-Status: CANONIZED
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2025-09-04
-  - Timestamp: 1756987920
-Tags: 
-  - #CSL
-  - #Foundation
-  - #Ethos
-  - #GVRN
+  Version: 11.0 (Sovereign)
+  Status: CANONIZED
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2025-09-04
+- Timestamp: 1756987920
+  Tags:
+- #CSL
+- #Foundation
+- #Ethos
+- #GVRN
+
 ---
 
 > [!IMPORTANT]

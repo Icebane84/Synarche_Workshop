@@ -1,11 +1,11 @@
 category: VALIDATION
-last_updated: "2026-03-28T08:30:09.876216"
+last_updated: '2026-05-19T15:21:38.922131'
 workflows:
-  - id: canonize
-    path: /.agent/workflows/validation/canonize.md
-  - id: debug
-    path: /.agent/workflows/validation/debug.md
-  - id: finalize_artifact
-    path: /.agent/workflows/validation/finalize_artifact.md
-  - id: test
-    path: /.agent/workflows/validation/test.md
+- id: canonize
+  path: /.agent/workflows/validation/canonize.md
+- id: debug
+  path: /.agent/workflows/validation/debug.md
+- id: finalize_artifact
+  path: /.agent/workflows/validation/finalize_artifact.md
+- id: test
+  path: /.agent/workflows/validation/test.md

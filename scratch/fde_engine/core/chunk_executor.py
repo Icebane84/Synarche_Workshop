@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -11,6 +10,7 @@
 
 **Ethos:** Absolute Determinism. Zero Logic Drift.
 """
+
 # core/chunk_executor.py
 
 import concurrent.futures
@@ -32,7 +32,9 @@ class ChunkExecutor:
         futures = {}
         results = {}
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as pool:
+        with concurrent.futures.ThreadPoolExecutor(
+            max_workers=self.max_workers
+        ) as pool:
             for task in layer:
                 system = task.system
 

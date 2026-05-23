@@ -1,4 +1,5 @@
 # UMB-CON-001_TheConcordance_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,28 +12,29 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.CON.001` | The Sovereign ID. |
-| **Official Name** | `UMB-CON-001_TheConcordance_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                | Description       |
+| :------------------ | :----------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.CON.001`                       | The Sovereign ID. |
+| **Official Name**   | `UMB-CON-001_TheConcordance_v1.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                    | The Standard.     |
+| **Domain**          | `GVRN`                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`        | The Network.      |
 
 # Universal Identification & Provenance (UIP)
-> | **Metric** | **Value** |
-> | :--- | :--- |
-> | **Module ID** | `UMB-CON-001` |
-> | **Version** | `v1.0` |
-> | **Status** | `Proposed` |
-> | **Type** | `Module` |
-> | **Classification** | `Core` |
-> | **Authors** | `Phoenix` |
-> | **Authority** | `CODEX-001` |
-> | **Tags** | `Glossary, Lexicon, Concordance, Definitions` |
+
+> | **Metric**         | **Value**                                     |
+> | :----------------- | :-------------------------------------------- |
+> | **Module ID**      | `UMB-CON-001`                                 |
+> | **Version**        | `v1.0`                                        |
+> | **Status**         | `Proposed`                                    |
+> | **Type**           | `Module`                                      |
+> | **Classification** | `Core`                                        |
+> | **Authors**        | `Phoenix`                                     |
+> | **Authority**      | `CODEX-001`                                   |
+> | **Tags**           | `Glossary, Lexicon, Concordance, Definitions` |
 
 # UMB-CON-001: The Concordance: A Glossary of Unified Concepts & Acronyms
 
@@ -50,67 +52,76 @@ The Concordance is the canonical, single-source-of-truth lexicon for the Phoenix
 
 Each entry in The Concordance will adhere to the following structure:
 
--   **Term**: The word or acronym itself.
--   **Designation**: The classification of the term (Concept, Acronym, Protocol, Artifact, Principle, Project).
--   **Canonical Definition**: The precise, unambiguous definition.
--   **Linkages**: Cross-references to related terms within The Concordance.
+- **Term**: The word or acronym itself.
+- **Designation**: The classification of the term (Concept, Acronym, Protocol, Artifact, Principle, Project).
+- **Canonical Definition**: The precise, unambiguous definition.
+- **Linkages**: Cross-references to related terms within The Concordance.
 
 ## 4.0 Categories
 
 ### 4.1 Core Phoenix Protocol Concepts
+
 Foundational terms and principles of the Phoenix Protocol.
--   **Universal Module Blueprint (UMB)**
--   **The Concordance**
--   **Phoenix Rosetta Stone (PRS-001)**
--   **Functional Coherence**
--   **Cognitive Loom**
--   **Synarche**
--   **Episemantic Marker**
--   **Substrate**
--   **Heritable Context**
+
+- **Universal Module Blueprint (UMB)**
+- **The Concordance**
+- **Phoenix Rosetta Stone (PRS-001)**
+- **Functional Coherence**
+- **Cognitive Loom**
+- **Synarche**
+- **Episemantic Marker**
+- **Substrate**
+- **Heritable Context**
 
 ### 4.2 AI System & Operational Frameworks
+
 Terms related to the AI's internal mechanisms, training, and operational playbooks.
--   **AISTF (AI Self-Training Framework)**
--   **OGLN (Oathbringer Gemini Learning Nexus)**
--   **Dynamic Principle Weighting (DPW) System**
--   **Architectural Soul**
--   **Graph Convolutional Networks**
--   **ContextWeave Algorithm**
+
+- **AISTF (AI Self-Training Framework)**
+- **OGLN (Oathbringer Gemini Learning Nexus)**
+- **Dynamic Principle Weighting (DPW) System**
+- **Architectural Soul**
+- **Graph Convolutional Networks**
+- **ContextWeave Algorithm**
 
 ### 4.3 Documentation & Governance Standards
+
 Standards and protocols for creating and managing documentation.
--   **SELT (Standardized Experience Log)**
--   **Dynamic Transclusion**
--   **Principles of The Concordance** (Definitive Meaning, Contextual Specificity, Living Documentation)
+
+- **SELT (Standardized Experience Log)**
+- **Dynamic Transclusion**
+- **Principles of The Concordance** (Definitive Meaning, Contextual Specificity, Living Documentation)
 
 ### 4.4 Glossary Structure & Components
+
 Elements that constitute a glossary entry.
--   **Term**
--   **Designation**
--   **Canonical Definition**
--   **Linkages**
+
+- **Term**
+- **Designation**
+- **Canonical Definition**
+- **Linkages**
 
 ## 5.0 AI Input/Output Specification
 
 ### AI Input Specification
+
 When submitting a new term, use the following format:
--   **Term**: [Word/Phrase]
--   **Designation**: [Concept | Acronym | Protocol | Artifact | Principle | Project]
--   **Canonical Definition**: [Precise definition]
--   **Linkages**: [Related terms]
+
+- **Term**: [Word/Phrase]
+- **Designation**: [Concept | Acronym | Protocol | Artifact | Principle | Project]
+- **Canonical Definition**: [Precise definition]
+- **Linkages**: [Related terms]
 
 ### AI Output Format (JSON)
+
 Upon processing, entries are transformed into:
+
 ```json
 {
   "term": "[Term]",
   "designation": "[Designation]",
   "canonicalDefinition": "[Definition]",
-  "linkages": [
-    "Related Term A",
-    "Related Term B"
-  ]
+  "linkages": ["Related Term A", "Related Term B"]
 }
 ```
 
@@ -119,14 +130,16 @@ Upon processing, entries are transformed into:
 **Governing Module**: This artifact is governed by `UMB-SGM-001_StandardizedGovernanceModule`.
 
 **Indexing Mandate**:
+
 - [ ] Index in OMNI LOG Synergistic Matrix (OLSM)
 - [ ] Cross-reference in The Phoenix Rosetta Stone (PRS-001)
 - [ ] Execute `GUCA-LINK-001_KnowledgeGraphIntegrationLink`
 
 **Governed by**:
--   Phoenix Codex (`OGLN.CORE.GOVERNANCE.CODEX`)
--   Phoenix Structural Coherence Standards (`PCDS`)
--   Master Artifact Registry Protocol (`MAR`)
+
+- Phoenix Codex (`OGLN.CORE.GOVERNANCE.CODEX`)
+- Phoenix Structural Coherence Standards (`PCDS`)
+- Master Artifact Registry Protocol (`MAR`)
 
 ---
 

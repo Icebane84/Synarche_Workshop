@@ -9,6 +9,7 @@
 ---
 
 # quick-start-local.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-QUICK-START-LOCAL-001` | The Sovereign ID. |
-| **Official Name** | `quick-start-local.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-QUICK-START-LOCAL-001`  | The Sovereign ID. |
+| **Official Name** | `quick-start-local.md`        | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -42,6 +38,7 @@
 Create a new folder `open-notebook-local` and add this file:
 
 **docker-compose.yml**:
+
 ```yaml
 services:
   surrealdb:
@@ -56,8 +53,8 @@ services:
     image: lfnovo/open_notebook:v1-latest-single
     pull_policy: always
     ports:
-      - "8502:8502"  # Web UI (React frontend)
-      - "5055:5055"  # API (required!)
+      - "8502:8502" # Web UI (React frontend)
+      - "5055:5055" # API (required!)
     environment:
       # NO API KEYS NEEDED - Using Ollama (free, local)
       - OLLAMA_API_BASE=http://ollama:11434
@@ -85,7 +82,6 @@ services:
       # Optional: set GPU support if available
       - OLLAMA_NUM_GPU=0
     restart: always
-
 ```
 
 **That's it!** No API keys, no secrets, completely private.
@@ -126,6 +122,7 @@ This downloads the model (will take 1-5 minutes depending on your internet).
 ## Step 5: Access Open Notebook (instant)
 
 Open your browser:
+
 ```
 http://localhost:8502
 ```
@@ -198,6 +195,7 @@ You should see the Open Notebook interface.
 ### "ollama: command not found"
 
 Docker image name might be different:
+
 ```bash
 docker ps  # Find the Ollama container name
 docker exec <container_name> ollama pull mistral
@@ -206,6 +204,7 @@ docker exec <container_name> ollama pull mistral
 ### Model Download Stuck
 
 Check internet connection and restart:
+
 ```bash
 docker compose restart ollama
 ```
@@ -222,6 +221,7 @@ docker compose up -d
 ### Low Performance
 
 Check if GPU is available:
+
 ```bash
 # Show available GPUs
 docker exec open_notebook-ollama-1 ollama ps
@@ -288,12 +288,12 @@ docker exec open_notebook-ollama-1 ollama pull neural-chat
 
 ## Common Model Choices
 
-| Model | Speed | Quality | VRAM | Best For |
-|-------|-------|---------|------|----------|
-| **mistral** | Fast | Good | 4GB | Testing, general use |
-| **neural-chat** | Medium | Better | 6GB | Balanced, recommended |
-| **llama2** | Slow | Best | 8GB+ | Complex reasoning |
-| **phi** | Very Fast | Fair | 2GB | Minimal hardware |
+| Model           | Speed     | Quality | VRAM | Best For              |
+| --------------- | --------- | ------- | ---- | --------------------- |
+| **mistral**     | Fast      | Good    | 4GB  | Testing, general use  |
+| **neural-chat** | Medium    | Better  | 6GB  | Balanced, recommended |
+| **llama2**      | Slow      | Best    | 8GB+ | Complex reasoning     |
+| **phi**         | Very Fast | Fair    | 2GB  | Minimal hardware      |
 
 ---
 

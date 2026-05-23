@@ -1,5 +1,4 @@
-"""
-# UMB-AUDITOR-001: The Compliance Auditor (Engine Mode)
+"""# UMB-AUDITOR-001: The Compliance Auditor (Engine Mode).
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -58,22 +57,24 @@ class AuditResult:
 
 
 class ComplianceAuditor:
-    """
-    Core engine for OGLN v11.0 compliance auditing.
+    """Core engine for OGLN v11.0 compliance auditing.
     Consolidates logic from legacy compliance_audit.py.
     """
 
     def audit_file(self, filepath: str) -> AuditResult:
-        """
-        Audits a single markdown file for OGLN compliance.
-        """
+        """Audits a single markdown file for OGLN compliance."""
         filename = os.path.basename(filepath)
 
         try:
             with open(filepath, "r", encoding="utf-8") as f:
                 content = f.read()
         except Exception as e:
-            return AuditResult(file_path=filepath, status="FAIL", errors=[f"Read Error: {e}"], score=0.0)
+            return AuditResult(
+                file_path=filepath,
+                status="FAIL",
+                errors=[f"Read Error: {e}"],
+                score=0.0,
+            )
 
         errors = []
         warnings = []
@@ -93,14 +94,20 @@ class ComplianceAuditor:
 
         # 2. H1 Singularity Check
         h1_matches = re.findall(
-            r"^#\s+(?!Universal Identification & Provenance).*", content, re.MULTILINE | re.IGNORECASE
+            r"^#\s+(?!Universal Identification & Provenance).*",
+            content,
+            re.MULTILINE | re.IGNORECASE,
         )
         if len(h1_matches) != 1:
-            errors.append(f"Geometry: H1 Singularity violation (Found {len(h1_matches)} H1 headers outside UIP).")
+            errors.append(
+                f"Geometry: H1 Singularity violation (Found {len(h1_matches)} H1 headers outside UIP)."
+            )
 
         # 3. Indentation Parity (v11.0 mandates 4-space nested bullets)
         if re.search(r"^ {2}- ", content, re.MULTILINE):
-            warnings.append("Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces for list parity).")
+            warnings.append(
+                "Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces for list parity)."
+            )
 
         # 4. Actionable Prompt Packet (APP)
         if "Actionable Prompt Packet" not in content and "CMD:" not in content:
@@ -109,13 +116,21 @@ class ComplianceAuditor:
         # 5. Filenaming Protocol
         # Pattern: [PREFIX]-[ID]_[Name]_v[Version].md
         if not re.match(r"[A-Z0-9]+-[A-Z0-9]+-\d+_.*?_v\d+\.\d+\.md", filename):
-            warnings.append(f"Filenaming: Filename '{filename}' does not strictly match v11.0 RNC pattern.")
+            warnings.append(
+                f"Filenaming: Filename '{filename}' does not strictly match v11.0 RNC pattern."
+            )
 
         status = "FAIL" if errors else ("WARNING" if warnings else "PASS")
         score = 1.0 - (len(errors) * 0.2) - (len(warnings) * 0.05)
         score = max(0.0, score)
 
-        return AuditResult(file_path=filepath, status=status, errors=errors, warnings=warnings, score=score)
+        return AuditResult(
+            file_path=filepath,
+            status=status,
+            errors=errors,
+            warnings=warnings,
+            score=score,
+        )
 
     def _extract_uip_block(self, content: str) -> str:
         """Helper to extract the UIP header block from content."""

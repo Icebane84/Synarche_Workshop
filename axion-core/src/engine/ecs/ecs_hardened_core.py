@@ -1,9 +1,10 @@
-"""
-Artifact ID: CORE-FDE-ECS-006
+"""Artifact ID: CORE-FDE-ECS-006
 Ethos: Type-Safety is Non-Negotiable; State is Immutable.
 """
+
 from dataclasses import dataclass
 from typing import Any, Dict, List, Set, Type
+
 
 # 1. IMMUTABLE COMPONENTS (Zero-Copy Safe)
 @dataclass(frozen=True)
@@ -11,10 +12,12 @@ class Position:
     x: float
     y: float
 
+
 @dataclass(frozen=True)
 class Velocity:
     dx: float
     dy: float
+
 
 # 2. HARDENED COMPONENT STORE
 class ComponentStore:
@@ -36,7 +39,10 @@ class ComponentStore:
         return {comp_type: store.copy() for comp_type, store in self._stores.items()}
 
     def restore(self, snapshot: Dict[Type, Dict[int, Any]]):
-        self._stores = {comp_type: store.copy() for comp_type, store in snapshot.items()}
+        self._stores = {
+            comp_type: store.copy() for comp_type, store in snapshot.items()
+        }
+
 
 # 3. PURE SYSTEM WITH STRUCTURAL DELTAS
 class MovementSystem:
@@ -55,8 +61,8 @@ class MovementSystem:
         # Expanded Delta Schema
         delta = {
             "mutations": {Position: {}},
-            "spawns": [],        # Example: [{"components": {Position: ..., Velocity: ...}}]
-            "despawns": []       # Example: [entity_id_1, entity_id_2]
+            "spawns": [],  # Example: [{"components": {Position: ..., Velocity: ...}}]
+            "despawns": [],  # Example: [entity_id_1, entity_id_2]
         }
 
         for eid in entities:
@@ -67,6 +73,7 @@ class MovementSystem:
             delta["mutations"][Position][eid] = Position(p.x + v.dx, p.y + v.dy)
 
         return delta
+
 
 # 4. DETERMINISTIC ECS COMMIT LAYER
 def apply_ecs_delta(world, delta: Dict[str, Any], seen_mutations: Set[tuple]):
@@ -86,11 +93,13 @@ def apply_ecs_delta(world, delta: Dict[str, Any], seen_mutations: Set[tuple]):
     # Process Mutations (with strict collision detection)
     for comp_type, updates in delta.get("mutations", {}).items():
         store = comps._stores.setdefault(comp_type, {})
-        
+
         for eid, new_value in updates.items():
             collision_key = (comp_type, eid)
             if collision_key in seen_mutations:
-                raise RuntimeError(f"Collision: Multiple systems mutating {comp_type.__name__} on Entity {eid}")
-            
+                raise RuntimeError(
+                    f"Collision: Multiple systems mutating {comp_type.__name__} on Entity {eid}"
+                )
+
             seen_mutations.add(collision_key)
             store[eid] = new_value

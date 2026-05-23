@@ -1,32 +1,32 @@
-"use client"
+"use client";
 
-import { Control, Controller } from "react-hook-form"
-import { useTranslation } from "@/lib/hooks/use-translation"
-import { FormSection } from "@/components/ui/form-section"
-import { CheckboxList } from "@/components/ui/checkbox-list"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Transformation } from "@/lib/types/transformations"
-import { SettingsResponse } from "@/lib/types/api"
+import { Control, Controller } from "react-hook-form";
+import { useTranslation } from "@/lib/hooks/use-translation";
+import { FormSection } from "@/components/ui/form-section";
+import { CheckboxList } from "@/components/ui/checkbox-list";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Transformation } from "@/lib/types/transformations";
+import { SettingsResponse } from "@/lib/types/api";
 
 interface CreateSourceFormData {
-  type: 'link' | 'upload' | 'text'
-  title?: string
-  url?: string
-  content?: string
-  file?: FileList | File
-  notebooks?: string[]
-  transformations?: string[]
-  embed: boolean
-  async_processing: boolean
+  type: "link" | "upload" | "text";
+  title?: string;
+  url?: string;
+  content?: string;
+  file?: FileList | File;
+  notebooks?: string[];
+  transformations?: string[];
+  embed: boolean;
+  async_processing: boolean;
 }
 
 interface ProcessingStepProps {
-  control: Control<CreateSourceFormData>
-  transformations: Transformation[]
-  selectedTransformations: string[]
-  onToggleTransformation: (transformationId: string) => void
-  loading?: boolean
-  settings?: SettingsResponse
+  control: Control<CreateSourceFormData>;
+  transformations: Transformation[];
+  selectedTransformations: string[];
+  onToggleTransformation: (transformationId: string) => void;
+  loading?: boolean;
+  settings?: SettingsResponse;
 }
 
 export function ProcessingStep({
@@ -35,14 +35,14 @@ export function ProcessingStep({
   selectedTransformations,
   onToggleTransformation,
   loading = false,
-  settings
+  settings,
 }: ProcessingStepProps) {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const transformationItems = transformations.map((transformation) => ({
     id: transformation.id,
     title: transformation.title,
-    description: transformation.description
-  }))
+    description: transformation.description,
+  }));
 
   return (
     <div className="space-y-8">
@@ -64,12 +64,12 @@ export function ProcessingStep({
         description={t.sources.processDescription}
       >
         <div className="space-y-4">
-          {settings?.default_embedding_option === 'ask' && (
+          {settings?.default_embedding_option === "ask" && (
             <Controller
               control={control}
               name="embed"
               render={({ field }) => (
-                <label 
+                <label
                   htmlFor="enable-embedding"
                   className="flex items-start gap-3 cursor-pointer p-3 rounded-md hover:bg-muted"
                 >
@@ -80,7 +80,9 @@ export function ProcessingStep({
                     className="mt-0.5"
                   />
                   <div className="flex-1">
-                    <span className="text-sm font-medium block">{t.sources.enableEmbedding}</span>
+                    <span className="text-sm font-medium block">
+                      {t.sources.enableEmbedding}
+                    </span>
                     <p className="text-xs text-muted-foreground mt-1">
                       {t.sources.embeddingDesc}
                     </p>
@@ -90,30 +92,38 @@ export function ProcessingStep({
             />
           )}
 
-          {settings?.default_embedding_option === 'always' && (
+          {settings?.default_embedding_option === "always" && (
             <div className="p-3 rounded-md bg-primary/10 border border-primary/30">
               <div className="flex items-start gap-3">
                 <div className="w-4 h-4 bg-primary rounded-full mt-0.5 flex-shrink-0"></div>
                 <div className="flex-1">
-                  <span className="text-sm font-medium block text-primary">{t.sources.embeddingAlways}</span>
+                  <span className="text-sm font-medium block text-primary">
+                    {t.sources.embeddingAlways}
+                  </span>
                   <p className="text-xs text-primary mt-1">
                     {t.sources.embeddingAlwaysDesc}
-                    {t.sources.changeInSettings} <span className="font-medium">{t.navigation.settings}</span>.
+                    {t.sources.changeInSettings}{" "}
+                    <span className="font-medium">{t.navigation.settings}</span>
+                    .
                   </p>
                 </div>
               </div>
             </div>
           )}
 
-          {settings?.default_embedding_option === 'never' && (
+          {settings?.default_embedding_option === "never" && (
             <div className="p-3 rounded-md bg-muted border border-border">
               <div className="flex items-start gap-3">
                 <div className="w-4 h-4 bg-muted-foreground rounded-full mt-0.5 flex-shrink-0"></div>
                 <div className="flex-1">
-                  <span className="text-sm font-medium block text-foreground">{t.sources.embeddingNever}</span>
+                  <span className="text-sm font-medium block text-foreground">
+                    {t.sources.embeddingNever}
+                  </span>
                   <p className="text-xs text-muted-foreground mt-1">
                     {t.sources.embeddingNeverDesc}
-                    {t.sources.changeInSettings} <span className="font-medium">{t.navigation.settings}</span>.
+                    {t.sources.changeInSettings}{" "}
+                    <span className="font-medium">{t.navigation.settings}</span>
+                    .
                   </p>
                 </div>
               </div>
@@ -122,5 +132,5 @@ export function ProcessingStep({
         </div>
       </FormSection>
     </div>
-  )
+  );
 }

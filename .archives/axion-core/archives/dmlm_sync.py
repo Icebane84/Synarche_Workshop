@@ -1,5 +1,4 @@
-"""
-[DMLM] Sync Tool
+"""[DMLM] Sync Tool
 Enforces cleansing and training cycles for the AI knowledge graph.
 """
 
@@ -10,6 +9,7 @@ import yaml
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("DMLMSync")
+
 
 class DMLMSync:
     def __init__(self, registry_path: str):
@@ -25,14 +25,17 @@ class DMLMSync:
             data = yaml.safe_load(f)
 
         logger.info("Initializing Synarche Knowledge Sync...")
-        
-        for model in data.get('models', []):
-            logger.info(f"Syncing lifecycle state for Model: {model['id']} ({model['status']})")
-            
-        for dataset in data.get('datasets', []):
+
+        for model in data.get("models", []):
+            logger.info(
+                f"Syncing lifecycle state for Model: {model['id']} ({model['status']})"
+            )
+
+        for dataset in data.get("datasets", []):
             logger.info(f"Verifying Integrity Hash for Dataset: {dataset['id']}")
-            
+
         logger.info("DMLM Sync Complete. Knowledge Graph is consistent.")
+
 
 if __name__ == "__main__":
     REGISTRY = r"C:\Users\Chris\Synarche_Workspace\.agent\substrate\governance\dmlm\registry.yaml"

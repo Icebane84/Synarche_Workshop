@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -50,15 +49,12 @@ load_dotenv()
 
 
 class RPGManager:
-    """
-    Manages the RPG state and Stardust economy via Supabase.
+    """Manages the RPG state and Stardust economy via Supabase.
     Implements AOP-AXIOM-INVEST-001 and conforms to OMEGA v15.0.
     """
 
     def __init__(self) -> None:
-        """
-        Initializes the RPG Manager with Supabase credentials.
-        """
+        """Initializes the RPG Manager with Supabase credentials."""
         # Default to local Supabase if not specified
         url: str = os.environ.get("SUPABASE_URL", "http://127.0.0.1:54321")
         # Use service role key for bypass RLS in local dev
@@ -76,14 +72,14 @@ class RPGManager:
         self.default_user_id: str = "f0f0f0f0-f0f0-4f0f-af0f-f0f0f0f0f0f0"
 
     def ensure_player_exists(self, user_id: str | None = None) -> str | None:
-        """
-        Verifies that a player entry exists in Supabase, creating one if missing.
+        """Verifies that a player entry exists in Supabase, creating one if missing.
 
         Args:
             user_id: The UUID of the player. Defaults to the system default user.
 
         Returns:
             The user_id if successful, None otherwise.
+
         """
         if not self.supabase:
             return None
@@ -121,14 +117,14 @@ class RPGManager:
             return None
 
     def get_status(self, user_id: str | None = None) -> RPGEngine | dict[str, Any]:
-        """
-        Retrieves the complete status aligned with the RPGEngine TypedDict.
+        """Retrieves the complete status aligned with the RPGEngine TypedDict.
 
         Args:
             user_id: The UUID of the player.
 
         Returns:
             A dictionary conforming to the RPGEngine schema.
+
         """
         uid: str | None = self.ensure_player_exists(user_id)
         if not uid:
@@ -188,8 +184,7 @@ class RPGManager:
     def award_stardust(
         self, amount: int, impact_id: str, user_id: str | None = None
     ) -> int:
-        """
-        Awards Stardust to a player and logs the transaction in the ledger.
+        """Awards Stardust to a player and logs the transaction in the ledger.
 
         Args:
             amount: Amount of Stardust to award.
@@ -198,6 +193,7 @@ class RPGManager:
 
         Returns:
             The new total Stardust balance.
+
         """
         uid: str | None = self.ensure_player_exists(user_id)
         if not uid:
@@ -239,8 +235,7 @@ class RPGManager:
     def invest_stardust(
         self, stat_name: str, stardust_amount: int, user_id: str | None = None
     ) -> dict[str, Any]:
-        """
-        Invests Stardust into a specific stat to increase its value.
+        """Invests Stardust into a specific stat to increase its value.
 
         Args:
             stat_name: The internal name of the stat to boost.
@@ -249,6 +244,7 @@ class RPGManager:
 
         Returns:
             A status dictionary indicating success or failure.
+
         """
         uid: str | None = self.ensure_player_exists(user_id)
         if not uid:
@@ -315,14 +311,14 @@ class RPGManager:
             return {"success": False, "error": str(e)}
 
     def get_achievements(self, user_id: str | None = None) -> list[dict[str, Any]]:
-        """
-        Retrieves all achievements and marks those completed by the user.
+        """Retrieves all achievements and marks those completed by the user.
 
         Args:
             user_id: The UUID of the player.
 
         Returns:
             A list of achievement dictionaries with 'completed' status.
+
         """
         uid: str = user_id or self.ensure_player_exists(user_id) or self.default_user_id
 
@@ -375,14 +371,14 @@ class RPGManager:
         return all_achievements
 
     def query_lore(self, query: str) -> str:
-        """
-        Queries the knowledge base (Supabase Vector Store or local mock).
+        """Queries the knowledge base (Supabase Vector Store or local mock).
 
         Args:
             query: The search query for the lore.
 
         Returns:
             A string response containing relevant lore or a failure message.
+
         """
         if not self.supabase:
             return f"The Oracle is currently disconnected. Knowledge regarding '{query}' remains veiled."
@@ -402,12 +398,12 @@ class RPGManager:
             return f"Lore search failed: {e!s}"
 
     def _save_achievement_locally(self, user_id: str, achievement_id: str) -> None:
-        """
-        Saves earned achievement ID to local JSON for offline synchronization.
+        """Saves earned achievement ID to local JSON for offline synchronization.
 
         Args:
             user_id: The UUID of the player.
             achievement_id: The ID of the earned achievement.
+
         """
         local_path: str = os.path.join(
             os.path.dirname(__file__), "..", "..", "data", "player_achievements.json"
@@ -439,8 +435,7 @@ class RPGManager:
     def claim_achievement(
         self, achievement_id: str, user_id: str | None = None
     ) -> dict[str, Any]:
-        """
-        Claims an achievement reward for a player.
+        """Claims an achievement reward for a player.
 
         Args:
             achievement_id: The ID of the achievement to claim.
@@ -448,6 +443,7 @@ class RPGManager:
 
         Returns:
             A status dictionary indicating the rewards awarded.
+
         """
         uid: str = user_id or self.default_user_id
 

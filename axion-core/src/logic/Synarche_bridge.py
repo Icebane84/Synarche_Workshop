@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -53,32 +52,33 @@ from typing import Any
 
 
 class SynarcheRegistry:
-    """
-    Interface for the Synarche Command Registry.
+    """Interface for the Synarche Command Registry.
     Allows agents (AXION, LIGHTBINDER) to programmatically access capabilities and tool specifications.
     """
 
     def __init__(self, registry_path: str = "data/command_registry.json") -> None:
-        """
-        Initializes the SynarcheRegistry and loads the underlying command library.
+        """Initializes the SynarcheRegistry and loads the underlying command library.
 
         Args:
             registry_path: Path to the JSON command registry file.
+
         """
         # Resolve path relative to this file if not absolute
         if not os.path.isabs(registry_path):
             current_dir = os.path.dirname(os.path.abspath(__file__))
-            registry_path = os.path.normpath(os.path.join(current_dir, "../../", registry_path))
+            registry_path = os.path.normpath(
+                os.path.join(current_dir, "../../", registry_path)
+            )
 
         self.registry_path = registry_path
         self.library: dict[str, Any] = self.load_registry()
 
     def load_registry(self) -> dict[str, Any]:
-        """
-        Loads the JSON command library from the local filesystem.
+        """Loads the JSON command library from the local filesystem.
 
         Returns:
             A dictionary representation of the command registry.
+
         """
         try:
             with open(self.registry_path, encoding="utf-8") as f:
@@ -91,23 +91,23 @@ class SynarcheRegistry:
             return {}
 
     def get_all_categories(self) -> list[str]:
-        """
-        Returns top-level command categories present in the registry.
+        """Returns top-level command categories present in the registry.
 
         Returns:
             A list of category names.
+
         """
         return list(self.library.keys())
 
     def search_commands(self, query: str) -> list[dict[str, Any]]:
-        """
-        Searches all commands for a query string in name or description.
+        """Searches all commands for a query string in name or description.
 
         Args:
             query: The search term to filter commands by.
 
         Returns:
             A list of matching command definitions.
+
         """
         results: list[dict[str, Any]] = []
         query_lower = query.lower()
@@ -116,7 +116,10 @@ class SynarcheRegistry:
             """Recursively traverses the registry tree to find matches."""
             if isinstance(node, list):
                 for cmd in node:
-                    if query_lower in cmd.get("name", "").lower() or query_lower in cmd.get("description", "").lower():
+                    if (
+                        query_lower in cmd.get("name", "").lower()
+                        or query_lower in cmd.get("description", "").lower()
+                    ):
                         results.append(cmd)
             elif isinstance(node, dict):
                 for value in node.values():
@@ -126,26 +129,26 @@ class SynarcheRegistry:
         return results
 
     def get_command_spec(self, command_name: str) -> dict[str, Any] | None:
-        """
-        Retrieves the full specification for a specific command by name.
+        """Retrieves the full specification for a specific command by name.
 
         Args:
             command_name: The exact or partial name of the command.
 
         Returns:
             The command specification dictionary if found, else None.
+
         """
         matches = self.search_commands(command_name)
-        
+
         # Priority 1: Exact Match
         for cmd in matches:
             if cmd.get("name", "").lower() == command_name.lower():
                 return cmd
-        
+
         # Priority 2: Fuzzy/First Match
         if matches:
             return matches[0]
-            
+
         return None
 
 

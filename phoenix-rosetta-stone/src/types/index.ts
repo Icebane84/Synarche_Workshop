@@ -1,3 +1,3 @@
 /** @nexus GVRN.Core.Nexus.ESSENCE */
 
-export type { ChatMessage, CoherenceScore } from './cognitive';
+export type { ChatMessage, CoherenceScore } from "./cognitive";

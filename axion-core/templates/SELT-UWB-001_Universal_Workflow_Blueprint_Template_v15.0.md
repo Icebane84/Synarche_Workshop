@@ -67,8 +67,8 @@
 - **Inputs:** [Required data or state.]
 - **Outputs:** [Resulting artifacts or state.]
 - **Key Activities:**
-    - [Activity 1]
-    - [Activity 2]
+  - [Activity 1]
+  - [Activity 2]
 - **Associated Protocols (AOPs):** [AOP-ID]
 - **Associated Commands (GUCAs):** [GUCA-ID]
 
@@ -78,8 +78,8 @@
 - **Inputs:** [Required data or state.]
 - **Outputs:** [Resulting artifacts or state.]
 - **Key Activities:**
-    - [Activity 1]
-    - [Activity 2]
+  - [Activity 1]
+  - [Activity 2]
 - **Associated Protocols (AOPs):** [AOP-ID]
 - **Associated Commands (GUCAs):** [GUCA-ID]
 

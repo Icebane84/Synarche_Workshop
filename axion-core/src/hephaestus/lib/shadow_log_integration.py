@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -20,7 +19,7 @@
 # [META-COGNITIVE TRACE]
 # Task: Integrate newly relocated OMEGA modules into the active governance substrate.
 # Dissonance: The modules exist in src/ but are "dark" to the registry and the main engine.
-# Synthesis: 
+# Synthesis:
 # 1. Interface Exposure (Expose via __init__.py) -> [IN PROGRESS]
 # 2. Registry Registration (Add to GVRN.Master.Registry.yaml) -> [PENDING]
 # 3. Engine Hooking (Integrate into CoherentSynthesisEngine) -> [PENDING]

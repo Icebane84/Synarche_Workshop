@@ -9,6 +9,7 @@
 ---
 
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # API Module
 
@@ -66,8 +67,11 @@ Axios-based client and resource-specific API modules for backend communication w
 3. Export namespaced object with methods:
    ```typescript
    export const transformsApi = {
-     list: async () => { const response = await apiClient.get('/transforms'); return response.data }
-   }
+     list: async () => {
+       const response = await apiClient.get("/transforms");
+       return response.data;
+     },
+   };
    ```
 4. Add types to `@/lib/types/api` if new response shapes needed
 
@@ -85,18 +89,18 @@ Axios-based client and resource-specific API modules for backend communication w
 
 ```typescript
 // Basic list
-const sources = await sourcesApi.list({ notebook_id: notebookId })
+const sources = await sourcesApi.list({ notebook_id: notebookId });
 
 // File upload with FormData
 const response = await sourcesApi.create({
-  type: 'upload',
+  type: "upload",
   file: fileObj,
   notebook_id: notebookId,
-  async_processing: true
-})
+  async_processing: true,
+});
 
 // With auth token (auto-added by interceptor)
-const notes = await notesApi.list()
+const notes = await notesApi.list();
 ```
 
 ---

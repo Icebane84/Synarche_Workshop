@@ -21,13 +21,13 @@ def token_count(input_string) -> int:
         int: The number of tokens in the input string.
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     import tiktoken
 
@@ -210,7 +210,7 @@ def compare_versions(version1: str, version2: str) -> int:
 THINK_PATTERN = re.compile(r"<think>(.*?)</think>", re.DOTALL)
 
 
-def parse_thinking_content(content: str) -> Tuple[str, str]:
+def parse_thinking_content(content: str) -> tuple[str, str]:
     """
     Parse message content to extract thinking content from <think> tags.
 

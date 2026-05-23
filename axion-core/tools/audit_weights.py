@@ -1,5 +1,4 @@
-"""
-# TOOL-SENT-009: Gravity Weight Auditor (Sentinel Suite)
+"""# TOOL-SENT-009: Gravity Weight Auditor (Sentinel Suite).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -96,7 +95,7 @@ def audit_weights(graph_path):
     # 4. Generate Report
     report_lines = []
     report_lines.append("# WEIGHT AUDIT REPORT (UMB-AM-001)")
-    report_lines.append(f"**Date:** 2026-01-21")
+    report_lines.append("**Date:** 2026-01-21")
     report_lines.append(f"**Graph Source:** `{os.path.basename(graph_path)}`")
     report_lines.append(f"**Metrics:** Nodes `{len(nodes)}` | Edges `{len(edges)}`")
     report_lines.append("---")
@@ -120,7 +119,9 @@ def audit_weights(graph_path):
         report_lines.append(f"| `{nid}` | {i} | {o} | **{diff}** |")
 
     report_lines.append("\n## III. Conclusion")
-    report_lines.append(f"Audit Complete. Found {len(sorted_variance)} nodes with significant variance (>2).")
+    report_lines.append(
+        f"Audit Complete. Found {len(sorted_variance)} nodes with significant variance (>2)."
+    )
     report_lines.append("RECOMMENDATION: `CMD: REINFORCE` top hubs.")
 
     report_content = "\n".join(report_lines)

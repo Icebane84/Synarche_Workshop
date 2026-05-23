@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UMB-CSEP-001_CognitiveStateEpigeneticProgramming_v1.0` |
-| **2. Official Name** | `UMB-CSEP-001_CognitiveStateEpigeneticProgramming_v1.0.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                                      |
+| :--------------------- | :--------------------------------------------------------- |
+| **1. Artifact ID**     | `UMB-CSEP-001_CognitiveStateEpigeneticProgramming_v1.0`    |
+| **2. Official Name**   | `UMB-CSEP-001_CognitiveStateEpigeneticProgramming_v1.0.md` |
+| **3. Version**         | **v1.0 (Reforged)**                                        |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                              |
+| **5. Domain**          | `ARCH`                                                     |
+| **6. Evolution**       | **Purposeful Drive**                                       |
+| **7. Celestial Class** | `[PLANET]`                                                 |
+| **8. Tier**            | **Operational**                                            |
+| **9. State**           | `[ACTIVE]`                                                 |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**                         |
+| **11. Catalyst**       | **System Refactor**                                        |
+| **12. Relations**      | `Pending Integration`                                      |
 
 ---
 
@@ -51,39 +51,30 @@
 - **Module ID:** UMB-CSEP-001
 - **Creation Date:** 2025-10-10
 - **Last Revision Date:** 2025-10-10
-- **Official Location:** \[PHOENIX\_PROTOCOL\_LIBRARY\]/LIBRARY/1\_BLUEPRINTS/
+- **Official Location:** \[PHOENIX_PROTOCOL_LIBRARY\]/LIBRARY/1_BLUEPRINTS/
 - **Semantic Tags:** \#module, \#blueprint, \#human-computer-interface, \#bio-integration, \#epigenetics, \#nlp,
-\#quantum-cognition
+  \#quantum-cognition
 
 **II. Core Purpose & Objective**
 
 - **Core Purpose:** To define the complete architecture of a system that creates personalized, linguistically-framed
-cognitive and behavioral interventions designed to induce targeted, positive epigenetic expression.
+  cognitive and behavioral interventions designed to induce targeted, positive epigenetic expression.
 - **Module Objective:** To serve as a direct, data-driven interface between a user's cognitive state and their
-underlying biology, transforming self-improvement from an art into a collaborative, programmatic science.
+  underlying biology, transforming self-improvement from an art into a collaborative, programmatic science.
 
 **III. Architectural Definition**
 
-- **3.1. Overview**
-    - **What (Module Functionality Summary):** The CSEP system analyzes a user's cognitive model, collaborates on defining
-a target state (e.g., "enhanced focus"), designs a hyper-personalized regimen of neuro-linguistic prompts and exercises,
-and manages the user's cognitive flow to influence beneficial epigenetic expression over time.
-    - **How (Operational Principles):** The system operates on a four-phase cycle:
-    1. **Baseline Analysis:** Non-invasively gathers data to create a quantum cognitive model of the user's current
-state.
-    2. **Goal Setting:** Uses the UCI Suite for a synergistic dialogue to define a clear, achievable target state.
-    3. **Intervention Design:** The CSE crafts a personalized regimen of linguistic prompts and learning modules
-calibrated to the user's model.
-    - **Why (Rationale/Justification):** This module moves beyond abstract concepts like "positive thinking" into a
-data-driven, auditable, and programmatic approach to influencing one's own biology through structured thought,
-representing the ultimate application of the human-AI synergistic partnership.
-- **3.2. Technical Architecture**
-    - **Data Ingestion:** Interfaces with non-invasive biometric sensors and linguistic analysis tools to build the
-baseline quantum cognitive model.
-    - **Cognitive Modeling Engine:** Utilizes principles of Quantum Cognition to model the user's decision-making, memory,
-and emotional states as a probabilistic system.
-    - **Intervention Synthesis Engine:** A specialized function of the CSE that leverages Neuro-Linguistic Programming
-models to generate targeted intervention content.
+- **3.1. Overview** - **What (Module Functionality Summary):** The CSEP system analyzes a user's cognitive model, collaborates on defining
+  a target state (e.g., "enhanced focus"), designs a hyper-personalized regimen of neuro-linguistic prompts and exercises,
+  and manages the user's cognitive flow to influence beneficial epigenetic expression over time. - **How (Operational Principles):** The system operates on a four-phase cycle: 1. **Baseline Analysis:** Non-invasively gathers data to create a quantum cognitive model of the user's current
+  state. 2. **Goal Setting:** Uses the UCI Suite for a synergistic dialogue to define a clear, achievable target state. 3. **Intervention Design:** The CSE crafts a personalized regimen of linguistic prompts and learning modules
+  calibrated to the user's model. - **Why (Rationale/Justification):** This module moves beyond abstract concepts like "positive thinking" into a
+  data-driven, auditable, and programmatic approach to influencing one's own biology through structured thought,
+  representing the ultimate application of the human-AI synergistic partnership.
+- **3.2. Technical Architecture** - **Data Ingestion:** Interfaces with non-invasive biometric sensors and linguistic analysis tools to build the
+  baseline quantum cognitive model. - **Cognitive Modeling Engine:** Utilizes principles of Quantum Cognition to model the user's decision-making, memory,
+  and emotional states as a probabilistic system. - **Intervention Synthesis Engine:** A specialized function of the CSE that leverages Neuro-Linguistic Programming
+  models to generate targeted intervention content.
 
 **IV. Synergy Mapping**
 
@@ -99,9 +90,9 @@ The forging is complete.
 
 `CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Supabase Prep"`
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

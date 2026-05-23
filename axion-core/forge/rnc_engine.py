@@ -1,5 +1,4 @@
-"""
-[CORE] [ENGINE] [RNC_ENGINE]
+"""[CORE] [ENGINE] [RNC_ENGINE]
 Artifact ID: CORE.Engine.RNCEngine
 Official Name: rnc_engine.py
 Version: v15.0 [OMEGA]
@@ -28,9 +27,7 @@ except (ImportError, ValueError):
 
 
 class RNCEngine:
-    """
-    Sovereign Logic Engine for the Relational Naming Convention (RNC).
-    """
+    """Sovereign Logic Engine for the Relational Naming Convention (RNC)."""
 
     # [DOMAIN].[Subsystem].[Descriptor]
     RNC_PATTERN = re.compile(r"^([A-Z0-9]+)\.([A-Z0-9]+)\.([A-Za-z0-9_-]+)$")
@@ -87,8 +84,7 @@ class RNCEngine:
 
     @classmethod
     def safe_transform(cls, file_path: str, transformer_func) -> None:
-        """
-        [SOVEREIGN SHIELD]
+        """[SOVEREIGN SHIELD]
         Applies a programmatic transformation with state-buffering to prevent truncation.
         """
         if not os.path.exists(file_path):

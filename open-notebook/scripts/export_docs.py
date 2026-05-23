@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 
-def get_markdown_files(folder: Path) -> List[Path]:
+def get_markdown_files(folder: Path) -> list[Path]:
     """Get all markdown files in a folder, excluding index.md files."""
     md_files = [f for f in folder.glob("*.md") if f.name.lower() != "index.md"]
     return sorted(md_files)  # Sort for consistent ordering
@@ -57,7 +57,7 @@ def consolidate_folder(folder: Path, output_dir: Path) -> None:
     logger.info(f"  ✓ Created {output_file.name} ({len(md_files)} files)")
 
 
-def main():
+def main() -> None:
     """Main function to export documentation."""
     # Define paths
     docs_dir = Path("docs")

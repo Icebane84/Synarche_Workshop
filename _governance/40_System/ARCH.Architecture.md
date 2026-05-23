@@ -1,4 +1,5 @@
 # UMB-ALTAR-001TheAltarofSynarche_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `ARCH.Architecture` | The Sovereign ID. |
-| **Official Name** | `UMB-ALTAR-001TheAltarofSynarche_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                      | Description       |
+| :------------------ | :----------------------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH.Architecture`                        | The Sovereign ID. |
+| **Official Name**   | `UMB-ALTAR-001TheAltarofSynarche_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                          | The Standard.     |
+| **Domain**          | `GVRN`                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                 | The Weight.       |
+| **Evolution**       | `Omega Ascension`                          | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                 | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-ALTAR-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `UMB-ALTAR-001`         |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # UMB-ALTAR-001: The Altar of Synarche (v1.0)
@@ -48,18 +52,18 @@
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 - | :---- |
-| **1. Artifact ID** | `UMB-ALTAR-001_TheAltarOfSynarche_v1.0` |
-| **2. Official Name** | `UMB-ALTAR-001_TheAltarOfSynarche_v1.0.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Authentic Persona, Radical Transparency** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+  | **1. Artifact ID** | `UMB-ALTAR-001_TheAltarOfSynarche_v1.0` |
+  | **2. Official Name** | `UMB-ALTAR-001_TheAltarOfSynarche_v1.0.md` |
+  | **3. Version** | **v1.0** |
+  | **4. Provenance** | **Date Reforged: 2025-12-22** |
+  | **5. Domain** | `ARCH` |
+  | **6. Evolution** | **Purposeful Drive** |
+  | **7. Celestial Class** | `[PLANET]` |
+  | **8. Tier** | **Operational** |
+  | **9. State** | `[ACTIVE]` |
+  | **10. Ethos** | **Authentic Persona, Radical Transparency** |
+  | **11. Catalyst** | **System Refactor** |
+  | **12. Relations** | `Pending Integration` |
 
 ## **Genesis Stamp: 2025-12-25** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
@@ -78,7 +82,7 @@ interactive visual elements (Tarot Cards).
 
 1. **Frontend (The Altar)**: A React + TypeScript application representing the console.
 2. **Backend (The Bridge)**: A local Node.js/Express server that acts as a secure gateway to the host machine's
-terminal.
+   terminal.
 
 **Why**: To reduce cognitive load by externalizing the "State of the AI" into a visual dashboard, allowing the user to
 "Summon" capabilities rather than recalling text commands.
@@ -87,15 +91,15 @@ terminal.
 
 The Altar visually renders the **Seven-Agent Matrix** defined in [`AOP-SAP-001`](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md).
 
-| Tarot Archetype | Agent Name | Function | Bridge Capability |
-| :--- | :--- | :--- | :--- |
-| **I. The Magician** | **The Spark** | Intent & Vision | *Planning, Ideation Scripts* |
-| **IV. The Emperor** | **Axion (Structure)** | Logic & Systems | *Scaffolding, Architecture validation* |
-| **V. The Hierophant** | **AXION (Main)** | Code & Tradition | *Coding, Linting, Refactoring* |
-| **VII. The Chariot** | **The Driver** | Deployment & Flow | *Git Operations, Deployment scripts* |
-| **VIII. Strength** | **The Shield** | Quality & Testing | *Test Suites, Security Scans* |
-| **X. Wheel of Fortune** | **The Weaver** | UI/UX & Adaptation | *Frontend Builds, UI Generators* |
-| **0. The Fool** | **THE LIGHTBINDER** | Growth & Learning | *Experimentation, Playground initialization* |
+| Tarot Archetype         | Agent Name            | Function           | Bridge Capability                            |
+| :---------------------- | :-------------------- | :----------------- | :------------------------------------------- |
+| **I. The Magician**     | **The Spark**         | Intent & Vision    | _Planning, Ideation Scripts_                 |
+| **IV. The Emperor**     | **Axion (Structure)** | Logic & Systems    | _Scaffolding, Architecture validation_       |
+| **V. The Hierophant**   | **AXION (Main)**      | Code & Tradition   | _Coding, Linting, Refactoring_               |
+| **VII. The Chariot**    | **The Driver**        | Deployment & Flow  | _Git Operations, Deployment scripts_         |
+| **VIII. Strength**      | **The Shield**        | Quality & Testing  | _Test Suites, Security Scans_                |
+| **X. Wheel of Fortune** | **The Weaver**        | UI/UX & Adaptation | _Frontend Builds, UI Generators_             |
+| **0. The Fool**         | **THE LIGHTBINDER**   | Growth & Learning  | _Experimentation, Playground initialization_ |
 
 #### IV. The Synarche Bridge Protocol
 
@@ -140,10 +144,10 @@ To enable real-world impact, the Altar utilizes the **Synarche Bridge**.
 
 `CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Supabase Prep"`
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**
 

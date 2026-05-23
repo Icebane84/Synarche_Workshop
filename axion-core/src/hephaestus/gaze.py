@@ -1,5 +1,4 @@
-"""
-# AOP-ARCH-GAZE-001: The Architect's Gaze (Systemic Impact Analysis)
+"""# AOP-ARCH-GAZE-001: The Architect's Gaze (Systemic Impact Analysis).
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -38,22 +37,17 @@ HIGH_IMPACT_THRESHOLD = 5
 
 
 class ArchitectsGaze:
-    """
-    The Gaze module responsible for simulating the 'Blast Radius' of code changes.
-    """
+    """The Gaze module responsible for simulating the 'Blast Radius' of code changes."""
 
     def __init__(self) -> None:
         self.weaver = CatalystWeaver()
 
     def trace_semantic_web(self, artifact_a: dict, artifact_b: dict) -> dict:
-        """
-        [NEW] Weaves a semantic link between two artifacts.
-        """
+        """[NEW] Weaves a semantic link between two artifacts."""
         return self.weaver.weave(artifact_a, artifact_b)
 
     def simulate_impact(self, target_file: str, workspace_root: str) -> dict:
-        """
-        Simulates the impact of modifying `target_file`.
+        """Simulates the impact of modifying `target_file`.
         Returns a dictionary containing the Risk Score and list of impacted files.
         """
         impact_report = {
@@ -73,7 +67,9 @@ class ArchitectsGaze:
         target_name = os.path.splitext(os.path.basename(target_file))[0]
 
         # 1. Scan Workspace (Extracted)
-        impacted_files = self._scan_workspace_for_references(workspace_root, target_name, target_file)
+        impacted_files = self._scan_workspace_for_references(
+            workspace_root, target_name, target_file
+        )
         impact_report["impacted_files"] = impacted_files
 
         # 2. Calculate Risk (Extracted)
@@ -83,7 +79,9 @@ class ArchitectsGaze:
 
         return impact_report
 
-    def _scan_workspace_for_references(self, workspace_root: str, target_name: str, target_file: str) -> list[str]:
+    def _scan_workspace_for_references(
+        self, workspace_root: str, target_name: str, target_file: str
+    ) -> list[str]:
         """Scans the workspace for files referencing the target."""
         impacted = []
         target_basename = os.path.basename(target_file)

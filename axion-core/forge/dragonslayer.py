@@ -43,20 +43,28 @@ class DragonslayerAuditor(ast.NodeVisitor):
             with open(self.filepath, encoding="utf-8") as f:
                 tree = ast.parse(f.read())
 
-            logger.info(f"--- [DRAGONSLAYER AUDIT] INITIATING: {os.path.basename(self.filepath)} ---")
+            logger.info(
+                f"--- [DRAGONSLAYER AUDIT] INITIATING: {os.path.basename(self.filepath)} ---"
+            )
             self.visit(tree)
 
             # Check for name consistency
-            hallucinated_names = self.used_names - self.defined_names - set(dir(builtins))
+            hallucinated_names = (
+                self.used_names - self.defined_names - set(dir(builtins))
+            )
             for name in hallucinated_names:
-                self.issues.append(f"[Hallucination] Name used but not defined or builtin: {name}")
+                self.issues.append(
+                    f"[Hallucination] Name used but not defined or builtin: {name}"
+                )
 
             if self.issues:
                 for issue in self.issues:
                     logger.error(f"> {issue}")
                 return False
             else:
-                logger.info(f"> SUCCESS: {os.path.basename(self.filepath)} is TRUTH-STABLE.")
+                logger.info(
+                    f"> SUCCESS: {os.path.basename(self.filepath)} is TRUTH-STABLE."
+                )
                 return True
         except SyntaxError:
             logger.exception(f"Syntax Error in {self.filepath}")
@@ -72,9 +80,14 @@ class DragonslayerAuditor(ast.NodeVisitor):
         if (
             len(node.body) == 1
             and isinstance(node.body[0], (ast.Pass, ast.Expr))
-            and not (isinstance(node.body[0], ast.Expr) and isinstance(node.body[0].value, ast.Constant))
+            and not (
+                isinstance(node.body[0], ast.Expr)
+                and isinstance(node.body[0].value, ast.Constant)
+            )
         ):
-            self.issues.append(f"[Deceptive Logic] Empty function detected: {node.name}")
+            self.issues.append(
+                f"[Deceptive Logic] Empty function detected: {node.name}"
+            )
 
         for item in node.body:
             if (
@@ -82,7 +95,9 @@ class DragonslayerAuditor(ast.NodeVisitor):
                 and isinstance(item.value, ast.Constant)
                 and "[HALLUCINATED:]" in str(item.value.value)
             ):
-                self.issues.append(f"[Truth Violation] Hallucination marker found in docstring of {node.name}")
+                self.issues.append(
+                    f"[Truth Violation] Hallucination marker found in docstring of {node.name}"
+                )
 
         self.generic_visit(node)
         self.current_function = None
@@ -91,13 +106,17 @@ class DragonslayerAuditor(ast.NodeVisitor):
         if isinstance(node.func, ast.Name):
             self.used_names.add(node.func.id)
             if "TODO" in node.func.id or "magic_" in node.func.id:
-                self.issues.append(f"[Hallucinated Call] Suspicious name: {node.func.id}")
+                self.issues.append(
+                    f"[Hallucinated Call] Suspicious name: {node.func.id}"
+                )
 
         self.generic_visit(node)
 
     def visit_Attribute(self, node: ast.Attribute) -> None:
         if "hallucinated" in node.attr.lower() or "mock_" in node.attr.lower():
-            self.issues.append(f"[Mock Logic Warning] Possible non-existent attribute access: {node.attr}")
+            self.issues.append(
+                f"[Mock Logic Warning] Possible non-existent attribute access: {node.attr}"
+            )
         self.generic_visit(node)
 
     def visit_Import(self, node: ast.Import) -> None:

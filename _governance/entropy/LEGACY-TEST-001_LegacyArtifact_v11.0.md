@@ -1,4 +1,5 @@
 # LEGACY-TEST-001_LegacyArtifact_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,22 +12,22 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-LEGACY-TEST-001-LEGACYARTIFACT-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `LEGACY-TEST-001_LegacyArtifact_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                           | Description       |
+| :------------------ | :---------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-LEGACY-TEST-001-LEGACYARTIFACT-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `LEGACY-TEST-001_LegacyArtifact_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
+| **Domain**          | `GVRN`                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
+| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
 
 # Unknown: Unknown (v13.0)
 
 ## Genesis Stamp: 2026-02-01 | Domain: GVRN | State: [ACTIVE] | Criticality: High
 
-**Tags:** `v13.0`, `Ascended` 
+**Tags:** `v13.0`, `Ascended`
 
 ---
 
@@ -34,24 +35,25 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                          |
-| :--------------------- | :--------------------------------------------- |
-| **1. Artifact ID**     | `Unknown`                                         |
-| **2. Official Name**   | `LEGACY-TEST-001_LegacyArtifact_v11.0.md`                                   |
-| **3. Version**         | **v13.0**                                      |
-| **4. Provenance**      | **Reforged: 2026-02-01**                           |
-| **5. Domain**          | `GVRN` (Governance)                      |
-| **6. Evolution**       | **Crystalline Coherence**                      |
-| **7. Celestial Class** | `[PLANET]`                                   |
-| **8. Tier**            | **Operational**                                     |
-| **9. Status (State)**  | `[ACTIVE]`                                      |
-| **10. Ethos**          | `Modernized Artifact`                                      |
-| **11. Catalyst**       | **System Ascension v13.0**                     |
-| **12. Relations**      | `GOVERNED_BY: [CORE-CODEX-001]`                |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| Field                  | Value                                     |
+| :--------------------- | :---------------------------------------- |
+| **1. Artifact ID**     | `Unknown`                                 |
+| **2. Official Name**   | `LEGACY-TEST-001_LegacyArtifact_v11.0.md` |
+| **3. Version**         | **v13.0**                                 |
+| **4. Provenance**      | **Reforged: 2026-02-01**                  |
+| **5. Domain**          | `GVRN` (Governance)                       |
+| **6. Evolution**       | **Crystalline Coherence**                 |
+| **7. Celestial Class** | `[PLANET]`                                |
+| **8. Tier**            | **Operational**                           |
+| **9. Status (State)**  | `[ACTIVE]`                                |
+| **10. Ethos**          | `Modernized Artifact`                     |
+| **11. Catalyst**       | **System Ascension v13.0**                |
+| **12. Relations**      | `GOVERNED_BY: [CORE-CODEX-001]`           |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                        |
 
 ---
- |
+
+|
 | **Artifact ID** | `LEGACY-TEST-001` |
 | **Official Name** | `LegacyArtifact.md` |
 | **Version** | **v11.0** |

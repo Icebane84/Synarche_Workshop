@@ -182,6 +182,4 @@ The function returns a rigid JSON assessment:
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

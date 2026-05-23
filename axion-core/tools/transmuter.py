@@ -1,8 +1,7 @@
-"""
-HEPHAESTUS-TOOL-005: The Transmuter
+"""HEPHAESTUS-TOOL-005: The Transmuter
 Domain: ACT | State: ACTIVE | Version: v1.0
 Objective: Migrate legacy artifact names (UMB/AOP) to Sovereign Standard (Context-First).
-Synergy Link: DEPENDS_ON -> src/logic/enums.py
+Synergy Link: DEPENDS_ON -> src/logic/enums.py.
 """
 
 import argparse
@@ -41,7 +40,10 @@ PREFIX_MAP = {
         "overrides": {},
     },
     "GUCA": {
-        "default": ("GVRN", "ACT"),  # Global Universal Command Arch -> Governance Actuator
+        "default": (
+            "GVRN",
+            "ACT",
+        ),  # Global Universal Command Arch -> Governance Actuator
         "overrides": {},
     },
     "CMD": {
@@ -49,7 +51,10 @@ PREFIX_MAP = {
         "overrides": {},
     },
     "UEB": {
-        "default": ("ARCH", "BLUE"),  # Universal Ecosystem Blueprint -> Architecture Blueprint
+        "default": (
+            "ARCH",
+            "BLUE",
+        ),  # Universal Ecosystem Blueprint -> Architecture Blueprint
         "overrides": {},
     },
     "SELT": {
@@ -110,7 +115,7 @@ class Transmuter:
             # Creating a clean Sovereign ID.
 
             # Clean up the name part (remove versions if duplicated, etc)
-            clean_name = name_part.replace("_", ".")
+            name_part.replace("_", ".")
 
             # Standard: [DOMAIN].[FUNC].001.md (Simple)
             # OR User's Style: GVRN.ID.Standard.md
@@ -125,7 +130,7 @@ class Transmuter:
             # Let's try to map strictly to the requested standard.
             # GVRN.REG.Master.md
 
-            new_id = f"{new_domain}.{new_func}.{sub.title()}"
+            f"{new_domain}.{new_func}.{sub.title()}"
             # Example: UMB-SGM-001 -> GVRN.GOV.Sgm.md?
             # User example: SYNG.PROT.Link
 
@@ -159,7 +164,10 @@ class Transmuter:
         """Save proposals to CSV."""
         output_file = Path("renaming_plan.csv")
         with open(output_file, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["original_name", "new_name", "confidence", "original_path"])
+            writer = csv.DictWriter(
+                f,
+                fieldnames=["original_name", "new_name", "confidence", "original_path"],
+            )
             writer.writeheader()
             for p in self.proposals:
                 writer.writerow({k: v for k, v in p.items() if k != "new_id"})
@@ -169,7 +177,9 @@ class Transmuter:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Transition artifacts to Sovereign Naming.")
+    parser = argparse.ArgumentParser(
+        description="Transition artifacts to Sovereign Naming."
+    )
     parser.add_argument("--dry-run", action="store_true", help="Generate plan only.")
     args = parser.parse_args()
 

@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -23,8 +22,7 @@ from typing import Any
 
 
 class SynarcheRegistry:
-    """
-    Interface for the Synarche Command Registry.
+    """Interface for the Synarche Command Registry.
     Allows agents (AXION, LIGHTBINDER) to programmatically access capabilities.
     """
 
@@ -53,8 +51,7 @@ class SynarcheRegistry:
         return list(self.library.keys())
 
     def search_commands(self, query: str) -> list[dict[str, Any]]:
-        """
-        Searches all commands for a query string in name or description.
+        """Searches all commands for a query string in name or description.
         Returns a list of matching command definitions.
         """
         results: list[dict[str, Any]] = []
@@ -78,9 +75,7 @@ class SynarcheRegistry:
         return results
 
     def get_command_spec(self, command_name: str) -> dict[str, Any] | None:
-        """
-        Retrieves the full specification for a specific command by name (case-insensitive).
-        """
+        """Retrieves the full specification for a specific command by name (case-insensitive)."""
         matches = self.search_commands(command_name)
         # return exact match if possible, else first match
         for cmd in matches:

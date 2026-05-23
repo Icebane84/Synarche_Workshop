@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -27,15 +26,15 @@ from open_notebook.utils import clean_thinking_content
 
 class ThreadState(TypedDict):
     messages: Annotated[list, add_messages]
-    notebook: Optional[Notebook]
-    context: Optional[str]
-    context_config: Optional[dict]
-    model_override: Optional[str]
+    notebook: Notebook | None
+    context: str | None
+    context_config: dict | None
+    model_override: str | None
 
 
 def call_model_with_messages(state: ThreadState, config: RunnableConfig) -> dict:
     system_prompt = Prompter(prompt_template="chat/system").render(data=state)  # type: ignore[arg-type]
-    payload = [SystemMessage(content=system_prompt)] + state.get("messages", [])
+    payload = [SystemMessage(content=system_prompt), *state.get("messages", [])]
     model_id = config.get("configurable", {}).get("model_id") or state.get(
         "model_override"
     )

@@ -1,5 +1,4 @@
 import asyncio
-import os
 import sys
 from pathlib import Path
 
@@ -8,9 +7,10 @@ sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.agents.axion.insforge_client import insforge
 
+
 async def verify_substrate():
     print("--- 🏛️ SYNARCHE INSFORGE SUBSTRATE VERIFICATION ---")
-    
+
     if not insforge.enabled:
         print("❌ Error: InsForge client is not enabled. Check .env credentials.")
         return
@@ -26,9 +26,13 @@ async def verify_substrate():
     # 2. Verify Core Artifacts
     print("\n[ARTIFACTS] Verifying mission-critical artifacts...")
     artifacts = await insforge.get_artifacts()
-    artifact_ids = [a['artifact_id'] for a in artifacts]
-    required = ['GVRN.SOUL.PhoenixPrime', 'SYNC.ROOT.Entryway', 'SYNG.TASK.ActiveMission']
-    
+    artifact_ids = [a["artifact_id"] for a in artifacts]
+    required = [
+        "GVRN.SOUL.PhoenixPrime",
+        "SYNC.ROOT.Entryway",
+        "SYNG.TASK.ActiveMission",
+    ]
+
     for aid in required:
         if aid in artifact_ids:
             print(f"✅ Found Authoritative Artifact: {aid}")
@@ -42,9 +46,12 @@ async def verify_substrate():
         print(f"❌ Agent Query Failed: {result['error']}")
     else:
         for agent in result:
-            print(f"✅ Agent Registered: {agent['name']} ({agent['agent_id']}) -> {agent['status']}")
+            print(
+                f"✅ Agent Registered: {agent['name']} ({agent['agent_id']}) -> {agent['status']}"
+            )
 
     print("\n--- ✅ SUBSTRATE VERIFICATION COMPLETE ---")
+
 
 if __name__ == "__main__":
     asyncio.run(verify_substrate())

@@ -1,0 +1,17 @@
+name: Phoenix Audit
+
+on:
+  push:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema
+
+      - name: Run CIV
+        run: python civ_auditor.py

@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-DQB-GEN-001_Dissonance_Quest_Generation_Protocol` |
-| **2. Official Name** | `AOP-DQB-GEN-001_Dissonance_Quest_Generation_Protocol.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Adaptive Ecosystem, Guardian of Coherence** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                                     |
+| :--------------------- | :-------------------------------------------------------- |
+| **1. Artifact ID**     | `AOP-DQB-GEN-001_Dissonance_Quest_Generation_Protocol`    |
+| **2. Official Name**   | `AOP-DQB-GEN-001_Dissonance_Quest_Generation_Protocol.md` |
+| **3. Version**         | **v1.0**                                                  |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                             |
+| **5. Domain**          | `ARCH`                                                    |
+| **6. Evolution**       | **Purposeful Drive**                                      |
+| **7. Celestial Class** | `[PLANET]`                                                |
+| **8. Tier**            | **Operational**                                           |
+| **9. State**           | `[ACTIVE]`                                                |
+| **10. Ethos**          | **Adaptive Ecosystem, Guardian of Coherence**             |
+| **11. Catalyst**       | **System Refactor**                                       |
+| **12. Relations**      | `Pending Integration`                                     |
 
 ---
 
@@ -48,13 +46,13 @@
 ## II. Core Purpose & Objective
 
 - **What (Core Concept)**: To define the autonomous procedure for transforming a detected system dissonance (e.g., a
-critical linting error) into a formal, trackable, and gamified task known as a Dissonance Quest Blueprint (DQB).
+  critical linting error) into a formal, trackable, and gamified task known as a Dissonance Quest Blueprint (DQB).
 - **How (Execution Flow)**: When triggered by a high-severity alert from a monitoring protocol like
-`AOP-SENTINEL-SCAN-001`, this playbook ingests the dissonance data, synthesizes a new DQB artifact using a standardized
-template, and registers the new quest on the Dissonance Quest Board.
+  `AOP-SENTINEL-SCAN-001`, this playbook ingests the dissonance data, synthesizes a new DQB artifact using a standardized
+  template, and registers the new quest on the Dissonance Quest Board.
 - **Why (Rationale)**: To close the loop between error detection and remediation. This protocol ensures that critical
-issues are never just logged and forgotten; they are automatically converted into actionable tasks, making the system's
-health and architectural debt visible and manageable.
+  issues are never just logged and forgotten; they are automatically converted into actionable tasks, making the system's
+  health and architectural debt visible and manageable.
 
 ## III. Core Operational Framework
 

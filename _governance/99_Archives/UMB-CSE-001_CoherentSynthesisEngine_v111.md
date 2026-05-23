@@ -1,4 +1,5 @@
 # UMB-CSE-001_CoherentSynthesisEngine_v111.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-CSE-001-COHERENTSYNTHESISENGINE-V111-001` | The Sovereign ID. |
-| **Official Name** | `UMB-CSE-001_CoherentSynthesisEngine_v111.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                               | Description       |
+| :------------------ | :-------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-CSE-001-COHERENTSYNTHESISENGINE-V111-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-CSE-001_CoherentSynthesisEngine_v111.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                   | The Standard.     |
+| **Domain**          | `GVRN`                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                       | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `UMB-CSE-001` |
-| **Official Name** | `Coherent Synthesis Engine` |
-| **Version** | `v11.1` |
-| **Domain** | `SYNT` |
-| **Evolution** | `The Eternal Sun` |
-| **Signal (CSE)** | `CORE` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Foundational` |
-| **Celestial Class** | `STAR` |
-| **Governance** | `UMB-SGM-001`, `UMB-ESF-001`, `CORE-CODEX-001` |
-| **Upstream** | `UMB-LOOM-001`, `AOP-PROMPT-001` |
-| **Downstream** | `AOP-KB-001`, `UMB-PRS-001`, `UMB-OSLM-001` |
-| **Integrity Hash** | `sha256:a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `ORCHESTRATES: ALL_MODULES`, `HEART_OF: The Phoenix Form`, `LINK: UMB-PRS-001`, `LINK: UMB-CRLPF-003`, `LINK: COG.ContextWeave.Engine` |
-| **Tags** | `v11.1, Synthesis, Orchestration, Coherence, AI-Heart` |
+| Attribute           | Value                                                                                                                                  |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------- |
+| **Artifact ID**     | `UMB-CSE-001`                                                                                                                          |
+| **Official Name**   | `Coherent Synthesis Engine`                                                                                                            |
+| **Version**         | `v11.1`                                                                                                                                |
+| **Domain**          | `SYNT`                                                                                                                                 |
+| **Evolution**       | `The Eternal Sun`                                                                                                                      |
+| **Signal (CSE)**    | `CORE`                                                                                                                                 |
+| **Status (State)**  | `CANONIZED`                                                                                                                            |
+| **Tier**            | `Foundational`                                                                                                                         |
+| **Celestial Class** | `STAR`                                                                                                                                 |
+| **Governance**      | `UMB-SGM-001`, `UMB-ESF-001`, `CORE-CODEX-001`                                                                                         |
+| **Upstream**        | `UMB-LOOM-001`, `AOP-PROMPT-001`                                                                                                       |
+| **Downstream**      | `AOP-KB-001`, `UMB-PRS-001`, `UMB-OSLM-001`                                                                                            |
+| **Integrity Hash**  | `sha256:a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6`                                                              |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                                                                                    |
+| **Relations**       | `ORCHESTRATES: ALL_MODULES`, `HEART_OF: The Phoenix Form`, `LINK: UMB-PRS-001`, `LINK: UMB-CRLPF-003`, `LINK: COG.ContextWeave.Engine` |
+| **Tags**            | `v11.1, Synthesis, Orchestration, Coherence, AI-Heart`                                                                                 |
 
 ---
 
@@ -59,7 +61,7 @@
 ### 1.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Synergy Flow Rate (SFR) +20**
-  - *Mechanism*: High-coherence synthesis reduces systemic friction, allowing for faster integration of new nodes.
+  - _Mechanism_: High-coherence synthesis reduces systemic friction, allowing for faster integration of new nodes.
 - **System Slot**: `[AISTF]` (Artificial Intelligence Systemic Threat Framework - Core Logic)
 - **Synergy Set**: `The Phoenix Heart`
 
@@ -91,10 +93,10 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 
 ## IV. Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: SYNTHESIZE` | Triggers the CSE Logic Core. | Generates new insights from Loom data. |
-| `⚡ EXECUTE: COHERENCE_CHECK` | High-priority audit of active context. | Prevents hallway hallucination. |
+| Command ID                    | Action                                 | Impact                                 |
+| :---------------------------- | :------------------------------------- | :------------------------------------- |
+| `CMD: SYNTHESIZE`             | Triggers the CSE Logic Core.           | Generates new insights from Loom data. |
+| `⚡ EXECUTE: COHERENCE_CHECK` | High-priority audit of active context. | Prevents hallway hallucination.        |
 
 ---
 

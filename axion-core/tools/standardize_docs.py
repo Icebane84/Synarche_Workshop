@@ -1,5 +1,4 @@
-"""
-# TOOL-EMPR-002: Doc Standardizer (Emperor's Law)
+"""# TOOL-EMPR-002: Doc Standardizer (Emperor's Law).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -56,7 +55,9 @@ import re
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
-TARGET_DIR = r"c:\Users\Chris\_Desktop_Vault\dev\rosetta-stone_-the-phoenix-protocol-(cast)\docs"
+TARGET_DIR = (
+    r"c:\Users\Chris\_Desktop_Vault\dev\rosetta-stone_-the-phoenix-protocol-(cast)\docs"
+)
 NEW_VERSION = "v11.0"
 
 
@@ -76,10 +77,14 @@ def update_file_content(filepath: str) -> bool:
         return f"| **Version** | `{NEW_VERSION}` |"
 
     # Try matching with backticks first
-    content = re.sub(r"\|\s*\*\*Version\*\*\s*\|\s*`?v\d+\.\d+`?\s*\|", version_replacer, content)
+    content = re.sub(
+        r"\|\s*\*\*Version\*\*\s*\|\s*`?v\d+\.\d+`?\s*\|", version_replacer, content
+    )
 
     # Also update the title section if it mentions version: **Version:** v11.0
-    content = re.sub(r"\*\*Version:\*\* v\d+\.\d+", f"**Version:** {NEW_VERSION}", content)
+    content = re.sub(
+        r"\*\*Version:\*\* v\d+\.\d+", f"**Version:** {NEW_VERSION}", content
+    )
 
     # 3. Check for Actionable Prompt Packet (Footer)
     packet_markers = ["Actionable Prompt Packet", "Catalyst Prompt Packets"]
@@ -129,7 +134,9 @@ def rename_file(filename: str) -> str:
 def main() -> None:
     logger.info(f"Standardizing docs in {TARGET_DIR} to {NEW_VERSION}...\n")
 
-    files = [f for f in os.listdir(TARGET_DIR) if f.endswith(".md") and f != "README.md"]
+    files = [
+        f for f in os.listdir(TARGET_DIR) if f.endswith(".md") and f != "README.md"
+    ]
 
     renamed_count = 0
     updated_count = 0
@@ -154,7 +161,9 @@ def main() -> None:
                 logger.error(f"  [ERROR] Could not rename {f}: {e}")
 
     logger.info("-" * 40)
-    logger.info(f"Operation Complete. Content Updates: {updated_count}, Renames: {renamed_count}")
+    logger.info(
+        f"Operation Complete. Content Updates: {updated_count}, Renames: {renamed_count}"
+    )
 
 
 if __name__ == "__main__":

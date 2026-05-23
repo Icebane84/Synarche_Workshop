@@ -22,7 +22,9 @@ Last Sync: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
     for item in sorted(items):
         readme_content += f"- **{item}**\n"
 
-    readme_content += "\n---\n`[OMNI-ANCHOR] ID: SYNG.NAV.Hub VER: v15.0 [OMEGA] STATUS: ACTIVE`"
+    readme_content += (
+        "\n---\n`[OMNI-ANCHOR] ID: SYNG.NAV.Hub VER: v15.0 [OMEGA] STATUS: ACTIVE`"
+    )
 
     with open(os.path.join(path, "README.md"), "w", encoding="utf-8") as f:
         f.write(readme_content)
@@ -35,8 +37,14 @@ def sync_hubs() -> None:
     for domain in os.listdir(skills_root):
         domain_path = os.path.join(skills_root, domain)
         if os.path.isdir(domain_path):
-            skills = [d for d in os.listdir(domain_path) if os.path.isdir(os.path.join(domain_path, d))]
-            update_readme(domain_path, f"Skills: {domain.capitalize()}", skills, "Skills")
+            skills = [
+                d
+                for d in os.listdir(domain_path)
+                if os.path.isdir(os.path.join(domain_path, d))
+            ]
+            update_readme(
+                domain_path, f"Skills: {domain.capitalize()}", skills, "Skills"
+            )
 
     # Sync Workflow Hubs
     workflows_root = os.path.join(BASE_DIR, "workflows")
@@ -44,7 +52,9 @@ def sync_hubs() -> None:
         category_path = os.path.join(workflows_root, category)
         if os.path.isdir(category_path):
             workflows = [
-                f.replace(".md", "") for f in os.listdir(category_path) if f.endswith(".md") and f != "README.md"
+                f.replace(".md", "")
+                for f in os.listdir(category_path)
+                if f.endswith(".md") and f != "README.md"
             ]
             update_readme(
                 category_path,

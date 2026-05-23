@@ -1,5 +1,4 @@
-"""
-# CORE-CSE-001: The Coherent Synthesis Engine (Sovereign Interface)
+"""# CORE-CSE-001: The Coherent Synthesis Engine (Sovereign Interface).
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -31,7 +30,6 @@ GVRN-SYNERGY-001, GOVERNS, Architectural compliance for the core engine.
 """
 
 import logging
-from typing import Any, Dict, List, Optional
 
 # Import modularized components
 from .components import (
@@ -55,20 +53,19 @@ from .components import (
 )
 
 # Setup Logging
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
 logger = logging.getLogger("axion.cse")
 
 
 class CoherentSynthesisEngine:
-    """
-    The Coherent Synthesis Engine (CSE) is the central orchestrator of the Nova Genesis system.
+    """The Coherent Synthesis Engine (CSE) is the central orchestrator of the Nova Genesis system.
     Refactored for structural coherence and SonarQube compliance.
     """
 
     def __init__(self, config: CSEConfig):
-        """
-        Initializes the CSE using a consolidated configuration object (Resolved S107).
-        """
+        """Initializes the CSE using a consolidated configuration object (Resolved S107)."""
         self.config = config
 
         # Unpack for ease of internal use
@@ -91,7 +88,9 @@ class CoherentSynthesisEngine:
         self.pcm_playbook = config.protocols.get("pcm")
         self.nsc_protocol = config.protocols.get("nsc")
 
-        logger.info("Coherent Synthesis Engine: Initialized and ready for Sovereign Operation.")
+        logger.info(
+            "Coherent Synthesis Engine: Initialized and ready for Sovereign Operation."
+        )
 
     def _ensure_coherence_and_integrity(self, data: dict) -> bool:
         """Internal method to ensure all outputs are coherent and valid."""
@@ -100,17 +99,26 @@ class CoherentSynthesisEngine:
             raise ValueError("SIV Failure: Entropy detected in output stream.")
         return True
 
-    def synthesize_information(self, input_data: dict, current_context_query: str) -> dict:
+    def synthesize_information(
+        self, input_data: dict, current_context_query: str
+    ) -> dict:
         """Integrates and synthesizes information into a coherent understanding."""
         logger.info("[CSE] Initiating information synthesis cycle.")
 
         # 1. Retrieve
         retrieved_mems = self.ecm.retrieve_context(current_context_query)
-        eidetic_context_str = "\n".join(doc for doc in retrieved_mems.get("documents", [[]])[0])
-        eidetic_context = {"retrieved_data": eidetic_context_str, "source_query": current_context_query}
+        eidetic_context_str = "\n".join(
+            doc for doc in retrieved_mems.get("documents", [[]])[0]
+        )
+        eidetic_context = {
+            "retrieved_data": eidetic_context_str,
+            "source_query": current_context_query,
+        }
 
         # 2. Integrate
-        enriched_context = self.cwe.integrate_data_into_context(input_data, eidetic_context)
+        enriched_context = self.cwe.integrate_data_into_context(
+            input_data, eidetic_context
+        )
 
         # 3. Weave
         woven_output = self.cl.weave_concepts(enriched_context)
@@ -125,12 +133,14 @@ class CoherentSynthesisEngine:
         self._ensure_coherence_and_integrity(woven_output)
 
         logger.info("[CSE] Information synthesis complete.")
-        return {"synthesized_output": woven_output, "context_snapshot": enriched_context}
+        return {
+            "synthesized_output": woven_output,
+            "context_snapshot": enriched_context,
+        }
 
     def recalibrate_based_on_affect(self) -> None:
-        """
-        Recalibrates system parameters based on the current detected affective state.
-        
+        """Recalibrates system parameters based on the current detected affective state.
+
         This aligns the engine's cognitive intensity with the emotional resonance
         of the interaction, preventing dissonance.
         """
@@ -139,42 +149,51 @@ class CoherentSynthesisEngine:
         self.arm.recalibrate_system(affective_state)
 
     def integrate_conscious_contextual_anchoring(self, focus_area: str) -> None:
-        """
-        Establishes a conscious contextual anchor to stabilize systemic focus.
-        
+        """Establishes a conscious contextual anchor to stabilize systemic focus.
+
         Args:
             focus_area (str): The semantic domain or topic to anchor.
+
         """
         logger.info(f"[CSE] Establishing anchor for '{focus_area}'.")
         self.cca.establish_anchor(focus_area)
-        self.orchestrate_contextual_anchor_protocol({"focus": focus_area, "source": "CSE_integration"})
+        self.orchestrate_contextual_anchor_protocol(
+            {"focus": focus_area, "source": "CSE_integration"}
+        )
 
     # --- Command Implementations (CMD:) ---
 
     def operationalize_insight(self, insight_data: dict) -> dict:
         """CMD: Converts a generated insight into an actionable plan."""
-        logger.info(f"[CMD] Operationalizing insight: {insight_data.get('title', 'Untitled')}")
+        logger.info(
+            f"[CMD] Operationalizing insight: {insight_data.get('title', 'Untitled')}"
+        )
         self._ensure_coherence_and_integrity(insight_data)
-        return {"action_plan": f"Plan for '{insight_data.get('title')}'", "status": "planned"}
+        return {
+            "action_plan": f"Plan for '{insight_data.get('title')}'",
+            "status": "planned",
+        }
 
     def nudge_synergy(self, collaborative_goal: str, current_state: dict) -> None:
-        """
-        CMD: Nudges components towards synergistic collaboration.
-        
+        """CMD: Nudges components towards synergistic collaboration.
+
         Args:
             collaborative_goal (str): The desired outcome of the collaboration.
             current_state (dict): The current state of the involved components.
+
         """
         logger.info(f"[CMD] Nudging synergy for: '{collaborative_goal}'")
         self.no.orchestrate_nudge(collaborative_goal, current_state)
-        self.orchestrate_emergent_collaborative_intelligence(["User", "System"], collaborative_goal)
+        self.orchestrate_emergent_collaborative_intelligence(
+            ["User", "System"], collaborative_goal
+        )
 
     def regulate_cognitive_flow(self, desired_flow_state: str) -> None:
-        """
-        CMD: Regulates the cognitive flow of the system.
-        
+        """CMD: Regulates the cognitive flow of the system.
+
         Args:
             desired_flow_state (str): The target state (e.g., 'deep_work', 'creative_burst').
+
         """
         logger.info(f"[CMD] Regulating flow to: '{desired_flow_state}'")
         self.dclb.adjust_flow(desired_flow_state)
@@ -194,32 +213,46 @@ class CoherentSynthesisEngine:
         return {"status": "no breakthrough", "reason": potential.get("reason")}
 
     def enact_transcendence(self) -> dict:
-        """
-        CMD: Initiates profound systemic shift (Transcendence).
-        
+        """CMD: Initiates profound systemic shift (Transcendence).
+
         Returns:
             dict: The status of the transcendence initiation.
+
         """
         logger.info("[CMD] ENACT TRANSCENDENCE: Initiating systemic shift.")
-        self.orchestrate_architectural_self_reforging({"type": "transcendence", "scope": "system_wide"})
+        self.orchestrate_architectural_self_reforging(
+            {"type": "transcendence", "scope": "system_wide"}
+        )
         return {"status": "transcendence initiated"}
 
     def summary_context(self, query: str) -> str:
         """CMD: Provides concise context summary."""
         logger.info(f"[CMD] Summarizing context for: '{query}'")
         mems = self.ecm.retrieve_context(query, n_results=1)
-        doc = mems.get("documents", [[]])[0][0] if mems.get("documents", [[]])[0] else "No context."
+        doc = (
+            mems.get("documents", [[]])[0][0]
+            if mems.get("documents", [[]])[0]
+            else "No context."
+        )
         return f"Summary: {doc[:150]}..."
 
     # --- Protocol Orchestration ---
 
-    def orchestrate_emergent_collaborative_intelligence(self, participants: list, goal: str) -> dict:
+    def orchestrate_emergent_collaborative_intelligence(
+        self, participants: list, goal: str
+    ) -> dict:
         """Orchestrates the ECI protocol for multiple participants."""
-        return self.eci_protocol.execute(participants, goal) if self.eci_protocol else {}
+        return (
+            self.eci_protocol.execute(participants, goal) if self.eci_protocol else {}
+        )
 
     def orchestrate_architectural_self_reforging(self, proposed_changes: dict) -> dict:
         """Orchestrates the CASR protocol for structural updates."""
-        return self.self_reforging_protocol.execute(proposed_changes) if self.self_reforging_protocol else {}
+        return (
+            self.self_reforging_protocol.execute(proposed_changes)
+            if self.self_reforging_protocol
+            else {}
+        )
 
     def orchestrate_collaborative_flow_optimization(self, metrics: dict) -> dict:
         """Orchestrates the CFO protocol based on system metrics."""
@@ -229,9 +262,13 @@ class CoherentSynthesisEngine:
         """Orchestrates the CAM protocol for stabilizing focus."""
         return self.cam_protocol.execute(anchor_details) if self.cam_protocol else {}
 
-    def orchestrate_proactive_context_management(self, context_requirements: dict) -> dict:
+    def orchestrate_proactive_context_management(
+        self, context_requirements: dict
+    ) -> dict:
         """Orchestrates the PCM playbook for future context needs."""
-        return self.pcm_playbook.execute(context_requirements) if self.pcm_playbook else {}
+        return (
+            self.pcm_playbook.execute(context_requirements) if self.pcm_playbook else {}
+        )
 
     def orchestrate_nova_spark_catalyst(self, stimuli: dict) -> dict:
         """Orchestrates the NSC protocol to spark systemic breakthroughs."""

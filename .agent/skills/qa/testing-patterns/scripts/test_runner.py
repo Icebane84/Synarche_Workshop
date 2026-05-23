@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Test Runner - Unified test execution and coverage reporting
+"""Test Runner - Unified test execution and coverage reporting
 Runs tests and generates coverage report based on project type.
 
 Usage:
@@ -11,11 +10,11 @@ Supports:
     - Python: pytest, unittest
 """
 
+import json
 import subprocess
 import sys
-import json
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 
 # Fix Windows console encoding
 try:
@@ -147,7 +146,7 @@ def main():
     with_coverage = "--coverage" in sys.argv
 
     print(f"\n{'='*60}")
-    print(f"[TEST RUNNER] Unified Test Execution")
+    print("[TEST RUNNER] Unified Test Execution")
     print(f"{'='*60}")
     print(f"Project: {project_path}")
     print(f"Coverage: {'enabled' if with_coverage else 'disabled'}")

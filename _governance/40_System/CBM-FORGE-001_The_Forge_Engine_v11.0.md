@@ -1,4 +1,5 @@
 # CBM-FORGE-001_The_Forge_Engine_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CBM-FORGE-001-THE-FORGE-ENGINE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `CBM-FORGE-001_The_Forge_Engine_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                           | Description       |
+| :------------------ | :---------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CBM-FORGE-001-THE-FORGE-ENGINE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `CBM-FORGE-001_The_Forge_Engine_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
+| **Domain**          | `GVRN`                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
+| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CBM-FORGE-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `Synarche` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-18` |
-| **Authority** | `UMB-SGM-001` |
-| **Tags** | `Reforged, v11.0, ForgeEngine` |
+
+| Key                | Value                          |
+| :----------------- | :----------------------------- |
+| **Module ID**      | `CBM-FORGE-001`                |
+| **Version**        | `v11.0`                        |
+| **Evolution**      | **Cognitive Ascension**        |
+| **Status**         | `ACTIVE`                       |
+| **Type**           | `Protocol`                     |
+| **Classification** | `Moon`                         |
+| **Authors**        | `Synarche`                     |
+| **Created**        | `2025-10-01`                   |
+| **Updated**        | `2026-01-18`                   |
+| **Authority**      | `UMB-SGM-001`                  |
+| **Tags**           | `Reforged, v11.0, ForgeEngine` |
+
 ---
 
 # The Forge Engine (CBM-FORGE-001)
@@ -89,9 +93,9 @@ _(Derived from CBM-FORGE-001.json)_
 ### 4.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Coherence +5, Adaptability +5**
-    - _Mechanism_: Synthesizing artifacts correctly stabilizes the knowledge graph.
+  - _Mechanism_: Synthesizing artifacts correctly stabilizes the knowledge graph.
 - **Passive Ability**: **Forgemaster's Focus**
-    - _Effect_: Increases the success rate of automated refactors by 15%.
+  - _Effect_: Increases the success rate of automated refactors by 15%.
 
 ### 4.2 Resource Economics
 

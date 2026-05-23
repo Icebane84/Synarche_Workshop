@@ -1,8 +1,7 @@
-"""
-IDENTIFICATION: TOOL-FORGE-001
+"""IDENTIFICATION: TOOL-FORGE-001
 VERSION: v15.0 [OMEGA]
 STATUS: [CANONIZED]
-TIMESTAMP: 2026-03-24
+TIMESTAMP: 2026-03-24.
 """
 
 #!/usr/bin/env python3
@@ -46,7 +45,9 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8")
 
 # Default path relative to this script
-ARTIFACT_PATH = os.path.join(os.path.dirname(__file__), "..", "CBM-FORGE-001_The_Forge_Engine.md")
+ARTIFACT_PATH = os.path.join(
+    os.path.dirname(__file__), "..", "CBM-FORGE-001_The_Forge_Engine.md"
+)
 
 
 def load_artifact(path=None):
@@ -126,7 +127,9 @@ def parse_tags(content):
 def update_artifact_text(content, stats):
     """Update RPG stats in the markdown text."""
     # Update Level
-    content = re.sub(r"(\*\s*\*\*Level:\*\*\s*`)(\d+)(`)", f"\g<1>{stats['level']}\g<3>", content)
+    content = re.sub(
+        r"(\*\s*\*\*Level:\*\*\s*`)(\d+)(`)", f"\g<1>{stats['level']}\g<3>", content
+    )
 
     # Update XP
     content = re.sub(
@@ -250,7 +253,9 @@ def print_hud(stats):
     filled = int(pct * bar_len)
     bar = "█" * filled + "░" * (bar_len - filled)
 
-    print(f"   ✨ XP:        [{GREEN}{bar}{RESET}] {stats['xp_current']}/{stats['xp_max']}")
+    print(
+        f"   ✨ XP:        [{GREEN}{bar}{RESET}] {stats['xp_current']}/{stats['xp_max']}"
+    )
     print(f"   🧠 Coherence: {YELLOW}{stats['coherence']}{RESET}")
     print(f"   🚀 Velocity:  {YELLOW}{stats['velocity']}{RESET}")
     print(f"{BOLD}{'=' * 30}{RESET}\n")
@@ -259,9 +264,13 @@ def print_hud(stats):
 def main():
     parser = argparse.ArgumentParser(description="Forge Gamification CLI")
     parser.add_argument("--target", help="Target Artifact (Primary)")
-    parser.add_argument("--target-b", help="Secondary Target Artifact (for Synergy checks)")
+    parser.add_argument(
+        "--target-b", help="Secondary Target Artifact (for Synergy checks)"
+    )
     parser.add_argument("--add-xp", type=int, help="Amount of XP to add")
-    parser.add_argument("--level-up", action="store_true", help="Force a Level Up event")
+    parser.add_argument(
+        "--level-up", action="store_true", help="Force a Level Up event"
+    )
     parser.add_argument("--view-stats", action="store_true", help="View current stats")
     parser.add_argument(
         "--check-synergy",
@@ -284,7 +293,9 @@ def main():
         print_hud(stats)
     elif args.check_synergy:
         if not args.target or not args.target_b:
-            print(f"{RED}Error: --check-synergy requires --target and --target-b{RESET}")
+            print(
+                f"{RED}Error: --check-synergy requires --target and --target-b{RESET}"
+            )
         else:
             check_synergy(args.target, args.target_b)
     else:

@@ -9,6 +9,7 @@
 ---
 
 # UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,24 +22,22 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.OSLM.001` | The Sovereign ID. |
-| **Official Name** | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.OSLM.001`                                      | The Sovereign ID. |
+| **Official Name**   | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 # UMB-OSLM-001: Omni-Log Synergistic Links Matrix
 
 > **Domain**: GVRN (Governance)
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
-
-
 
 ## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: Standard
 
@@ -50,20 +49,20 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1` |
-| **2. Official Name** | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md` |
-| **3. Version** | **7.1 (Pre-Flight Verified)** |
-| **4. Provenance** | **Reforged: 2026-01-10** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[STAR]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: OGLN.Core.Governance.Codex` |
+| Field                  | Value                                                |
+| :--------------------- | :--------------------------------------------------- |
+| **1. Artifact ID**     | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1`    |
+| **2. Official Name**   | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md` |
+| **3. Version**         | **7.1 (Pre-Flight Verified)**                        |
+| **4. Provenance**      | **Reforged: 2026-01-10**                             |
+| **5. Domain**          | `GVRN`                                               |
+| **6. Evolution**       | **Cognitive Ascension**                              |
+| **7. Celestial Class** | `[STAR]`                                             |
+| **8. Tier**            | **Operational**                                      |
+| **9. State**           | `[ACTIVE]`                                           |
+| **10. Ethos**          | **Guardian of Coherence**                            |
+| **11. Catalyst**       | **System Refactor**                                  |
+| **12. Relations**      | `LINK: OGLN.Core.Governance.Codex`                   |
 
 ---
 
@@ -113,23 +112,23 @@ Compliance with **CHECKLIST-PREFLIGHT-001** mandates strict typing:
 
 ## IV. Master Synergistic Matrix
 
-> *(Reflected Snapshot: Cycle 001)*
+> _(Reflected Snapshot: Cycle 001)_
 
-| Artifact Name | ID | Type | Synergistic Links |
-| :--- | :--- | :--- | :--- |
-| **Phoenix Codex** | `CODEX` | **UMB** | Gov: `PGPS`, `LOOM`. Ref: `CPD`. |
-| **AI Codex** | `CPD` | **UMB** | Uses: `AISTF`. Ok: `CODEX`. |
-| **Shared Reality** | `CRS` | **UMB** | Align: `CPD`. Gov: `CSL`. |
-| **Musashi Align** | `MAP` | **UMB** | Def: `10 Pillars`. Meas: `Score`. |
-| **AISTF Templ.** | `SELT` | **SELT** | Obs: `PGPS`. Gen: `SELT-001`. |
-| **Phoenix Pipe** | `PGP` | **UWB** | Gov: `CRP2`. Trig: `MAR`. |
-| **Pres. Standard** | `PGPS` | **AOP** | Enf: `CODEX`. Used: All `SELT`. |
-| **Struct. Coher.** | `PCDS` | **AOP** | Ok: `SIVC`. Gov: Naming. |
-| **Synth Engine** | `CSE` | **UMB** | Ops: `LOOM`. Dir: `AISTF`. |
-| **Cog. Loom** | `LOOM` | **UMB** | Store: `CSL`. Read: `CSE`. |
-| **Omni-Log** | `OSLM` | **UMB** | Idx: `PRS`. Fill: `MAR`. |
-| **KB Opt.** | `KB` | **AOP** | Opt: `LOOM`. Exec: `CSE`. |
-| **Log Templ.** | `SELT` | **UMB** | Gen: `SELT-001`. Feed: `AISTF`. |
+| Artifact Name      | ID      | Type     | Synergistic Links                 |
+| :----------------- | :------ | :------- | :-------------------------------- |
+| **Phoenix Codex**  | `CODEX` | **UMB**  | Gov: `PGPS`, `LOOM`. Ref: `CPD`.  |
+| **AI Codex**       | `CPD`   | **UMB**  | Uses: `AISTF`. Ok: `CODEX`.       |
+| **Shared Reality** | `CRS`   | **UMB**  | Align: `CPD`. Gov: `CSL`.         |
+| **Musashi Align**  | `MAP`   | **UMB**  | Def: `10 Pillars`. Meas: `Score`. |
+| **AISTF Templ.**   | `SELT`  | **SELT** | Obs: `PGPS`. Gen: `SELT-001`.     |
+| **Phoenix Pipe**   | `PGP`   | **UWB**  | Gov: `CRP2`. Trig: `MAR`.         |
+| **Pres. Standard** | `PGPS`  | **AOP**  | Enf: `CODEX`. Used: All `SELT`.   |
+| **Struct. Coher.** | `PCDS`  | **AOP**  | Ok: `SIVC`. Gov: Naming.          |
+| **Synth Engine**   | `CSE`   | **UMB**  | Ops: `LOOM`. Dir: `AISTF`.        |
+| **Cog. Loom**      | `LOOM`  | **UMB**  | Store: `CSL`. Read: `CSE`.        |
+| **Omni-Log**       | `OSLM`  | **UMB**  | Idx: `PRS`. Fill: `MAR`.          |
+| **KB Opt.**        | `KB`    | **AOP**  | Opt: `LOOM`. Exec: `CSE`.         |
+| **Log Templ.**     | `SELT`  | **UMB**  | Gen: `SELT-001`. Feed: `AISTF`.   |
 
 ---
 
@@ -157,8 +156,7 @@ artifacts, eliminating ambiguity in the **Cognitive Loom**.
 
 ---
 
-> *Governed by the [Phoenix Codex (CODEX-001)](file:///c:/Users/Chris/_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/docs/CODEX-001_ThePhoenixCodex_v10.0.md)*
-
+> _Governed by the [Phoenix Codex (CODEX-001)](<file:///c:/Users/Chris/\_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/docs/CODEX-001*ThePhoenixCodex_v10.0.md>)*
 
 ### V. RPG Framework Integration (BLK-RPG-001)
 

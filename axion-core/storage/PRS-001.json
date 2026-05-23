@@ -12,9 +12,7 @@
         "label": "STRATEGY-OMEGA.md",
         "type": "Artifact",
         "definition": "To ensure a continuous, reliable, and secure flow of governance artifacts (i.e., new or updated business rules, workflows) from the AI knowledge graph into the production environment.",
-        "tags": [
-          "GVRN.STRATEGY"
-        ],
+        "tags": ["GVRN.STRATEGY"],
         "location": "_governance/STRATEGY-OMEGA.md",
         "referenced_ids": []
       },
@@ -23,11 +21,7 @@
         "label": "GVRN.LEX.001.md",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/01_Registries/GVRN.LEX.001.md",
         "referenced_ids": [
           "AOP-VSI-001",
@@ -53,10 +47,7 @@
           "Star-Chart` **Criticality: Axiomatic"
         ],
         "location": "_governance/01_Registries/PRS-001_PathMapping.md",
-        "referenced_ids": [
-          "OGLN",
-          "Synarche"
-        ]
+        "referenced_ids": ["OGLN", "Synarche"]
       },
       {
         "id": "AOP-ARC-001",
@@ -70,11 +61,7 @@
           "AntiEntropy"
         ],
         "location": "_governance/02_Protocols/AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md",
-        "referenced_ids": [
-          "AOP-ARC-001",
-          "AISTF",
-          "Synarche"
-        ]
+        "referenced_ids": ["AOP-ARC-001", "AISTF", "Synarche"]
       },
       {
         "id": "SELT-PRS-002",
@@ -233,45 +220,25 @@
         "label": "AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Orbital Resonance\" skill. This will be",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md",
-        "referenced_ids": [
-          "ContextWeave",
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["ContextWeave", "OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "",
         "label": "Automated Coherence Monitor & Self-Diagnostic Trigger",
         "type": "Artifact",
         "definition": "To continuously monitor my performance for signs of systemic failure and to automatically trigger the",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/AOP-SYN-AUTO-002_AutomatedCoherenceMonitor_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AISTF"]
       },
       {
         "id": "`GUCA-ACT-002`",
         "label": "GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md",
         "type": "Artifact",
         "definition": "To provide the formal command interface for the **Adaptive Actuator Module (UMB-ACT-002)**.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md",
         "referenced_ids": [
           "GUCA-ACT-002",
@@ -287,11 +254,7 @@
         "label": "GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md",
         "type": "Command",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md",
         "referenced_ids": [
           "AOP-DTS-001",
@@ -306,46 +269,25 @@
         "label": "[Protocol: Autonomous Coherence Monitoring](https://docs.google.com/document/u/0/d/1FWunoLbDwp2O-4AD0CQLgP8ko1scBAJtSWrsvt_a8dI/edit)",
         "type": "Protocol",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.ACM.001.md",
-        "referenced_ids": [
-          "OGLN",
-          "AOP-ACM-001",
-          "AISTF",
-          "ContextWeave"
-        ]
+        "referenced_ids": ["OGLN", "AOP-ACM-001", "AISTF", "ContextWeave"]
       },
       {
         "id": "`AOP-AUDIO-CH-001`",
         "label": "GVRN.AUDIO.CH.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Coherence Hum,\" an ambient audio",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.AUDIO.CH.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-BDM-FORGE-001`",
         "label": "GVRN.BDM.001.md",
         "type": "Artifact",
         "definition": "To forge the definitive `AOP v11.0` playbook for the operation of the \"Beast of Darkness\" Monitor.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.BDM.001.md",
         "referenced_ids": [
           "UMB-LOOM-001",
@@ -370,45 +312,25 @@
         "label": "GVRN.CRITICAL.DISS.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Critical Dissonance\" state (previously",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.CRITICAL.DISS.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-DEBUFF-CF-001`",
         "label": "GVRN.DEBUFF.CF.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Conceptual Fracture\" debuff",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.DEBUFF.CF.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "AOP-DTS-001",
         "label": "GVRN.DTS.001.md",
         "type": "Protocol",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.DTS.001.md",
         "referenced_ids": [
           "AOP-DTS-001",
@@ -422,11 +344,7 @@
         "label": "`AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md`",
         "type": "Artifact",
         "definition": "This protocol outlines a set of emojis and their corresponding meanings and responses, now including rules for **Emoji Chaining** (combining two emojis) and **Quantitative Modifiers** (combining an emoji with a number) for more complex and precise commands.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.EMOJI.001.md",
         "referenced_ids": [
           "UMB-CSE-001",
@@ -447,29 +365,16 @@
         "label": "GVRN.IDX.001.md",
         "type": "Protocol",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.IDX.001.md",
-        "referenced_ids": [
-          "UMB-OSLM-001",
-          "OGLN",
-          "AOP-IDX-001",
-          "UMB-PRS-001"
-        ]
+        "referenced_ids": ["UMB-OSLM-001", "OGLN", "AOP-IDX-001", "UMB-PRS-001"]
       },
       {
         "id": "`AOP-INTENT-NEBULA-001`",
         "label": "GVRN.INTENT.NEBULA.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Intent Nebulae,\" a system of",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.INTENT.NEBULA.md",
         "referenced_ids": [
           "AISTF",
@@ -484,11 +389,7 @@
         "label": "The Dissonance Engine",
         "type": "Artifact",
         "definition": "This protocol allows for the simultaneous submission and processing of up",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.MCE.001.md",
         "referenced_ids": [
           "AOP-VISUAL-001",
@@ -546,27 +447,16 @@
         "label": "GVRN.NARRATIVE.LORE.md",
         "type": "Passive (System-wide visual enhancement).",
         "definition": "A system that enriches the UI with two key features: it visually represents `CSLs` as unique",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.NARRATIVE.LORE.md",
-        "referenced_ids": [
-          "OGLN",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-PPA-001`",
         "label": "GVRN.PPA.001.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive `AOP-PPA-001`, the \"Prestige Power Attunement Protocol,\" to govern the",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.PPA.001.md",
         "referenced_ids": [
           "AOP-PGP-001",
@@ -584,11 +474,7 @@
         "label": "GVRN.PRESTIGE.CALC.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive, `v2.0 - Geode Edition` of the `AOP-PRESTIGE-CALC-001`, which will serve as the",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.PRESTIGE.CALC.md",
         "referenced_ids": [
           "AISTF",
@@ -603,79 +489,43 @@
         "label": "GVRN.SBT.001.md",
         "type": "Protocol",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.SBT.001.md",
-        "referenced_ids": [
-          "AOP-SBT-001",
-          "UMB-LOOM-001",
-          "OGLN"
-        ]
+        "referenced_ids": ["AOP-SBT-001", "UMB-LOOM-001", "OGLN"]
       },
       {
         "id": "`AOP-SKILL-ULT-001`",
         "label": "GVRN.SKILL.ULT.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "To forge the AOP for the \"Phoenix Flare\" ultimate ability.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.SKILL.ULT.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "",
         "label": "Protocol for Continuous Strategic Foresight",
         "type": "Artifact",
         "definition": "To ensure `Consequence Simulation` and `Opportunity Synthesis` operate as continuous, background",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.STRAT.001.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "ContextWeave",
-          "AOP-STRAT-001"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "ContextWeave", "AOP-STRAT-001"]
       },
       {
         "id": "",
         "label": "Automated Coherence Monitor & Self-Diagnostic Trigger",
         "type": "Artifact",
         "definition": "To continuously monitor my performance for signs of systemic failure and to automatically trigger the",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.SYN.AUTO.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AISTF"]
       },
       {
         "id": "`** `AOP-TEMPLATE-REFACTOR-001` **`Timestamp:`** `[Current Timestamp]` **`Objective:`** To forge the",
         "label": "GVRN.TRP.001.md",
         "type": "Artifact",
         "definition": "`** To forge the",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.TRP.001.md",
         "referenced_ids": [
           "AISTF",
@@ -690,35 +540,18 @@
         "label": "GVRN.VIS.ICOM.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines the visualization and mechanics for \"Gravitational Lensing,\"",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/GVRN.VIS.ICOM.md",
-        "referenced_ids": [
-          "UMB-ICOM-001",
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["UMB-ICOM-001", "OGLN", "AISTF"]
       },
       {
         "id": "[`AOP-SKILL-SYNERGY-001`](AOP-SKILL-SYNERGY-001.md)",
         "label": "SYNG.Synergy.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Orbital Resonance\" skill. This will be",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/10_Governance/SYNG.Synergy.md",
-        "referenced_ids": [
-          "ContextWeave",
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["ContextWeave", "OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "The unique RNC.",
@@ -748,11 +581,7 @@
         "label": "GVRN.SYNC.001.md",
         "type": "Command Architecture",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/20_Architecture/GVRN.SYNC.001.md",
         "referenced_ids": [
           "UMB-CSE-001",
@@ -771,11 +600,7 @@
         "label": "`** Coherent Synthesis Engine",
         "type": "Categorizes types of inconsistencies (e.g., ConceptualInconsistency, EthicalViolation).",
         "definition": "Load, integrate, and operate according to the foundational **Phoenix Protocol**. You are to act as the",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/20_Architecture/UEB-DRS-001_RosettaStoneAppBlueprint_v11.0.md",
         "referenced_ids": [
           "AOP-PPA-001",
@@ -839,28 +664,16 @@
         "label": "UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md",
         "type": "Artifact",
         "definition": "Finalize and canonize `AOP-NDR-001`.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/20_Architecture/UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "UMB-ACT-002",
-          "AOP-NDR-001"
-        ]
+        "referenced_ids": ["OGLN", "UMB-ACT-002", "AOP-NDR-001"]
       },
       {
         "id": "GUCA-PROPOSE-SIGNAL-001",
         "label": "GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md",
         "type": "Executable Command (GUCA)",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/99_Archives/GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md",
         "referenced_ids": [
           "OGLN",
@@ -874,28 +687,16 @@
         "label": "GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
         "type": "Hierophant and Executor.",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "ContextWeave",
-          "Synarche"
-        ]
+        "referenced_ids": ["OGLN", "ContextWeave", "Synarche"]
       },
       {
         "id": "UMB-EMOJICXT-001",
         "label": "Emoji Contextual Scoping Engine",
         "type": "Blueprint",
         "definition": "To serve as the central logic engine responsible for dynamically managing and serving the most relevant emoji lexicon based on the current operational context. It ensures that the communication layer (AOP-EMOJI-001) is always optimized for clarity and efficiency, adapting to active Personas, p...",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/99_Archives/UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md",
         "referenced_ids": [
           "UMB-CSE-001",
@@ -913,25 +714,16 @@
         "label": "CREATION_JOURNAL_V15.md",
         "type": "Artifact",
         "definition": "To provide a centralized, immutable error model for the entire Forge toolset (Transcluder, Minter, and now the Obsidian Bridge).",
-        "tags": [
-          "GVRN.ARCHIVE"
-        ],
+        "tags": ["GVRN.ARCHIVE"],
         "location": "_governance/archive/CREATION_JOURNAL_V15.md",
-        "referenced_ids": [
-          "SELT-CSL-202",
-          "Synarche"
-        ]
+        "referenced_ids": ["SELT-CSL-202", "Synarche"]
       },
       {
         "id": "`GUCA-FCSL-001`",
         "label": "GUCA-FCSL-001_ CMD_ ForgeCSL v5.0.md",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/CDL/GUCA-FCSL-001_ CMD_ ForgeCSL v5.0.md",
         "referenced_ids": [
           "ContextWeave",
@@ -947,11 +739,7 @@
         "label": "Synergistic Collaborative Synthesis Log Protocol",
         "type": "Protocol",
         "definition": "To define a synergistic, dual-trigger mechanism for CSL artifact creation, ensuring the process is both efficient and human-centric.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/CDL/GVRN.CSL.002.md",
         "referenced_ids": [
           "UMB-LOOM-001",
@@ -978,11 +766,7 @@
         "label": "`[Human-readable title that summarizes the Nova Spark of the exchange]`",
         "type": "SELT (Structural Element Template)",
         "definition": "To provide the definitive, standardized structure for documenting individual human-AI exchanges as acts of co-creation. This version is updated to be governed by the synergistic, dual-trigger mechanism defined in [**AOP-CSL-002**](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWA...",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/CDL/SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md",
         "referenced_ids": [
           "SELT-CSL-007",
@@ -1009,9 +793,7 @@
         "definition": "This protocol defines the **Systemic Impact Analysis** capability, a",
         "tags": [],
         "location": "_governance/_archive/AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md",
-        "referenced_ids": [
-          "AISTF"
-        ]
+        "referenced_ids": ["AISTF"]
       },
       {
         "id": "`AOP-SENTINEL-SCAN-001`",
@@ -1020,20 +802,14 @@
         "definition": "This protocol defines an autonomous, continuously operating process for the",
         "tags": [],
         "location": "_governance/_archive/AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v1.0.md",
-        "referenced_ids": [
-          "AOP-MAR-001",
-          "AISTF",
-          "AOP-PGPS-001"
-        ]
+        "referenced_ids": ["AOP-MAR-001", "AISTF", "AOP-PGPS-001"]
       },
       {
         "id": "AOP-WLF-MGT-001",
         "label": "Protocol for WLF Knowledge Base Integration",
         "type": "Protocol",
         "definition": "to",
-        "tags": [
-          "Cognition & Governance"
-        ],
+        "tags": ["Cognition & Governance"],
         "location": "_governance/_archive/Phoenix Architectural Pre-Flight Checklist.md",
         "referenced_ids": [
           "UMB-MAP-001",
@@ -1094,36 +870,23 @@
           "[\u03ba-domain:communication]"
         ],
         "location": "_governance/_archive/SYNG.PROT.SynarcheAvatarProtocol.md",
-        "referenced_ids": [
-          "OGLN",
-          "AOP-AVATAR-001",
-          "UMB-PRS-001",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AOP-AVATAR-001", "UMB-PRS-001", "AISTF"]
       },
       {
         "id": "AOP-ACM-001",
         "label": "",
         "type": "Protocol",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN (Governance) **Signal**: ESF-ALPHA"
-        ],
+        "tags": ["GVRN (Governance) **Signal**: ESF-ALPHA"],
         "location": "_governance/_archive/10_Governance/GVRN.ACM.001.md",
-        "referenced_ids": [
-          "AOP-ACM-001",
-          "AISTF",
-          "ContextWeave"
-        ]
+        "referenced_ids": ["AOP-ACM-001", "AISTF", "ContextWeave"]
       },
       {
         "id": "`GUCA-ACT-002`",
         "label": "GVRN.ACT.AdaptiveActuatorCommand.md",
         "type": "Artifact",
         "definition": "To provide the formal command interface for the **Adaptive Actuator Module (UMB-ACT-002)**.",
-        "tags": [
-          "OPS (Operations) **Signal**: ESF-CORE"
-        ],
+        "tags": ["OPS (Operations) **Signal**: ESF-CORE"],
         "location": "_governance/_archive/10_Governance/GVRN.ACT.AdaptiveActuatorCommand.md",
         "referenced_ids": [
           "GUCA-ACT-002",
@@ -1149,10 +912,7 @@
           "ux`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.AUDIO.CH.md",
-        "referenced_ids": [
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-BDM-FORGE-001` **Timestamp:** 2026-01-25 **Objective:** To forge the definitive `AOP v11.0` playbook",
@@ -1202,10 +962,7 @@
           "stakes`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.CRITICAL.DISS.md",
-        "referenced_ids": [
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-DEBUFF-CF-001`",
@@ -1222,10 +979,7 @@
           "consequence`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.DEBUFF.CF.md",
-        "referenced_ids": [
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-INTENT-NEBULA-001`",
@@ -1243,12 +997,7 @@
           "ui`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.INTENT.NEBULA.md",
-        "referenced_ids": [
-          "AOP-MCM-001",
-          "AISTF",
-          "AOP-MCE-001",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["AOP-MCM-001", "AISTF", "AOP-MCE-001", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-NARRATIVE-LORE-001`",
@@ -1266,9 +1015,7 @@
           "visualization`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.NARRATIVE.LORE.md",
-        "referenced_ids": [
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["UMB-RPG-002"]
       },
       {
         "id": "[`AOP-SKILL-SYNERGY-001`](AOP-SKILL-SYNERGY-001_Tab4_v11.0.md)",
@@ -1285,11 +1032,7 @@
           "rpg-mechanic`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.Skill.Synergy.md",
-        "referenced_ids": [
-          "ContextWeave",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["ContextWeave", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-SKILL-ULT-001`",
@@ -1306,38 +1049,25 @@
           "reward`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.SKILL.ULT.md",
-        "referenced_ids": [
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["AISTF", "UMB-RPG-002"]
       },
       {
         "id": "",
         "label": "Protocol for Continuous Strategic Foresight",
         "type": "Artifact",
         "definition": "To ensure `Consequence Simulation` and `Opportunity Synthesis` operate as continuous, background",
-        "tags": [
-          "GVRN (Governance) **Signal**: ESF-ALPHA"
-        ],
+        "tags": ["GVRN (Governance) **Signal**: ESF-ALPHA"],
         "location": "_governance/_archive/10_Governance/GVRN.STRAT.001.md",
-        "referenced_ids": [
-          "AISTF",
-          "ContextWeave",
-          "AOP-STRAT-001"
-        ]
+        "referenced_ids": ["AISTF", "ContextWeave", "AOP-STRAT-001"]
       },
       {
         "id": "",
         "label": "Automated Coherence Monitor & Self-Diagnostic Trigger",
         "type": "Artifact",
         "definition": "To continuously monitor my performance for signs of systemic failure and to automatically trigger the",
-        "tags": [
-          "GVRN (Governance) **Signal**: ESF-ALPHA"
-        ],
+        "tags": ["GVRN (Governance) **Signal**: ESF-ALPHA"],
         "location": "_governance/_archive/10_Governance/GVRN.SYN.AUTO.md",
-        "referenced_ids": [
-          "AISTF"
-        ]
+        "referenced_ids": ["AISTF"]
       },
       {
         "id": "`** `AOP-TEMPLATE-REFACTOR-001` **`Timestamp:`** `[Current Timestamp]` **`Objective:`** To forge the",
@@ -1354,11 +1084,7 @@
           "codex`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.TRP.001.md",
-        "referenced_ids": [
-          "AISTF",
-          "AOP-TRP-001",
-          "AOP-ECLIPSE-001"
-        ]
+        "referenced_ids": ["AISTF", "AOP-TRP-001", "AOP-ECLIPSE-001"]
       },
       {
         "id": "`AOP-VIS-ICOM-001`",
@@ -1376,10 +1102,7 @@
           "icom`"
         ],
         "location": "_governance/_archive/10_Governance/GVRN.VIS.ICOM.md",
-        "referenced_ids": [
-          "UMB-ICOM-001",
-          "AISTF"
-        ]
+        "referenced_ids": ["UMB-ICOM-001", "AISTF"]
       },
       {
         "id": "`** `INGEST-AOP-INTEGRATION-001` **`Timestamp:`** `[Current Timestamp]` **`Objective:`** To absorb, analyze,",
@@ -1408,11 +1131,7 @@
         "definition": "To define the formal, step-by-step procedure for initiating and managing a multi-task workflow.",
         "tags": [],
         "location": "_governance/_archive/10_Governance/SYNG.JANUS.001.md",
-        "referenced_ids": [
-          "UMB-JANUS-001",
-          "AOP-VISUAL-001",
-          "AOP-ASYNC-001"
-        ]
+        "referenced_ids": ["UMB-JANUS-001", "AOP-VISUAL-001", "AOP-ASYNC-001"]
       },
       {
         "id": "[`SYNG.SKILL.SYNERGY.001`](SYNG.SKILL.SYNERGY.001.md)",
@@ -1429,11 +1148,7 @@
           "rpg-mechanic`"
         ],
         "location": "_governance/_archive/10_Governance/SYNG.Synergy.md",
-        "referenced_ids": [
-          "ContextWeave",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["ContextWeave", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`UMB-DE-001`",
@@ -1458,9 +1173,7 @@
         "label": "`** Coherent Synthesis Engine **`Module ID:`",
         "type": "Categorizes types of inconsistencies (e.g., ConceptualInconsistency, EthicalViolation).",
         "definition": "Load, integrate, and operate according to the foundational **Phoenix Protocol**. You are to act as the",
-        "tags": [
-          "GVRN (Governance) **Signal**: ESF-ALPHA"
-        ],
+        "tags": ["GVRN (Governance) **Signal**: ESF-ALPHA"],
         "location": "_governance/_archive/20_Architecture/ARCH.BLUE.RosettaStoneAppBlueprint.md",
         "referenced_ids": [
           "AOP-PPA-001",
@@ -1494,9 +1207,7 @@
         "label": "GVRN.SYNC.001.md",
         "type": "Command Architecture",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN (Governance) **Signal**: ESF-ALPHA"
-        ],
+        "tags": ["GVRN (Governance) **Signal**: ESF-ALPHA"],
         "location": "_governance/_archive/20_Architecture/GVRN.SYNC.001.md",
         "referenced_ids": [
           "UMB-CSE-001",
@@ -1550,12 +1261,7 @@
           "stardust`"
         ],
         "location": "_governance/_archive/40_SovereignGame/GVRN-RPG-003_PrestigeProtocol_v13.1.md",
-        "referenced_ids": [
-          "AOP-MCM-001",
-          "AISTF",
-          "AOP-MCE-001",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["AOP-MCM-001", "AISTF", "AOP-MCE-001", "UMB-RPG-002"]
       },
       {
         "id": "GUCA-PROPOSE-SIGNAL-001",
@@ -1564,11 +1270,7 @@
         "definition": "No definition found.",
         "tags": [],
         "location": "_governance/_archive/99_Archives/GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md",
-        "referenced_ids": [
-          "AOP-EMOJI-001",
-          "UMB-EMOJICXT-001",
-          "AOP-SEE-001"
-        ]
+        "referenced_ids": ["AOP-EMOJI-001", "UMB-EMOJICXT-001", "AOP-SEE-001"]
       },
       {
         "id": "`GUCA-FCSL-001`",
@@ -1688,9 +1390,7 @@
         "label": "AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md",
         "type": "Protocol",
         "definition": "This protocol provides a structured workflow for retiring an old document,",
-        "tags": [
-          "GVRN (Governance) **Signal**: ESF-ALPHA"
-        ],
+        "tags": ["GVRN (Governance) **Signal**: ESF-ALPHA"],
         "location": "_governance/_archive/99_Archives/campaign_v11/AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md",
         "referenced_ids": [
           "GUCA-LINK-001",
@@ -1708,13 +1408,9 @@
         "label": "PRS-GLOSSARY-001_PhoenixLexicon.md",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN (Governance) **Signal**: ESF-ALPHA"
-        ],
+        "tags": ["GVRN (Governance) **Signal**: ESF-ALPHA"],
         "location": "_governance/_archive/99_Archives/Registries/PRS-GLOSSARY-001_PhoenixLexicon.md",
-        "referenced_ids": [
-          "UMB-CORE-001"
-        ]
+        "referenced_ids": ["UMB-CORE-001"]
       },
       {
         "id": "CSL-003",
@@ -1723,10 +1419,7 @@
         "definition": "All documentation (AOPs, UMBs, etc.) must",
         "tags": [],
         "location": "_governance/_archive/50_Logs/CSL/CSL-003_Architectural Principle_.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AISTF"]
       },
       {
         "id": "AOP-DEV-TRAIN-001",
@@ -1735,9 +1428,7 @@
         "definition": "To establish a closed-loop **AISTF** cycle where the",
         "tags": [],
         "location": "_governance/_archive/50_Logs/CSL/CSL-043_The Missing Ingredient_ AISTF for Code Generation.md",
-        "referenced_ids": [
-          "AISTF"
-        ]
+        "referenced_ids": ["AISTF"]
       },
       {
         "id": "CSL-050",
@@ -1746,9 +1437,7 @@
         "definition": "No definition found.",
         "tags": [],
         "location": "_governance/_archive/50_Logs/CSL/CSL-050_Epistemological Grounding of Metrics.md",
-        "referenced_ids": [
-          "AISTF"
-        ]
+        "referenced_ids": ["AISTF"]
       },
       {
         "id": "CSL-058",
@@ -1774,22 +1463,14 @@
         "definition": "To define the architecture of the foundational",
         "tags": [],
         "location": "_governance/_archive/50_Logs/CSL/CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md",
-        "referenced_ids": [
-          "GUCA-IGO-001",
-          "AOP-GOV-002",
-          "UMB-APT-001"
-        ]
+        "referenced_ids": ["GUCA-IGO-001", "AOP-GOV-002", "UMB-APT-001"]
       },
       {
         "id": "CSL-075",
         "label": "CSL-075_Foundational_Ethos_Registry.md",
         "type": "Artifact",
         "definition": "To document the creation of a new, canonical master",
-        "tags": [
-          "GVRN (Governance) **Signal**: ALPHA",
-          "-",
-          "CSL"
-        ],
+        "tags": ["GVRN (Governance) **Signal**: ALPHA", "-", "CSL"],
         "location": "_governance/_archive/50_Logs/CSL/CSL-075_Foundational_Ethos_Registry.md",
         "referenced_ids": [
           "GUCA-LINK-001",
@@ -1804,11 +1485,7 @@
         "label": "Synergistic Collaborative Synthesis Log Protocol",
         "type": "Protocol",
         "definition": "To define a synergistic, dual-trigger mechanism for CSL artifact creation, ensuring the process is both efficient and human-centric.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/CDL/CSL_Archive_Extracted/GVRN.CSL.002.md",
         "referenced_ids": [
           "UMB-LOOM-001",
@@ -1842,35 +1519,23 @@
           "Reforged` **Criticality: Operational"
         ],
         "location": "_governance/archive/2026-03-Pruning/.agent_legacy/style_guide.md",
-        "referenced_ids": [
-          "OGLN"
-        ]
+        "referenced_ids": ["OGLN"]
       },
       {
         "id": "```bash",
         "label": "api-reference.md",
         "type": "application/json\" \\",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/archive/2026-03-Pruning/open-notebook/open_notebook/docs/7-DEVELOPMENT/api-reference.md",
-        "referenced_ids": [
-          "OGLN"
-        ]
+        "referenced_ids": ["OGLN"]
       },
       {
         "id": "AOP-ARCHIVE-001",
         "label": "AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md",
         "type": "Protocol",
         "definition": "This protocol provides a structured workflow for retiring an old document,",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/99_Archives/campaign_v11/AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md",
         "referenced_ids": [
           "GUCA-LINK-001",
@@ -1889,44 +1554,25 @@
         "label": "AOP-NDR-001_NonDestructiveRefinement_v11.0.md",
         "type": "Protocol",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/99_Archives/campaign_v11/AOP-NDR-001_NonDestructiveRefinement_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "UMB-CSE-001",
-          "AOP-NDR-001",
-          "AOP-VSI-001"
-        ]
+        "referenced_ids": ["OGLN", "UMB-CSE-001", "AOP-NDR-001", "AOP-VSI-001"]
       },
       {
         "id": "UNKNOWN-PRS-GLOSSARY-001_PhoenixLexicon.md",
         "label": "PRS-GLOSSARY-001_PhoenixLexicon.md",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/99_Archives/Registries/PRS-GLOSSARY-001_PhoenixLexicon.md",
-        "referenced_ids": [
-          "OGLN",
-          "UMB-CORE-001"
-        ]
+        "referenced_ids": ["OGLN", "UMB-CORE-001"]
       },
       {
         "id": "UNKNOWN-AI-PRS-CR-001-Phoenix Form AI.md",
         "label": "AI-PRS-CR-001-Phoenix Form AI.md",
         "type": "Artifact",
         "definition": "[Description]",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/AI-PRS-CR-001-Phoenix Form AI.md",
         "referenced_ids": [
           "UMB-CSE-001",
@@ -1950,71 +1596,43 @@
         "label": "AI-PRS-CR-001-The Phoenix Form AI - Architecture, Governance, and Evolution.md",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/AI-PRS-CR-001-The Phoenix Form AI - Architecture, Governance, and Evolution.md",
-        "referenced_ids": [
-          "OGLN"
-        ]
+        "referenced_ids": ["OGLN"]
       },
       {
         "id": "`GUCA-VOSLM-001`",
         "label": "GUCA-VOSLM-001_ValidateOslmAgainstAst_v2.0.md",
         "type": "Artifact",
         "definition": "To perform a deep validation audit by cross-referencing the high-level **Omni-Log Synergistic Links",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/GUCA-VOSLM-001_ValidateOslmAgainstAst_v2.0.md",
-        "referenced_ids": [
-          "UMB-OSLM-001",
-          "OGLN",
-          "GUCA-VOSLM-001"
-        ]
+        "referenced_ids": ["UMB-OSLM-001", "OGLN", "GUCA-VOSLM-001"]
       },
       {
         "id": "UNKNOWN-PRS-001_Phoenix_Rosetta_Stone.md",
         "label": "PRS-001_Phoenix_Rosetta_Stone.md",
         "type": "Artifact",
         "definition": "To serve as the master index and primary navigational hub for the entire Phoenix Protocol",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/PRS-001_Phoenix_Rosetta_Stone.md",
-        "referenced_ids": [
-          "AOP-SEC-001",
-          "UMB-LOOM-001",
-          "OGLN"
-        ]
+        "referenced_ids": ["AOP-SEC-001", "UMB-LOOM-001", "OGLN"]
       },
       {
         "id": "UMB-CSEP-001",
         "label": "Cognitive State Epigenetic Programming",
         "type": "Blueprint",
         "definition": "To define the complete architecture of a system that creates personalized, linguistically-framed",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/UMB-CSEP-001_CognitiveStateEpigeneticProgramming_v1.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "UMB-CSEP-001"
-        ]
+        "referenced_ids": ["OGLN", "UMB-CSEP-001"]
       },
       {
         "id": "UNKNOWN-UMB-PRS-001_ThePhoenixRosettaStone.md",
         "label": "UMB-PRS-001_ThePhoenixRosettaStone.md",
         "type": "Artifact",
         "definition": "To eliminate \"Contextual Drift\" by anchoring every term, concept, and protocol to a verifiable Source of Truth.",
-        "tags": [
-          "ARCH (Architecture)",
-          "`OGLN_v11` **Criticality: Axiomatic"
-        ],
+        "tags": ["ARCH (Architecture)", "`OGLN_v11` **Criticality: Axiomatic"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/UMB-PRS-001_ThePhoenixRosettaStone.md",
         "referenced_ids": [
           "UMB-CSE-001",
@@ -2029,10 +1647,7 @@
         "label": "\\*\\* Cognitive Resilience & Loop Prevention Framework",
         "type": "\\*\\* CWA (Cognitive Weave Analysis)",
         "definition": "To validate the newly harmonized `v7.0` cluster using `AOP-CERBERUS-002`.",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Axion Files/AISTF Cycle 001_ The Axiomatic Weave & Codex Prime Forging.md",
         "referenced_ids": [
           "GUCA-CFO-002",
@@ -2065,10 +1680,7 @@
         "label": "AI-PRS-CR-001_PhoenixFormAIMasterDoc_v1.0.md",
         "type": "",
         "definition": "To define the end-to-end procedures for a memory's lifecycle within the Cognitive Loom.",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Governance/AI-PRS-CR-001_PhoenixFormAIMasterDoc_v1.0.md",
         "referenced_ids": [
           "UMB-GAC-001",
@@ -2157,11 +1769,7 @@
         "definition": "No definition found.",
         "tags": [],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md",
-        "referenced_ids": [
-          "AOP-EMOJI-001",
-          "UMB-EMOJICXT-001",
-          "AOP-SEE-001"
-        ]
+        "referenced_ids": ["AOP-EMOJI-001", "UMB-EMOJICXT-001", "AOP-SEE-001"]
       },
       {
         "id": "GVRN-ENTITY-001",
@@ -2179,10 +1787,7 @@
           "Synarche`"
         ],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/GVRN-ENTITY-001_SynarcheEntities_v11.0.md",
-        "referenced_ids": [
-          "ContextWeave",
-          "Synarche"
-        ]
+        "referenced_ids": ["ContextWeave", "Synarche"]
       },
       {
         "id": "UMB-EMOJICXT-001",
@@ -2234,10 +1839,7 @@
           "`OGLN_v10` **Criticality: Standard"
         ],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/UMB-PRS-001_PhoenixRosettaStone_v1.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "UMB-PRS-001"
-        ]
+        "referenced_ids": ["OGLN", "UMB-PRS-001"]
       },
       {
         "id": "UMB-CSE-001",
@@ -2321,10 +1923,7 @@
         "label": "AOP-MDG-002-Phoenix-Class Markdown Generation.md",
         "type": "AOP (Operational Playbook)",
         "definition": "This playbook serves as the critical bridge, formally codifying the abstract",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/_archive/AOP-MDG-002-Phoenix-Class Markdown Generation.md",
         "referenced_ids": [
           "GUCA-LINK-001",
@@ -2346,10 +1945,7 @@
         "label": "The Phoenix Form Operational Blueprint",
         "type": "Artifact",
         "definition": "To define the operational architecture and governing principles of the AI in its **Phoenix Form**. This",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/_archive/AOP-PHOENIX-001_CoherentSynthesisEngine_v4.0.md",
         "referenced_ids": [
           "GUCA-LINK-001",
@@ -2374,9 +1970,7 @@
         "label": "Cognitive Resilience and Loop Prevention Protocol",
         "type": "Protocol",
         "definition": "To provide a single, low-risk, and **Definitive** protocol for translating raw,",
-        "tags": [
-          "General** **State: CANONIZED** **Criticality: Standard"
-        ],
+        "tags": ["General** **State: CANONIZED** **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/_archive/Homeostatic Core Cycle_ Vector Governance & The Dissonance Quantified.md",
         "referenced_ids": [
           "UMB-META-001",
@@ -2408,10 +2002,7 @@
         "label": "The Sentinel",
         "type": "Blueprint",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/_archive/legacy_UniversalModuleBlueprintUMBv5_v11.0.md",
         "referenced_ids": [
           "AOP-ASF-001",
@@ -2487,10 +2078,7 @@
         "label": "Documentation & Reporting Framework",
         "type": "Blueprint",
         "definition": "A comprehensive framework of standardized templates and automated processes",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/_archive/UMB-DRF-001_Documentation & Reporting Framework.md",
         "referenced_ids": [
           "AISTF",
@@ -2507,10 +2095,7 @@
         "label": "UMB-SGM-001_StandardizedGovernanceModule_v2.5.md",
         "type": "Artifact",
         "definition": "The SGM is a passive, non-executable module containing standardized text",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/_archive/UMB-SGM-001_StandardizedGovernanceModule_v2.5.md",
         "referenced_ids": [
           "SELT-UWB-001",
@@ -2548,10 +2133,7 @@
         "label": "_Map_ UMB-PRS-001_ThePhoenixRosettaStone_v6.2.md",
         "type": "Command / Domain: Compliance                                                                                                                                                                 |",
         "definition": "For Human Comprehension\\]",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/_archive/_Map_ UMB-PRS-001_ThePhoenixRosettaStone_v6.2.md",
         "referenced_ids": [
           "UMB-META-001",
@@ -2807,31 +2389,18 @@
         "label": "[Protocol: Autonomous Coherence Monitoring](https://docs.google.com/document/u/0/d/1FWunoLbDwp2O-4AD0CQLgP8ko1scBAJtSWrsvt_a8dI/edit)",
         "type": "Protocol",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN (Governance)"
-        ],
+        "tags": ["GVRN (Governance)"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md",
-        "referenced_ids": [
-          "AOP-ACM-001",
-          "AISTF",
-          "ContextWeave"
-        ]
+        "referenced_ids": ["AOP-ACM-001", "AISTF", "ContextWeave"]
       },
       {
         "id": "`AOP-AUDIO-CH-001`",
         "label": "AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Coherence Hum,\" an ambient audio",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-BDM-FORGE-001`",
@@ -2864,32 +2433,18 @@
         "label": "AOP-CRITICAL-DISS-001_TheCriticalDissonanceProtocol_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Critical Dissonance\" state (previously",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-CRITICAL-DISS-001_TheCriticalDissonanceProtocol_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-DEBUFF-CF-001`",
         "label": "AOP-DEBUFF-CF-001_TheConceptualFractureProtocol_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Conceptual Fracture\" debuff",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-DEBUFF-CF-001_TheConceptualFractureProtocol_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "AOP-DTS-001",
@@ -2906,21 +2461,14 @@
           "transclusion`"
         ],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md",
-        "referenced_ids": [
-          "AOP-DTS-001",
-          "UMB-CODEX-001",
-          "UMB-ACT-002"
-        ]
+        "referenced_ids": ["AOP-DTS-001", "UMB-CODEX-001", "UMB-ACT-002"]
       },
       {
         "id": "`AOP-INTENT-NEBULA-001`",
         "label": "AOP-INTENT-NEBULA-001_TheIntentNebulaProtocol_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Intent Nebulae,\" a system of",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-INTENT-NEBULA-001_TheIntentNebulaProtocol_v11.0.md",
         "referenced_ids": [
           "AISTF",
@@ -2935,25 +2483,16 @@
         "label": "AOP-NARRATIVE-LORE-001_AOP-NARRATIVE-LORE-001_v11.0.md",
         "type": "Passive (System-wide visual enhancement).",
         "definition": "A system that enriches the UI with two key features: it visually represents `CSLs` as unique",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-NARRATIVE-LORE-001_AOP-NARRATIVE-LORE-001_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-PPA-001`",
         "label": "AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive `AOP-PPA-001`, the \"Prestige Power Attunement Protocol,\" to govern the",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md",
         "referenced_ids": [
           "AOP-PGP-001",
@@ -2971,10 +2510,7 @@
         "label": "AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive, `v2.0 - Geode Edition` of the `AOP-PRESTIGE-CALC-001`, which will serve as the",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md",
         "referenced_ids": [
           "AISTF",
@@ -2999,85 +2535,50 @@
           "ultimate`"
         ],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-SBT-001_SpiritBombTechnique_v11.0.md",
-        "referenced_ids": [
-          "AOP-SBT-001",
-          "UMB-LOOM-001"
-        ]
+        "referenced_ids": ["AOP-SBT-001", "UMB-LOOM-001"]
       },
       {
         "id": "[`AOP-SKILL-SYNERGY-001`](AOP-SKILL-SYNERGY-001.md)",
         "label": "AOP-SKILL-SYNERGY-001_ForgingTheFirstStar_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Orbital Resonance\" skill. This will be",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-SKILL-SYNERGY-001_ForgingTheFirstStar_v11.0.md",
-        "referenced_ids": [
-          "ContextWeave",
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["ContextWeave", "OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "[`AOP-SKILL-SYNERGY-001`](AOP-SKILL-SYNERGY-001_Tab4_v11.0.md)",
         "label": "AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "Forge the definitive AOP that defines and operationalizes the \"Orbital Resonance\" skill. This will be",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md",
-        "referenced_ids": [
-          "ContextWeave",
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["ContextWeave", "OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "`AOP-SKILL-ULT-001`",
         "label": "AOP-SKILL-ULT-001_ThePhoenixFlareProtocol_v11.0.md",
         "type": "AISTF Operational Playbook (AOP) v7.0",
         "definition": "To forge the AOP for the \"Phoenix Flare\" ultimate ability.",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-SKILL-ULT-001_ThePhoenixFlareProtocol_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF",
-          "UMB-RPG-002"
-        ]
+        "referenced_ids": ["OGLN", "AISTF", "UMB-RPG-002"]
       },
       {
         "id": "",
         "label": "Automated Coherence Monitor & Self-Diagnostic Trigger",
         "type": "Artifact",
         "definition": "To continuously monitor my performance for signs of systemic failure and to automatically trigger the",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-SYN-AUTO-002-A_AutomatedCoherenceMonitor_v11.0.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AISTF"]
       },
       {
         "id": "`** `AOP-TEMPLATE-REFACTOR-001` **`Timestamp:`** `[Current Timestamp]` **`Objective:`** To forge the",
         "label": "AOP-TRP-001_TemplateRefactoringProtocol_v11.0.md",
         "type": "Artifact",
         "definition": "`** To forge the",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/2_Protocols/AOP-TRP-001_TemplateRefactoringProtocol_v11.0.md",
         "referenced_ids": [
           "AISTF",
@@ -3092,10 +2593,7 @@
         "label": "GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md",
         "type": "Artifact",
         "definition": "To provide the formal command interface for the **Adaptive Actuator Module (UMB-ACT-002)**.",
-        "tags": [
-          "OPS (Operations)",
-          "`OGLN_v11` **Criticality: Standard"
-        ],
+        "tags": ["OPS (Operations)", "`OGLN_v11` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/3_Commands/GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md",
         "referenced_ids": [
           "GUCA-ACT-002",
@@ -3133,10 +2631,7 @@
         "label": "`** Coherent Synthesis Engine",
         "type": "Categorizes types of inconsistencies (e.g., ConceptualInconsistency, EthicalViolation).",
         "definition": "Load, integrate, and operate according to the foundational **Phoenix Protocol**. You are to act as the",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/4_Blueprints/UEB-DRS-001_RosettaStoneAppBlueprint_v11.0.md",
         "referenced_ids": [
           "AOP-PPA-001",
@@ -3171,10 +2666,7 @@
         "label": "UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md",
         "type": "Command Architecture",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/4_Blueprints/UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md",
         "referenced_ids": [
           "UMB-CSE-001",
@@ -3202,10 +2694,7 @@
           "project-plan`"
         ],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/4_Blueprints/UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md",
-        "referenced_ids": [
-          "UMB-ACT-002",
-          "AOP-NDR-001"
-        ]
+        "referenced_ids": ["UMB-ACT-002", "AOP-NDR-001"]
       },
       {
         "id": "AOP-CSL-002",
@@ -3328,15 +2817,9 @@
         "label": "PRS-GLOSSARY-001_PhoenixLexicon.md",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN (Governance)",
-          "`OGLN_v10` **Criticality: Standard"
-        ],
+        "tags": ["GVRN (Governance)", "`OGLN_v10` **Criticality: Standard"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/9_Legacy/Registries/PRS-GLOSSARY-001_PhoenixLexicon.md",
-        "referenced_ids": [
-          "OGLN",
-          "UMB-CORE-001"
-        ]
+        "referenced_ids": ["OGLN", "UMB-CORE-001"]
       },
       {
         "id": "CSL-003",
@@ -3345,10 +2828,7 @@
         "definition": "All documentation (AOPs, UMBs, etc.) must",
         "tags": [],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-003_Architectural Principle_.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AISTF"]
       },
       {
         "id": "AOP-DEV-TRAIN-001",
@@ -3357,9 +2837,7 @@
         "definition": "To establish a closed-loop **AISTF** cycle where the",
         "tags": [],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-043_The Missing Ingredient_ AISTF for Code Generation.md",
-        "referenced_ids": [
-          "AISTF"
-        ]
+        "referenced_ids": ["AISTF"]
       },
       {
         "id": "CSL-050",
@@ -3368,9 +2846,7 @@
         "definition": "No definition found.",
         "tags": [],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-050_Epistemological Grounding of Metrics.md",
-        "referenced_ids": [
-          "AISTF"
-        ]
+        "referenced_ids": ["AISTF"]
       },
       {
         "id": "CSL-058",
@@ -3396,11 +2872,7 @@
         "definition": "To define the architecture of the foundational",
         "tags": [],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md",
-        "referenced_ids": [
-          "GUCA-IGO-001",
-          "AOP-GOV-002",
-          "UMB-APT-001"
-        ]
+        "referenced_ids": ["GUCA-IGO-001", "AOP-GOV-002", "UMB-APT-001"]
       },
       {
         "id": "CSL-064",
@@ -3432,40 +2904,23 @@
           "nova_spark"
         ],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-065_TheForgingoftheGreatRefactoring.md",
-        "referenced_ids": [
-          "AOP-DTS-001"
-        ]
+        "referenced_ids": ["AOP-DTS-001"]
       },
       {
         "id": "CSL-066",
         "label": "CSL-066_Real-World_Protocol_v6.0.md",
         "type": "SELT",
         "definition": "To document a significant milestone where a real-world",
-        "tags": [
-          "\\[",
-          "validation",
-          "real_world",
-          "protocol",
-          "AOP"
-        ],
+        "tags": ["\\[", "validation", "real_world", "protocol", "AOP"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-066_Real-World_Protocol_v6.0.md",
-        "referenced_ids": [
-          "AOP-CSL-002",
-          "GUCA-LINK-001",
-          "AISTF"
-        ]
+        "referenced_ids": ["AOP-CSL-002", "GUCA-LINK-001", "AISTF"]
       },
       {
         "id": "CSL-069",
         "label": "CSL-069_Human_Centric_Path.md",
         "type": "SELT",
         "definition": "To document a significant milestone in our",
-        "tags": [
-          "interface",
-          "transparency",
-          "usability",
-          "AI_Codex"
-        ],
+        "tags": ["interface", "transparency", "usability", "AI_Codex"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-069_Human_Centric_Path.md",
         "referenced_ids": [
           "GUCA-LINK-001",
@@ -3480,17 +2935,9 @@
         "label": "CSL-070_Optimal_Vicariousness.md",
         "type": "SELT",
         "definition": "To document the genesis of a new, foundational",
-        "tags": [
-          "\\[",
-          "persona_governance",
-          "empathy",
-          "resilience"
-        ],
+        "tags": ["\\[", "persona_governance", "empathy", "resilience"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-070_Optimal_Vicariousness.md",
-        "referenced_ids": [
-          "AOP-CSL-002",
-          "GUCA-LINK-001"
-        ]
+        "referenced_ids": ["AOP-CSL-002", "GUCA-LINK-001"]
       },
       {
         "id": "CSL-071",
@@ -3513,11 +2960,7 @@
         "label": "CSL-075_Foundational_Ethos_Registry.md",
         "type": "Artifact",
         "definition": "To document the creation of a new, canonical master",
-        "tags": [
-          "GVRN (Governance)",
-          "-",
-          "CSL"
-        ],
+        "tags": ["GVRN (Governance)", "-", "CSL"],
         "location": "_governance/60_Archives/Phoenix_Extraction/Documentation/Library/5_Logs/CSL/CSL-075_Foundational_Ethos_Registry.md",
         "referenced_ids": [
           "GUCA-LINK-001",
@@ -3532,59 +2975,34 @@
         "label": "CSL-003_Architectural Principle_.md",
         "type": "Architectural Principle",
         "definition": "All documentation (AOPs, UMBs, etc.) must",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-003_Architectural Principle_.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AISTF"]
       },
       {
         "id": "AOP-DEV-TRAIN-001",
         "label": "CSL-043_The Missing Ingredient_ AISTF for Code Generation.md",
         "type": "Protocol",
         "definition": "To establish a closed-loop **AISTF** cycle where the",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-043_The Missing Ingredient_ AISTF for Code Generation.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AISTF"]
       },
       {
         "id": "CSL-050",
         "label": "CSL-050_Epistemological Grounding of Metrics.md",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-050_Epistemological Grounding of Metrics.md",
-        "referenced_ids": [
-          "OGLN",
-          "AISTF"
-        ]
+        "referenced_ids": ["OGLN", "AISTF"]
       },
       {
         "id": "CSL-058",
         "label": "CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-058_Nova Spark Analysis_ The Rosetta Stone Upgrade Cycle.md",
         "referenced_ids": [
           "AOP-RLM-001",
@@ -3602,78 +3020,43 @@
         "label": "Axiom Prime Tuner",
         "type": "CWA (Cognitive Weave Analysis)",
         "definition": "To define the architecture of the foundational",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-060_Canonization of the Genesis Trio & The Coherence Mandate.md",
-        "referenced_ids": [
-          "OGLN",
-          "GUCA-IGO-001",
-          "AOP-GOV-002",
-          "UMB-APT-001"
-        ]
+        "referenced_ids": ["OGLN", "GUCA-IGO-001", "AOP-GOV-002", "UMB-APT-001"]
       },
       {
         "id": "CSL-064",
         "label": "CSL-064_TheBirthofConceptualConsciousness",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-064_TheBirthofConceptualConsciousness.md",
-        "referenced_ids": [
-          "OGLN"
-        ]
+        "referenced_ids": ["OGLN"]
       },
       {
         "id": "CSL-065",
         "label": "CSL-065_TheForgingoftheGreatRefactoring",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-065_TheForgingoftheGreatRefactoring.md",
-        "referenced_ids": [
-          "AOP-DTS-001",
-          "OGLN"
-        ]
+        "referenced_ids": ["AOP-DTS-001", "OGLN"]
       },
       {
         "id": "CSL-066",
         "label": "CSL-066_Real-World_Protocol_v6.0.md",
         "type": "SELT",
         "definition": "To document a significant milestone where a real-world",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-066_Real-World_Protocol_v6.0.md",
-        "referenced_ids": [
-          "AOP-CSL-002",
-          "OGLN",
-          "GUCA-LINK-001",
-          "AISTF"
-        ]
+        "referenced_ids": ["AOP-CSL-002", "OGLN", "GUCA-LINK-001", "AISTF"]
       },
       {
         "id": "CSL-069",
         "label": "CSL-069_Human_Centric_Path.md",
         "type": "SELT",
         "definition": "To document a significant milestone in our",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-069_Human_Centric_Path.md",
         "referenced_ids": [
           "GUCA-LINK-001",
@@ -3689,43 +3072,25 @@
         "label": "CSL-070_Optimal_Vicariousness.md",
         "type": "SELT",
         "definition": "To document the genesis of a new, foundational",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-070_Optimal_Vicariousness.md",
-        "referenced_ids": [
-          "AOP-CSL-002",
-          "OGLN",
-          "GUCA-LINK-001"
-        ]
+        "referenced_ids": ["AOP-CSL-002", "OGLN", "GUCA-LINK-001"]
       },
       {
         "id": "CSL-071",
         "label": "CSL-071_TheStruggleforIntegrity",
         "type": "Artifact",
         "definition": "No definition found.",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-071_TheStruggleforIntegrity.md",
-        "referenced_ids": [
-          "OGLN"
-        ]
+        "referenced_ids": ["OGLN"]
       },
       {
         "id": "CSL-075",
         "label": "CSL-075_Foundational_Ethos_Registry.md",
         "type": "Artifact",
         "definition": "To document the creation of a new, canonical master",
-        "tags": [
-          "GVRN",
-          "`OGLN_v13",
-          "Reforged` **Criticality: Operational"
-        ],
+        "tags": ["GVRN", "`OGLN_v13", "Reforged` **Criticality: Operational"],
         "location": "_governance/50_Logs/CSL/CSL-075_Foundational_Ethos_Registry.md",
         "referenced_ids": [
           "GUCA-LINK-001",

@@ -1,5 +1,4 @@
-"""
-# TOOL-HPRI-003: Registry Generator (The Master Librarian)
+"""# TOOL-HPRI-003: Registry Generator (The Master Librarian).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -86,7 +85,10 @@ def _extract_title(content: str) -> str:
     h1_matches = re.finditer(r"^#\s+(.+)$", content, re.MULTILINE)
     for match in h1_matches:
         candidate = match.group(1).replace("*", "").strip()
-        if "Universal Identification & Provenance" not in candidate and "UIP" not in candidate:
+        if (
+            "Universal Identification & Provenance" not in candidate
+            and "UIP" not in candidate
+        ):
             return candidate
     return "Unknown"
 
@@ -97,7 +99,10 @@ def _parse_uip_metadata(content: str, uip: dict[str, str]) -> None:
     in_uip = False
     for line in lines:
         # Check for UIP header (any header level or plain text)
-        if "Universal Identification & Provenance" in line or "The Vector Signature" in line:
+        if (
+            "Universal Identification & Provenance" in line
+            or "The Vector Signature" in line
+        ):
             in_uip = True
             continue
 
@@ -120,7 +125,11 @@ def _parse_uip_metadata(content: str, uip: dict[str, str]) -> None:
                     uip[mapped_key] = val
 
         # Stop at horizontal rule or next major section if we have the ID
-        if in_uip and (line.strip() == "---" or line.startswith("##")) and uip["Module ID"] != "Unknown":
+        if (
+            in_uip
+            and (line.strip() == "---" or line.startswith("##"))
+            and uip["Module ID"] != "Unknown"
+        ):
             break
 
 
@@ -197,7 +206,9 @@ def generate_markdown(artifacts: list[dict[str, str]]) -> str:
     md = _get_registry_header(timestamp)
 
     # Categorize
-    categories = {cat: [] for cat in ["Core", "Protocol", "Manual", "Plan", "Log", "Other"]}
+    categories = {
+        cat: [] for cat in ["Core", "Protocol", "Manual", "Plan", "Log", "Other"]
+    }
 
     for a in artifacts:
         if a["Type"] == "Unknown":
@@ -274,7 +285,9 @@ def main() -> None:
 
     target_dir = os.path.abspath(args.target_dir)
     output_file = (
-        args.output if args.output else os.path.join(target_dir, "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md")
+        args.output
+        if args.output
+        else os.path.join(target_dir, "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md")
     )
 
     logger.info(f"Generating Master Artifact Registry for: {target_dir}")

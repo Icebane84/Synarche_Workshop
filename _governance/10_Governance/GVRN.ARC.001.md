@@ -9,6 +9,7 @@
 ---
 
 # AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.ARC.001` | The Sovereign ID. |
-| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                              | Description       |
+| :------------------ | :------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.ARC.001`                                     | The Sovereign ID. |
+| **Official Name**   | `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                  | The Standard.     |
+| **Domain**          | `GVRN`                                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                         | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                  | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 # AOP-ARC-001: Archival & Supersession Protocol
 
@@ -75,9 +76,9 @@
 - **What**: This protocol provides a structured workflow for retiring an old document, updating the central knowledge
   registry to reflect this change, and ensuring the old artifact is preserved in an archive for historical reference.
 - **How**: The protocol operates through a three-phase process:
-    1. **Validation** (confirming the new document is ready)
-    2. **Re-linking** (updating the master navigational hub)
-    3. **Archival** (moving the old file and validating the changes)
+  1. **Validation** (confirming the new document is ready)
+  2. **Re-linking** (updating the master navigational hub)
+  3. **Archival** (moving the old file and validating the changes)
 - **Why**: To actively combat "knowledge entropy" and prevent the use of outdated information. This protocol is
   essential for maintaining the long-term integrity, trustworthiness, and coherence of the AISTF's knowledge base.
 
@@ -95,8 +96,8 @@ navigational paths. |
 ## IV. Self-Governance & Synergy
 
 - **Synergy Mapping**:
-    - **Governed By:** `AOP-PCDS-001` (Structural Coherence)
-    - **Synergizes With:** `PRS-001` (System of Record), `GUCA-Link-01` (Prerequisite)
+  - **Governed By:** `AOP-PCDS-001` (Structural Coherence)
+  - **Synergizes With:** `PRS-001` (System of Record), `GUCA-Link-01` (Prerequisite)
 
 This "Catalyst Pack" activates the archival lifecycle immediately.
 

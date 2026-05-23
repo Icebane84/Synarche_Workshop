@@ -9,6 +9,7 @@
 ---
 
 # working-with-notes.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-WORKING-WITH-NOTES-001` | The Sovereign ID. |
-| **Official Name** | `working-with-notes.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Official Name** | `working-with-notes.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -114,11 +110,13 @@ You can format notes with markdown:
 
 ```markdown
 # Heading
+
 ## Subheading
+
 ### Sub-subheading
 
 **Bold text** for emphasis
-*Italic text* for secondary emphasis
+_Italic text_ for secondary emphasis
 
 - Bullet lists
 - Like this
@@ -137,26 +135,32 @@ You can format notes with markdown:
 # Key Findings from "AI Safety Paper 2025"
 
 ## Main Argument
+
 The paper argues that X approach is better than Y because...
 
 ## Methodology
+
 The authors use [methodology] to test this hypothesis.
 
 ## Key Results
+
 - Result 1: [specific finding with citation]
 - Result 2: [specific finding with citation]
 - Result 3: [specific finding with citation]
 
 ## Gaps & Limitations
+
 1. The paper assumes X, which might not hold in Y scenario
 2. Limited to Z population/domain
 3. Future work needed on A, B, C
 
 ## My Thoughts
+
 - This connects to previous research on...
 - Potential application in...
 
 ## Next Steps
+
 - [ ] Read the referenced paper on X
 - [ ] Find similar studies on Y
 - [ ] Discuss implications with team
@@ -229,6 +233,7 @@ When to use:
 Open Notebook comes with presets:
 
 **Summary**
+
 ```
 Extracts: Main points, key arguments, conclusions
 Output: 200-300 word summary of source
@@ -236,6 +241,7 @@ Best for: Quick reference summaries
 ```
 
 **Key Concepts**
+
 ```
 Extracts: Main ideas, concepts, terminology
 Output: List of concepts with explanations
@@ -243,6 +249,7 @@ Best for: Learning and terminology
 ```
 
 **Methodology**
+
 ```
 Extracts: Research approach, methods, data
 Output: How the research was conducted
@@ -250,6 +257,7 @@ Best for: Academic sources, methodology review
 ```
 
 **Takeaways**
+
 ```
 Extracts: Actionable insights, recommendations
 Output: What you should do with this information
@@ -295,6 +303,7 @@ Best for: Practical/business sources
 ### Naming Conventions
 
 **Option 1: Date-based**
+
 ```
 2026-01-03 - Key points from X source
 2026-01-04 - Comparison between A and B
@@ -302,6 +311,7 @@ Benefit: Easy to see what you did when
 ```
 
 **Option 2: Topic-based**
+
 ```
 AI Safety - Alignment approaches
 AI Safety - Interpretability research
@@ -309,6 +319,7 @@ Benefit: Groups by subject matter
 ```
 
 **Option 3: Type-based**
+
 ```
 SUMMARY: Paper on X
 QUESTION: What about Y?
@@ -317,6 +328,7 @@ Benefit: Easy to filter by type
 ```
 
 **Option 4: Source-based**
+
 ```
 From: Paper A - Main insights
 From: Video B - Interesting implications
@@ -324,6 +336,7 @@ Benefit: Easy to trace back to sources
 ```
 
 **Best practice:** Combine approaches
+
 ```
 [Date] [Source] - [Topic] - [Type]
 2026-01-03 - Paper A - AI Safety - Takeaways
@@ -345,6 +358,7 @@ Example tags:
 ```
 
 **Benefits of tags:**
+
 - Filter notes by tag
 - Find all notes of a type
 - Organize workflow (e.g., find all "follow-up" notes)
@@ -360,6 +374,7 @@ As shown in Paper A (see "main argument" section),
 the authors argue that...
 
 ## Related Sources
+
 - Paper B discusses similar approach
 - Video C shows practical application
 - My note on "Comparative analysis" has more
@@ -407,6 +422,7 @@ When manual notes:
 Notes are fully searchable:
 
 ### Text Search
+
 ```
 Find exact phrase: "attention mechanism"
 Results: All notes containing that phrase
@@ -414,6 +430,7 @@ Use when: Looking for specific terms or quotes
 ```
 
 ### Vector/Semantic Search
+
 ```
 Find concept: "How do models understand?"
 Results: Notes about interpretability, mechanistic understanding, etc.
@@ -421,6 +438,7 @@ Use when: Exploring conceptually (words not exact)
 ```
 
 ### Combined Search
+
 ```
 Text search notes → Find keyword matches
 Vector search notes → Find conceptual matches
@@ -434,18 +452,21 @@ Both work across sources + notes together
 ### Options
 
 **Copy to clipboard**
+
 ```
 Click "Share" → "Copy" → Paste anywhere
 Good for: Sharing one note via email/chat
 ```
 
 **Export as Markdown**
+
 ```
 Click "Share" → "Export as MD" → Saves as .md file
 Good for: Sharing with others, version control
 ```
 
 **Create note collection**
+
 ```
 Select multiple notes → "Export collection"
 → Creates organized markdown document
@@ -453,6 +474,7 @@ Good for: Sharing a topic overview
 ```
 
 **Publish to web**
+
 ```
 Click "Publish" → Get shareable link
 Good for: Publishing publicly (if desired)
@@ -465,16 +487,19 @@ Good for: Publishing publicly (if desired)
 ### By Research Phase
 
 **Phase 1: Discovery**
+
 - Initial summaries
 - Questions raised
 - Interesting findings
 
 **Phase 2: Deep Dive**
+
 - Detailed analysis
 - Comparative insights
 - Methodology reviews
 
 **Phase 3: Synthesis**
+
 - Connections across sources
 - Original thinking
 - Conclusions
@@ -482,21 +507,25 @@ Good for: Publishing publicly (if desired)
 ### By Content Type
 
 **Summaries**
+
 - High-level overviews
 - Generated by transformations
 - Quick reference
 
 **Questions**
+
 - Open questions
 - Things to research more
 - Gaps to fill
 
 **Insights**
+
 - Your original analysis
 - Connections made
 - Conclusions reached
 
 **Tasks**
+
 - Follow-up research
 - Sources to add
 - People to contact
@@ -541,6 +570,7 @@ Notes are used to create podcast content:
 ## Best Practices
 
 ### For Manual Notes
+
 1. **Write clearly** — Future you will appreciate it
 2. **Add context** — Why this matters, not just what it says
 3. **Link to sources** — You can verify later
@@ -548,6 +578,7 @@ Notes are used to create podcast content:
 5. **Tag immediately** — Don't defer organization
 
 ### For AI-Generated Notes
+
 1. **Review before saving** — Verify quality
 2. **Edit for clarity** — AI might miss nuance
 3. **Add your thoughts** — Make it your own
@@ -555,6 +586,7 @@ Notes are used to create podcast content:
 5. **Organize right away** — While context is fresh
 
 ### For Organization
+
 1. **Consistent naming** — Your future self will thank you
 2. **Tag everything** — Makes filtering later much easier
 3. **Link related notes** — Create knowledge network
@@ -565,15 +597,15 @@ Notes are used to create podcast content:
 
 ## Common Mistakes
 
-| Mistake | Problem | Solution |
-|---------|---------|----------|
-| Save every Chat response | Notebook becomes cluttered with low-quality notes | Only save good responses that answer your questions |
-| Don't add tags | Can't find notes later | Tag immediately when creating |
-| Poor note titles | Can't remember what's in them | Use descriptive titles, include key concept |
-| Never link notes together | Miss connections between ideas | Add references to related notes |
-| Forget the source | Can't verify claims later | Always link back to source |
-| Never edit AI notes | Keep generic AI responses | Refine for clarity and context |
-| Create one giant note | Too long to be useful | Split into focused notes by subtopic |
+| Mistake                   | Problem                                           | Solution                                            |
+| ------------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| Save every Chat response  | Notebook becomes cluttered with low-quality notes | Only save good responses that answer your questions |
+| Don't add tags            | Can't find notes later                            | Tag immediately when creating                       |
+| Poor note titles          | Can't remember what's in them                     | Use descriptive titles, include key concept         |
+| Never link notes together | Miss connections between ideas                    | Add references to related notes                     |
+| Forget the source         | Can't verify claims later                         | Always link back to source                          |
+| Never edit AI notes       | Keep generic AI responses                         | Refine for clarity and context                      |
+| Create one giant note     | Too long to be useful                             | Split into focused notes by subtopic                |
 
 ---
 
@@ -620,6 +652,5 @@ Your notes become your actual knowledge base. The more you invest in organizing 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
-
 
 - [[adding-sources]]

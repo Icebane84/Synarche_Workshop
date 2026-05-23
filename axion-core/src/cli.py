@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -46,28 +45,30 @@ import cmd
 import os
 import subprocess  # nosec
 import sys
+from pathlib import Path
 from typing import Any, List, Optional, dict
 
 # Ensure we can import from the same directory safely
-current_dir = os.path.dirname(os.path.abspath(__file__))
-if current_dir not in sys.path:
-    sys.path.append(current_dir)
+current_dir = Path(__file__).resolve().parent
+if str(current_dir) not in sys.path:
+    sys.path.append(str(current_dir))
 
 try:
     from Synarche_bridge import SynarcheRegistry
 except ImportError:
     # Fallback for when running from a different context
-    sys.path.append(os.path.join(current_dir, "..", "src"))
+    sys.path.append(str(current_dir.parent / "src"))
     from Synarche_bridge import SynarcheRegistry
 
 
 class SynarcheCLI(cmd.Cmd):
-    """
-    Command Line Interface for the Synarche Command Library.
+    """Command Line Interface for the Synarche Command Library.
+
     Attributes:
         intro (str): Welcome message displayed on startup.
         prompt (str): The CLI prompt string.
         registry (SynarcheRegistry): The registry manager instance.
+
     """
 
     intro: str = (
@@ -79,14 +80,15 @@ class SynarcheCLI(cmd.Cmd):
         """Initialize the CLI and load the command registry."""
         super().__init__()
         # Point to data/command_registry.json
-        registry_path = os.path.join(current_dir, "data", "command_registry.json")
-        self.registry = SynarcheRegistry(registry_path)
+        registry_path = current_dir / "data" / "command_registry.json"
+        self.registry = SynarcheRegistry(str(registry_path))
 
     def do_list(self, _: str) -> None:
-        """
-        List all top-level categories in the registry.
+        """List all top-level categories in the registry.
+
         Args:
             _: Unused argument (required by cmd.Cmd signature).
+
         """
         categories: List[str] = self.registry.get_all_categories()
         print("\nAvailable Categories:")
@@ -95,14 +97,14 @@ class SynarcheCLI(cmd.Cmd):
         print()
 
     def do_search(self, arg: str) -> None:
-        """
-        Search for commands by keyword.
+        """Search for commands by keyword.
 
         Args:
             arg (str): The keyword to search for.
 
         Usage:
             search <keyword>
+
         """
         if not arg:
             print("Usage: search <keyword>")
@@ -115,14 +117,14 @@ class SynarcheCLI(cmd.Cmd):
         print()
 
     def do_get(self, arg: str) -> None:
-        """
-        Get details for a specific command.
+        """Get details for a specific command.
 
         Args:
             arg (str): The name of the command to retrieve.
 
         Usage:
             get <command_name>
+
         """
         if not arg:
             print("Usage: get <command_name>")
@@ -140,10 +142,11 @@ class SynarcheCLI(cmd.Cmd):
         print()
 
     def do_clear(self, _: str) -> None:
-        """
-        Clear the console screen.
+        """Clear the console screen.
+
         Args:
             _: Unused argument.
+
         """
         if os.name == "nt":
             subprocess.run(["cmd", "/c", "cls"], check=False)  # nosec
@@ -151,10 +154,11 @@ class SynarcheCLI(cmd.Cmd):
             subprocess.run(["clear"], check=False)  # nosec
 
     def do_quit(self, _: str) -> bool:
-        """
-        Exit the CLI.
+        """Exit the CLI.
+
         Returns:
             bool: True to signal the command loop to stop.
+
         """
         print("Goodbye.")
         return True
@@ -171,7 +175,7 @@ if __name__ == "__main__":
         print("\nGoodbye.")
 
 # ---
-# 
+#
 # ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**

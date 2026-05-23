@@ -1,5 +1,4 @@
-"""
-# TOOL-KNIG-001: The Reforger CLI (The Knight's Blade)
+"""# TOOL-KNIG-001: The Reforger CLI (The Knight's Blade).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -54,6 +53,7 @@ import datetime
 import logging
 import os
 import re
+from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
@@ -64,11 +64,16 @@ OFFICIAL_NAME = "Official Name"
 HEADER_SCAN_LIMIT = 60
 CELESTIAL_CLASS = "Celestial Class"
 
+# Robust path resolution independent of execution directory
+SCRIPT_DIR = Path(__file__).parent.resolve()
+PROJECT_ROOT = SCRIPT_DIR.parent
+WORKSPACE_ROOT = PROJECT_ROOT.parent
+
 # Target Directories
 TARGET_DIRS = [
-    r"c:\Users\Chris\Synarche_Workspace\_governance",
-    r"c:\Users\Chris\Synarche_Workspace\axion-core\docs",
-    r"c:\Users\Chris\Synarche_Workspace\axion-core\.agent",
+    str(WORKSPACE_ROOT / "_governance"),
+    str(WORKSPACE_ROOT / "axion-core" / "docs"),
+    str(WORKSPACE_ROOT / "axion-core" / ".agent"),
     r"c:\Users\Chris\_Desktop_Vault\Phoenix\Obsidian\Where Light Fades",
 ]
 
@@ -132,7 +137,9 @@ def extract_existing_metadata(content: str) -> dict[str, str]:
     """Extracts existing metadata from the UIP table or blockquote."""
     metadata: dict[str, str] = {}
     # Match pipe table rows: | **Key** | `Value` | or | Key | Value |
-    table_rows = re.findall(r"\| \s*\**?\d*\.?\s*(.*?)\**? \s*\| \s*(.*?) \s*\|", content)
+    table_rows = re.findall(
+        r"\| \s*\**?\d*\.?\s*(.*?)\**? \s*\| \s*(.*?) \s*\|", content
+    )
     for key, value in table_rows:
         k = key.strip().strip("*")
         v = re.sub(r"[`\*]", "", value).strip()
@@ -158,7 +165,9 @@ def generate_header(metadata: dict[str, str], filepath: str) -> str:
             domain_code = d
             break
 
-    evo = metadata.get("Evolution", metadata.get("Evolutionary Alignment", DEFAULT_EVOLUTION))
+    evo = metadata.get(
+        "Evolution", metadata.get("Evolutionary Alignment", DEFAULT_EVOLUTION)
+    )
     if evo not in VALID_EVOLUTIONS:
         evo = DEFAULT_EVOLUTION
 
@@ -235,9 +244,11 @@ def _is_header_start_line(line: str) -> bool:
     if not s:
         return False
 
-    if s.startswith("######") or s.startswith("---") or s.startswith("[ARTIFACT START]"):
+    if s.startswith(("######", "---", "[ARTIFACT START]")):
         return True
-    if s.startswith("| ") and ("Attribute" in s or "Field" in s or "Value" in s or ":---" in s):
+    if s.startswith("| ") and (
+        "Attribute" in s or "Field" in s or "Value" in s or ":---" in s
+    ):
         return True
 
     metadata_keys = [
@@ -260,7 +271,12 @@ def _is_header_start_line(line: str) -> bool:
         "Downstream",
     ]
 
-    if not (s.startswith("|") or s.startswith("**") or s.startswith("> ") or "stamp" in s.lower()):
+    if not (
+        s.startswith("|")
+        or s.startswith("**")
+        or s.startswith("> ")
+        or "stamp" in s.lower()
+    ):
         return False
 
     return any(key in s for key in metadata_keys)
@@ -331,7 +347,9 @@ def _is_redundant_metadata(line: str, index: int) -> bool:
     ]
     contextual_kill = ["domain", "state", "tags", "criticality", "signal"]
 
-    if "|" in line and any(kw.lower() in sbl_lower for kw in kill_keywords + contextual_kill):
+    if "|" in line and any(
+        kw.lower() in sbl_lower for kw in kill_keywords + contextual_kill
+    ):
         return True
 
     for kw in kill_keywords:
@@ -339,7 +357,11 @@ def _is_redundant_metadata(line: str, index: int) -> bool:
         if f"**{kw_lower}" in sbl_lower or f"*{kw_lower}" in sbl_lower:
             return True
 
-    return "| Attribute | Value |" in line or "| Field | Value |" in line or "| :---" in line
+    return (
+        "| Attribute | Value |" in line
+        or "| Field | Value |" in line
+        or "| :---" in line
+    )
 
 
 def _process_body(body_lines: list[str]) -> str:
@@ -377,7 +399,10 @@ def process_file(filepath: str) -> None:
         # If there's a legacy APP header, replace it
         if "Actionable Prompt Packet" in body_text:
             body_text = re.sub(
-                r"#+ .*Actionable Prompt Packet.*", PROMPT_PACKET_TEMPLATE.strip(), body_text, flags=re.IGNORECASE
+                r"#+ .*Actionable Prompt Packet.*",
+                PROMPT_PACKET_TEMPLATE.strip(),
+                body_text,
+                flags=re.IGNORECASE,
             )
         else:
             body_text += f"\n\n---\n{PROMPT_PACKET_TEMPLATE}"
@@ -413,8 +438,12 @@ def scan_targets(targets: list[str]) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Reforge artifacts to v13.0 standards.")
-    parser.add_argument("targets", nargs="*", help="Optional target directories or files.")
+    parser = argparse.ArgumentParser(
+        description="Reforge artifacts to v13.0 standards."
+    )
+    parser.add_argument(
+        "targets", nargs="*", help="Optional target directories or files."
+    )
     args = parser.parse_args()
 
     targets = args.targets if args.targets else TARGET_DIRS

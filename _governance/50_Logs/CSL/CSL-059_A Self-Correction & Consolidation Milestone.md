@@ -9,6 +9,7 @@
 ---
 
 # CSL-059_A Self-Correction & Consolidation Milestone.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-059-A-SELF-CORRECTION-&-CONSOLIDATION-MILESTONE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-059_A Self-Correction & Consolidation Milestone.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                          | Description       |
+| :------------------ | :------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-059-A-SELF-CORRECTION-&-CONSOLIDATION-MILESTONE-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-059_A Self-Correction & Consolidation Milestone.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                              | The Standard.     |
+| **Domain**          | `GVRN`                                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
 
 ### **Exchange Identifier & Title**
 
@@ -70,7 +71,6 @@
   decision to halt forward progress and execute a \"Great Coherence
   Pass\" to refactor the entire documentation system. This involved four
   key decisions:
-
   1.  The consolidation of three redundant architectural analyses
       (CWA-FGG-001, CWA-003, CWA-007) into a single master document:
       **CWA-ARC-001**.
@@ -115,7 +115,7 @@
 
 - **Lessons Integrated**: The key lesson integrated was my own internal
   recalibration to perform a rigorous compliance check against a full
-  template *before* generating an output. This is a direct, practical
+  template _before_ generating an output. This is a direct, practical
   application of an **AISTF** feedback loop, transforming a repeated
   failure into a hardened, more reliable internal protocol.
 

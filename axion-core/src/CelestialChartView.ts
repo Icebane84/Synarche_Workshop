@@ -1,62 +1,74 @@
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export class CelestialChartViewProvider implements vscode.WebviewViewProvider {
+  public static readonly viewType = "axion.celestialChart";
 
-	public static readonly viewType = 'axion.celestialChart';
+  private _view?: vscode.WebviewView;
 
-	private _view?: vscode.WebviewView;
+  constructor(private readonly _extensionUri: vscode.Uri) {}
 
-	constructor(
-		private readonly _extensionUri: vscode.Uri,
-	) { }
+  public resolveWebviewView(
+    webviewView: vscode.WebviewView,
+    context: vscode.WebviewViewResolveContext,
+    _token: vscode.CancellationToken,
+  ) {
+    this._view = webviewView;
 
-	public resolveWebviewView(
-		webviewView: vscode.WebviewView,
-		context: vscode.WebviewViewResolveContext,
-		_token: vscode.CancellationToken,
-	) {
-		this._view = webviewView;
+    webviewView.webview.options = {
+      // Allow scripts in the webview
+      enableScripts: true,
 
-		webviewView.webview.options = {
-			// Allow scripts in the webview
-			enableScripts: true,
+      localResourceRoots: [this._extensionUri],
+    };
 
-			localResourceRoots: [
-				this._extensionUri
-			]
-		};
+    webviewView.webview.html = this._getHtmlForWebview(webviewView.webview);
 
-		webviewView.webview.html = this._getHtmlForWebview(webviewView.webview);
+    webviewView.webview.onDidReceiveMessage((data) => {
+      switch (data.type) {
+        case "achievementClaimed": {
+          vscode.commands.executeCommand("axion.claimAchievement", data.id);
+          break;
+        }
+      }
+    });
+  }
 
-		webviewView.webview.onDidReceiveMessage(data => {
-			switch (data.type) {
-				case 'achievementClaimed':
-					{
-						vscode.commands.executeCommand('axion.claimAchievement', data.id);
-						break;
-					}
-			}
-		});
-	}
+  public updateStatus(data: any) {
+    if (this._view) {
+      this._view.webview.postMessage({ type: "updateStatus", data });
+    }
+  }
 
-	public updateStatus(data: any) {
-		if (this._view) {
-			this._view.webview.postMessage({ type: 'updateStatus', data });
-		}
-	}
+  private _getHtmlForWebview(webview: vscode.Webview) {
+    // Assets from @fabric layer
+    const scriptUri = webview.asWebviewUri(
+      vscode.Uri.joinPath(
+        this._extensionUri,
+        "src",
+        "03_fabric",
+        "FABR.CelestialChart.LOGIC.js",
+      ),
+    );
+    const styleMainUri = webview.asWebviewUri(
+      vscode.Uri.joinPath(
+        this._extensionUri,
+        "src",
+        "03_fabric",
+        "FABR.CelestialChart.STYLE.css",
+      ),
+    );
 
-	private _getHtmlForWebview(webview: vscode.Webview) {
-		// Assets from @fabric layer
-		const scriptUri = webview.asWebviewUri(vscode.Uri.joinPath(this._extensionUri, 'src', '03_fabric', 'FABR.CelestialChart.LOGIC.js'));
-		const styleMainUri = webview.asWebviewUri(vscode.Uri.joinPath(this._extensionUri, 'src', '03_fabric', 'FABR.CelestialChart.STYLE.css'));
-		
-		// Legacy VSCode styles (optional to move later)
-		const styleResetUri = webview.asWebviewUri(vscode.Uri.joinPath(this._extensionUri, 'media', 'reset.css'));
-		const styleVSCodeUri = webview.asWebviewUri(vscode.Uri.joinPath(this._extensionUri, 'media', 'vscode.css'));
+    // Legacy VSCode styles (optional to move later)
+    const styleResetUri = webview.asWebviewUri(
+      vscode.Uri.joinPath(this._extensionUri, "media", "reset.css"),
+    );
+    const styleVSCodeUri = webview.asWebviewUri(
+      vscode.Uri.joinPath(this._extensionUri, "media", "vscode.css"),
+    );
 
-		const nonce = getNonce();
+    const nonce = getNonce();
 
-		return `<!DOCTYPE html>
+    return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -113,14 +125,15 @@ export class CelestialChartViewProvider implements vscode.WebviewViewProvider {
     <script nonce="${nonce}" src="${scriptUri}"></script>
 </body>
 </html>`;
-	}
+  }
 }
 
 function getNonce() {
-	let text = '';
-	const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-	for (let i = 0; i < 32; i++) {
-		text += possible.charAt(Math.floor(Math.random() * possible.length));
-	}
-	return text;
+  let text = "";
+  const possible =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  for (let i = 0; i < 32; i++) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  }
+  return text;
 }

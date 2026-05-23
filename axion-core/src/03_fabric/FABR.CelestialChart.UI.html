@@ -9,67 +9,78 @@ artifact_anchor:
   state: "CANONIZED"
   ethos: "STRUCTURAL_UI_TEMPLATE"
   relations:
-    - type: "USES"
+    - type: "DEPENDS_ON"
       node: "FABR.CelestialChart.STYLE.css"
-    - type: "USES"
+    - type: "DEPENDS_ON"
       node: "FABR.CelestialChart.LOGIC.js"
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${cspSource} 'unsafe-inline'; script-src 'nonce-${nonce}';">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="${styleResetUri}" rel="stylesheet">
-    <link href="${styleVSCodeUri}" rel="stylesheet">
-    <link href="${styleMainUri}" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src ${cspSource} 'unsafe-inline'; script-src 'nonce-${nonce}';"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="${styleResetUri}" rel="stylesheet" />
+    <link href="${styleVSCodeUri}" rel="stylesheet" />
+    <link href="${styleMainUri}" rel="stylesheet" />
     <title>Celestial Chart</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="liquid-glass-container">
-        <header>
-            <h1 class="glow-text">CELESTIAL CHART</h1>
-            <div class="prestige-badge">
-                <span id="prestige-rank">INITIATE</span>
-                <div class="progress-bar-container">
-                    <div id="prestige-progress" class="progress-bar" style="width: 30%"></div>
-                </div>
+      <header>
+        <h1 class="glow-text">CELESTIAL CHART</h1>
+        <div class="prestige-badge">
+          <span id="prestige-rank">INITIATE</span>
+          <div class="progress-bar-container">
+            <div
+              id="prestige-progress"
+              class="progress-bar"
+              style="width: 30%"
+            ></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="stardust-display">
+        <div class="stardust-icon">✦</div>
+        <div class="stardust-value" id="stardust-count">1,250</div>
+        <div class="stardust-label">STARDUST</div>
+      </section>
+
+      <nav class="chart-navigation">
+        <button class="nav-item active" data-view="achievements">
+          ACHIEVEMENTS
+        </button>
+        <button class="nav-item" data-view="skills">SKILL TREE</button>
+        <button class="nav-item" data-view="lore">LORE</button>
+      </nav>
+
+      <main id="view-content">
+        <div class="achievement-list" id="achievement-list">
+          <!-- Dynamic Achievements Injected Here -->
+          <div class="achievement-item locked">
+            <div class="achievement-info">
+              <div class="achievement-name">GENESIS SEED</div>
+              <div class="achievement-desc">
+                Establish your first canonical registry.
+              </div>
             </div>
-        </header>
+            <div class="achievement-reward">+500 Stardust</div>
+          </div>
+        </div>
+      </main>
 
-        <section class="stardust-display">
-            <div class="stardust-icon">✦</div>
-            <div class="stardust-value" id="stardust-count">1,250</div>
-            <div class="stardust-label">STARDUST</div>
-        </section>
-
-        <nav class="chart-navigation">
-            <button class="nav-item active" data-view="achievements">ACHIEVEMENTS</button>
-            <button class="nav-item" data-view="skills">SKILL TREE</button>
-            <button class="nav-item" data-view="lore">LORE</button>
-        </nav>
-
-        <main id="view-content">
-            <div class="achievement-list" id="achievement-list">
-                <!-- Dynamic Achievements Injected Here -->
-                <div class="achievement-item locked">
-                    <div class="achievement-info">
-                        <div class="achievement-name">GENESIS SEED</div>
-                        <div class="achievement-desc">Establish your first canonical registry.</div>
-                    </div>
-                    <div class="achievement-reward">+500 Stardust</div>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <div class="sync-status">
-                <span class="status-dot green"></span>
-                <span class="status-text">COHERENCE: 98.4%</span>
-            </div>
-        </footer>
+      <footer>
+        <div class="sync-status">
+          <span class="status-dot green"></span>
+          <span class="status-text">COHERENCE: 98.4%</span>
+        </div>
+      </footer>
     </div>
 
     <script nonce="${nonce}" src="${scriptUri}"></script>
-</body>
+  </body>
 </html>

@@ -1,4 +1,5 @@
 # AOP-ASL-001_AutomatedSynergyLinking_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,37 +12,40 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.ASL.001` | The Sovereign ID. |
-| **Official Name** | `AOP-ASL-001_AutomatedSynergyLinking_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.ASL.001`                                 | The Sovereign ID. |
+| **Official Name**   | `AOP-ASL-001_AutomatedSynergyLinking_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
+
 UIP: AOP-ASL-001
 Title: Automated Synergy Linking Protocol
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-ASL-001_AutomatedSynergyLinking_v11.0.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-ASL-001_AutomatedSynergyLinking_v11.0.md)
+  Description: >
   Protocol for discovering, validating, and canonizing relational vectors between artifacts using semantic analysis and keyword triangulation.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-24
-  - Timestamp: 1769251200
-Tags: 
-  - #Synergy
-  - #Linking
-  - #Automation
-  - #ASL
-  - #NovaForge
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-24
+- Timestamp: 1769251200
+  Tags:
+- #Synergy
+- #Linking
+- #Automation
+- #ASL
+- #NovaForge
+
 ---
 
 > [!IMPORTANT]
@@ -62,15 +66,15 @@ The **ASL** protocol defines the operational methodology for discovering, valida
 
 ## II. The Synergy Vector (Relational Dynamics)
 
-| Relation Type    | Target ID                | Synergy Description                                 |
-| :--------------- | :----------------------- | :-------------------------------------------------- |
-| **GOVERNED_BY**  | `[[UMB-ESF-001]]`        | Strict adherence to Episemantic Marker logic.       |
-| **ORCHESTRATES** | `[[Artifact-Relations]]` | Manages the bidirectional mapping of library nodes. |
-| **POWERED_BY**   | `[[catalyst_weaver.py]]` | The central logic for semantic and link analysis.   |
-| **VALIDATED_BY** | `[[UMB-SIVC-001]]`       | SIVC validates legitimacy of generated links.       |
-| **CALIBRATED_BY**| `[[UMB-URM-001]]`        | URM checks ethical resonance of synergy vectors.    |
-| **FEEDS**        | `[[UMB-CSE-001]]`        | CSE is the primary consumer of the woven vectors.   |
-| **MONITORED_BY** | `[[AOP-BDM-001]]`        | BDM monitors for "Weak Links" (Entropy).            |
+| Relation Type     | Target ID                | Synergy Description                                 |
+| :---------------- | :----------------------- | :-------------------------------------------------- |
+| **GOVERNED_BY**   | `[[UMB-ESF-001]]`        | Strict adherence to Episemantic Marker logic.       |
+| **ORCHESTRATES**  | `[[Artifact-Relations]]` | Manages the bidirectional mapping of library nodes. |
+| **POWERED_BY**    | `[[catalyst_weaver.py]]` | The central logic for semantic and link analysis.   |
+| **VALIDATED_BY**  | `[[UMB-SIVC-001]]`       | SIVC validates legitimacy of generated links.       |
+| **CALIBRATED_BY** | `[[UMB-URM-001]]`        | URM checks ethical resonance of synergy vectors.    |
+| **FEEDS**         | `[[UMB-CSE-001]]`        | CSE is the primary consumer of the woven vectors.   |
+| **MONITORED_BY**  | `[[AOP-BDM-001]]`        | BDM monitors for "Weak Links" (Entropy).            |
 
 ---
 
@@ -79,18 +83,22 @@ The **ASL** protocol defines the operational methodology for discovering, valida
 The ASL system uses a multi-dimensional scoring engine (`CatalystWeaver`) to evaluate synergy between Artifact A and Artifact B.
 
 ### 3.1 Dimension 1: Semantic Entities (0.40 max)
+
 - Detects overlapping capitalized entities and technical terms.
 - **Goal**: Identify shared conceptual domain.
 
 ### 3.2 Dimension 2: Metadata Alignment (0.20 max)
+
 - Evaluates overlap in `#tags` and YAML metadata.
 - **Goal**: Identify shared categorization.
 
 ### 3.3 Dimension 3: Explicit References (0.40 max)
+
 - Looks for `[[Artifact_ID]]` mentions (High Weight) or plaintext ID mentions (Low Weight).
 - **Goal**: Identify existing awareness.
 
 ### 3.4 Dimension 4: Triangulation (0.30 max)
+
 - Analyzes shared outbound wikilinks.
 - **Goal**: Identify shared dependencies.
 
@@ -125,9 +133,9 @@ ASL is operationalized via the **Forge Engine CLI**.
 
 ## VI. Actionable Prompt Packet (APP)
 
-| Prompt ID       | Command Syntax                                                               | Goal                                               |
-| :-------------- | :--------------------------------------------------------------------------- | :------------------------------------------------- |
-| **APP-ASL-001** | `python forge.py --target "[ID]" --target-b "[ID]" --check-synergy`          | **Discovery**: Scans for missing relational links. |
+| Prompt ID       | Command Syntax                                                                | Goal                                               |
+| :-------------- | :---------------------------------------------------------------------------- | :------------------------------------------------- |
+| **APP-ASL-001** | `python forge.py --target "[ID]" --target-b "[ID]" --check-synergy`           | **Discovery**: Scans for missing relational links. |
 | **APP-ASL-002** | `python connect_ecosystem.py --source "[ID]" --target "[ID]" --type "[Type]"` | **Execution**: Commits a new synergy vector.       |
 
 ---

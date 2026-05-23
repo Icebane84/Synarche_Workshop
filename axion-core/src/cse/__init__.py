@@ -1,5 +1,4 @@
-"""
-# CSE-INIT: Coherent Synthesis Engine Module Initialization
+"""# CSE-INIT: Coherent Synthesis Engine Module Initialization.
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |

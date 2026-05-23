@@ -10,19 +10,19 @@ from open_notebook.exceptions import InvalidInputError
 router = APIRouter()
 
 
-@router.get("/notes", response_model=List[NoteResponse])
+@router.get("/notes", response_model=list[NoteResponse])
 async def get_notes(
-    notebook_id: Optional[str] = Query(None, description="Filter by notebook ID"),
+    notebook_id: str | None = Query(None, description="Filter by notebook ID"),
 ):
     """Get all notes with optional notebook filtering."""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     try:
         if notebook_id:
@@ -51,8 +51,8 @@ async def get_notes(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching notes: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error fetching notes: {str(e)}")
+        logger.error(f"Error fetching notes: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error fetching notes: {e!s}")
 
 
 @router.post("/notes", response_model=NoteResponse)
@@ -74,7 +74,7 @@ async def create_note(note_data: NoteCreate):
             title = result.get("output", "Untitled Note")
 
         # Validate note_type
-        note_type: Optional[Literal["human", "ai"]] = None
+        note_type: Literal["human", "ai"] | None = None
         if note_data.note_type in ("human", "ai"):
             note_type = note_data.note_type  # type: ignore[assignment]
         elif note_data.note_type is not None:
@@ -110,8 +110,8 @@ async def create_note(note_data: NoteCreate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error creating note: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error creating note: {str(e)}")
+        logger.error(f"Error creating note: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error creating note: {e!s}")
 
 
 @router.get("/notes/{note_id}", response_model=NoteResponse)
@@ -133,8 +133,8 @@ async def get_note(note_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching note {note_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error fetching note: {str(e)}")
+        logger.error(f"Error fetching note {note_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error fetching note: {e!s}")
 
 
 @router.put("/notes/{note_id}", response_model=NoteResponse)
@@ -173,8 +173,8 @@ async def update_note(note_id: str, note_update: NoteUpdate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error updating note {note_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error updating note: {str(e)}")
+        logger.error(f"Error updating note {note_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error updating note: {e!s}")
 
 
 @router.delete("/notes/{note_id}")
@@ -191,5 +191,5 @@ async def delete_note(note_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting note {note_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error deleting note: {str(e)}")
+        logger.error(f"Error deleting note {note_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error deleting note: {e!s}")

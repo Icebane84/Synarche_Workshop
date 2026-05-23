@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.QueryCognitiveLoom` | The Sovereign ID. |
+| Key               | Value                            | Description       |
+| :---------------- | :------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.QueryCognitiveLoom`    | The Sovereign ID. |
 | **Official Name** | `GVRN.ACT.QueryCognitiveLoom.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                | The Standard.     |
+| **Domain**        | `GVRN`                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                       | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`    | The Network.      |
 
 ---
 
@@ -47,6 +42,7 @@
 | **Created** | `2025-10-01` |
 | **Updated** | `2026-01-18` |
 | **Authority** | `CODEX-001` |
+
 ---
 
 # **GUCA-QCL-001: Query Cognitive Loom (CMD: QCL)**
@@ -65,6 +61,7 @@ The **Query Cognitive Loom (QCL)** command is a natural language conceptual quer
 ### **II. Command Definition**
 
 #### **2.1. Overview**
+
 Unlike a keyword search, `QCL` ingests a complex question, identifies the relevant nodes and latent relations in the `UMB-LOOM-001`, and formulates a coherent, auditable answer.
 
 #### **2.2. Command Syntax**
@@ -108,8 +105,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

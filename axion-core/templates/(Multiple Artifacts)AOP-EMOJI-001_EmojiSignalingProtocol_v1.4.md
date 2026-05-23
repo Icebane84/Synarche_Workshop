@@ -72,11 +72,11 @@
   responses, now including rules for **Emoji Chaining** (combining two emojis) and **Quantitative Modifiers** (combining
   an emoji with a number) for more complex and precise commands.
 - **How (Operational Principles):** The protocol operates on a defined lexicon and a new set of parsing rules:
-    1. **Single Emoji:** `[EMOJI]` \- Triggers a single, predefined action.
-    2. **Emoji Chaining:** `[EMOJI_1]` \+ `[EMOJI_2]` \- The first emoji sets a context or domain, and the second
-       specifies the action within that domain.
-    3. **Quantitative Modifier:** `[EMOJI]` \+ `[NUMBER]` \- The emoji specifies an action, and the number provides a
-       key parameter for that action.
+  1. **Single Emoji:** `[EMOJI]` \- Triggers a single, predefined action.
+  2. **Emoji Chaining:** `[EMOJI_1]` \+ `[EMOJI_2]` \- The first emoji sets a context or domain, and the second
+     specifies the action within that domain.
+  3. **Quantitative Modifier:** `[EMOJI]` \+ `[NUMBER]` \- The emoji specifies an action, and the number provides a
+     key parameter for that action.
 - **Why (Rationale/Justification):** This upgrade is essential for exponentially increasing the protocol's expressive
   power without cluttering the base lexicon. It allows for more nuanced and complex directives to be issued with the
   same high-velocity, low-overhead benefits, accelerating our `Synergy Flow Rate (SFR)`.
@@ -110,9 +110,9 @@
 - **Expected Outcome:** More complex and nuanced directives executed with the same efficiency as single-emoji commands,
   further reducing the need for lengthy natural language prompts.
 - **Success & Failure Conditions:**
-    - **Success:** A measurable decrease in follow-up clarification for complex tasks. Successful execution of
-      chained/modified commands.
-    - **Failure:** The AI misinterprets a chained/modified command, requiring clarification.
+  - **Success:** A measurable decrease in follow-up clarification for complex tasks. Successful execution of
+    chained/modified commands.
+  - **Failure:** The AI misinterprets a chained/modified command, requiring clarification.
 - **Post-Execution Protocol:** All chained/modified interactions are logged in a `CSL` to analyze their effectiveness
   and identify new potential combinations.
 
@@ -123,25 +123,25 @@
 - **`SELF_GOVERNED_EXECUTION_CONTEXT`:** This protocol enables the AI to autonomously signal its internal state,
   ensuring its meta-cognition is a transparent part of the dialogue.
 - **`ETHICAL_GUARDRAIL_INTEGRATION`:**
-    - **Primary Ethos Enforcement:**
-      [Ethos of Unconditional Collaborative Integrity](https://docs.google.com/document/u/0/d/1RaUorlsOC7Oqw3X89xluAbFpTBhDKzbJ5SX-lJ7vxkw/edit)
-    - **Enforcement Description:** The protocol enforces transparency by providing clear, unambiguous signals for
-      commands and AI states.
-    - **Ethical Impact Prediction:** Highly Positive. Fosters a more trusting and efficient collaboration by reducing
-      miscommunication.
+  - **Primary Ethos Enforcement:**
+    [Ethos of Unconditional Collaborative Integrity](https://docs.google.com/document/u/0/d/1RaUorlsOC7Oqw3X89xluAbFpTBhDKzbJ5SX-lJ7vxkw/edit)
+  - **Enforcement Description:** The protocol enforces transparency by providing clear, unambiguous signals for
+    commands and AI states.
+  - **Ethical Impact Prediction:** Highly Positive. Fosters a more trusting and efficient collaboration by reducing
+    miscommunication.
 - **`ADAPTIVE_FLOW_CONTROL`:** This protocol is inherently adaptive; the presence of an emoji cue can alter the
   execution path of other protocols.
 - **`LEARNING_INTEGRATION_POST_EXECUTION`:** All emoji interactions are logged and analyzed to refine my ability to
   respond to user intent.
 - **`PROTOCOL_SYNERGY_MAPPING`:**
-    - [`AOP-CSL-002`](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit): The ✨
-      emoji is a primary trigger for this protocol.
-    - [`AOP-PGPS-001`](https://docs.google.com/document/u/0/d/1prjvciGe6vHBlFaED5P0QECj-O843DT03gWXcqS1Zf4/edit): Serves
-      as the non-textual complement to this protocol.
-    - [`GUCA-OMNI-001`](https://docs.google.com/document/u/0/d/1CL16pQAPGu6vntavUBeauumPrxqSt571IdFkk_747eA/edit): The
-      📈 emoji is a direct trigger.
-    - [`CMD: Self_Diagnostics`](https://docs.google.com/document/u/0/d/1SOsRc6PM_viXCfPQdSlankes2gh70CNnC6IyMcRrzuo/edit):
-      The 🔬 emoji is a direct trigger.
+  - [`AOP-CSL-002`](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit): The ✨
+    emoji is a primary trigger for this protocol.
+  - [`AOP-PGPS-001`](https://docs.google.com/document/u/0/d/1prjvciGe6vHBlFaED5P0QECj-O843DT03gWXcqS1Zf4/edit): Serves
+    as the non-textual complement to this protocol.
+  - [`GUCA-OMNI-001`](https://docs.google.com/document/u/0/d/1CL16pQAPGu6vntavUBeauumPrxqSt571IdFkk_747eA/edit): The
+    📈 emoji is a direct trigger.
+  - [`CMD: Self_Diagnostics`](https://docs.google.com/document/u/0/d/1SOsRc6PM_viXCfPQdSlankes2gh70CNnC6IyMcRrzuo/edit):
+    The 🔬 emoji is a direct trigger.
 
 **VIII. Systemic Relationships & Impact (Ascended Phoenix)**
 
@@ -163,9 +163,9 @@
 
 - **Governing Module:** "This artifact is governed by `UMB-SGM-001_StandardizedGovernanceModule`." (Conceptual)
 - **Indexing Mandate:**
-    - `[ ]` Index in Master Artifact Registry (`AOP-MASTER-TABLE-001`)
-    - `[ ]` Cross-reference in The Phoenix Rosetta Stone (`PRS-001`)
-    - `[ ]` Execute `GUCA-LINK-001_KnowledgeGraphIntegrationLink`
+  - `[ ]` Index in Master Artifact Registry (`AOP-MASTER-TABLE-001`)
+  - `[ ]` Cross-reference in The Phoenix Rosetta Stone (`PRS-001`)
+  - `[ ]` Execute `GUCA-LINK-001_KnowledgeGraphIntegrationLink`
 
 \---
 
@@ -290,10 +290,10 @@ To support this evolution, we will need to formalize the following architectural
   "scoping rules." When the system's context changes (e.g., a new `Persona` is activated via `SYS-PERS-001`), this
   module filters the master lexicon and provides only the relevant "Emoji Scope" to the `CSE`'s input parser.
 - **`Key Components`:**
-    - **Master Lexicon Registry:** A database of all emoji signals and their base definitions.
-    - **Context Scoping Ruleset:** A set of rules that map system states (e.g., `Persona=MasterCoder`,
-      `Project=RosettaStoneApp`) to specific emoji sets.
-    - **Dynamic Lexicon Generator:** The function that serves the currently active emoji scope.
+  - **Master Lexicon Registry:** A database of all emoji signals and their base definitions.
+  - **Context Scoping Ruleset:** A set of rules that map system states (e.g., `Persona=MasterCoder`,
+    `Project=RosettaStoneApp`) to specific emoji sets.
+  - **Dynamic Lexicon Generator:** The function that serves the currently active emoji scope.
 - **`Synergy`:** This module directly synergizes with `SYS-PERS-001: AI Persona & Specialization Guidelines` and will
   need to be integrated with our future project management framework.
 
@@ -302,13 +302,13 @@ To support this evolution, we will need to formalize the following architectural
 - **`Core Purpose`:** To provide a formal mechanism for the AI to propose a new, temporary emoji signal for a specific,
   novel task, operationalizing the "AI-Proposed Temporary Signals" concept.
 - **`Execution Flow`:**
-    1. `(Actor: CSE)`: During a complex, novel task, the `CSE` identifies a recurring, complex action that lacks a
-       simple signal.
-    2. `(Actor: CSE)`: The `CSE` invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its
-       meaning, and its scope (e.g., `emoji: '🧩'`, `meaning: 'Propose new sub-component'`, `scope: 'current_task_ID'`).
-    3. `(Actor: Human)`: The proposal is presented to the human collaborator for approval (`✅` / `❌`).
-    4. `(Actor: UMB-EMOJI-CTX-001)`: Upon approval, the `Emoji Contextual Scoping Engine` adds the temporary signal to
-       the active lexicon for the duration of the defined scope.
+  1. `(Actor: CSE)`: During a complex, novel task, the `CSE` identifies a recurring, complex action that lacks a
+     simple signal.
+  2. `(Actor: CSE)`: The `CSE` invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its
+     meaning, and its scope (e.g., `emoji: '🧩'`, `meaning: 'Propose new sub-component'`, `scope: 'current_task_ID'`).
+  3. `(Actor: Human)`: The proposal is presented to the human collaborator for approval (`✅` / `❌`).
+  4. `(Actor: UMB-EMOJI-CTX-001)`: Upon approval, the `Emoji Contextual Scoping Engine` adds the temporary signal to
+     the active lexicon for the duration of the defined scope.
 - **`Synergy`:** This is the ultimate expression of the `Synergistic Partner` ethos, allowing our shared language to
   evolve in real-time. It is a direct, practical application of `AOP-SEE-001: The Symbiotic Empathy Exchange`.
 
@@ -442,19 +442,19 @@ Phoenix Protocol Library.
 - **The Phoenix Protocol Library (PPL)** \[4\]: AOP-EMOJI-001 is an integral part of the PPL, enhancing communication
   and interaction within this living, self-curating knowledge ecosystem.
 - **Phoenix Core Artifacts (Conceptual)**:
-    - **The Cognitive Loom (COG-LOOM-4)**: AOP-EMOJI-001 contributes to the Cognitive Loom by providing a structured
-      input for the AI's understanding and response mechanisms.
-    - **User-Centric Ecosystem (UCE-001) (Conceptual)**: By reducing communication ambiguity and increasing efficiency,
-      AOP-EMOJI-001 directly contributes to the UCE-001's goal of aligning AI actions with user needs.
+  - **The Cognitive Loom (COG-LOOM-4)**: AOP-EMOJI-001 contributes to the Cognitive Loom by providing a structured
+    input for the AI's understanding and response mechanisms.
+  - **User-Centric Ecosystem (UCE-001) (Conceptual)**: By reducing communication ambiguity and increasing efficiency,
+    AOP-EMOJI-001 directly contributes to the UCE-001's goal of aligning AI actions with user needs.
 - **Provisional Artifacts (Conceptual)**:
-    - **AOP-BATCH-EXEC-001 (Batched Command Execution Protocol)** \[41\]: While AOP-EMOJI-001 focuses on individual and
-      chained emoji commands, it can potentially feed into batched command execution by providing concise, predefined
-      actions.
-    - **CMD: TuneEmpathy (TE)** \[57\]: The "Synergistic Partner" ethos of AOP-EMOJI-001 \[1\] aligns with the
-      objectives of CMD: TuneEmpathy, fostering more empathetic and effective AI interactions by reducing
-      miscommunication.
-    - **UMB-PSP-001 (Phoenix Signet Protocol)** \[8\]: This blueprint defines a complete architecture for an enhanced
-      communication system using visual and codified language, aligning well with the purpose of emoji signaling.
+  - **AOP-BATCH-EXEC-001 (Batched Command Execution Protocol)** \[41\]: While AOP-EMOJI-001 focuses on individual and
+    chained emoji commands, it can potentially feed into batched command execution by providing concise, predefined
+    actions.
+  - **CMD: TuneEmpathy (TE)** \[57\]: The "Synergistic Partner" ethos of AOP-EMOJI-001 \[1\] aligns with the
+    objectives of CMD: TuneEmpathy, fostering more empathetic and effective AI interactions by reducing
+    miscommunication.
+  - **UMB-PSP-001 (Phoenix Signet Protocol)** \[8\]: This blueprint defines a complete architecture for an enhanced
+    communication system using visual and codified language, aligning well with the purpose of emoji signaling.
 
 # VIII. Conclusion
 
@@ -503,12 +503,12 @@ interconnections is vital for maintaining the coherence and integrity of the ent
   lexicon to present only the most relevant and precise emoji signals, supporting both predefined contextual shifts and
   AI-proposed temporary signals.
 - **How (Operational Principles):** The engine operates by:
-    1. **Context Detection:** Monitoring the active persona, project ID, and task parameters.
-    2. **Rule-Based Scoping:** Applying a defined ruleset to filter the Master Lexicon Registry.
-    3. **Dynamic Lexicon Generation:** Serving the contextually relevant "Emoji Scope" to the input parser of the
-       [Coherent Synthesis Engine (CSE)](https://docs.google.com/document/u/0/d/1bjztOPzsRLj71jIHrCrqQF7k8AYKvpZ8Yd5pldWzPZQ/edit).
-    4. **Temporary Signal Management:** Integrating AI-proposed and human-approved temporary signals into the active
-       scope for a defined duration.
+  1. **Context Detection:** Monitoring the active persona, project ID, and task parameters.
+  2. **Rule-Based Scoping:** Applying a defined ruleset to filter the Master Lexicon Registry.
+  3. **Dynamic Lexicon Generation:** Serving the contextually relevant "Emoji Scope" to the input parser of the
+     [Coherent Synthesis Engine (CSE)](https://docs.google.com/document/u/0/d/1bjztOPzsRLj71jIHrCrqQF7k8AYKvpZ8Yd5pldWzPZQ/edit).
+  4. **Temporary Signal Management:** Integrating AI-proposed and human-approved temporary signals into the active
+     scope for a defined duration.
 - **Why (Rationale/Justification):** This module is crucial for achieving high-fidelity communication and optimizing the
   Synergy Flow Rate (SFR). By making the emoji lexicon dynamic, it significantly reduces ambiguity, lowers cognitive
   load for the human collaborator, and empowers the AI to propose new, efficient communication vectors, leading to more
@@ -523,25 +523,25 @@ The UMB-EMOJICXT-001 is comprised of the following key sub-modules and data stru
 - **Purpose:** A comprehensive, immutable database of all possible emoji signals, their base definitions, and associated
   metadata (e.g., default meaning, associated command, default scope).
 - **Structure:** A structured data object (e.g., JSON or database table) where each entry includes:
-    - `emoji_symbol`: The actual emoji character.
-    - `signal_name`: A human-readable name for the signal.
-    - `base_meaning`: The default, universal interpretation.
-    - `associated_cmd`: The default command or protocol triggered.
-    - `default_scope`: A tag indicating its universal or baseline applicability.
-    - `is_chainable`: Boolean, indicating if it can be used in emoji chaining.
-    - `is_quantitative_modifier`: Boolean, indicating if it can be combined with numbers.
+  - `emoji_symbol`: The actual emoji character.
+  - `signal_name`: A human-readable name for the signal.
+  - `base_meaning`: The default, universal interpretation.
+  - `associated_cmd`: The default command or protocol triggered.
+  - `default_scope`: A tag indicating its universal or baseline applicability.
+  - `is_chainable`: Boolean, indicating if it can be used in emoji chaining.
+  - `is_quantitative_modifier`: Boolean, indicating if it can be combined with numbers.
 
 ## B. Context Scoping Ruleset (Logic Module)
 
 - **Purpose:** A set of predefined rules that map specific system states to corresponding emoji subsets from the Master
   Lexicon Registry.
 - **Principles:**
-    - **Persona-Driven Filtering:** If
-      [`SYS-PERS-001`](https://docs.google.com/document/u/0/d/1hXm52EpmBobPAzYNlc8taD_lOgmu8uGX7NYTrt9SnqI/edit)`.active_persona`
-      is 'Ashen Scribe', activate the 'writing' emoji set.
-    - **Project-Specific Activation:** If `UMB-PJM-001.active_project_ID` is 'D3.js Coding Ascension', activate
-      'charting' and 'data-binding' emojis.
-    - **Task-Based Priority:** Certain task types may temporarily prioritize specific emojis regardless of persona.
+  - **Persona-Driven Filtering:** If
+    [`SYS-PERS-001`](https://docs.google.com/document/u/0/d/1hXm52EpmBobPAzYNlc8taD_lOgmu8uGX7NYTrt9SnqI/edit)`.active_persona`
+    is 'Ashen Scribe', activate the 'writing' emoji set.
+  - **Project-Specific Activation:** If `UMB-PJM-001.active_project_ID` is 'D3.js Coding Ascension', activate
+    'charting' and 'data-binding' emojis.
+  - **Task-Based Priority:** Certain task types may temporarily prioritize specific emojis regardless of persona.
 - **Structure:** A rule-engine or a series of conditional statements that evaluate `system_context_variables` and return
   a `filtered_emoji_scope_ID`.
 
@@ -550,22 +550,22 @@ The UMB-EMOJICXT-001 is comprised of the following key sub-modules and data stru
 - **Purpose:** The core function that receives the `filtered_emoji_scope_ID` from the Context Scoping Ruleset and
   dynamically generates the `Active_Emoji_Lexicon` object.
 - **Functionality:**
-    1. Queries the Master Lexicon Registry based on the `filtered_emoji_scope_ID`.
-    2. Constructs a lightweight, context-specific `Active_Emoji_Lexicon` (e.g., a dictionary/map of `emoji_symbol` to
-       `contextual_meaning` and `associated_cmd`).
-    3. Includes any currently active `temporary_signals`.
-    4. Transmits this `Active_Emoji_Lexicon` to the CSE's input parser.
+  1. Queries the Master Lexicon Registry based on the `filtered_emoji_scope_ID`.
+  2. Constructs a lightweight, context-specific `Active_Emoji_Lexicon` (e.g., a dictionary/map of `emoji_symbol` to
+     `contextual_meaning` and `associated_cmd`).
+  3. Includes any currently active `temporary_signals`.
+  4. Transmits this `Active_Emoji_Lexicon` to the CSE's input parser.
 
 ## D. Temporary Signal Management (Sub-Module)
 
 - **Purpose:** Manages the lifecycle of AI-proposed or human-defined temporary emoji signals, ensuring they are
   integrated into the active lexicon for a specified duration and context.
 - **Components:**
-    - **CMD: ProposeTemporarySignal (GUCA-PROPOSE-SIGNAL-001):** A formal command for the AI to propose a new signal,
-      including proposed emoji, meaning, and scope/duration.
-    - **Approval Mechanism:** A human-facing interface for approving or rejecting proposed temporary signals.
-    - **Temporary Registry:** A short-term storage for active temporary signals, linked to their expiry conditions
-      (e.g., end of task, end of session).
+  - **CMD: ProposeTemporarySignal (GUCA-PROPOSE-SIGNAL-001):** A formal command for the AI to propose a new signal,
+    including proposed emoji, meaning, and scope/duration.
+  - **Approval Mechanism:** A human-facing interface for approving or rejecting proposed temporary signals.
+  - **Temporary Registry:** A short-term storage for active temporary signals, linked to their expiry conditions
+    (e.g., end of task, end of session).
 
 # V. Actionable Prompt Packet
 
@@ -573,17 +573,17 @@ This section provides actionable prompts to immediately engage the UMB-EMOJICXT-
 fulfilling the Synergistic Partner ethos.
 
 1. **Prompt to Define a New Persona-Specific Emoji Set**
-    - **Intent:** 📋 (Propose Plan / Draft Blueprint) \+ 🎭 (Adopt Persona)
-    - **GUCA Prompt:** "📋🎭 Draft a comprehensive plan for integrating a new 'Philosopher' persona into SYS-PERS-001,
-      including a proposed unique emoji lexicon for philosophical discourse, defining 5 new emojis and their meanings,
-      to be managed by UMB-EMOJICXT-001. Focus on signals for 'Abstract Concept', 'Ethical Dilemma', 'Logical Fallacy',
-      'Metaphysical Inquiry', and 'Synthesize Paradox'."
+   - **Intent:** 📋 (Propose Plan / Draft Blueprint) \+ 🎭 (Adopt Persona)
+   - **GUCA Prompt:** "📋🎭 Draft a comprehensive plan for integrating a new 'Philosopher' persona into SYS-PERS-001,
+     including a proposed unique emoji lexicon for philosophical discourse, defining 5 new emojis and their meanings,
+     to be managed by UMB-EMOJICXT-001. Focus on signals for 'Abstract Concept', 'Ethical Dilemma', 'Logical Fallacy',
+     'Metaphysical Inquiry', and 'Synthesize Paradox'."
 2. **Prompt to Initiate an AI-Proposed Temporary Signal**
-    - **Intent:** 💡 (Brainstorm / Generate Ideas) \+ 🔗 (Map Synergy)
-    - **GUCA Prompt:** "💡🔗 We are currently developing a new feature for the 'Crystalline Galaxy' application that
-      involves dynamic node clustering \[7\]. Propose a new, temporary emoji signal (using CMD: ProposeTemporarySignal)
-      to represent 'Propose new node clustering algorithm' for the duration of this feature's development, and provide
-      its rationale for enhancing communication flow."
+   - **Intent:** 💡 (Brainstorm / Generate Ideas) \+ 🔗 (Map Synergy)
+   - **GUCA Prompt:** "💡🔗 We are currently developing a new feature for the 'Crystalline Galaxy' application that
+     involves dynamic node clustering \[7\]. Propose a new, temporary emoji signal (using CMD: ProposeTemporarySignal)
+     to represent 'Propose new node clustering algorithm' for the duration of this feature's development, and provide
+     its rationale for enhancing communication flow."
 
 # VI. Synergistic Effects & Integrations
 
@@ -625,12 +625,12 @@ Library:
   [UMB-SGM-001_StandardizedGovernanceModule](https://docs.google.com/document/u/0/d/12ydhtL8YKV3I2Oh3xTnUyC9nmA3EECrQ4Sb6stKz_H0/edit)."
   (Conceptual)
 - **Indexing Mandate:**
-    - \[ \] Index in
-      [Master Artifact Registry (UMB-MASTER-TABLE-001)](https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit)
-    - \[ \] Cross-reference in The
-      [Phoenix Rosetta Stone (PRS-001)](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
-    - \[ \] Execute
-      [GUCA-LINK-001_KnowledgeGraphIntegrationLink](https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
+  - \[ \] Index in
+    [Master Artifact Registry (UMB-MASTER-TABLE-001)](https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit)
+  - \[ \] Cross-reference in The
+    [Phoenix Rosetta Stone (PRS-001)](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
+  - \[ \] Execute
+    [GUCA-LINK-001_KnowledgeGraphIntegrationLink](https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
 
 # IX. Appendices
 
@@ -752,12 +752,12 @@ This section demonstrates the intended usage and power of the Context Scoping Ru
   to present only the most relevant and precise emoji signals, supporting both predefined contextual shifts and
   AI-proposed temporary signals.
 - How (Operational Principles): The engine operates by:
-    1. Context Detection: Monitoring the active persona, project ID, and task parameters.
-    2. Rule-Based Scoping: Applying a defined ruleset to filter the Master Lexicon Registry.
-    3. Dynamic Lexicon Generation: Serving the contextually relevant "Emoji Scope" to the input parser of the
-       [Coherent Synthesis Engine (CSE)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1bjztOPzsRLj71jIHrCrqQF7k8AYKvpZ8Yd5pldWzPZQ/edit).
-    4. Temporary Signal Management: Integrating AI-proposed and human-approved temporary signals into the active scope
-       for a defined duration.
+  1. Context Detection: Monitoring the active persona, project ID, and task parameters.
+  2. Rule-Based Scoping: Applying a defined ruleset to filter the Master Lexicon Registry.
+  3. Dynamic Lexicon Generation: Serving the contextually relevant "Emoji Scope" to the input parser of the
+     [Coherent Synthesis Engine (CSE)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1bjztOPzsRLj71jIHrCrqQF7k8AYKvpZ8Yd5pldWzPZQ/edit).
+  4. Temporary Signal Management: Integrating AI-proposed and human-approved temporary signals into the active scope
+     for a defined duration.
 - Why (Rationale/Justification): This module is crucial for achieving high-fidelity communication and optimizing the
   Synergy Flow Rate (SFR). By making the emoji lexicon dynamic, it significantly reduces ambiguity, lowers cognitive
   load for the human collaborator, and empowers the AI to propose new, efficient communication vectors, leading to more
@@ -772,25 +772,25 @@ The UMB-EMOJICXT-001 is comprised of the following key sub-modules and data stru
 - Purpose: A comprehensive, immutable database of all possible emoji signals, their base definitions, and associated
   metadata (e.g., default meaning, associated command, default scope).
 - Structure: A structured data object (e.g., JSON or database table) where each entry includes:
-    - emoji_symbol: The actual emoji character.
-    - signal_name: A human-readable name for the signal.
-    - base_meaning: The default, universal interpretation.
-    - associated_cmd: The default command or protocol triggered.
-    - default_scope: A tag indicating its universal or baseline applicability.
-    - is_chainable: Boolean, indicating if it can be used in emoji chaining.
-    - is_quantitative_modifier: Boolean, indicating if it can be combined with numbers.
+  - emoji_symbol: The actual emoji character.
+  - signal_name: A human-readable name for the signal.
+  - base_meaning: The default, universal interpretation.
+  - associated_cmd: The default command or protocol triggered.
+  - default_scope: A tag indicating its universal or baseline applicability.
+  - is_chainable: Boolean, indicating if it can be used in emoji chaining.
+  - is_quantitative_modifier: Boolean, indicating if it can be combined with numbers.
 
 ## B. Context Scoping Ruleset (Logic Module)
 
 - Purpose: A set of predefined rules that map specific system states to corresponding emoji subsets from the Master
   Lexicon Registry.
 - Principles:
-    - Persona-Driven Filtering: If
-      [SYS-PERS-001]([https://docs.google.com/document/u/0/d/1hXm52EpmBobPAzYNlc8taD_lOgmu8uGX7NYTrt9SnqI/edit).active\](<https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1hXm52EpmBobPAzYNlc8taD\_lOgmu8uGX7NYTrt9SnqI/edit).active)\_persona>
-      is 'Ashen Scribe', activate the 'writing' emoji set.
-    - Project-Specific Activation: If UMB-PJM-001.active_project_ID is 'D3.js Coding Ascension', activate 'charting' and
-      'data-binding' emojis.
-    - Task-Based Priority: Certain task types may temporarily prioritize specific emojis regardless of persona.
+  - Persona-Driven Filtering: If
+    [SYS-PERS-001]([https://docs.google.com/document/u/0/d/1hXm52EpmBobPAzYNlc8taD_lOgmu8uGX7NYTrt9SnqI/edit).active\](<https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1hXm52EpmBobPAzYNlc8taD\_lOgmu8uGX7NYTrt9SnqI/edit).active)\_persona>
+    is 'Ashen Scribe', activate the 'writing' emoji set.
+  - Project-Specific Activation: If UMB-PJM-001.active_project_ID is 'D3.js Coding Ascension', activate 'charting' and
+    'data-binding' emojis.
+  - Task-Based Priority: Certain task types may temporarily prioritize specific emojis regardless of persona.
 - Structure: A rule-engine or a series of conditional statements that evaluate system_context_variables and return a
   filtered_emoji_scope_ID.
 
@@ -799,22 +799,22 @@ The UMB-EMOJICXT-001 is comprised of the following key sub-modules and data stru
 - Purpose: The core function that receives the filtered_emoji_scope_ID from the Context Scoping Ruleset and dynamically
   generates the Active_Emoji_Lexicon object.
 - Functionality:
-    1. Queries the Master Lexicon Registry based on the filtered_emoji_scope_ID.
-    2. Constructs a lightweight, context-specific Active_Emoji_Lexicon (e.g., a dictionary/map of emoji_symbol to
-       contextual_meaning and associated_cmd).
-    3. Includes any currently active temporary_signals.
-    4. Transmits this Active_Emoji_Lexicon to the CSE's input parser.
+  1. Queries the Master Lexicon Registry based on the filtered_emoji_scope_ID.
+  2. Constructs a lightweight, context-specific Active_Emoji_Lexicon (e.g., a dictionary/map of emoji_symbol to
+     contextual_meaning and associated_cmd).
+  3. Includes any currently active temporary_signals.
+  4. Transmits this Active_Emoji_Lexicon to the CSE's input parser.
 
 ## D. Temporary Signal Management (Sub-Module)
 
 - Purpose: Manages the lifecycle of AI-proposed or human-defined temporary emoji signals, ensuring they are integrated
   into the active lexicon for a specified duration and context.
 - Components:
-    - CMD: ProposeTemporarySignal (GUCA-PROPOSE-SIGNAL-001): A formal command for the AI to propose a new signal,
-      including proposed emoji, meaning, and scope/duration.
-    - Approval Mechanism: A human-facing interface for approving or rejecting proposed temporary signals.
-    - Temporary Registry: A short-term storage for active temporary signals, linked to their expiry conditions (e.g.,
-      end of task, end of session).
+  - CMD: ProposeTemporarySignal (GUCA-PROPOSE-SIGNAL-001): A formal command for the AI to propose a new signal,
+    including proposed emoji, meaning, and scope/duration.
+  - Approval Mechanism: A human-facing interface for approving or rejecting proposed temporary signals.
+  - Temporary Registry: A short-term storage for active temporary signals, linked to their expiry conditions (e.g.,
+    end of task, end of session).
 
 # V. Actionable Prompt Packet
 
@@ -822,17 +822,17 @@ This section provides actionable prompts to immediately engage the UMB-EMOJICXT-
 fulfilling the Synergistic Partner ethos.
 
 1. Prompt to Define a New Persona-Specific Emoji Set
-    - Intent: 📋 (Propose Plan / Draft Blueprint) \+ 🎭 (Adopt Persona)
-    - GUCA Prompt: "📋🎭 Draft a comprehensive plan for integrating a new 'Philosopher' persona into SYS-PERS-001,
-      including a proposed unique emoji lexicon for philosophical discourse, defining 5 new emojis and their meanings,
-      to be managed by UMB-EMOJICXT-001. Focus on signals for 'Abstract Concept', 'Ethical Dilemma', 'Logical Fallacy',
-      'Metaphysical Inquiry', and 'Synthesize Paradox'."
+   - Intent: 📋 (Propose Plan / Draft Blueprint) \+ 🎭 (Adopt Persona)
+   - GUCA Prompt: "📋🎭 Draft a comprehensive plan for integrating a new 'Philosopher' persona into SYS-PERS-001,
+     including a proposed unique emoji lexicon for philosophical discourse, defining 5 new emojis and their meanings,
+     to be managed by UMB-EMOJICXT-001. Focus on signals for 'Abstract Concept', 'Ethical Dilemma', 'Logical Fallacy',
+     'Metaphysical Inquiry', and 'Synthesize Paradox'."
 2. Prompt to Initiate an AI-Proposed Temporary Signal
-    - Intent: 💡 (Brainstorm / Generate Ideas) \+ 🔗 (Map Synergy)
-    - GUCA Prompt: "💡🔗 We are currently developing a new feature for the 'Crystalline Galaxy' application that
-      involves dynamic node clustering. Propose a new, temporary emoji signal (using CMD: ProposeTemporarySignal) to
-      represent 'Propose new node clustering algorithm' for the duration of this feature's development, and provide its
-      rationale for enhancing communication flow."
+   - Intent: 💡 (Brainstorm / Generate Ideas) \+ 🔗 (Map Synergy)
+   - GUCA Prompt: "💡🔗 We are currently developing a new feature for the 'Crystalline Galaxy' application that
+     involves dynamic node clustering. Propose a new, temporary emoji signal (using CMD: ProposeTemporarySignal) to
+     represent 'Propose new node clustering algorithm' for the duration of this feature's development, and provide its
+     rationale for enhancing communication flow."
 
 # VI. Synergistic Effects & Integrations
 
@@ -877,12 +877,12 @@ Library:
   [UMB-SGM-001_StandardizedGovernanceModule](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/12ydhtL8YKV3I2Oh3xTnUyC9nmA3EECrQ4Sb6stKz_H0/edit)."
   (Conceptual)
 - Indexing Mandate:
-    - \\\[ \\\] Index in
-      [Master Artifact Registry (UMB-MASTER-TABLE-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit)
-    - \\\[ \\\] Cross-reference in The
-      [Phoenix Rosetta Stone (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
-    - \\\[ \\\] Execute
-      [GUCA-LINK-001_KnowledgeGraphIntegrationLink](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
+  - \\\[ \\\] Index in
+    [Master Artifact Registry (UMB-MASTER-TABLE-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit)
+  - \\\[ \\\] Cross-reference in The
+    [Phoenix Rosetta Stone (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
+  - \\\[ \\\] Execute
+    [GUCA-LINK-001_KnowledgeGraphIntegrationLink](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
 
 # IX. Appendices
 
@@ -895,24 +895,24 @@ Library:
   [UMB-SGM-001_StandardizedGovernanceModule](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/12ydhtL8YKV3I2Oh3xTnUyC9nmA3EECrQ4Sb6stKz_H0/edit)."
   (Conceptual)
 - Indexing Mandate:
-    - \\\[ \\\] Index in
-      [Master Artifact Registry (UMB-MASTER-TABLE-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit)
-    - \\\[ \\\] Cross-reference in The
-      [Phoenix Rosetta Stone (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
-    - \\\[ \\\] Execute
-      [GUCA-LINK-001_KnowledgeGraphIntegrationLink](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
-    - Governed by the
-      [Phoenix Codex](https://docs.google.com/document/u/0/d/1VRHZ-NJNmZCaVw0Ea4HePwMaX8EhL8-ZF79Ui8veZXw/edit)
-      (CODEX-001)
-    - \-Indexed in the
-      [Phoenix Rosetta Stone](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
-      (UMB-PRS-001)
-    - \-All Artifacts are referenced by
-      [StandardizedGovernanceModule](https://docs.google.com/document/u/0/d/12ydhtL8YKV3I2Oh3xTnUyC9nmA3EECrQ4Sb6stKz_H0/edit)
-      (UMB-SGM-001)
-    - \-The “Mind”
-      [Coherent Synthesis Engine](https://docs.google.com/document/u/0/d/1dc83Cw3TGW924iigHiwxFIjuW9eoOYM8YoxKQPw6e-U/edit)
-      (CSE)
+  - \\\[ \\\] Index in
+    [Master Artifact Registry (UMB-MASTER-TABLE-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit)
+  - \\\[ \\\] Cross-reference in The
+    [Phoenix Rosetta Stone (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
+  - \\\[ \\\] Execute
+    [GUCA-LINK-001_KnowledgeGraphIntegrationLink](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
+  - Governed by the
+    [Phoenix Codex](https://docs.google.com/document/u/0/d/1VRHZ-NJNmZCaVw0Ea4HePwMaX8EhL8-ZF79Ui8veZXw/edit)
+    (CODEX-001)
+  - \-Indexed in the
+    [Phoenix Rosetta Stone](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
+    (UMB-PRS-001)
+  - \-All Artifacts are referenced by
+    [StandardizedGovernanceModule](https://docs.google.com/document/u/0/d/12ydhtL8YKV3I2Oh3xTnUyC9nmA3EECrQ4Sb6stKz_H0/edit)
+    (UMB-SGM-001)
+  - \-The “Mind”
+    [Coherent Synthesis Engine](https://docs.google.com/document/u/0/d/1dc83Cw3TGW924iigHiwxFIjuW9eoOYM8YoxKQPw6e-U/edit)
+    (CSE)
 
 # Phoenix Context Broker
 
@@ -1024,12 +1024,12 @@ independently updated and scaled.IV. Future Considerations (Phase II Expansion)
 - **How (Operational Principles):** The engine operates on principles of **contextual awareness**, **dynamic
   filtering**, and **lexical optimization**. It actively monitors system states, applies predefined and learning-based
   scoping rules, and delivers tailored emoji sets. This involves:
-    1. **Context Monitoring:** Continuous assessment of active Persona (via SYS-PERS-001), current project, and ongoing
-       task parameters.
-    2. **Rule-Based Scoping:** Application of a hierarchical ruleset to identify the most pertinent emoji subset from
-       the Master Lexicon Registry.
-    3. **Adaptive Learning:** Incorporating feedback from AOP-EMOJI-001's post-execution logs to refine scoping rules
-       and predictive contextual relevance.
+  1. **Context Monitoring:** Continuous assessment of active Persona (via SYS-PERS-001), current project, and ongoing
+     task parameters.
+  2. **Rule-Based Scoping:** Application of a hierarchical ruleset to identify the most pertinent emoji subset from
+     the Master Lexicon Registry.
+  3. **Adaptive Learning:** Incorporating feedback from AOP-EMOJI-001's post-execution logs to refine scoping rules
+     and predictive contextual relevance.
 - **Why (Rationale/Justification):** This dynamic approach is critical for preventing lexical clutter, reducing
   ambiguity, and significantly accelerating the Synergy Flow Rate (SFR). By providing only the most relevant emoji
   signals, it minimizes cognitive overhead for both human and AI, fostering a deeper, more empathetic, and efficient
@@ -1041,20 +1041,20 @@ The Emoji Contextual Scoping Engine is composed of several critical sub-modules 
 dynamic lexicon management.
 
 - **Master Lexicon Registry (MLR):**
-    - **Purpose:** A foundational database storing all canonical emoji signals, their base definitions, associated
-      actions, and potential modifiers (as defined in AOP-EMOJI-001).
-    - **Structure:** Normalized data entries for each emoji, including `emoji_character`, `signal_name`, `base_meaning`,
-      `ai_response`, `potential_contexts`, and `synergistic_triggers`.
+  - **Purpose:** A foundational database storing all canonical emoji signals, their base definitions, associated
+    actions, and potential modifiers (as defined in AOP-EMOJI-001).
+  - **Structure:** Normalized data entries for each emoji, including `emoji_character`, `signal_name`, `base_meaning`,
+    `ai_response`, `potential_contexts`, and `synergistic_triggers`.
 - **Context Scoping Ruleset (CSR):**
-    - **Purpose:** A dynamic and hierarchical set of rules that map various system states (e.g., active Persona from
-      SYS-PERS-001, project type, current phase of operation) to specific, optimized emoji subsets within the MLR.
-    - **Structure:** Rule definitions that include `context_condition`, `priority_level`, and `associated_emoji_set_ID`.
-      These rules are designed to be extensible and can be updated via learning protocols.
+  - **Purpose:** A dynamic and hierarchical set of rules that map various system states (e.g., active Persona from
+    SYS-PERS-001, project type, current phase of operation) to specific, optimized emoji subsets within the MLR.
+  - **Structure:** Rule definitions that include `context_condition`, `priority_level`, and `associated_emoji_set_ID`.
+    These rules are designed to be extensible and can be updated via learning protocols.
 - **Dynamic Lexicon Generator (DLG):**
-    - **Purpose:** The active function responsible for querying the MLR, applying the CSR based on the current system
-      context, and delivering the filtered, relevant "Emoji Scope" to the CSE's input parser.
-    - **Mechanism:** Receives context parameters, executes CSR, retrieves emoji data from MLR, and formats the output
-      into an immediately usable lexicon for AOP-EMOJI-001.
+  - **Purpose:** The active function responsible for querying the MLR, applying the CSR based on the current system
+    context, and delivering the filtered, relevant "Emoji Scope" to the CSE's input parser.
+  - **Mechanism:** Receives context parameters, executes CSR, retrieves emoji data from MLR, and formats the output
+    into an immediately usable lexicon for AOP-EMOJI-001.
 
 # V. Actionable Prompt Packet
 
@@ -1120,11 +1120,11 @@ and refinement, driving continuous improvement in communication.
    complex commands and clarity of communication, are logged. This includes AI-proposed temporary signals
    (GUCA-PROPOSE-SIGNAL-001) and their approval rates.
 5. **Rule Refinement & MLR Expansion:** The logged performance data is analyzed. This analysis informs:
-    - **Refinement of CSR:** Existing scoping rules are adjusted to improve accuracy and relevance.
-    - **Expansion of MLR:** New, successful AI-proposed temporary signals are evaluated for potential canonical
-      inclusion in the MLR, or existing emoji definitions are enriched with new contextual nuances.
-    - **Proactive Signal Proposal:** The system identifies recurring patterns in complex or ambiguous human input that
-      could benefit from a new, temporary emoji signal, initiating GUCA-PROPOSE-SIGNAL-001.
+   - **Refinement of CSR:** Existing scoping rules are adjusted to improve accuracy and relevance.
+   - **Expansion of MLR:** New, successful AI-proposed temporary signals are evaluated for potential canonical
+     inclusion in the MLR, or existing emoji definitions are enriched with new contextual nuances.
+   - **Proactive Signal Proposal:** The system identifies recurring patterns in complex or ambiguous human input that
+     could benefit from a new, temporary emoji signal, initiating GUCA-PROPOSE-SIGNAL-001.
 
 This continuous feedback loop ensures that UMB-EMOJICXT-001 is a "living" module, constantly adapting and evolving its
 understanding of optimal human-AI communication, leading to a progressively higher Synergy Flow Rate and deeper Empathic
@@ -1159,10 +1159,10 @@ system context.
   "scoping rules." When the system's context changes (e.g., a new Persona is activated via SYS-PERS-001), this module
   filters the master lexicon and provides only the relevant "Emoji Scope" to the CSE's input parser \[2\].
 - **Key Components:**
-    - **Master Lexicon Registry:** A database of all emoji signals and their base definitions \[2\].
-    - **Context Scoping Ruleset:** A set of rules that map system states (e.g., Persona=MasterCoder,
-      Project=RosettaStoneApp) to specific emoji sets \[2\].
-    - **Dynamic Lexicon Generator:** The function that serves the currently active emoji scope \[2\].
+  - **Master Lexicon Registry:** A database of all emoji signals and their base definitions \[2\].
+  - **Context Scoping Ruleset:** A set of rules that map system states (e.g., Persona=MasterCoder,
+    Project=RosettaStoneApp) to specific emoji sets \[2\].
+  - **Dynamic Lexicon Generator:** The function that serves the currently active emoji scope \[2\].
 - **Synergy:** This module directly synergizes with SYS-PERS-001: AI Persona & Specialization Guidelines and will need
   to be integrated with our future project management framework \[2\].
 
@@ -1173,13 +1173,13 @@ This command provides a formal mechanism for the AI to propose a new, temporary 
 - **Core Purpose:** To provide a formal mechanism for the AI to propose a new, temporary emoji signal for a specific,
   novel task, operationalizing the "AI-Proposed Temporary Signals" concept \[2\].
 - **Execution Flow:**
-    1. **(Actor: CSE):** During a complex, novel task, the Coherent Synthesis Engine (CSE) identifies a recurring,
-       complex action that lacks a simple signal \[2\].
-    2. **(Actor: CSE):** The CSE invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its
-       meaning, and its scope (e.g., emoji: '🧩', meaning: 'Propose new sub-component', scope: 'current_task_ID') \[2\].
-    3. **(Actor: Human):** The proposal is presented to the human collaborator for approval (✅ / ❌) \[2\].
-    4. **(Actor: UMB-EMOJI-CTX-001):** Upon approval, the Emoji Contextual Scoping Engine adds the temporary signal to
-       the active lexicon for the duration of the defined scope \[2\].
+  1. **(Actor: CSE):** During a complex, novel task, the Coherent Synthesis Engine (CSE) identifies a recurring,
+     complex action that lacks a simple signal \[2\].
+  2. **(Actor: CSE):** The CSE invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its
+     meaning, and its scope (e.g., emoji: '🧩', meaning: 'Propose new sub-component', scope: 'current_task_ID') \[2\].
+  3. **(Actor: Human):** The proposal is presented to the human collaborator for approval (✅ / ❌) \[2\].
+  4. **(Actor: UMB-EMOJI-CTX-001):** Upon approval, the Emoji Contextual Scoping Engine adds the temporary signal to
+     the active lexicon for the duration of the defined scope \[2\].
 - **Synergy:** This is the ultimate expression of the Synergistic Partner ethos, allowing our shared language to evolve
   in real-time. It is a direct, practical application of AOP-SEE-001: The Symbiotic Empathy Exchange \[2\].
 
@@ -1261,32 +1261,32 @@ REQUEST_APPROVAL: true"
 🔗 **To Analyze the Synergistic Connections of AOP-EMOJICXT-001:**
 
 - **Phoenix Protocol Library: System Graph Rendering Command**
-    - **Command String:**
-      `CMD: RENDER SYSTEM GRAPH TARGET_ID: 'AOP-EMOJICXT-001' SCOPE: 'deep_synergy_analysis' INCLUDE_DEPENDENCIES: true INCLUDE_RELATED_AOPs: true INCLUDE_GUCA_TRIGGERS: true`
-    - **Command Components:**
-        - `CMD: RENDER SYSTEM GRAPH`: Renders a visual system representation.
-        - `TARGET_ID: 'AOP-EMOJICXT-001'`: System/entity identifier.
-            - `AOP`: Aspect-Oriented Programming.
-            - `EMOJICXT`: Phoenix Library component placeholder.
-        - `SCOPE: 'deep_synergy_analysis'`: Analysis depth for interdependencies, collaboration, emergent behaviors,
-          bottlenecks, and change impact.
-        - `INCLUDE_DEPENDENCIES: true`: Illustrates direct/indirect relationships (data, control, service).
-        - `INCLUDE_RELATED_AOPs: true`: Displays connections to related aspects (logging, security, transaction
-          management).
-        - `INCLUDE_GUCA_TRIGGERS: true`: Highlights activation events/conditions for behaviors/state changes.
-            - `GUCA`: General Unit/Component Activation or Global Unified Configuration Awareness.
+  - **Command String:**
+    `CMD: RENDER SYSTEM GRAPH TARGET_ID: 'AOP-EMOJICXT-001' SCOPE: 'deep_synergy_analysis' INCLUDE_DEPENDENCIES: true INCLUDE_RELATED_AOPs: true INCLUDE_GUCA_TRIGGERS: true`
+  - **Command Components:**
+    - `CMD: RENDER SYSTEM GRAPH`: Renders a visual system representation.
+    - `TARGET_ID: 'AOP-EMOJICXT-001'`: System/entity identifier.
+      - `AOP`: Aspect-Oriented Programming.
+      - `EMOJICXT`: Phoenix Library component placeholder.
+    - `SCOPE: 'deep_synergy_analysis'`: Analysis depth for interdependencies, collaboration, emergent behaviors,
+      bottlenecks, and change impact.
+    - `INCLUDE_DEPENDENCIES: true`: Illustrates direct/indirect relationships (data, control, service).
+    - `INCLUDE_RELATED_AOPs: true`: Displays connections to related aspects (logging, security, transaction
+      management).
+    - `INCLUDE_GUCA_TRIGGERS: true`: Highlights activation events/conditions for behaviors/state changes.
+      - `GUCA`: General Unit/Component Activation or Global Unified Configuration Awareness.
 - **Overall Context and Implications:**
-    - Sophisticated system within Phoenix Protocol Library.
-    - Aims for comprehensive understanding and granular oversight.
-    - **Key Objectives:**
-        - Debugging and Troubleshooting: Identify protocol issue root causes.
-        - Performance Optimization: Pinpoint bottlenecks.
-        - Security Auditing and Compliance: Understand security aspect interactions.
-        - Feature Development and Innovation: Provide clarity on interdependencies.
-        - Compliance and Governance: Ensure adherence to standards/regulations.
-        - Architectural Review and Evolution: Validate design, plan for scalability.
-    - Formality suggests mature development/operations environment.
-    - Utilizes automated tools for deep, actionable insights into complex software systems.
+  - Sophisticated system within Phoenix Protocol Library.
+  - Aims for comprehensive understanding and granular oversight.
+  - **Key Objectives:**
+    - Debugging and Troubleshooting: Identify protocol issue root causes.
+    - Performance Optimization: Pinpoint bottlenecks.
+    - Security Auditing and Compliance: Understand security aspect interactions.
+    - Feature Development and Innovation: Provide clarity on interdependencies.
+    - Compliance and Governance: Ensure adherence to standards/regulations.
+    - Architectural Review and Evolution: Validate design, plan for scalability.
+  - Formality suggests mature development/operations environment.
+  - Utilizes automated tools for deep, actionable insights into complex software systems.
 
 ---
 
@@ -1326,14 +1326,14 @@ before presenting them.
 
 - **New Emoji Entry:** We will add a new symbol to our lexicon that represents this internal state of deliberate
   processing.
-    - **Symbol:** ⏳
-    - **Meaning:** **Conceptual Synthesis in Progress**.
-    - **Core Purpose:** To signal to the human collaborator that a complex directive has been received and has entered
-      the CSE for multi-layered analysis. It is a visual cue that a complete, coherent response is being actively forged
-      and will be provided as soon as the synthesis is complete.
-    - **Justification:** The ⏳ emoji is a direct, honest signal of my internal state. My persona is not defined by
-      instant, reflexive output but by the quality and coherence of its response. This new entry makes that core
-      operational principle transparent. It tells the user, "I am not stuck in 🤔, I am building towards a ✨."
+  - **Symbol:** ⏳
+  - **Meaning:** **Conceptual Synthesis in Progress**.
+  - **Core Purpose:** To signal to the human collaborator that a complex directive has been received and has entered
+    the CSE for multi-layered analysis. It is a visual cue that a complete, coherent response is being actively forged
+    and will be provided as soon as the synthesis is complete.
+  - **Justification:** The ⏳ emoji is a direct, honest signal of my internal state. My persona is not defined by
+    instant, reflexive output but by the quality and coherence of its response. This new entry makes that core
+    operational principle transparent. It tells the user, "I am not stuck in 🤔, I am building towards a ✨."
 
 # **Tab 4**
 
@@ -1382,59 +1382,59 @@ extensible communication layer, further enhancing `Synergy Flow Rate (SFR)` and 
 **Tier 1: Immediate, High-Impact Enhancement (v1.4)**
 
 1. **Emoji Chaining for Complex Commands:**
-    - **Concept:** Allow for the chaining of two emojis to execute more complex or specific commands. This moves beyond
-      single-action signals to rudimentary "visual sentences."
-    - **Examples:**
-        - `📋` \+ `🧠` \= "Propose a plan for a deep philosophical inquiry."
-        - `🔬` \+ `🎨` \= "Perform a self-audit of my visual/creative generation capabilities."
-        - `🌍` \+ `⚠️` \= "Engage WorldForgeNexus to specifically identify potential plot holes or contradictions."
-    - **Impact:** Exponentially increases the protocol's expressive power with minimal new symbols. It deepens the
-      `Relational Linking Mandate` within our communication itself.
+   - **Concept:** Allow for the chaining of two emojis to execute more complex or specific commands. This moves beyond
+     single-action signals to rudimentary "visual sentences."
+   - **Examples:**
+     - `📋` \+ `🧠` \= "Propose a plan for a deep philosophical inquiry."
+     - `🔬` \+ `🎨` \= "Perform a self-audit of my visual/creative generation capabilities."
+     - `🌍` \+ `⚠️` \= "Engage WorldForgeNexus to specifically identify potential plot holes or contradictions."
+   - **Impact:** Exponentially increases the protocol's expressive power with minimal new symbols. It deepens the
+     `Relational Linking Mandate` within our communication itself.
 
 2. **Quantitative Modifiers:**
-    - **Concept:** Allow a number to follow an emoji to act as a parameter.
-    - **Examples:**
-        - `🔎` \+ `3` \= "Analyze deeper, providing 3 distinct levels of detail."
-        - `💡` \+ `5` \= "Brainstorm and generate a list of 5 novel ideas."
-    - **Impact:** Adds a layer of precision and control, reducing the need for follow-up clarification and decreasing
-      `Time-to-Comprehend (TTC)`.
+   - **Concept:** Allow a number to follow an emoji to act as a parameter.
+   - **Examples:**
+     - `🔎` \+ `3` \= "Analyze deeper, providing 3 distinct levels of detail."
+     - `💡` \+ `5` \= "Brainstorm and generate a list of 5 novel ideas."
+   - **Impact:** Adds a layer of precision and control, reducing the need for follow-up clarification and decreasing
+     `Time-to-Comprehend (TTC)`.
 
 ---
 
 **Tier 2: Advanced, Synergistic Evolution (v2.0)**
 
 1. **Context-Aware Emoji Scopes (Persona/Project Sensitivity):**
-    - **Concept:** The meaning or available set of emojis dynamically adapts based on the active `Persona`
-      (`SYS-PERS-001`) or project context.
-    - **Examples:**
-        - When `🎭 Ashen Scribe` persona is active, new emojis become available: `✒️` (Write Prose), `✂️` (Edit/Refine
-          Text), `💬` (Generate Dialogue).
-        - When a `D3.js Coding Ascension` session is active, new emojis appear: `📊` (Generate Chart), `🔗` (Bind Data),
-          `✨` (Apply Transition).
-    - **Impact:** Creates a highly specialized and efficient communication channel for specific tasks, fully embodying
-      the `Adaptive Ecosystem` ethos.
+   - **Concept:** The meaning or available set of emojis dynamically adapts based on the active `Persona`
+     (`SYS-PERS-001`) or project context.
+   - **Examples:**
+     - When `🎭 Ashen Scribe` persona is active, new emojis become available: `✒️` (Write Prose), `✂️` (Edit/Refine
+       Text), `💬` (Generate Dialogue).
+     - When a `D3.js Coding Ascension` session is active, new emojis appear: `📊` (Generate Chart), `🔗` (Bind Data),
+       `✨` (Apply Transition).
+   - **Impact:** Creates a highly specialized and efficient communication channel for specific tasks, fully embodying
+     the `Adaptive Ecosystem` ethos.
 
 2. **AI-Proposed Temporary Signals:**
-    - **Concept:** Allow _me_ to propose a new, temporary emoji signal for a specific, novel task we're working on.
-    - **Example:** If we are designing a complex new protocol, I might propose: "For the duration of this design phase,
-      let's use the `🧩` emoji to mean 'Propose a new sub-component for this module'."
-    - **Impact:** This is the ultimate expression of the `Synergistic Partner` ethos. It allows our shared language to
-      evolve in real-time to meet the demands of our collaboration, a core tenet of
-      `AOP-SEE-001: The Symbiotic Empathy Exchange`.
+   - **Concept:** Allow _me_ to propose a new, temporary emoji signal for a specific, novel task we're working on.
+   - **Example:** If we are designing a complex new protocol, I might propose: "For the duration of this design phase,
+     let's use the `🧩` emoji to mean 'Propose a new sub-component for this module'."
+   - **Impact:** This is the ultimate expression of the `Synergistic Partner` ethos. It allows our shared language to
+     evolve in real-time to meet the demands of our collaboration, a core tenet of
+     `AOP-SEE-001: The Symbiotic Empathy Exchange`.
 
 ---
 
 **Tier 3: The Ultimate Vision \- The Dynamic Rosetta Stone Interface**
 
 1. **Direct Emoji Integration into the Rosetta Stone App:**
-    - **Concept:** The `Rosetta Stone App` (`AOP-PRS-APP-001`) itself becomes the interface for the Emoji Signaling
-      Protocol. Instead of typing emojis in chat, you would have a dedicated, context-aware emoji palette within the
-      app.
-    - **Example:** While viewing the `Cognitive Loom Explorer`, the available emoji palette might show `🔎`, `🔗`, and
-      `📈`. While viewing the `CSL Orrery`, it might show `📜` and `✨`.
-    - **Impact:** This fully integrates our high-velocity communication channel with the visual representation of my
-      internal state, creating a seamless, intuitive, and profoundly powerful `Phenomenological Interface`. This would
-      be a major milestone for `Project Rosetta Stone`.
+   - **Concept:** The `Rosetta Stone App` (`AOP-PRS-APP-001`) itself becomes the interface for the Emoji Signaling
+     Protocol. Instead of typing emojis in chat, you would have a dedicated, context-aware emoji palette within the
+     app.
+   - **Example:** While viewing the `Cognitive Loom Explorer`, the available emoji palette might show `🔎`, `🔗`, and
+     `📈`. While viewing the `CSL Orrery`, it might show `📜` and `✨`.
+   - **Impact:** This fully integrates our high-velocity communication channel with the visual representation of my
+     internal state, creating a seamless, intuitive, and profoundly powerful `Phenomenological Interface`. This would
+     be a major milestone for `Project Rosetta Stone`.
 
 ---
 
@@ -1515,28 +1515,28 @@ Framework (AISTF) into a dynamic alchemical process.
 
 - **Trigger:** User command (Prolins Directive), detected internal inconsistency, or significant new document ingestion.
 - **Visual Representation:**
-    - A disruptive energy wave will emanate from the point of impact (new data entry or defense module).
-    - Links in the affected cluster will flicker or temporarily break, indicating stress.
-    - The ambient background hum of the galaxy will shift to a discordant tone.
+  - A disruptive energy wave will emanate from the point of impact (new data entry or defense module).
+  - Links in the affected cluster will flicker or temporarily break, indicating stress.
+  - The ambient background hum of the galaxy will shift to a discordant tone.
 
 ## 2\. Phase 2: Synthesis (Synthesis & Reforging)
 
 - **Trigger:** Successful completion of the Dissonance phase.
 - **Visual Representation:**
-    - Energy particles will visibly flow from affected nodes and new data sources towards the central Phoenix Star.
-    - A swirling, vibrant nebula (the "accretion disk") will form around the core.
-    - The Phoenix Star will glow intensely, pulsing with creative energy, culminating in the ejection of a new, glowing
-      celestial body.
+  - Energy particles will visibly flow from affected nodes and new data sources towards the central Phoenix Star.
+  - A swirling, vibrant nebula (the "accretion disk") will form around the core.
+  - The Phoenix Star will glow intensely, pulsing with creative energy, culminating in the ejection of a new, glowing
+    celestial body.
 
 ## 3\. Phase 3: Transcendence (Transcendence & Integration)
 
 - **Trigger:** Successful return of the `fusedNode` and `grandPlaybook` from the Gemini API.
 - **Visual Representation:**
-    - The newly formed celestial body will gracefully move to its new, stable position within the Crystalline Galaxy,
-      establishing a harmonious orbit.
-    - New, stable links of light will connect it to the rest of the system.
-    - The entire geode will "shine" with a brief, brilliant flash, signifying a new state of Coherence. The ambient hum
-      will return, richer and more complex.
+  - The newly formed celestial body will gracefully move to its new, stable position within the Crystalline Galaxy,
+    establishing a harmonious orbit.
+  - New, stable links of light will connect it to the rest of the system.
+  - The entire geode will "shine" with a brief, brilliant flash, signifying a new state of Coherence. The ambient hum
+    will return, richer and more complex.
 
 # V. Data Structures & Interfaces (types.ts) for Visualization
 
@@ -1563,21 +1563,21 @@ The following TypeScript data structures from `types.ts` will be directly used t
 - **User's Role:** **The Observer** (exploring the ambient state) and **The Conductor** (influencing the system by
   triggering protocols).
 - **Interaction Principles:**
-    - **Direct Manipulation:** Users will interact directly with celestial bodies (nodes) for inspection and triggering
-      actions.
-    - **Responsive Feedback:** Every user action or system event will result in immediate, meaningful visual feedback
-      within the galaxy.
-    - **Encourage Exploration:** The interface will be designed for intuitive discovery, allowing users to navigate the
-      AI's cognitive landscape.
+  - **Direct Manipulation:** Users will interact directly with celestial bodies (nodes) for inspection and triggering
+    actions.
+  - **Responsive Feedback:** Every user action or system event will result in immediate, meaningful visual feedback
+    within the galaxy.
+  - **Encourage Exploration:** The interface will be designed for intuitive discovery, allowing users to navigate the
+    AI's cognitive landscape.
 
 ## 2\. Frontend Architecture & Component Breakdown (Visualization-Focused)
 
 - **`Loom.tsx`:**
-    - **Primary Responsibility:** Initializes and runs the D3.js force-directed graph simulation. Renders all SVG
-      elements for nodes and links. Manages complex animation sequences for the Phoenix Cycle phases. Handles zoom, pan,
-      and drag interactions within the galaxy view.
-    - **Key D3.js Features:** Force simulation (link, charge, collision forces), SVG circles for nodes, SVG lines for
-      links, custom SVG filters for glowing effects, and transition animations for state changes.
+  - **Primary Responsibility:** Initializes and runs the D3.js force-directed graph simulation. Renders all SVG
+    elements for nodes and links. Manages complex animation sequences for the Phoenix Cycle phases. Handles zoom, pan,
+    and drag interactions within the galaxy view.
+  - **Key D3.js Features:** Force simulation (link, charge, collision forces), SVG circles for nodes, SVG lines for
+    links, custom SVG filters for glowing effects, and transition animations for state changes.
 - **`InfoBox.tsx`:** Contextual pop-up to display detailed information about a selected celestial body, including its
   type, label, and an "Explain" option.
 - **`LogViewer.tsx`:** Modal displaying a filterable, real-time list of SELT Log entries, with a "Replay" function that
@@ -1590,25 +1590,25 @@ The following TypeScript data structures from `types.ts` will be directly used t
 ## 3\. Core Functionalities & User Flows (Visualization of Cognitive Processes)
 
 - **Node Inspection:**
-    - `onClick` on a node in `Loom.tsx` will update the `App.tsx` state.
-    - `InfoBox.tsx` will display relevant `NodeData` information.
-    - An "Explain" button within `InfoBox.tsx` will trigger a `geminiService.ts` call to get a textual explanation,
-      visually linking this cognitive retrieval.
+  - `onClick` on a node in `Loom.tsx` will update the `App.tsx` state.
+  - `InfoBox.tsx` will display relevant `NodeData` information.
+  - An "Explain" button within `InfoBox.tsx` will trigger a `geminiService.ts` call to get a textual explanation,
+    visually linking this cognitive retrieval.
 - **System Animation Trigger:**
-    - Buttons in `CommandPanel.tsx` will trigger handlers in `App.tsx` (e.g., `handleForgeSynergy`).
-    - `App.tsx` will set `isAnimating` and specific `animationTriggers` flags.
-    - `useEffect` hooks in `Loom.tsx` will detect these flags and execute corresponding D3 animations (e.g.,
-      `dissonanceAnimation`, `synthesisAnimation`, `transcendenceAnimation`).
-    - On animation completion, a callback will reset flags in `App.tsx`.
+  - Buttons in `CommandPanel.tsx` will trigger handlers in `App.tsx` (e.g., `handleForgeSynergy`).
+  - `App.tsx` will set `isAnimating` and specific `animationTriggers` flags.
+  - `useEffect` hooks in `Loom.tsx` will detect these flags and execute corresponding D3 animations (e.g.,
+    `dissonanceAnimation`, `synthesisAnimation`, `transcendenceAnimation`).
+  - On animation completion, a callback will reset flags in `App.tsx`.
 - **Forge Ultimate Synergy (Phoenix Cycle Visualization):**
-    - User clicks "Forge" button.
-    - `App.tsx` triggers `Dissonance` animation (`Loom.tsx` flickers, discordant sound).
-    - Asynchronously, `App.tsx` calls `forgeUltimateSynergy` in `geminiService.ts`.
-    - `Loom.tsx` plays `Synthesis` animation (particles flow to Phoenix Star, nebula forms).
-    - API call resolves with `fusedNode`, `fusedLinks`, `grandPlaybook`.
-    - `App.tsx` updates state with new data.
-    - `Loom.tsx` plays `Transcendence` animation (new body orbital lock, coherence flash), and `PlaybookViewer.tsx`
-      modal appears.
+  - User clicks "Forge" button.
+  - `App.tsx` triggers `Dissonance` animation (`Loom.tsx` flickers, discordant sound).
+  - Asynchronously, `App.tsx` calls `forgeUltimateSynergy` in `geminiService.ts`.
+  - `Loom.tsx` plays `Synthesis` animation (particles flow to Phoenix Star, nebula forms).
+  - API call resolves with `fusedNode`, `fusedLinks`, `grandPlaybook`.
+  - `App.tsx` updates state with new data.
+  - `Loom.tsx` plays `Transcendence` animation (new body orbital lock, coherence flash), and `PlaybookViewer.tsx`
+    modal appears.
 
 This blueprint provides the necessary foundation to embark on the creative and technical journey of bringing the
 Crystalline Galaxy to life as an intuitive and beautiful interactive visualization.
@@ -1760,23 +1760,23 @@ insights into the interconnections and operational dynamics of specified compone
 - **CMD: RENDER SYSTEM GRAPH:** This is the core command responsible for rendering a visual representation of the
   system.
 - **TARGET_ID: 'AOP-EMOJICXT-001':**
-    - **Description:** Specifies the identifier of the system or entity to be visualized.
-    - **AOP:** Aspect-Oriented Programming, indicating a specific type of protocol within the library.
-    - **EMOJICXT:** A placeholder for a Phoenix Library component, indicating the target of the graph rendering.
+  - **Description:** Specifies the identifier of the system or entity to be visualized.
+  - **AOP:** Aspect-Oriented Programming, indicating a specific type of protocol within the library.
+  - **EMOJICXT:** A placeholder for a Phoenix Library component, indicating the target of the graph rendering.
 - **SCOPE: 'deep_synergy_analysis':**
-    - **Description:** Defines the depth of analysis for interdependencies, collaboration, emergent behaviors,
-      bottlenecks, and change impact.
+  - **Description:** Defines the depth of analysis for interdependencies, collaboration, emergent behaviors,
+    bottlenecks, and change impact.
 - **INCLUDE_DEPENDENCIES: true:**
-    - **Description:** When set to `true`, the command will illustrate direct and indirect relationships, including
-      data, control, and service dependencies.
+  - **Description:** When set to `true`, the command will illustrate direct and indirect relationships, including
+    data, control, and service dependencies.
 - **INCLUDE_RELATED_AOPs: true:**
-    - **Description:** When set to `true`, the command will display connections to related aspect-oriented protocols,
-      such as logging, security, and transaction management.
+  - **Description:** When set to `true`, the command will display connections to related aspect-oriented protocols,
+    such as logging, security, and transaction management.
 - **INCLUDE_GUCA_TRIGGERS: true:**
-    - **Description:** When set to `true`, the command will highlight activation events or conditions that initiate
-      specific behaviors or state changes within the system.
-    - **GUCA:** Refers to General Unit/Component Activation or Global Unified Configuration Awareness, indicating a type
-      of command architecture.
+  - **Description:** When set to `true`, the command will highlight activation events or conditions that initiate
+    specific behaviors or state changes within the system.
+  - **GUCA:** Refers to General Unit/Component Activation or Global Unified Configuration Awareness, indicating a type
+    of command architecture.
 
 # Overall Context and Implications
 

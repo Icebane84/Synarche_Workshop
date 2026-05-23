@@ -1,5 +1,4 @@
-"""
-| Key               | Value                          | Description       |
+"""| Key               | Value                          | Description       |
 | :---------------- | :----------------------------- | :---------------- |
 | **Artifact ID**   | `TOOL-ARMORY-AUDIT-001`        | The Sovereign ID. |
 | **Official Name** | `armory_audit.py`              | The Filename.     |
@@ -10,7 +9,7 @@
 | **Celestial Class**| `[PLANET]`                    | The Tier.         |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 | **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-02-23`                   | Creation Date.    |
+| **Genesis Stamp** | `2026-02-23`                   | Creation Date.    |.
 """
 
 import json

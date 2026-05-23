@@ -1,4 +1,5 @@
 # UMB-RPG-001_ThePhoenixRPGFramework_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-RPG-001-THEPHOENIXRPGFRAMEWORK-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-RPG-001_ThePhoenixRPGFramework_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                               | Description       |
+| :------------------ | :-------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-RPG-001-THEPHOENIXRPGFRAMEWORK-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-RPG-001_ThePhoenixRPGFramework_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                   | The Standard.     |
+| **Domain**          | `GVRN`                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                       | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-RPG-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Purposeful Drive** |
-| **Status** | `ACTIVE` |
-| **Type** | `Blueprint` |
-| **Classification** | `Star` |
-| **Authors** | `Antigravity` |
-| **Created** | `2026-01-04` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `RPG, Gamification, Framework, GVRN` |
+
+| Key                | Value                                |
+| :----------------- | :----------------------------------- |
+| **Module ID**      | `UMB-RPG-001`                        |
+| **Version**        | `v11.0`                              |
+| **Evolution**      | **Purposeful Drive**                 |
+| **Status**         | `ACTIVE`                             |
+| **Type**           | `Blueprint`                          |
+| **Classification** | `Star`                               |
+| **Authors**        | `Antigravity`                        |
+| **Created**        | `2026-01-04`                         |
+| **Updated**        | `2026-01-17`                         |
+| **Authority**      | `CODEX-001`                          |
+| **Tags**           | `RPG, Gamification, Framework, GVRN` |
+
 ---
 
 # UMB-RPG-001: The Phoenix RPG Framework
@@ -79,21 +83,21 @@ identified knowledge gaps (`Dissonance Quests`) to quantifiable rewards (`Presti
 ### 2.4. Key Sub-Module Architectures
 
 - **The Prestige System**
-    - **What:** The core experience and reward mechanism that quantifies growth.
-    - **How:** Tracks completion of `Prestige Milestones` (logged via `log_refactor_milestone.py`).
+  - **What:** The core experience and reward mechanism that quantifies growth.
+  - **How:** Tracks completion of `Prestige Milestones` (logged via `log_refactor_milestone.py`).
 
 - **The Axiom Skill Tree**
-    - **What:** The investment and specialization system for enhancing core capabilities.
-    - **How:** Allows `Axiom Points` to be spent on stats (`Coherence`, `Synergy`) to unlock commands.
+  - **What:** The investment and specialization system for enhancing core capabilities.
+  - **How:** Allows `Axiom Points` to be spent on stats (`Coherence`, `Synergy`) to unlock commands.
 
 - **The Dissonance Engine**
-    - **What:** The proactive challenge-generation mechanism.
-    - **How:** Scans Cognitive Loom for gaps using `find_unlinked.py` and frames them as "Dissonance Quests."
+  - **What:** The proactive challenge-generation mechanism.
+  - **How:** Scans Cognitive Loom for gaps using `find_unlinked.py` and frames them as "Dissonance Quests."
 
 - **The Artifact Forge**
-    - **What:** The synergistic crafting system for creating new tools.
-    - **How:** Executes `CMD: ForgeArtifact` (via `scaffold_engine.py`), consuming `CSL`s to generate `AOP` or `UMB`
-      artifacts.
+  - **What:** The synergistic crafting system for creating new tools.
+  - **How:** Executes `CMD: ForgeArtifact` (via `scaffold_engine.py`), consuming `CSL`s to generate `AOP` or `UMB`
+    artifacts.
 
 ### 2.5. Feedback Loops Embodied
 
@@ -103,11 +107,11 @@ The entire module is a macro feedback loop: **Dissonance Quest** (Challenge) -> 
 ## III. Relational Gravity Signature
 
 | Source         | Relationship               | `LINK: UMB-PRS-001`, Target | Description         |
-| :------------- | :------------------------- | :------------ | :------------------ |
-| `AISTF-001`    | **Governs & Upgrades**     | `UMB-RPG-001` | AISTF Gov Layer.    |
-| `CSL-*`        | **Consumes As Resource**   | `UMB-RPG-001` | System Resource.    |
-| `UMB-PUPT-001` | **Is Implemented By**      | `UMB-RPG-001` | RPG Framework Dash. |
-| `PAR-001`      | **Writes To & Reads From** | `UMB-RPG-001` | Registry I/O.       |
+| :------------- | :------------------------- | :-------------------------- | :------------------ |
+| `AISTF-001`    | **Governs & Upgrades**     | `UMB-RPG-001`               | AISTF Gov Layer.    |
+| `CSL-*`        | **Consumes As Resource**   | `UMB-RPG-001`               | System Resource.    |
+| `UMB-PUPT-001` | **Is Implemented By**      | `UMB-RPG-001`               | RPG Framework Dash. |
+| `PAR-001`      | **Writes To & Reads From** | `UMB-RPG-001`               | Registry I/O.       |
 
 ### Phenomenological Impact Signature
 

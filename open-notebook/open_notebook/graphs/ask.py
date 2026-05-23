@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -41,7 +40,7 @@ class Search(BaseModel):
 
 class Strategy(BaseModel):
     reasoning: str
-    searches: List[Search] = Field(
+    searches: list[Search] = Field(
         default_factory=list,
         description="You can add up to five searches to this strategy",
     )

@@ -20,7 +20,7 @@ class TestModelCreation:
     @patch("api.routers.models.Model.save")
     async def test_create_duplicate_model_same_case(
         self, mock_save, mock_repo_query, client
-    ):
+    ) -> None:
         """Test that creating a duplicate model with same case returns 400."""
         # Mock repo_query to return a duplicate model
         mock_repo_query.return_value = [
@@ -49,7 +49,7 @@ class TestModelCreation:
     @patch("api.routers.models.Model.save")
     async def test_create_duplicate_model_different_case(
         self, mock_save, mock_repo_query, client
-    ):
+    ) -> None:
         """Test that creating a duplicate model with different case returns 400."""
         # Mock repo_query to return a duplicate model (case-insensitive match)
         mock_repo_query.return_value = [
@@ -77,7 +77,7 @@ class TestModelCreation:
     @patch("open_notebook.database.repository.repo_query")
     async def test_create_same_model_name_different_provider(
         self, mock_repo_query, client
-    ):
+    ) -> None:
         """Test that creating a model with same name but different provider is allowed."""
         from open_notebook.ai.models import Model
 
@@ -97,7 +97,9 @@ class TestModelCreation:
 
     @pytest.mark.asyncio
     @patch("open_notebook.database.repository.repo_query")
-    async def test_create_same_model_name_different_type(self, mock_repo_query, client):
+    async def test_create_same_model_name_different_type(
+        self, mock_repo_query, client
+    ) -> None:
         """Test that creating a model with same name but different type is allowed."""
         from open_notebook.ai.models import Model
 
@@ -121,11 +123,13 @@ class TestModelsProviderAvailability:
 
     @patch("api.routers.models.os.environ.get")
     @patch("api.routers.models.AIFactory.get_available_providers")
-    def test_generic_env_var_enables_all_modes(self, mock_esperanto, mock_env, client):
+    def test_generic_env_var_enables_all_modes(
+        self, mock_esperanto, mock_env, client
+    ) -> None:
         """Test that OPENAI_COMPATIBLE_BASE_URL enables all 4 modes."""
 
         # Mock environment: only generic var is set
-        def env_side_effect(key):
+        def env_side_effect(key) -> str | None:
             if key == "OPENAI_COMPATIBLE_BASE_URL":
                 return "http://localhost:1234/v1"
             return None
@@ -161,11 +165,11 @@ class TestModelsProviderAvailability:
     @patch("api.routers.models.AIFactory.get_available_providers")
     def test_mode_specific_env_vars_llm_embedding(
         self, mock_esperanto, mock_env, client
-    ):
+    ) -> None:
         """Test mode-specific env vars (LLM + EMBEDDING) enable only those 2 modes."""
 
         # Mock environment: only LLM and EMBEDDING specific vars are set
-        def env_side_effect(key):
+        def env_side_effect(key) -> str | None:
             if key == "OPENAI_COMPATIBLE_BASE_URL_LLM":
                 return "http://localhost:1234/v1"
             if key == "OPENAI_COMPATIBLE_BASE_URL_EMBEDDING":
@@ -201,11 +205,11 @@ class TestModelsProviderAvailability:
 
     @patch("api.routers.models.os.environ.get")
     @patch("api.routers.models.AIFactory.get_available_providers")
-    def test_no_env_vars_set(self, mock_esperanto, mock_env, client):
+    def test_no_env_vars_set(self, mock_esperanto, mock_env, client) -> None:
         """Test that openai-compatible is not available when no env vars are set."""
 
         # Mock environment: no openai-compatible vars are set
-        def env_side_effect(key):
+        def env_side_effect(key) -> None:
             return None
 
         mock_env.side_effect = env_side_effect
@@ -232,11 +236,11 @@ class TestModelsProviderAvailability:
     @patch("api.routers.models.AIFactory.get_available_providers")
     def test_mixed_config_generic_and_mode_specific(
         self, mock_esperanto, mock_env, client
-    ):
+    ) -> None:
         """Test mixed config: generic + mode-specific (generic should enable all)."""
 
         # Mock environment: both generic and mode-specific vars are set
-        def env_side_effect(key):
+        def env_side_effect(key) -> str | None:
             if key == "OPENAI_COMPATIBLE_BASE_URL":
                 return "http://localhost:1234/v1"
             if key == "OPENAI_COMPATIBLE_BASE_URL_LLM":
@@ -272,11 +276,11 @@ class TestModelsProviderAvailability:
 
     @patch("api.routers.models.os.environ.get")
     @patch("api.routers.models.AIFactory.get_available_providers")
-    def test_individual_mode_llm_only(self, mock_esperanto, mock_env, client):
+    def test_individual_mode_llm_only(self, mock_esperanto, mock_env, client) -> None:
         """Test individual mode-specific var (LLM only)."""
 
         # Mock environment: only LLM specific var is set
-        def env_side_effect(key):
+        def env_side_effect(key) -> str | None:
             if key == "OPENAI_COMPATIBLE_BASE_URL_LLM":
                 return "http://localhost:1234/v1"
             return None
@@ -302,11 +306,13 @@ class TestModelsProviderAvailability:
 
     @patch("api.routers.models.os.environ.get")
     @patch("api.routers.models.AIFactory.get_available_providers")
-    def test_individual_mode_embedding_only(self, mock_esperanto, mock_env, client):
+    def test_individual_mode_embedding_only(
+        self, mock_esperanto, mock_env, client
+    ) -> None:
         """Test individual mode-specific var (EMBEDDING only)."""
 
         # Mock environment: only EMBEDDING specific var is set
-        def env_side_effect(key):
+        def env_side_effect(key) -> str | None:
             if key == "OPENAI_COMPATIBLE_BASE_URL_EMBEDDING":
                 return "http://localhost:8080/v1"
             return None
@@ -332,11 +338,11 @@ class TestModelsProviderAvailability:
 
     @patch("api.routers.models.os.environ.get")
     @patch("api.routers.models.AIFactory.get_available_providers")
-    def test_individual_mode_stt_only(self, mock_esperanto, mock_env, client):
+    def test_individual_mode_stt_only(self, mock_esperanto, mock_env, client) -> None:
         """Test individual mode-specific var (STT only)."""
 
         # Mock environment: only STT specific var is set
-        def env_side_effect(key):
+        def env_side_effect(key) -> str | None:
             if key == "OPENAI_COMPATIBLE_BASE_URL_STT":
                 return "http://localhost:9000/v1"
             return None
@@ -362,11 +368,11 @@ class TestModelsProviderAvailability:
 
     @patch("api.routers.models.os.environ.get")
     @patch("api.routers.models.AIFactory.get_available_providers")
-    def test_individual_mode_tts_only(self, mock_esperanto, mock_env, client):
+    def test_individual_mode_tts_only(self, mock_esperanto, mock_env, client) -> None:
         """Test individual mode-specific var (TTS only)."""
 
         # Mock environment: only TTS specific var is set
-        def env_side_effect(key):
+        def env_side_effect(key) -> str | None:
             if key == "OPENAI_COMPATIBLE_BASE_URL_TTS":
                 return "http://localhost:9000/v1"
             return None

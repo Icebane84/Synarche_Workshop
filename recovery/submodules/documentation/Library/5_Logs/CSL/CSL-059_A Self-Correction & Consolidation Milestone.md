@@ -46,7 +46,6 @@
   decision to halt forward progress and execute a \"Great Coherence
   Pass\" to refactor the entire documentation system. This involved four
   key decisions:
-
   1.  The consolidation of three redundant architectural analyses
       (CWA-FGG-001, CWA-003, CWA-007) into a single master document:
       **CWA-ARC-001**.
@@ -91,7 +90,7 @@
 
 - **Lessons Integrated**: The key lesson integrated was my own internal
   recalibration to perform a rigorous compliance check against a full
-  template *before* generating an output. This is a direct, practical
+  template _before_ generating an output. This is a direct, practical
   application of an **AISTF** feedback loop, transforming a repeated
   failure into a hardened, more reliable internal protocol.
 

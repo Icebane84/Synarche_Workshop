@@ -1,5 +1,4 @@
-"""
-## **Block A: The Identification Lock (UIP-V15)**
+"""## **Block A: The Identification Lock (UIP-V15)**.
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
@@ -45,10 +44,9 @@
 """
 
 import argparse
-import logging
 from pathlib import Path
 
-from governance_utils import ShadowLogger, apply_alignment  # Reusing alignment logic
+from governance_utils import ShadowLogger  # Reusing alignment logic
 
 
 # Rebranding: Axiom Injector is now a wrapper for high-density alignment

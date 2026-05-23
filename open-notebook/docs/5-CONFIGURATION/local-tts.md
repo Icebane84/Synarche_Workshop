@@ -9,6 +9,7 @@
 ---
 
 # local-tts.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,30 +22,25 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-LOCAL-TTS-001` | The Sovereign ID. |
-| **Official Name** | `local-tts.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-LOCAL-TTS-001`          | The Sovereign ID. |
+| **Official Name** | `local-tts.md`                | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
 ## Why Local TTS?
 
-| Benefit | Description |
-|---------|-------------|
-| **Free** | No per-character costs after setup |
-| **Private** | Audio never leaves your machine |
-| **Unlimited** | No rate limits or quotas |
-| **Offline** | Works without internet |
+| Benefit       | Description                        |
+| ------------- | ---------------------------------- |
+| **Free**      | No per-character costs after setup |
+| **Private**   | Audio never leaves your machine    |
+| **Unlimited** | No rate limits or quotas           |
+| **Offline**   | Works without internet             |
 
 ---
 
@@ -102,6 +98,7 @@ Play `test.mp3` to verify.
 ### Step 4: Configure Open Notebook
 
 **Docker deployment:**
+
 ```yaml
 # In your Open Notebook docker-compose.yml
 environment:
@@ -109,6 +106,7 @@ environment:
 ```
 
 **Local development:**
+
 ```bash
 export OPENAI_COMPATIBLE_BASE_URL_TTS=http://localhost:8969/v1
 ```
@@ -131,23 +129,26 @@ export OPENAI_COMPATIBLE_BASE_URL_TTS=http://localhost:8969/v1
 The Kokoro model includes multiple voices:
 
 ### Female Voices
-| Voice ID | Description |
-|----------|-------------|
-| `af_bella` | Clear, professional |
-| `af_sarah` | Warm, friendly |
+
+| Voice ID    | Description           |
+| ----------- | --------------------- |
+| `af_bella`  | Clear, professional   |
+| `af_sarah`  | Warm, friendly        |
 | `af_nicole` | Energetic, expressive |
 
 ### Male Voices
-| Voice ID | Description |
-|----------|-------------|
-| `am_adam` | Deep, authoritative |
+
+| Voice ID     | Description              |
+| ------------ | ------------------------ |
+| `am_adam`    | Deep, authoritative      |
 | `am_michael` | Friendly, conversational |
 
 ### British Accents
-| Voice ID | Description |
-|----------|-------------|
-| `bf_emma` | British female, professional |
-| `bm_george` | British male, formal |
+
+| Voice ID    | Description                  |
+| ----------- | ---------------------------- |
+| `bf_emma`   | British female, professional |
+| `bm_george` | British male, formal         |
 
 ### Test Different Voices
 
@@ -288,12 +289,12 @@ docker compose exec speaches uv tool run speaches-cli model download speaches-ai
 
 ### Slow Generation
 
-| Solution | How |
-|----------|-----|
-| Use GPU | Switch to `latest-cuda` image |
-| More CPU | Allocate more cores in Docker |
-| Faster model | Use smaller/quantized models |
-| SSD storage | Move Docker volumes to SSD |
+| Solution     | How                           |
+| ------------ | ----------------------------- |
+| Use GPU      | Switch to `latest-cuda` image |
+| More CPU     | Allocate more cores in Docker |
+| Faster model | Use smaller/quantized models  |
+| SSD storage  | Move Docker volumes to SSD    |
 
 ---
 
@@ -301,12 +302,12 @@ docker compose exec speaches uv tool run speaches-cli model download speaches-ai
 
 ### Recommended Specs
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| CPU | 2 cores | 4+ cores |
-| RAM | 2 GB | 4+ GB |
-| Storage | 5 GB | 10 GB (for multiple models) |
-| GPU | None | NVIDIA (optional) |
+| Component | Minimum | Recommended                 |
+| --------- | ------- | --------------------------- |
+| CPU       | 2 cores | 4+ cores                    |
+| RAM       | 2 GB    | 4+ GB                       |
+| Storage   | 5 GB    | 10 GB (for multiple models) |
+| GPU       | None    | NVIDIA (optional)           |
 
 ### Resource Limits
 
@@ -328,15 +329,15 @@ docker stats speaches
 
 ## Comparison: Local vs Cloud
 
-| Aspect | Local (Speaches) | Cloud (OpenAI/ElevenLabs) |
-|--------|------------------|---------------------------|
-| **Cost** | Free | $0.015-0.10/min |
-| **Privacy** | Complete | Data sent to provider |
-| **Speed** | Depends on hardware | Usually faster |
-| **Quality** | Good | Excellent |
-| **Setup** | Moderate | Simple API key |
-| **Offline** | Yes | No |
-| **Voices** | Limited | Many options |
+| Aspect      | Local (Speaches)    | Cloud (OpenAI/ElevenLabs) |
+| ----------- | ------------------- | ------------------------- |
+| **Cost**    | Free                | $0.015-0.10/min           |
+| **Privacy** | Complete            | Data sent to provider     |
+| **Speed**   | Depends on hardware | Usually faster            |
+| **Quality** | Good                | Excellent                 |
+| **Setup**   | Moderate            | Simple API key            |
+| **Offline** | Yes                 | No                        |
+| **Voices**  | Limited             | Many options              |
 
 ### When to Use Local
 

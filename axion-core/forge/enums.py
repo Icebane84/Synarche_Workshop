@@ -1,5 +1,4 @@
-"""
-| Key               | Value                                 | Description       |
+"""| Key               | Value                                 | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `TOOL-ENUMS-001`                  | The Sovereign ID. |
 | **Official Name** | `enums.py`                        | The Filename.     |
@@ -10,7 +9,7 @@
 | **Celestial Class**| `[PLANET]`                    | The Tier.         |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 | **Integrity Hash**| `[AUTO-GENERATED]`             | Verification.     |
-| **Genesis Stamp** | `2026-03-08`                      | Creation Date.    |
+| **Genesis Stamp** | `2026-03-08`                      | Creation Date.    |.
 
 # GVRN-CODE-001: Shared Enumerations
 # Objective: Centralized, immutable state definitions for the Phoenix Protocol.
@@ -35,7 +34,9 @@ def load_standards() -> dict[str, Any]:
 
 
 STANDARDS = load_standards()
-SOVEREIGN_ID_REGEX = STANDARDS.get("regex", {}).get("SOVEREIGN_ID", r"^[A-Z0-9\-]{3,12}(\.[A-Z0-9_\-\.]+){0,5}$")
+SOVEREIGN_ID_REGEX = STANDARDS.get("regex", {}).get(
+    "SOVEREIGN_ID", r"^[A-Z0-9\-]{3,12}(\.[A-Z0-9_\-\.]+){0,5}$"
+)
 
 # GVRN Constants
 SYNARCHE_STANDARD = "v15.0 [OMEGA]"
@@ -44,8 +45,7 @@ SOVEREIGN_ZERO_ID = "f0f0f0f0-f0f0-4f0f-af0f-f0f0f0f0f0f0"
 
 
 class Signal(str, Enum):
-    """
-    The Episemantic Framework Signal (ESF).
+    """The Episemantic Framework Signal (ESF).
     Defines the 'Tone' and 'Operational Intensity' of the artifact.
     """
 
@@ -87,8 +87,7 @@ class RiskLevel(str, Enum):
 
 
 class Module(str, Enum):
-    """
-    The Functional Department (The 'Where').
+    """The Functional Department (The 'Where').
     Determines WHICH agent or system manages the artifact.
     """
 
@@ -102,8 +101,7 @@ class Module(str, Enum):
 
 
 class Domain(str, Enum):
-    """
-    The Primary Conceptual Domain (The 'What').
+    """The Primary Conceptual Domain (The 'What').
     Determines the nature of the information.
     """
 
@@ -188,8 +186,7 @@ class ArtifactType(str, Enum):
 
 
 class RelationType(str, Enum):
-    """
-    The Vector Keys for the Knowledge Graph.
+    """The Vector Keys for the Knowledge Graph.
     Defines HOW artifacts connect.
     Synchronized with GVRN.Taxonomy.Relationships.md [OMEGA v14.0].
     """
@@ -276,7 +273,9 @@ class TarotShard(str, Enum):
 
     MAGICIAN = "SHARD_MAGICIAN_INTENT"  # Creation / Catalyst / Intent
     EMPEROR = "SHARD_EMPEROR_SCHEMA"  # Structure / ID / Status / Law
-    HIGH_PRIESTESS = "SHARD_HIGH_PRIESTESS_SYNERGY"  # Domain / Synergy / Knowledge Graph
+    HIGH_PRIESTESS = (
+        "SHARD_HIGH_PRIESTESS_SYNERGY"  # Domain / Synergy / Knowledge Graph
+    )
     KNIGHT_SWORDS = "SHARD_KNIGHT_TRANSMUTATION"  # Genesis Seeds / Renaming / Refactor
     STAR = "SHARD_STAR_COHESION"  # Signal / Evolution / Tone / Visuals
     KING_PENTACLES = "SHARD_KING_ARCHIVAL"  # Time / Persistence / Database
@@ -403,9 +402,8 @@ class RecursionDepthError(ForgeError):
 
 @dataclass(frozen=True)
 class ArtifactIdentity:
-    """
-    The formal Identity Vector of an artifact.
-    Format: DOMAIN.TYPE.CLASS.SUBSYSTEM.DESCRIPTOR
+    """The formal Identity Vector of an artifact.
+    Format: DOMAIN.TYPE.CLASS.SUBSYSTEM.DESCRIPTOR.
     """
 
     domain: Domain
@@ -420,8 +418,7 @@ class ArtifactIdentity:
 
 @dataclass
 class SovereignMeta:
-    """
-    The standard metadata header for all Axion-Forge artifacts.
+    """The standard metadata header for all Axion-Forge artifacts.
     Enforced by the Transclude Engine and Linter.
     """
 
@@ -472,8 +469,7 @@ _class_registry = {
 
 
 class RPGEngine(TypedDict):
-    """
-    Gamification State (The Celestial Chart)
+    """Gamification State (The Celestial Chart)
     Synchronized with CORE.RPG_MANAGER and Supabase 'rpg_stats' table.
     """
 

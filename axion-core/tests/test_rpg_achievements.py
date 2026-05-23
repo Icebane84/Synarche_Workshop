@@ -1,6 +1,6 @@
-import unittest
 import os
 import sys
+import unittest
 import uuid
 
 # Add src to sys.path
@@ -8,6 +8,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(current_dir, "..", "src", "logic"))
 
 from rpg_manager import RPGManager
+
 
 class TestRPGAchievements(unittest.TestCase):
     def setUp(self):
@@ -28,7 +29,7 @@ class TestRPGAchievements(unittest.TestCase):
         res = self.manager.claim_achievement("FIRST_GENESIS", self.test_user_id)
         self.assertTrue(res["success"])
         self.assertIn("stardust_awarded", res)
-        
+
         # Verify status update
         achievements = self.manager.get_achievements(self.test_user_id)
         claimed = next(a for a in achievements if a["id"] == "FIRST_GENESIS")
@@ -46,6 +47,7 @@ class TestRPGAchievements(unittest.TestCase):
         res = self.manager.claim_achievement("NON_EXISTENT", self.test_user_id)
         self.assertFalse(res["success"])
         self.assertEqual(res["error"], "Achievement not found")
+
 
 if __name__ == "__main__":
     unittest.main()

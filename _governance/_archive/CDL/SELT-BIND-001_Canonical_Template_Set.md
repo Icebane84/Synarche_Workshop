@@ -34,25 +34,25 @@ The 5 Canonical Templates do not exist in isolation. They form a linear chain of
 one necessitates the creation of the next.
 
 1. **UMB (Universal Master Base): The Vision**
-    - _The Genesis._ It defines the abstract "What" and "Why". It establishes the conceptual core and the target
-      Coherence Vector ($V_{Safe}$).
-    - _The Link:_ The UMB creates a vacuum of structure, necessitating an Architecture to house it.
+   - _The Genesis._ It defines the abstract "What" and "Why". It establishes the conceptual core and the target
+     Coherence Vector ($V_{Safe}$).
+   - _The Link:_ The UMB creates a vacuum of structure, necessitating an Architecture to house it.
 2. **ARCH (Architectural Blueprint): The Skeleton**
-    - _The Form._ Emerges from the UMB to define the "Where" and the "Structure". It organizes the UMB's concept into
-      concrete data flows and sub-module registries.
-    - _The Link:_ With form comes vulnerability. The ARCH necessitates rules to protect its structural integrity.
+   - _The Form._ Emerges from the UMB to define the "Where" and the "Structure". It organizes the UMB's concept into
+     concrete data flows and sub-module registries.
+   - _The Link:_ With form comes vulnerability. The ARCH necessitates rules to protect its structural integrity.
 3. **GVRN (Governance Mandate): The Law**
-    - _The Boundary._ Emerges from the ARCH to define the "Boundaries". It establishes the absolute rules, constraints,
-      and risk mitigation parameters that the architecture must obey.
-    - _The Link:_ Boundaries mean nothing without kinetic action to enforce and navigate them. This necessitates
-      Operational Procedures.
+   - _The Boundary._ Emerges from the ARCH to define the "Boundaries". It establishes the absolute rules, constraints,
+     and risk mitigation parameters that the architecture must obey.
+   - _The Link:_ Boundaries mean nothing without kinetic action to enforce and navigate them. This necessitates
+     Operational Procedures.
 4. **AOP (Active Operational Procedure): The Muscle**
-    - _The Kinetic Action._ Emerges from GVRN to define the "How". Formulates the kinetic procedures that safely
-      navigate the system within Governance boundaries to reach the UMB's $V_{Safe}$.
-    - _The Link:_ Procedures lay dormant without a trigger. This necessitates a Command.
+   - _The Kinetic Action._ Emerges from GVRN to define the "How". Formulates the kinetic procedures that safely
+     navigate the system within Governance boundaries to reach the UMB's $V_{Safe}$.
+   - _The Link:_ Procedures lay dormant without a trigger. This necessitates a Command.
 5. **GUCA (Universal Command Architecture): The Catalyst**
-    - _The Spark._ Emerges from AOP to define the "Trigger". Crystallizes the AOP into discrete, executable commands
-      that the Agent or User can trigger instantly.
+   - _The Spark._ Emerges from AOP to define the "Trigger". Crystallizes the AOP into discrete, executable commands
+     that the Agent or User can trigger instantly.
 
 ### IV. The Phenomenon: Automated Synergistic Linking
 

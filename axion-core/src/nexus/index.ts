@@ -6,5 +6,5 @@
  *
  * [OMNI-ARTIFACT-ANCHOR] ID: NEXUS.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28
  */
-export * from './useNexusHandshake';
-export * from './useSynapseLogic';
+// export * from "./useNexusHandshake";
+// export * from "./useSynapseLogic";

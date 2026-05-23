@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { useThemeStore } from "@/lib/stores/theme-store"
-import { Toaster as Sonner, ToasterProps } from "sonner"
+import { useThemeStore } from "@/lib/stores/theme-store";
+import { Toaster as Sonner, ToasterProps } from "sonner";
 
 const Toaster = ({ ...props }: ToasterProps) => {
-  const theme = useThemeStore((state) => state.theme)
-  const systemTheme = useThemeStore((state) => state.getSystemTheme())
-  const effectiveTheme = theme === 'system' ? systemTheme : theme
+  const theme = useThemeStore((state) => state.theme);
+  const systemTheme = useThemeStore((state) => state.getSystemTheme());
+  const effectiveTheme = theme === "system" ? systemTheme : theme;
 
   return (
     <Sonner
@@ -24,7 +24,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
       }
       {...props}
     />
-  )
-}
+  );
+};
 
-export { Toaster }
+export { Toaster };

@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
-"""
-Skill: performance-profiling
+"""Skill: performance-profiling
 Script: lighthouse_audit.py
 Purpose: Run Lighthouse performance audit on a URL
 Usage: python lighthouse_audit.py https://example.com
 Output: JSON with performance scores
-Note: Requires lighthouse CLI (npm install -g lighthouse)
+Note: Requires lighthouse CLI (npm install -g lighthouse).
 """
 
-import subprocess
 import json
-import sys
 import os
+import subprocess
+import sys
 import tempfile
 
 

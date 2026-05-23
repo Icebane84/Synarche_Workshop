@@ -54,10 +54,10 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Absolute (Clears every turn)
 - **Content**:
-    - Raw user input
-    - System prompts and instructions
-    - Live context window
-    - Transient logic and "scratchpad" notes
+  - Raw user input
+  - System prompts and instructions
+  - Live context window
+  - Transient logic and "scratchpad" notes
 - **Retention**: Current interaction only
 - **Archival Trigger**: `finalize_artifact.md` or User Explicit Save
 - **Management**: Auto-Cleared between sessions
@@ -70,9 +70,9 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: High (Deleted upon task finalization)
 - **Content**:
-    - In-progress artifacts
-    - Transient logic
-    - "Scratchpad" notes
+  - In-progress artifacts
+  - Transient logic
+  - "Scratchpad" notes
 - **Retention**: Current task only
 - **Archival Trigger**: User Explicit Save
 - **Management**: Deleted when task is completed or abandoned
@@ -85,9 +85,9 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Medium (Retained for current session)
 - **Content**:
-    - Completed task artifacts
-    - Interim results
-    - User preferences and choices
+  - Completed task artifacts
+  - Interim results
+  - User preferences and choices
 - **Retention**: Current session only
 - **Archival Trigger**: User Explicit Save
 - **Management**: Deleted at session end unless explicitly archived to L4
@@ -100,9 +100,9 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Low (Retained for project duration)
 - **Content**:
-    - Project-specific GVRN rules
-    - Templates and schemas
-    - Technical specifications
+  - Project-specific GVRN rules
+  - Templates and schemas
+  - Technical specifications
 - **Retention**: Active project only
 - **Archival Trigger**: Project completion
 - **Management**: Archived to L5 upon project completion
@@ -115,10 +115,10 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Low (Retained for long-term use)
 - **Content**:
-    - Solved problems
-    - Code snippets
-    - Architectural patterns
-    - Proven solutions
+  - Solved problems
+  - Code snippets
+  - Architectural patterns
+  - Proven solutions
 - **Retention**: Long-term
 - **Archival Trigger**: User Explicit Save
 - **Management**: Cached in `.agent/knowledge_base/`
@@ -131,9 +131,9 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Static (Permanent)
 - **Content**:
-    - Execution logs
-    - Decision trees
-    - "Why" traces for every action
+  - Execution logs
+  - Decision trees
+  - "Why" traces for every action
 - **Retention**: Permanent
 - **Archival Trigger**: User Explicit Save
 - **Management**: Archived in `_execution_logs/`, `*.synarchic.log`
@@ -146,10 +146,10 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Absolute (Never changes)
 - **Content**:
-    - Governance rules (`_governance/*`)
-    - Artifact definitions
-    - Protocol specifications
-    - Relational taxonomies
+  - Governance rules (`_governance/*`)
+  - Artifact definitions
+  - Protocol specifications
+  - Relational taxonomies
 - **Retention**: Permanent
 - **Archival Trigger**: Not Applicable (Immutable)
 - **Management**: Only modifiable through **Transcendence** ([HEPHAESTUS.PROTOCOL])
@@ -162,9 +162,9 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Static (Permanent)
 - **Content**:
-    - Semantic links between concepts
-    - Causal chains
-    - Knowledge graph metadata
+  - Semantic links between concepts
+  - Causal chains
+  - Knowledge graph metadata
 - **Retention**: Permanent
 - **Archival Trigger**: Not Applicable
 - **Management**: Auto-generated and maintained
@@ -177,9 +177,9 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Static (Permanent)
 - **Content**:
-    - Artifact manifests
-    - State tracking
-    - Location metadata
+  - Artifact manifests
+  - State tracking
+  - Location metadata
 - **Retention**: Permanent
 - **Archival Trigger**: Not Applicable
 - **Management**: Maintained by
@@ -193,10 +193,10 @@ Gemini maintains a multi-layered memory system.
 
 - **Volatility**: Absolute (Immutable)
 - **Content**:
-    - [GVRN.Identity.md](_governance/01_Registries/GVRN.Identity.md)
-    - [SYNG.PROT.SelfImprovement.md](_governance/02_Protocols/SYNG.PROT.SelfImprovement.md)
-    - [ARCH.Blueprint.UnifiedArchitecture.md](_governance/20_Architecture/ARCH.Blueprint.UnifiedArchitecture.md)
-    - [GVRN.ID.Standard.md](_governance/10_Governance/GVRN.ID.Standard.md)
+  - [GVRN.Identity.md](_governance/01_Registries/GVRN.Identity.md)
+  - [SYNG.PROT.SelfImprovement.md](_governance/02_Protocols/SYNG.PROT.SelfImprovement.md)
+  - [ARCH.Blueprint.UnifiedArchitecture.md](_governance/20_Architecture/ARCH.Blueprint.UnifiedArchitecture.md)
+  - [GVRN.ID.Standard.md](_governance/10_Governance/GVRN.ID.Standard.md)
 - **Retention**: Permanent
 - **Archival Trigger**: Not Applicable
 - **Management**: Only modifiable through **Transcendence** ([HEPHAESTUS.PROTOCOL])
@@ -213,12 +213,12 @@ Gemini maintains a multi-layered memory system.
 - **Memory Type**: Concept Links and Causal Chains
 - **Retention**: Permanent
 - **Content**:
-    - `_synarchic_index/`
-    - `[GVRN.taxonomies.RelationalTaxonomy.md](_governance/01_Registries/GVRN.taxonomies.RelationalTaxonomy.md)`
-    - `[GVRN.Registry.PhoenixRosettaStone.md](_governance/01_Registries/GVRN.Registry.PhoenixRosettaStone.md)`
-    - `[SYNG.PROT.SelfImprovement.md](_governance/02_Protocols/SYNG.PROT.SelfImprovement.md)`
-    - `[ARCH.Blueprint.UnifiedArchitecture.md](_governance/20_Architecture/ARCH.Blueprint.UnifiedArchitecture.md)`
-    - `[GVRN.ID.Standard.md](_governance/10_Governance/GVRN.ID.Standard.md)`
+  - `_synarchic_index/`
+  - `[GVRN.taxonomies.RelationalTaxonomy.md](_governance/01_Registries/GVRN.taxonomies.RelationalTaxonomy.md)`
+  - `[GVRN.Registry.PhoenixRosettaStone.md](_governance/01_Registries/GVRN.Registry.PhoenixRosettaStone.md)`
+  - `[SYNG.PROT.SelfImprovement.md](_governance/02_Protocols/SYNG.PROT.SelfImprovement.md)`
+  - `[ARCH.Blueprint.UnifiedArchitecture.md](_governance/20_Architecture/ARCH.Blueprint.UnifiedArchitecture.md)`
+  - `[GVRN.ID.Standard.md](_governance/10_Governance/GVRN.ID.Standard.md)`
 - **Purpose**: Semantic navigation. Allows cross-domain reasoning.
 
 #### L9: The Master Registry

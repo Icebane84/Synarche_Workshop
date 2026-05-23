@@ -1,308 +1,339 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Axion Celestial Chart [GEODE]</title>
-        <style>
-            :root {
-                --bg-deep: #02020a;
-                --star-white: #f0f0ff;
-                --gold-accent: #ffcc00;
-                --stardust-purple: #8a2be2;
-                --geode-blue: #00d2ff;
-                --void-dark: #000000;
-                --glass-panel: rgba(15, 15, 25, 0.7);
-                --glass-border: rgba(255, 255, 255, 0.15);
-                --slot-border: rgba(138, 43, 226, 0.4);
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axion Celestial Chart [GEODE]</title>
+    <style>
+      :root {
+        --bg-deep: #02020a;
+        --star-white: #f0f0ff;
+        --gold-accent: #ffcc00;
+        --stardust-purple: #8a2be2;
+        --geode-blue: #00d2ff;
+        --void-dark: #000000;
+        --glass-panel: rgba(15, 15, 25, 0.7);
+        --glass-border: rgba(255, 255, 255, 0.15);
+        --slot-border: rgba(138, 43, 226, 0.4);
+      }
 
-            body {
-                background-color: var(--bg-deep);
-                color: var(--star-white);
-                font-family: "Inter", "Segoe UI", sans-serif;
-                margin: 0;
-                display: flex;
-                height: 100vh;
-                overflow: hidden;
-                background: 
-                    radial-gradient(circle at 50% 50%, #1a1a3a 0%, #02020a 100%),
-                    url('https://www.transparenttextures.com/patterns/stardust.png');
-            }
+      body {
+        background-color: var(--bg-deep);
+        color: var(--star-white);
+        font-family: "Inter", "Segoe UI", sans-serif;
+        margin: 0;
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 50% 50%, #1a1a3a 0%, #02020a 100%),
+          url("https://www.transparenttextures.com/patterns/stardust.png");
+      }
 
-            /* Liquid Glass Sidebar */
-            .sidebar {
-                width: 340px;
-                background: var(--glass-panel);
-                backdrop-filter: blur(20px);
-                border-right: 1px solid var(--glass-border);
-                padding: 30px;
-                display: flex;
-                flex-direction: column;
-                box-shadow: 10px 0 30px rgba(0,0,0,0.5);
-                z-index: 100;
-            }
+      /* Liquid Glass Sidebar */
+      .sidebar {
+        width: 340px;
+        background: var(--glass-panel);
+        backdrop-filter: blur(20px);
+        border-right: 1px solid var(--glass-border);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+        z-index: 100;
+      }
 
-            .avatar-container {
-                position: relative;
-                width: 220px;
-                height: 220px;
-                margin: 0 auto 30px;
-            }
+      .avatar-container {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        margin: 0 auto 30px;
+      }
 
-            .avatar-hex {
-                width: 100%;
-                height: 100%;
-                background: radial-gradient(circle, #2a2a5a 0%, #0a0a2a 100%);
-                border: 2px solid var(--stardust-purple);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 4em;
-                box-shadow: 0 0 40px rgba(138, 43, 226, 0.3);
-                transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                cursor: pointer;
-            }
+      .avatar-hex {
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #2a2a5a 0%, #0a0a2a 100%);
+        border: 2px solid var(--stardust-purple);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4em;
+        box-shadow: 0 0 40px rgba(138, 43, 226, 0.3);
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+      }
 
-            .avatar-hex:hover {
-                transform: scale(1.05) rotate(5deg);
-                border-color: var(--gold-accent);
-            }
+      .avatar-hex:hover {
+        transform: scale(1.05) rotate(5deg);
+        border-color: var(--gold-accent);
+      }
 
-            .stardust-display {
-                text-align: center;
-                margin-bottom: 20px;
-                padding: 15px;
-                background: rgba(138, 43, 226, 0.15);
-                border-radius: 12px;
-                border: 1px solid var(--stardust-purple);
-            }
+      .stardust-display {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 15px;
+        background: rgba(138, 43, 226, 0.15);
+        border-radius: 12px;
+        border: 1px solid var(--stardust-purple);
+      }
 
-            .stardust-value {
-                font-size: 2em;
-                font-weight: bold;
-                color: var(--geode-blue);
-                text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
-            }
+      .stardust-value {
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--geode-blue);
+        text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+      }
 
-            .stat-row {
-                display: flex;
-                justify-content: space-between;
-                margin: 12px 0;
-                padding: 8px 12px;
-                background: rgba(255, 255, 255, 0.03);
-                border-radius: 6px;
-                transition: background 0.3s;
-            }
+      .stat-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 12px 0;
+        padding: 8px 12px;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 6px;
+        transition: background 0.3s;
+      }
 
-            .stat-row:hover {
-                background: rgba(255, 255, 255, 0.08);
-            }
+      .stat-row:hover {
+        background: rgba(255, 255, 255, 0.08);
+      }
 
-            /* Main Stage */
-            .main-stage {
-                flex-grow: 1;
-                padding: 60px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: relative;
-            }
+      /* Main Stage */
+      .main-stage {
+        flex-grow: 1;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
 
-            h1 {
-                font-size: 2.5em;
-                letter-spacing: 4px;
-                text-transform: uppercase;
-                margin-bottom: 50px;
-                background: linear-gradient(to right, #fff, var(--geode-blue));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
+      h1 {
+        font-size: 2.5em;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        background: linear-gradient(to right, #fff, var(--geode-blue));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
-            .slots-container {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 40px;
-                max-width: 800px;
-                position: relative;
-            }
+      .slots-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        max-width: 800px;
+        position: relative;
+      }
 
-            /* Cosmic Connections (Background Lines) */
-            .slots-container::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 100%;
-                height: 100%;
-                transform: translate(-50%, -50%);
-                border: 1px solid rgba(255, 255, 255, 0.05);
-                border-radius: 50%;
-                z-index: -1;
-            }
+      /* Cosmic Connections (Background Lines) */
+      .slots-container::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+        z-index: -1;
+      }
 
-            .slot {
-                width: 140px;
-                height: 140px;
-                background: rgba(0, 0, 0, 0.3);
-                border: 2px solid var(--slot-border);
-                border-radius: 15px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                position: relative;
-                overflow: hidden;
-            }
+      .slot {
+        width: 140px;
+        height: 140px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 2px solid var(--slot-border);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+      }
 
-            .slot:hover {
-                border-color: var(--geode-blue);
-                box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
-                background: rgba(0, 210, 255, 0.05);
-            }
+      .slot:hover {
+        border-color: var(--geode-blue);
+        box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
+        background: rgba(0, 210, 255, 0.05);
+      }
 
-            .slot-label {
-                font-size: 0.7em;
-                color: #aaa;
-                margin-top: 5px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
+      .slot-label {
+        font-size: 0.7em;
+        color: #aaa;
+        margin-top: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-            .item-card {
-                width: 90%;
-                height: 80%;
-                background: linear-gradient(135deg, rgba(40, 40, 70, 0.8) 0%, rgba(20, 20, 40, 0.9) 100%);
-                border: 1px solid var(--glass-border);
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                font-size: 0.85em;
-                text-align: center;
-                padding: 10px;
-                position: relative;
-                animation: float 3s ease-in-out infinite;
-            }
+      .item-card {
+        width: 90%;
+        height: 80%;
+        background: linear-gradient(
+          135deg,
+          rgba(40, 40, 70, 0.8) 0%,
+          rgba(20, 20, 40, 0.9) 100%
+        );
+        border: 1px solid var(--glass-border);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 0.85em;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        animation: float 3s ease-in-out infinite;
+      }
 
-            @keyframes float {
-                0%, 100% { transform: translateY(0); }
-                50% { transform: translateY(-5px); }
-            }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
 
-            /* Ascension Button */
-            #ascend-trigger {
-                margin-top: 60px;
-                padding: 15px 40px;
-                background: linear-gradient(45deg, var(--stardust-purple), var(--geode-blue));
-                border: none;
-                border-radius: 30px;
-                color: white;
-                font-weight: bold;
-                letter-spacing: 2px;
-                cursor: pointer;
-                box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
-                transition: all 0.3s;
-                opacity: 0.5;
-                pointer-events: none;
-            }
+      /* Ascension Button */
+      #ascend-trigger {
+        margin-top: 60px;
+        padding: 15px 40px;
+        background: linear-gradient(
+          45deg,
+          var(--stardust-purple),
+          var(--geode-blue)
+        );
+        border: none;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+        transition: all 0.3s;
+        opacity: 0.5;
+        pointer-events: none;
+      }
 
-            #ascend-trigger.active {
-                opacity: 1;
-                pointer-events: auto;
-            }
+      #ascend-trigger.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
 
-            #ascend-trigger:hover {
-                transform: translateY(-3px) scale(1.05);
-                box-shadow: 0 0 40px rgba(0, 210, 255, 0.6);
-            }
+      #ascend-trigger:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 0 40px rgba(0, 210, 255, 0.6);
+      }
 
-            /* Tooltip */
-            .provenance-tooltip {
-                position: absolute;
-                bottom: 120%;
-                left: 50%;
-                transform: translateX(-50%);
-                background: rgba(0, 0, 0, 0.95);
-                border: 1px solid var(--stardust-purple);
-                padding: 15px;
-                width: 250px;
-                font-size: 0.8em;
-                display: none;
-                z-index: 1000;
-                border-radius: 8px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-            }
+      /* Tooltip */
+      .provenance-tooltip {
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.95);
+        border: 1px solid var(--stardust-purple);
+        padding: 15px;
+        width: 250px;
+        font-size: 0.8em;
+        display: none;
+        z-index: 1000;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+      }
 
-            .item-card:hover .provenance-tooltip {
-                display: block;
-            }
+      .item-card:hover .provenance-tooltip {
+        display: block;
+      }
 
-            /* Layout Positions */
-            .slot-head { grid-column: 2; grid-row: 1; }
-            .slot-hand { grid-column: 1; grid-row: 2; }
-            .slot-core { grid-column: 2; grid-row: 2; }
-            .slot-body { grid-column: 3; grid-row: 2; }
-            .slot-template { grid-column: 2; grid-row: 3; }
+      /* Layout Positions */
+      .slot-head {
+        grid-column: 2;
+        grid-row: 1;
+      }
+      .slot-hand {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .slot-core {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      .slot-body {
+        grid-column: 3;
+        grid-row: 2;
+      }
+      .slot-template {
+        grid-column: 2;
+        grid-row: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2 style="letter-spacing: 2px; text-align: center">AXION AVATAR</h2>
+      <div class="avatar-container">
+        <div class="avatar-hex" id="avatar-icon">🔮</div>
+      </div>
 
-        </style>
-    </head>
-    <body>
-        <div class="sidebar">
-            <h2 style="letter-spacing: 2px; text-align: center;">AXION AVATAR</h2>
-            <div class="avatar-container">
-                <div class="avatar-hex" id="avatar-icon">🔮</div>
-            </div>
-            
-            <div class="stardust-display">
-                <div style="font-size: 0.7em; color: #aaa; margin-bottom: 5px;">STARDUST RESONANCE</div>
-                <div class="stardust-value" id="stardust-counter">0</div>
-            </div>
+      <div class="stardust-display">
+        <div style="font-size: 0.7em; color: #aaa; margin-bottom: 5px">
+          STARDUST RESONANCE
+        </div>
+        <div class="stardust-value" id="stardust-counter">0</div>
+      </div>
 
-            <div id="stats-panel">
-                <!-- Stats Injected Here -->
-            </div>
+      <div id="stats-panel">
+        <!-- Stats Injected Here -->
+      </div>
 
-            <div style="margin-top: auto; padding-top: 20px;">
-                <div style="font-size: 0.8em; color: var(--geode-blue);">CLASS: <span id="persona-class">Novice</span></div>
-            </div>
+      <div style="margin-top: auto; padding-top: 20px">
+        <div style="font-size: 0.8em; color: var(--geode-blue)">
+          CLASS: <span id="persona-class">Novice</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-stage">
+      <h1>Sovereign Loadout</h1>
+      <div class="slots-container">
+        <!-- Head -->
+        <div class="slot slot-head" id="slot-Head">
+          <span class="slot-label">The Lens</span>
         </div>
 
-        <div class="main-stage">
-            <h1>Sovereign Loadout</h1>
-            <div class="slots-container">
-                <!-- Head -->
-                <div class="slot slot-head" id="slot-Head">
-                    <span class="slot-label">The Lens</span>
-                </div>
-
-                <!-- Hand -->
-                <div class="slot slot-hand" id="slot-Hand">
-                    <span class="slot-label">The Tool</span>
-                </div>
-
-                <!-- Core -->
-                <div class="slot slot-core" id="slot-Core">
-                    <span class="slot-label">The Heart</span>
-                </div>
-
-                <!-- Body -->
-                <div class="slot slot-body" id="slot-Body">
-                    <span class="slot-label">The Plate</span>
-                </div>
-
-                <!-- Template -->
-                <div class="slot slot-template" id="slot-Template">
-                    <span class="slot-label">The Pattern</span>
-                </div>
-            </div>
-
-            <button id="ascend-trigger">INITIATE ASCENSION</button>
+        <!-- Hand -->
+        <div class="slot slot-hand" id="slot-Hand">
+          <span class="slot-label">The Tool</span>
         </div>
 
-        <script type="module" src="./chart_logic.js"></script>
-    </body>
+        <!-- Core -->
+        <div class="slot slot-core" id="slot-Core">
+          <span class="slot-label">The Heart</span>
+        </div>
+
+        <!-- Body -->
+        <div class="slot slot-body" id="slot-Body">
+          <span class="slot-label">The Plate</span>
+        </div>
+
+        <!-- Template -->
+        <div class="slot slot-template" id="slot-Template">
+          <span class="slot-label">The Pattern</span>
+        </div>
+      </div>
+
+      <button id="ascend-trigger">INITIATE ASCENSION</button>
+    </div>
+
+    <script type="module" src="./chart_logic.js"></script>
+  </body>
 </html>

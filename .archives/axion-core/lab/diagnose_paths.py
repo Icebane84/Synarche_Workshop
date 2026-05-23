@@ -61,7 +61,9 @@ def diagnose_paths(file_path: Path) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Diagnose Paths — Reference Audit Tool")
+    parser = argparse.ArgumentParser(
+        description="Diagnose Paths — Reference Audit Tool"
+    )
     parser.add_argument("target", help="File to scan")
     args = parser.parse_args()
 

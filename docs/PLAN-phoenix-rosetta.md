@@ -21,6 +21,7 @@
 ## 3. Implementation Plan
 
 ### Phase 1: Project Initialization & The Philosophical Workshop
+
 - [ ] Initialize React 19 + TypeScript project using Vite (`phoenix-rosetta-stone`).
 - [ ] Install dependencies: TailwindCSS, Zustand, React Router, D3.js.
 - [ ] Initialize Storybook for the project.
@@ -28,23 +29,27 @@
 - [ ] Set up the UI Style Guide tokens (Celestial Blue `#77B5FE`, Deep Space Gray `#23272A`).
 
 ### Phase 2: First Sovereign Module - The Chatbot Interface
+
 - [ ] Create `src/components/ChatInterface/ChatInterface.tsx` based on the specified verifiable blueprint.
 - [ ] Create `src/components/ChatInterface/ChatInterface.stories.tsx` to build the component in isolation.
 - [ ] Implement UI states: Empty, WithMessages, Loading.
 - [ ] Ensure the component adheres to the "Luminous Coherence" aesthetic with dark mode and specific color tokens.
 
 ### Phase 3: The Cognitive Core (State Management)
+
 - [ ] Create `src/state/useCognitiveCore.ts` (Zustand store).
 - [ ] Implement `messages`, `isLoading`, and `coherenceIndex` state.
 - [ ] Provide actions for adding messages and updating the processing state.
 - [ ] Map the `@nexus` alias to the `src/state/` folder.
 
 ### Phase 4: Integration & Synthesis
+
 - [ ] Connect the `ChatInterface` to the `useCognitiveCore` store.
 - [ ] Set up the root index barrel files for Sovereign Gatekeeping (`index.ts`).
 - [ ] Audit the directory structure against the Master Star-Chart (PRS-001).
 
 ## 4. Execution Rules
+
 - **No loose items:** Enforce strict encapsulation.
 - **Storybook First:** All UI components must be built and tested in isolation.
 - **Strict Types:** TypeScript `strict: true` is mandatory.

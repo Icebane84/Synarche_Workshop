@@ -15,7 +15,6 @@ from open_notebook.utils.chunking import (
     detect_content_type_from_heuristics,
 )
 
-
 # ============================================================================
 # TEST SUITE 1: Content Type Detection from Extension
 # ============================================================================
@@ -24,48 +23,55 @@ from open_notebook.utils.chunking import (
 class TestDetectContentTypeFromExtension:
     """Test suite for extension-based content type detection."""
 
-    def test_html_extensions(self):
+    def test_html_extensions(self) -> None:
         """Test HTML file extensions."""
         assert detect_content_type_from_extension("file.html") == ContentType.HTML
         assert detect_content_type_from_extension("file.htm") == ContentType.HTML
         assert detect_content_type_from_extension("file.xhtml") == ContentType.HTML
-        assert detect_content_type_from_extension("/path/to/file.HTML") == ContentType.HTML
+        assert (
+            detect_content_type_from_extension("/path/to/file.HTML") == ContentType.HTML
+        )
 
-    def test_markdown_extensions(self):
+    def test_markdown_extensions(self) -> None:
         """Test Markdown file extensions."""
         assert detect_content_type_from_extension("file.md") == ContentType.MARKDOWN
-        assert detect_content_type_from_extension("file.markdown") == ContentType.MARKDOWN
+        assert (
+            detect_content_type_from_extension("file.markdown") == ContentType.MARKDOWN
+        )
         assert detect_content_type_from_extension("file.mdown") == ContentType.MARKDOWN
-        assert detect_content_type_from_extension("/path/to/README.MD") == ContentType.MARKDOWN
+        assert (
+            detect_content_type_from_extension("/path/to/README.MD")
+            == ContentType.MARKDOWN
+        )
 
-    def test_plain_text_extensions(self):
+    def test_plain_text_extensions(self) -> None:
         """Test plain text file extensions."""
         assert detect_content_type_from_extension("file.txt") == ContentType.PLAIN
         assert detect_content_type_from_extension("file.text") == ContentType.PLAIN
 
-    def test_code_extensions_as_plain(self):
+    def test_code_extensions_as_plain(self) -> None:
         """Test code file extensions are treated as plain text."""
         assert detect_content_type_from_extension("file.py") == ContentType.PLAIN
         assert detect_content_type_from_extension("file.js") == ContentType.PLAIN
         assert detect_content_type_from_extension("file.json") == ContentType.PLAIN
         assert detect_content_type_from_extension("file.yaml") == ContentType.PLAIN
 
-    def test_unknown_extensions(self):
+    def test_unknown_extensions(self) -> None:
         """Test unknown extensions return None."""
         assert detect_content_type_from_extension("file.xyz") is None
         assert detect_content_type_from_extension("file.docx") is None
         assert detect_content_type_from_extension("file.pdf") is None
 
-    def test_no_extension(self):
+    def test_no_extension(self) -> None:
         """Test files without extension."""
         assert detect_content_type_from_extension("Makefile") is None
         assert detect_content_type_from_extension("README") is None
 
-    def test_none_input(self):
+    def test_none_input(self) -> None:
         """Test None input."""
         assert detect_content_type_from_extension(None) is None
 
-    def test_empty_string(self):
+    def test_empty_string(self) -> None:
         """Test empty string input."""
         assert detect_content_type_from_extension("") is None
 
@@ -78,21 +84,21 @@ class TestDetectContentTypeFromExtension:
 class TestDetectContentTypeFromHeuristics:
     """Test suite for heuristics-based content type detection."""
 
-    def test_html_detection_doctype(self):
+    def test_html_detection_doctype(self) -> None:
         """Test HTML detection with DOCTYPE."""
         html_text = "<!DOCTYPE html><html><body>Content</body></html>"
         content_type, confidence = detect_content_type_from_heuristics(html_text)
         assert content_type == ContentType.HTML
         assert confidence >= 0.8
 
-    def test_html_detection_tags(self):
+    def test_html_detection_tags(self) -> None:
         """Test HTML detection with structural tags."""
         html_text = "<html><head><title>Test</title></head><body><div><p>Content</p></div></body></html>"
         content_type, confidence = detect_content_type_from_heuristics(html_text)
         assert content_type == ContentType.HTML
         assert confidence >= 0.5
 
-    def test_markdown_detection_headers(self):
+    def test_markdown_detection_headers(self) -> None:
         """Test Markdown detection with headers."""
         md_text = """# Main Title
 
@@ -112,7 +118,7 @@ Details here.
         assert content_type == ContentType.MARKDOWN
         assert confidence >= 0.3  # 4 headers give ~0.35 confidence
 
-    def test_markdown_detection_links(self):
+    def test_markdown_detection_links(self) -> None:
         """Test Markdown detection with links and headers for stronger signal."""
         md_text = """# Documentation
 
@@ -125,7 +131,7 @@ Here's some more text with [links](url) and `inline code`."""
         assert content_type == ContentType.MARKDOWN
         assert confidence >= 0.4
 
-    def test_markdown_detection_code_blocks(self):
+    def test_markdown_detection_code_blocks(self) -> None:
         """Test Markdown detection with code blocks."""
         md_text = """# Code Example
 
@@ -140,23 +146,23 @@ Some explanation text.
         assert content_type == ContentType.MARKDOWN
         assert confidence >= 0.5
 
-    def test_plain_text_detection(self):
+    def test_plain_text_detection(self) -> None:
         """Test plain text detection."""
         plain_text = """This is just regular plain text.
 It has multiple lines but no special formatting.
 No headers, no links, no HTML tags.
 Just regular sentences and paragraphs."""
-        content_type, confidence = detect_content_type_from_heuristics(plain_text)
+        content_type, _confidence = detect_content_type_from_heuristics(plain_text)
         assert content_type == ContentType.PLAIN
 
-    def test_short_text(self):
+    def test_short_text(self) -> None:
         """Test short text defaults to plain."""
-        content_type, confidence = detect_content_type_from_heuristics("Hi")
+        content_type, _confidence = detect_content_type_from_heuristics("Hi")
         assert content_type == ContentType.PLAIN
 
-    def test_empty_text(self):
+    def test_empty_text(self) -> None:
         """Test empty text defaults to plain."""
-        content_type, confidence = detect_content_type_from_heuristics("")
+        content_type, _confidence = detect_content_type_from_heuristics("")
         assert content_type == ContentType.PLAIN
 
 
@@ -168,7 +174,7 @@ Just regular sentences and paragraphs."""
 class TestDetectContentType:
     """Test suite for combined content type detection."""
 
-    def test_extension_takes_priority(self):
+    def test_extension_takes_priority(self) -> None:
         """Test that file extension takes priority over heuristics."""
         # Text looks like markdown but file is .txt
         md_text = "# Header\n\nSome [link](url) content"
@@ -177,23 +183,23 @@ class TestDetectContentType:
         # In this case, markdown confidence might override
         assert content_type in (ContentType.PLAIN, ContentType.MARKDOWN)
 
-    def test_no_extension_uses_heuristics(self):
+    def test_no_extension_uses_heuristics(self) -> None:
         """Test that heuristics are used when no extension is available."""
         html_text = "<!DOCTYPE html><html><body>Test</body></html>"
         content_type = detect_content_type(html_text, None)
         assert content_type == ContentType.HTML
 
-    def test_extension_html(self):
+    def test_extension_html(self) -> None:
         """Test HTML extension detection."""
         content_type = detect_content_type("some text", "file.html")
         assert content_type == ContentType.HTML
 
-    def test_extension_markdown(self):
+    def test_extension_markdown(self) -> None:
         """Test Markdown extension detection."""
         content_type = detect_content_type("some text", "file.md")
         assert content_type == ContentType.MARKDOWN
 
-    def test_high_confidence_override(self):
+    def test_high_confidence_override(self) -> None:
         """Test that very high confidence heuristics can override plain extension."""
         # Strong HTML indicators in a .txt file
         html_text = "<!DOCTYPE html><html><head><title>Test</title></head><body><div><p>Content</p></div></body></html>"
@@ -210,25 +216,25 @@ class TestDetectContentType:
 class TestChunkText:
     """Test suite for text chunking functionality."""
 
-    def test_empty_text(self):
+    def test_empty_text(self) -> None:
         """Test chunking empty text."""
         assert chunk_text("") == []
         assert chunk_text("   ") == []
 
-    def test_short_text_no_chunking(self):
+    def test_short_text_no_chunking(self) -> None:
         """Test that short text is not chunked."""
         text = "This is a short text."
         chunks = chunk_text(text)
         assert len(chunks) == 1
         assert chunks[0] == text
 
-    def test_text_at_chunk_limit(self):
+    def test_text_at_chunk_limit(self) -> None:
         """Test text at exactly chunk size limit."""
         text = "x" * CHUNK_SIZE
         chunks = chunk_text(text)
         assert len(chunks) == 1
 
-    def test_long_text_is_chunked(self):
+    def test_long_text_is_chunked(self) -> None:
         """Test that long text is chunked."""
         # Create text longer than chunk size
         text = "This is a sentence. " * 200  # ~4000 chars
@@ -238,7 +244,7 @@ class TestChunkText:
         for chunk in chunks:
             assert len(chunk) <= CHUNK_SIZE + 100  # Allow some flexibility for overlap
 
-    def test_explicit_content_type_html(self):
+    def test_explicit_content_type_html(self) -> None:
         """Test chunking with explicit HTML content type."""
         html_text = """<html>
 <body>
@@ -251,7 +257,7 @@ class TestChunkText:
         chunks = chunk_text(html_text, content_type=ContentType.HTML)
         assert len(chunks) >= 1
 
-    def test_explicit_content_type_markdown(self):
+    def test_explicit_content_type_markdown(self) -> None:
         """Test chunking with explicit Markdown content type."""
         md_text = """# Main Title
 
@@ -268,19 +274,19 @@ Content for section 2.
         chunks = chunk_text(md_text, content_type=ContentType.MARKDOWN)
         assert len(chunks) >= 1
 
-    def test_explicit_content_type_plain(self):
+    def test_explicit_content_type_plain(self) -> None:
         """Test chunking with explicit plain content type."""
         plain_text = "Word " * 500  # ~2500 chars
         chunks = chunk_text(plain_text, content_type=ContentType.PLAIN)
         assert len(chunks) >= 1
 
-    def test_file_path_detection(self):
+    def test_file_path_detection(self) -> None:
         """Test chunking with file path for content type detection."""
         text = "Some content here"
         chunks = chunk_text(text, file_path="document.md")
         assert len(chunks) == 1
 
-    def test_secondary_chunking_for_large_sections(self):
+    def test_secondary_chunking_for_large_sections(self) -> None:
         """Test that large sections from HTML/MD splitters are further chunked."""
         # Create text that would produce a single large section
         large_section = "x" * 3000  # Larger than CHUNK_SIZE

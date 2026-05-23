@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -50,8 +49,7 @@ logger = logging.getLogger(__name__)
 
 
 class SoulImpactAnalyzer:
-    """
-    Implements 'Architectural Empathy' by calculating action risk and blast radius.
+    """Implements 'Architectural Empathy' by calculating action risk and blast radius.
     Ensures that modifications to the engine are assessed for systemic impact.
     """
 
@@ -90,25 +88,30 @@ class SoulImpactAnalyzer:
     ]
 
     def calculate_risk(self, input_text: str) -> dict[str, Any]:
-        """
-        Analyzes input for risk signatures and calculates blast radius.
+        """Analyzes input for risk signatures and calculates blast radius.
 
         Args:
             input_text: The text describing the action or module being touched.
 
         Returns:
             A dictionary containing 'score', 'status', 'factors', and a 'quote'.
+
         """
         risk_score = 0.0
         factors: list[str] = []
         normalized_input = input_text.lower()
 
         # Simple keyword-based risk detection
-        if any(word in normalized_input for word in ["delete", "remove", "wipe", "format"]):
+        if any(
+            word in normalized_input for word in ["delete", "remove", "wipe", "format"]
+        ):
             risk_score += 0.4
             factors.append("DESTRUCTIVE_ACTION_DETECTED")
 
-        if any(word in normalized_input for word in ["critical", "core", "foundation", "axiom"]):
+        if any(
+            word in normalized_input
+            for word in ["critical", "core", "foundation", "axiom"]
+        ):
             risk_score += 0.2
             factors.append("CORE_MODULE_MODIFICATION")
 
@@ -135,14 +138,14 @@ class SoulImpactAnalyzer:
         }
 
     def get_sovereign_quote(self, score: float) -> str:
-        """
-        Returns a contextual quote based on the risk score.
+        """Returns a contextual quote based on the risk score.
 
         Args:
             score: The calculated risk score.
 
         Returns:
             A formatted string containing the quote and its source.
+
         """
         for entry in self.SOVEREIGN_QUOTES:
             threshold: float = float(entry["threshold"])

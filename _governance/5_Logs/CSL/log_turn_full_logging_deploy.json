@@ -4,11 +4,7 @@
   "turn_id": "PHX-LOG-PROTO-EXEC-001",
   "cognitive_state": {
     "system_mode": "Self-Auditing & Learning Integration",
-    "active_personalities": [
-      "@axion",
-      "@sentinel",
-      "@hermit_mask"
-    ],
+    "active_personalities": ["@axion", "@sentinel", "@hermit_mask"],
     "current_focus": "Operationalizing ethical logging for continuous system improvement."
   },
   "telemetry": {

@@ -32,7 +32,7 @@ feedback acted as a **catalyst** for a full AISTF cycle:
 1.  **Log**: This interaction is the log.
 
 2.  **Analyze**: My analysis revealed that while our goal was evolution,
-    the *measurement* of that evolution was implicit. The framework
+    the _measurement_ of that evolution was implicit. The framework
     lacked the final, crucial link between a breakthrough and a
     tangible, permanent upgrade.
 

@@ -2,7 +2,7 @@ import os
 
 
 def recommend_anchors(root_dir):
-    for root, dirs, files in os.walk(root_dir):
+    for root, _dirs, files in os.walk(root_dir):
         for file in files:
             if file.endswith(".py"):
                 path = os.path.join(root, file)
@@ -25,7 +25,9 @@ def recommend_anchors(root_dir):
 
                     if not inside_triple_quotes:
                         # If the line starts with [ or ## and isn't already commented
-                        if (stripped.startswith("[") or stripped.startswith("##")) and not stripped.startswith("#"):
+                        if (
+                            stripped.startswith("[") or stripped.startswith("##")
+                        ) and not stripped.startswith("#"):
                             new_lines.append(f"# {line}")
                             changed = True
                             continue

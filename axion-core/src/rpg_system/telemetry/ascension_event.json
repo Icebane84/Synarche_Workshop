@@ -15,9 +15,9 @@
     "target_class": "Architect",
     "stardust_attuned": 10540,
     "milestones_cleared": [
-        "METEORITE_IMPACT_CLEARED",
-        "SENTINEL_GATE_PASSED",
-        "PHOENIX_INITIATION_COMPLETE"
+      "METEORITE_IMPACT_CLEARED",
+      "SENTINEL_GATE_PASSED",
+      "PHOENIX_INITIATION_COMPLETE"
     ],
     "verification_signature": "SIVC-V1-A1B2C3D4"
   },

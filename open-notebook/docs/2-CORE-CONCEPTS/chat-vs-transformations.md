@@ -9,6 +9,7 @@
 ---
 
 # chat-vs-transformations.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                              | Description       |
+| :---------------- | :--------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CHAT-VS-TRANSFORMATIONS-001` | The Sovereign ID. |
-| **Official Name** | `chat-vs-transformations.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Official Name** | `chat-vs-transformations.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**                  | The Standard.     |
+| **Domain**        | `GVRN`                             | The Subject.      |
+| **Status**        | `[ACTIVE]`                         | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`      | The Network.      |
 
 ---
 
@@ -44,6 +40,7 @@
 **What it is:** Have a conversation with AI about selected sources.
 
 **The flow:**
+
 ```
 1. You select which sources to include ("in context")
 2. You ask a question
@@ -57,6 +54,7 @@
 **Conversational:** Multiple questions with shared history.
 
 **Example:**
+
 ```
 You: [Select sources: "paper1.pdf", "research_notes.txt"]
      [Set context: Full content for paper1, Summary for notes]
@@ -74,6 +72,7 @@ AI:  "This new source takes a different approach..."
 ```
 
 **Best for:**
+
 - Exploring a focused topic with specific sources
 - Having a dialogue (multiple back-and-forth questions)
 - When you know which sources matter
@@ -86,6 +85,7 @@ AI:  "This new source takes a different approach..."
 **What it is:** Ask one complex question, system automatically finds relevant content.
 
 **The flow:**
+
 ```
 1. You ask a comprehensive question
 2. System analyzes the question
@@ -100,6 +100,7 @@ AI:  "This new source takes a different approach..."
 **Non-conversational:** One question → one answer. No follow-ups.
 
 **Example:**
+
 ```
 You: "How do these papers compare their approaches to alignment?
       What does each one recommend?"
@@ -118,6 +119,7 @@ You: [Get back one comprehensive answer]
 ```
 
 **Best for:**
+
 - Comprehensive, one-time questions
 - Comparing multiple sources at once
 - When you want the system to decide what's relevant
@@ -131,6 +133,7 @@ You: [Get back one comprehensive answer]
 **What it is:** Apply a reusable template to a source and get structured output.
 
 **The flow:**
+
 ```
 1. You define a transformation (or choose a preset)
    "Extract: main argument, methodology, limitations"
@@ -154,6 +157,7 @@ You: [Get back one comprehensive answer]
 **Note**: Currently processes one source at a time. Batch processing (multiple sources at once) is planned for a future release.
 
 **Example:**
+
 ```
 You: Define transformation
      "For each academic paper, extract:
@@ -177,6 +181,7 @@ After 10 papers:
 ```
 
 **Best for:**
+
 - Extracting the same information from each source (run repeatedly)
 - Creating structured summaries with consistent format
 - Building a knowledge base of categorized insights
@@ -213,16 +218,16 @@ What are you trying to do?
 
 ## Side-by-Side Comparison
 
-| Aspect | CHAT | ASK | TRANSFORMATIONS |
-|--------|------|-----|-----------------|
-| **What's it for?** | Conversational exploration | Comprehensive Q&A | Template-based extraction |
-| **# of questions** | Multiple (conversational) | One | One template per source |
-| **Context control** | Manual (you choose) | Automatic (system searches) | One source at a time |
-| **Conversational?** | Yes (follow-ups work) | No (one question only) | No (single operation) |
-| **Output** | Natural conversation | Natural answer | Structured note |
-| **Time** | Quick (back-and-forth) | Longer (comprehensive) | Per source |
-| **Best when** | Exploring & uncertain | Need full picture | Want consistent format |
-| **Model speed** | Any | Fast preferred | Any |
+| Aspect              | CHAT                       | ASK                         | TRANSFORMATIONS           |
+| ------------------- | -------------------------- | --------------------------- | ------------------------- |
+| **What's it for?**  | Conversational exploration | Comprehensive Q&A           | Template-based extraction |
+| **# of questions**  | Multiple (conversational)  | One                         | One template per source   |
+| **Context control** | Manual (you choose)        | Automatic (system searches) | One source at a time      |
+| **Conversational?** | Yes (follow-ups work)      | No (one question only)      | No (single operation)     |
+| **Output**          | Natural conversation       | Natural answer              | Structured note           |
+| **Time**            | Quick (back-and-forth)     | Longer (comprehensive)      | Per source                |
+| **Best when**       | Exploring & uncertain      | Need full picture           | Want consistent format    |
+| **Model speed**     | Any                        | Fast preferred              | Any                       |
 
 ---
 
@@ -299,6 +304,7 @@ Step 4: Export notes
 All three modes let you control what the AI sees.
 
 ### In CHAT and TRANSFORMATIONS
+
 ```
 You choose:
   - Which sources to include
@@ -314,6 +320,7 @@ Example:
 ```
 
 ### In ASK
+
 ```
 Context is automatic:
   - System searches ALL your sources
@@ -333,16 +340,19 @@ But you can:
 Each mode works with different models:
 
 ### CHAT
+
 - **Any model** works fine
 - Fast models (GPT-4o mini, Claude Haiku): Quick responses, good for conversation
 - Powerful models (GPT-4o, Claude Sonnet): Better reasoning, better for complex topics
 
 ### ASK
+
 - **Fast models preferred** (because it processes multiple searches)
 - Can use powerful models if you want deep synthesis
 - Example: GPT-4 for strategy planning, GPT-4o-mini for quick facts
 
 ### TRANSFORMATIONS
+
 - **Any model** works
 - Fast models (cost-effective for batch processing)
 - Powerful models (better quality extractions)
@@ -372,16 +382,16 @@ CHAT → Save as Note → TRANSFORMATIONS
 
 ## Summary: When to Use Each
 
-| Situation | Use | Why |
-|-----------|-----|-----|
-| "I want to explore a topic with follow-up questions" | **CHAT** | Conversational, you control context |
-| "I need a comprehensive answer to one complex question" | **ASK** | Automatic search, synthesized answer |
-| "I want consistent summaries from each source" | **TRANSFORMATIONS** | Template reuse, apply to each source |
-| "I'm comparing two specific sources" | **CHAT** | Select just those 2, have discussion |
-| "I need to categorize each source by X criteria" | **TRANSFORMATIONS** | Extract category from each source |
-| "I want to understand the big picture across all sources" | **ASK** | Automatic comprehensive search |
-| "I want to build a knowledge base" | **TRANSFORMATIONS** | Create structured note from each source |
-| "I want to iterate on understanding" | **CHAT** | Multiple questions, refine thinking |
+| Situation                                                 | Use                 | Why                                     |
+| --------------------------------------------------------- | ------------------- | --------------------------------------- |
+| "I want to explore a topic with follow-up questions"      | **CHAT**            | Conversational, you control context     |
+| "I need a comprehensive answer to one complex question"   | **ASK**             | Automatic search, synthesized answer    |
+| "I want consistent summaries from each source"            | **TRANSFORMATIONS** | Template reuse, apply to each source    |
+| "I'm comparing two specific sources"                      | **CHAT**            | Select just those 2, have discussion    |
+| "I need to categorize each source by X criteria"          | **TRANSFORMATIONS** | Extract category from each source       |
+| "I want to understand the big picture across all sources" | **ASK**             | Automatic comprehensive search          |
+| "I want to build a knowledge base"                        | **TRANSFORMATIONS** | Create structured note from each source |
+| "I want to iterate on understanding"                      | **CHAT**            | Multiple questions, refine thinking     |
 
 The key insight: **Different questions need different tools.** Open Notebook gives you all three because research rarely fits one mode.
 

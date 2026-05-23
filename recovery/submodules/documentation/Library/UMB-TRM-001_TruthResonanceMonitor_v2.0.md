@@ -70,9 +70,9 @@ Quests** whenever the **Resonance Score (RS)** falls below the canonical safety 
 
 - **Formula:** `RS = (Alignment / Total_Data_Points)`
 - **Benchmarks:**
-    - **RS = 1.0:** Perfect Harmony (Verified).
-    - **RS < 0.8:** Significant Drift (Dissonance Quest Triggered).
-    - **RS < 0.5:** Critical Fracture (Immediate Decontamination).
+  - **RS = 1.0:** Perfect Harmony (Verified).
+  - **RS < 0.8:** Significant Drift (Dissonance Quest Triggered).
+  - **RS < 0.5:** Critical Fracture (Immediate Decontamination).
 
 ### **3.4. Phase 4: Trigger & Update**
 

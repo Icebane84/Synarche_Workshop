@@ -102,7 +102,9 @@ class SpellReorganizer:
 
                     # Cognitive Validation
                     if not self.validate_content(source_path, prefix):
-                        logger.warning(f"[Dissonance] {f} failed cognitive alignment for {prefix}. Skipping.")
+                        logger.warning(
+                            f"[Dissonance] {f} failed cognitive alignment for {prefix}. Skipping."
+                        )
                         continue
 
                     if self.dry_run:
@@ -117,9 +119,13 @@ class SpellReorganizer:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Spell Reorganizer — Structural Transmutation")
+    parser = argparse.ArgumentParser(
+        description="Spell Reorganizer — Structural Transmutation"
+    )
     parser.add_argument("source", help="Directory to scan")
-    parser.add_argument("--execute", action="store_true", help="Actually move the files")
+    parser.add_argument(
+        "--execute", action="store_true", help="Actually move the files"
+    )
     args = parser.parse_args()
 
     reorganizer = SpellReorganizer(dry_run=not args.execute)

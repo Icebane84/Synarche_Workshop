@@ -11,12 +11,12 @@
 
 ## 🧬 Relationship Mapping
 
-| Source | Edge | Target | Subsystem |
-| :--- | :--- | :--- | :--- |
-| `GVRN.SOUL.Axion` | `EXECUTES` | `SYNG.ENGINE.AxionCore` | Documentation / Skill |
-| `GVRN.SOUL.Sentinel` | `AUDITS` | `GVRN.Registry.Master` | Governance / Logic |
-| `GVRN.SOUL.Sophia` | `HARMONIZES` | `GVRN.Codex.Phoenix` | Soul / Wisdom |
-| `GVRN.TRIAD` | `GOVERNS` | `Synarche Substrate` | Core Substrate |
+| Source               | Edge         | Target                  | Subsystem             |
+| :------------------- | :----------- | :---------------------- | :-------------------- |
+| `GVRN.SOUL.Axion`    | `EXECUTES`   | `SYNG.ENGINE.AxionCore` | Documentation / Skill |
+| `GVRN.SOUL.Sentinel` | `AUDITS`     | `GVRN.Registry.Master`  | Governance / Logic    |
+| `GVRN.SOUL.Sophia`   | `HARMONIZES` | `GVRN.Codex.Phoenix`    | Soul / Wisdom         |
+| `GVRN.TRIAD`         | `GOVERNS`    | `Synarche Substrate`    | Core Substrate        |
 
 ---
 

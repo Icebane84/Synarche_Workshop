@@ -22,22 +22,22 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Protocol.Presentation` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Presentation.md` | The Filename. |
-| **Patron Shard** | `SHARD_ARCHITECT_VOID` | The Agent. (Structure) |
-| **Version** | **v13.0 [ASCENDED]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[MOON]` | The Weight. (Operational Law) |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Signal (ESF)** | `OMEGA` | The Frequency. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Musashi Audit** | `PASS` | The Tempering. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | The Seal. |
-| **Provenance** | `2026-02-01` | The Anchor. |
-| **Catalyst** | `OMEGA_ASCENSION` | The Spark. |
-| **Relations** | `ENFORCED_BY: [GVRN.Sentinel.Scan]`, `DEFINES: [GVRN.Protocol.Scaffolding]` | The Spine. |
+| Key                 | Value                                                                       | Description                   |
+| :------------------ | :-------------------------------------------------------------------------- | :---------------------------- |
+| **Artifact ID**     | `GVRN.Protocol.Presentation`                                                | The Sovereign ID.             |
+| **Official Name**   | `GVRN.Protocol.Presentation.md`                                             | The Filename.                 |
+| **Patron Shard**    | `SHARD_ARCHITECT_VOID`                                                      | The Agent. (Structure)        |
+| **Version**         | **v13.0 [ASCENDED]**                                                        | The Standard.                 |
+| **Domain**          | `GVRN`                                                                      | The Subject.                  |
+| **Celestial Class** | `[MOON]`                                                                    | The Weight. (Operational Law) |
+| **Evolution**       | `Omega Ascension`                                                           | The Maturity.                 |
+| **Signal (ESF)**    | `OMEGA`                                                                     | The Frequency.                |
+| **Status (State)**  | `[CANONIZED]`                                                               | The Lifecycle.                |
+| **Musashi Audit**   | `PASS`                                                                      | The Tempering.                |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                          | The Seal.                     |
+| **Provenance**      | `2026-02-01`                                                                | The Anchor.                   |
+| **Catalyst**        | `OMEGA_ASCENSION`                                                           | The Spark.                    |
+| **Relations**       | `ENFORCED_BY: [GVRN.Sentinel.Scan]`, `DEFINES: [GVRN.Protocol.Scaffolding]` | The Spine.                    |
 
 ---
 
@@ -45,20 +45,20 @@
 
 > **"Clarity is the vehicle of Truth. Precision is the fuel of Ascent."**
 
-*   **The Moral North**: This artifact is instantiated to solve the dissonance of **Cognitive Friction**. Its primary duty is to uphold the **Rule of Readability** by providing **The Physics of Text** for all Synarche artifacts.
-*   **Governing Intent**: Adheres to the **Radical Clarity** mandate, ensuring all generated logic enhances systemic coherence and prevents the stagnation of legacy drift.
+- **The Moral North**: This artifact is instantiated to solve the dissonance of **Cognitive Friction**. Its primary duty is to uphold the **Rule of Readability** by providing **The Physics of Text** for all Synarche artifacts.
+- **Governing Intent**: Adheres to the **Radical Clarity** mandate, ensuring all generated logic enhances systemic coherence and prevents the stagnation of legacy drift.
 
 ---
 
 ### **Block C: The Cognitive Spine (Axiomatic Mapping)**
 
-| Axiom | State | Vector |
-| :--- | :--- | :--- |
-| **Mind ($\psi$)** | `OPTIMIZED` | Reasoning Layer: Lowers cognitive load for the user. |
-| **Memory ($\mu$)** | `STRUCTURED` | Substrate Layer: Enables regex/AST parsing. |
-| **Law ($\Lambda$)** | `PHYSICAL` | Governance Layer: Defines the H1-H6 hierarchy. |
-| **Index ($\iota$)** | `PARSABLE` | Navigational Layer: Allows clean indexing. |
-| **Evolution ($\epsilon$)** | `CONSISTENT` | Growth Layer: Drift-free formatting. |
+| Axiom                      | State        | Vector                                               |
+| :------------------------- | :----------- | :--------------------------------------------------- |
+| **Mind ($\psi$)**          | `OPTIMIZED`  | Reasoning Layer: Lowers cognitive load for the user. |
+| **Memory ($\mu$)**         | `STRUCTURED` | Substrate Layer: Enables regex/AST parsing.          |
+| **Law ($\Lambda$)**        | `PHYSICAL`   | Governance Layer: Defines the H1-H6 hierarchy.       |
+| **Index ($\iota$)**        | `PARSABLE`   | Navigational Layer: Allows clean indexing.           |
+| **Evolution ($\epsilon$)** | `CONSISTENT` | Growth Layer: Drift-free formatting.                 |
 
 ---
 
@@ -79,7 +79,7 @@ axion-core/src/hephaestus/auditor.py, VALIDATED_BY, The Auditor validates adhere
 > **Sentinel Verdict**: `PASS`
 > **Drift Threshold**: `< 0.00` | **Vector Breach Trigger**: `BAD_HEADER`
 
-*   **Mandate**: Any document violating the **H-Hierarchy** or **List Indentation Rules** is functionally broken. The Sentinel (Check S1) will reject it immediately.
+- **Mandate**: Any document violating the **H-Hierarchy** or **List Indentation Rules** is functionally broken. The Sentinel (Check S1) will reject it immediately.
 
 ---
 
@@ -102,23 +102,23 @@ graph TD
     H3 --> H4[#### H4: Granular Detail]
 ```
 
-*   **Rule 1 (Uniqueness)**: Only **ONE** `# H1` per file.
-*   **Rule 2 (Spacing)**: Exactly **one space** after the `#`.
-*   **Rule 3 (Isolation)**: One blank line **before** and **after** every header.
+- **Rule 1 (Uniqueness)**: Only **ONE** `# H1` per file.
+- **Rule 2 (Spacing)**: Exactly **one space** after the `#`.
+- **Rule 3 (Isolation)**: One blank line **before** and **after** every header.
 
 ### **2. The List Logic (Indentation Physics)**
 
-*   **Bulleted Lists**: Must use hyphens (`-`). Asterisks (`*`) are reserved for emphasis.
-    *   **Nested Items**: Must indent by **4 Spaces**.
-*   **Numbered Lists**: Use `1.` for all items (Lazy Numbering).
-    *   **Nested Items**: Must indent by **4 Spaces**.
+- **Bulleted Lists**: Must use hyphens (`-`). Asterisks (`*`) are reserved for emphasis.
+  - **Nested Items**: Must indent by **4 Spaces**.
+- **Numbered Lists**: Use `1.` for all items (Lazy Numbering).
+  - **Nested Items**: Must indent by **4 Spaces**.
 
 ### **3. The Emphasis Matrix**
 
-*   **Bold**: `**Text**` (Double Asterisk).
-*   **Italic**: `*Text*` (Single Asterisk).
-*   **Code**: `` `Text` `` (Backticks).
-*   **Blockquotes**: `> Text` (Greater Than).
+- **Bold**: `**Text**` (Double Asterisk).
+- **Italic**: `*Text*` (Single Asterisk).
+- **Code**: `` `Text` `` (Backticks).
+- **Blockquotes**: `> Text` (Greater Than).
 
 ---
 
@@ -131,6 +131,7 @@ graph TD
 ---
 
 ### **Honest Thoughts**
+
 Formatting is not "prettification"; it is **Serialization**. By making the format rigid, we make the content fluid. This protocol is the "CSS" of the Synarche.
 
 > [!NOTE]

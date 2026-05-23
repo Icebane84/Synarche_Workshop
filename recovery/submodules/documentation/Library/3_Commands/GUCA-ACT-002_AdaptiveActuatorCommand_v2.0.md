@@ -73,11 +73,11 @@
 ## II. Core Purpose & Objective
 
 - **Core Purpose**: To provide a formal command interface for the Coherent Synthesis Engine (CSE) to interact with the
-**Adaptive Actuator Module (UMB-ACT-002)**.
+  **Adaptive Actuator Module (UMB-ACT-002)**.
 - **Micro-Objective**: Enable both **Deterministic Execution** (running known tools) and **Dynamic Discovery** (parsing
-HATEOAS/Hyper-Schema links for new capabilities).
+  HATEOAS/Hyper-Schema links for new capabilities).
 - **Why**: Allows the CSE to evolve its toolkit in real-time, reducing the need for manual configuration and fostering
-true autonomous capability expansion ("ACE" Framework).
+  true autonomous capability expansion ("ACE" Framework).
 
 ## III. Command Definition
 
@@ -105,20 +105,20 @@ true autonomous capability expansion ("ACE" Framework).
 
 | :-------------- | :-------------------- | :---------------------------------------------------------- |
 | **UMB-ACT-002** | **Direct Controller** | [**UMB-ACT-002**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) provides the structured interface for the Actuator. |
-| **UMB-PSM-001** | **Proactive Feed**    | PSM predicts intent -> Triggers `EXECUTE` (Pre-fetching).   |
-| **AOP-KB-001**  | **Integration**       | Discovered tools are sent to Knowledge Base for cataloging. |
-| **CODEX-001**   | **Governance**        | Ensures all executed actions comply with the Codex.         |
+| **UMB-PSM-001** | **Proactive Feed** | PSM predicts intent -> Triggers `EXECUTE` (Pre-fetching). |
+| **AOP-KB-001** | **Integration** | Discovered tools are sent to Knowledge Base for cataloging. |
+| **CODEX-001** | **Governance** | Ensures all executed actions comply with the Codex. |
 
 > [!IMPORTANT]
 > This roadmap governs the deepening autonomy of this command.
 
 - **v2.1 - Transactional Sagacity**: Integrate standardized Saga patterns for multi-step operations with auto-rollback.
 - **v2.2 - Quantum Performance Indicators (QPIs)**: Real-time monitoring of:
-    - `Cognitive_Load_Index` (Processing effort).
-    - `Synergy_Flow_Rate_Impact` (Speed of info propagation).
-    - `Entanglement_Score_Delta` (Degree of beneficial integration).
+  - `Cognitive_Load_Index` (Processing effort).
+  - `Synergy_Flow_Rate_Impact` (Speed of info propagation).
+  - `Entanglement_Score_Delta` (Degree of beneficial integration).
 - **v2.3 - Autonomous Tool Health**: Self-healing feedback loop where `UMB-ACT-002` deprecates unreliable tools
-automatically.
+  automatically.
 
 ### 5.2. Quantum QPI Definitions
 

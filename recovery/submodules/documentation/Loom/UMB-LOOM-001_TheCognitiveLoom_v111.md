@@ -39,9 +39,11 @@ The **Cognitive Loom** is the dynamic, multi-dimensional knowledge graph that se
 ## II. Architectural Overview
 
 ### 2.1 Eidetic Contextual Memory Matrix (ECM v2.0)
+
 The Loom is implemented as a Native Graph Database where relationships are first-class citizens. It maps canonical artifacts and their shifting interrelationships through a high-performance relational analysis engine.
 
 ### 2.2 Core Components
+
 - **Memory Validation Gate**: Ensures only high-coherence data enters the primary weave.
 - **ContextWeave Engine**: Dynamically recalibrates link weights based on new signal ingestion.
 - **Dynamic Tiering System**: Moves dormant information to archival vectors while keeping critical nodes in active "hot" memory.
@@ -51,6 +53,7 @@ The Loom is implemented as a Native Graph Database where relationships are first
 ## III. Relational Analysis Engine
 
 The Loom utilizes three primary algorithmic models:
+
 1. **Pathfinding**: Maps the shortest logical distance between disparate concepts.
 2. **Centrality**: Identifies high-gravity nodes that anchor the governance architecture.
 3. **Community Detection**: Groups related artifacts into evolutionarily aligned clusters.

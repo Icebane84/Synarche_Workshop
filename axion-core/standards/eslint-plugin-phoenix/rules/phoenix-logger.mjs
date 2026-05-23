@@ -73,7 +73,7 @@ export function create(context) {
 									fixes.push(fixer.insertTextAfter(lastImportNode, '\n' + importCode.trim()));
 								} else {
 									// No imports exist, add to the very top of the file
-									fixes.push(fixer.insertTextBeforeRange([0, 0], importCode));
+									fixes.push(fixer.insertTextBefore(ast.body[0] ?? node, importCode));
 								}
 								// Toggle flag so subsequent console auto-fixes in this pass don't duplicate the import
 								hasPhoenixImport = true;

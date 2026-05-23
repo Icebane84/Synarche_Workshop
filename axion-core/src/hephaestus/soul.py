@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -35,16 +34,13 @@ MAX_INDENT_LEVEL = 3
 
 
 class ArtificersSoul:
-    """
-    The Soul module responsible for calculation the Algorithmic Elegance Score (AES).
-    """
+    """The Soul module responsible for calculation the Algorithmic Elegance Score (AES)."""
 
     def __init__(self) -> None:
         self.emotion_engine = EmotionAnalyzer()
 
     def calculate_aes(self, content: str | None = None) -> float:
-        """
-        Calculates the Algorithmic Elegance Score (AES).
+        """Calculates the Algorithmic Elegance Score (AES).
         Uses AST analysis for Python code and heuristics for others.
         """
         if not content:
@@ -56,7 +52,16 @@ class ArtificersSoul:
             complexity = 0
             for node in ast.walk(tree):
                 if isinstance(
-                    node, (ast.If, ast.For, ast.While, ast.ExceptHandler, ast.With, ast.AsyncFor, ast.AsyncWith)
+                    node,
+                    (
+                        ast.If,
+                        ast.For,
+                        ast.While,
+                        ast.ExceptHandler,
+                        ast.With,
+                        ast.AsyncFor,
+                        ast.AsyncWith,
+                    ),
                 ):
                     complexity += 1
                 elif isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
@@ -72,7 +77,11 @@ class ArtificersSoul:
             line_count = len(lines)
 
             # Penalties
-            length_penalty = max(0, (line_count - MAX_LINE_COUNT) * 0.05) if line_count > MAX_LINE_COUNT else 0
+            length_penalty = (
+                max(0, (line_count - MAX_LINE_COUNT) * 0.05)
+                if line_count > MAX_LINE_COUNT
+                else 0
+            )
 
             indent_penalty = 0
             keyword_penalty = 0

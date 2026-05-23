@@ -9,6 +9,7 @@
 ---
 
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Locales Module (i18n)
 
@@ -69,21 +70,22 @@ Each locale file exports a flat object with nested keys:
 ```typescript
 export const enUS = {
   common: {
-    save: 'Save',
-    cancel: 'Cancel',
-    delete: 'Delete',
+    save: "Save",
+    cancel: "Cancel",
+    delete: "Delete",
     // ...
   },
   notebooks: {
-    title: 'Notebooks',
-    createNew: 'Create Notebook',
+    title: "Notebooks",
+    createNew: "Create Notebook",
     // ...
   },
   // ... other sections
-}
+};
 ```
 
 **Sections**:
+
 - `common`: Shared UI elements (buttons, labels, actions)
 - `notebooks`, `sources`, `notes`: Feature-specific strings
 - `chat`, `search`, `podcasts`: Module-specific strings
@@ -131,20 +133,20 @@ function MyComponent() {
 2. Copy structure from `en-US/index.ts` and translate all strings
 3. Register in `locales/index.ts`:
    ```typescript
-   import { ptBR } from './pt-BR'
+   import { ptBR } from "./pt-BR";
    export const resources = {
      // ...existing
-     'pt-BR': { translation: ptBR },
-   }
+     "pt-BR": { translation: ptBR },
+   };
    export const languages: Language[] = [
      // ...existing
-     { code: 'pt-BR', label: 'Português' },
-   ]
+     { code: "pt-BR", label: "Português" },
+   ];
    ```
 4. Add to `utils/date-locale.ts`:
    ```typescript
-   import { ptBR } from 'date-fns/locale'
-   const LOCALE_MAP = { ...existing, 'pt-BR': ptBR }
+   import { ptBR } from "date-fns/locale";
+   const LOCALE_MAP = { ...existing, "pt-BR": ptBR };
    ```
 
 ## Important Quirks & Gotchas
@@ -161,19 +163,19 @@ function MyComponent() {
 
 ```typescript
 // Mock useTranslation in tests (see test/setup.ts)
-vi.mock('@/lib/hooks/use-translation', () => ({
+vi.mock("@/lib/hooks/use-translation", () => ({
   useTranslation: () => ({
-    t: enUS,  // Use English locale directly
-    language: 'en-US',
+    t: enUS, // Use English locale directly
+    language: "en-US",
     setLanguage: vi.fn(),
   }),
-}))
+}));
 
 // Test locale completeness
-import { enUS, zhCN } from '@/lib/locales'
-const enKeys = Object.keys(flatten(enUS))
-const zhKeys = Object.keys(flatten(zhCN))
-expect(zhKeys).toEqual(enKeys)  // All keys present
+import { enUS, zhCN } from "@/lib/locales";
+const enKeys = Object.keys(flatten(enUS));
+const zhKeys = Object.keys(flatten(zhCN));
+expect(zhKeys).toEqual(enKeys); // All keys present
 ```
 
 ---

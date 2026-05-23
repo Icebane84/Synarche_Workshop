@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CHRON-INDEX-SYNERGY_v11.0` | The Sovereign ID. |
+| Key               | Value                               | Description       |
+| :---------------- | :---------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CHRON-INDEX-SYNERGY_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.CHRON-INDEX-SYNERGY_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                   | The Standard.     |
+| **Domain**        | `GVRN`                              | The Subject.      |
+| **Status**        | `[ACTIVE]`                          | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`       | The Network.      |
 
 ---
 
@@ -92,35 +87,35 @@ The Matrix operates on the principle of **Bidirectional Synergy**.
 
 ### 3.1. The State Vector Definition Block (The Coherence Engine)
 
-*(The Mathematical Health of this Artifact)*
+_(The Mathematical Health of this Artifact)_
 
-| DTS Element | Metric/Field | Source | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Coherence Signature** | **$V_{Current}$** (Link Vector) | Live Scan | Integrity of connections between artifacts. |
-| **Axiomatic Target** | **$V_{Safe}$** (Target Vector) | CODEX-001 | **Zero Dead Links.** Every registered ID must resolve. |
-| **Core KPI** | **Link Integrity Score (LIS)** | Audit Tool | % of valid internal links vs. total links. |
-| **Control Trigger** | **Delineation Alert** | GUCA-LINK | Flags links pointing to deprecated IDs. |
+| DTS Element             | Metric/Field                    | Source     | Purpose                                                |
+| :---------------------- | :------------------------------ | :--------- | :----------------------------------------------------- |
+| **Coherence Signature** | **$V_{Current}$** (Link Vector) | Live Scan  | Integrity of connections between artifacts.            |
+| **Axiomatic Target**    | **$V_{Safe}$** (Target Vector)  | CODEX-001  | **Zero Dead Links.** Every registered ID must resolve. |
+| **Core KPI**            | **Link Integrity Score (LIS)**  | Audit Tool | % of valid internal links vs. total links.             |
+| **Control Trigger**     | **Delineation Alert**           | GUCA-LINK  | Flags links pointing to deprecated IDs.                |
 
 ## IV. The Relational Schema
 
-| Field | Definition |
-| :--- | :--- |
-| `Source_Artifact` | The primary document (The Subject). |
-| `Target_Artifact` | The secondary document (The Object). |
-| `Synergy_Description` | Context text explaining *why* they are linked. |
-| `Synergy_Opportunity` | Action item for strengthening this link. |
+| Field                 | Definition                                     |
+| :-------------------- | :--------------------------------------------- |
+| `Source_Artifact`     | The primary document (The Subject).            |
+| `Target_Artifact`     | The secondary document (The Object).           |
+| `Synergy_Description` | Context text explaining _why_ they are linked. |
+| `Synergy_Opportunity` | Action item for strengthening this link.       |
 
 ## V. Actionable Prompt Packet
 
 ### Packet A: Audit Links
 
 > `CMD: AUDIT_LINKS --target:"GVRN.Index"`
-> *Effect:* Scans this file for dead links.
+> _Effect:_ Scans this file for dead links.
 
 ### Packet B: Graph JSON
 
 > `CMD: GENERATE_GRAPH_JSON --output:"phoenix_graph.json"`
-> *Effect:* Exports the matrix to JSON for RAG usage.
+> _Effect:_ Exports the matrix to JSON for RAG usage.
 
 ---
 
@@ -145,8 +140,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

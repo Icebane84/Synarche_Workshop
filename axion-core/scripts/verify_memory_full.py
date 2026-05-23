@@ -14,11 +14,13 @@ from logic.memory.memory_system import MemorySystem
 async def verify_memory():
     logging.basicConfig(level=logging.INFO)
     print("--- 🧠 Memory System Functional Audit ---")
-    
+
     # 1. Initialization
     try:
         mem_sys = MemorySystem()
-        print(f"SUCCESS: MemorySystem initialized using {type(mem_sys.storage).__name__}")
+        print(
+            f"SUCCESS: MemorySystem initialized using {type(mem_sys.storage).__name__}"
+        )
     except Exception as e:
         print(f"FAILURE: MemorySystem initialization failed: {e}")
         return
@@ -29,10 +31,7 @@ async def verify_memory():
     try:
         # This will trigger Tagger (NLP) and EmotionAnalyzer
         mem_id = mem_sys.add_memory(
-            content=content,
-            domain="Mythology",
-            relevance=0.8,
-            tags=["test", "audit"]
+            content=content, domain="Mythology", relevance=0.8, tags=["test", "audit"]
         )
         if mem_id > 0:
             print(f"SUCCESS: Memory added with ID {mem_id}")
@@ -57,6 +56,7 @@ async def verify_memory():
         print(f"FAILURE: Error during retrieval: {e}")
 
     print("\n--- Audit Complete ---")
+
 
 if __name__ == "__main__":
     asyncio.run(verify_memory())

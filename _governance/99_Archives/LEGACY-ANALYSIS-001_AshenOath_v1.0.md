@@ -9,6 +9,7 @@
 ---
 
 # LEGACY-ANALYSIS-001_AshenOath_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-LEGACY-ANALYSIS-001-ASHENOATH-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `LEGACY-ANALYSIS-001_AshenOath_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                         | Description       |
+| :------------------ | :-------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-LEGACY-ANALYSIS-001-ASHENOATH-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `LEGACY-ANALYSIS-001_AshenOath_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                             | The Standard.     |
+| **Domain**          | `GVRN`                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                 | The Network.      |
 
 # Legacy Analysis: Ashen Oath (Inner Flame Echoes)
 
@@ -73,8 +74,8 @@ The `script.js` contains a mature algorithm for handling **Dynamic Madness**:
 - **Resonance:** `gs.resonance` (0-100). Drifts based on "Structures" built (Sanctums pull Light, Spires pull Shadow).
 - **Hallucinations:** The CSS classes `.hallucinating` and `.hallucinating-severe` trigger screen shake and filters when
   Sanity drops.
-    - _Port Strategy:_ Adapt the `calculateProduction()` logic into a `PlayerStats` class in Unreal/Unity. The "Drift"
-      formula is perfect for a "corruption meter."
+  - _Port Strategy:_ Adapt the `calculateProduction()` logic into a `PlayerStats` class in Unreal/Unity. The "Drift"
+    formula is perfect for a "corruption meter."
 
 ### 2. The Heartstone Ritual (Mini-Game)
 
@@ -82,14 +83,14 @@ A tug-of-war mechanism:
 
 - **Corruption vs. Purification:** Two bars filling simultaneously.
 - **Resource Dump:** Player spends Faith/Resolve to push back against passive Corruption gain.
-    - _Port Strategy:_ This is a ready-made "Boss Fight" mechanic. Instead of clicking buttons, the player must land
-      hits (Resolve) or pray/channel (Faith) to push the bars.
+  - _Port Strategy:_ This is a ready-made "Boss Fight" mechanic. Instead of clicking buttons, the player must land
+    hits (Resolve) or pray/channel (Faith) to push the bars.
 
 ### 3. The Whisper System
 
 - **Logic:** `triggerRandomEvent()` checks Sanity thresholds for text-based "Hallucinations."
 - **Content:** "You wake from a nightmare..."
-    - _Port Strategy:_ Use these string assets as _audio triggers_ for the 3rd person game.
+  - _Port Strategy:_ Use these string assets as _audio triggers_ for the 3rd person game.
 
 ## III. Technical Debt & Risks
 

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -23,8 +22,7 @@ from typing import Any, Dict, Optional
 
 
 class GucaParser:
-    """
-    WHAT: Extracts Genesis Universal Command Architecture (GUCA) from KCAPs.
+    """WHAT: Extracts Genesis Universal Command Architecture (GUCA) from KCAPs.
     HOW: Uses Python's AST (Abstract Syntax Tree) to read docstrings safely without executing code.
     WHY: To ensure only strictly formatted, Phoenix-compliant tools are registered.
     """
@@ -33,14 +31,14 @@ class GucaParser:
         self.skills_dir = os.path.join(root_dir, ".agent", "skills")
 
     def extract_capability(self, filename: str) -> Optional[Dict[str, Any]]:
-        """
-        Extracts the GUCA capability schema from a Python skill file.
-        
+        """Extracts the GUCA capability schema from a Python skill file.
+
         Args:
             filename (str): The name of the file to parse within the skills directory.
-            
+
         Returns:
             Optional[Dict[str, Any]]: The extracted tool schema if compliant, else None.
+
         """
         filepath = os.path.join(self.skills_dir, filename)
         if not os.path.exists(filepath) or not filename.endswith(".py"):
@@ -60,7 +58,10 @@ class GucaParser:
         # Construct the MCP-compatible schema (simplified for abstraction)
         tool_schema = {
             "name": filename.replace(".py", ""),
-            "description": docstring.split("HOW:")[0].strip().replace("WHAT:", "").strip(),
+            "description": docstring.split("HOW:")[0]
+            .strip()
+            .replace("WHAT:", "")
+            .strip(),
             "inputSchema": {
                 "type": "object",
                 "properties": {},  # Would be parsed dynamically in a full implementation

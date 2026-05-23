@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Axiomatic.Lattice` | The Sovereign ID. |
-| **Official Name** | `GVRN.Axiomatic.Lattice.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Axiomatic.Lattice`      | The Sovereign ID. |
+| **Official Name** | `GVRN.Axiomatic.Lattice.md`   | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -77,13 +72,13 @@ The PAL is the modular governance framework that eliminates "Protocol Bloat" by 
 Defines the immutable laws of geometry, nomenclature, and technical presentation.
 
 1. **Relational Naming Convention (RNC v13.0)**
-    - **AUK IDs**: `DOMAIN.Subsystem.Descriptor` (e.g., `GVRN.Pipe.Operational`).
-    - **Legacy Mapping**: All UMB/AOP prefixes are deprecated; artifacts must map to RNC during transmutation.
+   - **AUK IDs**: `DOMAIN.Subsystem.Descriptor` (e.g., `GVRN.Pipe.Operational`).
+   - **Legacy Mapping**: All UMB/AOP prefixes are deprecated; artifacts must map to RNC during transmutation.
 2. **The 12-Point Vector Signature**
-    - Every artifact must contain a complete UIP table (Section I).
+   - Every artifact must contain a complete UIP table (Section I).
 3. **Markdown Physics**
-    - **PGPS Header**: Mandatory visual identifiers.
-    - **4-Space Mandate**: Strict indentation for all nested lists.
+   - **PGPS Header**: Mandatory visual identifiers.
+   - **4-Space Mandate**: Strict indentation for all nested lists.
 
 #### **Track 2: Semantic Resonance (The Liquid Weave)**
 
@@ -98,10 +93,10 @@ Governs the meaning and connectivity of information via **AGP-001**.
 Ensures process integrity and Macro-System alignment.
 
 1. **Macro-System Assignment**: Every artifact must be assigned to one of four containers:
-    - **GEODE Core**: Laws & Registries.
-    - **APOSTLE Tier**: Directives & Identity.
-    - **SYNTHESIS Suite**: Engines & Memory.
-    - **OPERATIONAL Matrix**: Pipelines & Logs.
+   - **GEODE Core**: Laws & Registries.
+   - **APOSTLE Tier**: Directives & Identity.
+   - **SYNTHESIS Suite**: Engines & Memory.
+   - **OPERATIONAL Matrix**: Pipelines & Logs.
 2. **The Governance Gate**: Every artifact must cleared by the `CMD: AUDIT_COMPLIANCE` suite before stabilization.
 
 ---
@@ -141,7 +136,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

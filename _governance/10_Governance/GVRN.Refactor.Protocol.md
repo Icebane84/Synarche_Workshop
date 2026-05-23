@@ -141,6 +141,4 @@ Geode** topology.
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

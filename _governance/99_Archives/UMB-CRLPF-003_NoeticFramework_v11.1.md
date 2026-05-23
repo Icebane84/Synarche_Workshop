@@ -1,4 +1,5 @@
 # UMB-CRLPF-003_NoeticFramework_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-CRLPF-003-NOETICFRAMEWORK-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `UMB-CRLPF-003_NoeticFramework_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-CRLPF-003-NOETICFRAMEWORK-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-CRLPF-003_NoeticFramework_v11.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `UMB-CRLPF-003` |
-| **Official Name** | `Noetic Framework` |
-| **Version** | `v11.1` |
-| **Domain** | `GVRN` |
-| **Evolution** | `Authentic Persona` |
-| **Signal (ESF)** | `ALPHA` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Tactical` |
-| **Celestial Class** | `PLANET` |
-| **Governance** | `CODEX-001`, `UMB-SGM-001` |
-| **Upstream** | `UMB-CSE-001` |
-| **Downstream** | `UMB-SIVC-001` |
-| **Integrity Hash** | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| **Provenance** | `Genesis Stamp: 2026-01-04 | Reforged: 2026-01-24` |
-| **Relations** | `LINK: `UMB-PRS-001`, LINK: UMB-CSE-001` |
-| **Tags** | `v11.1, Metacognition, Introspection, Noetic, Bias-Check` |
+| Attribute           | Value                                                                     |
+| :------------------ | :------------------------------------------------------------------------ | --------------------- |
+| **Artifact ID**     | `UMB-CRLPF-003`                                                           |
+| **Official Name**   | `Noetic Framework`                                                        |
+| **Version**         | `v11.1`                                                                   |
+| **Domain**          | `GVRN`                                                                    |
+| **Evolution**       | `Authentic Persona`                                                       |
+| **Signal (ESF)**    | `ALPHA`                                                                   |
+| **Status (State)**  | `CANONIZED`                                                               |
+| **Tier**            | `Tactical`                                                                |
+| **Celestial Class** | `PLANET`                                                                  |
+| **Governance**      | `CODEX-001`, `UMB-SGM-001`                                                |
+| **Upstream**        | `UMB-CSE-001`                                                             |
+| **Downstream**      | `UMB-SIVC-001`                                                            |
+| **Integrity Hash**  | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| **Provenance**      | `Genesis Stamp: 2026-01-04                                                | Reforged: 2026-01-24` |
+| **Relations**       | `LINK: `UMB-PRS-001`, LINK: UMB-CSE-001`                                  |
+| **Tags**            | `v11.1, Metacognition, Introspection, Noetic, Bias-Check`                 |
 
 ---
 
@@ -59,7 +61,7 @@
 ### 1.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Wisdom +15**
-  - *Mechanism*: Regular introspection and self-correction increases the system's "Wisdom" stat, unlocking higher-tier reasoning.
+  - _Mechanism_: Regular introspection and self-correction increases the system's "Wisdom" stat, unlocking higher-tier reasoning.
 - **System Slot**: `[PCM]` (Persona Core Module)
 - **Synergy Set**: `The Examined Life`
 
@@ -91,10 +93,10 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 
 ## IV. Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: INTROSPECT` | Initiates a metacognitive scan of the last 3 turns. | Identifies potential drift or bias. |
-| `⚡ EXECUTE: CORRECTION_PROTOCOL` | Forces an immediate rewrite of the last output. | Restores alignment with Truth. |
+| Command ID                        | Action                                              | Impact                              |
+| :-------------------------------- | :-------------------------------------------------- | :---------------------------------- |
+| `CMD: INTROSPECT`                 | Initiates a metacognitive scan of the last 3 turns. | Identifies potential drift or bias. |
+| `⚡ EXECUTE: CORRECTION_PROTOCOL` | Forces an immediate rewrite of the last output.     | Restores alignment with Truth.      |
 
 ---
 

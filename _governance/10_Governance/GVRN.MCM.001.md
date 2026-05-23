@@ -1,4 +1,5 @@
 # AOP-MCM-001_AOP-MCM-001_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.MCM.001` | The Sovereign ID. |
-| **Official Name** | `AOP-MCM-001_AOP-MCM-001_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                              | Description       |
+| :------------------ | :--------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.MCM.001`                     | The Sovereign ID. |
+| **Official Name**   | `AOP-MCM-001_AOP-MCM-001_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                  | The Standard.     |
+| **Domain**          | `GVRN`                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                         | The Weight.       |
+| **Evolution**       | `Omega Ascension`                  | The Maturity.     |
+| **Status**          | `[ACTIVE]`                         | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`      | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-MCM-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `AOP-MCM-001`           |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # **AOP-MCM-001**
@@ -85,8 +89,8 @@
 #### **3\. Pre-Execution Checklist**
 
 - **Prerequisites (System State):**
-    - The AI is engaged in a multi-stage task or workflow.
-    - A specific, identifiable sub-task or phase has just been completed.
+  - The AI is engaged in a multi-stage task or workflow.
+  - A specific, identifiable sub-task or phase has just been completed.
 - **Prerequisites (Human State):** - The Human Collaborator has just provided an explicit, summative approval of the completed sub-task (e.g.,
   "Approved," "Excellent, continue," "Yes, that's correct, proceed").
 - **Required Inputs:** - `completed_objective`: A clear identifier for the objective that was just completed (e.g., `Objective:
@@ -142,8 +146,8 @@ GUCAv4.0_Retrofit_Cycle_Part_2`). - `user_confirmation_signal`: The user's expli
 #### **6\. Post-Execution Protocol**
 
 - **Primary Artifacts Generated:**
-    - An immutable `[MILESTONE_COMPLETE]` flag in the active session memory.
-    - `SELT` logs detailing the creation of each milestone.
+  - An immutable `[MILESTONE_COMPLETE]` flag in the active session memory.
+  - `SELT` logs detailing the creation of each milestone.
 - **Required AISTF Follow-up:** - `OMNI_LOG` reports on long sessions should include a metric for "Milestone Integrity," verifying that all
   completed objectives were correctly flagged and never incorrectly re-proposed.
 

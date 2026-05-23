@@ -3,21 +3,19 @@
 # Ethos: Data Must Be Contiguous; Queries Must Be O(1)
 # ======================================================
 
-from collections import defaultdict
 from dataclasses import dataclass
-from typing import Dict, List, Set, Tuple, Type, Any
+from typing import Any, Dict, List, Set, Tuple, Type
 
 # ------------------------------------------------------
 # Archetype Definition
 # ------------------------------------------------------
 
+
 class Archetype:
     def __init__(self, component_types: Tuple[Type, ...]):
         self.component_types = component_types
         self.entities: List[int] = []
-        self.columns: Dict[Type, List[Any]] = {
-            comp: [] for comp in component_types
-        }
+        self.columns: Dict[Type, List[Any]] = {comp: [] for comp in component_types}
 
     def add_entity(self, eid: int, components: Dict[Type, Any]):
         self.entities.append(eid)
@@ -34,9 +32,11 @@ class Archetype:
 
         return removed
 
+
 # ------------------------------------------------------
 # Archetype Manager
 # ------------------------------------------------------
+
 
 class ArchetypeManager:
     def __init__(self):
@@ -57,7 +57,7 @@ class ArchetypeManager:
         self.entity_index[eid] = (arch, len(arch.entities) - 1)
 
     def remove_entity(self, eid: int):
-        arch, idx = self.entity_index[eid]
+        arch, _ = self.entity_index[eid]
         arch.remove_entity(eid)
         del self.entity_index[eid]
 
@@ -72,26 +72,32 @@ class ArchetypeManager:
         # Insert into new archetype
         self.create_entity(eid, merged)
 
-    def query(self, required: Set[Type]) -> List[Tuple[List[int], Dict[Type, List[Any]]]]:
+    def query(
+        self, required: Set[Type]
+    ) -> List[Tuple[List[int], Dict[Type, List[Any]]]]:
         result = []
         for arch in self.archetypes.values():
             if required.issubset(set(arch.component_types)):
                 result.append((arch.entities, arch.columns))
         return result
 
+
 # ------------------------------------------------------
 # Example System using Archetypes
 # ------------------------------------------------------
+
 
 @dataclass(frozen=True)
 class Position:
     x: float
     y: float
 
+
 @dataclass(frozen=True)
 class Velocity:
     dx: float
     dy: float
+
 
 class MovementSystem:
     name = "movement"
@@ -102,11 +108,7 @@ class MovementSystem:
     accumulates = set()
 
     def compute(self, world, _):
-        delta = {
-            "mutations": {Position: {}},
-            "spawns": [],
-            "despawns": []
-        }
+        delta = {"mutations": {Position: {}}, "spawns": [], "despawns": []}
 
         queries = world.archetypes.query({Position, Velocity})
 
@@ -118,16 +120,15 @@ class MovementSystem:
                 p = pos_col[i]
                 v = vel_col[i]
 
-                delta["mutations"][Position][eid] = Position(
-                    p.x + v.dx,
-                    p.y + v.dy
-                )
+                delta["mutations"][Position][eid] = Position(p.x + v.dx, p.y + v.dy)
 
         return delta
+
 
 # ------------------------------------------------------
 # World Integration
 # ------------------------------------------------------
+
 
 class ArchetypeWorld:
     def __init__(self):
@@ -147,6 +148,7 @@ class ArchetypeWorld:
 
     def restore(self, snapshot):
         return snapshot
+
 
 # ======================================================
 # END OF ARCHETYPE LAYER

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -24,7 +23,9 @@ class DeterministicParallelExecutor:
     def execute_layer(self, layer, world):
         results = {}
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as pool:
+        with concurrent.futures.ThreadPoolExecutor(
+            max_workers=self.max_workers
+        ) as pool:
             futures = {pool.submit(task.compute_pure, world): task for task in layer}
             for future in concurrent.futures.as_completed(futures):
                 task = futures[future]

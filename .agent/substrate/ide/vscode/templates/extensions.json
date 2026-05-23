@@ -1,10 +1,10 @@
 {
   "recommendations": [
-	"ms-python.python",
-	"ms-python.vscode-pylance",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
     "trunk.io",
     "charliermarsh.ruff",
-	
+
     "esbenp.prettier-vscode",
     "yzhang.markdown-all-in-one",
     "bierner.markdown-preview-github-styles",

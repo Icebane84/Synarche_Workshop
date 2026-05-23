@@ -38,13 +38,13 @@ This skill allows the agent to audit documentation and code artifacts against th
 Scans a target directory for compliance violations.
 
 - **Parameters**:
-    - `target_dir` (string): The directory path to audit.
-    - `report_file` (string, optional): Path to save the report (default: `audit_report.txt`).
+  - `target_dir` (string): The directory path to audit.
+  - `report_file` (string, optional): Path to save the report (default: `audit_report.txt`).
 
 - **Usage**:
-    ```python
-    audit_directory(target_dir="axion-core/docs")
-    ```
+  ```python
+  audit_directory(target_dir="axion-core/docs")
+  ```
 
 ---
 

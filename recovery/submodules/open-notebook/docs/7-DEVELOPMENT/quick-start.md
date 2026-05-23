@@ -9,6 +9,7 @@
 ---
 
 # quick-start.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-QUICK-START-001` | The Sovereign ID. |
-| **Official Name** | `quick-start.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-QUICK-START-001`        | The Sovereign ID. |
+| **Official Name** | `quick-start.md`              | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -49,6 +45,7 @@
 ## Troubleshooting
 
 ### "Port 5055 already in use"
+
 ```bash
 # Find what's using the port
 lsof -i :5055
@@ -58,6 +55,7 @@ uv run uvicorn api.main:app --port 5056
 ```
 
 ### "Can't connect to SurrealDB"
+
 ```bash
 # Check if SurrealDB is running
 docker ps | grep surrealdb
@@ -67,6 +65,7 @@ make database
 ```
 
 ### "Python version is too old"
+
 ```bash
 # Check your Python version
 python --version  # Should be 3.11+
@@ -76,6 +75,7 @@ uv sync --python 3.11
 ```
 
 ### "npm: command not found"
+
 ```bash
 # Install Node.js from https://nodejs.org/
 # Then install frontend dependencies

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-NAV-001: OSLM Navigator CLI (Matrix Synchronization)
+"""# TOOL-NAV-001: OSLM Navigator CLI (Matrix Synchronization).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |

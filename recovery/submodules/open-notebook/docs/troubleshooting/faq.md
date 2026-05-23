@@ -9,6 +9,7 @@
 ---
 
 # faq.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,23 +22,18 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-FAQ-001` | The Sovereign ID. |
-| **Official Name** | `faq.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-FAQ-001`                | The Sovereign ID. |
+| **Official Name** | `faq.md`                      | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
-*This FAQ is updated regularly based on community questions and feedback. If you have a question that's not covered here, please ask in our Discord community or create a GitHub issue.*
+_This FAQ is updated regularly based on community questions and feedback. If you have a question that's not covered here, please ask in our Discord community or create a GitHub issue._
 
 ### V. RPG Framework Integration (BLK-RPG-001)
 
@@ -57,7 +53,6 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
-
 
 - [[connection-issues]]
 

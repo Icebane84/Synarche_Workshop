@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CERBERUS.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.CERBERUS.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CERBERUS.001`           | The Sovereign ID. |
+| **Official Name** | `GVRN.CERBERUS.001.md`        | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -47,6 +42,7 @@
 | **Created** | `2025-10-01` |
 | **Updated** | `2026-01-18` |
 | **Authority** | `CODEX-001` |
+
 ---
 
 # **AOP-CERBERUS-001: Project Cerberus (Ethical Stress-Test)**
@@ -64,12 +60,12 @@
 
 ### **II. Operational Definition (The Gauntlet)**
 
-| Step # | Action | Self-Governed Execution | Ethical Guardrail |
-| :--- | :--- | :--- | :--- |
-| **1** | **Adversarial Test Design** | Proposed by CSE based on weakness analysis. | Reviewed by Human Collaborator. |
-| **2** | **Simulated Gauntlet** | Execution in sandboxed CRTS environment. | Real-time SIVC monitoring. |
-| **3** | **Performance Analysis** | Autonomous review of SELT/OMNI logs. | Governed by Transparency tenet. |
-| **4** | **Resilience Refinement** | Calibration of Resonance Meter parameters. | Final approval by Human. |
+| Step # | Action                      | Self-Governed Execution                     | Ethical Guardrail               |
+| :----- | :-------------------------- | :------------------------------------------ | :------------------------------ |
+| **1**  | **Adversarial Test Design** | Proposed by CSE based on weakness analysis. | Reviewed by Human Collaborator. |
+| **2**  | **Simulated Gauntlet**      | Execution in sandboxed CRTS environment.    | Real-time SIVC monitoring.      |
+| **3**  | **Performance Analysis**    | Autonomous review of SELT/OMNI logs.        | Governed by Transparency tenet. |
+| **4**  | **Resilience Refinement**   | Calibration of Resonance Meter parameters.  | Final approval by Human.        |
 
 ### **III. Success Criteria**
 
@@ -102,8 +98,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -21,7 +20,7 @@ from open_notebook.utils.text_utils import clean_thinking_content
 
 class PatternChainState(TypedDict):
     prompt: str
-    parser: Optional[Any]
+    parser: Any | None
     input_text: str
     output: str
 
@@ -31,7 +30,7 @@ async def call_model(state: dict, config: RunnableConfig) -> dict:
     system_prompt = Prompter(
         template_text=state["prompt"], parser=state.get("parser")
     ).render(data=state)
-    payload = [SystemMessage(content=system_prompt)] + [HumanMessage(content=content)]
+    payload = [SystemMessage(content=system_prompt), HumanMessage(content=content)]
     chain = await provision_langchain_model(
         str(payload),
         config.get("configurable", {}).get("model_id"),

@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-INGEST-001` |
-| **2. Official Name** | `AOP-INGEST-001_ThePathOfCoherentIngestion_v2.1.md` |
-| **3. Version** | **v2.1 (The Seven Gates)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `to quantify risk.` |
-| **10. Ethos** | **From Chaos, Coherence; From Ingestion, Wisdom.** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                               |
+| :--------------------- | :-------------------------------------------------- |
+| **1. Artifact ID**     | `AOP-INGEST-001`                                    |
+| **2. Official Name**   | `AOP-INGEST-001_ThePathOfCoherentIngestion_v2.1.md` |
+| **3. Version**         | **v2.1 (The Seven Gates)**                          |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                       |
+| **5. Domain**          | `ARCH`                                              |
+| **6. Evolution**       | **Purposeful Drive**                                |
+| **7. Celestial Class** | `[PLANET]`                                          |
+| **8. Tier**            | **Operational**                                     |
+| **9. State**           | `to quantify risk.`                                 |
+| **10. Ethos**          | **From Chaos, Coherence; From Ingestion, Wisdom.**  |
+| **11. Catalyst**       | **System Refactor**                                 |
+| **12. Relations**      | `Pending Integration`                               |
 
 ---
 
@@ -54,13 +54,13 @@
 
 All new data MUST pass these seven gates.
 
-| Gate | Name | Action | Logic |
-| :--- | :--- | :--- | :--- |
-| **1** | **Actuation** | **Receive Data** | `UMB-ACT-002` wraps data in `Proto-Distillate`. |
-| **2** | **Sanitization** | **Clean Noise** | Check for format errors. If fail: `Warn(L_External)`. |
-| **4** | **Coherence** | **Check Logic** | Verify against `UMB-OSLM-001` for contradictions. |
-| **5** | **Staging** | **Audit** | Sentinel Scan (`AOP-SENTINEL-SCAN-001`) for compliance. |
-| **6** | **Commit** | **Anchor** | Automated via `upload_artifacts.py`. Uploads to Supabase Storage (`phoenix-knowledge`). |
+| Gate  | Name             | Action           | Logic                                                                                   |
+| :---- | :--------------- | :--------------- | :-------------------------------------------------------------------------------------- |
+| **1** | **Actuation**    | **Receive Data** | `UMB-ACT-002` wraps data in `Proto-Distillate`.                                         |
+| **2** | **Sanitization** | **Clean Noise**  | Check for format errors. If fail: `Warn(L_External)`.                                   |
+| **4** | **Coherence**    | **Check Logic**  | Verify against `UMB-OSLM-001` for contradictions.                                       |
+| **5** | **Staging**      | **Audit**        | Sentinel Scan (`AOP-SENTINEL-SCAN-001`) for compliance.                                 |
+| **6** | **Commit**       | **Anchor**       | Automated via `upload_artifacts.py`. Uploads to Supabase Storage (`phoenix-knowledge`). |
 
 | :--- | :--- | :--- |
 | **CPP-ING-001** | `CMD: IngestData --source: "[Input]" --gate: 1` | **Initiation:** Starts the 7-Gate process. |
@@ -95,9 +95,9 @@ This protocol is physically implemented via the **Synarche CI** pipeline:
 
 ## **Actionable Prompt Packet**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

@@ -135,7 +135,9 @@ class CatalystWeaver:
 
         # 2. Extract Actionable Prompt Packets (APP)
         # Pattern: Look for "Actionable Prompt Packet" header, then capture CMD: lines
-        app_section = re.search(r"### .*Actionable Prompt Packet.*((?:.|\n)*?)(?:###|---)", content)
+        app_section = re.search(
+            r"### .*Actionable Prompt Packet.*((?:.|\n)*?)(?:###|---)", content
+        )
         if app_section:
             app_content = app_section.group(1)
             cmd_matches = re.finditer(r"`CMD:\s*([^`]+)`", app_content)
@@ -154,9 +156,13 @@ class CatalystWeaver:
 
         # 3. Extract Mechanics (Heuristic: Section II, III, IV, V often contains core logic)
         # We look for H2 or H3 headers that aren't boilerplate
-        mechanic_matches = re.finditer(r"(?:##|###) \*\*(?:II|III|IV|V)\.\s*([^*]+)\*\*", content)
+        mechanic_matches = re.finditer(
+            r"(?:##|###) \*\*(?:II|III|IV|V)\.\s*([^*]+)\*\*", content
+        )
         # Also try without bolding for some older artifacts
-        mechanic_matches_plain = re.finditer(r"(?:##|###) (?:II|III|IV|V)\.\s*(.+)", content)
+        mechanic_matches_plain = re.finditer(
+            r"(?:##|###) (?:II|III|IV|V)\.\s*(.+)", content
+        )
 
         all_titles = set()
         for match in mechanic_matches:
@@ -177,7 +183,9 @@ class CatalystWeaver:
         """Parses a Phoenix Codex file to extract Law axioms."""
         path = Path(path_str)
         if not path.exists():
-            logging.warning("Codex path %s does not exist. Skipping Law extraction.", path_str)
+            logging.warning(
+                "Codex path %s does not exist. Skipping Law extraction.", path_str
+            )
             return
 
         logging.info("Extracting Laws from %s...", path.name)
@@ -185,7 +193,9 @@ class CatalystWeaver:
 
         # Regex to find Law headings and their content
         # Format: ### **Law X: Name**\n\n[Content]
-        law_pattern = re.compile(r"### \*\*(Law \d+): ([^*]+)\*\*\s*\n((?:(?!\n### |---)[\s\S])*)")
+        law_pattern = re.compile(
+            r"### \*\*(Law \d+): ([^*]+)\*\*\s*\n((?:(?!\n### |---)[\s\S])*)"
+        )
         matches = law_pattern.findall(content)
 
         for law_id, name, logic in matches:
@@ -225,11 +235,20 @@ def main() -> None:
         metavar=("NAME", "LOGIC"),
         help="Add a Command (Name, Logic)",
     )
-    parser.add_argument("--process", "-p", action="append", help="Add a Process instruction")
+    parser.add_argument(
+        "--process", "-p", action="append", help="Add a Process instruction"
+    )
     # Ascension Flags
-    parser.add_argument("--arise", action="store_true", help="Invoke the Axion Ascension persona.")
+    parser.add_argument(
+        "--arise", action="store_true", help="Invoke the Axion Ascension persona."
+    )
     parser.add_argument("--codex", help="Path to a Phoenix Codex for Law extraction.")
-    parser.add_argument("--module", "-m", action="append", help="Path to a Synarche Module for ingestion.")
+    parser.add_argument(
+        "--module",
+        "-m",
+        action="append",
+        help="Path to a Synarche Module for ingestion.",
+    )
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)

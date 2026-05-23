@@ -1,5 +1,4 @@
-"""
-# TOOL-EMPR-003: The Scaffolding Engine (Emperor's Decree)
+"""# TOOL-EMPR-003: The Scaffolding Engine (Emperor's Decree).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -97,7 +96,9 @@ class ScaffoldEngine:
 
     def ignite(self) -> None:
         """Starts the scaffolding process."""
-        logger.info(f"\n⚡ [IGNITION] HEPHAESTUS ENGINE START (Dry Run: {self.dry_run})")
+        logger.info(
+            f"\n⚡ [IGNITION] HEPHAESTUS ENGINE START (Dry Run: {self.dry_run})"
+        )
         logger.info(f"   Target:      {self.target_dir}")
         logger.info(f"   Project:     {self.project_name}")
         logger.info("-" * 50)
@@ -114,8 +115,7 @@ class ScaffoldEngine:
         logger.info("✨ [COMPLETE] Scaffolding Process Finalized.")
 
     def _replace_vars(self, text: str) -> str:
-        """
-        Global replacement of placeholders.
+        """Global replacement of placeholders.
         Ensures all instances of {{PROJECT_NAME}} are replaced.
         """
         return text.replace("{{PROJECT_NAME}}", self.project_name)
@@ -179,7 +179,9 @@ class ScaffoldEngine:
             content = self._replace_vars(raw_content)
             # Validation check
             if "{{" in content and "}}" in content:
-                logger.warning(f"⚠️  [WARNING] Unreplaced placeholders detected in {path.name}")
+                logger.warning(
+                    f"⚠️  [WARNING] Unreplaced placeholders detected in {path.name}"
+                )
 
         with open(path, "w", encoding="utf-8") as f:
             f.write(content)
@@ -231,7 +233,9 @@ def main() -> None:
 
     # Resolve paths
     base_path = Path.cwd()
-    template_path = args.template if args.template.is_absolute() else base_path / args.template
+    template_path = (
+        args.template if args.template.is_absolute() else base_path / args.template
+    )
     target_path = args.target if args.target.is_absolute() else base_path / args.target
 
     engine = ScaffoldEngine(template_path, target_path, args.name, args.dry_run)

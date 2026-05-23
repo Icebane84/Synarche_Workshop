@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-AES-001`                                 |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **Algorithmic Elegance**                       |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `JUDGES: SOURCE_CODE`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 
 ---
 
@@ -52,7 +51,11 @@ def assess_file(filepath: str) -> None:
 
     # 1. Metric: Conciseness (LOC check)
     # Filter empty lines and comments for "Code Density"
-    code_lines = [line.strip() for line in lines if line.strip() and not line.strip().startswith("#")]
+    code_lines = [
+        line.strip()
+        for line in lines
+        if line.strip() and not line.strip().startswith("#")
+    ]
     total_loc = len(code_lines)
 
     if total_loc == 0:

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-AUDITOR-001: Compliance Auditor CLI (Sentinel Suite)
+"""# TOOL-AUDITOR-001: Compliance Auditor CLI (Sentinel Suite).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |

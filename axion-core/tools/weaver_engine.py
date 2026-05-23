@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-STAR-005: Weaver Engine (Coherence Core)
+"""# TOOL-STAR-005: Weaver Engine (Coherence Core).
 
 ## I. Universal Identification & Provenance
 | Attribute | Value |
@@ -46,9 +45,13 @@ class ASLWeaverEngine:
             for root, _, files in os.walk(target):
                 for file in files:
                     if file.endswith(".md"):
-                        self._ingest_file(os.path.join(root, file), id_pattern, class_pattern)
+                        self._ingest_file(
+                            os.path.join(root, file), id_pattern, class_pattern
+                        )
 
-    def _ingest_file(self, path: str, id_pattern: re.Pattern, class_pattern: re.Pattern) -> None:
+    def _ingest_file(
+        self, path: str, id_pattern: re.Pattern, class_pattern: re.Pattern
+    ) -> None:
         try:
             with open(path, encoding="utf-8", errors="ignore") as f:
                 content = f.read()
@@ -68,7 +71,7 @@ class ASLWeaverEngine:
         """Generates a list of suggested link injections without modifying source."""
         forge_plan: dict[str, list[str]] = {}
 
-        for art_id, path in self.artifact_map.items():
+        for art_id, _path in self.artifact_map.items():
             if self.prs_id in art_id or "OSLM" in art_id:
                 continue
 
@@ -173,7 +176,9 @@ class ASLWeaverEngine:
                 if link == art_id:
                     continue
                 total_links += 1
-                if link in self.artifact_map or any(link in existing for existing in self.artifact_map):
+                if link in self.artifact_map or any(
+                    link in existing for existing in self.artifact_map
+                ):
                     valid_links += 1
 
         score = (valid_links / total_links * 100) if total_links > 0 else 100.0

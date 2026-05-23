@@ -9,6 +9,7 @@
 ---
 
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Open Notebook Core Backend
 
@@ -39,6 +40,7 @@ The `open_notebook` module is the heart of the system: a multi-layer backend orc
 ## Purpose
 
 Encapsulates the entire backend architecture:
+
 1. **Data layer**: SurrealDB persistence with async CRUD and migrations
 2. **Domain layer**: Research models (Notebook, Source, Note, etc.) with embedded relationships
 3. **Workflow layer**: LangGraph state machines for content ingestion, chat, and transformations
@@ -186,35 +188,44 @@ User message in chat
 ## Key Patterns Across Layers
 
 ### Async/Await Everywhere
+
 All database operations, model provisioning, and graph execution are async. Mix with sync code only via `asyncio.run()` or LangGraph's async bridges (see graphs/CLAUDE.md for workarounds).
 
 ### Type-Driven Dispatch
+
 Model types (language, embedding, speech_to_text, text_to_speech) drive factory logic in ModelManager. Domain model IDs encode their type: `notebook:uuid`, `source:uuid`, `note:uuid`.
 
 ### Smart Fallback Logic
+
 `provision_langchain_model()` auto-detects large contexts (105K+ tokens) and upgrades to dedicated large_context_model. Falls back to default_chat_model if specific type not found.
 
 ### Fire-and-Forget Jobs
+
 Time-consuming operations (embedding, podcast generation) return command_id immediately. Caller polls surreal-commands for status; no blocking.
 
 ### Fire-and-Forget Embedding
+
 Domain models submit embedding commands after save via `submit_command()` (non-blocking). Note.save() submits `embed_note`, Source.add_insight() submits `embed_insight`, Source.vectorize() submits `embed_source`. Search functions (text_search, vector_search) use embeddings for semantic matching.
 
 ### Relationship Management
+
 SurrealDB graph edges link entities: Notebook→Source (has), Source→Note (artifact), Note→Source (refers_to). See `relate()` in domain/base.py.
 
 ## Integration Points
 
 **API startup** (`api/main.py`):
+
 - AsyncMigrationManager.run_migration_up() on lifespan startup
 - Ensures schema is current before handling requests
 
 **Streamlit UI** (`pages/stream_app/`):
+
 - Calls domain models directly to fetch/create notebooks, sources, notes
 - Invokes graphs (chat, source, ask) via async wrapper
 - Relies on API for migrations (deprecated check in UI)
 
 **Background Jobs** (`surreal_commands`):
+
 - Source.vectorize() submits async embedding job
 - PodcastEpisode.get_job_status() polls job queue
 - Decouples long-running operations from request flow
@@ -228,20 +239,22 @@ SurrealDB graph edges link entities: Notebook→Source (has), Source→Note (art
 5. **Polymorphic model.get()**: Resolves subclass from ID prefix; fails silently if subclass not imported
 6. **RecordID string inconsistency**: repo_update() accepts both "table:id" format and full RecordID
 7. **Snapshot profiles**: podcast profiles stored as dicts, so config updates don't affect past episodes
-8. **No connection pooling**: Each repo_* creates new connection (adequate for HTTP but inefficient for bulk)
+8. **No connection pooling**: Each repo\_\* creates new connection (adequate for HTTP but inefficient for bulk)
 9. **Circular import guard**: utils imports domain; domain must not import utils (breaks on import)
 10. **SqliteSaver shared location**: LangGraph checkpoints from LANGGRAPH_CHECKPOINT_FILE env var; all graphs use same file
 
 ## How to Add New Feature
 
 **New data model**:
+
 1. Create class inheriting from `ObjectModel` with `table_name` ClassVar
 2. Define Pydantic fields and validators
 3. Override `save()` to submit embedding command if searchable (use `submit_command("embed_*", id)`)
 4. Add custom methods for domain logic (get_X, add_to_Y)
-5. Register in domain/__init__.py exports
+5. Register in domain/**init**.py exports
 
 **New workflow**:
+
 1. Create state machine in graphs/WORKFLOW.py using StateGraph
 2. Import domain models and provision_langchain_model()
 3. Define nodes as async functions taking State, returning dict
@@ -249,8 +262,9 @@ SurrealDB graph edges link entities: Notebook→Source (has), Source→Note (art
 5. Invoke from API endpoint or Streamlit page
 
 **New AI model type**:
+
 1. Add type string to Model class
-2. Add AIFactory.create_* method in Esperanto
+2. Add AIFactory.create\_\* method in Esperanto
 3. Handle in ModelManager.get_model()
 4. Add DefaultModels field + getter
 

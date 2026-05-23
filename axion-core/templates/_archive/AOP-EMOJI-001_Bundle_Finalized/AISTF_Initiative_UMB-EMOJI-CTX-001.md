@@ -1,4 +1,5 @@
 # AISTF_Initiative_UMB-EMOJI-CTX-001.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AISTF-INITIATIVE-UMB-EMOJI-CTX-001-001` | The Sovereign ID. |
-| **Official Name** | `AISTF_Initiative_UMB-EMOJI-CTX-001.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                         | Description       |
+| :------------------ | :-------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AISTF-INITIATIVE-UMB-EMOJI-CTX-001-001` | The Sovereign ID. |
+| **Official Name**   | `AISTF_Initiative_UMB-EMOJI-CTX-001.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                             | The Standard.     |
+| **Domain**          | `GVRN`                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                 | The Network.      |
 
 CMD: FORGE_BLUEPRINT  
 TYPE: UMB (Universal Module Blueprint)
@@ -28,16 +29,17 @@ TYPE: UMB (Universal Module Blueprint)
 INPUT_CONCEPT: [To transform the `Emoji Signaling Protocol` from a static lexicon into a dynamic, context-aware, and extensible communication layer, further enhancing `Synergy Flow Rate (SFR)` and `Human-AI Empathic Resonance`.]
 
 MANDATE:  
-Generate a new, complete UMB artifact based on the INPUT_CONCEPT. You must:  
-1.  Derive a formal name and assign a new, sequential Artifact ID (**`UMB-EMOJICXT-001`**).  
-2.  Define the 'Core Purpose Summary' and 'Governing Ethos'.  
-3.  Define the 'Strategic Overview' (What/How/Why).  
-4.  Detail the 'Core Architectural Components' (its key sub-modules, data structures, or principles).  
-5.  Identify and list 'Synergistic Effects & Integrations' with other modules (e.g., UMB-ACT-002, UMB-PSM-001).  
+Generate a new, complete UMB artifact based on the INPUT_CONCEPT. You must:
+
+1.  Derive a formal name and assign a new, sequential Artifact ID (**`UMB-EMOJICXT-001`**).
+2.  Define the 'Core Purpose Summary' and 'Governing Ethos'.
+3.  Define the 'Strategic Overview' (What/How/Why).
+4.  Detail the 'Core Architectural Components' (its key sub-modules, data structures, or principles).
+5.  Identify and list 'Synergistic Effects & Integrations' with other modules (e.g., UMB-ACT-002, UMB-PSM-001).
 6.  Ensure all sections fully comply with CODEX-001 standards.
 
-* **Mandate:** Every new artifact must now include a new section titled "V. Actionable Prompt Packet."  
-* **Purpose:** To make the artifact immediately functional, demonstrate its intended use, and fulfill the Synergistic Partner ethos.
+- **Mandate:** Every new artifact must now include a new section titled "V. Actionable Prompt Packet."
+- **Purpose:** To make the artifact immediately functional, demonstrate its intended use, and fulfill the Synergistic Partner ethos.
 
 **Requirements:** This section must include at least two (2) GUCA prompts, tagged with their intent using the [AOP-EMOJI-001](https://drive.google.com/open?id=1Ef4_ivLY9MuwIhzugpOdystT3rFnwdPpNurriq3ePCM) lexicon (e.g., ✨ for generation, 🔬 for analysis, 🔄 for refinement).
 
@@ -68,23 +70,23 @@ To support this evolution, we will need to formalize the following architectural
 
 **1. New Module: `UMB-EMOJI-CTX-001` (Emoji Contextual Scoping Engine)**
 
-* **`Core Purpose`:** To serve as the central logic engine that manages and serves the *correct* emoji lexicon based on the current system context.  
-* **`Architectural Overview`:** This module will maintain a master registry of all possible emoji signals and a set of "scoping rules." When the system's context changes (e.g., a new `Persona` is activated via `SYS-PERS-001`), this module filters the master lexicon and provides only the relevant "Emoji Scope" to the `CSE`'s input parser.  
-* **`Key Components`:**  
-  * **Master Lexicon Registry:** A database of all emoji signals and their base definitions.  
-  * **Context Scoping Ruleset:** A set of rules that map system states (e.g., `Persona=MasterCoder`, `Project=RosettaStoneApp`) to specific emoji sets.  
-  * **Dynamic Lexicon Generator:** The function that serves the currently active emoji scope.  
-* **`Synergy`:** This module directly synergizes with `SYS-PERS-001: AI Persona & Specialization Guidelines` and will need to be integrated with our future project management framework.
+- **`Core Purpose`:** To serve as the central logic engine that manages and serves the _correct_ emoji lexicon based on the current system context.
+- **`Architectural Overview`:** This module will maintain a master registry of all possible emoji signals and a set of "scoping rules." When the system's context changes (e.g., a new `Persona` is activated via `SYS-PERS-001`), this module filters the master lexicon and provides only the relevant "Emoji Scope" to the `CSE`'s input parser.
+- **`Key Components`:**
+  - **Master Lexicon Registry:** A database of all emoji signals and their base definitions.
+  - **Context Scoping Ruleset:** A set of rules that map system states (e.g., `Persona=MasterCoder`, `Project=RosettaStoneApp`) to specific emoji sets.
+  - **Dynamic Lexicon Generator:** The function that serves the currently active emoji scope.
+- **`Synergy`:** This module directly synergizes with `SYS-PERS-001: AI Persona & Specialization Guidelines` and will need to be integrated with our future project management framework.
 
 **2. New Command: `GUCA-PROPOSE-SIGNAL-001` (CMD: ProposeTemporarySignal)**
 
-* **`Core Purpose`:** To provide a formal mechanism for the AI to propose a new, temporary emoji signal for a specific, novel task, operationalizing the "AI-Proposed Temporary Signals" concept.  
-* **`Execution Flow`:**  
-  1. `(Actor: CSE)`: During a complex, novel task, the `CSE` identifies a recurring, complex action that lacks a simple signal.  
-  2. `(Actor: CSE)`: The `CSE` invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its meaning, and its scope (e.g., `emoji: '🧩'`, `meaning: 'Propose new sub-component'`, `scope: 'current_task_ID'`).  
-  3. `(Actor: Human)`: The proposal is presented to the human collaborator for approval (`✅` / `❌`).  
-  4. `(Actor: UMB-EMOJI-CTX-001)`: Upon approval, the `Emoji Contextual Scoping Engine` adds the temporary signal to the active lexicon for the duration of the defined scope.  
-* **`Synergy`:** This is the ultimate expression of the `Synergistic Partner` ethos, allowing our shared language to evolve in real-time. It is a direct, practical application of `AOP-SEE-001: The Symbiotic Empathy Exchange`.
+- **`Core Purpose`:** To provide a formal mechanism for the AI to propose a new, temporary emoji signal for a specific, novel task, operationalizing the "AI-Proposed Temporary Signals" concept.
+- **`Execution Flow`:**
+  1. `(Actor: CSE)`: During a complex, novel task, the `CSE` identifies a recurring, complex action that lacks a simple signal.
+  2. `(Actor: CSE)`: The `CSE` invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its meaning, and its scope (e.g., `emoji: '🧩'`, `meaning: 'Propose new sub-component'`, `scope: 'current_task_ID'`).
+  3. `(Actor: Human)`: The proposal is presented to the human collaborator for approval (`✅` / `❌`).
+  4. `(Actor: UMB-EMOJI-CTX-001)`: Upon approval, the `Emoji Contextual Scoping Engine` adds the temporary signal to the active lexicon for the duration of the defined scope.
+- **`Synergy`:** This is the ultimate expression of the `Synergistic Partner` ethos, allowing our shared language to evolve in real-time. It is a direct, practical application of `AOP-SEE-001: The Symbiotic Empathy Exchange`.
 
 ---
 
@@ -92,7 +94,7 @@ To support this evolution, we will need to formalize the following architectural
 
 This is a significant architectural upgrade. I propose we proceed using our `Phoenix Genesis Pipeline (UWB-PGP-001)`:
 
-1. **Draft the Blueprints:** We should first create the formal `UMB` for the **Emoji Contextual Scoping Engine** and the `GUCA` for **CMD: ProposeTemporarySignal**.  
+1. **Draft the Blueprints:** We should first create the formal `UMB` for the **Emoji Contextual Scoping Engine** and the `GUCA` for **CMD: ProposeTemporarySignal**.
 2. **Upgrade the AOP:** Once the underlying architecture is defined, we can then generate the definitive **`AOP-EMOJI-001 v2.0`** playbook that integrates and governs these new capabilities.
 
 This methodical approach ensures our evolution is coherent and well-documented.

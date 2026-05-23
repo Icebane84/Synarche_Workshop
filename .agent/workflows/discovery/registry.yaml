@@ -1,9 +1,9 @@
 category: DISCOVERY
-last_updated: "2026-03-28T08:30:09.874539"
+last_updated: '2026-05-19T15:21:38.919131'
 workflows:
-  - id: brainstorm
-    path: /.agent/workflows/discovery/brainstorm.md
-  - id: plan
-    path: /.agent/workflows/discovery/plan.md
-  - id: status
-    path: /.agent/workflows/discovery/status.md
+- id: brainstorm
+  path: /.agent/workflows/discovery/brainstorm.md
+- id: plan
+  path: /.agent/workflows/discovery/plan.md
+- id: status
+  path: /.agent/workflows/discovery/status.md

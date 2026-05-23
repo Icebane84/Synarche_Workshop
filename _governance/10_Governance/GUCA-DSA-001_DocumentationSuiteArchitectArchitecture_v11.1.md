@@ -1,4 +1,5 @@
 # GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-DSA-001-DOCUMENTATIONSUITEARCHITECTARCHITECTURE-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                 | Description       |
+| :------------------ | :-------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-DSA-001-DOCUMENTATIONSUITEARCHITECTARCHITECTURE-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                     | The Standard.     |
+| **Domain**          | `GVRN`                                                                | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                            | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                     | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                            | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                         | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `GUCA-DSA-001` |
-| **Official Name** | `Documentation Suite Architect Architecture` |
-| **Version** | `v11.1` |
-| **Domain** | `SYNT` |
-| **Evolution** | `Actionable Utility` |
-| **Signal (DSA)** | `INTERFACE` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Tactical` |
-| **Celestial Class** | `MOON` |
-| **Governance** | `UMB-SGM-001` |
-| **Upstream** | `UMB-DSA-001`, `CORE-CODEX-001` |
-| **Downstream** | `ALL_GENERATED_DSA_SUITES` |
-| **Integrity Hash** | `sha256:000111222333444555666777888999abcdef000111222333444555666777888` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `PROVIDES: CMD_Syntax`, `REDUCES: User Friction` |
-| **Tags** | `v11.1, Interface, Syntax, Command-Line, User-Centric` |
+| Attribute           | Value                                                                    |
+| :------------------ | :----------------------------------------------------------------------- |
+| **Artifact ID**     | `GUCA-DSA-001`                                                           |
+| **Official Name**   | `Documentation Suite Architect Architecture`                             |
+| **Version**         | `v11.1`                                                                  |
+| **Domain**          | `SYNT`                                                                   |
+| **Evolution**       | `Actionable Utility`                                                     |
+| **Signal (DSA)**    | `INTERFACE`                                                              |
+| **Status (State)**  | `CANONIZED`                                                              |
+| **Tier**            | `Tactical`                                                               |
+| **Celestial Class** | `MOON`                                                                   |
+| **Governance**      | `UMB-SGM-001`                                                            |
+| **Upstream**        | `UMB-DSA-001`, `CORE-CODEX-001`                                          |
+| **Downstream**      | `ALL_GENERATED_DSA_SUITES`                                               |
+| **Integrity Hash**  | `sha256:000111222333444555666777888999abcdef000111222333444555666777888` |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                      |
+| **Relations**       | `PROVIDES: CMD_Syntax`, `REDUCES: User Friction`                         |
+| **Tags**            | `v11.1, Interface, Syntax, Command-Line, User-Centric`                   |
 
 ---
 

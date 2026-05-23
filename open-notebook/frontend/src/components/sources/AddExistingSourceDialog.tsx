@@ -1,8 +1,15 @@
-'use client'
+"use client";
 
-import { useState, useEffect, useMemo, useCallback } from 'react'
-import { useDebounce } from 'use-debounce'
-import { Search, Link2, LoaderIcon, FileText, Link as LinkIcon, Upload } from 'lucide-react'
+import { useState, useEffect, useMemo, useCallback } from "react";
+import { useDebounce } from "use-debounce";
+import {
+  Search,
+  Link2,
+  LoaderIcon,
+  FileText,
+  Link as LinkIcon,
+  Upload,
+} from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -10,23 +17,23 @@ import {
   DialogHeader,
   DialogTitle,
   DialogFooter,
-} from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Checkbox } from '@/components/ui/checkbox'
-import { Badge } from '@/components/ui/badge'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { searchApi } from '@/lib/api/search'
-import { sourcesApi } from '@/lib/api/sources'
-import { useSources, useAddSourcesToNotebook } from '@/lib/hooks/use-sources'
-import { SourceListResponse } from '@/lib/types/api'
-import { useTranslation } from '@/lib/hooks/use-translation'
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Badge } from "@/components/ui/badge";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { searchApi } from "@/lib/api/search";
+import { sourcesApi } from "@/lib/api/sources";
+import { useSources, useAddSourcesToNotebook } from "@/lib/hooks/use-sources";
+import { SourceListResponse } from "@/lib/types/api";
+import { useTranslation } from "@/lib/hooks/use-translation";
 
 interface AddExistingSourceDialogProps {
-  open: boolean
-  onOpenChange: (open: boolean) => void
-  notebookId: string
-  onSuccess?: () => void
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+  notebookId: string;
+  onSuccess?: () => void;
 }
 
 export function AddExistingSourceDialog({
@@ -35,67 +42,69 @@ export function AddExistingSourceDialog({
   notebookId,
   onSuccess,
 }: AddExistingSourceDialogProps) {
-  const { t } = useTranslation()
-  const [searchQuery, setSearchQuery] = useState('')
-  const [debouncedSearchQuery] = useDebounce(searchQuery, 300)
-  const [selectedSourceIds, setSelectedSourceIds] = useState<string[]>([])
-  const [allSources, setAllSources] = useState<SourceListResponse[]>([])
-  const [filteredSources, setFilteredSources] = useState<SourceListResponse[]>([])
-  const [isSearching, setIsSearching] = useState(false)
+  const { t } = useTranslation();
+  const [searchQuery, setSearchQuery] = useState("");
+  const [debouncedSearchQuery] = useDebounce(searchQuery, 300);
+  const [selectedSourceIds, setSelectedSourceIds] = useState<string[]>([]);
+  const [allSources, setAllSources] = useState<SourceListResponse[]>([]);
+  const [filteredSources, setFilteredSources] = useState<SourceListResponse[]>(
+    [],
+  );
+  const [isSearching, setIsSearching] = useState(false);
 
   // Get sources already in this notebook
-  const { data: currentNotebookSources } = useSources(notebookId)
+  const { data: currentNotebookSources } = useSources(notebookId);
   const currentSourceIds = useMemo(
-    () => new Set(currentNotebookSources?.map(s => s.id) || []),
-    [currentNotebookSources]
-  )
+    () => new Set(currentNotebookSources?.map((s) => s.id) || []),
+    [currentNotebookSources],
+  );
 
-  const addSources = useAddSourcesToNotebook()
+  const addSources = useAddSourcesToNotebook();
 
   const loadAllSources = useCallback(async () => {
     try {
-      setIsSearching(true)
+      setIsSearching(true);
       // Use sources API directly to get all sources (max 100 per API limit)
       const sources = await sourcesApi.list({
         limit: 100,
         offset: 0,
-        sort_by: 'created',
-        sort_order: 'desc',
-      })
+        sort_by: "created",
+        sort_order: "desc",
+      });
 
-      setAllSources(sources)
-      setFilteredSources(sources)
+      setAllSources(sources);
+      setFilteredSources(sources);
     } catch (error) {
-      console.error('Error loading sources:', error)
+      console.error("Error loading sources:", error);
     } finally {
-      setIsSearching(false)
+      setIsSearching(false);
     }
-  }, [])
+  }, []);
 
   const performSearch = useCallback(async () => {
     if (!debouncedSearchQuery.trim()) {
       // Empty query - show all sources
-      setFilteredSources(allSources)
-      setIsSearching(false)
-      return
+      setFilteredSources(allSources);
+      setIsSearching(false);
+      return;
     }
 
     try {
-      setIsSearching(true)
+      setIsSearching(true);
       const response = await searchApi.search({
         query: debouncedSearchQuery,
-        type: 'text',
+        type: "text",
         search_sources: true,
         search_notes: false,
         limit: 100,
         minimum_score: 0.01,
-      })
+      });
 
       // Since we set search_sources=true and search_notes=false,
       // the API only returns sources, no need to filter
-      const sources = response.results.map(r => ({
+      const sources = response.results.map((r) => ({
         id: r.parent_id,
-        title: r.title || 'Untitled',
+        title: r.title || "Untitled",
         topics: [],
         asset: null,
         embedded: false,
@@ -103,82 +112,82 @@ export function AddExistingSourceDialog({
         insights_count: 0,
         created: r.created,
         updated: r.updated,
-      })) as SourceListResponse[]
+      })) as SourceListResponse[];
 
-      setFilteredSources(sources)
+      setFilteredSources(sources);
     } catch (error) {
-      console.error('Error searching sources:', error)
+      console.error("Error searching sources:", error);
       // On error, fall back to showing all sources
-      setFilteredSources(allSources)
+      setFilteredSources(allSources);
     } finally {
-      setIsSearching(false)
+      setIsSearching(false);
     }
-  }, [debouncedSearchQuery, allSources])
+  }, [debouncedSearchQuery, allSources]);
 
   // Load all sources initially
   useEffect(() => {
     if (open) {
-      loadAllSources()
+      loadAllSources();
     }
-  }, [open, loadAllSources])
+  }, [open, loadAllSources]);
 
   // Filter sources when search query changes
   useEffect(() => {
     if (!debouncedSearchQuery) {
-      setFilteredSources(allSources)
-      setIsSearching(false)
-      return
+      setFilteredSources(allSources);
+      setIsSearching(false);
+      return;
     }
 
-    performSearch()
-  }, [debouncedSearchQuery, allSources, performSearch])
+    performSearch();
+  }, [debouncedSearchQuery, allSources, performSearch]);
 
   const handleToggleSource = (sourceId: string) => {
-    setSelectedSourceIds(prev =>
+    setSelectedSourceIds((prev) =>
       prev.includes(sourceId)
-        ? prev.filter(id => id !== sourceId)
-        : [...prev, sourceId]
-    )
-  }
+        ? prev.filter((id) => id !== sourceId)
+        : [...prev, sourceId],
+    );
+  };
 
   const handleAddSelected = async () => {
-    if (selectedSourceIds.length === 0) return
+    if (selectedSourceIds.length === 0) return;
 
     try {
       await addSources.mutateAsync({
         notebookId,
         sourceIds: selectedSourceIds,
-      })
+      });
 
       // Reset state
-      setSelectedSourceIds([])
-      setSearchQuery('')
-      onOpenChange(false)
-      onSuccess?.()
+      setSelectedSourceIds([]);
+      setSearchQuery("");
+      onOpenChange(false);
+      onSuccess?.();
     } catch (error) {
       // Error handled by the hook's onError
-      console.error('Error adding sources:', error)
+      console.error("Error adding sources:", error);
     }
-  }
+  };
 
   const getSourceIcon = (source: SourceListResponse) => {
     // Derive type from asset
     if (source.asset?.url) {
-      return <LinkIcon className="h-4 w-4" />
+      return <LinkIcon className="h-4 w-4" />;
     }
     if (source.asset?.file_path) {
-      return <Upload className="h-4 w-4" />
+      return <Upload className="h-4 w-4" />;
     }
-    return <FileText className="h-4 w-4" />
-  }
+    return <FileText className="h-4 w-4" />;
+  };
 
   const formatDate = (dateString: string) => {
     try {
-      return new Date(dateString).toLocaleDateString()
+      return new Date(dateString).toLocaleDateString();
     } catch {
-      return ''
+      return "";
     }
-  }
+  };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -188,9 +197,7 @@ export function AddExistingSourceDialog({
             <Link2 className="h-5 w-5" />
             {t.sources.addExistingTitle}
           </DialogTitle>
-          <DialogDescription>
-            {t.sources.addExistingDesc}
-          </DialogDescription>
+          <DialogDescription>{t.sources.addExistingDesc}</DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4 flex-1 overflow-hidden flex flex-col">
@@ -223,14 +230,16 @@ export function AddExistingSourceDialog({
             ) : (
               <div className="space-y-2 p-4">
                 {filteredSources.map((source) => {
-                  const isAlreadyLinked = currentSourceIds.has(source.id)
-                  const isSelected = selectedSourceIds.includes(source.id)
+                  const isAlreadyLinked = currentSourceIds.has(source.id);
+                  const isSelected = selectedSourceIds.includes(source.id);
 
                   return (
                     <div
                       key={source.id}
                       className={`flex items-start gap-3 p-3 rounded-lg border transition-colors min-w-0 ${
-                        isSelected ? 'bg-accent border-accent-foreground/20' : 'hover:bg-accent/50'
+                        isSelected
+                          ? "bg-accent border-accent-foreground/20"
+                          : "hover:bg-accent/50"
                       }`}
                     >
                       <Checkbox
@@ -248,17 +257,23 @@ export function AddExistingSourceDialog({
                             {source.title}
                           </h4>
                           {isAlreadyLinked && (
-                            <Badge variant="secondary" className="text-xs shrink-0">
+                            <Badge
+                              variant="secondary"
+                              className="text-xs shrink-0"
+                            >
                               {t.common.linked}
                             </Badge>
                           )}
                         </div>
                         <p className="text-xs text-muted-foreground truncate">
-                          {t.sources.added.replace('{date}', formatDate(source.created))}
+                          {t.sources.added.replace(
+                            "{date}",
+                            formatDate(source.created),
+                          )}
                         </p>
                       </div>
                     </div>
-                  )
+                  );
                 })}
               </div>
             )}
@@ -274,7 +289,10 @@ export function AddExistingSourceDialog({
           {/* Selection Summary */}
           {selectedSourceIds.length > 0 && (
             <div className="text-sm text-muted-foreground">
-              {t.sources.selectedCount.replace('{count}', selectedSourceIds.length.toString())}
+              {t.sources.selectedCount.replace(
+                "{count}",
+                selectedSourceIds.length.toString(),
+              )}
             </div>
           )}
         </div>
@@ -303,5 +321,5 @@ export function AddExistingSourceDialog({
         </DialogFooter>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

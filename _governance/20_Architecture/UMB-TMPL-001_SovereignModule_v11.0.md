@@ -1,4 +1,5 @@
 # UMB-TMPL-001_SovereignModule_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-TMPL-001-SOVEREIGNMODULE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-TMPL-001_SovereignModule_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                         | Description       |
+| :------------------ | :-------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-TMPL-001-SOVEREIGNMODULE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-TMPL-001_SovereignModule_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                             | The Standard.     |
+| **Domain**          | `GVRN`                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                 | The Network.      |
 
 ---
+
 UIP: UMB-TMPL-001
 Title: Master Sovereign Module Template
-Source: 
-  - [LEGACY_SOURCE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Templates/SELT_v7.0_Templates_Trinity.md)
-Description: >
+Source:
+
+- [LEGACY_SOURCE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Templates/SELT_v7.0_Templates_Trinity.md)
+  Description: >
   The definitive, Sovereign-class template for forging Universal Module Blueprints (UMB). Unified v11.0 presentation with v7.0 Celestial Chart depth.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769339100
-Tags: 
-  - #Template
-  - #UMB
-  - #Forge
-  - #Standard
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769339100
+  Tags:
+- #Template
+- #UMB
+- #Forge
+- #Standard
+
 ---
 
 > [!IMPORTANT]

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -33,7 +32,9 @@ class ChunkExecutor:
         futures = {}
         results = {}
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as pool:
+        with concurrent.futures.ThreadPoolExecutor(
+            max_workers=self.max_workers
+        ) as pool:
             for task in layer:
                 system = task.system
 

@@ -39,7 +39,12 @@ def test_weaver(target: str) -> None:
     # Extract final summary line
     summary_line = ""
     for line in reversed(lines):
-        if "passed" in line or "failed" in line or "error" in line or "no tests ran" in line:
+        if (
+            "passed" in line
+            or "failed" in line
+            or "error" in line
+            or "no tests ran" in line
+        ):
             summary_line = line.strip()
             break
 
@@ -58,8 +63,12 @@ def test_weaver(target: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Test Weaver — Coherence Verification Engine")
-    parser.add_argument("target", nargs="?", default=".", help="Directory to test (default: cwd).")
+    parser = argparse.ArgumentParser(
+        description="Test Weaver — Coherence Verification Engine"
+    )
+    parser.add_argument(
+        "target", nargs="?", default=".", help="Directory to test (default: cwd)."
+    )
     args = parser.parse_args()
     test_weaver(os.path.abspath(args.target))
 

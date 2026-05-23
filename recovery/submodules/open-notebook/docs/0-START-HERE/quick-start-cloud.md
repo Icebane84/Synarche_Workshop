@@ -9,6 +9,7 @@
 ---
 
 # quick-start-cloud.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-QUICK-START-CLOUD-001` | The Sovereign ID. |
-| **Official Name** | `quick-start-cloud.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-QUICK-START-CLOUD-001`  | The Sovereign ID. |
+| **Official Name** | `quick-start-cloud.md`        | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -52,6 +48,7 @@ Wait 15-20 seconds for services to start.
 ## Step 3: Access Open Notebook (instant)
 
 Open your browser:
+
 ```
 http://localhost:8502
 ```
@@ -66,13 +63,13 @@ You should see the Open Notebook interface!
 2. Navigate to **Models**
 3. Select your provider's model:
 
-| Provider | Recommended Model | Notes |
-|----------|-------------------|-------|
-| **OpenRouter** | `anthropic/claude-3.5-sonnet` | Access 100+ models |
-| **Anthropic** | `claude-3-5-sonnet-latest` | Best reasoning |
-| **Google** | `gemini-2.0-flash` | Large context, fast |
-| **Groq** | `llama-3.3-70b-versatile` | Ultra-fast |
-| **Mistral** | `mistral-large-latest` | Strong European option |
+| Provider       | Recommended Model             | Notes                  |
+| -------------- | ----------------------------- | ---------------------- |
+| **OpenRouter** | `anthropic/claude-3.5-sonnet` | Access 100+ models     |
+| **Anthropic**  | `claude-3-5-sonnet-latest`    | Best reasoning         |
+| **Google**     | `gemini-2.0-flash`            | Large context, fast    |
+| **Groq**       | `llama-3.3-70b-versatile`     | Ultra-fast             |
+| **Mistral**    | `mistral-large-latest`        | Strong European option |
 
 4. Click **Save**
 
@@ -110,14 +107,14 @@ You should see the Open Notebook interface!
 
 ## Provider Comparison
 
-| Provider | Speed | Quality | Context | Cost |
-|----------|-------|---------|---------|------|
-| **OpenRouter** | Varies | Varies | Varies | Varies (100+ models) |
-| **Anthropic** | Medium | Excellent | 200K | $$$ |
-| **Google** | Fast | Very Good | 1M+ | $$ |
-| **Groq** | Ultra-fast | Good | 128K | $ (free tier) |
-| **Mistral** | Fast | Good | 128K | $$ |
-| **DeepSeek** | Medium | Very Good | 64K | $ |
+| Provider       | Speed      | Quality   | Context | Cost                 |
+| -------------- | ---------- | --------- | ------- | -------------------- |
+| **OpenRouter** | Varies     | Varies    | Varies  | Varies (100+ models) |
+| **Anthropic**  | Medium     | Excellent | 200K    | $$$                  |
+| **Google**     | Fast       | Very Good | 1M+     | $$                   |
+| **Groq**       | Ultra-fast | Good      | 128K    | $ (free tier)        |
+| **Mistral**    | Fast       | Good      | 128K    | $$                   |
+| **DeepSeek**   | Medium     | Very Good | 64K     | $                    |
 
 ---
 
@@ -165,12 +162,12 @@ docker compose restart  # Restart everything
 
 Approximate costs per 1K tokens:
 
-| Provider | Input | Output |
-|----------|-------|--------|
-| Anthropic (Sonnet) | $0.003 | $0.015 |
-| Google (Flash) | $0.0001 | $0.0004 |
-| Groq (Llama 70B) | Free tier available | - |
-| Mistral (Large) | $0.002 | $0.006 |
+| Provider           | Input               | Output  |
+| ------------------ | ------------------- | ------- |
+| Anthropic (Sonnet) | $0.003              | $0.015  |
+| Google (Flash)     | $0.0001             | $0.0004 |
+| Groq (Llama 70B)   | Free tier available | -       |
+| Mistral (Large)    | $0.002              | $0.006  |
 
 Check provider websites for current pricing.
 

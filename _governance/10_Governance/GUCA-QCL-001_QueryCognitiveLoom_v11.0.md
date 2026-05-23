@@ -1,4 +1,5 @@
 # GUCA-QCL-001_QueryCognitiveLoom_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-QCL-001-QUERYCOGNITIVELOOM-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-QCL-001_QueryCognitiveLoom_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                            | Description       |
+| :------------------ | :----------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-QCL-001-QUERYCOGNITIVELOOM-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-QCL-001_QueryCognitiveLoom_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                | The Standard.     |
+| **Domain**          | `GVRN`                                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                       | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GUCA-QCL-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Command` |
-| **Classification** | `Comet` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-18` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0, Core` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `GUCA-QCL-001`          |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Command`               |
+| **Classification** | `Comet`                 |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-18`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0, Core` |
+
 ---
 
 # **GUCA-QCL-001: Query Cognitive Loom (CMD: QCL)**
@@ -72,9 +76,11 @@ The **Query Cognitive Loom (QCL)** command is a natural language conceptual quer
 ### **II. Command Definition**
 
 #### **2.1. Overview**
+
 Unlike a keyword search, `QCL` ingests a complex question, identifies the relevant nodes and latent relations in the `UMB-LOOM-001`, and formulates a coherent, auditable answer.
 
 #### **2.2. Command Syntax**
+
 `CMD: QCL --query:[Natural_Language_Query] --depth:[1-5] --format:[Summary|DeepDive]`
 
 ### **III. Operational Flow**

@@ -35,10 +35,10 @@ All architectural constants reside in the `GVRN.Standards.json` registry.
 - **Method**: Static JSON Import (bundled at build-time).
 - **Import Syntax**:
 
-    ```typescript
-    import * as standards from '../../../_governance/13_Standardization/GVRN.Standards.json';
-    export const SOVEREIGN_ID_REGEX = new RegExp(standards.regex.SOVEREIGN_ID);
-    ```
+  ```typescript
+  import * as standards from "../../../_governance/13_Standardization/GVRN.Standards.json";
+  export const SOVEREIGN_ID_REGEX = new RegExp(standards.regex.SOVEREIGN_ID);
+  ```
 
 - **Rule**: If constants change, you MUST run the `compile` task to propagate the static changes to the `out/`
   directory.
@@ -48,10 +48,10 @@ All architectural constants reside in the `GVRN.Standards.json` registry.
 - **Method**: Dynamic standard loader.
 - **Import Syntax**:
 
-    ```python
-    from enums import STANDARDS, SOVEREIGN_ID_REGEX
-    # Internally uses load_standards() to ingest the JSON
-    ```
+  ```python
+  from enums import STANDARDS, SOVEREIGN_ID_REGEX
+  # Internally uses load_standards() to ingest the JSON
+  ```
 
 - **Rule**: If constants change, the Python layer will pick them up on the next execution (no re-compile needed).
 

@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -63,7 +62,7 @@ with transformations_tab:
             "No transformation created yet. Click 'Create new transformation' to get started."
         )
     else:
-        for idx, transformation in enumerate(st.session_state.transformations):
+        for _idx, transformation in enumerate(st.session_state.transformations):
             transform_expander = f"**{transformation.name}**" + (
                 " - default" if transformation.apply_default else ""
             )

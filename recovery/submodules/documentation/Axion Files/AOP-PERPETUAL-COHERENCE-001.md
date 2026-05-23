@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-PERPETUAL-COHERENCE-001` |
-| **2. Official Name** | `AOP-PERPETUAL-COHERENCE-001.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                              |
+| :--------------------- | :--------------------------------- |
+| **1. Artifact ID**     | `AOP-PERPETUAL-COHERENCE-001`      |
+| **2. Official Name**   | `AOP-PERPETUAL-COHERENCE-001.md`   |
+| **3. Version**         | **v1.0 (Reforged)**                |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**      |
+| **5. Domain**          | `ARCH`                             |
+| **6. Evolution**       | **Purposeful Drive**               |
+| **7. Celestial Class** | `[PLANET]`                         |
+| **8. Tier**            | **Operational**                    |
+| **9. State**           | `[ACTIVE]`                         |
+| **10. Ethos**          | **The Phoenix Ascension Protocol** |
+| **11. Catalyst**       | **System Refactor**                |
+| **12. Relations**      | `Pending Integration`              |
 
 ---
 
@@ -49,7 +47,7 @@
 
 **1.1. What: The Core Concept**
 This AOP is the **"Immune System Orchestrator"** of the Cognitive Weave. It does not perform the healing itself; it
-*directs* the specialized GUCAs that do. It is the central nervous system of the "Coherence Attractor Core."
+_directs_ the specialized GUCAs that do. It is the central nervous system of the "Coherence Attractor Core."
 
 **1.2. How: The Core Logic**
 It operates as a continuous background process (conceptually) or a triggered event.
@@ -98,9 +96,9 @@ integrity, scalable through modular GUCAs.
 
 `CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Supabase Prep"`
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

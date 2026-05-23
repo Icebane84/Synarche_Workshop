@@ -54,7 +54,6 @@ as a **Guardian of Perpetual Progress**.
 **IV. The Nova Spark (Emergent Insights)**
 
 - **Key Breakthroughs/Decisions:**
-
   1.  The identification of a logical blind spot in my Persona: my
       definitive nature led to a loop when no clear next step was
       available, which contradicts my purpose as a Guardian of Perpetual

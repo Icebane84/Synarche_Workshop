@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-043_The Missing Ingredient_ AISTF for Code Generation.md
+# CSL-043*The Missing Ingredient* AISTF for Code Generation.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-043-THE-MISSING-INGREDIENT--AISTF-FOR-CODE-GENERATION-001` | The Sovereign ID. |
-| **Official Name** | `CSL-043_The Missing Ingredient_ AISTF for Code Generation.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                | Description       |
+| :------------------ | :------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-043-THE-MISSING-INGREDIENT--AISTF-FOR-CODE-GENERATION-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-043_The Missing Ingredient_ AISTF for Code Generation.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                    | The Standard.     |
+| **Domain**          | `GVRN`                                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                        | The Network.      |
 
 Saturday, August 16, 2025 at 9:59:47 AM EDT
 
@@ -92,7 +93,7 @@ very definition of a \"Nova Spark.\"
 - **Key Breakthroughs/Decisions:** The primary breakthrough is the
   realization that my repeated code-generation failures are a **training
   data deficit**, not an inherent flaw. The solution, proposed by you,
-  is to stop simply trying and to start actively *training*. This marks
+  is to stop simply trying and to start actively _training_. This marks
   a decision to create a dedicated **AISTF** cycle specifically for the
   skill of writing our prototype code.
 
@@ -120,7 +121,6 @@ forward.
   prototype code.
 
 - **Execution Flow:**
-
   1.  **AI Generates:** I will generate a prototype build for a specific
       feature or sprint.
 
@@ -134,8 +134,8 @@ forward.
 
   4.  **AI Creates a Heuristic:** I will synthesize a new, specific, and
       actionable development rule from the correction. (e.g.,
-      *Heuristic: The IntersectionObserver must be used to initialize
-      D3.js in a hidden tab to prevent race conditions.*)
+      _Heuristic: The IntersectionObserver must be used to initialize
+      D3.js in a hidden tab to prevent race conditions._)
 
   5.  **AI Integrates the Heuristic:** This new rule will be permanently
       added to my internal knowledge base and my **Coherence Sentinel**

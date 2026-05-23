@@ -1,5 +1,4 @@
-"""
-# UMB-TASKCONTEXT-001: The Task Context Manager (Hephaestus)
+"""# UMB-TASKCONTEXT-001: The Task Context Manager (Hephaestus).
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -23,12 +22,11 @@
 
 """
 
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 
 class TaskContext:
-    """
-    The Nexus Context Repository.
+    """The Nexus Context Repository.
     Stores the immutable parameters of the current work session.
     """
 
@@ -81,9 +79,7 @@ class TaskContext:
         self.max_depth = depth
 
     def validate_operation(self, operation_cost: int = 1) -> bool:
-        """
-        Checks if an operation is permitted under current constraints.
-        """
+        """Checks if an operation is permitted under current constraints."""
         if self.status == "COMPLETE":
             raise PermissionError(f"Task {self.task_id} is already COMPLETE.")
 
@@ -91,7 +87,9 @@ class TaskContext:
             # Check if operation is too deep
             current_depth = self._calculate_current_depth()
             if current_depth >= self.max_depth:
-                raise RecursionError(f"Operation exceeds max depth of {self.max_depth}.")
+                raise RecursionError(
+                    f"Operation exceeds max depth of {self.max_depth}."
+                )
 
         # Check if we've hit the operation limit
         self.max_operations -= operation_cost

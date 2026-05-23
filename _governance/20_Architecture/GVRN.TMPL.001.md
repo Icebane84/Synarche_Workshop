@@ -1,4 +1,5 @@
 # AOP-TMPL-001_SovereignProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.TMPL.001` | The Sovereign ID. |
-| **Official Name** | `AOP-TMPL-001_SovereignProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                     | Description       |
+| :------------------ | :---------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.TMPL.001`                           | The Sovereign ID. |
+| **Official Name**   | `AOP-TMPL-001_SovereignProtocol_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                         | The Standard.     |
+| **Domain**          | `GVRN`                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
 
 ---
+
 UIP: AOP-TMPL-001
 Title: Master Sovereign Protocol Template
-Source: 
-  - [LEGACY_SOURCE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Templates/SELT_v7.0_Templates_Trinity.md)
-Description: >
+Source:
+
+- [LEGACY_SOURCE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Templates/SELT_v7.0_Templates_Trinity.md)
+  Description: >
   The definitive, Sovereign-class template for forging Operational Playbooks (AOP). Unified v11.0 workflow with v7.0 Skill/Skill-Tree depth.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769339200
-Tags: 
-  - #Template
-  - #AOP
-  - #Protocol
-  - #Standard
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769339200
+  Tags:
+- #Template
+- #AOP
+- #Protocol
+- #Standard
+
 ---
 
 > [!IMPORTANT]
@@ -61,7 +65,7 @@ Tags:
 
 | Field               | Value                                             |
 | :------------------ | :------------------------------------------------ |
-| **Artifact ID** | `GVRN.TMPL.001`                                     |
+| **Artifact ID**     | `GVRN.TMPL.001`                                   |
 | **Creation Date**   | `YYYY-MM-DD`                                      |
 | **Canonical Path**  | `[PHOENIX_PROTOCOL_LIBRARY]/Library/2_Protocols/` |
 | **Parent Artifact** | `[Link to Module/UMB]`                            |

@@ -58,22 +58,22 @@ The command returns a structured JSON object:
 
 ```json
 {
-    "target": "Artifact_ID",
-    "timestamp": "ISO_8601",
-    "map_i_cs_score": "Integer (0-10)",
-    "classification": "Diamond | Obsidian | Slag",
-    "pillars": {
-        "1_intent": "PASS/FAIL",
-        "2_rigor": "PASS/FAIL",
-        "3_gravity": "PASS/FAIL",
-        "4_void_cut": "PASS/FAIL",
-        "5_voice": "PASS/FAIL",
-        "6_fidelity": "PASS/FAIL",
-        "7_utility": "PASS/FAIL",
-        "8_record": "PASS/FAIL",
-        "9_horizon": "PASS/FAIL",
-        "10_recursion": "PASS/FAIL"
-    }
+  "target": "Artifact_ID",
+  "timestamp": "ISO_8601",
+  "map_i_cs_score": "Integer (0-10)",
+  "classification": "Diamond | Obsidian | Slag",
+  "pillars": {
+    "1_intent": "PASS/FAIL",
+    "2_rigor": "PASS/FAIL",
+    "3_gravity": "PASS/FAIL",
+    "4_void_cut": "PASS/FAIL",
+    "5_voice": "PASS/FAIL",
+    "6_fidelity": "PASS/FAIL",
+    "7_utility": "PASS/FAIL",
+    "8_record": "PASS/FAIL",
+    "9_horizon": "PASS/FAIL",
+    "10_recursion": "PASS/FAIL"
+  }
 }
 ```
 

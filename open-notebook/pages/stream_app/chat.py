@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -75,7 +74,7 @@ def execute_chat(txt_input, context, current_session):
     return result
 
 
-def chat_sidebar(current_notebook: Notebook, current_session: ChatSession):
+def chat_sidebar(current_notebook: Notebook, current_session: ChatSession) -> None:
     context = build_context(notebook_id=current_notebook.id)
     tokens = token_count(
         str(context) + str(st.session_state[current_session.id]["messages"])
@@ -90,7 +89,7 @@ def chat_sidebar(current_notebook: Notebook, current_session: ChatSession):
                 episode_profiles = episode_profiles_service.get_all_episode_profiles()
                 episode_profile_names = [ep.name for ep in episode_profiles]
             except Exception as e:
-                st.error(f"Failed to load episode profiles: {str(e)}")
+                st.error(f"Failed to load episode profiles: {e!s}")
                 episode_profiles = []
                 episode_profile_names = []
 
@@ -98,7 +97,9 @@ def chat_sidebar(current_notebook: Notebook, current_session: ChatSession):
                 st.warning(
                     "No episode profiles found. Please create profiles in the Podcast Profiles tab first."
                 )
-                st.page_link("pages/5_🎙️_Podcasts.py", label="🎙️ Go to Podcast Profiles")
+                st.page_link(
+                    "pages/5_🎙️_Podcasts.py", label="🎙️ Go to Podcast Profiles"
+                )
             else:
                 # Episode Profile selection
                 selected_episode_profile = st.selectbox(
@@ -142,14 +143,18 @@ def chat_sidebar(current_notebook: Notebook, current_session: ChatSession):
                                     async def generate_podcast():
                                         return await PodcastService.submit_generation_job(
                                             episode_profile_name=selected_episode_profile,
-                                            speaker_profile_name=selected_profile_obj.speaker_config
-                                            if selected_profile_obj
-                                            else "",
+                                            speaker_profile_name=(
+                                                selected_profile_obj.speaker_config
+                                                if selected_profile_obj
+                                                else ""
+                                            ),
                                             episode_name=episode_name.strip(),
                                             content=str(context),
-                                            briefing_suffix=instructions.strip()
-                                            if instructions.strip()
-                                            else None,
+                                            briefing_suffix=(
+                                                instructions.strip()
+                                                if instructions.strip()
+                                                else None
+                                            ),
                                             notebook_id=str(current_notebook.id),
                                         )
 
@@ -165,8 +170,8 @@ def chat_sidebar(current_notebook: Notebook, current_session: ChatSession):
                                         )
 
                             except Exception as e:
-                                logger.error(f"Error generating podcast: {str(e)}")
-                                st.error(f"Error generating podcast: {str(e)}")
+                                logger.error(f"Error generating podcast: {e!s}")
+                                st.error(f"Error generating podcast: {e!s}")
 
             # Navigation link
             st.divider()
@@ -214,9 +219,9 @@ def chat_sidebar(current_notebook: Notebook, current_session: ChatSession):
                         f"{session.title} - {humanize.naturaltime(session.updated)}"
                     )
                     if st.button(label="Load", key=f"load_session_{session.id}"):
-                        st.session_state[current_notebook.id]["active_session"] = (
-                            session.id
-                        )
+                        st.session_state[current_notebook.id][
+                            "active_session"
+                        ] = session.id
                         st.rerun()
         with st.container(border=True):
             request = st.chat_input("Enter your question")

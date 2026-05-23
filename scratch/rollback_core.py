@@ -1,14 +1,15 @@
-"""
-Artifact ID: CORE-FDE-ROLLBACK-013
+"""Artifact ID: CORE-FDE-ROLLBACK-013
 Ethos: Time is a Shallow Pointer.
 """
+
+
 class SnapshotBuffer:
     def __init__(self, size=60):
         self.buffer = {}
         self.size = size
 
     def save(self, frame, world):
-        # FDE Upgraded: We no longer deepcopy the world. 
+        # FDE Upgraded: We no longer deepcopy the world.
         # We ask the world for its optimized, shallow-pointer dictionary.
         self.buffer[frame] = world.snapshot()
 
@@ -21,6 +22,7 @@ class SnapshotBuffer:
             raise RuntimeError(f"FDE Violation: Snapshot {frame} missing from buffer.")
         # Return the dictionary of pointers. No deepcopy needed.
         return self.buffer[frame]
+
 
 class RollbackEngine:
     # ... (init and on_input remain the same) ...

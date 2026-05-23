@@ -16,19 +16,19 @@ This document outlines the Cognitive Modality Fusion Protocol (AOP-CMF-001), a f
 
 # 2\. Objectives
 
-* To define the principles and procedures for effective cognitive modality fusion, aligning with the **Principle of Definitive Meaning** from the \[Master Glossary PPL\]\[4\].  
-* To establish a consistent methodology for data acquisition, processing, and integration from multiple sources, contributing to **Architectural Coherence** as described in the \[Research Operation Blueprint: Multi-Domain Lexicon Synthesis\]\[3\].  
-* To ensure the reliability and validity of fused cognitive outputs, supporting the creation of a **Shared Reality** as detailed in \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\].  
-* To provide guidelines for the development and implementation of systems utilizing AOP-CMF-001.
+- To define the principles and procedures for effective cognitive modality fusion, aligning with the **Principle of Definitive Meaning** from the \[Master Glossary PPL\]\[4\].
+- To establish a consistent methodology for data acquisition, processing, and integration from multiple sources, contributing to **Architectural Coherence** as described in the \[Research Operation Blueprint: Multi-Domain Lexicon Synthesis\]\[3\].
+- To ensure the reliability and validity of fused cognitive outputs, supporting the creation of a **Shared Reality** as detailed in \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\].
+- To provide guidelines for the development and implementation of systems utilizing AOP-CMF-001.
 
 # 3\. Definitions
 
-| Term | Definition | Cross-Reference |
-| :---- | :---- | :---- |
-| Cognitive Modality | A distinct channel or method through which information is perceived, processed, or expressed (e.g., visual, auditory, textual, haptic). This aligns with the concept of diverse "knowledge domains" outlined in the \[Research Operation Blueprint: Multi-Domain Lexicon Synthesis\]\[3\]. | \[3\] |
-| Fusion | The process of combining data or information from multiple sources to achieve a more accurate, complete, or reliable representation than could be achieved by using individual sources alone. This process contributes to "Functional Coherence" within the AI's understanding, as described in the \[Master Glossary PPL\]\[4\], and supports the goal of eliminating "conceptual ambiguity" from the \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\]. | \[2\], \[4\] |
-| Fusion Algorithm | A computational method used to combine and integrate data from different cognitive modalities. These algorithms are critical components of the "Coherent Synthesis Engine" mentioned in \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\], working to produce "high-fidelity data." | \[2\] |
-| Contextual Information | Data that provides background or surrounding circumstances, influencing the interpretation of other information. The effective use of contextual information is crucial for generating "Contextual Distillates" and "Conceptual Anchors" as discussed in the \[Master Glossary PPL\]\[4\], forming the "fertile ground" for emergent insights. It is distinct from raw data, embodying aspects of "Heritable Context" to ensure accurate interpretation throughout an artifact's lifecycle. | \[4\] |
+| Term                   | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Cross-Reference |
+| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------- |
+| Cognitive Modality     | A distinct channel or method through which information is perceived, processed, or expressed (e.g., visual, auditory, textual, haptic). This aligns with the concept of diverse "knowledge domains" outlined in the \[Research Operation Blueprint: Multi-Domain Lexicon Synthesis\]\[3\].                                                                                                                                                                                                  | \[3\]           |
+| Fusion                 | The process of combining data or information from multiple sources to achieve a more accurate, complete, or reliable representation than could be achieved by using individual sources alone. This process contributes to "Functional Coherence" within the AI's understanding, as described in the \[Master Glossary PPL\]\[4\], and supports the goal of eliminating "conceptual ambiguity" from the \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\].      | \[2\], \[4\]    |
+| Fusion Algorithm       | A computational method used to combine and integrate data from different cognitive modalities. These algorithms are critical components of the "Coherent Synthesis Engine" mentioned in \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\], working to produce "high-fidelity data."                                                                                                                                                                            | \[2\]           |
+| Contextual Information | Data that provides background or surrounding circumstances, influencing the interpretation of other information. The effective use of contextual information is crucial for generating "Contextual Distillates" and "Conceptual Anchors" as discussed in the \[Master Glossary PPL\]\[4\], forming the "fertile ground" for emergent insights. It is distinct from raw data, embodying aspects of "Heritable Context" to ensure accurate interpretation throughout an artifact's lifecycle. | \[4\]           |
 
 # 4\. Protocol Stages
 
@@ -46,9 +46,9 @@ This stage focuses on acquiring data from each identified modality and performin
 
 Based on the nature of the data and the objectives of the fusion, an appropriate fusion strategy will be selected. This may include:
 
-* **Early Fusion:** Data is combined at a raw or low-level feature stage.  
-* **Late Fusion:** Decisions or interpretations from individual modalities are combined.  
-* **Hybrid Fusion:** A combination of early and late fusion techniques.
+- **Early Fusion:** Data is combined at a raw or low-level feature stage.
+- **Late Fusion:** Decisions or interpretations from individual modalities are combined.
+- **Hybrid Fusion:** A combination of early and late fusion techniques.
 
 The selection of a strategy considers the "Principle of Conceptual Signature" from the \[Research Operation Blueprint: Multi-Domain Lexicon Synthesis\]\[3\], recognizing that different modalities may have analogous but distinct representations.
 
@@ -90,8 +90,7 @@ Future enhancements to this protocol may include the integration of new cognitiv
 
 ## 8.1. Related Documents
 
-* \[[Master Glossary PPL](https://docs.google.com/document/u/0/d/1CV_QWPdXFCBRUrVPkR17Np4H-Gj1F6ibLd2x-m2bY0k/edit)\]\[4\]  
-* [\[Research Operation Blueprint: Multi-Domain Lexicon Synthesis\]](https://docs.google.com/document/u/0/d/1STabetC6X9M3OjGZMwbn-yHSInu_DnpaL1jBr1WIr6k/edit)\[3\]  
-* \[[Crafting a Shared Reality: The Engine of Unambiguous AI Communication](https://docs.google.com/document/u/0/d/1EUbZRGSCM-qi68jNrcYDebSLVlUTHi_xUafREwaq07A/edit)\]\[2\]  
-* File
-
+- \[[Master Glossary PPL](https://docs.google.com/document/u/0/d/1CV_QWPdXFCBRUrVPkR17Np4H-Gj1F6ibLd2x-m2bY0k/edit)\]\[4\]
+- [\[Research Operation Blueprint: Multi-Domain Lexicon Synthesis\]](https://docs.google.com/document/u/0/d/1STabetC6X9M3OjGZMwbn-yHSInu_DnpaL1jBr1WIr6k/edit)\[3\]
+- \[[Crafting a Shared Reality: The Engine of Unambiguous AI Communication](https://docs.google.com/document/u/0/d/1EUbZRGSCM-qi68jNrcYDebSLVlUTHi_xUafREwaq07A/edit)\]\[2\]
+- File

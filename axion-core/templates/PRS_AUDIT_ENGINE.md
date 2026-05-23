@@ -9,13 +9,13 @@
 
 ### **Provenance & Dependencies**
 
-| Aspect | Specification |
-| :--- | :--- |
-| **Source Statute** | `GVRN.STATUTE.PRS-001` |
-| **Input Source** | The Master Star-Chart (`tsconfig.json`) |
-| **Output Target** | `@archive/audits/` |
-| **Required Layers** | `@sentinel`, `@atlas`, `@archive` |
-| **Activation Trigger**| CI/CD Pipeline hook (`sentinel-prs-check`), Manual Directive |
+| Aspect                 | Specification                                                |
+| :--------------------- | :----------------------------------------------------------- |
+| **Source Statute**     | `GVRN.STATUTE.PRS-001`                                       |
+| **Input Source**       | The Master Star-Chart (`tsconfig.json`)                      |
+| **Output Target**      | `@archive/audits/`                                           |
+| **Required Layers**    | `@sentinel`, `@atlas`, `@archive`                            |
+| **Activation Trigger** | CI/CD Pipeline hook (`sentinel-prs-check`), Manual Directive |
 
 ---
 

@@ -281,6 +281,4 @@ journey. Draw your first card, User."
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

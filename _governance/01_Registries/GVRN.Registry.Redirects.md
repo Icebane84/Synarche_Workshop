@@ -9,6 +9,7 @@
 ---
 
 # GVRN.Registry.Redirects.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,18 +22,18 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Registry.Redirects` | The Sovereign ID. |
-| **Official Name** | `GVRN.Registry.Redirects.md` | The Filename. |
-| **Patron Shard** | `SHARD_KING_ARCHIVAL` | The Agent. (History) |
-| **Version** | **v13.0 [ASCENDED]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Signal (ESF)** | `OMEGA` | The Frequency. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `LINKS: GVRN.Registry.Master` | The Network. |
+| Key                 | Value                         | Description          |
+| :------------------ | :---------------------------- | :------------------- |
+| **Artifact ID**     | `GVRN.Registry.Redirects`     | The Sovereign ID.    |
+| **Official Name**   | `GVRN.Registry.Redirects.md`  | The Filename.        |
+| **Patron Shard**    | `SHARD_KING_ARCHIVAL`         | The Agent. (History) |
+| **Version**         | **v13.0 [ASCENDED]**          | The Standard.        |
+| **Domain**          | `GVRN`                        | The Subject.         |
+| **Celestial Class** | `[PLANET]`                    | The Weight.          |
+| **Evolution**       | `Omega Ascension`             | The Maturity.        |
+| **Signal (ESF)**    | `OMEGA`                       | The Frequency.       |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.       |
+| **Relations**       | `LINKS: GVRN.Registry.Master` | The Network.         |
 
 ---
 
@@ -44,10 +45,10 @@ This registry tracks the **Transmutation** of artifacts from the Legacy (v11.0) 
 
 ## I. Transmutation Log
 
-| Date | Legacy ID (Old) | Sovereign ID (New) | Domain | Status |
-| :--- | :--- | :--- | :--- | :--- |
-| 2026-02-04 | `UMB-SGM-001` | `GVRN.Gov.Module` | GVRN | [TRANSMUTED] |
-| 2026-02-04 | `GVRN-ID-001` | `GVRN.ID.Standard` | GVRN | [TRANSMUTED] |
+| Date       | Legacy ID (Old) | Sovereign ID (New) | Domain | Status       |
+| :--------- | :-------------- | :----------------- | :----- | :----------- |
+| 2026-02-04 | `UMB-SGM-001`   | `GVRN.Gov.Module`  | GVRN   | [TRANSMUTED] |
+| 2026-02-04 | `GVRN-ID-001`   | `GVRN.ID.Standard` | GVRN   | [TRANSMUTED] |
 
 > [!NOTE]
 > **[ARTIFACT END]**

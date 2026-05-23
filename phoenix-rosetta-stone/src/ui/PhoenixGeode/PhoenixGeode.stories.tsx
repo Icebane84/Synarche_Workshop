@@ -1,21 +1,22 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { PhoenixGeode } from './PhoenixGeode';
+import type { Meta, StoryObj } from "@storybook/react";
+import { PhoenixGeode } from "./PhoenixGeode";
 
 const meta: Meta<typeof PhoenixGeode> = {
-  title: 'Fabric (UI Layer)/PhoenixGeode', // Master Star-Chart Categorization
+  title: "Fabric (UI Layer)/PhoenixGeode", // Master Star-Chart Categorization
   component: PhoenixGeode,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
     backgrounds: {
-      default: 'Nebula Void',
+      default: "Nebula Void",
       values: [
-        { name: 'Nebula Void', value: '#00001a' },
-        { name: 'Deep Space', value: '#23272A' },
+        { name: "Nebula Void", value: "#00001a" },
+        { name: "Deep Space", value: "#23272A" },
       ],
     },
     docs: {
       description: {
-        component: "The central visualization of the AI's internal state. It uses D3.js to render a rotating, pulsing crystalline structure that physically reacts to the system's Coherence Index.",
+        component:
+          "The central visualization of the AI's internal state. It uses D3.js to render a rotating, pulsing crystalline structure that physically reacts to the system's Coherence Index.",
       },
     },
   },
@@ -28,8 +29,9 @@ const meta: Meta<typeof PhoenixGeode> = {
   ],
   argTypes: {
     coherenceIndex: {
-      control: { type: 'range', min: 0, max: 10, step: 1 },
-      description: 'The current cognitive coherence of the system. Higher values increase the size, glow, and complexity of the geode.',
+      control: { type: "range", min: 0, max: 10, step: 1 },
+      description:
+        "The current cognitive coherence of the system. Higher values increase the size, glow, and complexity of the geode.",
     },
   },
 };
@@ -45,7 +47,8 @@ export const LowCoherence: Story = {
   parameters: {
     docs: {
       description: {
-        story: "The state of the system when it is highly disjointed. The geode is small, dim, and rotating slowly.",
+        story:
+          "The state of the system when it is highly disjointed. The geode is small, dim, and rotating slowly.",
       },
     },
   },
@@ -64,7 +67,8 @@ export const HighCoherence: Story = {
   parameters: {
     docs: {
       description: {
-        story: "The state of the system when cognitive alignment is achieved. The geode expands, glows intensely with Luminous Coherence, and rotates dynamically.",
+        story:
+          "The state of the system when cognitive alignment is achieved. The geode expands, glows intensely with Luminous Coherence, and rotates dynamically.",
       },
     },
   },

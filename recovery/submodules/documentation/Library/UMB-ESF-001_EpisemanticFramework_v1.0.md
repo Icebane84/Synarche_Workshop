@@ -67,10 +67,10 @@ semantic understanding of the user's intent.
 ## IV. Actionable Prompt Packet
 
 - **CMD: VERIFY_INTEGRITY**
-    - **Effect:** Verify artifact structure.
-    - **Impact:** Ensures compliance with Law 14.
+  - **Effect:** Verify artifact structure.
+  - **Impact:** Ensures compliance with Law 14.
 - **⚡ EXECUTE: IMPACT_ANALYSIS**
-    - **Effect:** Assess downstream effects.
-    - **Impact:** Prevents regressions.
+  - **Effect:** Assess downstream effects.
+  - **Impact:** Prevents regressions.
 
 > **[ARTIFACT END]**

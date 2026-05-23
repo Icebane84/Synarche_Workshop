@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-GVRN-002: Matrix Initializer (Matrix Synchronization)
+"""# TOOL-GVRN-002: Matrix Initializer (Matrix Synchronization).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -132,9 +131,9 @@ def check_tools(tools_dir: str):
                 active = False
 
         if active:
-            print(f"  ✅ STATUS: ONLINE")
+            print("  ✅ STATUS: ONLINE"E")
         else:
-            print(f"  ⚠️ STATUS: DEGRADED (Missing Tools)")
+            print("  ⚠️ STATUS: DEGRADED (Missing Tools)"ls)")
         print("")
 
     print("------------------------------------------------")

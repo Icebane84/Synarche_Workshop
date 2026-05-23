@@ -20,19 +20,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-STRATEGY-ANALYSIS-001` | The Sovereign ID. |
-| **Official Name** | `STRATEGY_ANALYSIS.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-STRATEGY-ANALYSIS-001`  | The Sovereign ID. |
+| **Official Name** | `STRATEGY_ANALYSIS.md`        | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -41,14 +36,14 @@
 1. **Download:** [ollama.com](https://ollama.com)
 2. **Pull Models** (in a new terminal):
 
-    ```powershell
-    ollama pull qwen3
-    ollama pull mxbai-embed-large
-    ```
+   ```powershell
+   ollama pull qwen3
+   ollama pull mxbai-embed-large
+   ```
 
 3. **Update .env**:
-    - Comment out `OPENAI_API_KEY`.
-    - Uncomment `OLLAMA_API_BASE="http://localhost:11434"`.
+   - Comment out `OPENAI_API_KEY`.
+   - Uncomment `OLLAMA_API_BASE="http://localhost:11434"`.
 4. **Restart API Server**.
 5. **Add Models in UI**: Choose provider `ollama` instead of `openai`.
 

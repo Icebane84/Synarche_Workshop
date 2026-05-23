@@ -6,10 +6,10 @@ import globals from "globals";
 import { createRequire } from "node:module";
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import phoenixPlugin from "./eslint-plugin-phoenix/index.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-import phoenixPlugin from "./eslint-plugin-phoenix/index.mjs";
 const require = createRequire(import.meta.url);
 const markdownParser = require("./eslint-plugin-phoenix/markdown-parser.cjs");
 
@@ -28,8 +28,8 @@ export default [
             "**/.ruff_cache/**",
             "**/scratch/**",
             "**/incoming/**",
-            "**/*.d.ts"
-        ]
+            "**/*.d.ts",
+        ],
     },
     {
         files: ["src/**/*.ts", "tools/**/*.js", "tools/**/*.cjs"],
@@ -38,29 +38,32 @@ export default [
             parserOptions: {
                 ecmaVersion: "latest",
                 sourceType: "module",
-                project: "../tsconfig.json",
-                tsconfigRootDir: __dirname,
+                project: "tsconfig.json",
+                tsconfigRootDir: dirname(__dirname),
             },
         },
         plugins: {
             "@typescript-eslint": typescriptEslint,
-            "phoenix": phoenixPlugin
+            phoenix: phoenixPlugin,
         },
         rules: {
             // Core ESLint
             "no-var": "error",
             "prefer-const": "error",
-            "camelcase": ["warn", { "properties": "never" }],
-            "eqeqeq": "error",
+            camelcase: ["warn", { properties: "never" }],
+            eqeqeq: "error",
 
             // TypeScript (Agent Style Guide)
             "@typescript-eslint/no-explicit-any": "error",
-            "@typescript-eslint/explicit-function-return-type": ["warn", {
-                "allowExpressions": true
-            }],
+            "@typescript-eslint/explicit-function-return-type": [
+                "warn",
+                {
+                    allowExpressions: true,
+                },
+            ],
 
             "@typescript-eslint/no-floating-promises": "error",
-            "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+            "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
 
             // Async/Await Safety
             "no-return-await": "off",
@@ -69,8 +72,8 @@ export default [
             // Governance Enforcement (Phoenix Protocol)
             "phoenix/use-phoenix-logger": "error",
             "phoenix/require-artifact-anchor": "error",
-            "phoenix/enforce-sovereign-aliases": "error"
-        }
+            "phoenix/enforce-sovereign-aliases": "error",
+        },
     },
     {
         files: ["**/*.tsx", "**/react-app/**/*.ts"],
@@ -85,27 +88,24 @@ export default [
         plugins: {
             "react-hooks": reactHooks,
             "react-refresh": reactRefresh,
-            "phoenix": phoenixPlugin
+            phoenix: phoenixPlugin,
         },
         rules: {
             ...reactHooks.configs.recommended.rules,
-            'react-refresh/only-export-components': [
-                'warn',
-                { allowConstantExport: true },
-            ],
-            "phoenix/require-artifact-anchor": "error"
-        }
+            "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+            "phoenix/require-artifact-anchor": "error",
+        },
     },
     {
         files: ["**/*.md"],
         languageOptions: {
-            parser: markdownParser
+            parser: markdownParser,
         },
         plugins: {
-            phoenix: phoenixPlugin
+            phoenix: phoenixPlugin,
         },
         rules: {
-            "phoenix/markdownlint": "error"
-        }
-    }
+            "phoenix/markdownlint": "error",
+        },
+    },
 ];

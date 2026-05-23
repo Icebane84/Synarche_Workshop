@@ -9,6 +9,7 @@
 ---
 
 # GUCA-DSA-001.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,38 +22,42 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-DSA-001-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-DSA-001.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-DSA-001-001`       | The Sovereign ID. |
+| **Official Name**   | `GUCA-DSA-001.md`             | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # GUCA-DSA-001: Documentation Suite Architect Architecture
 
 ## I. Universal Identification & Provenance
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `GUCA-DSA-001` |
-| **Title** | `Documentation Suite Architect Architecture` |
-| **Version** | **v11.1** |
-| **Domain** | `SYNT` |
-| **Status** | `[ACTIVE]` |
-| **Governance** | `UMB-SGM-001` |
+
+| Attribute       | Value                                        |
+| :-------------- | :------------------------------------------- |
+| **Artifact ID** | `GUCA-DSA-001`                               |
+| **Title**       | `Documentation Suite Architect Architecture` |
+| **Version**     | **v11.1**                                    |
+| **Domain**      | `SYNT`                                       |
+| **Status**      | `[ACTIVE]`                                   |
+| **Governance**  | `UMB-SGM-001`                                |
 
 ---
 
 ## II. Purpose
+
 Provides definitive syntax for executing the **Documentation Suite Architect (DSA)** command to auto-generate artifact suites.
 
 ## III. Command Syntax
+
 `CMD: DSA [Concept]`
 
 **Logic:**
+
 1.  Initiate `AOP-DSA-001`.
 2.  Trigger `UMB-DSA-001`.
 3.  Generate complete AOP/UMB/GUCA set.

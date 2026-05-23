@@ -63,9 +63,9 @@ Score (MAP-I-CS)** that determines whether an artifact is "Diamond" (Perfect), "
 
 - **Tool:** `GUCA-MAP-001`
 - **Check:**
-    - Is the "Why" stated in one sentence? (Pillar 1)
-    - Are there >2 links? (Pillar 3)
-    - Are "hedging words" absent? (Pillar 5)
+  - Is the "Why" stated in one sentence? (Pillar 1)
+  - Are there >2 links? (Pillar 3)
+  - Are "hedging words" absent? (Pillar 5)
 
 ### **Step 3: Scoring (MAP-I-CS)**
 

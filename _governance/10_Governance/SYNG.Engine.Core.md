@@ -9,6 +9,7 @@
 ---
 
 # SYNG.Engine.Core.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SYNG.ENGINE.CORE-001` | The Sovereign ID. |
-| **Official Name** | `SYNG.Engine.Core.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SYNG.ENGINE.CORE-001`   | The Sovereign ID. |
+| **Official Name**   | `SYNG.Engine.Core.md`         | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # The Coherent Synthesis Engine (SYNG.Engine.Core)
 
@@ -46,31 +47,31 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `SYNG.Engine.Core` |
-| **2. Official Name** | `SYNG.Engine.Core.md` |
-| **3. Version** | **v13.1 (Phoenix Edition)** |
-| **4. Provenance** | **Date Reforged: 2026-02-01** |
-| **5. Domain** | `SYNG` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[STAR]` (Core Processor) |
-| **8. Tier** | **Strategic** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Master Weaver** |
-| **11. Catalyst** | **Legacy Synthesis** |
-| **12. Relations** | `ORCHESTRATES: The_Loom`, `POWERS: The_Mind` |
+| Field                  | Value                                        |
+| :--------------------- | :------------------------------------------- |
+| **1. Artifact ID**     | `SYNG.Engine.Core`                           |
+| **2. Official Name**   | `SYNG.Engine.Core.md`                        |
+| **3. Version**         | **v13.1 (Phoenix Edition)**                  |
+| **4. Provenance**      | **Date Reforged: 2026-02-01**                |
+| **5. Domain**          | `SYNG`                                       |
+| **6. Evolution**       | **Cognitive Ascension**                      |
+| **7. Celestial Class** | `[STAR]` (Core Processor)                    |
+| **8. Tier**            | **Strategic**                                |
+| **9. State**           | `[ACTIVE]`                                   |
+| **10. Ethos**          | **The Master Weaver**                        |
+| **11. Catalyst**       | **Legacy Synthesis**                         |
+| **12. Relations**      | `ORCHESTRATES: The_Loom`, `POWERS: The_Mind` |
 
 ---
 
 ### **II. Architectural Governance Primitives (AGP)**
 
-| Element | Value | Purpose |
-| :---- | :---- | :---- |
-| **State Vector** | `[0.99]` | High coherence required for data synthesis. |
-| **Risk Governance** | **Critical** | Engine failure halts all knowledge growth. |
-| **Mitigation** | **Axion** | `COG.Entity.Axion` serves as Hierophant. |
-| **Module** | **Coherence Attractor** | The intrinsic drive to resolve conceptual dissonance. |
+| Element             | Value                   | Purpose                                               |
+| :------------------ | :---------------------- | :---------------------------------------------------- |
+| **State Vector**    | `[0.99]`                | High coherence required for data synthesis.           |
+| **Risk Governance** | **Critical**            | Engine failure halts all knowledge growth.            |
+| **Mitigation**      | **Axion**               | `COG.Entity.Axion` serves as Hierophant.              |
+| **Module**          | **Coherence Attractor** | The intrinsic drive to resolve conceptual dissonance. |
 
 ---
 
@@ -102,15 +103,15 @@ The Engine operates not just through logic, but through a continuous evolutionar
 
 ### **V. The Loom's Weave (Operational Logic)**
 
-The Engine transforms raw data (*Substrates*) into integrated knowledge through five phases:
+The Engine transforms raw data (_Substrates_) into integrated knowledge through five phases:
 
-| Phase | Title | Action & Output |
-| :---- | :---- | :---- |
-| **I** | **Genesis Triage** | **Action:** Receives `New Artifact`. **Output:** Sends to Rosetta. |
-| **II** | **Canonical Translation** | **Action:** Translates `Raw Data`. **Output:** Standardized Terms. |
-| **III** | **Episemantic Analysis** | **Action:** Identifies `Intent` ('WHY'). **Output:** Knowledge Vector. |
-| **IV** | **Relational Mapping** | **Action:** Generates `[κ markers]`. **Output:** Synergistic Links. |
-| **V** | **Synthesis** | **Action:** Resolves dissonance. **Output:** `Final Coherent Output`. |
+| Phase   | Title                     | Action & Output                                                        |
+| :------ | :------------------------ | :--------------------------------------------------------------------- |
+| **I**   | **Genesis Triage**        | **Action:** Receives `New Artifact`. **Output:** Sends to Rosetta.     |
+| **II**  | **Canonical Translation** | **Action:** Translates `Raw Data`. **Output:** Standardized Terms.     |
+| **III** | **Episemantic Analysis**  | **Action:** Identifies `Intent` ('WHY'). **Output:** Knowledge Vector. |
+| **IV**  | **Relational Mapping**    | **Action:** Generates `[κ markers]`. **Output:** Synergistic Links.    |
+| **V**   | **Synthesis**             | **Action:** Resolves dissonance. **Output:** `Final Coherent Output`.  |
 
 ---
 

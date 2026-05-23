@@ -1,5 +1,4 @@
-"""
-# TOOL-KNIG-002: The Transmutation Engine (Knight's Fixer)
+"""# TOOL-KNIG-002: The Transmutation Engine (Knight's Fixer).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -50,9 +49,7 @@ GVRN-SYNERGY-001, GOVERNS, This tool is governed by the Workshop Synergy.
 
 import argparse
 import logging
-import os
 import re
-import sys
 import textwrap
 from pathlib import Path
 
@@ -164,7 +161,11 @@ class KnightFixer:
         new_lines = []
         for i, line in enumerate(lines):
             if 0 < i < len(lines) - 1:
-                if line.strip() == "" and lines[i - 1].strip().startswith(">") and lines[i + 1].strip().startswith(">"):
+                if (
+                    line.strip() == ""
+                    and lines[i - 1].strip().startswith(">")
+                    and lines[i + 1].strip().startswith(">")
+                ):
                     new_lines.append(">")
                     continue
             new_lines.append(line)
@@ -197,9 +198,15 @@ class KnightFixer:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="The Knight's Fixer: Transmuting entropy to coherence.")
-    parser.add_argument("targets", nargs="*", help="Optional target files or directories.")
-    parser.add_argument("--length", type=int, default=120, help="Max line length (default: 120)")
+    parser = argparse.ArgumentParser(
+        description="The Knight's Fixer: Transmuting entropy to coherence."
+    )
+    parser.add_argument(
+        "targets", nargs="*", help="Optional target files or directories."
+    )
+    parser.add_argument(
+        "--length", type=int, default=120, help="Max line length (default: 120)"
+    )
     parser.add_argument("--dry-run", action="store_true", help="Preview changes.")
     args = parser.parse_args()
 

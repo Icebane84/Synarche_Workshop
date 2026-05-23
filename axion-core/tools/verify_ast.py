@@ -1,5 +1,4 @@
-"""
-# TOOL-SENT-008: Header Hierarchy Validator (Audit Engine)
+"""# TOOL-SENT-008: Header Hierarchy Validator (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -51,13 +50,11 @@ GVRN-SYNERGY-001, GOVERNS, This tool is governed by the Workshop Synergy.
 import argparse
 import os
 import sys
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 
 
 def verify_ast(filepath: str) -> bool:
-    """
-    Checks the header hierarchy of a markdown file.
-    """
+    """Checks the header hierarchy of a markdown file."""
     print(f"\n[VERIFY_AST] Target: {filepath}")
 
     if not os.path.exists(filepath):
@@ -116,7 +113,9 @@ def verify_ast(filepath: str) -> bool:
         if not real_h1:
             print("❌ [FAIL] Standard requires a Title H1 after metadata. None found.")
     elif root_level != 1:
-        print(f"⚠️  [WARN] Document should start with H1 (after possible H6), found H{root_level}.")
+        print(
+            f"⚠️  [WARN] Document should start with H1 (after possible H6), found H{root_level}."
+        )
 
     issues = 0
     prev_level = 0

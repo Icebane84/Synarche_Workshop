@@ -1,11 +1,10 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID** | `FORGE.rpg.crafter.v2`            | The Sovereign ID. |
 | **Official Name** | `rpg_crafter_v2.py`               | The Filename.     |
 | **Version** | **v2.0 [SOVEREIGN]** | The Standard.     |
-| **Ethos** | **Architectural Logic** | The Persona.      |
+| **Ethos** | **Architectural Logic** | The Persona.      |.
 ---
 """
 
@@ -33,27 +32,37 @@ class Sovereign_RPG_Crafter:
             return 10
         return 5  # Default Planet Tier
 
-    def Extract_Artifact_Axiom_Profile(self, File_Content: str) -> dict[str, Any] | None:
+    def Extract_Artifact_Axiom_Profile(
+        self, File_Content: str
+    ) -> dict[str, Any] | None:
         """Parses v16.3 metadata into a structured profile."""
         if "BLK-RPG-001" not in File_Content:
             return None
 
         # Extract Artifact Identification
         Artifact_Name = (
-            re.search(r"\*\*Official Name\*\*\s*\|\s*`(.*?)`", File_Content) or [None, "Unknown_Artifact"]
+            re.search(r"\*\*Official Name\*\*\s*\|\s*`(.*?)`", File_Content)
+            or [None, "Unknown_Artifact"]
         )[1]
 
         # Extract System Slot & Cognitive Load
-        Raw_Slot = (re.search(r"\*\*System Slot:\*\*\s*`\[(.*?)(?:\|.*?)?\]`", File_Content) or [None, "Utility"])[
-            1
-        ].strip()
-        Cognitive_Load = (re.search(r"\*\*Cognitive Load Draw:\*\*\s*`\[(.*?)\]`", File_Content) or [None, "Low"])[
-            1
-        ].strip()
+        Raw_Slot = (
+            re.search(r"\*\*System Slot:\*\*\s*`\[(.*?)(?:\|.*?)?\]`", File_Content)
+            or [None, "Utility"]
+        )[1].strip()
+        Cognitive_Load = (
+            re.search(r"\*\*Cognitive Load Draw:\*\*\s*`\[(.*?)\]`", File_Content)
+            or [None, "Low"]
+        )[1].strip()
 
         # Extract Axiom Stats (The Buffs)
-        Primary_Stat = (re.search(r"\*\*Primary Stat Buff:\*\*\s*`\[(.*?)\]`", File_Content) or [None, "Coherence"])[1]
-        Value_Block = (re.search(r"_Value:_\s*`\[(.*?)\]`", File_Content) or [None, "Planet Tier"])[1]
+        Primary_Stat = (
+            re.search(r"\*\*Primary Stat Buff:\*\*\s*`\[(.*?)\]`", File_Content)
+            or [None, "Coherence"]
+        )[1]
+        Value_Block = (
+            re.search(r"_Value:_\s*`\[(.*?)\]`", File_Content) or [None, "Planet Tier"]
+        )[1]
 
         Axiom_Manifest = {Primary_Stat: self._Calculate_Celestial_Potency(Value_Block)}
 

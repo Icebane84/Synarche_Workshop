@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -27,7 +26,5 @@ class BaseSystem:
         raise NotImplementedError
 
     def compute_chunk(self, world, chunk):
-        """
-        MUST return deterministic delta packet
-        """
+        """MUST return deterministic delta packet."""
         return {"mutations": {}, "structural_migrations": {}}

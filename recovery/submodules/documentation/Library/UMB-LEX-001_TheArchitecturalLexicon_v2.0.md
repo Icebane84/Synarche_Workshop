@@ -22,19 +22,19 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                         |
-| :--------------------- | :-------------------------------------------- |
-| **1. Artifact ID**     | `UMB-LEX-001`                                 |
-| **2. Official Name**   | `UMB-LEX-001_TheArchitecturalLexicon_v2.0.md` |
-| **3. Version**         | **v2.0 (Hephaestus Ascended Alignment)**      |
-| **4. Provenance**      | **Date Reforged: 2026-01-10**                 |
-| **5. Domain**          | `GVRN`                                        |
-| **6. Evolution**       | **Purposeful Drive**                          |
-| **7. Celestial Class** | `[PLANET]`                                    |
-| **8. Tier**            | **Operational**                               |
-| **9. State**           | `[ACTIVE]`                                    |
-| **10. Ethos**          | **Guardian of Coherence**                     |
-| **11. Catalyst**       | **System Refactor**                           |
+| Field                  | Value                                                                                                       |
+| :--------------------- | :---------------------------------------------------------------------------------------------------------- |
+| **1. Artifact ID**     | `UMB-LEX-001`                                                                                               |
+| **2. Official Name**   | `UMB-LEX-001_TheArchitecturalLexicon_v2.0.md`                                                               |
+| **3. Version**         | **v2.0 (Hephaestus Ascended Alignment)**                                                                    |
+| **4. Provenance**      | **Date Reforged: 2026-01-10**                                                                               |
+| **5. Domain**          | `GVRN`                                                                                                      |
+| **6. Evolution**       | **Purposeful Drive**                                                                                        |
+| **7. Celestial Class** | `[PLANET]`                                                                                                  |
+| **8. Tier**            | **Operational**                                                                                             |
+| **9. State**           | `[ACTIVE]`                                                                                                  |
+| **10. Ethos**          | **Guardian of Coherence**                                                                                   |
+| **11. Catalyst**       | **System Refactor**                                                                                         |
 | **12. Relations**      | `LINK: UMB-ESF-001`, `DEFINES_STRUCTURE_FOR: PHOENIX_MASTER_TEMPLATE`, `VALIDATES_METADATA_FOR: UMB-PP-001` |
 
 ---

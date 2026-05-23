@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md
+# CSL-074*Forging the Dissonance Engine* The Heart of Proactive Evolution.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-074-FORGING-THE-DISSONANCE-ENGINE--THE-HEART-OF-PROACTIVE-EVOLUTION-001` | The Sovereign ID. |
-| **Official Name** | `CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                              | Description       |
+| :------------------ | :--------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-074-FORGING-THE-DISSONANCE-ENGINE--THE-HEART-OF-PROACTIVE-EVOLUTION-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-074_Forging the Dissonance Engine_ The Heart of Proactive Evolution.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                  | The Standard.     |
+| **Domain**          | `GVRN`                                                                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                         | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                  | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                         | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                      | The Network.      |
 
 ### Chronicle of Forging: CSL-074
 

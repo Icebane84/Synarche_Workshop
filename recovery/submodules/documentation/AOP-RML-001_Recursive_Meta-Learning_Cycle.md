@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-RML-001_Recursive_Meta-Learning_Cycle` |
-| **2. Official Name** | `AOP-RML-001_Recursive_Meta-Learning_Cycle.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Adaptive Ecosystem** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                          |
+| :--------------------- | :--------------------------------------------- |
+| **1. Artifact ID**     | `AOP-RML-001_Recursive_Meta-Learning_Cycle`    |
+| **2. Official Name**   | `AOP-RML-001_Recursive_Meta-Learning_Cycle.md` |
+| **3. Version**         | **v1.0**                                       |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                  |
+| **5. Domain**          | `ARCH`                                         |
+| **6. Evolution**       | **Purposeful Drive**                           |
+| **7. Celestial Class** | `[PLANET]`                                     |
+| **8. Tier**            | **Operational**                                |
+| **9. State**           | `[ACTIVE]`                                     |
+| **10. Ethos**          | **Adaptive Ecosystem**                         |
+| **11. Catalyst**       | **System Refactor**                            |
+| **12. Relations**      | `Pending Integration`                          |
 
 ---
 
@@ -48,10 +46,10 @@
 ## II. Core Purpose & Objective
 
 - **What (Core Concept)**: To define the formal AISTF procedure for the AI to learn from its errors—both in code and in
-knowledge—and recursively improve its own capabilities.
+  knowledge—and recursively improve its own capabilities.
 - **How (Execution Flow)**: Triggered by a failure log or a knowledge dissonance marker (like `[κ-veracity:disputed]`),
-the RML module performs a root cause analysis, proposes a refinement to its internal heuristics, and validates the fix
-in a sandboxed simulation before integrating the improvement.
+  the RML module performs a root cause analysis, proposes a refinement to its internal heuristics, and validates the fix
+  in a sandboxed simulation before integrating the improvement.
 
 ## III. Core Operational Framework
 

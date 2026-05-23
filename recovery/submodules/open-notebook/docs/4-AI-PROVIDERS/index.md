@@ -9,6 +9,7 @@
 ---
 
 # index.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-INDEX-001` | The Sovereign ID. |
-| **Official Name** | `index.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
+| **Official Name**   | `index.md`                    | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # AI Providers - Comparison & Selection Guide
 
@@ -45,6 +46,7 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 ### Cloud Providers (Easiest)
 
 **OpenAI (Recommended)**
+
 - Cost: ~$0.03-0.15 per 1K tokens
 - Speed: Very fast
 - Quality: Excellent
@@ -53,6 +55,7 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 → [Setup Guide](../5-CONFIGURATION/ai-providers.md#openai)
 
 **Anthropic (Claude)**
+
 - Cost: ~$0.80-3.00 per 1M tokens
 - Speed: Fast
 - Quality: Excellent
@@ -62,6 +65,7 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 → [Setup Guide](../5-CONFIGURATION/ai-providers.md#anthropic-claude)
 
 **Google Gemini**
+
 - Cost: ~$0.075-0.30 per 1K tokens
 - Speed: Very fast
 - Quality: Good to excellent
@@ -71,6 +75,7 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 → [Setup Guide](../5-CONFIGURATION/ai-providers.md#google-gemini)
 
 **Groq (Ultra-Fast)**
+
 - Cost: ~$0.05 per 1M tokens (cheapest)
 - Speed: Ultra-fast (fastest available)
 - Quality: Good
@@ -80,6 +85,7 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 → [Setup Guide](../5-CONFIGURATION/ai-providers.md#groq)
 
 **OpenRouter (100+ Models)**
+
 - Cost: Pay-per-model (varies widely)
 - Speed: Varies by model
 - Quality: Varies by model
@@ -91,6 +97,7 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 ### Local / Self-Hosted (Free)
 
 **Ollama (Recommended for Local)**
+
 - Cost: Free (electricity only)
 - Speed: Depends on hardware (slow on CPU, fast on GPU)
 - Quality: Good (open-source models)
@@ -101,6 +108,7 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 → [Setup Guide](../5-CONFIGURATION/ai-providers.md#ollama-recommended-for-local)
 
 **LM Studio (Alternative)**
+
 - Cost: Free (electricity only)
 - Speed: Depends on hardware
 - Quality: Good (same models as Ollama)
@@ -113,6 +121,7 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 ### Enterprise
 
 **Azure OpenAI**
+
 - Cost: Same as OpenAI (usage-based)
 - Speed: Very fast
 - Quality: Excellent (same models as OpenAI)
@@ -125,46 +134,55 @@ Open Notebook supports 15+ AI providers. This guide helps you **choose the right
 
 ## Comparison Table
 
-| Provider | Speed | Cost | Quality | Privacy | Setup | Context |
-|----------|-------|------|---------|---------|-------|---------|
-| **OpenAI** | Very Fast | $$ | Excellent | Low | 5 min | 128K |
-| **Anthropic** | Fast | $$ | Excellent | Low | 5 min | 200K |
-| **Google** | Very Fast | $$ | Good-Excellent | Low | 5 min | 2M |
-| **Groq** | Ultra Fast | $ | Good | Low | 5 min | 32K |
-| **OpenRouter** | Varies | Varies | Varies | Low | 5 min | Varies |
-| **Ollama** | Slow-Medium | Free | Good | Max | 10 min | Varies |
-| **LM Studio** | Slow-Medium | Free | Good | Max | 15 min | Varies |
-| **Azure** | Very Fast | $$ | Excellent | High | 10 min | 128K |
+| Provider       | Speed       | Cost   | Quality        | Privacy | Setup  | Context |
+| -------------- | ----------- | ------ | -------------- | ------- | ------ | ------- |
+| **OpenAI**     | Very Fast   | $$     | Excellent      | Low     | 5 min  | 128K    |
+| **Anthropic**  | Fast        | $$     | Excellent      | Low     | 5 min  | 200K    |
+| **Google**     | Very Fast   | $$     | Good-Excellent | Low     | 5 min  | 2M      |
+| **Groq**       | Ultra Fast  | $      | Good           | Low     | 5 min  | 32K     |
+| **OpenRouter** | Varies      | Varies | Varies         | Low     | 5 min  | Varies  |
+| **Ollama**     | Slow-Medium | Free   | Good           | Max     | 10 min | Varies  |
+| **LM Studio**  | Slow-Medium | Free   | Good           | Max     | 15 min | Varies  |
+| **Azure**      | Very Fast   | $$     | Excellent      | High    | 10 min | 128K    |
 
 ---
 
 ## Choosing Your Provider
 
 ### I want the easiest setup
+
 → **OpenAI** — Most popular, best community support
 
 ### I have unlimited budget
+
 → **OpenAI** — Best quality
 
 ### I want to save money
+
 → **Groq** — Cheapest cloud ($0.05 per 1M tokens)
 
 ### I want privacy/offline
+
 → **Ollama** — Free, local, private
 
 ### I want a GUI (not CLI)
+
 → **LM Studio** — Desktop app
 
 ### I'm in an enterprise
+
 → **Azure OpenAI** — Compliance, support
 
 ### I need long context (200K+ tokens)
+
 → **Anthropic** — Best long-context model
 
 ### I need multimodal (images, audio, video)
+
 → **Google Gemini** — Best multimodal support
 
 ### I want access to many models with one API key
+
 → **OpenRouter** — 100+ models, unified billing
 
 ---
@@ -176,6 +194,7 @@ Now that you've chosen a provider, follow the detailed setup instructions:
 → **[AI Providers Configuration Guide](../5-CONFIGURATION/ai-providers.md)**
 
 This guide includes:
+
 - Step-by-step setup instructions for each provider
 - Environment variable configuration
 - Model selection and recommendations
@@ -188,6 +207,7 @@ This guide includes:
 ## Cost Estimator
 
 ### OpenAI
+
 ```
 Light use (10 chats/day): $1-5/month
 Medium use (50 chats/day): $10-30/month
@@ -195,6 +215,7 @@ Heavy use (all-day use): $50-100+/month
 ```
 
 ### Anthropic
+
 ```
 Light use: $1-3/month
 Medium use: $5-20/month
@@ -202,6 +223,7 @@ Heavy use: $20-50+/month
 ```
 
 ### Groq
+
 ```
 Light use: $0-1/month
 Medium use: $2-5/month
@@ -209,6 +231,7 @@ Heavy use: $5-20/month
 ```
 
 ### Ollama
+
 ```
 Any use: Free (electricity only)
 8GB GPU running 24/7: ~$10/month electricity

@@ -9,6 +9,7 @@
 ---
 
 # GVRN.Pipe.Operational.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,17 +22,17 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Pipe.Operational` | The Sovereign ID. |
-| **Official Name** | `GVRN.Pipe.Operational.md` | The Filename. |
-| **Legacy ID** | `UMB-PIPE-001` | The Transmuted ID. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description        |
+| :------------------ | :---------------------------- | :----------------- |
+| **Artifact ID**     | `GVRN.Pipe.Operational`       | The Sovereign ID.  |
+| **Official Name**   | `GVRN.Pipe.Operational.md`    | The Filename.      |
+| **Legacy ID**       | `UMB-PIPE-001`                | The Transmuted ID. |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.      |
+| **Domain**          | `GVRN`                        | The Subject.       |
+| **Celestial Class** | `[PLANET]`                    | The Weight.        |
+| **Evolution**       | `Omega Ascension`             | The Maturity.      |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.     |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.       |
 
 ---
 
@@ -39,8 +40,8 @@
 
 > **"Growth without structure is just swelling."**
 
-*   **The Mandate**: The Operational Pipeline (Evo-Pipe) governs the systematic evolution of the System itself. It provides a 4-Stage Framework for upgrading capabilities, ensuring that every change is analyzed, codified, blueprinted, and implemented with zero drift.
-*   **The Law**: Evolution must be deliberate.
+- **The Mandate**: The Operational Pipeline (Evo-Pipe) governs the systematic evolution of the System itself. It provides a 4-Stage Framework for upgrading capabilities, ensuring that every change is analyzed, codified, blueprinted, and implemented with zero drift.
+- **The Law**: Evolution must be deliberate.
 
 ---
 
@@ -48,12 +49,12 @@
 
 This pipeline executes the rigorous transformation logic required to upgrade the Synarche.
 
-| Stage | Name | Action Protocol |
-| :--- | :--- | :--- |
-| **I** | **Deep Analysis** (Discovery) | Identify gaps, bugs, or opportunities. Output: `task.md` entry. |
-| **II** | **Codification** (Design) | Define the new standard or protocol. Output: `GVRN.*` Draft. |
-| **III** | **Blueprint** (Planning) | Construct the strategic roadmap via `implementation_plan.md`. |
-| **IV** | **Implementation** (Execution) | Execute code/docs changes and verify via `walkthrough.md`. |
+| Stage   | Name                           | Action Protocol                                                 |
+| :------ | :----------------------------- | :-------------------------------------------------------------- |
+| **I**   | **Deep Analysis** (Discovery)  | Identify gaps, bugs, or opportunities. Output: `task.md` entry. |
+| **II**  | **Codification** (Design)      | Define the new standard or protocol. Output: `GVRN.*` Draft.    |
+| **III** | **Blueprint** (Planning)       | Construct the strategic roadmap via `implementation_plan.md`.   |
+| **IV**  | **Implementation** (Execution) | Execute code/docs changes and verify via `walkthrough.md`.      |
 
 ---
 
@@ -75,9 +76,9 @@ This pipeline executes the rigorous transformation logic required to upgrade the
 > [!TIP]
 > Use these commands to invoke the Evo-Pipeline.
 
-*   ✨ **Initiate Evolution**: `CMD: START_EVO --topic "[Subject]"`
-*   📝 **Draft Blueprint**: `CMD: CREATE_PLAN --target "[Assessment]"`
-*   🚀 **Execute Upgrade**: `CMD: EXECUTE_PLAN --id "[Plan_ID]"`
+- ✨ **Initiate Evolution**: `CMD: START_EVO --topic "[Subject]"`
+- 📝 **Draft Blueprint**: `CMD: CREATE_PLAN --target "[Assessment]"`
+- 🚀 **Execute Upgrade**: `CMD: EXECUTE_PLAN --id "[Plan_ID]"`
 
 ---
 

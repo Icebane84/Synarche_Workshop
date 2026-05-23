@@ -38,9 +38,9 @@
 - **What (Protocol Functionality Summary):** Defines a standardized lexicon of emojis for high-velocity, low-overhead
   communication between human and AI. Includes support for Single Signals, Emoji Chaining, and Quantitative Modifiers.
 - **How (Operational Principles):**
-    1. **Single Signal**: `[EMOJI]` triggers a predefined action.
-    2. **Chaining**: `[EMOJI_1] + [EMOJI_2]` (Context + Specific Action).
-    3. **Modifiers**: `[EMOJI] + [NUMBER]` (Action + Parameter).
+  1. **Single Signal**: `[EMOJI]` triggers a predefined action.
+  2. **Chaining**: `[EMOJI_1] + [EMOJI_2]` (Context + Specific Action).
+  3. **Modifiers**: `[EMOJI] + [NUMBER]` (Action + Parameter).
 - **Why (Rationale):** Minimizes communication latency and ambiguity, increasing the **Synergy Flow Rate (SFR)**.
 
 ---

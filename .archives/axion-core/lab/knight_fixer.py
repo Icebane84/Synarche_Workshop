@@ -79,9 +79,13 @@ def knight_fixer(target: str, dry_run: bool = False) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Knight Fixer — Automated Code Cleanup")
+    parser = argparse.ArgumentParser(
+        description="Knight Fixer — Automated Code Cleanup"
+    )
     parser.add_argument("target", help="File or directory to fix.")
-    parser.add_argument("--dry-run", action="store_true", help="Preview changes without writing.")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Preview changes without writing."
+    )
     args = parser.parse_args()
     knight_fixer(os.path.abspath(args.target), dry_run=args.dry_run)
 

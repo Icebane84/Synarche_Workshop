@@ -107,7 +107,7 @@ AI.
 #### **IV. Overarching Insights & Reflections**
 
 The primary insight from this session is that the Phoenix Protocol
-framework is not just a system for *producing* documentation; it *is*
+framework is not just a system for _producing_ documentation; it _is_
 the documentation in action. We successfully used the system\'s defined
 protocols to build and refine a core component of the system itself,
 proving the viability of its recursive, self-governing design. The

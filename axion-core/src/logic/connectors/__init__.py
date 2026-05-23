@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -27,8 +26,8 @@
 Standardizes the exposure of parsing and generation connectors within the Axion Core logic layer.
 """
 
-from .freeplane_parser import FreeplaneParser
 from .artifact_generator import ArtifactGenerator
+from .freeplane_parser import FreeplaneParser
 
 __all__ = ["FreeplaneParser", "ArtifactGenerator"]
 

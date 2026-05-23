@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `SENTINEL-REPORT-002_PromptPacketCompliance` |
-| **2. Official Name** | `SENTINEL-REPORT-002_PromptPacketCompliance.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                           |
+| :--------------------- | :---------------------------------------------- |
+| **1. Artifact ID**     | `SENTINEL-REPORT-002_PromptPacketCompliance`    |
+| **2. Official Name**   | `SENTINEL-REPORT-002_PromptPacketCompliance.md` |
+| **3. Version**         | **v1.0 (Reforged)**                             |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                   |
+| **5. Domain**          | `ARCH`                                          |
+| **6. Evolution**       | **Purposeful Drive**                            |
+| **7. Celestial Class** | `[PLANET]`                                      |
+| **8. Tier**            | **Operational**                                 |
+| **9. State**           | `[ACTIVE]`                                      |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**              |
+| **11. Catalyst**       | **System Refactor**                             |
+| **12. Relations**      | `Pending Integration`                           |
 
 ---
 
@@ -56,10 +56,10 @@ Dissonance Quests have been generated to track the remediation of each violation
 
 The following structural violations of rule `PF021` were identified.
 
-| Dissonance ID | Severity     | Target Artifact    | Description                                                                                                                      |
-| :------------ | :----------- | :----------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| **D-STR-002** | **RESOLVED** | `GUCA-LINK-001`    | Artifact had missing "V. Actionable Prompt Packet". **[FIXED]**: Section injected and formatted to v10.0. |
-| **D-STR-003** | **RESOLVED** | `UWB-NDR-001`      | Artifact had missing "V. Actionable Prompt Packet". **[FIXED]**: Section IV injected and formatted to v10.0. |
+| Dissonance ID | Severity     | Target Artifact    | Description                                                                                                             |
+| :------------ | :----------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| **D-STR-002** | **RESOLVED** | `GUCA-LINK-001`    | Artifact had missing "V. Actionable Prompt Packet". **[FIXED]**: Section injected and formatted to v10.0.               |
+| **D-STR-003** | **RESOLVED** | `UWB-NDR-001`      | Artifact had missing "V. Actionable Prompt Packet". **[FIXED]**: Section IV injected and formatted to v10.0.            |
 | **D-STR-004** | **RESOLVED** | `Phoenix Cycle.md` | Artifact had missing "V. Actionable Prompt Packet". **[FIXED]**: Reforged as Executive Summary with Section V injected. |
 
 ## IV. Automated Remediation Actions
@@ -68,10 +68,10 @@ Based on the severity of the findings, the following automated actions were take
 
 - **Action:** Execute `CMD: GENERATE_DISSONANCE_QUEST`
 - **Result:**
-    - New quest `DQB-PPL-002` generated for `GUCA-LINK-001`.
-    - New quest `DQB-PPL-003` generated for `UWB-NDR-001`.
-    - New quest `DQB-PPL-004` generated for `Phoenix Cycle.md`.
-    - All new quests have been added to the Dissonance Quest Board.
+  - New quest `DQB-PPL-002` generated for `GUCA-LINK-001`.
+  - New quest `DQB-PPL-003` generated for `UWB-NDR-001`.
+  - New quest `DQB-PPL-004` generated for `Phoenix Cycle.md`.
+  - All new quests have been added to the Dissonance Quest Board.
 
 ## **Actionable Prompt Packet**
 

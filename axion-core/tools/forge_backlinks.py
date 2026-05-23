@@ -1,5 +1,4 @@
-"""
-# TOOL-HPRI-001: The Backlink Weaver (High Harmony)
+"""# TOOL-HPRI-001: The Backlink Weaver (High Harmony).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -51,20 +50,19 @@ UMB-OSLM-001, INDEXES, The registry provides the map for this tool.
 
 import argparse
 import logging
-import os
 import re
+from pathlib import Path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
 
-def load_artifact_map(registry_path: str) -> dict[str, str]:
+def load_artifact_map(registry_path: Path) -> dict[str, str]:
     """Parses the UMB-OSLM-001 table to build the ID->RelPath map."""
     artifact_map = {}
     try:
-        with open(registry_path, encoding="utf-8") as f:
-            content = f.read()
+        content = registry_path.read_text(encoding="utf-8")
 
         # Regex to capture table rows: | `ID` | [Title](RelPath) | ...
         # Match: | `(ID)` | [(Title)]((RelPath)) |
@@ -74,9 +72,8 @@ def load_artifact_map(registry_path: str) -> dict[str, str]:
             if mid == "Unknown":
                 continue
             # rel_path is relative to the registry file.
-            # We will store the absolute path so we can recalculate relative to any file.
-            abs_target = os.path.abspath(os.path.join(os.path.dirname(registry_path), rel_path))
-            artifact_map[mid] = abs_target
+            abs_target = (registry_path.parent / rel_path).resolve()
+            artifact_map[mid] = str(abs_target)
 
         logger.info(f"Loaded {len(artifact_map)} artifacts from Registry.")
         return artifact_map
@@ -86,22 +83,21 @@ def load_artifact_map(registry_path: str) -> dict[str, str]:
         return {}
 
 
-def get_relative_link(current_file_path: str, target_abs_path: str) -> str:
+def get_relative_link(current_file_path: Path, target_abs_path: str) -> str:
     """Calculates relative link from current_file to target_abs."""
-    current_dir = os.path.dirname(current_file_path)
     try:
-        rel_path = os.path.relpath(target_abs_path, current_dir)
-        return rel_path.replace("\\", "/")
+        rel_path = os.path.relpath(target_abs_path, current_file_path.parent)
+        return Path(rel_path).as_posix()
     except (ValueError, OSError):
         return ""
 
 
-def forge_links(content: str, file_path: str, artifact_map: dict[str, str]) -> str:
+def forge_links(content: str, file_path: Path, artifact_map: dict[str, str]) -> str:
     new_content = content
 
     for artifact_id, target_abs in artifact_map.items():
         # Avoid linking self
-        if os.path.abspath(file_path) == target_abs:
+        if str(file_path.resolve()) == target_abs:
             continue
 
         target_link = get_relative_link(file_path, target_abs)
@@ -118,50 +114,68 @@ def forge_links(content: str, file_path: str, artifact_map: dict[str, str]) -> s
             new_content = pattern.sub(replacement, new_content)
 
         # 2. Table Cells: | ID |
-        new_content = new_content.replace(f"| {artifact_id} |", f"| [{artifact_id}]({target_link}) |")
+        new_content = new_content.replace(
+            f"| {artifact_id} |", f"| [{artifact_id}]({target_link}) |"
+        )
 
         # 3. Contextual (Greedy but safe-ish)
-        new_content = new_content.replace(f"defined in {artifact_id}", f"defined in [{artifact_id}]({target_link})")
-        new_content = new_content.replace(f"verified by {artifact_id}", f"verified by [{artifact_id}]({target_link})")
-        new_content = new_content.replace(f"Laws of {artifact_id}", f"Laws of [{artifact_id}]({target_link})")
-        new_content = new_content.replace(f"Authority: {artifact_id}", f"Authority: [{artifact_id}]({target_link})")
-        new_content = new_content.replace(f"Authority | {artifact_id}", f"Authority | [{artifact_id}]({target_link})")
+        new_content = new_content.replace(
+            f"defined in {artifact_id}", f"defined in [{artifact_id}]({target_link})"
+        )
+        new_content = new_content.replace(
+            f"verified by {artifact_id}", f"verified by [{artifact_id}]({target_link})"
+        )
+        new_content = new_content.replace(
+            f"Laws of {artifact_id}", f"Laws of [{artifact_id}]({target_link})"
+        )
+        new_content = new_content.replace(
+            f"Authority: {artifact_id}", f"Authority: [{artifact_id}]({target_link})"
+        )
+        new_content = new_content.replace(
+            f"Authority | {artifact_id}", f"Authority | [{artifact_id}]({target_link})"
+        )
 
     return new_content
 
 
-def scan_directory(root_dir: str, artifact_map: dict[str, str], registry_filename: str) -> None:
+def scan_directory(
+    root_dir: Path, artifact_map: dict[str, str], registry_filename: str
+) -> None:
     logger.info(f"Forging links in: {root_dir}")
-    for root, dirs, files in os.walk(root_dir):
-        if "node_modules" in dirs:
-            dirs.remove("node_modules")
-        if ".git" in dirs:
-            dirs.remove(".git")
 
-        for file in files:
-            if file.endswith((".md", ".ts", ".tsx", ".py", ".json")):
-                if file == registry_filename or file == "forge_backlinks.py":
-                    continue
+    for file_path in root_dir.rglob("*"):
+        if file_path.is_file() and file_path.suffix in [
+            ".md",
+            ".ts",
+            ".tsx",
+            ".py",
+            ".json",
+        ]:
+            if "node_modules" in file_path.parts or ".git" in file_path.parts:
+                continue
+            if file_path.name in [registry_filename, "forge_backlinks.py"]:
+                continue
 
-                path = os.path.join(root, file)
-                try:
-                    with open(path, encoding="utf-8") as f:
-                        original = f.read()
+            try:
+                original = file_path.read_text(encoding="utf-8", errors="ignore")
+                fixed = forge_links(original, file_path, artifact_map)
 
-                    fixed = forge_links(original, path, artifact_map)
-
-                    if fixed != original:
-                        with open(path, "w", encoding="utf-8") as f:
-                            f.write(fixed)
-                        logger.info(f"Linked: {file}")
-                except Exception as e:
-                    logger.error(f"Error processing {file}: {e}")
+                if fixed != original:
+                    file_path.write_text(fixed, encoding="utf-8")
+                    logger.info(f"Linked: {file_path.name}")
+            except Exception as e:
+                logger.error(f"Error processing {file_path.name}: {e}")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Forge Artifact Links")
-    parser.add_argument("target_dir", help="Directory to scan")
-    parser.add_argument("--registry", required=True, help="Path to UMB-OSLM-001 Registry file")
+    parser.add_argument("target_dir", type=Path, help="Directory to scan")
+    parser.add_argument(
+        "--registry",
+        type=Path,
+        required=True,
+        help="Path to UMB-OSLM-001 Registry file",
+    )
     args = parser.parse_args()
 
     artifact_map = load_artifact_map(args.registry)
@@ -169,7 +183,7 @@ def main() -> None:
         logger.error("Failed to load artifact map. Aborting.")
         return
 
-    scan_directory(os.path.abspath(args.target_dir), artifact_map, os.path.basename(args.registry))
+    scan_directory(args.target_dir.resolve(), artifact_map, args.registry.name)
 
 
 if __name__ == "__main__":

@@ -13,13 +13,13 @@ router = APIRouter()
 async def embed_content(embed_request: EmbedRequest):
     """Embed content for vector search."""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     try:
         # Check if embedding model is available
@@ -45,7 +45,7 @@ async def embed_content(embed_request: EmbedRequest):
 
             try:
                 # Import commands to ensure they're registered
-                import commands.embedding_commands  # noqa: F401
+                import commands.embedding_commands
 
                 # Submit type-specific command
                 if item_type == "source":
@@ -74,7 +74,7 @@ async def embed_content(embed_request: EmbedRequest):
             except Exception as e:
                 logger.error(f"Failed to submit async embedding command: {e}")
                 raise HTTPException(
-                    status_code=500, detail=f"Failed to queue embedding: {str(e)}"
+                    status_code=500, detail=f"Failed to queue embedding: {e!s}"
                 )
 
         else:
@@ -115,8 +115,6 @@ async def embed_content(embed_request: EmbedRequest):
         raise
     except Exception as e:
         logger.error(
-            f"Error embedding {embed_request.item_type} {embed_request.item_id}: {str(e)}"
+            f"Error embedding {embed_request.item_type} {embed_request.item_id}: {e!s}"
         )
-        raise HTTPException(
-            status_code=500, detail=f"Error embedding content: {str(e)}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error embedding content: {e!s}")

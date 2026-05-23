@@ -1,14 +1,15 @@
-import sys
 import os
+import sys
 
 # Ensure the project root is in sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from src.engine.deterministic import DeterministicEngine, Task
 
+
 def test_engine():
     engine = DeterministicEngine()
-    engine.state['counter'] = 0
+    engine.state["counter"] = 0
 
     def load_task(ctx):
         ctx["state"]["counter"] += 1
@@ -29,13 +30,13 @@ def test_engine():
     # Frame 0: Initial 0 -> Step 1 (Exec A then B) -> 2
     engine.run(frames=1)
     print(f"Frame {engine.executor.clock.frame} State: {engine.state}")
-    assert engine.state['counter'] == 2
+    assert engine.state["counter"] == 2
 
     print("\n--- Frame 1 -> 2 ---")
     # Frame 1: 2 -> Step 2 (Exec A then B) -> 6
     engine.run(frames=1)
     print(f"Frame {engine.executor.clock.frame} State: {engine.state}")
-    assert engine.state['counter'] == 6
+    assert engine.state["counter"] == 6
 
     print("\n--- Rollback ---")
     # Rollback by 1 step (to Frame 1)
@@ -45,8 +46,9 @@ def test_engine():
     print("Rolling back by 1 step...")
     engine.rollback(steps=1)
     print(f"Restored Frame {engine.executor.clock.frame} State: {engine.state}")
-    assert engine.state['counter'] == 2
+    assert engine.state["counter"] == 2
     print("Rollback successful.")
+
 
 if __name__ == "__main__":
     try:
@@ -55,5 +57,6 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n[FAILURE] Validation failed: {e}")
         import traceback
+
         traceback.print_exc()
         sys.exit(1)

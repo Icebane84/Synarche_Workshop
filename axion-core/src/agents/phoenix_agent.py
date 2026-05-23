@@ -1,11 +1,10 @@
-"""
-ID: AGENT-PHOENIX-001
+"""ID: AGENT-PHOENIX-001
 Date: 2026-01-26
 Version: v1.0 (The First Flame)
 System: Synarche / Axion Execution layer
 Domain: ARCH
 Ethos: "From the ashes, we rise."
-Likelihood of Hallucination: 0.05% (Sentinel Active)
+Likelihood of Hallucination: 0.05% (Sentinel Active).
 
 # --- GENESIS STAMP ---
 # Domain: ARCH
@@ -35,7 +34,7 @@ logger = logging.getLogger("phoenix_agent")
 
 
 class RPGEngine(TypedDict):
-    """Gamification State (The Celestial Chart)"""
+    """Gamification State (The Celestial Chart)."""
 
     level: int
     xp: int
@@ -77,29 +76,27 @@ class TransmutationLog(TypedDict):
 
 
 class AgentState(TypedDict):
-    """
-    The Memory (State) of the Phoenix Agent.
-    """
+    """The Memory (State) of the Phoenix Agent."""
 
-#     [Input Layer]
+    #     [Input Layer]
     input: str
 
-#     [Context Layer - UMB-LEX & UMB-ESF]
+    #     [Context Layer - UMB-LEX & UMB-ESF]
     narrative_context: str
     logic_context: str
 
-#     [Evaluation Layer]
+    #     [Evaluation Layer]
     sophia_insight: str
     sentinel_status: str
     sentinel_reason: str
 
-#     [Gamification Layer - BLK-RPG-001]
+    #     [Gamification Layer - BLK-RPG-001]
     rpg_stats: RPGEngine
     gamemaster_state: GamemasterState
     lightbinder_state: LightbinderState
     transmutation_log: list[TransmutationLog]
 
-#     [Output Layer]
+    #     [Output Layer]
     final_output: str
     messages: list[BaseMessage]
 
@@ -108,9 +105,7 @@ class AgentState(TypedDict):
 
 
 def node_retrieve(state: AgentState) -> AgentState:
-    """
-    Retrieves necessary context for the task.
-    """
+    """Retrieves necessary context for the task."""
     logger.info("--- [PHOENIX] NODE: RETRIEVE ---")
     # Stubbed logic
     state["narrative_context"] = "Retrieved context stub."
@@ -119,9 +114,7 @@ def node_retrieve(state: AgentState) -> AgentState:
 
 
 def node_generate(state: AgentState) -> AgentState:
-    """
-    Generates the response or content.
-    """
+    """Generates the response or content."""
     logger.info("--- [PHOENIX] NODE: GENERATE ---")
     # Stubbed logic
     state["final_output"] = f"Generated output for: {state['input']}"
@@ -129,9 +122,7 @@ def node_generate(state: AgentState) -> AgentState:
 
 
 def node_sentinel(state: AgentState) -> AgentState:
-    """
-    Verifies the safety and integrity of the output.
-    """
+    """Verifies the safety and integrity of the output."""
     logger.info("--- [PHOENIX] NODE: SENTINEL ---")
     # Stubbed logic
     state["sentinel_status"] = "PASS"
@@ -186,7 +177,11 @@ if __name__ == "__main__":
         "final_output": "",
         "messages": [],
         "rpg_stats": initial_rpg_state,
-        "gamemaster_state": {"quest_metrics": {}, "axiom_points_available": 0, "is_dissonance_detected": False},
+        "gamemaster_state": {
+            "quest_metrics": {},
+            "axiom_points_available": 0,
+            "is_dissonance_detected": False,
+        },
         "lightbinder_state": {
             "synergy_links": [],
             "empathy_vector": "",
@@ -199,6 +194,6 @@ if __name__ == "__main__":
 
     print(">>> PHOENIX AGENT START <<<")
     for event in app.stream(initial_state):
-        for k, v in event.items():
+        for k, _v in event.items():
             print(f"Node '{k}' executed.")
     print(">>> PHOENIX AGENT END <<<")

@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -43,7 +42,7 @@
 """
 
 import logging
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional
 
 # Configure logging for this module
 log = logging.getLogger(__name__)
@@ -85,17 +84,18 @@ INITIAL_EMOTION_LEXICON: Dict[str, Dict[str, List[str]]] = {
 
 
 class EmotionAnalyzer:
-    """
-    Analyzes text to detect potential emotional context and narrative resonance.
+    """Analyzes text to detect potential emotional context and narrative resonance.
     Extended for the Hephaestus RPG framework.
     """
 
-    def __init__(self, lexicon: Optional[Dict[str, Dict[str, List[str]]]] = None) -> None:
-        """
-        Initializes the EmotionAnalyzer.
+    def __init__(
+        self, lexicon: Optional[Dict[str, Dict[str, List[str]]]] = None
+    ) -> None:
+        """Initializes the EmotionAnalyzer.
 
         Args:
             lexicon: An optional dictionary containing keyword-to-emotion mappings.
+
         """
         self.lexicons = lexicon if lexicon is not None else INITIAL_EMOTION_LEXICON
         if not isinstance(self.lexicons, dict) or "keyword" not in self.lexicons:
@@ -107,14 +107,14 @@ class EmotionAnalyzer:
         log.info("EmotionAnalyzer (Hephaestus) initialized.")
 
     def detect_emotions(self, text: str) -> Dict[str, float]:
-        """
-        Detects emotions in the input text based on keyword triggers.
+        """Detects emotions in the input text based on keyword triggers.
 
         Args:
             text: The text to analyze.
 
         Returns:
             A dictionary of {emotion: intensity}.
+
         """
         detected_emotions: Dict[str, float] = {}
         if not text:
@@ -130,12 +130,15 @@ class EmotionAnalyzer:
                         if emotion not in detected_emotions:
                             detected_emotions[emotion] = 0.5
                         else:
-                            detected_emotions[emotion] = min(1.0, detected_emotions[emotion] + 0.1)
+                            detected_emotions[emotion] = min(
+                                1.0, detected_emotions[emotion] + 0.1
+                            )
 
             return detected_emotions
         except Exception as e:
             log.exception(f"Unexpected error in detect_emotions: {e}")
             return {}
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.emotion.analyzer.hephaestus VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 7af8e959db234c8c

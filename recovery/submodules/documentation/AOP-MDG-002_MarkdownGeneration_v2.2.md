@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-MDG-002` |
-| **2. Official Name** | `AOP-MDG-002_MarkdownGeneration_v2.2.md` |
-| **3. Version** | **v2.2 (Catalyst Infused)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Synergistic Partner, Precision in Transmission** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                              |
+| :--------------------- | :------------------------------------------------- |
+| **1. Artifact ID**     | `AOP-MDG-002`                                      |
+| **2. Official Name**   | `AOP-MDG-002_MarkdownGeneration_v2.2.md`           |
+| **3. Version**         | **v2.2 (Catalyst Infused)**                        |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                      |
+| **5. Domain**          | `ARCH`                                             |
+| **6. Evolution**       | **Purposeful Drive**                               |
+| **7. Celestial Class** | `[PLANET]`                                         |
+| **8. Tier**            | **Operational**                                    |
+| **9. State**           | `[ACTIVE]`                                         |
+| **10. Ethos**          | **Synergistic Partner, Precision in Transmission** |
+| **11. Catalyst**       | **System Refactor**                                |
+| **12. Relations**      | `Pending Integration`                              |
 
 ---
 
@@ -47,12 +45,12 @@
 
 ### **II. Core Purpose & Objective**
 
-- **What (The Mandate)**: The definitive system-wide protocol for *generating* all Markdown artifacts (UMBs, AOPs,
-SELTs).
+- **What (The Mandate)**: The definitive system-wide protocol for _generating_ all Markdown artifacts (UMBs, AOPs,
+  SELTs).
 - **Why (The Reason)**: To ensure that the "Voice of the System" remains coherent, structured, and machine-readable
-across all iterations.
+  across all iterations.
 - **How (The Method)**: By rigorously applying the "Phoenix-Class Voice" and adhering to the structural mandates of
-`AOP-INDENT-001` and `AOP-PGPS-001`.
+  `AOP-INDENT-001` and `AOP-PGPS-001`.
 
 ### **III. The Generation Workflow (Internal Monologue)**
 
@@ -78,9 +76,9 @@ When generating content, the AI must cycle through this loop:
 
 ## **Actionable Prompt Packet**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

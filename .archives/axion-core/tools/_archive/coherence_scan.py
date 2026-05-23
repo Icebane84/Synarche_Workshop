@@ -85,9 +85,10 @@ def get_version_from_uip(uip_map: dict[str, str]) -> Optional[str]:
     return None
 
 
-def check_compliance(mod_id: str, expected_version: str, abs_path: Path, content: str) -> Optional[dict[str, str]]:
-    """
-    Validates a file's UIP data against expected values.
+def check_compliance(
+    mod_id: str, expected_version: str, abs_path: Path, content: str
+) -> Optional[dict[str, str]]:
+    """Validates a file's UIP data against expected values.
     Returns a mismatch dict if validation fails, else None.
     """
     uip = extract_uip_map(content)
@@ -123,14 +124,19 @@ def check_compliance(mod_id: str, expected_version: str, abs_path: Path, content
             and mod_id.lower() not in actual_id.lower()
             and actual_id.lower() not in mod_id.lower()
         ):
-            return {"id": mod_id, "file": abs_path.name, "type": "ID Mismatch", "expected": mod_id, "actual": actual_id}
+            return {
+                "id": mod_id,
+                "file": abs_path.name,
+                "type": "ID Mismatch",
+                "expected": mod_id,
+                "actual": actual_id,
+            }
 
     return None
 
 
 def analyze() -> None:
-    """
-    Executes the full architectural scan.
+    """Executes the full architectural scan.
     Generates a textual report and a JSON data file for the Tarot Forge UI.
     """
     print(">>> INITIATING PROTOCOL COHERENCE SCAN v2.1")
@@ -177,7 +183,11 @@ def analyze() -> None:
             print(f"Error processing {abs_path.name}: {e}")
 
     # Calculate coherence BEFORE writing files
-    coherence = ((total_scanned - len(mismatches)) / total_scanned * 100) if total_scanned else 0.0
+    coherence = (
+        ((total_scanned - len(mismatches)) / total_scanned * 100)
+        if total_scanned
+        else 0.0
+    )
 
     # 1. Write JSON Data for Tarot Forge
     scan_data = {
@@ -204,7 +214,9 @@ def analyze() -> None:
 
         if mismatches:
             for m in mismatches[:15]:
-                f.write(f" - {m['id']} ({m['file']}): Found {m['actual']} [{m['type']}]\n")
+                f.write(
+                    f" - {m['id']} ({m['file']}): Found {m['actual']} [{m['type']}]\n"
+                )
 
     print(f"Scan Complete. Coherence: {coherence:.2f}%")
     print(f"JSON Report written to: {JSON_OUTPUT_PATH}")

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -11,6 +10,7 @@
 
 **Ethos:** Absolute Determinism. Zero Logic Drift.
 """
+
 # core/rollback_core.py
 
 import copy

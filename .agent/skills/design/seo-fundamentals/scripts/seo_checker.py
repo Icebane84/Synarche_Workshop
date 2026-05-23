@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-SEO Checker - Search Engine Optimization Audit
+"""SEO Checker - Search Engine Optimization Audit
 Checks HTML/JSX/TSX pages for SEO best practices.
 
 PURPOSE:
@@ -18,11 +17,11 @@ Usage:
     python seo_checker.py <project_path>
 """
 
-import sys
 import json
 import re
-from pathlib import Path
+import sys
 from datetime import datetime
+from pathlib import Path
 
 # Fix Windows console encoding
 try:
@@ -149,7 +148,10 @@ def check_page(file_path: Path) -> dict:
         issues.append("Missing <title> tag")
 
     # 2. Meta description
-    has_description = 'name="description"' in content.lower() or "name='description'" in content.lower()
+    has_description = (
+        'name="description"' in content.lower()
+        or "name='description'" in content.lower()
+    )
     if not has_description and is_layout:
         issues.append("Missing meta description")
 
@@ -184,7 +186,7 @@ def main():
     project_path = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
 
     print(f"\n{'=' * 60}")
-    print(f"  SEO CHECKER - Search Engine Optimization Audit")
+    print("  SEO CHECKER - Search Engine Optimization Audit")
     print(f"{'=' * 60}")
     print(f"Project: {project_path}")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

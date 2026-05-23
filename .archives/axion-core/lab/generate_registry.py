@@ -59,7 +59,9 @@ logger = logging.getLogger(__name__)
 
 MIN_UIP_PARTS = 3
 KEY_MODULE_ID = "Module ID"
-TABLE_HEADER = "| Module ID | Title | Version | Status |\n| :--- | :--- | :--- | :--- |\n"
+TABLE_HEADER = (
+    "| Module ID | Title | Version | Status |\n| :--- | :--- | :--- | :--- |\n"
+)
 
 # Key Aliases for different generations of OGLN/Phoenix
 KEY_MAP = {
@@ -85,7 +87,10 @@ def _extract_title(content: str) -> str:
     h1_matches = re.finditer(r"^#\s+(.+)$", content, re.MULTILINE)
     for match in h1_matches:
         candidate = match.group(1).replace("*", "").strip()
-        if "Universal Identification & Provenance" not in candidate and "UIP" not in candidate:
+        if (
+            "Universal Identification & Provenance" not in candidate
+            and "UIP" not in candidate
+        ):
             return candidate
     return "Unknown"
 
@@ -118,7 +123,10 @@ def _parse_uip_metadata(content: str, uip: dict[str, str]) -> None:
     in_uip = False
     for line in lines:
         # Check for UIP header (any header level or plain text)
-        if "Universal Identification & Provenance" in line or "The Vector Signature" in line:
+        if (
+            "Universal Identification & Provenance" in line
+            or "The Vector Signature" in line
+        ):
             in_uip = True
             continue
 
@@ -126,7 +134,11 @@ def _parse_uip_metadata(content: str, uip: dict[str, str]) -> None:
             _process_uip_row(line, uip)
 
         # Stop at horizontal rule or next major section if we have the ID
-        if in_uip and (line.strip() == "---" or line.startswith("##")) and uip[KEY_MODULE_ID] != "Unknown":
+        if (
+            in_uip
+            and (line.strip() == "---" or line.startswith("##"))
+            and uip[KEY_MODULE_ID] != "Unknown"
+        ):
             break
 
 
@@ -329,13 +341,17 @@ def main() -> None:
         formatter_class=argparse.RawTextHelpFormatter,
         epilog="Example:\n  python generate_registry.py _governance --output UMB-OSLM-001.md",
     )
-    parser.add_argument("target_dir", help="Directory to scan for artifacts (e.g., '_governance')")
+    parser.add_argument(
+        "target_dir", help="Directory to scan for artifacts (e.g., '_governance')"
+    )
     parser.add_argument("--output", help="Path to save the registry (Markdown or JSON)")
     args = parser.parse_args()
 
     target_dir = os.path.abspath(args.target_dir)
     output_file = (
-        args.output if args.output else os.path.join(target_dir, "01_Registries", "GVRN.REG.ArtifactInventory.md")
+        args.output
+        if args.output
+        else os.path.join(target_dir, "01_Registries", "GVRN.REG.ArtifactInventory.md")
     )
 
     logger.info(f"Generating Master Artifact Registry for: {target_dir}")

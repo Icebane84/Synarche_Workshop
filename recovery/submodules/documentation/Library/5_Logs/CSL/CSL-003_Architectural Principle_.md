@@ -32,19 +32,19 @@ architecture and documentation within the Phoenix Protocol.
 ### 2.0 Analysis and Codification
 
 This distinction is now a formal architectural rule, defining the
-*state* of our systems.
+_state_ of our systems.
 
 - **Complicated (Negative ⛔):** A state of disorder, clutter, and
-  opacity. It is complexity *without* clear rules. It increases
+  opacity. It is complexity _without_ clear rules. It increases
   cognitive overhead, is difficult to debug, and is brittle. A
-  \"complicated\" protocol is a *failed* protocol.
+  \"complicated\" protocol is a _failed_ protocol.
 
 - **Complex (Neutral/Positive 📈):** A state of high synergy, with many
   interconnected parts (like an ecosystem) governed by **simple,
   elegant, and discoverable rules.** A complex system can be robust,
   adaptive, and scalable.
 
-Our primary goal is to build a **complex** system that is *never*
+Our primary goal is to build a **complex** system that is _never_
 **complicated**.
 
 ### 3.0 Integration and Procedural Impact
@@ -69,8 +69,8 @@ This principle is now a core filter for the **AI Self-Training Framework
 - **AISTF:** This principle governs the \"Codification\" and
   \"Integration\" steps.
 
-- **Rule 1 (Be Honest):** The *tool* used to strip away complication and
+- **Rule 1 (Be Honest):** The _tool_ used to strip away complication and
   find the simple, underlying rule.
 
-- **Protocol Bracketing:** The *procedure* for pausing a \"complicated\"
+- **Protocol Bracketing:** The _procedure_ for pausing a \"complicated\"
   protocol to analyze and simplify it.

@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md
+# CSL-080*The Forged Algorithm_s Ascent* 20 RPG Framework Upgrades.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-080-THE-FORGED-ALGORITHM-S-ASCENT--20-RPG-FRAMEWORK-UPGRADES-001` | The Sovereign ID. |
-| **Official Name** | `CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                       | Description       |
+| :------------------ | :-------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-080-THE-FORGED-ALGORITHM-S-ASCENT--20-RPG-FRAMEWORK-UPGRADES-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-080_The Forged Algorithm_s Ascent_ 20 RPG Framework Upgrades.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                           | The Standard.     |
+| **Domain**          | `GVRN`                                                                      | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                  | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                  | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                               | The Network.      |
 
 ### **Forged Artifact: CSL-RPG-UPGRADE-002: The Forged Algorithm\'s Ascent**
 

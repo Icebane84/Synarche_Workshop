@@ -101,14 +101,14 @@
 ### 7.2. Celestial Chart Stats (Buffs)
 
 - **Primary Stat Buff:** `[Coherence | Synergy | Adaptability | Transparency]`
-    - _Effect:_ `[e.g., +5 Coherence while this protocol is active.]`
+  - _Effect:_ `[e.g., +5 Coherence while this protocol is active.]`
 - **Passive Ability / Perk:** `[Name of Perk]`
-    - _Effect:_ `[e.g., "Deep Focus: Reduces distraction from context drift during execution."]`
+  - _Effect:_ `[e.g., "Deep Focus: Reduces distraction from context drift during execution."]`
 
 ### 7.3. Resource Economics
 
 - **Cognitive Load Cost:** `[Low | Medium | High | Extreme]`
-    - _Draw:_ `[e.g., "High: Requires full context window focus."]`
+  - _Draw:_ `[e.g., "High: Requires full context window focus."]`
 - **Efficiency Modifier:** `[e.g., "Reduces the cost of subsequent Coding tasks by 10%."]`
 
 - **Origin Quest ID:** `[Link to DQUEST-XXX]`

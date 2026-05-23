@@ -1,25 +1,23 @@
-"""
----
+"""---
 # Block A: Universal Identification & Provenance (UIP-V15)
 artifact_anchor:
-  id: "TOOL.Forge.Daemon"
-  version: "v1.2.0"
+  id: "INFR.FORGE.DAEMON.001"
+  version: "v15.0 [OMEGA]"
   provenance: "2026-04-23"
-  domain: "TOOL"
+  domain: "INFRA"
   celestial_class: "STAR"
-  tier: "AXIOMATIC"
+  tier: "COMPUTE"
   state: "CANONIZED"
   ethos: "ZERO-ENTROPY"
-  layer: "@system/"
   relations:
-    - type: "UTILIZES"
+    - type: "DEPENDS_ON"
       node: "TOOL.Forge.SourceMap"
-    - type: "GOVERNED_BY"
+    - type: "DEPENDS_ON"
       node: "CODEX-LAW-03"
-    - type: "SYNERGIZES_WITH"
+    - type: "SYNERGIZES"
       node: "GVRN.CI.ForgePR"
-    - type: "BROADCASTS_TO"
-      node: "NEXUS.Worker.Handshake"
+    - type: "SYNERGIZES"
+      node: "NEXUS.Worker.Handshake".
 ---
 
 TOOL.Forge.Daemon — The Live Compiler Daemon
@@ -45,19 +43,19 @@ Relations:
 [OMNI-ARTIFACT-ANCHOR] ID: TOOL.Forge.Daemon VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23
 """
 
-import os
-import time
-import difflib
 import asyncio
-import websockets
+import difflib
 import json
-import threading
+import os
 import ssl
 import subprocess
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
+import threading
+import time
 
+import websockets
 from axion_core.src.cse.sourcemap import ForgeSourceMap  # type: ignore
+from watchdog.events import FileSystemEventHandler
+from watchdog.observers import Observer
 
 # PORTABILITY FIX: Resolve forge script via env var (CODEX-LAW-03)
 FORGE_ROOT = os.environ.get("FORGE_ROOT", os.path.dirname(os.path.abspath(__file__)))
@@ -69,6 +67,7 @@ CONNECTED_CLIENTS: set = set()
 
 def create_ws_handler(expected_token: str, sourcemap: ForgeSourceMap):
     """Factory to create an authenticated WebSocket handler."""
+
     async def ws_handler(websocket):
         try:
             auth_message = await asyncio.wait_for(websocket.recv(), timeout=5.0)
@@ -94,15 +93,20 @@ def create_ws_handler(expected_token: str, sourcemap: ForgeSourceMap):
                     trace_result = sourcemap.trace_offset(offset)
                     if trace_result:
                         source_id, source_offset = trace_result
-                        await websocket.send(json.dumps({
-                            "status": f"{action}_result",
-                            "id": req_id,
-                            "source_id": source_id,
-                            "source_offset": source_offset
-                        }))
+                        await websocket.send(
+                            json.dumps(
+                                {
+                                    "status": f"{action}_result",
+                                    "id": req_id,
+                                    "source_id": source_id,
+                                    "source_offset": source_offset,
+                                }
+                            )
+                        )
         finally:
             CONNECTED_CLIENTS.remove(websocket)
             print("[WS] IDE Client disconnected.")
+
     return ws_handler
 
 
@@ -113,7 +117,9 @@ async def broadcast_message(message: str):
 
 
 class DeltaHandler(FileSystemEventHandler):
-    def __init__(self, filepath: str, sourcemap: ForgeSourceMap, loop: asyncio.AbstractEventLoop):
+    def __init__(
+        self, filepath: str, sourcemap: ForgeSourceMap, loop: asyncio.AbstractEventLoop
+    ):
         self.filepath = os.path.abspath(filepath)
         self.sourcemap = sourcemap
         self.last_content = self._read_file()
@@ -123,7 +129,7 @@ class DeltaHandler(FileSystemEventHandler):
 
     def _read_file(self) -> str:
         try:
-            with open(self.filepath, 'r', encoding='utf-8') as f:
+            with open(self.filepath, "r", encoding="utf-8") as f:
                 return f.read()
         except Exception as e:
             print(f"[ERROR] Failed to read {self.filepath}: {e}")
@@ -137,7 +143,7 @@ class DeltaHandler(FileSystemEventHandler):
                 self._calculate_and_apply_delta(new_content)
                 self.last_content = new_content
                 self._trigger_recompile()
-        elif src_path.endswith('.md'):
+        elif src_path.endswith(".md"):
             print(f"[*] Detected layout change in {src_path}")
             self._trigger_recompile()
 
@@ -153,20 +159,32 @@ class DeltaHandler(FileSystemEventHandler):
             print("[*] Automatically re-compiling and signing artifacts...")
             # PORTABILITY FIX: Uses FORGE_SCRIPT resolved from FORGE_ROOT env var
             result = subprocess.run(
-                ["python", FORGE_SCRIPT],
-                capture_output=True, text=True, timeout=15
+                ["python", FORGE_SCRIPT], capture_output=True, text=True, timeout=15
             )
             if result.returncode == 0:
                 print("[PASS] Artifacts re-compiled and signed successfully.")
-                payload = json.dumps({"status": "compile_success", "artifact": "artifacts/Master_Shell.md"})
+                payload = json.dumps(
+                    {
+                        "status": "compile_success",
+                        "artifact": "artifacts/Master_Shell.md",
+                    }
+                )
                 asyncio.run_coroutine_threadsafe(broadcast_message(payload), self.loop)
             else:
                 print(f"[FAIL] Auto-compilation failed:\n{result.stderr}")
-                payload = json.dumps({"status": "error", "message": "Compilation Failed", "traceback": result.stderr})
+                payload = json.dumps(
+                    {
+                        "status": "error",
+                        "message": "Compilation Failed",
+                        "traceback": result.stderr,
+                    }
+                )
                 asyncio.run_coroutine_threadsafe(broadcast_message(payload), self.loop)
         except subprocess.TimeoutExpired:
             print("[FAIL] Compilation timed out.")
-            payload = json.dumps({"status": "error", "message": "Compilation Timed Out"})
+            payload = json.dumps(
+                {"status": "error", "message": "Compilation Timed Out"}
+            )
             asyncio.run_coroutine_threadsafe(broadcast_message(payload), self.loop)
         except Exception as e:
             print(f"[ERROR] Failed to execute build orchestrator: {e}")
@@ -178,24 +196,45 @@ class DeltaHandler(FileSystemEventHandler):
         edit_offset = 0
         try:
             for tag, i1, i2, j1, j2 in reversed(opcodes):
-                if tag == 'equal':
+                if tag == "equal":
                     continue
                 old_len = i2 - i1
                 new_len = j2 - j1
                 length_diff = new_len - old_len
                 edit_offset = i1
-                print(f"[*] Detected '{tag}' at index {edit_offset} | delta: {length_diff}")
+                print(
+                    f"[*] Detected '{tag}' at index {edit_offset} | delta: {length_diff}"
+                )
                 self.sourcemap.apply_delta_update(edit_offset, length_diff)
-                payload = json.dumps({"status": "update", "tag": tag, "offset": edit_offset, "delta": length_diff})
+                payload = json.dumps(
+                    {
+                        "status": "update",
+                        "tag": tag,
+                        "offset": edit_offset,
+                        "delta": length_diff,
+                    }
+                )
                 asyncio.run_coroutine_threadsafe(broadcast_message(payload), self.loop)
             print("[PASS] SourceMap resynchronized via delta update.")
         except Exception as e:
-            error_payload = json.dumps({"status": "error", "message": str(e), "offset": edit_offset})
-            asyncio.run_coroutine_threadsafe(broadcast_message(error_payload), self.loop)
+            error_payload = json.dumps(
+                {"status": "error", "message": str(e), "offset": edit_offset}
+            )
+            asyncio.run_coroutine_threadsafe(
+                broadcast_message(error_payload), self.loop
+            )
             print(f"[FAIL] Error updating sourcemap: {e}")
 
 
-def run_ws_server(loop, sourcemap, host="0.0.0.0", port=8765, cert_path=None, key_path=None, auth_token="SECURE_TOKEN"):
+def run_ws_server(
+    loop,
+    sourcemap,
+    host="0.0.0.0",
+    port=8765,
+    cert_path=None,
+    key_path=None,
+    auth_token="SECURE_TOKEN",
+):
     """Runs the WebSocket server, optionally secured with TLS (WSS)."""
     asyncio.set_event_loop(loop)
     ssl_context = None
@@ -218,14 +257,14 @@ def start_daemon(
     port: int = 8765,
     cert_path: str = None,
     key_path: str = None,
-    auth_token: str = "SECURE_TOKEN"
+    auth_token: str = "SECURE_TOKEN",
 ):
     """Starts the Forge Daemon with optional remote binding and SSL."""
     ws_loop = asyncio.new_event_loop()
     ws_thread = threading.Thread(
         target=run_ws_server,
         args=(ws_loop, sourcemap, host, port, cert_path, key_path, auth_token),
-        daemon=True
+        daemon=True,
     )
     ws_thread.start()
 

@@ -9,6 +9,7 @@
 ---
 
 # creating-podcasts.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CREATING-PODCASTS-001` | The Sovereign ID. |
-| **Official Name** | `creating-podcasts.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-CREATING-PODCASTS-001`  | The Sovereign ID. |
+| **Official Name** | `creating-podcasts.md`        | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -136,6 +132,7 @@ Solo Explanation (Monologue)
 ```
 
 **Pick based on your content:**
+
 - One main idea → Academic Presentation
 - You want to explain → Solo Explanation
 - Two competing views → Debate Format
@@ -458,6 +455,7 @@ Rule: 3-5 sources per podcast
 **Problem**: TTS voice sounds unnatural
 
 **Solutions**:
+
 ```
 1. Switch provider: Try Google or ElevenLabs instead
 2. Choose different voice: Some voices more natural
@@ -470,6 +468,7 @@ Rule: 3-5 sources per podcast
 **Problem**: Hard to understand what's being said
 
 **Solutions**:
+
 ```
 1. Re-generate with different speaker
 2. Try different TTS provider
@@ -483,6 +482,7 @@ Rule: 3-5 sources per podcast
 **Problem**: Important information isn't in podcast
 
 **Solutions**:
+
 ```
 1. Include that source in content selection
 2. Review generated outline (check before generating)
@@ -495,6 +495,7 @@ Rule: 3-5 sources per podcast
 **Problem**: Speakers sound like same person
 
 **Solutions**:
+
 ```
 1. Choose different TTS providers (OpenAI + Google)
 2. Choose very different voice options
@@ -507,6 +508,7 @@ Rule: 3-5 sources per podcast
 **Problem**: "Podcast generation failed"
 
 **Solutions**:
+
 ```
 1. Check internet connection (especially TTS)
 2. Try again (might be temporary issue)
@@ -606,6 +608,7 @@ If you want to distribute (future feature):
 ## Best Practices
 
 ### Before Generation
+
 - [ ] Sources are processed and ready
 - [ ] You've chosen content to include
 - [ ] You have a clear episode profile
@@ -613,12 +616,14 @@ If you want to distribute (future feature):
 - [ ] Content is focused (3-5 sources max)
 
 ### During Generation
+
 - Don't close the browser (use background processing)
 - Check back in 5-15 minutes
 - Review transcript when complete
 - Listen to sample before downloading
 
 ### After Generation
+
 - [ ] Download MP3 to computer
 - [ ] Save in organized folder
 - [ ] Add metadata (title, description, date)
@@ -630,6 +635,7 @@ If you want to distribute (future feature):
 ## Use Cases
 
 ### Academic Researcher
+
 ```
 Podcast: Explaining your dissertation
 Speakers: You + colleague
@@ -638,6 +644,7 @@ Use: Share with advisors, test explanations
 ```
 
 ### Content Creator
+
 ```
 Podcast: Research-to-podcast article
 Speakers: Narrator + expert
@@ -646,6 +653,7 @@ Use: Transform article into podcast version
 ```
 
 ### Team Research
+
 ```
 Podcast: Weekly research updates
 Speakers: Multiple team members
@@ -654,6 +662,7 @@ Use: Team updates, knowledge sharing
 ```
 
 ### Learning/Teaching
+
 ```
 Podcast: Teaching material
 Speakers: Teacher + inquisitive student
@@ -715,6 +724,5 @@ That's why they're important for Open Notebook.
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
-
 
 - [[adding-sources]]

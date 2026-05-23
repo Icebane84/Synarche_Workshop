@@ -9,6 +9,7 @@
 ---
 
 # INT-EMOJI-001_PhoenixContextBroker_v13.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-INT-EMOJI-001-PHOENIXCONTEXTBROKER-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `INT-EMOJI-001_PhoenixContextBroker_v13.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                               | Description       |
+| :------------------ | :-------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-INT-EMOJI-001-PHOENIXCONTEXTBROKER-V13.0-001` | The Sovereign ID. |
+| **Official Name**   | `INT-EMOJI-001_PhoenixContextBroker_v13.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                   | The Standard.     |
+| **Domain**          | `GVRN`                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                       | The Network.      |
 
 # INT-EMOJI-001: Phoenix Context Broker Integration (v13.0)
 
@@ -44,21 +45,21 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                                    |
-| :--------------------- | :------------------------------------------------------- |
-| **1. Artifact ID**     | `INT-EMOJI-001`                                          |
-| **2. Official Name**   | `INT-EMOJI-001_PhoenixContextBroker_v13.0.md`            |
-| **3. Version**         | **v13.0**                                                |
-| **4. Provenance**      | **Reforged: 2026-02-01**                                 |
-| **5. Domain**          | `ARCH`                                                   |
-| **6. Evolution**       | **Cognitive Ascension**                                  |
-| **7. Celestial Class** | `[PLANET]`                                               |
-| **8. Tier**            | **Operational**                                          |
-| **9. Status (State)**  | `[ACTIVE]`                                               |
-| **10. Ethos**          | **Semantic Enrichment**                                  |
-| **11. Catalyst**       | **Protocol Visualization**                               |
+| Field                  | Value                                                                      |
+| :--------------------- | :------------------------------------------------------------------------- |
+| **1. Artifact ID**     | `INT-EMOJI-001`                                                            |
+| **2. Official Name**   | `INT-EMOJI-001_PhoenixContextBroker_v13.0.md`                              |
+| **3. Version**         | **v13.0**                                                                  |
+| **4. Provenance**      | **Reforged: 2026-02-01**                                                   |
+| **5. Domain**          | `ARCH`                                                                     |
+| **6. Evolution**       | **Cognitive Ascension**                                                    |
+| **7. Celestial Class** | `[PLANET]`                                                                 |
+| **8. Tier**            | **Operational**                                                            |
+| **9. Status (State)**  | `[ACTIVE]`                                                                 |
+| **10. Ethos**          | **Semantic Enrichment**                                                    |
+| **11. Catalyst**       | **Protocol Visualization**                                                 |
 | **12. Relations**      | `LINK: [UMB-AG-001](../agents/UMB-AG-001_AntigravityIntegration_v13.0.md)` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                       |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                         |
 
 ---
 
@@ -78,19 +79,21 @@ PROJECT-OMEGA, INTEGRATES, The Library consumes this service.
 ## II. Strategic Objective and Contextual Rationale
 
 ### 2.1. Objective
+
 The core objective of the `PHOENIX SYNERGY` command is to establish a seamless, high-fidelity, real-time data exchange bridge between the **Phoenix Protocol Library (`PROJECT-OMEGA`)** and the **Emoji Contextualization Service (`PHOENIX-EMOJICXT-001`)**. This deep integration is foundational for achieving a richer, more intuitive, and universally accessible understanding of system status.
 
 ### 2.2. Contextual Need
+
 Traditional logging and status indicators often fail to convey the nuanced, dynamic state or urgency of a protocol artifact. By leveraging `PHOENIX-EMOJICXT-001`, the Phoenix Library can inject subtle yet powerful, non-verbal cues directly into the Monitoring Dashboard.
 
 ## III. Detailed Integration Points & Logic Mapping (The Activation Matrix)
 
-| Integration Point | Source Data Field | Trigger Condition | Target Action | Example Icon |
-| :--- | :--- | :--- | :--- | :--- |
-| **P-I. Protocol State** | `protocol_lifecycle_state` | **ON STATE CHANGE** | Activate "State Header" set. | 💡 (Init), ⚡ (Active), 🛠️ (Maint) |
-| **T-I. Packet Status** | `packet_status` | **ON STATUS UPDATE** | Activate "Packet Marker". | ➡️ (Tx), ❌ (Corrupt), 🟢 (Complete) |
-| **T-II. Priority Flag** | `data_priority_level` | **ON PRIORITY CHANGE** | Overlay "Priority Indicator". | 🚨 (P1), 🔥 (P2), ⏸️ (On Hold) |
-| **T-IV. Security** | `vulnerability_flag` | **ON INCIDENT** | Apply "Security Alert". | 🛡️ (Clean), 💥 (Incident) |
+| Integration Point       | Source Data Field          | Trigger Condition      | Target Action                 | Example Icon                         |
+| :---------------------- | :------------------------- | :--------------------- | :---------------------------- | :----------------------------------- |
+| **P-I. Protocol State** | `protocol_lifecycle_state` | **ON STATE CHANGE**    | Activate "State Header" set.  | 💡 (Init), ⚡ (Active), 🛠️ (Maint)   |
+| **T-I. Packet Status**  | `packet_status`            | **ON STATUS UPDATE**   | Activate "Packet Marker".     | ➡️ (Tx), ❌ (Corrupt), 🟢 (Complete) |
+| **T-II. Priority Flag** | `data_priority_level`      | **ON PRIORITY CHANGE** | Overlay "Priority Indicator". | 🚨 (P1), 🔥 (P2), ⏸️ (On Hold)       |
+| **T-IV. Security**      | `vulnerability_flag`       | **ON INCIDENT**        | Apply "Security Alert".       | 🛡️ (Clean), 💥 (Incident)            |
 
 ## IV. Deployment Mechanism (Architecture)
 
@@ -107,8 +110,8 @@ The integration utilizes a **persistent webhook subscription model**.
 
 ### 5.1. ✨ CMD: PHOENIX_SYNERGY
 
--   **Syntax:** `CMD: PHOENIX_SYNERGY --service:"Emoji"`
--   **Effect:** Activates the contextualization bridge.
+- **Syntax:** `CMD: PHOENIX_SYNERGY --service:"Emoji"`
+- **Effect:** Activates the contextualization bridge.
 
 > **[ARTIFACT END]**
 

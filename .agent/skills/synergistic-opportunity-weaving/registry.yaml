@@ -1,6 +1,6 @@
 domain: SYNERGISTIC-OPPORTUNITY-WEAVING
-last_updated: "2026-03-28T08:30:09.870108"
+last_updated: '2026-05-19T15:21:38.913626'
 skills:
-  - documented: false
-    id: scripts
-    path: /.agent/skills/synergistic-opportunity-weaving/scripts
+- documented: false
+  id: scripts
+  path: /.agent/skills/synergistic-opportunity-weaving/scripts

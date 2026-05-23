@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -44,7 +43,6 @@
 
 from .explanation_generator import ExplanationGenerator
 from .soul_analyzer import SoulImpactAnalyzer
-
 
 # ---
 #

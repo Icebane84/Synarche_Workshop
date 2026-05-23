@@ -21,7 +21,7 @@ TARGET_ROOT = os.path.join(SYNC_ROOT, "axion-core/src")
 def synthesize_file(filepath):
     """Inject Block A and Block G into a file if missing."""
     p = Path(filepath)
-    if not p.suffix in [".py", ".md"]:
+    if p.suffix not in [".py", ".md"]:
         return
 
     with open(p, "r", encoding="utf-8") as f:
@@ -125,7 +125,7 @@ def synthesize_file(filepath):
 
 def run_synthesis(target_dir):
     print(f"[*] Starting Structural Synthesis in {target_dir}...")
-    for root, dirs, files in os.walk(target_dir):
+    for root, _dirs, files in os.walk(target_dir):
         if "__pycache__" in root:
             continue
         for file in files:

@@ -1,5 +1,4 @@
-"""
-GVRN.Protocol.Assembler (AOP-DTS-001)
+"""GVRN.Protocol.Assembler (AOP-DTS-001)
 Domain: AOP | State: ACTIVE | Version: v13.0
 Objective: Dynamically assemble v13.0 Omega Artifacts from SELT Building Blocks.
 """
@@ -15,7 +14,10 @@ from rich.logging import RichHandler
 
 # Configure Logging (Sentinel Style)
 logging.basicConfig(
-    level=logging.INFO, format="%(message)s", datefmt="[%X]", handlers=[RichHandler(rich_tracebacks=True)]
+    level=logging.INFO,
+    format="%(message)s",
+    datefmt="[%X]",
+    handlers=[RichHandler(rich_tracebacks=True)],
 )
 logger = logging.getLogger("Assembler")
 console = Console()
@@ -26,8 +28,7 @@ OUTPUT_DIR = Path(os.getcwd())  # Default to current execution dir
 
 
 class Assembler:
-    """
-    The Engine of the Dynamic Template Ecosystem.
+    """The Engine of the Dynamic Template Ecosystem.
     Fetches SELTs -> Injects Vars -> Assembles Artifact.
     """
 
@@ -48,9 +49,10 @@ class Assembler:
             logger.error(f"❌ Failed to fetch SELT: {selt_name}")
             raise e
 
-    def forge_artifact(self, context: dict[str, Any], output_path: Path | None = None) -> str:
-        """
-        Assembles the Sovereign Artifact using the 6-Block Omega Schema.
+    def forge_artifact(
+        self, context: dict[str, Any], output_path: Path | None = None
+    ) -> str:
+        """Assembles the Sovereign Artifact using the 6-Block Omega Schema.
         Supports optional blocks via context flags.
         """
         logger.info(f"🔨 Forging Artifact: {context.get('filename', 'Unknown')}")
@@ -88,7 +90,9 @@ class Assembler:
             # Special Handling for Content Injection
             if block_name == "SELT-GATE-CIV":
                 # Inject Content Body BEFORE the Gate (between Spine and Gate)
-                content_body = context.get("content_body", "\n<!-- Content Placeholder -->\n")
+                content_body = context.get(
+                    "content_body", "\n<!-- Content Placeholder -->\n"
+                )
                 assembled_content.append(content_body)
 
             # Render the Block

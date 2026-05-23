@@ -1,4 +1,5 @@
 # UMB-ESF-001_TheEpisemanticFramework_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,41 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.ESF.001` | The Sovereign ID. |
-| **Official Name** | `UMB-ESF-001_TheEpisemanticFramework_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.ESF.001`                                 | The Sovereign ID. |
+| **Official Name**   | `UMB-ESF-001_TheEpisemanticFramework_v11.1.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
+
 UIP: UMB-ESF-001
 Title: The Episemantic Framework
-Source: 
-  - [ORIGIN_FILE_V11.1](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ESF-001_TheEpisemanticFramework_v11.1.md)
-  - [ORIGIN_FILE_V11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ESF-001TheEpisemanticFramework_v11.0.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE_V11.1](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ESF-001_TheEpisemanticFramework_v11.1.md)
+- [ORIGIN_FILE_V11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ESF-001TheEpisemanticFramework_v11.0.md)
+  Description: >
   The master mechanism that translates high-level principles into actionable logic by annotating information with a dynamic meta-layer of context.
-Version: 11.1 (Sovereign Fusion)
-Status: CANONIZED
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-24
-  - Timestamp: 1769251200
-Tags: 
-  - #Wisdom
-  - #Episemantics
-  - #Ontology
-  - #Anti-Entropy
-  - #GVRN
+  Version: 11.1 (Sovereign Fusion)
+  Status: CANONIZED
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-24
+- Timestamp: 1769251200
+  Tags:
+- #Wisdom
+- #Episemantics
+- #Ontology
+- #Anti-Entropy
+- #GVRN
+
 ---
 
 > [!IMPORTANT]

@@ -55,7 +55,9 @@ def migrate() -> None:
         return
 
     try:
-        pg_conn = psycopg2.connect(dbname=db, user=user, password=password, host="localhost", port="5432")
+        pg_conn = psycopg2.connect(
+            dbname=db, user=user, password=password, host="localhost", port="5432"
+        )
         pg_cursor = pg_conn.cursor()
         logger.info("Connected to PostgreSQL successful.")
     except Exception as e:
@@ -64,7 +66,9 @@ def migrate() -> None:
         return
 
     try:
-        sl_cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='experience_logs'")
+        sl_cursor.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='experience_logs'"
+        )
         if not sl_cursor.fetchone():
             logger.error("Table 'experience_logs' not found in SQLite.")
             return
@@ -93,7 +97,10 @@ def migrate() -> None:
                 "agent_intent": agent_intent,
                 "full_log_data": full_log_data,
             }
-            pg_cursor.execute(insert_query, (log_timestamp, "INTERACTION", "AXION_PRIME", Json(details_json), 0.1))
+            pg_cursor.execute(
+                insert_query,
+                (log_timestamp, "INTERACTION", "AXION_PRIME", Json(details_json), 0.1),
+            )
             migrated_count += 1
 
         pg_conn.commit()

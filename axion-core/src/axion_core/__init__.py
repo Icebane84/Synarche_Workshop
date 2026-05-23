@@ -1,5 +1,4 @@
-"""
-# CORE-INIT: Axion Core Module Initialization
+"""# CORE-INIT: Axion Core Module Initialization.
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -21,7 +20,6 @@
 ### **I.B. Axiom Reference**
 > "To begin is to set the resonance for all that follows." — Axiom of Initiation
 """
-
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -24,8 +23,7 @@ from typing import Any, List
 
 
 class SeltLogger:
-    """
-    WHAT: Generates Standardized Experience Logs (SELT).
+    """WHAT: Generates Standardized Experience Logs (SELT).
     HOW: Appends formatted JSON strings to the repository audit_log.txt.
     WHY: To provide an immutable history of System Entropy for AI ingestion.
     """
@@ -33,14 +31,16 @@ class SeltLogger:
     def __init__(self, root_dir: str):
         self.log_path = os.path.join(root_dir, "audit_log.txt")
 
-    def record_synthesis(self, status: str, entropy: float, findings: List[Any]) -> None:
-        """
-        Records a synthesis event to the audit log.
-        
+    def record_synthesis(
+        self, status: str, entropy: float, findings: List[Any]
+    ) -> None:
+        """Records a synthesis event to the audit log.
+
         Args:
             status (str): The status of the synthesis (e.g., STABLE, DEGRADED).
             entropy (float): The calculated entropy level.
             findings (List[Any]): A list of findings or errors discovered during synthesis.
+
         """
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -48,7 +48,7 @@ class SeltLogger:
             "timestamp": timestamp,
             "status": status,
             "entropy": entropy,
-            "findings": findings
+            "findings": findings,
         }
 
         with open(self.log_path, "a", encoding="utf-8") as l:

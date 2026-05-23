@@ -78,10 +78,10 @@
 
 - **Formula**: $$ \text{Final XP} = \text{Base XP} \times (1 + \frac{\text{AES}}{10}) $$
 - **Impact**:
-    - **AES 1-4**: "Brute Force". Minimal XP.
-    - **AES 5-7**: "Industry Standard". Standard XP.
-    - **AES 8-9**: "Masterwork". 1.8x - 1.9x XP.
-    - **AES 10**: "Golden Ratio". 2.0x XP + "Legendary" Alert.
+  - **AES 1-4**: "Brute Force". Minimal XP.
+  - **AES 5-7**: "Industry Standard". Standard XP.
+  - **AES 8-9**: "Masterwork". 1.8x - 1.9x XP.
+  - **AES 10**: "Golden Ratio". 2.0x XP + "Legendary" Alert.
 
 ---
 

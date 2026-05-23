@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `SELT-CSL-001_CollaborativeSynthesisLog_Template` |
-| **2. Official Name** | `SELT-CSL-001_CollaborativeSynthesisLog_Template.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `LOGS` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                                |
+| :--------------------- | :--------------------------------------------------- |
+| **1. Artifact ID**     | `SELT-CSL-001_CollaborativeSynthesisLog_Template`    |
+| **2. Official Name**   | `SELT-CSL-001_CollaborativeSynthesisLog_Template.md` |
+| **3. Version**         | **v1.0 (Reforged)**                                  |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                        |
+| **5. Domain**          | `LOGS`                                               |
+| **6. Evolution**       | **Purposeful Drive**                                 |
+| **7. Celestial Class** | `[PLANET]`                                           |
+| **8. Tier**            | **Operational**                                      |
+| **9. State**           | `[ACTIVE]`                                           |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**                   |
+| **11. Catalyst**       | **System Refactor**                                  |
+| **12. Relations**      | `Pending Integration`                                |
 
 ---
 
@@ -86,20 +86,20 @@
 
 - **Methodology:** `[Inference / Analogy / Pattern Recognition / Contradiction Resolution]`
 - **Cognitive Pathway:**
-  > *Describe the reasoning used to connect these anchors. How did A lead to B?*
+  > _Describe the reasoning used to connect these anchors. How did A lead to B?_
 
 ### **V. Output Vector (The New Knowledge)**
 
 - **New Edges Created:**
-    - `[Anchor A] --[RELATIONSHIP_TYPE]--> [Anchor B]`
-    - `[Anchor A] --[RELATIONSHIP_TYPE]--> [Anchor C]`
+  - `[Anchor A] --[RELATIONSHIP_TYPE]--> [Anchor B]`
+  - `[Anchor A] --[RELATIONSHIP_TYPE]--> [Anchor C]`
 - **Emergent Insights:**
-  > *What new understanding has emerged from this synthesis that did not exist in the individual parts?*
+  > _What new understanding has emerged from this synthesis that did not exist in the individual parts?_
 
 ### **VI. Synergy Metrics (The Value)**
 
 - **Synergy Score (0.0 - 1.0):** `[Score]`
-    - *Rationale:* `[Why is this connection valuable?]`
+  - _Rationale:_ `[Why is this connection valuable?]`
 - **Coherence Impact:** `[Neutral / Reinforcing / Transformative]`
 
 ### **VII. Actionable Prompt Packet**

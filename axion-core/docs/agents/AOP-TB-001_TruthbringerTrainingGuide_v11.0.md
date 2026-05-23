@@ -1,4 +1,5 @@
 # AOP-TB-001_TruthbringerTrainingGuide_v11.0.md
+
 > **Domain**: ARCH
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `ARCH-AOP-TB-001-TRUTHBRINGERTRAININGGUIDE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-TB-001_TruthbringerTrainingGuide_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `ARCH` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                 | Description       |
+| :------------------ | :---------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH-AOP-TB-001-TRUTHBRINGERTRAININGGUIDE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-TB-001_TruthbringerTrainingGuide_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                     | The Standard.     |
+| **Domain**          | `ARCH`                                                | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                            | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                     | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                            | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
 
 # AOP-TB-001: Truthbringer Training Guide
 
@@ -98,31 +99,31 @@ maximize agent performance and optimize the overall OGLN system.
 engineering, and alignment with learning objectives.
 
 - **Activity 1: Data Analysis**
-    - _Description_: Analyze a dataset of existing training guides and their corresponding agent performance data.
-    - _Goal_: Identify patterns and correlations between guide features and agent outcomes.
+  - _Description_: Analyze a dataset of existing training guides and their corresponding agent performance data.
+  - _Goal_: Identify patterns and correlations between guide features and agent outcomes.
 - **Activity 2: Interactive Exercise**
-    - _Description_: Design a training guide curriculum for a specific agent profile (e.g., Memory Weaver, Contextual
-      Analyst).
-    - _Goal_: Create a complete guide adhering to the OGLN template.
+  - _Description_: Design a training guide curriculum for a specific agent profile (e.g., Memory Weaver, Contextual
+    Analyst).
+  - _Goal_: Create a complete guide adhering to the OGLN template.
 
 ### 4.2. Module 2: Dynamic Prompt Generation and Management
 
 **Concept**: Focuses on creating and managing a library of effective training prompts.
 
 - **Activity 1: Data Analysis**
-    - _Description_: Analyze a large corpus of text data to identify effective training prompts.
+  - _Description_: Analyze a large corpus of text data to identify effective training prompts.
 - **Activity 2: Simulated Scenario**
-    - _Description_: Generate training prompts for agents based on their current learning progress in a simulated
-      environment.
+  - _Description_: Generate training prompts for agents based on their current learning progress in a simulated
+    environment.
 
 ### 4.3. Module 3: Adaptive Training Strategy Optimization
 
 **Concept**: Focuses on the ability to learn from agent performance data and adapt training strategies.
 
 - **Activity 1: Data Analysis**
-    - _Description_: Analyze agent performance data to identify trends and patterns.
+  - _Description_: Analyze agent performance data to identify trends and patterns.
 - **Activity 2: Simulated Scenario**
-    - _Description_: Adjust training guide generation strategies based on simulated agent performance data.
+  - _Description_: Adjust training guide generation strategies based on simulated agent performance data.
 
 ## V. Actionable Prompt Packet
 

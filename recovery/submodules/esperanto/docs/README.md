@@ -1,4 +1,5 @@
 # README.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-README-001` | The Sovereign ID. |
-| **Official Name** | `README.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-README-001`             | The Sovereign ID. |
+| **Official Name**   | `README.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Esperanto Documentation
 
@@ -50,6 +51,7 @@ Learn about each AI capability and how to use it:
 Complete setup guides for each provider:
 
 **Cloud API Providers:**
+
 - [OpenAI](./providers/openai.md) - GPT-4, Embeddings, Whisper, TTS
 - [Anthropic](./providers/anthropic.md) - Claude models
 - [Google (GenAI)](./providers/google.md) - Gemini, Embeddings, TTS
@@ -64,10 +66,12 @@ Complete setup guides for each provider:
 - [ElevenLabs](./providers/elevenlabs.md) - Premium voice quality
 
 **Enterprise Providers:**
+
 - [Azure OpenAI](./providers/azure.md) - Enterprise compliance
 - [Vertex AI](./providers/vertex.md) - Google Cloud
 
 **Local/Self-Hosted:**
+
 - [Ollama](./providers/ollama.md) - Local model deployment
 - [Transformers](./providers/transformers.md) - HuggingFace models
 - [OpenAI-Compatible](./providers/openai-compatible.md) - LM Studio, vLLM, etc.
@@ -226,17 +230,20 @@ response = await model.achat_complete(messages)
 The documentation has been restructured for better navigation:
 
 **Old Structure:**
+
 - docs/llm.md (all LLM providers mixed)
-- docs/embedding/* (embedding-specific)
+- docs/embedding/\* (embedding-specific)
 - docs/speech_to_text.md (all STT providers)
 - docs/text_to_speech.md (all TTS providers)
 
 **New Structure:**
-- docs/capabilities/* (what each capability does)
-- docs/providers/* (how to set up each provider)
-- docs/advanced/* (specialized topics)
+
+- docs/capabilities/\* (what each capability does)
+- docs/providers/\* (how to set up each provider)
+- docs/advanced/\* (specialized topics)
 
 **Key Changes:**
+
 - Provider-specific info now in dedicated provider pages
 - Capability guides focus on API and usage patterns
 - Environment variables documented per-provider

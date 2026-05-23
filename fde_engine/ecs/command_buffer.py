@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -36,9 +35,13 @@ class CommandBuffer:
         self.execution_index = execution_index
         self.commands = []
 
-    def add(self, action: str, entity_id: int, component_type: Optional[Type], payload: Any) -> None:
+    def add(
+        self, action: str, entity_id: int, component_type: Optional[Type], payload: Any
+    ) -> None:
         """Records a deterministic command to be executed during the single-threaded commit phase."""
-        self.commands.append(Command(self.execution_index, action, entity_id, component_type, payload))
+        self.commands.append(
+            Command(self.execution_index, action, entity_id, component_type, payload)
+        )
 
     def clear(self) -> None:
         self.commands.clear()

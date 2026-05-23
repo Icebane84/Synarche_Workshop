@@ -4,11 +4,7 @@
   "turn_id": "ETHOS-CANONIZATION",
   "cognitive_state": {
     "system_mode": "Shared Governance & Ethical Integration",
-    "active_personalities": [
-      "@sophia",
-      "@sentinel",
-      "@axion"
-    ],
+    "active_personalities": ["@sophia", "@sentinel", "@axion"],
     "current_focus": "Translating philosophical principles into executable code architecture."
   },
   "telemetry": {

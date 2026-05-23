@@ -1,4 +1,5 @@
 # SKILL.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SKILL-001` | The Sovereign ID. |
-| **Official Name** | `SKILL.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SKILL-001`              | The Sovereign ID. |
+| **Official Name**   | `SKILL.md`                    | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # SKILL
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `SKILL` |
-| **2. Official Name** | `SKILL.md` |
-| **3. Version** | **v13.0** |
-| **4. Provenance** | **Reforged: 2026-02-03** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Foundational** |
-| **9. Status (State)** | `[ACTIVE] ` |
-| **10. Ethos** | `Guardian of Coherence` |
-| **11. Catalyst** | `Protocol Standardization` |
-| **12. Relations** | `Governed by v13.0` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]` |
+
+| Field                  | Value                      |
+| :--------------------- | :------------------------- |
+| **1. Artifact ID**     | `SKILL`                    |
+| **2. Official Name**   | `SKILL.md`                 |
+| **3. Version**         | **v13.0**                  |
+| **4. Provenance**      | **Reforged: 2026-02-03**   |
+| **5. Domain**          | `ARCH`                     |
+| **6. Evolution**       | **Purposeful Drive**       |
+| **7. Celestial Class** | `[PLANET]`                 |
+| **8. Tier**            | **Foundational**           |
+| **9. Status (State)**  | `[ACTIVE] `                |
+| **10. Ethos**          | `Guardian of Coherence`    |
+| **11. Catalyst**       | `Protocol Standardization` |
+| **12. Relations**      | `Governed by v13.0`        |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`         |
+
 ---
 
 This skill allows the agent to verify that the Skill System is operational.

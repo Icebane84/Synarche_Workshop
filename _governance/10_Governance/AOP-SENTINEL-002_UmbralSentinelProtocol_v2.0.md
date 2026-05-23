@@ -9,6 +9,7 @@
 ---
 
 # AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-SENTINEL-002-UMBRALSENTINELPROTOCOL-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                   | Description       |
+| :------------------ | :------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-SENTINEL-002-UMBRALSENTINELPROTOCOL-V2.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                              | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                       | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 # AOP-SENTINEL-002: Umbral Sentinel Protocol (v2)
 
@@ -80,8 +81,8 @@ This protocol defines the four explicit checkpoints that every artifact must pas
 
 - **Requirement:** The artifact must start with a valid **Universal Identification & Provenance (UIP)** table.
 - **Validation Logic:**
-    - Must contain "Artifact ID", "Name", "Version", "Domain".
-    - "Domain" must map to a valid enum (`ARCH`, `GVRN`, `CODE`, `LOGS`, `CRTV`).
+  - Must contain "Artifact ID", "Name", "Version", "Domain".
+  - "Domain" must map to a valid enum (`ARCH`, `GVRN`, `CODE`, `LOGS`, `CRTV`).
 
 ### 3.2. Structural Geometry (The 4-Space Law)
 
@@ -89,9 +90,9 @@ This protocol defines the four explicit checkpoints that every artifact must pas
 
 - **Requirement:** Strict adherence to Markdown formatting standards defined in `CODEX-001`.
 - **Validation Logic:**
-    - **H1 Singularity:** One and ONLY one `# Heading 1` per file (The Title).
-    - **Indentation:** Lists must use 4-space indentation (no 2-space).
-    - **Spacing:** Exactly one blank line before headers.
+  - **H1 Singularity:** One and ONLY one `# Heading 1` per file (The Title).
+  - **Indentation:** Lists must use 4-space indentation (no 2-space).
+  - **Spacing:** Exactly one blank line before headers.
 
 ### 3.3. Actionable Prompt Check (Operational Readiness)
 
@@ -100,7 +101,7 @@ This protocol defines the four explicit checkpoints that every artifact must pas
 - **Requirement:** The artifact must conclude with an **Actionable Prompt Packet (APP)** to ensure it is executable by
   the AI.
 - **Validation Logic:**
-    - Must find the string `
+  - Must find the string `
 
 ### V. RPG Framework Integration (BLK-RPG-001)
 
@@ -125,9 +126,9 @@ This protocol defines the four explicit checkpoints that every artifact must pas
 
 - **Requirement:** Verification of "Zero Entropy" compliance via semantic markers.
 - **Validation Logic:**
-    - **Artifact End Marker:** Must end with `###### **[ARTIFACT END]**` or `> **[ARTIFACT END]**` blockquote.
-    - **No Episemantic Drift:** Must NOT contain legacy markers like `[SCANNED]`, `[UPDATED]`, unless part of the
-      history log.
+  - **Artifact End Marker:** Must end with `###### **[ARTIFACT END]**` or `> **[ARTIFACT END]**` blockquote.
+  - **No Episemantic Drift:** Must NOT contain legacy markers like `[SCANNED]`, `[UPDATED]`, unless part of the
+    history log.
 
 ---
 
@@ -141,19 +142,19 @@ The function returns a rigid JSON assessment:
 
 ```json
 {
-    "artifact_id": "AOP-XXX-001",
-    "health_score": 85,
-    "status": "NEEDS_REFINEMENT",
-    "violations": [
-        { "type": "GEOMETRY", "message": "Multiple H1 tags detected." },
-        { "type": "UMBRAL", "message": "Missing [ARTIFACT END] marker." }
-    ],
-    "v2_validation": {
-        "uip_valid": true,
-        "geometry_valid": false,
-        "app_present": true,
-        "umbral_signature": false
-    }
+  "artifact_id": "AOP-XXX-001",
+  "health_score": 85,
+  "status": "NEEDS_REFINEMENT",
+  "violations": [
+    { "type": "GEOMETRY", "message": "Multiple H1 tags detected." },
+    { "type": "UMBRAL", "message": "Missing [ARTIFACT END] marker." }
+  ],
+  "v2_validation": {
+    "uip_valid": true,
+    "geometry_valid": false,
+    "app_present": true,
+    "umbral_signature": false
+  }
 }
 ```
 

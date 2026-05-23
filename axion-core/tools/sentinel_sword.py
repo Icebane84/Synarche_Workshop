@@ -1,5 +1,4 @@
-"""
-# TOOL-SENT-006: The Sentinel's Sword (Audit Engine)
+"""# TOOL-SENT-006: The Sentinel's Sword (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -68,8 +67,7 @@ PLAYGROUND_DIR = ROOT_DIR / "Playground" / "tarot-forge"
 
 
 def resolve_executable(cmd_name: str) -> str:
-    """
-    Resolves executable path, vital for Windows (npx -> npx.cmd).
+    """Resolves executable path, vital for Windows (npx -> npx.cmd).
     Checks PATH and PATHEXT logic via shutil.which.
     """
     path = shutil.which(cmd_name)
@@ -85,7 +83,9 @@ def resolve_executable(cmd_name: str) -> str:
     return cmd_name
 
 
-def run_command(cmd: list[str], cwd: str | Path | None = None, description: str = "task") -> None:
+def run_command(
+    cmd: list[str], cwd: str | Path | None = None, description: str = "task"
+) -> None:
     """Executes a shell command and prints status safely."""
     logger.info(f"\n--- [SENTINEL] Executing {description} ---")
 
@@ -99,7 +99,9 @@ def run_command(cmd: list[str], cwd: str | Path | None = None, description: str 
     logger.info(f"Directory: {working_dir}")
 
     try:
-        result = subprocess.run(resolved_cmd, cwd=working_dir, check=False, capture_output=True, text=True)
+        result = subprocess.run(
+            resolved_cmd, cwd=working_dir, check=False, capture_output=True, text=True
+        )
 
         if result.stdout:
             logger.info(result.stdout)
@@ -110,7 +112,9 @@ def run_command(cmd: list[str], cwd: str | Path | None = None, description: str 
         if result.returncode == 0:
             logger.info(f"   > {description}: SUCCESS (Clean)")
         else:
-            logger.warning(f"   > {description}: COMPLETED (Exit Code: {result.returncode})")
+            logger.warning(
+                f"   > {description}: COMPLETED (Exit Code: {result.returncode})"
+            )
 
         logger.info(f"   > [ERROR] Command not found: {resolved_cmd[0]}")
     except Exception:
@@ -155,7 +159,9 @@ def fix_typescript(target_dirs: list[str | Path]) -> None:
 
         if target_path.exists() and (target_path / "package.json").exists():
             if not (target_path / "node_modules").exists():
-                logger.warning(f"   > [WARNING] node_modules not found in {target_path.name}. Run 'npm install' first.")
+                logger.warning(
+                    f"   > [WARNING] node_modules not found in {target_path.name}. Run 'npm install' first."
+                )
                 continue
 
             run_command(
@@ -164,12 +170,16 @@ def fix_typescript(target_dirs: list[str | Path]) -> None:
                 description=f"Fixing TS/JS in {target_path.name}",
             )
         else:
-            logger.warning(f"   > [SKIP] Target not valid for TS Linting: {target_path}")
+            logger.warning(
+                f"   > [SKIP] Target not valid for TS Linting: {target_path}"
+            )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Sentinel Auto-Fix Tool")
-    parser.add_argument("--scope", choices=["all", "python", "ts"], default="all", help="Scope of fixes")
+    parser.add_argument(
+        "--scope", choices=["all", "python", "ts"], default="all", help="Scope of fixes"
+    )
     args = parser.parse_args()
 
     # Targets

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Full Verification Suite - Antigravity Kit
+"""Full Verification Suite - Antigravity Kit.
 ==========================================
 
 Runs COMPLETE validation including all checks + performance + E2E.
@@ -22,12 +21,12 @@ Includes ALL checks:
     ✅ Mobile Audit (if applicable)
 """
 
-import sys
-import subprocess
 import argparse
-from pathlib import Path
-from typing import List, Dict, Optional
+import subprocess
+import sys
 from datetime import datetime
+from pathlib import Path
+from typing import List, Optional
 
 
 # ANSI colors
@@ -205,7 +204,7 @@ VERIFICATION_SUITE = [
 def run_script(
     name: str, script_path: Path, project_path: str, url: Optional[str] = None
 ) -> dict:
-    """Run validation script"""
+    """Run validation script."""
     if not script_path.exists():
         print_warning(f"{name}: Script not found, skipping")
         return {"name": name, "passed": True, "skipped": True, "duration": 0}
@@ -273,7 +272,7 @@ def run_script(
 
 
 def print_final_report(results: List[dict], start_time: datetime):
-    """Print comprehensive final report"""
+    """Print comprehensive final report."""
     total_duration = (datetime.now() - start_time).total_seconds()
 
     print_header("📊 FULL VERIFICATION REPORT")

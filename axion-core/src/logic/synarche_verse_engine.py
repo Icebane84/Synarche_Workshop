@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -58,10 +57,10 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class VerseNode:
-    """
-    A node in the Coherent Verse (File, Agent, or Concept).
+    """A node in the Coherent Verse (File, Agent, or Concept).
     Represents a single entity within the Synarche Knowledge Graph.
     """
+
     id: str
     domain: str = "GVRN"
     resonance: float = 1.0
@@ -69,8 +68,7 @@ class VerseNode:
 
 
 class CoherentVerseEngine:
-    """
-    The Master Orchestrator of the Synarche Verse.
+    """The Master Orchestrator of the Synarche Verse.
     Mandate: Resolve dissonance through ContextWeave and Precognitive Alignment.
     """
 
@@ -82,8 +80,7 @@ class CoherentVerseEngine:
         logger.info(f"[AXION] {self.__class__.__name__} Initialized (OMEGA v15.0).")
 
     async def weave_context(self, source_id: str, target_ids: list[str]) -> bool:
-        """
-        [CONTEXT-WEAVE] Establishes bidirectional synergistic links between entities.
+        """[CONTEXT-WEAVE] Establishes bidirectional synergistic links between entities.
         Goal: Enhance the Coherence Index (CI) of the workspace.
 
         Args:
@@ -92,6 +89,7 @@ class CoherentVerseEngine:
 
         Returns:
             True if any new links were established, else False.
+
         """
         if source_id not in self.verse_map:
             self.verse_map[source_id] = VerseNode(id=source_id)
@@ -102,7 +100,7 @@ class CoherentVerseEngine:
         for t_id in target_ids:
             if t_id not in source_node.edges:
                 source_node.edges.add(t_id)
-                
+
                 # Bidirectional Linkage
                 if t_id not in self.verse_map:
                     self.verse_map[t_id] = VerseNode(id=t_id)
@@ -110,17 +108,19 @@ class CoherentVerseEngine:
                 new_links += 1
 
         if new_links > 0:
-            logger.info(f"[WEAVE] Created {new_links} new synergistic links for {source_id}.")
+            logger.info(
+                f"[WEAVE] Created {new_links} new synergistic links for {source_id}."
+            )
             return True
         return False
 
     def calculate_synergy_flow(self) -> float:
-        """
-        [KPI: SFR] Computes the Synergy Flow Rate.
-        Formula: (Sum of Resonance * Link Density) / Node Count
+        """[KPI: SFR] Computes the Synergy Flow Rate.
+        Formula: (Sum of Resonance * Link Density) / Node Count.
 
         Returns:
             The calculated Synergy Flow Rate (SFR) as a float.
+
         """
         if not self.verse_map:
             return 0.0
@@ -136,14 +136,14 @@ class CoherentVerseEngine:
         return round(sfr, 4)
 
     async def project_intent_vector(self, current_task: str) -> list[str]:
-        """
-        [PRECOGNITIVE-STANCE] Predicts the next logical structural evolutions for a given task.
+        """[PRECOGNITIVE-STANCE] Predicts the next logical structural evolutions for a given task.
 
         Args:
             current_task: The description of the current task.
 
         Returns:
             A list of predicted structural transmutations.
+
         """
         logger.info(f"[PRECOG] Projecting intent vector for task: {current_task}")
         predictions = [
@@ -153,18 +153,18 @@ class CoherentVerseEngine:
         return predictions
 
     async def audit_coherence(self) -> dict[str, Any]:
-        """
-        [CIV-GATE] Identifies orphaned nodes and structural dissonance within the verse.
+        """[CIV-GATE] Identifies orphaned nodes and structural dissonance within the verse.
 
         Returns:
             A dictionary containing the Coherence Index, orphan list, and overall status.
+
         """
         if not self.verse_map:
             return {
                 "coherence_index": 1.0,
                 "orphans": [],
                 "sfr": 0.0,
-                "status": "STABLE"
+                "status": "STABLE",
             }
 
         orphans = [node.id for node in self.verse_map.values() if not node.edges]
@@ -178,11 +178,11 @@ class CoherentVerseEngine:
         }
 
     async def identify_resonance_gaps(self) -> list[str]:
-        """
-        [RESONANCE-SCAN] Identifies domains with low synergy density relative to their resonance.
+        """[RESONANCE-SCAN] Identifies domains with low synergy density relative to their resonance.
 
         Returns:
             A list of identified resonance gaps.
+
         """
         gaps = []
         for node_id, node in self.verse_map.items():
@@ -192,6 +192,7 @@ class CoherentVerseEngine:
 
 
 if __name__ == "__main__":
+
     async def main() -> None:
         """Main entry point for local testing."""
         engine = CoherentVerseEngine()
@@ -207,9 +208,11 @@ if __name__ == "__main__":
         audit = await engine.audit_coherence()
         gaps = await engine.identify_resonance_gaps()
 
-        print(f"[AUDIT] Coherence Index: {audit['coherence_index']} | Synergy Flow Rate (SFR): {audit['sfr']}")
+        print(
+            f"[AUDIT] Coherence Index: {audit['coherence_index']} | Synergy Flow Rate (SFR): {audit['sfr']}"
+        )
         print(f"[SCAN] Resonance Gaps: {gaps}")
-        
+
         projections = await engine.project_intent_vector("Enhance_Verse_Engine")
         print(f"[PRECOG] Projections: {projections}")
 

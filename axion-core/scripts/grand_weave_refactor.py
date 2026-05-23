@@ -7,7 +7,7 @@ BLOCK_F_PATTERN = re.compile(
     re.DOTALL,
 )
 BLOCK_G_PATTERN = re.compile(
-    r"### \*\*Block G: The Omni-Anchor \(System Snapshot\)\*\*.*?\[OMNI-ARTIFACT-ANCHOR\].*?(?:---|$)",
+    r"### \*\*Block G: The Omni-Anchor \(System Snapshot\)\*\*.*?\* \[OMNI-ARTIFACT-ANCHOR\],?.*? \[PHOENIX-ARTIFACT-ANCHOR\].*?(?:---|$)",
     re.DOTALL,
 )
 
@@ -19,11 +19,15 @@ def refactor_file(file_path: Path) -> bool:
 
     # 1. Replace Block F
     if "SELT-GATE-CIV-001.md" not in content:
-        content = BLOCK_F_PATTERN.sub("\n{{ TRANSCLUDE: SELT-GATE-CIV-001.md }}\n", content)
+        content = BLOCK_F_PATTERN.sub(
+            "\n{{ TRANSCLUDE: SELT-GATE-CIV-001.md }}\n", content
+        )
 
     # 2. Replace Block G
     if "SELT-ANCHOR-OMNI.md" not in content:
-        content = BLOCK_G_PATTERN.sub("\n{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}\n", content)
+        content = BLOCK_G_PATTERN.sub(
+            "\n{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}\n", content
+        )
 
     if content != original_content:
         file_path.write_text(content, encoding="utf-8")
@@ -31,7 +35,7 @@ def refactor_file(file_path: Path) -> bool:
     return False
 
 
-def grand_weave(target_dir: str):
+def grand_weave(target_dir: str) -> None:
     """Recursively refactor the governance substrate."""
     root = Path(target_dir).resolve()
     print(f"\n>>> INITIATING GRAND WEAVE REFACTOR: {root}\n")
@@ -41,7 +45,10 @@ def grand_weave(target_dir: str):
 
     for file_path in root.glob("**/*.md"):
         # Skip templates and archives
-        if "templates" in str(file_path).lower() or "_archive" in str(file_path).lower():
+        if (
+            "templates" in str(file_path).lower()
+            or "_archive" in str(file_path).lower()
+        ):
             continue
 
         total_count += 1

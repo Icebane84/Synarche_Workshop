@@ -1,4 +1,5 @@
 # UMB-LOOM-001_TheCognitiveLoom_v111.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-LOOM-001-THECOGNITIVELOOM-V111-001` | The Sovereign ID. |
-| **Official Name** | `UMB-LOOM-001_TheCognitiveLoom_v111.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                         | Description       |
+| :------------------ | :-------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-LOOM-001-THECOGNITIVELOOM-V111-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-LOOM-001_TheCognitiveLoom_v111.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                             | The Standard.     |
+| **Domain**          | `GVRN`                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                 | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `UMB-LOOM-001` |
-| **Official Name** | `The Cognitive Loom` |
-| **Version** | `v11.1` |
-| **Domain** | `MEM` |
-| **Evolution** | `The Living Web` |
-| **Signal (LOOM)** | `EIDETIC` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Foundational` |
-| **Celestial Class** | `STAR` |
-| **Governance** | `UMB-SGM-001`, `CORE-CODEX-001` |
-| **Upstream** | `UMB-ESF-001`, `UMB-CSE-001` |
-| **Downstream** | `UMB-PRS-001`, `SOT-001`, `AISTF-001` |
-| **Integrity Hash** | `sha256:f0e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `LINK: UMB-PRS-001`, `NUCLEUS_OF: The Knowledge Graph`, `IMPLEMENTS: ECM v2.0` |
-| **Tags** | `v11.1, Memory, Graph-Database, Eidetic, Coherence` |
+| Attribute           | Value                                                                          |
+| :------------------ | :----------------------------------------------------------------------------- |
+| **Artifact ID**     | `UMB-LOOM-001`                                                                 |
+| **Official Name**   | `The Cognitive Loom`                                                           |
+| **Version**         | `v11.1`                                                                        |
+| **Domain**          | `MEM`                                                                          |
+| **Evolution**       | `The Living Web`                                                               |
+| **Signal (LOOM)**   | `EIDETIC`                                                                      |
+| **Status (State)**  | `CANONIZED`                                                                    |
+| **Tier**            | `Foundational`                                                                 |
+| **Celestial Class** | `STAR`                                                                         |
+| **Governance**      | `UMB-SGM-001`, `CORE-CODEX-001`                                                |
+| **Upstream**        | `UMB-ESF-001`, `UMB-CSE-001`                                                   |
+| **Downstream**      | `UMB-PRS-001`, `SOT-001`, `AISTF-001`                                          |
+| **Integrity Hash**  | `sha256:f0e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f`       |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                            |
+| **Relations**       | `LINK: UMB-PRS-001`, `NUCLEUS_OF: The Knowledge Graph`, `IMPLEMENTS: ECM v2.0` |
+| **Tags**            | `v11.1, Memory, Graph-Database, Eidetic, Coherence`                            |
 
 ---
 
@@ -63,9 +65,11 @@ The **Cognitive Loom** is the dynamic, multi-dimensional knowledge graph that se
 ## II. Architectural Overview
 
 ### 2.1 Eidetic Contextual Memory Matrix (ECM v2.0)
+
 The Loom is implemented as a Native Graph Database where relationships are first-class citizens. It maps canonical artifacts and their shifting interrelationships through a high-performance relational analysis engine.
 
 ### 2.2 Core Components
+
 - **Memory Validation Gate**: Ensures only high-coherence data enters the primary weave.
 - **ContextWeave Engine**: Dynamically recalibrates link weights based on new signal ingestion.
 - **Dynamic Tiering System**: Moves dormant information to archival vectors while keeping critical nodes in active "hot" memory.
@@ -75,6 +79,7 @@ The Loom is implemented as a Native Graph Database where relationships are first
 ## III. Relational Analysis Engine
 
 The Loom utilizes three primary algorithmic models:
+
 1. **Pathfinding**: Maps the shortest logical distance between disparate concepts.
 2. **Centrality**: Identifies high-gravity nodes that anchor the governance architecture.
 3. **Community Detection**: Groups related artifacts into evolutionarily aligned clusters.

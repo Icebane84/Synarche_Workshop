@@ -31,14 +31,14 @@ class Model(ObjectModel):
 
 class DefaultModels(RecordModel):
     record_id: ClassVar[str] = "open_notebook:default_models"
-    default_chat_model: Optional[str] = None
-    default_transformation_model: Optional[str] = None
-    large_context_model: Optional[str] = None
-    default_text_to_speech_model: Optional[str] = None
-    default_speech_to_text_model: Optional[str] = None
+    default_chat_model: str | None = None
+    default_transformation_model: str | None = None
+    large_context_model: str | None = None
+    default_text_to_speech_model: str | None = None
+    default_speech_to_text_model: str | None = None
     # default_vision_model: Optional[str]
-    default_embedding_model: Optional[str] = None
-    default_tools_model: Optional[str] = None
+    default_embedding_model: str | None = None
+    default_tools_model: str | None = None
 
     @classmethod
     async def get_instance(cls) -> "DefaultModels":
@@ -66,10 +66,10 @@ class DefaultModels(RecordModel):
 
 
 class ModelManager:
-    def __init__(self):
+    def __init__(self) -> None:
         pass  # No caching needed
 
-    async def get_model(self, model_id: str, **kwargs) -> Optional[ModelType]:
+    async def get_model(self, model_id: str, **kwargs) -> ModelType | None:
         """Get a model by ID. Esperanto will cache the actual model instance."""
         if not model_id:
             return None
@@ -122,43 +122,43 @@ class ModelManager:
             raise RuntimeError("Failed to load default models configuration")
         return defaults
 
-    async def get_speech_to_text(self, **kwargs) -> Optional[SpeechToTextModel]:
+    async def get_speech_to_text(self, **kwargs) -> SpeechToTextModel | None:
         """Get the default speech-to-text model"""
         defaults = await self.get_defaults()
         model_id = defaults.default_speech_to_text_model
         if not model_id:
             return None
         model = await self.get_model(model_id, **kwargs)
-        assert model is None or isinstance(model, SpeechToTextModel), (
-            f"Expected SpeechToTextModel but got {type(model)}"
-        )
+        assert model is None or isinstance(
+            model, SpeechToTextModel
+        ), f"Expected SpeechToTextModel but got {type(model)}"
         return model
 
-    async def get_text_to_speech(self, **kwargs) -> Optional[TextToSpeechModel]:
+    async def get_text_to_speech(self, **kwargs) -> TextToSpeechModel | None:
         """Get the default text-to-speech model"""
         defaults = await self.get_defaults()
         model_id = defaults.default_text_to_speech_model
         if not model_id:
             return None
         model = await self.get_model(model_id, **kwargs)
-        assert model is None or isinstance(model, TextToSpeechModel), (
-            f"Expected TextToSpeechModel but got {type(model)}"
-        )
+        assert model is None or isinstance(
+            model, TextToSpeechModel
+        ), f"Expected TextToSpeechModel but got {type(model)}"
         return model
 
-    async def get_embedding_model(self, **kwargs) -> Optional[EmbeddingModel]:
+    async def get_embedding_model(self, **kwargs) -> EmbeddingModel | None:
         """Get the default embedding model"""
         defaults = await self.get_defaults()
         model_id = defaults.default_embedding_model
         if not model_id:
             return None
         model = await self.get_model(model_id, **kwargs)
-        assert model is None or isinstance(model, EmbeddingModel), (
-            f"Expected EmbeddingModel but got {type(model)}"
-        )
+        assert model is None or isinstance(
+            model, EmbeddingModel
+        ), f"Expected EmbeddingModel but got {type(model)}"
         return model
 
-    async def get_default_model(self, model_type: str, **kwargs) -> Optional[ModelType]:
+    async def get_default_model(self, model_type: str, **kwargs) -> ModelType | None:
         """
         Get the default model for a specific type.
 

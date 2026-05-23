@@ -9,6 +9,7 @@
 ---
 
 # GVRN.PGP.001.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,17 +22,17 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.PGP.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.PGP.001.md` | The Filename. |
-| **Legacy ID** | `AOP-PGP-001` | The Transmuted ID. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description        |
+| :------------------ | :---------------------------- | :----------------- |
+| **Artifact ID**     | `GVRN.PGP.001`                | The Sovereign ID.  |
+| **Official Name**   | `GVRN.PGP.001.md`             | The Filename.      |
+| **Legacy ID**       | `AOP-PGP-001`                 | The Transmuted ID. |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.      |
+| **Domain**          | `GVRN`                        | The Subject.       |
+| **Celestial Class** | `[PLANET]`                    | The Weight.        |
+| **Evolution**       | `Omega Ascension`             | The Maturity.      |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.     |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.       |
 
 ---
 
@@ -39,8 +40,8 @@
 
 > **"The Forge of Truth."**
 
-*   **The Mandate**: The Phoenix Genesis Pipeline (PGP) is the master end-to-end workflow for **Content Architecture**. It governs how an idea is extracted from conversation, structured into an artifact, and committed to the Hybrid Knowledge Graph (HKG).
-*   **The Law**: Every output must be a valid node in the Graph.
+- **The Mandate**: The Phoenix Genesis Pipeline (PGP) is the master end-to-end workflow for **Content Architecture**. It governs how an idea is extracted from conversation, structured into an artifact, and committed to the Hybrid Knowledge Graph (HKG).
+- **The Law**: Every output must be a valid node in the Graph.
 
 ---
 
@@ -49,25 +50,28 @@
 The PGP operates in three distinct phases, ensuring that raw chat data is refined into Sovereign Knowledge.
 
 #### **Phase 1: Architecture (Chat-Based Formulation)**
-*   **Objective**: Generate a complete, well-structured body of raw text formatted in **Markdown**.
-*   **Protocol**:
-    1.  **Context Loading**: Agent ingests `CORE-CODEX-001` and relevant Context files.
-    2.  **Structural Drafting**: Content is drafted using the **SGM-V13 Template**.
-    3.  **Pre-Flight**: Content is checked against `GVRN.Protocol.Genesis`.
+
+- **Objective**: Generate a complete, well-structured body of raw text formatted in **Markdown**.
+- **Protocol**:
+  1.  **Context Loading**: Agent ingests `CORE-CODEX-001` and relevant Context files.
+  2.  **Structural Drafting**: Content is drafted using the **SGM-V13 Template**.
+  3.  **Pre-Flight**: Content is checked against `GVRN.Protocol.Genesis`.
 
 #### **Phase 2: The Transfer (Materialization)**
-*   **Objective**: Move the structured content from the "Ether" (Chat Context) to the "Forge" (Disk).
-*   **Protocol**:
-    1.  **File Creation**: Use `write_to_file` to instantiate the artifact.
-    2.  **Naming**: Enforce `DOMAIN.Subsystem.Descriptor.md` convention.
-    3.  **Pathing**: Place in the correct directory (e.g., `_governance/10_Governance`).
+
+- **Objective**: Move the structured content from the "Ether" (Chat Context) to the "Forge" (Disk).
+- **Protocol**:
+  1.  **File Creation**: Use `write_to_file` to instantiate the artifact.
+  2.  **Naming**: Enforce `DOMAIN.Subsystem.Descriptor.md` convention.
+  3.  **Pathing**: Place in the correct directory (e.g., `_governance/10_Governance`).
 
 #### **Phase 3: Refinement & Governance (Tempering)**
-*   **Objective**: Transform the raw file into a polished, compliant Sovereign Artifact.
-*   **Protocol**:
-    1.  **Sentinel Scan**: Run `compliance_audit.py` to verify Block compliance.
-    2.  **Synergy Linking**: Manually verify bidirectional links in `Block D`.
-    3.  **Registration**: Log the new artifact in `GVRN.Registry.Master.md`.
+
+- **Objective**: Transform the raw file into a polished, compliant Sovereign Artifact.
+- **Protocol**:
+  1.  **Sentinel Scan**: Run `compliance_audit.py` to verify Block compliance.
+  2.  **Synergy Linking**: Manually verify bidirectional links in `Block D`.
+  3.  **Registration**: Log the new artifact in `GVRN.Registry.Master.md`.
 
 ---
 
@@ -84,9 +88,9 @@ The PGP operates in three distinct phases, ensuring that raw chat data is refine
 > [!TIP]
 > Use these commands to execute the Pipeline.
 
-*   ✨ **Initiate Pipeline**: `CMD: START_PGP --topic "[Subject]"`
-*   🚀 **Commit Artifact**: `CMD: COMMIT_ARTIFACT --target "[Filename]"`
-*   🔬 **Verify Output**: `CMD: SENTINEL_SCAN --target "[Filename]"`
+- ✨ **Initiate Pipeline**: `CMD: START_PGP --topic "[Subject]"`
+- 🚀 **Commit Artifact**: `CMD: COMMIT_ARTIFACT --target "[Filename]"`
+- 🔬 **Verify Output**: `CMD: SENTINEL_SCAN --target "[Filename]"`
 
 ---
 

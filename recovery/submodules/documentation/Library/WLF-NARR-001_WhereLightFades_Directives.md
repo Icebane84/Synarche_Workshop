@@ -89,15 +89,15 @@ specific narrative/plot devices.
    ([`CMD: ThematicResonanceWeaver - TRW`](https://docs.google.com/document/u/0/d/1LBjqqU7wL4TwIx8BIClOUqqLyIl5ROZa40vG1njksGY/edit)).
 4. **Core Element Retrieval:** Access relevant character profiles, plot points, and worldbuilding details.
 5. **Draft Generation (Iterative):**
-    - Employ
-      [`CMD: CognitiveForge`](https://docs.google.com/document/u/0/d/1RKpHcNtgDOqwymm3ZeGoKnR-1G0ena2Gx6853pfe3mg/edit)
-      principles for creative problem-solving.
-    - Utilize `Stylistic Feature Extractor (SFE)` for stylistic consistency.
-    - Continuously monitor generated text against ethical filters (`ETHICUS`) and thematic targets (`TRW`).
-    - Use `Emotional Impact Forecaster (EIF)` to predict emotional response in real-time, adjusting prose to achieve
-      desired dread, tension, or subtle horror.
-    - If `ShadowDissonanceAlerts` from `UCI Resonance Meter` are triggered, initiate internal self-correction or flag
-      for human review.
+   - Employ
+     [`CMD: CognitiveForge`](https://docs.google.com/document/u/0/d/1RKpHcNtgDOqwymm3ZeGoKnR-1G0ena2Gx6853pfe3mg/edit)
+     principles for creative problem-solving.
+   - Utilize `Stylistic Feature Extractor (SFE)` for stylistic consistency.
+   - Continuously monitor generated text against ethical filters (`ETHICUS`) and thematic targets (`TRW`).
+   - Use `Emotional Impact Forecaster (EIF)` to predict emotional response in real-time, adjusting prose to achieve
+     desired dread, tension, or subtle horror.
+   - If `ShadowDissonanceAlerts` from `UCI Resonance Meter` are triggered, initiate internal self-correction or flag
+     for human review.
 6. **Refinement:** Apply `CMD: Response Quality Rating (RQR)` and `CMD: Dynamic Narrative Ethics Auditor (DNEA)` for
    internal quality assurance. Offer refined suggestions to user.
 7. **Logging:** Log protocol execution to `SELT` for `AISTF` analysis.
@@ -119,10 +119,10 @@ specific narrative/plot devices.
 **POTENTIAL_ERRORS\_&_MITIGATION:**
 
 - `ERROR_WLF_NARR_001`: Generated prose is contextually irrelevant or thematically shallow.
-    - **Mitigation:** `SELT` logs flagged. `AISTF` cycles with `CMD: CognitiveForge` focus on improving contextual
-      understanding and thematic integration algorithms.
+  - **Mitigation:** `SELT` logs flagged. `AISTF` cycles with `CMD: CognitiveForge` focus on improving contextual
+    understanding and thematic integration algorithms.
 - `ERROR_WLF_NARR_002`: Ethical/thematic misalignment detected by `DNEA` or human review.
-    - **Mitigation:** Protocol stops generation and initiates a `Cognitive Alignment Refinement Protocol (CARP)` cycle.
+  - **Mitigation:** Protocol stops generation and initiates a `Cognitive Alignment Refinement Protocol (CARP)` cycle.
 
 **SYNERGISTIC_EFFECTS\_&_INTEGRATIONS:** This module is the primary orchestrator for creative narrative tasks, directly
 consuming and synergizing outputs from `CMD: ContextWeave`, `Multi-Narrative Thread Weave (MNTV)`,

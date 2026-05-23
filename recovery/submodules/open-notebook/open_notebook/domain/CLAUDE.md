@@ -9,6 +9,7 @@
 ---
 
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Domain Module
 
@@ -43,6 +44,7 @@ Two base classes support different persistence patterns: **ObjectModel** (mutabl
 ## Key Components
 
 ### base.py
+
 - **ObjectModel**: Base for notebooks, sources, notes
   - `save()`: Create/update with auto-embedding for searchable content
   - `delete()`: Remove by ID
@@ -57,6 +59,7 @@ Two base classes support different persistence patterns: **ObjectModel** (mutabl
   - Lazy DB loading via `_load_from_db()`
 
 ### notebook.py
+
 - **Notebook**: Research project container
   - `get_sources()`, `get_notes()`, `get_chat_sessions()`: Navigate relationships
   - `get_delete_preview()`: Returns counts of notes, exclusive sources, and shared sources that would be affected by deletion
@@ -81,9 +84,11 @@ Two base classes support different persistence patterns: **ObjectModel** (mutabl
   - `vector_search()`: Semantic search via embeddings (default minimum_score=0.2)
 
 ### content_settings.py
+
 - **ContentSettings**: Singleton for processing engines, embedding strategy, file deletion, YouTube languages
 
 ### transformation.py
+
 - **Transformation**: Reusable prompts for content transformation
 - **DefaultPrompts**: Singleton with transformation instructions
 
@@ -91,7 +96,7 @@ Two base classes support different persistence patterns: **ObjectModel** (mutabl
 
 - **Async/await**: All DB operations async; always use await
 - **Polymorphic get()**: `ObjectModel.get(id)` determines subclass from ID prefix (table:id format)
-- **Fire-and-forget embedding**: Models submit embed_* commands after save via `submit_command()` (non-blocking)
+- **Fire-and-forget embedding**: Models submit embed\_\* commands after save via `submit_command()` (non-blocking)
 - **Nullable fields**: Declare via `nullable_fields` ClassVar to allow None in database
 - **Timestamps**: `created` and `updated` auto-managed as ISO strings
 - **Fire-and-forget jobs**: `source.vectorize()` returns command_id without waiting
@@ -108,7 +113,7 @@ Two base classes support different persistence patterns: **ObjectModel** (mutabl
 ## Quirks & Gotchas
 
 - **Polymorphic resolution**: `ObjectModel.get()` fails if subclass not imported (search subclasses list)
-- **RecordModel singleton**: __new__ returns existing instance; call `clear_instance()` in tests
+- **RecordModel singleton**: **new** returns existing instance; call `clear_instance()` in tests
 - **Source.command field**: Stored as RecordID; auto-parsed from strings via field_validator
 - **Text truncation**: `Note.get_context(short)` hardcodes 100-char limit
 - **Auto-embedding behavior**:

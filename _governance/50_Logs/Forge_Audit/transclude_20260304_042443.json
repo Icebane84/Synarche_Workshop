@@ -1,34 +1,34 @@
 [
-    {
-        "type": "meta_loaded",
-        "path": "C:\\Users\\Chris\\Synarche_Workspace\\test_meta.yaml"
-    },
-    {
-        "type": "shell_loading",
-        "filename": "TEST_HARDENED.md",
-        "path": "C:\\Users\\Chris\\Synarche_Workspace\\_governance\\templates\\Master_Shells\\TEST_HARDENED.md",
-        "timestamp": "2026-03-04T04:24:43.394206"
-    },
-    {
-        "type": "block_ingestion",
-        "filename": "test_h1.md",
-        "depth": 0,
-        "timestamp": "2026-03-04T04:24:43.394397"
-    },
-    {
-        "type": "block_ingestion",
-        "filename": "test_h2.md",
-        "depth": 1,
-        "timestamp": "2026-03-04T04:24:43.394543"
-    },
-    {
-        "type": "block_ingestion",
-        "filename": "test_h2.md",
-        "depth": 0,
-        "timestamp": "2026-03-04T04:24:43.394687"
-    },
-    {
-        "type": "forge_success",
-        "artifact_id": "TEST.HARDENED"
-    }
+  {
+    "type": "meta_loaded",
+    "path": "C:\\Users\\Chris\\Synarche_Workspace\\test_meta.yaml"
+  },
+  {
+    "type": "shell_loading",
+    "filename": "TEST_HARDENED.md",
+    "path": "C:\\Users\\Chris\\Synarche_Workspace\\_governance\\templates\\Master_Shells\\TEST_HARDENED.md",
+    "timestamp": "2026-03-04T04:24:43.394206"
+  },
+  {
+    "type": "block_ingestion",
+    "filename": "test_h1.md",
+    "depth": 0,
+    "timestamp": "2026-03-04T04:24:43.394397"
+  },
+  {
+    "type": "block_ingestion",
+    "filename": "test_h2.md",
+    "depth": 1,
+    "timestamp": "2026-03-04T04:24:43.394543"
+  },
+  {
+    "type": "block_ingestion",
+    "filename": "test_h2.md",
+    "depth": 0,
+    "timestamp": "2026-03-04T04:24:43.394687"
+  },
+  {
+    "type": "forge_success",
+    "artifact_id": "TEST.HARDENED"
+  }
 ]

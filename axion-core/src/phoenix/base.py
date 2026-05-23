@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -42,32 +41,35 @@
 ## **[ARTIFACT END]**
 """
 
-from ast import Dict
 import datetime
 import os
 from abc import ABC, abstractmethod
-from typing import Any, Optional
+from ast import Dict
+from typing import Any
 
 from .genesis import NovaGenesis
 
 
 class PhoenixBase(ABC, NovaGenesis):
-    """
-    The Foundational Class for Sovereign Intelligence Modules.
+    """The Foundational Class for Sovereign Intelligence Modules.
     Embodies Modularity, Reusability, and State Superposition.
     Conforms to OGLN/AISTF v15.0 governance standards.
     """
 
-    MAINTENANCE_LOG = r"c:\Users\Chris\Synarche_Workspace\_governance\50_Logs\GVRN.Maintenance.Log.md"
+    MAINTENANCE_LOG = (
+        r"c:\Users\Chris\Synarche_Workspace\_governance\50_Logs\GVRN.Maintenance.Log.md"
+    )
 
-    def __init__(self, persona_id: str, ethos: str = "Resonant", verbose: bool = False) -> None:
-        """
-        Initializes the Phoenix module.
+    def __init__(
+        self, persona_id: str, ethos: str = "Resonant", verbose: bool = False
+    ) -> None:
+        """Initializes the Phoenix module.
 
         Args:
             persona_id: Unique identifier for the module persona.
             ethos: Ethical alignment string (default: "Resonant").
             verbose: Enable verbose logging to stdout.
+
         """
         self.persona_id = persona_id
         self.ethos = ethos
@@ -80,11 +82,11 @@ class PhoenixBase(ABC, NovaGenesis):
             pass
 
     def don_mask(self, mask_name: str) -> None:
-        """
-        Project a specific functional role (Avatar Mask).
+        """Project a specific functional role (Avatar Mask).
 
         Args:
             mask_name: The name of the mask to project.
+
         """
         self.current_mask = mask_name
         self._log_event("SYNTHESIS", f"Donned Mask: {mask_name}")
@@ -96,12 +98,12 @@ class PhoenixBase(ABC, NovaGenesis):
         self._log_event("TRANSCENDENCE", f"Revealed Core. Mask Dropped: {old_mask}")
 
     def _log_event(self, event_type: str, message: str) -> None:
-        """
-        Append a structured event to the Sovereign Maintenance Log.
+        """Append a structured event to the Sovereign Maintenance Log.
 
         Args:
             event_type: The category of the event (e.g., SYNTHESIS, FINALIZATION).
             message: Descriptive detail of the event.
+
         """
         ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         entry = f"| {ts} | {self.persona_id} | {event_type} | {message} |\n"
@@ -116,8 +118,7 @@ class PhoenixBase(ABC, NovaGenesis):
                 print(f"[ERROR] Failed to update Maintenance Log: {e}")
 
     def assess_elegance(self, file_path: str) -> float:
-        """
-        Generic Algorithmic Elegance Score (AES) calculation.
+        """Generic Algorithmic Elegance Score (AES) calculation.
         Subclasses can override for domain-specific metrics.
 
         Args:
@@ -125,6 +126,7 @@ class PhoenixBase(ABC, NovaGenesis):
 
         Returns:
             A score between 0.0 and 10.0.
+
         """
         if not os.path.exists(file_path):
             return 0.0
@@ -153,28 +155,29 @@ class PhoenixBase(ABC, NovaGenesis):
 
     @abstractmethod
     def execute_ritual(self, *args: Any, **kwargs: Any) -> Dict[str, Any]:
-        """
-        Atomic operational entry point. Must be implemented by subclasses.
+        """Atomic operational entry point. Must be implemented by subclasses.
 
         Returns:
             A dictionary containing the result of the ritual.
+
         """
         pass
 
     def finalize(self, ritual_status: str) -> None:
-        """
-        Record the completion of a ritual and calculate duration.
+        """Record the completion of a ritual and calculate duration.
 
         Args:
             ritual_status: Final status string of the ritual.
+
         """
         duration = datetime.datetime.now() - self.start_time
-        self._log_event("FINALIZATION", f"Ritual Resolved: {ritual_status}. Duration: {duration}")
+        self._log_event(
+            "FINALIZATION", f"Ritual Resolved: {ritual_status}. Duration: {duration}"
+        )
 
 
 class Phoenix(PhoenixBase):
-    """
-    The Manifested Phoenix Class.
+    """The Manifested Phoenix Class.
     Achieves Superposition by inheriting from NovaGenesis and PhoenixBase.
     Mutates (Ascends) upon instantiation.
     """
@@ -186,12 +189,13 @@ class Phoenix(PhoenixBase):
     def mutate(self) -> None:
         """Triggers the Ascension mutation."""
         self.state = "ASCENDED"
-        self._log_event("ASCENSION", f"Phoenix {self.persona_id} has mutated into an Ascended state.")
+        self._log_event(
+            "ASCENSION",
+            f"Phoenix {self.persona_id} has mutated into an Ascended state.",
+        )
 
     def execute_ritual(self, *args: Any, **kwargs: Any) -> Dict[str, Any]:
-        """
-        Implements the core Phoenix ritual.
-        """
+        """Implements the core Phoenix ritual."""
         result = {"status": "SUCCESS", "state": self.state}
         self._log_event("RITUAL", f"Executed ritual in state: {self.state}")
         return result

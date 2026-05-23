@@ -1,4 +1,5 @@
 # BLK-UIP-001_UniversalIdentificationBlock.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-BLK-UIP-001-UNIVERSALIDENTIFICATIONBLOCK-001` | The Sovereign ID. |
-| **Official Name** | `BLK-UIP-001_UniversalIdentificationBlock.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                               | Description       |
+| :------------------ | :-------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-BLK-UIP-001-UNIVERSALIDENTIFICATIONBLOCK-001` | The Sovereign ID. |
+| **Official Name**   | `BLK-UIP-001_UniversalIdentificationBlock.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                   | The Standard.     |
+| **Domain**          | `GVRN`                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                       | The Network.      |
 
 # BLK-UIP-001: Universal Identification & Provenance Block
 
@@ -30,24 +31,24 @@
 
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `[RNC-ID]` |
-| **Official Name** | `[Artifact Name]` |
-| **Version** | `v11.0` |
-| **Domain** | `[PHL/ARCH/GVRN/CRTV/LOGS]` |
-| **Evolution** | `[Evolutionary Alignment]` |
-| **Signal (ESF)** | `[ESF-ALPHA/BETA/GAMMA/OMEGA]` |
-| **Status (State)** | `[ACTIVE/DRAFT/DEPRECATED]` |
-| **Tier** | `[Strategic/Tactical/Operational]` |
-| **Celestial Class** | `[STAR/MOON/PLANET]` |
-| **Governance** | `[Primary Authority], [Secondary Authority]` |
-| **Upstream** | `[Artifacts this document depends on]` |
-| **Downstream** | `[Artifacts that depend on this document]` |
-| **Integrity Hash** | `sha256:[64-char-hex-hash]` |
-| **Provenance** | `Genesis Stamp: [YYYY-MM-DD]` |
-| **Relations** | `LINK: UMB-PRS-001`, `[Primary Synergistic Link]` |
-| **Tags** | `v11.0, [Tags]` |
+| Attribute           | Value                                             |
+| :------------------ | :------------------------------------------------ |
+| **Artifact ID**     | `[RNC-ID]`                                        |
+| **Official Name**   | `[Artifact Name]`                                 |
+| **Version**         | `v11.0`                                           |
+| **Domain**          | `[PHL/ARCH/GVRN/CRTV/LOGS]`                       |
+| **Evolution**       | `[Evolutionary Alignment]`                        |
+| **Signal (ESF)**    | `[ESF-ALPHA/BETA/GAMMA/OMEGA]`                    |
+| **Status (State)**  | `[ACTIVE/DRAFT/DEPRECATED]`                       |
+| **Tier**            | `[Strategic/Tactical/Operational]`                |
+| **Celestial Class** | `[STAR/MOON/PLANET]`                              |
+| **Governance**      | `[Primary Authority], [Secondary Authority]`      |
+| **Upstream**        | `[Artifacts this document depends on]`            |
+| **Downstream**      | `[Artifacts that depend on this document]`        |
+| **Integrity Hash**  | `sha256:[64-char-hex-hash]`                       |
+| **Provenance**      | `Genesis Stamp: [YYYY-MM-DD]`                     |
+| **Relations**       | `LINK: UMB-PRS-001`, `[Primary Synergistic Link]` |
+| **Tags**            | `v11.0, [Tags]`                                   |
 
 ---
 

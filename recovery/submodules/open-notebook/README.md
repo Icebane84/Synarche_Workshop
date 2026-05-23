@@ -20,19 +20,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.NOTEBOOK.README` | The Sovereign ID. |
-| **Official Name** | `README.md` | The Filename.     |
-| **Version**       | **v2.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.NOTEBOOK.README`        | The Sovereign ID. |
+| **Official Name** | `README.md`                   | The Filename.     |
+| **Version**       | **v2.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -74,9 +69,9 @@ If you just want to run it **right now**:
 1. Open PowerShell in this folder.
 2. Run the magic script:
 
-    ```powershell
-    .\dev_start.ps1
-    ```
+   ```powershell
+   .\dev_start.ps1
+   ```
 
 3. Open `http://localhost:8501`.
 
@@ -96,11 +91,11 @@ Law for this artifact. GVRN.NOTEBOOK.QuickStart, CONNECTS, Provides immediate ex
 > [!TIP] Use these commands to interact with the system.
 
 1. **Launch System**
-    - `CMD: LAUNCH_SYSTEM`
-    - _Function:_ Executes `dev_start.ps1` to spin up the full stack.
+   - `CMD: LAUNCH_SYSTEM`
+   - _Function:_ Executes `dev_start.ps1` to spin up the full stack.
 
 2. **Read Docs**
-    - `CMD: READ_INTRO`
-    - _Function:_ Opens `docs/getting-started/introduction.md`.
+   - `CMD: READ_INTRO`
+   - _Function:_ Opens `docs/getting-started/introduction.md`.
 
 **[ARTIFACT END]**

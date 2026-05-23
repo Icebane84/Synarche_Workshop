@@ -28,7 +28,7 @@ from open_notebook.podcasts.models import EpisodeProfile, SpeakerProfile
 class TestRecordModelSingleton:
     """Test suite for RecordModel singleton behavior."""
 
-    def test_recordmodel_singleton_behavior(self):
+    def test_recordmodel_singleton_behavior(self) -> None:
         """Test that same instance is returned for same record_id."""
 
         class TestRecord(RecordModel):
@@ -59,7 +59,7 @@ class TestRecordModelSingleton:
 class TestModelManager:
     """Test suite for ModelManager instance behavior."""
 
-    def test_model_manager_instance_isolation(self):
+    def test_model_manager_instance_isolation(self) -> None:
         """Test that each ModelManager instance is independent (not a singleton)."""
         manager1 = ModelManager()
         manager2 = ModelManager()
@@ -77,7 +77,7 @@ class TestModelManager:
 class TestNotebookDomain:
     """Test suite for Notebook validation and business rules."""
 
-    def test_notebook_name_validation(self):
+    def test_notebook_name_validation(self) -> None:
         """Test empty/whitespace names are rejected."""
         # Empty name should raise error
         with pytest.raises(InvalidInputError, match="Notebook name cannot be empty"):
@@ -91,7 +91,7 @@ class TestNotebookDomain:
         notebook = Notebook(name="Valid Name", description="Test")
         assert notebook.name == "Valid Name"
 
-    def test_notebook_archived_flag(self):
+    def test_notebook_archived_flag(self) -> None:
         """Test archived flag defaults to False."""
         notebook = Notebook(name="Test", description="Test")
         assert notebook.archived is False
@@ -108,7 +108,7 @@ class TestNotebookDomain:
 class TestSourceDomain:
     """Test suite for Source domain model."""
 
-    def test_source_command_field_parsing(self):
+    def test_source_command_field_parsing(self) -> None:
         """Test RecordID parsing for command field."""
         # Test with string command
         source = Source(title="Test", command="command:123")
@@ -124,7 +124,7 @@ class TestSourceDomain:
         assert "command" in save_data
 
     @pytest.mark.asyncio
-    async def test_source_delete_cleans_up_file(self):
+    async def test_source_delete_cleans_up_file(self) -> None:
         """Test that deleting a source removes the associated file."""
         # Create a temporary file
         with tempfile.NamedTemporaryFile(delete=False, suffix=".txt") as tmp_file:
@@ -164,7 +164,7 @@ class TestSourceDomain:
                 tmp_path.unlink()
 
     @pytest.mark.asyncio
-    async def test_source_delete_without_file(self):
+    async def test_source_delete_without_file(self) -> None:
         """Test that deleting a source without a file doesn't fail."""
         # Create source without file asset
         source = Source(id="source:test_no_file", title="Test Source", asset=None)
@@ -181,7 +181,7 @@ class TestSourceDomain:
             mock_delete.assert_called_once()
 
     @pytest.mark.asyncio
-    async def test_source_delete_continues_on_file_error(self):
+    async def test_source_delete_continues_on_file_error(self) -> None:
         """Test that source deletion continues even if file deletion fails."""
         # Create source with non-existent file
         source = Source(
@@ -210,7 +210,7 @@ class TestSourceDomain:
 class TestNoteDomain:
     """Test suite for Note validation."""
 
-    def test_note_content_validation(self):
+    def test_note_content_validation(self) -> None:
         """Test empty content is rejected."""
         # None content is allowed
         note = Note(title="Test", content=None)
@@ -228,7 +228,7 @@ class TestNoteDomain:
         with pytest.raises(InvalidInputError, match="Note content cannot be empty"):
             Note(title="Test", content="   ")
 
-    def test_note_content_for_embedding(self):
+    def test_note_content_for_embedding(self) -> None:
         """Test notes can hold content for embedding.
 
         Note: Embedding is now handled via command submission in Note.save(),
@@ -250,7 +250,7 @@ class TestNoteDomain:
 class TestPodcastDomain:
     """Test suite for Podcast domain validation."""
 
-    def test_speaker_profile_validation(self):
+    def test_speaker_profile_validation(self) -> None:
         """Test speaker profile validates count and required fields."""
         # Test invalid - no speakers
         with pytest.raises(ValidationError):
@@ -307,7 +307,7 @@ class TestPodcastDomain:
 class TestTransformationDomain:
     """Test suite for Transformation domain model."""
 
-    def test_transformation_creation(self):
+    def test_transformation_creation(self) -> None:
         """Test transformation model creation."""
         transform = Transformation(
             name="summarize",
@@ -329,7 +329,7 @@ class TestTransformationDomain:
 class TestContentSettings:
     """Test suite for ContentSettings defaults."""
 
-    def test_content_settings_defaults(self):
+    def test_content_settings_defaults(self) -> None:
         """Test ContentSettings has proper defaults."""
         settings = ContentSettings()
 
@@ -348,7 +348,7 @@ class TestContentSettings:
 class TestEpisodeProfile:
     """Test suite for EpisodeProfile validation."""
 
-    def test_episode_profile_segment_validation(self):
+    def test_episode_profile_segment_validation(self) -> None:
         """Test segment count validation (3-20)."""
         # Test invalid - too few segments
         with pytest.raises(

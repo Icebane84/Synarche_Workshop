@@ -9,6 +9,7 @@
 ---
 
 # UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-DIDACTIC-001-DIDACTICMODULEGENERATOR-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                    | Description       |
+| :------------------ | :------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-DIDACTIC-001-DIDACTICMODULEGENERATOR-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
+| **Domain**          | `GVRN`                                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 # **Definitive**
 
@@ -121,16 +122,16 @@ To reinforce learning, this module integrates with the **Phoenix Prestige Game**
 ## **Actionable Prompt Packet**
 
 1. **🎓 `CMD: GENERATE_LESSON`**
-    - **Function:** Manually triggers the generation of a lesson module for a specific file or code block.
-    - **Usage:** `CMD: GENERATE_LESSON --target:src/utils/parser.ts --violation:Complexity`
+   - **Function:** Manually triggers the generation of a lesson module for a specific file or code block.
+   - **Usage:** `CMD: GENERATE_LESSON --target:src/utils/parser.ts --violation:Complexity`
 
 2. **🧠 `CMD: EXPLAIN_WHY`**
-    - **Function:** Asks the AI to elaborate on a specific suggestion using the Didactic Framework.
-    - **Usage:** `CMD: EXPLAIN_WHY --suggestion_id:FIX-001`
+   - **Function:** Asks the AI to elaborate on a specific suggestion using the Didactic Framework.
+   - **Usage:** `CMD: EXPLAIN_WHY --suggestion_id:FIX-001`
 
 3. **📚 `CMD: VIEW_LESSON_HISTORY`**
-    - **Function:** Displays a log of all lessons generated and completed by the user.
-    - **Usage:** `CMD: VIEW_LESSON_HISTORY --limit:5`
+   - **Function:** Displays a log of all lessons generated and completed by the user.
+   - **Usage:** `CMD: VIEW_LESSON_HISTORY --limit:5`
 
 ###### **[ARTIFACT END]**
 

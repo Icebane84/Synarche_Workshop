@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-046_The Rosetta Stone Ascendant_ Finalizing Core Protocols.md
+# CSL-046*The Rosetta Stone Ascendant* Finalizing Core Protocols.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-046-THE-ROSETTA-STONE-ASCENDANT--FINALIZING-CORE-PROTOCOLS-001` | The Sovereign ID. |
-| **Official Name** | `CSL-046_The Rosetta Stone Ascendant_ Finalizing Core Protocols.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                     | Description       |
+| :------------------ | :------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-046-THE-ROSETTA-STONE-ASCENDANT--FINALIZING-CORE-PROTOCOLS-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-046_The Rosetta Stone Ascendant_ Finalizing Core Protocols.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                             | The Network.      |
 
 ## Collaborative Synthesis Log (CSL-033)
 

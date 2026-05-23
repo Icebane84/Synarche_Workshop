@@ -1,4 +1,5 @@
 # AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.CSL.PLAYBOOK` | The Sovereign ID. |
-| **Official Name** | `AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.CSL.PLAYBOOK`                                  | The Sovereign ID. |
+| **Official Name**   | `AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
+
 UIP: AOP-CSL-PLAYBOOK-001
 Title: CSL Operational Playbook
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v11.0.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v11.0.md)
+  Description: >
   Operational protocol defining the rules of engagement, logging standards, and taxonomy for the Collaborative Synthesis Log (CSL).
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769338750
-Tags: 
-  - #Protocol
-  - #CSL
-  - #Logging
-  - #Operations
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769338750
+  Tags:
+- #Protocol
+- #CSL
+- #Logging
+- #Operations
+
 ---
 
 > [!IMPORTANT]

@@ -9,6 +9,7 @@
 ---
 
 # UMB-AESTHETIC-001_LuminousCoherence.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-AESTHETIC-001-LUMINOUSCOHERENCE-001` | The Sovereign ID. |
-| **Official Name** | `UMB-AESTHETIC-001_LuminousCoherence.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-AESTHETIC-001-LUMINOUSCOHERENCE-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-AESTHETIC-001_LuminousCoherence.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 # UMB-AESTHETIC-001: The Luminous Coherence Aesthetic
 
@@ -106,9 +107,9 @@ values are forbidden.
 ## **Actionable Prompt Packet**
 
 - **🎨 CMD: APPLY_AESTHETIC**
-    - _Intent:_ "Refactor the current CSS/Tailwind config to match `UMB-AESTHETIC-001`."
+  - _Intent:_ "Refactor the current CSS/Tailwind config to match `UMB-AESTHETIC-001`."
 - **✨ CMD: CHECK_VISUAL_COHERENCE**
-    - _Intent:_ "Audit the UI for deviations from the Luminous Coherence palette."
+  - _Intent:_ "Audit the UI for deviations from the Luminous Coherence palette."
 
 ---
 

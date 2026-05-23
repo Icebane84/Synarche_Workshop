@@ -1,14 +1,13 @@
-"""
-Artifact ID: CORE-FDE-ARCH-011
+"""Artifact ID: CORE-FDE-ARCH-011
 Ethos: Memory is Contiguous; Access is Linear.
 """
+
 from typing import Any, Dict, FrozenSet, List, Type
-import copy
+
 
 class Archetype:
-    """
-    A strictly columnar table holding all entities with an identical component signature.
-    """
+    """A strictly columnar table holding all entities with an identical component signature."""
+
     def __init__(self, signature: FrozenSet[Type]):
         self.signature = signature
         self.entity_ids: List[int] = []
@@ -26,21 +25,22 @@ class Archetype:
         """Rollback anchor: Fast shallow copy due to frozen dataclasses."""
         return {
             "entity_ids": self.entity_ids.copy(),
-            "columns": {ctype: col.copy() for ctype, col in self.columns.items()}
+            "columns": {ctype: col.copy() for ctype, col in self.columns.items()},
         }
 
+
 class ArchetypeRegistry:
-    """
-    Replaces ComponentStore. Routes entities into the correct Archetype tables.
-    """
+    """Replaces ComponentStore. Routes entities into the correct Archetype tables."""
+
     def __init__(self):
         self._archetypes: Dict[FrozenSet[Type], Archetype] = {}
         # Tracks which Archetype table and row an entity currently lives in
         self._entity_index: Dict[int, tuple[FrozenSet[Type], int]] = {}
 
-    def get_matching_archetypes(self, required_components: set[Type]) -> List[Archetype]:
-        """
-        O(1) System Query. Returns entire tables that contain the required components,
+    def get_matching_archetypes(
+        self, required_components: set[Type]
+    ) -> List[Archetype]:
+        """O(1) System Query. Returns entire tables that contain the required components,
         completely bypassing entity-level set intersections.
         """
         matches = []
@@ -49,7 +49,9 @@ class ArchetypeRegistry:
                 matches.append(archetype)
         return matches
 
+
 # --- UPDATED SYSTEM CONTRACT ---
+
 
 class MovementSystem:
     name = "movement"
@@ -69,7 +71,7 @@ class MovementSystem:
             # Linear, cache-friendly iteration through contiguous arrays
             positions = arch.columns[Position]
             velocities = arch.columns[Velocity]
-            
+
             for i in range(len(arch.entity_ids)):
                 eid = arch.entity_ids[i]
                 p = positions[i]

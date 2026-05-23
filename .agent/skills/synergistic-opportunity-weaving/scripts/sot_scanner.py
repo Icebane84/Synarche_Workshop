@@ -25,15 +25,17 @@ def extract_metadata(content: str) -> dict[str, str]:
             match = re.search(r"\*\*(.*?)\*\*\s*\|\s*`?([^`|]+)`?", line)
             if match:
                 meta[match.group(1).strip()] = match.group(2).strip()
-    
+
     # YAML format (artifact_anchor)
-    yaml_match = re.search(r"artifact_anchor:\s*\n(\s+id:.*?\n(\s+.*?\n)*)", content, re.MULTILINE)
+    yaml_match = re.search(
+        r"artifact_anchor:\s*\n(\s+id:.*?\n(\s+.*?\n)*)", content, re.MULTILINE
+    )
     if yaml_match:
         yaml_content = yaml_match.group(1)
         id_match = re.search(r"id:\s*\"?([^\n\"]+)\"?", yaml_content)
         if id_match:
             meta["Artifact ID"] = id_match.group(1).strip()
-            
+
     return meta
 
 

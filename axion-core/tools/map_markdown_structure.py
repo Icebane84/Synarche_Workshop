@@ -1,5 +1,4 @@
-"""
-# TOOL-STAR-001: The Structure Mapper (Coherence Filter)
+"""# TOOL-STAR-001: The Structure Mapper (Coherence Filter).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -63,9 +62,7 @@ DEFAULT_TARGET_PATH = r"c:\Users\Chris\Synarche_Workspace\Where_Light_Fades\Unfi
 
 
 def get_headers(file_path: str) -> list[tuple[int, str]]:
-    """
-    Extracts Markdown and HTML headers from a specified file.
-    """
+    """Extracts Markdown and HTML headers from a specified file."""
     headers: list[tuple[int, str]] = []
 
     if not os.path.exists(file_path):

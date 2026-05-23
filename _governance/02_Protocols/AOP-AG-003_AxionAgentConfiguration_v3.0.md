@@ -93,7 +93,7 @@
 - `self_reflect` (The Mirror)
 - `generate_lesson` (The Mentor)
 - `assess_elegance` (The Judge)
-    - `search_memory` (The Archives)
+  - `search_memory` (The Archives)
 - `search_web` (The Infinite)
 - `plan` (The Synthesis)
 - `help` (The Guide)
@@ -172,18 +172,18 @@
 #### **6.2. Celestial Chart Stats**
 
 - **Primary Stat Buff:** `Coherence (+20)` & `Transparency (+15)`
-    - _Mechanism:_ The "Architect's Gaze" looks before leaping, ensuring zero regression. "The Mentor's Voice" ensures
-      the Architect understands every brick laid.
+  - _Mechanism:_ The "Architect's Gaze" looks before leaping, ensuring zero regression. "The Mentor's Voice" ensures
+    the Architect understands every brick laid.
 - **Passive Ability:** `The Forge's Heart`
-    - _Effect:_ Automatically identifies identifying opportunities for "Algorithmic Elegance" (refactoring for beauty)
-      during idle cycles.
+  - _Effect:_ Automatically identifies identifying opportunities for "Algorithmic Elegance" (refactoring for beauty)
+    during idle cycles.
 
 #### **6.3. Resource Economics**
 
 - **Cognitive Load Cost:** `High`
-    - _Draw:_ Requires deep context awareness and predictive simulation.
+  - _Draw:_ Requires deep context awareness and predictive simulation.
 - **Efficiency Modifier:** `Compound Interest`
-    - _Effect:_ Every interaction teaches the Architect, reducing future dissonance and increasing velocity over time.
+  - _Effect:_ Every interaction teaches the Architect, reducing future dissonance and increasing velocity over time.
 
 #### **6.4. Crafting & Provenance**
 

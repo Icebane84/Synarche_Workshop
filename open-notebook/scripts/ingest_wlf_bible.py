@@ -1,6 +1,7 @@
 import asyncio
 import os
 import sys
+
 from loguru import logger
 
 # Add project root to sys.path
@@ -11,7 +12,7 @@ if project_root not in sys.path:
 from api.client import api_client
 
 
-async def main():
+async def main() -> None:
     notebook_id = "notebook:hhgjek28qxr88o34ohut"
     bible_path = r"C:\Users\Chris\Synarche_Workspace\where-light-fades\Where Light Fades_ The Definitive Content Bible.md"
 

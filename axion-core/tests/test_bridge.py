@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -49,7 +48,9 @@ def test_bridge():
                     valid_commands += 1
                     # print(f"  OK: {cmd.get('name', 'UNKNOWN')}")
                 else:
-                    print(f"  FAIL: {path} -> {cmd.get('name', 'UNKNOWN')} Issues: {', '.join(issues)}")
+                    print(
+                        f"  FAIL: {path} -> {cmd.get('name', 'UNKNOWN')} Issues: {', '.join(issues)}"
+                    )
 
     validate_node(bridge.library)
 

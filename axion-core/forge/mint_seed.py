@@ -58,7 +58,11 @@ class ArtifactTransmuter:
 
         # Log initialization
         self.audit_log.append(
-            {"type": "engine_init", "workspace": self.workspace, "timestamp": datetime.now().isoformat()}
+            {
+                "type": "engine_init",
+                "workspace": self.workspace,
+                "timestamp": datetime.now().isoformat(),
+            }
         )
 
     def _safe_path_resolve(self, path: str, check_exists: bool = True) -> str:
@@ -122,7 +126,9 @@ class ArtifactTransmuter:
 
         # Find the synergy block section
         marker = re.search(
-            r"##\s*Block D|###\s*Block D|Standardized Synergy Block|Loom Signature", content, re.IGNORECASE
+            r"##\s*Block D|###\s*Block D|Standardized Synergy Block|Loom Signature",
+            content,
+            re.IGNORECASE,
         )
         if marker:
             # Look ahead for relevant artifacts until next major section
@@ -132,12 +138,16 @@ class ArtifactTransmuter:
 
             # Extract everything that looks like an Artifact ID and relationship
             # Format 1: | ID | Rel Type |
-            for match in re.finditer(r"\|\s*([A-Z0-9][-A-Z0-9_\.]+[A-Z0-9])\s*\|\s*([A-Z_]+)\s*\|", chunk):
+            for match in re.finditer(
+                r"\|\s*([A-Z0-9][-A-Z0-9_\.]+[A-Z0-9])\s*\|\s*([A-Z_]+)\s*\|", chunk
+            ):
                 target, rel = match.groups()
                 synergy_nodes.add(f"- 🔗 {target} ({rel})")
 
             # Format 2: ID, Rel Type, Impact
-            for match in re.finditer(r"([A-Z0-9][-A-Z0-9_\.]+[A-Z0-9]),\s*([A-Z_]+)\s*,", chunk):
+            for match in re.finditer(
+                r"([A-Z0-9][-A-Z0-9_\.]+[A-Z0-9]),\s*([A-Z_]+)\s*,", chunk
+            ):
                 target, rel = match.groups()
                 if rel not in ["ID", "TYPE", "impact"]:
                     synergy_nodes.add(f"- 🔗 {target} ({rel})")
@@ -163,7 +173,14 @@ class ArtifactTransmuter:
         structure_nodes = []
         lines = content.split("\n")
 
-        skip_keywords = ["Block A", "Block D", "Identification Lock", "Synergy", "APP", "Actionable Prompt Packet"]
+        skip_keywords = [
+            "Block A",
+            "Block D",
+            "Identification Lock",
+            "Synergy",
+            "APP",
+            "Actionable Prompt Packet",
+        ]
 
         for line in lines:
             line = line.strip()
@@ -181,7 +198,9 @@ class ArtifactTransmuter:
 
         # Determine Root Title
         title_match = re.search(r"^#\s+(.*)", content, re.MULTILINE)
-        root_title = self.clean_text(title_match.group(1)) if title_match else filepath.stem
+        root_title = (
+            self.clean_text(title_match.group(1)) if title_match else filepath.stem
+        )
 
         self.audit_log.append(
             {
@@ -229,7 +248,9 @@ class ArtifactTransmuter:
                 if not md_files:
                     raise ForgeError(f"No Markdown Artifacts found in {input_path}")
 
-                console.print(f"[cyan]Found {len(md_files)} artifacts. Initiating Minting...[/cyan]")
+                console.print(
+                    f"[cyan]Found {len(md_files)} artifacts. Initiating Minting...[/cyan]"
+                )
 
                 buffer = []
                 for file in md_files:
@@ -248,7 +269,9 @@ class ArtifactTransmuter:
             with open(abs_output, "w", encoding="utf-8") as f:
                 f.write(final_content.strip() + "\n")
 
-            console.print(f"[bold green]✅ SUCCESS.[/bold green] Mindmap seed minted at: [bold]{output_path}[/bold]")
+            console.print(
+                f"[bold green]✅ SUCCESS.[/bold green] Mindmap seed minted at: [bold]{output_path}[/bold]"
+            )
             self.audit_log.append({"type": "mint_success", "output": output_path})
 
         except Exception as e:
@@ -271,10 +294,19 @@ class ArtifactTransmuter:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Seed Minter (v14.0) - Artifact Transmutation Engine")
-    parser.add_argument("--input", required=True, help="Input directory or single Markdown file")
-    parser.add_argument("--output", help="Output Mindmap Seed filename (default: Nicemind_Import_Master.md)")
-    parser.add_argument("--strict", action="store_true", help="Fail strictly on resolution errors")
+    parser = argparse.ArgumentParser(
+        description="Seed Minter (v14.0) - Artifact Transmutation Engine"
+    )
+    parser.add_argument(
+        "--input", required=True, help="Input directory or single Markdown file"
+    )
+    parser.add_argument(
+        "--output",
+        help="Output Mindmap Seed filename (default: Nicemind_Import_Master.md)",
+    )
+    parser.add_argument(
+        "--strict", action="store_true", help="Fail strictly on resolution errors"
+    )
 
     args = parser.parse_args()
 

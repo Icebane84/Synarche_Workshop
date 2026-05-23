@@ -6,4 +6,4 @@
  *
  * [OMNI-ARTIFACT-ANCHOR] ID: UTILS.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28
  */
-export * from './validation';
+export * from "./validation";

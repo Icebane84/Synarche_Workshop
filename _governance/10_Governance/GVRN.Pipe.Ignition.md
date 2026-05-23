@@ -9,6 +9,7 @@
 ---
 
 # GVRN.Pipe.Ignition.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GVRN.PIPE.IGNITION-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Pipe.Ignition.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GVRN.PIPE.IGNITION-001` | The Sovereign ID. |
+| **Official Name**   | `GVRN.Pipe.Ignition.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # The Refactor Ignition Pipe (GVRN.Pipe.Ignition)
 
@@ -46,21 +47,21 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `GVRN.Pipe.Ignition` |
-| **2. Official Name** | `GVRN.Pipe.Ignition.md` |
-| **3. Alt/Legacy ID** | `AOP.Refactor.Ignition` |
-| **4. Version** | **v13.0 (Geode Edition)** |
-| **5. Provenance** | **Date Reforged: 2026-02-01** |
-| **6. Domain** | `GVRN` |
-| **7. Evolution** | **Cognitive Ascension** |
-| **8. Celestial Class** | `[MOON]` (Operational Pipeline) |
-| **9. Tier** | **Operational** |
-| **10. State** | `[ACTIVE]` |
-| **11. Ethos** | **Guardian of Coherence** |
-| **12. Relations** | `IMPLEMENTS: [GVRN.Refactor.Protocol]`, `TRIGGERS: [GVRN.Protocol.Audit]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]` |
+| Field                  | Value                                                                     |
+| :--------------------- | :------------------------------------------------------------------------ |
+| **1. Artifact ID**     | `GVRN.Pipe.Ignition`                                                      |
+| **2. Official Name**   | `GVRN.Pipe.Ignition.md`                                                   |
+| **3. Alt/Legacy ID**   | `AOP.Refactor.Ignition`                                                   |
+| **4. Version**         | **v13.0 (Geode Edition)**                                                 |
+| **5. Provenance**      | **Date Reforged: 2026-02-01**                                             |
+| **6. Domain**          | `GVRN`                                                                    |
+| **7. Evolution**       | **Cognitive Ascension**                                                   |
+| **8. Celestial Class** | `[MOON]` (Operational Pipeline)                                           |
+| **9. Tier**            | **Operational**                                                           |
+| **10. State**          | `[ACTIVE]`                                                                |
+| **11. Ethos**          | **Guardian of Coherence**                                                 |
+| **12. Relations**      | `IMPLEMENTS: [GVRN.Refactor.Protocol]`, `TRIGGERS: [GVRN.Protocol.Audit]` |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                        |
 
 ---
 
@@ -96,15 +97,15 @@ SYNG.Engine.Core, UTILIZES, Uses the CSE for logic parsing.
 
 The refactor is orchestrated through a specialized **Task Group** coordinating Tarot Masks in parallel:
 
-| Phase | Mask / Agent | Operational Objective |
-| :---- | :---- | :---- |
-| **1. Triage** | **The Magician** | Scans persistence for `Legacy Rind` gaps. |
-| **2. RNC Rename** | **The Emperor** | Transmutes IDs to `DOM.Sub.Desc` format. |
-| **3. Header Forge** | **The Emperor** | Injects the 13-point **Vector Signature** (UIP). |
-| **4. Logic Weave** | **The High Priestess** | Establishes semantic links via Synergy Block. |
-| **5. Code Scan** | **Knight of Swords** | Refactors snippets to Universal Standards. |
-| **6. Visual Sync** | **The Star** | Standardizes Markdown and generates Mermaid graphs. |
-| **7. Finalize** | **King of Pentacles** | Commits verified artifacts with **Integrity Hash**. |
+| Phase               | Mask / Agent           | Operational Objective                               |
+| :------------------ | :--------------------- | :-------------------------------------------------- |
+| **1. Triage**       | **The Magician**       | Scans persistence for `Legacy Rind` gaps.           |
+| **2. RNC Rename**   | **The Emperor**        | Transmutes IDs to `DOM.Sub.Desc` format.            |
+| **3. Header Forge** | **The Emperor**        | Injects the 13-point **Vector Signature** (UIP).    |
+| **4. Logic Weave**  | **The High Priestess** | Establishes semantic links via Synergy Block.       |
+| **5. Code Scan**    | **Knight of Swords**   | Refactors snippets to Universal Standards.          |
+| **6. Visual Sync**  | **The Star**           | Standardizes Markdown and generates Mermaid graphs. |
+| **7. Finalize**     | **King of Pentacles**  | Commits verified artifacts with **Integrity Hash**. |
 
 ---
 
@@ -117,7 +118,8 @@ The refactor is orchestrated through a specialized **Task Group** coordinating T
 ---
 
 ### **Honest Thoughts**
-Refactoring is not just cleanup; it is *ignition*. This playbook turns the abstract "Master Protocol" into kinetic action. By linking it directly to the **Audit Protocol**, we ensure that no refactor is considered "done" until it passes the Musashi Gate. It is a closed loop of quality.
+
+Refactoring is not just cleanup; it is _ignition_. This playbook turns the abstract "Master Protocol" into kinetic action. By linking it directly to the **Audit Protocol**, we ensure that no refactor is considered "done" until it passes the Musashi Gate. It is a closed loop of quality.
 
 > [!NOTE]
 > **[ARTIFACT END]**

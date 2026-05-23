@@ -2,6 +2,7 @@ import hashlib
 import os
 from pathlib import Path
 
+
 def get_hash(file_path):
     sha256_hash = hashlib.sha256()
     with open(file_path, "rb") as f:
@@ -9,13 +10,16 @@ def get_hash(file_path):
             sha256_hash.update(byte_block)
     return sha256_hash.hexdigest()
 
-def generate_entry(file_path, artifact_id, domain, official_name, version="v15.0 [OMEGA]"):
+
+def generate_entry(
+    file_path, artifact_id, domain, official_name, version="v15.0 [OMEGA]"
+):
     rel_path = os.path.relpath(file_path, "c:\\Users\\Chris\\Synarche_Workspace")
     # Normalize path separators for the registry
     rel_path = rel_path.replace("\\", "/")
-    
+
     content_hash = get_hash(file_path)
-    
+
     return f"""{artifact_id}:
   artifact_id: {artifact_id}
   content_hash: {content_hash}
@@ -25,6 +29,7 @@ def generate_entry(file_path, artifact_id, domain, official_name, version="v15.0
   status: "[ACTIVE]"
   version: {version}
 """
+
 
 ecs_files = {
     "__init__.py": ("ENG-ECS-INI-001", "ENG-ECS"),
@@ -60,7 +65,9 @@ target_groups = [
     (os.path.join(base_dir, "system", "refactor"), ref_files),
 ]
 
-with open("c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\registry_updates.yaml", "w") as f:
+with open(
+    "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\registry_updates.yaml", "w"
+) as f:
     for dir_path, files in target_groups:
         d_path = Path(dir_path)
         for filename, (aid, domain) in files.items():

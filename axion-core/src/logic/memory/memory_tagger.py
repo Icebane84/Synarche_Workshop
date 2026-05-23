@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -45,7 +44,7 @@
 import logging
 import string
 from collections import Counter
-from typing import TYPE_CHECKING, Any, Optional, Dict, List, Set, Tuple
+from typing import TYPE_CHECKING, Any, Dict, List, Optional, Set, Tuple
 
 # Synarche Imports
 try:
@@ -53,40 +52,176 @@ try:
 except ImportError:
     # Fallback for standalone or if path structure differs in tests
     try:
-        from nlp.nlp_processor import NLPProcessor # type: ignore
+        from nlp.nlp_processor import NLPProcessor  # type: ignore
     except ImportError:
-        NLPProcessor = Any # type: ignore
+        NLPProcessor = Any  # type: ignore
 
 # Use TYPE_CHECKING to avoid circular imports
 if TYPE_CHECKING:
-    from ..nlp.nlp_engine import NLPProcessor
+    pass
 
 # Configure logging for this module
 log = logging.getLogger(__name__)
 
 # Basic English stop words
 DEFAULT_STOP_WORDS: Set[str] = {
-    "i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", 
-    "yourself", "yourselves", "he", "him", "his", "himself", "she", "her", "hers", 
-    "herself", "it", "its", "itself", "they", "them", "their", "theirs", "themselves", 
-    "what", "which", "who", "whom", "this", "that", "these", "those", "am", "is", "are", 
-    "was", "were", "be", "been", "being", "have", "has", "had", "having", "do", "does", 
-    "did", "doing", "a", "an", "the", "and", "but", "if", "or", "because", "as", "until", 
-    "while", "of", "at", "by", "for", "with", "about", "against", "between", "into", 
-    "through", "during", "before", "after", "above", "below", "to", "from", "up", "down", 
-    "in", "out", "on", "off", "over", "under", "again", "further", "then", "once", "here", 
-    "there", "when", "where", "why", "how", "all", "any", "both", "each", "few", "more", 
-    "most", "other", "some", "such", "no", "nor", "not", "only", "own", "same", "so", 
-    "than", "too", "very", "s", "t", "can", "will", "just", "don", "should", "now", "ll", 
-    "m", "o", "re", "ve", "y", "ain", "aren", "couldn", "didn", "doesn", "hadn", "hasn", 
-    "haven", "isn", "ma", "mightn", "mustn", "needn", "shan", "shouldn", "wasn", "weren", 
-    "won", "wouldn",
+    "i",
+    "me",
+    "my",
+    "myself",
+    "we",
+    "our",
+    "ours",
+    "ourselves",
+    "you",
+    "your",
+    "yours",
+    "yourself",
+    "yourselves",
+    "he",
+    "him",
+    "his",
+    "himself",
+    "she",
+    "her",
+    "hers",
+    "herself",
+    "it",
+    "its",
+    "itself",
+    "they",
+    "them",
+    "their",
+    "theirs",
+    "themselves",
+    "what",
+    "which",
+    "who",
+    "whom",
+    "this",
+    "that",
+    "these",
+    "those",
+    "am",
+    "is",
+    "are",
+    "was",
+    "were",
+    "be",
+    "been",
+    "being",
+    "have",
+    "has",
+    "had",
+    "having",
+    "do",
+    "does",
+    "did",
+    "doing",
+    "a",
+    "an",
+    "the",
+    "and",
+    "but",
+    "if",
+    "or",
+    "because",
+    "as",
+    "until",
+    "while",
+    "of",
+    "at",
+    "by",
+    "for",
+    "with",
+    "about",
+    "against",
+    "between",
+    "into",
+    "through",
+    "during",
+    "before",
+    "after",
+    "above",
+    "below",
+    "to",
+    "from",
+    "up",
+    "down",
+    "in",
+    "out",
+    "on",
+    "off",
+    "over",
+    "under",
+    "again",
+    "further",
+    "then",
+    "once",
+    "here",
+    "there",
+    "when",
+    "where",
+    "why",
+    "how",
+    "all",
+    "any",
+    "both",
+    "each",
+    "few",
+    "more",
+    "most",
+    "other",
+    "some",
+    "such",
+    "no",
+    "nor",
+    "not",
+    "only",
+    "own",
+    "same",
+    "so",
+    "than",
+    "too",
+    "very",
+    "s",
+    "t",
+    "can",
+    "will",
+    "just",
+    "don",
+    "should",
+    "now",
+    "ll",
+    "m",
+    "o",
+    "re",
+    "ve",
+    "y",
+    "ain",
+    "aren",
+    "couldn",
+    "didn",
+    "doesn",
+    "hadn",
+    "hasn",
+    "haven",
+    "isn",
+    "ma",
+    "mightn",
+    "mustn",
+    "needn",
+    "shan",
+    "shouldn",
+    "wasn",
+    "weren",
+    "won",
+    "wouldn",
 }
 
 
 class MemoryTagger:
-    """
-    Responsible for applying high-fidelity tags (Topic Keywords, Entities)
+    """Responsible for applying high-fidelity tags (Topic Keywords, Entities)
     to memory content using the core NLP layer.
     """
 
@@ -95,17 +230,20 @@ class MemoryTagger:
         nlp_processor: Optional[Any] = None,
         stop_words: Optional[Set[str]] = None,
     ) -> None:
-        """
-        Initializes the MemoryTagger.
+        """Initializes the MemoryTagger.
 
         Args:
             nlp_processor: An instance of the NLPProcessor.
             stop_words: An optional set of stop words. If None, uses a default set.
+
         """
         if nlp_processor is None:
-            log.warning("NLPProcessor not provided to MemoryTagger. Attempting lazy initialization.")
+            log.warning(
+                "NLPProcessor not provided to MemoryTagger. Attempting lazy initialization."
+            )
             try:
                 from ..nlp.nlp_engine import NLPProcessor as CoreNLP
+
                 self.nlp = CoreNLP()
             except ImportError:
                 log.error("Could not import CoreNLP for lazy initialization.")
@@ -117,8 +255,7 @@ class MemoryTagger:
         log.info("MemoryTagger initialized.")
 
     def _extract_topic_keywords(self, text_content: str, top_n: int = 5) -> List[str]:
-        """
-        Internal helper method for topic keyword extraction logic.
+        """Internal helper method for topic keyword extraction logic.
         Uses lemmatization, stop word removal, and frequency counting.
 
         Args:
@@ -127,6 +264,7 @@ class MemoryTagger:
 
         Returns:
             A list of keywords.
+
         """
         if self.nlp is None or not hasattr(self.nlp, "nlp"):
             log.error("NLPProcessor not available for keyword extraction.")
@@ -166,14 +304,14 @@ class MemoryTagger:
             return []
 
     def _extract_entities(self, text_content: str) -> List[Tuple[str, str]]:
-        """
-        Extracts entities using the NLPProcessor.
+        """Extracts entities using the NLPProcessor.
 
         Args:
             text_content: The text to process.
 
         Returns:
             A list of (entity, label) tuples.
+
         """
         if self.nlp is None:
             return []
@@ -186,14 +324,14 @@ class MemoryTagger:
             return []
 
     def apply_tags(self, memory_content: str) -> Dict[str, List[Any]]:
-        """
-        Applies Topic Keyword and Entity tags to the provided memory content.
+        """Applies Topic Keyword and Entity tags to the provided memory content.
 
         Args:
             memory_content: The text content of the memory.
 
         Returns:
             A dictionary containing 'topic_keywords' and 'entities'.
+
         """
         if not isinstance(memory_content, str) or not memory_content:
             return {}
@@ -208,6 +346,7 @@ class MemoryTagger:
         except Exception as e:
             log.error(f"Unexpected error in apply_tags: {e}")
             return {}
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.memory.tagger VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 3ab119ff8847e0cf

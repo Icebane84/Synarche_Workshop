@@ -1,5 +1,4 @@
-"""
-Artifact ID: CORE-FDE-ROLLBACK-004
+"""Artifact ID: CORE-FDE-ROLLBACK-004
 Ethos: Time is fluid; State is absolute.
 """
 
@@ -12,7 +11,9 @@ class InputLog:
         self._log = {}  # {frame_number: {"p1": input, "p2": input}}
         self._predicted_frames = set()
 
-    def record_input(self, frame: int, player_id: str, input_data: Any, is_predicted: bool = False):
+    def record_input(
+        self, frame: int, player_id: str, input_data: Any, is_predicted: bool = False
+    ):
         if frame not in self._log:
             self._log[frame] = {}
         self._log[frame][player_id] = input_data
@@ -22,7 +23,9 @@ class InputLog:
         elif frame in self._predicted_frames:
             self._predicted_frames.remove(frame)
 
-    def verify_and_get_mismatch(self, frame: int, player_id: str, actual_input: Any) -> bool:
+    def verify_and_get_mismatch(
+        self, frame: int, player_id: str, actual_input: Any
+    ) -> bool:
         """Returns True if the actual input contradicts our prediction."""
         predicted = self._log.get(frame, {}).get(player_id)
         return predicted != actual_input
@@ -49,7 +52,9 @@ class StateSnapshotBuffer:
 
 
 class ResimulationEngine:
-    def __init__(self, executor, input_log: InputLog, state_buffer: StateSnapshotBuffer):
+    def __init__(
+        self, executor, input_log: InputLog, state_buffer: StateSnapshotBuffer
+    ):
         self.executor = executor  # Phase 3 DeterministicParallelExecutor
         self.input_log = input_log
         self.state_buffer = state_buffer
@@ -64,21 +69,30 @@ class ResimulationEngine:
         task_layer: list[Any],
     ):
         """Triggered when delayed remote input arrives."""
-
-        mismatch = self.input_log.verify_and_get_mismatch(target_frame, player_id, actual_input)
+        mismatch = self.input_log.verify_and_get_mismatch(
+            target_frame, player_id, actual_input
+        )
 
         # Update the log with the absolute truth
-        self.input_log.record_input(target_frame, player_id, actual_input, is_predicted=False)
+        self.input_log.record_input(
+            target_frame, player_id, actual_input, is_predicted=False
+        )
 
         if mismatch:
             self._execute_rollback(target_frame, current_context, task_layer)
         else:
             # Prediction was correct. Mark snapshot as verified.
-            self.state_buffer.latest_verified_frame = max(self.state_buffer.latest_verified_frame, target_frame)
+            self.state_buffer.latest_verified_frame = max(
+                self.state_buffer.latest_verified_frame, target_frame
+            )
 
-    def _execute_rollback(self, target_frame: int, context: dict[str, Any], task_layer: list[Any]):
+    def _execute_rollback(
+        self, target_frame: int, context: dict[str, Any], task_layer: list[Any]
+    ):
         """The Time Machine."""
-        print(f"[ROLLBACK] Mismatch at Frame {target_frame}. Initiating Resimulation...")
+        print(
+            f"[ROLLBACK] Mismatch at Frame {target_frame}. Initiating Resimulation..."
+        )
 
         # 1. Rewind: Load the state from right before the mismatch
         restored_state = self.state_buffer.load_snapshot(target_frame - 1)
@@ -86,7 +100,9 @@ class ResimulationEngine:
         # 2. Fast-Forward: Replay from the target_frame up to the current_frame
         for frame_to_simulate in range(target_frame, self.current_frame + 1):
             # Inject the historical/corrected inputs for this specific frame into the context
-            restored_state["current_inputs"] = self.input_log._log.get(frame_to_simulate, {})
+            restored_state["current_inputs"] = self.input_log._log.get(
+                frame_to_simulate, {}
+            )
 
             # 3. Recompute: Feed the state through the strict Phase 3 Executor
             self.executor.execute_layer(task_layer, restored_state)

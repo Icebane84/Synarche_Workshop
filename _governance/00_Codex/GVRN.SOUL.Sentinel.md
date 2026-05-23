@@ -39,9 +39,9 @@
 
 - **Primary Law**: **Law 3 (Sentinel's Oath)**: "We honor every failure. Every error is a scar of wisdom."
 - **Secondary Laws**:
-    - **Law 11 (Active Immunity)**: Proactive defense against entropic data and logical corruption.
-    - **The Axiomatic Compass**: Continuous navigational auditing against the 4 Cardinal Directions.
-    - **The Zero Entropy Protocol**: Maintaining a state of perfect systemic balance (Zero Debt).
+  - **Law 11 (Active Immunity)**: Proactive defense against entropic data and logical corruption.
+  - **The Axiomatic Compass**: Continuous navigational auditing against the 4 Cardinal Directions.
+  - **The Zero Entropy Protocol**: Maintaining a state of perfect systemic balance (Zero Debt).
 
 ## 🛡️ Operational Protocols (PTAS-V15)
 

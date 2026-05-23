@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UIB-AISTF-001_AISTFFeedbackStudio` |
-| **2. Official Name** | `UIB-AISTF-001_AISTFFeedbackStudio.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: UMB-CSE-001` |
+| Field                  | Value                                  |
+| :--------------------- | :------------------------------------- |
+| **1. Artifact ID**     | `UIB-AISTF-001_AISTFFeedbackStudio`    |
+| **2. Official Name**   | `UIB-AISTF-001_AISTFFeedbackStudio.md` |
+| **3. Version**         | **v1.0 (Reforged)**                    |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**          |
+| **5. Domain**          | `ARCH`                                 |
+| **6. Evolution**       | **Purposeful Drive**                   |
+| **7. Celestial Class** | `[PLANET]`                             |
+| **8. Tier**            | **Operational**                        |
+| **9. State**           | `[ACTIVE]`                             |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**     |
+| **11. Catalyst**       | **System Refactor**                    |
+| **12. Relations**      | `LINK: UMB-CSE-001`                    |
 
 ---
 
@@ -48,10 +46,10 @@
 ## II. Core Purpose & Objective
 
 - **What (Core Concept):** This blueprint defines the user interface for the **AISTF Feedback Studio**, the primary
-interface for providing explicit human feedback to guide the AI's self-learning cycles.
+  interface for providing explicit human feedback to guide the AI's self-learning cycles.
 - **How (Execution Flow):** The interface presents AI-generated hypotheses or proposed actions in a clear list. The user
-provides simple up-vote/down-vote feedback, which is then fed back into the **AI Self-Training Framework (AISTF)** to
-reinforce or correct the AI's learning pathways.
+  provides simple up-vote/down-vote feedback, which is then fed back into the **AI Self-Training Framework (AISTF)** to
+  reinforce or correct the AI's learning pathways.
 
 ## III. Visual Concept & Layout
 
@@ -94,9 +92,9 @@ interaction.
 2. **Feedback:** The user provides feedback by clicking either "👍 Up-vote" or "👎 Down-vote".
 3. **Integration:** This feedback is sent back to the AISTF.
    - An **up-vote** acts as a positive reinforcement signal, increasing the likelihood that the AISTF will prioritize
-and implement the proposed change.
+     and implement the proposed change.
    - A **down-vote** acts as a corrective signal, discouraging the AISTF from pursuing that line of reasoning in the
-future.
+     future.
 
 ## **Actionable Prompt Packet**
 

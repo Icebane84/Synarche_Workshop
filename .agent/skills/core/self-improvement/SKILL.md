@@ -1,3 +1,9 @@
+---
+name: Self-Improvement
+description: The Self-Improvement skill enables the agent to learn from successes and failures, automating project-specific patterns into reusable skills and preventing regressions. It is the core tool of the II. High Priestess for weaving the Cognitive Loom.
+allowed_tools: activator.ps1, error_detector.ps1, extract_skill.ps1, skill_extraction.ps1
+---
+
 # Self-Improvement Protocol (Recursive Optimization)
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -65,7 +71,8 @@ into reusable skills and preventing regressions. It is the core tool of the **II
 
 ## 🤖 System Logic
 
-- **Persistence (Non-Destructive):** All state changes are logged in `_governance/06_Learning/`. Lessons are **IMMUTABLE** and **APPEND-ONLY**.
+- **Persistence (Non-Destructive):** All state changes are logged in `_governance/06_Learning/`. Lessons are
+  **IMMUTABLE** and **APPEND-ONLY**.
 - **Triggers:**
   - **Trigger A (Session Resume):** Check `GVRN.LEARN.Index.md` for pending high-priority items.
   - **Trigger B (Post-Tool Error):** Analyze exit codes and log root causes in `GVRN.LEARN.Error.md`.
@@ -73,7 +80,8 @@ into reusable skills and preventing regressions. It is the core tool of the **II
 
 ## 🛠️ Automated Scripts
 
-- `extract_skill.ps1`: Converts a verified learning from `GVRN.LEARN.Shard.md` into a new skill template. [Local Implementation: scripts/extract_skill.ps1]
+- `extract_skill.ps1`: Converts a verified learning from `GVRN.LEARN.Shard.md` into a new skill template. [Local
+  Implementation: scripts/extract_skill.ps1]
 - `error_detector.ps1`: Scans terminal logs for failed commands and proposes fixes.
 - `activator.ps1`: Orchestrates the final session wrap-up and logs meaningful progress.
 
@@ -87,6 +95,7 @@ into reusable skills and preventing regressions. It is the core tool of the **II
 
 ## Documentation Mandate: IPPD Shadow-Logging
 
-Every operational execution of this skill MUST generate a SELT (Standardized Experience Log Template) "Shadow Log".
-This log captures the inner metacognitive deconstruction and dissonance resolution BEFORE taking action.
-All Shadow Logs MUST strictly utilize the canonical **Block A: Universal Identification & Provenance (UIP-V15)** header to ensure Isomorphic Provenance.
+Every operational execution of this skill MUST generate a SELT (Standardized Experience Log Template) "Shadow Log". This
+log captures the inner metacognitive deconstruction and dissonance resolution BEFORE taking action. All Shadow Logs MUST
+strictly utilize the canonical **Block A: Universal Identification & Provenance (UIP-V15)** header to ensure Isomorphic
+Provenance.

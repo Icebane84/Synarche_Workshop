@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -22,8 +21,7 @@ from typing import Set
 
 
 class EntityManager:
-    """
-    Manages the lifecycle of entities (IDs) in the ECS.
+    """Manages the lifecycle of entities (IDs) in the ECS.
     Entities are opaque handles (UUIDs) that serve as keys for component sets.
     """
 
@@ -32,22 +30,22 @@ class EntityManager:
         self.entities: Set[uuid.UUID] = set()
 
     def create_entity(self) -> uuid.UUID:
-        """
-        Generates a new unique entity ID and registers it.
-        
+        """Generates a new unique entity ID and registers it.
+
         Returns:
             uuid.UUID: The newly created entity handle.
+
         """
         entity_id = uuid.uuid4()
         self.entities.add(entity_id)
         return entity_id
 
     def destroy_entity(self, entity_id: uuid.UUID) -> None:
-        """
-        Removes an entity from the registry.
-        
+        """Removes an entity from the registry.
+
         Args:
             entity_id (uuid.UUID): The handle of the entity to destroy.
+
         """
         if entity_id in self.entities:
             self.entities.remove(entity_id)

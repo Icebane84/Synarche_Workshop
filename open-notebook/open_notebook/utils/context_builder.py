@@ -24,9 +24,9 @@ class ContextItem:
 
     id: str
     type: Literal["source", "note", "insight"]
-    content: Dict[str, Any]
+    content: dict[str, Any]
     priority: int = 0
-    token_count: Optional[int] = None
+    token_count: int | None = None
 
     def __post_init__(self):
         """Calculate token count for the content if not provided."""
@@ -39,12 +39,12 @@ class ContextItem:
 class ContextConfig:
     """Configuration for context building."""
 
-    sources: Optional[Dict[str, str]] = None  # {source_id: inclusion_level}
-    notes: Optional[Dict[str, str]] = None  # {note_id: inclusion_level}
+    sources: dict[str, str] | None = None  # {source_id: inclusion_level}
+    notes: dict[str, str] | None = None  # {note_id: inclusion_level}
     include_insights: bool = True
     include_notes: bool = True
-    max_tokens: Optional[int] = None
-    priority_weights: Optional[Dict[str, int]] = None  # {type: weight}
+    max_tokens: int | None = None
+    priority_weights: dict[str, int] | None = None  # {type: weight}
 
     def __post_init__(self):
         """Initialize default values."""
@@ -62,7 +62,7 @@ class ContextBuilder:
     from sources, notebooks, insights, and notes.
     """
 
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs) -> None:
         """
         Initialize ContextBuilder with flexible parameters.
 
@@ -79,14 +79,14 @@ class ContextBuilder:
         self.params = kwargs
 
         # Extract commonly used parameters
-        self.source_id: Optional[str] = kwargs.get("source_id")
-        self.notebook_id: Optional[str] = kwargs.get("notebook_id")
+        self.source_id: str | None = kwargs.get("source_id")
+        self.notebook_id: str | None = kwargs.get("notebook_id")
         self.include_insights: bool = kwargs.get("include_insights", True)
         self.include_notes: bool = kwargs.get("include_notes", True)
-        self.max_tokens: Optional[int] = kwargs.get("max_tokens")
+        self.max_tokens: int | None = kwargs.get("max_tokens")
 
         # Context configuration
-        context_config_arg: Optional[ContextConfig] = kwargs.get("context_config")
+        context_config_arg: ContextConfig | None = kwargs.get("context_config")
         self.context_config: ContextConfig
         if context_config_arg is None:
             self.context_config = ContextConfig(
@@ -98,11 +98,11 @@ class ContextBuilder:
             self.context_config = context_config_arg
 
         # Items storage
-        self.items: List[ContextItem] = []
+        self.items: list[ContextItem] = []
 
         logger.debug(f"ContextBuilder initialized with params: {list(kwargs.keys())}")
 
-    async def build(self) -> Dict[str, Any]:
+    async def build(self) -> dict[str, Any]:
         """
         Build context based on provided parameters.
 
@@ -136,8 +136,8 @@ class ContextBuilder:
             return self._format_response()
 
         except Exception as e:
-            logger.error(f"Error building context: {str(e)}")
-            raise DatabaseOperationError(f"Failed to build context: {str(e)}")
+            logger.error(f"Error building context: {e!s}")
+            raise DatabaseOperationError(f"Failed to build context: {e!s}")
 
     async def _add_source_context(
         self, source_id: str, inclusion_level: str = "insights"
@@ -204,7 +204,7 @@ class ContextBuilder:
         except NotFoundError:
             logger.warning(f"Source {source_id} not found")
         except Exception as e:
-            logger.error(f"Error adding source context for {source_id}: {str(e)}")
+            logger.error(f"Error adding source context for {source_id}: {e!s}")
             raise
 
     async def _add_notebook_context(self, notebook_id: str) -> None:
@@ -248,7 +248,7 @@ class ContextBuilder:
             logger.debug(f"Added notebook context for {notebook_id}")
 
         except Exception as e:
-            logger.error(f"Error adding notebook context for {notebook_id}: {str(e)}")
+            logger.error(f"Error adding notebook context for {notebook_id}: {e!s}")
             raise
 
     async def _add_note_context(
@@ -291,7 +291,7 @@ class ContextBuilder:
         except NotFoundError:
             logger.warning(f"Note {note_id} not found")
         except Exception as e:
-            logger.error(f"Error adding note context for {note_id}: {str(e)}")
+            logger.error(f"Error adding note context for {note_id}: {e!s}")
 
     async def _process_custom_params(self) -> None:
         """Process any additional custom parameters."""
@@ -364,7 +364,7 @@ class ContextBuilder:
         if removed_count > 0:
             logger.debug(f"Removed {removed_count} duplicate items")
 
-    def _format_response(self) -> Dict[str, Any]:
+    def _format_response(self) -> dict[str, Any]:
         """
         Format the final response.
 
@@ -421,9 +421,9 @@ class ContextBuilder:
 
 async def build_notebook_context(
     notebook_id: str,
-    context_config: Optional[ContextConfig] = None,
-    max_tokens: Optional[int] = None,
-) -> Dict[str, Any]:
+    context_config: ContextConfig | None = None,
+    max_tokens: int | None = None,
+) -> dict[str, Any]:
     """
     Build context for a notebook.
 
@@ -442,8 +442,8 @@ async def build_notebook_context(
 
 
 async def build_source_context(
-    source_id: str, include_insights: bool = True, max_tokens: Optional[int] = None
-) -> Dict[str, Any]:
+    source_id: str, include_insights: bool = True, max_tokens: int | None = None
+) -> dict[str, Any]:
     """
     Build context for a single source.
 
@@ -462,11 +462,11 @@ async def build_source_context(
 
 
 async def build_mixed_context(
-    source_ids: Optional[List[str]] = None,
-    note_ids: Optional[List[str]] = None,
-    notebook_id: Optional[str] = None,
-    max_tokens: Optional[int] = None,
-) -> Dict[str, Any]:
+    source_ids: list[str] | None = None,
+    note_ids: list[str] | None = None,
+    notebook_id: str | None = None,
+    max_tokens: int | None = None,
+) -> dict[str, Any]:
     """
     Build context from mixed sources.
 

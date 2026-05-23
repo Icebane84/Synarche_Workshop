@@ -26,7 +26,7 @@ from open_notebook.utils.context_builder import ContextBuilder, ContextConfig
 class TestTextUtilities:
     """Test suite for text utility functions."""
 
-    def test_remove_non_ascii(self):
+    def test_remove_non_ascii(self) -> None:
         """Test removal of non-ASCII characters."""
         # Text with various non-ASCII characters
         text_with_unicode = "Hello 世界 café naïve émoji 🎉"
@@ -37,13 +37,13 @@ class TestTextUtilities:
         # All characters should be in ASCII range
         assert all(ord(char) < 128 for char in result)
 
-    def test_remove_non_ascii_pure_ascii(self):
+    def test_remove_non_ascii_pure_ascii(self) -> None:
         """Test that pure ASCII text is unchanged."""
         text = "Hello World 123 !@#"
         result = remove_non_ascii(text)
         assert result == text
 
-    def test_remove_non_printable(self):
+    def test_remove_non_printable(self) -> None:
         """Test removal of non-printable characters."""
         # Text with various Unicode whitespace and control chars
         text = "Hello\u2000World\u200b\u202fTest"
@@ -54,14 +54,14 @@ class TestTextUtilities:
         assert "World" in result
         assert "Test" in result
 
-    def test_remove_non_printable_preserves_newlines(self):
+    def test_remove_non_printable_preserves_newlines(self) -> None:
         """Test that newlines and tabs are preserved."""
         text = "Line1\nLine2\tTabbed"
         result = remove_non_printable(text)
         assert "\n" in result
         assert "\t" in result
 
-    def test_parse_thinking_content_basic(self):
+    def test_parse_thinking_content_basic(self) -> None:
         """Test parsing single thinking block."""
         content = "<think>This is my thinking</think>Here is my answer"
         thinking, cleaned = parse_thinking_content(content)
@@ -69,7 +69,7 @@ class TestTextUtilities:
         assert thinking == "This is my thinking"
         assert cleaned == "Here is my answer"
 
-    def test_parse_thinking_content_multiple_tags(self):
+    def test_parse_thinking_content_multiple_tags(self) -> None:
         """Test parsing multiple thinking blocks."""
         content = "<think>First thought</think>Answer<think>Second thought</think>More"
         thinking, cleaned = parse_thinking_content(content)
@@ -80,7 +80,7 @@ class TestTextUtilities:
         assert "Answer" in cleaned
         assert "More" in cleaned
 
-    def test_parse_thinking_content_no_tags(self):
+    def test_parse_thinking_content_no_tags(self) -> None:
         """Test parsing content without thinking tags."""
         content = "Just regular content"
         thinking, cleaned = parse_thinking_content(content)
@@ -88,7 +88,7 @@ class TestTextUtilities:
         assert thinking == ""
         assert cleaned == "Just regular content"
 
-    def test_parse_thinking_content_malformed_no_open_tag(self):
+    def test_parse_thinking_content_malformed_no_open_tag(self) -> None:
         """Test parsing malformed output where opening <think> tag is missing."""
         content = "Some thinking content</think>Here is my answer"
         thinking, cleaned = parse_thinking_content(content)
@@ -96,7 +96,7 @@ class TestTextUtilities:
         assert thinking == "Some thinking content"
         assert cleaned == "Here is my answer"
 
-    def test_parse_thinking_content_invalid_input(self):
+    def test_parse_thinking_content_invalid_input(self) -> None:
         """Test parsing with invalid input types."""
         # Non-string input
         thinking, cleaned = parse_thinking_content(None)
@@ -108,7 +108,7 @@ class TestTextUtilities:
         assert thinking == ""
         assert cleaned == "123"
 
-    def test_parse_thinking_content_large_content(self):
+    def test_parse_thinking_content_large_content(self) -> None:
         """Test that very large content is not processed."""
         large_content = "x" * 200000  # > 100KB limit
         thinking, cleaned = parse_thinking_content(large_content)
@@ -117,7 +117,7 @@ class TestTextUtilities:
         assert thinking == ""
         assert cleaned == large_content
 
-    def test_clean_thinking_content(self):
+    def test_clean_thinking_content(self) -> None:
         """Test convenience function for cleaning thinking content."""
         content = "<think>Internal thoughts</think>Public response"
         result = clean_thinking_content(content)
@@ -135,7 +135,7 @@ class TestTextUtilities:
 class TestTokenUtilities:
     """Test suite for token counting fallback behavior."""
 
-    def test_token_count_fallback(self):
+    def test_token_count_fallback(self) -> None:
         """Test fallback when tiktoken raises an error."""
         from unittest.mock import patch
 
@@ -160,12 +160,12 @@ class TestTokenUtilities:
 class TestVersionUtilities:
     """Test suite for version management functions."""
 
-    def test_compare_versions_equal(self):
+    def test_compare_versions_equal(self) -> None:
         """Test comparing equal versions."""
         result = compare_versions("1.0.0", "1.0.0")
         assert result == 0
 
-    def test_compare_versions_less_than(self):
+    def test_compare_versions_less_than(self) -> None:
         """Test comparing when first version is less."""
         result = compare_versions("1.0.0", "2.0.0")
         assert result == -1
@@ -176,7 +176,7 @@ class TestVersionUtilities:
         result = compare_versions("1.0.0", "1.0.1")
         assert result == -1
 
-    def test_compare_versions_greater_than(self):
+    def test_compare_versions_greater_than(self) -> None:
         """Test comparing when first version is greater."""
         result = compare_versions("2.0.0", "1.0.0")
         assert result == 1
@@ -187,7 +187,7 @@ class TestVersionUtilities:
         result = compare_versions("1.0.1", "1.0.0")
         assert result == 1
 
-    def test_compare_versions_prerelease(self):
+    def test_compare_versions_prerelease(self) -> None:
         """Test comparing versions with pre-release tags."""
         result = compare_versions("1.0.0", "1.0.0-alpha")
         assert result == 1  # Release > pre-release
@@ -195,7 +195,7 @@ class TestVersionUtilities:
         result = compare_versions("1.0.0-beta", "1.0.0-alpha")
         assert result == 1  # beta > alpha
 
-    def test_get_installed_version_success(self):
+    def test_get_installed_version_success(self) -> None:
         """Test getting installed package version."""
         # Test with a known installed package
         version = get_installed_version("pytest")
@@ -204,14 +204,14 @@ class TestVersionUtilities:
         # Should look like a version (has dots)
         assert "." in version
 
-    def test_get_installed_version_not_found(self):
+    def test_get_installed_version_not_found(self) -> None:
         """Test getting version of non-existent package."""
         from importlib.metadata import PackageNotFoundError
 
         with pytest.raises(PackageNotFoundError):
             get_installed_version("this-package-does-not-exist-12345")
 
-    def test_get_version_from_github_invalid_url(self):
+    def test_get_version_from_github_invalid_url(self) -> None:
         """Test GitHub version fetch with invalid URL."""
         from open_notebook.utils.version_utils import get_version_from_github
 
@@ -230,7 +230,7 @@ class TestVersionUtilities:
 class TestContextBuilder:
     """Test suite for ContextBuilder initialization and configuration."""
 
-    def test_context_config_defaults(self):
+    def test_context_config_defaults(self) -> None:
         """Test ContextConfig default values."""
         config = ContextConfig()
 
@@ -243,7 +243,7 @@ class TestContextBuilder:
         assert "note" in config.priority_weights
         assert "insight" in config.priority_weights
 
-    def test_context_builder_initialization(self):
+    def test_context_builder_initialization(self) -> None:
         """Test ContextBuilder initialization with various params."""
         builder = ContextBuilder(
             source_id="source:123",

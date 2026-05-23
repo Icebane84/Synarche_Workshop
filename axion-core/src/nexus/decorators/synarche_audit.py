@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -27,8 +26,7 @@ from typing import Any
 
 
 def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
-    """
-    The @synarche_audit architectural wrapper.
+    """The @synarche_audit architectural wrapper.
     Automates function entry/exit/error logging with full stack traces.
     Enforces Rule T201 by routing all diagnostic output through PhoenixLogger.
 
@@ -37,12 +35,12 @@ def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
 
     Returns:
         Callable: The audited wrapper function (sync or async).
+
     """
 
     @functools.wraps(func)
     async def async_wrapper(*args: Any, **kwargs: Any) -> Any:
-        """
-        Asynchronous execution auditor.
+        """Asynchronous execution auditor.
         Captures start time, logs context, executes, and captures completion/failure.
         """
         logger = logging.getLogger("PhoenixLogger")
@@ -63,8 +61,7 @@ def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
 
     @functools.wraps(func)
     def sync_wrapper(*args: Any, **kwargs: Any) -> Any:
-        """
-        Synchronous execution auditor.
+        """Synchronous execution auditor.
         Captures start time, logs context, executes, and captures completion/failure.
         """
         logger = logging.getLogger("PhoenixLogger")

@@ -39,6 +39,7 @@ Authoritative protocols and linter configurations that enforce the Synarche aest
 - **Mypy (Python)**: [`axion-core/standards/mypy.ini`](../../../axion-core/standards/mypy.ini)
 - **CSpell (Spelling)**: [`axion-core/standards/cspell.jsonc`](../../../axion-core/standards/cspell.jsonc)
 - **Prettier (Formatting)**: [`axion-core/standards/.prettierrc`](../../../axion-core/standards/.prettierrc)
+
 ---
 
 `[OMNI-ANCHOR] ID: SYNG.RULES.Sovereign VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-23`

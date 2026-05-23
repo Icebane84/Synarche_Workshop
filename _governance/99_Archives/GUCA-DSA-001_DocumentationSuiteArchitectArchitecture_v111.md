@@ -1,4 +1,5 @@
 # GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-DSA-001-DOCUMENTATIONSUITEARCHITECTARCHITECTURE-V111-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                | Description       |
+| :------------------ | :------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-DSA-001-DOCUMENTATIONSUITEARCHITECTARCHITECTURE-V111-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                    | The Standard.     |
+| **Domain**          | `GVRN`                                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `GUCA-DSA-001` |
-| **Official Name** | `Documentation Suite Architect Architecture` |
-| **Version** | `v11.1` |
-| **Domain** | `SYNT` |
-| **Evolution** | `Actionable Utility` |
-| **Signal (DSA)** | `INTERFACE` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Tactical` |
-| **Celestial Class** | `MOON` |
-| **Governance** | `UMB-SGM-001` |
-| **Upstream** | `UMB-DSA-001`, `CORE-CODEX-001` |
-| **Downstream** | `ALL_GENERATED_DSA_SUITES` |
-| **Integrity Hash** | `sha256:000111222333444555666777888999abcdef000111222333444555666777888` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `LINK: UMB-PRS-001`, `PROVIDES: CMD_Syntax`, `REDUCES: User Friction` |
-| **Tags** | `v11.1, Interface, Syntax, Command-Line, User-Centric` |
+| Attribute           | Value                                                                    |
+| :------------------ | :----------------------------------------------------------------------- |
+| **Artifact ID**     | `GUCA-DSA-001`                                                           |
+| **Official Name**   | `Documentation Suite Architect Architecture`                             |
+| **Version**         | `v11.1`                                                                  |
+| **Domain**          | `SYNT`                                                                   |
+| **Evolution**       | `Actionable Utility`                                                     |
+| **Signal (DSA)**    | `INTERFACE`                                                              |
+| **Status (State)**  | `CANONIZED`                                                              |
+| **Tier**            | `Tactical`                                                               |
+| **Celestial Class** | `MOON`                                                                   |
+| **Governance**      | `UMB-SGM-001`                                                            |
+| **Upstream**        | `UMB-DSA-001`, `CORE-CODEX-001`                                          |
+| **Downstream**      | `ALL_GENERATED_DSA_SUITES`                                               |
+| **Integrity Hash**  | `sha256:000111222333444555666777888999abcdef000111222333444555666777888` |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                      |
+| **Relations**       | `LINK: UMB-PRS-001`, `PROVIDES: CMD_Syntax`, `REDUCES: User Friction`    |
+| **Tags**            | `v11.1, Interface, Syntax, Command-Line, User-Centric`                   |
 
 ---
 
@@ -63,12 +65,15 @@ The **GUCA-DSA-001** document provides the definitive syntax and operational ins
 ## II. Command Syntax & Arguments
 
 ### 2.1 Primary Command
+
 `CMD: DSA`
 
 ### 2.2 Syntax
+
 `CMD: DSA [Concept]`
 
 ### 2.3 Arguments
+
 - **[Concept]**: A concise, descriptive string (token or phrase) representing the idea, module, or process for which a documentation suite is required.
 
 ---
@@ -76,6 +81,7 @@ The **GUCA-DSA-001** document provides the definitive syntax and operational ins
 ## III. Execution Logic
 
 Upon receiving the command, the system:
+
 1. Initiates the **AOP-DSA-001** protocol.
 2. Triggers the **UMB-DSA-001** blueprint modules.
 3. Operates the contextualization and generation engines.

@@ -9,6 +9,7 @@
 ---
 
 # CSL-20260131-090_RootStandardization.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-20260131-090-ROOTSTANDARDIZATION-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20260131-090_RootStandardization.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                           | Description       |
+| :------------------ | :---------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-20260131-090-ROOTSTANDARDIZATION-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-20260131-090_RootStandardization.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
+| **Domain**          | `GVRN`                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
+| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
 
 # CSL-20260131-090: Root Standardization: The Monorepo Shift
 
@@ -39,6 +40,7 @@
 ### 1. The Observation
 
 While `Synarche_Workspace` serves as the root container, its governance artifacts were fragmented:
+
 1.  **Hidden Standards**: The canonized `cspell.json` and `.markdownlint.cjs` were buried inside `axion-core`, leaving the root with inferior "stub" configurations.
 2.  **Relative Path Drift**: The linter tools (`axion-rules.cjs`) were hardcoded to look for configurations within `axion-core`, creating a dependency trap.
 3.  **Root Clutter**: The workspace root was littered with "orphaned" reports and JSON snapshots (`tapestry.json`, `audit_report.txt`, etc.), obscuring the clear signals of the repository.

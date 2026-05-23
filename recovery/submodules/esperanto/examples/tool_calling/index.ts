@@ -6,4 +6,4 @@
  *
  * [OMNI-ARTIFACT-ANCHOR] ID: VENDOR.ESPERANTO.EXAMPLES.TOOL_CALLING.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28
  */
-export * from './provider_examples';
+export * from "./provider_examples";

@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
+import { useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -8,45 +8,45 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
-import { CheckboxList } from '@/components/ui/checkbox-list'
-import { useNotebooks } from '@/lib/hooks/use-notebooks'
-import { useCreateNote } from '@/lib/hooks/use-notes'
-import { LoadingSpinner } from '@/components/common/LoadingSpinner'
-import { toast } from 'sonner'
-import { useTranslation } from '@/lib/hooks/use-translation'
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { CheckboxList } from "@/components/ui/checkbox-list";
+import { useNotebooks } from "@/lib/hooks/use-notebooks";
+import { useCreateNote } from "@/lib/hooks/use-notes";
+import { LoadingSpinner } from "@/components/common/LoadingSpinner";
+import { toast } from "sonner";
+import { useTranslation } from "@/lib/hooks/use-translation";
 
 interface SaveToNotebooksDialogProps {
-  open: boolean
-  onOpenChange: (open: boolean) => void
-  question: string
-  answer: string
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+  question: string;
+  answer: string;
 }
 
 export function SaveToNotebooksDialog({
   open,
   onOpenChange,
   question,
-  answer
+  answer,
 }: SaveToNotebooksDialogProps) {
-  const { t } = useTranslation()
-  const [selectedNotebooks, setSelectedNotebooks] = useState<string[]>([])
-  const { data: notebooks, isLoading } = useNotebooks(false) // false = not archived
-  const createNote = useCreateNote()
+  const { t } = useTranslation();
+  const [selectedNotebooks, setSelectedNotebooks] = useState<string[]>([]);
+  const { data: notebooks, isLoading } = useNotebooks(false); // false = not archived
+  const createNote = useCreateNote();
 
   const handleToggle = (notebookId: string) => {
-    setSelectedNotebooks(prev =>
+    setSelectedNotebooks((prev) =>
       prev.includes(notebookId)
-        ? prev.filter(id => id !== notebookId)
-        : [...prev, notebookId]
-    )
-  }
+        ? prev.filter((id) => id !== notebookId)
+        : [...prev, notebookId],
+    );
+  };
 
   const handleSave = async () => {
     if (selectedNotebooks.length === 0) {
-      toast.error(t.searchPage.selectNotebook)
-      return
+      toast.error(t.searchPage.selectNotebook);
+      return;
     }
 
     try {
@@ -55,33 +55,32 @@ export function SaveToNotebooksDialog({
         await createNote.mutateAsync({
           title: question,
           content: answer,
-          note_type: 'ai',
-          notebook_id: notebookId
-        })
+          note_type: "ai",
+          notebook_id: notebookId,
+        });
       }
 
-      toast.success(t.searchPage.saveSuccess)
-      setSelectedNotebooks([])
-      onOpenChange(false)
+      toast.success(t.searchPage.saveSuccess);
+      setSelectedNotebooks([]);
+      onOpenChange(false);
     } catch {
-      toast.error(t.searchPage.saveError)
+      toast.error(t.searchPage.saveError);
     }
-  }
+  };
 
-  const notebookItems = notebooks?.map(nb => ({
-    id: nb.id,
-    title: nb.name,
-    description: nb.description || undefined
-  })) || []
+  const notebookItems =
+    notebooks?.map((nb) => ({
+      id: nb.id,
+      title: nb.name,
+      description: nb.description || undefined,
+    })) || [];
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
           <DialogTitle>{t.searchPage.saveToNotebooks}</DialogTitle>
-          <DialogDescription>
-            {t.searchPage.selectNotebook}
-          </DialogDescription>
+          <DialogDescription>{t.searchPage.selectNotebook}</DialogDescription>
         </DialogHeader>
 
         <div className="py-4">
@@ -119,5 +118,5 @@ export function SaveToNotebooksDialog({
         </DialogFooter>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

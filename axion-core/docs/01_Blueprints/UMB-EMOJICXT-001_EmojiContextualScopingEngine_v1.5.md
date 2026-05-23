@@ -39,11 +39,11 @@
   dynamically adapts the available emoji lexicon based on real-time system state (Persona, Project, Task). It transforms
   the static `AOP-EMOJI-001` protocol into a "Living Lexicon."
 - **How (Operational Principles):**
-    1. **Context Parsing**: Continuous monitoring of `SYS-PERS-001` (Persona) and `UMB-PJM-001` (Project).
-    2. **Dynamic Filtering**: Applying hierarchical rules to select the optimal subset from the Master Lexicon Registry
-       (MLR).
-    3. **Lexicon Injection**: Serving the active scope to the Coherent Synthesis Engine (CSE) input parser.
-    4. **Proposal Logic**: Proactively suggesting `Temporary Signals` via `GUCA-PROPOSE-SIGNAL-001`.
+  1. **Context Parsing**: Continuous monitoring of `SYS-PERS-001` (Persona) and `UMB-PJM-001` (Project).
+  2. **Dynamic Filtering**: Applying hierarchical rules to select the optimal subset from the Master Lexicon Registry
+     (MLR).
+  3. **Lexicon Injection**: Serving the active scope to the Coherent Synthesis Engine (CSE) input parser.
+  4. **Proposal Logic**: Proactively suggesting `Temporary Signals` via `GUCA-PROPOSE-SIGNAL-001`.
 - **Why (Rationale/Justification):** Eliminates cognitive clutter and ambiguity by presenting only what is relevant.
   Increases **Synergy Flow Rate (SFR)** by enabling high-precision, low-latency signaling.
 

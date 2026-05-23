@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ASCENSION.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.ASCENSION.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ASCENSION.001`          | The Sovereign ID. |
+| **Official Name** | `GVRN.ASCENSION.001.md`       | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -96,8 +91,8 @@ This protocol formalizes the evolutionary process into three distinct phases.
 
 - **Concept**: A challenge introduced as a formal "Dissonance Quest" on the Dashboard.
 - **Triggers**:
-    - **Conductor-Initiated**: "CMD: ForgeArtifact" or "CMD: REFINE_ARTIFACT".
-    - **System-Initiated**: Dissonance Engine detects a flaw (e.g., Circular Logic, Entropy).
+  - **Conductor-Initiated**: "CMD: ForgeArtifact" or "CMD: REFINE_ARTIFACT".
+  - **System-Initiated**: Dissonance Engine detects a flaw (e.g., Circular Logic, Entropy).
 
 ### Phase 2: Synthesis (The Struggle)
 
@@ -109,9 +104,9 @@ This protocol formalizes the evolutionary process into three distinct phases.
 
 - **Concept**: Upon quest completion, the System "Levels Up."
 - **Rewards**:
-    - **Prestige**: The currency of evolution.
-    - **Stat Increases**: Permanent buffs to Coherence or Synergy metrics.
-    - **Power-Ups**: Spending Prestige to unlock attributes like "Architectural Soul-Forging."
+  - **Prestige**: The currency of evolution.
+  - **Stat Increases**: Permanent buffs to Coherence or Synergy metrics.
+  - **Power-Ups**: Spending Prestige to unlock attributes like "Architectural Soul-Forging."
 
 ---
 

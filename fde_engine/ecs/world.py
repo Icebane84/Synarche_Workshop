@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -14,7 +13,6 @@
 **Ethos:** Absolute Determinism. Zero Logic Drift.
 """
 
-from fde_engine.ecs.archetype_storage import Archetype
 from fde_engine.ecs.entity_registry import EntityRegistry
 
 
@@ -31,7 +29,9 @@ class World:
         # Gathers shallow copies from all registries
         return {
             "registry_id": self.registry.snapshot(),
-            "archetypes": {sig: arch.snapshot() for sig, arch in self.registry._archetypes.items()},
+            "archetypes": {
+                sig: arch.snapshot() for sig, arch in self.registry._archetypes.items()
+            },
             "entity_index": self.registry._entity_index.copy(),
             "frame": self.frame,
             "inputs": self.current_inputs.copy(),
@@ -47,4 +47,6 @@ class World:
         for sig, arch_snap in snap["archetypes"].items():
             arch = self.registry._archetypes[sig]
             arch.entity_ids = arch_snap["entity_ids"].copy()
-            arch.columns = {ctype: col.copy() for ctype, col in arch_snap["columns"].items()}
+            arch.columns = {
+                ctype: col.copy() for ctype, col in arch_snap["columns"].items()
+            }

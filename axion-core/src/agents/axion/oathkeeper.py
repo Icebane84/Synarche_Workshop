@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -46,14 +45,14 @@ from axion_core.governance.logger import logger
 
 
 def verify_session(session_token: str) -> bool:
-    """
-    Authenticates a session token against the user database.
+    """Authenticates a session token against the user database.
 
     Args:
         session_token: The session token to verify.
 
     Returns:
         True if the session token is valid, False otherwise.
+
     """
     try:
         # TODO: Implement session token verification against the user database.

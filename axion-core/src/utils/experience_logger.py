@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -51,7 +50,7 @@ import logging
 import os
 import sqlite3
 import sys
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
 
 # Configure logging for the experience logger
 log = logging.getLogger(__name__)
@@ -62,18 +61,21 @@ if not log.handlers:
 
 
 class ExperienceLogger:
-    """
-    Logs agent experiences for L1-L5 memory processing and analysis.
+    """Logs agent experiences for L1-L5 memory processing and analysis.
     Supports both JSONL flat-file logging and SQLite relational logging.
     """
 
-    def __init__(self, log_file_path: str = "gemini_gem_experience_log.jsonl", db_path: Optional[str] = None) -> None:
-        """
-        Initializes the ExperienceLogger.
+    def __init__(
+        self,
+        log_file_path: str = "gemini_gem_experience_log.jsonl",
+        db_path: Optional[str] = None,
+    ) -> None:
+        """Initializes the ExperienceLogger.
 
         Args:
             log_file_path: Path to the JSONL log file.
             db_path: Path to the SQLite database file (optional).
+
         """
         self.log_file: str = log_file_path
         self.db_path: Optional[str] = db_path
@@ -90,8 +92,7 @@ class ExperienceLogger:
             os.makedirs(log_dir, exist_ok=True)
 
     def _ensure_db_exists(self) -> None:
-        """
-        Ensures that the directory for the SQLite database exists 
+        """Ensures that the directory for the SQLite database exists
         and initializes the schema if it does not exist.
         """
         if not self.db_path:
@@ -120,17 +121,19 @@ class ExperienceLogger:
             log.error(f"SQLite setup error: {e}")
 
     def log_interaction_pair(self, interaction_data: Dict[str, Any]) -> None:
-        """
-        Logs a single interaction pair (User Turn + Agent Response) to JSONL and optional SQLite.
+        """Logs a single interaction pair (User Turn + Agent Response) to JSONL and optional SQLite.
 
         Args:
             interaction_data: Dictionary containing the interaction details.
+
         """
         if not isinstance(interaction_data, dict):
             return
         try:
             if "log_timestamp" not in interaction_data:
-                interaction_data["log_timestamp"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+                interaction_data["log_timestamp"] = datetime.datetime.now(
+                    datetime.timezone.utc
+                ).isoformat()
             self._last_log_entry = interaction_data.copy()
             log_line = json.dumps(interaction_data, default=str)
             with open(self.log_file, "a", encoding="utf-8") as f:
@@ -140,13 +143,15 @@ class ExperienceLogger:
         except Exception as e:
             log.error(f"Interaction logging failed: {e}")
 
-    def _log_to_sqlite(self, interaction_data: Dict[str, Any], full_log_json: str) -> None:
-        """
-        Parses interaction data and inserts it into the SQLite experience_logs table.
+    def _log_to_sqlite(
+        self, interaction_data: Dict[str, Any], full_log_json: str
+    ) -> None:
+        """Parses interaction data and inserts it into the SQLite experience_logs table.
 
         Args:
             interaction_data: The dictionary of interaction metadata.
             full_log_json: The complete interaction serialized as a JSON string.
+
         """
         if not self.db_path:
             return
@@ -155,37 +160,49 @@ class ExperienceLogger:
             pair_num = interaction_data.get("Interaction Pair #", 0)
             timestamp = interaction_data.get("log_timestamp", "")
             user_turn = interaction_data.get("User Turn", {})
-            user_analysis = user_turn.get("Analysis", {}) if isinstance(user_turn, dict) else {}
+            user_analysis = (
+                user_turn.get("Analysis", {}) if isinstance(user_turn, dict) else {}
+            )
             agent_response = interaction_data.get("Agent Response", {})
-            agent_reasoning = agent_response.get("Analysis & Reasoning", {}) if isinstance(agent_response, dict) else {}
-            
+            agent_reasoning = (
+                agent_response.get("Analysis & Reasoning", {})
+                if isinstance(agent_response, dict)
+                else {}
+            )
+
             with sqlite3.connect(self.db_path) as conn:
-                conn.execute("""
+                conn.execute(
+                    """
                     INSERT INTO experience_logs (
                         session_id, pair_num, timestamp, user_intent, user_emotion,
                         agent_intent, agent_tone, memories_used, inferences, full_log
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                """, (
-                    session_id, pair_num, timestamp,
-                    user_analysis.get("Inferred User Intent", "unknown"),
-                    user_analysis.get("Emotion/Tone", "unknown"),
-                    agent_reasoning.get("Agent Intent", "unknown"),
-                    agent_reasoning.get("Projected Tone", "unknown"),
-                    json.dumps(agent_reasoning.get("Key Memories Used", [])),
-                    json.dumps(agent_reasoning.get("Inferences Made", [])),
-                    full_log_json
-                ))
+                """,
+                    (
+                        session_id,
+                        pair_num,
+                        timestamp,
+                        user_analysis.get("Inferred User Intent", "unknown"),
+                        user_analysis.get("Emotion/Tone", "unknown"),
+                        agent_reasoning.get("Agent Intent", "unknown"),
+                        agent_reasoning.get("Projected Tone", "unknown"),
+                        json.dumps(agent_reasoning.get("Key Memories Used", [])),
+                        json.dumps(agent_reasoning.get("Inferences Made", [])),
+                        full_log_json,
+                    ),
+                )
         except sqlite3.Error as e:
             log.error(f"SQLite logging failed: {e}")
 
     def get_last_log(self) -> Optional[Dict[str, Any]]:
-        """
-        Retrieves the last log entry processed by this instance.
+        """Retrieves the last log entry processed by this instance.
 
         Returns:
             The last log entry as a dictionary, or None if no entries have been logged.
+
         """
         return self._last_log_entry
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.experience.logger VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28

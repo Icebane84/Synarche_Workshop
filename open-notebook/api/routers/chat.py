@@ -20,15 +20,15 @@ router = APIRouter()
 # Request/Response models
 class CreateSessionRequest(BaseModel):
     notebook_id: str = Field(..., description="Notebook ID to create session for")
-    title: Optional[str] = Field(None, description="Optional session title")
-    model_override: Optional[str] = Field(
+    title: str | None = Field(None, description="Optional session title")
+    model_override: str | None = Field(
         None, description="Optional model override for this session"
     )
 
 
 class UpdateSessionRequest(BaseModel):
-    title: Optional[str] = Field(None, description="New session title")
-    model_override: Optional[str] = Field(
+    title: str | None = Field(None, description="New session title")
+    model_override: str | None = Field(
         None, description="Model override for this session"
     )
 
@@ -37,25 +37,23 @@ class ChatMessage(BaseModel):
     id: str = Field(..., description="Message ID")
     type: str = Field(..., description="Message type (human|ai)")
     content: str = Field(..., description="Message content")
-    timestamp: Optional[str] = Field(None, description="Message timestamp")
+    timestamp: str | None = Field(None, description="Message timestamp")
 
 
 class ChatSessionResponse(BaseModel):
     id: str = Field(..., description="Session ID")
     title: str = Field(..., description="Session title")
-    notebook_id: Optional[str] = Field(None, description="Notebook ID")
+    notebook_id: str | None = Field(None, description="Notebook ID")
     created: str = Field(..., description="Creation timestamp")
     updated: str = Field(..., description="Last update timestamp")
-    message_count: Optional[int] = Field(
-        None, description="Number of messages in session"
-    )
-    model_override: Optional[str] = Field(
+    message_count: int | None = Field(None, description="Number of messages in session")
+    model_override: str | None = Field(
         None, description="Model override for this session"
     )
 
 
 class ChatSessionWithMessagesResponse(ChatSessionResponse):
-    messages: List[ChatMessage] = Field(
+    messages: list[ChatMessage] = Field(
         default_factory=list, description="Session messages"
     )
 
@@ -63,26 +61,26 @@ class ChatSessionWithMessagesResponse(ChatSessionResponse):
 class ExecuteChatRequest(BaseModel):
     session_id: str = Field(..., description="Chat session ID")
     message: str = Field(..., description="User message content")
-    context: Dict[str, Any] = Field(
+    context: dict[str, Any] = Field(
         ..., description="Chat context with sources and notes"
     )
-    model_override: Optional[str] = Field(
+    model_override: str | None = Field(
         None, description="Optional model override for this message"
     )
 
 
 class ExecuteChatResponse(BaseModel):
     session_id: str = Field(..., description="Session ID")
-    messages: List[ChatMessage] = Field(..., description="Updated message list")
+    messages: list[ChatMessage] = Field(..., description="Updated message list")
 
 
 class BuildContextRequest(BaseModel):
     notebook_id: str = Field(..., description="Notebook ID")
-    context_config: Dict[str, Any] = Field(..., description="Context configuration")
+    context_config: dict[str, Any] = Field(..., description="Context configuration")
 
 
 class BuildContextResponse(BaseModel):
-    context: Dict[str, Any] = Field(..., description="Built context data")
+    context: dict[str, Any] = Field(..., description="Built context data")
     token_count: int = Field(..., description="Estimated token count")
     char_count: int = Field(..., description="Character count")
 
@@ -92,7 +90,7 @@ class SuccessResponse(BaseModel):
     message: str = Field(..., description="Success message")
 
 
-@router.get("/chat/sessions", response_model=List[ChatSessionResponse])
+@router.get("/chat/sessions", response_model=list[ChatSessionResponse])
 async def get_sessions(notebook_id: str = Query(..., description="Notebook ID")):
     """Get all chat sessions for a notebook."""
     try:
@@ -119,6 +117,7 @@ async def get_sessions(notebook_id: str = Query(..., description="Notebook ID"))
     except NotFoundError:
         raise HTTPException(status_code=404, detail="Notebook not found")
 
+
 @router.post("/chat/sessions", response_model=ChatSessionResponse)
 async def create_session(request: CreateSessionRequest):
     """Create a new chat session."""
@@ -129,8 +128,7 @@ async def create_session(request: CreateSessionRequest):
 
     # Create new session
     session = ChatSession(
-        title=request.title
-        or f"Chat Session {asyncio.get_event_loop().time():.0f}",
+        title=request.title or f"Chat Session {asyncio.get_event_loop().time():.0f}",
         model_override=request.model_override,
     )
     await session.save()
@@ -147,6 +145,7 @@ async def create_session(request: CreateSessionRequest):
         message_count=0,
         model_override=session.model_override,
     )
+
 
 @router.get(
     "/chat/sessions/{session_id}", response_model=ChatSessionWithMessagesResponse
@@ -217,6 +216,7 @@ async def get_session(session_id: str):
     except NotFoundError:
         raise HTTPException(status_code=404, detail="Session not found")
 
+
 @router.put("/chat/sessions/{session_id}", response_model=ChatSessionResponse)
 async def update_session(session_id: str, request: UpdateSessionRequest):
     """Update session title."""
@@ -266,6 +266,7 @@ async def update_session(session_id: str, request: UpdateSessionRequest):
     except NotFoundError:
         raise HTTPException(status_code=404, detail="Session not found")
 
+
 @router.delete("/chat/sessions/{session_id}", response_model=SuccessResponse)
 async def delete_session(session_id: str):
     """Delete a chat session."""
@@ -285,6 +286,7 @@ async def delete_session(session_id: str):
         return SuccessResponse(success=True, message="Session deleted successfully")
     except NotFoundError:
         raise HTTPException(status_code=404, detail="Session not found")
+
 
 @router.post("/chat/execute", response_model=ExecuteChatResponse)
 async def execute_chat(request: ExecuteChatRequest):
@@ -355,6 +357,7 @@ async def execute_chat(request: ExecuteChatRequest):
     except NotFoundError:
         raise HTTPException(status_code=404, detail="Session not found")
 
+
 @router.post("/chat/context", response_model=BuildContextResponse)
 async def build_context(request: BuildContextRequest):
     """Build context for a notebook based on context configuration."""
@@ -395,7 +398,7 @@ async def build_context(request: BuildContextRequest):
                     context_data["sources"].append(source_context)
                     total_content += str(source_context)
             except Exception as e:
-                logger.warning(f"Error processing source {source_id}: {str(e)}")
+                logger.warning(f"Error processing source {source_id}: {e!s}")
                 continue
 
         # Process notes
@@ -417,7 +420,7 @@ async def build_context(request: BuildContextRequest):
                     context_data["notes"].append(note_context)
                     total_content += str(note_context)
             except Exception as e:
-                logger.warning(f"Error processing note {note_id}: {str(e)}")
+                logger.warning(f"Error processing note {note_id}: {e!s}")
                 continue
     else:
         # Default behavior - include all sources and notes with short context
@@ -428,7 +431,7 @@ async def build_context(request: BuildContextRequest):
                 context_data["sources"].append(source_context)
                 total_content += str(source_context)
             except Exception as e:
-                logger.warning(f"Error processing source {source.id}: {str(e)}")
+                logger.warning(f"Error processing source {source.id}: {e!s}")
                 continue
 
         notes = await notebook.get_notes()
@@ -438,7 +441,7 @@ async def build_context(request: BuildContextRequest):
                 context_data["notes"].append(note_context)
                 total_content += str(note_context)
             except Exception as e:
-                logger.warning(f"Error processing note {note.id}: {str(e)}")
+                logger.warning(f"Error processing note {note.id}: {e!s}")
                 continue
 
     # Calculate character and token counts

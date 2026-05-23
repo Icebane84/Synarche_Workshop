@@ -11,8 +11,7 @@
 # ]
 # ///
 
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -60,13 +59,13 @@ Conforms to OGLN/AISTF v15.0 governance and documentation standards.
 
 # [OMNI-ARTIFACT-ANCHOR] ID: SYNG.TOOL.Oracle_Lens_API VER: v15.0 [OMEGA] DOMAIN: AXION STATUS: [ACTIVE] TS: 2026-04-22
 
-from ast import Dict
 import json
 import logging
 import os
 import re
 import sys
-from typing import Any, List, Optional, dict
+from ast import Dict
+from typing import Any
 
 # ------------------------------------------
 # 3. KINETIC EXECUTION LOGIC
@@ -74,13 +73,17 @@ from typing import Any, List, Optional, dict
 
 
 def setup_logger() -> logging.Logger:
-    """
-    Initializes Phoenix-Class logging for the script.
+    """Initializes Phoenix-Class logging for the script.
 
     Returns:
         A configured logging.Logger instance.
+
     """
-    logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
+    logging.basicConfig(
+        level=logging.INFO,
+        format="[%(levelname)s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
     return logging.getLogger("Axion.OracleLens")
 
 
@@ -88,43 +91,52 @@ log = setup_logger()
 
 
 class OracleLensParser:
-    """
-    Parses Synarche Markdown artifacts to extract metadata and relationships.
+    """Parses Synarche Markdown artifacts to extract metadata and relationships.
     Generates a structured JSON payload for the Oracle Matrix visualization.
     """
 
     def __init__(self, target_dir: str) -> None:
-        """
-        Initializes the OracleLensParser.
+        """Initializes the OracleLensParser.
 
         Args:
             target_dir: The directory containing the Markdown artifacts to parse.
+
         """
         self.target_dir = target_dir
         self.nodes: list[Dict[str, Any]] = []
         self.edges: list[Dict[str, Any]] = []
 
         # OMEGA v15.0 Extraction Regex Patterns
-        self.re_id = re.compile(r"\|\s*\*\*Artifact ID\*\*\s*\|\s*(?:`?)([^`\|]+)(?:`?)\s*\|")
-        self.re_name = re.compile(r"\|\s*\*\*Official Name\*\*\s*\|\s*(?:`?)([^`\|]+)(?:`?)\s*\|")
+        self.re_id = re.compile(
+            r"\|\s*\*\*Artifact ID\*\*\s*\|\s*(?:`?)([^`\|]+)(?:`?)\s*\|"
+        )
+        self.re_name = re.compile(
+            r"\|\s*\*\*Official Name\*\*\s*\|\s*(?:`?)([^`\|]+)(?:`?)\s*\|"
+        )
         self.re_class = re.compile(
             r"\|\s*\*\*Celestial Class\*\*\s*\|\s*(?:`?)(?:\[?)(STAR|PLANET|MOON|ASTEROID|VOID)(?:\]?)(?:`?)\s*\|",
             re.IGNORECASE,
         )
 
-        self.re_coherence = re.compile(r"\|\s*\*\*Coherence\*\*\s*\|\s*(?:`?)([0-9.]+)(?:`?)\s*\|")
-        self.re_resonance = re.compile(r"\|\s*\*\*Resonance\*\*\s*\|\s*(?:`?)([0-9.]+)(?:`?)\s*\|")
-        self.re_stability = re.compile(r"\|\s*\*\*Stability\*\*\s*\|\s*(?:`?)([^`\|]+)(?:`?)\s*\|")
+        self.re_coherence = re.compile(
+            r"\|\s*\*\*Coherence\*\*\s*\|\s*(?:`?)([0-9.]+)(?:`?)\s*\|"
+        )
+        self.re_resonance = re.compile(
+            r"\|\s*\*\*Resonance\*\*\s*\|\s*(?:`?)([0-9.]+)(?:`?)\s*\|"
+        )
+        self.re_stability = re.compile(
+            r"\|\s*\*\*Stability\*\*\s*\|\s*(?:`?)([^`\|]+)(?:`?)\s*\|"
+        )
 
         # Synergy Table Match: | `Target_ID` | `RELATION_TYPE` | Impact |
         self.re_synergy_row = re.compile(r"\|\s*`([^`]+)`\s*\|\s*`([A-Z_]+)`\s*\|")
 
     def parse_file(self, filepath: str) -> None:
-        """
-        Parses a single Markdown file to extract identity, state, and synergy metadata.
+        """Parses a single Markdown file to extract identity, state, and synergy metadata.
 
         Args:
             filepath: Absolute path to the Markdown file.
+
         """
         try:
             with open(filepath, encoding="utf-8") as f:
@@ -159,7 +171,11 @@ class OracleLensParser:
             "id": node_id,
             "label": label,
             "celestialClass": celestial_class,
-            "stateVector": {"coherence": coherence, "resonance": resonance, "stability": stability},
+            "stateVector": {
+                "coherence": coherence,
+                "resonance": resonance,
+                "stability": stability,
+            },
             "superposition": [0, 0, 0],  # To be calculated by the React frontend
             "isFocused": False,
         }
@@ -171,7 +187,11 @@ class OracleLensParser:
         block_e_start = content.find("Block E: Ethos")
 
         if block_d_start != -1:
-            search_area = content[block_d_start:block_e_start] if block_e_start != -1 else content[block_d_start:]
+            search_area = (
+                content[block_d_start:block_e_start]
+                if block_e_start != -1
+                else content[block_d_start:]
+            )
             synergy_matches = self.re_synergy_row.findall(search_area)
 
             for target_id, relation_type in synergy_matches:
@@ -187,9 +207,7 @@ class OracleLensParser:
                 self.edges.append(edge)
 
     def traverse_and_parse(self) -> None:
-        """
-        Recursively traverses the target directory and parses all compliant Markdown files.
-        """
+        """Recursively traverses the target directory and parses all compliant Markdown files."""
         log.info(f"Initiating Substrate Sweep in: {self.target_dir}")
         file_count = 0
         for root, _, files in os.walk(self.target_dir):
@@ -199,14 +217,16 @@ class OracleLensParser:
                     file_count += 1
 
         log.info(f"Sweep Complete. Processed {file_count} files.")
-        log.info(f"Extracted Nodes: {len(self.nodes)} | Extracted Edges: {len(self.edges)}")
+        log.info(
+            f"Extracted Nodes: {len(self.nodes)} | Extracted Edges: {len(self.edges)}"
+        )
 
     def export_json(self, output_path: str) -> None:
-        """
-        Exports the extracted nodes and edges to a JSON file.
+        """Exports the extracted nodes and edges to a JSON file.
 
         Args:
             output_path: Absolute path where the JSON file will be saved.
+
         """
         payload = {"nodes": self.nodes, "edges": self.edges}
         try:
@@ -219,11 +239,12 @@ class OracleLensParser:
 
 
 def main() -> None:
-    """
-    Main entry point for the Oracle Lens Parser script.
+    """Main entry point for the Oracle Lens Parser script.
     Resolves workspace paths and executes the parsing pipeline.
     """
-    workspace_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.."))
+    workspace_root = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "../../..")
+    )
     governance_dir = os.path.join(workspace_root, "_governance")
     output_file = os.path.join(workspace_root, "axion-core/assets/oracle_matrix.json")
 

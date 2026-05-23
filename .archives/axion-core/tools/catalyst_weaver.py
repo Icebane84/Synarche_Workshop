@@ -1,5 +1,4 @@
-"""
-# TOOL-HPRI-006: The Catalyst Weaver (Synergy Engine)
+"""# TOOL-HPRI-006: The Catalyst Weaver (Synergy Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -104,7 +103,13 @@ class CatalystWeaver:
         # Normalize slashes
         target = target.replace("\\", "/")
         node = next(
-            (n for n in self.nodes if n.get("metadata", {}).get("filepath", "").replace("\\", "/") == target), None
+            (
+                n
+                for n in self.nodes
+                if n.get("metadata", {}).get("filepath", "").replace("\\", "/")
+                == target
+            ),
+            None,
         )
         if node:
             return node
@@ -114,7 +119,9 @@ class CatalystWeaver:
             try:
                 content = Path(target).read_text(encoding="utf-8", errors="ignore")
                 # Quick extract ID
-                match = re.search(r"^#\s*([A-Z]{3,}(?:-[A-Z0-9]+)+)", content, re.MULTILINE)
+                match = re.search(
+                    r"^#\s*([A-Z]{3,}(?:-[A-Z0-9]+)+)", content, re.MULTILINE
+                )
                 artifact_id = match.group(1) if match else Path(target).name
 
                 # Mock node
@@ -154,7 +161,9 @@ class CatalystWeaver:
                 return min(MAX_SEMANTIC_SCORE, 0.1 * len(intersection))
         return 0.0
 
-    def _calculate_metadata_alignment(self, src_content: str, tgt_content: str) -> float:
+    def _calculate_metadata_alignment(
+        self, src_content: str, tgt_content: str
+    ) -> float:
         src_tags = self._extract_tags(src_content)
         tgt_tags = self._extract_tags(tgt_content)
 
@@ -164,7 +173,9 @@ class CatalystWeaver:
                 return METADATA_SCORE  # Flat bonus
         return 0.0
 
-    def _calculate_explicit_reference(self, src: dict[str, Any], tgt: dict[str, Any]) -> float:
+    def _calculate_explicit_reference(
+        self, src: dict[str, Any], tgt: dict[str, Any]
+    ) -> float:
         h_ref = 0.0
         tgt_id = tgt.get("id", "")
         src_content = src.get("content", "")
@@ -176,10 +187,16 @@ class CatalystWeaver:
                 h_ref += REF_BOOST
         return h_ref
 
-    def _calculate_structural_alignment(self, src: dict[str, Any], tgt: dict[str, Any]) -> float:
+    def _calculate_structural_alignment(
+        self, src: dict[str, Any], tgt: dict[str, Any]
+    ) -> float:
         src_path = src.get("metadata", {}).get("filepath", "")
         tgt_path = tgt.get("metadata", {}).get("filepath", "")
-        if src_path and tgt_path and os.path.dirname(src_path) == os.path.dirname(tgt_path):
+        if (
+            src_path
+            and tgt_path
+            and os.path.dirname(src_path) == os.path.dirname(tgt_path)
+        ):
             # Same directory
             return STRUCT_SCORE
         return 0.0
@@ -190,7 +207,9 @@ class CatalystWeaver:
         match1 = re.search(r"\*\*Tags:\*\*\s*(.*)", content)
         if match1:
             raw = match1.group(1)
-            clean = raw.replace("`", "").replace("[", "").replace("]", "").replace("|", "")
+            clean = (
+                raw.replace("`", "").replace("[", "").replace("]", "").replace("|", "")
+            )
             tags.extend([t.strip().lower() for t in clean.split(",") if t.strip()])
 
         # Pattern 2: Pipe Table | **Tags** | `tag1, tag2` |
@@ -205,8 +224,7 @@ class CatalystWeaver:
         return tags
 
     def weave_all(self) -> list[dict[str, Any]]:
-        """
-        Scans entire graph for missing synergistic links.
+        """Scans entire graph for missing synergistic links.
         Returns a list of new edge dictionaries.
         """
         new_edges = []
@@ -228,7 +246,10 @@ class CatalystWeaver:
                             "source": src.get("id"),
                             "target": tgt.get("id"),
                             "relation": "SYNERGY",
-                            "metadata": {"score": score, "algorithm": "catalyst_weaver_v1"},
+                            "metadata": {
+                                "score": score,
+                                "algorithm": "catalyst_weaver_v1",
+                            },
                         }
                     )
 
@@ -251,7 +272,13 @@ class CatalystWeaver:
 
             score = self.calculate_synergy(target_node, node)
             if score >= SYNERGY_THRESHOLD:
-                synergy_links.append({"target": node.get("id"), "score": score, "reason": f"S={score:.2f}"})
+                synergy_links.append(
+                    {
+                        "target": node.get("id"),
+                        "score": score,
+                        "reason": f"S={score:.2f}",
+                    }
+                )
 
         # Sort by score
         # Sort by score
@@ -263,14 +290,14 @@ class CatalystWeaver:
         try:
             with open(self.graph_path, "w", encoding="utf-8") as f:
                 json.dump({"nodes": self.nodes, "edges": self.edges}, f, indent=2)
-            print(f"[INFO] Graph saved to {self.graph_path} ({len(self.nodes)} nodes, {len(self.edges)} edges)")
+            print(
+                f"[INFO] Graph saved to {self.graph_path} ({len(self.nodes)} nodes, {len(self.edges)} edges)"
+            )
         except Exception as e:
             print(f"[ERROR] Failed to save graph: {e}")
 
     def scan(self, target_dir: str) -> None:
-        """
-        Recursively scans a directory for artifacts and adds them to the graph.
-        """
+        """Recursively scans a directory for artifacts and adds them to the graph."""
         print(f"[INFO] Scanning {target_dir} for artifacts...")
         target_path = Path(target_dir)
         if not target_path.exists():
@@ -291,7 +318,11 @@ class CatalystWeaver:
                     content = full_path.read_text(encoding="utf-8", errors="ignore")
 
                     # Check for UIP Header or Artifact ID regex
-                    match = re.search(r"Artifact ID.*[:|`]\s*([A-Z]{3,}-[A-Z]{3,}-[0-9]{3,})", content, re.IGNORECASE)
+                    match = re.search(
+                        r"Artifact ID.*[:|`]\s*([A-Z]{3,}-[A-Z]{3,}-[0-9]{3,})",
+                        content,
+                        re.IGNORECASE,
+                    )
                     if not match:
                         # Fallback: Check for standard header start
                         if not ("# TOOL-" in content or "Artifact ID" in content):
@@ -306,11 +337,17 @@ class CatalystWeaver:
                         "id": artifact_id,
                         "type": "Artifact",
                         "content": content[:500],  # Store snippet only to save space
-                        "metadata": {"filepath": str(full_path.absolute()), "filename": file, "size": len(content)},
+                        "metadata": {
+                            "filepath": str(full_path.absolute()),
+                            "filename": file,
+                            "size": len(content),
+                        },
                     }
 
                     # Check if exists
-                    existing = next((n for n in self.nodes if n["id"] == artifact_id), None)
+                    existing = next(
+                        (n for n in self.nodes if n["id"] == artifact_id), None
+                    )
                     if existing:
                         existing.update(node_data)
                         updated_count += 1
@@ -329,7 +366,9 @@ class CatalystWeaver:
 def main() -> None:
     parser = argparse.ArgumentParser(description="The Catalyst Weaver")
     parser = argparse.ArgumentParser(description="The Catalyst Weaver")
-    parser.add_argument("command", choices=["weave", "scan", "weave_all"], help="Command to execute")
+    parser.add_argument(
+        "command", choices=["weave", "scan", "weave_all"], help="Command to execute"
+    )
     parser.add_argument("--target", help="Target file or directory")
 
     args = parser.parse_args()

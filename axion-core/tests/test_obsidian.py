@@ -48,6 +48,8 @@ try:
         # notes = bridge.list_notes() # This might fail if the API structure is different
         # print(f"Found {len(notes)} notes.")
     else:
-        print("❌ Connection Failed. Is Obsidian running and the Local REST API plugin enabled?")
+        print(
+            "❌ Connection Failed. Is Obsidian running and the Local REST API plugin enabled?"
+        )
 except Exception as e:
     print(f"❌ An error occurred during connection: {e}")

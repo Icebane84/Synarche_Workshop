@@ -9,6 +9,7 @@
 ---
 
 # single-container.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SINGLE-CONTAINER-001` | The Sovereign ID. |
-| **Official Name** | `single-container.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SINGLE-CONTAINER-001`   | The Sovereign ID. |
+| **Official Name**   | `single-container.md`         | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Single Container Installation
 
@@ -59,8 +60,8 @@ services:
     image: lfnovo/open_notebook:v1-latest-single
     pull_policy: always
     ports:
-      - "8502:8502"  # Web UI (React frontend)
-      - "5055:5055"  # API
+      - "8502:8502" # Web UI (React frontend)
+      - "5055:5055" # API
     environment:
       - OPENAI_API_KEY=sk-...
       - SURREAL_URL=ws://localhost:8000/rpc
@@ -74,6 +75,7 @@ services:
 ```
 
 Run:
+
 ```bash
 docker compose up -d
 ```
@@ -83,24 +85,28 @@ Access: `http://localhost:8502`
 ### For Cloud Platforms
 
 **PikaPods:**
+
 1. Click "New App"
 2. Search "Open Notebook"
 3. Set environment variables
 4. Click "Deploy"
 
 **Railway:**
+
 1. Create new project
 2. Add `lfnovo/open_notebook:v1-latest-single`
 3. Set environment variables
 4. Deploy
 
 **Render:**
+
 1. Create new Web Service
 2. Use Docker image: `lfnovo/open_notebook:v1-latest-single`
 3. Set environment variables in dashboard
 4. Configure persistent disk for `/app/data` and `/mydata`
 
 **DigitalOcean App Platform:**
+
 1. Create new app from Docker Hub
 2. Use image: `lfnovo/open_notebook:v1-latest-single`
 3. Set port to 8502
@@ -108,6 +114,7 @@ Access: `http://localhost:8502`
 5. Configure persistent storage
 
 **Heroku:**
+
 ```bash
 # Using heroku.yml
 heroku container:push web
@@ -116,6 +123,7 @@ heroku config:set OPENAI_API_KEY=sk-...
 ```
 
 **Coolify:**
+
 1. Add new service → Docker Image
 2. Image: `lfnovo/open_notebook:v1-latest-single`
 3. Port: 8502
@@ -127,25 +135,25 @@ heroku config:set OPENAI_API_KEY=sk-...
 
 ## Environment Variables
 
-| Variable | Purpose | Example |
-|----------|---------|---------|
-| `OPENAI_API_KEY` | API key | `sk-...` |
-| `SURREAL_URL` | Database | `ws://localhost:8000/rpc` |
-| `SURREAL_USER` | DB user | `root` |
-| `SURREAL_PASSWORD` | DB password | `password` |
-| `API_URL` | External URL (for remote access) | `https://myapp.example.com` |
+| Variable           | Purpose                          | Example                     |
+| ------------------ | -------------------------------- | --------------------------- |
+| `OPENAI_API_KEY`   | API key                          | `sk-...`                    |
+| `SURREAL_URL`      | Database                         | `ws://localhost:8000/rpc`   |
+| `SURREAL_USER`     | DB user                          | `root`                      |
+| `SURREAL_PASSWORD` | DB password                      | `password`                  |
+| `API_URL`          | External URL (for remote access) | `https://myapp.example.com` |
 
 ---
 
 ## Limitations vs Docker Compose
 
-| Feature | Single Container | Docker Compose |
-|---------|------------------|-----------------|
-| Setup time | 2 minutes | 5 minutes |
-| Complexity | Minimal | Moderate |
-| Services | All bundled | Separated |
-| Scalability | Limited | Excellent |
-| Memory usage | ~800MB | ~1.2GB |
+| Feature      | Single Container | Docker Compose |
+| ------------ | ---------------- | -------------- |
+| Setup time   | 2 minutes        | 5 minutes      |
+| Complexity   | Minimal          | Moderate       |
+| Services     | All bundled      | Separated      |
+| Scalability  | Limited          | Excellent      |
+| Memory usage | ~800MB           | ~1.2GB         |
 
 ---
 

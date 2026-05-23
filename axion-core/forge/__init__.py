@@ -32,7 +32,7 @@ __version__ = "1.0.0"
 
 
 def version() -> str:
-    """Get the Forge version number"""
+    """Get the Forge version number."""
     return __version__
 
 

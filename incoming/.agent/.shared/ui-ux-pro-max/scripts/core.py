@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-UI/UX Pro Max Core - BM25 search engine for UI/UX style guides
-"""
+"""UI/UX Pro Max Core - BM25 search engine for UI/UX style guides."""
 
 import csv
 import re
-from pathlib import Path
-from math import log
 from collections import defaultdict
+from math import log
+from pathlib import Path
 
 # ============ CONFIGURATION ============
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -234,7 +232,7 @@ AVAILABLE_STACKS = list(STACK_CONFIG.keys())
 
 # ============ BM25 IMPLEMENTATION ============
 class BM25:
-    """BM25 ranking algorithm for text search"""
+    """BM25 ranking algorithm for text search."""
 
     def __init__(self, k1=1.5, b=0.75):
         self.k1 = k1
@@ -247,12 +245,12 @@ class BM25:
         self.N = 0
 
     def tokenize(self, text):
-        """Lowercase, split, remove punctuation, filter short words"""
+        """Lowercase, split, remove punctuation, filter short words."""
         text = re.sub(r"[^\w\s]", " ", str(text).lower())
         return [w for w in text.split() if len(w) > 2]
 
     def fit(self, documents):
-        """Build BM25 index from documents"""
+        """Build BM25 index from documents."""
         self.corpus = [self.tokenize(doc) for doc in documents]
         self.N = len(self.corpus)
         if self.N == 0:
@@ -271,7 +269,7 @@ class BM25:
             self.idf[word] = log((self.N - freq + 0.5) / (freq + 0.5) + 1)
 
     def score(self, query):
-        """Score all documents against query"""
+        """Score all documents against query."""
         query_tokens = self.tokenize(query)
         scores = []
 
@@ -299,13 +297,13 @@ class BM25:
 
 # ============ SEARCH FUNCTIONS ============
 def _load_csv(filepath):
-    """Load CSV and return list of dicts"""
+    """Load CSV and return list of dicts."""
     with open(filepath, "r", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
 def _search_csv(filepath, search_cols, output_cols, query, max_results):
-    """Core search function using BM25"""
+    """Core search function using BM25."""
     if not filepath.exists():
         return []
 
@@ -330,7 +328,7 @@ def _search_csv(filepath, search_cols, output_cols, query, max_results):
 
 
 def detect_domain(query):
-    """Auto-detect the most relevant domain from query"""
+    """Auto-detect the most relevant domain from query."""
     query_lower = query.lower()
 
     domain_keywords = {
@@ -448,7 +446,7 @@ def detect_domain(query):
 
 
 def search(query, domain=None, max_results=MAX_RESULTS):
-    """Main search function with auto-domain detection"""
+    """Main search function with auto-domain detection."""
     if domain is None:
         domain = detect_domain(query)
 
@@ -472,7 +470,7 @@ def search(query, domain=None, max_results=MAX_RESULTS):
 
 
 def search_stack(query, stack, max_results=MAX_RESULTS):
-    """Search stack-specific guidelines"""
+    """Search stack-specific guidelines."""
     if stack not in STACK_CONFIG:
         return {
             "error": f"Unknown stack: {stack}. Available: {', '.join(AVAILABLE_STACKS)}"

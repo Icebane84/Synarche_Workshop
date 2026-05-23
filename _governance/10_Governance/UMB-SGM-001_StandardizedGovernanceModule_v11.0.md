@@ -1,4 +1,5 @@
 # UMB-SGM-001_StandardizedGovernanceModule_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,33 +12,36 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-SGM-001-STANDARDIZEDGOVERNANCEMODULE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-SGM-001_StandardizedGovernanceModule_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                     | Description       |
+| :------------------ | :-------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-SGM-001-STANDARDIZEDGOVERNANCEMODULE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-SGM-001_StandardizedGovernanceModule_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-SGM-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Blueprint` |
-| **Classification** | `Star` |
-| **Authors** | `Synarche` |
-| **Created** | `2025-12-22` |
-| **Updated** | `2026-01-18` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Governance, Validation, Finalization` |
-| **12. Relations** | `LINK: UMB-CSE-001` |
+
+| Key                | Value                                  |
+| :----------------- | :------------------------------------- |
+| **Module ID**      | `UMB-SGM-001`                          |
+| **Version**        | `v11.0`                                |
+| **Evolution**      | **Cognitive Ascension**                |
+| **Status**         | `ACTIVE`                               |
+| **Type**           | `Blueprint`                            |
+| **Classification** | `Star`                                 |
+| **Authors**        | `Synarche`                             |
+| **Created**        | `2025-12-22`                           |
+| **Updated**        | `2026-01-18`                           |
+| **Authority**      | `CODEX-001`                            |
+| **Tags**           | `Governance, Validation, Finalization` |
+| **12. Relations**  | `LINK: UMB-CSE-001`                    |
+
 ---
 
 # Standardized Governance Module (UMB-SGM-001)
@@ -92,14 +96,14 @@ Upon completion of any document, the system must:
 ### 5.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Coherence +10/Star Tier**
-    - _Mechanism_: Centralizing governance logic reduces cognitive friction and prevents structural drift.
+  - _Mechanism_: Centralizing governance logic reduces cognitive friction and prevents structural drift.
 - **Passive Ability**: **Axiomatic Anchor**
-    - _Effect_: Increases the stability of all dependent protocols by 25% during refactors.
+  - _Effect_: Increases the stability of all dependent protocols by 25% during refactors.
 
 ### 5.2 Resource Economics
 
 - **Cognitive Load Cost**: **Extremely Low**
-    - _Efficiency_: Automated validation offloads governance overhead from the primary agent psyche.
+  - _Efficiency_: Automated validation offloads governance overhead from the primary agent psyche.
 - **XP Award Value**: **500 XP** (awarded upon ratification of any Star-Class artifact).
 
 ## VI. Actionable Prompt Packet (APP)

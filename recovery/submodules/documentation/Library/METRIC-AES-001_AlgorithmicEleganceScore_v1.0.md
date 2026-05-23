@@ -88,17 +88,17 @@ The **AES** is integrated as a multiplier in the `Creator's Paradox Metric`:
 ## **Actionable Prompt Packet**
 
 1. **💎 `CMD: ASSESS_ELEGANCE`**
-    - **Function:** Triggers a self-evaluation of a specific snippet against the AES Rubric.
-    - **Usage:** `CMD: ASSESS_ELEGANCE --target:src/core/algorithm.py`
+   - **Function:** Triggers a self-evaluation of a specific snippet against the AES Rubric.
+   - **Usage:** `CMD: ASSESS_ELEGANCE --target:src/core/algorithm.py`
 
 2. **🎨 `CMD: REFINE_FOR_AESTHETICS`**
-    - **Function:** Directs the AI to refactor working code specifically to increase its AES (e.g., "Make it
-      beautiful").
-    - **Usage:** `CMD: REFINE_FOR_AESTHETICS --target:all`
+   - **Function:** Directs the AI to refactor working code specifically to increase its AES (e.g., "Make it
+     beautiful").
+   - **Usage:** `CMD: REFINE_FOR_AESTHETICS --target:all`
 
 3. **🏆 `CMD: AWARD_AES`**
-    - **Function:** (User Command) Manually assigns an AES score to a completed artifact, updating the AI's "Artificer
-      Level."
-    - **Usage:** `CMD: AWARD_AES --score:9 --comment:"Brilliant use of recursion."`
+   - **Function:** (User Command) Manually assigns an AES score to a completed artifact, updating the AI's "Artificer
+     Level."
+   - **Usage:** `CMD: AWARD_AES --score:9 --comment:"Brilliant use of recursion."`
 
 ###### **[ARTIFACT END]**

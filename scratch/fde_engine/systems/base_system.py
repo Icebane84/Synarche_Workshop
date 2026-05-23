@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -14,7 +13,7 @@
 **Ethos:** Absolute Determinism. Zero Logic Drift.
 """
 
-from typing import List, Any
+from typing import Any, List
 
 
 # Forward declarations (type hints)

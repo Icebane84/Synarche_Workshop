@@ -159,10 +159,10 @@ Recursive patterns identified during implementation.
   "Truth Decay."
 - **Architectural Pattern Established:** "Isomorphic Provenance & Perfect Documentation (IPPD)." Documentation must be
   an executable, relational node within the Hybrid Knowledge Graph.
-    - _Project Setup_ is transmuted to `Systemic Bootstrap` protocols.
-    - _Module Descriptions_ are transmuted to `UMB` (Universal Module Blueprints).
-    - _Troubleshooting_ is transmuted to the append-only `GVRN.Learning.Error` ledger.
-    - _Coding Conventions_ are actively enforced by the `Sentinel` linting engines rather than passively read.
+  - _Project Setup_ is transmuted to `Systemic Bootstrap` protocols.
+  - _Module Descriptions_ are transmuted to `UMB` (Universal Module Blueprints).
+  - _Troubleshooting_ is transmuted to the append-only `GVRN.Learning.Error` ledger.
+  - _Coding Conventions_ are actively enforced by the `Sentinel` linting engines rather than passively read.
 - **Axiomatic Alignment:** Reinforces **Law 16 (Principle of Actionability)**: "Static text is dead weight. Every
   interaction must fuel forward momentum."
 
@@ -317,9 +317,9 @@ Removals and refactors for Zero Entropy.
 - **Synthesis:** Successfully resolved the "Multi-Header Mutilation" regression by refactoring the standardization
   engine to use bidirectional boundary scanning.
 - **Pattern Established:** "Bidirectional Heart Extraction." Instead of naive regex replacement, the engine:
-    1. **Top-Down Scan**: Identifies the metadata block boundary (`Block A`).
-    2. **Bottom-Up Scan**: Identifies the terminal signature boundary (`Block G/Anchor`).
-    3. **Preservation**: Extracts and protects the "Heart" (core content) of the artifact between these boundaries.
+  1. **Top-Down Scan**: Identifies the metadata block boundary (`Block A`).
+  2. **Bottom-Up Scan**: Identifies the terminal signature boundary (`Block G/Anchor`).
+  3. **Preservation**: Extracts and protects the "Heart" (core content) of the artifact between these boundaries.
 - **Dissonance Resolved:** Eliminates systemic metadata duplication and "Header Bloat" caused by repeated
   standardization cycles.
 - **Axiomatic Alignment:** Adheres to **Law 03 (Principle of Idempotency)**: "A sovereign action performed multiple
@@ -353,6 +353,22 @@ Removals and refactors for Zero Entropy.
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v16.3 [SOVEREIGN] STATUS: CANONIZED TS: 2026-04-16 HASH: LRN-SHARD-OMEGA-XXXVIII-CLEANED`
+### [2026-05-19] Model Context Protocol Configuration Alignment
+
+- **Synthesis:** Successfully aligned and unified all six active MCP server configurations (`shadcn`, `synarche-filesystem`, `supabase-mcp-server`, `insforge`, `github-context`, `synarche-db`) between local `.agent/mcp_config.json`, global `.gemini/antigravity/mcp_config.json`, and local `.agent/mcp.yaml`.
+- **Dissonance Resolved:** Resolved the configuration drift between JSON-based VS Code/Desktop MCP configurations and YAML-based CLI or custom orchestrators.
+- **Pattern Established:** "Unified Configuration Integrity." Dual configuration layers (JSON/YAML) must be kept strictly isomorphic to avoid tool pathing and credential execution errors.
+- **Axiomatic Alignment:** Adheres to **Law 03 (Principle of Idempotency)**: "A sovereign action performed multiple times must yield the same result as a single action."
+
+### [2026-05-19] Mypy Sequence Type Inference Resolution
+
+- **Synthesis:** Resolved the static type check issue `"Sequence[str]" has no attribute "append"` in `refresh_registry.py:L51` by using explicitly annotated list assignments (`list[dict[str, Any]]`) rather than inlining list literals within dictionary definitions.
+- **Dissonance Resolved:** Prevented Mypy's type engine from making overly conservative immutable interface assumptions (`Sequence[T]`) during implicit generic dictionary value assignments.
+- **Pattern Established:** "Explicit Collection Scaffolding." High-fidelity type assertions require allocating dynamically populated lists into explicitly typed variables prior to nesting them inside untyped dict fields.
+- **Axiomatic Alignment:** Adheres to **Law 16 (Principle of Actionability)**: "Every interaction must fuel forward momentum, backed by strict semantic typing."
+
+---
+
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v16.4 [SOVEREIGN] STATUS: CANONIZED TS: 2026-05-19 HASH: LRN-SHARD-OMEGA-XXXIX-SYNC`
 
 - [[GVRN.Learning.Index]]

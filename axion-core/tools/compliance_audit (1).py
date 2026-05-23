@@ -1,5 +1,4 @@
-"""
-# TOOL-SENT-001: The Compliance Auditor (Audit Engine)
+"""# TOOL-SENT-001: The Compliance Auditor (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -124,11 +123,15 @@ class Auditor:
             "score": max(0.0, score),
         }
 
-    def _validate_uip(self, content: str, errors: list[str], warnings: list[str]) -> None:
+    def _validate_uip(
+        self, content: str, errors: list[str], warnings: list[str]
+    ) -> None:
         """Validates the UIP block."""
         # More robust split that handles various line endings and optional whitespace
         parts = re.split(r"^---+\s*$", content, flags=re.MULTILINE)
-        uip_block = next((p for p in parts if "Universal Identification & Provenance" in p), None)
+        uip_block = next(
+            (p for p in parts if "Universal Identification & Provenance" in p), None
+        )
 
         if not uip_block:
             errors.append("UIP: Missing or improperly formatted UIP header.")
@@ -145,7 +148,9 @@ class Auditor:
         if not any(evo.lower() in block_content.lower() for evo in VALID_EVOLUTIONS):
             errors.append("UIP: Invalid or missing Evolutionary Alignment.")
 
-    def _validate_geometry(self, content: str, errors: list[str], warnings: list[str]) -> None:
+    def _validate_geometry(
+        self, content: str, errors: list[str], warnings: list[str]
+    ) -> None:
         """Validates H1 singularity and indentation."""
         h1_matches = re.findall(
             r"^#\s+(?!Universal Identification & Provenance).*",
@@ -153,10 +158,14 @@ class Auditor:
             re.MULTILINE | re.IGNORECASE,
         )
         if len(h1_matches) != 1:
-            errors.append(f"Geometry: H1 Singularity violation (Found {len(h1_matches)} H1 headers outside UIP).")
+            errors.append(
+                f"Geometry: H1 Singularity violation (Found {len(h1_matches)} H1 headers outside UIP)."
+            )
 
         if re.search(r"^  - ", content, re.MULTILINE):
-            warnings.append("Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).")
+            warnings.append(
+                "Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces)."
+            )
 
     def _validate_app(self, content: str, warnings: list[str]) -> None:
         """Validates the APP section."""
@@ -166,21 +175,31 @@ class Auditor:
             r"CMD:",
         ]
         if not any(re.search(p, content, re.IGNORECASE) for p in app_patterns):
-            warnings.append("APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.")
-        elif not re.search(r"IV.\s+Actionable\s+Prompt\s+Packet\s+\(APP\)", content, re.IGNORECASE):
-            warnings.append("APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').")
+            warnings.append(
+                "APP: Missing required 'IV. Actionable Prompt Packet (APP)' section."
+            )
+        elif not re.search(
+            r"IV.\s+Actionable\s+Prompt\s+Packet\s+\(APP\)", content, re.IGNORECASE
+        ):
+            warnings.append(
+                "APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)')."
+            )
 
     def _validate_filename(self, filename: str, warnings: list[str]) -> None:
         """Validates the filename pattern."""
         if not re.match(r"[A-Z0-9]+-[A-Z0-9]+-\d+_.*?_v\d+\.\d+\.md", filename):
-            warnings.append(f"Filenaming: Filename '{filename}' does not strictly match v11.0 RNC pattern.")
+            warnings.append(
+                f"Filenaming: Filename '{filename}' does not strictly match v11.0 RNC pattern."
+            )
 
     def run(self) -> None:
         """Executes the audit on the target directory."""
         logger.info(f"Auditing Library: {self.target_dir}")
         for root, dirs, files in os.walk(self.target_dir):
             # Skip ignored directories
-            dirs[:] = [d for d in dirs if d not in [".git", "node_modules", "dist", "build"]]
+            dirs[:] = [
+                d for d in dirs if d not in [".git", "node_modules", "dist", "build"]
+            ]
             for f in files:
                 if f.endswith((".md", ".py")):
                     # For v11.0 alignment, we check both markdown and Python docstrings
@@ -229,7 +248,9 @@ class Auditor:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Phoenix Protocol Compliance Auditor")
     parser.add_argument("target_dir", help="Directory to audit")
-    parser.add_argument("--report", default="audit_report.txt", help="Output report file")
+    parser.add_argument(
+        "--report", default="audit_report.txt", help="Output report file"
+    )
     args = parser.parse_args()
 
     auditor = Auditor(args.target_dir)

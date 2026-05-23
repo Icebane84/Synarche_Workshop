@@ -1,6 +1,6 @@
 # ecs/ecs_scheduler.py
 
-from typing import Dict, Set
+from typing import Set
 
 
 def apply_delta(world, delta, seen: Set):

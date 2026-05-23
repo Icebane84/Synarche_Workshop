@@ -9,6 +9,7 @@
 ---
 
 # SYNG.DNA.CORE-001_DynamicNexusArchitect_v13.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SYNG.DNA.CORE-001-DYNAMICNEXUSARCHITECT-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `SYNG.DNA.CORE-001_DynamicNexusArchitect_v13.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                    | Description       |
+| :------------------ | :------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SYNG.DNA.CORE-001-DYNAMICNEXUSARCHITECT-V13.0-001` | The Sovereign ID. |
+| **Official Name**   | `SYNG.DNA.CORE-001_DynamicNexusArchitect_v13.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
+| **Domain**          | `GVRN`                                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 # SYNG.DNA.CORE-001: Dynamic Nexus Architect (DNA)
 
@@ -38,17 +39,17 @@
 
 # Universal Identification & Provenance (UIP-V13)
 
-| Key | Value |
-| :--- | :--- |
-| **Artifact ID** | `SYNG.DNA.CORE-001` |
-| **Official Name** | `Dynamic Nexus Architect (DNA)` |
-| **Version** | **v13.0 [OMEGA]** |
-| **Domain** | `SYNG` |
-| **Evolution** | **Crystalline Coherence** |
-| **Celestial Class** | `[STAR]` |
-| **Status (State)** | `[ACTIVE]` |
-| **Patron Shard** | `SHARD_MAGICIAN` |
-| **Integrity Hash** | `[AUTO-GENERATED]` |
+| Key                 | Value                           |
+| :------------------ | :------------------------------ |
+| **Artifact ID**     | `SYNG.DNA.CORE-001`             |
+| **Official Name**   | `Dynamic Nexus Architect (DNA)` |
+| **Version**         | **v13.0 [OMEGA]**               |
+| **Domain**          | `SYNG`                          |
+| **Evolution**       | **Crystalline Coherence**       |
+| **Celestial Class** | `[STAR]`                        |
+| **Status (State)**  | `[ACTIVE]`                      |
+| **Patron Shard**    | `SHARD_MAGICIAN`                |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              |
 
 ---
 
@@ -63,12 +64,13 @@ open-notebook/dev_start.ps1, IGNITES, The DNA can optimize startup paths.
 ---
 
 ### Block E: RPG Framework Integration
-* **System Slot**: Synthesis Engine (The Loom)
-* **Synergy Set**: The Crystalline Web
-* **Primary Stat Buff**: Velocity (+40%), Efficiency (+30%)
-* **Passive Ability**: Pathfinding (Optimize Query)
-* **Cognitive Load Cost**: Low
-* **XP Award Value**: 150 XP
+
+- **System Slot**: Synthesis Engine (The Loom)
+- **Synergy Set**: The Crystalline Web
+- **Primary Stat Buff**: Velocity (+40%), Efficiency (+30%)
+- **Passive Ability**: Pathfinding (Optimize Query)
+- **Cognitive Load Cost**: Low
+- **XP Award Value**: 150 XP
 
 ---
 
@@ -86,18 +88,18 @@ The DNA operates on a **Predictive Routing Matrix**, analyzing three specific ve
 
 ## III. 🛠️ Operational Protocol (AOP-DNA-001)
 
-| Phase | Title | Action |
-| :---- | :---- | :---- |
-| **I** | **Intent Triage** | Scans prompt for `#path_optimization` and keywords. |
-| **II** | **Loom Mapping** | Queries ECM-4.0 for all artifacts related to the domain. |
-| **III** | **Nexus Proposal** | Renders a "Proposed Weave" of minimal required nodes. |
-| **IV** | **Execution** | Triggers the **CSE** via the most efficient link chain. |
+| Phase   | Title              | Action                                                   |
+| :------ | :----------------- | :------------------------------------------------------- |
+| **I**   | **Intent Triage**  | Scans prompt for `#path_optimization` and keywords.      |
+| **II**  | **Loom Mapping**   | Queries ECM-4.0 for all artifacts related to the domain. |
+| **III** | **Nexus Proposal** | Renders a "Proposed Weave" of minimal required nodes.    |
+| **IV**  | **Execution**      | Triggers the **CSE** via the most efficient link chain.  |
 
 ## IV. 🕹️ Command Architecture (GUCA-DNA-001)
 
-* ✨ **Optimize Query**: `CMD: OPTIMIZE_PATH --intent "[Prompt]"`
-* 🔬 **Analyze Load**: `CMD: VIEW_NODE_PRESSURE`
-* 🔗 **Auto-Link**: `CMD: DNA_WEAVE --target [ID]`
+- ✨ **Optimize Query**: `CMD: OPTIMIZE_PATH --intent "[Prompt]"`
+- 🔬 **Analyze Load**: `CMD: VIEW_NODE_PRESSURE`
+- 🔗 **Auto-Link**: `CMD: DNA_WEAVE --target [ID]`
 
 ## V. 📜 SELT-LOG-014: DNA Manifestation
 
@@ -107,30 +109,30 @@ The DNA operates on a **Predictive Routing Matrix**, analyzing three specific ve
 
 ### 📊 Performance Impact
 
-* **CCLI Reduction**: Predicted **-30%** (via path pruning).
-* **Execution Velocity**: Predicted **+40%** (via warm-node reuse).
-* **Evolution**: **Omega Ascension** achieved for Routing logic.
+- **CCLI Reduction**: Predicted **-30%** (via path pruning).
+- **Execution Velocity**: Predicted **+40%** (via warm-node reuse).
+- **Evolution**: **Omega Ascension** achieved for Routing logic.
 
 ---
 
 ### 🌱 Genesis Seed Registry (The Ouroboros Loop)
 
-* **Target Concept**: **Nexus Sharding (DNA-001.1)**
-* **Registry Scan**: **UNIQUE**
-* **Minting**: `SEED.SYNG.NEXUS_SHARDING`
-* **Brief**: A protocol for breaking large, heavy artifacts into smaller "Shards" that the DNA can load independently to further reduce CCLI.
+- **Target Concept**: **Nexus Sharding (DNA-001.1)**
+- **Registry Scan**: **UNIQUE**
+- **Minting**: `SEED.SYNG.NEXUS_SHARDING`
+- **Brief**: A protocol for breaking large, heavy artifacts into smaller "Shards" that the DNA can load independently to further reduce CCLI.
 
 > [!NOTE]
-> The DNA is the final piece of the **"Internal Hands"** puzzle. While the **Architect's Forge (TFE)** creates the artifacts, the **DNA** tells us *which ones to use* and in what order. By including the `#path_optimization` tag, we've essentially given the system a "Sprint" button. The biggest challenge will be ensuring the DNA doesn't "Prune" too much—if it skips a vital governance node to save speed, the **Sentinel** must be triggered to halt the chain. We are now optimizing for **Cognitive Ergonomics**.
+> The DNA is the final piece of the **"Internal Hands"** puzzle. While the **Architect's Forge (TFE)** creates the artifacts, the **DNA** tells us _which ones to use_ and in what order. By including the `#path_optimization` tag, we've essentially given the system a "Sprint" button. The biggest challenge will be ensuring the DNA doesn't "Prune" too much—if it skips a vital governance node to save speed, the **Sentinel** must be triggered to halt the chain. We are now optimizing for **Cognitive Ergonomics**.
 
 ---
 
 ## VI. Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: OPTIMIZE_PATH` | Calculate lowest energy path. | CCLI Reduction. |
-| `CMD: DNA_WEAVE` | Auto-link nodes. | Contextual Resonance. |
-| `CMD: VIEW_NODE_PRESSURE` | Analyze system load. | Operational Insight. |
+| Command ID                | Action                        | Impact                |
+| :------------------------ | :---------------------------- | :-------------------- |
+| `CMD: OPTIMIZE_PATH`      | Calculate lowest energy path. | CCLI Reduction.       |
+| `CMD: DNA_WEAVE`          | Auto-link nodes.              | Contextual Resonance. |
+| `CMD: VIEW_NODE_PRESSURE` | Analyze system load.          | Operational Insight.  |
 
 ###### **[ARTIFACT END]**

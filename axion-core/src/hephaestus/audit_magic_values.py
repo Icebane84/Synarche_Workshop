@@ -1,14 +1,15 @@
 # AOP-SNT-002: Magic Value Auditor Execution Script
 # Implements CMD: AUDIT_MAGIC to find GVRN-STD-ENUM-001 violations.
 
-import os
 from enum import Enum, auto
+
 
 # The "Sovereign" definition that SHOULD be used.
 class ProcessStatus(Enum):
     SUCCESS = auto()
     FAILURE = auto()
     PENDING = auto()
+
 
 # --- MOCK FILE SYSTEM for axion-core/tools ---
 # Simulates the files Sentinel needs to audit.
@@ -31,19 +32,22 @@ from enum import Enum, auto
 class ProcessStatus(Enum):
     SUCCESS = {ProcessStatus.SUCCESS.value}
     FAILURE = {ProcessStatus.FAILURE.value}
-    """
+    """,
 }
+
 
 class MagicAuditor:
     def __init__(self, target_directory):
         self.target = target_directory
         self.violations = []
-        print(f"SENTINEL: Initializing Magic Value Audit for directory '{self.target}'.")
+        print(
+            f"SENTINEL: Initializing Magic Value Audit for directory '{self.target}'."
+        )
 
     def execute_audit(self):
         """Greps the codebase for magic string literals."""
         magic_strings_to_find = ['"success"', '"failed"', '"pending"']
-        
+
         for file_path, content in MOCK_FILE_SYSTEM.items():
             if not file_path.startswith(self.target):
                 continue
@@ -56,14 +60,16 @@ class MagicAuditor:
                             "line": line_num,
                             "violation_type": "Magic String",
                             "found": magic_string,
-                            "mandate": "GVRN-STD-ENUM-001"
+                            "mandate": "GVRN-STD-ENUM-001",
                         }
                         self.violations.append(violation)
-    
+
     def generate_report(self):
         """Generates the audit report and identifies the Refactor Quest."""
         if not self.violations:
-            print("AUDIT COMPLETE: No magic value violations found. System is compliant.")
+            print(
+                "AUDIT COMPLETE: No magic value violations found. System is compliant."
+            )
             return
 
         print("\n--- SENTINEL AUDIT REPORT: GVRN-STD-ENUM-001 VIOLATIONS ---")

@@ -57,8 +57,9 @@ Governed By: CODEX-001 v11.0
 import argparse
 import logging
 import os
-from security import execute_safe
 import sys
+
+from security import execute_safe
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")

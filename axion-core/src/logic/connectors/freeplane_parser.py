@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -44,13 +43,13 @@
 
 import logging
 import os
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
+
 from lxml import etree
 
 
 class FreeplaneParser:
-    """
-    Parses Freeplane (.mm) XML files into structured dictionaries.
+    """Parses Freeplane (.mm) XML files into structured dictionaries.
     Extracts Nodes (Topics), Attributes, and Links while maintaining hierarchy.
     Conforms to OGLN/AISTF v15.0 compliance standards.
     """
@@ -60,14 +59,14 @@ class FreeplaneParser:
         self.logger = logging.getLogger("FreeplaneParser")
 
     def parse_mindmap(self, file_path: str) -> Optional[Dict[str, Any]]:
-        """
-        Parses a Freeplane .mm file and returns a structured representation.
+        """Parses a Freeplane .mm file and returns a structured representation.
 
         Args:
             file_path: The absolute path to the .mm file.
 
         Returns:
             A dictionary representing the root node and its children, or None if parsing fails.
+
         """
         if not os.path.exists(file_path):
             self.logger.error(f"File not found: {file_path}")
@@ -76,13 +75,13 @@ class FreeplaneParser:
         try:
             tree = etree.parse(file_path)
             root_element = tree.getroot()
-            
+
             # The root of the XML is <map>, its first child is the Root Node
             map_root_node = root_element.find("node")
             if map_root_node is None:
                 self.logger.error("Invalid Mind Map: No root node found within <map>.")
                 return None
-                
+
             return self._parse_node(map_root_node)
 
         except Exception as e:
@@ -90,21 +89,21 @@ class FreeplaneParser:
             return None
 
     def _parse_node(self, node_element: etree._Element) -> Dict[str, Any]:
-        """
-        Recursively parses an XML node element into a structured dictionary.
+        """Recursively parses an XML node element into a structured dictionary.
 
         Args:
             node_element: The lxml etree element representing a mind map node.
 
         Returns:
             A dictionary containing node ID, text, attributes, children, and links.
+
         """
         node_data: Dict[str, Any] = {
             "id": node_element.get("ID"),
             "text": node_element.get("TEXT"),
             "attributes": {},
             "children": [],
-            "links": []
+            "links": [],
         }
 
         # Parse Attributes
@@ -125,6 +124,7 @@ class FreeplaneParser:
             node_data["children"].append(self._parse_node(child))
 
         return node_data
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.connectors.freeplane_parser VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28

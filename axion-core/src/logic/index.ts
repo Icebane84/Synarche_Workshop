@@ -6,8 +6,8 @@
  *
  * [OMNI-ARTIFACT-ANCHOR] ID: LOGIC.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28
  */
-export * from './connectors';
-export * from './memory';
-export * from './nlp';
-export * from './sync';
-export * from './utils';
+export * from "./connectors";
+export * from "./memory";
+export * from "./nlp";
+export * from "./sync";
+export * from "./utils";

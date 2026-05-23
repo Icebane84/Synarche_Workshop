@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -14,7 +13,7 @@
 **Ethos:** Memory is Static; Only Pointers Move.
 """
 
-from typing import Any, FrozenSet, Type, dict, list
+from typing import Any, FrozenSet, Type, dict
 
 
 class Archetype:
@@ -27,7 +26,9 @@ class Archetype:
 
         # Memory is reserved entirely upfront during initialization
         self.entity_ids: List[int] = [0] * capacity
-        self.columns: Dict[Type, List[Any]] = {comp: [None] * capacity for comp in signature}
+        self.columns: Dict[Type, List[Any]] = {
+            comp: [None] * capacity for comp in signature
+        }
 
     def add_entity(self, eid: int, components: Dict[Type, Any]) -> int:
         if self.size >= self.capacity:

@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "9440fa656de74847",
+    "type": "split",
+    "children": [
+      {
+        "id": "54b818467345030d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f37658b0f6f85b2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GVRN.Analysis.SystemicSynergy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GVRN.Analysis.SystemicSynergy"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8df140c5db51fce7",
+    "type": "split",
+    "children": [
+      {
+        "id": "4c50ecaa7ea35180",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e08af9ccb9a21d00",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "45b410fcee64d788",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "85d47fbc066b2c9a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "aa79ab919725d705",
+    "type": "split",
+    "children": [
+      {
+        "id": "1fe63fff7859258f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5942095c47706f90",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02_Protocols/AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for AOP-ARC-001_ArchivalSupersessionProtocol_v1.0"
+            }
+          },
+          {
+            "id": "3ce3a3fad51d2c8c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02_Protocols/AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from AOP-ARC-001_ArchivalSupersessionProtocol_v1.0"
+            }
+          },
+          {
+            "id": "65a3fa54800c6fcf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2fae95428bd13ca9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "99e5cb703a684753",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02_Protocols/AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of AOP-ARC-001_ArchivalSupersessionProtocol_v1.0"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f37658b0f6f85b2e",
+  "lastOpenFiles": [
+    "CODING_HANDBOOK.md",
+    "02_Protocols/AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md",
+    "02_Protocols/AOP-FUSION-001_OpenClawFusion.md",
+    "02_Protocols/AOP-AG-003_AxionAgentConfiguration_v3.0.md"
+  ]
+}

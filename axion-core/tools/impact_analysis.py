@@ -1,5 +1,4 @@
-"""
-# TOOL-SENT-007: The Architect's Gaze (Audit Engine)
+"""# TOOL-SENT-007: The Architect's Gaze (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -57,11 +56,10 @@ Function: Simulates the "ripple effects" of a proposed code change across the Co
 
 import argparse
 import json
-import os
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Set, TypedDict
+from typing import Dict, List, Optional, TypedDict
 
 # --- Configuration ---
 # Default paths adjusted for axion-core context
@@ -113,7 +111,9 @@ class ImpactAnalyzer:
     def load_loom(self, json_path: Path) -> None:
         """Loads the Cognitive Loom (Knowledge Graph)."""
         if not json_path.exists():
-            print(f"{Colors.FAIL}❌ Critical Error: Knowledge Graph not found at {json_path}{Colors.ENDC}")
+            print(
+                f"{Colors.FAIL}❌ Critical Error: Knowledge Graph not found at {json_path}{Colors.ENDC}"
+            )
             return
 
         try:
@@ -133,6 +133,38 @@ class ImpactAnalyzer:
             print(f"{Colors.FAIL}❌ Error loading graph: {e}{Colors.ENDC}")
             sys.exit(1)
 
+    def _parse_dependencies(
+        self, file_path: Path, source_id: str, import_regex: re.Pattern
+    ) -> int:
+        edge_count = 0
+        try:
+            content = file_path.read_text(encoding="utf-8", errors="ignore")
+
+            matches = import_regex.findall(content)
+            for match in matches:
+                import_path = match[0] or match[1]
+
+                if import_path.startswith("."):
+                    target_name = Path(import_path).name
+                    for ext in ["", ".ts", ".tsx", ".js", ".py"]:
+                        if f"{target_name}{ext}" in self.graph_nodes:
+                            self.add_edge(source_id, f"{target_name}{ext}", "IMPORTS")
+                            edge_count += 1
+                            break
+
+            artifact_matches = re.findall(
+                r"(UMB-[A-Z]+-\d+|AOP-[A-Z]+-\d+|TOOL-[A-Z]+-\d+)", content
+            )
+            for art_id in set(artifact_matches):
+                if art_id in self.graph_nodes:
+                    self.add_edge(source_id, art_id, "IMPLEMENTS")
+                    edge_count += 1
+
+        except Exception as e:
+            print(f"{Colors.WARNING}⚠ Error parsing {file_path.name}: {e}{Colors.ENDC}")
+
+        return edge_count
+
     def scan_codebase(self, root_paths: List[str]) -> None:
         """Scans code directories to build the Code Dependency Layer."""
         print(f"{Colors.OKBLUE}🔍 Scanning Codebase for Dependencies...{Colors.ENDC}")
@@ -142,7 +174,7 @@ class ImpactAnalyzer:
 
         # Regex for generic imports
         import_regex = re.compile(
-            r'(?:import|export)\s+(?:[\w\s{},*]+)\s+from\s+[\'"]([^\'"]+)[\'"]|require\([\'"]([^\'"]+)[\'"]\)'
+            r'(?:import|export)\s+[\w\s{},*]+\s+from\s+[\'"]([^\'"]+)[\'"]|require\([\'"]([^\'"]+)[\'"]\)'
         )
 
         for root_str in root_paths:
@@ -159,56 +191,52 @@ class ImpactAnalyzer:
                 self.add_node(source_id, "CodeFile", str(file_path))
                 file_count += 1
 
-                try:
-                    content = file_path.read_text(encoding="utf-8", errors="ignore")
+                edge_count += self._parse_dependencies(
+                    file_path, source_id, import_regex
+                )
 
-                    matches = import_regex.findall(content)
-                    for match in matches:
-                        import_path = match[0] or match[1]
+        print(
+            f"   Scanned {file_count} files, Added {edge_count} code dependency edges."
+        )
 
-                        if import_path.startswith("."):
-                            target_name = Path(import_path).name
-                            found = False
-                            for ext in ["", ".ts", ".tsx", ".js", ".py"]:
-                                if f"{target_name}{ext}" in self.graph_nodes:
-                                    self.add_edge(source_id, f"{target_name}{ext}", "IMPORTS")
-                                    edge_count += 1
-                                    found = True
-                                    break
-
-                    artifact_matches = re.findall(r"(UMB-[A-Z]+-\d+|AOP-[A-Z]+-\d+|TOOL-[A-Z]+-\d+)", content)
-                    for art_id in set(artifact_matches):
-                        if art_id in self.graph_nodes:
-                            self.add_edge(source_id, art_id, "IMPLEMENTS")
-                            edge_count += 1
-
-                except Exception as e:
-                    print(f"{Colors.WARNING}⚠ Error parsing {file_path.name}: {e}{Colors.ENDC}")
-
-        print(f"   Scanned {file_count} files, Added {edge_count} code dependency edges.")
-
-    def add_node(self, node_id: str, node_type: str, content: Optional[str] = "") -> None:
+    def add_node(
+        self, node_id: str, node_type: str, content: Optional[str] = ""
+    ) -> None:
         if node_id not in self.graph_nodes:
-            self.graph_nodes[node_id] = {"id": node_id, "type": node_type, "content": content}
+            self.graph_nodes[node_id] = {
+                "id": node_id,
+                "type": node_type,
+                "content": content,
+            }
 
     def add_edge(self, source: str, target: str, relation: str) -> None:
-        self.graph_edges.append({"source": source, "target": target, "relation": relation})
+        self.graph_edges.append(
+            {"source": source, "target": target, "relation": relation}
+        )
 
         if source not in self.adjacency:
             self.adjacency[source] = []
         if target not in self.adjacency:
             self.adjacency[target] = []
 
-        self.adjacency[source].append({"target": target, "relation": relation, "direction": "outgoing"})
-        self.adjacency[target].append({"target": source, "relation": relation, "direction": "incoming"})
+        self.adjacency[source].append(
+            {"target": target, "relation": relation, "direction": "outgoing"}
+        )
+        self.adjacency[target].append(
+            {"target": source, "relation": relation, "direction": "incoming"}
+        )
 
-    def simulate_impact(self, target_id: str, max_depth: int = 2) -> Optional[ImpactReport]:
+    def simulate_impact(
+        self, target_id: str, max_depth: int = 2
+    ) -> Optional[ImpactReport]:
         """Performs BFS to find blast radius."""
         if target_id not in self.graph_nodes:
             matches = [k for k in self.graph_nodes.keys() if target_id in k]
             if len(matches) == 1:
                 target_id = matches[0]
-                print(f"{Colors.OKCYAN}Target '{target_id}' found (fuzzy match).{Colors.ENDC}")
+                print(
+                    f"{Colors.OKCYAN}Target '{target_id}' found (fuzzy match).{Colors.ENDC}"
+                )
             else:
                 return None
 
@@ -246,7 +274,9 @@ class ImpactAnalyzer:
 
         print(f"\n{Colors.HEADER}🔮 The Architect's Gaze: Impact Analysis{Colors.ENDC}")
         print(f"{Colors.BOLD}Target Node:{Colors.ENDC} {report['target']}")
-        print(f"{Colors.BOLD}Blast Radius:{Colors.ENDC} {len(report['impacted_nodes'])} artifacts/files impacted.\n")
+        print(
+            f"{Colors.BOLD}Blast Radius:{Colors.ENDC} {len(report['impacted_nodes'])} artifacts/files impacted.\n"
+        )
 
         by_dist = {}
         for node in report["impacted_nodes"]:
@@ -260,15 +290,21 @@ class ImpactAnalyzer:
             color = Colors.FAIL if d == 1 else Colors.WARNING
             print(f"{color}--- {label} ---{Colors.ENDC}")
             for item in by_dist[d]:
-                arrow = " <- ".join(item["path"]) if item["path"] else ""
+                " <- ".join(item["path"]) if item["path"] else ""
                 print(f"  • {item['id']}")
 
 
 def main() -> None:
     """CLI Entrypoint."""
-    parser = argparse.ArgumentParser(description="Simulate systemic impact of a change.")
-    parser.add_argument("--target", required=True, help="Artifact ID or Filename to analyze.")
-    parser.add_argument("--depth", type=int, default=2, help="Depth of recursive analysis.")
+    parser = argparse.ArgumentParser(
+        description="Simulate systemic impact of a change."
+    )
+    parser.add_argument(
+        "--target", required=True, help="Artifact ID or Filename to analyze."
+    )
+    parser.add_argument(
+        "--depth", type=int, default=2, help="Depth of recursive analysis."
+    )
     args = parser.parse_args()
 
     analyzer = ImpactAnalyzer()

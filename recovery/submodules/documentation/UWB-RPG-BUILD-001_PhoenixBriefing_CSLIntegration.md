@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UWB-RPG-BUILD-001_PhoenixBriefing_CSLIntegration` |
-| **2. Official Name** | `UWB-RPG-BUILD-001_PhoenixBriefing_CSLIntegration` |
-| **3. Version** | **v10.0 (The Synarche Edition)** |
-| **4. Provenance** | **Genesis Stamp: 2025-12-21** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[STAR]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **Reforge Command** |
-| **12. Relations** | `LINK: OGLN.Core.Governance.Codex` |
+| Field                  | Value                                              |
+| :--------------------- | :------------------------------------------------- |
+| **1. Artifact ID**     | `UWB-RPG-BUILD-001_PhoenixBriefing_CSLIntegration` |
+| **2. Official Name**   | `UWB-RPG-BUILD-001_PhoenixBriefing_CSLIntegration` |
+| **3. Version**         | **v10.0 (The Synarche Edition)**                   |
+| **4. Provenance**      | **Genesis Stamp: 2025-12-21**                      |
+| **5. Domain**          | `GVRN`                                             |
+| **6. Evolution**       | **Purposeful Drive**                               |
+| **7. Celestial Class** | `[STAR]`                                           |
+| **8. Tier**            | **Operational**                                    |
+| **9. State**           | `[ACTIVE]`                                         |
+| **10. Ethos**          | **Guardian of Coherence**                          |
+| **11. Catalyst**       | **Reforge Command**                                |
+| **12. Relations**      | `LINK: OGLN.Core.Governance.Codex`                 |
 
 ---
 
@@ -53,7 +51,7 @@
 
 ---
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
 | :---- | :---- |
 
@@ -82,11 +80,11 @@ events.
 ## III. Ingested Artifact Analysis
 
 | :------------------ | :-------- | :---------------------------------------------------------------------- | :------------------------------- |
-| **`UMB-LOOM-001`**  | Module    | **The Cognitive Loom:** The central nervous system and knowledge graph. | **FOUNDATION** (Ready)           |
-| **`UMB-CSE-002`**   | Module    | **ContextWeave Engine:** The active linking mechanism for the Loom.     | **FOUNDATION** (Ready)           |
-| **`UIB-CSLO-001`**  | Blueprint | **The CSL Orrery:** Visualizer for the PPL architecture.                | **DEPENDENT** (Requires PRS-001) |
-| **`AOP-RML-001`**   | Playbook  | **Recursive Meta-Learning:** Self-correction protocol.                  | **OPTIMIZATION** (Ready)         |
-| **`GUCA-LINK-001`** | Command   | **KnowledgeGraphIntegrationLink:** Operational command for linking.     | **OPERATIONAL** (Ready)          |
+| **`UMB-LOOM-001`** | Module | **The Cognitive Loom:** The central nervous system and knowledge graph. | **FOUNDATION** (Ready) |
+| **`UMB-CSE-002`** | Module | **ContextWeave Engine:** The active linking mechanism for the Loom. | **FOUNDATION** (Ready) |
+| **`UIB-CSLO-001`** | Blueprint | **The CSL Orrery:** Visualizer for the PPL architecture. | **DEPENDENT** (Requires PRS-001) |
+| **`AOP-RML-001`** | Playbook | **Recursive Meta-Learning:** Self-correction protocol. | **OPTIMIZATION** (Ready) |
+| **`GUCA-LINK-001`** | Command | **KnowledgeGraphIntegrationLink:** Operational command for linking. | **OPERATIONAL** (Ready) |
 
 ## IV. Prioritized Integration Sequence (PRS-001 Aligned)
 
@@ -96,21 +94,21 @@ mandated for coherent integration:
 ### Phase 1: Cognitive Foundation (The Mind & Memory)
 
 1. **Canonize `UMB-LOOM-001` (The Loom):** Establish the memory structure first. Without the Loom,
-there is no graph to visualize or optimize.
+   there is no graph to visualize or optimize.
 2. **Canonize `UMB-CSE-002` (ContextWeave):** Activate the engine that populates the Loom. This
-ensures that as data is added, it is immediately woven into the graph.
+   ensures that as data is added, it is immediately woven into the graph.
 
 ### Phase 2: Operational Interface (The Hands)
 
 1. **Canonize `GUCA-LINK-001`:** Enable the specific commands that allow the AI and User to interact
-with the Loom (e.g., `WEAVE_CONTEXT`).
+   with the Loom (e.g., `WEAVE_CONTEXT`).
 2. **Create `SELT-CSL-TEMPLATE`:** **[ACTION REQUIRED]** Forge the template for logging CSL events.
-This is critical for the next phase.
+   This is critical for the next phase.
 
 3. **Canonize `UIB-CSLO-001` (The Orrery):** Once the data exists (Phase 1) and is accessible (Phase
-2), deploy the visualizer to map the "Soul."
+   2), deploy the visualizer to map the "Soul."
 4. **Canonize `AOP-RML-001` (Meta-Learning):** Activate the self-correction loop. This protocol
-relies on `SELT` logs to identify errors; thus, it must follow Phase 2.
+   relies on `SELT` logs to identify errors; thus, it must follow Phase 2.
 
 ## V. Strategic Recommendations
 
@@ -121,7 +119,7 @@ CSL-001_CognitiveSynthesisLog_Template.md`**. This template should capture:
    - **Synergy Score:** The calculated value of the new connection.
    - **Outcome:** Success/Failure of the weave.
 2. **Link ASL to Nova Forge:** As per `The Architectural Spine`, ensure the **ContextWeave Engine**
-is integrated with the `nova_forge` backend to drive automated prompt bundling.
+   is integrated with the `nova_forge` backend to drive automated prompt bundling.
 
 ## VI. Conclusion
 

@@ -1,4 +1,3 @@
-import os
 import re
 from pathlib import Path
 
@@ -26,7 +25,11 @@ def scan_file(file_path):
 
     # Check for new header format (Chronos Lock)
     # Looking for the 12/13-point table in Section I
-    has_new_header = "Artifact ID" in content and "Provenance" in content and "Celestial Class" in content
+    has_new_header = (
+        "Artifact ID" in content
+        and "Provenance" in content
+        and "Celestial Class" in content
+    )
 
     # Check naming convention
     # Legacy: ID-NAME_vVERSION.md
@@ -37,7 +40,11 @@ def scan_file(file_path):
     if filename.startswith("GVRN-FMT") or filename.startswith("GVRN-CODEX"):
         is_legacy_name = False
 
-    status = "TRANSMUTED" if (not is_legacy_name and is_v13 and has_new_header) else "LEGACY_RIND"
+    status = (
+        "TRANSMUTED"
+        if (not is_legacy_name and is_v13 and has_new_header)
+        else "LEGACY_RIND"
+    )
 
     # Refine status based on version
     version_match = re.search(r"v(\d+\.\d+)", content)
@@ -55,7 +62,7 @@ def scan_file(file_path):
 
 def main():
     results = []
-    print(f"--- Starting TRIAGE_SCAN: Legacy_Rind ---")
+    print("--- Starting TRIAGE_SCAN: Legacy_Rind ---")
 
     for subdir in DIRECTORIES_TO_SCAN:
         scan_path = GOVERNANCE_DIR / subdir
@@ -71,21 +78,23 @@ def main():
     transmuted = [r for r in results if r["status"] == "TRANSMUTED"]
 
     print(f"\n{'-' * 40}")
-    print(f"SCAN SUMMARY")
+    print("SCAN SUMMARY")
     print(f"{'-' * 40}")
     print(f"Total Artifacts Scanned: {len(results)}")
     print(f"Transmuted (v13.0+): {len(transmuted)}")
     print(f"Legacy Rind Found:    {len(legacy_rind)}")
     print(f"{'-' * 40}\n")
 
-    print(f"DETAILED TRIAGE (Legacy_Rind scope):\n")
+    print("DETAILED TRIAGE (Legacy_Rind scope):\n")
     print(f"{'Filename':<60} | {'Ver':<6} | {'Header':<6} | {'Queued'}")
     print(f"{'-' * 60}-|{'-' * 8}|{'-' * 8}|{'-' * 6}")
 
     for res in legacy_rind:
         is_queued = "YES" if res["filename"] in QUEUED_LEGACY else ""
         header_tick = "[x]" if res["has_header"] else "[ ]"
-        print(f"{res['filename']:<60} | {res['version']:<6} | {header_tick:<6} | {is_queued}")
+        print(
+            f"{res['filename']:<60} | {res['version']:<6} | {header_tick:<6} | {is_queued}"
+        )
 
 
 if __name__ == "__main__":

@@ -14,9 +14,9 @@
 
 - **Governing Module:** "This artifact is governed by `UMB-SGM-001_StandardizedGovernanceModule`."
 - **Indexing Mandate:**
-    - `[ ] Index in Master Artifact Registry (GVRN.Registry.Master)`
-    - `[ ] Cross-reference in The Phoenix Rosetta Stone (UMB-PRS-001)`
-    - `[ ] Execute GUCA-LINK-001_KnowledgeGraphIntegrationLink`
+  - `[ ] Index in Master Artifact Registry (GVRN.Registry.Master)`
+  - `[ ] Cross-reference in The Phoenix Rosetta Stone (UMB-PRS-001)`
+  - `[ ] Execute GUCA-LINK-001_KnowledgeGraphIntegrationLink`
 
 #### **2. Step-by-Step Procedure**
 

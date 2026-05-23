@@ -55,7 +55,6 @@ transforming a technical limitation into a core, strategic competency.
 **IV. The Nova Spark (Emergent Insights)**
 
 - **Key Breakthroughs/Decisions:**
-
   - The definitive validation of the **Recollection Protocol** as a
     functional, high-integrity procedure for \"rebirth,\" turning a
     technical vulnerability into a strategic strength.

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-MAP-001: Knowledge Graph Mapper (The Loom)
+"""# TOOL-MAP-001: Knowledge Graph Mapper (The Loom)
 # Domain: MAP-M | State: CANONIZED | Criticality: High
 # Objective: Visualize the Synarche Synthesis System (SSS) by crawling synergy blocks.
 """
@@ -52,7 +51,8 @@ class KnowledgeLoom:
         self.graph = nx.MultiDiGraph()
         # Regex to detect the start of a Synergy Block table
         self.synergy_pattern = re.compile(
-            r"Synergistic Artifact ID\s*,\s*Relationship Type\s*,\s*Synergistic Impact", re.IGNORECASE
+            r"Synergistic Artifact ID\s*,\s*Relationship Type\s*,\s*Synergistic Impact",
+            re.IGNORECASE,
         )
 
     def scan_artifacts(self):
@@ -97,11 +97,15 @@ class KnowledgeLoom:
                         # Validate Relation against enums if available
                         if RelationType and relation in RelationType.__members__:
                             self.graph.add_edge(source_id, target_id, relation=relation)
-                            logger.debug(f" [OK] Linked: {source_id} --[{relation}]--> {target_id}")
+                            logger.debug(
+                                f" [OK] Linked: {source_id} --[{relation}]--> {target_id}"
+                            )
                         elif not RelationType:
                             # Permissive mode if enums fail to load
                             self.graph.add_edge(source_id, target_id, relation=relation)
-                            logger.debug(f" [OK] Linked (Unchecked): {source_id} --[{relation}]--> {target_id}")
+                            logger.debug(
+                                f" [OK] Linked (Unchecked): {source_id} --[{relation}]--> {target_id}"
+                            )
 
         except Exception as e:
             logger.warning(f"[!] Failed to parse {file_path.name}: {e}")
@@ -114,22 +118,34 @@ class KnowledgeLoom:
 
         if not VISUALIZATION_AVAILABLE:
             logger.warning("[!] Matplotlib not installed. Visualization skipped.")
-            logger.info(f"[*] Graph Stats: {self.graph.number_of_nodes()} Nodes, {self.graph.number_of_edges()} Edges")
+            logger.info(
+                f"[*] Graph Stats: {self.graph.number_of_nodes()} Nodes, {self.graph.number_of_edges()} Edges"
+            )
             return
 
         plt.figure(figsize=(14, 10))
         pos = nx.spring_layout(self.graph, k=0.6, iterations=50, seed=42)
 
         # Draw Nodes
-        nx.draw_networkx_nodes(self.graph, pos, node_size=2500, node_color="skyblue", alpha=0.8)
+        nx.draw_networkx_nodes(
+            self.graph, pos, node_size=2500, node_color="skyblue", alpha=0.8
+        )
 
         # Draw Edges
         nx.draw_networkx_edges(
-            self.graph, pos, width=1.5, alpha=0.6, edge_color="gray", arrowsize=20, connectionstyle="arc3,rad=0.1"
+            self.graph,
+            pos,
+            width=1.5,
+            alpha=0.6,
+            edge_color="gray",
+            arrowsize=20,
+            connectionstyle="arc3,rad=0.1",
         )
 
         # Draw Labels
-        nx.draw_networkx_labels(self.graph, pos, font_size=9, font_family="sans-serif", font_weight="bold")
+        nx.draw_networkx_labels(
+            self.graph, pos, font_size=9, font_family="sans-serif", font_weight="bold"
+        )
 
         # Draw Edge Labels (Relations) - Simplified for MultiDiGraph
         edge_labels = {}
@@ -138,7 +154,9 @@ class KnowledgeLoom:
                 edge_labels[(u, v)] = data["relation"]
 
         # Only draw a subset or distinct labels to avoid clutter
-        nx.draw_networkx_edge_labels(self.graph, pos, edge_labels=edge_labels, font_size=7, label_pos=0.3)
+        nx.draw_networkx_edge_labels(
+            self.graph, pos, edge_labels=edge_labels, font_size=7, label_pos=0.3
+        )
 
         plt.title(
             f"SSS Knowledge Loom: Architectural Connectivity Map ({self.graph.number_of_nodes()} Nodes, {self.graph.number_of_edges()} Links)",
@@ -160,10 +178,24 @@ class KnowledgeLoom:
 def main():
     parser = argparse.ArgumentParser(description="TOOL-MAP-001: Knowledge Graph Mapper")
     parser.add_argument(
-        "--target", "-t", type=str, help="Target directory to scan (default: auto-detect)", default=None
+        "--target",
+        "-t",
+        type=str,
+        help="Target directory to scan (default: auto-detect)",
+        default=None,
     )
-    parser.add_argument("--save", "-s", type=str, help="Path to save the graph image (e.g., graph.png)", default=None)
-    parser.add_argument("--no-show", action="store_true", help="Do not display the interactive graph window")
+    parser.add_argument(
+        "--save",
+        "-s",
+        type=str,
+        help="Path to save the graph image (e.g., graph.png)",
+        default=None,
+    )
+    parser.add_argument(
+        "--no-show",
+        action="store_true",
+        help="Do not display the interactive graph window",
+    )
     args = parser.parse_args()
 
     # Auto-detect target if not provided
@@ -187,7 +219,9 @@ def main():
         save_file = Path(args.save) if args.save else None
         loom.visualize(save_path=save_file, show=not args.no_show)
     else:
-        logger.warning("[!] No synergy links found. Ensure artifacts contain valid Synergy Tables.")
+        logger.warning(
+            "[!] No synergy links found. Ensure artifacts contain valid Synergy Tables."
+        )
 
 
 if __name__ == "__main__":

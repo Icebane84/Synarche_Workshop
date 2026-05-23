@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -42,13 +41,14 @@ except ImportError:
         from logic.memory.memory_system import MemorySystem  # type: ignore
         from logic.nlp.nlp_engine import AxionCognition  # type: ignore
     except ImportError:
-        logger.exception("Failed to import core logic components. Ensure pathing is correct.")
+        logger.exception(
+            "Failed to import core logic components. Ensure pathing is correct."
+        )
         sys.exit(1)
 
 
 def run_cognitive_memory_test() -> None:
-    """
-    Demonstrates the integration of NLP processing into the Memory Retrieval loop.
+    """Demonstrates the integration of NLP processing into the Memory Retrieval loop.
     Validates the connection between the NLP engine and the adaptive memory system.
     """
     logger.info("Initializing Sovereign Cognitive Memory Bridge...")
@@ -71,7 +71,9 @@ def run_cognitive_memory_test() -> None:
         if results:
             logger.info(f"Found {len(results)} matches in Sovereign Memory.")
             for i, res in enumerate(results):
-                logger.info(f"Match {i + 1} [Score: {res.get('final_score', 'N/A')}]: {res.get('content')[:100]}...")
+                logger.info(
+                    f"Match {i + 1} [Score: {res.get('final_score', 'N/A')}]: {res.get('content')[:100]}..."
+                )
         else:
             logger.warning("No direct matches found. Triggering Uncertainty Protocol.")
             fallback = memory.handle_no_information(test_query, analysis)

@@ -33,17 +33,17 @@ class PodcastGenerationInput(CommandInput):
     speaker_profile: str
     episode_name: str
     content: str
-    briefing_suffix: Optional[str] = None
+    briefing_suffix: str | None = None
 
 
 class PodcastGenerationOutput(CommandOutput):
     success: bool
-    episode_id: Optional[str] = None
-    audio_file_path: Optional[str] = None
-    transcript: Optional[dict] = None
-    outline: Optional[dict] = None
+    episode_id: str | None = None
+    audio_file_path: str | None = None
+    transcript: dict | None = None
+    outline: dict | None = None
     processing_time: float
-    error_message: Optional[str] = None
+    error_message: str | None = None
 
 
 @command("generate_podcast", app="open_notebook")
@@ -54,13 +54,13 @@ async def generate_podcast_command(
     Real podcast generation using podcast-creator library with Episode Profiles
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     start_time = time.time()
 
@@ -110,9 +110,11 @@ async def generate_podcast_command(
             name=input_data.episode_name,
             episode_profile=full_model_dump(episode_profile.model_dump()),
             speaker_profile=full_model_dump(speaker_profile.model_dump()),
-            command=ensure_record_id(input_data.execution_context.command_id)
-            if input_data.execution_context
-            else None,
+            command=(
+                ensure_record_id(input_data.execution_context.command_id)
+                if input_data.execution_context
+                else None
+            ),
             briefing=briefing,
             content=input_data.content,
             audio_file=None,
@@ -163,15 +165,17 @@ async def generate_podcast_command(
         return PodcastGenerationOutput(
             success=True,
             episode_id=str(episode.id),
-            audio_file_path=str(result.get("final_output_file_path"))
-            if result
-            else None,
-            transcript={"transcript": full_model_dump(result["transcript"])}
-            if result.get("transcript")
-            else None,
-            outline=full_model_dump(result["outline"])
-            if result.get("outline")
-            else None,
+            audio_file_path=(
+                str(result.get("final_output_file_path")) if result else None
+            ),
+            transcript=(
+                {"transcript": full_model_dump(result["transcript"])}
+                if result.get("transcript")
+                else None
+            ),
+            outline=(
+                full_model_dump(result["outline"]) if result.get("outline") else None
+            ),
             processing_time=processing_time,
         )
 

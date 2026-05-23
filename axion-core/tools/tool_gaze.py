@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-GAZE-001: The Architect's Gaze CLI (Magician/Sentinel Integration)
+"""# TOOL-GAZE-001: The Architect's Gaze CLI (Magician/Sentinel Integration).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |

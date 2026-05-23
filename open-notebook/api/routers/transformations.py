@@ -20,17 +20,17 @@ from open_notebook.graphs.transformation import graph as transformation_graph
 router = APIRouter()
 
 
-@router.get("/transformations", response_model=List[TransformationResponse])
+@router.get("/transformations", response_model=list[TransformationResponse])
 async def get_transformations():
     """Get all transformations."""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     try:
         transformations = await Transformation.get_all(order_by="name asc")
@@ -49,9 +49,9 @@ async def get_transformations():
             for transformation in transformations
         ]
     except Exception as e:
-        logger.error(f"Error fetching transformations: {str(e)}")
+        logger.error(f"Error fetching transformations: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error fetching transformations: {str(e)}"
+            status_code=500, detail=f"Error fetching transformations: {e!s}"
         )
 
 
@@ -81,9 +81,9 @@ async def create_transformation(transformation_data: TransformationCreate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error creating transformation: {str(e)}")
+        logger.error(f"Error creating transformation: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error creating transformation: {str(e)}"
+            status_code=500, detail=f"Error creating transformation: {e!s}"
         )
 
 
@@ -119,9 +119,9 @@ async def execute_transformation(execute_request: TransformationExecuteRequest):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error executing transformation: {str(e)}")
+        logger.error(f"Error executing transformation: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error executing transformation: {str(e)}"
+            status_code=500, detail=f"Error executing transformation: {e!s}"
         )
 
 
@@ -136,9 +136,9 @@ async def get_default_prompt():
             or ""
         )
     except Exception as e:
-        logger.error(f"Error fetching default prompt: {str(e)}")
+        logger.error(f"Error fetching default prompt: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error fetching default prompt: {str(e)}"
+            status_code=500, detail=f"Error fetching default prompt: {e!s}"
         )
 
 
@@ -157,9 +157,9 @@ async def update_default_prompt(prompt_update: DefaultPromptUpdate):
             transformation_instructions=default_prompts.transformation_instructions
         )
     except Exception as e:
-        logger.error(f"Error updating default prompt: {str(e)}")
+        logger.error(f"Error updating default prompt: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error updating default prompt: {str(e)}"
+            status_code=500, detail=f"Error updating default prompt: {e!s}"
         )
 
 
@@ -186,9 +186,9 @@ async def get_transformation(transformation_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching transformation {transformation_id}: {str(e)}")
+        logger.error(f"Error fetching transformation {transformation_id}: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error fetching transformation: {str(e)}"
+            status_code=500, detail=f"Error fetching transformation: {e!s}"
         )
 
 
@@ -233,9 +233,9 @@ async def update_transformation(
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error updating transformation {transformation_id}: {str(e)}")
+        logger.error(f"Error updating transformation {transformation_id}: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error updating transformation: {str(e)}"
+            status_code=500, detail=f"Error updating transformation: {e!s}"
         )
 
 
@@ -253,7 +253,7 @@ async def delete_transformation(transformation_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting transformation {transformation_id}: {str(e)}")
+        logger.error(f"Error deleting transformation {transformation_id}: {e!s}")
         raise HTTPException(
-            status_code=500, detail=f"Error deleting transformation: {str(e)}"
+            status_code=500, detail=f"Error deleting transformation: {e!s}"
         )

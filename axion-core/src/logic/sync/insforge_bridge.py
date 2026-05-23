@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -57,25 +56,23 @@ logger = logging.getLogger("axion.logic.sync.insforge")
 
 
 class InsforgeMemoryBridge:
-    """
-    Synchronizes local agent memory with Insforge Sovereign Storage.
+    """Synchronizes local agent memory with Insforge Sovereign Storage.
     Provides methods for pushing local state to the cloud and fetching remote updates.
     """
 
     def __init__(self, agent_id: str) -> None:
-        """
-        Initializes the InsforgeMemoryBridge.
+        """Initializes the InsforgeMemoryBridge.
 
         Args:
             agent_id: The unique identifier for the local agent.
+
         """
         self.agent_id = agent_id
         self.client = insforge
         logger.info(f"Insforge Bridge initialized for agent: {agent_id}")
 
     async def push_memory(self, content: str, metadata: dict[str, Any]) -> bool:
-        """
-        Pushes a single memory entry to the Insforge Sovereign Storage.
+        """Pushes a single memory entry to the Insforge Sovereign Storage.
 
         Args:
             content: The text content of the memory.
@@ -83,6 +80,7 @@ class InsforgeMemoryBridge:
 
         Returns:
             True if the push was successful (or simulated), False otherwise.
+
         """
         if not self.client:
             logger.warning("Insforge client not available. Skipping push.")
@@ -95,18 +93,20 @@ class InsforgeMemoryBridge:
                 "synced_at": datetime.now(timezone.utc).isoformat(),
             }
             # Simulate push (In real scenario, this would call client.upsert or similar)
-            logger.info(f"Pushed memory to Insforge: {payload['metadata'].get('id', 'Unknown ID')}")
+            logger.info(
+                f"Pushed memory to Insforge: {payload['metadata'].get('id', 'Unknown ID')}"
+            )
             return True
         except Exception as e:
             logger.exception(f"Failed to push memory to Insforge: {e}")
             return False
 
     async def fetch_updates(self) -> list[dict[str, Any]]:
-        """
-        Fetches remote memory updates from the Insforge Sovereign Storage.
+        """Fetches remote memory updates from the Insforge Sovereign Storage.
 
         Returns:
             A list of update dictionaries.
+
         """
         if not self.client:
             logger.warning("Insforge client not available for fetch_updates.")
@@ -119,16 +119,15 @@ class InsforgeMemoryBridge:
             return []
 
     async def sync_memory_entry(self, entry: dict[str, Any]) -> bool:
-        """
-        Synchronizes a memory entry.
-        """
+        """Synchronizes a memory entry."""
         return True
 
-    async def sync_experience_log(self, event_type: str, details: dict[str, Any]) -> bool:
-        """
-        Synchronizes an experience log.
-        """
+    async def sync_experience_log(
+        self, event_type: str, details: dict[str, Any]
+    ) -> bool:
+        """Synchronizes an experience log."""
         return True
+
 
 bridge = InsforgeMemoryBridge("AXION-001")
 

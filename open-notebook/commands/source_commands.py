@@ -29,9 +29,9 @@ def full_model_dump(model):
 
 class SourceProcessingInput(CommandInput):
     source_id: str
-    content_state: Dict[str, Any]
-    notebook_ids: List[str]
-    transformations: List[str]
+    content_state: dict[str, Any]
+    notebook_ids: list[str]
+    transformations: list[str]
     embed: bool
 
 
@@ -41,7 +41,7 @@ class SourceProcessingOutput(CommandOutput):
     embedded_chunks: int = 0
     insights_created: int = 0
     processing_time: float
-    error_message: Optional[str] = None
+    error_message: str | None = None
 
 
 @command(

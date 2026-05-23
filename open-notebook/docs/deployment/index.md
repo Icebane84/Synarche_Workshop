@@ -9,6 +9,7 @@
 ---
 
 # index.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-INDEX-001` | The Sovereign ID. |
-| **Official Name** | `index.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
+| **Official Name**   | `index.md`                    | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Deployment Guide
 
@@ -43,28 +44,36 @@ This section provides comprehensive guides for deploying Open Notebook in differ
 ## 📋 Deployment Options
 
 ### 1. [Docker Deployment](docker.md)
+
 **Recommended for most users**
+
 - Complete beginner-friendly guide
 - Single-container and multi-container options
 - Supports all major AI providers
 - Perfect for local development and testing
 
 ### 2. [Single Container Deployment](single-container.md)
+
 **Best for platforms like PikaPods**
+
 - All-in-one container solution
 - Simplified deployment process
 - Ideal for cloud hosting platforms
 - Lower resource requirements
 
 ### 3. [Development Setup](development.md)
+
 **For contributors and advanced users**
+
 - Local development environment
 - Source code installation
 - Development tools and debugging
 - Contributing to the project
 
 ### 4. [Security Configuration](security.md)
+
 **Essential for public deployments**
+
 - Password protection setup
 - Security best practices
 - Production deployment considerations
@@ -73,18 +82,21 @@ This section provides comprehensive guides for deploying Open Notebook in differ
 ## 🎯 Choose Your Deployment Method
 
 ### Use Docker Setup if:
+
 - You're new to Open Notebook
 - You want the easiest setup experience
 - You need multiple AI provider support
 - You're running locally or on a private server
 
 ### Use Single Container if:
+
 - You're deploying on PikaPods, Railway, or similar platforms
 - You want the simplest possible deployment
 - You have resource constraints
 - You don't need to scale services independently
 
 ### Use Development Setup if:
+
 - You want to contribute to the project
 - You need to modify the source code
 - You're developing integrations or plugins
@@ -93,11 +105,13 @@ This section provides comprehensive guides for deploying Open Notebook in differ
 ## 📚 Additional Resources
 
 ### Before You Start
+
 - **[System Requirements](#system-requirements)** - Hardware and software needs
 - **[API Keys Guide](#api-keys)** - Getting keys from AI providers
 - **[Environment Variables](#environment-variables)** - Configuration reference
 
 ### After Deployment
+
 - **[First Notebook Guide](../getting-started/first-notebook.md)** - Create your first research project
 - **[User Guide](../user-guide/index.md)** - Learn all the features
 - **[Troubleshooting](../troubleshooting/index.md)** - Common issues and solutions
@@ -105,18 +119,21 @@ This section provides comprehensive guides for deploying Open Notebook in differ
 ## 🔧 System Requirements
 
 ### Minimum Requirements
+
 - **Memory**: 2GB RAM
 - **CPU**: 2 cores
 - **Storage**: 10GB free space
 - **Network**: Internet connection for AI providers
 
 ### Recommended Requirements
+
 - **Memory**: 4GB+ RAM
 - **CPU**: 4+ cores
 - **Storage**: 50GB+ free space
 - **Network**: Stable high-speed internet
 
 ### Platform Support
+
 - **Linux**: Ubuntu 20.04+, CentOS 7+, or similar
 - **Windows**: Windows 10+ with WSL2 (for Docker)
 - **macOS**: macOS 10.14+
@@ -127,11 +144,13 @@ This section provides comprehensive guides for deploying Open Notebook in differ
 Open Notebook supports multiple AI providers. You'll need at least one:
 
 ### Required for Basic Functionality
+
 - **OpenAI**: For GPT models, embeddings, and TTS
   - Get your key at [platform.openai.com](https://platform.openai.com)
   - Provides: Language models, embeddings, speech services
 
 ### Optional Providers
+
 - **Anthropic**: For Claude models
 - **Google**: For Gemini models
 - **Groq**: For fast inference
@@ -142,6 +161,7 @@ See the [Model Providers Guide](../model-providers.md) for detailed setup instru
 ## 🌍 Environment Variables
 
 ### Core Configuration
+
 ```bash
 # Database (auto-configured in Docker)
 SURREAL_URL=ws://localhost:8000/rpc
@@ -155,6 +175,7 @@ OPEN_NOTEBOOK_PASSWORD=your_secure_password
 ```
 
 ### AI Provider Keys
+
 ```bash
 # OpenAI (recommended)
 OPENAI_API_KEY=sk-...
@@ -169,11 +190,13 @@ OLLAMA_API_BASE=http://localhost:11434
 ## 🆘 Getting Help
 
 ### Community Support
+
 - **[Discord Server](https://discord.gg/37XJPXfz2w)** - Real-time help and discussion
 - **[GitHub Issues](https://github.com/lfnovo/open-notebook/issues)** - Bug reports and feature requests
 - **[GitHub Discussions](https://github.com/lfnovo/open-notebook/discussions)** - Questions and ideas
 
 ### Documentation
+
 - **[User Guide](../user-guide/index.md)** - Complete feature documentation
 - **[Troubleshooting](../troubleshooting/index.md)** - Common issues and solutions
 - **[API Reference](../api-reference.md)** - REST API documentation
@@ -188,6 +211,7 @@ Having trouble with deployment? Here's how to get help:
 4. **Create a GitHub issue** for bugs or feature requests
 
 Remember to include:
+
 - Your operating system and version
 - Deployment method used
 - Error messages (if any)

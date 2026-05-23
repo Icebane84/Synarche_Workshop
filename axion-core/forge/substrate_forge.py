@@ -147,7 +147,8 @@ class SubstrateForge:
             name_parts = [parts[0]]
 
         metadata["class_name"] = "".join(
-            "".join(word.capitalize() for word in re.split(r"[- ]", p)) for p in name_parts
+            "".join(word.capitalize() for word in re.split(r"[- ]", p))
+            for p in name_parts
         )
 
         # Core Functions / Methods extraction
@@ -162,7 +163,9 @@ class SubstrateForge:
                     metadata["methods"].append({"name": snaked, "description": clean_m})
 
         # Rationale extraction
-        rationale_match = re.search(r"## II\. Core Purpose & Objective\n\n- \*\*Core Purpose\*\*: (.*)", content)
+        rationale_match = re.search(
+            r"## II\. Core Purpose & Objective\n\n- \*\*Core Purpose\*\*: (.*)", content
+        )
         if rationale_match:
             metadata["rationale"] = rationale_match.group(1).strip()
 

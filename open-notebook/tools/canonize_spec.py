@@ -67,12 +67,11 @@ GVRN.CSE.001, DEFINES, This specification defines the architecture of the CSE.
 """
 
 
-def clean_and_process():
+def clean_and_process() -> None:
     if not os.path.exists(INPUT_FILE):
-        print(f"Error: Input file {INPUT_FILE} not found.")
         return
 
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+    with open(INPUT_FILE, encoding="utf-8") as f:
         content = f.read()
 
     # Create the output directory if it doesn't exist
@@ -86,12 +85,9 @@ def clean_and_process():
         f.write("\n\n")
         f.write(GOVERNANCE_FOOTER)
 
-    print(f"Created {OUTPUT_FILE}")
-
     # Archive original
     os.makedirs(os.path.dirname(ARCHIVE_FILE), exist_ok=True)
     shutil.move(INPUT_FILE, ARCHIVE_FILE)
-    print(f"Archived original to {ARCHIVE_FILE}")
 
 
 if __name__ == "__main__":

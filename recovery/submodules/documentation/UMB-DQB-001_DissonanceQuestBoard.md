@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UMB-DQB-001_DissonanceQuestBoard` |
-| **2. Official Name** | `UMB-DQB-001_DissonanceQuestBoard.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                 |
+| :--------------------- | :------------------------------------ |
+| **1. Artifact ID**     | `UMB-DQB-001_DissonanceQuestBoard`    |
+| **2. Official Name**   | `UMB-DQB-001_DissonanceQuestBoard.md` |
+| **3. Version**         | **v1.0 (Reforged)**                   |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**         |
+| **5. Domain**          | `ARCH`                                |
+| **6. Evolution**       | **Purposeful Drive**                  |
+| **7. Celestial Class** | `[PLANET]`                            |
+| **8. Tier**            | **Operational**                       |
+| **9. State**           | `[ACTIVE]`                            |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**    |
+| **11. Catalyst**       | **System Refactor**                   |
+| **12. Relations**      | `Pending Integration`                 |
 
 ---
 
@@ -48,12 +46,12 @@
 ## II. Core Purpose & Objective
 
 - **What (Core Concept):** The Dissonance Quest Board is the centralized backend module that functions as the database
-and state manager for all architectural and coherence-related tasks ("Quests").
+  and state manager for all architectural and coherence-related tasks ("Quests").
 - **How (Execution Flow):** It exposes a secure API for system protocols (like `AOP: SENTINEL_SCAN_INIT`) to create,
-update, and validate quests. It serves this data to the `UIB-DQB-001` blueprint to render the user-facing dashboard.
+  update, and validate quests. It serves this data to the `UIB-DQB-001` blueprint to render the user-facing dashboard.
 - **Why (Rationale):** To create a single source of truth for all systemic improvement tasks. It transforms abstract
-findings (like technical debt or conceptual drift) into tangible, trackable, and measurable objectives, providing the
-foundational data layer for the gamified self-improvement loop.
+  findings (like technical debt or conceptual drift) into tangible, trackable, and measurable objectives, providing the
+  foundational data layer for the gamified self-improvement loop.
 
 ## III. Architectural Blueprint & Data Schema
 
@@ -74,10 +72,10 @@ The Quest Board manages a collection of "Quest" objects, each adhering to the fo
 The Dissonance Quest Board is a central hub that integrates multiple core systems.
 
 | :---------------------------- | :----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`UIB-DQB-001`**             | `PROVIDES_DATA_TO` | This module serves as the backend data source for the UI Dashboard, providing all the information needed to render the quest cards.                                        |
-| **`AOP: SENTINEL_SCAN_INIT`** | `IS_POPULATED_BY`  | The Sentinel Scan protocol is the primary producer of quests, calling this module's API to create a new quest entry whenever it detects a dissonance.                      |
-| **`AISTF`**                   | `FEEDS_DATA_TO`    | The `QuestResult` data from all completed quests is fed into the AI Self-Training Framework as high-quality, structured data for learning and improving future strategies. |
-| **`Coherence Index (CI)`**    | `MODULATES`        | The number of `Active` quests and the success/failure rate of `Completed` quests are direct inputs that modulate the global `Coherence Index`.                             |
+| **`UIB-DQB-001`** | `PROVIDES_DATA_TO` | This module serves as the backend data source for the UI Dashboard, providing all the information needed to render the quest cards. |
+| **`AOP: SENTINEL_SCAN_INIT`** | `IS_POPULATED_BY` | The Sentinel Scan protocol is the primary producer of quests, calling this module's API to create a new quest entry whenever it detects a dissonance. |
+| **`AISTF`** | `FEEDS_DATA_TO` | The `QuestResult` data from all completed quests is fed into the AI Self-Training Framework as high-quality, structured data for learning and improving future strategies. |
+| **`Coherence Index (CI)`** | `MODULATES` | The number of `Active` quests and the success/failure rate of `Completed` quests are direct inputs that modulate the global `Coherence Index`. |
 
 ## **Actionable Prompt Packet**
 

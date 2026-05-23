@@ -39,7 +39,7 @@ class RebuildEmbeddingsOutput(CommandOutput):
     notes_submitted: int = 0
     insights_submitted: int = 0
     processing_time: float
-    error_message: Optional[str] = None
+    error_message: str | None = None
 
 
 # =============================================================================
@@ -59,7 +59,7 @@ class EmbedNoteOutput(CommandOutput):
     success: bool
     note_id: str
     processing_time: float
-    error_message: Optional[str] = None
+    error_message: str | None = None
 
 
 class EmbedInsightInput(CommandInput):
@@ -74,7 +74,7 @@ class EmbedInsightOutput(CommandOutput):
     success: bool
     insight_id: str
     processing_time: float
-    error_message: Optional[str] = None
+    error_message: str | None = None
 
 
 class EmbedSourceInput(CommandInput):
@@ -90,7 +90,7 @@ class EmbedSourceOutput(CommandOutput):
     source_id: str
     chunks_created: int
     processing_time: float
-    error_message: Optional[str] = None
+    error_message: str | None = None
 
 
 @command(
@@ -369,7 +369,9 @@ async def embed_source_command(input_data: EmbedSourceInput) -> EmbedSourceOutpu
                 "content": chunk,
                 "embedding": embedding,
             }
-            for idx, (chunk, embedding) in enumerate(zip(chunks, embeddings))
+            for idx, (chunk, embedding) in enumerate(
+                zip(chunks, embeddings, strict=False)
+            )
         ]
 
         logger.debug(f"Inserting {len(records)} source_embedding records")
@@ -417,27 +419,25 @@ async def collect_items_for_rebuild(
     include_sources: bool,
     include_notes: bool,
     include_insights: bool,
-) -> Dict[str, List[str]]:
+) -> dict[str, list[str]]:
     """
     Collect items to rebuild based on mode and include flags.
 
     Returns:
         Dict with keys: 'sources', 'notes', 'insights' containing lists of item IDs
     """
-    items: Dict[str, List[str]] = {"sources": [], "notes": [], "insights": []}
+    items: dict[str, list[str]] = {"sources": [], "notes": [], "insights": []}
 
     if include_sources:
         if mode == "existing":
             # Query sources with embeddings (via source_embedding table)
-            result = await repo_query(
-                """
+            result = await repo_query("""
                 RETURN array::distinct(
                     SELECT VALUE source.id
                     FROM source_embedding
                     WHERE embedding != none AND array::len(embedding) > 0
                 )
-                """
-            )
+                """)
             # RETURN returns the array directly as the result (not nested)
             if result:
                 items["sources"] = [str(item) for item in result]

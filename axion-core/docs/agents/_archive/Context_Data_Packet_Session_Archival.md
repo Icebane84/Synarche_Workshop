@@ -1,4 +1,5 @@
 # Context_Data_Packet_Session_Archival.md
+
 > **Domain**: ARCH
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `ARCH-CONTEXT-DATA-PACKET-SESSION-ARCHIVAL-001` | The Sovereign ID. |
-| **Official Name** | `Context_Data_Packet_Session_Archival.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `ARCH` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                           | Description       |
+| :------------------ | :---------------------------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH-CONTEXT-DATA-PACKET-SESSION-ARCHIVAL-001` | The Sovereign ID. |
+| **Official Name**   | `Context_Data_Packet_Session_Archival.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
+| **Domain**          | `ARCH`                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
+| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
 
 # Context Data Packet: Session Archival
 

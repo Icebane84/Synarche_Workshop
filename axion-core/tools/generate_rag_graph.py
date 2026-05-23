@@ -1,5 +1,4 @@
-"""
-# TOOL-STAR-004: RAG Graph Generator (Coherence Filter)
+"""# TOOL-STAR-004: RAG Graph Generator (Coherence Filter).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -109,10 +108,19 @@ class KnowledgeGraph:
     def add_node(self, node: GraphNode) -> None:
         self.nodes[node["id"]] = node
 
-    def add_edge(self, source: str, target: str, relation: str, metadata: dict | None = None) -> None:
+    def add_edge(
+        self, source: str, target: str, relation: str, metadata: dict | None = None
+    ) -> None:
         if metadata is None:
             metadata = {}
-        self.edges.append({"source": source, "target": target, "relation": relation, "metadata": metadata})
+        self.edges.append(
+            {
+                "source": source,
+                "target": target,
+                "relation": relation,
+                "metadata": metadata,
+            }
+        )
 
 
 def parse_oslm(root_dir: Path, search_dirs: list[str], graph: KnowledgeGraph) -> None:
@@ -160,7 +168,9 @@ def parse_oslm(root_dir: Path, search_dirs: list[str], graph: KnowledgeGraph) ->
                     break
 
     if not oslm_file:
-        print("[WARN] UMB-OSLM-001 not found in any search path. Skipping explicit edge parsing.")
+        print(
+            "[WARN] UMB-OSLM-001 not found in any search path. Skipping explicit edge parsing."
+        )
         return
 
     print(f"Parsing Explicit Edges from {oslm_file.name}...")
@@ -245,7 +255,9 @@ def extract_artifact_id(f: Path, content: str) -> str:
     if match:
         return match.group(0)
 
-    header_match = re.search(r"^#\s*(" + ARTIFACT_ID_REGEX + r")", content, re.MULTILINE)
+    header_match = re.search(
+        r"^#\s*(" + ARTIFACT_ID_REGEX + r")", content, re.MULTILINE
+    )
     return header_match.group(1) if header_match else f.name
 
 
@@ -284,7 +296,12 @@ def process_file(f: Path, graph: KnowledgeGraph) -> None:
     graph.id_map[f.name] = artifact_id
 
     graph.add_node(
-        {"id": artifact_id, "type": "Artifact", "content": content[:500] + "...", "metadata": {"filepath": str(f)}}
+        {
+            "id": artifact_id,
+            "type": "Artifact",
+            "content": content[:500] + "...",
+            "metadata": {"filepath": str(f)},
+        }
     )
 
     chunks, headers = parse_chunks(content)
@@ -326,9 +343,13 @@ def main() -> None:
 
     logger.info(f"🌟 Starting RAG Graph Generation in {root}")
     parser = argparse.ArgumentParser(description="Generate RAG Graph")
-    parser.add_argument("--search-dir", action="append", help="Additional directory to search")
+    parser.add_argument(
+        "--search-dir", action="append", help="Additional directory to search"
+    )
     parser.add_argument("--output", help="Output filename", default=OUTPUT_FILE)
-    parser.add_argument("--weave", action="store_true", help="Enable Catalyst Weaver synergy generation")
+    parser.add_argument(
+        "--weave", action="store_true", help="Enable Catalyst Weaver synergy generation"
+    )
     args = parser.parse_args()
 
     search_dirs = list(DEFAULT_SEARCH_DIRS)
@@ -375,7 +396,11 @@ def main() -> None:
     data = {
         "nodes": list(graph.nodes.values()),
         "edges": graph.edges,
-        "stats": {"total_nodes": len(graph.nodes), "total_edges": len(graph.edges), "total_files": len(files)},
+        "stats": {
+            "total_nodes": len(graph.nodes),
+            "total_edges": len(graph.edges),
+            "total_files": len(files),
+        },
     }
 
     with open(output_path, "w", encoding="utf-8") as f:

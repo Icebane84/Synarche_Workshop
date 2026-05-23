@@ -1,4 +1,5 @@
 # AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md
+
 > **Domain**: ARCH
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `ARCH-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `ARCH` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                    | Description       |
+| :------------------ | :------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V2.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
+| **Domain**          | `ARCH`                                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 # **AOP-ARC-001: Archival Supersession Protocol (v2.0)**
 

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -17,19 +16,18 @@
 > Ethos: Order is the antidote to chaos.
 """
 
-from typing import List, Set, Dict, Any
+from typing import Any, Dict, List, Set
+
 
 class CompiledGraph:
-    """
-    Translates a flat list of interdependent tasks into a deterministic layered DAG.
-    """
+    """Translates a flat list of interdependent tasks into a deterministic layered DAG."""
+
     def __init__(self, tasks: List[Any]) -> None:
         self.tasks = tasks
         self.layers: List[List[Any]] = []
 
     def build(self) -> None:
-        """
-        Builds the execution layers using Kahn's algorithm variant.
+        """Builds the execution layers using Kahn's algorithm variant.
         Enforces lexicographical sorting within layers for absolute determinism.
         """
         if not self.tasks:
@@ -38,7 +36,7 @@ class CompiledGraph:
 
         # 1. Map task names to objects for dependency resolution
         task_map = {t.name: t for t in self.tasks}
-        
+
         # 2. Build adjacency list and calculate in-degrees
         graph: Dict[str, Set[str]] = {t.name: set() for t in self.tasks}
         in_degree: Dict[str, int] = {t.name: 0 for t in self.tasks}
@@ -47,8 +45,10 @@ class CompiledGraph:
             for dep_name in task.deps:
                 if dep_name not in task_map:
                     # In this system, missing dependencies are considered terminal errors
-                    raise RuntimeError(f"FDE Violation: Task '{task.name}' depends on unknown task '{dep_name}'.")
-                
+                    raise RuntimeError(
+                        f"FDE Violation: Task '{task.name}' depends on unknown task '{dep_name}'."
+                    )
+
                 graph[dep_name].add(task.name)
                 in_degree[task.name] += 1
 
@@ -61,11 +61,13 @@ class CompiledGraph:
             ready = [name for name in remaining_names if in_degree[name] == 0]
 
             if not ready:
-                raise RuntimeError("FDE Violation: Cycle detected in CompiledGraph. Temporal collapse imminent.")
+                raise RuntimeError(
+                    "FDE Violation: Cycle detected in CompiledGraph. Temporal collapse imminent."
+                )
 
             # Enforce determinism: sort alphabetically
             ready.sort()
-            
+
             # Map back to objects
             layer_tasks = [task_map[name] for name in ready]
             resolved_layers.append(layer_tasks)

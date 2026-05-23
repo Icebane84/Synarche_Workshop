@@ -1,6 +1,6 @@
 domain: SYSTEMIC-RESONANCE-ALIGNMENT
-last_updated: "2026-03-28T08:30:09.870849"
+last_updated: '2026-05-19T15:21:38.914643'
 skills:
-  - documented: false
-    id: scripts
-    path: /.agent/skills/systemic-resonance-alignment/scripts
+- documented: false
+  id: scripts
+  path: /.agent/skills/systemic-resonance-alignment/scripts

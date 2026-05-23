@@ -77,13 +77,18 @@ class SentinelOrchestrator:
             except json.JSONDecodeError:
                 data = {"stdout_summary": output[-500:], "error": error}
 
-            return {"status": "COMPLETE" if proc.returncode == 0 else "FAILED", "data": data}
+            return {
+                "status": "COMPLETE" if proc.returncode == 0 else "FAILED",
+                "data": data,
+            }
         except Exception as e:
             return {"status": "ERROR", "message": str(e)}
 
     async def execute_vigil(self) -> SentinelReport:
         """Executes the full suite of Sentinel tools."""
-        report = SentinelReport(timestamp=datetime.now().isoformat(), target=str(self.target))
+        report = SentinelReport(
+            timestamp=datetime.now().isoformat(), target=str(self.target)
+        )
 
         tasks = [self.run_tool(t) for t in self.tools]
         results = await asyncio.gather(*tasks)
@@ -95,13 +100,17 @@ class SentinelOrchestrator:
 
         # Calculate Heuristic Coherence Score
         passed = sum(1 for r in results if r["status"] == "COMPLETE")
-        report.coherence_score = (passed / len(self.tools)) * 100.0 if self.tools else 0.0
+        report.coherence_score = (
+            (passed / len(self.tools)) * 100.0 if self.tools else 0.0
+        )
 
         return report
 
 
 async def main() -> None:
-    parser = argparse.ArgumentParser(description="Sentinel Orchestrator — Master Audit Engine")
+    parser = argparse.ArgumentParser(
+        description="Sentinel Orchestrator — Master Audit Engine"
+    )
     parser.add_argument("target", help="Directory or file to audit")
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
     args = parser.parse_args()

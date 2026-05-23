@@ -1,5 +1,4 @@
-"""
-# UMB-OSLM-GPS-001: The OSLM Navigator (System Spine)
+"""# UMB-OSLM-GPS-001: The OSLM Navigator (System Spine).
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -45,22 +44,23 @@ MIN_TABLE_COLUMNS = 3
 
 
 class OSLMGPS:
-    """
-    The OSLM GPS (Global Positioning System) for the Phoenix Protocol Library.
+    """The OSLM GPS (Global Positioning System) for the Phoenix Protocol Library.
 
     It reads the OSLM Markdown file, parses the relational tables, and
     provides methods to query connections ("Traverse the Spine").
     """
 
     def __init__(self, oslm_path: str = DEFAULT_OSLM_PATH) -> None:
-        """
-        Initialize the OSLM GPS.
+        """Initialize the OSLM GPS.
 
         Args:
             oslm_path: Absolute path to the UMB-OSLM-001 markdown file.
+
         """
         self.oslm_path = oslm_path
-        self.graph: dict[str, list[dict[str, str]]] = {}  # Adjacency list: Source -> [{Target, Relation, Score}]
+        self.graph: dict[str, list[dict[str, str]]] = (
+            {}
+        )  # Adjacency list: Source -> [{Target, Relation, Score}]
         self.nodes: set[str] = set()
         self._load_matrix()
 
@@ -124,20 +124,19 @@ class OSLMGPS:
         self.graph[source].append({"target": target, "relation": relation})
 
     def traverse_links(self, start_node: str) -> list[dict[str, str]]:
-        """
-        Traverses all immediate links from a given node.
+        """Traverses all immediate links from a given node.
 
         Args:
             start_node: The Artifact ID to start from (e.g. 'UMB-CSE-001').
 
         Returns:
             List of dictionaries containing edge details.
+
         """
         return self.graph.get(start_node, [])
 
     def find_path(self, start_node: str, end_node: str) -> list[str] | None:
-        """
-        Finds a path between two nodes using BFS.
+        """Finds a path between two nodes using BFS.
 
         Args:
             start_node: Source Artifact ID.
@@ -145,6 +144,7 @@ class OSLMGPS:
 
         Returns:
             List of Artifact IDs representing the path, or None if no path found.
+
         """
         if start_node not in self.graph:
             return None
@@ -153,7 +153,7 @@ class OSLMGPS:
         visited = set()
 
         while queue:
-            (vertex, path) = queue.pop(0)
+            vertex, path = queue.pop(0)
             if vertex not in visited:
                 visited.add(vertex)
 

@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UAB-CRLPF-001_Axiom_of_Antifragility` |
-| **2. Official Name** | `UAB-CRLPF-001_Axiom_of_Antifragility.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `The framework watches for cascading failures where one error triggers another. It interrupts the chain reaction and isolates the initial fault.` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                                                                                                                             |
+| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **1. Artifact ID**     | `UAB-CRLPF-001_Axiom_of_Antifragility`                                                                                                            |
+| **2. Official Name**   | `UAB-CRLPF-001_Axiom_of_Antifragility.md`                                                                                                         |
+| **3. Version**         | **v1.0 (Reforged)**                                                                                                                               |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                                                                                                                     |
+| **5. Domain**          | `ARCH`                                                                                                                                            |
+| **6. Evolution**       | **Purposeful Drive**                                                                                                                              |
+| **7. Celestial Class** | `[PLANET]`                                                                                                                                        |
+| **8. Tier**            | **Operational**                                                                                                                                   |
+| **9. State**           | `The framework watches for cascading failures where one error triggers another. It interrupts the chain reaction and isolates the initial fault.` |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**                                                                                                                |
+| **11. Catalyst**       | **System Refactor**                                                                                                                               |
+| **12. Relations**      | `Pending Integration`                                                                                                                             |
 
 ---
 
@@ -48,18 +46,18 @@
 ## **II. Core Definition & Objective**
 
 - **What (The Axiom):** Antifragility is the principle that the system should not merely withstand stress, errors, and
-volatility, but should actively benefit from them, emerging stronger and more robust. It is the opposite of fragility.
+  volatility, but should actively benefit from them, emerging stronger and more robust. It is the opposite of fragility.
 - **How (The Embodiment):** This axiom is embodied by the `CRLPF`, which acts as the system's "immune response." It
-detects cognitive stressors (like infinite loops or cascading errors) and not only contains them but uses the event to
-trigger learning and adaptation cycles.
+  detects cognitive stressors (like infinite loops or cascading errors) and not only contains them but uses the event to
+  trigger learning and adaptation cycles.
 
 ## **III. Embodiment Mechanisms**
 
 The `CRLPF` operationalizes the Axiom of Antifragility through two primary mechanisms.
 
-| Mechanism | Description | Role in Antifragility |
-| :---- | :---- | :---- |
-| **Non-Productive Loop Detection** | The framework continuously monitors cognitive processes for repetitive, non-progressive cycles. | It prevents the system from wasting energy on unsolvable problems. By breaking the loop and logging the failure, it forces the `AISTF` to analyze *why* the loop occurred. |
+| Mechanism                         | Description                                                                                     | Role in Antifragility                                                                                                                                                      |
+| :-------------------------------- | :---------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Non-Productive Loop Detection** | The framework continuously monitors cognitive processes for repetitive, non-progressive cycles. | It prevents the system from wasting energy on unsolvable problems. By breaking the loop and logging the failure, it forces the `AISTF` to analyze _why_ the loop occurred. |
 
 ## **IV. Synergistic Effects & Integrations**
 
@@ -74,9 +72,9 @@ The `CRLPF` operationalizes the Axiom of Antifragility through two primary mecha
 
 ## **Actionable Prompt Packet**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

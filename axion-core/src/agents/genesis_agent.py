@@ -1,11 +1,10 @@
-"""
-ID: AGENT-GENESIS-001
+"""ID: AGENT-GENESIS-001
 Date: 2026-01-26
 Version: v1.0 (The Genesis Scaffolding)
 System: Synarche / Agent Layer
 Domain: AGENT
 Ethos: "Structure Precedes Essence."
-Likelihood of Hallucination: 0.1% (Scaffolded)
+Likelihood of Hallucination: 0.1% (Scaffolded).
 
 # --- GENESIS STAMP ---
 # Domain: AGENT
@@ -34,7 +33,7 @@ logger = logging.getLogger("genesis_agent")
 
 # --- DEPENDENCY SCHEMAS (Stubbed for AgentState) ---
 class RPGEngine(TypedDict):
-    """Gamification State"""
+    """Gamification State."""
 
     level: int
     xp: int
@@ -77,39 +76,36 @@ class TransmutationLog(TypedDict):
 
 # --- CORE STATE SCHEMA ---
 class AgentState(TypedDict):
-    """
-    The Memory (State) of the Genesis Agent.
+    """The Memory (State) of the Genesis Agent.
     Based on the Canonical Axion AgentState.
     """
 
-#     [Input Layer]
+    #     [Input Layer]
     input: str
 
-#     [Context Layer - UMB-LEX & UMB-ESF]
+    #     [Context Layer - UMB-LEX & UMB-ESF]
     narrative_context: str
     logic_context: str
 
-#     [Evaluation Layer]
+    #     [Evaluation Layer]
     sophia_insight: str
     sentinel_status: str  # "PASS" | "FAIL"
     sentinel_reason: str
 
-#     [Gamification Layer - BLK-RPG-001]
+    #     [Gamification Layer - BLK-RPG-001]
     rpg_stats: RPGEngine
     gamemaster_state: GamemasterState
     lightbinder_state: LightbinderState
     transmutation_log: list[TransmutationLog]
 
-#     [Output Layer]
+    #     [Output Layer]
     final_output: str
     messages: list[BaseMessage]
 
 
 # --- NODE 1: RETRIEVE (Context) ---
 def retrieve(state: AgentState) -> AgentState:
-    """
-    Retrieves necessary context for the operation.
-    """
+    """Retrieves necessary context for the operation."""
     logger.info("--- [NODE] RETRIEVE: Gathering Context ---")
 
     # Stub logic: In a real agent, this would query a vector DB or knowledge graph
@@ -121,22 +117,20 @@ def retrieve(state: AgentState) -> AgentState:
 
 # --- NODE 2: GENERATE (Synthesis) ---
 def generate(state: AgentState) -> AgentState:
-    """
-    Synthesizes the response based on retrieved context.
-    """
+    """Synthesizes the response based on retrieved context."""
     logger.info("--- [NODE] GENERATE: Synthesizing Output ---")
 
     # Stub logic: Generate a placeholder response
-    state["final_output"] = f"Processed Input: {state['input']} | Context: {state['narrative_context']}"
+    state["final_output"] = (
+        f"Processed Input: {state['input']} | Context: {state['narrative_context']}"
+    )
 
     return state
 
 
 # --- NODE 3: SENTINEL (Guardrail) ---
 def sentinel(state: AgentState) -> AgentState:
-    """
-    Validates the generated output against safety and ethics protocols.
-    """
+    """Validates the generated output against safety and ethics protocols."""
     logger.info("--- [NODE] SENTINEL: Verifying Integrity ---")
 
     # Stub logic: Always pass for the scaffold
@@ -206,6 +200,6 @@ if __name__ == "__main__":
 
     print("\n>>> STARTING GENESIS AGENT SCAFFOLD >>>")
     for event in app.stream(initial_state):
-        for key, value in event.items():
+        for key, _value in event.items():
             print(f"  --> Node '{key}' completed.")
     print(">>> EXECUTION FINISHED >>>\n")

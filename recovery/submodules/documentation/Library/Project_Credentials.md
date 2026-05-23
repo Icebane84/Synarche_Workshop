@@ -38,12 +38,12 @@ https://us-central1-aiplatform.googleapis.com/v1/projects/studio-9371668286-aabb
 
 - **Supabase URL:**
 
-    ```text
-    https://rtjkhpotguwngfpvhfej.supabase.co
-    ```
+  ```text
+  https://rtjkhpotguwngfpvhfej.supabase.co
+  ```
 
-    _(Note: Updated to the live URL found in .env.local, matching the 'Project info' description rather than the
-    confused URL in the previous version)_
+  _(Note: Updated to the live URL found in .env.local, matching the 'Project info' description rather than the
+  confused URL in the previous version)_
 
 ### API Keys (Critical)
 

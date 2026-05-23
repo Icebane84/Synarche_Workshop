@@ -1,7 +1,7 @@
-import os
 from pathlib import Path
 
 ROOT = "fde_engine"
+
 
 def get_header(artifact_id: str, filename: str, domain: str) -> str:
     return f'''"""
@@ -20,22 +20,26 @@ def get_header(artifact_id: str, filename: str, domain: str) -> str:
 
 '''
 
+
 FILES = {
     # --- GOVERNANCE ---
-    "gvrn/law_validator.py": get_header("CORE-FDE-GVRN-LAW", "law_validator.py", "GVRN") + '''
+    "gvrn/law_validator.py": get_header("CORE-FDE-GVRN-LAW", "law_validator.py", "GVRN")
+    + '''
 class LawValidator:
     """Enforces zero-entropy state validation against project metadata."""
     pass
 ''',
-    
-    "gvrn/selt_logger.py": get_header("CORE-FDE-GVRN-SELT", "selt_logger.py", "GVRN") + '''
+    "gvrn/selt_logger.py": get_header("CORE-FDE-GVRN-SELT", "selt_logger.py", "GVRN")
+    + '''
 class SeltLogger:
     """Immutable telemetry and Dissonance tracking."""
     pass
 ''',
-
     # --- CORE EXECUTION ---
-    "core/engine_runtime.py": get_header("CORE-FDE-CORE-RUNTIME", "engine_runtime.py", "CORE") + '''
+    "core/engine_runtime.py": get_header(
+        "CORE-FDE-CORE-RUNTIME", "engine_runtime.py", "CORE"
+    )
+    + '''
 class EngineRuntime:
     """The master loop: S(n+1) = F(S(n), I(n)). Binds DAG, ECS, and Rollback."""
     def __init__(self, world, scheduler, rollback_core):
@@ -54,8 +58,10 @@ class EngineRuntime:
         self.rollback.snapshots.save(self.world.frame, self.world.snapshot())
         self.world.frame += 1
 ''',
-
-    "core/chunk_executor.py": get_header("CORE-FDE-CORE-CHUNK", "chunk_executor.py", "CORE") + '''
+    "core/chunk_executor.py": get_header(
+        "CORE-FDE-CORE-CHUNK", "chunk_executor.py", "CORE"
+    )
+    + '''
 import concurrent.futures
 
 class ArchetypeChunk:
@@ -99,8 +105,10 @@ class ChunkExecutor:
             master["mutations"].setdefault(comp, {}).update(updates)
         # Structural merges...
 ''',
-
-    "core/rollback_core.py": get_header("CORE-FDE-CORE-ROLLBACK", "rollback_core.py", "CORE") + '''
+    "core/rollback_core.py": get_header(
+        "CORE-FDE-CORE-ROLLBACK", "rollback_core.py", "CORE"
+    )
+    + """
 import copy
 
 class InputLog:
@@ -147,10 +155,12 @@ class RollbackEngine:
             world.current_inputs = self.input_log.get_inputs(f, world.players)
             self.scheduler.run_frame(world)
             self.snapshots.save(f, world.snapshot())
-''',
-
+""",
     # --- ECS ---
-    "ecs/archetype_storage.py": get_header("CORE-FDE-ECS-ARCH", "archetype_storage.py", "ECS") + '''
+    "ecs/archetype_storage.py": get_header(
+        "CORE-FDE-ECS-ARCH", "archetype_storage.py", "ECS"
+    )
+    + '''
 class Archetype:
     """Contiguous columnar arrays. O(1) query matching and swap-and-pop."""
     def __init__(self, signature):
@@ -180,8 +190,8 @@ class Archetype:
         # AAA optimization: frozen dataclasses allow fast shallow copies
         return {"entity_ids": self.entity_ids.copy(), "columns": {k: v.copy() for k, v in self.columns.items()}}
 ''',
-
-    "ecs/commit_layer.py": get_header("CORE-FDE-ECS-COMMIT", "commit_layer.py", "ECS") + '''
+    "ecs/commit_layer.py": get_header("CORE-FDE-ECS-COMMIT", "commit_layer.py", "ECS")
+    + '''
 def apply_ecs_delta(world, delta, seen_mutations):
     """The Deterministic Bottleneck. Fail-fast collision detection."""
     reg = world.registry
@@ -199,8 +209,8 @@ def apply_ecs_delta(world, delta, seen_mutations):
             sig, row = reg._entity_index[eid]
             reg._archetypes[sig].columns[comp_type][row] = new_val
 ''',
-
-    "ecs/world.py": get_header("CORE-FDE-ECS-WORLD", "world.py", "ECS") + '''
+    "ecs/world.py": get_header("CORE-FDE-ECS-WORLD", "world.py", "ECS")
+    + '''
 from .entity_registry import EntityRegistry
 
 class World:
@@ -223,8 +233,10 @@ class World:
         self.frame = snap["frame"]
         self.current_inputs = snap["inputs"].copy()
 ''',
-
-    "ecs/entity_registry.py": get_header("CORE-FDE-ECS-REG", "entity_registry.py", "ECS") + '''
+    "ecs/entity_registry.py": get_header(
+        "CORE-FDE-ECS-REG", "entity_registry.py", "ECS"
+    )
+    + """
 class EntityRegistry:
     def __init__(self):
         self._next_id = 1
@@ -242,9 +254,9 @@ class EntityRegistry:
 
     def restore(self, snap):
         pass
-''',
-
-    "ecs/ecs_scheduler.py": get_header("CORE-FDE-ECS-SCHED", "ecs_scheduler.py", "ECS") + '''
+""",
+    "ecs/ecs_scheduler.py": get_header("CORE-FDE-ECS-SCHED", "ecs_scheduler.py", "ECS")
+    + '''
 from .commit_layer import apply_ecs_delta
 
 class SystemTask:
@@ -265,9 +277,9 @@ class ECSScheduler:
             for idx in sorted(results.keys()):
                 apply_ecs_delta(world, results[idx], seen)
 ''',
-
     # --- DAG ---
-    "dag/dag_compiler.py": get_header("CORE-FDE-DAG-COMPILER", "dag_compiler.py", "DAG") + '''
+    "dag/dag_compiler.py": get_header("CORE-FDE-DAG-COMPILER", "dag_compiler.py", "DAG")
+    + '''
 from collections import defaultdict
 
 class DAGCompiler:
@@ -316,8 +328,10 @@ class DAGCompiler:
                     indegree[neighbor] -= 1
         return layers
 ''',
-
-    "dag/system_signature.py": get_header("CORE-FDE-DAG-SIG", "system_signature.py", "DAG") + '''
+    "dag/system_signature.py": get_header(
+        "CORE-FDE-DAG-SIG", "system_signature.py", "DAG"
+    )
+    + '''
 class SystemSignature:
     """The strict contract all FDE systems must inherit."""
     name: str = "Unknown"
@@ -326,9 +340,11 @@ class SystemSignature:
     writes = set()
     accumulates = set()
 ''',
-
     # --- SYSTEMS ---
-    "systems/movement_system.py": get_header("CORE-FDE-SYS-MOVE", "movement_system.py", "SYSTEMS") + '''
+    "systems/movement_system.py": get_header(
+        "CORE-FDE-SYS-MOVE", "movement_system.py", "SYSTEMS"
+    )
+    + """
 from dataclasses import dataclass
 
 @dataclass(frozen=True)
@@ -359,24 +375,30 @@ class MovementSystem:
             eid = eids[i]
             delta["mutations"][Position][eid] = Position(pos[i].x + vel[i].dx, pos[i].y + vel[i].dy)
         return delta
-''',
-
-    "systems/input_system.py": get_header("CORE-FDE-SYS-INPUT", "input_system.py", "SYSTEMS") + '''
+""",
+    "systems/input_system.py": get_header(
+        "CORE-FDE-SYS-INPUT", "input_system.py", "SYSTEMS"
+    )
+    + '''
 class InputSystem:
     """Deterministically translates raw inputs into component intents."""
     name = "input"
     execution_index = 0
     reads = set(); writes = set(); accumulates = set()
 ''',
-
-    "systems/base_system.py": get_header("CORE-FDE-SYS-BASE", "base_system.py", "SYSTEMS") + '''
+    "systems/base_system.py": get_header(
+        "CORE-FDE-SYS-BASE", "base_system.py", "SYSTEMS"
+    )
+    + '''
 class BaseSystem:
     """Template for FDE pure functions."""
     pass
 ''',
-
     # --- BRIDGE ---
-    "bridge/godot_translation_layer.py": get_header("CORE-FDE-BRIDGE-GODOT", "godot_translation_layer.py", "BRIDGE") + '''
+    "bridge/godot_translation_layer.py": get_header(
+        "CORE-FDE-BRIDGE-GODOT", "godot_translation_layer.py", "BRIDGE"
+    )
+    + '''
 class GodotBridge:
     """
     Translates the deterministic Archetype state into Godot visual transforms.
@@ -384,9 +406,9 @@ class GodotBridge:
     """
     pass
 ''',
-
     # --- DEMO ---
-    "demo/bootstrap.py": get_header("CORE-FDE-DEMO-BOOT", "bootstrap.py", "DEMO") + '''
+    "demo/bootstrap.py": get_header("CORE-FDE-DEMO-BOOT", "bootstrap.py", "DEMO")
+    + """
 from core.engine_runtime import EngineRuntime
 from core.chunk_executor import ChunkExecutor
 from core.rollback_core import RollbackEngine, InputLog, SnapshotBuffer
@@ -420,12 +442,12 @@ def main():
 
 if __name__ == "__main__":
     main()
-''',
-
+""",
     # --- DOCS ---
     "docs/README.md": "# The Phoenix FDE\n\nAutomated via GUCA-FDE-FORGE.\n",
-    "docs/PRS_INDEX.md": "# PRS Navigation Hub\n\nMapping the Sovereign Lattice.\n"
+    "docs/PRS_INDEX.md": "# PRS Navigation Hub\n\nMapping the Sovereign Lattice.\n",
 }
+
 
 def forge() -> None:
     print(f"[INIT] Executing Structural Transmutation. Target: ./{ROOT}/")
@@ -434,13 +456,14 @@ def forge() -> None:
     for file_path, content in FILES.items():
         full_path = Path(ROOT) / file_path
         full_path.parent.mkdir(parents=True, exist_ok=True)
-        
+
         with open(full_path, "w", encoding="utf-8") as f:
             f.write(content.strip() + "\n")
-            
+
         print(f"  [+] Forged: {file_path}")
 
     print(f"\n[SYNTHESIS COMPLETE] {len(FILES)} artifacts secured in the library.")
+
 
 if __name__ == "__main__":
     forge()

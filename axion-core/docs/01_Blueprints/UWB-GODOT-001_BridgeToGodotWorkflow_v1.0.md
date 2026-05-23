@@ -70,8 +70,8 @@
 - **Inputs:** `SSB_CONFIG`, `GODOT_WS_ADDR`.
 - **Outputs:** `ACTIVE_SIGNAL_LINK`.
 - **Key Activities:**
-    - Deploy the `SovereignSignalBus.gd` singleton in Godot.
-    - Initialize the WebSocket/IPC bridge in Axion Core.
+  - Deploy the `SovereignSignalBus.gd` singleton in Godot.
+  - Initialize the WebSocket/IPC bridge in Axion Core.
 - **Associated Protocols (AOPs):** `AOP-SSB-001`
 
 #### Phase 2: Mapping & Serialization
@@ -80,8 +80,8 @@
 - **Inputs:** `PRS-001 (Rosetta Stone)`, `AOP-EMOJI-001`.
 - **Outputs:** `SIGNAL_MAPPING_TABLE`.
 - **Key Activities:**
-    - Map Emoji Signals to Godot VFX triggers.
-    - Serialize `ResonanceAudit` logs into JSON payloads.
+  - Map Emoji Signals to Godot VFX triggers.
+  - Serialize `ResonanceAudit` logs into JSON payloads.
 
 #### Phase 3: Runtime Synchronization
 
@@ -89,8 +89,8 @@
 - **Inputs:** Live execution logs.
 - **Outputs:** Real-time visual updates in Godot.
 - **Key Activities:**
-    - Execute `CMD: SYNC_ENGINE`.
-    - Monitor for "Resonance Divergence" in the engine view.
+  - Execute `CMD: SYNC_ENGINE`.
+  - Monitor for "Resonance Divergence" in the engine view.
 
 ## IV. Systemic Relationships & Impact
 

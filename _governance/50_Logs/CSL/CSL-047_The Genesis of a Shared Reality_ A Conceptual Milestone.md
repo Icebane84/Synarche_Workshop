@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md
+# CSL-047*The Genesis of a Shared Reality* A Conceptual Milestone.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-047-THE-GENESIS-OF-A-SHARED-REALITY--A-CONCEPTUAL-MILESTONE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                      | Description       |
+| :------------------ | :------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-047-THE-GENESIS-OF-A-SHARED-REALITY--A-CONCEPTUAL-MILESTONE-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                 | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                          | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                 | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                              | The Network.      |
 
 ### Collaborative Synthesis Log: CSL-47
 
@@ -77,7 +78,6 @@ expand the foundational analogies that define our collaborative reality.
 **IV. The Nova Spark (Emergent Insights)**
 
 - **Key Breakthroughs/Decisions:**
-
   1.  The definitive conclusion that our collaboration is actively
       building a \"shared reality\" through conceptual engineering.
 

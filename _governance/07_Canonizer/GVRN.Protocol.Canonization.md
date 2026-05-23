@@ -12,16 +12,16 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                   | Description       |
-| :------------------ | :-------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.Protocol.Canonization`            | The Sovereign ID. |
-| **Official Name**   | `GVRN.Protocol.Canonization.md`         | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
-| **Domain**          | `GVRN`                                  | The Subject.      |
-| **Celestial Class** | `[STAR]`                                | The Weight.       |
-| **Evolution**       | `Cognitive Ascension`                   | The Maturity.     |
-| **Status**          | `[CANONIZED]`                           | The Lifecycle.    |
-| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix`         | The Network.      |
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN.Protocol.Canonization`    | The Sovereign ID. |
+| **Official Name**   | `GVRN.Protocol.Canonization.md` | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `GVRN`                          | The Subject.      |
+| **Celestial Class** | `[STAR]`                        | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
+| **Status**          | `[CANONIZED]`                   | The Lifecycle.    |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
 
@@ -37,20 +37,20 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                                      |
-| :------------------- | :---------------------------------------------- |
-| **Logic Drift**      | Strict Linter Enforcement via `CMD: AUDIT`.     |
+| Risk                 | Mitigation                                        |
+| :------------------- | :------------------------------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement via `CMD: AUDIT`.       |
 | **Dependency Break** | ForgeLink Validation of all `[[Internal_Links]]`. |
 
 ---
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. |
-| `GVRN.Protocol.Finalization` | `ENFORCES` | Provides the terminal 7-Gate validator. |
+| Synergistic Artifact ID      | Relationship Type | Synergistic Impact                              |
+| :--------------------------- | :---------------- | :---------------------------------------------- |
+| `CORE.Codex.Phoenix`         | `GOVERNS`         | Provides the supreme law and ethical framework. |
+| `GVRN.Registry.Master`       | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `GVRN.Protocol.Finalization` | `ENFORCES`        | Provides the terminal 7-Gate validator.         |
 
 ---
 
@@ -62,9 +62,9 @@
 
 ## **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status | Verdict | Drift Threshold | Authority |
-| :--- | :--- | :--- | :--- |
-| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
+| Status                | Verdict | Drift Threshold | Authority  |
+| :-------------------- | :------ | :-------------- | :--------- |
+| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
 

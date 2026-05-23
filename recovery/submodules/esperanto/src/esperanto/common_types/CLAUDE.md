@@ -1,26 +1,27 @@
 # CLAUDE.md
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+
+> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
 
 ## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
-###### **[ARTIFACT START]**
+### **[ARTIFACT START]**
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+---
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Common Types
 
@@ -28,18 +29,25 @@ Shared type definitions and response models used across all provider types.
 
 ## Files
 
+---
+
 - **`model.py`**: `Model` dataclass representing AI model metadata (id, owner, context_window)
-- **`response.py`**: Chat completion response types (`ChatCompletion`, `ChatCompletionChunk`, `Message`, `Choice`, `Usage`) and tool types (`Tool`, `ToolFunction`, `ToolCall`, `FunctionCall`)
+- **`response.py`**: Chat completion response types (`ChatCompletion`, `ChatCompletionChunk`, `Message`, `Choice`,
+  `Usage`) and TOOL types (`Tool`, `ToolFunction`, `ToolCall`, `FunctionCall`)
 - **`task_type.py`**: `EmbeddingTaskType` enum for task-aware embeddings
 - **`stt.py`**: `TranscriptionResponse` for speech-to-text results
 - **`tts.py`**: `AudioResponse` and `Voice` for text-to-speech
 - **`reranker.py`**: `RerankResponse` and `RerankResult` for document reranking
-- **`exceptions.py`**: `ToolCallValidationError` for tool call validation failures
-- **`validation.py`**: Tool call validation utilities (`validate_tool_call`, `validate_tool_calls`, `find_tool_by_name`)
+- **`exceptions.py`**: `ToolCallValidationError` for TOOL call validation failures
+- **`validation.py`**: TOOL call validation utilities (`validate_tool_call`, `validate_tool_calls`, `find_tool_by_name`)
 
 ## Patterns
 
+---
+
 ### Pydantic Models
+
+---
 
 All response types use Pydantic BaseModel for:
 
@@ -60,6 +68,8 @@ class Message(BaseModel):
 
 ### Response Standardization
 
+---
+
 All providers convert their API responses to Esperanto's common types:
 
 - **LLM**: Returns `ChatCompletion` (non-streaming) or yields `ChatCompletionChunk` (streaming)
@@ -69,6 +79,8 @@ All providers convert their API responses to Esperanto's common types:
 - **TTS**: Returns `AudioResponse`
 
 ### Message Structure
+
+---
 
 Chat messages follow OpenAI-style format (response.py:34):
 
@@ -82,6 +94,8 @@ Message(
 ```
 
 ### Message Thinking Properties
+
+---
 
 The `Message` class provides properties for handling models that include reasoning traces (like Qwen3, DeepSeek R1):
 
@@ -100,9 +114,12 @@ msg.thinking         # "Let me analyze this..."
 msg.cleaned_content  # "{\"answer\": 42}"
 ```
 
-Multiple `<think>` blocks are concatenated with `\n\n`. If content has no `<think>` tags, `thinking` returns `None` and `cleaned_content` returns the full content.
+Multiple `<think>` blocks are concatenated with `\n\n`. If content has no `<think>` tags, `thinking` returns `None` and
+`cleaned_content` returns the full content.
 
 ### Usage Tracking
+
+---
 
 Token usage is standardized in `Usage` class (response.py:19):
 
@@ -117,6 +134,8 @@ Usage(
 All counts must be >= 0 (enforced by Pydantic).
 
 ### Streaming vs Non-Streaming
+
+---
 
 - **Non-streaming**: `ChatCompletion` with `choices` list containing full `Message`
 - **Streaming**: `ChatCompletionChunk` with `choices` containing `DeltaMessage` (partial content)
@@ -134,11 +153,13 @@ def chat_complete(self, messages, stream=True):
 
 ### Task Type Enum
 
+---
+
 `EmbeddingTaskType` (task_type.py:7) defines universal task types:
 
 - **Retrieval**: `RETRIEVAL_QUERY`, `RETRIEVAL_DOCUMENT`
 - **Similarity**: `SIMILARITY`, `CLASSIFICATION`, `CLUSTERING`
-- **Code**: `CODE_RETRIEVAL`
+- **CODE**: `CODE_RETRIEVAL`
 - **Q&A**: `QUESTION_ANSWERING`, `FACT_VERIFICATION`
 - **Default**: `DEFAULT` (no optimization)
 
@@ -152,6 +173,8 @@ model = AIFactory.create_embedding("jina", "jina-embeddings-v2-base-en", config=
 ```
 
 ### Audio Response
+
+---
 
 TTS providers return `AudioResponse` (tts.py):
 
@@ -172,6 +195,8 @@ STT providers return `TranscriptionResponse` (stt.py):
 
 ### Reranker Response
 
+---
+
 Reranker providers return `RerankResponse` (reranker.py):
 
 - `model`: str (model used)
@@ -186,6 +211,8 @@ Each `RerankResult` contains:
 
 ## Integration
 
+---
+
 - Imported by all provider implementations
 - Used for type hints in provider methods
 - Ensures consistency across different providers
@@ -193,22 +220,28 @@ Each `RerankResult` contains:
 
 ## Gotchas
 
+---
+
 - **Frozen models**: Most models use `frozen=True` - create new instances instead of modifying
 - **Optional fields**: Many fields are Optional - always check for None before use
 - **Dict conversion**: Use `model_dump()` not `dict()` for Pydantic v2
-- **Backward compatibility**: `Message` implements `__getitem__` for dict-like access - avoid in new code
+- **Backward compatibility**: `Message` implements `__getitem__` for dict-like access - avoid in new CODE
 - **Enum string conversion**: `EmbeddingTaskType` has custom `__str__()` returning `.value` not `.name`
 - **Validation errors**: Pydantic raises ValidationError for invalid data - catch and handle
 - **Model validators**: `Message` and `Choice` have custom validators - be aware when constructing
 - **Choice vs StreamChoice**: Different types for non-streaming vs streaming (both in response.py)
-- **Content can be None**: Message.content is Optional - providers may return None for tool calls
-- **Function calls vs tool calls**: Both exist for backward compatibility - use tool_calls for new code
+- **Content can be None**: Message.content is Optional - providers may return None for TOOL calls
+- **Function calls vs TOOL calls**: Both exist for backward compatibility - use tool_calls for new CODE
 
-## Tool Types
+## TOOL Types
 
-Tool calling is supported across all major providers through unified types in `response.py`:
+---
 
-### Tool Definition Types
+TOOL calling is supported across all major providers through unified types in `response.py`:
+
+### TOOL Definition Types
+
+---
 
 ```python
 from esperanto.common_types import Tool, ToolFunction
@@ -232,7 +265,9 @@ tool = Tool(
 )
 ```
 
-### Tool Call Response Types
+### TOOL Call Response Types
+
+---
 
 ```python
 from esperanto.common_types import ToolCall, FunctionCall
@@ -253,6 +288,8 @@ tool_call = ToolCall(
 ```
 
 ### Validation Utilities
+
+---
 
 ```python
 from esperanto.common_types import (
@@ -275,9 +312,11 @@ validate_tool_calls(message.tool_calls, tools)
 tool = find_tool_by_name(tools, "get_weather")
 ```
 
-### Tool Message Format
+### TOOL Message Format
 
-When sending tool results back to the model:
+---
+
+When sending TOOL results back to the model:
 
 ```python
 # Assistant message with tool calls
@@ -305,6 +344,8 @@ When sending tool results back to the model:
 
 ## When Adding New Response Types
 
+---
+
 1. Create new file or add to existing file in this directory
 2. Use Pydantic BaseModel for validation
 3. Add clear Field descriptions
@@ -316,7 +357,11 @@ When sending tool results back to the model:
 
 ## Common Type Usage Examples
 
+---
+
 ### Creating a ChatCompletion
+
+---
 
 ```python
 from esperanto.common_types import ChatCompletion, Choice, Message, Usage
@@ -338,6 +383,8 @@ completion = ChatCompletion(
 
 ### Creating a StreamChunk
 
+---
+
 ```python
 from esperanto.common_types import ChatCompletionChunk, StreamChoice, DeltaMessage
 
@@ -357,6 +404,8 @@ chunk = ChatCompletionChunk(
 
 ### Using EmbeddingTaskType
 
+---
+
 ```python
 from esperanto.common_types import EmbeddingTaskType
 
@@ -370,6 +419,8 @@ print(task_type.name)   # "RETRIEVAL_QUERY"
 ```
 
 ### Accessing Message Fields
+
+---
 
 ```python
 from esperanto.common_types import Message
@@ -387,6 +438,8 @@ msg_dict = msg.model_dump()  # {"content": "Hello", "role": "user", ...}
 ```
 
 ### Handling Reasoning Traces
+
+---
 
 ```python
 from esperanto import AIFactory
@@ -414,6 +467,9 @@ print(msg.cleaned_content)
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+---
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
+Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry. CORE-CODEX-001,
+GOVERNS, The Codex provides the Supreme Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed
+in the Master Registry.

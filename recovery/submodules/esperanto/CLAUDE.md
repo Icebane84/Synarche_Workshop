@@ -1,38 +1,48 @@
 # CLAUDE.md
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+
+> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
 
 ## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
-###### **[ARTIFACT START]**
+### **[ARTIFACT START]**
+
+---
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+---
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Esperanto
 
-Unified interface library for working with multiple AI models (LLM, embedding, reranking, speech-to-text, text-to-speech) from different providers.
+Unified interface library for working with multiple AI models (LLM, embedding, reranking, speech-to-text,
+text-to-speech) from different providers.
 
-## Core Value Proposition
+## CORE Value Proposition
 
-Esperanto provides a **consistent, provider-agnostic interface** for AI models. Users can switch providers by changing one parameter, with identical code otherwise.
+---
 
-**Key principle**: Consistency across providers is the main value proposition. When adding features, maintain interface uniformity.
+Esperanto provides a **consistent, provider-agnostic interface** for AI models. Users can switch providers by changing
+one parameter, with identical code otherwise.
+
+**Key principle**: Consistency across providers is the main value proposition. When adding features, maintain interface
+uniformity.
 
 ## Project Structure
+
+---
 
 ```
 esperanto/
@@ -55,18 +65,25 @@ See detailed documentation in subdirectory CLAUDE.md files.
 
 ## Module Documentation
 
+---
+
 - **[src/esperanto/providers/](src/esperanto/providers/CLAUDE.md)**: All provider implementations
-  - **[llm/](src/esperanto/providers/llm/CLAUDE.md)**: Language models (OpenAI, Anthropic, Google, etc.)
-  - **[embedding/](src/esperanto/providers/embedding/CLAUDE.md)**: Embedding models (OpenAI, Jina, Voyage, etc.)
-  - **[reranker/](src/esperanto/providers/reranker/CLAUDE.md)**: Reranking models (Jina, Voyage, Transformers)
-  - **[stt/](src/esperanto/providers/stt/CLAUDE.md)**: Speech-to-text (OpenAI, Groq, Google, Azure)
-  - **[tts/](src/esperanto/providers/tts/CLAUDE.md)**: Text-to-speech (OpenAI, ElevenLabs, Google, Azure)
-- **[src/esperanto/common_types/](src/esperanto/common_types/CLAUDE.md)**: Response types and models
-- **[src/esperanto/utils/](src/esperanto/utils/CLAUDE.md)**: Timeout, SSL, caching utilities
+    - **[llm/](src/esperanto/providers/llm/CLAUDE.md)**: Language models (OpenAI, Anthropic, Google, etc.)
+    - **[embedding/](src/esperanto/providers/embedding/CLAUDE.md)**: Embedding models (OpenAI, Jina, Voyage, etc.)
+    - **[reranker/](src/esperanto/providers/reranker/CLAUDE.md)**: Reranking models (Jina, Voyage, Transformers)
+    - **[stt/](src/esperanto/providers/stt/CLAUDE.md)**: Speech-to-text (OpenAI, Groq, Google, Azure)
+    - **[tts/](src/esperanto/providers/tts/CLAUDE.md)**: Text-to-speech (OpenAI, ElevenLabs, Google, Azure)
+
+* **[src/esperanto/common_types/](src/esperanto/common_types/CLAUDE.md)**: Response types and models
+* **[src/esperanto/utils/](src/esperanto/utils/CLAUDE.md)**: Timeout, SSL, caching utilities
 
 ## Key Files
 
+---
+
 ### factory.py
+
+---
 
 Central factory for creating provider instances:
 
@@ -81,13 +98,17 @@ Central factory for creating provider instances:
 
 ### model_discovery.py
 
+---
+
 Static model discovery system:
 
 - `PROVIDER_MODELS_REGISTRY`: Maps provider names to discovery functions
 - Discovery functions return `List[Model]` without creating provider instances
 - Results cached with `ModelCache` (1 hour TTL)
 
-### __init__.py
+### **init**.py
+
+---
 
 Public API surface:
 
@@ -97,7 +118,11 @@ Public API surface:
 
 ## Architecture Patterns
 
+---
+
 ### Provider Pattern
+
+---
 
 All providers follow consistent architecture:
 
@@ -108,6 +133,8 @@ All providers follow consistent architecture:
 
 ### Configuration Priority
 
+---
+
 Three-tier configuration system (highest to lowest):
 
 1. **Config dict**: `config={"timeout": 120}`
@@ -115,6 +142,8 @@ Three-tier configuration system (highest to lowest):
 3. **Defaults**: Provider type defaults
 
 ### Mixin Composition
+
+---
 
 Providers inherit functionality via mixins:
 
@@ -124,6 +153,8 @@ Providers inherit functionality via mixins:
 - Provider implementation: Actual API integration
 
 ## Adding a New Provider
+
+---
 
 When building a provider:
 
@@ -146,6 +177,8 @@ def __post_init__(self):
 
 ### Steps for New Provider
 
+---
+
 1. Identify provider type (language, embedding, reranker, stt, tts)
 2. Create `{provider_name}.py` in appropriate `src/esperanto/providers/{type}/` directory
 3. Import base class from `.base`
@@ -159,7 +192,11 @@ def __post_init__(self):
 
 ## Integration Points
 
+---
+
 ### AIFactory ↔ Providers
+
+---
 
 Factory imports providers dynamically via `_import_provider_class()`:
 
@@ -168,6 +205,8 @@ Factory imports providers dynamically via `_import_provider_class()`:
 - Raises helpful errors for missing packages
 
 ### Providers ↔ Common Types
+
+---
 
 All providers convert API responses to Esperanto's common types:
 
@@ -178,9 +217,11 @@ All providers convert API responses to Esperanto's common types:
 - STT: `TranscriptionResponse`
 - TTS: `AudioResponse`
 
-### Tool Calling
+### TOOL Calling
 
-Esperanto provides unified tool/function calling across all LLM providers:
+---
+
+Esperanto provides unified TOOL/function calling across all LLM providers:
 
 ```python
 from esperanto import AIFactory
@@ -208,9 +249,11 @@ if response.choices[0].message.tool_calls:
         print(f"{tc.function.name}: {tc.function.arguments}")
 ```
 
-See [docs/features/tool-calling.md](docs/features/tool-calling.md) for full documentation.
+See [docs/features/TOOL-calling.md](docs/features/tool-calling.md) for full documentation.
 
 ### Providers ↔ Utils
+
+---
 
 All providers use utility mixins:
 
@@ -220,7 +263,11 @@ All providers use utility mixins:
 
 ## Gotchas
 
+---
+
 ### Adding Providers
+
+---
 
 - **Consistency is key**: Look at existing providers before implementing
 - **Base class inspection**: Always check the base class for the provider type
@@ -231,6 +278,8 @@ All providers use utility mixins:
 
 ### Interface Consistency
 
+---
+
 - **Method signatures**: Must match base class exactly (don't add required params)
 - **Return types**: Must use common types (don't return provider-specific objects)
 - **Error handling**: Raise `RuntimeError` for API errors, `ValueError` for validation
@@ -238,11 +287,15 @@ All providers use utility mixins:
 
 ### Testing
 
-- **Test after writing**: `uv run pytest -v` to verify functionality
+---
+
+- **TEST after writing**: `uv run pytest -v` to verify functionality
 - **Check all providers**: Changes to base classes affect all providers
-- **Integration tests**: Test provider switching (same code, different provider)
+- **Integration tests**: TEST provider switching (same CODE, different provider)
 
 ### API Keys
+
+---
 
 - **Environment variables**: Follow pattern `{PROVIDER}_API_KEY` (all caps)
 - **Validation**: Always check for None in `__post_init__` and raise helpful ValueError
@@ -250,37 +303,46 @@ All providers use utility mixins:
 
 ### Documentation
 
+---
+
 - **User docs**: Update `docs/providers/{provider}.md` for human users
 - **AI docs**: Keep CLAUDE.md files updated for AI context (this file structure)
 - **Consistency**: Documentation should reflect actual implementation
 
 ## Development Workflow
 
+---
+
 1. **Before implementing**: Read relevant base class + 2-3 provider examples
 2. **During implementation**: Follow patterns exactly, check tests frequently
-3. **After implementation**: Run full test suite, update docs
+3. **After implementation**: Run full TEST suite, update docs
 4. **Before committing**: Ensure tests pass, check consistency with sibling providers
 
 ## Common Commands
 
+---
+
 - **Run all tests**: `uv run pytest -v`
-- **Run specific test**: `uv run pytest tests/providers/llm/test_openai.py -v`
+- **Run specific TEST**: `uv run pytest tests/providers/llm/test_openai.py -v`
 - **Run integration tests**: `uv run pytest tests/integration/ -v`
 - **Check types**: `uv run mypy src/esperanto`
-- **Format code**: `uv run black src/ tests/`
+- **Format CODE**: `uv run black src/ tests/`
 
 ## Critical Principles
 
+---
+
 1. **Consistency > Features**: If a feature can't be consistent across providers, reconsider
 2. **Interface First**: Design interfaces before implementing providers
-3. **Test Driven**: Write tests as you implement, run frequently
-4. **Documentation**: Keep both human and AI docs in sync with code
+3. **TEST Driven**: Write tests as you implement, run frequently
+4. **Documentation**: Keep both human and AI docs in sync with CODE
 5. **Provider Parity**: New features should work across multiple providers when possible
 
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+---
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
+Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

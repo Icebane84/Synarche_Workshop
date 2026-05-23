@@ -18,7 +18,7 @@ TARGET_FOLDERS = [
 
 
 def create_notebook(name, description):
-    """Create a notebook and return its ID"""
+    """Create a notebook and return its ID."""
     try:
         response = requests.post(
             f"{API_URL}/notebooks", json={"name": name, "description": description}
@@ -31,7 +31,7 @@ def create_notebook(name, description):
 
 
 def upload_file(file_path, notebook_id):
-    """Upload a file as a source linked to the notebook"""
+    """Upload a file as a source linked to the notebook."""
     try:
         filename = os.path.basename(file_path)
         print(f"Uploading {filename}...")
@@ -94,7 +94,7 @@ def main():
 
         # Walk and Upload
         count = 0
-        for root, dirs, files in os.walk(folder_path):
+        for root, _dirs, files in os.walk(folder_path):
             for file in files:
                 if file.lower().endswith(".md"):
                     full_path = os.path.join(root, file)

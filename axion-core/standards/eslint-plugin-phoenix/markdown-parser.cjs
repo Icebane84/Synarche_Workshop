@@ -1,4 +1,7 @@
-exports.parseForESLint = function(code, options) {
+
+exports.parseForESLint = function (code) {
+
+
     return {
         ast: {
             type: "Program",
@@ -8,12 +11,12 @@ exports.parseForESLint = function(code, options) {
             range: [0, code.length],
             body: [],
             tokens: [],
-            comments: []
+            comments: [],
         },
         services: {},
         scopeManager: null,
         visitorKeys: {
-            Program: []
-        }
+            Program: [],
+        },
     };
 };

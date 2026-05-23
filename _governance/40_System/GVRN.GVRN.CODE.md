@@ -1,4 +1,5 @@
 # UMB-GVRN-CODE-001_SharedEnumerations_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.GVRN.CODE` | The Sovereign ID. |
-| **Official Name** | `UMB-GVRN-CODE-001_SharedEnumerations_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.GVRN.CODE`                               | The Sovereign ID. |
+| **Official Name**   | `UMB-GVRN-CODE-001_SharedEnumerations_v1.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
+
 UIP: UMB-GVRN-CODE-001
 Title: Shared Enumerations Core Module
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/Synarche_Workspace/axion-core/tools/enums.py)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/Synarche_Workspace/axion-core/tools/enums.py)
+  Description: >
   Defines the axiomatic enumerations of the Phoenix Synarche. Acts as the "Rosetta Stone" for all agents, linters, and evolutionary engines.
-Version: 1.0
-Status: CANONIZED
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769339821
-Tags: 
-  - #Module
-  - #Enums
-  - #Axiom
-  - #Governance
+  Version: 1.0
+  Status: CANONIZED
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769339821
+  Tags:
+- #Module
+- #Enums
+- #Axiom
+- #Governance
+
 ---
 
 > [!IMPORTANT]

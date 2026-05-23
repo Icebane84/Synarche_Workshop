@@ -1,5 +1,4 @@
-"""
-HARVESTED LOGIC: Sanity & Resonance System
+"""HARVESTED LOGIC: Sanity & Resonance System
 Origin: Ashen Oath Inner Flame Echoes (script.js)
 Purpose: Prototype the mathematical model for the 3rd Person Game.
 """
@@ -35,9 +34,7 @@ class PsycheSystem:
         self.resources = {"faith": 0, "doubt": 0, "resolve": 0}
 
     def update(self, delta_time: float = 1.0):
-        """
-        Runs one tick of the psyche simulation.
-        """
+        """Runs one tick of the psyche simulation."""
         # 1. Calculate Drain
         drain = self.PASSIVE_DRAIN
         # Spire penalty
@@ -71,9 +68,7 @@ class PsycheSystem:
         }
 
     def interact(self, action: str):
-        """
-        Simulates player action.
-        """
+        """Simulates player action."""
         if action == "pray":
             self.resources["faith"] += 1
             print(f"Action: Prayed. Faith: {self.resources['faith']}")

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Lint Runner - Unified linting and type checking
+"""Lint Runner - Unified linting and type checking
 Runs appropriate linters based on project type.
 
 Usage:
@@ -13,21 +12,23 @@ Supports:
 
 import contextlib
 import json
+import os
 import platform
 import shutil
 import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 # Fix Windows console encoding
 with contextlib.suppress(BaseException):
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[union-attr]
 
 
-def detect_project_type(project_path: Path) -> dict:
+def detect_project_type(project_path: Path) -> dict[str, Any]:
     """Detect project type and available linters."""
-    result = {"type": "unknown", "linters": []}
+    result: dict[str, Any] = {"type": "unknown", "linters": []}
 
     # Node.js project
     package_json = project_path / "package.json"
@@ -43,12 +44,14 @@ def detect_project_type(project_path: Path) -> dict:
                 result["linters"].append(
                     {"name": "npm lint", "cmd": ["npm", "run", "lint"]}
                 )
-            
+
             # Always add central ESLint (covers .ts, .tsx, .js, .md)
             # Uses flat config discovery — ESLint walks up from cwd to find eslint.config.mjs.
             # The --config flag is NOT used because ESLint 8.x routes it through the
             # legacy YAML-based config loader which cannot parse .mjs files.
-            eslint_bin = "C:/Users/Chris/Synarche_Workspace/axion-core/node_modules/eslint/bin/eslint.js"
+            eslint_bin = (
+                "C:/Users/Chris/Synarche_Workspace/node_modules/eslint/bin/eslint.js"
+            )
             result["linters"].append(
                 {"name": "eslint (central)", "cmd": ["node", eslint_bin, "."]}
             )
@@ -69,11 +72,18 @@ def detect_project_type(project_path: Path) -> dict:
         result["type"] = "python"
 
         # Check for ruff (high priority — always use central config)
-        ruff_config = "C:/Users/Chris/Synarche_Workspace/axion-core/standards/pyproject.toml"
-        ruff_bin = shutil.which("ruff") or "C:/DevEnvironments/master_env/Scripts/ruff.exe"
+        ruff_config = (
+            "C:/Users/Chris/Synarche_Workspace/axion-core/standards/pyproject.toml"
+        )
+        ruff_bin = (
+            shutil.which("ruff") or "C:/DevEnvironments/master_env/Scripts/ruff.exe"
+        )
         if Path(ruff_bin).exists():
             result["linters"].append(
-                {"name": "ruff (central)", "cmd": [ruff_bin, "check", ".", "--config", ruff_config]}
+                {
+                    "name": "ruff (central)",
+                    "cmd": [ruff_bin, "check", ".", "--config", ruff_config],
+                }
             )
 
         # Check for pylint (fallback)
@@ -103,7 +113,17 @@ def detect_project_type(project_path: Path) -> dict:
         # Check for mypy (Enforce central config)
         mypy_config = "C:/Users/Chris/Synarche_Workspace/axion-core/standards/mypy.ini"
         result["linters"].append(
-            {"name": "mypy (central)", "cmd": [sys.executable, "-m", "mypy", ".", "--config-file", mypy_config]}
+            {
+                "name": "mypy (central)",
+                "cmd": [
+                    sys.executable,
+                    "-m",
+                    "mypy",
+                    ".",
+                    "--config-file",
+                    mypy_config,
+                ],
+            }
         )
 
     # Check for Trunk (Global linter)
@@ -130,7 +150,7 @@ def run_linter(linter: dict, cwd: Path) -> dict:
                     cmd[0] = f"{cmd[0]}.cmd"
 
         # Enable flat config for ESLint 8.x
-        env = {**dict(subprocess.os.environ), "ESLINT_USE_FLAT_CONFIG": "true"}
+        env = {**dict(os.environ), "ESLINT_USE_FLAT_CONFIG": "true"}
 
         proc = subprocess.run(
             cmd,
@@ -158,11 +178,11 @@ def run_linter(linter: dict, cwd: Path) -> dict:
     return result
 
 
-def main():
+def main() -> None:
     project_path = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
 
     print(f"\n{'='*60}")
-    print(f"[LINT RUNNER] Unified Linting")
+    print("[LINT RUNNER] Unified Linting")
     print(f"{'='*60}")
     print(f"Project: {project_path}")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

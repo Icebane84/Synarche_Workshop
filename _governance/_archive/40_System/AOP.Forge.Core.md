@@ -34,8 +34,8 @@
 1. **State Loading:** The script initiates by parsing the current stats of the `--target` artifact via regex.
 2. **Kinetic Input:** The user provides the action catalyst (XP, Level Up, or Synergy).
 3. **Internal Processing:**
-    - **Progress:** Calculates new XP totals and checks for Level Up overflow.
-    - **Weaving:** Invokes `CatalystWeaver` for relative analysis.
+   - **Progress:** Calculates new XP totals and checks for Level Up overflow.
+   - **Weaving:** Invokes `CatalystWeaver` for relative analysis.
 4. **Markdown Persistence:** Updates the physical `.md` file with the new state vector.
 5. **HUD Feedback:** Prints the visual status bar (XP bar, Coherence, Velocity) for the Conductor.
 

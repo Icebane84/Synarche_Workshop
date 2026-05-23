@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-ARC-001` |
-| **2. Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md` |
-| **3. Version** | **v5.0 (Catalyst Infused)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Anti-Entropy** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                              |
+| :--------------------- | :------------------------------------------------- |
+| **1. Artifact ID**     | `AOP-ARC-001`                                      |
+| **2. Official Name**   | `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md` |
+| **3. Version**         | **v5.0 (Catalyst Infused)**                        |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                      |
+| **5. Domain**          | `ARCH`                                             |
+| **6. Evolution**       | **Purposeful Drive**                               |
+| **7. Celestial Class** | `[PLANET]`                                         |
+| **8. Tier**            | **Operational**                                    |
+| **9. State**           | `[ACTIVE]`                                         |
+| **10. Ethos**          | **Guardian of Anti-Entropy**                       |
+| **11. Catalyst**       | **System Refactor**                                |
+| **12. Relations**      | `Pending Integration`                              |
 
 ---
 
@@ -47,16 +47,16 @@
 
 - **What**: The formal process for retiring obsolete artifacts and linking them to their successors.
 - **How**:
-    1. **Mark Superseded**: Update old file metadata to `State: Archived`.
-    2. **Redirect**: Add `superseded_by: [New_Artifact_ID]` to the header.
-    3. **Move**: Physically move the file to `_ARCHIVE/` folder.
-    4. **Update Manifest**: Update the UAM to reflect the change.
+  1. **Mark Superseded**: Update old file metadata to `State: Archived`.
+  2. **Redirect**: Add `superseded_by: [New_Artifact_ID]` to the header.
+  3. **Move**: Physically move the file to `_ARCHIVE/` folder.
+  4. **Update Manifest**: Update the UAM to reflect the change.
 
 ### **III. The Supersession Workflow**
 
 1. **Archive**:
-    - Modify vX Header: `State: Archived`.
-    - Add `Superceded By: [vX+1 ID]`.
+   - Modify vX Header: `State: Archived`.
+   - Add `Superceded By: [vX+1 ID]`.
 2. **Promote**: Ensure vX+1 is live in the UAM.
 3. **Verify**: Run `CMD: VerifyLinks` to ensure no dead ends.
 
@@ -74,9 +74,9 @@
 
 ## **Actionable Prompt Packet**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

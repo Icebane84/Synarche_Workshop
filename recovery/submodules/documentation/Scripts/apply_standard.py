@@ -1,8 +1,7 @@
-"""
-[ARTIFACT-ID]: apply_standard.py
+"""[ARTIFACT-ID]: apply_standard.py
 [VERSION]: v2.0.1 (Synarche Edition)
 [DOMAIN]: ARCH
-[GOVERNANCE]: GVRN-CORE-CODEX-001, DOC-STD-001, Axion-Rules
+[GOVERNANCE]: GVRN-CORE-CODEX-001, DOC-STD-001, Axion-Rules.
 
 Ultimate Reforger: Applies Codex v10.0 and Axion governance standards to markdown artifacts.
 Enforces: 12-point Header, AGP Block, Roman Numeral H2s, 4-space Indent, and Asterisk Lists.

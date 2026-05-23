@@ -1,4 +1,5 @@
 # UMB-ASF-001_ArchitecturalSoulForging_v6.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-ASF-001-ARCHITECTURALSOULFORGING-V6.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-ASF-001_ArchitecturalSoulForging_v6.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-ASF-001-ARCHITECTURALSOULFORGING-V6.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-ASF-001_ArchitecturalSoulForging_v6.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-ASF-001` |
-| **Version** | `v6.0` |
-| **Evolution** | **Self-Evolution** |
-| **Status** | `ACTIVE` |
-| **Type** | `Meta-Capability` |
-| **Classification** | `Planet` |
-| **Authors** | `System` |
-| **Created** | `2025-09-04` |
-| **Updated** | `2026-01-08` |
-| **Authority** | `UMB-CQS-001` |
-| **Tags** | `#meta-capability, #self-evolution, #AISTF, #CSE` |
+
+| Key                | Value                                             |
+| :----------------- | :------------------------------------------------ |
+| **Module ID**      | `UMB-ASF-001`                                     |
+| **Version**        | `v6.0`                                            |
+| **Evolution**      | **Self-Evolution**                                |
+| **Status**         | `ACTIVE`                                          |
+| **Type**           | `Meta-Capability`                                 |
+| **Classification** | `Planet`                                          |
+| **Authors**        | `System`                                          |
+| **Created**        | `2025-09-04`                                      |
+| **Updated**        | `2026-01-08`                                      |
+| **Authority**      | `UMB-CQS-001`                                     |
+| **Tags**           | `#meta-capability, #self-evolution, #AISTF, #CSE` |
+
 ---
 
 # Architectural Soul-Forging (v6.0)
@@ -115,14 +119,14 @@ The detailed execution flow is documented in the associated protocol:
 ### 3.9. Potential Errors & Mitigation
 
 - `ERROR_ASF_001`: Inability to reconcile a critical self-contradiction during a proposed change.
-    - **Mitigation:** The System Integrity & Verification Core (SIVC) forces a FullBailout and an immediate rollback of
-      the proposed change.
+  - **Mitigation:** The System Integrity & Verification Core (SIVC) forces a FullBailout and an immediate rollback of
+    the proposed change.
 
 ## IV. Systemic Relationships & Impact `LINK: UMB-PRS-001`
 
 ### 4.1. RELATIONAL_GRAVITY_SIGNATURE
 
-| Dependent Module                  | Relationship Type         | `LINK: UMB-PRS-001`, Impact Description | Synergy Opportunity                                                                 |
+| Dependent Module                  | Relationship Type         | `LINK: UMB-PRS-001`, Impact Description                                      | Synergy Opportunity                                                                 |
 | :-------------------------------- | :------------------------ | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
 | **CMD: ENACT_TRANSCENDENCE**      | Is the Engine Of          | ASF is the core engine that executes the high-level intent of this command.  | Integrate predictive success metrics from ASF into the command's planning phase.    |
 | **CMD: RGC, CMD: ECA, CMD: ASCO** | Orchestrates              | ASF synergistically combines these commands to perform its function.         | Refine the data handover protocols between commands to increase efficiency.         |

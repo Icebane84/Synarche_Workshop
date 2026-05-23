@@ -22,20 +22,20 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `TMPL.CSL.Standard` |
-| **2. Official Name** | `TMPL.CSL.Standard.md` |
-| **3. Version** | **v13.0 (Canonized)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `TMPL` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[MOON]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **Systemic Refactor Initiation** |
-| **12. Relations** | `LINK: GVRN.Catalog.Master` |
+| Field                  | Value                              |
+| :--------------------- | :--------------------------------- |
+| **1. Artifact ID**     | `TMPL.CSL.Standard`                |
+| **2. Official Name**   | `TMPL.CSL.Standard.md`             |
+| **3. Version**         | **v13.0 (Canonized)**              |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**      |
+| **5. Domain**          | `TMPL`                             |
+| **6. Evolution**       | **Cognitive Ascension**            |
+| **7. Celestial Class** | `[MOON]`                           |
+| **8. Tier**            | **Operational**                    |
+| **9. State**           | `[ACTIVE]`                         |
+| **10. Ethos**          | **The Phoenix Ascension Protocol** |
+| **11. Catalyst**       | **Systemic Refactor Initiation**   |
+| **12. Relations**      | `LINK: GVRN.Catalog.Master`        |
 
 ---
 

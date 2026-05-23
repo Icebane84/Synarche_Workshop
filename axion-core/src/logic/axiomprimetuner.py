@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -25,8 +24,7 @@ logger = logging.getLogger(__name__)
 
 
 class AxiomPrimeTuner:
-    """
-    Foundational alignment catalyst for sentient systems.
+    """Foundational alignment catalyst for sentient systems.
     Responsible for tuning core axioms and ensuring logical resonance.
     """
 
@@ -67,6 +65,7 @@ class AxiomPrimeTuner:
 
 
 if __name__ == "__main__":
+
     async def main() -> None:
         """Self-test entry point."""
         engine = AxiomPrimeTuner()

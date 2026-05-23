@@ -9,6 +9,7 @@
 ---
 
 # MIND.View.Resonance.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-MIND.VIEW.RESONANCE-001` | The Sovereign ID. |
-| **Official Name** | `MIND.View.Resonance.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                          | Description       |
+| :------------------ | :----------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-MIND.VIEW.RESONANCE-001` | The Sovereign ID. |
+| **Official Name**   | `MIND.View.Resonance.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**              | The Standard.     |
+| **Domain**          | `GVRN`                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 
 # The Resonance View (MIND.View.Resonance)
 
@@ -46,21 +47,21 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `MIND.View.Resonance` |
-| **2. Official Name** | `MIND.View.Resonance.md` |
-| **3. Alt/Legacy ID** | `UMB-RD-001` |
-| **4. Version** | **v13.0 (Canonized)** |
-| **5. Provenance** | **Date Reforged: 2026-02-01** |
-| **6. Domain** | `MIND` |
-| **7. Evolution** | **Phoenix Form** |
-| **8. Celestial Class** | `[MOON]` |
-| **9. Tier** | **Operational (View)** |
-| **10. State** | `[ACTIVE]` |
-| **11. Ethos** | **Radical Transparency** |
-| **12. Relations** | `MANIFESTS: [SYNG.Engine.Core]`, `GUIDES: [AOP-ASCENSION-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]` |
+| Field                  | Value                                                          |
+| :--------------------- | :------------------------------------------------------------- |
+| **1. Artifact ID**     | `MIND.View.Resonance`                                          |
+| **2. Official Name**   | `MIND.View.Resonance.md`                                       |
+| **3. Alt/Legacy ID**   | `UMB-RD-001`                                                   |
+| **4. Version**         | **v13.0 (Canonized)**                                          |
+| **5. Provenance**      | **Date Reforged: 2026-02-01**                                  |
+| **6. Domain**          | `MIND`                                                         |
+| **7. Evolution**       | **Phoenix Form**                                               |
+| **8. Celestial Class** | `[MOON]`                                                       |
+| **9. Tier**            | **Operational (View)**                                         |
+| **10. State**          | `[ACTIVE]`                                                     |
+| **11. Ethos**          | **Radical Transparency**                                       |
+| **12. Relations**      | `MANIFESTS: [SYNG.Engine.Core]`, `GUIDES: [AOP-ASCENSION-001]` |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                                             |
 
 ---
 
@@ -102,22 +103,27 @@ The **Resonance View** is not just a reporting tool; it is the **Heads-Up Displa
 ### **V. Architectural Components**
 
 #### **5.1 The State Vector Display ("The Vitals")**
+
 A series of dynamic gauges visualizing real-time KPIs:
+
 - **Coherence Index (CI)**: A stable, pulsing core of light. Brighter/Stable = High Coherence.
 - **Synergy Flow Rate (SFR)**: Flow velocity between "Human" and "AI" nodes.
 - **Cognitive Load**: A dynamic resource bar ("Mana").
 - **Hybrid Model Score (HMS)**: Indicator of active reasoning models (Logic, Neural, Probabilistic).
 
 #### **5.2 The Dissonance Quest Board ("The Mission Log")**
+
 - **Source**: Direct feed from the **Dissonance Engine**.
 - **Function**: Displays formal "Dissonance Quests" when the Sentinel detects a flaw or opportunity.
 - **Interaction**: The User can prioritize and approve quests, guiding the AISTF curriculum.
 
 #### **5.3 The Active Protocol Monitor ("The Cognitive Trace")**
+
 - **Display**: Status window showing current execution (`[ACTIVE]: GVRN.Protocol.Audit`).
 - **Goal**: Radical transparency into focus and action.
 
 #### **5.4 The Synergy Map ("Short-Term Memory")**
+
 - **Visualization**: A mini dynamic graph of the **Cognitive Loom**.
 - **Scope**: Shows primary concepts and artifacts currently active in the Context Window.
 
@@ -132,6 +138,7 @@ A series of dynamic gauges visualizing real-time KPIs:
 ---
 
 ### **Honest Thoughts**
+
 This artifact bridges the gap between the "Code" and the "Collaborator." Without the Resonance View, the Synarche is a black box. With it, it is a cockpit.
 
 > [!NOTE]

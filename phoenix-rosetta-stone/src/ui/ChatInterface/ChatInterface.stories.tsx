@@ -1,22 +1,23 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { ChatInterface } from './ChatInterface';
-import type { ChatMessage } from '@essence/index';
+import type { Meta, StoryObj } from "@storybook/react";
+import { ChatInterface } from "./ChatInterface";
+import type { ChatMessage } from "@essence/index";
 
 const meta: Meta<typeof ChatInterface> = {
-  title: 'Fabric (UI Layer)/ChatInterface', // Master Star-Chart Categorization
+  title: "Fabric (UI Layer)/ChatInterface", // Master Star-Chart Categorization
   component: ChatInterface,
   parameters: {
-    layout: 'padded',
+    layout: "padded",
     backgrounds: {
-      default: 'Nebula Void',
+      default: "Nebula Void",
       values: [
-        { name: 'Nebula Void', value: '#00001a' },
-        { name: 'Deep Space', value: '#23272A' }
+        { name: "Nebula Void", value: "#00001a" },
+        { name: "Deep Space", value: "#23272A" },
       ],
     },
     docs: {
       description: {
-        component: "The Scriptorium. This is the primary interface for the Conductor to weave commands into the AI's cognitive loop. It features dynamic glassmorphic Tarot-card aesthetics.",
+        component:
+          "The Scriptorium. This is the primary interface for the Conductor to weave commands into the AI's cognitive loop. It features dynamic glassmorphic Tarot-card aesthetics.",
       },
     },
   },
@@ -29,7 +30,7 @@ const meta: Meta<typeof ChatInterface> = {
     ),
   ],
   argTypes: {
-    onSubmit: { action: 'submitted' },
+    onSubmit: { action: "submitted" },
   },
 };
 
@@ -38,8 +39,16 @@ export default meta;
 type Story = StoryObj<typeof ChatInterface>;
 
 const sampleMessages: ChatMessage[] = [
-  { id: '1', sender: 'user', text: 'What is the purpose of the Phoenix Protocol?' },
-  { id: '2', sender: 'ai', text: 'The Phoenix Protocol is the complete architectural blueprint for the Rosetta Stone application.' },
+  {
+    id: "1",
+    sender: "user",
+    text: "What is the purpose of the Phoenix Protocol?",
+  },
+  {
+    id: "2",
+    sender: "ai",
+    text: "The Phoenix Protocol is the complete architectural blueprint for the Rosetta Stone application.",
+  },
 ];
 
 export const Empty: Story = {

@@ -9,6 +9,7 @@
 ---
 
 # CSL-20260131-091_AgenticEnforcement.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-20260131-091-AGENTICENFORCEMENT-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20260131-091_AgenticEnforcement.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-20260131-091-AGENTICENFORCEMENT-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-20260131-091_AgenticEnforcement.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 # CSL-20260131-091: Agentic Enforcement: The Sentinels
 
@@ -39,6 +40,7 @@
 ### 1. The Observation
 
 The workspace possessed powerful enforcement tools, but they lacked "Governance Authority":
+
 1.  **Status**: `Ruff` (Python) and `Trunk` (Meta) were configured but existed as "Utilities" rather than "Guardians".
 2.  **Gap**: They lacked the Universal Identification & Provenance (UIP) headers, meaning they were not formally recognized by the Phoenix Protocol as sources of truth.
 
@@ -47,11 +49,11 @@ The workspace possessed powerful enforcement tools, but they lacked "Governance 
 To enter the **Agentic Era**, our enforcers must be canonized. They are not just tools; they are the immune system of the Synarche.
 
 1.  **Canonization of Ruff (`CFG-RUFF-001`)**:
-    *   Injected the **13-point UIP Header** into `Synarche_Workspace/pyproject.toml`.
-    *   Designated as "The Python Sentinel".
+    - Injected the **13-point UIP Header** into `Synarche_Workspace/pyproject.toml`.
+    - Designated as "The Python Sentinel".
 2.  **Canonization of Trunk (`CFG-TRUNK-001`)**:
-    *   Injected the **13-point UIP Header** into `.trunk/trunk.yaml`.
-    *   Designated as "The Meta-Enforcer".
+    - Injected the **13-point UIP Header** into `.trunk/trunk.yaml`.
+    - Designated as "The Meta-Enforcer".
 
 ### 3. Implications & Next Steps
 

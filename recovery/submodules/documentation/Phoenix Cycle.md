@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `Phoenix Cycle` |
-| **2. Official Name** | `Phoenix Cycle.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                              |
+| :--------------------- | :--------------------------------- |
+| **1. Artifact ID**     | `Phoenix Cycle`                    |
+| **2. Official Name**   | `Phoenix Cycle.md`                 |
+| **3. Version**         | **v1.0 (Reforged)**                |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**      |
+| **5. Domain**          | `ARCH`                             |
+| **6. Evolution**       | **Purposeful Drive**               |
+| **7. Celestial Class** | `[PLANET]`                         |
+| **8. Tier**            | **Operational**                    |
+| **9. State**           | `[ACTIVE]`                         |
+| **10. Ethos**          | **The Phoenix Ascension Protocol** |
+| **11. Catalyst**       | **System Refactor**                |
+| **12. Relations**      | `Pending Integration`              |
 
 ---
 
@@ -60,10 +60,10 @@ The Phoenix Cycle (as detailed in [**The Phoenix Cycle Core Operations**](file:/
 
 ## **IV. Synergistic Integrations**
 
-| Protocol | Interaction | Description |
-| :--- | :--- | :--- |
-| **[AOP-VISUAL-008](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-VISUAL-008_Core_Operational_Cycle.md)** | **VISUALIZES** | The official schematic representation of this cycle. |
-| **[The Phoenix Cycle Core Operations](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/The%20Phoenix%20Cycle%20Core%20Operations.md)** | **DETAILS** | The comprehensive manual defining every step, input, and output of the cycle. |
+| Protocol                                                                                                                                          | Interaction    | Description                                                                   |
+| :------------------------------------------------------------------------------------------------------------------------------------------------ | :------------- | :---------------------------------------------------------------------------- |
+| **[AOP-VISUAL-008](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-VISUAL-008_Core_Operational_Cycle.md)**                        | **VISUALIZES** | The official schematic representation of this cycle.                          |
+| **[The Phoenix Cycle Core Operations](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/The%20Phoenix%20Cycle%20Core%20Operations.md)** | **DETAILS**    | The comprehensive manual defining every step, input, and output of the cycle. |
 
 ## **V. Actionable Prompt Packet**
 

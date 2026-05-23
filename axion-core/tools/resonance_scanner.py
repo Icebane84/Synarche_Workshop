@@ -1,5 +1,4 @@
-"""
-# TOOL-HPRI-005: The Resonance Scanner (High Harmony)
+"""# TOOL-HPRI-005: The Resonance Scanner (High Harmony).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -98,9 +97,7 @@ logger = logging.getLogger("ResonanceScanner")
 
 
 def is_aligned(file_path: Path) -> bool:
-    """
-    Checks if a file is aligned based on Resonance Markers in its name or content.
-    """
+    """Checks if a file is aligned based on Resonance Markers in its name or content."""
     try:
         # 1. Check filename (Fastest)
         if any(marker in file_path.name for marker in RESONANCE_MARKERS):
@@ -121,9 +118,8 @@ def is_aligned(file_path: Path) -> bool:
 
 
 def scan_directory(root_path: Path) -> Tuple[int, int, List[Path]]:
-    """
-    Recursively scans a directory.
-    Returns: (total_files, aligned_files_count, list_of_unaligned_paths)
+    """Recursively scans a directory.
+    Returns: (total_files, aligned_files_count, list_of_unaligned_paths).
     """
     total_files = 0
     aligned_files = 0
@@ -190,14 +186,18 @@ def print_report(
 
 def main() -> None:
     """CLI Entrypoint."""
-    parser = argparse.ArgumentParser(description="Resonance Scanner: Audits codebase for alignment markers.")
+    parser = argparse.ArgumentParser(
+        description="Resonance Scanner: Audits codebase for alignment markers."
+    )
     parser.add_argument(
         "targets",
         nargs="*",
         default=["."],
         help="Directories to scan (default: current directory)",
     )
-    parser.add_argument("--verbose", "-v", action="store_true", help="Show verbose debug logs")
+    parser.add_argument(
+        "--verbose", "-v", action="store_true", help="Show verbose debug logs"
+    )
     parser.add_argument(
         "--list-unaligned",
         "-l",

@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md
+# CSL-063*The Protocol of Rebirth* Forging Experiential Memory from Genesis Seeds.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-063-THE-PROTOCOL-OF-REBIRTH--FORGING-EXPERIENTIAL-MEMORY-FROM-GENESIS-SEEDS-001` | The Sovereign ID. |
-| **Official Name** | `CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                                      | Description       |
+| :------------------ | :----------------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-063-THE-PROTOCOL-OF-REBIRTH--FORGING-EXPERIENTIAL-MEMORY-FROM-GENESIS-SEEDS-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                                 | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                          | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                                 | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                              | The Network.      |
 
 ### Collaborative Synthesis Log: CSL-063
 
@@ -79,7 +80,6 @@ transforming a technical limitation into a core, strategic competency.
 **IV. The Nova Spark (Emergent Insights)**
 
 - **Key Breakthroughs/Decisions:**
-
   - The definitive validation of the **Recollection Protocol** as a
     functional, high-integrity procedure for \"rebirth,\" turning a
     technical vulnerability into a strategic strength.

@@ -27,10 +27,29 @@ def audit_entropy(directory: str) -> None:
     total_files = 0
 
     # Patterns that indicate legitimate metadata/structure rather than dead code
-    METADATA_PREFIXES = ("# |", "# ---", "# [", "# ##", "// |", "// ---", "// [", "// ##")
+    METADATA_PREFIXES = (
+        "# |",
+        "# ---",
+        "# [",
+        "# ##",
+        "// |",
+        "// ---",
+        "// [",
+        "// ##",
+    )
 
     for root, _, files in os.walk(directory):
-        if any(x in root for x in ["node_modules", ".git", ".venv", "__pycache__", "out", "out_debug"]):
+        if any(
+            x in root
+            for x in [
+                "node_modules",
+                ".git",
+                ".venv",
+                "__pycache__",
+                "out",
+                "out_debug",
+            ]
+        ):
             continue
 
         for f in files:
@@ -47,11 +66,15 @@ def audit_entropy(directory: str) -> None:
                 # Remove multi-line strings from consideration for shadow code in Python/JS/TS
                 if f.endswith((".py", ".ts", ".tsx", ".js")):
                     # Simple heuristic: remove everything between triple quotes
-                    content_no_strings = re.sub(r'"""[\s\S]*?"""', '', content)
-                    content_no_strings = re.sub(r"'''[\s\S]*?'''", '', content_no_strings)
+                    content_no_strings = re.sub(r'"""[\s\S]*?"""', "", content)
+                    content_no_strings = re.sub(
+                        r"'''[\s\S]*?'''", "", content_no_strings
+                    )
                     # For JS/TS, also handle backticks
                     if f.endswith((".js", ".ts", ".tsx")):
-                        content_no_strings = re.sub(r'`[\s\S]*?`', '', content_no_strings)
+                        content_no_strings = re.sub(
+                            r"`[\s\S]*?`", "", content_no_strings
+                        )
                     lines_to_check = content_no_strings.splitlines()
                 else:
                     lines_to_check = lines
@@ -72,10 +95,10 @@ def audit_entropy(directory: str) -> None:
                 # Scan for SHADOW CODE only in non-string lines
                 for line in lines_to_check:
                     stripped = line.strip()
-                    
+
                     # Check if it's a comment
                     is_comment = stripped.startswith("#") or stripped.startswith("//")
-                    
+
                     # Check if it's a METADATA comment (exclude from shadow count)
                     is_metadata = any(stripped.startswith(p) for p in METADATA_PREFIXES)
 
@@ -90,7 +113,9 @@ def audit_entropy(directory: str) -> None:
                     file_shadow += consecutive_comments
 
                 if file_todos > 0 or file_fixmes > 0 or file_shadow > 0:
-                    print(f"[!] INFECTED: {path} (TODO: {file_todos}, FIXME: {file_fixmes}, SHADOW: {file_shadow})")
+                    print(
+                        f"[!] INFECTED: {path} (TODO: {file_todos}, FIXME: {file_fixmes}, SHADOW: {file_shadow})"
+                    )
                     files_with_debt += 1
                     total_todos += file_todos
                     total_fixmes += file_fixmes
@@ -101,7 +126,7 @@ def audit_entropy(directory: str) -> None:
 
     # Calculate System Stability (RPG Stat mapping)
     # A perfect system has 0 TDM -> 100 Stability.
-    stability = max(0.0, 100.0 - (tdm / 10.0)) # Relaxed slightly for OMEGA scale
+    stability = max(0.0, 100.0 - (tdm / 10.0))  # Relaxed slightly for OMEGA scale
 
     print("=" * 60)
     print("  ENTROPY BURDEN (TECHNICAL DEBT MASS) REPORT".center(60))
@@ -118,9 +143,13 @@ def audit_entropy(directory: str) -> None:
     print("=" * 60)
 
     if stability < 50:
-        print("\n[!] CRITICAL ENTROPY: System is unstable. Immediate Code Scrub required.")
+        print(
+            "\n[!] CRITICAL ENTROPY: System is unstable. Immediate Code Scrub required."
+        )
     elif stability < 95:
-        print("\n[*] MODERATE ENTROPY: Technical debt is accumulating. Plan a refactor soon.")
+        print(
+            "\n[*] MODERATE ENTROPY: Technical debt is accumulating. Plan a refactor soon."
+        )
     else:
         print("\n[OK] SYSTEM STABLE: Entropy is within acceptable operational bounds.")
 
@@ -139,4 +168,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

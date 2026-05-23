@@ -9,6 +9,7 @@
 ---
 
 # UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,21 +22,21 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UWB-NDR-001-NONDESTRUCTIVEREFINEMENTWORKFLOW-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                         | Description       |
+| :------------------ | :------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-UWB-NDR-001-NONDESTRUCTIVEREFINEMENTWORKFLOW-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                             | The Standard.     |
+| **Domain**          | `GVRN`                                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
 
 # ###### [UWB-NDR-001: Non-Destructive Refinement Workflow v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/4_Blueprints/UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md)
 
 ###### [AGP-BLOCK-001: Axiomatic Governance Pillar]
->
+
 > **Artifact ID**: UWB-NDR-001
 > **Version**: 11.0
 > **Status**: Sovereign
@@ -93,16 +94,16 @@ The "Dissonance of the Broken Link." As the library grows, traditional AI edits 
 
 ## V. Synergistic Effects & Integrations
 
-| Tool | Role | Synergy |
-| :--- | :--- | :--- |
-| [AOP-NDR-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-NDR-001_NonDestructiveRefinement_v11.0.md) | **Technical Engine** | Provides the specific steps for each refinement action. |
-| [UMB-ACT-002](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) | **Physical Actor** | Executes the insertions dictated by this workflow. |
-| [UIP-GVRN](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md) | **Governing Law** | Sets the "Acceptance Criteria" for what constitutes a "Clean" refinement. |
+| Tool                                                                                                                                         | Role                 | Synergy                                                                   |
+| :------------------------------------------------------------------------------------------------------------------------------------------- | :------------------- | :------------------------------------------------------------------------ |
+| [AOP-NDR-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-NDR-001_NonDestructiveRefinement_v11.0.md) | **Technical Engine** | Provides the specific steps for each refinement action.                   |
+| [UMB-ACT-002](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md)     | **Physical Actor**   | Executes the insertions dictated by this workflow.                        |
+| [UIP-GVRN](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md)               | **Governing Law**    | Sets the "Acceptance Criteria" for what constitutes a "Clean" refinement. |
 
 ---
 
 ###### [AGP-BLOCK-002: Signature & Seal]
->
+
 > **Signed**: The Sentinel
 > **Verified**: v11.0 Sovereign Logic Gate
 > **Synergy Code**: UWB-NDR-FLOW-001

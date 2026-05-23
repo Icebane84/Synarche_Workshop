@@ -80,12 +80,11 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 """
 
 
-def clean_and_process():
+def clean_and_process() -> None:
     if not os.path.exists(INPUT_FILE):
-        print(f"Error: Input file {INPUT_FILE} not found.")
         return
 
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+    with open(INPUT_FILE, encoding="utf-8") as f:
         lines = f.readlines()
 
     clean_lines = []
@@ -122,14 +121,11 @@ def clean_and_process():
         f.write("\n".join(clean_lines))
         f.write(GOVERNANCE_FOOTER)
 
-    print(f"Created {OUTPUT_FILE}")
-
     # Archive original
     import shutil
 
     os.makedirs(os.path.dirname(ARCHIVE_FILE), exist_ok=True)
     shutil.move(INPUT_FILE, ARCHIVE_FILE)
-    print(f"Archived original to {ARCHIVE_FILE}")
 
 
 if __name__ == "__main__":

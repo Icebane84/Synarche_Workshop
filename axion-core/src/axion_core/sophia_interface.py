@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -29,8 +28,7 @@ import random  # Placeholder for randomness in "Intuition" simulation
 
 
 class SophiaInterface:
-    """
-    The Soul of the Synarche.
+    """The Soul of the Synarche.
     Provides Intuition, Creation, and Evaluation services.
     """
 
@@ -39,8 +37,7 @@ class SophiaInterface:
         self.archetype: str = "The High Priestess"
 
     def consult_oracle(self, topic: str) -> str:
-        """
-        CMD: CONSULT_ORACLE
+        """CMD: CONSULT_ORACLE
         Simulates an intuitive scan for hidden connections.
         """
         # In a real system, this would query the Vector DB for "distant neighbors"
@@ -52,8 +49,7 @@ class SophiaInterface:
         return f"[ORACLE]: {random.choice(responses)}"
 
     def weigh_heart(self, action: str) -> dict:
-        """
-        CMD: WEIGH_HEART
+        """CMD: WEIGH_HEART
         Simulates an ethical judgment based on the Golden Thread.
         """
         # Simple keyword heuristic for demo
@@ -72,8 +68,7 @@ class SophiaInterface:
         }
 
     def seek_golden_thread(self, context: str) -> str:
-        """
-        CMD: SEEK_GOLDEN_THREAD
+        """CMD: SEEK_GOLDEN_THREAD
         Extracts emotional intent.
         """
         return f"[SOPHIA]: Behind the words '{context}', I sense a desire for Clarity and Coherence."

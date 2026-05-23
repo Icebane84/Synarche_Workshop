@@ -4,21 +4,13 @@
   "turn_id": "QB-INIT-001-EXEC",
   "cognitive_state": {
     "system_mode": "Quantum Block Operation & Superposition Collapse",
-    "active_personalities": [
-      "@axion",
-      "@sophia",
-      "@sentinel"
-    ],
+    "active_personalities": ["@axion", "@sophia", "@sentinel"],
     "current_focus": "Dynamic state-translation and secure payload transmutation."
   },
   "telemetry": {
     "event_type": "SuperpositionCollapse",
     "block_id": "uuid-web-001",
-    "context_vector": [
-      "WEB",
-      "PROD",
-      "VERIFIED"
-    ],
+    "context_vector": ["WEB", "PROD", "VERIFIED"],
     "input_payload_summary": {
       "uiElement": "Dashboard",
       "textData": "Greetings, Commander!"

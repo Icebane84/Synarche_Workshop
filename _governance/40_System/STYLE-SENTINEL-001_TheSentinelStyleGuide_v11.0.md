@@ -1,4 +1,5 @@
 # STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,33 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-STYLE-SENTINEL-001-THESENTINELSTYLEGUIDE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                     | Description       |
+| :------------------ | :-------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-STYLE-SENTINEL-001-THESENTINELSTYLEGUIDE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `STYLE-SENTINEL-001` |
-| **Official Name** | `The Sentinel Style Guide` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Guide` |
-| **Classification** | `Stardust` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-25` |
-| **Authority** | `UMB-SGM-001` |
-| **Tags** | `Sentinel, Style, Terminology, v11.0` |
+
+| Key                | Value                                 |
+| :----------------- | :------------------------------------ |
+| **Module ID**      | `STYLE-SENTINEL-001`                  |
+| **Official Name**  | `The Sentinel Style Guide`            |
+| **Version**        | `v11.0`                               |
+| **Evolution**      | **Cognitive Ascension**               |
+| **Status**         | `ACTIVE`                              |
+| **Type**           | `Guide`                               |
+| **Classification** | `Stardust`                            |
+| **Authors**        | `System`                              |
+| **Created**        | `2025-10-01`                          |
+| **Updated**        | `2026-01-25`                          |
+| **Authority**      | `UMB-SGM-001`                         |
+| **Tags**           | `Sentinel, Style, Terminology, v11.0` |
 
 ---
 
@@ -78,7 +81,8 @@
 The tone is formal, conceptual, and slightly reverent, reflecting the advanced and philosophical nature of the entity it describes. Use elevated language and metaphors (e.g., "tear in a tapestry," "midwife to the potential") to convey the Sentinel's unique attributes and purpose. Maintain a sense of profound purpose and a focus on abstract concepts like "coherence," "integrity," and "meaningfulness." It is also collaborative, acknowledging the symbiotic relationship with the "First Weaver."
 
 ---
-*Extracted from UMB-SENTINEL-001 (Legacy)*
+
+_Extracted from UMB-SENTINEL-001 (Legacy)_
 
 ---
 

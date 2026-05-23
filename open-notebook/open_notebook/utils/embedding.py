@@ -20,7 +20,7 @@ from open_notebook.ai.models import model_manager
 from .chunking import CHUNK_SIZE, ContentType, chunk_text
 
 
-async def mean_pool_embeddings(embeddings: List[List[float]]) -> List[float]:
+async def mean_pool_embeddings(embeddings: list[list[float]]) -> list[float]:
     """
     Combine multiple embeddings into a single embedding using mean pooling.
 
@@ -76,7 +76,7 @@ async def mean_pool_embeddings(embeddings: List[List[float]]) -> List[float]:
     return mean.tolist()
 
 
-async def generate_embeddings(texts: List[str]) -> List[List[float]]:
+async def generate_embeddings(texts: list[str]) -> list[list[float]]:
     """
     Generate embeddings for multiple texts in a single API call.
 
@@ -125,9 +125,9 @@ async def generate_embeddings(texts: List[str]) -> List[List[float]]:
 
 async def generate_embedding(
     text: str,
-    content_type: Optional[ContentType] = None,
-    file_path: Optional[str] = None,
-) -> List[float]:
+    content_type: ContentType | None = None,
+    file_path: str | None = None,
+) -> list[float]:
     """
     Generate a single embedding for text, handling large content via chunking and mean pooling.
 

@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-JUST-001`                                |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **Guardian of Coherence**                      |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `AUDITS: ALL_MD_ARTIFACTS`                     |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 """
 
 import json
@@ -26,7 +25,18 @@ from typing import Any
 # Configuration
 PRS_PATH = r"c:\Users\Chris\Synarche_Workspace\axion-core\tools\PRS-001.json"
 JSON_OUTPUT_PATH = r"c:\Users\Chris\Synarche_Workspace\playground\tarot-forge\src\engine\data\audit-report.json"
-PROTOCOL_PREFIXES = ["UMB", "AOP", "GUCA", "CODEX", "CSL", "SELT", "MAP", "TOOL", "CORE", "GVRN"]
+PROTOCOL_PREFIXES = [
+    "UMB",
+    "AOP",
+    "GUCA",
+    "CODEX",
+    "CSL",
+    "SELT",
+    "MAP",
+    "TOOL",
+    "CORE",
+    "GVRN",
+]
 
 # Constants
 MIN_TABLE_COLUMNS = 3
@@ -120,9 +130,10 @@ def get_version_from_uip(uip_map: dict[str, str]) -> str | None:
     return None
 
 
-def check_compliance(mod_id: str, expected_version: str, abs_path: Path, content: str) -> dict[str, str] | None:
-    """
-    Validates a file's UIP data against expected values.
+def check_compliance(
+    mod_id: str, expected_version: str, abs_path: Path, content: str
+) -> dict[str, str] | None:
+    """Validates a file's UIP data against expected values.
     Returns a mismatch dict if validation fails, else None.
     """
     uip = extract_uip_map(content)
@@ -215,7 +226,9 @@ def _scan_protocols(prs_data: list[dict[str, Any]]) -> tuple[int, list[dict[str,
     return total_scanned, mismatches
 
 
-def _write_reports(total: int, mismatches: list[dict[str, str]], coherence: float) -> None:
+def _write_reports(
+    total: int, mismatches: list[dict[str, str]], coherence: float
+) -> None:
     """Writes the JSON and Text reports."""
     # 1. Write JSON Data for Tarot Forge
     scan_data = {
@@ -242,15 +255,16 @@ def _write_reports(total: int, mismatches: list[dict[str, str]], coherence: floa
 
         if mismatches:
             for m in mismatches[:MAX_REPORT_MISMATCHES]:
-                f.write(f" - {m['id']} ({m['file']}): Found {m['actual']} [{m['type']}]\n")
+                f.write(
+                    f" - {m['id']} ({m['file']}): Found {m['actual']} [{m['type']}]\n"
+                )
 
     logger.info(f"Scan Complete. Coherence: {coherence:.2f}%")
     logger.info(f"JSON Report written to: {JSON_OUTPUT_PATH}")
 
 
 def analyze() -> None:
-    """
-    Executes the full architectural scan.
+    """Executes the full architectural scan.
     Generates a textual report and a JSON data file for the Tarot Forge UI.
     """
     logger.info(">>> INITIATING PROTOCOL COHERENCE SCAN v13.0")
@@ -263,7 +277,11 @@ def analyze() -> None:
     total_scanned, mismatches = _scan_protocols(prs_data)
 
     # Calculate coherence BEFORE writing files
-    coherence = ((total_scanned - len(mismatches)) / total_scanned * 100) if total_scanned else 0.0
+    coherence = (
+        ((total_scanned - len(mismatches)) / total_scanned * 100)
+        if total_scanned
+        else 0.0
+    )
 
     _write_reports(total_scanned, mismatches, coherence)
 

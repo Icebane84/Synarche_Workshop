@@ -1,5 +1,4 @@
-"""
-UWB-BRIDGE-001: The Galaxy Bridge
+"""UWB-BRIDGE-001: The Galaxy Bridge
 Domain: ACT | State: ACTIVE | Version: v1.1
 Objective: Sync artifacts from the Crystalline Galaxy (Vault) to the Synarche Forge (Workspace).
 """
@@ -15,23 +14,25 @@ logger = logging.getLogger("GalaxyBridge")
 
 # Configuration
 # Dynamic configuration via Environment Variables with defaults
-VAULT_PATH = os.getenv("PHOENIX_VAULT_PATH", r"C:\Users\Chris\_Desktop_Vault\Phoenix\Documentation\Library")
-WORKSPACE_PATH = os.getenv("PHOENIX_WORKSPACE_PATH", r"C:\Users\Chris\Synarche_Workspace\_governance")
+VAULT_PATH = os.getenv(
+    "PHOENIX_VAULT_PATH", r"C:\Users\Chris\_Desktop_Vault\Phoenix\Documentation\Library"
+)
+WORKSPACE_PATH = os.getenv(
+    "PHOENIX_WORKSPACE_PATH", r"C:\Users\Chris\Synarche_Workspace\_governance"
+)
 
 
 def should_update(source_item: Path, dest_item: Path) -> bool:
-    """
-    Determines if the source item should overwrite the destination item.
-    """
+    """Determines if the source item should overwrite the destination item."""
     if not dest_item.exists():
         return True
     return source_item.stat().st_mtime > dest_item.stat().st_mtime
 
 
-def sync_item(source_item: Path, source_root: Path, dest_root: Path, dry_run: bool) -> bool:
-    """
-    Syncs a single item if checks pass. Returns True if synced.
-    """
+def sync_item(
+    source_item: Path, source_root: Path, dest_root: Path, dry_run: bool
+) -> bool:
+    """Syncs a single item if checks pass. Returns True if synced."""
     rel_path = source_item.relative_to(source_root)
     target = dest_root / rel_path
 
@@ -45,9 +46,7 @@ def sync_item(source_item: Path, source_root: Path, dest_root: Path, dry_run: bo
 
 
 def bridge_sync(source: str, dest: str, dry_run: bool = False) -> None:
-    """
-    Syncs files from Source (Galaxy) to Dest (Forge).
-    """
+    """Syncs files from Source (Galaxy) to Dest (Forge)."""
     source_path = Path(source)
     dest_path = Path(dest)
 
@@ -81,7 +80,11 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Galaxy Bridge Sync")
     parser.add_argument("--dry-run", action="store_true", help="Simulate the sync")
-    parser.add_argument("--deploy", action="store_true", help="Deploy FROM Forge TO Galaxy (Reverse Sync)")
+    parser.add_argument(
+        "--deploy",
+        action="store_true",
+        help="Deploy FROM Forge TO Galaxy (Reverse Sync)",
+    )
     args = parser.parse_args()
 
     if args.deploy:

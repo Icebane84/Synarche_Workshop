@@ -128,12 +128,14 @@
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",
         "lint": "cross-env ESLINT_USE_FLAT_CONFIG=true eslint src tools",
-        "test": "node ./out/test/runTest.js"
+        "test": "node --enable-source-maps ./out/test/runTest.js"
     },
     "devDependencies": {
         "@eslint/markdown": "^8.0.1",
+        "@types/express": "^5.0.6",
         "@types/mocha": "^10.0.6",
         "@types/node": "20.x",
+        "@types/react": "^19.2.15",
         "@types/vscode": "^1.90.0",
         "@typescript-eslint/eslint-plugin": "^7.11.0",
         "@typescript-eslint/parser": "^7.11.0",
@@ -141,13 +143,17 @@
         "@vscode/webview-ui-toolkit": "^1.4.0",
         "cross-env": "^10.1.0",
         "eslint": "^8.57.0",
-        "markdownlint": "^0.40.0",
-        "typescript": "^5.4.5"
-    },
-    "dependencies": {
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-react-hooks": "^4.6.2",
         "eslint-plugin-react-refresh": "^0.4.7",
+        "markdownlint": "^0.40.0",
+        "react": "^19.2.6",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "@sentry/node": "^10.53.1",
+        "express": "^5.2.1",
+        "ioredis": "^5.10.1",
         "markdown-it": "^14.1.0"
     }
 }

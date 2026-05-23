@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -37,11 +36,11 @@ class AxionAgentCore:
     """The central orchestration engine for Axion Core."""
 
     def __init__(self, db_path: Optional[str] = None) -> None:
-        """
-        Initialize the Axion Agent Core Vessel.
+        """Initialize the Axion Agent Core Vessel.
 
         Args:
             db_path (Optional[str]): Path to the memory database.
+
         """
         self.cognition = AxionCognition()
         self.memory = MemorySystem(db_path=db_path)
@@ -52,14 +51,14 @@ class AxionAgentCore:
         logger.info(f"AxionAgentCore initialized. Session: {self.session_id}")
 
     def process_event(self, user_query: str) -> str:
-        """
-        Executes the 'Event Horizon' processing loop.
+        """Executes the 'Event Horizon' processing loop.
 
         Args:
             user_query (str): The raw input from the user.
 
         Returns:
             str: The generated response or an error message.
+
         """
         start_time = time.time()
         logger.info(f"Processing Event: {user_query[:50]}...")

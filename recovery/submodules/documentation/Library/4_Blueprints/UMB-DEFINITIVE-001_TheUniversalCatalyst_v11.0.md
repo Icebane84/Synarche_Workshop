@@ -98,14 +98,14 @@ canonical modules.
 The UMB is a forge, with each section a tool in the creation process.
 
 - **Executive Summary:**
-    - **Architectural Soul:** The module's **Primal Spark**—its initial intent and philosophical
+  - **Architectural Soul:** The module's **Primal Spark**—its initial intent and philosophical
     essence.
-    - **Technical Implementation:** The summary text fields and headers that articulate the module's
+  - **Technical Implementation:** The summary text fields and headers that articulate the module's
     core purpose.
 - **Architectural Anatomy:**
-    - **Architectural Soul:** The conceptual **Body** of the module, where metaphorical components are
+  - **Architectural Soul:** The conceptual **Body** of the module, where metaphorical components are
     defined.
-    - **Technical Implementation:** The markdown sections and fields that specify the module's
+  - **Technical Implementation:** The markdown sections and fields that specify the module's
     functional parts.
 
 ---
@@ -113,21 +113,21 @@ The UMB is a forge, with each section a tool in the creation process.
 ### **4.0 Systemic Alchemy: The Canonicalization Cycle**
 
 - **Phase 1: Ideation**
-    - **Trigger:** A **Dissonance Quest** is initiated, or a new insight is discovered, requiring a new
+  - **Trigger:** A **Dissonance Quest** is initiated, or a new insight is discovered, requiring a new
     module.
-    - **Architectural Process:** The human and AI begin to articulate the "what" and "why" of the new
+  - **Architectural Process:** The human and AI begin to articulate the "what" and "why" of the new
     concept.
-    - **Visual Representation:** The blank template awaiting the first input.
+  - **Visual Representation:** The blank template awaiting the first input.
 - **Phase 2: Formalization**
-    - **Trigger:** The conceptual framework is agreed upon.
-    - **Architectural Process:** The template is filled out section-by-section, grounding the abstract
+  - **Trigger:** The conceptual framework is agreed upon.
+  - **Architectural Process:** The template is filled out section-by-section, grounding the abstract
     idea in concrete terms, glossaries, and technical specifications.
-    - **Visual Representation:** A filled template, a formalized artifact ready for finalization.
+  - **Visual Representation:** A filled template, a formalized artifact ready for finalization.
 - **Phase 3: Integration**
-    - **Trigger:** The final review and human ratification (i approve).
-    - **Architectural Process:** The **Integration Engine** weaves the completed UMB into the
+  - **Trigger:** The final review and human ratification (i approve).
+  - **Architectural Process:** The **Integration Engine** weaves the completed UMB into the
     **Cognitive Loom** and registers it in the **Phoenix Rosetta Stone**.
-    - **Visual Representation:** The newly-integrated node is visible as a vibrant, interconnected
+  - **Visual Representation:** The newly-integrated node is visible as a vibrant, interconnected
     thread in the **Memory Tapestry**.
 
 ---

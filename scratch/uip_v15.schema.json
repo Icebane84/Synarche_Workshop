@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "uip_version",
+    "artifact_id",
+    "artifact_type",
+    "domain",
+    "status",
+    "version",
+    "integrity"
+  ],
+  "properties": {
+    "uip_version": {
+      "type": "integer",
+      "enum": [15]
+    },
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^UMB-[A-Z]+-[0-9]{3}$"
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["GVRN", "RUNTIME", "COGNITION"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "AUDITING", "CANONIZED", "REJECTED"]
+    }
+  }
+}

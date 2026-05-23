@@ -5,4 +5,4 @@
  *
  * [OMNI-ARTIFACT-ANCHOR] ID: HEPHAESTUS.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28
  */
-export * from './lib';
+export * from "./lib";

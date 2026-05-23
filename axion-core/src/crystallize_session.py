@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -43,8 +42,6 @@
 """
 
 import asyncio
-import os
-import sys
 from pathlib import Path
 
 from logic.memory.memory_system import MemorySystem
@@ -95,7 +92,7 @@ if __name__ == "__main__":
     asyncio.run(crystallize())
 
 # ---
-# 
+#
 # ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**

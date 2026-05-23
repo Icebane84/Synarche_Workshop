@@ -1,12 +1,9 @@
-"""
-UWB-TOOL-INGEST-001: Phoenix Protocol Ingestor
+"""UWB-TOOL-INGEST-001: Phoenix Protocol Ingestor
 Domain: ACT | State: ACTIVE | Version: v1.0
 Objective: Batch ingest the Phoenix Protocol Library (_governance) into a dedicated Notebook.
 """
 
-import asyncio
 import logging
-import os
 import sys
 from pathlib import Path
 
@@ -27,9 +24,7 @@ logger = logging.getLogger("PhoenixIngest")
 
 GOVERNANCE_PATH = Path(r"C:\Users\Chris\Synarche_Workspace\_governance")
 NOTEBOOK_NAME = "Phoenix Protocol Library"
-NOTEBOOK_DESC = (
-    "The complete repository of all Phoenix Protocol Governance artifacts, ingested for AI Contextualization."
-)
+NOTEBOOK_DESC = "The complete repository of all Phoenix Protocol Governance artifacts, ingested for AI Contextualization."
 
 
 def ingest_artifacts():
@@ -38,13 +33,17 @@ def ingest_artifacts():
     # 1. Check/Create Notebook
     logger.info(f"🔍 Checking for Notebook: '{NOTEBOOK_NAME}'")
     existing_notebooks = notebook_service.get_all_notebooks()
-    target_notebook = next((nb for nb in existing_notebooks if nb.name == NOTEBOOK_NAME), None)
+    target_notebook = next(
+        (nb for nb in existing_notebooks if nb.name == NOTEBOOK_NAME), None
+    )
 
     if target_notebook:
         logger.info(f"✅ Found existing notebook: {target_notebook.id}")
     else:
         logger.info(f"✨ Creating new notebook: '{NOTEBOOK_NAME}'")
-        target_notebook = notebook_service.create_notebook(name=NOTEBOOK_NAME, description=NOTEBOOK_DESC)
+        target_notebook = notebook_service.create_notebook(
+            name=NOTEBOOK_NAME, description=NOTEBOOK_DESC
+        )
         logger.info(f"✅ Created notebook: {target_notebook.id}")
 
     # 2. Scan _governance artifacts
@@ -90,7 +89,7 @@ def ingest_artifacts():
             failure_count += 1
 
     logger.info("-" * 40)
-    logger.info(f"🏁 Ingestion Complete.")
+    logger.info("🏁 Ingestion Complete."e.")
     logger.info(f"   Notebook: {NOTEBOOK_NAME}")
     logger.info(f"   Success:  {success_count}")
     logger.info(f"   Failed:   {failure_count}")

@@ -1,72 +1,86 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { FileText } from 'lucide-react'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import { useInsight } from '@/lib/hooks/use-insights'
-import { useModalManager } from '@/lib/hooks/use-modal-manager'
-import { useTranslation } from '@/lib/hooks/use-translation'
+import { useState, useEffect } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { FileText } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { useInsight } from "@/lib/hooks/use-insights";
+import { useModalManager } from "@/lib/hooks/use-modal-manager";
+import { useTranslation } from "@/lib/hooks/use-translation";
 
 interface SourceInsightDialogProps {
-  open: boolean
-  onOpenChange: (open: boolean) => void
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
   insight?: {
-    id: string
-    insight_type?: string
-    content?: string
-    created?: string
-    source_id?: string
-  }
-  onDelete?: (insightId: string) => Promise<void>
+    id: string;
+    insight_type?: string;
+    content?: string;
+    created?: string;
+    source_id?: string;
+  };
+  onDelete?: (insightId: string) => Promise<void>;
 }
 
-export function SourceInsightDialog({ open, onOpenChange, insight, onDelete }: SourceInsightDialogProps) {
-  const { t } = useTranslation()
-  const { openModal } = useModalManager()
-  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
-  const [isDeleting, setIsDeleting] = useState(false)
+export function SourceInsightDialog({
+  open,
+  onOpenChange,
+  insight,
+  onDelete,
+}: SourceInsightDialogProps) {
+  const { t } = useTranslation();
+  const { openModal } = useModalManager();
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   // Ensure insight ID has 'source_insight:' prefix for API calls
   const insightIdWithPrefix = insight?.id
-    ? (insight.id.includes(':') ? insight.id : `source_insight:${insight.id}`)
-    : ''
+    ? insight.id.includes(":")
+      ? insight.id
+      : `source_insight:${insight.id}`
+    : "";
 
-  const { data: fetchedInsight, isLoading } = useInsight(insightIdWithPrefix, { enabled: open && !!insight?.id })
+  const { data: fetchedInsight, isLoading } = useInsight(insightIdWithPrefix, {
+    enabled: open && !!insight?.id,
+  });
 
   // Use fetched data if available, otherwise fall back to passed-in insight
-  const displayInsight = fetchedInsight ?? insight
+  const displayInsight = fetchedInsight ?? insight;
 
   // Get source_id from fetched data (preferred) or passed-in insight
-  const sourceId = fetchedInsight?.source_id ?? insight?.source_id
+  const sourceId = fetchedInsight?.source_id ?? insight?.source_id;
 
   const handleViewSource = () => {
     if (sourceId) {
-      openModal('source', sourceId)
+      openModal("source", sourceId);
     }
-  }
+  };
 
   const handleDelete = async () => {
-    if (!insight?.id || !onDelete) return
-    setIsDeleting(true)
+    if (!insight?.id || !onDelete) return;
+    setIsDeleting(true);
     try {
-      await onDelete(insight.id)
-      onOpenChange(false)
+      await onDelete(insight.id);
+      onOpenChange(false);
     } finally {
-      setIsDeleting(false)
-      setShowDeleteConfirm(false)
+      setIsDeleting(false);
+      setShowDeleteConfirm(false);
     }
-  }
+  };
 
   // Reset delete confirmation when dialog closes
   useEffect(() => {
     if (!open) {
-      setShowDeleteConfirm(false)
+      setShowDeleteConfirm(false);
     }
-  }, [open])
+  }, [open]);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -99,7 +113,10 @@ export function SourceInsightDialog({ open, onOpenChange, insight, onDelete }: S
           <div className="flex flex-col items-center justify-center py-8 gap-4">
             <p className="text-center text-muted-foreground">
               {t.sources.deleteInsightConfirm.split(/[?？]/)[0]}?<br />
-              <span className="text-sm">{t.sources.deleteInsightConfirm.split(/[?？]/)[1]?.trim() || t.common.deleteForever}</span>
+              <span className="text-sm">
+                {t.sources.deleteInsightConfirm.split(/[?？]/)[1]?.trim() ||
+                  t.common.deleteForever}
+              </span>
             </p>
             <div className="flex gap-2">
               <Button
@@ -122,7 +139,9 @@ export function SourceInsightDialog({ open, onOpenChange, insight, onDelete }: S
           <div className="flex-1 overflow-y-auto min-h-0">
             {isLoading ? (
               <div className="flex items-center justify-center py-10">
-                <span className="text-sm text-muted-foreground">{t.common.loading}</span>
+                <span className="text-sm text-muted-foreground">
+                  {t.common.loading}
+                </span>
               </div>
             ) : displayInsight ? (
               <div className="prose prose-sm prose-neutral dark:prose-invert max-w-none">
@@ -131,25 +150,41 @@ export function SourceInsightDialog({ open, onOpenChange, insight, onDelete }: S
                   components={{
                     table: ({ children }) => (
                       <div className="my-4 overflow-x-auto">
-                        <table className="min-w-full border-collapse border border-border">{children}</table>
+                        <table className="min-w-full border-collapse border border-border">
+                          {children}
+                        </table>
                       </div>
                     ),
-                    thead: ({ children }) => <thead className="bg-muted">{children}</thead>,
+                    thead: ({ children }) => (
+                      <thead className="bg-muted">{children}</thead>
+                    ),
                     tbody: ({ children }) => <tbody>{children}</tbody>,
-                    tr: ({ children }) => <tr className="border-b border-border">{children}</tr>,
-                    th: ({ children }) => <th className="border border-border px-3 py-2 text-left font-semibold">{children}</th>,
-                    td: ({ children }) => <td className="border border-border px-3 py-2">{children}</td>,
+                    tr: ({ children }) => (
+                      <tr className="border-b border-border">{children}</tr>
+                    ),
+                    th: ({ children }) => (
+                      <th className="border border-border px-3 py-2 text-left font-semibold">
+                        {children}
+                      </th>
+                    ),
+                    td: ({ children }) => (
+                      <td className="border border-border px-3 py-2">
+                        {children}
+                      </td>
+                    ),
                   }}
                 >
                   {displayInsight.content}
                 </ReactMarkdown>
               </div>
             ) : (
-              <p className="text-sm text-muted-foreground">{t.sources.noInsightSelected}</p>
+              <p className="text-sm text-muted-foreground">
+                {t.sources.noInsightSelected}
+              </p>
             )}
           </div>
         )}
       </DialogContent>
     </Dialog>
-  )
+  );
 }

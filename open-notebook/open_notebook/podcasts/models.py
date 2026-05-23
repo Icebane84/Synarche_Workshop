@@ -13,19 +13,18 @@ class EpisodeProfile(ObjectModel):
     Replaces complex 15+ field configuration with user-friendly profiles.
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     table_name: ClassVar[str] = "episode_profile"
 
     name: str = Field(..., description="Unique profile name")
-    description: Optional[str] = Field(None, description="Profile description")
+    description: str | None = Field(None, description="Profile description")
     speaker_config: str = Field(..., description="Reference to speaker profile name")
     outline_provider: str = Field(..., description="AI provider for outline generation")
     outline_model: str = Field(..., description="AI model for outline generation")
@@ -63,12 +62,12 @@ class SpeakerProfile(ObjectModel):
     table_name: ClassVar[str] = "speaker_profile"
 
     name: str = Field(..., description="Unique profile name")
-    description: Optional[str] = Field(None, description="Profile description")
+    description: str | None = Field(None, description="Profile description")
     tts_provider: str = Field(
         ..., description="TTS provider (openai, elevenlabs, etc.)"
     )
     tts_model: str = Field(..., description="TTS model name")
-    speakers: List[Dict[str, Any]] = Field(
+    speakers: list[dict[str, Any]] = Field(
         ..., description="Array of speaker configurations"
     )
 
@@ -102,30 +101,30 @@ class PodcastEpisode(ObjectModel):
     table_name: ClassVar[str] = "episode"
 
     name: str = Field(..., description="Episode name")
-    episode_profile: Dict[str, Any] = Field(
+    episode_profile: dict[str, Any] = Field(
         ..., description="Episode profile used (stored as object)"
     )
-    speaker_profile: Dict[str, Any] = Field(
+    speaker_profile: dict[str, Any] = Field(
         ..., description="Speaker profile used (stored as object)"
     )
     briefing: str = Field(..., description="Full briefing used for generation")
     content: str = Field(..., description="Source content")
-    audio_file: Optional[str] = Field(
+    audio_file: str | None = Field(
         default=None, description="Path to generated audio file"
     )
-    transcript: Optional[Dict[str, Any]] = Field(
+    transcript: dict[str, Any] | None = Field(
         default_factory=dict, description="Generated transcript"
     )
-    outline: Optional[Dict[str, Any]] = Field(
+    outline: dict[str, Any] | None = Field(
         default_factory=dict, description="Generated outline"
     )
-    command: Optional[Union[str, RecordID]] = Field(
+    command: str | RecordID | None = Field(
         default=None, description="Link to surreal-commands job"
     )
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
-    async def get_job_status(self) -> Optional[str]:
+    async def get_job_status(self) -> str | None:
         """Get the status of the associated command"""
         if not self.command:
             return None

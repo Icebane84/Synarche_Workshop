@@ -35,8 +35,20 @@ logger = logging.getLogger("wlf_linter")
 class WLFLoreLinter:
     """The Star's specialized auditor for narrative consistency."""
 
-    PILLARS = ["Moral Ambiguity", "Corruption", "Faith vs. Doubt", "Free Will vs. Destiny"]
-    TONE_KEYWORDS = ["oppressive", "gritty", "introspective", "dread", "haunted", "shadow"]
+    PILLARS = [
+        "Moral Ambiguity",
+        "Corruption",
+        "Faith vs. Doubt",
+        "Free Will vs. Destiny",
+    ]
+    TONE_KEYWORDS = [
+        "oppressive",
+        "gritty",
+        "introspective",
+        "dread",
+        "haunted",
+        "shadow",
+    ]
 
     def __init__(self):
         self.cognition = AxionCognition() if AxionCognition else None
@@ -58,23 +70,37 @@ class WLFLoreLinter:
 
                 # Check for "Dread" or "Sadness" dominance
                 if not any(k in ["sadness", "fear", "anger"] for k in emotions):
-                    issues.append("[Tone] Lacks sufficient 'Oppressive/Dread' frequency (Low EQ resonance).")
+                    issues.append(
+                        "[Tone] Lacks sufficient 'Oppressive/Dread' frequency (Low EQ resonance)."
+                    )
 
                 # Check for Magician Efficiency (as a proxy for coherence)
                 if analysis.get("magician_efficiency", 0) < 0.8:
-                    issues.append("[Coherence] Narrative intent is ambiguous or disjointed.")
+                    issues.append(
+                        "[Coherence] Narrative intent is ambiguous or disjointed."
+                    )
 
             # 2. Keyword/Pillar Presence
-            missing_pillars = [p for p in self.PILLARS if p.lower() not in content.lower()]
+            missing_pillars = [
+                p for p in self.PILLARS if p.lower() not in content.lower()
+            ]
             if len(missing_pillars) > 2:
-                issues.append(f"[Pillars] Critical missing thematic links: {', '.join(missing_pillars)}")
+                issues.append(
+                    f"[Pillars] Critical missing thematic links: {', '.join(missing_pillars)}"
+                )
 
             # 3. POV and Character Checks
             if "I " in content and "POV: Kaelen" in content:
-                issues.append("[POV] 1st Person detected in Kaelen's 3rd Person Limited POV.")
+                issues.append(
+                    "[POV] 1st Person detected in Kaelen's 3rd Person Limited POV."
+                )
 
-            if "Shadow" in content and not any(k in content.lower() for k in ["whisper", "voice", "internal"]):
-                issues.append("[Character] Shadow Self described as external/static rather than internal/psychic.")
+            if "Shadow" in content and not any(
+                k in content.lower() for k in ["whisper", "voice", "internal"]
+            ):
+                issues.append(
+                    "[Character] Shadow Self described as external/static rather than internal/psychic."
+                )
 
             if issues:
                 for issue in issues:
@@ -90,7 +116,9 @@ class WLFLoreLinter:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="WLF Lore Linter — Narrative Consistency Auditor")
+    parser = argparse.ArgumentParser(
+        description="WLF Lore Linter — Narrative Consistency Auditor"
+    )
     parser.add_argument("target", help="Markdown file or directory to audit")
     args = parser.parse_args()
 

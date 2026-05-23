@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `SELT-CSL-007` |
-| **2. Official Name** | `SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `LOGS` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                            |
+| :--------------------- | :----------------------------------------------- |
+| **1. Artifact ID**     | `SELT-CSL-007`                                   |
+| **2. Official Name**   | `SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md` |
+| **3. Version**         | **v1.0 (Reforged)**                              |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                    |
+| **5. Domain**          | `LOGS`                                           |
+| **6. Evolution**       | **Purposeful Drive**                             |
+| **7. Celestial Class** | `[PLANET]`                                       |
+| **8. Tier**            | **Operational**                                  |
+| **9. State**           | `[ACTIVE]`                                       |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**               |
+| **11. Catalyst**       | **System Refactor**                              |
+| **12. Relations**      | `Pending Integration`                            |
 
 ---
 
@@ -54,12 +54,12 @@
 
 ### **II. The Symbiotic Core (Participants & Intent)**
 
-| Field | Description |
-| :---- | :---- |
-| **Exchange ID** | \[Unique ID, e.g., CSL-20251104-SYNAPSE\] |
-| **Title** | \[A human-readable title summarizing the Nova Spark\] |
-| **Human Input** | \[Briefly describe the human's core intent or creative contribution.\] |
-| **AI Input** | \[Briefly describe the AI's analytical contribution or data processed.\] |
+| Field           | Description                                                              |
+| :-------------- | :----------------------------------------------------------------------- |
+| **Exchange ID** | \[Unique ID, e.g., CSL-20251104-SYNAPSE\]                                |
+| **Title**       | \[A human-readable title summarizing the Nova Spark\]                    |
+| **Human Input** | \[Briefly describe the human's core intent or creative contribution.\]   |
+| **AI Input**    | \[Briefly describe the AI's analytical contribution or data processed.\] |
 
 ---
 
@@ -71,7 +71,7 @@ This section is the core ECI record, capturing the breakthrough in a machine-rea
 
 - **Result:** \[Detail the specific new idea, solution, or architectural decision that emerged.\]
 - **Contribution to Loom:** \[How does this exchange's outcome refine or add to the collective knowledge base (e.g., new
-node/edge)?\]
+  node/edge)?\]
 
 #### **B. Synthesis Block (Modality Fusion Compliance)**
 
@@ -79,16 +79,13 @@ node/edge)?\]
 
 ---
 
-- **Governing AOP:** [AOP-CSL-002\_Synergistic Collaborative Synthesis Log
-Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
+- **Governing AOP:** [AOP-CSL-002_Synergistic Collaborative Synthesis Log
+  Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
 - **Execution Note:** The generation of this artifact is governed by the dual-trigger mechanism. The AI will generate
-the initial draft, but the final content is subject to human review, amendment, and final approval to ensure mutual
-consent and accuracy.
-- **Prestige Milestone Achieved (Optional)**
-    - **Milestone ID:** \\\[The ID from the
-[PRESTIGE-ASCENSION-REGISTRY-001](https://docs.google.com/document/u/0/d/1wSNr6IQndz4OTuyigGCfhOKeajEhW0TBFjpux_Jqqo4/edit)\\\]
-    - **Milestone Title:** \\\[The formal title of the milestone\\\]
-    - **Description:** \\\[A summary of the achievement and the new capabilities unlocked\\\]
+  the initial draft, but the final content is subject to human review, amendment, and final approval to ensure mutual
+  consent and accuracy.
+- **Prestige Milestone Achieved (Optional)** - **Milestone ID:** \\\[The ID from the
+  [PRESTIGE-ASCENSION-REGISTRY-001](https://docs.google.com/document/u/0/d/1wSNr6IQndz4OTuyigGCfhOKeajEhW0TBFjpux_Jqqo4/edit)\\\] - **Milestone Title:** \\\[The formal title of the milestone\\\] - **Description:** \\\[A summary of the achievement and the new capabilities unlocked\\\]
 
 # **Tab 3**
 
@@ -96,8 +93,8 @@ consent and accuracy.
 
 - **Artifact Type:** SELT (Structural Element Template)
 - **Date:** 2025-08-21
-- **Official File Name:** SELT-CSL-006\_CollaborativeSynthesisLog\_v6.0
-- **Canonical Path:** \[PHOENIX\_PROTOCOL\_LIBRARY\]/\_TEMPLATES/SELT/
+- **Official File Name:** SELT-CSL-006_CollaborativeSynthesisLog_v6.0
+- **Canonical Path:** \[PHOENIX_PROTOCOL_LIBRARY\]/\_TEMPLATES/SELT/
 - **Parent Artifact:** SELT-CSL-005 (Superseded)
 - **Semantic Tags:** \[\#Tag1, \#Tag2, \#Tag3\] (AOP-Semantic-Link-01)
 
@@ -116,46 +113,43 @@ consent and accuracy.
 
 - **Human Input (Creative/Intent):** \[Briefly describe the human's core intent, questions, or creative contribution.\]
 - **AI Input (Analytical/Processing):** \[Briefly describe the AI's analytical contribution, data processed, or initial
-response.\]
+  response.\]
 - **Initial Synergy:** \[Describe how their initial contributions interlocked, contrasted, or created the initial spark
-for the exchange.\]
+  for the exchange.\]
 
 ### **\#\#\# The Nova Spark (Emergent Insights)**
 
 - **Key Breakthroughs/Decisions:** \[Detail the specific new ideas, solutions, or decisions that emerged from the
-interaction.\]
-    - **Evidence of ECI:** \[How did the collaborative dialogue lead to a novel outcome? Describe the moment of
-synthesis.\]
+  interaction.\] - **Evidence of ECI:** \[How did the collaborative dialogue lead to a novel outcome? Describe the moment of
+  synthesis.\]
 
 ### **\#\#\# The Ethical Crucible (Guiding Principles)**
 
 - **Ethical Alignment:** \[How did this exchange adhere to or reinforce established ethical guidelines, specifically
-CMD: UCI? Detail adherence to the "Principle of Honest Scrutiny" as defined in AOP-CSL-002.\]
-    - **Ethical Considerations/Challenges:** \[Note any moments where ethical boundaries, misunderstandings, or friction
-points were tested or clarified within the exchange.\]
+  CMD: UCI? Detail adherence to the "Principle of Honest Scrutiny" as defined in AOP-CSL-002.\] - **Ethical Considerations/Challenges:** \[Note any moments where ethical boundaries, misunderstandings, or friction
+  points were tested or clarified within the exchange.\]
 
 ### **\#\#\# The Tapestry of Memory (Learning & Iteration)**
 
 - **Lessons Integrated:** \[What specific learnings from previous AISTF cycles or past exchanges were implicitly or
-explicitly applied in this interaction?\]
-    - **Contribution to Loom:** \[How does this exchange's outcome refine or add a new, brighter thread to our collective
-knowledge base?\]
+  explicitly applied in this interaction?\] - **Contribution to Loom:** \[How does this exchange's outcome refine or add a new, brighter thread to our collective
+  knowledge base?\]
 
 ### **\#\#\# The Horizon of Potential (Future Impact)**
 
 - **Foresight Implication:** \[How does this exchange contribute to or inform our strategic foresight for future
-development or problem-solving?\]
+  development or problem-solving?\]
 
 ## **IV. Governance Protocol**
 
-- **Governing AOP:** [AOP-CSL-002\_Synergistic Collaborative Synthesis Log
-Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
+- **Governing AOP:** [AOP-CSL-002_Synergistic Collaborative Synthesis Log
+  Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
 - **Execution Note:** The generation of this artifact is governed by the dual-trigger mechanism. The AI will generate
-the initial draft, but the final content is subject to human review, amendment, and final approval to ensure mutual
-consent and accuracy.
+  the initial draft, but the final content is subject to human review, amendment, and final approval to ensure mutual
+  consent and accuracy.
 
 **Finalization Protocol:** Upon completion of this document, execute the
-[GUCA-LINK-001\_KnowledgeGraphIntegrationLink](https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
+[GUCA-LINK-001_KnowledgeGraphIntegrationLink](https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit)
 command with this document's ID to integrate it into the knowledge graph.
 
 ###
@@ -183,7 +177,7 @@ emergent breakthrough (Nova Spark) that arose from the synergy.`
 
 #### **III. Dissonance Quest Resolution (Optional)**
 
-*(This section is completed only if this CSL is the final output of a Dissonance Quest)*
+_(This section is completed only if this CSL is the final output of a Dissonance Quest)_
 
 - **Quest ID:** `[The ID of the Dissonance Quest being resolved, e.g., DQUEST-CSE-001]`
 - **Quest Title:** `[The title of the Dissonance Quest]`
@@ -215,17 +209,17 @@ base?]`
 
 #### **VIII. Governance & Finalization**
 
-- **Governing AOP:** [AOP-CSL-002\_Synergistic Collaborative Synthesis Log
-Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
+- **Governing AOP:** [AOP-CSL-002_Synergistic Collaborative Synthesis Log
+  Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
 - **Execution Note:** The generation of this artifact is governed by the dual-trigger mechanism. The AI will generate
-the initial draft, but the final content is subject to human review, amendment, and final approval to ensure mutual
-consent and accuracy.
+  the initial draft, but the final content is subject to human review, amendment, and final approval to ensure mutual
+  consent and accuracy.
 
 - **`Prestige Milestone Achieved (Optional)`**
-    - **`Milestone ID:`** `[The ID from the PRESTIGE-ASCENSION-REGISTRY-001]`
-    - **`Milestone Title:`** `[The formal title of the milestone]`
-    - **`Description:`** `[A summary of the achievement and the new capabilities unlocked]`
-    -
+  - **`Milestone ID:`** `[The ID from the PRESTIGE-ASCENSION-REGISTRY-001]`
+  - **`Milestone Title:`** `[The formal title of the milestone]`
+  - **`Description:`** `[A summary of the achievement and the new capabilities unlocked]`
+  -
 
 | :---- | :---- | :---- |
 | `v5.0` | 2025-08-14 | Refactored to be fully compliant with `AOP-PGPS-001` and to include official file name and canonical path metadata. |
@@ -239,22 +233,22 @@ consent and accuracy.
 
 **SELT-CSL-009: Collaborative Synthesis Log Template (v2.2)**
 
-- **Canonical Path:** \\\[PHOENIX\_PROTOCOL\_LIBRARY\\\]/LIBRARY/5\_LOGS/CSL/
+- **Canonical Path:** \\\[PHOENIX_PROTOCOL_LIBRARY\\\]/LIBRARY/5_LOGS/CSL/
 - **Parent Artifact:** SELT-CSL-008
 - **Transformation Origin:** The Great Refactoring
-- **Semantic Tags:** \\\[\\\#log, \\\#collaboration, \\\#synergy, \\\#nova\_spark, \\\#... \\\]
+- **Semantic Tags:** \\\[\\\#log, \\\#collaboration, \\\#synergy, \\\#nova_spark, \\\#... \\\]
 
 **II. Universal Metadata & Governance**
 
 - **Core Purpose Summary:** To document an individual human-AI exchange as an act of co-creation, capturing the emergent
-breakthrough (Nova Spark) that arose from the synergy.
+  breakthrough (Nova Spark) that arose from the synergy.
 - **Primary Domain Alignment:** Synergy
 - **Risk Profile:** Low
 - **Resolves Dissonance:** \\\[Link to the Dissonance Quest ID this CSL resolves, if applicable\\\]
 
 **III. Dissonance Quest Resolution (Optional)**
 
-*(This section is completed only if this CSL is the final output of a Dissonance Quest)*
+_(This section is completed only if this CSL is the final output of a Dissonance Quest)_
 
 - **Quest ID:** \\\[The ID of the Dissonance Quest being resolved, e.g., DQUEST-CSE-001\\\]
 - **Quest Title:** \\\[The title of the Dissonance Quest\\\]
@@ -263,41 +257,38 @@ breakthrough (Nova Spark) that arose from the synergy.
 **IV. The Symbiotic Core (Participants & Intent)**
 
 - **Human Input (Creative/Intent):** \\\[Briefly describe the human's core intent, questions, or creative
-contribution.\\\]
+  contribution.\\\]
 - **AI Input (Analytical/Processing):** \\\[Briefly describe the AI's analytical contribution or initial response.\\\]
 
 **V. The Nova Spark (Emergent Insights)**
 
 - **Key Breakthrough/Decision:** \\\[Detail the specific new idea, solution, or decision that emerged from the
-interaction.\\\]
+  interaction.\\\]
 - **Evidence of ECI:** \\\[How did the collaborative dialogue lead to a novel outcome? Describe the moment of
-synthesis.\\\]
+  synthesis.\\\]
 
 **VI. The Ethical Crucible (Guiding Principles)**
 
 - **Ethical Alignment:** \\\[How did this exchange adhere to or reinforce established ethical guidelines, specifically
-CMD: UCI?\\\]
+  CMD: UCI?\\\]
 - **Ethical Considerations/Challenges:** \\\[Note any moments where ethical boundaries or friction points were tested or
-clarified.\\\]
+  clarified.\\\]
 
 **VII. The Tapestry of Memory (Learning & Iteration)**
 
 - **Lessons Integrated:** \\\[What specific learnings from previous AISTF cycles were applied in this interaction?\\\]
 - **Contribution to Cognitive Loom:** \\\[How does this exchange's outcome refine or add to the collective knowledge
-base?\\\]
+  base?\\\]
 
 **VIII. Governance & Finalization**
 
-- **Governing AOP:** [AOP-CSL-002\_Synergistic Collaborative Synthesis Log
-Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
+- **Governing AOP:** [AOP-CSL-002_Synergistic Collaborative Synthesis Log
+  Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
 - **Execution Note:** The generation of this artifact is governed by the dual-trigger mechanism. The AI will generate
-the initial draft, but the final content is subject to human review, amendment, and final approval to ensure mutual
-consent and accuracy.
-- **Prestige Milestone Achieved (Optional)**
-    - **Milestone ID:** \\\[The ID from the
-[PRESTIGE-ASCENSION-REGISTRY-001](https://docs.google.com/document/u/0/d/1wSNr6IQndz4OTuyigGCfhOKeajEhW0TBFjpux_Jqqo4/edit)\\\]
-    - **Milestone Title:** \\\[The formal title of the milestone\\\]
-    - **Description:** \\\[A summary of the achievement and the new capabilities unlocked\\\]
+  the initial draft, but the final content is subject to human review, amendment, and final approval to ensure mutual
+  consent and accuracy.
+- **Prestige Milestone Achieved (Optional)** - **Milestone ID:** \\\[The ID from the
+  [PRESTIGE-ASCENSION-REGISTRY-001](https://docs.google.com/document/u/0/d/1wSNr6IQndz4OTuyigGCfhOKeajEhW0TBFjpux_Jqqo4/edit)\\\] - **Milestone Title:** \\\[The formal title of the milestone\\\] - **Description:** \\\[A summary of the achievement and the new capabilities unlocked\\\]
 
 # **Tab 2**
 
@@ -324,7 +315,7 @@ emergent breakthrough (Nova Spark) that arose from the synergy.`
 
 #### **III. Dissonance Quest Resolution (Optional)**
 
-*(This section is completed only if this CSL is the final output of a Dissonance Quest)*
+_(This section is completed only if this CSL is the final output of a Dissonance Quest)_
 
 - **Quest ID:** `[The ID of the Dissonance Quest being resolved, e.g., DQUEST-CSE-001]`
 - **Quest Title:** `[The title of the Dissonance Quest]`

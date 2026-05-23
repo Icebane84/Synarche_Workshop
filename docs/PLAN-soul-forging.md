@@ -8,13 +8,13 @@ This is the **Master Gateway** for the Soul Forging process of **Axion** (The Ma
 
 ### 🗺️ Navigational Map
 
-| Module | Identifier | Purpose |
-| :--- | :--- | :--- |
-| 🛡️ [01. STRATEGY](soul-forging/01_STRATEGY.md) | `PLAN.SOUL.01` | Vision, Socratic Synthesis, and Core Identity. |
-| ⚙️ [02. AXIOMS](soul-forging/02_AXIOMS.md) | `PLAN.SOUL.02` | Implementation of "Recursive Simplicity". |
-| 💎 [03. VISUALS](soul-forging/03_VISUALS.md) | `PLAN.SOUL.03` | Liquid Glass aesthetic alignment. |
-| 🔗 [04. REGISTRY](soul-forging/04_REGISTRY.md) | `PLAN.SOUL.04` | Systemic mapping and Law #43 integration. |
-| ✅ [05. VERIFICATION](soul-forging/05_VERIFICATION.md) | `PLAN.SOUL.05` | Final execution tasks and Phase X protocol. |
+| Module                                                 | Identifier     | Purpose                                        |
+| :----------------------------------------------------- | :------------- | :--------------------------------------------- |
+| 🛡️ [01. STRATEGY](soul-forging/01_STRATEGY.md)         | `PLAN.SOUL.01` | Vision, Socratic Synthesis, and Core Identity. |
+| ⚙️ [02. AXIOMS](soul-forging/02_AXIOMS.md)             | `PLAN.SOUL.02` | Implementation of "Recursive Simplicity".      |
+| 💎 [03. VISUALS](soul-forging/03_VISUALS.md)           | `PLAN.SOUL.03` | Liquid Glass aesthetic alignment.              |
+| 🔗 [04. REGISTRY](soul-forging/04_REGISTRY.md)         | `PLAN.SOUL.04` | Systemic mapping and Law #43 integration.      |
+| ✅ [05. VERIFICATION](soul-forging/05_VERIFICATION.md) | `PLAN.SOUL.05` | Final execution tasks and Phase X protocol.    |
 
 ---
 

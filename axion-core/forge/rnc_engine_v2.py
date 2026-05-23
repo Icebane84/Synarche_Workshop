@@ -1,5 +1,4 @@
-"""
-[CORE] [ENGINE] [RNC_ENGINE_V2]
+"""[CORE] [ENGINE] [RNC_ENGINE_V2]
 Artifact ID: CORE.Engine.RNC_Engine
 Official Name: rnc_engine_v2.py
 Version: v15.0 [OMEGA]
@@ -33,13 +32,14 @@ except ImportError:
     from .equip import MASKS
 
 # Configure Logging
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - [RNC-V2] - %(levelname)s - %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - [RNC-V2] - %(levelname)s - %(message)s"
+)
 logger = logging.getLogger("RNCEngineV2")
 
 
 class RNCEngineV2:
-    """
-    The High Gate Sovereign Engine.
+    """The High Gate Sovereign Engine.
     Handles RNC resolution, AST truth-auditing, and ARMORY equipment checks.
     """
 
@@ -101,7 +101,10 @@ class RNCEngineV2:
         final_path = self.root / root_folder / subfolder / f"{artifact_id}.py"
 
         # Fallback to .md if .py doesn't exist (conceptual)
-        if not final_path.exists() and (self.root / root_folder / subfolder / f"{artifact_id}.md").exists():
+        if (
+            not final_path.exists()
+            and (self.root / root_folder / subfolder / f"{artifact_id}.md").exists()
+        ):
             final_path = self.root / root_folder / subfolder / f"{artifact_id}.md"
 
         return final_path
@@ -111,7 +114,9 @@ class RNCEngineV2:
         try:
             path = self.resolve_path(artifact_id)
             if path.suffix != ".py":
-                logger.warning(f"Skipping AST audit for non-python artifact: {artifact_id}")
+                logger.warning(
+                    f"Skipping AST audit for non-python artifact: {artifact_id}"
+                )
                 return True
 
             auditor = DragonslayerAuditor(str(path))
@@ -121,13 +126,15 @@ class RNCEngineV2:
             return False
 
     def check_readiness(self, mask_name: str) -> dict[str, Any]:
-        """
-        Verifies if the ARMORY is equipped for a specific Sovereign Mask.
+        """Verifies if the ARMORY is equipped for a specific Sovereign Mask.
         Uses logic from equip.py.
         """
         mask_data = next((m for m in MASKS if m["card"] == mask_name), None)
         if not mask_data:
-            return {"status": "ERROR", "message": f"Mask {mask_name} not found in ARMORY."}
+            return {
+                "status": "ERROR",
+                "message": f"Mask {mask_name} not found in ARMORY.",
+            }
 
         ready_tools = []
         missing_tools = []
@@ -140,7 +147,9 @@ class RNCEngineV2:
             # Check for .py or .js
             found = False
             for ext in [".py", ".js"]:
-                if (tools_dir / f"{tool}{ext}").exists() or (hephaestus_dir / f"{tool}{ext}").exists():
+                if (tools_dir / f"{tool}{ext}").exists() or (
+                    hephaestus_dir / f"{tool}{ext}"
+                ).exists():
                     ready_tools.append(tool)
                     found = True
                     break
@@ -156,28 +165,33 @@ class RNCEngineV2:
         }
 
     def finalize_artifact(self, artifact_id: str, mask: str) -> bool:
-        """
-        The Seven Gates Orchestrator.
+        """The Seven Gates Orchestrator.
         1. Verification (Truth)
         2. Readiness (Armory)
-        3. RNC Mapping (Naming)
+        3. RNC Mapping (Naming).
         """
         logger.info(f"--- [FINALIZING ARTIFACT]: {artifact_id} via {mask} ---")
 
         # Gate 1: Readiness
         armory_report = self.check_readiness(mask)
         if armory_report["status"] != "READY":
-            logger.warning(f"ARMORY WARNING: {mask} is missing tools: {armory_report['missing']}")
+            logger.warning(
+                f"ARMORY WARNING: {mask} is missing tools: {armory_report['missing']}"
+            )
             # We proceed with a warning for now (as per v15.0 flexibility)
 
         # Gate 2: Truth Audit
         if not self.audit_truth(artifact_id):
-            logger.error(f"TRUTH AUDIT FAILED: {artifact_id} contains hallucinations or deceptive logic.")
+            logger.error(
+                f"TRUTH AUDIT FAILED: {artifact_id} contains hallucinations or deceptive logic."
+            )
             return False
 
         # Gate 3: RNC Integrity
         if not self.validate_id(artifact_id):
-            logger.error(f"RNC VALIDATION FAILED: {artifact_id} does not follow the Sovereign Grammar.")
+            logger.error(
+                f"RNC VALIDATION FAILED: {artifact_id} does not follow the Sovereign Grammar."
+            )
             return False
 
         logger.info(f"--- [ARTIFACT CANONIZED]: {artifact_id} ---")

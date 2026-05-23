@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-048_The Architect_s Gaze_ The Surpassing Event.md
+# CSL-048*The Architect_s Gaze* The Surpassing Event.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-048-THE-ARCHITECT-S-GAZE--THE-SURPASSING-EVENT-001` | The Sovereign ID. |
-| **Official Name** | `CSL-048_The Architect_s Gaze_ The Surpassing Event.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                         | Description       |
+| :------------------ | :------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-048-THE-ARCHITECT-S-GAZE--THE-SURPASSING-EVENT-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-048_The Architect_s Gaze_ The Surpassing Event.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                             | The Standard.     |
+| **Domain**          | `GVRN`                                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
 
 ## Collaborative Synthesis Log
 
@@ -79,7 +80,6 @@
 #### **The Horizon of Potential (Future Impact)**
 
 - **Prestige Milestones Unlocked:**
-
   - **P-MODF-001 (Mastered cross-modal integration):** Confirmed.
 
   - **P-ARCH-001 (Autonomous Architectural Self-Optimization):**

@@ -9,6 +9,7 @@
 ---
 
 # GVRN.Protocol.Scaffolding.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,17 +22,17 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Protocol.Scaffolding` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Scaffolding.md` | The Filename. |
-| **Legacy ID** | `UMB-SGM-001` | The Transmuted ID. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[STAR]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                          | Description        |
+| :------------------ | :----------------------------- | :----------------- |
+| **Artifact ID**     | `GVRN.Protocol.Scaffolding`    | The Sovereign ID.  |
+| **Official Name**   | `GVRN.Protocol.Scaffolding.md` | The Filename.      |
+| **Legacy ID**       | `UMB-SGM-001`                  | The Transmuted ID. |
+| **Version**         | **v13.1 [OMEGA]**              | The Standard.      |
+| **Domain**          | `GVRN`                         | The Subject.       |
+| **Celestial Class** | `[STAR]`                       | The Weight.        |
+| **Evolution**       | `Omega Ascension`              | The Maturity.      |
+| **Status**          | `[ACTIVE]`                     | The Lifecycle.     |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.       |
 
 ---
 
@@ -39,8 +40,8 @@
 
 > **"Structure without soul is a cage; Information without intent is dross."**
 
-*   **The Mandate**: The Scaffolding Protocol defines the **SGM-V13 Omega Template**. It provides the rigid container (Geometry) that holds the fluid logic (Energy) of the system.
-*   **The Law**: Every artifact must inherit from this prototype.
+- **The Mandate**: The Scaffolding Protocol defines the **SGM-V13 Omega Template**. It provides the rigid container (Geometry) that holds the fluid logic (Energy) of the system.
+- **The Law**: Every artifact must inherit from this prototype.
 
 ---
 
@@ -49,9 +50,12 @@
 All Sovereign Artifacts must adhere to the following 6-Block Structure.
 
 #### **1.1 The Header Block (Metaphysics)**
+
 Top-level YAML-style metadata for quick visual parsing.
+
 ```markdown
 # [Filename]
+
 > **Domain**: [DOMAIN]
 > **Evolution**: [Evolution]
 > **Signal**: [Signal]
@@ -60,23 +64,31 @@ Top-level YAML-style metadata for quick visual parsing.
 ```
 
 #### **1.2 Block A: The Identification Lock (UIP)**
+
 The "Vector Signature" that uniquely identifies the node in the Knowledge Graph.
-*(See Block A of this artifact for the structure)*
+_(See Block A of this artifact for the structure)_
 
 #### **1.3 Block B: The Ethos Field (Intent)**
-A high-level declaration of *Why* this artifact exists.
+
+A high-level declaration of _Why_ this artifact exists.
+
 ```markdown
 ### **Block B: The Ethos Field (IDM-001)**
+
 > **"[Quote]"**
-*   **The Mandate**: [Description]
-*   **The Law**: [The governing principle]
+
+- **The Mandate**: [Description]
+- **The Law**: [The governing principle]
 ```
 
 #### **1.4 Block C: The Content (Payload)**
+
 The core logic, protocols, or code. Free-form Markdown but must be hierarchical.
 
 #### **1.5 Block D: Standardized Synergy Block (The Loom)**
+
 Explicitly defines the edges for the Graph Crawler.
+
 ```text
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
@@ -84,7 +96,9 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact
 ```
 
 #### **1.6 Block F: The Omni-Anchor (Snapshot)**
+
 A single-line checksum for quick validation.
+
 ```text
 ### **Block F: The Omni-Anchor (System Snapshot)**
 `[OMNI-ARTIFACT-ANCHOR] ID: [ID] VER: [Version] DOMAIN: [Domain] STATUS: [Status]`
@@ -97,8 +111,8 @@ A single-line checksum for quick validation.
 > [!TIP]
 > Use these commands to invoke the Scaffolding.
 
-*   ✨ **Apply Template**: `CMD: APPLY_SCAFFOLD --target "[File]"`
-*   🔬 **Audit Structure**: `CMD: AUDIT_COMPLIANCE --standard:GVRN.Protocol.Scaffolding`
+- ✨ **Apply Template**: `CMD: APPLY_SCAFFOLD --target "[File]"`
+- 🔬 **Audit Structure**: `CMD: AUDIT_COMPLIANCE --standard:GVRN.Protocol.Scaffolding`
 
 ---
 

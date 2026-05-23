@@ -1,5 +1,4 @@
-"""
-# TOOL-KNIG-003: The Ultimate Reforger (Knight of Swords)
+"""# TOOL-KNIG-003: The Ultimate Reforger (Knight of Swords).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -195,10 +194,16 @@ class Reforger:
 
         id_match = re.search(r"([A-Z]+)-([A-Z]+)-(\d+)", self.artifact_id)
         if id_match:
-            domain_code = id_match.group(2) if id_match.group(2) in DOMAIN_REGISTRY else domain_code
+            domain_code = (
+                id_match.group(2)
+                if id_match.group(2) in DOMAIN_REGISTRY
+                else domain_code
+            )
 
         return {
-            "TIMESTAMP": datetime.datetime.now().strftime("%B %d, %Y, %I:%M:%S %p (%Z)"),
+            "TIMESTAMP": datetime.datetime.now().strftime(
+                "%B %d, %Y, %I:%M:%S %p (%Z)"
+            ),
             "TIMESTAMP_SHORT": datetime.datetime.now().strftime("%Y-%m-%d"),
             "DOMAIN_PATH": f"GVRN.{domain_code}.Phoenix",
             "DOMAIN_CODE": domain_code,
@@ -255,11 +260,15 @@ class Reforger:
         h2_count = 0
         new_lines = []
         for line in self.lines:
-            if line.startswith("## ") and not any(x in line for x in ["I. ", "II. ", "XI. "]):
+            if line.startswith("## ") and not any(
+                x in line for x in ["I. ", "II. ", "XI. "]
+            ):
                 clean_header = re.sub(r"^##\s+([IVXLCDM]+\.)?\s*", "", line).strip()
                 clean_header = clean_header.replace("**", "")
                 if h2_count < len(ROMAN_NUMERALS):
-                    new_lines.append(f"## **{ROMAN_NUMERALS[h2_count]} {clean_header}**\n")
+                    new_lines.append(
+                        f"## **{ROMAN_NUMERALS[h2_count]} {clean_header}**\n"
+                    )
                     new_lines.append("\n---\n")
                 else:
                     new_lines.append(line)
@@ -278,7 +287,9 @@ class Reforger:
 
 def main() -> None:
     """CLI Entrypoint."""
-    parser = argparse.ArgumentParser(description="Apply Codex v11.0 and Axion standards to markdown.")
+    parser = argparse.ArgumentParser(
+        description="Apply Codex v11.0 and Axion standards to markdown."
+    )
     parser.add_argument("--target", required=True, help="Path to the markdown file.")
     args = parser.parse_args()
 

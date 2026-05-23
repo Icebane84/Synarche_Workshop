@@ -9,6 +9,7 @@
 ---
 
 # index.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-INDEX-001` | The Sovereign ID. |
-| **Official Name** | `index.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
+| **Official Name**   | `index.md`                    | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Development Documentation
 
@@ -39,11 +40,13 @@ Welcome to the Open Notebook development documentation! This section provides co
 ## 📋 Quick Navigation
 
 ### Getting Started
+
 - **[Architecture Overview](architecture.md)** - Understanding the system design and components
 - **[API Reference](api-reference.md)** - Complete REST API documentation
 - **[Contributing Guide](contributing.md)** - Development workflow and standards
 
 ### Development Setup
+
 Before diving into the documentation below, make sure you have Open Notebook set up locally:
 
 ```bash
@@ -72,18 +75,19 @@ Open Notebook is built with a modern Python stack using:
 
 ### Key Components
 
-| Component | Description | Location |
-|-----------|-------------|----------|
-| **API Layer** | FastAPI REST endpoints | `api/` |
-| **Domain Models** | Core business logic | `open_notebook/domain/` |
-| **Database** | SurrealDB repository pattern | `open_notebook/database/` |
-| **AI Graphs** | LangChain processing workflows | `open_notebook/graphs/` |
-| **Streamlit UI** | Web interface | `pages/` |
-| **Commands** | Background job processing | `commands/` |
+| Component         | Description                    | Location                  |
+| ----------------- | ------------------------------ | ------------------------- |
+| **API Layer**     | FastAPI REST endpoints         | `api/`                    |
+| **Domain Models** | Core business logic            | `open_notebook/domain/`   |
+| **Database**      | SurrealDB repository pattern   | `open_notebook/database/` |
+| **AI Graphs**     | LangChain processing workflows | `open_notebook/graphs/`   |
+| **Streamlit UI**  | Web interface                  | `pages/`                  |
+| **Commands**      | Background job processing      | `commands/`               |
 
 ## 🔧 Development Workflow
 
 ### Code Standards
+
 - **Python**: PEP 8 compliance with type hints
 - **Async/Await**: Consistent async patterns throughout
 - **Error Handling**: Comprehensive exception handling
@@ -91,6 +95,7 @@ Open Notebook is built with a modern Python stack using:
 - **Testing**: Unit and integration tests with pytest
 
 ### Database Patterns
+
 Open Notebook uses SurrealDB with a custom repository pattern:
 
 ```python
@@ -105,6 +110,7 @@ await repo_update("table", record_id, data)
 ```
 
 ### AI Integration
+
 Multi-provider AI support via the Esperanto library:
 
 ```python
@@ -120,23 +126,27 @@ response = model.chat_complete(messages)
 ## 🚀 Key Features to Understand
 
 ### 1. Multi-Notebook Organization
+
 - Notebooks contain sources, notes, and chat sessions
 - Each notebook maintains isolated context
 - Sources can be shared across notebooks (roadmap)
 
 ### 2. Content Processing Pipeline
+
 - **Ingestion**: Documents, URLs, text → structured content
 - **Embedding**: Vector representations for semantic search
 - **Transformations**: AI-powered content analysis
 - **Indexing**: Both full-text and vector search
 
 ### 3. AI Workflows
+
 - **Chat**: Context-aware conversations
 - **Ask**: Multi-step question answering
 - **Transformations**: Content summarization and analysis
 - **Podcast Generation**: Advanced multi-speaker content
 
 ### 4. Background Processing
+
 - Commands system for long-running tasks
 - Async job queue with SurrealDB
 - Status tracking and error handling
@@ -160,12 +170,14 @@ We welcome contributions! Here's how to get started:
 ## 📖 Additional Resources
 
 ### External Documentation
+
 - [SurrealDB Documentation](https://surrealdb.com/docs)
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [LangChain Documentation](https://python.langchain.com/)
 - [Esperanto Library](https://github.com/lfnovo/esperanto)
 
 ### Community
+
 - [Discord Server](https://discord.gg/37XJPXfz2w) - Development discussions
 - [GitHub Issues](https://github.com/lfnovo/open-notebook/issues) - Bug reports and features
 - [GitHub Discussions](https://github.com/lfnovo/open-notebook/discussions) - Ideas and questions

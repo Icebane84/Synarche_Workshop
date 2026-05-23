@@ -1,14 +1,15 @@
-"""
-Artifact ID: CORE-FDE-ECS-SCH-001
+"""Artifact ID: CORE-FDE-ECS-SCH-001
 Ethos: Logic Must Be Bound.
 """
+
 from typing import Any, Dict, List
+
 from .ecs_hardened_core import apply_ecs_delta
 
+
 class SystemTask:
-    """
-    Wrapper that forces an ECS System to behave like a DAG Task.
-    """
+    """Wrapper that forces an ECS System to behave like a DAG Task."""
+
     def __init__(self, system_instance):
         self.system = system_instance
         self.name = system_instance.name
@@ -19,21 +20,19 @@ class SystemTask:
         entities = self.system.query(world_read_only)
         return self.system.compute(world_read_only, entities)
 
+
 class ECSScheduler:
-    """
-    Binds the DAG layers to the Phase 3 Deterministic Parallel Executor.
-    """
+    """Binds the DAG layers to the Phase 3 Deterministic Parallel Executor."""
+
     def __init__(self, executor, layers: List[List[SystemTask]]):
         self.executor = executor
-        self.layers = layers  
+        self.layers = layers
 
     def run_frame(self, world) -> None:
-        """
-        Executes the entire compiled graph for a single frame.
-        """
-        for layer_index, layer in enumerate(self.layers):
+        """Executes the entire compiled graph for a single frame."""
+        for _layer_index, layer in enumerate(self.layers):
             buffered_deltas = {}
-            
+
             # 1. Execute the horizontal band in parallel
             for task in layer:
                 # In a real multi-threading environment, the executor handles this.

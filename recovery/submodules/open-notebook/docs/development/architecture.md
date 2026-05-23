@@ -9,6 +9,7 @@
 ---
 
 # architecture.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-ARCHITECTURE-001` | The Sovereign ID. |
-| **Official Name** | `architecture.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-ARCHITECTURE-001`       | The Sovereign ID. |
+| **Official Name**   | `architecture.md`             | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # System Architecture
 
@@ -79,6 +80,7 @@ Open Notebook follows a modern layered architecture with clear separation of con
 **Purpose**: HTTP interface for all application functionality
 
 **Key Components**:
+
 - **FastAPI Application** (`api/main.py`): Main application with middleware and routing
 - **Routers** (`api/routers/`): Endpoint definitions organized by domain
 - **Models** (`api/models.py`): Pydantic models for request/response validation
@@ -102,6 +104,7 @@ async def create_notebook(notebook: NotebookCreate):
 **Purpose**: Core business logic and domain models
 
 **Key Components**:
+
 - **Base Models** (`base.py`): Abstract base classes with common functionality
 - **Entities**: `Notebook`, `Source`, `Note`, `Model`, `Transformation`
 - **Services**: Domain-specific business logic
@@ -115,12 +118,12 @@ class Notebook(BaseModel):
     name: str
     description: str
     archived: bool = False
-    
+
     @classmethod
     async def get_all(cls, order_by: str = "updated desc") -> List["Notebook"]:
         """Retrieve all notebooks with ordering."""
         # Business logic implementation
-        
+
     async def save(self) -> None:
         """Save notebook with validation."""
         # Domain validation and persistence
@@ -131,6 +134,7 @@ class Notebook(BaseModel):
 **Purpose**: Data persistence and query abstraction
 
 **Key Components**:
+
 - **Repository Pattern** (`repository.py`): CRUD operations abstraction
 - **Connection Management**: Async SurrealDB connection handling
 - **Migrations**: Database schema evolution (`migrations/`)
@@ -151,6 +155,7 @@ async def repo_delete(record_id: Union[str, RecordID])
 **Purpose**: AI workflows and content processing
 
 **Key Components**:
+
 - **LangChain Graphs**: Multi-step AI workflows
 - **Ask System** (`ask.py`): Question-answering pipeline
 - **Chat System** (`chat.py`): Conversational AI
@@ -175,6 +180,7 @@ async def ask_graph(state: AskState):
 **Purpose**: Asynchronous job processing
 
 **Key Components**:
+
 - **Command System**: Background job definitions
 - **Job Queue**: SurrealDB-backed job scheduling
 - **Status Tracking**: Real-time job progress monitoring
@@ -189,6 +195,7 @@ Open Notebook uses SurrealDB with a flexible document-oriented schema:
 ### Core Tables
 
 #### `notebook`
+
 ```surrealql
 DEFINE TABLE notebook SCHEMAFULL;
 DEFINE FIELD name ON TABLE notebook TYPE string;
@@ -199,6 +206,7 @@ DEFINE FIELD updated ON TABLE notebook TYPE datetime DEFAULT time::now();
 ```
 
 #### `source`
+
 ```surrealql
 DEFINE TABLE source SCHEMAFULL;
 DEFINE FIELD title ON TABLE source TYPE option<string>;
@@ -212,6 +220,7 @@ DEFINE FIELD updated ON TABLE source TYPE datetime DEFAULT time::now();
 ```
 
 #### `note`
+
 ```surrealql
 DEFINE TABLE note SCHEMAFULL;
 DEFINE FIELD title ON TABLE note TYPE option<string>;
@@ -224,6 +233,7 @@ DEFINE FIELD updated ON TABLE note TYPE datetime DEFAULT time::now();
 ```
 
 #### `model`
+
 ```surrealql
 DEFINE TABLE model SCHEMAFULL;
 DEFINE FIELD name ON TABLE model TYPE string;
@@ -236,6 +246,7 @@ DEFINE FIELD updated ON TABLE model TYPE datetime DEFAULT time::now();
 ### Specialized Tables
 
 #### `transformation`
+
 ```surrealql
 DEFINE TABLE transformation SCHEMAFULL;
 DEFINE FIELD name ON TABLE transformation TYPE string;
@@ -246,6 +257,7 @@ DEFINE FIELD apply_default ON TABLE transformation TYPE bool DEFAULT false;
 ```
 
 #### `episode_profile` (Podcast Generation)
+
 ```surrealql
 DEFINE TABLE episode_profile SCHEMAFULL;
 DEFINE FIELD name ON TABLE episode_profile TYPE string;
@@ -260,6 +272,7 @@ DEFINE FIELD num_segments ON TABLE episode_profile TYPE int DEFAULT 5;
 ```
 
 #### `speaker_profile` (Podcast Generation)
+
 ```surrealql
 DEFINE TABLE speaker_profile SCHEMAFULL;
 DEFINE FIELD name ON TABLE speaker_profile TYPE string;
@@ -276,11 +289,13 @@ DEFINE FIELD speakers.*.personality ON TABLE speaker_profile TYPE option<string>
 ### Relationships
 
 **Record Links** (SurrealDB native relationships):
+
 - `source.notebook_id` → `notebook` records
 - `note.notebook_id` → `notebook` records
 - `episode.command` → `command` records
 
 **Embedding Relationships**:
+
 - Sources and notes can have vector embeddings for semantic search
 - Embeddings are stored as arrays of numbers in the same record
 
@@ -311,7 +326,7 @@ graph TB
     C --> D[Embedding Generation]
     D --> E[Database Storage]
     E --> F[Search Index]
-    
+
     G[User Query] --> H[Vector Search]
     H --> I[Context Retrieval]
     I --> J[AI Model Processing]
@@ -336,6 +351,7 @@ graph TB
 ### Environment Variables
 
 **Database Configuration**:
+
 ```bash
 SURREAL_URL=ws://localhost:8000/rpc
 SURREAL_USER=root
@@ -345,6 +361,7 @@ SURREAL_DATABASE=main
 ```
 
 **AI Provider Configuration**:
+
 ```bash
 OPENAI_API_KEY=sk-...
 ANTHROPIC_API_KEY=sk-ant-...
@@ -352,6 +369,7 @@ GOOGLE_API_KEY=AI...
 ```
 
 **Application Configuration**:
+
 ```bash
 APP_PASSWORD=optional_password
 DEBUG=false
@@ -365,16 +383,16 @@ Configuration is managed through the `open_notebook/config.py` module:
 ```python
 class Config:
     """Application configuration with environment variable support."""
-    
+
     # Database settings
     database_url: str = os.getenv("SURREAL_URL", "ws://localhost:8000/rpc")
     database_user: str = os.getenv("SURREAL_USER", "root")
     database_password: str = os.getenv("SURREAL_PASSWORD", "password")
-    
+
     # AI provider settings
     openai_api_key: Optional[str] = os.getenv("OPENAI_API_KEY")
     anthropic_api_key: Optional[str] = os.getenv("ANTHROPIC_API_KEY")
-    
+
     # Application settings
     app_password: Optional[str] = os.getenv("APP_PASSWORD")
     debug: bool = os.getenv("DEBUG", "false").lower() == "true"
@@ -387,11 +405,13 @@ class Config:
 Open Notebook implements both full-text and vector search:
 
 **Full-Text Search**:
+
 - SurrealDB native text search capabilities
 - Keyword-based matching across content
 - Fast and lightweight for exact matches
 
 **Vector Search**:
+
 - Semantic similarity using embeddings
 - Cosine similarity scoring
 - Context-aware result ranking
@@ -420,12 +440,14 @@ async def vector_search(
 The podcast generation feature uses a sophisticated multi-step process:
 
 **Episode Profiles**: Define the structure and style of podcasts
+
 - Speaker configuration
 - Content outline generation
 - Transcript creation
 - Audio synthesis
 
 **Speaker Profiles**: Define individual speaker characteristics
+
 - Voice selection (TTS models)
 - Personality traits
 - Background information
@@ -456,7 +478,7 @@ async def process_content(content: str) -> ProcessedContent:
     # Concurrent processing of multiple steps
     embedding_task = asyncio.create_task(generate_embedding(content))
     extraction_task = asyncio.create_task(extract_metadata(content))
-    
+
     embedding, metadata = await asyncio.gather(embedding_task, extraction_task)
     return ProcessedContent(embedding=embedding, metadata=metadata)
 ```
@@ -478,6 +500,7 @@ async def process_content(content: str) -> ProcessedContent:
 ### Authentication
 
 **Password-Based Authentication**:
+
 - Optional application-level password protection
 - Middleware-based authentication
 - Session management
@@ -485,11 +508,13 @@ async def process_content(content: str) -> ProcessedContent:
 ### Data Security
 
 **Privacy-First Design**:
+
 - Local data storage by default
 - No external data transmission (except to chosen AI providers)
 - Configurable AI provider selection
 
 **Input Validation**:
+
 - Pydantic model validation
 - SQL injection prevention
 - File upload security
@@ -510,6 +535,7 @@ FROM python:3.11-slim as runtime
 ### Service Orchestration
 
 **Docker Compose Configuration**:
+
 - Application container
 - SurrealDB container
 - Shared volume for data persistence
@@ -518,11 +544,13 @@ FROM python:3.11-slim as runtime
 ### Scaling Considerations
 
 **Horizontal Scaling**:
+
 - Stateless API design
 - Shared database backend
 - Load balancer compatibility
 
 **Vertical Scaling**:
+
 - Async processing for CPU-intensive tasks
 - Memory optimization for large documents
 - Efficient embedding storage

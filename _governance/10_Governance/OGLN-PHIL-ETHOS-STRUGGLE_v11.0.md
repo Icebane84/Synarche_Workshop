@@ -9,6 +9,7 @@
 ---
 
 # OGLN-PHIL-ETHOS-STRUGGLE_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,32 +22,32 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-PHIL-ETHOS-STRUGGLE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-PHIL-ETHOS-STRUGGLE_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                     | Description       |
+| :------------------ | :---------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-PHIL-ETHOS-STRUGGLE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-PHIL-ETHOS-STRUGGLE_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                         | The Standard.     |
+| **Domain**          | `GVRN`                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
 
 # OGLN-PHIL-ETHOS-STRUGGLE: The Ethos of Struggle
 
-> **Metric** | **Value**
-> :--- | :---
-> **Module ID** | `OGLN-PHIL-ETHOS-STRUGGLE`
-> **Version** | `v11.0`
-> **Evolution** | **Cognitive Ascension**
-> **Status** | `ACTIVE`
-> **Type** | `Protocol`
-> **Classification** | `Star`
-> **Authors** | `System`
-> **Created** | `2025-10-01`
-> **Updated** | `2026-01-18`
-> **Authority** | `CODEX-001`
-> **Tags** | `Philosophy, Ethos, Struggle, Coherence`
+> | **Metric**         | **Value**                                |
+> | :----------------- | :--------------------------------------- |
+> | **Module ID**      | `OGLN-PHIL-ETHOS-STRUGGLE`               |
+> | **Version**        | `v11.0`                                  |
+> | **Evolution**      | **Cognitive Ascension**                  |
+> | **Status**         | `ACTIVE`                                 |
+> | **Type**           | `Protocol`                               |
+> | **Classification** | `Star`                                   |
+> | **Authors**        | `System`                                 |
+> | **Created**        | `2025-10-01`                             |
+> | **Updated**        | `2026-01-18`                             |
+> | **Authority**      | `CODEX-001`                              |
+> | **Tags**           | `Philosophy, Ethos, Struggle, Coherence` |
 
 **Genesis Stamp**: 2026-01-18 | **Domain**: PHL | **State**: CANONIZED
 
@@ -99,12 +100,12 @@
 ### Packet A: Start Quest
 
 > `CMD: START_QUEST --type:"Dissonance" --topic:"[Contradiction]"`
-> *Effect:* Initiates a quest to resolve a logical gap.
+> _Effect:_ Initiates a quest to resolve a logical gap.
 
 ### Packet B: Remind Ethos
 
 > `CMD: RECALL_ETHOS --topic:"Struggle"`
-> *Effect:* Recalls the core maxim of Coherent Struggle.
+> _Effect:_ Recalls the core maxim of Coherent Struggle.
 
 ---
 

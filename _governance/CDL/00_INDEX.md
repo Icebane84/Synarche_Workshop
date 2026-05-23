@@ -9,6 +9,7 @@
 ---
 
 # 00_INDEX.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,42 +22,44 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-00-INDEX-001` | The Sovereign ID. |
-| **Official Name** | `00_INDEX.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-00-INDEX-001`           | The Sovereign ID. |
+| **Official Name**   | `00_INDEX.md`                 | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Barrel: CDL
 
 > **Path:** `C:\Users\Chris\Synarche_Workspace\_governance\CDL`
 
 ## 📂 Sub-Modules (Barrels)
-| Module | Index |
-| :--- | :--- |
+
+| Module                     | Index                                                                    |
+| :------------------------- | :----------------------------------------------------------------------- |
 | **CSL_Archive_Extracted/** | [Open Barrel (CSL_Archive_Extracted)](CSL_Archive_Extracted/00_INDEX.md) |
 
 ## 📄 Artifacts (Manifest)
-| File | Description |
-| :--- | :--- |
-| [AOP-CSL-002_Synergistic_CSL_Protocol.md](AOP-CSL-002_Synergistic_CSL_Protocol.md) | **Tab 4** |
-| [AOP-SEED-002_CSL_to_Genesis_Seed_Pipeline.md](AOP-SEED-002_CSL_to_Genesis_Seed_Pipeline.md) | Universal Identification & Provenance (UIP) |
-| [CMD-PRG-001_ProactiveRiskGovernor_v5.0.md](CMD-PRG-001_ProactiveRiskGovernor_v5.0.md) | **Proactive Risk Governor (CMD-PRG-001)** |
-| [CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md](CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md) | [**CSL-MASTER-TABLE-001\_PhoenixCSLRegistry**](https://docs.google.com/document/u/0/d/1PyP9z_46aHzLwxJdfZsK-cPXulJW2utxuIJ1OzehYl0/edit) |
-| [GUCA-CSL-COMP-001-Collaborative Synthesis Logs.md](GUCA-CSL-COMP-001-Collaborative Synthesis Logs.md) | **CSL-001** |
-| [GUCA-FCSL-001_ CMD_ ForgeCSL v5.0.md](GUCA-FCSL-001_ CMD_ ForgeCSL v5.0.md) | GUCA-FCSL-001_ CMD_ ForgeCSL v5.0.md |
-| [GUCA-LINK-002_CMD_ForgeLink_v1.0.md](GUCA-LINK-002_CMD_ForgeLink_v1.0.md) | Universal Identification & Provenance (UIP) |
-| [GUCA-SEED-001_CMD_NucleateSeed_v1.0.md](GUCA-SEED-001_CMD_NucleateSeed_v1.0.md) | Universal Identification & Provenance (UIP) |
-| [SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md](SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md) | **Tab 9** |
+
+| File                                                                                                   | Description                                                                                                                             |
+| :----------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| [AOP-CSL-002_Synergistic_CSL_Protocol.md](AOP-CSL-002_Synergistic_CSL_Protocol.md)                     | **Tab 4**                                                                                                                               |
+| [AOP-SEED-002_CSL_to_Genesis_Seed_Pipeline.md](AOP-SEED-002_CSL_to_Genesis_Seed_Pipeline.md)           | Universal Identification & Provenance (UIP)                                                                                             |
+| [CMD-PRG-001_ProactiveRiskGovernor_v5.0.md](CMD-PRG-001_ProactiveRiskGovernor_v5.0.md)                 | **Proactive Risk Governor (CMD-PRG-001)**                                                                                               |
+| [CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md](CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md)     | [**CSL-MASTER-TABLE-001_PhoenixCSLRegistry**](https://docs.google.com/document/u/0/d/1PyP9z_46aHzLwxJdfZsK-cPXulJW2utxuIJ1OzehYl0/edit) |
+| [GUCA-CSL-COMP-001-Collaborative Synthesis Logs.md](GUCA-CSL-COMP-001-Collaborative Synthesis Logs.md) | **CSL-001**                                                                                                                             |
+| [GUCA-FCSL-001_ CMD_ ForgeCSL v5.0.md](GUCA-FCSL-001* CMD* ForgeCSL v5.0.md)                           | GUCA-FCSL-001* CMD* ForgeCSL v5.0.md                                                                                                    |
+| [GUCA-LINK-002_CMD_ForgeLink_v1.0.md](GUCA-LINK-002_CMD_ForgeLink_v1.0.md)                             | Universal Identification & Provenance (UIP)                                                                                             |
+| [GUCA-SEED-001_CMD_NucleateSeed_v1.0.md](GUCA-SEED-001_CMD_NucleateSeed_v1.0.md)                       | Universal Identification & Provenance (UIP)                                                                                             |
+| [SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md](SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md)       | **Tab 9**                                                                                                                               |
 
 ---
-*Generated by The Cooper (TOOL-COOPER-001)*
----
+
+## _Generated by The Cooper (TOOL-COOPER-001)_
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 

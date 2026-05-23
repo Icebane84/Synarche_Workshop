@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -23,8 +22,7 @@ from typing import Dict, Type
 
 
 class ResonanceDomain(Enum):
-    """
-    Functional domains that define the architectural boundaries of the engine.
+    """Functional domains that define the architectural boundaries of the engine.
     Used to categorize components and systems into secure operational zones.
     """
 
@@ -36,8 +34,7 @@ class ResonanceDomain(Enum):
 
 
 class ResonanceRegistry:
-    """
-    The Sovereign Rulebook: Maps Component Types to Resonance Domains.
+    """The Sovereign Rulebook: Maps Component Types to Resonance Domains.
     Acts as the source of truth for domain-based access control.
     """
 
@@ -47,48 +44,48 @@ class ResonanceRegistry:
         self.mappings: Dict[Type, ResonanceDomain] = {}
 
     def register(self, component_type: Type, domain: ResonanceDomain) -> None:
-        """
-        Maps a component type to a specific functional domain.
+        """Maps a component type to a specific functional domain.
 
         Args:
             component_type (Type): The class of the component.
             domain (ResonanceDomain): The target domain for this component.
+
         """
         self.mappings[component_type] = domain
 
     def get_domain(self, component_type: Type) -> ResonanceDomain:
-        """
-        Retrieves the domain for a component type. Defaults to CORE.
+        """Retrieves the domain for a component type. Defaults to CORE.
 
         Args:
             component_type (Type): The class of the component.
 
         Returns:
             ResonanceDomain: The mapped domain or ResonanceDomain.CORE if unmapped.
+
         """
         return self.mappings.get(component_type, ResonanceDomain.CORE)
 
 
 class ResonanceAuditor:
-    """
-    The Security Layer: Monitors and validates data access patterns.
+    """The Security Layer: Monitors and validates data access patterns.
     Identifies 'Semantic Dissonance'—when a system tries to cross
     unauthorized domain boundaries (e.g., a Motion System touching Combat stats).
     """
 
     def __init__(self, registry: ResonanceRegistry) -> None:
-        """
-        Initializes the auditor with a registry and a logger.
+        """Initializes the auditor with a registry and a logger.
 
         Args:
             registry (ResonanceRegistry): The rulebook to audit against.
+
         """
         self.registry = registry
         self.logger = logging.getLogger("PhoenixLogger")
 
-    def validate_access(self, system_name: str, system_domain: ResonanceDomain, component_type: Type) -> bool:
-        """
-        Verifies if a system is authorized to access a specific component type.
+    def validate_access(
+        self, system_name: str, system_domain: ResonanceDomain, component_type: Type
+    ) -> bool:
+        """Verifies if a system is authorized to access a specific component type.
         Logs an error and returns False if a domain violation is detected.
 
         Args:
@@ -98,6 +95,7 @@ class ResonanceAuditor:
 
         Returns:
             bool: True if access is granted, False otherwise.
+
         """
         if system_domain == ResonanceDomain.ADMIN:
             return True

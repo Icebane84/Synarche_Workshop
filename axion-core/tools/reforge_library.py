@@ -1,5 +1,4 @@
-"""
-# TOOL-EMPR-001: The Pattern Reforger (Emperor's Schema)
+"""# TOOL-EMPR-001: The Pattern Reforger (Emperor's Schema).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -50,9 +49,9 @@ GVRN-SYNERGY-001, GOVERNS, This tool is governed by the Workshop Synergy.
 
 import argparse
 import logging
-import os
 import re
 from datetime import datetime
+from pathlib import Path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -97,8 +96,8 @@ APP_TEMPLATE = """
 
 
 class Reforger:
-    def __init__(self, target_dir: str) -> None:
-        self.target_dir = os.path.abspath(target_dir)
+    def __init__(self, target_dir: Path) -> None:
+        self.target_dir = target_dir.resolve()
         self.timestamp = datetime.now().strftime("%Y-%m-%d")
 
     def extract_metadata(self, content: str, filename: str) -> dict[str, str]:
@@ -118,12 +117,18 @@ class Reforger:
             meta["mid"] = mid_match.group(1)
 
         # Try to find existing ID in content
-        id_match = re.search(r"\|\s+\*\*(?:Artifact|Module) ID\*\*\s+\|\s+`?([^`\n|]+)`?", content, re.IGNORECASE)
+        id_match = re.search(
+            r"\|\s+\*\*(?:Artifact|Module) ID\*\*\s+\|\s+`?([^`\n|]+)`?",
+            content,
+            re.IGNORECASE,
+        )
         if id_match:
             meta["mid"] = id_match.group(1).strip()
 
         # Try to find Evolution
-        evo_match = re.search(r"\|\s+\*\*Evolution\*\*\s+\|\s+\*\*?([^*|\n]+)\*\*?", content)
+        evo_match = re.search(
+            r"\|\s+\*\*Evolution\*\*\s+\|\s+\*\*?([^*|\n]+)\*\*?", content
+        )
         if evo_match:
             meta["evolution"] = evo_match.group(1).strip()
 
@@ -142,9 +147,17 @@ class Reforger:
     def reforge_content(self, content: str, meta: dict[str, str], filename: str) -> str:
         # 1. Remove old UIP if it exists
         new_content = re.sub(
-            r"---.*?# Universal Identification & Provenance.*?---", "", content, flags=re.DOTALL | re.IGNORECASE
+            r"---.*?# Universal Identification & Provenance.*?---",
+            "",
+            content,
+            flags=re.DOTALL | re.IGNORECASE,
         )
-        new_content = re.sub(r"---.*?The Vector Signature.*?---", "", new_content, flags=re.DOTALL | re.IGNORECASE)
+        new_content = re.sub(
+            r"---.*?The Vector Signature.*?---",
+            "",
+            new_content,
+            flags=re.DOTALL | re.IGNORECASE,
+        )
         # Also remove the "Artifact Start" legacy markers
         new_content = re.sub(r"######\s+\[ARTIFACT (START|END)\]", "", new_content)
 
@@ -169,8 +182,8 @@ class Reforger:
             new_content = f"# {meta['title']}\n\n" + new_content
 
         # 3. Normalize Indentation (4 spaces to 2 spaces)
-        new_content = re.sub(r"^    - ", "  - ", new_content, flags=re.MULTILINE)
-        new_content = re.sub(r"^        - ", "    - ", new_content, flags=re.MULTILINE)
+        new_content = re.sub(r"^ {4}- ", "  - ", new_content, flags=re.MULTILINE)
+        new_content = re.sub(r"^ {8}- ", "    - ", new_content, flags=re.MULTILINE)
 
         # 4. Inject v11.0 UIP
         uip = UIP_TEMPLATE.format(
@@ -190,59 +203,67 @@ class Reforger:
 
         return new_content
 
-    def reforge_file(self, filepath: str) -> None:
-        filename = os.path.basename(filepath)
-        logger.info(f"Reforging: {filename}")
+    def reforge_file(self, filepath: Path) -> None:
+        logger.info(f"Reforging: {filepath.name}")
 
         try:
-            with open(filepath, encoding="utf-8") as f:
-                content = f.read()
+            content = filepath.read_text(encoding="utf-8", errors="ignore")
 
-            meta = self.extract_metadata(content, filename)
-            reforged = self.reforge_content(content, meta, filename)
+            meta = self.extract_metadata(content, filepath.name)
+            reforged = self.reforge_content(content, meta, filepath.name)
 
             # Sanity check: ensure single title H1
             # (Sometimes demote produces double # # due to regex)
             reforged = reforged.replace("# #", "##")
 
             # Write back
-            with open(filepath, "w", encoding="utf-8") as f:
-                f.write(reforged)
+            filepath.write_text(reforged, encoding="utf-8")
 
             # Rename to strict RNC pattern if needed
             # [PREFIX]-[ID]_[Name]_v11.0.md
-            clean_title = "".join(x for x in meta["title"] if x.isalnum() or x in " -_").strip()
+            clean_title = "".join(
+                x for x in meta["title"] if x.isalnum() or x in " -_"
+            ).strip()
             clean_title = clean_title.replace(" ", "")
             new_filename = f"{meta['mid']}_{clean_title}_v11.0.md"
 
-            new_path = os.path.join(os.path.dirname(filepath), new_filename)
+            new_path = filepath.parent / new_filename
             if filepath != new_path:
-                if os.path.exists(new_path):
-                    os.remove(new_path)
-                os.rename(filepath, new_path)
+                if new_path.exists():
+                    new_path.unlink()
+                filepath.rename(new_path)
                 logger.info(f"  -> Renamed: {new_filename}")
 
         except Exception:
-            logger.exception(f"Error reforging {filename}")
+            logger.exception(f"Error reforging {filepath.name}")
 
-    def run(self, files: list[str]) -> None:
+    def run(self, files: list[Path]) -> None:
         for f in files:
             self.reforge_file(f)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Phoenix Protocol Artifact Reforger")
-    parser.add_argument("target_dir", help="Directory or file to reforge")
-    parser.add_argument("--batch", help="Path to a text file containing list of files to reforge")
+    parser.add_argument("target_dir", type=Path, help="Directory or file to reforge")
+    parser.add_argument(
+        "--batch",
+        type=Path,
+        help="Path to a text file containing list of files to reforge",
+    )
     args = parser.parse_args()
 
-    reforger = Reforger(os.path.dirname(args.target_dir) if os.path.isfile(args.target_dir) else args.target_dir)
+    reforger = Reforger(
+        args.target_dir.parent if args.target_dir.is_file() else args.target_dir
+    )
 
-    if os.path.isfile(args.target_dir):
+    if args.target_dir.is_file():
         reforger.run([args.target_dir])
     elif args.batch:
-        with open(args.batch) as f:
-            batch_files = [line.strip() for line in f if line.strip()]
+        batch_files = [
+            Path(line.strip())
+            for line in args.batch.read_text().splitlines()
+            if line.strip()
+        ]
         reforger.run(batch_files)
     else:
         logger.error("Please specify a file or use --batch.")

@@ -1,7 +1,7 @@
-import sqlite3
 import os
+import sqlite3
 
-db_path = r'c:\Users\Chris\Synarche_Workspace\axion-core\data\axion_memory.db'
+db_path = r"c:\Users\Chris\Synarche_Workspace\axion-core\data\axion_memory.db"
 if not os.path.exists(db_path):
     print(f"DB not found at {db_path}")
 else:

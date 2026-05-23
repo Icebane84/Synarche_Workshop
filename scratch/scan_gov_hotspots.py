@@ -2,10 +2,10 @@ import os
 
 gov_dir = r"C:\Users\Chris\Synarche_Workspace\_governance"
 
-print(f"Scanning _governance subdirectories to find file hotspots...")
+print("Scanning _governance subdirectories to find file hotspots...")
 
 results = []
-for root, dirs, files in os.walk(gov_dir):
+for root, _dirs, files in os.walk(gov_dir):
     file_count = len(files)
     if file_count > 0:
         rel_path = os.path.relpath(root, gov_dir)

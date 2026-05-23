@@ -1,26 +1,34 @@
-'use client'
+"use client";
 
-import { createContext, useContext, useState, useCallback, ReactNode } from 'react'
-import { AddSourceDialog } from '@/components/sources/AddSourceDialog'
-import { CreateNotebookDialog } from '@/components/notebooks/CreateNotebookDialog'
-import { GeneratePodcastDialog } from '@/components/podcasts/GeneratePodcastDialog'
+import {
+  createContext,
+  useContext,
+  useState,
+  useCallback,
+  ReactNode,
+} from "react";
+import { AddSourceDialog } from "@/components/sources/AddSourceDialog";
+import { CreateNotebookDialog } from "@/components/notebooks/CreateNotebookDialog";
+import { GeneratePodcastDialog } from "@/components/podcasts/GeneratePodcastDialog";
 
 interface CreateDialogsContextType {
-  openSourceDialog: () => void
-  openNotebookDialog: () => void
-  openPodcastDialog: () => void
+  openSourceDialog: () => void;
+  openNotebookDialog: () => void;
+  openPodcastDialog: () => void;
 }
 
-const CreateDialogsContext = createContext<CreateDialogsContextType | null>(null)
+const CreateDialogsContext = createContext<CreateDialogsContextType | null>(
+  null,
+);
 
 export function CreateDialogsProvider({ children }: { children: ReactNode }) {
-  const [sourceDialogOpen, setSourceDialogOpen] = useState(false)
-  const [notebookDialogOpen, setNotebookDialogOpen] = useState(false)
-  const [podcastDialogOpen, setPodcastDialogOpen] = useState(false)
+  const [sourceDialogOpen, setSourceDialogOpen] = useState(false);
+  const [notebookDialogOpen, setNotebookDialogOpen] = useState(false);
+  const [podcastDialogOpen, setPodcastDialogOpen] = useState(false);
 
-  const openSourceDialog = useCallback(() => setSourceDialogOpen(true), [])
-  const openNotebookDialog = useCallback(() => setNotebookDialogOpen(true), [])
-  const openPodcastDialog = useCallback(() => setPodcastDialogOpen(true), [])
+  const openSourceDialog = useCallback(() => setSourceDialogOpen(true), []);
+  const openNotebookDialog = useCallback(() => setNotebookDialogOpen(true), []);
+  const openPodcastDialog = useCallback(() => setPodcastDialogOpen(true), []);
 
   return (
     <CreateDialogsContext.Provider
@@ -31,17 +39,28 @@ export function CreateDialogsProvider({ children }: { children: ReactNode }) {
       }}
     >
       {children}
-      <AddSourceDialog open={sourceDialogOpen} onOpenChange={setSourceDialogOpen} />
-      <CreateNotebookDialog open={notebookDialogOpen} onOpenChange={setNotebookDialogOpen} />
-      <GeneratePodcastDialog open={podcastDialogOpen} onOpenChange={setPodcastDialogOpen} />
+      <AddSourceDialog
+        open={sourceDialogOpen}
+        onOpenChange={setSourceDialogOpen}
+      />
+      <CreateNotebookDialog
+        open={notebookDialogOpen}
+        onOpenChange={setNotebookDialogOpen}
+      />
+      <GeneratePodcastDialog
+        open={podcastDialogOpen}
+        onOpenChange={setPodcastDialogOpen}
+      />
     </CreateDialogsContext.Provider>
-  )
+  );
 }
 
 export function useCreateDialogs() {
-  const context = useContext(CreateDialogsContext)
+  const context = useContext(CreateDialogsContext);
   if (!context) {
-    throw new Error('useCreateDialogs must be used within a CreateDialogsProvider')
+    throw new Error(
+      "useCreateDialogs must be used within a CreateDialogsProvider",
+    );
   }
-  return context
+  return context;
 }

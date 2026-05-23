@@ -86,15 +86,15 @@ inputs, outputs, and key activities.
 - **Outputs:**
 
 - **Key Activities:**
-    - Activity 1
+  - Activity 1
 
-    - Activity 2
+  - Activity 2
 
 - **Associated Protocols (AOPs):**
-    - \[AOP ID\] \- \[AOP Name\]
+  - \[AOP ID\] \- \[AOP Name\]
 
 - **Associated Commands (GUCAs):**
-    - \[GUCA ID\] \- \[GUCA Name\]
+  - \[GUCA ID\] \- \[GUCA Name\]
 
 ### Phase 2: \[Phase Name\]
 
@@ -105,15 +105,15 @@ inputs, outputs, and key activities.
 - **Outputs:**
 
 - **Key Activities:**
-    - Activity 1
+  - Activity 1
 
-    - Activity 2
+  - Activity 2
 
 - **Associated Protocols (AOPs):**
-    - \[AOP ID\] \- \[AOP Name\]
+  - \[AOP ID\] \- \[AOP Name\]
 
 - **Associated Commands (GUCAs):**
-    - \[GUCA ID\] \- \[GUCA Name\]
+  - \[GUCA ID\] \- \[GUCA Name\]
 
 # IV. Systemic Relationships & Impact
 
@@ -170,9 +170,9 @@ Specify maintenance procedures, responsible parties, and escalation protocols.
 # VII. Appendices
 
 - **Appendix A:** Related Documentation:
-    - File
+  - File
 
-    - File
+  - File
 
 Finalization Protocol: Upon completion of this document, execute the
 ['GUCA-Link-01'](https://drive.google.com/open?id=1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc) command with this
@@ -184,10 +184,10 @@ document's ID to integrate it into the knowledge graph.
 
 - **Purpose:** The definitive template for all **Universal Workflow Blueprints**.
 - **Assembly Logic:**
-    - Transcludes `SELT-HEADER-UIP-001`
-        - Transcludes `SELT-HEADER-UMG-001`
-            - Includes unique sections: `III. Workflow Definition` (including the phased breakdown).
-                - Transcludes `SELT-GOVERNANCE-FIN-001`
+  - Transcludes `SELT-HEADER-UIP-001`
+    - Transcludes `SELT-HEADER-UMG-001`
+      - Includes unique sections: `III. Workflow Definition` (including the phased breakdown).
+        - Transcludes `SELT-GOVERNANCE-FIN-001`
 
 ---
 

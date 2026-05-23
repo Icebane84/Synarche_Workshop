@@ -9,6 +9,7 @@
 ---
 
 # SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SELT-CSL-2026.01.27-SUPABASEREFACTOR-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SELT-CSL-2026.01.27-SUPABASEREFACTOR-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 # Standardized Experience Log: Cognitive Synthesis Log (SELT-CSL)
 
@@ -49,19 +50,19 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| --- | --- |
-| **Artifact ID** | `SELT-CSL-2026.01.27_SupabaseRefactor_v1.0` |
-| **Official Name** | `SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md` |
-| **Version** | **v1.0 (Canonized)** |
-| **Provenance** | **Date Reforged: 2026-01-27** |
-| **Domain** | `LOGS` |
-| **Evolution** | **Purposeful Drive** |
-| **Celestial Class** | `[PLANET]` |
-| **Tier** | **Operational** |
-| **State** | `[ACTIVE]` |
-| **Ethos** | **The Phoenix Ascension Protocol** |
-| **Catalyst** | **Systemic Refactor Initiation** |
+| Field               | Value                                          |
+| ------------------- | ---------------------------------------------- |
+| **Artifact ID**     | `SELT-CSL-2026.01.27_SupabaseRefactor_v1.0`    |
+| **Official Name**   | `SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md` |
+| **Version**         | **v1.0 (Canonized)**                           |
+| **Provenance**      | **Date Reforged: 2026-01-27**                  |
+| **Domain**          | `LOGS`                                         |
+| **Evolution**       | **Purposeful Drive**                           |
+| **Celestial Class** | `[PLANET]`                                     |
+| **Tier**            | **Operational**                                |
+| **State**           | `[ACTIVE]`                                     |
+| **Ethos**           | **The Phoenix Ascension Protocol**             |
+| **Catalyst**        | **Systemic Refactor Initiation**               |
 
 ---
 
@@ -78,9 +79,9 @@
 
 - **Thematic Cluster:** `OGLN.GVRN.CODEX v10.0` Alignment
 - **Key Anchors:**
-    - `OGLN.Core.Governance.Codex` (The Law)
-    - `Antigravity Master Architecture` (The Body)
-    - `Supabase-Transmuter Toolchain` (The Hands)
+  - `OGLN.Core.Governance.Codex` (The Law)
+  - `Antigravity Master Architecture` (The Body)
+  - `Supabase-Transmuter Toolchain` (The Hands)
 
 ---
 
@@ -88,26 +89,26 @@
 
 - **Methodology:** Pattern Recognition / Contradiction Resolution
 - **Cognitive Pathway:**
-    > The current library exists in a state of "Rind" (Legacy data without v10 metadata). To achieve "Crystal" (Canonized state), the system must utilize the **Hephaestus Cycle** (Scan, Simulate, Forge) within the **Antigravity Overplane**. The reasoning path connects the high-level **Phoenix Codex** laws directly to the kinetic **Supabase API** calls via the **Axion-Prime** sovereign agent.
+  > The current library exists in a state of "Rind" (Legacy data without v10 metadata). To achieve "Crystal" (Canonized state), the system must utilize the **Hephaestus Cycle** (Scan, Simulate, Forge) within the **Antigravity Overplane**. The reasoning path connects the high-level **Phoenix Codex** laws directly to the kinetic **Supabase API** calls via the **Axion-Prime** sovereign agent.
 
 ---
 
 ### **V. Output Vector (The New Knowledge)**
 
 - **New Edges Created:**
-    - `[Phoenix Codex v10.0] --[GOVERNS]--> [Supabase Artifacts]`
-    - `[Axion-Prime] --[OPERATES]--> [supabase-transmuter]`
-    - `[Antigravity IDE] --[HOSTS]--> [Axion Overplane]`
+  - `[Phoenix Codex v10.0] --[GOVERNS]--> [Supabase Artifacts]`
+  - `[Axion-Prime] --[OPERATES]--> [supabase-transmuter]`
+  - `[Antigravity IDE] --[HOSTS]--> [Axion Overplane]`
 
 - **Emergent Insights:**
-    > Systematic refactoring is no longer a manual "chat" task but a rigid, automated **Sovereign ETL Pipeline**. By physically encoding the **Chronos Lock** header into the database, we eliminate "orphaned" knowledge and ensure every artifact is linked to the **Master Registry**.
+  > Systematic refactoring is no longer a manual "chat" task but a rigid, automated **Sovereign ETL Pipeline**. By physically encoding the **Chronos Lock** header into the database, we eliminate "orphaned" knowledge and ensure every artifact is linked to the **Master Registry**.
 
 ---
 
 ### **VI. Synergy Metrics (The Value)**
 
 - **Synergy Score (0.0 - 1.0):** `0.95`
-- *Rationale:* This synthesis resolves the dissonance of "Unchecked Drift" by providing a definitive operational path for global system alignment.
+- _Rationale:_ This synthesis resolves the dissonance of "Unchecked Drift" by providing a definitive operational path for global system alignment.
 - **Coherence Impact:** **Transformative**
 
 ---

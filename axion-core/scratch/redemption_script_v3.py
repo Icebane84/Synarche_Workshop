@@ -43,7 +43,7 @@ def uncomment_logic(root_dir) -> None:
     ]
     combined_regex = re.compile("|".join(code_indicators))
 
-    for root, dirs, files in os.walk(root_dir):
+    for root, _dirs, files in os.walk(root_dir):
         for file in files:
             if file.endswith(".py"):
                 path = os.path.join(root, file)
@@ -63,7 +63,14 @@ def uncomment_logic(root_dir) -> None:
                         # Special check: Don't uncomment metadata blocks
                         if any(
                             marker in line
-                            for marker in ["|", "[ARTIFACT", "Block ", "Official Name", "Version", "Artifact ID"]
+                            for marker in [
+                                "|",
+                                "[ARTIFACT",
+                                "Block ",
+                                "Official Name",
+                                "Version",
+                                "Artifact ID",
+                            ]
                         ):
                             new_lines.append(line)
                             continue

@@ -13,7 +13,7 @@ class PasswordAuthMiddleware(BaseHTTPMiddleware):
     Only active when OPEN_NOTEBOOK_PASSWORD environment variable is set.
     """
 
-    def __init__(self, app, excluded_paths: Optional[list] = None):
+    def __init__(self, app, excluded_paths: list | None = None) -> None:
         super().__init__(app)
         self.password = os.environ.get("OPEN_NOTEBOOK_PASSWORD")
         self.excluded_paths = excluded_paths or [
@@ -77,7 +77,7 @@ security = HTTPBearer(auto_error=False)
 
 
 def check_api_password(
-    credentials: Optional[HTTPAuthorizationCredentials] = Depends(security),
+    credentials: HTTPAuthorizationCredentials | None = Depends(security),
 ) -> bool:
     """
     Utility function to check API password.

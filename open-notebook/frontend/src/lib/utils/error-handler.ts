@@ -19,7 +19,8 @@ export const ERROR_MAP: Record<string, string> = {
   "Invalid password": "apiErrors.invalidPassword",
   "Invalid authorization header format": "apiErrors.unauthorized",
   "Missing authorization header": "apiErrors.unauthorized",
-  "Vector search requires an embedding model": "apiErrors.embeddingModelRequired",
+  "Vector search requires an embedding model":
+    "apiErrors.embeddingModelRequired",
   "Ask feature requires an embedding model": "apiErrors.embeddingModelRequired",
   "Strategy model": "apiErrors.strategyModelNotFound",
   "Answer model": "apiErrors.answerModelNotFound",
@@ -31,9 +32,12 @@ export const ERROR_MAP: Record<string, string> = {
  * Translates a backend error message using the ERROR_MAP.
  * If no mapping exists, returns the fallback key or generic error key.
  */
-export function getApiErrorKey(errorOrMessage: unknown, fallbackKey?: string): string {
+export function getApiErrorKey(
+  errorOrMessage: unknown,
+  fallbackKey?: string,
+): string {
   const message = formatApiError(errorOrMessage);
-  
+
   if (!message) return fallbackKey || "apiErrors.genericError";
 
   // Try exact match first
@@ -55,14 +59,18 @@ export function getApiErrorKey(errorOrMessage: unknown, fallbackKey?: string): s
  * Formats a raw error from the API into a user-friendly (potentially translated) string.
  */
 export function formatApiError(error: unknown): string {
-  if (typeof error === 'string') return error;
-  
-  const err = error as { response?: { data?: { detail?: string } }, detail?: string, message?: string };
+  if (typeof error === "string") return error;
+
+  const err = error as {
+    response?: { data?: { detail?: string } };
+    detail?: string;
+    message?: string;
+  };
   const detail = err?.response?.data?.detail || err?.detail || err?.message;
-  
-  if (typeof detail === 'string') {
+
+  if (typeof detail === "string") {
     return detail; // We'll handle the actual translation using the key in the hook/component
   }
-  
+
   return "An unexpected error occurred";
 }

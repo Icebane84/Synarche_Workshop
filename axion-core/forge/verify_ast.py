@@ -55,7 +55,9 @@ def process_target(target: Path) -> bool:
             success &= verify_file_ast(target)
     elif target.is_dir():
         for item in target.rglob("*.py"):
-            if not any(p in item.parts for p in [".git", "node_modules", "__pycache__"]):
+            if not any(
+                p in item.parts for p in [".git", "node_modules", "__pycache__"]
+            ):
                 success &= verify_file_ast(item)
     return success
 

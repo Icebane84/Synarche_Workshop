@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-GVRN-003: The Chronicler's Eye (High Priestess Suite)
+"""# TOOL-GVRN-003: The Chronicler's Eye (High Priestess Suite).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -35,7 +34,6 @@ TOOL-HPRI-007, SYNERGY, Works with reflect_memory.py for contextual retrieval.
 """
 
 import argparse
-import os
 import re
 from pathlib import Path
 
@@ -45,7 +43,6 @@ CSL_DIR = Path("c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/5_Lo
 
 def query_logs(filter_text: str, limit: int):
     """Queries logs for a specific keyword or tag."""
-
     if not CSL_DIR.exists():
         print("Error: CSL directory not found.")
         return
@@ -77,7 +74,9 @@ def query_logs(filter_text: str, limit: int):
 def main():
     parser = argparse.ArgumentParser(description="QUERY_CSL: Search the CSL archives.")
     parser.add_argument("--filter", required=True, help="Keyword or tag to search for.")
-    parser.add_argument("--limit", type=int, default=5, help="Maximum number of results.")
+    parser.add_argument(
+        "--limit", type=int, default=5, help="Maximum number of results."
+    )
 
     args = parser.parse_args()
     query_logs(args.filter, args.limit)

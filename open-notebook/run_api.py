@@ -28,9 +28,6 @@ if __name__ == "__main__":
     port = int(os.getenv("API_PORT", "5055"))
     reload = os.getenv("API_RELOAD", "false").lower() == "true"
 
-    print(f"Starting Open Notebook API server on {host}:{port}")
-    print(f"Reload mode: {reload}")
-
     uvicorn.run(
         "api.main:app",
         host=host,

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -19,12 +18,11 @@
 
 import json
 import os
-from typing import Any, Dict
+from typing import Any
 
 
 class McpInjector:
-    """
-    WHAT: Mutates the AI's Model Context Protocol configuration.
+    """WHAT: Mutates the AI's Model Context Protocol configuration.
     HOW: Safely appends validated tool schemas to mcp_config.json.
     WHY: To grant AI agents access to newly forged Kinetic Capabilities (KCAPs).
     """
@@ -33,8 +31,7 @@ class McpInjector:
         self.mcp_path = os.path.join(root_dir, ".agent", "mcp_config.json")
 
     def register_tool(self, tool_schema: dict[str, Any]) -> bool:
-        """
-        Registers a new tool schema into the MCP configuration.
+        """Registers a new tool schema into the MCP configuration.
 
         Args:
             tool_schema (Dict[str, Any]): The JSON-serializable schema of the tool to register.
@@ -45,9 +42,12 @@ class McpInjector:
         Raises:
             FileNotFoundError: If the mcp_config.json file is missing.
             IOError: If the file cannot be read or written.
+
         """
         if not os.path.exists(self.mcp_path):
-            raise FileNotFoundError(f"CRITICAL: Missing Mind Substrate at {self.mcp_path}")
+            raise FileNotFoundError(
+                f"CRITICAL: Missing Mind Substrate at {self.mcp_path}"
+            )
 
         try:
             with open(self.mcp_path, encoding="utf-8") as f:

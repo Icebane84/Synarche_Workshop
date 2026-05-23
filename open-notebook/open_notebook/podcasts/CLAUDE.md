@@ -9,6 +9,7 @@
 ---
 
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Podcasts Module
 
@@ -43,6 +44,7 @@ Encapsulates podcast metadata and configuration: speaker profiles (voice/persona
 ## Architecture Overview
 
 Two-tier profile system:
+
 - **SpeakerProfile**: TTS provider/model + 1-4 speaker configurations (name, voice_id, backstory, personality)
 - **EpisodeProfile**: Generation settings (outline/transcript models, segment count, briefing template)
 - **PodcastEpisode**: Generated episode record linking profiles, content, and async job
@@ -52,18 +54,21 @@ All inherit from `ObjectModel` (SurrealDB base class with table_name and save/lo
 ## Component Catalog
 
 ### SpeakerProfile
+
 - Validates 1-4 speakers with required fields: name, voice_id, backstory, personality
 - Stores TTS provider/model (e.g., "elevenlabs", "openai")
 - `get_by_name()` async query by profile name
 - Raises ValueError on invalid speaker counts or missing fields
 
 ### EpisodeProfile
+
 - Configures outline/transcript generation: provider, model, num_segments (3-20 validated)
 - References speaker_config by name
 - Stores default_briefing template for episode generation
 - `get_by_name()` async query
 
 ### PodcastEpisode
+
 - Stores episode_profile and speaker_profile as dicts (snapshots of config at generation time)
 - Optional audio_file path, transcript/outline dicts
 - **Job tracking**: command field links to surreal-commands RecordID

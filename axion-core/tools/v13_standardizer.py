@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-HIER-001`                                |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **The Guardian of Tradition**                  |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `UPGRADES: ALL_v11_ARTIFACTS`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 """
 
 import datetime

@@ -125,6 +125,4 @@ This seed has nucleated the following core tools:
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

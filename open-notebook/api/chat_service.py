@@ -13,7 +13,7 @@ from loguru import logger
 class ChatService:
     """Service for chat-related API operations"""
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.base_url = os.getenv("API_BASE_URL", "http://127.0.0.1:5055")
         # Add authentication header if password is set
         self.headers = {}
@@ -21,7 +21,7 @@ class ChatService:
         if password:
             self.headers["Authorization"] = f"Bearer {password}"
 
-    async def get_sessions(self, notebook_id: str) -> List[Dict[str, Any]]:
+    async def get_sessions(self, notebook_id: str) -> list[dict[str, Any]]:
         """Get all chat sessions for a notebook"""
         try:
             async with httpx.AsyncClient() as client:
@@ -33,18 +33,18 @@ class ChatService:
                 response.raise_for_status()
                 return response.json()
         except Exception as e:
-            logger.error(f"Error fetching chat sessions: {str(e)}")
+            logger.error(f"Error fetching chat sessions: {e!s}")
             raise
 
     async def create_session(
         self,
         notebook_id: str,
-        title: Optional[str] = None,
-        model_override: Optional[str] = None,
-    ) -> Dict[str, Any]:
+        title: str | None = None,
+        model_override: str | None = None,
+    ) -> dict[str, Any]:
         """Create a new chat session"""
         try:
-            data: Dict[str, Any] = {"notebook_id": notebook_id}
+            data: dict[str, Any] = {"notebook_id": notebook_id}
             if title is not None:
                 data["title"] = title
             if model_override is not None:
@@ -59,10 +59,10 @@ class ChatService:
                 response.raise_for_status()
                 return response.json()
         except Exception as e:
-            logger.error(f"Error creating chat session: {str(e)}")
+            logger.error(f"Error creating chat session: {e!s}")
             raise
 
-    async def get_session(self, session_id: str) -> Dict[str, Any]:
+    async def get_session(self, session_id: str) -> dict[str, Any]:
         """Get a specific session with messages"""
         try:
             async with httpx.AsyncClient() as client:
@@ -73,18 +73,18 @@ class ChatService:
                 response.raise_for_status()
                 return response.json()
         except Exception as e:
-            logger.error(f"Error fetching session: {str(e)}")
+            logger.error(f"Error fetching session: {e!s}")
             raise
 
     async def update_session(
         self,
         session_id: str,
-        title: Optional[str] = None,
-        model_override: Optional[str] = None,
-    ) -> Dict[str, Any]:
+        title: str | None = None,
+        model_override: str | None = None,
+    ) -> dict[str, Any]:
         """Update session properties"""
         try:
-            data: Dict[str, Any] = {}
+            data: dict[str, Any] = {}
             if title is not None:
                 data["title"] = title
             if model_override is not None:
@@ -104,10 +104,10 @@ class ChatService:
                 response.raise_for_status()
                 return response.json()
         except Exception as e:
-            logger.error(f"Error updating session: {str(e)}")
+            logger.error(f"Error updating session: {e!s}")
             raise
 
-    async def delete_session(self, session_id: str) -> Dict[str, Any]:
+    async def delete_session(self, session_id: str) -> dict[str, Any]:
         """Delete a chat session"""
         try:
             async with httpx.AsyncClient() as client:
@@ -118,16 +118,16 @@ class ChatService:
                 response.raise_for_status()
                 return response.json()
         except Exception as e:
-            logger.error(f"Error deleting session: {str(e)}")
+            logger.error(f"Error deleting session: {e!s}")
             raise
 
     async def execute_chat(
         self,
         session_id: str,
         message: str,
-        context: Dict[str, Any],
-        model_override: Optional[str] = None,
-    ) -> Dict[str, Any]:
+        context: dict[str, Any],
+        model_override: str | None = None,
+    ) -> dict[str, Any]:
         """Execute a chat request"""
         try:
             data = {"session_id": session_id, "message": message, "context": context}
@@ -143,12 +143,12 @@ class ChatService:
                 response.raise_for_status()
                 return response.json()
         except Exception as e:
-            logger.error(f"Error executing chat: {str(e)}")
+            logger.error(f"Error executing chat: {e!s}")
             raise
 
     async def build_context(
-        self, notebook_id: str, context_config: Dict[str, Any]
-    ) -> Dict[str, Any]:
+        self, notebook_id: str, context_config: dict[str, Any]
+    ) -> dict[str, Any]:
         """Build context for a notebook"""
         try:
             data = {"notebook_id": notebook_id, "context_config": context_config}
@@ -160,7 +160,7 @@ class ChatService:
                 response.raise_for_status()
                 return response.json()
         except Exception as e:
-            logger.error(f"Error building context: {str(e)}")
+            logger.error(f"Error building context: {e!s}")
             raise
 
 

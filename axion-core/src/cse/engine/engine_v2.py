@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -24,7 +23,6 @@ from typing import Any, Dict
 
 from ...engine.ecs import ResonanceAuditor, ResonanceRegistry, World
 from ...engine.ecs.compiler import ECSSystemCompiler
-from ...engine.scheduling.compiled_graph import CompiledGraph
 from ...engine.scheduling.layered_scheduler import LayeredScheduler
 from ...phoenix.logging import EthicalLogger, ProcessStatus
 from ...system.refactor.parallel_executor_v2 import DeterministicParallelExecutor
@@ -36,8 +34,7 @@ from ..validators import LawValidator
 
 
 class CoherentSynthesisEngine:
-    """
-    The master execution kernel for the Synarche OMEGA framework.
+    """The master execution kernel for the Synarche OMEGA framework.
     Coordinates the Audit Cycle (Zero Entropy validation) and the Expansion Cycle (MCP Tool Registration).
     Facilitates continuous, autonomous 'Conceptual Engineering' without human bottlenecking.
     """
@@ -45,7 +42,9 @@ class CoherentSynthesisEngine:
     def __init__(self) -> None:
         """Initializes the engine and its sub-components with the repository root context."""
         # Anchor to the repository root relative to axion-core/src/cse/
-        self.root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+        self.root_dir = os.path.dirname(
+            os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        )
 
         # Initialize Sub-Components
         self.loom_parser = LoomParser(self.root_dir)
@@ -74,22 +73,26 @@ class CoherentSynthesisEngine:
         self.scheduler = LayeredScheduler(self.graph, self.executor)
 
     async def execute_audit_cycle(self) -> Dict[str, Any]:
-        """
-        Executes the Zero Entropy state validation by auditing structural drift.
+        """Executes the Zero Entropy state validation by auditing structural drift.
         Integrates the ECS Scheduler for deterministic governance checks.
 
         Returns:
             Dict[str, Any]: Results including status, entropy score, and specific findings.
+
         """
         try:
-            await self.ethos_logger.log_event("Initiating Zero Entropy Audit Cycle...", ProcessStatus.INFO)
+            await self.ethos_logger.log_event(
+                "Initiating Zero Entropy Audit Cycle...", ProcessStatus.INFO
+            )
 
             # 1. Structural Audit (Loom/Law)
             loom_state = self.loom_parser.extract_state()
             findings = self.law_validator.audit_drift(loom_state)
 
             # Run a frame of the scheduler to verify runtime integrity
-            await self.ethos_logger.log_event("Executing ECS Deterministic Logic Audit...", ProcessStatus.INFO)
+            await self.ethos_logger.log_event(
+                "Executing ECS Deterministic Logic Audit...", ProcessStatus.INFO
+            )
 
             # Layered execution with world context
             context = {"world": self.world}
@@ -99,7 +102,8 @@ class CoherentSynthesisEngine:
             status = "STABLE" if entropy == 0.0 else "DEGRADED"
 
             await self.ethos_logger.log_event(
-                f"Audit Complete. Status: {status} | Entropy: {entropy}", ProcessStatus.INFO
+                f"Audit Complete. Status: {status} | Entropy: {entropy}",
+                ProcessStatus.INFO,
             )
 
             self.selt_logger.record_synthesis(f"AUDIT_{status}", entropy, findings)
@@ -111,19 +115,21 @@ class CoherentSynthesisEngine:
             return {"status": "HALTED", "error": error_msg}
 
     async def execute_expansion_cycle(self) -> Dict[str, Any]:
-        """
-        Executes autonomous tool registration from the Forge (.agent/skills/).
+        """Executes autonomous tool registration from the Forge (.agent/skills/).
         Identifies and registers kcap_*.py capabilities as MCP tools.
 
         Returns:
             Dict[str, Any]: Results including status, count of registered tools, and findings.
+
         """
         skills_dir = os.path.join(self.root_dir, ".agent", "skills")
         findings = []
         registered_count = 0
 
         try:
-            await self.ethos_logger.log_event("Initiating Autonomous Expansion Cycle...", ProcessStatus.INFO)
+            await self.ethos_logger.log_event(
+                "Initiating Autonomous Expansion Cycle...", ProcessStatus.INFO
+            )
 
             if not os.path.exists(skills_dir):
                 raise FileNotFoundError(f"Missing Forge Substrate: {skills_dir}")
@@ -137,15 +143,22 @@ class CoherentSynthesisEngine:
                             registered_count += 1
                             findings.append(f"KCAP_REGISTERED: {schema['name']}")
                     else:
-                        findings.append(f"KCAP_REJECTED: {filename} (Phoenix Compliance Failure)")
+                        findings.append(
+                            f"KCAP_REJECTED: {filename} (Phoenix Compliance Failure)"
+                        )
 
             status = "EXPANDED" if registered_count > 0 else "STATIC"
             await self.ethos_logger.log_event(
-                f"Expansion Cycle {status}. Registered {registered_count} tools.", ProcessStatus.INFO
+                f"Expansion Cycle {status}. Registered {registered_count} tools.",
+                ProcessStatus.INFO,
             )
 
             self.selt_logger.record_synthesis(f"EXPANSION_{status}", 0.0, findings)
-            return {"status": status, "registered": registered_count, "findings": findings}
+            return {
+                "status": status,
+                "registered": registered_count,
+                "findings": findings,
+            }
 
         except Exception as e:
             error_msg = f"EXPANSION_HALTED: {e!s}"
@@ -154,13 +167,15 @@ class CoherentSynthesisEngine:
             return {"status": "HALTED", "error": error_msg}
 
     async def run_full_synthesis(self) -> Dict[str, Any]:
-        """
-        The Master OMEGA Loop: Audits the system and expands if stable.
+        """The Master OMEGA Loop: Audits the system and expands if stable.
 
         Returns:
             Dict[str, Any]: The aggregate result of the audit and expansion cycles.
+
         """
-        await self.ethos_logger.log_event("Starting Full System Synthesis...", ProcessStatus.INFO)
+        await self.ethos_logger.log_event(
+            "Starting Full System Synthesis...", ProcessStatus.INFO
+        )
 
         audit_result = await self.execute_audit_cycle()
 
@@ -169,10 +184,14 @@ class CoherentSynthesisEngine:
             expansion_result = await self.execute_expansion_cycle()
             result = {"audit": audit_result, "expansion": expansion_result}
         else:
-            await self.ethos_logger.log_event("Expansion SKIPPED due to systemic entropy.", ProcessStatus.WARNING)
+            await self.ethos_logger.log_event(
+                "Expansion SKIPPED due to systemic entropy.", ProcessStatus.WARNING
+            )
             result = {"audit": audit_result, "expansion": "SKIPPED_DUE_TO_ENTROPY"}
 
-        await self.ethos_logger.log_event("Full Synthesis Cycle Complete.", ProcessStatus.INFO)
+        await self.ethos_logger.log_event(
+            "Full Synthesis Cycle Complete.", ProcessStatus.INFO
+        )
         return result
 
 

@@ -1,14 +1,14 @@
-"""
-Artifact ID: CORE-FDE-ECS-REG-001
+"""Artifact ID: CORE-FDE-ECS-REG-001
 Ethos: Identity is Absolute.
 """
 
+
 class EntityRegistry:
-    """
-    Maintains a deterministic counter for Entity ID generation.
-    Must be serialized along with the World snapshot to ensure 
+    """Maintains a deterministic counter for Entity ID generation.
+    Must be serialized along with the World snapshot to ensure
     rewinds do not cause overlapping ID assignments.
     """
+
     def __init__(self, starting_id: int = 1):
         self._next_id = starting_id
 

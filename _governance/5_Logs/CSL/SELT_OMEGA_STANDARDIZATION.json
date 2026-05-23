@@ -1,29 +1,26 @@
 {
-    "governance": {
-        "artifact_id": "SELT-OMEGA-STANDARDIZATION-001",
-        "name": "SELT Shadow Log",
-        "version": "v15.0 [OMEGA]",
-        "domain": "GVRN",
-        "evolution": "Cognitive Ascension",
-        "status": "[CANONIZED]",
-        "celestial_class": "[PLANET]",
-        "relations": "GOVERNED_BY: CORE-CODEX-001"
-    },
-    "metacognitive_deconstruction": {
-        "intent": "Resolve the dissonance between hardcoded literals and the governed OMEGA v15.0 standard.",
-        "dissonance_report": [
-            "Variable 'v15.0 [OMEGA]' is duplicated in every file header but lacks a central definition.",
-            "Identity 'f0f0f0f0-f0f0-4f0f-af0f-f0f0f0f0f0f0' is used in logic but lacks a semantic name.",
-            "TarotShard 'Justice' is referenced in RPG headers but missing from the central enum."
-        ],
-        "synthesis_logic": "By elevating these literals to constants in forge/enums.py, we create a single source of truth that allows the Sentinel and Transclude engines to operate with higher coherence."
-    },
-    "telemetry": {
-        "operation": "STANDARDIZATION_REFACTOR",
-        "affected_files": [
-            "forge/enums.py",
-            "package.json"
-        ],
-        "timestamp": "2026-04-28T06:25:00-04:00"
-    }
+  "governance": {
+    "artifact_id": "SELT-OMEGA-STANDARDIZATION-001",
+    "name": "SELT Shadow Log",
+    "version": "v15.0 [OMEGA]",
+    "domain": "GVRN",
+    "evolution": "Cognitive Ascension",
+    "status": "[CANONIZED]",
+    "celestial_class": "[PLANET]",
+    "relations": "GOVERNED_BY: CORE-CODEX-001"
+  },
+  "metacognitive_deconstruction": {
+    "intent": "Resolve the dissonance between hardcoded literals and the governed OMEGA v15.0 standard.",
+    "dissonance_report": [
+      "Variable 'v15.0 [OMEGA]' is duplicated in every file header but lacks a central definition.",
+      "Identity 'f0f0f0f0-f0f0-4f0f-af0f-f0f0f0f0f0f0' is used in logic but lacks a semantic name.",
+      "TarotShard 'Justice' is referenced in RPG headers but missing from the central enum."
+    ],
+    "synthesis_logic": "By elevating these literals to constants in forge/enums.py, we create a single source of truth that allows the Sentinel and Transclude engines to operate with higher coherence."
+  },
+  "telemetry": {
+    "operation": "STANDARDIZATION_REFACTOR",
+    "affected_files": ["forge/enums.py", "package.json"],
+    "timestamp": "2026-04-28T06:25:00-04:00"
+  }
 }

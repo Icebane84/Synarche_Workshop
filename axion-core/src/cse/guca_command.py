@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -26,32 +25,31 @@ from typing import Any
 
 
 class GUCACommand(abc.ABC):
-    """
-    Abstract Base Class for all GUCA Commands (Abstraction).
+    """Abstract Base Class for all GUCA Commands (Abstraction).
     Defines the standard interface for executable operations within the pipeline.
     """
 
     def __init__(self, name: str, description: str) -> None:
-        """
-        Initializes the command with a name and description.
-        
+        """Initializes the command with a name and description.
+
         Args:
             name (str): The display name of the command.
             description (str): A brief description of the command's purpose.
+
         """
         self.name = name
         self.description = description
 
     @abc.abstractmethod
     def execute(self, context: dict[str, Any]) -> dict[str, Any]:
-        """
-        Executes the command with the given context.
-        
+        """Executes the command with the given context.
+
         Args:
             context (dict[str, Any]): The operational context to modify.
-            
+
         Returns:
             dict[str, Any]: The updated operational context.
+
         """
         pass
 
@@ -61,24 +59,25 @@ class GUCACommand(abc.ABC):
 
 
 class GUCAExecutor:
-    """
-    Executes GUCA Commands polymorphically.
+    """Executes GUCA Commands polymorphically.
     Manages the sequential execution of command pipelines and context propagation.
-    
+
     Synergy Note: Can wrap calls to structure_enforcer.py as GUCACommand
     subclasses to integrate automated enforcement into any pipeline.
     """
 
-    def execute_commands(self, commands: Sequence[GUCACommand], initial_context: dict[str, Any]) -> dict[str, Any]:
-        """
-        Executes a sequence of commands starting with an initial context.
-        
+    def execute_commands(
+        self, commands: Sequence[GUCACommand], initial_context: dict[str, Any]
+    ) -> dict[str, Any]:
+        """Executes a sequence of commands starting with an initial context.
+
         Args:
             commands (Sequence[GUCACommand]): The list of commands to execute.
             initial_context (dict[str, Any]): The starting context.
-            
+
         Returns:
             dict[str, Any]: The final context after all commands have executed.
+
         """
         current_context = initial_context.copy()
         for command in commands:
@@ -90,35 +89,34 @@ class GUCAExecutor:
 
 
 class DataProcessingCommand(GUCACommand):
-    """
-    Base command for data processing operations (Inheritance).
+    """Base command for data processing operations (Inheritance).
     Provides utility methods for getting and setting data within the context.
     """
 
     def __init__(self, name: str, description: str, data_key: str) -> None:
-        """
-        Initializes the data processing command.
-        
+        """Initializes the data processing command.
+
         Args:
             name (str): Command name.
             description (str): Command description.
             data_key (str): The key in the context to operate on.
+
         """
         super().__init__(name, description)
         self.data_key = data_key
 
     def _get_data(self, context: dict[str, Any]) -> Any:
-        """
-        Retrieves data from the context using the data_key.
-        
+        """Retrieves data from the context using the data_key.
+
         Args:
             context (dict[str, Any]): The current context.
-            
+
         Returns:
             Any: The retrieved data.
-            
+
         Raises:
             ValueError: If the data_key is missing from the context.
+
         """
         data = context.get(self.data_key)
         if data is None:
@@ -126,12 +124,12 @@ class DataProcessingCommand(GUCACommand):
         return data
 
     def _set_data(self, context: dict[str, Any], new_data: Any) -> None:
-        """
-        Sets data in the context using the data_key.
-        
+        """Sets data in the context using the data_key.
+
         Args:
             context (dict[str, Any]): The current context.
             new_data (Any): The data to set.
+
         """
         context[self.data_key] = new_data
 
@@ -139,7 +137,9 @@ class DataProcessingCommand(GUCACommand):
 class FlattenJsonCommand(DataProcessingCommand):
     """Flattens a nested JSON object into a flat key-value dict."""
 
-    def __init__(self, input_key: str = "raw_json_data", output_key: str = "flattened_json_data"):
+    def __init__(
+        self, input_key: str = "raw_json_data", output_key: str = "flattened_json_data"
+    ):
         super().__init__(
             name="Flatten JSON",
             description=f"Flattens JSON data from '{input_key}' to '{output_key}'.",
@@ -168,8 +168,7 @@ class FlattenJsonCommand(DataProcessingCommand):
 
 
 class DataStore:
-    """
-    Encapsulates data storage operations (Encapsulation — The Boundary Principle).
+    """Encapsulates data storage operations (Encapsulation — The Boundary Principle).
     Provides a private storage mechanism for processed artifacts.
     """
 
@@ -178,25 +177,25 @@ class DataStore:
         self.__data: dict[str, Any] = {}
 
     def save(self, key: str, value: Any) -> None:
-        """
-        Saves a value to the private store.
-        
+        """Saves a value to the private store.
+
         Args:
             key (str): The storage key.
             value (Any): The value to persist.
+
         """
         self.__data[key] = value
         print(f"  - DataStore: Saved '{key}'")
 
     def load(self, key: str) -> Any:
-        """
-        Loads a value from the private store.
-        
+        """Loads a value from the private store.
+
         Args:
             key (str): The storage key.
-            
+
         Returns:
             Any: The retrieved value, or None if not found.
+
         """
         return self.__data.get(key)
 
@@ -232,11 +231,15 @@ if __name__ == "__main__":
     executor = GUCAExecutor()
     data_store = DataStore()
 
-    initial_context = {"raw_json_data": '{"user": {"id": 101, "name": "Charlie"}, "preferences": {"theme": "dark"}}'}
+    initial_context = {
+        "raw_json_data": '{"user": {"id": 101, "name": "Charlie"}, "preferences": {"theme": "dark"}}'
+    }
 
     commands_to_run = [
         FlattenJsonCommand(),
-        SaveToDataStoreCommand(data_store, input_key="flattened_json_data", store_key="user_config"),
+        SaveToDataStoreCommand(
+            data_store, input_key="flattened_json_data", store_key="user_config"
+        ),
     ]
 
     final_context = executor.execute_commands(commands_to_run, initial_context)

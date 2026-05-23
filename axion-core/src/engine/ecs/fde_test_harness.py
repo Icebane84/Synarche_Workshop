@@ -1,8 +1,9 @@
-"""
-Artifact ID: CORE-FDE-TEST-001
+"""Artifact ID: CORE-FDE-TEST-001
 Ethos: Verification through Execution.
 """
+
 import copy
+
 
 # --- PHASE 3: THE EXECUTOR ---
 class DeterministicParallelExecutor:
@@ -22,6 +23,7 @@ class DeterministicParallelExecutor:
                     raise RuntimeError(f"Collision on key: {key}")
                 seen_keys.add(key)
                 global_context[key] = value
+
 
 # --- PHASE 5: THE ECS SYSTEM ---
 class MovementSystem:
@@ -43,18 +45,19 @@ class MovementSystem:
                     velocities[ent_id]["dx"] = 5
                 elif p_input == "WALK":
                     velocities[ent_id]["dx"] = 1
-                
+
                 # Apply Velocity to Transform
                 transforms[ent_id]["x"] += velocities[ent_id]["dx"]
 
         return {"writes": {"Transform": transforms, "Velocity": velocities}}
+
 
 # --- PHASE 4: THE ROLLBACK CORE ---
 class RollbackEngine:
     def __init__(self):
         self.executor = DeterministicParallelExecutor()
         self.state_buffer = {}  # Snapshot anchor
-        self.input_log = {}     # Absolute truth
+        self.input_log = {}  # Absolute truth
         self.current_frame = 0
 
     def get_inputs(self, frame):
@@ -74,18 +77,24 @@ class RollbackEngine:
         inputs = self.get_inputs(self.current_frame)
         self._simulate_frame(self.current_frame, context, inputs, compiled_graph)
         self.state_buffer[self.current_frame] = copy.deepcopy(context)
-        
-        print(f"Frame {self.current_frame} Complete | Pos X: {context['Transform']['player_1']['x']}")
+
+        print(
+            f"Frame {self.current_frame} Complete | Pos X: {context['Transform']['player_1']['x']}"
+        )
         self.current_frame += 1
 
     def handle_late_input(self, target_frame, actual_inputs, context, compiled_graph):
-        print(f"\n[!] LATE NETWORK PACKET: Frame {target_frame} inputs = {actual_inputs}")
+        print(
+            f"\n[!] LATE NETWORK PACKET: Frame {target_frame} inputs = {actual_inputs}"
+        )
         self.input_log[target_frame] = actual_inputs
-        
+
         print(f"[ROLLBACK] Rewinding to Frame {target_frame - 1}...")
         restored_state = copy.deepcopy(self.state_buffer[target_frame - 1])
-        
-        print(f"[ROLLBACK] Fast-Forwarding {target_frame} -> {self.current_frame - 1}...")
+
+        print(
+            f"[ROLLBACK] Fast-Forwarding {target_frame} -> {self.current_frame - 1}..."
+        )
         for frame in range(target_frame, self.current_frame):
             inputs = self.input_log.get(frame)
             self._simulate_frame(frame, restored_state, inputs, compiled_graph)
@@ -93,16 +102,19 @@ class RollbackEngine:
 
         context.clear()
         context.update(restored_state)
-        print(f"[ROLLBACK] Synchronized. Corrected Pos X: {context['Transform']['player_1']['x']}\n")
+        print(
+            f"[ROLLBACK] Synchronized. Corrected Pos X: {context['Transform']['player_1']['x']}\n"
+        )
+
 
 # --- EXECUTION HARNESS ---
 if __name__ == "__main__":
     # Initial State
     global_context = {
         "Transform": {"player_1": {"x": 0}},
-        "Velocity": {"player_1": {"dx": 1}}
+        "Velocity": {"player_1": {"dx": 1}},
     }
-    
+
     # Phase 2 Compiled Graph (1 Layer, 1 System)
     compiled_graph = [[MovementSystem()]]
     engine = RollbackEngine()

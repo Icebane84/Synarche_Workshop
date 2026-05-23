@@ -1,4 +1,5 @@
 # AOP-MAP-001_MusashiAuditProcedure_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.MAP.001` | The Sovereign ID. |
-| **Official Name** | `AOP-MAP-001_MusashiAuditProcedure_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                        | Description       |
+| :------------------ | :------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.MAP.001`                               | The Sovereign ID. |
+| **Official Name**   | `AOP-MAP-001_MusashiAuditProcedure_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                            | The Standard.     |
+| **Domain**          | `GVRN`                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                   | The Weight.       |
+| **Evolution**       | `Omega Ascension`                            | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                   | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
 
 ---
+
 UIP: AOP-MAP-001
 Title: Musashi Audit Procedure
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-MAP-001_MusashiAuditProcedure_v11.0.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-MAP-001_MusashiAuditProcedure_v11.0.md)
+  Description: >
   Defines the step-by-step operational procedure for executing a Musashi Audit on a target artifact, ensuring absolute compliance with the 10 Pillars of OGLN Discipline.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769251200
-Tags: 
-  - #Protocol
-  - #Audit
-  - #Musashi
-  - #DisciplinedExecution
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769251200
+  Tags:
+- #Protocol
+- #Audit
+- #Musashi
+- #DisciplinedExecution
+
 ---
 
 > [!IMPORTANT]

@@ -9,6 +9,7 @@
 ---
 
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # API Module
 
@@ -43,17 +44,20 @@ FastAPI application serving three architectural layers: routes (HTTP endpoints),
 ## Architecture Overview
 
 **Three layers**:
+
 1. **Routes** (`routers/*`): HTTP endpoints mapping to services
 2. **Services** (`*_service.py`): Business logic orchestrating domain models, database, graphs, AI providers
 3. **Models** (`models.py`): Pydantic request/response schemas with validation
 
 **Startup flow**:
+
 - Load .env environment variables
 - Initialize CORS middleware + password auth middleware
 - Run database migrations via AsyncMigrationManager on lifespan startup
 - Register all routers
 
 **Key services**:
+
 - `chat_service.py`: Invokes chat graph with messages, context
 - `podcast_service.py`: Orchestrates outline + transcript generation
 - `sources_service.py`: Content ingestion, vectorization, metadata
@@ -65,11 +69,13 @@ FastAPI application serving three architectural layers: routes (HTTP endpoints),
 ## Component Catalog
 
 ### Main Application
+
 - **main.py**: FastAPI app initialization, CORS setup, auth middleware, lifespan event, router registration
 - **Lifespan handler**: Runs AsyncMigrationManager on startup (database schema migration)
 - **Auth middleware**: PasswordAuthMiddleware protects endpoints (password-based access control)
 
 ### Services (Business Logic)
+
 - **chat_service.py**: Invokes chat.py graph; handles message history via SqliteSaver
 - **podcast_service.py**: Generates outline (outline.jinja), then transcript (transcript.jinja) for episodes
 - **sources_service.py**: Ingests files/URLs (content_core), extracts text, vectorizes, saves to SurrealDB
@@ -80,12 +86,14 @@ FastAPI application serving three architectural layers: routes (HTTP endpoints),
 - **notes_service.py**: Creates notes linked to sources/insights
 
 ### Models (Schemas)
+
 - **models.py**: Pydantic schemas for request/response validation
 - Request bodies: ChatRequest, CreateNoteRequest, PodcastGenerationRequest, etc.
 - Response bodies: ChatResponse, NoteResponse, PodcastResponse, etc.
 - Custom validators for enum fields, file paths, model references
 
 ### Routers
+
 - **routers/chat.py**: POST /chat
 - **routers/source_chat.py**: POST /source/{source_id}/chat
 - **routers/podcasts.py**: POST /podcasts, GET /podcasts/{id}, etc.

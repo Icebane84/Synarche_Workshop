@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-REFORGE-001_Principled_Code_Refactoring` |
-| **2. Official Name** | `AOP-REFORGE-001_Principled_Code_Refactoring.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Anti-Entropy, Adaptive Ecosystem** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                            |
+| :--------------------- | :----------------------------------------------- |
+| **1. Artifact ID**     | `AOP-REFORGE-001_Principled_Code_Refactoring`    |
+| **2. Official Name**   | `AOP-REFORGE-001_Principled_Code_Refactoring.md` |
+| **3. Version**         | **v1.0**                                         |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                    |
+| **5. Domain**          | `ARCH`                                           |
+| **6. Evolution**       | **Purposeful Drive**                             |
+| **7. Celestial Class** | `[PLANET]`                                       |
+| **8. Tier**            | **Operational**                                  |
+| **9. State**           | `[ACTIVE]`                                       |
+| **10. Ethos**          | **Guardian of Anti-Entropy, Adaptive Ecosystem** |
+| **11. Catalyst**       | **System Refactor**                              |
+| **12. Relations**      | `Pending Integration`                            |
 
 ---
 
@@ -46,12 +46,12 @@
 ## II. Core Purpose & Objective
 
 - **What (Core Concept)**: To define the standard procedure for analyzing an existing code artifact and systematically
-refactoring it to align with the C.A.S.T.S. mandate.
+  refactoring it to align with the C.A.S.T.S. mandate.
 - **How (Execution Flow)**: This playbook uses the Forge Engine (`UMB-FORGE-001`) to orchestrate a multi-step process
-that audits, deconstructs, rewrites, and documents an existing piece of code to improve its quality and compliance.
+  that audits, deconstructs, rewrites, and documents an existing piece of code to improve its quality and compliance.
 - **Why (Rationale)**: To combat architectural decay and technical debt. This protocol provides a reliable pathway for
-evolving the existing codebase, ensuring that legacy components can be systematically improved to meet the same high
-standards as newly generated artifacts.
+  evolving the existing codebase, ensuring that legacy components can be systematically improved to meet the same high
+  standards as newly generated artifacts.
 
 ## III. Core Operational Framework
 

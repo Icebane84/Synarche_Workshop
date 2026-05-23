@@ -9,6 +9,7 @@
 ---
 
 # AOP.Refactor.Ignition.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP.REFACTOR.IGNITION-001` | The Sovereign ID. |
-| **Official Name** | `AOP.Refactor.Ignition.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                            | Description       |
+| :------------------ | :------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP.REFACTOR.IGNITION-001` | The Sovereign ID. |
+| **Official Name**   | `AOP.Refactor.Ignition.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                | The Standard.     |
+| **Domain**          | `GVRN`                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                       | The Weight.       |
+| **Evolution**       | `Omega Ascension`                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                       | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`    | The Network.      |
 
 # Refactor Ignition Playbook (AOP.Refactor.Ignition)
 
@@ -46,30 +47,30 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP.Refactor.Ignition` |
-| **2. Official Name** | `AOP.Refactor.Ignition.md` |
-| **3. Version** | **v13.0 (Geode Edition)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `AOP` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[MOON]` (Operational Guide) |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **Synergy Map Integration** |
-| **12. Relations** | `IMPLEMENTS: GVRN.Refactor.Protocol`, `TRIGGERS: GVRN.Protocol.Audit` |
+| Field                  | Value                                                                 |
+| :--------------------- | :-------------------------------------------------------------------- |
+| **1. Artifact ID**     | `AOP.Refactor.Ignition`                                               |
+| **2. Official Name**   | `AOP.Refactor.Ignition.md`                                            |
+| **3. Version**         | **v13.0 (Geode Edition)**                                             |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                                         |
+| **5. Domain**          | `AOP`                                                                 |
+| **6. Evolution**       | **Cognitive Ascension**                                               |
+| **7. Celestial Class** | `[MOON]` (Operational Guide)                                          |
+| **8. Tier**            | **Operational**                                                       |
+| **9. State**           | `[ACTIVE]`                                                            |
+| **10. Ethos**          | **Guardian of Coherence**                                             |
+| **11. Catalyst**       | **Synergy Map Integration**                                           |
+| **12. Relations**      | `IMPLEMENTS: GVRN.Refactor.Protocol`, `TRIGGERS: GVRN.Protocol.Audit` |
 
 ---
 
 ### **II. Architectural Governance Primitives (AGP)**
 
-| Element | Value | Purpose |
-| :---- | :---- | :---- |
-| **State Vector** | `[0.95]` | High precision required for batch operations. |
-| **Risk Governance** | **Medium** | Mass database operations carry data loss risk. |
-| **Mitigation** | **Dry Run** | Mandatory `DRY_RUN` before nuclear commit. |
+| Element             | Value       | Purpose                                        |
+| :------------------ | :---------- | :--------------------------------------------- |
+| **State Vector**    | `[0.95]`    | High precision required for batch operations.  |
+| **Risk Governance** | **Medium**  | Mass database operations carry data loss risk. |
+| **Mitigation**      | **Dry Run** | Mandatory `DRY_RUN` before nuclear commit.     |
 
 ---
 
@@ -90,15 +91,15 @@ SYNG.Engine.Core, UTILIZES, Uses the CSE for logic parsing.
 
 The refactor is orchestrated through a specialized **Task Group** coordinating Tarot Masks in parallel:
 
-| Phase | Mask / Agent | Operational Objective |
-| :---- | :---- | :---- |
-| **1. Triage** | **The Magician** | Scans persistence for `OGLN.Core.Governance.Codex` gaps. |
-| **2. RNC Rename** | **The Emperor** | Transmutes IDs to `Domain.Subject.Type` format. |
-| **3. Header Forge** | **The Emperor** | Injects the 12-point **Chronos Lock** (UIP) header. |
-| **4. Logic Weave** | **The High Priestess** | Establishes semantic links to the Knowledge Graph. |
-| **5. Code Scan** | **Knight of Swords** | Refactors snippets to Universal Coding Standards. |
-| **6. Visual Sync** | **The Star** | Standardizes Markdown and generates Mermaid diagrams. |
-| **7. Finalize** | **King of Pentacles** | Commits verified artifacts with **SHA-256 integrity hash**. |
+| Phase               | Mask / Agent           | Operational Objective                                       |
+| :------------------ | :--------------------- | :---------------------------------------------------------- |
+| **1. Triage**       | **The Magician**       | Scans persistence for `OGLN.Core.Governance.Codex` gaps.    |
+| **2. RNC Rename**   | **The Emperor**        | Transmutes IDs to `Domain.Subject.Type` format.             |
+| **3. Header Forge** | **The Emperor**        | Injects the 12-point **Chronos Lock** (UIP) header.         |
+| **4. Logic Weave**  | **The High Priestess** | Establishes semantic links to the Knowledge Graph.          |
+| **5. Code Scan**    | **Knight of Swords**   | Refactors snippets to Universal Coding Standards.           |
+| **6. Visual Sync**  | **The Star**           | Standardizes Markdown and generates Mermaid diagrams.       |
+| **7. Finalize**     | **King of Pentacles**  | Commits verified artifacts with **SHA-256 integrity hash**. |
 
 ---
 
@@ -112,7 +113,7 @@ The refactor is orchestrated through a specialized **Task Group** coordinating T
 
 ### **Honest Thoughts**
 
-Refactoring is not just cleanup; it is *ignition*. This playbook turns the abstract "Master Protocol" into kinetic action. By linking it directly to the **Audit Protocol**, we ensure that no refactor is considered "done" until it passes the Musashi Gate. It is a closed loop of quality.
+Refactoring is not just cleanup; it is _ignition_. This playbook turns the abstract "Master Protocol" into kinetic action. By linking it directly to the **Audit Protocol**, we ensure that no refactor is considered "done" until it passes the Musashi Gate. It is a closed loop of quality.
 
 > [!NOTE]
 > **[ARTIFACT END]**

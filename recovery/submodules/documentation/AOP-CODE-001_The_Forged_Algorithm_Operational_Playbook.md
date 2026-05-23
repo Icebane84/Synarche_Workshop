@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `AOP-CODE-001_The_Forged_Algorithm_Operational_Playbook` |
-| **2. Official Name** | `AOP-CODE-001_The_Forged_Algorithm_Operational_Playbook.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence, Adaptive Ecosystem** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                                       |
+| :--------------------- | :---------------------------------------------------------- |
+| **1. Artifact ID**     | `AOP-CODE-001_The_Forged_Algorithm_Operational_Playbook`    |
+| **2. Official Name**   | `AOP-CODE-001_The_Forged_Algorithm_Operational_Playbook.md` |
+| **3. Version**         | **v1.0**                                                    |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                               |
+| **5. Domain**          | `ARCH`                                                      |
+| **6. Evolution**       | **Purposeful Drive**                                        |
+| **7. Celestial Class** | `[PLANET]`                                                  |
+| **8. Tier**            | **Operational**                                             |
+| **9. State**           | `[ACTIVE]`                                                  |
+| **10. Ethos**          | **Guardian of Coherence, Adaptive Ecosystem**               |
+| **11. Catalyst**       | **System Refactor**                                         |
+| **12. Relations**      | `Pending Integration`                                       |
 
 ---
 
@@ -46,11 +46,11 @@
 ## II. Core Purpose & Objective
 
 - **What (Core Concept)**: To define the end-to-end, principle-driven procedure for generating code that is Coherent,
-Adaptable, Secure, Transparent, and Synergistic (C.A.S.T.S.).
+  Adaptable, Secure, Transparent, and Synergistic (C.A.S.T.S.).
 - **How (Execution Flow)**: This AOP governs the entire lifecycle of code generation by the CSE, from initial task
-deconstruction to final feedback integration, orchestrating multiple sub-protocols.
+  deconstruction to final feedback integration, orchestrating multiple sub-protocols.
 - **Why (Rationale)**: To ensure that all AI-generated code is not merely functional but is also a high-quality,
-maintainable, and secure asset that aligns with the system's core architectural principles.
+  maintainable, and secure asset that aligns with the system's core architectural principles.
 
 ## III. Core Operational Framework
 

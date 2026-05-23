@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -53,8 +52,7 @@ from enum import Enum, auto
 
 # GVRN-STD-ENUM-001 - Mandates Enum for logging levels
 class ProcessStatus(Enum):
-    """
-    Standardized enumeration for process logging levels.
+    """Standardized enumeration for process logging levels.
     Ensures consistent status reporting across the Axion Core.
     """
 
@@ -66,8 +64,7 @@ class ProcessStatus(Enum):
 
 
 def setup_synarche_logging(log_file: str = "error_audit.log") -> logging.Logger:
-    """
-    Initializes the PhoenixLogger with dual-stream handlers:
+    """Initializes the PhoenixLogger with dual-stream handlers:
     1. Console (INFO+) for real-time transparency.
     2. File (ERROR+) for persistent accountability and auditing.
 
@@ -76,6 +73,7 @@ def setup_synarche_logging(log_file: str = "error_audit.log") -> logging.Logger:
 
     Returns:
         A configured logging.Logger instance.
+
     """
     logger = logging.getLogger("PhoenixLogger")
 
@@ -86,7 +84,9 @@ def setup_synarche_logging(log_file: str = "error_audit.log") -> logging.Logger:
     logger.setLevel(logging.DEBUG)  # Root captures all; handlers filter
 
     # ISO-8601 Format for V-Control (Temporal Precision)
-    log_format = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    log_format = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
 
     # 1. Console Handler (The Pulse) - INFO and above
     c_handler = logging.StreamHandler()

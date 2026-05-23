@@ -9,6 +9,7 @@
 ---
 
 # index.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-INDEX-001` | The Sovereign ID. |
-| **Official Name** | `index.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
+| **Official Name**   | `index.md`                    | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # User Guide - How to Use Open Notebook
 
@@ -43,6 +44,7 @@ This guide covers practical, step-by-step usage of Open Notebook features. You a
 ## Start Here
 
 ### [Interface Overview](interface-overview.md)
+
 Learn the layout before diving in. Understand the three-panel design and where everything is.
 
 ---
@@ -50,9 +52,11 @@ Learn the layout before diving in. Understand the three-panel design and where e
 ## Eight Core Features
 
 ### 1. [Adding Sources](adding-sources.md)
+
 How to bring content into your notebook. Supports PDFs, web links, audio, video, text, and more.
 
 **Quick links:**
+
 - Upload a PDF or document
 - Add a web link or article
 - Transcribe audio or video
@@ -62,9 +66,11 @@ How to bring content into your notebook. Supports PDFs, web links, audio, video,
 ---
 
 ### 2. [Working with Notes](working-with-notes.md)
+
 Creating, organizing, and using notes (both manual and AI-generated).
 
 **Quick links:**
+
 - Create a manual note
 - Save AI responses as notes
 - Apply transformations to generate insights
@@ -74,9 +80,11 @@ Creating, organizing, and using notes (both manual and AI-generated).
 ---
 
 ### 3. [Chat Effectively](chat-effectively.md)
+
 Have conversations with AI about your sources. Manage context to control what AI sees.
 
 **Quick links:**
+
 - Start your first chat
 - Select which sources go in context
 - Ask effective questions
@@ -86,9 +94,11 @@ Have conversations with AI about your sources. Manage context to control what AI
 ---
 
 ### 4. [Creating Podcasts](creating-podcasts.md)
+
 Convert your research into audio dialogue for passive consumption.
 
 **Quick links:**
+
 - Create your first podcast
 - Choose or customize speakers
 - Select TTS provider
@@ -98,9 +108,11 @@ Convert your research into audio dialogue for passive consumption.
 ---
 
 ### 5. [Search Effectively](search.md)
+
 Two search modes: text-based (keyword) and vector-based (semantic). Know when to use each.
 
 **Quick links:**
+
 - Text search vs vector search (when to use)
 - Running effective searches
 - Using the Ask feature for comprehensive answers
@@ -110,9 +122,11 @@ Two search modes: text-based (keyword) and vector-based (semantic). Know when to
 ---
 
 ### 6. [Transformations](transformations.md)
+
 Batch-process sources with predefined templates. Extract the same insights from multiple documents.
 
 **Quick links:**
+
 - Built-in transformation templates
 - Creating custom transformations
 - Applying to single or multiple sources
@@ -121,9 +135,11 @@ Batch-process sources with predefined templates. Extract the same insights from 
 ---
 
 ### 7. [Citations](citations.md)
+
 Verify AI claims by tracing them back to source material. Understand the citation system.
 
 **Quick links:**
+
 - Reading and clicking citations
 - Verifying claims against sources
 - Requesting better citations
@@ -161,27 +177,32 @@ Task: "I'm exploring a concept without knowing exact words"
 ## Quick-Start Checklist: First 15 Minutes
 
 **Step 1: Create a Notebook (1 min)**
+
 - Name: Something descriptive ("Q1 Market Research", "AI Safety Papers", etc.)
 - Description: 1-2 sentences about what you're researching
 - This is your research container
 
 **Step 2: Add Your First Source (3 min)**
+
 - Pick one: PDF, web link, or text
 - Follow [Adding Sources](adding-sources.md)
 - Wait for processing (usually 30-60 seconds)
 
 **Step 3: Chat About It (3 min)**
+
 - Go to Chat
 - Select your source (set context to "Full Content")
 - Ask a simple question: "What are the main points?"
 - See AI respond with citations
 
 **Step 4: Save Insight as Note (2 min)**
+
 - Good response? Click "Save as Note"
 - Name it something useful ("Main points from source X")
 - Now you have a captured insight
 
 **Step 5: Explore More (6 min)**
+
 - Add another source
 - Chat about both together
 - Ask a question that compares them
@@ -193,15 +214,15 @@ Task: "I'm exploring a concept without knowing exact words"
 
 ## Common Mistakes to Avoid
 
-| Mistake | Problem | Fix |
-|---------|---------|-----|
-| Adding everything to one notebook | No isolation between projects | Create separate notebooks for different topics |
-| Expecting AI to know your context | Questions get generic answers | Describe your research focus in chat context |
-| Forgetting to cite sources | You can't verify claims | Click citations to check source chunks |
-| Using Chat for one-time questions | Slower than Ask | Use Ask for comprehensive Q&A, Chat for exploration |
-| Adding huge PDFs without chunking | Slow processing, poor search | Break into multiple smaller sources if possible |
-| Using same context for all chats | Expensive, unfocused | Adjust context level for each chat |
-| Ignoring vector search | Only finding exact keywords | Use vector search to explore conceptually |
+| Mistake                           | Problem                       | Fix                                                 |
+| --------------------------------- | ----------------------------- | --------------------------------------------------- |
+| Adding everything to one notebook | No isolation between projects | Create separate notebooks for different topics      |
+| Expecting AI to know your context | Questions get generic answers | Describe your research focus in chat context        |
+| Forgetting to cite sources        | You can't verify claims       | Click citations to check source chunks              |
+| Using Chat for one-time questions | Slower than Ask               | Use Ask for comprehensive Q&A, Chat for exploration |
+| Adding huge PDFs without chunking | Slow processing, poor search  | Break into multiple smaller sources if possible     |
+| Using same context for all chats  | Expensive, unfocused          | Adjust context level for each chat                  |
+| Ignoring vector search            | Only finding exact keywords   | Use vector search to explore conceptually           |
 
 ---
 

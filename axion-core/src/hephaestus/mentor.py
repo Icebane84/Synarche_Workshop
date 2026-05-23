@@ -1,5 +1,4 @@
-"""
-# UMB-DIDACTIC-001: The Didactic Module Generator (The Mentor's Voice)
+"""# UMB-DIDACTIC-001: The Didactic Module Generator (The Mentor's Voice).
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -32,9 +31,7 @@
 
 
 class MentorsVoice:
-    """
-    The Mentor module responsible for generating interactive lesson modules.
-    """
+    """The Mentor module responsible for generating interactive lesson modules."""
 
     def __init__(self) -> None:
         self.wisdom_db = {
@@ -56,9 +53,7 @@ class MentorsVoice:
         }
 
     def generate_lesson(self, violation_code: str, context: str = "") -> str:
-        """
-        Generates a Markdown formatted lesson module.
-        """
+        """Generates a Markdown formatted lesson module."""
         entry = self.wisdom_db.get(
             violation_code.upper(),
             {

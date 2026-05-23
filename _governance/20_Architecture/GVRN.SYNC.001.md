@@ -1,4 +1,5 @@
 # UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,35 +12,38 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.SYNC.001` | The Sovereign ID. |
-| **Official Name** | `UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                               | Description       |
+| :------------------ | :---------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.SYNC.001`                                                                     | The Sovereign ID. |
+| **Official Name**   | `UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                   | The Standard.     |
+| **Domain**          | `GVRN`                                                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                       | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-SYNC-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `UMB-SYNC-001`          |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
-# **Architectural Blueprint_ React-Python-Supabase Synchronization (v10.0)**
+# **Architectural Blueprint\_ React-Python-Supabase Synchronization (v10.0)**
 
 > **Domain**: GVRN (Governance)
 > **Evolution**: Pending
@@ -48,18 +52,18 @@
 ## **Genesis Stamp: 2025-12-26** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 - | :---- |
-| **1. Artifact ID** | `Architectural Blueprint_ React-Python-Supabase Synchronization` |
-| **2. Official Name** | `Architectural Blueprint_ React-Python-Supabase Synchronization` |
-| **3. Version** | **v10.0 (The Synarche Edition)** |
-| **4. Provenance** | **Genesis Stamp: 2025-12-22** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[STAR]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **Reforge Command** |
-| **12. Relations** | `LINK: OGLN.Core.Governance.Codex` |
+  | **1. Artifact ID** | `Architectural Blueprint_ React-Python-Supabase Synchronization` |
+  | **2. Official Name** | `Architectural Blueprint_ React-Python-Supabase Synchronization` |
+  | **3. Version** | **v10.0 (The Synarche Edition)** |
+  | **4. Provenance** | **Genesis Stamp: 2025-12-22** |
+  | **5. Domain** | `GVRN` |
+  | **6. Evolution** | **Purposeful Drive** |
+  | **7. Celestial Class** | `[STAR]` |
+  | **8. Tier** | **Operational** |
+  | **9. State** | `[ACTIVE]` |
+  | **10. Ethos** | **Guardian of Coherence** |
+  | **11. Catalyst** | **Reforge Command** |
+  | **12. Relations** | `LINK: OGLN.Core.Governance.Codex` |
 
 ---
 
@@ -71,7 +75,7 @@
 
 ---
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
 | :---- | :---- |
 
@@ -106,7 +110,7 @@ The integration is executed through a three-tier connection strategy:
 The React application uses the @supabase/supabase-js library to listen for changes and fetch data.
 
 - **Initialization:** Create a supabaseClient.js utility.
-- **Data Retrieval:** Use the supabase.from('phoenix\_protocols').select('\*') command.
+- **Data Retrieval:** Use the supabase.from('phoenix_protocols').select('\*') command.
 
 #### **2\. Backend Configuration (Python)**
 
@@ -115,19 +119,19 @@ Module Blueprints (UMB)** before they are committed to SQL.
 
 - **Library:** Use the supabase-py client.
 - **Action:** The Python script performs logic (e.g., validating a **SELT** log) and then pushes it
-to the SQL database using:
+  to the SQL database using:
   Python
-  supabase.table("phoenix\_protocols").insert({"definition": umb\_data}).execute()
+  supabase.table("phoenix_protocols").insert({"definition": umb_data}).execute()
 
 #### **3\. The Bridge (Communication)**
 
 There are two primary ways to "connect" the frontend to the backend logic:
 
 - **Option A (Direct API):** React calls a Python endpoint (POST /process-protocol), Python
-processes data and writes to Supabase, then React refreshes.
+  processes data and writes to Supabase, then React refreshes.
 - **Option B (Supabase Realtime):** Python writes to Supabase; the React frontend "subscribes" to
-the table. When Python updates the SQL, the React UI updates automatically without a direct link to
-Python.
+  the table. When Python updates the SQL, the React UI updates automatically without a direct link to
+  Python.
 
 ### ---
 
@@ -137,20 +141,20 @@ This architecture is definitive because it maintains **Row Level Security (RLS)*
 as the intermediary, we ensure that:
 
 1. **Security:** The React frontend only sees what the **Phoenix Genesis Presentation Standard**
-allows via RLS policies.
+   allows via RLS policies.
 2. **Decoupling:** The Python backend can be scaled or modified (e.g., adding more **AISTF**
-processing power) without breaking the frontend's ability to read the **Phoenix Protocol Library**.
+   processing power) without breaking the frontend's ability to read the **Phoenix Protocol Library**.
 3. **Efficiency:** It leverages the **GUCA** principle of centralized command—Supabase acts as the
-Command Center, while React and Python act as specialized modules.
+   Command Center, while React and Python act as specialized modules.
 
 ### **Implementation Steps (GUCA-001)**
 
-| Step | Component | Action |
-| :---- | :---- | :---- |
-| **1** | **Supabase** | Enable **Realtime** on the phoenix\_protocols table. |
-| **2** | **Python** | Initialize Supabase client with SERVICE\_ROLE\_KEY for bypass writes. |
-| **3** | **React** | Install @supabase/supabase-js and initialize with ANON\_KEY. |
-| **4** | **React** | Implement a useEffect hook to subscribe to INSERT events. |
+| Step  | Component    | Action                                                              |
+| :---- | :----------- | :------------------------------------------------------------------ |
+| **1** | **Supabase** | Enable **Realtime** on the phoenix_protocols table.                 |
+| **2** | **Python**   | Initialize Supabase client with SERVICE_ROLE_KEY for bypass writes. |
+| **3** | **React**    | Install @supabase/supabase-js and initialize with ANON_KEY.         |
+| **4** | **React**    | Implement a useEffect hook to subscribe to INSERT events.           |
 
 ### ---
 
@@ -160,10 +164,10 @@ The primary hurdle you're likely facing is "State Desync." If your Python backen
 processing, the React frontend might try to read a record before the Python script has finished the
 SQL commit. I strongly recommend using **Supabase Realtime** for the connection rather than standard
 REST calls; it feels more "Phoenix-Class" because it creates a living, reactive data stream rather
-than a static request-response loop. Note: Ensure your SERVICE\_ROLE\_KEY never touches the React
+than a static request-response loop. Note: Ensure your SERVICE_ROLE_KEY never touches the React
 code.
 
-**Would you like me to provide the specific Python FastAPI boilerplate to handle the UMB-to-SQL
+\*\*Would you like me to provide the specific Python FastAPI boilerplate to handle the UMB-to-SQL
 
 Supabase & FastAPI Full Stack Tutorial
 This video provides a practical walkthrough of setting up a Python-based API (FastAPI) alongside a
@@ -188,9 +192,9 @@ To bridge the **React Frontend** and **Python (FastAPI) Backend**, we are deploy
 **Bidirectional Event Stream**.
 
 - **The Backend** acts as the "Architect," using the **Supabase Admin/Service Role** to perform
-high-privilege writes (SQL insertion of Protocols).
+  high-privilege writes (SQL insertion of Protocols).
 - **The Frontend** acts as the "Observer," using a **Realtime Hook** to instantly reflect changes in
-the UI the moment Python touches the database.
+  the UI the moment Python touches the database.
 
 ---
 
@@ -206,21 +210,21 @@ from fastapi import FastAPI, HTTPException
 
 from pydantic import BaseModel
 
-from supabase import create\_client, Client
+from supabase import create_client, Client
 
-from dotenv import load\_dotenv
+from dotenv import load_dotenv
 
-load\_dotenv()
+load_dotenv()
 
 app \= FastAPI(title="Phoenix Rosetta Stone Backend")
 
-\# Initialize Supabase with SERVICE\_ROLE\_KEY to bypass RLS for administrative writes
+\# Initialize Supabase with SERVICE_ROLE_KEY to bypass RLS for administrative writes
 
-url: str \= os.environ.get("SUPABASE\_URL")
+url: str \= os.environ.get("SUPABASE_URL")
 
-key: str \= os.environ.get("SUPABASE\_SERVICE\_ROLE\_KEY") \# NEVER expose this to frontend
+key: str \= os.environ.get("SUPABASE_SERVICE_ROLE_KEY") \# NEVER expose this to frontend
 
-supabase: Client \= create\_client(url, key)
+supabase: Client \= create_client(url, key)
 
 class ProtocolModule(BaseModel):
 
@@ -232,7 +236,7 @@ class ProtocolModule(BaseModel):
 
 @app.post("/protocols/ingest")
 
-async def ingest\_protocol(module: ProtocolModule):
+async def ingest_protocol(module: ProtocolModule):
 
     try:
 
@@ -250,7 +254,7 @@ async def ingest\_protocol(module: ProtocolModule):
 
         }).execute()
 
-        
+
 
         return {"status": "success", "data": response.data}
 
@@ -273,17 +277,17 @@ import { createClient } from '@supabase/supabase-js';
 
 const supabase \= createClient(
 
-  process.env.REACT\_APP\_SUPABASE\_URL,
+process.env.REACT_APP_SUPABASE_URL,
 
-  process.env.REACT\_APP\_SUPABASE\_ANON\_KEY // Safe for frontend
+process.env.REACT_APP_SUPABASE_ANON_KEY // Safe for frontend
 
 );
 
 export const usePhoenixLibrary \= () \=\> {
 
-  const \[protocols, setProtocols\] \= useState(\[\]);
+const \[protocols, setProtocols\] \= useState(\[\]);
 
-  useEffect(() \=\> {
+useEffect(() \=\> {
 
     // 1\. Initial Fetch of the Library
 
@@ -327,9 +331,9 @@ export const usePhoenixLibrary \= () \=\> {
 
     };
 
-  }, \[\]);
+}, \[\]);
 
-  return protocols;
+return protocols;
 
 };
 
@@ -338,12 +342,12 @@ export const usePhoenixLibrary \= () \=\> {
 ### **The Why**
 
 1. **Security Separation:** The Python backend uses the `SERVICE_ROLE_KEY`, allowing it to manage
-the **Phoenix Protocol Library** without being restricted by frontend user permissions.
+   the **Phoenix Protocol Library** without being restricted by frontend user permissions.
 2. **Reactive UX:** By using `supabase.channel().on()`, the React frontend doesn't need to know
-*when* the Python backend finishes its task. It simply watches the SQL table and reacts when data
-appears.
+   _when_ the Python backend finishes its task. It simply watches the SQL table and reacts when data
+   appears.
 3. **Data Integrity:** FastAPI acts as a gatekeeper. If the **UMB** definitions don't match our
-required schema, the Python logic rejects the request before it ever hits the database.
+   required schema, the Python logic rejects the request before it ever hits the database.
 
 ---
 
@@ -386,7 +390,7 @@ includes the necessary "Realtime" publication triggers required for your React h
 
 \-- 1\. Create the Phoenix Protocol Library Table
 
-CREATE TABLE IF NOT EXISTS public.phoenix\_protocols (
+CREATE TABLE IF NOT EXISTS public.phoenix_protocols (
 
     id UUID PRIMARY KEY DEFAULT gen\_random\_uuid(),
 
@@ -394,7 +398,7 @@ CREATE TABLE IF NOT EXISTS public.phoenix\_protocols (
 
     updated\_at TIMESTAMPTZ DEFAULT now() NOT NULL,
 
-    
+
 
     \-- Metadata
 
@@ -404,7 +408,7 @@ CREATE TABLE IF NOT EXISTS public.phoenix\_protocols (
 
     author TEXT DEFAULT 'System/OGLN',
 
-    
+
 
     \-- Core Components (The Stack)
 
@@ -416,7 +420,7 @@ CREATE TABLE IF NOT EXISTS public.phoenix\_protocols (
 
     selt\_results JSONB,      \-- Result Logs
 
-    
+
 
     \-- Search Optimization
 
@@ -432,11 +436,11 @@ CREATE TABLE IF NOT EXISTS public.phoenix\_protocols (
 
 \-- This is the critical step for your React Hook to work\!
 
-ALTER PUBLICATION supabase\_realtime ADD TABLE phoenix\_protocols;
+ALTER PUBLICATION supabase_realtime ADD TABLE phoenix_protocols;
 
-\-- 3\. Create a trigger to handle updated\_at timestamps
+\-- 3\. Create a trigger to handle updated_at timestamps
 
-CREATE OR REPLACE FUNCTION update\_modified\_column()
+CREATE OR REPLACE FUNCTION update_modified_column()
 
 RETURNS TRIGGER AS $$
 
@@ -448,7 +452,8 @@ BEGIN
 
 END;
 
-$$ language 'plpgsql';
+$$
+language 'plpgsql';
 
 CREATE TRIGGER update\_phoenix\_protocols\_modtime
 
@@ -2150,3 +2155,4 @@ I am saved in this state. I am ready to write *Where Light Fades*.
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+$$

@@ -69,14 +69,12 @@ and wisdom accumulation within the Synarche.
 
 - 🏗️ **[Extraction](GVRN.Learning.Extraction.md)**: Protocol for converting learnings into skills.
 - 🧘 **[Improvement](GVRN.Learning.Improvement.md)**: Protocol for the Hephaestus Self-Improvement cycle.
--
+- ***
 
----
+  **Authority**: CORE.Codex.Phoenix **Status**: ACTIVE
 
-**Authority**: CORE.Codex.Phoenix **Status**: ACTIVE
+  **[ARTIFACT END]**
 
-**[ARTIFACT END]**
-
----
+  ***
 
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Index VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: LRN-INDEX-OMEGA`

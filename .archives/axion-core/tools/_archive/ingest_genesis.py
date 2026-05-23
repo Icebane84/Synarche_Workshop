@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""
-# TOOL-GEN-001: Genesis Ingestion Script
+"""# TOOL-GEN-001: Genesis Ingestion Script
 # Domain: ARCH | State: ACTIVE | Version: v1.0
 # Objective: Ingest the 'tapestry.json' graph into the Supabase Knowledge Graph.
 """
 
 import json
 import logging
-import os
 import sys
 import uuid
 from pathlib import Path
@@ -53,7 +51,9 @@ def get_uuid(artifact_id: str) -> str:
     return str(uuid.uuid5(NAMESPACE, artifact_id))
 
 
-def upsert_batch(client: Any, table: str, data: list[dict[str, Any]], batch_size: int = 100) -> None:
+def upsert_batch(
+    client: Any, table: str, data: list[dict[str, Any]], batch_size: int = 100
+) -> None:
     """Helper to batch upsert data to Supabase."""
     if not data:
         return
@@ -64,7 +64,9 @@ def upsert_batch(client: Any, table: str, data: list[dict[str, Any]], batch_size
             client.table(table).upsert(batch, on_conflict="id").execute()
             logger.info(f"   Processed {i} to {i + len(batch)}")
         except Exception as e:
-            logger.error(f"[!] Batch upsert failed for table '{table}' at index {i}: {e}")
+            logger.error(
+                f"[!] Batch upsert failed for table '{table}' at index {i}: {e}"
+            )
 
 
 def ingest_tapestry() -> None:

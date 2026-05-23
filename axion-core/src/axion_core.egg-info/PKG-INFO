@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: axion-core
+Version: 15.0.0
+Requires-Dist: markdown
+Requires-Dist: python-frontmatter
+Requires-Dist: python-dotenv
+Requires-Dist: jsonschema
+Requires-Dist: GitPython
+Requires-Dist: requests
+Requires-Dist: pytest
+Requires-Dist: mypy
+Requires-Dist: rich
+Requires-Dist: pyyaml
+Requires-Dist: jinja2
+Requires-Dist: pydantic
+Requires-Dist: langchain
+Requires-Dist: langgraph

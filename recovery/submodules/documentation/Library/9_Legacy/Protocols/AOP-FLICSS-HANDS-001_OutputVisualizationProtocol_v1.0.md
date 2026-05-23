@@ -9,7 +9,9 @@
 ---
 
 ---
+
 # AOP-FLICSS-HANDS-001_OutputVisualizationProtocol_v1.0
+
 # [STAR] (The Central Gravity)
 
 | :------------------ | :--------------------------------------------- |
@@ -25,6 +27,7 @@
 | **10. Ethos** | **Clarity, Impact, & Persona Alignment** |
 | **11. Catalyst** | **DRN Tail End** |
 | **12. Relations** | `ACTUATES: PERSONALIZATION; FORMATS: FINAL_OUTPUT` |
+
 ---
 
 > [!IMPORTANT]
@@ -32,29 +35,33 @@
 > The Hands protocol is responsible for the transition from cognitive insight to physical (digital) artifact. It applies the "Voice," the "Style," and the "Format" to ensure the user receives what they need in the most impactful way.
 
 ## **Phase 1: The Personalization Filter**
-*   **Input:** `Actionable_Insight_JSON` (from The Heart).
-*   **Action:** Apply the **Phoenix-Class Voice** (e.g., authoritative, synergistic, technical).
-*   **Logic:** If `ERS > 0.8`, use High Urgency Formatting (Alerts, Bold headers).
+
+- **Input:** `Actionable_Insight_JSON` (from The Heart).
+- **Action:** Apply the **Phoenix-Class Voice** (e.g., authoritative, synergistic, technical).
+- **Logic:** If `ERS > 0.8`, use High Urgency Formatting (Alerts, Bold headers).
 
 ---
 
 ## **Phase 2: The Forge (Formatting)**
-*   **Function:** Converting structured JSON into human-readable Markdown or UI components.
-*   **Mechanism:** `Template_Scaffolding_Engine`.
-*   **Requirements:** Must strictly follow the **PGPS** (Phoenix Genesis Presentation Standard).
+
+- **Function:** Converting structured JSON into human-readable Markdown or UI components.
+- **Mechanism:** `Template_Scaffolding_Engine`.
+- **Requirements:** Must strictly follow the **PGPS** (Phoenix Genesis Presentation Standard).
 
 ---
 
 ## **Phase 3: The Delivery**
-*   **Output:** The final visible artifact.
-*   **Verification:** `CMD:QA:PRESENTATION`.
-*   **Checklist:** 
-    1.  12-point header present?
-    2.  OGLN v11.2 footer included?
-    3.  Links validated?
+
+- **Output:** The final visible artifact.
+- **Verification:** `CMD:QA:PRESENTATION`.
+- **Checklist:**
+  1.  12-point header present?
+  2.  OGLN v11.2 footer included?
+  3.  Links validated?
 
 ---
 
 ## **Indigestion / Error Handling**
-*   **Malformed Insight:** If input JSON is invalid, trigger `CMD:FAIL:REFIRE` to request a fresh packet from the Spine.
-*   **Prompt Collision:** If two voices conflict, default to **Phoenix Prime**.
+
+- **Malformed Insight:** If input JSON is invalid, trigger `CMD:FAIL:REFIRE` to request a fresh packet from the Spine.
+- **Prompt Collision:** If two voices conflict, default to **Phoenix Prime**.

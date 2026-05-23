@@ -9,6 +9,7 @@
 ---
 
 # ollama.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OLLAMA-001` | The Sovereign ID. |
-| **Official Name** | `ollama.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OLLAMA-001`             | The Sovereign ID. |
+| **Official Name**   | `ollama.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Ollama Setup Guide
 
@@ -50,6 +51,7 @@ Ollama provides free, local AI models that run on your own hardware. This guide 
 ### 1. Install Ollama
 
 **Linux/macOS:**
+
 ```bash
 curl -fsSL https://ollama.ai/install.sh | sh
 ```
@@ -73,11 +75,13 @@ ollama pull mxbai-embed-large  # Best embedding model for Ollama
 ### 3. Configure Open Notebook
 
 **For local installation:**
+
 ```bash
 export OLLAMA_API_BASE=http://localhost:11434
 ```
 
 **For Docker installation:**
+
 ```bash
 export OLLAMA_API_BASE=http://host.docker.internal:11434
 ```
@@ -97,6 +101,7 @@ export OLLAMA_API_BASE=http://127.0.0.1:11434
 ```
 
 **Use `localhost` vs `127.0.0.1`:**
+
 - **localhost**: Recommended, works with most configurations
 - **127.0.0.1**: Use if you have DNS resolution issues with localhost
 
@@ -109,6 +114,7 @@ export OLLAMA_API_BASE=http://host.docker.internal:11434
 ```
 
 **⚠️ CRITICAL: Ollama must accept external connections:**
+
 ```bash
 # Start Ollama with external access enabled
 export OLLAMA_HOST=0.0.0.0:11434
@@ -116,11 +122,13 @@ ollama serve
 ```
 
 **Why `host.docker.internal`?**
+
 - Docker containers can't reach `localhost` on the host
 - `host.docker.internal` is Docker's special hostname for the host machine
 - Available on Docker Desktop for Mac/Windows and recent Linux versions
 
 **Why `OLLAMA_HOST=0.0.0.0:11434`?**
+
 - By default, Ollama only binds to localhost and rejects external connections
 - Docker containers are considered "external" even when running on the same machine
 - Setting `OLLAMA_HOST=0.0.0.0:11434` allows connections from Docker containers
@@ -136,7 +144,7 @@ export OLLAMA_API_BASE=http://ollama:11434
 **Docker Compose Example:**
 
 ```yaml
-version: '3.8'
+version: "3.8"
 services:
   open-notebook:
     image: lfnovo/open_notebook:v1-latest-single
@@ -198,21 +206,21 @@ export OLLAMA_API_BASE=http://localhost:8080
 
 ### Language Models
 
-| Model | Size | Best For | Quality | Speed |
-|-------|------|----------|---------|-------|
-| **qwen3** | 7B | General purpose, coding | Excellent | Fast |
-| **deepseek-r1** | 7B | Reasoning, problem-solving | Exceptional | Medium |
-| **gemma3** | 7B | Balanced performance | Very Good | Fast |
-| **phi4** | 14B | Efficiency on small hardware | Good | Very Fast |
-| **llama3** | 8B | General purpose | Very Good | Medium |
+| Model           | Size | Best For                     | Quality     | Speed     |
+| --------------- | ---- | ---------------------------- | ----------- | --------- |
+| **qwen3**       | 7B   | General purpose, coding      | Excellent   | Fast      |
+| **deepseek-r1** | 7B   | Reasoning, problem-solving   | Exceptional | Medium    |
+| **gemma3**      | 7B   | Balanced performance         | Very Good   | Fast      |
+| **phi4**        | 14B  | Efficiency on small hardware | Good        | Very Fast |
+| **llama3**      | 8B   | General purpose              | Very Good   | Medium    |
 
 ### Embedding Models
 
-| Model | Best For | Performance |
-|-------|----------|-------------|
-| **mxbai-embed-large** | General search | Excellent |
-| **nomic-embed-text** | Document similarity | Good |
-| **all-minilm** | Lightweight option | Fair |
+| Model                 | Best For            | Performance |
+| --------------------- | ------------------- | ----------- |
+| **mxbai-embed-large** | General search      | Excellent   |
+| **nomic-embed-text**  | Document similarity | Good        |
+| **all-minilm**        | Lightweight option  | Fair        |
 
 ### Installation Commands
 
@@ -232,11 +240,13 @@ ollama pull phi4                  # Microsoft's efficient model
 ## Hardware Requirements
 
 ### Minimum Requirements
+
 - **RAM**: 8GB (for 7B models)
 - **Storage**: 10GB free space per model
 - **CPU**: Modern multi-core processor
 
 ### Recommended Setup
+
 - **RAM**: 16GB+ (for multiple models)
 - **Storage**: SSD with 50GB+ free space
 - **GPU**: NVIDIA GPU with 8GB+ VRAM (optional but faster)
@@ -244,6 +254,7 @@ ollama pull phi4                  # Microsoft's efficient model
 ### GPU Acceleration
 
 **NVIDIA GPU (CUDA):**
+
 ```bash
 # Install NVIDIA Container Toolkit for Docker
 # Then use the Docker Compose example above with GPU support
@@ -253,6 +264,7 @@ ollama pull qwen3
 ```
 
 **Apple Silicon (M1/M2/M3):**
+
 ```bash
 # Ollama automatically uses Metal acceleration
 # No additional setup required
@@ -260,6 +272,7 @@ ollama pull qwen3
 ```
 
 **AMD GPUs:**
+
 ```bash
 # ROCm support varies by model and system
 # Check Ollama documentation for latest compatibility
@@ -274,11 +287,13 @@ ollama pull qwen3
 This is the most common cause of "Failed to send message" errors. Open Notebook requires the **exact model name** as it appears in Ollama.
 
 **Step 1: Get the exact model name**
+
 ```bash
 ollama list
 ```
 
 Example output:
+
 ```
 NAME                        ID              SIZE      MODIFIED
 mxbai-embed-large:latest    468836162de7    669 MB    7 minutes ago
@@ -288,10 +303,10 @@ qwen3:32b                   030ee887880f    20 GB     9 days ago
 
 **Step 2: Use the exact name when adding the model in Open Notebook**
 
-| ✅ Correct | ❌ Wrong |
-|-----------|----------|
-| `gemma3:12b` | `gemma3` (missing tag) |
-| `qwen3:32b` | `qwen3-32b` (wrong format) |
+| ✅ Correct                 | ❌ Wrong                          |
+| -------------------------- | --------------------------------- |
+| `gemma3:12b`               | `gemma3` (missing tag)            |
+| `qwen3:32b`                | `qwen3-32b` (wrong format)        |
 | `mxbai-embed-large:latest` | `mxbai-embed-large` (missing tag) |
 
 **Note:** Some models use `:latest` as the default tag. If `ollama list` shows `model:latest`, you must use `model:latest` in Open Notebook, not just `model`.
@@ -311,25 +326,30 @@ qwen3:32b                   030ee887880f    20 GB     9 days ago
 **1. "Ollama unavailable" in Open Notebook**
 
 **Check Ollama is running:**
+
 ```bash
 curl http://localhost:11434/api/tags
 ```
 
 **Verify environment variable:**
+
 ```bash
 echo $OLLAMA_API_BASE
 ```
 
 **⚠️ IMPORTANT: Enable external connections (most common fix):**
+
 ```bash
 # If Open Notebook runs in Docker or on a different machine,
 # Ollama must bind to all interfaces, not just localhost
 export OLLAMA_HOST=0.0.0.0:11434
 ollama serve
 ```
+
 > **Why this is needed:** By default, Ollama only accepts connections from `localhost` (127.0.0.1). When Open Notebook runs in Docker or on a different machine, it can't reach Ollama unless you configure `OLLAMA_HOST=0.0.0.0:11434` to accept external connections.
 
 **Restart Ollama:**
+
 ```bash
 # Linux/macOS
 sudo systemctl restart ollama
@@ -343,6 +363,7 @@ ollama serve
 **2. Docker networking issues**
 
 **From inside Open Notebook container, test Ollama:**
+
 ```bash
 # Get into container
 docker exec -it open-notebook bash
@@ -354,16 +375,19 @@ curl http://host.docker.internal:11434/api/tags
 **3. Models not downloading**
 
 **Check disk space:**
+
 ```bash
 df -h
 ```
 
 **Manual model pull:**
+
 ```bash
 ollama pull qwen3 --verbose
 ```
 
 **Clear failed downloads:**
+
 ```bash
 ollama rm qwen3
 ollama pull qwen3
@@ -372,12 +396,14 @@ ollama pull qwen3
 **4. Slow performance**
 
 **Check model size vs available RAM:**
+
 ```bash
 ollama ps  # Show running models
 free -h    # Check available memory
 ```
 
 **Use smaller models:**
+
 ```bash
 ollama pull phi4         # Instead of larger models
 ollama pull gemma3:2b   # 2B parameter variant
@@ -386,12 +412,14 @@ ollama pull gemma3:2b   # 2B parameter variant
 **5. Port conflicts**
 
 **Check what's using port 11434:**
+
 ```bash
 lsof -i :11434
 netstat -tulpn | grep 11434
 ```
 
 **Use custom port:**
+
 ```bash
 OLLAMA_HOST=0.0.0.0:8080 ollama serve
 export OLLAMA_API_BASE=http://localhost:8080
@@ -400,6 +428,7 @@ export OLLAMA_API_BASE=http://localhost:8080
 **6. "Failed to send message" in Chat**
 
 **Symptom:** Chat shows "Failed to send message" toast notification. Logs may show:
+
 ```
 Error executing chat: Model is not a LanguageModel: None
 ```
@@ -414,6 +443,7 @@ Error executing chat: Model is not a LanguageModel: None
 **Solutions:**
 
 **Check 1: Verify model names match exactly**
+
 ```bash
 # Get exact model names from Ollama
 ollama list
@@ -423,6 +453,7 @@ ollama list
 ```
 
 **Check 2: Verify default models are set**
+
 1. Go to **Settings → Models**
 2. Scroll to **Default Models** section
 3. Ensure **Default Chat Model** has a value selected
@@ -430,12 +461,14 @@ ollama list
 
 **Check 3: Refresh after changes**
 If you've added/removed models in Ollama:
+
 1. Refresh the Open Notebook page
 2. Go to Settings → Models
 3. Re-add any missing models with exact names from `ollama list`
 4. Re-select default models if needed
 
 **Check 4: Test the model directly**
+
 ```bash
 # Verify Ollama can use the model
 ollama run gemma3:12b "Hello, world"
@@ -444,6 +477,7 @@ ollama run gemma3:12b "Hello, world"
 ### Docker-Specific Troubleshooting
 
 **1. Host networking on Linux:**
+
 ```bash
 # Use host networking if host.docker.internal doesn't work
 docker run --network host lfnovo/open_notebook:v1-latest-single
@@ -451,8 +485,9 @@ export OLLAMA_API_BASE=http://localhost:11434
 ```
 
 **2. Custom bridge network:**
+
 ```yaml
-version: '3.8'
+version: "3.8"
 networks:
   ollama_network:
     driver: bridge
@@ -470,6 +505,7 @@ services:
 ```
 
 **3. Firewall issues:**
+
 ```bash
 # Allow Ollama port through firewall
 sudo ufw allow 11434
@@ -482,21 +518,25 @@ sudo firewall-cmd --add-port=11434/tcp --permanent
 ### Model Management
 
 **List installed models:**
+
 ```bash
 ollama list
 ```
 
 **Remove unused models:**
+
 ```bash
 ollama rm model_name
 ```
 
 **Show running models:**
+
 ```bash
 ollama ps
 ```
 
 **Preload models for faster startup:**
+
 ```bash
 # Keep model in memory
 curl http://localhost:11434/api/generate -d '{
@@ -509,12 +549,14 @@ curl http://localhost:11434/api/generate -d '{
 ### System Optimization
 
 **Linux: Increase file limits:**
+
 ```bash
 echo "* soft nofile 65536" >> /etc/security/limits.conf
 echo "* hard nofile 65536" >> /etc/security/limits.conf
 ```
 
 **macOS: Increase memory limits:**
+
 ```bash
 # Add to ~/.zshrc or ~/.bash_profile
 export OLLAMA_MAX_LOADED_MODELS=2
@@ -522,6 +564,7 @@ export OLLAMA_NUM_PARALLEL=4
 ```
 
 **Docker: Resource allocation:**
+
 ```yaml
 services:
   ollama:
@@ -529,7 +572,7 @@ services:
       resources:
         limits:
           memory: 8G
-          cpus: '4'
+          cpus: "4"
 ```
 
 ## Advanced Configuration
@@ -560,18 +603,21 @@ If you're running Ollama behind a reverse proxy with self-signed SSL certificate
 **Solutions:**
 
 **Option 1: Use a custom CA bundle (recommended)**
+
 ```bash
 # Point to your CA certificate file
 export ESPERANTO_SSL_CA_BUNDLE=/path/to/your/ca-bundle.pem
 ```
 
 **Option 2: Disable SSL verification (development only)**
+
 ```bash
 # WARNING: Only use in trusted development environments
 export ESPERANTO_SSL_VERIFY=false
 ```
 
 **Docker Compose example with SSL configuration:**
+
 ```yaml
 services:
   open-notebook:
@@ -592,6 +638,7 @@ services:
 ### Custom Model Imports
 
 **Import custom models:**
+
 ```bash
 # Create Modelfile
 cat > Modelfile << EOF
@@ -606,6 +653,7 @@ ollama create my-research-model -f Modelfile
 ```
 
 **Use in Open Notebook:**
+
 1. Go to Models
 2. Add new model: `my-research-model`
 3. Set as default for specific tasks
@@ -613,6 +661,7 @@ ollama create my-research-model -f Modelfile
 ### Monitoring and Logging
 
 **Monitor Ollama logs:**
+
 ```bash
 # Linux (systemd)
 journalctl -u ollama -f
@@ -625,6 +674,7 @@ OLLAMA_DEBUG=1 ollama serve
 ```
 
 **Resource monitoring:**
+
 ```bash
 # CPU and memory usage
 htop
@@ -683,17 +733,20 @@ fi
 ### Coming from OpenAI
 
 **Similar performance models:**
+
 - GPT-4 → `qwen3` or `deepseek-r1`
 - GPT-3.5 → `gemma3` or `phi4`
 - text-embedding-ada-002 → `mxbai-embed-large`
 
 **Cost comparison:**
+
 - OpenAI: $0.01-0.06 per 1K tokens
 - Ollama: $0 after hardware investment
 
 ### Coming from Anthropic
 
 **Claude replacement suggestions:**
+
 - Claude 3.5 Sonnet → `deepseek-r1` (reasoning)
 - Claude 3 Haiku → `phi4` (speed)
 
@@ -733,11 +786,13 @@ fi
 ## Getting Help
 
 **Community Resources:**
+
 - [Ollama GitHub](https://github.com/jmorganca/ollama) - Official repository
 - [Ollama Discord](https://discord.gg/ollama) - Community support
 - [Open Notebook Discord](https://discord.gg/37XJPXfz2w) - Integration help
 
 **Debugging Resources:**
+
 - Check Ollama logs for error messages
 - Test connection with curl commands
 - Verify environment variables
@@ -763,7 +818,6 @@ This comprehensive guide should help you successfully deploy and optimize Ollama
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
-
 
 - [[ai-providers]]
 

@@ -31,7 +31,7 @@ class AsyncMigration:
     @classmethod
     def from_file(cls, file_path: str) -> "AsyncMigration":
         """Create migration from SQL file."""
-        with open(file_path, "r", encoding="utf-8") as file:
+        with open(file_path, encoding="utf-8") as file:
             raw_content = file.read()
             # Clean up SQL content
             lines = []
@@ -54,7 +54,7 @@ class AsyncMigration:
                 await lower_version()
 
         except Exception as e:
-            logger.error(f"Migration failed: {str(e)}")
+            logger.error(f"Migration failed: {e!s}")
             raise
 
 
@@ -65,8 +65,8 @@ class AsyncMigrationRunner:
 
     def __init__(
         self,
-        up_migrations: List[AsyncMigration],
-        down_migrations: List[AsyncMigration],
+        up_migrations: list[AsyncMigration],
+        down_migrations: list[AsyncMigration],
     ) -> None:
         """Initialize runner with migration lists."""
         self.up_migrations = up_migrations
@@ -102,7 +102,7 @@ class AsyncMigrationManager:
     Main migration manager with async support.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         """Initialize migration manager."""
         self.up_migrations = [
             AsyncMigration.from_file("open_notebook/database/migrations/1.surrealql"),
@@ -162,7 +162,7 @@ class AsyncMigrationManager:
         current_version = await self.get_current_version()
         return current_version < len(self.up_migrations)
 
-    async def run_migration_up(self):
+    async def run_migration_up(self) -> None:
         """Run all pending migrations."""
         current_version = await self.get_current_version()
         logger.info(f"Current version before migration: {current_version}")
@@ -173,7 +173,7 @@ class AsyncMigrationManager:
                 new_version = await self.get_current_version()
                 logger.info(f"Migration successful. New version: {new_version}")
             except Exception as e:
-                logger.error(f"Migration failed: {str(e)}")
+                logger.error(f"Migration failed: {e!s}")
                 raise
         else:
             logger.info("Database is already at the latest version")
@@ -192,7 +192,7 @@ async def get_latest_version() -> int:
         return 0
 
 
-async def get_all_versions() -> List[dict]:
+async def get_all_versions() -> list[dict]:
     """Get all versions from the migrations table."""
     try:
         result = await repo_query("SELECT * FROM _sbl_migrations ORDER BY version;")

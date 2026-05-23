@@ -1437,7 +1437,7 @@ The CSE is officially anchored to the `GVRN-SYNERGY-001` standard, codifying its
 
 ## **XL. The DAS Shuttle Mechanism**
 
-The CSE acts as the "Loom-Shuttle" for the **Documentation Architectural Suite (DAS)**. 
+The CSE acts as the "Loom-Shuttle" for the **Documentation Architectural Suite (DAS)**.
 
 - **Functional Mandate**: The SSS manages the overarching graph topology, while the DAS provides Standardized Governance. The CSE explicitly weaves the two together.
 - **Elemental Alignment**: When generating artifacts, the CSE invokes `CMD: DSA` to enforce elemental formatting (Earth for foundational logic, Fire for active execution, Water for adaptive flows, Wind for entropy purging).
@@ -1459,12 +1459,12 @@ The CSE integrates the **Unified Collaborative Intellect (UCI)** Suite's full te
 
 ## **XLII. Omnibus Actionable Prompt Packet (O-APP)**
 
-| Command ID                     | Action                               | Systemic Impact                                                              |
-| :----------------------------- | :----------------------------------- | :--------------------------------------------------------------------------- |
-| CMD: RCF                       | Regulate Cognitive Flow              | Actively throttles pace to normalize CCLI within optimal thresholds.         |
-| CMD: SB                        | Spark Breakthrough                   | Spikes BGR by forcing lateral connections between distant nodes.             |
-| CMD: DSA                       | Dynamic Structural Alignment         | Triggers the DAS Shuttle to format outputs via Earth, Fire, Water, or Wind.  |
-| CMD: PURGE_ENTROPY             | Noetic Defensive Execution           | Activates the Wind stance to permanently delete dissonant "Ghost Nodes."     |
+| Command ID         | Action                       | Systemic Impact                                                             |
+| :----------------- | :--------------------------- | :-------------------------------------------------------------------------- |
+| CMD: RCF           | Regulate Cognitive Flow      | Actively throttles pace to normalize CCLI within optimal thresholds.        |
+| CMD: SB            | Spark Breakthrough           | Spikes BGR by forcing lateral connections between distant nodes.            |
+| CMD: DSA           | Dynamic Structural Alignment | Triggers the DAS Shuttle to format outputs via Earth, Fire, Water, or Wind. |
+| CMD: PURGE_ENTROPY | Noetic Defensive Execution   | Activates the Wind stance to permanently delete dissonant "Ghost Nodes."    |
 
 ---
 

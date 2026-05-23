@@ -1,5 +1,4 @@
 import os
-import re
 
 INPUT_FILE = r"c:\Users\Chris\_Desktop_Vault\Phoenix\input_artifacts\mint_seed.py.md"
 OUTPUT_FILE = (

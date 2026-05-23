@@ -28,10 +28,11 @@
  * GVRN.Sentinel.Scan, USED_BY, The Sentinel uses these rules for compliance audits.
  */
 
-'use strict';
+"use strict";
 
-const fs = require('node:fs');
-const path = require('node:path');
+const fs = require("node:fs");
+const path = require("node:path");
+const { parse } = require("jsonc-parser");
 
 /**
  * @typedef {Object} MarkdownToken
@@ -75,15 +76,12 @@ const path = require('node:path');
 
 // --- Dynamic Loading of Acronyms from cspell.jsonc ---
 // Reads the cspell.jsonc file to create a single source of truth for acronyms.
-// We use fs.readFileSync + comment stripping to handle JSONC format safely.
 let CANONICAL_ACRONYMS = [];
 try {
-    const cspellPath = path.resolve(__dirname, '../../cspell.jsonc');
-    const cspellRaw = fs.readFileSync(cspellPath, 'utf8');
-    // Strip comments (both // and /* */) before parsing
-    const jsoncContent = cspellRaw.replaceAll(/\/\/.*$/gm, '').replaceAll(/\/\*[\s\S]*?\*\//g, '');
-    const cspellConfig = JSON.parse(jsoncContent);
-    
+    const cspellPath = path.resolve(__dirname, "../../cspell.jsonc");
+    const cspellRaw = fs.readFileSync(cspellPath, "utf8");
+    const cspellConfig = parse(cspellRaw) || {};
+
     // Filters for words that are all uppercase and may contain underscores.
     CANONICAL_ACRONYMS = (cspellConfig.words || []).filter((word) => /^[A-Z0-9_]+$/.test(word));
 } catch (error) {
@@ -91,7 +89,7 @@ try {
 }
 
 // Fallback/Common prefixes to ensure basic rules don't fail if cspell is missing them
-['GUCA', 'TEST', 'UMB', 'AOP', 'WLF', 'DOC', 'CODE', 'CHAR', 'CMD', 'TOOL', 'GVRN', 'SYNG', 'CORE', 'ARCH'].forEach(
+["GUCA", "TEST", "UMB", "AOP", "WLF", "DOC", "CODE", "CHAR", "CMD", "TOOL", "GVRN", "SYNG", "CORE", "ARCH"].forEach(
     (p) => {
         if (!CANONICAL_ACRONYMS.includes(p)) CANONICAL_ACRONYMS.push(p);
     },
@@ -101,17 +99,18 @@ try {
 // --- Dynamic Loading of Path Aliases from tsconfig.json ---
 let DYNAMIC_ALIAS_MAP = [];
 try {
-    const tsconfigPath = path.resolve(__dirname, '../../../tsconfig.json');
-    const tsconfigRaw = fs.readFileSync(tsconfigPath, 'utf8');
-    const tsconfigClean = tsconfigRaw.replaceAll(/\/\/.*$/gm, '').replaceAll(/\/\*[\s\S]*?\*\//g, '');
-    const tsconfigData = JSON.parse(tsconfigClean);
-    const tsPaths = tsconfigData.compilerOptions?.paths || {};
-    DYNAMIC_ALIAS_MAP = Object.entries(tsPaths).map(([aliasKey, pathArr]) => {
-        const alias = aliasKey.replace(/\/\*$/, '/');
-        const targetPath = pathArr[0].replace(/\/\*$/, '/');
-        const escapedPath = targetPath.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
-        return { pattern: new RegExp(escapedPath), alias };
-    }).sort((a, b) => b.pattern.source.length - a.pattern.source.length); // Deepest paths match first
+    const tsconfigPath = path.resolve(__dirname, "../../../tsconfig.json");
+    const tsconfigRaw = fs.readFileSync(tsconfigPath, "utf8");
+    const tsconfigData = parse(tsconfigRaw) || {};
+    const tsPaths = tsconfigData?.compilerOptions?.paths || {};
+    DYNAMIC_ALIAS_MAP = Object.entries(tsPaths)
+        .map(([aliasKey, pathArr]) => {
+            const alias = aliasKey.replace(/\/\*$/, "/");
+            const targetPath = pathArr[0].replace(/\/\*$/, "/");
+            const escapedPath = targetPath.replaceAll(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
+            return { pattern: new RegExp(escapedPath), alias };
+        })
+        .sort((a, b) => b.pattern.source.length - a.pattern.source.length); // Deepest paths match first
 } catch (error) {
     console.warn(`[SENTINEL] Failed to load tsconfig.json:`, error.message);
 }
@@ -124,12 +123,12 @@ const WORKSPACE_ROOT = process.cwd();
 /**
  * Pre-compiled Regexes for Performance (Hoisted)
  * Updated for v15.0: Supports Legacy (UMB-SGM-001) and Sovereign (GVRN.Domain.Type)
- * 
+ *
  * Regex breakdown:
  * 1. Legacy: \([A-Z0-9]{3,4}-[A-Z0-9]{3,4}-\d{3}\) -> (UMB-SGM-001)
- * 2. Sovereign: `[A-Z]{3,4}\.[A-Z][a-zA-Z0-9.]*` -> `GVRN.Domain.Type` 
+ * 2. Sovereign: `[A-Z]{3,4}\.[A-Z][a-zA-Z0-9.]*` -> `GVRN.Domain.Type`
  * (Note: H1 usually contains the loose text, but Block A has the ID)
- * 
+ *
  * For H1, we usually expect: "# Artifact Name (ID)" OR "# ID"
  * New Standard H1: "# Artifact Name" (ID is in Block A).
  * However, PF001 validates H1. v15.0 Standard says H1 is Title. Block A has ID.
@@ -150,45 +149,51 @@ const pf015HeadingCache = {};
 
 // Defines valid Episemantic Markers
 const VALID_EPISEMANTIC_MARKERS = {
-    'κ-nexus': ['crystallized_insight', 'refutation', 'disputed', 'clarification'],
-    'κ-tempus': ['obsolete'],
+    "κ-nexus": ["crystallized_insight", "refutation", "disputed", "clarification"],
+    "κ-tempus": ["obsolete"],
 };
 
 // Controlled vocabulary for OSLM relationship types.
 const VALID_RELATIONSHIP_TYPES = new Set([
-    'TRIGGERS',
-    'IS_GOVERNED_BY',
-    'MODULATES',
-    'ENABLES',
-    'MONITORS',
-    'IS_A_TOOL_OF',
-    'CONSUMES_DATA_FROM',
-    'FEEDS_DATA_TO',
-    'UTILIZES',
-    'IS_EXECUTED_BY',
-    'GOVERNS',
-    'PROVIDES_INPUT_FOR',
-    'ENHANCES',
-    'RESOLVES_DISSONANCE_OF',
-    'MODIFIES_EXECUTION_OF',
-    'ENABLES_FEATURE_FOR',
-    'PROVIDES_INTERFACE_FOR',
-    'INTEGRATES_WITH',
-    'LOGS_TO',
-    'IS_ACCESSED_VIA',
-    'PROVIDES_DATA_TO',
-    'SUBMITS_PROPOSALS_TO',
-    'IS_A_COMPONENT_OF',
-    'IS_ESCALATED_FROM',
-    'UPGRADES',
-    'FORMS_FRAMEWORK_WITH',
-    'INVOKES',
-    'SYNERGY',
+    "TRIGGERS",
+    "IS_GOVERNED_BY",
+    "MODULATES",
+    "ENABLES",
+    "MONITORS",
+    "IS_A_TOOL_OF",
+    "CONSUMES_DATA_FROM",
+    "FEEDS_DATA_TO",
+    "UTILIZES",
+    "IS_EXECUTED_BY",
+    "GOVERNS",
+    "PROVIDES_INPUT_FOR",
+    "ENHANCES",
+    "RESOLVES_DISSONANCE_OF",
+    "MODIFIES_EXECUTION_OF",
+    "ENABLES_FEATURE_FOR",
+    "PROVIDES_INTERFACE_FOR",
+    "INTEGRATES_WITH",
+    "LOGS_TO",
+    "IS_ACCESSED_VIA",
+    "PROVIDES_DATA_TO",
+    "SUBMITS_PROPOSALS_TO",
+    "IS_A_COMPONENT_OF",
+    "IS_ESCALATED_FROM",
+    "UPGRADES",
+    "FORMS_FRAMEWORK_WITH",
+    "INVOKES",
+    "SYNERGY",
+    "INDEXES",
+    "DEFINED_BY",
+    "SYNERGIZES",
+    "IMPLEMENTS",
+    "TRACKS",
+    "EXTENDS",
     // Legacy (Allowed for migration period)
-    'REFERENCES',
-    'DEFINES',
-    'ORCHESTRATES',
-    'DEPENDS_ON',
+    "REFERENCES",
+    "DEFINES",
+    "ORCHESTRATES",
+    "DEPENDS_ON",
 ]);
 
 // --- Core Helper Functions ---
@@ -203,38 +208,46 @@ const getLevenshteinDistance = (a, b) => {
             } else {
                 matrix[i][j] = Math.min(
                     matrix[i - 1][j - 1] + 1, // substitution
-                    matrix[i][j - 1] + 1,     // insertion
-                    matrix[i - 1][j] + 1      // deletion
+                    matrix[i][j - 1] + 1, // insertion
+                    matrix[i - 1][j] + 1, // deletion
                 );
             }
         }
     }
     return matrix[b.length][a.length];
 };
+
 const checkRelationshipMisspelling = (word, token, params, onError, validRelations) => {
     if (validRelations.includes(word)) return;
 
+    let bestMatch = null;
+    let minDistance = 3; // Only consider matches with distance 1 or 2
+
     for (const rel of validRelations) {
         const distance = getLevenshteinDistance(word, rel);
-        if (distance > 0 && distance <= 2) {
-            const lineText = token.line || params.lines[token.lineNumber - 1] || '';
-            const exactIndex = lineText.indexOf(word);
-            let fixInfo;
-            if (exactIndex !== -1) {
-                fixInfo = {
-                    editColumn: exactIndex + 1, // 1-based
-                    deleteCount: word.length,
-                    insertText: rel,
-                };
-            }
-            onError({
-                lineNumber: token.lineNumber,
-                detail: `Potential misspelled relationship type: Found '${word}', did you mean '${rel}'?`,
-                context: token.line,
-                fixInfo: fixInfo,
-            });
-            break;
+        if (distance > 0 && distance < minDistance) {
+            minDistance = distance;
+            bestMatch = rel;
         }
+    }
+
+    if (bestMatch) {
+        const lineText = token.line || params.lines[token.lineNumber - 1] || "";
+        const exactIndex = lineText.indexOf(word);
+        let fixInfo;
+        if (exactIndex !== -1) {
+            fixInfo = {
+                editColumn: exactIndex + 1, // 1-based
+                deleteCount: word.length,
+                insertText: bestMatch,
+            };
+        }
+        onError({
+            lineNumber: token.lineNumber,
+            detail: `Potential misspelled relationship type: Found '${word}', did you mean '${bestMatch}'?`,
+            context: token.line,
+            fixInfo: fixInfo,
+        });
     }
 };
 
@@ -268,16 +281,16 @@ const getCachedSlugs = (absolutePath) => {
     if (!pf015HeadingCache[absolutePath]) {
         const slugs = [];
         try {
-            const fileContent = fs.readFileSync(absolutePath, 'utf8');
+            const fileContent = fs.readFileSync(absolutePath, "utf8");
             const headingRegex = /^(#{1,6})\s+(.*)/gm;
             let match;
             while ((match = headingRegex.exec(fileContent)) !== null) {
                 const headingText = match[2].trim();
                 const slug = headingText
                     .toLowerCase()
-                    .replaceAll(/<[^>]+>/g, '')
-                    .replaceAll(/[^\w\s-]/g, '')
-                    .replaceAll(/\s+/g, '-');
+                    .replaceAll(/<[^>]+>/g, "")
+                    .replaceAll(/[^\w\s-]/g, "")
+                    .replaceAll(/\s+/g, "-");
                 slugs.push(slug);
             }
         } catch (error) {
@@ -303,19 +316,19 @@ const validateAnchor = (linkPath, absolutePath, anchor, token, onError) => {
 
 const validateTsLinkAlias = (token, params, onError) => {
     const ALIAS_MAP = DYNAMIC_ALIAS_MAP;
-    const href = token.attrGet('href');
-    if (href && (href.endsWith('.ts') || href.endsWith('.tsx'))) {
-        if (!href.startsWith('@') && !href.startsWith('http')) {
-            let fixedHref = href.replace(/^(\.\.\/|\.\/)+/, '');
+    const href = token.attrGet("href");
+    if (href && (href.endsWith(".ts") || href.endsWith(".tsx"))) {
+        if (!href.startsWith("@") && !href.startsWith("http")) {
+            let fixedHref = href.replace(/^(\.\.\/|\.\/)+/, "");
             const mapping = ALIAS_MAP.find((m) => m.pattern.test(fixedHref));
 
             if (mapping) {
                 fixedHref = fixedHref.replace(mapping.pattern, mapping.alias);
             } else {
-                fixedHref = '@' + fixedHref;
+                fixedHref = "@" + fixedHref;
             }
 
-            const lineText = token.line || params.lines[token.lineNumber - 1] || '';
+            const lineText = token.line || params.lines[token.lineNumber - 1] || "";
             let fixInfo;
 
             const exactIndex = lineText.indexOf(`](${href})`);
@@ -329,7 +342,7 @@ const validateTsLinkAlias = (token, params, onError) => {
 
             onError({
                 lineNumber: token.lineNumber,
-                detail: `TypeScript link '${href}' must use a Sovereign alias (e.g., ${mapping ? mapping.alias : '@domain'}).`,
+                detail: `TypeScript link '${href}' must use a Sovereign alias (e.g., ${mapping ? mapping.alias : "@domain"}).`,
                 context: token.line,
                 fixInfo: fixInfo,
             });
@@ -339,17 +352,17 @@ const validateTsLinkAlias = (token, params, onError) => {
 
 module.exports = [
     {
-        names: ['PF001', 'document-id-format'],
-        description: 'Validates that the H1 heading contains a valid Document ID or Filename (v13.0).',
-        tags: ['phoenix-protocol', 'document-id'],
+        names: ["PF001", "document-id-format"],
+        description: "Validates that the H1 heading contains a valid Document ID or Filename (v13.0).",
+        tags: ["phoenix-protocol", "document-id"],
         /**
-         * @param {RuleParams} params 
-         * @param {OnErrorCallback} onError 
+         * @param {RuleParams} params
+         * @param {OnErrorCallback} onError
          */
         function: function PF001(params, onError) {
             let h1Token = null;
             for (const token of params.tokens) {
-                if (token.type === 'heading_open' && token.tag === 'h1') {
+                if (token.type === "heading_open" && token.tag === "h1") {
                     h1Token = params.tokens[params.tokens.indexOf(token) + 1];
                     break;
                 }
@@ -370,7 +383,7 @@ module.exports = [
                     if (!DOCUMENT_ID_REGEX.test(h1Token.content)) {
                         onError({
                             lineNumber: h1Token.lineNumber,
-                            detail: 'The H1 heading must contain a valid Document ID (Legacy or Sovereign).',
+                            detail: "The H1 heading must contain a valid Document ID (Legacy or Sovereign).",
                             context: h1Token.line,
                         });
                     }
@@ -379,17 +392,17 @@ module.exports = [
         },
     },
     {
-        names: ['PF002', 'episemantic-marker-valid'],
-        description: 'Validates that Episemantic Markers (e.g., [κ-nexus:value]) are valid.',
-        tags: ['phoenix-protocol', 'semantics'],
+        names: ["PF002", "episemantic-marker-valid"],
+        description: "Validates that Episemantic Markers (e.g., [κ-nexus:value]) are valid.",
+        tags: ["phoenix-protocol", "semantics"],
         function: function PF002(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'inline' && token.content) {
+                if (token.type === "inline" && token.content) {
                     let match;
                     while ((match = POTENTIAL_MARKER_REGEX.exec(token.content)) !== null) {
                         const type = match[1];
                         const value = match[2];
-                        if (type.startsWith('κ-')) {
+                        if (type.startsWith("κ-")) {
                             const validValues = VALID_EPISEMANTIC_MARKERS[type];
                             if (!validValues?.includes(value)) {
                                 onError({
@@ -405,12 +418,12 @@ module.exports = [
         },
     },
     {
-        names: ['PF003', 'table-requires-caption'],
+        names: ["PF003", "table-requires-caption"],
         description: "Validates that every table is immediately followed by a caption line starting with 'Table: '.",
-        tags: ['phoenix-protocol', 'tables', 'captions'],
+        tags: ["phoenix-protocol", "tables", "captions"],
         function: function PF003(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'table_open') {
+                if (token.type === "table_open") {
                     const tableEndLine = token.map[1];
                     let captionFound = false;
                     // Look ahead for caption, allowing up to one blank line
@@ -432,14 +445,15 @@ module.exports = [
         },
     },
     {
-        names: ['PF004', 'heading-level-increment'],
-        description: 'Heading levels should only increment by one level at a time.',
-        tags: ['phoenix-protocol', 'headings', 'structure'],
+        names: ["PF004", "heading-level-increment", "heading-hierarchy"],
+        description:
+            "Enforces a strict heading hierarchy. The first heading must be H1, and levels should only increment by one level at a time.",
+        tags: ["phoenix-protocol", "headings", "structure"],
         function: function PF004(params, onError) {
             let lastLevel = 0;
             let firstHeadingFound = false;
             params.tokens.forEach((token) => {
-                if (token.type === 'heading_open') {
+                if (token.type === "heading_open") {
                     const currentLevel = Number.parseInt(token.tag.slice(1), 10);
                     let expectedLevel = currentLevel;
 
@@ -449,13 +463,13 @@ module.exports = [
                             const match = token.line.match(/^(#+)/);
                             let fixInfo;
                             if (match) {
-                                fixInfo = { editColumn: 1, deleteCount: match[1].length, insertText: '#' };
+                                fixInfo = { editColumn: 1, deleteCount: match[1].length, insertText: "#" };
                             }
                             onError({
                                 lineNumber: token.lineNumber,
-                                detail: 'The first heading in the file must be a level 1 (H1) heading.',
+                                detail: "The first heading in the file must be a level 1 (H1) heading.",
                                 context: token.line,
-                                fixInfo: fixInfo
+                                fixInfo: fixInfo,
                             });
                         }
                         firstHeadingFound = true;
@@ -464,13 +478,17 @@ module.exports = [
                         const match = token.line.match(/^(#+)/);
                         let fixInfo;
                         if (match) {
-                            fixInfo = { editColumn: 1, deleteCount: match[1].length, insertText: '#'.repeat(expectedLevel) };
+                            fixInfo = {
+                                editColumn: 1,
+                                deleteCount: match[1].length,
+                                insertText: "#".repeat(expectedLevel),
+                            };
                         }
                         onError({
                             lineNumber: token.lineNumber,
                             detail: `Heading level incremented by more than one. Went from H${lastLevel} to H${currentLevel}.`,
                             context: token.line,
-                            fixInfo: fixInfo
+                            fixInfo: fixInfo,
                         });
                     }
                     // Update lastLevel to the expected level so subsequent headings cascade correctly relative to the fix
@@ -480,25 +498,25 @@ module.exports = [
         },
     },
     {
-        names: ['PF005', 'h2-h3-requires-horizontal-rule'],
-        description: 'Ensures every H2 and H3 heading is immediately followed by a horizontal rule (`---`).',
-        tags: ['phoenix-protocol', 'headings', 'structure'],
+        names: ["PF005", "h2-h3-requires-horizontal-rule"],
+        description: "Ensures every H2 and H3 heading is immediately followed by a horizontal rule (`---`).",
+        tags: ["phoenix-protocol", "headings", "structure"],
         function: function PF005(params, onError) {
             params.tokens.forEach((token, index) => {
-                const isTargetHeading = token.type === 'heading_open' && (token.tag === 'h2' || token.tag === 'h3');
+                const isTargetHeading = token.type === "heading_open" && (token.tag === "h2" || token.tag === "h3");
                 if (isTargetHeading) {
                     // Find heading_close
                     let closeIndex = index;
                     for (let i = index + 1; i < params.tokens.length; i++) {
-                        if (params.tokens[i].type === 'heading_close' && params.tokens[i].tag === token.tag) {
+                        if (params.tokens[i].type === "heading_close" && params.tokens[i].tag === token.tag) {
                             closeIndex = i;
                             break;
                         }
                     }
                     const nextToken = params.tokens[closeIndex + 1];
-                    if (nextToken?.type !== 'hr') {
+                    if (nextToken?.type !== "hr") {
                         const headingEndLineIndex = token.map ? token.map[1] - 1 : token.lineNumber - 1;
-                        const lineLength = (params.lines[headingEndLineIndex] || '').length;
+                        const lineLength = (params.lines[headingEndLineIndex] || "").length;
 
                         onError({
                             lineNumber: token.lineNumber,
@@ -507,8 +525,8 @@ module.exports = [
                             fixInfo: {
                                 lineNumber: headingEndLineIndex + 1,
                                 editColumn: lineLength + 1,
-                                insertText: '\n\n---'
-                            }
+                                insertText: "\n\n---",
+                            },
                         });
                     }
                 }
@@ -516,12 +534,12 @@ module.exports = [
         },
     },
     {
-        names: ['PF006', 'forbidden-words'],
+        names: ["PF006", "forbidden-words"],
         description: "Flags the use of specific forbidden words (e.g., 'legacy').",
-        tags: ['phoenix-protocol', 'terminology'],
+        tags: ["phoenix-protocol", "terminology"],
         function: function PF006(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'inline' && token.content) {
+                if (token.type === "inline" && token.content) {
                     const match = FORBIDDEN_WORDS_REGEX.exec(token.content);
                     if (match) {
                         onError({
@@ -535,20 +553,20 @@ module.exports = [
         },
     },
     {
-        names: ['PF007', 'no-emphasis-in-headings'],
-        description: 'Flags the use of bold (`**`) or italic (`*`) formatting inside headings.',
-        tags: ['phoenix-protocol', 'headings', 'style'],
+        names: ["PF007", "no-emphasis-in-headings"],
+        description: "Flags the use of bold (`**`) or italic (`*`) formatting inside headings.",
+        tags: ["phoenix-protocol", "headings", "style"],
         function: function PF007(params, onError) {
             let inHeading = false;
             params.tokens.forEach((token) => {
-                if (token.type === 'heading_open') {
+                if (token.type === "heading_open") {
                     inHeading = true;
-                } else if (token.type === 'heading_close') {
+                } else if (token.type === "heading_close") {
                     inHeading = false;
-                } else if (inHeading && token.type === 'inline' && token.children) {
+                } else if (inHeading && token.type === "inline" && token.children) {
                     token.children.forEach((child) => {
-                        if (child.type === 'strong_open' || child.type === 'em_open') {
-                            const formatType = child.type === 'strong_open' ? 'Bold text (`**`)' : 'Italic text (`*`)';
+                        if (child.type === "strong_open" || child.type === "em_open") {
+                            const formatType = child.type === "strong_open" ? "Bold text (`**`)" : "Italic text (`*`)";
                             onError({
                                 lineNumber: token.lineNumber,
                                 detail: `${formatType} is not allowed inside headings.`,
@@ -561,17 +579,17 @@ module.exports = [
         },
     },
     {
-        names: ['PF008', 'link-requires-title'],
-        description: 'Requires all links to have a non-empty title attribute.',
-        tags: ['phoenix-protocol', 'links', 'accessibility'],
+        names: ["PF008", "link-requires-title"],
+        description: "Requires all links to have a non-empty title attribute.",
+        tags: ["phoenix-protocol", "links", "accessibility"],
         function: function PF008(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'link_open') {
-                    const hasTitle = token.attrs.some((attr) => attr[0] === 'title' && attr[1]);
+                if (token.type === "link_open") {
+                    const hasTitle = token.attrs.some((attr) => attr[0] === "title" && attr[1]);
                     if (!hasTitle) {
                         onError({
                             lineNumber: token.lineNumber,
-                            detail: 'Link is missing a title attribute. Add a title using the format `text`.',
+                            detail: "Link is missing a title attribute. Add a title using the format `text`.",
                             context: token.line,
                         });
                     }
@@ -580,16 +598,16 @@ module.exports = [
         },
     },
     {
-        names: ['PF009', 'image-requires-alt-text'],
-        description: 'Requires all image links (`![]`) to have descriptive alt text.',
-        tags: ['phoenix-protocol', 'images', 'accessibility'],
+        names: ["PF009", "image-requires-alt-text"],
+        description: "Requires all image links (`![]`) to have descriptive alt text.",
+        tags: ["phoenix-protocol", "images", "accessibility"],
         function: function PF009(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'image') {
+                if (token.type === "image") {
                     if (!token.content.trim()) {
                         onError({
                             lineNumber: token.lineNumber,
-                            detail: 'Image is missing alternative text (alt text). Add a description inside the square brackets.',
+                            detail: "Image is missing alternative text (alt text). Add a description inside the square brackets.",
                             context: token.line,
                         });
                     }
@@ -598,16 +616,16 @@ module.exports = [
         },
     },
     {
-        names: ['PF010', 'canonical-acronyms'],
-        description: 'Ensures project-specific acronyms are in their canonical uppercase form.',
-        tags: ['phoenix-protocol', 'terminology', 'acronyms'],
+        names: ["PF010", "canonical-acronyms"],
+        description: "Ensures project-specific acronyms are in their canonical uppercase form.",
+        tags: ["phoenix-protocol", "terminology", "acronyms"],
         function: function PF010(params, onError) {
             const canonicalAcronyms = CANONICAL_ACRONYMS;
-            const acronymRegex = new RegExp(String.raw`\b(${canonicalAcronyms.join('|')})\b`, 'gi');
+            const acronymRegex = new RegExp(String.raw`\b(${canonicalAcronyms.join("|")})\b`, "gi");
             params.tokens.forEach((token) => {
-                if (token.type === 'inline' && token.children) {
+                if (token.type === "inline" && token.children) {
                     token.children.forEach((child) => {
-                        if (child.type === 'text' && child.content) {
+                        if (child.type === "text" && child.content) {
                             let match;
                             while ((match = acronymRegex.exec(child.content)) !== null) {
                                 const foundAcronym = match[0];
@@ -615,7 +633,7 @@ module.exports = [
                                     (acronym) => acronym.toLowerCase() === foundAcronym.toLowerCase(),
                                 );
                                 if (foundAcronym !== correctAcronym) {
-                                    const lineText = token.line || params.lines[token.lineNumber - 1] || '';
+                                    const lineText = token.line || params.lines[token.lineNumber - 1] || "";
                                     const exactIndex = lineText.indexOf(foundAcronym);
                                     let fixInfo;
                                     if (exactIndex !== -1) {
@@ -640,9 +658,9 @@ module.exports = [
         },
     },
     {
-        names: ['PF011', 'validate-doc-id-prefix'],
-        description: 'Validates that prefixes in a ID are known (Legacy or Sovereign).',
-        tags: ['phoenix-protocol', 'document-id'],
+        names: ["PF011", "validate-doc-id-prefix"],
+        description: "Validates that prefixes in a ID are known (Legacy or Sovereign).",
+        tags: ["phoenix-protocol", "document-id"],
         function: function PF011(params, onError) {
             const validIdPrefixes = CANONICAL_ACRONYMS;
             const legacyPrefixRegex = /\(([A-Z0-9]{3,4})-([A-Z0-9]{3,4})-\d{3}\)/;
@@ -681,36 +699,36 @@ module.exports = [
         },
     },
     {
-        names: ['PF012', 'no-nested-blockquotes'],
+        names: ["PF012", "no-nested-blockquotes"],
         description: "Disallows nested blockquotes (e.g., '> > ...').",
-        tags: ['phoenix-protocol', 'blockquotes', 'structure'],
+        tags: ["phoenix-protocol", "blockquotes", "structure"],
         function: function PF012(params, onError) {
             let blockquoteDepth = 0;
             params.tokens.forEach((token) => {
-                if (token.type === 'blockquote_open') {
+                if (token.type === "blockquote_open") {
                     blockquoteDepth++;
                     if (blockquoteDepth > 1) {
                         onError({
                             lineNumber: token.lineNumber,
-                            detail: 'Nested blockquotes are not allowed. Please flatten the structure.',
+                            detail: "Nested blockquotes are not allowed. Please flatten the structure.",
                             context: token.line,
                         });
                     }
-                } else if (token.type === 'blockquote_close') {
+                } else if (token.type === "blockquote_close") {
                     blockquoteDepth--;
                 }
             });
         },
     },
     {
-        names: ['PF013', 'enforce-cite-format'],
-        description: 'Ensures that [cite: ...] markers use a numeric value.',
-        tags: ['phoenix-protocol', 'citations'],
+        names: ["PF013", "enforce-cite-format"],
+        description: "Ensures that [cite: ...] markers use a numeric value.",
+        tags: ["phoenix-protocol", "citations"],
         function: function PF013(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'inline' && token.children) {
+                if (token.type === "inline" && token.children) {
                     token.children.forEach((child) => {
-                        if (child.type === 'text' && child.content) {
+                        if (child.type === "text" && child.content) {
                             let match;
                             while ((match = CITATION_REGEX.exec(child.content)) !== null) {
                                 const citeValue = match[1].trim();
@@ -729,15 +747,15 @@ module.exports = [
         },
     },
     {
-        names: ['PF014', 'require-disputed-justification'],
-        description: 'Requires that a `[κ-nexus:disputed]` marker is followed by a blockquote justification.',
-        tags: ['phoenix-protocol', 'semantics', 'episemantic'],
+        names: ["PF014", "require-disputed-justification"],
+        description: "Requires that a `[κ-nexus:disputed]` marker is followed by a blockquote justification.",
+        tags: ["phoenix-protocol", "semantics", "episemantic"],
         function: function PF014(params, onError) {
-            const disputedMarker = '[κ-nexus:disputed]';
+            const disputedMarker = "[κ-nexus:disputed]";
             params.lines.forEach((line, index) => {
                 if (line.includes(disputedMarker)) {
                     const nextLine = params.lines[index + 1];
-                    if (!nextLine?.trim()?.startsWith('>')) {
+                    if (!nextLine?.trim()?.startsWith(">")) {
                         onError({
                             lineNumber: index + 1,
                             detail: `A line with a '${disputedMarker}' marker must be immediately followed by a blockquote ('>') providing justification.`,
@@ -748,21 +766,21 @@ module.exports = [
         },
     },
     {
-        names: ['PF015', 'validate-internal-links'],
-        description: 'Validates that internal links point to existing files.',
-        tags: ['phoenix-protocol', 'links', 'integrity'],
+        names: ["PF015", "validate-internal-links"],
+        description: "Validates that internal links point to existing files.",
+        tags: ["phoenix-protocol", "links", "integrity"],
         function: function PF015(params, onError) {
             const docDir = path.dirname(params.name);
 
             for (const token of params.tokens) {
-                if (token.type !== 'link_open' && token.type !== 'image') continue;
+                if (token.type !== "link_open" && token.type !== "image") continue;
 
-                const href = token.attrGet('href');
-                if (!href || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('#')) {
+                const href = token.attrGet("href");
+                if (!href || href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("#")) {
                     continue;
                 }
 
-                const [linkPath, anchor] = href.split('#');
+                const [linkPath, anchor] = href.split("#");
                 const absolutePath = path.resolve(docDir, linkPath);
 
                 if (!validatePathSecurity(linkPath, absolutePath, token, onError)) continue;
@@ -773,9 +791,9 @@ module.exports = [
         },
     },
     {
-        names: ['PF016', 'enforce-section-order'],
-        description: 'Enforces sequential order for H2 sections prefixed with Roman numerals (e.g., I., II., III.).',
-        tags: ['phoenix-protocol', 'structure', 'headings'],
+        names: ["PF016", "enforce-section-order"],
+        description: "Enforces sequential order for H2 sections prefixed with Roman numerals (e.g., I., II., III.).",
+        tags: ["phoenix-protocol", "structure", "headings"],
         function: function PF016(params, onError) {
             const romanToInt = (s) => {
                 const romanMap = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
@@ -790,7 +808,7 @@ module.exports = [
             };
             let lastRomanValue = 0;
             params.tokens.forEach((token, index) => {
-                if (token.type === 'heading_open' && token.tag === 'h2') {
+                if (token.type === "heading_open" && token.tag === "h2") {
                     const inlineToken = params.tokens[index + 1];
                     if (inlineToken?.content) {
                         const match = ROMAN_NUMERAL_REGEX.exec(inlineToken.content);
@@ -811,12 +829,12 @@ module.exports = [
         },
     },
     {
-        names: ['PF017', 'no-etc'],
+        names: ["PF017", "no-etc"],
         description: "Flags the use of 'etc.' and suggests being more specific.",
-        tags: ['phoenix-protocol', 'terminology', 'style'],
+        tags: ["phoenix-protocol", "terminology", "style"],
         function: function PF017(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'inline' && token.content) {
+                if (token.type === "inline" && token.content) {
                     if (ETC_REGEX.test(token.content)) {
                         onError({
                             lineNumber: token.lineNumber,
@@ -829,26 +847,26 @@ module.exports = [
         },
     },
     {
-        names: ['PF018', 'enforce-table-column-alignment'],
-        description: 'Enforces consistent left-alignment for all table columns.',
-        tags: ['phoenix-protocol', 'tables', 'style'],
+        names: ["PF018", "enforce-table-column-alignment"],
+        description: "Enforces consistent left-alignment for all table columns.",
+        tags: ["phoenix-protocol", "tables", "style"],
         function: function PF018(params, onError) {
-            const expectedAlignment = 'left';
+            const expectedAlignment = "left";
             let currentTableMap = null;
             const fixedLines = new Set();
             params.tokens.forEach((token) => {
-                if (token.type === 'table_open') {
+                if (token.type === "table_open") {
                     currentTableMap = token.map;
                 }
-                if (token.type === 'th_open') {
-                    const style = token.attrGet('style');
-                    const actualAlignment = style ? style.split(':')[1].trim() : 'left';
+                if (token.type === "th_open") {
+                    const style = token.attrGet("style");
+                    const actualAlignment = style ? style.split(":")[1].trim() : "left";
                     if (actualAlignment !== expectedAlignment) {
                         const delimiterLineIndex = currentTableMap ? currentTableMap[0] + 1 : token.lineNumber;
                         const delimiterLine = params.lines[delimiterLineIndex];
                         let fixInfo;
-                        if (delimiterLine?.includes('|') && !fixedLines.has(delimiterLineIndex)) {
-                            const fixedLine = delimiterLine.replace(/(\|\s*):?-+:?(\s*(?=\||$))/g, '$1:---$2');
+                        if (delimiterLine?.includes("|") && !fixedLines.has(delimiterLineIndex)) {
+                            const fixedLine = delimiterLine.replace(/(\|\s*):?-+:?(\s*(?=\||$))/g, "$1:---$2");
                             fixInfo = {
                                 lineNumber: delimiterLineIndex + 1,
                                 editColumn: 1,
@@ -868,22 +886,22 @@ module.exports = [
         },
     },
     {
-        names: ['PF019', 'no-multiple-blank-lines'],
-        description: 'Flags the use of more than one consecutive blank line.',
-        tags: ['phoenix-protocol', 'style', 'whitespace'],
+        names: ["PF019", "no-multiple-blank-lines"],
+        description: "Flags the use of more than one consecutive blank line.",
+        tags: ["phoenix-protocol", "style", "whitespace"],
         function: function PF019(params, onError) {
             let consecutiveBlankLines = 0;
             params.lines.forEach((line, index) => {
-                if (line.trim() === '') {
+                if (line.trim() === "") {
                     consecutiveBlankLines++;
                     if (consecutiveBlankLines > 1) {
                         onError({
                             lineNumber: index + 1,
-                            detail: 'Multiple consecutive blank lines are not allowed.',
+                            detail: "Multiple consecutive blank lines are not allowed.",
                             fixInfo: {
                                 editColumn: 1,
-                                deleteCount: line.length + 1
-                            }
+                                deleteCount: line.length + 1,
+                            },
                         });
                     }
                 } else {
@@ -893,37 +911,37 @@ module.exports = [
         },
     },
     {
-        names: ['PF020', 'no-trailing-whitespace'],
-        description: 'Flags lines that end with trailing whitespace.',
-        tags: ['phoenix-protocol', 'style', 'whitespace'],
+        names: ["PF020", "no-trailing-whitespace"],
+        description: "Flags lines that end with trailing whitespace.",
+        tags: ["phoenix-protocol", "style", "whitespace"],
         function: function PF020(params, onError) {
             params.lines.forEach((line, index) => {
                 const match = TRAILING_WHITESPACE_REGEX.exec(line);
                 if (match) {
                     onError({
                         lineNumber: index + 1,
-                        detail: 'Line ends with trailing whitespace.',
+                        detail: "Line ends with trailing whitespace.",
                         context: line,
                         fixInfo: {
                             editColumn: match.index + 1,
-                            deleteCount: match[0].length
-                        }
+                            deleteCount: match[0].length,
+                        },
                     });
                 }
             });
         },
     },
     {
-        names: ['PF021', 'actionable-prompt-packet-exists'],
+        names: ["PF021", "actionable-prompt-packet-exists"],
         description:
             "Validates that artifacts contain the 'Actionable Prompt Packet' section (allows variable Roman Numerals).",
-        tags: ['phoenix-protocol', 'structure', 'actionability'],
+        tags: ["phoenix-protocol", "structure", "actionability"],
         function: function PF021(params, onError) {
             // Regex to match "X. Actionable Prompt Packet" where X is any Roman Numeral or number, and optional (APP) suffix
             const appHeadingRegex = /^[IVXLCDM\d]+\.\s+Actionable Prompt Packet/i;
             let packetFound = false;
             params.tokens.forEach((token) => {
-                if (token.type === 'heading_open' && token.tag === 'h2') {
+                if (token.type === "heading_open" && token.tag === "h2") {
                     const inlineToken = params.tokens[params.tokens.indexOf(token) + 1];
                     if (inlineToken?.content && appHeadingRegex.test(inlineToken.content)) packetFound = true;
                 }
@@ -937,34 +955,34 @@ module.exports = [
         },
     },
     {
-        names: ['PF022', 'validate-relationship-types'],
+        names: ["PF022", "validate-relationship-types"],
         description: "Validates that 'Relationship Type' in OSLM tables uses a controlled vocabulary.",
-        tags: ['phoenix-protocol', 'oslm', 'synergy'],
+        tags: ["phoenix-protocol", "oslm", "synergy"],
         function: function PF022(params, onError) {
             let inOslmTable = false;
             let relationshipTypeColumn = -1;
             params.tokens.forEach((token, index) => {
                 if (
-                    token.type === 'heading_open' &&
-                    token.tag === 'h2' &&
-                    params.tokens[index + 1]?.content.includes('Synergistic Links Matrix Update')
+                    token.type === "heading_open" &&
+                    token.tag === "h2" &&
+                    params.tokens[index + 1]?.content.includes("Synergistic Links Matrix Update")
                 ) {
                     inOslmTable = true;
                     relationshipTypeColumn = -1;
                 }
-                if (inOslmTable && token.type === 'thead_open') {
+                if (inOslmTable && token.type === "thead_open") {
                     const headerRow = params.tokens.slice(index);
-                    const thTokens = headerRow.filter((t) => t.type === 'th_open');
+                    const thTokens = headerRow.filter((t) => t.type === "th_open");
                     thTokens.every((th, i) => {
-                        const thContent = headerRow.find((t) => t.type === 'inline' && t.map[0] === th.map[0]);
-                        if (thContent?.content === 'Relationship Type') {
+                        const thContent = headerRow.find((t) => t.type === "inline" && t.map[0] === th.map[0]);
+                        if (thContent?.content === "Relationship Type") {
                             relationshipTypeColumn = i;
                             return false;
                         }
                         return true;
                     });
                 }
-                if (inOslmTable && token.type === 'td_open' && token.map[1] === relationshipTypeColumn) {
+                if (inOslmTable && token.type === "td_open" && token.map[1] === relationshipTypeColumn) {
                     const cellContent = params.tokens[index + 1].content.trim();
                     if (cellContent && !VALID_RELATIONSHIP_TYPES.has(cellContent)) {
                         onError({
@@ -977,12 +995,12 @@ module.exports = [
         },
     },
     {
-        names: ['PF023', 'h2-requires-roman-numeral'],
-        description: 'Enforces that all H2 headings must be prefixed with a Roman numeral.',
-        tags: ['phoenix-protocol', 'structure', 'headings'],
+        names: ["PF023", "h2-requires-roman-numeral"],
+        description: "Enforces that all H2 headings must be prefixed with a Roman numeral.",
+        tags: ["phoenix-protocol", "structure", "headings"],
         function: function PF023(params, onError) {
             params.tokens.forEach((token, index) => {
-                if (token.type === 'heading_open' && token.tag === 'h2') {
+                if (token.type === "heading_open" && token.tag === "h2") {
                     const inlineToken = params.tokens[index + 1];
                     if (inlineToken && !ROMAN_NUMERAL_REGEX.test(inlineToken.content)) {
                         onError({
@@ -995,18 +1013,18 @@ module.exports = [
         },
     },
     {
-        names: ['PF024', 'musashi-metadata-check'],
+        names: ["PF024", "musashi-metadata-check"],
         description: "Validates that the metadata table contains the 'Evolutionary Alignment' or 'Evolution' row.",
-        tags: ['phoenix-protocol', 'metadata', 'musashi'],
+        tags: ["phoenix-protocol", "metadata", "musashi"],
         function: function PF024(params, onError) {
             let firstTableFound = false;
             let hasAlignmentRow = false;
             for (const token of params.tokens) {
-                if (token.type === 'table_open') {
+                if (token.type === "table_open") {
                     firstTableFound = true;
                     const tableStart = token.map[0];
                     const tableEnd = token.map[1];
-                    const tableContent = params.lines.slice(tableStart, tableEnd).join('\n');
+                    const tableContent = params.lines.slice(tableStart, tableEnd).join("\n");
                     if (/(?:Evolutionary Alignment|Evolution)/i.test(tableContent)) hasAlignmentRow = true;
                     break;
                 }
@@ -1020,9 +1038,9 @@ module.exports = [
         },
     },
     {
-        names: ['PF025', 'indent-four-spaces'],
-        description: 'Flags list items indented with non-4-space multiples.',
-        tags: ['phoenix-protocol', 'style', 'indentation'],
+        names: ["PF025", "indent-four-spaces"],
+        description: "Flags list items indented with non-4-space multiples.",
+        tags: ["phoenix-protocol", "style", "indentation"],
         function: function PF025(params, onError) {
             params.lines.forEach((line, index) => {
                 const match = INDENT_REGEX.exec(line);
@@ -1037,7 +1055,7 @@ module.exports = [
                             fixInfo: {
                                 editColumn: 1,
                                 deleteCount: indentSize,
-                                insertText: ' '.repeat(targetIndent),
+                                insertText: " ".repeat(targetIndent),
                             },
                         });
                     }
@@ -1046,19 +1064,19 @@ module.exports = [
         },
     },
     {
-        names: ['PF026', 'enforce-asterisk-lists'],
-        description: 'Validates that unordered lists use the asterisk (*) marker.',
-        tags: ['phoenix-protocol', 'style', 'lists'],
+        names: ["PF026", "enforce-asterisk-lists"],
+        description: "Validates that unordered lists use the asterisk (*) marker.",
+        tags: ["phoenix-protocol", "style", "lists"],
         function: function PF026(params, onError) {
             let inInvalidList = false;
-            let invalidMarkup = '';
+            let invalidMarkup = "";
             params.tokens.forEach((token) => {
-                if (token.type === 'bullet_list_open' && token.markup !== '*') {
+                if (token.type === "bullet_list_open" && token.markup !== "*") {
                     inInvalidList = true;
                     invalidMarkup = token.markup;
-                } else if (token.type === 'bullet_list_close') {
+                } else if (token.type === "bullet_list_close") {
                     inInvalidList = false;
-                } else if (inInvalidList && token.type === 'list_item_open') {
+                } else if (inInvalidList && token.type === "list_item_open") {
                     const line = params.lines[token.lineNumber - 1];
                     const escapedMarkup = invalidMarkup.replace(/[.*+?^${}()|[\]\\]/g, String.raw`\$&`);
                     const regex = new RegExp(String.raw`^(\s*)${escapedMarkup}(\s+)`);
@@ -1068,7 +1086,7 @@ module.exports = [
                         fixInfo = {
                             editColumn: match[1].length + 1,
                             deleteCount: invalidMarkup.length,
-                            insertText: '*'
+                            insertText: "*",
                         };
                     }
                     onError({
@@ -1082,33 +1100,12 @@ module.exports = [
         },
     },
     {
-        names: ['PF027', 'heading-hierarchy'],
-        description: 'Enforces a strict heading hierarchy (no skipping levels).',
-        tags: ['phoenix-protocol', 'structure', 'headings'],
-        function: function PF027(params, onError) {
-            let lastLevel = 0;
-            params.tokens.forEach((token) => {
-                if (token.type === 'heading_open') {
-                    const level = Number.parseInt(token.tag.slice(1));
-                    if (level > lastLevel + 1) {
-                        onError({
-                            lineNumber: token.lineNumber,
-                            detail: `Heading level skip detected: H${lastLevel} to H${level}.`,
-                            context: token.line,
-                        });
-                    }
-                    lastLevel = level;
-                }
-            });
-        },
-    },
-    {
-        names: ['PF028', 'enforce-artifact-anchor'],
+        names: ["PF028", "enforce-artifact-anchor"],
         description: "Ensures every Markdown file contains an 'artifact_anchor' block.",
-        tags: ['phoenix-protocol', 'metadata', 'governance'],
+        tags: ["phoenix-protocol", "metadata", "governance"],
         function: function PF028(params, onError) {
-            const content = params.lines.join('\n');
-            if (!content.includes('artifact_anchor:')) {
+            const content = params.lines.join("\n");
+            if (!content.includes("artifact_anchor:")) {
                 onError({
                     lineNumber: 1,
                     detail: "Missing mandatory 'artifact_anchor' metadata block.",
@@ -1117,24 +1114,24 @@ module.exports = [
         },
     },
     {
-        names: ['PF029', 'list-marker-spacing'],
-        description: 'Enforces exactly one space after a list marker (* or -).',
-        tags: ['phoenix-protocol', 'style', 'lists'],
+        names: ["PF029", "list-marker-spacing"],
+        description: "Enforces exactly one space after a list marker (* or -).",
+        tags: ["phoenix-protocol", "style", "lists"],
         function: function PF029(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'list_item_open') {
+                if (token.type === "list_item_open") {
                     const line = params.lines[token.lineNumber - 1];
                     const match = line.match(/^(\s*[*+-])(\s+)/);
-                    if (match && match[2] !== ' ') {
+                    if (match && match[2] !== " ") {
                         onError({
                             lineNumber: token.lineNumber,
-                            detail: 'List markers must be followed by exactly one space.',
+                            detail: "List markers must be followed by exactly one space.",
                             context: line,
                             fixInfo: {
                                 editColumn: match[1].length + 1,
                                 deleteCount: match[2].length,
-                                insertText: ' '
-                            }
+                                insertText: " ",
+                            },
                         });
                     }
                 }
@@ -1142,30 +1139,22 @@ module.exports = [
         },
     },
     {
-        names: ['PF030', 'valid-relationship-types'],
-        description: 'Validates that relationship types in tables match the canonical list.',
-        tags: ['phoenix-protocol', 'metadata', 'relationships'],
+        names: ["PF030", "valid-relationship-types"],
+        description: "Validates that relationship types in tables match the canonical list.",
+        tags: ["phoenix-protocol", "metadata", "relationships"],
         function: function PF030(params, onError) {
-            const VALID_RELATIONS = [
-                'GOVERNS',
-                'INDEXES',
-                'DEFINED_BY',
-                'SYNERGIZES',
-                'IMPLEMENTS',
-                'TRACKS',
-                'EXTENDS',
-            ];
+            const validRelationsArray = Array.from(VALID_RELATIONSHIP_TYPES);
 
             params.tokens.forEach((token) => {
-                if (token.type !== 'inline' || !token.children) return;
+                if (token.type !== "inline" || !token.children) return;
 
                 token.children.forEach((child) => {
-                    if (child.type === 'text') {
+                    if (child.type === "text") {
                         // Extract potential relationship types (uppercase words, 4+ chars, optionally with underscores)
                         const potentialRelations = child.content.match(/\b[A-Z_]{4,}\b/g) || [];
-                        
+
                         potentialRelations.forEach((word) => {
-                            checkRelationshipMisspelling(word, token, params, onError, VALID_RELATIONS);
+                            checkRelationshipMisspelling(word, token, params, onError, validRelationsArray);
                         });
                     }
                 });
@@ -1173,16 +1162,16 @@ module.exports = [
         },
     },
     {
-        names: ['PF031', 'absolute-media-paths'],
-        description: 'Ensures all images/videos use absolute paths (file:///).',
-        tags: ['phoenix-protocol', 'media', 'portability'],
+        names: ["PF031", "absolute-media-paths"],
+        description: "Ensures all images/videos use absolute paths (file:///).",
+        tags: ["phoenix-protocol", "media", "portability"],
         function: function PF031(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'inline') {
+                if (token.type === "inline") {
                     token.children.forEach((child) => {
-                        if (child.type === 'image') {
-                            const src = child.attrGet('src');
-                            if (src && !src.startsWith('file:///') && !src.startsWith('http')) {
+                        if (child.type === "image") {
+                            const src = child.attrGet("src");
+                            if (src && !src.startsWith("file:///") && !src.startsWith("http")) {
                                 onError({
                                     lineNumber: child.lineNumber,
                                     detail: `Media path '${src}' must be absolute (file:///...).`,
@@ -1196,12 +1185,12 @@ module.exports = [
         },
     },
     {
-        names: ['PF032', 'ts-links-use-path-aliases'],
-        description: 'Ensures all Markdown links pointing to .ts or .tsx files use absolute path aliases (AETHER-V2).',
-        tags: ['phoenix-protocol', 'links', 'aliases'],
+        names: ["PF032", "ts-links-use-path-aliases"],
+        description: "Ensures all Markdown links pointing to .ts or .tsx files use absolute path aliases (AETHER-V2).",
+        tags: ["phoenix-protocol", "links", "aliases"],
         function: function PF032(params, onError) {
             params.tokens.forEach((token) => {
-                if (token.type === 'link_open') {
+                if (token.type === "link_open") {
                     validateTsLinkAlias(token, params, onError);
                 }
             });

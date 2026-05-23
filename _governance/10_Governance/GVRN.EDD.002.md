@@ -1,4 +1,5 @@
 # AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.EDD.002` | The Sovereign ID. |
-| **Official Name** | `AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                            | Description       |
+| :------------------ | :----------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.EDD.002`                                   | The Sovereign ID. |
+| **Official Name**   | `AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                | The Standard.     |
+| **Domain**          | `GVRN`                                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                       | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 ---
+
 UIP: AOP-EDD-002
 Title: Ethos-Driven Design Protocol
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md)
+  Description: >
   Mandatory procedure for designing new architectural artifacts, ensuring their creation is explicitly and traceably governed by a pre-defined core ethos.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2025-10-22
-  - Timestamp: 1761100800
-Tags: 
-  - #Design
-  - #Ethos
-  - #EDD
-  - #Governance
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2025-10-22
+- Timestamp: 1761100800
+  Tags:
+- #Design
+- #Ethos
+- #EDD
+- #Governance
+
 ---
 
 > [!IMPORTANT]

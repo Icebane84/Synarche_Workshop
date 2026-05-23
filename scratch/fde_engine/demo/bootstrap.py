@@ -1,10 +1,9 @@
+from core.chunk_executor import ChunkExecutor
 from core.engine_runtime import EngineRuntime
-from core.parallel_executor import DeterministicParallelExecutor
 from dag.dag_compiler import DAGCompiler
 from ecs.ecs_scheduler import ECSScheduler, SystemTask
 from ecs.world import World
 from systems.example_system import ExampleSystem
-from core.chunk_executor import ChunkExecutor
 
 
 def main():

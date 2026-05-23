@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -21,8 +20,7 @@ from typing import Any, Dict, List
 
 
 class ExplanationGenerator:
-    """
-    Generate human-readable explanations and citations for retrieved memories.
+    """Generate human-readable explanations and citations for retrieved memories.
     Facilitates systemic transparency by explaining 'why' specific data was retrieved.
     """
 
@@ -31,15 +29,15 @@ class ExplanationGenerator:
         self.max_memories = 3
 
     def generate(self, query: str, memories: List[Dict[str, Any]]) -> str:
-        """
-        Synthesize an explanation based on query context and memories.
-        
+        """Synthesize an explanation based on query context and memories.
+
         Args:
             query (str): The original search query.
             memories (List[Dict[str, Any]]): The retrieved memories to explain.
-            
+
         Returns:
             str: A human-readable explanation string.
+
         """
         if not memories:
             return "I don't have enough specific context to provide a detailed explanation."
@@ -55,15 +53,15 @@ class ExplanationGenerator:
         return f"{explanation}\n\n[Confidence: {confidence}]"
 
     def generate_citation(self, memories: List[Dict[str, Any]]) -> str:
-        """
-        Generate a formatted citation string for the used memories.
-        Example: [Memory 1 (Tag A), Memory 2 (Tag B)]
-        
+        """Generate a formatted citation string for the used memories.
+        Example: [Memory 1 (Tag A), Memory 2 (Tag B)].
+
         Args:
             memories (List[Dict[str, Any]]): The retrieved memories to cite.
-            
+
         Returns:
             str: A formatted citation string.
+
         """
         if not memories:
             return "No specific memories were cited for this response."
@@ -79,14 +77,14 @@ class ExplanationGenerator:
     def generate_transparency_metadata(
         self, memories: List[Dict[str, Any]]
     ) -> Dict[str, Any]:
-        """
-        Provide deep technical reasoning metadata for the retrieval process.
-        
+        """Provide deep technical reasoning metadata for the retrieval process.
+
         Args:
             memories (List[Dict[str, Any]]): The retrieved memories.
-            
+
         Returns:
             Dict[str, Any]: Technical metadata including match scores and query intent.
+
         """
         if not memories:
             return {

@@ -34,7 +34,13 @@ def check_vscode_settings(workspace_root: Path) -> dict:
             # But we assume valid JSON for standard compliance.
             content = f.read()
             # Strip comments (primitive)
-            content = "\n".join([line for line in content.splitlines() if not line.strip().startswith("//")])
+            content = "\n".join(
+                [
+                    line
+                    for line in content.splitlines()
+                    if not line.strip().startswith("//")
+                ]
+            )
             settings = json.loads(content)
 
         if settings.get("editor.tabSize") != 4:
@@ -49,8 +55,12 @@ def check_vscode_settings(workspace_root: Path) -> dict:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="IDE Sentinel — Workspace Configuration Auditor")
-    parser.add_argument("target", nargs="?", default=".", help="Workspace root directory")
+    parser = argparse.ArgumentParser(
+        description="IDE Sentinel — Workspace Configuration Auditor"
+    )
+    parser.add_argument(
+        "target", nargs="?", default=".", help="Workspace root directory"
+    )
     args = parser.parse_args()
 
     root = Path(args.target).resolve()

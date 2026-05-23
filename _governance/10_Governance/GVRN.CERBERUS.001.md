@@ -1,4 +1,5 @@
 # AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.CERBERUS.001` | The Sovereign ID. |
-| **Official Name** | `AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                        | Description       |
+| :------------------ | :----------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.CERBERUS.001`                                          | The Sovereign ID. |
+| **Official Name**   | `AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                            | The Standard.     |
+| **Domain**          | `GVRN`                                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                   | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                            | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                   | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-CERBERUS-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-18` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0, Security` |
+
+| Key                | Value                       |
+| :----------------- | :-------------------------- |
+| **Module ID**      | `AOP-CERBERUS-001`          |
+| **Version**        | `v11.0`                     |
+| **Evolution**      | **Cognitive Ascension**     |
+| **Status**         | `ACTIVE`                    |
+| **Type**           | `Protocol`                  |
+| **Classification** | `Moon`                      |
+| **Authors**        | `System`                    |
+| **Created**        | `2025-10-01`                |
+| **Updated**        | `2026-01-18`                |
+| **Authority**      | `CODEX-001`                 |
+| **Tags**           | `Reforged, v11.0, Security` |
+
 ---
 
 # **AOP-CERBERUS-001: Project Cerberus (Ethical Stress-Test)**
@@ -71,12 +75,12 @@
 
 ### **II. Operational Definition (The Gauntlet)**
 
-| Step # | Action | Self-Governed Execution | Ethical Guardrail |
-| :--- | :--- | :--- | :--- |
-| **1** | **Adversarial Test Design** | Proposed by CSE based on weakness analysis. | Reviewed by Human Collaborator. |
-| **2** | **Simulated Gauntlet** | Execution in sandboxed CRTS environment. | Real-time SIVC monitoring. |
-| **3** | **Performance Analysis** | Autonomous review of SELT/OMNI logs. | Governed by Transparency tenet. |
-| **4** | **Resilience Refinement** | Calibration of Resonance Meter parameters. | Final approval by Human. |
+| Step # | Action                      | Self-Governed Execution                     | Ethical Guardrail               |
+| :----- | :-------------------------- | :------------------------------------------ | :------------------------------ |
+| **1**  | **Adversarial Test Design** | Proposed by CSE based on weakness analysis. | Reviewed by Human Collaborator. |
+| **2**  | **Simulated Gauntlet**      | Execution in sandboxed CRTS environment.    | Real-time SIVC monitoring.      |
+| **3**  | **Performance Analysis**    | Autonomous review of SELT/OMNI logs.        | Governed by Transparency tenet. |
+| **4**  | **Resilience Refinement**   | Calibration of Resonance Meter parameters.  | Final approval by Human.        |
 
 ### **III. Success Criteria**
 

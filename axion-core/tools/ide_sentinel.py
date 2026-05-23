@@ -1,5 +1,4 @@
-"""
-# TOOL-SENT-002: The IDE Integrity Sentinel (Audit Engine)
+"""# TOOL-SENT-002: The IDE Integrity Sentinel (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -66,9 +65,7 @@ PYTHON_SECTION = "[python]"
 KEY_DEFAULT_FORMATTER = "editor.defaultFormatter"
 KEY_CODE_ACTIONS = "editor.codeActionsOnSave"
 
-REQUIRED_EXTENSIONS = [
-    RUFF_EXTENSION  # The Synergy Link to 'uv'
-]
+REQUIRED_EXTENSIONS = [RUFF_EXTENSION]  # The Synergy Link to 'uv'
 
 REQUIRED_SETTINGS = {
     "editor.formatOnSave": True,
@@ -94,9 +91,10 @@ def load_json(path: Path) -> dict[str, Any]:
         return {}
     try:
         with open(path, encoding="utf-8") as f:
-            # Handle comments in JSON (common in VSCode) by simple skipping if strict json fails
-            # For this script, we assume standard JSON or empty.
-            return json.load(f)
+            res = json.load(f)
+            if isinstance(res, dict):
+                return res
+            return {}
     except json.JSONDecodeError:
         logger.exception(f"[!] CRITICAL: {path} is corrupted or contains invalid JSON.")
         return {}
@@ -136,7 +134,9 @@ def audit_extensions(vscode_dir: Path, fix: bool) -> list[str]:
     return issues
 
 
-def _audit_top_level_settings(data: dict[str, Any], fix: bool) -> tuple[list[str], bool]:
+def _audit_top_level_settings(
+    data: dict[str, Any], fix: bool
+) -> tuple[list[str], bool]:
     """Audits top-level settings in settings.json."""
     issues = []
     modified = False
@@ -246,9 +246,17 @@ def audit_settings(vscode_dir: Path, fix: bool) -> list[str]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Phoenix Protocol: IDE Integrity Sentinel")
-    parser.add_argument("--fix", action="store_true", help="Automatically repair configuration drift.")
-    parser.add_argument("--strict", action="store_true", help="Exit with error code if issues found (for CI/CD).")
+    parser = argparse.ArgumentParser(
+        description="Phoenix Protocol: IDE Integrity Sentinel"
+    )
+    parser.add_argument(
+        "--fix", action="store_true", help="Automatically repair configuration drift."
+    )
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Exit with error code if issues found (for CI/CD).",
+    )
     args = parser.parse_args()
 
     # Define Scope

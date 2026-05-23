@@ -65,7 +65,7 @@
 ### 1.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **[Stat] +[Value]**
-    - _Mechanism_: [Explanation].
+  - _Mechanism_: [Explanation].
 - **System Slot**: **[SLOT]**
 - **Synergy Set**: **[SET]**
 

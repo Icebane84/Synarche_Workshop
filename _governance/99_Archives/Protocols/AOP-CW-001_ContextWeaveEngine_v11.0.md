@@ -1,4 +1,5 @@
 # AOP-CW-001_ContextWeaveEngine_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,36 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-CW-001-CONTEXTWEAVEENGINE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-CW-001_ContextWeaveEngine_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-CW-001-CONTEXTWEAVEENGINE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-CW-001_ContextWeaveEngine_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
+
 UIP: AOP-CW-001
 Title: ContextWeave Engine Protocol
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-CW-001_ContextWeaveEngine_v11.0.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-CW-001_ContextWeaveEngine_v11.0.md)
+  Description: >
   The operational framework for the ContextWeave Engine, responsible for dynamically interlinking conceptual contexts and pattern recognition in the Knowledge Graph.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-17
-  - Timestamp: 1768646400
-Tags: 
-  - #Context
-  - #Weave
-  - #PatternRecognition
-  - #COG
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-17
+- Timestamp: 1768646400
+  Tags:
+- #Context
+- #Weave
+- #PatternRecognition
+- #COG
+
 ---
 
 > [!IMPORTANT]

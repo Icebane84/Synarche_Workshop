@@ -82,9 +82,9 @@ values are forbidden.
 ## **Actionable Prompt Packet**
 
 - **🎨 CMD: APPLY_AESTHETIC**
-    - _Intent:_ "Refactor the current CSS/Tailwind config to match `UMB-AESTHETIC-001`."
+  - _Intent:_ "Refactor the current CSS/Tailwind config to match `UMB-AESTHETIC-001`."
 - **✨ CMD: CHECK_VISUAL_COHERENCE**
-    - _Intent:_ "Audit the UI for deviations from the Luminous Coherence palette."
+  - _Intent:_ "Audit the UI for deviations from the Luminous Coherence palette."
 
 ---
 

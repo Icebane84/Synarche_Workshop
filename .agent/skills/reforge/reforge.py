@@ -66,7 +66,9 @@ def infer_domain(filepath: str) -> str:
 
 def extract_existing_metadata(content: str) -> dict[str, str]:
     metadata: dict[str, str] = {}
-    table_rows = re.findall(r"\| \s*\**?\d*\.?\s*(.*?)\**? \s*\| \s*(.*?) \s*\|", content)
+    table_rows = re.findall(
+        r"\| \s*\**?\d*\.?\s*(.*?)\**? \s*\| \s*(.*?) \s*\|", content
+    )
     for key, value in table_rows:
         k = key.strip().strip("*")
         v = re.sub(r"[`\*]", "", value).strip()
@@ -92,7 +94,9 @@ def generate_header(metadata: dict[str, str], filepath: str) -> str:
         ARTIFACT_ID: metadata.get(ARTIFACT_ID, os.path.splitext(filename)[0]),
         OFFICIAL_NAME: metadata.get(OFFICIAL_NAME, filename),
         "Version": "v13.0",
-        "Provenance": metadata.get("Provenance", f"Reforged: {datetime.datetime.now().strftime('%Y-%m-%d')}"),
+        "Provenance": metadata.get(
+            "Provenance", f"Reforged: {datetime.datetime.now().strftime('%Y-%m-%d')}"
+        ),
         "Domain": domain_code,
         "Evolution": evo,
         "Status (State)": "[ACTIVE]",
@@ -152,7 +156,9 @@ def process_file(filepath: str) -> None:
         f.write(final_content)
 
 
-def reforge_artifact(target_file: str, domain: str = "GVRN", type: str = "Protocol") -> None:
+def reforge_artifact(
+    target_file: str, domain: str = "GVRN", type: str = "Protocol"
+) -> None:
     """Entry point for the skill."""
     if os.path.exists(target_file):
         process_file(target_file)

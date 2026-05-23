@@ -6,4 +6,4 @@
  *
  * [OMNI-ARTIFACT-ANCHOR] ID: SCRIPTS.Gateway VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28
  */
-export * from './audit_prs';
+export * from "./audit_prs";

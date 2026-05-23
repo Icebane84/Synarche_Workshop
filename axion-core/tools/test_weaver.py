@@ -1,5 +1,4 @@
-"""
-# TOOL-STAR-003: Catalyst Weaver Tester (Coherence Filter)
+"""# TOOL-STAR-003: Catalyst Weaver Tester (Coherence Filter).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -95,7 +94,12 @@ class TestCatalystWeaver(unittest.TestCase):
             "tags": ["Core"],
             "content": "Referencing artifact B here. Phoenix Axion.",
         }
-        art_b = {"id": "B", "official_name": "docs.md", "tags": ["Core"], "content": "Phoenix Axion is great."}
+        art_b = {
+            "id": "B",
+            "official_name": "docs.md",
+            "tags": ["Core"],
+            "content": "Phoenix Axion is great.",
+        }
 
         score = self.weaver.calculate_synergy_score(art_a, art_b, external_signal=1.0)
         self.assertGreaterEqual(score, 1.0)

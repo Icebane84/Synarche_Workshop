@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-SENT-006: Weaver CLI (Celestial Interface)
+"""# TOOL-SENT-006: Weaver CLI (Celestial Interface).
 
 ## I. Universal Identification & Provenance
 | Attribute | Value |
@@ -16,7 +15,6 @@ import argparse
 import json
 import logging
 import sys
-from pathlib import Path
 
 from weaver_engine import ASLWeaverEngine
 
@@ -27,7 +25,9 @@ logger = logging.getLogger(__name__)
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Synarche Celestial Weaver CLI")
-    parser.add_argument("--config", default="asl_weaver_config.json", help="Path to config JSON")
+    parser.add_argument(
+        "--config", default="asl_weaver_config.json", help="Path to config JSON"
+    )
     parser.add_argument("--root", default=".", help="Workspace root directory")
     parser.add_argument(
         "--mode",
@@ -64,7 +64,9 @@ def main() -> None:
             if args.mode == "forge" and plan:
                 logger.info("\n⚡ Initiating Forge sequence...")
                 updated_count = engine.execute_forge(plan)
-                logger.info(f"✨ Successfully forged links in {updated_count} artifacts.")
+                logger.info(
+                    f"✨ Successfully forged links in {updated_count} artifacts."
+                )
 
         if args.mode == "audit" or (args.mode in ["check", "forge"]):
             audit = engine.audit_lis()

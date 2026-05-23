@@ -9,6 +9,7 @@
 ---
 
 # AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-SENTINEL-SCAN-001-THECODESENTINELPROTOCOL-V2.1-001` | The Sovereign ID. |
-| **Official Name** | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                         | Description       |
+| :------------------ | :------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-SENTINEL-SCAN-001-THECODESENTINELPROTOCOL-V2.1-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                             | The Standard.     |
+| **Domain**          | `GVRN`                                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
 
 # AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol (v2.2)
 
@@ -90,8 +91,8 @@ The Sentinel runs on every commit/save, checking six dimensions of health.
 1. **Trigger**: `git commit` or `CMD: RunSentinel`.
 2. **Execution**: The **Coherent Synthesis Engine** executes the linting suite.
 3. **Result Logic**:
-    - **PASS**: Commit proceeds. `SELT-WEAVE-001` logged.
-    - **FAIL**: Commit rejected. **Dissonance Quest** generated.
+   - **PASS**: Commit proceeds. `SELT-WEAVE-001` logged.
+   - **FAIL**: Commit rejected. **Dissonance Quest** generated.
 
 ## V. Systemic Topology (ASL Protocol)
 

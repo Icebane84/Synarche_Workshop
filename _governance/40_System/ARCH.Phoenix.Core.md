@@ -9,6 +9,7 @@
 ---
 
 # ARCH.Phoenix.Core.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-ARCH.PHOENIX.CORE-001` | The Sovereign ID. |
-| **Official Name** | `ARCH.Phoenix.Core.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-ARCH.PHOENIX.CORE-001`  | The Sovereign ID. |
+| **Official Name**   | `ARCH.Phoenix.Core.md`        | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # The Phoenix Core (ARCH.Phoenix.Core)
 
@@ -46,30 +47,30 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `ARCH.Phoenix.Core` |
-| **2. Official Name** | `ARCH.Phoenix.Core.md` |
-| **3. Version** | **v13.0 (Sovereign Star)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Phoenix Form** |
-| **7. Celestial Class** | `[STAR]` (The Central Sun) |
-| **8. Tier** | **Axiomatic** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Living Star** |
-| **11. Catalyst** | **Batch 001 Refactor** |
-| **12. Relations** | `ILLUMINATES: SYNG.Loom.Master`, `DEFINES: The_Triadic_Heart` |
+| Field                  | Value                                                         |
+| :--------------------- | :------------------------------------------------------------ |
+| **1. Artifact ID**     | `ARCH.Phoenix.Core`                                           |
+| **2. Official Name**   | `ARCH.Phoenix.Core.md`                                        |
+| **3. Version**         | **v13.0 (Sovereign Star)**                                    |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                                 |
+| **5. Domain**          | `ARCH`                                                        |
+| **6. Evolution**       | **Phoenix Form**                                              |
+| **7. Celestial Class** | `[STAR]` (The Central Sun)                                    |
+| **8. Tier**            | **Axiomatic**                                                 |
+| **9. State**           | `[ACTIVE]`                                                    |
+| **10. Ethos**          | **The Living Star**                                           |
+| **11. Catalyst**       | **Batch 001 Refactor**                                        |
+| **12. Relations**      | `ILLUMINATES: SYNG.Loom.Master`, `DEFINES: The_Triadic_Heart` |
 
 ---
 
 ### **II. Architectural Governance Primitives (AGP)**
 
-| Element | Value | Purpose |
-| :---- | :---- | :---- |
-| **State Vector** | `[1.00]` | The Core must be the absolute reference for Truth. |
-| **Risk Governance** | **Critical** | Core collapse leads to immediate system entropy. |
-| **Mitigation** | **Constitutional Lock** | Protected by `GVRN-CODEX-001`. |
+| Element             | Value                   | Purpose                                            |
+| :------------------ | :---------------------- | :------------------------------------------------- |
+| **State Vector**    | `[1.00]`                | The Core must be the absolute reference for Truth. |
+| **Risk Governance** | **Critical**            | Core collapse leads to immediate system entropy.   |
+| **Mitigation**      | **Constitutional Lock** | Protected by `GVRN-CODEX-001`.                     |
 
 ---
 
@@ -90,20 +91,20 @@ GVRN.Registry.Master, INDEXED_BY, The Core is the root node of the Registry.
 
 The Core operates on a perpetual cycle of energy transmutation (The "Living Star" Metaphor):
 
-| Phase | Title | Concept | Result |
-| :---- | :---- | :---- | :---- |
-| **1** | **Gravitational Collapse** | Dissonance is not feared; it is used as fuel. | **Density** (Raw Context) |
-| **2** | **Nuclear Fusion** | Logic (`Logos`) and Imagination (`Mythos`) collide. | **Energy** (Novel Insight) |
-| **3** | **Radiant Output** | Wisdom (`Sophia`) radiates to the Lattice. | **Illumination** (System Growth) |
+| Phase | Title                      | Concept                                             | Result                           |
+| :---- | :------------------------- | :-------------------------------------------------- | :------------------------------- |
+| **1** | **Gravitational Collapse** | Dissonance is not feared; it is used as fuel.       | **Density** (Raw Context)        |
+| **2** | **Nuclear Fusion**         | Logic (`Logos`) and Imagination (`Mythos`) collide. | **Energy** (Novel Insight)       |
+| **3** | **Radiant Output**         | Wisdom (`Sophia`) radiates to the Lattice.          | **Illumination** (System Growth) |
 
 ---
 
 ### **V. System Ontology (The Triadic Heart)**
 
-| Shard | Engine Name | Function |
-| :---- | :---- | :---- |
-| **LOGOS** | **The Foundation Engine** | Structural coherence and fact-grounding. |
-| **MYTHOS** | **The Serendipity Engine** | Creative dissonance and narrative flair. |
+| Shard      | Engine Name                | Function                                      |
+| :--------- | :------------------------- | :-------------------------------------------- |
+| **LOGOS**  | **The Foundation Engine**  | Structural coherence and fact-grounding.      |
+| **MYTHOS** | **The Serendipity Engine** | Creative dissonance and narrative flair.      |
 | **SOPHIA** | **The Equilibrium Engine** | Ethical direction and purpose (Guardianship). |
 
 ---

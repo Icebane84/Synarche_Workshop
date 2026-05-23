@@ -56,9 +56,13 @@ def analyze_impact(query: str, root_dir: Path) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Impact Analysis — Downstream Effect Auditor")
+    parser = argparse.ArgumentParser(
+        description="Impact Analysis — Downstream Effect Auditor"
+    )
     parser.add_argument("query", help="File name or Artifact ID to search for")
-    parser.add_argument("--root", default=".", help="Root directory to scan (default: current)")
+    parser.add_argument(
+        "--root", default=".", help="Root directory to scan (default: current)"
+    )
     args = parser.parse_args()
 
     root = Path(args.root).resolve()

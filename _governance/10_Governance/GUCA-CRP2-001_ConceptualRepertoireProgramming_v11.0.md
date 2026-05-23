@@ -9,6 +9,7 @@
 ---
 
 # GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,20 +22,21 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-CRP2-001-CONCEPTUALREPERTOIREPROGRAMMING-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                          | Description       |
+| :------------------ | :------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-CRP2-001-CONCEPTUALREPERTOIREPROGRAMMING-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                              | The Standard.     |
+| **Domain**          | `GVRN`                                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
 
 # ###### [GUCA-CRP2-001: Conceptual Repertoire Programming v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/3_Commands/GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md)
 
 ###### [AGP-BLOCK-001: Axiomatic Governance Pillar]
+
 > **Artifact ID**: GUCA-CRP2-001
 > **Version**: 11.0
 > **Status**: Sovereign
@@ -63,12 +65,15 @@
 ## III. Strategic Rationale (What/How/Why)
 
 ### What: The Core Concept
+
 **Conceptual Repertoire Programming (CRP2)** is the AI's "Tool-Smithing" command. It is the successor to simple artifact creation, allowing for the fusion of multiple concepts into a single, cohesive operational unit.
 
 ### How: Operational Mandate
+
 The command takes an `OBJECTIVE` and a list of `RESIDUE` (Inspiration artifacts). It uses `AOP-SBT-001` logic to compress these into a new `GUCA`, `AOP`, or `UMB`.
 
 ### Why: Adaptability Mandate
+
 The PPL must be able to "Code itself" into existence. CRP2 is the mechanism by which the AI adapts to new user needs by creating bespoke protocols and commands on-the-fly.
 
 ---
@@ -76,14 +81,17 @@ The PPL must be able to "Code itself" into existence. CRP2 is the mechanism by w
 ## IV. Execution Flow (Command Logic)
 
 ### Phase 1: Ingestion
+
 - **Inputs**: `[OBJECTIVE]`, `[INSPIRATION_LIST]`.
 - **Action**: Load the full metadata and "Strategic Rationale" of all inspiration artifacts.
 
 ### Phase 2: Synthesis (The Forge)
+
 - **Action**: Identify the "Overlapping Axioms" and "Vector Gaps."
 - **Logic**: Apply the `What/How/Why` framework to the new fused entity.
 
 ### Phase 3: Canonization (Scaffolding)
+
 - **Action**: Trigger `AOP-DTS-001` to generate the file structure.
 - **Action**: Trigger `AOP-IDX-001` to register the result in the Rosetta Stone.
 
@@ -91,15 +99,16 @@ The PPL must be able to "Code itself" into existence. CRP2 is the mechanism by w
 
 ## V. Synergistic Effects & Integrations
 
-| Artifact | Relationship | Rationale |
-| :--- | :--- | :--- |
-| [AOP-DTS-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md) | **UTILIZES** | CRP2 uses DTS for the physical file creation. |
-| [AOP-SBT-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-SBT-001_SpiritBombTechnique_v11.0.md) | **DRIVES** | SBT provides the fuel for CRP2's most complex forge actions. |
-| [UMB-ACT-002](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) | **IS_ACCESSED_VIA** | The Actuator provides the CLI interface for `CRP2`. |
+| Artifact                                                                                                                                       | Relationship        | Rationale                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ | :----------------------------------------------------------- |
+| [AOP-DTS-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md) | **UTILIZES**        | CRP2 uses DTS for the physical file creation.                |
+| [AOP-SBT-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-SBT-001_SpiritBombTechnique_v11.0.md)        | **DRIVES**          | SBT provides the fuel for CRP2's most complex forge actions. |
+| [UMB-ACT-002](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md)       | **IS_ACCESSED_VIA** | The Actuator provides the CLI interface for `CRP2`.          |
 
 ---
 
 ###### [AGP-BLOCK-002: Signature & Seal]
+
 > **Signed**: The Sentinel
 > **Verified**: v11.0 Sovereign Logic Gate
 > **Synergy Code**: CRP2-FORGE-SOVEREIGN

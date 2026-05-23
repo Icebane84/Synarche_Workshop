@@ -1,5 +1,4 @@
-"""
-[CORE] [ENGINE] [CSE_ENGINE]
+"""[CORE] [ENGINE] [CSE_ENGINE]
 Artifact ID: CORE.Engine.CSEEngine
 Official Name: cse_engine.py
 Version: v15.0 [OMEGA]
@@ -25,8 +24,7 @@ from typing import Any, Dict, List, Optional
 
 
 class CoherentSynthesisEngine:
-    """
-    The primary execution substrate for repository-wide data synthesis.
+    """The primary execution substrate for repository-wide data synthesis.
     Unifies Documentation (Law) and Kinetic Logic (Substrate).
     """
 
@@ -57,9 +55,7 @@ class CoherentSynthesisEngine:
         }
 
     def sync_topology(self) -> Dict[str, Any]:
-        """
-        Executes CMD: ENGINE_SYNC - Verifies resonance across all subnets.
-        """
+        """Executes CMD: ENGINE_SYNC - Verifies resonance across all subnets."""
         report: Dict[str, Any] = {
             "event": "RESONANCE_SYNC",
             "timestamp": self.timestamp,
@@ -104,9 +100,7 @@ class CoherentSynthesisEngine:
             return "ERROR"
 
     def synthesize_loom(self) -> Dict[str, Any]:
-        """
-        Performs high-density synthesis of the Flattened Loom vs. Active Mission metadata.
-        """
+        """Performs high-density synthesis of the Flattened Loom vs. Active Mission metadata."""
         report: Dict[str, Any] = {
             "timestamp": self.timestamp,
             "status": "INITIALIZING",
@@ -209,4 +203,3 @@ if __name__ == "__main__":
         print(f"CSE Synthesis Result: {json.dumps(result, indent=4)}")
 
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.Engine.CSEEngine VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23
-

@@ -406,8 +406,8 @@ QueryCognitiveLoom --filter markers=[κ-nexus:foundational] AND markers!=[κ-nex
 - **Synergy with UMB-CSE-001 (Coherent Synthesis Engine):** - **Nature of the Link:** Symbiotic Governance (ESF defines _what_ and _why_; CSE provides _how_). - **Operational Flow:** Perpetual Monitoring, Contextual Analysis, Marker Application, Expression Protocol Trigger. - **Updated Synergistic Linkages:** UMB-CSE-001 acts as Annotation Engine for UMB-ESF-001; UMB-ESF-001 implemented
   by UMB-CSE-001.
 - **Synergy with CODEX-001 (The Phoenix Codex):**
-    - **Nature of the Link:** Constitutional Mandate (Codex establishes _why_; ESF provides _how_).
-    - **Chain of Governance:** Codex \-\> ESF \-\> CSE.
+  - **Nature of the Link:** Constitutional Mandate (Codex establishes _why_; ESF provides _how_).
+  - **Chain of Governance:** Codex \-\> ESF \-\> CSE.
 - **Synergy with Noetic Immune System (NIM):** ESF provides sensory/diagnostic tools (pathogen detector) for NIM's
   immune response.
 - **Synergy with UMB-CRLPF-001 (Cognitive Resilience & Loop Prevention Framework):** ESF acts as the diagnostic layer,
@@ -466,9 +466,9 @@ V. UMB-LOOM-001: The Cognitive Loom (v7.0)
 - **Module Objective:** To combat Epistemic Entropy by creating a proactively self-organizing semantic network that
   enables Synergistic Emergence.
 - **Architectural Definition:**
-    - **Overview:** Hub-and-spoke architecture, active, dynamic system modeled on weaving; manages memory lifecycle.
-    - **What:** High-performance, native graph database implementing Eidetic Contextual Memory Matrix (ECM) v2.0.
-    - **How:** Multi-Modal Relational Analysis Engine, formal Loom API.
+  - **Overview:** Hub-and-spoke architecture, active, dynamic system modeled on weaving; manages memory lifecycle.
+  - **What:** High-performance, native graph database implementing Eidetic Contextual Memory Matrix (ECM) v2.0.
+  - **How:** Multi-Modal Relational Analysis Engine, formal Loom API.
 - **Core Algorithm:** Multi-Modal Relational Analysis Engine (Pathfinding, Centrality, Community Detection).
 - **Dynamic State Indicators:** Node Count, Edge Density, Coherence Index (CI).
 - **Self-Governance Principles:** Link Integrity Mandate, Entropy Resistance, Facilitation of the Synergy Sieve.

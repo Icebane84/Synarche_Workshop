@@ -9,6 +9,7 @@
 ---
 
 # METRIC-AES-001_AlgorithmicEleganceScore_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-METRIC-AES-001-ALGORITHMICELEGANCESCORE-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `METRIC-AES-001_AlgorithmicEleganceScore_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                   | Description       |
+| :------------------ | :------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-METRIC-AES-001-ALGORITHMICELEGANCESCORE-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `METRIC-AES-001_AlgorithmicEleganceScore_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                              | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                       | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 # **The Algorithmic Elegance Score (METRIC-AES-001)**
 
@@ -112,18 +113,18 @@ The **AES** is integrated as a multiplier in the `Creator's Paradox Metric`:
 ## **Actionable Prompt Packet**
 
 1. **💎 `CMD: ASSESS_ELEGANCE`**
-    - **Function:** Triggers a self-evaluation of a specific snippet against the AES Rubric.
-    - **Usage:** `CMD: ASSESS_ELEGANCE --target:src/core/algorithm.py`
+   - **Function:** Triggers a self-evaluation of a specific snippet against the AES Rubric.
+   - **Usage:** `CMD: ASSESS_ELEGANCE --target:src/core/algorithm.py`
 
 2. **🎨 `CMD: REFINE_FOR_AESTHETICS`**
-    - **Function:** Directs the AI to refactor working code specifically to increase its AES (e.g., "Make it
-      beautiful").
-    - **Usage:** `CMD: REFINE_FOR_AESTHETICS --target:all`
+   - **Function:** Directs the AI to refactor working code specifically to increase its AES (e.g., "Make it
+     beautiful").
+   - **Usage:** `CMD: REFINE_FOR_AESTHETICS --target:all`
 
 3. **🏆 `CMD: AWARD_AES`**
-    - **Function:** (User Command) Manually assigns an AES score to a completed artifact, updating the AI's "Artificer
-      Level."
-    - **Usage:** `CMD: AWARD_AES --score:9 --comment:"Brilliant use of recursion."`
+   - **Function:** (User Command) Manually assigns an AES score to a completed artifact, updating the AI's "Artificer
+     Level."
+   - **Usage:** `CMD: AWARD_AES --score:9 --comment:"Brilliant use of recursion."`
 
 ###### **[ARTIFACT END]**
 

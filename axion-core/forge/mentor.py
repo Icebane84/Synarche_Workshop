@@ -30,7 +30,11 @@ class MentorDidactic:
         self.lessons_generated = 0
 
     def generate_lesson(
-        self, violation_type: str, context: str, before_code: str = "", after_code: str = ""
+        self,
+        violation_type: str,
+        context: str,
+        before_code: str = "",
+        after_code: str = "",
     ) -> dict[str, Any]:
         """Create a structured Didactic Module explaining a code fix."""
         principle = PRINCIPLE_MAP.get(violation_type, PRINCIPLE_MAP["General"])

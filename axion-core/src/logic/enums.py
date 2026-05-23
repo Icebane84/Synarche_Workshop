@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -224,27 +223,27 @@ FIELD_GOVERNANCE: dict[str, TarotShard] = {
 
 
 def get_patron(field_name: str) -> TarotShard:
-    """
-    Returns the Tarot Shard responsible for governing a specific field.
+    """Returns the Tarot Shard responsible for governing a specific field.
 
     Args:
         field_name: The name of the metadata field.
 
     Returns:
         The TarotShard instance responsible for the field.
+
     """
     return FIELD_GOVERNANCE.get(field_name, TarotShard.EMPEROR)
 
 
 def get_catalyst(field_name: str) -> TarotShard:
-    """
-    Returns the Tarot Shard responsible for catalyzing a specific field.
+    """Returns the Tarot Shard responsible for catalyzing a specific field.
 
     Args:
         field_name: The name of the metadata field.
 
     Returns:
         The TarotShard instance responsible for catalyzing the field.
+
     """
     return FIELD_GOVERNANCE.get(field_name, TarotShard.MAGICIAN)
 

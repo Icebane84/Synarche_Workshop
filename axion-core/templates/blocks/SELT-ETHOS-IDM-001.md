@@ -12,7 +12,7 @@
 
 > **"{{quote}}"**
 
-*   **The Mandate**: {{mandate}}
-*   **The Law**: {{law}}
+- **The Mandate**: {{mandate}}
+- **The Law**: {{law}}
 
 ---

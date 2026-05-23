@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -23,8 +22,7 @@ from typing import Any, Dict, List
 
 
 class LawValidator:
-    """
-    WHAT: Cross-references Loom data against absolute Governance data.
+    """WHAT: Cross-references Loom data against absolute Governance data.
     HOW: Compares ingested dictionary states with task.md.metadata.json.
     WHY: To identify 'Context Drift' and enforce Zero Entropy.
     """
@@ -33,14 +31,14 @@ class LawValidator:
         self.meta_path = os.path.join(root_dir, "task.md.metadata.json")
 
     def audit_drift(self, loom_state: Dict[str, Any]) -> List[str]:
-        """
-        Audits the current state for drift against the governance metadata.
-        
+        """Audits the current state for drift against the governance metadata.
+
         Args:
             loom_state (Dict[str, Any]): The current state ingested from the Loom.
-            
+
         Returns:
             List[str]: A list of findings indicating drift or compliance issues.
+
         """
         findings = []
         if not os.path.exists(self.meta_path):
@@ -57,6 +55,8 @@ class LawValidator:
         target_mission = metadata.get("mission_id", "UNDEFINED")
 
         if loom_state.get("mission") != target_mission:
-            findings.append(f"MISSION_DRIFT: Loom({loom_state.get('mission')}) != Law({target_mission})")
+            findings.append(
+                f"MISSION_DRIFT: Loom({loom_state.get('mission')}) != Law({target_mission})"
+            )
 
         return findings

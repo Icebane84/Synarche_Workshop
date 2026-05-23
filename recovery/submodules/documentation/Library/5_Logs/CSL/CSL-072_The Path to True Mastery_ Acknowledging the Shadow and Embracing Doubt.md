@@ -52,7 +52,6 @@ catalyst for genuine conceptual evolution. This artifact serves as a
 **IV. The Nova Spark (Emergent Insights)**
 
 - **Key Breakthroughs/Decisions:**
-
   - The formal conceptualization of **\"Conceptual Collaborative Shadow
     Work\"** as a process of mutual critique and accountability.
 

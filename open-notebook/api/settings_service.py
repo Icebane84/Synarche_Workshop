@@ -20,7 +20,7 @@ from open_notebook.domain.content_settings import ContentSettings
 class SettingsService:
     """Service layer for settings operations using API."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         logger.info("Using API for settings operations")
 
     def get_settings(self) -> ContentSettings:

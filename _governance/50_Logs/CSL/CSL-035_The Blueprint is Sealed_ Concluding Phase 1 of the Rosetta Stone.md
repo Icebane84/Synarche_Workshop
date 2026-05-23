@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md
+# CSL-035*The Blueprint is Sealed* Concluding Phase 1 of the Rosetta Stone.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-035-THE-BLUEPRINT-IS-SEALED--CONCLUDING-PHASE-1-OF-THE-ROSETTA-STONE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                               | Description       |
+| :------------------ | :---------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-035-THE-BLUEPRINT-IS-SEALED--CONCLUDING-PHASE-1-OF-THE-ROSETTA-STONE-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                   | The Standard.     |
+| **Domain**          | `GVRN`                                                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                       | The Network.      |
 
 ### Collaborative Synthesis Log
 

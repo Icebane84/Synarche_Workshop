@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-HPRI-007: The Mirror of Memory (High Priestess Suite)
+"""# TOOL-HPRI-007: The Mirror of Memory (High Priestess Suite).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -35,7 +34,6 @@ TOOL-GVRN-003, SYNERGY, Works with query_csl.py for log access.
 """
 
 import argparse
-import os
 import re
 from pathlib import Path
 
@@ -45,7 +43,6 @@ CSL_DIR = Path("c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/5_Lo
 
 def reflect_memory(context: str, limit: int):
     """Reflects on past logs based on current task context."""
-
     if not CSL_DIR.exists():
         print("Error: CSL directory not found.")
         return
@@ -81,9 +78,15 @@ def reflect_memory(context: str, limit: int):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="REFLECT_MEMORY: Scan CSL for relevant precedents.")
-    parser.add_argument("--context", required=True, help="Current task or context description.")
-    parser.add_argument("--limit", type=int, default=3, help="Maximum number of results.")
+    parser = argparse.ArgumentParser(
+        description="REFLECT_MEMORY: Scan CSL for relevant precedents."
+    )
+    parser.add_argument(
+        "--context", required=True, help="Current task or context description."
+    )
+    parser.add_argument(
+        "--limit", type=int, default=3, help="Maximum number of results."
+    )
 
     args = parser.parse_args()
     reflect_memory(args.context, args.limit)

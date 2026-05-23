@@ -9,6 +9,7 @@
 ---
 
 # reverse-proxy.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,19 +22,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-REVERSE-PROXY-001` | The Sovereign ID. |
-| **Official Name** | `reverse-proxy.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-REVERSE-PROXY-001`      | The Sovereign ID. |
+| **Official Name** | `reverse-proxy.md`            | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -154,6 +150,7 @@ The frontend uses a three-tier priority system to determine the API URL:
 ### Auto-Detection Details
 
 When `API_URL` is not set, the Next.js frontend:
+
 - Analyzes the incoming HTTP request
 - Extracts the hostname from the `host` header
 - Respects the `X-Forwarded-Proto` header (for HTTPS behind reverse proxies)
@@ -161,6 +158,7 @@ When `API_URL` is not set, the Next.js frontend:
 - Example: Request to `http://10.20.30.20:8502` → API URL becomes `http://10.20.30.20:5055`
 
 **Why set API_URL explicitly?**
+
 - **Reliability**: Auto-detection can fail with complex proxy setups
 - **HTTPS**: Ensures frontend uses `https://` when behind SSL-terminating proxy
 - **Custom domains**: Works correctly with domain names instead of IP addresses
@@ -300,6 +298,7 @@ location / {
 Accessing Open Notebook from a different machine on your network:
 
 **Step 1: Get your server IP**
+
 ```bash
 # On the server running Open Notebook:
 hostname -I
@@ -309,12 +308,14 @@ ifconfig | grep "inet "
 ```
 
 **Step 2: Configure API_URL**
+
 ```bash
 # In docker-compose.yml or .env:
 API_URL=http://192.168.1.100:5055
 ```
 
 **Step 3: Expose ports**
+
 ```yaml
 services:
   open-notebook:
@@ -328,12 +329,14 @@ services:
 ```
 
 **Step 4: Access from client machine**
+
 ```bash
 # In browser on other machine:
 http://192.168.1.100:8502
 ```
 
 **Troubleshooting**:
+
 - Check firewall: `sudo ufw allow 8502 && sudo ufw allow 5055`
 - Verify connectivity: `ping 192.168.1.100` from client machine
 - Test port: `telnet 192.168.1.100 8502` from client machine
@@ -345,6 +348,7 @@ http://192.168.1.100:8502
 Host the API and frontend on different subdomains:
 
 **docker-compose.yml:**
+
 ```yaml
 services:
   open-notebook:
@@ -357,6 +361,7 @@ services:
 ```
 
 **nginx.conf:**
+
 ```nginx
 # Frontend server
 server {
@@ -407,6 +412,7 @@ server {
 For complex deployments with separate frontend and API containers:
 
 **docker-compose.yml:**
+
 ```yaml
 services:
   frontend:
@@ -437,6 +443,7 @@ services:
 ```
 
 **nginx.conf:**
+
 ```nginx
 http {
     upstream frontend {
@@ -516,11 +523,13 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 ### "Unable to connect to server"
 
 1. **Check API_URL is set**:
+
    ```bash
    docker exec open-notebook env | grep API_URL
    ```
 
 2. **Verify reverse proxy reaches container**:
+
    ```bash
    curl -I http://localhost:8502
    ```
@@ -568,6 +577,7 @@ proxy_send_timeout 300s;
 ### How to Debug Configuration Issues
 
 **Step 1: Check browser console** (F12 → Console tab)
+
 ```
 Look for messages starting with 🔧 [Config]
 These show the configuration detection process
@@ -575,17 +585,20 @@ You'll see which API URL is being used
 ```
 
 **Example good output:**
+
 ```
 ✅ [Config] Runtime API URL from server: https://your-domain.com
 ```
 
 **Example bad output:**
+
 ```
 ❌ [Config] Failed to fetch runtime config
 ⚠️  [Config] Using auto-detected URL: http://localhost:5055
 ```
 
 **Step 2: Test API directly**
+
 ```bash
 # Should return JSON config
 curl https://your-domain.com/api/config
@@ -595,6 +608,7 @@ curl https://your-domain.com/api/config
 ```
 
 **Step 3: Check Docker logs**
+
 ```bash
 docker logs open-notebook
 
@@ -605,6 +619,7 @@ docker logs open-notebook
 ```
 
 **Step 4: Verify environment variable**
+
 ```bash
 docker exec open-notebook env | grep API_URL
 
@@ -617,6 +632,7 @@ docker exec open-notebook env | grep API_URL
 ### Frontend Adds `:5055` to URL (Versions ≤ 1.0.10)
 
 **Symptoms** (only in older versions):
+
 - You set `API_URL=https://your-domain.com`
 - Browser console shows: "Attempted URL: https://your-domain.com:5055/api/config"
 - CORS errors with "Status code: (null)"
@@ -631,6 +647,7 @@ Upgrade to version 1.0.11 or later. The config endpoint has been moved to `/conf
 Check browser console (F12) - should see: `✅ [Config] Runtime API URL from server: https://your-domain.com`
 
 **If you can't upgrade**, explicitly configure the `/config` route:
+
 ```nginx
 # Only needed for versions ≤ 1.0.10
 location = /config {
@@ -646,15 +663,17 @@ location = /config {
 ### File Upload Errors (413 Payload Too Large)
 
 **Symptoms:**
+
 ```
 CORS header 'Access-Control-Allow-Origin' missing. Status code: 413.
 Error creating source. Please try again.
 ```
 
 **Root Cause:**
-When uploading files, your reverse proxy may reject the request due to body size limits *before* it reaches the application. Since the error happens at the proxy level, CORS headers are not included in the response.
+When uploading files, your reverse proxy may reject the request due to body size limits _before_ it reaches the application. Since the error happens at the proxy level, CORS headers are not included in the response.
 
 **Version Requirement:**
+
 - **Open Notebook v1.3.2+** is required for file uploads >10MB
 - Uses Next.js 16+ which supports the `proxyClientMaxBodySize` configuration option
 - Check your version: Settings → About (bottom of settings page)
@@ -662,6 +681,7 @@ When uploading files, your reverse proxy may reject the request due to body size
 **Solutions:**
 
 1. **Nginx - Increase body size limit**:
+
    ```nginx
    server {
        # Allow larger file uploads (default is 1MB)
@@ -684,22 +704,25 @@ When uploading files, your reverse proxy may reject the request due to body size
    ```
 
 2. **Traefik - Increase buffer size**:
+
    ```yaml
    # In your traefik configuration
    http:
      middlewares:
        large-body:
          buffering:
-           maxRequestBodyBytes: 104857600  # 100MB
+           maxRequestBodyBytes: 104857600 # 100MB
    ```
 
    Apply middleware to your router:
+
    ```yaml
    labels:
      - "traefik.http.routers.notebook.middlewares=large-body"
    ```
 
 3. **Kubernetes Ingress (nginx-ingress)**:
+
    ```yaml
    apiVersion: networking.k8s.io/v1
    kind: Ingress
@@ -729,6 +752,7 @@ When uploading files, your reverse proxy may reject the request due to body size
 ### CORS Errors
 
 **Symptoms:**
+
 ```
 Access-Control-Allow-Origin header is missing
 Cross-Origin Request Blocked
@@ -738,6 +762,7 @@ Response to preflight request doesn't pass access control check
 **Possible Causes:**
 
 1. **Missing proxy headers**:
+
    ```nginx
    # Make sure these are set:
    proxy_set_header X-Forwarded-Proto $scheme;
@@ -746,6 +771,7 @@ Response to preflight request doesn't pass access control check
    ```
 
 2. **API_URL protocol mismatch**:
+
    ```bash
    # Frontend is HTTPS, but API_URL is HTTP:
    API_URL=http://notebook.example.com  # ❌ Wrong
@@ -765,21 +791,25 @@ Response to preflight request doesn't pass access control check
 ### Missing Authorization Header
 
 **Symptoms:**
+
 ```json
-{"detail": "Missing authorization header"}
+{ "detail": "Missing authorization header" }
 ```
 
 This happens when:
+
 - You have set `OPEN_NOTEBOOK_PASSWORD` for authentication
 - You're trying to access `/api/config` directly without logging in first
 
 **Solution:**
 This is **expected behavior**! The frontend handles authentication automatically. Just:
+
 1. Access the frontend URL (not `/api/` directly)
 2. Log in through the UI
 3. The frontend will handle authorization headers for all API calls
 
 **For API integrations:** Include the password in the Authorization header:
+
 ```bash
 curl -H "Authorization: Bearer your-password-here" \
   https://your-domain.com/api/config
@@ -790,6 +820,7 @@ curl -H "Authorization: Bearer your-password-here" \
 ### SSL/TLS Certificate Errors
 
 **Symptoms:**
+
 - Browser shows "Your connection is not private"
 - Certificate warnings
 - Mixed content errors
@@ -797,17 +828,20 @@ curl -H "Authorization: Bearer your-password-here" \
 **Solutions:**
 
 1. **Use Let's Encrypt** (recommended):
+
    ```bash
    sudo certbot --nginx -d notebook.example.com
    ```
 
 2. **Check certificate paths** in nginx:
+
    ```nginx
    ssl_certificate /etc/nginx/ssl/fullchain.pem;      # Full chain
    ssl_certificate_key /etc/nginx/ssl/privkey.pem;    # Private key
    ```
 
 3. **Verify certificate is valid**:
+
    ```bash
    openssl x509 -in /etc/nginx/ssl/fullchain.pem -text -noout
    ```
@@ -845,11 +879,13 @@ curl -H "Authorization: Bearer your-password-here" \
 If you're running Open Notebook **version 1.0.x or earlier**, you may need to use the legacy two-port configuration where you explicitly route `/api/*` to port 5055.
 
 **Check your version:**
+
 ```bash
 docker exec open-notebook cat /app/package.json | grep version
 ```
 
 **If version < 1.1.0**, you may need:
+
 - Explicit `/api/*` routing to port 5055 in reverse proxy
 - Explicit `/config` endpoint routing for versions ≤ 1.0.10
 - See the "Frontend Adds `:5055` to URL" troubleshooting section above

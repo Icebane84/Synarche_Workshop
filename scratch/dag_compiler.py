@@ -1,24 +1,24 @@
-"""
-Artifact ID: CORE-FDE-DAG-009
+"""Artifact ID: CORE-FDE-DAG-009
 Ethos: Time is Directed; Data is Typed.
 """
+
 from collections import defaultdict
 from typing import List, Set, Type
 
+
 class SystemSignature:
-    """
-    The strictly enforced contract for all FDE Systems.
-    """
+    """The strictly enforced contract for all FDE Systems."""
+
     name: str = "Unknown"
     execution_index: int = 0
     reads: Set[Type] = set()
     writes: Set[Type] = set()
     accumulates: Set[Type] = set()
 
+
 class DAGCompiler:
-    """
-    Compiles deterministic parallel layers from System read/write signatures.
-    """
+    """Compiles deterministic parallel layers from System read/write signatures."""
+
     def __init__(self, systems: List[SystemSignature]):
         self.systems = systems
         self._validate_system_integrity()
@@ -33,14 +33,16 @@ class DAGCompiler:
                     "All systems must possess a unique temporal anchor."
                 )
             seen_indices.add(s.execution_index)
-            
+
             # Ensure a system doesn't declare a component in multiple conflicting modes
             intersection = s.writes & s.accumulates
             if intersection:
-                raise RuntimeError(f"FDE Violation: '{s.name}' cannot both write and accumulate {intersection}")
+                raise RuntimeError(
+                    f"FDE Violation: '{s.name}' cannot both write and accumulate {intersection}"
+                )
 
     def build_graph(self):
-        graph = defaultdict(set)   # node -> set(dependents)
+        graph = defaultdict(set)  # node -> set(dependents)
         indegree = {s: 0 for s in self.systems}
 
         for a in self.systems:
@@ -55,9 +57,7 @@ class DAGCompiler:
         return graph, indegree
 
     def _depends(self, a: SystemSignature, b: SystemSignature) -> bool:
-        """
-        Determines if A must completely execute before B can begin.
-        """
+        """Determines if A must completely execute before B can begin."""
         # Temporal Directive: Edges can ONLY flow forward in time.
         if a.execution_index >= b.execution_index:
             return False
@@ -66,7 +66,7 @@ class DAGCompiler:
         write_read = a.writes & b.reads
         read_write = a.reads & b.writes
         write_write = a.writes & b.writes
-        
+
         # Accumulate interactions
         write_accum = a.writes & b.accumulates
         accum_write = a.accumulates & b.writes
@@ -75,11 +75,15 @@ class DAGCompiler:
 
         # NOTE: (a.accumulates & b.accumulates) is explicitly EXCLUDED.
         # They can safely run in parallel.
-        
+
         return bool(
-            write_read or read_write or write_write or 
-            write_accum or accum_write or 
-            read_accum or accum_read
+            write_read
+            or read_write
+            or write_write
+            or write_accum
+            or accum_write
+            or read_accum
+            or accum_read
         )
 
     def compile_layers(self) -> List[List[SystemSignature]]:
@@ -96,7 +100,9 @@ class DAGCompiler:
             ready = [s for s in systems_sorted if s in remaining and indegree[s] == 0]
 
             if not ready:
-                raise RuntimeError("FDE Violation: Unresolvable cyclic dependency detected in System logic.")
+                raise RuntimeError(
+                    "FDE Violation: Unresolvable cyclic dependency detected in System logic."
+                )
 
             # Enforce absolute internal layer ordering
             ready.sort(key=lambda s: s.execution_index)

@@ -9,6 +9,7 @@
 ---
 
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Prompts Module
 
@@ -39,6 +40,7 @@ Jinja2 prompt templates for multi-provider AI workflows in Open Notebook.
 ## Purpose
 
 Centralized prompt repository using `ai_prompter` library to:
+
 1. Separate prompt engineering from Python application logic
 2. Provide reusable Jinja2 templates with variable injection
 3. Support multi-stage prompt chains (orchestrated by LangGraph workflows)
@@ -47,12 +49,14 @@ Centralized prompt repository using `ai_prompter` library to:
 ## Architecture Overview
 
 **Template Organization by Workflow**:
+
 - **`ask/`**: Multi-stage search synthesis (entry → query_process → final_answer)
 - **`chat/`**: Conversational agent with notebook context (system prompt only)
 - **`source_chat/`**: Source-focused chat with insight injection (system prompt only)
 - **`podcast/`**: Podcast generation pipeline (outline → transcript)
 
 **Rendering Pattern** (all workflows):
+
 ```python
 from ai_prompter import Prompter
 
@@ -105,6 +109,7 @@ Enabled by Jinja2's conditional blocks. Critical for podcast outline (handles li
 ### 3. Repeated Emphasis on Citation Format (Ask & Chat)
 
 All response-generating templates emphasize source citation rules:
+
 - Document ID syntax: `[source:id]`, `[note:id]`, `[insight:id]`
 - "Do not make up document IDs" repeated multiple times
 - Example citations provided inline
@@ -137,17 +142,21 @@ Guides models with extended thinking capability to separate reasoning from outpu
 ## File Catalog
 
 **`ask/` - Search Synthesis Pipeline**:
+
 - **entry.jinja**: Analyzes user question, generates search strategy with JSON output (term + instructions per search)
 - **query_process.jinja**: Accepts one search term + retrieved results, generates sub-answer with citations
 - **final_answer.jinja**: Combines all sub-answers into coherent final response, enforces source citation
 
 **`chat/` - Conversational Agent**:
+
 - **system.jinja**: Single system prompt for general chat. Uses conditional blocks for optional notebook context. Emphasizes citation format.
 
 **`source_chat/` - Source-Focused Chat**:
+
 - **system.jinja**: Single system prompt for source-specific discussion. Injects source metadata (ID, title, topics) + selected context. Conditional blocks for optional notebook/context data.
 
 **`podcast/` - Podcast Generation**:
+
 - **outline.jinja**: Takes briefing + content + speaker profiles (list support via Jinja2 for-loop). Generates JSON outline with segments (name, description, size).
 - **transcript.jinja**: Takes outline + segment index + optional existing transcript. Generates JSON dialogue array (speaker name + dialogue). Iterates speakers with for-loop.
 
@@ -189,6 +198,7 @@ Guides models with extended thinking capability to separate reasoning from outpu
 ## Testing Patterns
 
 **Manual render test**:
+
 ```python
 from ai_prompter import Prompter
 
@@ -199,6 +209,7 @@ print(prompt)  # Inspect Jinja2 output before sending to LLM
 ```
 
 **With parser**:
+
 ```python
 from pydantic import BaseModel
 from langchain_core.output_parsers.pydantic import PydanticOutputParser

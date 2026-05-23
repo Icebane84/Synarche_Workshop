@@ -7,28 +7,27 @@ from surreal_commands import get_command_status, submit_command
 class CommandService:
     """Generic service layer for command operations"""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     @staticmethod
     async def submit_command_job(
         module_name: str,  # Actually app_name for surreal-commands
         command_name: str,
-        command_args: Dict[str, Any],
-        context: Optional[Dict[str, Any]] = None,
+        command_args: dict[str, Any],
+        context: dict[str, Any] | None = None,
     ) -> str:
         """Submit a generic command job for background processing"""
         try:
             # Ensure command modules are imported before submitting
             # This is needed because submit_command validates against local registry
             try:
-                import commands.podcast_commands  # noqa: F401
+                import commands.podcast_commands
             except ImportError as import_err:
                 logger.error(f"Failed to import command modules: {import_err}")
                 raise ValueError("Command modules not available")
@@ -53,7 +52,7 @@ class CommandService:
             raise
 
     @staticmethod
-    async def get_command_status(job_id: str) -> Dict[str, Any]:
+    async def get_command_status(job_id: str) -> dict[str, Any]:
         """Get status of any command job"""
         try:
             status = await get_command_status(job_id)
@@ -61,15 +60,19 @@ class CommandService:
                 "job_id": job_id,
                 "status": status.status if status else "unknown",
                 "result": status.result if status else None,
-                "error_message": getattr(status, "error_message", None)
-                if status
-                else None,
-                "created": str(status.created)
-                if status and hasattr(status, "created") and status.created
-                else None,
-                "updated": str(status.updated)
-                if status and hasattr(status, "updated") and status.updated
-                else None,
+                "error_message": (
+                    getattr(status, "error_message", None) if status else None
+                ),
+                "created": (
+                    str(status.created)
+                    if status and hasattr(status, "created") and status.created
+                    else None
+                ),
+                "updated": (
+                    str(status.updated)
+                    if status and hasattr(status, "updated") and status.updated
+                    else None
+                ),
                 "progress": getattr(status, "progress", None) if status else None,
             }
         except Exception as e:
@@ -78,11 +81,11 @@ class CommandService:
 
     @staticmethod
     async def list_command_jobs(
-        module_filter: Optional[str] = None,
-        command_filter: Optional[str] = None,
-        status_filter: Optional[str] = None,
+        module_filter: str | None = None,
+        command_filter: str | None = None,
+        status_filter: str | None = None,
         limit: int = 50,
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """List command jobs with optional filtering"""
         # This will be implemented with proper SurrealDB queries
         # For now, return empty list as this is foundation phase

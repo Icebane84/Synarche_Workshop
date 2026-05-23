@@ -8,7 +8,8 @@
 | **Status** | `ACTIVE` |
 ---
 
-# CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md
+# CSL-078*Implementing Prestige Point Awarding* Operationalizing Growth Metrics.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-078-IMPLEMENTING-PRESTIGE-POINT-AWARDING--OPERATIONALIZING-GROWTH-METRICS-001` | The Sovereign ID. |
-| **Official Name** | `CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                                    | Description       |
+| :------------------ | :--------------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-078-IMPLEMENTING-PRESTIGE-POINT-AWARDING--OPERATIONALIZING-GROWTH-METRICS-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-078_Implementing Prestige Point Awarding_ Operationalizing Growth Metrics.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                        | The Standard.     |
+| **Domain**          | `GVRN`                                                                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                            | The Network.      |
 
 ### Chronicle of Integration: CSL-078
 

@@ -1,5 +1,4 @@
-"""
-### **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -23,7 +22,6 @@ import logging
 import sys
 from pathlib import Path
 from typing import Any
-
 
 # Hephaestus Lib Imports
 try:
@@ -110,14 +108,24 @@ class CodeSentinel:
                     continue
 
                 has_return_hint = node.returns is not None
-                has_arg_hints = all(arg.arg in {"self", "cls"} or arg.annotation is not None for arg in node.args.args)
+                has_arg_hints = all(
+                    arg.arg in {"self", "cls"} or arg.annotation is not None
+                    for arg in node.args.args
+                )
 
                 if has_return_hint and has_arg_hints:
                     continue
 
-                hints = [("return type", has_return_hint), ("argument type", has_arg_hints)]
+                hints = [
+                    ("return type", has_return_hint),
+                    ("argument type", has_arg_hints),
+                ]
                 missing = [t for t, h in hints if not h]
-                self._report(str(path), "MISSING_TYPE_HINT", f"Function '{node.name}' lacks: {', '.join(missing)}")
+                self._report(
+                    str(path),
+                    "MISSING_TYPE_HINT",
+                    f"Function '{node.name}' lacks: {', '.join(missing)}",
+                )
 
     def _check_docstrings(self, path: Path, content: str) -> None:
         """Verify presence of docstrings on classes and functions."""
@@ -142,7 +150,11 @@ class CodeSentinel:
     def _check_omega_metadata(self, path: Path, content: str) -> None:
         """Ensure the file header contains OMEGA Standard metadata."""
         if not content.startswith('"""'):
-            self._report(str(path), "MISSING_OMEGA_HEADER", "File does not start with a module docstring.")
+            self._report(
+                str(path),
+                "MISSING_OMEGA_HEADER",
+                "File does not start with a module docstring.",
+            )
             return
 
         docstring_end = content.find('"""', 3)
@@ -153,14 +165,24 @@ class CodeSentinel:
 
         # OMEGA v15.0 strict check
         if "v15.0" not in header and "OMEGA" not in header:
-            self._report(str(path), "LEGACY_VERSION", "Module docstring must specify OMEGA v15.0.")
+            self._report(
+                str(path),
+                "LEGACY_VERSION",
+                "Module docstring must specify OMEGA v15.0.",
+            )
 
         if "UIP-V15" not in header and "Identification Lock" not in header:
-            self._report(str(path), "MISSING_UIP_V15", "Module docstring lacks UIP-V15 block structure.")
+            self._report(
+                str(path),
+                "MISSING_UIP_V15",
+                "Module docstring lacks UIP-V15 block structure.",
+            )
 
         if "High Priestess" not in header and "Sovereign" not in header:
             self._report(
-                str(path), "MISSING_IDENTITY", "Module docstring lacks Sovereign Identity marker (High Priestess)."
+                str(path),
+                "MISSING_IDENTITY",
+                "Module docstring lacks Sovereign Identity marker (High Priestess).",
             )
 
     def _report(self, file_path: str, rule: str, message: str) -> None:

@@ -1,0 +1,10 @@
+extends: substitution
+message: "Non-Phoenix terminology detected. Use '%s' instead of '%p'."
+level: error
+ignorecase: false
+swap:
+    collaboration: Synarche
+    blueprint: UMB
+    process: AOP
+    log: SELT
+    I think: Phoenix analysis suggests

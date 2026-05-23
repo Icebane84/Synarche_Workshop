@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-EMPR-007`                                |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **The Loom Weaver**                            |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `MODIFIES: ALL_ARTIFACTS`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 """
 
 import sys
@@ -37,8 +36,7 @@ SYNERGY_BLOCK_TEMPLATE = """
 
 
 def inject_metadata(file_path: Path, relationships: list[tuple[str, str, str]]) -> bool:
-    """
-    Injects or updates a Standardized Synergy Block in a markdown file.
+    """Injects or updates a Standardized Synergy Block in a markdown file.
     Expects relationships as a list of (ArtifactID, RelType, Impact).
     """
     if not file_path.exists():
@@ -56,7 +54,9 @@ def inject_metadata(file_path: Path, relationships: list[tuple[str, str, str]]) 
     # Usually the second --- in the file (one at start, one at end of UIP table)
     parts = content.split("---")
     if len(parts) < 3:
-        print(f"Skipping {file_path.name}: Could not find standard UIP header boundaries.")
+        print(
+            f"Skipping {file_path.name}: Could not find standard UIP header boundaries."
+        )
         return False
 
     links_str = ""
@@ -66,7 +66,9 @@ def inject_metadata(file_path: Path, relationships: list[tuple[str, str, str]]) 
     synergy_block = SYNERGY_BLOCK_TEMPLATE.format(links=links_str.strip())
 
     # Reconstruct content: [Start] --- [UIP Table] --- [Synergy Block] [Rest]
-    new_content = parts[0] + "---" + parts[1] + "---" + synergy_block + "---".join(parts[2:])
+    new_content = (
+        parts[0] + "---" + parts[1] + "---" + synergy_block + "---".join(parts[2:])
+    )
 
     try:
         file_path.write_text(new_content, encoding="utf-8")
@@ -80,7 +82,9 @@ def inject_metadata(file_path: Path, relationships: list[tuple[str, str, str]]) 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
         print("Usage: python metadata_injector.py <target_file> <AID> <REL> <IMPACT>")
-        print("Example: python metadata_injector.py my_doc.md CORE-CODEX-001 GOVERNS 'Governed by Codex'")
+        print(
+            "Example: python metadata_injector.py my_doc.md CORE-CODEX-001 GOVERNS 'Governed by Codex'"
+        )
         sys.exit(1)
 
     target_file = Path(sys.argv[1])

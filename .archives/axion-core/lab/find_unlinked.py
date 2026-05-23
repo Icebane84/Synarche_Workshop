@@ -65,7 +65,9 @@ def find_unlinked(directory: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Find Unlinked — Vault Island Detector")
+    parser = argparse.ArgumentParser(
+        description="Find Unlinked — Vault Island Detector"
+    )
     parser.add_argument("target", help="Directory to scan.")
     args = parser.parse_args()
     find_unlinked(os.path.abspath(args.target))

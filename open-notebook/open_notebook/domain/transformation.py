@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -25,6 +24,6 @@ class Transformation(ObjectModel):
 
 class DefaultPrompts(RecordModel):
     record_id: ClassVar[str] = "open_notebook:default_prompts"
-    transformation_instructions: Optional[str] = Field(
+    transformation_instructions: str | None = Field(
         None, description="Instructions for executing a transformation"
     )

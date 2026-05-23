@@ -4,8 +4,7 @@
  * Supports nested objects and Regex format enforcement.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-const _validateMetadata = void 0;
-export { _validateMetadata as validateMetadata };
+exports.validateMetadata = void 0;
 /**
  * Validates a metadata object against a provided schema.
  * Performs recursive type checking, required field verification, and regex format enforcement.
@@ -15,9 +14,21 @@ export { _validateMetadata as validateMetadata };
  * @throws Error - If validation fails.
  */
 const validateMetadata = (metadata, schema) => {
-    // 1. Check Required Top-Level Fields
+    // 1. Check Required Fields (Supports nested paths via dot notation)
     for (const field of schema.required) {
-        if (!(field in metadata)) {
+        const parts = field.split(".");
+        let current = metadata;
+        let isMissing = false;
+        for (const part of parts) {
+            if (current === null ||
+                typeof current !== "object" ||
+                !(part in current)) {
+                isMissing = true;
+                break;
+            }
+            current = current[part];
+        }
+        if (isMissing) {
             throw new Error(`[Validation Error]: Missing required field: "${field}"`);
         }
     }
@@ -29,9 +40,9 @@ const validateMetadata = (metadata, schema) => {
             const actualValue = data[key];
             if (actualValue === undefined)
                 continue;
-            if (typeof expectedType === 'object') {
+            if (typeof expectedType === "object") {
                 // Recursive Call for Nested Objects
-                if (typeof actualValue !== 'object' || actualValue === null) {
+                if (typeof actualValue !== "object" || actualValue === null) {
                     throw new Error(`[Validation Error]: "${currentPath}" must be an object.`);
                 }
                 verify(actualValue, expectedType, currentPath);
@@ -42,7 +53,7 @@ const validateMetadata = (metadata, schema) => {
                     throw new TypeError(`[Validation Error]: "${currentPath}" must be a ${expectedType}.`);
                 }
                 // Regex Format Check (if applicable)
-                if (schema.formats?.[key] && typeof actualValue === 'string') {
+                if (schema.formats?.[key] && typeof actualValue === "string") {
                     if (!schema.formats[key].test(actualValue)) {
                         throw new Error(`[Validation Error]: "${currentPath}" does not match required format.`);
                     }
@@ -52,6 +63,5 @@ const validateMetadata = (metadata, schema) => {
     };
     verify(metadata, schema.types);
 };
-const _validateMetadata = validateMetadata;
-export { _validateMetadata as validateMetadata };
+exports.validateMetadata = validateMetadata;
 //# sourceMappingURL=validation.js.map

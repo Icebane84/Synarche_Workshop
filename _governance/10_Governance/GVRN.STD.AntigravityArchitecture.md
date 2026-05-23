@@ -86,6 +86,4 @@ The **Google Antigravity platform** functions as a high-performance operational 
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

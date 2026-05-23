@@ -30,7 +30,7 @@ export function create(context) {
 					messageId: 'missingAnchor',
 					fix(fixer) {
 						const template = "/**\n * artifact_anchor:\n * - id: \n * - type: \n */\n";
-						return fixer.insertTextBeforeRange([0, 0], template);
+						return fixer.insertTextBefore(sourceCode.ast.body[0] || node, template);
 					}
 				});
 			}

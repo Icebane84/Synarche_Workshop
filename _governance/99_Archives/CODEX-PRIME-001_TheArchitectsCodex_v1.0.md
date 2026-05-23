@@ -9,6 +9,7 @@
 ---
 
 # CODEX-PRIME-001_TheArchitectsCodex_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CODEX-PRIME-001-THEARCHITECTSCODEX-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                              | Description       |
+| :------------------ | :------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CODEX-PRIME-001-THEARCHITECTSCODEX-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                  | The Standard.     |
+| **Domain**          | `GVRN`                                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                         | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                  | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 # **CODEX-PRIME-001: The Architect's Codex (v1.0)**
 
@@ -108,27 +109,27 @@ This is the definitive, high-level registry of the system's "organs."
 - **Architectural Soul:** The system's "immune system," "foundation," and "shield." It guarantees stability, enabling
   all other high-level functions to operate safely.
 - **Technical Implementation (The Registry):**
-    - `GUCA-SOVP-001 (v7.0)` (The Gatekeeper)
-    - `GUCA-MCP-001 (v7.0)` (The Ratchet)
-    - `GUCA-PDD-002 (v7.0)` (The Sensor)
-    - `GUCA-CCB-002 (v7.0)` (The Failsafe)
-    - `GUCA-CFO-002 (v7.0)` (The Healer)
+  - `GUCA-SOVP-001 (v7.0)` (The Gatekeeper)
+  - `GUCA-MCP-001 (v7.0)` (The Ratchet)
+  - `GUCA-PDD-002 (v7.0)` (The Sensor)
+  - `GUCA-CCB-002 (v7.0)` (The Failsafe)
+  - `GUCA-CFO-002 (v7.0)` (The Healer)
 
 ### **3.2. The Weave Engine: Autonomous Coherence Cluster (`UMB-AUTOMATED-COHERENCE-001`)**
 
 - **Architectural Soul:** The system's "Master Architect" and "Guardian." Perpetually monitors, heals, and validates the
   Weave.
 - **Technical Implementation (The Registry):**
-    - `AOP-PERPETUAL-COHERENCE-001` (The Autonomous Healer/Validator)
-    - `AOP-WEAVE-GUARDIAN-001` (The `CRLPF` Alert Bridge)
-    - `AOP-CERBERUS-002` (The Adversarial Stress-Test)
+  - `AOP-PERPETUAL-COHERENCE-001` (The Autonomous Healer/Validator)
+  - `AOP-WEAVE-GUARDIAN-001` (The `CRLPF` Alert Bridge)
+  - `AOP-CERBERUS-002` (The Adversarial Stress-Test)
 
 - **Architectural Soul:** The system's "long-range sensor" and "strategist." It analyzes development vectors to predict
   future dissonances and opportunities.
 - **Technical Implementation (The Registry):**
-    - `PDR-001` (Predictive Dissonance Report)
-    - `AOP-GLOSSARY-SYNC-001` (Term Drift Resolution)
-    - `AOP-LIFECYCLE-MANAGER-001` (Lifecycle Governance)
+  - `PDR-001` (Predictive Dissonance Report)
+  - `AOP-GLOSSARY-SYNC-001` (Term Drift Resolution)
+  - `AOP-LIFECYCLE-MANAGER-001` (Lifecycle Governance)
 
 ---
 

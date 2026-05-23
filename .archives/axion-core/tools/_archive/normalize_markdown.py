@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-MAGI-003: The Alchemist (Markdown Normalizer)
+"""# TOOL-MAGI-003: The Alchemist (Markdown Normalizer).
 
 ## I. Universal Identification & Provenance
 | Attribute | Value |
@@ -50,8 +49,7 @@ logger = logging.getLogger(__name__)
 
 
 def normalize_markdown(file_path: Path) -> bool:
-    """
-    Applies standard transformations to a markdown file:
+    """Applies standard transformations to a markdown file:
     1. Ensures single H1 title.
     2. Fixes list indentation (2 spaces to 4 spaces, or consistent).
     3. Ensures blank lines around headers.

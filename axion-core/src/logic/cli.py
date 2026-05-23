@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -78,13 +77,14 @@ except ImportError:
 
 
 class SynarcheCLI(cmd.Cmd):
-    """
-    Command Line Interface for the Synarche Command Library.
+    """Command Line Interface for the Synarche Command Library.
     Provides a gateway for executing governed commands, auditing compliance,
     and managing the RPG-based progression system.
     """
 
-    intro: str = "Welcome to the Synarche Command Library CLI. Type help or ? to list commands.\n"
+    intro: str = (
+        "Welcome to the Synarche Command Library CLI. Type help or ? to list commands.\n"
+    )
     prompt: str = "(Synarche) "
 
     def __init__(self) -> None:
@@ -92,7 +92,9 @@ class SynarcheCLI(cmd.Cmd):
         super().__init__()
 
         # Resolve Registry Path
-        registry_path = os.path.normpath(os.path.join(current_dir, "../../data/command_registry.json"))
+        registry_path = os.path.normpath(
+            os.path.join(current_dir, "../../data/command_registry.json")
+        )
         self.registry = SynarcheRegistry(registry_path)
 
         # Initialize The Chronicler for telemetry
@@ -112,20 +114,22 @@ class SynarcheCLI(cmd.Cmd):
                 self.chronicler = Chronicler(root_dir=repo_root)
             except Exception:
                 self.chronicler = None
-                print("Warning: Chronicler could not be initialized. Telemetry disabled.")
+                print(
+                    "Warning: Chronicler could not be initialized. Telemetry disabled."
+                )
 
         # Initialize RPG Manager
         self.rpg = RPGManager()
 
     def onecmd(self, line: str) -> bool:
-        """
-        Override onecmd to log all executed actions to the Chronicler.
+        """Override onecmd to log all executed actions to the Chronicler.
 
         Args:
             line: The raw command line string.
 
         Returns:
             Boolean indicating if the CLI should terminate.
+
         """
         if not line:
             return super().onecmd(line)
@@ -144,14 +148,16 @@ class SynarcheCLI(cmd.Cmd):
                     break
 
             self.chronicler.log_action(
-                action_type=f"CMD:{cmd_name.upper()}", target=target, details=f"Executed: {line}", status="EXECUTED"
+                action_type=f"CMD:{cmd_name.upper()}",
+                target=target,
+                details=f"Executed: {line}",
+                status="EXECUTED",
             )
 
         return stop
 
     def do_list(self, arg: str) -> None:
-        """
-        List all top-level categories in the command registry.
+        """List all top-level categories in the command registry.
 
         Usage: list
         """
@@ -162,8 +168,7 @@ class SynarcheCLI(cmd.Cmd):
         print()
 
     def do_search(self, arg: str) -> None:
-        """
-        Search for commands by keyword in names and descriptions.
+        """Search for commands by keyword in names and descriptions.
 
         Usage: search <keyword>
         """
@@ -178,8 +183,7 @@ class SynarcheCLI(cmd.Cmd):
         print()
 
     def do_get(self, arg: str) -> None:
-        """
-        Get detailed specification for a specific command.
+        """Get detailed specification for a specific command.
 
         Usage: get <command_name>
         """
@@ -199,8 +203,7 @@ class SynarcheCLI(cmd.Cmd):
         print()
 
     def do_clear(self, arg: str) -> None:
-        """
-        Clear the console screen (cross-platform).
+        """Clear the console screen (cross-platform).
 
         Usage: clear
         """
@@ -210,8 +213,7 @@ class SynarcheCLI(cmd.Cmd):
             subprocess.run(["clear"], check=False)  # nosec
 
     def do_quit(self, arg: str) -> bool:
-        """
-        Exit the Synarche CLI session.
+        """Exit the Synarche CLI session.
 
         Usage: quit
         """
@@ -223,8 +225,7 @@ class SynarcheCLI(cmd.Cmd):
         return self.do_quit(arg)
 
     def do_traverse_spine(self, arg: str) -> None:
-        """
-        Traverse the OSLM (Omni-Log Synergistic Links Matrix).
+        """Traverse the OSLM (Omni-Log Synergistic Links Matrix).
 
         Usage:
             traverse_spine list                     -> List all nodes in the Matrix.
@@ -244,7 +245,9 @@ class SynarcheCLI(cmd.Cmd):
         args = arg.split()
 
         if not args:
-            print("Usage: traverse_spine <ArtifactID> OR traverse_spine <StartID> <EndID> OR traverse_spine list")
+            print(
+                "Usage: traverse_spine <ArtifactID> OR traverse_spine <StartID> <EndID> OR traverse_spine list"
+            )
             return
 
         command = args[0]
@@ -280,8 +283,7 @@ class SynarcheCLI(cmd.Cmd):
                 print("No path found between these artifacts.")
 
     def do_APPLY_STANDARD(self, arg: str) -> None:
-        """
-        Applies OMEGA v15.0 governance standards (The Reforger).
+        """Applies OMEGA v15.0 governance standards (The Reforger).
 
         Usage: APPLY_STANDARD --target:<Artifact_ID>
         """
@@ -316,8 +318,7 @@ class SynarcheCLI(cmd.Cmd):
         self.do_APPLY_STANDARD(arg)
 
     def do_INITIATE_COMPLIANCE_AUDIT(self, arg: str) -> None:
-        """
-        Triggers the Code Sentinel to audit for OMEGA v15.0 compliance.
+        """Triggers the Code Sentinel to audit for OMEGA v15.0 compliance.
 
         Usage: INITIATE_COMPLIANCE_AUDIT --target:<Path>
         """
@@ -344,15 +345,16 @@ class SynarcheCLI(cmd.Cmd):
         if findings:
             print(f"Dissonance Detected in {len(findings)} files.")
             for find in findings[:5]:
-                print(f" - {find.get('file')}: {find.get('status')} (Score: {find.get('score', 0):.2f})")
+                print(
+                    f" - {find.get('file')}: {find.get('status')} (Score: {find.get('score', 0):.2f})"
+                )
                 for err in find.get("errors", []):
                     print(f"   !! {err}")
         else:
             print("No major compliance violations detected.")
 
     def do_ViewAuditLog(self, arg: str) -> None:
-        """
-        Displays the most recent compliance and telemetry reports.
+        """Displays the most recent compliance and telemetry reports.
 
         Usage: ViewAuditLog --limit: 5
         """
@@ -381,7 +383,9 @@ class SynarcheCLI(cmd.Cmd):
                     data = json.load(f)
                     print(f"[{os.path.basename(log_file)}]")
                     if "action" in data and "status" in data:
-                        print(f"Action: {data.get('action')} | Status: {data.get('status')}")
+                        print(
+                            f"Action: {data.get('action')} | Status: {data.get('status')}"
+                        )
                         print(f"Details: {data.get('details')}")
                     else:
                         print(json.dumps(data, indent=2))
@@ -390,8 +394,7 @@ class SynarcheCLI(cmd.Cmd):
                 print(f"Error reading {log_file}: {e}")
 
     def do_ingest_mindmap(self, arg: str) -> None:
-        """
-        Parses a Freeplane (.mm) file and generates OMEGA Protocol Skeletons.
+        """Parses a Freeplane (.mm) file and generates OMEGA Protocol Skeletons.
 
         Usage: ingest_mindmap <Path to .mm file>
         """
@@ -428,8 +431,7 @@ class SynarcheCLI(cmd.Cmd):
             print("[ERROR] Failed to parse mind map.")
 
     def do_QUERY_LORE(self, arg: str) -> None:
-        """
-        Performs a RAG search against the Supabase Vector Store.
+        """Performs a RAG search against the Supabase Vector Store.
 
         Usage: QUERY_LORE "Your Query"
         """
@@ -440,11 +442,12 @@ class SynarcheCLI(cmd.Cmd):
 
         print(f"Searching Lore for: '{query}'...")
         # Simulation placeholder for future Supabase integration
-        print(f"Result (Simulated): Resonance detected for '{query}' in the Living Lore system.")
+        print(
+            f"Result (Simulated): Resonance detected for '{query}' in the Living Lore system."
+        )
 
     def do_check_level_status(self, arg: str) -> None:
-        """
-        Retrieves the current RPG state and level progression.
+        """Retrieves the current RPG state and level progression.
 
         Usage: check_level_status [--json]
         """
@@ -476,8 +479,7 @@ class SynarcheCLI(cmd.Cmd):
         self.do_check_level_status(arg + " --json")
 
     def do_get_achievements(self, arg: str) -> None:
-        """
-        Lists all achievements and their completion status.
+        """Lists all achievements and their completion status.
 
         Usage: get_achievements [--json]
         """
@@ -490,12 +492,13 @@ class SynarcheCLI(cmd.Cmd):
         for a in achievements:
             status = "[COMPLETED]" if a.get("completed") else "[PENDING]"
             print(f"{status} {a.get('name')} - {a.get('description')}")
-            print(f"          Rewards: {a.get('stardust_reward')} Stardust, {a.get('xp_reward')} XP")
+            print(
+                f"          Rewards: {a.get('stardust_reward')} Stardust, {a.get('xp_reward')} XP"
+            )
         print("--------------------------------\n")
 
     def do_claim_achievement(self, arg: str) -> None:
-        """
-        Claims a completed achievement and awards XP/Stardust.
+        """Claims a completed achievement and awards XP/Stardust.
 
         Usage: claim_achievement --id:<ID> [--json]
         """
@@ -520,13 +523,14 @@ class SynarcheCLI(cmd.Cmd):
             print(json.dumps(res))
         elif res.get("success"):
             mode_str = f" ({res.get('mode', 'UNKNOWN')})"
-            print(f"[SUCCESS] Achievement {m_id} recorded{mode_str}. +{res.get('stardust_awarded')} Stardust awarded.")
+            print(
+                f"[SUCCESS] Achievement {m_id} recorded{mode_str}. +{res.get('stardust_awarded')} Stardust awarded."
+            )
         else:
             print(f"[FAIL] {res.get('error')}")
 
     def do_SPEND_STARDUST(self, arg: str) -> None:
-        """
-        Invests collected Stardust into core system stats.
+        """Invests collected Stardust into core system stats.
 
         Usage: SPEND_STARDUST --target:<stat> --amount:<int>
         """
@@ -555,8 +559,7 @@ class SynarcheCLI(cmd.Cmd):
             print(f"[FAIL] {res.get('error')}")
 
     def do_genesis(self, arg: str) -> None:
-        """
-        Initiates a Phoenix Genesis Cycle (Simulation).
+        """Initiates a Phoenix Genesis Cycle (Simulation).
 
         Usage: genesis <target> <level>
         """

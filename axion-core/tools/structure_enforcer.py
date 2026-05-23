@@ -1,5 +1,4 @@
-"""
-# Universal Identification & Provenance (UIP)
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-EMPE-005`                                |
@@ -14,7 +13,7 @@
 | **10. Ethos**          | **Guardian of Structure**                      |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `LINK: [UMB-STRUCT-001]`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 """
 
 import json
@@ -40,7 +39,11 @@ NAME_KEBAB_PATTERN = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 NAME_SNAKE_PATTERN = re.compile(r"^[a-z0-9_]+$")
 
 # Logging Setup
-logging.basicConfig(level=logging.INFO, format="%(message)s", handlers=[logging.StreamHandler(sys.stdout)])
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)],
+)
 logger = logging.getLogger("StructureEnforcer")
 
 
@@ -63,7 +66,13 @@ class StructureEnforcer:
 
     def _audit_root(self) -> None:
         """Audits root-level items (files and domains)."""
-        allowed_files = {".gitignore", "readme.md", "license", "package.json", "tsconfig.json"}
+        allowed_files = {
+            ".gitignore",
+            "readme.md",
+            "license",
+            "package.json",
+            "tsconfig.json",
+        }
         root_items = list(self.root.iterdir())
 
         for item in root_items:
@@ -82,7 +91,9 @@ class StructureEnforcer:
             self.reports["invalid_domains"].append(name)
 
         if not NAME_KEBAB_PATTERN.match(name) and not name.startswith("_"):
-            self.reports["naming_violations"].append(f"DIR: {name} (Expected kebab-case)")
+            self.reports["naming_violations"].append(
+                f"DIR: {name} (Expected kebab-case)"
+            )
 
     def _audit_tools(self) -> None:
         """Audits tool naming in axion-core."""
@@ -90,10 +101,14 @@ class StructureEnforcer:
         if tool_dir.exists():
             for script in tool_dir.glob("*.py"):
                 if not NAME_SNAKE_PATTERN.match(script.stem):
-                    self.reports["naming_violations"].append(f"TOOL: {script.name} (Expected snake_case)")
+                    self.reports["naming_violations"].append(
+                        f"TOOL: {script.name} (Expected snake_case)"
+                    )
 
     def audit(self) -> None:
-        logger.info(f"--- [EMPEROR AUDIT] Starting Workspace Scan: {self.root.name} ---")
+        logger.info(
+            f"--- [EMPEROR AUDIT] Starting Workspace Scan: {self.root.name} ---"
+        )
         self._audit_root()
         self._audit_tools()
 
@@ -126,13 +141,19 @@ class StructureEnforcer:
         logger.info("=" * 40)
 
         score = self.reports["entropy_score"]
-        status = "CRYSTALLINE" if score > RANK_CRYSTALLINE else "STABLE" if score > RANK_STABLE else "DEGRADING"
+        status = (
+            "CRYSTALLINE"
+            if score > RANK_CRYSTALLINE
+            else "STABLE" if score > RANK_STABLE else "DEGRADING"
+        )
         logger.info(f"RANK: {status} | COHERENCE: {score:.1f}%")
 
         self._print_reports()
 
         if score == INITIAL_SCORE:
-            logger.info("\n[SUCCESS] Workspace is architecturally sound. The Emperor is pleased.")
+            logger.info(
+                "\n[SUCCESS] Workspace is architecturally sound. The Emperor is pleased."
+            )
 
         # Save to logs
         log_path = self.root / "_logs" / "structure_audit.json"

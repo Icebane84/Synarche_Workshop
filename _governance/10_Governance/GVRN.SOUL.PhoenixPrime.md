@@ -128,6 +128,4 @@ Synarche.
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

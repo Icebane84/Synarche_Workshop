@@ -14,7 +14,7 @@ setup_page("🎙️ Podcasts", only_check_mandatory_models=False)
 
 
 @st.dialog("Confirm Delete Episode")
-def confirm_delete_episode(episode_id, episode_name):
+def confirm_delete_episode(episode_id, episode_name) -> None:
     st.warning(f"Are you sure you want to delete episode **{episode_name}**?")
     st.write("This action will:")
     st.write("• Delete the episode from the database")
@@ -37,7 +37,7 @@ def confirm_delete_episode(episode_id, episode_name):
 
 
 @st.dialog("Confirm Delete Speaker Profile")
-def confirm_delete_speaker_profile(profile_id, profile_name):
+def confirm_delete_speaker_profile(profile_id, profile_name) -> None:
     st.warning(f"Are you sure you want to delete speaker profile **{profile_name}**?")
 
     # Check usage before allowing deletion
@@ -91,7 +91,7 @@ def confirm_delete_speaker_profile(profile_id, profile_name):
 
 
 @st.dialog("Confirm Delete Episode Profile")
-def confirm_delete_episode_profile(profile_id, profile_name):
+def confirm_delete_episode_profile(profile_id, profile_name) -> None:
     st.warning(f"Are you sure you want to delete episode profile **{profile_name}**?")
     st.write("This action cannot be undone.")
 
@@ -111,16 +111,16 @@ def confirm_delete_episode_profile(profile_id, profile_name):
 
 
 @st.fragment
-def speaker_management_fragment():
+def speaker_management_fragment() -> None:
     """Fragment for managing speakers within the dialog"""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     st.subheader("🎙️ Speakers (1-4 speakers)")
 
@@ -178,7 +178,7 @@ def speaker_management_fragment():
 
 
 @st.dialog("Configure Speaker Profile", width="large")
-def speaker_configuration_dialog(mode="create", profile_id=None, episode_context=None):
+def speaker_configuration_dialog(mode="create", profile_id=None, episode_context=None) -> None:
     """Unified dialog for speaker profile create/edit/select"""
 
     # Handle mode switching from select to create
@@ -568,7 +568,7 @@ def fetch_episodes():
     try:
         return podcast_api_service.get_episodes()
     except Exception as e:
-        st.error(f"Error fetching episodes: {str(e)}")
+        st.error(f"Error fetching episodes: {e!s}")
         return []
 
 
@@ -577,7 +577,7 @@ def fetch_episode_profiles():
     try:
         return podcast_api_service.get_episode_profiles()
     except Exception as e:
-        st.error(f"Error fetching episode profiles: {str(e)}")
+        st.error(f"Error fetching episode profiles: {e!s}")
         return []
 
 
@@ -586,7 +586,7 @@ def fetch_speaker_profiles():
     try:
         return podcast_api_service.get_speaker_profiles()
     except Exception as e:
-        st.error(f"Error fetching speaker profiles: {str(e)}")
+        st.error(f"Error fetching speaker profiles: {e!s}")
         return []
 
 
@@ -650,7 +650,7 @@ def analyze_speaker_usage(speakers, episodes):
     return usage_map
 
 
-def render_speaker_info_inline(speaker_config, speaker_profiles):
+def render_speaker_info_inline(speaker_config, speaker_profiles) -> None:
     """Render speaker information inline within episode profile cards"""
     if not speaker_config:
         st.warning("⚠️ No speaker profile assigned")
@@ -682,7 +682,7 @@ def render_speaker_info_inline(speaker_config, speaker_profiles):
             )
 
 
-def render_episode_profiles_section():
+def render_episode_profiles_section() -> None:
     """Render episode profiles in the main area"""
     st.subheader("📺 Episode Profiles")
 
@@ -848,7 +848,7 @@ def render_episode_profiles_section():
                     with col5:
                         current_outline_provider = profile.get(
                             "outline_provider",
-                            list(transcript_provider_models.keys())[0],
+                            next(iter(transcript_provider_models.keys())),
                         )
                         outline_idx = (
                             list(transcript_provider_models.keys()).index(
@@ -883,7 +883,7 @@ def render_episode_profiles_section():
                     with col6:
                         current_transcript_provider = profile.get(
                             "transcript_provider",
-                            list(transcript_provider_models.keys())[0],
+                            next(iter(transcript_provider_models.keys())),
                         )
                         transcript_idx = (
                             list(transcript_provider_models.keys()).index(
@@ -986,7 +986,7 @@ def render_episode_profiles_section():
         st.info("No episode profiles found. Create your first episode profile above.")
 
 
-def render_speaker_profiles_sidebar():
+def render_speaker_profiles_sidebar() -> None:
     """Render speaker profiles in the sidebar with usage indicators"""
     st.subheader("🎤 Speaker Profiles")
 
@@ -1012,10 +1012,7 @@ def render_speaker_profiles_sidebar():
         usage_count = usage_map.get(profile_name, 0)
 
         # Usage indicator
-        if usage_count > 0:
-            usage_indicator = f"✅ Used ({usage_count})"
-        else:
-            usage_indicator = "⭕ Unused"
+        usage_indicator = f"✅ Used ({usage_count})" if usage_count > 0 else "⭕ Unused"d"
 
         with st.expander(f"🎤 {profile_name} {usage_indicator}", expanded=False):
             # Speaker profile summary
@@ -1026,7 +1023,7 @@ def render_speaker_profiles_sidebar():
 
             speakers = profile.get("speakers", [])
             # st.write(f"**Speakers:** {len(speakers)}")
-            for i, speaker in enumerate(speakers):  # Show first 2 speakers only
+            for _i, speaker in enumerate(speakers):  # Show first 2 speakers only
                 st.markdown(
                     f"- {speaker.get('name', 'Unknown')} ({speaker.get('voice_id', 'N/A')})\n"
                 )
@@ -1047,7 +1044,9 @@ def render_speaker_profiles_sidebar():
                         st.success("Profile duplicated!")
                         st.rerun()
             with col3:
-                if st.button("🗑️", key=f"del_sp_sidebar_{profile['id']}", help="Delete"):
+                if st.button(
+                    "🗑️", key=f"del_sp_sidebar_{profile['id']}", help="Delete"
+                ):
                     confirm_delete_speaker_profile(profile["id"], profile["name"])
 
 
@@ -1167,7 +1166,7 @@ with episodes_tab:
                     try:
                         st.audio(episode["audio_file"], format="audio/mpeg")
                     except Exception as e:
-                        st.error(f"Could not load audio: {str(e)}")
+                        st.error(f"Could not load audio: {e!s}")
 
                 # Episode details in separate expanders
                 with st.expander(f"🎭 Profiles - {episode['name']}", expanded=False):

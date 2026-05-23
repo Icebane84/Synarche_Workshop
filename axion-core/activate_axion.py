@@ -1,5 +1,4 @@
-"""
-[CORE] [SYSTEM] [ACTIVATOR]
+"""[CORE] [SYSTEM] [ACTIVATOR]
 Artifact ID: CORE.System.Activator
 Official Name: activate_axion.py
 Version: v15.0 [OMEGA]
@@ -34,9 +33,7 @@ logger = logging.getLogger("AxionPrime")
 
 
 def bootstrap() -> None:
-    """
-    Initializes the Axion Environment.
-    """
+    """Initializes the Axion Environment."""
     logger.info("Initializing Axion Prime [v13.1 Omega]...")
 
     # 1. Align Path (Add project root to allow 'src.' prefix)

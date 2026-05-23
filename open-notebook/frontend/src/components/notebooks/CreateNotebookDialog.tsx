@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import { useEffect } from 'react'
-import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
+import { useEffect } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 
 import {
   Dialog,
@@ -12,29 +12,32 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Label } from '@/components/ui/label'
-import { useCreateNotebook } from '@/lib/hooks/use-notebooks'
-import { useTranslation } from '@/lib/hooks/use-translation'
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { useCreateNotebook } from "@/lib/hooks/use-notebooks";
+import { useTranslation } from "@/lib/hooks/use-translation";
 
 const createNotebookSchema = z.object({
-  name: z.string().min(1, 'Name is required'),
+  name: z.string().min(1, "Name is required"),
   description: z.string().optional(),
-})
+});
 
-type CreateNotebookFormData = z.infer<typeof createNotebookSchema>
+type CreateNotebookFormData = z.infer<typeof createNotebookSchema>;
 
 interface CreateNotebookDialogProps {
-  open: boolean
-  onOpenChange: (open: boolean) => void
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 }
 
-export function CreateNotebookDialog({ open, onOpenChange }: CreateNotebookDialogProps) {
-  const { t } = useTranslation()
-  const createNotebook = useCreateNotebook()
+export function CreateNotebookDialog({
+  open,
+  onOpenChange,
+}: CreateNotebookDialogProps) {
+  const { t } = useTranslation();
+  const createNotebook = useCreateNotebook();
   const {
     register,
     handleSubmit,
@@ -42,43 +45,41 @@ export function CreateNotebookDialog({ open, onOpenChange }: CreateNotebookDialo
     reset,
   } = useForm<CreateNotebookFormData>({
     resolver: zodResolver(createNotebookSchema),
-    mode: 'onChange',
+    mode: "onChange",
     defaultValues: {
-      name: '',
-      description: '',
+      name: "",
+      description: "",
     },
-  })
+  });
 
-  const closeDialog = () => onOpenChange(false)
+  const closeDialog = () => onOpenChange(false);
 
   const onSubmit = async (data: CreateNotebookFormData) => {
-    await createNotebook.mutateAsync(data)
-    closeDialog()
-    reset()
-  }
+    await createNotebook.mutateAsync(data);
+    closeDialog();
+    reset();
+  };
 
   useEffect(() => {
     if (!open) {
-      reset()
+      reset();
     }
-  }, [open, reset])
+  }, [open, reset]);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[480px]">
         <DialogHeader>
           <DialogTitle>{t.notebooks.createNew}</DialogTitle>
-          <DialogDescription>
-            {t.notebooks.createNewDesc}
-          </DialogDescription>
+          <DialogDescription>{t.notebooks.createNewDesc}</DialogDescription>
         </DialogHeader>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="notebook-name">{t.common.name || 'Name'} *</Label>
+            <Label htmlFor="notebook-name">{t.common.name || "Name"} *</Label>
             <Input
               id="notebook-name"
-              {...register('name')}
+              {...register("name")}
               placeholder={t.notebooks.namePlaceholder}
               autoComplete="off"
             />
@@ -91,7 +92,7 @@ export function CreateNotebookDialog({ open, onOpenChange }: CreateNotebookDialo
             <Label htmlFor="notebook-description">{t.common.description}</Label>
             <Textarea
               id="notebook-description"
-              {...register('description')}
+              {...register("description")}
               placeholder={t.notebooks.descPlaceholder}
               rows={4}
             />
@@ -101,12 +102,17 @@ export function CreateNotebookDialog({ open, onOpenChange }: CreateNotebookDialo
             <Button type="button" variant="outline" onClick={closeDialog}>
               {t.common.cancel}
             </Button>
-            <Button type="submit" disabled={!isValid || createNotebook.isPending}>
-              {createNotebook.isPending ? t.common.creating : t.notebooks.createNew}
+            <Button
+              type="submit"
+              disabled={!isValid || createNotebook.isPending}
+            >
+              {createNotebook.isPending
+                ? t.common.creating
+                : t.notebooks.createNew}
             </Button>
           </DialogFooter>
         </form>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

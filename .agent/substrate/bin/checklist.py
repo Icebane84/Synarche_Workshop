@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Master Checklist Runner - Antigravity Kit
+"""Master Checklist Runner - Antigravity Kit.
 ==========================================
 
 Orchestrates all validation scripts in priority order.
@@ -93,16 +92,18 @@ PERFORMANCE_CHECKS = [
 
 
 def check_script_exists(script_path: Path) -> bool:
-    """Check if script file exists"""
+    """Check if script file exists."""
     return script_path.exists() and script_path.is_file()
 
 
-def run_script(name: str, script_path: Path, project_path: str, url: str | None = None) -> dict:
-    """
-    Run a validation script and capture results
+def run_script(
+    name: str, script_path: Path, project_path: str, url: str | None = None
+) -> dict:
+    """Run a validation script and capture results.
 
     Returns:
         dict with keys: name, passed, output, skipped
+
     """
     if not check_script_exists(script_path):
         print_warning(f"{name}: Script not found, skipping")
@@ -112,7 +113,10 @@ def run_script(name: str, script_path: Path, project_path: str, url: str | None 
 
     # Build command
     cmd = ["python", str(script_path), project_path]
-    if url and ("lighthouse" in script_path.name.lower() or "playwright" in script_path.name.lower()):
+    if url and (
+        "lighthouse" in script_path.name.lower()
+        or "playwright" in script_path.name.lower()
+    ):
         cmd.append(url)
 
     # Run script
@@ -164,7 +168,7 @@ def run_script(name: str, script_path: Path, project_path: str, url: str | None 
 
 
 def print_summary(results: list[dict]):
-    """Print final summary report"""
+    """Print final summary report."""
     print_header("📊 CHECKLIST SUMMARY")
 
     passed_count = sum(1 for r in results if r["passed"] and not r.get("skipped"))
@@ -209,7 +213,9 @@ Examples:
         """,
     )
     parser.add_argument("project", help="Project path to validate")
-    parser.add_argument("--url", help="URL for performance checks (lighthouse, playwright)")
+    parser.add_argument(
+        "--url", help="URL for performance checks (lighthouse, playwright)"
+    )
     parser.add_argument(
         "--skip-performance",
         action="store_true",
@@ -226,7 +232,9 @@ Examples:
 
     print_header("🚀 ANTIGRAVITY KIT - MASTER CHECKLIST")
     print(f"Project: {project_path}")
-    print(f"URL: {args.url if args.url else 'Not provided (performance checks skipped)'}")
+    print(
+        f"URL: {args.url if args.url else 'Not provided (performance checks skipped)'}"
+    )
 
     results = []
 

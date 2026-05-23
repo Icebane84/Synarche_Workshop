@@ -9,13 +9,13 @@
 
 ### **Provenance & Dependencies**
 
-| Aspect | Specification |
-| :--- | :--- |
-| **Source Mandate**| `GVRN-STD-ENUM-001` |
-| **Input Source** | Entire codebase, with focus on `@engine` and `@bridge` clusters. |
-| **Output Target** | A new Refactor Quest ticket in the system's task nexus. |
-| **Required Layers**| `@sentinel`, `@axion`, `@engine` |
-| **Activation Trigger**| Scheduled system integrity check; direct command. |
+| Aspect                 | Specification                                                    |
+| :--------------------- | :--------------------------------------------------------------- |
+| **Source Mandate**     | `GVRN-STD-ENUM-001`                                              |
+| **Input Source**       | Entire codebase, with focus on `@engine` and `@bridge` clusters. |
+| **Output Target**      | A new Refactor Quest ticket in the system's task nexus.          |
+| **Required Layers**    | `@sentinel`, `@axion`, `@engine`                                 |
+| **Activation Trigger** | Scheduled system integrity check; direct command.                |
 
 ---
 

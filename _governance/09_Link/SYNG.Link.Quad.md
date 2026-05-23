@@ -18,7 +18,7 @@
 | **Official Name**  | `SYNG.Link.Quad.md`               | The Filename.     |
 | **Version**        | **v15.0 [OMEGA]**                 | The Standard.     |
 | **Domain**         | `LINK`                            | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Status (State)** | `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**      | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---

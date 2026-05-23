@@ -12,13 +12,13 @@ router = APIRouter()
 async def get_settings():
     """Get all application settings."""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     try:
         settings: ContentSettings = await ContentSettings.get_instance()  # type: ignore[assignment]
@@ -31,10 +31,8 @@ async def get_settings():
             youtube_preferred_languages=settings.youtube_preferred_languages,
         )
     except Exception as e:
-        logger.error(f"Error fetching settings: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail="Error fetching settings"
-        )
+        logger.error(f"Error fetching settings: {e!s}")
+        raise HTTPException(status_code=500, detail="Error fetching settings")
 
 
 @router.put("/settings", response_model=SettingsResponse)
@@ -91,7 +89,5 @@ async def update_settings(settings_update: SettingsUpdate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error updating settings: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail="Error updating settings"
-        )
+        logger.error(f"Error updating settings: {e!s}")
+        raise HTTPException(status_code=500, detail="Error updating settings")

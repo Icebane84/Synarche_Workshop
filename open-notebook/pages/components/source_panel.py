@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -22,7 +21,7 @@ transformations_service = TransformationsService()
 models_service = ModelsService()
 
 
-def source_panel(source_id: str, notebook_id=None, modal=False):
+def source_panel(source_id: str, notebook_id=None, modal=False) -> None:
     check_models(only_mandatory=False)
     source_with_metadata = sources_service.get_source(source_id)
     if not source_with_metadata:
@@ -65,14 +64,11 @@ def source_panel(source_id: str, notebook_id=None, modal=False):
                         insights_service.delete_insight(insight.id)
                         st.rerun(scope="fragment" if modal else "app")
                         st.toast("Insight deleted")
-                    if notebook_id:
-                        if x2.button(
-                            "Save as Note", icon="📝", key=f"save_note_{insight.id}"
-                        ):
-                            insights_service.save_insight_as_note(
-                                insight.id, notebook_id
-                            )
-                            st.toast("Saved as Note. Refresh the Notebook to see it.")
+                    if notebook_id and x2.button(
+                        "Save as Note", icon="📝", key=f"save_note_{insight.id}"
+                    ):
+                        insights_service.save_insight_as_note(insight.id, notebook_id)
+                        st.toast("Saved as Note. Refresh the Notebook to see it.")
 
         with c2:
             transformations = transformations_service.get_all_transformations()

@@ -10,8 +10,7 @@ from src.system.logging.phoenix_logger import logger
 
 
 def test_insforge_sync():
-    """
-    Verifies that the engine can initialize the transmuter
+    """Verifies that the engine can initialize the transmuter
     and call synchronization methods correctly.
     """
     logger.info("--- [START] INSFORGE PERSISTENCE VALIDATION ---")
@@ -33,8 +32,12 @@ def test_insforge_sync():
     engine.sync_to_cloud()
 
     # Verify the transmuter was engaged
-    assert engine.transmuter.transmute_entities.called, "transmute_entities was not called"
-    assert engine.transmuter.transmute_components.called, "transmute_components was not called"
+    assert (
+        engine.transmuter.transmute_entities.called
+    ), "transmute_entities was not called"
+    assert (
+        engine.transmuter.transmute_components.called
+    ), "transmute_components was not called"
     assert engine.transmuter.save_snapshot.called, "save_snapshot was not called"
 
     logger.info(f"Engine State at Frame {engine.clock.frame} synced successfully.")

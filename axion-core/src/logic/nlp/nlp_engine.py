@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -53,12 +52,14 @@ if TYPE_CHECKING:
 try:
     import spacy
     from spacy.cli import download as spacy_download
+
     SPACY_AVAILABLE = True
 except Exception:
     SPACY_AVAILABLE = False
 
 try:
     from sentence_transformers import SentenceTransformer
+
     TRANSFORMERS_AVAILABLE = True
 except ImportError:
     TRANSFORMERS_AVAILABLE = False
@@ -93,17 +94,16 @@ INITIAL_EMOTION_LEXICON: Dict[str, Dict[str, List[str]]] = {
 
 
 class NLPProcessor:
-    """
-    Core NLP processing unit using SpaCy for tokenization, lemmatization, and entity extraction.
+    """Core NLP processing unit using SpaCy for tokenization, lemmatization, and entity extraction.
     Provides fallbacks if SpaCy is unavailable.
     """
 
     def __init__(self, spacy_model_name: str = "en_core_web_sm") -> None:
-        """
-        Initializes the NLPProcessor.
+        """Initializes the NLPProcessor.
 
         Args:
             spacy_model_name: The name of the SpaCy model to load.
+
         """
         self.nlp = None
         if SPACY_AVAILABLE:
@@ -118,14 +118,14 @@ class NLPProcessor:
                     log.exception(f"Failed to load SpaCy model: {spacy_model_name}")
 
     def tokenize(self, text: str) -> List[str]:
-        """
-        Splits text into individual tokens.
+        """Splits text into individual tokens.
 
         Args:
             text: The string to tokenize.
 
         Returns:
             A list of tokens.
+
         """
         if not self.nlp:
             return text.split()
@@ -133,14 +133,14 @@ class NLPProcessor:
         return [token.text for token in doc]
 
     def lemmatize(self, text: str) -> List[str]:
-        """
-        Reduces words to their base or dictionary form (lemma).
+        """Reduces words to their base or dictionary form (lemma).
 
         Args:
             text: The string to lemmatize.
 
         Returns:
             A list of lemmas.
+
         """
         if not self.nlp:
             return text.lower().split()
@@ -148,14 +148,14 @@ class NLPProcessor:
         return [token.lemma_ for token in doc if token.lemma_.strip()]
 
     def extract_entities(self, text: str) -> List[Tuple[str, str]]:
-        """
-        Identifies and categorizes named entities within the text.
+        """Identifies and categorizes named entities within the text.
 
         Args:
             text: The string to analyze.
 
         Returns:
             A list of (entity_text, entity_label) tuples.
+
         """
         if not self.nlp:
             return []
@@ -164,28 +164,28 @@ class NLPProcessor:
 
 
 class EmotionAnalyzer:
-    """
-    Detects emotional markers and intensity within text using a lexicon-based approach.
-    """
+    """Detects emotional markers and intensity within text using a lexicon-based approach."""
 
-    def __init__(self, lexicon: Optional[Dict[str, Dict[str, List[str]]]] = None) -> None:
-        """
-        Initializes the EmotionAnalyzer.
+    def __init__(
+        self, lexicon: Optional[Dict[str, Dict[str, List[str]]]] = None
+    ) -> None:
+        """Initializes the EmotionAnalyzer.
 
         Args:
             lexicon: Optional custom lexicon mapping.
+
         """
         self.lexicons = lexicon or INITIAL_EMOTION_LEXICON
 
     def detect_emotions(self, text: str) -> Dict[str, float]:
-        """
-        Analyzes the input text for emotional triggers defined in the lexicon.
+        """Analyzes the input text for emotional triggers defined in the lexicon.
 
         Args:
             text: The input string.
 
         Returns:
             A dictionary mapping emotion names to detected intensity scores.
+
         """
         detected_emotions: Dict[str, float] = {}
         if not text:
@@ -198,21 +198,21 @@ class EmotionAnalyzer:
                     if emotion not in detected_emotions:
                         detected_emotions[emotion] = 0.5
                     else:
-                        detected_emotions[emotion] = min(1.0, detected_emotions[emotion] + 0.1)
+                        detected_emotions[emotion] = min(
+                            1.0, detected_emotions[emotion] + 0.1
+                        )
         return detected_emotions
 
 
 class AxionCognition:
-    """
-    Master cognitive interface that aggregates NLP, emotion, and semantic processing.
-    """
+    """Master cognitive interface that aggregates NLP, emotion, and semantic processing."""
 
     def __init__(self, model_name: str = "all-MiniLM-L6-v2") -> None:
-        """
-        Initializes the AxionCognition system.
+        """Initializes the AxionCognition system.
 
         Args:
             model_name: The name of the sentence-transformers model for embeddings.
+
         """
         self.nlp = NLPProcessor()
         self.emotions = EmotionAnalyzer()
@@ -221,17 +221,19 @@ class AxionCognition:
             try:
                 self.embeddings = SentenceTransformer(model_name)
             except Exception:
-                log.exception(f"Failed to load sentence-transformers model: {model_name}")
+                log.exception(
+                    f"Failed to load sentence-transformers model: {model_name}"
+                )
 
     def process(self, text: str) -> Dict[str, Any]:
-        """
-        Performs a full cognitive scan of the provided text.
+        """Performs a full cognitive scan of the provided text.
 
         Args:
             text: The string to process.
 
         Returns:
             A dictionary containing tokens, lemmas, entities, emotions, vectors, and efficiency scores.
+
         """
         tokens = self.nlp.tokenize(text)
         lemmas = self.nlp.lemmatize(text)
@@ -254,14 +256,14 @@ class AxionCognition:
         }
 
     def get_magician_efficiency(self, text: str) -> float:
-        """
-        Calculates a 'Magician Efficiency' score based on the presence of key OMEGA terms.
+        """Calculates a 'Magician Efficiency' score based on the presence of key OMEGA terms.
 
         Args:
             text: The text to evaluate.
 
         Returns:
             A float representing the efficiency score.
+
         """
         score = 1.0
         normalized = text.lower()
@@ -270,6 +272,7 @@ class AxionCognition:
         if "catalyst" in normalized:
             score += 0.3
         return round(max(0.1, score), 2)
+
 
 # ---
 # [OMNI-ARTIFACT-ANCHOR] ID: CORE.nlp.engine VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: b66317b25fa07eaa

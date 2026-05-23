@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UMB-FORGE-INT-001_NovaForgeIntegration` |
-| **2. Official Name** | `UMB-FORGE-INT-001_NovaForgeIntegration.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                       |
+| :--------------------- | :------------------------------------------ |
+| **1. Artifact ID**     | `UMB-FORGE-INT-001_NovaForgeIntegration`    |
+| **2. Official Name**   | `UMB-FORGE-INT-001_NovaForgeIntegration.md` |
+| **3. Version**         | **v1.0 (Reforged)**                         |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**               |
+| **5. Domain**          | `ARCH`                                      |
+| **6. Evolution**       | **Purposeful Drive**                        |
+| **7. Celestial Class** | `[PLANET]`                                  |
+| **8. Tier**            | **Operational**                             |
+| **9. State**           | `[ACTIVE]`                                  |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**          |
+| **11. Catalyst**       | **System Refactor**                         |
+| **12. Relations**      | `Pending Integration`                       |
 
 ---
 
@@ -48,10 +46,10 @@
 ### **II. Core Purpose & Objective**
 
 - **How (Execution Flow):** The **Forge Engine** (`CBM-FORGE-001`) acts as the operational driver. When the `weave`
-command is executed in `nova_forge`, it must strictly adhere to the logic defined in the **Architectural Spine's ASL
-Component**.
+  command is executed in `nova_forge`, it must strictly adhere to the logic defined in the **Architectural Spine's ASL
+  Component**.
 - **Why (Rationale):** To ensure that the "Automated Synergistic Linking" (ASL) described in the Phoenix Codex is not
-just a theoretical concept but a functioning, code-enforced reality driven by the `nova_forge` codebase.
+  just a theoretical concept but a functioning, code-enforced reality driven by the `nova_forge` codebase.
 
 ### **III. Architectural Mapping**
 
@@ -71,7 +69,7 @@ just a theoretical concept but a functioning, code-enforced reality driven by th
 
 - **Trigger:** `CMD: SYNC_FORGE`
 - **Action:** The `nova_forge` backend pulls the latest `CBM` manifests from the PPL to update its internal weighting
-logic.
+  logic.
 
 ### **V. Actionable Prompt Packet**
 

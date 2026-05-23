@@ -11,7 +11,7 @@ import time
 import traceback
 from collections.abc import Awaitable, Callable
 from enum import Enum, auto
-from typing import Any, Dict, List, Optional, Union
+from typing import Any, Dict, List, Optional
 
 # --- DEPENDENCIES ---
 # @system/logging (Kernel) - PhoenixLogger setup
@@ -26,7 +26,9 @@ if not logger.handlers:  # Ensure handlers are set up for this demo
     c_handler.setLevel(logging.INFO)
     f_handler = logging.FileHandler("error_audit.log")
     f_handler.setLevel(logging.ERROR)
-    formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
     c_handler.setFormatter(formatter)
     f_handler.setFormatter(formatter)
     logger.addHandler(c_handler)
@@ -35,7 +37,9 @@ if not logger.handlers:  # Ensure handlers are set up for this demo
 
 
 # --- `synarche_audit` decorator (conceptual, imported from @nexus/decorators) ---
-def synarche_audit(func: Callable[..., Awaitable[Any]]) -> Callable[..., Awaitable[Any]]:
+def synarche_audit(
+    func: Callable[..., Awaitable[Any]],
+) -> Callable[..., Awaitable[Any]]:
     """Architectural wrapper for standardized logging compliance."""
 
     @functools.wraps(func)
@@ -48,7 +52,9 @@ def synarche_audit(func: Callable[..., Awaitable[Any]]) -> Callable[..., Awaitab
             logger.info(f"Finished {func.__name__} in {duration:.4f}s")
             return result
         except Exception as e:
-            logger.error(f"CRITICAL FAILURE in {func.__name__}: {type(e).__name__}: {str(e)}\n{traceback.format_exc()}")
+            logger.error(
+                f"CRITICAL FAILURE in {func.__name__}: {type(e).__name__}: {str(e)}\n{traceback.format_exc()}"
+            )
             raise
 
     return wrapper
@@ -108,14 +114,20 @@ class MockRedis:
 # --- CASTS: Computational Abstraction and Systemic Transformation Strategies ---
 # Base class for transformation strategies (Inheritance)
 class ITransformationStrategy:
-    async def transmute(self, payload: Dict[str, Any], context: List[Enum]) -> Dict[str, Any]:
+    async def transmute(
+        self, payload: Dict[str, Any], context: List[Enum]
+    ) -> Dict[str, Any]:
         raise NotImplementedError("Strategy must implement transmute method")
 
 
 # Concrete strategy for Web Client (Instantiation & DAMP)
 class WebClientTransmutationStrategy(ITransformationStrategy):
-    async def transmute(self, payload: Dict[str, Any], context: List[Enum]) -> Dict[str, Any]:
-        logger.info(f"WebClientStrategy: Transmuting payload for web UI (Context: {context}).")
+    async def transmute(
+        self, payload: Dict[str, Any], context: List[Enum]
+    ) -> Dict[str, Any]:
+        logger.info(
+            f"WebClientStrategy: Transmuting payload for web UI (Context: {context})."
+        )
         # Simulate web-specific data formatting
         transformed_data = {
             "componentUpdate": payload["RawPayload"].get("uiElement"),
@@ -127,8 +139,12 @@ class WebClientTransmutationStrategy(ITransformationStrategy):
 
 # Concrete strategy for Game Engine (Instantiation & Polyglot Weaving)
 class GameEngineTransmutationStrategy(ITransformationStrategy):
-    async def transmute(self, payload: Dict[str, Any], context: List[Enum]) -> Dict[str, Any]:
-        logger.info(f"GameEngineStrategy: Transmuting payload for Godot engine (Context: {context}).")
+    async def transmute(
+        self, payload: Dict[str, Any], context: List[Enum]
+    ) -> Dict[str, Any]:
+        logger.info(
+            f"GameEngineStrategy: Transmuting payload for Godot engine (Context: {context})."
+        )
         # Simulate binary/packed byte array output (conceptual)
         game_command = {
             "event": payload["RawPayload"].get("gameEvent"),
@@ -160,9 +176,10 @@ class SuperpositionFSM:
         raise ValueError(f"No suitable strategy found for context: {context}")
 
     @synarche_audit  # Automated logging via `synarche_audit`
-    async def transmute_payload(self, payload: Dict[str, Any], jwt_token: str = None) -> Dict[str, Any]:
-        """
-        Main entry point for payload ingestion and transmutation.
+    async def transmute_payload(
+        self, payload: Dict[str, Any], jwt_token: str = None
+    ) -> Dict[str, Any]:
+        """Main entry point for payload ingestion and transmutation.
         Manages Superposition (volatile state), Contextual Validation (Zod),
         and collapses to a definitive output.
         """
@@ -170,7 +187,9 @@ class SuperpositionFSM:
         if not jwt_token or AuthStatus.VERIFIED not in [
             AuthStatus(token_status) for token_status in self._validate_jwt(jwt_token)
         ]:
-            logger.error("Transmutation Failed: Unauthorized token or access (403 Forbidden).")
+            logger.error(
+                "Transmutation Failed: Unauthorized token or access (403 Forbidden)."
+            )
             raise PermissionError("Unauthorized access.")
 
         # --- Zod Validation (Input Definition) ---
@@ -195,7 +214,9 @@ class SuperpositionFSM:
 
         # --- Superposition State Management (FSM) ---
         self.state = ProcessStatus.SUPERPOSITION
-        logger.info(f"Entering Superposition for BlockID: {block_id}. Context: {context_vector}")
+        logger.info(
+            f"Entering Superposition for BlockID: {block_id}. Context: {context_vector}"
+        )
 
         strategy = await self._select_strategy(context_vector)
 
@@ -213,7 +234,7 @@ class SuperpositionFSM:
 
     # --- Conceptual JWT Validation for security ---
     def _validate_jwt(self, token: str) -> List[int]:
-        """Mock JWT validation, returns mock auth status"""
+        """Mock JWT validation, returns mock auth status."""
         if "VERIFIED" in token:
             return [AuthStatus.VERIFIED.value]
         return [AuthStatus.UNVERIFIED.value]
@@ -230,14 +251,28 @@ async def main():
     # Valid payload for Web Client
     web_payload = {
         "BlockID": "uuid-web-001",
-        "ContextVector": [ClientType.WEB.name, AuthStatus.VERIFIED.name, ContextEnv.PROD.name],
-        "RawPayload": {"uiElement": "UserDashboard", "textData": "Welcome, Phoenix Agent!"},
+        "ContextVector": [
+            ClientType.WEB.name,
+            AuthStatus.VERIFIED.name,
+            ContextEnv.PROD.name,
+        ],
+        "RawPayload": {
+            "uiElement": "UserDashboard",
+            "textData": "Welcome, Phoenix Agent!",
+        },
     }
     # Valid payload for Game Engine
     game_payload = {
         "BlockID": "uuid-game-002",
-        "ContextVector": [ClientType.GAME.name, AuthStatus.VERIFIED.name, ContextEnv.DEV.name],
-        "RawPayload": {"gameEvent": "PlayerSpawn", "gameParams": {"x": 100, "y": 50, "entityId": "player_alpha"}},
+        "ContextVector": [
+            ClientType.GAME.name,
+            AuthStatus.VERIFIED.name,
+            ContextEnv.DEV.name,
+        ],
+        "RawPayload": {
+            "gameEvent": "PlayerSpawn",
+            "gameParams": {"x": 100, "y": 50, "entityId": "player_alpha"},
+        },
     }
     # Payload with validation error
     invalid_payload = {
@@ -255,30 +290,40 @@ async def main():
     try:
         # Successful Web Client transmutation
         logger.info("\n--- Transmuting Web Client Payload ---")
-        result_web = await superposition_engine.transmute_payload(web_payload, jwt_token="TOKEN_VERIFIED")
+        result_web = await superposition_engine.transmute_payload(
+            web_payload, jwt_token="TOKEN_VERIFIED"
+        )
         logger.info(f"Web Result: {result_web}")
 
         # Successful Game Engine transmutation
         logger.info("\n--- Transmuting Game Engine Payload ---")
-        result_game = await superposition_engine.transmute_payload(game_payload, jwt_token="TOKEN_VERIFIED")
+        result_game = await superposition_engine.transmute_payload(
+            game_payload, jwt_token="TOKEN_VERIFIED"
+        )
         logger.info(f"Game Result: {result_game}")
 
         # Test caching
         logger.info("\n--- Testing Cache Hit (Web Client) ---")
-        cached_result_web = await superposition_engine.transmute_payload(web_payload, jwt_token="TOKEN_VERIFIED")
+        cached_result_web = await superposition_engine.transmute_payload(
+            web_payload, jwt_token="TOKEN_VERIFIED"
+        )
         logger.info(f"Cached Web Result: {cached_result_web}")
 
         # Test validation error
         logger.info("\n--- Testing Validation Error ---")
         try:
-            await superposition_engine.transmute_payload(invalid_payload, jwt_token="TOKEN_VERIFIED")
+            await superposition_engine.transmute_payload(
+                invalid_payload, jwt_token="TOKEN_VERIFIED"
+            )
         except ValueError:
             logger.warning("Caught expected validation error.")
 
         # Test unauthorized access
         logger.info("\n--- Testing Unauthorized Access ---")
         try:
-            await superposition_engine.transmute_payload(unauthorized_payload, jwt_token="TOKEN_UNVERIFIED")
+            await superposition_engine.transmute_payload(
+                unauthorized_payload, jwt_token="TOKEN_UNVERIFIED"
+            )
         except PermissionError:
             logger.warning("Caught expected unauthorized access error.")
 

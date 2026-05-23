@@ -3,19 +3,19 @@ import os
 import streamlit as st
 
 
-def check_password():
+def check_password() -> bool:
     """
     Check if the user has entered the correct password.
     Returns True if authenticated or no password is set.
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     # Get the password from environment variable
     app_password = os.environ.get("OPEN_NOTEBOOK_PASSWORD")
@@ -54,7 +54,7 @@ def check_password():
     return True
 
 
-def logout():
+def logout() -> None:
     """Clear authentication from session state."""
     if "authenticated" in st.session_state:
         del st.session_state.authenticated

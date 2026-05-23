@@ -9,6 +9,7 @@
 ---
 
 # SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SELT-GUCA-007-UNIVERSALCOMMANDARCHITECTURE-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                      | Description       |
+| :------------------ | :--------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SELT-GUCA-007-UNIVERSALCOMMANDARCHITECTURE-V7.0-001` | The Sovereign ID. |
+| **Official Name**   | `SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                 | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                          | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                 | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                              | The Network.      |
 
 # GUCA: Universal Command Architecture (v7.0 Ascended)
 
@@ -76,8 +77,8 @@
 
 - **Invocation:** `CMD: [Command Name]`
 - **Parameters:**
-    - `[param_name]` _(Type)_: `[Description]`
-    - `[param_name]` _(Type)_: `[Description]`
+  - `[param_name]` _(Type)_: `[Description]`
+  - `[param_name]` _(Type)_: `[Description]`
 
 ### 3.2. Auto-Trigger Conditions (Passive Triggers)
 

@@ -8,7 +8,7 @@
 | **Status** | `ACTIVE` |
 ---
 
-# 📜 The Sovereign Substrate: _governance/
+# 📜 The Sovereign Substrate: \_governance/
 
 > **"The law is not above the system. The law IS the system."**
 
@@ -55,14 +55,14 @@ This directory is the **supreme law layer** of the Synarche Workspace. Every gov
 
 ## 🚀 Entry Points for New Agents
 
-| Goal | Start here |
-|:--|:--|
-| Understand system identity | `00_Codex/CORE.Codex.Phoenix.md` |
-| Find a specific artifact | `01_Registries/GVRN.Master.Registry.yaml` |
-| Understand naming conventions | `01_SYNG/` — RNC and OGLN standards |
-| Execute a workflow | `02_Protocols/` — GUCA, SELT, Loom protocols |
-| Make an architectural decision | `03_ARCH/` — existing ADRs first |
-| Navigate the workspace | `10_Governance/GVRN.HUD.Map.md` |
+| Goal                           | Start here                                   |
+| :----------------------------- | :------------------------------------------- |
+| Understand system identity     | `00_Codex/CORE.Codex.Phoenix.md`             |
+| Find a specific artifact       | `01_Registries/GVRN.Master.Registry.yaml`    |
+| Understand naming conventions  | `01_SYNG/` — RNC and OGLN standards          |
+| Execute a workflow             | `02_Protocols/` — GUCA, SELT, Loom protocols |
+| Make an architectural decision | `03_ARCH/` — existing ADRs first             |
+| Navigate the workspace         | `10_Governance/GVRN.HUD.Map.md`              |
 
 ---
 

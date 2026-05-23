@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-"""
-Conversion Script: React Best Practices → .agent Format
-Merges 59 individual rules into 8 grouped section files
+"""Conversion Script: React Best Practices → .agent Format
+Merges 59 individual rules into 8 grouped section files.
 """
 
-import os
-import re
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -63,7 +60,7 @@ SECTIONS = {
 
 
 def parse_frontmatter(content: str) -> Tuple[Dict, str]:
-    """Parse markdown frontmatter and body"""
+    """Parse markdown frontmatter and body."""
     if not content.startswith("---"):
         return {}, content
 
@@ -83,7 +80,7 @@ def parse_frontmatter(content: str) -> Tuple[Dict, str]:
 
 
 def parse_rule_file(filepath: Path) -> Dict:
-    """Parse a single rule file"""
+    """Parse a single rule file."""
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -106,7 +103,7 @@ def parse_rule_file(filepath: Path) -> Dict:
 
 
 def group_rules_by_section(rules_dir: Path) -> Dict[str, List[Dict]]:
-    """Group all rules by their section prefix"""
+    """Group all rules by their section prefix."""
     grouped = {prefix: [] for prefix in SECTIONS.keys()}
 
     for rule_file in sorted(rules_dir.glob("*.md")):
@@ -126,7 +123,7 @@ def group_rules_by_section(rules_dir: Path) -> Dict[str, List[Dict]]:
 
 
 def generate_section_file(section_prefix: str, rules: List[Dict], output_dir: Path):
-    """Generate a merged section file"""
+    """Generate a merged section file."""
     if not rules:
         print(f"[WARNING] No rules found for section: {section_prefix}")
         return
@@ -186,7 +183,7 @@ This section contains **{len(rules)} rules** focused on {section_title.lower()}.
 
 
 def main():
-    """Main conversion function"""
+    """Main conversion function."""
     # Paths
     base_dir = Path(__file__).parent.parent.parent.parent.parent
     rules_dir = base_dir / "others/agent-skills/skills/react-best-practices/rules"

@@ -40,11 +40,11 @@ The **Archival Transmutation Cycle** is the process by which raw, unrefined info
 
 ## II. Relational Dynamics (Synergy Vector)
 
-| Relation Type | Target ID | Synergy Description |
-| :--- | :--- | :--- |
-| **ORCHESTRATES** | `[[GVRN-PIPE-001]]` | The technical execution pipeline for these phases. |
-| **VALIDATES** | `[[UMB-OSLM-001]]` | Registration in the master matrix is the final phase. |
-| **ENFORCES** | `[[CORE-CODEX-001]]` | Ensures all output artifacts meet the UIP standard. |
+| Relation Type    | Target ID            | Synergy Description                                   |
+| :--------------- | :------------------- | :---------------------------------------------------- |
+| **ORCHESTRATES** | `[[GVRN-PIPE-001]]`  | The technical execution pipeline for these phases.    |
+| **VALIDATES**    | `[[UMB-OSLM-001]]`   | Registration in the master matrix is the final phase. |
+| **ENFORCES**     | `[[CORE-CODEX-001]]` | Ensures all output artifacts meet the UIP standard.   |
 
 ---
 

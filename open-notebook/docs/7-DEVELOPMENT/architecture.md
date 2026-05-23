@@ -9,6 +9,7 @@
 ---
 
 # architecture.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-ARCHITECTURE-001` | The Sovereign ID. |
-| **Official Name** | `architecture.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-ARCHITECTURE-001`       | The Sovereign ID. |
+| **Official Name**   | `architecture.md`             | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Open Notebook Architecture
 
@@ -64,6 +65,7 @@ Open Notebook follows a three-tier architecture with clear separation of concern
 ```
 
 **Key Points:**
+
 - **v1.1+**: Next.js automatically proxies `/api/*` requests to the backend, simplifying reverse proxy setup
 - Your browser loads the frontend from port 8502
 - The frontend needs to know where to find the API - when accessing remotely, set: `API_URL=http://your-server-ip:5055`
@@ -76,6 +78,7 @@ Open Notebook follows a three-tier architecture with clear separation of concern
 Open Notebook is built on a **three-tier, async-first architecture** designed for scalability, modularity, and multi-provider AI flexibility. The system separates concerns across frontend, API, and database layers, with LangGraph powering intelligent workflows and Esperanto enabling seamless integration with 8+ AI providers.
 
 **Core Philosophy**:
+
 - Privacy-first: Users control their data and AI provider choice
 - Async/await throughout: Non-blocking operations for responsive UX
 - Domain-Driven Design: Clear separation between domain models, repositories, and orchestrators
@@ -91,6 +94,7 @@ Open Notebook is built on a **three-tier, async-first architecture** designed fo
 **Purpose**: Responsive, interactive user interface for research, notes, chat, and podcast management.
 
 **Technology Stack**:
+
 - **Framework**: Next.js 15 with React 19
 - **Language**: TypeScript with strict type checking
 - **State Management**: Zustand (lightweight store) + TanStack Query (server state)
@@ -98,6 +102,7 @@ Open Notebook is built on a **three-tier, async-first architecture** designed fo
 - **Build Tool**: Webpack (bundled via Next.js)
 
 **Key Responsibilities**:
+
 - Render notebooks, sources, notes, chat sessions, and podcasts
 - Handle user interactions (create, read, update, delete operations)
 - Manage complex UI state (modals, file uploads, real-time search)
@@ -105,6 +110,7 @@ Open Notebook is built on a **three-tier, async-first architecture** designed fo
 - Display embeddings, vector search results, and insights
 
 **Communication Pattern**:
+
 - All data fetched via REST API (async requests to port 5055)
 - Configured base URL: `http://localhost:5055` (dev) or environment-specific (prod)
 - TanStack Query handles caching, refetching, and data synchronization
@@ -112,6 +118,7 @@ Open Notebook is built on a **three-tier, async-first architecture** designed fo
 - CORS enabled on API side for cross-origin requests
 
 **Component Architecture**:
+
 - `/src/app/`: Next.js App Router (pages, layouts)
 - `/src/components/`: Reusable React components (buttons, forms, cards)
 - `/src/hooks/`: Custom hooks (useNotebook, useChat, useSearch)
@@ -125,6 +132,7 @@ Open Notebook is built on a **three-tier, async-first architecture** designed fo
 **Purpose**: RESTful backend exposing operations on notebooks, sources, notes, chat sessions, and AI models.
 
 **Technology Stack**:
+
 - **Framework**: FastAPI 0.104+ (async Python web framework)
 - **Language**: Python 3.11+
 - **Validation**: Pydantic v2 (request/response schemas)
@@ -132,6 +140,7 @@ Open Notebook is built on a **three-tier, async-first architecture** designed fo
 - **Testing**: Pytest (unit and integration tests)
 
 **Architecture**:
+
 ```
 FastAPI App (main.py)
   ├── Routers (HTTP endpoints)
@@ -157,6 +166,7 @@ FastAPI App (main.py)
 ```
 
 **Key Responsibilities**:
+
 1. **HTTP Interface**: Accept REST requests, validate, return JSON responses
 2. **Business Logic**: Orchestrate domain models, repository operations, and workflows
 3. **Async Job Queue**: Submit long-running tasks (podcast generation, source processing)
@@ -165,6 +175,7 @@ FastAPI App (main.py)
 6. **Logging**: Track operations for debugging and monitoring
 
 **Startup Flow**:
+
 1. Load `.env` environment variables
 2. Initialize FastAPI app with CORS + auth middleware
 3. Run AsyncMigrationManager (creates/updates database schema)
@@ -172,6 +183,7 @@ FastAPI App (main.py)
 5. Server ready on port 5055
 
 **Request-Response Cycle**:
+
 ```
 HTTP Request → Router → Service → Domain/Repository → SurrealDB
                                        ↓
@@ -187,6 +199,7 @@ Response ← Pydantic serialization ← Service ← Result
 **Purpose**: Graph database with built-in vector embeddings, semantic search, and relationship management.
 
 **Technology Stack**:
+
 - **Database**: SurrealDB (multi-model, ACID transactions)
 - **Query Language**: SurrealQL (SQL-like syntax with graph operations)
 - **Async Driver**: Async Rust client for Python
@@ -194,19 +207,20 @@ Response ← Pydantic serialization ← Service ← Result
 
 **Core Tables**:
 
-| Table | Purpose | Key Fields |
-|-------|---------|-----------|
-| `notebook` | Research project container | id, name, description, archived, created, updated |
-| `source` | Content item (PDF, URL, text) | id, title, full_text, topics, asset, created, updated |
-| `source_embedding` | Vector embeddings for semantic search | id, source, embedding, chunk_text, chunk_index |
-| `note` | User-created research notes | id, title, content, note_type (human/ai), created, updated |
-| `chat_session` | Conversation session | id, notebook_id, title, messages (JSON), created, updated |
-| `transformation` | Custom transformation rules | id, name, description, prompt, created, updated |
-| `source_insight` | Transformation output | id, source_id, insight_type, content, created, updated |
-| `reference` | Relationship: source → notebook | out (source), in (notebook) |
-| `artifact` | Relationship: note → notebook | out (note), in (notebook) |
+| Table              | Purpose                               | Key Fields                                                 |
+| ------------------ | ------------------------------------- | ---------------------------------------------------------- |
+| `notebook`         | Research project container            | id, name, description, archived, created, updated          |
+| `source`           | Content item (PDF, URL, text)         | id, title, full_text, topics, asset, created, updated      |
+| `source_embedding` | Vector embeddings for semantic search | id, source, embedding, chunk_text, chunk_index             |
+| `note`             | User-created research notes           | id, title, content, note_type (human/ai), created, updated |
+| `chat_session`     | Conversation session                  | id, notebook_id, title, messages (JSON), created, updated  |
+| `transformation`   | Custom transformation rules           | id, name, description, prompt, created, updated            |
+| `source_insight`   | Transformation output                 | id, source_id, insight_type, content, created, updated     |
+| `reference`        | Relationship: source → notebook       | out (source), in (notebook)                                |
+| `artifact`         | Relationship: note → notebook         | out (note), in (notebook)                                  |
 
 **Relationship Graph**:
+
 ```
 Notebook
   ↓ (referenced_by)
@@ -223,12 +237,14 @@ ChatSession
 ```
 
 **Vector Search Capability**:
+
 - Embeddings stored natively in SurrealDB
 - Full-text search on `source.full_text` and `note.content`
 - Cosine similarity search on embedding vectors
 - Semantic search integrates with search endpoint
 
 **Connection Management**:
+
 - Async connection pooling (configurable size)
 - Transaction support for multi-record operations
 - Schema auto-validation via migrations
@@ -241,12 +257,14 @@ ChatSession
 ### Why Python + FastAPI?
 
 **Python**:
+
 - Rich AI/ML ecosystem (LangChain, LangGraph, transformers, scikit-learn)
 - Rapid prototyping and deployment
 - Extensive async support (asyncio, async/await)
 - Strong type hints (Pydantic, mypy)
 
 **FastAPI**:
+
 - Modern, async-first framework
 - Automatic OpenAPI documentation (Swagger UI @ /docs)
 - Built-in request validation (Pydantic)
@@ -256,6 +274,7 @@ ChatSession
 ### Why Next.js + React + TypeScript?
 
 **Next.js**:
+
 - Full-stack React framework with SSR/SSG
 - File-based routing (intuitive project structure)
 - Built-in API routes (optional backend co-location)
@@ -263,12 +282,14 @@ ChatSession
 - Easy deployment (Vercel, Docker, self-hosted)
 
 **React 19**:
+
 - Component-based UI (reusable, testable)
 - Excellent tooling and community
 - Client-side state management (Zustand)
 - Server-side state sync (TanStack Query)
 
 **TypeScript**:
+
 - Type safety catches errors at compile time
 - Better IDE autocomplete and refactoring
 - Documentation via types (self-documenting code)
@@ -277,6 +298,7 @@ ChatSession
 ### Why SurrealDB?
 
 **SurrealDB**:
+
 - Native graph database (relationships are first-class)
 - Built-in vector embeddings (no separate vector DB)
 - ACID transactions (data consistency)
@@ -290,6 +312,7 @@ ChatSession
 ### Why Esperanto for AI Providers?
 
 **Esperanto Library**:
+
 - Unified interface to 8+ LLM providers (OpenAI, Anthropic, Google, Groq, Ollama, Mistral, DeepSeek, xAI)
 - Multi-provider embeddings (OpenAI, Google, Ollama, Mistral, Voyage)
 - TTS/STT integration (OpenAI, Groq, ElevenLabs, Google)
@@ -310,6 +333,7 @@ LangGraph is a state machine library that orchestrates multi-step AI workflows. 
 **Purpose**: Ingest content (PDF, URL, text) and prepare for search/insights.
 
 **Flow**:
+
 ```
 Input (file/URL/text)
   ↓
@@ -329,6 +353,7 @@ Output (Source record with embeddings)
 ```
 
 **State Dict**:
+
 ```python
 {
   "content_state": {"file_path" | "url" | "content": str},
@@ -349,6 +374,7 @@ Output (Source record with embeddings)
 **Purpose**: Conduct multi-turn conversations with AI model, referencing notebook context.
 
 **Flow**:
+
 ```
 User Message
   ↓
@@ -368,6 +394,7 @@ Output (complete message)
 ```
 
 **State Dict**:
+
 ```python
 {
   "session_id": str,
@@ -379,6 +406,7 @@ Output (complete message)
 ```
 
 **Key Features**:
+
 - Message history persisted in SurrealDB (SqliteSaver checkpoint)
 - Context building via `build_context_for_chat()` utility
 - Token counting to prevent overflow
@@ -393,6 +421,7 @@ Output (complete message)
 **Purpose**: Answer user questions by searching sources and synthesizing responses.
 
 **Flow**:
+
 ```
 User Question
   ↓
@@ -410,6 +439,7 @@ Output (final answer)
 ```
 
 **State Dict**:
+
 ```python
 {
   "question": str,
@@ -431,6 +461,7 @@ Output (final answer)
 **Purpose**: Apply custom transformations to sources (extract summaries, key points, etc).
 
 **Flow**:
+
 ```
 Source + Transformation Rule
   ↓
@@ -446,6 +477,7 @@ Output (insight with type + content)
 ```
 
 **Example Transformations**:
+
 - Summary (5-sentence overview)
 - Key Points (bulleted list)
 - Quotes (notable excerpts)
@@ -460,6 +492,7 @@ Output (insight with type + content)
 **Purpose**: Generic LLM task execution (e.g., auto-generate note titles, analyze content).
 
 **Flow**:
+
 ```
 Input Text + Prompt
   ↓
@@ -485,6 +518,7 @@ Located in `open_notebook/ai/models.py`, ModelManager handles:
 5. **Token Calculation**: Estimate cost before LLM call
 
 **Usage**:
+
 ```python
 from open_notebook.ai.provision import provision_langchain_model
 
@@ -502,6 +536,7 @@ response = await model.ainvoke({"input": prompt})
 ### Multi-Provider Support
 
 **LLM Providers**:
+
 - OpenAI (gpt-4, gpt-4-turbo, gpt-3.5-turbo)
 - Anthropic (claude-opus, claude-sonnet, claude-haiku)
 - Google (gemini-pro, gemini-1.5)
@@ -512,6 +547,7 @@ response = await model.ainvoke({"input": prompt})
 - xAI (grok)
 
 **Embedding Providers**:
+
 - OpenAI (text-embedding-3-large, text-embedding-3-small)
 - Google (embedding-001)
 - Ollama (local embeddings)
@@ -519,6 +555,7 @@ response = await model.ainvoke({"input": prompt})
 - Voyage (voyage-large-2)
 
 **TTS Providers**:
+
 - OpenAI (tts-1, tts-1-hd)
 - Groq (no TTS, fallback to OpenAI)
 - ElevenLabs (multilingual voices)
@@ -546,6 +583,7 @@ result = await graph.ainvoke(
 ### 1. **Domain-Driven Design (DDD)**
 
 **Domain Objects** (`open_notebook/domain/`):
+
 - `Notebook`: Research container with relationships to sources/notes
 - `Source`: Content item (PDF, URL, text) with embeddings
 - `Note`: User-created or AI-generated research note
@@ -553,6 +591,7 @@ result = await graph.ainvoke(
 - `Transformation`: Custom rule for extracting insights
 
 **Repository Pattern**:
+
 - Database access layer (`open_notebook/database/repository.py`)
 - `repo_query()`: Execute SurrealQL queries
 - `repo_create()`: Insert records
@@ -560,6 +599,7 @@ result = await graph.ainvoke(
 - `repo_delete()`: Remove records
 
 **Entity Methods**:
+
 ```python
 # Domain methods (business logic)
 notebook = await Notebook.get(id)
@@ -571,17 +611,20 @@ sources = await notebook.get_sources()
 ### 2. **Async-First Architecture**
 
 **All I/O is async**:
+
 - Database queries: `await repo_query(...)`
 - LLM calls: `await model.ainvoke(...)`
 - File I/O: `await upload_file.read()`
 - Graph invocations: `await graph.ainvoke(...)`
 
 **Benefits**:
+
 - Non-blocking request handling (FastAPI serves multiple concurrent requests)
 - Better resource utilization (I/O waiting doesn't block CPU)
 - Natural fit for Python async/await syntax
 
 **Example**:
+
 ```python
 @router.post("/sources")
 async def create_source(source_data: SourceCreate):
@@ -611,6 +654,7 @@ class NotebookService:
 ```
 
 **Responsibilities**:
+
 - Validate inputs (Pydantic)
 - Orchestrate database operations
 - Invoke workflows (LangGraph graphs)
@@ -658,11 +702,12 @@ status = await source.get_status()
 4. **Optional streaming** (Server-Sent Events for long operations)
 
 **Example**:
+
 ```typescript
 // Frontend
 const response = await fetch("http://localhost:5055/sources", {
   method: "POST",
-  body: formData,  // multipart/form-data for file upload
+  body: formData, // multipart/form-data for file upload
 });
 const source = await response.json();
 ```
@@ -675,6 +720,7 @@ const source = await response.json();
 4. **Transaction support** for multi-step operations
 
 **Example**:
+
 ```python
 # API
 result = await repo_query(
@@ -691,6 +737,7 @@ result = await repo_query(
 4. **Token counting and cost estimation**
 
 **Example**:
+
 ```python
 # API
 model = await provision_langchain_model(task="chat")
@@ -705,6 +752,7 @@ response = await model.ainvoke({"input": prompt})
 4. **Job completion callbacks (optional)**
 
 **Example**:
+
 ```python
 # Submit async source processing
 command_id = await CommandService.submit_command_job(...)
@@ -721,6 +769,7 @@ status = await response.json()  # returns { status: "running|queued|completed|fa
 ### Core Schema Structure
 
 **Tables** (20+):
+
 - Notebooks (with soft-delete via `archived` flag)
 - Sources (content + metadata)
 - SourceEmbeddings (vector chunks)
@@ -731,15 +780,17 @@ status = await response.json()  # returns { status: "running|queued|completed|fa
 - Relationships (notebook→source, notebook→note)
 
 **Migrations**:
+
 - Automatic on API startup
 - Located in `/migrations/` directory
-- Numbered sequentially (001_*.surql, 002_*.surql, etc)
+- Numbered sequentially (001*\*.surql, 002*\*.surql, etc)
 - Tracked in `_sbl_migrations` table
 - Rollback via `_down.surql` files (manual)
 
 ### Relationship Model
 
 **Graph Relationships**:
+
 ```
 Notebook
   ← reference ← Source (many:many)
@@ -759,6 +810,7 @@ Transformation
 ```
 
 **Query Example** (get all sources in a notebook with counts):
+
 ```sql
 SELECT id, title,
   count(<-reference.in) as note_count,

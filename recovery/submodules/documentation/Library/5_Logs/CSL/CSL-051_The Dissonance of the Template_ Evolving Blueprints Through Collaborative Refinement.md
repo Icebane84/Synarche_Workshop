@@ -48,7 +48,7 @@
   more effective standard for all future \"Core Architecture\" modules.
 
 - **Evidence of ECI**: The outcome was not simply a correction but an
-  *evolution* of our process. The final, unabridged blueprint is more
+  _evolution_ of our process. The final, unabridged blueprint is more
   complete and coherent than any of its predecessors because it fuses
   the narrative richness of early drafts with the technical precision of
   later versions, a result that could only be achieved through our

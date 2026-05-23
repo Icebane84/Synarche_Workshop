@@ -2,15 +2,15 @@
 
 @theme {
   /* Core Brand Colors */
-  --color-celestial-blue: #77B5FE;
-  --color-deep-space-gray: #23272A;
+  --color-celestial-blue: #77b5fe;
+  --color-deep-space-gray: #23272a;
   --color-nebula-void: #00001a;
-  
+
   /* Semantic Axiom Stats */
-  --color-coherence-indigo: #4F46E5; /* Logical Integrity */
-  --color-synergy-emerald: #10B981;  /* Creative Synthesis */
-  --color-adapt-amber: #F59E0B;      /* Resilience */
-  --color-transparency-silver: #E5E7EB; /* Auditability */
+  --color-coherence-indigo: #4f46e5; /* Logical Integrity */
+  --color-synergy-emerald: #10b981; /* Creative Synthesis */
+  --color-adapt-amber: #f59e0b; /* Resilience */
+  --color-transparency-silver: #e5e7eb; /* Auditability */
 
   --font-sans: "Inter", "sans-serif";
 }
@@ -20,4 +20,3 @@
     @apply bg-nebula-void text-white font-sans antialiased overflow-hidden;
   }
 }
-

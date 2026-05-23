@@ -9,6 +9,7 @@
 ---
 
 # index.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-INDEX-001` | The Sovereign ID. |
-| **Official Name** | `index.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
+| **Official Name**   | `index.md`                    | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Open Notebook - Start Here
 
@@ -39,6 +40,7 @@
 ## Choose Your Path
 
 ### 🚀 I want to use OpenAI (Fastest)
+
 **5 minutes to running.** GPT, simple setup, powerful results.
 
 → [OpenAI Quick Start](quick-start-openai.md)
@@ -46,6 +48,7 @@
 ---
 
 ### ☁️ I want to use other cloud AI (Anthropic, Google, OpenRouter, etc.)
+
 **5 minutes to running.** Choose from 15+ AI providers.
 
 → [Cloud Providers Quick Start](quick-start-cloud.md)
@@ -53,6 +56,7 @@
 ---
 
 ### 🏠 I want to run locally (Ollama or LMStudio, completely private)
+
 **5 minutes to running.** Keep everything private, on your machine. No costs.
 
 → [Local Quick Start](quick-start-local.md)
@@ -70,13 +74,13 @@
 
 ## Why Open Notebook?
 
-| Feature | Open Notebook | Notebook LM |
-|---------|---|---|
-| **Privacy** | Self-hosted, your control | Cloud, Google's servers |
-| **AI Choice** | 15+ providers | Google's models only |
-| **Podcast Speakers** | 1-4 customizable | 2 only |
-| **Cost** | Completely free | Free (but your data) |
-| **Offline** | Yes  | No |
+| Feature              | Open Notebook             | Notebook LM             |
+| -------------------- | ------------------------- | ----------------------- |
+| **Privacy**          | Self-hosted, your control | Cloud, Google's servers |
+| **AI Choice**        | 15+ providers             | Google's models only    |
+| **Podcast Speakers** | 1-4 customizable          | 2 only                  |
+| **Cost**             | Completely free           | Free (but your data)    |
+| **Offline**          | Yes                       | No                      |
 
 ## Prerequisites
 

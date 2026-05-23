@@ -9,6 +9,7 @@
 ---
 
 # CLAUDE.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -21,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CLAUDE-001` | The Sovereign ID. |
-| **Official Name** | `CLAUDE.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
+| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Utils Module
 
@@ -43,6 +44,7 @@ Provides cross-cutting concerns: building LLM context from sources/insights, con
 ## Architecture Overview
 
 **Six core utilities**:
+
 1. **context_builder.py**: Flexible context assembly from sources, notes, insights with token budgeting
 2. **chunking.py**: Content-type detection and smart text chunking for embedding operations
 3. **embedding.py**: Unified embedding generation with mean pooling for large content
@@ -55,6 +57,7 @@ Each utility is stateless and can be imported independently.
 ## Component Catalog
 
 ### context_builder.py
+
 - **ContextItem**: Dataclass for individual context piece (id, type, content, priority, token_count)
 - **ContextConfig**: Configuration for context building (sources/notes/insights selection, max tokens, priority weights)
 - **ContextBuilder**: Main class assembling context
@@ -66,12 +69,14 @@ Each utility is stateless and can be imported independently.
   - Returns list of ContextItem objects sorted by priority
 
 **Key behavior**:
-- Token counting is automatic (calculated in ContextItem.__post_init__)
+
+- Token counting is automatic (calculated in ContextItem.**post_init**)
 - Max token enforcement via priority weighting (higher priority items included first)
 - Type-specific fetching: sources → Source.full_text, notes → Note.content, insights → SourceInsight.content
 - Raises DatabaseOperationError if source/note fetch fails
 
 ### chunking.py
+
 - **ContentType**: Enum (HTML, MARKDOWN, PLAIN)
 - **CHUNK_SIZE**: constant
 - **CHUNK_OVERLAP**: constant
@@ -81,17 +86,20 @@ Each utility is stateless and can be imported independently.
 - **chunk_text(text, content_type, file_path)**: Split text using appropriate splitter
 
 **Key behavior**:
+
 - Uses LangChain splitters: HTMLHeaderTextSplitter, MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
 - Extension-based detection is primary; heuristics can override PLAIN extensions with 0.8+ confidence
 - Secondary chunking applied when HTML/Markdown splitters produce oversized chunks
 - Returns list of strings, each ≤ CHUNK_SIZE characters
 
 ### embedding.py
+
 - **mean_pool_embeddings(embeddings)**: Combine multiple embeddings via normalized mean pooling
 - **generate_embeddings(texts)**: Batch embedding via single Esperanto API call
 - **generate_embedding(text, content_type, file_path)**: Unified embedding with automatic chunking + mean pooling
 
 **Key behavior**:
+
 - Uses model_manager.get_model("embedding") for embedding model
 - Short text (≤ CHUNK_SIZE): direct embedding
 - Long text: chunk → embed each → mean pool results
@@ -99,23 +107,27 @@ Each utility is stateless and can be imported independently.
 - Raises ValueError for empty/whitespace-only text
 
 ### text_utils.py
+
 - **remove_non_ascii(text)**: Remove non-ASCII characters from text
 - **remove_non_printable(text)**: Remove non-printable characters, preserving newlines/tabs
 - **parse_thinking_content(content)**: Extract `<think>` tags content from AI responses
 - **clean_thinking_content(content)**: Remove `<think>` blocks, return cleaned content only
 
 **Key behavior**:
+
 - parse_thinking_content handles malformed output (missing opening `<think>` tag)
 - Large content (>100KB) bypasses thinking extraction for performance
 - Non-string input returns empty thinking and stringified content
 
 ### token_utils.py
+
 - **token_count(text)**: Returns estimated token count for string (via tiktoken)
 - **token_cost(text, model)**: Calculate cost estimate for text with given model
 
 **Key behavior**: Uses cl100k_base encoding; may differ slightly from actual model tokenization
 
 ### version_utils.py
+
 - **compare_versions(v1, v2)**: Returns -1 (v1 < v2), 0 (equal), 1 (v1 > v2)
 - **get_installed_version(package)**: Get version of installed Python package
 - **get_version_from_github(url)**: Fetch latest version from GitHub releases
@@ -167,6 +179,7 @@ Each utility is stateless and can be imported independently.
 ## Usage Examples
 
 ### Chunking
+
 ```python
 from open_notebook.utils.chunking import chunk_text, detect_content_type, ContentType
 
@@ -178,6 +191,7 @@ chunks = chunk_text(html_content, content_type=ContentType.HTML)
 ```
 
 ### Embedding
+
 ```python
 from open_notebook.utils.embedding import generate_embedding, generate_embeddings
 
@@ -189,6 +203,7 @@ embeddings = await generate_embeddings(["text1", "text2", "text3"])
 ```
 
 ### Context Building
+
 ```python
 from open_notebook.utils.context_builder import ContextBuilder, ContextConfig
 

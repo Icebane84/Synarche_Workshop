@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -29,15 +28,20 @@ Conforms to OGLN/AISTF v15.0 documentation standards.
 """
 
 import os
+
 from dotenv import load_dotenv
 
 # Load environment variables from the .env file in the current working directory
 load_dotenv()
 
+
 def print_env_status() -> None:
     """Prints the status of critical Supabase environment variables."""
     print(f"[DEBUG] SUPABASE_URL: {os.environ.get('SUPABASE_URL')}")
-    print(f"[DEBUG] SUPABASE_SERVICE_ROLE_KEY: {'[SET]' if os.environ.get('SUPABASE_SERVICE_ROLE_KEY') else '[NOT SET]'}")
+    print(
+        f"[DEBUG] SUPABASE_SERVICE_ROLE_KEY: {'[SET]' if os.environ.get('SUPABASE_SERVICE_ROLE_KEY') else '[NOT SET]'}"
+    )
+
 
 if __name__ == "__main__":
     print_env_status()

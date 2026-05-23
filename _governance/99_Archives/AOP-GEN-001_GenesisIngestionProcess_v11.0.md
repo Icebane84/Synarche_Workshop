@@ -1,4 +1,5 @@
 # AOP-GEN-001_GenesisIngestionProcess_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-GEN-001-GENESISINGESTIONPROCESS-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-GEN-001_GenesisIngestionProcess_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-GEN-001-GENESISINGESTIONPROCESS-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-GEN-001_GenesisIngestionProcess_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-GEN-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Purposeful Drive** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-12-24` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Genesis, Ingestion, Protocol, v11.0` |
+
+| Key                | Value                                 |
+| :----------------- | :------------------------------------ |
+| **Module ID**      | `AOP-GEN-001`                         |
+| **Version**        | `v11.0`                               |
+| **Evolution**      | **Purposeful Drive**                  |
+| **Status**         | `ACTIVE`                              |
+| **Type**           | `Protocol`                            |
+| **Classification** | `Moon`                                |
+| **Authors**        | `System`                              |
+| **Created**        | `2025-12-24`                          |
+| **Updated**        | `2026-01-17`                          |
+| **Authority**      | `CODEX-001`                           |
+| **Tags**           | `Genesis, Ingestion, Protocol, v11.0` |
+
 ---
 
 # AOP-GEN-INGEST-001: Genesis Ingestion Process

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-# TOOL-GATE-001: The Hephaestus Gate CLI (Sentinel Suite)
+"""# TOOL-GATE-001: The Hephaestus Gate CLI (Sentinel Suite).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |

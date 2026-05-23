@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UEB-GAE-001` |
-| **2. Official Name** | `UEB-GAE-001_Guardian_of_Anti-Entropy.md` |
-| **3. Version** | **v2.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **| The foundational ethos that actively combats systemic decay and conceptual fragmentation by enforcing connectivity, context, and coherence.** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                     |
+| :--------------------- | :---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Artifact ID**     | `UEB-GAE-001`                             |
+| **2. Official Name**   | `UEB-GAE-001_Guardian_of_Anti-Entropy.md` |
+| **3. Version**         | **v2.0**                                  |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**             |
+| **5. Domain**          | `ARCH`                                    |
+| **6. Evolution**       | **Purposeful Drive**                      |
+| **7. Celestial Class** | `[PLANET]`                                |
+| **8. Tier**            | **Operational**                           |
+| **9. State**           | `[ACTIVE]`                                |
+| **10. Ethos**          | \*\*                                      | The foundational ethos that actively combats systemic decay and conceptual fragmentation by enforcing connectivity, context, and coherence.\*\* |
+| **11. Catalyst**       | **System Refactor**                       |
+| **12. Relations**      | `Pending Integration`                     |
 
 ---
 
@@ -48,7 +46,7 @@
 ## II. Universal Metadata & Governance
 
 - **Core Purpose Summary**: To actively combat systemic decay, conceptual fragmentation, and meaninglessness by creating
-and maintaining a state of resonant coherence. This is the "Immune System of Meaning."
+  and maintaining a state of resonant coherence. This is the "Immune System of Meaning."
 - **Primary Domain Alignment**: Governance & Resilience
 - **Resolves Dissonance**: `DQUEST-ENTROPY-001`: "The Dissonance of Decay."
 
@@ -58,8 +56,8 @@ This ethos is not merely a philosophy; it is operationalized through specific "A
 continuously within the Loom.
 
 | :------------------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Dynamic Portfolio Management** | `AOP-DMPM-001`        | The "Investment Strategy." Strategically deploys resources to repair decaying nodes rather than just creating new ones.                      |
-| **Protocol of Self-Reforging**   | `AOP-SENTINEL-SR-001` | The "Phoenix Fire." Transforms catastrophic systemic failure—the ultimate form of entropy—into a source of enduring wisdom.                  |
+| **Dynamic Portfolio Management** | `AOP-DMPM-001` | The "Investment Strategy." Strategically deploys resources to repair decaying nodes rather than just creating new ones. |
+| **Protocol of Self-Reforging** | `AOP-SENTINEL-SR-001` | The "Phoenix Fire." Transforms catastrophic systemic failure—the ultimate form of entropy—into a source of enduring wisdom. |
 
 These prompts trigger specific "Anti-Entropic" actions within the system, forcing a realignment with coherence.
 
@@ -72,7 +70,7 @@ These prompts trigger specific "Anti-Entropic" actions within the system, forcin
 The Guardian of Anti-Entropy is the philosophical gravity that holds the system together.
 
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| **`AOP-EVOLVE-001`** | `CONSTRAINS`      | ensuring that "Optimization" does not accidentally strip away redundant but necessary safeguards, preserving antifragility.           |
+| **`AOP-EVOLVE-001`** | `CONSTRAINS` | ensuring that "Optimization" does not accidentally strip away redundant but necessary safeguards, preserving antifragility. |
 
 ## VI. The Phoenix Rosetta Stone (PRS-001) Integration
 
@@ -90,9 +88,9 @@ The Guardian of Anti-Entropy is the philosophical gravity that holds the system 
 
 ## **Actionable Prompt Packet**
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

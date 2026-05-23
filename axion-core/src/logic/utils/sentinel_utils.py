@@ -1,5 +1,4 @@
-"""
-## **[ARTIFACT START]**
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -51,8 +50,7 @@ logger = logging.getLogger("sentinel")
 
 
 def safe_run_command(cmd: list[str], **kwargs: Any) -> subprocess.CompletedProcess:
-    """
-    Executes a shell command securely and logs the outcome.
+    """Executes a shell command securely and logs the outcome.
     Centralizes 'subprocess.run' to satisfy security checks and logging requirements.
 
     Args:
@@ -61,6 +59,7 @@ def safe_run_command(cmd: list[str], **kwargs: Any) -> subprocess.CompletedProce
 
     Returns:
         The result of the command execution.
+
     """
     try:
         # Enforce list-based commands to avoid shell injection
@@ -75,10 +74,14 @@ def safe_run_command(cmd: list[str], **kwargs: Any) -> subprocess.CompletedProce
         text = kwargs.pop("text", True)
         check = kwargs.pop("check", False)
 
-        result = subprocess.run(cmd, capture_output=capture_output, text=text, check=check, **kwargs)
+        result = subprocess.run(
+            cmd, capture_output=capture_output, text=text, check=check, **kwargs
+        )
 
         if result.returncode != 0:
-            stderr_output = result.stderr.strip() if result.stderr else "No stderr output."
+            stderr_output = (
+                result.stderr.strip() if result.stderr else "No stderr output."
+            )
             logger.error(f"   > FAILURE (Code {result.returncode}): {stderr_output}")
         else:
             logger.info("   > SUCCESS")
@@ -91,11 +94,11 @@ def safe_run_command(cmd: list[str], **kwargs: Any) -> subprocess.CompletedProce
 
 
 def heal_with_ruff(targets: list[str]) -> None:
-    """
-    Runs Ruff check with auto-fix enabled for the specified targets.
+    """Runs Ruff check with auto-fix enabled for the specified targets.
 
     Args:
         targets: List of file paths or directories to fix.
+
     """
     cmd = ["python", "-m", "ruff", "check", "--fix"] + targets
     safe_run_command(cmd)

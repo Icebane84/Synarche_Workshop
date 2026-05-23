@@ -68,14 +68,20 @@ class TranscludeEngine:
     def __init__(self, workspace_root: str, strict: bool = False) -> None:
         self.workspace = os.path.abspath(workspace_root)
         self.strict = strict
-        self.shells_dir = os.path.join(self.workspace, "_governance", "templates", "Master_Shells")
-        self.blocks_dir = os.path.join(self.workspace, "_governance", "templates", "Transclusion_Blocks")
+        self.shells_dir = os.path.join(
+            self.workspace, "_governance", "templates", "Master_Shells"
+        )
+        self.blocks_dir = os.path.join(
+            self.workspace, "_governance", "templates", "Transclusion_Blocks"
+        )
         self.audit_log: list[dict[str, Any]] = []
 
         # Validate environment integrity
         for path in [self.shells_dir, self.blocks_dir]:
             if not os.path.exists(path):
-                raise ForgeError(f"Critical Vault Missing: {path}. System integrity compromised.")
+                raise ForgeError(
+                    f"Critical Vault Missing: {path}. System integrity compromised."
+                )
 
     def _safe_path_resolve(self, base_dir: str, filename: str) -> str:
         """Ensures the resolved path stays within the designated vault (Vault Jail)."""
@@ -83,17 +89,23 @@ class TranscludeEngine:
 
         # Check for Symlinks (Sovereign Guard)
         if os.path.islink(target_path):
-            raise SovereigntyViolationError(f"Symlink detected: {filename}. External links are forbidden in the Vault.")
+            raise SovereigntyViolationError(
+                f"Symlink detected: {filename}. External links are forbidden in the Vault."
+            )
 
         # Check for Path Traversal
-        if os.path.commonpath([os.path.abspath(base_dir), target_path]) != os.path.abspath(base_dir):
+        if os.path.commonpath(
+            [os.path.abspath(base_dir), target_path]
+        ) != os.path.abspath(base_dir):
             raise SovereigntyViolationError(
                 f"Path Traversal Attempt: {filename}. The Forge remains within the Sanctuary."
             )
 
         return target_path
 
-    def resolve_transclusions(self, content: str, depth: int = 0, transclusion_stack: list[str] | None = None) -> str:
+    def resolve_transclusions(
+        self, content: str, depth: int = 0, transclusion_stack: list[str] | None = None
+    ) -> str:
         """Recursively resolves all TRANSCLUDE tags with stack-based cycle detection and security guards."""
         if transclusion_stack is None:
             transclusion_stack = []
@@ -114,7 +126,9 @@ class TranscludeEngine:
                 return f"<!-- {e} -->"
 
             if not os.path.exists(block_path):
-                error_msg = f"TRANSCLUDE ERROR: Block '{block_filename}' not found in vault."
+                error_msg = (
+                    f"TRANSCLUDE ERROR: Block '{block_filename}' not found in vault."
+                )
                 if self.strict:
                     raise FileNotFoundError(error_msg)
                 console.print(f"[bold yellow]Warning:[/bold yellow] {error_msg}")
@@ -140,7 +154,9 @@ class TranscludeEngine:
                 block_content = f.read()
 
             # Recursive expansion - add current block to stack
-            return self.resolve_transclusions(block_content, depth + 1, [*transclusion_stack, block_path])
+            return self.resolve_transclusions(
+                block_content, depth + 1, [*transclusion_stack, block_path]
+            )
 
         return self.TRANSCLUDE_PATTERN.sub(replacer, content)
 
@@ -185,7 +201,9 @@ class TranscludeEngine:
                 raise FileNotFoundError(f"Master Shell '{shell_filename}' not found.")
 
         if not os.path.exists(shell_path):
-            raise FileNotFoundError(f"Master Shell '{shell_filename}' not found at {shell_path}.")
+            raise FileNotFoundError(
+                f"Master Shell '{shell_filename}' not found at {shell_path}."
+            )
 
         self.audit_log.append(
             {
@@ -213,7 +231,9 @@ class TranscludeEngine:
             rendered = template.render(**full_metadata)
 
             # Record Success
-            self.audit_log.append({"type": "forge_success", "artifact_id": metadata.get("artifact_id")})
+            self.audit_log.append(
+                {"type": "forge_success", "artifact_id": metadata.get("artifact_id")}
+            )
             return rendered
         except Exception as e:
             error_msg = f"Forging Failure: {e}"
@@ -236,12 +256,26 @@ class TranscludeEngine:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Living Template Protocol Engine (v14.0) - Sovereign Hardened")
-    parser.add_argument("--id", required=True, help="Target Artifact ID (e.g., SYNG.Doc.001)")
-    parser.add_argument("--shell", required=True, help="Master Shell filename or substring (e.g., UMB, AOP, CSL)")
+    parser = argparse.ArgumentParser(
+        description="Living Template Protocol Engine (v14.0) - Sovereign Hardened"
+    )
+    parser.add_argument(
+        "--id", required=True, help="Target Artifact ID (e.g., SYNG.Doc.001)"
+    )
+    parser.add_argument(
+        "--shell",
+        required=True,
+        help="Master Shell filename or substring (e.g., UMB, AOP, CSL)",
+    )
     parser.add_argument("--meta", help="Path to YAML metadata file")
-    parser.add_argument("--out", help="Output file path (optional, prints to stdout if not provided)")
-    parser.add_argument("--strict", action="store_true", help="Fail strictly on missing transclusions or variables")
+    parser.add_argument(
+        "--out", help="Output file path (optional, prints to stdout if not provided)"
+    )
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Fail strictly on missing transclusions or variables",
+    )
 
     args = parser.parse_args()
 
@@ -265,28 +299,36 @@ def main() -> None:
             meta_path = os.path.abspath(args.meta)
             # Vault Jail: Metadata must be inside the workspace
             if os.path.commonpath([workspace_root, meta_path]) != workspace_root:
-                raise SovereigntyViolationError(f"Metadata traversal attempt: {args.meta}")
+                raise SovereigntyViolationError(
+                    f"Metadata traversal attempt: {args.meta}"
+                )
 
             if os.path.exists(meta_path):
                 with open(meta_path, encoding="utf-8") as f:
                     yaml_meta = yaml.safe_load(f)
                     if yaml_meta:
                         metadata.update(yaml_meta)
-                        engine.audit_log.append({"type": "meta_loaded", "path": meta_path})
+                        engine.audit_log.append(
+                            {"type": "meta_loaded", "path": meta_path}
+                        )
         except Exception as e:
             console.print(f"[bold red]Metadata Error:[/bold red] {e}")
             if args.strict:
                 sys.exit(1)
 
     try:
-        with console.status(f"[bold green]Forging {args.id} from [cyan]{args.shell}[/cyan]..."):
+        with console.status(
+            f"[bold green]Forging {args.id} from [cyan]{args.shell}[/cyan]..."
+        ):
             result = engine.forge(args.shell, metadata)
 
         if args.out:
             out_abs = os.path.abspath(args.out)
             # Integrity check for output path
             if os.path.commonpath([workspace_root, out_abs]) != workspace_root:
-                raise SovereigntyViolationError(f"Output path outside sanctuary: {args.out}")
+                raise SovereigntyViolationError(
+                    f"Output path outside sanctuary: {args.out}"
+                )
 
             os.makedirs(os.path.dirname(out_abs), exist_ok=True)
             with open(out_abs, "w", encoding="utf-8") as f:

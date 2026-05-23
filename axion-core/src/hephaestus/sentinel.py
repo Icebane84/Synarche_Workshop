@@ -1,5 +1,4 @@
-"""
-# AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol
+"""# AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol.
 
 # I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -47,9 +46,7 @@ logger = logging.getLogger(__name__)
 
 
 class CodeSentinel:
-    """
-    The Sentinel module responsible for proactive codebase analysis.
-    """
+    """The Sentinel module responsible for proactive codebase analysis."""
 
     def __init__(self) -> None:
         self.soul = ArtificersSoul()
@@ -59,13 +56,22 @@ class CodeSentinel:
         self.scanner = ArtifactScanner(self.task_context)
 
     def scan_causality(self, root_path: str) -> list[dict[str, Any]]:
-        """
-        [NEW] Scans text artifacts for Causal Resoance.
-        """
+        """[NEW] Scans text artifacts for Causal Resoance."""
         causal_report = []
         for root, dirs, files in os.walk(root_path):
             # OMEGA v15.1 - Performance Optimization
-            exclude_dirs = {".git", ".venv", ".venv_prs", "__pycache__", "node_modules", ".gemini", "artifacts", "brain", ".mypy_cache", ".pytest_cache"}
+            exclude_dirs = {
+                ".git",
+                ".venv",
+                ".venv_prs",
+                "__pycache__",
+                "node_modules",
+                ".gemini",
+                "artifacts",
+                "brain",
+                ".mypy_cache",
+                ".pytest_cache",
+            }
             dirs[:] = [d for d in dirs if d not in exclude_dirs]
 
             for file in files:
@@ -93,10 +99,9 @@ class CodeSentinel:
         return causal_report
 
     def scan_governance(self, root_path: str) -> dict:
-        """
-        Performs a dual-layer audit:
+        """Performs a dual-layer audit:
         1. Resonance Scan (Breadth)
-        2. Compliance Audit (Depth/OGLN v11.0)
+        2. Compliance Audit (Depth/OGLN v11.0).
         """
         # Layer 1: Breadth (Resonance)
         total, aligned, unaligned_paths = self.scanner.scan_directory(Path(root_path))
@@ -108,7 +113,12 @@ class CodeSentinel:
             if path.suffix == ".md":
                 res = self.auditor.audit_file(str(path))
                 detailed_findings.append(
-                    {"file": res.file_path, "status": res.status, "errors": res.errors, "score": res.score}
+                    {
+                        "file": res.file_path,
+                        "status": res.status,
+                        "errors": res.errors,
+                        "score": res.score,
+                    }
                 )
 
         report = {
@@ -127,14 +137,14 @@ class CodeSentinel:
     TOP_FINDINGS_LIMIT = 3
 
     def log_to_triage(self, report: dict[str, Any], root_path: str) -> None:
-        """
-        Appends a summary of the scan to _governance/5_Logs/GVRN.Triage.Report.md.
-        """
+        """Appends a summary of the scan to _governance/5_Logs/GVRN.Triage.Report.md."""
         try:
             # Construct path relative to workspace root (assuming running from root or similar context)
             # If root_path is '.', then use CWD.
             workspace_root = Path(root_path).resolve()
-            report_path = workspace_root / "_governance" / "5_Logs" / "GVRN.Triage.Report.md"
+            report_path = (
+                workspace_root / "_governance" / "5_Logs" / "GVRN.Triage.Report.md"
+            )
 
             # If _governance doesn't exist relative to root_path, try to find it up one level or assume fixed path
             if not report_path.parent.exists():
@@ -159,7 +169,11 @@ class CodeSentinel:
                 log_entry += "| File | Error |\n| :--- | :--- |\n"
                 for finding in report["detailed_findings"][: self.TOP_FINDINGS_LIMIT]:
                     fname = Path(finding["file"]).name
-                    err = finding["errors"][0] if finding["errors"] else "Unknown Dissonance"
+                    err = (
+                        finding["errors"][0]
+                        if finding["errors"]
+                        else "Unknown Dissonance"
+                    )
                     log_entry += f"| `{fname}` | {err} |\n"
                 if findings_count > self.TOP_FINDINGS_LIMIT:
                     log_entry += f"| ...and {findings_count - self.TOP_FINDINGS_LIMIT} more | |\n"
@@ -184,14 +198,16 @@ if __name__ == "__main__":
 
     # Default to scanning one level up from 'src' (the workspace root)
     # Correct path calculation: axion-core/src/hephaestus/sentinel.py -> axion-core/
-    root_to_scan = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    
+    root_to_scan = os.path.dirname(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    )
+
     print(f"[*] SENTINEL: Starting Governance Audit for: {root_to_scan}")
     sentinel = CodeSentinel()
-    
+
     # Layer 1: Governance/Compliance
     report = sentinel.scan_governance(root_to_scan)
-    
+
     # Layer 2: Causality
     causal_findings = sentinel.scan_causality(root_to_scan)
     report["causal_dissonance"] = causal_findings
@@ -200,12 +216,12 @@ if __name__ == "__main__":
     print(f"Resonance Score: {report['resonance_score']:.1f}%")
     print(f"Dissonant Files: {len(report['dissonant_files'])}")
     print(f"Causal Dissonance: {len(causal_findings)} files")
-    
-    if report['resonance_score'] < 100.0:
+
+    if report["resonance_score"] < 100.0:
         print("\n[!] Dissonance detected in the following paths:")
-        for path in report['dissonant_files'][:10]:
+        for path in report["dissonant_files"][:10]:
             print(f"  - {path}")
-        if len(report['dissonant_files']) > 10:
+        if len(report["dissonant_files"]) > 10:
             print(f"  - ... and {len(report['dissonant_files']) - 10} more.")
 
     # Write full JSON report to a temporary artifact

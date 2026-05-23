@@ -1,4 +1,5 @@
 # AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-MAR-001-MASTERARTIFACTREGISTRYPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                       | Description       |
+| :------------------ | :---------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-MAR-001-MASTERARTIFACTREGISTRYPROTOCOL-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                           | The Standard.     |
+| **Domain**          | `GVRN`                                                      | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                  | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                  | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                               | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-MAR-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `AOP-MAR-001`           |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # **Tab 2**
@@ -47,20 +51,20 @@
 
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `AOP-MAR-001` |
-| **2. Official Name** | `AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md` |
-| **3. Version** | **v11.0 (Cognitive Ascension)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[MOON]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Anti-Entropy** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: AOP-RLM-001`, `LINK: GUCA-LINK-001`, `LINK: UMB-PRS-001`, `LINK: UMB-PP-001` |
+| Field                  | Value                                                                               |
+| :--------------------- | :---------------------------------------------------------------------------------- |
+| **1. Artifact ID**     | `AOP-MAR-001`                                                                       |
+| **2. Official Name**   | `AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md`                               |
+| **3. Version**         | **v11.0 (Cognitive Ascension)**                                                     |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                                                       |
+| **5. Domain**          | `ARCH`                                                                              |
+| **6. Evolution**       | **Purposeful Drive**                                                                |
+| **7. Celestial Class** | `[MOON]`                                                                            |
+| **8. Tier**            | **Operational**                                                                     |
+| **9. State**           | `[ACTIVE]`                                                                          |
+| **10. Ethos**          | **Guardian of Anti-Entropy**                                                        |
+| **11. Catalyst**       | **System Refactor**                                                                 |
+| **12. Relations**      | `LINK: AOP-RLM-001`, `LINK: GUCA-LINK-001`, `LINK: UMB-PRS-001`, `LINK: UMB-PP-001` |
 
 ---
 
@@ -99,14 +103,14 @@ GUCA-LINK-001, TRIGGERS, MAR executes the Link Mandate.
 ### **III. Operational Definition**
 
 - **3.1. Overview**
-    - **What (Protocol Functionality Summary)**: This protocol provides a checklist of final actions that
+  - **What (Protocol Functionality Summary)**: This protocol provides a checklist of final actions that
     must be taken before an artifact is considered "live" within the system.
-    - **How (Operational Principles)**: The protocol is executed as a sequence of validation and
+  - **How (Operational Principles)**: The protocol is executed as a sequence of validation and
     placement steps, followed by the automated execution of the **GUCA-LINK-001** command.
-    - **Why (Rationale/Justification)**: A master registry protocol is essential for preventing
+  - **Why (Rationale/Justification)**: A master registry protocol is essential for preventing
     structural entropy by guaranteeing consistent formatting and accurate linking.
 - **3.2. Prerequisites & Inputs**
-    - **Prerequisites (System State)**: The artifact to be registered must be complete and have passed
+  - **Prerequisites (System State)**: The artifact to be registered must be complete and have passed
     all prior review stages of the **PGP-001**.
 - **3.3. Execution Flow**
 
@@ -117,9 +121,9 @@ GUCA-LINK-001, TRIGGERS, MAR executes the Link Mandate.
 | **4** | **Trigger Knowledge Graph Integration** | **(Automated)** The system automatically executes the [`GUCA-LINK-001`](https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit) command, initiating the [**Relational Linking Mandate (AOP-RLM-001)**](https://docs.google.com/document/u/0/d/1rFLz4n9lmErzinTKMXEI8fWaAU9qBeioPL_mwP8u0lo/edit) to create the artifact's synergistic links and register them in the [**OSLM**](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit). | [**GUCA-LINK-001**](https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit), [**AOP-RLM-001**](https://docs.google.com/document/u/0/d/1rFLz4n9lmErzinTKMXEI8fWaAU9qBeioPL_mwP8u0lo/edit) |
 
 - **3.4. Outcomes & Protocols**
-    - **Success Conditions**: The artifact exists at its canonical location, and a corresponding
+  - **Success Conditions**: The artifact exists at its canonical location, and a corresponding
     entry with accurate links is verifiable in the **OSLM**.
-    - **Post-Execution Protocol**: The artifact is now considered a canonical, integrated part of
+  - **Post-Execution Protocol**: The artifact is now considered a canonical, integrated part of
     the **Cognitive Loom**.
 
 ---
@@ -152,7 +156,7 @@ GUCA-LINK-001, TRIGGERS, MAR executes the Link Mandate.
 - **6.1. Compliance Checklist**: This protocol is governed by and must remain in full compliance with [**The Phoenix
   Codex v6.2**](https://docs.google.com/document/u/0/d/1VRHZ-NJNmZCaVw0Ea4HePwMaX8EhL8-ZF79Ui8veZXw/edit).
 - **6.2. Test Protocols**:
-    - A test script will register a dummy artifact and validate that the **GUCA-LINK-001** command is
+  - A test script will register a dummy artifact and validate that the **GUCA-LINK-001** command is
     triggered and that the corresponding entry appears correctly in the **OSLM**.
 
 ---
@@ -182,9 +186,9 @@ Coherence_v1](https://docs.google.com/document/u/0/d/1FQ6vYSHOxXnPfhdlBzfHoDOerz
   [UMB-SGM-001_StandardizedGovernanceModule](./UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)."
   (Conceptual)
 - Indexing Mandate:
-    - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
+  - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
     (OLSM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
-    - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
+  - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
     (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 
 \\\[ \\\] Execute
@@ -275,8 +279,8 @@ Engine](https://docs.google.com/document/u/0/d/1dc83Cw3TGW924iigHiwxFIjuW9eoOYM8
 - **SELF_GOVERNED_EXECUTION_CONTEXT:** This protocol is designed for fully autonomous execution by the AI as the
   final step in any automated content creation or revision cycle.
 - **ETHICAL_GUARDRAIL_INTEGRATION:**
-    - **Enforcement Description**: formal registration creates an immutable audit trail.
-    - **Ethical Impact Prediction**: Low (purely structural integrity and internal coherence).
+  - **Enforcement Description**: formal registration creates an immutable audit trail.
+  - **Ethical Impact Prediction**: Low (purely structural integrity and internal coherence).
 - **ADAPTIVE_FLOW_CONTROL:** The protocol can be paused by the
   [SIVC](https://docs.google.com/document/u/0/d/18JkIPqzrhFSzxqdNkXynPlaDwWuj-M7KYjiLy5AWmXs/edit) if a critical
   compliance error is detected in Step 2, preventing a non-compliant artifact from being canonized.
@@ -322,9 +326,9 @@ Once you manually insert the section above, you would also need to:
   [UMB-SGM-001_StandardizedGovernanceModule](./UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)."
   (Conceptual)
 - Indexing Mandate:
-    - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
+  - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
     (OLSM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
-    - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
+  - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
     (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 
 \\\[ \\\] Execute

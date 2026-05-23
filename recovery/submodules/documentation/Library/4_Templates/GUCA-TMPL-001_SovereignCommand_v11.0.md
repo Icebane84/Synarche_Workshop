@@ -61,8 +61,8 @@ Tags:
 
 - **Invocation:** `CMD: [Name]`
 - **Parameters:**
-    - `[param_1]` ([Type]): [Description]
-    - `[param_2]` ([Type]): [Description]
+  - `[param_1]` ([Type]): [Description]
+  - `[param_2]` ([Type]): [Description]
 
 ### 3.2 System Triggers
 

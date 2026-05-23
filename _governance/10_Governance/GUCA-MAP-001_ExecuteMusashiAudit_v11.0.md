@@ -1,4 +1,5 @@
 # GUCA-MAP-001_ExecuteMusashiAudit_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,37 +12,40 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-MAP-001-EXECUTEMUSASHIAUDIT-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-MAP-001_ExecuteMusashiAudit_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                             | Description       |
+| :------------------ | :------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-MAP-001-EXECUTEMUSASHIAUDIT-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-MAP-001_ExecuteMusashiAudit_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                 | The Standard.     |
+| **Domain**          | `GVRN`                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                        | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
 
 ---
+
 UIP: GUCA-MAP-001
 Title: Execute Musashi Audit Command
-Source: 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/3_Commands/GUCA-MAP-001_ExecuteMusashiAudit_v11.0.md)
-Description: >
+Source:
+
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/3_Commands/GUCA-MAP-001_ExecuteMusashiAudit_v11.0.md)
+  Description: >
   Defines the master command logic for calculating the Musashi Alignment Protocol Integrated Critique Score (MAP-I-CS), providing a quantitative measure of artifact coherence.
-Version: 11.0
-Status: ACTIVE
-Compliance: OGLN v11.0
-Genesis: 
-  - Author: The Synarche Workshop
-  - Date: 2026-01-25
-  - Timestamp: 1769251200
-Tags: 
-  - #Command
-  - #Audit
-  - #Musashi
-  - #Automation
-  - #QualityControl
+  Version: 11.0
+  Status: ACTIVE
+  Compliance: OGLN v11.0
+  Genesis:
+- Author: The Synarche Workshop
+- Date: 2026-01-25
+- Timestamp: 1769251200
+  Tags:
+- #Command
+- #Audit
+- #Musashi
+- #Automation
+- #QualityControl
+
 ---
 
 > [!IMPORTANT]

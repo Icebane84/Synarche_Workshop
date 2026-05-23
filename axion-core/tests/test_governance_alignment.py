@@ -43,7 +43,9 @@ def test_law_26_hollow_check():
 def test_weaver_nlp():
     print("\n--- [TEST] CATALYST WEAVER NLP INTEGRATION ---")
     try:
-        weaver_path = os.path.join(BASE_DIR, "tools", "02_Forge", "GVRN.Tool.CatalystWeaver.py")
+        weaver_path = os.path.join(
+            BASE_DIR, "tools", "02_Forge", "GVRN.Tool.CatalystWeaver.py"
+        )
         spec = importlib.util.spec_from_file_location("weaver", weaver_path)
         weaver_mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(weaver_mod)
