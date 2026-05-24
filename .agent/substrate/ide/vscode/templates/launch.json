@@ -46,6 +46,27 @@
       "runtimeExecutable": "C:\\Users\\Chris\\.deno\\bin\\deno.EXE",
       "runtimeArgs": ["run", "--unstable", "--inspect-wait", "--allow-all"],
       "attachSimplePort": 9229
+    },
+    {
+      "name": "Run Generic Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "${execPath}",
+      "args": ["--extensionDevelopmentPath="],
+      "outFiles": ["/out/**/*.js"],
+      "preLaunchTask": "",
+      "sourceMaps": true,
+      "resolveSourceMapLocations": ["/out/**/*.js.map", "!**/node_modules/**"]
+    },
+    {
+      "name": "Run Generic Tests",
+      "type": "extensionHost",
+      "request": "launch",
+      "runtimeExecutable": "",
+      "args": ["--extensionDevelopmentPath=", "--extensionTestsPath=/out/test/runTest.js"],
+      "outFiles": ["/out/test/**/*.js"],
+      "preLaunchTask": "",
+      "sourceMaps": true
     }
   ]
 }

@@ -253,14 +253,48 @@ async function handleVerifyRegistry() {
 }
 // --- Helper Functions ---
 /**
+ * Resolves the path to the Python executable based on settings, environment variables,
+ * and standard defaults.
+ */
+function getPythonExecutablePath() {
+    // 1. Check workspace settings for "axion.pythonPath"
+    const axionConfig = vscode.workspace.getConfiguration("axion");
+    const axionPath = axionConfig.get("pythonPath");
+    if (axionPath && fs.existsSync(axionPath)) {
+        return axionPath;
+    }
+    // 2. Check workspace settings for "python.defaultInterpreterPath"
+    const pythonConfig = vscode.workspace.getConfiguration("python");
+    const defaultPath = pythonConfig.get("defaultInterpreterPath");
+    if (defaultPath && fs.existsSync(defaultPath)) {
+        return defaultPath;
+    }
+    // 3. Check legacy "python.pythonPath"
+    const legacyPath = pythonConfig.get("pythonPath");
+    if (legacyPath && fs.existsSync(legacyPath)) {
+        return legacyPath;
+    }
+    // 4. Check environment variable
+    if (process.env.PYTHON_PATH && fs.existsSync(process.env.PYTHON_PATH)) {
+        return process.env.PYTHON_PATH;
+    }
+    // 5. Check master environment default on Windows
+    const defaultEnvPath = "C:\\DevEnvironments\\master_env\\Scripts\\python.exe";
+    if (fs.existsSync(defaultEnvPath)) {
+        return defaultEnvPath;
+    }
+    // 6. Fallback
+    return "python";
+}
+/**
  * Executes the centralized Python CLI and returns the output.
  */
 function executePythonCLI(args, callback) {
-    const pythonPath = "python";
+    const pythonPath = getPythonExecutablePath();
     const workspaceRoot = path.resolve(__dirname, "..");
     const logicDir = path.join(workspaceRoot, "src", "logic");
     const cliPath = path.join(logicDir, "cli.py");
-    const command = `${pythonPath} "${cliPath}" ${args.join(" ")}`;
+    const command = `"${pythonPath}" "${cliPath}" ${args.join(" ")}`;
     const channel = vscode.window.createOutputChannel("Axion [Core]");
     // channel.show(true); // Don't pop up for every background call
     (0, node_child_process_1.exec)(command, (error, stdout, stderr) => {

@@ -48,47 +48,72 @@ def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
     return wrapper
 
 
-@synarche_audit  # Directive Alpha: synarche_audit deployed
-async def parse_error_log_entry(log_line: str) -> Optional[dict[str, Any]]:
-    """Simulates OGLN's @mem-proc parsing a single error_audit.log entry.
-    This function is now automatically audited for its execution state.
+class MemoryWeaverAgent:
     """
-    logger.debug(f"OGLN @mem-proc parsing: {log_line[:50]}...")
+    The @mem-proc Agent responsible for ingesting unstructured dissonance (logs),
+    structuring it, and weaving it into the Cognitive Loom (Vault).
+    """
 
-    # Simulate parsing logic
-    if "CRITICAL FAILURE" in log_line:
-        # Extract timestamp, message, stack trace (simplified)
-        timestamp_str = log_line.split(" - ", maxsplit=1)[0]
+    def __init__(self, target_vault: str = "Cognitive Loom"):
+        self.target_vault = target_vault
+        self.weaver_id = f"MEM-PROC-{id(self)}"
+        logger.info(f"Initialized MemoryWeaverAgent [{self.weaver_id}] targeting {self.target_vault}")
+
+    def _extract_timestamp(self, log_entry: str) -> datetime:
+        timestamp_str = log_entry.split(" - ", maxsplit=1)[0]
         try:
-            timestamp = datetime.strptime(timestamp_str, "%Y-%m-%d %H:%M:%S,%f")
+            return datetime.strptime(timestamp_str, "%Y-%m-%d %H:%M:%S,%f")
         except ValueError:
-            timestamp = datetime.now()  # Fallback for simulation
+            return datetime.now()  # Fallback for simulation
 
-        error_summary = log_line.split("CRITICAL FAILURE in ")[1].split(":", 1)[0]
-        full_message = log_line.strip()
+    def _isolate_traceback(self, log_entry: str) -> tuple[str, Optional[str]]:
+        traceback_marker = "Traceback (most recent call last):"
+        if traceback_marker in log_entry:
+            main_log, stack_trace = log_entry.split(traceback_marker, 1)
+            return main_log.strip(), traceback_marker + stack_trace
+        return log_entry.strip(), None
 
-        processed_data = {
-            "error_id": f"OGLN-ERR-{hash(log_line)}",
-            "timestamp": timestamp.isoformat(),
-            "summary": f"OGLN Detected Critical Failure: {error_summary}",
-            "details": full_message,
-            "source_log": "error_audit.log",
-            "status": "Awaiting Root Cause Analysis",
-        }
-        # Simulate storing in Eidetic Contextual Memory Matrix
-        print(
-            f"OGLN: Stored processed error in Cognitive Loom: {processed_data['summary']}"
-        )
-        await asyncio.sleep(0.05)  # Simulate async processing
-        return processed_data
-    elif "Database connection failed" in log_line:
-        # Simulate another error type
-        print("OGLN: Database error identified, marking for network check.")
-        await asyncio.sleep(0.03)
-        return {"type": "DB_ERROR", "line": log_line}
-    else:
-        logger.info("OGLN: Log entry appears non-critical or already processed.")
-        return None
+    @synarche_audit  # Directive Alpha: synarche_audit deployed
+    async def weave_log_entry(self, log_entry: str) -> Optional[dict[str, Any]]:
+        """Simulates the agent parsing a single, potentially multiline error_audit.log entry."""
+        logger.debug(f"[{self.weaver_id}] parsing: {log_entry[:50]}...")
+
+        # Simulate parsing logic
+        if "CRITICAL FAILURE" in log_entry:
+            timestamp = self._extract_timestamp(log_entry)
+            full_message, stack_trace = self._isolate_traceback(log_entry)
+
+            try:
+                error_summary = full_message.split("CRITICAL FAILURE in ")[1].split(":", 1)[0]
+            except IndexError:
+                error_summary = "Unknown Component"
+
+            processed_data = {
+                "error_id": f"OGLN-ERR-{hash(log_entry)}",
+                "timestamp": timestamp.isoformat(),
+                "summary": f"OGLN Detected Critical Failure: {error_summary}",
+                "details": full_message,
+                "stack_trace": stack_trace,
+                "source_log": "error_audit.log",
+                "status": "Awaiting Root Cause Analysis",
+                "weaver_id": self.weaver_id,
+            }
+            
+            # Simulate storing in Eidetic Contextual Memory Matrix
+            print(
+                f"[{self.weaver_id}]: Stored processed error in {self.target_vault}: {processed_data['summary']}"
+            )
+            await asyncio.sleep(0.05)  # Simulate async processing
+            return processed_data
+
+        elif "Database connection failed" in log_entry:
+            print(f"[{self.weaver_id}]: Database error identified, marking for network check.")
+            await asyncio.sleep(0.03)
+            return {"type": "DB_ERROR", "line": log_entry, "weaver_id": self.weaver_id}
+
+        else:
+            logger.info(f"[{self.weaver_id}]: Log entry appears non-critical or already processed.")
+            return None
 
 
 # --- Conceptual Test (run this to demonstrate Directive Alpha & Gamma) ---
@@ -108,9 +133,11 @@ async def demo_ogln_processing() -> None:
         "2026-04-16 10:01:00,456 - SystemInit - INFO - System initialized."
     )
 
+    weaver = MemoryWeaverAgent(target_vault="Supabase Vault (Simulated)")
+
     print("\n--- OGLN Error Log Integration Demo ---")
-    await parse_error_log_entry(sample_error_log)
-    await parse_error_log_entry(sample_info_log)
+    await weaver.weave_log_entry(sample_error_log)
+    await weaver.weave_log_entry(sample_info_log)
 
 
 if __name__ == "__main__":

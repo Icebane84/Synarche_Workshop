@@ -4,8 +4,12 @@
     "ms-python.vscode-pylance",
     "trunk.io",
     "charliermarsh.ruff",
-
+    "ms-python.mypy-type-checker",
+    "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
+    "formulahendry.code-runner",
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
     "yzhang.markdown-all-in-one",
     "bierner.markdown-preview-github-styles",
     "bierner.markdown-checkbox",

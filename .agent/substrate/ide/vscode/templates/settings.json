@@ -1,4 +1,254 @@
 {
-  "cSpell.words": ["GVRN", "importmap", "OGLN", "scanlines"],
-  "editor.fontSize": 18
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.renderWhitespace": "selection",
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+
+    "python.defaultInterpreterPath": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+    "python.analysis.extraPaths": ["axion-core", "open-notebook"],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.indexing": false,
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.exclude": [
+        "**/node_modules",
+        "**/__pycache__",
+        "**/.git",
+        "**/.venv",
+        "**/venv",
+        "**/_governance",
+        "**/.archives",
+        "**/.mypy_cache",
+        "**/.ruff_cache",
+        "**/scratch",
+        "**/incoming",
+        "**/dist",
+        "**/out"
+    ],
+
+    "eslint.useFlatConfig": true,
+    "eslint.validate": ["javascript", "typescript", "typescriptreact", "markdown"],
+    "eslint.workingDirectories": [
+        { "directory": "axion-core", "changeProcessCWD": true },
+        { "directory": "phoenix-rosetta-stone", "changeProcessCWD": true },
+        { "directory": "design-system", "changeProcessCWD": true },
+        { "directory": ".", "changeProcessCWD": false },
+        { "directory": "open-notebook", "changeProcessCWD": true },
+        { "directory": "nova_forge", "changeProcessCWD": true }
+    ],
+    "eslint.run": "onSave",
+
+    "mypy-type-checker.args": ["--config-file", "./axion-core/standards/mypy.ini"],
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.interpreter": ["C:\\DevEnvironments\\master_env\\Scripts\\python.exe"],
+    "mypy-type-checker.path": ["C:\\DevEnvironments\\master_env\\Scripts\\mypy.exe"],
+    "mypy.dmypyExecutable": "C:\\DevEnvironments\\master_env\\Scripts\\dmypy.exe",
+    "mypy-type-checker.daemonStatusFile": "axion-core\\standards\\.dmypy.json",
+
+    "ruff.interpreter": ["C:\\DevEnvironments\\master_env\\Scripts\\python.exe"],
+    "ruff.path": ["C:\\DevEnvironments\\master_env\\Scripts\\ruff.exe"],
+    "ruff.importStrategy": "fromEnvironment",
+
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "never"
+        }
+    },
+
+    "markdownlint.config": {
+        "MD013": false,
+        "MD033": false
+    },
+    "markdownlint.customRules": [
+        "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/axion-rules.cjs",
+        "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/phoenix-rules.cjs"
+    ],
+    "markdownlint.run": "onSave",
+
+    "prettier.requireConfig": false,
+    "prettier.configPath": "./axion-core/standards/.prettierrc",
+
+    "cSpell.configFile": "./axion-core/standards/cspell.jsonc",
+    "cSpell.customWorkspaceDictionaries": [
+        {
+            "name": "Phoenix Dictionary",
+            "path": "${workspaceFolder}/axion-core/standards/dictionaries/master.jsonc",
+            "addWords": true,
+            "description": "Master dictionary for the Phoenix Protocol"
+        }
+    ],
+    "cSpell.words": [
+        "AISTF",
+        "Badass",
+        "chronos",
+        "DQUEST",
+        "dragonslayer",
+        "EMPR",
+        "Episemantics",
+        "Freeplane",
+        "Gamified",
+        "Gemification",
+        "GVRN",
+        "HIER",
+        "importmap",
+        "Insforge",
+        "INSFORGE",
+        "KAELEN",
+        "Lightbinder",
+        "MAGN",
+        "middleware",
+        "Musashi",
+        "Oathkeep",
+        "Oathkeeper",
+        "OGLN",
+        "omni-anchor",
+        "OSLM",
+        "params",
+        "PGPS",
+        "PYREFLY",
+        "Pythonic",
+        "QLOR",
+        "scanlines",
+        "Serafina",
+        "SUPABASE",
+        "synarche",
+        "SYNG",
+        "trpc",
+        "zustand"
+    ],
+
+    "search.exclude": {
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/out": true,
+        "**/.tmp.*": true
+    },
+    "files.watcherExclude": {
+        "**/__pycache__/**": true,
+        "**/.mypy_cache/**": true,
+        "**/.pytest_cache/**": true,
+        "**/.ruff_cache/**": true,
+        "**/.venv/**": true,
+        "**/dist/**": true,
+        "**/node_modules/**": true,
+        "**/venv/**": true,
+        "**/.git/**": true,
+        "**/.vscode/**": true,
+        "**/.trunk/**": true,
+        "**/tmp.driveupload/**": true,
+        "**/_logs/**": true,
+        "**/artifacts/**": true,
+        "**/scratch/**": true,
+        "**/incoming/**": true,
+        "**/_governance/**": true,
+        "**/.archives/**": true,
+        "**/.tmp.*": true
+    },
+    "errorLens.fontStyleItalic": true,
+    "errorLens.fontWeight": "400",
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.messageBackgroundMode": "line",
+    "sonarlint.rules": {
+        "javascript:S106": "off"
+    },
+    "explorer.excludeGitIgnore": false,
+    "files.autoSave": "off",
+    "terminal.integrated.suggest.providers": {
+        "lsp": true
+    },
+    "debug.console.closeOnEnd": true,
+    "geminicodeassist.updateChannel": "Insiders",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "markdown.server.log": "debug",
+    "python.analysis.referencesCodeLens": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+    "python.analysis.enableTroubleshootMissingImports": true,
+    "sonarlint.disableTelemetry": true,
+    "trunk.addToolsToPath": true,
+    "trunk.numJobs": 0,
+    "trunk.workspaceFolderName": "📂 WORKSPACE ROOT",
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+
+    "java.server.launchMode": "LightWeight",
+    "java.jdt.ls.vmargs": "-Xmx128M -Xms64M -XX:+UseG1GC -XX:+UseStringDeduplication",
+    "java.autobuild.enabled": false,
+    "java.import.maven.enabled": false,
+    "java.import.gradle.enabled": false,
+    "java.import.gradle.wrapper.enabled": false,
+    "java.project.importOnFirstTimeStartup": "disabled",
+    "java.project.importOnFirstTimeStartup.showPrompts": false,
+    "java.project.importHint": false,
+    "java.recommendations.dependency.install": "false",
+    "python.analysis.indexing.followSymlinkedFolders": false,
+    "js/ts.preferences.importModuleSpecifier": "project-relative",
+    "typescript.preferences.importModuleSpecifier": "project-relative",
+    "typescript.tsserver.maxTsServerMemory": 3072,
+    "diffEditor.codeLens": true,
+    "php.format.rules.addCommaAfterLastDeclParameter": true,
+    "java.inlayHints.formatParameters.enabled": true,
+    "java.inlayHints.parameterTypes.enabled": true,
+    "markdown.extension.showActionButtons": true,
+    "markdown.extension.completion.enabled": true,
+    "markdown.preview.typographer": true,
+    "powershell.buttons.showPanelMovementButtons": true,
+    "powershell.codeFormatting.autoCorrectAliases": false,
+    "powershell.codeFormatting.whitespaceBetweenParameters": true,
+    "powershell.integratedConsole.showOnStartup": false,
+    "prettier.experimentalTernaries": true,
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    },
+    "python.analysis.completeFunctionParens": true,
+    "python.pyrefly.configPath": "axion-core\\standards\\pyrefly.toml",
+    "python.pyrefly.runnableCodeLens": true,
+    "python.pyrefly.typeCheckingMode": "strict",
+
+    "trunk.path": "C:\\Users\\Chris\\.cache\\trunk\\cli\\1.25.0-mingw-x86_64\\trunk.exe",
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\Chris\\.cache\\trunk\\cli\\1.25.0-mingw-x86_64;C:\\DevEnvironments\\master_env\\Scripts;${env:PATH}",
+        "ESLINT_USE_FLAT_CONFIG": "true"
+    },
+    "code-runner.executorMap": {
+        "python": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe -u"
+    },
+    "code-runner.runInTerminal": true
 }

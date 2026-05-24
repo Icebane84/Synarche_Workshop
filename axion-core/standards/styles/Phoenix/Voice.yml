@@ -1,5 +1,5 @@
 extends: substitution
-message: "Non-Phoenix terminology detected. Use '%s' instead of '%p'."
+message: "Non-Phoenix terminology detected. Use '%s' instead of '%s'."
 level: error
 ignorecase: false
 swap:

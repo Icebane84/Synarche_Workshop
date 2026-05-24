@@ -120,6 +120,16 @@
                     "icon": "assets/star-icon.svg"
                 }
             ]
+        },
+        "configuration": {
+            "title": "Axion Core",
+            "properties": {
+                "axion.pythonPath": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Path to the Python executable used to execute Axion Core CLI scripts."
+                }
+            }
         }
     },
     "scripts": {

@@ -1,84 +1,172 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "SYNG: Sentinel Scan [Auto-Fix]",
-      "detail": "Execute Sentinel's Sword to auto-fix architectural and linting dissonance.",
-      "type": "shell",
-      "command": "python",
-      "args": ["axion-core/lab/sentinel_sword.py"],
-      "group": {
-        "kind": "build",
-        "isDefault": false
-      },
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "SYNG: Governance Scan [Sophia]",
-      "detail": "Scan _governance and substrate for protocol compliance.",
-      "type": "shell",
-      "command": "python",
-      "args": ["axion-core/lab/sophia_wisdom.py", "--mode", "governance"],
-      "group": "test",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "SYNG: Complexity Scan [Sophia]",
-      "detail": "Analyze code complexity and entropy across the engine.",
-      "type": "shell",
-      "command": "python",
-      "args": ["axion-core/lab/sophia_wisdom.py", "--mode", "complexity"],
-      "group": "test",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "SYNG: Reforge Artifact [Context]",
-      "detail": "Apply OMEGA v15.0 standardization to the active file.",
-      "type": "shell",
-      "command": "python",
-      "args": ["axion-core/forge/reforge.py", "${file}"],
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "SYNG: Reforge Workspace [Omni]",
-      "detail": "Standardize all artifacts across the workspace.",
-      "type": "shell",
-      "command": "python",
-      "args": ["axion-core/forge/reforge.py"],
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "SYNG: Trunk Audit [Security]",
-      "detail": "Perform a full workspace security and quality audit via Trunk.",
-      "type": "shell",
-      "command": "trunk",
-      "args": ["check", "--all", "--no-fix"],
-      "group": "test",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "problemMatcher": []
-    }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "npm: compile",
+            "type": "shell",
+            "command": "npm run compile",
+            "options": {
+                "cwd": "${workspaceFolder}/axion-core"
+            },
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        {
+            "label": "SYNG: Sentinel Scan [Auto-Fix]",
+            "detail": "Execute Sentinel's Sword to auto-fix architectural and linting dissonance.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "axion-core/lab/sentinel_sword.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "SYNG: Governance Scan [Sophia]",
+            "detail": "Scan _governance and substrate for protocol compliance.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "axion-core/lab/sophia_wisdom.py",
+                "--mode",
+                "governance"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "SYNG: Complexity Scan [Sophia]",
+            "detail": "Analyze code complexity and entropy across the engine.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "axion-core/lab/sophia_wisdom.py",
+                "--mode",
+                "complexity"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "SYNG: Reforge Artifact [Context]",
+            "detail": "Apply OMEGA v15.0 standardization to the active file.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "axion-core/forge/reforge.py",
+                "${file}"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "SYNG: Reforge Workspace [Omni]",
+            "detail": "Standardize all artifacts across the workspace.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "axion-core/forge/reforge.py"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "SYNG: Trunk Audit [Security]",
+            "detail": "Perform a full workspace security and quality audit via Trunk.",
+            "type": "shell",
+            "command": "C:\\Users\\Chris\\.cache\\trunk\\cli\\1.25.0-mingw-x86_64\\trunk.exe",
+            "args": [
+                "check",
+                "--all",
+                "--no-fix"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "GVRN: Re-Index Master Registry",
+            "detail": "Re-index the master registry file.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "axion-core/scripts/gen_registry_entries.py"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "EVO: Run AISTF Cycle",
+            "detail": "Run the AISTF evolution engine cycle.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "axion-core/forge/evolution_engine.py",
+                "--root",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "GVRN: Run Canonization Audit",
+            "detail": "Run the canonization audit script.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "axion-core/scripts/canonization_audit.py"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Python: Run Current File",
+            "detail": "Run active Python file using the master_env interpreter.",
+            "type": "shell",
+            "command": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+            "args": [
+                "${file}"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
 }

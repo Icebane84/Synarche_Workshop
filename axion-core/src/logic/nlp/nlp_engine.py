@@ -61,7 +61,7 @@ try:
     from sentence_transformers import SentenceTransformer
 
     TRANSFORMERS_AVAILABLE = True
-except ImportError:
+except Exception:
     TRANSFORMERS_AVAILABLE = False
 
 # Configure logging

@@ -4,6 +4,9 @@
             "name": "📂 WORKSPACE ROOT",
             "path": ".",
         },
+        {
+            "path": "../_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/.agent",
+        },
     ],
     "settings": {
         "python.defaultInterpreterPath": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
@@ -101,6 +104,14 @@
         "prettier.configPath": "./axion-core/standards/.prettierrc",
 
         "cSpell.configFile": "./axion-core/standards/cspell.jsonc",
+        "cSpell.customWorkspaceDictionaries": [
+            {
+                "name": "Phoenix Dictionary",
+                "path": "${workspaceFolder:📂 WORKSPACE ROOT}/axion-core/standards/dictionaries/master.jsonc",
+                "addWords": true,
+                "description": "Master dictionary for the Phoenix Protocol"
+            }
+        ],
         "cSpell.words": [
             "AISTF",
             "Badass",
@@ -248,6 +259,7 @@
         "code-runner.runInTerminal": true,
         "mypy.debugLogging": true,
         "extension.prophet.sitecontext.selectedSiteID": "",
+        "editor.scrollOnMiddleClick": true,
     },
     "extensions": {
         "recommendations": [

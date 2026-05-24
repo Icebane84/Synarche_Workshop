@@ -1,6 +1,6 @@
 # fde_engine/
 
-│ ├── gvrn/ # NEW: The Phoenix Governance Layer │ ├── law_validator.py # Enforces zero-entropy state validation │ ├──
+│ ├── GVRN/ # NEW: The Phoenix Governance Layer │ ├── law_validator.py # Enforces zero-entropy state validation │ ├──
 selt_logger.py # Immutable telemetry and Dissonance tracking │ ├── core/ │ ├── engine_runtime.py # Main loop (S(n+1) =
 F(S(n), I(n))) │ ├── chunk_executor.py # UPGRADED: Replaces naive parallel_executor (Phase 6+) │ ├── rollback_core.py #
 Time machine (Phase 4) │ ├── delta_packet.py # NEW: Strict DAMP schemas for mutation payloads │ ├── ecs/ │ ├──

@@ -44,8 +44,7 @@
 import datetime
 import os
 from abc import ABC, abstractmethod
-from ast import Dict
-from typing import Any
+from typing import Any, Dict
 
 from .genesis import NovaGenesis
 

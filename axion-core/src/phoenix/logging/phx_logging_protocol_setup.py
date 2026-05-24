@@ -25,7 +25,6 @@ class ProcessStatus(Enum):
     CRITICAL = auto()
     DEBUG = auto()  # Added for decorator's debug entry log
 
-
 # --- I. Standard Initialization (from GUCA: Core Implementation Standard) ---
 # This function would reside in @system/logging/phoenix_logger.py
 def setup_synarche_logging() -> logging.Logger:
@@ -70,7 +69,7 @@ def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
     """
 
     @functools.wraps(func)
-    async def wrapper(*args, **kwargs):
+    async def wrapper(*args: Any, **kwargs: Any) -> Any:
         # Ensure logger is fetched, assuming it's been set up
         logger = logging.getLogger("PhoenixLogger")
         start_time = time.perf_counter()
@@ -137,7 +136,7 @@ def simulate_sentinel_audit(code_snippet: str) -> bool:
 
 
 # Example of how Directive Gamma's OGLN would use the log file (conceptual, relies on actual `error_audit.log` content)
-async def ogln_ingest_error_logs(log_file_path: str):
+async def ogln_ingest_error_logs(log_file_path: str) -> list[dict[str, Any]]:
     """Simulates OGLN reading and processing the error_audit.log."""
     phoenix_logger.info(f"OGLN @mem-proc initiating ingestion of {log_file_path}.")
     processed_errors = []
