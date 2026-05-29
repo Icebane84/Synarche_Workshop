@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2026-05-27T05:41:50.746093",
-    "total_nodes": 2039,
+    "generated_at": "2026-05-28T23:55:07.105644",
+    "total_nodes": 2053,
     "total_edges": 8,
     "referential_integrity_issues": 3,
     "circular_loops": 0
@@ -928,6 +928,14 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
+      "id": "CORE.LINK.001",
+      "path": "_governance/09_Link/SYNG.Link.Forge.md",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "CANONIZED",
+      "ethos": "SOVEREIGN_SYNERGISTIC_LINK"
+    },
+    {
       "id": "GVRN.SYNG.LINK.QUAD.001",
       "path": "_governance/09_Link/SYNG.Link.Quad.md",
       "domain": "GVRN",
@@ -1440,6 +1448,14 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
+      "id": "GVRN.ID.001",
+      "path": "_governance/10_Governance/GVRN.ID.SynthesisInsights.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "CANONIZED",
+      "ethos": "SOVEREIGN_GOVERNANCE_LEDGER"
+    },
+    {
       "id": "GVRN.GVRN.IDX.001.001",
       "path": "_governance/10_Governance/GVRN.IDX.001.md",
       "domain": "GVRN",
@@ -1622,6 +1638,14 @@
       "tier": "GOVERNANCE",
       "state": "ACTIVE",
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.REGISTRY.001",
+      "path": "_governance/10_Governance/GVRN.Registry.Origins.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "CANONIZED",
+      "ethos": "SOVEREIGN_GOVERNANCE_LEDGER"
     },
     {
       "id": "GVRN.GVRN.SAP.001.001",
@@ -3417,7 +3441,7 @@
     },
     {
       "id": "GVRN.GVRN.TRIAGE.REPORT.001",
-      "path": "_governance/50_Logs/GVRN.Triage.Report.md",
+      "path": "_governance/5_Logs/GVRN.Triage.Report.md",
       "domain": "GVRN",
       "tier": "GOVERNANCE",
       "state": "ACTIVE",
@@ -10304,6 +10328,22 @@
       "ethos": "SOVEREIGN_LOGIC_COMPONENT"
     },
     {
+      "id": "CORE.REGISTER_CANONICAL.001",
+      "path": "axion-core/scripts/register_canonical.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RELOCATE_ORIGINS.001",
+      "path": "axion-core/scripts/relocate_origins.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
       "id": "TEST.TEST_MEMORY_SYNC.001",
       "path": "axion-core/scripts/test_memory_sync.py",
       "domain": "TEST",
@@ -11704,6 +11744,14 @@
       "ethos": "SOVEREIGN_LOGIC_COMPONENT"
     },
     {
+      "id": "TEST.TEST_HEPHAESTUS_ACTIVATED.001",
+      "path": "axion-core/tests/test_hephaestus_activated.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
       "id": "TEST.TEST_INSFORGE_PERSISTENCE.001",
       "path": "axion-core/tests/test_insforge_persistence.py",
       "domain": "TEST",
@@ -11778,6 +11826,22 @@
     {
       "id": "TEST.TEST_RPG_ACHIEVEMENTS.001",
       "path": "axion-core/tests/test_rpg_achievements.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_SOUL_FORGED_ENGINE.001",
+      "path": "axion-core/tests/test_soul_forged_engine.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_SQLITE_RPG_PERSISTENCE.001",
+      "path": "axion-core/tests/test_sqlite_rpg_persistence.py",
       "domain": "TEST",
       "tier": "LOGIC",
       "state": "ACTIVE",
@@ -13616,6 +13680,38 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
+      "id": "CORE.PHASE_1.0_-_SOVEREIGN_SELF-IMP.001",
+      "path": "docs/Phase 1.0 - Sovereign Self-Improvement Harmonization.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PHASE_2.0_-_SOVEREIGN_CORE_CAP.001",
+      "path": "docs/Phase 2.0 - Sovereign Core Capabilities & RPG Subsystem Attunement.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PHASE_3.0_-_THE_SOUL-FORGED_EN.001",
+      "path": "docs/Phase 3.0 - The Soul-Forged Engine (Guardian Logic & Empathy).md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PHASE_4.0_-_HEPHAESTUS_TOOL_HA.001",
+      "path": "docs/Phase 4.0 - Hephaestus Tool Harvest & Governance Canonization.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
       "id": "CORE.SYNG.ACT.DNA.001",
       "path": "docs/SYNG.ACT.DNA.md",
       "domain": "CORE",
@@ -13642,6 +13738,22 @@
     {
       "id": "CORE.SYNG.PROT.DNA.001",
       "path": "docs/SYNG.PROT.DNA.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SOVEREIGN_CORE_SOUL-FORGED_ENG.001",
+      "path": "docs/Sovereign Core & Soul-Forged Engine Integration (Phase 3.0 Complete).md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.THE_SELECTIVE_FUSION_AUDIT.001",
+      "path": "docs/The Selective Fusion Audit.md",
       "domain": "CORE",
       "tier": "GOVERNANCE",
       "state": "ACTIVE",

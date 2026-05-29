@@ -10,6 +10,7 @@ artifact_anchor:
   ethos: SOVEREIGN_LOGIC_COMPONENT
   relations: []
 */
+/** biome-ignore-all lint/style/useNamingConvention:false */
 
 import * as standards from "../../../_governance/13_Standardization/GVRN.Standards.json";
 import type { MetadataSchema } from "../utils/validation";

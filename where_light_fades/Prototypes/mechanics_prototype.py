@@ -11,7 +11,6 @@ Purpose: Prototype the mathematical model for the 3rd Person Game.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 import time
 
 
