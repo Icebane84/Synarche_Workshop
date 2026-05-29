@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.SOUL.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
@@ -38,6 +51,17 @@ class ArtificersSoul:
 
     def __init__(self) -> None:
         self.emotion_engine = EmotionAnalyzer()
+
+    def calculate_narrative_resonance(self, text: str) -> float:
+        """Calculates narrative resonance based on emotional content density and weight."""
+        if not text:
+            return 1.0
+        emotions = self.emotion_engine.detect_emotions(text)
+        if not emotions:
+            return 0.5  # Neutral default resonance
+        total_intensity = sum(emotions.values())
+        resonance = min(1.0, total_intensity / len(emotions) * (1.0 + 0.1 * len(emotions)))
+        return round(max(0.0, min(1.0, resonance)), 3)
 
     def calculate_aes(self, content: str | None = None) -> float:
         """Calculates the Algorithmic Elegance Score (AES).

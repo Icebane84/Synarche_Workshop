@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.GAZE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """# AOP-ARCH-GAZE-001: The Architect's Gaze (Systemic Impact Analysis).
 
 # I. Universal Identification & Provenance (The Vector Signature)
@@ -40,11 +53,35 @@ class ArchitectsGaze:
     """The Gaze module responsible for simulating the 'Blast Radius' of code changes."""
 
     def __init__(self) -> None:
-        self.weaver = CatalystWeaver()
+        self.weaver = CatalystWeaver("GazeSemanticWeb")
 
     def trace_semantic_web(self, artifact_a: dict, artifact_b: dict) -> dict:
-        """[NEW] Weaves a semantic link between two artifacts."""
-        return self.weaver.weave(artifact_a, artifact_b)
+        """Traces and weaves a semantic link (tether) between two artifacts."""
+        from datetime import datetime
+        from .lib.resonance_scanner import calculate_similarity
+
+        id_a = artifact_a.get("id", "UnknownA")
+        id_b = artifact_b.get("id", "UnknownB")
+        content_a = artifact_a.get("content", "")
+        content_b = artifact_b.get("content", "")
+        path_a = artifact_a.get("path", "")
+        path_b = artifact_b.get("path", "")
+
+        resonance = calculate_similarity(content_a, content_b)
+
+        # Non-destructive tethering: add both to the weaver bundle
+        self.weaver.add_blueprint(id_a, {"path": path_a, "type": "semantic_node"})
+        self.weaver.add_blueprint(id_b, {"path": path_b, "type": "semantic_node"})
+        self.weaver.add_process(f"TETHER: {id_a} <-> {id_b} | Resonance: {resonance:.3f}")
+
+        tether_report = {
+            "source": id_a,
+            "target": id_b,
+            "resonance_score": round(resonance, 3),
+            "status": "Aligned" if resonance >= 0.2 else "Dissonant",
+            "timestamp": datetime.now().isoformat()
+        }
+        return tether_report
 
     def simulate_impact(self, target_file: str, workspace_root: str) -> dict:
         """Simulates the impact of modifying `target_file`.

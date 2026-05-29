@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.SENTINEL.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """# AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol.
 
 # I. Universal Identification & Provenance (The Vector Signature)
@@ -146,12 +159,14 @@ class CodeSentinel:
                 workspace_root / "_governance" / "5_Logs" / "GVRN.Triage.Report.md"
             )
 
-            # If _governance doesn't exist relative to root_path, try to find it up one level or assume fixed path
-            if not report_path.parent.exists():
-                # Fallback: Try absolute path relative to known structure
-                # This assumes standard Synarche layout
-                # ../../../_governance/5_Logs/GVRN.Triage.Report.md depending on execution context
-                pass
+            # If _governance doesn't exist relative to root_path, try to find it up the tree
+            curr = workspace_root
+            while curr != curr.parent:
+                potential = curr / "_governance" / "5_Logs" / "GVRN.Triage.Report.md"
+                if potential.parent.exists():
+                    report_path = potential
+                    break
+                curr = curr.parent
 
             timestamp_str = datetime.now().strftime("%Y-%m-%d %H:%M")
             score = report.get("resonance_score", 0.0)
