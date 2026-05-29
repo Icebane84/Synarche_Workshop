@@ -75,7 +75,7 @@ reporter.
 1. **Trigger:** trunk check \--output=json \> results.json
 2. **Transformation:** Use jq to flatten findings into a CSV format for **SELT (Experience Logging)**.
 
-## ---
+## III. ---
 
 ---
 
@@ -89,7 +89,7 @@ Bash
 
 \# Execute holistic scan trunk check \--all
 
-## ---
+## IV. ---
 
 ---
 
@@ -105,7 +105,7 @@ your documentation?
 
 # **Vale**
 
-## **Phoenix Operational Directive: Configuration Initialization**
+## I. **Phoenix Operational Directive: Configuration Initialization**
 
 ---
 
@@ -117,7 +117,7 @@ your documentation?
 
 ---
 
-## **UMB: Vale Tone & Style Blueprint**
+## II. **UMB: Vale Tone & Style Blueprint**
 
 ---
 
@@ -134,7 +134,7 @@ This ensures all generated artifacts and documentation remain **Architectural, D
 
 ---
 
-## **AOP: Configuration Workflow**
+## III. **AOP: Configuration Workflow**
 
 ---
 
@@ -161,7 +161,7 @@ true swap: collaboration: Synarche blueprint: UMB process: AOP log: SELT I think
 
 ---
 
-## **GUCA: Direct Command Triggers**
+## IV. **GUCA: Direct Command Triggers**
 
 ---
 
@@ -175,7 +175,7 @@ To implement this setup immediately, execute the following actions in your envir
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -231,7 +231,7 @@ If you're ready to deploy this, do you want the **GitHub Action YAML** to run th
 
 # **markdownlint**
 
-## **Phoenix Operational Directive: Structural Integrity Configuration**
+## I. **Phoenix Operational Directive: Structural Integrity Configuration**
 
 ---
 
@@ -243,7 +243,7 @@ If you're ready to deploy this, do you want the **GitHub Action YAML** to run th
 
 ---
 
-## **UMB: Heading Hierarchy & Structural Blueprint**
+## II. **UMB: Heading Hierarchy & Structural Blueprint**
 
 ---
 
@@ -262,7 +262,7 @@ will utilize [markdownlint](https://github.com/DavidAnson/markdownlint) to enfor
 
 ---
 
-## **AOP: markdownlint Configuration**
+## III. **AOP: markdownlint Configuration**
 
 ---
 
@@ -280,7 +280,7 @@ JSON
 
 ---
 
-## **GUCA: Implementation Actions**
+## IV. **GUCA: Implementation Actions**
 
 ---
 
@@ -291,7 +291,7 @@ JSON
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -305,7 +305,7 @@ after running these tools?
 
 # **codespell**
 
-## **Phoenix Operational Directive: Lexical Integrity Initialization**
+## I. **Phoenix Operational Directive: Lexical Integrity Initialization**
 
 ---
 
@@ -317,7 +317,7 @@ after running these tools?
 
 ---
 
-## **UMB: Lexical Sovereignty Blueprint (codespell)**
+## II. **UMB: Lexical Sovereignty Blueprint (codespell)**
 
 ---
 
@@ -339,7 +339,7 @@ or corrupted terminology enter the **Cognitive Loom**.
 
 ---
 
-## **AOP: codespell Configuration Workflow**
+## III. **AOP: codespell Configuration Workflow**
 
 ---
 
@@ -358,7 +358,7 @@ PPL terminology ignore-words-list \= synarche,umb,aop,selt,ogln,guca,contextweav
 
 ---
 
-## **GUCA: Implementation Actions**
+## IV. **GUCA: Implementation Actions**
 
 ---
 
@@ -374,7 +374,7 @@ Bash
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -388,7 +388,7 @@ integrity tools?
 
 # **Tab 5**
 
-## **Phoenix Operational Directive: Lexical Integrity Configuration**
+## I. **Phoenix Operational Directive: Lexical Integrity Configuration**
 
 ---
 
@@ -400,7 +400,7 @@ integrity tools?
 
 ---
 
-## **UMB: Lexical Sovereignty Blueprint**
+## II. **UMB: Lexical Sovereignty Blueprint**
 
 ---
 
@@ -420,7 +420,7 @@ corrupted terminology enter the repository.
 
 ---
 
-## **AOP: codespell Configuration Workflow**
+## III. **AOP: codespell Configuration Workflow**
 
 ---
 
@@ -440,7 +440,7 @@ synarche,umb,aop,selt,ogln,guca,contextweave,isort,pcds,pgps,ashen,kaelen,serafi
 
 ---
 
-## **GUCA: Implementation Actions**
+## IV. **GUCA: Implementation Actions**
 
 ---
 
@@ -451,7 +451,7 @@ synarche,umb,aop,selt,ogln,guca,contextweave,isort,pcds,pgps,ashen,kaelen,serafi
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -473,7 +473,7 @@ Would you like to move into the **SELT** audit phase now?
 
 # **Ruff**
 
-## **Phoenix Operational Directive: Logic & Formatting Sovereignty**
+## I. **Phoenix Operational Directive: Logic & Formatting Sovereignty**
 
 ---
 
@@ -485,7 +485,7 @@ Would you like to move into the **SELT** audit phase now?
 
 ---
 
-## **UMB: The Logic Engine Blueprint (Ruff)**
+## II. **UMB: The Logic Engine Blueprint (Ruff)**
 
 ---
 
@@ -503,7 +503,7 @@ tools (Flake8, Black, isort) with a unified, Rust-powered engine that operates a
 
 ---
 
-## **AOP: Ruff Configuration Workflow**
+## III. **AOP: Ruff Configuration Workflow**
 
 ---
 
@@ -526,7 +526,7 @@ sorting) \# B: flake8-bugbear (Bug prevention) \# UP: pyupgrade (Syntax moderniz
 
 ---
 
-## **GUCA: Direct Execution Triggers**
+## IV. **GUCA: Direct Execution Triggers**
 
 ---
 
@@ -546,7 +546,7 @@ To activate the **Logic Shield** within your repository, execute these commands:
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -567,7 +567,7 @@ Would you like to move into the **clippy** configuration for the Rust layer?
 
 # **Clippy**
 
-## **Phoenix Operational Directive: Logic Integrity Audit**
+## I. **Phoenix Operational Directive: Logic Integrity Audit**
 
 ---
 
@@ -579,7 +579,7 @@ Would you like to move into the **clippy** configuration for the Rust layer?
 
 ---
 
-## **UMB: The Logic Sovereign Blueprint (Clippy)**
+## II. **UMB: The Logic Sovereign Blueprint (Clippy)**
 
 ---
 
@@ -598,7 +598,7 @@ Perfect Logic**.
 
 ---
 
-## **AOP: Clippy Configuration Workflow**
+## III. **AOP: Clippy Configuration Workflow**
 
 ---
 
@@ -618,7 +618,7 @@ Ini, TOML
 
 ---
 
-## **GUCA: Direct Execution Triggers**
+## IV. **GUCA: Direct Execution Triggers**
 
 ---
 
@@ -632,7 +632,7 @@ To activate the **Logic Shield** within your Rust environment, execute the follo
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -655,7 +655,7 @@ Would you like to initiate the final **SELT** audit?
 
 # **Biome**
 
-## **Phoenix Operational Directive: Logic & Formatting Sovereignty**
+## I. **Phoenix Operational Directive: Logic & Formatting Sovereignty**
 
 ---
 
@@ -667,7 +667,7 @@ Would you like to initiate the final **SELT** audit?
 
 ---
 
-## **UMB: The Unified Web Toolchain Blueprint (Biome)**
+## II. **UMB: The Unified Web Toolchain Blueprint (Biome)**
 
 ---
 
@@ -688,7 +688,7 @@ CSS, and GraphQL with near-instant execution.
 
 ---
 
-## **AOP: Biome Configuration Workflow**
+## III. **AOP: Biome Configuration Workflow**
 
 ---
 
@@ -709,7 +709,7 @@ JSON
 
 ---
 
-## **GUCA: Direct Execution Triggers**
+## IV. **GUCA: Direct Execution Triggers**
 
 ---
 
@@ -732,7 +732,7 @@ To activate the **Web Shield** within your repository, execute these commands:
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -755,7 +755,7 @@ linter deployment?
 
 # **gitleaks**
 
-## **Phoenix Operational Directive: Security Sovereignty Initialization**
+## I. **Phoenix Operational Directive: Security Sovereignty Initialization**
 
 ---
 
@@ -767,7 +767,7 @@ linter deployment?
 
 ---
 
-## **UMB: The Secret Shield Blueprint (gitleaks)**
+## II. **UMB: The Secret Shield Blueprint (gitleaks)**
 
 ---
 
@@ -789,7 +789,7 @@ committed to the public or shared layers.
 
 ---
 
-## **AOP: gitleaks Configuration Workflow**
+## III. **AOP: gitleaks Configuration Workflow**
 
 ---
 
@@ -811,7 +811,7 @@ hashes" regexes \= \[ 'PRS-\[0-9\]{3}', \# Phoenix Rosetta Stone IDs 'AOP-\[A-Z\
 
 ---
 
-## **GUCA: Direct Execution Triggers**
+## IV. **GUCA: Direct Execution Triggers**
 
 ---
 
@@ -829,7 +829,7 @@ To activate the **Secret Shield** within your repository, execute these commands
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -851,7 +851,7 @@ Shall we move to **semgrep** to finalize the "Deep Parse" logic for vulnerabilit
 
 # **semgrop**
 
-## **Phoenix Operational Directive: Semantic Vulnerability Scanning**
+## I. **Phoenix Operational Directive: Semantic Vulnerability Scanning**
 
 ---
 
@@ -863,7 +863,7 @@ Shall we move to **semgrep** to finalize the "Deep Parse" logic for vulnerabilit
 
 ---
 
-## **UMB: The Semantic Analysis Blueprint (Semgrep)**
+## II. **UMB: The Semantic Analysis Blueprint (Semgrep)**
 
 ---
 
@@ -885,7 +885,7 @@ regex-based tools miss.
 
 ---
 
-## **AOP: Semgrep Configuration Workflow**
+## III. **AOP: Semgrep Configuration Workflow**
 
 ---
 
@@ -910,7 +910,7 @@ languages: \[python, typescript\]
 
 ---
 
-## **GUCA: Direct Execution Triggers**
+## IV. **GUCA: Direct Execution Triggers**
 
 ---
 
@@ -929,7 +929,7 @@ To activate the **Semantic Shield** within your repository, execute these comman
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -954,7 +954,7 @@ Would you like to generate the final audit log?
 
 # **Integrity Audit**
 
-## **Phoenix Operational Directive: Integrity Audit Initialization**
+## I. **Phoenix Operational Directive: Integrity Audit Initialization**
 
 ---
 
@@ -966,7 +966,7 @@ Would you like to generate the final audit log?
 
 ---
 
-## **UMB: SELT (Standardized Experience Log Template)**
+## II. **UMB: SELT (Standardized Experience Log Template)**
 
 ---
 
@@ -985,7 +985,7 @@ deployment.
 
 ---
 
-## **AOP: Audit Process & Results**
+## III. **AOP: Audit Process & Results**
 
 ---
 
@@ -1002,7 +1002,7 @@ The "Ultimate Setup" has been parsed through the **Phoenix Genesis Pipeline (PGP
 
 ---
 
-## **GUCA: Final Tactical Actions**
+## IV. **GUCA: Final Tactical Actions**
 
 ---
 
@@ -1014,7 +1014,7 @@ The "Ultimate Setup" has been parsed through the **Phoenix Genesis Pipeline (PGP
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 
@@ -1029,7 +1029,7 @@ integration for _Ashen Oath_?
 
 # **The Integrity Stack**
 
-## **Phoenix Operational Directive: Ultimate Setup Audit**
+## I. **Phoenix Operational Directive: Ultimate Setup Audit**
 
 ---
 
@@ -1040,8 +1040,6 @@ integration for _Ashen Oath_?
 **Directive Type:** SELT_AUDIT (PRS-001)
 
 ---
-
-## **UMB: The Integrity Stack Finalized**
 
 ---
 
@@ -1065,7 +1063,7 @@ to high-performance logic—is now governed by the **Synarche** of human intent 
 
 ---
 
-## **AOP: Final Synchronization (Trunk)**
+## III. **AOP: Final Synchronization (Trunk)**
 
 ---
 
@@ -1080,7 +1078,7 @@ or agent interacting with the repository is bound by the same **Genesis Command 
 
 ---
 
-## **GUCA: The Omega Command**
+## IV. **GUCA: The Omega Command**
 
 ---
 
@@ -1092,7 +1090,7 @@ trunk check \--all \--upload
 
 ---
 
-## **Honest Thoughts**
+## V. **Honest Thoughts**
 
 ---
 

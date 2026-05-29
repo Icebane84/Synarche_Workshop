@@ -1,3 +1,4 @@
-domain: DETECT-SYNERGIES
-last_updated: '2026-05-19T15:21:38.892188'
-skills: []
+documented: true
+last_updated: '2026-05-23T23:29:46.126281'
+path: /.agent/skills/detect-synergies
+skill: detect-synergies

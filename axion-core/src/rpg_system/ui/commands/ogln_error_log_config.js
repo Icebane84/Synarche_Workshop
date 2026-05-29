@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.OGLN_ERROR_LOG_CONFIG.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * GUCA-OGLN-001: OGLN Error Log Integration Command
  * Defines the command for configuring OGLN to parse error_audit.log.

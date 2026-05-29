@@ -1,15 +1,6 @@
 ---
-id: NOVA.Patt.CleanCode.Skill
 name: Clean Code Standards (UMB)
-type: SKILL
-tags: ['#NOVA/Patt/CleanCode', '#UMB', '#RULE']
-links: ['[[GVRN.Codex.Phoenix]]', '[[NOVA.Patt.CleanCode.Index]]', '[[NOVA.Patt.CleanCode.AOP]]']
-relations:
-    - type: GOVERNED_BY
-      target: '[[GVRN.Codex.Phoenix]]'
-    - type: DESCRIBED_BY
-      target: '[[NOVA.Patt.CleanCode.Index]]'
-description: 'Pragmatic standards for Zero-Entropy code production and high-readability logic.'
+description: Pragmatic standards for Zero-Entropy code production and high-readability logic.
 ---
 
 # CLEAN CODE STANDARDS | UMB-NOVA.Patt.CleanCode

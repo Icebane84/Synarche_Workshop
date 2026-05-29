@@ -1,5 +1,18 @@
+"""
+artifact_anchor:
+  id: INFR.REFORGE_OSLM.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 import re
-from pathlib import Path
+from pathlib import path
 
 # Configuration
 OSLM_FILENAME = "UMB-OSLM-001_PPLGraphOutline_v11.0.md"
@@ -17,9 +30,9 @@ ARTIFACT_ID_REGEX = (
 
 def find_oslm_file():
     for d in SEARCH_DIRS:
-        path = Path(d)
+        path = path(d)
         if not path.is_absolute():
-            path = Path.cwd() / d
+            path = path.cwd() / d
 
         if path.exists():
             found = list(path.rglob(OSLM_FILENAME))

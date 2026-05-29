@@ -1,5 +1,5 @@
 category: SYSTEM
-last_updated: '2026-05-19T15:21:38.921131'
+last_updated: '2026-05-23T23:29:46.143338'
 workflows:
 - id: auto_deploy
   path: /.agent/workflows/system/auto_deploy.md

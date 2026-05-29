@@ -26,10 +26,8 @@ with st.container(border=True):
         "Default Content Processing Engine for Documents",
         ["auto", "docling", "simple"],
         index=(
-            ["auto", "docling", "simple"].index(
-                content_settings.default_content_processing_engine_doc
-            )
-            if content_settings.default_content_processing_engine_doc
+            ["auto", "docling", "simple"].index(content_settings.default_content_processing_engine_doc)
+            if content_settings.default_content_processing_engine_doc in ["auto", "docling", "simple"]
             else 0
         ),
     )
@@ -48,10 +46,8 @@ with st.container(border=True):
         "Default Content Processing Engine for URLs",
         ["auto", "firecrawl", "jina", "simple"],
         index=(
-            ["auto", "firecrawl", "jina", "simple"].index(
-                content_settings.default_content_processing_engine_url
-            )
-            if content_settings.default_content_processing_engine_url
+            ["auto", "firecrawl", "jina", "simple"].index(content_settings.default_content_processing_engine_url)
+            if content_settings.default_content_processing_engine_url in ["auto", "firecrawl", "jina", "simple"]
             else 0
         ),
     )
@@ -82,7 +78,7 @@ with st.container(border=True):
         ["ask", "always", "never"],
         index=(
             ["ask", "always", "never"].index(content_settings.default_embedding_option)
-            if content_settings.default_embedding_option
+            if content_settings.default_embedding_option in ["ask", "always", "never"]
             else 0
         ),
     )
@@ -103,11 +99,7 @@ with st.container(border=True):
     auto_delete_files = st.selectbox(
         "Auto Delete Uploaded Files",
         ["yes", "no"],
-        index=(
-            ["yes", "no"].index(content_settings.auto_delete_files)
-            if content_settings.auto_delete_files
-            else 0
-        ),
+        index=(1 if content_settings.auto_delete_files in ["no", False] else 0),
     )
     with st.expander("Help me choose"):
         st.markdown(
@@ -262,7 +254,7 @@ with st.container(border=True):
     }
 
     # Get current preferred languages or use defaults
-    current_languages = content_settings.youtube_preferred_languages or [
+    default_langs = [
         "en",
         "pt",
         "es",
@@ -270,9 +262,13 @@ with st.container(border=True):
         "nl",
         "en-GB",
         "fr",
-        "de",
         "hi",
         "ja",
+    ]
+
+    # Filter values to ensure they exist in options to prevent Streamlit crashes
+    current_languages = [
+        lang for lang in (content_settings.youtube_preferred_languages or default_langs) if lang in language_options
     ]
 
     youtube_preferred_languages = st.multiselect(
@@ -295,12 +291,8 @@ with st.container(border=True):
         )
 
 if st.button("Save", key="save_settings"):
-    content_settings.default_content_processing_engine_doc = (
-        default_content_processing_engine_doc
-    )
-    content_settings.default_content_processing_engine_url = (
-        default_content_processing_engine_url
-    )
+    content_settings.default_content_processing_engine_doc = default_content_processing_engine_doc
+    content_settings.default_content_processing_engine_url = default_content_processing_engine_url
     content_settings.default_embedding_option = default_embedding_option
     content_settings.auto_delete_files = auto_delete_files
     content_settings.youtube_preferred_languages = youtube_preferred_languages

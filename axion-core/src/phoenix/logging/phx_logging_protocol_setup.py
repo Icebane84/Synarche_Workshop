@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.PHX_LOGGING_PROTOCOL_SETUP.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 # AOP-PHX-LOG-001: The Phoenix Logging Protocol Setup
 # This playbook defines the executable workflow for configuring the dual-stream logger
 # and the `synarche_audit` decorator as per UMB-PHX-LOG-001.

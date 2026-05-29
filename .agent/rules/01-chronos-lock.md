@@ -7,13 +7,13 @@ priority: high
 
 Every file you create or significantly modify **must** possess the "Universal Identification" header table.
 
-| Field               | Value                           |
-| :------------------ | :------------------------------ | ----------- | ------ | ------ |
-| **Artifact ID**     | `[TYPE]-[NAME]-[VERSION]`       |
-| **Version**         | `v[X.X]`                        |
-| **Provenance**      | `Date Reforged: [CURRENT_DATE]` |
-| **Domain**          | `[GVRN                          | ARCH        | PHL    | CORE]` |
-| **Celestial Class** | `[STAR                          | PLANET      | MOON]` |
-| **Tier**            | `[1-5]`                         |
-| **State**           | `[ACTIVE                        | CANONIZED]` |
-| **Ethos**           | `[ETHOS_DESCRIPTION]`           |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `[TYPE]-[NAME]-[VERSION]` | The Sovereign ID. |
+| **Version** | `v[X.X]` | The Version level. |
+| **Provenance** | `Date Reforged: [CURRENT_DATE]` | The transmutation date. |
+| **Domain** | `GVRN` \| `ARCH` \| `PHL` \| `CORE` | The Subject domain. |
+| **Celestial Class** | `STAR` \| `PLANET` \| `MOON` | The weight classification. |
+| **Tier** | `1` - `5` | The target tier. |
+| **State** | `ACTIVE` \| `CANONIZED` | The Lifecycle state. |
+| **Ethos** | `[ETHOS_DESCRIPTION]` | The alchemical ethos. |

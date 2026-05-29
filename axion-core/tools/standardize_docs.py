@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.STANDARDIZE_DOCS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-EMPR-002: Doc Standardizer (Emperor's Law).
 
 ## I. Universal Identification & Provenance (The Vector Signature)

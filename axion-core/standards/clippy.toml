@@ -1,0 +1,9 @@
+# Phoenix-Class Logic Constraints
+msrv = "1.80.0"
+avoid-breaking-exported-api = true
+blacklisted-names = ["toto", "tata", "titi"]
+cognitive-complexity-threshold = 20
+
+# Enforcement Levels
+# deny: clippy::all, clippy::pedantic
+# warn: clippy::nursery, clippy::complexity

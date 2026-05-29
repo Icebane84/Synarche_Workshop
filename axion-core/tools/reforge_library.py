@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.REFORGE_LIBRARY.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-EMPR-001: The Pattern Reforger (Emperor's Schema).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
@@ -51,7 +64,7 @@ import argparse
 import logging
 import re
 from datetime import datetime
-from pathlib import Path
+from pathlib import path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -96,7 +109,7 @@ APP_TEMPLATE = """
 
 
 class Reforger:
-    def __init__(self, target_dir: Path) -> None:
+    def __init__(self, target_dir: path) -> None:
         self.target_dir = target_dir.resolve()
         self.timestamp = datetime.now().strftime("%Y-%m-%d")
 
@@ -203,7 +216,7 @@ class Reforger:
 
         return new_content
 
-    def reforge_file(self, filepath: Path) -> None:
+    def reforge_file(self, filepath: path) -> None:
         logger.info(f"Reforging: {filepath.name}")
 
         try:
@@ -237,18 +250,18 @@ class Reforger:
         except Exception:
             logger.exception(f"Error reforging {filepath.name}")
 
-    def run(self, files: list[Path]) -> None:
+    def run(self, files: list[path]) -> None:
         for f in files:
             self.reforge_file(f)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Phoenix Protocol Artifact Reforger")
-    parser.add_argument("target_dir", type=Path, help="Directory or file to reforge")
+    parser.add_argument("target_dir", type=path, help="Directory or file to reforge")
     parser.add_argument(
         "--batch",
-        type=Path,
-        help="Path to a text file containing list of files to reforge",
+        type=path,
+        help="path to a text file containing list of files to reforge",
     )
     args = parser.parse_args()
 
@@ -260,7 +273,7 @@ def main() -> None:
         reforger.run([args.target_dir])
     elif args.batch:
         batch_files = [
-            Path(line.strip())
+            path(line.strip())
             for line in args.batch.read_text().splitlines()
             if line.strip()
         ]

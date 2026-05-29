@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.EXTENSION.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 const vscode = require("vscode");
 const { exec } = require("child_process");
 const path = require("path");
@@ -13,7 +26,7 @@ function getSynarcheWorkspaceRoot() {
     }
     const rootFolder =
         workspaceFolders.find((folder) => folder.name.toLowerCase() === "synarche_workspace") || workspaceFolders[0];
-    return rootFolder.uri.fsPath;
+    return rootFolder.uri.fspath;
 }
 
 /**
@@ -55,10 +68,10 @@ function activate(context) {
             return; // Error message is shown in the helper function
         }
 
-        const targetFile = editor.document.uri.fsPath;
+        const targetFile = editor.document.uri.fspath;
 
         // 1. Construct absolute paths to your Python tools
-        const reforgerScriptPath = path.join(workspaceRoot, "axion-core", "tools", "reforge.py");
+        const reforgerScriptpath = path.join(workspaceRoot, "axion-core", "tools", "reforge.py");
 
         // 2. Define options for the child process, CRUCIALLY setting the CWD
         const options = {
@@ -66,7 +79,7 @@ function activate(context) {
             cwd: workspaceRoot,
         };
 
-        const command = `python "${reforgerScriptPath}" --target "${targetFile}"`;
+        const command = `python "${reforgerScriptpath}" --target "${targetFile}"`;
 
         vscode.window.showInformationMessage(`Axion is executing: ${command}`);
 
@@ -85,9 +98,9 @@ function activate(context) {
 
     // Refactored helper using the new unified workspace command runner
     const execCliCommand = (command, args = []) => {
-        const pythonPath = "python"; // Assume python is in PATH or configured
-        const cliPath = path.join(context.extensionPath, "src", "cli.py");
-        const fullCommand = `${pythonPath} "${cliPath}" ${command} ${args.join(" ")}`;
+        const pythonpath = "python"; // Assume python is in PATH or configured
+        const clipath = path.join(context.extensionpath, "src", "cli.py");
+        const fullCommand = `${pythonpath} "${clipath}" ${command} ${args.join(" ")}`;
 
         // Automatically applies cwd: workspaceRoot
         return execWorkspaceCommand(fullCommand);
@@ -106,8 +119,8 @@ function activate(context) {
             return;
         }
 
-        const filePath = activeEditor.document.fileName;
-        if (!filePath.endsWith(".md")) {
+        const filepath = activeEditor.document.fileName;
+        if (!filepath.endsWith(".md")) {
             vscode.window.showWarningMessage("Compliance Audit only supports Markdown files.");
             return;
         }
@@ -120,7 +133,7 @@ function activate(context) {
             },
             async () => {
                 try {
-                    const result = await execCliCommand("INITIATE_COMPLIANCE_AUDIT", [`--target:"${filePath}"`]);
+                    const result = await execCliCommand("INITIATE_COMPLIANCE_AUDIT", [`--target:"${filepath}"`]);
                     vscode.window.showInformationMessage(`Audit Complete: ${result}`);
                     // TODO: Parse results and show in a more structured way (e.g. Problems view)
                 } catch (err) {

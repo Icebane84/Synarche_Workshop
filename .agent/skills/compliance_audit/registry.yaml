@@ -1,3 +1,4 @@
-domain: COMPLIANCE_AUDIT
-last_updated: '2026-05-19T15:21:38.885126'
-skills: []
+documented: true
+last_updated: '2026-05-23T23:29:46.121221'
+path: /.agent/skills/compliance_audit
+skill: compliance_audit

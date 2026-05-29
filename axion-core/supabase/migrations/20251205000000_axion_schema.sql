@@ -1,7 +1,7 @@
 -- Migration: Axion Schema (SPEC-SUPABASE-001)
 
 -- 1. Conversation History
-CREATE TABLE IF NOT EXISTS conversation_history (
+CREATE TABLE conversation_history (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     created_at TIMESTAMPTZ DEFAULT now(),
     sender TEXT NOT NULL CHECK (sender IN ('Chris', 'Axion')),
@@ -11,14 +11,14 @@ CREATE TABLE IF NOT EXISTS conversation_history (
 );
 
 -- 2. Axion State
-CREATE TABLE IF NOT EXISTS axion_state (
-    key TEXT PRIMARY KEY,
+CREATE TABLE axion_state (
+    "key" TEXT PRIMARY KEY,
     value JSONB,
     updated_at TIMESTAMPTZ DEFAULT now()
 );
 
 -- 3. Discovered Insights
-CREATE TABLE IF NOT EXISTS discovered_insights (
+CREATE TABLE discovered_insights (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     created_at TIMESTAMPTZ DEFAULT now(),
     title TEXT NOT NULL,
@@ -29,15 +29,18 @@ CREATE TABLE IF NOT EXISTS discovered_insights (
 );
 
 -- 4. Notifications
-CREATE TABLE IF NOT EXISTS notifications (
+CREATE TABLE notifications (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     created_at TIMESTAMPTZ DEFAULT now(),
     title TEXT NOT NULL,
     message TEXT NOT NULL,
     link_id UUID REFERENCES discovered_insights(id),
-    read BOOLEAN DEFAULT FALSE
+    is_read BOOLEAN DEFAULT FALSE
 );
 
--- Enable Realtime for Chat and Notifications
-alter publication supabase_realtime add table conversation_history;
-alter publication supabase_realtime add table notifications;
+-- Enable Realtime for Chat and Notifications (PostgreSQL 15+ syntax)
+ALTER PUBLICATION supabase_realtime ADD TABLES conversation_history;
+ALTER PUBLICATION supabase_realtime ADD TABLES notifications;
+
+-- Add RLS policies for all tables
+-- RLS policies will be added in subsequent migrations.

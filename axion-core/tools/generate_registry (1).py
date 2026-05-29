@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.GENERATE_REGISTRY_1.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-HPRI-003: Registry Generator (The Master Librarian).
 
 ## I. Universal Identification & Provenance (The Vector Signature)

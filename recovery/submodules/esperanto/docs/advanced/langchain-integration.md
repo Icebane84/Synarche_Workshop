@@ -6,9 +6,13 @@
 
 ---
 
-###### **[ARTIFACT START]**
+### **[ARTIFACT START]**
+
+---
 
 ## **Block A: The Identification Lock (UIP-V15)**
+
+---
 
 | Key               | Value                            | Description       |
 | :---------------- | :------------------------------- | :---------------- |
@@ -22,6 +26,8 @@
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+---
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

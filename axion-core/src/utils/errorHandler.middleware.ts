@@ -1,12 +1,25 @@
+/*
+artifact_anchor:
+  id: CORE.ERRORHANDLER.MIDDLEWARE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * artifact_anchor:
  * - id:
  * - type:
  */
-import { PhoenixLogger } from "../system/logging";
 import { captureException } from "@sentry/node";
+import { LoomError } from "@utils/LoomError";
 import { NextFunction, Request, Response } from "express";
-import { LoomError } from "../utils/LoomError";
+import { PhoenixLogger } from "../system/logging";
 
 /**
  * Global Error Handler: Normalizes all errors into LoomErrors,

@@ -1,4 +1,17 @@
 """
+artifact_anchor:
+  id: CORE.CSE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""
 Coherent Synthesis Engine (Python Bridge)
 Reads CollapsedBlocks from stdin, processes them, and outputs JSON to stdout.
 """
@@ -7,12 +20,12 @@ import json
 import logging
 
 # 1. Setup "The Void" Logging
-# CRITICAL: We MUST stream logs to sys.stderr! 
+# CRITICAL: We MUST stream logs to sys.stderr!
 # If we log to stdout, it will corrupt the JSON response going back to TypeScript.
 logging.basicConfig(
-    level=logging.INFO, 
+    level=logging.INFO,
     format="%(asctime)s - %(levelname)s - [CSE] %(message)s",
-    stream=sys.stderr 
+    stream=sys.stderr
 )
 logger = logging.getLogger("CoherentSynthesisEngine")
 
@@ -26,7 +39,7 @@ def main() -> None:
 
         payload = json.loads(raw_input)
         block_id = payload.get("blockId", "UNKNOWN_BLOCK")
-        
+
         logger.info(f"Initiating Python Synthesis for BlockID: {block_id}")
 
         # 3. Extract the pristine data (already validated by TypeScript Zod/NIM)
@@ -34,7 +47,7 @@ def main() -> None:
 
         # 4. Perform Heavy Synthesis / AI Logic Here
         # (e.g., Run matrix math, call an ML model, process the domain_data)
-        
+
         # 5. Format the result
         synthesis_result = {
             "status": "SYNTHESIZED",
@@ -47,7 +60,7 @@ def main() -> None:
         sys.stdout.flush() # Ensure the buffer is cleared immediately
 
     except Exception as e:
-        logger.error(f"Fatal error during synthesis: {str(e)}", exc_info=True)
+        logger.exception(f"Fatal error during synthesis: {str(e)}", exc_info=True)
         sys.exit(1) # Exiting with code > 0 tells PythonBridge.ts that it failed
 
 if __name__ == "__main__":

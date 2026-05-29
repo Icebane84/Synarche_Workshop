@@ -1,24 +1,25 @@
-import { createRequire } from 'module';
+import { createRequire } from "node:module";
+
 const require = createRequire(import.meta.url);
-const markdownlint = require('markdownlint/sync').lint;
-const axionRules = require('../markdownlint-rules/axion-rules.cjs');
-const phoenixRules = require('../markdownlint-rules/phoenix-rules.cjs');
+const markdownlint = require("markdownlint/sync").lint;
+const axionRules = require("../markdownlint-rules/axion-rules.cjs");
+const phoenixRules = require("../markdownlint-rules/phoenix-rules.cjs");
 
 export default {
     meta: {
-        type: 'problem',
+        type: "problem",
         docs: {
-            description: 'Run Phoenix markdownlint rules natively inside ESLint',
+            description: "Run Phoenix markdownlint rules natively inside ESLint",
             recommended: true,
         },
         schema: [],
     },
     create(context) {
         return {
-            Program(node) {
+            Program(_node) {
                 // Ensure we only process markdown files
                 const fileName = context.filename || context.getFilename();
-                if (!fileName.endsWith('.md')) {
+                if (!fileName.endsWith(".md")) {
                     return;
                 }
 
@@ -28,7 +29,7 @@ export default {
                 // Replicate the legacy .markdownlint.cjs config
                 const options = {
                     strings: {
-                        [fileName]: sourceCode
+                        [fileName]: sourceCode,
                     },
                     config: {
                         default: true,
@@ -59,10 +60,10 @@ export default {
                         MD048: { style: "backtick" },
                         MD051: true,
                         MD052: true,
-                        MD053: true
+                        MD053: true,
                     },
                     customRules: [...axionRules, ...phoenixRules],
-                    markdownItFactory: require('markdown-it')
+                    markdownItFactory: require("markdown-it"),
                 };
 
                 let results;
@@ -71,7 +72,7 @@ export default {
                 } catch (error) {
                     context.report({
                         loc: { line: 1, column: 1 },
-                        message: `Markdownlint execution failed: ${error.message}`
+                        message: `Markdownlint execution failed: ${error.message}`,
                     });
                     return;
                 }
@@ -79,21 +80,21 @@ export default {
                 const fileResults = results[fileName] || [];
 
                 for (const result of fileResults) {
-                    const ruleNames = result.ruleNames.join('/');
+                    const ruleNames = result.ruleNames.join("/");
                     const description = result.ruleDescription;
-                    const detail = result.errorDetail ? `: ${result.errorDetail}` : '';
-                    
+                    const detail = result.errorDetail ? `: ${result.errorDetail}` : "";
+
                     const loc = {
                         line: result.lineNumber || 1,
-                        column: result.errorRange ? result.errorRange[0] : 1
+                        column: result.errorRange ? result.errorRange[0] : 1,
                     };
 
                     context.report({
                         loc: loc,
-                        message: `[${ruleNames}] ${description}${detail}`
+                        message: `[${ruleNames}] ${description}${detail}`,
                     });
                 }
-            }
+            },
         };
-    }
+    },
 };

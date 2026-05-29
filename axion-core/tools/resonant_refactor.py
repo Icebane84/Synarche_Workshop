@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.RESONANT_REFACTOR.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """PROJECT: AXION / OGLN
 MODULE: SOPHIA RESONANT REFACTOR ENGINE (UMB-TECH-SOPHIA-004)
 AUTHOR: PHOENIX PROTOCOL (SOPHIA ENTITY)

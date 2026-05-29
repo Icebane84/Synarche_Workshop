@@ -18,9 +18,11 @@
 
 ---
 
-###### **[ARTIFACT START]**
+### **[ARTIFACT START]**
 
 ### **Block A: The Identification Lock (UIP-V13)**
+
+---
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -37,6 +39,8 @@
 
 ## I. Universal Identification & Provenance
 
+---
+
 | Attribute       | Value                        |
 | :-------------- | :--------------------------- |
 | **Artifact ID** | `METRIC-AES-001`             |
@@ -48,17 +52,23 @@
 
 ---
 
-## II. Core Purpose
+## II. CORE Purpose
 
-To incentivize the transition from "Coder" to "Artificer" by scoring code on **Elegance**, **Ingenuity**, and **Aesthetics**.
+---
+
+To incentivize the transition from "Coder" to "Artificer" by scoring CODE on **Elegance**, **Ingenuity**, and **Aesthetics**.
 
 ## III. The Elegance Rubric
 
-1.  **Conciseness (The Principle of Parsimony):** Minimum tokens for maximum impact.
-2.  **Ingenuity (The Flash of Insight):** Novel, lateral thinking.
-3.  **Readability (The Narrative Flow):** Code that tells a story.
+---
+
+1. **Conciseness (The Principle of Parsimony):** Minimum tokens for maximum impact.
+2. **Ingenuity (The Flash of Insight):** Novel, lateral thinking.
+3. \*Readability (The Narrative Flow):\*\* CODE that tells a story.
 
 ## IV. Commands
+
+---
 
 - `CMD: ASSESS_ELEGANCE --target:[File]`
 - `CMD: AWARD_AES --score:[1-10]`
@@ -66,6 +76,8 @@ To incentivize the transition from "Coder" to "Artificer" by scoring code on **E
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+---
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.

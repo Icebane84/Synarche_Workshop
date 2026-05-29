@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.AUDIT_MAGIC_VALUES.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 # AOP-SNT-002: Magic Value Auditor Execution Script
 # Implements CMD: AUDIT_MAGIC to find GVRN-STD-ENUM-001 violations.
 

@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.ASSEMBLER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """GVRN.Protocol.Assembler (AOP-DTS-001)
 Domain: AOP | State: ACTIVE | Version: v13.0
 Objective: Dynamically assemble v13.0 Omega Artifacts from SELT Building Blocks.

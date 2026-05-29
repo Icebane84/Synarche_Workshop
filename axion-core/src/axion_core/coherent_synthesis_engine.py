@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.COHERENT_SYNTHESIS_ENGINE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """# CORE-CSE-001: The Coherent Synthesis Engine (Sovereign Interface).
 
 # I. Universal Identification & Provenance (The Vector Signature)

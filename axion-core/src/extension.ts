@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.EXTENSION.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 import { exec } from "node:child_process";
 import * as fs from "node:fs";
 import * as path from "node:path";

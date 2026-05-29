@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.DELTA_COMMIT.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """Artifact ID: CORE-FDE-ECS-CMT-001
 Ethos: Explicit Collision is Better Than Silent Corruption.
 """

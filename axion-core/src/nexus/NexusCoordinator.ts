@@ -1,13 +1,31 @@
+/*
+artifact_anchor:
+  id: CORE.NEXUSCOORDINATOR.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 // src/nexus/NexusCoordinator.ts
 /**
  * [OMNI-ARTIFACT-ANCHOR] ID: UMB-QB-NC-001 VER: v15.0 [OMEGA] STATUS: ACTIVE
  * Objective: Coordinate client requests through the decoupled Phoenix Superposition Engine (PSE) FSM.
  */
 
+/**
+ * artifact_anchor:
+ * - id: UMB-QB-NC-002
+ * - type: typescript_class
+ */
 import { PhoenixSuperpositionEngine } from "@nexus/PhoenixSuperpositionEngine";
 import { CoherentSynthesisEngine } from "@system/CoherentSynthesisEngine";
 import { NextFunction, Request, Response } from "express";
-import * as crypto from "crypto";
+import * as crypto from "node:crypto";
 
 export class NexusCoordinator {
     /**
@@ -21,7 +39,7 @@ export class NexusCoordinator {
                 blockId: (req.headers["x-block-id"] as string) || crypto.randomUUID(),
                 contextVector: ["WEB", "COMMAND_EXECUTION"], // Matches registered FSM "WEB" strategy
                 rawPayload: req.body,
-                token: req.headers["authorization"] as string | undefined, // JWT authentication pass-through
+                token: req.headers["authorization"], // JWT authentication pass-through
             };
 
             // 2. PSE: Collapse the Superposition dynamically

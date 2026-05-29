@@ -1,3 +1,8 @@
+---
+name: "style_guide.md"
+description: "The style guide for the agent."
+---
+
 # style_guide.md
 
 > **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
@@ -6,9 +11,11 @@
 
 ---
 
-###### **[ARTIFACT START]**
+### **[ARTIFACT START]**
 
 ### **Block A: The Identification Lock (UIP-V13)**
+
+---
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -31,7 +38,9 @@ This guide defines the **Law of the Forge**. You must adhere to these standards 
 
 ## 1. 🧬 The Cognitive limit (Sonar Protocol)
 
-**Objective**: Keep code simple, readable, and linear.
+---
+
+**Objective**: Keep CODE simple, readable, and linear.
 
 - **Maximum Cognitive Complexity**: `15` (per function).
 - **Modularization**: If a function exceeds this logic density, **shatter it** into smaller, single-purpose
@@ -40,25 +49,31 @@ This guide defines the **Law of the Forge**. You must adhere to these standards 
 
 ## 2. 📛 Naming Conventions (RNC-v13)
 
+---
+
 All artifacts (files) must follow the **Context-First / Subject-Clustered** standard if they are "Knowledge" or
 "Governance".
 
 - **Format**: `[DOMAIN].[Subsystem].[Type].[Descriptor]_[Version].md`
 - **Example**: `GVRN.RULE.UMB.AgentStyleGuide_v13.0.md`
-- **Code Files**: `snake_case` for Python (`compliance_audit.py`), `camelCase` for TS/JS (`fileSystem.ts`).
+- **CODE Files**: `snake_case` for Python (`compliance_audit.py`), `camelCase` for TS/JS (`fileSystem.ts`).
 
-## 3. 🐍 Python Standards (Axion Core)
+## 3. 🐍 Python Standards (Axion CORE)
+
+---
 
 - **Version**: Python 3.14 (Functional/Typed)
 - **Typing**: Strict `type hints` required for all function arguments and returns.
 - **Docstrings**: Google Style docstrings for every module, class, and function.
 - **Imports**: Absolute imports only. Group by: Standard -> Third Party -> Local.
 - **Linters**: `ruff` for formatting and linting.
-- **Formatters**: `black` for code formatting.
+- **Formatters**: `black` for CODE formatting.
 - **Testing**: `pytest` for unit and integration tests.
 - **Dependency Management**: `pip-tools` for managing `requirements.txt` and `requirements-dev.txt`.
 
 ## 4. ⚡ TypeScript/Node Standards (Axion Ext)
+
+---
 
 - **Strict Mode**: `strict: true` in `tsconfig.json`.
 - **Async/Await**: No `.then()` chains.
@@ -68,6 +83,8 @@ All artifacts (files) must follow the **Context-First / Subject-Clustered** stan
 - **Dependency Management**: `npm` or `yarn` for managing `package.json` and `package-lock.json`.
 
 ## 5. 🏗️ The Command Center Pattern
+
+---
 
 - **Integration**: New tools should be wired into `.vscode/tasks.json` if they are user-facing.
 - **Skills**: Reusable logic must be encapsulated in `.agent/skills/`.
@@ -80,6 +97,8 @@ All artifacts (files) must follow the **Context-First / Subject-Clustered** stan
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+---
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

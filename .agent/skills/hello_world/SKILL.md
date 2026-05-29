@@ -1,3 +1,8 @@
+---
+name: "Hello World"
+description: "Operational validation module to verify that the Skill System is responsive."
+---
+
 # SKILL.md
 
 > **Domain**: GVRN

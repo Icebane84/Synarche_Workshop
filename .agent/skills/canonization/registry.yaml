@@ -1,6 +1,4 @@
-domain: CANONIZATION
-last_updated: '2026-05-19T15:21:38.884128'
-skills:
-- documented: false
-  id: scripts
-  path: /.agent/skills/canonization/scripts
+documented: true
+last_updated: '2026-05-23T23:29:46.120222'
+path: /.agent/skills/canonization
+skill: canonization

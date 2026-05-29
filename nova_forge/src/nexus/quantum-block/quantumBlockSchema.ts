@@ -26,11 +26,11 @@ const ContextVectorSchema = z
 // ----------------------------------------------------------------------------
 
 // Strategy A: Web UI Interaction Payload
-const WebPayloadSchema = z.object({
+export const WebPayloadSchema = z.object({
   type: z.literal("WEB_ACTION"),
   componentId: z.string(),
   action: z.string(),
-  parameters: z.record(z.unknown()).optional(), // Flexible props for UI
+  parameters: z.record(z.string(), z.any()).optional(), // Flexible props for UI
 });
 
 // Strategy B: Godot 4.3 Engine Telemetry Payload
@@ -52,9 +52,9 @@ const AxiomCommandSchema = z.object({
 // 3. THE QUANTUM BLOCK (Superposition Container)
 // ----------------------------------------------------------------------------
 export const QuantumBlockInputSchema = z.object({
-  BlockID: z.string().uuid({ message: "BlockID must be a valid UUID v4." }),
-  ContextVector: ContextVectorSchema,
-  RawPayload: z.discriminatedUnion("type", [
+  blockId: z.uuid({ message: "blockId must be a valid UUID v4." }),
+  contextVector: ContextVectorSchema,
+  rawPayload: z.discriminatedUnion("type", [
     WebPayloadSchema,
     EnginePayloadSchema,
     AxiomCommandSchema,

@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.LINT_ARTIFACT.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-SENT-003: The OGLN Linter (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
@@ -52,7 +65,7 @@ import argparse
 import logging
 import re
 import sys
-from pathlib import Path
+from pathlib import path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -145,7 +158,7 @@ def _check_indentation(lines: list[str]) -> tuple[list[str], list[str]]:
     return [], warnings
 
 
-def _check_hierarchy(lines: list[str], filepath: Path) -> tuple[list[str], list[str]]:
+def _check_hierarchy(lines: list[str], filepath: path) -> tuple[list[str], list[str]]:
     """3. HEADER HIERARCHY CHECK."""
     warnings = []
     h1_count = 0
@@ -191,7 +204,7 @@ def _check_prompt(content: str) -> tuple[list[str], list[str]]:
     return errors, []
 
 
-def lint_artifact(filepath: Path) -> bool:
+def lint_artifact(filepath: path) -> bool:
     """Lints a single artifact file."""
     logger.info(f"\n[LINT_ARTIFACT] Target: {filepath}")
 
@@ -245,7 +258,7 @@ def lint_artifact(filepath: Path) -> bool:
         return False
 
 
-def scan_targets(targets: list[Path]) -> bool:
+def scan_targets(targets: list[path]) -> bool:
     """Recursively scans and lints all target artifacts."""
     overall_success = True
     for target in targets:
@@ -259,7 +272,7 @@ def main() -> None:
         description="Phoenix Protocol: Artifact Linter (OGLN)"
     )
     parser.add_argument(
-        "--target", type=Path, required=True, help="File or directory to lint."
+        "--target", type=path, required=True, help="File or directory to lint."
     )
     args = parser.parse_args()
 

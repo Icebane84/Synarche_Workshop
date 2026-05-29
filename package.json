@@ -11,7 +11,13 @@
     "phoenix-rosetta-stone",
     "recovery"
   ],
+  "scripts": {
+    "dev": "nx run open-notebook:dev",
+    "build": "nx run open-notebook:build",
+    "phoenix": "nx run phoenix-rosetta-stone:dev"
+  },
   "devDependencies": {
+    "@biomejs/biome": "2.4.15",
     "jsonc-parser": "^3.3.1"
   }
 }

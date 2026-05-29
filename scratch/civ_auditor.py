@@ -5,7 +5,7 @@ import logging
 import sys
 import time
 import traceback
-from pathlib import Path
+from pathlib import path
 import yaml
 from jsonschema import validate
 SCHEMA_PATH = "uip_v15.schema.json"
@@ -32,14 +32,14 @@ def synarche_audit(func: callable) -> callable:
 class ConceptualIntegrityValidator:
     def __init__(self, artifact_path: str) -> None:
         self._setup_logger()
-        self.artifact_path = Path(artifact_path)
+        self.artifact_path = path(artifact_path)
         if not self.artifact_path.exists():
             raise FileNotFoundError(f"Artifact not found: {artifact_path}")
-        
+
         self.raw_content = self.artifact_path.read_text(encoding="utf-8")
         self.metadata = self.extract_frontmatter()
-        
-        schema_file = Path(SCHEMA_PATH)
+
+        schema_file = path(SCHEMA_PATH)
         if not schema_file.exists():
             raise FileNotFoundError(f"Schema definition missing: {SCHEMA_PATH}")
         self.schema = json.loads(schema_file.read_text(encoding="utf-8"))

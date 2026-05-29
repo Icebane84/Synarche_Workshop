@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: GVRN.BOOTSTRAP_AXION.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-26'
+  domain: GVRN
+  celestial_class: STAR
+  tier: GOVERNANCE
+  state: ACTIVE
+  ethos: SOVEREIGN_GOVERNANCE_COMPONENT
+  relations: []
+"""
+
 import os
 
 # =============================================================================

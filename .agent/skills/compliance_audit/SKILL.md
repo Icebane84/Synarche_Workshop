@@ -1,3 +1,8 @@
+---
+name: "Compliance Audit"
+description: "The Sentinel's Audit Engine for verifying compliance with OMEGA/v13.0 standards."
+---
+
 # .agent/skills/compliance_audit/SKILL.md
 
 > **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
@@ -20,10 +25,6 @@
 | **Evolution**       | `Omega Ascension`             | The Maturity.     |
 | **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
----
-
-name: compliance_audit description: The Sentinel's Audit Engine for v13.0 Compliance.
 
 ---
 

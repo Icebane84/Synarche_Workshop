@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.NLP_ENGINE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -271,6 +284,12 @@ class AxionCognition:
             score += 0.5
         if "catalyst" in normalized:
             score += 0.3
+        if "manifest" in normalized:
+            score += 0.2
+        if "solution" in normalized or "solve" in normalized:
+            score += 0.2
+        if len(normalized) < 15 or "?" in normalized:
+            score -= 0.2
         return round(max(0.1, score), 2)
 
 

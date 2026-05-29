@@ -1,10 +1,23 @@
+/*
+artifact_anchor:
+  id: GVRN.FORGE.UMB.TOOL.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-26'
+  domain: GVRN
+  celestial_class: STAR
+  tier: GOVERNANCE
+  state: ACTIVE
+  ethos: SOVEREIGN_GOVERNANCE_COMPONENT
+  relations: []
+*/
+
 /**
  * FORGE.UMB.Tool.js
  * =================
  * IDENTIFICATION: SYNG.FORGE.UMB.Tool
  * VERSION: v15.0 [OMEGA]
  * STATUS: KINETIC
- * TIMESTAMP: 2026-04-24
+ * TIMESTAMP: 2026-05-25
  *
  * Architecture: Superposition Ascension Pattern
  * ─────────────────────────────────────────────
@@ -22,8 +35,8 @@
 
 "use strict";
 
-const fs = require("fs");
-const path = require("path");
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
+import { join, resolve } from "node:path";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -216,8 +229,8 @@ class NovaGenesis {
   write(content) {
     const filename = `UMB-${this.id.replaceAll(".", "-")}_${VERSION}.md`;
     const toolsDir = __dirname;
-    const outputDir = path.resolve(toolsDir, "../docs/architecture");
-    const outPath = path.join(outputDir, filename);
+    const outputDir = resolve(toolsDir, "../docs/architecture");
+    const outPath = join(outputDir, filename);
 
     if (this.dryRun) {
       console.log(`\n[DRY-RUN] Would write: ${outPath}`);
@@ -226,13 +239,13 @@ class NovaGenesis {
       return outPath;
     }
 
-    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+    if (!existsSync(outputDir)) mkdirSync(outputDir, { recursive: true });
 
-    if (fs.existsSync(outPath) && !this.overwrite) {
+    if (existsSync(outPath) && !this.overwrite) {
       throw new Error(`File exists: ${outPath}\nPass --overwrite to replace.`);
     }
 
-    fs.writeFileSync(outPath, content, "utf-8");
+    writeFileSync(outPath, content, "utf-8");
     console.log(`[FORGE] Canonized: ${outPath}`);
     return outPath;
   }

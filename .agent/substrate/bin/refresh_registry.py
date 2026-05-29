@@ -32,37 +32,58 @@ def scan_skills() -> None:
     skills_root = os.path.join(BASE_DIR, "skills")
     print(f"[*] Scanning skills in {skills_root}...")
 
-    # Iterate through domain subdirectories (core, lang, etc.)
-    for domain in os.listdir(skills_root):
-        domain_path = os.path.join(skills_root, domain)
-        if not os.path.isdir(domain_path) or domain == OMNI_IGNORE:
+    # Iterate through subdirectories
+    for item in os.listdir(skills_root):
+        item_path = os.path.join(skills_root, item)
+        if not os.path.isdir(item_path) or item == OMNI_IGNORE:
             continue
 
-        skills_list: list[dict[str, Any]] = []
+        # Check if this item is a top-level skill itself
+        skill_file = os.path.join(item_path, "SKILL.md")
+        if not os.path.exists(skill_file):
+            skill_file = os.path.join(item_path, "skill.md")
 
-        for skill_dir in os.listdir(domain_path):
-            skill_path = os.path.join(domain_path, skill_dir)
-            if os.path.isdir(skill_path):
-                skill_file = os.path.join(skill_path, "SKILL.md")
-                has_doc = os.path.exists(skill_file)
-                skills_list.append(
-                    {
-                        "id": skill_dir,
-                        "path": normalize_path(skill_path),
-                        "documented": has_doc,
-                    }
-                )
+        if os.path.exists(skill_file):
+            # It's an individual top-level skill
+            registry = {
+                "skill": item,
+                "last_updated": datetime.now().isoformat(),
+                "path": normalize_path(item_path),
+                "documented": True
+            }
+            registry_file = os.path.join(item_path, "registry.yaml")
+            with open(registry_file, "w", encoding="utf-8") as f:
+                yaml.dump(registry, f, default_flow_style=False)
+            print(f"[+] Updated top-level skill registry: {registry_file}")
+        else:
+            # It's a domain directory containing nested skills
+            skills_list: list[dict[str, Any]] = []
 
-        registry = {
-            "domain": domain.upper(),
-            "last_updated": datetime.now().isoformat(),
-            "skills": skills_list,
-        }
+            for skill_dir in os.listdir(item_path):
+                skill_path = os.path.join(item_path, skill_dir)
+                if os.path.isdir(skill_path):
+                    skill_f = os.path.join(skill_path, "SKILL.md")
+                    if not os.path.exists(skill_f):
+                        skill_f = os.path.join(skill_path, "skill.md")
+                    has_doc = os.path.exists(skill_f)
+                    skills_list.append(
+                        {
+                            "id": skill_dir,
+                            "path": normalize_path(skill_path),
+                            "documented": has_doc,
+                        }
+                    )
 
-        registry_file = os.path.join(domain_path, "registry.yaml")
-        with open(registry_file, "w", encoding="utf-8") as f:
-            yaml.dump(registry, f, default_flow_style=False)
-        print(f"[+] Updated registry: {registry_file}")
+            registry = {
+                "domain": item.upper(),
+                "last_updated": datetime.now().isoformat(),
+                "skills": skills_list,
+            }
+
+            registry_file = os.path.join(item_path, "registry.yaml")
+            with open(registry_file, "w", encoding="utf-8") as f:
+                yaml.dump(registry, f, default_flow_style=False)
+            print(f"[+] Updated domain registry: {registry_file}")
 
 
 def scan_workflows() -> None:

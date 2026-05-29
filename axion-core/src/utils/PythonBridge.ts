@@ -1,10 +1,23 @@
+/*
+artifact_anchor:
+  id: CORE.PYTHONBRIDGE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * artifact_anchor:
  * - id:
  * - type:
  */
-import { spawn } from "child_process";
-import path from "path";
+import { spawn } from "node:child_process";
+import path from "node:path";
 import { PhoenixLogger } from "../system/logging";
 
 export class PythonBridge {
@@ -20,7 +33,8 @@ export class PythonBridge {
 
             // 1. Point directly to your master environment's executable
             // Allow an environment variable override for deployment flexibility
-            const pythonExecutable = process.env.PYTHON_PATH || "C:\\DevEnvironments\\master_env\\Scripts\\python.exe";
+            const pythonExecutable =
+                process.env.PYTHON_PATH || String.raw`C:\DevEnvironments\master_env\Scripts\python.exe`;
 
             const pyProcess = spawn(pythonExecutable, [scriptPath]);
             let outputData = "";

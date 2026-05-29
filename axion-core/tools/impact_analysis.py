@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.IMPACT_ANALYSIS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-SENT-007: The Architect's Gaze (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
@@ -58,7 +71,7 @@ import argparse
 import json
 import re
 import sys
-from pathlib import Path
+from pathlib import path
 from typing import Dict, List, Optional, TypedDict
 
 # --- Configuration ---
@@ -108,7 +121,7 @@ class ImpactAnalyzer:
         self.graph_edges: List[Edge] = []
         self.adjacency: Dict[str, List[Dict]] = {}  # id -> [{target, relation}, ...]
 
-    def load_loom(self, json_path: Path) -> None:
+    def load_loom(self, json_path: path) -> None:
         """Loads the Cognitive Loom (Knowledge Graph)."""
         if not json_path.exists():
             print(
@@ -134,7 +147,7 @@ class ImpactAnalyzer:
             sys.exit(1)
 
     def _parse_dependencies(
-        self, file_path: Path, source_id: str, import_regex: re.Pattern
+        self, file_path: path, source_id: str, import_regex: re.Pattern
     ) -> int:
         edge_count = 0
         try:
@@ -145,7 +158,7 @@ class ImpactAnalyzer:
                 import_path = match[0] or match[1]
 
                 if import_path.startswith("."):
-                    target_name = Path(import_path).name
+                    target_name = path(import_path).name
                     for ext in ["", ".ts", ".tsx", ".js", ".py"]:
                         if f"{target_name}{ext}" in self.graph_nodes:
                             self.add_edge(source_id, f"{target_name}{ext}", "IMPORTS")
@@ -178,7 +191,7 @@ class ImpactAnalyzer:
         )
 
         for root_str in root_paths:
-            root = Path(root_str)
+            root = path(root_str)
             if not root.exists():
                 print(f"{Colors.WARNING}⚠ Code root not found: {root}{Colors.ENDC}")
                 continue
@@ -308,7 +321,7 @@ def main() -> None:
     args = parser.parse_args()
 
     analyzer = ImpactAnalyzer()
-    analyzer.load_loom(Path(GRAPH_PATH))
+    analyzer.load_loom(path(GRAPH_PATH))
     analyzer.scan_codebase(CODE_ROOTS)
 
     report = analyzer.simulate_impact(args.target, args.depth)

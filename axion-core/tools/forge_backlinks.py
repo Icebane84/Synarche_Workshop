@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.FORGE_BACKLINKS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-HPRI-001: The Backlink Weaver (High Harmony).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
@@ -51,21 +64,21 @@ UMB-OSLM-001, INDEXES, The registry provides the map for this tool.
 import argparse
 import logging
 import re
-from pathlib import Path
+from pathlib import path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
 
-def load_artifact_map(registry_path: Path) -> dict[str, str]:
-    """Parses the UMB-OSLM-001 table to build the ID->RelPath map."""
+def load_artifact_map(registry_path: path) -> dict[str, str]:
+    """Parses the UMB-OSLM-001 table to build the ID->Relpath map."""
     artifact_map = {}
     try:
         content = registry_path.read_text(encoding="utf-8")
 
-        # Regex to capture table rows: | `ID` | [Title](RelPath) | ...
-        # Match: | `(ID)` | [(Title)]((RelPath)) |
+        # Regex to capture table rows: | `ID` | [Title](Relpath) | ...
+        # Match: | `(ID)` | [(Title)]((Relpath)) |
         matches = re.findall(r"\| `([^`]+)` \| \[.*?\]\(([^)]+)\)", content)
 
         for mid, rel_path in matches:
@@ -83,16 +96,16 @@ def load_artifact_map(registry_path: Path) -> dict[str, str]:
         return {}
 
 
-def get_relative_link(current_file_path: Path, target_abs_path: str) -> str:
+def get_relative_link(current_file_path: path, target_abs_path: str) -> str:
     """Calculates relative link from current_file to target_abs."""
     try:
         rel_path = os.path.relpath(target_abs_path, current_file_path.parent)
-        return Path(rel_path).as_posix()
+        return path(rel_path).as_posix()
     except (ValueError, OSError):
         return ""
 
 
-def forge_links(content: str, file_path: Path, artifact_map: dict[str, str]) -> str:
+def forge_links(content: str, file_path: path, artifact_map: dict[str, str]) -> str:
     new_content = content
 
     for artifact_id, target_abs in artifact_map.items():
@@ -139,7 +152,7 @@ def forge_links(content: str, file_path: Path, artifact_map: dict[str, str]) -> 
 
 
 def scan_directory(
-    root_dir: Path, artifact_map: dict[str, str], registry_filename: str
+    root_dir: path, artifact_map: dict[str, str], registry_filename: str
 ) -> None:
     logger.info(f"Forging links in: {root_dir}")
 
@@ -169,12 +182,12 @@ def scan_directory(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Forge Artifact Links")
-    parser.add_argument("target_dir", type=Path, help="Directory to scan")
+    parser.add_argument("target_dir", type=path, help="Directory to scan")
     parser.add_argument(
         "--registry",
-        type=Path,
+        type=path,
         required=True,
-        help="Path to UMB-OSLM-001 Registry file",
+        help="path to UMB-OSLM-001 Registry file",
     )
     args = parser.parse_args()
 

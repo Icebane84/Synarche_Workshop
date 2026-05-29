@@ -1,12 +1,25 @@
+/*
+artifact_anchor:
+  id: CORE.PHOENIXSUPERPOSITIONENGINE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * artifact_anchor:
  * - id: CORE.nexus.pse
  * - type: Quantum Block
  */
 
-import { PhoenixLogger } from "../system/logging";
-import { ZodObject, z } from "zod";
-import { LoomError } from "../utils/LoomError";
+import { PhoenixLogger } from "@system/logging";
+import { LoomError } from "@utils/LoomError";
+import { z } from "zod";
 
 /**
  * Represents the unpredictable, incoming raw data state in Superposition.
@@ -40,7 +53,7 @@ export interface CollapsedBlock<T> {
  */
 export interface CASTS_Strategy<T> {
     strategyName: string;
-    schema: ZodObject<any>;
+    schema: z.ZodType<T>;
     transmute: (parsedData: any) => T;
     packToBinary?: (data: T) => Buffer; // Support for high-frequency game engines
 }
@@ -83,7 +96,7 @@ export class PhoenixSuperpositionEngine {
      * Ingests a raw payload, validates it via the NIM Gate, transmutes it via CASTS,
      * and collapses it into a deterministic JSON or Binary state.
      */
-    public static async process<T>(payload: SuperpositionPayload): Promise<CollapsedBlock<T>> {
+    public static async process<T>(payload: SuperpositionPayload): Promise<CollapsedBlock<T | Buffer>> {
         const startTime = Date.now();
 
         try {
@@ -92,7 +105,7 @@ export class PhoenixSuperpositionEngine {
                 throw new LoomError(
                     "Superposition collapse blocked. JWT signature verification failed.",
                     "UNAUTHORIZED_ACCESS",
-                    403
+                    403,
                 );
             }
 
@@ -119,7 +132,7 @@ export class PhoenixSuperpositionEngine {
                 throw new LoomError(
                     `FSM failed to resolve a suitable strategy for vector: [${payload.contextVector.join(", ")}]`,
                     "STRATEGY_RESOLUTION_FAILED",
-                    500
+                    500,
                 );
             }
 
@@ -130,7 +143,8 @@ export class PhoenixSuperpositionEngine {
             let transmutedData = strategy.transmute(validatedData);
 
             // 6. Polyglot Output Packaging (Conditional Byte Packing)
-            const isGameClient = payload.contextVector.includes("CLIENT_GAME") || payload.contextVector.includes("GAME");
+            const isGameClient =
+                payload.contextVector.includes("CLIENT_GAME") || payload.contextVector.includes("GAME");
             if (isGameClient && strategy.packToBinary) {
                 transmutedData = strategy.packToBinary(transmutedData) as any;
             }
@@ -149,7 +163,7 @@ export class PhoenixSuperpositionEngine {
             const loomError = LoomError.from(error);
             PhoenixLogger.error(
                 `[PSE] Superposition Collapse FAILED for BlockID: ${payload.blockId}.`,
-                loomError.message
+                loomError.message,
             );
             throw loomError;
         }
@@ -185,7 +199,7 @@ export class PhoenixSuperpositionEngine {
     /**
      * The NIM Gatekeeper: Validates raw data against the CASTS Zod schema.
      */
-    private static async applyNIMGate(rawPayload: unknown, schema: ZodObject<any>): Promise<any> {
+    private static async applyNIMGate<T>(rawPayload: unknown, schema: z.ZodType<T>): Promise<T> {
         try {
             return await schema.parseAsync(rawPayload);
         } catch (error) {
@@ -195,7 +209,7 @@ export class PhoenixSuperpositionEngine {
                     "NIM_VALIDATION_FAILED",
                     400,
                     true,
-                    error.format()
+                    error.format(),
                 );
             }
             throw error;
@@ -209,8 +223,8 @@ export class PhoenixSuperpositionEngine {
         payload: SuperpositionPayload,
         data: any,
         strategyName: string,
-        latencyMs: number
-    ): CollapsedBlock<T> {
+        latencyMs: number,
+    ): CollapsedBlock<T | Buffer> {
         return {
             blockId: payload.blockId,
             contextVector: payload.contextVector,

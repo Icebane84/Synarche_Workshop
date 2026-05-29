@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.RPG_DEFINITIONS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * GVRN-SYS-RPG-002: RPG Definitions & Schema [GEODE EDITION]
  * Defines the core data structures for the Gamification Layer.

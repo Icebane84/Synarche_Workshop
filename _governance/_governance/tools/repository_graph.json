@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-26T18:29:25.735755",
+    "total_nodes": 0,
+    "total_edges": 0,
+    "referential_integrity_issues": 0,
+    "circular_loops": 0
+  },
+  "nodes": [],
+  "edges": [],
+  "lexicon": {
+    "LEX-EXEC-001": {
+      "term": "The Forge",
+      "canonical_equivalent": [
+        "CI_PIPELINE",
+        "BUILD_SYSTEM"
+      ],
+      "classification": {
+        "domain": "INFRA",
+        "ontology_class": "ORCHESTRATION_ENGINE",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "COMPUTE",
+        "INFRA",
+        "GVRN"
+      ],
+      "forbidden_contexts": [
+        "PERSISTENCE",
+        "DATA"
+      ],
+      "ethos": "Automated artifact generation, validation, and signature compiling pipelines.",
+      "aliases": [
+        "forge",
+        "build_forge"
+      ]
+    },
+    "LEX-GVRN-001": {
+      "term": "Sentinel Gate",
+      "canonical_equivalent": [
+        "CI_VALIDATION_GATE",
+        "STATIC_ANALYSIS_HOOK"
+      ],
+      "classification": {
+        "domain": "GVRN",
+        "ontology_class": "COMPLIANCE_GATEWAY",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "GVRN",
+        "TEST"
+      ],
+      "forbidden_contexts": [
+        "PRESENTATION"
+      ],
+      "ethos": "Deterministic block gates that reject non-compliant structural or semantic commits.",
+      "aliases": [
+        "sentinel",
+        "gatekeeper"
+      ]
+    },
+    "LEX-CORE-001": {
+      "term": "Dissonance Quest",
+      "canonical_equivalent": [
+        "REFACTOR_TICKET",
+        "BUG_DEBUG_SESSION"
+      ],
+      "classification": {
+        "domain": "CORE",
+        "ontology_class": "STATE_CORRECTION",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "CORE",
+        "TEST",
+        "GVRN"
+      ],
+      "forbidden_contexts": [],
+      "ethos": "An active debugging, testing, or refactoring campaign targeted at reducing repository entropy.",
+      "aliases": [
+        "quest",
+        "dissonance_resolution"
+      ]
+    },
+    "LEX-COGN-001": {
+      "term": "Cognitive Circuit Breaker",
+      "canonical_equivalent": [
+        "RUNTIME_INTERRUPT",
+        "ERROR_HALT"
+      ],
+      "classification": {
+        "domain": "CORE",
+        "ontology_class": "FAULT_TOLERANCE_ENGINE",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "CORE",
+        "COMPUTE",
+        "INFRA"
+      ],
+      "forbidden_contexts": [
+        "PRESENTATION"
+      ],
+      "ethos": "Safeguard interrupt systems that halt executions if logical drifts or runtime exceptions leak.",
+      "aliases": [
+        "circuit_breaker",
+        "fail_halt"
+      ]
+    },
+    "LEX-NET-001": {
+      "term": "Synapse",
+      "canonical_equivalent": [
+        "MESSAGE_BUS",
+        "EVENT_BROKER"
+      ],
+      "classification": {
+        "domain": "FABRIC",
+        "ontology_class": "COMMUNICATION_PROTOCOL",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "FABRIC",
+        "INFRA",
+        "CORE"
+      ],
+      "forbidden_contexts": [
+        "GOVERNANCE"
+      ],
+      "ethos": "Decoupled asynchronous message or event propagation boundaries.",
+      "aliases": [
+        "synapse",
+        "event_bus"
+      ]
+    },
+    "LEX-COMP-001": {
+      "term": "Sophia",
+      "canonical_equivalent": [
+        "ORCHESTRATION_INTELLIGENCE",
+        "COMPILER_FLOW"
+      ],
+      "classification": {
+        "domain": "COMPUTE",
+        "ontology_class": "COGNITIVE_COMPILER",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "COMPUTE",
+        "INFRA",
+        "GVRN"
+      ],
+      "forbidden_contexts": [
+        "DATA"
+      ],
+      "ethos": "Compilation pipelines integrating program analytics and static repository reasoning.",
+      "aliases": [
+        "sophia",
+        "wisdom_engine"
+      ]
+    },
+    "LEX-METR-001": {
+      "term": "Coherence",
+      "canonical_equivalent": [
+        "STRUCTURAL_ALIGNMENT_METRIC",
+        "SELF_CONSISTENCY"
+      ],
+      "classification": {
+        "domain": "GVRN",
+        "ontology_class": "METRIC",
+        "abstraction_level": "METRIC"
+      },
+      "allowed_contexts": [
+        "GVRN",
+        "TEST",
+        "CORE"
+      ],
+      "forbidden_contexts": [],
+      "ethos": "Mathematical index scoring structural alignment and semantic parity across documentation and code.",
+      "aliases": [
+        "coherence",
+        "coherence_score"
+      ]
+    }
+  },
+  "diagnostics": {
+    "errors": [],
+    "warnings": []
+  }
+}

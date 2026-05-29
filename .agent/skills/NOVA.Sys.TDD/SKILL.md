@@ -1,15 +1,6 @@
 ---
-id: NOVA.Sys.TDD.Skill
 name: TDD Workflow (UMB)
-type: SKILL
-tags: ['#NOVA/Sys/TDD', '#UMB', '#METHODOLOGY']
-links: ['[[GVRN.Codex.Phoenix]]', '[[NOVA.Sys.TDD.Index]]', '[[NOVA.Sys.TDD.AOP]]']
-relations:
-    - type: GOVERNED_BY
-      target: '[[GVRN.Codex.Phoenix]]'
-    - type: DESCRIBED_BY
-      target: '[[NOVA.Sys.TDD.Index]]'
-description: 'Sovereign Test-Driven Development principles, the Three Laws, and the RED-GREEN-REFACTOR cycle.'
+description: Sovereign Test-Driven Development principles, the Three Laws, and the RED-GREEN-REFACTOR cycle.
 ---
 
 # TDD WORKFLOW | UMB-NOVA.Sys.TDD

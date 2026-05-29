@@ -1,0 +1,18 @@
+{
+  "default": true,
+  "MD001": true,
+  "MD003": { "style": "atx" },
+  "MD022": { "lines_above": 1, "lines_below": 1 },
+  "MD025": { "level": 1 },
+  "MD041": { "level": 1 },
+  "MD043": {
+    "headings": [
+      "# *",
+      "## Phoenix Operational Directive: *",
+      "## UMB: *",
+      "## AOP: *",
+      "## GUCA: *",
+      "## Honest Thoughts"
+    ]
+  }
+}

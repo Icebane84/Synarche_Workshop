@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.TRANSMUTATION_PIPELINE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-KNIG-004: The Transmutation Pipeline (Knight of Swords).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
@@ -58,24 +71,24 @@ import argparse
 import logging
 import subprocess
 import sys
-from pathlib import Path
+from pathlib import path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger("TransmutationPipeline")
 
 # --- CONFIGURATION ---
-TARGET_DIR = Path(__file__).resolve().parent
+TARGET_DIR = path(__file__).resolve().parent
 SCRIPTS_DIR = TARGET_DIR
 
-# Tool Paths (Relative to tools/ directory)
+# Tool paths (Relative to tools/ directory)
 APPLY_STANDARD_SCRIPT = "apply_standard.py"
 VERIFY_AST_SCRIPT = "verify_ast.py"
 LINT_ARTIFACT_SCRIPT = "lint_artifact.py"
 KNIGHT_FIXER_SCRIPT = "knight_fixer.py"
 
 
-def run_agent(name: str, command: list[str], target_file: Path) -> tuple[bool, str]:
+def run_agent(name: str, command: list[str], target_file: path) -> tuple[bool, str]:
     logger.info(f"  > [{name}] Activating...")
     cmd = [sys.executable, str(TARGET_DIR / command[0]), *command[1:], str(target_file)]
 
@@ -107,7 +120,7 @@ def run_agent(name: str, command: list[str], target_file: Path) -> tuple[bool, s
         return False, f"[ERROR]: {e}"
 
 
-def transmutation_cycle(scope_dir: Path) -> None:
+def transmutation_cycle(scope_dir: path) -> None:
     logger.info(
         f"\n✨ [THE LIGHTBINDER] Initiating Transmutation Cycle in: {scope_dir}"
     )
@@ -184,7 +197,7 @@ def main() -> None:
     """CLI Entrypoint."""
     parser = argparse.ArgumentParser(description="Transmutation Pipeline CLI.")
     parser.add_argument(
-        "--scope", type=Path, default=TARGET_DIR, help="Directory to process."
+        "--scope", type=path, default=TARGET_DIR, help="Directory to process."
     )
     args = parser.parse_args()
 

@@ -18,7 +18,7 @@ import subprocess
 import sys
 
 
-def test_weaver(target: str) -> None:
+def run_test_weaver(target: str) -> None:
     """Run pytest on the target directory and report results."""
     print(f"\n>>> TEST WEAVER: Running pytest on {target}\n")
 
@@ -70,7 +70,7 @@ def main() -> None:
         "target", nargs="?", default=".", help="Directory to test (default: cwd)."
     )
     args = parser.parse_args()
-    test_weaver(os.path.abspath(args.target))
+    run_test_weaver(os.path.abspath(args.target))
 
 
 if __name__ == "__main__":

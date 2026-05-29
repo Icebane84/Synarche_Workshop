@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.PHX_LOGGING_COMMANDS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * GUCA-PHX-LOG-001: Phoenix Logging Protocol Commands
  * Defines the command interface for managing and enforcing UMB-PHX-LOG-001.

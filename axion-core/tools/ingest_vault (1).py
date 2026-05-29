@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.INGEST_VAULT_1.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-MAGI-001: The Vault Ingestion Engine (The Magician's Hand).
 
 ## I. Universal Identification & Provenance (The Vector Signature)

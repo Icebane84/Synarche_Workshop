@@ -86,11 +86,11 @@ if __name__ == "__main__":
     if cmd == "fetch":
         print(json.dumps(fetch_batch()))
     elif cmd == "diff":
-        with open(sys.argv[2], "r") as f1, open(sys.argv[3], "r") as f2:
+        with open(sys.argv[2], "r", encoding="utf-8") as f1, open(sys.argv[3], "r", encoding="utf-8") as f2:
             print(generate_diff(f1.read(), f2.read()))
     elif cmd == "commit":
         # commit <id> <title> <content_file> <meta_json>
-        with open(sys.argv[4], "r") as f:
+        with open(sys.argv[4], "r", encoding="utf-8") as f:
             content = f.read()
         print(
             json.dumps(

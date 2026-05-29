@@ -1,5 +1,5 @@
 category: VALIDATION
-last_updated: '2026-05-19T15:21:38.922131'
+last_updated: '2026-05-23T23:29:46.144335'
 workflows:
 - id: canonize
   path: /.agent/workflows/validation/canonize.md

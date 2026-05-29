@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.DRIVE_SYNARCHY.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 #!/usr/bin/env python3
 """# TOOL-SYN-001: Synarche Driver
 # Purpose: Orchestrates the Loom, Weaver, and Resonance Scanner to generate a Synergy Report.

@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.COMMAND_INTERFACE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * GUCA-VEC-003: VEC Command & Control Interface
  * Defines the syntax for dispatching Sovereign-level tasks.

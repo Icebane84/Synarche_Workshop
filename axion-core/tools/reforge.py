@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.REFORGE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 """# TOOL-KNIG-001: The Reforger CLI (The Knight's Blade).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
@@ -53,7 +66,7 @@ import datetime
 import logging
 import os
 import re
-from pathlib import Path
+from pathlib import path
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
@@ -65,7 +78,7 @@ HEADER_SCAN_LIMIT = 60
 CELESTIAL_CLASS = "Celestial Class"
 
 # Robust path resolution independent of execution directory
-SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPT_DIR = path(__file__).parent.resolve()
 PROJECT_ROOT = SCRIPT_DIR.parent
 WORKSPACE_ROOT = PROJECT_ROOT.parent
 

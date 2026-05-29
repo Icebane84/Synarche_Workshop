@@ -1,11 +1,24 @@
+/*
+artifact_anchor:
+  id: CORE.VALIDATION.MIDDLEWARE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * artifact_anchor:
  * - id: UMB-QB-VAL-MW-001
  * - type: MIDDLEWARE
  */
+import { LoomError } from "@utils/LoomError";
 import { NextFunction, Request, Response } from "express";
 import { ZodError, ZodObject } from "zod";
-import { LoomError } from "../utils/LoomError";
 
 /**
  * The NIM Gatekeeper: Validates incoming payloads against a Zod schema.

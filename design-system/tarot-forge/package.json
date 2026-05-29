@@ -1,0 +1,26 @@
+{
+  "name": "@synarche/design-system",
+  "version": "0.1.0-alpha",
+  "description": "The Tarot Forge Design System - A High-Performance Component Library for the Synarche Digital Society.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "biome check",
+    "lint:fix": "biome check --fix"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.15",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsup": "^8.3.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "workspaces": [
+    "libs/*"
+  ]
+}

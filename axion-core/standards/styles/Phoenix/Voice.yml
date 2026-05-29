@@ -6,5 +6,6 @@ swap:
     collaboration: Synarche
     blueprint: UMB
     process: AOP
-    log: SELT
+    logs: SELT
     I think: Phoenix analysis suggests
+    I believe: Phoenix analysis suggests

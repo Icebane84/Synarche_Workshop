@@ -1,3 +1,4 @@
-domain: HELLO_WORLD
-last_updated: '2026-05-19T15:21:38.896826'
-skills: []
+documented: true
+last_updated: '2026-05-23T23:29:46.128283'
+path: /.agent/skills/hello_world
+skill: hello_world

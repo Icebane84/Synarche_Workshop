@@ -4,7 +4,9 @@
 
 ---
 
-## Universal Identification & Provenance (UIP)
+I. ## Universal Identification & Provenance (UIP)
+
+---
 
 | Key           | Value            |
 | :------------ | :--------------- |
@@ -15,15 +17,17 @@
 
 ---
 
-## [ARTIFACT_NAME] [ARTIFACT_ID]
+II. ## [ARTIFACT_NAME] [ARTIFACT_ID]
 
-> **Symbol**: [SYMBOL]  
-> **Type**: [TYPE]  
-> **Domain**: [DOMAIN]  
-> **Scope**: [SCOPE]  
-> **Evolution**: [EVOLUTION]  
-> **Status**: [STATUS]  
-> **Authority**: [AUTHORITY]  
+---
+
+> **Symbol**: [SYMBOL]
+> **Type**: [TYPE]
+> **Domain**: [DOMAIN]
+> **Scope**: [SCOPE]
+> **Evolution**: [EVOLUTION]
+> **Status**: [STATUS]
+> **Authority**: [AUTHORITY]
 > **Tags**: [TAGS]
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

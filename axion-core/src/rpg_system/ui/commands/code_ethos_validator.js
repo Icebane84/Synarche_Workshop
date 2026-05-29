@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.CODE_ETHOS_VALIDATOR.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * GUCA-ETHOS-001: Code Ethos Validator
  * Enforces the "Law of Logic" for code integrity and governance.

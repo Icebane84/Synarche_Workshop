@@ -1,9 +1,4 @@
-domain: SOUL-FORGING
-last_updated: '2026-05-19T15:21:38.911296'
-skills:
-- documented: false
-  id: assets
-  path: /.agent/skills/soul-forging/assets
-- documented: false
-  id: scripts
-  path: /.agent/skills/soul-forging/scripts
+documented: true
+last_updated: '2026-05-23T23:29:46.137334'
+path: /.agent/skills/soul-forging
+skill: soul-forging

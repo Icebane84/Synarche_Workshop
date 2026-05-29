@@ -1,5 +1,18 @@
-import { MetadataSchema } from "../utils/validation";
+/*
+artifact_anchor:
+  id: CORE.SCHEMAS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 import * as standards from "../../../_governance/13_Standardization/GVRN.Standards.json";
+import type { MetadataSchema } from "../utils/validation";
 
 /**
  * Sovereign ID Regex: Supports legacy IDs (PRS-001) and OMEGA v15.0 standards (DOMAIN.TYPE.CLASS.SUBSYSTEM.DESCRIPTOR)

@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.CLI.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -45,11 +58,11 @@ import cmd
 import os
 import subprocess  # nosec
 import sys
-from pathlib import Path
-from typing import Any, List, Optional, dict
+from pathlib import path
+from typing import Any, List, Optional, Dict
 
 # Ensure we can import from the same directory safely
-current_dir = Path(__file__).resolve().parent
+current_dir = path(__file__).resolve().parent
 if str(current_dir) not in sys.path:
     sys.path.append(str(current_dir))
 
@@ -110,7 +123,7 @@ class SynarcheCLI(cmd.Cmd):
             print("Usage: search <keyword>")
             return
 
-        results: List[dict[str, Any]] = self.registry.search_commands(arg)
+        results: List[Dict[str, Any]] = self.registry.search_commands(arg)
         print(f"\nFound {len(results)} matches for '{arg}':")
         for res in results:
             print(f" - {res['name']}")
@@ -130,7 +143,7 @@ class SynarcheCLI(cmd.Cmd):
             print("Usage: get <command_name>")
             return
 
-        cmd_spec: Optional[dict[str, Any]] = self.registry.get_command_spec(arg)
+        cmd_spec: Optional[Dict[str, Any]] = self.registry.get_command_spec(arg)
         if cmd_spec:
             print(f"\nName: {cmd_spec['name']}")
             print(f"Syntax: {cmd_spec['syntax']}")

@@ -1,3 +1,16 @@
+---
+artifact_anchor:
+  id: CORE.RPG.ASCENSION.UMB.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: GOVERNANCE
+  state: ACTIVE
+  ethos: SOVEREIGN_GOVERNANCE_COMPONENT
+  relations: []
+---
+
 # UMB-RPG-ASC-001: The Phoenix Ascension Blueprint
 
 ## **Block A: The Identification Lock (UIP-V15)**

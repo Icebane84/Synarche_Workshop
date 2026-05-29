@@ -1,3 +1,8 @@
+---
+name: "Reforge"
+description: "The Crystalline Reforger for standardizing workspace artifacts to OMEGA compliance."
+---
+
 # SKILL.md
 
 > **Domain**: GVRN
@@ -22,11 +27,6 @@
 | **Evolution**       | `Omega Ascension`             | The Maturity.     |
 | **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
----
-
-name: reforge
-description: The Crystalline Reforger for v13.0 Standardization.
 
 ---
 

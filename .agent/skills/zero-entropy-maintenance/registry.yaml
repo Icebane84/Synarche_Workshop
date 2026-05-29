@@ -1,6 +1,4 @@
-domain: ZERO-ENTROPY-MAINTENANCE
-last_updated: '2026-05-19T15:21:38.915649'
-skills:
-- documented: false
-  id: scripts
-  path: /.agent/skills/zero-entropy-maintenance/scripts
+documented: true
+last_updated: '2026-05-23T23:29:46.139336'
+path: /.agent/skills/zero-entropy-maintenance
+skill: zero-entropy-maintenance

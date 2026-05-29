@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.REFORGER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """# CODE-REF-004: The Omega Reforger (Reforger Module).
 
 # I. Universal Identification & Provenance (The Vector Signature)

@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.CHART_LOGIC.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
  * UI Controller for Celestial Chart [GEODE EDITION]
  * Bridges the HTML view with the RPGEngine.

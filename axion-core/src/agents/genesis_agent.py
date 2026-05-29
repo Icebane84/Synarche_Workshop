@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.GENESIS_AGENT.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """ID: AGENT-GENESIS-001
 Date: 2026-01-26
 Version: v1.0 (The Genesis Scaffolding)

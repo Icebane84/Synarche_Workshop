@@ -1,0 +1,20 @@
+name: Trunk Sovereign Governance
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    trunk_check:
+        name: Trunk Linter & Formatter
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0 # REQUIRED: Gives Trunk the git history needed to compute diffs
+
+            - name: Execute Trunk Check
+              uses: trunk-io/trunk-action@v1
+              with:
+                  github-token: ${{ secrets.GITHUB_TOKEN }} # Enables inline PR annotations

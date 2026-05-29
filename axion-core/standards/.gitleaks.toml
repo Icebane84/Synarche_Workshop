@@ -1,0 +1,15 @@
+# Phoenix-Class Security Rules
+[allowlist]
+description = "Allowlist for Phoenix Artifact IDs and non-sensitive hashes"
+regexes = [
+  'PRS-[0-9]{3}', # Phoenix Rosetta Stone IDs
+  'AOP-[A-Z]{4}-[0-9]{3}' # Playbook IDs
+]
+
+# Standard Secret Detection is enabled by default
+# Custom Phoenix Secret Rule (Example)
+[[rules]]
+description = "Phoenix Master Key Pattern"
+id = "phoenix-master-key"
+regex = '''(?i)PHOENIX_[A-Z0-9]{32}'''
+severity = "critical"

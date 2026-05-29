@@ -1,4 +1,6 @@
-## **Block A: The Identification Lock (UIP-V15)**
+# **Block A: The Identification Lock (UIP-V15)**
+
+---
 
 | Key               | Value                       | Description       |
 | :---------------- | :-------------------------- | :---------------- |
@@ -11,11 +13,13 @@
 
 ---
 
-# Hephaestus Cycle Shard (.agent/skills/core/hephaestus-cycle)
+# Hephaestus Cycle Shard (.agent/skills/CORE/hephaestus-cycle)
 
 Implementation and enforcement of the Dissonance → Synthesis → Transcendence cycle.
 
 ## 🛠️ Performance Metrics
+
+---
 
 - **Skill Shard**: [SKILL.md](SKILL.md)
 - **Primary Focus**: Execution Lifecycle & Cognitive Integrity

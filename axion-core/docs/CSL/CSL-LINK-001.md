@@ -18,9 +18,13 @@
 
 ---
 
-###### **[ARTIFACT START]**
+### **[ARTIFACT START]**
+
+---
 
 ### **Block A: The Identification Lock (UIP-V13)**
+
+---
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
@@ -37,6 +41,8 @@
 
 ## I. Universal Identification & Provenance
 
+---
+
 | Attribute          | Value                             |
 | :----------------- | :-------------------------------- |
 | **Artifact ID**    | `CSL-LINK-001`                    |
@@ -51,11 +57,13 @@
 
 ---
 
-## II. The Core Synergistic Cycle
+## II. The CORE Synergistic Cycle
 
-Relationship between core functions is a regenerative loop: `LINK: UMB-PRS-001`
+---
 
-| Core Function              | Synergistic Role    | Governing Protocol |
+Relationship between CORE functions is a regenerative loop: `LINK: UMB-PRS-001`
+
+| CORE Function              | Synergistic Role    | Governing Protocol |
 | :------------------------- | :------------------ | :----------------- |
 | **Data Ingestion**         | The Catalyst        | `AOP-RLM-001`      |
 | **Strategic Connectivity** | The Structure       | `UMB-OSLM-001`     |
@@ -65,11 +73,15 @@ Relationship between core functions is a regenerative loop: `LINK: UMB-PRS-001`
 
 ## III. Synergistic Analysis
 
-1.  **Ingestion -> Connectivity:** Raw data becomes machine-actionable via `AOP-RLM-001`.
-2.  **Retention -> Learning:** Discrepancies trigger `GUCA-VOSLM-001` for dissonance resolution.
-3.  **Learning -> Anticipation:** Actuator (`UMB-ACT-002`) discovers capabilities, expanding the system invisible.
+---
+
+1. **Ingestion -> Connectivity:** Raw data becomes machine-actionable via `AOP-RLM-001`.
+2. **Retention -> Learning:** Discrepancies trigger `GUCA-VOSLM-001` for dissonance resolution.
+3. **Learning -> Anticipation:** Actuator (`UMB-ACT-002`) discovers capabilities, expanding the system invisible.
 
 ## IV. Strategic Advantage
+
+---
 
 - **Integrated Coherence:** OSLM vs. AST cross-validation.
 - **Self-Driven Evolution:** Memory failure triggers learning.
@@ -77,6 +89,8 @@ Relationship between core functions is a regenerative loop: `LINK: UMB-PRS-001`
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+---
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.

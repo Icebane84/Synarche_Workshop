@@ -1,3 +1,16 @@
+/*
+artifact_anchor:
+  id: CORE.COHERENTSYNTHESISENGINE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 // src/cse/CoherentSynthesisEngine.ts
 /**
  * artifact_anchor:
@@ -5,8 +18,8 @@
  * - type: ENGINE
  */
 import { CollapsedBlock } from "@nexus/PhoenixSuperpositionEngine";
-import { PhoenixLogger } from "../system/logging";
-import { PythonBridge } from "../utils/PythonBridge";
+import { PhoenixLogger } from "@system/logging";
+import { PythonBridge } from "@utils/PythonBridge";
 
 export class CoherentSynthesisEngine {
     /**
@@ -24,7 +37,7 @@ export class CoherentSynthesisEngine {
 
         try {
             // Pipe the entire deterministic block to Python via Polyglot Weaving (PythonBridge)
-            result = await PythonBridge.execute<R>("cse.py", block);
+            result = await PythonBridge.execute<R>("cse/coherent_synthesis_engine.py", block.data);
             PhoenixLogger.info(`[CSE] Polyglot Synthesis complete for BlockID: ${block.blockId}`);
         } catch (error) {
             PhoenixLogger.error(`[CSE] Synthesis Failed for BlockID: ${block.blockId}. Error:`, error);

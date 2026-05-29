@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: CORE.SCHEMAS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 """### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
@@ -18,7 +31,7 @@
 
 from typing import Any, Dict, List
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class RPGEngine(BaseModel):
@@ -27,6 +40,13 @@ class RPGEngine(BaseModel):
     """
 
     level: int = 1
+
+    @field_validator("level")
+    @classmethod
+    def validate_level(cls, v: int) -> int:
+        if v < 1:
+            raise ValueError("Level must be >= 1")
+        return v
     xp: int = 0
     authority: int = 0
     insight: int = 0
@@ -80,7 +100,17 @@ class AxionState(BaseModel):
     rpg_stats: RPGEngine = Field(default_factory=RPGEngine)
     gamemaster_state: GamemasterState = Field(default_factory=GamemasterState)
     lightbinder_state: LightbinderState = Field(default_factory=LightbinderState)
+    soul_impact: Dict[str, Any] = Field(default_factory=dict)
 
     # Metadata
     messages: List[Any] = Field(default_factory=list)
     transmutation_log: List[Dict[str, Any]] = Field(default_factory=list)
+
+    def __getitem__(self, item: str) -> Any:
+        return getattr(self, item)
+
+    def __setitem__(self, key: str, value: Any) -> None:
+        setattr(self, key, value)
+
+    def __contains__(self, item: str) -> bool:
+        return hasattr(self, item)

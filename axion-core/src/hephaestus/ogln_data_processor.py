@@ -1,8 +1,22 @@
+"""
+artifact_anchor:
+  id: CORE.OGLN_DATA_PROCESSOR.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
 # AOP-OGLN-001: OGLN Data Processing Module
 # This module demonstrates a core OGLN function now protected by synarche_audit.
 
 import asyncio
 import functools
+import json
 import logging
 import time
 import traceback
@@ -78,14 +92,34 @@ class MemoryWeaverAgent:
         """Simulates the agent parsing a single, potentially multiline error_audit.log entry."""
         logger.debug(f"[{self.weaver_id}] parsing: {log_entry[:50]}...")
 
+        is_json = False
+        log_data = {}
+        try:
+            log_data = json.loads(log_entry)
+            is_json = True
+            log_text = log_data.get("message", log_entry)
+        except json.JSONDecodeError:
+            log_text = log_entry
+
         # Simulate parsing logic
-        if "CRITICAL FAILURE" in log_entry:
-            timestamp = self._extract_timestamp(log_entry)
-            full_message, stack_trace = self._isolate_traceback(log_entry)
+        if "CRITICAL FAILURE" in log_text or log_data.get("levelname") == "CRITICAL":
+            if is_json:
+                timestamp_str = log_data.get("timestamp", log_data.get("asctime", ""))
+                try:
+                    timestamp = datetime.fromisoformat(timestamp_str) if timestamp_str else datetime.now()
+                except ValueError:
+                    timestamp = datetime.now()
+                full_message = log_text
+                stack_trace = log_data.get("exc_info", log_data.get("stack_trace"))
+                if not stack_trace:
+                     full_message, stack_trace = self._isolate_traceback(log_text)
+            else:
+                timestamp = self._extract_timestamp(log_entry)
+                full_message, stack_trace = self._isolate_traceback(log_entry)
 
             try:
-                error_summary = full_message.split("CRITICAL FAILURE in ")[1].split(":", 1)[0]
-            except IndexError:
+                error_summary = full_message.split("CRITICAL FAILURE in ")[1].split(":", 1)[0] if "CRITICAL FAILURE in " in full_message else "Unknown Component"
+            except (IndexError, ValueError):
                 error_summary = "Unknown Component"
 
             processed_data = {
@@ -106,10 +140,10 @@ class MemoryWeaverAgent:
             await asyncio.sleep(0.05)  # Simulate async processing
             return processed_data
 
-        elif "Database connection failed" in log_entry:
+        elif "Database connection failed" in log_text:
             print(f"[{self.weaver_id}]: Database error identified, marking for network check.")
             await asyncio.sleep(0.03)
-            return {"type": "DB_ERROR", "line": log_entry, "weaver_id": self.weaver_id}
+            return {"type": "DB_ERROR", "line": log_text, "weaver_id": self.weaver_id}
 
         else:
             logger.info(f"[{self.weaver_id}]: Log entry appears non-critical or already processed.")

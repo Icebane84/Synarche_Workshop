@@ -56,6 +56,12 @@ High-impact facts and preferences categorized for rapid alignment.
 - **Pattern**: Prioritizing "Absolute Heart Synchronization" (Enums/Root Constants) before patching functional logic ensures that the "Rosetta Stone" is accurate for the rest of the rebuild.
 - **Synergy**: The connection between `axion-forge` (External Logic) and `Synarche_Workspace` (Local Governance) is bridged through Artificer-Agent validation, creating a cross-workspace "Truth Anchor."
 
+### [2026-05-26] Platform-Safe Alchemical Transmutation
+
+- **Insight**: Executing DB-level alchemical updates on Windows environments presents hidden platform friction: default system-level encoding (CP-1252) blocks alchemical symbols/emojis, and OS shell escapes distort alchemical JSON packages.
+- **Pattern**: Standardize all Python codebase files to explicitly enforce `encoding="utf-8"` during operations, and execute script functions directly using Python import boundaries rather than relying on raw terminal script parameters.
+- **Synergy**: Initializing remote database tables through MCP integrations prior to script execution bridges local alchemical logic to remote environments with zero friction.
+
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v16.3 [SOVEREIGN] STATUS: CANONIZED TS: 2026-04-16 HASH: LRN-GEM-OMEGA-NEW`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v16.4 [SOVEREIGN] STATUS: CANONIZED TS: 2026-05-26 HASH: LRN-GEM-OMEGA-XL-SYNC`

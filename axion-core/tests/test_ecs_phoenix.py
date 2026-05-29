@@ -43,7 +43,7 @@ def movement_system(ctx):
     logger.info(f"MovementSystem: Processed {len(entities)} entities.")
 
 
-async def test_ecs_integration():
+def test_ecs_integration():
     print("--- [START] ECS + PHOENIX INTEGRATION TEST ---")
     engine = DeterministicEngine()
 
@@ -93,7 +93,7 @@ async def test_ecs_integration():
 
 if __name__ == "__main__":
     try:
-        asyncio.run(test_ecs_integration())
+        test_ecs_integration()
     except Exception as e:
         print(f"\n[FAILURE] Integration Test Failed: {e}")
         import traceback
