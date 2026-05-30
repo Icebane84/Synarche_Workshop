@@ -9,9 +9,8 @@ artifact_anchor:
   state: ACTIVE
   ethos: SOVEREIGN_COMPUTE_COMPONENT
   relations: []
-"""
 
-"""# TOOL-SENT-006: The Sentinel's Sword (Audit Engine).
+# TOOL-SENT-006: The Sentinel's Sword (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -59,6 +58,8 @@ GVRN-SYNERGY-001, GOVERNS, This tool is governed by the Workshop Synergy.
 | `CMD: SWORD_FIX` | Global Python/TS Lint Fix | Automated Restoration |
 | `⚡ EXECUTE: PURGE_ENTROPY` | Forced Alignment | Zero Entropy |
 """
+
+# cspell:ignore INFR
 
 import argparse
 import logging
@@ -196,8 +197,8 @@ def main() -> None:
     args = parser.parse_args()
 
     # Targets
-    py_targets = [ROOT_DIR, AXION_DIR, FORGE_DIR]
-    ts_targets = [PLAYGROUND_DIR, ROOT_DIR / "rosetta-stone-app"]
+    py_targets: list[str | Path] = [ROOT_DIR, AXION_DIR, FORGE_DIR]
+    ts_targets: list[str | Path] = [PLAYGROUND_DIR, ROOT_DIR / "rosetta-stone-app"]
 
     if args.scope in ["all", "python"]:
         fix_python(py_targets)
