@@ -20,5 +20,8 @@
     "words": [
         // Local overrides for this specific project go here.
         // Master vocabulary is now managed in ./dictionaries/master.jsonc
+        "lemmatization",
+        "lemmatize",
+        "ents"
     ],
 }
