@@ -7,9 +7,9 @@ import pytest
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.abspath(os.path.join(current_dir, "..", "src")))
 
-from hephaestus.soul import ArtificersSoul
-from hephaestus.sentinel import CodeSentinel
-from hephaestus.gaze import ArchitectsGaze
+from hephaestus.soul import ArtificersSoul  # noqa: E402
+from hephaestus.sentinel import CodeSentinel  # noqa: E402
+from hephaestus.gaze import ArchitectsGaze  # noqa: E402
 
 class TestHephaestusActivated:
     def test_soul_narrative_resonance(self):
@@ -18,11 +18,11 @@ class TestHephaestusActivated:
         
         # Test empty input -> default 1.0
         res_empty = soul.calculate_narrative_resonance("")
-        assert res_empty == 1.0
+        assert res_empty == pytest.approx(1.0)
         
         # Test neutral input (no triggers) -> default 0.5
         res_neutral = soul.calculate_narrative_resonance("Just a standard test sentence with no special keywords.")
-        assert res_neutral == 0.5
+        assert res_neutral == pytest.approx(0.5)
         
         # Test emotional triggers -> should be greater than 0.5
         res_emotional = soul.calculate_narrative_resonance("We achieved victory and triumph, bringing hope to the team!")
