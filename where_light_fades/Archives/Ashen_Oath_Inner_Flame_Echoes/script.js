@@ -73,23 +73,23 @@ const gameConfig = {
   },
 
   loreData: {
-    lore_origin: {
+    loreOrigin: {
       title: "I. The Great Sundering",
       text: "The world is a broken puzzle...",
     },
-    lore_eldrin: {
+    loreEldrin: {
       title: "II. The Fallen Paladin",
       text: "Eldrin was the Order's greatest hero...",
     },
-    lore_valerius: {
+    loreValerius: {
       title: "III. The Mentor's Shadow",
       text: "Valerius speaks of 'necessary evils'...",
     },
-    lore_oathbringer: {
+    loreOathbringer: {
       title: "IV. The Cursed Blade",
       text: "Oathbringer is not just steel...",
     },
-    lore_prophecy: {
+    loreProphecy: {
       title: "V. The Sundered Blade",
       text: "The prophecy speaks of a choice...",
     },
@@ -100,31 +100,31 @@ const gameConfig = {
       name: "Kindle Inner Flame",
       desc: "+50% Faith gen.",
       cost: { faith: 50 },
-      unlocksLore: "lore_origin",
+      unlocksLore: "loreOrigin",
     },
     whisperNetwork: {
       name: "Listen to the Wind",
       desc: "+50% Doubt gen.",
       cost: { doubt: 50 },
-      unlocksLore: "lore_oathbringer",
+      unlocksLore: "loreOathbringer",
     },
     ritualClarity: {
       name: "Lorekeeper's Heritage",
       desc: "Unlocks 'Serafina's Ward'.",
       cost: { faith: 200, resolve: 50 },
-      unlocksLore: "lore_eldrin",
+      unlocksLore: "loreEldrin",
     },
     mentalFortress: {
       name: "The Sentinel's Gambit",
       desc: "Sanity drain reduced by 20%.",
       cost: { resolve: 150 },
-      unlocksLore: "lore_valerius",
+      unlocksLore: "loreValerius",
     },
     lumenAttunement: {
       name: "Heartstone Resonance",
       desc: "Resonance shifts 50% faster.",
       cost: { faith: 100, doubt: 100 },
-      unlocksLore: "lore_prophecy",
+      unlocksLore: "loreProphecy",
     },
     voidTouched: {
       name: "Void-Touched Tempering",
@@ -259,7 +259,7 @@ function startGame() {
   if (!gameInterval) {
     gameInterval = setInterval(gameTick, 1000);
     logEvent("You step into the void...", "system");
-    updateUI(); // Immediate update
+    updateUi(); // Immediate update
   }
 }
 
@@ -270,13 +270,13 @@ function startGame() {
 function manualGather(resourceType, event) {
   let amount = gameConfig.manualClickValue;
 
-  if (gameState.research["voidTouched"]) {
+  if (gameState.research.voidTouched) {
     const bonus = Math.floor(gameState.structures.spire / 10);
     amount += bonus;
   }
 
   let isCrit = false;
-  if (gameState.research["watcherEye"] && Math.random() < 0.1) {
+  if (gameState.research.watcherEye && Math.random() < 0.1) {
     amount *= 5;
     isCrit = true;
   }
@@ -294,7 +294,7 @@ function manualGather(resourceType, event) {
     if (isCrit) text += " CRIT!";
     spawnFloatingText(event.clientX, event.clientY, text, resourceType);
   }
-  updateUI();
+  updateUi();
 }
 
 function spawnFloatingText(x, y, text, type) {
@@ -306,8 +306,8 @@ function spawnFloatingText(x, y, text, type) {
   if (type === "resolve") el.style.color = "var(--col-resolve)";
 
   // Position fixed to mouse + scroll
-  el.style.left = x + window.scrollX + 10 + "px";
-  el.style.top = y + window.scrollY - 20 + "px";
+  el.style.left = `${x + window.scrollX + 10}px`;
+  el.style.top = `${y + window.scrollY - 20}px`;
 
   document.body.appendChild(el);
   setTimeout(() => {
@@ -329,7 +329,7 @@ function modifySanity(amount) {
 
 function toggleDarkMode() {
   gameState.darkModeActive = !gameState.darkModeActive;
-  updateUI();
+  updateUi();
   const btn = document.getElementById("btn-dark-mode");
   if (btn) {
     btn.style.backgroundColor = gameState.darkModeActive
@@ -353,24 +353,24 @@ function getCost(structureKey) {
   const owned = gameState.structures[structureKey];
   const base = gameConfig.structures[structureKey].baseCost;
   let scaling = gameConfig.structures[structureKey].costScaling;
-  if (structureKey === "sanctum" && gameState.research["archGeometry"]) {
+  if (structureKey === "sanctum" && gameState.research.archGeometry) {
     scaling = 1.4;
   }
-  let currentCost = {};
-  for (let res in base) {
-    currentCost[res] = Math.floor(base[res] * Math.pow(scaling, owned));
+  const currentCost = {};
+  for (const res in base) {
+    currentCost[res] = Math.floor(base[res] * (scaling ** owned));
   }
   return currentCost;
 }
 
 function buyBuilding(structureKey) {
   const cost = getCost(structureKey);
-  for (let res in cost) if (gameState.resources[res] < cost[res]) return;
-  for (let res in cost) gameState.resources[res] -= cost[res];
+  for (const res in cost) if (gameState.resources[res] < cost[res]) return;
+  for (const res in cost) gameState.resources[res] -= cost[res];
 
   gameState.structures[structureKey]++;
   if (typeof audio !== "undefined") audio.playClick("build");
-  updateUI();
+  updateUi();
 }
 
 function buyResearch(researchId) {
@@ -380,10 +380,10 @@ function buyResearch(researchId) {
     alert("Not enough Sanity.");
     return;
   }
-  for (let res in item.cost)
+  for (const res in item.cost)
     if (gameState.resources[res] < item.cost[res]) return;
 
-  for (let res in item.cost) gameState.resources[res] -= item.cost[res];
+  for (const res in item.cost) gameState.resources[res] -= item.cost[res];
   if (researchId === "cognitiveDissonance") gameState.sanity -= 50;
 
   gameState.research[researchId] = true;
@@ -393,7 +393,7 @@ function buyResearch(researchId) {
 
   checkUnlocks();
   renderResearch();
-  updateUI();
+  updateUi();
 }
 
 /* =========================================
@@ -430,14 +430,14 @@ function startHeartstoneEncounter() {
 
 function channelHeartstone(type) {
   if (!gameState.heartstone.active) return;
-  let mult = gameState.research["leylineMapping"] ? 1.2 : 1;
+  const mult = gameState.research.leylineMapping ? 1.2 : 1;
   const costFaith = Math.floor(
     gameConfig.heartstoneConfig.costFaith *
-      Math.pow(1.2, gameState.heartstone.level),
+      (1.2 ** gameState.heartstone.level),
   );
   const costResolve = Math.floor(
     gameConfig.heartstoneConfig.costResolve *
-      Math.pow(1.2, gameState.heartstone.level),
+      (1.2 ** gameState.heartstone.level),
   );
 
   if (type === "faith") {
@@ -465,14 +465,14 @@ function channelHeartstone(type) {
       );
     }
   }
-  updateUI();
+  updateUi();
 }
 
 function heartstoneTick() {
   if (!gameState.heartstone.active) return;
   const maxIntegrity = Math.floor(
     gameConfig.heartstoneConfig.baseMaxIntegrity *
-      Math.pow(1.5, gameState.heartstone.level),
+      (1.5 ** gameState.heartstone.level),
   );
   const corruptionRate =
     gameConfig.heartstoneConfig.corruptionRate * gameState.heartstone.level;
@@ -511,7 +511,7 @@ function endHeartstone(victory) {
 
   gameState.heartstone.purification = 0;
   gameState.heartstone.corruption = 0;
-  updateUI();
+  updateUi();
 }
 
 /* =========================================
@@ -519,11 +519,11 @@ function endHeartstone(victory) {
    ========================================= */
 
 function calculateProduction() {
-  let prod = { faith: 0, doubt: 0, resolve: 0 };
+  const prod = { faith: 0, doubt: 0, resolve: 0 };
   prod.faith +=
     gameState.structures.sanctum * gameConfig.structures.sanctum.output.faith;
 
-  if (gameState.research["eldrinRegret"]) {
+  if (gameState.research.eldrinRegret) {
     prod.faith +=
       gameState.structures.spire *
       gameConfig.structures.spire.output.doubt *
@@ -539,12 +539,12 @@ function calculateProduction() {
       gameConfig.structures.regimen.output.resolve;
   }
 
-  if (gameState.research["litanyLost"])
+  if (gameState.research.litanyLost)
     prod.resolve += gameState.structures.sanctum * 0.5;
-  if (gameState.research["innerFlame"]) prod.faith *= 1.5;
-  if (gameState.research["whisperNetwork"]) prod.doubt *= 1.5;
+  if (gameState.research.innerFlame) prod.faith *= 1.5;
+  if (gameState.research.whisperNetwork) prod.doubt *= 1.5;
 
-  if (gameState.research["cognitiveDissonance"]) {
+  if (gameState.research.cognitiveDissonance) {
     const missingSanity = 100 - gameState.sanity;
     prod.doubt *= 1 + missingSanity * 0.01;
   }
@@ -557,8 +557,8 @@ function calculateProduction() {
   let multiplier = 1;
   if (gameState.heartstone.level > 1)
     multiplier += (gameState.heartstone.level - 1) * 0.5;
-  const prestigeMult = gameConfig.prestigeUpgrades["ancestralMemory"].effect(
-    gameState.prestige.upgrades["ancestralMemory"] || 0,
+  const prestigeMult = gameConfig.prestigeUpgrades.ancestralMemory.effect(
+    gameState.prestige.upgrades.ancestralMemory || 0,
   );
   multiplier *= prestigeMult;
 
@@ -588,9 +588,9 @@ function gameTick() {
     let drain = gameConfig.sanityPassiveDrain;
     drain +=
       gameState.structures.spire * gameConfig.structures.spire.sanityPenalty;
-    if (gameState.research["mentalFortress"]) drain *= 0.8;
-    const drainMult = gameConfig.prestigeUpgrades["mentalResilience"].effect(
-      gameState.prestige.upgrades["mentalResilience"] || 0,
+    if (gameState.research.mentalFortress) drain *= 0.8;
+    const drainMult = gameConfig.prestigeUpgrades.mentalResilience.effect(
+      gameState.prestige.upgrades.mentalResilience || 0,
     );
     drain *= drainMult;
     if (gameState.darkModeActive) drain *= 5;
@@ -598,7 +598,7 @@ function gameTick() {
     modifySanity(-drain);
 
     let censerHeal = gameConfig.structures.censer.output.sanity;
-    if (gameState.research["serafinaTincture"]) censerHeal *= 2;
+    if (gameState.research.serafinaTincture) censerHeal *= 2;
     if (gameState.structures.censer > 0)
       modifySanity(gameState.structures.censer * censerHeal);
 
@@ -606,14 +606,14 @@ function gameTick() {
     resonancePull +=
       gameState.structures.sanctum *
       gameConfig.structures.sanctum.resonancePull;
-    if (!gameState.research["eldrinRegret"]) {
+    if (!gameState.research.eldrinRegret) {
       resonancePull +=
         gameState.structures.spire * gameConfig.structures.spire.resonancePull;
     }
     let driftRate = gameConfig.resonanceDriftRate;
-    if (gameState.research["lumenAttunement"]) driftRate *= 1.5;
-    const driftMult = gameConfig.prestigeUpgrades["lumenMastery"].effect(
-      gameState.prestige.upgrades["lumenMastery"] || 0,
+    if (gameState.research.lumenAttunement) driftRate *= 1.5;
+    const driftMult = gameConfig.prestigeUpgrades.lumenMastery.effect(
+      gameState.prestige.upgrades.lumenMastery || 0,
     );
     driftRate *= driftMult;
 
@@ -632,7 +632,7 @@ function gameTick() {
 
     if (Date.now() % 30000 < 1000) saveGame();
 
-    updateUI();
+    updateUi();
   } catch (e) {
     console.error("Game Tick Error:", e);
   }
@@ -661,7 +661,7 @@ function updateAtmosphereVisuals() {
   }
 }
 
-function updateUI() {
+function updateUi() {
   document.getElementById("res-faith").innerText = Math.floor(
     gameState.resources.faith,
   );
@@ -677,14 +677,14 @@ function updateUI() {
   document.getElementById("rate-doubt").innerText = prod.doubt.toFixed(1);
   document.getElementById("rate-resolve").innerText = prod.resolve.toFixed(1);
 
-  updateStructureUI("sanctum", ["faith"]);
-  updateStructureUI("spire", ["doubt"]);
-  updateStructureUI("regimen", ["faith", "doubt"]);
-  updateStructureUI("censer", ["faith", "resolve"]);
+  updateStructureUi("sanctum", ["faith"]);
+  updateStructureUi("spire", ["doubt"]);
+  updateStructureUi("regimen", ["faith", "doubt"]);
+  updateStructureUi("censer", ["faith", "resolve"]);
 
   const sanityBar = document.getElementById("bar-sanity");
   if (sanityBar) {
-    sanityBar.style.width = gameState.sanity + "%";
+    sanityBar.style.width = `${gameState.sanity}%`;
     document.getElementById("val-sanity").innerText = Math.floor(
       gameState.sanity,
     );
@@ -696,14 +696,14 @@ function updateUI() {
 
   const resPercent = gameState.resonance;
   const resMarker = document.getElementById("marker-resonance");
-  if (resMarker) resMarker.style.left = resPercent + "%";
+  if (resMarker) resMarker.style.left = `${resPercent}%`;
 
   applyHallucinations();
 
   if (gameState.heartstone.unlocked) {
     const maxIntegrity = Math.floor(
       gameConfig.heartstoneConfig.baseMaxIntegrity *
-        Math.pow(1.5, gameState.heartstone.level),
+        (1.5 ** gameState.heartstone.level),
     );
     document.getElementById("hs-level").innerText = gameState.heartstone.level;
     document.getElementById("hs-name").innerText = gameState.heartstone.active
@@ -717,15 +717,15 @@ function updateUI() {
       100,
       (gameState.heartstone.corruption / maxIntegrity) * 100,
     );
-    document.getElementById("bar-purification").style.width = purPct + "%";
-    document.getElementById("bar-corruption").style.width = corPct + "%";
+    document.getElementById("bar-purification").style.width = `${purPct}%`;
+    document.getElementById("bar-corruption").style.width = `${corPct}%`;
     const costFaith = Math.floor(
       gameConfig.heartstoneConfig.costFaith *
-        Math.pow(1.2, gameState.heartstone.level),
+        (1.2 ** gameState.heartstone.level),
     );
     const costResolve = Math.floor(
       gameConfig.heartstoneConfig.costResolve *
-        Math.pow(1.2, gameState.heartstone.level),
+        (1.2 ** gameState.heartstone.level),
     );
     document.getElementById("cost-hs-faith").innerText = costFaith;
     document.getElementById("cost-hs-resolve").innerText = costResolve;
@@ -737,7 +737,7 @@ function updateUI() {
   if (pendingEl) pendingEl.innerText = calculatePendingEchoes();
 }
 
-function updateStructureUI(key, costTypes) {
+function updateStructureUi(key, costTypes) {
   const countEl = document.getElementById(`count-${key}`);
   if (!countEl) return;
   countEl.innerText = gameState.structures[key];
@@ -812,14 +812,14 @@ function importSave() {
    ========================================= */
 
 function checkUnlocks() {
-  if (gameState.research["ritualClarity"]) {
+  if (gameState.research.ritualClarity) {
     const censerEl = document.getElementById("container-censer");
     if (censerEl?.style.display === "none") {
       censerEl.style.display = "flex";
       logEvent("Unlocked: Serafina's Ward", "system");
     }
   }
-  if (gameState.research["shadowBargain"]) {
+  if (gameState.research.shadowBargain) {
     document.getElementById("btn-dark-mode").style.display = "inline-block";
   }
   const totalLifetime =
@@ -849,7 +849,7 @@ function renderCodex() {
   const container = document.getElementById("codex-container");
   if (!container) return;
   container.innerHTML = "";
-  for (let id in gameConfig.loreData) {
+  for (const id in gameConfig.loreData) {
     const data = gameConfig.loreData[id];
     const isUnlocked = gameState.unlockedLore.includes(id);
     const entry = document.createElement("div");
@@ -868,7 +868,7 @@ function renderPrestigeUpgrades() {
   const container = document.getElementById("prestige-upgrades-container");
   if (!container) return;
   container.innerHTML = "";
-  for (let key in gameConfig.prestigeUpgrades) {
+  for (const key in gameConfig.prestigeUpgrades) {
     const upg = gameConfig.prestigeUpgrades[key];
     const level = gameState.prestige.upgrades[key] || 0;
     const cost = getPrestigeUpgradeCost(key);
@@ -882,10 +882,10 @@ function renderPrestigeUpgrades() {
 
 function switchTab(tabName) {
   const contents = document.getElementsByClassName("tab-content");
-  for (let c of contents) c.style.display = "none";
+  for (const c of contents) c.style.display = "none";
   document.getElementById(`tab-${tabName}`).style.display = "block";
   const btns = document.getElementsByClassName("nav-btn");
-  for (let b of btns) b.classList.remove("active");
+  for (const b of btns) b.classList.remove("active");
 
   if (tabName === "sanctum") btns[0].classList.add("active");
   if (tabName === "research") btns[1].classList.add("active");
@@ -936,7 +936,7 @@ function loadGame() {
   checkUnlocks();
   checkTrueEndingConditions();
   switchTab("sanctum");
-  updateUI();
+  updateUi();
 }
 
 function resetGame() {
@@ -945,3 +945,17 @@ function resetGame() {
     location.reload();
   }
 }
+
+// Globally expose unused functions so they are accessible from HTML onclick attributes
+window.startGame = startGame;
+window.manualGather = manualGather;
+window.toggleDarkMode = toggleDarkMode;
+window.buyBuilding = buyBuilding;
+window.buyResearch = buyResearch;
+window.startHeartstoneEncounter = startHeartstoneEncounter;
+window.channelHeartstone = channelHeartstone;
+window.attemptFusion = attemptFusion;
+window.exportSave = exportSave;
+window.importSave = importSave;
+window.loadGame = loadGame;
+window.resetGame = resetGame;

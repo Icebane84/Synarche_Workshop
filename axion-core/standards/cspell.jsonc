@@ -22,6 +22,12 @@
         // Master vocabulary is now managed in ./dictionaries/master.jsonc
         "lemmatization",
         "lemmatize",
-        "ents"
+        "ents",
+        "heartstone",
+        "eldrin",
+        "valerius",
+        "oathbringer",
+        "leyline",
+        "mult"
     ],
 }
