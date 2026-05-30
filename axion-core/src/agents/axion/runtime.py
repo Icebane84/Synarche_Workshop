@@ -11,24 +11,24 @@ artifact_anchor:
   relations: []
 """
 
-"""### **Block A: The Identification Lock (UIP-V15)**.
+# ### **Block A: The Identification Lock (UIP-V15)**.
+#
+# | Key                 | Value                         | Description       |
+# | :------------------ | :---------------------------- | :---------------- |
+# | **Artifact ID**     | `CORE-AGT-RUN-001`            | The Sovereign ID. |
+# | **Official Name**   | `runtime.py`                  | The Filename.     |
+# | **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+# | **Domain**          | `CORE-AGT`                    | The Subject.      |
+# | **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+# | **Evolution**       | `Core Stability`              | The Maturity.     |
+# | **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+# | **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+#
+# **The Spirit Bomb Axiom: Runtime Resonance (Law 39)**
+# > Implemented from Blueprint `GVRN.REG.AgentRuntime.md`.
+# > Ethos: Purpose through Execution.
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `CORE-AGT-RUN-001`            | The Sovereign ID. |
-| **Official Name**   | `runtime.py`                  | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
-| **Domain**          | `CORE-AGT`                    | The Subject.      |
-| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
-| **Evolution**       | `Core Stability`              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
-
-**The Spirit Bomb Axiom: Runtime Resonance (Law 39)**
-> Implemented from Blueprint `GVRN.REG.AgentRuntime.md`.
-> Ethos: Purpose through Execution.
-"""
-
+import asyncio
 from typing import Any, Dict
 from langgraph.graph import END, StateGraph
 
@@ -48,6 +48,10 @@ except ImportError:
         from hephaestus.soul import ArtificersSoul
     except ImportError:
         ArtificersSoul = None
+
+# Global constant literals
+COMPLIANCE_LAW_24 = "In compliance with Law 24."
+MAGICIAN_MASK = "I. The Magician"
 
 
 # --- STANDALONE FUNCTIONS FOR DIRECT IMPORT ---
@@ -69,11 +73,7 @@ def node_soul_analysis(state: Any) -> Any:
         impact = {"score": 0.0, "status": "STABLE", "factors": [], "quote": "Frequencies stable."}
     else:
         analyzer = SoulImpactAnalyzer()
-        text = ""
-        if isinstance(state, dict):
-            text = state.get("input", "")
-        else:
-            text = getattr(state, "input", "")
+        text = state.get("input", "") if isinstance(state, dict) else getattr(state, "input", "")
         impact = analyzer.calculate_risk(text)
 
     if isinstance(state, dict):
@@ -85,24 +85,25 @@ def node_soul_analysis(state: Any) -> Any:
     return state
 
 
-def node_update_rpg_stats(state: Any) -> Any:
-    """Updates RPG stats inside the state and evaluates code for Elegance Bonuses (Phase 3.0)."""
+def _calculate_rpg_gains(state: Any) -> tuple[int, int]:
+    """Helper to calculate RPG stardust/XP and coherence gains based on AST code elegance."""
     xp_gain = 50
     coherence_gain = 1
+    if not ArtificersSoul:
+        return xp_gain, coherence_gain
 
-    # Elegance check using ArtificersSoul if input resembles code (Elegance Bonus)
-    if ArtificersSoul:
-        text = ""
-        if isinstance(state, dict):
-            text = state.get("input", "")
-        else:
-            text = getattr(state, "input", "")
-        
-        if "def " in text or "class " in text:
-            aes_score = ArtificersSoul().calculate_aes(text)
-            if aes_score > 8.0:
-                xp_gain += 25
-                coherence_gain += 1
+    text = state.get("input", "") if isinstance(state, dict) else getattr(state, "input", "")
+    if "def " in text or "class " in text:
+        aes_score = ArtificersSoul().calculate_aes(text)
+        if aes_score > 8.0:
+            xp_gain += 25
+            coherence_gain += 1
+    return xp_gain, coherence_gain
+
+
+def node_update_rpg_stats(state: Any) -> Any:
+    """Updates RPG stats inside the state and evaluates code for Elegance Bonuses (Phase 3.0)."""
+    xp_gain, coherence_gain = _calculate_rpg_gains(state)
 
     if isinstance(state, dict):
         state = state.copy()
@@ -172,8 +173,15 @@ def node_sentinel(state: Dict[str, Any]) -> Dict[str, Any]:
         state["sentinel_reason"] = f"Guardian Block: [{factors_str}] | {quote}"
     else:
         state["sentinel_status"] = "PASS"
-        state["sentinel_reason"] = "In compliance with Law 24."
+        state["sentinel_reason"] = COMPLIANCE_LAW_24
     return state
+
+
+def _get_alarm_reason(soul_impact: Any) -> str:
+    """Helper to format the alarm Guardian Block factor reasons and quote."""
+    factors = soul_impact.get("factors", []) if isinstance(soul_impact, dict) else getattr(soul_impact, "factors", [])
+    quote = soul_impact.get("quote", "") if isinstance(soul_impact, dict) else getattr(soul_impact, "quote", "")
+    return f"Guardian Block: [{', '.join(factors)}] | {quote}"
 
 
 class AxionRuntime:
@@ -209,34 +217,45 @@ class AxionRuntime:
 
     async def node_retrieve_context(self, state: Any) -> Any:
         """Retrieves narrative and logic context asynchronously."""
+        await asyncio.sleep(0)
         return node_retrieve_context(state)
 
     async def node_soul_analysis(self, state: Any) -> Any:
         """Analyzes the input text for potential architectural risk and calculates blast radius."""
+        await asyncio.sleep(0)
         return node_soul_analysis(state)
 
     async def node_lightbinder_weave(self, state: Any) -> Any:
         """Executes Lightbinder Mask weave."""
+        await asyncio.sleep(0)
+        
+        # Get lightbinder_state from dict or object
         if isinstance(state, dict):
             lb_state = state.get("lightbinder_state", {})
-            if isinstance(lb_state, dict):
-                active_masks = lb_state.get("active_masks", [])
-                if "I. The Magician" not in active_masks:
-                    active_masks.append("I. The Magician")
-                lb_state["active_masks"] = active_masks
-                state["lightbinder_state"] = lb_state
-            else:
-                if "I. The Magician" not in getattr(lb_state, "active_masks", []):
-                    getattr(lb_state, "active_masks", []).append("I. The Magician")
         else:
             lb_state = getattr(state, "lightbinder_state", None)
-            if lb_state:
-                if "I. The Magician" not in getattr(lb_state, "active_masks", []):
-                    getattr(lb_state, "active_masks", []).append("I. The Magician")
+
+        if lb_state is None:
+            return state
+
+        # Get active_masks from lb_state
+        if isinstance(lb_state, dict):
+            active_masks = lb_state.get("active_masks", [])
+            if MAGICIAN_MASK not in active_masks:
+                active_masks.append(MAGICIAN_MASK)
+            lb_state["active_masks"] = active_masks
+            if isinstance(state, dict):
+                state["lightbinder_state"] = lb_state
+        else:
+            active_masks = getattr(lb_state, "active_masks", [])
+            if MAGICIAN_MASK not in active_masks:
+                active_masks.append(MAGICIAN_MASK)
+
         return state
 
     async def node_sophia_insight(self, state: Any) -> Any:
         """Scans state using Sophia and injects insights."""
+        await asyncio.sleep(0)
         if isinstance(state, dict):
             state["sophia_insight"] = "[SYSTEM] Sophia Scan: Harmony found."
         else:
@@ -245,44 +264,32 @@ class AxionRuntime:
 
     async def node_sentinel_check(self, state: Any) -> Any:
         """Performs Sentinel verification gate check with Guardian Block checks."""
-        # Wrap standalone node_sentinel logic for Pydantic objects support
-        soul_impact = getattr(state, "soul_impact", {}) if not isinstance(state, dict) else state.get("soul_impact", {})
+        await asyncio.sleep(0)
+        soul_impact = state.get("soul_impact", {}) if isinstance(state, dict) else getattr(state, "soul_impact", {})
         status = soul_impact.get("status") if isinstance(soul_impact, dict) else getattr(soul_impact, "status", "")
-        
-        if status == "ALARM":
-            if isinstance(state, dict):
-                state["sentinel_status"] = "FAIL"
-                factors = soul_impact.get("factors", [])
-                factors_str = ", ".join(factors)
-                quote = soul_impact.get("quote", "")
-                state["sentinel_reason"] = f"Guardian Block: [{factors_str}] | {quote}"
-            else:
-                state = state.model_copy(deep=True)
-                state.sentinel_status = "FAIL"
-                factors = soul_impact.get("factors", []) if isinstance(soul_impact, dict) else getattr(soul_impact, "factors", [])
-                factors_str = ", ".join(factors)
-                quote = soul_impact.get("quote", "") if isinstance(soul_impact, dict) else getattr(soul_impact, "quote", "")
-                state.sentinel_reason = f"Guardian Block: [{factors_str}] | {quote}"
+
+        is_alarm = (status == "ALARM")
+        reason = _get_alarm_reason(soul_impact) if is_alarm else COMPLIANCE_LAW_24
+        sentinel_status = "FAIL" if is_alarm else "PASS"
+
+        if isinstance(state, dict):
+            state["sentinel_status"] = sentinel_status
+            state["sentinel_reason"] = reason
         else:
-            if isinstance(state, dict):
-                state["sentinel_status"] = "PASS"
-                state["sentinel_reason"] = "In compliance with Law 24."
-            else:
-                state = state.model_copy(deep=True)
-                state.sentinel_status = "PASS"
-                state.sentinel_reason = "In compliance with Law 24."
+            state = state.model_copy(deep=True)
+            state.sentinel_status = sentinel_status
+            state.sentinel_reason = reason
         return state
 
     async def node_update_rpg_stats(self, state: Any) -> Any:
         """Updates RPG stats inside the state."""
+        await asyncio.sleep(0)
         return node_update_rpg_stats(state)
 
     async def sentinel_gate(self, state: Any) -> str:
         """Determines the next routing edge based on sentinel verification."""
-        if isinstance(state, dict):
-            status = state.get("sentinel_status", "")
-        else:
-            status = getattr(state, "sentinel_status", "")
+        await asyncio.sleep(0)
+        status = state.get("sentinel_status", "") if isinstance(state, dict) else getattr(state, "sentinel_status", "")
             
         if status == "PASS":
             return "rpg_update"
