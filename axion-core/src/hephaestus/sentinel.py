@@ -11,28 +11,27 @@ artifact_anchor:
   relations: []
 """
 
-"""# AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol.
-
-# I. Universal Identification & Provenance (The Vector Signature)
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `AOP-SENTINEL-SCAN-001` |
-| **2. Official Name** | `sentinel.py` |
-| **3. Version** | **v15.0 [OMEGA]** |
-| **4. Provenance** | **Reforged: 2026-04-28** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Authentic Persona** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. Status (State)** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Integrity Hash** | `[UIP-V15-LOCK]` |
-
----
-
-### **I.B. Axiom Reference**
-> "The sentinel does not sleep, for entropy does not rest." — Axiom of Sentinel
-"""
+# # AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol.
+# 
+# # I. Universal Identification & Provenance (The Vector Signature)
+# | Field | Value |
+# | :--- | :--- |
+# | **1. Artifact ID** | `AOP-SENTINEL-SCAN-001` |
+# | **2. Official Name** | `sentinel.py` |
+# | **3. Version** | **v15.0 [OMEGA]** |
+# | **4. Provenance** | **Reforged: 2026-04-28** |
+# | **5. Domain** | `ARCH` |
+# | **6. Evolution** | **Authentic Persona** |
+# | **7. Celestial Class** | `[PLANET]` |
+# | **8. Tier** | **Operational** |
+# | **9. Status (State)** | `[ACTIVE]` |
+# | **10. Ethos** | **Guardian of Coherence** |
+# | **11. Integrity Hash** | `[UIP-V15-LOCK]` |
+# 
+# ---
+# 
+# ### **I.B. Axiom Reference**
+# > "The sentinel does not sleep, for entropy does not rest." — Axiom of Sentinel
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
@@ -69,7 +68,7 @@ class CodeSentinel:
         self.scanner = ArtifactScanner(self.task_context)
 
     def scan_causality(self, root_path: str) -> list[dict[str, Any]]:
-        """[NEW] Scans text artifacts for Causal Resoance."""
+        """[NEW] Scans text artifacts for Causal Resonance."""
         causal_report = []
         for root, dirs, files in os.walk(root_path):
             # OMEGA v15.1 - Performance Optimization
@@ -102,7 +101,7 @@ class CodeSentinel:
                             {
                                 "file": file,
                                 "path": path,
-                                "dissonance": "Acausal / Floating Abstraction",
+                                "dissonance": "Non-causal / Floating Abstraction",
                                 "score": analysis["resonance_score"],
                             }
                         )
