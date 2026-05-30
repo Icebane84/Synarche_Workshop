@@ -316,7 +316,7 @@ function spawnFloatingText(x, y, text, type) {
 }
 
 function addResources(type, amount) {
-  if (isNaN(amount)) amount = 0;
+  if (Number.isNaN(amount)) amount = 0;
   gameState.resources[type] += amount;
   gameState.lifetime[type] += amount;
 }
@@ -430,7 +430,7 @@ function startHeartstoneEncounter() {
 
 function channelHeartstone(type) {
   if (!gameState.heartstone.active) return;
-  let mult = gameState.research["leylineMapping"] ? 1.2 : 1.0;
+  let mult = gameState.research["leylineMapping"] ? 1.2 : 1;
   const costFaith = Math.floor(
     gameConfig.heartstoneConfig.costFaith *
       Math.pow(1.2, gameState.heartstone.level),
@@ -801,6 +801,7 @@ function importSave() {
       saveGame();
       location.reload();
     } catch (e) {
+      console.error("Import failed:", e);
       alert("Invalid save string!");
     }
   }
@@ -813,7 +814,7 @@ function importSave() {
 function checkUnlocks() {
   if (gameState.research["ritualClarity"]) {
     const censerEl = document.getElementById("container-censer");
-    if (censerEl && censerEl.style.display === "none") {
+    if (censerEl?.style.display === "none") {
       censerEl.style.display = "flex";
       logEvent("Unlocked: Serafina's Ward", "system");
     }
@@ -904,7 +905,7 @@ function logEvent(text, type = "system") {
   entry.className = `log-entry ${type}`;
   entry.innerText = text;
   log.insertBefore(entry, log.firstChild);
-  if (log.children.length > 20) log.removeChild(log.lastChild);
+  if (log.children.length > 20) log.lastChild.remove();
 }
 
 function saveGame() {
