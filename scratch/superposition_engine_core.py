@@ -52,8 +52,8 @@ def synarche_audit(
             logger.info(f"Finished {func.__name__} in {duration:.4f}s")
             return result
         except Exception as e:
-            logger.error(
-                f"CRITICAL FAILURE in {func.__name__}: {type(e).__name__}: {str(e)}\n{traceback.format_exc()}"
+            logger.exception(
+                f"CRITICAL FAILURE in {func.__name__}: {type(e).__name__}: {str(e)}"
             )
             raise
 
@@ -103,10 +103,12 @@ class MockRedis:
     _cache: Dict[str, Any] = {}
 
     async def get(self, key: str) -> Optional[Any]:
+        await asyncio.sleep(0)
         logger.debug(f"Redis Mock: GET {key}")
         return self._cache.get(key)
 
     async def set(self, key: str, value: Any, ex: int = 300):
+        await asyncio.sleep(0)
         logger.debug(f"Redis Mock: SET {key} for {ex}s")
         self._cache[key] = value
 
@@ -166,7 +168,7 @@ class SuperpositionFSM:
         self.redis_cache = MockRedis()
         logger.info("SuperpositionFSM: Initialized. Ready for state transitions.")
 
-    async def _select_strategy(self, context: List[Enum]) -> ITransformationStrategy:
+    def _select_strategy(self, context: List[Enum]) -> ITransformationStrategy:
         """Dynamically selects the appropriate CASTS strategy (DAMP)."""
         for ctx_enum in context:
             if ctx_enum == ClientType.WEB:
@@ -218,7 +220,7 @@ class SuperpositionFSM:
             f"Entering Superposition for BlockID: {block_id}. Context: {context_vector}"
         )
 
-        strategy = await self._select_strategy(context_vector)
+        strategy = self._select_strategy(context_vector)
 
         # --- Transmutation Core (CASTS & Polyglot Weaving) ---
         collapsed_state = await strategy.transmute(validated_payload, context_vector)

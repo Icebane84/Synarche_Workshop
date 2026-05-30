@@ -104,14 +104,14 @@ async function transmuteStateCommand(rawInput, authToken = null) {
 
   // 2. Validation: Zod-first schema validation (Ensures data integrity pre-transmission)
   try {
-    const validatedPayload = SuperpositionPayloadSchema.parse(payload);
+    SuperpositionPayloadSchema.parse(payload);
     console.log(
       "GUCA: Payload validated successfully. Ready for transmission.",
     );
 
     // 3. Polyglot Weaving: Simulate transmission via HTTPS/WebSocket
     // In a real application, this would be a fetch() or socket.send()
-    const apiEndpoint = "/api/superposition-engine/transmute"; // Conceptual API endpoint
+    // Conceptual API endpoint: /api/superposition-engine/transmute
 
     // Simulate different output formats based on ClientType (DAMP)
     const expectedFormat =
@@ -189,7 +189,7 @@ async function demoCommands() {
       "jwt.verified.token",
     );
   } catch (e) {
-    console.log("GUCA: Caught expected validation error for missing data.");
+    console.warn("GUCA: Caught expected validation error for missing data:", e);
   }
 
   // 4. Testing Unauthorized Access (Security)
@@ -203,7 +203,7 @@ async function demoCommands() {
       "jwt.unverified.token",
     );
   } catch (e) {
-    console.log("GUCA: Caught expected unauthorized access error (simulated).");
+    console.warn("GUCA: Caught expected unauthorized access error (simulated):", e);
   }
 }
 
