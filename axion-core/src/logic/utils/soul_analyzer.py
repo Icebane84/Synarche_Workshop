@@ -11,48 +11,47 @@ artifact_anchor:
   relations: []
 """
 
-"""## **[ARTIFACT START]**.
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.soul.analyzer`                | The Sovereign ID. |
-| **Official Name** | `soul_analyzer.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
-# ---
-
-## **Block B: State Vector (AGP-001)**
-
-# | State Field   | Value     |
-# | :------------ | :-------- |
-# | **Coherence** | {resonance}     |
-# | **Resonance** | {resonance}     |
-# | **Stability** | Stable  |
-
-# ---
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-# | Risk                 | Mitigation                |
-# | :------------------- | :------------------------ |
-# | **Logic Drift**      | Strict Linter Enforcement |
-# | **Semantic Decay**   | Axiomatic Compass Audit   |
-
-# ---
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-# | :---------------------- | :---------------- | :---------------------------------------------- |
-| CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
-
-## **[ARTIFACT END]**
-"""
+# ## **[ARTIFACT START]**.
+#
+# ## **Block A: The Identification Lock (UIP-V15)**
+#
+# | Key               | Value                             | Description       |
+# | :---------------- | :-------------------------------- | :---------------- |
+# | **Artifact ID**   | `CORE.soul.analyzer`                | The Sovereign ID. |
+# | **Official Name** | `soul_analyzer.py`                   | The Filename.     |
+# | **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+# | **Domain**        | `CORE`                     | The Subject.      |
+# | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+# | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+#
+# # ---
+#
+# ## **Block B: State Vector (AGP-001)**
+#
+# # | State Field   | Value     |
+# # | :------------ | :-------- |
+# # | **Coherence** | {resonance}     |
+# # | **Resonance** | {resonance}     |
+# # | **Stability** | Stable  |
+#
+# # ---
+#
+# ### **Block C: Risk & Mitigation (AGP-002)**
+#
+# # | Risk                 | Mitigation                |
+# # | :------------------- | :------------------------ |
+# # | **Logic Drift**      | Strict Linter Enforcement |
+# # | **Semantic Decay**   | Axiomatic Compass Audit   |
+#
+# # ---
+#
+# ### **Block D: Standardized Synergy Block (The Loom Signature)**
+#
+# # | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# # | :---------------------- | :---------------- | :---------------------------------------------- |
+# # | CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
+#
+# ## **[ARTIFACT END]**
 
 import logging
 from typing import Any

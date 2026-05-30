@@ -11,44 +11,42 @@ artifact_anchor:
   relations: []
 """
 
-"""## **[ARTIFACT START]**.
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.logic.rpg_manager`          | The Sovereign ID. |
-| **Official Name** | `rpg_manager.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                            | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.RPG`     | The Network.      |
-
----
-
-## **Block B: Sovereign Identity (The Tarot Mask)**
-
-| Mask ID | Name | Role |
-| :--- | :--- | :--- |
-| VIII | **Justice** | The Arbiter of Economy and Achievement Balance. |
-
----
-
-## **Block C: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Economy**    | `Stardust` |
-| **Persistence**| `Supabase` |
-| **Stability**  | `Stable`   |
-
-## **[ARTIFACT END]**
-"""
+# ## **[ARTIFACT START]**.
+#
+# ## **Block A: The Identification Lock (UIP-V15)**
+#
+# | Key               | Value                             | Description       |
+# | :---------------- | :-------------------------------- | :---------------- |
+# | **Artifact ID**   | `CORE.logic.rpg_manager`          | The Sovereign ID. |
+# | **Official Name** | `rpg_manager.py`                   | The Filename.     |
+# | **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+# | **Domain**        | `CORE`                            | The Subject.      |
+# | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+# | **Relations**     | `GOVERNED_BY: CORE.Codex.RPG`     | The Network.      |
+#
+# ---
+#
+# ## **Block B: Sovereign Identity (The Tarot Mask)**
+#
+# | Mask ID | Name | Role |
+# | :--- | :--- | :--- |
+# | VIII | **Justice** | The Arbiter of Economy and Achievement Balance. |
+#
+# ---
+#
+# ## **Block C: State Vector (AGP-001)**
+#
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Economy**    | `Stardust` |
+# | **Persistence**| `Supabase` |
+# | **Stability**  | `Stable`   |
+#
+# ## **[ARTIFACT END]**
 
 import json
 import os
 import sqlite3
-import sys
 from datetime import datetime
 from typing import Any, TypedDict
 
