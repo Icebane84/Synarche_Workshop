@@ -199,6 +199,10 @@
     "sonarlint.rules": {
       "javascript:S106": "off",
     },
+    "sonarlint.analysisExcludesStandalone": [
+      "**/stubs/**",
+      "**/*.pyi"
+    ],
     "explorer.excludeGitIgnore": false,
     "files.autoSave": "off",
     "terminal.integrated.suggest.providers": {
