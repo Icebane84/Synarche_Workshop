@@ -1,3 +1,4 @@
+# cspell:ignore SELT
 # AOP-QB-PHX-001: The Phoenix Superposition Engine Core Playbook
 # This playbook defines the core execution logic, FSM, and strategy pattern
 # for `UMB-QB-PHX-001: The Phoenix Superposition Engine`.
@@ -8,7 +9,6 @@ import asyncio
 import functools
 import logging
 import time
-import traceback
 from collections.abc import Awaitable, Callable
 from enum import Enum, auto
 from typing import Any, Dict, List, Optional
@@ -203,9 +203,27 @@ class SuperpositionFSM:
 
         block_id = validated_payload["BlockID"]
 
-        context_vector = [
-            Enum.from_string(ContextType, c) for c in validated_payload["ContextVector"]
-        ]  # Ensure Enum types
+        context_vector = []
+        for c in validated_payload["ContextVector"]:
+            if isinstance(c, Enum):
+                context_vector.append(c)
+            elif isinstance(c, str):
+                # Clean standard prefixes to support contract examples
+                clean_c = c
+                for prefix in ["CLIENT_", "ENV_", "AUTH_"]:
+                    if c.startswith(prefix):
+                        clean_c = c[len(prefix):]
+                        break
+                if clean_c in ClientType.__members__:
+                    context_vector.append(ClientType[clean_c])
+                elif clean_c in ContextEnv.__members__:
+                    context_vector.append(ContextEnv[clean_c])
+                elif clean_c in AuthStatus.__members__:
+                    context_vector.append(AuthStatus[clean_c])
+                else:
+                    raise ValueError(f"Unknown context value: {c}")
+            else:
+                raise ValueError(f"Invalid context value type: {c}")
 
         # --- Caching (Performance Optimization) ---
         cached_result = await self.redis_cache.get(block_id)
@@ -237,7 +255,7 @@ class SuperpositionFSM:
     # --- Conceptual JWT Validation for security ---
     def _validate_jwt(self, token: str) -> List[int]:
         """Mock JWT validation, returns mock auth status."""
-        if "VERIFIED" in token:
+        if "VERIFIED" in token and "UNVERIFIED" not in token:
             return [AuthStatus.VERIFIED.value]
         return [AuthStatus.UNVERIFIED.value]
 
