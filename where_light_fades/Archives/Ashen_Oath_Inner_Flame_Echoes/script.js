@@ -947,15 +947,15 @@ function resetGame() {
 }
 
 // Globally expose unused functions so they are accessible from HTML onclick attributes
-window.startGame = startGame;
-window.manualGather = manualGather;
-window.toggleDarkMode = toggleDarkMode;
-window.buyBuilding = buyBuilding;
-window.buyResearch = buyResearch;
-window.startHeartstoneEncounter = startHeartstoneEncounter;
-window.channelHeartstone = channelHeartstone;
-window.attemptFusion = attemptFusion;
-window.exportSave = exportSave;
-window.importSave = importSave;
-window.loadGame = loadGame;
-window.resetGame = resetGame;
+globalThis.startGame = startGame;
+globalThis.manualGather = manualGather;
+globalThis.toggleDarkMode = toggleDarkMode;
+globalThis.buyBuilding = buyBuilding;
+globalThis.buyResearch = buyResearch;
+globalThis.startHeartstoneEncounter = startHeartstoneEncounter;
+globalThis.channelHeartstone = channelHeartstone;
+globalThis.attemptFusion = attemptFusion;
+globalThis.exportSave = exportSave;
+globalThis.importSave = importSave;
+globalThis.loadGame = loadGame;
+globalThis.resetGame = resetGame;
