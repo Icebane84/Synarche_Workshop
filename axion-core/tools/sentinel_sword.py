@@ -67,6 +67,7 @@ import os
 import platform
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 # Configure Logging
@@ -99,8 +100,8 @@ def resolve_executable(cmd_name: str) -> str:
 
 def run_command(
     cmd: list[str], cwd: str | Path | None = None, description: str = "task"
-) -> None:
-    """Executes a shell command and prints status safely."""
+) -> bool:
+    """Executes a shell command safely, logs output, and returns True on success."""
     logger.info(f"\n--- [SENTINEL] Executing {description} ---")
 
     # Resolve the executable (e.g. npx -> npx.cmd) without mutating the input list
@@ -117,25 +118,30 @@ def run_command(
             resolved_cmd, cwd=working_dir, check=False, capture_output=True, text=True
         )
 
-        if result.stdout:
-            logger.info(result.stdout)
-
-        if result.stderr:
-            logger.info(f"[STDERR]:\n{result.stderr}")
-
         if result.returncode == 0:
             logger.info(f"   > {description}: SUCCESS (Clean)")
+            if result.stdout.strip():
+                logger.info(f"[STDOUT]:\n{result.stdout.strip()}")
+            return True
         else:
             logger.warning(
                 f"   > {description}: COMPLETED (Exit Code: {result.returncode})"
             )
+            if result.stdout.strip():
+                logger.info(f"[STDOUT]:\n{result.stdout.strip()}")
+            if result.stderr.strip():
+                logger.info(f"[STDERR]:\n{result.stderr.strip()}")
+            return False
 
-        logger.info(f"   > [ERROR] Command not found: {resolved_cmd[0]}")
-    except Exception:
-        logger.exception(f"   > [ERROR] Failed to execute {description}")
+    except FileNotFoundError:
+        logger.error(f"   > [ERROR] Command not found: {resolved_cmd[0]}")
+        return False
+    except Exception as e:
+        logger.exception(f"   > [ERROR] Failed to execute {description}: {e}")
+        return False
 
 
-def fix_python(target_dirs: list[str | Path]) -> None:
+def fix_python(target_dirs: list[str | Path]) -> bool:
     """Runs Ruff Auto-Fix on Python directories."""
     logger.info("\n=== PHASE 1: PYTHON TRANSMUTATION (Ruff) ===")
 
@@ -144,30 +150,35 @@ def fix_python(target_dirs: list[str | Path]) -> None:
     if not shutil.which(ruff_exe):
         logger.warning("   > [WARNING] Ruff not found. Skipping Python fix.")
         logger.warning("   > Install via: pip install ruff")
-        return
+        return False
 
+    all_success = True
     for directory in target_dirs:
         target_path = Path(directory) if isinstance(directory, str) else directory
 
         if target_path.exists():
-            run_command(
+            success_fix = run_command(
                 ["ruff", "check", "--fix", "."],
                 cwd=target_path,
                 description=f"Fixing Python in {target_path.name}",
             )
-            run_command(
+            success_fmt = run_command(
                 ["ruff", "format", "."],
                 cwd=target_path,
                 description=f"Formatting Python in {target_path.name}",
             )
+            if not success_fix or not success_fmt:
+                all_success = False
         else:
             logger.warning(f"   > [SKIP] Directory not found: {target_path}")
 
+    return all_success
 
-def fix_typescript(target_dirs: list[str | Path]) -> None:
+def fix_typescript(target_dirs: list[str | Path]) -> bool:
     """Runs ESLint Auto-Fix on TS/JS directories."""
     logger.info("\n=== PHASE 2: TYPESCRIPT TRANSMUTATION (ESLint) ===")
 
+    all_success = True
     for directory in target_dirs:
         target_path = Path(directory) if isinstance(directory, str) else directory
 
@@ -178,33 +189,83 @@ def fix_typescript(target_dirs: list[str | Path]) -> None:
                 )
                 continue
 
-            run_command(
+            success = run_command(
                 ["npx", "eslint", ".", "--fix"],
                 cwd=target_path,
                 description=f"Fixing TS/JS in {target_path.name}",
             )
+            if not success:
+                all_success = False
         else:
             logger.warning(
                 f"   > [SKIP] Target not valid for TS Linting: {target_path}"
             )
 
+    return all_success
+
+
+def fix_markdown(target_dirs: list[str | Path]) -> bool:
+    """
+    Phase 3: Markdown Transmutation
+    Executes Prettier to enforce consistent formatting across all Markdown files.
+    """
+    logger.info("\n=== PHASE 3: MARKDOWN TRANSMUTATION (Prettier) ===")
+    
+    npx_executable = resolve_executable("npx")
+    
+    if not npx_executable:
+        logger.error("   > [ERROR] 'npx' executable not found. Skipping Markdown formatting.")
+        return False
+        
+    all_success = True
+    for directory in target_dirs:
+        target_path = Path(directory) if isinstance(directory, str) else directory
+
+        if target_path.exists():
+            success = run_command(
+                ["npx", "prettier", "--write", "**/*.md", "--no-error-on-unmatched"],
+                cwd=target_path,
+                description=f"Prettier (Markdown Formatting) in {target_path.name}",
+            )
+            if not success:
+                all_success = False
+        else:
+            logger.warning(f"   > [SKIP] Directory not found: {target_path}")
+            
+    return all_success
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Sentinel Auto-Fix Tool")
     parser.add_argument(
-        "--scope", choices=["all", "python", "ts"], default="all", help="Scope of fixes"
+        "--scope", choices=["all", "python", "ts", "markdown"], default="all", help="Scope of fixes"
     )
     args = parser.parse_args()
 
     # Targets
     py_targets: list[str | Path] = [ROOT_DIR, AXION_DIR, FORGE_DIR]
     ts_targets: list[str | Path] = [PLAYGROUND_DIR, ROOT_DIR / "rosetta-stone-app"]
+    md_targets: list[str | Path] = [ROOT_DIR, AXION_DIR, FORGE_DIR, PLAYGROUND_DIR, ROOT_DIR / "rosetta-stone-app"]
+
+    overall_success = True
 
     if args.scope in ["all", "python"]:
-        fix_python(py_targets)
+        if not fix_python(py_targets):
+            overall_success = False
 
     if args.scope in ["all", "ts"]:
-        fix_typescript(ts_targets)
+        if not fix_typescript(ts_targets):
+            overall_success = False
+
+    if args.scope in ["all", "markdown"]:
+        if not fix_markdown(md_targets):
+            overall_success = False
+
+    if overall_success:
+        logger.info("\n[SENTINEL SWORD] Entropy Purge Complete. Zero Dissonance Detected.")
+        sys.exit(0)
+    else:
+        logger.warning("\n[SENTINEL SWORD] Purge Completed with Errors. Review logs above.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
