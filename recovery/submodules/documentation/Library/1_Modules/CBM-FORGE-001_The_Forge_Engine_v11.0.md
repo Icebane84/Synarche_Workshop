@@ -65,9 +65,9 @@ _(Derived from CBM-FORGE-001.json)_
 ### 4.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Coherence +5, Adaptability +5**
-    - _Mechanism_: Synthesizing artifacts correctly stabilizes the knowledge graph.
+  - _Mechanism_: Synthesizing artifacts correctly stabilizes the knowledge graph.
 - **Passive Ability**: **Forgemaster's Focus**
-    - _Effect_: Increases the success rate of automated refactors by 15%.
+  - _Effect_: Increases the success rate of automated refactors by 15%.
 
 ### 4.2 Resource Economics
 

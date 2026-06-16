@@ -33,9 +33,7 @@ def source_panel_dialog(source_id, notebook_id=None) -> None:
 def add_source(notebook_id) -> None:
     default_models = models_service.get_default_models()
     if not default_models.default_speech_to_text_model:
-        st.warning(
-            "Since there is no speech to text model selected, you can't upload audio/video files."
-        )
+        st.warning("Since there is no speech to text model selected, you can't upload audio/video files.")
     source_link = None
     source_file = None
     source_text = None
@@ -104,11 +102,7 @@ def add_source(notebook_id) -> None:
                 from api.sources_service import sources_service
 
                 # Convert transformations to IDs
-                transformation_ids = (
-                    [t.id for t in apply_transformations]
-                    if apply_transformations
-                    else []
-                )
+                transformation_ids = [t.id for t in apply_transformations] if apply_transformations else []
 
                 # Determine source type and parameters
                 if source_type == "Link":
@@ -170,9 +164,7 @@ def source_card(source, notebook_id) -> None:
         )
 
         insights = insights_service.get_source_insights(source.id)
-        st.caption(
-            f"Updated: {naturaltime(source.updated)}, **{len(insights)}** insights"
-        )
+        st.caption(f"Updated: {naturaltime(source.updated)}, **{len(insights)}** insights")
         if st.button("Expand", icon="📝", key=source.id):
             source_panel_dialog(source.id, notebook_id)
 
@@ -187,9 +179,7 @@ def source_list_item(source_id, score=None) -> None:
         return
     icon = "🔗"
 
-    with st.expander(
-        f"{icon} [{score:.2f}] **{source.title}** {naturaltime(source.updated)}"
-    ):
+    with st.expander(f"{icon} [{score:.2f}] **{source.title}** {naturaltime(source.updated)}"):
         for insight in source.insights:
             st.markdown(f"**{insight.insight_type}**")
             st.write(insight.content)

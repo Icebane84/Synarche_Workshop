@@ -11,7 +11,6 @@ Based on patterns from sblpy migration system.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 from typing import List
 
 from loguru import logger
@@ -117,36 +116,16 @@ class AsyncMigrationManager:
             AsyncMigration.from_file("open_notebook/database/migrations/10.surrealql"),
         ]
         self.down_migrations = [
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/1_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/2_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/3_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/4_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/5_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/6_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/7_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/8_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/9_down.surrealql"
-            ),
-            AsyncMigration.from_file(
-                "open_notebook/database/migrations/10_down.surrealql"
-            ),
+            AsyncMigration.from_file("open_notebook/database/migrations/1_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/2_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/3_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/4_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/5_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/6_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/7_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/8_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/9_down.surrealql"),
+            AsyncMigration.from_file("open_notebook/database/migrations/10_down.surrealql"),
         ]
         self.runner = AsyncMigrationRunner(
             up_migrations=self.up_migrations,

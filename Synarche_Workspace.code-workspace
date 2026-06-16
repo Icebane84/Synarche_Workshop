@@ -1,3 +1,4 @@
+// cspell:disable
 {
   "folders": [
     {
@@ -75,6 +76,7 @@
     ],
     "ruff.path": ["C:\\DevEnvironments\\master_env\\Scripts\\ruff.exe"],
     "ruff.importStrategy": "fromEnvironment",
+    "ruff.configuration": "${workspaceFolder:📂 WORKSPACE ROOT}/axion-core/standards/pyproject.toml",
 
     "[python]": {
       "editor.defaultFormatter": "charliermarsh.ruff",
@@ -93,7 +95,7 @@
       "editor.defaultFormatter": "biomejs.biome",
     },
     "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.defaultFormatter": "trunk.io",
     },
     "[markdown]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -159,6 +161,26 @@
       "SYNG",
       "trpc",
       "zustand",
+      "pycache",
+      "venv",
+      "mypy",
+      "dmypy",
+      "pyproject",
+      "charliermarsh",
+      "esbenp",
+      "pytest",
+      "driveupload",
+      "sonarlint",
+      "geminicodeassist",
+      "autobuild",
+      "tamasfe",
+      "configpath",
+      "sitecontext",
+      "sqltools",
+      "yzhang",
+      "dbaeumer",
+      "formulahendry",
+      "ecommerce"
     ],
 
     "search.exclude": {
@@ -199,10 +221,7 @@
     "sonarlint.rules": {
       "javascript:S106": "off",
     },
-    "sonarlint.analysisExcludesStandalone": [
-      "**/stubs/**",
-      "**/*.pyi"
-    ],
+    "sonarlint.analysisExcludesStandalone": "**/stubs/**,**/*.pyi",
     "explorer.excludeGitIgnore": false,
     "files.autoSave": "off",
     "terminal.integrated.suggest.providers": {
@@ -213,6 +232,10 @@
     "python.analysis.autoFormatStrings": true,
     "python.analysis.autoImportCompletions": true,
     "terminal.integrated.drawBoldTextInBrightColors": false,
+    // Prevent the Python extension from re-registering commands on multi-root
+    // workspace activation (suppresses 'already exists' crash on second folder).
+    "python.disableInstallationCheck": true,
+    "python.experiments.optInto": [],
     "markdown.server.log": "debug",
     "python.analysis.referencesCodeLens": true,
     "python.analysis.inlayHints.variableTypes": true,

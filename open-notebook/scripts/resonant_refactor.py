@@ -4,9 +4,7 @@ import re
 from pathlib import Path
 
 # Paths
-VAULT_ROOT = Path(
-    r"c:\Users\Chris\Synarche_Workspace\where_light_fades\where_light_fades"
-)
+VAULT_ROOT = Path(r"c:\Users\Chris\Synarche_Workspace\where_light_fades\where_light_fades")
 OUTPUT_DIR = Path(r"c:\Users\Chris\Synarche_Workspace\open-notebook\data")
 OUTPUT_FILE = OUTPUT_DIR / "semantic_anchors.csv"
 
@@ -33,16 +31,12 @@ def parse_frontmatter(content):
 
     tag_match = TAGS_PATTERN.search(yaml_text)
     if tag_match:
-        tags = [
-            t.strip("- ").strip() for t in tag_match.group(1).split("\n") if t.strip()
-        ]
+        tags = [t.strip("- ").strip() for t in tag_match.group(1).split("\n") if t.strip()]
         metadata["tags"] = "; ".join(tags)
 
     rel_match = RELATIONS_PATTERN.search(yaml_text)
     if rel_match:
-        rels = [
-            r.strip("- ").strip() for r in rel_match.group(1).split("\n") if r.strip()
-        ]
+        rels = [r.strip("- ").strip() for r in rel_match.group(1).split("\n") if r.strip()]
         metadata["relations"] = "; ".join(rels)
 
     return metadata
@@ -85,9 +79,7 @@ def extract_shard(content, filename_stem):
             continue
 
         # First Level 1 or 2 header that isn't boilerplate is the name
-        if (
-            clean.startswith("# ") or clean.startswith("## ")
-        ) and not found_good_header:
+        if (clean.startswith("# ") or clean.startswith("## ")) and not found_good_header:
             name = clean.lstrip("# ").strip("*_")
             found_good_header = True
             continue

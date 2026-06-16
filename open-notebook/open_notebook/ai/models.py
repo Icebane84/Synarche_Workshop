@@ -23,9 +23,7 @@ class Model(ObjectModel):
 
     @classmethod
     async def get_models_by_type(cls, model_type):
-        models = await repo_query(
-            "SELECT * FROM model WHERE type=$model_type;", {"model_type": model_type}
-        )
+        models = await repo_query("SELECT * FROM model WHERE type=$model_type;", {"model_type": model_type})
         return [Model(**model) for model in models]
 
 
@@ -129,9 +127,9 @@ class ModelManager:
         if not model_id:
             return None
         model = await self.get_model(model_id, **kwargs)
-        assert model is None or isinstance(
-            model, SpeechToTextModel
-        ), f"Expected SpeechToTextModel but got {type(model)}"
+        assert model is None or isinstance(model, SpeechToTextModel), (
+            f"Expected SpeechToTextModel but got {type(model)}"
+        )
         return model
 
     async def get_text_to_speech(self, **kwargs) -> TextToSpeechModel | None:
@@ -141,9 +139,9 @@ class ModelManager:
         if not model_id:
             return None
         model = await self.get_model(model_id, **kwargs)
-        assert model is None or isinstance(
-            model, TextToSpeechModel
-        ), f"Expected TextToSpeechModel but got {type(model)}"
+        assert model is None or isinstance(model, TextToSpeechModel), (
+            f"Expected TextToSpeechModel but got {type(model)}"
+        )
         return model
 
     async def get_embedding_model(self, **kwargs) -> EmbeddingModel | None:
@@ -153,9 +151,7 @@ class ModelManager:
         if not model_id:
             return None
         model = await self.get_model(model_id, **kwargs)
-        assert model is None or isinstance(
-            model, EmbeddingModel
-        ), f"Expected EmbeddingModel but got {type(model)}"
+        assert model is None or isinstance(model, EmbeddingModel), f"Expected EmbeddingModel but got {type(model)}"
         return model
 
     async def get_default_model(self, model_type: str, **kwargs) -> ModelType | None:
@@ -172,9 +168,7 @@ class ModelManager:
         if model_type == "chat":
             model_id = defaults.default_chat_model
         elif model_type == "transformation":
-            model_id = (
-                defaults.default_transformation_model or defaults.default_chat_model
-            )
+            model_id = defaults.default_transformation_model or defaults.default_chat_model
         elif model_type == "tools":
             model_id = defaults.default_tools_model or defaults.default_chat_model
         elif model_type == "embedding":

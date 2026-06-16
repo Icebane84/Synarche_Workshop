@@ -39,7 +39,6 @@ artifact_anchor:
 
 import random  # Placeholder for randomness in "Intuition" simulation
 
-
 class SophiaInterface:
     """The Soul of the Synarche.
     Provides Intuition, Creation, and Evaluation services.

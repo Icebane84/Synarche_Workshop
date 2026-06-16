@@ -44,32 +44,12 @@ async def get_notebooks(
             NotebookResponse(
                 id=str(nb.id if hasattr(nb, "id") else nb.get("id", "")),
                 name=nb.name if hasattr(nb, "name") else nb.get("name", ""),
-                description=(
-                    nb.description
-                    if hasattr(nb, "description")
-                    else nb.get("description", "")
-                ),
-                archived=(
-                    nb.archived
-                    if hasattr(nb, "archived")
-                    else nb.get("archived", False)
-                ),
-                created=str(
-                    nb.created if hasattr(nb, "created") else nb.get("created", "")
-                ),
-                updated=str(
-                    nb.updated if hasattr(nb, "updated") else nb.get("updated", "")
-                ),
-                source_count=(
-                    nb.source_count
-                    if hasattr(nb, "source_count")
-                    else nb.get("source_count", 0)
-                ),
-                note_count=(
-                    nb.note_count
-                    if hasattr(nb, "note_count")
-                    else nb.get("note_count", 0)
-                ),
+                description=(nb.description if hasattr(nb, "description") else nb.get("description", "")),
+                archived=(nb.archived if hasattr(nb, "archived") else nb.get("archived", False)),
+                created=str(nb.created if hasattr(nb, "created") else nb.get("created", "")),
+                updated=str(nb.updated if hasattr(nb, "updated") else nb.get("updated", "")),
+                source_count=(nb.source_count if hasattr(nb, "source_count") else nb.get("source_count", 0)),
+                note_count=(nb.note_count if hasattr(nb, "note_count") else nb.get("note_count", 0)),
             )
             for nb in result
         ]
@@ -105,9 +85,7 @@ async def create_notebook(notebook: NotebookCreate):
         raise HTTPException(status_code=500, detail=f"Error creating notebook: {e!s}")
 
 
-@router.get(
-    "/notebooks/{notebook_id}/delete-preview", response_model=NotebookDeletePreview
-)
+@router.get("/notebooks/{notebook_id}/delete-preview", response_model=NotebookDeletePreview)
 async def get_notebook_delete_preview(notebook_id: str):
     """Get a preview of what will be deleted when this notebook is deleted."""
     try:
@@ -263,12 +241,8 @@ async def add_source_to_notebook(notebook_id: str, source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(
-            f"Error linking source {source_id} to notebook {notebook_id}: {e!s}"
-        )
-        raise HTTPException(
-            status_code=500, detail=f"Error linking source to notebook: {e!s}"
-        )
+        logger.error(f"Error linking source {source_id} to notebook {notebook_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error linking source to notebook: {e!s}")
 
 
 @router.delete("/notebooks/{notebook_id}/sources/{source_id}")
@@ -293,12 +267,8 @@ async def remove_source_from_notebook(notebook_id: str, source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(
-            f"Error removing source {source_id} from notebook {notebook_id}: {e!s}"
-        )
-        raise HTTPException(
-            status_code=500, detail=f"Error removing source from notebook: {e!s}"
-        )
+        logger.error(f"Error removing source {source_id} from notebook {notebook_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error removing source from notebook: {e!s}")
 
 
 @router.delete("/notebooks/{notebook_id}", response_model=NotebookDeleteResponse)
@@ -321,9 +291,7 @@ async def delete_notebook(
         if not notebook:
             raise HTTPException(status_code=404, detail="Notebook not found")
 
-        result = await notebook.delete(
-            delete_exclusive_sources=delete_exclusive_sources
-        )
+        result = await notebook.delete(delete_exclusive_sources=delete_exclusive_sources)
 
         return NotebookDeleteResponse(
             message="Notebook deleted successfully",

@@ -1,32 +1,33 @@
 """
 artifact_anchor:
-  id: SYNG.Link.Forge
-  version: v15.0 [OMEGA]
-  provenance: '2026-05-28'
-  domain: SYNG
-  celestial_class: STAR
-  tier: LINK
-  state: CANONIZED
-  ethos: SOVEREIGN_SYNERGISTIC_LINK
-  relations: []
+id: SYNG.Link.Forge
+version: v15.0 [OMEGA]
+provenance: '2026-05-28'
+domain: SYNG
+celestial_class: STAR
+tier: LINK
+state: CANONIZED
+ethos: SOVEREIGN_SYNERGISTIC_LINK
+relations: []
 """
 
 """### **Block A: The Identification Lock (UIP-V15)**.
 
-| Key                 | Value                                | Description       |
-| :------------------ | :----------------------------------- | :---------------- |
-| **Artifact ID**     | `SYNG.Link.Forge`                    | The Sovereign ID. |
-| **Official Name**   | `SYNG.Link.Forge.md`                 | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**                    | The Standard.     |
-| **Domain**          | `SYNG`                               | The Subject.      |
-| **Celestial Class** | `[STAR]`                             | The Weight.       |
-| **Evolution**       | `Operational`                        | The Maturity.     |
-| **Status**          | `[CANONIZED]`                        | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix`    | The Network.      |
+| Key                 | Value                             | Description       |
+| :------------------ | :-------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.Link.Forge`                 | The Sovereign ID. |
+| **Official Name**   | `SYNG.Link.Forge.md`              | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**          | `SYNG`                            | The Subject.      |
+| **Celestial Class** | `[STAR]`                          | The Weight.       |
+| **Evolution**       | `Operational`                     | The Maturity.     |
+| **Status**          | `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 **The Link Axiom: Ingestion Conveyor (Law 21)**
+
 > Ethos: Automation of knowledge manifestation.
-"""
+> """
 
 This **CMD: FORGE_LINK** execution formalizes the deep structural integration between the [GVRN.PROT.PTAS.001](https://docs.google.com/document/u/0/d/1pM87_05W-h7a9guB1-f658q8mZ8DDE9WhdpvwOUfuUk/edit) **(Ingestion)** and [**GVRN.PROT.TFE.001**](https://docs.google.com/document/u/0/d/1ywLNOl5nTaYl_HM4HSgXXhLoik08Zi03nUr0RSlaSDw/edit) **(Manifestation)** modules. By anchoring this relationship, we transition external "substrate" data into internal "sovereign" knowledge through a validated, non-destructive pipeline.
 

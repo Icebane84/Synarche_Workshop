@@ -25,9 +25,10 @@ import logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - [CSE] %(message)s",
-    stream=sys.stderr
+    stream=sys.stderr,
 )
 logger = logging.getLogger("CoherentSynthesisEngine")
+
 
 def main() -> None:
     try:
@@ -52,19 +53,22 @@ def main() -> None:
         synthesis_result = {
             "status": "SYNTHESIZED",
             "processedData": domain_data,
-            "message": f"Successfully processed by Python {sys.version.split(' ')[0]}"
+            "message": f"Successfully processed by Python {sys.version.split(' ')[0]}",
         }
 
         # 6. Flush the JSON response to standard output for TypeScript to capture
         print(json.dumps(synthesis_result))
-        sys.stdout.flush() # Ensure the buffer is cleared immediately
+        sys.stdout.flush()  # Ensure the buffer is cleared immediately
 
     except Exception as e:
         logger.exception(f"Fatal error during synthesis: {str(e)}", exc_info=True)
-        sys.exit(1) # Exiting with code > 0 tells PythonBridge.ts that it failed
+        sys.exit(1)  # Exiting with code > 0 tells PythonBridge.ts that it failed
+
 
 if __name__ == "__main__":
     main()
+
+
 def generate() -> dict:
     """
     Placeholder for the generation logic.

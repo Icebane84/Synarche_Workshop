@@ -10,7 +10,6 @@ Sources service layer using API.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Union
 
@@ -78,9 +77,7 @@ class SourcesService:
     def __init__(self) -> None:
         logger.info("Using API for sources operations")
 
-    def get_all_sources(
-        self, notebook_id: str | None = None
-    ) -> list[SourceWithMetadata]:
+    def get_all_sources(self, notebook_id: str | None = None) -> list[SourceWithMetadata]:
         """Get all sources with optional notebook filtering."""
         sources_data = api_client.get_sources(notebook_id=notebook_id)
         # Convert API response to SourceWithMetadata objects
@@ -91,16 +88,8 @@ class SourcesService:
                 topics=source_data["topics"],
                 asset=(
                     Asset(
-                        file_path=(
-                            source_data["asset"]["file_path"]
-                            if source_data["asset"]
-                            else None
-                        ),
-                        url=(
-                            source_data["asset"]["url"]
-                            if source_data["asset"]
-                            else None
-                        ),
+                        file_path=(source_data["asset"]["file_path"] if source_data["asset"] else None),
+                        url=(source_data["asset"]["url"] if source_data["asset"] else None),
                     )
                     if source_data["asset"]
                     else None
@@ -127,11 +116,7 @@ class SourcesService:
             full_text=source_data["full_text"],
             asset=(
                 Asset(
-                    file_path=(
-                        source_data["asset"]["file_path"]
-                        if source_data["asset"]
-                        else None
-                    ),
+                    file_path=(source_data["asset"]["file_path"] if source_data["asset"] else None),
                     url=source_data["asset"]["url"] if source_data["asset"] else None,
                 )
                 if source_data["asset"]
@@ -142,9 +127,7 @@ class SourcesService:
         source.created = source_data["created"]
         source.updated = source_data["updated"]
 
-        return SourceWithMetadata(
-            source=source, embedded_chunks=source_data.get("embedded_chunks", 0)
-        )
+        return SourceWithMetadata(source=source, embedded_chunks=source_data.get("embedded_chunks", 0))
 
     def create_source(
         self,
@@ -202,16 +185,8 @@ class SourcesService:
             full_text=response_data.get("full_text"),
             asset=(
                 Asset(
-                    file_path=(
-                        response_data["asset"]["file_path"]
-                        if response_data.get("asset")
-                        else None
-                    ),
-                    url=(
-                        response_data["asset"]["url"]
-                        if response_data.get("asset")
-                        else None
-                    ),
+                    file_path=(response_data["asset"]["file_path"] if response_data.get("asset") else None),
+                    url=(response_data["asset"]["url"] if response_data.get("asset") else None),
                 )
                 if response_data.get("asset")
                 else None
@@ -222,15 +197,9 @@ class SourcesService:
         source.updated = response_data["updated"]
 
         # Check if this is an async processing response
-        if (
-            response_data.get("command_id")
-            or response_data.get("status")
-            or response_data.get("processing_info")
-        ):
+        if response_data.get("command_id") or response_data.get("status") or response_data.get("processing_info"):
             # Ensure source_data is a dict for accessing attributes
-            source_data_dict = (
-                source_data if isinstance(source_data, dict) else source_data[0]
-            )
+            source_data_dict = source_data if isinstance(source_data, dict) else source_data[0]
             # Return enhanced result for async processing
             return SourceProcessingResult(
                 source=source,
@@ -322,9 +291,7 @@ class SourcesService:
         source_data = api_client.update_source(source.id, **updates)
 
         # Ensure source_data is a dict
-        source_data_dict = (
-            source_data if isinstance(source_data, dict) else source_data[0]
-        )
+        source_data_dict = source_data if isinstance(source_data, dict) else source_data[0]
 
         # Update the source object with the response
         source.title = source_data_dict["title"]

@@ -38,7 +38,9 @@ def synarche_audit(func: Callable[..., Any]) -> Callable[..., Any]:
     """Architectural wrapper for standardized logging compliance (re-imported for context)."""
 
     @functools.wraps(func)
-    async def wrapper(*args: Any, **kwargs: Any) -> Any:  # Changed to async for compatibility
+    async def wrapper(
+        *args: Any, **kwargs: Any
+    ) -> Any:  # Changed to async for compatibility
 
         start_time = time.perf_counter()
         logger.debug(f"Executing {func.__name__} | Args: {args} | Kwargs: {kwargs}")
@@ -71,7 +73,9 @@ class MemoryWeaverAgent:
     def __init__(self, target_vault: str = "Cognitive Loom"):
         self.target_vault = target_vault
         self.weaver_id = f"MEM-PROC-{id(self)}"
-        logger.info(f"Initialized MemoryWeaverAgent [{self.weaver_id}] targeting {self.target_vault}")
+        logger.info(
+            f"Initialized MemoryWeaverAgent [{self.weaver_id}] targeting {self.target_vault}"
+        )
 
     def _extract_timestamp(self, log_entry: str) -> datetime:
         timestamp_str = log_entry.split(" - ", maxsplit=1)[0]
@@ -106,19 +110,27 @@ class MemoryWeaverAgent:
             if is_json:
                 timestamp_str = log_data.get("timestamp", log_data.get("asctime", ""))
                 try:
-                    timestamp = datetime.fromisoformat(timestamp_str) if timestamp_str else datetime.now()
+                    timestamp = (
+                        datetime.fromisoformat(timestamp_str)
+                        if timestamp_str
+                        else datetime.now()
+                    )
                 except ValueError:
                     timestamp = datetime.now()
                 full_message = log_text
                 stack_trace = log_data.get("exc_info", log_data.get("stack_trace"))
                 if not stack_trace:
-                     full_message, stack_trace = self._isolate_traceback(log_text)
+                    full_message, stack_trace = self._isolate_traceback(log_text)
             else:
                 timestamp = self._extract_timestamp(log_entry)
                 full_message, stack_trace = self._isolate_traceback(log_entry)
 
             try:
-                error_summary = full_message.split("CRITICAL FAILURE in ")[1].split(":", 1)[0] if "CRITICAL FAILURE in " in full_message else "Unknown Component"
+                error_summary = (
+                    full_message.split("CRITICAL FAILURE in ")[1].split(":", 1)[0]
+                    if "CRITICAL FAILURE in " in full_message
+                    else "Unknown Component"
+                )
             except (IndexError, ValueError):
                 error_summary = "Unknown Component"
 
@@ -132,7 +144,7 @@ class MemoryWeaverAgent:
                 "status": "Awaiting Root Cause Analysis",
                 "weaver_id": self.weaver_id,
             }
-            
+
             # Simulate storing in Eidetic Contextual Memory Matrix
             print(
                 f"[{self.weaver_id}]: Stored processed error in {self.target_vault}: {processed_data['summary']}"
@@ -141,12 +153,16 @@ class MemoryWeaverAgent:
             return processed_data
 
         elif "Database connection failed" in log_text:
-            print(f"[{self.weaver_id}]: Database error identified, marking for network check.")
+            print(
+                f"[{self.weaver_id}]: Database error identified, marking for network check."
+            )
             await asyncio.sleep(0.03)
             return {"type": "DB_ERROR", "line": log_text, "weaver_id": self.weaver_id}
 
         else:
-            logger.info(f"[{self.weaver_id}]: Log entry appears non-critical or already processed.")
+            logger.info(
+                f"[{self.weaver_id}]: Log entry appears non-critical or already processed."
+            )
             return None
 
 

@@ -24,5 +24,5 @@ Every piece of data, file, or block ingested or committed must pass the four-sta
 
 ## Zero Entropy Mandate
 
-* **Eradicate Debt:** Actively locate and eliminate shadow variables, dead code, and stale comments.
-* **Audit Registry:** Keep all registries aligned and strictly verified before committing.
+- **Eradicate Debt:** Actively locate and eliminate shadow variables, dead code, and stale comments.
+- **Audit Registry:** Keep all registries aligned and strictly verified before committing.

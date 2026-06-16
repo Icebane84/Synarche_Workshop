@@ -1,6 +1,6 @@
 {
     "name": "@synarche/design-system",
-    "version": "1.0.0",
+    "version": "15.0.0",
     "description": "Core design system components and tokens for Synarche Workspace.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",

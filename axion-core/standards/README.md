@@ -1,3 +1,5 @@
+""" artifact_anchor: id: GVRN.Standards.SignPost version: v15.0 [OMEGA] domain: GVRN status: CANONIZED """
+
 # /standards — The Law Substrate
 
 > **"Standards are not suggestions. They are the immutable grammar of the system."**
@@ -34,7 +36,7 @@ executable CODE in this directory — only law.
 
 |
 
-- ***
+---
 
 ## Law of Primacy
 
@@ -69,4 +71,17 @@ outside governance.
 
 ---
 
+## Actionable Prompt Packet (APP)
+
+---
+
+- **Directive:** Ensure any new TOOL configuration added to this directory is registered in `pyproject.toml` or the
+  corresponding tool chain config, and aligned with the coding standards in `_governance/02_GVRN/`.
+
+---
+
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Standards.SignPost VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-24`
+
+## [ARTIFACT END]
+
+---

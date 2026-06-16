@@ -157,7 +157,9 @@ class StructureEnforcer:
         status = (
             "CRYSTALLINE"
             if score > RANK_CRYSTALLINE
-            else "STABLE" if score > RANK_STABLE else "DEGRADING"
+            else "STABLE"
+            if score > RANK_STABLE
+            else "DEGRADING"
         )
         logger.info(f"RANK: {status} | COHERENCE: {score:.1f}%")
 

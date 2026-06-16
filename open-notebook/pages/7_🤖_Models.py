@@ -1,12 +1,10 @@
 import os
 
-import nest_asyncio
-
 # nest_asyncio.apply()
-
 import streamlit as st
 from esperanto import AIFactory
 
+import nest_asyncio
 from api.models_service import models_service
 from pages.components.model_selector import model_selector
 from pages.stream_app.utils import setup_page
@@ -43,8 +41,7 @@ def check_available_providers():
         and os.environ.get("GOOGLE_APPLICATION_CREDENTIALS") is not None
     )
     provider_status["google"] = (
-        os.environ.get("GOOGLE_API_KEY") is not None
-        or os.environ.get("GEMINI_API_KEY") is not None
+        os.environ.get("GOOGLE_API_KEY") is not None or os.environ.get("GEMINI_API_KEY") is not None
     )
     provider_status["openrouter"] = os.environ.get("OPENROUTER_API_KEY") is not None
     provider_status["anthropic"] = os.environ.get("ANTHROPIC_API_KEY") is not None
@@ -58,9 +55,7 @@ def check_available_providers():
     )
     provider_status["mistral"] = os.environ.get("MISTRAL_API_KEY") is not None
     provider_status["deepseek"] = os.environ.get("DEEPSEEK_API_KEY") is not None
-    provider_status["openai-compatible"] = (
-        os.environ.get("OPENAI_COMPATIBLE_BASE_URL") is not None
-    )
+    provider_status["openai-compatible"] = os.environ.get("OPENAI_COMPATIBLE_BASE_URL") is not None
     available_providers = [k for k, v in provider_status.items() if v]
     unavailable_providers = [k for k, v in provider_status.items() if not v]
 
@@ -119,17 +114,13 @@ def add_model_form(model_type, container_key, configured_providers):
 
         if st.form_submit_button("Add Model"):
             if model_name:
-                models_service.create_model(
-                    name=model_name, provider=provider, model_type=model_type
-                )
+                models_service.create_model(name=model_name, provider=provider, model_type=model_type)
                 st.success("Model added!")
                 st.rerun()
 
 
 # Helper function to handle default model selection with auto-save
-def handle_default_selection(
-    label, key, current_value, help_text, model_type, caption=None
-):
+def handle_default_selection(label, key, current_value, help_text, model_type, caption=None):
     selected_model = model_selector(
         label,
         key,
@@ -167,18 +158,18 @@ for model in all_models:
         models_by_type[model.type].append(model)
 
 
-st.markdown("""
+st.markdown(
+    """
 **Model Management Guide:** For optimal performance, refer to [Which model to choose?](https://github.com/lfnovo/open-notebook/blob/main/docs/models.md) 
 You can test models in the [Transformations](Transformations) page.
 """
-
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 )
 
 # Language Models Section
@@ -195,9 +186,7 @@ with st.container(border=True):
                 with subcol1:
                     st.markdown(f"• {model.provider}/{model.name}")
                 with subcol2:
-                    if st.button(
-                        "🗑️", key=f"delete_lang_{model.id}", help="Delete model"
-                    ):
+                    if st.button("🗑️", key=f"delete_lang_{model.id}", help="Delete model"):
                         models_service.delete_model(model.id)
                         st.rerun()
         else:
@@ -248,10 +237,7 @@ with st.container(border=True):
         )
 
     # Show warning if mandatory language models are missing
-    if (
-        not default_models.default_chat_model
-        or not default_models.default_transformation_model
-    ):
+    if not default_models.default_chat_model or not default_models.default_transformation_model:
         st.warning(
             "⚠️ Please select a Chat Model and Transformation Model - these are required for Open Notebook to function properly."
         )
@@ -274,9 +260,7 @@ with st.container(border=True):
                 with subcol1:
                     st.markdown(f"• {model.provider}/{model.name}")
                 with subcol2:
-                    if st.button(
-                        "🗑️", key=f"delete_emb_{model.id}", help="Delete model"
-                    ):
+                    if st.button("🗑️", key=f"delete_emb_{model.id}", help="Delete model"):
                         models_service.delete_model(model.id)
                         st.rerun()
         else:
@@ -293,9 +277,7 @@ with st.container(border=True):
 
         # Show warning if no default embedding model is selected
         if not default_models.default_embedding_model:
-            st.warning(
-                "⚠️ Please select a default Embedding Model - this is required for search functionality."
-            )
+            st.warning("⚠️ Please select a default Embedding Model - this is required for search functionality.")
 
     with col2:
         add_model_form("embedding", "main", available_providers)
@@ -314,9 +296,7 @@ with st.container(border=True):
                 with subcol1:
                     st.markdown(f"• {model.provider}/{model.name}")
                 with subcol2:
-                    if st.button(
-                        "🗑️", key=f"delete_tts_{model.id}", help="Delete model"
-                    ):
+                    if st.button("🗑️", key=f"delete_tts_{model.id}", help="Delete model"):
                         models_service.delete_model(model.id)
                         st.rerun()
         else:
@@ -352,9 +332,7 @@ with st.container(border=True):
                 with subcol1:
                     st.markdown(f"• {model.provider}/{model.name}")
                 with subcol2:
-                    if st.button(
-                        "🗑️", key=f"delete_stt_{model.id}", help="Delete model"
-                    ):
+                    if st.button("🗑️", key=f"delete_stt_{model.id}", help="Delete model"):
                         models_service.delete_model(model.id)
                         st.rerun()
         else:
@@ -370,9 +348,7 @@ with st.container(border=True):
 
         # Show info if no default STT model is selected
         if not default_models.default_speech_to_text_model:
-            st.info(
-                "ℹ️ Select a default STT model to enable audio transcription features."
-            )
+            st.info("ℹ️ Select a default STT model to enable audio transcription features.")
 
     with col2:
         add_model_form("speech_to_text", "main", available_providers)

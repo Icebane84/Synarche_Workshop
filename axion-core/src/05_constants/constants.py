@@ -10,4 +10,3 @@ artifact_anchor:
   ethos: SOVEREIGN_LOGIC_COMPONENT
   relations: []
 """
-

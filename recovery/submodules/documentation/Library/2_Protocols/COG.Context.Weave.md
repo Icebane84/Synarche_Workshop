@@ -22,20 +22,20 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `COG.Context.Weave` |
-| **2. Official Name** | `COG.Context.Weave.md` |
-| **3. Version** | **v13.0 (Canonized)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `COG` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[COMET]` |
-| **8. Tier** | **Operational / Engine** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Loom of Wisdom** |
-| **11. Catalyst** | **Batch 002 Transmutation** |
-| **12. Relations** | `REPLACES: AOP-CW-001, INPUT_FOR: COG.Synthesis.Master` |
+| Field                  | Value                                                   |
+| :--------------------- | :------------------------------------------------------ |
+| **1. Artifact ID**     | `COG.Context.Weave`                                     |
+| **2. Official Name**   | `COG.Context.Weave.md`                                  |
+| **3. Version**         | **v13.0 (Canonized)**                                   |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                           |
+| **5. Domain**          | `COG`                                                   |
+| **6. Evolution**       | **Cognitive Ascension**                                 |
+| **7. Celestial Class** | `[COMET]`                                               |
+| **8. Tier**            | **Operational / Engine**                                |
+| **9. State**           | `[ACTIVE]`                                              |
+| **10. Ethos**          | **The Loom of Wisdom**                                  |
+| **11. Catalyst**       | **Batch 002 Transmutation**                             |
+| **12. Relations**      | `REPLACES: AOP-CW-001, INPUT_FOR: COG.Synthesis.Master` |
 
 ---
 
@@ -77,10 +77,10 @@ graph TD
 
 **Usage**: `CMD: ContextWeave --target:[Concept] --focal_points:[ID_List]`
 
-| Parameter | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `target_concept` | String | Yes | The epicenter for the weave. |
-| `focal_points` | List | Yes | Nexus points for contextual anchoring. |
+| Parameter        | Type   | Required | Description                            |
+| :--------------- | :----- | :------- | :------------------------------------- |
+| `target_concept` | String | Yes      | The epicenter for the weave.           |
+| `focal_points`   | List   | Yes      | Nexus points for contextual anchoring. |
 
 ---
 

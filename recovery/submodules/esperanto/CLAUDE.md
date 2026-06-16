@@ -68,11 +68,11 @@ See detailed documentation in subdirectory CLAUDE.md files.
 ---
 
 - **[src/esperanto/providers/](src/esperanto/providers/CLAUDE.md)**: All provider implementations
-    - **[llm/](src/esperanto/providers/llm/CLAUDE.md)**: Language models (OpenAI, Anthropic, Google, etc.)
-    - **[embedding/](src/esperanto/providers/embedding/CLAUDE.md)**: Embedding models (OpenAI, Jina, Voyage, etc.)
-    - **[reranker/](src/esperanto/providers/reranker/CLAUDE.md)**: Reranking models (Jina, Voyage, Transformers)
-    - **[stt/](src/esperanto/providers/stt/CLAUDE.md)**: Speech-to-text (OpenAI, Groq, Google, Azure)
-    - **[tts/](src/esperanto/providers/tts/CLAUDE.md)**: Text-to-speech (OpenAI, ElevenLabs, Google, Azure)
+  - **[llm/](src/esperanto/providers/llm/CLAUDE.md)**: Language models (OpenAI, Anthropic, Google, etc.)
+  - **[embedding/](src/esperanto/providers/embedding/CLAUDE.md)**: Embedding models (OpenAI, Jina, Voyage, etc.)
+  - **[reranker/](src/esperanto/providers/reranker/CLAUDE.md)**: Reranking models (Jina, Voyage, Transformers)
+  - **[stt/](src/esperanto/providers/stt/CLAUDE.md)**: Speech-to-text (OpenAI, Groq, Google, Azure)
+  - **[tts/](src/esperanto/providers/tts/CLAUDE.md)**: Text-to-speech (OpenAI, ElevenLabs, Google, Azure)
 
 * **[src/esperanto/common_types/](src/esperanto/common_types/CLAUDE.md)**: Response types and models
 * **[src/esperanto/utils/](src/esperanto/utils/CLAUDE.md)**: Timeout, SSL, caching utilities

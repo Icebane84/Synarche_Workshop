@@ -9,7 +9,9 @@ artifact_anchor:
   state: ACTIVE
   ethos: SOVEREIGN_COMPUTE_COMPONENT
   relations: []
+"""
 
+"""
 # TOOL-SENT-006: The Sentinel's Sword (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)

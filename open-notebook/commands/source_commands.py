@@ -88,9 +88,7 @@ async def process_source_command(
 
         # Update source with command reference
         source.command = (
-            ensure_record_id(input_data.execution_context.command_id)
-            if input_data.execution_context
-            else None
+            ensure_record_id(input_data.execution_context.command_id) if input_data.execution_context else None
         )
         await source.save()
 
@@ -113,19 +111,13 @@ async def process_source_command(
         processed_source = result["source"]
 
         # 4. Gather processing results (notebook associations handled by source_graph)
-        embedded_chunks = (
-            await processed_source.get_embedded_chunks() if input_data.embed else 0
-        )
+        embedded_chunks = await processed_source.get_embedded_chunks() if input_data.embed else 0
         insights_list = await processed_source.get_insights()
         insights_created = len(insights_list)
 
         processing_time = time.time() - start_time
-        logger.info(
-            f"Successfully processed source: {processed_source.id} in {processing_time:.2f}s"
-        )
-        logger.info(
-            f"Created {insights_created} insights and {embedded_chunks} embedded chunks"
-        )
+        logger.info(f"Successfully processed source: {processed_source.id} in {processing_time:.2f}s")
+        logger.info(f"Created {insights_created} insights and {embedded_chunks} embedded chunks")
 
         return SourceProcessingOutput(
             success=True,

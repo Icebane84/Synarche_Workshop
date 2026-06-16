@@ -7,7 +7,9 @@ import sys
 from uam.cli import execute_pipeline
 
 if __name__ == "__main__":
-    target_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    target_dir = os.path.dirname(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    )
     strict_mode = False
 
     args = sys.argv[1:]

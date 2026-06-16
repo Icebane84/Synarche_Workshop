@@ -28,6 +28,7 @@ if hasattr(sys.stderr, "reconfigure"):
     except Exception:
         pass
 
+
 class DiagnosticReporter:
     @staticmethod
     def print_section_header(title: str):
@@ -40,36 +41,54 @@ class DiagnosticReporter:
         """Prints a structured group of warnings/errors for an individual processed file."""
         file_has_errors = any(d["severity"] == "ERROR" for d in diagnostics)
         file_has_warnings = any(d["severity"] == "WARNING" for d in diagnostics)
-        
-        status_tag = "FAIL" if file_has_errors else "DRIFT" if file_has_warnings else "INFO"
+
+        status_tag = (
+            "FAIL" if file_has_errors else "DRIFT" if file_has_warnings else "INFO"
+        )
         print(f"\n[{status_tag}] {rel_path}")
-        
+
         for diag in diagnostics:
             # Resilient ASCII tags to guarantee CP1252 / terminal safety on Windows
             severity_tag = f"[{diag['severity']}]"
             print(f"  {severity_tag:<9} {diag['msg']}")
 
     @staticmethod
-    def print_global_audit_results(global_errors: list[str], scc_cycles: list[list[str]]):
+    def print_global_audit_results(
+        global_errors: list[str], scc_cycles: list[list[str]]
+    ):
         """Prints compiled topology cycle warnings and target verification errors."""
         DiagnosticReporter.print_section_header("V3 GLOBAL GRAPH COMPILATION")
-        
+
         if global_errors:
-            print(f"\n[FAIL] Found {len(global_errors)} Global Graph Architecture Errors:")
+            print(
+                f"\n[FAIL] Found {len(global_errors)} Global Graph Architecture Errors:"
+            )
             for ge in global_errors:
                 print(f"  - {ge}")
         else:
             print("\n[PASS] Referential integrity and layer directionality: PASS")
 
         if scc_cycles:
-            print(f"\n[WARNING] Found {len(scc_cycles)} Entangled Cycle Clusters (Strongly Connected Components):")
+            print(
+                f"\n[WARNING] Found {len(scc_cycles)} Entangled Cycle Clusters (Strongly Connected Components):"
+            )
             for cycle in scc_cycles:
                 print(f"  - Loop Cluster: {' ↔ '.join(cycle)}")
         else:
-            print("[PASS] Cycle cluster analysis: PASS (Zero circular dependency loops)")
+            print(
+                "[PASS] Cycle cluster analysis: PASS (Zero circular dependency loops)"
+            )
 
     @staticmethod
-    def print_execution_summary(processed: int, errors: int, warnings: int, sccs: int, modified: int, fails: int, mode: str):
+    def print_execution_summary(
+        processed: int,
+        errors: int,
+        warnings: int,
+        sccs: int,
+        modified: int,
+        fails: int,
+        mode: str,
+    ):
         """Prints a standard, deterministically structured run summary block."""
         DiagnosticReporter.print_section_header("ENFORCEMENT RUN SUMMARY")
         print(f"Total files matched:       {processed}")
@@ -78,6 +97,8 @@ class DiagnosticReporter:
         print(f"Entangled Cycle Clusters:  {sccs}")
         print(f"Files written/updated:     {modified}")
         print(f"Failures (system errors):  {fails}")
-        
+
         if mode == "lint":
-            print("\nLint audit complete. Run with '--interactive' or '--write-all' to reconcile.")
+            print(
+                "\nLint audit complete. Run with '--interactive' or '--write-all' to reconcile."
+            )

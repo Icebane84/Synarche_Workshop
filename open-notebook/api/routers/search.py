@@ -150,9 +150,7 @@ async def ask_knowledge_base(ask_request: AskRequest):
 
         # For streaming response
         return StreamingResponse(
-            stream_ask_response(
-                ask_request.question, strategy_model, answer_model, final_answer_model
-            ),
+            stream_ask_response(ask_request.question, strategy_model, answer_model, final_answer_model),
             media_type="text/plain",
         )
 

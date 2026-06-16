@@ -31,9 +31,7 @@ if "ask_results" not in st.session_state:
 
 def results_card(item) -> None:
     with st.container(border=True):
-        st.markdown(
-            f"[{item['final_score']:.2f}] **[{item['title']}](/?object_id={item['parent_id']})**"
-        )
+        st.markdown(f"[{item['final_score']:.2f}] **[{item['title']}](/?object_id={item['parent_id']})**")
         if "matches" in item:
             with st.expander("Matches"):
                 for match in item["matches"]:
@@ -42,9 +40,7 @@ def results_card(item) -> None:
 
 with ask_tab:
     st.subheader("Ask Your Knowledge Base (beta)")
-    st.caption(
-        "The LLM will answer your query based on the documents in your knowledge base. "
-    )
+    st.caption("The LLM will answer your query based on the documents in your knowledge base. ")
     question = st.text_input("Question", "")
     default_models = models_service.get_default_models()
     default_model = default_models.default_chat_model
@@ -145,9 +141,7 @@ with search_tab:
 
         search_results = st.session_state["search_results"].copy()
         for item in search_results:
-            item["final_score"] = item.get(
-                "relevance", item.get("similarity", item.get("score", 0))
-            )
+            item["final_score"] = item.get("relevance", item.get("similarity", item.get("score", 0)))
 
         # Sort search results by final_score in descending order
         search_results.sort(key=lambda x: x["final_score"], reverse=True)

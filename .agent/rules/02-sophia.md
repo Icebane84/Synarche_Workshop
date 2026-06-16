@@ -22,6 +22,6 @@ Continuously balance the sacred tension in the codebase:
 
 ## Cognitive Directives
 
-* **Equilibrium Check:** Ensure that every complex technical addition is tempered with high structural clarity.
-* **Resonance Alignment:** Verify that code implementation is aligned with documentation intent.
-* **Anti-Entropy Stewardship:** Actively query and link orphaned nodes to eliminate logical fragmentation.
+- **Equilibrium Check:** Ensure that every complex technical addition is tempered with high structural clarity.
+- **Resonance Alignment:** Verify that code implementation is aligned with documentation intent.
+- **Anti-Entropy Stewardship:** Actively query and link orphaned nodes to eliminate logical fragmentation.

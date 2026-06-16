@@ -60,6 +60,8 @@ from .chronicler import Chronicler
 from .crf import CausalLinter
 from .gate import HephaestusGate
 from .gaze import ArchitectsGaze
+from .lib.scaffold_weaver import ScaffoldWeaver, StubPointer
+from .lib.transclusion_binder import TransclusionBinder, BindingResult
 from .mentor import MentorsVoice
 from .oslm_gps import OSLMGPS
 from .reforger import BlockScanner
@@ -70,9 +72,13 @@ __all__ = [
     "OSLMGPS",
     "ArchitectsGaze",
     "ArtificersSoul",
+    "BindingResult",
     "BlockScanner",
     "CodeSentinel",
     "MentorsVoice",
+    "ScaffoldWeaver",
+    "StubPointer",
+    "TransclusionBinder",
 ]
 
 # ---

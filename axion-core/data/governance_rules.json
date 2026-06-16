@@ -1,0 +1,100 @@
+{
+  "_meta": {
+    "schema": "PAD-SIP.GovernanceDSL.v1",
+    "description": "Runtime governance rules for the Axion Cognitive OS. Loaded by GovernanceEngine at startup.",
+    "last_updated": "2026-06-09"
+  },
+  "rules": [
+    {
+      "id": "GOV-001",
+      "rule": "prohibit_memory_flood",
+      "description": "Reject any write that would push active node count above 100,000.",
+      "condition": {
+        "field": "active_nodes",
+        "op": "gt",
+        "value": 100000
+      },
+      "effect": "reject_memory_write",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "id": "GOV-002",
+      "rule": "trigger_decay_on_pressure",
+      "description": "Force a maintenance cycle when memory pressure exceeds 75%.",
+      "condition": {
+        "field": "memory_pressure",
+        "op": "gte",
+        "value": 0.75
+      },
+      "effect": "trigger_maintenance_cycle",
+      "priority": 90,
+      "enabled": true
+    },
+    {
+      "id": "GOV-003",
+      "rule": "contradiction_review",
+      "description": "Flag a contradiction event when novelty_score falls below 0.1 (stagnation) or spikes above 0.95 (dissonance).",
+      "condition": {
+        "field": "novelty_score",
+        "op": "lt",
+        "value": 0.1
+      },
+      "effect": "flag_contradiction",
+      "priority": 70,
+      "enabled": true
+    },
+    {
+      "id": "GOV-004",
+      "rule": "dissonance_spike_review",
+      "description": "Flag dissonance when novelty_score spikes above 0.95.",
+      "condition": {
+        "field": "novelty_score",
+        "op": "gt",
+        "value": 0.95
+      },
+      "effect": "flag_dissonance",
+      "priority": 70,
+      "enabled": true
+    },
+    {
+      "id": "GOV-005",
+      "rule": "attention_budget_gate",
+      "description": "Block non-critical actions when the attention budget drops below 0.15.",
+      "condition": {
+        "field": "attention_budget",
+        "op": "lt",
+        "value": 0.15
+      },
+      "effect": "gate_non_critical_actions",
+      "priority": 80,
+      "enabled": true
+    },
+    {
+      "id": "GOV-006",
+      "rule": "unsafe_action_block",
+      "description": "Block any action with a risk_score above 0.85 from executing.",
+      "condition": {
+        "field": "action_risk_score",
+        "op": "gt",
+        "value": 0.85
+      },
+      "effect": "block_action",
+      "priority": 95,
+      "enabled": true
+    },
+    {
+      "id": "GOV-007",
+      "rule": "pattern_mine_on_overflow",
+      "description": "Trigger the Pattern Engine (Π phase) when memory pressure exceeds 0.90.",
+      "condition": {
+        "field": "memory_pressure",
+        "op": "gte",
+        "value": 0.90
+      },
+      "effect": "trigger_pattern_mine",
+      "priority": 85,
+      "enabled": true
+    }
+  ]
+}

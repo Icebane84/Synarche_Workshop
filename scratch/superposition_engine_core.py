@@ -212,7 +212,7 @@ class SuperpositionFSM:
                 clean_c = c
                 for prefix in ["CLIENT_", "ENV_", "AUTH_"]:
                     if c.startswith(prefix):
-                        clean_c = c[len(prefix):]
+                        clean_c = c[len(prefix) :]
                         break
                 if clean_c in ClientType.__members__:
                     context_vector.append(ClientType[clean_c])
@@ -227,10 +227,10 @@ class SuperpositionFSM:
 
         # --- Caching (Performance Optimization) ---
         cached_result = await self.redis_cache.get(block_id)
-        if cached_result:
+        if isinstance(cached_result, dict):
             logger.info(f"Cache hit for BlockID: {block_id}. Bypassing transmutation.")
             self.state = ProcessStatus.COLLAPSED
-            return cached_result
+            return dict(cached_result)
 
         # --- Superposition State Management (FSM) ---
         self.state = ProcessStatus.SUPERPOSITION
@@ -265,7 +265,7 @@ superposition_engine = SuperpositionFSM()
 
 
 # --- DEMO EXECUTION (Simulates external calls) ---
-async def main():
+async def main() -> None:
     logger.info("Initializing Phoenix Superposition Engine Demo.")
 
     # Valid payload for Web Client

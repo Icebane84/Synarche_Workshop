@@ -1,0 +1,40 @@
+name: Sentinel Audit Enforcement
+
+on:
+    push:
+        branches: [main, master]
+        paths:
+            - "_governance/**/*.md"
+            - ".agent/**/*.md"
+    pull_request:
+        paths:
+            - "_governance/**/*.md"
+            - ".agent/**/*.md"
+
+jobs:
+    umbral-sentinel-scan:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: "3.12"
+
+            - name: Execute Sentinel Audit Matrix
+              run: |
+                  echo "Initiating Umbral Sentinel Protocol (AOP-SENTINEL-002)..."
+                  FAILS=0
+                  FILES=$(find _governance .agent -type f -name "*.md" 2>/dev/null || true)
+
+                  for file in $FILES; do
+                    echo "Auditing: $file"
+                    if ! python axion-core/src/hephaestus/sentinel_audit.py "$file"; then
+                      echo "::error file=$file::Sentinel Audit Failed for $file. Artifact lacks Zero Entropy compliance."
+                      FAILS=$((FAILS+1))
+                    fi
+                  done
+
+                  exit $FAILS

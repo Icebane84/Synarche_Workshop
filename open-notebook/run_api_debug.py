@@ -3,9 +3,7 @@ import subprocess
 import sys
 import time
 
-log_path = (
-    r"c:\Users\Chris\Synarche_Workspace\open-notebook\open_notebook\api_debug.log"
-)
+log_path = r"c:\Users\Chris\Synarche_Workspace\open-notebook\open_notebook\api_debug.log"
 python_exe = r"c:\Users\Chris\Synarche_Workspace\.venv\Scripts\python.exe"
 
 env = os.environ.copy()

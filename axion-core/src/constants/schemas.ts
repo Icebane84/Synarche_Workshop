@@ -12,8 +12,8 @@ artifact_anchor:
 */
 /** biome-ignore-all lint/style/useNamingConvention:false */
 
-import * as standards from "../../../_governance/13_Standardization/GVRN.Standards.json";
-import type { MetadataSchema } from "../utils/validation";
+import * as standards from "@governance/13_Standardization/GVRN.Standards.json";
+import type { MetadataSchema } from "@utils/validation";
 
 /**
  * Sovereign ID Regex: Supports legacy IDs (PRS-001) and OMEGA v15.0 standards (DOMAIN.TYPE.CLASS.SUBSYSTEM.DESCRIPTOR)

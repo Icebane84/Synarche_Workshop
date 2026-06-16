@@ -24,18 +24,18 @@
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ------------------ | :--------------------------------- |
-| **1. Artifact ID**     | `UMB-TECH-001`                     |
-| **2. Official Name**   | `UMB-TECH-001_AgentSchema_v1.0.md` |
-| **3. Version**         | **v1.0 (Anchor)**                  |
-| **4. Provenance**      | **Date Reforged: 2025-12-22**      |
-| **5. Domain**          | `ARCH`                             |
-| **6. Evolution**       | **Purposeful Drive**               |
-| **7. Celestial Class** | `[PLANET]`                         |
-| **8. Tier**            | **Operational**                    |
-| **9. State**           | `[ACTIVE]`                         |
-| **10. Ethos**          | **The Phoenix Ascension Protocol** |
-| **11. Catalyst**       | **System Refactor**                |
-| **12. Relations**      | `Pending Integration`              |
+| **1. Artifact ID** | `UMB-TECH-001` |
+| **2. Official Name** | `UMB-TECH-001_AgentSchema_v1.0.md` |
+| **3. Version** | **v1.0 (Anchor)** |
+| **4. Provenance** | **Date Reforged: 2025-12-22** |
+| **5. Domain** | `ARCH` |
+| **6. Evolution** | **Purposeful Drive** |
+| **7. Celestial Class** | `[PLANET]` |
+| **8. Tier** | **Operational** |
+| **9. State** | `[ACTIVE]` |
+| **10. Ethos** | **The Phoenix Ascension Protocol** |
+| **11. Catalyst** | **System Refactor** |
+| **12. Relations** | `Pending Integration` |
 
 ---
 

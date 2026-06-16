@@ -22,12 +22,12 @@ ONTOLOGICAL_LEXICON = {
         "classification": {
             "domain": "INFRA",
             "ontology_class": "ORCHESTRATION_ENGINE",
-            "abstraction_level": "SYSTEM"
+            "abstraction_level": "SYSTEM",
         },
         "allowed_contexts": ["COMPUTE", "INFRA", "GVRN"],
         "forbidden_contexts": ["PERSISTENCE", "DATA"],
         "ethos": "Automated artifact generation, validation, and signature compiling pipelines.",
-        "aliases": ["forge", "build_forge"]
+        "aliases": ["forge", "build_forge"],
     },
     "LEX-GVRN-001": {
         "term": "Sentinel Gate",
@@ -35,12 +35,12 @@ ONTOLOGICAL_LEXICON = {
         "classification": {
             "domain": "GVRN",
             "ontology_class": "COMPLIANCE_GATEWAY",
-            "abstraction_level": "UTILITY"
+            "abstraction_level": "UTILITY",
         },
         "allowed_contexts": ["GVRN", "TEST"],
         "forbidden_contexts": ["PRESENTATION"],
         "ethos": "Deterministic block gates that reject non-compliant structural or semantic commits.",
-        "aliases": ["sentinel", "gatekeeper"]
+        "aliases": ["sentinel", "gatekeeper"],
     },
     "LEX-CORE-001": {
         "term": "Dissonance Quest",
@@ -48,12 +48,12 @@ ONTOLOGICAL_LEXICON = {
         "classification": {
             "domain": "CORE",
             "ontology_class": "STATE_CORRECTION",
-            "abstraction_level": "UTILITY"
+            "abstraction_level": "UTILITY",
         },
         "allowed_contexts": ["CORE", "TEST", "GVRN"],
         "forbidden_contexts": [],
         "ethos": "An active debugging, testing, or refactoring campaign targeted at reducing repository entropy.",
-        "aliases": ["quest", "dissonance_resolution"]
+        "aliases": ["quest", "dissonance_resolution"],
     },
     "LEX-COGN-001": {
         "term": "Cognitive Circuit Breaker",
@@ -61,12 +61,12 @@ ONTOLOGICAL_LEXICON = {
         "classification": {
             "domain": "CORE",
             "ontology_class": "FAULT_TOLERANCE_ENGINE",
-            "abstraction_level": "SYSTEM"
+            "abstraction_level": "SYSTEM",
         },
         "allowed_contexts": ["CORE", "COMPUTE", "INFRA"],
         "forbidden_contexts": ["PRESENTATION"],
         "ethos": "Safeguard interrupt systems that halt executions if logical drifts or runtime exceptions leak.",
-        "aliases": ["circuit_breaker", "fail_halt"]
+        "aliases": ["circuit_breaker", "fail_halt"],
     },
     "LEX-NET-001": {
         "term": "Synapse",
@@ -74,12 +74,12 @@ ONTOLOGICAL_LEXICON = {
         "classification": {
             "domain": "FABRIC",
             "ontology_class": "COMMUNICATION_PROTOCOL",
-            "abstraction_level": "UTILITY"
+            "abstraction_level": "UTILITY",
         },
         "allowed_contexts": ["FABRIC", "INFRA", "CORE"],
         "forbidden_contexts": ["GOVERNANCE"],
         "ethos": "Decoupled asynchronous message or event propagation boundaries.",
-        "aliases": ["synapse", "event_bus"]
+        "aliases": ["synapse", "event_bus"],
     },
     "LEX-COMP-001": {
         "term": "Sophia",
@@ -87,12 +87,12 @@ ONTOLOGICAL_LEXICON = {
         "classification": {
             "domain": "COMPUTE",
             "ontology_class": "COGNITIVE_COMPILER",
-            "abstraction_level": "SYSTEM"
+            "abstraction_level": "SYSTEM",
         },
         "allowed_contexts": ["COMPUTE", "INFRA", "GVRN"],
         "forbidden_contexts": ["DATA"],
         "ethos": "Compilation pipelines integrating program analytics and static repository reasoning.",
-        "aliases": ["sophia", "wisdom_engine"]
+        "aliases": ["sophia", "wisdom_engine"],
     },
     "LEX-METR-001": {
         "term": "Coherence",
@@ -100,11 +100,11 @@ ONTOLOGICAL_LEXICON = {
         "classification": {
             "domain": "GVRN",
             "ontology_class": "METRIC",
-            "abstraction_level": "METRIC"
+            "abstraction_level": "METRIC",
         },
         "allowed_contexts": ["GVRN", "TEST", "CORE"],
         "forbidden_contexts": [],
         "ethos": "Mathematical index scoring structural alignment and semantic parity across documentation and code.",
-        "aliases": ["coherence", "coherence_score"]
-    }
+        "aliases": ["coherence", "coherence_score"],
+    },
 }

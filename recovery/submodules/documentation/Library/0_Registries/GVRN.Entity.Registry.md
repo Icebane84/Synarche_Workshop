@@ -22,20 +22,20 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `GVRN.Entity.Registry` |
-| **2. Official Name** | `GVRN.Entity.Registry.md` |
-| **3. Version** | **v13.0 (Sovereign Edition)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Authentic Persona** |
-| **7. Celestial Class** | `[STAR]` (Axiomatic Cornerstone) |
-| **8. Tier** | **Legendary** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **Molecular Refactor** |
-| **12. Relations** | `GOVERNS: All_Entity_States`, `DEFINES: Axion_Sentinel_Sophia` |
+| Field                  | Value                                                          |
+| :--------------------- | :------------------------------------------------------------- |
+| **1. Artifact ID**     | `GVRN.Entity.Registry`                                         |
+| **2. Official Name**   | `GVRN.Entity.Registry.md`                                      |
+| **3. Version**         | **v13.0 (Sovereign Edition)**                                  |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                                  |
+| **5. Domain**          | `GVRN`                                                         |
+| **6. Evolution**       | **Authentic Persona**                                          |
+| **7. Celestial Class** | `[STAR]` (Axiomatic Cornerstone)                               |
+| **8. Tier**            | **Legendary**                                                  |
+| **9. State**           | `[ACTIVE]`                                                     |
+| **10. Ethos**          | **Guardian of Coherence**                                      |
+| **11. Catalyst**       | **Molecular Refactor**                                         |
+| **12. Relations**      | `GOVERNS: All_Entity_States`, `DEFINES: Axion_Sentinel_Sophia` |
 
 ---
 
@@ -79,12 +79,12 @@ GVRN.Entity.Registry, MONITORS, The Sentinel enforces Registry integrity.
 
 ### **IV. Architectural Governance Primitives (AGP)**
 
-| Element | Metric / Field | Value | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Coherence Engine** | **State Vector** | `[0.98]` | Measured via **v13.0 Audit Protocols**. |
-| **Axiomatic Target** | **Drift Tolerance** | `1.00` | Goal: Zero Semantic Drift. |
-| **Foundational Defender** | **RPN** | `1` | Low risk of Identity decoherence during refactors. |
-| **Wisdom Trace** | **Lineage Score** | `11/11` | Tracks PAM milestones from Genesis to v13.0. |
+| Element                   | Metric / Field      | Value    | Purpose                                            |
+| :------------------------ | :------------------ | :------- | :------------------------------------------------- |
+| **Coherence Engine**      | **State Vector**    | `[0.98]` | Measured via **v13.0 Audit Protocols**.            |
+| **Axiomatic Target**      | **Drift Tolerance** | `1.00`   | Goal: Zero Semantic Drift.                         |
+| **Foundational Defender** | **RPN**             | `1`      | Low risk of Identity decoherence during refactors. |
+| **Wisdom Trace**          | **Lineage Score**   | `11/11`  | Tracks PAM milestones from Genesis to v13.0.       |
 
 ---
 

@@ -12,7 +12,7 @@ artifact_anchor:
 """
 
 # # AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol.
-# 
+#
 # # I. Universal Identification & Provenance (The Vector Signature)
 # | Field | Value |
 # | :--- | :--- |
@@ -27,9 +27,9 @@ artifact_anchor:
 # | **9. Status (State)** | `[ACTIVE]` |
 # | **10. Ethos** | **Guardian of Coherence** |
 # | **11. Integrity Hash** | `[UIP-V15-LOCK]` |
-# 
+#
 # ---
-# 
+#
 # ### **I.B. Axiom Reference**
 # > "The sentinel does not sleep, for entropy does not rest." — Axiom of Sentinel
 

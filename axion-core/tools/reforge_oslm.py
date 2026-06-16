@@ -165,7 +165,7 @@ def main():
             source_file = backup
 
     if not source_file or not source_file.exists():
-        print("❌ OSLM file/backup not found.".")
+        print("❌ OSLM file/backup not found.")
         return
 
     print(f"📖 Parsing {source_file}...")

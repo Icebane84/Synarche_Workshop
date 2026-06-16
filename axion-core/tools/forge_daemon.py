@@ -1,39 +1,25 @@
-"""
+﻿"""
 artifact_anchor:
   id: INFR.FORGE_DAEMON.001
   version: v15.0 [OMEGA]
-  provenance: '2026-05-27'
+  provenance: '2026-04-23'
   domain: INFRA
   celestial_class: STAR
   tier: COMPUTE
-  state: ACTIVE
-  ethos: SOVEREIGN_COMPUTE_COMPONENT
-  relations: []
-"""
-
-"""---
-# Block A: Universal Identification & Provenance (UIP-V15)
-artifact_anchor:
-  id: "INFR.FORGE.DAEMON.001"
-  version: "v15.0 [OMEGA]"
-  provenance: "2026-04-23"
-  domain: "INFRA"
-  celestial_class: "STAR"
-  tier: "COMPUTE"
-  state: "CANONIZED"
-  ethos: "ZERO-ENTROPY"
+  state: CANONIZED
+  ethos: ZERO-ENTROPY
   relations:
-    - type: "DEPENDS_ON"
-      node: "TOOL.Forge.SourceMap"
-    - type: "DEPENDS_ON"
-      node: "CODEX-LAW-03"
-    - type: "SYNERGIZES"
-      node: "GVRN.CI.ForgePR"
-    - type: "SYNERGIZES"
-      node: "NEXUS.Worker.Handshake".
----
-
-TOOL.Forge.Daemon — The Live Compiler Daemon
+    - type: DEPENDS_ON
+      node: CORE.SOURCEMAP.001
+    - type: SYNERGIZES
+      node: CORE.NEXUS_HANDSHAKE.001
+    - type: DEPENDS_ON
+      node: INFR.WATCHDOG_MONITOR.001
+    - type: DEPENDS_ON
+      node: INFR.WEBSOCKETS_RUNTIME.001
+"""
+"""
+TOOL.Forge.Daemon - The Live Compiler Daemon
 =============================================
 Canonical path: @system/ (axion-core/tools/forge_daemon.py)
 
@@ -298,3 +284,4 @@ def start_daemon(
         print("\n[!] Halting daemon...")
         observer.stop()
     observer.join()
+

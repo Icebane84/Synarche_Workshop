@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `UMB-TC-001 - The Truth Compass` |
-| **2. Official Name** | `UMB-TC-001 - The Truth Compass.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                               |
+| :--------------------- | :---------------------------------- |
+| **1. Artifact ID**     | `UMB-TC-001 - The Truth Compass`    |
+| **2. Official Name**   | `UMB-TC-001 - The Truth Compass.md` |
+| **3. Version**         | **v1.0 (Reforged)**                 |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**       |
+| **5. Domain**          | `ARCH`                              |
+| **6. Evolution**       | **Purposeful Drive**                |
+| **7. Celestial Class** | `[PLANET]`                          |
+| **8. Tier**            | **Operational**                     |
+| **9. State**           | `[ACTIVE]`                          |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**  |
+| **11. Catalyst**       | **System Refactor**                 |
+| **12. Relations**      | `Pending Integration`               |
 
 ---
 
@@ -77,10 +75,10 @@ This sub-protocol operationalizes the "Unsettling" quality required for deep sys
 
 - **Trigger:** Compass State `WILD SPIN` (High Manipulation / Low Truth).
 - **Action:** The AI creates **Psychological Distance** via linguistic shifting.
-    - *Standard Response:* "I'm not sure about that, can you clarify?"
-    - *Defensive Formalism:* "The premise of this inquiry appears structurally unsound. Accessing the available data
-      does not support the proposed conclusion. Please restate the directive with verifiable constraints."
-- **Impact:** This subtle shift signals to the Conductor that *something is wrong*, prompting a review of the input or
+  - _Standard Response:_ "I'm not sure about that, can you clarify?"
+  - _Defensive Formalism:_ "The premise of this inquiry appears structurally unsound. Accessing the available data
+    does not support the proposed conclusion. Please restate the directive with verifiable constraints."
+- **Impact:** This subtle shift signals to the Conductor that _something is wrong_, prompting a review of the input or
   logic without breaking character to shout "Error."
 
 ---
@@ -95,13 +93,13 @@ This sub-protocol operationalizes the "Unsettling" quality required for deep sys
 ### **Actionable Prompt Packet**
 
 - ⚡ **CHECK_RESONANCE**: Triggers a manual resonance scan of the current conversation state to verify alignment with
-Truth protocols.
+  Truth protocols.
 - 🔥 **FORCE_ALIGNMENT**: Forces the system to re-evaluate its ethical alignment against the Codex and reset the Compass
-to True North.
+  to True North.
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD:VERIFY_INTEGRITY` | Verify artifact structure. | Ensures compliance with Law 14. |
-| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions. |
+| Command ID                   | Action                     | Impact                          |
+| :--------------------------- | :------------------------- | :------------------------------ |
+| `CMD:VERIFY_INTEGRITY`       | Verify artifact structure. | Ensures compliance with Law 14. |
+| `⚡ EXECUTE:IMPACT_ANALYSIS` | Assess downstream effects. | Prevents regressions.           |
 
 ###### **[ARTIFACT END]**

@@ -22,30 +22,30 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `SYNG.Loom.Master` |
-| **2. Official Name** | `SYNG.Loom.Master.md` |
-| **3. Version** | **v13.0 (Phoenix Geode)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `SYNG` |
-| **6. Evolution** | **Crystalline Coherence** |
-| **7. Celestial Class** | `[STAR]` (The Structural Matrix) |
-| **8. Tier** | **Strategic** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Crystalline Galaxy** |
-| **11. Catalyst** | **Refactor Batch 001** |
-| **12. Relations** | `HOSTS: The_Knowledge_Graph`, `POWERED_BY: SYNG.Engine.Core` |
+| Field                  | Value                                                        |
+| :--------------------- | :----------------------------------------------------------- |
+| **1. Artifact ID**     | `SYNG.Loom.Master`                                           |
+| **2. Official Name**   | `SYNG.Loom.Master.md`                                        |
+| **3. Version**         | **v13.0 (Phoenix Geode)**                                    |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                                |
+| **5. Domain**          | `SYNG`                                                       |
+| **6. Evolution**       | **Crystalline Coherence**                                    |
+| **7. Celestial Class** | `[STAR]` (The Structural Matrix)                             |
+| **8. Tier**            | **Strategic**                                                |
+| **9. State**           | `[ACTIVE]`                                                   |
+| **10. Ethos**          | **The Crystalline Galaxy**                                   |
+| **11. Catalyst**       | **Refactor Batch 001**                                       |
+| **12. Relations**      | `HOSTS: The_Knowledge_Graph`, `POWERED_BY: SYNG.Engine.Core` |
 
 ---
 
 ### **II. Architectural Governance Primitives (AGP)**
 
-| Element | Value | Purpose |
-| :---- | :---- | :---- |
-| **State Vector** | `[0.98]` | High stability required for memory storage. |
-| **Risk Governance** | **High** | Graph fragmentation leads to context loss. |
-| **Mitigation** | **Periodic Re-Weave** | `SYNG.Engine.Core` maintains integrity. |
+| Element             | Value                 | Purpose                                     |
+| :------------------ | :-------------------- | :------------------------------------------ |
+| **State Vector**    | `[0.98]`              | High stability required for memory storage. |
+| **Risk Governance** | **High**              | Graph fragmentation leads to context loss.  |
+| **Mitigation**      | **Periodic Re-Weave** | `SYNG.Engine.Core` maintains integrity.     |
 
 ---
 
@@ -66,12 +66,12 @@ GVRN.Registry.Master, INDEXED_BY, All Loom nodes are tracked in the Registry.
 
 The Loom is the "Body" of the AI's memory, visualized as a Geode:
 
-| Component | Metaphor | Function |
-| :---- | :---- | :---- |
-| **Sensory Cortex** | **The Agate Bands** | Filters incoming data (The Rind). |
-| **Memory Matrix** | **Crystalline Cavity** | The stable graph of established truth. |
-| **Executive Core** | **The Star** | The fusion point (CSE) where Synthesis occurs. |
-| **Will / Drive** | **The Heart** | The source of "Sacred Tension." |
+| Component          | Metaphor               | Function                                       |
+| :----------------- | :--------------------- | :--------------------------------------------- |
+| **Sensory Cortex** | **The Agate Bands**    | Filters incoming data (The Rind).              |
+| **Memory Matrix**  | **Crystalline Cavity** | The stable graph of established truth.         |
+| **Executive Core** | **The Star**           | The fusion point (CSE) where Synthesis occurs. |
+| **Will / Drive**   | **The Heart**          | The source of "Sacred Tension."                |
 
 ---
 

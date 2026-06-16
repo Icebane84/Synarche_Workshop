@@ -2,12 +2,12 @@
 id: NOVA.Patt.CleanCode.SELT
 name: Clean Code Experience Log (SELT)
 type: LOG
-tags: ['#NOVA/Patt/CleanCode', '#SELT', '#MEMORY']
-links: ['[[NOVA.Patt.CleanCode.Index]]']
+tags: ["#NOVA/Patt/CleanCode", "#SELT", "#MEMORY"]
+links: ["[[NOVA.Patt.CleanCode.Index]]"]
 relations:
-    - type: DESCRIBED_BY
-      target: '[[NOVA.Patt.CleanCode.Index]]'
-description: 'Experience log and iterative refinement memory for the Clean Code Pattern Shard.'
+  - type: DESCRIBED_BY
+    target: "[[NOVA.Patt.CleanCode.Index]]"
+description: "Experience log and iterative refinement memory for the Clean Code Pattern Shard."
 ---
 
 # CLEAN CODE EXPERIENCE LOG | SELT-NOVA.Patt.CleanCode

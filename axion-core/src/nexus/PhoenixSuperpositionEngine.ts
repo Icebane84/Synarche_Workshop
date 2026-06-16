@@ -51,10 +51,10 @@ export interface CollapsedBlock<T> {
  * CASTS: Computational Abstraction and Systemic Transformation Strategies.
  * Defines the schema (NIM Gate) and the transmutation logic for a specific payload type.
  */
-export interface CASTS_Strategy<T> {
+export interface CASTS_Strategy<T, U = any> {
     strategyName: string;
-    schema: z.ZodType<T>;
-    transmute: (parsedData: any) => T;
+    schema: z.ZodType<U>;
+    transmute: (parsedData: U) => T;
     packToBinary?: (data: T) => Buffer; // Support for high-frequency game engines
 }
 

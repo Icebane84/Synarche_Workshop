@@ -11,35 +11,27 @@ $ARGUMENTS
 
 ## Purpose
 
-This workflow automates the transition of artifacts to the `[CANONIZED]` state, ensuring total systemic alignment and cryptographic integrity under the OMEGA/v15.0 standard.
+This workflow automates the transition of artifacts to the `[CANONIZED]` state, ensuring total systemic alignment and cryptographic integrity under the OMEGA/v15.1 standard. It embeds **Law 43 (Living Chronos)** to ensure no artifact is canonized without its narrative lineage.
 
 ---
 
 ## Trigger Execution
 
-Run the canonization ritual on a target artifact:
+When the user runs `/canonize`, the Agent MUST perform the following steps in sequence:
 
+### Step 1: Meaningful Friction (Genesis Spark Drafting)
+The Agent must analyze the session logs and draft a "Genesis Spark" narrative (1-3 sentences) explaining the struggle, context, or necessity that led to this artifact. 
+**The Agent MUST pause execution and ask the user to explicitly approve or refine this Genesis Spark.**
+
+### Step 2: Protocol Stamping
+Once approved, the Agent applies the `causal_origin` and `genesis_spark` directly into the artifact's Universal Identification & Provenance (UIP) block.
+
+### Step 3: Run the Canonization Ritual
+Run the backend ritual to validate and seal the artifact:
 ```bash
 python axion-core/scripts/canonize_ritual.py --target "{{target}}"
 ```
-
----
-
-## The Seven Gates Audit
-
-The script executes the following validations:
-
-1. **Block Map Scan**: Ensures Blocks A-G are structured.
-2. **Registry Handshake**: Confirms entry in `GVRN.Master.Registry.yaml`.
-3. **Linter Pass**: (Optional) Verifies standard markdown compliance.
-
----
-
-## The Three Seals Ritual
-
-1. **Seal of Status**: Block A status is set to `[CANONIZED]`.
-2. **Seal of Synchronicity**: Registry entries are updated with atomic precision.
-3. **Seal of the Anchor**: Block G Omni-Anchor is generated with a fresh timestamp and SHA256 fragment.
+*Note: If the `causal_origin` is missing, the registry validation will fail.*
 
 ---
 
@@ -69,7 +61,7 @@ Report to user:
 ```
 [CANONIZED] Artifact sealed.
 - Status: [CANONIZED]
+- Lineage: Anchored (Law 43)
 - Registry: Updated
-- Anchor: Block G generated
 - Hash: AR-XXX-V15-YY
 ```

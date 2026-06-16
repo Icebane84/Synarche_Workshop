@@ -313,8 +313,9 @@ class RetrievalEngine:
                 turn.get("content", turn.get("Input", "")) for turn in history[-3:]
             ]
             recent_text = " ".join([str(t) for t in turns if t is not None]).lower()
-            u1, u2 = set(recent_text.split()), set(
-                str(mem.get("content", "")).lower().split()
+            u1, u2 = (
+                set(recent_text.split()),
+                set(str(mem.get("content", "")).lower().split()),
             )
             if not u1:
                 return 0.1

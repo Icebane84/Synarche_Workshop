@@ -56,10 +56,10 @@ This Quantum Block is meticulously crafted, embodying the following CORE princip
 - **Channel:** Secure HTTPS or WebSocket.
 - **Format:** Strictly formatted JSON payloads.
 - **Inputs:**
-    - `BlockID`: UUID v4 (string). _Purpose:_ Idempotency, SELT tracking.
-    - `ContextVector`: Array of Enums (e.g., `["ENV_PROD", "CLIENT_WEB", "AUTH_VERIFIED"]`). _Purpose:_ Triggers CASTS
-      strategy selection.
-    - `RawPayload`: Dynamic JSON Object. _Purpose:_ Actual data to be processed.
+  - `BlockID`: UUID v4 (string). _Purpose:_ Idempotency, SELT tracking.
+  - `ContextVector`: Array of Enums (e.g., `["ENV_PROD", "CLIENT_WEB", "AUTH_VERIFIED"]`). _Purpose:_ Triggers CASTS
+    strategy selection.
+  - `RawPayload`: Dynamic JSON Object. _Purpose:_ Actual data to be processed.
 
 * **Error Conditions:** Missing `BlockID` (Fatal), Malformed JSON (Fatal), Type mismatch (`RawPayload` - Rejected),
   Unauthorized Token (403 Forbidden).

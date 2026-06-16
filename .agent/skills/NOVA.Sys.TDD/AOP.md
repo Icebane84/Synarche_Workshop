@@ -2,14 +2,14 @@
 id: NOVA.Sys.TDD.AOP
 name: TDD Workflow Operational Playbook (AOP)
 type: PLAYBOOK
-tags: ['#NOVA/Sys/TDD', '#AOP', '#PROCEDURE']
-links: ['[[NOVA.Sys.TDD.Index]]', '[[NOVA.Sys.TDD.Skill]]']
+tags: ["#NOVA/Sys/TDD", "#AOP", "#PROCEDURE"]
+links: ["[[NOVA.Sys.TDD.Index]]", "[[NOVA.Sys.TDD.Skill]]"]
 relations:
-    - type: IMPLEMENTS
-      target: '[[NOVA.Sys.TDD.Skill]]'
-    - type: DESCRIBED_BY
-      target: '[[NOVA.Sys.TDD.Index]]'
-description: 'Step-by-step procedures for the RED-GREEN-REFACTOR TDD cycle.'
+  - type: IMPLEMENTS
+    target: "[[NOVA.Sys.TDD.Skill]]"
+  - type: DESCRIBED_BY
+    target: "[[NOVA.Sys.TDD.Index]]"
+description: "Step-by-step procedures for the RED-GREEN-REFACTOR TDD cycle."
 ---
 
 # TDD PLAYBOOK | AOP-NOVA.Sys.TDD

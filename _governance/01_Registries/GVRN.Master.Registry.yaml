@@ -6183,6 +6183,16 @@ GVRN.Forge.Core:
   relations: "GOVERN_BY: CORE.Codex.Phoenix"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
+GVRN.Framework.Synthesis.001:
+  artifact_id: GVRN.Framework.Synthesis.001
+  content_hash: d5c1bd45566dccb461621ad1fadb2c9c1e98b08ca149a0550ac1201bd9e9d780
+  domain: GVRN
+  official_name: GVRN.Framework.Synthesis.001.md
+  parsed_relations: []
+  path: _governance/10_Governance/GVRN.Framework.Synthesis.001.md
+  relations: ""
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 GVRN.GAMEDEV.001:
   artifact_id: GVRN.GAMEDEV.001
   content_hash: c257f80f8dcc4b04868416784f79097430eec376bbd0062c05aa2955f1e02516
@@ -6449,7 +6459,7 @@ GVRN.ID.Standard:
   version: v15.0 [OMEGA]
 GVRN.ID.SynthesisInsights:
   artifact_id: GVRN.ID.SynthesisInsights
-  content_hash: 4f518067e060783cc5ca0284606586968d29eb9a5b80d7557c99a54c721a861c
+  content_hash: 8ff732096bfa2d7625c2c1898588bbd566684ca083cd12c70b18a69b6ca0fee3
   domain: GVRN
   official_name: GVRN.ID.SynthesisInsights.md
   parsed_relations: []
@@ -7720,7 +7730,7 @@ GVRN.Registry.OSLM:
   version: v15.0 [OMEGA]
 GVRN.Registry.Origins:
   artifact_id: GVRN.Registry.Origins
-  content_hash: a9e77743a66e09302c81917734f3bc29039ec6d844c46e07491a9ea0276c46b1
+  content_hash: 0f147e7844728b1418f53193d69f3b5477ac38af2a0a43dae54bde98092b3c9e
   domain: GVRN
   official_name: GVRN.Registry.Origins.md
   parsed_relations: []
@@ -8896,7 +8906,7 @@ SYNG.Link.Bidirectional:
   version: v15.0 [OMEGA]
 SYNG.Link.Forge:
   artifact_id: SYNG.Link.Forge
-  content_hash: 13fa3730d6f8e8a4813ef51e3a74d5c506aa2dbead4d294fab2402dfaa60d050
+  content_hash: a4d36d2dcbe4c44e3a18a0f9d3303c2b100f7a270e549a707e9e7626280be810
   domain: SYNG
   official_name: SYNG.Link.Forge.md
   parsed_relations: []

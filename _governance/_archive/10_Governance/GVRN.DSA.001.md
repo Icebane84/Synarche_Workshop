@@ -2,16 +2,16 @@
 
 ### **Block A: The Identification Lock (UIP-V14)**
 
-| Key                 | Value                            | Description       |
-| :------------------ | :------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.DSA.001`                        | The Sovereign ID. |
-| **Official Name**   | `GVRN.DSA.001.md`                  | The Filename.     |
-| **Version**         | **v14.0 [OMEGA]**                | The Standard.     |
-| **Domain**          | `GVRN`                           | The Subject.      |
-| **Celestial Class** | `[PLANET]`                       | The Weight.       |
-| **Evolution**       | `Cognitive Ascension`            | The Maturity.     |
-| **Status**          | `[ACTIVE]`                       | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`    | The Network.      |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.DSA.001`                | The Sovereign ID. |
+| **Official Name**   | `GVRN.DSA.001.md`             | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 ---
 
@@ -58,13 +58,13 @@ The **AOP-DSA-001** protocol governs the generation of a comprehensive and conte
 > **Context**: This block defines how this artifact plugs into the Cognitive Loom.
 > **Validation**: Must match `enums.py.RelationType`.
 
-| Relation Type    | Target ID                     | Synergy Description                              |
-| **GOVERNED_BY**  | `[[GVRN-PRIME-001]]`          | Adheres to Agile Governance standards.           |
-| **DEFINES**      | `[[AOP-UMB-GUCA-Trinity]]`    | Establishes the three-layer documentation model. |
-| **TRIGGERS**     | `[[UMB-DSA-001]]`             | Activates the doc generation engine.             |
-| **TRIGGERED_BY** | `[[GUCA-DSA-001]]`            | Invoked by the primary command interface.        |
-| **SUPPORTED_BY** | `[[COG.ContextWeave.Engine]]` | Uses context engine for content relevance.       |
-| **ALIGNED_WITH** | `[[UMB-SPINE-001]]`           | Ensures documentation aligns with core axioms.   |
+| Relation Type | Target ID | Synergy Description |
+| **GOVERNED_BY** | `[[GVRN-PRIME-001]]` | Adheres to Agile Governance standards. |
+| **DEFINES** | `[[AOP-UMB-GUCA-Trinity]]` | Establishes the three-layer documentation model. |
+| **TRIGGERS** | `[[UMB-DSA-001]]` | Activates the doc generation engine. |
+| **TRIGGERED_BY** | `[[GUCA-DSA-001]]` | Invoked by the primary command interface. |
+| **SUPPORTED_BY** | `[[COG.ContextWeave.Engine]]` | Uses context engine for content relevance. |
+| **ALIGNED_WITH** | `[[UMB-SPINE-001]]` | Ensures documentation aligns with core axioms. |
 
 ---
 
@@ -126,8 +126,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

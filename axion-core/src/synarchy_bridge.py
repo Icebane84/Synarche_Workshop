@@ -9,9 +9,7 @@ artifact_anchor:
   state: ACTIVE
   ethos: SOVEREIGN_LOGIC_COMPONENT
   relations: []
-"""
 
-"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -75,10 +73,7 @@ class SynarcheRegistry:
             """Recursively search for commands in the registry tree."""
             if isinstance(node, list):
                 for cmd in node:
-                    if (
-                        query in cmd["name"].lower()
-                        or query in cmd["description"].lower()
-                    ):
+                    if query in cmd["name"].lower() or query in cmd["description"].lower():
                         results.append(cmd)
             elif isinstance(node, dict):
                 for value in node.values():

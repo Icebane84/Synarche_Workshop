@@ -12,7 +12,7 @@ artifact_anchor:
 """
 
 # # AOP-ARCH-GAZE-001: The Architect's Gaze (Systemic Impact Analysis).
-# 
+#
 # # I. Universal Identification & Provenance (The Vector Signature)
 # | Field | Value |
 # | :--- | :--- |
@@ -27,9 +27,9 @@ artifact_anchor:
 # | **9. Status (State)** | `[ACTIVE]` |
 # | **10. Ethos** | **Foresight** |
 # | **11. Integrity Hash** | `[UIP-V15-LOCK]` |
-# 
+#
 # ---
-# 
+#
 # ### **I.B. Axiom Reference**
 # > "To see the ripple is to understand the stone." — Axiom of Gaze
 
@@ -71,14 +71,16 @@ class ArchitectsGaze:
         # Non-destructive tethering: add both to the weaver bundle
         self.weaver.add_blueprint(id_a, {"path": path_a, "type": "semantic_node"})
         self.weaver.add_blueprint(id_b, {"path": path_b, "type": "semantic_node"})
-        self.weaver.add_process(f"TETHER: {id_a} <-> {id_b} | Resonance: {resonance:.3f}")
+        self.weaver.add_process(
+            f"TETHER: {id_a} <-> {id_b} | Resonance: {resonance:.3f}"
+        )
 
         tether_report = {
             "source": id_a,
             "target": id_b,
             "resonance_score": round(resonance, 3),
             "status": "Aligned" if resonance >= 0.2 else "Dissonant",
-            "timestamp": datetime.now().isoformat()
+            "timestamp": datetime.now().isoformat(),
         }
         return tether_report
 

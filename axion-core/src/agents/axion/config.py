@@ -50,9 +50,16 @@ class AxionConfig(BaseSettings):
     GEM_ACTIVATION_SCORE: float = 1.0
 
     # InsForge Integration
-    INSFORGE_API_KEY: Optional[str] = Field(default=None, description="Admin API Key for InsForge")
-    INSFORGE_BASE_URL: Optional[str] = Field(default=None, description="Base URL for InsForge project")
-    INSFORGE_MODEL: str = Field(default="anthropic/claude-sonnet-4.5", description="Authoritative AI model for reasoning")
+    INSFORGE_API_KEY: Optional[str] = Field(
+        default=None, description="Admin API Key for InsForge"
+    )
+    INSFORGE_BASE_URL: Optional[str] = Field(
+        default=None, description="Base URL for InsForge project"
+    )
+    INSFORGE_MODEL: str = Field(
+        default="anthropic/claude-sonnet-4.5",
+        description="Authoritative AI model for reasoning",
+    )
 
     # Logging
     LOG_LEVEL: str = "INFO"
@@ -89,7 +96,7 @@ class AxionConfig(BaseSettings):
                 content = path.read_text()
                 # Split by document separator and take the functional block
                 yaml_part = content.split("---")[-1] if "---" in content else content
-                
+
                 data = yaml.safe_load(yaml_part)
                 setattr(self, attribute, data or {})
             except Exception:

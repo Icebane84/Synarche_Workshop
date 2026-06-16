@@ -81,11 +81,11 @@ Validate the 30-second loop before any code:
 
 Route to the correct skill branch based on platform:
 
-| Platform       | Skill Branch                                    | Tech Stack              |
-| -------------- | ----------------------------------------------- | ----------------------- |
-| **Web Browser**| `.agent/skills/dev/game-development/web-games/` | Phaser.js / Canvas API  |
-| **2D Desktop** | `.agent/skills/dev/game-development/2d-games/`  | Pygame / Godot GDScript |
-| **3D Desktop** | `.agent/skills/dev/game-development/`           | Three.js / Unity C#     |
+| Platform        | Skill Branch                                    | Tech Stack              |
+| --------------- | ----------------------------------------------- | ----------------------- |
+| **Web Browser** | `.agent/skills/dev/game-development/web-games/` | Phaser.js / Canvas API  |
+| **2D Desktop**  | `.agent/skills/dev/game-development/2d-games/`  | Pygame / Godot GDScript |
+| **3D Desktop**  | `.agent/skills/dev/game-development/`           | Three.js / Unity C#     |
 
 ---
 

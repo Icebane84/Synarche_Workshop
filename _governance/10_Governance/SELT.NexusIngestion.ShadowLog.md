@@ -6,20 +6,20 @@ artifact_anchor:
   provenance: "2026-04-23"
   domain: "GVRN"
   celestial_class: "MOON"
-  tier: "GOVERNANCE"
+  tier: "DATA"
   state: "CANONIZED"
   ethos: "ZERO-ENTROPY_INGESTION_LOG"
   relations:
     - type: "SYNERGIZES"
-      node: "TOOL.FORGE.DAEMON.001"
+      node: "INFR.FORGE_DAEMON.001"
     - type: "SYNERGIZES"
       node: "axion-core/src/cse/sourcemap.py"
     - type: "SYNERGIZES"
       node: "axion-core/src/nexus/nexus_worker.js"
     - type: "DEPENDS_ON"
-      node: "GVRN.WF.Finalization"
+      node: ".agent/workflows/validation/finalize_artifact.md"
     - type: "SYNERGIZES"
-      node: "SKILL.SynergisticOpportunityWeaving"
+      node: ".agent/skills/synergistic-opportunity-weaving/SKILL.md"
 ---
 
 # SELT Shadow Log — @NEXUS Transclude Ingestion

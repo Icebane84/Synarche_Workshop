@@ -19,5 +19,12 @@
     "description": "Achieve 100% coherence across all local modules.",
     "stardust_reward": 1000,
     "xp_reward": 500
+  },
+  {
+    "id": "ARCHITECT_OF_OMEGA",
+    "name": "Master Artificer",
+    "description": "Reach Level 10 in all core stats.",
+    "stardust_reward": 2000,
+    "xp_reward": 500
   }
 ]

@@ -2,7 +2,7 @@
 artifact_anchor:
   id: CORE.RPG.ASCENSION.UMB.001
   version: v15.0 [OMEGA]
-  provenance: '2026-05-27'
+  provenance: "2026-05-27"
   domain: CORE
   celestial_class: STAR
   tier: GOVERNANCE

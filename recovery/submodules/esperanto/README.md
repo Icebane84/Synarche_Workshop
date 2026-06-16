@@ -75,23 +75,23 @@ the performance of direct API calls with the convenience of a unified interface.
 
 - **Unified Interface**: Work with multiple LLM providers using a consistent API
 - **Provider Support**:
-    - OpenAI (GPT-4o, o1, o3, o4, Whisper, TTS)
-    - OpenAI-Compatible (LM Studio, Ollama, vLLM, custom endpoints)
-    - Anthropic (Claude models)
-    - OpenRouter (Access to multiple models)
-    - xAI (Grok)
-    - Perplexity (Sonar models)
-    - Groq (Mixtral, Llama, Whisper)
-    - Google GenAI (Gemini LLM, Speech-to-Text, Text-to-Speech, Embedding with native task optimization)
-    - Vertex AI (Google Cloud, LLM, Embedding, TTS)
-    - Ollama (Local deployment multiple models)
-    - Transformers (Universal local models - Qwen, CrossEncoder, BAAI, Jina, Mixedbread)
-    - ElevenLabs (Text-to-Speech, Speech-to-Text)
-    - Azure OpenAI (Chat, Embedding, Whisper, TTS)
-    - Mistral (Mistral Large, Small, Embedding, etc.)
-    - DeepSeek (deepseek-chat)
-    - Voyage (Embeddings, Reranking)
-    - Jina (Advanced embedding models with task optimization, Reranking)
+  - OpenAI (GPT-4o, o1, o3, o4, Whisper, TTS)
+  - OpenAI-Compatible (LM Studio, Ollama, vLLM, custom endpoints)
+  - Anthropic (Claude models)
+  - OpenRouter (Access to multiple models)
+  - xAI (Grok)
+  - Perplexity (Sonar models)
+  - Groq (Mixtral, Llama, Whisper)
+  - Google GenAI (Gemini LLM, Speech-to-Text, Text-to-Speech, Embedding with native task optimization)
+  - Vertex AI (Google Cloud, LLM, Embedding, TTS)
+  - Ollama (Local deployment multiple models)
+  - Transformers (Universal local models - Qwen, CrossEncoder, BAAI, Jina, Mixedbread)
+  - ElevenLabs (Text-to-Speech, Speech-to-Text)
+  - Azure OpenAI (Chat, Embedding, Whisper, TTS)
+  - Mistral (Mistral Large, Small, Embedding, etc.)
+  - DeepSeek (deepseek-chat)
+  - Voyage (Embeddings, Reranking)
+  - Jina (Advanced embedding models with task optimization, Reranking)
 
 * **Embedding Support**: Multiple embedding providers for vector representations
 
@@ -622,14 +622,14 @@ for chunk in model.chat_complete(messages, stream=True):
 OpenAI-compatible providers support both generic and provider-specific environment variables:
 
 - **Generic variables** (work for all provider types):
-    - `OPENAI_COMPATIBLE_BASE_URL` - Base URL for the endpoint
-    - `OPENAI_COMPATIBLE_API_KEY` - API key (if required)
+  - `OPENAI_COMPATIBLE_BASE_URL` - Base URL for the endpoint
+  - `OPENAI_COMPATIBLE_API_KEY` - API key (if required)
 
 * **Provider-specific variables** (take precedence over generic):
-    - Language Models: `OPENAI_COMPATIBLE_BASE_URL_LLM`, `OPENAI_COMPATIBLE_API_KEY_LLM`
-    - Embeddings: `OPENAI_COMPATIBLE_BASE_URL_EMBEDDING`, `OPENAI_COMPATIBLE_API_KEY_EMBEDDING`
-    - Speech-to-Text: `OPENAI_COMPATIBLE_BASE_URL_STT`, `OPENAI_COMPATIBLE_API_KEY_STT`
-    - Text-to-Speech: `OPENAI_COMPATIBLE_BASE_URL_TTS`, `OPENAI_COMPATIBLE_API_KEY_TTS`
+  - Language Models: `OPENAI_COMPATIBLE_BASE_URL_LLM`, `OPENAI_COMPATIBLE_API_KEY_LLM`
+  - Embeddings: `OPENAI_COMPATIBLE_BASE_URL_EMBEDDING`, `OPENAI_COMPATIBLE_API_KEY_EMBEDDING`
+  - Speech-to-Text: `OPENAI_COMPATIBLE_BASE_URL_STT`, `OPENAI_COMPATIBLE_API_KEY_STT`
+  - Text-to-Speech: `OPENAI_COMPATIBLE_BASE_URL_TTS`, `OPENAI_COMPATIBLE_API_KEY_TTS`
 
 **Configuration Precedence** (highest to lowest):
 

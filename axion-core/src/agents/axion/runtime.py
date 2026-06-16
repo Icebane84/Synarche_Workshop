@@ -56,6 +56,7 @@ MAGICIAN_MASK = "I. The Magician"
 
 # --- STANDALONE FUNCTIONS FOR DIRECT IMPORT ---
 
+
 def node_retrieve_context(state: Any) -> Any:
     """Retrieves context for the Axion Agent (synchronous import fallback)."""
     if isinstance(state, dict):
@@ -70,10 +71,19 @@ def node_retrieve_context(state: Any) -> Any:
 def node_soul_analysis(state: Any) -> Any:
     """Analyzes the input text for potential architectural risk and calculates blast radius (Phase 3.0)."""
     if not SoulImpactAnalyzer:
-        impact = {"score": 0.0, "status": "STABLE", "factors": [], "quote": "Frequencies stable."}
+        impact = {
+            "score": 0.0,
+            "status": "STABLE",
+            "factors": [],
+            "quote": "Frequencies stable.",
+        }
     else:
         analyzer = SoulImpactAnalyzer()
-        text = state.get("input", "") if isinstance(state, dict) else getattr(state, "input", "")
+        text = (
+            state.get("input", "")
+            if isinstance(state, dict)
+            else getattr(state, "input", "")
+        )
         impact = analyzer.calculate_risk(text)
 
     if isinstance(state, dict):
@@ -92,7 +102,11 @@ def _calculate_rpg_gains(state: Any) -> tuple[int, int]:
     if not ArtificersSoul:
         return xp_gain, coherence_gain
 
-    text = state.get("input", "") if isinstance(state, dict) else getattr(state, "input", "")
+    text = (
+        state.get("input", "")
+        if isinstance(state, dict)
+        else getattr(state, "input", "")
+    )
     if "def " in text or "class " in text:
         aes_score = ArtificersSoul().calculate_aes(text)
         if aes_score > 8.0:
@@ -116,14 +130,18 @@ def node_update_rpg_stats(state: Any) -> Any:
         else:
             stats = stats.model_copy(deep=True)
             stats.xp = getattr(stats, "xp", 0) + xp_gain
-            stats.coherence_index = getattr(stats, "coherence_index", 0) + coherence_gain
+            stats.coherence_index = (
+                getattr(stats, "coherence_index", 0) + coherence_gain
+            )
             state["rpg_stats"] = stats
     else:
         state = state.model_copy(deep=True)
         stats = getattr(state, "rpg_stats", None)
         if stats:
             stats.xp = getattr(stats, "xp", 0) + xp_gain
-            stats.coherence_index = getattr(stats, "coherence_index", 0) + coherence_gain
+            stats.coherence_index = (
+                getattr(stats, "coherence_index", 0) + coherence_gain
+            )
     return state
 
 
@@ -179,8 +197,16 @@ def node_sentinel(state: Dict[str, Any]) -> Dict[str, Any]:
 
 def _get_alarm_reason(soul_impact: Any) -> str:
     """Helper to format the alarm Guardian Block factor reasons and quote."""
-    factors = soul_impact.get("factors", []) if isinstance(soul_impact, dict) else getattr(soul_impact, "factors", [])
-    quote = soul_impact.get("quote", "") if isinstance(soul_impact, dict) else getattr(soul_impact, "quote", "")
+    factors = (
+        soul_impact.get("factors", [])
+        if isinstance(soul_impact, dict)
+        else getattr(soul_impact, "factors", [])
+    )
+    quote = (
+        soul_impact.get("quote", "")
+        if isinstance(soul_impact, dict)
+        else getattr(soul_impact, "quote", "")
+    )
     return f"Guardian Block: [{', '.join(factors)}] | {quote}"
 
 
@@ -228,7 +254,7 @@ class AxionRuntime:
     async def node_lightbinder_weave(self, state: Any) -> Any:
         """Executes Lightbinder Mask weave."""
         await asyncio.sleep(0)
-        
+
         # Get lightbinder_state from dict or object
         if isinstance(state, dict):
             lb_state = state.get("lightbinder_state", {})
@@ -265,10 +291,18 @@ class AxionRuntime:
     async def node_sentinel_check(self, state: Any) -> Any:
         """Performs Sentinel verification gate check with Guardian Block checks."""
         await asyncio.sleep(0)
-        soul_impact = state.get("soul_impact", {}) if isinstance(state, dict) else getattr(state, "soul_impact", {})
-        status = soul_impact.get("status") if isinstance(soul_impact, dict) else getattr(soul_impact, "status", "")
+        soul_impact = (
+            state.get("soul_impact", {})
+            if isinstance(state, dict)
+            else getattr(state, "soul_impact", {})
+        )
+        status = (
+            soul_impact.get("status")
+            if isinstance(soul_impact, dict)
+            else getattr(soul_impact, "status", "")
+        )
 
-        is_alarm = (status == "ALARM")
+        is_alarm = status == "ALARM"
         reason = _get_alarm_reason(soul_impact) if is_alarm else COMPLIANCE_LAW_24
         sentinel_status = "FAIL" if is_alarm else "PASS"
 
@@ -289,8 +323,12 @@ class AxionRuntime:
     async def sentinel_gate(self, state: Any) -> str:
         """Determines the next routing edge based on sentinel verification."""
         await asyncio.sleep(0)
-        status = state.get("sentinel_status", "") if isinstance(state, dict) else getattr(state, "sentinel_status", "")
-            
+        status = (
+            state.get("sentinel_status", "")
+            if isinstance(state, dict)
+            else getattr(state, "sentinel_status", "")
+        )
+
         if status == "PASS":
             return "rpg_update"
         else:

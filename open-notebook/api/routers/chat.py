@@ -21,16 +21,12 @@ router = APIRouter()
 class CreateSessionRequest(BaseModel):
     notebook_id: str = Field(..., description="Notebook ID to create session for")
     title: str | None = Field(None, description="Optional session title")
-    model_override: str | None = Field(
-        None, description="Optional model override for this session"
-    )
+    model_override: str | None = Field(None, description="Optional model override for this session")
 
 
 class UpdateSessionRequest(BaseModel):
     title: str | None = Field(None, description="New session title")
-    model_override: str | None = Field(
-        None, description="Model override for this session"
-    )
+    model_override: str | None = Field(None, description="Model override for this session")
 
 
 class ChatMessage(BaseModel):
@@ -47,26 +43,18 @@ class ChatSessionResponse(BaseModel):
     created: str = Field(..., description="Creation timestamp")
     updated: str = Field(..., description="Last update timestamp")
     message_count: int | None = Field(None, description="Number of messages in session")
-    model_override: str | None = Field(
-        None, description="Model override for this session"
-    )
+    model_override: str | None = Field(None, description="Model override for this session")
 
 
 class ChatSessionWithMessagesResponse(ChatSessionResponse):
-    messages: list[ChatMessage] = Field(
-        default_factory=list, description="Session messages"
-    )
+    messages: list[ChatMessage] = Field(default_factory=list, description="Session messages")
 
 
 class ExecuteChatRequest(BaseModel):
     session_id: str = Field(..., description="Chat session ID")
     message: str = Field(..., description="User message content")
-    context: dict[str, Any] = Field(
-        ..., description="Chat context with sources and notes"
-    )
-    model_override: str | None = Field(
-        None, description="Optional model override for this message"
-    )
+    context: dict[str, Any] = Field(..., description="Chat context with sources and notes")
+    model_override: str | None = Field(None, description="Optional model override for this message")
 
 
 class ExecuteChatResponse(BaseModel):
@@ -147,27 +135,19 @@ async def create_session(request: CreateSessionRequest):
     )
 
 
-@router.get(
-    "/chat/sessions/{session_id}", response_model=ChatSessionWithMessagesResponse
-)
+@router.get("/chat/sessions/{session_id}", response_model=ChatSessionWithMessagesResponse)
 async def get_session(session_id: str):
     """Get a specific session with its messages."""
     try:
         # Get session
         # Ensure session_id has proper table prefix
-        full_session_id = (
-            session_id
-            if session_id.startswith("chat_session:")
-            else f"chat_session:{session_id}"
-        )
+        full_session_id = session_id if session_id.startswith("chat_session:") else f"chat_session:{session_id}"
         session = await ChatSession.get(full_session_id)
         if not session:
             raise HTTPException(status_code=404, detail="Session not found")
 
         # Get session state from LangGraph to retrieve messages
-        thread_state = chat_graph.get_state(
-            config=RunnableConfig(configurable={"thread_id": session_id})
-        )
+        thread_state = chat_graph.get_state(config=RunnableConfig(configurable={"thread_id": session_id}))
 
         # Extract messages from state
         messages: list[ChatMessage] = []
@@ -184,11 +164,7 @@ async def get_session(session_id: str):
 
         # Find notebook_id (we need to query the relationship)
         # Ensure session_id has proper table prefix
-        full_session_id = (
-            session_id
-            if session_id.startswith("chat_session:")
-            else f"chat_session:{session_id}"
-        )
+        full_session_id = session_id if session_id.startswith("chat_session:") else f"chat_session:{session_id}"
 
         notebook_query = await repo_query(
             "SELECT out FROM refers_to WHERE in = $session_id",
@@ -199,9 +175,7 @@ async def get_session(session_id: str):
 
         if not notebook_id:
             # This might be an old session created before API migration
-            logger.warning(
-                f"No notebook relationship found for session {session_id} - may be an orphaned session"
-            )
+            logger.warning(f"No notebook relationship found for session {session_id} - may be an orphaned session")
 
         return ChatSessionWithMessagesResponse(
             id=session.id or "",
@@ -222,11 +196,7 @@ async def update_session(session_id: str, request: UpdateSessionRequest):
     """Update session title."""
     try:
         # Ensure session_id has proper table prefix
-        full_session_id = (
-            session_id
-            if session_id.startswith("chat_session:")
-            else f"chat_session:{session_id}"
-        )
+        full_session_id = session_id if session_id.startswith("chat_session:") else f"chat_session:{session_id}"
         session = await ChatSession.get(full_session_id)
         if not session:
             raise HTTPException(status_code=404, detail="Session not found")
@@ -243,11 +213,7 @@ async def update_session(session_id: str, request: UpdateSessionRequest):
 
         # Find notebook_id
         # Ensure session_id has proper table prefix
-        full_session_id = (
-            session_id
-            if session_id.startswith("chat_session:")
-            else f"chat_session:{session_id}"
-        )
+        full_session_id = session_id if session_id.startswith("chat_session:") else f"chat_session:{session_id}"
         notebook_query = await repo_query(
             "SELECT out FROM refers_to WHERE in = $session_id",
             {"session_id": ensure_record_id(full_session_id)},
@@ -272,11 +238,7 @@ async def delete_session(session_id: str):
     """Delete a chat session."""
     try:
         # Ensure session_id has proper table prefix
-        full_session_id = (
-            session_id
-            if session_id.startswith("chat_session:")
-            else f"chat_session:{session_id}"
-        )
+        full_session_id = session_id if session_id.startswith("chat_session:") else f"chat_session:{session_id}"
         session = await ChatSession.get(full_session_id)
         if not session:
             raise HTTPException(status_code=404, detail="Session not found")
@@ -305,15 +267,11 @@ async def execute_chat(request: ExecuteChatRequest):
 
         # Determine model override (per-request override takes precedence over session-level)
         model_override = (
-            request.model_override
-            if request.model_override is not None
-            else getattr(session, "model_override", None)
+            request.model_override if request.model_override is not None else getattr(session, "model_override", None)
         )
 
         # Get current state
-        current_state = chat_graph.get_state(
-            config=RunnableConfig(configurable={"thread_id": request.session_id})
-        )
+        current_state = chat_graph.get_state(config=RunnableConfig(configurable={"thread_id": request.session_id}))
 
         # Prepare state for execution
         state_values = current_state.values if current_state else {}
@@ -378,11 +336,7 @@ async def build_context(request: BuildContextRequest):
 
             try:
                 # Add table prefix if not present
-                full_source_id = (
-                    source_id
-                    if source_id.startswith("source:")
-                    else f"source:{source_id}"
-                )
+                full_source_id = source_id if source_id.startswith("source:") else f"source:{source_id}"
 
                 try:
                     source = await Source.get(full_source_id)
@@ -408,9 +362,7 @@ async def build_context(request: BuildContextRequest):
 
             try:
                 # Add table prefix if not present
-                full_note_id = (
-                    note_id if note_id.startswith("note:") else f"note:{note_id}"
-                )
+                full_note_id = note_id if note_id.startswith("note:") else f"note:{note_id}"
                 note = await Note.get(full_note_id)
                 if not note:
                     continue
@@ -455,6 +407,4 @@ async def build_context(request: BuildContextRequest):
         # Fallback to simple estimation
         estimated_tokens = char_count // 4
 
-    return BuildContextResponse(
-        context=context_data, token_count=estimated_tokens, char_count=char_count
-    )
+    return BuildContextResponse(context=context_data, token_count=estimated_tokens, char_count=char_count)

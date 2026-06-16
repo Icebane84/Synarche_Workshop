@@ -3,9 +3,10 @@ import re
 from datetime import datetime
 from typing import List, Union
 
-import nest_asyncio
 import streamlit as st
 from loguru import logger
+
+import nest_asyncio
 
 # nest_asyncio.apply()
 from api.models_service import models_service
@@ -37,22 +38,14 @@ def version_sidebar():
         # Try to get latest version, but don't fail if unavailable
         try:
             # Use session state cache to avoid repeated checks
-            if (
-                "latest_version" not in st.session_state
-                or "version_check_failed" not in st.session_state
-            ):
-                latest_version = get_version_from_github(
-                    "https://www.github.com/lfnovo/open-notebook", "main"
-                )
+            if "latest_version" not in st.session_state or "version_check_failed" not in st.session_state:
+                latest_version = get_version_from_github("https://www.github.com/lfnovo/open-notebook", "main")
                 st.session_state.latest_version = latest_version
                 st.session_state.version_check_failed = False
             else:
                 latest_version = st.session_state.latest_version
 
-            if (
-                not st.session_state.version_check_failed
-                and compare_versions(current_version, latest_version) < 0
-            ):
+            if not st.session_state.version_check_failed and compare_versions(current_version, latest_version) < 0:
                 st.warning(
                     f"New version {latest_version} available. [Click here for upgrade instructions](https://github.com/lfnovo/open-notebook/blob/main/docs/SETUP.md#upgrading-open-notebook)"
                 )
@@ -79,17 +72,15 @@ def setup_stream_state(current_notebook: Notebook) -> ChatSession:
     Finally, it acquires the existing state for the session from Langgraph state and sets it in the streamlit session state.
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
-    assert current_notebook is not None and current_notebook.id, (
-        "Current Notebook not selected properly"
-    )
+    assert current_notebook is not None and current_notebook.id, "Current Notebook not selected properly"
 
     if "context_config" not in st.session_state[current_notebook.id]:
         st.session_state[current_notebook.id]["context_config"] = {}
@@ -97,13 +88,11 @@ def setup_stream_state(current_notebook: Notebook) -> ChatSession:
     current_session_id = st.session_state[current_notebook.id].get("active_session")
 
     # gets the chat session if provided
-    chat_session: Union[ChatSession, None] = (
-        asyncio.run(ChatSession.get(current_session_id)) if current_session_id else None
-    )
+    chat_session: ChatSession | None = asyncio.run(ChatSession.get(current_session_id)) if current_session_id else None
 
     # if there is no chat session, create one or get the first one
     if not chat_session:
-        sessions: List[ChatSession] = asyncio.run(current_notebook.get_chat_sessions())
+        sessions: list[ChatSession] = asyncio.run(current_notebook.get_chat_sessions())
         if not sessions or len(sessions) == 0:
             logger.debug("Creating new chat session")
             chat_session = create_session_for_notebook(current_notebook.id)
@@ -117,13 +106,9 @@ def setup_stream_state(current_notebook: Notebook) -> ChatSession:
     st.session_state[current_notebook.id]["active_session"] = chat_session.id
 
     # gets the existing state for the session from Langgraph state
-    existing_state = graph.get_state(
-        {"configurable": {"thread_id": chat_session.id}}
-    ).values
+    existing_state = graph.get_state({"configurable": {"thread_id": chat_session.id}}).values
     if not existing_state or len(existing_state.keys()) == 0:
-        st.session_state[chat_session.id] = ThreadState(
-            messages=[], context=None, notebook=None, context_config={}
-        )
+        st.session_state[chat_session.id] = ThreadState(messages=[], context=None, notebook=None, context_config={})
     else:
         st.session_state[chat_session.id] = existing_state
 
@@ -181,9 +166,9 @@ def handle_error(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            logger.error(f"Error in {func.__name__}: {str(e)}")
+            logger.error(f"Error in {func.__name__}: {e!s}")
             logger.exception(e)
-            st.error(f"An error occurred: {str(e)}")
+            st.error(f"An error occurred: {e!s}")
 
     return wrapper
 
@@ -197,9 +182,7 @@ def setup_page(
     skip_model_check=False,
 ):
     """Common page setup for all pages"""
-    st.set_page_config(
-        page_title=title, layout=layout, initial_sidebar_state=sidebar_state
-    )
+    st.set_page_config(page_title=title, layout=layout, initial_sidebar_state=sidebar_state)
 
     # Check authentication first
     from pages.stream_app.auth import check_password

@@ -95,9 +95,7 @@ class SynarcheCLI(cmd.Cmd):
     and managing the RPG-based progression system.
     """
 
-    intro: str = (
-        "Welcome to the Synarche Command Library CLI. Type help or ? to list commands.\n"
-    )
+    intro: str = "Welcome to the Synarche Command Library CLI. Type help or ? to list commands.\n"
     prompt: str = "(Synarche) "
 
     def __init__(self) -> None:
@@ -597,6 +595,174 @@ class SynarcheCLI(cmd.Cmd):
 
         print(f"\n[SUCCESS] Cycle Complete. {award} Stardust synthesized.")
         print("Broadcast: [TRANSCENDENCE EVENT] detected on the SignalBus.\n")
+
+    # ------------------------------------------------------------------
+    # PAD-SIP: Cognitive Scheduler Commands
+    # ------------------------------------------------------------------
+
+    def _get_scheduler(self):
+        """Lazy-initialise the CognitiveScheduler with the live MemorySystem."""
+        if hasattr(self, "_scheduler") and self._scheduler:
+            return self._scheduler
+        try:
+            # Resolve paths for scheduler imports
+            sys.path.insert(0, os.path.join(repo_root, "src"))
+            from engine.cognitive_scheduler import CognitiveScheduler
+            from logic.memory.memory_system import MemorySystem
+            mem = MemorySystem()
+            self._scheduler = CognitiveScheduler(memory_system=mem)
+            print("[COG-SCHED] Scheduler initialised with live MemorySystem.")
+        except Exception as e:
+            print(f"[ERROR] Could not initialise CognitiveScheduler: {e}")
+            self._scheduler = None
+        return self._scheduler
+
+    def do_cognitive(self, arg: str) -> None:
+        """Interact with the PAD-SIP Cognitive Scheduler.
+
+        Sub-commands:
+            cognitive start [--ticks:N]     — Run N synchronous ticks (default 1).
+            cognitive loop  [--interval:F]  — Start the async continuous loop.
+            cognitive stop                  — Stop the running async loop.
+            cognitive status                — Print the live CognitiveState snapshot.
+            cognitive inject <text>         — Push a USER_INPUT event into the pipeline.
+            cognitive rules                 — List all loaded governance rules.
+
+        Examples:
+            cognitive start --ticks:5
+            cognitive inject "The Phoenix Protocol is active."
+            cognitive loop --interval:2.0
+        """
+        parts = arg.strip().split(None, 1)
+        sub = parts[0].lower() if parts else "help"
+        rest = parts[1] if len(parts) > 1 else ""
+
+        if sub == "start":
+            ticks = 1
+            for tok in rest.split():
+                if tok.startswith("--ticks:"):
+                    try:
+                        ticks = int(tok.split(":")[1])
+                    except ValueError:
+                        pass
+            sched = self._get_scheduler()
+            if not sched:
+                return
+            print(f"\n[COG-SCHED] Running {ticks} cognitive tick(s)...\n")
+            for i in range(ticks):
+                snap = sched.run_tick()
+                print(
+                    f"  Tick {snap['tick']:>4} | "
+                    f"phase={snap['phase']:<12} "
+                    f"pressure={snap['memory_pressure']:.3f} "
+                    f"attention={snap['attention_budget']:.3f} "
+                    f"novelty={snap['novelty_score']:.3f} "
+                    f"nodes={snap['active_nodes']}"
+                )
+            print(f"\n[COG-SCHED] Done. Total ticks so far: {sched.state.tick_count}\n")
+
+        elif sub == "loop":
+            import asyncio
+            interval = 1.0
+            for tok in rest.split():
+                if tok.startswith("--interval:"):
+                    try:
+                        interval = float(tok.split(":")[1])
+                    except ValueError:
+                        pass
+            sched = self._get_scheduler()
+            if not sched:
+                return
+            print(f"[COG-SCHED] Starting async loop (interval={interval}s). Type 'cognitive stop' to halt.")
+
+            async def _run():
+                await sched.start_loop(tick_interval_s=interval)
+
+            try:
+                import threading
+                loop = asyncio.new_event_loop()
+                self._loop_thread = threading.Thread(
+                    target=loop.run_until_complete,
+                    args=(_run(),),
+                    daemon=True,
+                )
+                self._loop_thread.start()
+                self._async_loop = loop
+            except Exception as e:
+                print(f"[ERROR] Could not start loop: {e}")
+
+        elif sub == "stop":
+            sched = self._get_scheduler()
+            if sched:
+                sched.stop_loop()
+                print("[COG-SCHED] Loop stop signal sent.")
+            else:
+                print("[COG-SCHED] No scheduler running.")
+
+        elif sub == "status":
+            sched = self._get_scheduler()
+            if not sched:
+                return
+            snap = sched.snapshot()
+            print("\n--- [COGNITIVE STATE SNAPSHOT] ---")
+            for k, v in snap.items():
+                if isinstance(v, list) and not v:
+                    continue
+                print(f"  {k:<22}: {v}")
+            print("----------------------------------\n")
+
+        elif sub == "inject":
+            if not rest:
+                print('Usage: cognitive inject <text content>')
+                return
+            sched = self._get_scheduler()
+            if not sched:
+                return
+            import importlib.util
+            spec = importlib.util.spec_from_file_location(
+                "types_mod",
+                os.path.join(repo_root, "src", "engine", "types.py"),
+            )
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            event = mod.CognitiveEvent(
+                event_type="USER_INPUT",
+                content=rest,
+                source="SynarcheCLI",
+                importance=0.7,
+            )
+            snap = sched.run_tick(event)
+            print(
+                f"\n[COG-SCHED] Tick {snap['tick']} | "
+                f"pressure={snap['memory_pressure']:.3f} | "
+                f"novelty={snap['novelty_score']:.3f} | "
+                f"verdicts={len(snap.get('governance_verdicts', []))}\n"
+            )
+
+        elif sub == "rules":
+            import importlib.util
+            spec = importlib.util.spec_from_file_location(
+                "gov_eng",
+                os.path.join(repo_root, "src", "cse", "validators", "governance_engine.py"),
+            )
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            eng = mod.GovernanceEngine()
+            rules = eng.list_rules()
+            print(f"\n--- [GOVERNANCE RULES ({len(rules)})] ---")
+            for r in rules:
+                status = "ON " if r["enabled"] else "OFF"
+                print(
+                    f"  [{status}] {r['id']:<10} "
+                    f"{r['field']:<22} {r['op']:<5} {str(r['value']):<10} "
+                    f"→ {r['effect']}"
+                )
+            print("------------------------------------\n")
+
+        else:
+            print(self.do_cognitive.__doc__)
+
+
 
 
 if __name__ == "__main__":

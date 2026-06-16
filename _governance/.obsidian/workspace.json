@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GVRN.Analysis.SystemicSynergy.md",
+                "file": "20_Architecture/GVRN.Template.Master.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GVRN.Analysis.SystemicSynergy"
+              "title": "GVRN.Template.Master"
             }
           }
         ]
@@ -185,6 +185,16 @@
   },
   "active": "f37658b0f6f85b2e",
   "lastOpenFiles": [
+    "Untitled.base",
+    "00_Codex/GVRN.TRIAD.Subsystem.md",
+    "00_Codex/README.md",
+    "00_Codex/GVRN.SOUL.Sophia.md",
+    "00_Codex/GVRN.SOUL.Axion.md",
+    "00_Codex/GVRN.Codex.EternalLaw.md",
+    "_archive/99_Archives/legacy_rind/UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "_archive/01_Registries/GVRN.Registry.Narrative.md",
+    "99_Archives/campaign_v11/UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "GVRN.Analysis.SystemicSynergy.md",
     "CODING_HANDBOOK.md",
     "02_Protocols/AOP-ARC-001_ArchivalSupersessionProtocol_v1.0.md",
     "02_Protocols/AOP-FUSION-001_OpenClawFusion.md",

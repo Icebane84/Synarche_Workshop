@@ -23,8 +23,7 @@ if "transformations" not in st.session_state:
 else:
     # work-around for streamlit losing typing on session state
     st.session_state.transformations = [
-        Transformation(**trans.model_dump())
-        for trans in st.session_state.transformations
+        Transformation(**trans.model_dump()) for trans in st.session_state.transformations
     ]
 
 with transformations_tab:
@@ -58,14 +57,10 @@ with transformations_tab:
     st.divider()
     st.markdown("Your Transformations")
     if len(st.session_state.transformations) == 0:
-        st.markdown(
-            "No transformation created yet. Click 'Create new transformation' to get started."
-        )
+        st.markdown("No transformation created yet. Click 'Create new transformation' to get started.")
     else:
         for _idx, transformation in enumerate(st.session_state.transformations):
-            transform_expander = f"**{transformation.name}**" + (
-                " - default" if transformation.apply_default else ""
-            )
+            transform_expander = f"**{transformation.name}**" + (" - default" if transformation.apply_default else "")
             with st.expander(
                 transform_expander,
                 expanded=(transformation.id is None),
@@ -118,12 +113,8 @@ with transformations_tab:
                             key=f"{transformation.id}_playground",
                         ):
                             st.stop()
-                        if st.button(
-                            "Delete", icon="❌", key=f"{transformation.id}_delete"
-                        ):
-                            transformations_service.delete_transformation(
-                                transformation.id
-                            )
+                        if st.button("Delete", icon="❌", key=f"{transformation.id}_delete"):
+                            transformations_service.delete_transformation(transformation.id)
                             st.session_state.transformations.remove(transformation)
                             st.toast(f"Transformation '{name}' deleted successfully!")
                             st.rerun()

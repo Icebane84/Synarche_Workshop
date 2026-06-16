@@ -7,6 +7,7 @@ import ast
 import yaml
 import textwrap
 
+
 class ArtifactParser:
     def __init__(self):
         # Split string literals to prevent the parser from matching its own source code definition!
@@ -14,7 +15,7 @@ class ArtifactParser:
             r"(?:<!-- prettier-ignore -->\s*\n|// prettier-ignore\s*\n)?"
             r"(?:<!--\s*\n|/\*\s*\n|\"\"\"\s*\n|'''\s*\n|---\s*\n)?"
             r"artifact_" + r"anchor:(?:[ \t]*\n)?(.*?)(?:-->|\"\"\"|'''|\*/|---|\Z)",
-            re.DOTALL
+            re.DOTALL,
         )
 
     def parse_python_ast(self, content: str) -> tuple[dict, str, str]:
@@ -27,9 +28,11 @@ class ArtifactParser:
                 if match:
                     anchor_yaml = textwrap.dedent(match.group(1))
                     data = yaml.safe_load(anchor_yaml) or {}
-                    
+
                     # Locate raw string block in Python content for exact replacement
-                    raw_block_match = re.search(r'(""".*?"""|\'\'\'.*?\'\'\')', content, re.DOTALL)
+                    raw_block_match = re.search(
+                        r'(""".*?"""|\'\'\'.*?\'\'\')', content, re.DOTALL
+                    )
                     raw_block = raw_block_match.group(1) if raw_block_match else ""
                     return data, docstring, raw_block
         except Exception:
@@ -40,7 +43,7 @@ class ArtifactParser:
         """Extracts YAML anchor data, parsed docstring/text, and raw text block from a file."""
         filename = os.path.basename(file_path)
         _, ext = os.path.splitext(filename)
-        
+
         # AST first for Python
         if ext == ".py":
             data, docstring, raw_block = self.parse_python_ast(content)
@@ -57,5 +60,5 @@ class ArtifactParser:
                 return data, anchor_text, match.group(0)
             except Exception:
                 pass
-                
+
         return None, "", ""

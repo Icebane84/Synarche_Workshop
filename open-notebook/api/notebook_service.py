@@ -10,7 +10,6 @@ Notebook service layer using API.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 from typing import List, Optional
 
 from loguru import logger
@@ -25,7 +24,7 @@ class NotebookService:
     def __init__(self):
         logger.info("Using API for notebook operations")
 
-    def get_all_notebooks(self, order_by: str = "updated desc") -> List[Notebook]:
+    def get_all_notebooks(self, order_by: str = "updated desc") -> list[Notebook]:
         """Get all notebooks."""
         notebooks_data = api_client.get_notebooks(order_by=order_by)
         # Convert API response to Notebook objects
@@ -42,7 +41,7 @@ class NotebookService:
             notebooks.append(nb)
         return notebooks
 
-    def get_notebook(self, notebook_id: str) -> Optional[Notebook]:
+    def get_notebook(self, notebook_id: str) -> Notebook | None:
         """Get a specific notebook."""
         response = api_client.get_notebook(notebook_id)
         nb_data = response if isinstance(response, dict) else response[0]

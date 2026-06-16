@@ -22,9 +22,7 @@ notes_service = NotesService()
 def note_panel(note_id, notebook_id=None) -> None:
     default_models = models_service.get_default_models()
     if not default_models.default_embedding_model:
-        st.warning(
-            "Since there is no embedding model selected, your note will be saved but not searchable."
-        )
+        st.warning("Since there is no embedding model selected, your note will be saved but not searchable.")
     note = notes_service.get_note(note_id)
     if not note:
         raise ValueError(f"Note not fonud {note_id}")
@@ -34,9 +32,7 @@ def note_panel(note_id, notebook_id=None) -> None:
         st.markdown(convert_source_references(note.content))
     with t_edit:
         note.title = st.text_input("Title", value=note.title)
-        note.content = st_monaco(
-            value=note.content, height="300px", language="markdown"
-        )
+        note.content = st_monaco(value=note.content, height="300px", language="markdown")
         b1, b2 = st.columns(2)
         if b1.button("Save", key=f"pn_edit_note_{note.id or 'new'}"):
             logger.debug("Editing note")

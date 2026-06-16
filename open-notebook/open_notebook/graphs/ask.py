@@ -33,9 +33,7 @@ class SubGraphState(TypedDict):
 
 class Search(BaseModel):
     term: str
-    instructions: str = Field(
-        description="Tell the answeting LLM what information you need extracted from this search"
-    )
+    instructions: str = Field(description="Tell the answeting LLM what information you need extracted from this search")
 
 
 class Strategy(BaseModel):
@@ -70,11 +68,7 @@ async def call_model_with_messages(state: ThreadState, config: RunnableConfig) -
     ai_message = await model.ainvoke(system_prompt)
 
     # Clean the thinking content from the response
-    message_content = (
-        ai_message.content
-        if isinstance(ai_message.content, str)
-        else str(ai_message.content)
-    )
+    message_content = ai_message.content if isinstance(ai_message.content, str) else str(ai_message.content)
     cleaned_content = clean_thinking_content(message_content)
 
     # Parse the cleaned JSON content
@@ -117,11 +111,7 @@ async def provide_answer(state: SubGraphState, config: RunnableConfig) -> dict:
         max_tokens=2000,
     )
     ai_message = await model.ainvoke(system_prompt)
-    ai_content = (
-        ai_message.content
-        if isinstance(ai_message.content, str)
-        else str(ai_message.content)
-    )
+    ai_content = ai_message.content if isinstance(ai_message.content, str) else str(ai_message.content)
     return {"answers": [clean_thinking_content(ai_content)]}
 
 
@@ -134,11 +124,7 @@ async def write_final_answer(state: ThreadState, config: RunnableConfig) -> dict
         max_tokens=2000,
     )
     ai_message = await model.ainvoke(system_prompt)
-    final_content = (
-        ai_message.content
-        if isinstance(ai_message.content, str)
-        else str(ai_message.content)
-    )
+    final_content = ai_message.content if isinstance(ai_message.content, str) else str(ai_message.content)
     return {"final_answer": clean_thinking_content(final_content)}
 
 

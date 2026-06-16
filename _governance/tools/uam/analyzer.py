@@ -18,6 +18,7 @@ import os
 from .config import FORBIDDEN_TIER_CROSSINGS
 from .lexicon import ONTOLOGICAL_LEXICON
 
+
 class TopologicalAnalyzer:
     def __init__(self, target_dir: str, registry: dict):
         self.target_dir = os.path.abspath(target_dir)
@@ -26,18 +27,25 @@ class TopologicalAnalyzer:
     def validate_referential_integrity(self) -> list[str]:
         """Checks if declared relationships point to active IDs or valid files in the workspace."""
         errors = []
+        from .config import ARTIFACT_REGISTRY
+        provider_ids = {item["provider_id"] for item in ARTIFACT_REGISTRY.values()}
+
         for node_id, node_data in self.registry.items():
             rel_path = node_data.get("rel_path")
             for rel in node_data.get("relations", []):
                 target = rel.get("node")
+                if target in provider_ids:
+                    continue
                 if target not in self.registry:
                     # Fallback check: is it an existing path relative to target_dir?
                     target_file_path = os.path.join(self.target_dir, target)
                     # Or relative to the source file's own directory?
                     local_dir = os.path.dirname(os.path.join(self.target_dir, rel_path))
                     local_target_path = os.path.join(local_dir, target)
-                    
-                    if not os.path.exists(target_file_path) and not os.path.exists(local_target_path):
+
+                    if not os.path.exists(target_file_path) and not os.path.exists(
+                        local_target_path
+                    ):
                         errors.append(
                             f"[REFERENTIAL INTEGRITY VIOLATION] '{node_id}' ({rel_path}) declares target '{target}' "
                             f"which does not exist in the workspace as a registered ID or file path."
@@ -77,11 +85,13 @@ class TopologicalAnalyzer:
             for lex_id, term_data in ONTOLOGICAL_LEXICON.items():
                 term_name = term_data["term"].lower()
                 aliases = [a.lower() for a in term_data.get("aliases", [])]
-                
+
                 # Check if file ethos references this conceptual abstraction
                 matches_term = (term_name in ethos) or any(a in ethos for a in aliases)
                 if matches_term:
-                    forbidden = [f.upper() for f in term_data.get("forbidden_contexts", [])]
+                    forbidden = [
+                        f.upper() for f in term_data.get("forbidden_contexts", [])
+                    ]
                     # Verify if the node exists in a forbidden tier or domain context
                     if tier in forbidden or domain in forbidden:
                         leaks.append(

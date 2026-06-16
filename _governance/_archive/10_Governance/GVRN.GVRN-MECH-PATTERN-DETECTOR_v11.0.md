@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN-MECH-PATTERN-DETECTOR_v11.0` | The Sovereign ID. |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GVRN-MECH-PATTERN-DETECTOR_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GVRN-MECH-PATTERN-DETECTOR_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `GVRN`                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
 
 ---
 
@@ -88,8 +83,8 @@
 ### 3.1. Scoring Model
 
 - **Repetition Score (RS)**: 0-100.
-    - `RS > 50`: **Warning**. `FlowOptimizer` alerted. (Inject Novelty).
-    - `RS > 90`: **Critical**. `CircuitBreaker` tripped. (Force Reset).
+  - `RS > 50`: **Warning**. `FlowOptimizer` alerted. (Inject Novelty).
+  - `RS > 90`: **Critical**. `CircuitBreaker` tripped. (Force Reset).
 
 ### 3.2. Continuous "Pulse"
 

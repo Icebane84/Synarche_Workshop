@@ -9,9 +9,7 @@ artifact_anchor:
   state: ACTIVE
   ethos: SOVEREIGN_LOGIC_COMPONENT
   relations: []
-"""
 
-"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -79,9 +77,7 @@ class SynarcheRegistry:
         # Resolve path relative to this file if not absolute
         if not os.path.isabs(registry_path):
             current_dir = os.path.dirname(os.path.abspath(__file__))
-            registry_path = os.path.normpath(
-                os.path.join(current_dir, "../../", registry_path)
-            )
+            registry_path = os.path.normpath(os.path.join(current_dir, "../../", registry_path))
 
         self.registry_path = registry_path
         self.library: dict[str, Any] = self.load_registry()
@@ -129,10 +125,7 @@ class SynarcheRegistry:
             """Recursively traverses the registry tree to find matches."""
             if isinstance(node, list):
                 for cmd in node:
-                    if (
-                        query_lower in cmd.get("name", "").lower()
-                        or query_lower in cmd.get("description", "").lower()
-                    ):
+                    if query_lower in cmd.get("name", "").lower() or query_lower in cmd.get("description", "").lower():
                         results.append(cmd)
             elif isinstance(node, dict):
                 for value in node.values():

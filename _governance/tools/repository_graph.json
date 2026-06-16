@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-05-28T23:55:07.105644",
-    "total_nodes": 2053,
-    "total_edges": 8,
-    "referential_integrity_issues": 3,
+    "generated_at": "2026-06-16T13:58:18.012079",
+    "total_nodes": 2071,
+    "total_edges": 12,
+    "referential_integrity_issues": 0,
     "circular_loops": 0
   },
   "nodes": [
@@ -1384,6 +1384,14 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
+      "id": "GVRN.FRAMEWORK_SYNTHESIS.001",
+      "path": "_governance/10_Governance/GVRN.Framework.Synthesis.001.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_LEDGER"
+    },
+    {
       "id": "GVRN.GVRN.GVRN.013.001",
       "path": "_governance/10_Governance/GVRN.GVRN.013.md",
       "domain": "GVRN",
@@ -1448,12 +1456,12 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
-      "id": "GVRN.ID.001",
+      "id": "GVRN.GVRN.ID.SYNTHESISINSIGHTS.001",
       "path": "_governance/10_Governance/GVRN.ID.SynthesisInsights.md",
       "domain": "GVRN",
       "tier": "GOVERNANCE",
-      "state": "CANONIZED",
-      "ethos": "SOVEREIGN_GOVERNANCE_LEDGER"
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
       "id": "GVRN.GVRN.IDX.001.001",
@@ -1486,6 +1494,14 @@
       "tier": "GOVERNANCE",
       "state": "ACTIVE",
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.LIVINGCHRONOS.001",
+      "path": "_governance/10_Governance/GVRN.LivingChronos.Ledger.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "CANONIZED",
+      "ethos": "SOVEREIGN_GOVERNANCE_LEDGER"
     },
     {
       "id": "GVRN.GVRN.MAP.001.001",
@@ -1640,12 +1656,12 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
-      "id": "GVRN.REGISTRY.001",
+      "id": "GVRN.GVRN.REGISTRY.ORIGINS.001",
       "path": "_governance/10_Governance/GVRN.Registry.Origins.md",
       "domain": "GVRN",
       "tier": "GOVERNANCE",
-      "state": "CANONIZED",
-      "ethos": "SOVEREIGN_GOVERNANCE_LEDGER"
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
       "id": "GVRN.GVRN.SAP.001.001",
@@ -1955,7 +1971,7 @@
       "id": "GVRN.NEXUS.INGEST.001",
       "path": "_governance/10_Governance/SELT.NexusIngestion.ShadowLog.md",
       "domain": "GVRN",
-      "tier": "GOVERNANCE",
+      "tier": "DATA",
       "state": "CANONIZED",
       "ethos": "ZERO-ENTROPY_INGESTION_LOG"
     },
@@ -6456,6 +6472,62 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
+      "id": "GVRN.SELT.LOG.GAME-BESTIARY-CODEX.2.001",
+      "path": "_governance/70_Learnings/Shadow_Logs/SELT.LOG.GAME-BESTIARY-CODEX.20260612_174000.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.SELT.LOG.GAME-FOCUS-INTERMISSI.001",
+      "path": "_governance/70_Learnings/Shadow_Logs/SELT.LOG.GAME-FOCUS-INTERMISSION.20260602_121500.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.SELT.LOG.GAME-GRID-LENSING-REF.001",
+      "path": "_governance/70_Learnings/Shadow_Logs/SELT.LOG.GAME-GRID-LENSING-REFRACTION.20260613_021121.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.SELT.LOG.GAME-HUD-COMBO-REACTI.001",
+      "path": "_governance/70_Learnings/Shadow_Logs/SELT.LOG.GAME-HUD-COMBO-REACTIVE.20260602_144000.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.SELT.LOG.GAME-MODAL-NESTING.20.001",
+      "path": "_governance/70_Learnings/Shadow_Logs/SELT.LOG.GAME-MODAL-NESTING.20260612_173440.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.SELT.LOG.GAME-UPGRADES-PLAN.20.001",
+      "path": "_governance/70_Learnings/Shadow_Logs/SELT.LOG.GAME-UPGRADES-PLAN.20260614_025416.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.SELT.LOG.GAME-WEAPONS-CODEX.20.001",
+      "path": "_governance/70_Learnings/Shadow_Logs/SELT.LOG.GAME-WEAPONS-CODEX.20260612_183400.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
       "id": "GVRN.SELT.LOG.MCP-CONFIG-ALIGN.2026.001",
       "path": "_governance/70_Learnings/Shadow_Logs/SELT.LOG.MCP-CONFIG-ALIGN.20260519_084500.md",
       "domain": "GVRN",
@@ -9328,6 +9400,14 @@
       "ethos": "SOVEREIGN_LOGIC_COMPONENT"
     },
     {
+      "id": "CORE.ACTIVATE_COGNITIVE.001",
+      "path": "axion-core/activate_cognitive.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
       "id": "CORE.AOP-CORE-LOCK-001_GENESISSEEDL.001",
       "path": "axion-core/docs/00_Protocols/AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md",
       "domain": "CORE",
@@ -10481,7 +10561,7 @@
     },
     {
       "id": "CORE.OATHKEEPER.001",
-      "path": "axion-core/src/agents/axion/oathkeeper.py",
+      "path": "axion-core/src/agents/axion/oathkeeper/__init__.py",
       "domain": "CORE",
       "tier": "LOGIC",
       "state": "ACTIVE",
@@ -10704,8 +10784,24 @@
       "ethos": "SOVEREIGN_LOGIC_COMPONENT"
     },
     {
+      "id": "CORE.GOVERNANCE_ENGINE.001",
+      "path": "axion-core/src/cse/validators/governance_engine.py",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
       "id": "CORE.LAW_VALIDATOR.001",
       "path": "fde_engine/gvrn/law_validator.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COGNITIVE_SCHEDULER.001",
+      "path": "axion-core/src/engine/cognitive_scheduler.py",
       "domain": "CORE",
       "tier": "LOGIC",
       "state": "ACTIVE",
@@ -10880,6 +10976,14 @@
       "ethos": "SOVEREIGN_LOGIC_COMPONENT"
     },
     {
+      "id": "CORE.TYPES.001",
+      "path": "nova_forge/src/nexus/quantum-block/types.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
       "id": "CORE.WEAVER.D.001",
       "path": "axion-core/src/functions/weaver.d.ts",
       "domain": "CORE",
@@ -10952,6 +11056,14 @@
       "ethos": "SOVEREIGN_LOGIC_COMPONENT"
     },
     {
+      "id": "CORE.SCAFFOLD_WEAVER.001",
+      "path": "axion-core/src/hephaestus/lib/scaffold_weaver.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
       "id": "CORE.SHADOW_LOG_INTEGRATION.001",
       "path": "axion-core/src/hephaestus/lib/shadow_log_integration.py",
       "domain": "CORE",
@@ -10962,6 +11074,14 @@
     {
       "id": "CORE.TASK_CONTEXT.001",
       "path": "axion-core/src/hephaestus/lib/task_context.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSCLUSION_BINDER.001",
+      "path": "axion-core/src/hephaestus/lib/transclusion_binder.py",
       "domain": "CORE",
       "tier": "LOGIC",
       "state": "ACTIVE",
@@ -10986,6 +11106,14 @@
     {
       "id": "CORE.REFORGER.001",
       "path": "axion-core/src/hephaestus/reforger.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SENTINEL_AUDIT.001",
+      "path": "axion-core/src/hephaestus/sentinel_audit.py",
       "domain": "CORE",
       "tier": "LOGIC",
       "state": "ACTIVE",
@@ -11440,12 +11568,12 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
-      "id": "TEST.TEST.001",
-      "path": "axion-core/systems/test.py",
-      "domain": "TEST",
-      "tier": "LOGIC",
+      "id": "GVRN.STANDARDS.001",
+      "path": "axion-core/standards/test.md",
+      "domain": "GVRN",
+      "tier": null,
       "state": "ACTIVE",
-      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+      "ethos": null
     },
     {
       "id": "CORE.ABSORBER_ENGINE.001",
@@ -11467,6 +11595,14 @@
       "id": "CORE.OBSIDIAN_BRIDGE.001",
       "path": "axion-core/systems/obsidian_bridge.py",
       "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST.001",
+      "path": "axion-core/systems/test.py",
+      "domain": "TEST",
       "tier": "LOGIC",
       "state": "ACTIVE",
       "ethos": "SOVEREIGN_LOGIC_COMPONENT"
@@ -11640,6 +11776,14 @@
       "ethos": "SOVEREIGN_LOGIC_COMPONENT"
     },
     {
+      "id": "TEST.TEST_ECS_COMPILER.001",
+      "path": "axion-core/tests/engine/scheduling/test_ecs_compiler.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
       "id": "TEST.TEST_GRAPH.001",
       "path": "axion-core/tests/engine/scheduling/test_graph.py",
       "domain": "TEST",
@@ -11698,6 +11842,14 @@
     {
       "id": "TEST.TEST_BRIDGE.001",
       "path": "axion-core/tests/test_bridge.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.COGNITIVE_SCHEDULER.001",
+      "path": "axion-core/tests/test_cognitive_scheduler.py",
       "domain": "TEST",
       "tier": "LOGIC",
       "state": "ACTIVE",
@@ -11826,6 +11978,14 @@
     {
       "id": "TEST.TEST_RPG_ACHIEVEMENTS.001",
       "path": "axion-core/tests/test_rpg_achievements.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_SENTINEL.001",
+      "path": "axion-core/tests/test_sentinel.py",
       "domain": "TEST",
       "tier": "LOGIC",
       "state": "ACTIVE",
@@ -12076,8 +12236,8 @@
       "path": "axion-core/tools/forge_daemon.py",
       "domain": "INFRA",
       "tier": "COMPUTE",
-      "state": "ACTIVE",
-      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+      "state": "CANONIZED",
+      "ethos": "ZERO-ENTROPY"
     },
     {
       "id": "INFR.GENERATE_BARRELS.001",
@@ -14114,14 +14274,6 @@
     {
       "id": "CORE.STARCHART.001",
       "path": "nova_forge/playground/tarot-forge/src/@atlas/starChart.ts",
-      "domain": "CORE",
-      "tier": "LOGIC",
-      "state": "ACTIVE",
-      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
-    },
-    {
-      "id": "CORE.TYPES.001",
-      "path": "nova_forge/src/nexus/quantum-block/types.ts",
       "domain": "CORE",
       "tier": "LOGIC",
       "state": "ACTIVE",
@@ -16408,14 +16560,6 @@
       "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
     },
     {
-      "id": "CORE.SYNARCHE_GOVERNANCE_FRAMEWORK.001",
-      "path": "synarche_governance_framework_synthesis.md",
-      "domain": "CORE",
-      "tier": "GOVERNANCE",
-      "state": "ACTIVE",
-      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
-    },
-    {
       "id": "CORE.NAVIGATOR.001",
       "path": "synarchy-migration/navigator.py",
       "domain": "CORE",
@@ -16435,7 +16579,7 @@
   "edges": [
     {
       "source": "GVRN.NEXUS.INGEST.001",
-      "target": "TOOL.FORGE.DAEMON.001",
+      "target": "INFR.FORGE_DAEMON.001",
       "type": "SYNERGIZES"
     },
     {
@@ -16450,12 +16594,12 @@
     },
     {
       "source": "GVRN.NEXUS.INGEST.001",
-      "target": "GVRN.WF.Finalization",
+      "target": ".agent/workflows/validation/finalize_artifact.md",
       "type": "DEPENDS_ON"
     },
     {
       "source": "GVRN.NEXUS.INGEST.001",
-      "target": "SKILL.SynergisticOpportunityWeaving",
+      "target": ".agent/skills/synergistic-opportunity-weaving/SKILL.md",
       "type": "SYNERGIZES"
     },
     {
@@ -16471,6 +16615,26 @@
     {
       "source": "FABR.CELESTIAL.UI.001",
       "target": "FABR.CelestialChart.LOGIC.js",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "INFR.FORGE_DAEMON.001",
+      "target": "CORE.SOURCEMAP.001",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "INFR.FORGE_DAEMON.001",
+      "target": "CORE.NEXUS_HANDSHAKE.001",
+      "type": "SYNERGIZES"
+    },
+    {
+      "source": "INFR.FORGE_DAEMON.001",
+      "target": "INFR.WATCHDOG_MONITOR.001",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "INFR.FORGE_DAEMON.001",
+      "target": "INFR.WEBSOCKETS_RUNTIME.001",
       "type": "DEPENDS_ON"
     }
   ],
@@ -16648,11 +16812,7 @@
     }
   },
   "diagnostics": {
-    "errors": [
-      "[REFERENTIAL INTEGRITY VIOLATION] 'GVRN.NEXUS.INGEST.001' (_governance/10_Governance/SELT.NexusIngestion.ShadowLog.md) declares target 'TOOL.FORGE.DAEMON.001' which does not exist in the workspace as a registered ID or file path.",
-      "[REFERENTIAL INTEGRITY VIOLATION] 'GVRN.NEXUS.INGEST.001' (_governance/10_Governance/SELT.NexusIngestion.ShadowLog.md) declares target 'GVRN.WF.Finalization' which does not exist in the workspace as a registered ID or file path.",
-      "[REFERENTIAL INTEGRITY VIOLATION] 'GVRN.NEXUS.INGEST.001' (_governance/10_Governance/SELT.NexusIngestion.ShadowLog.md) declares target 'SKILL.SynergisticOpportunityWeaving' which does not exist in the workspace as a registered ID or file path."
-    ],
+    "errors": [],
     "warnings": []
   }
 }

@@ -9,9 +9,7 @@ artifact_anchor:
   state: ACTIVE
   ethos: SOVEREIGN_LOGIC_COMPONENT
   relations: []
-"""
 
-"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |

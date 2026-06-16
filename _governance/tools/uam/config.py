@@ -19,41 +19,41 @@ UIP_V15_SCHEMA = {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "SovereignArtifactAnchor",
     "type": "object",
-    "required": ["id", "version", "provenance", "domain", "celestial_class", "tier", "state", "ethos"],
+    "required": [
+        "id",
+        "version",
+        "provenance",
+        "domain",
+        "celestial_class",
+        "tier",
+        "state",
+        "ethos",
+    ],
     "additionalProperties": False,
     "properties": {
         "id": {
             "type": "string",
-            "pattern": "^[A-Z]{3,4}\\.[A-Z0-9._-]{3,30}\\.[0-9]{3}$"
+            "pattern": "^[A-Z]{3,4}\\.[A-Z0-9._-]{3,30}\\.[0-9]{3}$",
         },
         "version": {
             "type": "string",
-            "pattern": "^v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:\\s+\\[[A-Z]+\\])?$"
+            "pattern": "^v[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:\\s+\\[[A-Z]+\\])?$",
         },
-        "provenance": {
-            "type": "string",
-            "format": "date"
-        },
+        "provenance": {"type": "string", "format": "date"},
         "domain": {
             "type": "string",
-            "enum": ["CORE", "FABRIC", "INFRA", "GVRN", "TEST", "LORE", "COMPUTE"]
+            "enum": ["CORE", "FABRIC", "INFRA", "GVRN", "TEST", "LORE", "COMPUTE"],
         },
-        "celestial_class": {
-            "type": "string",
-            "enum": ["STAR", "PLANET", "MOON"]
-        },
+        "celestial_class": {"type": "string", "enum": ["STAR", "PLANET", "MOON"]},
         "tier": {
             "type": "string",
-            "enum": ["PRESENTATION", "LOGIC", "DATA", "COMPUTE", "GOVERNANCE"]
+            "enum": ["PRESENTATION", "LOGIC", "DATA", "COMPUTE", "GOVERNANCE"],
         },
         "state": {
             "type": "string",
-            "enum": ["PROPOSED", "DRAFT", "ACTIVE", "CANONIZED"]
+            "enum": ["PROPOSED", "DRAFT", "ACTIVE", "CANONIZED"],
         },
-        "ethos": {
-            "type": "string",
-            "maxLength": 120
-        },
+        "ethos": {"type": "string", "maxLength": 120},
         "relations": {
             "type": "array",
             "items": {
@@ -63,15 +63,20 @@ UIP_V15_SCHEMA = {
                 "properties": {
                     "type": {
                         "type": "string",
-                        "enum": ["GOVERNS", "SYNERGIZES", "DEPENDS_ON", "CONTROLS", "IMPLEMENTS", "UPDATES"]
+                        "enum": [
+                            "GOVERNS",
+                            "SYNERGIZES",
+                            "DEPENDS_ON",
+                            "CONTROLS",
+                            "IMPLEMENTS",
+                            "UPDATES",
+                        ],
                     },
-                    "node": {
-                        "type": "string"
-                    }
-                }
-            }
-        }
-    }
+                    "node": {"type": "string"},
+                },
+            },
+        },
+    },
 }
 
 DOMAIN_PREFIXES = {
@@ -81,37 +86,25 @@ DOMAIN_PREFIXES = {
     "GVRN": "GVRN",
     "TEST": "TEST",
     "LORE": "LORE",
-    "COMPUTE": "COMP"
+    "COMPUTE": "COMP",
 }
 
 # Strict directional layered boundaries
 FORBIDDEN_TIER_CROSSINGS = {
-    "COMPUTE": ["PRESENTATION"],   
-    "DATA": ["PRESENTATION"],      
-    "GOVERNANCE": ["PRESENTATION", "DATA", "COMPUTE"] 
+    "COMPUTE": ["PRESENTATION"],
+    "DATA": ["PRESENTATION"],
+    "GOVERNANCE": ["PRESENTATION", "DATA", "COMPUTE"],
 }
 
 # Configurable Artifact Provider Registry
 # Maps imported python modules to their canonical standard Artifact IDs
 ARTIFACT_REGISTRY = {
-    "websockets": {
-        "provider_id": "INFR.WEBSOCKETS_RUNTIME.001",
-        "name": "websockets"
-    },
-    "watchdog": {
-        "provider_id": "INFR.WATCHDOG_MONITOR.001",
-        "name": "watchdog"
-    },
-    "supabase": {
-        "provider_id": "INFR.SUPABASE_CONNECTOR.001",
-        "name": "supabase"
-    },
-    "yaml": {
-        "provider_id": "INFR.YAML_PARSER.001",
-        "name": "yaml"
-    },
+    "websockets": {"provider_id": "INFR.WEBSOCKETS_RUNTIME.001", "name": "websockets"},
+    "watchdog": {"provider_id": "INFR.WATCHDOG_MONITOR.001", "name": "watchdog"},
+    "supabase": {"provider_id": "INFR.SUPABASE_CONNECTOR.001", "name": "supabase"},
+    "yaml": {"provider_id": "INFR.YAML_PARSER.001", "name": "yaml"},
     "jsonschema": {
         "provider_id": "INFR.JSON_SCHEMA_VALIDATOR.001",
-        "name": "jsonschema"
-    }
+        "name": "jsonschema",
+    },
 }

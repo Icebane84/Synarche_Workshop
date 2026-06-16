@@ -2,12 +2,8 @@ import os
 import re
 
 INPUT_FILE = r"c:\Users\Chris\_Desktop_Vault\Phoenix\input_artifacts\mint_seed.py.md"
-OUTPUT_FILE = (
-    r"c:\Users\Chris\Synarche_Workspace\_governance\40_System\AXION.MINT.SEED.001.md"
-)
-ARCHIVE_FILE = (
-    r"c:\Users\Chris\Synarche_Workspace\_governance\99_Archives\mint_seed.py.md"
-)
+OUTPUT_FILE = r"c:\Users\Chris\Synarche_Workspace\_governance\40_System\AXION.MINT.SEED.001.md"
+ARCHIVE_FILE = r"c:\Users\Chris\Synarche_Workspace\_governance\99_Archives\mint_seed.py.md"
 
 GOVERNANCE_HEADER = """# AXION.MINT.SEED.001
 

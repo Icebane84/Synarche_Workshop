@@ -27,7 +27,7 @@ try:
     bridge_path = PROJECT_ROOT / "systems" / "obsidian_bridge.py"
     if not bridge_path.exists():
         bridge_path = PROJECT_ROOT / "tools" / "03_Systems" / "obsidian_bridge.py"
-        
+
     obsidian_module = import_path(bridge_path)
     if obsidian_module:
         ObsidianBridge = obsidian_module.ObsidianBridge

@@ -2,12 +2,12 @@
 id: NOVA.Sys.TDD.SELT
 name: TDD Workflow Experience Log (SELT)
 type: LOG
-tags: ['#NOVA/Sys/TDD', '#SELT', '#MEMORY']
-links: ['[[NOVA.Sys.TDD.Index]]']
+tags: ["#NOVA/Sys/TDD", "#SELT", "#MEMORY"]
+links: ["[[NOVA.Sys.TDD.Index]]"]
 relations:
-    - type: DESCRIBED_BY
-      target: '[[NOVA.Sys.TDD.Index]]'
-description: 'Experience log and iterative refinement memory for the TDD workflow shard.'
+  - type: DESCRIBED_BY
+    target: "[[NOVA.Sys.TDD.Index]]"
+description: "Experience log and iterative refinement memory for the TDD workflow shard."
 ---
 
 # TDD EXPERIENCE LOG | SELT-NOVA.Sys.TDD

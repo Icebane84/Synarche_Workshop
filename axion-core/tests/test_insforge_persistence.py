@@ -32,12 +32,12 @@ def test_insforge_sync():
     engine.sync_to_cloud()
 
     # Verify the transmuter was engaged
-    assert (
-        engine.transmuter.transmute_entities.called
-    ), "transmute_entities was not called"
-    assert (
-        engine.transmuter.transmute_components.called
-    ), "transmute_components was not called"
+    assert engine.transmuter.transmute_entities.called, (
+        "transmute_entities was not called"
+    )
+    assert engine.transmuter.transmute_components.called, (
+        "transmute_components was not called"
+    )
     assert engine.transmuter.save_snapshot.called, "save_snapshot was not called"
 
     logger.info(f"Engine State at Frame {engine.clock.frame} synced successfully.")

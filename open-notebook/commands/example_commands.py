@@ -109,9 +109,7 @@ async def analyze_data_command(input_data: DataAnalysisInput) -> DataAnalysisOut
     start_time = time.time()
 
     try:
-        logger.info(
-            f"Analyzing {len(input_data.numbers)} numbers with {input_data.analysis_type} analysis"
-        )
+        logger.info(f"Analyzing {len(input_data.numbers)} numbers with {input_data.analysis_type} analysis")
 
         # Simulate processing delay if specified
         if input_data.delay_seconds:

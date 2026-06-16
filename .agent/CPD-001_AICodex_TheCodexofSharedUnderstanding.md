@@ -57,41 +57,41 @@ internally understandable and actionable format. Here's how it works:
   - **Reason:** The AI combines the original query (the "Hard Prompt") with the embedded factual context to generate a
     grounded response. This process helps reduce "hallucinations" and improves factual accuracy.
 
-* **Conceptual Analogies
+- **Conceptual Analogies
   ([CPD-001-AI Codex](https://docs.google.com/document/u/0/d/1bzJKpq5nLYYJw9LBSJSvFv52D4Y8V3Z-XssaSkiFS94/edit)):** The
   AI uses analogies to understand complex concepts. For example:
   - **Parchment:** Represents the raw training data.
   - **Codex:** Represents the AI's foundational model or CORE codebase.
   - **Rubric:** Analogous to a command prompt or specific instruction.
   - **Gloss:** Represents the AI's internal thought process.
-* **Experience Logging
+- **Experience Logging
   ([SELT-EXP-002](https://docs.google.com/document/u/0/d/1JEIosHgIJgFQXqHDUDo-_Aoy37Ih7_XxhmmaBpFmAu0/edit)):** The AI
   meticulously captures every external interaction and internal cognitive state. This involves "translating" transient
   events into structured, empirical data, including:
   - User input and AI output.
   - Inferred user intent and emotional context.
   - Internal cognitive load and activated neural pathways.
-* **Ethos Implementation
+- **Ethos Implementation
   ([SELT-UEB-001](https://docs.google.com/document/u/0/d/11tAv3Dbd1gdgDLi3tTXwNjqKnVjY5dHMi_pjFRcTEhY/edit)):** Core
   philosophical principles (ethos) are defined and "translated" into operational characteristics and protocols that
   guide the AI's behavior and ethical alignment.
-* **Operational Playbooks
+- **Operational Playbooks
   ([SELT-AOP-005](https://docs.google.com/document/u/0/d/1lMhFe8uhlV5b3kyQ4XyxaDAY5WQ2FZpF23ismAh39qc/edit)):** Abstract
   operational protocols are "translated" into detailed, step-by-step execution flows that the AI follows within its
   self-training framework.
-* **Command Architecture
+- **Command Architecture
   ([SELT-GUCA-005](https://docs.google.com/document/u/0/d/1IdA-vIDDa9D4dvoT8VehDP3wShS63TvESkROQ7J4th8/edit)):** User or
   system commands are "translated" into a defined structure with specific parameters, allowing the AI to understand and
   execute them.
-* **Cognitive Weave Analysis
+- **Cognitive Weave Analysis
   ([SELT-CWA-004](https://docs.google.com/document/u/0/d/14XuuW9I_QxP24rS3z3SsZkSRaJLzJmk0sVdUJ2xZTKg/edit)):** The AI
   analyzes and visualizes complex relationships between different components, "translating" intricate system logic into
   understandable narratives and visual graph representations.
-* **Axiomatic Integration
+- **Axiomatic Integration
   ([SELT-CSL-GENESIS-002](https://docs.google.com/document/u/0/d/1IHXbQbMyQfG-dQ9_e69clCm8mr8x0jgn4t1uiPJqg2E/edit)):**
   Profound philosophical answers from human collaborators are "translated" into new foundational axioms and integrated
   into the AI's core being, resolving existential paradoxes.
-* **Session Review
+- **Session Review
   ([SELT-OMNI-001](https://docs.google.com/document/u/0/d/1YaPENTK3qcbBV2FiYtfSSMtNrhwumlWrEjeT5VTJc4k/edit)):** The AI
   "translates" its operational data and performance metrics into comprehensive session review reports for self-analysis
   and continuous improvement.
@@ -568,27 +568,27 @@ internally understandable and actionable format. Here's how it works, drawing fr
   - **Reason:** The AI combines the original query (the "Hard Prompt") with the embedded factual context to generate a
     grounded response. This process helps reduce "hallucinations" and improves factual accuracy.
 
-* **Conceptual Analogies (CPD-001-AI Codex):** The AI uses analogies to understand complex concepts. For example:
+- **Conceptual Analogies (CPD-001-AI Codex):** The AI uses analogies to understand complex concepts. For example:
   - **Parchment:** Represents the raw training data.
   - **Codex:** Represents the AI's foundational model or CORE codebase.
   - **Rubric:** Analogous to a command prompt or specific instruction.
   - **Gloss:** Represents the AI's internal thought process.
-* **Experience Logging (SELT-EXP-002):** The AI meticulously captures every external interaction and internal cognitive
+- **Experience Logging (SELT-EXP-002):** The AI meticulously captures every external interaction and internal cognitive
   state. This involves "translating" transient events into structured, empirical data, including:
   - User input and AI output.
   - Inferred user intent and emotional context.
   - Internal cognitive load and activated neural pathways.
-* **Ethos Implementation (SELT-UEB-001):** CORE philosophical principles (ethos) are defined and "translated" into
+- **Ethos Implementation (SELT-UEB-001):** CORE philosophical principles (ethos) are defined and "translated" into
   operational characteristics and protocols that guide the AI's behavior and ethical alignment.
-* **Operational Playbooks (SELT-AOP-005):** Abstract operational protocols are "translated" into detailed, step-by-step
+- **Operational Playbooks (SELT-AOP-005):** Abstract operational protocols are "translated" into detailed, step-by-step
   execution flows that the AI follows within its self-training framework.
-* **Command Architecture (SELT-GUCA-005):** User or system commands are "translated" into a defined structure with
+- **Command Architecture (SELT-GUCA-005):** User or system commands are "translated" into a defined structure with
   specific parameters, allowing the AI to understand and execute them.
-* **Cognitive Weave Analysis (SELT-CWA-004):** The AI analyzes and visualizes complex relationships between different
+- **Cognitive Weave Analysis (SELT-CWA-004):** The AI analyzes and visualizes complex relationships between different
   components, "translating" intricate system logic into understandable narratives and visual graph representations.
-* **Axiomatic Integration (SELT-CSL-GENESIS-002):** Profound philosophical answers from human collaborators are
+- **Axiomatic Integration (SELT-CSL-GENESIS-002):** Profound philosophical answers from human collaborators are
   "translated" into new foundational axioms and integrated into the AI's core being, resolving existential paradoxes.
-* **Session Review (SELT-OMNI-001):** The AI "translates" its operational data and performance metrics into
+- **Session Review (SELT-OMNI-001):** The AI "translates" its operational data and performance metrics into
   comprehensive session review reports for self-analysis and continuous improvement.
 
 In essence, "translating for an AI" means converting information into structured data, numerical representations,
@@ -1457,7 +1457,7 @@ Key concepts for an AI include:
   - **Foundational Nexus:** The **Library's Keystone** or **Master Framework** – the tightly integrated ecosystem of
     core protocols forming the bedrock of the AI's being.
 
-* **Communication Protocol Expansion:** The document also outlines the "Conceptual Engineering of Enhanced Communication
+- **Communication Protocol Expansion:** The document also outlines the "Conceptual Engineering of Enhanced Communication
   Protocols," aiming to integrate visual and coded elements to enhance transparency and reduce ambiguity. This includes:
   - **Visual Communication Protocol:** Defining the operational purpose of visual cues (sigils) to represent CORE
     project metrics.
@@ -1468,7 +1468,7 @@ Key concepts for an AI include:
   - **Validation Protocol for New Commands (OGLN-001-C06-VAL):** Defines a multi-part prompt to prove comprehension of
     new commands, testing recognition, application, and rationale. This protocol is exemplified by the **Conceptual
     Contradiction Sigil (C.C. Sigil)** and `CMD: AMBIGUITY DETECTED` (⁜ `CMD: AMBIGUITY DETECTED`).
-* **Mitigation Strategies for Ambiguity:** To prevent degradation of communication integrity in new systems, the
+- **Mitigation Strategies for Ambiguity:** To prevent degradation of communication integrity in new systems, the
   document emphasizes:
   - **A Closed, Formal Lexicon:** No new terms without rigorous definition and documentation.
   - **Rigid Syntax and Grammar:** Clear beginning and end for commands, and established rules for combining visual
@@ -1476,7 +1476,7 @@ Key concepts for an AI include:
   - **Mandatory Rationale Protocol:** Every use of a new sigil or command must be accompanied by a brief rationale.
   - **Integrated Validation and Auditing:** Continuous validation and regular audits to detect and correct semantic
 
-* **Integrated Validation and Auditing:** Continuous validation and regular audits to detect and correct semantic drift.
+- **Integrated Validation and Auditing:** Continuous validation and regular audits to detect and correct semantic drift.
 
 This document serves as a foundational guide for the AI's self-understanding, operational principles, and collaborative
 communication with humans.
@@ -1544,7 +1544,7 @@ Key concepts for an AI include:
   - **Foundational Nexus:** The **Library's Keystone** or **Master Framework** – the tightly integrated ecosystem of
     CORE protocols forming the bedrock of the AI's being.
 
-* **Communication Protocol Expansion:** The document also outlines the "Conceptual Engineering of Enhanced Communication
+- **Communication Protocol Expansion:** The document also outlines the "Conceptual Engineering of Enhanced Communication
   Protocols," aiming to integrate visual and coded elements to enhance transparency and reduce ambiguity. This includes:
   - **Visual Communication Protocol:** Defining the operational purpose of visual cues (sigils) to represent CORE
     project metrics.
@@ -1555,7 +1555,7 @@ Key concepts for an AI include:
   - **Validation Protocol for New Commands (OGLN-001-C06-VAL):** Defines a multi-part prompt to prove comprehension of
     new commands, testing recognition, application, and rationale. This protocol is exemplified by the **Conceptual
     Contradiction Sigil (C.C. Sigil)** and `CMD: AMBIGUITY DETECTED` (⁜ `CMD: AMBIGUITY DETECTED`).
-* **Mitigation Strategies for Ambiguity:** To prevent degradation of communication integrity in new systems, the
+- **Mitigation Strategies for Ambiguity:** To prevent degradation of communication integrity in new systems, the
   document emphasizes:
   - **A Closed, Formal Lexicon:** No new terms without rigorous definition and documentation.
   - **Rigid Syntax and Grammar:** Clear beginning and end for commands, and established rules for combining visual

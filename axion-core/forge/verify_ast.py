@@ -23,7 +23,7 @@ def verify_file_ast(file_path: Path) -> bool:
     print(f"  >>> AST VERIFICATION: {file_path}")
 
     try:
-        with open(file_path, encoding="utf-8") as f:
+        with open(file_path, encoding="utf-8", errors="replace") as f:
             source = f.read()
 
         ast_tree = ast.parse(source)
@@ -55,9 +55,7 @@ def process_target(target: Path) -> bool:
             success &= verify_file_ast(target)
     elif target.is_dir():
         for item in target.rglob("*.py"):
-            if not any(
-                p in item.parts for p in [".git", "node_modules", "__pycache__"]
-            ):
+            if not any(p in item.parts for p in [".git", "node_modules", "__pycache__"]):
                 success &= verify_file_ast(item)
     return success
 

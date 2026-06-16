@@ -20,9 +20,7 @@ async def main() -> None:
         for _cmd in commands:
             pass
 
-        embeddings = await repo_query(
-            "SELECT count() as count FROM source_embedding GROUP ALL"
-        )
+        embeddings = await repo_query("SELECT count() as count FROM source_embedding GROUP ALL")
 
     except Exception as e:
         pass

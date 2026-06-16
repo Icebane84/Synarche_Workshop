@@ -119,11 +119,14 @@ class TestGenerateEmbeddings:
         """Test that missing model raises ValueError."""
         from unittest.mock import AsyncMock, patch
 
-        with patch(
-            "open_notebook.utils.embedding.model_manager.get_embedding_model",
-            new_callable=AsyncMock,
-            return_value=None,
-        ), pytest.raises(ValueError, match="No embedding model configured"):
+        with (
+            patch(
+                "open_notebook.utils.embedding.model_manager.get_embedding_model",
+                new_callable=AsyncMock,
+                return_value=None,
+            ),
+            pytest.raises(ValueError, match="No embedding model configured"),
+        ):
             await generate_embeddings(["test text"])
 
     @pytest.mark.asyncio

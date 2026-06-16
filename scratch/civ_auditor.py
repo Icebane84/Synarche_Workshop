@@ -8,11 +8,13 @@ import traceback
 from pathlib import path
 import yaml
 from jsonschema import validate
+
 SCHEMA_PATH = "uip_v15.schema.json"
 
 
 def synarche_audit(func: callable) -> callable:
     """Architectural wrapper for standardized logging compliance."""
+
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         logger = logging.getLogger("PhoenixLogger")
@@ -24,8 +26,11 @@ def synarche_audit(func: callable) -> callable:
             logger.info(f"Finished {func.__name__} in {duration:.4f}s")
             return result
         except Exception as e:
-            logger.error(f"CRITICAL FAILURE in {func.__name__}: {e!s}\n{traceback.format_exc()}")
+            logger.error(
+                f"CRITICAL FAILURE in {func.__name__}: {e!s}\n{traceback.format_exc()}"
+            )
             raise
+
     return wrapper
 
 
@@ -49,7 +54,9 @@ class ConceptualIntegrityValidator:
         if not self.logger.handlers:
             self.logger.setLevel(logging.DEBUG)
             handler = logging.StreamHandler(sys.stdout)
-            formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
 

@@ -49,9 +49,7 @@ def generate_unique_filename(original_filename: str, upload_folder: str) -> str:
     # Check if file exists and generate unique name
     counter = 0
     while True:
-        new_filename = (
-            original_filename if counter == 0 else f"{stem} ({counter}){suffix}"
-        )
+        new_filename = original_filename if counter == 0 else f"{stem} ({counter}){suffix}"
 
         full_path = file_path / new_filename
         if not full_path.exists():
@@ -152,13 +150,9 @@ def parse_source_form_data(
 @router.get("/sources", response_model=list[SourceListResponse])
 async def get_sources(
     notebook_id: str | None = Query(None, description="Filter by notebook ID"),
-    limit: int = Query(
-        50, ge=1, le=100, description="Number of sources to return (1-100)"
-    ),
+    limit: int = Query(50, ge=1, le=100, description="Number of sources to return (1-100)"),
     offset: int = Query(0, ge=0, description="Number of sources to skip"),
-    sort_by: str = Query(
-        "updated", description="Field to sort by (created or updated)"
-    ),
+    sort_by: str = Query("updated", description="Field to sort by (created or updated)"),
     sort_order: str = Query("desc", description="Sort order (asc or desc)"),
 ):
     """Get sources with pagination and sorting support."""
@@ -174,13 +168,9 @@ async def get_sources(
     try:
         # Validate sort parameters
         if sort_by not in ["created", "updated"]:
-            raise HTTPException(
-                status_code=400, detail="sort_by must be 'created' or 'updated'"
-            )
+            raise HTTPException(status_code=400, detail="sort_by must be 'created' or 'updated'")
         if sort_order.lower() not in ["asc", "desc"]:
-            raise HTTPException(
-                status_code=400, detail="sort_order must be 'asc' or 'desc'"
-            )
+            raise HTTPException(status_code=400, detail="sort_order must be 'asc' or 'desc'")
 
         # Build ORDER BY clause
         order_clause = f"ORDER BY {sort_by} {sort_order.upper()}"
@@ -238,11 +228,7 @@ async def get_sources(
                 status = command.get("status")
                 # Extract execution metadata from nested result structure
                 result_data = command.get("result")
-                execution_metadata = (
-                    result_data.get("execution_metadata", {})
-                    if isinstance(result_data, dict)
-                    else {}
-                )
+                execution_metadata = result_data.get("execution_metadata", {}) if isinstance(result_data, dict) else {}
                 processing_info = {
                     "started_at": execution_metadata.get("started_at"),
                     "completed_at": execution_metadata.get("completed_at"),
@@ -260,11 +246,7 @@ async def get_sources(
                     topics=row.get("topics") or [],
                     asset=(
                         AssetModel(
-                            file_path=(
-                                row["asset"].get("file_path")
-                                if row.get("asset")
-                                else None
-                            ),
+                            file_path=(row["asset"].get("file_path") if row.get("asset") else None),
                             url=row["asset"].get("url") if row.get("asset") else None,
                         )
                         if row.get("asset")
@@ -302,9 +284,7 @@ async def create_source(
         for notebook_id in source_data.notebooks or []:
             notebook = await Notebook.get(notebook_id)
             if not notebook:
-                raise HTTPException(
-                    status_code=404, detail=f"Notebook {notebook_id} not found"
-                )
+                raise HTTPException(status_code=404, detail=f"Notebook {notebook_id} not found")
 
         # Handle file upload if provided
         file_path = None
@@ -313,18 +293,14 @@ async def create_source(
                 file_path = await save_uploaded_file(upload_file)
             except Exception as e:
                 logger.error(f"File upload failed: {e}")
-                raise HTTPException(
-                    status_code=400, detail=f"File upload failed: {e!s}"
-                )
+                raise HTTPException(status_code=400, detail=f"File upload failed: {e!s}")
 
         # Prepare content_state for processing
         content_state: dict[str, Any] = {}
 
         if source_data.type == "link":
             if not source_data.url:
-                raise HTTPException(
-                    status_code=400, detail="URL is required for link type"
-                )
+                raise HTTPException(status_code=400, detail="URL is required for link type")
             content_state["url"] = source_data.url
         elif source_data.type == "upload":
             # Use uploaded file path or provided file_path (backward compatibility)
@@ -338,9 +314,7 @@ async def create_source(
             content_state["delete_source"] = source_data.delete_source
         elif source_data.type == "text":
             if not source_data.content:
-                raise HTTPException(
-                    status_code=400, detail="Content is required for text type"
-                )
+                raise HTTPException(status_code=400, detail="Content is required for text type")
             content_state["content"] = source_data.content
         else:
             raise HTTPException(
@@ -353,9 +327,7 @@ async def create_source(
         for trans_id in transformation_ids:
             transformation = await Transformation.get(trans_id)
             if not transformation:
-                raise HTTPException(
-                    status_code=404, detail=f"Transformation {trans_id} not found"
-                )
+                raise HTTPException(status_code=404, detail=f"Transformation {trans_id} not found")
 
         # Branch based on processing mode
         if source_data.async_processing:
@@ -429,9 +401,7 @@ async def create_source(
                         os.unlink(file_path)
                     except Exception:
                         pass
-                raise HTTPException(
-                    status_code=500, detail=f"Failed to queue processing: {e!s}"
-                )
+                raise HTTPException(status_code=500, detail=f"Failed to queue processing: {e!s}")
 
         else:
             # SYNC PATH: Execute synchronously using execute_command_sync
@@ -496,9 +466,7 @@ async def create_source(
                     raise HTTPException(status_code=500, detail="Source ID is missing")
                 processed_source = await Source.get(source.id)
                 if not processed_source:
-                    raise HTTPException(
-                        status_code=500, detail="Processed source not found"
-                    )
+                    raise HTTPException(status_code=500, detail="Processed source not found")
 
                 embedded_chunks = await processed_source.get_embedded_chunks()
                 return SourceResponse(
@@ -507,16 +475,8 @@ async def create_source(
                     topics=processed_source.topics or [],
                     asset=(
                         AssetModel(
-                            file_path=(
-                                processed_source.asset.file_path
-                                if processed_source.asset
-                                else None
-                            ),
-                            url=(
-                                processed_source.asset.url
-                                if processed_source.asset
-                                else None
-                            ),
+                            file_path=(processed_source.asset.file_path if processed_source.asset else None),
+                            url=(processed_source.asset.url if processed_source.asset else None),
                         )
                         if processed_source.asset
                         else None
@@ -587,9 +547,7 @@ async def _resolve_source_file(source_id: str) -> tuple[str, str]:
     resolved_path = os.path.realpath(file_path)
 
     if not resolved_path.startswith(safe_root):
-        logger.warning(
-            f"Blocked download outside uploads directory for source {source_id}: {resolved_path}"
-        )
+        logger.warning(f"Blocked download outside uploads directory for source {source_id}: {resolved_path}")
         raise HTTPException(status_code=403, detail="Access to file denied")
 
     if not os.path.exists(resolved_path):
@@ -639,9 +597,7 @@ async def get_source(source_id: str):
             "SELECT VALUE out FROM reference WHERE in = $source_id",
             {"source_id": ensure_record_id(source.id or source_id)},
         )
-        notebook_ids = (
-            [str(nb_id) for nb_id in notebooks_query] if notebooks_query else []
-        )
+        notebook_ids = [str(nb_id) for nb_id in notebooks_query] if notebooks_query else []
 
         return SourceResponse(
             id=source.id or "",
@@ -762,9 +718,7 @@ async def get_source_status(source_id: str):
         raise
     except Exception as e:
         logger.error(f"Error fetching status for source {source_id}: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error fetching source status: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error fetching source status: {e!s}")
 
 
 @router.put("/sources/{source_id}", response_model=SourceResponse)
@@ -830,9 +784,7 @@ async def retry_source_processing(source_id: str):
                         detail="Source is already processing. Cannot retry while processing is active.",
                     )
             except Exception as e:
-                logger.warning(
-                    f"Failed to check current status for source {source_id}: {e}"
-                )
+                logger.warning(f"Failed to check current status for source {source_id}: {e}")
                 # Continue with retry if we can't check status
 
         # Get notebooks that this source belongs to
@@ -841,9 +793,7 @@ async def retry_source_processing(source_id: str):
         notebook_ids = [str(ref["notebook"]) for ref in references]
 
         if not notebook_ids:
-            raise HTTPException(
-                status_code=400, detail="Source is not associated with any notebooks"
-            )
+            raise HTTPException(status_code=400, detail="Source is not associated with any notebooks")
 
         # Prepare content_state based on source asset
         content_state = {}
@@ -856,17 +806,12 @@ async def retry_source_processing(source_id: str):
             elif source.asset.url:
                 content_state = {"url": source.asset.url}
             else:
-                raise HTTPException(
-                    status_code=400, detail="Source asset has no file_path or url"
-                )
+                raise HTTPException(status_code=400, detail="Source asset has no file_path or url")
+        # Check if it's a text source by trying to get full_text
+        elif source.full_text:
+            content_state = {"content": source.full_text}
         else:
-            # Check if it's a text source by trying to get full_text
-            if source.full_text:
-                content_state = {"content": source.full_text}
-            else:
-                raise HTTPException(
-                    status_code=400, detail="Cannot determine source content for retry"
-                )
+            raise HTTPException(status_code=400, detail="Cannot determine source content for retry")
 
         try:
             # Import command modules to ensure they're registered
@@ -887,9 +832,7 @@ async def retry_source_processing(source_id: str):
                 command_input.model_dump(),
             )
 
-            logger.info(
-                f"Submitted retry processing command: {command_id} for source {source_id}"
-            )
+            logger.info(f"Submitted retry processing command: {command_id} for source {source_id}")
 
             # Update source with new command ID
             source.command = ensure_record_id(f"command:{command_id}")
@@ -922,20 +865,14 @@ async def retry_source_processing(source_id: str):
             )
 
         except Exception as e:
-            logger.error(
-                f"Failed to submit retry processing command for source {source_id}: {e}"
-            )
-            raise HTTPException(
-                status_code=500, detail=f"Failed to queue retry processing: {e!s}"
-            )
+            logger.error(f"Failed to submit retry processing command for source {source_id}: {e}")
+            raise HTTPException(status_code=500, detail=f"Failed to queue retry processing: {e!s}")
 
     except HTTPException:
         raise
     except Exception as e:
         logger.error(f"Error retrying source processing for {source_id}: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error retrying source processing: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error retrying source processing: {e!s}")
 
 
 @router.delete("/sources/{source_id}")

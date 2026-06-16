@@ -32,7 +32,7 @@ artifact_anchor:
 import logging
 import uuid
 from dataclasses import dataclass
-from typing import Optional, Set
+from typing import Any, Dict, List, Optional, Set
 
 from .component import ComponentStore
 
@@ -61,7 +61,22 @@ class SynergySystem:
 
     The SynergySystem identifies 'Dissonance' (fragmented data) and
     calculates the 'Coherence Index' (CI) of the simulation.
+
+    Public interface
+    ----------------
+    calculate_gss()
+        Full ECS scan — returns SynergyMetrics directly.
+    detect(nodes)
+        Scheduler-facing adapter.  Accepts the CognitiveScheduler's
+        ``graph.nodes`` dict (``Dict[int, CognitiveNode]``) and returns a
+        ``List[Dict[str, Any]]`` of pattern-hit records suitable for
+        appending to ``CognitiveState.pattern_hits``.
     """
+
+    # Coherence index below this level emits a 'low_coherence' pattern hit.
+    LOW_COHERENCE_THRESHOLD: float = 0.25
+    # Orphanage factor above this level emits an 'high_orphanage' pattern hit.
+    HIGH_ORPHANAGE_THRESHOLD: float = 0.50
 
     def __init__(self, component_store: ComponentStore) -> None:
         """Initializes the synergy system with a reference to the component store.
@@ -122,12 +137,66 @@ class SynergySystem:
 
         self.last_metrics = metrics
 
-        if ci < 0.25:
+        if ci < self.LOW_COHERENCE_THRESHOLD:
             self.logger.warning(
                 f"LOW COHERENCE DETECTED: CI={ci:.4f}. Simulation may be fragmented."
             )
 
         return metrics
+
+    def detect(self, nodes: Dict[int, Any]) -> List[Dict[str, Any]]:
+        """Scheduler-facing adapter for the Π (pattern-mining) phase.
+
+        Runs :meth:`calculate_gss` against the ECS component store, then
+        translates the resulting :class:`SynergyMetrics` into the
+        ``List[Dict]`` format expected by
+        ``CognitiveState.pattern_hits``.
+
+        The ``nodes`` argument mirrors the ``CognitiveGraph.nodes`` dict
+        (``Dict[int, CognitiveNode]``) passed in by
+        :class:`~engine.cognitive_scheduler.CognitiveScheduler._stage_pattern`.
+        It is accepted for interface symmetry and future use (e.g. cross-
+        referencing graph nodes against ECS entities) but is not consumed
+        by the current implementation.
+
+        Args:
+            nodes: The scheduler's active ``CognitiveGraph.nodes`` dict.
+
+        Returns:
+            List of pattern-hit dicts.  Each dict contains at minimum a
+            ``"trigger"`` key so the scheduler can log and react to it.
+            Returns an empty list when no anomalies are detected.
+        """
+        metrics = self.calculate_gss()
+        hits: List[Dict[str, Any]] = []
+
+        if metrics.coherence_index < self.LOW_COHERENCE_THRESHOLD:
+            hits.append(
+                {
+                    "trigger": "low_coherence",
+                    "coherence_index": round(metrics.coherence_index, 4),
+                    "node_density": round(metrics.node_density, 4),
+                    "coupling_resonance": round(metrics.coupling_resonance, 4),
+                }
+            )
+            self.logger.info(
+                f"[Π] Synergy hit: low_coherence CI={metrics.coherence_index:.4f} "
+                f"(threshold={self.LOW_COHERENCE_THRESHOLD})"
+            )
+
+        if metrics.orphanage_factor > self.HIGH_ORPHANAGE_THRESHOLD:
+            hits.append(
+                {
+                    "trigger": "high_orphanage",
+                    "orphanage_factor": round(metrics.orphanage_factor, 4),
+                }
+            )
+            self.logger.info(
+                f"[Π] Synergy hit: high_orphanage OF={metrics.orphanage_factor:.4f} "
+                f"(threshold={self.HIGH_ORPHANAGE_THRESHOLD})"
+            )
+
+        return hits
 
     def __repr__(self) -> str:
         """Returns a string representation of the synergy system state."""

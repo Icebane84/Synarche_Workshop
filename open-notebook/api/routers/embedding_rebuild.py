@@ -31,7 +31,7 @@ async def start_rebuild(request: RebuildRequest):
         logger.info(f"Starting rebuild request: mode={request.mode}")
 
         # Import commands to ensure they're registered
-        import commands.embedding_commands  # noqa: F401
+        import commands.embedding_commands
 
         # Estimate total items (quick count query)
         # This is a rough estimate before the command runs
@@ -51,9 +51,7 @@ async def start_rebuild(request: RebuildRequest):
                 )
             else:
                 # Count all sources with content
-                result = await repo_query(
-                    "SELECT VALUE count() as count FROM source WHERE full_text != none GROUP ALL"
-                )
+                result = await repo_query("SELECT VALUE count() as count FROM source WHERE full_text != none GROUP ALL")
 
             if result and isinstance(result[0], dict):
                 total_estimate += result[0].get("count", 0)
@@ -66,9 +64,7 @@ async def start_rebuild(request: RebuildRequest):
                     "SELECT VALUE count() as count FROM note WHERE embedding != none AND array::len(embedding) > 0 GROUP ALL"
                 )
             else:
-                result = await repo_query(
-                    "SELECT VALUE count() as count FROM note WHERE content != none GROUP ALL"
-                )
+                result = await repo_query("SELECT VALUE count() as count FROM note WHERE content != none GROUP ALL")
 
             if result and isinstance(result[0], dict):
                 total_estimate += result[0].get("count", 0)
@@ -81,9 +77,7 @@ async def start_rebuild(request: RebuildRequest):
                     "SELECT VALUE count() as count FROM source_insight WHERE embedding != none AND array::len(embedding) > 0 GROUP ALL"
                 )
             else:
-                result = await repo_query(
-                    "SELECT VALUE count() as count FROM source_insight GROUP ALL"
-                )
+                result = await repo_query("SELECT VALUE count() as count FROM source_insight GROUP ALL")
 
             if result and isinstance(result[0], dict):
                 total_estimate += result[0].get("count", 0)
@@ -115,9 +109,7 @@ async def start_rebuild(request: RebuildRequest):
     except Exception as e:
         logger.error(f"Failed to start rebuild: {e}")
         logger.exception(e)
-        raise HTTPException(
-            status_code=500, detail=f"Failed to start rebuild operation: {str(e)}"
-        )
+        raise HTTPException(status_code=500, detail=f"Failed to start rebuild operation: {e!s}")
 
 
 @router.get("/rebuild/{command_id}/status", response_model=RebuildStatusResponse)
@@ -173,11 +165,7 @@ async def get_rebuild_status(command_id: str):
             response.completed_at = str(status.updated)
 
         # Add error message if failed
-        if (
-            status.status == "failed"
-            and status.result
-            and isinstance(status.result, dict)
-        ):
+        if status.status == "failed" and status.result and isinstance(status.result, dict):
             response.error_message = status.result.get("error_message", "Unknown error")
 
         return response
@@ -187,6 +175,4 @@ async def get_rebuild_status(command_id: str):
     except Exception as e:
         logger.error(f"Failed to get rebuild status: {e}")
         logger.exception(e)
-        raise HTTPException(
-            status_code=500, detail=f"Failed to get rebuild status: {str(e)}"
-        )
+        raise HTTPException(status_code=500, detail=f"Failed to get rebuild status: {e!s}")

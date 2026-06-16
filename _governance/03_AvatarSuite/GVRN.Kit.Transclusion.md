@@ -1,26 +1,26 @@
 ---
 id: GVRN.Kit.Transclusion
 name: The Manifesto of Transclusion
-tags: ['#GVRN/Kit/Transclusion', '#Modularity', '#PRS-002']
-links: ['[[GVRN.Kit.Architecture]]', '[[GVRN.Codex.Phoenix]]']
+tags: ["#GVRN/Kit/Transclusion", "#Modularity", "#PRS-002"]
+links: ["[[GVRN.Kit.Architecture]]", "[[GVRN.Codex.Phoenix]]"]
 relations:
-    - type: ENFORCES
-      target: '[[GVRN.Kit.Architecture]]'
-description: 'Sovereign standards for modularity and reusability through the 7 Pillars of Transclusion.'
+  - type: ENFORCES
+    target: "[[GVRN.Kit.Architecture]]"
+description: "Sovereign standards for modularity and reusability through the 7 Pillars of Transclusion."
 ---
 
 # THE MANIFESTO OF TRANSCLUSION | UMB-GVRN.Kit.Transclusion
 
-| Field             | Metadata                                             |
-| :---------------- | :--------------------------------------------------- |
-| **Provenance**    | Genesis Stamp: 2026-04-17                            |
-| **Domain**        | GVRN.Kit.Transclusion                                |
-| **State**         | 🟢 CANONIZED                                         |
-| **Criticality**   | HIGH                                                 |
-| **Class**         | RELATIONAL                                           |
-| **Author**        | User & Antigravity                                   |
-| **Audit**         | Musashi (Pass)                                       |
-| **Integrity**     | [V15.0-OMEGA]                                        |
+| Field           | Metadata                  |
+| :-------------- | :------------------------ |
+| **Provenance**  | Genesis Stamp: 2026-04-17 |
+| **Domain**      | GVRN.Kit.Transclusion     |
+| **State**       | 🟢 CANONIZED              |
+| **Criticality** | HIGH                      |
+| **Class**       | RELATIONAL                |
+| **Author**      | User & Antigravity        |
+| **Audit**       | Musashi (Pass)            |
+| **Integrity**   | [V15.0-OMEGA]             |
 
 ---
 

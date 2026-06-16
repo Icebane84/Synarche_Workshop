@@ -82,18 +82,26 @@ REQUIRED_EXTENSIONS = [RUFF_EXTENSION]  # The Synergy Link to 'uv'
 
 REQUIRED_SETTINGS = {
     "editor.formatOnSave": True,
-    KEY_DEFAULT_FORMATTER: RUFF_EXTENSION,
+    KEY_DEFAULT_FORMATTER: "esbenp.prettier-vscode",
     "python.defaultInterpreterPath": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
     "eslint.useFlatConfig": True,
-    "eslint.options": {"overrideConfigFile": "./eslint.config.mjs"},
     PYTHON_SECTION: {KEY_DEFAULT_FORMATTER: RUFF_EXTENSION},
     "[markdown]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": True,
     },
+    "prettier.configPath": "./axion-core/standards/.prettierrc",
+    "biome.configurationPath": "C://Users//Chris//Synarche_Workspace//axion-core//standards//biome.json",
+    "cSpell.configFile": "./axion-core/standards/cspell.jsonc",
+    "mypy-type-checker.args": ["--config-file", "./axion-core/standards/mypy.ini"],
 }
 
-REQUIRED_CODE_ACTIONS = {"source.organizeImports": "always", "source.fixAll": "always"}
+REQUIRED_CODE_ACTIONS = {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports.biome": "explicit",
+}
 
 # --- UTILITY FUNCTIONS ---
 
@@ -103,12 +111,12 @@ def load_json(path: Path) -> dict[str, Any]:
     if not path.exists():
         return {}
     try:
-        with open(path, encoding="utf-8") as f:
+        with open(path, encoding="utf-8", errors="replace") as f:
             res = json.load(f)
             if isinstance(res, dict):
                 return res
             return {}
-    except json.JSONDecodeError:
+    except (json.JSONDecodeError, UnicodeDecodeError):
         logger.exception(f"[!] CRITICAL: {path} is corrupted or contains invalid JSON.")
         return {}
 
@@ -147,9 +155,10 @@ def audit_extensions(vscode_dir: Path, fix: bool) -> list[str]:
     return issues
 
 
-def _audit_top_level_settings(
-    data: dict[str, Any], fix: bool
-) -> tuple[list[str], bool]:
+NESTED_SECTIONS = [PYTHON_SECTION, "[markdown]"]
+
+
+def _audit_top_level_settings(data: dict[str, Any], fix: bool) -> tuple[list[str], bool]:
     """Audits top-level settings in settings.json."""
     issues = []
     modified = False
@@ -162,7 +171,7 @@ def _audit_top_level_settings(
             modified = True
 
     for key, value in REQUIRED_SETTINGS.items():
-        if key == PYTHON_SECTION:
+        if key in NESTED_SECTIONS:
             continue  # Handle nested separately
 
         if data.get(key) != value:
@@ -174,28 +183,28 @@ def _audit_top_level_settings(
     return issues, modified
 
 
-def _audit_python_overrides(data: dict[str, Any], fix: bool) -> tuple[list[str], bool]:
-    """Audits [python] section in settings.json."""
+def _audit_nested_overrides(data: dict[str, Any], section_key: str, fix: bool) -> tuple[list[str], bool]:
+    """Audits nested dictionary sections in settings.json."""
     issues = []
     modified = False
 
-    if PYTHON_SECTION not in data and fix:
-        data[PYTHON_SECTION] = {}
+    if section_key not in data and fix:
+        data[section_key] = {}
         modified = True
 
     # Re-check presence after potential creation
-    if PYTHON_SECTION in data:
-        py_block = data[PYTHON_SECTION]
-        target_block = REQUIRED_SETTINGS[PYTHON_SECTION]
+    if section_key in data:
+        block = data[section_key]
+        target_block = REQUIRED_SETTINGS.get(section_key)
 
-        if isinstance(target_block, dict):
+        if isinstance(target_block, dict) and isinstance(block, dict):
             for k, v in target_block.items():
-                if py_block.get(k) != v:
-                    issues.append(f"[BAD SETTING] {PYTHON_SECTION}.{k} is not '{v}'")
+                if block.get(k) != v:
+                    issues.append(f"[BAD SETTING] {section_key}.{k} is not '{v}'")
                     if fix:
-                        py_block[k] = v
+                        block[k] = v
                         modified = True
-            data[PYTHON_SECTION] = py_block
+            data[section_key] = block
 
     return issues, modified
 
@@ -238,10 +247,11 @@ def audit_settings(vscode_dir: Path, fix: bool) -> list[str]:
     issues.extend(top_issues)
     any_modified = any_modified or top_mod
 
-    # 2. Check Python Specific Overrides
-    py_issues, py_mod = _audit_python_overrides(data, fix)
-    issues.extend(py_issues)
-    any_modified = any_modified or py_mod
+    # 2. Check Nested Overrides (e.g. [python], [markdown])
+    for sec in NESTED_SECTIONS:
+        sec_issues, sec_mod = _audit_nested_overrides(data, sec, fix)
+        issues.extend(sec_issues)
+        any_modified = any_modified or sec_mod
 
     # 3. Check Code Actions
     ca_issues, ca_mod = _audit_code_actions(data, fix)
@@ -259,12 +269,8 @@ def audit_settings(vscode_dir: Path, fix: bool) -> list[str]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Phoenix Protocol: IDE Integrity Sentinel"
-    )
-    parser.add_argument(
-        "--fix", action="store_true", help="Automatically repair configuration drift."
-    )
+    parser = argparse.ArgumentParser(description="Phoenix Protocol: IDE Integrity Sentinel")
+    parser.add_argument("--fix", action="store_true", help="Automatically repair configuration drift.")
     parser.add_argument(
         "--strict",
         action="store_true",

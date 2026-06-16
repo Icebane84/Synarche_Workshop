@@ -24,6 +24,4 @@ class Transformation(ObjectModel):
 
 class DefaultPrompts(RecordModel):
     record_id: ClassVar[str] = "open_notebook:default_prompts"
-    transformation_instructions: str | None = Field(
-        None, description="Instructions for executing a transformation"
-    )
+    transformation_instructions: str | None = Field(None, description="Instructions for executing a transformation")

@@ -25,9 +25,7 @@ def fix_anchors(root_dir):
                                 in_metadata_block = True
 
                         if in_metadata_block and not line.strip().startswith("#"):
-                            if (
-                                line.strip()
-                            ):  # Don't comment empty lines if they don't matter, but better safe
+                            if line.strip():  # Don't comment empty lines if they don't matter, but better safe
                                 lines[i] = "# " + line.replace("`", "")
                                 changed = True
 

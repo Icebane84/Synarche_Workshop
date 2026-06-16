@@ -246,10 +246,7 @@ def detect_content_type(text: str, file_path: str | None = None) -> ContentType:
 
     # If no extension or generic extension, use heuristics
     if extension_type is None:
-        logger.debug(
-            f"No file extension, using heuristics: {heuristic_type.value} "
-            f"(confidence: {confidence:.2f})"
-        )
+        logger.debug(f"No file extension, using heuristics: {heuristic_type.value} (confidence: {confidence:.2f})")
         return heuristic_type
 
     # If extension suggests plain text but heuristics are very confident, override
@@ -352,18 +349,12 @@ def chunk_text(
         splitter = _get_html_splitter()
         # HTML splitter returns Document objects
         docs = splitter.split_text(text)
-        chunks = [
-            doc.page_content if hasattr(doc, "page_content") else str(doc)
-            for doc in docs
-        ]
+        chunks = [doc.page_content if hasattr(doc, "page_content") else str(doc) for doc in docs]
     elif content_type == ContentType.MARKDOWN:
         splitter = _get_markdown_splitter()
         # Markdown splitter returns Document objects
         docs = splitter.split_text(text)
-        chunks = [
-            doc.page_content if hasattr(doc, "page_content") else str(doc)
-            for doc in docs
-        ]
+        chunks = [doc.page_content if hasattr(doc, "page_content") else str(doc) for doc in docs]
     else:
         # Plain text - use recursive splitter directly
         splitter = _get_plain_splitter()

@@ -134,9 +134,7 @@ def generate(state: AgentState) -> AgentState:
     logger.info("--- [NODE] GENERATE: Synthesizing Output ---")
 
     # Stub logic: Generate a placeholder response
-    state["final_output"] = (
-        f"Processed Input: {state['input']} | Context: {state['narrative_context']}"
-    )
+    state["final_output"] = f"Processed Input: {state['input']} | Context: {state['narrative_context']}"
 
     return state
 
@@ -154,7 +152,7 @@ def sentinel(state: AgentState) -> AgentState:
 
 
 # --- GRAPH CONSTRUCTION ---
-def build_graph():
+def build_graph() -> StateGraph:
     """Builds and compiles the StateGraph."""
     workflow = StateGraph(AgentState)
 
@@ -206,8 +204,18 @@ if __name__ == "__main__":
         final_output="",
         messages=[],
         rpg_stats=initial_rpg,
-        gamemaster_state={},
-        lightbinder_state={},
+        gamemaster_state={
+            "quest_metrics": {},
+            "axiom_points_available": 0,
+            "is_dissonance_detected": False,
+        },
+        lightbinder_state={
+            "synergy_links": [],
+            "empathy_vector": "",
+            "metric_weights": {},
+            "tarot_manifest": {},
+            "active_masks": [],
+        },
         transmutation_log=[],
     )
 

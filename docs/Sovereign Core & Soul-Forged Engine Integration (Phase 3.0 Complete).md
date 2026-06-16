@@ -1,6 +1,6 @@
 # Walkthrough: Sovereign Core & Soul-Forged Engine Integration (Phase 3.0 Complete)
 
-We have successfully implemented, wired, and verified **Phase 3.0: The Soul-Forged Engine (Guardian Logic & Empathy)** on Windows. 
+We have successfully implemented, wired, and verified **Phase 3.0: The Soul-Forged Engine (Guardian Logic & Empathy)** on Windows.
 
 All core subsystems, including the LangGraph state machine, Pydantic data schemas, and the local SQLite RPG gamification manager, are now fully attuned to the new threat-aware risk containment logic, passing **43 out of 43 tests successfully with 100% compliance**.
 
@@ -9,17 +9,20 @@ All core subsystems, including the LangGraph state machine, Pydantic data schema
 ## 🏛️ Phase 3.0 - The Soul-Forged Engine
 
 ### 1. State Expansion & Subscriptable Pydantic Mapping
+
 - **[`schemas.py`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/agents/axion/schemas.py)**:
   - Added `soul_impact: Dict[str, Any] = Field(default_factory=dict)` directly to the `AxionState` core schema.
   - Spliced magic operators (`__getitem__`, `__setitem__`, `__contains__`) so the state can be accessed like a dictionary while preserving its rich Pydantic validation parameters.
 
 ### 2. Integrated `node_soul_analysis` & Path Fallbacks
+
 - **[`runtime.py`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/agents/axion/runtime.py)**:
   - Dynamically imports `SoulImpactAnalyzer` with defensive local/relative fallbacks (`from src.logic.utils.soul_analyzer` / `from logic.utils.soul_analyzer`).
   - Implemented the `node_soul_analysis` logical step to automatically calculate action risk, check proximity to critical modules, and fetch contextual `AOP-SEE-001` Sovereign Quotes based on input descriptions.
   - Spliced the node as both a standalone function and an asynchronous `AxionRuntime` instance method.
 
 ### 3. StateGraph Rewiring & Guardian Blocks
+
 - **Graph Wiring**:
   - Rewired thecompiled LangGraph StateGraph workflow inside `AxionRuntime.__init__` to weave the new risk containment logic seamlessly:
     `context -> forge -> soul_analysis -> sentinel -> END`
@@ -30,6 +33,7 @@ All core subsystems, including the LangGraph state machine, Pydantic data schema
   - Configured `sentinel_gate` to short-circuit all `FAIL` sentinel events directly to `END`, achieving a **graceful containment exit** without program-level crashes.
 
 ### 4. Hephaestus `ArtificersSoul` Elegance Bonus
+
 - **Local RPG Hooking**:
   - Imported `ArtificersSoul` (which executes native Abstract Syntax Tree AST parsing to compute the Algorithmic Elegance Score).
   - Spliced check inside `node_update_rpg_stats`: if an input contains Python code structures (`"def "` or `"class "`) and scores a high AES (>8.0), it awards a **+25 XP "Elegance Bonus"** and **+1 coherence_index** in addition to the standard gains.
@@ -39,9 +43,10 @@ All core subsystems, including the LangGraph state machine, Pydantic data schema
 
 ## ⚡ Flawless Verification & Test Results
 
-We authored and executed a dedicated unit test suite, [`test_soul_forged_engine.py`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/tests/test_soul_forged_engine.py), as a plain Python class (eliminating un-awaited coroutine warnings and utilizing native pytest-asyncio execution). 
+We authored and executed a dedicated unit test suite, [`test_soul_forged_engine.py`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/tests/test_soul_forged_engine.py), as a plain Python class (eliminating un-awaited coroutine warnings and utilizing native pytest-asyncio execution).
 
 All three test vectors passed with zero errors or failures:
+
 1. **Low-Risk Path:** Asserts that documentation/minor inputs yield a `STABLE` risk status, pass sentinel audits, and route to standard RPG updates.
 2. **High-Risk Block Path:** Asserts that commands suggesting core deletion (e.g. `Delete memory_system.py`) trigger `ALARM` status, set `sentinel_status = "FAIL"`, and contain appropriate Sovereign Quotes from `AOP-SEE-001`.
 3. **Elegance Bonus Path:** Asserts that standard prompts award standard `50` XP, while valid elegant python functions trigger the additional `25` XP Elegance Bonus and `2` Coherence points.
@@ -49,12 +54,14 @@ All three test vectors passed with zero errors or failures:
 ### 📊 Codebase-Wide Test Summary
 
 Running the full repository-wide pytest sweep:
+
 ```powershell
 $env:PYTHONPATH="c:\Users\Chris\Synarche_Workspace\axion-core;c:\Users\Chris\Synarche_Workspace\axion-core\src"
 C:\DevEnvironments\master_env\Scripts\python.exe -m pytest axion-core/tests
 ```
 
 Produces a flawless result:
+
 ```
 Collected 43 items
 

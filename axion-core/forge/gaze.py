@@ -7,12 +7,13 @@ Genesis Stamp: 2026-03-07.
 > Ethos: Omniscient Sight, Structural Cohesion.
 """
 
+import argparse
 import ast
 import json
 import logging
 from collections import defaultdict
 from pathlib import Path
-from typing import Any
+from typing import TypedDict
 
 # Hephaestus Lib Imports
 from weaver import CatalystWeaver
@@ -20,6 +21,12 @@ from weaver import CatalystWeaver
 # Configuration
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
+
+
+class SemanticWebResult(TypedDict):
+    synergy_score: float
+    pivots: list[str]
+    is_aligned: bool
 
 
 class GazeDependencyMapper:
@@ -32,7 +39,7 @@ class GazeDependencyMapper:
         self.imports_by_file: dict[str, list[str]] = defaultdict(list)
         self.weaver = CatalystWeaver()
 
-    def trace_semantic_web(self, artifact_a: dict, artifact_b: dict) -> Any:
+    def trace_semantic_web(self, artifact_a: dict[str, str], artifact_b: dict[str, str]) -> SemanticWebResult:
         """Calculate the semantic synergy between two artifacts."""
         return self.weaver.weave(artifact_a, artifact_b)
 
@@ -65,7 +72,7 @@ class GazeDependencyMapper:
 
     def _add_edge(self, source: str, target: str) -> None:
         """Register a dependency edge."""
-        target_base = target.split(".")[0]
+        target_base = target.split(".", maxsplit=1)[0]
 
         self.nodes.add(target_base)
         self.edges.append({"source": source, "target": target_base})
@@ -82,7 +89,10 @@ class GazeDependencyMapper:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Gaze Dependency Mapper")
+    parser.add_argument("--target", required=True, help="Target directory to scan for dependencies")
+    args = parser.parse_args()
+
     gaze = GazeDependencyMapper()
-    target_path = Path("c:/Users/Chris/Synarche_Workspace/axion-core/src")
-    gaze.scan_directory(str(target_path))
+    gaze.scan_directory(args.target)
     print(gaze.export_graph_json())

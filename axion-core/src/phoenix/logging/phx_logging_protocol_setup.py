@@ -38,6 +38,7 @@ class ProcessStatus(Enum):
     CRITICAL = auto()
     DEBUG = auto()  # Added for decorator's debug entry log
 
+
 # --- I. Standard Initialization (from GUCA: Core Implementation Standard) ---
 # This function would reside in @system/logging/phoenix_logger.py
 def setup_synarche_logging() -> logging.Logger:
@@ -189,26 +190,64 @@ if __name__ == "__main__":
         # Demo Directive Beta: Update Sentinel-PRS-Check
         print("\n--- Sentinel Audit Simulation ---")
         simulate_sentinel_audit("def my_func(): print('hello')")
-        simulate_sentinel_audit("def another_func(): console.log('hello')") # Test for console.log
+        simulate_sentinel_audit(
+            "def another_func(): console.log('hello')"
+        )  # Test for console.log
         simulate_sentinel_audit("@synarche_audit\nasync def compliant_func(): pass")
-        simulate_sentinel_audit("def compliant_func_sync(): pass") # Test for missing decorator on sync func
-        simulate_sentinel_audit("def compliant_func_sync_with_print(): print('hello')") # Test for missing decorator on sync func with print
-        simulate_sentinel_audit("@synarche_audit\nasync def compliant_async_func_with_print(): print('hello')") # Test for compliant async func with print
-        simulate_sentinel_audit("@synarche_audit\nasync def compliant_async_func(): pass") # Test for compliant async func
-        simulate_sentinel_audit("@synarche_audit\nclass MyClass:\n    def my_method(self): pass") # Test for decorator on a method
-        simulate_sentinel_audit("class MyClass:\n    @synarche_audit\n    def my_method(self): pass") # Test for decorator on a method, different syntax
-        simulate_sentinel_audit("class MyClass:\n    def my_method(self): print('hello')") # Test for missing decorator on a method with print
-        simulate_sentinel_audit("class MyClass:\n    def my_method(self): console.log('hello')") # Test for missing decorator on a method with console.log
-        simulate_sentinel_audit("class MyClass:\n    @synarche_audit\n    async def my_async_method(self): pass") # Test for decorator on an async method
-        simulate_sentinel_audit("class MyClass:\n    async def my_async_method(self): pass") # Test for missing decorator on an async method
-        simulate_sentinel_audit("class MyClass:\n    async def my_async_method_with_print(self): print('hello')") # Test for missing decorator on an async method with print
-        simulate_sentinel_audit("class MyClass:\n    async def my_async_method_with_console_log(self): console.log('hello')") # Test for missing decorator on an async method with console.log
-        simulate_sentinel_audit("class MyClass:\n    @synarche_audit\n    async def compliant_async_method_with_print(self): print('hello')") # Test for compliant async method with print
-        simulate_sentinel_audit("class MyClass:\n    @synarche_audit\n    async def compliant_async_method_with_console_log(self): console.log('hello')") # Test for compliant async method with console.log
-        simulate_sentinel_audit("class MyClass:\n    @synarche_audit\n    def compliant_method_with_print(self): print('hello')") # Test for compliant method with print
-        simulate_sentinel_audit("class MyClass:\n    @synarche_audit\n    def compliant_method_with_console_log(self): console.log('hello')") # Test for compliant method with console.log
-        simulate_sentinel_audit("@synarche_audit\ndef compliant_sync_func(): pass") # Test for compliant sync func
-        simulate_sentinel_audit("def non_compliant_func() -> None: pass") # Test for missing decorator
+        simulate_sentinel_audit(
+            "def compliant_func_sync(): pass"
+        )  # Test for missing decorator on sync func
+        simulate_sentinel_audit(
+            "def compliant_func_sync_with_print(): print('hello')"
+        )  # Test for missing decorator on sync func with print
+        simulate_sentinel_audit(
+            "@synarche_audit\nasync def compliant_async_func_with_print(): print('hello')"
+        )  # Test for compliant async func with print
+        simulate_sentinel_audit(
+            "@synarche_audit\nasync def compliant_async_func(): pass"
+        )  # Test for compliant async func
+        simulate_sentinel_audit(
+            "@synarche_audit\nclass MyClass:\n    def my_method(self): pass"
+        )  # Test for decorator on a method
+        simulate_sentinel_audit(
+            "class MyClass:\n    @synarche_audit\n    def my_method(self): pass"
+        )  # Test for decorator on a method, different syntax
+        simulate_sentinel_audit(
+            "class MyClass:\n    def my_method(self): print('hello')"
+        )  # Test for missing decorator on a method with print
+        simulate_sentinel_audit(
+            "class MyClass:\n    def my_method(self): console.log('hello')"
+        )  # Test for missing decorator on a method with console.log
+        simulate_sentinel_audit(
+            "class MyClass:\n    @synarche_audit\n    async def my_async_method(self): pass"
+        )  # Test for decorator on an async method
+        simulate_sentinel_audit(
+            "class MyClass:\n    async def my_async_method(self): pass"
+        )  # Test for missing decorator on an async method
+        simulate_sentinel_audit(
+            "class MyClass:\n    async def my_async_method_with_print(self): print('hello')"
+        )  # Test for missing decorator on an async method with print
+        simulate_sentinel_audit(
+            "class MyClass:\n    async def my_async_method_with_console_log(self): console.log('hello')"
+        )  # Test for missing decorator on an async method with console.log
+        simulate_sentinel_audit(
+            "class MyClass:\n    @synarche_audit\n    async def compliant_async_method_with_print(self): print('hello')"
+        )  # Test for compliant async method with print
+        simulate_sentinel_audit(
+            "class MyClass:\n    @synarche_audit\n    async def compliant_async_method_with_console_log(self): console.log('hello')"
+        )  # Test for compliant async method with console.log
+        simulate_sentinel_audit(
+            "class MyClass:\n    @synarche_audit\n    def compliant_method_with_print(self): print('hello')"
+        )  # Test for compliant method with print
+        simulate_sentinel_audit(
+            "class MyClass:\n    @synarche_audit\n    def compliant_method_with_console_log(self): console.log('hello')"
+        )  # Test for compliant method with console.log
+        simulate_sentinel_audit(
+            "@synarche_audit\ndef compliant_sync_func(): pass"
+        )  # Test for compliant sync func
+        simulate_sentinel_audit(
+            "def non_compliant_func() -> None: pass"
+        )  # Test for missing decorator
         # Demo Directive Gamma: Integrate error_audit.log with OGLN
         print("\n--- OGLN Error Ingestion Simulation ---")
         await ogln_ingest_error_logs("error_audit.log")

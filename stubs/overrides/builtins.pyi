@@ -4112,9 +4112,7 @@ class dict(MutableMapping[_KT, _VT]):
     @overload
     def __init__(self, /) -> None: ...
     @overload
-    def __init__(
-        self: dict[str, _VT], /, **kwargs: _VT
-    ) -> None: ...  # pyright: ignore[reportInvalidTypeVarUse]  #11780
+    def __init__(self: dict[str, _VT], /, **kwargs: _VT) -> None: ...  # pyright: ignore[reportInvalidTypeVarUse]  #11780
     @overload
     def __init__(self, map: SupportsKeysAndGetItem[_KT, _VT], /) -> None: ...
     @overload

@@ -151,6 +151,4 @@ A human-readable semantic keyword that defines the artifact's specific purpose.
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

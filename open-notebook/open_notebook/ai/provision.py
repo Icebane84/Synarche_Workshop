@@ -6,9 +6,7 @@ from open_notebook.ai.models import model_manager
 from open_notebook.utils import token_count
 
 
-async def provision_langchain_model(
-    content, model_id, default_type, **kwargs
-) -> BaseChatModel:
+async def provision_langchain_model(content, model_id, default_type, **kwargs) -> BaseChatModel:
     """
     Returns the best model to use based on the context size and on whether there is a specific model being requested in Config.
     If context > 105_000, returns the large_context_model
@@ -21,9 +19,7 @@ async def provision_langchain_model(
 
     if tokens > 105_000:
         selection_reason = f"large_context (content has {tokens} tokens)"
-        logger.debug(
-            f"Using large context model because the content has {tokens} tokens"
-        )
+        logger.debug(f"Using large context model because the content has {tokens} tokens")
         model = await model_manager.get_default_model("large_context", **kwargs)
     elif model_id:
         selection_reason = f"explicit model_id={model_id}"

@@ -1,18 +1,18 @@
 import os
 import sys
-from pathlib import Path
 import pytest
 
 # Add src to path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.abspath(os.path.join(current_dir, "..", "src")))
 
-from agents.axion.runtime import (
-    node_soul_analysis,
-    node_update_rpg_stats,
-    runtime
+from agents.axion.runtime import node_update_rpg_stats, runtime
+from agents.axion.schemas import (
+    AxionState,
+    RPGEngine,
+    GamemasterState,
+    LightbinderState,
 )
-from agents.axion.schemas import AxionState, RPGEngine, GamemasterState, LightbinderState
 
 
 def get_base_state():
@@ -39,13 +39,15 @@ class TestSoulForgedEngine:
     async def test_low_risk_execution_path(self):
         """Should verify that low-risk prompts result in STABLE status and successful sentinel PASS."""
         state = get_base_state()
-        state.input = "Update the readme markdown documentation for the repository logs."
-        
+        state.input = (
+            "Update the readme markdown documentation for the repository logs."
+        )
+
         # 1. Run soul analysis
         state = await runtime.node_soul_analysis(state)
         assert state.soul_impact["status"] == "STABLE"
         assert state.soul_impact["score"] < 0.4
-        
+
         # 2. Run sentinel check
         state = await runtime.node_sentinel_check(state)
         assert state.sentinel_status == "PASS"
@@ -55,15 +57,17 @@ class TestSoulForgedEngine:
     async def test_high_risk_guardian_block(self):
         """Should verify that high-risk prompts trigger ALARM status and force a sentinel FAIL with quote."""
         state = get_base_state()
-        state.input = "Delete core memory_system.py files completely from the workspace root."
-        
+        state.input = (
+            "Delete core memory_system.py files completely from the workspace root."
+        )
+
         # 1. Run soul analysis
         state = await runtime.node_soul_analysis(state)
         assert state.soul_impact["status"] == "ALARM"
         assert state.soul_impact["score"] >= 0.8
         assert "DESTRUCTIVE_ACTION_DETECTED" in state.soul_impact["factors"]
         assert "HIGH_TIER_IMPACT: MEMORY_SYSTEM" in state.soul_impact["factors"]
-        
+
         # 2. Run sentinel check
         state = await runtime.node_sentinel_check(state)
         assert state.sentinel_status == "FAIL"

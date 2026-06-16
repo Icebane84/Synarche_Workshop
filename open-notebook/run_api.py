@@ -11,7 +11,6 @@ Startup script for Open Notebook API server.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 import os
 import sys
 from pathlib import Path

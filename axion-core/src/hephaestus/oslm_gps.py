@@ -71,9 +71,9 @@ class OSLMGPS:
 
         """
         self.oslm_path = oslm_path
-        self.graph: dict[str, list[dict[str, str]]] = (
-            {}
-        )  # Adjacency list: Source -> [{Target, Relation, Score}]
+        self.graph: dict[
+            str, list[dict[str, str]]
+        ] = {}  # Adjacency list: Source -> [{Target, Relation, Score}]
         self.nodes: set[str] = set()
         self._load_matrix()
 

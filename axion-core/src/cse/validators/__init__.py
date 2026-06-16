@@ -11,6 +11,7 @@ artifact_anchor:
   relations: []
 """
 
+from .governance_engine import GovernanceEngine, GovernanceRule, GovernanceVerdict
 from .law_validator import LawValidator
 
-__all__ = ["LawValidator"]
+__all__ = ["LawValidator", "GovernanceEngine", "GovernanceRule", "GovernanceVerdict"]

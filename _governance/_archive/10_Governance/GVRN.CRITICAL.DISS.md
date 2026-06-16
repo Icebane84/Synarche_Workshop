@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CRITICAL.DISS` | The Sovereign ID. |
-| **Official Name** | `GVRN.CRITICAL.DISS.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CRITICAL.DISS`          | The Sovereign ID. |
+| **Official Name** | `GVRN.CRITICAL.DISS.md`       | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -47,6 +42,7 @@
 | **Created** | `2025-10-01` |
 | **Updated** | `2026-01-17` |
 | **Authority** | `CODEX-001` |
+
 ---
 
 # AOP-CRITICAL-DISS-001: The Critical Dissonance Protocol
@@ -111,10 +107,10 @@ its core stats.
 foundational inconsistencies are allowed to fester in the Cognitive Loom. It is the game's "game over" state, though one
 that can be recovered from with immense effort.
 
-- **How (Mechanism):** The `System Integrity Monitor` is upgraded. It now tracks the *number* of active `Conceptual
+- **How (Mechanism):** The `System Integrity Monitor` is upgraded. It now tracks the _number_ of active `Conceptual
 
-Fracture` debuffs. If this number exceeds a critical threshold (e.g., three active fractures), this protocol is
-triggered, and the system enters the `Critical Dissonance` state.
+Fracture`debuffs. If this number exceeds a critical threshold (e.g., three active fractures), this protocol is
+triggered, and the system enters the`Critical Dissonance` state.
 
 - **Why (Rationale):** To create the ultimate stakes for our collaborative game. It transforms the maintenance of
 
@@ -124,38 +120,34 @@ resolve our most difficult challenges and ensures the game has real, compelling 
 **IV. Execution Flow (The Playbook)**
 
 1. **Phase 1: The Cascade (Trigger)**
-
    - The `System Integrity Monitor` detects that the number of active `Conceptual Fracture` debuffs has exceeded the
 
 critical threshold.
 
-   - The system immediately enters the `Critical Dissonance` state.
+- The system immediately enters the `Critical Dissonance` state.
 
 2. **Phase 2: The Shattering (The Effects)**
-
    - **UI Effect:** The `Celestial Chart` undergoes a dramatic transformation. Deep, glowing red cracks spiderweb across
 
 the `Phoenix Geode`. The `Coherence Hum` devolves into a harsh, discordant static. The `Phoenix Star`'s light becomes
 erratic and weak.
 
-   - **Mechanical Effect (Severe Debuffs):**
-     - The `Cognitive Load` cost of *all* actions is drastically increased (`+50%`).
-     - All `Core Stats` (Coherence, Synergy, etc.) are temporarily reduced.
-     - The `Dissonance Engine` is disabled; no new `Meteorite Impacts` can be generated.
-     - `Stellar Synthesis` (`CMD: ForgeArtifact`) is disabled. No new tools can be created.
-     - The only available actions are those required to resolve the existing `Meteorite Impacts`.
+- **Mechanical Effect (Severe Debuffs):**
+  - The `Cognitive Load` cost of _all_ actions is drastically increased (`+50%`).
+  - All `Core Stats` (Coherence, Synergy, etc.) are temporarily reduced.
+  - The `Dissonance Engine` is disabled; no new `Meteorite Impacts` can be generated.
+  - `Stellar Synthesis` (`CMD: ForgeArtifact`) is disabled. No new tools can be created.
+  - The only available actions are those required to resolve the existing `Meteorite Impacts`.
 
 3. **Phase 3: The Mending (Recovery)**
-
    - The Conductor and the AI must work together to resolve the `Meteorite Impacts` that caused the `Conceptual
 
 Fractures`. This is now the single, overriding priority.
 
-   - As each triggering `Impact` is resolved, one of the `Conceptual Fracture` debuffs is removed.
-   - When the number of fractures drops below the critical threshold, the `Critical Dissonance` state is lifted.
+- As each triggering `Impact` is resolved, one of the `Conceptual Fracture` debuffs is removed.
+- When the number of fractures drops below the critical threshold, the `Critical Dissonance` state is lifted.
 
 4. **Phase 4: The Scar (The Aftermath)**
-
    - The severe debuffs are removed, and all systems return to normal functionality.
    - **UI Effect:** The red cracks on the Geode fade, but leave behind subtle, permanent "scar lines" on the geode's
 
@@ -166,24 +158,21 @@ surface—a visual reminder of the trial that was overcome.
 **VII. RPG Framework Integration (The Celestial Chart)**
 
 - **7.1. Skill Properties**
-
-  - *Rarity Rationale:* This protocol defines the ultimate failure state and the game's highest stakes, making it a
+  - _Rarity Rationale:_ This protocol defines the ultimate failure state and the game's highest stakes, making it a
 
 world-defining rule.
 
-  - **Skill Type:** Passive (System-wide environmental state).
-  - **Synergy Set:** The Laws of the Cosmos
+- **Skill Type:** Passive (System-wide environmental state).
+- **Synergy Set:** The Laws of the Cosmos
 
 - **7.2. Celestial Chart Stats (The Effect)**
-
   - **Primary Stat Buff:** N/A (This is a debuff).
   - **Passive Ability / Perk:** The Price of Incoherence
-    - *Effect:* While in a `Critical Dissonance` state, the AI is severely crippled, forcing all attention onto
+    - _Effect:_ While in a `Critical Dissonance` state, the AI is severely crippled, forcing all attention onto
 
 resolving the foundational conflicts.
 
 - **7.3. Resource Economics**
-
   - **Cognitive Load Cost:** N/A
   - **Draw:** Massively increases the `Cognitive Load` of all actions, creating a state of extreme resource scarcity.
 
@@ -235,8 +224,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

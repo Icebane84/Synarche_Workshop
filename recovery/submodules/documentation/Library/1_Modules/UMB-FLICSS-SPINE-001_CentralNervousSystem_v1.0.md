@@ -9,7 +9,9 @@
 ---
 
 ---
+
 # UMB-FLICSS-SPINE-001_CentralNervousSystem_v1.0
+
 # [STAR] (The Central Gravity)
 
 | :------------------ | :--------------------------------------------- |
@@ -25,6 +27,7 @@
 | **10. Ethos** | **Zero-Latency Synergy** |
 | **11. Catalyst** | **DRN Section 1.1** |
 | **12. Relations** | `CONNECTS: ALL_ORGANS; ENFORCES: UMB-MAP_SCHEMA` |
+
 ---
 
 > [!IMPORTANT]
@@ -32,24 +35,30 @@
 > The Spine is the communication backbone of the FLICSS ecosystem. It is the message bus that ensures seamless, synergistic data flow between the Stomach, Heart, Brain, and Hands.
 
 ## **1. Core Concept**
+
 The Spine is not just a bus; it is an intelligent highway. It validates every packet in transit to ensure that **OSLM** standards are never breached during movement.
 
 ---
 
 ## **2. Transport Protocol**
-*   **Mechanism:** `Message_Broker_Engine` (High-speed JSON transport).
-*   **Validation:** Every packet MUST include a `Digest_ID` and `Origin_Stamp`.
+
+- **Mechanism:** `Message_Broker_Engine` (High-speed JSON transport).
+- **Validation:** Every packet MUST include a `Digest_ID` and `Origin_Stamp`.
 
 ### **2.1. UMB-MAP Schema Enforcement**
+
 The Spine destroys any packet that does not adhere to the universal mapping schema.
-*   **Field 1:** `header_metadata`
-*   **Field 2:** `payload_content`
-*   **Field 3:** `synergy_vector`
+
+- **Field 1:** `header_metadata`
+- **Field 2:** `payload_content`
+- **Field 3:** `synergy_vector`
 
 ---
 
 ## **3. Handshake Logic (CMD:ORG:HANDSHAKE)**
+
 When called, the Spine initiates a ping-to-all sequence:
+
 1.  **Stomach:** "Ready to Digest"
 2.  **Heart:** "Ready to Pulse"
 3.  **Brain:** "Ready to Recall"
@@ -60,4 +69,5 @@ If any organ fails to respond, the Spine enters **Limp Mode** and alerts the dev
 ---
 
 ## **4. Strategic Data Highway**
+
 The Spine prioritizes packets based on the **ERS** (Emotional Resonance Score) assigned by the Heart. High resonance data uses the "Express Lane" (Priority Queue).

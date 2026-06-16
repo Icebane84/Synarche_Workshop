@@ -2,7 +2,7 @@
 artifact_anchor:
   id: CORE.CHAR-AXION-001_AGENTAXIONPERSO.001
   version: v15.0 [OMEGA]
-  provenance: '2026-05-27'
+  provenance: "2026-05-27"
   domain: CORE
   celestial_class: STAR
   tier: GOVERNANCE
@@ -12,13 +12,16 @@ artifact_anchor:
 ---
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
+
+| Key           | Value                                   |
+| :------------ | :-------------------------------------- |
 | **Module ID** | `CHAR-AXION-001_AGENTAXIONPERSONA_V1.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Version**   | `v11.0`                                 |
+| **Evolution** | **Cognitive Ascension**                 |
+| **Status**    | `ACTIVE`                                |
+
 ---
 
 # CHAR-AXION-001: The Sovereign Agent (Axion)

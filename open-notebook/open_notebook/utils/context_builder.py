@@ -139,9 +139,7 @@ class ContextBuilder:
             logger.error(f"Error building context: {e!s}")
             raise DatabaseOperationError(f"Failed to build context: {e!s}")
 
-    async def _add_source_context(
-        self, source_id: str, inclusion_level: str = "insights"
-    ) -> None:
+    async def _add_source_context(self, source_id: str, inclusion_level: str = "insights") -> None:
         """
         Add source and its insights to context.
 
@@ -154,9 +152,7 @@ class ContextBuilder:
 
         try:
             # Ensure source ID has table prefix
-            full_source_id = (
-                source_id if source_id.startswith("source:") else f"source:{source_id}"
-            )
+            full_source_id = source_id if source_id.startswith("source:") else f"source:{source_id}"
 
             source = await Source.get(full_source_id)
             if not source:
@@ -164,9 +160,7 @@ class ContextBuilder:
                 return
 
             # Determine context size based on inclusion level
-            context_size: Literal["short", "long"] = (
-                "long" if "full content" in inclusion_level else "short"
-            )
+            context_size: Literal["short", "long"] = "long" if "full content" in inclusion_level else "short"
             source_context = await source.get_context(context_size=context_size)
 
             # Add source item
@@ -183,9 +177,7 @@ class ContextBuilder:
             if self.include_insights and "insights" in inclusion_level:
                 insights = await source.get_insights()
                 for insight in insights:
-                    insight_priority = (self.context_config.priority_weights or {}).get(
-                        "insight", 75
-                    )
+                    insight_priority = (self.context_config.priority_weights or {}).get("insight", 75)
                     insight_item = ContextItem(
                         id=insight.id or "",
                         type="insight",
@@ -251,9 +243,7 @@ class ContextBuilder:
             logger.error(f"Error adding notebook context for {notebook_id}: {e!s}")
             raise
 
-    async def _add_note_context(
-        self, note_id: str, inclusion_level: str = "full content"
-    ) -> None:
+    async def _add_note_context(self, note_id: str, inclusion_level: str = "full content") -> None:
         """
         Add note to context.
 
@@ -274,16 +264,12 @@ class ContextBuilder:
                 return
 
             # Get note context
-            context_size: Literal["short", "long"] = (
-                "long" if "full content" in inclusion_level else "short"
-            )
+            context_size: Literal["short", "long"] = "long" if "full content" in inclusion_level else "short"
             note_context = note.get_context(context_size=context_size)
 
             # Add note item
             priority = (self.context_config.priority_weights or {}).get("note", 50)
-            item = ContextItem(
-                id=note.id or "", type="note", content=note_context, priority=priority
-            )
+            item = ContextItem(id=note.id or "", type="note", content=note_context, priority=priority)
             self.add_item(item)
 
             logger.debug(f"Added note context for {note_id}")
@@ -344,9 +330,7 @@ class ContextBuilder:
             current_tokens -= removed_item.token_count or 0
             removed_count += 1
 
-        logger.info(
-            f"Removed {removed_count} items, final token count: {current_tokens}"
-        )
+        logger.info(f"Removed {removed_count} items, final token count: {current_tokens}")
 
     def remove_duplicates(self) -> None:
         """Remove duplicate items based on ID."""
@@ -409,9 +393,7 @@ class ContextBuilder:
         if self.notebook_id:
             response["notebook_id"] = self.notebook_id
 
-        logger.info(
-            f"Built context with {len(self.items)} items, {total_tokens} tokens"
-        )
+        logger.info(f"Built context with {len(self.items)} items, {total_tokens} tokens")
 
         return response
 
@@ -435,9 +417,7 @@ async def build_notebook_context(
     Returns:
         Built context
     """
-    builder = ContextBuilder(
-        notebook_id=notebook_id, context_config=context_config, max_tokens=max_tokens
-    )
+    builder = ContextBuilder(notebook_id=notebook_id, context_config=context_config, max_tokens=max_tokens)
     return await builder.build()
 
 
@@ -455,9 +435,7 @@ async def build_source_context(
     Returns:
         Built context
     """
-    builder = ContextBuilder(
-        source_id=source_id, include_insights=include_insights, max_tokens=max_tokens
-    )
+    builder = ContextBuilder(source_id=source_id, include_insights=include_insights, max_tokens=max_tokens)
     return await builder.build()
 
 
@@ -489,7 +467,5 @@ async def build_mixed_context(
     if note_ids:
         context_config.notes = {nid: "full content" for nid in note_ids}
 
-    builder = ContextBuilder(
-        notebook_id=notebook_id, context_config=context_config, max_tokens=max_tokens
-    )
+    builder = ContextBuilder(notebook_id=notebook_id, context_config=context_config, max_tokens=max_tokens)
     return await builder.build()

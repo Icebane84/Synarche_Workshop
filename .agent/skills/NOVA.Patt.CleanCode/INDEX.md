@@ -2,15 +2,15 @@
 id: NOVA.Patt.CleanCode.Index
 name: Clean Code Skill Cluster Index
 type: INDEX
-tags: ['#NOVA/Patt/CleanCode', '#INDEX']
+tags: ["#NOVA/Patt/CleanCode", "#INDEX"]
 links:
-    [
-        '[[NOVA.Patt.CleanCode.Skill]]',
-        '[[NOVA.Patt.CleanCode.AOP]]',
-        '[[NOVA.Patt.CleanCode.GUCA]]',
-        '[[NOVA.Patt.CleanCode.SELT]]',
-    ]
-description: 'The Sovereign Map for the Clean Code Pattern Shard.'
+  [
+    "[[NOVA.Patt.CleanCode.Skill]]",
+    "[[NOVA.Patt.CleanCode.AOP]]",
+    "[[NOVA.Patt.CleanCode.GUCA]]",
+    "[[NOVA.Patt.CleanCode.SELT]]",
+  ]
+description: "The Sovereign Map for the Clean Code Pattern Shard."
 ---
 
 # CLEAN CODE CLUSTER INDEX | UMB-NOVA.Patt.CleanCode

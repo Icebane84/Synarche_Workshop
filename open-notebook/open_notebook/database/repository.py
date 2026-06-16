@@ -1,6 +1,6 @@
 import os
 from contextlib import asynccontextmanager
-from datetime import datetime, timezone
+from datetime import UTC, datetime, timezone
 from typing import Any, Dict, List, Optional, TypeVar, Union
 
 from loguru import logger
@@ -92,9 +92,7 @@ async def db_connection():
     # We do NOT close the connection here anymore, allowing reuse.
 
 
-async def repo_query(
-    query_str: str, vars: dict[str, Any] | None = None
-) -> list[dict[str, Any]]:
+async def repo_query(query_str: str, vars: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     """Execute a SurrealQL query and return the results"""
 
     async with db_connection() as connection:
@@ -116,8 +114,8 @@ async def repo_create(table: str, data: dict[str, Any]) -> dict[str, Any]:
     """Create a new record in the specified table"""
     # Remove 'id' attribute if it exists in data
     data.pop("id", None)
-    data["created"] = datetime.now(timezone.utc)
-    data["updated"] = datetime.now(timezone.utc)
+    data["created"] = datetime.now(UTC)
+    data["updated"] = datetime.now(UTC)
     try:
         async with db_connection() as connection:
             result = parse_record_ids(await connection.insert(table, data))
@@ -156,26 +154,20 @@ async def repo_upsert(
     """Create or update a record in the specified table"""
     data.pop("id", None)
     if add_timestamp:
-        data["updated"] = datetime.now(timezone.utc)
+        data["updated"] = datetime.now(UTC)
     query = f"UPSERT {id if id else table} MERGE $data;"
     return await repo_query(query, {"data": data})
 
 
-async def repo_update(
-    table: str, id: str, data: dict[str, Any]
-) -> list[dict[str, Any]]:
+async def repo_update(table: str, id: str, data: dict[str, Any]) -> list[dict[str, Any]]:
     """Update an existing record by table and id"""
     # If id already contains the table name, use it as is
     try:
-        record_id = (
-            id
-            if isinstance(id, RecordID) or (":" in id and id.startswith(f"{table}:"))
-            else f"{table}:{id}"
-        )
+        record_id = id if isinstance(id, RecordID) or (":" in id and id.startswith(f"{table}:")) else f"{table}:{id}"
         data.pop("id", None)
         if "created" in data and isinstance(data["created"], str):
             data["created"] = datetime.fromisoformat(data["created"])
-        data["updated"] = datetime.now(timezone.utc)
+        data["updated"] = datetime.now(UTC)
         query = f"UPDATE {record_id} MERGE $data;"
         # logger.debug(f"Update query: {query}")
         result = await repo_query(query, {"data": data})
@@ -195,9 +187,7 @@ async def repo_delete(record_id: str | RecordID):
         raise RuntimeError(f"Failed to delete record: {e!s}")
 
 
-async def repo_insert(
-    table: str, data: list[dict[str, Any]], ignore_duplicates: bool = False
-) -> list[dict[str, Any]]:
+async def repo_insert(table: str, data: list[dict[str, Any]], ignore_duplicates: bool = False) -> list[dict[str, Any]]:
     """Create a new record in the specified table"""
     try:
         async with db_connection() as connection:

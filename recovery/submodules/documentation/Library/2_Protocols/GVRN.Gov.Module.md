@@ -22,30 +22,30 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `GVRN.Gov.Module` |
-| **2. Official Name** | `GVRN.Gov.Module.md` |
-| **3. Version** | **v13.0 (Gatekeeper Edition)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[STAR]` (The Enforcer) |
-| **8. Tier** | **Strategic** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Final Gate** |
-| **11. Catalyst** | **Refactor Batch 001** |
-| **12. Relations** | `ENFORCES: GVRN.Protocol.Audit`, `VALIDATES: All_Artifacts` |
+| Field                  | Value                                                       |
+| :--------------------- | :---------------------------------------------------------- |
+| **1. Artifact ID**     | `GVRN.Gov.Module`                                           |
+| **2. Official Name**   | `GVRN.Gov.Module.md`                                        |
+| **3. Version**         | **v13.0 (Gatekeeper Edition)**                              |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                               |
+| **5. Domain**          | `GVRN`                                                      |
+| **6. Evolution**       | **Cognitive Ascension**                                     |
+| **7. Celestial Class** | `[STAR]` (The Enforcer)                                     |
+| **8. Tier**            | **Strategic**                                               |
+| **9. State**           | `[ACTIVE]`                                                  |
+| **10. Ethos**          | **The Final Gate**                                          |
+| **11. Catalyst**       | **Refactor Batch 001**                                      |
+| **12. Relations**      | `ENFORCES: GVRN.Protocol.Audit`, `VALIDATES: All_Artifacts` |
 
 ---
 
 ### **II. Architectural Governance Primitives (AGP)**
 
-| Element | Value | Purpose |
-| :---- | :---- | :---- |
-| **State Vector** | `[1.00]` | Governance must be absolute and binary (Pass/Fail). |
-| **Risk Governance** | **Medium** | False positives can slow down evolution. |
-| **Mitigation** | **Human Review** | Sentinel escalates ambiguity to the user. |
+| Element             | Value            | Purpose                                             |
+| :------------------ | :--------------- | :-------------------------------------------------- |
+| **State Vector**    | `[1.00]`         | Governance must be absolute and binary (Pass/Fail). |
+| **Risk Governance** | **Medium**       | False positives can slow down evolution.            |
+| **Mitigation**      | **Human Review** | Sentinel escalates ambiguity to the user.           |
 
 ---
 

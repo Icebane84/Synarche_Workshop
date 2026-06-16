@@ -22,6 +22,6 @@ To forge clean, high-performance logic with zero latency and high modularity.
 
 ## Complexity Limits
 
-* Indentation nesting depth must not exceed 2 layers ($N \le 2$).
-* Standard function length must not exceed 20 lines ($L \le 20$).
-* Proactively trigger refactoring plans if complexity thresholds are breached.
+- Indentation nesting depth must not exceed 2 layers ($N \le 2$).
+- Standard function length must not exceed 20 lines ($L \le 20$).
+- Proactively trigger refactoring plans if complexity thresholds are breached.

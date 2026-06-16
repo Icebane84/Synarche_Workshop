@@ -143,9 +143,7 @@ class TestSourceDomain:
             assert tmp_path.exists()
 
             # Mock the parent delete method to avoid database operations
-            with patch.object(
-                Source.__bases__[0], "delete", new_callable=AsyncMock
-            ) as mock_delete:
+            with patch.object(Source.__bases__[0], "delete", new_callable=AsyncMock) as mock_delete:
                 mock_delete.return_value = True
 
                 # Delete the source
@@ -170,9 +168,7 @@ class TestSourceDomain:
         source = Source(id="source:test_no_file", title="Test Source", asset=None)
 
         # Mock the parent delete method
-        with patch.object(
-            Source.__bases__[0], "delete", new_callable=AsyncMock
-        ) as mock_delete:
+        with patch.object(Source.__bases__[0], "delete", new_callable=AsyncMock) as mock_delete:
             mock_delete.return_value = True
 
             # Delete should complete without error
@@ -191,9 +187,7 @@ class TestSourceDomain:
         )
 
         # Mock the parent delete method
-        with patch.object(
-            Source.__bases__[0], "delete", new_callable=AsyncMock
-        ) as mock_delete:
+        with patch.object(Source.__bases__[0], "delete", new_callable=AsyncMock) as mock_delete:
             mock_delete.return_value = True
 
             # Delete should complete even though file doesn't exist
@@ -276,9 +270,7 @@ class TestPodcastDomain:
                 name="Test",
                 tts_provider="openai",
                 tts_model="tts-1",
-                speakers=[
-                    {"name": "Speaker 1"}
-                ],  # Missing voice_id, backstory, personality
+                speakers=[{"name": "Speaker 1"}],  # Missing voice_id, backstory, personality
             )
 
         # Test valid - single speaker with all fields
@@ -351,9 +343,7 @@ class TestEpisodeProfile:
     def test_episode_profile_segment_validation(self) -> None:
         """Test segment count validation (3-20)."""
         # Test invalid - too few segments
-        with pytest.raises(
-            ValidationError, match="Number of segments must be between 3 and 20"
-        ):
+        with pytest.raises(ValidationError, match="Number of segments must be between 3 and 20"):
             EpisodeProfile(
                 name="Test",
                 speaker_config="default",
@@ -366,9 +356,7 @@ class TestEpisodeProfile:
             )
 
         # Test invalid - too many segments
-        with pytest.raises(
-            ValidationError, match="Number of segments must be between 3 and 20"
-        ):
+        with pytest.raises(ValidationError, match="Number of segments must be between 3 and 20"):
             EpisodeProfile(
                 name="Test",
                 speaker_config="default",

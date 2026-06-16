@@ -37,7 +37,7 @@ export interface WebCommand {
 }
 
 // 3. CASTS Transmutation: The bridge between the Schema and the Domain.
-export const WebClientStrategy: CASTS_Strategy<WebCommand> = {
+export const WebClientStrategy: CASTS_Strategy<WebCommand, z.infer<typeof WebClientSchema>> = {
     strategyName: "WebClientTransmutationStrategy",
     schema: WebClientSchema,
     transmute: (parsed) => ({

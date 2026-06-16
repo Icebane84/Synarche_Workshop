@@ -65,7 +65,7 @@ import argparse
 import logging
 import re
 import sys
-from pathlib import path
+from pathlib import Path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -115,9 +115,7 @@ def _check_header(lines: list[str]) -> tuple[list[str], list[str]]:
                 evolution_valid = True
 
     if not has_uip:
-        errors.append(
-            "[CRITICAL] Missing 'Universal Identification & Provenance' Block (UMB-TPL-001)."
-        )
+        errors.append("[CRITICAL] Missing 'Universal Identification & Provenance' Block (UMB-TPL-001).")
 
     if has_uip and not evolution_valid:
         if evolution_value:
@@ -148,9 +146,7 @@ def _check_indentation(lines: list[str]) -> tuple[list[str], list[str]]:
         if re.match(r"^ {2}[-*]", line):
             indent_issues += 1
             if indent_issues <= MAX_INDENT_WARNINGS:  # Only show first few
-                warnings.append(
-                    f"[Line {i + 1}] Suspicious indentation (2 spaces detected). PGPS mandates 4 spaces."
-                )
+                warnings.append(f"[Line {i + 1}] Suspicious indentation (2 spaces detected). PGPS mandates 4 spaces.")
 
     if indent_issues > 0:
         warnings.append(f"[INFO] Total suspicious indentation lines: {indent_issues}")
@@ -158,7 +154,7 @@ def _check_indentation(lines: list[str]) -> tuple[list[str], list[str]]:
     return [], warnings
 
 
-def _check_hierarchy(lines: list[str], filepath: path) -> tuple[list[str], list[str]]:
+def _check_hierarchy(lines: list[str], filepath: Path) -> tuple[list[str], list[str]]:
     """3. HEADER HIERARCHY CHECK."""
     warnings = []
     h1_count = 0
@@ -197,14 +193,12 @@ def _check_prompt(content: str) -> tuple[list[str], list[str]]:
     ]
 
     if not any(re.search(p, content, re.IGNORECASE) for p in patterns):
-        errors.append(
-            "[CRITICAL] Missing 'Actionable Prompt Packet' or 'CMD:' definitions."
-        )
+        errors.append("[CRITICAL] Missing 'Actionable Prompt Packet' or 'CMD:' definitions.")
 
     return errors, []
 
 
-def lint_artifact(filepath: path) -> bool:
+def lint_artifact(filepath: Path) -> bool:
     """Lints a single artifact file."""
     logger.info(f"\n[LINT_ARTIFACT] Target: {filepath}")
 
@@ -258,7 +252,7 @@ def lint_artifact(filepath: path) -> bool:
         return False
 
 
-def scan_targets(targets: list[path]) -> bool:
+def scan_targets(targets: list[Path]) -> bool:
     """Recursively scans and lints all target artifacts."""
     overall_success = True
     for target in targets:
@@ -268,12 +262,8 @@ def scan_targets(targets: list[path]) -> bool:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Phoenix Protocol: Artifact Linter (OGLN)"
-    )
-    parser.add_argument(
-        "--target", type=path, required=True, help="File or directory to lint."
-    )
+    parser = argparse.ArgumentParser(description="Phoenix Protocol: Artifact Linter (OGLN)")
+    parser.add_argument("--target", type=Path, required=True, help="File or directory to lint.")
     args = parser.parse_args()
 
     if args.target.is_dir():

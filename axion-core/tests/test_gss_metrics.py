@@ -44,9 +44,9 @@ def test_gss_calculation():
     logger.info(f"CI Level 2 (Diverse Types): {ci_level_2:.4f}")
 
     # Diversity should increase CI based on our CR (Coupling Resonance) formula
-    assert (
-        ci_level_2 > ci_level_1
-    ), f"Diversity CI ({ci_level_2}) should be > Baseline CI ({ci_level_1})"
+    assert ci_level_2 > ci_level_1, (
+        f"Diversity CI ({ci_level_2}) should be > Baseline CI ({ci_level_1})"
+    )
 
     logger.info(f"Final Synergy Metrics: {engine.synergy_metrics}")
     logger.info("--- [SUCCESS] GSS Metrics validated. ---")

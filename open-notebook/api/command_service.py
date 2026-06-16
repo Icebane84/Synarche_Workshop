@@ -42,9 +42,7 @@ class CommandService:
             if not cmd_id:
                 raise ValueError("Failed to get cmd_id from submit_command")
             cmd_id_str = str(cmd_id)
-            logger.info(
-                f"Submitted command job: {cmd_id_str} for {module_name}.{command_name}"
-            )
+            logger.info(f"Submitted command job: {cmd_id_str} for {module_name}.{command_name}")
             return cmd_id_str
 
         except Exception as e:
@@ -60,19 +58,9 @@ class CommandService:
                 "job_id": job_id,
                 "status": status.status if status else "unknown",
                 "result": status.result if status else None,
-                "error_message": (
-                    getattr(status, "error_message", None) if status else None
-                ),
-                "created": (
-                    str(status.created)
-                    if status and hasattr(status, "created") and status.created
-                    else None
-                ),
-                "updated": (
-                    str(status.updated)
-                    if status and hasattr(status, "updated") and status.updated
-                    else None
-                ),
+                "error_message": (getattr(status, "error_message", None) if status else None),
+                "created": (str(status.created) if status and hasattr(status, "created") and status.created else None),
+                "updated": (str(status.updated) if status and hasattr(status, "updated") and status.updated else None),
                 "progress": getattr(status, "progress", None) if status else None,
             }
         except Exception as e:

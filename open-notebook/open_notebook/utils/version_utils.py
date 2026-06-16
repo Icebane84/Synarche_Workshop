@@ -33,9 +33,7 @@ async def get_version_from_github_async(repo_url: str, branch: str = "main") -> 
     owner, repo = path_parts[0], path_parts[1]
 
     # Construct raw content URL for pyproject.toml
-    raw_url = (
-        f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/pyproject.toml"
-    )
+    raw_url = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/pyproject.toml"
 
     # Fetch the file with timeout using httpx
     async with httpx.AsyncClient(timeout=10.0) as client:
@@ -88,9 +86,7 @@ def get_version_from_github(repo_url: str, branch: str = "main") -> str:
     owner, repo = path_parts[0], path_parts[1]
 
     # Construct raw content URL for pyproject.toml
-    raw_url = (
-        f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/pyproject.toml"
-    )
+    raw_url = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/pyproject.toml"
 
     # Fetch the file with timeout
     response = requests.get(raw_url, timeout=10)

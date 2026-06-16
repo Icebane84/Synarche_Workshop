@@ -22,20 +22,20 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `GVRN.Axiomatic.Lattice` |
-| **2. Official Name** | `GVRN.Axiomatic.Lattice.md` |
-| **3. Version** | **v13.0 (Canonized)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Crystal Lattice** |
-| **7. Celestial Class** | `[STAR]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **AGP Mandate Integration** |
-| **12. Relations** | `GOVERNS: RNC_Compliance, AGP_Orchestration` |
+| Field                  | Value                                        |
+| :--------------------- | :------------------------------------------- |
+| **1. Artifact ID**     | `GVRN.Axiomatic.Lattice`                     |
+| **2. Official Name**   | `GVRN.Axiomatic.Lattice.md`                  |
+| **3. Version**         | **v13.0 (Canonized)**                        |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                |
+| **5. Domain**          | `GVRN`                                       |
+| **6. Evolution**       | **Crystal Lattice**                          |
+| **7. Celestial Class** | `[STAR]`                                     |
+| **8. Tier**            | **Operational**                              |
+| **9. State**           | `[ACTIVE]`                                   |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**           |
+| **11. Catalyst**       | **AGP Mandate Integration**                  |
+| **12. Relations**      | `GOVERNS: RNC_Compliance, AGP_Orchestration` |
 
 ---
 
@@ -66,13 +66,13 @@ The PAL is the modular governance framework that eliminates "Protocol Bloat" by 
 Defines the immutable laws of geometry, nomenclature, and technical presentation.
 
 1. **Relational Naming Convention (RNC v13.0)**
-    - **AUK IDs**: `DOMAIN.Subsystem.Descriptor` (e.g., `GVRN.Pipe.Operational`).
-    - **Legacy Mapping**: All UMB/AOP prefixes are deprecated; artifacts must map to RNC during transmutation.
+   - **AUK IDs**: `DOMAIN.Subsystem.Descriptor` (e.g., `GVRN.Pipe.Operational`).
+   - **Legacy Mapping**: All UMB/AOP prefixes are deprecated; artifacts must map to RNC during transmutation.
 2. **The 12-Point Vector Signature**
-    - Every artifact must contain a complete UIP table (Section I).
+   - Every artifact must contain a complete UIP table (Section I).
 3. **Markdown Physics**
-    - **PGPS Header**: Mandatory visual identifiers.
-    - **4-Space Mandate**: Strict indentation for all nested lists.
+   - **PGPS Header**: Mandatory visual identifiers.
+   - **4-Space Mandate**: Strict indentation for all nested lists.
 
 #### **Track 2: Semantic Resonance (The Liquid Weave)**
 
@@ -87,10 +87,10 @@ Governs the meaning and connectivity of information via **AGP-001**.
 Ensures process integrity and Macro-System alignment.
 
 1. **Macro-System Assignment**: Every artifact must be assigned to one of four containers:
-    - **GEODE Core**: Laws & Registries.
-    - **APOSTLE Tier**: Directives & Identity.
-    - **SYNTHESIS Suite**: Engines & Memory.
-    - **OPERATIONAL Matrix**: Pipelines & Logs.
+   - **GEODE Core**: Laws & Registries.
+   - **APOSTLE Tier**: Directives & Identity.
+   - **SYNTHESIS Suite**: Engines & Memory.
+   - **OPERATIONAL Matrix**: Pipelines & Logs.
 2. **The Governance Gate**: Every artifact must cleared by the `CMD: AUDIT_COMPLIANCE` suite before stabilization.
 
 ---

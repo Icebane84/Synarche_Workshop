@@ -76,8 +76,8 @@ class CoherentSynthesisEngine:
         self.executor = DeterministicParallelExecutor(max_workers=2)
 
         # OMEGA v15.1 - Scheduling Core Integration
-        # Note: Systems would typically be pulled from the registry/auditor
-        systems = []
+        # Systems are pulled dynamically from the ResonanceRegistry
+        systems = self.registry.get_systems()
         compiler = ECSSystemCompiler(systems)
         self.graph = compiler.compile()
         self.graph.build()

@@ -98,9 +98,7 @@ async def generate_embeddings(texts: list[str]) -> list[list[float]]:
 
     embedding_model = await model_manager.get_embedding_model()
     if not embedding_model:
-        raise ValueError(
-            "No embedding model configured. Please configure one in the Models section."
-        )
+        raise ValueError("No embedding model configured. Please configure one in the Models section.")
 
     # Log text sizes for debugging
     text_sizes = [len(t) for t in texts]
@@ -117,8 +115,7 @@ async def generate_embeddings(texts: list[str]) -> list[list[float]]:
         return embeddings
     except Exception as e:
         logger.error(
-            f"Failed to generate embeddings: {e} "
-            f"(tried {len(texts)} texts, max size: {max(text_sizes)} chars)"
+            f"Failed to generate embeddings: {e} (tried {len(texts)} texts, max size: {max(text_sizes)} chars)"
         )
         raise RuntimeError(f"Failed to generate embeddings: {e}") from e
 

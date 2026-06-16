@@ -32,13 +32,10 @@ class RequestIDMiddleware(BaseHTTPMiddleware):
                 response.headers["X-Request-ID"] = request_id
 
                 process_time = (time.time() - start_time) * 1000
-                logger.info(
-                    f"Completed request: {response.status_code} "
-                    f"in {process_time:.2f}ms"
-                )
+                logger.info(f"Completed request: {response.status_code} in {process_time:.2f}ms")
 
                 return response
             except Exception as e:
                 process_time = (time.time() - start_time) * 1000
-                logger.error(f"Request failed: {e!s} " f"in {process_time:.2f}ms")
+                logger.error(f"Request failed: {e!s} in {process_time:.2f}ms")
                 raise

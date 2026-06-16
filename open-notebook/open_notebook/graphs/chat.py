@@ -35,9 +35,7 @@ class ThreadState(TypedDict):
 def call_model_with_messages(state: ThreadState, config: RunnableConfig) -> dict:
     system_prompt = Prompter(prompt_template="chat/system").render(data=state)  # type: ignore[arg-type]
     payload = [SystemMessage(content=system_prompt), *state.get("messages", [])]
-    model_id = config.get("configurable", {}).get("model_id") or state.get(
-        "model_override"
-    )
+    model_id = config.get("configurable", {}).get("model_id") or state.get("model_override")
 
     # Handle async model provisioning from sync context
     def run_in_new_loop():
@@ -46,9 +44,7 @@ def call_model_with_messages(state: ThreadState, config: RunnableConfig) -> dict
         try:
             asyncio.set_event_loop(new_loop)
             return new_loop.run_until_complete(
-                provision_langchain_model(
-                    str(payload), model_id, "chat", max_tokens=8192
-                )
+                provision_langchain_model(str(payload), model_id, "chat", max_tokens=8192)
             )
         finally:
             new_loop.close()
@@ -77,11 +73,7 @@ def call_model_with_messages(state: ThreadState, config: RunnableConfig) -> dict
     ai_message = model.invoke(payload)
 
     # Clean thinking content from AI response (e.g., <think>...</think> tags)
-    content = (
-        ai_message.content
-        if isinstance(ai_message.content, str)
-        else str(ai_message.content)
-    )
+    content = ai_message.content if isinstance(ai_message.content, str) else str(ai_message.content)
     cleaned_content = clean_thinking_content(content)
     cleaned_message = ai_message.model_copy(update={"content": cleaned_content})
 

@@ -38,8 +38,6 @@ runtimes:
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
   enabled:
-    - isort@8.0.1
-    - black@26.3.1
     - bandit@1.9.3
     - checkov@3.2.500
     - dotenv-linter@4.0.0
@@ -62,7 +60,8 @@ lint:
       files: [python]
       commands:
         - name: lint
-          run: mypy --config-file axion-core/standards/mypy.ini ${target}
+          # Use absolute path so Trunk's sandboxed env can locate mypy
+          run: C:/DevEnvironments/master_env/Scripts/mypy.exe --config-file axion-core/standards/mypy.ini ${target}
           read_output_from: stdout
           output: pass_fail
           success_codes: [0, 1]
@@ -86,6 +85,16 @@ lint:
         - "**/*.js"
         - "**/*.jsx"
         - "**/*.json"
+        - "**/*.jsonc"
+        # Biome handles TS/JS/JSON; Prettier is only for HTML, CSS, YAML, Markdown
+    - linters: [biome]
+      paths:
+        - "**/*.md"
+        - "**/*.yaml"
+        - "**/*.yml"
+        - "**/*.css"
+        - "**/*.html"
+        # Biome is scoped to TS/JS/JSON; these are handled by their own linters
     - linters: [ruff]
       paths:
         - "open_notebook/api/routers/chat.py" # Temporary ignore while refactoring

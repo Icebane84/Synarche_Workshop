@@ -69,9 +69,7 @@ class PodcastConfig(ObjectModel):
         chunks: int = 8,
         min_chunk_size=600,
     ) -> None:
-        self.user_instructions = (
-            instructions if instructions else self.user_instructions
-        )
+        self.user_instructions = instructions if instructions else self.user_instructions
         conversation_config = {
             "max_num_chunks": chunks,
             "min_chunk_size": min_chunk_size,
@@ -155,9 +153,7 @@ class PodcastConfig(ObjectModel):
             logger.error(f"Failed to generate episode {episode_name}: {e}")
             raise
 
-    @field_validator(
-        "name", "podcast_name", "podcast_tagline", "output_language", "model"
-    )
+    @field_validator("name", "podcast_name", "podcast_tagline", "output_language", "model")
     @classmethod
     def validate_required_strings(cls, value: str, field) -> str:
         if value is None or value.strip() == "":

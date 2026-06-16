@@ -42,6 +42,7 @@ try:
     # Attempt to import commands, but don't fail hard if it doesn't work
     # This is often needed if commands module depends on things not available yet
     import commands  # noqa: F401
+
     logger.info("Commands imported in API process")
 except Exception as e:
     logger.warning(f"Note: commands module import skipped: {e}")
@@ -129,21 +130,21 @@ async def global_exception_handler(request: Request, exc: Exception):
     a safe 500 response with the Request ID.
     """
     request_id = getattr(request.state, "request_id", "unknown")
-    
+
     logger.error(f"Unhandled exception (ID: {request_id}): {exc}")
     # logger.exception(exc)  # Log full traceback
-    
+
     return JSONResponse(
         status_code=500,
         content={
             "detail": "Internal Server Error",
-            "request_id": request_id, 
-            "message": "An unexpected error occurred. Please contact support with the Request ID."
+            "request_id": request_id,
+            "message": "An unexpected error occurred. Please contact support with the Request ID.",
         },
         headers={
             "X-Request-ID": request_id,
-            "Access-Control-Allow-Origin": "*", # Ensure CORS for errors
-        }
+            "Access-Control-Allow-Origin": "*",  # Ensure CORS for errors
+        },
     )
 
 
@@ -198,7 +199,8 @@ async def custom_http_exception_handler(request: Request, exc: StarletteHTTPExce
         status_code=exc.status_code,
         content={"detail": exc.detail},
         headers={
-            **(exc.headers or {}), "Access-Control-Allow-Origin": origin,
+            **(exc.headers or {}),
+            "Access-Control-Allow-Origin": origin,
             "Access-Control-Allow-Credentials": "true",
             "Access-Control-Allow-Methods": "*",
             "Access-Control-Allow-Headers": "*",

@@ -59,7 +59,9 @@ class ArtificersSoul:
         if not emotions:
             return 0.5  # Neutral default resonance
         total_intensity = sum(emotions.values())
-        resonance = min(1.0, total_intensity / len(emotions) * (1.0 + 0.1 * len(emotions)))
+        resonance = min(
+            1.0, total_intensity / len(emotions) * (1.0 + 0.1 * len(emotions))
+        )
         return round(max(0.0, min(1.0, resonance)), 3)
 
     def _calculate_ast_complexity(self, content: str) -> float:

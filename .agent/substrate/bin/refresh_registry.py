@@ -49,7 +49,7 @@ def scan_skills() -> None:
                 "skill": item,
                 "last_updated": datetime.now().isoformat(),
                 "path": normalize_path(item_path),
-                "documented": True
+                "documented": True,
             }
             registry_file = os.path.join(item_path, "registry.yaml")
             with open(registry_file, "w", encoding="utf-8") as f:

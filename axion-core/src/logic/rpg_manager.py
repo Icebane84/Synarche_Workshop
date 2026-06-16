@@ -49,6 +49,14 @@ import os
 import sqlite3
 from datetime import datetime
 from typing import Any, TypedDict
+from dotenv import load_dotenv
+
+try:
+    from supabase import Client, create_client
+    _SUPABASE_AVAILABLE = True
+except ImportError:
+    _SUPABASE_AVAILABLE = False
+
 
 class RPGEngine(TypedDict):
     user_id: str
@@ -81,6 +89,8 @@ class RPGManager:
             current_dir = os.path.dirname(os.path.abspath(__file__))
             base_dir = os.path.abspath(os.path.join(current_dir, "../../.."))
             db_path = os.path.join(base_dir, ".agent", "rpg_state.db")
+        else:
+            base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(db_path))))
 
         self.db_path = db_path
         # Fixed UUID for local development player
@@ -89,16 +99,42 @@ class RPGManager:
         # Initialize SQLite database schema
         self._init_sqlite_db()
 
+        # Load environment variables in correct cascading order
+        # 1. Base workspace env
+        load_dotenv(os.path.join(base_dir, ".env"))
+        # 2. Workspace local overrides
+        load_dotenv(os.path.join(base_dir, ".env.local"), override=True)
+        # 3. Base subproject env
+        subproject_dir = os.path.join(base_dir, "axion-core")
+        load_dotenv(os.path.join(subproject_dir, ".env"), override=True)
+        # 4. Subproject local overrides
+        load_dotenv(os.path.join(subproject_dir, ".env.local"), override=True)
+
+        # Initialize Supabase client if configured
+        self.use_supabase: bool = False
+        self.supabase_client: Any = None
+
+        if _SUPABASE_AVAILABLE:
+            url = os.environ.get("SUPABASE_URL")
+            key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+            if url and key and "YOUR-SERVICE-ROLE-KEY" not in key and "your-supabase" not in key:
+                try:
+                    self.supabase_client = create_client(url, key)
+                    self.use_supabase = True
+                    print(f"[RPG] Supabase remote connection active for: {url}")
+                except Exception as e:
+                    print(f"[RPG] Failed to initialize Supabase client: {e}")
+
     def _init_sqlite_db(self) -> None:
         """Initializes the local SQLite database schema if missing."""
         db_dir = os.path.dirname(self.db_path)
         if db_dir and not os.path.exists(db_dir):
             os.makedirs(db_dir, exist_ok=True)
-            
+
         conn = sqlite3.connect(self.db_path)
         try:
             cursor = conn.cursor()
-            
+
             # Create player_state table
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS player_state (
@@ -108,7 +144,7 @@ class RPGManager:
                     prestige_score INTEGER NOT NULL DEFAULT 0
                 )
             """)
-            
+
             # Create rpg_stats table
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS rpg_stats (
@@ -125,7 +161,7 @@ class RPGManager:
                     FOREIGN KEY(user_id) REFERENCES player_state(user_id)
                 )
             """)
-            
+
             # Create stardust_ledger table
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS stardust_ledger (
@@ -139,7 +175,7 @@ class RPGManager:
                     FOREIGN KEY(user_id) REFERENCES player_state(user_id)
                 )
             """)
-            
+
             # Create player_achievements table
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS player_achievements (
@@ -149,7 +185,7 @@ class RPGManager:
                     FOREIGN KEY(user_id) REFERENCES player_state(user_id)
                 )
             """)
-            
+
             conn.commit()
         finally:
             conn.close()
@@ -168,18 +204,18 @@ class RPGManager:
         conn = sqlite3.connect(self.db_path)
         try:
             cursor = conn.cursor()
-            
+
             # Check player_state
             cursor.execute("SELECT user_id FROM player_state WHERE user_id = ?", (uid,))
             row = cursor.fetchone()
-            
+
             if not row:
                 print(f"[RPG] Initializing new player state for {uid}...")
                 cursor.execute(
                     "INSERT INTO player_state (user_id, xp, level, prestige_score) VALUES (?, 0, 1, 0)",
-                    (uid,)
+                    (uid,),
                 )
-                
+
                 now_str = datetime.now().isoformat()
                 cursor.execute(
                     """INSERT INTO rpg_stats (
@@ -187,7 +223,7 @@ class RPGManager:
                         transparency, semantic_friction_resonance, form_ascension_state,
                         creative_spark, updated_at
                     ) VALUES (?, 0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, ?)""",
-                    (uid, now_str)
+                    (uid, now_str),
                 )
                 conn.commit()
             return uid
@@ -196,6 +232,38 @@ class RPGManager:
             return None
         finally:
             conn.close()
+
+    def _ensure_remote_player_exists(self, uid: str) -> None:
+        """Helper to ensure a player profile exists in the remote database."""
+        if not self.use_supabase or not self.supabase_client:
+            return
+
+        try:
+            res = self.supabase_client.table("player_state").select("user_id").eq("user_id", uid).execute()
+            if not res.data:
+                print(f"[RPG] Initializing remote player state for {uid}...")
+                self.supabase_client.table("player_state").insert({
+                    "user_id": uid,
+                    "xp": 0,
+                    "level": 1,
+                    "prestige_score": 0
+                }).execute()
+
+                self.supabase_client.table("rpg_stats").insert({
+                    "user_id": uid,
+                    "stardust_available": 0,
+                    "coherence_index": 1.0,
+                    "synergy": 1.0,
+                    "adaptability": 1.0,
+                    "transparency": 1.0,
+                    "semantic_friction_resonance": 1.0,
+                    "form_ascension_state": 1.0,
+                    "creative_spark": 1.0,
+                    "updated_at": datetime.now().isoformat()
+                }).execute()
+        except Exception as e:
+            print(f"[RPG] Error ensuring remote player exists: {e}")
+            raise e
 
     def get_status(self, user_id: str | None = None) -> RPGEngine | dict[str, Any]:
         """Retrieves the complete status aligned with the RPGEngine TypedDict.
@@ -211,20 +279,54 @@ class RPGManager:
         if not uid:
             return {"error": "Database unavailable"}
 
+        # Attempt to pull from Supabase first if enabled
+        if self.use_supabase and self.supabase_client:
+            try:
+                self._ensure_remote_player_exists(uid)
+                res_player = self.supabase_client.table("player_state").select("*").eq("user_id", uid).execute()
+                res_stats = self.supabase_client.table("rpg_stats").select("*").eq("user_id", uid).execute()
+                if res_player.data and res_stats.data:
+                    player = res_player.data[0]
+                    stats = res_stats.data[0]
+                    ach_status = self.get_achievements(uid)
+                    completed_achievements = [a["id"] for a in ach_status if a.get("completed")]
+                    
+                    return {
+                        "user_id": uid,
+                        "level": player.get("level", 1),
+                        "xp": player.get("xp", 0),
+                        "prestige_score": player.get("prestige_score", 0),
+                        "stardust_available": stats.get("stardust_available", 0),
+                        "coherence_index": stats.get("coherence_index", 1.0),
+                        "synergy": stats.get("synergy", 1.0),
+                        "adaptability": stats.get("adaptability", 1.0),
+                        "transparency": stats.get("transparency", 1.0),
+                        "semantic_friction_resonance": stats.get("semantic_friction_resonance", 1.0),
+                        "form_ascension_state": stats.get("form_ascension_state", 1.0),
+                        "creative_spark": stats.get("creative_spark", 1.0),
+                        "achievements": completed_achievements,
+                        "active_quest_log": [],
+                        "prestige_class": player.get("prestige_class", "Novice"),
+                        "updated_at": stats.get("updated_at", ""),
+                    }
+            except Exception as e:
+                print(f"[RPG] Supabase error in get_status: {e}. Falling back to SQLite.")
+
+        # Fall back to local SQLite
         conn = sqlite3.connect(self.db_path)
         try:
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
-            
+
             cursor.execute("SELECT * FROM player_state WHERE user_id = ?", (uid,))
             player_row = cursor.fetchone()
-            
+
             cursor.execute("SELECT * FROM rpg_stats WHERE user_id = ?", (uid,))
             stats_row = cursor.fetchone()
-            
+
             if not player_row or not stats_row:
                 return {"error": "Player state or stats not found"}
-                
+
             player = dict(player_row)
             stats = dict(stats_row)
 
@@ -283,16 +385,18 @@ class RPGManager:
         conn = sqlite3.connect(self.db_path)
         try:
             cursor = conn.cursor()
-            
+
             # 1. Update stats
-            cursor.execute("SELECT stardust_available FROM rpg_stats WHERE user_id = ?", (uid,))
+            cursor.execute(
+                "SELECT stardust_available FROM rpg_stats WHERE user_id = ?", (uid,)
+            )
             row = cursor.fetchone()
             current_stardust = row[0] if row else 0
             new_total: int = current_stardust + amount
 
             cursor.execute(
                 "UPDATE rpg_stats SET stardust_available = ?, updated_at = ? WHERE user_id = ?",
-                (new_total, datetime.now().isoformat(), uid)
+                (new_total, datetime.now().isoformat(), uid),
             )
 
             # 2. Log in ledger
@@ -300,10 +404,33 @@ class RPGManager:
                 """INSERT INTO stardust_ledger (
                     user_id, transaction_type, amount, target_stat, reference_impact_id, created_at
                 ) VALUES (?, 'EARNED', ?, 'STARDUST', ?, ?)""",
-                (uid, amount, impact_id, datetime.now().isoformat())
+                (uid, amount, impact_id, datetime.now().isoformat()),
             )
-            
+
             conn.commit()
+
+            # 3. Mirror to Supabase if enabled
+            if self.use_supabase and self.supabase_client:
+                try:
+                    self._ensure_remote_player_exists(uid)
+                    
+                    # Update stats remotely
+                    self.supabase_client.table("rpg_stats").update({
+                        "stardust_available": new_total,
+                        "updated_at": datetime.now().isoformat()
+                    }).eq("user_id", uid).execute()
+
+                    # Log remotely
+                    self.supabase_client.table("stardust_ledger").insert({
+                        "user_id": uid,
+                        "transaction_type": "EARNED",
+                        "amount": amount,
+                        "target_stat": "STARDUST",
+                        "reference_impact_id": impact_id
+                    }).execute()
+                except Exception as e:
+                    print(f"[RPG] Supabase error mirroring award_stardust: {e}")
+
             return new_total
         except Exception as e:
             print(f"[RPG] Error awarding stardust: {e}")
@@ -346,14 +473,14 @@ class RPGManager:
         try:
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
-            
+
             # 1. Check availability
             cursor.execute("SELECT * FROM rpg_stats WHERE user_id = ?", (uid,))
             row = cursor.fetchone()
             if not row:
                 return {"success": False, "error": "Player stats not found"}
             stats = dict(row)
-            
+
             available: int = stats.get("stardust_available", 0)
 
             if available < stardust_amount:
@@ -371,7 +498,7 @@ class RPGManager:
             # 3. Apply updates
             cursor.execute(
                 f"UPDATE rpg_stats SET {stat_name} = ?, stardust_available = ?, updated_at = ? WHERE user_id = ?",
-                (new_val, available - stardust_amount, datetime.now().isoformat(), uid)
+                (new_val, available - stardust_amount, datetime.now().isoformat(), uid),
             )
 
             # 4. Log in ledger
@@ -379,10 +506,33 @@ class RPGManager:
                 """INSERT INTO stardust_ledger (
                     user_id, transaction_type, amount, target_stat, reference_impact_id, created_at
                 ) VALUES (?, 'SPENT', ?, ?, NULL, ?)""",
-                (uid, stardust_amount, stat_name, datetime.now().isoformat())
+                (uid, stardust_amount, stat_name, datetime.now().isoformat()),
             )
-            
+
             conn.commit()
+
+            # 5. Mirror to Supabase if enabled
+            if self.use_supabase and self.supabase_client:
+                try:
+                    self._ensure_remote_player_exists(uid)
+
+                    # Update stats remotely
+                    self.supabase_client.table("rpg_stats").update({
+                        stat_name: new_val,
+                        "stardust_available": available - stardust_amount,
+                        "updated_at": datetime.now().isoformat()
+                    }).eq("user_id", uid).execute()
+
+                    # Log ledger remotely
+                    self.supabase_client.table("stardust_ledger").insert({
+                        "user_id": uid,
+                        "transaction_type": "SPENT",
+                        "amount": stardust_amount,
+                        "target_stat": stat_name,
+                        "reference_impact_id": None
+                    }).execute()
+                except Exception as e:
+                    print(f"[RPG] Supabase error mirroring invest_stardust: {e}")
 
             return {
                 "success": True,
@@ -419,17 +569,31 @@ class RPGManager:
         except Exception as e:
             print(f"[RPG] Error loading achievements.json: {e}")
 
-        # 2. Query SQLite for earned achievements
-        conn = sqlite3.connect(self.db_path)
-        try:
-            cursor = conn.cursor()
-            cursor.execute("SELECT achievement_id FROM player_achievements WHERE user_id = ?", (uid,))
-            rows = cursor.fetchall()
-            earned_ids = {row[0] for row in rows}
-        except Exception as e:
-            print(f"[RPG] SQLite error checking achievements: {e}")
-        finally:
-            conn.close()
+        # 2. Query Supabase or SQLite for earned achievements
+        fetched_from_supabase = False
+        if self.use_supabase and self.supabase_client:
+            try:
+                self._ensure_remote_player_exists(uid)
+                res = self.supabase_client.table("player_achievements").select("achievement_id").eq("user_id", uid).execute()
+                earned_ids = {row["achievement_id"] for row in res.data} if res.data else set()
+                fetched_from_supabase = True
+            except Exception as e:
+                print(f"[RPG] Supabase error checking achievements: {e}. Falling back to SQLite.")
+
+        if not fetched_from_supabase:
+            conn = sqlite3.connect(self.db_path)
+            try:
+                cursor = conn.cursor()
+                cursor.execute(
+                    "SELECT achievement_id FROM player_achievements WHERE user_id = ?",
+                    (uid,),
+                )
+                rows = cursor.fetchall()
+                earned_ids = {row[0] for row in rows}
+            except Exception as e:
+                print(f"[RPG] SQLite error checking achievements: {e}")
+            finally:
+                conn.close()
 
         # Merge status
         for a in all_achievements:
@@ -482,25 +646,32 @@ class RPGManager:
         conn = sqlite3.connect(self.db_path)
         try:
             cursor = conn.cursor()
-            
+
             # Award rewards (stardust)
             if stardust > 0:
                 # Get current stardust
-                cursor.execute("SELECT stardust_available FROM rpg_stats WHERE user_id = ?", (uid,))
+                cursor.execute(
+                    "SELECT stardust_available FROM rpg_stats WHERE user_id = ?", (uid,)
+                )
                 row = cursor.fetchone()
                 current_stardust = row[0] if row else 0
                 new_stardust = current_stardust + stardust
                 cursor.execute(
                     "UPDATE rpg_stats SET stardust_available = ?, updated_at = ? WHERE user_id = ?",
-                    (new_stardust, datetime.now().isoformat(), uid)
+                    (new_stardust, datetime.now().isoformat(), uid),
                 )
-                
+
                 # Log transaction
                 cursor.execute(
                     """INSERT INTO stardust_ledger (
                         user_id, transaction_type, amount, target_stat, reference_impact_id, created_at
                     ) VALUES (?, 'EARNED', ?, 'STARDUST', ?, ?)""",
-                    (uid, stardust, f"ACHIEVEMENT:{achievement_id}", datetime.now().isoformat())
+                    (
+                        uid,
+                        stardust,
+                        f"ACHIEVEMENT:{achievement_id}",
+                        datetime.now().isoformat(),
+                    ),
                 )
 
             # Award rewards (xp)
@@ -510,23 +681,60 @@ class RPGManager:
                 current_xp = row[0] if row else 0
                 new_xp = current_xp + xp
                 cursor.execute(
-                    "UPDATE player_state SET xp = ? WHERE user_id = ?",
-                    (new_xp, uid)
+                    "UPDATE player_state SET xp = ? WHERE user_id = ?", (new_xp, uid)
                 )
 
             # Record achievement
             cursor.execute(
                 "INSERT INTO player_achievements (user_id, achievement_id) VALUES (?, ?)",
-                (uid, achievement_id)
+                (uid, achievement_id),
             )
-            
+
             conn.commit()
-            
+
+            # Mirror to Supabase if enabled
+            supabase_success = False
+            if self.use_supabase and self.supabase_client:
+                try:
+                    self._ensure_remote_player_exists(uid)
+
+                    # 1. Update player_state remotely for XP
+                    if xp > 0:
+                        self.supabase_client.table("player_state").update({
+                            "xp": new_xp
+                        }).eq("user_id", uid).execute()
+
+                    # 2. Update rpg_stats remotely for Stardust
+                    if stardust > 0:
+                        self.supabase_client.table("rpg_stats").update({
+                            "stardust_available": new_stardust,
+                            "updated_at": datetime.now().isoformat()
+                        }).eq("user_id", uid).execute()
+
+                        # Log ledger remotely
+                        self.supabase_client.table("stardust_ledger").insert({
+                            "user_id": uid,
+                            "transaction_type": "EARNED",
+                            "amount": stardust,
+                            "target_stat": "STARDUST",
+                            "reference_impact_id": f"ACHIEVEMENT:{achievement_id}"
+                        }).execute()
+
+                    # 3. Record achievement remotely
+                    self.supabase_client.table("player_achievements").insert({
+                        "user_id": uid,
+                        "achievement_id": achievement_id
+                    }).execute()
+
+                    supabase_success = True
+                except Exception as e:
+                    print(f"[RPG] Supabase error mirroring claim_achievement: {e}")
+
             return {
                 "success": True,
                 "stardust_awarded": stardust,
                 "xp_awarded": xp,
-                "mode": "LOCAL",
+                "mode": "SYNCED" if (self.use_supabase and self.supabase_client and supabase_success) else "LOCAL",
             }
         except Exception as e:
             return {"success": False, "error": str(e)}

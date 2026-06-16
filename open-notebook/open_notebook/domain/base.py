@@ -36,9 +36,7 @@ class ObjectModel(BaseModel):
     updated: datetime | None = None
 
     @classmethod
-    async def get_all(
-        cls: type[T], order_by=None, filters: dict[str, Any] | None = None
-    ) -> list[T]:
+    async def get_all(cls: type[T], order_by=None, filters: dict[str, Any] | None = None) -> list[T]:
         try:
             # If called from a specific subclass, use its table_name
             if cls.table_name:
@@ -46,9 +44,7 @@ class ObjectModel(BaseModel):
                 table_name = cls.table_name
             else:
                 # This path is taken if called directly from ObjectModel
-                raise InvalidInputError(
-                    "get_all() must be called from a specific model class"
-                )
+                raise InvalidInputError("get_all() must be called from a specific model class")
 
             query = f"SELECT * FROM {table_name}"
             _vars = {}
@@ -153,19 +149,13 @@ class ObjectModel(BaseModel):
                 repo_result = await repo_create(self.__class__.table_name, data)
             else:
                 data["created"] = (
-                    self.created.strftime("%Y-%m-%d %H:%M:%S")
-                    if isinstance(self.created, datetime)
-                    else self.created
+                    self.created.strftime("%Y-%m-%d %H:%M:%S") if isinstance(self.created, datetime) else self.created
                 )
                 logger.debug(f"Updating record with id {self.id}")
-                repo_result = await repo_update(
-                    self.__class__.table_name, self.id, data
-                )
+                repo_result = await repo_update(self.__class__.table_name, self.id, data)
             # Update the current instance with the result
             # repo_result is a list of dictionaries
-            result_list: list[dict[str, Any]] = (
-                repo_result if isinstance(repo_result, list) else [repo_result]
-            )
+            result_list: list[dict[str, Any]] = repo_result if isinstance(repo_result, list) else [repo_result]
             for key, value in result_list[0].items():
                 if hasattr(self, key):
                     if isinstance(getattr(self, key), BaseModel):
@@ -185,11 +175,7 @@ class ObjectModel(BaseModel):
 
     def _prepare_save_data(self) -> dict[str, Any]:
         data = self.model_dump()
-        return {
-            key: value
-            for key, value in data.items()
-            if value is not None or key in self.__class__.nullable_fields
-        }
+        return {key: value for key, value in data.items() if value is not None or key in self.__class__.nullable_fields}
 
     async def delete(self) -> bool:
         if self.id is None:
@@ -198,22 +184,14 @@ class ObjectModel(BaseModel):
             logger.debug(f"Deleting record with id {self.id}")
             return await repo_delete(self.id)
         except Exception as e:
-            logger.error(
-                f"Error deleting {self.__class__.table_name} with id {self.id}: {e!s}"
-            )
-            raise DatabaseOperationError(
-                f"Failed to delete {self.__class__.table_name}"
-            )
+            logger.error(f"Error deleting {self.__class__.table_name} with id {self.id}: {e!s}")
+            raise DatabaseOperationError(f"Failed to delete {self.__class__.table_name}")
 
-    async def relate(
-        self, relationship: str, target_id: str, data: dict | None = {}
-    ) -> Any:
+    async def relate(self, relationship: str, target_id: str, data: dict | None = {}) -> Any:
         if not relationship or not target_id or not self.id:
             raise InvalidInputError("Relationship and target ID must be provided")
         try:
-            return await repo_relate(
-                source=self.id, relationship=relationship, target=target_id, data=data
-            )
+            return await repo_relate(source=self.id, relationship=relationship, target=target_id, data=data)
         except Exception as e:
             logger.error(f"Error creating relationship: {e!s}")
             logger.exception(e)
@@ -237,9 +215,7 @@ class RecordModel(BaseModel):
     )
 
     record_id: ClassVar[str]
-    auto_save: ClassVar[bool] = (
-        False  # Default to False, can be overridden in subclasses
-    )
+    auto_save: ClassVar[bool] = False  # Default to False, can be overridden in subclasses
     _instances: ClassVar[dict[str, "RecordModel"]] = {}  # Store instances by record_id
 
     def __new__(cls, **kwargs):
@@ -320,24 +296,16 @@ class RecordModel(BaseModel):
         }
 
         await repo_upsert(
-            (
-                self.__class__.table_name
-                if hasattr(self.__class__, "table_name")
-                else "record"
-            ),
+            (self.__class__.table_name if hasattr(self.__class__, "table_name") else "record"),
             self.record_id,
             data,
         )
 
-        result = await repo_query(
-            "SELECT * FROM $record_id", {"record_id": ensure_record_id(self.record_id)}
-        )
+        result = await repo_query("SELECT * FROM $record_id", {"record_id": ensure_record_id(self.record_id)})
         if result:
             for key, value in result[0].items():
                 if hasattr(self, key):
-                    object.__setattr__(
-                        self, key, value
-                    )  # Use object.__setattr__ to avoid triggering validation again
+                    object.__setattr__(self, key, value)  # Use object.__setattr__ to avoid triggering validation again
 
         return self
 

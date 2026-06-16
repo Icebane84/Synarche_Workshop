@@ -44,12 +44,8 @@ def _patch_asyncio() -> None:
     if hasattr(asyncio, "_nest_patched"):
         return
     asyncio.Task = asyncio.tasks._CTask = asyncio.tasks.Task = asyncio.tasks._PyTask
-    asyncio.Future = asyncio.futures._CFuture = asyncio.futures.Future = (
-        asyncio.futures._PyFuture
-    )
-    events._get_event_loop = events.get_event_loop = asyncio.get_event_loop = (
-        _get_event_loop
-    )
+    asyncio.Future = asyncio.futures._CFuture = asyncio.futures.Future = asyncio.futures._PyFuture
+    events._get_event_loop = events.get_event_loop = asyncio.get_event_loop = _get_event_loop
     asyncio.run = run
     asyncio._nest_patched = True
 
@@ -105,11 +101,7 @@ def _patch_loop(loop) -> None:
         timeout = (
             0
             if ready or self._stopping
-            else (
-                min(max(scheduled[0]._when - self.time(), 0), 86400)
-                if scheduled
-                else None
-            )
+            else (min(max(scheduled[0]._when - self.time(), 0), 86400) if scheduled else None)
         )
         event_list = self._selector.select(timeout)
         self._process_events(event_list)
@@ -154,9 +146,7 @@ def _patch_loop(loop) -> None:
             self._thread_id = old_thread_id
             events._set_running_loop(old_running_loop)
             self._num_runs_pending -= 1
-            if self._is_proactorloop and (
-                self._num_runs_pending == 0 and self._self_reading_future is not None
-            ):
+            if self._is_proactorloop and (self._num_runs_pending == 0 and self._self_reading_future is not None):
                 ov = self._self_reading_future._ov
                 self._self_reading_future.cancel()
                 if ov is not None:
@@ -197,14 +187,8 @@ def _patch_loop(loop) -> None:
     cls._check_running = _check_running
     cls._check_runnung = _check_running  # typo in Python 3.7 source
     cls._num_runs_pending = 1 if loop.is_running() else 0
-    cls._is_proactorloop = os.name == "nt" and issubclass(
-        cls, asyncio.ProactorEventLoop
-    )
-    curr_tasks = (
-        asyncio.tasks._current_tasks
-        if sys.version_info >= (3, 7, 0)
-        else asyncio.Task._current_tasks
-    )
+    cls._is_proactorloop = os.name == "nt" and issubclass(cls, asyncio.ProactorEventLoop)
+    curr_tasks = asyncio.tasks._current_tasks if sys.version_info >= (3, 7, 0) else asyncio.Task._current_tasks
     cls._nest_patched = True
 
 

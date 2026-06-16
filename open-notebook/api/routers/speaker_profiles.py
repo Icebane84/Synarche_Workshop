@@ -57,9 +57,7 @@ async def get_speaker_profile(profile_name: str):
         profile = await SpeakerProfile.get_by_name(profile_name)
 
         if not profile:
-            raise HTTPException(
-                status_code=404, detail=f"Speaker profile '{profile_name}' not found"
-            )
+            raise HTTPException(status_code=404, detail=f"Speaker profile '{profile_name}' not found")
 
         return SpeakerProfileResponse(
             id=str(profile.id),
@@ -82,9 +80,7 @@ class SpeakerProfileCreate(BaseModel):
     description: str = Field("", description="Profile description")
     tts_provider: str = Field(..., description="TTS provider")
     tts_model: str = Field(..., description="TTS model name")
-    speakers: list[dict[str, Any]] = Field(
-        ..., description="Array of speaker configurations"
-    )
+    speakers: list[dict[str, Any]] = Field(..., description="Array of speaker configurations")
 
 
 @router.post("/speaker-profiles", response_model=SpeakerProfileResponse)
@@ -122,9 +118,7 @@ async def update_speaker_profile(profile_id: str, profile_data: SpeakerProfileCr
         profile = await SpeakerProfile.get(profile_id)
 
         if not profile:
-            raise HTTPException(
-                status_code=404, detail=f"Speaker profile '{profile_id}' not found"
-            )
+            raise HTTPException(status_code=404, detail=f"Speaker profile '{profile_id}' not found")
 
         # Update fields
         profile.name = profile_data.name
@@ -158,9 +152,7 @@ async def delete_speaker_profile(profile_id: str):
         profile = await SpeakerProfile.get(profile_id)
 
         if not profile:
-            raise HTTPException(
-                status_code=404, detail=f"Speaker profile '{profile_id}' not found"
-            )
+            raise HTTPException(status_code=404, detail=f"Speaker profile '{profile_id}' not found")
 
         await profile.delete()
 
@@ -173,18 +165,14 @@ async def delete_speaker_profile(profile_id: str):
         raise HTTPException(status_code=500, detail="Failed to delete speaker profile")
 
 
-@router.post(
-    "/speaker-profiles/{profile_id}/duplicate", response_model=SpeakerProfileResponse
-)
+@router.post("/speaker-profiles/{profile_id}/duplicate", response_model=SpeakerProfileResponse)
 async def duplicate_speaker_profile(profile_id: str):
     """Duplicate a speaker profile"""
     try:
         original = await SpeakerProfile.get(profile_id)
 
         if not original:
-            raise HTTPException(
-                status_code=404, detail=f"Speaker profile '{profile_id}' not found"
-            )
+            raise HTTPException(status_code=404, detail=f"Speaker profile '{profile_id}' not found")
 
         # Create duplicate with modified name
         duplicate = SpeakerProfile(
@@ -210,6 +198,4 @@ async def duplicate_speaker_profile(profile_id: str):
         raise
     except Exception as e:
         logger.error(f"Failed to duplicate speaker profile: {e}")
-        raise HTTPException(
-            status_code=500, detail="Failed to duplicate speaker profile"
-        )
+        raise HTTPException(status_code=500, detail="Failed to duplicate speaker profile")

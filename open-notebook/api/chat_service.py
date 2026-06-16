@@ -91,9 +91,7 @@ class ChatService:
                 data["model_override"] = model_override
 
             if not data:
-                raise ValueError(
-                    "At least one field must be provided to update a session"
-                )
+                raise ValueError("At least one field must be provided to update a session")
 
             async with httpx.AsyncClient() as client:
                 response = await client.put(
@@ -137,26 +135,20 @@ class ChatService:
             # Short connect timeout (10s), long read timeout (10 min) for Ollama/local LLMs
             timeout = httpx.Timeout(connect=10.0, read=600.0, write=30.0, pool=10.0)
             async with httpx.AsyncClient(timeout=timeout) as client:
-                response = await client.post(
-                    f"{self.base_url}/api/chat/execute", json=data, headers=self.headers
-                )
+                response = await client.post(f"{self.base_url}/api/chat/execute", json=data, headers=self.headers)
                 response.raise_for_status()
                 return response.json()
         except Exception as e:
             logger.error(f"Error executing chat: {e!s}")
             raise
 
-    async def build_context(
-        self, notebook_id: str, context_config: dict[str, Any]
-    ) -> dict[str, Any]:
+    async def build_context(self, notebook_id: str, context_config: dict[str, Any]) -> dict[str, Any]:
         """Build context for a notebook"""
         try:
             data = {"notebook_id": notebook_id, "context_config": context_config}
 
             async with httpx.AsyncClient() as client:
-                response = await client.post(
-                    f"{self.base_url}/api/chat/context", json=data, headers=self.headers
-                )
+                response = await client.post(f"{self.base_url}/api/chat/context", json=data, headers=self.headers)
                 response.raise_for_status()
                 return response.json()
         except Exception as e:

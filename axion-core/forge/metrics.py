@@ -164,10 +164,10 @@ class UnifiedResonanceMetrics:
 ### **📈 Resonance Dashboard (UCI-SSS-001)**
 | Metric | Value | Target | Status |
 | :---- | :---- | :---- | :---- |
-| **CCRI (Resonance)** | **{ccri:.2f}** | > 0.85 | {'✅ Nominal' if ccri >= 0.85 else '⚠️ Sub-optimal'} |
-| **CCLI (Cognitive Load)** | **{ccli:.2f}** | 0.4 - 0.7 | {'✅ nominal' if 0.4 <= ccli <= 0.7 else '⚠️ High/Low'} |
-| **CSS (Stability)** | **{css:.2f}** | > 0.90 | {'✅ Nominal' if css >= 0.90 else '⚠️ Fragmenting'} |
-| **BGR (Breakthroughs)** | **{bgr:.1f}** | 1.0 | {'✅ Nominal' if bgr >= 1.0 else '⚠️ Stagnant'} |
+| **CCRI (Resonance)** | **{ccri:.2f}** | > 0.85 | {"✅ Nominal" if ccri >= 0.85 else "⚠️ Sub-optimal"} |
+| **CCLI (Cognitive Load)** | **{ccli:.2f}** | 0.4 - 0.7 | {"✅ nominal" if 0.4 <= ccli <= 0.7 else "⚠️ High/Low"} |
+| **CSS (Stability)** | **{css:.2f}** | > 0.90 | {"✅ Nominal" if css >= 0.90 else "⚠️ Fragmenting"} |
+| **BGR (Breakthroughs)** | **{bgr:.1f}** | 1.0 | {"✅ Nominal" if bgr >= 1.0 else "⚠️ Stagnant"} |
 
 #### **Systemic Assessment**
 {action_text}

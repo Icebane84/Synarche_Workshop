@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -7,11 +6,11 @@
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-import nest_asyncio
 import streamlit as st
 
-# nest_asyncio.apply()
+import nest_asyncio
 
+# nest_asyncio.apply()
 from api.insights_service import insights_service
 from api.sources_service import sources_service
 from open_notebook.domain.notebook import SourceInsight

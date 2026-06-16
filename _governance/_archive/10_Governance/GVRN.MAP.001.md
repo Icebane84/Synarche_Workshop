@@ -87,9 +87,9 @@ Execute `GUCA-MAP-001` to perform the following check:
 
 1. **Calculation**: Total the binary scores across all 10 Pillars (MAP-I-CS).
 2. **Judgement**:
-    - 9-10/10: **EXCELLENT**. Register in the Ascension Registry.
-    - 8/10: **PASS**. Minor refinements suggested.
-    - <8/10: **FAIL (SLAG)**. Trigger an immediate `CMD: REFORGE` session.
+   - 9-10/10: **EXCELLENT**. Register in the Ascension Registry.
+   - 8/10: **PASS**. Minor refinements suggested.
+   - <8/10: **FAIL (SLAG)**. Trigger an immediate `CMD: REFORGE` session.
 
 ### 1.4 Phase 4: Immutable Logging
 

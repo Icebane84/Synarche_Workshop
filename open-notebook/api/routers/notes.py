@@ -78,9 +78,7 @@ async def create_note(note_data: NoteCreate):
         if note_data.note_type in ("human", "ai"):
             note_type = note_data.note_type  # type: ignore[assignment]
         elif note_data.note_type is not None:
-            raise HTTPException(
-                status_code=400, detail="note_type must be 'human' or 'ai'"
-            )
+            raise HTTPException(status_code=400, detail="note_type must be 'human' or 'ai'")
         new_note = Note(
             title=title,
             content=note_data.content,
@@ -154,9 +152,7 @@ async def update_note(note_id: str, note_update: NoteUpdate):
             if note_update.note_type in ("human", "ai"):
                 note.note_type = note_update.note_type  # type: ignore[assignment]
             else:
-                raise HTTPException(
-                    status_code=400, detail="note_type must be 'human' or 'ai'"
-                )
+                raise HTTPException(status_code=400, detail="note_type must be 'human' or 'ai'")
 
         await note.save()
 

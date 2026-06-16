@@ -42,9 +42,9 @@ class Colors:
 
 
 def print_header(text: str):
-    print(f"\n{Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+    print(f"\n{Colors.BOLD}{Colors.CYAN}{'=' * 70}{Colors.ENDC}")
     print(f"{Colors.BOLD}{Colors.CYAN}{text.center(70)}{Colors.ENDC}")
-    print(f"{Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+    print(f"{Colors.BOLD}{Colors.CYAN}{'=' * 70}{Colors.ENDC}\n")
 
 
 def print_step(text: str):

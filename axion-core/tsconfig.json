@@ -13,7 +13,7 @@
         "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
         "paths": {
-            "@system/*": ["./src/cse/*"],
+            "@system/*": ["./src/system/*", "./src/cse/*"],
             "@domain/*": ["./src/02_domain/*"],
             "@nexus/*": ["./src/nexus/*"],
             "@fabric/*": ["./src/03_fabric/*"],

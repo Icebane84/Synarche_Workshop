@@ -11,6 +11,7 @@ artifact_anchor:
   relations: []
 """
 
+
 class CompiledGraph:
     def __init__(self, tasks):
         self.tasks = tasks

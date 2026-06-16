@@ -14,7 +14,9 @@ from api.client import api_client
 
 async def main() -> None:
     notebook_id = "notebook:hhgjek28qxr88o34ohut"
-    bible_path = r"C:\Users\Chris\Synarche_Workspace\where-light-fades\Where Light Fades_ The Definitive Content Bible.md"
+    bible_path = (
+        r"C:\Users\Chris\Synarche_Workspace\where-light-fades\Where Light Fades_ The Definitive Content Bible.md"
+    )
 
     if not os.path.exists(bible_path):
         logger.error(f"File not found: {bible_path}")

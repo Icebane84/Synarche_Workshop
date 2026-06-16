@@ -1,3 +1,4 @@
+// prettier-ignore
 /*
 artifact_anchor:
   id: GVRN.FORGE_UMB.001

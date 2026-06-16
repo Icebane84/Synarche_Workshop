@@ -10,7 +10,6 @@ Transformations service layer using API.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 from datetime import datetime
 from typing import Any, Dict, List, Union
 
@@ -26,7 +25,7 @@ class TransformationsService:
     def __init__(self):
         logger.info("Using API for transformations operations")
 
-    def get_all_transformations(self) -> List[Transformation]:
+    def get_all_transformations(self) -> list[Transformation]:
         """Get all transformations."""
         transformations_data = api_client.get_transformations()
         # Convert API response to Transformation objects
@@ -40,12 +39,8 @@ class TransformationsService:
                 apply_default=trans_data["apply_default"],
             )
             transformation.id = trans_data["id"]
-            transformation.created = datetime.fromisoformat(
-                trans_data["created"].replace("Z", "+00:00")
-            )
-            transformation.updated = datetime.fromisoformat(
-                trans_data["updated"].replace("Z", "+00:00")
-            )
+            transformation.created = datetime.fromisoformat(trans_data["created"].replace("Z", "+00:00"))
+            transformation.updated = datetime.fromisoformat(trans_data["updated"].replace("Z", "+00:00"))
             transformations.append(transformation)
         return transformations
 
@@ -61,12 +56,8 @@ class TransformationsService:
             apply_default=trans_data["apply_default"],
         )
         transformation.id = trans_data["id"]
-        transformation.created = datetime.fromisoformat(
-            trans_data["created"].replace("Z", "+00:00")
-        )
-        transformation.updated = datetime.fromisoformat(
-            trans_data["updated"].replace("Z", "+00:00")
-        )
+        transformation.created = datetime.fromisoformat(trans_data["created"].replace("Z", "+00:00"))
+        transformation.updated = datetime.fromisoformat(trans_data["updated"].replace("Z", "+00:00"))
         return transformation
 
     def create_transformation(
@@ -94,12 +85,8 @@ class TransformationsService:
             apply_default=trans_data["apply_default"],
         )
         transformation.id = trans_data["id"]
-        transformation.created = datetime.fromisoformat(
-            trans_data["created"].replace("Z", "+00:00")
-        )
-        transformation.updated = datetime.fromisoformat(
-            trans_data["updated"].replace("Z", "+00:00")
-        )
+        transformation.created = datetime.fromisoformat(trans_data["created"].replace("Z", "+00:00"))
+        transformation.updated = datetime.fromisoformat(trans_data["updated"].replace("Z", "+00:00"))
         return transformation
 
     def update_transformation(self, transformation: Transformation) -> Transformation:
@@ -123,9 +110,7 @@ class TransformationsService:
         transformation.description = trans_data["description"]
         transformation.prompt = trans_data["prompt"]
         transformation.apply_default = trans_data["apply_default"]
-        transformation.updated = datetime.fromisoformat(
-            trans_data["updated"].replace("Z", "+00:00")
-        )
+        transformation.updated = datetime.fromisoformat(trans_data["updated"].replace("Z", "+00:00"))
 
         return transformation
 
@@ -136,7 +121,7 @@ class TransformationsService:
 
     def execute_transformation(
         self, transformation_id: str, input_text: str, model_id: str
-    ) -> Union[Dict[Any, Any], List[Dict[Any, Any]]]:
+    ) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Execute a transformation on input text."""
         result = api_client.execute_transformation(
             transformation_id=transformation_id,

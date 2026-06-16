@@ -1,11 +1,13 @@
 import os
 import shutil
 
-INPUT_FILE = r"c:\Users\Chris\_Desktop_Vault\Phoenix\input_artifacts\Component Specification_ Coherent Synthesis Engin.md"
-OUTPUT_FILE = (
-    r"c:\Users\Chris\Synarche_Workspace\_governance\20_Architecture\ARCH.Spec.CSE.md"
+INPUT_FILE = (
+    r"c:\Users\Chris\_Desktop_Vault\Phoenix\input_artifacts\Component Specification_ Coherent Synthesis Engin.md"
 )
-ARCHIVE_FILE = r"c:\Users\Chris\Synarche_Workspace\_governance\99_Archives\Component Specification_ Coherent Synthesis Engin.md"
+OUTPUT_FILE = r"c:\Users\Chris\Synarche_Workspace\_governance\20_Architecture\ARCH.Spec.CSE.md"
+ARCHIVE_FILE = (
+    r"c:\Users\Chris\Synarche_Workspace\_governance\99_Archives\Component Specification_ Coherent Synthesis Engin.md"
+)
 
 GOVERNANCE_HEADER = """# ARCH.Spec.CSE (Coherent Synthesis Engine Specification)
 
@@ -79,9 +81,7 @@ def clean_and_process() -> None:
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(GOVERNANCE_HEADER)
-        f.write(
-            content.strip()
-        )  # Keep content as is, just strip leading/trailing whitespace
+        f.write(content.strip())  # Keep content as is, just strip leading/trailing whitespace
         f.write("\n\n")
         f.write(GOVERNANCE_FOOTER)
 

@@ -55,7 +55,7 @@ class RefactorEngine:
 
         for i, violation in enumerate(self.violations):
             print(
-                f"--> Processing Violation {i+1}/{len(self.violations)}: {violation['file']}"
+                f"--> Processing Violation {i + 1}/{len(self.violations)}: {violation['file']}"
             )
             # Placeholder for the actual file move/refactor logic
             # Axion's role is to apply the correction with precision.

@@ -73,7 +73,7 @@ def find_debt_files(directory):
                 if file_todos > 0 or file_fixmes > 0 or file_shadow > 0:
                     debt_files.append((path, file_todos, file_fixmes, file_shadow))
 
-    debt_files.sort(key=lambda x: (x[3] * 2 + x[1] * 5 + x[2] * 15), reverse=True)
+    debt_files.sort(key=lambda x: x[3] * 2 + x[1] * 5 + x[2] * 15, reverse=True)
 
     print(f"{'File Path':<100} | TODO | FIXME | SHADOW | TDM")
     print("-" * 140)

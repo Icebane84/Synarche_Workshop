@@ -10,7 +10,6 @@ Episode profiles service layer using API.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 from typing import List
 
 from loguru import logger
@@ -25,7 +24,7 @@ class EpisodeProfilesService:
     def __init__(self):
         logger.info("Using API for episode profiles operations")
 
-    def get_all_episode_profiles(self) -> List[EpisodeProfile]:
+    def get_all_episode_profiles(self) -> list[EpisodeProfile]:
         """Get all episode profiles."""
         profiles_data = api_client.get_episode_profiles()
         # Convert API response to EpisodeProfile objects
@@ -49,11 +48,7 @@ class EpisodeProfilesService:
     def get_episode_profile(self, profile_name: str) -> EpisodeProfile:
         """Get a specific episode profile by name."""
         profile_response = api_client.get_episode_profile(profile_name)
-        profile_data = (
-            profile_response
-            if isinstance(profile_response, dict)
-            else profile_response[0]
-        )
+        profile_data = profile_response if isinstance(profile_response, dict) else profile_response[0]
         profile = EpisodeProfile(
             name=profile_data["name"],
             description=profile_data.get("description", ""),
@@ -92,11 +87,7 @@ class EpisodeProfilesService:
             default_briefing=default_briefing,
             num_segments=num_segments,
         )
-        profile_data = (
-            profile_response
-            if isinstance(profile_response, dict)
-            else profile_response[0]
-        )
+        profile_data = profile_response if isinstance(profile_response, dict) else profile_response[0]
         profile = EpisodeProfile(
             name=profile_data["name"],
             description=profile_data.get("description", ""),

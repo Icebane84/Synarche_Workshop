@@ -13,14 +13,14 @@ priority: critical
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `AOP-LEARN-001` | The Sovereign ID. |
-| **Official Name** | `05-akashic-learning.md` | The Filename. |
-| **Version** | **v15.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN.LEARNING` | The Subject. |
-| **State** | `[CANONIZED]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `AOP-LEARN-001`                   | The Sovereign ID. |
+| **Official Name** | `05-akashic-learning.md`          | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN.LEARNING`                   | The Subject.      |
+| **State**         | `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
 
@@ -29,18 +29,24 @@ priority: critical
 Every active Agent onboarding into the Synarche workspace MUST execute the tripartite Akashic learning cycle:
 
 ### 1. Trigger A: Session Resume (Situation Awareness)
+
 Before undertaking any action, the Agent **must** read:
-*   [`_governance/06_Learning/GVRN.Learning.Shard.md`](file:///c:/Users/Chris/Synarche_Workspace/_governance/06_Learning/GVRN.Learning.Shard.md) to recover recent milestones and contextual gems.
-*   [`_governance/06_Learning/GVRN.Learning.Error.md`](file:///c:/Users/Chris/Synarche_Workspace/_governance/06_Learning/GVRN.Learning.Error.md) to review previous failure-prevention constraints.
+
+- [`_governance/06_Learning/GVRN.Learning.Shard.md`](file:///c:/Users/Chris/Synarche_Workspace/_governance/06_Learning/GVRN.Learning.Shard.md) to recover recent milestones and contextual gems.
+- [`_governance/06_Learning/GVRN.Learning.Error.md`](file:///c:/Users/Chris/Synarche_Workspace/_governance/06_Learning/GVRN.Learning.Error.md) to review previous failure-prevention constraints.
 
 ### 2. Trigger B: Post-Tool Failure (Immunity Defense)
+
 If any command fails (exit code ≠ 0):
-*   Immediately stop execution. Do not repeat the failed command blindly.
-*   Log the failed parameters and stack trace into the Evolution/Error log.
-*   Execute root-cause distillation before attempting resolution.
+
+- Immediately stop execution. Do not repeat the failed command blindly.
+- Log the failed parameters and stack trace into the Evolution/Error log.
+- Execute root-cause distillation before attempting resolution.
 
 ### 3. Trigger C: Session End (Syntactic Anchoring)
+
 Prior to concluding its active cycle, the Agent **must**:
+
 1.  Generate a standard **SELT Shadow Log** inside [`_governance/70_Learnings/Shadow_Logs/`](file:///c:/Users/Chris/Synarche_Workspace/_governance/70_Learnings/Shadow_Logs/) capturing the cognitive deconstruction.
 2.  Update the **L4 Learning Shard** with a distilled alchemical Catalyst-Synthesis-Transcendence block.
 3.  Append any discovered user/design preferences as L1 entries in the **Gems Ledger**.

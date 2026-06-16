@@ -10,7 +10,6 @@ Notes service layer using API.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 from typing import List, Optional
 
 from loguru import logger
@@ -25,7 +24,7 @@ class NotesService:
     def __init__(self):
         logger.info("Using API for notes operations")
 
-    def get_all_notes(self, notebook_id: Optional[str] = None) -> List[Note]:
+    def get_all_notes(self, notebook_id: str | None = None) -> list[Note]:
         """Get all notes with optional notebook filtering."""
         notes_data = api_client.get_notes(notebook_id=notebook_id)
         # Convert API response to Note objects
@@ -45,9 +44,7 @@ class NotesService:
     def get_note(self, note_id: str) -> Note:
         """Get a specific note."""
         note_response = api_client.get_note(note_id)
-        note_data = (
-            note_response if isinstance(note_response, dict) else note_response[0]
-        )
+        note_data = note_response if isinstance(note_response, dict) else note_response[0]
         note = Note(
             title=note_data["title"],
             content=note_data["content"],
@@ -61,17 +58,15 @@ class NotesService:
     def create_note(
         self,
         content: str,
-        title: Optional[str] = None,
+        title: str | None = None,
         note_type: str = "human",
-        notebook_id: Optional[str] = None,
+        notebook_id: str | None = None,
     ) -> Note:
         """Create a new note."""
         note_response = api_client.create_note(
             content=content, title=title, note_type=note_type, notebook_id=notebook_id
         )
-        note_data = (
-            note_response if isinstance(note_response, dict) else note_response[0]
-        )
+        note_data = note_response if isinstance(note_response, dict) else note_response[0]
         note = Note(
             title=note_data["title"],
             content=note_data["content"],
@@ -90,9 +85,7 @@ class NotesService:
             "note_type": note.note_type,
         }
         note_response = api_client.update_note(note.id or "", **updates)
-        note_data = (
-            note_response if isinstance(note_response, dict) else note_response[0]
-        )
+        note_data = note_response if isinstance(note_response, dict) else note_response[0]
 
         # Update the note object with the response
         note.title = note_data["title"]

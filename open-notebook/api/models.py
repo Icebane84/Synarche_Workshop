@@ -41,9 +41,7 @@ class SearchRequest(BaseModel):
     limit: int = Field(100, description="Maximum number of results", le=1000)
     search_sources: bool = Field(True, description="Include sources in search")
     search_notes: bool = Field(True, description="Include notes in search")
-    minimum_score: float = Field(
-        0.2, description="Minimum score for vector search", ge=0, le=1
-    )
+    minimum_score: float = Field(0.2, description="Minimum score for vector search", ge=0, le=1)
 
 
 class SearchResponse(BaseModel):
@@ -67,9 +65,7 @@ class AskResponse(BaseModel):
 # Models API models
 class ModelCreate(BaseModel):
     name: str = Field(..., description="Model name (e.g., gpt-5-mini, claude, gemini)")
-    provider: str = Field(
-        ..., description="Provider name (e.g., openai, anthropic, gemini)"
-    )
+    provider: str = Field(..., description="Provider name (e.g., openai, anthropic, gemini)")
     type: str = Field(
         ...,
         description="Model type (language, embedding, text_to_speech, speech_to_text)",
@@ -98,34 +94,24 @@ class DefaultModelsResponse(BaseModel):
 class ProviderAvailabilityResponse(BaseModel):
     available: list[str] = Field(..., description="List of available providers")
     unavailable: list[str] = Field(..., description="List of unavailable providers")
-    supported_types: dict[str, list[str]] = Field(
-        ..., description="Provider to supported model types mapping"
-    )
+    supported_types: dict[str, list[str]] = Field(..., description="Provider to supported model types mapping")
 
 
 # Transformations API models
 class TransformationCreate(BaseModel):
     name: str = Field(..., description="Transformation name")
     title: str = Field(..., description="Display title for the transformation")
-    description: str = Field(
-        ..., description="Description of what this transformation does"
-    )
+    description: str = Field(..., description="Description of what this transformation does")
     prompt: str = Field(..., description="The transformation prompt")
-    apply_default: bool = Field(
-        False, description="Whether to apply this transformation by default"
-    )
+    apply_default: bool = Field(False, description="Whether to apply this transformation by default")
 
 
 class TransformationUpdate(BaseModel):
     name: str | None = Field(None, description="Transformation name")
     title: str | None = Field(None, description="Display title for the transformation")
-    description: str | None = Field(
-        None, description="Description of what this transformation does"
-    )
+    description: str | None = Field(None, description="Description of what this transformation does")
     prompt: str | None = Field(None, description="The transformation prompt")
-    apply_default: bool | None = Field(
-        None, description="Whether to apply this transformation by default"
-    )
+    apply_default: bool | None = Field(None, description="Whether to apply this transformation by default")
 
 
 class TransformationResponse(BaseModel):
@@ -142,9 +128,7 @@ class TransformationResponse(BaseModel):
 class TransformationExecuteRequest(BaseModel):
     model_config = ConfigDict(protected_namespaces=())
 
-    transformation_id: str = Field(
-        ..., description="ID of the transformation to execute"
-    )
+    transformation_id: str = Field(..., description="ID of the transformation to execute")
     input_text: str = Field(..., description="Text to transform")
     model_id: str = Field(..., description="Model ID to use for the transformation")
 
@@ -159,15 +143,11 @@ class TransformationExecuteResponse(BaseModel):
 
 # Default Prompt API models
 class DefaultPromptResponse(BaseModel):
-    transformation_instructions: str = Field(
-        ..., description="Default transformation instructions"
-    )
+    transformation_instructions: str = Field(..., description="Default transformation instructions")
 
 
 class DefaultPromptUpdate(BaseModel):
-    transformation_instructions: str = Field(
-        ..., description="Default transformation instructions"
-    )
+    transformation_instructions: str = Field(..., description="Default transformation instructions")
 
 
 # Notes API models
@@ -197,9 +177,7 @@ class NoteResponse(BaseModel):
 class EmbedRequest(BaseModel):
     item_id: str = Field(..., description="ID of the item to embed")
     item_type: str = Field(..., description="Type of item (source, note)")
-    async_processing: bool = Field(
-        False, description="Process asynchronously in background"
-    )
+    async_processing: bool = Field(False, description="Process asynchronously in background")
 
 
 class EmbedResponse(BaseModel):
@@ -275,30 +253,20 @@ class AssetModel(BaseModel):
 
 class SourceCreate(BaseModel):
     # Backward compatibility: support old single notebook_id
-    notebook_id: str | None = Field(
-        None, description="Notebook ID to add the source to (deprecated, use notebooks)"
-    )
+    notebook_id: str | None = Field(None, description="Notebook ID to add the source to (deprecated, use notebooks)")
     # New multi-notebook support
-    notebooks: list[str] | None = Field(
-        None, description="List of notebook IDs to add the source to"
-    )
+    notebooks: list[str] | None = Field(None, description="List of notebook IDs to add the source to")
     # Required fields
     type: str = Field(..., description="Source type: link, upload, or text")
     url: str | None = Field(None, description="URL for link type")
     file_path: str | None = Field(None, description="File path for upload type")
     content: str | None = Field(None, description="Text content for text type")
     title: str | None = Field(None, description="Source title")
-    transformations: list[str] | None = Field(
-        default_factory=list, description="Transformation IDs to apply"
-    )
+    transformations: list[str] | None = Field(default_factory=list, description="Transformation IDs to apply")
     embed: bool = Field(False, description="Whether to embed content for vector search")
-    delete_source: bool = Field(
-        False, description="Whether to delete uploaded file after processing"
-    )
+    delete_source: bool = Field(False, description="Whether to delete uploaded file after processing")
     # New async processing support
-    async_processing: bool = Field(
-        False, description="Whether to process source asynchronously"
-    )
+    async_processing: bool = Field(False, description="Whether to process source asynchronously")
 
     @model_validator(mode="after")
     def validate_notebook_fields(self):
@@ -363,19 +331,13 @@ class SourceListResponse(BaseModel):
 
 # Context API models
 class ContextConfig(BaseModel):
-    sources: dict[str, str] = Field(
-        default_factory=dict, description="Source inclusion config {source_id: level}"
-    )
-    notes: dict[str, str] = Field(
-        default_factory=dict, description="Note inclusion config {note_id: level}"
-    )
+    sources: dict[str, str] = Field(default_factory=dict, description="Source inclusion config {source_id: level}")
+    notes: dict[str, str] = Field(default_factory=dict, description="Note inclusion config {note_id: level}")
 
 
 class ContextRequest(BaseModel):
     notebook_id: str = Field(..., description="Notebook ID to get context for")
-    context_config: ContextConfig | None = Field(
-        None, description="Context configuration"
-    )
+    context_config: ContextConfig | None = Field(None, description="Context configuration")
 
 
 class ContextResponse(BaseModel):
@@ -403,18 +365,14 @@ class CreateSourceInsightRequest(BaseModel):
     model_config = ConfigDict(protected_namespaces=())
 
     transformation_id: str = Field(..., description="ID of transformation to apply")
-    model_id: str | None = Field(
-        None, description="Model ID (uses default if not provided)"
-    )
+    model_id: str | None = Field(None, description="Model ID (uses default if not provided)")
 
 
 # Source status response
 class SourceStatusResponse(BaseModel):
     status: str | None = Field(None, description="Processing status")
     message: str = Field(..., description="Descriptive message about the status")
-    processing_info: dict[str, Any] | None = Field(
-        None, description="Detailed processing information"
-    )
+    processing_info: dict[str, Any] | None = Field(None, description="Detailed processing information")
     command_id: str | None = Field(None, description="Command ID if available")
 
 
@@ -429,18 +387,12 @@ class NotebookDeletePreview(BaseModel):
     notebook_id: str = Field(..., description="ID of the notebook")
     notebook_name: str = Field(..., description="Name of the notebook")
     note_count: int = Field(..., description="Number of notes that will be deleted")
-    exclusive_source_count: int = Field(
-        ..., description="Number of sources only in this notebook"
-    )
-    shared_source_count: int = Field(
-        ..., description="Number of sources shared with other notebooks"
-    )
+    exclusive_source_count: int = Field(..., description="Number of sources only in this notebook")
+    shared_source_count: int = Field(..., description="Number of sources shared with other notebooks")
 
 
 class NotebookDeleteResponse(BaseModel):
     message: str = Field(..., description="Success message")
     deleted_notes: int = Field(..., description="Number of notes deleted")
     deleted_sources: int = Field(..., description="Number of exclusive sources deleted")
-    unlinked_sources: int = Field(
-        ..., description="Number of sources unlinked from notebook"
-    )
+    unlinked_sources: int = Field(..., description="Number of sources unlinked from notebook")

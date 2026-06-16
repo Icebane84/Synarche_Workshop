@@ -28,9 +28,7 @@ class EpisodeProfile(ObjectModel):
     speaker_config: str = Field(..., description="Reference to speaker profile name")
     outline_provider: str = Field(..., description="AI provider for outline generation")
     outline_model: str = Field(..., description="AI model for outline generation")
-    transcript_provider: str = Field(
-        ..., description="AI provider for transcript generation"
-    )
+    transcript_provider: str = Field(..., description="AI provider for transcript generation")
     transcript_model: str = Field(..., description="AI model for transcript generation")
     default_briefing: str = Field(..., description="Default briefing template")
     num_segments: int = Field(default=5, description="Number of podcast segments")
@@ -45,9 +43,7 @@ class EpisodeProfile(ObjectModel):
     @classmethod
     async def get_by_name(cls, name: str) -> Optional["EpisodeProfile"]:
         """Get episode profile by name"""
-        result = await repo_query(
-            "SELECT * FROM episode_profile WHERE name = $name", {"name": name}
-        )
+        result = await repo_query("SELECT * FROM episode_profile WHERE name = $name", {"name": name})
         if result:
             return cls(**result[0])
         return None
@@ -63,13 +59,9 @@ class SpeakerProfile(ObjectModel):
 
     name: str = Field(..., description="Unique profile name")
     description: str | None = Field(None, description="Profile description")
-    tts_provider: str = Field(
-        ..., description="TTS provider (openai, elevenlabs, etc.)"
-    )
+    tts_provider: str = Field(..., description="TTS provider (openai, elevenlabs, etc.)")
     tts_model: str = Field(..., description="TTS model name")
-    speakers: list[dict[str, Any]] = Field(
-        ..., description="Array of speaker configurations"
-    )
+    speakers: list[dict[str, Any]] = Field(..., description="Array of speaker configurations")
 
     @field_validator("speakers")
     @classmethod
@@ -87,9 +79,7 @@ class SpeakerProfile(ObjectModel):
     @classmethod
     async def get_by_name(cls, name: str) -> Optional["SpeakerProfile"]:
         """Get speaker profile by name"""
-        result = await repo_query(
-            "SELECT * FROM speaker_profile WHERE name = $name", {"name": name}
-        )
+        result = await repo_query("SELECT * FROM speaker_profile WHERE name = $name", {"name": name})
         if result:
             return cls(**result[0])
         return None
@@ -101,26 +91,14 @@ class PodcastEpisode(ObjectModel):
     table_name: ClassVar[str] = "episode"
 
     name: str = Field(..., description="Episode name")
-    episode_profile: dict[str, Any] = Field(
-        ..., description="Episode profile used (stored as object)"
-    )
-    speaker_profile: dict[str, Any] = Field(
-        ..., description="Speaker profile used (stored as object)"
-    )
+    episode_profile: dict[str, Any] = Field(..., description="Episode profile used (stored as object)")
+    speaker_profile: dict[str, Any] = Field(..., description="Speaker profile used (stored as object)")
     briefing: str = Field(..., description="Full briefing used for generation")
     content: str = Field(..., description="Source content")
-    audio_file: str | None = Field(
-        default=None, description="Path to generated audio file"
-    )
-    transcript: dict[str, Any] | None = Field(
-        default_factory=dict, description="Generated transcript"
-    )
-    outline: dict[str, Any] | None = Field(
-        default_factory=dict, description="Generated outline"
-    )
-    command: str | RecordID | None = Field(
-        default=None, description="Link to surreal-commands job"
-    )
+    audio_file: str | None = Field(default=None, description="Path to generated audio file")
+    transcript: dict[str, Any] | None = Field(default_factory=dict, description="Generated transcript")
+    outline: dict[str, Any] | None = Field(default_factory=dict, description="Generated outline")
+    command: str | RecordID | None = Field(default=None, description="Link to surreal-commands job")
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
 

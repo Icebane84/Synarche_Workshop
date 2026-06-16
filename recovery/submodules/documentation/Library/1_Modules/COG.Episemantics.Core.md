@@ -22,30 +22,30 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `COG.Episemantics.Core` |
-| **2. Official Name** | `COG.Episemantics.Core.md` |
-| **3. Version** | **v13.0 (Sovereign Fusion)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `COG` |
-| **6. Evolution** | **Sovereign Fusion** |
-| **7. Celestial Class** | `[STAR]` (The Wisdom Layer) |
-| **8. Tier** | **Strategic** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Context Engine** |
-| **11. Catalyst** | **Refactor Batch 001** |
-| **12. Relations** | `ANNOTATES: All_Data`, `FEEDS: SYNG.Engine.Core` |
+| Field                  | Value                                            |
+| :--------------------- | :----------------------------------------------- |
+| **1. Artifact ID**     | `COG.Episemantics.Core`                          |
+| **2. Official Name**   | `COG.Episemantics.Core.md`                       |
+| **3. Version**         | **v13.0 (Sovereign Fusion)**                     |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**                    |
+| **5. Domain**          | `COG`                                            |
+| **6. Evolution**       | **Sovereign Fusion**                             |
+| **7. Celestial Class** | `[STAR]` (The Wisdom Layer)                      |
+| **8. Tier**            | **Strategic**                                    |
+| **9. State**           | `[ACTIVE]`                                       |
+| **10. Ethos**          | **The Context Engine**                           |
+| **11. Catalyst**       | **Refactor Batch 001**                           |
+| **12. Relations**      | `ANNOTATES: All_Data`, `FEEDS: SYNG.Engine.Core` |
 
 ---
 
 ### **II. Architectural Governance Primitives (AGP)**
 
-| Element | Value | Purpose |
-| :---- | :---- | :---- |
-| **State Vector** | `[0.95]` | Context is dynamic, but the framework must be stable. |
-| **Risk Governance** | **Medium** | Loss of context leads to data flattening. |
-| **Mitigation** | **Heritable Markers** | Context is inherited by child artifacts. |
+| Element             | Value                 | Purpose                                               |
+| :------------------ | :-------------------- | :---------------------------------------------------- |
+| **State Vector**    | `[0.95]`              | Context is dynamic, but the framework must be stable. |
+| **Risk Governance** | **Medium**            | Loss of context leads to data flattening.             |
+| **Mitigation**      | **Heritable Markers** | Context is inherited by child artifacts.              |
 
 ---
 
@@ -80,7 +80,7 @@ The **ESF** transforms static data into **"Living Information"** using **Markers
 
 ### **Honest Thoughts**
 
-Data without context is just noise. The `COG.Episemantics.Core` ensures that the Phoenix system doesn't just "know" facts, but understands *why* they matter and *where* they came from. It is the antidote to entropy.
+Data without context is just noise. The `COG.Episemantics.Core` ensures that the Phoenix system doesn't just "know" facts, but understands _why_ they matter and _where_ they came from. It is the antidote to entropy.
 
 > [!NOTE]
 > **[ARTIFACT END]**

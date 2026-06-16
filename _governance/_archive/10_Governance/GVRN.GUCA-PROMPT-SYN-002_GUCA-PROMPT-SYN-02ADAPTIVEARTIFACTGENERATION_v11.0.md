@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0` | The Sovereign ID. |
+| Key               | Value                                                                            | Description       |
+| :---------------- | :------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                                                                | The Standard.     |
+| **Domain**        | `GVRN`                                                                           | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                                       | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                                    | The Network.      |
 
 ---
 
@@ -82,7 +77,7 @@ recommend one or more appropriate artifacts from the list below. For each recomm
 justification**.
 
 - **Potential Artifacts:**
-    - [\*\*Universal Module Blueprint
+  - [\*\*Universal Module Blueprint
 
 (UMB)**](https://drive.google.com/open?id=10d9tPuCiCbPTR1d8MwKlMsnzCIKPSbvNvVJPV9R0Q4I) **Outline:\*\* For designing a
 new feature, class, or component.
@@ -141,11 +136,11 @@ maintainability.
 1. **Implementation:** A global function named logError() will be created.
 2. **Input:** This function will accept parameters for source_function, error_message, and an optional payload.
 3. **Formatting:** The function will automatically construct a JSON object containing:
-    - timestamp: ISO 8601 format.
-    - log_level: Hardcoded to "ERROR".
-    - source_function: The name of the function where the error occurred.
-    - error_message: The descriptive error message.
-    - payload: Any relevant data associated with the error.
+   - timestamp: ISO 8601 format.
+   - log_level: Hardcoded to "ERROR".
+   - source_function: The name of the function where the error occurred.
+   - error_message: The descriptive error message.
+   - payload: Any relevant data associated with the error.
 4. **Execution:** All try/catch blocks and error handlers must exclusively use this logError() function. Manual
 
 console.log or other logging methods for errors are deprecated.

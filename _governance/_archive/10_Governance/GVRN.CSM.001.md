@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CSM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.CSM.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CSM.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.CSM.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -41,8 +36,8 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field                  | Value                                                    |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                       |
+| Field | Value |
+| **13. Integrity Hash** | `[AUTO-GENERATED]` |
 
 ---
 
@@ -80,7 +75,7 @@ The **Complete Stack Mandate** is the foundational law requiring that every new 
 - **Closed-Loop Refinement:** SELTs must feed data back to UMBs.
 - **Spectral Metadata:** Artifacts tagged with Alchemical Prism profiles.
 
-> "The documentation *is* the system."
+> "The documentation _is_ the system."
 
 ---
 
@@ -105,8 +100,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

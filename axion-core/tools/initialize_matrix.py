@@ -144,9 +144,9 @@ def check_tools(tools_dir: str):
                 active = False
 
         if active:
-            print("  ✅ STATUS: ONLINE"E")
+            print("  ✅ STATUS: ONLINE")
         else:
-            print("  ⚠️ STATUS: DEGRADED (Missing Tools)"ls)")
+            print("  ⚠️ STATUS: DEGRADED (Missing Tools)")
         print("")
 
     print("------------------------------------------------")

@@ -34,9 +34,7 @@ async def embed_content(embed_request: EmbedRequest):
 
         # Validate item type
         if item_type not in ["source", "note"]:
-            raise HTTPException(
-                status_code=400, detail="Item type must be either 'source' or 'note'"
-            )
+            raise HTTPException(status_code=400, detail="Item type must be either 'source' or 'note'")
 
         # Branch based on processing mode
         if embed_request.async_processing:
@@ -73,9 +71,7 @@ async def embed_content(embed_request: EmbedRequest):
 
             except Exception as e:
                 logger.error(f"Failed to submit async embedding command: {e}")
-                raise HTTPException(
-                    status_code=500, detail=f"Failed to queue embedding: {e!s}"
-                )
+                raise HTTPException(status_code=500, detail=f"Failed to queue embedding: {e!s}")
 
         else:
             # DOMAIN MODEL PATH: Submit job via domain model convenience methods
@@ -114,7 +110,5 @@ async def embed_content(embed_request: EmbedRequest):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(
-            f"Error embedding {embed_request.item_type} {embed_request.item_id}: {e!s}"
-        )
+        logger.error(f"Error embedding {embed_request.item_type} {embed_request.item_id}: {e!s}")
         raise HTTPException(status_code=500, detail=f"Error embedding content: {e!s}")

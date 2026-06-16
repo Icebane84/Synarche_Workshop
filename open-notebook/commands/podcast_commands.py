@@ -65,25 +65,17 @@ async def generate_podcast_command(
     start_time = time.time()
 
     try:
-        logger.info(
-            f"Starting podcast generation for episode: {input_data.episode_name}"
-        )
+        logger.info(f"Starting podcast generation for episode: {input_data.episode_name}")
         logger.info(f"Using episode profile: {input_data.episode_profile}")
 
         # 1. Load Episode and Speaker profiles from SurrealDB
         episode_profile = await EpisodeProfile.get_by_name(input_data.episode_profile)
         if not episode_profile:
-            raise ValueError(
-                f"Episode profile '{input_data.episode_profile}' not found"
-            )
+            raise ValueError(f"Episode profile '{input_data.episode_profile}' not found")
 
-        speaker_profile = await SpeakerProfile.get_by_name(
-            episode_profile.speaker_config
-        )
+        speaker_profile = await SpeakerProfile.get_by_name(episode_profile.speaker_config)
         if not speaker_profile:
-            raise ValueError(
-                f"Speaker profile '{episode_profile.speaker_config}' not found"
-            )
+            raise ValueError(f"Speaker profile '{episode_profile.speaker_config}' not found")
 
         logger.info(f"Loaded episode profile: {episode_profile.name}")
         logger.info(f"Loaded speaker profile: {speaker_profile.name}")
@@ -93,12 +85,8 @@ async def generate_podcast_command(
         speaker_profiles = await repo_query("SELECT * FROM speaker_profile")
 
         # Transform the surrealdb array into a dictionary for podcast-creator
-        episode_profiles_dict = {
-            profile["name"]: profile for profile in episode_profiles
-        }
-        speaker_profiles_dict = {
-            profile["name"]: profile for profile in speaker_profiles
-        }
+        episode_profiles_dict = {profile["name"]: profile for profile in episode_profiles}
+        speaker_profiles_dict = {profile["name"]: profile for profile in speaker_profiles}
 
         # 4. Generate briefing
         briefing = episode_profile.default_briefing
@@ -111,9 +99,7 @@ async def generate_podcast_command(
             episode_profile=full_model_dump(episode_profile.model_dump()),
             speaker_profile=full_model_dump(speaker_profile.model_dump()),
             command=(
-                ensure_record_id(input_data.execution_context.command_id)
-                if input_data.execution_context
-                else None
+                ensure_record_id(input_data.execution_context.command_id) if input_data.execution_context else None
             ),
             briefing=briefing,
             content=input_data.content,
@@ -148,34 +134,20 @@ async def generate_podcast_command(
             episode_profile=episode_profile.name,
         )
 
-        episode.audio_file = (
-            str(result.get("final_output_file_path")) if result else None
-        )
-        episode.transcript = {
-            "transcript": full_model_dump(result["transcript"]) if result else None
-        }
+        episode.audio_file = str(result.get("final_output_file_path")) if result else None
+        episode.transcript = {"transcript": full_model_dump(result["transcript"]) if result else None}
         episode.outline = full_model_dump(result["outline"]) if result else None
         await episode.save()
 
         processing_time = time.time() - start_time
-        logger.info(
-            f"Successfully generated podcast episode: {episode.id} in {processing_time:.2f}s"
-        )
+        logger.info(f"Successfully generated podcast episode: {episode.id} in {processing_time:.2f}s")
 
         return PodcastGenerationOutput(
             success=True,
             episode_id=str(episode.id),
-            audio_file_path=(
-                str(result.get("final_output_file_path")) if result else None
-            ),
-            transcript=(
-                {"transcript": full_model_dump(result["transcript"])}
-                if result.get("transcript")
-                else None
-            ),
-            outline=(
-                full_model_dump(result["outline"]) if result.get("outline") else None
-            ),
+            audio_file_path=(str(result.get("final_output_file_path")) if result else None),
+            transcript=({"transcript": full_model_dump(result["transcript"])} if result.get("transcript") else None),
+            outline=(full_model_dump(result["outline"]) if result.get("outline") else None),
             processing_time=processing_time,
         )
 
@@ -195,6 +167,4 @@ async def generate_podcast_command(
                 "Try using gpt-4o, gpt-4o-mini, or gpt-4-turbo instead in your episode profile."
             )
 
-        return PodcastGenerationOutput(
-            success=False, processing_time=processing_time, error_message=error_msg
-        )
+        return PodcastGenerationOutput(success=False, processing_time=processing_time, error_message=error_msg)

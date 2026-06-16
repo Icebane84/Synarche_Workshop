@@ -11,7 +11,6 @@ This module provides a client interface to interact with the Open Notebook API.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 import os
 from typing import Any, Dict, List, Optional, Union
 
@@ -32,20 +31,14 @@ class APIClient:
             timeout_value = float(timeout_str)
             # Validate timeout is within reasonable bounds (30s - 3600s / 1 hour)
             if timeout_value < 30:
-                logger.warning(
-                    f"API_CLIENT_TIMEOUT={timeout_value}s is too low, using minimum of 30s"
-                )
+                logger.warning(f"API_CLIENT_TIMEOUT={timeout_value}s is too low, using minimum of 30s")
                 timeout_value = 30.0
             elif timeout_value > 3600:
-                logger.warning(
-                    f"API_CLIENT_TIMEOUT={timeout_value}s is too high, using maximum of 3600s"
-                )
+                logger.warning(f"API_CLIENT_TIMEOUT={timeout_value}s is too high, using maximum of 3600s")
                 timeout_value = 3600.0
             self.timeout = timeout_value
         except ValueError:
-            logger.error(
-                f"Invalid API_CLIENT_TIMEOUT value '{timeout_str}', using default 300s"
-            )
+            logger.error(f"Invalid API_CLIENT_TIMEOUT value '{timeout_str}', using default 300s")
             self.timeout = 300.0
 
         # Add authentication header if password is set
@@ -75,20 +68,14 @@ class APIClient:
             logger.error(f"Request error for {method} {url}: {e!s}")
             raise ConnectionError(f"Failed to connect to API: {e!s}")
         except httpx.HTTPStatusError as e:
-            logger.error(
-                f"HTTP error {e.response.status_code} for {method} {url}: {e.response.text}"
-            )
-            raise RuntimeError(
-                f"API request failed: {e.response.status_code} - {e.response.text}"
-            )
+            logger.error(f"HTTP error {e.response.status_code} for {method} {url}: {e.response.text}")
+            raise RuntimeError(f"API request failed: {e.response.status_code} - {e.response.text}")
         except Exception as e:
             logger.error(f"Unexpected error for {method} {url}: {e!s}")
             raise
 
     # Notebooks API methods
-    def get_notebooks(
-        self, archived: bool | None = None, order_by: str = "updated desc"
-    ) -> list[dict[Any, Any]]:
+    def get_notebooks(self, archived: bool | None = None, order_by: str = "updated desc") -> list[dict[Any, Any]]:
         """Get all notebooks."""
         params: dict[str, Any] = {"order_by": order_by}
         if archived is not None:
@@ -97,9 +84,7 @@ class APIClient:
         result = self._make_request("GET", "/api/notebooks", params=params)
         return result if isinstance(result, list) else [result]
 
-    def create_notebook(
-        self, name: str, description: str = ""
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def create_notebook(self, name: str, description: str = "") -> dict[Any, Any] | list[dict[Any, Any]]:
         """Create a new notebook."""
         data = {"name": name, "description": description}
         return self._make_request("POST", "/api/notebooks", json=data)
@@ -108,15 +93,11 @@ class APIClient:
         """Get a specific notebook."""
         return self._make_request("GET", f"/api/notebooks/{notebook_id}")
 
-    def update_notebook(
-        self, notebook_id: str, **updates
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def update_notebook(self, notebook_id: str, **updates) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Update a notebook."""
         return self._make_request("PUT", f"/api/notebooks/{notebook_id}", json=updates)
 
-    def delete_notebook(
-        self, notebook_id: str
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def delete_notebook(self, notebook_id: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Delete a notebook."""
         return self._make_request("DELETE", f"/api/notebooks/{notebook_id}")
 
@@ -156,9 +137,7 @@ class APIClient:
             "final_answer_model": final_answer_model,
         }
         # Use configured timeout for long-running ask operations
-        return self._make_request(
-            "POST", "/api/search/ask/simple", json=data, timeout=self.timeout
-        )
+        return self._make_request("POST", "/api/search/ask/simple", json=data, timeout=self.timeout)
 
     # Models API methods
     def get_models(self, model_type: str | None = None) -> list[dict[Any, Any]]:
@@ -169,9 +148,7 @@ class APIClient:
         result = self._make_request("GET", "/api/models", params=params)
         return result if isinstance(result, list) else [result]
 
-    def create_model(
-        self, name: str, provider: str, model_type: str
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def create_model(self, name: str, provider: str, model_type: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Create a new model."""
         data = {
             "name": name,
@@ -188,9 +165,7 @@ class APIClient:
         """Get default model assignments."""
         return self._make_request("GET", "/api/models/defaults")
 
-    def update_default_models(
-        self, **defaults
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def update_default_models(self, **defaults) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Update default model assignments."""
         return self._make_request("PUT", "/api/models/defaults", json=defaults)
 
@@ -218,23 +193,15 @@ class APIClient:
         }
         return self._make_request("POST", "/api/transformations", json=data)
 
-    def get_transformation(
-        self, transformation_id: str
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def get_transformation(self, transformation_id: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Get a specific transformation."""
         return self._make_request("GET", f"/api/transformations/{transformation_id}")
 
-    def update_transformation(
-        self, transformation_id: str, **updates
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def update_transformation(self, transformation_id: str, **updates) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Update a transformation."""
-        return self._make_request(
-            "PUT", f"/api/transformations/{transformation_id}", json=updates
-        )
+        return self._make_request("PUT", f"/api/transformations/{transformation_id}", json=updates)
 
-    def delete_transformation(
-        self, transformation_id: str
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def delete_transformation(self, transformation_id: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Delete a transformation."""
         return self._make_request("DELETE", f"/api/transformations/{transformation_id}")
 
@@ -248,9 +215,7 @@ class APIClient:
             "model_id": model_id,
         }
         # Use configured timeout for transformation operations
-        return self._make_request(
-            "POST", "/api/transformations/execute", json=data, timeout=self.timeout
-        )
+        return self._make_request("POST", "/api/transformations/execute", json=data, timeout=self.timeout)
 
     # Notes API methods
     def get_notes(self, notebook_id: str | None = None) -> list[dict[Any, Any]]:
@@ -283,9 +248,7 @@ class APIClient:
         """Get a specific note."""
         return self._make_request("GET", f"/api/notes/{note_id}")
 
-    def update_note(
-        self, note_id: str, **updates
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def update_note(self, note_id: str, **updates) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Update a note."""
         return self._make_request("PUT", f"/api/notes/{note_id}", json=updates)
 
@@ -326,13 +289,9 @@ class APIClient:
         }
         # Use double the configured timeout for bulk rebuild operations (or configured value if already high)
         rebuild_timeout = max(self.timeout, min(self.timeout * 2, 3600.0))
-        return self._make_request(
-            "POST", "/api/embeddings/rebuild", json=data, timeout=rebuild_timeout
-        )
+        return self._make_request("POST", "/api/embeddings/rebuild", json=data, timeout=rebuild_timeout)
 
-    def get_rebuild_status(
-        self, command_id: str
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def get_rebuild_status(self, command_id: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Get status of a rebuild operation."""
         return self._make_request("GET", f"/api/embeddings/rebuild/{command_id}/status")
 
@@ -353,9 +312,7 @@ class APIClient:
         data: dict[str, Any] = {"notebook_id": notebook_id}
         if context_config:
             data["context_config"] = context_config
-        result = self._make_request(
-            "POST", f"/api/notebooks/{notebook_id}/context", json=data
-        )
+        result = self._make_request("POST", f"/api/notebooks/{notebook_id}/context", json=data)
         return result if isinstance(result, dict) else {}
 
     # Sources API methods
@@ -409,23 +366,17 @@ class APIClient:
             data["transformations"] = transformations
 
         # Use configured timeout for source creation (especially PDF processing with OCR)
-        return self._make_request(
-            "POST", "/api/sources/json", json=data, timeout=self.timeout
-        )
+        return self._make_request("POST", "/api/sources/json", json=data, timeout=self.timeout)
 
     def get_source(self, source_id: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Get a specific source."""
         return self._make_request("GET", f"/api/sources/{source_id}")
 
-    def get_source_status(
-        self, source_id: str
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def get_source_status(self, source_id: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Get processing status for a source."""
         return self._make_request("GET", f"/api/sources/{source_id}/status")
 
-    def update_source(
-        self, source_id: str, **updates
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def update_source(self, source_id: str, **updates) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Update a source."""
         return self._make_request("PUT", f"/api/sources/{source_id}", json=updates)
 
@@ -454,9 +405,7 @@ class APIClient:
         data = {}
         if notebook_id:
             data["notebook_id"] = notebook_id
-        return self._make_request(
-            "POST", f"/api/insights/{insight_id}/save-as-note", json=data
-        )
+        return self._make_request("POST", f"/api/insights/{insight_id}/save-as-note", json=data)
 
     def create_source_insight(
         self, source_id: str, transformation_id: str, model_id: str | None = None
@@ -465,9 +414,7 @@ class APIClient:
         data = {"transformation_id": transformation_id}
         if model_id:
             data["model_id"] = model_id
-        return self._make_request(
-            "POST", f"/api/sources/{source_id}/insights", json=data
-        )
+        return self._make_request("POST", f"/api/sources/{source_id}/insights", json=data)
 
     # Episode Profiles API methods
     def get_episode_profiles(self) -> list[dict[Any, Any]]:
@@ -475,9 +422,7 @@ class APIClient:
         result = self._make_request("GET", "/api/episode-profiles")
         return result if isinstance(result, list) else [result]
 
-    def get_episode_profile(
-        self, profile_name: str
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def get_episode_profile(self, profile_name: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Get a specific episode profile by name."""
         return self._make_request("GET", f"/api/episode-profiles/{profile_name}")
 
@@ -507,17 +452,11 @@ class APIClient:
         }
         return self._make_request("POST", "/api/episode-profiles", json=data)
 
-    def update_episode_profile(
-        self, profile_id: str, **updates
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def update_episode_profile(self, profile_id: str, **updates) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Update an episode profile."""
-        return self._make_request(
-            "PUT", f"/api/episode-profiles/{profile_id}", json=updates
-        )
+        return self._make_request("PUT", f"/api/episode-profiles/{profile_id}", json=updates)
 
-    def delete_episode_profile(
-        self, profile_id: str
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    def delete_episode_profile(self, profile_id: str) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Delete an episode profile."""
         return self._make_request("DELETE", f"/api/episode-profiles/{profile_id}")
 

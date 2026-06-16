@@ -84,9 +84,7 @@ class SynarcheCLI(cmd.Cmd):
 
     """
 
-    intro: str = (
-        "Welcome to the Synarche Command Library CLI. Type help or ? to list commands.\n"
-    )
+    intro: str = "Welcome to the Synarche Command Library CLI. Type help or ? to list commands.\n"
     prompt: str = "(Synarche) "
 
     def __init__(self) -> None:

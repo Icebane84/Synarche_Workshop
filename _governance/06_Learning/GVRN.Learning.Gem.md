@@ -62,6 +62,12 @@ High-impact facts and preferences categorized for rapid alignment.
 - **Pattern**: Standardize all Python codebase files to explicitly enforce `encoding="utf-8"` during operations, and execute script functions directly using Python import boundaries rather than relying on raw terminal script parameters.
 - **Synergy**: Initializing remote database tables through MCP integrations prior to script execution bridges local alchemical logic to remote environments with zero friction.
 
+### [2026-06-12] Dynamic Modal Architecture
+
+- **Insight**: High-fidelity game overlays require robust, platform-agnostic responsiveness. If templates are dynamically hidden, nesting overlays inside parent wrappers creates structural blocks.
+- **Pattern**: Modals and panels must be flat siblings under the root element (e.g., `body`) rather than nested, with vertical scrolling (`overflow-y-auto`) and viewport clamping (`max-w-[95vw]`) configured on the modal container to accommodate all laptop and mobile displays.
+- **Synergy**: Close buttons (`✕`) must remain sticky/accessible inside the scroll boundaries to ensure players can always exit the UI and return execution context to the engine loop.
+
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v16.4 [SOVEREIGN] STATUS: CANONIZED TS: 2026-05-26 HASH: LRN-GEM-OMEGA-XL-SYNC`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v16.5 [SOVEREIGN] STATUS: CANONIZED TS: 2026-06-12 HASH: LRN-GEM-OMEGA-XL-SYNC`

@@ -27,9 +27,7 @@ class PatternChainState(TypedDict):
 
 async def call_model(state: dict, config: RunnableConfig) -> dict:
     content = state["input_text"]
-    system_prompt = Prompter(
-        template_text=state["prompt"], parser=state.get("parser")
-    ).render(data=state)
+    system_prompt = Prompter(template_text=state["prompt"], parser=state.get("parser")).render(data=state)
     payload = [SystemMessage(content=system_prompt), HumanMessage(content=content)]
     chain = await provision_langchain_model(
         str(payload),

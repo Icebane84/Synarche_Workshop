@@ -2,14 +2,14 @@
 id: NOVA.Patt.CleanCode.AOP
 name: Clean Code Operational Playbook (AOP)
 type: PLAYBOOK
-tags: ['#NOVA/Patt/CleanCode', '#AOP', '#PROCEDURE']
-links: ['[[NOVA.Patt.CleanCode.Index]]', '[[NOVA.Patt.CleanCode.Skill]]']
+tags: ["#NOVA/Patt/CleanCode", "#AOP", "#PROCEDURE"]
+links: ["[[NOVA.Patt.CleanCode.Index]]", "[[NOVA.Patt.CleanCode.Skill]]"]
 relations:
-    - type: IMPLEMENTS
-      target: '[[NOVA.Patt.CleanCode.Skill]]'
-    - type: DESCRIBED_BY
-      target: '[[NOVA.Patt.CleanCode.Index]]'
-description: 'Step-by-step operational procedures for the Clean Code Pattern Shard.'
+  - type: IMPLEMENTS
+    target: "[[NOVA.Patt.CleanCode.Skill]]"
+  - type: DESCRIBED_BY
+    target: "[[NOVA.Patt.CleanCode.Index]]"
+description: "Step-by-step operational procedures for the Clean Code Pattern Shard."
 ---
 
 # CLEAN CODE PLAYBOOK | AOP-NOVA.Patt.CleanCode

@@ -64,7 +64,7 @@ The Master Artifact Registry serves as the system's "Phonebook" and "Law of Reco
 | Module ID                 | Title                                                                                                                                                      | Version | Status       |
 | :------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ | :----------- |
 | `AOP-KB-001`              | [Autonomous Knowledge Base Optimization](../2_Protocols/AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md)                                           | `v11.1` | `ACTIVE`     |
-| `AOP-ASCENSION-001`       | [The Phoenix Ascension Protocol](../2_Protocols/AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md)                                      | `v11.0` | `ACTIVE`     |
+| `AOP-ASCENSION-001`       | [The Phoenix Ascension Protocol](../2_Protocols/AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md)                                                    | `v11.0` | `ACTIVE`     |
 | `AOP-PROMPT-001`          | [The Catalyst Protocol](../2_Protocols/AOP-PROMPT-001_TheCatalystProtocol_v11.1.md)                                                                        | `v11.1` | `ACTIVE`     |
 | `AOP-DSA-001`             | [Documentation Suite Architect Protocol](../2_Protocols/AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md)                                          | `v11.1` | `ACTIVE`     |
 | `AOP-ASL-001`             | [Automated Synergy Linking Protocol](../2_Protocols/AOP-ASL-001_AutomatedSynergyLinking_v1.0.md)                                                           | `v1.0`  | `ACTIVE`     |
@@ -73,7 +73,7 @@ The Master Artifact Registry serves as the system's "Phonebook" and "Law of Reco
 | `GUCA-DSA-001`            | [Documentation Suite Architect Architecture](../3_Commands/GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md)                                  | `v11.1` | `ACTIVE`     |
 | `AOP-AAR-001`             | [The After-Action Review Protocol](../2_Protocols/AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md)                                                      | `v11.0` | `ACTIVE`     |
 | `AOP-ARC-001`             | [Archival Supersession Protocol](../2_Protocols/AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md)                                                         | `v11.0` | `ACTIVE`     |
-| `AOP-ATC-001`             | [Archival Transmutation Cycle](../AOP-ATC-001_ArchivalTransmutationCycle_v2.0.md)                                                                         | `v11.1` | `ACTIVE`     |
+| `AOP-ATC-001`             | [Archival Transmutation Cycle](../AOP-ATC-001_ArchivalTransmutationCycle_v2.0.md)                                                                          | `v11.1` | `ACTIVE`     |
 | `AOP-RLM-001`             | [Relational Linking Mandate](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-RLM-001_RelationalLinkingMandate_v5.1.md) | `v5.1`  | `ACTIVE`     |
 | `UMB-CSP-001`             | [Consolidated Synergy Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/UMB-CSP-001.md)                                                  | `v10.0` | `ACTIVE`     |
 | `AOP-AXIOM-WEAVE-001`     | [The Axiom Weaving Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/AOP/AOP-AXIOM-WEAVE-001.md)                                         | `v1.0`  | `ACTIVE`     |
@@ -88,10 +88,10 @@ The Master Artifact Registry serves as the system's "Phonebook" and "Law of Reco
 
 ## V. Experience Logs & Archives
 
-| Module ID      | Title                                                                                                            | Version | Status   |
-| :------------- | :--------------------------------------------------------------------------------------------------------------- | :------ | :------- |
-| `CSL-LINK-001` | [Synergistic Links Expansion Log](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/CSL/CSL-001.md) | `v1.0`  | `ACTIVE` |
-| `CSL-042`      | [The Genesis of Wisdom: Architecting a Self-Optimizing Phoenix Form](../5_Logs/CSL/CSL-042_The%20Genesis%20of%20Wisdom_%20Architecting%20a%20Self-Optimizing%20Phoenix%20Form.md) | `v1.0` | `ACTIVE` |
+| Module ID      | Title                                                                                                                                                                             | Version | Status   |
+| :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ | :------- |
+| `CSL-LINK-001` | [Synergistic Links Expansion Log](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/CSL/CSL-001.md)                                                                       | `v1.0`  | `ACTIVE` |
+| `CSL-042`      | [The Genesis of Wisdom: Architecting a Self-Optimizing Phoenix Form](../5_Logs/CSL/CSL-042_The%20Genesis%20of%20Wisdom_%20Architecting%20a%20Self-Optimizing%20Phoenix%20Form.md) | `v1.0`  | `ACTIVE` |
 
 ---
 

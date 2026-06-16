@@ -1,0 +1,4437 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-14T02:15:48.963478",
+    "total_nodes": 529,
+    "total_edges": 3,
+    "referential_integrity_issues": 0,
+    "circular_loops": 0
+  },
+  "nodes": [
+    {
+      "id": "CORE.INDEX.001",
+      "path": "vendor/esperanto/src/esperanto/utils/index.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_DB.001",
+      "path": ".prs_database/test_db.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.QUARANTINE_REQD.001",
+      "path": ".quarantine/QUARANTINE_REQD.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.README.001",
+      "path": "vendor/esperanto/examples/tool_calling/README.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.ACTIVATE_AXION.001",
+      "path": "systems/activate_axion.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ACTIVATE_COGNITIVE.001",
+      "path": "activate_cognitive.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-CORE-LOCK-001_GENESISSEEDL.001",
+      "path": "docs/00_Protocols/AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-DMPM-001.001",
+      "path": "docs/AOP-DMPM-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-GAN-001.001",
+      "path": "docs/AOP-GAN-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-LTP-001_LIVINGTEMPLATEPROT.001",
+      "path": "docs/00_Protocols/AOP-LTP-001_LivingTemplateProtocol_v1.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-WELL-001.001",
+      "path": "docs/AOP-WELL-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ACEP.001.001",
+      "path": "docs/00_Protocols/GVRN.ACEP.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SEED.002.001",
+      "path": "docs/00_Protocols/GVRN.SEED.002.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SEED.TOOL.001.001",
+      "path": "docs/00_Protocols/GVRN.SEED.TOOL.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNG.PROT.AXIOMWEAVE.001",
+      "path": "docs/00_Protocols/SYNG.PROT.AxiomWeave.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-CSP-001.001",
+      "path": "docs/UMB-CSP-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-EMOJICXT-001_EMOJICONTEXTU.001",
+      "path": "docs/01_Blueprints/UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.5.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-GENSEED-001_GENESISSEEDORG.001",
+      "path": "templates/UMB-GENSEED-001_GenesisSeedOrganizationSystem_v1.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-MASTER-TEMPLATE-001.001",
+      "path": "docs/UMB/UMB-MASTER-TEMPLATE-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UWB-GODOT-001_BRIDGETOGODOTWOR.001",
+      "path": "docs/01_Blueprints/UWB-GODOT-001_BridgeToGodotWorkflow_v1.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-AVATAR-001.001",
+      "path": "docs/GVRN/AOP-AVATAR-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-MAP-001.001",
+      "path": "docs/GVRN/AOP-MAP-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CMD-AXION-001_AGENTSCAFFOLDING.001",
+      "path": "docs/commands/CMD-AXION-001_AgentScaffoldingPrompt_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-DSA-001.001",
+      "path": "docs/GVRN/GUCA-DSA-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-IDE-SENTINEL-001_THEIDEIN.001",
+      "path": "docs/commands/GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-MAP-001.001",
+      "path": "docs/GVRN/GUCA-MAP-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-SIMP-001_SYSTEMICIMPACTSI.001",
+      "path": "docs/commands/GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN-SYNERGY-001.001",
+      "path": "docs/GVRN/GVRN-SYNERGY-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ACT.ADAPTIVEARTIFACTGENER.001",
+      "path": "docs/02_Governance/GVRN.ACT.AdaptiveArtifactGeneration.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SOT.SYNERGISTICOPPURTUNIT.001",
+      "path": "docs/02_Governance/GVRN.SOT.SynergisticOppurtunityTracker.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.TMPL.LOG.001",
+      "path": "docs/02_Governance/GVRN.TMPL.Log.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.METRIC-AES-001.001",
+      "path": "docs/GVRN/METRIC-AES-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CWA-CON-001_1.001",
+      "path": "docs/CWA/CWA-CON-001 (1).md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CWA-CON-001.001",
+      "path": "docs/CWA/CWA-CON-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.INT-EMOJI-001_PHOENIXCONTEXTBR.001",
+      "path": "docs/integrations/INT-EMOJI-001_PhoenixContextBroker_v13.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNG.DNA.CORE-001_DYNAMICNEXUS.001",
+      "path": "docs/SYNG/SYNG.DNA.CORE-001_DynamicNexusArchitect_v13.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNG.PROT.CONSOLIDATEDSYNERGY.001",
+      "path": "docs/03_Systems/SYNG.PROT.ConsolidatedSynergy.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNG.PROT.STANDARDOFTRUTH.001",
+      "path": "docs/03_Systems/SYNG.PROT.StandardOfTruth.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNG.STATE.001_STATEOFTHESYNAR.001",
+      "path": "docs/03_Systems/SYNG.STATE.001_StateOfTheSynarchy_v14.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-ARCH-CORE-001.001",
+      "path": "docs/ARCH/UMB-ARCH-CORE-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CSL-LINK-001.001",
+      "path": "docs/CSL/CSL-LINK-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CSL.FE001.001",
+      "path": "docs/04_Experiences/GVRN.CSL.FE001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-ARC-001_ARCHIVALSUPERSESSI.001",
+      "path": "docs/agents/AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-SCA-001_AUDIT_LOG_V11.0.001",
+      "path": "docs/agents/AOP-SCA-001_Audit_Log_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-TB-001_TRUTHBRINGERTRAININ.001",
+      "path": "docs/agents/AOP-TB-001_TruthbringerTrainingGuide_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN-PRIME-001_PRIMARYDIRECTIV.001",
+      "path": "docs/agents/GVRN-PRIME-001_PrimaryDirective_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN-STYLE-001_SOVEREIGNDEVELO.001",
+      "path": "docs/agents/GVRN-STYLE-001_SovereignDevelopmentStandard_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-AG-001_ANTIGRAVITYINTEGRAT.001",
+      "path": "docs/agents/UMB-AG-001_AntigravityIntegration_v13.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-APT-001_AXIOMPRIMETUNER_V1.001",
+      "path": "docs/agents/UMB-APT-001_AxiomPrimeTuner_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-ASF-001_ARCHITECTURALSOULF.001",
+      "path": "docs/specs/UMB-ASF-001_ArchitecturalSoulForging_v6.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-CATALYST-001_THECATALYSTWE.001",
+      "path": "docs/specs/UMB-CATALYST-001_TheCatalystWeaver_v1.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-CHRON-REG-GENESIS_V11.0.001",
+      "path": "docs/99_Archive/OGLN-CHRON-REG-GENESIS_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-AXIOM-WEAVE-001_THE_AXIOM.001",
+      "path": "docs/AOP/AOP-AXIOM-WEAVE-001_The Axiom Weaving Protocol.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CSL-FE-001.001",
+      "path": "docs/CSL/CSL-FE-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PLAN-RPG-ASCENSION-EXPANSION.001",
+      "path": "docs/PLAN-rpg-ascension-expansion.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNERGY_REPORT.001",
+      "path": "docs/SYNERGY_REPORT.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-NULL-PROTOCOL-001.001",
+      "path": "docs/UMB-NULL-PROTOCOL-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-SOT-001.001",
+      "path": "docs/UMB-SOT-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.VERIFY_OMEGA.001",
+      "path": "docs/VERIFY_OMEGA.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-PROMPT-SYN-002_ADAPTIVEAR.001",
+      "path": "docs/commands/GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.TEMPLATE-LOG-001.001",
+      "path": "docs/reviews/TEMPLATE-LOG-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.LOOM.REGISTRY.001",
+      "path": "forge/GVRN.Loom.Registry.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.INIT.001",
+      "path": "vendor/esperanto/src/esperanto/utils/__init__.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ASSEMBLER.001",
+      "path": "forge/assembler.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CANONIZE.001",
+      "path": "src/agents/axion/workflows/canonize.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CARP.001",
+      "path": "forge/carp.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CHRONOS.001",
+      "path": "forge/chronos.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CSE_ENGINE.001",
+      "path": "forge/cse_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.DRAGONSLAYER.001",
+      "path": "forge/dragonslayer.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EMW.001",
+      "path": "forge/emw.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ENUMS.001",
+      "path": "src/logic/enums.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EQUIP.001",
+      "path": "forge/equip.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EVOLUTION_ENGINE.001",
+      "path": "forge/evolution_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EXCEPTIONS.001",
+      "path": "vendor/esperanto/src/esperanto/common_types/exceptions.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.FORGE.001",
+      "path": "src/agents/axion/nodes/forge.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GAZE.001",
+      "path": "src/hephaestus/gaze.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GENERATE_BARRELS.001",
+      "path": "forge/generate_barrels.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GENERATE_BEACONS.001",
+      "path": "forge/generate_beacons.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GENERATE_FORGE_REGISTRY.001",
+      "path": "forge/generate_forge_registry.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.INGEST_VAULT.001",
+      "path": "forge/ingest_vault.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.LINT.001",
+      "path": "src/agents/axion/workflows/lint.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.LOOM.001",
+      "path": "src/axion_core/loom.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MENTOR.001",
+      "path": "src/hephaestus/mentor.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.METRICS.001",
+      "path": "forge/metrics.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MILESTONE.001",
+      "path": "forge/milestone.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MINT_SEED.001",
+      "path": "forge/mint_seed.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OUROBOROS.001",
+      "path": "forge/ouroboros.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.REFORGE.001",
+      "path": "src/agents/axion/workflows/reforge.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.RNC_ENGINE.001",
+      "path": "forge/rnc_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RNC_ENGINE_V2.001",
+      "path": "forge/rnc_engine_v2.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SECURITY.001",
+      "path": "forge/security.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SENTINEL.001",
+      "path": "src/hephaestus/sentinel.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SOUL.001",
+      "path": "src/hephaestus/soul.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SUBSTRATE_FORGE.001",
+      "path": "forge/substrate_forge.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNC.001",
+      "path": "forge/sync.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_RESTORATION.001",
+      "path": "forge/test_restoration.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TOOL_ROUTER.001",
+      "path": "forge/tool_router.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSCLUDE_ENGINE.001",
+      "path": "forge/transclude_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSMUTATION_PIPELINE.001",
+      "path": "forge/transmutation_pipeline.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSMUTE_CONTEXT.001",
+      "path": "forge/transmute_context.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSMUTER.001",
+      "path": "forge/transmuter.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VERIFY_AST.001",
+      "path": "forge/verify_ast.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.WEAVER.001",
+      "path": "src/functions/weaver.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MAIN.001",
+      "path": "src/logic/memory/main.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OMEGA-INTEGRATION.001",
+      "path": "omega-integration.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OMEGA-SCHEDULING-PLAN.001",
+      "path": "omega-scheduling-plan.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CELESTIALCHARTVIEW.001",
+      "path": "src/CelestialChartView.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SCHEMAS.001",
+      "path": "src/constants/schemas.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COHERENTSYNTHESISENGINE.001",
+      "path": "src/cse/CoherentSynthesisEngine.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.PYTHONBRIDGE.TEST.001",
+      "path": "src/cse/PythonBridge.test.ts",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EXTENSION.001",
+      "path": "src/extension.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.NEXUSCOORDINATOR.001",
+      "path": "src/nexus/NexusCoordinator.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PHOENIXSUPERPOSITIONENGINE.001",
+      "path": "src/nexus/PhoenixSuperpositionEngine.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.REDISCACHECLIENT.001",
+      "path": "src/nexus/RedisCacheClient.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.WEBCLIENTSTRATEGY.001",
+      "path": "src/nexus/WebClientStrategy.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.USENEXUSHANDSHAKE.001",
+      "path": "src/nexus/useNexusHandshake.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.USESYNAPSELOGIC.001",
+      "path": "src/nexus/useSynapseLogic.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COMMAND.ROUTES.001",
+      "path": "src/routes/command.routes.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.LOOMERROR.001",
+      "path": "src/utils/LoomError.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PYTHONBRIDGE.001",
+      "path": "src/utils/PythonBridge.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ERRORHANDLER.MIDDLEWARE.001",
+      "path": "src/utils/errorHandler.middleware.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VALIDATION.001",
+      "path": "vendor/esperanto/src/esperanto/common_types/validation.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VALIDATION.MIDDLEWARE.001",
+      "path": "src/utils/validation.middleware.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.AUDIT_PRS.001",
+      "path": "scripts/audit_prs.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GEN_REGISTRY_ENTRIES.001",
+      "path": "src/hephaestus/lib/gen_registry_entries.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GOVERNANCE_AUDITOR.001",
+      "path": "scripts/governance_auditor.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GRAND_WEAVE_REFACTOR.001",
+      "path": "scripts/grand_weave_refactor.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.HASH_ARTIFACTS.001",
+      "path": "scripts/hash_artifacts.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.KINETIC_WEAVING_RITUAL.001",
+      "path": "scripts/kinetic_weaving_ritual.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MERGE_MEMORIES.001",
+      "path": "scripts/merge_memories.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MIGRATE_EXPERIENCE.001",
+      "path": "scripts/migrate_experience.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.REGISTER_CANONICAL.001",
+      "path": "scripts/register_canonical.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RELOCATE_ORIGINS.001",
+      "path": "scripts/relocate_origins.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_MEMORY_SYNC.001",
+      "path": "scripts/test_memory_sync.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VERIFY_INSFORGE.001",
+      "path": "scripts/verify_insforge.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VERIFY_MAINTENANCE.001",
+      "path": "scripts/verify_maintenance.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VERIFY_MEMORY_FULL.001",
+      "path": "scripts/verify_memory_full.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VERIFY_OATHKEEPER.001",
+      "path": "scripts/verify_oathkeeper.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.WEAVE_ARTIFACT.001",
+      "path": "scripts/weave_artifact.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "FABR.CELESTIAL.LOGIC.001",
+      "path": "src/03_fabric/FABR.CelestialChart.LOGIC.js",
+      "domain": "FABRIC",
+      "tier": "PRESENTATION",
+      "state": "CANONIZED",
+      "ethos": "UI_EVENT_ORCHESTRATION"
+    },
+    {
+      "id": "FABR.CELESTIAL.UI.001",
+      "path": "src/03_fabric/FABR.CelestialChart.UI.html",
+      "domain": "FABRIC",
+      "tier": "PRESENTATION",
+      "state": "CANONIZED",
+      "ethos": "STRUCTURAL_UI_TEMPLATE"
+    },
+    {
+      "id": "CORE.CONSTANTS.001",
+      "path": "src/05_constants/constants.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CHAR-AXION-001_AGENTAXIONPERSO.001",
+      "path": "src/agents/axion/CHAR-AXION-001_AgentAxionPersona_v1.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AGENT_TEMPLATE.001",
+      "path": "src/agents/axion/agent_template.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CONFIG.001",
+      "path": "src/agents/axion/config.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CORE.001",
+      "path": "src/agents/axion/core.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.INSFORGE_CLIENT.001",
+      "path": "src/agents/axion/insforge_client.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CONTEXT.001",
+      "path": "src/agents/axion/nodes/context.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.INSIGHT.001",
+      "path": "src/agents/axion/nodes/insight.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MECHANICS.001",
+      "path": "src/agents/axion/nodes/mechanics.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OATHKEEPER.001",
+      "path": "src/agents/axion/oathkeeper.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CODE-STYLE-GUIDE.001",
+      "path": "src/agents/axion/rules/code-style-guide.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.RUNTIME.001",
+      "path": "src/agents/axion/runtime.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SCOUT.001",
+      "path": "src/agents/axion/scout/scout.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CODEX-SUBMISSION.001",
+      "path": "src/agents/axion/workflows/codex-submission.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.HARDEN.001",
+      "path": "src/agents/axion/workflows/harden.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.REFORGE-ALL.001",
+      "path": "src/agents/axion/workflows/reforge-all.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.REFORGE-LIBRARY.001",
+      "path": "src/agents/axion/workflows/reforge-library.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.TRACE.001",
+      "path": "src/agents/axion/workflows/trace.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GENESIS_AGENT.001",
+      "path": "src/agents/genesis_agent.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PHOENIX_AGENT.001",
+      "path": "src/agents/phoenix_agent.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.AGENTS.001",
+      "path": "src/axion_core/AGENTS.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.COHERENT_SYNTHESIS_ENGINE.001",
+      "path": "src/axion_core/coherent_synthesis_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COMPONENTS.001",
+      "path": "src/axion_core/components.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CSE.001",
+      "path": "src/cse/cse.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SOPHIA_INTERFACE.001",
+      "path": "src/axion_core/sophia_interface.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CLI.001",
+      "path": "src/logic/cli.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CRYSTALLIZE_SESSION.001",
+      "path": "src/crystallize_session.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COHERENT_SYNTHESIS_ENGINE_ROOM.001",
+      "path": "src/cse/Coherent Synthesis Engine Room.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.ENGINE.001",
+      "path": "src/rpg_system/engine.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ENGINE_V2.001",
+      "path": "src/cse/engine/engine_v2.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA_COMMAND.001",
+      "path": "src/cse/guca_command.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT_LOGGER.001",
+      "path": "src/cse/loggers/selt_logger.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA_PARSER.001",
+      "path": "src/cse/managers/guca_parser.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MCP_INJECTOR.001",
+      "path": "src/cse/managers/mcp_injector.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.LOOM_PARSER.001",
+      "path": "src/cse/parsers/loom_parser.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SOURCEMAP.001",
+      "path": "src/cse/sourcemap.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_CSE.001",
+      "path": "src/cse/test_cse.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GOVERNANCE_ENGINE.001",
+      "path": "src/cse/validators/governance_engine.py",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.LAW_VALIDATOR.001",
+      "path": "src/cse/validators/law_validator.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COGNITIVE_SCHEDULER.001",
+      "path": "src/engine/cognitive_scheduler.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CLOCK.001",
+      "path": "src/engine/deterministic/clock.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EXECUTOR.001",
+      "path": "src/engine/deterministic/executor.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GRAPH.001",
+      "path": "src/engine/deterministic/graph.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PARALLEL_SCHEDULER.001",
+      "path": "src/engine/deterministic/parallel_scheduler.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SCHEDULER.001",
+      "path": "src/engine/deterministic/scheduler.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.STATE.001",
+      "path": "src/engine/deterministic/state.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TASK.001",
+      "path": "src/engine/deterministic/task.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COMPILER.001",
+      "path": "src/engine/ecs/compiler.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COMPONENT.001",
+      "path": "src/engine/ecs/component.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ECS_CORE.001",
+      "path": "src/engine/ecs/ecs_core.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ECS_HARDENED_CORE.001",
+      "path": "src/engine/ecs/ecs_hardened_core.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ECS_SCHEDULER.001",
+      "path": "src/engine/ecs/ecs_scheduler.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ENTITY_REGISTRY.001",
+      "path": "src/engine/ecs/entity_registry.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.FDE_TEST_HARNESS.001",
+      "path": "src/engine/ecs/fde_test_harness.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MANAGER.001",
+      "path": "src/engine/ecs/manager.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RESONANCE.001",
+      "path": "src/engine/ecs/resonance.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNERGY.001",
+      "path": "src/engine/ecs/synergy.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.WORLD.001",
+      "path": "src/engine/ecs/world.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.INSFORGE_TRANSMUTER.001",
+      "path": "src/engine/persistence/insforge_transmuter.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COMPILED_GRAPH.001",
+      "path": "src/engine/scheduling/compiled_graph.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.LAYERED_SCHEDULER.001",
+      "path": "src/engine/scheduling/layered_scheduler.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TYPES.001",
+      "path": "src/engine/types.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.WEAVER.D.001",
+      "path": "src/functions/weaver.d.ts",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.AUDIT_MAGIC_VALUES.001",
+      "path": "src/hephaestus/audit_magic_values.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.AUDITOR.001",
+      "path": "src/hephaestus/auditor.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CHRONICLER.001",
+      "path": "src/hephaestus/chronicler.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CRF.001",
+      "path": "src/hephaestus/crf.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GATE.001",
+      "path": "src/hephaestus/gate.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CATALYST_WEAVER.001",
+      "path": "src/hephaestus/lib/catalyst_weaver.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EMOTION_ANALYZER.001",
+      "path": "src/logic/nlp/emotion_analyzer.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RESONANCE_SCANNER.001",
+      "path": "src/hephaestus/lib/resonance_scanner.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SCAFFOLD_WEAVER.001",
+      "path": "src/hephaestus/lib/scaffold_weaver.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SHADOW_LOG_INTEGRATION.001",
+      "path": "src/hephaestus/lib/shadow_log_integration.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TASK_CONTEXT.001",
+      "path": "src/hephaestus/lib/task_context.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSCLUSION_BINDER.001",
+      "path": "src/hephaestus/lib/transclusion_binder.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN_DATA_PROCESSOR.001",
+      "path": "src/hephaestus/ogln_data_processor.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OSLM_GPS.001",
+      "path": "src/hephaestus/oslm_gps.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.REFORGER.001",
+      "path": "src/hephaestus/reforger.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_OGLN_DATA_PROCESSOR.001",
+      "path": "src/hephaestus/test_ogln_data_processor.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNARCHE_BRIDGE.001",
+      "path": "src/logic/Synarche_bridge.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.AXIOMPRIMETUNER.001",
+      "path": "src/logic/axiomprimetuner.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ARTIFACT_GENERATOR.001",
+      "path": "src/logic/connectors/artifact_generator.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.FREEPLANE_PARSER.001",
+      "path": "src/logic/connectors/freeplane_parser.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ADAPTIVE_RETRIEVER.001",
+      "path": "src/logic/memory/adaptive_retriever.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ASSOCIATION_MANAGER.001",
+      "path": "src/logic/memory/association_manager.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EXPLANATION_GENERATOR.001",
+      "path": "src/logic/utils/explanation_generator.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MEMORY_SYSTEM.001",
+      "path": "src/logic/memory/memory_system.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MEMORY_TAGGER.001",
+      "path": "src/logic/memory/memory_tagger.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.PERSISTENCE_TEST.001",
+      "path": "src/logic/memory/persistence_test.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RETRIEVAL_ENGINE.001",
+      "path": "src/logic/memory/retrieval_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ANALYTICAL_TAGGER.001",
+      "path": "src/logic/nlp/analytical_tagger.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.NLP_ENGINE.001",
+      "path": "src/logic/nlp/nlp_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RPG_MANAGER.001",
+      "path": "src/logic/rpg_manager.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNARCHE_VERSE_ENGINE.001",
+      "path": "src/logic/synarche_verse_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.INSFORGE_BRIDGE.001",
+      "path": "src/logic/sync/insforge_bridge.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SENTINEL_UTILS.001",
+      "path": "src/logic/utils/sentinel_utils.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SOUL_ANALYZER.001",
+      "path": "src/logic/utils/soul_analyzer.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNARCHE_AUDIT.001",
+      "path": "src/nexus/decorators/synarche_audit.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.NEXUS_HANDSHAKE.001",
+      "path": "src/nexus/nexus_handshake.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.NEXUS_WORKER.001",
+      "path": "src/nexus/nexus_worker.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SHIELD_CHALLENGE.001",
+      "path": "src/nexus/shield_challenge.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.BASE.001",
+      "path": "vendor/esperanto/src/esperanto/providers/tts/base.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GENESIS.001",
+      "path": "src/phoenix/genesis.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.LOGGER_PHILOSOPHICAL_FRAMEWORK.001",
+      "path": "src/phoenix/logging/logger_philosophical_framework.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PHX_LOGGING_PROTOCOL_SETUP.001",
+      "path": "src/phoenix/logging/phx_logging_protocol_setup.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RPG.ASCENSION.UMB.001",
+      "path": "src/rpg_system/blueprints/RPG.Ascension.UMB.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.ASCENSION_PLAYBOOK.001",
+      "path": "src/rpg_system/logic/ascension_playbook.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RPG_DEFINITIONS.001",
+      "path": "src/rpg_system/rpg_definitions.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RPG_ENUMS.001",
+      "path": "src/rpg_system/rpg_enums.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RPG_INVENTORY.001",
+      "path": "src/rpg_system/rpg_inventory.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_INVENTORY.001",
+      "path": "src/rpg_system/test_inventory.js",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CELESTIAL_CHART.001",
+      "path": "src/rpg_system/ui/celestial_chart.html",
+      "domain": "CORE",
+      "tier": "PRESENTATION",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_PRESENTATION_COMPONENT"
+    },
+    {
+      "id": "CORE.CHART_LOGIC.001",
+      "path": "src/rpg_system/ui/chart_logic.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ASCEND_COMMAND.001",
+      "path": "src/rpg_system/ui/commands/ascend_command.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CODE_ETHOS_VALIDATOR.001",
+      "path": "src/rpg_system/ui/commands/code_ethos_validator.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.COMMAND_INTERFACE.001",
+      "path": "src/rpg_system/ui/commands/command_interface.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN_ERROR_LOG_CONFIG.001",
+      "path": "src/rpg_system/ui/commands/ogln_error_log_config.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PHX_LOGGING_COMMANDS.001",
+      "path": "src/rpg_system/ui/commands/phx_logging_commands.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.REFACTOR_COMMANDS.001",
+      "path": "src/rpg_system/ui/commands/refactor_commands.js",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNARCHY_BRIDGE.001",
+      "path": "src/synarchy_bridge.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PHOENIX_LOGGER.001",
+      "path": "src/system/logging/phoenix_logger.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ORACLE_LENS.001",
+      "path": "src/system/oracle_lens.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.UNTITLED-1.001",
+      "path": "src/system/refactor/Untitled-1.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.DELTA_COMMIT.001",
+      "path": "src/system/refactor/delta_commit.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.KCAP_PROTOTYPE_LITE.001",
+      "path": "src/system/refactor/kcap_prototype_lite.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PARALLEL_EXECUTOR_V2.001",
+      "path": "src/system/refactor/parallel_executor_v2.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.REFACTOR_PROTOCOL_AXION.001",
+      "path": "src/system/refactor/refactor_protocol_axion.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ROLLBACK_CORE.001",
+      "path": "src/system/refactor/rollback_core.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.DEBUG_ENV.001",
+      "path": "src/utils/debug_env.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.EXPERIENCE_LOGGER.001",
+      "path": "src/utils/experience_logger.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA_HEALER.001",
+      "path": "src/utils/guca_healer.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SIMULATE_IMPACT.001",
+      "path": "src/utils/simulate_impact.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.STANDARDIZE-OMEGA-GOVERNANCE.001",
+      "path": "standardize-omega-governance.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PHOENIX_TRUNK_LINTER_AND_FORMA.001",
+      "path": "standards/Phoenix Trunk Linter and Formatter Setup.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST.001",
+      "path": "systems/test.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ABSORBER_ENGINE.001",
+      "path": "systems/absorber_engine.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.BOOTSTRAP_AXION.001",
+      "path": "systems/bootstrap_axion.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OBSIDIAN_BRIDGE.001",
+      "path": "systems/obsidian_bridge.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MULTIPLE_ARTIFACTS_AOP-EMOJI-0.001",
+      "path": "templates/(Multiple Artifacts)AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-EMOJI-001_EMOJISIGNALINGPR.001",
+      "path": "templates/AOP-EMOJI-001_EmojiSignalingProtocol_v1.5.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-EXE-001_COMPONENT_SHATTER.001",
+      "path": "templates/GUCA-EXE-001_Component_Shattering_Sequence.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PRS_AUDIT_ENGINE.001",
+      "path": "templates/PRS_AUDIT_ENGINE.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-UWB-001_UNIVERSAL_WORKFLO.001",
+      "path": "templates/SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-ETHOS-T201_CODEETHICS_V1.0.001",
+      "path": "templates/UMB-ETHOS-T201_CodeEthics_v1.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-PHX-LOG-001_PHOENIXLOGGING.001",
+      "path": "templates/UMB-PHX-LOG-001_PhoenixLoggingProtocol_v1.2.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-SNT-002_ENHANCEDAUDITOR.001",
+      "path": "templates/UMB-SNT-002_EnhancedAuditor.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-SNT-002_MAGICVALUEAUDITOR.001",
+      "path": "templates/UMB-SNT-002_MagicValueAuditor.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-ANCHOR-OMNI.001",
+      "path": "templates/blocks/SELT-ANCHOR-OMNI.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-COGNITION-001.001",
+      "path": "templates/blocks/SELT-COGNITION-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-ETHOS-IDM-001.001",
+      "path": "templates/blocks/SELT-ETHOS-IDM-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-GATE-CIV-001.001",
+      "path": "templates/blocks/SELT-GATE-CIV-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-GATE-CIV.001",
+      "path": "templates/blocks/SELT-GATE-CIV.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-GOVERNANCE-FIN-001.001",
+      "path": "templates/blocks/SELT-GOVERNANCE-FIN-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-HEADER-UIP-001.001",
+      "path": "templates/blocks/SELT-HEADER-UIP-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-RPG-INT-001.001",
+      "path": "templates/blocks/SELT-RPG-INT-001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-SPINE-AXIOM.001",
+      "path": "templates/blocks/SELT-SPINE-AXIOM.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SELT-SYNERGY-LOOM.001",
+      "path": "templates/blocks/SELT-SYNERGY-LOOM.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_ASCENSION.001",
+      "path": "test_ascension.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.INIT.001",
+      "path": "vendor/esperanto/tests/providers/tts/__init__.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_ECS_COMPILER.001",
+      "path": "tests/engine/scheduling/test_ecs_compiler.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GRAPH.001",
+      "path": "tests/engine/scheduling/test_graph.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_SCHEDULER.001",
+      "path": "tests/engine/scheduling/test_scheduler.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.INDEX.001",
+      "path": "vendor/esperanto/tests/unit/index.ts",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.SEED_MEMORY_DATA.001",
+      "path": "tests/seed_memory_data.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.SIMULATE_OMEGA_MECHANICS.001",
+      "path": "tests/simulate_omega_mechanics.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_AGENT_TEMPLATE.001",
+      "path": "tests/test_agent_template.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_AXION_CONFIG.001",
+      "path": "tests/test_axion_config.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_BRIDGE.001",
+      "path": "tests/test_bridge.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.COGNITIVE_SCHEDULER.001",
+      "path": "tests/test_cognitive_scheduler.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_DETERMINISTIC_ENGINE.001",
+      "path": "tests/test_deterministic_engine.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_ECS_PHOENIX.001",
+      "path": "tests/test_ecs_phoenix.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_FUSED_COGNITIVE_RUNTIME.001",
+      "path": "tests/test_fused_cognitive_runtime.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GOVERNANCE_ALIGNMENT.001",
+      "path": "tests/test_governance_alignment.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GSS_METRICS.001",
+      "path": "tests/test_gss_metrics.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_HEPHAESTUS_ACTIVATED.001",
+      "path": "tests/test_hephaestus_activated.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_INSFORGE_PERSISTENCE.001",
+      "path": "tests/test_insforge_persistence.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_MEMORY_DB.001",
+      "path": "tests/test_memory_db.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_MEMORY_LIFECYCLE.001",
+      "path": "tests/test_memory_lifecycle.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_NLP_ENGINE.001",
+      "path": "tests/test_nlp_engine.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_OBSIDIAN.001",
+      "path": "tests/test_obsidian.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_PARALLEL_ENGINE.001",
+      "path": "tests/test_parallel_engine.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_PARENT.001",
+      "path": "tests/test_parent.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_RESONANCE_ALIGNMENT.001",
+      "path": "tests/test_resonance_alignment.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_ROUTER.001",
+      "path": "tests/test_router.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_RPG_ACHIEVEMENTS.001",
+      "path": "tests/test_rpg_achievements.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_SENTINEL.001",
+      "path": "tests/test_sentinel.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_SOUL_FORGED_ENGINE.001",
+      "path": "tests/test_soul_forged_engine.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_SQLITE_RPG_PERSISTENCE.001",
+      "path": "tests/test_sqlite_rpg_persistence.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_WEAVER.001",
+      "path": "tests/test_weaver.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.VERIFY_PHASE2.001",
+      "path": "tests/verify_phase2.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "INFR.CATALYST_WEAVER.001",
+      "path": "tools/02_Forge/catalyst_weaver.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.SANITIZE_PATH.001",
+      "path": "tools/02_Forge/sanitize_path.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.INIT.001",
+      "path": "tools/__init__.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.ANALYZE_DOCS_COMPLIANCE.001",
+      "path": "tools/analyze_docs_compliance.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.APPLY_RPG_HEADER.001",
+      "path": "tools/apply_rpg_header.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.APPLY_STANDARD.001",
+      "path": "tools/apply_standard.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.ASSEMBLER.001",
+      "path": "tools/assembler.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.ASSESS_ELEGANCE_1.001",
+      "path": "tools/assess_elegance (1).py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.ASSESS_ELEGANCE.001",
+      "path": "tools/assess_elegance.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.AUDIT_AESTHETIC.001",
+      "path": "tools/audit_aesthetic.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.AUDIT_WEIGHTS.001",
+      "path": "tools/audit_weights.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.CHECK_COVERAGE.001",
+      "path": "tools/check_coverage.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.CHRONICLE_MANAGER.001",
+      "path": "tools/chronicle_manager.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.COHERENCE_SCAN.001",
+      "path": "tools/coherence_scan.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.COMPLIANCE_AUDIT_1.001",
+      "path": "tools/compliance_audit (1).py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.COMPLIANCE_AUDIT.001",
+      "path": "tools/compliance_audit.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.CONNECT_ECOSYSTEM.001",
+      "path": "tools/connect_ecosystem.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.CONTEXT_WEAVE.001",
+      "path": "tools/context_weave.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.DEFINITIVE_GRAPH_BUILDER.001",
+      "path": "tools/definitive_graph_builder.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.DIAGNOSE_PATHS.001",
+      "path": "tools/diagnose_paths.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.DOC_SCAFFOLD.001",
+      "path": "tools/doc_scaffold.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.DRIVE_SYNARCHY.001",
+      "path": "tools/drive_synarchy.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.ENUMS.001",
+      "path": "tools/enums.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.EXTRACT_DOCX_TEXT.001",
+      "path": "tools/extract_docx_text.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.FIND_UNLINKED.001",
+      "path": "tools/find_unlinked.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.FORGE_BACKLINKS.001",
+      "path": "tools/forge_backlinks.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.FORGE_DAEMON.001",
+      "path": "tools/forge_daemon.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.GENERATE_BARRELS.001",
+      "path": "tools/generate_barrels.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.GENERATE_PRS.001",
+      "path": "tools/generate_prs.js",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.GENERATE_RAG_GRAPH.001",
+      "path": "tools/generate_rag_graph.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.GENERATE_REGISTRY_1.001",
+      "path": "tools/generate_registry (1).py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.GENERATE_REGISTRY.001",
+      "path": "tools/generate_registry.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.IDE_SENTINEL.001",
+      "path": "tools/ide_sentinel.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.IMPACT_ANALYSIS.001",
+      "path": "tools/impact_analysis.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.INDEX.001",
+      "path": "tools/index.ts",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.INGEST_VAULT_1.001",
+      "path": "tools/ingest_vault (1).py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.INGEST_VAULT.001",
+      "path": "tools/ingest_vault.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.INITIALIZE_MATRIX.001",
+      "path": "tools/initialize_matrix.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.KNIGHT_FIXER.001",
+      "path": "tools/knight_fixer.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.LEGACY_TRANSMUTER.001",
+      "path": "tools/legacy_transmuter.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.LINT_ARTIFACT.001",
+      "path": "tools/lint_artifact.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.LOG_REFACTOR_MILESTONE.001",
+      "path": "tools/log_refactor_milestone.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.LOG_SYNTHESIS.001",
+      "path": "tools/log_synthesis.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.MAP_KNOWLEDGE_GRAPH.001",
+      "path": "tools/map_knowledge_graph.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.MAP_MARKDOWN_STRUCTURE.001",
+      "path": "tools/map_markdown_structure.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.METADATA_INJECTOR.001",
+      "path": "tools/metadata_injector.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.NORMALIZE_MARKDOWN.001",
+      "path": "tools/normalize_markdown.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.QUERY_CSL.001",
+      "path": "tools/query_csl.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.RATIFY_MILESTONE.001",
+      "path": "tools/ratify_milestone.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.REFLECT_MEMORY.001",
+      "path": "tools/reflect_memory.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.REFORGE.001",
+      "path": "tools/reforge.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.REFORGE_LIBRARY.001",
+      "path": "tools/reforge_library.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.REFORGE_OSLM.001",
+      "path": "tools/reforge_oslm.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.REGISTER_AES.001",
+      "path": "tools/register_aes.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.REGISTER_FORGE.001",
+      "path": "tools/register_forge.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.REGISTER_TEMPLATE.001",
+      "path": "tools/register_template.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.RESONANCE_SCANNER.001",
+      "path": "tools/resonance_scanner.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "CORE.RESONANT_REFACTOR.001",
+      "path": "tools/resonant_refactor.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "INFR.SCAFFOLD_ENGINE.001",
+      "path": "tools/scaffold_engine.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "CORE.SENTINEL_SWORD.001",
+      "path": "tools/sentinel_sword.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "INFR.SESSION_MANAGER.001",
+      "path": "tools/session_manager.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.SILVER_THREAD.001",
+      "path": "tools/silver_thread.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.SOPHIA_WISDOM.001",
+      "path": "tools/sophia_wisdom.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.STANDARDIZE_DOCS.001",
+      "path": "tools/standardize_docs.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.STRUCTURE_ENFORCER.001",
+      "path": "tools/structure_enforcer.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TEST_WEAVER.001",
+      "path": "tools/test_weaver.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TOOL_AUDITOR.001",
+      "path": "tools/tool_auditor.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TOOL_CRF.001",
+      "path": "tools/tool_crf.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TOOL_GATE.001",
+      "path": "tools/tool_gate.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TOOL_GAZE.001",
+      "path": "tools/tool_gaze.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TOOL_NAVIGATOR.001",
+      "path": "tools/tool_navigator.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TOOL_ROUTER.001",
+      "path": "tools/tool_router.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TRANSMUTATION_PIPELINE.001",
+      "path": "tools/transmutation_pipeline.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.TRANSMUTER.001",
+      "path": "tools/transmuter.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.UPDATE_ENTITY_STATS.001",
+      "path": "tools/update_entity_stats.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.V13_STANDARDIZER.001",
+      "path": "tools/v13_standardizer.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.VERIFY_AST.001",
+      "path": "tools/verify_ast.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.WEAVER_CLI.001",
+      "path": "tools/weaver_cli.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "INFR.WEAVER_ENGINE.001",
+      "path": "tools/weaver_engine.py",
+      "domain": "INFRA",
+      "tier": "COMPUTE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_COMPUTE_COMPONENT"
+    },
+    {
+      "id": "CORE.ESPERANTO-RELEASE.001",
+      "path": "vendor/esperanto/.claude/commands/esperanto-release.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PULL_REQUEST_TEMPLATE.001",
+      "path": "vendor/esperanto/.github/PULL_REQUEST_TEMPLATE.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CHANGELOG.001",
+      "path": "vendor/esperanto/CHANGELOG.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CLAUDE.001",
+      "path": "vendor/esperanto/src/esperanto/utils/CLAUDE.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CONTRIBUTING.001",
+      "path": "vendor/esperanto/CONTRIBUTING.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CONNECTION-RESOURCE-MANAGEMENT.001",
+      "path": "vendor/esperanto/docs/advanced/connection-resource-management.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.LANGCHAIN-INTEGRATION.001",
+      "path": "vendor/esperanto/docs/advanced/langchain-integration.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.MODEL-DISCOVERY.001",
+      "path": "vendor/esperanto/docs/advanced/model-discovery.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.TASK-AWARE-EMBEDDINGS.001",
+      "path": "vendor/esperanto/docs/advanced/task-aware-embeddings.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.TIMEOUT-CONFIGURATION.001",
+      "path": "vendor/esperanto/docs/advanced/timeout-configuration.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSFORMERS-FEATURES.001",
+      "path": "vendor/esperanto/docs/advanced/transformers-features.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.EMBEDDING.001",
+      "path": "vendor/esperanto/docs/capabilities/embedding.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.LLM.001",
+      "path": "vendor/esperanto/docs/capabilities/llm.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.RERANKING.001",
+      "path": "vendor/esperanto/docs/capabilities/reranking.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SPEECH-TO-TEXT.001",
+      "path": "vendor/esperanto/docs/capabilities/speech-to-text.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.TEXT-TO-SPEECH.001",
+      "path": "vendor/esperanto/docs/capabilities/text-to-speech.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CONFIGURATION.001",
+      "path": "vendor/esperanto/docs/configuration.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.TOOL-CALLING.001",
+      "path": "vendor/esperanto/docs/features/tool-calling.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.ANTHROPIC.001",
+      "path": "vendor/esperanto/src/esperanto/providers/llm/anthropic.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.AZURE.001",
+      "path": "vendor/esperanto/src/esperanto/providers/tts/azure.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.DEEPSEEK.001",
+      "path": "vendor/esperanto/src/esperanto/providers/llm/deepseek.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ELEVENLABS.001",
+      "path": "vendor/esperanto/src/esperanto/providers/tts/elevenlabs.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GOOGLE.001",
+      "path": "vendor/esperanto/src/esperanto/providers/tts/google.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GROQ.001",
+      "path": "vendor/esperanto/src/esperanto/providers/stt/groq.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.JINA.001",
+      "path": "vendor/esperanto/src/esperanto/providers/reranker/jina.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MISTRAL.001",
+      "path": "vendor/esperanto/src/esperanto/providers/llm/mistral.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OLLAMA.001",
+      "path": "vendor/esperanto/src/esperanto/providers/llm/ollama.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OPENAI-COMPATIBLE.001",
+      "path": "vendor/esperanto/docs/providers/openai-compatible.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OPENAI.001",
+      "path": "vendor/esperanto/src/esperanto/providers/tts/openai.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OPENROUTER.001",
+      "path": "vendor/esperanto/src/esperanto/providers/llm/openrouter.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PERPLEXITY.001",
+      "path": "vendor/esperanto/src/esperanto/providers/llm/perplexity.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSFORMERS.001",
+      "path": "vendor/esperanto/src/esperanto/providers/reranker/transformers.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VERTEX.001",
+      "path": "vendor/esperanto/src/esperanto/providers/tts/vertex.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VOYAGE.001",
+      "path": "vendor/esperanto/src/esperanto/providers/reranker/voyage.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.XAI.001",
+      "path": "vendor/esperanto/src/esperanto/providers/llm/xai.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.QUICKSTART.001",
+      "path": "vendor/esperanto/docs/quickstart.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.JINA_EMBEDDINGS.001",
+      "path": "vendor/esperanto/examples/jina_embeddings.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.BASIC_TOOL.001",
+      "path": "vendor/esperanto/examples/tool_calling/basic_tool.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MULTI_TURN.001",
+      "path": "vendor/esperanto/examples/tool_calling/multi_turn.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MULTIPLE_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/multiple_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.PROVIDER_COMPARISON.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_comparison.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ANTHROPIC_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/anthropic_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.AZURE_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/azure_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.DEEPSEEK_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/deepseek_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GOOGLE_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/google_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.GROQ_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/groq_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MISTRAL_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/mistral_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OLLAMA_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/ollama_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OPENAI_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/openai_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.VERTEX_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/provider_examples/vertex_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.STREAMING_TOOLS.001",
+      "path": "vendor/esperanto/examples/tool_calling/streaming_tools.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TRANSFORMERS_ADVANCED_FEATURES.001",
+      "path": "vendor/esperanto/examples/transformers_advanced_features.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.ARCHITECTURE.001",
+      "path": "vendor/esperanto/specs/openai-compatible-env-vars/architecture.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PLAN.001",
+      "path": "vendor/esperanto/specs/openai-compatible-env-vars/plan.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SPEC.001",
+      "path": "vendor/esperanto/specs/openai-compatible-env-vars/spec.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.MODEL.001",
+      "path": "vendor/esperanto/src/esperanto/common_types/model.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RERANKER.001",
+      "path": "vendor/esperanto/src/esperanto/common_types/reranker.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.RESPONSE.001",
+      "path": "vendor/esperanto/src/esperanto/common_types/response.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.STT.001",
+      "path": "vendor/esperanto/src/esperanto/common_types/stt.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TASK_TYPE.001",
+      "path": "vendor/esperanto/src/esperanto/common_types/task_type.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TTS.001",
+      "path": "vendor/esperanto/src/esperanto/common_types/tts.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.FACTORY.001",
+      "path": "vendor/esperanto/src/esperanto/factory.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MODEL_DISCOVERY.001",
+      "path": "vendor/esperanto/src/esperanto/model_discovery.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.OPENAI_COMPATIBLE.001",
+      "path": "vendor/esperanto/src/esperanto/providers/tts/openai_compatible.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.CONNECT.001",
+      "path": "vendor/esperanto/src/esperanto/utils/connect.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.LOGGING.001",
+      "path": "vendor/esperanto/src/esperanto/utils/logging.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.MODEL_CACHE.001",
+      "path": "vendor/esperanto/src/esperanto/utils/model_cache.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.SSL.001",
+      "path": "vendor/esperanto/src/esperanto/utils/ssl.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "CORE.TIMEOUT.001",
+      "path": "vendor/esperanto/src/esperanto/utils/timeout.py",
+      "domain": "CORE",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_TOOL_TYPES.001",
+      "path": "vendor/esperanto/tests/common_types/test_tool_types.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.CONFTEST.001",
+      "path": "vendor/esperanto/tests/providers/llm/conftest.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_CHAT_COMPLETION.001",
+      "path": "vendor/esperanto/tests/integration/test_chat_completion.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_EMBEDDING.001",
+      "path": "vendor/esperanto/tests/integration/test_embedding.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_LANGCHAIN_INTEGRATION.001",
+      "path": "vendor/esperanto/tests/integration/test_langchain_integration.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_TOOL_CALLING_REAL.001",
+      "path": "vendor/esperanto/tests/integration/test_tool_calling_real.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_ADVANCED_FEATURES.001",
+      "path": "vendor/esperanto/tests/providers/embedding/test_advanced_features.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_AZURE_EMBEDDING_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/embedding/test_azure_embedding_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_EMBEDDING_PROVIDERS.001",
+      "path": "vendor/esperanto/tests/providers/embedding/test_embedding_providers.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GOOGLE_TASK_TRANSLATION.001",
+      "path": "vendor/esperanto/tests/providers/embedding/test_google_task_translation.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_JINA.001",
+      "path": "vendor/esperanto/tests/providers/reranker/test_jina.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_MISTRAL_EMBEDDING_PROVIDE.001",
+      "path": "vendor/esperanto/tests/providers/embedding/test_mistral_embedding_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_OPENAI_COMPATIBLE.001",
+      "path": "vendor/esperanto/tests/providers/tts/test_openai_compatible.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_OPENROUTER_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_openrouter_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_TRANSFORMERS_ADVANCED.001",
+      "path": "vendor/esperanto/tests/providers/embedding/test_transformers_advanced.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_TRANSFORMERS_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/embedding/test_transformers_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_VOYAGE_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/embedding/test_voyage_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_ANTHROPIC_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_anthropic_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_AZURE_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_azure_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_AZURE_REASONING_MODELS.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_azure_reasoning_models.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_BASE_MODEL.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_base_model.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_DEEPSEEK_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_deepseek_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GEMINI_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_gemini_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GOOGLE_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_google_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GROQ_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_groq_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_MISTRAL_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_mistral_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_OLLAMA_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_ollama_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_OPENAI_COMPATIBLE_PROVIDE.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_openai_compatible_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_OPENAI_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_openai_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_PERPLEXITY_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_perplexity_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_VERTEX_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_vertex_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_XAI_PROVIDER.001",
+      "path": "vendor/esperanto/tests/providers/llm/test_xai_provider.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_TRANSFORMERS.001",
+      "path": "vendor/esperanto/tests/providers/reranker/test_transformers.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_VOYAGE.001",
+      "path": "vendor/esperanto/tests/providers/reranker/test_voyage.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_BASE.001",
+      "path": "vendor/esperanto/tests/providers/tts/test_base.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GOOGLE.001",
+      "path": "vendor/esperanto/tests/providers/tts/test_google.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_GROQ.001",
+      "path": "vendor/esperanto/tests/providers/stt/test_groq.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_OPENAI.001",
+      "path": "vendor/esperanto/tests/providers/tts/test_openai.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_ELEVENLABS.001",
+      "path": "vendor/esperanto/tests/providers/tts/test_elevenlabs.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_DEPRECATION_WARNINGS.001",
+      "path": "vendor/esperanto/tests/test_deprecation_warnings.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_FACTORY.001",
+      "path": "vendor/esperanto/tests/test_factory.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_HTTP_CONNECTION.001",
+      "path": "vendor/esperanto/tests/test_http_connection.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_MESSAGE_THINKING.001",
+      "path": "vendor/esperanto/tests/test_message_thinking.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_MODEL_DISCOVERY.001",
+      "path": "vendor/esperanto/tests/test_model_discovery.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_PROXY_CONFIGURATION.001",
+      "path": "vendor/esperanto/tests/test_proxy_configuration.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_SSL_CONFIGURATION.001",
+      "path": "vendor/esperanto/tests/test_ssl_configuration.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_TIMEOUT_CONFIGURATION.001",
+      "path": "vendor/esperanto/tests/test_timeout_configuration.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_TIMEOUT_INTEGRATION.001",
+      "path": "vendor/esperanto/tests/test_timeout_integration.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TEST_TOOL_CALLING.001",
+      "path": "vendor/esperanto/tests/unit/test_tool_calling.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    },
+    {
+      "id": "TEST.TRANSFORMER_TEST.001",
+      "path": "vendor/esperanto/transformer_test.py",
+      "domain": "TEST",
+      "tier": "LOGIC",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_LOGIC_COMPONENT"
+    }
+  ],
+  "edges": [
+    {
+      "source": "FABR.CELESTIAL.LOGIC.001",
+      "target": "FABR.CelestialChart.UI.html",
+      "type": "CONTROLS"
+    },
+    {
+      "source": "FABR.CELESTIAL.UI.001",
+      "target": "FABR.CelestialChart.STYLE.css",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "FABR.CELESTIAL.UI.001",
+      "target": "FABR.CelestialChart.LOGIC.js",
+      "type": "DEPENDS_ON"
+    }
+  ],
+  "lexicon": {
+    "LEX-EXEC-001": {
+      "term": "The Forge",
+      "canonical_equivalent": [
+        "CI_PIPELINE",
+        "BUILD_SYSTEM"
+      ],
+      "classification": {
+        "domain": "INFRA",
+        "ontology_class": "ORCHESTRATION_ENGINE",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "COMPUTE",
+        "INFRA",
+        "GVRN"
+      ],
+      "forbidden_contexts": [
+        "PERSISTENCE",
+        "DATA"
+      ],
+      "ethos": "Automated artifact generation, validation, and signature compiling pipelines.",
+      "aliases": [
+        "forge",
+        "build_forge"
+      ]
+    },
+    "LEX-GVRN-001": {
+      "term": "Sentinel Gate",
+      "canonical_equivalent": [
+        "CI_VALIDATION_GATE",
+        "STATIC_ANALYSIS_HOOK"
+      ],
+      "classification": {
+        "domain": "GVRN",
+        "ontology_class": "COMPLIANCE_GATEWAY",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "GVRN",
+        "TEST"
+      ],
+      "forbidden_contexts": [
+        "PRESENTATION"
+      ],
+      "ethos": "Deterministic block gates that reject non-compliant structural or semantic commits.",
+      "aliases": [
+        "sentinel",
+        "gatekeeper"
+      ]
+    },
+    "LEX-CORE-001": {
+      "term": "Dissonance Quest",
+      "canonical_equivalent": [
+        "REFACTOR_TICKET",
+        "BUG_DEBUG_SESSION"
+      ],
+      "classification": {
+        "domain": "CORE",
+        "ontology_class": "STATE_CORRECTION",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "CORE",
+        "TEST",
+        "GVRN"
+      ],
+      "forbidden_contexts": [],
+      "ethos": "An active debugging, testing, or refactoring campaign targeted at reducing repository entropy.",
+      "aliases": [
+        "quest",
+        "dissonance_resolution"
+      ]
+    },
+    "LEX-COGN-001": {
+      "term": "Cognitive Circuit Breaker",
+      "canonical_equivalent": [
+        "RUNTIME_INTERRUPT",
+        "ERROR_HALT"
+      ],
+      "classification": {
+        "domain": "CORE",
+        "ontology_class": "FAULT_TOLERANCE_ENGINE",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "CORE",
+        "COMPUTE",
+        "INFRA"
+      ],
+      "forbidden_contexts": [
+        "PRESENTATION"
+      ],
+      "ethos": "Safeguard interrupt systems that halt executions if logical drifts or runtime exceptions leak.",
+      "aliases": [
+        "circuit_breaker",
+        "fail_halt"
+      ]
+    },
+    "LEX-NET-001": {
+      "term": "Synapse",
+      "canonical_equivalent": [
+        "MESSAGE_BUS",
+        "EVENT_BROKER"
+      ],
+      "classification": {
+        "domain": "FABRIC",
+        "ontology_class": "COMMUNICATION_PROTOCOL",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "FABRIC",
+        "INFRA",
+        "CORE"
+      ],
+      "forbidden_contexts": [
+        "GOVERNANCE"
+      ],
+      "ethos": "Decoupled asynchronous message or event propagation boundaries.",
+      "aliases": [
+        "synapse",
+        "event_bus"
+      ]
+    },
+    "LEX-COMP-001": {
+      "term": "Sophia",
+      "canonical_equivalent": [
+        "ORCHESTRATION_INTELLIGENCE",
+        "COMPILER_FLOW"
+      ],
+      "classification": {
+        "domain": "COMPUTE",
+        "ontology_class": "COGNITIVE_COMPILER",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "COMPUTE",
+        "INFRA",
+        "GVRN"
+      ],
+      "forbidden_contexts": [
+        "DATA"
+      ],
+      "ethos": "Compilation pipelines integrating program analytics and static repository reasoning.",
+      "aliases": [
+        "sophia",
+        "wisdom_engine"
+      ]
+    },
+    "LEX-METR-001": {
+      "term": "Coherence",
+      "canonical_equivalent": [
+        "STRUCTURAL_ALIGNMENT_METRIC",
+        "SELF_CONSISTENCY"
+      ],
+      "classification": {
+        "domain": "GVRN",
+        "ontology_class": "METRIC",
+        "abstraction_level": "METRIC"
+      },
+      "allowed_contexts": [
+        "GVRN",
+        "TEST",
+        "CORE"
+      ],
+      "forbidden_contexts": [],
+      "ethos": "Mathematical index scoring structural alignment and semantic parity across documentation and code.",
+      "aliases": [
+        "coherence",
+        "coherence_score"
+      ]
+    }
+  },
+  "diagnostics": {
+    "errors": [],
+    "warnings": []
+  }
+}

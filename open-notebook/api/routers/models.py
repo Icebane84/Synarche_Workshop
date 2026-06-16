@@ -59,19 +59,19 @@ def _check_azure_support(mode: str) -> bool:
     return generic or specific
 
 
-@router.get("/models", response_model=List[ModelResponse])
+@router.get("/models", response_model=list[ModelResponse])
 async def get_models(
-    type: Optional[str] = Query(None, description="Filter by model type"),
+    type: str | None = Query(None, description="Filter by model type"),
 ):
     """Get all configured models with optional type filtering."""
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     try:
         if type:
@@ -91,8 +91,8 @@ async def get_models(
             for model in models
         ]
     except Exception as e:
-        logger.error(f"Error fetching models: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error fetching models: {str(e)}")
+        logger.error(f"Error fetching models: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error fetching models: {e!s}")
 
 
 @router.post("/models", response_model=ModelResponse)
@@ -143,8 +143,8 @@ async def create_model(model_data: ModelCreate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error creating model: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error creating model: {str(e)}")
+        logger.error(f"Error creating model: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error creating model: {e!s}")
 
 
 @router.delete("/models/{model_id}")
@@ -161,8 +161,8 @@ async def delete_model(model_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting model {model_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error deleting model: {str(e)}")
+        logger.error(f"Error deleting model {model_id}: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error deleting model: {e!s}")
 
 
 @router.get("/models/defaults", response_model=DefaultModelsResponse)
@@ -181,10 +181,8 @@ async def get_default_models():
             default_tools_model=defaults.default_tools_model,  # type: ignore[attr-defined]
         )
     except Exception as e:
-        logger.error(f"Error fetching default models: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail=f"Error fetching default models: {str(e)}"
-        )
+        logger.error(f"Error fetching default models: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error fetching default models: {e!s}")
 
 
 @router.put("/models/defaults", response_model=DefaultModelsResponse)
@@ -197,19 +195,13 @@ async def update_default_models(defaults_data: DefaultModelsResponse):
         if defaults_data.default_chat_model is not None:
             defaults.default_chat_model = defaults_data.default_chat_model  # type: ignore[attr-defined]
         if defaults_data.default_transformation_model is not None:
-            defaults.default_transformation_model = (
-                defaults_data.default_transformation_model
-            )  # type: ignore[attr-defined]
+            defaults.default_transformation_model = defaults_data.default_transformation_model  # type: ignore[attr-defined]
         if defaults_data.large_context_model is not None:
             defaults.large_context_model = defaults_data.large_context_model  # type: ignore[attr-defined]
         if defaults_data.default_text_to_speech_model is not None:
-            defaults.default_text_to_speech_model = (
-                defaults_data.default_text_to_speech_model
-            )  # type: ignore[attr-defined]
+            defaults.default_text_to_speech_model = defaults_data.default_text_to_speech_model  # type: ignore[attr-defined]
         if defaults_data.default_speech_to_text_model is not None:
-            defaults.default_speech_to_text_model = (
-                defaults_data.default_speech_to_text_model
-            )  # type: ignore[attr-defined]
+            defaults.default_speech_to_text_model = defaults_data.default_speech_to_text_model  # type: ignore[attr-defined]
         if defaults_data.default_embedding_model is not None:
             defaults.default_embedding_model = defaults_data.default_embedding_model  # type: ignore[attr-defined]
         if defaults_data.default_tools_model is not None:
@@ -231,10 +223,10 @@ async def update_default_models(defaults_data: DefaultModelsResponse):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error updating default models: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail=f"Error updating default models: {str(e)}"
-        )
+        logger.error(f"Error updating default models: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error updating default models: {e!s}")
+
+
 @router.get("/models/providers", response_model=ProviderAvailabilityResponse)
 async def get_provider_availability():
     """Get provider availability based on environment variables."""
@@ -250,10 +242,7 @@ async def get_provider_availability():
                 and os.environ.get("VERTEX_LOCATION") is not None
                 and os.environ.get("GOOGLE_APPLICATION_CREDENTIALS") is not None
             ),
-            "google": (
-                os.environ.get("GOOGLE_API_KEY") is not None
-                or os.environ.get("GEMINI_API_KEY") is not None
-            ),
+            "google": (os.environ.get("GOOGLE_API_KEY") is not None or os.environ.get("GEMINI_API_KEY") is not None),
             "openrouter": os.environ.get("OPENROUTER_API_KEY") is not None,
             "anthropic": os.environ.get("ANTHROPIC_API_KEY") is not None,
             "elevenlabs": os.environ.get("ELEVENLABS_API_KEY") is not None,
@@ -296,19 +285,13 @@ async def get_provider_availability():
             # Special handling for openai-compatible to check mode-specific availability
             if provider == "openai-compatible":
                 for model_type, mode in mode_mapping.items():
-                    if (
-                        model_type in esperanto_available
-                        and provider in esperanto_available[model_type]
-                    ):
+                    if model_type in esperanto_available and provider in esperanto_available[model_type]:
                         if _check_openai_compatible_support(mode):
                             supported_types[provider].append(model_type)
             # Special handling for azure to check mode-specific availability
             elif provider == "azure":
                 for model_type, mode in mode_mapping.items():
-                    if (
-                        model_type in esperanto_available
-                        and provider in esperanto_available[model_type]
-                    ):
+                    if model_type in esperanto_available and provider in esperanto_available[model_type]:
                         if _check_azure_support(mode):
                             supported_types[provider].append(model_type)
             else:
@@ -323,7 +306,5 @@ async def get_provider_availability():
             supported_types=supported_types,
         )
     except Exception as e:
-        logger.error(f"Error checking provider availability: {str(e)}")
-        raise HTTPException(
-            status_code=500, detail=f"Error checking provider availability: {str(e)}"
-        )
+        logger.error(f"Error checking provider availability: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error checking provider availability: {e!s}")

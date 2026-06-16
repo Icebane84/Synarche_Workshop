@@ -7,12 +7,20 @@ Genesis Stamp: 2026-03-07.
 > Ethos: Empathy for the Engine, Blast Radius Awareness.
 """
 
+import argparse
 import ast
 import json
 import logging
 from collections import defaultdict
 from pathlib import Path
-from typing import Any
+from typing import TypedDict
+
+
+class BlastRadiusResult(TypedDict):
+    target: str
+    blast_radius_size: int
+    affected_modules: list[str]
+    risk_level: str
 
 
 # Hephaestus Lib Imports
@@ -97,7 +105,7 @@ class SoulImpactAnalyzer:
         except ValueError:
             return file_path.stem
 
-    def calculate_blast_radius(self, target_node: str) -> dict[str, Any]:
+    def calculate_blast_radius(self, target_node: str) -> BlastRadiusResult:
         """Calculate the cascading impact of modifying the target node."""
         affected_modules: set[str] = set()
         queue = [target_node]
@@ -140,12 +148,13 @@ class SoulImpactAnalyzer:
 
 
 if __name__ == "__main__":
-    # Example standalone execution for testing the "Soul" mechanic
+    parser = argparse.ArgumentParser(description="Soul Impact Analyzer (Blast Radius)")
+    parser.add_argument("--target-dir", required=True, help="Target workspace directory to map")
+    parser.add_argument("--node", required=True, help="The specific node/module to calculate the blast radius for")
+    args = parser.parse_args()
+
     analyzer = SoulImpactAnalyzer()
-    analyzer.map_domain(str(CORE_DIR))
+    analyzer.map_domain(args.target_dir)
 
-    # Example check
-    test_node = "axion-core.src.hephaestus.soul"
-    result = analyzer.calculate_blast_radius(test_node)
-
+    result = analyzer.calculate_blast_radius(args.node)
     print(json.dumps(result, indent=2))

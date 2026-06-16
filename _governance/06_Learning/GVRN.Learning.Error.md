@@ -44,26 +44,26 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 
 ---
 
-| Timestamp  | ID          | Failure                  | Root Cause                                           | Status      |
-| :--------- | :---------- | :----------------------- | :--------------------------------------------------- | :---------- |
-| 2026-03-16 | ERR-LOG-001 | Mypy Daemon Missing      | dmypy not found in PATH                              | [FIXED]     |
-| 2026-03-16 | ERR-LOG-002 | Link Fragmentation       | Broken links in Rosetta Stone Matrix                 | [RESOLVING] |
-| 2026-03-17 | ERR-LOG-003 | TEST Collection Fail     | Absolute imports (src.) in tests                     | [FIXED]     |
-| 2026-03-17 | ERR-LOG-004 | Runtime Signature        | Deprecated config injection in init                  | [FIXED]     |
-| 2026-03-18 | ERR-LOG-005 | Pathway Dissonance       | MCP pointing to empty local scripts                  | [FIXED]     |
-| 2026-03-18 | ERR-LOG-006 | Registry Decay           | Unregistered types (trunk/Java)                      | [RESOLVED]  |
-| 2026-03-19 | ERR-LOG-007 | Metadata Omission        | `write_to_file` missing ArtifactMetadata             | [FIXED]     |
-| 2026-03-19 | ERR-LOG-008 | Content Dissonance       | `multi_replace` target mismatch                      | [FIXED]     |
-| 2026-03-16 | ERR-LOG-009 | Reductive Synthesis      | Rule synthesis too concise; lost TIER context        | [FIXED]     |
-| 2026-03-22 | ERR-LOG-010 | Header Dissonance        | Broken/Legacy UIP headers in CORE subsystems         | [FIXED]     |
-| 2026-03-22 | ERR-LOG-011 | Layout Inconsistency     | Missing blank lines around headings/fences           | [REMEDIED]  |
-| 2026-03-23 | ERR-LOG-012 | Loom Regex Dissonance    | Block boundary matched text inside tables            | [FIXED]     |
-| 2026-04-08 | ERR-LOG-013 | Syntactic Barrier Breach | Metadata tables in Python headers causing IDE errors | [FIXED]     |
-| 2026-04-08 | ERR-LOG-014 | Orchestration Bloat      | Monolithic synthesis logic exceeding complexity 15   | [FIXED]     |
-| 2026-04-08 | ERR-LOG-015 | Multi-Header Mutilation  | Naive regex replacement lacking idempotency logic    | [RESOLVED]  |
-| 2026-04-09 | ERR-LOG-016 | Metadata Truncation      | Lack of state-buffering in text replacement TOOL     | [FIXED]     |
-| 2026-04-12 | ERR-LOG-017 | Python Shadowing         | Local enum.py colliding with stdlib enum             | [FIXED]     |
-| 2026-05-28 | ERR-LOG-018 | Identified in test_error.log | [2026-05-28 21:40:00] ERROR: Test verification Exception in AxionEngine launcher | [PENDING] |
+| Timestamp  | ID          | Failure                      | Root Cause                                                                       | Status      |
+| :--------- | :---------- | :--------------------------- | :------------------------------------------------------------------------------- | :---------- |
+| 2026-03-16 | ERR-LOG-001 | Mypy Daemon Missing          | dmypy not found in PATH                                                          | [FIXED]     |
+| 2026-03-16 | ERR-LOG-002 | Link Fragmentation           | Broken links in Rosetta Stone Matrix                                             | [RESOLVING] |
+| 2026-03-17 | ERR-LOG-003 | TEST Collection Fail         | Absolute imports (src.) in tests                                                 | [FIXED]     |
+| 2026-03-17 | ERR-LOG-004 | Runtime Signature            | Deprecated config injection in init                                              | [FIXED]     |
+| 2026-03-18 | ERR-LOG-005 | Pathway Dissonance           | MCP pointing to empty local scripts                                              | [FIXED]     |
+| 2026-03-18 | ERR-LOG-006 | Registry Decay               | Unregistered types (trunk/Java)                                                  | [RESOLVED]  |
+| 2026-03-19 | ERR-LOG-007 | Metadata Omission            | `write_to_file` missing ArtifactMetadata                                         | [FIXED]     |
+| 2026-03-19 | ERR-LOG-008 | Content Dissonance           | `multi_replace` target mismatch                                                  | [FIXED]     |
+| 2026-03-16 | ERR-LOG-009 | Reductive Synthesis          | Rule synthesis too concise; lost TIER context                                    | [FIXED]     |
+| 2026-03-22 | ERR-LOG-010 | Header Dissonance            | Broken/Legacy UIP headers in CORE subsystems                                     | [FIXED]     |
+| 2026-03-22 | ERR-LOG-011 | Layout Inconsistency         | Missing blank lines around headings/fences                                       | [REMEDIED]  |
+| 2026-03-23 | ERR-LOG-012 | Loom Regex Dissonance        | Block boundary matched text inside tables                                        | [FIXED]     |
+| 2026-04-08 | ERR-LOG-013 | Syntactic Barrier Breach     | Metadata tables in Python headers causing IDE errors                             | [FIXED]     |
+| 2026-04-08 | ERR-LOG-014 | Orchestration Bloat          | Monolithic synthesis logic exceeding complexity 15                               | [FIXED]     |
+| 2026-04-08 | ERR-LOG-015 | Multi-Header Mutilation      | Naive regex replacement lacking idempotency logic                                | [RESOLVED]  |
+| 2026-04-09 | ERR-LOG-016 | Metadata Truncation          | Lack of state-buffering in text replacement TOOL                                 | [FIXED]     |
+| 2026-04-12 | ERR-LOG-017 | Python Shadowing             | Local enum.py colliding with stdlib enum                                         | [FIXED]     |
+| 2026-05-28 | ERR-LOG-018 | Identified in test_error.log | [2026-05-28 21:40:00] ERROR: Test verification Exception in AxionEngine launcher | [PENDING]   |
 
 ---
 
@@ -197,7 +197,6 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
   importing the standard library `enum` module, as the local file takes precedence in the search path.
 - **Remediation:** Enforced the plural `enums.py` naming convention for all state definitions. Deleted the colliding
   `enum.py` and added a linter rule (implicit) to flag reserved stdlib names in the Forge.
-
 
 ### ERR-LOG-018: Error in test_error.log
 

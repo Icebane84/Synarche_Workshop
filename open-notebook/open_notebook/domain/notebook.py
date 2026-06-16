@@ -17,7 +17,7 @@ class Notebook(ObjectModel):
     table_name: ClassVar[str] = "notebook"
     name: str
     description: str
-    archived: Optional[bool] = False
+    archived: bool | None = False
 
     @field_validator("name")
     @classmethod
@@ -26,7 +26,7 @@ class Notebook(ObjectModel):
             raise InvalidInputError("Notebook name cannot be empty")
         return v
 
-    async def get_sources(self) -> List["Source"]:
+    async def get_sources(self) -> list["Source"]:
         try:
             srcs = await repo_query(
                 """
@@ -39,11 +39,11 @@ class Notebook(ObjectModel):
             )
             return [Source(**src["source"]) for src in srcs] if srcs else []
         except Exception as e:
-            logger.error(f"Error fetching sources for notebook {self.id}: {str(e)}")
+            logger.error(f"Error fetching sources for notebook {self.id}: {e!s}")
             logger.exception(e)
             raise DatabaseOperationError(e)
 
-    async def get_notes(self) -> List["Note"]:
+    async def get_notes(self) -> list["Note"]:
         try:
             srcs = await repo_query(
                 """
@@ -56,11 +56,11 @@ class Notebook(ObjectModel):
             )
             return [Note(**src["note"]) for src in srcs] if srcs else []
         except Exception as e:
-            logger.error(f"Error fetching notes for notebook {self.id}: {str(e)}")
+            logger.error(f"Error fetching notes for notebook {self.id}: {e!s}")
             logger.exception(e)
             raise DatabaseOperationError(e)
 
-    async def get_chat_sessions(self) -> List["ChatSession"]:
+    async def get_chat_sessions(self) -> list["ChatSession"]:
         try:
             srcs = await repo_query(
                 """
@@ -75,17 +75,13 @@ class Notebook(ObjectModel):
             """,
                 {"id": ensure_record_id(self.id)},
             )
-            return (
-                [ChatSession(**src["chat_session"][0]) for src in srcs] if srcs else []
-            )
+            return [ChatSession(**src["chat_session"][0]) for src in srcs] if srcs else []
         except Exception as e:
-            logger.error(
-                f"Error fetching chat sessions for notebook {self.id}: {str(e)}"
-            )
+            logger.error(f"Error fetching chat sessions for notebook {self.id}: {e!s}")
             logger.exception(e)
             raise DatabaseOperationError(e)
 
-    async def get_delete_preview(self) -> Dict[str, Any]:
+    async def get_delete_preview(self) -> dict[str, Any]:
         """
         Get counts of items that would be affected by deleting this notebook.
 
@@ -135,7 +131,7 @@ class Notebook(ObjectModel):
             logger.exception(e)
             raise DatabaseOperationError(e)
 
-    async def delete(self, delete_exclusive_sources: bool = False) -> Dict[str, int]:
+    async def delete(self, delete_exclusive_sources: bool = False) -> dict[str, int]:
         """
         Delete notebook with cascade deletion of notes and optional source deletion.
 
@@ -191,9 +187,7 @@ class Notebook(ObjectModel):
                             await source.delete()
                             deleted_sources += 1
                         except Exception as e:
-                            logger.warning(
-                                f"Failed to delete exclusive source {source_id}: {e}"
-                            )
+                            logger.warning(f"Failed to delete exclusive source {source_id}: {e}")
                     else:
                         unlinked_sources += 1
             else:
@@ -231,8 +225,8 @@ class Notebook(ObjectModel):
 
 
 class Asset(BaseModel):
-    file_path: Optional[str] = None
-    url: Optional[str] = None
+    file_path: str | None = None
+    url: str | None = None
 
 
 class SourceEmbedding(ObjectModel):
@@ -249,7 +243,7 @@ class SourceEmbedding(ObjectModel):
             )
             return Source(**src[0]["source"])
         except Exception as e:
-            logger.error(f"Error fetching source for embedding {self.id}: {str(e)}")
+            logger.error(f"Error fetching source for embedding {self.id}: {e!s}")
             logger.exception(e)
             raise DatabaseOperationError(e)
 
@@ -269,11 +263,11 @@ class SourceInsight(ObjectModel):
             )
             return Source(**src[0]["source"])
         except Exception as e:
-            logger.error(f"Error fetching source for insight {self.id}: {str(e)}")
+            logger.error(f"Error fetching source for insight {self.id}: {e!s}")
             logger.exception(e)
             raise DatabaseOperationError(e)
 
-    async def save_as_note(self, notebook_id: Optional[str] = None) -> Any:
+    async def save_as_note(self, notebook_id: str | None = None) -> Any:
         source = await self.get_source()
         note = Note(
             title=f"{self.insight_type} from source {source.title}",
@@ -289,13 +283,11 @@ class Source(ObjectModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     table_name: ClassVar[str] = "source"
-    asset: Optional[Asset] = None
-    title: Optional[str] = None
-    topics: Optional[List[str]] = Field(default_factory=list)
-    full_text: Optional[str] = None
-    command: Optional[Union[str, RecordID]] = Field(
-        default=None, description="Link to surreal-commands processing job"
-    )
+    asset: Asset | None = None
+    title: str | None = None
+    topics: list[str] | None = Field(default_factory=list)
+    full_text: str | None = None
+    command: str | RecordID | None = Field(default=None, description="Link to surreal-commands processing job")
 
     @field_validator("command", mode="before")
     @classmethod
@@ -315,7 +307,7 @@ class Source(ObjectModel):
             return str(value)
         return str(value) if value else None
 
-    async def get_status(self) -> Optional[str]:
+    async def get_status(self) -> str | None:
         """Get the processing status of the associated command"""
         if not self.command:
             return None
@@ -329,7 +321,7 @@ class Source(ObjectModel):
             logger.warning(f"Failed to get command status for {self.command}: {e}")
             return "unknown"
 
-    async def get_processing_progress(self) -> Optional[Dict[str, Any]]:
+    async def get_processing_progress(self) -> dict[str, Any] | None:
         """Get detailed processing information for the associated command"""
         if not self.command:
             return None
@@ -343,9 +335,7 @@ class Source(ObjectModel):
 
             # Extract execution metadata if available
             result = getattr(status_result, "result", None)
-            execution_metadata = (
-                result.get("execution_metadata", {}) if isinstance(result, dict) else {}
-            )
+            execution_metadata = result.get("execution_metadata", {}) if isinstance(result, dict) else {}
 
             return {
                 "status": status_result.status,
@@ -358,9 +348,7 @@ class Source(ObjectModel):
             logger.warning(f"Failed to get command progress for {self.command}: {e}")
             return None
 
-    async def get_context(
-        self, context_size: Literal["short", "long"] = "short"
-    ) -> Dict[str, Any]:
+    async def get_context(self, context_size: Literal["short", "long"] = "short") -> dict[str, Any]:
         insights_list = await self.get_insights()
         insights = [insight.model_dump() for insight in insights_list]
         if context_size == "long":
@@ -385,11 +373,11 @@ class Source(ObjectModel):
                 return 0
             return result[0]["chunks"]
         except Exception as e:
-            logger.error(f"Error fetching chunks count for source {self.id}: {str(e)}")
+            logger.error(f"Error fetching chunks count for source {self.id}: {e!s}")
             logger.exception(e)
-            raise DatabaseOperationError(f"Failed to count chunks for source: {str(e)}")
+            raise DatabaseOperationError(f"Failed to count chunks for source: {e!s}")
 
-    async def get_insights(self) -> List[SourceInsight]:
+    async def get_insights(self) -> list[SourceInsight]:
         try:
             result = await repo_query(
                 """
@@ -399,7 +387,7 @@ class Source(ObjectModel):
             )
             return [SourceInsight(**insight) for insight in result]
         except Exception as e:
-            logger.error(f"Error fetching insights for source {self.id}: {str(e)}")
+            logger.error(f"Error fetching insights for source {self.id}: {e!s}")
             logger.exception(e)
             raise DatabaseOperationError("Failed to fetch insights for source")
 
@@ -440,17 +428,12 @@ class Source(ObjectModel):
             )
 
             command_id_str = str(command_id)
-            logger.info(
-                f"Embed source job submitted for source {self.id}: "
-                f"command_id={command_id_str}"
-            )
+            logger.info(f"Embed source job submitted for source {self.id}: command_id={command_id_str}")
 
             return command_id_str
 
         except Exception as e:
-            logger.error(
-                f"Failed to submit embed_source job for source {self.id}: {e}"
-            )
+            logger.error(f"Failed to submit embed_source job for source {self.id}: {e}")
             logger.exception(e)
             raise DatabaseOperationError(e)
 
@@ -499,7 +482,7 @@ class Source(ObjectModel):
 
             return result
         except Exception as e:
-            logger.error(f"Error adding insight to source {self.id}: {str(e)}")
+            logger.error(f"Error adding insight to source {self.id}: {e!s}")
             raise
 
     def _prepare_save_data(self) -> dict:
@@ -527,9 +510,7 @@ class Source(ObjectModel):
                         "Continuing with database deletion."
                     )
             else:
-                logger.debug(
-                    f"File {file_path} not found for source {self.id}, skipping cleanup"
-                )
+                logger.debug(f"File {file_path} not found for source {self.id}, skipping cleanup")
 
         # Delete associated embeddings and insights to prevent orphaned records
         try:
@@ -545,8 +526,7 @@ class Source(ObjectModel):
             logger.debug(f"Deleted embeddings and insights for source {self.id}")
         except Exception as e:
             logger.warning(
-                f"Failed to delete embeddings/insights for source {self.id}: {e}. "
-                "Continuing with source deletion."
+                f"Failed to delete embeddings/insights for source {self.id}: {e}. Continuing with source deletion."
             )
 
         # Call parent delete to remove database record
@@ -555,9 +535,9 @@ class Source(ObjectModel):
 
 class Note(ObjectModel):
     table_name: ClassVar[str] = "note"
-    title: Optional[str] = None
-    note_type: Optional[Literal["human", "ai"]] = None
-    content: Optional[str] = None
+    title: str | None = None
+    note_type: Literal["human", "ai"] | None = None
+    content: str | None = None
 
     @field_validator("content")
     @classmethod
@@ -566,7 +546,7 @@ class Note(ObjectModel):
             raise InvalidInputError("Note content cannot be empty")
         return v
 
-    async def save(self) -> Optional[str]:
+    async def save(self) -> str | None:
         """
         Save the note and submit embedding command.
 
@@ -596,9 +576,7 @@ class Note(ObjectModel):
             raise InvalidInputError("Notebook ID must be provided")
         return await self.relate("artifact", notebook_id)
 
-    def get_context(
-        self, context_size: Literal["short", "long"] = "short"
-    ) -> Dict[str, Any]:
+    def get_context(self, context_size: Literal["short", "long"] = "short") -> dict[str, Any]:
         if context_size == "long":
             return dict(id=self.id, title=self.title, content=self.content)
         else:
@@ -612,8 +590,8 @@ class Note(ObjectModel):
 class ChatSession(ObjectModel):
     table_name: ClassVar[str] = "chat_session"
     nullable_fields: ClassVar[set[str]] = {"model_override"}
-    title: Optional[str] = None
-    model_override: Optional[str] = None
+    title: str | None = None
+    model_override: str | None = None
 
     async def relate_to_notebook(self, notebook_id: str) -> Any:
         if not notebook_id:
@@ -626,9 +604,7 @@ class ChatSession(ObjectModel):
         return await self.relate("refers_to", source_id)
 
 
-async def text_search(
-    keyword: str, results: int, source: bool = True, note: bool = True
-):
+async def text_search(keyword: str, results: int, source: bool = True, note: bool = True):
     if not keyword:
         raise InvalidInputError("Search keyword cannot be empty")
     try:
@@ -641,7 +617,7 @@ async def text_search(
         )
         return search_results
     except Exception as e:
-        logger.error(f"Error performing text search: {str(e)}")
+        logger.error(f"Error performing text search: {e!s}")
         logger.exception(e)
         raise DatabaseOperationError(e)
 
@@ -674,6 +650,6 @@ async def vector_search(
         )
         return search_results
     except Exception as e:
-        logger.error(f"Error performing vector search: {str(e)}")
+        logger.error(f"Error performing vector search: {e!s}")
         logger.exception(e)
         raise DatabaseOperationError(e)

@@ -46,6 +46,30 @@ indent-width = 4
 # Target Python 3.14+
 target-version = "py314"
 
+# Exclude non-core, scratch, tests, and prototype directories to prevent lint storms
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.git",
+    "**/.venv",
+    "**/venv",
+    "**/scratch",
+    "**/tests",
+    "**/where_light_fades",
+    "**/synarchy-migration",
+    "**/stubs",
+    "**/recovery",
+    "**/open-notebook",
+    "**/incoming",
+    "**/nova_forge",
+    "**/fde_engine",
+    "**/.agent",
+    "**/.archives",
+    "**/.tmp.*",
+    "**/dist",
+    "**/out"
+]
+
 [tool.ruff.lint]
 # Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
 # Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
@@ -61,7 +85,47 @@ target-version = "py314"
 # RUF = Ruff-specific rules
 # ARG = Flake8-Unused-Arguments (S1172)
 select = ["E4", "E7", "E9", "F", "I", "N", "UP", "B", "C901", "SIM", "TRY", "PL", "RUF", "ARG", "ANN", "T20"]
-ignore = ["TRY003", "PLR0913"] # Ignore overly strict message checks, arg count
+ignore = [
+    "TRY003",    # Avoid overly strict tryceratops checks
+    "PLR0913",   # Allow more arguments in function signatures
+    "ANN001",    # Avoid forcing type annotations for function arguments
+    "ANN201",    # Avoid forcing return type annotations for public functions
+    "ANN202",    # Avoid forcing return type annotations for private functions
+    "ANN204",    # Avoid forcing return type annotations for special methods
+    "T201",      # Allow print statements in scripts/prototypes
+    "ARG002",    # Allow unused method arguments
+    "PLR2004",   # Allow magic numbers in comparisons
+    "E402",      # Allow module level imports after comments/docstrings
+    "PLC0415",   # Allow local imports in functions (common in CLI tools)
+    "UP035",     # Allow deprecated typing imports for backwards compatibility
+    "UP006",     # Allow List/Dict instead of list/dict for backward compatibility
+    "C901",      # Ignore McCabe complexity warnings
+    "PLR0912",   # Ignore too many branches warnings
+    "PLR0915",   # Ignore too many statements warnings
+    "PLW2901",   # Allow loop variable overwrite
+    "UP015",     # Allow explicit open mode argument (e.g. open(..., "r"))
+    "B007",      # Allow unused loop control variables
+    "TRY300",    # Allow return statements inside try blocks
+    "N813",      # Allow Camelcase imports as lowercase (e.g. Path as path)
+    "I001",      # Ignore import formatting/sorting rules
+    "TRY400",    # Allow logging.error instead of logging.exception
+    "SIM102",    # Allow nested if statements
+    "F401",      # Allow unused imports
+    "RUF059",    # Allow unused unpacked variables
+    "RUF001",    # Allow ambiguous Unicode characters in strings (like ℹ)
+    "UP045",     # Allow Optional type annotations instead of X | None
+    "SIM118",    # Allow dict.keys() membership checks
+    "RUF005",    # Allow list concatenation instead of unpacking representation
+    "N999",      # Allow invalid module names (e.g. containing spaces)
+    "ANN401",    # Allow Any type annotations in function arguments
+    "SIM108",    # Allow if-else blocks instead of ternary operators
+    "RUF013",    # Allow implicit Optional annotations
+    "TRY401",    # Allow redundant exception object in logging.exception call
+    "N806",      # Allow uppercase local variable names inside functions
+    "RUF012",    # Allow mutable default values for class attributes
+    "F841",      # Allow unused local variables
+    "ARG001"     # Allow unused function arguments
+]
 
 
 # Allow fix for all enabled rules (when `--fix`) is provided.

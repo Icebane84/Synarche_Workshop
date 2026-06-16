@@ -10,7 +10,6 @@ Search service layer using API.
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
-
 from typing import Any, Dict, List, Union
 
 from loguru import logger
@@ -32,7 +31,7 @@ class SearchService:
         search_sources: bool = True,
         search_notes: bool = True,
         minimum_score: float = 0.2,
-    ) -> List[Dict[str, Any]]:
+    ) -> list[dict[str, Any]]:
         """Search the knowledge base."""
         response = api_client.search(
             query=query,
@@ -52,7 +51,7 @@ class SearchService:
         strategy_model: str,
         answer_model: str,
         final_answer_model: str,
-    ) -> Union[Dict[Any, Any], List[Dict[Any, Any]]]:
+    ) -> dict[Any, Any] | list[dict[Any, Any]]:
         """Ask the knowledge base a question."""
         response = api_client.ask_simple(
             question=question,

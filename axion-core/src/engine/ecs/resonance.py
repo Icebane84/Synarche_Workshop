@@ -31,7 +31,7 @@ artifact_anchor:
 
 import logging
 from enum import Enum, auto
-from typing import Dict, Type
+from typing import Any, Dict, Type
 
 
 class ResonanceDomain(Enum):
@@ -55,6 +55,8 @@ class ResonanceRegistry:
         """Initializes the registry with an empty mapping set."""
         # Component Class -> ResonanceDomain
         self.mappings: Dict[Type, ResonanceDomain] = {}
+        # Registered ECS Systems
+        self._systems: list = []
 
     def register(self, component_type: Type, domain: ResonanceDomain) -> None:
         """Maps a component type to a specific functional domain.
@@ -77,6 +79,24 @@ class ResonanceRegistry:
 
         """
         return self.mappings.get(component_type, ResonanceDomain.CORE)
+
+    def register_system(self, system: Any) -> None:
+        """Registers an ECS system.
+
+        Args:
+            system (Any): The system instance to register.
+
+        """
+        self._systems.append(system)
+
+    def get_systems(self) -> list:
+        """Retrieves all registered ECS systems.
+
+        Returns:
+            list: The list of registered systems.
+
+        """
+        return self._systems
 
 
 class ResonanceAuditor:

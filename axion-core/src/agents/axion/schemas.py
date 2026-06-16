@@ -47,6 +47,7 @@ class RPGEngine(BaseModel):
         if v < 1:
             raise ValueError("Level must be >= 1")
         return v
+
     xp: int = 0
     authority: int = 0
     insight: int = 0

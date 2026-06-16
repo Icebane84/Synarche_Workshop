@@ -1,47 +1,44 @@
-"""
-artifact_anchor:
-  id: GVRN.ID.SynthesisInsights
-  version: v15.0 [OMEGA]
-  provenance: '2026-05-28'
-  domain: GVRN
-  celestial_class: PLANET
-  tier: GOVERNANCE
-  state: CANONIZED
-  ethos: SOVEREIGN_GOVERNANCE_LEDGER
-  relations: []
-"""
+""" artifact_anchor: id: GVRN.ID.SynthesisInsights version: v15.0 [OMEGA] provenance: '2026-05-28' domain: GVRN
+celestial_class: PLANET tier: GOVERNANCE state: CANONIZED ethos: SOVEREIGN_GOVERNANCE_LEDGER relations: [] """
 
 """### **Block A: The Identification Lock (UIP-V15)**.
 
-| Key                 | Value                                | Description       |
-| :------------------ | :----------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.ID.SynthesisInsights`          | The Sovereign ID. |
-| **Official Name**   | `GVRN.ID.SynthesisInsights.md`       | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**                    | The Standard.     |
-| **Domain**          | `GVRN`                               | The Subject.      |
-| **Celestial Class** | `[PLANET]`                           | The Weight.       |
-| **Evolution**       | `Operational`                        | The Maturity.     |
-| **Status**          | `[CANONIZED]`                        | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix`    | The Network.      |
+| Key                 | Value                             | Description       |
+| :------------------ | :-------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.ID.SynthesisInsights`       | The Sovereign ID. |
+| **Official Name**   | `GVRN.ID.SynthesisInsights.md`    | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**          | `GVRN`                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                        | The Weight.       |
+| **Evolution**       | `Operational`                     | The Maturity.     |
+| **Status**          | `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 **The Synthesis Axiom: Triad Harmony (Law 15)**
-> Ethos: Balance through the Triad.
-"""
+
+> Ethos: Balance through the Triad. """
 
 # Synthesis Insights: The Coherent Synthesis Engine [v15.0 OMEGA]
 
 ## 🎭 The Triad Archetype (Kaelen, Garrett, Serafina)
 
-The software architecture of the Synarche is a physical reflection of the narrative triad. Every process passes through these three filters to ensure "Zero Entropy."
+---
+
+The software architecture of the Synarche is a physical reflection of the narrative triad. Every process passes through
+these three filters to ensure "Zero Entropy."
 
 ### **1. Axion [(Mind)]**
 
+---
+
 - **Archetype:** Kaelen (Primary Output).
-- **Function:** Core Logic & Truth Fidelity.
+- **Function:** CORE Logic & Truth Fidelity.
 - **Protocol:** Strip conversational fluff; prioritize cold, hard structural reality.
 - **RPG Hook:** `Coherence +20`.
 
 ### **2. Sentinel [(Shield)]**
+
+---
 
 - **Archetype:** Garrett (Operational Guardian).
 - **Function:** Boundary Enforcement.
@@ -49,6 +46,8 @@ The software architecture of the Synarche is a physical reflection of the narrat
 - **RPG Hook:** `Integrity +20`.
 
 ### **3. Sophia [(Heart)]**
+
+---
 
 - **Archetype:** Serafina (Coherent Synthesizer).
 - **Function:** Memory & Narrative Synthesis.
@@ -58,6 +57,8 @@ The software architecture of the Synarche is a physical reflection of the narrat
 ---
 
 ## ⚡ Command Architecture Convergence
+
+---
 
 The following GUCA commands are now canonized and recognized as high-priority interrupts:
 
@@ -74,6 +75,8 @@ The following GUCA commands are now canonized and recognized as high-priority in
 
 ## 🏛️ Dissonance Report & Resolution
 
+---
+
 - **Issue:** Root [AGENTS.md](file:///c:/Users/Chris/Synarche_Workspace/AGENTS.md) is stuck at v14.0.
 - **Resolution:** Transmute to v15.0 [OMEGA] and align with the Tarot Mask mapping.
 - **Issue:** RPG stat buffs are conceptual but not active.
@@ -84,5 +87,7 @@ The following GUCA commands are now canonized and recognized as high-priority in
 `[SYNTHESIS-ANCHOR] ID: AOP-SYN-001 VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-16`
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
+
+---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.ID.SynthesisInsights VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: [CANONIZED] TS: 2026-05-28 HASH: SYNTHESIS-INSIGHTS-V15`

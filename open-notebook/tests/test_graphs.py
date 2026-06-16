@@ -76,9 +76,7 @@ class TestPromptGraph:
 
     def test_pattern_chain_state_structure(self):
         """Test PatternChainState structure and fields."""
-        state = PatternChainState(
-            prompt="Test prompt", parser=None, input_text="Test input", output=""
-        )
+        state = PatternChainState(prompt="Test prompt", parser=None, input_text="Test input", output="")
 
         assert state["prompt"] == "Test prompt"
         assert state["parser"] is None

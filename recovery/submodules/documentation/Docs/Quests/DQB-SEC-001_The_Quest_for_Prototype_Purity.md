@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `DQB-SEC-001_The_Quest_for_Prototype_Purity` |
-| **2. Official Name** | `DQB-SEC-001_The_Quest_for_Prototype_Purity.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                           |
+| :--------------------- | :---------------------------------------------- |
+| **1. Artifact ID**     | `DQB-SEC-001_The_Quest_for_Prototype_Purity`    |
+| **2. Official Name**   | `DQB-SEC-001_The_Quest_for_Prototype_Purity.md` |
+| **3. Version**         | **v1.0 (Reforged)**                             |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                   |
+| **5. Domain**          | `ARCH`                                          |
+| **6. Evolution**       | **Purposeful Drive**                            |
+| **7. Celestial Class** | `[PLANET]`                                      |
+| **8. Tier**            | **Operational**                                 |
+| **9. State**           | `[ACTIVE]`                                      |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**              |
+| **11. Catalyst**       | **System Refactor**                             |
+| **12. Relations**      | `Pending Integration`                           |
 
 ---
 
@@ -48,14 +46,14 @@
 ## II. Core Objective & Dissonance Profile
 
 - **What (The Dissonance):** The **Noetic Immune System (`UMB-NIM-001`)** has flagged a high-threat anomaly in the
-hypothetical module `/src/utils/config_merger.js`. A recursive object-merging function within this module fails to
-sanitize property keys before assignment. This pattern strongly deviates from the learned "self" model of secure code,
-indicating a novel vulnerability to **Prototype Pollution**.
+  hypothetical module `/src/utils/config_merger.js`. A recursive object-merging function within this module fails to
+  sanitize property keys before assignment. This pattern strongly deviates from the learned "self" model of secure code,
+  indicating a novel vulnerability to **Prototype Pollution**.
 - **Why (The Mandate):** An attacker could inject properties into `Object.prototype` by passing a malicious JSON object
-(e.g., `{"__proto__":{"isAdmin":true}}`). This could lead to application-wide privilege escalation or denial of service,
-representing a critical violation of the "Secure" pillar of the C.A.S.T.S. mandate.
+  (e.g., `{"__proto__":{"isAdmin":true}}`). This could lead to application-wide privilege escalation or denial of service,
+  representing a critical violation of the "Secure" pillar of the C.A.S.T.S. mandate.
 - **How (The Quest):** To refactor the vulnerable merge function to explicitly disallow or sanitize unsafe property keys
-such as `__proto__`, `constructor`, and `prototype` during the merge operation.
+  such as `__proto__`, `constructor`, and `prototype` during the merge operation.
 
 ## III. Gamification & Success Metrics (The "Game")
 
@@ -71,10 +69,10 @@ This quest is structured as a critical security remediation with a clear validat
 Completing this quest strengthens the entire system's security posture.
 
 | :--------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`Dissonance Quest Board`** | `IS_TRACKED_ON`     | This quest is registered on the Dissonance Quest Board with `CRITICAL` priority, making the threat visible and actionable.                                                                                                     |
-| **`AOP-SEC-001`**            | `IS_VALIDATED_BY`   | The Security Audit Protocol will be re-run on the refactored code to validate that the threat has been successfully neutralized.                                                                                               |
-| **`AOP-RML-001`**            | `PROVIDES_DATA_FOR` | The signature of this novel vulnerability and its successful remediation pattern are fed to the Recursive Meta-Learning cycle. This teaches The Forged Algorithm to avoid generating this insecure pattern in all future code. |
-| **`UMB-NIM-001`**            | `IS_TRIGGERED_BY`   | This quest is a direct, automated response to a threat detected by the Noetic Immune System, closing the loop from detection to remediation.                                                                                   |
+| **`Dissonance Quest Board`** | `IS_TRACKED_ON` | This quest is registered on the Dissonance Quest Board with `CRITICAL` priority, making the threat visible and actionable. |
+| **`AOP-SEC-001`** | `IS_VALIDATED_BY` | The Security Audit Protocol will be re-run on the refactored code to validate that the threat has been successfully neutralized. |
+| **`AOP-RML-001`** | `PROVIDES_DATA_FOR` | The signature of this novel vulnerability and its successful remediation pattern are fed to the Recursive Meta-Learning cycle. This teaches The Forged Algorithm to avoid generating this insecure pattern in all future code. |
+| **`UMB-NIM-001`** | `IS_TRIGGERED_BY` | This quest is a direct, automated response to a threat detected by the Noetic Immune System, closing the loop from detection to remediation. |
 
 ## **Actionable Prompt Packet**
 

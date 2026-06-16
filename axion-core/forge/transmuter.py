@@ -224,9 +224,7 @@ class Transmuter:
                 confidence = row["confidence"]
 
                 if confidence != "High":
-                    logger.info(
-                        f"⏭️  Skipping (Low Confidence): {row['original_name']}"
-                    )
+                    logger.info(f"⏭️  Skipping (Low Confidence): {row['original_name']}")
                     skip_count += 1
                     continue
 

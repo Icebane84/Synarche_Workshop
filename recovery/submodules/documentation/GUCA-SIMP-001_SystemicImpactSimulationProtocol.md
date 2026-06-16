@@ -14,8 +14,6 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
@@ -24,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `GUCA-SIMP-001_SystemicImpactSimulationProtocol` |
-| **2. Official Name** | `GUCA-SIMP-001_SystemicImpactSimulationProtocol.md` |
-| **3. Version** | **v1.0 (Reforged)** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+| Field                  | Value                                               |
+| :--------------------- | :-------------------------------------------------- |
+| **1. Artifact ID**     | `GUCA-SIMP-001_SystemicImpactSimulationProtocol`    |
+| **2. Official Name**   | `GUCA-SIMP-001_SystemicImpactSimulationProtocol.md` |
+| **3. Version**         | **v1.0 (Reforged)**                                 |
+| **4. Provenance**      | **Date Reforged: 2025-12-22**                       |
+| **5. Domain**          | `ARCH`                                              |
+| **6. Evolution**       | **Purposeful Drive**                                |
+| **7. Celestial Class** | `[PLANET]`                                          |
+| **8. Tier**            | **Operational**                                     |
+| **9. State**           | `[ACTIVE]`                                          |
+| **10. Ethos**          | **The Phoenix Ascension Protocol**                  |
+| **11. Catalyst**       | **System Refactor**                                 |
+| **12. Relations**      | `Pending Integration`                               |
 
 ---
 
@@ -70,8 +68,8 @@ impacts (e.g., "This change may affect the data integrity assumptions of AOP-PQC
 ## **Actionable Prompt Packet**
 
 - **🔮 CMD: SIMULATE_IMPACT**
-    - *Intent:* "Run a predictive impact analysis on a proposed code change."
+  - _Intent:_ "Run a predictive impact analysis on a proposed code change."
 - **🕸️ CMD: VISUALIZE_BLAST_RADIUS**
-    - *Intent:* "Generate a visual graph of all components affected by a modification."
+  - _Intent:_ "Generate a visual graph of all components affected by a modification."
 
 ###### **[ARTIFACT END]**

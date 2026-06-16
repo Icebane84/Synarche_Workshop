@@ -57,12 +57,12 @@ const mockUuidv4 = () =>
 
 // --- GVRN-STD-ENUM-001: ContextVector Enums (Polyglot Weaving) ---
 // These match the Python Enums for consistency across polyglot stack.
-const ContextEnv = { PROD: "PROD", DEV: "DEV" };
-const ClientType = { WEB: "WEB", GAME: "GAME", API: "API" };
-const AuthStatus = { VERIFIED: "VERIFIED", UNVERIFIED: "UNVERIFIED" };
+const contextEnv = { PROD: "PROD", DEV: "DEV" };
+const clientType = { WEB: "WEB", GAME: "GAME", API: "API" };
+const authStatus = { VERIFIED: "VERIFIED", UNVERIFIED: "UNVERIFIED" };
 
 // --- Input Schema Definition (Zod-first, for robust validation) ---
-const SuperpositionPayloadSchema = mockZod.object({
+const superpositionPayloadSchema = mockZod.object({
   BlockID: mockZod.string().uuid(),
   ContextVector: mockZod
     .array()

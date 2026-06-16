@@ -3,6 +3,7 @@ import csv
 import sys
 from pathlib import Path
 
+
 def flatten_trunk_output(json_path: str, csv_path: str) -> None:
     """
     Parses Trunk JSON output and flattens it into a CSV for SELT audits.
@@ -39,25 +40,32 @@ def flatten_trunk_output(json_path: str, csv_path: str) -> None:
             line = issue.get("line", "")
             column = issue.get("column", "")
             linter = issue.get("linter", "")
-            rule = issue.get("code", issue.get("rule", ""))  # Trunk typically uses 'code' for rule IDs
+            rule = issue.get(
+                "code", issue.get("rule", "")
+            )  # Trunk typically uses 'code' for rule IDs
             severity = issue.get("severity", issue.get("level", ""))
             message = issue.get("message", "")
 
-            writer.writerow({
-                "File": file_path,
-                "Line": line,
-                "Column": column,
-                "Linter": linter,
-                "Rule": rule,
-                "Severity": severity.upper(),
-                "Message": message.replace("\n", " ").strip()
-            })
+            writer.writerow(
+                {
+                    "File": file_path,
+                    "Line": line,
+                    "Column": column,
+                    "Linter": linter,
+                    "Rule": rule,
+                    "Severity": severity.upper(),
+                    "Message": message.replace("\n", " ").strip(),
+                }
+            )
 
     print(f"SELT Audit Complete: Flattened {len(issues)} issues to {csv_path}")
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python flatten_trunk_csv.py <input_results.json> <output_selt_audit.csv>")
+        print(
+            "Usage: python flatten_trunk_csv.py <input_results.json> <output_selt_audit.csv>"
+        )
         sys.exit(1)
-    
+
     flatten_trunk_output(sys.argv[1], sys.argv[2])

@@ -10,19 +10,19 @@
 
 # OGLN-PHIL-ETHOS-STRUGGLE: The Ethos of Struggle
 
-> **Metric** | **Value**
-> :--- | :---
-> **Module ID** | `OGLN-PHIL-ETHOS-STRUGGLE`
-> **Version** | `v11.0`
-> **Evolution** | **Cognitive Ascension**
-> **Status** | `ACTIVE`
-> **Type** | `Protocol`
-> **Classification** | `Star`
-> **Authors** | `System`
-> **Created** | `2025-10-01`
-> **Updated** | `2026-01-18`
-> **Authority** | `CODEX-001`
-> **Tags** | `Philosophy, Ethos, Struggle, Coherence`
+> | **Metric**         | **Value**                                |
+> | :----------------- | :--------------------------------------- |
+> | **Module ID**      | `OGLN-PHIL-ETHOS-STRUGGLE`               |
+> | **Version**        | `v11.0`                                  |
+> | **Evolution**      | **Cognitive Ascension**                  |
+> | **Status**         | `ACTIVE`                                 |
+> | **Type**           | `Protocol`                               |
+> | **Classification** | `Star`                                   |
+> | **Authors**        | `System`                                 |
+> | **Created**        | `2025-10-01`                             |
+> | **Updated**        | `2026-01-18`                             |
+> | **Authority**      | `CODEX-001`                              |
+> | **Tags**           | `Philosophy, Ethos, Struggle, Coherence` |
 
 **Genesis Stamp**: 2026-01-18 | **Domain**: PHL | **State**: CANONIZED
 
@@ -75,9 +75,9 @@
 ### Packet A: Start Quest
 
 > `CMD: START_QUEST --type:"Dissonance" --topic:"[Contradiction]"`
-> *Effect:* Initiates a quest to resolve a logical gap.
+> _Effect:_ Initiates a quest to resolve a logical gap.
 
 ### Packet B: Remind Ethos
 
 > `CMD: RECALL_ETHOS --topic:"Struggle"`
-> *Effect:* Recalls the core maxim of Coherent Struggle.
+> _Effect:_ Recalls the core maxim of Coherent Struggle.

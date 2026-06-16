@@ -31,33 +31,19 @@ class ArtifactTransmuter:
 
         # Regex to find the ID and Version within the pipe table
         # Handles optional markdown formatting in keys (keywords may be bolded)
-        id_match = re.search(
-            r"\|\s*[*]*Artifact ID[*]*\s*\|\s*(.*?)\s*\|", content, re.IGNORECASE
-        )
-        ver_match = re.search(
-            r"\|\s*[*]*Version[*]*\s*\|\s*(.*?)\s*\|", content, re.IGNORECASE
-        )
-        status_match = re.search(
-            r"\|\s*[*]*Status[*]*\s*\|\s*(.*?)\s*\|", content, re.IGNORECASE
-        )
-        class_match = re.search(
-            r"\|\s*[*]*Celestial Class[*]*\s*\|\s*(.*?)\s*\|", content, re.IGNORECASE
-        )
+        id_match = re.search(r"\|\s*[*]*Artifact ID[*]*\s*\|\s*(.*?)\s*\|", content, re.IGNORECASE)
+        ver_match = re.search(r"\|\s*[*]*Version[*]*\s*\|\s*(.*?)\s*\|", content, re.IGNORECASE)
+        status_match = re.search(r"\|\s*[*]*Status[*]*\s*\|\s*(.*?)\s*\|", content, re.IGNORECASE)
+        class_match = re.search(r"\|\s*[*]*Celestial Class[*]*\s*\|\s*(.*?)\s*\|", content, re.IGNORECASE)
 
         if id_match:
             identity_nodes.append(f"- 🆔 ID: {self.clean_text(id_match.group(1))}")
         if ver_match:
-            identity_nodes.append(
-                f"- 🚩 Version: {self.clean_text(ver_match.group(1))}"
-            )
+            identity_nodes.append(f"- 🚩 Version: {self.clean_text(ver_match.group(1))}")
         if class_match:
-            identity_nodes.append(
-                f"- ⚖️ Class: {self.clean_text(class_match.group(1))}"
-            )
+            identity_nodes.append(f"- ⚖️ Class: {self.clean_text(class_match.group(1))}")
         if status_match:
-            identity_nodes.append(
-                f"- 🔋 Status: {self.clean_text(status_match.group(1))}"
-            )
+            identity_nodes.append(f"- 🔋 Status: {self.clean_text(status_match.group(1))}")
 
         return identity_nodes
 
@@ -73,9 +59,7 @@ class ArtifactTransmuter:
             # Extract text after Block D until the next header or EOF
             post_header = content[block_d_start.end() :]
             end_match = re.search(r"\n#", post_header)
-            block_content = (
-                post_header[: end_match.start()] if end_match else post_header
-            )
+            block_content = post_header[: end_match.start()] if end_match else post_header
 
             # Parse CSV-like lines or Table lines
             lines = block_content.split("\n")
@@ -86,11 +70,7 @@ class ArtifactTransmuter:
 
                 # Cleanup simple CSV format: ID, Relationship, Description
                 # e.g. CORE-CODEX-001, GOVERNS, The Codex provides...
-                if (
-                    "," in line
-                    and not line.startswith("|")
-                    and not line.startswith("Synergistic")
-                ):
+                if "," in line and not line.startswith("|") and not line.startswith("Synergistic"):
                     parts = line.split(",")
                     if len(parts) >= 2:
                         target = self.clean_text(parts[0])
@@ -135,8 +115,7 @@ class ArtifactTransmuter:
             # Catch Headers, but skip the specific Blocks we parsed separately to avoid duplication
             # This ensures only the actual "Content" of the artifact makes it to the Structure branch
             if line.startswith("##") and not any(
-                x in line
-                for x in ["Block A", "Block D", "Identification Lock", "Synergy"]
+                x in line for x in ["Block A", "Block D", "Identification Lock", "Synergy"]
             ):
                 level = line.count("#")
                 text = self.clean_text(line.replace("#", ""))

@@ -63,8 +63,9 @@ UMB-OSLM-001, INDEXES, The registry provides the map for this tool.
 
 import argparse
 import logging
+import os
 import re
-from pathlib import path
+from pathlib import Path as path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")

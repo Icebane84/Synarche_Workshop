@@ -17,13 +17,9 @@ async def main() -> None:
     logger.info("Connecting to SurrealDB...")
 
     # Check if notebook already exists
-    existing = await repo_query(
-        "SELECT * FROM notebook WHERE name = 'Where Light Fades'"
-    )
+    existing = await repo_query("SELECT * FROM notebook WHERE name = 'Where Light Fades'")
     if existing:
-        logger.info(
-            f"Notebook 'Where Light Fades' already exists with ID: {existing[0]['id']}"
-        )
+        logger.info(f"Notebook 'Where Light Fades' already exists with ID: {existing[0]['id']}")
         return
 
     logger.info("Creating 'Where Light Fades' notebook...")

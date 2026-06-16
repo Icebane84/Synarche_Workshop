@@ -20,9 +20,7 @@ TARGET_FOLDERS = [
 def create_notebook(name, description):
     """Create a notebook and return its ID"""
     try:
-        response = requests.post(
-            f"{API_URL}/notebooks", json={"name": name, "description": description}
-        )
+        response = requests.post(f"{API_URL}/notebooks", json={"name": name, "description": description})
         response.raise_for_status()
         return response.json()["id"]
     except Exception as e:
@@ -78,9 +76,7 @@ def main() -> None:
         notebook_name = f"Synarche: {folder_name}"
 
         # Create Notebook
-        notebook_id = create_notebook(
-            notebook_name, f"Imported documentation from {folder_name}"
-        )
+        notebook_id = create_notebook(notebook_name, f"Imported documentation from {folder_name}")
         if not notebook_id:
             continue
 

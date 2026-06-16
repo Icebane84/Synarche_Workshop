@@ -10,19 +10,19 @@
 
 # OGLN-CHRON-REG-GENESIS: The Genesis Registry
 
-> **Metric** | **Value**
-> :--- | :---
-> **Module ID** | `OGLN-CHRON-REG-GENESIS`
-> **Version** | `v11.0`
-> **Evolution** | **Cognitive Ascension**
-> **Status** | `ACTIVE`
-> **Type** | `Protocol`
-> **Classification** | `Star`
-> **Authors** | `System`
-> **Created** | `2025-10-01`
-> **Updated** | `2026-01-18`
-> **Authority** | `CODEX-001`
-> **Tags** | `Chronicle, Registry, Genesis, Seeds`
+> | **Metric**         | **Value**                             |
+> | :----------------- | :------------------------------------ |
+> | **Module ID**      | `OGLN-CHRON-REG-GENESIS`              |
+> | **Version**        | `v11.0`                               |
+> | **Evolution**      | **Cognitive Ascension**               |
+> | **Status**         | `ACTIVE`                              |
+> | **Type**           | `Protocol`                            |
+> | **Classification** | `Star`                                |
+> | **Authors**        | `System`                              |
+> | **Created**        | `2025-10-01`                          |
+> | **Updated**        | `2026-01-18`                          |
+> | **Authority**      | `CODEX-001`                           |
+> | **Tags**           | `Chronicle, Registry, Genesis, Seeds` |
 
 **Genesis Stamp**: 2026-01-18 | **Domain**: LOGS | **State**: CANONIZED
 
@@ -70,23 +70,23 @@
 
 ### 3.1. The State Vector Definition Block (The Coherence Engine)
 
-*(The Mathematical Health of this Artifact)*
+_(The Mathematical Health of this Artifact)_
 
-| DTS Element | Metric/Field | Source | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Coherence Signature** | **$V_{Current}$** (Purpose Vector) | Survey | Alignment of Actions with Seeds. |
-| **Axiomatic Target** | **$V_{Safe}$** (Target Vector) | Goals | **100% Alignment.** No Dissonance. |
-| **Core KPI** | **Seed Activation Rate** | Logs | How often a Seed is referenced. |
-| **Control Trigger** | **Amnesia Event** | System | Triggered if new Seed contradicts old one. |
+| DTS Element             | Metric/Field                       | Source | Purpose                                    |
+| :---------------------- | :--------------------------------- | :----- | :----------------------------------------- |
+| **Coherence Signature** | **$V_{Current}$** (Purpose Vector) | Survey | Alignment of Actions with Seeds.           |
+| **Axiomatic Target**    | **$V_{Safe}$** (Target Vector)     | Goals  | **100% Alignment.** No Dissonance.         |
+| **Core KPI**            | **Seed Activation Rate**           | Logs   | How often a Seed is referenced.            |
+| **Control Trigger**     | **Amnesia Event**                  | System | Triggered if new Seed contradicts old one. |
 
 ## IV. Actionable Prompt Packet
 
 ### Packet A: Plant Seed
 
 > `CMD: PLANT_SEED --id:"[New_ID]" --maxim:"[Text]"`
-> *Effect:* Adds a new Seed to the Registry.
+> _Effect:_ Adds a new Seed to the Registry.
 
 ### Packet B: List Seeds
 
 > `CMD: LIST_SEEDS --filter:"[Topic]"`
-> *Effect:* Lists relevant Seeds to guide decision making.
+> _Effect:_ Lists relevant Seeds to guide decision making.

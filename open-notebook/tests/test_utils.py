@@ -140,9 +140,7 @@ class TestTokenUtilities:
         from unittest.mock import patch
 
         # Make tiktoken raise an ImportError to trigger fallback
-        with patch(
-            "tiktoken.get_encoding", side_effect=ImportError("tiktoken not available")
-        ):
+        with patch("tiktoken.get_encoding", side_effect=ImportError("tiktoken not available")):
             text = "one two three four five"
             count = token_count(text)
 

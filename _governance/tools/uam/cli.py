@@ -24,9 +24,10 @@ from .analyzer import TopologicalAnalyzer
 from .reporter import DiagnosticReporter
 from .reconciler import Reconciler
 
+
 def execute_pipeline(target_dir: str, mode: str = "lint", scope: str = None) -> bool:
     """Orchestrates the formal 9-stage Architectural Governance compiler sequence."""
-    
+
     # Instantiate Pipeline Core classes
     crawler = WorkspaceCrawler(target_dir, tier_scope=scope)
     parser = ArtifactParser()
@@ -41,7 +42,7 @@ def execute_pipeline(target_dir: str, mode: str = "lint", scope: str = None) -> 
 
     # Phase 1: Discovery
     matched_files = crawler.discover_files()
-    
+
     processed_count = 0
     modified_count = 0
     local_errors = 0
@@ -58,24 +59,30 @@ def execute_pipeline(target_dir: str, mode: str = "lint", scope: str = None) -> 
                 content = f.read()
 
             # Phase 2: Extraction
-            anchor_data, docstring_text, raw_block = parser.extract_anchor(file_path, content)
-            
+            anchor_data, docstring_text, raw_block = parser.extract_anchor(
+                file_path, content
+            )
+
             new_content = content
             diagnostics = []
             final_metadata = None
 
             if anchor_data:
                 # Phase 3 & 4: Validation and Semantic Analysis
-                fixed_data, corrections = validator.propose_auto_corrections(anchor_data)
+                fixed_data, corrections = validator.propose_auto_corrections(
+                    anchor_data
+                )
                 final_metadata = fixed_data
-                
+
                 # Check Schema shapes
                 schema_errors = validator.run_schema_validation(fixed_data)
                 for se in schema_errors:
                     diagnostics.append({"severity": "ERROR", "msg": se})
 
                 # Check bidirectional imports
-                drifts = validator.run_semantic_drift_analysis(file_path, content, fixed_data.get("relations", []))
+                drifts = validator.run_semantic_drift_analysis(
+                    file_path, content, fixed_data.get("relations", [])
+                )
                 for d in drifts:
                     diagnostics.append({"severity": "WARNING", "msg": d})
 
@@ -86,10 +93,20 @@ def execute_pipeline(target_dir: str, mode: str = "lint", scope: str = None) -> 
                 lacks_ignore = False
                 if ext in (".js", ".ts") and "// prettier-ignore" not in raw_block:
                     lacks_ignore = True
-                    diagnostics.append({"severity": "INFO", "msg": "Propose: Add prettier-ignore formatting safety flag"})
+                    diagnostics.append(
+                        {
+                            "severity": "INFO",
+                            "msg": "Propose: Add prettier-ignore formatting safety flag",
+                        }
+                    )
                 elif ext == ".html" and "prettier-ignore" not in raw_block:
                     lacks_ignore = True
-                    diagnostics.append({"severity": "INFO", "msg": "Propose: Add prettier-ignore formatting safety flag"})
+                    diagnostics.append(
+                        {
+                            "severity": "INFO",
+                            "msg": "Propose: Add prettier-ignore formatting safety flag",
+                        }
+                    )
 
                 # Compute potential modifications
                 if corrections or schema_errors or drifts or lacks_ignore:
@@ -102,12 +119,19 @@ def execute_pipeline(target_dir: str, mode: str = "lint", scope: str = None) -> 
                             new_content = content.replace(match.group(0), wrapped)
             else:
                 # Missing Anchor Block
-                diagnostics.append({"severity": "ERROR", "msg": "Missing mandatory artifact_anchor block"})
+                diagnostics.append(
+                    {
+                        "severity": "ERROR",
+                        "msg": "Missing mandatory artifact_anchor block",
+                    }
+                )
                 inferred = crawler.infer_metadata(file_path)
                 final_metadata = inferred
                 wrapped = reconciler.wrap_anchor_block(inferred, ext)
                 new_content = f"{wrapped}\n\n{content}"
-                diagnostics.append({"severity": "INFO", "msg": f"Inferred block layout: {inferred}"})
+                diagnostics.append(
+                    {"severity": "INFO", "msg": f"Inferred block layout: {inferred}"}
+                )
 
             # Phase 5: Register Node for Global compiling
             if final_metadata and "id" in final_metadata:
@@ -127,7 +151,9 @@ def execute_pipeline(target_dir: str, mode: str = "lint", scope: str = None) -> 
 
                 # Phase 8: Reconciliation
                 if mode == "interactive":
-                    if reconciler.prompt_interactive_reconciliation(file_path, diagnostics):
+                    if reconciler.prompt_interactive_reconciliation(
+                        file_path, diagnostics
+                    ):
                         with open(file_path, "w", encoding="utf-8") as f:
                             f.write(new_content)
                         modified_count += 1
@@ -146,11 +172,11 @@ def execute_pipeline(target_dir: str, mode: str = "lint", scope: str = None) -> 
     analyzer = TopologicalAnalyzer(target_dir, compiler.registry)
     global_errors = analyzer.validate_referential_integrity()
     global_errors.extend(analyzer.validate_tier_crossings())
-    
+
     # Run V3/V4 Semantic Boundary Checks
     semantic_leaks = analyzer.validate_semantic_boundaries()
     global_errors.extend(semantic_leaks)
-    
+
     scc_cycles = analyzer.detect_cycle_clusters_tarjan()
 
     DiagnosticReporter.print_global_audit_results(global_errors, scc_cycles)
@@ -169,24 +195,30 @@ def execute_pipeline(target_dir: str, mode: str = "lint", scope: str = None) -> 
         sccs=len(scc_cycles),
         modified=modified_count,
         fails=len(failures),
-        mode=mode
+        mode=mode,
     )
 
-    success = (local_errors == 0 and len(global_errors) == 0 and len(failures) == 0)
+    success = local_errors == 0 and len(global_errors) == 0 and len(failures) == 0
     return success
+
 
 def find_workspace_root(start_path: str) -> str:
     """Recursively walks upwards from a start path to locate the true workspace root containing .agent or .git."""
     curr = os.path.abspath(start_path)
     for _ in range(10):
-        if os.path.exists(os.path.join(curr, ".git")) or os.path.exists(os.path.join(curr, ".agent")):
+        if os.path.exists(os.path.join(curr, ".git")) or os.path.exists(
+            os.path.join(curr, ".agent")
+        ):
             return curr
         parent = os.path.dirname(curr)
         if parent == curr:
             break
         curr = parent
     # Fallback default
-    return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(start_path))))
+    return os.path.dirname(
+        os.path.dirname(os.path.dirname(os.path.abspath(start_path)))
+    )
+
 
 def main():
     target_directory = find_workspace_root(__file__)
@@ -200,7 +232,7 @@ def main():
     elif "--interactive" in args:
         exec_mode = "interactive"
         args.remove("--interactive")
-    
+
     for i, arg in enumerate(args):
         if arg == "--scope" and i + 1 < len(args):
             scope = args[i + 1]

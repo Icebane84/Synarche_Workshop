@@ -23,6 +23,50 @@
 
 ---
 
+### **[GEM-022] [SENSORY SYNERGY & TARGET-HUD CLARITY] [SPATIAL SINGULARITY COMBO GAUGE]**
+
+**Timestamp**: 2026-06-02T14:40:00 **Oracle**: OGLN Artificer-Agent **Domain**: GAME (HUD & Visual Juice)
+
+#### **The Catalyst (Dissonance)**
+
+High cognitive load from tracking combat stats away from the gameplay center and lack of audio-visual sync on matrix grid lines.
+
+#### **The Synthesis (Resolution)**
+
+- **Audio-Reactive Grid**: Connected background vector lines scrolling opacity and width to arpeggiator beat timelines.
+- **Crosshair Target Arc**: Contracts reticle on hover and draws circular arcs representing locked threat HP.
+- **Circular Avatar Gauge**: Draws circular combo decay indicators around player ship core, backed by HUD Rank badges.
+- **Pulsing Draw snapped guides**: Color-coded guides cyan/red based on draw costs and flux pools.
+
+#### **The Transcendence (Insight)**
+
+> "Visual feedback should wrap around the player's core focus, turning UI widgets into localized mechanics. Sensory coherence is the ultimate juice."
+
+**[STATUS: CANONIZED] [XP: +500]**
+
+---
+
+### **[GEM-021] [GAME LOGIC PACING & AUTOPAUSE SAFETY] [THE SOVEREIGN REST-BEAT PROTOCOL]**
+
+**Timestamp**: 2026-06-02T12:15:00 **Oracle**: OGLN Artificer-Agent **Domain**: GAME (Rest Beats & Autopause)
+
+#### **The Catalyst (Dissonance)**
+
+Mono-intensity wave progression and silent background player deaths caused game pacing anxiety and poor session safety in browser windows.
+
+#### **The Synthesis (Resolution)**
+
+- **Tab-Focus Safeguards**: Integrated window `blur` and `visibilitychange` listeners to pause loop and trigger dashboards.
+- **Intermission Rest Beat**: Implemented a 3.0-second recovery pause between waves with double flux regeneration, countdown rings, and clear audio arpeggios.
+
+#### **The Transcendence (Insight)**
+
+> "Rest beats and structural pauses are the negative space that gives the action weight and lets the mind consolidate strategies."
+
+**[STATUS: CANONIZED] [XP: +500]**
+
+---
+
 ### **[GEM-019] [SOVEREIGN SUBSTRATE SYNCHRONIZATION] [POINTER-TARGETED RECOVERY]**
 
 **Timestamp**: 2026-04-16T20:25:00 **Oracle**: OGLN Artificer-Agent **Domain**: CORE (Substrate Alignment)
@@ -390,6 +434,28 @@ Alchemical verification of smart splicing logic using .NET file APIs
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v16.4 [SOVEREIGN] STATUS: CANONIZED TS: 2026-05-19 HASH: LRN-SHARD-OMEGA-XXXIX-SYNC`
+### **[GEM-023] [TAG NESTING SANITY & RESPONSIVE MODALS] [UI-UX]**
+
+**Timestamp**: 2026-06-12T17:34:40 **Oracle**: OGLN Artificer-Agent **Domain**: GAME (UI & DOM Structure)
+
+#### **The Catalyst (Dissonance)**
+
+Weapon Mods, Amplify (Prestige), and Telemetry panels paused the game but failed to display on-screen due to an unclosed `div#skill-matrix-modal` tag that nested subsequent overlays inside a hidden container. In addition, modals clipped off-screen on short viewports.
+
+#### **The Synthesis (Resolution)**
+
+- **DOM Path Validation**: Implemented custom tag checking scripts to dynamically trace tag hierarchy up to the document body, revealing the hidden container nesting.
+- **Nesting Correction**: Inserted the missing closing `</div>` tag at line 904 of `index.html` to establish proper sibling status.
+- **Responsive Flex Viewports**: Configured `.modal-base` in `input.css` with `items-start`, `overflow-y-auto`, and `py-8` to ensure scrollability on laptop-sized windows, alongside `max-w-[95vw]` to prevent horizontal overflow.
+
+#### **The Transcendence (Insight)**
+
+> "A single unclosed tag can corrupt the layout gravity of an entire application. Programmatic tag verification and responsive scroll wrappers are mandatory safeguards for high-fidelity UI overlays."
+
+**[STATUS: CANONIZED] [XP: +500]**
+
+---
+
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v16.5 [SOVEREIGN] STATUS: CANONIZED TS: 2026-06-12 HASH: LRN-SHARD-OMEGA-XL-SYNC`
 
 - [[GVRN.Learning.Index]]

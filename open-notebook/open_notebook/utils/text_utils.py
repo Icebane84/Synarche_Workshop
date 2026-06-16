@@ -28,9 +28,7 @@ def remove_non_printable(text: str) -> str:
     text = re.sub(r"[\u2028\u2029\r]", "\n", text)
 
     # Remove control characters, except newlines and tabs
-    text = "".join(
-        char for char in text if unicodedata.category(char)[0] != "C" or char in "\n\t"
-    )
+    text = "".join(char for char in text if unicodedata.category(char)[0] != "C" or char in "\n\t")
 
     # Replace non-breaking spaces with regular spaces
     text = text.replace("\xa0", " ").strip()

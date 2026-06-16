@@ -72,7 +72,7 @@
 | `AOP-TRP-001`                                                  | [Template Refactoring Protocol](../2_Protocols/AOP-TRP-001_TemplateRefactoringProtocol_v11.0.md)                                                                                                              | `v11.0` | `ACTIVE` |
 | `AOP-VIS-ICOM-001`                                             | [The Gravitational Lensing Protocol](../2_Protocols/AOP-VIS-ICOM-001_TheGravitationalLensingProtocol_v11.0.md)                                                                                                | `v11.0` | `ACTIVE` |
 | `AOP-VSI-001`                                                  | [AOP-VSI-001: Validate Structural Integrity Protocol](../2_Protocols/AOP-VSI-001_AOP-VSI-001ValidateStructuralIntegrityProtocol_v11.0.md)                                                                     | `v11.0` | `ACTIVE` |
-| `UMB-ARCH-OATH-001`                                            | [UMB-ARCH-OATH-001: Oathbringer System Architecture](../4_Blueprints/UMB-ARCH-OATH-001_OathbringerSystemArchitecture_v11.0.md) | `v11.0` | `ACTIVE` |
+| `UMB-ARCH-OATH-001`                                            | [UMB-ARCH-OATH-001: Oathbringer System Architecture](../4_Blueprints/UMB-ARCH-OATH-001_OathbringerSystemArchitecture_v11.0.md)                                                                                | `v11.0` | `ACTIVE` |
 | `UMB-ARCH-PRESTIGE-001`                                        | [UMB-ARCH-PRESTIGE-001: Phoenix Prestige Architecture](../4_Blueprints/UMB-ARCH-PRESTIGE-001_PhoenixPrestigeArchitecture_v11.0.md)                                                                            | `v11.0` | `ACTIVE` |
 | `CBM-FORGE-001`                                                | [CBM-FORGE-001_The_Forge_Engine (v10.0)](../1_Modules/CBM-FORGE-001_CBM-FORGE-001_The_Forge_Engine_v11.0.md)                                                                                                  | `v11.0` | `ACTIVE` |
 | `CMD-AXION-001`                                                | [CMD-AXION-001](../3_Commands/CMD-AXION-001_CMD-AXION-001_v11.0.md)                                                                                                                                           | `v11.0` | `ACTIVE` |
@@ -176,10 +176,10 @@
 
 ## V. Experience Logs
 
-| Module ID | Title | Version | Status |
-| :-------- | :---- | :------ | :----- |
-| `SELT-CSL-2026.01.27` | [Supabase Refactor & Systemic Alignment](../5_Logs/CSL/SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md) | `v1.0` | `ACTIVE` |
-| `SELT-CSL-2026.01.27` | [Refactor Execution & Metadata Canonization](../5_Logs/CSL/SELT-CSL-2026.01.27_RefactorExecution_v1.0.md) | `v1.0` | `ACTIVE` |
+| Module ID             | Title                                                                                                     | Version | Status   |
+| :-------------------- | :-------------------------------------------------------------------------------------------------------- | :------ | :------- |
+| `SELT-CSL-2026.01.27` | [Supabase Refactor & Systemic Alignment](../5_Logs/CSL/SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md)      | `v1.0`  | `ACTIVE` |
+| `SELT-CSL-2026.01.27` | [Refactor Execution & Metadata Canonization](../5_Logs/CSL/SELT-CSL-2026.01.27_RefactorExecution_v1.0.md) | `v1.0`  | `ACTIVE` |
 
 ## VI. Unclassified / Reference
 

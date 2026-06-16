@@ -36,13 +36,13 @@ async def run_transformation(state: dict, config: RunnableConfig) -> dict:
     transformation_template_text = transformation.prompt
     default_prompts: DefaultPrompts = DefaultPrompts(transformation_instructions=None)
     if default_prompts.transformation_instructions:
-        transformation_template_text = f"{default_prompts.transformation_instructions}\n\n{transformation_template_text}"
+        transformation_template_text = (
+            f"{default_prompts.transformation_instructions}\n\n{transformation_template_text}"
+        )
 
     transformation_template_text = f"{transformation_template_text}\n\n# INPUT"
 
-    system_prompt = Prompter(template_text=transformation_template_text).render(
-        data=state
-    )
+    system_prompt = Prompter(template_text=transformation_template_text).render(data=state)
     content_str = str(content) if content else ""
     payload = [SystemMessage(content=system_prompt), HumanMessage(content=content_str)]
     chain = await provision_langchain_model(
@@ -55,9 +55,7 @@ async def run_transformation(state: dict, config: RunnableConfig) -> dict:
     response = await chain.ainvoke(payload)
 
     # Clean thinking content from the response
-    response_content = (
-        response.content if isinstance(response.content, str) else str(response.content)
-    )
+    response_content = response.content if isinstance(response.content, str) else str(response.content)
     cleaned_content = clean_thinking_content(response_content)
 
     if source:

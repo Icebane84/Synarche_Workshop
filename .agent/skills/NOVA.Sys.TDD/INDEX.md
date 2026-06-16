@@ -2,9 +2,15 @@
 id: NOVA.Sys.TDD.Index
 name: TDD Workflow Index
 type: INDEX
-tags: ['#NOVA/Sys/TDD', '#INDEX']
-links: ['[[NOVA.Sys.TDD.Skill]]', '[[NOVA.Sys.TDD.AOP]]', '[[NOVA.Sys.TDD.GUCA]]', '[[NOVA.Sys.TDD.SELT]]']
-description: 'The Sovereign Map for Test-Driven Development and the RED-GREEN-REFACTOR Cycle.'
+tags: ["#NOVA/Sys/TDD", "#INDEX"]
+links:
+  [
+    "[[NOVA.Sys.TDD.Skill]]",
+    "[[NOVA.Sys.TDD.AOP]]",
+    "[[NOVA.Sys.TDD.GUCA]]",
+    "[[NOVA.Sys.TDD.SELT]]",
+  ]
+description: "The Sovereign Map for Test-Driven Development and the RED-GREEN-REFACTOR Cycle."
 ---
 
 # TDD WORKFLOW INDEX | UMB-NOVA.Sys.TDD

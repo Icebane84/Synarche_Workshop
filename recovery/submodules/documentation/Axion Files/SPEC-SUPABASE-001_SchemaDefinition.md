@@ -123,10 +123,10 @@ CREATE TABLE IF NOT EXISTS notifications (
 
 - **Trigger:** Database Webhook (INSERT on `conversation_history` WHERE sender='Chris').
 - **Logic:**
-    1. Fetch last 20 messages for context.
-    2. Fetch `axion_state` for system instructions.
-    3. Call LLM API.
-    4. Insert response into `conversation_history`.
+  1. Fetch last 20 messages for context.
+  2. Fetch `axion_state` for system instructions.
+  3. Call LLM API.
+  4. Insert response into `conversation_history`.
 
 ### **2. Function: `run-unsupervised-discovery`**
 
@@ -134,9 +134,9 @@ CREATE TABLE IF NOT EXISTS notifications (
 
 - **Trigger:** Supabase Cron (e.g., `0 3 * * *` - Daily at 3 AM).
 - **Logic:**
-    1. (Example) Run `catalyst_weaver` logic on recent artifacts.
-    2. If `Synergy_Score > 0.8`, insert into `discovered_insights`.
-    3. Insert alert into `notifications`.
+  1. (Example) Run `catalyst_weaver` logic on recent artifacts.
+  2. If `Synergy_Score > 0.8`, insert into `discovered_insights`.
+  3. Insert alert into `notifications`.
 
 ---
 
@@ -146,8 +146,8 @@ CREATE TABLE IF NOT EXISTS notifications (
 
 - **Channel:** `room:axion_prime`
 - **Events:**
-    - `INSERT` on `conversation_history` (Chat UI)
-    - `INSERT` on `notifications` (Toast Alert UI)
+  - `INSERT` on `conversation_history` (Chat UI)
+  - `INSERT` on `notifications` (Toast Alert UI)
 
 ---
 

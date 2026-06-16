@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.EDD.002` | The Sovereign ID. |
-| **Official Name** | `GVRN.EDD.002.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.EDD.002`                | The Sovereign ID. |
+| **Official Name** | `GVRN.EDD.002.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -38,29 +33,30 @@
 ###### **[ARTIFACT START]**
 
 ---
+
 UIP: AOP-EDD-002
 Title: Ethos-Driven Design Protocol
-Source: 
+Source:
 
-  - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md)
+- [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md)
 
 Description: >
-  Mandatory procedure for designing new architectural artifacts, ensuring their creation is explicitly and traceably governed by a pre-defined core ethos.
+Mandatory procedure for designing new architectural artifacts, ensuring their creation is explicitly and traceably governed by a pre-defined core ethos.
 Version: 11.0
 Status: ACTIVE
 Compliance: OGLN v11.0
-Genesis: 
+Genesis:
 
-  - Author: The Synarche Workshop
-  - Date: 2025-10-22
-  - Timestamp: 1761100800
+- Author: The Synarche Workshop
+- Date: 2025-10-22
+- Timestamp: 1761100800
 
-Tags: 
+Tags:
 
-  - #Design
-  - #Ethos
-  - #EDD
-  - #Governance
+- #Design
+- #Ethos
+- #EDD
+- #Governance
 
 ---
 
@@ -149,8 +145,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

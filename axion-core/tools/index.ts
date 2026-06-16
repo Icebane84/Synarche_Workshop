@@ -1,3 +1,4 @@
+// prettier-ignore
 /*
 artifact_anchor:
   id: INFR.INDEX.001

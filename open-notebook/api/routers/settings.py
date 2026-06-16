@@ -67,13 +67,9 @@ async def update_settings(settings_update: SettingsUpdate):
         if settings_update.auto_delete_files is not None:
             from typing import Literal, cast
 
-            settings.auto_delete_files = cast(
-                Literal["yes", "no"], settings_update.auto_delete_files
-            )
+            settings.auto_delete_files = cast(Literal["yes", "no"], settings_update.auto_delete_files)
         if settings_update.youtube_preferred_languages is not None:
-            settings.youtube_preferred_languages = (
-                settings_update.youtube_preferred_languages
-            )
+            settings.youtube_preferred_languages = settings_update.youtube_preferred_languages
 
         await settings.update()
 

@@ -50,9 +50,7 @@ async def get_transformations():
         ]
     except Exception as e:
         logger.error(f"Error fetching transformations: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error fetching transformations: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error fetching transformations: {e!s}")
 
 
 @router.post("/transformations", response_model=TransformationResponse)
@@ -82,9 +80,7 @@ async def create_transformation(transformation_data: TransformationCreate):
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         logger.error(f"Error creating transformation: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error creating transformation: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error creating transformation: {e!s}")
 
 
 @router.post("/transformations/execute", response_model=TransformationExecuteResponse)
@@ -120,9 +116,7 @@ async def execute_transformation(execute_request: TransformationExecuteRequest):
         raise
     except Exception as e:
         logger.error(f"Error executing transformation: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error executing transformation: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error executing transformation: {e!s}")
 
 
 @router.get("/transformations/default-prompt", response_model=DefaultPromptResponse)
@@ -131,15 +125,10 @@ async def get_default_prompt():
     try:
         default_prompts: DefaultPrompts = await DefaultPrompts.get_instance()  # type: ignore[assignment]
 
-        return DefaultPromptResponse(
-            transformation_instructions=default_prompts.transformation_instructions
-            or ""
-        )
+        return DefaultPromptResponse(transformation_instructions=default_prompts.transformation_instructions or "")
     except Exception as e:
         logger.error(f"Error fetching default prompt: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error fetching default prompt: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error fetching default prompt: {e!s}")
 
 
 @router.put("/transformations/default-prompt", response_model=DefaultPromptResponse)
@@ -148,24 +137,16 @@ async def update_default_prompt(prompt_update: DefaultPromptUpdate):
     try:
         default_prompts: DefaultPrompts = await DefaultPrompts.get_instance()  # type: ignore[assignment]
 
-        default_prompts.transformation_instructions = (
-            prompt_update.transformation_instructions
-        )
+        default_prompts.transformation_instructions = prompt_update.transformation_instructions
         await default_prompts.update()
 
-        return DefaultPromptResponse(
-            transformation_instructions=default_prompts.transformation_instructions
-        )
+        return DefaultPromptResponse(transformation_instructions=default_prompts.transformation_instructions)
     except Exception as e:
         logger.error(f"Error updating default prompt: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error updating default prompt: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error updating default prompt: {e!s}")
 
 
-@router.get(
-    "/transformations/{transformation_id}", response_model=TransformationResponse
-)
+@router.get("/transformations/{transformation_id}", response_model=TransformationResponse)
 async def get_transformation(transformation_id: str):
     """Get a specific transformation by ID."""
     try:
@@ -187,17 +168,11 @@ async def get_transformation(transformation_id: str):
         raise
     except Exception as e:
         logger.error(f"Error fetching transformation {transformation_id}: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error fetching transformation: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error fetching transformation: {e!s}")
 
 
-@router.put(
-    "/transformations/{transformation_id}", response_model=TransformationResponse
-)
-async def update_transformation(
-    transformation_id: str, transformation_update: TransformationUpdate
-):
+@router.put("/transformations/{transformation_id}", response_model=TransformationResponse)
+async def update_transformation(transformation_id: str, transformation_update: TransformationUpdate):
     """Update a transformation."""
     try:
         transformation = await Transformation.get(transformation_id)
@@ -234,9 +209,7 @@ async def update_transformation(
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         logger.error(f"Error updating transformation {transformation_id}: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error updating transformation: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error updating transformation: {e!s}")
 
 
 @router.delete("/transformations/{transformation_id}")
@@ -254,6 +227,4 @@ async def delete_transformation(transformation_id: str):
         raise
     except Exception as e:
         logger.error(f"Error deleting transformation {transformation_id}: {e!s}")
-        raise HTTPException(
-            status_code=500, detail=f"Error deleting transformation: {e!s}"
-        )
+        raise HTTPException(status_code=500, detail=f"Error deleting transformation: {e!s}")

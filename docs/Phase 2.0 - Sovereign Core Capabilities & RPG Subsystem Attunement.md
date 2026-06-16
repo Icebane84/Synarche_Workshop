@@ -1,7 +1,7 @@
 # Implementation Plan: Phase 2.0 - Sovereign Core Capabilities & RPG Subsystem Attunement
 
 > **Compliance Status:** `[APPROVED]`  
-> **Axiom:** *"To command the local substrate is to guarantee the ultimate stability of the sovereign core."* — **The Master Artificer**
+> **Axiom:** _"To command the local substrate is to guarantee the ultimate stability of the sovereign core."_ — **The Master Artificer**
 
 This document covers our detailed architectural scan of `axion-core/`, lists our true systemic capabilities, and implements Phase 2.0: **Attuning the RPG & Gamification Subsystem** using a highly robust, pure local-first SQLite database design.
 
@@ -12,6 +12,7 @@ This document covers our detailed architectural scan of `axion-core/`, lists our
 Our comprehensive topological scan of the `axion-core/` active execution layer reveals six core, mature subsystems that work together to form the Synarche:
 
 ### 1. The Coherent Verse Engine (CVE)
+
 - **Primary Logic:** [`synarche_verse_engine.py`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/logic/synarche_verse_engine.py)
 - **Role:** The Master Orchestrator of the Synarche Verse. It models all files, agents, and design concepts as `VerseNode`s.
 - **Capabilities:**
@@ -21,6 +22,7 @@ Our comprehensive topological scan of the `axion-core/` active execution layer r
   - Projects intent vectors (**Precognitive Stance**) to suggest structural transmutations.
 
 ### 2. The Entity Component System (ECS)
+
 - **Primary Logic:** [`axion-core/src/engine/ecs/`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/engine/ecs/)
 - **Role:** The primordial thread-safe memory substrate of the Axion engine.
 - **Capabilities:**
@@ -29,6 +31,7 @@ Our comprehensive topological scan of the `axion-core/` active execution layer r
   - Prevents semantic dissonance by validating cross-functional boundaries.
 
 ### 3. LangGraph Sovereign Agents (Genesis & Phoenix)
+
 - **Primary Logic:** [`axion-core/src/agents/`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/agents/)
 - **Role:** Stateful LLM routing and task compilation engines built on LangGraph.
 - **Capabilities:**
@@ -36,6 +39,7 @@ Our comprehensive topological scan of the `axion-core/` active execution layer r
   - Bridges active memory states with RPG stat loadouts.
 
 ### 4. Hephaestus: Reforger & Sentinel Auditor
+
 - **Primary Logic:** [`axion-core/src/hephaestus/`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/hephaestus/)
 - **Role:** Legislate and enforce structural compliance across the workspace.
 - **Capabilities:**
@@ -43,10 +47,12 @@ Our comprehensive topological scan of the `axion-core/` active execution layer r
   - **`reforger.py`:** Automatically injects standard UIP Block A-G metadata headers and synergy blocks into dissonant files.
 
 ### 5. The Command Bridge
+
 - **Primary Logic:** [`synarchy_bridge.py`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/synarchy_bridge.py)
 - **Role:** Programmatic discovery and invocation layer for active CLI hooks.
 
 ### 6. The RPG Subsystem & Stardust Economy
+
 - **Primary Logic:** [`axion-core/src/rpg_system/`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/rpg_system/) and [`rpg_manager.py`](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/logic/rpg_manager.py)
 - **Role:** Gamified alignment layer, treating files as equipable loadout items to boost cognitive stats (XP, coherence, synergy, adaptability).
 
@@ -58,12 +64,12 @@ The RPG Manager currently uses a hybrid model, preferring remote **Supabase** ta
 
 We performed a detailed trade-off analysis of migrating the RPG system to be **fully local-first**:
 
-| Dimension | Remote Supabase | Local-First Persistence (SQLite / JSON) |
-| :--- | :--- | :--- |
-| **Robustness** | ❌ **High Risk:** Rate limits, network failures, or database wipes (like Phase 1's schema zeroing) halt execution. |  **Absolute:** 100% offline uptime; runs without dependencies or network sockets. |
-| **Speed** | ❌ **Slow:** HTTPS overhead adds 100-300ms per transaction. |  **Instantaneous:** Local memory or disk writes execute in <5ms. |
-| **Complexity & Setup** | ❌ **Heavy:** Requires setting up a local Supabase CLI or remote keys, configuring RLS, and loading SQL schemas. |  **Hermetic:** Fully self-contained. Anyone can fork the codebase and have a fully operational gamification system instantly. |
-| **Collaboration** |  **Shared:** Real-time multi-agent leaderboards and shared state vector caches. | ❌ **Isolated:** State is private to the developer's workspace (unless committed in Git). |
+| Dimension              | Remote Supabase                                                                                                    | Local-First Persistence (SQLite / JSON)                                                                                      |
+| :--------------------- | :----------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| **Robustness**         | ❌ **High Risk:** Rate limits, network failures, or database wipes (like Phase 1's schema zeroing) halt execution. | **Absolute:** 100% offline uptime; runs without dependencies or network sockets.                                             |
+| **Speed**              | ❌ **Slow:** HTTPS overhead adds 100-300ms per transaction.                                                        | **Instantaneous:** Local memory or disk writes execute in <5ms.                                                              |
+| **Complexity & Setup** | ❌ **Heavy:** Requires setting up a local Supabase CLI or remote keys, configuring RLS, and loading SQL schemas.   | **Hermetic:** Fully self-contained. Anyone can fork the codebase and have a fully operational gamification system instantly. |
+| **Collaboration**      | **Shared:** Real-time multi-agent leaderboards and shared state vector caches.                                     | ❌ **Isolated:** State is private to the developer's workspace (unless committed in Git).                                    |
 
 ### 🛠️ The Selected Solution: "The Local SQLite Substrate"
 
@@ -81,11 +87,13 @@ To achieve absolute resilience and a completely hermetic, zero-entropy architect
 ### [RPG Subsystem]
 
 #### [MODIFY] [rpg_manager.py](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/logic/rpg_manager.py)
+
 - Refactor the database connection initialization to use a local SQLite store (`.agent/rpg_state.db`).
 - Make all read/write methods (`get_status`, `award_stardust`, `invest_stardust`, `claim_achievement`) operate on the local store instantly via SQL.
 - Completely bypass remote Supabase connection operations.
 
 #### [MODIFY] [rpg_definitions.js](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/rpg_system/rpg_definitions.js) / [rpg_inventory.js](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/rpg_system/rpg_inventory.js)
+
 - Ensure all inventory swaps and equipping operations validate locally cached state before making web bridge requests.
 
 ---
@@ -93,6 +101,7 @@ To achieve absolute resilience and a completely hermetic, zero-entropy architect
 ## 🗺️ Verification Plan
 
 ### Automated & Manual Tests
+
 1. **Verification Dry-Runs:**
    Test offline operation and verify that the RPG system awards XP and equips items cleanly on local SQLite database storage.
 2. **SQLite Verification:**

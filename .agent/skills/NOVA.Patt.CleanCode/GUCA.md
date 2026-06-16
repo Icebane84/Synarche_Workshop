@@ -2,14 +2,14 @@
 id: NOVA.Patt.CleanCode.GUCA
 name: Clean Code Command Architecture (GUCA)
 type: COMMAND
-tags: ['#NOVA/Patt/CleanCode', '#GUCA', '#TRIGGER']
-links: ['[[NOVA.Patt.CleanCode.Index]]', '[[NOVA.Patt.CleanCode.Skill]]']
+tags: ["#NOVA/Patt/CleanCode", "#GUCA", "#TRIGGER"]
+links: ["[[NOVA.Patt.CleanCode.Index]]", "[[NOVA.Patt.CleanCode.Skill]]"]
 relations:
-    - type: IMPLEMENTS
-      target: '[[NOVA.Patt.CleanCode.Skill]]'
-    - type: DESCRIBED_BY
-      target: '[[NOVA.Patt.CleanCode.Index]]'
-description: 'Command activation and verification triggers for the Clean Code Pattern Shard.'
+  - type: IMPLEMENTS
+    target: "[[NOVA.Patt.CleanCode.Skill]]"
+  - type: DESCRIBED_BY
+    target: "[[NOVA.Patt.CleanCode.Index]]"
+description: "Command activation and verification triggers for the Clean Code Pattern Shard."
 ---
 
 # CLEAN CODE COMMANDS | GUCA-NOVA.Patt.CleanCode

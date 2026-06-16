@@ -1228,32 +1228,4 @@ module.exports = [
     },
   },
 ];
-token.children.forEach((child) => {
-  if (child.type === "image") {
-    const src = child.attrGet("src");
-    if (src && !src.startsWith("file:///") && !src.startsWith("http")) {
-      onError({
-        lineNumber: child.lineNumber,
-        detail: `Media path '${src}' must be absolute (file:///...).`,
-        context: params.lines[child.lineNumber - 1],
-      });
-    }
-  }
-});
-}
-      })
-},
-  },
-    names: ["PF032", "ts-links-use-path-aliases"],
-    description:
-      "Ensures all Markdown links pointing to .ts or .tsx files use absolute path aliases (AETHER-V2).",
-    tags: ["phoenix-protocol", "links", "aliases"],
-function: function
-PF032(params, onError);
-params.tokens.forEach((token) => {
-  if (token.type === "link_open") {
-    validateTsLinkAlias(token, params, onError);
-  }
-});
-,,
-]
+

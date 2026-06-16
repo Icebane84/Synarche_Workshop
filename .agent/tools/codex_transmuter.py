@@ -50,9 +50,7 @@ class ArtifactTransmuter:
                 f"- 🚩 Version: {self.clean_text(ver_match.group(1))}"
             )
         if class_match:
-            identity_nodes.append(
-                f"- ⚖️ Class: {self.clean_text(class_match.group(1))}"
-            )
+            identity_nodes.append(f"- ⚖️ Class: {self.clean_text(class_match.group(1))}")
         if status_match:
             identity_nodes.append(
                 f"- 🔋 Status: {self.clean_text(status_match.group(1))}"

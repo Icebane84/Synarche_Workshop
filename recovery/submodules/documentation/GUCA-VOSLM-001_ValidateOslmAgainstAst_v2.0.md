@@ -22,22 +22,22 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `GUCA-VOSLM-001_ValidateOslmAgainstAst_v2.0` |
-| **2. Official Name** | `GUCA-VOSLM-001_ValidateOslmAgainstAst_v2.0` |
-| **3. Version** | **v10.0 (The Synarche Edition)** |
-| **4. Provenance** | **Genesis Stamp: 2025-12-20** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[STAR]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **Reforge Command** |
-| **12. Relations** | `LINK: OGLN.Core.Governance.Codex` |
+| Field                  | Value                                        |
+| :--------------------- | :------------------------------------------- |
+| **1. Artifact ID**     | `GUCA-VOSLM-001_ValidateOslmAgainstAst_v2.0` |
+| **2. Official Name**   | `GUCA-VOSLM-001_ValidateOslmAgainstAst_v2.0` |
+| **3. Version**         | **v10.0 (The Synarche Edition)**             |
+| **4. Provenance**      | **Genesis Stamp: 2025-12-20**                |
+| **5. Domain**          | `GVRN`                                       |
+| **6. Evolution**       | **Purposeful Drive**                         |
+| **7. Celestial Class** | `[STAR]`                                     |
+| **8. Tier**            | **Operational**                              |
+| **9. State**           | `[ACTIVE]`                                   |
+| **10. Ethos**          | **Guardian of Coherence**                    |
+| **11. Catalyst**       | **Reforge Command**                          |
+| **12. Relations**      | `LINK: OGLN.Core.Governance.Codex`           |
 
 ---
 
@@ -51,7 +51,7 @@
 
 ---
 
-*(The Chronos Lock & Axiomatic Metadata Layer)*
+_(The Chronos Lock & Axiomatic Metadata Layer)_
 
 | :---- | :---- |
 
@@ -98,10 +98,10 @@
 ## II. Core Purpose & Objective
 
 - **Core Purpose**: To perform a deep validation audit by cross-referencing the high-level **Omni-Log Synergistic Links
-Matrix (OSLM)** against the low-level **Abstract Syntax Trees (ASTs)**.
+  Matrix (OSLM)** against the low-level **Abstract Syntax Trees (ASTs)**.
 - **Micro-Objective**: Detect and report "Conceptual Drift" (Divergence between Documentation and Code).
 - **Why**: "Documentation is Cognition." If the OSLM does not match the AST, the AI is hallucinating its own
-architecture. This command ensures structural integrity.
+  architecture. This command ensures structural integrity.
 
 ## III. Command Definition
 
@@ -118,24 +118,24 @@ architecture. This command ensures structural integrity.
 1. **Conceptual Graph Ingestion**: Query `UMB-OSLM-001` to build the "Documented Reality" graph.
 2. **Code-Level Traverse**: Parse codebase to generate ASTs and build the "Ground Truth" graph.
 3. **Discrepancy Comparison**: Identify:
-    - **Ghost Links**: OSLM links with no code backing.
-    - **Shadow Dependencies**: Code dependencies missing from OSLM.
+   - **Ghost Links**: OSLM links with no code backing.
+   - **Shadow Dependencies**: Code dependencies missing from OSLM.
 4. **Reporting**: Synthesize a "Conceptual Drift Report".
 
 | :--------------------- | :------------------- | :------------------------------------------------- |
-| **Project Hephaestus** | **Tool Of**          | A core auditing tool for The Sentinel.             |
-| **UMB-OSLM-001**       | **Source (Vision)**  | The conceptual graph to validate.                  |
-| **The Codebase**       | **Source (Reality)** | The source of truth (AST parsing).                 |
-| **Dissonance Quest**   | **Output**           | Drift generates high-priority "Dissonance Quests". |
+| **Project Hephaestus** | **Tool Of** | A core auditing tool for The Sentinel. |
+| **UMB-OSLM-001** | **Source (Vision)** | The conceptual graph to validate. |
+| **The Codebase** | **Source (Reality)** | The source of truth (AST parsing). |
+| **Dissonance Quest** | **Output** | Drift generates high-priority "Dissonance Quests". |
 
 > [!IMPORTANT]
 > This roadmap governs the increasing depth of validation.
 
-- **v2.1 - Semantic Drift Analysis**: Beyond structural links, use vector embeddings to compare the *semantics* of
-documentation vs code comments.
+- **v2.1 - Semantic Drift Analysis**: Beyond structural links, use vector embeddings to compare the _semantics_ of
+  documentation vs code comments.
 - **v2.2 - Automatic Remediation**: The Sentinel not only reports drift but suggests the exact OSLM update text to fix
-it (Auto-Patching).
-- **v2.3 - Predictive Drift Warning**: Analysis of high-churn files to predict where drift *will* likely occur.
+  it (Auto-Patching).
+- **v2.3 - Predictive Drift Warning**: Analysis of high-churn files to predict where drift _will_ likely occur.
 
 ## **Actionable Prompt Packet**
 

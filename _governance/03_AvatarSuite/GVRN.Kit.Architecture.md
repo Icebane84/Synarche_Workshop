@@ -1,12 +1,12 @@
 ---
 id: GVRN.Kit.Architecture
 name: Antigravity Kit Architecture
-tags: ['#GVRN/Kit/Architecture', '#SOUL/Law']
-links: ['[[GVRN.Codex.Phoenix]]', '[[GVRN.Kit.Gate]]']
+tags: ["#GVRN/Kit/Architecture", "#SOUL/Law"]
+links: ["[[GVRN.Codex.Phoenix]]", "[[GVRN.Kit.Gate]]"]
 relations:
-    - type: GOVERNED_BY
-      target: '[[GVRN.Codex.Phoenix]]'
-description: 'Sovereign architectural blueprint for the Phoenix Protocol agentic substrate.'
+  - type: GOVERNED_BY
+    target: "[[GVRN.Codex.Phoenix]]"
+description: "Sovereign architectural blueprint for the Phoenix Protocol agentic substrate."
 ---
 
 # ANTIGRAVITY KIT ARCHITECTURE | UMB-GVRN.Kit.Architecture

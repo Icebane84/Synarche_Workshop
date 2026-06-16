@@ -59,12 +59,8 @@ async def content_process(state: SourceState) -> dict:
     )
     content_state: dict[str, Any] = state["content_state"]  # type: ignore[assignment]
 
-    content_state["url_engine"] = (
-        content_settings.default_content_processing_engine_url or "auto"
-    )
-    content_state["document_engine"] = (
-        content_settings.default_content_processing_engine_doc or "auto"
-    )
+    content_state["url_engine"] = content_settings.default_content_processing_engine_url or "auto"
+    content_state["document_engine"] = content_settings.default_content_processing_engine_doc or "auto"
     content_state["output_format"] = "markdown"
 
     # Add speech-to-text model configuration from Default Models
@@ -76,9 +72,7 @@ async def content_process(state: SourceState) -> dict:
             if stt_model:
                 content_state["audio_provider"] = stt_model.provider
                 content_state["audio_model"] = stt_model.name
-                logger.debug(
-                    f"Using speech-to-text model: {stt_model.provider}/{stt_model.name}"
-                )
+                logger.debug(f"Using speech-to-text model: {stt_model.provider}/{stt_model.name}")
     except Exception as e:
         logger.warning(f"Failed to retrieve speech-to-text model configuration: {e}")
         # Continue without custom audio model (content-core will use its default)
@@ -166,9 +160,7 @@ workflow.add_node("transform_content", transform_content)
 # Define the graph edges
 workflow.add_edge(START, "content_process")
 workflow.add_edge("content_process", "save_source")
-workflow.add_conditional_edges(
-    "save_source", trigger_transformations, ["transform_content"]
-)
+workflow.add_conditional_edges("save_source", trigger_transformations, ["transform_content"])
 workflow.add_edge("transform_content", END)
 
 # Compile the graph

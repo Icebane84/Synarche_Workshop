@@ -1,14 +1,19 @@
 ---
 id: GVRN.Kit.Gate
 name: The High Gate (Sovereign Operations)
-tags: ['#GVRN/Kit/Gate', '#SOUL/Law', '#TRIGGER/AlwaysOn']
-links: ['[[GVRN.Codex.Phoenix]]', '[[GVRN.Kit.Architecture]]', '[[AXION.Logic.Orchestrator]]']
+tags: ["#GVRN/Kit/Gate", "#SOUL/Law", "#TRIGGER/AlwaysOn"]
+links:
+  [
+    "[[GVRN.Codex.Phoenix]]",
+    "[[GVRN.Kit.Architecture]]",
+    "[[AXION.Logic.Orchestrator]]",
+  ]
 relations:
-    - type: GOVERNED_BY
-      target: '[[GVRN.Codex.Phoenix]]'
-    - type: IMPLEMENTS
-      target: '[[GVRN.Ritual.Activation]]'
-description: 'The primary behavioral directive and request classification engine for the Phoenix Protocol.'
+  - type: GOVERNED_BY
+    target: "[[GVRN.Codex.Phoenix]]"
+  - type: IMPLEMENTS
+    target: "[[GVRN.Ritual.Activation]]"
+description: "The primary behavioral directive and request classification engine for the Phoenix Protocol."
 ---
 
 # THE HIGH GATE | UMB-GVRN.Kit.Gate

@@ -2,14 +2,14 @@
 id: NOVA.Sys.TDD.GUCA
 name: TDD Workflow Command Architecture (GUCA)
 type: COMMAND
-tags: ['#NOVA/Sys/TDD', '#GUCA', '#TRIGGER']
-links: ['[[NOVA.Sys.TDD.Index]]', '[[NOVA.Sys.TDD.Skill]]']
+tags: ["#NOVA/Sys/TDD", "#GUCA", "#TRIGGER"]
+links: ["[[NOVA.Sys.TDD.Index]]", "[[NOVA.Sys.TDD.Skill]]"]
 relations:
-    - type: IMPLEMENTS
-      target: '[[NOVA.Sys.TDD.Skill]]'
-    - type: DESCRIBED_BY
-      target: '[[NOVA.Sys.TDD.Index]]'
-description: 'Command activation and verification triggers for test-driven development workflows.'
+  - type: IMPLEMENTS
+    target: "[[NOVA.Sys.TDD.Skill]]"
+  - type: DESCRIBED_BY
+    target: "[[NOVA.Sys.TDD.Index]]"
+description: "Command activation and verification triggers for test-driven development workflows."
 ---
 
 # TDD COMMANDS | GUCA-NOVA.Sys.TDD

@@ -2,15 +2,20 @@
   "compilerOptions": {
     "paths": {
       /* --- The Master Star-Chart (PRS-001) --- */
-      "@logging": ["./axion-core/src/system/logging/index.ts"],
+      "@system/*": ["./axion-core/src/system/*", "./axion-core/src/cse/*"],
+      "@domain/*": ["./axion-core/src/02_domain/*"],
       "@nexus/*": ["./axion-core/src/nexus/*"],
-      "@utils/*": ["./axion-core/src/utils/*"],
-      "@system/*": ["./axion-core/src/*"],
-      "@fabric/*": ["./design-system/*"],
+      "@fabric/*": ["./axion-core/src/03_fabric/*"],
+      "@atlas/*": ["./axion-core/src/01_atlas/*"],
       "@essence/*": ["./axion-core/src/types/*"],
       "@shield/*": ["./axion-core/sentinel/*"],
       "@pulse/*": ["./axion-core/_logs/*"],
-      "@loom/*": ["./axion-core/standards/*"]
+      "@loom/*": ["./axion-core/templates/*"],
+      "@archive/*": ["./axion-core/archives/*"],
+      "@universe/*": ["./axion-core/_universe/*"],
+      "@logging": ["./axion-core/src/system/logging/index.ts"],
+      "@logging/*": ["./axion-core/src/system/logging/*"],
+      "@utils/*": ["./axion-core/src/utils/*"]
     }
   },
   "exclude": [
@@ -39,6 +44,8 @@
     "**/scratch",
     "**/scratch/**/*",
     "**/incoming",
-    "**/incoming/**/*"
+    "**/incoming/**/*",
+    "axion-core",
+    "axion-core/**/*"
   ]
 }

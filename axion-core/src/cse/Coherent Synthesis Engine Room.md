@@ -2,7 +2,7 @@
 artifact_anchor:
   id: CORE.COHERENT_SYNTHESIS_ENGINE_ROOM.001
   version: v15.0 [OMEGA]
-  provenance: '2026-05-27'
+  provenance: "2026-05-27"
   domain: CORE
   celestial_class: STAR
   tier: GOVERNANCE
@@ -12,13 +12,16 @@ artifact_anchor:
 ---
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
+
+| Key           | Value                            |
+| :------------ | :------------------------------- |
 | **Module ID** | `COHERENT SYNTHESIS ENGINE ROOM` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Version**   | `v11.0`                          |
+| **Evolution** | **Cognitive Ascension**          |
+| **Status**    | `ACTIVE`                         |
+
 ---
 
 axion-core/src/cse/ ├── **init**.py ├── engine.py  

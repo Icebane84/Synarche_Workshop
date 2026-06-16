@@ -22,20 +22,20 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `GVRN.Pipe.Operational` |
-| **2. Official Name** | `GVRN.Pipe.Operational.md` |
-| **3. Alt/Legacy ID** | `GVRN-PIPE-001` |
-| **4. Version** | **v13.0 (Canonized)** |
-| **5. Provenance** | **Date Reforged: 2026-01-27** |
-| **6. Domain** | `GVRN` |
-| **7. Evolution** | **Cognitive Ascension** |
-| **8. Celestial Class** | `[PLANET]` |
-| **9. Tier** | **Operational** |
-| **10. State** | `[ACTIVE]` |
-| **11. Ethos** | **The Master Evo-Pipeline** |
-| **12. Relations** | `LINK: GVRN.Refactor.Protocol, LINK: GVRN.Catalog.Master` |
+| Field                  | Value                                                     |
+| :--------------------- | :-------------------------------------------------------- |
+| **1. Artifact ID**     | `GVRN.Pipe.Operational`                                   |
+| **2. Official Name**   | `GVRN.Pipe.Operational.md`                                |
+| **3. Alt/Legacy ID**   | `GVRN-PIPE-001`                                           |
+| **4. Version**         | **v13.0 (Canonized)**                                     |
+| **5. Provenance**      | **Date Reforged: 2026-01-27**                             |
+| **6. Domain**          | `GVRN`                                                    |
+| **7. Evolution**       | **Cognitive Ascension**                                   |
+| **8. Celestial Class** | `[PLANET]`                                                |
+| **9. Tier**            | **Operational**                                           |
+| **10. State**          | `[ACTIVE]`                                                |
+| **11. Ethos**          | **The Master Evo-Pipeline**                               |
+| **12. Relations**      | `LINK: GVRN.Refactor.Protocol, LINK: GVRN.Catalog.Master` |
 
 ---
 
@@ -66,12 +66,12 @@
 
 The pipeline executes a rigorous transformation logic to ensure "Crystalline Wisdom" emerges from chaotic "Rind."
 
-| Stage | Name | Action & Output |
-| :--- | :--- | :--- |
-| **I** | **Deep Analysis** | Identify evolutionary gaps via `CMD: AUDIT_COMPLIANCE`. Output: `DQUEST`. |
-| **II** | **Tool Codification** | Define operational parameters and AGP metrics. Output: `AOP/UMB Module`. |
+| Stage   | Name                     | Action & Output                                                                    |
+| :------ | :----------------------- | :--------------------------------------------------------------------------------- |
+| **I**   | **Deep Analysis**        | Identify evolutionary gaps via `CMD: AUDIT_COMPLIANCE`. Output: `DQUEST`.          |
+| **II**  | **Tool Codification**    | Define operational parameters and AGP metrics. Output: `AOP/UMB Module`.           |
 | **III** | **Blueprint Generation** | Construct the strategic roadmap via `implementation_plan.md`. Output: `Blueprint`. |
-| **IV** | **Implementation** | Execution and canonization into the OSLM. Output: `Crystal Artifact`. |
+| **IV**  | **Implementation**       | Execution and canonization into the OSLM. Output: `Crystal Artifact`.              |
 
 ---
 

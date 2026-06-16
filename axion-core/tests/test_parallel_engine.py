@@ -54,14 +54,14 @@ def test_parallel_execution():
 
     # ASSERTIONS
     # 1. Parallel Speedup: Total time should be significantly less than 0.2s
-    assert (
-        total_duration < 0.15
-    ), f"Parallel execution too slow: {total_duration:.4f}s. Expected < 0.15s."
+    assert total_duration < 0.15, (
+        f"Parallel execution too slow: {total_duration:.4f}s. Expected < 0.15s."
+    )
 
     # 2. Dependency Integrity: C must ALWAYS be executed after A and B
-    assert (
-        engine.state["results"][-1] == "C"
-    ), "Dependency Violation: C executed before dependencies finished."
+    assert engine.state["results"][-1] == "C", (
+        "Dependency Violation: C executed before dependencies finished."
+    )
 
     # 3. Completeness: All tasks must be present
     assert set(engine.state["results"]) == {"A", "B", "C"}
