@@ -1,5 +1,17 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.INIT.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -12,50 +24,67 @@
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | {resonance}     |
+# | **Resonance** | {resonance}     |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Logic Drift**      | Strict Linter Enforcement |
+# | **Semantic Decay**   | Axiomatic Compass Audit   |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+# | CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
 
 ## **[ARTIFACT END]**
 """
 
-from .mentor import DidacticMentor
+from .audit_magic_values import MagicAuditor
+from .auditor import AuditResult, ComplianceAuditor
+from .chronicler import Chronicler
+from .crf import CausalLinter
+from .gate import HephaestusGate
+from .gaze import ArchitectsGaze
+from .lib.scaffold_weaver import ScaffoldWeaver, StubPointer
+from .lib.transclusion_binder import TransclusionBinder, BindingResult
+from .mentor import MentorsVoice
+from .oslm_gps import OSLMGPS
+from .reforger import BlockScanner
 from .sentinel import CodeSentinel
-from .soul import SoulImpactAnalyzer
+from .soul import ArtificersSoul
 
 __all__ = [
+    "OSLMGPS",
+    "ArchitectsGaze",
+    "ArtificersSoul",
+    "BindingResult",
+    "BlockScanner",
     "CodeSentinel",
-    "DidacticMentor",
-    "SoulImpactAnalyzer",
+    "MentorsVoice",
+    "ScaffoldWeaver",
+    "StubPointer",
+    "TransclusionBinder",
 ]
 
 # ---
-# 
+#
 # ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE...init.. VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: a49104102a5120e1`
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE...init.. VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: a49104102a5120e1

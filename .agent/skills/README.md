@@ -1,3 +1,5 @@
+# .agent/skills/README.md
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                        | Description       |
@@ -13,7 +15,7 @@
 
 # 🛠️ Sovereign Skills Registry
 
-The Synarchy's capabilities are stratified into logical sub-domains to prevent cognitive entropy.
+The Synarche's capabilities are stratified into logical sub-domains to prevent cognitive entropy.
 
 ## 📁 Skill Domains
 

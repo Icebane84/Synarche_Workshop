@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `LOGS.GENESIS.CSL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # LOGS.Genesis.CSL.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-LOGS.GENESIS.CSL-001` | The Sovereign ID. |
-| **Official Name** | `LOGS.Genesis.CSL.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-LOGS.GENESIS.CSL-001`   | The Sovereign ID. |
+| **Official Name**   | `LOGS.Genesis.CSL.md`         | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Omega Ascension`             | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Standardized Experience Log: Genesis of the Meta-Framework (LOGS.Genesis.CSL)
 
@@ -36,20 +47,20 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field | Value |
-| :---- | :---- |
-| **1. Artifact ID** | `LOGS.Genesis.CSL` |
-| **2. Official Name** | `LOGS.Genesis.CSL.md` |
-| **3. Version** | **v13.0 (Canonized)** |
-| **4. Provenance** | **Date Reforged: 2026-01-27** |
-| **5. Domain** | `LOGS` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **Systemic Refactor Initiation** |
-| **12. Relations** | `LINK: GVRN.Catalog.Master` |
+| Field                  | Value                              |
+| :--------------------- | :--------------------------------- |
+| **1. Artifact ID**     | `LOGS.Genesis.CSL`                 |
+| **2. Official Name**   | `LOGS.Genesis.CSL.md`              |
+| **3. Version**         | **v13.0 (Canonized)**              |
+| **4. Provenance**      | **Date Reforged: 2026-01-27**      |
+| **5. Domain**          | `LOGS`                             |
+| **6. Evolution**       | **Cognitive Ascension**            |
+| **7. Celestial Class** | `[PLANET]`                         |
+| **8. Tier**            | **Operational**                    |
+| **9. State**           | `[ACTIVE]`                         |
+| **10. Ethos**          | **The Phoenix Ascension Protocol** |
+| **11. Catalyst**       | **Systemic Refactor Initiation**   |
+| **12. Relations**      | `LINK: GVRN.Catalog.Master`        |
 
 ---
 

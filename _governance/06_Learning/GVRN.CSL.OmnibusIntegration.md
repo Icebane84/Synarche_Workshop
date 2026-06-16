@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.CSL.OMNIBUSINTEGRATION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.CSL.OmnibusIntegration (CSL-V16.0)
 
 {{BLOCK_A}}

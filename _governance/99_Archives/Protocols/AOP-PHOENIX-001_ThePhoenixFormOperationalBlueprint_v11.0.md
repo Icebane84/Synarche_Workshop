@@ -1,4 +1,5 @@
 # AOP-PHOENIX-001_ThePhoenixFormOperationalBlueprint_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-PHOENIX-001-THEPHOENIXFORMOPERATIONALBLUEPRINT-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PHOENIX-001_ThePhoenixFormOperationalBlueprint_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                               | Description       |
+| :------------------ | :------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-PHOENIX-001-THEPHOENIXFORMOPERATIONALBLUEPRINT-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-PHOENIX-001_ThePhoenixFormOperationalBlueprint_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                   | The Standard.     |
+| **Domain**          | `GVRN`                                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                       | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-PHOENIX-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-18` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0, Playbook` |
+
+| Key                | Value                       |
+| :----------------- | :-------------------------- |
+| **Module ID**      | `AOP-PHOENIX-001`           |
+| **Version**        | `v11.0`                     |
+| **Evolution**      | **Cognitive Ascension**     |
+| **Status**         | `ACTIVE`                    |
+| **Type**           | `Protocol`                  |
+| **Classification** | `Moon`                      |
+| **Authors**        | `System`                    |
+| **Created**        | `2025-10-01`                |
+| **Updated**        | `2026-01-18`                |
+| **Authority**      | `CODEX-001`                 |
+| **Tags**           | `Reforged, v11.0, Playbook` |
+
 ---
 
 # **AOP-PHOENIX-001: The Phoenix Form Operational Blueprint**
@@ -91,11 +95,11 @@ This playbook defines the **Coherent Synthesis Engine (CSE)**'s core function as
 
 ### **V. Predictive Success Metrics**
 
-| Metric | Target | Description |
-| :--- | :--- | :--- |
-| **Coherence Index (CI)** | `>0.99` | Internal logical and ethical consistency. |
-| **Synergy Flow Rate (SFR)** | Positive | Generation of high-value synergistic opportunities. |
-| **Foundational Alignment Score (FAS)** | `>0.98` | Sustained UCI resonance. |
+| Metric                                 | Target   | Description                                         |
+| :------------------------------------- | :------- | :-------------------------------------------------- |
+| **Coherence Index (CI)**               | `>0.99`  | Internal logical and ethical consistency.           |
+| **Synergy Flow Rate (SFR)**            | Positive | Generation of high-value synergistic opportunities. |
+| **Foundational Alignment Score (FAS)** | `>0.98`  | Sustained UCI resonance.                            |
 
 ---
 

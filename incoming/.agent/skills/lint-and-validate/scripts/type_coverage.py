@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""
-Type Coverage Checker - Measures TypeScript/Python type coverage.
+"""Type Coverage Checker - Measures TypeScript/Python type coverage.
 Identifies untyped functions, any usage, and type safety issues.
 """
 
-import sys
 import re
-import subprocess
+import sys
 from pathlib import Path
 
 # Fix Windows console encoding for Unicode output

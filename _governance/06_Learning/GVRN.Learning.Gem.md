@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.LEARNING.GEM` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Learning.Gem (The Muse's Insights)
 
 > [!IMPORTANT]
@@ -40,6 +50,24 @@ High-impact facts and preferences categorized for rapid alignment.
 - **Pattern**: Visual table pipe alignment in registries acts as a "Cognitive Linter" that signals structural health to both AI and human architects.
 - **Synergy**: The relationship between a node's physical path (`Registry.Master`) and its relational weight (`Registry.DataOSLM`) must be updated concurrently to maintain "Relational Gravity."
 
+### [2026-04-16] Sovereign Substrate Synchronization (Pointer-Targeted)
+
+- **Insight**: Deep substrate recovery requires bridging external "Source of Truth" repositories via explicit Sovereign Pointers (`@[path]`) to overcome session-memory drift and ensure OMEGA v15.0 compliance.
+- **Pattern**: Prioritizing "Absolute Heart Synchronization" (Enums/Root Constants) before patching functional logic ensures that the "Rosetta Stone" is accurate for the rest of the rebuild.
+- **Synergy**: The connection between `axion-forge` (External Logic) and `Synarche_Workspace` (Local Governance) is bridged through Artificer-Agent validation, creating a cross-workspace "Truth Anchor."
+
+### [2026-05-26] Platform-Safe Alchemical Transmutation
+
+- **Insight**: Executing DB-level alchemical updates on Windows environments presents hidden platform friction: default system-level encoding (CP-1252) blocks alchemical symbols/emojis, and OS shell escapes distort alchemical JSON packages.
+- **Pattern**: Standardize all Python codebase files to explicitly enforce `encoding="utf-8"` during operations, and execute script functions directly using Python import boundaries rather than relying on raw terminal script parameters.
+- **Synergy**: Initializing remote database tables through MCP integrations prior to script execution bridges local alchemical logic to remote environments with zero friction.
+
+### [2026-06-12] Dynamic Modal Architecture
+
+- **Insight**: High-fidelity game overlays require robust, platform-agnostic responsiveness. If templates are dynamically hidden, nesting overlays inside parent wrappers creates structural blocks.
+- **Pattern**: Modals and panels must be flat siblings under the root element (e.g., `body`) rather than nested, with vertical scrolling (`overflow-y-auto`) and viewport clamping (`max-w-[95vw]`) configured on the modal container to accommodate all laptop and mobile displays.
+- **Synergy**: Close buttons (`✕`) must remain sticky/accessible inside the scroll boundaries to ensure players can always exit the UI and return execution context to the engine loop.
+
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: LRN-GEM-OMEGA`
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v16.5 [SOVEREIGN] STATUS: CANONIZED TS: 2026-06-12 HASH: LRN-GEM-OMEGA-XL-SYNC`

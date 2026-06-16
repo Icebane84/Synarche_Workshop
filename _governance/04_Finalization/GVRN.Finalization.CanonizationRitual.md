@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.FINALIZATION.CANONIZATIONRITUAL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **🔥 GVRN.Finalization.CanonizationRitual: The Rite of Handoff**
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -43,7 +53,8 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"Crossing the threshold from Draft to Canon is the most sacred act in the Synarche. This ritual ensures that the hand-off between the Sentinel and the Forge is flawless."**
+> **"Crossing the threshold from Draft to Canon is the most sacred act in the Synarche. This ritual ensures that the
+> hand-off between the Sentinel and the Forge is flawless."**
 
 ---
 
@@ -59,7 +70,8 @@
 
 ## 1. The Ritual of Handoff (Sentinel to Forge)
 
-Once an artifact has passed all **Seven Gates of Ingestion**, the following ritual must be executed to transition the node from the **Finalization Gateway** to the **Canonizer Forge**.
+Once an artifact has passed all **Seven Gates of Ingestion**, the following ritual must be executed to transition the
+node from the **Finalization Gateway** to the **Canonizer Forge**.
 
 ### 1.1 Step One: The Sentinel's Stamp
 
@@ -78,7 +90,8 @@ Once an artifact has passed all **Seven Gates of Ingestion**, the following ritu
 
 ## 2. The Immutable Promise
 
-Once `[CANONIZED]`, an artifact is subject to **Law 5.14 (Non-Destructive Integrity)**. It may never be deleted—only **Archived & Evolved**.
+Once `[CANONIZED]`, an artifact is subject to **Law 5.14 (Non-Destructive Integrity)**. It may never be deleted—only
+**Archived & Evolved**.
 
 ---
 
@@ -93,6 +106,4 @@ Once `[CANONIZED]`, an artifact is subject to **Law 5.14 (Non-Destructive Integr
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Finalization.CanonizationRitual VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-25 HASH: RITUAL-OMEGA-15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

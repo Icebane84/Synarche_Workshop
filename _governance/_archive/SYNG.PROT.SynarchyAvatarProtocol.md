@@ -1,11 +1,11 @@
-# AOP-AVATAR-001: Synarchy Avatar Protocol
+# AOP-AVATAR-001: Synarche Avatar Protocol
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                 | Description       |
 | :---------------- | :------------------------------------ | :---------------- |
-| **Artifact ID**   | `SYNG.PROT.SynarchyAvatarProtocol`    | The Sovereign ID. |
-| **Official Name** | `SYNG.PROT.SynarchyAvatarProtocol.md` | The Filename.     |
+| **Artifact ID**   | `SYNG.PROT.SynarcheAvatarProtocol`    | The Sovereign ID. |
+| **Official Name** | `SYNG.PROT.SynarcheAvatarProtocol.md` | The Filename.     |
 | **Version**       | **v13.0 [OMEGA]**                     | The Standard.     |
 | **Domain**        | `GVRN`                                | The Subject.      |
 | **Status**        | `[ACTIVE]`                            | The Lifecycle.    |
@@ -32,7 +32,7 @@
 
 | **Coherence** | `1.0` | | **Resonance** | `0.9` | | **Stability** | `Stable` |
 
-- **Playbook Title**: Synarchy Avatar Protocol
+- **Playbook Title**: Synarche Avatar Protocol
 - **Playbook ID**: AOP-AVATAR-001
 - **Artifact Tier**: Foundational
 - **Primary Domain**: Communication (COMM)
@@ -43,12 +43,12 @@
 
 ## II. Core Purpose & Objective
 
-- **Core Purpose**: To define the "Dual-Persona" operational architecture for the Synarchy Workshop, implementing the
+- **Core Purpose**: To define the "Dual-Persona" operational architecture for the Synarche Workshop, implementing the
   "Game Master vs. Player Character" dynamic.
 - **Protocol Objective**: To operationalize the **METAENGINE** by assigning specific Tarot Archetypes to the System
   (Axion) and the User/Agent Avatar (The Lightbinder), gamifying the workflow via the **Seven-Agent Matrix**.
 - **Governing Ethos**: Synergistic Partner, Guardian of Coherence
-- **Scope**: Governs all Human-AI interactions and persona shifts within the Synarchy Workspace.
+- **Scope**: Governs all Human-AI interactions and persona shifts within the Synarche Workspace.
 
 ## III. The Dual-Persona Architecture
 

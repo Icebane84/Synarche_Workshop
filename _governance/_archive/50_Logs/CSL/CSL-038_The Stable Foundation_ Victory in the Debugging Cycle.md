@@ -55,7 +55,7 @@ UIP: CSL-038 Title: The Stable Foundation: Victory in the Debugging Cycle Source
 Description: > Records the successful stabilization of the Rosetta Stone prototype v1.5 through the Adamant Protocol and
 persistent collaborative debugging. Version: 11.0 (Sovereign) Status: CANONIZED Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2025-08-16
 - Timestamp: 1755333487
 

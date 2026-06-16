@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GUCA-IDE-SENTINEL-001_THEIDEINTEGRITYSENTINEL_V11.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GUCA-IDE-SENTINEL-001_TheIDEIntegritySentinel_v11.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -76,7 +86,7 @@ The Sentinel scans the `.vscode/` directory of the current workspace.
 2. **Settings Vector:** Checks `settings.json` for:
    - `editor.formatOnSave`: Must be `true`.
    - `editor.defaultFormatter`: Must be `charliermarsh.ruff`.
-   - `python.defaultInterpreterPath`: Must point to local `.venv`.
+   - `python.defaultInterpreterPath`: Must point to global Master Environment.
 3. **Code Actions Vector:** Ensures `source.organizeImports` is enabled on save.
 
 ## IV. Usage

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-APP-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('6') }}. Actionable Prompt Packet (APP)**
 
 [Brief description of how to use the artifact]

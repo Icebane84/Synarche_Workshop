@@ -44,7 +44,7 @@ Description: > Defines the step-by-step operational procedure for executing a Mu
 ensuring absolute compliance with the 10 Pillars of OGLN Discipline. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0
 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769251200
 
@@ -87,9 +87,9 @@ Execute `GUCA-MAP-001` to perform the following check:
 
 1. **Calculation**: Total the binary scores across all 10 Pillars (MAP-I-CS).
 2. **Judgement**:
-    - 9-10/10: **EXCELLENT**. Register in the Ascension Registry.
-    - 8/10: **PASS**. Minor refinements suggested.
-    - <8/10: **FAIL (SLAG)**. Trigger an immediate `CMD: REFORGE` session.
+   - 9-10/10: **EXCELLENT**. Register in the Ascension Registry.
+   - 8/10: **PASS**. Minor refinements suggested.
+   - <8/10: **FAIL (SLAG)**. Trigger an immediate `CMD: REFORGE` session.
 
 ### 1.4 Phase 4: Immutable Logging
 

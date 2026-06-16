@@ -1,6 +1,18 @@
-#!/usr/bin/env python3
 """
-# TOOL-KING-002: The Scribe's Quill (King of Pentacles Suite)
+artifact_anchor:
+  id: INFR.LOG_SYNTHESIS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+#!/usr/bin/env python3
+"""# TOOL-KING-002: The Scribe's Quill (King of Pentacles Suite).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -35,7 +47,6 @@ SELT-CSL-TEMPLATE-001, USES, Follows the standard CSL template structure.
 """
 
 import argparse
-import os
 from datetime import datetime
 from pathlib import Path
 
@@ -46,7 +57,6 @@ TEMPLATE_ID = "SELT-CSL-TEMPLATE-001"
 
 def generate_log(title: str, tags: list[str]):
     """Generates a new CSL entry based on the standard template."""
-
     if not CSL_DIR.exists():
         CSL_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -87,9 +97,13 @@ def generate_log(title: str, tags: list[str]):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="LOG_SYNTHESIS: Create a new CSL entry.")
+    parser = argparse.ArgumentParser(
+        description="LOG_SYNTHESIS: Create a new CSL entry."
+    )
     parser.add_argument("--title", required=True, help="Title of the insight.")
-    parser.add_argument("--tag", action="append", help="Tags to apply (can be used multiple times).")
+    parser.add_argument(
+        "--tag", action="append", help="Tags to apply (can be used multiple times)."
+    )
 
     args = parser.parse_args()
     tags = args.tag if args.tag else ["Insight"]

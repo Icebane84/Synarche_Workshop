@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.TAXONOMY.RELATIONSHIPS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Taxonomy.Relationships.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -8,7 +18,7 @@
 | **Official Name**  | `GVRN.Taxonomy.Relationships.md`                                | The Filename.     |
 | **Version**        | **v15.0 [OMEGA]**                                               | The Standard.     |
 | **Domain**         | `GVRN`                                                          | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                                                   | The Lifecycle.    |
+| **Status (State)** | `[CANONIZED]`                                                   | The Lifecycle.    |
 | **Relations**      | `DEFINED_BY: GVRN.REG.Lexicon, GOVERNED_BY: SYNG.Link.Semantic` | The Network.      |
 
 ---

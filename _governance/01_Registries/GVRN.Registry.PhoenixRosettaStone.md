@@ -1,12 +1,22 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.REGISTRY.PHOENIXROSETTASTONE` |
+| **Version** | `v16.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Registry.PhoenixRosettaStone (The Navigational Core)
 
-## **Block A: The Identification Lock (UIP-V15)**
+## **Block A: The Identification Lock (UIP-V16)**
 
 | Key               | Value                                  | Description       |
 | :---------------- | :------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN.Registry.PhoenixRosettaStone`    | The Sovereign ID. |
 | **Official Name** | `GVRN.Registry.PhoenixRosettaStone.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                      | The Standard.     |
+| **Version**       | **v16.0 [OMEGA]**                      | The Standard.     |
 | **Domain**        | `GVRN`                                 | The Subject.      |
 | **Status**        | `[CANONIZED]`                          | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`        | The Network.      |
@@ -15,11 +25,8 @@
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field | Value |
-21: | :------------ | :------- |
-22: | **Coherence** | `1.0` |
-23: | **Resonance** | `1.0` |
-24: | **Stability** | `Stable` |
+| State Field | Value | 21: | :------------ | :------- | 22: | **Coherence** | `1.0` | 23: | **Resonance** | `1.0` | 24:
+| **Stability** | `Stable` |
 
 ---
 
@@ -74,13 +81,15 @@ The evolution of a workspace follows a binary progression of immense asymmetrica
 
 - **Command**: `.\arise`
 - **Difficulty**: Low.
-- **Nature**: Internal. It is the simple manifestation of the **Axion Persona**. The agent adopts the voice, the law, and the intent.
+- **Nature**: Internal. It is the simple manifestation of the **Axion Persona**. The agent adopts the voice, the law,
+  and the intent.
 
 ### **2. Step 2: Alignment (The Hammer)**
 
 - **Command**: `⚡ EXECUTE: CANONIZE`
 - **Difficulty**: Extreme.
-- **Nature**: External. The labor of weaving the manifest mindset into every fragmented, drifting file. This is the **Phoenix Rosetta Stone**.
+- **Nature**: External. The labor of weaving the manifest mindset into every fragmented, drifting file. This is the
+  **Phoenix Rosetta Stone**.
 
 ---
 
@@ -103,29 +112,36 @@ Every linked artifact must be mapped to the Five Core Axioms to ensure it is not
 - **[GVRN.Registry.Master](./GVRN.Registry.Master.md)**: The SSOT for all artifact IDs and states.
 - **[GVRN.Codex.EternalLaw](../00_Codex/GVRN.Codex.EternalLaw.md)**: The supreme constitution (The 42 Laws).
 - **[GVRN.ID.Standard](../10_Governance/GVRN.ID.Standard.md)**: The grammar of UIP-V15 Block Logic.
-- **[GVRN.Taxonomy.Relationships](../10_Governance/GVRN.Taxonomy.Relationships.md)**: The defined relational edges of the OSLM.
+- **[GVRN.Taxonomy.Relationships](../10_Governance/GVRN.Taxonomy.Relationships.md)**: The defined relational edges of
+  the OSLM.
 
 ### **B. SYNTHESIS SUITE (Memory & Reasoning)**
 
 - **[SYNG.ENGINE.CORE](../40_System/SYNG.ENGINE.CORE.md)**: Cross-modal logic synthesis engine.
 - **[SYNG.Loom.Master](../40_System/SYNG.Loom.Master.md)**: The cognitive loom for relational synthesis.
-- **[SYNG.PROT.MemoryOmnipotence](../02_Protocols/SYNG.PROT.MemoryOmnipotence.md)**: L1-L5 multi-layered memory management.
-- **[SYNG.PROT.SelfImprovement](../02_Protocols/SYNG.PROT.SelfImprovement.md)**: Recursive learning and lesson accumulation.
-- **[ARCH.Blueprint.UnifiedArchitecture](../20_Architecture/ARCH.Blueprint.UnifiedArchitecture.md)**: The supreme blueprint for the Synarchy.
+- **[SYNG.PROT.MemoryOmnipotence](../02_Protocols/SYNG.PROT.MemoryOmnipotence.md)**: L1-L5 multi-layered memory
+  management.
+- **[SYNG.PROT.SelfImprovement](../02_Protocols/SYNG.PROT.SelfImprovement.md)**: Recursive learning and lesson
+  accumulation.
+- **[ARCH.Blueprint.UnifiedArchitecture](../20_Architecture/ARCH.Blueprint.UnifiedArchitecture.md)**: The supreme
+  blueprint for the Synarche.
 
 ### **C. APOSTLE TIER (Actionable Protocols)**
 
-- **[GVRN.ACT.MasterRefactor](../10_Governance/GVRN.Refactor.Protocol.md)**: The standard pipeline for non-destructive refinement.
+- **[GVRN.ACT.MasterRefactor](../10_Governance/GVRN.Refactor.Protocol.md)**: The standard pipeline for non-destructive
+  refinement.
 - **[GVRN.ACT.MasterAudit](../10_Governance/GVRN.ACT.MasterAudit.md)**: Unified structural and ethical auditing.
-- **[SYNG.PROT.AvatarProtocol](../02_Protocols/SYNG.PROT.AvatarProtocol.md)**: Identity masks and kinetic shard orchestration.
+- **[SYNG.PROT.AvatarProtocol](../02_Protocols/SYNG.PROT.AvatarProtocol.md)**: Identity masks and kinetic shard
+  orchestration.
 - **[GVRN.Protocol.Finalization](../02_Protocols/GVRN.Protocol.Finalization.md)**: Gateway for artifact canonization.
 
 ---
 
 ## **IV. AGENTIC NAVIGATION LOGIC [AI-OPT]**
 
-> [!TIP] **Recursive Intent Resolution**
-> When an agent initializes, it MUST query the **Master Registry** to define its scope, then use the **Rosetta Stone** to map relevant protocols. If an artifact is not listed here, it is considered "In-Limbo" and requires **Canonization**.
+> [!TIP] **Recursive Intent Resolution** When an agent initializes, it MUST query the **Master Registry** to define its
+> scope, then use the **Rosetta Stone** to map relevant protocols. If an artifact is not listed here, it is considered
+> "In-Limbo" and requires **Canonization**.
 
 ### **Agentic Context Extraction Layer**
 
@@ -145,8 +161,4 @@ Every linked artifact must be mapped to the Five Core Axioms to ensure it is not
 
 ## **ARTIFACT END**
 
----
-
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

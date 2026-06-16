@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Auto Preview - Antigravity Kit
+"""Auto Preview - Antigravity Kit.
 ==============================
 Manages (start/stop/status) the local development server for previewing the application.
 
@@ -10,13 +9,12 @@ Usage:
     python .agent/scripts/auto_preview.py status
 """
 
-import os
-import sys
-import time
-import json
-import signal
 import argparse
+import json
+import os
+import signal
 import subprocess
+import sys
 from pathlib import Path
 
 AGENT_DIR = Path(".agent")
@@ -132,7 +130,7 @@ def status_server():
 
     print("\n=== Preview Status ===")
     if running:
-        print(f"✅ Status: Running")
+        print("✅ Status: Running"g")
         print(f"🔢 PID: {pid}")
         print(f"🌐 URL: {url} (Likely)")
         print(f"📝 Logs: {LOG_FILE}")

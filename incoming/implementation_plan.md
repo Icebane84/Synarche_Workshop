@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > **Axiom:** To envision the architecture before the first blow.
-> *"A plan is a bridge across the void of potential."* — **The Architect's Gaze**
+> _"A plan is a bridge across the void of potential."_ — **The Architect's Gaze**
 
 ## Goal: To imbue the OATHKEEPER agent with "Architectural Empathy" and finalize the Obsidian Knowledge Bridge.
 
@@ -33,6 +33,7 @@
 ## Verification Plan
 
 ### Automated Tests
+
 1. **Hybrid Retrieval Test**: Simulation run with a query that matches BOTH a local memory and an Obsidian note.
 2. **Scoring Audit**: Verify that the Obsidian result correctly receives a "Sovereign Boost" and is ranked competitively.
 

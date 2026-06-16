@@ -1,0 +1,23 @@
+{
+  "name": "synarche_workspace",
+  "version": "15.0.0",
+  "private": true,
+  "workspaces": [
+    "axion-core",
+    "open-notebook",
+    "design-system",
+    "tarot-forge",
+    "nova_forge",
+    "phoenix-rosetta-stone",
+    "recovery"
+  ],
+  "scripts": {
+    "dev": "nx run open-notebook:dev",
+    "build": "nx run open-notebook:build",
+    "phoenix": "nx run phoenix-rosetta-stone:dev"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.15",
+    "jsonc-parser": "^3.3.1"
+  }
+}

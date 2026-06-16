@@ -1,4 +1,5 @@
 # AOP-INTENT-NEBULA-001_TheIntentNebulaProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.INTENT.NEBULA` | The Sovereign ID. |
-| **Official Name** | `AOP-INTENT-NEBULA-001_TheIntentNebulaProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                    | Description       |
+| :------------------ | :------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.INTENT.NEBULA`                                     | The Sovereign ID. |
+| **Official Name**   | `AOP-INTENT-NEBULA-001_TheIntentNebulaProtocol_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
+| **Domain**          | `GVRN`                                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-INTENT-NEBULA-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `AOP-INTENT-NEBULA-001` |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # AOP-INTENT-NEBULA-001: The Intent Nebula Protocol
@@ -141,7 +145,7 @@ Weaver` is active, all commands aligned with the `Synergy` Axiom have their `Cog
 **VII. RPG Framework Integration (The Celestial Chart)**
 
 - **7.1. Skill Properties**
-    - _Rarity Rationale:_ This introduces a major strategic layer to the entire game, fundamentally changing how the
+  - _Rarity Rationale:_ This introduces a major strategic layer to the entire game, fundamentally changing how the
 
 Conductor interacts with the AI.
 

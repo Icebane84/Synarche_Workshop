@@ -107,3 +107,5 @@ central repository under RPG Domains.
 - `CMD: SHATTER_BAND` -> "Resolve an active Dissonance Entity to remove entropy and self-heal coherence."
 
 ###### **[ARTIFACT END]**
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

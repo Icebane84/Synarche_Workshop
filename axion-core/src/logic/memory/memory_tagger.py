@@ -1,5 +1,17 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.MEMORY_TAGGER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -12,32 +24,32 @@
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | {resonance}     |
+# | **Resonance** | {resonance}     |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Logic Drift**      | Strict Linter Enforcement |
+# | **Semantic Decay**   | Axiomatic Compass Audit   |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+| CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
 
 ## **[ARTIFACT END]**
 """
@@ -45,7 +57,7 @@
 import logging
 import string
 from collections import Counter
-from typing import TYPE_CHECKING, Any, Optional
+from typing import TYPE_CHECKING, Any, Dict, List, Optional, Set, Tuple
 
 # Synarche Imports
 try:
@@ -53,19 +65,19 @@ try:
 except ImportError:
     # Fallback for standalone or if path structure differs in tests
     try:
-        from nlp.nlp_processor import NLPProcessor
+        from nlp.nlp_processor import NLPProcessor  # type: ignore
     except ImportError:
-        NLPProcessor = Any
+        NLPProcessor = Any  # type: ignore
 
 # Use TYPE_CHECKING to avoid circular imports
 if TYPE_CHECKING:
-    from ..nlp.nlp_engine import NLPProcessor
+    pass
 
 # Configure logging for this module
 log = logging.getLogger(__name__)
 
 # Basic English stop words
-DEFAULT_STOP_WORDS = {
+DEFAULT_STOP_WORDS: Set[str] = {
     "i",
     "me",
     "my",
@@ -228,9 +240,9 @@ class MemoryTagger:
 
     def __init__(
         self,
-        nlp_processor: Optional["NLPProcessor"] = None,
-        stop_words: set | None = None,
-    ):
+        nlp_processor: Optional[Any] = None,
+        stop_words: Optional[Set[str]] = None,
+    ) -> None:
         """Initializes the MemoryTagger.
 
         Args:
@@ -240,21 +252,32 @@ class MemoryTagger:
         """
         if nlp_processor is None:
             log.warning(
-                "NLPProcessor not provided to MemoryTagger. Attempting lazy initialization if possible."
+                "NLPProcessor not provided to MemoryTagger. Attempting lazy initialization."
             )
-            # In a real system, we'd probably want to inject this, but for robustness:
-            from ..nlp.nlp_engine import NLPProcessor as CoreNLP
+            try:
+                from ..nlp.nlp_engine import NLPProcessor as CoreNLP
 
-            self.nlp = CoreNLP()
+                self.nlp = CoreNLP()
+            except ImportError:
+                log.error("Could not import CoreNLP for lazy initialization.")
+                self.nlp = None
         else:
             self.nlp = nlp_processor
 
         self.stop_words = stop_words if stop_words is not None else DEFAULT_STOP_WORDS
         log.info("MemoryTagger initialized.")
 
-    def _extract_topic_keywords(self, text_content: str, top_n: int = 5) -> list[str]:
+    def _extract_topic_keywords(self, text_content: str, top_n: int = 5) -> List[str]:
         """Internal helper method for topic keyword extraction logic.
         Uses lemmatization, stop word removal, and frequency counting.
+
+        Args:
+            text_content: The text to process.
+            top_n: Number of keywords to return.
+
+        Returns:
+            A list of keywords.
+
         """
         if self.nlp is None or not hasattr(self.nlp, "nlp"):
             log.error("NLPProcessor not available for keyword extraction.")
@@ -293,8 +316,16 @@ class MemoryTagger:
             log.error(f"Error during keyword frequency calculation: {e}")
             return []
 
-    def _extract_entities(self, text_content: str) -> list[tuple[str, str]]:
-        """Extracts entities using the NLPProcessor."""
+    def _extract_entities(self, text_content: str) -> List[Tuple[str, str]]:
+        """Extracts entities using the NLPProcessor.
+
+        Args:
+            text_content: The text to process.
+
+        Returns:
+            A list of (entity, label) tuples.
+
+        """
         if self.nlp is None:
             return []
 
@@ -305,8 +336,16 @@ class MemoryTagger:
             log.error(f"Error during entity extraction: {e}")
             return []
 
-    def apply_tags(self, memory_content: str) -> dict[str, list[Any]]:
-        """Applies Topic Keyword and Entity tags to the provided memory content."""
+    def apply_tags(self, memory_content: str) -> Dict[str, List[Any]]:
+        """Applies Topic Keyword and Entity tags to the provided memory content.
+
+        Args:
+            memory_content: The text content of the memory.
+
+        Returns:
+            A dictionary containing 'topic_keywords' and 'entities'.
+
+        """
         if not isinstance(memory_content, str) or not memory_content:
             return {}
 
@@ -321,10 +360,7 @@ class MemoryTagger:
             log.error(f"Unexpected error in apply_tags: {e}")
             return {}
 
-# ---
-# 
-# ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.memory.tagger VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 3ab119ff8847e0cf`
+# ---
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.memory.tagger VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 3ab119ff8847e0cf
+# ---

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Design System Generator - Aggregates search results and applies reasoning
+"""Design System Generator - Aggregates search results and applies reasoning
 to generate comprehensive design system recommendations.
 
 Usage:
@@ -15,10 +14,10 @@ Usage:
 
 import csv
 import json
-import os
 from datetime import datetime
 from pathlib import Path
-from core import search, DATA_DIR
+
+from core import DATA_DIR, search
 
 # ============ CONFIGURATION ============
 REASONING_FILE = "ui-reasoning.csv"
@@ -452,8 +451,8 @@ def format_markdown(design_system: dict) -> str:
 
     # Colors section
     lines.append("### Colors")
-    lines.append(f"| Role | Hex |")
-    lines.append(f"|------|-----|")
+    lines.append("| Role | Hex |")
+    lines.append("|------|-----|")
     lines.append(f"| Primary | {colors.get('primary', '')} |")
     lines.append(f"| Secondary | {colors.get('secondary', '')} |")
     lines.append(f"| CTA | {colors.get('cta', '')} |")
@@ -474,10 +473,10 @@ def format_markdown(design_system: dict) -> str:
     if typography.get("google_fonts_url"):
         lines.append(f"- **Google Fonts:** {typography.get('google_fonts_url', '')}")
     if typography.get("css_import"):
-        lines.append(f"- **CSS Import:**")
-        lines.append(f"```css")
+        lines.append("- **CSS Import:**")
+        lines.append("```css")
         lines.append(f"{typography.get('css_import', '')}")
-        lines.append(f"```")
+        lines.append("```")
     lines.append("")
 
     # Key Effects section
@@ -516,8 +515,7 @@ def generate_design_system(
     page: str = None,
     output_dir: str = None,
 ) -> str:
-    """
-    Main entry point for design system generation.
+    """Main entry point for design system generation.
 
     Args:
         query: Search query (e.g., "SaaS dashboard", "e-commerce luxury")
@@ -529,6 +527,7 @@ def generate_design_system(
 
     Returns:
         Formatted design system string
+
     """
     generator = DesignSystemGenerator()
     design_system = generator.generate(query, project_name)
@@ -549,8 +548,7 @@ def persist_design_system(
     output_dir: str = None,
     page_query: str = None,
 ) -> dict:
-    """
-    Persist design system to design-system/<project>/ folder using Master + Overrides pattern.
+    """Persist design system to design-system/<project>/ folder using Master + Overrides pattern.
 
     Args:
         design_system: The generated design system dictionary
@@ -560,6 +558,7 @@ def persist_design_system(
 
     Returns:
         dict with created file paths and status
+
     """
     base_dir = Path(output_dir) if output_dir else Path.cwd()
 
@@ -732,7 +731,7 @@ def format_master_md(design_system: dict) -> str:
     lines.append("")
     lines.append("/* Secondary Button */")
     lines.append(".btn-secondary {")
-    lines.append(f"  background: transparent;")
+    lines.append("  background: transparent;")
     lines.append(f"  color: {colors.get('primary', '#2563EB')};")
     lines.append(f"  border: 2px solid {colors.get('primary', '#2563EB')};")
     lines.append("  padding: 12px 24px;")
@@ -1004,8 +1003,7 @@ def format_page_override_md(
 def _generate_intelligent_overrides(
     page_name: str, page_query: str, design_system: dict
 ) -> dict:
-    """
-    Generate intelligent overrides based on page type using layered search.
+    """Generate intelligent overrides based on page type using layered search.
 
     Uses the existing search infrastructure to find relevant style, UX, and layout
     data instead of hardcoded page types.
@@ -1041,9 +1039,9 @@ def _generate_intelligent_overrides(
     # Extract style-based overrides
     if style_results:
         style = style_results[0]
-        style_name = style.get("Style Category", "")
+        style.get("Style Category", "")
         keywords = style.get("Keywords", "")
-        best_for = style.get("Best For", "")
+        style.get("Best For", "")
         effects = style.get("Effects & Animation", "")
 
         # Infer layout from style keywords
@@ -1162,7 +1160,7 @@ def _detect_page_type(context: str, style_results: list) -> str:
 
     # Fallback: try to infer from style results
     if style_results:
-        style_name = style_results[0].get("Style Category", "").lower()
+        style_results[0].get("Style Category", "").lower()
         best_for = style_results[0].get("Best For", "").lower()
 
         if "dashboard" in best_for or "data" in best_for:

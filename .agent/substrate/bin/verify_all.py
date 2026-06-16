@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Full Verification Suite - Antigravity Kit
+"""Full Verification Suite - Antigravity Kit.
 ==========================================
 
 Runs COMPLETE validation including all checks + performance + E2E.
@@ -22,12 +21,11 @@ Includes ALL checks:
     ✅ Mobile Audit (if applicable)
 """
 
-import sys
-import subprocess
 import argparse
-from pathlib import Path
-from typing import List, Optional
+import subprocess
+import sys
 from datetime import datetime
+from pathlib import Path
 
 
 # ANSI colors
@@ -43,9 +41,9 @@ class Colors:
 
 
 def print_header(text: str):
-    print(f"\n{Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+    print(f"\n{Colors.BOLD}{Colors.CYAN}{'=' * 70}{Colors.ENDC}")
     print(f"{Colors.BOLD}{Colors.CYAN}{text.center(70)}{Colors.ENDC}")
-    print(f"{Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+    print(f"{Colors.BOLD}{Colors.CYAN}{'=' * 70}{Colors.ENDC}\n")
 
 
 def print_step(text: str):
@@ -204,9 +202,9 @@ VERIFICATION_SUITE = [
 
 
 def run_script(
-    name: str, script_path: Path, project_path: str, url: Optional[str] = None
+    name: str, script_path: Path, project_path: str, url: str | None = None
 ) -> dict:
-    """Run validation script"""
+    """Run validation script."""
     if not script_path.exists():
         print_warning(f"{name}: Script not found, skipping")
         return {"name": name, "passed": True, "skipped": True, "duration": 0}
@@ -226,6 +224,7 @@ def run_script(
     try:
         result = subprocess.run(
             cmd,
+            check=False,
             capture_output=True,
             text=True,
             timeout=600,  # 10 minute timeout for slow checks
@@ -263,7 +262,7 @@ def run_script(
 
     except Exception as e:
         duration = (datetime.now() - start_time).total_seconds()
-        print_error(f"{name}: ERROR - {str(e)}")
+        print_error(f"{name}: ERROR - {e!s}")
         return {
             "name": name,
             "passed": False,
@@ -273,8 +272,8 @@ def run_script(
         }
 
 
-def print_final_report(results: List[dict], start_time: datetime):
-    """Print comprehensive final report"""
+def print_final_report(results: list[dict], start_time: datetime):
+    """Print comprehensive final report."""
     total_duration = (datetime.now() - start_time).total_seconds()
 
     print_header("📊 FULL VERIFICATION REPORT")

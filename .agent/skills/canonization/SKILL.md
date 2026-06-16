@@ -1,3 +1,8 @@
+---
+name: "Canonization"
+description: "Formally seal and hash workspace artifacts as immutable Sovereign Nodes."
+---
+
 # Canonization Protocol (The Three Seals)
 
 ## **Block A: The Identification Lock (UIP-V15)**

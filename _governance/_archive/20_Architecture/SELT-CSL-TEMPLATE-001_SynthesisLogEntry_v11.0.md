@@ -55,7 +55,7 @@ UIP: SELT-CSL-TEMPLATE-001 Title: Synthesis Log Entry Template Source:
 Description: > Definitive JSON/Markdown template for "Memory Atoms" in the Collaborative Synthesis Log (CSL). Version:
 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769338850
 

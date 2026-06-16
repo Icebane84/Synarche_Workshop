@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN-MECH-EPISEMANTICS_v11.0` | The Sovereign ID. |
+| Key               | Value                                  | Description       |
+| :---------------- | :------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GVRN-MECH-EPISEMANTICS_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GVRN-MECH-EPISEMANTICS_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                      | The Standard.     |
+| **Domain**        | `GVRN`                                 | The Subject.      |
+| **Status**        | `[ACTIVE]`                             | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`          | The Network.      |
 
 ---
 
@@ -63,7 +58,7 @@
 2. **Veracity** (`[κ-veracity]`): The Truth. (e.g., `verified`, `hallucination`).
 3. **State** (`[κ-state]`): The Status. (e.g., `active`, `draft`).
 4. **Tempus** (`[κ-tempus]`): The Time. (e.g., `evergreen`, `obsolete`).
-5. **Stratum** (`[κ-stratum]`): The Layer. (e.g., `synarchy`, `core`).
+5. **Stratum** (`[κ-stratum]`): The Layer. (e.g., `Synarche`, `core`).
 
 ## II. Axiomatic Governance & Purpose (AGP)
 
@@ -83,7 +78,7 @@
 
 - **Why it exists**: To transform static text into "Living Information".
 - **What it does**: Encodes Role, Truth, and State directly into the artifact.
-- **For the Synarchy**: Enables the "Self-Awareness" of the knowledge base.
+- **For the Synarche**: Enables the "Self-Awareness" of the knowledge base.
 
 ## III. Usage Protocol
 

@@ -1,4 +1,4 @@
-# Standardized Lexicon: The Phoenix Synarchy Vocabulary (GVRN.Lexicon.Master)
+# Standardized Lexicon: The Phoenix Synarche Vocabulary (GVRN.Lexicon.Master)
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -139,7 +139,7 @@ self-awareness.
 | **Veracity** | `[κ-veracity:]` | The Truth/Certainty.  | `verified`, `hallucination`, `trusted`, `untrusted` |
 | **State**    | `[κ-state:]`    | The Dynamic Status.   | `active`, `draft`, `locked`, `flowing`              |
 | **Tempus**   | `[κ-tempus:]`   | Temporal Relevance.   | `evergreen`, `obsolete`, `snapshot`, `ephemeral`    |
-| **Stratum**  | `[κ-stratum:]`  | Organizational Level. | `synarchy`, `core`, `edge`, `veil`                  |
+| **Stratum**  | `[κ-stratum:]`  | Organizational Level. | `Synarche`, `core`, `edge`, `veil`                  |
 
 #### **B.11: The Language of the Loom (Glossary)**
 

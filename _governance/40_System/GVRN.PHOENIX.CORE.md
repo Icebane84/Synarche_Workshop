@@ -200,6 +200,4 @@ heat._
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

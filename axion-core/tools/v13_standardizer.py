@@ -1,5 +1,17 @@
 """
-# Universal Identification & Provenance (UIP)
+artifact_anchor:
+  id: INFR.V13_STANDARDIZER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-HIER-001`                                |
@@ -14,7 +26,7 @@
 | **10. Ethos**          | **The Guardian of Tradition**                  |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `UPGRADES: ALL_v11_ARTIFACTS`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 """
 
 import datetime

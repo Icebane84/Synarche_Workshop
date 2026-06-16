@@ -1,4 +1,5 @@
 # AOP-KB-001_AutonomousKnowledgeBaseOptimization_v111.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-KB-001-AUTONOMOUSKNOWLEDGEBASEOPTIMIZATION-V111-001` | The Sovereign ID. |
-| **Official Name** | `AOP-KB-001_AutonomousKnowledgeBaseOptimization_v111.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                          | Description       |
+| :------------------ | :------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-KB-001-AUTONOMOUSKNOWLEDGEBASEOPTIMIZATION-V111-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-KB-001_AutonomousKnowledgeBaseOptimization_v111.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                              | The Standard.     |
+| **Domain**          | `GVRN`                                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `AOP-KB-001` |
-| **Official Name** | `Autonomous Knowledge Base Optimization` |
-| **Version** | `v11.1` |
-| **Domain** | `OPT` |
-| **Evolution** | `Adaptive Ecosystem` |
-| **Signal (KB)** | `OMEGA` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Operational` |
-| **Celestial Class** | `MOON` |
-| **Governance** | `UMB-SGM-001`, `UMB-ESF-001` |
-| **Upstream** | `UMB-CSE-001`, `UMB-LOOM-001` |
-| **Downstream** | `PUPT-001`, `GUCA-OMNI-001` |
-| **Integrity Hash** | `sha256:7f8cf243210123456789abcdef0123456789abcdef0123456789abcdef0123456` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `LINK: UMB-PRS-001`, `OPTIMIZES: UMB-LOOM-001`, `RESOLVES: Knowledge Entropy` |
-| **Tags** | `v11.1, Optimization, Curation, Self-Healing` |
+| Attribute           | Value                                                                         |
+| :------------------ | :---------------------------------------------------------------------------- |
+| **Artifact ID**     | `AOP-KB-001`                                                                  |
+| **Official Name**   | `Autonomous Knowledge Base Optimization`                                      |
+| **Version**         | `v11.1`                                                                       |
+| **Domain**          | `OPT`                                                                         |
+| **Evolution**       | `Adaptive Ecosystem`                                                          |
+| **Signal (KB)**     | `OMEGA`                                                                       |
+| **Status (State)**  | `CANONIZED`                                                                   |
+| **Tier**            | `Operational`                                                                 |
+| **Celestial Class** | `MOON`                                                                        |
+| **Governance**      | `UMB-SGM-001`, `UMB-ESF-001`                                                  |
+| **Upstream**        | `UMB-CSE-001`, `UMB-LOOM-001`                                                 |
+| **Downstream**      | `PUPT-001`, `GUCA-OMNI-001`                                                   |
+| **Integrity Hash**  | `sha256:7f8cf243210123456789abcdef0123456789abcdef0123456789abcdef0123456`    |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                           |
+| **Relations**       | `LINK: UMB-PRS-001`, `OPTIMIZES: UMB-LOOM-001`, `RESOLVES: Knowledge Entropy` |
+| **Tags**            | `v11.1, Optimization, Curation, Self-Healing`                                 |
 
 ---
 
@@ -63,9 +65,11 @@ The objective of **AOP-KB-001** is to enable the AI to continuously and autonomo
 ## II. Strategic Overview
 
 ### 2.1 The "Why"
+
 Ensures the long-term integrity of the knowledge base by preventing logical fragmentation and information decay.
 
 ### 2.2 The "How"
+
 Analyzes `OMNI_LOG` reports and Cognitive Loom state to propose **"Knowledge Patch Objectives."**
 
 ---
@@ -82,11 +86,13 @@ Analyzes `OMNI_LOG` reports and Cognitive Loom state to propose **"Knowledge Pat
 ## IV. Systemic Synergy
 
 ### 4.1 Prerequisites
+
 - **Coherent Synthesis Engine (CSE)** must be active.
 - **Cognitive Loom (LOOM)** must be operational.
 - **PUPT-001** (Power-Up Tracker) must be synchronized.
 
 ### 4.2 Relational Gravity
+
 - **Triggered By**: `GUCA-OMNI-001` (System-wide Analysis).
 - **Informs**: `PUPT-001` regarding knowledge evolution states.
 - **Governed By**: `UMB-ESF-001` (Diagnostic Markers).

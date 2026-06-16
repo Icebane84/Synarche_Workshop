@@ -3,6 +3,7 @@ import json
 import logging
 import os
 import re
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -37,10 +38,11 @@ def calculate_content_hash(content: str) -> str:
     if match:
         start_pos = match.start()
         sep_pos = content.find("---", start_pos)
-        if sep_pos != -1:
-            soul_content = content[sep_pos + 3 :].strip()
-        else:
-            soul_content = content.replace(match.group(0), "").strip()
+        soul_content = (
+            content[sep_pos + 3 :].strip()
+            if sep_pos != -1
+            else content.replace(match.group(0), "").strip()
+        )
     else:
         soul_content = content.strip()
 
@@ -240,12 +242,12 @@ class GVRNLoom:
                 else:
                     logger.debug(f"Skipping {aid}: No Block A found to overwrite.")
             except Exception as e:
-                logger.error(f"Failed to update {aid}: {e}")
+                logger.exception(f"Failed to update {aid}: {e}")
 
         logger.info(f"Propagation complete. {push_count} files updated.")
 
     def audit(self) -> bool:
-        logger.info("Executing Socratic Audit of the Synarchy...")
+        logger.info("Executing Socratic Audit of the Synarche...")
         dissonance_found = False
 
         for aid, meta in self.registry.items():
@@ -286,7 +288,7 @@ class GVRNLoom:
                         dissonance_found = True
 
             except Exception as e:
-                logger.error(f"Error auditing {aid}: {e}")
+                logger.exception(f"Error auditing {aid}: {e}")
 
         if not dissonance_found:
             logger.info("Status: RESONANCE. All artifacts aligned.")
@@ -321,7 +323,7 @@ if __name__ == "__main__":
     if args.action == "audit":
         valid = loom.audit()
         if not valid:
-            exit(1)
+            sys.exit(1)
     if args.action in ["push", "both"]:
         loom.propagate_to_workspace(args.id)
     loom.export_json()

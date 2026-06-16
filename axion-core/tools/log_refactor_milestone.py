@@ -1,5 +1,17 @@
 """
-# TOOL-KING-002: The Milestone Chronicler (Global Archival)
+artifact_anchor:
+  id: INFR.LOG_REFACTOR_MILESTONE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-KING-002: The Milestone Chronicler (Global Archival).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -70,13 +82,29 @@ logger = logging.getLogger(__name__)
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Phoenix Protocol: Milestone Chronicler")
-    parser.add_argument("--action", default="MILESTONE_REACHED", help="Type of action to log.")
-    parser.add_argument("--target", required=True, help="Target system or component of the milestone.")
-    parser.add_argument("--details", required=True, help="Comprehensive details of the achievement.")
-    parser.add_argument("--milestone", required=True, help="Name of the milestone reached.")
-    parser.add_argument("--domain", default="GUCA", help="Domain related to the milestone.")
-    parser.add_argument("--status", default="SUCCESS", help="Status of the milestone (e.g., SUCCESS, ACTIVE).")
+    parser = argparse.ArgumentParser(
+        description="Phoenix Protocol: Milestone Chronicler"
+    )
+    parser.add_argument(
+        "--action", default="MILESTONE_REACHED", help="Type of action to log."
+    )
+    parser.add_argument(
+        "--target", required=True, help="Target system or component of the milestone."
+    )
+    parser.add_argument(
+        "--details", required=True, help="Comprehensive details of the achievement."
+    )
+    parser.add_argument(
+        "--milestone", required=True, help="Name of the milestone reached."
+    )
+    parser.add_argument(
+        "--domain", default="GUCA", help="Domain related to the milestone."
+    )
+    parser.add_argument(
+        "--status",
+        default="SUCCESS",
+        help="Status of the milestone (e.g., SUCCESS, ACTIVE).",
+    )
 
     args = parser.parse_args()
 
@@ -84,7 +112,9 @@ def main() -> None:
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
     if Chronicler is None:
-        logger.error("[!] CRITICAL: hephaestus.chronicler could not be imported. Ensure 'axion-core/src' is in path.")
+        logger.error(
+            "[!] CRITICAL: hephaestus.chronicler could not be imported. Ensure 'axion-core/src' is in path."
+        )
         sys.exit(1)
 
     chronicler = Chronicler(root_dir=root_dir)
@@ -98,7 +128,11 @@ def main() -> None:
 
     try:
         log_id = chronicler.log_action(
-            action_type=args.action, target=args.target, details=args.details, status=args.status, metadata=metadata
+            action_type=args.action,
+            target=args.target,
+            details=args.details,
+            status=args.status,
+            metadata=metadata,
         )
         logger.info(f"[+] Milestone logged successfully. Log ID: {log_id}")
     except Exception:

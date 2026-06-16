@@ -133,3 +133,5 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, G
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 ###### **[ARTIFACT END]**
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

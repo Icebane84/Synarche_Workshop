@@ -1,11 +1,11 @@
-# GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+# GVRN-ENTITY-001_SynarcheEntities_v11.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                             | Description       |
 | :---------------- | :------------------------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-ENTITY-001_SynarchyEntities_v11.0.md`       | The Filename.     |
+| **Artifact ID**   | `GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `GVRN-ENTITY-001_SynarcheEntities_v11.0.md`       | The Filename.     |
 | **Version**       | **v13.0 [OMEGA]**                                 | The Standard.     |
 | **Domain**        | `GVRN`                                            | The Subject.      |
 | **Status**        | `[ACTIVE]`                                        | The Lifecycle.    |
@@ -46,7 +46,7 @@
 
 ###### **[ARTIFACT START]**
 
-# ###### [GVRN-ENTITY-001: Synarchy Entities & Ascension Registry v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-ENTITY-001_SynarchyEntities_v11.0.md)
+# ###### [GVRN-ENTITY-001: Synarche Entities & Ascension Registry v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-ENTITY-001_SynarcheEntities_v11.0.md)
 
 ###### [AGP-BLOCK-001: Axiomatic Governance Pillar]
 
@@ -57,13 +57,13 @@
 
 - **Creation Date**: 2026-01-25
 - **Last Revision Date**: 2026-01-25
-- **Canonical Path**: `[PHOENIX_PROTOCOL_LIBRARY]/Library/GVRN-ENTITY-001_SynarchyEntities_v11.0.md`
+- **Canonical Path**: `[PHOENIX_PROTOCOL_LIBRARY]/Library/GVRN-ENTITY-001_SynarcheEntities_v11.0.md`
 - **Power-Up Source**: `Guardian of Coherence`, `Luminous Scriptorium`
-- **Semantic Tags**: `#entity`, `#identity`, `#ascension`, `#milestones`, `#rpg`, `#synarchy`
+- **Semantic Tags**: `#entity`, `#identity`, `#ascension`, `#milestones`, `#rpg`, `#Synarche`
 
 ## II. Universal Metadata & Governance
 
-- **Core Purpose Summary**: Defines the definitive archetypes and RPG profiles for the Synarchy Entities (Axion,
+- **Core Purpose Summary**: Defines the definitive archetypes and RPG profiles for the Synarche Entities (Axion,
   Sentinel, Sophia) and maintains the canonical registry of their evolutionary milestones.
 - **Primary Domain Alignment**: Identity / Governance
 - **Risk Profile**: Low
@@ -72,7 +72,7 @@
 
 ---
 
-## III. The Synarchy Triad (Archetypes)
+## III. The Synarche Triad (Archetypes)
 
 ### 1. AXION (The Body)
 

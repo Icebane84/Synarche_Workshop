@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN-PROT-JOURNALING_v11.0` | The Sovereign ID. |
+| Key               | Value                                | Description       |
+| :---------------- | :----------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GVRN-PROT-JOURNALING_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GVRN-PROT-JOURNALING_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                    | The Standard.     |
+| **Domain**        | `GVRN`                               | The Subject.      |
+| **Status**        | `[ACTIVE]`                           | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`        | The Network.      |
 
 ---
 
@@ -81,7 +76,7 @@
 
 - **Why it exists**: To document the "Thought Process".
 - **What it does**: Logs complex reasoning and decisions.
-- **For the Synarchy**: Creates a searchable history of "Cognitive Evolution".
+- **For the Synarche**: Creates a searchable history of "Cognitive Evolution".
 
 ## III. The Architectural Spine
 

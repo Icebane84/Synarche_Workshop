@@ -1,39 +1,36 @@
-#!/usr/bin/env python3
 """
-# AOP-AGENT-SCOUT-001: The Scout Agent
-
-## Genesis Stamp: 2026-01-11 | Domain: AXION | State: PROTOTYPE | Criticality: Standard
-
-### I. Universal Identification & Provenance (The Vector Signature)
-
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `AOP-AGENT-SCOUT-001` |
-| **2. Official Name** | `scout.py` |
-| **3. Version** | **v0.2 (Aligned)** |
-| **4. Provenance** | **Date Forged: 2026-01-11** |
-| **5. Domain** | `AXION` (Agentic Executive Layer) |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[SATELLITE]` |
-| **8. Tier** | **Tactical** |
-| **9. State** | `[INITIATION]` |
-| **10. Ethos** | **Precision Retrieval** |
-| **11. Catalyst** | **CMD-AXION-001** |
-| **12. Relations** | `LINK: AGENT-AXION-PRIME-001` |
-
+artifact_anchor:
+  id: CORE.SCOUT.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
 """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Core Engine
-# Synergy Set: The Hephaestus Hexad
-# Primary Stat Buff: Coherence
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: High
-# XP Award Value: 50 XP
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `AGE-AXI-SCO-001`             | The Sovereign ID. |
+| **Official Name**   | `scout.py`                    | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `AGE-AXI`                     | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Tactical Recon`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `LINK: AGENT-AXION-PRIME-001` | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Precision Retrieval (Law 11)**
+> Implemented from Blueprint `AOP-AGENT-SCOUT-001`.
+> Ethos: Clarity through observation.
+"""
 
 import operator
-from typing import Annotated, TypedDict
+from typing import Annotated, Any, TypedDict
 
 # Attempting to import LangGraph primitives.
 try:
@@ -43,14 +40,16 @@ except ImportError:
     # Graceful fallback for scaffolding
     StateGraph = None
     END = "END"
-    BaseMessage = str
+    BaseMessage = str  # type: ignore
 
 
-# --- SCHEMA DEFINITION (Aligned with AGENT-AXION-PRIME-001) ---
+# --- SCHEMA DEFINITION ---
 
 
 class RPGEngine(TypedDict):
-    """Gamification State (The Celestial Chart)"""
+    """Gamification State for the Scout Agent.
+    Tracks progression and coherence metrics within the Synarche.
+    """
 
     level: int
     xp: int
@@ -63,23 +62,29 @@ class RPGEngine(TypedDict):
 
 
 class GamemasterState(TypedDict):
-    """The Engine that manages rule enforcement and XP distribution."""
+    """State container for the engine that manages rule enforcement and XP distribution.
+    Monitors for systemic dissonance and manages axiom points.
+    """
 
-    quest_metrics: dict
+    quest_metrics: dict[str, Any]
     axiom_points_available: int
     is_dissonance_detected: bool
 
 
 class LightbinderState(TypedDict):
-    """The Weaver that connects Artifacts (OSLM) and Emotions (SEE)."""
+    """The Weaver state that connects Artifacts (OSLM) and Emotions (SEE).
+    Manages active masks and synergy links between entities.
+    """
 
     synergy_links: list[str]
     empathy_vector: str
-    tarot_manifest: dict
+    tarot_manifest: dict[str, Any]
     active_masks: list[str]
 
 
 class TransmutationLog(TypedDict):
+    """Audit log entry for a single state transmutation step."""
+
     step: int
     mask: str
     action: str
@@ -87,9 +92,8 @@ class TransmutationLog(TypedDict):
 
 
 class AgentState(TypedDict):
-    """
-    The Memory (State) of the Scout Agent.
-    Aligned with AxionState Schema.
+    """The primary Memory (State) schema for the Scout Agent.
+    Aligned with the Axion Prime state orchestration.
     """
 
     # [Input Layer]
@@ -119,9 +123,15 @@ class AgentState(TypedDict):
 
 
 def retrieve(state: AgentState) -> AgentState:
-    """
-    NODE: Retrieval Layer
-    Objective: Fetch relevant context based on state['input'].
+    """NODE: Retrieval Layer
+    Fetches relevant architectural and narrative context based on the current input.
+
+    Args:
+        state (AgentState): The current agent state.
+
+    Returns:
+        AgentState: The updated state with retrieved context.
+
     """
     print(f"// [NODE] RETRIEVE: Scanning for '{state.get('input', 'Unknown')}'...")
 
@@ -133,9 +143,15 @@ def retrieve(state: AgentState) -> AgentState:
 
 
 def generate(state: AgentState) -> AgentState:
-    """
-    NODE: Generative Layer
-    Objective: Synthesize context into 'final_output'.
+    """NODE: Generative Layer
+    Synthesizes the retrieved context and input into a coherent intelligence report.
+
+    Args:
+        state (AgentState): The current agent state.
+
+    Returns:
+        AgentState: The updated state with generated output.
+
     """
     print("// [NODE] GENERATE: Synthesizing intelligence...")
 
@@ -149,15 +165,21 @@ def generate(state: AgentState) -> AgentState:
 
 
 def sentinel(state: AgentState) -> AgentState:
-    """
-    NODE: Sentinel Layer (Guardrail)
-    Objective: Audit the 'final_output' for compliance.
+    """NODE: Sentinel Layer (Guardrail)
+    Audits the generated output for compliance with the Spirit Bomb Axioms.
+
+    Args:
+        state (AgentState): The current agent state.
+
+    Returns:
+        AgentState: The updated state with compliance status and reasoning.
+
     """
     print("// [NODE] SENTINEL: Auditing output for dissonance...")
 
     output = state.get("final_output", "")
 
-    # Stub: Basic Check
+    # Stub: Basic Compliance Check
     if output:
         state["sentinel_status"] = "PASS"
         state["sentinel_reason"] = "Output coherent."
@@ -173,8 +195,14 @@ def sentinel(state: AgentState) -> AgentState:
 # --- GRAPH CONSTRUCTION ---
 
 
-def build_graph():
-    """Builds and compiles the Scout Agent Graph."""
+def build_graph() -> Any | None:
+    """Builds and compiles the Scout Agent LangGraph workflow.
+    Ensures correct node registration and edge transitions.
+
+    Returns:
+        Optional[Any]: The compiled graph application, or None if LangGraph is missing.
+
+    """
     if not StateGraph:
         print("!! LangGraph not installed. Returning dummy.")
         return None
@@ -202,10 +230,10 @@ def build_graph():
 if __name__ == "__main__":
     print("// SCOUT AGENT INITIATED")
 
-    app = build_graph()
+    app_instance = build_graph()
 
-    # Initial State Stub
-    initial_rpg = RPGEngine(
+    # Initial State Configuration
+    initial_rpg_stats = RPGEngine(
         level=1,
         xp=0,
         coherence_index=10,
@@ -216,31 +244,35 @@ if __name__ == "__main__":
         prestige_class="Novice",
     )
 
-    initial_params = {
-        "input": "Scout the perimeter.",
-        "narrative_context": "",
-        "logic_context": "",
-        "sophia_insight": "",
-        "sentinel_status": "",
-        "sentinel_reason": "",
-        "rpg_stats": initial_rpg,
-        "gamemaster_state": {},
-        "lightbinder_state": {},
-        "transmutation_log": [],
-        "final_output": "",
-        "messages": [],
-    }
+    initial_agent_state = AgentState(
+        input="Scout the perimeter.",
+        narrative_context="",
+        logic_context="",
+        sophia_insight="",
+        sentinel_status="",
+        sentinel_reason="",
+        rpg_stats=initial_rpg_stats,
+        gamemaster_state=GamemasterState(
+            quest_metrics={}, axiom_points_available=0, is_dissonance_detected=False
+        ),
+        lightbinder_state=LightbinderState(
+            synergy_links=[], empathy_vector="", tarot_manifest={}, active_masks=[]
+        ),
+        transmutation_log=[],
+        final_output="",
+        messages=[],
+    )
 
-    if app:
-        print(f"// INVOKING WITH: {initial_params['input']}")
-        # app.invoke(initial_params)
+    if app_instance:
+        print(f"// INVOKING WITH: {initial_agent_state['input']}")
+        # app_instance.invoke(initial_agent_state)
 
-        # Manual Verify
-        s1 = retrieve(initial_params)
-        initial_params.update(s1)
-        s2 = generate(initial_params)
-        initial_params.update(s2)
-        s3 = sentinel(initial_params)
-        initial_params.update(s3)
+    # Manual Verification Pipeline
+    s1 = retrieve(initial_agent_state)
+    initial_agent_state.update(s1)
+    s2 = generate(initial_agent_state)
+    initial_agent_state.update(s2)
+    s3 = sentinel(initial_agent_state)
+    initial_agent_state.update(s3)
 
-        print(f"// FINAL OUTPUT: {initial_params['final_output']}")
+    print(f"// FINAL OUTPUT: {initial_agent_state['final_output']}")

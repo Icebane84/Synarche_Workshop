@@ -1,0 +1,162 @@
+ENG-ECS-INI-001:
+  artifact_id: ENG-ECS-INI-001
+  content_hash: b3b33ae22855a26921176381f67916af64c60432efde75fec1b3913682e80c7d
+  domain: ENG-ECS
+  official_name: __init__.py
+  path: axion-core/src/engine/ecs/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-WRLD-001:
+  artifact_id: CORE-FDE-ECS-WRLD-001
+  content_hash: ecab2a8375664ef7274897bcf51278d3beef1f070c155d6ff037f802ec95a7de
+  domain: ENG-ECS
+  official_name: world.py
+  path: axion-core/src/engine/ecs/world.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+ENG-ECS-SYN-001:
+  artifact_id: ENG-ECS-SYN-001
+  content_hash: 7ba69f287ab8806027c4c83f65df9f6a7a9459e1ae8907a6f2453c0369caf3c2
+  domain: ENG-ECS
+  official_name: synergy.py
+  path: axion-core/src/engine/ecs/synergy.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+ENG-ECS-RES-001:
+  artifact_id: ENG-ECS-RES-001
+  content_hash: 396afa2c7b9066628abfc6b212ea29e98c9f76ac26d9d156f6df6c48cb0f2fde
+  domain: ENG-ECS
+  official_name: resonance.py
+  path: axion-core/src/engine/ecs/resonance.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+ENG-ECS-MAN-001:
+  artifact_id: ENG-ECS-MAN-001
+  content_hash: 89c20f13022cfefa76c27db9a0f84664abbda8e67de396f3cb5ec098355d5fc0
+  domain: ENG-ECS
+  official_name: manager.py
+  path: axion-core/src/engine/ecs/manager.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-TEST-001:
+  artifact_id: CORE-FDE-TEST-001
+  content_hash: df73e603895f656585e68714a8eb430677bdec11e21ba7cec0678acd27bdd7db
+  domain: ENG-ECS
+  official_name: fde_test_harness.py
+  path: axion-core/src/engine/ecs/fde_test_harness.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-REG-001:
+  artifact_id: CORE-FDE-ECS-REG-001
+  content_hash: 329be893a67da3504b3536f695bbe5a4e780d9ec247aaeb0c89a4b65aa9089a3
+  domain: ENG-ECS
+  official_name: entity_registry.py
+  path: axion-core/src/engine/ecs/entity_registry.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-SCH-001:
+  artifact_id: CORE-FDE-ECS-SCH-001
+  content_hash: f39aefb92ebd933ea939382ce73656aa402c0465b03e87dbe986c1b4e2d394c7
+  domain: ENG-ECS
+  official_name: ecs_scheduler.py
+  path: axion-core/src/engine/ecs/ecs_scheduler.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-006:
+  artifact_id: CORE-FDE-ECS-006
+  content_hash: 1770d89970009597890920947c03bc16e7e5b8421c0017c5d198e45a0a1f1f55
+  domain: ENG-ECS
+  official_name: ecs_hardened_core.py
+  path: axion-core/src/engine/ecs/ecs_hardened_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+CORE-FDE-ECS-005:
+  artifact_id: CORE-FDE-ECS-005
+  content_hash: 13d04e9e512152b830d1cd322b2713252e86ff663b31d554389d8a94528627a2
+  domain: ENG-ECS
+  official_name: ecs_core.py
+  path: axion-core/src/engine/ecs/ecs_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+ENG-ECS-STO-001:
+  artifact_id: ENG-ECS-STO-001
+  content_hash: 9b912e86a83940a3cb76adb51392901da29f7a606142a69adc235f60a7d9a9a5
+  domain: ENG-ECS
+  official_name: component.py
+  path: axion-core/src/engine/ecs/component.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+PHX-LOG-INI-001:
+  artifact_id: PHX-LOG-INI-001
+  content_hash: 47f8044d87920be943a8f2cf454c829a4a1230e0e881fc1468add940df03e9fa
+  domain: PHX-LOG
+  official_name: __init__.py
+  path: axion-core/src/phoenix/logging/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+PHX-LOG-CORE-001:
+  artifact_id: PHX-LOG-CORE-001
+  content_hash: 4cadb07aab7b114df380ab2d4b9eadf3a01fd8c1164177ff63cf26af1935172e
+  domain: PHX-LOG
+  official_name: logger_philosophical_framework.py
+  path: axion-core/src/phoenix/logging/logger_philosophical_framework.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+PHX-LOG-SET-001:
+  artifact_id: PHX-LOG-SET-001
+  content_hash: e258267c72ab6169d44a7c67eeba328a80cb31d8c710dbbfa8d17d46f899318a
+  domain: PHX-LOG
+  official_name: phx_logging_protocol_setup.py
+  path: axion-core/src/phoenix/logging/phx_logging_protocol_setup.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+SYS-REF-INI-001:
+  artifact_id: SYS-REF-INI-001
+  content_hash: 8a1e7bef1f3e5363a022631c2a42d9d93acf7e7ed731b9b41729eef0e4f30125
+  domain: SYS-REF
+  official_name: __init__.py
+  path: axion-core/src/system/refactor/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+SYS-REF-CORE-001:
+  artifact_id: SYS-REF-CORE-001
+  content_hash: ab6979bb1f5aa42bb475b00faa04f3ab1e4742202fdf7b345dc43deab1b15a6a
+  domain: SYS-REF
+  official_name: refactor_protocol_axion.py
+  path: axion-core/src/system/refactor/refactor_protocol_axion.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+SYS-REF-ROLL-001:
+  artifact_id: SYS-REF-ROLL-001
+  content_hash: 388461c548a922900ee74ef5ccd920ad37cffbd459954aa326d7d350af9a6b38
+  domain: SYS-REF
+  official_name: rollback_core.py
+  path: axion-core/src/system/refactor/rollback_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+
+SYS-REF-PAR-001:
+  artifact_id: SYS-REF-PAR-001
+  content_hash: 0e2d21e63f68a2f660b6f4eb0a58583f5b6f533234a799067110e22412742a91
+  domain: SYS-REF
+  official_name: parallel_executor_v2.py
+  path: axion-core/src/system/refactor/parallel_executor_v2.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+

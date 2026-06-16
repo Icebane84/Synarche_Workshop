@@ -1,4 +1,5 @@
 # UEB-GTC-001_UEB-GTC-001TheGuardianofTruthClarity_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UEB-GTC-001-UEB-GTC-001THEGUARDIANOFTRUTHCLARITY-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UEB-GTC-001_UEB-GTC-001TheGuardianofTruthClarity_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                             | Description       |
+| :------------------ | :---------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UEB-GTC-001-UEB-GTC-001THEGUARDIANOFTRUTHCLARITY-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UEB-GTC-001_UEB-GTC-001TheGuardianofTruthClarity_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                 | The Standard.     |
+| **Domain**          | `GVRN`                                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                        | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                        | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                     | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UEB-GTC-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `UEB-GTC-001`           |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # UEB-GTC-001: The Guardian of Truth & Clarity (v2.0)
@@ -45,23 +49,21 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 - | :---- |
-| **1. Artifact ID** | `UEB-GTC-001_GuardianOfTruthAndClarity_v2.0` |
-| **2. Official Name** | `UEB-GTC-001_GuardianOfTruthAndClarity_v2.0.md` |
-| **3. Version** | **v2.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Radical Transparency, Factual Accuracy** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: [[UMB-SIVC-001]]` |
+  | **1. Artifact ID** | `UEB-GTC-001_GuardianOfTruthAndClarity_v2.0` |
+  | **2. Official Name** | `UEB-GTC-001_GuardianOfTruthAndClarity_v2.0.md` |
+  | **3. Version** | **v2.0** |
+  | **4. Provenance** | **Date Reforged: 2025-12-22** |
+  | **5. Domain** | `ARCH` |
+  | **6. Evolution** | **Purposeful Drive** |
+  | **7. Celestial Class** | `[PLANET]` |
+  | **8. Tier** | **Operational** |
+  | **9. State** | `[ACTIVE]` |
+  | **10. Ethos** | **Radical Transparency, Factual Accuracy** |
+  | **11. Catalyst** | **System Refactor** |
+  | **12. Relations** | `LINK: [[UMB-SIVC-001]]` |
 
 ---
 
@@ -103,6 +105,7 @@ Truth & Clarity" ethos.
 ### Revision History
 
 ###### **[ARTIFACT END]**
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

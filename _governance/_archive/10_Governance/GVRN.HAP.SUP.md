@@ -41,7 +41,7 @@ UIP: AOP-HAP-SUP-001 Title: Protocol for Human-AI Partnership with Supabase Sour
 Description: > Defines the secure integration and data-flow standards between the Axion Core agent and the Supabase
 Postgres backend. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2025-12-22
 - Timestamp: 1766361600
 

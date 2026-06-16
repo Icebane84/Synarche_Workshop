@@ -1,6 +1,6 @@
 # 🛖 Soul Forging Skill
 
-This directory contains the **Master Artificer's** protocols for defining, verifying, and refining the "Soul" layer of the Synarchy.
+This directory contains the **Master Artificer's** protocols for defining, verifying, and refining the "Soul" layer of the Synarche.
 
 ## 🚪 Sign on the Door
 

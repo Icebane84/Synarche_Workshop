@@ -1,3 +1,5 @@
+# .agent/README.md
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                   | Description       |
@@ -13,7 +15,8 @@
 
 # 🧠 The Sovereign Mind (.agent)
 
-The `.agent` directory serves as the **Sovereign Mind** of the Synarchy. It contains the identities, skills, and execution patterns that govern the Axion Engine.
+The `.agent` directory serves as the **Sovereign Mind** of the Synarche. It contains the identities, skills, and
+execution patterns that govern the Axion Engine.
 
 ## 🏛️ Directory Structure (Tiered OMEGA)
 
@@ -23,7 +26,7 @@ The authoritative environment vault. Contains `.yaml` configurations for securit
 
 ### 2. [Agents](file:///c:/Users/Chris/Synarche_Workspace/.agent/substrate/agents/README.md)
 
-The Registry of Personas. Defines the Synarchy Triad and the 20 specialist shards.
+The Registry of Personas. Defines the Synarche Triad and the 20 specialist shards.
 
 ### 3. [Skills](file:///c:/Users/Chris/Synarche_Workspace/.agent/skills/README.md)
 

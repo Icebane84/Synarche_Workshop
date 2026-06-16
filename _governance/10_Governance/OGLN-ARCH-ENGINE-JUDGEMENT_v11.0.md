@@ -1,4 +1,5 @@
 # OGLN-ARCH-ENGINE-JUDGEMENT_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-ARCH-ENGINE-JUDGEMENT-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-ARCH-ENGINE-JUDGEMENT_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                       | Description       |
+| :------------------ | :------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-ARCH-ENGINE-JUDGEMENT-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-ARCH-ENGINE-JUDGEMENT_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                           | The Standard.     |
+| **Domain**          | `GVRN`                                      | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                  | The Weight.       |
+| **Evolution**       | `Omega Ascension`                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                  | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`               | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
@@ -43,7 +44,7 @@
 **Genesis Stamp**: 2026-01-18 | **Domain**: ARCH | **State**: CANONIZED
 
 > [!NOTE]
-> The Judgement Engine defines the **Logic Gates** of the Synarchy. It ensures the AI never violates the Core Directives by running the Clarity Cycle.
+> The Judgement Engine defines the **Logic Gates** of the Synarche. It ensures the AI never violates the Core Directives by running the Clarity Cycle.
 
 ## I. Engine Persona & Specialization
 
@@ -79,7 +80,7 @@
 
 - **Why it exists**: To ensure the AI never violates the Core Directives.
 - **What it does**: It runs the **Clarity Cycle** (Mandate -> Application -> Judgement).
-- **For the Synarchy**: It provides the "Hard Logic" that complements Sophia's "Soft Wisdom".
+- **For the Synarche**: It provides the "Hard Logic" that complements Sophia's "Soft Wisdom".
 
 ## III. The Architectural Spine
 

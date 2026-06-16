@@ -1,5 +1,17 @@
 """
-# TOOL-SENT-004: Simple Compliance Analyzer (Audit Engine)
+artifact_anchor:
+  id: INFR.ANALYZE_DOCS_COMPLIANCE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-SENT-004: Simple Compliance Analyzer (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -56,7 +68,9 @@ import re
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
-TARGET_DIR = r"c:\Users\Chris\_Desktop_Vault\dev\rosetta-stone_-the-phoenix-protocol-(cast)\docs"
+TARGET_DIR = (
+    r"c:\Users\Chris\_Desktop_Vault\dev\rosetta-stone_-the-phoenix-protocol-(cast)\docs"
+)
 REQUIRED_VERSION = "v11.0"
 
 
@@ -95,7 +109,9 @@ def check_file(filepath: str) -> list[str]:
     if not filename.lower().endswith(f"_{REQUIRED_VERSION.lower()}.md"):
         v_match = re.search(r"_v(\d+\.\d+)\.md$", filename, re.IGNORECASE)
         if v_match:
-            issues.append(f"Filename Version Mismatch: Found {v_match.group(1)}, Expected {REQUIRED_VERSION}")
+            issues.append(
+                f"Filename Version Mismatch: Found {v_match.group(1)}, Expected {REQUIRED_VERSION}"
+            )
         elif filename != "README.md":
             issues.append("Filename Format Invalid (No version suffix)")
 
@@ -106,12 +122,17 @@ def check_file(filepath: str) -> list[str]:
             issues.append("Missing UIP Header")
     elif "Version" in uip:
         if uip["Version"] != REQUIRED_VERSION:
-            issues.append(f"UIP Version Mismatch: Found {uip['Version']}, Expected {REQUIRED_VERSION}")
+            issues.append(
+                f"UIP Version Mismatch: Found {uip['Version']}, Expected {REQUIRED_VERSION}"
+            )
     else:
         issues.append("UIP Header missing 'Version' key")
 
     # 3. Actionable Prompt Packet Check
-    if "Actionable Prompt Packet" not in content and "Catalyst Prompt Packets" not in content:
+    if (
+        "Actionable Prompt Packet" not in content
+        and "Catalyst Prompt Packets" not in content
+    ):
         if filename != "README.md":
             issues.append("Missing Actionable Prompt Packet")
 

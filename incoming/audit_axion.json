@@ -8,52 +8,52 @@
       "message": "File does not start with a module docstring."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_RETURN_TYPE",
       "message": "Function 'load_registry' lacks return type annotation."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_RETURN_TYPE",
       "message": "Function 'get_all_categories' lacks return type annotation."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_RETURN_TYPE",
       "message": "Function 'search_commands' lacks return type annotation."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_ARG_TYPE",
       "message": "Function 'search_commands' lacks argument type annotations."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_RETURN_TYPE",
       "message": "Function 'get_command_spec' lacks return type annotation."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_ARG_TYPE",
       "message": "Function 'get_command_spec' lacks argument type annotations."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_RETURN_TYPE",
       "message": "Function '_recursive_search' lacks return type annotation."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_ARG_TYPE",
       "message": "Function '_recursive_search' lacks argument type annotations."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_FUNCTION_DOCSTRING",
       "message": "Function '_recursive_search' lacks a docstring."
     },
     {
-      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\synarchy_bridge.py",
+      "file": "c:\\Users\\Chris\\Synarche_Workspace\\axion-core\\src\\Synarche_bridge.py",
       "rule": "MISSING_OMEGA_HEADER",
       "message": "File does not start with a module docstring."
     },

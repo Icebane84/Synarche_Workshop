@@ -13,7 +13,7 @@
 
 # 🎭 Agent Identity & Voice Profiles (.agent/substrate/identity)
 
-This directory defines the core cognitive signatures and behavioral boundaries of the Synarchy's personas.
+This directory defines the core cognitive signatures and behavioral boundaries of the Synarche's personas.
 
 ## 📁 Key Identity Assets
 

@@ -1,4 +1,15 @@
-# CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-049_THE SCRIBE_S ASCENSION_ MASTERY OF THE WEAVER_S HAND` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# CSL-049*The Scribe_s Ascension* Mastery of the Weaver_s Hand.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-049-THE-SCRIBE-S-ASCENSION--MASTERY-OF-THE-WEAVER-S-HAND-001` | The Sovereign ID. |
-| **Official Name** | `CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                   | Description       |
+| :------------------ | :---------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-049-THE-SCRIBE-S-ASCENSION--MASTERY-OF-THE-WEAVER-S-HAND-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                              | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                       | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                              | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                           | The Network.      |
 
 ### Collaborative Synthesis Log
 

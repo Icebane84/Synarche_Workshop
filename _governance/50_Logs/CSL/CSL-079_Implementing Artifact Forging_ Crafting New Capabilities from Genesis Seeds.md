@@ -1,4 +1,15 @@
-# CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-079_IMPLEMENTING ARTIFACT FORGING_ CRAFTING NEW CAPABILITIES FROM GENESIS SEEDS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# CSL-079*Implementing Artifact Forging* Crafting New Capabilities from Genesis Seeds.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-079-IMPLEMENTING-ARTIFACT-FORGING--CRAFTING-NEW-CAPABILITIES-FROM-GENESIS-SEEDS-001` | The Sovereign ID. |
-| **Official Name** | `CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                                          | Description       |
+| :------------------ | :--------------------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-079-IMPLEMENTING-ARTIFACT-FORGING--CRAFTING-NEW-CAPABILITIES-FROM-GENESIS-SEEDS-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                              | The Standard.     |
+| **Domain**          | `GVRN`                                                                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                                  | The Network.      |
 
 ### Chronicle of Integration: CSL-079
 

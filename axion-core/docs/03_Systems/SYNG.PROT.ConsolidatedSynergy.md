@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.PROT.CONSOLIDATEDSYNERGY` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SYNG.PROT.ConsolidatedSynergy (Consolidated Synergy Protocol)
 
 ## **Block A: The Identification Lock (UIP-V15)**

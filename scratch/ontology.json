@@ -1,0 +1,5 @@
+{
+  "validation_node": {
+    "allowed_roles": ["sentinel", "observer", "auditor"]
+  }
+}

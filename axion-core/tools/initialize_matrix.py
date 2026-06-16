@@ -1,6 +1,18 @@
-#!/usr/bin/env python3
 """
-# TOOL-GVRN-002: Matrix Initializer (Matrix Synchronization)
+artifact_anchor:
+  id: INFR.INITIALIZE_MATRIX.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+#!/usr/bin/env python3
+"""# TOOL-GVRN-002: Matrix Initializer (Matrix Synchronization).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -132,9 +144,9 @@ def check_tools(tools_dir: str):
                 active = False
 
         if active:
-            print(f"  ✅ STATUS: ONLINE")
+            print("  ✅ STATUS: ONLINE")
         else:
-            print(f"  ⚠️ STATUS: DEGRADED (Missing Tools)")
+            print("  ⚠️ STATUS: DEGRADED (Missing Tools)")
         print("")
 
     print("------------------------------------------------")

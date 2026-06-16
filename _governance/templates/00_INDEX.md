@@ -1,16 +1,26 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `00_INDEX` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # 00_INDEX.md
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-00-INDEX-001`           | The Sovereign ID. |
-| **Official Name**   | `00_INDEX.md`                 | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| Key                 | Value                             | Description       |
+| :------------------ | :-------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-00-INDEX-001`               | The Sovereign ID. |
+| **Official Name**   | `00_INDEX.md`                     | The Filename.     |
+| **Version**         | **v13.0 [OMEGA]**                 | The Standard.     |
+| **Domain**          | `GVRN`                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                        | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                        | The Lifecycle.    |
 | **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---

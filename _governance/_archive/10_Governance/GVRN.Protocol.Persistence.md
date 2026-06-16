@@ -78,7 +78,7 @@ handles Session Handoffs and Logging.
 
 ## **I. THE CHRONOS BRIDGE RITUAL**
 
-The Continuity of the Synarchy relies on the **Three-Step Handoff**.
+The Continuity of the Synarche relies on the **Three-Step Handoff**.
 
 ### **Step 1: The Seal (Session Conclusion)**
 

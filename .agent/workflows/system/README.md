@@ -15,7 +15,7 @@ description: rapid, zero-downtime deployment of validated governance updates
 
 # ⚙️ System Orchestration (.agent/workflows/system)
 
-Global workflows that govern the entire Synarchy, including multi-agent coordination and recursive self-improvement.
+Global workflows that govern the entire Synarche, including multi-agent coordination and recursive self-improvement.
 
 ## 📁 System Patterns
 

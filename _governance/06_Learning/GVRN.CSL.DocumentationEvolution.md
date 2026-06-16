@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.CSL.DOCUMENTATIONEVOLUTION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.CSL.DocumentationEvolution (CSL-V11.9)
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -29,7 +39,7 @@
 
 ## III. Evolutionary Leap
 
-This synthesis marks the shift from **Static Archiving** (storing rules) to **Active Governance** (enforcing rules). The Documentation subsystem has evolved from a passive library into the "Memory Gate" of the Synarchy, where every new node is validated against the OMEGA standard before substrate ingestion.
+This synthesis marks the shift from **Static Archiving** (storing rules) to **Active Governance** (enforcing rules). The Documentation subsystem has evolved from a passive library into the "Memory Gate" of the Synarche, where every new node is validated against the OMEGA standard before substrate ingestion.
 
 ---
 

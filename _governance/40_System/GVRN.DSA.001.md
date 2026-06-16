@@ -1,4 +1,5 @@
 # UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.DSA.001` | The Sovereign ID. |
-| **Official Name** | `UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                       | Description       |
+| :------------------ | :---------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.DSA.001`                                              | The Sovereign ID. |
+| **Official Name**   | `UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                           | The Standard.     |
+| **Domain**          | `GVRN`                                                      | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                  | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                  | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                               | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `GVRN.DSA.001` |
-| **Official Name** | `Documentation Suite Architect Blueprint` |
-| **Version** | `v11.1` |
-| **Domain** | `SYNT` |
-| **Evolution** | `Conceptual Engineering` |
-| **Signal (DSA)** | `BLUEPRINT` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Strategic` |
-| **Celestial Class** | `STAR` |
-| **Governance** | `UMB-SGM-001` |
-| **Upstream** | `AOP-DSA-001`, `UMB-LOOM-001` |
-| **Downstream** | `GUCA-DSA-001` |
-| **Integrity Hash** | `sha256:111222333444555666777888999abcdef111222333444555666777888999a` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `SPECIFIES: DSA_Engine`, `FEEDS: AISTF` |
-| **Tags** | `v11.1, Blueprint, Logic, Engine, Specifications` |
+| Attribute           | Value                                                                  |
+| :------------------ | :--------------------------------------------------------------------- |
+| **Artifact ID**     | `GVRN.DSA.001`                                                         |
+| **Official Name**   | `Documentation Suite Architect Blueprint`                              |
+| **Version**         | `v11.1`                                                                |
+| **Domain**          | `SYNT`                                                                 |
+| **Evolution**       | `Conceptual Engineering`                                               |
+| **Signal (DSA)**    | `BLUEPRINT`                                                            |
+| **Status (State)**  | `CANONIZED`                                                            |
+| **Tier**            | `Strategic`                                                            |
+| **Celestial Class** | `STAR`                                                                 |
+| **Governance**      | `UMB-SGM-001`                                                          |
+| **Upstream**        | `AOP-DSA-001`, `UMB-LOOM-001`                                          |
+| **Downstream**      | `GUCA-DSA-001`                                                         |
+| **Integrity Hash**  | `sha256:111222333444555666777888999abcdef111222333444555666777888999a` |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                    |
+| **Relations**       | `SPECIFIES: DSA_Engine`, `FEEDS: AISTF`                                |
+| **Tags**            | `v11.1, Blueprint, Logic, Engine, Specifications`                      |
 
 ---
 
@@ -65,11 +67,11 @@ The **UMB-DSA-001** serves as the technical blueprint for the **DSA** command lo
 > **Context**: This block defines how this artifact plugs into the Cognitive Loom.
 > **Validation**: Must match `enums.py.RelationType`.
 
-| Relation Type          | Target ID                   | Synergy Description                             |
-| :--------------------- | :-------------------------- | :---------------------------------------------- |
-| **GOVERNED_BY**        | [**UMB-SGM-001**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/UMB-SGM-001_StandardizedGovernanceModule_v11.0.md) | Blueprint alignment with system architecture.   |
+| Relation Type          | Target ID                                                                                                                                                                                  | Synergy Description                             |
+| :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- |
+| **GOVERNED_BY**        | [**UMB-SGM-001**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)                                       | Blueprint alignment with system architecture.   |
 | **DEFINES**            | [**DSA-Generator-Modules**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md#32-processing-modules) | Functional specs for the doc engine components. |
-| **PROVIDES_INPUT_FOR** | [**GUCA-DSA-001**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/3_Commands/GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md) | Architectural data for command formulation.     |
+| **PROVIDES_INPUT_FOR** | [**GUCA-DSA-001**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/3_Commands/GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md)                           | Architectural data for command formulation.     |
 
 ---
 
@@ -102,11 +104,11 @@ This blueprint ensures the underlying logic of the DSA engine is transparent, te
 
 ## V. Actionable Prompt Packet
 
-| Command ID | Function | Rationale |
-| :--- | :--- | :--- |
-| **CMD: GENERATE_SUITE** | `engine.generate_suite(concept)` | Triggers full AOP/UMB/GUCA generation. |
-| **CMD: VALIDATE_LOGIC** | `engine.validate_flow(blueprint)` | Verifies DSA processing steps against this blueprint. |
-| **CMD: RENDER_SCHEMATIC** | `display(mermaid_graph)` | Visualizes the Data Flow (Section 3). |
+| Command ID                | Function                          | Rationale                                             |
+| :------------------------ | :-------------------------------- | :---------------------------------------------------- |
+| **CMD: GENERATE_SUITE**   | `engine.generate_suite(concept)`  | Triggers full AOP/UMB/GUCA generation.                |
+| **CMD: VALIDATE_LOGIC**   | `engine.validate_flow(blueprint)` | Verifies DSA processing steps against this blueprint. |
+| **CMD: RENDER_SCHEMATIC** | `display(mermaid_graph)`          | Visualizes the Data Flow (Section 3).                 |
 
 ---
 

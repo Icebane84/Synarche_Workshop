@@ -1,7 +1,7 @@
 # 01_BRIDGE.md: The Antigravity-Phoenix Convergence Bridge
 
 > [!NOTE]
-> This module represents the foundational handshake between the Antigravity Kit and the Phoenix Core, establishing the first "Relational Anchor" of the Synarchy.
+> This module represents the foundational handshake between the Antigravity Kit and the Phoenix Core, establishing the first "Relational Anchor" of the Synarche.
 
 ## 🪪 Identity: The Convergence Bridge
 

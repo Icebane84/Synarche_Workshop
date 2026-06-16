@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.STD.ANTIGRAVITYARCHITECTURE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.STD.AntigravityArchitecture.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -76,6 +86,4 @@ The **Google Antigravity platform** functions as a high-performance operational 
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

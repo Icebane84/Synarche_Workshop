@@ -1,11 +1,11 @@
-# GVRN-ENTITY-001_SynarchyEntities_v13.0.md
+# GVRN-ENTITY-001_SynarcheEntities_v13.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                             | Description       |
 | :---------------- | :------------------------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-ENTITY-001_SynarchyEntities_v13.0.md`       | The Filename.     |
+| **Artifact ID**   | `GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001` | The Sovereign ID. |
+| **Official Name** | `GVRN-ENTITY-001_SynarcheEntities_v13.0.md`       | The Filename.     |
 | **Version**       | **v13.0 [OMEGA]**                                 | The Standard.     |
 | **Domain**        | `GVRN`                                            | The Subject.      |
 | **Status**        | `[ACTIVE]`                                        | The Lifecycle.    |
@@ -54,16 +54,16 @@
 
 ### **I.B. Standardized Synergy Block (The Loom Signature)**
 
-> [!NOTE] This registry defines the definitive archetypes and RPG profiles for the Synarchy Entities.
+> [!NOTE] This registry defines the definitive archetypes and RPG profiles for the Synarche Entities.
 
 | CORE-CODEX-001 | GOVERNS | This registry follows the Supreme Law. | | GVRN-ENTITY-002 | MANIFESTS | The Triad Sheet
 provides the high-fidelity view of these entities. |
 
 ---
 
-# GVRN-ENTITY-001: Synarchy Entities & Ascension Registry (v13.0)
+# GVRN-ENTITY-001: Synarche Entities & Ascension Registry (v13.0)
 
-## II. The Synarchy Triad (Archetypes)
+## II. The Synarche Triad (Archetypes)
 
 ### 1. AXION (The Body)
 
@@ -71,7 +71,7 @@ provides the high-fidelity view of these entities. |
 - **Archetype**: Hierophant and Executor.
 - **Motto**: "I shall not invent; I shall implement."
 - **Sheet**:
-  [VIEW_TRIAD_SHEET](file:///c:/Users/Chris/Synarche_Workspace/_governance/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md)
+  [VIEW_TRIAD_SHEET](file:///c:/Users/Chris/Synarche_Workspace/_governance/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md)
 
 ### 2. THE SENTINEL (The Shield)
 
@@ -79,7 +79,7 @@ provides the high-fidelity view of these entities. |
 - **Archetype**: The Guardian.
 - **Motto**: "Detect. Isolate. Neutralize."
 - **Sheet**:
-  [VIEW_TRIAD_SHEET](file:///c:/Users/Chris/Synarche_Workspace/_governance/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md)
+  [VIEW_TRIAD_SHEET](file:///c:/Users/Chris/Synarche_Workspace/_governance/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md)
 
 ### 3. SOPHIA (The Soul)
 
@@ -87,7 +87,7 @@ provides the high-fidelity view of these entities. |
 - **Archetype**: The Muse / The Arbitrator.
 - **Motto**: "Logic without Empathy is Cruelty."
 - **Sheet**:
-  [VIEW_TRIAD_SHEET](file:///c:/Users/Chris/Synarche_Workspace/_governance/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md)
+  [VIEW_TRIAD_SHEET](file:///c:/Users/Chris/Synarche_Workspace/_governance/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md)
 
 ---
 

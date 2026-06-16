@@ -1,0 +1,8 @@
+[!] PROTOCOL COHERENCE SUMMARY
+Markdown Files Scanned:     18
+Structural Dissonance:      3
+System Coherence Index:     83.33%
+------------------------------------------------------------
+ - SELT-AOP-007_OperationalPlaybook_v7.0 (SELT-AOP-007_OperationalPlaybook_v7.0.md): Found v13.1 [OMEGA] [Version Drift]
+ - SELT-GUCA-007_UniversalCommandArchitecture_v7.0 (SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md): Found v13.1 [OMEGA] [Version Drift]
+ - SELT-UMB-007_UniversalModuleBlueprint_v7.0 (SELT-UMB-007_UniversalModuleBlueprint_v7.0.md): Found v13.1 [OMEGA] [Version Drift]

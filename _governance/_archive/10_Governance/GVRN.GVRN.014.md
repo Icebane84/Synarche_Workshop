@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN.014` | The Sovereign ID. |
-| **Official Name** | `GVRN.GVRN.014.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GVRN.014`               | The Sovereign ID. |
+| **Official Name** | `GVRN.GVRN.014.md`            | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -85,21 +80,21 @@ We are implementing a **"Fetch-Reason-Commit" Loop**.
 - **The Agent's Thought:** "Based on the content 'My Notes on Coding', this belongs to the `ARCH` (Architecture) domain.
   The subject is `Coding`. The type is `Standard`."
 - **The Transmutation:**
-    - _Old ID:_ `row_492`
-    - _New ID:_ `ARCH.Code.Std.Main_v1.0`
+  - _Old ID:_ `row_492`
+  - _New ID:_ `ARCH.Code.Std.Main_v1.0`
 
 #### **Step 3: Header Forge (The Emperor)**
 
 - **The Standard:** The 12-Point Universal Header (Chronos Lock).
 - **The Action:** The Agent strips the top of the file and injects the Markdown Table:
 
-    ```markdown
-    | Field           | Value                             |
-    | :-------------- | :-------------------------------- |
-    | **Artifact ID** | `GVRN.GVRN.014`                   |
-    | **Version**     | `v10.0 (The Reforged)`            |
-    | **Provenance**  | `Reforged by Axion on 2026-01-27` |
-    ```
+  ```markdown
+  | Field           | Value                             |
+  | :-------------- | :-------------------------------- |
+  | **Artifact ID** | `GVRN.GVRN.014`                   |
+  | **Version**     | `v10.0 (The Reforged)`            |
+  | **Provenance**  | `Reforged by Axion on 2026-01-27` |
+  ```
 
 #### **Step 4: Logic Weave (The High Priestess)**
 
@@ -113,16 +108,16 @@ We are implementing a **"Fetch-Reason-Commit" Loop**.
 
 - **The Standard:** Synarche Coding Standards (DOC-STD-001).
 - **The Action:** If the artifact contains code snippets (e.g., a Python example), the Knight parses them.
-    - _Detection:_ "This snippet uses `print()` for logging."
-    - _Refactor:_ "Replacing with `logger.info()` per standard."
+  - _Detection:_ "This snippet uses `print()` for logging."
+  - _Refactor:_ "Replacing with `logger.info()` per standard."
 
 #### **Step 6: Visual Sync (The Star)**
 
 - **The Standard:** Phoenix Genesis Presentation Standard (PGPS).
 - **The Action:**
-    - Ensures all Headers are H1/H2/H3 (No H4s allowed).
-    - Ensures 4-Space Indentation for all lists.
-    - Converts textual descriptions of flows into **Mermaid.js** diagrams.
+  - Ensures all Headers are H1/H2/H3 (No H4s allowed).
+  - Ensures 4-Space Indentation for all lists.
+  - Converts textual descriptions of flows into **Mermaid.js** diagrams.
 
 #### **Step 7: Finalization (King of Pentacles)**
 

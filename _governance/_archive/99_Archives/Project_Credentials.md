@@ -98,12 +98,12 @@ d00ac32bb62213318ec41e633df8373ea2dfa070cb096a28f8ba24b7e869f0e9
 ```
 
 _(Warning: The above key matches the hashed table entry. The ACTUAL working key found in .env.local/Project_Credentials
-reference was `sb_secret_fOIDz3lJfLlxWAe0Thwp8w_D5-ZQphj`. Use the one below for CI/CD if the above fails.)_
+reference was `your-supabase-service-role-key-here`. Use the one below for CI/CD if the above fails.)_
 
 **Working Secret Key (Verified):**
 
 ```text
-sb_secret_fOIDz3lJfLlxWAe0Thwp8w_D5-ZQphj
+your-supabase-service-role-key-here
 ```
 
 ### Other Keys

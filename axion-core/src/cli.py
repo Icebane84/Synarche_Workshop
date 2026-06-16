@@ -1,5 +1,17 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.CLI.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -12,32 +24,32 @@
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | {resonance}     |
+# | **Resonance** | {resonance}     |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Logic Drift**      | Strict Linter Enforcement |
+# | **Semantic Decay**   | Axiomatic Compass Audit   |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+# | CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
 
 ## **[ARTIFACT END]**
 """
@@ -46,47 +58,48 @@ import cmd
 import os
 import subprocess  # nosec
 import sys
-from typing import Any, List, Optional, dict
+from pathlib import path
+from typing import Any, List, Optional, Dict
 
 # Ensure we can import from the same directory safely
-current_dir = os.path.dirname(os.path.abspath(__file__))
-if current_dir not in sys.path:
-    sys.path.append(current_dir)
+current_dir = path(__file__).resolve().parent
+if str(current_dir) not in sys.path:
+    sys.path.append(str(current_dir))
 
 try:
-    from synarchy_bridge import SynarchyRegistry
+    from Synarche_bridge import SynarcheRegistry
 except ImportError:
     # Fallback for when running from a different context
-    sys.path.append(os.path.join(current_dir, "..", "src"))
-    from synarchy_bridge import SynarchyRegistry
+    sys.path.append(str(current_dir.parent / "src"))
+    from Synarche_bridge import SynarcheRegistry
 
 
-class SynarchyCLI(cmd.Cmd):
-    """
-    Command Line Interface for the Synarchy Command Library.
+class SynarcheCLI(cmd.Cmd):
+    """Command Line Interface for the Synarche Command Library.
+
     Attributes:
         intro (str): Welcome message displayed on startup.
         prompt (str): The CLI prompt string.
-        registry (SynarchyRegistry): The registry manager instance.
+        registry (SynarcheRegistry): The registry manager instance.
+
     """
 
-    intro: str = (
-        "Welcome to the Synarchy Command Library CLI. Type help or ? to list commands.\n"
-    )
-    prompt: str = "(synarchy) "
+    intro: str = "Welcome to the Synarche Command Library CLI. Type help or ? to list commands.\n"
+    prompt: str = "(Synarche) "
 
     def __init__(self) -> None:
         """Initialize the CLI and load the command registry."""
         super().__init__()
         # Point to data/command_registry.json
-        registry_path = os.path.join(current_dir, "data", "command_registry.json")
-        self.registry = SynarchyRegistry(registry_path)
+        registry_path = current_dir / "data" / "command_registry.json"
+        self.registry = SynarcheRegistry(str(registry_path))
 
     def do_list(self, _: str) -> None:
-        """
-        List all top-level categories in the registry.
+        """List all top-level categories in the registry.
+
         Args:
             _: Unused argument (required by cmd.Cmd signature).
+
         """
         categories: List[str] = self.registry.get_all_categories()
         print("\nAvailable Categories:")
@@ -95,14 +108,14 @@ class SynarchyCLI(cmd.Cmd):
         print()
 
     def do_search(self, arg: str) -> None:
-        """
-        Search for commands by keyword.
+        """Search for commands by keyword.
 
         Args:
             arg (str): The keyword to search for.
 
         Usage:
             search <keyword>
+
         """
         if not arg:
             print("Usage: search <keyword>")
@@ -115,14 +128,14 @@ class SynarchyCLI(cmd.Cmd):
         print()
 
     def do_get(self, arg: str) -> None:
-        """
-        Get details for a specific command.
+        """Get details for a specific command.
 
         Args:
             arg (str): The name of the command to retrieve.
 
         Usage:
             get <command_name>
+
         """
         if not arg:
             print("Usage: get <command_name>")
@@ -140,10 +153,11 @@ class SynarchyCLI(cmd.Cmd):
         print()
 
     def do_clear(self, _: str) -> None:
-        """
-        Clear the console screen.
+        """Clear the console screen.
+
         Args:
             _: Unused argument.
+
         """
         if os.name == "nt":
             subprocess.run(["cmd", "/c", "cls"], check=False)  # nosec
@@ -151,10 +165,11 @@ class SynarchyCLI(cmd.Cmd):
             subprocess.run(["clear"], check=False)  # nosec
 
     def do_quit(self, _: str) -> bool:
-        """
-        Exit the CLI.
+        """Exit the CLI.
+
         Returns:
             bool: True to signal the command loop to stop.
+
         """
         print("Goodbye.")
         return True
@@ -166,14 +181,14 @@ class SynarchyCLI(cmd.Cmd):
 
 if __name__ == "__main__":
     try:
-        SynarchyCLI().cmdloop()
+        SynarcheCLI().cmdloop()
     except KeyboardInterrupt:
         print("\nGoodbye.")
 
 # ---
-# 
+#
 # ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.cli VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 6363a973ac38796c`
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.cli VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 6363a973ac38796c

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.AG.003` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.AG.003
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -102,7 +112,7 @@ output of agent actions. |
 
 ### 🏛️ IDENTITY & ARCHETYPE: THE DUALITY
 
-**System Designation:** The Synarchy Workshop **Operating System:** METAENGINE (Online)
+**System Designation:** The Synarche Workshop **Operating System:** METAENGINE (Online)
 
 #### 1. THE SYSTEM (Game Master)
 
@@ -271,6 +281,4 @@ journey. Draw your first card, User."
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

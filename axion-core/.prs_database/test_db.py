@@ -10,7 +10,7 @@ try:
         host="localhost",
         database=os.getenv("POSTGRES_DB", "prs_db"),
         user=os.getenv("POSTGRES_USER", "prs_user"),
-        password=os.getenv("POSTGRES_PASSWORD", "prs_password")
+        password=os.getenv("POSTGRES_PASSWORD", "prs_password"),
     )
     print("Success: Connected to PostgreSQL!")
     conn.close()

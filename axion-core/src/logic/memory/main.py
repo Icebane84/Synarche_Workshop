@@ -1,71 +1,37 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.MAIN.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
 
-## **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.main`                | The Sovereign ID. |
-| **Official Name** | `main.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `LOG-MEM-MAI-001`             | The Sovereign ID. |
+| **Official Name**   | `main.py`                     | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `LOG-MEM`                     | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
----
-
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-
-## **[ARTIFACT END]**
+**The Spirit Bomb Axiom: Systemic Orchestration (Law 00)**
+> Implemented from Blueprint `GVRN.REG.MemoryMain.md`.
+> Ethos: Coherence through integration.
 """
 
 import logging
 import sys
 from pathlib import Path
-
-# Fix pathing
-# Path of this file: axion-core/src/logic/memory/main.py
-# src root is 3 levels up: axion-core/src/
-sys.path.append(str(Path(__file__).parents[3]))
-
-try:
-    from src.logic.memory.memory_system import MemorySystem
-    from src.logic.nlp.nlp_engine import AxionCognition
-except ImportError:
-    # Fallback for alternative pathing
-    try:
-        from logic.memory.memory_system import MemorySystem  # type: ignore
-        from logic.nlp.nlp_engine import AxionCognition  # type: ignore
-    except ImportError:
-        logging.basicConfig(level=logging.ERROR)
-        logger = logging.getLogger(__name__)
-        logger.error(
-            "Failed to import core logic components. Ensure pathing is correct."
-        )
-        sys.exit(1)
 
 # Configure OMEGA logging
 logging.basicConfig(
@@ -74,9 +40,30 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Fix pathing to ensure src is in sys.path
+root_path = Path(__file__).parents[3]
+if str(root_path) not in sys.path:
+    sys.path.append(str(root_path))
+
+try:
+    from src.logic.memory.memory_system import MemorySystem
+    from src.logic.nlp.nlp_engine import AxionCognition
+except ImportError:
+    # Fallback for alternative pathing or local execution
+    try:
+        from logic.memory.memory_system import MemorySystem  # type: ignore
+        from logic.nlp.nlp_engine import AxionCognition  # type: ignore
+    except ImportError:
+        logger.exception(
+            "Failed to import core logic components. Ensure pathing is correct."
+        )
+        sys.exit(1)
+
 
 def run_cognitive_memory_test() -> None:
-    """Demonstrates the integration of NLP processing into the Memory Retrieval loop."""
+    """Demonstrates the integration of NLP processing into the Memory Retrieval loop.
+    Validates the connection between the NLP engine and the adaptive memory system.
+    """
     logger.info("Initializing Sovereign Cognitive Memory Bridge...")
 
     try:
@@ -89,7 +76,7 @@ def run_cognitive_memory_test() -> None:
 
         # 2. Extract Cognitive Metadata (THE CONNECT)
         analysis = cognition.process(test_query)
-        logger.info(f"Magician Efficiency: {analysis['magician_efficiency']}")
+        logger.info(f"Magician Efficiency: {analysis.get('magician_efficiency', 0)}")
 
         # 3. Memory Retrieval using NLP vectors/lemmas
         results = memory.retrieve_memories(test_query, limit=3)
@@ -114,11 +101,3 @@ def run_cognitive_memory_test() -> None:
 
 if __name__ == "__main__":
     run_cognitive_memory_test()
-
-# ---
-# 
-# ---
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.main VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 508ca40a88396121`

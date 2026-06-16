@@ -1,0 +1,14 @@
+markdown
+python-frontmatter
+python-dotenv
+jsonschema
+GitPython
+requests
+pytest
+mypy
+rich
+pyyaml
+jinja2
+pydantic
+langchain
+langgraph

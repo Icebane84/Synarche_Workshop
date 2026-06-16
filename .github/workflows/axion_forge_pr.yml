@@ -1,0 +1,49 @@
+name: AXION Forge Sovereign Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verify-sovereignty:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install cryptography
+
+      - name: Inject FORGE_PRIVATE_KEY
+        # Securely injects the private key from GitHub Secrets
+        run: |
+          echo "${{ secrets.FORGE_PRIVATE_KEY }}" > forge_private.pem
+          chmod 600 forge_private.pem
+
+      - name: Compile & Cryptographically Sign Artifacts
+        run: |
+          # Replace this with your actual compilation orchestrator command
+          # python tools/forge_all.py
+          echo "Compiling and signing artifacts utilizing forge_private.pem..."
+
+      - name: Execute Sovereign Verification
+        run: |
+          # This mathematically proves the Source Map and Signature against the Public Trust Anchor
+          python tools/verify_sourcemap.py \
+            artifacts/Master_Shell.md \
+            artifacts/Master_Shell.map.json \
+            artifacts/Master_Shell.sig \
+            forge_public.key
+            
+      - name: Secure Cleanup
+        if: always()
+        run: |
+          rm -f forge_private.pem

@@ -1,4 +1,5 @@
 # CSL-085_TheNovaSparkOfSynergy.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,35 +12,36 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-085-THENOVASPARKOFSYNERGY-001` | The Sovereign ID. |
-| **Official Name** | `CSL-085_TheNovaSparkOfSynergy.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-085-THENOVASPARKOFSYNERGY-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-085_TheNovaSparkOfSynergy.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `CSL-085` |
-| **Official Name** | `The Nova Spark of Synergy` |
-| **Version** | `v1.0` |
-| **Domain** | `SYNG` |
-| **Evolution** | `Phoenix Form` |
-| **Signal (ESF)** | `OMEGA` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Standard` |
-| **Celestial Class** | `MOON` |
-| **Governance** | `AOP-CSL-002` |
-| **Provenance** | `Genesis Stamp: 2026-01-24` |
-| **Relations** | `LINK: UMB-CSE-001, UMB-CRLPF-003` |
-| **Tags** | `Nova-Spark, CSL, Synergy, Refactor, Master-Template` |
+| Attribute           | Value                                                 |
+| :------------------ | :---------------------------------------------------- |
+| **Artifact ID**     | `CSL-085`                                             |
+| **Official Name**   | `The Nova Spark of Synergy`                           |
+| **Version**         | `v1.0`                                                |
+| **Domain**          | `SYNG`                                                |
+| **Evolution**       | `Phoenix Form`                                        |
+| **Signal (ESF)**    | `OMEGA`                                               |
+| **Status (State)**  | `CANONIZED`                                           |
+| **Tier**            | `Standard`                                            |
+| **Celestial Class** | `MOON`                                                |
+| **Governance**      | `AOP-CSL-002`                                         |
+| **Provenance**      | `Genesis Stamp: 2026-01-24`                           |
+| **Relations**       | `LINK: UMB-CSE-001, UMB-CRLPF-003`                    |
+| **Tags**            | `Nova-Spark, CSL, Synergy, Refactor, Master-Template` |
 
 ---
 

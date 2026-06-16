@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.REGISTER_FORGE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 import os
 
 # New rows for OSLM
@@ -5,7 +18,7 @@ import os
 inserts = """| `UMB-ARCH-CORE-001` | [Phoenix Core Architecture](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/ARCH/UMB-ARCH-CORE-001.md) | `v11.0.0` | `ACTIVE` |
 | `AOP-AXIOM-WEAVE-001` | [The Axiom Weaving Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/AOP/AOP-AXIOM-WEAVE-001.md) | `v1.0` | `ACTIVE` |
 | `CSL-LINK-001` | [Synergistic Links Expansion Log](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/CSL/CSL-LINK-001.md) | `v1.0` | `ACTIVE` |
-| `AOP-AVATAR-001` | [Synarchy Avatar Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-AVATAR-001.md) | `v1.1` | `ACTIVE` |
+| `AOP-AVATAR-001` | [Synarche Avatar Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-AVATAR-001.md) | `v1.1` | `ACTIVE` |
 | `AOP-MAP-001` | [Disciplined Execution Playbook](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-MAP-001.md) | `v2.0` | `ACTIVE` |
 | `GUCA-MAP-001` | [Execute Musashi Audit](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/GUCA-MAP-001.md) | `v2.0` | `ACTIVE` |
 | `GUCA-DSA-001` | [Documentation Suite Architect Architecture](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/GUCA-DSA-001.md) | `v11.1` | `ACTIVE` |
@@ -19,7 +32,7 @@ def update_file(path, marker, insert_content, insert_before=False):
             print(f"File not found: {path}")
             return False
 
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             lines = f.readlines()
 
         new_lines = []
@@ -60,16 +73,15 @@ marker = "| `UMB-CSP-001`"
 
 print("--- Updating OSLM with Forge Artifacts ---")
 if os.path.exists(oslm_path):
-    with open(oslm_path, "r", encoding="utf-8") as f:
+    with open(oslm_path, encoding="utf-8") as f:
         content = f.read()
         if "UMB-ARCH-CORE-001" in content:
             print("Artifacts already registered.")
+        elif "| `UMB-CSP-001`" in content:
+            update_file(oslm_path, marker, inserts, insert_before=False)
         else:
-            if "| `UMB-CSP-001`" in content:
-                update_file(oslm_path, marker, inserts, insert_before=False)
-            else:
-                # Fallback to appending to the end of the table if CSP isn't found easily (should be there though)
-                print("UMB-CSP-001 marker not found, trying different anchor.")
-                update_file(oslm_path, "| `AOP-RLM-001`", inserts, insert_before=False)
+            # Fallback to appending to the end of the table if CSP isn't found easily (should be there though)
+            print("UMB-CSP-001 marker not found, trying different anchor.")
+            update_file(oslm_path, "| `AOP-RLM-001`", inserts, insert_before=False)
 else:
     print("OSLM Path invalid.")

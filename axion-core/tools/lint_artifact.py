@@ -1,5 +1,17 @@
 """
-# TOOL-SENT-003: The OGLN Linter (Audit Engine)
+artifact_anchor:
+  id: INFR.LINT_ARTIFACT.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-SENT-003: The OGLN Linter (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -51,9 +63,9 @@ TOOL-SENT-001, USES, The Compliance Auditor uses this logic.
 
 import argparse
 import logging
-import os
 import re
 import sys
+from pathlib import Path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -73,8 +85,7 @@ VALID_EVOLUTION_DOMAINS = [
 
 
 def _extract_evolution_from_line(line: str) -> tuple[str | None, bool]:
-    """
-    Extracts evolution value and validity from a table row.
+    """Extracts evolution value and validity from a table row.
     Supports both 'Evolution' and 'Evolutionary Alignment'.
     """
     if "|" in line and ("Evolution" in line or "Evolutionary Alignment" in line):
@@ -87,9 +98,7 @@ def _extract_evolution_from_line(line: str) -> tuple[str | None, bool]:
 
 
 def _check_header(lines: list[str]) -> tuple[list[str], list[str]]:
-    """
-    1. HEADER CHECK (UMB-TPL-001)
-    """
+    """1. HEADER CHECK (UMB-TPL-001)."""
     errors = []
     has_uip = False
     evolution_valid = False
@@ -120,9 +129,7 @@ def _check_header(lines: list[str]) -> tuple[list[str], list[str]]:
 
 
 def _check_indentation(lines: list[str]) -> tuple[list[str], list[str]]:
-    """
-    2. INDENTATION CHECK (4-Space Mandate)
-    """
+    """2. INDENTATION CHECK (4-Space Mandate)."""
     warnings = []
     indent_issues = 0
     in_code_block = False
@@ -147,10 +154,8 @@ def _check_indentation(lines: list[str]) -> tuple[list[str], list[str]]:
     return [], warnings
 
 
-def _check_hierarchy(lines: list[str], filepath: str) -> tuple[list[str], list[str]]:
-    """
-    3. HEADER HIERARCHY CHECK
-    """
+def _check_hierarchy(lines: list[str], filepath: Path) -> tuple[list[str], list[str]]:
+    """3. HEADER HIERARCHY CHECK."""
     warnings = []
     h1_count = 0
     in_code_block = False  # Reset state
@@ -165,7 +170,7 @@ def _check_hierarchy(lines: list[str], filepath: str) -> tuple[list[str], list[s
         if line.strip().startswith("# ") and not line.strip().startswith("##"):
             h1_count += 1
 
-    max_h1 = 200 if "OSLM" in os.path.basename(filepath) else 5
+    max_h1 = 200 if "OSLM" in filepath.name else 5
 
     if h1_count > max_h1:
         warnings.append(
@@ -175,9 +180,8 @@ def _check_hierarchy(lines: list[str], filepath: str) -> tuple[list[str], list[s
 
 
 def _check_prompt(content: str) -> tuple[list[str], list[str]]:
-    """
-    4. ACTIONABLE PROMPT PACKET CHECK
-    Supports v11.0 format: IV. Actionable Prompt Packet (APP)
+    """4. ACTIONABLE PROMPT PACKET CHECK
+    Supports v11.0 format: IV. Actionable Prompt Packet (APP).
     """
     errors = []
     # Search for modern APP section or legacy variants
@@ -194,18 +198,17 @@ def _check_prompt(content: str) -> tuple[list[str], list[str]]:
     return errors, []
 
 
-def lint_artifact(filepath: str) -> bool:
+def lint_artifact(filepath: Path) -> bool:
     """Lints a single artifact file."""
     logger.info(f"\n[LINT_ARTIFACT] Target: {filepath}")
 
-    if not os.path.exists(filepath):
+    if not filepath.exists():
         logger.error(f"[ERROR] File not found: {filepath}")
         return False
 
     try:
-        with open(filepath, encoding="utf-8") as f:
-            lines = f.readlines()
-            content = "".join(lines)
+        content = filepath.read_text(encoding="utf-8", errors="ignore")
+        lines = content.splitlines(keepends=True)
     except Exception:
         logger.exception(f"[ERROR] Could not read file: {filepath}")
         return False
@@ -249,10 +252,8 @@ def lint_artifact(filepath: str) -> bool:
         return False
 
 
-def scan_targets(targets: list[str]) -> bool:
-    """
-    Recursively scans and lints all target artifacts.
-    """
+def scan_targets(targets: list[Path]) -> bool:
+    """Recursively scans and lints all target artifacts."""
     overall_success = True
     for target in targets:
         if not lint_artifact(target):
@@ -262,15 +263,11 @@ def scan_targets(targets: list[str]) -> bool:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Phoenix Protocol: Artifact Linter (OGLN)")
-    parser.add_argument("--target", required=True, help="File or directory to lint.")
+    parser.add_argument("--target", type=Path, required=True, help="File or directory to lint.")
     args = parser.parse_args()
 
-    targets = []
-    if os.path.isdir(args.target):
-        for root, _, files in os.walk(args.target):
-            for filename in files:
-                if filename.endswith(".md"):
-                    targets.append(os.path.join(root, filename))
+    if args.target.is_dir():
+        targets = list(args.target.rglob("*.md"))
     else:
         targets = [args.target]
 

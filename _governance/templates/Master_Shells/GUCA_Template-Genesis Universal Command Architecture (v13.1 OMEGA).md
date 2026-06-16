@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GUCA_TEMPLATE-GENESIS UNIVERSAL COMMAND ARCHITECTURE (V13.1 OMEGA)` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 The fusion of these templates requires aligning the expanded variables of the Canonical v10 architecture with the strict
 Block-Logic and Finalization validation steps found in the v7.0 SELT-GUCA. Furthermore, this fused structure must
 strictly adhere to the H-Hierarchy and Block-Logic mandated by Law 7 of the Phoenix Codex.

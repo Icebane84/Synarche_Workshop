@@ -15,7 +15,7 @@ Welcome to the **Synarche Sovereign Workspace**, the digital overplane for the O
 
 ## 🛰️ SOVEREIGN COMMAND CENTER (Antigravity HUD)
 
-The Synarchy is optimized for **Google Antigravity** navigation. Use the following `@mentions` and `/workflows` to cross-reference the OMEGA substrate.
+The Synarche is optimized for **Google Antigravity** navigation. Use the following `@mentions` and `/workflows` to cross-reference the OMEGA substrate.
 
 ## 🕹️ Frequent `@mentions`
 
@@ -32,14 +32,14 @@ The Synarchy is optimized for **Google Antigravity** navigation. Use the followi
 | Command   | Trigger File                          | Purpose                                      |
 | :-------- | :------------------------------------ | :------------------------------------------- |
 | `/plan`   | `.agent/workflows/plan.md`            | Execute the **Hephaestus Cycle** Planning.   |
-| `/status` | `.agent/workflows/status.md`          | Retrieve real-time **Synarchy** status.      |
+| `/status` | `.agent/workflows/status.md`          | Retrieve real-time **Synarche** status.      |
 | `/audit`  | `.agent/workflows/validation/test.md` | Perform a **Zero Entropy** structural audit. |
 
 ---
 
 ## 🧭 AGENTIC ONBOARDING (Primary Protocol)
 
-All agents entering the Synarchy MUST execute the following initialization cycle:
+All agents entering the Synarche MUST execute the following initialization cycle:
 
 1. **Read High Gate**: Consume `@[GEMINI.md]` to establish sovereign guardrails.
 2. **Verify Topology**: Consult `@[GVRN.HUD.Map.md]` to confirm current location and domain boundaries.

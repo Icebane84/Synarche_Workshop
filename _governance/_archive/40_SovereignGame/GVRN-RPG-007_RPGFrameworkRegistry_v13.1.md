@@ -30,16 +30,6 @@
 
 ---
 
-| **Coherence** | `1.0` | | **Resonance** | `0.9` | | **Stability** | `Stable` |
-
-| **Logic Drift** | Strict Linter Enforcement | | **Dependency Break** | ForgeLink Validation |
-
----
-
-| **Coherence** | `1.0` | | **Resonance** | `0.9` | | **Stability** | `Stable` |
-
-| **Logic Drift** | Strict Linter Enforcement | | **Dependency Break** | ForgeLink Validation |
-
 [κ-veracity:unverified] [κ-state:in-review]
 
 - **Module Title**: The Phoenix RPG Framework
@@ -170,3 +160,5 @@ Law for this artifact.
 ✨ **Catalyst Prompt**: `CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Supabase Prep"`
 
 ###### **[ARTIFACT END]**
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

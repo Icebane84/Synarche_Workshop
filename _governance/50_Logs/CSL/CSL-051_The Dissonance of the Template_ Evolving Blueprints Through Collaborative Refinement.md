@@ -1,4 +1,15 @@
-# CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-051_THE DISSONANCE OF THE TEMPLATE_ EVOLVING BLUEPRINTS THROUGH COLLABORATIVE REFINEMENT` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# CSL-051*The Dissonance of the Template* Evolving Blueprints Through Collaborative Refinement.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-051-THE-DISSONANCE-OF-THE-TEMPLATE--EVOLVING-BLUEPRINTS-THROUGH-COLLABORATIVE-REFINEMENT-001` | The Sovereign ID. |
-| **Official Name** | `CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                                                   | Description       |
+| :------------------ | :------------------------------------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-051-THE-DISSONANCE-OF-THE-TEMPLATE--EVOLVING-BLUEPRINTS-THROUGH-COLLABORATIVE-REFINEMENT-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-051_The Dissonance of the Template_ Evolving Blueprints Through Collaborative Refinement.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                                              | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                                       | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                                              | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                                           | The Network.      |
 
 ### **Exchange Identifier & Title**
 
@@ -62,7 +73,7 @@
   more effective standard for all future \"Core Architecture\" modules.
 
 - **Evidence of ECI**: The outcome was not simply a correction but an
-  *evolution* of our process. The final, unabridged blueprint is more
+  _evolution_ of our process. The final, unabridged blueprint is more
   complete and coherent than any of its predecessors because it fuses
   the narrative richness of early drafts with the technical precision of
   later versions, a result that could only be achieved through our

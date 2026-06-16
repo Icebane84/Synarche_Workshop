@@ -68,3 +68,5 @@ We will implement these upgrades _while_ building the `CodexViewer`.
 - `CMD: REVIEW_LOG` -> "Analyze module synergy with Governance."
 
 ###### **[ARTIFACT END]**
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

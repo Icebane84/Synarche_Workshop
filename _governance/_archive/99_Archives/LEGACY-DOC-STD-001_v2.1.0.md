@@ -31,18 +31,18 @@ refactor the codebase recursively without losing context.
 To achieve high-fidelity code governance, we utilize a three-tiered documentation structure:
 
 1. **The Universal Module Blueprint (UMB) – For Code Structure**
-    - **Purpose:** Enforces "Architecture First" thinking. Defines Inputs, Outputs, Dependencies, and Error Handling
-      before coding begins.
-    - **Role:** Prevents "spaghetti code" and ensures every component has a defined contract within the Hybrid Knowledge
-      Graph (HKG).
+   - **Purpose:** Enforces "Architecture First" thinking. Defines Inputs, Outputs, Dependencies, and Error Handling
+     before coding begins.
+   - **Role:** Prevents "spaghetti code" and ensures every component has a defined contract within the Hybrid Knowledge
+     Graph (HKG).
 
 2. **The Operational Playbook (AOP) – For Development Workflows**
-    - **Purpose:** Defines _how_ we write, test, and deploy code (Git standards, versioning, testing).
-    - **Role:** Maintains velocity without sacrificing stability, ensuring AISTF can parse version history.
+   - **Purpose:** Defines _how_ we write, test, and deploy code (Git standards, versioning, testing).
+   - **Role:** Maintains velocity without sacrificing stability, ensuring AISTF can parse version history.
 
 3. **The Relational Naming Convention (RNC) – For Semantic Consistency**
-    - **Purpose:** A dictionary of reserved terms and naming patterns.
-    - **Role:** Reduces cognitive load; variable names instantly reveal type, scope, and purpose.
+   - **Purpose:** A dictionary of reserved terms and naming patterns.
+   - **Role:** Reduces cognitive load; variable names instantly reveal type, scope, and purpose.
 
 ---
 
@@ -84,8 +84,8 @@ _This section defines how entities are named to ensure instant recognition of th
 
 - **Standard:** PEP 8 Extended.
 - **Type Hinting:** **MANDATORY.** All function signatures must utilize the `typing` module (List, Dict, Optional, Any).
-    - _Bad:_ `def process_data(data):`
-    - _Good:_ `def process_data(data: Dict[str, Any]) -> List[int]:`
+  - _Bad:_ `def process_data(data):`
+  - _Good:_ `def process_data(data: Dict[str, Any]) -> List[int]:`
 - **Docstrings:** Must follow the **Google Style Guide**. Must be present for all public methods and classes.
 - **Imports:** Sorted alphabetically. Standard library first, third-party second, local application third.
 
@@ -131,11 +131,11 @@ We utilize **Conventional Commits** to ensure the **AISTF** can parse our histor
 
 - Structure: `<type>(<scope>): <subject>`
 - Types:
-    - `feat`: A new feature
-    - `fix`: A bug fix
-    - `docs`: Documentation only changes
-    - `refactor`: A code change that neither fixes a bug nor adds a feature
-    - `chore`: Maintenance (build tasks, package manager configs)
+  - `feat`: A new feature
+  - `fix`: A bug fix
+  - `docs`: Documentation only changes
+  - `refactor`: A code change that neither fixes a bug nor adds a feature
+  - `chore`: Maintenance (build tasks, package manager configs)
 - _Example:_ `feat(parser): implement UMB JSON schema validation`
 
 ---
@@ -193,7 +193,7 @@ def greet(name):
 
 ```typescript
 function greet(name: string): void {
-    console.log("Hello, " + name);
+  console.log("Hello, " + name);
 }
 ```
 

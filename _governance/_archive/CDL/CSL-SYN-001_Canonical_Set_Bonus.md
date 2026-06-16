@@ -51,13 +51,13 @@ When all 5 Canonical Temple artifacts are deployed and linked in a single operat
 receives these stat buffs:
 
 - **Primary Stat Boosts:**
-    - `[Coherence Output: +50%]`
-    - `[Execution Latency: -30%]`
-    - `[Passive Systemic Stability: +100]`
+  - `[Coherence Output: +50%]`
+  - `[Execution Latency: -30%]`
+  - `[Passive Systemic Stability: +100]`
 - **Set Bonus Perk:** `[Ascended Phoenix Loop]`
-    - _Effect:_ Allows the system to rapidly update and refactor itself across all 5 layers simultaneously when a single
-      layer is modified. Altering the UMB immediately cascades logic changes down through ARCH, GVRN, AOP, and GUCA
-      without breaking dependencies.
+  - _Effect:_ Allows the system to rapidly update and refactor itself across all 5 layers simultaneously when a single
+    layer is modified. Altering the UMB immediately cascades logic changes down through ARCH, GVRN, AOP, and GUCA
+    without breaking dependencies.
 
 ## V. The Genesis Seed (The Culmination)
 

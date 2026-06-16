@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.LEARN.ARCHIVEANDEVOLVE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **📜 GVRN.LEARN.ArchiveAndEvolve: The Cartographer's Lesson**
 
 ## **Block A: The Identification Lock (UIP-V15)**

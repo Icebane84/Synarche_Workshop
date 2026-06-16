@@ -1,3 +1,4 @@
+# .agent/manifest.yaml
 version: "1.0"
 project_name: "Synarche_Workspace"
 agents:
@@ -9,6 +10,7 @@ agents:
     default_rules: 
       - ".agent/rules/00-axion-prime.md"
       - ".agent/rules/01-chronos-lock.md"
+      - ".agent/rules/05-akashic-learning.md"
   
   - id: "axion-sentinel"
     name: "The Sentinel"

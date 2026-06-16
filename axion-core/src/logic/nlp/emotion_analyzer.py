@@ -1,5 +1,17 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.EMOTION_ANALYZER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -12,41 +24,43 @@
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | {resonance}     |
+# | **Resonance** | {resonance}     |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Logic Drift**      | Strict Linter Enforcement |
+# | **Semantic Decay**   | Axiomatic Compass Audit   |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+| CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
 
 ## **[ARTIFACT END]**
 """
 
 import logging
+from typing import Dict, List, Optional
 
+# Configure logging for this module
 log = logging.getLogger(__name__)
 
-INITIAL_EMOTION_LEXICON = {
+INITIAL_EMOTION_LEXICON: Dict[str, Dict[str, List[str]]] = {
     "keyword": {
         "happy": ["joy", "contentment"],
         "glad": ["joy"],
@@ -79,21 +93,36 @@ class EmotionAnalyzer:
     lexicons and triggers.
     """
 
-    def __init__(self, lexicon: dict[str, dict[str, list[str]]] | None = None) -> None:
+    def __init__(
+        self, lexicon: Optional[Dict[str, Dict[str, List[str]]]] = None
+    ) -> None:
+        """Initializes the EmotionAnalyzer.
+
+        Args:
+            lexicon: An optional dictionary containing keyword-to-emotion mappings.
+
+        """
         self.lexicons = lexicon if lexicon is not None else INITIAL_EMOTION_LEXICON
-        if not isinstance(self.lexicons, dict) or "keyword" not in self.lexicons:
+        if not isinstance(self.lexicons, Dict) or "keyword" not in self.lexicons:
             log.warning("Invalid or missing 'keyword' triggers in lexicon.")
-            if not isinstance(self.lexicons, dict):
+            if not isinstance(self.lexicons, Dict):
                 self.lexicons = {}
             if "keyword" not in self.lexicons:
                 self.lexicons["keyword"] = {}
         log.info("EmotionAnalyzer initialized.")
 
-    def detect_emotions(self, text: str) -> dict[str, float]:
+    def detect_emotions(self, text: str) -> Dict[str, float]:
         """Detects emotions in the input text based on keyword triggers.
-        Returns a dict of {emotion: intensity}.
+        Returns a dictionary of {emotion: intensity}.
+
+        Args:
+            text: The input string to analyze.
+
+        Returns:
+            A dictionary mapping emotion names to detected intensity (currently fixed at 0.5 per trigger).
+
         """
-        detected_emotions: dict[str, float] = {}
+        detected_emotions: Dict[str, float] = {}
         if not isinstance(text, str) or not text:
             return detected_emotions
 
@@ -108,6 +137,11 @@ class EmotionAnalyzer:
                             continue
                         if emotion not in detected_emotions:
                             detected_emotions[emotion] = 0.5
+                        else:
+                            # Simple additive intensity for multiple triggers
+                            detected_emotions[emotion] = min(
+                                1.0, detected_emotions[emotion] + 0.1
+                            )
 
             return detected_emotions
 
@@ -115,10 +149,7 @@ class EmotionAnalyzer:
             log.exception(f"Unexpected error during emotion detection: {e}")
             return {}
 
-# ---
-# 
-# ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.emotion.analyzer VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 037bdee70124e6f4`
+# ---
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.emotion.analyzer VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 037bdee70124e6f4
+# ---

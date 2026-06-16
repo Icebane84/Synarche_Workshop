@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CORE.CODEX.PHOENIX` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CORE.Codex.Phoenix.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -260,4 +270,4 @@ All operations are navigated via the **[GVRN.Codex.EternalLaw](GVRN.Codex.Eterna
 
 ---
 
-{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-ANALYSIS-PRED-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('A') }}: Predictive Analysis (Ascended Phoenix) [v15.0] 🔮**
 
 | Analysis metric | Value         | Threshold          | Status |

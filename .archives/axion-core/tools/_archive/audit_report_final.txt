@@ -1,0 +1,903 @@
+=== PHOENIX COMPLIANCE AUDIT REPORT ===
+Date: 2026-01-20 19:59:35.865919
+Target: c:\Users\Chris\Synarche_Workspace\where-light-fades
+
+[FAIL] 5. Magic and Power Systems\Magic System Overview.md (Score: 0.40)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Magic System Overview.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 10. Key Symbols & Motifs\Nyx_s Bile - Oily Residue.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Nyx_s Bile - Oily Residue.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 10. Key Symbols & Motifs\Symbol_Black Feather.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Symbol_Black Feather.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 10. Key Symbols & Motifs\Symbol_Cracked Stained Glass.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Symbol_Cracked Stained Glass.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 10. Key Symbols & Motifs\Symbol_Whispering Blade.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Symbol_Whispering Blade.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 11. Concepts_Misc\Heartstone (Oakhaven).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Heartstone (Oakhaven).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 11. Concepts_Misc\Heartstones (Destabilization).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Heartstones (Destabilization).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 11. Concepts_Misc\Heartstones (Discovery Legend).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Heartstones (Discovery Legend).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 11. Concepts_Misc\Heartstones (Origin).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Heartstones (Origin).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 11. Concepts_Misc\Kaelen (Dark Mode).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Kaelen (Dark Mode).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 11. Concepts_Misc\Kaelen (Internal Struggle).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Kaelen (Internal Struggle).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 11. Concepts_Misc\Kaelen (Light Mode).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Kaelen (Light Mode).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 11. Concepts_Misc\Shadow Realm (Concept).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Shadow Realm (Concept).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eldoria (Civilization).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Eldoria (Civilization).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Timeline_Shattered Lands.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Timeline_Shattered Lands.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\Age of Eldoria.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Age of Eldoria.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\Age of the White Flame.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Age of the White Flame.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\Dawn Age.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Dawn Age.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\Eldrins Fall.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Eldrins Fall.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\Eldrin_s Era.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Eldrin_s Era.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\Eldrin_s Fall.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Eldrin_s Fall.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\Present Day (Kaelen_s Era).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Present Day (Kaelen_s Era).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\The Cover-Up.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'The Cover-Up.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\The Great Sundering.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'The Great Sundering.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Legends_Prophecies\Legend_Whispering Blade.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Legend_Whispering Blade.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Legends_Prophecies\Prophecy_Sundered Blade.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Prophecy_Sundered Blade.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 4. Society, Cultures, & Factions\Cult of Nyx.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Cult of Nyx.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 4. Society, Cultures, & Factions\Hierarchy_Order of the White Flame.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Hierarchy_Order of the White Flame.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 4. Society, Cultures, & Factions\Language_Cult of Nyx.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Language_Cult of Nyx.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 4. Society, Cultures, & Factions\Order of the White Flame (Secrets).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Order of the White Flame (Secrets).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 4. Society, Cultures, & Factions\Order of the White Flame.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Order of the White Flame.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 4. Society, Cultures, & Factions\Paladin Code.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Paladin Code.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 4. Society, Cultures, & Factions\Rituals_Cult of Nyx.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Rituals_Cult of Nyx.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 4. Society, Cultures, & Factions\Rituals_Order of the White Flame.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Rituals_Order of the White Flame.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 5. Magic and Power Systems\Heartstones.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Heartstones.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 5. Magic and Power Systems\Inner Flame.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Inner Flame.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 5. Magic and Power Systems\Magic_Corrupted.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Magic_Corrupted.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 5. Magic and Power Systems\Magic_Dark.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Magic_Dark.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 5. Magic and Power Systems\Magic_Light (Healing).md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Magic_Light (Healing).md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 5. Magic and Power Systems\Magic_Light.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Magic_Light.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 5. Magic and Power Systems\White Flame.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'White Flame.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 7. Bestiary & Races\Creature_Ash Walkers.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Creature_Ash Walkers.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 7. Bestiary & Races\Creature_Ashen Abominations.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Creature_Ashen Abominations.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 7. Bestiary & Races\Creature_Ghouls.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Creature_Ghouls.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 7. Bestiary & Races\Creature_Whispering Winds.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Creature_Whispering Winds.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 7. Bestiary & Races\Humans.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Humans.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 7. Bestiary & Races\Races_Overview.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Races_Overview.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 7. Bestiary & Races\Whispering Winds.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Whispering Winds.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 8. Artifacts Key Items\Elara_s Blue Stone Fragment.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Elara_s Blue Stone Fragment.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 8. Artifacts Key Items\Hand of Purity.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Hand of Purity.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 8. Artifacts Key Items\Heartstones.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Heartstones.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 8. Artifacts Key Items\Oathbringer.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Oathbringer.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 8. Artifacts Key Items\Serafina_s Locket.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Serafina_s Locket.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 8. Artifacts Key Items\Valerius_s Journal.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Valerius_s Journal.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 9. Plot and Narrative Structure\Act 1 Outline.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Act 1 Outline.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 9. Plot and Narrative Structure\Act 2 Outline.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Act 2 Outline.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 9. Plot and Narrative Structure\Chapter 1 Summary_Fractured Reflections.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Chapter 1 Summary_Fractured Reflections.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 9. Plot and Narrative Structure\Event_Elara_s Death and Kaelen_s Dark Mode.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Event_Elara_s Death and Kaelen_s Dark Mode.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 9. Plot and Narrative Structure\Event_Elara_s Death.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Event_Elara_s Death.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 9. Plot and Narrative Structure\Event_Kaelen_s Imprisonment.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Event_Kaelen_s Imprisonment.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 9. Plot and Narrative Structure\Master Outline Overview.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Master Outline Overview.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 9. Plot and Narrative Structure\Plot Point_Kaelen_s Dark Mode Usage.md (Score: 0.45)
+  !! UIP: Missing required key 'Status (State)'.
+  !! UIP: Missing required key 'Integrity Hash'.
+  -- UIP: Version is not v11.0.
+  -- Filenaming: Filename 'Plot Point_Kaelen_s Dark Mode Usage.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] Archives\Where_Light_Fades_Brother Caius - Detailed Profile.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Where_Light_Fades_Brother Caius - Detailed Profile.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Archives\Where_Light_Fades_Garrett - Detailed Profile.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 3 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Where_Light_Fades_Garrett - Detailed Profile.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Archives\Where_Light_Fades_Kaelen - Detailed Profile.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Where_Light_Fades_Kaelen - Detailed Profile.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Archives\Where_Light_Fades_Oathbringer - Detailed Profile.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Where_Light_Fades_Oathbringer - Detailed Profile.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Archives\Where_Light_Fades_Serafina - Detailed Profile.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 3 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Where_Light_Fades_Serafina - Detailed Profile.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Archives\Where_Light_Fades_Shadow Self - Detailed Profile.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 6 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Where_Light_Fades_Shadow Self - Detailed Profile.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Archives\Where_Light_Fades_Valerius - Detailed Profile.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 4 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Where_Light_Fades_Valerius - Detailed Profile.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Alternative-Rough\7_5_25 Why_Where_Light_Fades.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 4 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename '7_5_25 Why_Where_Light_Fades.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Alternative-Rough\Rough Drafts.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 8 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Rough Drafts.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] Unfiltered\Where Light Fades\Alternative-Rough\Seeds of Doubt.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 5 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Seeds of Doubt.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\2. Where Light Fades - Cosmic Forces & Magic System.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 7 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename '2. Where Light Fades - Cosmic Forces & Magic System.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\Script_Where_Light_Fades.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Script_Where_Light_Fades.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\Where_Light_Fades_Bestiary.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 17 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Where_Light_Fades_Bestiary.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\Worldbuilding_Lore_Where_Light_Fades.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 25 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Worldbuilding_Lore_Where_Light_Fades.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\Worldbuilding_Lore_Where_Light_Fades_Converted.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 25 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Worldbuilding_Lore_Where_Light_Fades_Converted.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Visuals for Where Light Fades\Concept Art\Concept Art Collection.md (Score: 0.45)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 6 H1 headers outside UIP).
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'Concept Art Collection.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Archives\Where_Light_Fades_Eldrin - Definitive Character Profile.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 3 H1 headers outside UIP).
+  -- Filenaming: Filename 'Where_Light_Fades_Eldrin - Definitive Character Profile.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\_Where Light Fades_ Blog.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 6 H1 headers outside UIP).
+  -- Filenaming: Filename '_Where Light Fades_ Blog.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\1. Where Light Fades - Core History & Chronology.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Filenaming: Filename '1. Where Light Fades - Core History & Chronology.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\3. Where Light Fades - Social Structures & Major Factions.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Filenaming: Filename '3. Where Light Fades - Social Structures & Major Factions.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\4. Where Light Fades - Legends & Prophecies.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Filenaming: Filename '4. Where Light Fades - Legends & Prophecies.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\5. Where Light Fades - Bestiary & Corrupted Creatures.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Filenaming: Filename '5. Where Light Fades - Bestiary & Corrupted Creatures.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\6. Where Light Fades - Key Symbols & Motifs_ (Glossary of Unique Concepts.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Filenaming: Filename '6. Where Light Fades - Key Symbols & Motifs_ (Glossary of Unique Concepts.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\7. Where Light Fades - Geography & Key Locations.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Filenaming: Filename '7. Where Light Fades - Geography & Key Locations.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\Master_Outline_Where_Light_Fades.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Filenaming: Filename 'Master_Outline_Where_Light_Fades.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\Where_Light_Fades_Key_Documents_References.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 0 H1 headers outside UIP).
+  -- Filenaming: Filename 'Where_Light_Fades_Key_Documents_References.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\Where_Light_Fades_Visual Guide to the Worldbuilding_.md (Score: 0.50)
+  !! UIP: Missing or improperly formatted UIP header.
+  !! Geometry: H1 Singularity violation (Found 11 H1 headers outside UIP).
+  -- Filenaming: Filename 'Where_Light_Fades_Visual Guide to the Worldbuilding_.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\_Where_Light_Fades__Writing.md (Score: 0.65)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename '_Where_Light_Fades__Writing.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\How_To_Create_Where_Light_Fades.md (Score: 0.65)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- Filenaming: Filename 'How_To_Create_Where_Light_Fades.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] CHANGELOG.md (Score: 0.70)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- Filenaming: Filename 'CHANGELOG.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] README.md (Score: 0.70)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- Filenaming: Filename 'README.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] Unfiltered\Where Light Fades\Master Documents\Archive\Master_Refined_Where_Light_Fades.md (Score: 0.70)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- Filenaming: Filename 'Master_Refined_Where_Light_Fades.md' does not strictly match v11.0 RNC pattern.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] 1. Core Concepts & Themes\WLF-GDD-001_TheShatteredMind_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\WLF-THEM-000_Overview_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\WLF-THEM-001_Inspirations_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\WLF-THEM-002_Logline_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\WLF-THEM-003_Synopsis_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Prototypes\mechanics_prototype.py (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Missing required 'IV. Actionable Prompt Packet (APP)' section.
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-010_Betrayal_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-011_Conspiracy_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-012_Corruption_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-013_CycleOfViolence_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-014_FaithVsDoubt_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-015_FreeWillVsDestiny_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-016_Hope_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-017_Isolation_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-018_LossAndGrief_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-019_LostKnowledge_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-020_MoralAmbiguity_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-021_Mystery_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-022_PowerVsControl_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-023_Resistance_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-024_StatusQuoVsTruth_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 1. Core Concepts & Themes\Themes\WLF-THEM-025_Temptation_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\WLF-WRLD-000_Overview_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\WLF-WRLD-001_Geography_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\WLF-WRLD-002_Map_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\WLF-WRLD-003_NullZones_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\WLF-WRLD-004_CorruptedFauna_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\WLF-WRLD-005_CorruptedFlora_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\WLF-WRLD-006_FortressLibrary_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\Locations\WLF-WRLD-010_AshenWastes_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\Locations\WLF-WRLD-011_FortressOfLight_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\Locations\WLF-WRLD-012_HallowedChapel_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\Locations\WLF-WRLD-013_Oakhaven_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\Locations\WLF-WRLD-014_RuinsOfEldoria_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\Locations\WLF-WRLD-015_SpineOfDespair_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\Locations\WLF-WRLD-016_WhisperingStones_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 2. World & Setting\Locations\WLF-WRLD-017_Whisperwood_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\WLF-LORE-010_Timeline_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\WLF-LORE-012_AgeOfTheWhiteFlame_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 3. History, Lore, & Mythology\Eras_Events\WLF-LORE-013_DawnAge_v1.0.md (Score: 0.75)
+  !! UIP: Missing or improperly formatted UIP header.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[FAIL] 10. Key Symbols & Motifs\WLF-SYMB-001_SymbolOfBinding_v1.0.md (Score: 0.80)
+  !! UIP: Missing or improperly formatted UIP header.
+
+[FAIL] 6. Characters\WLF-CHAR-009_Borin_v1.0.md (Score: 0.80)
+  !! UIP: Missing or improperly formatted UIP header.
+
+[FAIL] 6. Characters\WLF-CHAR-011_Lyra_v1.0.md (Score: 0.80)
+  !! UIP: Missing or improperly formatted UIP header.
+
+[WARNING] 3. History, Lore, & Mythology\Eras_Events\WLF-LORE-015_EldrinsFall_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 3. History, Lore, & Mythology\Eras_Events\WLF-LORE-020_Nyx_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 6. Characters\WLF-CHAR-001_Kaelen_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 6. Characters\WLF-CHAR-002_Garrett_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 6. Characters\WLF-CHAR-003_Serafina_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 6. Characters\WLF-CHAR-006_Eldrin_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 6. Characters\WLF-CHAR-007_Shadow_Self_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] Docs\WLF-DOC-001_ProjectSynopsis_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] Docs\WLF-DOC-008_LoreContradictionReport_v1.0.md (Score: 0.90)
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] Docs\WLF-DOC-010_SynergisticAnalysis_v1.0.md (Score: 0.90)
+  -- UIP: Version is not v11.0.
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 3. History, Lore, & Mythology\WLF-LORE-016_TheSacrifice_v1.0.md (Score: 0.95)
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 3. History, Lore, & Mythology\WLF-LORE-017_TheProphecy_v1.0.md (Score: 0.95)
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 3. History, Lore, & Mythology\Eras_Events\WLF-LORE-011_AgeOfEldoria_v1.0.md (Score: 0.95)
+  -- UIP: Version is not v11.0.
+
+[WARNING] 3. History, Lore, & Mythology\Eras_Events\WLF-LORE-018_TheCoverUp_v1.0.md (Score: 0.95)
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 3. History, Lore, & Mythology\Eras_Events\WLF-LORE-019_ValeriusKaelenBond_v1.0.md (Score: 0.95)
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 6. Characters\WLF-CHAR-004_Valerius_v1.0.md (Score: 0.95)
+  -- APP: Section numbering incorrect (Expected 'IV. Actionable Prompt Packet (APP)').
+
+[WARNING] 6. Characters\WLF-CHAR-010_Elara_v1.0.md (Score: 0.95)
+  -- UIP: Version is not v11.0.
+
+[WARNING] Docs\WLF-DOC-006_CharacterBible_v1.0.md (Score: 0.95)
+  -- Geometry: Detected 2-space indentation (v11.0 mandates 4 spaces).
+
+[PASS] 6. Characters\WLF-CHAR-005_Brother_Caius_v1.0.md (Score: 1.00)
+
+[PASS] 6. Characters\WLF-CHAR-008_Oathbringer_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-DOC-000_PhoenixProtocols_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-DOC-007_GameManual_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-DOC-009_ConceptualAnchors_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-GUIDE-001_WritingGuide_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-LORE-001_History_Chronology_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-LORE-002_CosmicForces_Magic_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-LORE-003_SocialStructures_Factions_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-LORE-004_Legends_Prophecies_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-LORE-005_Bestiary_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-LORE-006_Symbols_Motifs_v1.0.md (Score: 1.00)
+
+[PASS] Docs\WLF-LORE-007_Geography_Locations_v1.0.md (Score: 1.00)
+

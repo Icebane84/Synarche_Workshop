@@ -9,9 +9,15 @@ REPORT_PATH = r"c:\Users\Chris\Synarche_Workspace\_governance\ingestion_report.j
 # Regex Patterns (Strict GVRN v10.0)
 PATTERNS = {
     "12_POINT_HEADER": re.compile(r"\|\s*\*\*1\.\s*Artifact ID\*\*\s*\|", re.MULTILINE),
-    "AGP_001": re.compile(r"### \*\*II\. AGP-001: The State Vector Definition Block", re.MULTILINE),
-    "AGP_002": re.compile(r"### \*\*III\. AGP-002: The Risk Governance Block", re.MULTILINE),
-    "AGP_003": re.compile(r"### \*\*IV\. AGP-003: The Linkage and Decoherence Block", re.MULTILINE),
+    "AGP_001": re.compile(
+        r"### \*\*II\. AGP-001: The State Vector Definition Block", re.MULTILINE
+    ),
+    "AGP_002": re.compile(
+        r"### \*\*III\. AGP-002: The Risk Governance Block", re.MULTILINE
+    ),
+    "AGP_003": re.compile(
+        r"### \*\*IV\. AGP-003: The Linkage and Decoherence Block", re.MULTILINE
+    ),
     "PROMPT_PACKET": re.compile(r"Actionable Prompt Packet", re.IGNORECASE),
     "CMD": re.compile(r"`CMD: [A-Z_]+ --[a-z]+:", re.MULTILINE),
     "4_SPACE_INDENT": re.compile(
@@ -22,14 +28,13 @@ PATTERNS = {
 
 def validate_artifact(filepath):
     """Scans a single artifact for compliance."""
-
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Active Protocol
-# Synergy Set: The Oathkeeper's Seal
-# Primary Stat Buff: Coherence
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: High
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Active Protocol
+    # Synergy Set: The Oathkeeper's Seal
+    # Primary Stat Buff: Coherence
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: High
+    # XP Award Value: 50 XP
 
     try:
         with open(filepath, encoding="utf-8") as f:
@@ -67,7 +72,7 @@ def validate_artifact(filepath):
         valid = False
 
     # Check 4: Indentation (Strict)
-    bad_indent = PATTERNS["4_SPACE_INDENT"].findall(content)
+    PATTERNS["4_SPACE_INDENT"].findall(content)
     # Filter out actual code blocks or legitimate top-level items
     # Ideally, we'd parse AST, but a raw check works for "strict adherence" first pass
     # For now, we relaxed strict indent check to avoid false positives on legitimate markdown,

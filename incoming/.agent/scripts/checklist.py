@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Master Checklist Runner - Antigravity Kit
+"""Master Checklist Runner - Antigravity Kit.
 ==========================================
 
 Orchestrates all validation scripts in priority order.
@@ -20,11 +19,11 @@ Priority Order:
     P6: Performance (lighthouse - requires URL)
 """
 
-import sys
-import subprocess
 import argparse
+import subprocess
+import sys
 from pathlib import Path
-from typing import List, Tuple, Optional
+from typing import List, Optional
 
 
 # ANSI colors for terminal output
@@ -40,9 +39,9 @@ class Colors:
 
 
 def print_header(text: str):
-    print(f"\n{Colors.BOLD}{Colors.CYAN}{'='*60}{Colors.ENDC}")
+    print(f"\n{Colors.BOLD}{Colors.CYAN}{'=' * 60}{Colors.ENDC}")
     print(f"{Colors.BOLD}{Colors.CYAN}{text.center(60)}{Colors.ENDC}")
-    print(f"{Colors.BOLD}{Colors.CYAN}{'='*60}{Colors.ENDC}\n")
+    print(f"{Colors.BOLD}{Colors.CYAN}{'=' * 60}{Colors.ENDC}\n")
 
 
 def print_step(text: str):
@@ -94,18 +93,18 @@ PERFORMANCE_CHECKS = [
 
 
 def check_script_exists(script_path: Path) -> bool:
-    """Check if script file exists"""
+    """Check if script file exists."""
     return script_path.exists() and script_path.is_file()
 
 
 def run_script(
     name: str, script_path: Path, project_path: str, url: Optional[str] = None
 ) -> dict:
-    """
-    Run a validation script and capture results
+    """Run a validation script and capture results.
 
     Returns:
         dict with keys: name, passed, output, skipped
+
     """
     if not check_script_exists(script_path):
         print_warning(f"{name}: Script not found, skipping")
@@ -124,7 +123,10 @@ def run_script(
     # Run script
     try:
         result = subprocess.run(
-            cmd, capture_output=True, text=True, timeout=300  # 5 minute timeout
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=300,  # 5 minute timeout
         )
 
         passed = result.returncode == 0
@@ -166,7 +168,7 @@ def run_script(
 
 
 def print_summary(results: List[dict]):
-    """Print final summary report"""
+    """Print final summary report."""
     print_header("📊 CHECKLIST SUMMARY")
 
     passed_count = sum(1 for r in results if r["passed"] and not r.get("skipped"))

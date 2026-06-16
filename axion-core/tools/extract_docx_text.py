@@ -1,5 +1,17 @@
 """
-# Universal Identification & Provenance (UIP)
+artifact_anchor:
+  id: INFR.EXTRACT_DOCX_TEXT.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-MAGI-002`                                |
@@ -14,7 +26,7 @@
 | **10. Ethos**          | **Unveiling**                                  |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `LINK: [CHAR-AXION-001]`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 
 ---
 
@@ -51,8 +63,7 @@ logger = logging.getLogger(__name__)
 
 
 def extract_text_from_docx(docx_path: str, output_path: str) -> str:
-    """
-    Extracts raw text from a DOCX file by parsing the internal XML.
+    """Extracts raw text from a DOCX file by parsing the internal XML.
     Returns a status message.
     """
     try:

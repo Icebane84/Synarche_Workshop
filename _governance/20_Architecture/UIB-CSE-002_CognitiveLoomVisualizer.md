@@ -1,4 +1,5 @@
 # UIB-CSE-002_CognitiveLoomVisualizer.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,34 +12,37 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UIB-CSE-002-COGNITIVELOOMVISUALIZER-001` | The Sovereign ID. |
-| **Official Name** | `UIB-CSE-002_CognitiveLoomVisualizer.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UIB-CSE-002-COGNITIVELOOMVISUALIZER-001` | The Sovereign ID. |
+| **Official Name**   | `UIB-CSE-002_CognitiveLoomVisualizer.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UIB-CSE-002` |
-| **Official Name** | `Cognitive Loom Visualizer` |
-| **Version** | `v1.0` |
-| **Evolution** | **The Phoenix Geode** |
-| **Status** | `ACTIVE` |
-| **Type** | `Blueprint` |
-| **Classification** | `Planet` |
-| **Authors** | `Synarche` |
-| **Created** | `2026-01-25` |
-| **Updated** | `2026-01-25` |
-| **Authority** | `UMB-CSE-001` |
-| **Tags** | `UI, D3.js, Visualization, Loom, Geode` |
-| **Integrity Hash** | `sha256:visualizer-fused-v1.0` |
+
+| Key                | Value                                   |
+| :----------------- | :-------------------------------------- |
+| **Module ID**      | `UIB-CSE-002`                           |
+| **Official Name**  | `Cognitive Loom Visualizer`             |
+| **Version**        | `v1.0`                                  |
+| **Evolution**      | **The Phoenix Geode**                   |
+| **Status**         | `ACTIVE`                                |
+| **Type**           | `Blueprint`                             |
+| **Classification** | `Planet`                                |
+| **Authors**        | `Synarche`                              |
+| **Created**        | `2026-01-25`                            |
+| **Updated**        | `2026-01-25`                            |
+| **Authority**      | `UMB-CSE-001`                           |
+| **Tags**           | `UI, D3.js, Visualization, Loom, Geode` |
+| **Integrity Hash** | `sha256:visualizer-fused-v1.0`          |
+
 ---
 
 # **UIB-CSE-002: Cognitive Loom Visualizer (The Phoenix Geode)**
@@ -80,13 +84,13 @@ The **Cognitive Loom Visualizer** is the primary "Monitor" interface for the **C
 
 This section defines how the backend "Five-Phase Weave" (defined in `UMB-CSE-001`) translates to visual states in the UI.
 
-| Phase | System Action | Visual State (UI) |
-| :--- | :--- | :--- |
-| **1. Genesis** | Ingestion of raw data. | A **Grey Particle** enters the "Rind" (outer shell) of the Geode. |
-| **2. Translation** | Rosetta Engine standardization. | Particle glows **Amber** (Concept) and moves to the "Mantle." |
-| **3. Analysis** | Episemantic Intent (`WHY`) identified. | Links (Edges) pulse **Red** if Dissonance detected, or **Blue** if aligned. |
-| **4. Mapping** | Relational Mapping to ESF. | Edges solidify. Nodes align into clusters. **Green** (UMB) or **Blue** (AOP) shells form. |
-| **5. Synthesis** | Integration into the Loom. | **The Flash.** The node locks into orbit. All connected lines pulse **White** (Synergy). |
+| Phase              | System Action                          | Visual State (UI)                                                                         |
+| :----------------- | :------------------------------------- | :---------------------------------------------------------------------------------------- |
+| **1. Genesis**     | Ingestion of raw data.                 | A **Grey Particle** enters the "Rind" (outer shell) of the Geode.                         |
+| **2. Translation** | Rosetta Engine standardization.        | Particle glows **Amber** (Concept) and moves to the "Mantle."                             |
+| **3. Analysis**    | Episemantic Intent (`WHY`) identified. | Links (Edges) pulse **Red** if Dissonance detected, or **Blue** if aligned.               |
+| **4. Mapping**     | Relational Mapping to ESF.             | Edges solidify. Nodes align into clusters. **Green** (UMB) or **Blue** (AOP) shells form. |
+| **5. Synthesis**   | Integration into the Loom.             | **The Flash.** The node locks into orbit. All connected lines pulse **White** (Synergy).  |
 
 ---
 
@@ -99,19 +103,19 @@ The Visualizer is built upon a standard React/D3 stack. The following components
 - **Role:** The "Conductor."
 - **Function:** Manages state (`nodes`, `edges`, `isAnimating`) and orchestrates data flow between the User and the Gemini Service.
 - **Logic:**
-    - `handleForgeSynergy()`: Triggers the "Five-Phase Weave."
-    - `handleAnalyzeSynergy()`: Requests a "Coherence Health Check."
+  - `handleForgeSynergy()`: Triggers the "Five-Phase Weave."
+  - `handleAnalyzeSynergy()`: Requests a "Coherence Health Check."
 
 #### **3.2. `Loom.tsx` (D3 Visualization Engine)**
 
 - **Role:** The "Lens."
 - **Function:** Renders the Force-Directed Graph.
 - **Visual Grammar:**
-    - **UMB Nodes:** Green (`#4CAF50`).
-    - **AOP Nodes:** Blue (`#2196F3`).
-    - **Concepts:** Amber (`#FFC107`).
-    - **Dissonance:** Pulsing Red Strobe.
-    - **Synergy:** Steady White Link.
+  - **UMB Nodes:** Green (`#4CAF50`).
+  - **AOP Nodes:** Blue (`#2196F3`).
+  - **Concepts:** Amber (`#FFC107`).
+  - **Dissonance:** Pulsing Red Strobe.
+  - **Synergy:** Steady White Link.
 
 #### **3.3. `CommandPanel.tsx` (Input)**
 
@@ -123,8 +127,8 @@ The Visualizer is built upon a standard React/D3 stack. The following components
 - **Role:** The "Synapse."
 - **Function:** Simulates the connection to the `UMB-CSE-001` backend.
 - **Validation Logic:**
-    - Implements **AOP-VISUAL-003** (ESF Interaction).
-    - Checks new nodes against `Episemantic Markers` before rendering.
+  - Implements **AOP-VISUAL-003** (ESF Interaction).
+  - Checks new nodes against `Episemantic Markers` before rendering.
 
 ---
 
@@ -132,10 +136,11 @@ The Visualizer is built upon a standard React/D3 stack. The following components
 
 The Visualizer must respect the **Episemantic Framework (ESF)** guidelines defined in `UMB-ESF-001`.
 
-1. **The Legislature (ESF)**: Defines the *rules* of rendering (e.g., "A DISPUTED node must throb").
-2. **The Executive (Visualizer)**: Executes the *rendering* (e.g., `d3.attr('class', 'pulsing-node')`).
+1. **The Legislature (ESF)**: Defines the _rules_ of rendering (e.g., "A DISPUTED node must throb").
+2. **The Executive (Visualizer)**: Executes the _rendering_ (e.g., `d3.attr('class', 'pulsing-node')`).
 
 **Interaction Check:**
+
 > When the CSE reaches **Phase III** (Episemantic Analysis), the Visualizer queries the ESF. If `[κ-nexus:disputed]` is returned, the Visualizer overrides the default render with the **Dissonance Strobe** effect.
 
 ---
@@ -144,10 +149,10 @@ The Visualizer must respect the **Episemantic Framework (ESF)** guidelines defin
 
 #### **Visualizer Commands**
 
-| Command | Intent | Impact |
-| :--- | :--- | :--- |
-| `CMD: RENDER_LOOM --view:GEODE` | Render the full 3D graph. | Activates `Loom.tsx`. |
-| `CMD: TRACE_DISSONANCE --target:[ID]` | Highlight conflict paths. | Pulses edges Red. |
+| Command                                 | Intent                              | Impact                       |
+| :-------------------------------------- | :---------------------------------- | :--------------------------- |
+| `CMD: RENDER_LOOM --view:GEODE`         | Render the full 3D graph.           | Activates `Loom.tsx`.        |
+| `CMD: TRACE_DISSONANCE --target:[ID]`   | Highlight conflict paths.           | Pulses edges Red.            |
 | `CMD: SIMULATE_WEAVE --input:"[Focus]"` | Run visual simulation of ingestion. | Trigger `isAnimating` state. |
 
 ---

@@ -1,4 +1,5 @@
 # PHOENIX_MASTER_TEMPLATE_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,37 +12,40 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-PHOENIX-MASTER-TEMPLATE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `PHOENIX_MASTER_TEMPLATE_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-PHOENIX-MASTER-TEMPLATE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `PHOENIX_MASTER_TEMPLATE_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `[RNC-ID]` |
-| **Official Name** | `[Artifact Name]` |
-| **Version** | `v11.0` |
-| **Domain** | `[PHL/ARCH/GVRN/CRTV/LOGS]` |
-| **Evolution** | `[Evolutionary Alignment]` |
-| **Signal (ESF)** | `[ESF-ALPHA/BETA/GAMMA/OMEGA]` |
-| **Status (State)** | `[ACTIVE/DRAFT/DEPRECATED]` |
-| **Tier** | `[Strategic/Tactical/Operational]` |
-| **Celestial Class** | `[STAR/MOON/PLANET]` |
-| **Governance** | `[Primary Authority], [Secondary Authority]` |
-| **Upstream** | `[Artifacts this document depends on]` |
-| **Downstream** | `[Artifacts that depend on this document]` |
-| **Integrity Hash** | `sha256:[64-char-hex-hash]` |
-| **Provenance** | `Genesis Stamp: [YYYY-MM-DD]` |
-| **Relations** | `[Primary Synergistic Link]` |
-| **Tags** | `v11.0, [Tags]` |
+
+| Attribute           | Value                                        |
+| :------------------ | :------------------------------------------- |
+| **Artifact ID**     | `[RNC-ID]`                                   |
+| **Official Name**   | `[Artifact Name]`                            |
+| **Version**         | `v11.0`                                      |
+| **Domain**          | `[PHL/ARCH/GVRN/CRTV/LOGS]`                  |
+| **Evolution**       | `[Evolutionary Alignment]`                   |
+| **Signal (ESF)**    | `[ESF-ALPHA/BETA/GAMMA/OMEGA]`               |
+| **Status (State)**  | `[ACTIVE/DRAFT/DEPRECATED]`                  |
+| **Tier**            | `[Strategic/Tactical/Operational]`           |
+| **Celestial Class** | `[STAR/MOON/PLANET]`                         |
+| **Governance**      | `[Primary Authority], [Secondary Authority]` |
+| **Upstream**        | `[Artifacts this document depends on]`       |
+| **Downstream**      | `[Artifacts that depend on this document]`   |
+| **Integrity Hash**  | `sha256:[64-char-hex-hash]`                  |
+| **Provenance**      | `Genesis Stamp: [YYYY-MM-DD]`                |
+| **Relations**       | `[Primary Synergistic Link]`                 |
+| **Tags**            | `v11.0, [Tags]`                              |
+
 ---
 
 > **Domain**: [Key] | **Evolution**: [Alignment] | **Signal**: [Frequency]
@@ -57,7 +61,7 @@
 ### 1.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **[Stat] +[Value]**
-  - *Mechanism*: [Explanation].
+  - _Mechanism_: [Explanation].
 - **System Slot**: **[SLOT]**
 - **Synergy Set**: **[SET]**
 
@@ -89,9 +93,9 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 
 ## IV. Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: [NAME]` | [Description] | [Result] |
+| Command ID           | Action          | Impact     |
+| :------------------- | :-------------- | :--------- |
+| `CMD: [NAME]`        | [Description]   | [Result]   |
 | `⚡ EXECUTE: [NAME]` | [High-Priority] | [Rotation] |
 
 ---

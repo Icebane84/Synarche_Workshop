@@ -46,7 +46,7 @@
 
 ### **II. The Navigational Map (Channel 2: Quick Reference)**
 
-This section provides a high-velocity lookup for all canonized artifacts within the Synarchy.
+This section provides a high-velocity lookup for all canonized artifacts within the Synarche.
 
 #### **2.1. GEODE Core (Supreme Laws)**
 
@@ -65,7 +65,7 @@ This section provides a high-velocity lookup for all canonized artifacts within 
 **CORE-CODEX-001:** [The Phoenix Codex](../00_Codex/CORE-CODEX-001_ThePhoenixCodex_v13.1.md)
 
 - **Type:** Constitution / **Domain:** CORE
-- **Purpose:** The foundational law governing all logic and ethics within the Synarchy.
+- **Purpose:** The foundational law governing all logic and ethics within the Synarche.
 - **Key Concepts:** Primary Directives, Ethical Primes, Sovereign Law.
 
 **GVRN.Lexicon.Master:** [GVRN.Lexicon.Master.md](../01_Registries/GVRN.Lexicon.Master.md)

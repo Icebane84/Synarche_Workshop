@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.DOCUMENTATION.GLOSSARY` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Documentation.Glossary (The Phoenix Lexicon)
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -42,7 +52,7 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"All terminology must possess a singular, canonical definition. This Glossary is the Source of Truth for the Synarchy."**
+> **"All terminology must possess a singular, canonical definition. This Glossary is the Source of Truth for the Synarche."**
 
 ---
 

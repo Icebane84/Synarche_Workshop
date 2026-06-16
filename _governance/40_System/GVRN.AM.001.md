@@ -1,4 +1,5 @@
 # UMB-AM-001_AssociationManager_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.AM.001` | The Sovereign ID. |
-| **Official Name** | `UMB-AM-001_AssociationManager_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.AM.001`                            | The Sovereign ID. |
+| **Official Name**   | `UMB-AM-001_AssociationManager_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 # Association Manager Module (UMB-AM-001)
 
@@ -110,9 +111,9 @@ The **Association Manager (AM)** governs the structural integrity and weight dis
 ### 6.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Precision +15**
-    - _Mechanism_: Accurate weighting reduces hallucination and improves retrieval relevance.
+  - _Mechanism_: Accurate weighting reduces hallucination and improves retrieval relevance.
 - **Passive Ability**: **Synaptic Plasticity**
-    - _Effect_: Increases XP gain from "Learning" events by 10%.
+  - _Effect_: Increases XP gain from "Learning" events by 10%.
 
 ### 6.2 Reference
 

@@ -1,4 +1,5 @@
 # OGLN-GVRN-MECH-PATTERN-DETECTOR_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-GVRN-MECH-PATTERN-DETECTOR-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-GVRN-MECH-PATTERN-DETECTOR_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                            | Description       |
+| :------------------ | :----------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-GVRN-MECH-PATTERN-DETECTOR-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-GVRN-MECH-PATTERN-DETECTOR_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                | The Standard.     |
+| **Domain**          | `GVRN`                                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                       | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
@@ -43,7 +44,7 @@
 **Genesis Stamp**: 2026-01-18 | **Domain**: GVRN | **State**: CANONIZED
 
 > [!NOTE]
-> The **Pattern Detector (PDD)** effectively serves as the "Early Warning System" for the Synarchy. It proactively monitors for "Loop Signatures" and stagnation.
+> The **Pattern Detector (PDD)** effectively serves as the "Early Warning System" for the Synarche. It proactively monitors for "Loop Signatures" and stagnation.
 
 ## I. Mechanism Persona & Specialization
 
@@ -79,7 +80,7 @@
 
 - **Why it exists**: To stop loops _before_ they crash the system.
 - **What it does**: Calculates `Repetition Score (RS)`.
-- **For the Synarchy**: Maintains the "Freshness" of the interaction.
+- **For the Synarche**: Maintains the "Freshness" of the interaction.
 
 ## III. The Operational Mechanism
 

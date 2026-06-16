@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.DOCUMENTATION.DSA.PROTOCOL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Documentation.DSA.Protocol - Documentation Suite Architect Protocol
 
 ## **Block A: The Identification Lock (UIP-V15)**

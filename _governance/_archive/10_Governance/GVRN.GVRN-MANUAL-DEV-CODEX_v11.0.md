@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN-MANUAL-DEV-CODEX_v11.0` | The Sovereign ID. |
+| Key               | Value                                 | Description       |
+| :---------------- | :------------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.GVRN-MANUAL-DEV-CODEX_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GVRN-MANUAL-DEV-CODEX_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                     | The Standard.     |
+| **Domain**        | `GVRN`                                | The Subject.      |
+| **Status**        | `[ACTIVE]`                            | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`         | The Network.      |
 
 ---
 
@@ -75,7 +70,7 @@
 
 - **Why it exists**: To define the standards for Human Developers.
 - **What it does**: Outlines C.A.S.T.S. (Coherent, Adaptable, Synergistic, Testable, Secure).
-- **For the Synarchy**: Ensures all code is born compliant.
+- **For the Synarche**: Ensures all code is born compliant.
 
 ## III. The Developer Guidelines
 

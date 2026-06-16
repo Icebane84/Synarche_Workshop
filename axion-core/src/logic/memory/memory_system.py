@@ -1,5 +1,17 @@
 """
-### **Block A: The Identification Lock (UIP-V15)**
+artifact_anchor:
+  id: CORE.MEMORY_SYSTEM.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
 | Key               | Value                          | Description       |
 | :---------------- | :----------------------------- | :---------------- |
@@ -168,25 +180,108 @@ class MemoryEntry:
     last_retrieved: datetime.datetime | None = None
 
     def decay(self, base_rate: float = 0.01) -> None:
-        """Applies time-based decay to the activation score."""
-        if self.state in ["Active", "Fading", "Consolidated"]:
-            # Decay based on time since last retrieval
-            last_time = (
-                self.last_retrieved
-                or self.created_at
-                or datetime.datetime.now(datetime.timezone.utc)
-            )
-            if last_time.tzinfo is None:
-                last_time = last_time.replace(tzinfo=datetime.timezone.utc)
-            delta = datetime.datetime.now(datetime.timezone.utc) - last_time
-            days = delta.days + (delta.seconds / 86400)
+        """Applies time-based decay and then recomputes activation via the PAD-SIP formula.
 
-            # Relevance slows decay
-            effective_rate = base_rate / (1.0 + self.relevance)
-            decay_factor = (1 - effective_rate) ** days
-            self.activation_score = max(
-                0.0, min(1.0, self.activation_score * decay_factor)
-            )
+        **PAD-SIP Attention Formula (Law 28 — Layer D)**::
+
+            activation = relevance × recency × novelty × importance
+
+        Where:
+            - relevance  : stored relevance score [0, 1] (set at creation).
+            - recency    : exponential decay based on days since last retrieval
+                           with half-life = RECENCY_HALFLIFE (default 30 days).
+            - novelty    : defaults to 0.5 (can be overridden via compute_attention).
+            - importance : mirrors relevance for maintenance-cycle calls (no live
+                           novelty signal available); override via compute_attention().
+
+        The raw product of four [0,1] factors would be very small, so we apply
+        a ¼-root normalisation to keep scores in a perceptually linear range
+        without distorting the ranking order.
+        """
+        if self.state not in ["Active", "Fading", "Consolidated"]:
+            return
+
+        last_time = (
+            self.last_retrieved
+            or self.created_at
+            or datetime.datetime.now(datetime.timezone.utc)
+        )
+        if last_time.tzinfo is None:
+            last_time = last_time.replace(tzinfo=datetime.timezone.utc)
+        delta = datetime.datetime.now(datetime.timezone.utc) - last_time
+        days = delta.days + (delta.seconds / 86_400.0)
+
+        # Recency: exponential decay with half-life = RECENCY_HALFLIFE
+        half_life = MemoryProtocols.RECENCY_HALFLIFE
+        recency = max(0.0, 0.5 ** (days / half_life))
+
+        # Apply PAD-SIP formula with novelty=0.5 (maintenance default)
+        self.activation_score = self._attention_formula(
+            relevance=self.relevance,
+            recency=recency,
+            novelty=0.5,
+            importance=self.relevance,  # importance mirrors relevance in maintenance context
+        )
+
+    def compute_attention(
+        self,
+        novelty: float = 0.5,
+        importance: float | None = None,
+    ) -> float:
+        """Recompute activation using the full PAD-SIP formula with a live novelty signal.
+
+        Called by the CognitiveScheduler's Λ (Memory Loom) phase so that the
+        novelty_score from CognitiveState flows through to each node's activation.
+
+        Args:
+            novelty    : live novelty score from CognitiveState [0, 1].
+            importance : override importance factor; defaults to self.relevance.
+
+        Returns:
+            float: Updated activation_score (also stored on self).
+        """
+        last_time = (
+            self.last_retrieved
+            or self.created_at
+            or datetime.datetime.now(datetime.timezone.utc)
+        )
+        if last_time.tzinfo is None:
+            last_time = last_time.replace(tzinfo=datetime.timezone.utc)
+        delta = datetime.datetime.now(datetime.timezone.utc) - last_time
+        days = delta.days + (delta.seconds / 86_400.0)
+        recency = max(0.0, 0.5 ** (days / MemoryProtocols.RECENCY_HALFLIFE))
+
+        imp = importance if importance is not None else self.relevance
+        self.activation_score = self._attention_formula(
+            relevance=self.relevance,
+            recency=recency,
+            novelty=novelty,
+            importance=imp,
+        )
+        return self.activation_score
+
+    @staticmethod
+    def _attention_formula(
+        relevance: float,
+        recency: float,
+        novelty: float,
+        importance: float,
+    ) -> float:
+        """Core PAD-SIP attention formula: activation = (r × ρ × η × ι)^(1/4).
+
+        Args:
+            relevance  : [0, 1]
+            recency    : [0, 1]
+            novelty    : [0, 1]
+            importance : [0, 1]
+
+        Returns:
+            float: Normalised activation in [0, 1].
+        """
+        raw = relevance * recency * novelty * importance
+        # Quarter-root normalisation: brings product of four [0,1] factors
+        # into a usable [0,1] range while preserving ranking.
+        return min(1.0, raw ** 0.25)
 
     def transition(self) -> None:
         """Transitions memory state and layer based on activation and usage (OMEGA v15.0)."""
@@ -550,6 +645,8 @@ class SQLiteMemoryStorage(MemoryStorage):
         """Initialize the local SQLite schema with virtual vector tables support."""
         try:
             with self.conn:
+                self.conn.execute("PRAGMA journal_mode=WAL;")
+                self.conn.execute("PRAGMA synchronous=NORMAL;")
                 self.conn.execute("""
                     CREATE TABLE IF NOT EXISTS memory_entries (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -1408,7 +1505,7 @@ class MemorySystem:
         entry += "\n"
 
         try:
-            with open(self.sovereign_memory_path, "r", encoding="utf-8") as f:
+            with open(self.sovereign_memory_path, encoding="utf-8") as f:
                 content = f.read()
 
             # Find the "[ARTIFACT START]" or "## **[ARTIFACT START]**" section (OMEGA v15.0)

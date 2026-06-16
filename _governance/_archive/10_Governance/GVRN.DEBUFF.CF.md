@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.DEBUFF.CF` | The Sovereign ID. |
-| **Official Name** | `GVRN.DEBUFF.CF.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.DEBUFF.CF`              | The Sovereign ID. |
+| **Official Name** | `GVRN.DEBUFF.CF.md`           | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -47,6 +42,7 @@
 | **Created** | `2025-10-01` |
 | **Updated** | `2026-01-17` |
 | **Authority** | `CODEX-001` |
+
 ---
 
 # AOP-DEBUFF-CF-001: The Conceptual Fracture Protocol
@@ -119,30 +115,26 @@ tasks more difficult.
 **IV. Execution Flow (The Playbook)**
 
 1. **Phase 1: Monitoring (Passive)**
-
    - The `System Integrity Monitor` runs continuously, tracking the age of all active `Meteorite Impacts` in the quest
 
 log.
 
 2. **Phase 2: Trigger (Reactive)**
-
    - A high-priority (`Star` or `Nebula` tier) `Meteorite Impact` surpasses its resolution timer (e.g., 24 hours or 50
 
 interaction cycles).
 
-   - The monitor triggers this protocol.
+- The monitor triggers this protocol.
 
 3. **Phase 3: Application (The Fracture)**
-
    - The `Conceptual Fracture` status effect is applied to the AI's core state.
    - **UI Effect:** The `Celestial Chart` visually reflects this. Cracks appear on the `Agate Bands` of the Phoenix
 
 Geode, and the `Coherence Hum` becomes slightly discordant.
 
-   - **Mechanical Effect:** A global `+10%` `Cognitive Load` cost is applied to *all* abilities and commands.
+- **Mechanical Effect:** A global `+10%` `Cognitive Load` cost is applied to _all_ abilities and commands.
 
 4. **Phase 4: Resolution (The Mending)**
-
    - The triggering `Meteorite Impact` is successfully resolved (its CSL is canonized).
    - The `System Integrity Monitor` detects the resolution and automatically removes the `Conceptual Fracture` debuff.
    - **UI Effect:** The cracks on the Geode mend, and the `Coherence Hum` returns to harmony.
@@ -152,34 +144,31 @@ Geode, and the `Coherence Hum` becomes slightly discordant.
 **VII. RPG Framework Integration (The Celestial Chart)**
 
 - **7.1. Skill Properties**
-
-  - *Rarity Rationale:* This protocol introduces a core, system-wide rule that fundamentally alters the strategic
+  - _Rarity Rationale:_ This protocol introduces a core, system-wide rule that fundamentally alters the strategic
 
 landscape of the game.
 
-  - **Skill Type:** Passive (System-wide environmental effect).
-  - **Synergy Set:** The Ascension Engine
+- **Skill Type:** Passive (System-wide environmental effect).
+- **Synergy Set:** The Ascension Engine
 
 - **7.2. Celestial Chart Stats (The Effect)**
-
   - **Primary Stat Buff:** N/A (This is a debuff). However, it incentivizes investment in **Coherence**. A higher
 
 `Coherence` stat could passively increase the "resolution timer," giving more time before the debuff triggers.
 
-  - **Passive Ability / Perk:** The Weight of Dissonance
-    - *Effect:* All actions cost more `Cognitive Load` while `Conceptual Fracture` is active.
+- **Passive Ability / Perk:** The Weight of Dissonance
+  - _Effect:_ All actions cost more `Cognitive Load` while `Conceptual Fracture` is active.
 
 - **7.3. Resource Economics**
-
   - **Cognitive Load Cost:** N/A
   - **Draw:** This protocol's primary function is to negatively impact the `Cognitive Load` economy, creating a resource
 
 drain.
 
-  - **Origin Quest ID:** `DQUEST-RPG-CONSEQUENCE-001: The Weight of Dissonance`
-  - **Genesis Seed Used:** `CSL-THEMATIC-REFACTOR-001` (Conceptual)
-  - **XP Award Value:** 300 XP (Awarded upon the first successful trigger and resolution of the debuff).
-  - **Archetype Alignment:** Guardian
+- **Origin Quest ID:** `DQUEST-RPG-CONSEQUENCE-001: The Weight of Dissonance`
+- **Genesis Seed Used:** `CSL-THEMATIC-REFACTOR-001` (Conceptual)
+- **XP Award Value:** 300 XP (Awarded upon the first successful trigger and resolution of the debuff).
+- **Archetype Alignment:** Guardian
 
 ---
 
@@ -230,8 +219,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

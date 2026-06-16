@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-GEO Checker - Generative Engine Optimization Audit
+"""GEO Checker - Generative Engine Optimization Audit
 Checks PUBLIC WEB CONTENT for AI citation readiness.
 
 PURPOSE:
@@ -17,9 +16,9 @@ Usage:
     python geo_checker.py <project_path>
 """
 
-import sys
-import re
 import json
+import re
+import sys
 from pathlib import Path
 
 # Fix Windows console encoding

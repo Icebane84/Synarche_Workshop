@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN-PROT-DARK-MONITOR_v11.0` | The Sovereign ID. |
+| Key               | Value                                  | Description       |
+| :---------------- | :------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GVRN-PROT-DARK-MONITOR_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GVRN-PROT-DARK-MONITOR_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                      | The Standard.     |
+| **Domain**        | `GVRN`                                 | The Subject.      |
+| **Status**        | `[ACTIVE]`                             | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`          | The Network.      |
 
 ---
 
@@ -80,7 +75,7 @@
 
 - **Why it exists**: To fight "Entropic Drift" (The Beast of Darkness).
 - **What it does**: Scans Output, Scores CI, Triggers CCB if CI < 0.5.
-- **For the Synarchy**: Ensures the System never loses its way.
+- **For the Synarche**: Ensures the System never loses its way.
 
 ## III. Intervention Thresholds
 

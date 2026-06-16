@@ -4,7 +4,9 @@
 
 ---
 
-## 📋 Overview
+I. ## 📋 Overview
+
+---
 
 Antigravity Kit is a modular system consisting of:
 
@@ -14,7 +16,9 @@ Antigravity Kit is a modular system consisting of:
 
 ---
 
-## 🏗️ Directory Structure
+II. ## 🏗️ Directory Structure
+
+---
 
 ```plaintext
 .agent/
@@ -30,46 +34,54 @@ Antigravity Kit is a modular system consisting of:
     ├── bin/                 # Master Validation Scripts (6 core)
     ├── governance/          # Substrate-level protocols
     ├── ide/                 # IDE and Tool configurations
-    └── rules/               # Sovereign Rules (Master Standards)
+    └── rules/
+     └── GEMINI.md        # Sovereign Rules (Master Standards)
+     └── GVRN.Ability.Map.md
 ```
 
 ---
 
-## 🤖 Agents (20)
-
-Specialist AI personas for different domains, now stratified into the sovereign substrate.
-Actual Path: `.agent/substrate/agents/`
-
-| Agent                    | Focus                      | Skills Used                                              |
-| ------------------------ | -------------------------- | -------------------------------------------------------- |
-| `orchestrator`           | Multi-agent coordination   | parallel-agents, behavioral-modes                        |
-| `project-planner`        | Discovery, task planning   | brainstorming, plan-writing, architecture                |
-| `frontend-specialist`    | Web UI/UX                  | frontend-design, react-best-practices, tailwind-patterns |
-| `backend-specialist`     | API, business logic        | api-patterns, nodejs-best-practices, database-design     |
-| `database-architect`     | Schema, SQL                | database-design, prisma-expert                           |
-| `mobile-developer`       | iOS, Android, RN           | mobile-design                                            |
-| `game-developer`         | Game logic, mechanics      | game-development                                         |
-| `devops-engineer`        | CI/CD, Docker              | deployment-procedures, docker-expert                     |
-| `security-auditor`       | Security compliance        | vulnerability-scanner, red-team-tactics                  |
-| `penetration-tester`     | Offensive security         | red-team-tactics                                         |
-| `test-engineer`          | Testing strategies         | testing-patterns, tdd-workflow, webapp-testing           |
-| `debugger`               | Root cause analysis        | systematic-debugging                                     |
-| `performance-optimizer`  | Speed, Web Vitals          | performance-profiling                                    |
-| `seo-specialist`         | Ranking, visibility        | seo-fundamentals, geo-fundamentals                       |
-| `documentation-writer`   | Manuals, docs              | documentation-templates                                  |
-| `product-manager`        | Requirements, user stories | plan-writing, brainstorming                              |
-| `product-owner`          | Strategy, backlog, MVP     | plan-writing, brainstorming                              |
-| `qa-automation-engineer` | E2E testing, CI pipelines  | webapp-testing, testing-patterns                         |
-| `code-archaeologist`     | Legacy code, refactoring   | clean-code, code-review-checklist                        |
-| `explorer-agent`         | Codebase analysis          | -                                                        |
+III. ## 🤖 Agents (20)
 
 ---
 
-## 🧩 Skills (36)
+Specialist AI personas for different domains, now stratified into the sovereign substrate. Actual Path:
+`.agent/substrate/agents/`
+
+| Agent                    | Focus                           | Skills Used                                              |
+| ------------------------ | ------------------------------- | -------------------------------------------------------- |
+| `orchestrator`           | Multi-agent coordination        | parallel-agents, behavioral-modes                        |
+| `project-planner`        | Discovery, task planning        | brainstorming, plan-writing, architecture                |
+| `frontend-specialist`    | Web UI/UX                       | frontend-design, react-best-practices, tailwind-patterns |
+| `backend-specialist`     | API, business logic             | api-patterns, nodejs-best-practices, database-design     |
+| `database-architect`     | Schema, SQL                     | database-design, prisma-expert                           |
+| `mobile-developer`       | iOS, Android, RN                | mobile-design                                            |
+| `game-developer`         | Game logic, mechanics           | game-development                                         |
+| `devops-engineer`        | CI/CD, Docker                   | deployment-procedures, docker-expert                     |
+| `security-auditor`       | Security compliance             | vulnerability-scanner, red-team-tactics                  |
+| `penetration-tester`     | Offensive security              | red-team-tactics                                         |
+| `test-engineer`          | Testing strategies              | testing-patterns, tdd-workflow, webapp-testing           |
+| `debugger`               | Root cause analysis             | systematic-debugging                                     |
+| `performance-optimizer`  | Speed, Web Vitals               | performance-profiling                                    |
+| `seo-specialist`         | Ranking, visibility             | seo-fundamentals, geo-fundamentals                       |
+| `documentation-writer`   | Manuals, docs                   | documentation-templates                                  |
+| `product-manager`        | Requirements, user stories      | plan-writing, brainstorming                              |
+| `product-owner`          | Strategy, backlog, MVP          | plan-writing, brainstorming                              |
+| `qa-automation-engineer` | E2E testing, CI pipelines       | webapp-testing, testing-patterns                         |
+| `CODE-archaeologist`     | Archeological CODE, refactoring | clean-CODE, CODE-review-checklist                        |
+| `explorer-agent`         | Codebase analysis               | -                                                        |
+
+---
+
+IV. ## 🧩 Skills (36)
+
+---
 
 Modular knowledge domains that agents can load on-demand. based on task context.
 
-### Frontend & UI
+## Frontend & UI
+
+---
 
 | Skill                   | Description                                                           |
 | ----------------------- | --------------------------------------------------------------------- |
@@ -81,6 +93,8 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 
 ### Backend & API
 
+---
+
 | Skill                   | Description                    |
 | ----------------------- | ------------------------------ |
 | `api-patterns`          | REST, GraphQL, tRPC            |
@@ -90,6 +104,8 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 
 ### Database
 
+---
+
 | Skill             | Description                 |
 | ----------------- | --------------------------- |
 | `database-design` | Schema design, optimization |
@@ -97,11 +113,15 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 
 ### TypeScript/JavaScript
 
+---
+
 | Skill               | Description                         |
 | ------------------- | ----------------------------------- |
 | `typescript-expert` | Type-level programming, performance |
 
 ### Cloud & Infrastructure
+
+---
 
 | Skill                   | Description               |
 | ----------------------- | ------------------------- |
@@ -111,15 +131,19 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 
 ### Testing & Quality
 
+---
+
 | Skill                   | Description              |
 | ----------------------- | ------------------------ |
 | `testing-patterns`      | Jest, Vitest, strategies |
 | `webapp-testing`        | E2E, Playwright          |
-| `tdd-workflow`          | Test-driven development  |
-| `code-review-checklist` | Code review standards    |
+| `tdd-workflow`          | TEST-driven development  |
+| `code-review-checklist` | CODE review standards    |
 | `lint-and-validate`     | Linting, validation      |
 
 ### Security
+
+---
 
 | Skill                   | Description              |
 | ----------------------- | ------------------------ |
@@ -127,6 +151,8 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `red-team-tactics`      | Offensive security       |
 
 ### Architecture & Planning
+
+---
 
 | Skill           | Description                |
 | --------------- | -------------------------- |
@@ -137,11 +163,15 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 
 ### Mobile
 
+---
+
 | Skill           | Description           |
 | --------------- | --------------------- |
 | `mobile-design` | Mobile UI/UX patterns |
 
 ### Game Development
+
+---
 
 | Skill              | Description           |
 | ------------------ | --------------------- |
@@ -149,12 +179,16 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 
 ### SEO & Growth
 
+---
+
 | Skill              | Description                   |
 | ------------------ | ----------------------------- |
-| `seo-fundamentals` | SEO, E-E-A-T, Core Web Vitals |
+| `seo-fundamentals` | SEO, E-E-A-T, CORE Web Vitals |
 | `geo-fundamentals` | GenAI optimization            |
 
 ### Shell/CLI
+
+---
 
 | Skill                | Description               |
 | -------------------- | ------------------------- |
@@ -163,13 +197,15 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 
 ### Other
 
+---
+
 | Skill                     | Description               |
 | ------------------------- | ------------------------- |
 | `clean-code`              | Coding standards (Global) |
 | `behavioral-modes`        | Agent personas            |
 | `parallel-agents`         | Multi-agent patterns      |
 | `mcp-builder`             | Model Context Protocol    |
-| `documentation-templates` | Doc formats               |
+| `documentation-templates` | DOC formats               |
 | `i18n-localization`       | Internationalization      |
 | `performance-profiling`   | Web Vitals, optimization  |
 | `systematic-debugging`    | Troubleshooting           |
@@ -177,6 +213,8 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 ---
 
 ## 🔄 Workflows (11)
+
+---
 
 Slash command procedures. Invoke with `/command`.
 
@@ -186,7 +224,7 @@ Slash command procedures. Invoke with `/command`.
 | `/create`        | Create new features      |
 | `/debug`         | Debug issues             |
 | `/deploy`        | Deploy application       |
-| `/enhance`       | Improve existing code    |
+| `/enhance`       | Improve existing CODE    |
 | `/orchestrate`   | Multi-agent coordination |
 | `/plan`          | Task breakdown           |
 | `/preview`       | Preview changes          |
@@ -198,29 +236,38 @@ Slash command procedures. Invoke with `/command`.
 
 ## 📜 Sovereign Standards
 
+---
+
 Critical files governing the behavior and formatting of the Agent Kit.
 
 | File              | Role                   | Description                                         |
 | :---------------- | :--------------------- | :-------------------------------------------------- |
 | `style_guide.md`  | **Supreme Law**        | Coding standards, Hephaestus Cycle, and AES metrics |
 | `README.md`       | **General Overview**   | High-level instructions and onboarding              |
-| `mcp_config.json` | **Tool Configuration** | MCP server and tool capability definitions          |
+| `mcp_config.json` | **TOOL Configuration** | MCP server and TOOL capability definitions          |
 
 ---
 
 ## 🏗️ The Overplane Fusion (Substrate Layer)
 
-The `substrate/` directory is the **Overplane Fusion** layer, where the kinetic MIND is anchored to the system's INFRASTRUCTURE.
+---
+
+The `substrate/` directory is the **Overplane Fusion** layer, where the kinetic MIND is anchored to the system's
+INFRASTRUCTURE.
 
 ### Identity & Cognitive State (`substrate/identity/`)
 
+---
+
 | Artifact    | Role                 | Description                                                    |
 | :---------- | :------------------- | :------------------------------------------------------------- |
-| `SOUL.md`   | **Core Persona**     | Defines the agent's intent, voice, and Sovereign values.       |
+| `SOUL.md`   | **CORE Persona**     | Defines the agent's intent, voice, and Sovereign values.       |
 | `MEMORY.md` | **Cognitive Recall** | Governs how the agent perceives and retrieves session context. |
 | `USER.md`   | **Human Mirror**     | Protocols for user-alignment and radical transparency.         |
 
 ### Infrastructure & Synergy (`substrate/infra//`)
+
+---
 
 | Sub-Domain  | Purpose                                                  |
 | :---------- | :------------------------------------------------------- |
@@ -229,6 +276,8 @@ The `substrate/` directory is the **Overplane Fusion** layer, where the kinetic 
 ---
 
 ## 🎯 Skill Loading Protocol
+
+---
 
 ```plaintext
 User Request → Skill Description Match → Load SKILL.md
@@ -240,6 +289,8 @@ User Request → Skill Description Match → Load SKILL.md
 
 ### Skill Structure
 
+---
+
 ```plaintext
 skill-name/
 ├── SKILL.md           # (Required) Metadata & instructions
@@ -250,6 +301,8 @@ skill-name/
 
 ### Enhanced Skills (with scripts/references)
 
+---
+
 | Skill           | Files | Coverage                         |
 | --------------- | ----- | -------------------------------- |
 | `ui-ux-pro-max` | 27    | 50 styles, 21 palettes, 50 fonts |
@@ -259,14 +312,17 @@ skill-name/
 
 ## � Scripts (2)
 
-Master validation scripts that orchestrate skill-level operations.
-Actual Path: `.agent/substrate/bin/`
+---
+
+Master validation scripts that orchestrate skill-level operations. Actual Path: `.agent/substrate/bin/`
 
 ### Master Scripts
 
+---
+
 | Script                  | Purpose                                 | When to Use              |
 | :---------------------- | :-------------------------------------- | :----------------------- |
-| `checklist.py`          | Priority-based validation (Core checks) | Development, pre-commit  |
+| `checklist.py`          | Priority-based validation (CORE checks) | Development, pre-commit  |
 | `verify_all.py`         | Comprehensive verification (All checks) | Pre-deployment, releases |
 | `session_manager.py`    | Persistent context & memory tracking    | Session start/handover   |
 | `auto_preview.py`       | Real-time UI/State visualization        | Design cycles            |
@@ -276,6 +332,8 @@ Actual Path: `.agent/substrate/bin/`
 | `GVRN.Loom.Registry.py` | Master Registry Sync Engine             | Global Canonization      |
 
 ### Usage
+
+---
 
 ```bash
 # Quick validation during development
@@ -287,19 +345,21 @@ python .agent/substrate/bin/verify_all.py . --url http://localhost:3000
 
 ### What They Check
 
-**checklist.py** (Core checks):
+---
+
+**checklist.py** (CORE checks):
 
 - Security (vulnerabilities, secrets)
-- Code Quality (lint, types)
+- CODE Quality (lint, types)
 - Schema Validation
-- Test Suite
+- TEST Suite
 - UX Audit
 - SEO Check
 
 **verify_all.py** (Full suite):
 
 - Everything in checklist.py PLUS:
-- Lighthouse (Core Web Vitals)
+- Lighthouse (CORE Web Vitals)
 - Playwright E2E
 - Bundle Analysis
 - Mobile Audit
@@ -311,15 +371,16 @@ For details, see [scripts/README.md](scripts/README.md)
 
 ## 📊 Statistics
 
-| **Total Agents** | 20 (Substrate-stratified) |
-| **Total Skills** | 36 (Modular) |
-| **Total Workflows** | 11 (Slash commands) |
-| **Total Binaries** | 8 (Master substrate scripts) |
-| **Coverage** | ~90% web/mobile development |
+---
+
+| **Total Agents** | 20 (Substrate-stratified) | | **Total Skills** | 36 (Modular) | | **Total Workflows** | 11 (Slash
+commands) | | **Total Binaries** | 8 (Master substrate scripts) | | **Coverage** | ~90% web/mobile development |
 
 ---
 
 ## 🔗 Quick Reference
+
+---
 
 | Need     | Agent                 | Skills                                |
 | -------- | --------------------- | ------------------------------------- |

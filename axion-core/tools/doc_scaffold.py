@@ -1,5 +1,17 @@
 """
-# Universal Identification & Provenance (UIP)
+artifact_anchor:
+  id: INFR.DOC_SCAFFOLD.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# Universal Identification & Provenance (UIP)
 | Field                  | Value                                          |
 | :--------------------- | :--------------------------------------------- |
 | **1. Artifact ID**     | `TOOL-EMPR-006`                                |
@@ -14,7 +26,7 @@
 | **10. Ethos**          | **The Seed of Creation**                       |
 | **11. Catalyst**       | **System Ascension v13.0**                     |
 | **12. Relations**      | `GENERATES: ALL_ARTIFACTS`, `GOVERNED_BY: [CORE-CODEX-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |.
 """
 
 import datetime
@@ -94,7 +106,11 @@ DOMAINS = {
 
 
 def scaffold(
-    artifact_id: str, name: str, domain: str, tier: str = "Operational", celestial_class: str = "PLANET"
+    artifact_id: str,
+    name: str,
+    domain: str,
+    tier: str = "Operational",
+    celestial_class: str = "PLANET",
 ) -> None:
     """Generates a v13.0-compliant markdown artifact."""
     if domain not in DOMAINS:

@@ -21,7 +21,7 @@ class TestNLPEngine(unittest.TestCase):
         """Test that 'Omega' intent boosts efficiency."""
         text = "This is an OMEGA level catalyst for the Synarche."
         efficiency = self.cognition.get_magician_efficiency(text)
-        self.assertGreaterEqual(efficiency, 1.8) # 1.0 + 0.5 (omega) + 0.3 (catalyst)
+        self.assertGreaterEqual(efficiency, 1.8)  # 1.0 + 0.5 (omega) + 0.3 (catalyst)
 
     def test_magician_efficiency_ambiguous(self):
         """Test that short questions penalize efficiency."""
@@ -34,7 +34,10 @@ class TestNLPEngine(unittest.TestCase):
         text = "Manifest the solution."
         result = self.cognition.process(text)
         self.assertIn("magician_efficiency", result)
-        self.assertEqual(result["magician_efficiency"], 1.4) # 1.0 + 0.2 (manifest) + 0.2 (solve)
+        self.assertEqual(
+            result["magician_efficiency"], 1.4
+        )  # 1.0 + 0.2 (manifest) + 0.2 (solve)
+
 
 if __name__ == "__main__":
     unittest.main()

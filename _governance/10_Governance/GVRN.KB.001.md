@@ -1,4 +1,5 @@
 # AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.KB.001` | The Sovereign ID. |
-| **Official Name** | `AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                     | Description       |
+| :------------------ | :-------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.KB.001`                                             | The Sovereign ID. |
+| **Official Name**   | `AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `GVRN.KB.001` |
-| **Official Name** | `Autonomous Knowledge Base Optimization` |
-| **Version** | `v11.1` |
-| **Domain** | `OPT` |
-| **Evolution** | `Adaptive Ecosystem` |
-| **Signal (KB)** | `OMEGA` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Operational` |
-| **Celestial Class** | `MOON` |
-| **Governance** | `UMB-SGM-001`, `UMB-ESF-001` |
-| **Upstream** | `UMB-CSE-001`, `UMB-LOOM-001` |
-| **Downstream** | `PUPT-001`, `GUCA-OMNI-001` |
-| **Integrity Hash** | `sha256:7f8cf243210123456789abcdef0123456789abcdef0123456789abcdef0123456` |
-| **Provenance** | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24` |
-| **Relations** | `OPTIMIZES: UMB-LOOM-001`, `RESOLVES: Knowledge Entropy` |
-| **Tags** | `v11.1, Optimization, Curation, Self-Healing` |
+| Attribute           | Value                                                                      |
+| :------------------ | :------------------------------------------------------------------------- |
+| **Artifact ID**     | `GVRN.KB.001`                                                              |
+| **Official Name**   | `Autonomous Knowledge Base Optimization`                                   |
+| **Version**         | `v11.1`                                                                    |
+| **Domain**          | `OPT`                                                                      |
+| **Evolution**       | `Adaptive Ecosystem`                                                       |
+| **Signal (KB)**     | `OMEGA`                                                                    |
+| **Status (State)**  | `CANONIZED`                                                                |
+| **Tier**            | `Operational`                                                              |
+| **Celestial Class** | `MOON`                                                                     |
+| **Governance**      | `UMB-SGM-001`, `UMB-ESF-001`                                               |
+| **Upstream**        | `UMB-CSE-001`, `UMB-LOOM-001`                                              |
+| **Downstream**      | `PUPT-001`, `GUCA-OMNI-001`                                                |
+| **Integrity Hash**  | `sha256:7f8cf243210123456789abcdef0123456789abcdef0123456789abcdef0123456` |
+| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                        |
+| **Relations**       | `OPTIMIZES: UMB-LOOM-001`, `RESOLVES: Knowledge Entropy`                   |
+| **Tags**            | `v11.1, Optimization, Curation, Self-Healing`                              |
 
 ---
 

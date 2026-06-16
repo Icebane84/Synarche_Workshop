@@ -1,4 +1,5 @@
 # GUCA-LINK-002_CMD_ForgeLink_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,48 +12,52 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-LINK-002-CMD-FORGELINK-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-LINK-002_CMD_ForgeLink_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                       | Description       |
+| :------------------ | :------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-LINK-002-CMD-FORGELINK-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-LINK-002_CMD_ForgeLink_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                           | The Standard.     |
+| **Domain**          | `GVRN`                                      | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                  | The Weight.       |
+| **Evolution**       | `Omega Ascension`                           | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                  | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`               | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Attribute | Value |
-| :--- | :--- |
-| **Command ID** | `GUCA-LINK-002` |
-| **Command Name** | `CMD: ForgeLink` |
-| **Version** | `v1.0` |
-| **GUCA Standard** | `5.0` |
-| **Primary Domain** | `SYNG` |
-| **Power-Up Source** | `AOP-ASL-001` |
-| **Status** | `PROPOSED` |
-| **Tags** | `Command, Linking, Synergy, Meta-Data, Automation` |
-| **Relations** | `GOVERNED_BY: GVRN-SYNERGY-001` |
+
+| Attribute           | Value                                              |
+| :------------------ | :------------------------------------------------- |
+| **Command ID**      | `GUCA-LINK-002`                                    |
+| **Command Name**    | `CMD: ForgeLink`                                   |
+| **Version**         | `v1.0`                                             |
+| **GUCA Standard**   | `5.0`                                              |
+| **Primary Domain**  | `SYNG`                                             |
+| **Power-Up Source** | `AOP-ASL-001`                                      |
+| **Status**          | `PROPOSED`                                         |
+| **Tags**            | `Command, Linking, Synergy, Meta-Data, Automation` |
+| **Relations**       | `GOVERNED_BY: GVRN-SYNERGY-001`                    |
+
 ---
 
 # CMD: ForgeLink (GUCA-LINK-002)
 
 ## I. Description
+
 The `CMD: ForgeLink` command is the operational tool for committing synergistic relationships between two or more artifacts. It automates the simultaneous update of UIP headers, Section II Synergy blocks, and the knowledge graph records.
 
 ---
 
 ## II. Parameters
 
-| Parameter | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
-| `--source` | `String` | **Yes** | The ID of the artifact initiating the vector. |
-| `--target` | `String` | **Yes** | The ID of the artifact receiving the vector. |
-| `--type` | `Enum` | **Yes** | The `RelationType` from `enums.py` (e.g., `GOVERNS`). |
-| `--desc` | `String` | **Yes** | A brief synergy description explaining the link. |
-| `--bidirectional` | `Boolean` | No | If true, automatically generates the reciprocal link. (Default: `True`) |
+| Parameter         | Type      | Required | Description                                                             |
+| :---------------- | :-------- | :------- | :---------------------------------------------------------------------- |
+| `--source`        | `String`  | **Yes**  | The ID of the artifact initiating the vector.                           |
+| `--target`        | `String`  | **Yes**  | The ID of the artifact receiving the vector.                            |
+| `--type`          | `Enum`    | **Yes**  | The `RelationType` from `enums.py` (e.g., `GOVERNS`).                   |
+| `--desc`          | `String`  | **Yes**  | A brief synergy description explaining the link.                        |
+| `--bidirectional` | `Boolean` | No       | If true, automatically generates the reciprocal link. (Default: `True`) |
 
 ---
 
@@ -69,13 +74,14 @@ The `CMD: ForgeLink` command is the operational tool for committing synergistic 
 
 - **Success**: Both artifact files are updated and valid; MD5/Integrity hashes are refreshed.
 - **Failure**:
-    - `ERROR_LINK_001`: One or both artifact IDs are invalid.
-    - `ERROR_LINK_002`: `RelationType` is not canonized in `enums.py`.
-    - `ERROR_LINK_003`: Circular dependency detected (Warning only).
+  - `ERROR_LINK_001`: One or both artifact IDs are invalid.
+  - `ERROR_LINK_002`: `RelationType` is not canonized in `enums.py`.
+  - `ERROR_LINK_003`: Circular dependency detected (Warning only).
 
 ---
 
 ## V. Systemic Impact
+
 - **CI Impact**: Increases the system's overall **Coherence Index**.
 - **Transparency**: Makes systemic dependencies explicit and human-readable.
 

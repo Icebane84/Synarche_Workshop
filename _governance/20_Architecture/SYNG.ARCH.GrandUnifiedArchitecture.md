@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.ARCH.GRANDUNIFIEDARCHITECTURE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                   | Description       |
@@ -111,6 +121,4 @@ Execution is constrained by the `security.yaml` policy, which:
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

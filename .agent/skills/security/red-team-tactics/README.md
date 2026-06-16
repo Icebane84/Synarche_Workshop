@@ -13,7 +13,7 @@
 
 # Red Team Tactics Shard (.agent/skills/security/red-team-tactics)
 
-Offensive security protocols, breach simulation, and adversarial verification of the Synarchy's hardening layers.
+Offensive security protocols, breach simulation, and adversarial verification of the Synarche's hardening layers.
 
 ## 🛠️ Performance Metrics
 

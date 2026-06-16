@@ -2,9 +2,7 @@ import sys
 
 
 def say_hello(name="World"):
-    """
-    Returns a standardized greeting.
-    """
+    """Returns a standardized greeting."""
     print(f"Systems Online. Hello, {name}. The Forge is Hot.")
 
 

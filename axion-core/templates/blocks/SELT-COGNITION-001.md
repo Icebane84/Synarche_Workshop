@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-COGNITION-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **Cognitive Block (SELT-COGNITION-001)**
 
 > **Domain**: ARCH.COG | **Ethos**: "The artifact is aware of its intent."

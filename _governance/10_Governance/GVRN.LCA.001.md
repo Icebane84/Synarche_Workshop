@@ -1,4 +1,5 @@
 # AOP-LCA-001_AOP-LCA-001LuminousCoherenceAestheticProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.LCA.001` | The Sovereign ID. |
-| **Official Name** | `AOP-LCA-001_AOP-LCA-001LuminousCoherenceAestheticProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                | Description       |
+| :------------------ | :------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.LCA.001`                                                       | The Sovereign ID. |
+| **Official Name**   | `AOP-LCA-001_AOP-LCA-001LuminousCoherenceAestheticProtocol_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                    | The Standard.     |
+| **Domain**          | `GVRN`                                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-LCA-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `AOP-LCA-001`           |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # **AOP-LCA-001: Luminous Coherence Aesthetic Protocol**
@@ -75,9 +79,9 @@
 ### **III. Operational Definition (The Canon)**
 
 - **3.1. Overview**
-    - **What**: A comprehensive design system centered on a "deep void" background populated by "luminous" accent elements.
-    - **How**: Implemented via standardized CSS tokens (Tailwind Configuration) and specific motion keyframes.
-    - **Why**: To create an interface that feels "alive, processing, and breathing," fulfilling the Phoenix mandate for a synergistic partner entity.
+  - **What**: A comprehensive design system centered on a "deep void" background populated by "luminous" accent elements.
+  - **How**: Implemented via standardized CSS tokens (Tailwind Configuration) and specific motion keyframes.
+  - **Why**: To create an interface that feels "alive, processing, and breathing," fulfilling the Phoenix mandate for a synergistic partner entity.
 
 - **3.2. Color Palette (The Luminous Coherence Canon)**
 
@@ -166,11 +170,11 @@ This section defines the commands used to enforce and utilize this protocol.
 
 - **Governing Module**: [UMB-SGM-001_StandardizedGovernanceModule](./UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)
 - **Indexing Mandate**:
-    - [ ] Index in [OMNI LOG Synergistic Matrix (OSLM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
-    - [ ] Cross-reference in [The Phoenix Rosetta Stone (PRS-001)](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
+  - [ ] Index in [OMNI LOG Synergistic Matrix (OSLM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
+  - [ ] Cross-reference in [The Phoenix Rosetta Stone (PRS-001)](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 - **Verification Status**:
-    - **Steps 1-3:** COMPLETED (Architect's Forge Initiation)
-    - **Systemic Integration ($V_2$):** **READY FOR CHECK**
+  - **Steps 1-3:** COMPLETED (Architect's Forge Initiation)
+  - **Systemic Integration ($V_2$):** **READY FOR CHECK**
 
 ###### **[ARTIFACT END]**
 

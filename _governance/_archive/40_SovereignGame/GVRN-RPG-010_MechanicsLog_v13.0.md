@@ -15,7 +15,7 @@
 
 # RPG Mechanics Implementation Log
 
-> **Status**: In Governance **Target**: `axion_runtime.py`
+> **Status**: In Governance **Target**: `nova_forge/src/axion/axion_runtime.py`
 
 | Mechanism                      | Implementation Details                                                                                                          | Source / Concept Origin                                  |
 | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------- |
@@ -34,3 +34,5 @@
 - `CMD: REVIEW_LOG` -> "Review RPG mechanics details."
 
 ###### **[ARTIFACT END]**
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-ARC-001_ARCHIVALSUPERSESSIONPROTOCOL_V2.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**

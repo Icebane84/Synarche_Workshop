@@ -1,49 +1,62 @@
 """
-## **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.nlp.engine`                | The Sovereign ID. |
-| **Official Name** | `nlp_engine.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
----
-
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-
-## **[ARTIFACT END]**
+artifact_anchor:
+  id: CORE.NLP_ENGINE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
 """
 
+# cspell:ignore lemmatize lemmatization ents
+
+# ## **[ARTIFACT START]**.
+#
+# ## **Block A: The Identification Lock (UIP-V15)**
+#
+# | Key               | Value                             | Description       |
+# | :---------------- | :-------------------------------- | :---------------- |
+# | **Artifact ID**   | `CORE.nlp.engine`                | The Sovereign ID. |
+# | **Official Name** | `nlp_engine.py`                   | The Filename.     |
+# | **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+# | **Domain**        | `CORE`                     | The Subject.      |
+# | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+# | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+#
+# # ---
+#
+# ## **Block B: State Vector (AGP-001)**
+#
+# # | State Field   | Value     |
+# # | :------------ | :-------- |
+# # | **Coherence** | {resonance}     |
+# # | **Resonance** | {resonance}     |
+# # | **Stability** | Stable  |
+#
+# # ---
+#
+# ### **Block C: Risk & Mitigation (AGP-002)**
+#
+# # | Risk                 | Mitigation                |
+# # | :------------------- | :------------------------ |
+# # | **Logic Drift**      | Strict Linter Enforcement |
+# # | **Semantic Decay**   | Axiomatic Compass Audit   |
+#
+# # ---
+#
+# ### **Block D: Standardized Synergy Block (The Loom Signature)**
+#
+# # | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# # | :---------------------- | :---------------- | :---------------------------------------------- |
+# # | CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
+#
+# ## **[ARTIFACT END]**
+
 import logging
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 
 if TYPE_CHECKING:
     import spacy
@@ -62,14 +75,13 @@ try:
     from sentence_transformers import SentenceTransformer
 
     TRANSFORMERS_AVAILABLE = True
-except ImportError:
+except Exception:
     TRANSFORMERS_AVAILABLE = False
 
 # Configure logging
 log = logging.getLogger(__name__)
 
-# --- EMOTION LEXICON ---
-INITIAL_EMOTION_LEXICON = {
+INITIAL_EMOTION_LEXICON: Dict[str, Dict[str, List[str]]] = {
     "keyword": {
         "happy": ["joy", "contentment"],
         "glad": ["joy"],
@@ -91,69 +103,74 @@ INITIAL_EMOTION_LEXICON = {
         "hope": ["hope", "anticipation"],
         "lost": ["sadness", "confusion", "fear"],
         "fail": ["disappointment", "frustration", "sadness"],
-        # WLF Specific examples
-        "shadow self": ["anxiety", "fear", "dread"],
-        "oathbringer": ["unease", "power", "fear"],
-        "inner flame": ["hope", "resilience", "determination"],
-        "valerius": ["suspicion", "unease", "respect"],
-        "serafina": ["compassion", "trust", "hope"],
-        "garrett": ["loyalty", "pragmatism", "concern"],
-    },
-    "concept": {
-        "family": ["love", "belonging", "stress"],
-        "betrayal": ["anger", "sadness", "pain"],
-        "resilience": ["hope", "determination", "strength"],
-    },
-    "contextual": {
-        "dark forest": ["fear", "mystery", "unease"],
-        "battle": ["fear", "anger", "excitement", "determination"],
-    },
+    }
 }
 
 
 class NLPProcessor:
-    """Handles core NLP tasks like tokenization and entity extraction."""
+    """Core NLP processing unit using SpaCy for tokenization, lemmatization, and entity extraction.
+    Provides fallbacks if SpaCy is unavailable.
+    """
 
     def __init__(self, spacy_model_name: str = "en_core_web_sm") -> None:
-        self.model_name = spacy_model_name
-        self.nlp: spacy.language.Language | None = None
+        """Initializes the NLPProcessor.
+
+        Args:
+            spacy_model_name: The name of the SpaCy model to load.
+
+        """
+        self.nlp = None
         if SPACY_AVAILABLE:
-            self._load_spacy_model(self.model_name)
-        else:
-            log.warning("spaCy not installed. NLP functionality will be limited.")
-
-    def _load_spacy_model(self, model_name: str) -> bool:
-        """Attempt to load or download the SpaCy model."""
-        try:
-            self.nlp = spacy.load(model_name)
-        except OSError:
-            log.warning(f"spaCy model {model_name} not found. Attempting download...")
             try:
-                spacy_download(model_name)
-                self.nlp = spacy.load(model_name)
-                return True
-            except Exception:
-                log.exception("Failed to load SpaCy model")
-                return False
-        else:
-            return True
+                self.nlp = spacy.load(spacy_model_name)
+            except OSError:
+                try:
+                    log.info(f"Downloading SpaCy model: {spacy_model_name}")
+                    spacy_download(spacy_model_name)
+                    self.nlp = spacy.load(spacy_model_name)
+                except Exception:
+                    log.exception(f"Failed to load SpaCy model: {spacy_model_name}")
 
-    def tokenize(self, text: str) -> list[str]:
-        """Convert input text into a list of atomic tokens."""
+    def tokenize(self, text: str) -> List[str]:
+        """Splits text into individual tokens.
+
+        Args:
+            text: The string to tokenize.
+
+        Returns:
+            A list of tokens.
+
+        """
         if not self.nlp:
             return text.split()
         doc = self.nlp(text)
         return [token.text for token in doc]
 
-    def lemmatize(self, text: str) -> list[str]:
-        """Reduce words to their canonical base form (lemmas)."""
+    def lemmatize(self, text: str) -> List[str]:
+        """Reduces words to their base or dictionary form (lemma).
+
+        Args:
+            text: The string to lemmatize.
+
+        Returns:
+            A list of lemmas.
+
+        """
         if not self.nlp:
             return text.lower().split()
         doc = self.nlp(text)
         return [token.lemma_ for token in doc if token.lemma_.strip()]
 
-    def extract_entities(self, text: str) -> list[tuple[str, str]]:
-        """Extract named entities (People, Places, Orgs) from the text substrate."""
+    def extract_entities(self, text: str) -> List[Tuple[str, str]]:
+        """Identifies and categorizes named entities within the text.
+
+        Args:
+            text: The string to analyze.
+
+        Returns:
+            A list of (entity_text, entity_label) tuples.
+
+        """
         if not self.nlp:
             return []
         doc = self.nlp(text)
@@ -161,60 +178,88 @@ class NLPProcessor:
 
 
 class EmotionAnalyzer:
-    """Analyzes text for emotional resonance."""
+    """Detects emotional markers and intensity within text using a lexicon-based approach."""
 
-    def __init__(self, lexicon: dict | None = None) -> None:
+    def __init__(
+        self, lexicon: Optional[Dict[str, Dict[str, List[str]]]] = None
+    ) -> None:
+        """Initializes the EmotionAnalyzer.
+
+        Args:
+            lexicon: Optional custom lexicon mapping.
+
+        """
         self.lexicons = lexicon or INITIAL_EMOTION_LEXICON
 
-    def detect_emotions(self, text: str) -> dict[str, float]:
-        """Analyze text for emotional triggers and resonance intensities."""
-        detected_emotions: dict[str, float] = {}
+    def detect_emotions(self, text: str) -> Dict[str, float]:
+        """Analyzes the input text for emotional triggers defined in the lexicon.
+
+        Args:
+            text: The input string.
+
+        Returns:
+            A dictionary mapping emotion names to detected intensity scores.
+
+        """
+        detected_emotions: Dict[str, float] = {}
         if not text:
             return detected_emotions
-
         normalized_text = text.lower()
         keyword_triggers = self.lexicons.get("keyword", {})
-
         for keyword, associated_emotions in keyword_triggers.items():
             if keyword in normalized_text:
                 for emotion in associated_emotions:
                     if emotion not in detected_emotions:
                         detected_emotions[emotion] = 0.5
+                    else:
+                        detected_emotions[emotion] = min(
+                            1.0, detected_emotions[emotion] + 0.1
+                        )
         return detected_emotions
 
 
 class AxionCognition:
-    """Core NLP engine for Axion, handling embeddings, NER, and sentiment."""
-
-    LONG_TEXT_THRESHOLD = 20
+    """Master cognitive interface that aggregates NLP, emotion, and semantic processing."""
 
     def __init__(self, model_name: str = "all-MiniLM-L6-v2") -> None:
+        """Initializes the AxionCognition system.
+
+        Args:
+            model_name: The name of the sentence-transformers model for embeddings.
+
+        """
         self.nlp = NLPProcessor()
         self.emotions = EmotionAnalyzer()
-        self.embeddings: SentenceTransformer | None = None
+        self.embeddings = None
         if TRANSFORMERS_AVAILABLE:
             try:
                 self.embeddings = SentenceTransformer(model_name)
             except Exception:
-                log.exception("Failed to load sentence-transformers")
+                log.exception(
+                    f"Failed to load sentence-transformers model: {model_name}"
+                )
 
-    def process(self, text: str) -> dict[str, Any]:
-        """Full cognitive processing of input text."""
+    def process(self, text: str) -> Dict[str, Any]:
+        """Performs a full cognitive scan of the provided text.
+
+        Args:
+            text: The string to process.
+
+        Returns:
+            A dictionary containing tokens, lemmas, entities, emotions, vectors, and efficiency scores.
+
+        """
         tokens = self.nlp.tokenize(text)
         lemmas = self.nlp.lemmatize(text)
         entities = self.nlp.extract_entities(text)
         emotions = self.emotions.detect_emotions(text)
-
         vector = None
         if self.embeddings:
             try:
                 vector = self.embeddings.encode(text).tolist()
             except Exception:
-                log.exception("Vector search encoding failed")
-
-        # Calculate Magician Efficiency based on Intent/Signal
+                log.exception("Semantic vector encoding failed.")
         efficiency = self.get_magician_efficiency(text)
-
         return {
             "tokens": tokens,
             "lemmas": lemmas,
@@ -225,33 +270,30 @@ class AxionCognition:
         }
 
     def get_magician_efficiency(self, text: str) -> float:
-        """Calculates the 'Magician' efficiency multiplier based on detected intent.
-        High alignment with 'Omega' concepts or clear structure yields higher scores.
+        """Calculates a 'Magician Efficiency' score based on the presence of key OMEGA terms.
+
+        Args:
+            text: The text to evaluate.
+
+        Returns:
+            A float representing the efficiency score.
+
         """
         score = 1.0
         normalized = text.lower()
-        lemmas = set(self.nlp.lemmatize(text))
-
-        # Intent triggers (using lemmas for better coverage, e.g., 'solution' -> 'solve')
         if "omega" in normalized:
             score += 0.5
         if "catalyst" in normalized:
             score += 0.3
-        if "manifest" in normalized or "manifest" in lemmas:
+        if "manifest" in normalized:
             score += 0.2
-        if "solve" in normalized or "solution" in normalized or "solve" in lemmas:
+        if "solution" in normalized or "solve" in normalized:
             score += 0.2
-
-        # Penalty for ambiguity
-        if "?" in text and len(text) < self.LONG_TEXT_THRESHOLD:
+        if len(normalized) < 15 or "?" in normalized:
             score -= 0.2
-
         return round(max(0.1, score), 2)
 
-# ---
-# 
-# ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.nlp.engine VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: b66317b25fa07eaa`
+# ---
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.nlp.engine VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: b66317b25fa07eaa
+# ---

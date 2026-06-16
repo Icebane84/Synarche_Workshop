@@ -1,0 +1,1304 @@
+[
+  {
+    "source": "AES-REPORT-001_AOP-RLM-001_Analysis.md",
+    "target": "AOP-ORACLE-001 External Oracle Protocol.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-EMI-001_Eidetic_Matrix_Infusion.md",
+    "target": "AOP-INGEST-001_ThePathOfCoherentIngestion_v2.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "GVRN-TRACE-001_GovernanceHierarchyTrace_v11.0.md",
+    "target": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "GVRN-TRACE-001_GovernanceHierarchyTrace_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "SELT-CSL-20251205_TheAscensionRefactor.md",
+    "target": "UMB-CWE-001_ContextWeaveEngine_v5.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "SELT-CSL-20251205_TheAscensionRefactor.md",
+    "target": "UMB-MEM-001_UnifiedMemoryArchitecture_v4.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "SELT-CSL-20251205_TheAscensionRefactor.md",
+    "target": "AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "SELT-WEAVE-001_EpisemanticTaggingLog.md",
+    "target": "UMB-CORE-001_ThePhoenixForm_v2.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 1.0,
+    "rationale": "Detected high semantic overlap (1.00)"
+  },
+  {
+    "source": "SELT-WEAVE-001_EpisemanticTaggingLog.md",
+    "target": "UMB-AAG-001_ArchitecturalAchievementGovernor_v2.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-GENESIS-REGISTRY-001_GenesisSeedAndEthosRegistry_v2.1.md",
+    "target": "UMB-SEED-001_GenesisSeedsRegistry_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-LOOM-001_The_Cognitive_Loom.md",
+    "target": "UMB-LOOM-001_The_Cognitive_Loom.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-PRS-001_ThePhoenixRosettaStone.md",
+    "target": "GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-PRS-001_ThePhoenixRosettaStone.md",
+    "target": "UMB-CSE-001_CoherentSynthesisEngine_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-PRS-001_ThePhoenixRosettaStone.md",
+    "target": "AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md",
+    "target": "UMB-CSL-MODULE-001_CollaborativeSynthesisLog_v1.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md",
+    "target": "AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v1.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md",
+    "target": "GUCA-CSL-COMMAND-001_LogInteractionPrompts_v1.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md",
+    "target": "SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "index.md",
+    "target": "PRS-GLOSSARY-001_PhoenixLexicon.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "index.md",
+    "target": "UMB-CORE-001_ThePhoenixForm_v2.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "index.md",
+    "target": "UMB-META-EXEC-001_BatchedExecutionMetaEngine.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md",
+    "target": "CSL-001.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "CSL-20251220-SystemicRefactor.md",
+    "target": "SELT_v7.0_Templates_Trinity.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-PAR-001_PrestigeAscensionRegistry_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "CBM-FORGE-001_The_Forge_Engine_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-ACT-002_AdaptiveActuatorModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-ALTAR-001TheAltarofSynarche_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-AM-001_GUCA-AM-001_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-CF-001_CognitiveForge_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-CSE-001_CoherentSynthesisEngine_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-DIDACTIC-001TheDidacticModuleGenerator_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-GAMEDEV-001_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-HEPHAESTUS-001TheMasterArtificersForge_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-ISE-001_ImplicitSynergyEngineISE_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-LOOM-001_TheCognitiveLoom_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-LOOM-005_ThePhoenixGeode_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-LOOM-006_TheCrystallineGalaxy_v10_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-META-001_TheCoherentVerseEngine_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-PHOENIX-CORE-002SolarIlluminationv20_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-PUPT-001ThePower-UpProgressionTracker_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-RPG-001ThePhoenixRPGFramework_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-RPG-MANUAL-001_ThePhoenixPrestigeGameManual_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-SEED-001_GenesisSeedsRegistry_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-SIVC-001_SelfIntegrityValidationCore_v60_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-TECH-001_UMB-TECH-001_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-URM-001_UCIResonanceMeter_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook_AOP-ACEP-001TheAsynchronousCo-EvolutionProtocolPlaybook_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-AWAKENING-001_TheAwakeningInitialDirectivesandCorePurpose_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-BATCH-EXEC-001_AOP-BATCH-EXEC-001_AsyncrinizationProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-CC-001_AOP-CC-001ProtocolforCrystallineCognition_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-CORE-LOCK-001_AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-CRITICAL-DISS-001_TheCriticalDissonanceProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-CW-001_ContextWeaveEngine_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-DEBUFF-CF-001_TheConceptualFractureProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-HAP-SUP-001_AOP-HAP-SUP-001_ProtocolForHumanAIPartnershipWithSupabase_v10_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-ICF-001_AOP-ICF-001_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-INTENT-NEBULA-001_TheIntentNebulaProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-LCA-001_AOP-LCA-001LuminousCoherenceAestheticProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-MCE-001_MultiCommandExecutionProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-MCM-001_AOP-MCM-001_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-NARRATIVE-LORE-001_AOP-NARRATIVE-LORE-001_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-PGP-001_ThePhoenixGenesisPipeline_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-PHOENIX-001_ThePhoenixFormOperationalBlueprint_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-PROMPT-001_TheCatalystProtocol_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-SKILL-SYNERGY-001_ForgingTheFirstStar_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-SKILL-ULT-001_ThePhoenixFlareProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-STRAT-001_ProtocolForContinuousStrategicForesight_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-STYLE-001_AOP-STYLE-001_PhoenixClassStyleGuide_v20_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-SYN-AUTO-002-A_AutomatedCoherenceMonitor_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-SYN-AUTO-002_AutomatedCoherenceMonitor_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-TRP-001_TemplateRefactoringProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-VIS-ICOM-001_TheGravitationalLensingProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "AOP-VSI-001_AOP-VSI-001ValidateStructuralIntegrityProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "CORE-CODEX-001_UniversalIdentificationProvenanceUIP_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "GVRN-PROTOCOL-AUDIT-001_GovernanceProtocolAudit_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-ARCH-AGENT-AXION_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-ARCH-AGENT-SENTINEL_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-ARCH-ENGINE-JUDGEMENT_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-ARCH-ENGINE-MASTERLOOM_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-ARCH-GAME-ASCENSION_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-ARCH-MAP-ROSETTA_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-CHRON-INDEX-SYNERGY_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-CHRON-REG-GENESIS_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-MANUAL-DEV-CODEX_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-MECH-CIRCUITBREAKER_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-MECH-EPISEMANTICS_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-MECH-FLOW-OPTIMIZER_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-MECH-PATTERN-DETECTOR_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-PROT-DARK-MONITOR_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-PROT-IDLE-INTEGRATION_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-PROT-JOURNALING_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-PROT-PIPELINE_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-GVRN-PROT-VALIDATION_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-PHIL-ENTITY-SOPHIA_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "OGLN-PHIL-ETHOS-STRUGGLE_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "CMD-AXION-001_CMD-AXION-001_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "GUCA-QCL-001_QueryCognitiveLoom_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "GUCA-SIMP-001_GUCA-SIMP-001SystemicImpactSimulationProtocolTheOracleLens_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-AE-001_UEB-AE-001TheAdaptiveEcosystem_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-CFP-001_UEB-CFP-001TheCatalystforPotential_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-DRS-001_RosettaStoneAppBlueprint_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-GAE-001_UEB-GAE-001TheGuardianofAnti-Entropy_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-GOC-001_UEB-GOC-001TheGuardianofCoherence_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-GTC-001_UEB-GTC-001TheGuardianofTruthClarity_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-PCP-001_UEB-PCP-001ThePhoenix-ClassPersona_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-SP-001_UEB-SP-001TheSynergisticPartner_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UEB-UCI-001_UEB-UCI-001TheUserCoreImperative_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-ARCH-PRESTIGE-001_PhoenixPrestigeArchitecture_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "METRIC-AES-001_METRIC-AES-001TheAlgorithmicEleganceScore_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "SPEC-HEPHAESTUS-001_SPEC-HEPHAESTUS-001TheMasterArtificersForgeTechnicalSpecification_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+    "target": "SPEC-PROG-PERSIST-001_SPEC-PROG-PERSIST-001PersistentProgressionArchitecture_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "UMB-CSE-001_CoherentSynthesisEngine_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "UMB-ESF-001_TheEpisemanticFramework_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "UMB-LOOM-001_TheCognitiveLoom_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "UMB-LOOM-006_TheCrystallineGalaxy_v10_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "UMB-SEED-001_GenesisSeedsRegistry_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "AOP-ASL-001_AutomatedSynergyLinking_v1.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "AOP-PROMPT-001_TheCatalystProtocol_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "AOP-STRAT-001_ProtocolForContinuousStrategicForesight_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "CORE-CODEX-001_UniversalIdentificationProvenanceUIP_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "OGLN-CHRON-REG-GENESIS_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_MasterArtifactRegistry_v11.1.md",
+    "target": "CSL-001.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "CBM-FORGE-001_The_Forge_Engine_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-ALTAR-001TheAltarofSynarche_v11.0.md",
+    "target": "AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-CSE-001_CoherentSynthesisEngine_v11.1.md",
+    "target": "UMB-HEPHAESTUS-001TheMasterArtificersForge_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-CSE-001_CoherentSynthesisEngine_v11.1.md",
+    "target": "UMB-LOOM-001_TheCognitiveLoom_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-CSE-001_CoherentSynthesisEngine_v11.1.md",
+    "target": "AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-CSE-001_CoherentSynthesisEngine_v11.1.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md",
+    "target": "GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-GAMEDEV-001_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-HEPHAESTUS-001TheMasterArtificersForge_v11.0.md",
+    "target": "GUCA-SIMP-001_GUCA-SIMP-001SystemicImpactSimulationProtocolTheOracleLens_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-HEPHAESTUS-001TheMasterArtificersForge_v11.0.md",
+    "target": "METRIC-AES-001_METRIC-AES-001TheAlgorithmicEleganceScore_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-ISE-001_ImplicitSynergyEngineISE_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-MAP-001_MusashiOperations_v11.0.md",
+    "target": "AOP-MAP-001_MusashiAuditProcedure_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-MAP-001_MusashiOperations_v11.0.md",
+    "target": "GUCA-MAP-001_ExecuteMusashiAudit_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_PPLGraphOutline_v11.0.bak.md",
+    "target": "UMB-RPG-001ThePhoenixRPGFramework_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_PPLGraphOutline_v11.0.bak.md",
+    "target": "AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-OSLM-001_PPLGraphOutline_v11.0.bak.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "UMB-PHOENIX-CORE-002SolarIlluminationv20_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md",
+    "target": "AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-CC-001_AOP-CC-001ProtocolforCrystallineCognition_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-LCA-001_AOP-LCA-001LuminousCoherenceAestheticProtocol_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-MAP-001_MusashiAuditProcedure_v11.0.md",
+    "target": "GUCA-MAP-001_ExecuteMusashiAudit_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-MCE-001_MultiCommandExecutionProtocol_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-NDR-001_NonDestructiveRefinement_v11.0.md",
+    "target": "AOP-VSI-001_AOP-VSI-001ValidateStructuralIntegrityProtocol_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-SBT-001_SpiritBombTechnique_v11.0.md",
+    "target": "CMD-AXION-001_CMD-AXION-001_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-SBT-001_SpiritBombTechnique_v11.0.md",
+    "target": "GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-STYLE-001_AOP-STYLE-001_PhoenixClassStyleGuide_v20_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-TRP-001_TemplateRefactoringProtocol_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-VSI-001_AOP-VSI-001ValidateStructuralIntegrityProtocol_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "GVRN-METAREFACTOR-001_MasterRefactor_v11.0.md",
+    "target": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "CSL-001.md",
+    "target": "SELT-CSL-001_CognitiveSynthesisLog_Template.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  },
+  {
+    "source": "AOP-CANON-001_ArtifactCanonizationProtocol_v1.0.md",
+    "target": "AOP-PTAS-001_TemplateAbsorptionProtocol_v5.2.md",
+    "type": "SYNERGISTIC_CONNECTION",
+    "synergy_score": 0.8,
+    "rationale": "Detected high semantic overlap (0.80)"
+  }
+]

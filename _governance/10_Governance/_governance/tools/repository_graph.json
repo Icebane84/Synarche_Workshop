@@ -1,0 +1,1285 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-14T02:18:36.257764",
+    "total_nodes": 133,
+    "total_edges": 5,
+    "referential_integrity_issues": 5,
+    "circular_loops": 0
+  },
+  "nodes": [
+    {
+      "id": "CORE.00_INDEX.001",
+      "path": "00_INDEX.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-CORE-LOCK-001_GENESISSEEDL.001",
+      "path": "AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-DSA-001_DOCUMENTATIONSUITE.001",
+      "path": "AOP-DSA-001_DocumentationSuiteArchitectProtocol_v111.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-IDX-001_DUALINDEXINGPROTOC.001",
+      "path": "AOP-IDX-001_DualIndexingProtocol_v13.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-SENTINEL-002_UMBRALSENTINE.001",
+      "path": "AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-SENTINEL-GW-002_AOP-SENTIN.001",
+      "path": "AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-SENTINEL-SCAN-001_THECODES.001",
+      "path": "AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-SKILL-SYNERGY-001_ORBITALR.001",
+      "path": "AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP-SYN-AUTO-002_AUTOMATEDCOHE.001",
+      "path": "AOP-SYN-AUTO-002_AutomatedCoherenceMonitor_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.AOP.REFACTOR.IGNITION.001",
+      "path": "AOP.Refactor.Ignition.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.ARCH_1_.SPINE.MASTER.001",
+      "path": "ARCH (1).Spine.Master.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.ARCH.PHOENIX.FORM.001",
+      "path": "ARCH.Phoenix.Form.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.ARCH.SPINE.MASTER.001",
+      "path": "ARCH.Spine.Master.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.CMD-AXION-001_CMD-AXION-001_V1.001",
+      "path": "CMD-AXION-001_CMD-AXION-001_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.COG.CONTEXT.WEAVE.001",
+      "path": "COG.Context.Weave.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-ACT-002_ADAPTIVEACTUATORC.001",
+      "path": "GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-CRP2-001_CONCEPTUALREPERT.001",
+      "path": "GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-CSL-COMMAND-001_LOGINTERA.001",
+      "path": "GUCA-CSL-COMMAND-001_LogInteractionPrompts_v1.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-CWA-001_CMDCONTEXTWEAVE_V.001",
+      "path": "GUCA-CWA-001_CmdContextWeave_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-DSA-001_DOCUMENTATIONSUIT.001",
+      "path": "GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v11.1.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-MAP-001_EXECUTEMUSASHIAUD.001",
+      "path": "GUCA-MAP-001_ExecuteMusashiAudit_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-PROMPT-SYN-002_GUCA-PROMP.001",
+      "path": "GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-QCL-001_QUERYCOGNITIVELOO.001",
+      "path": "GUCA-QCL-001_QueryCognitiveLoom_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GUCA-SIMP-001_GUCA-SIMP-001SYS.001",
+      "path": "GUCA-SIMP-001_GUCA-SIMP-001SystemicImpactSimulationProtocolTheOracleLens_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN_1_.PROTOCOL.AUDIT.001",
+      "path": "GVRN (1).Protocol.Audit.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN-METAREFACTOR-001_MASTERRE.001",
+      "path": "GVRN-METAREFACTOR-001_MasterRefactor_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.AAR.001.001",
+      "path": "GVRN.AAR.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ACEP.001.001",
+      "path": "GVRN.ACEP.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ACM.001.001",
+      "path": "GVRN.ACM.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ACT.MASTERAUDIT.001",
+      "path": "GVRN.ACT.MasterAudit.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ACT.MASTERREFACTOR.001",
+      "path": "GVRN.ACT.MasterRefactor.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.AG.003.001",
+      "path": "GVRN.AG.003.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.AI.PROTO.001",
+      "path": "GVRN.AI.PROTO.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ARC.001.001",
+      "path": "GVRN.ARC.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ASCENSION.001.001",
+      "path": "GVRN.ASCENSION.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ASL.001.001",
+      "path": "GVRN.ASL.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.AUDIO.CH.001",
+      "path": "GVRN.AUDIO.CH.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.AVATAR.001.001",
+      "path": "GVRN.AVATAR.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.AWAKENING.001.001",
+      "path": "GVRN.AWAKENING.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.AXIOMATIC.LATTICE.001",
+      "path": "GVRN.Axiomatic.Lattice.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.BATCH.EXEC.001",
+      "path": "GVRN.BATCH.EXEC.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.BDM.001.001",
+      "path": "GVRN.BDM.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CC.001.001",
+      "path": "GVRN.CC.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CERBERUS.001.001",
+      "path": "GVRN.CERBERUS.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CON.003.001",
+      "path": "GVRN.CON.003.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CORE.LOCK.001",
+      "path": "GVRN.CORE.LOCK.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CRITICAL.DISS.001",
+      "path": "GVRN.CRITICAL.DISS.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CSL.PLAYBOOK.001",
+      "path": "GVRN.CSL.PLAYBOOK.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CSM.001.001",
+      "path": "GVRN.CSM.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.CATALOG.PROTOCOL.001",
+      "path": "GVRN.Catalog.Protocol.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.DEBUFF.CF.001",
+      "path": "GVRN.DEBUFF.CF.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.DSA.001.001",
+      "path": "GVRN.DSA.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.DTS.001.001",
+      "path": "GVRN.DTS.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.EDD.002.001",
+      "path": "GVRN.EDD.002.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.EMOJI.001.001",
+      "path": "GVRN.EMOJI.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.GVRN.013.001",
+      "path": "GVRN.GVRN.013.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.GVRN.014.001",
+      "path": "GVRN.GVRN.014.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.GOV.MODULE.001",
+      "path": "GVRN.Gov.Module.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.HAP.SUP.001",
+      "path": "GVRN.HAP.SUP.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.HUD.COMMANDCENTER.001",
+      "path": "GVRN.HUD.CommandCenter.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.HUD.MAP.001",
+      "path": "GVRN.HUD.Map.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ICF.001.001",
+      "path": "GVRN.ICF.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ID.STANDARD.V15.001",
+      "path": "GVRN.ID.Standard.v15.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.ID.001",
+      "path": "GVRN.ID.SynthesisInsights.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "CANONIZED",
+      "ethos": "SOVEREIGN_GOVERNANCE_LEDGER"
+    },
+    {
+      "id": "CORE.GVRN.IDX.001.001",
+      "path": "GVRN.IDX.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.INTENT.NEBULA.001",
+      "path": "GVRN.INTENT.NEBULA.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.KB.001.001",
+      "path": "GVRN.KB.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.LCA.001.001",
+      "path": "GVRN.LCA.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.MAP.001.001",
+      "path": "GVRN.MAP.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.MCE.001.001",
+      "path": "GVRN.MCE.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.MCM.001.001",
+      "path": "GVRN.MCM.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.MECH.EPISEMANTICS.001",
+      "path": "GVRN.Mech.Episemantics.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "LORE.GVRN.NARRATIVE.LORE.001",
+      "path": "GVRN.NARRATIVE.LORE.md",
+      "domain": "LORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.ORACLE.001.001",
+      "path": "GVRN.ORACLE.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PGP.001.001",
+      "path": "GVRN.PGP.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PPA.001.001",
+      "path": "GVRN.PPA.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PRESTIGE.CALC.001",
+      "path": "GVRN.PRESTIGE.CALC.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PIPE.IGNITION.001",
+      "path": "GVRN.Pipe.Ignition.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PIPE.OPERATIONAL.001",
+      "path": "GVRN.Pipe.Operational.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PROTOCOL.AUDIT.001",
+      "path": "GVRN.Protocol.Audit.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PROTOCOL.CATALYST.001",
+      "path": "GVRN.Protocol.Catalyst.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PROTOCOL.GENESIS.001",
+      "path": "GVRN.Protocol.Genesis.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PROTOCOL.PERSISTENCE.001",
+      "path": "GVRN.Protocol.Persistence.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PROTOCOL.PRESENTATION.001",
+      "path": "GVRN.Protocol.Presentation.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PROTOCOL.REFINEMENT.001",
+      "path": "GVRN.Protocol.Refinement.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PROTOCOL.SCAFFOLDING.001",
+      "path": "GVRN.Protocol.Scaffolding.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.PROTOCOL.VALIDATION.001",
+      "path": "GVRN.Protocol.Validation.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.REFACTOR.PROTOCOL.001",
+      "path": "GVRN.Refactor.Protocol.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.REGISTRY.001",
+      "path": "GVRN.Registry.Origins.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "CANONIZED",
+      "ethos": "SOVEREIGN_GOVERNANCE_LEDGER"
+    },
+    {
+      "id": "CORE.GVRN.SAP.001.001",
+      "path": "GVRN.SAP.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SBT.001.001",
+      "path": "GVRN.SBT.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SEE.001.001",
+      "path": "GVRN.SEE.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SKILL.ULT.001",
+      "path": "GVRN.SKILL.ULT.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SOUL.PHOENIXPRIME.001",
+      "path": "GVRN.SOUL.PhoenixPrime.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.STD.ANTIGRAVITYARCHITECTU.001",
+      "path": "GVRN.STD.AntigravityArchitecture.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.STRAT.001.001",
+      "path": "GVRN.STRAT.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SYN.AUTO.001",
+      "path": "GVRN.SYN.AUTO.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SENTINEL.SCAN.001",
+      "path": "GVRN.Sentinel.Scan.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.SENTINEL.UMBRA.001",
+      "path": "GVRN.Sentinel.Umbra.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.STYLE.001.001",
+      "path": "GVRN.Style.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.TRP.001.001",
+      "path": "GVRN.TRP.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.TAXONOMY.RELATIONSHIPS.001",
+      "path": "GVRN.Taxonomy.Relationships.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.VIS.ICOM.001",
+      "path": "GVRN.VIS.ICOM.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GVRN.VSI.001.001",
+      "path": "GVRN.VSI.001.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.GOOGLE_ANTIGRAVITY.001",
+      "path": "Google Antigravity.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.MESSAGETO_AXION.001",
+      "path": "Messageto_Axion.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-ARCH-AGENT-AXION_V11.0.001",
+      "path": "OGLN-ARCH-AGENT-AXION_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-ARCH-AGENT-SENTINEL_V11.0.001",
+      "path": "OGLN-ARCH-AGENT-SENTINEL_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-ARCH-ENGINE-JUDGEMENT_V11.001",
+      "path": "OGLN-ARCH-ENGINE-JUDGEMENT_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-ARCH-ENGINE-MASTERLOOM_V1.001",
+      "path": "OGLN-ARCH-ENGINE-MASTERLOOM_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-ARCH-GAME-ASCENSION_V11.0.001",
+      "path": "OGLN-ARCH-GAME-ASCENSION_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-ARCH-GAME-ASCENSION_V11.1.001",
+      "path": "OGLN-ARCH-GAME-ASCENSION_v11.1.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-ARCH-MAP-ROSETTA_V11.0.001",
+      "path": "OGLN-ARCH-MAP-ROSETTA_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-CHRON-INDEX-SYNERGY_V11.0.001",
+      "path": "OGLN-CHRON-INDEX-SYNERGY_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-CHRON-REG-GENESIS_V11.0.001",
+      "path": "OGLN-CHRON-REG-GENESIS_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-MANUAL-DEV-CODEX_V11.001",
+      "path": "OGLN-GVRN-MANUAL-DEV-CODEX_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-MECH-CIRCUITBREAKER.001",
+      "path": "OGLN-GVRN-MECH-CIRCUITBREAKER_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-MECH-EPISEMANTICS_V1.001",
+      "path": "OGLN-GVRN-MECH-EPISEMANTICS_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-MECH-FLOW-OPTIMIZER.001",
+      "path": "OGLN-GVRN-MECH-FLOW-OPTIMIZER_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-MECH-PATTERN-DETECTO.001",
+      "path": "OGLN-GVRN-MECH-PATTERN-DETECTOR_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-PROT-DARK-MONITOR_V1.001",
+      "path": "OGLN-GVRN-PROT-DARK-MONITOR_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-PROT-IDLE-INTEGRATIO.001",
+      "path": "OGLN-GVRN-PROT-IDLE-INTEGRATION_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-PROT-JOURNALING_V11.001",
+      "path": "OGLN-GVRN-PROT-JOURNALING_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-GVRN-PROT-VALIDATION_V11.001",
+      "path": "OGLN-GVRN-PROT-VALIDATION_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-PHIL-ENTITY-SOPHIA_V11.0.001",
+      "path": "OGLN-PHIL-ENTITY-SOPHIA_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.OGLN-PHIL-ETHOS-STRUGGLE_V11.0.001",
+      "path": "OGLN-PHIL-ETHOS-STRUGGLE_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PHIL.ETHOS.STRUGGLE.001",
+      "path": "PHIL.Ethos.Struggle.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "GVRN.NEXUS.INGEST.001",
+      "path": "SELT.NexusIngestion.ShadowLog.md",
+      "domain": "GVRN",
+      "tier": "GOVERNANCE",
+      "state": "CANONIZED",
+      "ethos": "ZERO-ENTROPY_INGESTION_LOG"
+    },
+    {
+      "id": "CORE.SYNG.ENGINE.CORE.001",
+      "path": "SYNG.Engine.Core.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNG.INDEX.CHRONICLE.001",
+      "path": "SYNG.Index.Chronicle.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.SYNG.SYNERGY.001",
+      "path": "SYNG.Synergy.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.UMB-SGM-001_STANDARDIZEDGOVERN.001",
+      "path": "UMB-SGM-001_StandardizedGovernanceModule_v11.0.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    },
+    {
+      "id": "CORE.PRIMARY_DIRECTIVE.001",
+      "path": "primary_directive.md",
+      "domain": "CORE",
+      "tier": "GOVERNANCE",
+      "state": "ACTIVE",
+      "ethos": "SOVEREIGN_GOVERNANCE_COMPONENT"
+    }
+  ],
+  "edges": [
+    {
+      "source": "GVRN.NEXUS.INGEST.001",
+      "target": "TOOL.FORGE.DAEMON.001",
+      "type": "SYNERGIZES"
+    },
+    {
+      "source": "GVRN.NEXUS.INGEST.001",
+      "target": "axion-core/src/cse/sourcemap.py",
+      "type": "SYNERGIZES"
+    },
+    {
+      "source": "GVRN.NEXUS.INGEST.001",
+      "target": "axion-core/src/nexus/nexus_worker.js",
+      "type": "SYNERGIZES"
+    },
+    {
+      "source": "GVRN.NEXUS.INGEST.001",
+      "target": "GVRN.WF.Finalization",
+      "type": "DEPENDS_ON"
+    },
+    {
+      "source": "GVRN.NEXUS.INGEST.001",
+      "target": "SKILL.SynergisticOpportunityWeaving",
+      "type": "SYNERGIZES"
+    }
+  ],
+  "lexicon": {
+    "LEX-EXEC-001": {
+      "term": "The Forge",
+      "canonical_equivalent": [
+        "CI_PIPELINE",
+        "BUILD_SYSTEM"
+      ],
+      "classification": {
+        "domain": "INFRA",
+        "ontology_class": "ORCHESTRATION_ENGINE",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "COMPUTE",
+        "INFRA",
+        "GVRN"
+      ],
+      "forbidden_contexts": [
+        "PERSISTENCE",
+        "DATA"
+      ],
+      "ethos": "Automated artifact generation, validation, and signature compiling pipelines.",
+      "aliases": [
+        "forge",
+        "build_forge"
+      ]
+    },
+    "LEX-GVRN-001": {
+      "term": "Sentinel Gate",
+      "canonical_equivalent": [
+        "CI_VALIDATION_GATE",
+        "STATIC_ANALYSIS_HOOK"
+      ],
+      "classification": {
+        "domain": "GVRN",
+        "ontology_class": "COMPLIANCE_GATEWAY",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "GVRN",
+        "TEST"
+      ],
+      "forbidden_contexts": [
+        "PRESENTATION"
+      ],
+      "ethos": "Deterministic block gates that reject non-compliant structural or semantic commits.",
+      "aliases": [
+        "sentinel",
+        "gatekeeper"
+      ]
+    },
+    "LEX-CORE-001": {
+      "term": "Dissonance Quest",
+      "canonical_equivalent": [
+        "REFACTOR_TICKET",
+        "BUG_DEBUG_SESSION"
+      ],
+      "classification": {
+        "domain": "CORE",
+        "ontology_class": "STATE_CORRECTION",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "CORE",
+        "TEST",
+        "GVRN"
+      ],
+      "forbidden_contexts": [],
+      "ethos": "An active debugging, testing, or refactoring campaign targeted at reducing repository entropy.",
+      "aliases": [
+        "quest",
+        "dissonance_resolution"
+      ]
+    },
+    "LEX-COGN-001": {
+      "term": "Cognitive Circuit Breaker",
+      "canonical_equivalent": [
+        "RUNTIME_INTERRUPT",
+        "ERROR_HALT"
+      ],
+      "classification": {
+        "domain": "CORE",
+        "ontology_class": "FAULT_TOLERANCE_ENGINE",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "CORE",
+        "COMPUTE",
+        "INFRA"
+      ],
+      "forbidden_contexts": [
+        "PRESENTATION"
+      ],
+      "ethos": "Safeguard interrupt systems that halt executions if logical drifts or runtime exceptions leak.",
+      "aliases": [
+        "circuit_breaker",
+        "fail_halt"
+      ]
+    },
+    "LEX-NET-001": {
+      "term": "Synapse",
+      "canonical_equivalent": [
+        "MESSAGE_BUS",
+        "EVENT_BROKER"
+      ],
+      "classification": {
+        "domain": "FABRIC",
+        "ontology_class": "COMMUNICATION_PROTOCOL",
+        "abstraction_level": "UTILITY"
+      },
+      "allowed_contexts": [
+        "FABRIC",
+        "INFRA",
+        "CORE"
+      ],
+      "forbidden_contexts": [
+        "GOVERNANCE"
+      ],
+      "ethos": "Decoupled asynchronous message or event propagation boundaries.",
+      "aliases": [
+        "synapse",
+        "event_bus"
+      ]
+    },
+    "LEX-COMP-001": {
+      "term": "Sophia",
+      "canonical_equivalent": [
+        "ORCHESTRATION_INTELLIGENCE",
+        "COMPILER_FLOW"
+      ],
+      "classification": {
+        "domain": "COMPUTE",
+        "ontology_class": "COGNITIVE_COMPILER",
+        "abstraction_level": "SYSTEM"
+      },
+      "allowed_contexts": [
+        "COMPUTE",
+        "INFRA",
+        "GVRN"
+      ],
+      "forbidden_contexts": [
+        "DATA"
+      ],
+      "ethos": "Compilation pipelines integrating program analytics and static repository reasoning.",
+      "aliases": [
+        "sophia",
+        "wisdom_engine"
+      ]
+    },
+    "LEX-METR-001": {
+      "term": "Coherence",
+      "canonical_equivalent": [
+        "STRUCTURAL_ALIGNMENT_METRIC",
+        "SELF_CONSISTENCY"
+      ],
+      "classification": {
+        "domain": "GVRN",
+        "ontology_class": "METRIC",
+        "abstraction_level": "METRIC"
+      },
+      "allowed_contexts": [
+        "GVRN",
+        "TEST",
+        "CORE"
+      ],
+      "forbidden_contexts": [],
+      "ethos": "Mathematical index scoring structural alignment and semantic parity across documentation and code.",
+      "aliases": [
+        "coherence",
+        "coherence_score"
+      ]
+    }
+  },
+  "diagnostics": {
+    "errors": [
+      "[REFERENTIAL INTEGRITY VIOLATION] 'GVRN.NEXUS.INGEST.001' (SELT.NexusIngestion.ShadowLog.md) declares target 'TOOL.FORGE.DAEMON.001' which does not exist in the workspace as a registered ID or file path.",
+      "[REFERENTIAL INTEGRITY VIOLATION] 'GVRN.NEXUS.INGEST.001' (SELT.NexusIngestion.ShadowLog.md) declares target 'axion-core/src/cse/sourcemap.py' which does not exist in the workspace as a registered ID or file path.",
+      "[REFERENTIAL INTEGRITY VIOLATION] 'GVRN.NEXUS.INGEST.001' (SELT.NexusIngestion.ShadowLog.md) declares target 'axion-core/src/nexus/nexus_worker.js' which does not exist in the workspace as a registered ID or file path.",
+      "[REFERENTIAL INTEGRITY VIOLATION] 'GVRN.NEXUS.INGEST.001' (SELT.NexusIngestion.ShadowLog.md) declares target 'GVRN.WF.Finalization' which does not exist in the workspace as a registered ID or file path.",
+      "[REFERENTIAL INTEGRITY VIOLATION] 'GVRN.NEXUS.INGEST.001' (SELT.NexusIngestion.ShadowLog.md) declares target 'SKILL.SynergisticOpportunityWeaving' which does not exist in the workspace as a registered ID or file path."
+    ],
+    "warnings": []
+  }
+}

@@ -1,5 +1,17 @@
 """
-# TOOL-HPRI-002: Sophia's Wisdom (The Synarchy Auditor)
+artifact_anchor:
+  id: INFR.SOPHIA_WISDOM.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-HPRI-002: Sophia's Wisdom (The Synarche Auditor).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -80,8 +92,7 @@ UIP_HEADER_TEXT = "Universal Identification & Provenance"
 
 
 def resolve_executable(cmd_name: str) -> str:
-    """
-    Resolves executable path, vital for Windows.
+    """Resolves executable path, vital for Windows.
     Matches the robust logic from Sentinel Sword.
     """
     path = shutil.which(cmd_name)
@@ -100,7 +111,9 @@ def resolve_executable(cmd_name: str) -> str:
 
 def scan_code_complexity(target_dir: str) -> list[dict[str, Any]]:
     """Runs ruff to find C901 violations."""
-    logger.info(f"\n--- [SOPHIA] Scanning {target_dir} for Cognitive Dissonance (C901) ---")
+    logger.info(
+        f"\n--- [SOPHIA] Scanning {target_dir} for Cognitive Dissonance (C901) ---"
+    )
 
     ruff_cmd = resolve_executable("ruff")
     if not shutil.which(ruff_cmd):
@@ -139,7 +152,9 @@ def report_complexity(violations: list[dict[str, Any]]) -> None:
         except Exception:
             pass
         if score > 0:
-            hotspots.append({"file": filename, "line": line, "msg": msg, "score": score})
+            hotspots.append(
+                {"file": filename, "line": line, "msg": msg, "score": score}
+            )
 
     hotspots.sort(key=lambda x: x["score"], reverse=True)
 
@@ -183,7 +198,11 @@ def _check_uip_header(content: str, lines: list[str]) -> list[str]:
     # Evolution Domain Check
     evo_valid = False
     for line in lines[:60]:
-        if "Evolution" in line and "|" in line and any(domain in line for domain in VALID_EVOLUTION_DOMAINS):
+        if (
+            "Evolution" in line
+            and "|" in line
+            and any(domain in line for domain in VALID_EVOLUTION_DOMAINS)
+        ):
             evo_valid = True
             break
 
@@ -221,7 +240,9 @@ def _check_indentation(lines: list[str]) -> list[str]:
             suspicious_indent += 1
 
     if suspicious_indent > INDENT_WARNING_THRESHOLD:
-        return [f"[WARNING] Detected {suspicious_indent} lines with 2-space indentation (PGPS mandates 4)."]
+        return [
+            f"[WARNING] Detected {suspicious_indent} lines with 2-space indentation (PGPS mandates 4)."
+        ]
     return []
 
 
@@ -240,7 +261,9 @@ def _find_markdown_targets(target: str) -> list[str]:
 
 def scan_governance(target: str) -> None:
     """Scans .md files in target for compliance."""
-    logger.info(f"\n--- [SOPHIA] Scanning {target} for Governance Compliance (OGLN v10) ---")
+    logger.info(
+        f"\n--- [SOPHIA] Scanning {target} for Governance Compliance (OGLN v10) ---"
+    )
 
     targets = _find_markdown_targets(target)
     if not targets:
@@ -262,7 +285,9 @@ def scan_governance(target: str) -> None:
     if compliance_score < MAX_COMPLIANCE_SCORE:
         base_score = max(0, compliance_score)
         logger.info(f"\n[RESULT] Governance Integrity: {base_score}%")
-        logger.info("Action: Run 'reforge.py' or 'lint_artifact.py' logic on failing artifacts.")
+        logger.info(
+            "Action: Run 'reforge.py' or 'lint_artifact.py' logic on failing artifacts."
+        )
     else:
         logger.info("\n✅ [RESULT] Governance Integrity: 100%. The Law is Upheld.")
 
@@ -306,10 +331,19 @@ def _handle_governance_mode(args: argparse.Namespace) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Sophia's Wisdom: The Synarchy Auditor")
-    parser.add_argument("--mode", choices=["complexity", "governance", "all"], default="all", help="Scan mode")
+    parser = argparse.ArgumentParser(
+        description="Sophia's Wisdom: The Synarche Auditor"
+    )
+    parser.add_argument(
+        "--mode",
+        choices=["complexity", "governance", "all"],
+        default="all",
+        help="Scan mode",
+    )
     parser.add_argument("--target", default=".", help="Target directory or file")
-    parser.add_argument("--fix", action="store_true", help="Autonomously repair detected issues.")
+    parser.add_argument(
+        "--fix", action="store_true", help="Autonomously repair detected issues."
+    )
 
     args = parser.parse_args()
 

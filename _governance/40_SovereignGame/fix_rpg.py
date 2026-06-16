@@ -45,13 +45,23 @@ for old_name, new_name in renames.items():
         uip_end_match = re.search(r"\|\s*\*\*Relations\*\*\s*\|.*?\|.*?\|", content)
         if uip_end_match:
             insert_str = "\n| **Integrity Hash** | `[AUTO-GENERATED]` | Validation |"
-            content = content[: uip_end_match.end()] + insert_str + content[uip_end_match.end() :]
+            content = (
+                content[: uip_end_match.end()]
+                + insert_str
+                + content[uip_end_match.end() :]
+            )
         elif "**Relations**" not in content and "Status (State)" in content:
             # Fallback for GVRN.REG.ThePhoenixRPGFramework.md
-            uip_end_match = re.search(r"\|\s*\*\*Status \(State\)\*\*\s*\|.*?\|.*?\|", content)
+            uip_end_match = re.search(
+                r"\|\s*\*\*Status \(State\)\*\*\s*\|.*?\|.*?\|", content
+            )
             if uip_end_match:
                 insert_str = "\n| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |\n| **Integrity Hash** | `[AUTO-GENERATED]` | Validation |"
-                content = content[: uip_end_match.end()] + insert_str + content[uip_end_match.end() :]
+                content = (
+                    content[: uip_end_match.end()]
+                    + insert_str
+                    + content[uip_end_match.end() :]
+                )
 
     # H1 Singularity
     class H1Replacer:
@@ -72,7 +82,10 @@ for old_name, new_name in renames.items():
 
     # Fix APP section numbering
     content = re.sub(
-        r"(?i)^.*Actionable Prompt Packet.*$", "## IV. Actionable Prompt Packet (APP)", content, flags=re.MULTILINE
+        r"(?i)^.*Actionable Prompt Packet.*$",
+        "## IV. Actionable Prompt Packet (APP)",
+        content,
+        flags=re.MULTILINE,
     )
 
     # Write to new file

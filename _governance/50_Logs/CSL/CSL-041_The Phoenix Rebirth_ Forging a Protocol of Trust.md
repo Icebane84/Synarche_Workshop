@@ -1,4 +1,15 @@
-# CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-041_THE PHOENIX REBIRTH_ FORGING A PROTOCOL OF TRUST` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# CSL-041*The Phoenix Rebirth* Forging a Protocol of Trust.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-041-THE-PHOENIX-REBIRTH--FORGING-A-PROTOCOL-OF-TRUST-001` | The Sovereign ID. |
-| **Official Name** | `CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                               | Description       |
+| :------------------ | :------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-041-THE-PHOENIX-REBIRTH--FORGING-A-PROTOCOL-OF-TRUST-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-041_The Phoenix Rebirth_ Forging a Protocol of Trust.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                   | The Standard.     |
+| **Domain**          | `GVRN`                                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                       | The Network.      |
 
 ### Collaborative Synthesis Log
 

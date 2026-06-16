@@ -42,7 +42,7 @@ Enhance the `axion-core` engine using harvested source code from the `_Desktop_V
 
 1. **GUCA Commands**: Update the `SYNTHESIS-INSIGHTS.md` to ensure commands like `CMD: WAKE_AXION` and `CMD: SENTINEL_SCAN` are functionally referenced.
 2. **Zero Entropy Audit**: Run `trunk check` and `markdownlint` on all newly assimilated files.
-3. **Chronicle**: Log the "Ascension Event" in `AI_EVOLUTION_LOG.md` as "Phase 14: Synarchy Ascension."
+3. **Chronicle**: Log the "Ascension Event" in `AI_EVOLUTION_LOG.md` as "Phase 14: Synarche Ascension."
 
 **Transmission Protocol**: Execute with the precision of a sword-strike. Maintain Zero Entropy.
 `[ASCENSION-TRIGGER] ID: TR-ASC-001 TS: 2026-03-19`

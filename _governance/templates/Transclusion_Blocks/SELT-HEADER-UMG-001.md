@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-HEADER-UMG-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('8') }}. Universal Metadata & Governance (UMG)**
 
 - **Core Purpose Summary:** `[A single, concise sentence defining the artifact's primary function.]`

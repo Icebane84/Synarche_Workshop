@@ -41,7 +41,7 @@ UIP: AOP-ASL-001 Title: Automated Synergy Linking Protocol Source:
 Description: > Protocol for discovering, validating, and canonizing relational vectors between artifacts using semantic
 analysis and keyword triangulation. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-24
 - Timestamp: 1769251200
 

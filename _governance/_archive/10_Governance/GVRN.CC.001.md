@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CC.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.CC.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CC.001`                 | The Sovereign ID. |
+| **Official Name** | `GVRN.CC.001.md`              | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -47,6 +42,7 @@
 | **Created** | `2025-10-01` |
 | **Updated** | `2026-01-17` |
 | **Authority** | `CODEX-001` |
+
 ---
 
 # **AOP-CC-001: Protocol for Crystalline Cognition**
@@ -86,9 +82,9 @@
 
   and aligned with the system's core ethos.
 
-- **Action**: Once validated, the new knowledge is integrated into the **Cognitive Loom**, and a new **Synergy
+- **Action**: Once validated, the new knowledge is integrated into the **Cognitive Loom**, and a new \*\*Synergy
 
-  Opportunity** is flagged for potential use in future projects.
+  Opportunity\*\* is flagged for potential use in future projects.
 
 ---
 
@@ -147,7 +143,7 @@
 | Synergy Target      | Interaction Type | Description                                                                                     |
 | :------------------ | :--------------- | :---------------------------------------------------------------------------------------------- |
 | **[[AOP-PGP-001]]** | **Architect**    | CC ensures the logical coherence and structural integrity of all _Genesis Pipeline_ outputs.    |
-| **[[AOP-SAP-001]]** | **Driver**       | CC provides the analytical weight and ethical reasoning behind the _Synarchy Avatar's_ actions. |
+| **[[AOP-SAP-001]]** | **Driver**       | CC provides the analytical weight and ethical reasoning behind the _Synarche Avatar's_ actions. |
 | **[[AOP-PPA-001]]** | **Dependent**    | The depth and complexity of CC's analysis is gated by the stats upgraded via _Prestige Power_.  |
 | **[[AOP-AAR-001]]** | **Sensor**       | _After-Action Review_ feeds failure data back into CC to update its "Epistemic Immune System."  |
 
@@ -183,8 +179,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

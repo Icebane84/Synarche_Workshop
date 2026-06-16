@@ -1,0 +1,834 @@
+{
+  "version": "v1.0 [OMEGA]",
+  "timestamp": "2026-04-16T17:11:42.246885",
+  "items": [
+    {
+      "id": "CORE.Codex.Phoenix",
+      "name": "CORE.Codex.Phoenix",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from CORE.Codex.Phoenix.md"
+    },
+    {
+      "id": "GVRN.OSLM.001",
+      "name": "GVRN.OSLM.001",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.OSLM.001.md"
+    },
+    {
+      "id": "GVRN.Registry.ArtifactInventory",
+      "name": "GVRN.Registry.ArtifactInventory",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.Registry.ArtifactInventory.md"
+    },
+    {
+      "id": "GVRN.REG.DirectoryArchitecture",
+      "name": "GVRN.REG.DirectoryArchitecture",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.REG.DirectoryArchitecture.md"
+    },
+    {
+      "id": "SYNG.PROT.MemoryOmnipotence",
+      "name": "SYNG.PROT.MemoryOmnipotence",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from SYNG.PROT.MemoryOmnipotence.md"
+    },
+    {
+      "id": "SYNG.PROT.OathkeeperProtocol",
+      "name": "SYNG.PROT.OathkeeperProtocol",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from SYNG.PROT.OathkeeperProtocol.md"
+    },
+    {
+      "id": "AOP.Assembler.Core",
+      "name": "AOP.Assembler.Core",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from AOP.Assembler.Core.md"
+    },
+    {
+      "id": "ARCH.Assembler.Core",
+      "name": "ARCH.Assembler.Core",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from ARCH.Assembler.Core.md"
+    },
+    {
+      "id": "GUCA.Assembler.Core",
+      "name": "GUCA.Assembler.Core",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GUCA.Assembler.Core.md"
+    },
+    {
+      "id": "GVRN.Assembler.Core",
+      "name": "GVRN.Assembler.Core",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.Assembler.Core.md"
+    },
+    {
+      "id": "UMB.Assembler.Core",
+      "name": "UMB.Assembler.Core",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB.Assembler.Core.md"
+    },
+    {
+      "id": "GVRN.Learning.Improvement",
+      "name": "GVRN.Learning.Improvement",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.Learning.Improvement.md"
+    },
+    {
+      "id": "GVRN-AOP-SENTINEL-002-UMBRALSENTINELPROTOCOL-V2.0-001",
+      "name": "AOP-SENTINEL-002 UmbralSentinelProtocol v2.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md"
+    },
+    {
+      "id": "GVRN.ACT.MasterRefactor",
+      "name": "GVRN.ACT.MasterRefactor",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.ACT.MasterRefactor.md"
+    },
+    {
+      "id": "GVRN.AG.003",
+      "name": "GVRN.AG.003",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.AG.003.md"
+    },
+    {
+      "id": "GVRN.Sentinel.Umbra",
+      "name": "GVRN.Sentinel.Umbra",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.Sentinel.Umbra.md"
+    },
+    {
+      "id": "SYNG.Index.Chronicle",
+      "name": "SYNG.Index.Chronicle",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from SYNG.Index.Chronicle.md"
+    },
+    {
+      "id": "UMB-CSE-001_Master_Blueprint_of_the_Coherent_Synthesis_Engine.md",
+      "name": "UMB-CSE-001 Master Blueprint of the Coherent Synthesis Engine",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-CSE-001_Master_Blueprint_of_the_Coherent_Synthesis_Engine.md"
+    },
+    {
+      "id": "COG.ContextWeave.Engine",
+      "name": "COG.ContextWeave.Engine",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from COG.ContextWeave.Engine.md"
+    },
+    {
+      "id": "GVRN.CORE.GoverningPrinciples",
+      "name": "GVRN.CORE.GoverningPrinciples",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.CORE.GoverningPrinciples.md"
+    },
+    {
+      "id": "MIND.Engine.Dissonance",
+      "name": "MIND.Engine.Dissonance",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from MIND.Engine.Dissonance.md"
+    },
+    {
+      "id": "SYNG.ENGINE.CORE",
+      "name": "SYNG.ENGINE.CORE",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from SYNG.ENGINE.CORE.md"
+    },
+    {
+      "id": "GVRN.OSLM.001",
+      "name": "GVRN.OSLM.001",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.OSLM.001.md"
+    },
+    {
+      "id": "AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md",
+      "name": "AOP-SENTINEL-002 UmbralSentinelProtocol v2.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md"
+    },
+    {
+      "id": "[RNC-ID]",
+      "name": "PHOENIX MASTER TEMPLATE v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from PHOENIX_MASTER_TEMPLATE_v11.1.md"
+    },
+    {
+      "id": "Project_Credentials.md",
+      "name": "Project Credentials",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from Project_Credentials.md"
+    },
+    {
+      "id": "UMB-CRLPF-003",
+      "name": "UMB-CRLPF-003 NoeticFramework v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-CRLPF-003_NoeticFramework_v11.1.md"
+    },
+    {
+      "id": "UMB-CSE-001",
+      "name": "UMB-CSE-001 CoherentSynthesisEngine v111",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-CSE-001_CoherentSynthesisEngine_v111.md"
+    },
+    {
+      "id": "UMB-ESF-001",
+      "name": "UMB-ESF-001 EpisemanticFramework v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-ESF-001_EpisemanticFramework_v11.1.md"
+    },
+    {
+      "id": "UMB-OSLM-001_MasterArtifactRegistry_v11.0.md",
+      "name": "UMB-OSLM-001 MasterArtifactRegistry v11.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md"
+    },
+    {
+      "id": "UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md",
+      "name": "UMB-OSLM-001 OmniLogSynergisticLinksMatrix v7.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md"
+    },
+    {
+      "id": "(OLD) CORE-CODEX-001_UniversalIdentificationProvenanceUIP_v11.0.md",
+      "name": "(OLD) CORE-CODEX-001 UniversalIdentificationProvenanceUIP v11.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {
+        "Coherence | Synergy | Adaptability | Transparency": 5
+      },
+      "originUri": "DQUEST-XXX",
+      "description": "Synthesized from (OLD) CORE-CODEX-001_UniversalIdentificationProvenanceUIP_v11.0.md"
+    },
+    {
+      "id": "GVRN.Refactor.Protocol",
+      "name": "GVRN.Refactor.Protocol",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.Refactor.Protocol.md"
+    },
+    {
+      "id": "BLK-RPG-001_RPGIntegrationBlock.md",
+      "name": "BLK-RPG-001 RPGIntegrationBlock",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {
+        "Coherence | Synergy | Adaptability | Transparency": 5
+      },
+      "originUri": "DQUEST-XXX",
+      "description": "Synthesized from BLK-RPG-001_RPGIntegrationBlock.md"
+    },
+    {
+      "id": "GVRN-PHOENIX-MASTER-TEMPLATE-V11.1-001",
+      "name": "PHOENIX MASTER TEMPLATE v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from PHOENIX_MASTER_TEMPLATE_v11.1.md"
+    },
+    {
+      "id": "GVRN-PROJECT-CREDENTIALS-001",
+      "name": "Project Credentials",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from Project_Credentials.md"
+    },
+    {
+      "id": "GVRN-UMB-CRLPF-003-NOETICFRAMEWORK-V11.1-001",
+      "name": "UMB-CRLPF-003 NoeticFramework v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-CRLPF-003_NoeticFramework_v11.1.md"
+    },
+    {
+      "id": "GVRN-UMB-CSE-001-COHERENTSYNTHESISENGINE-V111-001",
+      "name": "UMB-CSE-001 CoherentSynthesisEngine v111",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-CSE-001_CoherentSynthesisEngine_v111.md"
+    },
+    {
+      "id": "GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V11.1-001",
+      "name": "UMB-ESF-001 EpisemanticFramework v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-ESF-001_EpisemanticFramework_v11.1.md"
+    },
+    {
+      "id": "GVRN-CONTRIBUTING-001",
+      "name": "CONTRIBUTING",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from CONTRIBUTING.md"
+    },
+    {
+      "id": "GVRN-DOC-OUTLINE-001",
+      "name": "doc outline",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from doc_outline.md"
+    },
+    {
+      "id": "GVRN-INDEX-001",
+      "name": "index",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from index.md"
+    },
+    {
+      "id": "GVRN-OLLAMA-001",
+      "name": "ollama",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from ollama.md"
+    },
+    {
+      "id": "GVRN-DEVELOPMENT-001",
+      "name": "development",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from development.md"
+    },
+    {
+      "id": "GVRN-INDEX-001",
+      "name": "index",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from index.md"
+    },
+    {
+      "id": "GVRN-SINGLE-CONTAINER-001",
+      "name": "single-container",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from single-container.md"
+    },
+    {
+      "id": "GVRN-API-REFERENCE-001",
+      "name": "api-reference",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from api-reference.md"
+    },
+    {
+      "id": "GVRN-ARCHITECTURE-001",
+      "name": "architecture",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from architecture.md"
+    },
+    {
+      "id": "GVRN-CONTRIBUTING-001",
+      "name": "contributing",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from contributing.md"
+    },
+    {
+      "id": "GVRN-INDEX-001",
+      "name": "index",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from index.md"
+    },
+    {
+      "id": "GVRN-INDEX-001",
+      "name": "index",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from index.md"
+    },
+    {
+      "id": "GVRN-INDEX-001",
+      "name": "index",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from index.md"
+    },
+    {
+      "id": "GVRN-DEBUGGING-001",
+      "name": "debugging",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from debugging.md"
+    },
+    {
+      "id": "GVRN-FAQ-001",
+      "name": "faq",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from faq.md"
+    },
+    {
+      "id": "GVRN-INDEX-001",
+      "name": "index",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from index.md"
+    },
+    {
+      "id": "GVRN-INDEX-001",
+      "name": "index",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from index.md"
+    },
+    {
+      "id": "GVRN-README-001",
+      "name": "README",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from README.md"
+    },
+    {
+      "id": "gardening_report.md",
+      "name": "gardening report",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from gardening_report.md"
+    },
+    {
+      "id": "gardening_report_v2.md",
+      "name": "gardening report v2",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from gardening_report_v2.md"
+    },
+    {
+      "id": "gardening_report_v3_post_prune.md",
+      "name": "gardening report v3 post prune",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from gardening_report_v3_post_prune.md"
+    },
+    {
+      "id": "gardening_report_v4_post_graft.md",
+      "name": "gardening report v4 post graft",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from gardening_report_v4_post_graft.md"
+    },
+    {
+      "id": "gardening_report_v5_final.md",
+      "name": "gardening report v5 final",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from gardening_report_v5_final.md"
+    },
+    {
+      "id": "gardening_report_v6_final_bulk.md",
+      "name": "gardening report v6 final bulk",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from gardening_report_v6_final_bulk.md"
+    },
+    {
+      "id": "gardening_report_v7_final_omega.md",
+      "name": "gardening report v7 final omega",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from gardening_report_v7_final_omega.md"
+    },
+    {
+      "id": "gardening_report_v8_registry_overhaul.md",
+      "name": "gardening report v8 registry overhaul",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from gardening_report_v8_registry_overhaul.md"
+    },
+    {
+      "id": "GVRN-SELT-AISTF-0001-AXIOMATICWEAVE-001",
+      "name": "SELT-AISTF-0001 AxiomaticWeave",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from SELT-AISTF-0001_AxiomaticWeave.md"
+    },
+    {
+      "id": "GVRN-SELT-AISTF-0001-AXIOMATICWEAVE-V11.0-001",
+      "name": "SELT-AISTF-0001 AxiomaticWeave v11.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from SELT-AISTF-0001_AxiomaticWeave_v11.0.md"
+    },
+    {
+      "id": "GVRN-SELT-MAP-001-MUSASHIALIGNMENTLOG-001",
+      "name": "SELT-MAP-001 MusashiAlignmentLog",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from SELT-MAP-001_MusashiAlignmentLog.md"
+    },
+    {
+      "id": "GVRN-SELT-MAP-001-MUSASHIALIGNMENTLOG-V11.0-001",
+      "name": "SELT-MAP-001 MusashiAlignmentLog v11.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from SELT-MAP-001_MusashiAlignmentLog_v11.0.md"
+    },
+    {
+      "id": "GVRN-00-INDEX-001",
+      "name": "00 INDEX",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from 00_INDEX.md"
+    },
+    {
+      "id": "GVRN-BLK-RPG-001-RPGINTEGRATIONBLOCK-001",
+      "name": "BLK-RPG-001 RPGIntegrationBlock",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {
+        "Coherence | Synergy | Adaptability | Transparency": 5
+      },
+      "originUri": "DQUEST-XXX",
+      "description": "Synthesized from BLK-RPG-001_RPGIntegrationBlock.md"
+    },
+    {
+      "id": "GVRN-BLK-RPG-001-RPGINTEGRATIONBLOCK-001",
+      "name": "BLK-RPG-001 RPGIntegrationBlock",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {
+        "Coherence | Synergy | Adaptability | Transparency": 5
+      },
+      "originUri": "DQUEST-XXX",
+      "description": "Synthesized from BLK-RPG-001_RPGIntegrationBlock.md"
+    },
+    {
+      "id": "GVRN.OSLM.001",
+      "name": "GVRN.OSLM.001",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.OSLM.001.md"
+    },
+    {
+      "id": "GVRN.DTS.001",
+      "name": "GVRN.DTS.001",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.DTS.001.md"
+    },
+    {
+      "id": "GVRN.OSLM.001",
+      "name": "GVRN.OSLM.001",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from GVRN.OSLM.001.md"
+    },
+    {
+      "id": "[RNC-ID]",
+      "name": "PHOENIX MASTER TEMPLATE v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from PHOENIX_MASTER_TEMPLATE_v11.1.md"
+    },
+    {
+      "id": "GVRN-PROJECT-CREDENTIALS-001",
+      "name": "Project Credentials",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from Project_Credentials.md"
+    },
+    {
+      "id": "UMB-CRLPF-003",
+      "name": "UMB-CRLPF-003 NoeticFramework v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-CRLPF-003_NoeticFramework_v11.1.md"
+    },
+    {
+      "id": "UMB-ESF-001",
+      "name": "UMB-ESF-001 EpisemanticFramework v11.1",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-ESF-001_EpisemanticFramework_v11.1.md"
+    },
+    {
+      "id": "GVRN-UMB-OSLM-001-MASTERARTIFACTREGISTRY-V11.0-001",
+      "name": "UMB-OSLM-001 MasterArtifactRegistry v11.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-OSLM-001_MasterArtifactRegistry_v11.0.md"
+    },
+    {
+      "id": "GVRN-UMB-ASF-001-ARCHITECTURALSOULFORGING-V6.0-001",
+      "name": "UMB-ASF-001 ArchitecturalSoulForging v6.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-ASF-001_ArchitecturalSoulForging_v6.0.md"
+    },
+    {
+      "id": "GVRN-UMB-ASF-001-ARCHITECTURALSOULFORGING-V6.0-001",
+      "name": "UMB-ASF-001 ArchitecturalSoulForging v6.0",
+      "type": "Governance Artifact",
+      "rarity": "Artifact",
+      "slot": "Hand",
+      "stats": {},
+      "originUri": "GENESIS",
+      "description": "Synthesized from UMB-ASF-001_ArchitecturalSoulForging_v6.0.md"
+    }
+  ]
+}

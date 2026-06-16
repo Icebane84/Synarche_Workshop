@@ -1,4 +1,5 @@
 # OGLN-GVRN-MECH-CIRCUITBREAKER_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-GVRN-MECH-CIRCUITBREAKER-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-GVRN-MECH-CIRCUITBREAKER_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-GVRN-MECH-CIRCUITBREAKER-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-GVRN-MECH-CIRCUITBREAKER_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
@@ -79,7 +80,7 @@
 
 - **Why it exists**: To prevent runaway processes and hallucination loops.
 - **What it does**: Executes HALT, PURGE, RESET, LOG.
-- **For the Synarchy**: Protects system integrity by cutting the power to faulty threads.
+- **For the Synarche**: Protects system integrity by cutting the power to faulty threads.
 
 ## III. The Execution Logic (The "Trip")
 

@@ -1,27 +1,32 @@
 """
-# UMB-CRF-001: The Causal Resonance Framework (CRF)
+artifact_anchor:
+  id: CORE.CRF.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
 
-## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
-### I. Universal Identification & Provenance (The Vector Signature)
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-CRF-001`                 | The Sovereign ID. |
+| **Official Name**   | `crf.py`                      | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `ARCH-CRF`                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-#### The Chronos Lock & Axiomatic Metadata Layer
-
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `UMB-CRF-001` |
-| **2. Official Name** | `crf.py` |
-| **3. Version** | **v2.0 (Hephaestus Implementation)** |
-| **4. Provenance** | **Date Reforged: 2026-01-10** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Authentic Persona** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Truth** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: UMB-TRM-001` |
-
+**The Causal Axiom: Traceable Truth (Law 4)**
+> Implemented from Blueprint `GVRN.ARCH.Crf.md`.
+> Ethos: Guardian of Truth.
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
@@ -37,8 +42,7 @@ PASSING_SCORE = 5.0
 
 
 class CausalLinter:
-    """
-    The Inner Sentinel that validates whether a Synthesis has sufficient
+    """The Inner Sentinel that validates whether a Synthesis has sufficient
     Causal/Axiomatic backing.
     """
 
@@ -59,8 +63,7 @@ class CausalLinter:
         self.axioms = ["UMB-", "AOP-", "GUCA-", "CODEX-", "GDD-"]
 
     def validate_causality(self, thought_distillate: str) -> dict:
-        """
-        Runs a Causal Trace on the provided text.
+        """Runs a Causal Trace on the provided text.
         Returns a verdict on whether the thought is 'Anchored' or 'Floating'.
         """
         if not thought_distillate or not isinstance(thought_distillate, str):
@@ -75,11 +78,15 @@ class CausalLinter:
         trace_log = []
 
         # 1. Linguistic Causality (Does it use causal language?)
-        connector_count = sum(1 for c in self.causal_connectors if c in thought_distillate.lower())
+        connector_count = sum(
+            1 for c in self.causal_connectors if c in thought_distillate.lower()
+        )
         if connector_count > 0:
             # Base score for attempting logic
             score += 2.0
-            found = [c for c in self.causal_connectors if c in thought_distillate.lower()]
+            found = [
+                c for c in self.causal_connectors if c in thought_distillate.lower()
+            ]
             trace_log.append(f"LOGIC_TRACE: Connected via {found}")
         else:
             trace_log.append("DISSONANCE: Lacks causal language (because, therefore).")
@@ -93,7 +100,9 @@ class CausalLinter:
 
         if anchor_matches:
             score += 5.0  # High value for citing sources
-            trace_log.append(f"AXIOM_TRACE: Anchored to {len(anchor_matches)} Governance Artifacts.")
+            trace_log.append(
+                f"AXIOM_TRACE: Anchored to {len(anchor_matches)} Governance Artifacts."
+            )
         else:
             trace_log.append("DISSONANCE: Floating Abstraction (No Governance Link).")
 

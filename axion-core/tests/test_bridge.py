@@ -1,4 +1,3 @@
-
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
 # Synergy Set: N/A
@@ -13,12 +12,12 @@ import sys
 # Add src to path so we can import modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
 
-from synarchy_bridge import SynarchyRegistry
+from Synarche_bridge import SynarcheRegistry
 
 
 def test_bridge():
-    print("Testing SynarchyRegistry...")
-    bridge = SynarchyRegistry("data/command_registry.json")
+    print("Testing SynarcheRegistry...")
+    bridge = SynarcheRegistry("data/command_registry.json")
 
     categories = bridge.get_all_categories()
     print(f"Categories found: {len(categories)}")
@@ -49,7 +48,9 @@ def test_bridge():
                     valid_commands += 1
                     # print(f"  OK: {cmd.get('name', 'UNKNOWN')}")
                 else:
-                    print(f"  FAIL: {path} -> {cmd.get('name', 'UNKNOWN')} Issues: {', '.join(issues)}")
+                    print(
+                        f"  FAIL: {path} -> {cmd.get('name', 'UNKNOWN')} Issues: {', '.join(issues)}"
+                    )
 
     validate_node(bridge.library)
 

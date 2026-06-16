@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-GUCA-007_UNIVERSALCOMMANDARCHITECTURE_V7.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SELT-GUCA-007-UNIVERSALCOMMANDARCHITECTURE-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                      | Description       |
+| :------------------ | :--------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SELT-GUCA-007-UNIVERSALCOMMANDARCHITECTURE-V7.0-001` | The Sovereign ID. |
+| **Official Name**   | `SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                 | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                          | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                 | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                              | The Network.      |
 
 # GUCA: Universal Command Architecture (v7.0 Ascended)
 
@@ -66,8 +77,8 @@
 
 - **Invocation:** `CMD: [Command Name]`
 - **Parameters:**
-    - `[param_name]` _(Type)_: `[Description]`
-    - `[param_name]` _(Type)_: `[Description]`
+  - `[param_name]` _(Type)_: `[Description]`
+  - `[param_name]` _(Type)_: `[Description]`
 
 ### 3.2. Auto-Trigger Conditions (Passive Triggers)
 
@@ -100,29 +111,11 @@
 
 > _(Mandatory for v7.0 Compliance. Defines this Command as an Active Skill/Spell.)_
 
-### 7.1. Skill Properties
+@[GVRN-BLK-RPG-SKILL-001]
 
-- _Rarity Rationale:_ `[Why is this command this tier?]`
-- **Skill Type:** `[Active (Manual) | Reactive (Triggered) | Sustained (Mode)]`
-- **Synergy Set:** `[Name of Set or N/A]`
-
-### 7.2. Celestial Chart Stats (The Effect)
-
-- **Stat Scaling:** `[Which stat improves this command's effectiveness? e.g., "Scales with Synergy."]`
-- **Primary Buff/Effect:** `[Result of casting.]`
-    - _Effect:_ `[e.g., "Instantly resolves 1 Dissonance Point."]`
-- **Passive Perk (If Equipped):** `[Name of Perk]`
-    - _Effect:_ `[e.g., "+10% Speed on all File Searches."]`
-
-### 7.3. Resource Economics (Mana Cost)
-
-- **Cognitive Load Cost:** `[Low | Medium | High | Extreme]`
-    - _Draw:_ `[e.g., "High: Consumes current context window focus."]`
-- **Cooldown/Limit:** `[e.g., "Unlimited" or "Once per Conversation Turn."]`
-
-- **Origin Quest ID:** `[Link to DQUEST-XXX]`
-- **Genesis Seed Used:** `[Link to CSL-XXX]`
 - **XP Award Value:** `[e.g., 50 XP per successful use]`
+
+@[GVRN-BLK-RPG-META-001]
 
 ---
 

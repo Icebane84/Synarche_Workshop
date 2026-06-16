@@ -1,6 +1,18 @@
-#!/usr/bin/env python3
 """
-# TOOL-SYN-001: Synarchy Driver
+artifact_anchor:
+  id: INFR.DRIVE_SYNARCHY.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+#!/usr/bin/env python3
+"""# TOOL-SYN-001: Synarche Driver
 # Purpose: Orchestrates the Loom, Weaver, and Resonance Scanner to generate a Synergy Report.
 """
 
@@ -23,14 +35,16 @@ except ImportError as e:
 
 def main():
     root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    print(f"--- Synarchy Driver Active ---")
+    print("--- Synarche Driver Active ---")
     print(f"Target Root: {root}")
 
     # 1. Resonance Scan
     print("\n[1] Running Resonance Scan...")
     total_files, aligned_files, unaligned_paths = scan_directory(Path(root))
     resonance_score = (aligned_files / total_files * 100) if total_files > 0 else 0.0
-    print(f"    Resonance Score: {resonance_score:.2f}% ({aligned_files}/{total_files})")
+    print(
+        f"    Resonance Score: {resonance_score:.2f}% ({aligned_files}/{total_files})"
+    )
 
     # 2. Loom Ingestion
     print("\n[2] Spinning the Cognitive Loom...")
@@ -38,7 +52,7 @@ def main():
 
     # Manually walk and ingest since Loom doesn't have a recursive walk init
     count = 0
-    for subdir, dirs, files in os.walk(root):
+    for subdir, _dirs, files in os.walk(root):
         # Skip hidden/env dirs
         if any(x in subdir for x in [".git", "__pycache__", "node_modules", "venv"]):
             continue
@@ -99,7 +113,11 @@ def main():
 
     # OUTPUT REPORT DATA
     report_data = {
-        "resonance": {"score": resonance_score, "total": total_files, "aligned": aligned_files},
+        "resonance": {
+            "score": resonance_score,
+            "total": total_files,
+            "aligned": aligned_files,
+        },
         "loom": {
             "nodes": len(loom.tapestry["nodes"]),
             "edges": len(loom.tapestry["edges"]),

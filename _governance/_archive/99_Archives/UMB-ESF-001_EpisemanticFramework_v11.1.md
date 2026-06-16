@@ -74,7 +74,7 @@ annotated with its evolving context, intent, and relationship to the larger syst
 ### 2.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **Wisdom +20**
-    - _Mechanism_: Enhances Superior Understanding via contextual querying and intent decoding.
+  - _Mechanism_: Enhances Superior Understanding via contextual querying and intent decoding.
 - **System Slot**: `PCM` (Phoenix Core Module)
 - **Synergy Set**: `The Weaver's Veil`
 

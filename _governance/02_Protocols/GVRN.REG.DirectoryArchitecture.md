@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.REG.DIRECTORYARCHITECTURE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.REG.DirectoryArchitecture
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -17,17 +27,17 @@
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
-| :--- | :--- | :--- |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
-| `GVRN.REG.OSLM` | `MAPPED_BY` | Relational edges are indexed in the Master Matrix. |
-| `SYNG.Index.Chronicle` | `RECORDS` | Structural evolution of the map is recorded here. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact                                 |
+| :---------------------- | :---------------- | :------------------------------------------------- |
+| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework.    |
+| `GVRN.REG.OSLM`         | `MAPPED_BY`       | Relational edges are indexed in the Master Matrix. |
+| `SYNG.Index.Chronicle`  | `RECORDS`         | Structural evolution of the map is recorded here.  |
 
 ---
 
 ## **Block E: Ethos (Hierarchy of Intent)**
 
-> [!IMPORTANT] **[APEX]** Structural Purity: The directory map must mirror the logical hierarchy of the Synarchy.
+> [!IMPORTANT] **[APEX]** Structural Purity: The directory map must mirror the logical hierarchy of the Synarche.
 >
 > **[PRI]** Navigational Fluidity: Every file must have a logical, predictable, and reachable path.
 >
@@ -47,9 +57,9 @@
 
 ## **Block G: System Slot & Synergy (BLK-RPG-001)**
 
-| System Slot            | Synergy Set          | Celestial Class | Authority Level |
-| :--------------------- | :------------------- | :-------------- | :-------------- |
-| `Topographic Controller` | `The World Map`     | `[STAR]`        | `EXECUTIVE`     |
+| System Slot              | Synergy Set     | Celestial Class | Authority Level |
+| :----------------------- | :-------------- | :-------------- | :-------------- |
+| `Topographic Controller` | `The World Map` | `[STAR]`        | `EXECUTIVE`     |
 
 ---
 
@@ -105,6 +115,4 @@ _The persistent memory layer._
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.REG.DirectoryArchitecture VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: DIR-OMEGA-V15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

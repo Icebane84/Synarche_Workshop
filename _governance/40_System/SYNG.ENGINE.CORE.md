@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.ENGINE.CORE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SYNG.ENGINE.CORE: The Bridge to Wisdom
 
 ## **Block A: The Identification Lock (UIP-V15)**

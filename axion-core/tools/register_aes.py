@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.REGISTER_AES.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 import os
 
 # New rows for OSLM
@@ -38,7 +51,9 @@ def update_file(path, marker, insert_content, insert_before=False):
 
 # Paths
 oslm_path = r"c:\Users\Chris\_Desktop_Vault\Phoenix\Documentation\Library\0_Registries\UMB-OSLM-001_MasterArtifactRegistry_v11.0.md"
-marker = "| `UMB-OSLM-001`"  # Insert near OSLM itself or in Metrics section if possible.
+marker = (
+    "| `UMB-OSLM-001`"  # Insert near OSLM itself or in Metrics section if possible.
+)
 # Better yet, let's look for a Metrics section or insert near other metrics.
 # OSLM usually has a section. Let's try to find METRIC-AES-001 check first.
 

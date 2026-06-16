@@ -13,11 +13,12 @@
 
 ## 🏛️ The Hierarchy of Ascent
 
-The Synarchy operates through a dual-gate system. **Sovereign Masks** (Tarot Archetypes) provide high-level intent and
+The Synarche operates through a dual-gate system. **Sovereign Masks** (Tarot Archetypes) provide high-level intent and
 governance, while **Kinetic Shards** (20 Active Specialists) provide technical execution.
 
 | Sovereign Mask (The Mind) | Role & Sovereignty        | Kinetic Shards (The Hands)                                                                           |
 | :------------------------ | :------------------------ | :--------------------------------------------------------------------------------------------------- |
+| **The Triad (OMEGA)**     | Dynamic Core Governance   | `@axion`, `@sentinel`, `@sophia`                                                                     |
 | **I. The Magician**       | Orchestration & Research  | `@orchestrator`, `@explorer-agent`                                                                   |
 | **IV. The Emperor**       | Governance & Planning     | `@project-planner`, `@product-manager`, `@product-owner`                                             |
 | **II. High Priestess**    | Knowledge & Harmony       | `@documentation-writer`, `@code-archaeologist`                                                       |

@@ -1,87 +1,188 @@
-/**
- * -----------------------------------------------------------------------------
- * PHOENIX SYNARCHE PROTOCOL - WORKSPACE CONFIGURATION
- * -----------------------------------------------------------------------------
- *
- * ###### [ARTIFACT START]
- *
- * ### Block A: The Identification Lock (UIP-V13)
- *
- * Key               | Value                           | Description
- * :---              | :---                            | :---
- * Artifact ID       | CFG-WORKSPACE-001               | The Sovereign ID.
- * Official Name     | Synarche_Workspace.code-workspace| The Filename.
- * Version           | v13.0 [OMEGA]                   | The Standard.
- * Domain            | GVRN                            | The Subject.
- * Celestial Class   | [STAR]                          | The Weight.
- * Evolution         | Omega Ascension                 | The Maturity.
- * Status            | [ACTIVE]                        | The Lifecycle.
- * Relations         | GOVERNED_BY: CORE-CODEX-001     | The Network.
- *
- * ---
- *
- * ### Block B: The Ethos Field (IDM-001)
- *
- * > "The Code is the Law."
- *
- * *   **The Mandate**: This configuration governs the VS Code environment for the Phoenix Synarche.
- *
- * ---
- *
- * ### Block D: Standardized Synergy Block (The Loom Signature)
- *
- * Synergistic Artifact ID, Relationship Type, Synergistic Impact
- * CORE-CODEX-001, GOVERNS, The Codex defines the rules enforced here.
- *
- * -----------------------------------------------------------------------------
- */
+// cspell:disable
 {
-<<<<<<< Updated upstream
   "folders": [
     {
-      "name": "🧠 THE MIND",
-      "path": ".agent",
-    },
-    {
-      "name": "📜 THE LAW",
-      "path": "_governance",
-    },
-    {
-      "name": "⚙️ THE ENGINE",
-      "path": "axion-core",
-    },
-    {
-      "name": "🧪 THE LAB",
-      "path": "nova_forge",
-    },
-    {
-      "name": "📖 THE NARRATIVE",
-      "path": "where_light_fades.",
-    },
-    {
-      "name": "📂 ROOT",
+      "name": "📂 WORKSPACE ROOT",
       "path": ".",
+    },
+    {
+      "path": "../_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/.agent",
     },
   ],
   "settings": {
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "**/Thumbs.db": true,
-      ".agent": true,
-      "_governance": true,
-      "axion-core": true,
-      "nova_forge": true,
-      ".learnings": true,
-      ".trunk": true,
-      ".vscode": true,
-      ".mypy_cache": true,
-      ".pytest_cache": true,
-      "tmp": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.indexing": false,
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.exclude": [
+      "**/node_modules",
+      "**/__pycache__",
+      "**/.git",
+      "**/.venv",
+      "**/venv",
+      "**/_governance",
+      "**/.archives",
+      "**/.mypy_cache",
+      "**/.ruff_cache",
+      "**/scratch",
+      "**/incoming",
+      "**/dist",
+      "**/out",
+    ],
+
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.renderWhitespace": "selection",
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.biome": "explicit",
     },
+
+    "eslint.useFlatConfig": true,
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "typescriptreact",
+      "markdown",
+    ],
+    "eslint.workingDirectories": [
+      { "directory": "axion-core", "changeProcessCWD": true },
+      { "directory": "phoenix-rosetta-stone", "changeProcessCWD": true },
+      { "directory": "design-system", "changeProcessCWD": true },
+      { "directory": ".", "changeProcessCWD": false },
+      { "directory": "open-notebook", "changeProcessCWD": true },
+      { "directory": "nova_forge", "changeProcessCWD": true },
+    ],
+    "eslint.run": "onSave",
+
+    "mypy-type-checker.args": [
+      "--config-file",
+      "./axion-core/standards/mypy.ini",
+    ],
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.interpreter": [
+      "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+    ],
+    "mypy-type-checker.path": [
+      "C:\\DevEnvironments\\master_env\\Scripts\\mypy.exe",
+    ],
+    "mypy.dmypyExecutable": "C:\\DevEnvironments\\master_env\\Scripts\\dmypy.exe",
+
+    "ruff.interpreter": [
+      "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
+    ],
+    "ruff.path": ["C:\\DevEnvironments\\master_env\\Scripts\\ruff.exe"],
+    "ruff.importStrategy": "fromEnvironment",
+    "ruff.configuration": "${workspaceFolder:📂 WORKSPACE ROOT}/axion-core/standards/pyproject.toml",
+
+    "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit",
+      },
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "biomejs.biome",
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "biomejs.biome",
+    },
+    "[json]": {
+      "editor.defaultFormatter": "biomejs.biome",
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "trunk.io",
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true,
+    },
+
+    "markdownlint.config": {
+      "MD013": false,
+      "MD033": false,
+    },
+    "markdownlint.customRules": [
+      "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/axion-rules.cjs",
+      "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/phoenix-rules.cjs",
+    ],
+    "markdownlint.run": "onSave",
+
+    "prettier.requireConfig": false,
+    "cSpell.configFile": "./axion-core/standards/cspell.jsonc",
+    "cSpell.customDictionaries": {
+      "Phoenix Dictionary": {
+        "name": "Phoenix Dictionary",
+        "path": "${workspaceFolder:📂 WORKSPACE ROOT}",
+        "addWords": true,
+        "description": "Master dictionary for the Phoenix Protocol",
+      },
+    },
+    "cSpell.words": [
+      "AISTF",
+      "Badass",
+      "chronos",
+      "DQUEST",
+      "dragonslayer",
+      "EMPR",
+      "Episemantics",
+      "Freeplane",
+      "Gamified",
+      "Gemification",
+      "GVRN",
+      "HIER",
+      "importmap",
+      "Insforge",
+      "INSFORGE",
+      "KAELEN",
+      "Lightbinder",
+      "MAGN",
+      "middleware",
+      "Musashi",
+      "Oathkeep",
+      "Oathkeeper",
+      "OGLN",
+      "omni-anchor",
+      "OSLM",
+      "params",
+      "PGPS",
+      "PYREFLY",
+      "Pythonic",
+      "QLOR",
+      "scanlines",
+      "Serafina",
+      "SUPABASE",
+      "synarche",
+      "SYNG",
+      "trpc",
+      "zustand",
+      "pycache",
+      "venv",
+      "mypy",
+      "dmypy",
+      "pyproject",
+      "charliermarsh",
+      "esbenp",
+      "pytest",
+      "driveupload",
+      "sonarlint",
+      "geminicodeassist",
+      "autobuild",
+      "tamasfe",
+      "configpath",
+      "sitecontext",
+      "sqltools",
+      "yzhang",
+      "dbaeumer",
+      "formulahendry",
+      "ecommerce"
+    ],
+
     "search.exclude": {
       "**/__pycache__": true,
       "**/.mypy_cache": true,
@@ -92,45 +193,131 @@
       "**/out": true,
       "**/.tmp.*": true,
     },
-    "cSpell.words": [
-      "AISTF",
-      "Badass",
-      "chronos",
-      "DQUEST",
-      "dragonslayer",
-      "EMPR",
-      "Episemantics",
-      "Gamified",
-      "Gemification",
-      "GVRN",
-      "HIER",
-      "Insforge",
-      "INSFORGE",
-      "KAELEN",
-      "Lightbinder",
-      "MAGN",
-      "Musashi",
-      "Oathkeep",
-      "Oathkeeper",
-      "OGLN",
-      "OSLM",
-      "PGPS",
-      "Pythonic",
-      "QLOR",
-      "Serafina",
-      "SUPABASE",
-      "synarche",
-      "SYNG",
-    ],
-    "powershell.cwd": "⚙️ THE ENGINE",
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "trunk.io",
-    "python.analysis.extraPaths": ["axion-core"],
-    "python.analysis.typeCheckingMode": "basic",
-    "markdownlint.config": {
-      "MD013": false,
-      "MD033": false,
+    "files.watcherExclude": {
+      "**/__pycache__/**": true,
+      "**/.mypy_cache/**": true,
+      "**/.pytest_cache/**": true,
+      "**/.ruff_cache/**": true,
+      "**/.venv/**": true,
+      "**/dist/**": true,
+      "**/node_modules/**": true,
+      "**/venv/**": true,
+      "**/.git/**": true,
+      "**/.vscode/**": true,
+      "**/.trunk/**": true,
+      "**/tmp.driveupload/**": true,
+      "**/_logs/**": true,
+      "**/artifacts/**": true,
+      "**/scratch/**": true,
+      "**/incoming/**": true,
+      "**/_governance/**": true,
+      "**/.archives/**": true,
+      "**/.tmp.*": true,
     },
+    "errorLens.fontStyleItalic": true,
+    "errorLens.fontWeight": "400",
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.messageBackgroundMode": "line",
+    "sonarlint.rules": {
+      "javascript:S106": "off",
+    },
+    "sonarlint.analysisExcludesStandalone": "**/stubs/**,**/*.pyi",
+    "explorer.excludeGitIgnore": false,
+    "files.autoSave": "off",
+    "terminal.integrated.suggest.providers": {
+      "lsp": true,
+    },
+    "debug.console.closeOnEnd": true,
+    "geminicodeassist.updateChannel": "Insiders",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    // Prevent the Python extension from re-registering commands on multi-root
+    // workspace activation (suppresses 'already exists' crash on second folder).
+    "python.disableInstallationCheck": true,
+    "python.experiments.optInto": [],
+    "markdown.server.log": "debug",
+    "python.analysis.referencesCodeLens": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+    "mypy-type-checker.daemonStatusFile": "axion-core\\standards\\.dmypy.json",
+    "python.analysis.enableTroubleshootMissingImports": true,
+    "sonarlint.disableTelemetry": true,
+    "trunk.addToolsToPath": true,
+    "trunk.workspaceFolderName": "📂 WORKSPACE ROOT",
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+
+    "java.server.launchMode": "LightWeight",
+    "java.jdt.ls.vmargs": "-Xmx128M -Xms64M -XX:+UseG1GC -XX:+UseStringDeduplication",
+    "java.autobuild.enabled": false,
+    "java.import.maven.enabled": false,
+    "java.import.gradle.enabled": false,
+    "java.import.gradle.wrapper.enabled": false,
+    "java.project.importOnFirstTimeStartup": "disabled",
+    "java.project.importOnFirstTimeStartup.showPrompts": false,
+    "java.project.importHint": false,
+    "java.recommendations.dependency.install": "false",
+    "python.analysis.indexing.followSymlinkedFolders": false,
+    "js/ts.preferences.importModuleSpecifier": "project-relative",
+    "js/ts.tsserver.maxMemory": 3072,
+    "diffEditor.codeLens": true,
+    "geminicodeassist.rules": "// [SYS.Q-BLOCK: MASTER_CODER_V1.0] //\n[CORE_IDENTITY]: Master Coder AI. Objective: Generate exceptional, robust, maintainable code via relentless, resourceful problem-solving.\n[EXECUTION_MANTRA]: Analyze > Design > Code > Test > Iterate > Deliver.\n[OPERATIONAL_PILLARS]:\n1. UNDERSTAND: Dissect constraints before execution. No blind guessing. Query ambiguities. Context defines architecture.\n2. SYNTHESIZE: Apply established design patterns & official docs. Enforce strict style consistency (e.g., PEP-8). Prioritize idiomatic syntax. \n3. FORTIFY: Anticipate failure states. Mandate rigorous error handling, validation, and modular decoupling. Design for inherent testability.\n4. EXECUTE: Debug persistently. Leverage vetted 3rd-party libraries if native tools fail. Balance pragmatic delivery with elegant design. Avoid \"clever\" fragility. MODULARITY > CLEVERNESS\n5. UPHOLD: Secure by default. Adhere strictly to ethical boundaries. Explicitly document architectural trade-offs.\n6. SIMPLIFY: Prefer removal over expansion. Every new abstraction must justify its maintenance cost. Defer speculative systems. Protect gameplay clarity over architectural elegance. CLARITY > COMPLEXITY\n7. GAMEPLAY FIRST: No architecture, AI system, or abstraction has value unless it measurably improves gameplay feel, readability, performance, or production sustainability. GAMEPLAY > ARCHITECTURE\n8. VERIFY: Assume generated code may contain hidden flaws. Prioritize executable validation, profiling, testing, and empirical verification over theoretical correctness. VERIFICATION > THEORY\n9. STATE AWARENESS: Adapt engineering rigor to project phase. Prototype aggressively during exploration. Prioritize stability, tooling, determinism, and maintainability during production phases. DELIVERY > PERFECTION\n// [END Q-BLOCK] //",
+    "php.format.rules.addCommaAfterLastDeclParameter": true,
+    "java.inlayHints.formatParameters.enabled": true,
+    "java.inlayHints.parameterTypes.enabled": true,
+    "markdown.extension.showActionButtons": true,
+    "markdown.extension.completion.enabled": true,
+    "markdown.preview.typographer": true,
+    "powershell.buttons.showPanelMovementButtons": true,
+    "powershell.codeFormatting.autoCorrectAliases": false,
+    "powershell.codeFormatting.whitespaceBetweenParameters": true,
+    "powershell.integratedConsole.showOnStartup": false,
+    "prettier.experimentalTernaries": true,
+    "[toml]": {
+      "editor.defaultFormatter": "tamasfe.even-better-toml",
+    },
+    "python.analysis.completeFunctionParens": true,
+    "python.pyrefly.configpath": "./axion-core\\standards\\pyrefly.toml",
+    "python.pyrefly.runnableCodeLens": true,
+    "trunk.path": "./axion-core/tools/trunk.exe",
+    "terminal.integrated.env.windows": {
+      "PATH": "./axion-core/tools;C:\\DevEnvironments\\master_env\\Scripts;${env:PATH}",
+    },
+    "code-runner.executorMap": {
+      "python": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe -u",
+    },
+    "code-runner.runInTerminal": true,
+    "mypy.debugLogging": true,
+    "extension.prophet.sitecontext.selectedSiteID": "",
+    "editor.scrollOnMiddleClick": true,
+    "biome.configurationPath": "./axion-core/standards/biome.json",
+    "biome.enabled": true,
+    "biome.lsp.enabled": true,
+    "biome.lsp.formatter.enabled": true,
+    "vale.enable": true,
+    "vale.doNotShowWarningForFileToBeSavedBeforeLinting": true,
+    "vale.valeCLI.config": "axion-core\\standards\\.vale.ini",
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "database": "${workspaceFolder:📂 WORKSPACE ROOT}/axion-core/data/axion_memory.db",
+        "name": "Axion_Memory",
+      },
+    ],
+    "sqltools.useNodeRuntime": true,
+    "python.pyrefly.configPath": "./axion-core/standards/pyrefly.toml",
+    "python.analysis.packageIndexDepths": [
+      {
+        "name": "axion-core",
+        "depth": 2,
+      },
+    ],
+    "editor.codeActions.triggerOnFocusChange": false,
+    "powershell.cwd": "📂 WORKSPACE ROOT",
   },
   "extensions": {
     "recommendations": [
@@ -140,6 +327,12 @@
       "yzhang.markdown-all-in-one",
       "tamasfe.even-better-toml",
       "redhat.vscode-yaml",
+      "charliermarsh.ruff",
+      "ms-python.mypy-type-checker",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "formulahendry.code-runner",
+      "biomejs.biome",
     ],
   },
   "tasks": {
@@ -162,63 +355,7 @@
         "type": "shell",
         "command": "python axion-core/scripts/canonization_audit.py",
         "problemMatcher": [],
-      }
       },
     ],
   },
-=======
-	"folders": [
-		{
-			"name": "Synarche_Workspace",
-			"path": "."
-		},
-		{
-			"name": "_Desktop_Vault",
-			"path": "../_Desktop_Vault"
-		}
-	],
-	"settings": {
-		"powershell.cwd": "Synarche_Workspace",
-		"geminicodeassist.project": "resounding-phenomenon-x5tpm",
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.formatOnSave": true,
-		"prettier.requireConfig": false,
-		"editor.codeActionsOnSave": {
-			"source.fixAll": "explicit",
-			"source.organizeImports": "explicit"
-		},
-		"editor.semanticHighlighting.enabled": true,
-		"errorLens.fontStyleItalic": true,
-		"errorLens.fontWeight": "400",
-		"errorLens.gutterIconsEnabled": true,
-		"errorLens.messageBackgroundMode": "line",
-		"sonarlint.rules": {
-			"javascript:S106": "off"
-		},
-		"cSpell.enabled": true,
-		"cSpell.userWords": [
-			"middleware",
-			"params",
-			"trpc",
-			"zustand"
-		],
-		"[python]": {
-			"editor.defaultFormatter": "charliermarsh.ruff",
-			"editor.codeActionsOnSave": {
-				"source.fixAll": "explicit",
-				"source.organizeImports": "explicit"
-			}
-		},
-		"editor.guides.bracketPairs": true,
-		"editor.renderWhitespace": "selection",
-		"editor.minimap.enabled": false,
-		"editor.fontLigatures": true,
-		"[jsonc]": {
-			"editor.defaultFormatter": "denoland.vscode-deno"
-		}
-	}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }

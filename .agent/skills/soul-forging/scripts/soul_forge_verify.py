@@ -1,7 +1,7 @@
+import argparse
 import os
 import re
 import sys
-import argparse
 
 
 def verify_soul_artifact(file_path):
@@ -58,7 +58,7 @@ if __name__ == "__main__":
             print(f"\n[SUCCESS] {len(results)} artifacts verified in {args.dir}")
             sys.exit(0)
         else:
-            print(f"\n[FAILURE] One or more artifacts failed verification.")
+            print("\n[FAILURE] One or more artifacts failed verification.")
             sys.exit(1)
 
     elif args.file:

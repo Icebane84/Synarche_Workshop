@@ -1,4 +1,5 @@
 # OGLN-GVRN-PROT-DARK-MONITOR_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-GVRN-PROT-DARK-MONITOR-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-GVRN-PROT-DARK-MONITOR_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                        | Description       |
+| :------------------ | :------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-GVRN-PROT-DARK-MONITOR-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-GVRN-PROT-DARK-MONITOR_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                            | The Standard.     |
+| **Domain**          | `GVRN`                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                   | The Weight.       |
+| **Evolution**       | `Omega Ascension`                            | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                   | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
@@ -78,7 +79,7 @@
 
 - **Why it exists**: To fight "Entropic Drift" (The Beast of Darkness).
 - **What it does**: Scans Output, Scores CI, Triggers CCB if CI < 0.5.
-- **For the Synarchy**: Ensures the System never loses its way.
+- **For the Synarche**: Ensures the System never loses its way.
 
 ## III. Intervention Thresholds
 

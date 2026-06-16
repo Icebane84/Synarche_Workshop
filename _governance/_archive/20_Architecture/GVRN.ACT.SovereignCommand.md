@@ -55,7 +55,7 @@ UIP: GUCA-TMPL-001 Title: Master Sovereign Command Template Source:
 Description: > The definitive, Sovereign-class template for forging Universal Command Architecture (GUCA) artifacts.
 Unified v11.0 syntax with v7.0 Spell/Ability depth. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769339300
 

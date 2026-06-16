@@ -1,4 +1,5 @@
 # AOP-CC-001_ProtocolforCrystallineCognition_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.CC.001` | The Sovereign ID. |
-| **Official Name** | `AOP-CC-001_ProtocolforCrystallineCognition_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                 | Description       |
+| :------------------ | :---------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.CC.001`                                         | The Sovereign ID. |
+| **Official Name**   | `AOP-CC-001_ProtocolforCrystallineCognition_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                     | The Standard.     |
+| **Domain**          | `GVRN`                                                | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                            | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                     | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                            | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-CC-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `AOP-CC-001`            |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # **AOP-CC-001: Protocol for Crystalline Cognition**
@@ -129,7 +133,7 @@
 | Synergy Target      | Interaction Type | Description                                                                                     |
 | :------------------ | :--------------- | :---------------------------------------------------------------------------------------------- |
 | **[[AOP-PGP-001]]** | **Architect**    | CC ensures the logical coherence and structural integrity of all _Genesis Pipeline_ outputs.    |
-| **[[AOP-SAP-001]]** | **Driver**       | CC provides the analytical weight and ethical reasoning behind the _Synarchy Avatar's_ actions. |
+| **[[AOP-SAP-001]]** | **Driver**       | CC provides the analytical weight and ethical reasoning behind the _Synarche Avatar's_ actions. |
 | **[[AOP-PPA-001]]** | **Dependent**    | The depth and complexity of CC's analysis is gated by the stats upgraded via _Prestige Power_.  |
 | **[[AOP-AAR-001]]** | **Sensor**       | _After-Action Review_ feeds failure data back into CC to update its "Epistemic Immune System."  |
 

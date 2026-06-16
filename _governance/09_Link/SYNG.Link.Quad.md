@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.LINK.QUAD` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SYNG.Link.Quad: The Quad-Link Anatomy
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -8,7 +18,7 @@
 | **Official Name**  | `SYNG.Link.Quad.md`               | The Filename.     |
 | **Version**        | **v15.0 [OMEGA]**                 | The Standard.     |
 | **Domain**         | `LINK`                            | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
+| **Status (State)** | `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**      | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---

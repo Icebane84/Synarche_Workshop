@@ -7,12 +7,12 @@ BLOCK_F_PATTERN = re.compile(
     re.DOTALL,
 )
 BLOCK_G_PATTERN = re.compile(
-    r"### \*\*Block G: The Omni-Anchor \(System Snapshot\)\*\*.*?\[OMNI-ARTIFACT-ANCHOR\].*?(?:---|$)",
+    r"### \*\*Block G: The Omni-Anchor \(System Snapshot\)\*\*.*?\* \[OMNI-ARTIFACT-ANCHOR\],?.*? \[PHOENIX-ARTIFACT-ANCHOR\].*?(?:---|$)",
     re.DOTALL,
 )
 
 
-def refactor_file(file_path: Path):
+def refactor_file(file_path: Path) -> bool:
     """Replaces hardcoded blocks with TRANSCLUDE tags."""
     content = file_path.read_text(encoding="utf-8")
     original_content = content
@@ -35,7 +35,7 @@ def refactor_file(file_path: Path):
     return False
 
 
-def grand_weave(target_dir: str):
+def grand_weave(target_dir: str) -> None:
     """Recursively refactor the governance substrate."""
     root = Path(target_dir).resolve()
     print(f"\n>>> INITIATING GRAND WEAVE REFACTOR: {root}\n")

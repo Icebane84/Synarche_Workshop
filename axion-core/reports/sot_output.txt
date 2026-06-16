@@ -501,7 +501,7 @@
 [!] AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md
     <- Linked from GVRN.OSLM.001.md, but does not link back.
     <- Linked from 00_INDEX.md, but does not link back.
-    <- Linked from ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md, but does not link back.
+    <- Linked from ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md, but does not link back.
 [!] CHECKLIST-PREFLIGHT-001.md
     <- Linked from GVRN.OSLM.001.md, but does not link back.
     <- Linked from 00_INDEX.md, but does not link back.
@@ -518,7 +518,7 @@
 [!] ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md
     <- Linked from GVRN.OSLM.001.md, but does not link back.
     <- Linked from 00_INDEX.md, but does not link back.
-[!] ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+[!] ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md
     <- Linked from GVRN.OSLM.001.md, but does not link back.
     <- Linked from 00_INDEX.md, but does not link back.
 [!] GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md
@@ -533,10 +533,10 @@
 [!] GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md
     <- Linked from GVRN.OSLM.001.md, but does not link back.
     <- Linked from 00_INDEX.md, but does not link back.
-[!] GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+[!] GVRN-ENTITY-001_SynarcheEntities_v11.0.md
     <- Linked from 00_INDEX.md, but does not link back.
-[!] GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
-    <- Linked from GVRN-ENTITY-001_SynarchyEntities_v13.0.md, but does not link back.
+[!] GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
+    <- Linked from GVRN-ENTITY-001_SynarcheEntities_v13.0.md, but does not link back.
 [!] GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md
     <- Linked from 00_INDEX.md, but does not link back.
 [!] LEGACY-ANALYSIS-001_AshenOath_v1.0.md
@@ -732,7 +732,7 @@
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
 [*] SYNG.PROT.ArchivalSupersessionProtocol.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
-[*] SYNG.PROT.SynarchyAvatarProtocol.md
+[*] SYNG.PROT.SynarcheAvatarProtocol.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
 [*] UNCERTAIN.UNK..md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
@@ -1242,7 +1242,7 @@
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
 [*] UNCERTAIN.UNK.ContextWeaveReport.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
-[*] UNCERTAIN.UNK.StateOfTheSynarchy.md
+[*] UNCERTAIN.UNK.StateOfTheSynarche.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
 [*] 00_INDEX.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
@@ -1476,7 +1476,7 @@
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
 [*] ENTITY-SENTINEL-PRIME-001_TheEthicalGovernor_v1.0.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
-[*] ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+[*] ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
 [*] GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
@@ -1486,11 +1486,11 @@
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
 [*] GVRN-COMP-001_CognitiveComplexity_v13.0.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
-[*] GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+[*] GVRN-ENTITY-001_SynarcheEntities_v11.0.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
-[*] GVRN-ENTITY-001_SynarchyEntities_v13.0.md
+[*] GVRN-ENTITY-001_SynarcheEntities_v13.0.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
-[*] GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+[*] GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md
 [*] GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md
     Should potentially link to: (METADATA) UMB-LEX-001_TheArchitecturalLexicon_v1.0.md, AOP-AI-PROTO-001_AIProtocol.md

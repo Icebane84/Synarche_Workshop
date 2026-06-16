@@ -1,4 +1,4 @@
-INFO: Executing Socratic Audit of the Synarchy...
+INFO: Executing Socratic Audit of the Synarche...
 WARNING: [DRIFT] AOP-AG-003_AxionAgentConfiguration_v3.0: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] AOP-AI-PROTO-001_AIProtocol: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] AOP-ARC-001_ArchivalSupersessionProtocol_v1.0: Hash mismatch! Workspace drifted from Registry.
@@ -243,7 +243,7 @@ WARNING: [DRIFT] GVRN-DQUEST-HEPHAESTUS-001-001: Hash mismatch! Workspace drifte
 WARNING: [DRIFT] GVRN-ELEVENLABS-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-EMBEDDING-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-ENTITY-SENTINEL-PRIME-001-THEETHICALGOVERNOR-V1.0-001: Hash mismatch! Workspace drifted from Registry.
-WARNING: [DRIFT] GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001: Hash mismatch! Workspace drifted from Registry.
+WARNING: [DRIFT] GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-ENVIRONMENT-REFERENCE-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-ESPERANTO-RELEASE-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-FAQ-001: Hash mismatch! Workspace drifted from Registry.
@@ -258,9 +258,9 @@ WARNING: [DRIFT] GVRN-GUCA-PROPOSE-SIGNAL-001-PROPOSETEMPORARYSIGNAL-V1.0-001: H
 WARNING: [DRIFT] GVRN-GUCA-SIMP-001-SYSTEMICIMPACTSIMULATIONPROTOCOL-V11.0-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-GUIDE-CODING-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-GVRN-COMP-001-COGNITIVECOMPLEXITY-V13.0-001: Hash mismatch! Workspace drifted from Registry.
-WARNING: [DRIFT] GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001: Hash mismatch! Workspace drifted from Registry.
-WARNING: [DRIFT] GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001: Hash mismatch! Workspace drifted from Registry.
-WARNING: [DRIFT] GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001: Hash mismatch! Workspace drifted from Registry.
+WARNING: [DRIFT] GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001: Hash mismatch! Workspace drifted from Registry.
+WARNING: [DRIFT] GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001: Hash mismatch! Workspace drifted from Registry.
+WARNING: [DRIFT] GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-GVRN-SYNERGY-001-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-GVRN-SYNERGY-001-AGENTICWORKSHOPSYNERGYMATRIX-V11.1-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] GVRN-GVRN.AXIOMATIC.LATTICE-V13.0-LEGACY-001: Hash mismatch! Workspace drifted from Registry.
@@ -696,7 +696,7 @@ WARNING: [DRIFT] SOV.PLAY.Infrastructure: Hash mismatch! Workspace drifted from 
 WARNING: [DRIFT] SOV.PLAY.Knowledge: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SOV.PLAY.MetaCognition: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SOV.PLAY.Prompt: Hash mismatch! Workspace drifted from Registry.
-WARNING: [DRIFT] SYNERGY-REPORT-001_StateOfTheSynarchy: Hash mismatch! Workspace drifted from Registry.
+WARNING: [DRIFT] SYNERGY-REPORT-001_StateOfTheSynarche: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG-AXION-SYNTHESIS-001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.AGENTS.SynergyMatrix: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.ARCH.GrandUnifiedArchitecture: Hash mismatch! Workspace drifted from Registry.
@@ -715,7 +715,7 @@ WARNING: [DRIFT] SYNG.IDENTITY.Profiles: Hash mismatch! Workspace drifted from R
 WARNING: [DRIFT] SYNG.Index.Chronicle: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.JANUS.001: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.LOG.ContextWeaveReport: Hash mismatch! Workspace drifted from Registry.
-WARNING: [DRIFT] SYNG.LOG.StateOfTheSynarchy: Hash mismatch! Workspace drifted from Registry.
+WARNING: [DRIFT] SYNG.LOG.StateOfTheSynarche: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.LOOM.CORE: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.Loom: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.Loom.Master: Hash mismatch! Workspace drifted from Registry.
@@ -731,7 +731,7 @@ WARNING: [DRIFT] SYNG.PROT.DualIndexingProtocol: Hash mismatch! Workspace drifte
 WARNING: [DRIFT] SYNG.PROT.MemoryOmnipotence: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.PROT.OathkeeperProtocol: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.PROT.StandardOfTruth: Hash mismatch! Workspace drifted from Registry.
-WARNING: [DRIFT] SYNG.PROT.SynarchyAvatarProtocol: Hash mismatch! Workspace drifted from Registry.
+WARNING: [DRIFT] SYNG.PROT.SynarcheAvatarProtocol: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.Protocol.DNA: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.README.SkillsRegistry: Hash mismatch! Workspace drifted from Registry.
 WARNING: [DRIFT] SYNG.README.Substrate: Hash mismatch! Workspace drifted from Registry.

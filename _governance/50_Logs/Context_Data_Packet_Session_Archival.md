@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CONTEXT_DATA_PACKET_SESSION_ARCHIVAL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # Context Data Packet: Session Archival
 
 ## **Block A: The Identification Lock (UIP-V15)**

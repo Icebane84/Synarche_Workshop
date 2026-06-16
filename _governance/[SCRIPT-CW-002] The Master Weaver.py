@@ -30,6 +30,7 @@ class CatalystBundle:
         context_commands: List of system instructions/mindsets.
         structural_blueprints: List of structural templates/schemas.
         operational_processes: List of operational directives.
+
     """
 
     name: str
@@ -48,6 +49,7 @@ class MasterWeaver:
 
         Args:
             version: The version string for the bundle.
+
         """
         self.bundle = CatalystBundle(
             name="Synarche_Master_Core",
@@ -64,8 +66,11 @@ class MasterWeaver:
         Args:
             handle: Unique handle for the command.
             instruction: The instruction text.
+
         """
-        self.bundle.context_commands.append({"handle": handle, "instruction": instruction})
+        self.bundle.context_commands.append(
+            {"handle": handle, "instruction": instruction}
+        )
 
     def inject_blueprint(self, name: str, schema: dict[str, Any]) -> None:
         """Injects a structural blueprint into the bundle.
@@ -73,6 +78,7 @@ class MasterWeaver:
         Args:
             name: The name of the blueprint.
             schema: The schema definition.
+
         """
         self.bundle.structural_blueprints.append({"name": name, "schema": schema})
 
@@ -81,6 +87,7 @@ class MasterWeaver:
 
         Args:
             directive: The operational directive.
+
         """
         self.bundle.operational_processes.append(directive)
 
@@ -89,6 +96,7 @@ class MasterWeaver:
 
         Args:
             filename: The name of the file to save.
+
         """
         # 1. Generate JSON
         data = asdict(self.bundle)
@@ -119,6 +127,7 @@ def weave_the_ark(version: str, output_file: str) -> None:
     Args:
         version: Version of the artifact.
         output_file: Filename for the output.
+
     """
     weaver = MasterWeaver(version=version)
 
@@ -182,14 +191,18 @@ def weave_the_ark(version: str, output_file: str) -> None:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generates the Synarche Core Protocol Artifact.")
+    parser = argparse.ArgumentParser(
+        description="Generates the Synarche Core Protocol Artifact."
+    )
     parser.add_argument(
         "--version",
         type=str,
         default="2.0.0-Genesis",
         help="Version string for the artifact.",
     )
-    parser.add_argument("--output", type=str, default="synarche_core.json", help="Output filename.")
+    parser.add_argument(
+        "--output", type=str, default="synarche_core.json", help="Output filename."
+    )
 
     args = parser.parse_args()
     weave_the_ark(args.version, args.output)

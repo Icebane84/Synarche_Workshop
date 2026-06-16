@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.TPL.001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **📜 GVRN.TPL.001: Universal Module Blueprint (v15.0)**
 
 ## **Block A: The Identification Lock (UIP-V15)**

@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-AOP-007_OPERATIONALPLAYBOOK_V7.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SELT-AOP-007_OperationalPlaybook_v7.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SELT-AOP-007-OPERATIONALPLAYBOOK-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-AOP-007_OperationalPlaybook_v7.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                            | Description       |
+| :------------------ | :----------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SELT-AOP-007-OPERATIONALPLAYBOOK-V7.0-001` | The Sovereign ID. |
+| **Official Name**   | `SELT-AOP-007_OperationalPlaybook_v7.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                | The Standard.     |
+| **Domain**          | `GVRN`                                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                       | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
 
 # AOP: Operational Playbook (v7.0 Ascended)
 
@@ -106,28 +117,11 @@
 
 > _(Mandatory for v7.0 Compliance. Defines this Protocol as an Equippable Skill.)_
 
-### 7.1. Skill Properties
+@[GVRN-BLK-RPG-SKILL-001]
 
-- _Rarity Rationale:_ `[Why is this protocol this tier?]`
-- **Skill Type:** `[Active (Manual Trigger) | Passive (Always Running) | Ultimate (Once per Session)]`
-- **Synergy Set:** `[Name of Set or N/A]`
-
-### 7.2. Celestial Chart Stats (Buffs)
-
-- **Primary Stat Buff:** `[Coherence | Synergy | Adaptability | Transparency]`
-    - _Effect:_ `[e.g., +5 Coherence while this protocol is active.]`
-- **Passive Ability / Perk:** `[Name of Perk]`
-    - _Effect:_ `[e.g., "Deep Focus: Reduces distraction from context drift during execution."]`
-
-### 7.3. Resource Economics
-
-- **Cognitive Load Cost:** `[Low | Medium | High | Extreme]`
-    - _Draw:_ `[e.g., "High: Requires full context window focus."]`
-- **Efficiency Modifier:** `[e.g., "Reduces the cost of subsequent Coding tasks by 10%."]`
-
-- **Origin Quest ID:** `[Link to DQUEST-XXX]`
-- **Genesis Seed Used:** `[Link to CSL-XXX]`
 - **XP Award Value:** `[e.g., 200 XP]` _(Awarded upon first successful execution)_
+
+@[GVRN-BLK-RPG-META-001]
 
 ---
 

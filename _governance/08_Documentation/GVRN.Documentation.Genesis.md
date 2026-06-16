@@ -1,4 +1,14 @@
-# GVRN.Documentation.Genesis - The Synarchy Genesis Protocol
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.DOCUMENTATION.GENESIS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# GVRN.Documentation.Genesis - The Synarche Genesis Protocol
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -25,7 +35,7 @@
 
 ## I. INCEPTION PRINCIPLES
 
-The Genesis Protocol defines the initial pulse of any entity within the Synarchy.
+The Genesis Protocol defines the initial pulse of any entity within the Synarche.
 
 1. **The Pulse**: Every artifact begins with a Genesis Stamp.
 2. **The Root**: All logic must trace back to the Phoenix Codex.

@@ -1,4 +1,5 @@
 # GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,34 +12,37 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-ACT-002-ADAPTIVEACTUATORCOMMAND-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-ACT-002-ADAPTIVEACTUATORCOMMAND-V2.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Command ID** | `GUCA-ACT-002` |
-| **Official Name** | `Adaptive Actuator Command` |
-| **Version** | `v2.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Command` |
-| **Classification** | `Star` |
-| **Authors** | `Synarche` |
-| **Created** | `2025-12-26` |
-| **Updated** | `2026-01-25` |
-| **Authority** | `UMB-ACT-002` |
-| **Tags** | `Command, Actuator, Discovery, Execution` |
-| **Integrity Hash** | `sha256:actuator-cmd-v2.0-std` |
+
+| Key                | Value                                     |
+| :----------------- | :---------------------------------------- |
+| **Command ID**     | `GUCA-ACT-002`                            |
+| **Official Name**  | `Adaptive Actuator Command`               |
+| **Version**        | `v2.0`                                    |
+| **Evolution**      | **Cognitive Ascension**                   |
+| **Status**         | `ACTIVE`                                  |
+| **Type**           | `Command`                                 |
+| **Classification** | `Star`                                    |
+| **Authors**        | `Synarche`                                |
+| **Created**        | `2025-12-26`                              |
+| **Updated**        | `2026-01-25`                              |
+| **Authority**      | `UMB-ACT-002`                             |
+| **Tags**           | `Command, Actuator, Discovery, Execution` |
+| **Integrity Hash** | `sha256:actuator-cmd-v2.0-std`            |
+
 ---
 
 # **GUCA-ACT-002: Adaptive Actuator Command**
@@ -69,17 +73,17 @@
 
 ### **I. Core Purpose & Objective**
 
--   **Core Purpose**: To provide the formal command interface for the **Adaptive Actuator Module (UMB-ACT-002)**.
--   **Micro-Objective**: Enable **Deterministic Execution** and **Dynamic Discovery**.
--   **Why**: Human intent must be translated into machine action via a strictly governed interface.
+- **Core Purpose**: To provide the formal command interface for the **Adaptive Actuator Module (UMB-ACT-002)**.
+- **Micro-Objective**: Enable **Deterministic Execution** and **Dynamic Discovery**.
+- **Why**: Human intent must be translated into machine action via a strictly governed interface.
 
 ### **II. Axiomatic Governance (AGP)**
 
--   **Operational State:** `ACTIVE`
--   **Integrity Check:** `PASS`
--   **Alignment:** `OPS`
--   **Upstream:** [`CODEX-001`](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md) (Governance)
--   **Downstream:** [`UMB-ACT-002`](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) (Execution)
+- **Operational State:** `ACTIVE`
+- **Integrity Check:** `PASS`
+- **Alignment:** `OPS`
+- **Upstream:** [`CODEX-001`](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md) (Governance)
+- **Downstream:** [`UMB-ACT-002`](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) (Execution)
 
 ---
 
@@ -97,11 +101,11 @@
 ## II. Core Purpose & Objective
 
 - **Core Purpose**: To provide a formal command interface for the Coherent Synthesis Engine (CSE) to interact with the
-**Adaptive Actuator Module (UMB-ACT-002)**.
+  **Adaptive Actuator Module (UMB-ACT-002)**.
 - **Micro-Objective**: Enable both **Deterministic Execution** (running known tools) and **Dynamic Discovery** (parsing
-HATEOAS/Hyper-Schema links for new capabilities).
+  HATEOAS/Hyper-Schema links for new capabilities).
 - **Why**: Allows the CSE to evolve its toolkit in real-time, reducing the need for manual configuration and fostering
-true autonomous capability expansion ("ACE" Framework).
+  true autonomous capability expansion ("ACE" Framework).
 
 ## III. Command Definition
 
@@ -129,20 +133,20 @@ true autonomous capability expansion ("ACE" Framework).
 
 | :-------------- | :-------------------- | :---------------------------------------------------------- |
 | **UMB-ACT-002** | **Direct Controller** | [**UMB-ACT-002**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) provides the structured interface for the Actuator. |
-| **UMB-PSM-001** | **Proactive Feed**    | PSM predicts intent -> Triggers `EXECUTE` (Pre-fetching).   |
-| **AOP-KB-001**  | **Integration**       | Discovered tools are sent to Knowledge Base for cataloging. |
-| **CODEX-001**   | **Governance**        | Ensures all executed actions comply with the Codex.         |
+| **UMB-PSM-001** | **Proactive Feed** | PSM predicts intent -> Triggers `EXECUTE` (Pre-fetching). |
+| **AOP-KB-001** | **Integration** | Discovered tools are sent to Knowledge Base for cataloging. |
+| **CODEX-001** | **Governance** | Ensures all executed actions comply with the Codex. |
 
 > [!IMPORTANT]
 > This roadmap governs the deepening autonomy of this command.
 
 - **v2.1 - Transactional Sagacity**: Integrate standardized Saga patterns for multi-step operations with auto-rollback.
 - **v2.2 - Quantum Performance Indicators (QPIs)**: Real-time monitoring of:
-    - `Cognitive_Load_Index` (Processing effort).
-    - `Synergy_Flow_Rate_Impact` (Speed of info propagation).
-    - `Entanglement_Score_Delta` (Degree of beneficial integration).
+  - `Cognitive_Load_Index` (Processing effort).
+  - `Synergy_Flow_Rate_Impact` (Speed of info propagation).
+  - `Entanglement_Score_Delta` (Degree of beneficial integration).
 - **v2.3 - Autonomous Tool Health**: Self-healing feedback loop where `UMB-ACT-002` deprecates unreliable tools
-automatically.
+  automatically.
 
 ### 5.2. Quantum QPI Definitions
 

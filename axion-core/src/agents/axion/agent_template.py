@@ -1,45 +1,30 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.AGENT_TEMPLATE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
 
-## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.agent.template`                | The Sovereign ID. |
-| **Official Name** | `agent_template.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-AGT-TMP-001`            | The Sovereign ID. |
+| **Official Name**   | `agent_template.py`           | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-AGT`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
----
-
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-
-## **[ARTIFACT END]**
+**The Spirit Bomb Axiom: Agentic Integrity (Law 35)**
+> Implemented from Blueprint `GVRN.REG.AgentTemplate.md`.
+> Ethos: Purpose through Template.
 """
 
 import asyncio
@@ -89,7 +74,10 @@ __all__ = [
 if __name__ == "__main__":
     # Test execution of the consolidated loop
     async def run_test() -> None:
-        """Execute a cognitive loop test for the Axion Agent Vessel."""
+        """Executes a cognitive loop test for the Axion Agent Vessel.
+
+        Initializes the runtime and streams events based on a test state.
+        """
         runtime = AxionRuntime()
         instance = runtime.app
 
@@ -108,7 +96,7 @@ if __name__ == "__main__":
         )
 
         state = AxionState(
-            input="Review the Synarchy Protocol for Zero Entropy.",
+            input="Review the Synarche Protocol for Zero Entropy.",
             rpg_stats=rpg,
             gamemaster_state=GamemasterState(),
             lightbinder_state=LightbinderState(),
@@ -119,11 +107,3 @@ if __name__ == "__main__":
             print(event)
 
     asyncio.run(run_test())
-
-# ---
-# 
-# ---
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.agent.template VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 2f6c3aeb7ffad045`

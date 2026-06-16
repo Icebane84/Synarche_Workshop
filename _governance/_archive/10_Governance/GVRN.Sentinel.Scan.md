@@ -101,9 +101,9 @@ The Sentinel runs on every commit/save, checking six dimensions of health.
 1. **Trigger**: `git commit` or `CMD: RUN_SENTINEL`.
 2. **Execution**: The **Coherent Synthesis Engine** executes the S-Matrix.
 3. **Result Logic**:
-    - **PASS**: Commit proceeds. `GVRN.Triage.Report` logged.
-    - **FAIL**: Commit rejected. **Dissonance Quest** generated in
-      `[MIND.Engine.Dissonance](../40_System/MIND.Engine.Dissonance.md)`.
+   - **PASS**: Commit proceeds. `GVRN.Triage.Report` logged.
+   - **FAIL**: Commit rejected. **Dissonance Quest** generated in
+     `[MIND.Engine.Dissonance](../40_System/MIND.Engine.Dissonance.md)`.
 
 ---
 

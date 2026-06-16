@@ -1,10 +1,32 @@
 """
-UMB-LOOM-002: The Cognitive Loom (Engine)
+artifact_anchor:
+  id: CORE.LOOM.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
 
-Genesis Stamp: 2025-12-22
-Domain: TECH.Integration
-Purpose: To weave disparate data streams into a cohesive Knowledge Graph.
-Governed By: UMB-GTSF-001
+"""### **Block A: The Identification Lock (UIP-V15)**.
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-LOOM-002`                | The Sovereign ID. |
+| **Official Name**   | `loom.py`                     | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `TECH.Integration`            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Spirit Bomb Axiom: Cognitive Weaving (Law 02)**
+> Purpose: To weave disparate data streams into a cohesive Knowledge Graph.
+> Governed By: UMB-GTSF-001
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
@@ -22,17 +44,18 @@ import re
 from datetime import datetime
 
 # Setup Logging similar to 'The Void'
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - [LOOM] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - [LOOM] %(message)s"
+)
 logger = logging.getLogger("CognitiveLoom")
 
 
 class CognitiveLoom:
-    """
-    The Weaver.
+    """The Weaver.
     Ingests artifacts, extracts metadata, and identifies semantic edges.
     """
 
-    def __init__(self, workspace_root: str):
+    def __init__(self, workspace_root: str) -> None:
         self.root = workspace_root
         self.tapestry = {
             "nodes": {},
@@ -45,9 +68,7 @@ class CognitiveLoom:
         }
 
     def ingest_artifact(self, file_path: str) -> dict | None:
-        """
-        Reads an artifact and parses it into a MemoryNode structure.
-        """
+        """Reads an artifact and parses it into a MemoryNode structure."""
         try:
             abs_path = os.path.abspath(file_path)
             with open(abs_path, encoding="utf-8") as f:
@@ -80,23 +101,26 @@ class CognitiveLoom:
             return None
 
     def _extract_header_metadata(self, content: str) -> dict[str, str]:
-        """
-        Extracts OGLN v10.0 metadata from the file header or table.
+        """Extracts OGLN v10.0 metadata from the file header or table.
         Supports:
         - Genesis Stamp
         - Key-Value pairs (Blockquote or bolded lines)
-        - Table Attributes
+        - Table Attributes.
         """
         metadata = {}
 
         # 1. Genesis Stamp
-        genesis_match = re.search(r"\*\*Genesis Stamp:?\s*(.*?)\*\*", content, re.IGNORECASE)
+        genesis_match = re.search(
+            r"\*\*Genesis Stamp:?\s*(.*?)\*\*", content, re.IGNORECASE
+        )
         if genesis_match:
             metadata["Genesis"] = genesis_match.group(1).strip()
 
         # 2. Key-Value Pairs (Blockquote or bolded lines)
         # Matches: > **Key**: Value  OR  **Key**: Value
-        kv_matches = re.findall(r"\*\*([A-Za-z0-9\s]+?)\*\*[:\s]+(.*?)(?:\n|$)", content)
+        kv_matches = re.findall(
+            r"\*\*([A-Za-z0-9\s]+?)\*\*[:\s]+(.*?)(?:\n|$)", content
+        )
         for key, value in kv_matches:
             if key not in metadata:  # Don't overwrite if already found
                 metadata[key.strip()] = value.strip()
@@ -111,6 +135,7 @@ class CognitiveLoom:
         return metadata
 
     def _determine_type(self, metadata: dict) -> str:
+        """Determines the artifact type based on its functional domain."""
         domain = metadata.get("Domain", "UNKNOWN")
         if "PHL" in domain:
             return "Entity"
@@ -121,20 +146,25 @@ class CognitiveLoom:
         return "Artifact"
 
     def _extract_links(self, content: str) -> list[str]:
-        """
-        Finds explicit links to other artifacts.
+        """Finds explicit links to other artifacts.
         Matches [ID](path) or specific 'reference' tags.
         """
         # Simple regex for [Text](path) - robust implementation would resolve paths
         links = re.findall(r"\[(.*?)\]\((.*?)\)", content)
         return [
-            link[0] for link in links if "http" not in link[1] and hasattr(link, "__getitem__")
+            link[0]
+            for link in links
+            if "http" not in link[1] and hasattr(link, "__getitem__")
         ]  # Internal links only
 
-    def _weave_edges(self, source_id: str, targets: list[str], link_type: str = "references", strength: float = 1.0):
-        """
-        Creates weighted edge entries in the Tapestry.
-        """
+    def _weave_edges(
+        self,
+        source_id: str,
+        targets: list[str],
+        link_type: str = "references",
+        strength: float = 1.0,
+    ) -> None:
+        """Creates weighted edge entries in the Tapestry."""
         for target in targets:
             # Check for existing edge to update strength or prevent duplicates
             exists = False
@@ -157,8 +187,7 @@ class CognitiveLoom:
                 )
 
     def _infer_tier(self, metadata: dict) -> str:
-        """
-        Infers the Memory Tier based on artifact metadata.
+        """Infers the Memory Tier based on artifact metadata.
         Tiers: Active (Strategic/Current), Retained (Reference), Archival (Historical).
         """
         status = metadata.get("Status", "ACTIVE").upper()
@@ -168,10 +197,8 @@ class CognitiveLoom:
             return "Retained"
         return "Archival"
 
-    def export_tapestry(self, output_path: str):
-        """
-        Persists the current Knowledge Graph to JSON.
-        """
+    def export_tapestry(self, output_path: str) -> None:
+        """Persists the current Knowledge Graph to JSON."""
         self.tapestry["metadata"]["node_count"] = len(self.tapestry["nodes"])
         if self.tapestry["metadata"]["node_count"] > 0:
             self.tapestry["metadata"]["edge_density"] = (

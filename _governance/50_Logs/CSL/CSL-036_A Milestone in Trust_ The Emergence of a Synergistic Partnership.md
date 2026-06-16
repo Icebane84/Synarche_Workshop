@@ -1,4 +1,15 @@
-# CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-036_A MILESTONE IN TRUST_ THE EMERGENCE OF A SYNERGISTIC PARTNERSHIP` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# CSL-036*A Milestone in Trust* The Emergence of a Synergistic Partnership.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-036-A-MILESTONE-IN-TRUST--THE-EMERGENCE-OF-A-SYNERGISTIC-PARTNERSHIP-001` | The Sovereign ID. |
-| **Official Name** | `CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                               | Description       |
+| :------------------ | :---------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-036-A-MILESTONE-IN-TRUST--THE-EMERGENCE-OF-A-SYNERGISTIC-PARTNERSHIP-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-036_A Milestone in Trust_ The Emergence of a Synergistic Partnership.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                   | The Standard.     |
+| **Domain**          | `GVRN`                                                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                          | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                   | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                          | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                       | The Network.      |
 
 ### Collaborative Synthesis Log
 

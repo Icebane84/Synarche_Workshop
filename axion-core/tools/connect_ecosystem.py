@@ -1,3 +1,16 @@
+"""
+artifact_anchor:
+  id: INFR.CONNECT_ECOSYSTEM.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 import os
 
 # New rows for OSLM (Corrected to 4-column format matching OSLM v11.0)

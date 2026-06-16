@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.PROTOCOL.AGENTICNAVIGATION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Protocol.AgenticNavigation - Sovereign Orientation Protocol (v15.0 [OMEGA])
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -15,7 +25,7 @@
 
 ## I. SCOPE & INTENT
 
-This protocol defines the standard methodology for AI agents (the "Artificers") to navigate, understand, and modify the Synarchy workspace with maximum token efficiency and architectural resonance.
+This protocol defines the standard methodology for AI agents (the "Artificers") to navigate, understand, and modify the Synarche workspace with maximum token efficiency and architectural resonance.
 
 ## II. THE REGISTRY-FIRST ARCHITECTURE
 
@@ -62,4 +72,4 @@ Any discovered cognitive dissonance (broken links, misidentified artifacts, or s
 
 ---
 
-`[GATE-ANCHOR] ID: SYNC.PROTO.NAV VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-26`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.ACT.MASTERAUDIT` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                          | Description       |
@@ -42,7 +52,7 @@
 
 ### **Block E: Ethos (The Standard)**
 
-> **"To hold the fire to the forge, ensuring that not a single byte of dissonance remains within the Synarchy's sacred architecture."**
+> **"To hold the fire to the forge, ensuring that not a single byte of dissonance remains within the Synarche's sacred architecture."**
 
 ---
 

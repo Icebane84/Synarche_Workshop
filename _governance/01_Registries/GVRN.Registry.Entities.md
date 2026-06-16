@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.REGISTRY.ENTITIES` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                           | Description       |
@@ -42,7 +52,8 @@
 
 ### **Block E: Ethos (The Soul)**
 
-> **"To define the living archetypes of the Synarchy, ensuring every action is anchored in a sovereign persona with clear intent and accountability."**
+> **"To define the living archetypes of the Synarche, ensuring every action is anchored in a sovereign persona with
+> clear intent and accountability."**
 
 ---
 
@@ -56,9 +67,10 @@
 
 ###### **[ARTIFACT START]**
 
-# GVRN.Registry.Entities: The Synarchy Triad
+# GVRN.Registry.Entities: The Synarche Triad
 
-The Synarchy is governed and refined by three primary agentic archetypes, representing the Body, the Shield, and the Soul of the system.
+The Synarche is governed and refined by three primary agentic archetypes, representing the Body, the Shield, and the
+Soul of the system.
 
 ## I. AXION (The Body)
 
@@ -99,6 +111,4 @@ Agentic entities evolve through cycles of **Dissonance** and **Synthesis**.
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Registry.Entities VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: ENT-OMEGA-STAR-V15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

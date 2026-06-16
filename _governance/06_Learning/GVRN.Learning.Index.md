@@ -1,7 +1,17 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.LEARNING.INDEX` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Learning.Index (Learning Subsystem)
 
-> [!IMPORTANT] **COGNITIVE RECORD INTEGRITY**
-> This document is an **append-only** historical record. Per `SYNG.PROT.SelfImprovement`, no lesson or entry may be deleted to make room for new insights.
+> [!IMPORTANT] **COGNITIVE RECORD INTEGRITY** This document is an **append-only** historical record. Per
+> `SYNG.PROT.SelfImprovement`, no lesson or entry may be deleted to make room for new insights.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -39,7 +49,8 @@
 
 ## **[ARTIFACT START]**
 
-The **Learning Subsystem (GVRN.Learning)** is the formal governance layer for self-reflection, evolutionary tracking, and wisdom accumulation within the Synarchy.
+The **Learning Subsystem (GVRN.Learning)** is the formal governance layer for self-reflection, evolutionary tracking,
+and wisdom accumulation within the Synarche.
 
 ### I. Subsystem Nodes
 
@@ -58,13 +69,12 @@ The **Learning Subsystem (GVRN.Learning)** is the formal governance layer for se
 
 - 🏗️ **[Extraction](GVRN.Learning.Extraction.md)**: Protocol for converting learnings into skills.
 - 🧘 **[Improvement](GVRN.Learning.Improvement.md)**: Protocol for the Hephaestus Self-Improvement cycle.
+- ***
 
----
+  **Authority**: CORE.Codex.Phoenix **Status**: ACTIVE
 
-**Authority**: CORE.Codex.Phoenix **Status**: ACTIVE
+  **[ARTIFACT END]**
 
-**[ARTIFACT END]**
-
----
+  ***
 
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Index VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: LRN-INDEX-OMEGA`

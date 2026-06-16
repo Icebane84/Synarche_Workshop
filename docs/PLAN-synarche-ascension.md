@@ -2,7 +2,7 @@
 
 ## 🏛️ Strategy Overview
 
-This plan outlines the non-destructive assimilation of seven incoming artifacts into the Sovereign Memory Substrate and the enhancement of core Hephaestus modules with external "harvested" tools. The objective is to achieve **Phase 0: Synarchy Ascension**, aligning the environment with the 42 Laws and Triad Archetypes.
+This plan outlines the non-destructive assimilation of seven incoming artifacts into the Sovereign Memory Substrate and the enhancement of core Hephaestus modules with external "harvested" tools. The objective is to achieve **Phase 0: Synarche Ascension**, aligning the environment with the 42 Laws and Triad Archetypes.
 
 ## 🔴 CRITICAL RULES
 

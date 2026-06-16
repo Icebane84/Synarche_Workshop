@@ -1,4 +1,5 @@
 # GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-SIMP-001-SYSTEMICIMPACTSIMULATIONPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                           | Description       |
+| :------------------ | :-------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-SIMP-001-SYSTEMICIMPACTSIMULATIONPROTOCOL-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                               | The Standard.     |
+| **Domain**          | `GVRN`                                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                      | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                               | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                      | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                   | The Network.      |
 
 # GUCA-SIMP-001: Systemic Impact Simulation Protocol (v1.0)
 
@@ -47,7 +48,7 @@
 | **9. State**           | `[ACTIVE]`                                                |
 | **10. Ethos**          | **Foresight & Logic**                                     |
 | **11. Catalyst**       | **Sovereign Integration**                                 |
-| **12. Relations**      | `LINK: AOP-SENTINEL-SCAN-001`                 |
+| **12. Relations**      | `LINK: AOP-SENTINEL-SCAN-001`                             |
 
 ---
 
@@ -63,22 +64,22 @@
 
 - **What:** A "Pre-Commit" simulation tool.
 - **How:**
-    1. **Parse:** Generates AST of target file.
-    2. **Traverse:** Maps explicit dependencies.
-    3. **Query:** Checks `OSLM` (Omni-Log Synergistic Matrix) for conceptual links.
-    4. **Fuse:** Combines graphs to find "Risk Nodes."
+  1. **Parse:** Generates AST of target file.
+  2. **Traverse:** Maps explicit dependencies.
+  3. **Query:** Checks `OSLM` (Omni-Log Synergistic Matrix) for conceptual links.
+  4. **Fuse:** Combines graphs to find "Risk Nodes."
 - **Why:** To answer the question: "If I touch this, what breaks?"
 
 ## III. Command Specification
 
 - **API Endpoint:** `POST /api/simulate-impact`
 - **Input:**
-    - `change`: Diff/Code Snippet.
-    - `target`: File Path.
+  - `change`: Diff/Code Snippet.
+  - `target`: File Path.
 - **Output (`ImpactReport`):**
-    - `nodes`: List of affected files/modules.
-    - `riskScore`: 0-100 probability of side effects.
-    - `suggestions`: "Review Interface X before committing."
+  - `nodes`: List of affected files/modules.
+  - `riskScore`: 0-100 probability of side effects.
+  - `suggestions`: "Review Interface X before committing."
 
 ## IV. Integration
 

@@ -1,4 +1,5 @@
 # UMB-OSLM-001_MasterArtifactRegistry_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-OSLM-001-MASTERARTIFACTREGISTRY-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-OSLM-001_MasterArtifactRegistry_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-OSLM-001-MASTERARTIFACTREGISTRY-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-OSLM-001_MasterArtifactRegistry_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-OSLM-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Registry` |
-| **Classification** | `Star` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-27` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Registry, Index, Truth` |
+
+| Key                | Value                    |
+| :----------------- | :----------------------- |
+| **Module ID**      | `UMB-OSLM-001`           |
+| **Version**        | `v11.0`                  |
+| **Evolution**      | **Cognitive Ascension**  |
+| **Status**         | `ACTIVE`                 |
+| **Type**           | `Registry`               |
+| **Classification** | `Star`                   |
+| **Authors**        | `System`                 |
+| **Created**        | `2025-10-01`             |
+| **Updated**        | `2026-01-27`             |
+| **Authority**      | `CODEX-001`              |
+| **Tags**           | `Registry, Index, Truth` |
+
 ---
 
 # Master Artifact Registry (The Library)
@@ -83,7 +87,7 @@
 | `AOP-PGPS-001`                                                 | [AOP-PGPS-001: Phoenix Genesis Presentation Standard](../2_Protocols/AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md)                                                                    | `v11.0` | `ACTIVE` |
 | `AOP-PPA-001`                                                  | [Prestige Power Attunement Protocol](<../2_Protocols/AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md>)                                                                                | `v11.0` | `ACTIVE` |
 | `AOP-PRESTIGE-CALC-001`                                        | [Prestige Calculation Protocol](<../2_Protocols/AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md>)                                                                               | `v11.0` | `ACTIVE` |
-| `AOP-SAP-001`                                                  | [AOP-SAP-001: Synarchy Avatar Protocol (v1.0)](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md)                                                                                         | `v11.0` | `ACTIVE` |
+| `AOP-SAP-001`                                                  | [AOP-SAP-001: Synarche Avatar Protocol (v1.0)](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md)                                                                                         | `v11.0` | `ACTIVE` |
 | `AOP-SEE-001`                                                  | [AOP-SEE-001: The Symbiotic Empathy Exchange](../2_Protocols/AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md)                                                                                     | `v11.0` | `ACTIVE` |
 | `AOP-SENTINEL-GW-002`                                          | [AOP-SENTINEL-GW-002](../2_Protocols/AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md)                                                                                                                        | `v11.0` | `ACTIVE` |
 | `AOP-SKILL-SYNERGY-001`                                        | [Orbital Resonance Protocol](../2_Protocols/AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md)                                                                                                          | `v11.0` | `ACTIVE` |
@@ -96,7 +100,7 @@
 | `AOP-TRP-001`                                                  | [Template Refactoring Protocol](../2_Protocols/AOP-TRP-001_TemplateRefactoringProtocol_v11.0.md)                                                                                                              | `v11.0` | `ACTIVE` |
 | `AOP-VIS-ICOM-001`                                             | [The Gravitational Lensing Protocol](../2_Protocols/AOP-VIS-ICOM-001_TheGravitationalLensingProtocol_v11.0.md)                                                                                                | `v11.0` | `ACTIVE` |
 | `AOP-VSI-001`                                                  | [AOP-VSI-001: Validate Structural Integrity Protocol](../2_Protocols/AOP-VSI-001_AOP-VSI-001ValidateStructuralIntegrityProtocol_v11.0.md)                                                                     | `v11.0` | `ACTIVE` |
-| `UMB-ARCH-OATH-001`                                            | [UMB-ARCH-OATH-001: Oathbringer System Architecture](../4_Blueprints/UMB-ARCH-OATH-001_OathbringerSystemArchitecture_v11.0.md) | `v11.0` | `ACTIVE` |
+| `UMB-ARCH-OATH-001`                                            | [UMB-ARCH-OATH-001: Oathbringer System Architecture](../4_Blueprints/UMB-ARCH-OATH-001_OathbringerSystemArchitecture_v11.0.md)                                                                                | `v11.0` | `ACTIVE` |
 | `UMB-ARCH-PRESTIGE-001`                                        | [UMB-ARCH-PRESTIGE-001: Phoenix Prestige Architecture](../4_Blueprints/UMB-ARCH-PRESTIGE-001_PhoenixPrestigeArchitecture_v11.0.md)                                                                            | `v11.0` | `ACTIVE` |
 | `CBM-FORGE-001`                                                | [CBM-FORGE-001_The_Forge_Engine (v10.0)](../1_Modules/CBM-FORGE-001_CBM-FORGE-001_The_Forge_Engine_v11.0.md)                                                                                                  | `v11.0` | `ACTIVE` |
 | `CMD-AXION-001`                                                | [CMD-AXION-001](../3_Commands/CMD-AXION-001_CMD-AXION-001_v11.0.md)                                                                                                                                           | `v11.0` | `ACTIVE` |
@@ -141,7 +145,7 @@
 | `UEB-SP-001`                                                   | [UEB-SP-001: The Synergistic Partner (v2.0)](../4_Blueprints/UEB-SP-001_UEB-SP-001TheSynergisticPartner_v11.0.md)                                                                                             | `v11.0` | `ACTIVE` |
 | `UEB-UCI-001`                                                  | [UEB-UCI-001: The User Core Imperative (v2.0)](../4_Blueprints/UEB-UCI-001_UEB-UCI-001TheUserCoreImperative_v11.0.md)                                                                                         | `v11.0` | `ACTIVE` |
 | `UMB-ACT-002`                                                  | [UMB-ACT-002: Adaptive Actuator Module](../1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md)                                                                                                             | `v11.0` | `ACTIVE` |
-| `UMB-ALTAR-001`                                                | [UMB-ALTAR-001: The Altar of Synarchy (v1.0)](../1_Modules/UMB-ALTAR-001_UMB-ALTAR-001TheAltarofSynarchy_v11.0.md)                                                                                            | `v11.0` | `ACTIVE` |
+| `UMB-ALTAR-001`                                                | [UMB-ALTAR-001: The Altar of Synarche (v1.0)](../1_Modules/UMB-ALTAR-001_UMB-ALTAR-001TheAltarofSynarche_v11.0.md)                                                                                            | `v11.0` | `ACTIVE` |
 | `UMB-AM-001`                                                   | [GUCA-AM-001](../1_Modules/UMB-AM-001_GUCA-AM-001_v11.0.md)                                                                                                                                                   | `v11.0` | `ACTIVE` |
 | `UMB-CF-001`                                                   | [UMB-CF-001: Cognitive Forge](../1_Modules/UMB-CF-001_CognitiveForge_v11.0.md)                                                                                                                                | `v11.0` | `ACTIVE` |
 | `UMB-CSE-001`                                                  | [Coherent Synthesis Engine](../1_Modules/UMB-CSE-001_CoherentSynthesisEngine_v11.1.md)                                                                                                                        | `v11.1` | `ACTIVE` |
@@ -182,7 +186,7 @@
 | `UMB-ARCH-CORE-001` | [Phoenix Core Architecture](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/ARCH/UMB-ARCH-CORE-001.md) | `v11.0.0` | `ACTIVE` |
 | `AOP-AXIOM-WEAVE-001` | [The Axiom Weaving Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/AOP/AOP-AXIOM-WEAVE-001.md) | `v1.0` | `ACTIVE` |
 | `CSL-LINK-001` | [Synergistic Links Expansion Log](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/CSL/CSL-LINK-001.md) | `v1.0` | `ACTIVE` |
-| `AOP-AVATAR-001` | [Synarchy Avatar Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-AVATAR-001.md) | `v1.1` | `ACTIVE` |
+| `AOP-AVATAR-001` | [Synarche Avatar Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-AVATAR-001.md) | `v1.1` | `ACTIVE` |
 | `AOP-MAP-001` | [Disciplined Execution Playbook](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-MAP-001.md) | `v2.0` | `ACTIVE` |
 | `GUCA-MAP-001` | [Execute Musashi Audit](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/GUCA-MAP-001.md) | `v2.0` | `ACTIVE` |
 | `GUCA-DSA-001` | [Documentation Suite Architect Architecture](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/GUCA-DSA-001.md) | `v11.1` | `ACTIVE` |
@@ -200,10 +204,10 @@
 
 ## V. Experience Logs
 
-| Module ID | Title | Version | Status |
-| :-------- | :---- | :------ | :----- |
-| `SELT-CSL-2026.01.27` | [Supabase Refactor & Systemic Alignment](../5_Logs/CSL/SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md) | `v1.0` | `ACTIVE` |
-| `SELT-CSL-2026.01.27` | [Refactor Execution & Metadata Canonization](../5_Logs/CSL/SELT-CSL-2026.01.27_RefactorExecution_v1.0.md) | `v1.0` | `ACTIVE` |
+| Module ID             | Title                                                                                                     | Version | Status   |
+| :-------------------- | :-------------------------------------------------------------------------------------------------------- | :------ | :------- |
+| `SELT-CSL-2026.01.27` | [Supabase Refactor & Systemic Alignment](../5_Logs/CSL/SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md)      | `v1.0`  | `ACTIVE` |
+| `SELT-CSL-2026.01.27` | [Refactor Execution & Metadata Canonization](../5_Logs/CSL/SELT-CSL-2026.01.27_RefactorExecution_v1.0.md) | `v1.0`  | `ACTIVE` |
 
 ## VI. Unclassified / Reference
 

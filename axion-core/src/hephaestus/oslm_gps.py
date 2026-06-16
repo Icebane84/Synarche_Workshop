@@ -1,27 +1,37 @@
 """
-# UMB-OSLM-GPS-001: The OSLM Navigator (System Spine)
+artifact_anchor:
+  id: CORE.OSLM_GPS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
 
-## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard
+"""# UMB-OSLM-GPS-001: The OSLM Navigator (System Spine).
 
-### I. Universal Identification & Provenance (The Vector Signature)
-
-#### The Chronos Lock & Axiomatic Metadata Layer
-
+# I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
 | :--- | :--- |
 | **1. Artifact ID** | `UMB-OSLM-GPS-001` |
 | **2. Official Name** | `oslm_gps.py` |
-| **3. Version** | **v1.0 (Hephaestus Implementation)** |
-| **4. Provenance** | **Date Reforged: 2026-01-10** |
+| **3. Version** | **v15.0 [OMEGA]** |
+| **4. Provenance** | **Reforged: 2026-04-28** |
 | **5. Domain** | `ARCH` |
 | **6. Evolution** | **Purposeful Drive** |
 | **7. Celestial Class** | `[PLANET]` |
 | **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
+| **9. Status (State)** | `[ACTIVE]` |
 | **10. Ethos** | **Guardian of Connectivity** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: UMB-OSLM-001` |
+| **11. Integrity Hash** | `[UIP-V15-LOCK]` |
 
+---
+
+### **I.B. Axiom Reference**
+> "To navigate the spine is to master the system." — Axiom of Navigation
 """
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
@@ -47,22 +57,23 @@ MIN_TABLE_COLUMNS = 3
 
 
 class OSLMGPS:
-    """
-    The OSLM GPS (Global Positioning System) for the Phoenix Protocol Library.
+    """The OSLM GPS (Global Positioning System) for the Phoenix Protocol Library.
 
     It reads the OSLM Markdown file, parses the relational tables, and
     provides methods to query connections ("Traverse the Spine").
     """
 
     def __init__(self, oslm_path: str = DEFAULT_OSLM_PATH) -> None:
-        """
-        Initialize the OSLM GPS.
+        """Initialize the OSLM GPS.
 
         Args:
             oslm_path: Absolute path to the UMB-OSLM-001 markdown file.
+
         """
         self.oslm_path = oslm_path
-        self.graph: dict[str, list[dict[str, str]]] = {}  # Adjacency list: Source -> [{Target, Relation, Score}]
+        self.graph: dict[
+            str, list[dict[str, str]]
+        ] = {}  # Adjacency list: Source -> [{Target, Relation, Score}]
         self.nodes: set[str] = set()
         self._load_matrix()
 
@@ -126,20 +137,19 @@ class OSLMGPS:
         self.graph[source].append({"target": target, "relation": relation})
 
     def traverse_links(self, start_node: str) -> list[dict[str, str]]:
-        """
-        Traverses all immediate links from a given node.
+        """Traverses all immediate links from a given node.
 
         Args:
             start_node: The Artifact ID to start from (e.g. 'UMB-CSE-001').
 
         Returns:
             List of dictionaries containing edge details.
+
         """
         return self.graph.get(start_node, [])
 
     def find_path(self, start_node: str, end_node: str) -> list[str] | None:
-        """
-        Finds a path between two nodes using BFS.
+        """Finds a path between two nodes using BFS.
 
         Args:
             start_node: Source Artifact ID.
@@ -147,6 +157,7 @@ class OSLMGPS:
 
         Returns:
             List of Artifact IDs representing the path, or None if no path found.
+
         """
         if start_node not in self.graph:
             return None
@@ -155,7 +166,7 @@ class OSLMGPS:
         visited = set()
 
         while queue:
-            (vertex, path) = queue.pop(0)
+            vertex, path = queue.pop(0)
             if vertex not in visited:
                 visited.add(vertex)
 

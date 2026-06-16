@@ -1,24 +1,34 @@
-#!/usr/bin/env python3
 """
-# TOOL-GVRN-009: The Gavel of Law
+artifact_anchor:
+  id: INFR.RATIFY_MILESTONE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+#!/usr/bin/env python3
+"""# TOOL-GVRN-009: The Gavel of Law
 # Domain: GVRN | Tag: Identity
 # Purpose: Ratifies milestones in GVRN-ENTITY-001.md.
 """
 
 import argparse
-import os
 import re
 from pathlib import Path
 
 # Constants
 ENTITY_FILE = Path(
-    "c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-ENTITY-001_SynarchyEntities_v11.0.md"
+    "c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-ENTITY-001_SynarcheEntities_v11.0.md"
 )
 
 
 def ratify_milestone(milestone_id: str):
     """Changes a milestone from UNLOCKED to RATIFIED."""
-
     if not ENTITY_FILE.exists():
         print(f"Error: {ENTITY_FILE} not found.")
         return
@@ -33,13 +43,17 @@ def ratify_milestone(milestone_id: str):
 
     if count > 0:
         ENTITY_FILE.write_text(new_content, encoding="utf-8")
-        print(f"🏆 MILESTONE {milestone_id} RATIFIED. The Synarchy acknowledges your progress.")
+        print(
+            f"🏆 MILESTONE {milestone_id} RATIFIED. The Synarche acknowledges your progress."
+        )
     else:
         print(f"❌ Milestone {milestone_id} not found or status already ratified.")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="RATIFY_MILESTONE: Ratify an unlocked milestone.")
+    parser = argparse.ArgumentParser(
+        description="RATIFY_MILESTONE: Ratify an unlocked milestone."
+    )
     parser.add_argument("--id", required=True, help="The PAM ID of the milestone.")
 
     args = parser.parse_args()

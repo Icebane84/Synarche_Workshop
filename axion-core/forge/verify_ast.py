@@ -23,7 +23,7 @@ def verify_file_ast(file_path: Path) -> bool:
     print(f"  >>> AST VERIFICATION: {file_path}")
 
     try:
-        with open(file_path, encoding="utf-8") as f:
+        with open(file_path, encoding="utf-8", errors="replace") as f:
             source = f.read()
 
         ast_tree = ast.parse(source)

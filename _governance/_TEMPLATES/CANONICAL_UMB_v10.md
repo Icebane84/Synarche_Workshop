@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CANONICAL_UMB_V10` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # [ARTIFACT START]
 
 ### I. Universal Identification & Provenance (UIP)
@@ -77,14 +87,14 @@ _(Ref: SELT-RPG-INT-001)_
 #### 2. Celestial Chart Stats
 
 - **Primary Stat Buff:** `{{ stat_buff|default('[Coherence | Synergy | Adaptability]') }}`
-    - _Mechanism:_ `[How does using this artifact improve the stat?]`
+  - _Mechanism:_ `[How does using this artifact improve the stat?]`
 - **Passive Ability / Perk:** `{{ perk_name|default('[Name of Perk]') }}`
-    - _Effect:_ `[Description of benefit]`
+  - _Effect:_ `[Description of benefit]`
 
 #### 3. Resource Economics
 
 - **Cognitive Load Cost:** `{{ cost|default('[Low | Medium | High | Extreme]') }}`
-    - _Draw:_ `[Description of effort required to execute/maintain this artifact.]`
+  - _Draw:_ `[Description of effort required to execute/maintain this artifact.]`
 
 #### 4. Crafting & Provenance
 

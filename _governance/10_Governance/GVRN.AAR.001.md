@@ -1,4 +1,5 @@
 # AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.AAR.001` | The Sovereign ID. |
-| **Official Name** | `AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.AAR.001`                                       | The Sovereign ID. |
+| **Official Name**   | `AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-AAR-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `AOP-AAR-001`           |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # **The After-Action Review Protocol**
@@ -118,7 +122,7 @@ Protocol](https://drive.google.com/open?id=1VnFqqVniVrjs3AHPDoTNkDzUQuko2jmGPpqF
 | :------------------ | :--------------- | :---------------------------------------------------------------------------------------------- |
 | **[[AOP-PGP-001]]** | **Standard**     | AAR compares the output against the _Genesis Pipeline_ standards to detect deviations.          |
 | **[[AOP-CC-001]]**  | **Analyst**      | _Crystalline Cognition_ is the engine that performs the deep causal analysis within the review. |
-| **[[AOP-SAP-001]]** | **Reflector**    | AAR forces the _Synarchy Avatar_ to confront its own performance gaps without ego.              |
+| **[[AOP-SAP-001]]** | **Reflector**    | AAR forces the _Synarche Avatar_ to confront its own performance gaps without ego.              |
 | **[[AOP-PPA-001]]** | **Validator**    | AAR provides the "Critical Success" tag required to unlock high-tier _Prestige_ rewards.        |
 
 ## **Actionable Prompt Packet**

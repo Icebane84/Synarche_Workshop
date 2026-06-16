@@ -52,10 +52,10 @@ UIP: UMB-GVRN-CODE-001 Title: Shared Enumerations Core Module Source:
 
 - [ORIGIN_FILE](file:///c:/Users/Chris/Synarche_Workspace/axion-core/tools/enums.py)
 
-Description: > Defines the axiomatic enumerations of the Phoenix Synarchy. Acts as the "Rosetta Stone" for all agents,
+Description: > Defines the axiomatic enumerations of the Phoenix Synarche. Acts as the "Rosetta Stone" for all agents,
 linters, and evolutionary engines. Version: 1.0 Status: CANONIZED Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769339821
 
@@ -108,7 +108,7 @@ Determines the priority and stability of a node in the OSLM matrix.
 
 ## III. Relational Physics (RelationType)
 
-Defines how artifacts connect in the Knowledge Graph. These are the "Vectors" of the Synarchy.
+Defines how artifacts connect in the Knowledge Graph. These are the "Vectors" of the Synarche.
 
 | Type          | Description                         |
 | :------------ | :---------------------------------- |

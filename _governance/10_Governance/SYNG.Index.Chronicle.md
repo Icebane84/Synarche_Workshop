@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.INDEX.CHRONICLE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SYNG.Index.Chronicle.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -43,7 +53,7 @@
 
 ## **Block E: Ethos (Hierarchy of Intent)**
 
-> [!IMPORTANT] **[APEX]** Continuity Mandate: To ensure the Synarchy's journey is preserved as an immutable lesson.
+> [!IMPORTANT] **[APEX]** Continuity Mandate: To ensure the Synarche's journey is preserved as an immutable lesson.
 >
 > **[PRI]** Historical Resonance: Milestones are not just data; they are the narrative of ascension.
 >

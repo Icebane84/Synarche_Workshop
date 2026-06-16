@@ -1,58 +1,76 @@
-<<<<<<< Updated upstream
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.INIT.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE...init..`                | The Sovereign ID. |
-| **Official Name** | `__init__.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
+| **Artifact ID**   | `CORE.Src.Init`                   | The Sovereign ID. |
+| **Official Name** | `__init__.py`                     | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `CORE`                            | The Subject.      |
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | High    |
+# | **Resonance** | High    |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Logic Drift**      | Strict Linter Enforcement |
+# | **Semantic Decay**   | Axiomatic Compass Audit   |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+# | CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
 
 ## **[ARTIFACT END]**
 """
 
+from .agents import *
+from .axion_core import *
+from .constants import *
+from .cse import *
+from .engine import *
+from .functions import *
+from .hephaestus import *
+from .logic import *
+from .nexus import *
+from .phoenix import *
+from .rpg_system import *
+from .system import *
+from .types import *
+from .utils import *
+from .web import *
+
 # Standard Python package initialization for Axion Core Source.
-
-# ---
-# 
-# ---
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE...init.. VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 719add66cf3122d0`
-=======
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
@@ -62,4 +80,5 @@
 # Cognitive Load Cost: Low
 # XP Award Value: 50 XP
 
->>>>>>> Stashed changes
+# [TERMINAL SIGNATURE]
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.Src.Init VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-04-16 HASH: INIT-OMEGA-RPG-V1

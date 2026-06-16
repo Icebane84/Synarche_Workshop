@@ -53,7 +53,7 @@
 
 # OGLN-ARCH-GAME-ASCENSION: The Ascension Engine
 
-> [!NOTE] This blueprint defines the **RPG Mechanics** of the Synarchy. It creates a feedback loop for continuous
+> [!NOTE] This blueprint defines the **RPG Mechanics** of the Synarche. It creates a feedback loop for continuous
 > improvement by gamifying system maintenance.
 
 ## I. Engine Persona & Specialization
@@ -90,7 +90,7 @@
 
 - **Why it exists**: To make "System Maintenance" and "Coding" feel like an **Epic Quest**.
 - **What it does**: It tracks XP, Levels, and unlocks "Axiom Skills".
-- **For the Synarchy**: It provides a feedback loop for continuous improvement.
+- **For the Synarche**: It provides a feedback loop for continuous improvement.
 
 ## III. The Architectural Spine
 

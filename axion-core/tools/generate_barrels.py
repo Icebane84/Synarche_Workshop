@@ -1,5 +1,17 @@
 """
-# TOOL-COOPER-001: The Barrel Generator (Sovereign Indexes)
+artifact_anchor:
+  id: INFR.GENERATE_BARRELS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-COOPER-001: The Barrel Generator (Sovereign Indexes).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field | Value |
@@ -24,7 +36,17 @@ import argparse
 import os
 import sys
 
-IGNORE_DIRS = {".git", "node_modules", "__pycache__", ".vscode", ".agent", ".trunk", ".gemini", "venv", ".venv"}
+IGNORE_DIRS = {
+    ".git",
+    "node_modules",
+    "__pycache__",
+    ".vscode",
+    ".agent",
+    ".trunk",
+    ".gemini",
+    "venv",
+    ".venv",
+}
 INDEX_FILENAME = "00_INDEX.md"
 
 

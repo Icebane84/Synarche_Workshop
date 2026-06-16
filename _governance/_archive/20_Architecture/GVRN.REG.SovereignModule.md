@@ -55,7 +55,7 @@ UIP: UMB-TMPL-001 Title: Master Sovereign Module Template Source:
 Description: > The definitive, Sovereign-class template for forging Universal Module Blueprints (UMB). Unified v11.0
 presentation with v7.0 Celestial Chart depth. Version: 11.0 Status: ACTIVE Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769339100
 

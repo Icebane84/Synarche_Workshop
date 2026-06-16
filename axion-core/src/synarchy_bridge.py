@@ -1,12 +1,22 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.SYNARCHY_BRIDGE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key                 | Value                                   | Description       |
 | :------------------ | :-------------------------------------- | :---------------- |
 | **Artifact ID**     | `CORE-BRIDGE-001`                       | The Sovereign ID. |
-| **Official Name**   | `synarchy_bridge.py`                    | The Filename.     |
+| **Official Name**   | `Synarche_bridge.py`                    | The Filename.     |
 | **Version**         | **v15.0 [OMEGA]**                       | The Standard.     |
 | **Domain**          | `CORE`                                  | The Subject.      |
 | **Celestial Class** | `[STAR]`                                | The Weight.       |
@@ -22,9 +32,8 @@ import os
 from typing import Any
 
 
-class SynarchyRegistry:
-    """
-    Interface for the Synarchy Command Registry.
+class SynarcheRegistry:
+    """Interface for the Synarche Command Registry.
     Allows agents (AXION, LIGHTBINDER) to programmatically access capabilities.
     """
 
@@ -53,8 +62,7 @@ class SynarchyRegistry:
         return list(self.library.keys())
 
     def search_commands(self, query: str) -> list[dict[str, Any]]:
-        """
-        Searches all commands for a query string in name or description.
+        """Searches all commands for a query string in name or description.
         Returns a list of matching command definitions.
         """
         results: list[dict[str, Any]] = []
@@ -65,10 +73,7 @@ class SynarchyRegistry:
             """Recursively search for commands in the registry tree."""
             if isinstance(node, list):
                 for cmd in node:
-                    if (
-                        query in cmd["name"].lower()
-                        or query in cmd["description"].lower()
-                    ):
+                    if query in cmd["name"].lower() or query in cmd["description"].lower():
                         results.append(cmd)
             elif isinstance(node, dict):
                 for value in node.values():
@@ -78,9 +83,7 @@ class SynarchyRegistry:
         return results
 
     def get_command_spec(self, command_name: str) -> dict[str, Any] | None:
-        """
-        Retrieves the full specification for a specific command by name (case-insensitive).
-        """
+        """Retrieves the full specification for a specific command by name (case-insensitive)."""
         matches = self.search_commands(command_name)
         # return exact match if possible, else first match
         for cmd in matches:
@@ -93,15 +96,15 @@ class SynarchyRegistry:
 
 if __name__ == "__main__":
     # Simple self-test
-    # bridge = SynarchyRegistry()
-    # print("Categories:", bridge.get_all_categories())
+    bridge = SynarcheRegistry()
+    print("Categories:", bridge.get_all_categories())
     pass
 
 # ---
 # ---
 
----
+# ---
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE-BRIDGE-001 VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 57eb1326200f4015`
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE-BRIDGE-001 VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 57eb1326200f4015

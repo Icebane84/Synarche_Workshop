@@ -24,9 +24,7 @@ STRUCTURE = {
 
 
 def create_structure(base_path: Path, structure: dict) -> None:
-    """
-    Recursively builds the directory tree.
-    """
+    """Recursively builds the directory tree."""
     for name, content in structure.items():
         path = base_path / name
         _ensure_directory(path)
@@ -59,8 +57,7 @@ def _create_and_seed_file(path: Path, file_name: str) -> None:
 
 
 def write_catalyst(path: Path) -> None:
-    """
-    Injects the 'Synarche Core' data into the JSON file.
+    """Injects the 'Synarche Core' data into the JSON file.
     This ensures the file isn't just empty, but functional.
     """
     core_data = {

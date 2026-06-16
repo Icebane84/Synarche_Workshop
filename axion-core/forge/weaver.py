@@ -2,7 +2,19 @@
 # (Harvested & Enhanced for OMEGA v15.0)
 
 import re
-from typing import Any
+from typing import TypedDict
+
+
+class Artifact(TypedDict, total=False):
+    id: str
+    content: str
+    tags: list[str]
+
+
+class WeaveResult(TypedDict):
+    synergy_score: float
+    pivots: list[str]
+    is_aligned: bool
 
 
 class CatalystWeaver:
@@ -11,7 +23,7 @@ class CatalystWeaver:
     def __init__(self, synergy_threshold: float = 0.5) -> None:
         self.synergy_threshold = synergy_threshold
 
-    def calculate_synergy_score(self, artifact_a: dict[str, Any], artifact_b: dict[str, Any]) -> float:
+    def calculate_synergy_score(self, artifact_a: Artifact, artifact_b: Artifact) -> float:
         """Calculates a synergy score between two artifacts."""
         score = 0.0
         try:
@@ -39,20 +51,21 @@ class CatalystWeaver:
             return 0.0
         return min(score, 1.0)
 
-    def weave(self, artifact_a: dict[str, Any], artifact_b: dict[str, Any]) -> dict[str, Any]:
+    def weave(self, artifact_a: Artifact, artifact_b: Artifact) -> WeaveResult:
         """Weave two artifacts together by calculating synergy and identifying shared pivots."""
         score = self.calculate_synergy_score(artifact_a, artifact_b)
         keywords_a = set(self._extract_keywords(artifact_a.get("content", "")))
         keywords_b = set(self._extract_keywords(artifact_b.get("content", "")))
         pivots = list(keywords_a.intersection(keywords_b))
-        
+
         return {
             "synergy_score": score,
             "pivots": pivots,
-            "is_aligned": score >= self.synergy_threshold
+            "is_aligned": score >= self.synergy_threshold,
         }
 
     def _extract_keywords(self, text: str) -> list[str]:
-        if not text: return []
+        if not text:
+            return []
         words = re.findall(r"\b[A-Z]\w*\b", text)
         return [w for w in words if len(w) > 3]

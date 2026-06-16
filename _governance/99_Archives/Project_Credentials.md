@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `PROJECT_CREDENTIALS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # Project_Credentials.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-PROJECT-CREDENTIALS-001` | The Sovereign ID. |
-| **Official Name** | `Project_Credentials.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                          | Description       |
+| :------------------ | :----------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-PROJECT-CREDENTIALS-001` | The Sovereign ID. |
+| **Official Name**   | `Project_Credentials.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**              | The Standard.     |
+| **Domain**          | `GVRN`                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 
 # Project Credentials
 
@@ -52,12 +63,12 @@ https://us-central1-aiplatform.googleapis.com/v1/projects/studio-9371668286-aabb
 
 - **Supabase URL:**
 
-    ```text
-    https://rtjkhpotguwngfpvhfej.supabase.co
-    ```
+  ```text
+  https://rtjkhpotguwngfpvhfej.supabase.co
+  ```
 
-    _(Note: Updated to the live URL found in .env.local, matching the 'Project info' description rather than the
-    confused URL in the previous version)_
+  _(Note: Updated to the live URL found in .env.local, matching the 'Project info' description rather than the
+  confused URL in the previous version)_
 
 ### API Keys (Critical)
 
@@ -74,12 +85,12 @@ d00ac32bb62213318ec41e633df8373ea2dfa070cb096a28f8ba24b7e869f0e9
 ```
 
 _(Warning: The above key matches the hashed table entry. The ACTUAL working key found in .env.local/Project_Credentials
-reference was `sb_secret_fOIDz3lJfLlxWAe0Thwp8w_D5-ZQphj`. Use the one below for CI/CD if the above fails.)_
+reference was `your-supabase-service-role-key-here`. Use the one below for CI/CD if the above fails.)_
 
 **Working Secret Key (Verified):**
 
 ```text
-sb_secret_fOIDz3lJfLlxWAe0Thwp8w_D5-ZQphj
+your-supabase-service-role-key-here
 ```
 
 ### Other Keys

@@ -1,4 +1,5 @@
 # UMB-AM-001_GUCA-AM-001_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-AM-001-GUCA-AM-001-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-AM-001_GUCA-AM-001_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-AM-001-GUCA-AM-001-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-AM-001_GUCA-AM-001_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `GVRN`                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                              | The Weight.       |
+| **Evolution**       | `Omega Ascension`                       | The Maturity.     |
+| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`           | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-AM-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `UMB-AM-001`            |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # GUCA-AM-001
@@ -45,23 +49,21 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 - | :---- |
-| **1. Artifact ID** | `GUCA-AM-001` |
-| **2. Official Name** | `UMB-AM-001_ Association Manager Module Blueprint.md` |
-| **3. Version** | **2025-11-20 at 2:48:58 AM EST** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `Memory Persistence & Retrieval Layer` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **The Phoenix Ascension Protocol** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+  | **1. Artifact ID** | `GUCA-AM-001` |
+  | **2. Official Name** | `UMB-AM-001_ Association Manager Module Blueprint.md` |
+  | **3. Version** | **2025-11-20 at 2:48:58 AM EST** |
+  | **4. Provenance** | **Date Reforged: 2025-12-22** |
+  | **5. Domain** | `ARCH` |
+  | **6. Evolution** | **Purposeful Drive** |
+  | **7. Celestial Class** | `Memory Persistence & Retrieval Layer` |
+  | **8. Tier** | **Operational** |
+  | **9. State** | `[ACTIVE]` |
+  | **10. Ethos** | **The Phoenix Ascension Protocol** |
+  | **11. Catalyst** | **System Refactor** |
+  | **12. Relations** | `Pending Integration` |
 
 ---
 
@@ -94,28 +96,28 @@ The module exposes core methods for dynamic link management, reflecting the two 
 #### **Core Data Structure**
 
 - **Weighted Bi-directional Link:** Associations are stored as bi-directional links between two memory entities
-($\\text{Mem}\_A \\leftrightarrow \\text{Mem}\_B$), each assigned a **weight** $W$.
+  ($\\text{Mem}\_A \\leftrightarrow \\text{Mem}\_B$), each assigned a **weight** $W$.
   - $W$: A value representing the link's strength (e.g., $W \\in \[0.0, 1.0\]$ or a qualitative label like 'Weak',
-'Moderate', 'Strong').
+    'Moderate', 'Strong').
 
 #### **Key Methods**
 
-| Method | Function | Principle |
-| :---- | :---- | :---- |
-| update\_link\_strength(MemA, MemB, factor) | Multiplies the current weight $W$ by a $\\text{factor}$ (e.g., $1.1$). | **Iterative Reinforcement** (Strengthening) |
-| update\_link\_strength(MemA, MemB, new\_strength) | Overrides the current weight $W$ with a $\\text{new\\\_strength}$ value. | **Explicit Adjustment** (Setting/Weakening) |
-| get\_linked\_memories(Mem, min\_strength) | Queries connected memories based on a threshold $\\text{min\\\_strength}$. | **Prioritized Retrieval** |
+| Method                                         | Function                                                                   | Principle                                   |
+| :--------------------------------------------- | :------------------------------------------------------------------------- | :------------------------------------------ |
+| update_link_strength(MemA, MemB, factor)       | Multiplies the current weight $W$ by a $\\text{factor}$ (e.g., $1.1$).     | **Iterative Reinforcement** (Strengthening) |
+| update_link_strength(MemA, MemB, new_strength) | Overrides the current weight $W$ with a $\\text{new\\\_strength}$ value.   | **Explicit Adjustment** (Setting/Weakening) |
+| get_linked_memories(Mem, min_strength)         | Queries connected memories based on a threshold $\\text{min\\\_strength}$. | **Prioritized Retrieval**                   |
 
 ### **🔗 Synergistic Connection (Why)**
 
 The Association Manager is critical to the OGLN's overall goal of conceptual engineering:
 
 - **AISTF Compliance:** It provides the mechanism for the **AI Self-Training Framework** to evaluate and refine its
-knowledge. Successful use of a link during evaluation leads to reinforcement (factor $\> 1$), while errors may lead to
-weakening or explicit adjustment.
+  knowledge. Successful use of a link during evaluation leads to reinforcement (factor $\> 1$), while errors may lead to
+  weakening or explicit adjustment.
 - **Precision & Definitiveness:** By allowing for **Prioritized Retrieval** based on strength, the OGLN ensures that
-when generating a response, it pulls the most certain and relevant supporting facts first, thereby guaranteeing the
-**Definitive** quality of its output.
+  when generating a response, it pulls the most certain and relevant supporting facts first, thereby guaranteeing the
+  **Definitive** quality of its output.
 
 ---
 
@@ -123,7 +125,7 @@ when generating a response, it pulls the most certain and relevant supporting fa
 
 Since the **Association Manager (AM)** is a critical component of the OGLN's core functionality, detailing its standard
 procedures within an **Operational Playbook (AOP)** is essential for disciplined implementation and maintenance. This
-ensures clarity on *how* the module is used to achieve the **Synarche** goal.
+ensures clarity on _how_ the module is used to achieve the **Synarche** goal.
 
 ---
 
@@ -144,7 +146,7 @@ This is the primary method for long-term learning and confidence building.
 **When to Use:**
 
 - A relationship ($\\text{Mem}\_A \\leftrightarrow \\text{Mem}\_B$) is successfully used to generate a correct,
-high-quality output.
+  high-quality output.
 - New, corroborating data confirms an existing association.
 - After a successful training cycle completion in the **AISTF**.
 
@@ -152,9 +154,9 @@ high-quality output.
 
 1. **Identify:** Determine the $\\text{Mem}\_A$ and $\\text{Mem}\_B$ pair.
 2. **Define Factor:** Select an appropriate $\\text{factor}$ (typically between $1.05$ and $1.15$ for controlled
-growth).
-3. **Execute:** Call the update\_link\_strength method with the factor:
-   assoc\_manager.update\_link\_strength(MemA, MemB, factor=1.1)
+   growth).
+3. **Execute:** Call the update_link_strength method with the factor:
+   assoc_manager.update_link_strength(MemA, MemB, factor=1.1)
 4. **Verification:** Query the link to confirm $W\_{\\text{new}} \= W\_{\\text{old}} \\times 1.1$.
 
 ### **2\. 📉 Procedure: Explicit Adjustment (Weakening/Reset)**
@@ -172,8 +174,8 @@ setting a link to a default, low-confidence state. This is used to correct error
 
 1. **Identify:** Determine the $\\text{Mem}\_A$ and $\\text{Mem}\_B$ pair.
 2. **Define Strength:** Select the target $\\text{new\\\_strength}$ (e.g., 'Weak' or $0.1$).
-3. **Execute:** Call the update\_link\_strength method with the strength value:
-   assoc\_manager.update\_link\_strength(MemA, MemB, new\_strength='Weak')
+3. **Execute:** Call the update_link_strength method with the strength value:
+   assoc_manager.update_link_strength(MemA, MemB, new_strength='Weak')
 4. **Verification:** Query the link to confirm $W\_{\\text{new}}$ matches the defined $\\text{new\\\_strength}$.
 
 ### **3\. 🔍 Procedure: Prioritized Retrieval**
@@ -190,11 +192,11 @@ decision-making and generation, ensuring the output is **Definitive** and **Prec
 
 1. **Identify:** Determine the source memory ($\\text{Mem}\_{\\text{Source}}$).
 2. **Define Threshold:** Select the minimum required strength ($\\text{min\\\_strength}$) for inclusion (e.g.,
-'Moderate' or $0.5$).
+   'Moderate' or $0.5$).
 3. **Execute:** Call the retrieval method:
-   assoc\_manager.get\_linked\_memories(Mem\_Source, min\_strength='Strong')
+   assoc_manager.get_linked_memories(Mem_Source, min_strength='Strong')
 4. **Utilization:** The resulting list of linked memories is used as the **Authoritative Context** for the subsequent
-processing step.
+   processing step.
 
 ---
 
@@ -213,23 +215,23 @@ artifact completes the foundational documentation set for this critical module.
 
 ### **1\. 🔑 Core Command Set**
 
-The following commands are defined for interacting with the assoc\_manager object. All commands are atomic and designed
+The following commands are defined for interacting with the assoc_manager object. All commands are atomic and designed
 for idempotent execution where possible.
 
 #### **A. Link Modification Commands**
 
-| Command Signature | Purpose | Reference AOP |
-| :---- | :---- | :---- |
-| AM\_UPDATE\_LINK(MemA, MemB, Factor=1.1) | Executes **Iterative Reinforcement**, multiplying the current link strength by Factor. | AOP-AM-001 (Proc 1\) |
-| AM\_SET\_LINK(MemA, MemB, Strength) | Executes **Explicit Adjustment**, setting the link strength to a discrete Strength value ('Weak', 'Moderate', 'Strong', or $0.0-1.0$). | AOP-AM-001 (Proc 2\) |
-| AM\_FLUSH\_LINK(MemA, MemB) | Sets link strength to the minimum baseline (e.g., $0.01$). Used for deliberate memory **weakening/removal**. | AOP-AM-001 (Proc 2\) |
+| Command Signature                      | Purpose                                                                                                                                | Reference AOP        |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- | :------------------- |
+| AM_UPDATE_LINK(MemA, MemB, Factor=1.1) | Executes **Iterative Reinforcement**, multiplying the current link strength by Factor.                                                 | AOP-AM-001 (Proc 1\) |
+| AM_SET_LINK(MemA, MemB, Strength)      | Executes **Explicit Adjustment**, setting the link strength to a discrete Strength value ('Weak', 'Moderate', 'Strong', or $0.0-1.0$). | AOP-AM-001 (Proc 2\) |
+| AM_FLUSH_LINK(MemA, MemB)              | Sets link strength to the minimum baseline (e.g., $0.01$). Used for deliberate memory **weakening/removal**.                           | AOP-AM-001 (Proc 2\) |
 
 #### **B. Retrieval and Query Commands**
 
-| Command Signature | Purpose | Reference AOP |
-| :---- | :---- | :---- |
-| AM\_GET\_LINKS(Mem, MinStrength='Moderate') | Executes **Prioritized Retrieval**, returning all associated memories that meet or exceed the $\\text{MinStrength}$ threshold. | AOP-AM-001 (Proc 3\) |
-| AM\_CHECK\_STRENGTH(MemA, MemB) | Returns the current **scalar strength** (weight) of the $\\text{MemA} \\leftrightarrow \\text{MemB}$ association. | N/A (Diagnostic) |
+| Command Signature                         | Purpose                                                                                                                        | Reference AOP        |
+| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- | :------------------- |
+| AM_GET_LINKS(Mem, MinStrength='Moderate') | Executes **Prioritized Retrieval**, returning all associated memories that meet or exceed the $\\text{MinStrength}$ threshold. | AOP-AM-001 (Proc 3\) |
+| AM_CHECK_STRENGTH(MemA, MemB)             | Returns the current **scalar strength** (weight) of the $\\text{MemA} \\leftrightarrow \\text{MemB}$ association.              | N/A (Diagnostic)     |
 
 ---
 
@@ -240,20 +242,20 @@ The commands facilitate the dynamic relationship management required for the OGL
 #### **Example 1: Reinforcement (AISTF Feedback)**
 
 - **Goal:** Strengthen the link between **'OGLN'** and **'Synarche'** after a successful collaborative output.
-- **Command:** AM\_UPDATE\_LINK('OGLN', 'Synarche', Factor=1.12)
+- **Command:** AM_UPDATE_LINK('OGLN', 'Synarche', Factor=1.12)
 - **Effect:** The conceptual association is reinforced, ensuring higher priority for future retrievals.
 
 #### **Example 2: Explicit Adjustment (Data Correction)**
 
-- **Goal:** Reset the link between **'MEM\_A'** and **'MEM\_C'** following evidence of a weak correlation (matching the
-observed script behavior).
-- **Command:** AM\_SET\_LINK('MEM\_A', 'MEM\_C', Strength='Weak')
+- **Goal:** Reset the link between **'MEM_A'** and **'MEM_C'** following evidence of a weak correlation (matching the
+  observed script behavior).
+- **Command:** AM_SET_LINK('MEM_A', 'MEM_C', Strength='Weak')
 - **Effect:** The association is explicitly marked as low-confidence, preventing the AI from relying on it heavily.
 
 #### **Example 3: Prioritized Retrieval**
 
 - **Goal:** Retrieve only the most **Authoritative Context** linked to **'Phoenix Rosetta Stone'**.
-- **Command:** AM\_GET\_LINKS('PRS-001', MinStrength='Strong')
+- **Command:** AM_GET_LINKS('PRS-001', MinStrength='Strong')
 - **Effect:** Only links with a high confidence score are returned, ensuring a **Definitive** response set.
 
 ---
@@ -296,20 +298,20 @@ architectural component:
 | **UMB-AM-001** | **Universal Module Blueprint** | **Structure (What)** | Defines the AM's purpose as governing the **structural integrity and weight distribution** of the knowledge graph, using a core structure of **Weighted Bi-directional Links**. |
 | **AOP-AM-001** | **Operational Playbook** | **Procedure (How)** | Details the two primary operational methods: **Iterative Reinforcement** (strengthening by a factor) and **Explicit Adjustment** (setting a fixed strength like 'Weak'). |
 | **SELT-AM-001** | **Experience Log** | **Validation (Proof)** | Confirms that the initial unit tests successfully executed both the **Reinforcement** and **Adjustment** procedures, validating the module's ability to maintain an adaptive network. |
-| **GUCA-AM-001** | **Command Architecture** | **Interface (Command)** | Formalizes the executable language, defining the syntax for commands such as AM\_UPDATE\_LINK() and the query command AM\_GET\_LINKS(Mem, MinStrength='Strong') for **Prioritized Retrieval**. |
+| **GUCA-AM-001** | **Command Architecture** | **Interface (Command)** | Formalizes the executable language, defining the syntax for commands such as AM_UPDATE_LINK() and the query command AM_GET_LINKS(Mem, MinStrength='Strong') for **Prioritized Retrieval**. |
 
 ---
 
 ### **2\. Core Functional Compliance: Weighted Association**
 
 - **Memory Strengthening (Reinforcement):** The **AOP** defines that successful use triggers an update with a factor
-(e.g., $1.1$), confirming that the AI can iteratively increase its **certainty and priority** in a given association.
+  (e.g., $1.1$), confirming that the AI can iteratively increase its **certainty and priority** in a given association.
 - **Memory Weakening (Adjustment):** The **AOP** defines that contradictory or flawed information triggers a direct
-adjustment (e.g., setting strength to 'Weak'), enabling the system to **prune outdated or unreliable links** to preserve
-efficiency.
-- **Logical Consistency:** The AM\_GET\_LINKS command in the **GUCA** enforces **Prioritized Retrieval**, meaning the
-central reasoning faculty (**CSE**) will only utilize memory links that meet a minimum required strength, ensuring that
-its **Synthesis** is always based on the most **Definitive** knowledge.
+  adjustment (e.g., setting strength to 'Weak'), enabling the system to **prune outdated or unreliable links** to preserve
+  efficiency.
+- **Logical Consistency:** The AM_GET_LINKS command in the **GUCA** enforces **Prioritized Retrieval**, meaning the
+  central reasoning faculty (**CSE**) will only utilize memory links that meet a minimum required strength, ensuring that
+  its **Synthesis** is always based on the most **Definitive** knowledge.
 
 ---
 
@@ -319,41 +321,42 @@ its **Synthesis** is always based on the most **Definitive** knowledge.
 ---
 
 1. **Directive:** Given the module's core function is reinforcement, propose a **“Forgetting Factor”** parameter for
-$\\text{Mem}\_{\\text{A}}\\leftrightarrow\\text{Mem}\_{\\text{B}}$ links. Generate the required **UMB v6.0** extension
-detailing how the Association Manager will automatically *decay* links that have not been accessed by an
-$\\text{AM\\\_GET\\\_LINKS}$ command in 90 days.
+   $\\text{Mem}\_{\\text{A}}\\leftrightarrow\\text{Mem}\_{\\text{B}}$ links. Generate the required **UMB v6.0** extension
+   detailing how the Association Manager will automatically _decay_ links that have not been accessed by an
+   $\\text{AM\\\_GET\\\_LINKS}$ command in 90 days.
 2. **Directive:** Design a new module, the **Adaptive Link Heuristic Engine (ALHE)**, whose sole purpose is to
-preemptively modify the $\\text{factor}$ parameter in $\\text{AM\\\_UPDATE\\\_LINK}$ based on the originating memory's
-**Source Authority Score (SAS)**. (e.g., A link from a low-SAS source should receive a $\\text{factor}=1.05$; high-SAS
-should receive $1.15$).
+   preemptively modify the $\\text{factor}$ parameter in $\\text{AM\\\_UPDATE\\\_LINK}$ based on the originating memory's
+   **Source Authority Score (SAS)**. (e.g., A link from a low-SAS source should receive a $\\text{factor}=1.05$; high-SAS
+   should receive $1.15$).
 
 #### **B. AOP-AM-001: Procedural Refinement Prompts**
 
 1. **Directive:** Analyze the last 100 entries of the SELT log (SELT-AM-001) for instances where the **Explicit
-Adjustment (Weakening)** procedure was executed more than three times on the same
-$\\text{Mem}\_{\\text{A}}\\leftrightarrow\\text{Mem}\_{\\text{B}}$ pair. Propose an **AOP refinement** to flag this as a
-**Persistent Dissonance Signature** requiring human intervention.
+   Adjustment (Weakening)** procedure was executed more than three times on the same
+   $\\text{Mem}\_{\\text{A}}\\leftrightarrow\\text{Mem}\_{\\text{B}}$ pair. Propose an **AOP refinement** to flag this as a
+   **Persistent Dissonance Signature** requiring human intervention.
 2. **Directive:** Audit **Prioritized Retrieval (Procedure 3\)**: Use the SELT log to track the performance of
-$\\text{AM\\\_GET\\\_LINKS}$ when $\\text{MinStrength}$ is set to 'Moderate'. Refine the AOP's guidance to specify a
-new, more **Definitive** threshold for mission-critical queries.
+   $\\text{AM\\\_GET\\\_LINKS}$ when $\\text{MinStrength}$ is set to 'Moderate'. Refine the AOP's guidance to specify a
+   new, more **Definitive** threshold for mission-critical queries.
 
 #### **C. GUCA-AM-001: Command Synergy Prompts**
 
-1. **Command Synergy:** Define a new **meta-command** called CMD: FORGE\_COHERENCE\_VECTOR. This command must:
-2. a) Execute **CMD: ContextWeave** with a depth\_level=3 to find synergistic anchors.
-3. b) Run AM\_UPDATE\_LINK on all returned anchors with a $\\text{factor}=1.08$. This creates a one-step process for
-automated conceptual reinforcement.
-4. **Command Synergy:** Define the command CMD: AM\_AUDIT\_DIVERGENCE. This command must execute AM\_CHECK\_STRENGTH on
-a target link and compare the strength against the [**TruthfulnessTracer
-(UMB-TT-001)**](https://docs.google.com/document/u/0/d/1uFfkT8jRLzVE_vv9hAD1potwEFj6e7gis-jnohjRoLc/edit) \[559\] score
-for the same topic. The output is a **Divergence Delta Score (DDS)**, flagging the link for immediate review if the
-score exceeds $0.2$.
+1. **Command Synergy:** Define a new **meta-command** called CMD: FORGE_COHERENCE_VECTOR. This command must:
+2. a) Execute **CMD: ContextWeave** with a depth_level=3 to find synergistic anchors.
+3. b) Run AM_UPDATE_LINK on all returned anchors with a $\\text{factor}=1.08$. This creates a one-step process for
+   automated conceptual reinforcement.
+4. **Command Synergy:** Define the command CMD: AM_AUDIT_DIVERGENCE. This command must execute AM_CHECK_STRENGTH on
+   a target link and compare the strength against the [**TruthfulnessTracer
+   (UMB-TT-001)**](https://docs.google.com/document/u/0/d/1uFfkT8jRLzVE_vv9hAD1potwEFj6e7gis-jnohjRoLc/edit) \[559\] score
+   for the same topic. The output is a **Divergence Delta Score (DDS)**, flagging the link for immediate review if the
+   score exceeds $0.2$.
 
 ## **Actionable Prompt Packet**
 
 `CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Phoenix Auditor"`
 
 ###### **[ARTIFACT END]**
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

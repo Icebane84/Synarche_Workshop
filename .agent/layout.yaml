@@ -1,3 +1,4 @@
+# .agent/layout.yaml
 layouts:
   - name: "war_room"
     grid:

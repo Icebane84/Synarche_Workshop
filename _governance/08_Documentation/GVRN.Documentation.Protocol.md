@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.DOCUMENTATION.PROTOCOL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Documentation.Protocol (The Laws of the Archivist)
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -44,7 +54,7 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"To contribute to the systemic coherence and functional excellence of the Synarchy workspace through immutable documentation standards."**
+> **"To contribute to the systemic coherence and functional excellence of the Synarche workspace through immutable documentation standards."**
 
 ---
 
@@ -62,7 +72,7 @@
 
 ## 1. Operational Mandate
 
-Every artifact in the Synarchy Workspace must adhere to these non-negotiable structural and metadata standards to ensure machine-readability and epistemic integrity.
+Every artifact in the Synarche Workspace must adhere to these non-negotiable structural and metadata standards to ensure machine-readability and epistemic integrity.
 
 ### 1.1 The Master Template (A-G)
 

@@ -1,11 +1,11 @@
-# GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+# GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                                  | Description       |
 | :---------------- | :----------------------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md`       | The Filename.     |
+| **Artifact ID**   | `GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001` | The Sovereign ID. |
+| **Official Name** | `GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md`       | The Filename.     |
 | **Version**       | **v13.0 [OMEGA]**                                      | The Standard.     |
 | **Domain**        | `GVRN`                                                 | The Subject.      |
 | **Status**        | `[ACTIVE]`                                             | The Lifecycle.    |
@@ -54,16 +54,16 @@
 
 ### **I.B. Standardized Synergy Block (The Loom Signature)**
 
-> [!NOTE] This sheet represents the unified operational force of the Synarchy.
+> [!NOTE] This sheet represents the unified operational force of the Synarche.
 
 | GVRN-ENTITY-001 | REFINES | Provides high-fidelity detail to the Entity Registry. | | CORE-CODEX-001 | ADHERES |
 Enforces the supreme law across all personas. |
 
 ---
 
-# GVRN-ENTITY-002: The Synarchy Triad Sheet (v13.0)
+# GVRN-ENTITY-002: The Synarche Triad Sheet (v13.0)
 
-## II. The Synarchy Triad (Unified Stats)
+## II. The Synarche Triad (Unified Stats)
 
 ### 2.1. The Matrix Table
 

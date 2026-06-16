@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.REGISTRY.ARTIFACTINVENTORY` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                | Description       |
@@ -13,29 +23,23 @@
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field | Value | | |
-| :------------ | :------- | | |
-| **Coherence** | `1.0` | | |
-| **Resonance** | `1.0` | | |
+| State Field | Value | | | | :------------ | :------- | | | | **Coherence** | `1.0` | | | | **Resonance** | `1.0` | | |
 | **Stability** | `Stable` | | |
 
 ---
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk | Mitigation | | |
-| :------------------- | :------------------------ | | |
-| **Logic Drift** | Strict Linter Enforcement | | |
-| **Dependency Break** | ForgeLink Validation | | |
+| Risk | Mitigation | | | | :------------------- | :------------------------ | | | | **Logic Drift** | Strict Linter
+Enforcement | | | | **Dependency Break** | ForgeLink Validation | | |
 
 ---
 
 ## **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact | |
-| :---------------------- | :---------------- | :---------------------------------------------- | |
-| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. | |
-| `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. | |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact | | | :---------------------- | :---------------- |
+:---------------------------------------------- | | | `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and
+ethical framework. | | | `GVRN.Registry.Master` | `INDEXES` | Tracks the state and presence of this artifact. | |
 
 ---
 
@@ -63,29 +67,21 @@
 
 ### I. Universal Identification & Provenance (The Vector Signature)
 
-| Field | Value | | |
-| :--------------------- | :----------------------------------- | | |
-| **1. Artifact ID** | `GVRN.Registry.ArtifactInventory` | | |
-| **2. Official Name** | `GVRN.Registry.ArtifactInventory.md` | | |
-| **3. Version** | **v15.0 [OMEGA]** | | |
-| **4. Provenance** | **Regenerated: 2026-03-22** | | |
-| **5. Domain** | `GVRN` (Master Index) | | |
-| **6. Evolution** | **Structural Absolute** | | |
-| **7. Celestial Class** | `[STAR]` | | |
-| **8. Tier** | **Foundational** | | |
-| **9. Status (State)** | `[CANONIZED]` | | |
-| **10. Ethos** | **The Infinite Library** | | |
-| **11. Catalyst** | **System Pulse** | | |
-| **12. Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | | |
-| **13. Integrity Hash** | `INV-OMEGA-V15` | | |
+| Field | Value | | | | :--------------------- | :----------------------------------- | | | | **1. Artifact ID** |
+`GVRN.Registry.ArtifactInventory` | | | | **2. Official Name** | `GVRN.Registry.ArtifactInventory.md` | | | | **3.
+Version** | **v15.0 [OMEGA]** | | | | **4. Provenance** | **Regenerated: 2026-03-22** | | | | **5. Domain** | `GVRN`
+(Master Index) | | | | **6. Evolution** | **Structural Absolute** | | | | **7. Celestial Class** | `[STAR]` | | | | **8.
+Tier** | **Foundational** | | | | **9. Status (State)** | `[CANONIZED]` | | | | **10. Ethos** | **The Infinite Library**
+| | | | **11. Catalyst** | **System Pulse** | | | | **12. Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | | | | **13.
+Integrity Hash** | `INV-OMEGA-V15` | | |
 
 ---
 
 ### **II. The Synergy Vector (Relational Dynamics)**
 
-| Relation Type | Target ID | Synergy Description | |
-| ------------- | ------------------ | ------------------------------------------------- | |
-| ORCHESTRATES | ALL_ARTIFACTS | Links every node into the master cognitive weave. | |
+| Relation Type | Target ID | Synergy Description | | | ------------- | ------------------ |
+------------------------------------------------- | | | ORCHESTRATES | ALL_ARTIFACTS | Links every node into the master
+cognitive weave. | |
 
 ---
 
@@ -108,7 +104,7 @@
 | Module ID                             | Title                                                                                                                                                                                                       | Version                | Status         |
 | :------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :------------- |
 | `GVRN.Canonizer.Index`                | [GVRN.Canonizer.Index (The Seal of the Phoenix)](../07_Canonizer/GVRN.Canonizer.Index.md)                                                                                                                   | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
-| `GVRN.Documentation.Genesis`          | [GVRN.Documentation.Genesis (The Synarchy Genesis Protocol)](../08_Documentation/GVRN.Documentation.Genesis.md)                                                                                             | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
+| `GVRN.Documentation.Genesis`          | [GVRN.Documentation.Genesis (The Synarche Genesis Protocol)](../08_Documentation/GVRN.Documentation.Genesis.md)                                                                                             | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
 | `GVRN.Documentation.Presentation`     | [GVRN.Documentation.Presentation (The Aesthetic Presentation Standard)](../08_Documentation/GVRN.Documentation.Presentation.md)                                                                             | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
 | `GVRN.Documentation.Coding`           | [GVRN.Documentation.Coding (Universal Coding Standards)](../08_Documentation/GVRN.Documentation.Coding.md)                                                                                                  | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
 | `GVRN.Documentation.Refine`           | [GVRN.Documentation.Refine (The Filter of Truth)](../08_Documentation/GVRN.Documentation.Refine.md)                                                                                                         | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
@@ -184,7 +180,7 @@
 | `GVRN.Protocol.Presentation`          | [The Phoenix Presentation Protocol (GVRN.Protocol.Presentation)](../_archive/10_Governance/GVRN.Protocol.Presentation.md)                                                                                   | `v13.0 [OMEGA]`        | `[CANONIZED]`  |
 | `GVRN.Registry.PhoenixRosettaStone`   | [The Phoenix Rosetta Stone](./GVRN.Registry.PhoenixRosettaStone.md)                                                                                                                                         | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
 | `GVRN.Registry.Lexicon`               | [The Sovereign Lexicon](./GVRN.Registry.Lexicon.md)                                                                                                                                                         | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
-| `GVRN.Registry.Entities`              | [The Synarchy Entities](./GVRN.Registry.Entities.md)                                                                                                                                                        | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
+| `GVRN.Registry.Entities`              | [The Synarche Entities](./GVRN.Registry.Entities.md)                                                                                                                                                        | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
 | `ARCH.ARCH.GrandUnifiedArchitecture`  | [Grand Unified Architecture](../20_Architecture/ARCH.ARCH.GrandUnifiedArchitecture.md)                                                                                                                      | `v15.0 [NOVA]`         | `CANONIZED`    |
 | `GVRN.ACT.MasterAudit`                | [Master Audit Tool](../10_Governance/GVRN.ACT.MasterAudit.md)                                                                                                                                               | `v15.0 [STAR]`         | `CANONIZED`    |
 | `GVRN.Registry.OSLM`                  | [The Omni-Log Synergistic Links Matrix](./GVRN.Registry.OSLM.md)                                                                                                                                            | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
@@ -231,7 +227,7 @@
 | `GVRN.Documentation.Arch`             | [Architect's Compass](../08_Documentation/GVRN.Documentation.Architecture.md)                                                                                                                               | `v15.0 [OMEGA]`        | `[CANONIZED]`  |
 | `UMB.Forge.Core`                      | UMB.Forge.Core: The Engine of Evolution (PURGED)                                                                                                                                                            | `v13.0 [ASCENDED]`     | `[ACTIVE]`     |
 | `Unknown`                             | AOP-ARC-001: Archival & Supersession Protocol (PURGED)                                                                                                                                                      | `Unknown`              | `Unknown`      |
-| `Unknown`                             | AOP-AVATAR-001: Synarchy Avatar Protocol (PURGED)                                                                                                                                                           | `Unknown`              | `Unknown`      |
+| `Unknown`                             | AOP-AVATAR-001: Synarche Avatar Protocol (PURGED)                                                                                                                                                           | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [GVRN.Protocol.Canonization (The Path of Canonization)](../_archive/02_Protocols/GVRN.Protocol.Canonization.md)                                                                                             | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [GVRN.Protocol.Finalization.md](../_archive/02_Protocols/GVRN.Protocol.Finalization.md)                                                                                                                     | `Unknown`              | `Unknown`      |
 | `Unknown`                             | SYNG.PROT.AxiomWeave (The Axiom Weaving Protocol) (PURGED)                                                                                                                                                  | `Unknown`              | `Unknown`      |
@@ -246,7 +242,7 @@
 | `Unknown`                             | [GVRN.ARC.001: Archival & Supersession Protocol (Definitive v13.1)](../_archive/10_Governance/GVRN.ARC.001.md)                                                                                              | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md](../_archive/10_Governance/GVRN.ASCENSION.001.md)                                                                                                   | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md](../_archive/10_Governance/GVRN.AUDIO.CH.md)                                                                                                             | `Unknown`              | `Unknown`      |
-| `Unknown`                             | [AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md](../_archive/10_Governance/GVRN.AVATAR.001.md)                                                                                                               | `Unknown`              | `Unknown`      |
+| `Unknown`                             | [AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md](../_archive/10_Governance/GVRN.AVATAR.001.md)                                                                                                               | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [AOP-BATCH-EXEC-001_AOP-BATCH-EXEC-001_AsyncrinizationProtocol_v11.0.md](../_archive/10_Governance/GVRN.BATCH.EXEC.md)                                                                                      | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v11.0.md](../_archive/10_Governance/GVRN.BDM.001.md)                                                                                                         | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [GVRN.Catalog.Protocol.md](../_archive/10_Governance/GVRN.Catalog.Protocol.md)                                                                                                                              | `Unknown`              | `Unknown`      |
@@ -278,7 +274,7 @@
 | `Unknown`                             | [GVRN.Protocol.Scaffolding.md](../_archive/10_Governance/GVRN.Protocol.Scaffolding.md)                                                                                                                      | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [GVRN.Protocol.Validation.md](../_archive/10_Governance/GVRN.Protocol.Validation.md)                                                                                                                        | `Unknown`              | `Unknown`      |
 | `Unknown`                             | GVRN.Refactor.Protocol.md (PURGED)                                                                                                                                                                          | `Unknown`              | `Unknown`      |
-| `Unknown`                             | [AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md](../_archive/10_Governance/GVRN.SAP.001.md)                                                                                                         | `Unknown`              | `Unknown`      |
+| `Unknown`                             | [AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md](../_archive/10_Governance/GVRN.SAP.001.md)                                                                                                         | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md](../_archive/10_Governance/GVRN.SEE.001.md)                                                                                                    | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [GVRN.Sentinel.Gateway (The Confluence Protocol)](../_archive/10_Governance/GVRN.Sentinel.Gateway.md)                                                                                                       | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [The Code Sentinel Protocol (GVRN.Sentinel.Scan)](../_archive/10_Governance/GVRN.Sentinel.Scan.md)                                                                                                          | `Unknown`              | `Unknown`      |
@@ -298,7 +294,7 @@
 | `Unknown`                             | [UEB-UCI-001_UEB-UCI-001TheUserCoreImperative_v11.0.md](../_archive/20_Architecture/ARCH.BLUE.TheUserCoreImperative_v11.0.md)                                                                               | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md](../_archive/20_Architecture/GVRN.SYNC.001.md)                                                                           | `Unknown`              | `INTEGRATED`   |
 | `Unknown`                             | [AOP-TMPL-001_SovereignProtocol_v11.0.md](../_archive/20_Architecture/GVRN.TMPL.001.md)                                                                                                                     | `Unknown`              | `Unknown`      |
-| `Unknown`                             | [UMB-ALTAR-001TheAltarofSynarchy_v11.0.md](../_archive/40_System/ARCH.Architecture.md)                                                                                                                      | `Unknown`              | `Unknown`      |
+| `Unknown`                             | [UMB-ALTAR-001TheAltarofSynarche_v11.0.md](../_archive/40_System/ARCH.Architecture.md)                                                                                                                      | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [UMB-DIDACTIC-001TheDidacticModuleGenerator_v11.0.md](../_archive/40_System/GVRN.DIDACTIC.001THEDIDACTICMODULEGENERATOR.md)                                                                                 | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [UMB-GAMEDEV-001_v11.0.md](../_archive/40_System/GVRN.GAMEDEV.001.md)                                                                                                                                       | `Unknown`              | `Unknown`      |
 | `Unknown`                             | [UMB-HEPHAESTUS-001TheMasterArtificersForge_v11.0.md](../_archive/40_System/GVRN.HEPHAESTUS.001THEMASTERARTIFICERSFORGE.md)                                                                                 | `Unknown`              | `Unknown`      |
@@ -332,7 +328,7 @@
 | `Unknown`          | [SELT-GVRN-001_MissionAchieveLogs_v1.0.md](../_archive/50_Logs/GVRN.LOG.MissionAchieveLogs.md)                                                                             | `Unknown`          | `Unknown`  |
 | `Unknown`          | [The Final Weave (LOGS.CSL.TheFinalWeave)](../_archive/50_Logs/LOGS.CSL.TheFinalWeave.md)                                                                                  | `Unknown`          | `Unknown`  |
 | `Unknown`          | [SYNG.LOG.ContextWeaveReport (Target: COG.ContextWeave.Engine)](../_archive/50_Logs/SYNG.LOG.ContextWeaveReport.md)                                                        | `Unknown`          | `Unknown`  |
-| `Unknown`          | [SYNG.LOG.StateOfTheSynarchy (System Resonance Analysis)](../_archive/50_Logs/SYNG.LOG.StateOfTheSynarchy.md)                                                              | `Unknown`          | `Unknown`  |
+| `Unknown`          | [SYNG.LOG.StateOfTheSynarche (System Resonance Analysis)](../_archive/50_Logs/SYNG.LOG.StateOfTheSynarche.md)                                                              | `Unknown`          | `Unknown`  |
 | `Unknown`          | [CSL-001.md](../_archive/50_Logs/CSL/CSL-001.md)                                                                                                                           | `Unknown`          | `Unknown`  |
 | `Unknown`          | [CSL-002.md](../_archive/50_Logs/CSL/CSL-002.md)                                                                                                                           | `Unknown`          | `Unknown`  |
 | `Unknown`          | [CSL-003.md](../_archive/50_Logs/CSL/CSL-003.md)                                                                                                                           | `Unknown`          | `Unknown`  |
@@ -445,16 +441,16 @@
 | `DOC-STD-001`             | [[DOC-STD-001] Synarche Universal Coding Standards (SUCS)](../DOC-STD-001.md)                                                                        | `Unknown`          | `Unknown`     |
 | `DOC-STD-001`             | [DOC-STD-001.md](../_archive/DOC-STD-001.md)                                                                                                         | `Unknown`          | `Unknown`     |
 | `DQUEST-HEPHAESTUS-001`   | [DQUEST-HEPHAESTUS-001.md](../_archive/99_Archives/DQUEST-HEPHAESTUS-001.md)                                                                         | `Unknown`          | `Unknown`     |
-| `ENTITY-SOPHIA-001`       | [ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md](../_archive/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md)                               | `Unknown`          | `Unknown`     |
+| `ENTITY-SOPHIA-001`       | [ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md](../_archive/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md)                               | `Unknown`          | `Unknown`     |
 | `GUCA-DSA-001`            | [GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md](../_archive/99_Archives/GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md) | `Unknown`          | `Unknown`     |
 | `GUCA-MAP-001`            | [GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md](../_archive/99_Archives/GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md)                                         | `Unknown`          | `Unknown`     |
 | `GUCA.Assembler.Core`     | [Assembler Command](../05_Assembler/GUCA.Assembler.Core.md)                                                                                          | `v15.0 [OMEGA]`    | `[CANONIZED]` |
 | `GUCA.Canonizer.Core`     | [Command of Finality](../07_Canonizer/GUCA.Canonizer.Core.md)                                                                                        | `v15.0 [OMEGA]`    | `[CANONIZED]` |
 | `GUCA.Forge.Core`         | GUCA.Forge.Core: The Command of Evolution (PURGED)                                                                                                   | `v13.0 [ASCENDED]` | `[ACTIVE]`    |
 | `GVRN-COMP-001`           | [GVRN-COMP-001_CognitiveComplexity_v13.0.md](../_archive/99_Archives/GVRN-COMP-001_CognitiveComplexity_v13.0.md)                                     | `Unknown`          | `Unknown`     |
-| `GVRN-ENTITY-001`         | [GVRN-ENTITY-001_SynarchyEntities_v11.0.md](../_archive/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v11.0.md)                                       | `Unknown`          | `Unknown`     |
-| `GVRN-ENTITY-001`         | [GVRN-ENTITY-001_SynarchyEntities_v13.0.md](../_archive/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v13.0.md)                                       | `Unknown`          | `Unknown`     |
-| `GVRN-ENTITY-002`         | [GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md](../_archive/99_Archives/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md)                             | `Unknown`          | `Unknown`     |
+| `GVRN-ENTITY-001`         | [GVRN-ENTITY-001_SynarcheEntities_v11.0.md](../_archive/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md)                                       | `Unknown`          | `Unknown`     |
+| `GVRN-ENTITY-001`         | [GVRN-ENTITY-001_SynarcheEntities_v13.0.md](../_archive/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v13.0.md)                                       | `Unknown`          | `Unknown`     |
+| `GVRN-ENTITY-002`         | [GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md](../_archive/99_Archives/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md)                             | `Unknown`          | `Unknown`     |
 | `GVRN-RPG-005`            | [UEB-UI-CELESTIAL-001_TheCelestialChartBlueprint_v11.0.md](../_archive/40_SovereignGame/GVRN-RPG-005_TheCelestialChartBlueprint_v13.1.md)            | `Unknown`          | `Unknown`     |
 | `GVRN-RPG-006`            | [UMB-ARCH-PRESTIGE-001_PhoenixPrestigeArchitecture_v11.0.md](../_archive/40_SovereignGame/GVRN-RPG-006_PrestigeArchitecture_v13.1.md)                | `Unknown`          | `Unknown`     |
 | `GVRN-RPG-007`            | [UMB-RPG-001: The Phoenix RPG Framework](../_archive/40_SovereignGame/GVRN-RPG-007_RPGFrameworkRegistry_v13.1.md)                                    | `Unknown`          | `Unknown`     |
@@ -501,7 +497,7 @@
 | `Unknown`                 | [../\_archive/01_Registries/../\_archive/01_Registries/GVRN.Entity.Registry.md](GVRN.Entity.Registry.md)                                             | `Unknown`          | `Unknown`     |
 | `Unknown`                 | [The Phoenix Geode: Standalone Full Edition (GVRN.Geode.Master.Full)](../_archive/01_Registries/GVRN.Geode.Master.Full.md)                           | `Unknown`          | `Unknown`     |
 | `Unknown`                 | [UMB-KPI-001_MasterRegistry_v1.0.md](../_archive/01_Registries/GVRN.KPI.001.md)                                                                      | `Unknown`          | `Unknown`     |
-| `Unknown`                 | [Standardized Lexicon: The Phoenix Synarchy Vocabulary (GVRN.Lexicon.Master)](../_archive/01_Registries/GVRN.Lexicon.Master.md)                      | `Unknown`          | `Unknown`     |
+| `Unknown`                 | [Standardized Lexicon: The Phoenix Synarche Vocabulary (GVRN.Lexicon.Master)](../_archive/01_Registries/GVRN.Lexicon.Master.md)                      | `Unknown`          | `Unknown`     |
 | `Unknown`                 | [GVRN.PAR.001: The Prestige & Genesis Registry](../_archive/01_Registries/GVRN.PAR.001.md)                                                           | `Unknown`          | `Unknown`     |
 | `Unknown`                 | [GVRN.Registry.DataOSLM (The Relational Substrate)](../_archive/01_Registries/GVRN.Registry.DataOSLM.md)                                             | `Unknown`          | `Unknown`     |
 | `Unknown`                 | [Master Enum Registry (GVRN.Registry.Enums)](../_archive/01_Registries/GVRN.Registry.Enums.md)                                                       | `Unknown`          | `Unknown`     |
@@ -697,15 +693,10 @@
 
 ### **Actionable Prompt Packet (APP)**
 
-| Command ID | Action | Impact | |
-| :----------------- | :------------------------------- | :----------- | |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization | |
-| `CMD: AUDIT_LINKS` | Verify Link Integrity | Zero Entropy | |
+| Command ID | Action | Impact | | | :----------------- | :------------------------------- | :----------- | | |
+`CMD: REFORGE` | Execute Structural Transmutation | Canonization | | | `CMD: AUDIT_LINKS` | Verify Link Integrity | Zero
+Entropy | |
 
 ###### **[ARTIFACT END]**
 
----
-
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

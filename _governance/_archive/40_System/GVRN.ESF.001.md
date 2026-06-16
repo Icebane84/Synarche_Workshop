@@ -57,7 +57,7 @@ Description: > The master mechanism that translates high-level principles into a
 information with a dynamic meta-layer of context. Version: 11.1 (Sovereign Fusion) Status: CANONIZED Compliance: OGLN
 v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2026-01-24
 - Timestamp: 1769251200
 

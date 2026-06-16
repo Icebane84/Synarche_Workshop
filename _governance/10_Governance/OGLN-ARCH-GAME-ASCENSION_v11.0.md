@@ -1,4 +1,5 @@
 # OGLN-ARCH-GAME-ASCENSION_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-ARCH-GAME-ASCENSION-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-ARCH-GAME-ASCENSION_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                     | Description       |
+| :------------------ | :---------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-ARCH-GAME-ASCENSION-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-ARCH-GAME-ASCENSION_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                         | The Standard.     |
+| **Domain**          | `GVRN`                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
@@ -43,7 +44,7 @@
 **Genesis Stamp**: 2026-01-18 | **Domain**: ARCH | **State**: CANONIZED
 
 > [!NOTE]
-> This blueprint defines the **RPG Mechanics** of the Synarchy. It creates a feedback loop for continuous improvement by gamifying system maintenance.
+> This blueprint defines the **RPG Mechanics** of the Synarche. It creates a feedback loop for continuous improvement by gamifying system maintenance.
 
 ## I. Engine Persona & Specialization
 
@@ -79,7 +80,7 @@
 
 - **Why it exists**: To make "System Maintenance" and "Coding" feel like an **Epic Quest**.
 - **What it does**: It tracks XP, Levels, and unlocks "Axiom Skills".
-- **For the Synarchy**: It provides a feedback loop for continuous improvement.
+- **For the Synarche**: It provides a feedback loop for continuous improvement.
 
 ## III. The Architectural Spine
 

@@ -5,11 +5,19 @@
 
 TOOL-GVRN.LOOM.REGISTRY:
   artifact_id: TOOL-GVRN.LOOM.REGISTRY
-  content_hash: 08a513efd924923d835339e66c16caef26cc5cdf6b8b50f92c6e0c5caa02da8d
+  content_hash: dda773f380e83f952999e4c3451245e1ee7462b21fb6360dfb1fb11bf5b37483
   domain: FORGE
   official_name: GVRN.Loom.Registry.py
   path: axion-core/forge/GVRN.Loom.Registry.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-__INIT__:
+  artifact_id: TOOL-__INIT__
+  content_hash: c106e655cc57b5cedb4cf2063233c21a9a6ac3c019d01652ce386c8f1ce46dac
+  domain: FORGE
+  official_name: __init__.py
+  path: axion-core/forge/__init__.py
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-ASSEMBLER:
   artifact_id: TOOL-ASSEMBLER
@@ -17,7 +25,7 @@ TOOL-ASSEMBLER:
   domain: FORGE
   official_name: assembler.py
   path: axion-core/forge/assembler.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 defined:
   artifact_id: defined
@@ -25,15 +33,15 @@ defined:
   domain: FORGE
   official_name: canonize.py
   path: axion-core/forge/canonize.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 CORE-CARP-001:
   artifact_id: CORE-CARP-001
-  content_hash: 974ed0a30a70fd35b4e97071648351abe480e39d9134fb3f60c5d158aebb7023
+  content_hash: 8162f4ff068b0477ef29dd67cc99b73015ec9ac65a2e84b9e9704c610c4d8e9f
   domain: FORGE
   official_name: carp.py
   path: axion-core/forge/carp.py
-  status: "[CANONIZED]"
+  status: '[CANONIZED]'
   version: v15.0 [OMEGA]
 TOOL-CHRONOS:
   artifact_id: TOOL-CHRONOS
@@ -41,7 +49,15 @@ TOOL-CHRONOS:
   domain: FORGE
   official_name: chronos.py
   path: axion-core/forge/chronos.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+CORE:
+  artifact_id: CORE
+  content_hash: 882193faf813fb5fbc1307313b459ac761fa33c89baa357f9cb7b9bdf4ee75e3
+  domain: FORGE
+  official_name: cse_engine.py
+  path: axion-core/forge/cse_engine.py
+  status: '[CANONIZED]'
   version: v15.0 [OMEGA]
 TOOL-DRAGONSLAYER:
   artifact_id: TOOL-DRAGONSLAYER
@@ -49,23 +65,23 @@ TOOL-DRAGONSLAYER:
   domain: FORGE
   official_name: dragonslayer.py
   path: axion-core/forge/dragonslayer.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 CORE-EMW-001:
   artifact_id: CORE-EMW-001
-  content_hash: 755dd75e89a0aa2ea65fe885b83df95bd895d2fa676c27470d2391b91fa36038
+  content_hash: 1d3f2625a5196a9a8cc4ad10e29aef8fdd00f1cad30f9338fc5b15e73e1bbefa
   domain: FORGE
   official_name: emw.py
   path: axion-core/forge/emw.py
-  status: "[CANONIZED]"
+  status: '[CANONIZED]'
   version: v15.0 [OMEGA]
 TOOL-ENUMS:
   artifact_id: TOOL-ENUMS
-  content_hash: 1c2e858e132ba0474b8b657eb453bd2dc71394ea7ba32cc0226a64cef58a5704
+  content_hash: 30572b9b1e56caac70a8c21033bfcfb09514ba5e6756b998689d0e7b78ef3d35
   domain: FORGE
   official_name: enums.py
   path: axion-core/forge/enums.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-EQUIP:
   artifact_id: TOOL-EQUIP
@@ -73,15 +89,15 @@ TOOL-EQUIP:
   domain: FORGE
   official_name: equip.py
   path: axion-core/forge/equip.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-EVOLUTION_ENGINE:
   artifact_id: TOOL-EVOLUTION_ENGINE
-  content_hash: 417510f5001fa8715e64e71a5523757a5ba1fcabff775a2b9c5c088a6070e5d0
+  content_hash: 2b462c1baf661dec7a969d698885f1422521fd661b2df40146ed1a67133ac8d4
   domain: FORGE
   official_name: evolution_engine.py
   path: axion-core/forge/evolution_engine.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-EXCEPTIONS:
   artifact_id: TOOL-EXCEPTIONS
@@ -89,7 +105,7 @@ TOOL-EXCEPTIONS:
   domain: FORGE
   official_name: exceptions.py
   path: axion-core/forge/exceptions.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-FORGE:
   artifact_id: TOOL-FORGE
@@ -97,7 +113,7 @@ TOOL-FORGE:
   domain: FORGE
   official_name: forge.py
   path: axion-core/forge/forge.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 CORE-HEPH-GAZE-001:
   artifact_id: CORE-HEPH-GAZE-001
@@ -105,15 +121,15 @@ CORE-HEPH-GAZE-001:
   domain: FORGE
   official_name: gaze.py
   path: axion-core/forge/gaze.py
-  status: "[CANONIZED]"
+  status: '[CANONIZED]'
   version: v15.0 [OMEGA]
 TOOL-GENERATE_BARRELS:
   artifact_id: TOOL-GENERATE_BARRELS
-  content_hash: 1b885a1d97081c8d69088601e0e50ecb2c0f2c26366f01349b95b85d5a14e72b
+  content_hash: 4559eff697252e3cec8057ba7283882737afaf52cddb130a4100df63920dc2b7
   domain: FORGE
   official_name: generate_barrels.py
   path: axion-core/forge/generate_barrels.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-INGEST_VAULT:
   artifact_id: TOOL-INGEST_VAULT
@@ -121,7 +137,7 @@ TOOL-INGEST_VAULT:
   domain: FORGE
   official_name: ingest_vault.py
   path: axion-core/forge/ingest_vault.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-LINT:
   artifact_id: TOOL-LINT
@@ -129,15 +145,15 @@ TOOL-LINT:
   domain: FORGE
   official_name: lint.py
   path: axion-core/forge/lint.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-LOOM:
   artifact_id: TOOL-LOOM
-  content_hash: 2d8a767063a451adac8eb9561e82b71c26aadd3b4fdcc41a672e2be7f24eb970
+  content_hash: 33ac1a0c0d0f01c4f4621314600caf87c0dcb9a9910ad03ea3b50866c0139eab
   domain: FORGE
   official_name: loom.py
   path: axion-core/forge/loom.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 CORE-HEPH-MENTOR-001:
   artifact_id: CORE-HEPH-MENTOR-001
@@ -145,7 +161,7 @@ CORE-HEPH-MENTOR-001:
   domain: FORGE
   official_name: mentor.py
   path: axion-core/forge/mentor.py
-  status: "[CANONIZED]"
+  status: '[CANONIZED]'
   version: v15.0 [OMEGA]
 CORE-METRICS-001:
   artifact_id: CORE-METRICS-001
@@ -153,7 +169,7 @@ CORE-METRICS-001:
   domain: FORGE
   official_name: metrics.py
   path: axion-core/forge/metrics.py
-  status: "[CANONIZED]"
+  status: '[CANONIZED]'
   version: v15.0 [OMEGA]
 TOOL-MILESTONE:
   artifact_id: TOOL-MILESTONE
@@ -161,7 +177,7 @@ TOOL-MILESTONE:
   domain: FORGE
   official_name: milestone.py
   path: axion-core/forge/milestone.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 and:
   artifact_id: and
@@ -169,7 +185,7 @@ and:
   domain: FORGE
   official_name: mint_seed.py
   path: axion-core/forge/mint_seed.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-OUROBOROS:
   artifact_id: TOOL-OUROBOROS
@@ -177,7 +193,7 @@ TOOL-OUROBOROS:
   domain: FORGE
   official_name: ouroboros.py
   path: axion-core/forge/ouroboros.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v1.0 [OMEGA]
 TOOL-REFORGE:
   artifact_id: TOOL-REFORGE
@@ -185,15 +201,31 @@ TOOL-REFORGE:
   domain: FORGE
   official_name: reforge.py
   path: axion-core/forge/reforge.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+CORE:
+  artifact_id: CORE
+  content_hash: 94b44a7653396ed5684623a2d88c8d9b23aa9c051348f4d9925e537e006bff8f
+  domain: FORGE
+  official_name: rnc_engine.py
+  path: axion-core/forge/rnc_engine.py
+  status: '[CANONIZED]'
+  version: v15.0 [OMEGA]
+CORE:
+  artifact_id: CORE
+  content_hash: d7cee99d58e086e6ad11dfd6d032ca6c4053c7278149577c37e5f1ea7bf32f1a
+  domain: FORGE
+  official_name: rnc_engine_v2.py
+  path: axion-core/forge/rnc_engine_v2.py
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-SECURITY:
   artifact_id: TOOL-SECURITY
-  content_hash: fdd72bf92ab8cbb0f2d0d1f2cd454185c1a22443f0d9af2af68d68da4bee268b
+  content_hash: d1a2a24e7e861cf6683fe39496cba314bf0a5985fce9e30368f799f3e2e38bfc
   domain: FORGE
   official_name: security.py
   path: axion-core/forge/security.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-SENTINEL:
   artifact_id: TOOL-SENTINEL
@@ -201,7 +233,7 @@ TOOL-SENTINEL:
   domain: FORGE
   official_name: sentinel.py
   path: axion-core/forge/sentinel.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 CORE-HEPH-SOUL-001:
   artifact_id: CORE-HEPH-SOUL-001
@@ -209,15 +241,15 @@ CORE-HEPH-SOUL-001:
   domain: FORGE
   official_name: soul.py
   path: axion-core/forge/soul.py
-  status: "[CANONIZED]"
+  status: '[CANONIZED]'
   version: v15.0 [OMEGA]
 TOOL-SUBSTRATE_FORGE:
   artifact_id: TOOL-SUBSTRATE_FORGE
-  content_hash: ea98902a91cfd7330c78122e019b2d530ede766c6592e60e6f6d456314dbe1f1
+  content_hash: 161d45c5bd07e24aeacb30af835f8a67b2320d9ae3eede2eea55bb2d1cbcead2
   domain: FORGE
   official_name: substrate_forge.py
   path: axion-core/forge/substrate_forge.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-SYNC:
   artifact_id: TOOL-SYNC
@@ -225,7 +257,15 @@ TOOL-SYNC:
   domain: FORGE
   official_name: sync.py
   path: axion-core/forge/sync.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
+  version: v15.0 [OMEGA]
+TOOL-TEST_RESTORATION:
+  artifact_id: TOOL-TEST_RESTORATION
+  content_hash: d815b272b611f7118fd025a1dd43022b4b37884c811d5b28135bd8f7cf6f0543
+  domain: FORGE
+  official_name: test_restoration.py
+  path: axion-core/forge/test_restoration.py
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-TOOL_ROUTER:
   artifact_id: TOOL-TOOL_ROUTER
@@ -233,7 +273,7 @@ TOOL-TOOL_ROUTER:
   domain: FORGE
   official_name: tool_router.py
   path: axion-core/forge/tool_router.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-TRANSCLUDE_ENGINE:
   artifact_id: TOOL-TRANSCLUDE_ENGINE
@@ -241,7 +281,7 @@ TOOL-TRANSCLUDE_ENGINE:
   domain: FORGE
   official_name: transclude_engine.py
   path: axion-core/forge/transclude_engine.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-TRANSMUTATION_PIPELINE:
   artifact_id: TOOL-TRANSMUTATION_PIPELINE
@@ -249,15 +289,15 @@ TOOL-TRANSMUTATION_PIPELINE:
   domain: FORGE
   official_name: transmutation_pipeline.py
   path: axion-core/forge/transmutation_pipeline.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-TRANSMUTE_CONTEXT:
   artifact_id: TOOL-TRANSMUTE_CONTEXT
-  content_hash: 49c233d9672901e8345237533a6d8eab5fa2c7a3360a31923e5a6939bca59908
+  content_hash: 61fbcb4b41ac2f52c35cae68cd3c58f7f4821187c37554a209852d0733f7c624
   domain: FORGE
   official_name: transmute_context.py
   path: axion-core/forge/transmute_context.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-TRANSMUTER:
   artifact_id: TOOL-TRANSMUTER
@@ -265,7 +305,7 @@ TOOL-TRANSMUTER:
   domain: FORGE
   official_name: transmuter.py
   path: axion-core/forge/transmuter.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v13.0
 TOOL-VERIFY_AST:
   artifact_id: TOOL-VERIFY_AST
@@ -273,7 +313,7 @@ TOOL-VERIFY_AST:
   domain: FORGE
   official_name: verify_ast.py
   path: axion-core/forge/verify_ast.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]
 TOOL-WEAVER:
   artifact_id: TOOL-WEAVER
@@ -281,5 +321,5 @@ TOOL-WEAVER:
   domain: FORGE
   official_name: weaver.py
   path: axion-core/forge/weaver.py
-  status: "[ACTIVE]"
+  status: '[ACTIVE]'
   version: v15.0 [OMEGA]

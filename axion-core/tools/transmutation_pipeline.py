@@ -1,5 +1,17 @@
 """
-# TOOL-KNIG-004: The Transmutation Pipeline (Knight of Swords)
+artifact_anchor:
+  id: INFR.TRANSMUTATION_PIPELINE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-KNIG-004: The Transmutation Pipeline (Knight of Swords).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -60,38 +72,47 @@ import logging
 import os
 import subprocess
 import sys
+from pathlib import Path as path
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger("TransmutationPipeline")
 
 # --- CONFIGURATION ---
-TARGET_DIR = os.path.dirname(os.path.abspath(__file__))
+TARGET_DIR = path(__file__).resolve().parent
 SCRIPTS_DIR = TARGET_DIR
 
-# Tool Paths (Relative to tools/ directory)
+# Tool paths (Relative to tools/ directory)
 APPLY_STANDARD_SCRIPT = "apply_standard.py"
 VERIFY_AST_SCRIPT = "verify_ast.py"
 LINT_ARTIFACT_SCRIPT = "lint_artifact.py"
 KNIGHT_FIXER_SCRIPT = "knight_fixer.py"
 
 
-def run_agent(name: str, command: list[str], target_file: str) -> tuple[bool, str]:
+def run_agent(name: str, command: list[str], target_file: path) -> tuple[bool, str]:
     logger.info(f"  > [{name}] Activating...")
-    cmd = [sys.executable, os.path.join(TARGET_DIR, command[0]), *command[1:], target_file]
+    cmd = [sys.executable, str(TARGET_DIR / command[0]), *command[1:], str(target_file)]
 
     # Special Argument Handling
     if "--target" not in command and any(
-        x in command[0] for x in ["verify_ast", "apply_standard", "lint_artifact", "knight_fixer"]
+        x in command[0]
+        for x in ["verify_ast", "apply_standard", "lint_artifact", "knight_fixer"]
     ):
-        cmd = [sys.executable, os.path.join(TARGET_DIR, command[0]), "--target", target_file]
+        cmd = [
+            sys.executable,
+            str(TARGET_DIR / command[0]),
+            "--target",
+            str(target_file),
+        ]
 
     env = os.environ.copy()
     env["PYTHONIOENCODING"] = "utf-8"
 
     try:
         # Explicit check=False to handle return codes manually
-        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", env=env, check=False)
+        result = subprocess.run(
+            cmd, capture_output=True, text=True, encoding="utf-8", env=env, check=False
+        )
         if result.returncode != 0:
             return False, f"[STDOUT]: {result.stdout}\n[STDERR]: {result.stderr}"
         else:
@@ -100,33 +121,37 @@ def run_agent(name: str, command: list[str], target_file: str) -> tuple[bool, st
         return False, f"[ERROR]: {e}"
 
 
-def transmutation_cycle(scope_dir: str) -> None:
-    logger.info(f"\n✨ [THE LIGHTBINDER] Initiating Transmutation Cycle in: {scope_dir}")
+def transmutation_cycle(scope_dir: path) -> None:
+    logger.info(
+        f"\n✨ [THE LIGHTBINDER] Initiating Transmutation Cycle in: {scope_dir}"
+    )
     logger.info("📜 [LAW STANDARD] CODEX-001 v11.0\n")
 
-    if not os.path.exists(scope_dir):
+    if not scope_dir.exists():
         logger.error(f"❌ Error: Scope directory {scope_dir} not found.")
         return
 
-    files = [f for f in os.listdir(scope_dir) if f.endswith(".md") and f != "transmutation_pipeline.py"]
+    # Find all target markdown files
+    files = [f for f in scope_dir.glob("*.md") if f.name != "transmutation_pipeline.py"]
 
     stats = {"Total": len(files), "Reforged": 0, "Failed": 0, "Verified": 0}
 
-    log_path = os.path.join(TARGET_DIR, "pipeline_log.txt")
+    log_path = TARGET_DIR / "pipeline_log.txt"
     with open(log_path, "w", encoding="utf-8") as log_file:
 
         def log(msg: str) -> None:
             logger.info(msg)
             log_file.write(msg + "\n")
 
-        for i, filename in enumerate(files):
-            filepath = os.path.join(scope_dir, filename)
-            log(f"\n🔮 [TRIAGE] Processing ({i + 1}/{len(files)}): {filename}")
+        for i, filepath in enumerate(files):
+            log(f"\n🔮 [TRIAGE] Processing ({i + 1}/{len(files)}): {filepath.name}")
 
             all_passed = True
 
             # --- STEP 1: HEADER FORGE (The Emperor via Knight) ---
-            success, output = run_agent("The Knight (Header Forge)", [APPLY_STANDARD_SCRIPT], filepath)
+            success, output = run_agent(
+                "The Knight (Header Forge)", [APPLY_STANDARD_SCRIPT], filepath
+            )
             if not success:
                 log(f"    ❌ Forge Failed: {output}")
                 all_passed = False
@@ -134,14 +159,18 @@ def transmutation_cycle(scope_dir: str) -> None:
                 log("    ✅ Forge Passed")
 
             # --- STEP 2: STYLE SCAN (Knight) ---
-            success, output = run_agent("The Knight (Style Fix)", [KNIGHT_FIXER_SCRIPT], filepath)
+            success, output = run_agent(
+                "The Knight (Style Fix)", [KNIGHT_FIXER_SCRIPT], filepath
+            )
             if not success:
                 log(f"    ⚠️  Knight Partial: {output}")
             else:
                 log("    ✅ Knight Passed")
 
             # --- STEP 3: SENTINEL SCAN (Verification) ---
-            success, output = run_agent("The Sentinel (Verification)", [VERIFY_AST_SCRIPT], filepath)
+            success, output = run_agent(
+                "The Sentinel (Verification)", [VERIFY_AST_SCRIPT], filepath
+            )
             if success:
                 stats["Verified"] += 1
                 log("    ✅ Sentinel Passed")
@@ -151,10 +180,10 @@ def transmutation_cycle(scope_dir: str) -> None:
 
             if all_passed:
                 stats["Reforged"] += 1
-                log(f"  ✅ [COMPLETE] {filename} is fully transmuted.")
+                log(f"  ✅ [COMPLETE] {filepath.name} is fully transmuted.")
             else:
                 stats["Failed"] += 1
-                log(f"  ⚠️ [PARTIAL] {filename} requires manual intervention.")
+                log(f"  ⚠️ [PARTIAL] {filepath.name} requires manual intervention.")
 
     logger.info("\n" + "=" * 50)
     logger.info("📊 [TRANSMUTATION REPORT]")
@@ -168,7 +197,9 @@ def transmutation_cycle(scope_dir: str) -> None:
 def main() -> None:
     """CLI Entrypoint."""
     parser = argparse.ArgumentParser(description="Transmutation Pipeline CLI.")
-    parser.add_argument("--scope", default=TARGET_DIR, help="Directory to process.")
+    parser.add_argument(
+        "--scope", type=path, default=TARGET_DIR, help="Directory to process."
+    )
     args = parser.parse_args()
 
     transmutation_cycle(args.scope)

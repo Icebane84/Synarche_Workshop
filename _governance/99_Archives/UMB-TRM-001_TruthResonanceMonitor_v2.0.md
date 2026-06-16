@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-TRM-001_TRUTHRESONANCEMONITOR_V2.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-TRM-001_TruthResonanceMonitor_v2.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-TRM-001-TRUTHRESONANCEMONITOR-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-TRM-001_TruthResonanceMonitor_v2.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                             | Description       |
+| :------------------ | :------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-TRM-001-TRUTHRESONANCEMONITOR-V2.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-TRM-001_TruthResonanceMonitor_v2.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                 | The Standard.     |
+| **Domain**          | `GVRN`                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                        | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
 
 # **UMB-TRM-001: Truth Resonance Monitor (v2.0)**
 
@@ -84,9 +95,9 @@ Quests** whenever the **Resonance Score (RS)** falls below the canonical safety 
 
 - **Formula:** `RS = (Alignment / Total_Data_Points)`
 - **Benchmarks:**
-    - **RS = 1.0:** Perfect Harmony (Verified).
-    - **RS < 0.8:** Significant Drift (Dissonance Quest Triggered).
-    - **RS < 0.5:** Critical Fracture (Immediate Decontamination).
+  - **RS = 1.0:** Perfect Harmony (Verified).
+  - **RS < 0.8:** Significant Drift (Dissonance Quest Triggered).
+  - **RS < 0.5:** Critical Fracture (Immediate Decontamination).
 
 ### **3.4. Phase 4: Trigger & Update**
 

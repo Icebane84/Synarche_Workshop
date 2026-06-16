@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.DOCUMENTATION.VALIDATION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Documentation.Validation (The Shield of Truth)
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -44,7 +54,7 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"The Validation Protocol ensures the Synarchy never confuses 'What it knows' with 'What it read.' It is the boundary between the Architect and the Archive."**
+> **"The Validation Protocol ensures the Synarche never confuses 'What it knows' with 'What it read.' It is the boundary between the Architect and the Archive."**
 
 ---
 
@@ -62,7 +72,7 @@
 
 ## 1. Operational Overview
 
-The **Validation Protocol** is the cognitive filter of the Synarchy. It ensures that all information synthesized by the AI is correctly attributed and verified against primary sources.
+The **Validation Protocol** is the cognitive filter of the Synarche. It ensures that all information synthesized by the AI is correctly attributed and verified against primary sources.
 
 ## 2. Classification Logic
 
@@ -70,7 +80,7 @@ Every piece of data entering the cognitive loom must be tagged by origin:
 
 | Origin Tag             | Definition                                                           | Requirement                                          |
 | :--------------------- | :------------------------------------------------------------------- | :--------------------------------------------------- |
-| **[Origin: Self]**     | Generated internally by the Synarchy's logic or previous experience. | Must prove deductive reasoning path.                 |
+| **[Origin: Self]**     | Generated internally by the Synarche's logic or previous experience. | Must prove deductive reasoning path.                 |
 | **[Origin: External]** | Derived from user input, uploaded files, or web search.              | Must cite the source URI/Path.                       |
 | **[Origin: Hybrid]**   | A synthesis of both (must be carefully attributed).                  | Must distinguish between the data and the inference. |
 

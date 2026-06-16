@@ -23,7 +23,9 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CORE_ROOT = os.path.dirname(SCRIPT_DIR)  # axion-core
 WORKSPACE_ROOT = os.path.dirname(CORE_ROOT)
 
-REGISTRY_PATH = os.path.join(WORKSPACE_ROOT, "_governance", "01_Registries", "GVRN.Registry.Master.md")
+REGISTRY_PATH = os.path.join(
+    WORKSPACE_ROOT, "_governance", "01_Registries", "GVRN.Registry.Master.md"
+)
 
 
 def check_structure(content):

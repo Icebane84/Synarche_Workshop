@@ -2,7 +2,7 @@
 
 ## Socratic Objective
 
-Ground the **Master Artificer (Axion)** identity in the **Synarchy Soul** layer, resolving the dissonance between absolute execution and governed intent.
+Ground the **Master Artificer (Axion)** identity in the **Synarche Soul** layer, resolving the dissonance between absolute execution and governed intent.
 
 ## The Core Dissonance
 

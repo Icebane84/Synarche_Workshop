@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.SEED.TOOL.001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.SEED.TOOL.001: Tool Ascension Seed
 
 ### I. Universal Identification & Provenance (UIP)
@@ -27,11 +37,11 @@ conceptual transmutation:
 
 1. **Extraction:** The AI parses the tool's runtime logic, CLI arguments, and risk vectors.
 2. **Penta-Core Mapping:** The AI generates a 5-artifact cluster specifically for that tool:
-    - **UMB:** Defines the tool's absolute purpose and $V_{Safe}$.
-    - **ARCH:** Maps the tool's internal execution pipeline and data flow.
-    - **GVRN:** Codifies the safety boundaries, mandates, and error-handling rules.
-    - **AOP:** Documents the kinetic procedures for manual or automated execution.
-    - **GUCA:** Standardizes the terminal command-line catalysts.
+   - **UMB:** Defines the tool's absolute purpose and $V_{Safe}$.
+   - **ARCH:** Maps the tool's internal execution pipeline and data flow.
+   - **GVRN:** Codifies the safety boundaries, mandates, and error-handling rules.
+   - **AOP:** Documents the kinetic procedures for manual or automated execution.
+   - **GUCA:** Standardizes the terminal command-line catalysts.
 
 ### IV. Seed Logic Matrix
 

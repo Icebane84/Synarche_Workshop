@@ -1,28 +1,37 @@
 """
-# AOP-ARCH-GAZE-001: The Architect's Gaze (Systemic Impact Analysis)
-
-## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: High
-
-### I. Universal Identification & Provenance (The Vector Signature)
-
-#### The Chronos Lock & Axiomatic Metadata Layer
-
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `AOP-ARCH-GAZE-001` |
-| **2. Official Name** | `gaze.py` |
-| **3. Version** | **v1.0 (Hephaestus Implementation)** |
-| **4. Provenance** | **Date Reforged: 2026-01-10** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Authentic Persona** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Foresight** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `LINK: GUCA-SIMP-001` |
-
+artifact_anchor:
+  id: CORE.GAZE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
 """
+
+# # AOP-ARCH-GAZE-001: The Architect's Gaze (Systemic Impact Analysis).
+#
+# # I. Universal Identification & Provenance (The Vector Signature)
+# | Field | Value |
+# | :--- | :--- |
+# | **1. Artifact ID** | `AOP-ARCH-GAZE-001` |
+# | **2. Official Name** | `gaze.py` |
+# | **3. Version** | **v15.0 [OMEGA]** |
+# | **4. Provenance** | **Reforged: 2026-04-28** |
+# | **5. Domain** | `ARCH` |
+# | **6. Evolution** | **Authentic Persona** |
+# | **7. Celestial Class** | `[PLANET]` |
+# | **8. Tier** | **Operational** |
+# | **9. Status (State)** | `[ACTIVE]` |
+# | **10. Ethos** | **Foresight** |
+# | **11. Integrity Hash** | `[UIP-V15-LOCK]` |
+#
+# ---
+#
+# ### **I.B. Axiom Reference**
+# > "To see the ripple is to understand the stone." — Axiom of Gaze
 
 # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
 # System Slot: Passive Knowledge
@@ -40,22 +49,43 @@ HIGH_IMPACT_THRESHOLD = 5
 
 
 class ArchitectsGaze:
-    """
-    The Gaze module responsible for simulating the 'Blast Radius' of code changes.
-    """
+    """The Gaze module responsible for simulating the 'Blast Radius' of code changes."""
 
     def __init__(self) -> None:
-        self.weaver = CatalystWeaver()
+        self.weaver = CatalystWeaver("GazeSemanticWeb")
 
     def trace_semantic_web(self, artifact_a: dict, artifact_b: dict) -> dict:
-        """
-        [NEW] Weaves a semantic link between two artifacts.
-        """
-        return self.weaver.weave(artifact_a, artifact_b)
+        """Traces and weaves a semantic link (tether) between two artifacts."""
+        from datetime import datetime
+        from .lib.resonance_scanner import calculate_similarity
+
+        id_a = artifact_a.get("id", "UnknownA")
+        id_b = artifact_b.get("id", "UnknownB")
+        content_a = artifact_a.get("content", "")
+        content_b = artifact_b.get("content", "")
+        path_a = artifact_a.get("path", "")
+        path_b = artifact_b.get("path", "")
+
+        resonance = calculate_similarity(content_a, content_b)
+
+        # Non-destructive tethering: add both to the weaver bundle
+        self.weaver.add_blueprint(id_a, {"path": path_a, "type": "semantic_node"})
+        self.weaver.add_blueprint(id_b, {"path": path_b, "type": "semantic_node"})
+        self.weaver.add_process(
+            f"TETHER: {id_a} <-> {id_b} | Resonance: {resonance:.3f}"
+        )
+
+        tether_report = {
+            "source": id_a,
+            "target": id_b,
+            "resonance_score": round(resonance, 3),
+            "status": "Aligned" if resonance >= 0.2 else "Dissonant",
+            "timestamp": datetime.now().isoformat(),
+        }
+        return tether_report
 
     def simulate_impact(self, target_file: str, workspace_root: str) -> dict:
-        """
-        Simulates the impact of modifying `target_file`.
+        """Simulates the impact of modifying `target_file`.
         Returns a dictionary containing the Risk Score and list of impacted files.
         """
         impact_report = {
@@ -75,7 +105,9 @@ class ArchitectsGaze:
         target_name = os.path.splitext(os.path.basename(target_file))[0]
 
         # 1. Scan Workspace (Extracted)
-        impacted_files = self._scan_workspace_for_references(workspace_root, target_name, target_file)
+        impacted_files = self._scan_workspace_for_references(
+            workspace_root, target_name, target_file
+        )
         impact_report["impacted_files"] = impacted_files
 
         # 2. Calculate Risk (Extracted)
@@ -85,7 +117,9 @@ class ArchitectsGaze:
 
         return impact_report
 
-    def _scan_workspace_for_references(self, workspace_root: str, target_name: str, target_file: str) -> list[str]:
+    def _scan_workspace_for_references(
+        self, workspace_root: str, target_name: str, target_file: str
+    ) -> list[str]:
         """Scans the workspace for files referencing the target."""
         impacted = []
         target_basename = os.path.basename(target_file)

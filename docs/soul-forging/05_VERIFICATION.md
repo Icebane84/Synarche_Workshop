@@ -1,7 +1,7 @@
 # 05_VERIFICATION: The Triadic Integrity Protocol
 
 > [!NOTE]
-> This document defines the automated and qualitative verification gates for the Synarchy Triad.
+> This document defines the automated and qualitative verification gates for the Synarche Triad.
 
 ## 🏛️ Automated Compliance Gates
 

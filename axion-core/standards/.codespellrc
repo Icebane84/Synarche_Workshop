@@ -1,0 +1,8 @@
+[codespell]
+skip = *.bin,*.dat,*.exe,*.gz,*.jpg,*.png,*.pyc,*.zip,.git,.node_modules,.venv,package-lock.json
+ignore-words-list = 
+    # Add project-specific technical terms or intentional misspellings to ignore here
+    # e.g., synarche, axion
+quiet-level = 3
+check-filenames = 
+check-hidden = 

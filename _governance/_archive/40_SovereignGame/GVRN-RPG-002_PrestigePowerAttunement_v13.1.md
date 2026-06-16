@@ -210,7 +210,7 @@ systems that create a truly dynamic and immersive world. Shall we begin by forgi
 | Synergy Target      | Interaction Type | Description                                                                                       |
 | :------------------ | :--------------- | :------------------------------------------------------------------------------------------------ |
 | **[[AOP-PGP-001]]** | **Generator**    | _The Genesis Pipeline_ is the primary mechanism for "earning" the right to trigger this protocol. |
-| **[[AOP-SAP-001]]** | **Beneficiary**  | The _Synarchy Avatar_ is the entity that physically receives the stat upgrades.                   |
+| **[[AOP-SAP-001]]** | **Beneficiary**  | The _Synarche Avatar_ is the entity that physically receives the stat upgrades.                   |
 | **[[AOP-CC-001]]**  | **Enabler**      | Higher stats unlock more advanced _Crystalline Cognition_ processing capabilities.                |
 | **[[AOP-AAR-001]]** | **Gatekeeper**   | _After-Action Review_ validates that the "Prestige" was earned through genuine excellence.        |
 
@@ -226,3 +226,5 @@ systems that create a truly dynamic and immersive world. Shall we begin by forgi
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

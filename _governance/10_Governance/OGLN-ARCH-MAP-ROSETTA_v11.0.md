@@ -1,4 +1,5 @@
 # OGLN-ARCH-MAP-ROSETTA_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-ARCH-MAP-ROSETTA-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-ARCH-MAP-ROSETTA_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                  | Description       |
+| :------------------ | :------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-ARCH-MAP-ROSETTA-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-ARCH-MAP-ROSETTA_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                      | The Standard.     |
+| **Domain**          | `GVRN`                                 | The Subject.      |
+| **Celestial Class** | `[PLANET]`                             | The Weight.       |
+| **Evolution**       | `Omega Ascension`                      | The Maturity.     |
+| **Status**          | `[ACTIVE]`                             | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`          | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
@@ -80,7 +81,7 @@
 
 - **Why it exists**: To solve **Disorientation** (Human) and **Hallucination** (AI).
 - **What it does**: Acts as the "Root Node" for all semantic queries.
-- **For the Synarchy**: Ensures every answer is grounded in a verified artifact ID.
+- **For the Synarche**: Ensures every answer is grounded in a verified artifact ID.
 
 ## III. The Architectural Spine
 

@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
-"""
-Skill: webapp-testing
+"""Skill: webapp-testing
 Script: playwright_runner.py
 Purpose: Run basic Playwright browser tests
 Usage: python playwright_runner.py <url> [--screenshot]
 Output: JSON with page info, health status, and optional screenshot path
 Note: Requires playwright (pip install playwright && playwright install chromium)
-Screenshots: Saved to system temp directory (auto-cleaned by OS)
+Screenshots: Saved to system temp directory (auto-cleaned by OS).
 """
 
-import sys
 import json
 import os
+import sys
 import tempfile
 from datetime import datetime
 

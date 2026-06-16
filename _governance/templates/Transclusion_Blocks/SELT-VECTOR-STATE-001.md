@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-VECTOR-STATE-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('1') }}. The Vector State Block (V-STATE-BLOCK)**
 
 This block defines the system's **Coherence** status by calculating its position relative to the ideal.

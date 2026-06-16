@@ -1,8 +1,18 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.ANALYTICAL_TAGGER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
 
+"""## **[ARTIFACT START]**
 ## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `CORE.analytical.tagger`                | The Sovereign ID. |
@@ -11,35 +21,7 @@
 | **Domain**        | `CORE`                     | The Subject.      |
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
----
-
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-
-## **[ARTIFACT END]**
+## **[ARTIFACT END]**.
 """
 
 import logging
@@ -94,10 +76,4 @@ if __name__ == "__main__":
         tagger.tag_content("The Phoenix Protocol is a GVRN standard for OMEGA systems.")
     )
 
-# ---
-# 
-# ---
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.analytical.tagger VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 1c26bddab23a1743`
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.analytical.tagger VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 1c26bddab23a1743

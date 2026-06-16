@@ -1,6 +1,18 @@
+"""
+artifact_anchor:
+  id: INFR.REFORGE_OSLM.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 import re
-import sys
-from pathlib import Path
+from pathlib import path
 
 # Configuration
 OSLM_FILENAME = "UMB-OSLM-001_PPLGraphOutline_v11.0.md"
@@ -11,14 +23,16 @@ SEARCH_DIRS = [
     "docs",
 ]
 
-ARTIFACT_ID_REGEX = r"(?:UMB|AOP|GUCA|CSL|UEB|UIB|UWB|CMD|ENTITY|SELT|MAP|TOOL)-[A-Z]+-\d+"
+ARTIFACT_ID_REGEX = (
+    r"(?:UMB|AOP|GUCA|CSL|UEB|UIB|UWB|CMD|ENTITY|SELT|MAP|TOOL)-[A-Z]+-\d+"
+)
 
 
 def find_oslm_file():
     for d in SEARCH_DIRS:
-        path = Path(d)
+        path = path(d)
         if not path.is_absolute():
-            path = Path.cwd() / d
+            path = path.cwd() / d
 
         if path.exists():
             found = list(path.rglob(OSLM_FILENAME))
@@ -55,7 +69,9 @@ def parse_registry_for_map(content):
                 idx = parts.index(p)
                 if idx > 0 and parts[idx - 1]:
                     name_candidate = parts[idx - 1]
-                    if len(name_candidate) > 5 and "-" not in name_candidate[:4]:  # Basic heuristic
+                    if (
+                        len(name_candidate) > 5 and "-" not in name_candidate[:4]
+                    ):  # Basic heuristic
                         name_to_id[name_candidate] = match_id
 
     # Manual overwrites for known stubborn keys if regex misses
@@ -64,6 +80,41 @@ def parse_registry_for_map(content):
     name_to_id["The Phoenix Genesis Pipeline"] = "UWB-PGP-001"
 
     return name_to_id
+
+
+def _resolve_source_id(raw_name: str, id_map: dict) -> str:
+    src_id = id_map.get(raw_name)
+    if not src_id:
+        src_match = re.search(ARTIFACT_ID_REGEX, raw_name)
+        if src_match:
+            src_id = src_match.group(0)
+        else:
+            src_id = raw_name
+    return src_id
+
+
+def _parse_link_items(raw_links: str, src_id: str) -> list[dict]:
+    edges = []
+    link_items = raw_links.split("- ")
+    for item in link_items:
+        item = item.strip()
+        if not item:
+            continue
+
+        target_match = re.search(ARTIFACT_ID_REGEX, item)
+        if target_match:
+            target_id = target_match.group(0)
+            desc = item.replace(target_id, "").strip(": .").strip()
+            if src_id and target_id:
+                edges.append(
+                    {
+                        "source": src_id,
+                        "relation": "Synergistic Link",
+                        "target": target_id,
+                        "desc": desc,
+                    }
+                )
+    return edges
 
 
 def parse_synergistic_links(content, id_map):
@@ -97,38 +148,8 @@ def parse_synergistic_links(content, id_map):
                     if not current_source:
                         continue
 
-                    # Resolve Source ID
-                    # Try map
-                    src_id = id_map.get(current_source)
-                    if not src_id:
-                        # Try finding ID in the name itself
-                        src_match = re.search(ARTIFACT_ID_REGEX, current_source)
-                        if src_match:
-                            src_id = src_match.group(0)
-                        else:
-                            # Fallback: Use Name (better than nothing, but we want IDs)
-                            src_id = current_source  # Keep as fallback
-
-                    # Parse Links
-                    link_items = raw_links.split("- ")
-                    for item in link_items:
-                        item = item.strip()
-                        if not item:
-                            continue
-
-                        target_match = re.search(ARTIFACT_ID_REGEX, item)
-                        if target_match:
-                            target_id = target_match.group(0)
-                            desc = item.replace(target_id, "").strip(": .").strip()
-                            if src_id and target_id:
-                                edges.append(
-                                    {
-                                        "source": src_id,
-                                        "relation": "Synergistic Link",
-                                        "target": target_id,
-                                        "desc": desc,
-                                    }
-                                )
+                    src_id = _resolve_source_id(current_source, id_map)
+                    edges.extend(_parse_link_items(raw_links, src_id))
 
     return edges
 
@@ -144,7 +165,7 @@ def main():
             source_file = backup
 
     if not source_file or not source_file.exists():
-        print(f"❌ OSLM file/backup not found.")
+        print("❌ OSLM file/backup not found.")
         return
 
     print(f"📖 Parsing {source_file}...")

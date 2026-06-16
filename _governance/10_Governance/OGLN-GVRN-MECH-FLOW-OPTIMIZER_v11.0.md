@@ -1,4 +1,5 @@
 # OGLN-GVRN-MECH-FLOW-OPTIMIZER_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-GVRN-MECH-FLOW-OPTIMIZER-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-GVRN-MECH-FLOW-OPTIMIZER_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-GVRN-MECH-FLOW-OPTIMIZER-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-GVRN-MECH-FLOW-OPTIMIZER_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
@@ -78,7 +79,7 @@
 
 - **Why it exists**: To prevent the same mistake from happening twice.
 - **What it does**: Prunes bad logic paths (`[DEPRECATED]`) and injects Novelty Seeds.
-- **For the Synarchy**: Ensures continuous evolution and adaptation.
+- **For the Synarche**: Ensures continuous evolution and adaptation.
 
 ## III. The Operational Mechanism
 

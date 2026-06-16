@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-20260125-087_ARCHITECTURALSYNCHRONIZATION` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-20260125-087_ArchitecturalSynchronization.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-20260125-087-ARCHITECTURALSYNCHRONIZATION-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20260125-087_ArchitecturalSynchronization.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                    | Description       |
+| :------------------ | :------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-20260125-087-ARCHITECTURALSYNCHRONIZATION-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-20260125-087_ArchitecturalSynchronization.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
+| **Domain**          | `GVRN`                                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 # CSL-20260125-087: Architectural Synchronization: Phoenix Form & Guardian Capability Matrices
 
@@ -42,7 +53,7 @@ This fusion ensures that specialized capabilities (Guardian Powers) are always p
 
 ### 3. Implications & Next Steps
 
-- **Impact**: The Phoenix Synarchy's structural integrity is hardened. The system can now trace conceptual mandates directly to implemented code/modules.
+- **Impact**: The Phoenix Synarche's structural integrity is hardened. The system can now trace conceptual mandates directly to implemented code/modules.
 - **Action**: Monitor the `OSLM Matrix` for any new "Floating Peaks" (unlinked concepts) in future expansions.
 
 ---

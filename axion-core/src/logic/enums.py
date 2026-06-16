@@ -1,5 +1,17 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.ENUMS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -12,35 +24,40 @@
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | 1.0     |
+# | **Resonance** | 1.0     |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Logic Drift**      | Strict Linter Enforcement |
+# | **Semantic Decay**   | Axiomatic Compass Audit   |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+| CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
 
 ## **[ARTIFACT END]**
+
+Objective: Standardized enumerations for the Synarche workspace.
+Conforms to OGLN/AISTF v15.0 governance and documentation standards.
 """
+
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.enums VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28
 
 from enum import Enum
 
@@ -86,6 +103,19 @@ class Domain(str, Enum):
     LOGS = "LOGS"  # Experience & Synthesis Records
     TMPL = "TMPL"  # Templates & Standards
     UNDEFINED = "UNDEFINED"
+
+
+class PhoenixRosettaStone(str, Enum):
+    """The Phoenix Rosetta Stone."""
+
+
+class RPGType(str, Enum):
+    """The RPG Engine."""
+
+    CMD = "CMD"
+    MODULES = "MODULES"
+    LOGS = "LOGS"
+    ARTIFACTS = "ARTIFACTS"
 
 
 class Module(str, Enum):
@@ -184,7 +214,7 @@ class AuditStatus(str, Enum):
 
 
 # --- 5. THE GOVERNANCE MAP (Code-Accessible) ---
-FIELD_GOVERNANCE = {
+FIELD_GOVERNANCE: dict[str, TarotShard] = {
     "Artifact ID": TarotShard.EMPEROR,
     "Version": TarotShard.EMPEROR,
     "Type": TarotShard.EMPEROR,
@@ -206,13 +236,31 @@ FIELD_GOVERNANCE = {
 
 
 def get_patron(field_name: str) -> TarotShard:
-    """Returns the Tarot Shard responsible for governing a specific field."""
+    """Returns the Tarot Shard responsible for governing a specific field.
+
+    Args:
+        field_name: The name of the metadata field.
+
+    Returns:
+        The TarotShard instance responsible for the field.
+
+    """
     return FIELD_GOVERNANCE.get(field_name, TarotShard.EMPEROR)
 
-# ---
-# 
-# ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
+def get_catalyst(field_name: str) -> TarotShard:
+    """Returns the Tarot Shard responsible for catalyzing a specific field.
 
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.enums VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: b9b5bdfde94eac0a`
+    Args:
+        field_name: The name of the metadata field.
+
+    Returns:
+        The TarotShard instance responsible for catalyzing the field.
+
+    """
+    return FIELD_GOVERNANCE.get(field_name, TarotShard.MAGICIAN)
+
+
+# ---
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.enums VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28
+# ---

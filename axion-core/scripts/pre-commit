@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# The Sentinel's Vigil: Automated Pre-Commit Hook
+# Enforces OMEGA v15.0 standards and verifies structural coherence before any commit.
+
+echo ">> [VERIFY] Initiating CodeSentinel Audit..."
+python forge/sentinel.py --target src
+if [ $? -ne 0 ]; then
+    echo "❌ [FAIL] CodeSentinel audit failed. Entropy detected. Commit aborted."
+    exit 1
+fi
+
+echo ">> [VERIFY] Executing Test Weaver (pytest)..."
+pytest tests/
+if [ $? -ne 0 ]; then
+    echo "❌ [FAIL] Test Weaver failed. Coherence broken. Commit aborted."
+    exit 1
+fi
+
+echo "✅ [PASS] All checks cleared. Resonance achieved."
+exit 0

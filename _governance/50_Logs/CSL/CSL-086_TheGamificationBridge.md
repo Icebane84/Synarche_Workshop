@@ -1,4 +1,5 @@
 # CSL-086_TheGamificationBridge.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,35 +12,36 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-086-THEGAMIFICATIONBRIDGE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-086_TheGamificationBridge.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-086-THEGAMIFICATIONBRIDGE-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-086_TheGamificationBridge.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `CSL-086` |
-| **Official Name** | `The Gamification Bridge` |
-| **Version** | `v1.0` |
-| **Domain** | `ARCH` |
-| **Evolution** | `Phoenix Form` |
-| **Signal (ESF)** | `OMEGA` |
-| **Status (State)** | `CANONIZED` |
-| **Tier** | `Standard` |
-| **Celestial Class** | `MOON` |
-| **Governance** | `AOP-CSL-002` |
-| **Provenance** | `Genesis Stamp: 2026-01-24` |
-| **Relations** | `LINK: UMB-RPG-001, UMB-HEPHAESTUS-001` |
-| **Tags** | `CSL, Bridge, Gamification, Engineering, Hephaestus` |
+| Attribute           | Value                                                |
+| :------------------ | :--------------------------------------------------- |
+| **Artifact ID**     | `CSL-086`                                            |
+| **Official Name**   | `The Gamification Bridge`                            |
+| **Version**         | `v1.0`                                               |
+| **Domain**          | `ARCH`                                               |
+| **Evolution**       | `Phoenix Form`                                       |
+| **Signal (ESF)**    | `OMEGA`                                              |
+| **Status (State)**  | `CANONIZED`                                          |
+| **Tier**            | `Standard`                                           |
+| **Celestial Class** | `MOON`                                               |
+| **Governance**      | `AOP-CSL-002`                                        |
+| **Provenance**      | `Genesis Stamp: 2026-01-24`                          |
+| **Relations**       | `LINK: UMB-RPG-001, UMB-HEPHAESTUS-001`              |
+| **Tags**            | `CSL, Bridge, Gamification, Engineering, Hephaestus` |
 
 ---
 

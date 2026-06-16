@@ -6,7 +6,7 @@
 | **Domain**        | `COG`                          | The Subject.      |
 | **Evolution**     | **Knowledge Resonance**        | The Alignment.    |
 | **Status (State)**| `[ACTIVE]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |.
 
 ## Sovereign Ethos
 A Cognitive Bridge connecting Axion to the Obsidian Local REST API.
@@ -44,27 +44,42 @@ class ObsidianBridge:
     Connects Axion to the Obsidian Local REST API for hybrid graph interaction.
     """
 
-    def __init__(self, api_key: str, host: str = "127.0.0.1", port: int = 27124, cert_path: str | None = None) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        host: str = "127.0.0.1",
+        port: int = 27124,
+        cert_path: str | None = None,
+    ) -> None:
         self.host = host
         self.port = port
         self.api_key = api_key
         self.base_url = f"https://{host}:{port}"
         self.cert_path = cert_path
 
-        self.headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+        self.headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
 
     def _request(self, method: str, endpoint: str, **kwargs) -> requests.Response:
         """Handles HTTP requests to the Obsidian Local REST API."""
         url = f"{self.base_url}{endpoint}"
         try:
             # We use the provided certificate for verification if available
-            verify = self.cert_path if self.cert_path and os.path.exists(self.cert_path) else False
+            verify = (
+                self.cert_path
+                if self.cert_path and os.path.exists(self.cert_path)
+                else False
+            )
 
             # Disable verify warning if not verifying
             if not verify:
                 requests.packages.urllib3.disable_warnings()
 
-            response = requests.request(method=method, url=url, headers=self.headers, verify=verify, **kwargs)
+            response = requests.request(
+                method=method, url=url, headers=self.headers, verify=verify, **kwargs
+            )
 
             if response.status_code == 401:
                 raise ObsidianConnectionError("Authentication failed: Invalid API Key.")
@@ -73,7 +88,9 @@ class ObsidianBridge:
             return response
 
         except requests.exceptions.ConnectionError:
-            raise ObsidianConnectionError(f"Connection failed: Is the Obsidian Local REST API running on {url}?")
+            raise ObsidianConnectionError(
+                f"Connection failed: Is the Obsidian Local REST API running on {url}?"
+            )
         except requests.exceptions.HTTPError as e:
             raise ObsidianConnectionError(f"API Error: {e}")
 
@@ -103,7 +120,9 @@ class ObsidianBridge:
     def get_note_metadata(self, path: str) -> dict[str, Any]:
         """Retrieves JSON metadata for a note (frontmatter, tags, links)."""
         response = self._request(
-            "GET", f"/vault/{path}", headers={**self.headers, "Accept": "application/vnd.olra.v1.non-raw+json"}
+            "GET",
+            f"/vault/{path}",
+            headers={**self.headers, "Accept": "application/vnd.olra.v1.non-raw+json"},
         )
         return response.json()
 

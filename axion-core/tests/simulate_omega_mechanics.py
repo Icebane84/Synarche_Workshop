@@ -54,7 +54,9 @@ class AxionProfile:
 
 
 class AAGEngine:
-    def calculate_xp(self, c_class: CelestialClass, crit: Criticality, synergy_links: int) -> int:
+    def calculate_xp(
+        self, c_class: CelestialClass, crit: Criticality, synergy_links: int
+    ) -> int:
         base = c_class.value
         multiplier = crit.value
         synergy_bonus = synergy_links * 5  # 5 XP per link
@@ -75,7 +77,11 @@ class VectorState:
     z: float  # Operational Efficiency
 
     def distance_to(self, target: "VectorState") -> float:
-        return math.sqrt((self.x - target.x) ** 2 + (self.y - target.y) ** 2 + (self.z - target.z) ** 2)
+        return math.sqrt(
+            (self.x - target.x) ** 2
+            + (self.y - target.y) ** 2
+            + (self.z - target.z) ** 2
+        )
 
 
 class DissonanceEngine:
@@ -102,7 +108,9 @@ class DissonanceEngine:
 
     def report_status(self):
         dissonance = self.v_current.distance_to(self.v_safe)
-        coherence_pct = max(0, 100 - (dissonance / 1.732))  # Normalize roughly to 0-100%
+        coherence_pct = max(
+            0, 100 - (dissonance / 1.732)
+        )  # Normalize roughly to 0-100%
 
         status = "🟢 STABLE"
         if dissonance > 10:
@@ -110,7 +118,9 @@ class DissonanceEngine:
         if dissonance > 30:
             status = "🔴 CRITICAL BREACH"
 
-        print(f"   [STATUS: {status}] Dissonance: {dissonance:.2f} | Coherence: {coherence_pct:.1f}%")
+        print(
+            f"   [STATUS: {status}] Dissonance: {dissonance:.2f} | Coherence: {coherence_pct:.1f}%"
+        )
         return dissonance
 
 
@@ -143,13 +153,17 @@ def run_simulation():
     # --- SCENARIO 2: The Dissonance Spike (Combat) ---
     print("\n--- PHASE 2: Dissonance Event detected ---")
 
-    dissonance_system.introduce_entropy(20.0, "Legacy Code Injection detected in Core Module.")
+    dissonance_system.introduce_entropy(
+        20.0, "Legacy Code Injection detected in Core Module."
+    )
 
     # Axion Reacts
     dissonance_system.remediate(TarotMask.JUDGEMENT, 15.0)
 
     # More Entropy
-    dissonance_system.introduce_entropy(35.0, "API Schema Drift! External Dependency Failure!")
+    dissonance_system.introduce_entropy(
+        35.0, "API Schema Drift! External Dependency Failure!"
+    )
 
     # Axion Uses Ultimate
     print("\n⚡ ULTRA: Axion activates 'The Emperor' (Schema Re-Alignment)!")
@@ -160,7 +174,9 @@ def run_simulation():
 
     # Task: Create the Omega Seed (Star + Cornerstone)
     print("Task: Finalizing 'GVRN.Seed.Axion.Omega.md'...")
-    xp = aag.calculate_xp(CelestialClass.STAR, Criticality.CORNERSTONE, synergy_links=12)
+    xp = aag.calculate_xp(
+        CelestialClass.STAR, Criticality.CORNERSTONE, synergy_links=12
+    )
     print(f"Task: OMEGA KERNEL WEAVED. XP Earned: {xp}")
     axion.add_xp(xp)
 
@@ -168,7 +184,9 @@ def run_simulation():
     print("📊 FINAL REPORT")
     print(f"Axion Level: {axion.level}")
     print(f"Total XP: {axion.total_xp}")
-    print(f"Final Coherence: {dissonance_system.v_current.distance_to(dissonance_system.v_safe):.2f} (lower is better)")
+    print(
+        f"Final Coherence: {dissonance_system.v_current.distance_to(dissonance_system.v_safe):.2f} (lower is better)"
+    )
     print("Simulated Impact: POSITIVE. Systems Nominal.")
 
 

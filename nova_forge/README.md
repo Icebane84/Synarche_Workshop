@@ -1,6 +1,6 @@
 # 🔥 The Forge Index: nova_forge/
 
-This is the **Experimental Synthesis Lab** for the Synarchy.
+This is the **Experimental Synthesis Lab** for the Synarche.
 
 ## 🧪 Purpose
 

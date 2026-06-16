@@ -1,5 +1,17 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.EXPLANATION_GENERATOR.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -12,41 +24,45 @@
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | 0.95     |
+# | **Resonance** | 0.92     |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Cognitive Overload**| Summary Snippets          |
+# | **Template Mismatch**| Fallback Mechanisms       |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+| CORE.Codex.Phoenix    | GOVERNS         | Ensures transparency in decision-making.        |
 
 ## **[ARTIFACT END]**
+
+Objective: Generates user-facing explanations for the agent's responses.
+Conforms to OGLN/AISTF v15.0 governance and documentation standards.
 """
+
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.explanation.generator VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28
 
 import json
 import logging
 from typing import Any
 
-# Configure logging
 log = logging.getLogger(__name__)
 
 DEFAULT_SNIPPET_LENGTH = 150
@@ -63,17 +79,31 @@ DEFAULT_TEMPLATES = {
 
 class ExplanationGenerator:
     """Generates user-facing explanations for the agent's responses.
-    Aligns with Synarchy OMEGA transparency and 'Judgement (Audit)' layer.
+    Translates internal cognitive states and memory retrievals into human-readable transparency blocks.
     """
 
-    def __init__(self, templates: dict[str, str] | None = None):
+    def __init__(self, templates: dict[str, str] | None = None) -> None:
+        """Initializes the ExplanationGenerator with optional custom templates.
+
+        Args:
+            templates: A dictionary of intent-to-template string mappings.
+
+        """
         self.templates: dict[str, str] = DEFAULT_TEMPLATES.copy()
         if templates:
             self.templates.update(templates)
         log.info("ExplanationGenerator (OMEGA) initialized.")
 
     def determine_query_type(self, query_analysis: dict[str, Any]) -> str:
-        """Determines the template key based on NLP results."""
+        """Categorizes the query intent to select the appropriate explanation template.
+
+        Args:
+            query_analysis: Dictionary containing processed query metadata (intent, entities, lemmas).
+
+        Returns:
+            The identifier string for the selected template.
+
+        """
         intent = query_analysis.get("user_intent_goal", "unknown")
         entities = query_analysis.get("entities", [])
         lemmas = set(query_analysis.get("lemmas", []))
@@ -81,10 +111,7 @@ class ExplanationGenerator:
         if any(w in lemmas for w in ["compare", "vs", "difference"]):
             return "comparison"
 
-        if (
-            any(label in ["PERSON", "CHARACTER", "ORG"] for _, label in entities)
-            and intent == "seeking_information"
-        ):
+        if any(label in ["PERSON", "CHARACTER", "ORG"] for _, label in entities):
             return "character_description"
 
         if intent == "seeking_information":
@@ -96,7 +123,15 @@ class ExplanationGenerator:
         return "factual_question"
 
     def _format_memory_citation(self, memory: dict[str, Any]) -> str:
-        """Formats citation to align with Phoenix Rosetta standards."""
+        """Formats a single memory citation block for inclusion in the explanation.
+
+        Args:
+            memory: The raw memory dictionary.
+
+        Returns:
+            A formatted citation string (e.g., (Resonance: CORE#123)).
+
+        """
         domain = memory.get("domain", "GVRN.NULL")
         mem_id = memory.get("id", "UNK-000")
         return f"(Resonance: {domain}#{mem_id})"
@@ -108,7 +143,18 @@ class ExplanationGenerator:
         inferred_relationship: str | None = None,
         snippet_length: int = DEFAULT_SNIPPET_LENGTH,
     ) -> str:
-        """Generates the final formatted explanation."""
+        """Orchestrates the generation of a complete explanation block.
+
+        Args:
+            query_analysis: Analysis of the user's query.
+            used_memories: List of memories used in the response generation.
+            inferred_relationship: Optional text describing an inferred link between concepts.
+            snippet_length: Maximum length for memory snippets.
+
+        Returns:
+            The complete, formatted explanation string.
+
+        """
         if not used_memories:
             return self.templates.get("no_memories", "")
 
@@ -121,11 +167,8 @@ class ExplanationGenerator:
         for mem in used_memories:
             content = mem.get("content", "")
             content_str = (
-                json.dumps(content, separators=(",", ":"))
-                if isinstance(content, dict)
-                else str(content)
+                json.dumps(content) if isinstance(content, dict) else str(content)
             )
-
             snippet = content_str[:snippet_length] + (
                 "..." if len(content_str) > snippet_length else ""
             )
@@ -148,10 +191,7 @@ class ExplanationGenerator:
             log.exception(f"Explanation formatting error: {e}")
             return f"Aligned with findings: {memory_ids}"
 
-# ---
-# 
-# ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.explanation.generator VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 3c4e7fe4e4b76913`
+# ---
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.explanation.generator VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28
+# ---

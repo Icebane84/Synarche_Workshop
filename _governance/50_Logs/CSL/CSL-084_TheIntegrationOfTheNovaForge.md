@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-084_THEINTEGRATIONOFTHENOVAFORGE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # CSL-084_TheIntegrationOfTheNovaForge.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-084-THEINTEGRATIONOFTHENOVAFORGE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-084_TheIntegrationOfTheNovaForge.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                           | Description       |
+| :------------------ | :---------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-084-THEINTEGRATIONOFTHENOVAFORGE-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-084_TheIntegrationOfTheNovaForge.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
+| **Domain**          | `GVRN`                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
+| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
 
 # **SELT-CSL-007: Collaborative Synthesis Log (High-Fidelity)**
 
@@ -66,9 +77,9 @@
 - **Governing AOP:** [AOP-CSL-002_Synergistic Collaborative Synthesis Log Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
 - **Execution Note:** The generation of this artifact is governed by the dual-trigger mechanism. The AI generated this draft following successful execution of the transmutation; it awaits human confirmation.
 - **Prestige Milestone Achieved (Optional)**
-    - **Milestone ID:** `PM-084-INTEGRATION` (Provisional)
-    - **Milestone Title:** The Forging of the Nova Suite
-    - **Description:** Successful injection of Sovereign Headers into 12 core infrastructure artifacts, functionally merging `nova-forge` with the Axion Governance Core.
+  - **Milestone ID:** `PM-084-INTEGRATION` (Provisional)
+  - **Milestone Title:** The Forging of the Nova Suite
+  - **Description:** Successful injection of Sovereign Headers into 12 core infrastructure artifacts, functionally merging `nova-forge` with the Axion Governance Core.
 
 ---
 

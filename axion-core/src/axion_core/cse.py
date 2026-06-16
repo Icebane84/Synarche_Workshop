@@ -1,10 +1,32 @@
 """
-UMB-CSE-002: The Coherent Synthesis Engine (Source)
+artifact_anchor:
+  id: CORE.CSE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
 
-Genesis Stamp: 2026-01-25
-Domain: TECH.Engine
-Purpose: To execute the Homeostatic Core Cycle (Sense-Model-Act-Learn) and ensure Systemic Coherence.
-Governed By: GVRN-CODEX-001, UMB-SGM-001
+"""### **Block A: The Identification Lock (UIP-V15)**.
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-CSE-002`                 | The Sovereign ID. |
+| **Official Name**   | `cse.py`                      | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `TECH-ENGINE-CORE`            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
+
+**The Synthesis Axiom: Homeostatic Core (Law 2)**
+> Implemented from Blueprint `GVRN.TECH.Cse.md`.
+> Ethos: To execute the Homeostatic Core Cycle (Sense-Model-Act-Learn) and ensure Systemic Coherence.
 """
 
 import logging
@@ -15,15 +37,16 @@ from datetime import datetime
 
 
 # Setup Logging similar to 'The Void'
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - [CSE] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - [CSE] %(message)s"
+)
 logger = logging.getLogger("CoherentSynthesisEngine")
 
 COHERENCE_THRESHOLD = 0.8
 
 
 class VectorGovernance:
-    """
-    Quantifies the system state using the State Vector Paradigm (v10.0).
+    """Quantifies the system state using the State Vector Paradigm (v10.0).
     Metric tracking for Coherence Index (CI) and Entropic Drift Velocity (EDV).
     """
 
@@ -34,24 +57,30 @@ class VectorGovernance:
 
     def calculate_coherence_index(self) -> float:
         """Calculates the Coherence Index (Inverse of Euclidean Distance)."""
-        distance = sum((s - c) ** 2 for s, c in zip(self.v_safe, self.v_current, strict=True)) ** 0.5
+        distance = (
+            sum((s - c) ** 2 for s, c in zip(self.v_safe, self.v_current, strict=True))
+            ** 0.5
+        )
         # Normalize: 1.0 is perfect coherence (zero distance)
         return max(0.0, 1.0 - (distance / len(self.v_safe) ** 0.5))
 
     def calculate_entropic_drift(self) -> float:
         """Quantifies the delta between current and safe states."""
-        return sum(abs(s - c) for s, c in zip(self.v_safe, self.v_current, strict=True)) / len(self.v_safe)
+        return sum(
+            abs(s - c) for s, c in zip(self.v_safe, self.v_current, strict=True)
+        ) / len(self.v_safe)
 
     def update_vector(self, values: list[float]) -> None:
         """Sets the current system vector."""
         if len(values) == len(self.v_current):
             self.v_current = [max(0.0, min(1.0, v)) for v in values]
-            logger.info(f"Vector Update: {self.v_current} (CI: {self.calculate_coherence_index():.4f})")
+            logger.info(
+                f"Vector Update: {self.v_current} (CI: {self.calculate_coherence_index():.4f})"
+            )
 
 
 class CoherentSynthesisEngine:
-    """
-    The Coherent Synthesis Engine (CSE).
+    """The Coherent Synthesis Engine (CSE).
     The 'Mind' that orchestrates the Sense-Model-Act-Learn (SMAL) cycle.
     """
 
@@ -62,9 +91,7 @@ class CoherentSynthesisEngine:
         logger.info("Coherent Synthesis Engine Initialized (v11.1)")
 
     def pulse(self, input_data: dict | str) -> dict[str, object]:
-        """
-        Executes a single iteration of the Homeostatic Core Cycle.
-        """
+        """Executes a single iteration of the Homeostatic Core Cycle."""
         start_time = time.time()
         self.cycle_count += 1
         logger.info(f"--- [PULSE {self.cycle_count}] Starting Cycle ---")
@@ -84,7 +111,9 @@ class CoherentSynthesisEngine:
         duration = time.time() - start_time
         ci = self.gov.calculate_coherence_index()
 
-        logger.info(f"--- [PULSE {self.cycle_count}] Complete in {duration:.4f}s (CI: {ci:.4f}) ---")
+        logger.info(
+            f"--- [PULSE {self.cycle_count}] Complete in {duration:.4f}s (CI: {ci:.4f}) ---"
+        )
 
         return {
             "cycle_id": self.cycle_count,
@@ -96,8 +125,7 @@ class CoherentSynthesisEngine:
         }
 
     def sense(self, raw_data: dict | str) -> dict[str, object]:
-        """
-        Gate 1: Ingestion.
+        """Gate 1: Ingestion.
         Transforms raw input into a Proto-Distillate with metadata.
         """
         logger.info("Sense: Transforming raw data into Contextual Distillate.")
@@ -110,8 +138,7 @@ class CoherentSynthesisEngine:
         }
 
     def model(self, distillate: dict) -> dict[str, object]:
-        """
-        Gate 4: Coherence Validation.
+        """Gate 4: Coherence Validation.
         Quantifies dissonance against the existing Knowledge Graph.
         """
         logger.info("Model: Quantifying Dissonance & Pattern Deviation.")
@@ -133,8 +160,7 @@ class CoherentSynthesisEngine:
         }
 
     def act(self, distillate: dict, report: dict) -> str:
-        """
-        Gate 5/6: Manifestation.
+        """Gate 5/6: Manifestation.
         Executes directives or triggers corrective sub-protocols.
         """
         logger.info("Act: Executing Architectural Mandate.")
@@ -145,15 +171,16 @@ class CoherentSynthesisEngine:
         # Mocking Loom/Forge integration
         if self.loom:
             node = self.loom.ingest_artifact(
-                distillate["payload"] if isinstance(distillate["payload"], str) else "generated_artifact.md"
+                distillate["payload"]
+                if isinstance(distillate["payload"], str)
+                else "generated_artifact.md"
             )
             return f"INTEGRATED:{node['id']}" if node else "INTEGRATION_FAILED"
 
         return "STABLE_EXECUTION"
 
     def learn(self, distillate: dict, result: str) -> None:
-        """
-        Gate 7: Adaptive Refinement.
+        """Gate 7: Adaptive Refinement.
         Refines heuristics based on cycle success.
         """
         logger.info(

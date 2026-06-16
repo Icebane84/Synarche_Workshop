@@ -1,17 +1,27 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.DOCUMENTATION.SCAFFOLDING` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Documentation.Scaffolding (The Geometry of Intent)
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                           | Description       |
-| :------------------ | :------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN.Documentation.Scaffolding`| The Sovereign ID. |
-| **Official Name**   | `GVRN.Documentation.Scaffolding.md`| The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**          | `GVRN`                          | The Subject.      |
-| **Celestial Class** | `[STAR]`                        | The Weight.       |
-| **Evolution**       | `Systemic Synthesis`            | The Maturity.     |
-| **Status**          | `[CANONIZED]`                   | The Lifecycle.    |
-| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key                 | Value                               | Description       |
+| :------------------ | :---------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.Documentation.Scaffolding`    | The Sovereign ID. |
+| **Official Name**   | `GVRN.Documentation.Scaffolding.md` | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**                   | The Standard.     |
+| **Domain**          | `GVRN`                              | The Subject.      |
+| **Celestial Class** | `[STAR]`                            | The Weight.       |
+| **Evolution**       | `Systemic Synthesis`                | The Maturity.     |
+| **Status**          | `[CANONIZED]`                       | The Lifecycle.    |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix`     | The Network.      |
 
 ---
 
@@ -27,10 +37,10 @@
 
 ## **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                | Mitigation                                    |
-| :------------------ | :-------------------------------------------- |
-| **Structural Blur** | Strict inheritance from the Omega Template.   |
-| **Identity Drift**  | 1:1 mapping between ID and Filename.          |
+| Risk                | Mitigation                                  |
+| :------------------ | :------------------------------------------ |
+| **Structural Blur** | Strict inheritance from the Omega Template. |
+| **Identity Drift**  | 1:1 mapping between ID and Filename.        |
 
 ---
 
@@ -40,7 +50,7 @@
 | :--------------------------- | :---------------- | :---------------------------------------------- |
 | `CORE.Codex.Phoenix`         | `GOVERNS`         | Provides the supreme law and ethical framework. |
 | `GVRN.Registry.Master`       | `INDEXES`         | Tracks the state and presence of this artifact. |
-| `GVRN.Documentation.Genesis`  | `VALIDATES`       | Checks for compliance with this scaffolding.   |
+| `GVRN.Documentation.Genesis` | `VALIDATES`       | Checks for compliance with this scaffolding.    |
 
 ---
 
@@ -84,10 +94,10 @@ All artifacts must adhere to the following sequence:
 
 ### **Actionable Prompt Packet (APP)**
 
-| Command ID           | Action                                                 | Impact     |
-| :------------------- | :----------------------------------------------------- | :--------- |
-| `CMD: APPLY_SCAFFOLD`| Injects the SGM-V15 structure into a target file.      | Standards  |
-| `CMD: AUDIT_STRUCT`  | Verifies block integrity against the Scaffolding.      | Coherence  |
+| Command ID            | Action                                            | Impact    |
+| :-------------------- | :------------------------------------------------ | :-------- |
+| `CMD: APPLY_SCAFFOLD` | Injects the SGM-V15 structure into a target file. | Standards |
+| `CMD: AUDIT_STRUCT`   | Verifies block integrity against the Scaffolding. | Coherence |
 
 ### **[ARTIFACT END]**
 

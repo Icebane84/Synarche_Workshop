@@ -1,0 +1,18 @@
+rules:
+  - id: phoenix-telemetry-integrity
+    patterns:
+      - pattern: |
+          telemetry.log($EVENT, $DATA)
+      - pattern-not: |
+          telemetry.log($EVENT, {..., "origin": "PRS-001", ...})
+    message: "Dissonance Detected: Telemetry events must include the 'origin' anchor."
+    severity: ERROR
+    languages: [python, typescript]
+  - id: generic-security-scan
+    patterns:
+      - pattern-either:
+          - pattern: "requests.get(..., verify=False)"
+          - pattern: "dangerouslySetInnerHTML"
+    message: "Security Breach: Insecure pattern detected in the @fabric layer."
+    severity: WARNING
+    languages: [python, typescript]

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.FINALIZATION.SEVENGATES` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **⚖️ GVRN.Finalization.SevenGates: The Sentinel's Audit**
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -44,7 +54,8 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"Truth is not found; it is forged. The Seven Gates verify that only the most resilient logic enters the permanent legacy of the Synarchy."**
+> **"Truth is not found; it is forged. The Seven Gates verify that only the most resilient logic enters the permanent
+> legacy of the Synarche."**
 
 ---
 
@@ -110,6 +121,4 @@ Every artifact entering the finalization pipeline must pass all seven gates of t
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Finalization.SevenGates VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-25 HASH: GATES-OMEGA-15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

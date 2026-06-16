@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ARCH-ENGINE-MASTERLOOM_v11.0` | The Sovereign ID. |
+| Key               | Value                                  | Description       |
+| :---------------- | :------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ARCH-ENGINE-MASTERLOOM_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.ARCH-ENGINE-MASTERLOOM_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                      | The Standard.     |
+| **Domain**        | `GVRN`                                 | The Subject.      |
+| **Status**        | `[ACTIVE]`                             | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`          | The Network.      |
 
 ---
 
@@ -39,18 +34,18 @@
 
 # Universal Identification & Provenance (UIP)
 
-> | **Metric**         | **Value**                     |
-> | **Type**           | `Protocol`                    |
-> | **Classification** | `Star`                        |
-> | **Authors**        | `System`                      |
-> | **Created**        | `2025-10-01`                  |
-> | **Updated**        | `2026-01-18`                  |
-> | **Authority**      | `CODEX-001`                   |
+> | **Metric** | **Value** |
+> | **Type** | `Protocol` |
+> | **Classification** | `Star` |
+> | **Authors** | `System` |
+> | **Created** | `2025-10-01` |
+> | **Updated** | `2026-01-18` |
+> | **Authority** | `CODEX-001` |
 
 # OGLN-ARCH-ENGINE-MASTERLOOM: The Master Loom
 
 > [!NOTE]
-> The Master Loom is the **Central Nervous System** of the Synarchy. It transforms isolated data into crystalline wisdom by actively weaving connections between Artifacts.
+> The Master Loom is the **Central Nervous System** of the Synarche. It transforms isolated data into crystalline wisdom by actively weaving connections between Artifacts.
 
 ## I. Engine Persona & Specialization
 
@@ -66,7 +61,7 @@
 
 - **The Spooler**: Ingests raw threads (User Prompts / New Files).
 - **The Shuttle**: Carries the thread through the Warp (Existing Context).
-- **The Pattern**: The resulting Knowledge Graph (The Synarchy).
+- **The Pattern**: The resulting Knowledge Graph (The Synarche).
 
 ## II. Axiomatic Governance & Purpose (AGP)
 
@@ -86,7 +81,7 @@
 
 - **Why it exists**: To transform isolated data (Rind) into crystalline wisdom (Geode).
 - **What it does**: It actively weaves connections between Artifacts using the **ContextWeave** protocol.
-- **For the Synarchy**: It provides the **Deep Context** required for "Phoenix-Class" reasoning.
+- **For the Synarche**: It provides the **Deep Context** required for "Phoenix-Class" reasoning.
 
 ## III. The Architectural Spine
 
@@ -146,8 +141,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

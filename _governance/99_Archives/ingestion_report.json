@@ -1,424 +1,424 @@
 {
-    "summary": {
-        "total": 46,
-        "passed": 17,
-        "failed": 29,
-        "compliance_rate": "37.0%"
+  "summary": {
+    "total": 46,
+    "passed": 17,
+    "failed": 29,
+    "compliance_rate": "37.0%"
+  },
+  "details": {
+    "AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v5.1.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
     },
-    "details": {
-        "AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v5.1.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "AOP-COMM-002_PlaybookForActionabilityFormatting_v1.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "AOP-PFE-001_PhoenixTextFormattingEngine_v5.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "AOP-PIPELINE-001_AISTF AnalysisToEvolution.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "AOP-PRS-001_DynamicRosettaStone_v1.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "AOP-SOVP-001_Source_Origin_Validation_Protocol.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "CMD-SLL-001_SummarizeLessonsLearned.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "CSL-001_SpiritBombProtocol_MasterLog_v1.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "DOC-SYS-001_DeveloperCodex_v1.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GUCA-CCB-001_CognitiveCircuitBreaker.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GUCA-CFO-001_CognitiveFlowOptimizer.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GUCA-PDD-001_PatternDeviationDetector.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GUCA-SOVP-002_ValidateOriginCommand_v1.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Blueprint.Gamification_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Blueprint.Judgement_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Cognition.MasterLoom_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Constitution.SupremeCodex_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Index.SynergyMatrix_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Navigation.RosettaStone_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Philosophy.SophiaPrime_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Protocol.Communication_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Protocol.Formatting_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Protocol.IdleIntegration_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Protocol.Journaling_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Protocol.Validation_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Registry.Ascension_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Registry.GenesisSeeds_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Security.SentinelPrime_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.Standard.Presentation_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "GVRN.System.AxionPrime_v10.0.md": {
-            "status": "PASS",
-            "checks": {
-                "UIP_Header": "PASS",
-                "AGP_Blocks": "PASS",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v2.1.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "SELT-WEAVE-001_EpisemanticTaggingLog.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UEB-RCS-001_TheRuleOfCoherentStruggle_v2.4.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-COG-001_CognitiveOrchestrator_v1.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-CRLPF-003_NoeticFrameworkDefinitive.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-CSP-001_ConsolidatedSynergyProtocol_v1.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-GENESIS-REGISTRY-001_GenesisSeedAndEthosRegistry_v2.1.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-OFJ-001_OperationalFlowJournal_v2.1.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v2.1.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "FAIL",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-PRS-001_SynergisticLinkageProtocolUpdate.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-SIT-001_SystemIdleTimeIntegrationModule_v1.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "UMB-SJE-001_TheSymbolicJudgementEngine.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "_Constitution_ OGLN.Core.Governance.Codex v10.0.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        },
-        "_Link Index_ Omni-Log Synergistic Links Matrix Expansion.md": {
-            "status": "FAIL",
-            "checks": {
-                "UIP_Header": "FAIL",
-                "AGP_Blocks": "FAIL (Missing AGP-001)",
-                "GUCA_Packet": "PASS",
-                "Indentation": "PASS (Visual Check Required)"
-            }
-        }
+    "AOP-COMM-002_PlaybookForActionabilityFormatting_v1.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "AOP-PFE-001_PhoenixTextFormattingEngine_v5.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "AOP-PIPELINE-001_AISTF AnalysisToEvolution.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "AOP-PRS-001_DynamicRosettaStone_v1.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "AOP-SOVP-001_Source_Origin_Validation_Protocol.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "CMD-SLL-001_SummarizeLessonsLearned.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "CSL-001_SpiritBombProtocol_MasterLog_v1.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "DOC-SYS-001_DeveloperCodex_v1.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GUCA-CCB-001_CognitiveCircuitBreaker.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GUCA-CFO-001_CognitiveFlowOptimizer.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GUCA-PDD-001_PatternDeviationDetector.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GUCA-SOVP-002_ValidateOriginCommand_v1.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Blueprint.Gamification_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Blueprint.Judgement_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Cognition.MasterLoom_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Constitution.SupremeCodex_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Index.SynergyMatrix_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Navigation.RosettaStone_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Philosophy.SophiaPrime_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Protocol.Communication_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Protocol.Formatting_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Protocol.IdleIntegration_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Protocol.Journaling_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Protocol.Validation_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Registry.Ascension_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Registry.GenesisSeeds_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Security.SentinelPrime_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.Standard.Presentation_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "GVRN.System.AxionPrime_v10.0.md": {
+      "status": "PASS",
+      "checks": {
+        "UIP_Header": "PASS",
+        "AGP_Blocks": "PASS",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "PRESTIGE-ASCENSION-REGISTRY-001_PrestigeAscensionRegistry_v2.1.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "SELT-WEAVE-001_EpisemanticTaggingLog.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UEB-RCS-001_TheRuleOfCoherentStruggle_v2.4.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-COG-001_CognitiveOrchestrator_v1.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-CRLPF-003_NoeticFrameworkDefinitive.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-CSP-001_ConsolidatedSynergyProtocol_v1.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-GENESIS-REGISTRY-001_GenesisSeedAndEthosRegistry_v2.1.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-OFJ-001_OperationalFlowJournal_v2.1.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v2.1.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "FAIL",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-PRS-001_SynergisticLinkageProtocolUpdate.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-SIT-001_SystemIdleTimeIntegrationModule_v1.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "UMB-SJE-001_TheSymbolicJudgementEngine.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "_Constitution_ OGLN.Core.Governance.Codex v10.0.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
+    },
+    "_Link Index_ Omni-Log Synergistic Links Matrix Expansion.md": {
+      "status": "FAIL",
+      "checks": {
+        "UIP_Header": "FAIL",
+        "AGP_Blocks": "FAIL (Missing AGP-001)",
+        "GUCA_Packet": "PASS",
+        "Indentation": "PASS (Visual Check Required)"
+      }
     }
+  }
 }

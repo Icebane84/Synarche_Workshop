@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-UX Audit Script - Full Frontend Design Coverage
+"""UX Audit Script - Full Frontend Design Coverage.
 
 Analyzes code for compliance with:
 
@@ -89,10 +88,10 @@ Analyzes code for compliance with:
 Total: 80+ checks across all design principles
 """
 
-import sys
+import json
 import os
 import re
-import json
+import sys
 from pathlib import Path
 
 
@@ -471,7 +470,7 @@ class UXAuditor:
             diff = abs(weight_values[i] - weight_values[i + 1])
             if diff == 100:
                 self.warnings.append(
-                    f"[Typography] {filename}: Adjacent font weights ({weight_values[i]}/{weight_values[i+1]}). Skip at least 2 levels for contrast."
+                    f"[Typography] {filename}: Adjacent font weights ({weight_values[i]}/{weight_values[i + 1]}). Skip at least 2 levels for contrast."
                 )
 
         # Too many weight levels

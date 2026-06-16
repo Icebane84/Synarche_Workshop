@@ -28,7 +28,12 @@ MASKS = [
     {
         "card": "IV. The Emperor",
         "role": "Schema & Governance",
-        "tools": ["reforge_library", "standardize_docs", "scaffold_engine", "apply_rpg_header"],
+        "tools": [
+            "reforge_library",
+            "standardize_docs",
+            "scaffold_engine",
+            "apply_rpg_header",
+        ],
     },
     {
         "card": "II. The High Priestess",
@@ -46,12 +51,22 @@ MASKS = [
     {
         "card": "Knight of Swords",
         "role": "Transmutation & Action",
-        "tools": ["reforge", "knight_fixer", "apply_standard", "transmutation_pipeline"],
+        "tools": [
+            "reforge",
+            "knight_fixer",
+            "apply_standard",
+            "transmutation_pipeline",
+        ],
     },
     {
         "card": "XVII. The Star",
         "role": "Coherence & Vision",
-        "tools": ["test_weaver", "chronicle_manager", "log_refactor_milestone", "generate_rag_graph"],
+        "tools": [
+            "test_weaver",
+            "chronicle_manager",
+            "log_refactor_milestone",
+            "generate_rag_graph",
+        ],
     },
     {
         "card": "King of Pentacles",
@@ -114,7 +129,9 @@ for mask in MASKS:
 
 print()
 print("=" * 70)
-print(f"  ARMORY TOTAL: {total_ready}/{total_tools} tools ACTIVE | {total_missing} MISSING")
+print(
+    f"  ARMORY TOTAL: {total_ready}/{total_tools} tools ACTIVE | {total_missing} MISSING"
+)
 print("=" * 70)
 
 # Axiom Skill Tree

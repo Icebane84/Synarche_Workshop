@@ -53,9 +53,12 @@ axion-core/lib64/
 axion-core/.venv/
 axion-core/env/
 axion-core/ENV/
+axion-core/out/
 
 # --- SECTION 5: DOMAIN: THE LAW (_governance/) ---
 _governance/archive/2026-03-Pruning/
+_governance/06_Learning/logs/
+_governance/06_Learning/telemetry/
 _logs/
 
 # --- SECTION 6: DOMAIN: THE LAB (nova_forge/) ---
@@ -82,3 +85,9 @@ surreal.db/
 .roo
 .trae
 .windsurf
+
+.fake
+
+# RPG State SQLite Persistence Databases
+.agent/*.db
+.agent/*.db-journal

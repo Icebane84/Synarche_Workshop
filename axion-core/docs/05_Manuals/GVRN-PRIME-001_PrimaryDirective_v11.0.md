@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN-PRIME-001_PRIMARYDIRECTIVE_V11.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN-PRIME-001_PrimaryDirective_v11.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**

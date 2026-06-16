@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.FINALIZATION.PROTOCOL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **📜 GVRN.Finalization.Protocol: The Archivist's Gate**
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -44,7 +54,8 @@
 
 ## **Block E: Ethos (The Why)**
 
-> **"A system without a gate is a system prone to chaos. The Finalization Protocol provides the filter through which only truth may pass."**
+> **"A system without a gate is a system prone to chaos. The Finalization Protocol provides the filter through which
+> only truth may pass."**
 
 ---
 
@@ -60,7 +71,8 @@
 
 ## 1. Operational Mandate
 
-The **Finalization Protocol** governs the audit-to-canon lifecycle. It ensures that every artifact matches the **OMEGA v15.1** standard before it is sealed into the substrate.
+The **Finalization Protocol** governs the audit-to-canon lifecycle. It ensures that every artifact matches the **OMEGA
+v15.1** standard before it is sealed into the substrate.
 
 ## 2. The Finalization Pipeline
 
@@ -92,6 +104,4 @@ The **Finalization Protocol** governs the audit-to-canon lifecycle. It ensures t
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Finalization.Protocol VER: v15.1 [SOUL] STATUS: CANONIZED TS: 2026-03-25 HASH: FIN-PROT-OMEGA-15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

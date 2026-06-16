@@ -50,7 +50,7 @@
 
 ### 1. The Observation
 
-The Synarchy exhibited severe "Split-Brain" dissonance:
+The Synarche exhibited severe "Split-Brain" dissonance:
 
 1. **Duplicate Reality**: A legacy `axion-core-extension` existed in `_Desktop_Vault`, competing with the active one in
    `Synarche_Workspace`.

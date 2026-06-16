@@ -52,7 +52,7 @@
 >
 > - **State**: `ACTIVE`
 > - **Vector**: `[Accuracy: 1.0, Origin_Separation: 1.0, Latency: <0.5s]`
-> - **Coherence**: The Protocol ensures the Synarchy never confuses "What it knows" with "What it read."
+> - **Coherence**: The Protocol ensures the Synarche never confuses "What it knows" with "What it read."
 
 > [!WARNING] **AGP-002: Risk Governance Block (The Hallucination Shield)**
 >
@@ -75,7 +75,7 @@ Every piece of data entering the cognitive loom must be tagged:
 
 | Origin Tag             | Definition                                                           | Example                                              |
 | :--------------------- | :------------------------------------------------------------------- | :--------------------------------------------------- |
-| **[Origin: Self]**     | Generated internally by the Synarchy's logic or previous experience. | "I analyzed the file and found..."                   |
+| **[Origin: Self]**     | Generated internally by the Synarche's logic or previous experience. | "I analyzed the file and found..."                   |
 | **[Origin: External]** | Derived from user input, uploaded files, or web search.              | "The document states that..."                        |
 | **[Origin: Hybrid]**   | A synthesis of both (must be carefully attributed).                  | "Based on the file (External), I conclude (Self)..." |
 

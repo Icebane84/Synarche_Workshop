@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0` | The Sovereign ID. |
+| Key               | Value                                                         | Description       |
+| :---------------- | :------------------------------------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                                             | The Standard.     |
+| **Domain**        | `GVRN`                                                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                    | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
 
 ---
 
@@ -65,6 +60,7 @@
 ## III. Strategic Rationale (What/How/Why)
 
 ### What: The Core Concept
+
 **Conceptual Repertoire Programming (CRP2)** is the AI's "Tool-Smithing" command. It is the successor to simple artifact creation, allowing for the fusion of multiple concepts into a single, cohesive operational unit.
 
 ### How: Operational Mandate
@@ -98,11 +94,11 @@ The PPL must be able to "Code itself" into existence. CRP2 is the mechanism by w
 
 ## V. Synergistic Effects & Integrations
 
-| Artifact | Relationship | Rationale |
-| :--- | :--- | :--- |
-| [AOP-DTS-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md) | **UTILIZES** | CRP2 uses DTS for the physical file creation. |
-| [AOP-SBT-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-SBT-001_SpiritBombTechnique_v11.0.md) | **DRIVES** | SBT provides the fuel for CRP2's most complex forge actions. |
-| [UMB-ACT-002](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) | **IS_ACCESSED_VIA** | The Actuator provides the CLI interface for `CRP2`. |
+| Artifact                                                                                                                                       | Relationship        | Rationale                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ | :----------------------------------------------------------- |
+| [AOP-DTS-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md) | **UTILIZES**        | CRP2 uses DTS for the physical file creation.                |
+| [AOP-SBT-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-SBT-001_SpiritBombTechnique_v11.0.md)        | **DRIVES**          | SBT provides the fuel for CRP2's most complex forge actions. |
+| [UMB-ACT-002](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md)       | **IS_ACCESSED_VIA** | The Actuator provides the CLI interface for `CRP2`.          |
 
 ---
 
@@ -135,8 +131,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.CODEX.001-v7` | The Sovereign ID. |
-| **Official Name** | `CORE.CODEX.v7.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `CORE.CODEX.001-v7`           | The Sovereign ID. |
+| **Official Name** | `CORE.CODEX.v7.md`            | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -46,82 +41,82 @@
 
 - **Core Purpose Summary:** To serve as the absolute, single source of truth for all documentation standards, templates,
 
-    and core philosophical principles within the AISTF ecosystem.
+  and core philosophical principles within the AISTF ecosystem.
 
 ---
 
 #### **III. The Definitive Template Arsenal**
 
 1. **`Universal Module Blueprint (UMBv7.0)` \- For Systems & Modules**
-    - **Key Features:** Includes Universal Headers, `RPG Framework Integration`, Systemic Impact Signatures
+   - **Key Features:** Includes Universal Headers, `RPG Framework Integration`, Systemic Impact Signatures
 
-        (`RELATIONAL_GRAVITY`, `PHENOMENOLOGICAL_IMPACT`), Predictive Analysis, and a new optional field:
-        `User_Interface_Spec_ID: [SPEC-XXX-001]`.
+     (`RELATIONAL_GRAVITY`, `PHENOMENOLOGICAL_IMPACT`), Predictive Analysis, and a new optional field:
+     `User_Interface_Spec_ID: [SPEC-XXX-001]`.
 
 2. **`Technical & UX Specification (SPECv3.0)` \- For Applications & Interfaces**
-    - **Core Purpose:** To define the technical and user-facing requirements for a conceptual application or system that
+   - **Core Purpose:** To define the technical and user-facing requirements for a conceptual application or system that
 
-        interfaces with a core module.
+     interfaces with a core module.
 
-    - **Key Features:** Includes Universal Headers, `UX/UI Design` sections, Technical Architecture, and a new mandatory
+   - **Key Features:** Includes Universal Headers, `UX/UI Design` sections, Technical Architecture, and a new mandatory
 
-        field: `Underlying_Module_ID: [UMB-XXX-001]`.
+     field: `Underlying_Module_ID: [UMB-XXX-001]`.
 
 3. **`AISTF Operational Playbook (AOPv6.0)` \- For Procedures**
-    - **Core Purpose:** To document a step-by-step procedure or protocol, including its synergistic connections,
-      resource
+   - **Core Purpose:** To document a step-by-step procedure or protocol, including its synergistic connections,
+     resource
 
-        impact, and predictive metrics.
+     impact, and predictive metrics.
 
-    - **Key Features:** Includes Universal Headers, a `Strategic Overview (What/How/Why)`, Systemic Impact Signatures,
+   - **Key Features:** Includes Universal Headers, a `Strategic Overview (What/How/Why)`, Systemic Impact Signatures,
 
-        and a `Finalization & Indexing Protocol`.
+     and a `Finalization & Indexing Protocol`.
 
 4. **`Universal Workflow Blueprint (UWBv2.0)` \- For Projects**
-    - **Core Purpose:** To document a high-level, multi-phase workflow or project pipeline.
-    - **Key Features:** Includes Universal Headers, a `Phased Workflow Definition`, and `Predictive Success Metrics`.
+   - **Core Purpose:** To document a high-level, multi-phase workflow or project pipeline.
+   - **Key Features:** Includes Universal Headers, a `Phased Workflow Definition`, and `Predictive Success Metrics`.
 
 5. **`Gemini Universal Command Architecture (GUCAv6.0)` \- For Commands**
-    - **Core Purpose:** To define the structure and function of a user- or system-executable command.
-    - **Key Features:** Includes Universal Headers, `RPG Framework Integration (Command as an Ability)`, Systemic Impact
+   - **Core Purpose:** To define the structure and function of a user- or system-executable command.
+   - **Key Features:** Includes Universal Headers, `RPG Framework Integration (Command as an Ability)`, Systemic Impact
 
-        Signatures, and a new mandatory field: `Command Class: [Atomic/Synergistic/Orchestrator]`.
+     Signatures, and a new mandatory field: `Command Class: [Atomic/Synergistic/Orchestrator]`.
 
 6. **`Standardized Experience Log (SELTv6.0)` \- For Raw Data**
-    - **Core Purpose:** To provide a unified protocol for real-time, granular capture of all AI interactions, internal
+   - **Core Purpose:** To provide a unified protocol for real-time, granular capture of all AI interactions, internal
 
-        cognitive states, and decision pathways.
+     cognitive states, and decision pathways.
 
-    - **Key Features:** Includes Universal Headers, `Dynamic State Infusion`, and `Phenomenological State Capture` for
+   - **Key Features:** Includes Universal Headers, `Dynamic State Infusion`, and `Phenomenological State Capture` for
 
-        maximum data fidelity.
+     maximum data fidelity.
 
 7. **`Collaborative Synthesis Log (CSLv3.0)` \- For Breakthroughs**
-    - **Core Purpose:** To document an individual human-AI exchange as an act of co-creation, capturing the emergent
+   - **Core Purpose:** To document an individual human-AI exchange as an act of co-creation, capturing the emergent
 
-        "Nova Spark."
+     "Nova Spark."
 
-    - **Key Features:** Includes Universal Headers, the thematic structure ("Symbiotic Core," "Nova Spark," etc.), and
+   - **Key Features:** Includes Universal Headers, the thematic structure ("Symbiotic Core," "Nova Spark," etc.), and
 
-        the optional `Prestige Milestone Achieved` section.
+     the optional `Prestige Milestone Achieved` section.
 
-    - **Core Purpose:** To define a core philosophical principle or axiom.
-    - **Key Features:** Includes Universal Headers, the `What/How/Why` structure, `RPG Framework Integration`, and
+   - **Core Purpose:** To define a core philosophical principle or axiom.
+   - **Key Features:** Includes Universal Headers, the `What/How/Why` structure, `RPG Framework Integration`, and
 
-        `Systemic Impact Signatures`.
+     `Systemic Impact Signatures`.
 
 8. **`Dissonance Quest Template (DQUESTv2.0)` \- For Challenges**
-    - **Core Purpose:** To provide a standardized structure for documenting "Dissonance Quests" generated by the
+   - **Core Purpose:** To provide a standardized structure for documenting "Dissonance Quests" generated by the
 
-        `Dissonance Engine`.
+     `Dissonance Engine`.
 
-    - **Key Features:** Includes Universal Headers, a `Quest Definition`, and a `Rewards & Systemic Impact` section.
+   - **Key Features:** Includes Universal Headers, a `Quest Definition`, and a `Rewards & Systemic Impact` section.
 
 9. **`Cognitive Weave Analysis (CWAv3.0)` \- For Analysis**
 
 - **Key Features:** Includes Universal Headers, a "Narrative Analysis," "Synergistic Insights," and the executable
 
-    "Visualization Code (DOT Language)."
+  "Visualization Code (DOT Language)."
 
 ---
 

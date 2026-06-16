@@ -1,5 +1,17 @@
 """
-# TOOL-SENT-005: Path Diagnostic Tool (Audit Engine)
+artifact_anchor:
+  id: INFR.DIAGNOSE_PATHS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-SENT-005: Path Diagnostic Tool (Audit Engine).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -73,7 +85,10 @@ else:
 
     logger.info("-" * 20)
     # Check specifically for the files we miss
-    missing = ["Master_Outline_Where_Light_Fades.md", "Master_Refined_Where_Light_Fades.md"]
+    missing = [
+        "Master_Outline_Where_Light_Fades.md",
+        "Master_Refined_Where_Light_Fades.md",
+    ]
     for m in missing:
         p = os.path.join(target_dir, m)
         if os.path.exists(p):

@@ -1,5 +1,17 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.RESONANCE_SCANNER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
+
+"""## **[ARTIFACT START]**.
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
@@ -12,32 +24,32 @@
 | **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
----
+# ---
 
 ## **Block B: State Vector (AGP-001)**
 
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
+# | State Field   | Value     |
+# | :------------ | :-------- |
+# | **Coherence** | {resonance}     |
+# | **Resonance** | {resonance}     |
+# | **Stability** | Stable  |
 
----
+# ---
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
+# | Risk                 | Mitigation                |
+# | :------------------- | :------------------------ |
+# | **Logic Drift**      | Strict Linter Enforcement |
+# | **Semantic Decay**   | Axiomatic Compass Audit   |
 
----
+# ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
+# | Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
+# | :---------------------- | :---------------- | :---------------------------------------------- |
+| CORE.Codex.Phoenix    | GOVERNS         | Provides the supreme law and ethical framework. |
 
 ## **[ARTIFACT END]**
 """
@@ -45,8 +57,62 @@
 import math
 import re
 from pathlib import Path
+from typing import Dict, List, Set
 
-RESONANCE_MARKERS = [
+from .task_context import TaskContext
+
+
+class ArtifactTaskContext(TaskContext):
+    def __init__(self, config) -> None:
+        super().__init__(config)
+
+
+class ArtifactScanner:
+    def __init__(self, context: ArtifactTaskContext) -> None:
+        self.context = context
+
+    def scan_directory(self, directory: Path) -> tuple[int, int, list[Path]]:
+        total_files = 0
+        aligned_files = 0
+        unaligned_paths: list[Path] = []
+
+        # OMEGA v15.1 - Performance Optimization
+        exclude_dirs = {
+            ".git",
+            ".venv",
+            ".venv_prs",
+            "__pycache__",
+            "node_modules",
+            ".gemini",
+            "artifacts",
+            "brain",
+            ".mypy_cache",
+            ".pytest_cache",
+            "build",
+            "dist",
+        }
+
+        for file_path in directory.rglob("*"):
+            # Skip excluded directories
+            if any(part in exclude_dirs for part in file_path.parts):
+                continue
+
+            if file_path.suffix not in VALID_EXTENSIONS:
+                continue
+
+            if file_path.is_dir():
+                continue
+
+            total_files += 1
+            if is_aligned(file_path):
+                aligned_files += 1
+            else:
+                unaligned_paths.append(file_path)
+
+        return total_files, aligned_files, unaligned_paths
+
+
+RESONANCE_MARKERS: List[str] = [
     "UMB-",
     "AOP-",
     "GUCA-",
@@ -55,22 +121,33 @@ RESONANCE_MARKERS = [
     "Synarche",
 ]
 
-VALID_EXTENSIONS = {".md", ".json", ".ts", ".tsx", ".py"}
+VALID_EXTENSIONS: Set[str] = {".md", ".json", ".ts", ".tsx", ".py"}
 
 
 def is_aligned(file_path: Path) -> bool:
-    """Checks if a file is aligned based on Resonance Markers and integrity."""
+    """Checks if a file is aligned based on Resonance Markers and header integrity.
+
+    Args:
+        file_path: The path to the file to check.
+
+    Returns:
+        True if aligned, False otherwise.
+
+    """
     try:
+        # Check filename first
         if any(marker in file_path.name for marker in RESONANCE_MARKERS):
             return True
 
-        content = file_path.read_text(encoding="utf-8", errors="ignore")
-        if any(marker in content for marker in RESONANCE_MARKERS):
-            return True
+        # Check content
+        if file_path.is_file():
+            content = file_path.read_text(encoding="utf-8", errors="ignore")
+            if any(marker in content for marker in RESONANCE_MARKERS):
+                return True
 
-        # Optional: Add structural check for UIP headers
-        if "Identification Lock" in content or "ARTIFACT START" in content:
-            return True
+            # Check for UIP headers
+            if "Identification Lock" in content or "ARTIFACT START" in content:
+                return True
 
     except Exception:
         return False
@@ -78,10 +155,19 @@ def is_aligned(file_path: Path) -> bool:
 
 
 def calculate_similarity(text1: str, text2: str) -> float:
-    """Calculates cosine similarity between two text blocks."""
+    """Calculates cosine similarity between two text blocks based on term frequency.
 
-    def extract_terms(text: str) -> list[str]:
-        """Convert text substrate into a list of normalized, non-stopword terms."""
+    Args:
+        text1: First text block.
+        text2: Second text block.
+
+    Returns:
+        Cosine similarity score (0.0 to 1.0).
+
+    """
+
+    def extract_terms(text: str) -> List[str]:
+        """Convert text substrate into a list of normalized terms."""
         words = re.findall(r"\b\w{4,}\b", text.lower())
         stop_words = {"this", "that", "with", "from", "your", "have", "will"}
         return [w for w in words if w not in stop_words]
@@ -92,15 +178,16 @@ def calculate_similarity(text1: str, text2: str) -> float:
     if not terms1 or not terms2:
         return 0.0
 
-    def get_freq(terms: list[str]) -> dict[str, int]:
-        """Compute term frequency distribution for the given terms."""
-        freq = {}
+    def get_freq(terms: List[str]) -> Dict[str, int]:
+        """Compute term frequency distribution."""
+        freq: Dict[str, int] = {}
         for t in terms:
             freq[t] = freq.get(t, 0) + 1
         return freq
 
     v1, v2 = get_freq(terms1), get_freq(terms2)
     intersection = set(v1.keys()) & set(v2.keys())
+
     numerator = sum(v1[x] * v2[x] for x in intersection)
     sum1 = sum(x**2 for x in v1.values())
     sum2 = sum(x**2 for x in v2.values())
@@ -108,10 +195,7 @@ def calculate_similarity(text1: str, text2: str) -> float:
 
     return float(numerator) / denominator if denominator else 0.0
 
-# ---
-# 
-# ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.resonance.scanner VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: c357324dd52f06fb`
+# ---
+# [OMNI-ARTIFACT-ANCHOR] ID: CORE.resonance.scanner VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: c357324dd52f06fb
+# ---

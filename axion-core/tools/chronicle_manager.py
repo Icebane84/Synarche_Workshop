@@ -1,5 +1,17 @@
 """
-# TOOL-KING-001: The King's Chronicle (Global Archival)
+artifact_anchor:
+  id: INFR.CHRONICLE_MANAGER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-KING-001: The King's Chronicle (Global Archival).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -52,7 +64,6 @@ UMB-RULES-001, COMPLIES_WITH, Ensures logs adhere to global rules.
 import argparse
 import logging
 import re
-from typing import Optional
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -134,9 +145,15 @@ class ChronicleManager:
                 current_section = "synopsis"
             elif any(x in cleaned for x in ["Character Dynamics", "Definitive Guide"]):
                 current_section = "profiles"
-            elif "MIMIR'S WELL" in cleaned.upper() or "EXPERIENTIAL MEMORY" in cleaned.upper():
+            elif (
+                "MIMIR'S WELL" in cleaned.upper()
+                or "EXPERIENTIAL MEMORY" in cleaned.upper()
+            ):
                 current_section = "well"
-            elif "PORTFOLIO ANALYSIS" in cleaned.upper() or "METRIC WEIGHTING" in cleaned.upper():
+            elif (
+                "PORTFOLIO ANALYSIS" in cleaned.upper()
+                or "METRIC WEIGHTING" in cleaned.upper()
+            ):
                 current_section = "metrics"
             elif any(x in cleaned for x in ["Development Prompts", "Appendix"]):
                 current_section = "appendix"
@@ -210,7 +227,9 @@ class ChronicleManager:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="The King's Chronicle: Mastering the Archival Ledger.")
+    parser = argparse.ArgumentParser(
+        description="The King's Chronicle: Mastering the Archival Ledger."
+    )
     parser.add_argument("input", help="Source log/markdown file.")
     parser.add_argument("--output", help="Destination for refined outline.")
     args = parser.parse_args()

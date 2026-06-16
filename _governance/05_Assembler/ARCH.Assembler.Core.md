@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `ARCH.ASSEMBLER.CORE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # ARCH.Assembler.Core: The Architecture Assembler
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -44,7 +54,7 @@
 
 ## **Block E: Ethos (Hierarchy of Intent)**
 
-> [!IMPORTANT] **[APEX]** Void to Form: To provide the skeletal structure upon which the Synarchy grows.
+> [!IMPORTANT] **[APEX]** Void to Form: To provide the skeletal structure upon which the Synarche grows.
 >
 > **[PRI]** Logical Topology: The map is the territory; every file must have a home.
 >
@@ -74,7 +84,8 @@
 
 ## **I. Structural Logic Root**
 
-The **Architecture Assembler (ARCH)** defines how folders and files are organized. It manages the `GVRN.HUD.Map` and ensures that all new subsystems follow the mandated directory patterns (e.g., `40_System` vs `10_Governance`).
+The **Architecture Assembler (ARCH)** defines how folders and files are organized. It manages the `GVRN.HUD.Map` and
+ensures that all new subsystems follow the mandated directory patterns (e.g., `40_System` vs `10_Governance`).
 
 ## **II. Operational Paradigms**
 
@@ -97,6 +108,4 @@ The **Architecture Assembler (ARCH)** defines how folders and files are organize
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: ARCH.Assembler.Core VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: ARCH-FORGE-OMEGA`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

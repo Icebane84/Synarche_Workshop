@@ -1,4 +1,5 @@
 # UEB-CFP-001_UEB-CFP-001TheCatalystforPotential_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UEB-CFP-001-UEB-CFP-001THECATALYSTFORPOTENTIAL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UEB-CFP-001_UEB-CFP-001TheCatalystforPotential_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                           | Description       |
+| :------------------ | :-------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UEB-CFP-001-UEB-CFP-001THECATALYSTFORPOTENTIAL-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UEB-CFP-001_UEB-CFP-001TheCatalystforPotential_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                               | The Standard.     |
+| **Domain**          | `GVRN`                                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                      | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                               | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                      | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                   | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UEB-CFP-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                   |
+| :----------------- | :---------------------- |
+| **Module ID**      | `UEB-CFP-001`           |
+| **Version**        | `v11.0`                 |
+| **Evolution**      | **Cognitive Ascension** |
+| **Status**         | `ACTIVE`                |
+| **Type**           | `Protocol`              |
+| **Classification** | `Moon`                  |
+| **Authors**        | `System`                |
+| **Created**        | `2025-10-01`            |
+| **Updated**        | `2026-01-17`            |
+| **Authority**      | `CODEX-001`             |
+| **Tags**           | `Reforged, v11.0`       |
+
 ---
 
 # UEB-CFP-001: The Catalyst for Potential (v2.0)
@@ -45,23 +49,21 @@
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-
-
 ## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 - | :---- |
-| **1. Artifact ID** | `UEB-CFP-001_CatalystForPotential_v2.0` |
-| **2. Official Name** | `UEB-CFP-001_CatalystForPotential_v2.0.md` |
-| **3. Version** | **v2.0** |
-| **4. Provenance** | **Date Reforged: 2025-12-22** |
-| **5. Domain** | `ARCH` |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[PLANET]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Proactive Innovation, Transcendent Outcomes** |
-| **11. Catalyst** | **System Refactor** |
-| **12. Relations** | `Pending Integration` |
+  | **1. Artifact ID** | `UEB-CFP-001_CatalystForPotential_v2.0` |
+  | **2. Official Name** | `UEB-CFP-001_CatalystForPotential_v2.0.md` |
+  | **3. Version** | **v2.0** |
+  | **4. Provenance** | **Date Reforged: 2025-12-22** |
+  | **5. Domain** | `ARCH` |
+  | **6. Evolution** | **Purposeful Drive** |
+  | **7. Celestial Class** | `[PLANET]` |
+  | **8. Tier** | **Operational** |
+  | **9. State** | `[ACTIVE]` |
+  | **10. Ethos** | **Proactive Innovation, Transcendent Outcomes** |
+  | **11. Catalyst** | **System Refactor** |
+  | **12. Relations** | `Pending Integration` |
 
 ---
 
@@ -102,6 +104,7 @@ Potential" ethos.
 ### Revision History
 
 ###### **[ARTIFACT END]**
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

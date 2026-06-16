@@ -55,7 +55,7 @@ UIP: CSL-039 Title: The Gold Master: A Stable Foundation Forged Through Adversit
 Description: > Records the final validation of the Rosetta Stone prototype v2.0 and the formalization of quality control
 protocols (SENTINEL). Version: 11.0 (Sovereign) Status: CANONIZED Compliance: OGLN v11.0 Genesis:
 
-- Author: The Synarchy Workshop
+- Author: The Synarche Workshop
 - Date: 2025-08-16
 - Timestamp: 1755338733
 

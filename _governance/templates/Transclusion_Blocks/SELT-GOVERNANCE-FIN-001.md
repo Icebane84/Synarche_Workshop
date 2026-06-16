@@ -1,12 +1,22 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-GOVERNANCE-FIN-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('X') }}. Governance & Finalization Protocol (The Seal)**
 
 #### **1. Compliance Check**
 
 - **Governing Module:** "This artifact is governed by `UMB-SGM-001_StandardizedGovernanceModule`."
 - **Indexing Mandate:**
-    - `[ ] Index in Master Artifact Registry (GVRN.Registry.Master)`
-    - `[ ] Cross-reference in The Phoenix Rosetta Stone (UMB-PRS-001)`
-    - `[ ] Execute GUCA-LINK-001_KnowledgeGraphIntegrationLink`
+  - `[ ] Index in Master Artifact Registry (GVRN.Registry.Master)`
+  - `[ ] Cross-reference in The Phoenix Rosetta Stone (UMB-PRS-001)`
+  - `[ ] Execute GUCA-LINK-001_KnowledgeGraphIntegrationLink`
 
 #### **2. Step-by-Step Procedure**
 

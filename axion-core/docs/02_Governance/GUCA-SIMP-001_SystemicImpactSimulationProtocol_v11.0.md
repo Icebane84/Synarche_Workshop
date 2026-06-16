@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GUCA-SIMP-001_SYSTEMICIMPACTSIMULATIONPROTOCOL_V11.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md
 
 ## **Block A: The Identification Lock (UIP-V15)**

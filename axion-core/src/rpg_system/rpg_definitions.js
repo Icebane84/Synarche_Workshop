@@ -1,5 +1,18 @@
+/*
+artifact_anchor:
+  id: CORE.RPG_DEFINITIONS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+
 /**
- * GVRN-SYS-RPG-002: RPG Definitions & Schema
+ * GVRN-SYS-RPG-002: RPG Definitions & Schema [GEODE EDITION]
  * Defines the core data structures for the Gamification Layer.
  */
 
@@ -16,14 +29,24 @@
  * @property {string} description - Lore/Reasoning
  */
 
-export const XP_FORMULA = (base, criticality, links) => {
-    // XP = (Base Value * Criticality Multiplier) + (Synergy Links * 5)
-    return (base * criticality) + (links * 5);
+/**
+ * @typedef {Object} MeteoriteImpact
+ * @property {string} id - Impact Identifier (e.g., IMP-001)
+ * @property {string} title - The Challenge Title
+ * @property {number} stardust_value - The potential harvestable Stardust
+ * @property {string} csl_uri - The corresponding CSL Log URI
+ */
+
+export const STARDUST_FORMULA = (base, energy_level, synergy_count) => {
+    // Stardust = (Base Value * Energy Level) + (Synergy Count * 13)
+    // 13 is the Fibonacci prime for Geode resonance.
+    return (base * energy_level) + (synergy_count * 13);
 };
 
 export const VALIDATE_PROVENANCE = (item) => {
     if (!item.originUri || item.originUri.trim() === "") {
-        return { valid: false, error: "Missing Origin URI (CSL/Quest Link)" };
+        return { valid: false, error: "Missing Origin URI (CSL/Quest Link) - Sovereign Breach!" };
     }
     return { valid: true };
 };
+

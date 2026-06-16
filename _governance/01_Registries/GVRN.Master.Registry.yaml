@@ -1,3 +1,49 @@
+"[ID]":
+  artifact_id: "[ID]"
+  content_hash: 0f126e2c32a75a7c500e39b404078ebe123d2a7c9b2c18f81d93febe32413ac3
+  domain: GVRN
+  official_name: block_a_uip.md
+  path: _governance/templates/Transclusion_Blocks/block_a_uip.md
+  relations: "GOVERNED_BY: [[CORE.Codex.Phoenix]]"
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+"[RNC-ID]":
+  artifact_id: "[RNC-ID]"
+  content_hash: e9c7a2e3da7ab3754d25c0353a1950de12f521bd1e69f19d9cd7f787a7900d19
+  domain: GVRN
+  official_name: UMB-MASTER-TEMPLATE-001.md
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/docs/01_Blueprints/UMB-MASTER-TEMPLATE-001.md
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[ACTIVE]"
+  version: v13.0 [OMEGA]
+"{{ RNC_ID }}":
+  artifact_id: "{{ RNC_ID }}"
+  content_hash: 04a9ce9031294deae74e201214201d373e7e0d5f4765eee3779abda5f90517a3
+  domain: GVRN
+  official_name: SELT-HEADER-UIP-001.md
+  parsed_relations:
+    - REF:GVRN.Master.Registry
+  path: _governance/templates/Transclusion_Blocks/SELT-HEADER-UIP-001.md
+  relations: "REF: GVRN.Master.Registry"
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+'{{ RNC\_ID }}':
+  artifact_id: '{{ RNC\_ID }}'
+  celestial_class: '{{ CELESTIAL\_CLASS }}'
+  content_hash: 8c3ae1ff1a8baf8b07781c45ddb65908c77818a4e84db9b7f9d6a241d3765461
+  domain: "{{ DOMAIN }}"
+  integrity_hash: '{{ INTEGRITY\_HASH }}'
+  musashi_audit: '{{ AUDIT\_VERDICT }}'
+  official_name: GUCA_Template-Genesis Universal Command Architecture (v13.1 OMEGA).md
+  path:
+    _governance/templates/Master_Shells/GUCA_Template-Genesis Universal Command
+    Architecture (v13.1 OMEGA).md
+  patron_shard: '{{ TAROT\_SHARD }}'
+  relations: "GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)"
+  status: "{{ STATUS }}"
+  version: v13.1 \[OMEGA\]
 AOP-AG-003_AxionAgentConfiguration_v3.0:
   artifact_id: AOP-AG-003_AxionAgentConfiguration_v3.0
   content_hash: 91be68942a40e66066d9a43d3ed8642a451e8f1fa06d0456064ae6cc70b81001
@@ -72,6 +118,17 @@ AOP-DMPM-001:
     LINK: UMB-PRS-001, LINK: UMB-SOT-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
+AOP-EMOJI-001_EmojiSignalingProtocol_v1.5:
+  artifact_id: AOP-EMOJI-001_EmojiSignalingProtocol_v1.5
+  content_hash: 58812c58c548f94a0ee653a04359cabca8dde51e92d1c6c0be6ba7190c797bd9
+  domain: GVRN
+  official_name: AOP-EMOJI-001_EmojiSignalingProtocol_v1.5.md
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/templates/AOP-EMOJI-001_EmojiSignalingProtocol_v1.5.md
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 AOP-GAN-001:
   artifact_id: AOP-GAN-001
   content_hash: 904f2de9b0527e9397b4a73a98b2b83286265ef0e994d365d56545c603d21b74
@@ -705,12 +762,95 @@ CORE-BRIDGE-001:
   artifact_id: CORE-BRIDGE-001
   content_hash: 57eb1326200f4015f9156b5762f30fdf9ae9ef6a7af2c512513f3cae294010d7
   domain: CORE
-  official_name: synarchy_bridge.py
+  official_name: Synarche_bridge.py
   parsed_relations:
     - "IDENTITY: High Priestess | The Sovereign."
-  path: /axion-core/src/synarchy_bridge.py
+  path: /axion-core/src/Synarche_bridge.py
   relations: "IDENTITY: High Priestess | The Sovereign."
   status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+CORE-CSE-ENG-002-V15-1:
+  artifact_id: CORE-CSE-ENG-002-V15-1
+  domain: CORE
+  official_name: engine_v2.py
+  path: axion-core/src/cse/engine/engine_v2.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+CORE-FDE-ECS-005:
+  artifact_id: CORE-FDE-ECS-005
+  content_hash: 13d04e9e512152b830d1cd322b2713252e86ff663b31d554389d8a94528627a2
+  domain: ENG-ECS
+  official_name: ecs_core.py
+  path: axion-core/src/engine/ecs/ecs_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+CORE-FDE-ECS-006:
+  artifact_id: CORE-FDE-ECS-006
+  content_hash: 1770d89970009597890920947c03bc16e7e5b8421c0017c5d198e45a0a1f1f55
+  domain: ENG-ECS
+  official_name: ecs_hardened_core.py
+  path: axion-core/src/engine/ecs/ecs_hardened_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+CORE-FDE-ECS-COMP-001-V15-1:
+  artifact_id: CORE-FDE-ECS-COMP-001-V15-1
+  domain: CORE
+  official_name: compiler.py
+  path: axion-core/src/engine/ecs/compiler.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+CORE-FDE-ECS-REG-001:
+  artifact_id: CORE-FDE-ECS-REG-001
+  content_hash: 329be893a67da3504b3536f695bbe5a4e780d9ec247aaeb0c89a4b65aa9089a3
+  domain: ENG-ECS
+  official_name: entity_registry.py
+  path: axion-core/src/engine/ecs/entity_registry.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+CORE-FDE-ECS-SCH-001:
+  artifact_id: CORE-FDE-ECS-SCH-001
+  content_hash: f39aefb92ebd933ea939382ce73656aa402c0465b03e87dbe986c1b4e2d394c7
+  domain: ENG-ECS
+  official_name: ecs_scheduler.py
+  path: axion-core/src/engine/ecs/ecs_scheduler.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+CORE-FDE-ECS-WORLD-001-V15-1:
+  artifact_id: CORE-FDE-ECS-WORLD-001-V15-1
+  domain: CORE
+  official_name: world.py
+  path: axion-core/src/engine/ecs/world.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+CORE-FDE-ECS-WRLD-001:
+  artifact_id: CORE-FDE-ECS-WRLD-001
+  content_hash: ecab2a8375664ef7274897bcf51278d3beef1f070c155d6ff037f802ec95a7de
+  domain: ENG-ECS
+  official_name: world.py
+  path: axion-core/src/engine/ecs/world.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+CORE-FDE-GRAPH-001-V15-1:
+  artifact_id: CORE-FDE-GRAPH-001-V15-1
+  domain: CORE
+  official_name: compiled_graph.py
+  path: axion-core/src/engine/scheduling/compiled_graph.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+CORE-FDE-SCHED-001-V15-1:
+  artifact_id: CORE-FDE-SCHED-001-V15-1
+  domain: CORE
+  official_name: layered_scheduler.py
+  path: axion-core/src/engine/scheduling/layered_scheduler.py
+  status: "[ACTIVE]"
+  version: v15.1 [OMEGA]
+CORE-FDE-TEST-001:
+  artifact_id: CORE-FDE-TEST-001
+  content_hash: df73e603895f656585e68714a8eb430677bdec11e21ba7cec0678acd27bdd7db
+  domain: ENG-ECS
+  official_name: fde_test_harness.py
+  path: axion-core/src/engine/ecs/fde_test_harness.py
+  status: "[ACTIVE]"
   version: v15.0 [OMEGA]
 CORE...init..:
   artifact_id: CORE...init..
@@ -743,6 +883,40 @@ CORE.Codex.Phoenix:
     - GOVERN_BY:CORE.Codex.Phoenix
   path: _governance/00_Codex/CORE.Codex.Phoenix.md
   relations: "GOVERN_BY: CORE.Codex.Phoenix"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+CORE.Engine.CSEEngine:
+  artifact_id: CORE.Engine.CSEEngine
+  content_hash: 882193faf813fb5fbc1307313b459ac761fa33c89baa357f9cb7b9bdf4ee75e3
+  domain: CORE
+  official_name: cse_engine.py
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/forge/cse_engine.py
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+# --- @NEXUS TRANSCLUDE INGESTION � 2026-04-23 ---
+CORE.Engine.RNCEngine:
+  artifact_id: CORE.Engine.RNCEngine
+  content_hash: 94b44a7653396ed5684623a2d88c8d9b23aa9c051348f4d9925e537e006bff8f
+  domain: CORE
+  official_name: rnc_engine.py
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/forge/rnc_engine.py
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+CORE.System.Activator:
+  artifact_id: CORE.System.Activator
+  content_hash: 8c441ab7a6aa03e40a7b2c0d70b94cc142b984644139c83ba10376f13646686c
+  domain: CORE
+  official_name: activate_axion.py
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/activate_axion.py
+  relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[CANONIZED]"
   version: v15.0 [OMEGA]
 CORE.adaptive.retriever:
@@ -1097,6 +1271,14 @@ CORE.syngarchcoherentverseengine:
   relations: "GOVERNED_BY: CORE.Codex.Phoenix"
   status: "[CANONIZED]"
   version: v15.0 [OMEGA]
+CORE.system.logging.phoenix:
+  artifact_id: CORE.system.logging.phoenix
+  content_hash: 0248f3dfa274ffdb379d3ace846c759f4d93418d8da08ed448912bb2513bbbdf
+  domain: CORE
+  official_name: phoenix_logger.py
+  path: axion-core/src/system/logging/phoenix_logger.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 CSL-084:
   artifact_id: CSL-084
   content_hash: af249e97ed3c7829222502d7145084124a2d1050e6a95ecffef744ceb0f6467d
@@ -1210,6 +1392,59 @@ DQUEST-CSE-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
+ENG-ECS-INI-001:
+  artifact_id: ENG-ECS-INI-001
+  content_hash: b3b33ae22855a26921176381f67916af64c60432efde75fec1b3913682e80c7d
+  domain: ENG-ECS
+  official_name: __init__.py
+  path: axion-core/src/engine/ecs/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+ENG-ECS-MAN-001:
+  artifact_id: ENG-ECS-MAN-001
+  content_hash: 89c20f13022cfefa76c27db9a0f84664abbda8e67de396f3cb5ec098355d5fc0
+  domain: ENG-ECS
+  official_name: manager.py
+  path: axion-core/src/engine/ecs/manager.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+ENG-ECS-RES-001:
+  artifact_id: ENG-ECS-RES-001
+  content_hash: 396afa2c7b9066628abfc6b212ea29e98c9f76ac26d9d156f6df6c48cb0f2fde
+  domain: ENG-ECS
+  official_name: resonance.py
+  path: axion-core/src/engine/ecs/resonance.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+ENG-ECS-STO-001:
+  artifact_id: ENG-ECS-STO-001
+  content_hash: 9b912e86a83940a3cb76adb51392901da29f7a606142a69adc235f60a7d9a9a5
+  domain: ENG-ECS
+  official_name: component.py
+  path: axion-core/src/engine/ecs/component.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+ENG-ECS-SYN-001:
+  artifact_id: ENG-ECS-SYN-001
+  content_hash: 7ba69f287ab8806027c4c83f65df9f6a7a9459e1ae8907a6f2453c0369caf3c2
+  domain: ENG-ECS
+  official_name: synergy.py
+  path: axion-core/src/engine/ecs/synergy.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+FABRIC.Synapse.Logic:
+  artifact_id: FABRIC.Synapse.Logic
+  domain: NEXUS
+  official_name: useSynapseLogic.ts
+  path: axion-core/src/nexus/useSynapseLogic.ts
+  layer: "@nexus/"
+  parsed_relations:
+    - SYNERGIZES_WITH:NEXUS.Worker.State
+    - GOVERNED_BY:CODEX-LAW-03
+    - IMPLEMENTS:ARCH.VIS.CognitiveLoomVisualizer
+  relations: "SYNERGIZES_WITH: NEXUS.Worker.State, GOVERNED_BY: CODEX-LAW-03, IMPLEMENTS: ARCH.VIS.CognitiveLoomVisualizer"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
 GUCA-DSA-001:
   artifact_id: GUCA-DSA-001
   content_hash: 2d952104f5c165cd6ae28eb410b0bdc0c01356306914ef5d64b869378ad34223
@@ -3196,14 +3431,14 @@ GVRN-ENTITY-SENTINEL-PRIME-001-THEETHICALGOVERNOR-V1.0-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001:
-  artifact_id: GVRN-ENTITY-SOPHIA-001-THESPIRITOFSYNARCHY-V1.0-001
+GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001:
+  artifact_id: GVRN-ENTITY-SOPHIA-001-THESPIRITOFSynarche-V1.0-001
   content_hash: 58a6b7ce56e38eda3a00f2cdb4d2238158284f6cf87f3ce4003e85a73a4352b6
   domain: GVRN
-  official_name: ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+  official_name: ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+  path: _governance/_archive/99_Archives/ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
@@ -3361,36 +3596,36 @@ GVRN-GVRN-COMP-001-COGNITIVECOMPLEXITY-V13.0-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001:
-  artifact_id: GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V11.0-001
+GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001:
+  artifact_id: GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V11.0-001
   content_hash: 198bd1eac5e010b9e29b82adee69564bf832184e37201e8ffb6b5c082dce6b0b
   domain: GVRN
-  official_name: GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+  official_name: GVRN-ENTITY-001_SynarcheEntities_v11.0.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v11.0.md
+  path: _governance/_archive/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v11.0.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001:
-  artifact_id: GVRN-GVRN-ENTITY-001-SYNARCHYENTITIES-V13.0-001
+GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001:
+  artifact_id: GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001
   content_hash: cab7edf65485f65a1cb61b8021fe4252fef61e38e04aa19ae221334af1b7205a
   domain: GVRN
-  official_name: GVRN-ENTITY-001_SynarchyEntities_v13.0.md
+  official_name: GVRN-ENTITY-001_SynarcheEntities_v13.0.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/GVRN-ENTITY-001_SynarchyEntities_v13.0.md
+  path: _governance/_archive/99_Archives/GVRN-ENTITY-001_SynarcheEntities_v13.0.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001:
-  artifact_id: GVRN-GVRN-ENTITY-002-THESYNARCHYTRIADSHEET-V13.0-001
+GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001:
+  artifact_id: GVRN-GVRN-ENTITY-002-THESynarcheTRIADSHEET-V13.0-001
   content_hash: 90d37fdb39932fd70715326451c02884770feb2bb895a028cb2ac96aae1d41ff
   domain: GVRN
-  official_name: GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+  official_name: GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+  path: _governance/_archive/99_Archives/GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
@@ -4495,17 +4730,17 @@ GVRN-UMB-DIDACTIC-001-DIDACTICMODULEGENERATOR-V1.0-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.1-CONSOLIDATED-001:
-  artifact_id: GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.1-CONSOLIDATED-001
+GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.5-001:
+  artifact_id: GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.5-001
   content_hash: 32e7ee3de84d438fed53eab1ca9dd75ef447fd429b0505ab12ebe373e7a3cb07
   domain: GVRN
-  official_name: UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md
+  official_name: UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.5.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/99_Archives/UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md
+  path: axion-core/docs/01_Blueprints/UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.5.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
-  version: v13.0 [OMEGA]
+  version: v15.0 [OMEGA]
 GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V1.0-001:
   artifact_id: GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V1.0-001
   content_hash: 4220611b2049f6f9538d9712e569fcb7a5af2d8fc9c46730d8c103f91f47a442
@@ -5398,6 +5633,18 @@ GVRN.CHRON-INDEX-SYNERGY_v11.0:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
+GVRN.CI.ForgePR:
+  artifact_id: GVRN.CI.ForgePR
+  domain: GVRN
+  official_name: axion_forge_pr.yml
+  path: .github/workflows/axion_forge_pr.yml
+  layer: "@shield/"
+  parsed_relations:
+    - SYNERGIZES_WITH:TOOL.Coverage.Gate
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: TOOL.Coverage.Gate, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
 GVRN.CON.001:
   artifact_id: GVRN.CON.001
   content_hash: c3248908395eb5e4b0f64b3aa78a785a2821dda109178fb9b35be26b0d831ecf
@@ -5936,6 +6183,16 @@ GVRN.Forge.Core:
   relations: "GOVERN_BY: CORE.Codex.Phoenix"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
+GVRN.Framework.Synthesis.001:
+  artifact_id: GVRN.Framework.Synthesis.001
+  content_hash: d5c1bd45566dccb461621ad1fadb2c9c1e98b08ca149a0550ac1201bd9e9d780
+  domain: GVRN
+  official_name: GVRN.Framework.Synthesis.001.md
+  parsed_relations: []
+  path: _governance/10_Governance/GVRN.Framework.Synthesis.001.md
+  relations: ""
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 GVRN.GAMEDEV.001:
   artifact_id: GVRN.GAMEDEV.001
   content_hash: c257f80f8dcc4b04868416784f79097430eec376bbd0062c05aa2955f1e02516
@@ -6199,6 +6456,16 @@ GVRN.ID.Standard:
   path: _governance/10_Governance/GVRN.ID.Standard.md
   relations: "DEFINED_BY: GVRN.REG.Lexicon"
   status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+GVRN.ID.SynthesisInsights:
+  artifact_id: GVRN.ID.SynthesisInsights
+  content_hash: 8ff732096bfa2d7625c2c1898588bbd566684ca083cd12c70b18a69b6ca0fee3
+  domain: GVRN
+  official_name: GVRN.ID.SynthesisInsights.md
+  parsed_relations: []
+  path: _governance/10_Governance/GVRN.ID.SynthesisInsights.md
+  relations: ""
+  status: "[CANONIZED]"
   version: v15.0 [OMEGA]
 GVRN.IDX.001:
   artifact_id: GVRN.IDX.001
@@ -7461,6 +7728,16 @@ GVRN.Registry.OSLM:
   relations: "GOVERN_BY: CORE.Codex.Phoenix"
   status: "[CANONIZED]"
   version: v15.0 [OMEGA]
+GVRN.Registry.Origins:
+  artifact_id: GVRN.Registry.Origins
+  content_hash: 0f147e7844728b1418f53193d69f3b5477ac38af2a0a43dae54bde98092b3c9e
+  domain: GVRN
+  official_name: GVRN.Registry.Origins.md
+  parsed_relations: []
+  path: _governance/10_Governance/GVRN.Registry.Origins.md
+  relations: ""
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
 GVRN.Registry.PhoenixRosettaStone:
   artifact_id: GVRN.Registry.PhoenixRosettaStone
   content_hash: 317ce330ed9cb9ec7b7ebd6d29bd8098e0bbf19744484b0f753b3ed65b38ce5c
@@ -8035,6 +8312,46 @@ Messageto_Axion:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
+NEXUS.Layer.Gateway:
+  artifact_id: NEXUS.Layer.Gateway
+  domain: NEXUS
+  official_name: index.ts
+  path: axion-core/src/nexus/index.ts
+  layer: "@nexus/"
+  parsed_relations:
+    - EXPORTS:FABRIC.Synapse.Logic
+    - EXPORTS:NEXUS.Worker.State
+    - EXPORTS:NEXUS.Worker.Handshake
+    - GOVERNED_BY:ARCH.NexusPattern
+  relations: "EXPORTS: FABRIC.Synapse.Logic, EXPORTS: NEXUS.Worker.State, GOVERNED_BY: ARCH.NexusPattern"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+NEXUS.Worker.Handshake:
+  artifact_id: NEXUS.Worker.Handshake
+  domain: NEXUS
+  official_name: nexus_handshake.js
+  path: axion-core/src/nexus/nexus_handshake.js
+  layer: "@nexus/@shield/"
+  parsed_relations:
+    - SYNERGIZES_WITH:SHIELD.Challenge.Client
+    - UTILIZED_BY:TOOL.Forge.Daemon
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: SHIELD.Challenge.Client, UTILIZED_BY: TOOL.Forge.Daemon, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+NEXUS.Worker.State:
+  artifact_id: NEXUS.Worker.State
+  domain: NEXUS
+  official_name: nexus_worker.js
+  path: axion-core/src/nexus/nexus_worker.js
+  layer: "@nexus/"
+  parsed_relations:
+    - SYNERGIZES_WITH:FABRIC.Synapse.Logic
+    - SYNERGIZES_WITH:NEXUS.Worker.Handshake
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: FABRIC.Synapse.Logic, SYNERGIZES_WITH: NEXUS.Worker.Handshake, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
 OGLN-ARCH-GAME-ASCENSION:
   artifact_id: OGLN-ARCH-GAME-ASCENSION
   content_hash: 264281a050e9890a4918df04cfcf51b515ccff4498fbca3b7add4e63ecfb0b32
@@ -8087,6 +8404,30 @@ PHIL-SYNARCHE-MANIFESTO-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.1 [OMEGA]
+PHX-LOG-CORE-001:
+  artifact_id: PHX-LOG-CORE-001
+  content_hash: 4cadb07aab7b114df380ab2d4b9eadf3a01fd8c1164177ff63cf26af1935172e
+  domain: PHX-LOG
+  official_name: logger_philosophical_framework.py
+  path: axion-core/src/phoenix/logging/logger_philosophical_framework.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+PHX-LOG-INI-001:
+  artifact_id: PHX-LOG-INI-001
+  content_hash: 47f8044d87920be943a8f2cf454c829a4a1230e0e881fc1468add940df03e9fa
+  domain: PHX-LOG
+  official_name: __init__.py
+  path: axion-core/src/phoenix/logging/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+PHX-LOG-SET-001:
+  artifact_id: PHX-LOG-SET-001
+  content_hash: e258267c72ab6169d44a7c67eeba328a80cb31d8c710dbbfa8d17d46f899318a
+  domain: PHX-LOG
+  official_name: phx_logging_protocol_setup.py
+  path: axion-core/src/phoenix/logging/phx_logging_protocol_setup.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 Project_Credentials:
   artifact_id: Project_Credentials
   content_hash: 1dd58d3f0a3345cdc4ee11bf58cbdd7018ec5e5507fe8f5e4bcea24da738113f
@@ -8109,6 +8450,17 @@ SELT-HEPHAESTUS-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
+SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0:
+  artifact_id: SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0
+  content_hash: 157a857c12dbe22d529d4edc9410cc62af87519eb100c50f82161c0bdc2390bd
+  domain: GVRN
+  official_name: SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0.md
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/templates/SELT-UWB-001_Universal_Workflow_Blueprint_Template_v15.0.md
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 SELT.INGEST:
   artifact_id: SELT.INGEST
   content_hash: af47b272d3f08f656727ee827c924848dbc02611b38a6d2e5ddc92fbe2dd6edb
@@ -8131,6 +8483,20 @@ SELT.MILESTONE.TRIAD-001:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: \[CANONIZED\]
   version: v13.1 \[OMEGA\]
+SELT.NexusIngestion.ShadowLog:
+  artifact_id: SELT.NexusIngestion.ShadowLog
+  domain: SELT
+  official_name: SELT.NexusIngestion.ShadowLog.md
+  path: _governance/10_Governance/SELT.NexusIngestion.ShadowLog.md
+  layer: "@atlas/"
+  parsed_relations:
+    - DOCUMENTS:TOOL.Forge.Daemon
+    - DOCUMENTS:TOOL.Forge.SourceMap
+    - GOVERNED_BY:GVRN.WF.Finalization
+    - SYNERGIZES_WITH:SKILL.SynergisticOpportunityWeaving
+  relations: "DOCUMENTS: TOOL.Forge.Daemon, GOVERNED_BY: GVRN.WF.Finalization"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
 SENTINEL-REPORT-005_InitialScan:
   artifact_id: SENTINEL-REPORT-005_InitialScan
   content_hash: 312944815e962876ec671721b457e7cb0354869d676abf016b963f39e7766007
@@ -8142,6 +8508,18 @@ SENTINEL-REPORT-005_InitialScan:
   relations: "REF: GVRN.Master.Registry"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
+SHIELD.Challenge.Client:
+  artifact_id: SHIELD.Challenge.Client
+  domain: SHIELD
+  official_name: shield_challenge.js
+  path: axion-core/src/nexus/shield_challenge.js
+  layer: "@shield/"
+  parsed_relations:
+    - SYNERGIZES_WITH:NEXUS.Worker.Handshake
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: NEXUS.Worker.Handshake, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
 SKL.CORE.COLLAB-SYNTHESIS:
   artifact_id: SKL.CORE.COLLAB-SYNTHESIS
   content_hash: ce56b782698ed70ee1c90bf95ff21f88c33ee9629f962d072ef6edf9bfc747b8
@@ -8258,14 +8636,14 @@ SYNC.RULE.GEMINI-GATE:
   path: GEMINI.md
   status: CANONIZED TS
   version: v15.0 [OMEGA]
-SYNERGY-REPORT-001_StateOfTheSynarchy:
-  artifact_id: SYNERGY-REPORT-001_StateOfTheSynarchy
+SYNERGY-REPORT-001_StateOfTheSynarche:
+  artifact_id: SYNERGY-REPORT-001_StateOfTheSynarche
   content_hash: 018c02b64bbfce6a2d1702563f2f0bab80bd389d27d3f811bc6d9d5b758e59d5
   domain: GVRN
-  official_name: SYNERGY-REPORT-001_StateOfTheSynarchy.md
+  official_name: SYNERGY-REPORT-001_StateOfTheSynarche.md
   parsed_relations:
     - GOVERN_BY:CORE.Codex.Phoenix
-  path: _governance/50_Logs/SYNERGY-REPORT-001_StateOfTheSynarchy.md
+  path: _governance/50_Logs/SYNERGY-REPORT-001_StateOfTheSynarche.md
   relations: "GOVERN_BY: CORE.Codex.Phoenix"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
@@ -8492,14 +8870,14 @@ SYNG.LOG.ContextWeaveReport:
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
-SYNG.LOG.StateOfTheSynarchy:
-  artifact_id: SYNG.LOG.StateOfTheSynarchy
+SYNG.LOG.StateOfTheSynarche:
+  artifact_id: SYNG.LOG.StateOfTheSynarche
   content_hash: 9383df483dad3e66d9b33d728892f314f759ae7262294b163f3f6c04eec41c9d
   domain: SYNG
-  official_name: SYNG.LOG.StateOfTheSynarchy.md
+  official_name: SYNG.LOG.StateOfTheSynarche.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/50_Logs/SYNG.LOG.StateOfTheSynarchy.md
+  path: _governance/50_Logs/SYNG.LOG.StateOfTheSynarche.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
@@ -8524,6 +8902,16 @@ SYNG.Link.Bidirectional:
     - "GOVERNED_BY: CORE.Codex.Phoenix"
   path: _governance/09_Link/SYNG.Link.Bidirectional.md
   relations: "GOVERNED_BY: CORE.Codex.Phoenix"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+SYNG.Link.Forge:
+  artifact_id: SYNG.Link.Forge
+  content_hash: a4d36d2dcbe4c44e3a18a0f9d3303c2b100f7a270e549a707e9e7626280be810
+  domain: SYNG
+  official_name: SYNG.Link.Forge.md
+  parsed_relations: []
+  path: _governance/09_Link/SYNG.Link.Forge.md
+  relations: ""
   status: "[CANONIZED]"
   version: v15.0 [OMEGA]
 SYNG.Link.Quad:
@@ -8711,14 +9099,14 @@ SYNG.PROT.StandardOfTruth:
   relations: "MONITORS: SYNG.LOOM.CORE, GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-SYNG.PROT.SynarchyAvatarProtocol:
-  artifact_id: SYNG.PROT.SynarchyAvatarProtocol
+SYNG.PROT.SynarcheAvatarProtocol:
+  artifact_id: SYNG.PROT.SynarcheAvatarProtocol
   content_hash: ad55205ff0b708ccee2e33afc6ee2b872864470404be3fbd021329e2cf2bd782
   domain: GVRN
-  official_name: SYNG.PROT.SynarchyAvatarProtocol.md
+  official_name: SYNG.PROT.SynarcheAvatarProtocol.md
   parsed_relations:
     - GOVERNED_BY:CORE-CODEX-001
-  path: _governance/_archive/SYNG.PROT.SynarchyAvatarProtocol.md
+  path: _governance/_archive/SYNG.PROT.SynarcheAvatarProtocol.md
   relations: "GOVERNED_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
@@ -9158,6 +9546,51 @@ SYNG.WF.Validation:
   relations: "REF: GVRN.Master.Registry"
   status: "[ACTIVE]"
   version: v15.0 [OMEGA]
+SYS-REF-CORE-001:
+  artifact_id: SYS-REF-CORE-001
+  content_hash: ab6979bb1f5aa42bb475b00faa04f3ab1e4742202fdf7b345dc43deab1b15a6a
+  domain: SYS-REF
+  official_name: refactor_protocol_axion.py
+  path: axion-core/src/system/refactor/refactor_protocol_axion.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+SYS-REF-INI-001:
+  artifact_id: SYS-REF-INI-001
+  content_hash: 8a1e7bef1f3e5363a022631c2a42d9d93acf7e7ed731b9b41729eef0e4f30125
+  domain: SYS-REF
+  official_name: __init__.py
+  path: axion-core/src/system/refactor/__init__.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+SYS-REF-PAR-001:
+  artifact_id: SYS-REF-PAR-001
+  content_hash: 0e2d21e63f68a2f660b6f4eb0a58583f5b6f533234a799067110e22412742a91
+  domain: SYS-REF
+  official_name: parallel_executor_v2.py
+  path: axion-core/src/system/refactor/parallel_executor_v2.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+SYS-REF-ROLL-001:
+  artifact_id: SYS-REF-ROLL-001
+  content_hash: 388461c548a922900ee74ef5ccd920ad37cffbd459954aa326d7d350af9a6b38
+  domain: SYS-REF
+  official_name: rollback_core.py
+  path: axion-core/src/system/refactor/rollback_core.py
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
+SYSTEM.CSE.Gateway:
+  artifact_id: SYSTEM.CSE.Gateway
+  domain: CORE
+  official_name: index.ts
+  path: axion-core/src/cse/index.ts
+  layer: "@system/"
+  parsed_relations:
+    - EXPORTS:TOOL.Forge.SourceMap
+    - EXPORTS:TOOL.GUCA.Command
+    - GOVERNED_BY:ARCH.NexusPattern
+  relations: "EXPORTS: TOOL.Forge.SourceMap, EXPORTS: TOOL.GUCA.Command, GOVERNED_BY: ARCH.NexusPattern"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
 TEST-CHRONICLE:
   artifact_id: TEST-CHRONICLE
   content_hash: 933720c81adae0930570791fac62d0344fb5fc61e4078aefab8798cd249ece48
@@ -9169,6 +9602,71 @@ TEST-CHRONICLE:
   relations: "GOVERN_BY: CORE-CODEX-001"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
+TOOL.Coverage.Gate:
+  artifact_id: TOOL.Coverage.Gate
+  domain: TOOL
+  official_name: check_coverage.py
+  path: axion-core/tools/check_coverage.py
+  layer: "@shield/"
+  parsed_relations:
+    - SYNERGIZES_WITH:GVRN.CI.ForgePR
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "SYNERGIZES_WITH: GVRN.CI.ForgePR, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+TOOL.Forge.Daemon:
+  artifact_id: TOOL.Forge.Daemon
+  domain: TOOL
+  official_name: forge_daemon.py
+  path: axion-core/tools/forge_daemon.py
+  layer: "@system/"
+  parsed_relations:
+    - UTILIZES:TOOL.Forge.SourceMap
+    - SYNERGIZES_WITH:GVRN.CI.ForgePR
+    - BROADCASTS_TO:NEXUS.Worker.Handshake
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "UTILIZES: TOOL.Forge.SourceMap, BROADCASTS_TO: NEXUS.Worker.Handshake, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+TOOL.Forge.SourceMap:
+  artifact_id: TOOL.Forge.SourceMap
+  domain: TOOL
+  official_name: sourcemap.py
+  path: axion-core/src/cse/sourcemap.py
+  layer: "@system/"
+  parsed_relations:
+    - UTILIZED_BY:TOOL.Forge.Daemon
+    - SYNERGIZES_WITH:TOOL.GUCA.Command
+    - IMPLEMENTS:ARCH.CSE.SourceMapProtocol
+    - GOVERNED_BY:CODEX-LAW-03
+  relations: "UTILIZED_BY: TOOL.Forge.Daemon, SYNERGIZES_WITH: TOOL.GUCA.Command, GOVERNED_BY: CODEX-LAW-03"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+TOOL.Forge.UMB:
+  artifact_id: TOOL.Forge.UMB
+  domain: TOOL
+  official_name: Forge__UMB.js
+  path: _governance/tools/Forge__UMB.js
+  layer: "@loom/"
+  parsed_relations:
+    - GOVERNED_BY:CORE.Codex.Phoenix
+    - SYNERGIZES_WITH:ARCH.NexusPattern
+  relations: "GOVERNED_BY: CORE.Codex.Phoenix"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
+TOOL.GUCA.Command:
+  artifact_id: TOOL.GUCA.Command
+  domain: TOOL
+  official_name: guca_command.py
+  path: axion-core/src/cse/guca_command.py
+  layer: "@system/"
+  parsed_relations:
+    - SYNERGIZES_WITH:TOOL.Forge.SourceMap
+    - INTEGRATES_WITH:TOOL.StructureEnforcer
+    - GOVERNED_BY:CODEX-LAW-01
+  relations: "SYNERGIZES_WITH: TOOL.Forge.SourceMap, INTEGRATES_WITH: TOOL.StructureEnforcer, GOVERNED_BY: CODEX-LAW-01"
+  status: "[CANONIZED]"
+  version: v15.0 [OMEGA]
 UMB-APT-001_AxiomPrimeTuner_v1.0:
   artifact_id: UMB-APT-001_AxiomPrimeTuner_v1.0
   content_hash: b5d321dd2ba7446bdf05d9012a6a68d41c7c4d9afbe41278678575c97113d836
@@ -9309,6 +9807,17 @@ UMB.Forge.Core:
   relations: "GOVERN_BY: CORE.Codex.Phoenix"
   status: "[ACTIVE]"
   version: v14.0 [OMEGA]
+UWB-GODOT-001_BridgeToGodotWorkflow_v1.0:
+  artifact_id: ARCH-UWB-GODOT-001-BRIDGETOGODOTWORKFLOW-V1.0-001
+  content_hash: 5f9e8d7c6b5a4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b
+  domain: ARCH
+  official_name: UWB-GODOT-001_BridgeToGodotWorkflow_v1.0.md
+  parsed_relations:
+    - GOVERNED_BY:CORE-CODEX-001
+  path: axion-core/docs/01_Blueprints/UWB-GODOT-001_BridgeToGodotWorkflow_v1.0.md
+  relations: "GOVERNED_BY: CORE-CODEX-001"
+  status: "[ACTIVE]"
+  version: v15.0 [OMEGA]
 VERIFY_OMEGA:
   artifact_id: VERIFY_OMEGA
   content_hash: 3a0f1e37d54474204794cead7a7122f4071aa3b94b8080b45f29f1f4f1f4e0de
@@ -11640,26 +12149,6 @@ WLF-WRLD-017:
   relations: "GOVERNED_BY: WLF.Bible.Core, INDEXED_BY: GVRN.Registry.Narrative"
   status: "[ACTIVE]"
   version: v13.1 [OMEGA]
-"[ID]":
-  artifact_id: "[ID]"
-  content_hash: 0f126e2c32a75a7c500e39b404078ebe123d2a7c9b2c18f81d93febe32413ac3
-  domain: GVRN
-  official_name: block_a_uip.md
-  path: _governance/templates/Transclusion_Blocks/block_a_uip.md
-  relations: "GOVERNED_BY: [[CORE.Codex.Phoenix]]"
-  status: "[ACTIVE]"
-  version: v15.0 [OMEGA]
-"[RNC-ID]":
-  artifact_id: "[RNC-ID]"
-  content_hash: e9c7a2e3da7ab3754d25c0353a1950de12f521bd1e69f19d9cd7f787a7900d19
-  domain: GVRN
-  official_name: UMB-MASTER-TEMPLATE-001.md
-  parsed_relations:
-    - GOVERNED_BY:CORE-CODEX-001
-  path: axion-core/docs/01_Blueprints/UMB-MASTER-TEMPLATE-001.md
-  relations: "GOVERNED_BY: CORE-CODEX-001"
-  status: "[ACTIVE]"
-  version: v13.0 [OMEGA]
 \[PARENT\].\[FUNCTION\].\[SEQ\]:
   artifact_id: \[PARENT\].\[FUNCTION\].\[SEQ\]
   content_hash: d9e8b0b8650acb6d81efeff6f6c9d08eb819773f08fe7f2e60dd5cbb66f02213
@@ -11693,29 +12182,3 @@ primary_directive:
   relations: "REF: GVRN.Master.Registry"
   status: "[ACTIVE]"
   version: v13.0 [OMEGA]
-'{{ RNC\_ID }}':
-  artifact_id: '{{ RNC\_ID }}'
-  celestial_class: '{{ CELESTIAL\_CLASS }}'
-  content_hash: 8c3ae1ff1a8baf8b07781c45ddb65908c77818a4e84db9b7f9d6a241d3765461
-  domain: "{{ DOMAIN }}"
-  integrity_hash: '{{ INTEGRITY\_HASH }}'
-  musashi_audit: '{{ AUDIT\_VERDICT }}'
-  official_name: GUCA_Template-Genesis Universal Command Architecture (v13.1 OMEGA).md
-  path:
-    _governance/templates/Master_Shells/GUCA_Template-Genesis Universal Command
-    Architecture (v13.1 OMEGA).md
-  patron_shard: '{{ TAROT\_SHARD }}'
-  relations: "GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)"
-  status: "{{ STATUS }}"
-  version: v13.1 \[OMEGA\]
-"{{ RNC_ID }}":
-  artifact_id: "{{ RNC_ID }}"
-  content_hash: 04a9ce9031294deae74e201214201d373e7e0d5f4765eee3779abda5f90517a3
-  domain: GVRN
-  official_name: SELT-HEADER-UIP-001.md
-  parsed_relations:
-    - REF:GVRN.Master.Registry
-  path: _governance/templates/Transclusion_Blocks/SELT-HEADER-UIP-001.md
-  relations: "REF: GVRN.Master.Registry"
-  status: "[ACTIVE]"
-  version: v15.0 [OMEGA]

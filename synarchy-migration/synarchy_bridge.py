@@ -2,20 +2,18 @@ import json
 import os
 
 
-class SynarchyRegistry:
-    """
-    Interface for the Synarchy Command Registry.
+class SynarcheRegistry:
+    """Interface for the Synarche Command Registry.
     Allows agents (AXION, LIGHTBINDER) to programmatically access capabilities.
     """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     def __init__(self, registry_path="command_registry.json"):
         # Resolve path relative to this file if not absolute
@@ -43,8 +41,7 @@ class SynarchyRegistry:
         return list(self.library.keys())
 
     def search_commands(self, query):
-        """
-        Searches all commands for a query string in name or description.
+        """Searches all commands for a query string in name or description.
         Returns a list of matching command definitions.
         """
         results = []
@@ -54,19 +51,20 @@ class SynarchyRegistry:
         def _recursive_search(node):
             if isinstance(node, list):
                 for cmd in node:
-                    if query in cmd["name"].lower() or query in cmd["description"].lower():
+                    if (
+                        query in cmd["name"].lower()
+                        or query in cmd["description"].lower()
+                    ):
                         results.append(cmd)
             elif isinstance(node, dict):
-                for key, value in node.items():
+                for _key, value in node.items():
                     _recursive_search(value)
 
         _recursive_search(self.library)
         return results
 
     def get_command_spec(self, command_name):
-        """
-        Retrieves the full specification for a specific command by name (case-insensitive).
-        """
+        """Retrieves the full specification for a specific command by name (case-insensitive)."""
         matches = self.search_commands(command_name)
         # return exact match if possible, else first match
         for cmd in matches:
@@ -79,5 +77,5 @@ class SynarchyRegistry:
 
 if __name__ == "__main__":
     # Simple self-test
-    bridge = SynarchyRegistry()
+    bridge = SynarcheRegistry()
     print("Categories:", bridge.get_all_categories())

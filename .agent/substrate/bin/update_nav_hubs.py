@@ -10,11 +10,11 @@ Purpose: Auto-generate README Navigation Hubs for skills and workflows.
 BASE_DIR = os.path.join(".agent")
 
 
-def update_readme(path, title, items, item_type):
+def update_readme(path, title, items, item_type) -> None:
     readme_content = f"""# {title}
 
 Auto-generated Navigation Hub for {item_type}.
-Last Sync: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+Last Sync: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
 
 ## 📂 Available {item_type}
 
@@ -23,7 +23,7 @@ Last Sync: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
         readme_content += f"- **{item}**\n"
 
     readme_content += (
-        f"\n---\n`[OMNI-ANCHOR] ID: SYNG.NAV.Hub VER: v15.0 [OMEGA] STATUS: ACTIVE`"
+        "\n---\n`[OMNI-ANCHOR] ID: SYNG.NAV.Hub VER: v15.0 [OMEGA] STATUS: ACTIVE`"
     )
 
     with open(os.path.join(path, "README.md"), "w", encoding="utf-8") as f:
@@ -31,7 +31,7 @@ Last Sync: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
     print(f"[+] Updated README: {os.path.join(path, 'README.md')}")
 
 
-def sync_hubs():
+def sync_hubs() -> None:
     # Sync Skill Hubs
     skills_root = os.path.join(BASE_DIR, "skills")
     for domain in os.listdir(skills_root):

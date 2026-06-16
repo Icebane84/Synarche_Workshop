@@ -1,4 +1,16 @@
-## **Block A: The Identification Lock (UIP-V15)**
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.STRAT.STRATEGYOMEGA` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# **Block A: The Identification Lock (UIP-V15)**
+
+---
 
 | Key               | Value                         | Description       |
 | :---------------- | :---------------------------- | :---------------- |
@@ -15,19 +27,26 @@
 
 ## **I. Tactical Intent**
 
+---
+
 To provide the high-level roadmap for the **Synarche Workshop Ascension**. This document bridges the gap between the **Antigravity Kits** and the **AI Knowledge Graphs (RAG)**.
 
 ## **II. Strategic Pillars**
 
-1. **Antigravity Fusion**: Deep integration with the multi-root code-workspace and task automation.
+---
+
+1. **Antigravity Fusion**: Deep integration with the multi-root CODE-workspace and task automation.
 2. **Knowledge Synthesis**: Recursive learning from session logs to populate the `.agent` memory layers.
 3. **Rigorous Governance**: Absolute compliance with the 42 Laws of the Phoenix Codex.
 
 ## **III. Roadmap: Phase 0 (Ascension)**
 
+---
+
 - Ingest all harvested tools into `axion-core`.
 - Normalize the `.agent` substrate.
-- Establish the **Finalization Gate**.
+
+* Establish the **Finalization Gate**.
 
 ---
 

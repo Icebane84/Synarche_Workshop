@@ -1,4 +1,5 @@
 # UMB-CATALYST-001_TheCatalystWeaver_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-CATALYST-001-THECATALYSTWEAVER-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-CATALYST-001_TheCatalystWeaver_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                              | Description       |
+| :------------------ | :------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-CATALYST-001-THECATALYSTWEAVER-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-CATALYST-001_TheCatalystWeaver_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                  | The Standard.     |
+| **Domain**          | `GVRN`                                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                         | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                  | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 # UMB-CATALYST-001: The Catalyst Weaver
 
@@ -30,21 +31,21 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                 |
-| :--------------------- | :------------------------------------ |
-| **1. Artifact ID**     | `UMB-CATALYST-001`                    |
-| **2. Official Name**   | `The Catalyst Weaver`                 |
-| **3. Version**         | **v1.0**                              |
-| **4. Provenance**      | **Origin: Antigravity**               |
-| **5. Domain**          | `ARCH`                                |
-| **6. Evolution**       | **Social Alchemist**                  |
-| **7. Celestial Class** | `[SATELLITE]`                         |
-| **8. Tier**            | **Operational**                       |
-| **9. State**           | `[ACTIVE]`                            |
-| **10. Ethos**          | **Connection**                        |
-| **11. Catalyst**       | **Synergy**                           |
+| Field                  | Value                                                                                                                                                                        |
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Artifact ID**     | `UMB-CATALYST-001`                                                                                                                                                           |
+| **2. Official Name**   | `The Catalyst Weaver`                                                                                                                                                        |
+| **3. Version**         | **v1.0**                                                                                                                                                                     |
+| **4. Provenance**      | **Origin: Antigravity**                                                                                                                                                      |
+| **5. Domain**          | `ARCH`                                                                                                                                                                       |
+| **6. Evolution**       | **Social Alchemist**                                                                                                                                                         |
+| **7. Celestial Class** | `[SATELLITE]`                                                                                                                                                                |
+| **8. Tier**            | **Operational**                                                                                                                                                              |
+| **9. State**           | `[ACTIVE]`                                                                                                                                                                   |
+| **10. Ethos**          | **Connection**                                                                                                                                                               |
+| **11. Catalyst**       | **Synergy**                                                                                                                                                                  |
 | **12. Relations**      | `LINK: [CHAR-AXION-001](../../../src/agents/axion/CHAR-AXION-001_AgentAxionPersona_v1.0.md)`, `LINK: [AOP-AG-003](../../agents/AOP-AG-003_AxionAgentConfiguration_v11.0.md)` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                          |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                                                                                                                           |
 
 ---
 

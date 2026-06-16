@@ -1,5 +1,4 @@
 # Protocol-aligned, formatter-friendly config.
-select = ["B", "D", "E", "F", "I"]
+extend = "C:/Users/Chris/Synarche_Workspace/axion-core/standards/pyproject.toml"
 
-# Never enforce `E501` (line length violations). This should be handled by formatters.
-ignore = ["E501", "D100"] # D100 ignored as it conflicts with standard UIP headers if not careful
+

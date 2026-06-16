@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.AVATARSUITE.INDEX` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **📜 GVRN.AvatarSuite.Index: Sovereign Avatar Registry (v15.0)**
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -23,12 +33,16 @@
 
 ## **Overview**
 
-The **Avatar Suite** is the cardinal subsystem responsible for the management, logic, and manifestation of the Synarchy's agentic personas. It bridges the gap between the static laws of the **Phoenix Codex** and the kinetic operations of the **Avatar Protocol**.
+The **Avatar Suite** is the cardinal subsystem responsible for the management, logic, and manifestation of the
+Synarche's agentic personas. It bridges the gap between the static laws of the **Phoenix Codex** and the kinetic
+operations of the **Avatar Protocol**.
 
 ## **Core Components**
 
-- 🛡️ **[GVRN.AvatarSuite.Protocol.md](GVRN.AvatarSuite.Protocol.md)**: The Master Protocol housing the 42 Laws of the Phoenix as they apply to agentic behavior.
-- 🗃️ **[GVRN.AvatarSuite.Masks.md](GVRN.AvatarSuite.Masks.md)**: The definitive registry mapping **Sovereign Masks** to **Kinetic Shards**.
+- 🛡️ **[GVRN.AvatarSuite.Protocol.md](GVRN.AvatarSuite.Protocol.md)**: The Master Protocol housing the 42 Laws of the
+  Phoenix as they apply to agentic behavior.
+- 🗃️ **[GVRN.AvatarSuite.Masks.md](GVRN.AvatarSuite.Masks.md)**: The definitive registry mapping **Sovereign Masks** to
+  **Kinetic Shards**.
 
 ## **Topological Context**
 
@@ -45,3 +59,5 @@ graph TD
 **Authority**: `CORE.Codex.Phoenix`  
 **Status**: `ACTIVE`  
 **Zero Entropy Compliance**: `v15.0 [OMEGA]`
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

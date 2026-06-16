@@ -20,7 +20,7 @@ param(
 
 $basePath = "c:\Users\Chris\Synarche_Workspace\.agent\skills"
 $newSkillPath = Join-Path $basePath $SkillName
-$templatePath = Join-Path $basePath "self-improvement\assets\SKILL-TEMPLATE.md"
+$templatePath = Join-Path $basePath "core\self-improvement\assets\SKILL-TEMPLATE.md"
 
 if (Test-Path $newSkillPath) {
     Write-Error "Skill '$SkillName' already exists."

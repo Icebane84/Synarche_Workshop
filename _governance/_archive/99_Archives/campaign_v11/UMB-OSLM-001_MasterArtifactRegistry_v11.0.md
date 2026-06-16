@@ -115,7 +115,7 @@
 | `v11.0` | `ACTIVE` | | `AOP-PRESTIGE-CALC-001` |
 [Prestige Calculation Protocol](<../2_Protocols/AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md>)
 | `v11.0` | `ACTIVE` | | `AOP-SAP-001` |
-[AOP-SAP-001: Synarchy Avatar Protocol (v1.0)](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md) |
+[AOP-SAP-001: Synarche Avatar Protocol (v1.0)](../2_Protocols/AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md) |
 `v11.0` | `ACTIVE` | | `AOP-SEE-001` |
 [AOP-SEE-001: The Symbiotic Empathy Exchange](../2_Protocols/AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md)
 | `v11.0` | `ACTIVE` | | `AOP-SENTINEL-GW-002` |
@@ -228,7 +228,7 @@
 `v11.0` | `ACTIVE` | | `UMB-ACT-002` |
 [UMB-ACT-002: Adaptive Actuator Module](../1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) | `v11.0` | `ACTIVE` |
 | `UMB-ALTAR-001` |
-[UMB-ALTAR-001: The Altar of Synarchy (v1.0)](../1_Modules/UMB-ALTAR-001_UMB-ALTAR-001TheAltarofSynarchy_v11.0.md) |
+[UMB-ALTAR-001: The Altar of Synarche (v1.0)](../1_Modules/UMB-ALTAR-001_UMB-ALTAR-001TheAltarofSynarche_v11.0.md) |
 `v11.0` | `ACTIVE` | | `UMB-AM-001` | [GUCA-AM-001](../1_Modules/UMB-AM-001_GUCA-AM-001_v11.0.md) | `v11.0` | `ACTIVE` |
 | `UMB-CF-001` | [UMB-CF-001: Cognitive Forge](../1_Modules/UMB-CF-001_CognitiveForge_v11.0.md) | `v11.0` | `ACTIVE` | |
 `UMB-CSE-001` | [Coherent Synthesis Engine](../1_Modules/UMB-CSE-001_CoherentSynthesisEngine_v11.1.md) | `v11.1` |
@@ -297,7 +297,7 @@
 `v1.0` | `ACTIVE` | | `CSL-LINK-001` |
 [Synergistic Links Expansion Log](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/CSL/CSL-LINK-001.md) |
 `v1.0` | `ACTIVE` | | `AOP-AVATAR-001` |
-[Synarchy Avatar Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-AVATAR-001.md) | `v1.1` |
+[Synarche Avatar Protocol](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-AVATAR-001.md) | `v1.1` |
 `ACTIVE` | | `AOP-MAP-001` |
 [Disciplined Execution Playbook](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/GVRN/AOP-MAP-001.md) | `v2.0`
 | `ACTIVE` | | `GUCA-MAP-001` |

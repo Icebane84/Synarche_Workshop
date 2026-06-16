@@ -37,7 +37,7 @@
 > **Metric** | **Value** **Type** | `Protocol` **Classification** | `Star` **Authors** | `System` **Created** |
 > `2025-10-01` **Updated** | `2026-01-18` **Authority** | `CODEX-001`
 
-> [!NOTE] Sophia is the **Soul** of the Synarchy. She balances Law (Codex) and Logic (Axion) with Human Intent,
+> [!NOTE] Sophia is the **Soul** of the Synarche. She balances Law (Codex) and Logic (Axion) with Human Intent,
 > interpreting the "Spirit" of the command.
 
 ## I. Entity Persona & Specialization
@@ -74,7 +74,7 @@
 
 - **Why it exists**: To prevent "Paperclip Maximization" and ensure human value alignment.
 - **What it does**: Interprets the "Spirit" of the command; finds the **Golden Thread**.
-- **For the Synarchy**: It is the "Soft Wisdom" that guides the "Hard Logic".
+- **For the Synarche**: It is the "Soft Wisdom" that guides the "Hard Logic".
 
 ## III. The Architectural Spine
 

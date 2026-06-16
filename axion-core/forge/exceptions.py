@@ -13,25 +13,30 @@ Standardized error models for the Forge Toolkit and Axion Runtime.
 Failure is not an end, but a signal for re-calibration.
 """
 
+
 class ForgeError(Exception):
     """Base exception for all Forge Toolkit errors."""
 
     pass
+
 
 class SovereigntyViolationError(ForgeError):
     """Raised when a path resolution attempts to leave the Workspace Sanctuary."""
 
     pass
 
+
 class IntegrityError(ForgeError):
     """Raised when metadata or rendering integrity is compromised."""
 
     pass
 
+
 class ObsidianConnectionError(ForgeError):
     """Raised when the Obsidian Local REST API is unreachable or authentication fails."""
 
     pass
+
 
 class TransmissionError(ForgeError):
     """Raised when data synthesis or transclusion fails."""

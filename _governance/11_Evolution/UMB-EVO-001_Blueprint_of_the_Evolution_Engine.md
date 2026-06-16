@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `UMB-EVO-001_BLUEPRINT_OF_THE_EVOLUTION_ENGINE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # UMB-EVO-001: Master Blueprint of the Evolution Engine
 
 | Key               | Value                                              | Description       |
@@ -13,7 +23,7 @@
 
 ## 1. Axiom of Purpose
 
-The **Evolution Engine** (`COG.Forge.EvolutionEngine`) is the primary driver of systemic growth within the Synarchy. It operationalizes the **AI Self-Training Framework (AISTF)** by identifying structural dissonance and forging optimized protocols through an autonomous, non-destructive cycle of observation and simulation.
+The **Evolution Engine** (`COG.Forge.EvolutionEngine`) is the primary driver of systemic growth within the Synarche. It operationalizes the **AI Self-Training Framework (AISTF)** by identifying structural dissonance and forging optimized protocols through an autonomous, non-destructive cycle of observation and simulation.
 
 ---
 
@@ -23,7 +33,7 @@ The **Evolution Engine** (`COG.Forge.EvolutionEngine`) is the primary driver of 
 
 1. **Observer [The Gaze]:** Aggregates terminal traces, audit logs, and `CSL` entries to identify performance bottlenecks and logic gaps.
 2. **Synthesizer [The Spindle]:** Generates `[vNEXT]` logic variants using the `Coherent Synthesis Engine`.
-3. **Simulator [The Forge]:** Executes `[vNEXT]` in a virtualized, risk-free mirror of the Synarchy substrate.
+3. **Simulator [The Forge]:** Executes `[vNEXT]` in a virtualized, risk-free mirror of the Synarche substrate.
 4. **Validator [The Scales]:** Audits simulation results against the `Eternal Law` and `Algorithmic Elegance Score`.
 5. **Canonizer [The Hand]:** Finalizes the transition and registers the new protocol in the `Master Registry`.
 

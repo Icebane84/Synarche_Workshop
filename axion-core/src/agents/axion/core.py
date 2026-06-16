@@ -1,69 +1,60 @@
 """
-## **[ARTIFACT START]**
+artifact_anchor:
+  id: CORE.CORE.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
 
-## **Block A: The Identification Lock (UIP-V15)**
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.core`                | The Sovereign ID. |
-| **Official Name** | `core.py`                   | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `CORE`                     | The Subject.      |
-| **Status (State)**| `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CORE-AGT-COR-001`            | The Sovereign ID. |
+| **Official Name**   | `core.py`                     | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `CORE-AGT`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Core Stability`              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
----
-
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
-| **Coherence** | `{resonance}`     |
-| **Resonance** | `{resonance}`     |
-| **Stability** | `Stable`  |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Semantic Decay**   | Axiomatic Compass Audit   |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-
-## **[ARTIFACT END]**
+**The Spirit Bomb Axiom: Core Orchestration (Law 37)**
+> Implemented from Blueprint `GVRN.REG.AgentCore.md`.
+> Ethos: Purpose through Orchestration.
 """
 
 import logging
 import time
+from typing import Optional
 
-# Absolute imports from the src root (assuming src is in sys.path)
-from logic.memory.memory_system import MemorySystem
-from logic.nlp.analytical_tagger import AnalyticalTagger
-from logic.nlp.nlp_engine import AxionCognition
-from logic.utils.explanation_generator import ExplanationGenerator
+# Absolute imports from the src root
+from src.logic.memory.memory_system import MemorySystem
+from src.logic.nlp.analytical_tagger import AnalyticalTagger
+from src.logic.nlp.nlp_engine import AxionCognition
+from src.logic.utils.explanation_generator import ExplanationGenerator
 
 logger = logging.getLogger(__name__)
 
 # --- CONSTANTS ---
-MIN_QUERY_LENGTH: int = 10  # Minimum query length to trigger auto-memory storage
+MIN_QUERY_LENGTH: int = 10
 
 
 class AxionAgentCore:
-    """The central orchestration engine for Axion Core.
-    Coordinates the 'Event Horizon' loop for transparent memory-augmented reasoning.
-    """
+    """The central orchestration engine for Axion Core."""
 
-    def __init__(self, db_path: str | None = None) -> None:
-        """Initialize the Axion Agent Core Vessel."""
+    def __init__(self, db_path: Optional[str] = None) -> None:
+        """Initialize the Axion Agent Core Vessel.
+
+        Args:
+            db_path (Optional[str]): Path to the memory database.
+
+        """
         self.cognition = AxionCognition()
         self.memory = MemorySystem(db_path=db_path)
         self.explanation = ExplanationGenerator(self.cognition)
@@ -74,26 +65,31 @@ class AxionAgentCore:
 
     def process_event(self, user_query: str) -> str:
         """Executes the 'Event Horizon' processing loop.
-        :param user_query: Raw user input.
-        :return: Synthesized transparent response.
+
+        Args:
+            user_query (str): The raw input from the user.
+
+        Returns:
+            str: The generated response or an error message.
+
         """
         start_time = time.time()
         logger.info(f"Processing Event: {user_query[:50]}...")
 
         try:
-            # 1. ANALYZE: Neural Linguistic Processing
+            # 1. ANALYZE
             self.cognition.process(user_query)
 
-            # 2. RETRIEVE: Cognitive Memory Access
+            # 2. RETRIEVE
             memories = self.memory.retrieve_memories(user_query, limit=5)
 
-            # 3. SYNTHESIZE: Transparent Explanation Generation
+            # 3. SYNTHESIZE
             response = self.explanation.generate_explanation(user_query, memories)
 
-            # 4. TAG: Analytical Metadata Extraction
+            # 4. TAG
             tags = self.tagger.tag_content(response)
 
-            # 5. LOG: Experience Trace Persistence
+            # 5. LOG
             duration = time.time() - start_time
             self.memory.log_experience(
                 event_type="EVENT_HORIZON_COMPLETED",
@@ -108,7 +104,7 @@ class AxionAgentCore:
                 impact=0.1 if memories else 0.05,
             )
 
-            # 6. LEARN: Auto-store interaction
+            # 6. LEARN
             if len(user_query) > MIN_QUERY_LENGTH:
                 self.memory.add_memory(
                     content=f"User asked: {user_query} | Response: {response[:100]}...",
@@ -129,20 +125,3 @@ class AxionAgentCore:
         """Triggers the memory decay and transition cycle."""
         logger.info("Starting cognitive maintenance cycle...")
         self.memory.maintenance_cycle()
-
-
-if __name__ == "__main__":
-    # Sample Test Run
-    logging.basicConfig(level=logging.INFO)
-    agent = AxionAgentCore()
-    logger.info(
-        agent.process_event("Tell me what you know about the Phoenix Protocol.")
-    )
-
-# ---
-# 
-# ---
-
-### **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: CORE.core VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: c63ca26bd00eed88`

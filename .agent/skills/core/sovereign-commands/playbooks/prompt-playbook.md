@@ -13,7 +13,7 @@
 
 ## I. Operational Context: Prompt Engineering
 
-This playbook governs the creation, refinement, and stress-testing of AI prompts within the Synarchy, ensuring they
+This playbook governs the creation, refinement, and stress-testing of AI prompts within the Synarche, ensuring they
 achieve maximum clarity and alignment with the **Phoenix Codex**.
 
 ### **Command: PCA (Prompt Composition Assistant)**

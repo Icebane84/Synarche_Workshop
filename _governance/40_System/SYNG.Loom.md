@@ -1,4 +1,5 @@
 # UMB-LOOM-001_TheCognitiveLoom_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `SYNG.Loom` | The Sovereign ID. |
-| **Official Name** | `UMB-LOOM-001_TheCognitiveLoom_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.Loom`                              | The Sovereign ID. |
+| **Official Name**   | `UMB-LOOM-001_TheCognitiveLoom_v11.1.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-LOOM-001` |
-| **Version** | `v11.1` |
-| **Evolution** | **The Phoenix Geode** |
-| **Status** | `ACTIVE` |
-| **Type** | `Module` |
-| **Classification** | `Star` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-24` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Loom, Geode, Memory, Graph, v11.1` |
+
+| Key                | Value                               |
+| :----------------- | :---------------------------------- |
+| **Module ID**      | `UMB-LOOM-001`                      |
+| **Version**        | `v11.1`                             |
+| **Evolution**      | **The Phoenix Geode**               |
+| **Status**         | `ACTIVE`                            |
+| **Type**           | `Module`                            |
+| **Classification** | `Star`                              |
+| **Authors**        | `System`                            |
+| **Created**        | `2025-10-01`                        |
+| **Updated**        | `2026-01-24`                        |
+| **Authority**      | `CODEX-001`                         |
+| **Tags**           | `Loom, Geode, Memory, Graph, v11.1` |
+
 ---
 
 # **UMB-LOOM-001: The Cognitive Loom (The Phoenix Geode)**
@@ -103,9 +107,9 @@ The Loom operates through a continuous evolutionary loop called **The Phoenix Cy
 
 - **Role**: The "Autonomous Shuttle" that proactively weaves links between nodes.
 - **Key Protocols**:
-    - **Active Relational Weaving**: Background variation of the graph.
-    - **Thematic Clustering**: Grouping nodes by semantic resonance.
-    - **Synergy Scoring**: Quantifying the value of a connection.
+  - **Active Relational Weaving**: Background variation of the graph.
+  - **Thematic Clustering**: Grouping nodes by semantic resonance.
+  - **Synergy Scoring**: Quantifying the value of a connection.
 
 ### **4.2 The Dynamic Tiering System (The Tension Regulator)**
 

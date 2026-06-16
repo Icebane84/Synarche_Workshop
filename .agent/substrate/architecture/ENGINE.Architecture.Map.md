@@ -18,7 +18,7 @@
 
 ## 🏗️ Topographical Overview
 
-The `axion-core` engine is the execution substrate of the Synarchy. It is structured into three primary functional zones, all governed by the Phoenix Codex.
+The `axion-core` engine is the execution substrate of the Synarche. It is structured into three primary functional zones, all governed by the Phoenix Codex.
 
 ### 🔬 Zone I: The Laboratory (`lab/`)
 

@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `BLK-COMP-001_COMPONENTARCHITECTUREBLOCK` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # BLK-COMP-001_ComponentArchitectureBlock.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-BLK-COMP-001-COMPONENTARCHITECTUREBLOCK-001` | The Sovereign ID. |
-| **Official Name** | `BLK-COMP-001_ComponentArchitectureBlock.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                              | Description       |
+| :------------------ | :------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-BLK-COMP-001-COMPONENTARCHITECTUREBLOCK-001` | The Sovereign ID. |
+| **Official Name**   | `BLK-COMP-001_ComponentArchitectureBlock.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                  | The Standard.     |
+| **Domain**          | `GVRN`                                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                         | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                  | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 # BLK-COMP-001: Component Architecture Block
 
@@ -32,8 +43,8 @@
 
 ### [Section Number].1 Component Mapping
 
-| Component ID | Driven By | Output | Purpose |
-| :--- | :--- | :--- | :--- |
+| Component ID | Driven By           | Output            | Purpose         |
+| :----------- | :------------------ | :---------------- | :-------------- |
 | **[Comp-A]** | `[Engine/Protocol]` | `[Artifact/Data]` | [Why it exists] |
 | **[Comp-B]** | `[Engine/Protocol]` | `[Artifact/Data]` | [Why it exists] |
 

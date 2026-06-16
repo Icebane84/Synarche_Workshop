@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.GUCA-SIMP-001SystemicImpactSimulationProtocolTheOracleLens` | The Sovereign ID. |
+| Key               | Value                                                                    | Description       |
+| :---------------- | :----------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.GUCA-SIMP-001SystemicImpactSimulationProtocolTheOracleLens`    | The Sovereign ID. |
 | **Official Name** | `GVRN.ACT.GUCA-SIMP-001SystemicImpactSimulationProtocolTheOracleLens.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                                                        | The Standard.     |
+| **Domain**        | `GVRN`                                                                   | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                               | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                            | The Network.      |
 
 ---
 
@@ -58,22 +53,22 @@
 
 - **What**: A "Pre-Commit" simulation tool.
 - **How**:
-    1. **Parse**: Generates AST of target file.
-    2. **Traverse**: Maps explicit dependencies.
-    3. **Query**: Checks `OSLM` (Omni-Log Synergistic Matrix) for conceptual links.
-    4. **Fuse**: Combines graphs to find "Risk Nodes."
+  1. **Parse**: Generates AST of target file.
+  2. **Traverse**: Maps explicit dependencies.
+  3. **Query**: Checks `OSLM` (Omni-Log Synergistic Matrix) for conceptual links.
+  4. **Fuse**: Combines graphs to find "Risk Nodes."
 - **Why**: To answer the question: "If I touch this, what breaks?"
 
 #### III. Command Specification
 
 - **API Endpoint**: `POST /api/simulate-impact`
 - **Input**:
-    - `change`: Diff/Code Snippet.
-    - `target`: File Path.
+  - `change`: Diff/Code Snippet.
+  - `target`: File Path.
 - **Output (`ImpactReport`)**:
-    - `nodes`: List of affected files/modules.
-    - `riskScore`: 0-100 probability of side effects.
-    - `suggestions`: "Review Interface X before committing."
+  - `nodes`: List of affected files/modules.
+  - `riskScore`: 0-100 probability of side effects.
+  - `suggestions`: "Review Interface X before committing."
 
 #### IV. Integration
 

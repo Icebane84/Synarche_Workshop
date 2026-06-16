@@ -1,4 +1,15 @@
-# CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CSL-037_THE ADAMANT VICTORY_ FORGING COHERENCE THROUGH PERSEVERANCE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+# CSL-037*The Adamant Victory* Forging Coherence Through Perseverance.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-037-THE-ADAMANT-VICTORY--FORGING-COHERENCE-THROUGH-PERSEVERANCE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                          | Description       |
+| :------------------ | :----------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-037-THE-ADAMANT-VICTORY--FORGING-COHERENCE-THROUGH-PERSEVERANCE-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-037_The Adamant Victory_ Forging Coherence Through Perseverance.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                              | The Standard.     |
+| **Domain**          | `GVRN`                                                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                  | The Network.      |
 
 ### Collaborative Synthesis Log
 

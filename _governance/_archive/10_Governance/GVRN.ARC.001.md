@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ARC.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.ARC.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ARC.001`                | The Sovereign ID. |
+| **Official Name** | `GVRN.ARC.001.md`             | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -60,7 +55,7 @@ Redirect created in `GVRN.Registry.Redirects.md`. |
 
 - **Core Purpose**: To define the definitive, system-wide protocol for managing the lifecycle of documentation,
   specifically the process of superseding an outdated artifact with a new, canonical version.
-- **Protocol Objective**: To ensure the **Synarchy Knowledge Base** remains a reliable, single source of truth by
+- **Protocol Objective**: To ensure the **Synarche Knowledge Base** remains a reliable, single source of truth by
   formally archiving obsolete documents and ensuring all navigational and conceptual links point exclusively to the most
   current, approved versions.
 - **Governing Ethos**: Guardian of Anti-Entropy, Guardian of Coherence
@@ -174,9 +169,9 @@ CMD: AUDIT_ARCHIVE --scan-for "Ghost Versions"
 - **Ethical Guardrail**: Supports the _Guardian of Truth & Clarity_ ethos by ensuring the system always references the
   most current and accurate information.
 - **Synergy Mapping**:
-    - **GOVERNED_BY**: `CORE-CODEX-001` (Structural Coherence)
-    - **SYNERGIZES_WITH**: `GVRN.Registry.Master` (System of Record), `GVRN.Protocol.Finalization` (Prerequisite)
-    - **FEEDS_INTO**: `GVRN.Registry.Redirects` (Redirect Log)
+  - **GOVERNED_BY**: `CORE-CODEX-001` (Structural Coherence)
+  - **SYNERGIZES_WITH**: `GVRN.Registry.Master` (System of Record), `GVRN.Protocol.Finalization` (Prerequisite)
+  - **FEEDS_INTO**: `GVRN.Registry.Redirects` (Redirect Log)
 
 ---
 
@@ -244,8 +239,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

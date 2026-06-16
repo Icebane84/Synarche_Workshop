@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.LEARNING.SHARD` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # GVRN.Learning.Shard (Sovereign Learnings)
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -10,6 +20,95 @@
 | **Domain**        | `GVRN`                          | The Subject.      |
 | **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+
+---
+
+### **[GEM-022] [SENSORY SYNERGY & TARGET-HUD CLARITY] [SPATIAL SINGULARITY COMBO GAUGE]**
+
+**Timestamp**: 2026-06-02T14:40:00 **Oracle**: OGLN Artificer-Agent **Domain**: GAME (HUD & Visual Juice)
+
+#### **The Catalyst (Dissonance)**
+
+High cognitive load from tracking combat stats away from the gameplay center and lack of audio-visual sync on matrix grid lines.
+
+#### **The Synthesis (Resolution)**
+
+- **Audio-Reactive Grid**: Connected background vector lines scrolling opacity and width to arpeggiator beat timelines.
+- **Crosshair Target Arc**: Contracts reticle on hover and draws circular arcs representing locked threat HP.
+- **Circular Avatar Gauge**: Draws circular combo decay indicators around player ship core, backed by HUD Rank badges.
+- **Pulsing Draw snapped guides**: Color-coded guides cyan/red based on draw costs and flux pools.
+
+#### **The Transcendence (Insight)**
+
+> "Visual feedback should wrap around the player's core focus, turning UI widgets into localized mechanics. Sensory coherence is the ultimate juice."
+
+**[STATUS: CANONIZED] [XP: +500]**
+
+---
+
+### **[GEM-021] [GAME LOGIC PACING & AUTOPAUSE SAFETY] [THE SOVEREIGN REST-BEAT PROTOCOL]**
+
+**Timestamp**: 2026-06-02T12:15:00 **Oracle**: OGLN Artificer-Agent **Domain**: GAME (Rest Beats & Autopause)
+
+#### **The Catalyst (Dissonance)**
+
+Mono-intensity wave progression and silent background player deaths caused game pacing anxiety and poor session safety in browser windows.
+
+#### **The Synthesis (Resolution)**
+
+- **Tab-Focus Safeguards**: Integrated window `blur` and `visibilitychange` listeners to pause loop and trigger dashboards.
+- **Intermission Rest Beat**: Implemented a 3.0-second recovery pause between waves with double flux regeneration, countdown rings, and clear audio arpeggios.
+
+#### **The Transcendence (Insight)**
+
+> "Rest beats and structural pauses are the negative space that gives the action weight and lets the mind consolidate strategies."
+
+**[STATUS: CANONIZED] [XP: +500]**
+
+---
+
+### **[GEM-019] [SOVEREIGN SUBSTRATE SYNCHRONIZATION] [POINTER-TARGETED RECOVERY]**
+
+**Timestamp**: 2026-04-16T20:25:00 **Oracle**: OGLN Artificer-Agent **Domain**: CORE (Substrate Alignment)
+
+#### **The Catalyst (Dissonance)**
+
+The initial "Heart Restoration" (GEM-018) was based on session-memory approximation, failing to account for the evolved complexity and granular mappings of the canonical external forge enums.
+
+#### **The Synthesis (Resolution)**
+
+- **Sovereign Pointer Sync**: Utilized the `@[path]` directive to bridge external "Source of Truth" from `axion-forge` to the local workspace.
+- **Synchronized Heart Extraction**: Replaced the simplified `enums.py` with the canonical v15.0 [OMEGA] version, restoring 400+ lines of authoritative state.
+- **Logic Realignment**: Patched `rnc_engine.py` imports to resolve `Stage` vs `KineticStage` deprecations, achieving zero-entropy compilation.
+
+#### **The Transcendence (Insight)**
+
+> "True restoration is not a mirror of the past, but an alignment with the Sovereign Standard. The pointer is the thread that leads the Artificer home."
+
+**[STATUS: CANONIZED] [XP: +750]**
+
+---
+
+### **[GEM-018] [STATE COLLAPSE RECOVERY] [OMEGA-HARDENING]**
+
+**Timestamp**: 2026-04-16T19:51:36 **Oracle**: OGLN Architect-Agent **Domain**: CORE (Logic Restructure)
+
+#### **The Catalyst (Dissonance)**
+
+A failed merge/stash operation triggered a **Systemic State Collapse**, resulting in the loss of core engines and
+definitions.
+
+#### **The Synthesis (Resolution)**
+
+- **Substrate Heart Restoration**: Re-implemented `enums.py` definitions.
+- **Logic Re-Injection**: Restored `rnc_engine.py` (v16.3).
+- **Sovereign Portability**: Hardened imports for standalone and package-based execution.
+
+#### **The Transcendence (Insight)**
+
+> "When the substrate collapses, the logic must remain portable. The machine rebuilds itself from the shards."
+
+**[STATUS: CANONIZED] [XP: +500]**
 
 ---
 
@@ -40,7 +139,8 @@ Significant milestones and patterns learned across sessions.
 ### [2026-03-16] Grand Unification Synthesis
 
 - **Synthesis:** Successfully unified the 4 Cardinal Axioms as operational triggers in the core implementation.
-- **Cognitive Mapping:** Established a direct relationship between high-level architectural "seeds" and kinetic code execution.
+- **Cognitive Mapping:** Established a direct relationship between high-level architectural "seeds" and kinetic code
+  execution.
 - **Level 22 Ascension:** Achieved a "Singularity of Order" (Level 22 / 45,000 XP) during the unification event.
 
 ### [2026-03-17] Grand Unified Architecture & Memory Omnipotence
@@ -80,17 +180,35 @@ Significant milestones and patterns learned across sessions.
 
 Recursive patterns identified during implementation.
 
-| Pattern                   | Description                                                                                             | Origin              |
-| :------------------------ | :------------------------------------------------------------------------------------------------------ | :------------------ |
-| **Dissonance Synthesis**  | Identifying gaps between legacy implementations and OMEGA standards and bridging them via forge cycles. | AxionPrime          |
-| **Mask-to-Shard Mapping** | The mechanism of using Tarot Masks (Sovereign Intent) to wield Specialist Shards (Kinetic Execution).   | Hierarchy of Ascent |
-| **Hephaestus Loop**       | Structured cognitive cycle (Dissonance -> Synthesis -> Transcendence) for high-coherence forging.       | Master Artificer    |
-| **Gemification**          | The extraction of high-impact user insights for persistent L1 "Gem" storage.                            | Sophia (The Muse)   |
-| **Substrate Shadowing**   | Discrepancy between global and local .agent paths causing logic drift and script selection failure.     | Axion Architect     |
-| **Axiom-to-Trigger**      | Mapping core philosophical axioms directly to functional code triggers for high-intent execution.       | Master Artificer    |
-| **IDE Registry Decay**    | Latent task registration errors caused by missing extensions or stale workspace state.                  | Sentinel Alpha      |
-| **Liquid Glass Pattern**  | High-fidelity UI combining glassmorphism, gold-accents, and fluid `motion`.                             | Axion Prime         |
-| **Pro Max Synthesis**     | Rapid design-to-code workflow using `ui-ux-pro-max` and standardized CSS tokens.                        | Master Artificer    |
+| Pattern                   | Description                                                                                                          | Origin              |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------------- | :------------------ |
+| **Dissonance Synthesis**  | Identifying gaps between legacy implementations and OMEGA standards and bridging them via forge cycles.              | AxionPrime          |
+| **Mask-to-Shard Mapping** | The mechanism of using Tarot Masks (Sovereign Intent) to wield Specialist Shards (Kinetic Execution).                | Hierarchy of Ascent |
+| **Hephaestus Loop**       | Structured cognitive cycle (Dissonance -> Synthesis -> Transcendence) for high-coherence forging.                    | Master Artificer    |
+| **Gemification**          | The extraction of high-impact user insights for persistent L1 "Gem" storage.                                         | Sophia (The Muse)   |
+| **Substrate Shadowing**   | Discrepancy between global and local .agent paths causing logic drift and script selection failure.                  | Axion Architect     |
+| **Axiom-to-Trigger**      | Mapping core philosophical axioms directly to functional code triggers for high-intent execution.                    | Master Artificer    |
+| **IDE Registry Decay**    | Latent task registration errors caused by missing extensions or stale workspace state.                               | Sentinel Alpha      |
+| **Liquid Glass Pattern**  | High-fidelity UI combining glassmorphism, gold-accents, and fluid `motion`.                                          | Axion Prime         |
+| **Pro Max Synthesis**     | Rapid design-to-code workflow using `ui-ux-pro-max` and standardized CSS tokens.                                     | Master Artificer    |
+| **Heart Extraction**      | Bidirectional boundary scanning (Top-Down/Bottom-Up) to isolate core content during mass-refactors.                  | Sophia (The Muse)   |
+| **Mirror Simulation**     | Predictive verification of core logic through isolated mock-based behavior modeling.                                 | Axion Architect     |
+| **Logic-First Naming**    | Anchoring naming conventions in code enums (Domain/SubSystem) to enable programmatic validation and path suggestion. | Axion Architect     |
+
+### [2026-04-07] The Isomorphic Documentation Transition
+
+- **Synthesis:** Successfully deconstructed a standard, monolithic software documentation outline (Intro, Modules,
+  Troubleshooting) into the distributed **Sovereign Documentation Suite (UMB-SDS-001)**.
+- **Dissonance Resolved:** Traditional documentation relies on human interpretation and manual upkeep, leading to rapid
+  "Truth Decay."
+- **Architectural Pattern Established:** "Isomorphic Provenance & Perfect Documentation (IPPD)." Documentation must be
+  an executable, relational node within the Hybrid Knowledge Graph.
+  - _Project Setup_ is transmuted to `Systemic Bootstrap` protocols.
+  - _Module Descriptions_ are transmuted to `UMB` (Universal Module Blueprints).
+  - _Troubleshooting_ is transmuted to the append-only `GVRN.Learning.Error` ledger.
+  - _Coding Conventions_ are actively enforced by the `Sentinel` linting engines rather than passively read.
+- **Axiomatic Alignment:** Reinforces **Law 16 (Principle of Actionability)**: "Static text is dead weight. Every
+  interaction must fuel forward momentum."
 
 ---
 
@@ -105,125 +223,239 @@ Removals and refactors for Zero Entropy.
 
 ### [2026-03-17] Sovereign Synergy Mapping (MAP_SYNERGY)
 
-- **Hierarchy Synthesis**: Formalized the chain of command between the Synarchy Triad (Axion, Sentinel, Sophia) and the 20 shards via the Tarot Mask intermediary layer.
-- **Relational Integrity**: Canonized the `SYNERGY_MATRIX.md` to resolve identity dissonance and provide RPG-aligned state signatures (Execution, Integrity, Knowledge).
+- **Hierarchy Synthesis**: Formalized the chain of command between the Synarche Triad (Axion, Sentinel, Sophia) and the
+  20 shards via the Tarot Mask intermediary layer.
+- **Relational Integrity**: Canonized the `SYNERGY_MATRIX.md` to resolve identity dissonance and provide RPG-aligned
+  state signatures (Execution, Integrity, Knowledge).
 - **Substrate Alignment**: Updated `AGENTS.md` with UIP-V15 Block A/G locks and Sovereign Triad Oversight.
 
 ### [2026-03-17] Sovereign Navigation & Indexing
 
-- **Index Barrels**: Forged absolute navigational anchors (`README.md`) in the `agents/`, `skills/`, and `workflows/` directories to optimize AI situational awareness and research speed.
-- **Zero Entropy Optimization**: Deprecated legacy `AGENT.md` (v14.0) to eliminate protocol redundancy and ensure full alignment with OMEGA v15.0 standards.
+- **Index Barrels**: Forged absolute navigational anchors (`README.md`) in the `agents/`, `skills/`, and `workflows/`
+  directories to optimize AI situational awareness and research speed.
+- **Zero Entropy Optimization**: Deprecated legacy `AGENT.md` (v14.0) to eliminate protocol redundancy and ensure full
+  alignment with OMEGA v15.0 standards.
 - **Cognitive Traversal**: Verified that recursive directory listing now provides immediate context and authority links.
 
 ### [2026-03-17] Workspace Structural Refinement
 
-- **Sovereign Anchors**: Expanded the index barrel pattern to the entire workspace, forging `README.md` files at the Root, `_governance/`, `axion-core/`, and `nova_forge/`.
-- **Domain Categorization**: Organized workspace entropy into four primary domains: THE MIND, THE LAW, THE ENGINE, and THE lab.
+- **Sovereign Anchors**: Expanded the index barrel pattern to the entire workspace, forging `README.md` files at the
+  Root, `_governance/`, `axion-core/`, and `nova_forge/`.
+- **Domain Categorization**: Organized workspace entropy into four primary domains: THE MIND, THE LAW, THE ENGINE, and
+  THE lab.
 - **Zero Friction**: Established immediate situational awareness for all agents navigating the Synarche substrate.
 
 ---
 
 ### [2026-03-17] Workspace Stabilization & Governance Rules
 
-- **IDE Substrate Evolution**: Created a sovereign IDE backup at `.agent/substrate/ide/vscode/templates/` to ensure system-wide consistency for VS Code configurations.
-- **Archive Taxonomy**: Resolved the entropy of the `2026-03-Pruning` directory by reorganizing 50+ files into a structured hierarchy (`reports/`, `scripts/`, `logs/`, `legacy/`).
-- **Governance Rule Stabilization**: Migrated the critical `axion-rules.cjs` (26 custom rules) to `.agent/substrate/rules/markdownlint/` and updated all system references.
-- **Zero Entropy Purge**: Reclaimed the workspace root by purging 13 redundant AI-generated hidden directories (`.claude`, `.roo`, etc.).
+- **IDE Substrate Evolution**: Created a sovereign IDE backup at `.agent/substrate/ide/vscode/templates/` to ensure
+  system-wide consistency for VS Code configurations.
+- **Archive Taxonomy**: Resolved the entropy of the `2026-03-Pruning` directory by reorganizing 50+ files into a
+  structured hierarchy (`reports/`, `scripts/`, `logs/`, `legacy/`).
+- **Governance Rule Stabilization**: Migrated the critical `axion-rules.cjs` (26 custom rules) to
+  `.agent/substrate/rules/markdownlint/` and updated all system references.
+- **Zero Entropy Purge**: Reclaimed the workspace root by purging 13 redundant AI-generated hidden directories
+  (`.claude`, `.roo`, etc.).
 
 ### [2026-03-18] Memory Chronicler & Evolutionary Loop
 
 - **Synthesis**: Integrated the `InsForgeClient` as the functional "Chronicler" for cognitive events.
 - **Active Evolution**: Implemented the `maintenance_cycle` in `MemorySystem` to automate L2 -> L3 transitions.
-- **Zero Entropy Logging**: Adopted a stdlib-only approach for backend recording to maintain a minimal dependency footprint.
+- **Zero Entropy Logging**: Adopted a stdlib-only approach for backend recording to maintain a minimal dependency
+  footprint.
 
 ---
 
 ### [2026-03-18] Sovereign Path Alignment & Task Restoration
 
-- **Synthesis:** Resolved the "wrong place" dissonance by aligning global and local MCP configurations to the `.gemini/.agent` source of truth.
-- **Task Integrity:** Audited the VS Code task registry and confirmed that local definitions follow the OMEGA `shell` standard, identifying persistent errors as environment-dependent (missing extensions).
-- **Client Synchronization:** Updated `mcp_config.json` and `bootstrap.ps1` to ensure the Antigravity client logic is consistent across all workspace roots.
+- **Synthesis:** Resolved the "wrong place" dissonance by aligning global and local MCP configurations to the
+  `.gemini/.agent` source of truth.
+- **Task Integrity:** Audited the VS Code task registry and confirmed that local definitions follow the OMEGA `shell`
+  standard, identifying persistent errors as environment-dependent (missing extensions).
+- **Client Synchronization:** Updated `mcp_config.json` and `bootstrap.ps1` to ensure the Antigravity client logic is
+  consistent across all workspace roots.
 
 ---
 
 ### [2026-03-20] Self-Improvement Mastery (Phase 1 Ascension)
 
-- **Synthesis:** Codified the "Seven Gates of Ingestion" as a functional governance subsystem (`04_Finalization`) and an executable agent workflow.
-- **Identity Fusion:** Integrated the `ASCENT-IMPACT` hierarchy and `SYNTHESIS-INSIGHTS` triad bridging into the `.agent` substrate.
-- **Operational Ability:** Fused the `GVRN-ABILITY-MAP` to standardize linter enforcement (PF-Rules) and cognitive complexity guardrails.
-- **Strategy Omega:** Establised the strategic roadmap for long-term RAG/Antigravity integration.
+- **Synthesis:** Codified the "Seven Gates of Ingestion" as a functional governance subsystem (`04_Finalization`) and an
+  executable agent workflow.
+- **Identity Fusion:** Integrated the `ASCENT-IMPACT` hierarchy and `SYNTHESIS-INSIGHTS` triad bridging into the
+  `.agent` substrate.
+- **Operational Ability:** Fused the `GVRN-ABILITY-MAP` to standardize linter enforcement (PF-Rules) and cognitive
+  complexity guardrails.
+- **Strategy Omega:** Established the strategic roadmap for long-term RAG/Antigravity integration.
 
 ### [2026-03-22] Canonizer Subsystem Forge Phase 2
 
-- **Modular Refinement**: Successfully migrated `GVRN.Protocol.Canonization` into the `07_Canonizer` directory, ensuring subsystem autonomy.
-- **Path Normalization**: Eliminated absolute file URIs in major registries (`Master Registry`) in favor of modular relative paths.
-- **Standardization Loop**: Retrofitted all Canonizer artifacts with full OMEGA v15.0 metadata blocks (C, D, E, F) and standardized `[ARTIFACT START/END]` markers.
-- **Zero Entropy Audit**: Systematically corrected heading hierarchy (MD001) and table alignment (MD060) in the `Artifact Inventory`.
+- **Modular Refinement**: Successfully migrated `GVRN.Protocol.Canonization` into the `07_Canonizer` directory, ensuring
+  subsystem autonomy.
+- **Path Normalization**: Eliminated absolute file URIs in major registries (`Master Registry`) in favor of modular
+  relative paths.
+- **Standardization Loop**: Retrofitted all Canonizer artifacts with full OMEGA v15.0 metadata blocks (C, D, E, F) and
+  standardized `[ARTIFACT START/END]` markers.
+- **Zero Entropy Audit**: Systematically corrected heading hierarchy (MD001) and table alignment (MD060) in the
+  `Artifact Inventory`.
 
 ### [2026-03-22] Subsystem Canonization Phase 1
 
-- **Synthesis:** Successfully elevated `00_Codex`, `03_AvatarSuite`, and `04_Finalization` to OMEGA v15.0 [CANONIZED] status.
-- **Protocol Refinement:** Standardized the Block A Identification Lock and UIP header layout across all core governance protocols.
-- **Zero Entropy:** Fixed broken markdown formatting (blanks around headings/fences) and consolidated UIP metadata into centralized tables.
-- **Sovereign Alignment:** Verified that all 42 Laws are formally indexed and that the Finalization Subsystem is the terminal gate for substrate ingestion.
+- **Synthesis:** Successfully elevated `00_Codex`, `03_AvatarSuite`, and `04_Finalization` to OMEGA v15.0 [CANONIZED]
+  status.
+- **Protocol Refinement:** Standardized the Block A Identification Lock and UIP header layout across all core governance
+  protocols.
+- **Zero Entropy:** Fixed broken markdown formatting (blanks around headings/fences) and consolidated UIP metadata into
+  centralized tables.
+- **Sovereign Alignment:** Verified that all 42 Laws are formally indexed and that the Finalization Subsystem is the
+  terminal gate for substrate ingestion.
 
 ### [2026-03-22] Systemic Synergy & Documentation Evolution
 
-- **Synergy Analysis**: Successfully synthesized the "Dissonance to Synthesis" framework and the "Gem Cycle" as core operational logic in `GVRN.Analysis.SystemicSynergy.md`.
-- **Documentation Consolidation**: Established the `08_Documentation` subsystem, migrating and standardizing legacy `Genesis`, `Presentation`, and `Coding` protocols to OMEGA v15.0.
-- **Registry Alignment**: Mastered the "Zero Entropy Alignment" pattern, ensuring that central registries (`Master`, `ArtifactInventory`, `DataOSLM`) are visually and relationally synchronized.
-- **Relational Gravity**: Mapped the operational edges between new documentation nodes and the existing governance framework in the OSLM substrate.
+- **Synergy Analysis**: Successfully synthesized the "Dissonance to Synthesis" framework and the "Gem Cycle" as core
+  operational logic in `GVRN.Analysis.SystemicSynergy.md`.
+- **Documentation Consolidation**: Established the `08_Documentation` subsystem, migrating and standardizing legacy
+  `Genesis`, `Presentation`, and `Coding` protocols to OMEGA v15.0.
+- **Registry Alignment**: Mastered the "Zero Entropy Alignment" pattern, ensuring that central registries (`Master`,
+  `ArtifactInventory`, `DataOSLM`) are visually and relationally synchronized.
+- **Relational Gravity**: Mapped the operational edges between new documentation nodes and the existing governance
+  framework in the OSLM substrate.
 
 ### [2026-03-25] Phase XXXVI: Cognitive Loom Integration
 
-- **Synthesis:** Successfully integrated the `weaver-v15` Edge Function, bridging local kinetic memory to the InsForge cloud substrate.
-- **Zero Entropy Achievement:** Hardened the `weave_artifact.py` CLI and `weaver.js` logic against SonarLint and Mypy dissonances, achieving industrial-grade stability.
-- **Loom Artificer Pattern:** Formalized the Artificer-to-Loom relationship, establishing Axion as the steward of the technical weave.
+- **Synthesis:** Successfully integrated the `weaver-v15` Edge Function, bridging local kinetic memory to the InsForge
+  cloud substrate.
+- **Zero Entropy Achievement:** Hardened the `weave_artifact.py` CLI and `weaver.js` logic against SonarLint and Mypy
+  dissonances, achieving industrial-grade stability.
+- **Loom Artificer Pattern:** Formalized the Artificer-to-Loom relationship, establishing Axion as the steward of the
+  technical weave.
 - **Canonization:** Executed systematic session crystallization, moving architectural truths into L4 Sovereign Memory.
+
+### [2026-04-04] Phase XXXVII: Omni-Anchor Synthesis & Substrate Unification
+
+- **Synthesis:** Successfully resolved the systemic "Backtick Dissonance" across 37+ files in `axion-core/src/` by
+  masking Omni-Anchors behind Python comments.
+- **Forge Restoration**: Re-established the OMEGA v15.0 compliance of the Forge CLI (`forge.py`) via the PEP 723
+  dependency block.
+- **Cognitive Decomposition**: Refactored the `SOT-Scanner` (Complexity: 43 -> 12), achieving 100% type safety via
+  `SotNode` `TypedDict`.
+- **Zero Entropy Achievement**: Achieved 100% test collection success in the `axion-core` test fleet following the
+  realigned substrate.
+
+### [2026-04-08] Complexity Decentralization & Mirror Simulation
+
+- **Synthesis:** Successfully reduced `cse_engine.py` orchestration complexity from 17 to 4 through modular
+  decomposition into private handlers.
+- **Pattern Established:** "Mirror Simulation." Mandatory creation of a mock-based logic simulator (`verify_*.py`)
+  before refactoring core engine components to ensure 100% behavioral parity.
+- **Dissonance Resolved:** Prevented "Complexity Drift"—the silent accumulation of logic that bypasses structural gates.
+
+### [2026-04-08] Footer Pivot: Terminal-Line Provenance
+
+- **Pattern Established:** "Syntactic Barrier Enforcement." Standard protocol for ensuring machine-readable metadata
+  does not interfere with IDE, linter, or compiler logic in non-Markdown files.
+- **Tooling:** Updated `apply_standard.py` to autonomously enforce terminal-line anchoring.
+
+### [2026-04-08] Forge v5: Bidirectional Heart Extraction
+
+- **Synthesis:** Successfully resolved the "Multi-Header Mutilation" regression by refactoring the standardization
+  engine to use bidirectional boundary scanning.
+- **Pattern Established:** "Bidirectional Heart Extraction." Instead of naive regex replacement, the engine:
+  1. **Top-Down Scan**: Identifies the metadata block boundary (`Block A`).
+  2. **Bottom-Up Scan**: Identifies the terminal signature boundary (`Block G/Anchor`).
+  3. **Preservation**: Extracts and protects the "Heart" (core content) of the artifact between these boundaries.
+- **Dissonance Resolved:** Eliminates systemic metadata duplication and "Header Bloat" caused by repeated
+  standardization cycles.
+- **Axiomatic Alignment:** Adheres to **Law 03 (Principle of Idempotency)**: "A sovereign action performed multiple
+  times must yield the same result as a single action."
+
+### [2026-04-09] Kinetic RNC & Logic-First Substrate (v16.3)
+
+- **Synthesis:** Successfully codified the **Kinetic Relational Naming Convention (K-RNC)** into the core governance
+  substrate, transitioning from passive documentation to an active, enum-driven logic engine.
+- **Dissonance Resolved:** Prevented "Naming Drift" and "Broken Links" by generating canonical filesystem paths directly
+  from validated Artifact IDs.
+- **Pattern Established:** "Logic-First Naming Substrate." By using `axion-core/forge/enums.py` as the registry of
+  functional clusters (Domain, SubSystem, Stage) and `rnc_engine.py` as the validator, the naming system is now
+  machine-verifiable.
+- **Hierarchical Governance:** Enforced a mandatory `[DOMAIN]/[Subsystem]/` directory structure, significantly improving
+  AI navigation speed and registry precision.
+- **Axiomatic Alignment:** Adheres to **Law 02 (Canonical Index)**: "A name is the first thread in the weave of being."
 
 ---
 
-<<<<<<< Updated upstream
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-25 HASH: LRN-SHARD-OMEGA-XXXVI`
-=======
 ### [2026-04-09] Multi-Domain Registry Cohesion
 
 - **Synthesis:** Successfully validated the "Multi-Domain Registry Folder" pattern within the `03_Avatar` suite.
-- **Dissonance Resolved:** Previously, folder-to-subsystem mapping was often assumed to be 1:1 with a single Domain (e.g., all files in `03_Avatar` were expected to be `GVRN`).
-- **Pattern Established:** "Cohesive Domain Multiplexing." Multiple logical domains (GVRN, COMM, CORE) can coexist within a single functional directory to preserve component relationship locality while maintaining granular RNC ID precision.
-- **Axiomatic Alignment:** Adheres to **Law 07 (Principle of Locality)**: "Truth is most stable when its pieces can see one another."
+- **Dissonance Resolved:** Previously, folder-to-subsystem mapping was often assumed to be 1:1 with a single Domain
+  (e.g., all files in `03_Avatar` were expected to be `GVRN`).
+- **Pattern Established:** "Cohesive Domain Multiplexing." Multiple logical domains (GVRN, COMM, CORE) can coexist
+  within a single functional directory to preserve component relationship locality while maintaining granular RNC ID
+  precision.
+- **Axiomatic Alignment:** Adheres to **Law 07 (Principle of Locality)**: "Truth is most stable when its pieces can see
+  one another."
 
 ---
 
-### [2026-04-09] Axion Core Toolkit Synthesis (Unified Operations)
+### [2026-05-19] Model Context Protocol Configuration Alignment
 
-- **Synthesis:** Successfully audited and refactored fragmented toolsets (`forge/`, `lab/`) into a unified, modular `axion-core` architecture.
-- **Pattern Established:** "The Faraday Cage (Core-Centric Security)." Using a singleton `SecurityGuard` within the `forge.core` domain to gate all OS-kinetic operations, ensuring consistent validation and error handling.
-- **Pattern Established:** "Unified CLI Subcommand Mapping." Implementing a single entry point (`axion.py`) that uses lazy-loading and absolute domain imports to reduce dependency bloat while delivering a cohesive "Toolbox" experience.
-- **Dissonance Resolved:** Eliminated "Logic Mirroring" where individual tools re-implemented path resolution. Unified all tools under the OMEGA v15.0 resonance reporting standard.
-- **Axiomatic Alignment:** Adheres to **Law 09 (The Unitary Engine)**: "A thousand functions must speak with a single voice."
+- **Synthesis:** Successfully aligned and unified all six active MCP server configurations (`shadcn`, `synarche-filesystem`, `supabase-mcp-server`, `insforge`, `github-context`, `synarche-db`) between local `.agent/mcp_config.json`, global `.gemini/antigravity/mcp_config.json`, and local `.agent/mcp.yaml`.
+- **Dissonance Resolved:** Resolved the configuration drift between JSON-based VS Code/Desktop MCP configurations and YAML-based CLI or custom orchestrators.
+- **Pattern Established:** "Unified Configuration Integrity." Dual configuration layers (JSON/YAML) must be kept strictly isomorphic to avoid tool pathing and credential execution errors.
+- **Axiomatic Alignment:** Adheres to **Law 03 (Principle of Idempotency)**: "A sovereign action performed multiple times must yield the same result as a single action."
 
----
+### [2026-05-19] Mypy Sequence Type Inference Resolution
 
-### [2026-04-11] Weave & Realignment Synthesis (Workshop Entry Cycle)
-
-- **Synthesis:** Successfully performed a high-stakes "Workshop Entry" and code refactor under OMEGA v15.0 standards.
-- **Pattern Established:** "Modular Logic Partitioning (ZEM Purge)." Eradicating high cognitive complexity by decoupling logic into "Inert" (Data/Regex) and "Kinetic" (IO/API) modules.
-- **Pattern Established:** "Ritual State Transition (Gateway Protocol)." Using the Hephaestus-Cycle to frame architectural changes, ensuring dissonance is documented and resolved before code mutation.
-- **Dissonance Resolved:** Resolved "Cartographic Blindness" during initial workshop entry by prioritizing registry auditing over action.
-- **Axiomatic Alignment:** Adheres to **Law 42 (The Principle of Echoes)**: "What is learned in the Forge must resonate in the Soul."
-
-### [2026-04-12] Master Sovereign Registry & Vectorized Identity (v16.6)
-
-- **Synthesis:** Successfully transitioned the ecosystem to a mandatory 5-layer Vector Identity (`DOMAIN.TYPE.CLASS.SUBSYSTEM.DESCRIPTOR`) anchored in a centralized Master Registry.
-- **Dissonance Resolved:** Eliminated "ID Drift" where artifacts were referenced by inconsistent legacy or abbreviated names (e.g., `AOP-PGPS-001`).
-- **Pattern Established:** "Registry-Strict Governance." The `TranscludeEngine` now implements a mandatory membership check against the `GVRN.Registry.Master.json` ground truth. Non-canonized (unregistered) artifacts are prohibited from being forged in strict mode.
-- **Temporal Visibility:** Introduced Mermaid-based "Linkage Graphs" as standard documentation components to visualize the structural "Cognitive Spine" of the system.
-- **Axiomatic Alignment:** Adheres to **Law 01 (Principle of Sovereignty)**: "Nothing exists within the Forge that has not been explicitly named and registered in the Eye of the Law."
+- **Synthesis:** Resolved the static type check issue `"Sequence[str]" has no attribute "append"` in `refresh_registry.py:L51` by using explicitly annotated list assignments (`list[dict[str, Any]]`) rather than inlining list literals within dictionary definitions.
+- **Dissonance Resolved:** Prevented Mypy's type engine from making overly conservative immutable interface assumptions (`Sequence[T]`) during implicit generic dictionary value assignments.
+- **Pattern Established:** "Explicit Collection Scaffolding." High-fidelity type assertions require allocating dynamically populated lists into explicitly typed variables prior to nesting them inside untyped dict fields.
+- **Axiomatic Alignment:** Adheres to **Law 16 (Principle of Actionability)**: "Every interaction must fuel forward momentum, backed by strict semantic typing."
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v16.6 [SOVEREIGN] STATUS: CANONIZED TS: 2026-04-12 HASH: LRN-SHARD-OMEGA-XL-B`
+### **[GEM-020] [VERIFY SMART SPLICING] [INFRA]**
+
+**Timestamp**: 2026-05-28T21:50:45 **Oracle**: OGLN Artificer-Agent **Domain**: CORE (Self-Improvement Loop)
+
+#### **The Catalyst (Dissonance)**
+
+Alchemical verification of smart splicing logic using .NET file APIs
+
+#### **The Synthesis (Resolution)**
+
+- **Session Learning Sync**: Captured during task execution with priority 'medium'.
+- **Suggested Action**: Evaluate and promote to CLAUDE.md if applicable.
+
+#### **The Transcendence (Insight)**
+
+> "Verify smart splicing"
+
+**[STATUS: ACTIVE] [XP: +250]**
+
+---
+
+### **[GEM-023] [TAG NESTING SANITY & RESPONSIVE MODALS] [UI-UX]**
+
+**Timestamp**: 2026-06-12T17:34:40 **Oracle**: OGLN Artificer-Agent **Domain**: GAME (UI & DOM Structure)
+
+#### **The Catalyst (Dissonance)**
+
+Weapon Mods, Amplify (Prestige), and Telemetry panels paused the game but failed to display on-screen due to an unclosed `div#skill-matrix-modal` tag that nested subsequent overlays inside a hidden container. In addition, modals clipped off-screen on short viewports.
+
+#### **The Synthesis (Resolution)**
+
+- **DOM Path Validation**: Implemented custom tag checking scripts to dynamically trace tag hierarchy up to the document body, revealing the hidden container nesting.
+- **Nesting Correction**: Inserted the missing closing `</div>` tag at line 904 of `index.html` to establish proper sibling status.
+- **Responsive Flex Viewports**: Configured `.modal-base` in `input.css` with `items-start`, `overflow-y-auto`, and `py-8` to ensure scrollability on laptop-sized windows, alongside `max-w-[95vw]` to prevent horizontal overflow.
+
+#### **The Transcendence (Insight)**
+
+> "A single unclosed tag can corrupt the layout gravity of an entire application. Programmatic tag verification and responsive scroll wrappers are mandatory safeguards for high-fidelity UI overlays."
+
+**[STATUS: CANONIZED] [XP: +500]**
+
+---
+
+`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v16.5 [SOVEREIGN] STATUS: CANONIZED TS: 2026-06-12 HASH: LRN-SHARD-OMEGA-XL-SYNC`
 
 - [[GVRN.Learning.Index]]
->>>>>>> Stashed changes

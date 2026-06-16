@@ -1,5 +1,5 @@
 """Test for Fused Cognitive Runtime (Axion OMEGA).
-Verifies that AxionCognition, AdaptiveRetriever, and ExplanationGenerator 
+Verifies that AxionCognition, AdaptiveRetriever, and ExplanationGenerator
 work together and influence RPG stats.
 """
 
@@ -21,12 +21,12 @@ from logic.utils.explanation_generator import ExplanationGenerator
 
 def test_cognitive_fusion():
     print(">>> TESTING COGNITIVE FUSION...")
-    
+
     # 1. Initialize Components
     cognition = AxionCognition()
     AdaptiveRetriever(cognition_engine=cognition)
     ExplanationGenerator()
-    
+
     # 2. Setup Initial State
     initial_state = {
         "input": "How does the Phoenix Protocol align with OMEGA?",
@@ -70,24 +70,27 @@ def test_cognitive_fusion():
         },
         "transmutation_log": [],
     }
-    
+
     # 3. Step 1: node_retrieve_context
     print("\n--- [STEP 1] node_retrieve_context ---")
     state = node_retrieve_context(initial_state)
-    
+
     print(f"Narrative Context Snippet: {state['narrative_context'][:100]}...")
-    
+
     # 4. Step 2: node_update_rpg_stats
     print("\n--- [STEP 2] node_update_rpg_stats ---")
-    pre_xp = state['rpg_stats']['xp']
-    pre_coherence = state['rpg_stats']['coherence_index']
-    
+    pre_xp = state["rpg_stats"]["xp"]
+    pre_coherence = state["rpg_stats"]["coherence_index"]
+
     state = node_update_rpg_stats(state)
-    
+
     print(f"XP Gained: {state['rpg_stats']['xp'] - pre_xp}")
-    print(f"Coherence Index Delta: {state['rpg_stats']['coherence_index'] - pre_coherence}")
-    
+    print(
+        f"Coherence Index Delta: {state['rpg_stats']['coherence_index'] - pre_coherence}"
+    )
+
     print("\n>>> COGNITIVE FUSION TEST PASSED!")
+
 
 if __name__ == "__main__":
     test_cognitive_fusion()

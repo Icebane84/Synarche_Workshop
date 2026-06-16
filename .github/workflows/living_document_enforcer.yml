@@ -1,0 +1,43 @@
+name: PHOENIX Synarche Enforcer
+
+on:
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  validate-living-document:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (For API Docs)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Python (For Schema Docs)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Execute the generator scripts
+      - name: Generate API Routes
+        run: node generate_api_docs.js
+
+      - name: Generate Database Schema
+        run: python generate_schema_docs.py
+
+      # The Integrity Check: Fail if there are uncommitted changes
+      - name: Verify Documentation Synchronization
+        run: |
+          if [[ -n $(git status --porcelain "Living Document/Living Document (Soul).md") ]]; then
+            echo "[PHOENIX ERROR] Documentation Drift Detected!"
+            echo "The Living Document does not match the current codebase."
+            echo "Please run the generator scripts locally and commit the updated document."
+            git diff
+            exit 1
+          else
+            echo "[PHOENIX SUCCESS] Systemic Integrity Verified."
+          fi

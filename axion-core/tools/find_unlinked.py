@@ -1,5 +1,17 @@
 """
-# TOOL-HPRI-004: The Link Scanner (Priestess's Insight)
+artifact_anchor:
+  id: INFR.FIND_UNLINKED.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-HPRI-004: The Link Scanner (Priestess's Insight).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -48,58 +60,44 @@ GVRN-SYNERGY-001, GOVERNS, This tool is governed by the Workshop Synergy.
 | `⚡ EXECUTE: MAP_VOID` | List All Missing Links | Connection Discovery |
 """
 
+import argparse
 import logging
 import os
-import re
 
 # Configure Logging
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
-DOCS_DIR = r"c:\Users\Chris\_Desktop_Vault\dev\rosetta-stone_-the-phoenix-protocol-(cast)\docs"
-TARGETS = ["UMB-OSLM-001", "CODEX-001"]
 
-
-def scan_file(filepath: str, filename: str) -> None:
+def scan_file(filepath: str, filename: str, targets: list[str]) -> None:
     with open(filepath, encoding="utf-8") as f:
         content = f.read()
 
     # Split by lines to give line numbers
     lines = content.split("\n")
     for i, line in enumerate(lines):
-        for target in TARGETS:
+        for target in targets:
             if target in line:
-                # Naive check: does this line have the target inside a link?
-                # We look for [ ... target ... ] or ( ... target ... ) which might be part of a link.
-                # But typically we want: [Title](...ID...) OR [ID](...file...)
-
-                # If we see `[ ... ]( ... )` containing our target, it's likely linked.
-                # If we see the target purely as text, it's a candidate.
-
-                # Let's count occurrences of target
-                # Then count occurrences of target inside `[ ... ]` or `( ... )`?
-                # This is hard with regex.
-
-                # Heuristic: If we find target, check if it's NOT followed by `(` (if it was the link text `[ID]`)
-                # OR preceded by `](` (if it was the file path).
-
-                # Actually, simpler:
-                # Let's just print all matches in context for visual filtering by the agent.
                 logger.info(f"{filename}:{i + 1}: {line.strip()}")
 
 
-def main() -> None:
-    logger.info(f"Scanning for {TARGETS}...")
-    if not os.path.exists(DOCS_DIR):
-        logger.error(f"Docs directory not found: {DOCS_DIR}")
+def main(docs_dir: str, targets: list[str]) -> None:
+    logger.info(f"Scanning for {targets}...")
+    if not os.path.exists(docs_dir):
+        logger.error(f"Docs directory not found: {docs_dir}")
         return
 
-    files = [f for f in os.listdir(DOCS_DIR) if f.endswith(".md")]
+    files = [f for f in os.listdir(docs_dir) if f.endswith(".md")]
     for f in files:
         if f.startswith("UMB-OSLM-001"):
             continue  # Skip registry itself searching for itself
-        scan_file(os.path.join(DOCS_DIR, f), f)
+        scan_file(os.path.join(docs_dir, f), f, targets)
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Scanner for unlinked targets in Markdown files.")
+    parser.add_argument("--docs-dir", required=True, help="Path to the documentation directory.")
+    parser.add_argument("--targets", nargs="+", required=True, help="List of target strings/IDs to search for.")
+    args = parser.parse_args()
+
+    main(args.docs_dir, args.targets)

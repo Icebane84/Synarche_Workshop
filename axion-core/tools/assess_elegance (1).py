@@ -1,6 +1,18 @@
-#!/usr/bin/env python3
 """
-# TOOL-AES-001: Algorithmic Elegance Assessor (Sentinel Suite)
+artifact_anchor:
+  id: INFR.ASSESS_ELEGANCE_1.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+#!/usr/bin/env python3
+"""# TOOL-AES-001: Algorithmic Elegance Assessor (Sentinel Suite).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -36,7 +48,6 @@ METRIC-AES-001, DEFINES, Implements the AES-ALGO metric.
 
 import argparse
 import os
-import sys
 
 
 def assess_file(filepath: str) -> None:
@@ -45,14 +56,16 @@ def assess_file(filepath: str) -> None:
     try:
         with open(filepath, "r", encoding="utf-8") as f:
             lines = f.readlines()
-            content = "".join(lines)
+            "".join(lines)
     except Exception as e:
         print(f"[ERROR] Could not read file: {e}")
         return
 
     # 1. Metric: Conciseness (LOC check)
     # Filter empty lines and comments for "Code Density"
-    code_lines = [l.strip() for l in lines if l.strip() and not l.strip().startswith("#")]
+    code_lines = [
+        l.strip() for l in lines if l.strip() and not l.strip().startswith("#")
+    ]
     total_loc = len(code_lines)
 
     if total_loc == 0:

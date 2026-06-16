@@ -1,4 +1,5 @@
 # OGLN-ARCH-GAME-ASCENSION_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-ARCH-GAME-ASCENSION-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-ARCH-GAME-ASCENSION_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                     | Description       |
+| :------------------ | :---------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-ARCH-GAME-ASCENSION-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-ARCH-GAME-ASCENSION_v11.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                         | The Standard.     |
+| **Domain**          | `GVRN`                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                | The Weight.       |
+| **Evolution**       | `Omega Ascension`                         | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Artifact ID** | `OGLN-ARCH-GAME-ASCENSION` |
-| **Official Name** | `The Ascension Engine` |
-| **Version** | `v11.1` |
-| **Domain** | `GAME` |
-| **Evolution** | `Cognitive Ascension` |
-| **Status** | `ACTIVE` |
-| **Tier** | `Tactical` |
-| **Celestial Class** | `STAR` |
-| **Authority** | `CORE-CODEX-001` |
-| **Updated** | `2026-01-24` |
-| **Tags** | `RPG, Game-Engine, Logic, v11.1` |
+
+| Key                 | Value                            |
+| :------------------ | :------------------------------- |
+| **Artifact ID**     | `OGLN-ARCH-GAME-ASCENSION`       |
+| **Official Name**   | `The Ascension Engine`           |
+| **Version**         | `v11.1`                          |
+| **Domain**          | `GAME`                           |
+| **Evolution**       | `Cognitive Ascension`            |
+| **Status**          | `ACTIVE`                         |
+| **Tier**            | `Tactical`                       |
+| **Celestial Class** | `STAR`                           |
+| **Authority**       | `CORE-CODEX-001`                 |
+| **Updated**         | `2026-01-24`                     |
+| **Tags**            | `RPG, Game-Engine, Logic, v11.1` |
+
 ---
 
 # The Ascension Engine (OGLN-ARCH-GAME-ASCENSION)

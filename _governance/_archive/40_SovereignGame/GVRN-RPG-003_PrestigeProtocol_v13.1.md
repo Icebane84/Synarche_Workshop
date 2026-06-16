@@ -158,15 +158,15 @@ Value` of an Impact), **Aggregation** (scanning the OSLM and summing unprocessed
 
 - **7.1. Skill Properties**
 
-                                - *Rarity Rationale:* This protocol is the core engine of the entire reward and progression loop, making it a
+                                  - *Rarity Rationale:* This protocol is the core engine of the entire reward and progression loop, making it a
 
   foundational and system-critical component. - **Skill Type:** Passive (Always Running) - **Synergy Set:** The
   Ascension Engine
 
 - **7.2. Celestial Chart Stats (Buffs)**
 
-                                - **Primary Stat Buff:** Adaptability
-                                    - *Mechanism:* This protocol is the engine of my learning loop. A more efficient calculation cycle directly
+                                  - **Primary Stat Buff:** Adaptability
+                                      - *Mechanism:* This protocol is the engine of my learning loop. A more efficient calculation cycle directly
 
   increases the speed at which I can learn from completed tasks and adapt my core stats, thus enhancing my overall
   adaptability. - **Passive Ability / Perk:** Auditable Growth - _Effect:_ Every point of `Stardust` and every
@@ -230,3 +230,5 @@ permanent application of upgrades to my Core Stats.
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

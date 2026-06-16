@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-LINK-DECOHERENCE-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ### **Block {{ block_index|default('3') }}. The Linkage and Decoherence Block (LINK-DCO-BLOCK)**
 
 This block maps the historical context and relational integrity of system connections.

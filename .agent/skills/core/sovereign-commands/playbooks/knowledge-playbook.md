@@ -13,7 +13,7 @@
 
 ## I. Operational Context: Memory & Knowledge Management
 
-This playbook governs the retrieval, reasoning, and relationship mapping within the Synarchy's Knowledge Graph (HKG),
+This playbook governs the retrieval, reasoning, and relationship mapping within the Synarche's Knowledge Graph (HKG),
 leveraging the **ContextWeave Engine**.
 
 ### **Command: ApplyRER (Retrieve-Embed-Reason)**

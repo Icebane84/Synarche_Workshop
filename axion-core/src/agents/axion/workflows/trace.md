@@ -1,3 +1,29 @@
+---
+artifact_anchor:
+  id: CORE.TRACE.001
+  version: v15.0 [OMEGA]
+  provenance: "2026-05-27"
+  domain: CORE
+  celestial_class: STAR
+  tier: GOVERNANCE
+  state: ACTIVE
+  ethos: SOVEREIGN_GOVERNANCE_COMPONENT
+  relations: []
+---
+
+---
+
+# Universal Identification & Provenance (UIP)
+
+| Key           | Value                   |
+| :------------ | :---------------------- |
+| **Module ID** | `TRACE`                 |
+| **Version**   | `v11.0`                 |
+| **Evolution** | **Cognitive Ascension** |
+| **Status**    | `ACTIVE`                |
+
+---
+
 # trace.md
 
 ## **Block A: The Identification Lock (UIP-V15)**

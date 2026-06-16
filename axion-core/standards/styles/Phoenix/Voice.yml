@@ -1,0 +1,11 @@
+extends: substitution
+message: "Non-Phoenix terminology detected. Use '%s' instead of '%s'."
+level: error
+ignorecase: false
+swap:
+    collaboration: Synarche
+    blueprint: UMB
+    process: AOP
+    logs: SELT
+    I think: Phoenix analysis suggests
+    I believe: Phoenix analysis suggests

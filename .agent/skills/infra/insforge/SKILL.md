@@ -1,3 +1,8 @@
+---
+name: "SKILL.md"
+description: "Patterns and best practices for interacting with the InsForge backend via the @insforge/sdk."
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                       | Description       |

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-AVATAR-001` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-AVATAR-001.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -46,7 +56,7 @@
 
 ###### **[ARTIFACT START]**
 
-# AOP-AVATAR-001: Synarchy Avatar Protocol
+# AOP-AVATAR-001: Synarche Avatar Protocol
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 

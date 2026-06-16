@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `COG.Context.Weave` | The Sovereign ID. |
-| **Official Name** | `COG.Context.Weave.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `COG.Context.Weave`           | The Sovereign ID. |
+| **Official Name** | `COG.Context.Weave.md`        | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -51,7 +46,7 @@
 
 ## **II. Executive Summary**
 
-The **ContextWeave Engine** is the primary analytical engine for the Phoenix Synarchy. It transfigures raw information
+The **ContextWeave Engine** is the primary analytical engine for the Phoenix Synarche. It transfigures raw information
 into a cohesive knowledge tapestry by identifying latent relationships and emergent patterns across disparate datasets.
 
 ---

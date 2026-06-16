@@ -6,19 +6,18 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 if current_dir not in sys.path:
     sys.path.insert(0, current_dir)
 
-from synarchy_bridge import SynarchyRegistry
+from Synarche_bridge import SynarcheRegistry
 
 
 def display_menu(menu_options):
     """Displays a menu of options and prompts the user to choose."""
-
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
+    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
+    # System Slot: Passive Knowledge
+    # Synergy Set: N/A
+    # Primary Stat Buff: Adaptability
+    # Passive Ability: The Forge's Heart (Auto-Refactor)
+    # Cognitive Load Cost: Low
+    # XP Award Value: 50 XP
 
     print("\n--- Menu ---")
     for i, option in enumerate(menu_options):
@@ -44,9 +43,7 @@ def search_commands(search_term, registry):
 
 
 def browse_recursively(node):
-    """
-    Recursively browses a node in the library.
-    """
+    """Recursively browses a node in the library."""
     # If list, it's a list of commands
     if isinstance(node, list):
         print("\n--- Commands ---")
@@ -88,7 +85,7 @@ def navigate_library(registry):
         choice = display_menu(main_menu_options)
 
         if choice.lower() == "exit":
-            print("Exiting Synarchy Navigator.")
+            print("Exiting Synarche Navigator.")
             break
 
         if choice.lower() == "search command library":
@@ -108,7 +105,10 @@ def navigate_library(registry):
             if category_index < 0:
                 raise IndexError
             selected_category = main_menu_options[category_index]
-            if selected_category == "Search Command Library" or selected_category == "Exit":
+            if (
+                selected_category == "Search Command Library"
+                or selected_category == "Exit"
+            ):
                 continue
 
             browse_recursively(library[selected_category])
@@ -117,8 +117,8 @@ def navigate_library(registry):
 
 
 def main():
-    print("Initializing Synarchy Command Navigator...")
-    bridge = SynarchyRegistry()
+    print("Initializing Synarche Command Navigator...")
+    bridge = SynarcheRegistry()
     print("Registry Loaded.")
     navigate_library(bridge)
 

@@ -10,7 +10,12 @@ sys.path.append(str(Path(__file__).parents[1] / "src"))
 try:
     from agents.axion.config import AxionConfig
     from agents.axion.runtime import AxionRuntime
-    from agents.axion.schemas import AxionState, GamemasterState, LightbinderState, RPGEngine
+    from agents.axion.schemas import (
+        AxionState,
+        GamemasterState,
+        LightbinderState,
+        RPGEngine,
+    )
 except ImportError:
     # Fallback for different environments
     sys.path.append(str(Path(__file__).parents[1] / "src" / "agents"))
@@ -157,7 +162,9 @@ async def test_sentinel_gate_pass(runtime, base_state):
 
 @pytest.mark.asyncio
 async def test_sentinel_gate_fail(runtime, base_state):
-    state = base_state.model_copy(update={"sentinel_status": "FAIL", "sentinel_reason": "Violation"})
+    state = base_state.model_copy(
+        update={"sentinel_status": "FAIL", "sentinel_reason": "Violation"}
+    )
     # Need to check against langgraph.graph.END, but it's a string constant usually
     route = await runtime.sentinel_gate(state)
     from langgraph.graph import END

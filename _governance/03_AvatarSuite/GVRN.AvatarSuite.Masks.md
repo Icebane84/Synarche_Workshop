@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.AVATARSUITE.MASKS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # **📜 GVRN.AvatarSuite.Masks: The Persona Shard Matrix (v15.0)**
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -55,6 +65,4 @@ This registry defines the **Sovereign Masks** available for agentic manifestatio
 
 ---
 
-**[OMNI-ARTIFACT-ANCHOR]** **ID:** GVRN.AvatarSuite.Masks **VER:** v15.0 [OMEGA] **STATUS:** ACTIVE **TS:** 2026-03-25
-
-###### **[ARTIFACT END]**
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

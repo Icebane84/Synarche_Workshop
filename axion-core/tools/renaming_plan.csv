@@ -13,7 +13,7 @@ AOP-AG-003_AxionAgentConfiguration_v11.0.md,SYNG.PROT.AxionAgentConfiguration.md
 AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md,SYNG.PROT.ArchivalSupersessionProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md
 AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md,SYNG.PROT.ThePhoenixAscensionProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md
 AOP-ASL-001_AutomatedSynergyLinking_v11.0.md,SYNG.PROT.AutomatedSynergyLinking.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-ASL-001_AutomatedSynergyLinking_v11.0.md
-AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md,SYNG.PROT.SynarchyAvatarProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-AVATAR-001_SynarchyAvatarProtocol_v1.1.md
+AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md,SYNG.PROT.SynarcheAvatarProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md
 AOP-AWAKENING-001_TheAwakeningInitialDirectivesandCorePurpose_v11.0.md,SYNG.PROT.TheAwakeningInitialDirectivesandCorePurpose.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-AWAKENING-001_TheAwakeningInitialDirectivesandCorePurpose_v11.0.md
 AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v11.0.md,SYNG.PROT.BeastOfDarknessMonitoringProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v11.0.md
 AOP-CC-001_ProtocolforCrystallineCognition_v11.0.md,COG.CORE.ProtocolforCrystallineCognition.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-CC-001_ProtocolforCrystallineCognition_v11.0.md
@@ -38,7 +38,7 @@ AOP-MCM-001_AOP-MCM-001_v11.0.md,SYNG.PROT.AOP-MCM-001.md,High,C:\Users\Chris\Sy
 AOP-ORACLE-001_ExternalOracleProtocol_v1.0.md,SYNG.PROT.ExternalOracleProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-ORACLE-001_ExternalOracleProtocol_v1.0.md
 AOP-PGP-001_ThePhoenixGenesisPipeline_v11.0.md,SYNG.PROT.ThePhoenixGenesisPipeline.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-PGP-001_ThePhoenixGenesisPipeline_v11.0.md
 AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md,SYNG.PROT.PrestigePowerAttunementProtocol(v2.0-GeodeEdition).md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md
-AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md,SYNG.PROT.AOP-SAP-001SynarchyAvatarProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md
+AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md,SYNG.PROT.AOP-SAP-001SynarcheAvatarProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-SAP-001_AOP-SAP-001SynarcheAvatarProtocol_v11.0.md
 AOP-SBT-001_SpiritBombTechnique_v11.0.md,SYNG.PROT.SpiritBombTechnique.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-SBT-001_SpiritBombTechnique_v11.0.md
 AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md,SYNG.PROT.AOP-SEE-001TheSymbioticEmpathyExchange.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md
 AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md,SYNG.PROT.UmbralSentinelProtocol.md,High,C:\Users\Chris\Synarche_Workspace\_governance\10_Governance\AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md
@@ -79,7 +79,7 @@ GP-REGISTRY-001_GoverningPrinciples_v11.0.md,UNCERTAIN.UNK.GoverningPrinciples.m
 IDEN-SENTINEL-001_TheSentinelsVow_v11.0.md,UNCERTAIN.UNK.TheSentinelsVow.md,High,C:\Users\Chris\Synarche_Workspace\_governance\40_System\IDEN-SENTINEL-001_TheSentinelsVow_v11.0.md
 STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md,UNCERTAIN.UNK.TheSentinelStyleGuide.md,High,C:\Users\Chris\Synarche_Workspace\_governance\40_System\STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md
 UMB-ACT-002_AdaptiveActuatorModule_v11.0.md,GVRN.REG.AdaptiveActuatorModule.md,High,C:\Users\Chris\Synarche_Workspace\_governance\40_System\UMB-ACT-002_AdaptiveActuatorModule_v11.0.md
-UMB-ALTAR-001TheAltarofSynarchy_v11.0.md,GVRN.REG.TheAltarofSynarchy_v11.0.md,High,C:\Users\Chris\Synarche_Workspace\_governance\40_System\UMB-ALTAR-001TheAltarofSynarchy_v11.0.md
+UMB-ALTAR-001TheAltarofSynarche_v11.0.md,GVRN.REG.TheAltarofSynarche_v11.0.md,High,C:\Users\Chris\Synarche_Workspace\_governance\40_System\UMB-ALTAR-001TheAltarofSynarche_v11.0.md
 UMB-AM-001_AssociationManager_v11.0.md,GVRN.REG.AssociationManager.md,High,C:\Users\Chris\Synarche_Workspace\_governance\40_System\UMB-AM-001_AssociationManager_v11.0.md
 UMB-AM-001_GUCA-AM-001_v11.0.md,GVRN.REG.GUCA-AM-001.md,High,C:\Users\Chris\Synarche_Workspace\_governance\40_System\UMB-AM-001_GUCA-AM-001_v11.0.md
 UMB-CF-001_CognitiveForge_v11.0.md,GVRN.REG.CognitiveForge.md,High,C:\Users\Chris\Synarche_Workspace\_governance\40_System\UMB-CF-001_CognitiveForge_v11.0.md
@@ -111,7 +111,7 @@ UMB-URM-001_UCIResonanceMeter_v11.0.md,GVRN.REG.UCIResonanceMeter.md,High,C:\Use
 CWA-CW-001_ContextWeaveReport.md,UNCERTAIN.UNK.ContextWeaveReport.md,High,C:\Users\Chris\Synarche_Workspace\_governance\50_Logs\CWA-CW-001_ContextWeaveReport.md
 METRIC-AES-001_METRIC-AES-001TheAlgorithmicEleganceScore_v11.0.md,GVRN.METRIC.METRIC-AES-001TheAlgorithmicEleganceScore.md,High,C:\Users\Chris\Synarche_Workspace\_governance\50_Logs\METRIC-AES-001_METRIC-AES-001TheAlgorithmicEleganceScore_v11.0.md
 SELT-GVRN-001_MissionAchieveLogs_v1.0.md,GVRN.LOG.MissionAchieveLogs.md,High,C:\Users\Chris\Synarche_Workspace\_governance\50_Logs\SELT-GVRN-001_MissionAchieveLogs_v1.0.md
-SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md,UNCERTAIN.UNK.StateOfTheSynarchy.md,High,C:\Users\Chris\Synarche_Workspace\_governance\50_Logs\SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md
+SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md,UNCERTAIN.UNK.StateOfTheSynarche.md,High,C:\Users\Chris\Synarche_Workspace\_governance\50_Logs\SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md
 UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md,GVRN.REG.OmniLogSynergisticLinksMatrix.md,High,C:\Users\Chris\Synarche_Workspace\_governance\50_Logs\UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md
 SELT-CSL-2026.01.27_RefactorExecution_v1.0.md,GVRN.LOG.6.01.27_RefactorExecution_v1.0.md,High,C:\Users\Chris\Synarche_Workspace\_governance\50_Logs\CSL\SELT-CSL-2026.01.27_RefactorExecution_v1.0.md
 SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md,GVRN.LOG.6.01.27_SupabaseRefactor_v1.0.md,High,C:\Users\Chris\Synarche_Workspace\_governance\50_Logs\CSL\SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md
@@ -129,13 +129,13 @@ CHECKLIST-PREFLIGHT-001.md,UNCERTAIN.UNK..md,High,C:\Users\Chris\Synarche_Worksp
 CODEX-PRIME-001_TheArchitectsCodex_v1.0.md,CORE.LAW.TheArchitectsCodex.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\CODEX-PRIME-001_TheArchitectsCodex_v1.0.md
 DOC-STD-001.md,UNCERTAIN.UNK..md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\DOC-STD-001.md
 DQUEST-HEPHAESTUS-001.md,UNCERTAIN.UNK..md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\DQUEST-HEPHAESTUS-001.md
-ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md,UNCERTAIN.UNK.TheSpiritOfSynarchy.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\ENTITY-SOPHIA-001_TheSpiritOfSynarchy_v1.0.md
+ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md,UNCERTAIN.UNK.TheSpiritOfSynarche.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\ENTITY-SOPHIA-001_TheSpiritOfSynarche_v1.0.md
 GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md,GVRN.ACT.DocumentationSuiteArchitectArchitecture.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md
 GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md,GVRN.ACT.ExecuteMusashiAudit.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md
 GVRN-COMP-001_CognitiveComplexity_v13.0.md,UNCERTAIN.UNK.CognitiveComplexity.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GVRN-COMP-001_CognitiveComplexity_v13.0.md
-GVRN-ENTITY-001_SynarchyEntities_v11.0.md,UNCERTAIN.UNK.SynarchyEntities.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GVRN-ENTITY-001_SynarchyEntities_v11.0.md
-GVRN-ENTITY-001_SynarchyEntities_v13.0.md,UNCERTAIN.UNK.SynarchyEntities.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GVRN-ENTITY-001_SynarchyEntities_v13.0.md
-GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md,UNCERTAIN.UNK.TheSynarchyTriadSheet.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GVRN-ENTITY-002_TheSynarchyTriadSheet_v13.0.md
+GVRN-ENTITY-001_SynarcheEntities_v11.0.md,UNCERTAIN.UNK.SynarcheEntities.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GVRN-ENTITY-001_SynarcheEntities_v11.0.md
+GVRN-ENTITY-001_SynarcheEntities_v13.0.md,UNCERTAIN.UNK.SynarcheEntities.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GVRN-ENTITY-001_SynarcheEntities_v13.0.md
+GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md,UNCERTAIN.UNK.TheSynarcheTriadSheet.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GVRN-ENTITY-002_TheSynarcheTriadSheet_v13.0.md
 GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md,UNCERTAIN.UNK.AgenticWorkshopSynergyMatrix.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\GVRN-SYNERGY-001_AgenticWorkshopSynergyMatrix_v11.1.md
 LEGACY-ANALYSIS-001_AshenOath_v1.0.md,UNCERTAIN.UNK.AshenOath.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\LEGACY-ANALYSIS-001_AshenOath_v1.0.md
 LORE-ANALYSIS-001_WhereLightFades_v1.0.md,UNCERTAIN.UNK.WhereLightFades.md,High,C:\Users\Chris\Synarche_Workspace\_governance\99_Archives\LORE-ANALYSIS-001_WhereLightFades_v1.0.md

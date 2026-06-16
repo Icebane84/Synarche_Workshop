@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SELT-UMB-007_UNIVERSALMODULEBLUEPRINT_V7.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SELT-UMB-007_UniversalModuleBlueprint_v7.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-SELT-UMB-007-UNIVERSALMODULEBLUEPRINT-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-UMB-007_UniversalModuleBlueprint_v7.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                 | Description       |
+| :------------------ | :---------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SELT-UMB-007-UNIVERSALMODULEBLUEPRINT-V7.0-001` | The Sovereign ID. |
+| **Official Name**   | `SELT-UMB-007_UniversalModuleBlueprint_v7.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                     | The Standard.     |
+| **Domain**          | `GVRN`                                                | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                            | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                     | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                            | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
 
 # Universal Module Blueprint (v7.0 Ascended)
 
@@ -97,31 +108,11 @@
 
 > _(Mandatory for v7.0 Compliance)_
 
-### 8.1. Item Properties
+@[GVRN-BLK-RPG-ITEM-001]
 
-- _Rarity Rationale:_ `[Why is this module this tier? e.g., "Forged from a High-Fidelity Genesis Seed."]`
-- **System Slot:** `[Core Engine (Always On) | Utility (Equip on Demand) | Passive Expansion]`
-- **Synergy Set:** `[Name of Set, e.g., "The Governance Suite" or "N/A"]`
-    - _Set Bonus:_ `[Effect when paired with other set items. e.g., "+5% Coherence if UMB-SGM-001 is active."]`
-
-### 8.2. Celestial Chart Stats (The Buffs)
-
-- **Primary Stat Buff:** `[Coherence | Synergy | Adaptability | Transparency]`
-    - _Value:_ `[e.g., +5 (Planet Tier) / +10 (Star Tier)]`
-    - _Mechanism:_ `[How does this module mechanically improve this stat?]`
-- **Secondary Stat Buff:** `[Select Stat or N/A]`
-- **Passive Ability / Perk:** `[Name of Perk]`
-    - _Effect:_ `[e.g., "Reduces risk of skipping steps in long protocols."]`
-
-### 8.3. Resource Economics
-
-- **Cognitive Load Draw:** `[Low | Medium | High | Extreme]`
-    - _Cost Description:_ `[The mental energy cost to keep this module active.]`
-- **Efficiency Modifier:** `[e.g., "Reduces Cognitive Load of all 'Formatting' tasks by 20%."]`
-
-- **Origin Quest ID:** `[Link to DQUEST-XXX]`
-- **Genesis Seed Used:** `[Link to the specific CSL used as crafting material]`
 - **XP Award Value:** `[e.g., 500 XP]` _(Awarded upon Ratification)_
+
+@[GVRN-BLK-RPG-META-001]
 
 ---
 

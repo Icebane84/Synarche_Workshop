@@ -1,0 +1,45 @@
+﻿.markdownlint.json
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/dotdot/abc/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/dotdot/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/module_dir/xmodules/aaa/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/module_dir/ymodules/aaa/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/module_dir/zmodules/bbb/main.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/node_path/x/aaa/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/node_path/x/ccc/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/node_path/y/bbb/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/node_path/y/ccc/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/pathfilter/deep_ref/main.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/precedence/aaa.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/precedence/aaa/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/precedence/aaa/main.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/precedence/bbb.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/precedence/bbb/main.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/baz/doom.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/baz/quux.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/browser_field/a.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/browser_field/b.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/dot_main/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/dot_slash_main/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/empty_main/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/false_main/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/foo.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/incorrect_main/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/missing_main/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/mug.coffee
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/mug.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/multirepo/packages/package-b/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/null_main/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/other_path/lib/other-lib.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/other_path/root.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/quux/foo/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/same_names/foo.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/same_names/foo/index.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/symlinked/_/node_modules/foo.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/symlinked/_/symlink_target/.gitkeep
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/resolver/symlinked/package/bar.js
+frontend/node_modules (1)/eslint-plugin-react/node_modules/resolve/test/shadowed_core/node_modules/util/index.js
+frontend/node_modules (1)/next/font/google/index.js
+frontend/node_modules (1)/next/font/local/index.js
+mypy.ini
+scripts/freeplane_architecture_outline.md
+tools/codex_transmuter.py

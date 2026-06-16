@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `GVRN.REGISTRY.GENESISSEEDS` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                  | Description       |
@@ -24,7 +34,7 @@
 
 > _"Fact > Fiction"_ **Principle**: Zero tolerance for hallucinations. Every claim must trace to a documented origin.
 
-### 🌱 `UEB-SYN-001` — **The Synarchy**
+### 🌱 `UEB-SYN-001` — **The Synarche**
 
 > _"1 + 1 = 3"_ **Principle**: Value emerges _between_ nodes. The answer is the emergent product of the entire pipeline.
 

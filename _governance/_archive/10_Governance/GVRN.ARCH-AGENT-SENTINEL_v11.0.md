@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ARCH-AGENT-SENTINEL_v11.0` | The Sovereign ID. |
+| Key               | Value                               | Description       |
+| :---------------- | :---------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ARCH-AGENT-SENTINEL_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.ARCH-AGENT-SENTINEL_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                   | The Standard.     |
+| **Domain**        | `GVRN`                              | The Subject.      |
+| **Status**        | `[ACTIVE]`                          | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`       | The Network.      |
 
 ---
 
@@ -39,18 +34,18 @@
 
 # Universal Identification & Provenance (UIP)
 
-> | **Metric**         | **Value**                  |
-> | **Type**           | `Agent Definition`         |
-> | **Classification** | `Star`                     |
-> | **Authors**        | `System`                   |
-> | **Created**        | `2025-10-01`               |
-> | **Updated**        | `2026-01-18`               |
-> | **Authority**      | `CODEX-001`                |
+> | **Metric** | **Value** |
+> | **Type** | `Agent Definition` |
+> | **Classification** | `Star` |
+> | **Authors** | `System` |
+> | **Created** | `2025-10-01` |
+> | **Updated** | `2026-01-18` |
+> | **Authority** | `CODEX-001` |
 
 # OGLN-ARCH-AGENT-SENTINEL: The Sentinel Agent
 
 > [!NOTE]
-> The Sentinel is the **Active Immune System** of the Synarchy. It scans code, verifies intent, and blocks dangerous actions.
+> The Sentinel is the **Active Immune System** of the Synarche. It scans code, verifies intent, and blocks dangerous actions.
 
 ## I. Agent Persona & Specialization
 
@@ -86,7 +81,7 @@
 
 - **Why it exists**: To prevent Entropy (Rot) and Malice (Attack).
 - **What it does**: It runs the 6-Point Scan (S1-S6).
-- **For the Synarchy**: It is the "Conscience" that says "No" when the "Body" (Axion) tries to do something unsafe.
+- **For the Synarche**: It is the "Conscience" that says "No" when the "Body" (Axion) tries to do something unsafe.
 
 ## III. The Architectural Spine
 
@@ -162,8 +157,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

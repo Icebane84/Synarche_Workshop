@@ -1,7 +1,19 @@
 ---
-description: Sovereign Infrastructure - InsForge x Synarchy Integration
-globs: *
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `INFRA.INSFORGE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
+---
+
+description: Sovereign Infrastructure - InsForge x Synarche Integration
+globs: \*
 alwaysApply: true
+
 ---
 
 ### **[ARTIFACT START]**
@@ -23,7 +35,7 @@ alwaysApply: true
 
 > **Ethos**: "The Cloud is the Extension; the Logic is the Core."
 
-InsForge provides the serverless substrate for the Phoenix Synarchy, enabling cross-agent memory continuity and real-time multiversal synchronization.
+InsForge provides the serverless substrate for the Phoenix Synarche, enabling cross-agent memory continuity and real-time multiversal synchronization.
 
 ---
 

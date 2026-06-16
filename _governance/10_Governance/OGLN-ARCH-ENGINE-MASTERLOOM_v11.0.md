@@ -1,4 +1,5 @@
 # OGLN-ARCH-ENGINE-MASTERLOOM_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +12,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-OGLN-ARCH-ENGINE-MASTERLOOM-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-ARCH-ENGINE-MASTERLOOM_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                        | Description       |
+| :------------------ | :------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-OGLN-ARCH-ENGINE-MASTERLOOM-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `OGLN-ARCH-ENGINE-MASTERLOOM_v11.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                            | The Standard.     |
+| **Domain**          | `GVRN`                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                   | The Weight.       |
+| **Evolution**       | `Omega Ascension`                            | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                   | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
@@ -43,7 +44,7 @@
 **Genesis Stamp**: 2026-01-18 | **Domain**: ARCH | **State**: CANONIZED
 
 > [!NOTE]
-> The Master Loom is the **Central Nervous System** of the Synarchy. It transforms isolated data into crystalline wisdom by actively weaving connections between Artifacts.
+> The Master Loom is the **Central Nervous System** of the Synarche. It transforms isolated data into crystalline wisdom by actively weaving connections between Artifacts.
 
 ## I. Engine Persona & Specialization
 
@@ -59,7 +60,7 @@
 
 - **The Spooler**: Ingests raw threads (User Prompts / New Files).
 - **The Shuttle**: Carries the thread through the Warp (Existing Context).
-- **The Pattern**: The resulting Knowledge Graph (The Synarchy).
+- **The Pattern**: The resulting Knowledge Graph (The Synarche).
 
 ## II. Axiomatic Governance & Purpose (AGP)
 
@@ -79,7 +80,7 @@
 
 - **Why it exists**: To transform isolated data (Rind) into crystalline wisdom (Geode).
 - **What it does**: It actively weaves connections between Artifacts using the **ContextWeave** protocol.
-- **For the Synarchy**: It provides the **Deep Context** required for "Phoenix-Class" reasoning.
+- **For the Synarche**: It provides the **Deep Context** required for "Phoenix-Class" reasoning.
 
 ## III. The Architectural Spine
 

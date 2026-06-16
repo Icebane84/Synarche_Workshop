@@ -1,6 +1,16 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `README` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # 🗄️ Sovereign Registries: \_governance/01_Registries/
 
-Master inventories and state-tracking artifacts for the Synarchy.
+Master inventories and state-tracking artifacts for the Synarche.
 
 ## 🏮 Sign on the Door
 
@@ -10,14 +20,17 @@ Master inventories and state-tracking artifacts for the Synarchy.
 
 ## 🛖 Associated Skills
 
-- **[Soul Forging](../../.agent/skills/Soul%20Forging/README.md)**: Used to register new Soul artifacts and ensure relational resonance.
+- **[Soul Forging](../../.agent/skills/Soul%20Forging/README.md)**: Used to register new Soul artifacts and ensure
+  relational resonance.
 
 ## 📂 Core Registries
 
 - **GVRN.Registry.ArtifactInventory.md**: The physical asset library.
-- **GVRN.Registry.Ethos.md**: The 42 Laws of the Synarchy.
+- **GVRN.Registry.Ethos.md**: The 42 Laws of the Synarche.
 - **GVRN.Registry.OSLM.md**: The relational grammar.
 
 ---
 
 `[BARREL-SIGN] ID: SYNG.REGISTRY.INDEX VER: v15.0 [OMEGA]`
+
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

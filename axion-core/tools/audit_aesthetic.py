@@ -1,6 +1,18 @@
-#!/usr/bin/env python3
 """
-# TOOL-AES-002: Luminous Coherence Aesthetic Auditor
+artifact_anchor:
+  id: INFR.AUDIT_AESTHETIC.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+#!/usr/bin/env python3
+"""# TOOL-AES-002: Luminous Coherence Aesthetic Auditor
 # Domain: ARCH | Tag: AES
 # Purpose: Audits UI/Config files for strict adherence to the Luminous Coherence "Sacred Canon" (METRIC-AES-002).
 # Differentiates from TOOL-AES-001 (Algorithmic Elegance) by focusing on Visual Design compliance.
@@ -9,7 +21,6 @@
 import argparse
 import os
 import re
-import sys
 
 # --- THE SACXHRED CANON (METRIC-AES-002) ---
 SACRED_COLORS = {
@@ -49,7 +60,7 @@ def audit_file(filepath):
 
     # 1. Color Audit
     # flattened list of sacred values
-    all_sacred_values = [val for sublist in SACRED_COLORS.values() for val in sublist]
+    [val for sublist in SACRED_COLORS.values() for val in sublist]
 
     # Find all colors in file
     found_hex = re.findall(HEX_REGEX, content)
@@ -61,7 +72,7 @@ def audit_file(filepath):
         norm_color = color.lower().replace(" ", "")
         is_sacred = False
 
-        for name, values in SACRED_COLORS.items():
+        for _name, values in SACRED_COLORS.items():
             for val in values:
                 if norm_color == val.lower().replace(" ", ""):
                     is_sacred = True
@@ -114,7 +125,9 @@ def audit_file(filepath):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Audit Luminous Coherence (AES-Visual)")
+    parser = argparse.ArgumentParser(
+        description="Audit Luminous Coherence (AES-Visual)"
+    )
     parser.add_argument("target", help="File to audit (css, js, tsx, etc.)")
     args = parser.parse_args()
 

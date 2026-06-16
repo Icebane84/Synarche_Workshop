@@ -1,4 +1,5 @@
 # AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,37 +12,40 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.ACM.001` | The Sovereign ID. |
-| **Official Name** | `AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                                                                | Description       |
+| :------------------ | :--------------------------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.ACM.001`                                                                                       | The Sovereign ID. |
+| **Official Name**   | `AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                                                                    | The Standard.     |
+| **Domain**          | `GVRN`                                                                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                                                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                                                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                                        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Purposeful Drive** |
-| **Status** | `ACTIVE` |
-| **Type** | `Protocol` |
-| **Classification** | `Moon` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-17` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0` |
+
+| Key                | Value                                              |
+| :----------------- | :------------------------------------------------- |
+| **Module ID**      | `AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0` |
+| **Version**        | `v11.0`                                            |
+| **Evolution**      | **Purposeful Drive**                               |
+| **Status**         | `ACTIVE`                                           |
+| **Type**           | `Protocol`                                         |
+| **Classification** | `Moon`                                             |
+| **Authors**        | `System`                                           |
+| **Created**        | `2025-10-01`                                       |
+| **Updated**        | `2026-01-17`                                       |
+| **Authority**      | `CODEX-001`                                        |
+| **Tags**           | `Reforged, v11.0`                                  |
+
 ---
 
 | Field               | Value                                                 |
 | :------------------ | :---------------------------------------------------- |
-| **Artifact ID** | `GVRN.ACM.001`    |
+| **Artifact ID**     | `GVRN.ACM.001`                                        |
 | **Official Name**   | `AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0.md` |
 | **Version**         | **v1.0 (Reforged)**                                   |
 | **Provenance**      | **Date Reforged: 2025-12-22**                         |
@@ -59,8 +63,6 @@
 > **Domain**: GVRN (Governance)
 > **Evolution**: Pending
 > **Signal**: ESF-ALPHA
-
-
 
 ## I. Executive Summary
 
@@ -86,8 +88,7 @@ To proactively prevent "knowledge entropy" by establishing a persistent, autonom
 
 ## IV. Actionable Prompt Packet
 
-`CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Phoenix Auditor"`
----
+## `CMD: REFINE_ARTIFACT --focus:"Compliance" --context:"Auto-injected by Phoenix Auditor"`
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 

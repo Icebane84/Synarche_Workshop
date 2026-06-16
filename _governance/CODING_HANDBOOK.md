@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `CODING_HANDBOOK` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # The Phoenix Architect's Handbook
 
 > **Warning:** This artifact is a synthesis of the **Master Coder Mindset**, **Phoenix Architecture**, and **Governance

@@ -1,25 +1,32 @@
 """
-# UMB-LOG-001: The Chronicler (Agentic Logging System)
+artifact_anchor:
+  id: CORE.CHRONICLER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+"""
 
-## Genesis Stamp: 2026-01-15 | Domain: GVRN | State: PROTOTYPE | Criticality: High
+"""### **Block A: The Identification Lock (UIP-V15)**.
 
-### I. Universal Identification & Provenance (The Vector Signature)
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-LOG-001`                 | The Sovereign ID. |
+| **Official Name**   | `chronicler.py`               | The Filename.     |
+| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN-LOG`                    | The Subject.      |
+| **Celestial Class** | `[SATELLITE]`                 | The Weight.       |
+| **Evolution**       | `Operational`                 | The Maturity.     |
+| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**       | `IDENTITY: High Priestess`    | The Sovereign.    |
 
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `UMB-LOG-001` |
-| **2. Official Name** | `chronicler.py` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Date Forged: 2026-01-15** |
-| **5. Domain** | `GVRN` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[SATELLITE]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Memory** |
-| **11. Catalyst** | **Agentic Versioning** |
-| **12. Relations** | `LINK: AOP-SCA-001` |
-
+**The Chronicler Axiom: Immutable Trace (Law 12)**
+> Implemented from Blueprint `GVRN.LOG.Chronicler.md`.
+> Ethos: Guardian of Memory.
 """
 
 import hashlib
@@ -34,13 +41,14 @@ from typing import Any
 LOG_DIR_NAME = "_logs"
 
 # --- LOGGING SETUP ---
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
 logger = logging.getLogger(__name__)
 
 
 class Chronicler:
-    """
-    The Chronicler: A system for immutable agentic logging and versioning.
+    """The Chronicler: A system for immutable agentic logging and versioning.
     Tracks actions, intents, and file state hashes to prevent hallucination.
     """
 
@@ -51,12 +59,15 @@ class Chronicler:
         self._ensure_log_dir()
 
     def _ensure_log_dir(self) -> None:
+        """Verifies existence of log directory and creates it if necessary."""
         if not self.log_dir.exists():
             try:
                 self.log_dir.mkdir(parents=True, exist_ok=True)
                 logger.info(f"[Chronicler] Log directory initialized: {self.log_dir}")
             except Exception:
-                logger.exception(f"[Chronicler] Failed to create log directory: {self.log_dir}")
+                logger.exception(
+                    f"[Chronicler] Failed to create log directory: {self.log_dir}"
+                )
 
     def _calculate_hash(self, filepath: str | Path) -> str | None:
         """Calculates SHA-256 hash of a file for version verification."""
@@ -86,8 +97,7 @@ class Chronicler:
         status: str = "SUCCESS",
         metadata: dict[str, Any] | None = None,
     ) -> str:
-        """
-        Logs an agentic action with versioning data.
+        """Logs an agentic action with versioning data.
         Returns the Log ID.
         """
         timestamp = datetime.now(timezone.utc).isoformat()
@@ -106,9 +116,7 @@ class Chronicler:
             "target": target,
             "status": status,
             "details": details,
-            "versioning": {
-                "hash_state": before_hash  # Snapshot of state at log time
-            },
+            "versioning": {"hash_state": before_hash},  # Snapshot of state at log time
             "metadata": metadata or {},
         }
 

@@ -1,4 +1,5 @@
 # PHOENIX_MASTER_TEMPLATE_v11.1.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,38 +12,39 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-PHOENIX-MASTER-TEMPLATE-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `PHOENIX_MASTER_TEMPLATE_v11.1.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-PHOENIX-MASTER-TEMPLATE-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `PHOENIX_MASTER_TEMPLATE_v11.1.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
+| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
 
-| Attribute | Value |
-| :--- | :--- |
-| **Artifact ID** | `[RNC-ID]` |
-| **Official Name** | `[Artifact Name]` |
-| **Version** | `v11.1` |
-| **Domain** | `GVRN / COG / SYNG / ARCH / COMM / PHL / CRTV` |
-| **Evolution** | `[Evolutionary Alignment]` |
-| **Signal (ESF)** | `ALPHA / BETA / OMEGA / HIGH / CRITICAL / STANDARD` |
-| **Status (State)** | `ACTIVE / DRAFT / CANONIZED / DEPRECATED / ARCHIVED / PROPOSED` |
-| **Tier** | `Strategic / Tactical / Operational` |
-| **Celestial Class** | `STAR / MOON / PLANET` |
-| **Governance** | `[Primary Authority], [Secondary Authority]` |
-| **Upstream** | `[Artifacts this document depends on]` |
-| **Downstream** | `[Artifacts that depend on this document]` |
-| **Integrity Hash** | `sha256:[64-char-hex-hash]` |
-| **Provenance** | `Genesis Stamp: [YYYY-MM-DD]` |
-| **Relations** | `[Primary Synergistic Link]` |
-| **Tags** | `v11.1, [Tags]` |
+| Attribute           | Value                                                           |
+| :------------------ | :-------------------------------------------------------------- |
+| **Artifact ID**     | `[RNC-ID]`                                                      |
+| **Official Name**   | `[Artifact Name]`                                               |
+| **Version**         | `v11.1`                                                         |
+| **Domain**          | `GVRN / COG / SYNG / ARCH / COMM / PHL / CRTV`                  |
+| **Evolution**       | `[Evolutionary Alignment]`                                      |
+| **Signal (ESF)**    | `ALPHA / BETA / OMEGA / HIGH / CRITICAL / STANDARD`             |
+| **Status (State)**  | `ACTIVE / DRAFT / CANONIZED / DEPRECATED / ARCHIVED / PROPOSED` |
+| **Tier**            | `Strategic / Tactical / Operational`                            |
+| **Celestial Class** | `STAR / MOON / PLANET`                                          |
+| **Governance**      | `[Primary Authority], [Secondary Authority]`                    |
+| **Upstream**        | `[Artifacts this document depends on]`                          |
+| **Downstream**      | `[Artifacts that depend on this document]`                      |
+| **Integrity Hash**  | `sha256:[64-char-hex-hash]`                                     |
+| **Provenance**      | `Genesis Stamp: [YYYY-MM-DD]`                                   |
+| **Relations**       | `[Primary Synergistic Link]`                                    |
+| **Tags**            | `v11.1, [Tags]`                                                 |
 
 ---
 
@@ -59,7 +61,7 @@
 ### 1.1 Celestial Chart Stats
 
 - **Primary Stat Buff**: **[Stat] +[Value]**
-  - *Mechanism*: [Explanation of how this buff is applied].
+  - _Mechanism_: [Explanation of how this buff is applied].
 - **System Slot**: `[PCM / AISTF / STA / ACT / RES / FP]`
 - **Synergy Set**: `[Name of the Set]`
 
@@ -91,9 +93,9 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 
 ## IV. Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: [NAME]` | [Actionable description] | [Expected system change] |
+| Command ID           | Action                           | Impact                   |
+| :------------------- | :------------------------------- | :----------------------- |
+| `CMD: [NAME]`        | [Actionable description]         | [Expected system change] |
 | `⚡ EXECUTE: [NAME]` | [High-priority terminal command] | [Permanent state update] |
 
 ---
@@ -156,7 +158,6 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 - **MATRIX**: Mapping Tables and Logic Arrays
 - **UNKNOWN**: Catch-all for unclassified formats
 
-
 ### E. Relation Vectors (GVRN-RELATIONS)
 
 - **REFERENCES**: Mentions another artifact
@@ -178,7 +179,6 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 - **MONITORS**: Passive Observation (Immune System)
 - **REMEDIATES**: Active Fixing/Healing (Immune System)
 
-
 ### F. Tarot Shard Matrix (DQUEST-SHARD-002)
 
 - **MAGICIAN**: Manifestation & Intent Triage (SHARD_MAGICIAN_INTENT)
@@ -188,7 +188,6 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 - **STAR**: Visual Sync & Narrative Soul (SHARD_STAR_COHESION)
 - **KING_PENTACLES**: Database Persistence (SHARD_KING_ARCHIVAL)
 - **JUDGEMENT**: Metacognitive Audit & AISTF (SHARD_JUDGEMENT_META)
-
 
 ### G. Tier Classification (GVRN-TIER)
 
@@ -207,14 +206,13 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 
 # 🏛️ Template Governance (Systemic)
 
-> **Context**: This block governs the *template file itself*, distinguishing it from the *content* it generates.
+> **Context**: This block governs the _template file itself_, distinguishing it from the _content_ it generates.
 
-| Relation Type | Target ID | Synergy Description |
-| :--- | :--- | :--- |
-| **DEFINED_BY** | `[[UMB-LEX-001]]` | The Lexicon defines the schema used in this template. |
-| **IMPLEMENTED_BY** | `[[UMB-PP-001]]` | The Prompt Packet automates the filling of this template. |
-| **GOVERNED_BY** | `[[CORE-CODEX-001]]` | The Codex Mandates the use of this standard. |
-
+| Relation Type      | Target ID            | Synergy Description                                       |
+| :----------------- | :------------------- | :-------------------------------------------------------- |
+| **DEFINED_BY**     | `[[UMB-LEX-001]]`    | The Lexicon defines the schema used in this template.     |
+| **IMPLEMENTED_BY** | `[[UMB-PP-001]]`     | The Prompt Packet automates the filling of this template. |
+| **GOVERNED_BY**    | `[[CORE-CODEX-001]]` | The Codex Mandates the use of this standard.              |
 
 ---
 

@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `COG.CONTEXTWEAVE.ENGINE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                           | Description       |
@@ -27,10 +37,6 @@
 | **Dependency Break** | ForgeLink Validation      |
 
 ---
-
----
-
-###### **[ARTIFACT START]**
 
 # The ContextWeave Engine (COG.ContextWeave.Engine)
 
@@ -68,7 +74,7 @@ AOP-DSA-001, SUPPORTS, The Engine provides contextual awareness for documentatio
 
 ### **IV. The ContextWeave Algorithm (Operational Logic)**
 
-The **ContextWeave Engine** is the primary analytical sub-system of the Synarchy. It transfigures raw information into a
+The **ContextWeave Engine** is the primary analytical sub-system of the Synarche. It transfigures raw information into a
 cohesive knowledge tapestry by identifying latent relationships and emergent patterns.
 
 #### **Phase 1: Ingestion & Normalization**

@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN-MECH-CIRCUITBREAKER_v11.0` | The Sovereign ID. |
+| Key               | Value                                    | Description       |
+| :---------------- | :--------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GVRN-MECH-CIRCUITBREAKER_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GVRN-MECH-CIRCUITBREAKER_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                        | The Standard.     |
+| **Domain**        | `GVRN`                                   | The Subject.      |
+| **Status**        | `[ACTIVE]`                               | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
 
@@ -81,7 +76,7 @@
 
 - **Why it exists**: To prevent runaway processes and hallucination loops.
 - **What it does**: Executes HALT, PURGE, RESET, LOG.
-- **For the Synarchy**: Protects system integrity by cutting the power to faulty threads.
+- **For the Synarche**: Protects system integrity by cutting the power to faulty threads.
 
 ## III. The Execution Logic (The "Trip")
 

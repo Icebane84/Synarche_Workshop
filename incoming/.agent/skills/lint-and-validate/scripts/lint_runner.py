@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Lint Runner - Unified linting and type checking
+"""Lint Runner - Unified linting and type checking
 Runs appropriate linters based on project type.
 
 Usage:
@@ -11,13 +10,12 @@ Supports:
     - Python: ruff check, mypy
 """
 
-import subprocess
-import sys
 import json
 import platform
-import shutil
-from pathlib import Path
+import subprocess
+import sys
 from datetime import datetime
+from pathlib import Path
 
 # Fix Windows console encoding
 try:
@@ -71,7 +69,9 @@ def detect_project_type(project_path: Path) -> dict:
         if (project_path / "mypy.ini").exists() or (
             project_path / "pyproject.toml"
         ).exists():
-            result["linters"].append({"name": "mypy", "cmd": ["mypy", "."]})
+            result["linters"].append(
+                {"name": "mypy", "cmd": ["mypy", "--follow-imports=silent", "."]}
+            )
 
     return result
 
@@ -119,9 +119,9 @@ def run_linter(linter: dict, cwd: Path) -> dict:
 def main():
     project_path = Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
 
-    print(f"\n{'='*60}")
-    print(f"[LINT RUNNER] Unified Linting")
-    print(f"{'='*60}")
+    print(f"\n{'=' * 60}")
+    print("[LINT RUNNER] Unified Linting")
+    print(f"{'=' * 60}")
     print(f"Project: {project_path}")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 

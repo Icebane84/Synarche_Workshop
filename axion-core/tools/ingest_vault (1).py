@@ -1,5 +1,17 @@
 """
-# TOOL-MAGI-001: The Vault Ingestion Engine (The Magician's Hand)
+artifact_anchor:
+  id: INFR.INGEST_VAULT_1.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-MAGI-001: The Vault Ingestion Engine (The Magician's Hand).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -97,7 +109,9 @@ def determine_entity_type(rel_path: Path) -> str:
     return type_map.get(parent_dir, "concept")
 
 
-def upsert_batch(client: Any, table: str, data: list[dict[str, Any]], batch_size: int = 100) -> None:
+def upsert_batch(
+    client: Any, table: str, data: list[dict[str, Any]], batch_size: int = 100
+) -> None:
     """Helper to batch upsert data to Supabase."""
     logger.info(f"[INFO] Upserting {len(data)} items into '{table}'...")
     for i in range(0, len(data), batch_size):
@@ -106,7 +120,9 @@ def upsert_batch(client: Any, table: str, data: list[dict[str, Any]], batch_size
             client.table(table).upsert(batch, on_conflict="id").execute()
             logger.info(f"   Processed {i} to {i + len(batch)}")
         except Exception:
-            logger.exception(f"[!] Batch upsert failed for table '{table}' at index {i}")
+            logger.exception(
+                f"[!] Batch upsert failed for table '{table}' at index {i}"
+            )
 
 
 def process_entities(files: list[Path]) -> tuple[list[dict[str, Any]], dict[str, str]]:

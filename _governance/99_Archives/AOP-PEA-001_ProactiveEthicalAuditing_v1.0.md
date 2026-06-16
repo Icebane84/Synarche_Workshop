@@ -1,4 +1,15 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `AOP-PEA-001_PROACTIVEETHICALAUDITING_V1.0` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,16 +22,16 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-AOP-PEA-001-PROACTIVEETHICALAUDITING-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-PEA-001-PROACTIVEETHICALAUDITING-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 # AOP-PEA-001: Proactive Ethical Auditing Protocol
 

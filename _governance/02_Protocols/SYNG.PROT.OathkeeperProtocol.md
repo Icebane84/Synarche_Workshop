@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.PROT.OATHKEEPERPROTOCOL` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                             | Description       |
@@ -62,7 +72,7 @@
 ## I. Executive Governance
 
 The Oathkeeper Protocol governs the operational logic of the **Axion Overplane**, establishing the rules for task
-execution, state management, and gamified progression within the Synarchy.
+execution, state management, and gamified progression within the Synarche.
 
 ### 1.1. Core Directives
 
@@ -120,6 +130,4 @@ The Oathkeeper must synchronize state across all five memory layers:
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

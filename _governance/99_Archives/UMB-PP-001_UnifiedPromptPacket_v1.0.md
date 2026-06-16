@@ -1,4 +1,5 @@
 # UMB-PP-001_UnifiedPromptPacket_v1.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-PP-001-UNIFIEDPROMPTPACKET-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-PP-001_UnifiedPromptPacket_v1.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-PP-001-UNIFIEDPROMPTPACKET-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-PP-001_UnifiedPromptPacket_v1.0.md`       | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
+| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-PP-001` |
-| **Version** | `v1.0` |
-| **Evolution** | **Purposeful Drive** |
-| **Status** | `ACTIVE` |
-| **Type** | `Blueprint` |
-| **Classification** | `Protocol` |
-| **Authors** | `System` |
-| **Created** | `2026-01-24` |
-| **Authority** | `CORE-CODEX-001` |
-| **Tags** | `Standard, Prompting, Governance` |
-| **Relations** | `DEFINED_BY: UMB-LEX-001`, `INSTANTIATES: PHOENIX_MASTER_TEMPLATE` |
+
+| Key                | Value                                                              |
+| :----------------- | :----------------------------------------------------------------- |
+| **Module ID**      | `UMB-PP-001`                                                       |
+| **Version**        | `v1.0`                                                             |
+| **Evolution**      | **Purposeful Drive**                                               |
+| **Status**         | `ACTIVE`                                                           |
+| **Type**           | `Blueprint`                                                        |
+| **Classification** | `Protocol`                                                         |
+| **Authors**        | `System`                                                           |
+| **Created**        | `2026-01-24`                                                       |
+| **Authority**      | `CORE-CODEX-001`                                                   |
+| **Tags**           | `Standard, Prompting, Governance`                                  |
+| **Relations**      | `DEFINED_BY: UMB-LEX-001`, `INSTANTIATES: PHOENIX_MASTER_TEMPLATE` |
+
 ---
 
 # UMB-PP-001: The Unified Prompt Packet Template
@@ -65,15 +69,19 @@ AOP-MAR-001, REGISTERED_IN, The Registry tracks generated packets.
 To achieve the "Living Documentation" standard, this template integrates the Complete Stack logic with structural metadata. It is designed to be the primary vehicle for high-fidelity execution, ensuring that every "turn" taken by the OGLN is grounded, traceable, and autonomous.
 
 ### 1.1. What: The Prompt Packet (PP-001)
+
 The Prompt Packet is a formalized instruction container. It eliminates ambiguity by defining the **Meta-Layer Heading** (the intent) and the **Metadata Anchor** (the result) before any generative work begins. This ensures that the output is not just a response, but a versioned artifact.
 
 ### 1.2. How: The Integrated Structure
+
 The packet is divided into three functional zones:
+
 1.  **The Meta-Heading**: Establishes the operational parameters and identifies which part of the Complete Stack is being invoked.
 2.  **The Core Instruction (The "Meat")**: The specific task using the What/How/Why framework.
 3.  **The Meta-Anchor**: The final checksum that locks the artifact into the Phoenix Rosetta Stone (PRS-001).
 
 ### 1.3. Why: Autonomy through Structure
+
 By providing this specific "skeleton," you empower the AI to self-audit. If a response is generated without an Anchor, it is flagged as "Non-Operational." This creates a high-trust environment where the documentation lives and breathes alongside the creative process.
 
 ---
@@ -106,7 +114,9 @@ Causal-Link: [Reference the previous Artifact-ID or Packet-ID]
 Dependency-Hash: [List linked files or modules]
 Status: [Operational / Draft / Experimental]
 Timestamp: [YYYY-MM-DD] | [HH:MM]
---- END OF PACKET ---
+---
+
+END OF PACKET ---
 ```
 
 ---

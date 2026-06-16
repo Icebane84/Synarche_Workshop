@@ -1,6 +1,18 @@
+"""
+artifact_anchor:
+  id: INFR.DEFINITIVE_GRAPH_BUILDER.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
 import json
 import os
-import shutil
 from datetime import datetime
 
 # --- CONFIGURATION ---
@@ -44,8 +56,7 @@ def save_json(path, data):
 
 
 def merge_nodes(master_nodes, new_nodes, priority="low"):
-    """
-    Merges new_nodes into master_nodes dict (keyed by ID).
+    """Merges new_nodes into master_nodes dict (keyed by ID).
     priority: 'low' means master preserves existing data if conflict.
               'high' means new_nodes overwrite master.
     """
@@ -178,7 +189,9 @@ def execute_consolidation():
             "type": node.get("type", "Artifact"),
             "definition": node.get("definition", "Imported from Definitive Graph"),
             "tags": node.get("tags", []),
-            "location": node.get("metadata", {}).get("filepath", node.get("location", "")),
+            "location": node.get("metadata", {}).get(
+                "filepath", node.get("location", "")
+            ),
             "referenced_ids": [],  # We could extract this from edges if needed, but keeping it simple
         }
         new_prs_nodes.append(prs_node)

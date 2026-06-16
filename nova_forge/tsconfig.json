@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@nexus/*": ["src/nexus/*"],
+      "@ui/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  }
+}

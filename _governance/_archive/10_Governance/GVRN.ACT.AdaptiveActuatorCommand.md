@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.AdaptiveActuatorCommand` | The Sovereign ID. |
+| Key               | Value                                 | Description       |
+| :---------------- | :------------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.AdaptiveActuatorCommand`    | The Sovereign ID. |
 | **Official Name** | `GVRN.ACT.AdaptiveActuatorCommand.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                     | The Standard.     |
+| **Domain**        | `GVRN`                                | The Subject.      |
+| **Status**        | `[ACTIVE]`                            | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`         | The Network.      |
 
 ---
 
@@ -135,9 +130,9 @@ for cataloging. | | **CODEX-001** | **Governance** | Ensures all executed action
 
 - **v2.1 - Transactional Sagacity**: Integrate standardized Saga patterns for multi-step operations with auto-rollback.
 - **v2.2 - Quantum Performance Indicators (QPIs)**: Real-time monitoring of:
-    - `Cognitive_Load_Index` (Processing effort).
-    - `Synergy_Flow_Rate_Impact` (Speed of info propagation).
-    - `Entanglement_Score_Delta` (Degree of beneficial integration).
+  - `Cognitive_Load_Index` (Processing effort).
+  - `Synergy_Flow_Rate_Impact` (Speed of info propagation).
+  - `Entanglement_Score_Delta` (Degree of beneficial integration).
 - **v2.3 - Autonomous Tool Health**: Self-healing feedback loop where `UMB-ACT-002` deprecates unreliable tools
 
 automatically.

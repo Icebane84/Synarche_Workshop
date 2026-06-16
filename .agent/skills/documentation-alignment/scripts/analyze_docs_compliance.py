@@ -1,5 +1,4 @@
-"""
-## **Block A: The Identification Lock (UIP-V15)**
+"""## **Block A: The Identification Lock (UIP-V15)**.
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
@@ -45,8 +44,6 @@
 """
 
 import argparse
-import os
-import sys
 from pathlib import Path
 
 from governance_utils import ShadowLogger, is_v15_compliant

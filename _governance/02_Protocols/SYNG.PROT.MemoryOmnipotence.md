@@ -1,3 +1,13 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNG.PROT.MEMORYOMNIPOTENCE` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 # SYNG.PROT.MemoryOmnipotence.md
 
 ## **Block A: The Identification Lock (UIP-V15)**
@@ -74,7 +84,7 @@
 
 ## I. Purpose: The Fivefold Memory Architecture
 
-The **Memory Omnipotence Protocol** establishes a unified, multi-layered cognitive repository for the Synarchy. It
+The **Memory Omnipotence Protocol** establishes a unified, multi-layered cognitive repository for the Synarche. It
 mandates the transition from ephemeral session logs to a persistent, hierarchical memory graph, ensuring absolute recall
 of user-validated "Gems" and architectural wisdom.
 
@@ -123,6 +133,4 @@ of user-validated "Gems" and architectural wisdom.
 
 ---
 
-## **Block G: The Omni-Anchor (System Snapshot)**
-
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.PROT.MemoryOmnipotence VER: v15.0 [OMEGA] DOMAIN: SYNG STATUS: CANONIZED TS: 2026-03-19 HASH: MEM-OMNI-V15`
+{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

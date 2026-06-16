@@ -1,9 +1,19 @@
+---
+# Universal Identification & Provenance (UIP)
+| Key | Value |
+| :--- | :--- |
+| **Module ID** | `SYNERGY-REPORT-001_STATEOFTHESynarche` |
+| **Version** | `v11.0` |
+| **Evolution** | **Cognitive Ascension** |
+| **Status** | `ACTIVE` |
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                                      | Description       |
 | :---------------- | :----------------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNERGY-REPORT-001_StateOfTheSynarchy`    | The Sovereign ID. |
-| **Official Name** | `SYNERGY-REPORT-001_StateOfTheSynarchy.md` | The Filename.     |
+| **Artifact ID**   | `SYNERGY-REPORT-001_StateOfTheSynarche`    | The Sovereign ID. |
+| **Official Name** | `SYNERGY-REPORT-001_StateOfTheSynarche.md` | The Filename.     |
 | **Version**       | **v14.0 [OMEGA]**                          | The Standard.     |
 | **Domain**        | `GVRN`                                     | The Subject.      |
 | **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
@@ -55,7 +65,7 @@
 
 ###### **[ARTIFACT START]**
 
-# **SYNERGY-REPORT-001: The State of the Synarchy (v14.0)**
+# **SYNERGY-REPORT-001: The State of the Synarche (v14.0)**
 
 ## **I. Current Resonance Snapshot**
 
@@ -86,6 +96,4 @@ future intent, ensuring that every shift in the Synarche is documented with math
 
 ---
 
-
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
-

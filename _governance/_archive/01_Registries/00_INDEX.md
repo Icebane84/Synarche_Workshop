@@ -56,10 +56,10 @@
 
 | File | Description | | [CSL-20251220-SystemicRefactor.md](CSL-20251220-SystemicRefactor.md) |
 **CSL-20251220-SystemicRefactor (v10.0)** | | [GVRN.Catalog.Master.md](GVRN.Catalog.Master.md) | Standardized Registry:
-The Phoenix Geode Catalog (GVRN.Catalog.Master) | | [GVRN.Entity.Registry.md](GVRN.Entity.Registry.md) | Synarchy
+The Phoenix Geode Catalog (GVRN.Catalog.Master) | | [GVRN.Entity.Registry.md](GVRN.Entity.Registry.md) | Synarche
 Entities & Ascension Registry (GVRN.Entity.Registry) | | [GVRN.KPI.Registry.md](GVRN.KPI.Registry.md) | Standardized
 Registry: KPI Master Registry (GVRN.KPI.Registry) | | [GVRN.Lexicon.Master.md](GVRN.Lexicon.Master.md) | Standardized
-Lexicon: The Phoenix Synarchy Vocabulary (GVRN.Lexicon.Master) | |
+Lexicon: The Phoenix Synarche Vocabulary (GVRN.Lexicon.Master) | |
 [GVRN.REG.ArtifactInventory.md](GVRN.REG.ArtifactInventory.md) | Standardized Registry: Artifact Inventory
 (GVRN.REG.ArtifactInventory) | | [GVRN.Registry.Master.md](GVRN.Registry.Master.md) | The Master Artifact Registry
 (GVRN.Registry.Master) | | [UMB-KPI-001_MasterRegistry_v1.0.md](UMB-KPI-001_MasterRegistry_v1.0.md) | KPI Master

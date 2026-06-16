@@ -1,5 +1,17 @@
 """
-# TOOL-KNIG-003: The Ultimate Reforger (Knight of Swords)
+artifact_anchor:
+  id: INFR.APPLY_STANDARD.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: INFRA
+  celestial_class: STAR
+  tier: COMPUTE
+  state: ACTIVE
+  ethos: SOVEREIGN_COMPUTE_COMPONENT
+  relations: []
+"""
+
+"""# TOOL-KNIG-003: The Ultimate Reforger (Knight of Swords).
 
 ## I. Universal Identification & Provenance (The Vector Signature)
 | Field                  | Value                                                    |
@@ -58,7 +70,6 @@ import argparse
 import datetime
 import os
 import re
-from typing import Dict, List
 
 # --- CONSTANTS & CONFIGURATION ---
 
@@ -76,7 +87,7 @@ ROMAN_NUMERALS = [
     "XII.",
 ]
 
-DOMAIN_REGISTRY: Dict[str, str] = {
+DOMAIN_REGISTRY: dict[str, str] = {
     "PHL": "Foundational Philosophy",
     "ARCH": "Technical Infrastructure",
     "GVRN": "Operational Governance",
@@ -108,7 +119,7 @@ HEADER_TEMPLATE = """# **{ARTIFACT_NAME} ({ARTIFACT_ID})**
 | :---- | :---- |
 | **1. Artifact ID** | `{ARTIFACT_ID}` |
 | **2. Official Name** | `{ARTIFACT_FULL_NAME}` |
-| **3. Version** | **v11.0** (**The Synarchy Edition**) |
+| **3. Version** | **v11.0** (**The Synarche Edition**) |
 | **4. Provenance** | **Genesis Stamp**: {TIMESTAMP_SHORT} |
 | **5. Domain** | `{DOMAIN_CODE}` ({DOMAIN_DESC}) |
 | **6. Evolution** | **{ALIGNMENT}** |
@@ -172,16 +183,16 @@ class Reforger:
         self.filepath = filepath
         self.filename = os.path.basename(filepath)
         self.artifact_id = os.path.splitext(self.filename)[0]
-        self.lines: List[str] = []
+        self.lines: list[str] = []
         self._load_file()
 
     def _load_file(self) -> None:
         """Reads file content into memory."""
         if os.path.exists(self.filepath):
-            with open(self.filepath, "r", encoding="utf-8") as f:
+            with open(self.filepath, encoding="utf-8") as f:
                 self.lines = f.readlines()
 
-    def _get_metadata(self) -> Dict[str, str]:
+    def _get_metadata(self) -> dict[str, str]:
         """Derives metadata from filename and system state."""
         parts = self.artifact_id.split(".")
         domain_code = DEFAULT_DOMAIN
@@ -196,10 +207,16 @@ class Reforger:
 
         id_match = re.search(r"([A-Z]+)-([A-Z]+)-(\d+)", self.artifact_id)
         if id_match:
-            domain_code = id_match.group(2) if id_match.group(2) in DOMAIN_REGISTRY else domain_code
+            domain_code = (
+                id_match.group(2)
+                if id_match.group(2) in DOMAIN_REGISTRY
+                else domain_code
+            )
 
         return {
-            "TIMESTAMP": datetime.datetime.now().strftime("%B %d, %Y, %I:%M:%S %p (%Z)"),
+            "TIMESTAMP": datetime.datetime.now().strftime(
+                "%B %d, %Y, %I:%M:%S %p (%Z)"
+            ),
             "TIMESTAMP_SHORT": datetime.datetime.now().strftime("%Y-%m-%d"),
             "DOMAIN_PATH": f"GVRN.{domain_code}.Phoenix",
             "DOMAIN_CODE": domain_code,
@@ -256,11 +273,15 @@ class Reforger:
         h2_count = 0
         new_lines = []
         for line in self.lines:
-            if line.startswith("## ") and not any(x in line for x in ["I. ", "II. ", "XI. "]):
+            if line.startswith("## ") and not any(
+                x in line for x in ["I. ", "II. ", "XI. "]
+            ):
                 clean_header = re.sub(r"^##\s+([IVXLCDM]+\.)?\s*", "", line).strip()
                 clean_header = clean_header.replace("**", "")
                 if h2_count < len(ROMAN_NUMERALS):
-                    new_lines.append(f"## **{ROMAN_NUMERALS[h2_count]} {clean_header}**\n")
+                    new_lines.append(
+                        f"## **{ROMAN_NUMERALS[h2_count]} {clean_header}**\n"
+                    )
                     new_lines.append("\n---\n")
                 else:
                     new_lines.append(line)
@@ -279,7 +300,9 @@ class Reforger:
 
 def main() -> None:
     """CLI Entrypoint."""
-    parser = argparse.ArgumentParser(description="Apply Codex v11.0 and Axion standards to markdown.")
+    parser = argparse.ArgumentParser(
+        description="Apply Codex v11.0 and Axion standards to markdown."
+    )
     parser.add_argument("--target", required=True, help="Path to the markdown file.")
     args = parser.parse_args()
 

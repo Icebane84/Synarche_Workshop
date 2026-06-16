@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.DTS.001(2)` | The Sovereign ID. |
-| **Official Name** | `GVRN.DTS.001(2).md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.DTS.001(2)`             | The Sovereign ID. |
+| **Official Name** | `GVRN.DTS.001(2).md`          | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
 
 ---
 
@@ -65,6 +60,7 @@
 ## III. Strategic Rationale (What/How/Why)
 
 ### What: The Core Concept
+
 **Dynamic Template Scaffolding (DTS)** is the engine that prevents "Scribal Error." Instead of drafting artifacts from scratch, the CSE uses DTS to transclude standard AGP blocks and relational tables into a unified skeleton.
 
 ### How: Operational Mandate
@@ -73,13 +69,14 @@ The protocol mandates that no new artifact can be canonized unless it was forged
 
 ### Why: Scalability Mandate
 
-As the PPL approaches 1,000+ files, manual formatting becomes a catastrophic friction point. DTS converts artifact creation into a "Modular Assembly," allowing the Scribe to focus on *Conceptual Content* rather than *Structural Plumbing*.
+As the PPL approaches 1,000+ files, manual formatting becomes a catastrophic friction point. DTS converts artifact creation into a "Modular Assembly," allowing the Scribe to focus on _Conceptual Content_ rather than _Structural Plumbing_.
 
 ---
 
 ## IV. Core Operational Framework (Execution Flow)
 
 ### Step 1: Component Call
+
 Target the building blocks in `UMB-CODEX-001`. Call:
 
 1. `AGP-BLOCK-001` (Provenance)
@@ -99,10 +96,10 @@ Verify that no `h1` triggers `MD025` by ensuring only the top title is an `H1`, 
 
 ## V. Synergistic Effects & Integrations
 
-| Artifact | Relationship | Rationale |
-| :--- | :--- | :--- |
-| [CODEX-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md) | **IMPLEMENTS** | DTS is the mechanical implementation of the Codex's formatting laws. |
-| [UMB-ACT-002](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) | **PROVIDES_TEMPLATE_TO** | The Actuator calls DTS logic when the USER requests `CMD: FORGE`. |
+| Artifact                                                                                                                                 | Relationship             | Rationale                                                            |
+| :--------------------------------------------------------------------------------------------------------------------------------------- | :----------------------- | :------------------------------------------------------------------- |
+| [CODEX-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md)          | **IMPLEMENTS**           | DTS is the mechanical implementation of the Codex's formatting laws. |
+| [UMB-ACT-002](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ACT-002_AdaptiveActuatorModule_v11.0.md) | **PROVIDES_TEMPLATE_TO** | The Actuator calls DTS logic when the USER requests `CMD: FORGE`.    |
 
 ---
 
@@ -135,8 +132,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ### Actionable Prompt Packet (APP)
 
-| Command ID | Action | Impact |
-| :--- | :--- | :--- |
-| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
-| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
-
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |

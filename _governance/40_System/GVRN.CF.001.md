@@ -1,4 +1,5 @@
 # UMB-CF-001_CognitiveForge_v11.0.md
+
 > **Domain**: GVRN
 > **Evolution**: Omega Ascension
 > **Signal**: OMEGA
@@ -11,32 +12,35 @@
 
 ### **Block A: The Identification Lock (UIP-V13)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.CF.001` | The Sovereign ID. |
-| **Official Name** | `UMB-CF-001_CognitiveForge_v11.0.md` | The Filename. |
-| **Version** | **v13.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Omega Ascension` | The Maturity. |
-| **Status** | `[ACTIVE]` | The Lifecycle. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| Key                 | Value                                | Description       |
+| :------------------ | :----------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.CF.001`                        | The Sovereign ID. |
+| **Official Name**   | `UMB-CF-001_CognitiveForge_v11.0.md` | The Filename.     |
+| **Version**         | **v13.1 [OMEGA]**                    | The Standard.     |
+| **Domain**          | `GVRN`                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                           | The Weight.       |
+| **Evolution**       | `Omega Ascension`                    | The Maturity.     |
+| **Status**          | `[ACTIVE]`                           | The Lifecycle.    |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`        | The Network.      |
 
 ---
+
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-CF-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
-| **Type** | `Module` |
-| **Classification** | `Star` |
-| **Authors** | `System` |
-| **Created** | `2025-10-01` |
-| **Updated** | `2026-01-18` |
-| **Authority** | `CODEX-001` |
-| **Tags** | `Reforged, v11.0, Forge` |
+
+| Key                | Value                    |
+| :----------------- | :----------------------- |
+| **Module ID**      | `UMB-CF-001`             |
+| **Version**        | `v11.0`                  |
+| **Evolution**      | **Cognitive Ascension**  |
+| **Status**         | `ACTIVE`                 |
+| **Type**           | `Module`                 |
+| **Classification** | `Star`                   |
+| **Authors**        | `System`                 |
+| **Created**        | `2025-10-01`             |
+| **Updated**        | `2026-01-18`             |
+| **Authority**      | `CODEX-001`              |
+| **Tags**           | `Reforged, v11.0, Forge` |
+
 ---
 
 # **UMB-CF-001: Cognitive Forge**
@@ -91,11 +95,11 @@ The CF is a core sub-system of the Coherent Synthesis Engine (CSE). It takes raw
 
 ### **IV. Synergistic Effects & Integrations**
 
-| Artifact ID | Relationship | Impact |
-| :--- | :--- | :--- |
-| **UMB-CSE-001** | Is powered by | Provides the underlying analytical and generative capability. |
-| **AOP-EVOLVE-001** | Uses as core tool | Designs and implements structural changes. |
-| **UMB-LOOM-001** | Designs nodes for | Populates the knowledge graph with new, functional components. |
+| Artifact ID        | Relationship      | Impact                                                         |
+| :----------------- | :---------------- | :------------------------------------------------------------- |
+| **UMB-CSE-001**    | Is powered by     | Provides the underlying analytical and generative capability.  |
+| **AOP-EVOLVE-001** | Uses as core tool | Designs and implements structural changes.                     |
+| **UMB-LOOM-001**   | Designs nodes for | Populates the knowledge graph with new, functional components. |
 
 ### **V. Performance Metrics (KPIs)**
 

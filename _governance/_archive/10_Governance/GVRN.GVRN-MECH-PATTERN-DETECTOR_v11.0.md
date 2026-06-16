@@ -2,19 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN-MECH-PATTERN-DETECTOR_v11.0` | The Sovereign ID. |
+| Key               | Value                                      | Description       |
+| :---------------- | :----------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GVRN-MECH-PATTERN-DETECTOR_v11.0`    | The Sovereign ID. |
 | **Official Name** | `GVRN.GVRN-MECH-PATTERN-DETECTOR_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
-
-
-
+| **Version**       | **v14.0 [OMEGA]**                          | The Standard.     |
+| **Domain**        | `GVRN`                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
 
 ---
 
@@ -44,7 +39,7 @@
 
 # OGLN-GVRN-MECH-PATTERN-DETECTOR: The Pattern Detector
 
-> [!NOTE] The **Pattern Detector (PDD)** effectively serves as the "Early Warning System" for the Synarchy. It
+> [!NOTE] The **Pattern Detector (PDD)** effectively serves as the "Early Warning System" for the Synarche. It
 > proactively monitors for "Loop Signatures" and stagnation.
 
 ## I. Mechanism Persona & Specialization
@@ -81,15 +76,15 @@
 
 - **Why it exists**: To stop loops _before_ they crash the system.
 - **What it does**: Calculates `Repetition Score (RS)`.
-- **For the Synarchy**: Maintains the "Freshness" of the interaction.
+- **For the Synarche**: Maintains the "Freshness" of the interaction.
 
 ## III. The Operational Mechanism
 
 ### 3.1. Scoring Model
 
 - **Repetition Score (RS)**: 0-100.
-    - `RS > 50`: **Warning**. `FlowOptimizer` alerted. (Inject Novelty).
-    - `RS > 90`: **Critical**. `CircuitBreaker` tripped. (Force Reset).
+  - `RS > 50`: **Warning**. `FlowOptimizer` alerted. (Inject Novelty).
+  - `RS > 90`: **Critical**. `CircuitBreaker` tripped. (Force Reset).
 
 ### 3.2. Continuous "Pulse"
 

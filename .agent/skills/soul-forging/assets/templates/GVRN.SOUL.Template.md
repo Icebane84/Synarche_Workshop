@@ -6,8 +6,9 @@
 ## 🪪 Identity: [ENTITY_NAME]
 
 - **Role**: [MASTER_ARTIFICER / SENTINEL / etc.]
-- **Substrate**: [PYTHON / RUST / etc.]
-- **Status**: [FORGING / CANONIZED]
+
+* **Substrate**: [PYTHON / RUST / etc.]
+* **Status**: [FORGING / CANONIZED]
 
 ## 📜 Ethical Alignment
 
