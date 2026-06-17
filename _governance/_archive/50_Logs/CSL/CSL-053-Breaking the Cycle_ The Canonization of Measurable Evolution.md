@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                                           | Description       |
-| :---------------- | :------------------------------------------------------------------------------ | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-053-BREAKING-THE-CYCLE--THE-CANONIZATION-OF-MEASURABLE-EVOLUTION-001` | The Sovereign ID. |
-| **Official Name** | `CSL-053-Breaking the Cycle_ The Canonization of Measurable Evolution.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                               | The Standard.     |
-| **Domain**        | `GVRN`                                                                          | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                                      | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                                   | The Network.      |
+| **Official Name** | `CSL-053-Breaking the Cycle_ The Canonization of Measurable Evolution.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

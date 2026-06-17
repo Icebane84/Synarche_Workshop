@@ -1,13 +1,14 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                       | Description       |
-| :---------------- | :-------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.SKILL.SelfImprove`    | The Sovereign ID. |
-| **Official Name** | `README.md`                 | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**           | The Standard.     |
-| **Domain**        | `SKILLS`                    | The Subject.      |
-| **Status**        | `[ACTIVE]`                  | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.SKILL.SelfImprove` | The Sovereign ID. |
+| **Official Name** | `README.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `SKILLS` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+
 
 ---
 

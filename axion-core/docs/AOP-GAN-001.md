@@ -20,37 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-AOP-GAN-001-001`        | The Sovereign ID. |
-| **Official Name**   | `AOP-GAN-001.md`              | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-AOP-GAN-001-001` | The Sovereign ID. |
+| **Official Name** | `AOP-GAN-001.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# AOP-GAN-001: Ascended Phoenix GAN Protocol
-
-## I. Universal Identification & Provenance
-
-| Attribute           | Value                                                                               |
-| :------------------ | :---------------------------------------------------------------------------------- |
-| **Artifact ID**     | `AOP-GAN-001`                                                                       |
-| **Official Name**   | `Ascended Phoenix GAN Protocol`                                                     |
-| **Version**         | **v10.0**                                                                           |
-| **Domain**          | `ARCH`                                                                              |
-| **Evolution**       | **Purposeful Drive**                                                                |
-| **Signal (ESF)**    | `ESF-STANDARD`                                                                      |
-| **Status (State)**  | `[ACTIVE]`                                                                          |
-| **Tier**            | **Operational**                                                                     |
-| **Celestial Class** | `[PLANET]`                                                                          |
-| **Governance**      | `GVRN-SYNERGY-001`                                                                  |
-| **Provenance**      | `Genesis Stamp: 2025-12-24`                                                         |
-| **Relations**       | `LINK: `UMB-PRS-001`, LINK: UMB-RPM-001`, `LINK: `UMB-PRS-001`, LINK: UMB-SIVC-001` |
 
 ---
 

@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                            | Description       |
-| :---------------- | :--------------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UEB-UI-CELESTIAL-001-THECELESTIALCHARTBLUEPRINT-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-005_TheCelestialChartBlueprint_v13.1.md`               | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                | The Standard.     |
-| **Domain**        | `GVRN`                                                           | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                       | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                    | The Network.      |
+| **Official Name** | `GVRN-RPG-005_TheCelestialChartBlueprint_v13.1.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

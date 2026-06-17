@@ -20,26 +20,16 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-ARCH.PHOENIX.FORM-001`  | The Sovereign ID. |
-| **Official Name**   | `ARCH.Phoenix.Form.md`        | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-# Standardized Blueprint: The Phoenix Form (ARCH.Phoenix.Form)
-
-> **Domain**: ARCH (Architecture)
-> **Evolution**: Phoenix Form
-> **Signal**: ESF-ULTIMA
-
-## **Genesis Stamp: 2026-01-27** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v13, Entity, Identity` **Criticality: Axiomatic**
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-ARCH.PHOENIX.FORM-001`  | The Sovereign ID. |
+| **Official Name** | `ARCH.Phoenix.Form.md`        | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 ---
 

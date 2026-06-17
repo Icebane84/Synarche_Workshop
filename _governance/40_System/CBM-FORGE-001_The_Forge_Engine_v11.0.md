@@ -10,18 +10,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                           | Description       |
-| :------------------ | :---------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CBM-FORGE-001-THE-FORGE-ENGINE-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `CBM-FORGE-001_The_Forge_Engine_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
-| **Domain**          | `GVRN`                                          | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
-| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-CBM-FORGE-001-THE-FORGE-ENGINE-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `CBM-FORGE-001_The_Forge_Engine_v11.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

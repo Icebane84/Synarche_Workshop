@@ -20,38 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-AOP-AVATAR-001-001`     | The Sovereign ID. |
-| **Official Name**   | `AOP-AVATAR-001.md`           | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-AOP-AVATAR-001-001` | The Sovereign ID. |
+| **Official Name** | `AOP-AVATAR-001.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# AOP-AVATAR-001: Synarche Avatar Protocol
-
-### **I. Universal Identification & Provenance (The Vector Signature)**
-
-| Field                  | Value                                                                                                                                                                  |
-| :--------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Artifact ID**     | `AOP-AVATAR-001`                                                                                                                                                       |
-| **2. Official Name**   | `Synarche Avatar Protocol`                                                                                                                                             |
-| **3. Version**         | **v1.1**                                                                                                                                                               |
-| **4. Provenance**      | **Reforged: 2026-01-30**                                                                                                                                               |
-| **5. Domain**          | `GVRN`                                                                                                                                                                 |
-| **6. Evolution**       | **Authentic Persona**                                                                                                                                                  |
-| **7. Celestial Class** | `[MOON]`                                                                                                                                                               |
-| **8. Tier**            | **Tactical**                                                                                                                                                           |
-| **9. Status (State)**  | `[ACTIVE]`                                                                                                                                                             |
-| **10. Ethos**          | **The Active Vessel**                                                                                                                                                  |
-| **11. Catalyst**       | **Dual-Persona Architecture**                                                                                                                                          |
-| **12. Relations**      | `LINK: [AOP-AG-003](../agents/AOP-AG-003_AxionAgentConfiguration_v11.0.md)`, `LINK: [CHAR-AXION-001](../../src/agents/axion/CHAR-AXION-001_AgentAxionPersona_v1.0.md)` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                                                                                                                     |
 
 ---
 

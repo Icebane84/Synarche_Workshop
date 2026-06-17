@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                              | Description       |
-| :---------------- | :------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CODEX-PRIME-001-THEARCHITECTSCODEX-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                  | The Standard.     |
-| **Domain**        | `GVRN`                                             | The Subject.      |
-| **Status**        | `[ACTIVE]`                                         | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
+| **Official Name** | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

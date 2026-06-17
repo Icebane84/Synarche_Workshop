@@ -1,13 +1,14 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                | Value                             | Description       |
-| :----------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**    | `GVRN.SKILL`                      | The Sovereign ID. |
-| **Official Name**  | `SKILL.md`                        | The Filename.     |
-| **Version**        | **v15.0 [OMEGA]**                 | The Standard.     |
-| **Domain**         | `GVRN`                            | The Subject.      |
-| **Status (State)** | `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**      | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SKILL` | The Sovereign ID. |
+| **Official Name** | `SKILL.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

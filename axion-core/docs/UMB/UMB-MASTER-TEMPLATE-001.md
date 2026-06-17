@@ -20,36 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                              | Description       |
-| :------------------ | :--------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-UMB-MASTER-TEMPLATE-001-001` | The Sovereign ID. |
-| **Official Name**   | `UMB-MASTER-TEMPLATE-001.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                  | The Standard.     |
-| **Domain**          | `GVRN`                             | The Subject.      |
-| **Celestial Class** | `[PLANET]`                         | The Weight.       |
-| **Evolution**       | `Omega Ascension`                  | The Maturity.     |
-| **Status**          | `[ACTIVE]`                         | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`      | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-UMB-MASTER-TEMPLATE-001-001` | The Sovereign ID. |
+| **Official Name** | `UMB-MASTER-TEMPLATE-001.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# UMB-MASTER-TEMPLATE-001: Absolute Master Template
-
-## I. Universal Identification & Provenance
-
-| Attribute           | Value                              |
-| :------------------ | :--------------------------------- |
-| **Artifact ID**     | `[RNC-ID]`                         |
-| **Title**           | `[Official Name]`                  |
-| **Version**         | `v11.0`                            |
-| **Domain**          | `[PHL/ARCH/GVRN/CRTV/LOGS]`        |
-| **Evolution**       | `[Evolutionary Alignment]`         |
-| **Signal (ESF)**    | `[ESF-ALPHA/BETA/GAMMA/OMEGA]`     |
-| **Status (State)**  | `[ACTIVE/DRAFT/DEPRECATED]`        |
-| **Tier**            | `[Strategic/Tactical/Operational]` |
-| **Celestial Class** | `[STAR/MOON/PLANET]`               |
-| **Governance**      | `[Primary Authority]`              |
-| **Provenance**      | `Genesis Stamp: [YYYY-MM-DD]`      |
 
 ---
 

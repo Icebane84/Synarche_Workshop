@@ -20,26 +20,16 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-COG.CONTEXT.WEAVE-001`  | The Sovereign ID. |
-| **Official Name**   | `COG.Context.Weave.md`        | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-# Standardized Protocol: ContextWeave Engine (COG.Context.Weave)
-
-> **Domain**: COG (Cognition)
-> **Evolution**: Cognitive Ascension
-> **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-27** **Domain: COG** **State: CANONIZED** **Tags:** `OGLN_v13, Engine, Analytical` **Criticality: High**
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-COG.CONTEXT.WEAVE-001`  | The Sovereign ID. |
+| **Official Name** | `COG.Context.Weave.md`        | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 ---
 

@@ -8,26 +8,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-APP-TEMPLATE-001`       | The Sovereign ID. |
-| **Official Name**   | `APP_TEMPLATE.md`             | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-APP-TEMPLATE-001` | The Sovereign ID. |
+| **Official Name** | `APP_TEMPLATE.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# PROJ-FORGE-APP-001: Actionable Prompt Packet (New Tool)
-
-> **Domain**: SYNR (Synarche) **Evolution**: Authentic Persona **Signal**: ESF-BETA
-
-## Genesis Stamp: 2026-01-20 | Domain: PROJ | State: TEMPLATE | Criticality: Low
-
-**Tags:** `OGLN_v11`, `Template`, `APP`
 
 ---
 

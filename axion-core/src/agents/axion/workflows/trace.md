@@ -28,14 +28,15 @@ artifact_anchor:
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.Prot.Trace`             | The Sovereign ID. |
-| **Official Name** | `trace.md`                    | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
-| **Domain**        | `ARCH`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `ARCH.Prot.Trace` | The Sovereign ID. |
+| **Official Name** | `trace.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `ARCH` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

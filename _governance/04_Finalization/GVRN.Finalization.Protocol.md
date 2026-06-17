@@ -12,14 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                           | Description                                         |
-| :---------------- | :------------------------------ | :-------------------------------------------------- |
-| **Artifact ID**   | `GVRN.Finalization.Protocol`    | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
-| **Official Name** | `GVRN.Finalization.Protocol.md` | **The Filename.**                                   |
-| **Version**       | **v15.1 [SOUL]**                | **The Standard.** (OMEGA v15.1 compliant)           |
-| **Domain**        | `GVRN`                          | **The Subject.**                                    |
-| **Status**        | `[CANONIZED]`                   | **The Lifecycle.**                                  |
-| **Relations**     | `GOVERN_BY: 08_Documentation`   | **The Network.**                                    |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Finalization.Protocol`    | The Sovereign ID. |
+| **Official Name** | `GVRN.Finalization.Protocol.md` | The Filename.     |
+| **Version**       | **v15.1 [SOUL]**                | The Standard.     |
+| **Domain**        | `GVRN`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: 08_Documentation`   | The Network.      |
 
 ---
 

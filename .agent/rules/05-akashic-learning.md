@@ -15,12 +15,13 @@ priority: critical
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-LEARN-001`                   | The Sovereign ID. |
-| **Official Name** | `05-akashic-learning.md`          | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
-| **Domain**        | `GVRN.LEARNING`                   | The Subject.      |
-| **State**         | `[CANONIZED]`                     | The Lifecycle.    |
+| **Artifact ID**   | `AOP-LEARN-001` | The Sovereign ID. |
+| **Official Name** | `05-akashic-learning.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN.LEARNING` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

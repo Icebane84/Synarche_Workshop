@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CSL.001.ChronosLock`    | The Sovereign ID. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CSL.001.ChronosLock` | The Sovereign ID. |
 | **Official Name** | `GVRN.CSL.001.ChronosLock.md` | The Filename.     |
-| **Version**       | **v13.1 [LOCKED]**            | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[CANONIZED]`                 | The Lifecycle.    |
+| **Version**       | **v13.1 [LOCKED]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[CANONIZED]` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

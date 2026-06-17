@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                   | Description       |
-| :---------------- | :-------------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.README.TheMind`                   | The Sovereign ID. |
-| **Official Name** | `README.md`                             | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
-| **Domain**        | `MIND`                                  | The Subject.      |
-| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.README.TheMind` | The Sovereign ID. |
+| **Official Name** | `README.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `MIND` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+
 
 ---
 

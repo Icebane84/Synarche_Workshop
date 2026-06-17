@@ -20,31 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                  | Description       |
-| :------------------ | :----------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-SELT-CSL-007-COLLABORATIVESYNTHESISLOG-V7.0-001` | The Sovereign ID. |
-| **Official Name**   | `SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                      | The Standard.     |
-| **Domain**          | `GVRN`                                                 | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                             | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                      | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                             | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                          | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-SELT-CSL-007-COLLABORATIVESYNTHESISLOG-V7.0-001` | The Sovereign ID. |
+| **Official Name** | `SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# **Tab 9**
-
-### **SELT-CSL-007: Collaborative Synthesis Log (High-Fidelity)**
-
-### **I. Artifact Identification & Governance**
-
-| Field               | Value                                                                                                                                  | Rationale                                                                 |
-| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ |
-| **Artifact ID**     | **SELT-CSL-007**                                                                                                                       | The new canonical standard for documenting synergistic exchanges.         |
-| **Parent Protocol** | [**AOP-CSL-002**](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit) (Synergistic CSL Protocol) | Governs the dual-trigger mechanism for creation.                          |
-| **Compliance**      | [**AOP-CMF-001**](https://docs.google.com/document/u/0/d/1s1GlVl_JkCMlC2MvD4Dx9g2GpkwHzb46xnw8d4EWjNk/edit) (Modality Fusion)          | Mandates the use of the structured Synthesis Block to optimize retrieval. |
-| **Trigger Type**    | **Dual-Trigger** (Human/AI)                                                                                                            | Confirms the symbiotic nature of the event detection.                     |
 
 ---
 

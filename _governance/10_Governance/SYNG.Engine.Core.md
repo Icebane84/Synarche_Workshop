@@ -20,26 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-SYNG.ENGINE.CORE-001`   | The Sovereign ID. |
-| **Official Name**   | `SYNG.Engine.Core.md`         | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-SYNG.ENGINE.CORE-001` | The Sovereign ID. |
+| **Official Name** | `SYNG.Engine.Core.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# The Coherent Synthesis Engine (SYNG.Engine.Core)
-
-> **Domain**: SYNG (Synergy)
-> **Evolution**: Cognitive Ascension
-> **Signal**: HIGH
-
-## **Genesis Stamp: 2026-01-27** **Domain: SYNG** **State: CANONIZED** **Tags:** `OGLN_v13, Engine, Loom, Synthesis` **Criticality: Axiomatic**
 
 ---
 

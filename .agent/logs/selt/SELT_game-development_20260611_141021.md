@@ -1,13 +1,14 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                | Value                                        | Description       |
-| :----------------- | :------------------------------------------- | :---------------- |
-| **Artifact ID**    | `GVRN.SELT.GameDev.Enhance.SidechainDucking` | The Sovereign ID. |
-| **Official Name**  | `SELT_game-development_20260611_141021.md`   | The Filename.     |
-| **Version**        | **v15.0 [OMEGA]**                            | The Standard.     |
-| **Domain**         | `GVRN`                                       | The Subject.      |
-| **Status (State)** | `[ACTIVE]`                                   | The Lifecycle.    |
-| **Relations**      | `GOVERNED_BY: CORE.Codex.Phoenix`            | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SELT.GameDev.Enhance.SidechainDucking` | The Sovereign ID. |
+| **Official Name** | `SELT_game-development_20260611_141021.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

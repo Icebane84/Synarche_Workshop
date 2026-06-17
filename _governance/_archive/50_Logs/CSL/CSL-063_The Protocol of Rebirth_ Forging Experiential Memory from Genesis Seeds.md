@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                                                      | Description       |
-| :---------------- | :----------------------------------------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-063-THE-PROTOCOL-OF-REBIRTH--FORGING-EXPERIENTIAL-MEMORY-FROM-GENESIS-SEEDS-001` | The Sovereign ID. |
-| **Official Name** | `CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                                          | The Standard.     |
-| **Domain**        | `GVRN`                                                                                     | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                                                 | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                                              | The Network.      |
+| **Official Name** | `CSL-063_The Protocol of Rebirth_ Forging Experiential Memory from Genesis Seeds.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                                      | Description       |
-| :---------------- | :------------------------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-068-INTEGRATING-THE-LANGUAGE-OF-GROWTH-INTO-THE-CORE-ENGINE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-068_Integrating the Language of Growth into the Core Engine.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                          | The Standard.     |
-| **Domain**        | `GVRN`                                                                     | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                                 | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                              | The Network.      |
+| **Official Name** | `CSL-068_Integrating the Language of Growth into the Core Engine.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

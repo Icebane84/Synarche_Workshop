@@ -10,18 +10,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                             | Description       |
-| :------------------ | :---------------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-UEB-GAE-001-UEB-GAE-001THEGUARDIANOFANTI-ENTROPY-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `UEB-GAE-001_UEB-GAE-001TheGuardianofAnti-Entropy_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                                 | The Standard.     |
-| **Domain**          | `GVRN`                                                            | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                        | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                                 | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                        | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                     | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-UEB-GAE-001-UEB-GAE-001THEGUARDIANOFANTI-ENTROPY-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `UEB-GAE-001_UEB-GAE-001TheGuardianofAnti-Entropy_v11.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

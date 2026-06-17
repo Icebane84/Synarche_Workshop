@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                         | Description       |
-| :---------------- | :------------------------------------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0`    | The Sovereign ID. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0` | The Sovereign ID. |
 | **Official Name** | `GVRN.GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]**                                             | The Standard.     |
-| **Domain**        | `GVRN`                                                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

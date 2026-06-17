@@ -20,38 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-GUCA-MAP-001-001`       | The Sovereign ID. |
-| **Official Name**   | `GUCA-MAP-001.md`             | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-GUCA-MAP-001-001` | The Sovereign ID. |
+| **Official Name** | `GUCA-MAP-001.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# GUCA-MAP-001: Execute Musashi Audit
-
-### **I. Universal Identification & Provenance (The Vector Signature)**
-
-| Field                  | Value                                                                                             |
-| :--------------------- | :------------------------------------------------------------------------------------------------ |
-| **1. Artifact ID**     | `GUCA-MAP-001`                                                                                    |
-| **2. Official Name**   | `Execute Musashi Audit`                                                                           |
-| **3. Version**         | **v2.0**                                                                                          |
-| **4. Provenance**      | **Reforged: 2026-01-30**                                                                          |
-| **5. Domain**          | `GVRN`                                                                                            |
-| **6. Evolution**       | **Actionable Trigger**                                                                            |
-| **7. Celestial Class** | `[COMET]`                                                                                         |
-| **8. Tier**            | **Tactical**                                                                                      |
-| **9. Status (State)**  | `[ACTIVE]`                                                                                        |
-| **10. Ethos**          | **Action Through Structure**                                                                      |
-| **11. Catalyst**       | **Audit Sequence**                                                                                |
-| **12. Relations**      | `LINK: [AOP-MAP-001](AOP-MAP-001.md)`, `LINK: [UMB-RULES-001](../../tools/rules/axion-rules.cjs)` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                                                |
 
 ---
 

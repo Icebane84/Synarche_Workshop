@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                     | Description       |
-| :---------------- | :-------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                         | The Standard.     |
-| **Domain**        | `GVRN`                                                    | The Subject.      |
-| **Status**        | `ACTIVE`                                                  | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
+| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `ACTIVE` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

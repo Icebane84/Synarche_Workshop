@@ -10,14 +10,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.Forge.Core`               | The Sovereign ID. |
-| **Official Name** | `GVRN.Forge.Core.md`            | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Forge.Core` | The Sovereign ID. |
+| **Official Name** | `GVRN.Forge.Core.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

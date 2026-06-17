@@ -1,13 +1,14 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                            | Description       |
-| :---------------- | :------------------------------- | :---------------- |
-| **Artifact ID**   | `SOV.PLAY.Infrastructure`        | The Sovereign ID. |
-| **Official Name** | `infrastructure-playbook.md`     | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                | The Standard.     |
-| **Domain**        | `SOV`                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                       | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SOV.PLAY.Infrastructure` | The Sovereign ID. |
+| **Official Name** | `infrastructure-playbook.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `SOV` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: GVRN.Assembler.Core` | The Network.      |
+
 
 ---
 

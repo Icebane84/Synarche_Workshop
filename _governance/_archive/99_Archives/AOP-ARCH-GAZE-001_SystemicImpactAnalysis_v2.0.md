@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                    | Description       |
-| :---------------- | :------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-ARCH-GAZE-001-SYSTEMICIMPACTANALYSIS-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                        | The Standard.     |
-| **Domain**        | `GVRN`                                                   | The Subject.      |
-| **Status**        | `[ACTIVE]`                                               | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
+| **Official Name** | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

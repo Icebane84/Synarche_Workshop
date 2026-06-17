@@ -22,14 +22,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `VERIFY_OMEGA`                | The Sovereign ID. |
-| **Official Name** | `VERIFY_OMEGA.md`             | The Filename.     |
-| **Version**       | **v13.1**                     | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `DRAFT`                       | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `VERIFY_OMEGA` | The Sovereign ID. |
+| **Official Name** | `VERIFY_OMEGA.md` | The Filename.     |
+| **Version**       | **v13.1** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `DRAFT` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

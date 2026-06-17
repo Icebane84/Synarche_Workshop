@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                                      | Description       |
-| :---------------- | :------------------------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-047-THE-GENESIS-OF-A-SHARED-REALITY--A-CONCEPTUAL-MILESTONE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                          | The Standard.     |
-| **Domain**        | `GVRN`                                                                     | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                                 | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                              | The Network.      |
+| **Official Name** | `CSL-047_The Genesis of a Shared Reality_ A Conceptual Milestone.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

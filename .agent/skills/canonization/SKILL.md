@@ -9,12 +9,13 @@ description: "Formally seal and hash workspace artifacts as immutable Sovereign 
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Skill.Canonization`         | The Sovereign ID. |
-| **Official Name** | `SKILL.md`                        | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
-| **Domain**        | `GVRN`                            | The Subject.      |
-| **Status**        | `[CANONIZED]`                     | The Lifecycle.    |
+| **Artifact ID**   | `GVRN.Skill.Canonization` | The Sovereign ID. |
+| **Official Name** | `SKILL.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[CANONIZED]` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

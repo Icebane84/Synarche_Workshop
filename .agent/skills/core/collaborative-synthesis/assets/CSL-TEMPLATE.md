@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                  | Description       |
-| :---------------- | :------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.LOG.CSL.{{ID}}`                  | The Sovereign ID. |
-| **Official Name** | `CSL-TEMPLATE.md`                      | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                      | The Standard.     |
-| **Domain**        | `LOG`                                  | The Subject.      |
-| **Status**        | `[ACTIVE]`                             | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.LOG.CSL.{{ID}}` | The Sovereign ID. |
+| **Official Name** | `CSL-TEMPLATE.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `LOG` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: SKL.CORE.COLLAB-SYNTHESIS` | The Network.      |
+
 
 ---
 

@@ -20,25 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                    | Description       |
-| :------------------ | :--------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CWA-CW-001-CONTEXTWEAVEREPORT-001` | The Sovereign ID. |
-| **Official Name**   | `CWA-CW-001_ContextWeaveReport.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
-| **Domain**          | `GVRN`                                   | The Subject.      |
-| **Celestial Class** | `[PLANET]`                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-CWA-CW-001-CONTEXTWEAVEREPORT-001` | The Sovereign ID. |
+| **Official Name** | `CWA-CW-001_ContextWeaveReport.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# CWA-CW-001: ContextWeave Report (Target: COG.ContextWeave.Engine)
-
-> **Execution ID**: `CWA-CW-001`
-> **Target**: `COG.ContextWeave.Engine.md`
-> **Date**: 2026-01-28
-> **Engine State**: `[ACTIVE]`
 
 ---
 

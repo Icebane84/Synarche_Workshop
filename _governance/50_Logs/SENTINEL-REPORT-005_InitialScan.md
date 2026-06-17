@@ -12,14 +12,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                | Description       |
-| :---------------- | :----------------------------------- | :---------------- |
-| **Artifact ID**   | `SENTINEL-REPORT-005_InitialScan`    | The Sovereign ID. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SENTINEL-REPORT-005_InitialScan` | The Sovereign ID. |
 | **Official Name** | `SENTINEL-REPORT-005_InitialScan.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                    | The Standard.     |
-| **Domain**        | `GVRN`                               | The Subject.      |
-| **Status**        | `[ACTIVE]`                           | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry`          | The Network.      |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+
 
 ---
 

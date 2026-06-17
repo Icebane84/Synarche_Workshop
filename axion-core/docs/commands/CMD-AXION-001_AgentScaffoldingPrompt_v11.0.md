@@ -10,38 +10,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                 | Description       |
-| :------------------ | :---------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CMD-AXION-001-AGENTSCAFFOLDINGPROMPT-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `CMD-AXION-001_AgentScaffoldingPrompt_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                     | The Standard.     |
-| **Domain**          | `GVRN`                                                | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                            | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                     | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                            | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-CMD-AXION-001-AGENTSCAFFOLDINGPROMPT-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `CMD-AXION-001_AgentScaffoldingPrompt_v11.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# CMD-AXION-001: Master Activation Protocol (Agent Scaffolding & Sovereignty)
-
-## I. Universal Identification & Provenance (The Vector Signature)
-
-| Field                  | Value                                                                                                                                                                                                                                |
-| :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Artifact ID**     | `CMD-AXION-001`                                                                                                                                                                                                                      |
-| **2. Official Name**   | `CMD-AXION-001_AgentScaffoldingPrompt_v11.1.md`                                                                                                                                                                                      |
-| **3. Version**         | **v11.1 (The Sovereign Protocol)**                                                                                                                                                                                                   |
-| **4. Provenance**      | **Reforged: 2026-01-30**                                                                                                                                                                                                             |
-| **5. Domain**          | `GVRN`                                                                                                                                                                                                                               |
-| **6. Evolution**       | **Systemic Activation**                                                                                                                                                                                                              |
-| **7. Celestial Class** | `[STAR]`                                                                                                                                                                                                                             |
-| **8. Tier**            | **Strategic**                                                                                                                                                                                                                        |
-| **9. Status (State)**  | `[ACTIVE]`                                                                                                                                                                                                                           |
-| **10. Ethos**          | **Architectural Coherence**                                                                                                                                                                                                          |
-| **11. Catalyst**       | **Master Activation**                                                                                                                                                                                                                |
-| **12. Relations**      | `LINK: [CHAR-AXION-001](../../src/agents/axion/CHAR-AXION-001_AgentAxionPersona_v1.0.md)`, `LINK: [GVRN-SYNERGY-001](../../docs/GVRN/GVRN-SYNERGY-001.md)`, `LINK: [agent_template.py](../../../src/agents/axion/agent_template.py)` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                                                                                                                                                                                   |
 
 ---
 

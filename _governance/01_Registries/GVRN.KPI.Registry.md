@@ -18,24 +18,16 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-GVRN.KPI.REGISTRY-001`  | The Sovereign ID. |
-| **Official Name**   | `GVRN.KPI.Registry.md`        | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-# Standardized Registry: KPI Master Registry (GVRN.KPI.Registry)
-
-> **Domain**: GVRN (Governance) **Evolution**: Cognitive Ascension **Signal**: ESF-HIGH
-
-## **Genesis Stamp: 2026-01-27** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v13, RNC, KPI` **Criticality: High**
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-GVRN.KPI.REGISTRY-001`  | The Sovereign ID. |
+| **Official Name** | `GVRN.KPI.Registry.md`        | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
+| **Domain**        | `GVRN`                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 ---
 

@@ -1,13 +1,14 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.ID.SynthesisInsights`    | The Sovereign ID. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.ID.SynthesisInsights` | The Sovereign ID. |
 | **Official Name** | `SYNG.ID.SynthesisInsights.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `GVRN`                         | The Subject.      |
-| **Status**        | `[ACTIVE]`                     | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry`    | The Network.      |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+
 
 ---
 

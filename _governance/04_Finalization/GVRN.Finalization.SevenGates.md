@@ -12,14 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description                                         |
-| :---------------- | :-------------------------------- | :-------------------------------------------------- |
-| **Artifact ID**   | `GVRN.Finalization.SevenGates`    | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
-| **Official Name** | `GVRN.Finalization.SevenGates.md` | **The Filename.**                                   |
-| **Version**       | **v15.0 [OMEGA]**                 | **The Standard.** (OMEGA v15.0 compliant)           |
-| **Domain**        | `GVRN`                            | **The Subject.**                                    |
-| **Status**        | `[CANONIZED]`                     | **The Lifecycle.**                                  |
-| **Relations**     | `AUDIT_OF: 04_Finalization`       | **The Network.**                                    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Finalization.SevenGates`    | The Sovereign ID. |
+| **Official Name** | `GVRN.Finalization.SevenGates.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN`                            | The Subject.      |
+| **Status**        | `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `AUDIT_OF: 04_Finalization`       | The Network.      |
 
 ---
 
