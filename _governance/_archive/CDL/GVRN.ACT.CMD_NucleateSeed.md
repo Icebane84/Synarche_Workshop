@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.CMD_NucleateSeed`    | The Sovereign ID. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.CMD_NucleateSeed` | The Sovereign ID. |
 | **Official Name** | `GVRN.ACT.CMD_NucleateSeed.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**              | The Standard.     |
-| **Domain**        | `GVRN`                         | The Subject.      |
-| **Status**        | `PROPOSED`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `PROPOSED` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

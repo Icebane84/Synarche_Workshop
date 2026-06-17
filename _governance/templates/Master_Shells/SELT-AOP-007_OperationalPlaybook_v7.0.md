@@ -12,14 +12,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                 | Description       |
-| :---------------- | :------------------------------------ | :---------------- |
-| **Artifact ID**   | `SELT.AOP.007`                        | The Sovereign ID. |
-| **Official Name** | `SELT-AOP-007_OperationalPlaybook.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                     | The Standard.     |
-| **Domain**        | `SELT`                                | The Subject.      |
-| **Status**        | `[TEMPLATED]`                         | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: GVRN.Codex.Genesis`       | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SELT.AOP.007` | The Sovereign ID. |
+| **Official Name** | `SELT-AOP-007_OperationalPlaybook_v7.0.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `SELT` | The Subject.      |
+| **Status**        | `[TEMPLATED]` | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: GVRN.Codex.Genesis` | The Network.      |
+
 
 ---
 

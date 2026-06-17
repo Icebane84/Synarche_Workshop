@@ -1,13 +1,14 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                   | Description       |
-| :---------------- | :-------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.PAR.001`                          | The Sovereign ID. |
-| **Official Name** | `GVRN.PAR.001.md`                       | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]**                       | The Standard.     |
-| **Domain**        | `GVRN`                                  | The Subject.      |
-| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.PAR.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.PAR.001.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+
 
 ---
 

@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                          | Description       |
-| :---------------- | :--------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-GVRN.AXIOMATIC.LATTICE-V13.0-LEGACY-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Axiomatic.Lattice_v13.0_Legacy.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                              | The Standard.     |
-| **Domain**        | `GVRN`                                         | The Subject.      |
-| **Status**        | `[ACTIVE]`                                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
+| **Official Name** | `GVRN.Axiomatic.Lattice_v13.0_Legacy.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

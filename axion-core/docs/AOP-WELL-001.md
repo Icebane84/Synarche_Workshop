@@ -20,37 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-AOP-WELL-001-001`       | The Sovereign ID. |
-| **Official Name**   | `AOP-WELL-001.md`             | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-AOP-WELL-001-001` | The Sovereign ID. |
+| **Official Name** | `AOP-WELL-001.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# AOP-WELL-001: Mimir's Well Protocol
-
-## I. Universal Identification & Provenance
-
-| Attribute           | Value                                                                                                                          |
-| :------------------ | :----------------------------------------------------------------------------------------------------------------------------- |
-| **Artifact ID**     | `AOP-WELL-001`                                                                                                                 |
-| **Official Name**   | `Mimir's Well Protocol`                                                                                                        |
-| **Version**         | **v1.0**                                                                                                                       |
-| **Domain**          | `SYNR`                                                                                                                         |
-| **Evolution**       | **Experiential Memory**                                                                                                        |
-| **Signal (ESF)**    | `ESF-STANDARD`                                                                                                                 |
-| **Status (State)**  | `[ACTIVE]`                                                                                                                     |
-| **Tier**            | **Strategic**                                                                                                                  |
-| **Celestial Class** | `[MOON]`                                                                                                                       |
-| **Governance**      | `GVRN-SYNERGY-001`                                                                                                             |
-| **Provenance**      | `Genesis Stamp: 2026-01-24`                                                                                                    |
-| **Relations**       | `LINK: `UMB-PRS-001`, LINK: UMB-RULES-001`, `LINK: `UMB-PRS-001`, LINK: AOP-AG-003`, `LINK: `UMB-PRS-001`, LINK: UMB-LOOM-001` |
 
 ---
 

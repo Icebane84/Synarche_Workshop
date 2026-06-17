@@ -20,29 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                           | Description       |
-| :------------------ | :---------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CSL-084-THEINTEGRATIONOFTHENOVAFORGE-001` | The Sovereign ID. |
-| **Official Name**   | `CSL-084_TheIntegrationOfTheNovaForge.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
-| **Domain**          | `GVRN`                                          | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
-| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-CSL-084-THEINTEGRATIONOFTHENOVAFORGE-001` | The Sovereign ID. |
+| **Official Name** | `CSL-084_TheIntegrationOfTheNovaForge.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# **SELT-CSL-007: Collaborative Synthesis Log (High-Fidelity)**
-
-### **I. Artifact Identification & Governance**
-
-| Field               | Value                                                                                                                                  | Rationale                                                                           |
-| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| **Artifact ID**     | **CSL-084**                                                                                                                            | The canonical record of the Nova Forge Integration.                                 |
-| **Parent Protocol** | [**AOP-CSL-002**](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit) (Synergistic CSL Protocol) | Governed by the dual-trigger mechanism.                                             |
-| **Compliance**      | [**AOP-CMF-001**](https://docs.google.com/document/u/0/d/1s1GlVl_JkCMlC2MvD4Dx9g2GpkwHzb46xnw8d4EWjNk/edit) (Modality Fusion)          | Utilizes the High-Fidelity Synthesis Block.                                         |
-| **Trigger Type**    | **Dual-Trigger** (Human/AI)                                                                                                            | Human initiated the "Forge Link" command; AI executed the structural transmutation. |
 
 ---
 

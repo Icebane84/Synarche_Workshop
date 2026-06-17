@@ -12,14 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                | Value                                                           | Description       |
-| :----------------- | :-------------------------------------------------------------- | :---------------- |
-| **Artifact ID**    | `GVRN.Taxonomy.Relationships`                                   | The Sovereign ID. |
-| **Official Name**  | `GVRN.Taxonomy.Relationships.md`                                | The Filename.     |
-| **Version**        | **v15.0 [OMEGA]**                                               | The Standard.     |
-| **Domain**         | `GVRN`                                                          | The Subject.      |
-| **Status (State)** | `[CANONIZED]`                                                   | The Lifecycle.    |
-| **Relations**      | `DEFINED_BY: GVRN.REG.Lexicon, GOVERNED_BY: SYNG.Link.Semantic` | The Network.      |
+| Key               | Value                                                           | Description       |
+| :---------------- | :-------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Taxonomy.Relationships`                                   | The Sovereign ID. |
+| **Official Name** | `GVRN.Taxonomy.Relationships.md`                                | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                                               | The Standard.     |
+| **Domain**        | `GVRN`                                                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                      | The Lifecycle.    |
+| **Relations**     | `DEFINED_BY: GVRN.REG.Lexicon, GOVERNED_BY: SYNG.Link.Semantic` | The Network.      |
 
 ---
 

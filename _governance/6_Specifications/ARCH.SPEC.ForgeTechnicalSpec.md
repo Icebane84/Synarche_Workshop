@@ -14,12 +14,13 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.SPEC.ForgeTechnicalSpec`    | The Sovereign ID. |
+| **Artifact ID**   | `ARCH.SPEC.ForgeTechnicalSpec` | The Sovereign ID. |
 | **Official Name** | `ARCH.SPEC.ForgeTechnicalSpec.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]**                 | The Standard.     |
-| **Domain**        | `ARCH`                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`     | The Network.      |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `ARCH` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

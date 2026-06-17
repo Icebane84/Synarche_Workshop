@@ -18,24 +18,16 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                          | Description       |
-| :------------------ | :----------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-GVRN.CATALOG.MASTER-001` | The Sovereign ID. |
-| **Official Name**   | `GVRN.Catalog.Master.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**              | The Standard.     |
-| **Domain**          | `GVRN`                         | The Subject.      |
-| **Celestial Class** | `[PLANET]`                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                     | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
-
-# Standardized Registry: The Phoenix Geode Catalog (GVRN.Catalog.Master)
-
-> **Domain**: GVRN (Governance) **Evolution**: Cognitive Ascension **Signal**: HIGH
-
-## **Genesis Stamp: 2026-01-27** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v13, Catalog, Master` **Criticality: High**
+| Key               | Value                          | Description       |
+| :---------------- | :----------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-GVRN.CATALOG.MASTER-001` | The Sovereign ID. |
+| **Official Name** | `GVRN.Catalog.Master.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**              | The Standard.     |
+| **Domain**        | `GVRN`                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 
 ---
 

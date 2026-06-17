@@ -12,14 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                    | Description                                         |
-| :---------------- | :--------------------------------------- | :-------------------------------------------------- |
-| **Artifact ID**   | `GVRN.AvatarSuite.Masks`                 | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
-| **Official Name** | `GVRN.AvatarSuite.Masks.md`              | **The Filename.**                                   |
-| **Version**       | **v15.0 [OMEGA]**                        | **The Standard.** (OMEGA v15.0 [ASCENDED])          |
-| **Domain**        | `GVRN`                                   | **The Subject.**                                    |
-| **Status**        | `[CANONIZED]`                            | **The Lifecycle.**                                  |
-| **Relations**     | `GOVERNED_BY: GVRN.AvatarSuite.Protocol` | **The Network.**                                    |
+| Key               | Value                                    | Description       |
+| :---------------- | :--------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.AvatarSuite.Masks`                 | The Sovereign ID. |
+| **Official Name** | `GVRN.AvatarSuite.Masks.md`              | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                        | The Standard.     |
+| **Domain**        | `GVRN`                                   | The Subject.      |
+| **Status**        | `[CANONIZED]`                            | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: GVRN.AvatarSuite.Protocol` | The Network.      |
 
 ---
 

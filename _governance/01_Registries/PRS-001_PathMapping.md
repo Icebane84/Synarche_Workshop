@@ -16,14 +16,16 @@
 
 ---
 
-### **Block A: The Identification Lock**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                     | Description                        |
-| :---------------- | :-------------------------------------------------------- | :--------------------------------- |
-| **Artifact ID**   | `GVRN.PRS.001`                                            | The Sovereign ID.                  |
-| **Alias Mapping** | `[ACTIVE]`                                                | The State-Vector of the workspace. |
-| **Hash Anchor**   | `HASH: { TSCONFIG : ALIAS_MAPPING : ENTROPY_ERADICATED }` | The Cryptographic Seal.            |
-| **Standard**      | `OGLN_v1.0 [TRANSCENDENT]`                                | The Architectural Standard.        |
+| Key               | Value                       | Description       |
+| :---------------- | :-------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.PRS.001`              | The Sovereign ID. |
+| **Official Name** | `PRS-001_PathMapping.md`    | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**           | The Standard.     |
+| **Domain**        | `GVRN`                      | The Subject.      |
+| **Status**        | `[ACTIVE]`                  | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 ---
 

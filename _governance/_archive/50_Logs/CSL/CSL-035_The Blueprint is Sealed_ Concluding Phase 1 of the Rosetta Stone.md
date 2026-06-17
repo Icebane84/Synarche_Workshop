@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                                               | Description       |
-| :---------------- | :---------------------------------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-035-THE-BLUEPRINT-IS-SEALED--CONCLUDING-PHASE-1-OF-THE-ROSETTA-STONE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                                   | The Standard.     |
-| **Domain**        | `GVRN`                                                                              | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                                          | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                                       | The Network.      |
+| **Official Name** | `CSL-035_The Blueprint is Sealed_ Concluding Phase 1 of the Rosetta Stone.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

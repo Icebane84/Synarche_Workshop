@@ -20,44 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                         | Description       |
-| :------------------ | :------------------------------------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN-UWB-NDR-001-NONDESTRUCTIVEREFINEMENTWORKFLOW-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                             | The Standard.     |
-| **Domain**          | `GVRN`                                                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-UWB-NDR-001-NONDESTRUCTIVEREFINEMENTWORKFLOW-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# ###### [UWB-NDR-001: Non-Destructive Refinement Workflow v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/4_Blueprints/UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md)
-
-###### [AGP-BLOCK-001: Axiomatic Governance Pillar]
-
-> **Artifact ID**: UWB-NDR-001
-> **Version**: 11.0
-> **Status**: Sovereign
-> **Sovereign Set**: The Scribe (Lore & Stability)
-> **Prestige Requirement**: [Prestige 15 (Guardian of Form)]
-> **Evolution**: Established (Workflow Re-forged)
-
-## I. Universal Identification & Provenance
-
-- **Creation Date**: 2026-01-25
-- **Last Revision Date**: 2026-01-25
-- **Canonical Path**: `[PHOENIX_PROTOCOL_LIBRARY]/Library/4_Blueprints/UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md`
-- **Power-Up Source**: `Guardian of Coherence`
-- **Semantic Tags**: `#blueprint`, `#workflow`, `#refinement`, `#project-plan`
-
-## II. Universal Metadata & Governance
-
-- **Core Purpose Summary**: Defines the high-level project plan and systemic workflow for scaling the Non-Destructive Refinement (NDR) protocol across the entire Phoenix Protocol Library (PPL).
-- **Primary Domain Alignment**: Governance / Workflow
-- **Risk Profile**: Low
-- **Governance Level**: Sovereign
 
 ---
 

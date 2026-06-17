@@ -20,26 +20,16 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                         | Description       |
-| :------------------ | :------------------------------------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN-AOP-SENTINEL-SCAN-001-THECODESENTINELPROTOCOL-V2.1-001` | The Sovereign ID. |
-| **Official Name**   | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                             | The Standard.     |
-| **Domain**          | `GVRN`                                                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
-
-# AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol (v2.2)
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: Standard
-
-**Tags:** `OGLN_v10`, `Security`, `Audit`
+| Key               | Value                                                         | Description       |
+| :---------------- | :------------------------------------------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN-AOP-SENTINEL-SCAN-001-THECODESENTINELPROTOCOL-V2.1-001` | The Sovereign ID. |
+| **Official Name** | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**                                             | The Standard.     |
+| **Domain**        | `GVRN`                                                        | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                    | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
 
 ---
 

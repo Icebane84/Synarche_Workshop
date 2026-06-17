@@ -8,36 +8,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-WORKSHOP-MAP-001`       | The Sovereign ID. |
-| **Official Name**   | `WORKSHOP_MAP.md`             | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-WORKSHOP-MAP-001` | The Sovereign ID. |
+| **Official Name** | `WORKSHOP_MAP.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# WORKSHOP_MAP.md: The Cartography of the Synarche
-
-> **Date**: 2026-01-31 | **Domain**: GVRN (Governance) | **Artifact ID**: GVRN-MAP-001 | **Status**: ACTIVE
-
-## I. The Sovereign Root (The Anchor)
-
-The root `Synarche_Workspace/` is the **Governance Domain**. It houses the laws, the enforcers, and the configuration
-anchors for the entire Monorepo.
-
-- 📄 **[.code-workspace](file:///c:/Users/Chris/Synarche_Workspace/Synarche_Workspace.code-workspace)**: The Sovereign
-  Anchor. Contains VS Code settings (Prettier, Ruff, CSpell).
-- ⚙️ **[pyproject.toml](file:///c:/Users/Chris/Synarche_Workspace/pyproject.toml)**: The Python Sentinel (Ruff).
-- 🛡️ **[.trunk/trunk.yaml](file:///c:/Users/Chris/Synarche_Workspace/.trunk/trunk.yaml)**: The Meta-Enforcer.
-- 📖 **[cspell.json](file:///c:/Users/Chris/Synarche_Workspace/cspell.json)**: The Dictionary.
-- 📐 **[.markdownlint.cjs](file:///c:/Users/Chris/Synarche_Workspace/.markdownlint.cjs)**: The Standardizer.
-- 📡 **[sonar-project.properties](file:///c:/Users/Chris/Synarche_Workspace/sonar-project.properties)**: The All-Seeing
-  Eye.
 
 ---
 

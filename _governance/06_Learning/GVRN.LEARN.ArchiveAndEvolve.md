@@ -12,14 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                            | Description                                         |
-| :---------------- | :------------------------------- | :-------------------------------------------------- |
-| **Artifact ID**   | `GVRN.LEARN.ArchiveAndEvolve`    | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
-| **Official Name** | `GVRN.LEARN.ArchiveAndEvolve.md` | **The Filename.**                                   |
-| **Version**       | **v1.0 [ORIGIN]**                | **The Standard.** (OMEGA v15.0 compliant)           |
-| **Domain**        | `GVRN`                           | **The Subject.**                                    |
-| **Status**        | `[CANONIZED]`                    | **The Lifecycle.**                                  |
-| **Relations**     | `EVOLVED_FROM: AGK2.0.Defaults`  | **The Lineage.**                                    |
+| Key               | Value                            | Description       |
+| :---------------- | :------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.LEARN.ArchiveAndEvolve`    | The Sovereign ID. |
+| **Official Name** | `GVRN.LEARN.ArchiveAndEvolve.md` | The Filename.     |
+| **Version**       | **v1.0 [ORIGIN]**                | The Standard.     |
+| **Domain**        | `GVRN`                           | The Subject.      |
+| **Status**        | `[CANONIZED]`                    | The Lifecycle.    |
+| **Relations**     | `EVOLVED_FROM: AGK2.0.Defaults`  | The Network.      |
 
 ---
 

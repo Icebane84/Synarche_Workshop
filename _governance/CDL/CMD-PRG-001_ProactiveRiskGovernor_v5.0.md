@@ -20,24 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                             | Description       |
-| :------------------ | :------------------------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN-CMD-PRG-001-PROACTIVERISKGOVERNOR-V5.0-001` | The Sovereign ID. |
-| **Official Name**   | `CMD-PRG-001_ProactiveRiskGovernor_v5.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                 | The Standard.     |
-| **Domain**          | `GVRN`                                            | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                        | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                 | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                        | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-CMD-PRG-001-PROACTIVERISKGOVERNOR-V5.0-001` | The Sovereign ID. |
+| **Official Name** | `CMD-PRG-001_ProactiveRiskGovernor_v5.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# **Proactive Risk Governor (CMD-PRG-001)**
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
 

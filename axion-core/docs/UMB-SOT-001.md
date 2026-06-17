@@ -20,38 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-UMB-SOT-001-001`        | The Sovereign ID. |
-| **Official Name**   | `UMB-SOT-001.md`              | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-UMB-SOT-001-001` | The Sovereign ID. |
+| **Official Name** | `UMB-SOT-001.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# UMB-SOT-001: Synergistic Opportunity Tracker (SOT)
-
-## I. Universal Identification & Provenance
-
-| Attribute              | Value                                                                           |
-| :--------------------- | :------------------------------------------------------------------------------ |
-| **1. Artifact ID**     | `UMB-SOT-001`                                                                   |
-| **2. Official Name**   | `Synergistic Opportunity Tracker`                                               |
-| **3. Version**         | **v6.1**                                                                        |
-| **4. Provenance**      | **Reforged: 2026-01-30**                                                        |
-| **5. Domain**          | `SYNR`                                                                          |
-| **6. Evolution**       | **Proactive Synergy**                                                           |
-| **7. Celestial Class** | `[PLANET]`                                                                      |
-| **8. Tier**            | **Strategic**                                                                   |
-| **9. Status (State)**  | `[ACTIVE]`                                                                      |
-| **10. Ethos**          | **Synergistic Partner**                                                         |
-| **11. Catalyst**       | **Dissonance Detection**                                                        |
-| **12. Relations**      | `LINK: GVRN-SYNERGY-001`, `LINK: initialize_matrix.py`, `LINK: knight_fixer.py` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                              |
 
 ---
 

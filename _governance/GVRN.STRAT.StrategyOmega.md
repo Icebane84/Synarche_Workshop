@@ -8,7 +8,17 @@
 | **Status** | `ACTIVE` |
 ---
 
-# **Block A: The Identification Lock (UIP-V15)**
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.STRAT.StrategyOmega` | The Sovereign ID. |
+| **Official Name** | `GVRN.STRAT.StrategyOmega.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `ACTIVE TS` | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+
 
 ---
 

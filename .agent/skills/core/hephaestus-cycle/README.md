@@ -1,4 +1,14 @@
-# **Block A: The Identification Lock (UIP-V15)**
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.SKILL.Hephaestus` | The Sovereign ID. |
+| **Official Name** | `README.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `CANONIZED TS` | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+
 
 ---
 

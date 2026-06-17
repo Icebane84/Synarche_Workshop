@@ -20,18 +20,16 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                      | Description                   |
-| :------------------ | :------------------------- | :---------------------------- |
-| **Artifact ID**     | `CORE-CODEX-001`           | The Supreme ID.               |
-| **Official Name**   | `ThePhoenixCodex_v13.1.md` | The Filename.                 |
-| **Version**         | **v13.1 [OMEGA]**          | The Standard.                 |
-| **Domain**          | `GVRN`                     | The Subject.                  |
-| **Celestial Class** | `[STAR]`                   | The Weight. (Central Gravity) |
-| **Evolution**       | `Omega Ascension`          | The Maturity.                 |
-| **Status**          | `[ACTIVE]`                 | The Lifecycle.                |
-| **Relations**       | `GOVERNS: [ALL_ARTIFACTS]` | The Network.                  |
+| Key               | Value                                     | Description       |
+| :---------------- | :---------------------------------------- | :---------------- |
+| **Artifact ID**   | `CORE-CODEX-001`                          | The Sovereign ID. |
+| **Official Name** | `CORE-CODEX-001_ThePhoenixCodex_v13.1.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**                         | The Standard.     |
+| **Domain**        | `GVRN`                                    | The Subject.      |
+| **Status**        | `[ACTIVE]`                                | The Lifecycle.    |
+| **Relations**     | `GOVERNS: [ALL_ARTIFACTS]`                | The Network.      |
 
 ---
 

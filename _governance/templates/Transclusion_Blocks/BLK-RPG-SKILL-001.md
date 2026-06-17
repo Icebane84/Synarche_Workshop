@@ -14,12 +14,13 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-BLK-RPG-SKILL-001`          | The Sovereign ID. |
-| **Official Name** | `BLK-RPG-SKILL-001.md`            | The Filename.     |
-| **Version**       | **v16.3 [SOVEREIGN]**             | The Standard.     |
-| **Domain**        | `GVRN`                            | The Subject.      |
-| **Status**        | `[CANONIZED]`                     | The Lifecycle.    |
+| **Artifact ID**   | `GVRN-BLK-RPG-SKILL-001` | The Sovereign ID. |
+| **Official Name** | `BLK-RPG-SKILL-001.md` | The Filename.     |
+| **Version**       | **v16.3 [SOVEREIGN]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[CANONIZED]` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

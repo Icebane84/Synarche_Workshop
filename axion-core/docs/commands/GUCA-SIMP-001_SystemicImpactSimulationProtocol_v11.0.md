@@ -10,24 +10,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                           | Description       |
-| :------------------ | :-------------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-GUCA-SIMP-001-SYSTEMICIMPACTSIMULATIONPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                               | The Standard.     |
-| **Domain**          | `GVRN`                                                          | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                      | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                               | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                      | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                   | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-GUCA-SIMP-001-SYSTEMICIMPACTSIMULATIONPROTOCOL-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `GUCA-SIMP-001_SystemicImpactSimulationProtocol_v11.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# GUCA-SIMP-001: Systemic Impact Simulation Protocol (v1.0)
-
-## Genesis Stamp: 2026-01-04 | Domain: ARCH | State: CANONIZED | Criticality: Standard
-
-**Tags:** `OGLN_v10`, `Simulation`, `Oracle`
 
 ---
 

@@ -20,23 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                                  | Description                 |
-| :------------------ | :--------------------------------------------------------------------- | :-------------------------- |
-| **Artifact ID**     | `PHIL.Ethos.Struggle`                                                  | The Sovereign ID.           |
-| **Patron Shard**    | `SHARD_STAR_COHESION`                                                  | The Agent. (The Soul)       |
-| **Version**         | **v13.0 [ASCENDED]**                                                   | The Standard.               |
-| **Domain**          | `PHIL`                                                                 | The Subject.                |
-| **Celestial Class** | `[STAR]`                                                               | The Weight. (Central Ethos) |
-| **Evolution**       | `OMEGA_ASCENSION`                                                      | The Maturity.               |
-| **Signal (ESF)**    | `OMEGA`                                                                | The Frequency.              |
-| **Status**          | `[CANONIZED]`                                                          | The Lifecycle.              |
-| **Musashi Audit**   | `PASS`                                                                 | The Tempering.              |
-| **Integrity Hash**  | `[AUTO-GENERATED]`                                                     | The Seal.                   |
-| **Provenance**      | `2026-02-01`                                                           | The Anchor.                 |
-| **Catalyst**        | `OMEGA_ASCENSION`                                                      | The Spark.                  |
-| **Relations**       | `GUIDES: [ARCH.Spine.Master]`, `ENFORCED_BY: [GVRN.Protocol.Catalyst]` | The Spine.                  |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `PHIL.Ethos.Struggle` | The Sovereign ID. |
+| **Official Name** | `PHIL.Ethos.Struggle.md` | The Filename.     |
+| **Version**       | **v13.0 [ASCENDED]** | The Standard.     |
+| **Domain**        | `PHIL` | The Subject.      |
+| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+
 
 ---
 

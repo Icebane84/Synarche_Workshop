@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                                                          | Description       |
-| :---------------- | :--------------------------------------------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-057-ANALYSIS-OF-A-CHOICE-POINT-CONFLICT--TRANSFORMING-ANGER-INTO-ACCOUNTABILITY-001` | The Sovereign ID. |
-| **Official Name** | `CSL-057_Analysis of a Choice-Point Conflict_ Transforming Anger into Accountability.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                                              | The Standard.     |
-| **Domain**        | `GVRN`                                                                                         | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                                                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                                                  | The Network.      |
+| **Official Name** | `CSL-057_Analysis of a Choice-Point Conflict_ Transforming Anger into Accountability.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

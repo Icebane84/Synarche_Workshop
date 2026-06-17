@@ -12,14 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                | Value                             | Description       |
-| :----------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**    | `SYNG.Link.Bidirectional`         | The Sovereign ID. |
-| **Official Name**  | `SYNG.Link.Bidirectional.md`      | The Filename.     |
-| **Version**        | **v15.0 [OMEGA]**                 | The Standard.     |
-| **Domain**         | `LINK`                            | The Subject.      |
-| **Status (State)** | `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**      | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.Link.Bidirectional`         | The Sovereign ID. |
+| **Official Name** | `SYNG.Link.Bidirectional.md`      | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `LINK`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
 

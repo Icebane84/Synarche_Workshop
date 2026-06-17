@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                             | Description       |
-| :---------------- | :------------------------------------------------ | :---------------- |
-| **Artifact ID**   | `ARCH.Spec.CSE`                                   | The Sovereign ID. |
-| **Official Name** | `ARCH.Spec.CSE.md`                                | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                 | The Standard.     |
-| **Domain**        | `ARCH`                                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                                        | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `ARCH.Spec.CSE` | The Sovereign ID. |
+| **Official Name** | `ARCH.Spec.CSE.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `ARCH` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `DEFINES: GVRN.CSE.001, ALIGNS: SYNG.Loom.Master` | The Network.      |
+
 
 ---
 

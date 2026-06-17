@@ -12,14 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                     | Description                                         |
-| :---------------- | :------------------------ | :-------------------------------------------------- |
-| **Artifact ID**   | `GVRN.Canonizer.Index`    | **The Sovereign ID.** (DOMAIN.Subsystem.Descriptor) |
-| **Official Name** | `GVRN.Canonizer.Index.md` | **The Filename.**                                   |
-| **Version**       | **v15.0 [OMEGA]**         | **The Standard.** (OMEGA v15.0 compliant)           |
-| **Domain**        | `GVRN`                    | **The Subject.**                                    |
-| **Status**        | `[CANONIZED]`             | **The Lifecycle.**                                  |
-| **Relations**     | `INDEX_OF: 07_Canonizer`  | **The Network.**                                    |
+| Key               | Value                     | Description       |
+| :---------------- | :------------------------ | :---------------- |
+| **Artifact ID**   | `GVRN.Canonizer.Index`    | The Sovereign ID. |
+| **Official Name** | `GVRN.Canonizer.Index.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**         | The Standard.     |
+| **Domain**        | `GVRN`                    | The Subject.      |
+| **Status**        | `[CANONIZED]`             | The Lifecycle.    |
+| **Relations**     | `INDEX_OF: 07_Canonizer`  | The Network.      |
 
 ---
 

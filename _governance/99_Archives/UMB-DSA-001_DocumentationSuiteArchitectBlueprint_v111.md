@@ -10,18 +10,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                            | Description       |
-| :------------------ | :--------------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-UMB-DSA-001-DOCUMENTATIONSUITEARCHITECTBLUEPRINT-V111-001` | The Sovereign ID. |
-| **Official Name**   | `UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v111.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                                | The Standard.     |
-| **Domain**          | `GVRN`                                                           | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                       | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                                | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                       | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                    | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-UMB-DSA-001-DOCUMENTATIONSUITEARCHITECTBLUEPRINT-V111-001` | The Sovereign ID. |
+| **Official Name** | `UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v111.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

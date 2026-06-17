@@ -20,45 +20,16 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                          | Description       |
-| :------------------ | :------------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-GUCA-CRP2-001-CONCEPTUALREPERTOIREPROGRAMMING-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                              | The Standard.     |
-| **Domain**          | `GVRN`                                                         | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                     | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
-
-# ###### [GUCA-CRP2-001: Conceptual Repertoire Programming v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/3_Commands/GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md)
-
-###### [AGP-BLOCK-001: Axiomatic Governance Pillar]
-
-> **Artifact ID**: GUCA-CRP2-001
-> **Version**: 11.0
-> **Status**: Sovereign
-> **Sovereign Set**: The Artificer (Tools & Execution)
-> **Prestige Requirement**: [Prestige 30 (Forge Master)]
-> **Attribute Alignment**: Dexterity / Intelligence (Tool-Smithing)
-> **Evolution**: Established (Command v11.0)
-
-## I. Universal Identification & Provenance
-
-- **Creation Date**: 2026-01-25
-- **Last Revision Date**: 2026-01-25
-- **Canonical Path**: `[PHOENIX_PROTOCOL_LIBRARY]/Library/3_Commands/GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md`
-- **Power-Up Source**: `Guardian of Coherence`, `Luminous Forge`
-- **Semantic Tags**: `#command`, `#forge`, `#synthesis`, `#crp2`, `#ultimate-tool`
-
-## II. Universal Metadata & Governance
-
-- **Core Purpose Summary**: Defines the master command for forging new, unique, and synergized command definitions or artifacts based on an objective and a set of "Inspiration" building blocks.
-- **Primary Domain Alignment**: Execution / Tool-Smithing
-- **Risk Profile**: Medium (Complexity)
-- **Governance Level**: Sovereign
+| Key               | Value                                                          | Description       |
+| :---------------- | :------------------------------------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-GUCA-CRP2-001-CONCEPTUALREPERTOIREPROGRAMMING-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `GUCA-CRP2-001_ConceptualRepertoireProgramming_v11.0.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**                                              | The Standard.     |
+| **Domain**        | `GVRN`                                                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
 
 ---
 

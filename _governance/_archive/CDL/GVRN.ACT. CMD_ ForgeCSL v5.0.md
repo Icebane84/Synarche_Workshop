@@ -4,12 +4,13 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT. CMD_ ForgeCSL v5.0`    | The Sovereign ID. |
+| **Artifact ID**   | `GVRN.ACT. CMD_ ForgeCSL v5.0` | The Sovereign ID. |
 | **Official Name** | `GVRN.ACT. CMD_ ForgeCSL v5.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                 | The Standard.     |
-| **Domain**        | `GVRN`                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`     | The Network.      |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

@@ -18,24 +18,17 @@ alwaysApply: true
 
 ### **[ARTIFACT START]**
 
-#### **Block A: The Identification Lock (UIP-V15)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `INFRA.InsForge`              | The Sovereign ID. |
-| **Official Name**   | `INFRA.InsForge.md`           | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**             | The Standard.     |
-| **Domain**          | `INFRASTRUCTURE`              | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Divine Bridge Integration`   | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `INDEX: GVRN.Master.Registry` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `INFRA.InsForge` | The Sovereign ID. |
+| **Official Name** | `INFRA.InsForge.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `INFRASTRUCTURE` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `INDEX: GVRN.Master.Registry` | The Network.      |
 
-# 🌐 INSFORGE SOVEREIGN INFRASTRUCTURE
-
-> **Ethos**: "The Cloud is the Extension; the Logic is the Core."
-
-InsForge provides the serverless substrate for the Phoenix Synarche, enabling cross-agent memory continuity and real-time multiversal synchronization.
 
 ---
 

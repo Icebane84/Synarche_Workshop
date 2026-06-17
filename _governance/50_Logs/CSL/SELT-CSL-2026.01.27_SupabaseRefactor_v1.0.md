@@ -20,26 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                | Description       |
-| :------------------ | :--------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-SELT-CSL-2026.01.27-SUPABASEREFACTOR-V1.0-001` | The Sovereign ID. |
-| **Official Name**   | `SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
-| **Domain**          | `GVRN`                                               | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-SELT-CSL-2026.01.27-SUPABASEREFACTOR-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `SELT-CSL-2026.01.27_SupabaseRefactor_v1.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# Standardized Experience Log: Cognitive Synthesis Log (SELT-CSL)
-
-> **Domain**: LOGS
-> **Evolution**: Purposeful Drive
-> **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-27** **Domain: LOGS** **State: CANONIZED** **Tags:** `OGLN_v11` **Criticality: High**
 
 ---
 

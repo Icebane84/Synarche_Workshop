@@ -20,36 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                    | Description       |
-| :------------------ | :------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-SYNG.DNA.CORE-001-DYNAMICNEXUSARCHITECT-V13.0-001` | The Sovereign ID. |
-| **Official Name**   | `SYNG.DNA.CORE-001_DynamicNexusArchitect_v13.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
-| **Domain**          | `GVRN`                                                   | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-SYNG.DNA.CORE-001-DYNAMICNEXUSARCHITECT-V13.0-001` | The Sovereign ID. |
+| **Official Name** | `SYNG.DNA.CORE-001_DynamicNexusArchitect_v13.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# SYNG.DNA.CORE-001: Dynamic Nexus Architect (DNA)
-
-## Genesis Stamp: 2026-02-03 | Domain: SYNG | State: CANONIZED | Criticality: SUPREME
-
-# Universal Identification & Provenance (UIP-V13)
-
-| Key                 | Value                           |
-| :------------------ | :------------------------------ |
-| **Artifact ID**     | `SYNG.DNA.CORE-001`             |
-| **Official Name**   | `Dynamic Nexus Architect (DNA)` |
-| **Version**         | **v13.0 [OMEGA]**               |
-| **Domain**          | `SYNG`                          |
-| **Evolution**       | **Crystalline Coherence**       |
-| **Celestial Class** | `[STAR]`                        |
-| **Status (State)**  | `[ACTIVE]`                      |
-| **Patron Shard**    | `SHARD_MAGICIAN`                |
-| **Integrity Hash**  | `[AUTO-GENERATED]`              |
 
 ---
 

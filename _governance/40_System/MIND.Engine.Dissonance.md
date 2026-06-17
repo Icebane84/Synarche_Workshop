@@ -20,12 +20,13 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `MIND.Engine.Dissonance`          | The Sovereign ID. |
-| **Official Name** | `MIND.Engine.Dissonance.md`       | The Filename.     |
-| **Version**       | **v16.0 [OMEGA]**                 | The Standard.     |
-| **Domain**        | `MIND`                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
+| **Artifact ID**   | `MIND.Engine.Dissonance` | The Sovereign ID. |
+| **Official Name** | `MIND.Engine.Dissonance.md` | The Filename.     |
+| **Version**       | **v16.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `MIND` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

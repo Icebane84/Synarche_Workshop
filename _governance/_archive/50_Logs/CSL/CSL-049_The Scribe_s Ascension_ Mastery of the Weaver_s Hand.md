@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                                   | Description       |
-| :---------------- | :---------------------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-049-THE-SCRIBE-S-ASCENSION--MASTERY-OF-THE-WEAVER-S-HAND-001` | The Sovereign ID. |
-| **Official Name** | `CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                       | The Standard.     |
-| **Domain**        | `GVRN`                                                                  | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                              | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                           | The Network.      |
+| **Official Name** | `CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

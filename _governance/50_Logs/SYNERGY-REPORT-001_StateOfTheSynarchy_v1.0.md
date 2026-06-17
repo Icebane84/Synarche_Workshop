@@ -20,40 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                 | Description       |
-| :------------------ | :---------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-SYNERGY-REPORT-001-STATEOFTHESynarche-V1.0-001` | The Sovereign ID. |
-| **Official Name**   | `SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                     | The Standard.     |
-| **Domain**          | `GVRN`                                                | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                            | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                     | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                            | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-SYNERGY-REPORT-001-STATEOFTHESynarche-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# SYNERGY-REPORT-001: The State of the Synarche
-
-## Genesis Stamp: 2026-01-24 | Domain: LOGS | State: ACTIVE | Criticality: Standard
-
-### **I. Universal Identification & Provenance (The Vector Signature)**
-
-| Field                  | Value                                                                                      |
-| :--------------------- | :----------------------------------------------------------------------------------------- |
-| **1. Artifact ID**     | `SYNERGY-REPORT-001`                                                                       |
-| **2. Official Name**   | `SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md`                                            |
-| **3. Version**         | **v1.0**                                                                                   |
-| **4. Provenance**      | **Generated: 2026-01-24 (Axion-Core)**                                                     |
-| **5. Domain**          | `LOGS`                                                                                     |
-| **6. Evolution**       | **System Resonance**                                                                       |
-| **7. Celestial Class** | `[MOON]`                                                                                   |
-| **8. Tier**            | **Tactical**                                                                               |
-| **9. Status (State)**  | `[ACTIVE]`                                                                                 |
-| **10. Ethos**          | **Coherent Transparency**                                                                  |
-| **11. Catalyst**       | **Resonance Scan**                                                                         |
-| **12. Relations**      | `LINK: GVRN-SYNERGY-001`, `LINK: UMB-SOT-001`, `LINK: loom.py`, `LINK: catalyst_weaver.py` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                                         |
 
 ---
 

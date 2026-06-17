@@ -2,14 +2,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                                                                          | Description       |
-| :---------------- | :--------------------------------------------------------------------------------------------- | :---------------- |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CSL-079-IMPLEMENTING-ARTIFACT-FORGING--CRAFTING-NEW-CAPABILITIES-FROM-GENESIS-SEEDS-001` | The Sovereign ID. |
-| **Official Name** | `CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                                                              | The Standard.     |
-| **Domain**        | `GVRN`                                                                                         | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                                                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                                                  | The Network.      |
+| **Official Name** | `CSL-079_Implementing Artifact Forging_ Crafting New Capabilities from Genesis Seeds.md` | The Filename.     |
+| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

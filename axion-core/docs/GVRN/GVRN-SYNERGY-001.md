@@ -20,38 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-GVRN-SYNERGY-001-001`   | The Sovereign ID. |
-| **Official Name**   | `GVRN-SYNERGY-001.md`         | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-GVRN-SYNERGY-001-001` | The Sovereign ID. |
+| **Official Name** | `GVRN-SYNERGY-001.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# GVRN-SYNERGY-001: Agentic Workshop Synergy Matrix
-
-## I. Universal Identification & Provenance
-
-| Attribute              | Value                                                                                                                                                                                       |
-| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **1. Artifact ID**     | `GVRN-SYNERGY-001`                                                                                                                                                                          |
-| **2. Official Name**   | `Agentic Workshop Synergy Matrix`                                                                                                                                                           |
-| **3. Version**         | **v11.2**                                                                                                                                                                                   |
-| **4. Provenance**      | **Reforged: 2026-01-30**                                                                                                                                                                    |
-| **5. Domain**          | `GVRN`                                                                                                                                                                                      |
-| **6. Evolution**       | **Synergistic Governance**                                                                                                                                                                  |
-| **7. Celestial Class** | `[STAR]`                                                                                                                                                                                    |
-| **8. Tier**            | **Strategic**                                                                                                                                                                               |
-| **9. Status (State)**  | `[ACTIVE]`                                                                                                                                                                                  |
-| **10. Ethos**          | **The Connected Whole**                                                                                                                                                                     |
-| **11. Catalyst**       | **Workshop Expansion**                                                                                                                                                                      |
-| **12. Relations**      | `LINK: UMB-SOT-001`, `LINK: knight_fixer.py`, `LINK: initialize_matrix.py`, `LINK: SYNERGY-REPORT-001`, `LINK: AOP-CSM-001`, `LINK: AOP-AG-003`, `LINK: AOP-MAP-001`, `LINK: UMB-RULES-001` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                                                                                                                                          |
 
 ---
 

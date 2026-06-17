@@ -20,36 +20,17 @@
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                                                     | Description       |
-| :------------------ | :-------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-AOP-AXIOM-WEAVE-001-THE-AXIOM-WEAVING-PROTOCOL-001` | The Sovereign ID. |
-| **Official Name**   | `AOP-AXIOM-WEAVE-001_The Axiom Weaving Protocol.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                         | The Standard.     |
-| **Domain**          | `GVRN`                                                    | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-AOP-AXIOM-WEAVE-001-THE-AXIOM-WEAVING-PROTOCOL-001` | The Sovereign ID. |
+| **Official Name** | `AOP-AXIOM-WEAVE-001_The Axiom Weaving Protocol.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# AOP-AXIOM-WEAVE-001: The Axiom Weaving Protocol
-
-## I. Universal Identification & Provenance
-
-| Attribute           | Value                                                                                           |
-| :------------------ | :---------------------------------------------------------------------------------------------- |
-| **Artifact ID**     | `AOP-AXIOM-WEAVE-001`                                                                           |
-| **Title**           | `The Axiom Weaving Protocol`                                                                    |
-| **Version**         | **v1.0**                                                                                        |
-| **Domain**          | `AOP`                                                                                           |
-| **Evolution**       | **Cognitive Ascension**                                                                         |
-| **Status (State)**  | `[ACTIVE]`                                                                                      |
-| **Tier**            | **Operational**                                                                                 |
-| **Celestial Class** | `[MOON]`                                                                                        |
-| **Governance**      | `UMB-SGM-001`                                                                                   |
-| **Provenance**      | `Genesis Stamp: 2026-01-24`                                                                     |
-| **Relations**       | `LINK: `UMB-PRS-001`, LINK: UMB-CSE-001`, `LINK: `UMB-PRS-001`, LINK: UMB-GENESIS-REGISTRY-001` |
 
 ---
 

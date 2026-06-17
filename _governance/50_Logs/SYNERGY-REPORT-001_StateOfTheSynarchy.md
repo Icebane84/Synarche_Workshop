@@ -10,14 +10,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                      | Description       |
-| :---------------- | :----------------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNERGY-REPORT-001_StateOfTheSynarche`    | The Sovereign ID. |
-| **Official Name** | `SYNERGY-REPORT-001_StateOfTheSynarche.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]**                          | The Standard.     |
-| **Domain**        | `GVRN`                                     | The Subject.      |
-| **Status**        | `[ACTIVE]`                                 | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`            | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNERGY-REPORT-001_StateOfTheSynarche` | The Sovereign ID. |
+| **Official Name** | `SYNERGY-REPORT-001_StateOfTheSynarchy.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

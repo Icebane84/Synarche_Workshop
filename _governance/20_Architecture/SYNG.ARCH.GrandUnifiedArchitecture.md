@@ -10,14 +10,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                                   | Description       |
-| :---------------- | :-------------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.ARCH.GrandUnifiedArchitecture`    | The Sovereign ID. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.ARCH.GrandUnifiedArchitecture` | The Sovereign ID. |
 | **Official Name** | `SYNG.ARCH.GrandUnifiedArchitecture.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
-| **Domain**        | `ARCH`                                  | The Subject.      |
-| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`         | The Network.      |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `ARCH` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

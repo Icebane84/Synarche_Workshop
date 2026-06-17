@@ -12,14 +12,15 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                              | Description       |
-| :---------------- | :--------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Analysis.SystemicSynergy`    | The Sovereign ID. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Analysis.SystemicSynergy` | The Sovereign ID. |
 | **Official Name** | `GVRN.Analysis.SystemicSynergy.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                  | The Standard.     |
-| **Domain**        | `GVRN`                             | The Subject.      |
-| **Status**        | `[CANONIZED]`                      | The Lifecycle.    |
-| **Relations**     | `GOVERNS: ALL_SUBSYSTEMS`          | The Network.      |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| **Relations**     | `GOVERNS: ALL_SUBSYSTEMS` | The Network.      |
+
 
 ---
 

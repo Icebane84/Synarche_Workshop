@@ -12,15 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                             | Description       |
-| :------------------ | :-------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.SOUL.Sentinel`              | The Sovereign ID. |
-| **Official Name**   | `GVRN.SOUL.Sentinel.md`           | The Filename.     |
-| **Version**         | **v15.0 [OMEGA]**                 | The Standard.     |
-| **Domain**          | `GVRN`                            | The Subject.      |
-| **Celestial Class** | `[STAR]`                          | The Weight.       |
-| **Status**          | `[CANONIZED]`                     | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SOUL.Sentinel`              | The Sovereign ID. |
+| **Official Name** | `GVRN.SOUL.Sentinel.md`           | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `GVRN`                            | The Subject.      |
+| **Status**        | `[CANONIZED]`                     | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
 

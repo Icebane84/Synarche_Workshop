@@ -10,28 +10,17 @@
 
 ## **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-COMMAND-CENTER-001`     | The Sovereign ID. |
-| **Official Name**   | `COMMAND_CENTER.md`           | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-COMMAND-CENTER-001` | The Sovereign ID. |
+| **Official Name** | `COMMAND_CENTER.md` | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-# 🛸 COMMAND CENTER (Synarche HUD)
-
-> **Ref:** CC-HUD-001 | **Status:** ONLINE | **Pilot:** User
-
-## 📡 Status Board
-
-- **Mode:** [AGENTIC / MANUAL]
-- **Active Task:** [Check Task Tracker](file:///C:/Users/Chris/.gemini/antigravity/brain/f7e0ad8c-482b-4a3f-827d-de13dd8d0a27/task.md)
-- **Map:** [Workshop Topology](file:///c:/Users/Chris/Synarche_Workspace/WORKSHOP_MAP.md)
 
 ---
 
