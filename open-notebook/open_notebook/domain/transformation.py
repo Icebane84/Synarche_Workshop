@@ -1,11 +1,3 @@
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
 from typing import ClassVar, Optional
 
 from pydantic import Field
@@ -24,4 +16,6 @@ class Transformation(ObjectModel):
 
 class DefaultPrompts(RecordModel):
     record_id: ClassVar[str] = "open_notebook:default_prompts"
-    transformation_instructions: str | None = Field(None, description="Instructions for executing a transformation")
+    transformation_instructions: Optional[str] = Field(
+        None, description="Instructions for executing a transformation"
+    )

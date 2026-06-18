@@ -1,38 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# index.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
-| **Official Name**   | `index.md`                    | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # Installation Guide
 
 Choose your installation route based on your setup and use case.
@@ -40,9 +5,7 @@ Choose your installation route based on your setup and use case.
 ## Quick Decision: Which Route?
 
 ### 🚀 I want the easiest setup (Recommended for most)
-
 **→ [Docker Compose](docker-compose.md)** - Multi-container setup, production-ready
-
 - ✅ All features working
 - ✅ Clear separation of services
 - ✅ Easy to scale
@@ -51,22 +14,15 @@ Choose your installation route based on your setup and use case.
 
 ---
 
-### 🏠 I want everything in one container (Simplified)
-
-**→ [Single Container](single-container.md)** - All-in-one for simple deployments
-
-- ✅ Minimal configuration
-- ✅ Lower resource usage
-- ✅ Good for shared hosting
-- ✅ Works on PikaPods, Railway, etc.
-- ⏱️ 3 minutes to running
+### 🏠 I want everything in one container (Deprecated)
+**→ [Single Container](single-container.md)** - Deprecated, will be removed in v2
+- ⚠️ **Deprecated** — please use Docker Compose instead
+- Still supported until v2 release
 
 ---
 
 ### 👨‍💻 I want to develop/contribute (Developers only)
-
 **→ [From Source](from-source.md)** - Clone repo, set up locally
-
 - ✅ Full control over code
 - ✅ Easy to debug
 - ✅ Can modify and test
@@ -75,17 +31,25 @@ Choose your installation route based on your setup and use case.
 
 ---
 
+### 🪟 I'm on Windows and can't use Docker/WSL
+**→ [Windows Native](windows-native.md)** - Run natively, no Docker or WSL
+- ✅ Works on Windows ARM64
+- ✅ For systems without Hyper-V/Docker Desktop
+- ⚠️ Requires Python 3.12+, Node.js, SurrealDB, uv
+- ⏱️ 15 minutes to running
+
+---
+
+
 ## System Requirements
 
 ### Minimum
-
 - **RAM**: 4GB
 - **Storage**: 2GB for app + space for documents
 - **CPU**: Any modern processor
 - **Network**: Internet (optional for offline setup)
 
 ### Recommended
-
 - **RAM**: 8GB+
 - **Storage**: 10GB+ for documents and models
 - **CPU**: Multi-core processor
@@ -96,7 +60,6 @@ Choose your installation route based on your setup and use case.
 ## AI Provider Options
 
 ### Cloud-Based (Pay-as-you-go)
-
 - **OpenAI** - GPT-4, GPT-4o, fast and capable
 - **Anthropic (Claude)** - Claude 3.5 Sonnet, excellent reasoning
 - **Google Gemini** - Multimodal, cost-effective
@@ -108,7 +71,6 @@ Choose your installation route based on your setup and use case.
 **Privacy**: Your data sent to cloud
 
 ### Local (Free, Private)
-
 - **Ollama** - Run open-source models locally
 - **LM Studio** - Desktop app for local models
 - **Hugging Face models** - Download and run
@@ -124,7 +86,7 @@ Choose your installation route based on your setup and use case.
 **Already know which way to go?** Pick your installation path:
 
 - [Docker Compose](docker-compose.md) - **Most users**
-- [Single Container](single-container.md) - **Shared hosting**
+- [Single Container](single-container.md) - **Deprecated**
 - [From Source](from-source.md) - **Developers**
 
 > **Privacy-first?** Any installation method works with Ollama for 100% local AI. See [Local Quick Start](../0-START-HERE/quick-start-local.md).
@@ -145,14 +107,12 @@ Before installing, you'll need:
 ## Detailed Installation Instructions
 
 ### For Docker Users
-
 1. Install [Docker Desktop](https://docker.com/products/docker-desktop)
-2. Choose: [Docker Compose](docker-compose.md) or [Single Container](single-container.md)
+2. Follow [Docker Compose](docker-compose.md) installation
 3. Follow the step-by-step guide
 4. Access at `http://localhost:8502`
 
 ### For Source Installation (Developers)
-
 1. Have Python 3.11+, Node.js 18+, Git installed
 2. Follow [From Source](from-source.md)
 3. Run `make start-all`
@@ -190,18 +150,10 @@ Once you're up and running:
 
 Installing for production use? See additional resources:
 
-- [Security Hardening](https://github.com/lfnovo/open-notebook/blob/main/docs/deployment/security.md)
-- [Reverse Proxy Setup](https://github.com/lfnovo/open-notebook/blob/main/docs/deployment/reverse-proxy.md)
-- [Performance Tuning](https://github.com/lfnovo/open-notebook/blob/main/docs/deployment/retry-configuration.md)
+- [Security Hardening](../5-CONFIGURATION/security.md)
+- [Reverse Proxy Setup](../5-CONFIGURATION/reverse-proxy.md)
+- [Performance Tuning](../5-CONFIGURATION/advanced.md)
 
 ---
 
 **Ready to install?** Pick a route above! ⬆️
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

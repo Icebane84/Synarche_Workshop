@@ -1,42 +1,14 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AI-CHAT-ISSUES` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# AI & Chat Issues - Model Configuration & Quality
 
-# ai-chat-issues.md
+Problems with AI models, chat, and response quality.
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-AI-CHAT-ISSUES-001`     | The Sovereign ID. |
-| **Official Name** | `ai-chat-issues.md`           | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+> **Note:** Open Notebook now shows descriptive error messages for AI provider failures. Instead of a generic "An unexpected error occurred", you'll see specific messages like "Authentication failed. Please check your API key" or "Rate limit exceeded. Please wait a moment and try again." These messages help you diagnose and fix issues faster.
 
 ---
 
 ## "Failed to send message" Error
 
 **Symptom:** Chat shows "Failed to send message" toast. Logs show:
-
 ```
 Error executing chat: Model is not a LanguageModel: None
 ```
@@ -46,7 +18,6 @@ Error executing chat: Model is not a LanguageModel: None
 **Solutions:**
 
 ### Solution 1: Check Default Model Configuration
-
 ```
 1. Go to Settings → Models
 2. Scroll to "Default Models" section
@@ -56,7 +27,6 @@ Error executing chat: Model is not a LanguageModel: None
 ```
 
 ### Solution 2: Verify Model Names (Ollama Users)
-
 ```bash
 # Get exact model names
 ollama list
@@ -70,7 +40,6 @@ ollama list
 ```
 
 ### Solution 3: Re-add Missing Models
-
 ```
 1. Note the exact model names from your provider
 2. Go to Settings → Models
@@ -80,7 +49,6 @@ ollama list
 ```
 
 ### Solution 4: Check Model Still Exists
-
 ```bash
 # For Ollama: verify model is installed
 ollama list
@@ -97,47 +65,36 @@ ollama list
 
 **Symptom:** Settings → Models shows empty, or "No models configured"
 
-**Cause:** Missing or invalid API key
+**Cause:** No credential configured, or credential has invalid API key
 
 **Solutions:**
 
-### Solution 1: Add API Key
-
-```bash
-# Check .env has your API key:
-cat .env | grep -i "OPENAI\|ANTHROPIC\|GOOGLE"
-
-# Should see something like:
-# OPENAI_API_KEY=sk-proj-...
-
-# If missing, add it:
-OPENAI_API_KEY=sk-proj-your-key-here
-
-# Save and restart:
-docker compose restart api
-
-# Wait 10 seconds, then refresh browser
+### Solution 1: Add Credential via Settings UI
+```
+1. Go to Settings → API Keys
+2. Click "Add Credential"
+3. Select your provider (e.g., OpenAI, Anthropic, Google)
+4. Enter your API key
+5. Click Save, then Test Connection
+6. Click Discover Models → Register Models
+7. Go to Settings → Models to verify
 ```
 
 ### Solution 2: Check Key is Valid
-
-```bash
-# Test API key directly:
-curl https://api.openai.com/v1/models \
-  -H "Authorization: Bearer sk-proj-..."
-
-# Should return list of models
-# If error: key is invalid
+```
+1. Go to Settings → API Keys
+2. Click "Test Connection" on your credential
+3. If it shows "Invalid API key":
+   - Get a fresh key from the provider's website
+   - Delete the credential and create a new one
 ```
 
 ### Solution 3: Switch Provider
-
-```bash
-# Try a different provider:
-# Remove: OPENAI_API_KEY
-# Add: ANTHROPIC_API_KEY=sk-ant-...
-
-# Restart and check Settings → Models
+```
+1. Go to Settings → API Keys
+2. Add a credential for a different provider
+3. Test Connection → Discover Models → Register Models
+4. Go to Settings → Models to select the new provider's models
 ```
 
 ---
@@ -146,51 +103,42 @@ curl https://api.openai.com/v1/models \
 
 **Symptom:** Error when trying to chat: "Invalid API key"
 
-**Cause:** API key wrong, expired, or revoked
+**Cause:** Credential has wrong, expired, or revoked API key
 
 **Solutions:**
 
-### Step 1: Verify Key Format
-
-```bash
-# OpenAI: Should start with sk-proj-
-# Anthropic: Should start with sk-ant-
-# Google: Should be AIzaSy...
-
-# Check in .env:
-cat .env | grep OPENAI_API_KEY
+### Step 1: Test Your Credential
+```
+1. Go to Settings → API Keys
+2. Click "Test Connection" on your credential
+3. If it fails, proceed to Step 2
 ```
 
 ### Step 2: Get Fresh Key
+```
+Go to provider's dashboard:
+- OpenAI: https://platform.openai.com/api-keys (starts with sk-proj-)
+- Anthropic: https://console.anthropic.com/ (starts with sk-ant-)
+- Google: https://aistudio.google.com/app/apikey (starts with AIzaSy)
 
-```bash
-# Go to provider's dashboard:
-# - OpenAI: https://platform.openai.com/api-keys
-# - Anthropic: https://console.anthropic.com/
-# - Google: https://aistudio.google.com/app/apikey
-
-# Generate new key
-# Copy exactly (no extra spaces)
+Generate new key and copy exactly (no extra spaces)
 ```
 
-### Step 3: Update .env
-
-```bash
-# Edit .env:
-OPENAI_API_KEY=sk-proj-new-key-here
-# No quotes needed, no spaces
-
-# Save and restart:
-docker compose restart api
+### Step 3: Update Credential
+```
+1. Go to Settings → API Keys
+2. Delete the old credential
+3. Click "Add Credential" → select provider
+4. Paste the new key
+5. Click Save, then Test Connection
+6. Re-discover and register models if needed
 ```
 
 ### Step 4: Verify in UI
-
 ```
-1. Open Open Notebook
-2. Go to Settings → Models
-3. Select your provider
-4. Should show available models
+1. Go to Settings → Models
+2. Verify models are available
+3. Try a test chat
 ```
 
 ---
@@ -204,7 +152,6 @@ docker compose restart api
 **Solutions:**
 
 ### Solution 1: Check Context
-
 ```
 1. In Chat, click "Select Sources"
 2. Verify sources you want are CHECKED
@@ -214,7 +161,6 @@ docker compose restart api
 ```
 
 ### Solution 2: Ask Better Question
-
 ```
 Bad:     "What do you think?"
 Good:    "Based on the paper's methodology, what are 3 limitations?"
@@ -224,7 +170,6 @@ Good:    "Summarize X in 3 bullet points with page citations"
 ```
 
 ### Solution 3: Use Stronger Model
-
 ```
 OpenAI:
   Current: gpt-4o-mini → Switch to: gpt-4o
@@ -239,7 +184,6 @@ To change:
 ```
 
 ### Solution 4: Add More Sources
-
 ```
 If:  "Response seems incomplete"
 Try: Add more relevant sources to provide context
@@ -256,7 +200,6 @@ Try: Add more relevant sources to provide context
 **Solutions:**
 
 ### Solution 1: Use Faster Model
-
 ```bash
 Fastest: Groq (any model)
 Fast: OpenAI gpt-4o-mini
@@ -267,7 +210,6 @@ Switch in: Settings → Models
 ```
 
 ### Solution 2: Reduce Context
-
 ```
 1. Chat → Select Sources
 2. Uncheck sources you don't need
@@ -276,7 +218,6 @@ Switch in: Settings → Models
 ```
 
 ### Solution 3: Increase Timeout
-
 ```bash
 # In .env:
 API_CLIENT_TIMEOUT=600  # 10 minutes
@@ -286,7 +227,6 @@ docker compose restart
 ```
 
 ### Solution 4: Check System Load
-
 ```bash
 # See if API is overloaded:
 docker stats
@@ -327,24 +267,20 @@ docker stats
 ### For Cloud Providers (OpenAI, Anthropic, etc.)
 
 **Immediate:**
-
 - Wait 1-2 minutes
 - Try again
 
 **Short term:**
-
 - Use cheaper/smaller model
 - Reduce concurrent operations
 - Space out requests
 
 **Long term:**
-
 - Upgrade your account
 - Switch to different provider
 - Use Ollama (local, no limits)
 
 ### Check Account Status
-
 ```
 OpenAI: https://platform.openai.com/account/usage/overview
 Anthropic: https://console.anthropic.com/account/billing/overview
@@ -352,7 +288,6 @@ Google: Google Cloud Console
 ```
 
 ### For Ollama (Local)
-
 - No rate limits
 - Use `ollama pull mistral` for best model
 - Restart if hitting resource limits
@@ -368,7 +303,6 @@ Google: Google Cloud Console
 **Solutions:**
 
 ### Solution 1: Use Model with Longer Context
-
 ```
 Current: GPT-4o (128K tokens) → Switch to: Claude (200K tokens)
 Current: Claude Haiku (200K) → Switch to: Gemini (1M tokens)
@@ -377,7 +311,6 @@ To change: Settings → Models
 ```
 
 ### Solution 2: Reduce Context
-
 ```
 1. Select fewer sources
 2. Or use "Summary Only" instead of "Full Content"
@@ -385,7 +318,6 @@ To change: Settings → Models
 ```
 
 ### Solution 3: For Ollama (Local)
-
 ```bash
 # Use smaller model:
 ollama pull phi  # Very small
@@ -403,7 +335,6 @@ ollama pull phi  # Very small
 **Solutions:**
 
 ### Check Provider Status
-
 ```
 OpenAI: https://status.openai.com/
 Anthropic: Check website
@@ -412,14 +343,12 @@ Groq: Check website
 ```
 
 ### Retry Operation
-
 ```
 1. Wait 30 seconds
 2. Try again
 ```
 
 ### Use Different Model/Provider
-
 ```
 1. Settings → Models
 2. Try different provider
@@ -427,7 +356,6 @@ Groq: Check website
 ```
 
 ### Check Network
-
 ```bash
 # Verify internet working:
 ping google.com
@@ -448,7 +376,6 @@ curl https://api.openai.com/v1/models \
 **Solutions:**
 
 ### Solution 1: Verify Context
-
 ```
 1. Click citation in response
 2. Check source actually says that
@@ -457,7 +384,6 @@ curl https://api.openai.com/v1/models \
 ```
 
 ### Solution 2: Request Citations
-
 ```
 Ask: "Answer this with citations to specific pages"
 
@@ -465,7 +391,6 @@ The AI will be more careful if asked for citations
 ```
 
 ### Solution 3: Use Stronger Model
-
 ```
 Weaker models hallucinate more
 Switch to: GPT-4o or Claude Sonnet
@@ -482,7 +407,6 @@ Switch to: GPT-4o or Claude Sonnet
 **Solutions:**
 
 ### Use Cheaper Model
-
 ```
 Expensive: gpt-4o
 Cheaper: gpt-4o-mini (10x cheaper)
@@ -494,7 +418,6 @@ Groq: Ultra cheap but fewer models
 ```
 
 ### Reduce Context
-
 ```
 In Chat:
 1. Select fewer sources
@@ -503,7 +426,6 @@ In Chat:
 ```
 
 ### Switch to Ollama (Free)
-
 ```bash
 # Install Ollama
 # Run: ollama serve
@@ -520,11 +442,3 @@ In Chat:
 - Try [Chat Effectively Guide](../3-USER-GUIDE/chat-effectively.md)
 - Check logs: `docker compose logs api | grep -i "error"`
 - Ask for help: [Troubleshooting Index](index.md#getting-help)
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

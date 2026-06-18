@@ -2,14 +2,6 @@
 Search service layer using API.
 """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
 from typing import Any, Dict, List, Union
 
 from loguru import logger
@@ -31,7 +23,7 @@ class SearchService:
         search_sources: bool = True,
         search_notes: bool = True,
         minimum_score: float = 0.2,
-    ) -> list[dict[str, Any]]:
+    ) -> List[Dict[str, Any]]:
         """Search the knowledge base."""
         response = api_client.search(
             query=query,
@@ -51,7 +43,7 @@ class SearchService:
         strategy_model: str,
         answer_model: str,
         final_answer_model: str,
-    ) -> dict[Any, Any] | list[dict[Any, Any]]:
+    ) -> Union[Dict[Any, Any], List[Dict[Any, Any]]]:
         """Ask the knowledge base a question."""
         response = api_client.ask_simple(
             question=question,

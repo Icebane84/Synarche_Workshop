@@ -1,46 +1,17 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `TRANSFORMATIONS` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Transformations - Batch Processing Your Sources
 
-# transformations.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-TRANSFORMATIONS-001`    | The Sovereign ID. |
-| **Official Name** | `transformations.md`          | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+Transformations apply the same analysis to multiple sources at once. Instead of asking the same question repeatedly, define a template and run it across your content.
 
 ---
 
 ## When to Use Transformations
 
-| Use Transformations When        | Use Chat Instead When             |
-| ------------------------------- | --------------------------------- |
-| Same analysis on many sources   | One-off questions                 |
-| Consistent output format needed | Exploratory conversation          |
-| Batch processing                | Follow-up questions needed        |
-| Creating structured notes       | Context changes between questions |
+| Use Transformations When | Use Chat Instead When |
+|-------------------------|----------------------|
+| Same analysis on many sources | One-off questions |
+| Consistent output format needed | Exploratory conversation |
+| Batch processing | Follow-up questions needed |
+| Creating structured notes | Context changes between questions |
 
 **Example**: You have 10 papers and want a summary of each. Transformation does it in one operation.
 
@@ -134,28 +105,24 @@ Best for: Literature review, research planning
 ### Prompt Template Tips
 
 **Be specific about format:**
-
 ```
 Good: "List 5 key points as bullet points"
 Bad: "What are the key points?"
 ```
 
 **Request structure:**
-
 ```
 Good: "Create sections for: Summary, Methods, Results"
 Bad: "Tell me about this paper"
 ```
 
 **Ask for citations:**
-
 ```
 Good: "Cite page numbers for each claim"
 Bad: (no citation request)
 ```
 
 **Set length expectations:**
-
 ```
 Good: "In 200-300 words, summarize..."
 Bad: "Summarize this"
@@ -188,12 +155,12 @@ Bad: "Summarize this"
 
 ### Processing Time
 
-| Sources     | Typical Time          |
-| ----------- | --------------------- |
-| 1 source    | 30 seconds - 1 minute |
-| 5 sources   | 2-3 minutes           |
-| 10 sources  | 4-5 minutes           |
-| 20+ sources | 8-10 minutes          |
+| Sources | Typical Time |
+|---------|--------------|
+| 1 source | 30 seconds - 1 minute |
+| 5 sources | 2-3 minutes |
+| 10 sources | 4-5 minutes |
+| 20+ sources | 8-10 minutes |
 
 Processing runs in background. You can continue working.
 
@@ -390,7 +357,6 @@ Example: "Summary - Research Paper 2025.pdf"
 
 **Problem**: Transformation doesn't complete
 **Solution**:
-
 - Check source is processed
 - Try shorter/simpler prompt
 - Process sources individually
@@ -399,13 +365,13 @@ Example: "Summary - Research Paper 2025.pdf"
 
 ## Transformations vs. Chat vs. Ask
 
-| Feature       | Transformations      | Chat             | Ask                  |
-| ------------- | -------------------- | ---------------- | -------------------- |
-| **Input**     | Predefined template  | Your questions   | Your question        |
-| **Scope**     | One source at a time | Selected sources | Auto-searched        |
-| **Output**    | Structured note      | Conversation     | Comprehensive answer |
-| **Best for**  | Batch processing     | Exploration      | One-shot answers     |
-| **Follow-up** | Run again            | Ask more         | New query            |
+| Feature | Transformations | Chat | Ask |
+|---------|----------------|------|-----|
+| **Input** | Predefined template | Your questions | Your question |
+| **Scope** | One source at a time | Selected sources | Auto-searched |
+| **Output** | Structured note | Conversation | Comprehensive answer |
+| **Best for** | Batch processing | Exploration | One-shot answers |
+| **Follow-up** | Run again | Ask more | New query |
 
 ---
 
@@ -434,11 +400,3 @@ Tips:
 ```
 
 Transformations turn repetitive analysis into one-click operations. Define once, apply many times.
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

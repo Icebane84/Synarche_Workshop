@@ -17,13 +17,16 @@ import { useTranslation } from '@/lib/hooks/use-translation'
 import { cn } from '@/lib/utils'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { FileText, StickyNote, MessageSquare } from 'lucide-react'
+import {
+  applyBulkSourceContext,
+  computeSourceSelections,
+  type SourceContextDefault,
+} from '@/lib/utils/source-context'
 
-export type ContextMode = 'off' | 'insights' | 'full'
-
-export interface ContextSelections {
-  sources: Record<string, ContextMode>
-  notes: Record<string, ContextMode>
-}
+// Re-exported from the shared types module for backward compatibility; several
+// components historically import these from this route file.
+import type { ContextMode, ContextSelections } from '@/lib/types/notebook-context'
+export type { ContextMode, ContextSelections }
 
 export default function NotebookPage() {
   const { t } = useTranslation()
@@ -58,22 +61,20 @@ export default function NotebookPage() {
     notes: {}
   })
 
-  // Initialize default selections when sources/notes load
+  // The default context mode applied to sources as they load. A bulk
+  // include/exclude updates this so sources loaded later via pagination follow
+  // the same intent instead of reverting to "included" (#223/#915).
+  const [sourceContextDefault, setSourceContextDefault] = useState<SourceContextDefault>('include')
+
+  // Initialize and update selections when sources load or change
   useEffect(() => {
     if (sources && sources.length > 0) {
-      setContextSelections(prev => {
-        const newSourceSelections = { ...prev.sources }
-        sources.forEach(source => {
-          // Only set default if not already set
-          if (!(source.id in newSourceSelections)) {
-            // Default to 'insights' if has insights, otherwise 'full'
-            newSourceSelections[source.id] = source.insights_count > 0 ? 'insights' : 'full'
-          }
-        })
-        return { ...prev, sources: newSourceSelections }
-      })
+      setContextSelections(prev => ({
+        ...prev,
+        sources: computeSourceSelections(prev.sources, sources, sourceContextDefault),
+      }))
     }
-  }, [sources])
+  }, [sources, sourceContextDefault])
 
   useEffect(() => {
     if (notes && notes.length > 0) {
@@ -102,6 +103,16 @@ export default function NotebookPage() {
     }))
   }
 
+  // Bulk include/exclude every source from the chat context at once (#223).
+  // Also records the action as the default for sources loaded later (#915).
+  const handleBulkSourceContext = (action: SourceContextDefault) => {
+    setSourceContextDefault(action)
+    setContextSelections(prev => ({
+      ...prev,
+      sources: applyBulkSourceContext(prev.sources, sources ?? [], action),
+    }))
+  }
+
   if (notebookLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -114,8 +125,8 @@ export default function NotebookPage() {
     return (
       <AppShell>
         <div className="p-6">
-          <h1 className="text-2xl font-bold mb-4">{t.notebooks.notFound}</h1>
-          <p className="text-muted-foreground">{t.notebooks.notFoundDesc}</p>
+          <h1 className="text-2xl font-bold mb-4">{t('notebooks.notFound')}</h1>
+          <p className="text-muted-foreground">{t('notebooks.notFoundDesc')}</p>
         </div>
       </AppShell>
     )
@@ -137,15 +148,15 @@ export default function NotebookPage() {
                   <TabsList className="grid w-full grid-cols-3">
                     <TabsTrigger value="sources" className="gap-2">
                       <FileText className="h-4 w-4" />
-                      {t.navigation.sources}
+                      {t('navigation.sources')}
                     </TabsTrigger>
                     <TabsTrigger value="notes" className="gap-2">
                       <StickyNote className="h-4 w-4" />
-                      {t.common.notes}
+                      {t('common.notes')}
                     </TabsTrigger>
                     <TabsTrigger value="chat" className="gap-2">
                       <MessageSquare className="h-4 w-4" />
-                      {t.common.chat}
+                      {t('common.chat')}
                     </TabsTrigger>
                   </TabsList>
                 </Tabs>
@@ -162,6 +173,7 @@ export default function NotebookPage() {
                     onRefresh={refetchSources}
                     contextSelections={contextSelections.sources}
                     onContextModeChange={(sourceId, mode) => handleContextModeChange(sourceId, mode, 'source')}
+                    onBulkContextModeChange={handleBulkSourceContext}
                     hasNextPage={hasNextPage}
                     isFetchingNextPage={isFetchingNextPage}
                     fetchNextPage={fetchNextPage}
@@ -180,6 +192,8 @@ export default function NotebookPage() {
                   <ChatColumn
                     notebookId={notebookId}
                     contextSelections={contextSelections}
+                    sources={sources}
+                    sourcesLoading={sourcesLoading}
                   />
                 )}
               </div>
@@ -204,6 +218,7 @@ export default function NotebookPage() {
                 onRefresh={refetchSources}
                 contextSelections={contextSelections.sources}
                 onContextModeChange={(sourceId, mode) => handleContextModeChange(sourceId, mode, 'source')}
+                onBulkContextModeChange={handleBulkSourceContext}
                 hasNextPage={hasNextPage}
                 isFetchingNextPage={isFetchingNextPage}
                 fetchNextPage={fetchNextPage}
@@ -225,10 +240,12 @@ export default function NotebookPage() {
             </div>
 
             {/* Chat Column - always expanded, takes remaining space */}
-            <div className="transition-all duration-150 flex-1 lg:pr-6 lg:-mr-6">
+            <div className="transition-all duration-150 flex-1 min-w-0 lg:pr-6 lg:-mr-6">
               <ChatColumn
                 notebookId={notebookId}
                 contextSelections={contextSelections}
+                sources={sources}
+                sourcesLoading={sourcesLoading}
               />
             </div>
           </div>

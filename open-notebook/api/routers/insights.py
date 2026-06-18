@@ -11,15 +11,6 @@ router = APIRouter()
 @router.get("/insights/{insight_id}", response_model=SourceInsightResponse)
 async def get_insight(insight_id: str):
     """Get a specific insight by ID."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         insight = await SourceInsight.get(insight_id)
         if not insight:
@@ -39,7 +30,7 @@ async def get_insight(insight_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching insight {insight_id}: {e!s}")
+        logger.error(f"Error fetching insight {insight_id}: {str(e)}")
         raise HTTPException(status_code=500, detail="Error fetching insight")
 
 
@@ -57,7 +48,7 @@ async def delete_insight(insight_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting insight {insight_id}: {e!s}")
+        logger.error(f"Error deleting insight {insight_id}: {str(e)}")
         raise HTTPException(status_code=500, detail="Error deleting insight")
 
 
@@ -85,5 +76,7 @@ async def save_insight_as_note(insight_id: str, request: SaveAsNoteRequest):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error saving insight {insight_id} as note: {e!s}")
-        raise HTTPException(status_code=500, detail="Error saving insight as note")
+        logger.error(f"Error saving insight {insight_id} as note: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail="Error saving insight as note"
+        )

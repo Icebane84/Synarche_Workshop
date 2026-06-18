@@ -1,36 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# index.md
-
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
-| **Official Name**   | `index.md`                    | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # Configuration - Essential Settings
 
 Configuration is how you customize Open Notebook for your specific setup. This section covers what you need to know.
@@ -50,25 +17,22 @@ Three things:
 ## Quick Decision: Which Provider?
 
 ### Option 1: Cloud Provider (Fastest)
-
 - **OpenRouter (recommended)** (access to all models with one key)
 - **OpenAI** (GPT)
 - **Anthropic** (Claude)
 - **Google Gemini** (multi-modal, long context)
 - **Groq** (ultra-fast inference)
 
-Setup: Get API key → Set env var → Done
+Setup: Get API key → Add credential in Settings UI → Done
 
 → Go to **[AI Providers Guide](ai-providers.md)**
 
 ### Option 2: Local (Free & Private)
-
 - **Ollama** (open-source models, on your machine)
 
 → Go to **[Ollama Setup](ollama.md)**
 
 ### Option 3: OpenAI-Compatible
-
 - **LM Studio** (local)
 - **Custom endpoints**
 
@@ -92,9 +56,7 @@ Format: KEY=value, one per line
 
 ### `docker.env` (Docker Deployment)
 
-You will use this file to hold your environment variables if you are using docker-compose and prefer not to put the
-variables directly in the compose file.
-
+You will use this file to hold your environment variables if you are using docker-compose and prefer not to put the variables directly in the compose file. 
 ```
 Located in: project root (or ./docker)
 Use for: Docker deployments
@@ -106,10 +68,10 @@ Loaded by: docker-compose.yml
 
 ## Most Important Settings
 
-All of the settings provided below are to be placed inside your environment file (.env or docker.env depending on your
-setup).
+All of the settings provided below are to be placed inside your environment file (.env or docker.env depending on your setup).
 
-### Surreal Database
+
+###  Surreal Database
 
 This is the database used by the app.
 
@@ -121,44 +83,31 @@ SURREAL_NAMESPACE=open_notebook
 SURREAL_DATABASE=open_notebook
 ```
 
-> The only thing that is critical to not miss is the hostname in the `SURREAL_URL`. Check what URL to use based on your
-> deployment, [here](database.md).
+> The only thing that is critical to not miss is the hostname in the `SURREAL_URL`. Check what URL to use based on your deployment, [here](database.md).
 
-### AI Provider (API Key or URL)
 
-We need access to LLMs in order for the app to work. You can use any of the support AI Providers by adding their API
-Keys.
+### AI Provider (Credentials)
 
-```
-OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-ant-...
-GOOGLE_API_KEY=...
-OPENROUTER_API_KEY=...
-```
+We need access to LLMs in order for the app to work. AI provider credentials are configured via the **Settings UI**:
 
-Or, if you are planning to use only local providers, you can setup Ollama by configuring it's base URL. This will get
-you set and ready with text and embeddings in one go:
+1. Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` in your environment (required for storing credentials)
+2. Start services
+3. Go to **Settings → API Keys → Add Credential**
+4. Select your provider, paste your API key
+5. **Test Connection** → **Discover Models** → **Register Models**
 
 ```
-OLLAMA_BASE_URL=http://localhost:11434
+# Required in your .env or docker-compose.yml:
+OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 ```
 
-> A lot of people screw up on the Ollama BASE URL by not knowing how to point to their Ollama installation. if you are
-> having trouble connecting to Ollama, see [here](ollama.md).
+> **Ollama users**: Add an Ollama credential in Settings → API Keys with the correct base URL. See [Ollama Setup](ollama.md) for network configuration help.
 
-You can also use LM Studio locally if you prefer by using it as an OpenAI compatible endpoint.
+> **LM Studio / OpenAI-Compatible**: Add an OpenAI-Compatible credential in Settings → API Keys. See [OpenAI-Compatible Guide](openai-compatible.md).
 
-```
-OPENAI_COMPATIBLE_BASE_URL=http://localhost:1234/v1
-OPENAI_COMPATIBLE_BASE_URL_EMBEDDING=http://localhost:1234/v1
-```
-
-> For more installation on using OpenAI compatible endpoints, see [here](openai-compatible.md).
 
 ### API URL (If Behind Reverse Proxy)
-
-You only need to worry about this if you are deploying on a proxy or if you are changing port information. Otherwise,
-skip this.
+You only need to worry about this if you are deploying on a proxy or if you are changing port information. Otherwise, skip this.
 
 ```
 API_URL=https://your-domain.com
@@ -172,46 +121,40 @@ Auto-detection works for most setups.
 ## Configuration by Scenario
 
 ### Scenario 1: Docker on Localhost (Default)
-
 ```env
 # In docker.env:
-OPENAI_API_KEY=sk-...
+OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 # Everything else uses defaults
-# Done!
+# Then configure AI provider in Settings → API Keys
 ```
 
 ### Scenario 2: Docker on Remote Server
-
 ```env
 # In docker.env:
-OPENAI_API_KEY=sk-...
+OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 API_URL=http://your-server-ip:5055
 ```
 
 ### Scenario 3: Behind Reverse Proxy (Nginx/Cloudflare)
-
 ```env
 # In docker.env:
-OPENAI_API_KEY=sk-...
+OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 API_URL=https://your-domain.com
 # The reverse proxy handles HTTPS
 ```
 
 ### Scenario 4: Using Ollama Locally
-
 ```env
 # In .env:
-OLLAMA_API_BASE=http://localhost:11434
-# No API key needed
+OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+# Then add Ollama credential in Settings → API Keys
 ```
 
 ### Scenario 5: Using Azure OpenAI
-
 ```env
 # In docker.env:
-AZURE_OPENAI_API_KEY=your-key
-AZURE_OPENAI_ENDPOINT=https://your-instance.openai.azure.com/
-AZURE_OPENAI_API_VERSION=2024-12-01-preview
+OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+# Then add Azure OpenAI credential in Settings → API Keys
 ```
 
 ---
@@ -219,7 +162,6 @@ AZURE_OPENAI_API_VERSION=2024-12-01-preview
 ## Configuration Sections
 
 ### [AI Providers](ai-providers.md)
-
 - OpenAI configuration
 - Anthropic configuration
 - Google Gemini configuration
@@ -229,14 +171,12 @@ AZURE_OPENAI_API_VERSION=2024-12-01-preview
 - OpenAI-compatible configuration
 
 ### [Database](database.md)
-
 - SurrealDB setup
 - Connection strings
 - Database vs. namespace
 - Running your own SurrealDB
 
 ### [Advanced](advanced.md)
-
 - Ports and networking
 - Timeouts and concurrency
 - SSL/security
@@ -247,41 +187,41 @@ AZURE_OPENAI_API_VERSION=2024-12-01-preview
 - Debugging and logging
 
 ### [Reverse Proxy](reverse-proxy.md)
-
 - Nginx, Caddy, Traefik configs
 - Custom domain setup
 - SSL/HTTPS configuration
 - Coolify and other platforms
 
 ### [Security](security.md)
-
 - Password protection
 - API authentication
 - Production hardening
 - Firewall configuration
 
 ### [Local TTS](local-tts.md)
-
 - Speaches setup for local text-to-speech
 - GPU acceleration
 - Voice options
 - Docker networking
 
-### [Ollama](ollama.md)
+### [Local STT](local-stt.md)
+- Speaches setup for local speech-to-text
+- Whisper model options
+- GPU acceleration
+- Docker networking
 
+### [Ollama](ollama.md)
 - Setting up and pointing to an Ollama server
 - Downloading models
 - Using embedding
 
 ### [OpenAI-Compatible Providers](openai-compatible.md)
-
 - LM Studio, vLLM, Text Generation WebUI
 - Connection configuration
 - Docker networking
 - Troubleshooting
 
 ### [Complete Reference](environment-reference.md)
-
 - All environment variables
 - Grouped by category
 - What each one does
@@ -291,45 +231,43 @@ AZURE_OPENAI_API_VERSION=2024-12-01-preview
 
 ## How to Add Configuration
 
-### Method 1: Edit `.env` File (Development)
+### Method 1: Settings UI (For AI Provider Credentials)
+
+The recommended way to configure AI providers:
+
+```
+1. Open Open Notebook in your browser
+2. Go to Settings → API Keys
+3. Click "Add Credential"
+4. Select provider, enter API key
+5. Click Save, then Test Connection
+6. Click Discover Models → Register Models
+```
+
+No file editing, no restarts. Credentials stored securely (encrypted) in database.
+
+→ **[Full Guide: API Configuration](../3-USER-GUIDE/api-configuration.md)**
+
+### Method 2: Edit `.env` File (Infrastructure Settings)
+
+For database, network, and encryption key settings:
 
 ```bash
 1. Open .env in your editor
-2. Find the section for your provider
-3. Uncomment and fill in your API key
-4. Save
-5. Restart services
+2. Set OPEN_NOTEBOOK_ENCRYPTION_KEY and database vars
+3. Save
+4. Restart services
 ```
 
-### Method 2: Set Docker Environment (Deployment)
+### Method 3: Set Docker Environment (Deployment)
 
 ```bash
 # In docker-compose.yml:
 services:
   api:
     environment:
-      - OPENAI_API_KEY=sk-...
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
       - API_URL=https://your-domain.com
-```
-
-### Method 3: Export Environment Variables
-
-```bash
-# In your terminal:
-export OPENAI_API_KEY=sk-...
-export API_URL=https://your-domain.com
-
-# Then start services
-docker compose up
-```
-
-### Method 4: Use docker.env File
-
-```bash
-1. Create/edit docker.env
-2. Add your configuration
-3. docker-compose automatically loads it
-4. docker compose up
 ```
 
 ---
@@ -350,14 +288,14 @@ After configuration, verify it works:
 
 ## Common Mistakes
 
-| Mistake            | Problem                   | Fix                                   |
-| ------------------ | ------------------------- | ------------------------------------- |
-| Forget API key     | Models not available      | Add OPENAI_API_KEY (or your provider) |
-| Wrong database URL | Can't start API           | Check SURREAL_URL format              |
-| Expose port 5055   | "Can't connect to server" | Expose 5055 in docker-compose         |
-| Typo in env var    | Settings ignored          | Check spelling (case-sensitive!)      |
-| Quote mismatch     | Value cut off             | Use quotes: OPENAI_API_KEY="sk-..."   |
-| Don't restart      | Old config still used     | Restart services after env changes    |
+| Mistake | Problem | Fix |
+|---------|---------|-----|
+| No credential configured | Models not available | Add credential in Settings → API Keys |
+| Missing encryption key | Can't save credentials | Set OPEN_NOTEBOOK_ENCRYPTION_KEY |
+| Wrong database URL | Can't start API | Check SURREAL_URL format |
+| Expose port 5055 | "Can't connect to server" | Expose 5055 in docker-compose |
+| Typo in env var | Settings ignored | Check spelling (case-sensitive!) |
+| Don't restart | Old config still used | Restart services after env changes |
 
 ---
 
@@ -382,17 +320,9 @@ Once configured:
 ## Summary
 
 **Minimal configuration to run:**
-
-1. Choose an AI provider (or use Ollama locally)
-2. Set API key in .env or docker.env
-3. Start services
+1. Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` in your environment
+2. Start services
+3. Add AI provider credential in Settings → API Keys
 4. Done!
 
 Everything else is optional optimization.
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
-Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

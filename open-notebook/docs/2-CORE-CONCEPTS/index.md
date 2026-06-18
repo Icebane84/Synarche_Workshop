@@ -1,38 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# index.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
-| **Official Name**   | `index.md`                    | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # Core Concepts - Understand the Mental Model
 
 Before diving into how to use Open Notebook, it's important to understand **how it thinks**. These core concepts explain the "why" behind the design.
@@ -40,7 +5,6 @@ Before diving into how to use Open Notebook, it's important to understand **how 
 ## The Five Mental Models
 
 ### 1. [Notebooks, Sources, and Notes](notebooks-sources-notes.md)
-
 How Open Notebook organizes your research. Understand the three-tier container structure and how information flows from raw materials to finished insights.
 
 **Key idea**: A notebook is a scoped research container. Sources are inputs (PDFs, URLs, etc.). Notes are outputs (your insights, AI-generated summaries, captured responses).
@@ -48,7 +12,6 @@ How Open Notebook organizes your research. Understand the three-tier container s
 ---
 
 ### 2. [AI Context & RAG](ai-context-rag.md)
-
 How Open Notebook makes AI aware of your research - two different approaches.
 
 **Key idea**: **Chat** sends entire selected sources to the LLM (full context, conversational). **Ask** uses RAG (retrieval-augmented generation) to automatically search and retrieve only relevant chunks. Different tools for different needs.
@@ -56,15 +19,13 @@ How Open Notebook makes AI aware of your research - two different approaches.
 ---
 
 ### 3. [Chat vs. Transformations](chat-vs-transformations.md)
-
 Why Open Notebook has different interaction modes and when to use each one.
 
-**Key idea**: Chat is conversational exploration (you control context). Transformations are insight extractions. They reduced content to smaller bits of concentrated/dense information, which is much more suitable for an AI to use.
+**Key idea**: Chat is conversational exploration (you control context). Transformations are insight extractions. They reduced content to smaller bits of concentrated/dense information, which is much more suitable for an AI to use. 
 
 ---
 
 ### 4. [Context Management](chat-vs-transformations.md#context-management-the-control-panel)
-
 Your control panel for privacy and cost. Decide what data actually reaches AI.
 
 **Key idea**: You choose three levels—not in context (private), summary only (condensed), or full content (complete access). This gives you fine-grained control.
@@ -72,7 +33,6 @@ Your control panel for privacy and cost. Decide what data actually reaches AI.
 ---
 
 ### 5. [Podcasts Explained](podcasts-explained.md)
-
 Why Open Notebook can turn research into audio and why this matters.
 
 **Key idea**: Podcasts transform your research into a different consumption format. Instead of reading, someone can listen and absorb your insights passively.
@@ -94,7 +54,6 @@ Why Open Notebook can turn research into audio and why this matters.
 Open Notebook is built on a simple insight: **Your research deserves to stay yours**.
 
 That means:
-
 - **Privacy by default** — Your data doesn't leave your infrastructure unless you explicitly choose
 - **AI as a tool, not a gatekeeper** — You decide which sources the AI sees, not the AI deciding for you
 - **Flexible consumption** — Read, listen, search, chat, or transform your research however makes sense
@@ -109,10 +68,3 @@ These core concepts explain how that works.
 2. **Want to understand it first?** → Read the 5 sections above (15 min)
 3. **Setting up for the first time?** → Go to [Installation](../1-INSTALLATION/index.md)
 
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

@@ -1,11 +1,3 @@
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
 from typing import Any, Optional
 
 from ai_prompter import Prompter
@@ -15,20 +7,22 @@ from langgraph.graph import END, START, StateGraph
 from typing_extensions import TypedDict
 
 from open_notebook.ai.provision import provision_langchain_model
-from open_notebook.utils.text_utils import clean_thinking_content
+from open_notebook.utils.text_utils import clean_thinking_content, extract_text_content
 
 
 class PatternChainState(TypedDict):
     prompt: str
-    parser: Any | None
+    parser: Optional[Any]
     input_text: str
     output: str
 
 
 async def call_model(state: dict, config: RunnableConfig) -> dict:
     content = state["input_text"]
-    system_prompt = Prompter(template_text=state["prompt"], parser=state.get("parser")).render(data=state)
-    payload = [SystemMessage(content=system_prompt), HumanMessage(content=content)]
+    system_prompt = Prompter(
+        template_text=state["prompt"], parser=state.get("parser")
+    ).render(data=state)
+    payload = [SystemMessage(content=system_prompt)] + [HumanMessage(content=content)]
     chain = await provision_langchain_model(
         str(payload),
         config.get("configurable", {}).get("model_id"),
@@ -39,7 +33,7 @@ async def call_model(state: dict, config: RunnableConfig) -> dict:
     response = await chain.ainvoke(payload)
 
     # Clean thinking tags from response (handles extended thinking models)
-    output = clean_thinking_content(str(response.content))
+    output = clean_thinking_content(extract_text_content(response.content))
     return {"output": output}
 
 

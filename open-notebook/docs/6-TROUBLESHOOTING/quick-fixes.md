@@ -1,35 +1,6 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `QUICK-FIXES` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Quick Fixes - Top 11 Issues & Solutions
 
-# quick-fixes.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-QUICK-FIXES-001`        | The Sovereign ID. |
-| **Official Name** | `quick-fixes.md`              | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+Common problems with 1-minute solutions.
 
 ---
 
@@ -59,7 +30,6 @@ docker compose restart
 ```
 
 **If still broken:**
-
 - Check `API_URL` in .env (should match your frontend URL)
 - See [Connection Issues](connection-issues.md)
 
@@ -69,32 +39,23 @@ docker compose restart
 
 **Symptom:** Settings → Models shows "No models available"
 
-**Cause:** API key missing, wrong, or not set
+**Cause:** No credential configured, or credential has invalid API key
 
 **Solution (1 minute):**
 
-```bash
-# Step 1: Check your .env has API key
-cat .env | grep OPENAI_API_KEY
-
-# Step 2: Verify it's correct (from https://platform.openai.com/api-keys)
-# Should look like: sk-proj-xxx...
-
-# Step 3: Restart services
-docker compose restart api
-
-# Step 4: Wait 10 seconds, then refresh browser
-# Go to Settings → Models
-
-# If still no models:
-# Check logs for error
-docker compose logs api | grep -i "api key\|error"
+```
+1. Go to Settings → API Keys
+2. If no credential exists, click "Add Credential" and add one
+3. If a credential exists, click "Test Connection"
+4. If test fails, delete and re-create with correct key
+5. After test passes, click "Discover Models" → "Register Models"
+6. Go to Settings → Models to verify models appear
 ```
 
 **If still broken:**
-
 - Make sure key has no extra spaces
 - Generate a fresh key from provider dashboard
+- Check that `OPEN_NOTEBOOK_ENCRYPTION_KEY` is set in docker-compose.yml
 - See [AI & Chat Issues](ai-chat-issues.md)
 
 ---
@@ -332,15 +293,13 @@ docker compose restart
 **Solution:**
 
 ### Increase Download Timeout
-
 ```yaml
 # In docker-compose.yml environment:
 environment:
-  - UV_HTTP_TIMEOUT=600 # 10 minutes (default is 30s)
+  - UV_HTTP_TIMEOUT=600  # 10 minutes (default is 30s)
 ```
 
 ### Use Chinese Mirrors (if in China)
-
 ```yaml
 environment:
   - UV_HTTP_TIMEOUT=600
@@ -349,7 +308,6 @@ environment:
 ```
 
 **Alternative Chinese mirrors:**
-
 - Tsinghua: `https://pypi.tuna.tsinghua.edu.cn/simple`
 - Aliyun: `https://mirrors.aliyun.com/pypi/simple/`
 - Huawei: `https://repo.huaweicloud.com/repository/pypi/simple`
@@ -382,7 +340,6 @@ docker compose up --build
 ```
 
 **Reset to defaults:**
-
 ```bash
 # Backup your .env first!
 cp .env .env.backup
@@ -413,11 +370,3 @@ docker compose up
 - **Check the FAQ** in [FAQ](faq.md)
 - **Check logs:** `docker compose logs | head -50`
 - **Ask for help:** [Discord](https://discord.gg/37XJPXfz2w) or [GitHub Issues](https://github.com/lfnovo/open-notebook/issues)
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

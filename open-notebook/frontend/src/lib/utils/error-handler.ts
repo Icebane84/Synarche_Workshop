@@ -19,8 +19,7 @@ export const ERROR_MAP: Record<string, string> = {
   "Invalid password": "apiErrors.invalidPassword",
   "Invalid authorization header format": "apiErrors.unauthorized",
   "Missing authorization header": "apiErrors.unauthorized",
-  "Vector search requires an embedding model":
-    "apiErrors.embeddingModelRequired",
+  "Vector search requires an embedding model": "apiErrors.embeddingModelRequired",
   "Ask feature requires an embedding model": "apiErrors.embeddingModelRequired",
   "Strategy model": "apiErrors.strategyModelNotFound",
   "Answer model": "apiErrors.answerModelNotFound",
@@ -32,12 +31,9 @@ export const ERROR_MAP: Record<string, string> = {
  * Translates a backend error message using the ERROR_MAP.
  * If no mapping exists, returns the fallback key or generic error key.
  */
-export function getApiErrorKey(
-  errorOrMessage: unknown,
-  fallbackKey?: string,
-): string {
+export function getApiErrorKey(errorOrMessage: unknown, fallbackKey?: string): string {
   const message = formatApiError(errorOrMessage);
-
+  
   if (!message) return fallbackKey || "apiErrors.genericError";
 
   // Try exact match first
@@ -56,21 +52,42 @@ export function getApiErrorKey(
 }
 
 /**
+ * Extracts the error message, looks up i18n mapping, and falls back to the
+ * backend-provided message when no mapping exists. This ensures user-friendly
+ * error messages from the backend are displayed directly in the UI.
+ */
+export function getApiErrorMessage(
+  errorOrMessage: unknown,
+  t: (key: string) => string,
+  fallbackKey?: string
+): string {
+  const message = formatApiError(errorOrMessage);
+  if (!message) return fallbackKey ? t(fallbackKey) : t("apiErrors.genericError");
+
+  // Try exact match
+  if (ERROR_MAP[message]) return t(ERROR_MAP[message]);
+
+  // Try partial match for dynamic messages (e.g., "Strategy model ...")
+  for (const [key, value] of Object.entries(ERROR_MAP)) {
+    if (message.startsWith(key)) return t(value);
+  }
+
+  // No mapping: return backend message directly (backend is responsible for making it user-friendly)
+  return message;
+}
+
+/**
  * Formats a raw error from the API into a user-friendly (potentially translated) string.
  */
 export function formatApiError(error: unknown): string {
-  if (typeof error === "string") return error;
-
-  const err = error as {
-    response?: { data?: { detail?: string } };
-    detail?: string;
-    message?: string;
-  };
+  if (typeof error === 'string') return error;
+  
+  const err = error as { response?: { data?: { detail?: string } }, detail?: string, message?: string };
   const detail = err?.response?.data?.detail || err?.detail || err?.message;
-
-  if (typeof detail === "string") {
+  
+  if (typeof detail === 'string') {
     return detail; // We'll handle the actual translation using the key in the hook/component
   }
-
+  
   return "An unexpected error occurred";
 }

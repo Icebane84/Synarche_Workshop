@@ -12,15 +12,6 @@ router = APIRouter()
 @router.post("/notebooks/{notebook_id}/context", response_model=ContextResponse)
 async def get_notebook_context(notebook_id: str, context_request: ContextRequest):
     """Get context for a notebook based on configuration."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         # Verify notebook exists
         notebook = await Notebook.get(notebook_id)
@@ -39,7 +30,11 @@ async def get_notebook_context(notebook_id: str, context_request: ContextRequest
 
                 try:
                     # Add table prefix if not present
-                    full_source_id = source_id if source_id.startswith("source:") else f"source:{source_id}"
+                    full_source_id = (
+                        source_id
+                        if source_id.startswith("source:")
+                        else f"source:{source_id}"
+                    )
 
                     try:
                         source = await Source.get(full_source_id)
@@ -55,7 +50,7 @@ async def get_notebook_context(notebook_id: str, context_request: ContextRequest
                         context_data["source"].append(source_context)
                         total_content += str(source_context)
                 except Exception as e:
-                    logger.warning(f"Error processing source {source_id}: {e!s}")
+                    logger.warning(f"Error processing source {source_id}: {str(e)}")
                     continue
 
             # Process notes
@@ -65,7 +60,9 @@ async def get_notebook_context(notebook_id: str, context_request: ContextRequest
 
                 try:
                     # Add table prefix if not present
-                    full_note_id = note_id if note_id.startswith("note:") else f"note:{note_id}"
+                    full_note_id = (
+                        note_id if note_id.startswith("note:") else f"note:{note_id}"
+                    )
                     note = await Note.get(full_note_id)
                     if not note:
                         continue
@@ -75,7 +72,7 @@ async def get_notebook_context(notebook_id: str, context_request: ContextRequest
                         context_data["note"].append(note_context)
                         total_content += str(note_context)
                 except Exception as e:
-                    logger.warning(f"Error processing note {note_id}: {e!s}")
+                    logger.warning(f"Error processing note {note_id}: {str(e)}")
                     continue
         else:
             # Default behavior - include all sources and notes with short context
@@ -86,7 +83,7 @@ async def get_notebook_context(notebook_id: str, context_request: ContextRequest
                     context_data["source"].append(source_context)
                     total_content += str(source_context)
                 except Exception as e:
-                    logger.warning(f"Error processing source {source.id}: {e!s}")
+                    logger.warning(f"Error processing source {source.id}: {str(e)}")
                     continue
 
             notes = await notebook.get_notes()
@@ -96,7 +93,7 @@ async def get_notebook_context(notebook_id: str, context_request: ContextRequest
                     context_data["note"].append(note_context)
                     total_content += str(note_context)
                 except Exception as e:
-                    logger.warning(f"Error processing note {note.id}: {e!s}")
+                    logger.warning(f"Error processing note {note.id}: {str(e)}")
                     continue
 
         # Calculate estimated token count
@@ -114,5 +111,5 @@ async def get_notebook_context(notebook_id: str, context_request: ContextRequest
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error getting context for notebook {notebook_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error getting context: {e!s}")
+        logger.error(f"Error getting context for notebook {notebook_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error getting context: {str(e)}")

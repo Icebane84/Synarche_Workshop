@@ -5,7 +5,8 @@ Export documentation by consolidating markdown files from each docs folder.
 This script:
 1. Scans all subdirectories in the docs/ folder
 2. For each subdirectory, concatenates all .md files (except index.md)
-3. Saves the consolidated content to doc_exports/{folder_name}.md
+3. Generates a Table of Contents for easy navigation
+4. Saves the consolidated content to doc_exports/{folder_name}.md
 """
 
 import logging
@@ -17,14 +18,14 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 
-def get_markdown_files(folder: Path) -> list[Path]:
+def get_markdown_files(folder: Path) -> List[Path]:
     """Get all markdown files in a folder, excluding index.md files."""
     md_files = [f for f in folder.glob("*.md") if f.name.lower() != "index.md"]
     return sorted(md_files)  # Sort for consistent ordering
 
 
 def consolidate_folder(folder: Path, output_dir: Path) -> None:
-    """Consolidate all markdown files from a folder into a single file."""
+    """Consolidate all markdown files from a folder into a single file with a TOC."""
     md_files = get_markdown_files(folder)
 
     if not md_files:
@@ -35,9 +36,22 @@ def consolidate_folder(folder: Path, output_dir: Path) -> None:
 
     with output_file.open("w", encoding="utf-8") as outf:
         # Write header
-        outf.write(f"# {folder.name.replace('-', ' ').title()}\n\n")
-        outf.write(f"This document consolidates all content from the {folder.name} documentation folder.\n\n")
-        outf.write("---\n\n")
+        folder_title = folder.name.replace("-", " ").title()
+        outf.write(f"# {folder_title}\n\n")
+        outf.write(
+            f"This document consolidates all content from the {folder.name} documentation folder.\n\n"
+        )
+
+        # Generate a Table of Contents dynamically
+        outf.write("## Table of Contents\n\n")
+        for md_file in md_files:
+            section_title = md_file.stem.replace("-", " ").title()
+            # Convert title to a markdown-friendly anchor link
+            # (lowercase, hyphens instead of spaces)
+            anchor = section_title.lower().replace(" ", "-")
+            outf.write(f"* [{section_title}](#{anchor})\n")
+
+        outf.write("\n---\n\n")
 
         # Process each markdown file
         for md_file in md_files:
@@ -55,7 +69,7 @@ def consolidate_folder(folder: Path, output_dir: Path) -> None:
     logger.info(f"  ✓ Created {output_file.name} ({len(md_files)} files)")
 
 
-def main() -> None:
+def main():
     """Main function to export documentation."""
     # Define paths
     docs_dir = Path("docs")
@@ -71,7 +85,9 @@ def main() -> None:
     logger.info(f"Output directory: {output_dir.absolute()}")
 
     # Get all subdirectories in docs/
-    subdirs = [d for d in docs_dir.iterdir() if d.is_dir() and not d.name.startswith(".")]
+    subdirs = [
+        d for d in docs_dir.iterdir() if d.is_dir() and not d.name.startswith(".")
+    ]
 
     if not subdirs:
         logger.warning("No subdirectories found in docs/")
@@ -84,7 +100,7 @@ def main() -> None:
         logger.info(f"Processing {subdir.name}...")
         consolidate_folder(subdir, output_dir)
 
-    logger.info(f"\n✓ Documentation export complete!")
+    logger.info("\n✓ Documentation export complete!")
     logger.info(f"Exported files are in: {output_dir.absolute()}")
 
 

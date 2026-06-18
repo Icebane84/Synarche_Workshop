@@ -1,38 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `OPENAI-COMPATIBLE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# openai-compatible.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-OPENAI-COMPATIBLE-001`  | The Sovereign ID. |
-| **Official Name**   | `openai-compatible.md`        | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # OpenAI-Compatible Providers
 
 Use any server that implements the OpenAI API format with Open Notebook. This includes LM Studio, Text Generation WebUI, vLLM, and many others.
@@ -55,14 +20,14 @@ Open Notebook can connect to any server using this format.
 
 ## Common Compatible Servers
 
-| Server                    | Use Case                      | URL                                                |
-| ------------------------- | ----------------------------- | -------------------------------------------------- |
-| **LM Studio**             | Desktop GUI for local models  | https://lmstudio.ai                                |
+| Server | Use Case | URL |
+|--------|----------|-----|
+| **LM Studio** | Desktop GUI for local models | https://lmstudio.ai |
 | **Text Generation WebUI** | Full-featured local inference | https://github.com/oobabooga/text-generation-webui |
-| **vLLM**                  | High-performance serving      | https://github.com/vllm-project/vllm               |
-| **Ollama**                | Simple local models           | (Use native Ollama provider instead)               |
-| **LocalAI**               | Local AI inference            | https://github.com/mudler/LocalAI                  |
-| **llama.cpp server**      | Lightweight inference         | https://github.com/ggerganov/llama.cpp             |
+| **vLLM** | High-performance serving | https://github.com/vllm-project/vllm |
+| **Ollama** | Simple local models | (Use native Ollama provider instead) |
+| **LocalAI** | Local AI inference | https://github.com/mudler/LocalAI |
+| **llama.cpp server** | Lightweight inference | https://github.com/ggerganov/llama.cpp |
 
 ---
 
@@ -75,12 +40,18 @@ Open Notebook can connect to any server using this format.
 3. Download a model (e.g., Llama 3)
 4. Start the local server (default: port 1234)
 
-### Step 2: Configure Environment
+### Step 2: Configure in Settings UI (Recommended)
 
+1. Go to **Settings** → **API Keys**
+2. Click **Add Credential** → Select **OpenAI-Compatible**
+3. Enter base URL: `http://host.docker.internal:1234/v1` (Docker) or `http://localhost:1234/v1` (local)
+4. API key: `lm-studio` (placeholder, LM Studio doesn't require one)
+5. Click **Save**, then **Test Connection**
+
+**Legacy (Deprecated) — Environment variables:**
 ```bash
-# For language models
 export OPENAI_COMPATIBLE_BASE_URL=http://localhost:1234/v1
-export OPENAI_COMPATIBLE_API_KEY=not-needed  # LM Studio doesn't require key
+export OPENAI_COMPATIBLE_API_KEY=not-needed
 ```
 
 ### Step 3: Add Model in Open Notebook
@@ -95,7 +66,19 @@ export OPENAI_COMPATIBLE_API_KEY=not-needed  # LM Studio doesn't require key
 
 ---
 
-## Environment Variables
+## Configuration via Settings UI
+
+The recommended way to configure OpenAI-compatible providers is through the Settings UI:
+
+1. Go to **Settings** → **API Keys**
+2. Click **Add Credential** → Select **OpenAI-Compatible**
+3. Enter your base URL and API key (if needed)
+4. Optionally configure per-service URLs for LLM, Embedding, TTS, and STT
+5. Click **Save**, then **Test Connection**
+
+## Legacy: Environment Variables (Deprecated)
+
+> **Deprecated**: These environment variables are deprecated. Use the Settings UI instead.
 
 ### Language Models (Chat)
 
@@ -108,7 +91,7 @@ OPENAI_COMPATIBLE_API_KEY=optional-api-key
 
 ```bash
 OPENAI_COMPATIBLE_BASE_URL_EMBEDDING=http://localhost:1234/v1
-OPENAI_COMPATIBLE_BASE_URL_EMBEDDING=optional-api-key
+OPENAI_COMPATIBLE_API_KEY_EMBEDDING=optional-api-key
 ```
 
 ### Text-to-Speech
@@ -129,23 +112,18 @@ OPENAI_COMPATIBLE_API_KEY_STT=optional-api-key
 
 ## Docker Networking
 
-When Open Notebook runs in Docker and your compatible server runs on the host:
+When Open Notebook runs in Docker and your compatible server runs on the host, use the appropriate base URL when adding your credential in **Settings → API Keys**:
 
 ### macOS / Windows
 
-```bash
-OPENAI_COMPATIBLE_BASE_URL=http://host.docker.internal:1234/v1
-```
+**Base URL:** `http://host.docker.internal:1234/v1`
 
 ### Linux
 
-```bash
-# Option 1: Docker bridge IP
-OPENAI_COMPATIBLE_BASE_URL=http://172.17.0.1:1234/v1
+**Base URL (Option 1 — Docker bridge IP):** `http://172.17.0.1:1234/v1`
 
-# Option 2: Host networking mode
-docker run --network host ...
-```
+**Option 2:** Use host networking mode: `docker run --network host ...`
+Then use base URL: `http://localhost:1234/v1`
 
 ### Same Docker Network
 
@@ -154,14 +132,14 @@ docker run --network host ...
 services:
   open-notebook:
     # ...
-    environment:
-      - OPENAI_COMPATIBLE_BASE_URL=http://lm-studio:1234/v1
 
   lm-studio:
     # your LM Studio container
     ports:
       - "1234:1234"
 ```
+
+**Base URL in Settings → API Keys:** `http://lm-studio:1234/v1`
 
 ---
 
@@ -175,13 +153,12 @@ python server.py --api --listen
 
 ### Configure Open Notebook
 
-```bash
-OPENAI_COMPATIBLE_BASE_URL=http://localhost:5000/v1
-```
+In **Settings → API Keys**, add an **OpenAI-Compatible** credential with base URL: `http://localhost:5000/v1`
 
 ### Docker Compose Example
 
 ```yaml
+# Add to your docker-compose.yml (requires surrealdb service, see installation guide)
 services:
   text-gen:
     image: atinoda/text-generation-webui:default
@@ -193,13 +170,13 @@ services:
     command: --api --listen
 
   open-notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+    image: lfnovo/open_notebook:v1-latest
     pull_policy: always
-    environment:
-      - OPENAI_COMPATIBLE_BASE_URL=http://text-gen:5000/v1
     depends_on:
       - text-gen
 ```
+
+Then in **Settings → API Keys**, add an **OpenAI-Compatible** credential with base URL: `http://text-gen:5000/v1`
 
 ---
 
@@ -215,13 +192,12 @@ python -m vllm.entrypoints.openai.api_server \
 
 ### Configure Open Notebook
 
-```bash
-OPENAI_COMPATIBLE_BASE_URL=http://localhost:8000/v1
-```
+In **Settings → API Keys**, add an **OpenAI-Compatible** credential with base URL: `http://localhost:8000/v1`
 
 ### Docker Compose with GPU
 
 ```yaml
+# Add to your docker-compose.yml (requires surrealdb service, see installation guide)
 services:
   vllm:
     image: vllm/vllm-openai:latest
@@ -239,13 +215,13 @@ services:
               capabilities: [gpu]
 
   open-notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+    image: lfnovo/open_notebook:v1-latest
     pull_policy: always
-    environment:
-      - OPENAI_COMPATIBLE_BASE_URL=http://vllm:8000/v1
     depends_on:
       - vllm
 ```
+
+Then in **Settings → API Keys**, add an **OpenAI-Compatible** credential with base URL: `http://vllm:8000/v1`
 
 ---
 
@@ -264,12 +240,12 @@ services:
 
 The model name must match what your server expects:
 
-| Server         | Model Name Format        |
-| -------------- | ------------------------ |
-| LM Studio      | As shown in LM Studio UI |
-| vLLM           | HuggingFace model path   |
-| Text Gen WebUI | As loaded in UI          |
-| llama.cpp      | Model file name          |
+| Server | Model Name Format |
+|--------|-------------------|
+| LM Studio | As shown in LM Studio UI |
+| vLLM | HuggingFace model path |
+| Text Gen WebUI | As loaded in UI |
+| llama.cpp | Model file name |
 
 ---
 
@@ -341,8 +317,8 @@ Problem: 401 or authentication failed
 
 Solutions:
 1. Check if server requires API key
-2. Set OPENAI_COMPATIBLE_API_KEY
-3. Some servers need any non-empty key
+2. Set the API key in your credential (Settings → API Keys)
+3. Some servers need any non-empty key (use a placeholder like "not-needed")
 ```
 
 ### Timeout Errors
@@ -361,20 +337,14 @@ Solutions:
 
 ## Multiple Compatible Endpoints
 
-You can use different compatible servers for different purposes:
+You can use different compatible servers for different purposes. When adding an **OpenAI-Compatible** credential in **Settings → API Keys**, you can configure per-service URLs:
 
-```bash
-# Chat model from LM Studio
-OPENAI_COMPATIBLE_BASE_URL=http://localhost:1234/v1
+- **LLM URL**: e.g., `http://localhost:1234/v1` (LM Studio)
+- **Embedding URL**: e.g., `http://localhost:8080/v1` (different server)
+- **TTS URL**: e.g., `http://localhost:8969/v1` (Speaches)
+- **STT URL**: e.g., `http://localhost:9000/v1` (Speaches)
 
-# Embeddings from different server
-OPENAI_COMPATIBLE_BASE_URL_EMBEDDING=http://localhost:8080/v1
-
-# TTS from Speaches
-OPENAI_COMPATIBLE_BASE_URL_TTS=http://localhost:8969/v1
-```
-
-Add each as a separate model in Open Notebook settings.
+Alternatively, add each as a separate credential with its own base URL.
 
 ---
 
@@ -382,11 +352,11 @@ Add each as a separate model in Open Notebook settings.
 
 ### Model Selection
 
-| Model Size | RAM Needed | Speed  |
-| ---------- | ---------- | ------ |
-| 7B         | 8GB        | Fast   |
-| 13B        | 16GB       | Medium |
-| 70B        | 64GB+      | Slow   |
+| Model Size | RAM Needed | Speed |
+|------------|------------|-------|
+| 7B | 8GB | Fast |
+| 13B | 16GB | Medium |
+| 70B | 64GB+ | Slow |
 
 ### Quantization
 
@@ -400,7 +370,6 @@ llama-3-8b-f16.gguf     → ~16GB RAM, slower
 ### GPU Acceleration
 
 Enable GPU in your server for much faster inference:
-
 - LM Studio: Settings → GPU layers
 - vLLM: Automatic with CUDA
 - llama.cpp: `--n-gpu-layers 35`
@@ -409,16 +378,15 @@ Enable GPU in your server for much faster inference:
 
 ## Comparison: Native vs Compatible
 
-| Aspect       | Native Provider   | OpenAI Compatible      |
-| ------------ | ----------------- | ---------------------- |
-| **Setup**    | API key only      | Server + configuration |
-| **Models**   | Provider's models | Any compatible model   |
-| **Cost**     | Pay per token     | Free (local)           |
-| **Speed**    | Usually fast      | Depends on hardware    |
-| **Features** | Full support      | Basic features         |
+| Aspect | Native Provider | OpenAI Compatible |
+|--------|-----------------|-------------------|
+| **Setup** | API key only | Server + configuration |
+| **Models** | Provider's models | Any compatible model |
+| **Cost** | Pay per token | Free (local) |
+| **Speed** | Usually fast | Depends on hardware |
+| **Features** | Full support | Basic features |
 
 Use OpenAI-compatible when:
-
 - Running local models
 - Using custom/fine-tuned models
 - Privacy requirements
@@ -429,13 +397,6 @@ Use OpenAI-compatible when:
 ## Related
 
 - **[Local TTS Setup](local-tts.md)** - Text-to-speech with Speaches
+- **[Local STT Setup](local-stt.md)** - Speech-to-text with Speaches
 - **[AI Providers](ai-providers.md)** - All provider options
 - **[Ollama Setup](ollama.md)** - Native Ollama integration
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

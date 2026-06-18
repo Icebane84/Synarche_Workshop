@@ -2,14 +2,6 @@
 Models service layer using API.
 """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
 from typing import List, Optional
 
 from loguru import logger
@@ -24,7 +16,7 @@ class ModelsService:
     def __init__(self):
         logger.info("Using API for models operations")
 
-    def get_all_models(self, model_type: str | None = None) -> list[Model]:
+    def get_all_models(self, model_type: Optional[str] = None) -> List[Model]:
         """Get all models with optional type filtering."""
         models_data = api_client.get_models(model_type=model_type)
         # Convert API response to Model objects
@@ -68,10 +60,16 @@ class ModelsService:
 
         # Set the values from API response
         defaults.default_chat_model = defaults_data.get("default_chat_model")
-        defaults.default_transformation_model = defaults_data.get("default_transformation_model")
+        defaults.default_transformation_model = defaults_data.get(
+            "default_transformation_model"
+        )
         defaults.large_context_model = defaults_data.get("large_context_model")
-        defaults.default_text_to_speech_model = defaults_data.get("default_text_to_speech_model")
-        defaults.default_speech_to_text_model = defaults_data.get("default_speech_to_text_model")
+        defaults.default_text_to_speech_model = defaults_data.get(
+            "default_text_to_speech_model"
+        )
+        defaults.default_speech_to_text_model = defaults_data.get(
+            "default_speech_to_text_model"
+        )
         defaults.default_embedding_model = defaults_data.get("default_embedding_model")
         defaults.default_tools_model = defaults_data.get("default_tools_model")
 
@@ -94,10 +92,16 @@ class ModelsService:
 
         # Update the defaults object with the response
         defaults.default_chat_model = defaults_data.get("default_chat_model")
-        defaults.default_transformation_model = defaults_data.get("default_transformation_model")
+        defaults.default_transformation_model = defaults_data.get(
+            "default_transformation_model"
+        )
         defaults.large_context_model = defaults_data.get("large_context_model")
-        defaults.default_text_to_speech_model = defaults_data.get("default_text_to_speech_model")
-        defaults.default_speech_to_text_model = defaults_data.get("default_speech_to_text_model")
+        defaults.default_text_to_speech_model = defaults_data.get(
+            "default_text_to_speech_model"
+        )
+        defaults.default_speech_to_text_model = defaults_data.get(
+            "default_speech_to_text_model"
+        )
         defaults.default_embedding_model = defaults_data.get("default_embedding_model")
         defaults.default_tools_model = defaults_data.get("default_tools_model")
 

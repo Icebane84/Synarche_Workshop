@@ -1,11 +1,3 @@
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
 import os
 
 # ROOT DATA FOLDER
@@ -21,5 +13,8 @@ UPLOADS_FOLDER = f"{DATA_FOLDER}/uploads"
 os.makedirs(UPLOADS_FOLDER, exist_ok=True)
 
 # TIKTOKEN CACHE FOLDER
-TIKTOKEN_CACHE_DIR = f"{DATA_FOLDER}/tiktoken-cache"
+# Reads TIKTOKEN_CACHE_DIR from the environment so Docker can redirect the cache
+# to a path outside /data/ (which is typically volume-mounted and would hide the
+# pre-baked encoding baked into the image at build time).
+TIKTOKEN_CACHE_DIR = os.environ.get("TIKTOKEN_CACHE_DIR", "").strip() or f"{DATA_FOLDER}/tiktoken-cache"
 os.makedirs(TIKTOKEN_CACHE_DIR, exist_ok=True)

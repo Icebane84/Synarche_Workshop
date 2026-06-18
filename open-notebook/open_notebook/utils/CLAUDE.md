@@ -1,38 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CLAUDE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# CLAUDE.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
-| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # Utils Module
 
 Utility functions and helpers for context building, text processing, chunking, embedding, tokenization, and versioning.
@@ -44,7 +9,6 @@ Provides cross-cutting concerns: building LLM context from sources/insights, con
 ## Architecture Overview
 
 **Six core utilities**:
-
 1. **context_builder.py**: Flexible context assembly from sources, notes, insights with token budgeting
 2. **chunking.py**: Content-type detection and smart text chunking for embedding operations
 3. **embedding.py**: Unified embedding generation with mean pooling for large content
@@ -54,10 +18,33 @@ Provides cross-cutting concerns: building LLM context from sources/insights, con
 
 Each utility is stateless and can be imported independently.
 
+## Configuration
+
+### Chunking Configuration (chunking.py)
+
+The chunking behavior can be configured via environment variables:
+
+- **OPEN_NOTEBOOK_CHUNK_SIZE**: Maximum chunk size in tokens (default: 400)
+  - Minimum: 100 tokens
+  - Warnings: Values > 8192 tokens or invalid values
+  - Use case: Conservative baseline that leaves headroom below 512-token embedders (e.g. mxbai-embed-large). Buffer accounts for tokenizer mismatch between our `o200k_base` measurement and the embedder's own tokenizer, plus occasional splitter overshoot and special tokens.
+
+- **OPEN_NOTEBOOK_CHUNK_OVERLAP**: Overlap between chunks in tokens (default: 15% of CHUNK_SIZE)
+  - Must be: >= 0 and < CHUNK_SIZE
+  - Warnings: Invalid values or values >= CHUNK_SIZE
+  - Use case: Control how much context is shared between adjacent chunks
+
+Example for embedders with larger context windows (e.g. OpenAI text-embedding-3 family, 8191 tokens):
+```bash
+export OPEN_NOTEBOOK_CHUNK_SIZE=1500
+export OPEN_NOTEBOOK_CHUNK_OVERLAP=150
+```
+
+Note: Changes require restart of the application.
+
 ## Component Catalog
 
 ### context_builder.py
-
 - **ContextItem**: Dataclass for individual context piece (id, type, content, priority, token_count)
 - **ContextConfig**: Configuration for context building (sources/notes/insights selection, max tokens, priority weights)
 - **ContextBuilder**: Main class assembling context
@@ -69,65 +56,56 @@ Each utility is stateless and can be imported independently.
   - Returns list of ContextItem objects sorted by priority
 
 **Key behavior**:
-
-- Token counting is automatic (calculated in ContextItem.**post_init**)
+- Token counting is automatic (calculated in ContextItem.__post_init__)
 - Max token enforcement via priority weighting (higher priority items included first)
 - Type-specific fetching: sources → Source.full_text, notes → Note.content, insights → SourceInsight.content
 - Raises DatabaseOperationError if source/note fetch fails
 
 ### chunking.py
-
 - **ContentType**: Enum (HTML, MARKDOWN, PLAIN)
-- **CHUNK_SIZE**: constant
-- **CHUNK_OVERLAP**: constant
+- **CHUNK_SIZE**: Configurable via `OPEN_NOTEBOOK_CHUNK_SIZE` env var (default: 400)
+- **CHUNK_OVERLAP**: Configurable via `OPEN_NOTEBOOK_CHUNK_OVERLAP` env var (default: 15% of CHUNK_SIZE)
 - **detect_content_type_from_extension(file_path)**: Detect type from file extension
 - **detect_content_type_from_heuristics(text)**: Detect type from content patterns (returns type + confidence)
 - **detect_content_type(text, file_path)**: Combined detection (extension primary, heuristics fallback)
 - **chunk_text(text, content_type, file_path)**: Split text using appropriate splitter
 
 **Key behavior**:
-
 - Uses LangChain splitters: HTMLHeaderTextSplitter, MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
 - Extension-based detection is primary; heuristics can override PLAIN extensions with 0.8+ confidence
 - Secondary chunking applied when HTML/Markdown splitters produce oversized chunks
-- Returns list of strings, each ≤ CHUNK_SIZE characters
+- Returns list of strings, each approximately ≤ CHUNK_SIZE tokens
 
 ### embedding.py
-
 - **mean_pool_embeddings(embeddings)**: Combine multiple embeddings via normalized mean pooling
-- **generate_embeddings(texts)**: Batch embedding via single Esperanto API call
+- **generate_embeddings(texts)**: Batch embedding with automatic batching (default 50 texts per batch) and per-batch retry
 - **generate_embedding(text, content_type, file_path)**: Unified embedding with automatic chunking + mean pooling
 
 **Key behavior**:
-
 - Uses model_manager.get_model("embedding") for embedding model
-- Short text (≤ CHUNK_SIZE): direct embedding
+- Short text (≤ CHUNK_SIZE tokens): direct embedding
 - Long text: chunk → embed each → mean pool results
 - Mean pooling: normalize each → mean → normalize result (using numpy)
 - Raises ValueError for empty/whitespace-only text
 
 ### text_utils.py
-
 - **remove_non_ascii(text)**: Remove non-ASCII characters from text
 - **remove_non_printable(text)**: Remove non-printable characters, preserving newlines/tabs
 - **parse_thinking_content(content)**: Extract `<think>` tags content from AI responses
 - **clean_thinking_content(content)**: Remove `<think>` blocks, return cleaned content only
 
 **Key behavior**:
-
 - parse_thinking_content handles malformed output (missing opening `<think>` tag)
 - Large content (>100KB) bypasses thinking extraction for performance
 - Non-string input returns empty thinking and stringified content
 
 ### token_utils.py
-
 - **token_count(text)**: Returns estimated token count for string (via tiktoken)
 - **token_cost(text, model)**: Calculate cost estimate for text with given model
 
-**Key behavior**: Uses cl100k_base encoding; may differ slightly from actual model tokenization
+**Key behavior**: Uses `o200k_base` encoding; may differ slightly from actual model tokenization. If `tiktoken` is unavailable, `token_count()` falls back to a coarse estimate; this refactor keeps that existing contract.
 
 ### version_utils.py
-
 - **compare_versions(v1, v2)**: Returns -1 (v1 < v2), 0 (equal), 1 (v1 > v2)
 - **get_installed_version(package)**: Get version of installed Python package
 - **get_version_from_github(url)**: Fetch latest version from GitHub releases
@@ -157,8 +135,9 @@ Each utility is stateless and can be imported independently.
 
 ## Important Quirks & Gotchas
 
-- **Token count estimation**: Uses cl100k_base encoding; may differ 5-10% from actual model tokens
-- **Chunk size for Ollama**: 1500 chars chosen to fit within Ollama embedding model context limits
+- **Token count estimation**: Uses `o200k_base` encoding; may differ slightly from actual model tokens
+- **Chunk size semantics changed**: `OPEN_NOTEBOOK_CHUNK_SIZE` and `OPEN_NOTEBOOK_CHUNK_OVERLAP` are token-based, not character-based
+- **Default chunk size**: The token-based default is 400 — leaves ~20% margin below the 512-token ceiling of BERT-family embedders (e.g. mxbai-embed-large) to absorb tokenizer mismatch (we measure with `o200k_base`, they tokenize with WordPiece), splitter overshoot, and special tokens
 - **Content type detection order**: Extension checked first, then heuristics; high-confidence heuristics (≥0.8) can override PLAIN extensions
 - **Mean pooling normalization**: Each embedding normalized before mean, result normalized after
 - **Priority weights default**: If not specified, ContextConfig uses default weights (source=1, note=0.8, insight=1.2)
@@ -171,7 +150,7 @@ Each utility is stateless and can be imported independently.
 
 1. **Add new context source type**: Create fetch method in ContextBuilder; update ContextConfig.sources dict
 2. **Add content type**: Add to ContentType enum; create splitter getter; update chunk_text()
-3. **Change chunk size**: Modify CHUNK_SIZE and CHUNK_OVERLAP constants in chunking.py
+3. **Change chunk size**: Set OPEN_NOTEBOOK_CHUNK_SIZE and OPEN_NOTEBOOK_CHUNK_OVERLAP environment variables
 4. **Add text preprocessing**: Add new function to text_utils (e.g., remove_urls, extract_keywords)
 5. **Change tokenization**: Replace tiktoken with alternative library in token_utils; update all calls
 6. **Add context filtering**: Extend ContextConfig with filter_by_date, filter_by_topic fields
@@ -179,7 +158,6 @@ Each utility is stateless and can be imported independently.
 ## Usage Examples
 
 ### Chunking
-
 ```python
 from open_notebook.utils.chunking import chunk_text, detect_content_type, ContentType
 
@@ -191,7 +169,6 @@ chunks = chunk_text(html_content, content_type=ContentType.HTML)
 ```
 
 ### Embedding
-
 ```python
 from open_notebook.utils.embedding import generate_embedding, generate_embeddings
 
@@ -203,7 +180,6 @@ embeddings = await generate_embeddings(["text1", "text2", "text3"])
 ```
 
 ### Context Building
-
 ```python
 from open_notebook.utils.context_builder import ContextBuilder, ContextConfig
 
@@ -218,10 +194,36 @@ for item in context_items:
     print(f"{item.type}:{item.id} ({item.token_count} tokens)")
 ```
 
----
+### encryption.py
+- **get_secret_from_env(var_name)**: Retrieve secret from environment with Docker secrets support (checks VAR_FILE first, then VAR)
+- **get_fernet()**: Get Fernet instance if encryption key is configured
+- **encrypt_value(value)**: Encrypt a string using Fernet symmetric encryption
+- **decrypt_value(value)**: Decrypt a Fernet-encrypted string; gracefully falls back to original value for legacy/unencrypted data
+**Purpose**: Provides field-level encryption for sensitive data (API keys) stored in the database. Uses Fernet symmetric encryption (AES-128-CBC with HMAC-SHA256) for authenticated encryption.
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
+**Key behavior**:
+- Key source: OPEN_NOTEBOOK_ENCRYPTION_KEY_FILE (Docker secrets) → OPEN_NOTEBOOK_ENCRYPTION_KEY (env var)
+- Accepts **any string**: always derived to a Fernet key via SHA-256
+- No default key — encryption is unavailable until the env var is set
+- Graceful fallback on decryption: InvalidToken errors (legacy unencrypted data) return the original value
+- Lazy-loaded key: initialized on first use, not at import time
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+**Security considerations**:
+- OPEN_NOTEBOOK_ENCRYPTION_KEY must be set explicitly (no default)
+- Docker secrets pattern supported for secure key injection in containerized environments
+- Key rotation would require re-encrypting all stored keys (not currently implemented)
+- Encryption is transparent to callers; unencrypted legacy data continues to work
+
+**Usage Example**:
+```python
+from open_notebook.utils.encryption import encrypt_value, decrypt_value
+
+# Encrypt before storing in database
+encrypted_api_key = encrypt_value(api_key)
+
+# Decrypt when reading from database
+decrypted_api_key = decrypt_value(encrypted_api_key)
+
+# Set any string as encryption key:
+# OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-passphrase
+```

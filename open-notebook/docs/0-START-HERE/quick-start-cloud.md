@@ -1,35 +1,62 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `QUICK-START-CLOUD` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Quick Start - Cloud AI Providers (5 minutes)
 
-# quick-start-cloud.md
+Get Open Notebook running with **Anthropic, Google, Groq, or other cloud providers**. Same simplicity as OpenAI, with more choices.
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+## Prerequisites
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+1. **Docker Desktop** installed
+   - [Download here](https://www.docker.com/products/docker-desktop/)
+   - Already have it? Skip to step 2
 
----
+2. **API Key** from your chosen provider:
+   - **OpenRouter** (100+ models, one key): https://openrouter.ai/keys
+   - **Anthropic (Claude)**: https://console.anthropic.com/
+   - **Google (Gemini)**: https://aistudio.google.com/
+   - **Groq** (fast, free tier): https://console.groq.com/
+   - **Mistral**: https://console.mistral.ai/
+   - **DeepSeek**: https://platform.deepseek.com/
+   - **xAI (Grok)**: https://console.x.ai/
 
-###### **[ARTIFACT START]**
+## Step 1: Create Configuration (1 min)
 
-## **Block A: The Identification Lock (UIP-V15)**
+Create a new folder `open-notebook` and add this file:
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-QUICK-START-CLOUD-001`  | The Sovereign ID. |
-| **Official Name** | `quick-start-cloud.md`        | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+**docker-compose.yml**:
+```yaml
+services:
+  surrealdb:
+    image: surrealdb/surrealdb:v2
+    command: start --user root --pass password --bind 0.0.0.0:8000 rocksdb:/mydata/mydatabase.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./surreal_data:/mydata
+    # Removed the healthcheck because the v2 image is too minimal to run wget/curl
+    restart: always
+
+  open_notebook:
+    image: lfnovo/open_notebook:v1-latest
+    pull_policy: always
+    ports:
+      - "8502:8502"  # Web UI
+      - "5055:5055"  # API
+    environment:
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
+      - SURREAL_URL=ws://surrealdb:8000/rpc
+      - SURREAL_USER=root
+      - SURREAL_PASSWORD=password
+      - SURREAL_NAMESPACE=open_notebook
+      - SURREAL_DATABASE=open_notebook
+    volumes:
+      - ./notebook_data:/app/data
+    depends_on:
+      - surrealdb
+    restart: always
+
+```
+
+**Edit the file:**
+- Replace `change-me-to-a-secret-string` with your own secret (any string works)
 
 ---
 
@@ -48,7 +75,6 @@ Wait 15-20 seconds for services to start.
 ## Step 3: Access Open Notebook (instant)
 
 Open your browser:
-
 ```
 http://localhost:8502
 ```
@@ -57,25 +83,41 @@ You should see the Open Notebook interface!
 
 ---
 
-## Step 4: Configure Your Model (1 min)
+## Step 4: Configure Your AI Provider (1 min)
+
+1. Go to **Settings** → **API Keys**
+2. Click **Add Credential**
+3. Select your provider (e.g., Anthropic, Google, Groq, OpenRouter)
+4. Give it a name, paste your API key
+5. Click **Save**
+6. Click **Test Connection** — should show success
+7. Click **Discover Models** → **Register Models**
+
+Your provider's models are now available!
+
+> **Multiple providers**: You can add credentials for as many providers as you want. Just repeat this step for each provider.
+
+---
+
+## Step 5: Configure Your Model (1 min)
 
 1. Go to **Settings** (gear icon)
 2. Navigate to **Models**
 3. Select your provider's model:
 
-| Provider       | Recommended Model             | Notes                  |
-| -------------- | ----------------------------- | ---------------------- |
-| **OpenRouter** | `anthropic/claude-3.5-sonnet` | Access 100+ models     |
-| **Anthropic**  | `claude-3-5-sonnet-latest`    | Best reasoning         |
-| **Google**     | `gemini-2.0-flash`            | Large context, fast    |
-| **Groq**       | `llama-3.3-70b-versatile`     | Ultra-fast             |
-| **Mistral**    | `mistral-large-latest`        | Strong European option |
+| Provider | Recommended Model | Notes |
+|----------|-------------------|-------|
+| **OpenRouter** | `anthropic/claude-3.5-sonnet` | Access 100+ models |
+| **Anthropic** | `claude-3-5-sonnet-latest` | Best reasoning |
+| **Google** | `gemini-2.0-flash` | Large context, fast |
+| **Groq** | `llama-3.3-70b-versatile` | Ultra-fast |
+| **Mistral** | `mistral-large-latest` | Strong European option |
 
 4. Click **Save**
 
 ---
 
-## Step 5: Create Your First Notebook (1 min)
+## Step 6: Create Your First Notebook (1 min)
 
 1. Click **New Notebook**
 2. Name: "My Research"
@@ -83,7 +125,7 @@ You should see the Open Notebook interface!
 
 ---
 
-## Step 6: Add Content & Chat (2 min)
+## Step 7: Add Content & Chat (2 min)
 
 1. Click **Add Source**
 2. Choose **Web Link**
@@ -97,7 +139,8 @@ You should see the Open Notebook interface!
 
 - [ ] Docker is running
 - [ ] You can access `http://localhost:8502`
-- [ ] Models are configured for your provider
+- [ ] Provider credential is configured and tested
+- [ ] Models are registered
 - [ ] You created a notebook
 - [ ] Chat works
 
@@ -107,30 +150,14 @@ You should see the Open Notebook interface!
 
 ## Provider Comparison
 
-| Provider       | Speed      | Quality   | Context | Cost                 |
-| -------------- | ---------- | --------- | ------- | -------------------- |
-| **OpenRouter** | Varies     | Varies    | Varies  | Varies (100+ models) |
-| **Anthropic**  | Medium     | Excellent | 200K    | $$$                  |
-| **Google**     | Fast       | Very Good | 1M+     | $$                   |
-| **Groq**       | Ultra-fast | Good      | 128K    | $ (free tier)        |
-| **Mistral**    | Fast       | Good      | 128K    | $$                   |
-| **DeepSeek**   | Medium     | Very Good | 64K     | $                    |
-
----
-
-## Using Multiple Providers
-
-You can enable multiple providers simultaneously:
-
-```yaml
-environment:
-  - OPENROUTER_API_KEY=sk-or-...
-  - ANTHROPIC_API_KEY=sk-ant-...
-  - GOOGLE_API_KEY=...
-  - GROQ_API_KEY=gsk_...
-```
-
-Then switch between them in **Settings** > **Models** as needed.
+| Provider | Speed | Quality | Context | Cost |
+|----------|-------|---------|---------|------|
+| **OpenRouter** | Varies | Varies | Varies | Varies (100+ models) |
+| **Anthropic** | Medium | Excellent | 200K | $$$ |
+| **Google** | Fast | Very Good | 1M+ | $$ |
+| **Groq** | Ultra-fast | Good | 128K | $ (free tier) |
+| **Mistral** | Fast | Good | 128K | $$ |
+| **DeepSeek** | Medium | Very Good | 64K | $ |
 
 ---
 
@@ -138,9 +165,10 @@ Then switch between them in **Settings** > **Models** as needed.
 
 ### "Model not found" Error
 
-1. Verify your API key is correct (no extra spaces)
-2. Check you have credits/access for the model
-3. Restart: `docker compose restart api`
+1. Go to **Settings** → **API Keys**
+2. Click **Test Connection** on your credential
+3. If valid, click **Discover Models** → **Register Models**
+4. Check you have credits/access for the model
 
 ### "Cannot connect to server"
 
@@ -162,12 +190,12 @@ docker compose restart  # Restart everything
 
 Approximate costs per 1K tokens:
 
-| Provider           | Input               | Output  |
-| ------------------ | ------------------- | ------- |
-| Anthropic (Sonnet) | $0.003              | $0.015  |
-| Google (Flash)     | $0.0001             | $0.0004 |
-| Groq (Llama 70B)   | Free tier available | -       |
-| Mistral (Large)    | $0.002              | $0.006  |
+| Provider | Input | Output |
+|----------|-------|--------|
+| Anthropic (Sonnet) | $0.003 | $0.015 |
+| Google (Flash) | $0.0001 | $0.0004 |
+| Groq (Llama 70B) | Free tier available | - |
+| Mistral (Large) | $0.002 | $0.006 |
 
 Check provider websites for current pricing.
 
@@ -182,11 +210,3 @@ Check provider websites for current pricing.
 ---
 
 **Need help?** Join our [Discord community](https://discord.gg/37XJPXfz2w)!
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

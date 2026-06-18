@@ -1,35 +1,6 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `REVERSE-PROXY` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Reverse Proxy Configuration
 
-# reverse-proxy.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-REVERSE-PROXY-001`      | The Sovereign ID. |
-| **Official Name** | `reverse-proxy.md`            | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+Deploy Open Notebook behind nginx, Caddy, Traefik, or other reverse proxies with custom domains and HTTPS.
 
 ---
 
@@ -90,18 +61,25 @@ server {
 
 ```caddy
 notebook.example.com {
-    reverse_proxy open-notebook:8502
+    reverse_proxy open-notebook:8502 {
+        transport http {
+            read_timeout 600s
+            write_timeout 600s
+        }
+    }
 }
 ```
 
-That's it! Caddy handles HTTPS automatically.
+Caddy handles HTTPS automatically. The timeout settings ensure long-running operations (transformations, podcast generation) don't fail.
 
 ### Traefik
 
 ```yaml
+# Add this to your docker-compose.yml alongside the surrealdb service
+# See full base setup: https://github.com/lfnovo/open-notebook/blob/main/docker-compose.yml
 services:
   open-notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+    image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     environment:
       - API_URL=https://notebook.example.com
@@ -111,13 +89,26 @@ services:
       - "traefik.http.routers.notebook.entrypoints=websecure"
       - "traefik.http.routers.notebook.tls.certresolver=myresolver"
       - "traefik.http.services.notebook.loadbalancer.server.port=8502"
+      # Timeout for long-running operations (transformations, podcasts)
+      - "traefik.http.services.notebook.loadbalancer.responseforwarding.flushinterval=100ms"
     networks:
       - traefik-network
 ```
 
+**Note**: For Traefik v2+, you may also need to configure `serversTransport` timeouts in your static configuration:
+
+```yaml
+# traefik.yml (static configuration)
+serversTransport:
+  forwardingTimeouts:
+    dialTimeout: 30s
+    responseHeaderTimeout: 600s
+    idleConnTimeout: 90s
+```
+
 ### Coolify
 
-1. Create new service with `lfnovo/open_notebook:v1-latest-single`
+1. Create new service using [Docker Compose](../1-INSTALLATION/docker-compose.md)
 2. Set port to **8502**
 3. Add environment: `API_URL=https://your-domain.com`
 4. Enable HTTPS in Coolify
@@ -137,6 +128,8 @@ API_URL=https://your-domain.com
 
 **Important**: Set `API_URL` to your public URL (with https://).
 
+**Note on HOSTNAME**: The Docker images set `HOSTNAME=0.0.0.0` by default, which ensures Next.js binds to all interfaces and is accessible from reverse proxies. You typically don't need to set this manually.
+
 ---
 
 ## Understanding API_URL
@@ -150,7 +143,6 @@ The frontend uses a three-tier priority system to determine the API URL:
 ### Auto-Detection Details
 
 When `API_URL` is not set, the Next.js frontend:
-
 - Analyzes the incoming HTTP request
 - Extracts the hostname from the `host` header
 - Respects the `X-Forwarded-Proto` header (for HTTPS behind reverse proxies)
@@ -158,7 +150,6 @@ When `API_URL` is not set, the Next.js frontend:
 - Example: Request to `http://10.20.30.20:8502` → API URL becomes `http://10.20.30.20:5055`
 
 **Why set API_URL explicitly?**
-
 - **Reliability**: Auto-detection can fail with complex proxy setups
 - **HTTPS**: Ensures frontend uses `https://` when behind SSL-terminating proxy
 - **Custom domains**: Works correctly with domain names instead of IP addresses
@@ -170,19 +161,20 @@ When `API_URL` is not set, the Next.js frontend:
 
 ## Complete Docker Compose Example
 
+> **Note:** This example only shows the open-notebook and nginx services. You also need a `surrealdb` service. See the [full base docker-compose.yml](https://github.com/lfnovo/open-notebook/blob/main/docker-compose.yml) for the complete setup.
+
 ```yaml
 services:
   open-notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+    image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     container_name: open-notebook
     environment:
       - API_URL=https://notebook.example.com
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY=${OPEN_NOTEBOOK_ENCRYPTION_KEY}
       - OPEN_NOTEBOOK_PASSWORD=${OPEN_NOTEBOOK_PASSWORD}
     volumes:
       - ./notebook_data:/app/data
-      - ./surreal_data:/mydata
     # Only expose to localhost (nginx handles public access)
     ports:
       - "127.0.0.1:8502:8502"
@@ -254,10 +246,11 @@ http {
             proxy_set_header Connection 'upgrade';
             proxy_cache_bypass $http_upgrade;
 
-            # Timeouts for long-running operations (podcasts, etc.)
-            proxy_read_timeout 300s;
+            # Timeouts for long-running operations (transformations, podcasts, etc.)
+            # 600s matches the frontend timeout for slow LLM operations
+            proxy_read_timeout 600s;
             proxy_connect_timeout 60s;
-            proxy_send_timeout 300s;
+            proxy_send_timeout 600s;
         }
     }
 }
@@ -298,7 +291,6 @@ location / {
 Accessing Open Notebook from a different machine on your network:
 
 **Step 1: Get your server IP**
-
 ```bash
 # On the server running Open Notebook:
 hostname -I
@@ -308,18 +300,17 @@ ifconfig | grep "inet "
 ```
 
 **Step 2: Configure API_URL**
-
 ```bash
 # In docker-compose.yml or .env:
 API_URL=http://192.168.1.100:5055
 ```
 
 **Step 3: Expose ports**
-
 ```yaml
+# Add to your docker-compose.yml (requires surrealdb service, see installation guide)
 services:
   open-notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+    image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     environment:
       - API_URL=http://192.168.1.100:5055
@@ -329,14 +320,12 @@ services:
 ```
 
 **Step 4: Access from client machine**
-
 ```bash
 # In browser on other machine:
 http://192.168.1.100:8502
 ```
 
 **Troubleshooting**:
-
 - Check firewall: `sudo ufw allow 8502 && sudo ufw allow 5055`
 - Verify connectivity: `ping 192.168.1.100` from client machine
 - Test port: `telnet 192.168.1.100 8502` from client machine
@@ -348,20 +337,19 @@ http://192.168.1.100:8502
 Host the API and frontend on different subdomains:
 
 **docker-compose.yml:**
-
 ```yaml
+# Add to your docker-compose.yml (requires surrealdb service, see installation guide)
 services:
   open-notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+    image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     environment:
       - API_URL=https://api.notebook.example.com
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY=${OPEN_NOTEBOOK_ENCRYPTION_KEY}
     # Don't expose ports (nginx handles routing)
 ```
 
 **nginx.conf:**
-
 ```nginx
 # Frontend server
 server {
@@ -412,7 +400,6 @@ server {
 For complex deployments with separate frontend and API containers:
 
 **docker-compose.yml:**
-
 ```yaml
 services:
   frontend:
@@ -427,7 +414,7 @@ services:
     image: lfnovo/open_notebook_api:v1-latest
     pull_policy: always
     environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY=${OPEN_NOTEBOOK_ENCRYPTION_KEY}
     ports:
       - "5055:5055"
     depends_on:
@@ -443,7 +430,6 @@ services:
 ```
 
 **nginx.conf:**
-
 ```nginx
 http {
     upstream frontend {
@@ -484,7 +470,7 @@ http {
 }
 ```
 
-**Note**: Most users should use the single-container approach (`v1-latest-single`). Multi-container is only needed for custom scaling or isolation requirements.
+**Note**: Most users should use the [Docker Compose](../1-INSTALLATION/docker-compose.md) approach (`v1-latest`). Multi-container with separate nginx is only needed for custom scaling or isolation requirements.
 
 ---
 
@@ -523,13 +509,11 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 ### "Unable to connect to server"
 
 1. **Check API_URL is set**:
-
    ```bash
    docker exec open-notebook env | grep API_URL
    ```
 
 2. **Verify reverse proxy reaches container**:
-
    ```bash
    curl -I http://localhost:8502
    ```
@@ -565,19 +549,55 @@ proxy_set_header Connection 'upgrade';
 
 ### Timeout Errors
 
-Increase timeouts for long operations (podcast generation):
+**Symptoms:**
+- `socket hang up` or `ECONNRESET` errors
+- `Timeout after 30000ms` errors
+- Operations fail after exactly 30 seconds
 
+**Cause:** Your reverse proxy has a default timeout (often 30s) that's shorter than Open Notebook's operations.
+
+**Solutions by proxy:**
+
+**Nginx:**
 ```nginx
-proxy_read_timeout 300s;
-proxy_send_timeout 300s;
+proxy_read_timeout 600s;
+proxy_send_timeout 600s;
 ```
+
+**Caddy:**
+```caddy
+reverse_proxy open-notebook:8502 {
+    transport http {
+        read_timeout 600s
+        write_timeout 600s
+    }
+}
+```
+
+**Traefik (static config):**
+```yaml
+serversTransport:
+  forwardingTimeouts:
+    responseHeaderTimeout: 600s
+```
+
+**Application-level timeouts:**
+
+If you still experience timeouts after configuring your proxy, you can also adjust the application timeouts:
+
+```bash
+# In .env file:
+API_CLIENT_TIMEOUT=600      # API client timeout (default: 300s)
+ESPERANTO_LLM_TIMEOUT=180   # LLM inference timeout (default: 60s)
+```
+
+See [Advanced Configuration](advanced.md) for more timeout options.
 
 ---
 
 ### How to Debug Configuration Issues
 
 **Step 1: Check browser console** (F12 → Console tab)
-
 ```
 Look for messages starting with 🔧 [Config]
 These show the configuration detection process
@@ -585,30 +605,26 @@ You'll see which API URL is being used
 ```
 
 **Example good output:**
-
 ```
 ✅ [Config] Runtime API URL from server: https://your-domain.com
 ```
 
 **Example bad output:**
-
 ```
 ❌ [Config] Failed to fetch runtime config
 ⚠️  [Config] Using auto-detected URL: http://localhost:5055
 ```
 
 **Step 2: Test API directly**
-
 ```bash
 # Should return JSON config
 curl https://your-domain.com/api/config
 
 # Expected output:
-{"openai_api_key_set":true,"anthropic_api_key_set":false,...}
+{"status":"ok","credentials_configured":true,...}
 ```
 
 **Step 3: Check Docker logs**
-
 ```bash
 docker logs open-notebook
 
@@ -619,7 +635,6 @@ docker logs open-notebook
 ```
 
 **Step 4: Verify environment variable**
-
 ```bash
 docker exec open-notebook env | grep API_URL
 
@@ -632,7 +647,6 @@ docker exec open-notebook env | grep API_URL
 ### Frontend Adds `:5055` to URL (Versions ≤ 1.0.10)
 
 **Symptoms** (only in older versions):
-
 - You set `API_URL=https://your-domain.com`
 - Browser console shows: "Attempted URL: https://your-domain.com:5055/api/config"
 - CORS errors with "Status code: (null)"
@@ -647,7 +661,6 @@ Upgrade to version 1.0.11 or later. The config endpoint has been moved to `/conf
 Check browser console (F12) - should see: `✅ [Config] Runtime API URL from server: https://your-domain.com`
 
 **If you can't upgrade**, explicitly configure the `/config` route:
-
 ```nginx
 # Only needed for versions ≤ 1.0.10
 location = /config {
@@ -663,17 +676,15 @@ location = /config {
 ### File Upload Errors (413 Payload Too Large)
 
 **Symptoms:**
-
 ```
 CORS header 'Access-Control-Allow-Origin' missing. Status code: 413.
 Error creating source. Please try again.
 ```
 
 **Root Cause:**
-When uploading files, your reverse proxy may reject the request due to body size limits _before_ it reaches the application. Since the error happens at the proxy level, CORS headers are not included in the response.
+When uploading files, your reverse proxy may reject the request due to body size limits *before* it reaches the application. Since the error happens at the proxy level, CORS headers are not included in the response.
 
 **Version Requirement:**
-
 - **Open Notebook v1.3.2+** is required for file uploads >10MB
 - Uses Next.js 16+ which supports the `proxyClientMaxBodySize` configuration option
 - Check your version: Settings → About (bottom of settings page)
@@ -681,7 +692,6 @@ When uploading files, your reverse proxy may reject the request due to body size
 **Solutions:**
 
 1. **Nginx - Increase body size limit**:
-
    ```nginx
    server {
        # Allow larger file uploads (default is 1MB)
@@ -704,25 +714,22 @@ When uploading files, your reverse proxy may reject the request due to body size
    ```
 
 2. **Traefik - Increase buffer size**:
-
    ```yaml
    # In your traefik configuration
    http:
      middlewares:
        large-body:
          buffering:
-           maxRequestBodyBytes: 104857600 # 100MB
+           maxRequestBodyBytes: 104857600  # 100MB
    ```
 
    Apply middleware to your router:
-
    ```yaml
    labels:
      - "traefik.http.routers.notebook.middlewares=large-body"
    ```
 
 3. **Kubernetes Ingress (nginx-ingress)**:
-
    ```yaml
    apiVersion: networking.k8s.io/v1
    kind: Ingress
@@ -741,7 +748,12 @@ When uploading files, your reverse proxy may reject the request due to body size
        request_body {
            max_size 100MB
        }
-       reverse_proxy open-notebook:8502
+       reverse_proxy open-notebook:8502 {
+           transport http {
+               read_timeout 600s
+               write_timeout 600s
+           }
+       }
    }
    ```
 
@@ -752,7 +764,6 @@ When uploading files, your reverse proxy may reject the request due to body size
 ### CORS Errors
 
 **Symptoms:**
-
 ```
 Access-Control-Allow-Origin header is missing
 Cross-Origin Request Blocked
@@ -762,7 +773,6 @@ Response to preflight request doesn't pass access control check
 **Possible Causes:**
 
 1. **Missing proxy headers**:
-
    ```nginx
    # Make sure these are set:
    proxy_set_header X-Forwarded-Proto $scheme;
@@ -771,7 +781,6 @@ Response to preflight request doesn't pass access control check
    ```
 
 2. **API_URL protocol mismatch**:
-
    ```bash
    # Frontend is HTTPS, but API_URL is HTTP:
    API_URL=http://notebook.example.com  # ❌ Wrong
@@ -791,25 +800,21 @@ Response to preflight request doesn't pass access control check
 ### Missing Authorization Header
 
 **Symptoms:**
-
 ```json
-{ "detail": "Missing authorization header" }
+{"detail": "Missing authorization header"}
 ```
 
 This happens when:
-
 - You have set `OPEN_NOTEBOOK_PASSWORD` for authentication
 - You're trying to access `/api/config` directly without logging in first
 
 **Solution:**
 This is **expected behavior**! The frontend handles authentication automatically. Just:
-
 1. Access the frontend URL (not `/api/` directly)
 2. Log in through the UI
 3. The frontend will handle authorization headers for all API calls
 
 **For API integrations:** Include the password in the Authorization header:
-
 ```bash
 curl -H "Authorization: Bearer your-password-here" \
   https://your-domain.com/api/config
@@ -820,7 +825,6 @@ curl -H "Authorization: Bearer your-password-here" \
 ### SSL/TLS Certificate Errors
 
 **Symptoms:**
-
 - Browser shows "Your connection is not private"
 - Certificate warnings
 - Mixed content errors
@@ -828,20 +832,17 @@ curl -H "Authorization: Bearer your-password-here" \
 **Solutions:**
 
 1. **Use Let's Encrypt** (recommended):
-
    ```bash
    sudo certbot --nginx -d notebook.example.com
    ```
 
 2. **Check certificate paths** in nginx:
-
    ```nginx
    ssl_certificate /etc/nginx/ssl/fullchain.pem;      # Full chain
    ssl_certificate_key /etc/nginx/ssl/privkey.pem;    # Private key
    ```
 
 3. **Verify certificate is valid**:
-
    ```bash
    openssl x509 -in /etc/nginx/ssl/fullchain.pem -text -noout
    ```
@@ -879,13 +880,11 @@ curl -H "Authorization: Bearer your-password-here" \
 If you're running Open Notebook **version 1.0.x or earlier**, you may need to use the legacy two-port configuration where you explicitly route `/api/*` to port 5055.
 
 **Check your version:**
-
 ```bash
 docker exec open-notebook cat /app/package.json | grep version
 ```
 
 **If version < 1.1.0**, you may need:
-
 - Explicit `/api/*` routing to port 5055 in reverse proxy
 - Explicit `/config` endpoint routing for versions ≤ 1.0.10
 - See the "Frontend Adds `:5055` to URL" troubleshooting section above
@@ -900,11 +899,3 @@ docker exec open-notebook cat /app/package.json | grep version
 - **[Advanced Configuration](advanced.md)** - Ports, timeouts, and SSL settings
 - **[Troubleshooting](../6-TROUBLESHOOTING/connection-issues.md)** - Connection problems
 - **[Docker Deployment](../1-INSTALLATION/docker-compose.md)** - Complete deployment guide
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

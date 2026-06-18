@@ -2,14 +2,6 @@
 Sources service layer using API.
 """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Union
 
@@ -25,9 +17,9 @@ class SourceProcessingResult:
 
     source: Source
     is_async: bool = False
-    command_id: str | None = None
-    status: str | None = None
-    processing_info: dict | None = None
+    command_id: Optional[str] = None
+    status: Optional[str] = None
+    processing_info: Optional[Dict] = None
 
 
 @dataclass
@@ -47,7 +39,7 @@ class SourceWithMetadata:
         return self.source.title
 
     @title.setter
-    def title(self, value) -> None:
+    def title(self, value):
         self.source.title = value
 
     @property
@@ -74,10 +66,12 @@ class SourceWithMetadata:
 class SourcesService:
     """Service layer for sources operations using API."""
 
-    def __init__(self) -> None:
+    def __init__(self):
         logger.info("Using API for sources operations")
 
-    def get_all_sources(self, notebook_id: str | None = None) -> list[SourceWithMetadata]:
+    def get_all_sources(
+        self, notebook_id: Optional[str] = None
+    ) -> List[SourceWithMetadata]:
         """Get all sources with optional notebook filtering."""
         sources_data = api_client.get_sources(notebook_id=notebook_id)
         # Convert API response to SourceWithMetadata objects
@@ -86,14 +80,14 @@ class SourcesService:
             source = Source(
                 title=source_data["title"],
                 topics=source_data["topics"],
-                asset=(
-                    Asset(
-                        file_path=(source_data["asset"]["file_path"] if source_data["asset"] else None),
-                        url=(source_data["asset"]["url"] if source_data["asset"] else None),
-                    )
+                asset=Asset(
+                    file_path=source_data["asset"]["file_path"]
                     if source_data["asset"]
-                    else None
-                ),
+                    else None,
+                    url=source_data["asset"]["url"] if source_data["asset"] else None,
+                )
+                if source_data["asset"]
+                else None,
             )
             source.id = source_data["id"]
             source.created = source_data["created"]
@@ -114,35 +108,37 @@ class SourcesService:
             title=source_data["title"],
             topics=source_data["topics"],
             full_text=source_data["full_text"],
-            asset=(
-                Asset(
-                    file_path=(source_data["asset"]["file_path"] if source_data["asset"] else None),
-                    url=source_data["asset"]["url"] if source_data["asset"] else None,
-                )
+            asset=Asset(
+                file_path=source_data["asset"]["file_path"]
                 if source_data["asset"]
-                else None
-            ),
+                else None,
+                url=source_data["asset"]["url"] if source_data["asset"] else None,
+            )
+            if source_data["asset"]
+            else None,
         )
         source.id = source_data["id"]
         source.created = source_data["created"]
         source.updated = source_data["updated"]
 
-        return SourceWithMetadata(source=source, embedded_chunks=source_data.get("embedded_chunks", 0))
+        return SourceWithMetadata(
+            source=source, embedded_chunks=source_data.get("embedded_chunks", 0)
+        )
 
     def create_source(
         self,
-        notebook_id: str | None = None,
+        notebook_id: Optional[str] = None,
         source_type: str = "text",
-        url: str | None = None,
-        file_path: str | None = None,
-        content: str | None = None,
-        title: str | None = None,
-        transformations: list[str] | None = None,
+        url: Optional[str] = None,
+        file_path: Optional[str] = None,
+        content: Optional[str] = None,
+        title: Optional[str] = None,
+        transformations: Optional[List[str]] = None,
         embed: bool = False,
         delete_source: bool = False,
-        notebooks: list[str] | None = None,
+        notebooks: Optional[List[str]] = None,
         async_processing: bool = False,
-    ) -> Source | SourceProcessingResult:
+    ) -> Union[Source, SourceProcessingResult]:
         """
         Create a new source with support for async processing.
 
@@ -183,23 +179,31 @@ class SourcesService:
             title=response_data["title"],
             topics=response_data.get("topics") or [],
             full_text=response_data.get("full_text"),
-            asset=(
-                Asset(
-                    file_path=(response_data["asset"]["file_path"] if response_data.get("asset") else None),
-                    url=(response_data["asset"]["url"] if response_data.get("asset") else None),
-                )
+            asset=Asset(
+                file_path=response_data["asset"]["file_path"]
                 if response_data.get("asset")
-                else None
-            ),
+                else None,
+                url=response_data["asset"]["url"]
+                if response_data.get("asset")
+                else None,
+            )
+            if response_data.get("asset")
+            else None,
         )
         source.id = response_data["id"]
         source.created = response_data["created"]
         source.updated = response_data["updated"]
 
         # Check if this is an async processing response
-        if response_data.get("command_id") or response_data.get("status") or response_data.get("processing_info"):
+        if (
+            response_data.get("command_id")
+            or response_data.get("status")
+            or response_data.get("processing_info")
+        ):
             # Ensure source_data is a dict for accessing attributes
-            source_data_dict = source_data if isinstance(source_data, dict) else source_data[0]
+            source_data_dict = (
+                source_data if isinstance(source_data, dict) else source_data[0]
+            )
             # Return enhanced result for async processing
             return SourceProcessingResult(
                 source=source,
@@ -212,23 +216,23 @@ class SourcesService:
             # Return simple Source for backward compatibility
             return source
 
-    def get_source_status(self, source_id: str) -> dict:
+    def get_source_status(self, source_id: str) -> Dict:
         """Get processing status for a source."""
         response = api_client.get_source_status(source_id)
         return response if isinstance(response, dict) else response[0]
 
     def create_source_async(
         self,
-        notebook_id: str | None = None,
+        notebook_id: Optional[str] = None,
         source_type: str = "text",
-        url: str | None = None,
-        file_path: str | None = None,
-        content: str | None = None,
-        title: str | None = None,
-        transformations: list[str] | None = None,
+        url: Optional[str] = None,
+        file_path: Optional[str] = None,
+        content: Optional[str] = None,
+        title: Optional[str] = None,
+        transformations: Optional[List[str]] = None,
         embed: bool = False,
         delete_source: bool = False,
-        notebooks: list[str] | None = None,
+        notebooks: Optional[List[str]] = None,
     ) -> SourceProcessingResult:
         """
         Create a new source with async processing enabled.
@@ -291,7 +295,9 @@ class SourcesService:
         source_data = api_client.update_source(source.id, **updates)
 
         # Ensure source_data is a dict
-        source_data_dict = source_data if isinstance(source_data, dict) else source_data[0]
+        source_data_dict = (
+            source_data if isinstance(source_data, dict) else source_data[0]
+        )
 
         # Update the source object with the response
         source.title = source_data_dict["title"]
@@ -311,8 +317,8 @@ sources_service = SourcesService()
 
 # Export important classes for easy importing
 __all__ = [
-    "SourceProcessingResult",
-    "SourceWithMetadata",
     "SourcesService",
+    "SourceWithMetadata",
+    "SourceProcessingResult",
     "sources_service",
 ]

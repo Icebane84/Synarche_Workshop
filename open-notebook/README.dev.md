@@ -1,35 +1,35 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `README.DEV` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Developer Guide
 
-# README.dev.md
+This guide is for developers working on Open Notebook. For end-user documentation, see [README.md](README.md) and [docs/](docs/).
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+## Quick Start for Development
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+```bash
+# 1. Clone and setup
+git clone https://github.com/lfnovo/open-notebook.git
+cd open-notebook
 
----
+# 2. Copy environment files
+cp .env.example .env
+cp .env.example docker.env
 
-###### **[ARTIFACT START]**
+# 3. Install dependencies
+uv sync
 
-## **Block A: The Identification Lock (UIP-V15)**
+# 4. Start all services (recommended for development)
+make start-all
+```
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-README.DEV-001`         | The Sovereign ID. |
-| **Official Name** | `README.dev.md`               | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+## Development Workflows
+
+### When to Use What?
+
+| Workflow | Use Case | Speed | Production Parity |
+|----------|----------|-------|-------------------|
+| **Local Services** (`make start-all`) | Day-to-day development, fastest iteration | ⚡⚡⚡ Fast | Medium |
+| **Docker Compose** (`make dev`) | Testing containerized setup | ⚡⚡ Medium | High |
+| **Local Docker Build** (`make docker-build-local`) | Testing Dockerfile changes | ⚡ Slow | Very High |
+| **Multi-platform Build** (`make docker-push`) | Publishing releases | 🐌 Very Slow | Exact |
 
 ---
 
@@ -81,14 +81,12 @@ make stop-all
 ```
 
 ### Advantages
-
 - ✅ Fastest iteration (hot reload)
 - ✅ Easy debugging (direct process access)
 - ✅ Low resource usage
 - ✅ Direct log access
 
 ### Disadvantages
-
 - ❌ Doesn't test Docker build
 - ❌ Environment may differ from production
 - ❌ Requires local Python/Node setup
@@ -114,13 +112,11 @@ make full
 - `docker-compose.yml` - Base configuration
 
 ### Advantages
-
 - ✅ Closer to production environment
 - ✅ Isolated dependencies
 - ✅ Easy to share exact environment
 
 ### Disadvantages
-
 - ❌ Slower rebuilds
 - ❌ More complex debugging
 - ❌ Higher resource usage
@@ -139,7 +135,6 @@ make docker-build-local
 ```
 
 This creates two tags:
-
 - `lfnovo/open_notebook:<version>` (from pyproject.toml)
 - `lfnovo/open_notebook:local`
 
@@ -150,7 +145,6 @@ docker run -p 5055:5055 -p 3000:3000 lfnovo/open_notebook:local
 ```
 
 ### When to Use
-
 - ✅ Before pushing to registry
 - ✅ Testing Dockerfile changes
 - ✅ Debugging production-specific issues
@@ -177,12 +171,12 @@ make docker-push-latest
 
 ### Available Commands
 
-| Command                   | What It Does                              | Updates Latest?  |
-| ------------------------- | ----------------------------------------- | ---------------- |
-| `make docker-build-local` | Build for current platform only           | No registry push |
-| `make docker-push`        | Push version tags to registries           | ❌ No            |
-| `make docker-push-latest` | Push version + update v1-latest           | ✅ Yes           |
-| `make docker-release`     | Full release (same as docker-push-latest) | ✅ Yes           |
+| Command | What It Does | Updates Latest? |
+|---------|--------------|-----------------|
+| `make docker-build-local` | Build for current platform only | No registry push |
+| `make docker-push` | Push version tags to registries | ❌ No |
+| `make docker-push-latest` | Push version + update v1-latest | ✅ Yes |
+| `make docker-release` | Full release (same as docker-push-latest) | ✅ Yes |
 
 ### Publishing Details
 
@@ -255,7 +249,6 @@ cd frontend && npm install package-name
 Open Notebook supports internationalization. To add a new language:
 
 1. **Create locale file**: Copy an existing locale as template
-
    ```bash
    cp frontend/src/lib/locales/en-US/index.ts frontend/src/lib/locales/pt-BR/index.ts
    ```
@@ -267,29 +260,27 @@ Open Notebook supports internationalization. To add a new language:
    - `apiErrors`: Error message translations
 
 3. **Register the locale** in `frontend/src/lib/locales/index.ts`:
-
    ```typescript
-   import { ptBR } from "./pt-BR";
+   import { ptBR } from './pt-BR'
 
    export const locales = {
-     "en-US": enUS,
-     "zh-CN": zhCN,
-     "zh-TW": zhTW,
-     "pt-BR": ptBR, // Add your locale
-   };
+     'en-US': enUS,
+     'zh-CN': zhCN,
+     'zh-TW': zhTW,
+     'pt-BR': ptBR,  // Add your locale
+   }
    ```
 
 4. **Add date-fns locale** in `frontend/src/lib/utils/date-locale.ts`:
-
    ```typescript
-   import { zhCN, enUS, zhTW, ptBR } from "date-fns/locale";
+   import { zhCN, enUS, zhTW, ptBR } from 'date-fns/locale'
 
    const LOCALE_MAP: Record<string, Locale> = {
-     "zh-CN": zhCN,
-     "zh-TW": zhTW,
-     "en-US": enUS,
-     "pt-BR": ptBR, // Add your locale
-   };
+     'zh-CN': zhCN,
+     'zh-TW': zhTW,
+     'en-US': enUS,
+     'pt-BR': ptBR,  // Add your locale
+   }
    ```
 
 5. **Test**: Switch languages using the language toggle in the UI header.
@@ -379,7 +370,6 @@ open-notebook/
 ```
 
 See component-specific CLAUDE.md files for detailed architecture:
-
 - [frontend/CLAUDE.md](frontend/CLAUDE.md)
 - [api/CLAUDE.md](api/CLAUDE.md)
 - [open_notebook/CLAUDE.md](open_notebook/CLAUDE.md)
@@ -457,11 +447,3 @@ make clean-cache
 ---
 
 **Last Updated:** January 2025
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

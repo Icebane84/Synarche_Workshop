@@ -1,35 +1,6 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `ADVANCED` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Advanced Configuration
 
-# advanced.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-ADVANCED-001`           | The Sovereign ID. |
-| **Official Name** | `advanced.md`                 | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+Performance tuning, debugging, and advanced features.
 
 ---
 
@@ -45,7 +16,6 @@ SURREAL_COMMANDS_MAX_TASKS=5
 ```
 
 **Guidelines:**
-
 - CPU: 2 cores → 2-3 tasks
 - CPU: 4 cores → 5 tasks (default)
 - CPU: 8+ cores → 10-20 tasks
@@ -99,7 +69,6 @@ TTS_BATCH_SIZE=2
 ```
 
 **Providers and recommendations:**
-
 - OpenAI: 5 (can handle many concurrent)
 - Google: 4 (good concurrency)
 - ElevenLabs: 2 (limited concurrent requests)
@@ -166,7 +135,7 @@ Edit `docker-compose.yml`:
 services:
   open-notebook:
     ports:
-      - "8001:8502" # Change from 8502 to 8001
+      - "8001:8502"  # Change from 8502 to 8001
 ```
 
 Access at: `http://localhost:8001`
@@ -179,10 +148,10 @@ API auto-detects to: `http://localhost:5055` ✓
 services:
   open-notebook:
     ports:
-      - "127.0.0.1:8502:8502" # Frontend
-      - "5056:5055" # Change API from 5055 to 5056
+      - "127.0.0.1:8502:8502"  # Frontend
+      - "5056:5055"            # Change API from 5055 to 5056
     environment:
-      - API_URL=http://localhost:5056 # Update API_URL
+      - API_URL=http://localhost:5056  # Update API_URL
 ```
 
 Access API directly: `http://localhost:5056/docs`
@@ -195,9 +164,9 @@ Access API directly: `http://localhost:5056/docs`
 services:
   surrealdb:
     ports:
-      - "8001:8000" # Change from 8000 to 8001
+      - "8001:8000"  # Change from 8000 to 8001
     environment:
-      - SURREAL_URL=ws://surrealdb:8001/rpc # Update connection URL
+      - SURREAL_URL=ws://surrealdb:8001/rpc  # Update connection URL
 ```
 
 **Important:** Internal Docker network uses container name (`surrealdb`), not `localhost`.
@@ -228,28 +197,21 @@ ESPERANTO_SSL_VERIFY=false
 
 ### Use Different Providers for Different Tasks
 
-```env
-# Language model (main)
-OPENAI_API_KEY=sk-proj-...
+Configure multiple AI providers via **Settings → API Keys**. Each provider gets its own credential:
 
-# Embeddings (alternative)
-# (Future: Configure different embedding provider)
+1. Add a credential for your main language model provider (e.g., OpenAI, Anthropic)
+2. Add a credential for embeddings (e.g., Voyage AI, or use the same provider)
+3. Add a credential for TTS (e.g., ElevenLabs, or OpenAI-Compatible for local Speaches)
+4. Each credential's models are registered and available independently
 
-# TTS (different provider)
-ELEVENLABS_API_KEY=...
-```
+### Multiple Endpoints for OpenAI-Compatible
 
-### OpenAI-Compatible with Fallback
+When using OpenAI-Compatible providers, you can configure per-service URLs in a single credential:
 
-```env
-# Primary
-OPENAI_COMPATIBLE_BASE_URL=http://localhost:1234/v1
-OPENAI_COMPATIBLE_API_KEY=key1
-
-# Can also set specific modality endpoints
-OPENAI_COMPATIBLE_BASE_URL_LLM=http://localhost:1234/v1
-OPENAI_COMPATIBLE_BASE_URL_EMBEDDING=http://localhost:8001/v1
-```
+1. Go to **Settings** → **API Keys**
+2. Click **Add Credential** → Select **OpenAI-Compatible**
+3. Configure separate URLs for LLM, Embedding, TTS, and STT
+4. Click **Save**, then **Test Connection**
 
 ---
 
@@ -280,7 +242,6 @@ API_URL=https://mynotebook.example.com
 ### Firewall Rules
 
 Restrict access to your Open Notebook:
-
 - Port 8502 (frontend): Only from your IP
 - Port 5055 (API): Only from frontend
 - Port 8000 (SurrealDB): Never expose to internet
@@ -315,30 +276,14 @@ Get key from: https://jina.ai/
 
 ## Environment Variable Groups
 
-### API Keys (Choose at least one)
-
+### Credential Storage (Required)
 ```env
-OPENAI_API_KEY
-ANTHROPIC_API_KEY
-GOOGLE_API_KEY
-GROQ_API_KEY
-MISTRAL_API_KEY
-DEEPSEEK_API_KEY
-OPENROUTER_API_KEY
-XAI_API_KEY
+OPEN_NOTEBOOK_ENCRYPTION_KEY    # Required for storing credentials
 ```
 
-### AI Provider Endpoints
-
-```env
-OLLAMA_API_BASE
-OPENAI_COMPATIBLE_BASE_URL
-AZURE_OPENAI_ENDPOINT
-GEMINI_API_BASE_URL
-```
+AI provider API keys are configured via **Settings → API Keys** (not environment variables).
 
 ### Database
-
 ```env
 SURREAL_URL
 SURREAL_USER
@@ -348,7 +293,6 @@ SURREAL_DATABASE
 ```
 
 ### Performance
-
 ```env
 SURREAL_COMMANDS_MAX_TASKS
 SURREAL_COMMANDS_RETRY_ENABLED
@@ -359,7 +303,6 @@ SURREAL_COMMANDS_RETRY_WAIT_MAX
 ```
 
 ### API Settings
-
 ```env
 API_URL
 INTERNAL_API_URL
@@ -368,14 +311,13 @@ ESPERANTO_LLM_TIMEOUT
 ```
 
 ### Audio/TTS
-
 ```env
-ELEVENLABS_API_KEY
 TTS_BATCH_SIZE
 ```
 
-### Debugging
+> **Note:** `ELEVENLABS_API_KEY` is deprecated. Configure ElevenLabs via **Settings → API Keys**.
 
+### Debugging
 ```env
 LANGCHAIN_TRACING_V2
 LANGCHAIN_ENDPOINT
@@ -390,14 +332,10 @@ LANGCHAIN_PROJECT
 ### Quick Test
 
 ```bash
-# Add test config
-export OPENAI_API_KEY=sk-test-key
-export API_URL=http://localhost:5055
-
-# Test connection
+# Test API health
 curl http://localhost:5055/health
 
-# Test with sample
+# Test with sample (requires configured credential and registered models)
 curl -X POST http://localhost:5055/api/chat \
   -H "Content-Type: application/json" \
   -d '{"message":"Hello"}'
@@ -407,7 +345,7 @@ curl -X POST http://localhost:5055/api/chat \
 
 ```bash
 # Check environment variables are set
-env | grep OPENAI_API_KEY
+env | grep OPEN_NOTEBOOK_ENCRYPTION_KEY
 
 # Verify database connection
 python -c "import os; print(os.getenv('SURREAL_URL'))"
@@ -463,10 +401,10 @@ SURREAL_COMMANDS_RETRY_WAIT_STRATEGY=exponential_jitter
 
 ### Data Locations
 
-| Path                          | Contents                       |
-| ----------------------------- | ------------------------------ |
-| `./data` or `/app/data`       | Uploads, podcasts, checkpoints |
-| `./surreal_data` or `/mydata` | SurrealDB database files       |
+| Path | Contents |
+|------|----------|
+| `./data` or `/app/data` | Uploads, podcasts, checkpoints |
+| `./surreal_data` or `/mydata` | SurrealDB database files |
 
 ### Quick Backup
 
@@ -503,7 +441,6 @@ echo "Backup complete: open-notebook-$DATE.tar.gz"
 ```
 
 Add to cron:
-
 ```bash
 # Daily backup at 2 AM
 0 2 * * * /path/to/backup.sh >> /var/log/open-notebook-backup.log 2>&1
@@ -592,31 +529,16 @@ docker system prune -a
 ## Summary
 
 **Most deployments need:**
-
 - One AI provider API key
 - Default database settings
 - Default timeouts
 
 **Tune performance only if:**
-
 - You have specific bottlenecks
 - High-concurrency workload
 - Custom hardware (very fast or very slow)
 
 **Advanced features:**
-
 - Firecrawl for better web scraping
 - LangSmith for debugging workflows
 - Custom CA bundles for self-signed certs
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
-
-- [[ai-providers]]
-
-- [[reverse-proxy]]

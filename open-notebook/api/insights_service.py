@@ -2,14 +2,6 @@
 Insights service layer using API.
 """
 
-# --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-# System Slot: Passive Knowledge
-# Synergy Set: N/A
-# Primary Stat Buff: Adaptability
-# Passive Ability: The Forge's Heart (Auto-Refactor)
-# Cognitive Load Cost: Low
-# XP Award Value: 50 XP
-
 from typing import List, Optional
 
 from loguru import logger
@@ -24,7 +16,7 @@ class InsightsService:
     def __init__(self):
         logger.info("Using API for insights operations")
 
-    def get_source_insights(self, source_id: str) -> list[SourceInsight]:
+    def get_source_insights(self, source_id: str) -> List[SourceInsight]:
         """Get all insights for a specific source."""
         insights_data = api_client.get_source_insights(source_id)
         # Convert API response to SourceInsight objects
@@ -43,7 +35,11 @@ class InsightsService:
     def get_insight(self, insight_id: str) -> SourceInsight:
         """Get a specific insight."""
         insight_response = api_client.get_insight(insight_id)
-        insight_data = insight_response if isinstance(insight_response, dict) else insight_response[0]
+        insight_data = (
+            insight_response
+            if isinstance(insight_response, dict)
+            else insight_response[0]
+        )
         insight = SourceInsight(
             insight_type=insight_data["insight_type"],
             content=insight_data["content"],
@@ -59,10 +55,14 @@ class InsightsService:
         api_client.delete_insight(insight_id)
         return True
 
-    def save_insight_as_note(self, insight_id: str, notebook_id: str | None = None) -> Note:
+    def save_insight_as_note(
+        self, insight_id: str, notebook_id: Optional[str] = None
+    ) -> Note:
         """Convert an insight to a note."""
         note_response = api_client.save_insight_as_note(insight_id, notebook_id)
-        note_data = note_response if isinstance(note_response, dict) else note_response[0]
+        note_data = (
+            note_response if isinstance(note_response, dict) else note_response[0]
+        )
         note = Note(
             title=note_data["title"],
             content=note_data["content"],
@@ -74,11 +74,17 @@ class InsightsService:
         return note
 
     def create_source_insight(
-        self, source_id: str, transformation_id: str, model_id: str | None = None
+        self, source_id: str, transformation_id: str, model_id: Optional[str] = None
     ) -> SourceInsight:
         """Create a new insight for a source by running a transformation."""
-        insight_response = api_client.create_source_insight(source_id, transformation_id, model_id)
-        insight_data = insight_response if isinstance(insight_response, dict) else insight_response[0]
+        insight_response = api_client.create_source_insight(
+            source_id, transformation_id, model_id
+        )
+        insight_data = (
+            insight_response
+            if isinstance(insight_response, dict)
+            else insight_response[0]
+        )
         insight = SourceInsight(
             insight_type=insight_data["insight_type"],
             content=insight_data["content"],

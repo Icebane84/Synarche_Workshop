@@ -1,36 +1,31 @@
-"use client";
+'use client'
 
-import { useState, useEffect, useCallback, useMemo } from "react";
-import { isAxiosError } from "axios";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import { sourcesApi } from "@/lib/api/sources";
-import { insightsApi, SourceInsightResponse } from "@/lib/api/insights";
-import { transformationsApi } from "@/lib/api/transformations";
-import { embeddingApi } from "@/lib/api/embedding";
-import { SourceDetailResponse } from "@/lib/types/api";
-import { Transformation } from "@/lib/types/transformations";
-import { LoadingSpinner } from "@/components/common/LoadingSpinner";
-import { InlineEdit } from "@/components/common/InlineEdit";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Label } from "@/components/ui/label";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState, useEffect, useCallback, useMemo } from 'react'
+import { useQueryClient } from '@tanstack/react-query'
+import { isAxiosError } from 'axios'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import { sourcesApi } from '@/lib/api/sources'
+import { insightsApi, SourceInsightResponse } from '@/lib/api/insights'
+import { transformationsApi } from '@/lib/api/transformations'
+import { embeddingApi } from '@/lib/api/embedding'
+import { SourceDetailResponse } from '@/lib/types/api'
+import { Transformation } from '@/lib/types/transformations'
+import { LoadingSpinner } from '@/components/common/LoadingSpinner'
+import { InlineEdit } from '@/components/common/InlineEdit'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Label } from '@/components/ui/label'
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from '@/components/ui/dropdown-menu'
 import {
   AlertDialog,
   AlertDialogAction,
@@ -40,14 +35,14 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
+} from '@/components/ui/alert-dialog'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from '@/components/ui/select'
 import {
   Link as LinkIcon,
   Upload,
@@ -65,313 +60,329 @@ import {
   Database,
   AlertCircle,
   MessageSquare,
-} from "lucide-react";
-import { formatDistanceToNow } from "date-fns";
-import { getDateLocale } from "@/lib/utils/date-locale";
-import { toast } from "sonner";
-import { useTranslation } from "@/lib/hooks/use-translation";
-import { SourceInsightDialog } from "@/components/source/SourceInsightDialog";
-import { NotebookAssociations } from "@/components/source/NotebookAssociations";
+} from 'lucide-react'
+import { formatDistanceToNow } from 'date-fns'
+import { getDateLocale } from '@/lib/utils/date-locale'
+import { toast } from 'sonner'
+import { useTranslation } from '@/lib/hooks/use-translation'
+import { SourceInsightDialog } from '@/components/source/SourceInsightDialog'
+import { NotebookAssociations } from '@/components/source/NotebookAssociations'
 
 interface SourceDetailContentProps {
-  sourceId: string;
-  showChatButton?: boolean;
-  onChatClick?: () => void;
-  onClose?: () => void;
+  sourceId: string
+  showChatButton?: boolean
+  onChatClick?: () => void
+  onClose?: () => void
 }
 
 export function SourceDetailContent({
   sourceId,
   showChatButton = false,
   onChatClick,
-  onClose,
+  onClose
 }: SourceDetailContentProps) {
-  const { t, language } = useTranslation();
-  const [source, setSource] = useState<SourceDetailResponse | null>(null);
-  const [insights, setInsights] = useState<SourceInsightResponse[]>([]);
-  const [transformations, setTransformations] = useState<Transformation[]>([]);
-  const [selectedTransformation, setSelectedTransformation] =
-    useState<string>("");
-  const [loading, setLoading] = useState(true);
-  const [loadingInsights, setLoadingInsights] = useState(false);
-  const [creatingInsight, setCreatingInsight] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [copied, setCopied] = useState(false);
-  const [isEmbedding, setIsEmbedding] = useState(false);
-  const [isDownloadingFile, setIsDownloadingFile] = useState(false);
-  const [fileAvailable, setFileAvailable] = useState<boolean | null>(null);
-  const [selectedInsight, setSelectedInsight] =
-    useState<SourceInsightResponse | null>(null);
-  const [insightToDelete, setInsightToDelete] = useState<string | null>(null);
-  const [deletingInsight, setDeletingInsight] = useState(false);
+  const { t, language } = useTranslation()
+  const queryClient = useQueryClient()
+  const [source, setSource] = useState<SourceDetailResponse | null>(null)
+  const [insights, setInsights] = useState<SourceInsightResponse[]>([])
+  const [transformations, setTransformations] = useState<Transformation[]>([])
+  const [selectedTransformation, setSelectedTransformation] = useState<string>('')
+  const [loading, setLoading] = useState(true)
+  const [loadingInsights, setLoadingInsights] = useState(false)
+  const [creatingInsight, setCreatingInsight] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [copied, setCopied] = useState(false)
+  const [isEmbedding, setIsEmbedding] = useState(false)
+  const [isDownloadingFile, setIsDownloadingFile] = useState(false)
+  const [fileAvailable, setFileAvailable] = useState<boolean | null>(null)
+  const [selectedInsight, setSelectedInsight] = useState<SourceInsightResponse | null>(null)
+  const [insightToDelete, setInsightToDelete] = useState<string | null>(null)
+  const [deletingInsight, setDeletingInsight] = useState(false)
 
   const fetchSource = useCallback(async () => {
     try {
-      setLoading(true);
-      const data = await sourcesApi.get(sourceId);
-      setSource(data);
-      if (typeof data.file_available === "boolean") {
-        setFileAvailable(data.file_available);
+      setLoading(true)
+      const data = await sourcesApi.get(sourceId)
+      setSource(data)
+      if (typeof data.file_available === 'boolean') {
+        setFileAvailable(data.file_available)
       } else if (!data.asset?.file_path) {
-        setFileAvailable(null);
+        setFileAvailable(null)
       } else {
-        setFileAvailable(null);
+        setFileAvailable(null)
       }
     } catch (err) {
-      console.error("Failed to fetch source:", err);
-      setError(t.sources.loadFailed);
+      console.error('Failed to fetch source:', err)
+      setError(t('sources.loadFailed'))
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  }, [sourceId, t]);
+  }, [sourceId, t])
 
   const fetchInsights = useCallback(async () => {
     try {
-      setLoadingInsights(true);
-      const data = await insightsApi.listForSource(sourceId);
-      setInsights(data);
+      setLoadingInsights(true)
+      const data = await insightsApi.listForSource(sourceId)
+      setInsights(data)
     } catch (err) {
-      console.error("Failed to fetch insights:", err);
+      console.error('Failed to fetch insights:', err)
     } finally {
-      setLoadingInsights(false);
+      setLoadingInsights(false)
     }
-  }, [sourceId]);
+  }, [sourceId])
 
   const fetchTransformations = useCallback(async () => {
     try {
-      const data = await transformationsApi.list();
-      setTransformations(data);
+      const data = await transformationsApi.list()
+      setTransformations(data)
     } catch (err) {
-      console.error("Failed to fetch transformations:", err);
+      console.error('Failed to fetch transformations:', err)
     }
-  }, []);
+  }, [])
 
   useEffect(() => {
     if (sourceId) {
-      void fetchSource();
-      void fetchInsights();
-      void fetchTransformations();
+      void fetchSource()
+      void fetchInsights()
+      void fetchTransformations()
     }
-  }, [fetchInsights, fetchSource, fetchTransformations, sourceId]);
+  }, [fetchInsights, fetchSource, fetchTransformations, sourceId])
 
   const createInsight = async () => {
     if (!selectedTransformation) {
-      toast.error(t.sources.selectTransformation);
-      return;
+      toast.error(t('sources.selectTransformation'))
+      return
     }
 
     try {
-      setCreatingInsight(true);
-      await insightsApi.create(sourceId, {
-        transformation_id: selectedTransformation,
-      });
-      toast.success(t.common.success);
-      await fetchInsights();
-      setSelectedTransformation("");
+      setCreatingInsight(true)
+      const response = await insightsApi.create(sourceId, {
+        transformation_id: selectedTransformation
+      })
+      // Show toast for async operation
+      toast.success(t('sources.insightGenerationStarted'))
+      setSelectedTransformation('')
+
+      // Poll for command completion if we have a command_id
+      if (response.command_id) {
+        // Poll in background (don't block UI)
+        insightsApi.waitForCommand(response.command_id, {
+          maxAttempts: 120, // Up to 4 minutes (120 * 2s)
+          intervalMs: 2000
+        }).then(success => {
+          if (success) {
+            void fetchInsights()
+            // Invalidate sources queries so notebook page refreshes with updated insights_count
+            queryClient.invalidateQueries({ queryKey: ['sources'] })
+          }
+        }).catch(err => {
+          console.error('Error waiting for insight command:', err)
+        })
+      } else {
+        // Fallback: refresh after delay if no command_id
+        setTimeout(() => {
+          void fetchInsights()
+          // Also invalidate sources queries
+          queryClient.invalidateQueries({ queryKey: ['sources'] })
+        }, 5000)
+      }
     } catch (err) {
-      console.error("Failed to create insight:", err);
-      toast.error(t.common.error);
+      console.error('Failed to create insight:', err)
+      toast.error(t('common.error'))
     } finally {
-      setCreatingInsight(false);
+      setCreatingInsight(false)
     }
-  };
+  }
 
   const handleDeleteInsight = async (e?: React.MouseEvent) => {
-    e?.preventDefault();
-    if (!insightToDelete) return;
+    e?.preventDefault()
+    if (!insightToDelete) return
 
     try {
-      setDeletingInsight(true);
-      await insightsApi.delete(insightToDelete);
-      toast.success(t.common.success);
-      setInsightToDelete(null);
-      await fetchInsights();
+      setDeletingInsight(true)
+      await insightsApi.delete(insightToDelete)
+      toast.success(t('common.success'))
+      setInsightToDelete(null)
+      await fetchInsights()
     } catch (err) {
-      console.error("Failed to delete insight:", err);
-      toast.error(t.common.error);
+      console.error('Failed to delete insight:', err)
+      toast.error(t('common.error'))
     } finally {
-      setDeletingInsight(false);
+      setDeletingInsight(false)
     }
-  };
+  }
 
   const handleUpdateTitle = async (title: string) => {
-    if (!source || title === source.title) return;
+    if (!source || title === source.title) return
 
     try {
-      await sourcesApi.update(sourceId, { title });
-      toast.success(t.common.success);
-      setSource({ ...source, title });
+      await sourcesApi.update(sourceId, { title })
+      toast.success(t('common.success'))
+      setSource({ ...source, title })
     } catch (err) {
-      console.error("Failed to update source title:", err);
-      toast.error(t.common.error);
-      await fetchSource();
+      console.error('Failed to update source title:', err)
+      toast.error(t('common.error'))
+      await fetchSource()
     }
-  };
+  }
 
   const handleEmbedContent = async () => {
-    if (!source) return;
+    if (!source) return
 
     try {
-      setIsEmbedding(true);
-      const response = await embeddingApi.embedContent(sourceId, "source");
-      toast.success(response.message || t.common.success);
-      await fetchSource();
+      setIsEmbedding(true)
+      const response = await embeddingApi.embedContent(sourceId, 'source')
+      toast.success(response.message || t('common.success'))
+      await fetchSource()
     } catch (err) {
-      console.error("Failed to embed content:", err);
-      toast.error(t.common.error);
+      console.error('Failed to embed content:', err)
+      toast.error(t('common.error'))
     } finally {
-      setIsEmbedding(false);
+      setIsEmbedding(false)
     }
-  };
+  }
 
   const extractFilename = (pathOrUrl: string | undefined, fallback: string) => {
     if (!pathOrUrl) {
-      return fallback;
+      return fallback
     }
-    const segments = pathOrUrl.split(/[/\\]/);
-    return segments.pop() || fallback;
-  };
+    const segments = pathOrUrl.split(/[/\\]/)
+    return segments.pop() || fallback
+  }
 
   const parseContentDisposition = (header?: string | null) => {
     if (!header) {
-      return null;
+      return null
     }
-    const match = header.match(/filename\*?=([^;]+)/i);
+    const match = header.match(/filename\*?=([^;]+)/i)
     if (!match) {
-      return null;
+      return null
     }
-    const value = match[1].trim();
+    const value = match[1].trim()
     if (value.toLowerCase().startsWith("utf-8''")) {
-      return decodeURIComponent(value.slice(7));
+      return decodeURIComponent(value.slice(7))
     }
-    return value.replace(/^["']|["']$/g, "");
-  };
+    return value.replace(/^["']|["']$/g, '')
+  }
 
   const handleDownloadFile = async () => {
-    if (
-      !source?.asset?.file_path ||
-      isDownloadingFile ||
-      fileAvailable === false
-    ) {
-      return;
+    if (!source?.asset?.file_path || isDownloadingFile || fileAvailable === false) {
+      return
     }
 
     try {
-      setIsDownloadingFile(true);
-      const response = await sourcesApi.downloadFile(source.id);
+      setIsDownloadingFile(true)
+      const response = await sourcesApi.downloadFile(source.id)
       const filenameFromHeader = parseContentDisposition(
-        response.headers?.["content-disposition"] as string | undefined,
-      );
-      const fallbackName = extractFilename(
-        source.asset.file_path,
-        `source-${source.id}`,
-      );
-      const filename = filenameFromHeader || fallbackName;
+        response.headers?.['content-disposition'] as string | undefined
+      )
+      const fallbackName = extractFilename(source.asset.file_path, `source-${source.id}`)
+      const filename = filenameFromHeader || fallbackName
 
-      const blobUrl = window.URL.createObjectURL(response.data);
-      const link = document.createElement("a");
-      link.href = blobUrl;
-      link.download = filename;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(blobUrl);
-      setFileAvailable(true);
-      toast.success(t.common.success);
+      const blobUrl = window.URL.createObjectURL(response.data)
+      const link = document.createElement('a')
+      link.href = blobUrl
+      link.download = filename
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+      window.URL.revokeObjectURL(blobUrl)
+      setFileAvailable(true)
+      toast.success(t('common.success'))
     } catch (err) {
-      console.error("Failed to download file:", err);
+      console.error('Failed to download file:', err)
       if (isAxiosError(err) && err.response?.status === 404) {
-        setFileAvailable(false);
-        toast.error(t.sources.fileUnavailable);
+        setFileAvailable(false)
+        toast.error(t('sources.fileUnavailable'))
       } else {
-        toast.error(t.common.error);
+        toast.error(t('common.error'))
       }
     } finally {
-      setIsDownloadingFile(false);
+      setIsDownloadingFile(false)
     }
-  };
+  }
 
   const getSourceIcon = () => {
-    if (!source) return null;
-    if (source.asset?.url) return <LinkIcon className="h-5 w-5" />;
-    if (source.asset?.file_path) return <Upload className="h-5 w-5" />;
-    return <AlignLeft className="h-5 w-5" />;
-  };
+    if (!source) return null
+    if (source.asset?.url) return <LinkIcon className="h-5 w-5" />
+    if (source.asset?.file_path) return <Upload className="h-5 w-5" />
+    return <AlignLeft className="h-5 w-5" />
+  }
 
   const getSourceType = () => {
-    if (!source) return "unknown";
-    if (source.asset?.url) return "link";
-    if (source.asset?.file_path) return "file";
-    return "text";
-  };
+    if (!source) return 'unknown'
+    if (source.asset?.url) return 'link'
+    if (source.asset?.file_path) return 'file'
+    return 'text'
+  }
 
   const handleCopyUrl = useCallback(() => {
     if (source?.asset?.url) {
-      navigator.clipboard.writeText(source.asset.url);
-      setCopied(true);
-      toast.success(t.sources.urlCopied);
-      setTimeout(() => setCopied(false), 2000);
+      navigator.clipboard.writeText(source.asset.url)
+      setCopied(true)
+      toast.success(t('sources.urlCopied'))
+      setTimeout(() => setCopied(false), 2000)
     }
-  }, [source, t]);
+  }, [source, t])
 
   const handleOpenExternal = useCallback(() => {
     if (source?.asset?.url) {
-      window.open(source.asset.url, "_blank");
+      window.open(source.asset.url, '_blank')
     }
-  }, [source]);
+  }, [source])
 
   const getYouTubeVideoId = (url: string): string | null => {
     const patterns = [
       /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/,
-      /youtube\.com\/watch\?.*v=([^&\n?#]+)/,
-    ];
+      /youtube\.com\/watch\?.*v=([^&\n?#]+)/
+    ]
 
     for (const pattern of patterns) {
-      const match = url.match(pattern);
-      if (match) return match[1];
+      const match = url.match(pattern)
+      if (match) return match[1]
     }
-    return null;
-  };
+    return null
+  }
 
   const isYouTubeUrl = useMemo(() => {
-    if (!source?.asset?.url) return false;
-    return !!getYouTubeVideoId(source.asset.url);
-  }, [source?.asset?.url]);
+    if (!source?.asset?.url) return false
+    return !!(getYouTubeVideoId(source.asset.url))
+  }, [source?.asset?.url])
 
   const youTubeVideoId = useMemo(() => {
-    if (!source?.asset?.url) return null;
-    return getYouTubeVideoId(source.asset.url);
-  }, [source?.asset?.url]);
+    if (!source?.asset?.url) return null
+    return getYouTubeVideoId(source.asset.url)
+  }, [source?.asset?.url])
 
   const handleDelete = async () => {
-    if (!source) return;
+    if (!source) return
 
-    if (confirm(t.sources.deleteSourceConfirm || t.common.confirm)) {
+    if (confirm(t('sources.deleteSourceConfirm') || t('common.confirm'))) {
       try {
-        await sourcesApi.delete(source.id);
-        toast.success(t.common.success);
-        onClose?.();
+        await sourcesApi.delete(source.id)
+        toast.success(t('common.success'))
+        onClose?.()
       } catch (error) {
-        console.error("Failed to delete source:", error);
-        toast.error(t.common.error);
+        console.error('Failed to delete source:', error)
+        toast.error(t('common.error'))
       }
     }
-  };
+  }
 
   if (loading) {
     return (
       <div className="flex h-full items-center justify-center p-8">
         <LoadingSpinner />
       </div>
-    );
+    )
   }
 
   if (error || !source) {
     return (
       <div className="flex h-full flex-col items-center justify-center gap-4 p-8">
-        <p className="text-red-500">{error || t.sources.notFound}</p>
+        <p className="text-red-500">{error || t('sources.notFound')}</p>
       </div>
-    );
+    )
   }
 
   return (
@@ -381,15 +392,15 @@ export function SourceDetailContent({
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <InlineEdit
-              value={source.title || ""}
+              value={source.title || ''}
               onSave={handleUpdateTitle}
               className="text-2xl font-bold"
               inputClassName="text-2xl font-bold"
-              placeholder={t.sources.titlePlaceholder}
-              emptyText={t.sources.untitledSource}
+              placeholder={t('sources.titlePlaceholder')}
+              emptyText={t('sources.untitledSource')}
             />
             <p className="mt-1 text-sm text-muted-foreground">
-              {t.sources.id}: {source.id}
+              {t('sources.id')}: {source.id}
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -402,7 +413,7 @@ export function SourceDetailContent({
             {showChatButton && onChatClick && (
               <Button variant="outline" size="sm" onClick={onChatClick}>
                 <MessageSquare className="h-4 w-4 mr-2" />
-                {t.chat.chatWith.replace("{name}", t.navigation.sources)}
+                {t('chat.chatWith').replace('{name}', t('navigation.sources'))}
               </Button>
             )}
 
@@ -421,10 +432,10 @@ export function SourceDetailContent({
                     >
                       <Download className="mr-2 h-4 w-4" />
                       {fileAvailable === false
-                        ? t.sources.fileUnavailable
+                        ? t('sources.fileUnavailable')
                         : isDownloadingFile
-                          ? t.sources.preparing
-                          : t.sources.downloadFile}
+                          ? t('sources.preparing')
+                          : t('sources.downloadFile')}
                     </DropdownMenuItem>
                     <DropdownMenuSeparator />
                   </>
@@ -434,11 +445,7 @@ export function SourceDetailContent({
                   disabled={isEmbedding || source.embedded}
                 >
                   <Database className="mr-2 h-4 w-4" />
-                  {isEmbedding
-                    ? t.sources.embedding
-                    : source.embedded
-                      ? t.sources.alreadyEmbedded
-                      : t.sources.embedContent}
+                  {isEmbedding ? t('sources.embedding') : source.embedded ? t('sources.alreadyEmbedded') : t('sources.embedContent')}
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem
@@ -446,7 +453,7 @@ export function SourceDetailContent({
                   onClick={handleDelete}
                 >
                   <Trash2 className="mr-2 h-4 w-4" />
-                  {t.sources.deleteSource}
+                  {t('sources.deleteSource')}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -458,12 +465,11 @@ export function SourceDetailContent({
       <div className="flex-1 overflow-y-auto px-2">
         <Tabs defaultValue="content" className="w-full">
           <TabsList className="grid w-full grid-cols-3 sticky top-0 z-10">
-            <TabsTrigger value="content">{t.sources.content}</TabsTrigger>
+            <TabsTrigger value="content">{t('sources.content')}</TabsTrigger>
             <TabsTrigger value="insights">
-              {t.common.insights}{" "}
-              {insights.length > 0 && `(${insights.length})`}
+              {t('common.insights')} {insights.length > 0 && `(${insights.length})`}
             </TabsTrigger>
-            <TabsTrigger value="details">{t.sources.details}</TabsTrigger>
+            <TabsTrigger value="details">{t('sources.details')}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="content" className="mt-6">
@@ -471,7 +477,7 @@ export function SourceDetailContent({
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   {isYouTubeUrl && <Youtube className="h-5 w-5" />}
-                  {t.sources.content}
+                  {t('sources.content')}
                 </CardTitle>
                 {source.asset?.url && !isYouTubeUrl && (
                   <CardDescription className="flex items-center gap-2">
@@ -493,7 +499,7 @@ export function SourceDetailContent({
                     <div className="aspect-video rounded-lg overflow-hidden bg-black">
                       <iframe
                         src={`https://www.youtube.com/embed/${youTubeVideoId}`}
-                        title={t.common.accessibility.ytVideo}
+                        title={t('common.accessibility.ytVideo')}
                         className="w-full h-full"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -508,7 +514,7 @@ export function SourceDetailContent({
                           className="text-sm text-muted-foreground hover:underline inline-flex items-center gap-1"
                         >
                           <ExternalLink className="h-3 w-3" />
-                          {t.sources.openOnYoutube}
+                          {t('sources.openOnYoutube')}
                         </a>
                       </div>
                     )}
@@ -519,57 +525,25 @@ export function SourceDetailContent({
                     remarkPlugins={[remarkGfm]}
                     components={{
                       p: ({ children }) => <p className="mb-4">{children}</p>,
-                      h1: ({ children }) => (
-                        <h1 className="text-2xl font-bold mt-6 mb-4">
-                          {children}
-                        </h1>
-                      ),
-                      h2: ({ children }) => (
-                        <h2 className="text-xl font-bold mt-5 mb-3">
-                          {children}
-                        </h2>
-                      ),
-                      h3: ({ children }) => (
-                        <h3 className="text-lg font-semibold mt-4 mb-2">
-                          {children}
-                        </h3>
-                      ),
-                      ul: ({ children }) => (
-                        <ul className="mb-4 list-disc pl-6">{children}</ul>
-                      ),
-                      ol: ({ children }) => (
-                        <ol className="mb-4 list-decimal pl-6">{children}</ol>
-                      ),
-                      li: ({ children }) => (
-                        <li className="mb-1">{children}</li>
-                      ),
+                      h1: ({ children }) => <h1 className="text-2xl font-bold mt-6 mb-4">{children}</h1>,
+                      h2: ({ children }) => <h2 className="text-xl font-bold mt-5 mb-3">{children}</h2>,
+                      h3: ({ children }) => <h3 className="text-lg font-semibold mt-4 mb-2">{children}</h3>,
+                      ul: ({ children }) => <ul className="mb-4 list-disc pl-6">{children}</ul>,
+                      ol: ({ children }) => <ol className="mb-4 list-decimal pl-6">{children}</ol>,
+                      li: ({ children }) => <li className="mb-1">{children}</li>,
                       table: ({ children }) => (
                         <div className="my-4 overflow-x-auto">
-                          <table className="min-w-full border-collapse border border-border">
-                            {children}
-                          </table>
+                          <table className="min-w-full border-collapse border border-border">{children}</table>
                         </div>
                       ),
-                      thead: ({ children }) => (
-                        <thead className="bg-muted">{children}</thead>
-                      ),
+                      thead: ({ children }) => <thead className="bg-muted">{children}</thead>,
                       tbody: ({ children }) => <tbody>{children}</tbody>,
-                      tr: ({ children }) => (
-                        <tr className="border-b border-border">{children}</tr>
-                      ),
-                      th: ({ children }) => (
-                        <th className="border border-border px-3 py-2 text-left font-semibold">
-                          {children}
-                        </th>
-                      ),
-                      td: ({ children }) => (
-                        <td className="border border-border px-3 py-2">
-                          {children}
-                        </td>
-                      ),
+                      tr: ({ children }) => <tr className="border-b border-border">{children}</tr>,
+                      th: ({ children }) => <th className="border border-border px-3 py-2 text-left font-semibold">{children}</th>,
+                      td: ({ children }) => <td className="border border-border px-3 py-2">{children}</td>,
                     }}
                   >
-                    {source.full_text || t.sources.noContent}
+                    {source.full_text || t('sources.noContent')}
                   </ReactMarkdown>
                 </div>
               </CardContent>
@@ -582,21 +556,23 @@ export function SourceDetailContent({
                 <CardTitle className="flex items-center justify-between">
                   <span className="flex items-center gap-2">
                     <Lightbulb className="h-5 w-5" />
-                    {t.common.insights}
+                    {t('common.insights')}
                   </span>
                   <Badge variant="secondary">{insights.length}</Badge>
                 </CardTitle>
-                <CardDescription>{t.sources.insightsDesc}</CardDescription>
+                <CardDescription>
+                  {t('sources.insightsDesc')}
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 {/* Create New Insight */}
                 <div className="rounded-lg border bg-muted/30 p-4">
-                  <Label
+                  <Label 
                     htmlFor="transformation-select"
                     className="mb-3 text-sm font-semibold flex items-center gap-2"
                   >
                     <Sparkles className="h-4 w-4" />
-                    {t.sources.generateNewInsight}
+                    {t('sources.generateNewInsight')}
                   </Label>
                   <div className="flex gap-2">
                     <Select
@@ -605,13 +581,8 @@ export function SourceDetailContent({
                       onValueChange={setSelectedTransformation}
                       disabled={creatingInsight}
                     >
-                      <SelectTrigger
-                        id="transformation-select"
-                        className="flex-1"
-                      >
-                        <SelectValue
-                          placeholder={t.sources.selectTransformation}
-                        />
+                      <SelectTrigger id="transformation-select" className="flex-1">
+                        <SelectValue placeholder={t('sources.selectTransformation')} />
                       </SelectTrigger>
                       <SelectContent>
                         {transformations.map((trans) => (
@@ -629,12 +600,12 @@ export function SourceDetailContent({
                       {creatingInsight ? (
                         <>
                           <LoadingSpinner className="mr-2 h-3 w-3" />
-                          {t.common.creating}
+                          {t('common.creating')}
                         </>
                       ) : (
                         <>
                           <Plus className="mr-2 h-4 w-4" />
-                          {t.common.create}
+                          {t('common.create')}
                         </>
                       )}
                     </Button>
@@ -649,39 +620,26 @@ export function SourceDetailContent({
                 ) : insights.length === 0 ? (
                   <div className="text-center py-8 text-muted-foreground">
                     <Lightbulb className="h-12 w-12 mx-auto mb-3 opacity-50" />
-                    <p className="text-sm">{t.sources.noInsightsYet}</p>
-                    <p className="text-xs mt-1">
-                      {t.sources.createFirstInsight}
-                    </p>
+                    <p className="text-sm">{t('sources.noInsightsYet')}</p>
+                    <p className="text-xs mt-1">{t('sources.createFirstInsight')}</p>
                   </div>
                 ) : (
                   <div className="space-y-3">
                     {insights.map((insight) => (
-                      <div
-                        key={insight.id}
-                        className="rounded-lg border bg-background p-4"
-                      >
+                      <div key={insight.id} className="rounded-lg border bg-background p-4">
                         <div className="flex items-start justify-between">
                           <div className="flex items-center gap-2">
-                            <Badge
-                              variant="outline"
-                              className="text-xs uppercase"
-                            >
+                            <Badge variant="outline" className="text-xs uppercase">
                               {insight.insight_type}
                             </Badge>
                           </div>
                         </div>
                         <p className="mt-2 text-sm text-muted-foreground">
-                          {insight.content.slice(0, 180)}
-                          {insight.content.length > 180 ? "…" : ""}
+                          {insight.content.slice(0, 180)}{insight.content.length > 180 ? '…' : ''}
                         </p>
                         <div className="mt-3 flex justify-end gap-2">
-                          <Button
-                            size="sm"
-                            variant="outline"
-                            onClick={() => setSelectedInsight(insight)}
-                          >
-                            {t.sources.viewInsight}
+                          <Button size="sm" variant="outline" onClick={() => setSelectedInsight(insight)}>
+                            {t('sources.viewInsight')}
                           </Button>
                           <Button
                             size="sm"
@@ -703,16 +661,18 @@ export function SourceDetailContent({
           <TabsContent value="details" className="mt-6">
             <Card>
               <CardHeader>
-                <CardTitle>{t.sources.details}</CardTitle>
+                <CardTitle>{t('sources.details')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 {/* Embedding Alert */}
                 {!source.embedded && (
                   <Alert>
                     <AlertCircle className="h-4 w-4" />
-                    <AlertTitle>{t.sources.notEmbeddedAlert}</AlertTitle>
+                    <AlertTitle>
+                      {t('sources.notEmbeddedAlert')}
+                    </AlertTitle>
                     <AlertDescription>
-                      {t.sources.notEmbeddedDesc}
+                      {t('sources.notEmbeddedDesc')}
                       <div className="mt-3">
                         <Button
                           onClick={handleEmbedContent}
@@ -720,9 +680,7 @@ export function SourceDetailContent({
                           size="sm"
                         >
                           <Database className="mr-2 h-4 w-4" />
-                          {isEmbedding
-                            ? t.sources.embedding
-                            : t.sources.embedContent}
+                          {isEmbedding ? t('sources.embedding') : t('sources.embedContent')}
                         </Button>
                       </div>
                     </AlertDescription>
@@ -733,9 +691,7 @@ export function SourceDetailContent({
                 <div className="space-y-4">
                   {source.asset?.url && (
                     <div>
-                      <h3 className="mb-2 text-sm font-semibold">
-                        {t.common.url}
-                      </h3>
+                      <h3 className="mb-2 text-sm font-semibold">{t('common.url')}</h3>
                       <div className="flex items-center gap-2">
                         <code className="flex-1 rounded bg-muted px-2 py-1 text-sm">
                           {source.asset.url}
@@ -764,9 +720,7 @@ export function SourceDetailContent({
 
                   {source.asset?.file_path && (
                     <div className="space-y-2">
-                      <h3 className="text-sm font-semibold">
-                        {t.sources.uploadedFile}
-                      </h3>
+                      <h3 className="text-sm font-semibold">{t('sources.uploadedFile')}</h3>
                       <div className="flex flex-wrap items-center gap-2">
                         <code className="rounded bg-muted px-2 py-1 text-sm">
                           {source.asset.file_path}
@@ -775,21 +729,19 @@ export function SourceDetailContent({
                           size="sm"
                           variant="outline"
                           onClick={handleDownloadFile}
-                          disabled={
-                            isDownloadingFile || fileAvailable === false
-                          }
+                          disabled={isDownloadingFile || fileAvailable === false}
                         >
                           <Download className="mr-2 h-4 w-4" />
                           {fileAvailable === false
-                            ? t.sources.fileUnavailable
+                            ? t('sources.fileUnavailable')
                             : isDownloadingFile
-                              ? t.sources.preparing
-                              : t.common.download}
+                              ? t('sources.preparing')
+                              : t('common.download')}
                         </Button>
                       </div>
                       {fileAvailable === false ? (
                         <p className="text-xs text-muted-foreground">
-                          {t.sources.fileUnavailableDesc}
+                          {t('sources.fileUnavailableDesc')}
                         </p>
                       ) : null}
                     </div>
@@ -797,9 +749,7 @@ export function SourceDetailContent({
 
                   {source.topics && source.topics.length > 0 && (
                     <div>
-                      <h3 className="mb-2 text-sm font-semibold">
-                        {t.sources.topics}
-                      </h3>
+                      <h3 className="mb-2 text-sm font-semibold">{t('sources.topics')}</h3>
                       <div className="flex flex-wrap gap-2">
                         {source.topics.map((topic, idx) => (
                           <Badge key={idx} variant="outline">
@@ -814,30 +764,21 @@ export function SourceDetailContent({
                 {/* Metadata */}
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-sm font-semibold">
-                      {t.sources.metadata}
-                    </h3>
+                    <h3 className="text-sm font-semibold">{t('sources.metadata')}</h3>
                     <div className="flex items-center gap-2">
                       <Database className="h-3.5 w-3.5 text-muted-foreground" />
-                      <Badge
-                        variant={source.embedded ? "default" : "secondary"}
-                        className="text-xs"
-                      >
-                        {source.embedded
-                          ? t.sources.embedded
-                          : t.sources.notEmbedded}
+                      <Badge variant={source.embedded ? "default" : "secondary"} className="text-xs">
+                        {source.embedded ? t('sources.embedded') : t('sources.notEmbedded')}
                       </Badge>
                     </div>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div>
-                      <p className="text-xs font-medium text-muted-foreground">
-                        {t.common.created_label}
-                      </p>
+                      <p className="text-xs font-medium text-muted-foreground">{t('common.created_label')}</p>
                       <p className="text-sm">
                         {formatDistanceToNow(new Date(source.created), {
                           addSuffix: true,
-                          locale: getDateLocale(language),
+                          locale: getDateLocale(language)
                         })}
                       </p>
                       <p className="text-xs text-muted-foreground">
@@ -845,13 +786,11 @@ export function SourceDetailContent({
                       </p>
                     </div>
                     <div>
-                      <p className="text-xs font-medium text-muted-foreground">
-                        {t.common.updated_label}
-                      </p>
+                      <p className="text-xs font-medium text-muted-foreground">{t('common.updated_label')}</p>
                       <p className="text-sm">
                         {formatDistanceToNow(new Date(source.updated), {
                           addSuffix: true,
-                          locale: getDateLocale(language),
+                          locale: getDateLocale(language)
                         })}
                       </p>
                       <p className="text-xs text-muted-foreground">
@@ -877,50 +816,45 @@ export function SourceDetailContent({
         open={Boolean(selectedInsight)}
         onOpenChange={(open) => {
           if (!open) {
-            setSelectedInsight(null);
+            setSelectedInsight(null)
           }
         }}
         insight={selectedInsight ?? undefined}
         onDelete={async (insightId) => {
           try {
-            await insightsApi.delete(insightId);
-            toast.success(t.common.success);
-            setSelectedInsight(null);
-            await fetchInsights();
+            await insightsApi.delete(insightId)
+            toast.success(t('common.success'))
+            setSelectedInsight(null)
+            await fetchInsights()
           } catch (err) {
-            console.error("Failed to delete insight:", err);
-            toast.error(t.common.error);
+            console.error('Failed to delete insight:', err)
+            toast.error(t('common.error'))
           }
         }}
       />
 
-      <AlertDialog
-        open={!!insightToDelete}
-        onOpenChange={() => setInsightToDelete(null)}
-      >
+      <AlertDialog open={!!insightToDelete} onOpenChange={() => setInsightToDelete(null)}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>{t.sources.deleteInsight}</AlertDialogTitle>
+            <AlertDialogTitle>{t('sources.deleteInsight')}</AlertDialogTitle>
             <AlertDialogDescription>
-              {t.sources.deleteInsightConfirm}
+              {t('sources.deleteInsightConfirm')}
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel disabled={deletingInsight}>
-              {t.common.cancel}
-            </AlertDialogCancel>
+            <AlertDialogCancel disabled={deletingInsight}>{t('common.cancel')}</AlertDialogCancel>
             <AlertDialogAction asChild>
               <Button
                 onClick={handleDeleteInsight}
                 disabled={deletingInsight}
                 variant="destructive"
               >
-                {deletingInsight ? t.common.deleting : t.common.delete}
+                {deletingInsight ? t('common.deleting') : t('common.delete')}
               </Button>
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
     </div>
-  );
+  )
 }

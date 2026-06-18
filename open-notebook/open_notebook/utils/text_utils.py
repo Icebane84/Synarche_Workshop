@@ -28,7 +28,9 @@ def remove_non_printable(text: str) -> str:
     text = re.sub(r"[\u2028\u2029\r]", "\n", text)
 
     # Remove control characters, except newlines and tabs
-    text = "".join(char for char in text if unicodedata.category(char)[0] != "C" or char in "\n\t")
+    text = "".join(
+        char for char in text if unicodedata.category(char)[0] != "C" or char in "\n\t"
+    )
 
     # Replace non-breaking spaces with regular spaces
     text = text.replace("\xa0", " ").strip()
@@ -37,7 +39,7 @@ def remove_non_printable(text: str) -> str:
     return re.sub(r"[^\w\s.,!?\-\n\t]", "", text, flags=re.UNICODE)
 
 
-def parse_thinking_content(content: str) -> tuple[str, str]:
+def parse_thinking_content(content: str) -> Tuple[str, str]:
     """
     Parse message content to extract thinking content from <think> tags.
 
@@ -115,3 +117,29 @@ def clean_thinking_content(content: str) -> str:
     """
     _, cleaned_content = parse_thinking_content(content)
     return cleaned_content
+
+
+def extract_text_content(content) -> str:
+    """Extract text from LLM response content.
+
+    Handles both plain string responses and structured content formats
+    (e.g. Gemini's envelope format):
+    [{'type': 'text', 'text': '...', 'extras': {...}}]
+
+    Args:
+        content: The content from an AI message, either a string or a list of parts.
+
+    Returns:
+        The extracted text content as a string.
+    """
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        text_parts = []
+        for part in content:
+            if isinstance(part, dict) and "text" in part:
+                text_parts.append(part["text"])
+            elif isinstance(part, str):
+                text_parts.append(part)
+        return "".join(text_parts)
+    return str(content)

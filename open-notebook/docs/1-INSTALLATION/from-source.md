@@ -1,35 +1,116 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `FROM-SOURCE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# From Source Installation
 
-# from-source.md
+Clone the repository and run locally. **For developers and contributors.**
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+## Prerequisites
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+- **Python 3.11+** - [Download](https://www.python.org/)
+- **Node.js 18+** - [Download](https://nodejs.org/)
+- **Git** - [Download](https://git-scm.com/)
+- **Docker** (for SurrealDB) - [Download](https://docker.com/)
+- **uv** (Python package manager) - `curl -LsSf https://astral.sh/uv/install.sh | sh`
+- API key from OpenAI or similar (or use Ollama for free)
 
----
+## Quick Setup (10 minutes)
 
-###### **[ARTIFACT START]**
+### 1. Clone Repository
 
-## **Block A: The Identification Lock (UIP-V15)**
+```bash
+git clone https://github.com/lfnovo/open-notebook.git
+cd open-notebook
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-FROM-SOURCE-001`        | The Sovereign ID. |
-| **Official Name** | `from-source.md`              | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+# If you forked it:
+git clone https://github.com/YOUR_USERNAME/open-notebook.git
+cd open-notebook
+git remote add upstream https://github.com/lfnovo/open-notebook.git
+```
+
+### 2. Install Python Dependencies
+
+```bash
+uv sync
+uv pip install python-magic
+```
+
+#### 2.1 Alternative: Conda Setup (Optional)
+
+If you prefer using **Conda** to manage your environments, follow these steps instead of the standard `uv sync`:
+
+```bash
+# Create and activate the environment
+conda create -n open-notebook python=3.11 -y
+conda activate open-notebook
+
+# Install uv inside conda to maintain compatibility with the Makefile
+conda install -c conda-forge uv nodejs -y
+
+# Sync dependencies
+uv sync
+```
+
+> **Note**: Installing `uv` inside your Conda environment ensures that commands like `make start-all` and `make api` continue to work seamlessly.
+
+### 3. Start SurrealDB
+
+```bash
+# Terminal 1
+make database
+# or: docker compose up surrealdb
+```
+
+### 4. Set Environment Variables
+
+```bash
+cp .env.example .env
+# Edit .env and set:
+# OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+```
+
+After starting the app, configure AI providers via the **Manage → Models** UI in the browser.
+
+### 5. Start API
+
+```bash
+# Terminal 2
+make api
+# or: uv run --env-file .env uvicorn api.main:app --host 0.0.0.0 --port 5055
+```
+
+### 6. Start Worker
+
+Source and note processing (content extraction, embedding, insights) is dispatched
+as background jobs that a **separate worker** process consumes. Without it, every
+source stays stuck at `Source processing status: CommandStatus.NEW` forever.
+
+```bash
+# Terminal 3
+make worker
+# or: uv run --env-file .env surreal-commands-worker --import-modules commands
+```
+
+> `make start-all` starts Database + API + Worker + Frontend together; the steps
+> above run them individually so you can see each process's logs.
+
+### 7. Start Frontend
+
+```bash
+# Terminal 4
+cd frontend && npm install && npm run dev
+```
+
+### 8. Access
+
+- **Frontend**: http://localhost:3000
+- **API Docs**: http://localhost:5055/docs
+- **Database**: http://localhost:8000
+
+### 9. Configure AI Provider
+
+1. Open http://localhost:3000
+2. Go to **Manage** → **Models**
+3. Click **Add Credential** → Select your provider → Paste API key
+4. Click **Save**, then **Test Connection**
+5. Click **Discover Models** → **Register Models**
 
 ---
 
@@ -112,11 +193,3 @@ uv run uvicorn api.main:app --port 5056
 
 - **Discord**: [Community](https://discord.gg/37XJPXfz2w)
 - **Issues**: [GitHub Issues](https://github.com/lfnovo/open-notebook/issues)
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

@@ -1,35 +1,6 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CITATIONS` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Citations - Verify and Trust AI Responses
 
-# citations.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CITATIONS-001`          | The Sovereign ID. |
-| **Official Name** | `citations.md`                | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+Citations connect AI responses to your source materials. This guide covers how to use and verify them.
 
 ---
 
@@ -124,12 +95,12 @@ Step 4: Trust or correct
 
 ### What to Check
 
-| Check             | Why                                               |
-| ----------------- | ------------------------------------------------- |
-| **Exact numbers** | AI sometimes rounds or misremembers               |
-| **Context**       | Quote might mean something different in context   |
-| **Attribution**   | Is this the source's claim or someone they cited? |
-| **Completeness**  | Did AI miss important caveats?                    |
+| Check | Why |
+|-------|-----|
+| **Exact numbers** | AI sometimes rounds or misremembers |
+| **Context** | Quote might mean something different in context |
+| **Attribution** | Is this the source's claim or someone they cited? |
+| **Completeness** | Did AI miss important caveats? |
 
 ---
 
@@ -184,11 +155,11 @@ Saved note includes:
 
 Citations work in exports:
 
-| Format         | Citation Behavior                   |
-| -------------- | ----------------------------------- |
-| **Markdown**   | Links preserved as `[text](link)`   |
-| **Copy/Paste** | Plain text with reference numbers   |
-| **PDF**        | Clickable references (if supported) |
+| Format | Citation Behavior |
+|--------|-------------------|
+| **Markdown** | Links preserved as `[text](link)` |
+| **Copy/Paste** | Plain text with reference numbers |
+| **PDF** | Clickable references (if supported) |
 
 ---
 
@@ -197,21 +168,18 @@ Citations work in exports:
 ### Get Better Citations
 
 **Be specific in questions:**
-
 ```
 Poor: "What does it say about X?"
 Good: "What does page 15 say about X? Please quote directly."
 ```
 
 **Request citation format:**
-
 ```
 "Include page numbers for each claim."
 "Cite specific sections, not just document names."
 ```
 
 **Use Full Content context:**
-
 ```
 Summary Only → Less precise citations
 Full Content → Exact quotes possible
@@ -219,11 +187,11 @@ Full Content → Exact quotes possible
 
 ### When Citations Are Missing
 
-| Situation       | Cause                      | Solution                                   |
-| --------------- | -------------------------- | ------------------------------------------ |
-| No citations    | AI used general knowledge  | Ask: "Base your answer only on my sources" |
-| Vague citations | Source not in Full Content | Change context level                       |
-| Wrong citations | AI confused sources        | Ask to verify with quotes                  |
+| Situation | Cause | Solution |
+|-----------|-------|----------|
+| No citations | AI used general knowledge | Ask: "Base your answer only on my sources" |
+| Vague citations | Source not in Full Content | Change context level |
+| Wrong citations | AI confused sources | Ask to verify with quotes |
 
 ---
 
@@ -329,11 +297,3 @@ Why it matters:
 ```
 
 Citations aren't just references — they're your quality control. Use them to build research you can trust.
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

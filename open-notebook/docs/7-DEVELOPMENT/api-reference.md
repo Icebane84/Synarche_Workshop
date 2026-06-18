@@ -1,38 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `API-REFERENCE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# api-reference.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-API-REFERENCE-001`      | The Sovereign ID. |
-| **Official Name**   | `api-reference.md`            | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # API Reference
 
 Complete REST API for Open Notebook. All endpoints are served from the API backend (default: `http://localhost:5055`).
@@ -59,7 +24,6 @@ curl http://localhost:5055/api/notebooks \
 ### 2. Base API Flow
 
 Most operations follow this pattern:
-
 1. Create a **Notebook** (container for research)
 2. Add **Sources** (PDFs, URLs, text)
 3. Query via **Chat** or **Search**
@@ -68,7 +32,6 @@ Most operations follow this pattern:
 ### 3. Testing Endpoints
 
 Instead of memorizing endpoints, use the interactive API docs:
-
 - Navigate to `http://localhost:5055/docs`
 - Try requests directly in the browser
 - See request/response schemas in real-time
@@ -81,46 +44,48 @@ Instead of memorizing endpoints, use the interactive API docs:
 ### Main Resource Types
 
 **Notebooks** - Research projects containing sources and notes
-
 - `GET/POST /notebooks` - List and create
 - `GET/PUT/DELETE /notebooks/{id}` - Read, update, delete
 
 **Sources** - Content items (PDFs, URLs, text)
-
 - `GET/POST /sources` - List and add content
 - `GET /sources/{id}` - Fetch source details
 - `POST /sources/{id}/retry` - Retry failed processing
 - `GET /sources/{id}/download` - Download original file
 
 **Notes** - User-created or AI-generated research notes
-
 - `GET/POST /notes` - List and create
 - `GET/PUT/DELETE /notes/{id}` - Read, update, delete
 
 **Chat** - Conversational AI interface
-
 - `GET/POST /chat/sessions` - Manage chat sessions
 - `POST /chat/execute` - Send message and get response
 - `POST /chat/context/build` - Prepare context for chat
 
 **Search** - Find content by text or semantic similarity
-
 - `POST /search` - Full-text or vector search
 - `POST /ask` - Ask a question (search + synthesize)
 
 **Transformations** - Custom prompts for extracting insights
-
 - `GET/POST /transformations` - Create custom extraction rules
 - `POST /sources/{id}/insights` - Apply transformation to source
 
 **Models** - Configure AI providers
-
 - `GET /models` - Available models
 - `GET /models/defaults` - Current defaults
 - `POST /models/config` - Set defaults
 
-**Health & Status**
+**Credentials** - Manage AI provider credentials
+- `GET/POST /credentials` - List and create credentials
+- `GET/PUT/DELETE /credentials/{id}` - CRUD operations
+- `POST /credentials/{id}/test` - Test connection
+- `POST /credentials/{id}/discover` - Discover models from provider
+- `POST /credentials/{id}/register-models` - Register discovered models
+- `GET /credentials/status` - Provider status overview
+- `GET /credentials/env-status` - Environment variable status
+- `POST /credentials/migrate-from-env` - Migrate env vars to credentials
 
+**Health & Status**
 - `GET /health` - Health check
 - `GET /commands/{id}` - Track async operations
 
@@ -143,7 +108,6 @@ Password configured via `OPEN_NOTEBOOK_PASSWORD` environment variable.
 ### Production
 
 **⚠️ Not secure.** Replace with:
-
 - OAuth 2.0 (recommended)
 - JWT tokens
 - API keys
@@ -211,18 +175,18 @@ curl -X POST http://localhost:5055/sources \
 All errors return JSON with status code:
 
 ```json
-{ "detail": "Notebook not found" }
+{"detail": "Notebook not found"}
 ```
 
 ### Common Status Codes
 
-| Code | Meaning      | Example                   |
-| ---- | ------------ | ------------------------- |
-| 200  | Success      | Operation completed       |
-| 400  | Bad Request  | Invalid input             |
-| 404  | Not Found    | Resource doesn't exist    |
-| 409  | Conflict     | Resource already exists   |
-| 500  | Server Error | Database/processing error |
+| Code | Meaning | Example |
+|------|---------|---------|
+| 200 | Success | Operation completed |
+| 400 | Bad Request | Invalid input |
+| 404 | Not Found | Resource doesn't exist |
+| 409 | Conflict | Resource already exists |
+| 500 | Server Error | Database/processing error |
 
 ---
 
@@ -257,11 +221,3 @@ All errors return JSON with status code:
 - Set up API versioning strategy (currently implicit)
 
 See [Security Configuration](../5-CONFIGURATION/security.md) and [Reverse Proxy Setup](../5-CONFIGURATION/reverse-proxy.md) for complete production setup.
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

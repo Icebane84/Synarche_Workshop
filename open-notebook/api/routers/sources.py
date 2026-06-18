@@ -14,12 +14,13 @@ from fastapi import (
 )
 from fastapi.responses import FileResponse, Response
 from loguru import logger
-from surreal_commands import execute_command_sync
+from surreal_commands import execute_command_sync, submit_command
 
 from api.command_service import CommandService
 from api.models import (
     AssetModel,
     CreateSourceInsightRequest,
+    InsightCreationResponse,
     SourceCreate,
     SourceInsightResponse,
     SourceListResponse,
@@ -30,7 +31,7 @@ from api.models import (
 from commands.source_commands import SourceProcessingInput
 from open_notebook.config import UPLOADS_FOLDER
 from open_notebook.database.repository import ensure_record_id, repo_query
-from open_notebook.domain.notebook import Notebook, Source
+from open_notebook.domain.notebook import Asset, Notebook, Source
 from open_notebook.domain.transformation import Transformation
 from open_notebook.exceptions import InvalidInputError
 
@@ -42,18 +43,30 @@ def generate_unique_filename(original_filename: str, upload_folder: str) -> str:
     file_path = Path(upload_folder)
     file_path.mkdir(parents=True, exist_ok=True)
 
+    # Strip directory components to prevent path traversal
+    safe_filename = os.path.basename(original_filename)
+    if not safe_filename:
+        raise ValueError("Invalid filename")
+
     # Split filename and extension
-    stem = Path(original_filename).stem
-    suffix = Path(original_filename).suffix
+    stem = Path(safe_filename).stem
+    suffix = Path(safe_filename).suffix
 
     # Check if file exists and generate unique name
     counter = 0
     while True:
-        new_filename = original_filename if counter == 0 else f"{stem} ({counter}){suffix}"
+        if counter == 0:
+            new_filename = safe_filename
+        else:
+            new_filename = f"{stem} ({counter}){suffix}"
 
         full_path = file_path / new_filename
-        if not full_path.exists():
-            return str(full_path)
+        # Verify resolved path stays within upload folder
+        resolved = full_path.resolve()
+        if not str(resolved).startswith(str(file_path.resolve()) + os.sep):
+            raise ValueError("Invalid filename: path traversal detected")
+        if not resolved.exists():
+            return str(resolved)
         counter += 1
 
 
@@ -67,11 +80,9 @@ async def save_uploaded_file(upload_file: UploadFile) -> str:
 
     try:
         # Save file
-        import anyio
-
-        async with await anyio.open_file(file_path, "wb") as f:
+        with open(file_path, "wb") as f:
             content = await upload_file.read()
-            await f.write(content)
+            f.write(content)
 
         logger.info(f"Saved uploaded file to: {file_path}")
         return file_path
@@ -85,17 +96,17 @@ async def save_uploaded_file(upload_file: UploadFile) -> str:
 
 def parse_source_form_data(
     type: str = Form(...),
-    notebook_id: str | None = Form(None),
-    notebooks: str | None = Form(None),  # JSON string of notebook IDs
-    url: str | None = Form(None),
-    content: str | None = Form(None),
-    title: str | None = Form(None),
-    transformations: str | None = Form(None),  # JSON string of transformation IDs
+    notebook_id: Optional[str] = Form(None),
+    notebooks: Optional[str] = Form(None),  # JSON string of notebook IDs
+    url: Optional[str] = Form(None),
+    content: Optional[str] = Form(None),
+    title: Optional[str] = Form(None),
+    transformations: Optional[str] = Form(None),  # JSON string of transformation IDs
     embed: str = Form("false"),  # Accept as string, convert to bool
     delete_source: str = Form("false"),  # Accept as string, convert to bool
     async_processing: str = Form("false"),  # Accept as string, convert to bool
-    file: UploadFile | None = File(None),
-) -> tuple[SourceCreate, UploadFile | None]:
+    file: Optional[UploadFile] = File(None),
+) -> tuple[SourceCreate, Optional[UploadFile]]:
     """Parse form data into SourceCreate model and return upload file separately."""
     import json
 
@@ -147,30 +158,29 @@ def parse_source_form_data(
     return source_data, file
 
 
-@router.get("/sources", response_model=list[SourceListResponse])
+@router.get("/sources", response_model=List[SourceListResponse])
 async def get_sources(
-    notebook_id: str | None = Query(None, description="Filter by notebook ID"),
-    limit: int = Query(50, ge=1, le=100, description="Number of sources to return (1-100)"),
+    notebook_id: Optional[str] = Query(None, description="Filter by notebook ID"),
+    limit: int = Query(
+        50, ge=1, le=100, description="Number of sources to return (1-100)"
+    ),
     offset: int = Query(0, ge=0, description="Number of sources to skip"),
-    sort_by: str = Query("updated", description="Field to sort by (created or updated)"),
+    sort_by: str = Query(
+        "updated", description="Field to sort by (created or updated)"
+    ),
     sort_order: str = Query("desc", description="Sort order (asc or desc)"),
 ):
     """Get sources with pagination and sorting support."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         # Validate sort parameters
         if sort_by not in ["created", "updated"]:
-            raise HTTPException(status_code=400, detail="sort_by must be 'created' or 'updated'")
+            raise HTTPException(
+                status_code=400, detail="sort_by must be 'created' or 'updated'"
+            )
         if sort_order.lower() not in ["asc", "desc"]:
-            raise HTTPException(status_code=400, detail="sort_order must be 'asc' or 'desc'")
+            raise HTTPException(
+                status_code=400, detail="sort_order must be 'asc' or 'desc'"
+            )
 
         # Build ORDER BY clause
         order_clause = f"ORDER BY {sort_by} {sort_order.upper()}"
@@ -228,7 +238,11 @@ async def get_sources(
                 status = command.get("status")
                 # Extract execution metadata from nested result structure
                 result_data = command.get("result")
-                execution_metadata = result_data.get("execution_metadata", {}) if isinstance(result_data, dict) else {}
+                execution_metadata = (
+                    result_data.get("execution_metadata", {})
+                    if isinstance(result_data, dict)
+                    else {}
+                )
                 processing_info = {
                     "started_at": execution_metadata.get("started_at"),
                     "completed_at": execution_metadata.get("completed_at"),
@@ -244,14 +258,14 @@ async def get_sources(
                     id=row["id"],
                     title=row.get("title"),
                     topics=row.get("topics") or [],
-                    asset=(
-                        AssetModel(
-                            file_path=(row["asset"].get("file_path") if row.get("asset") else None),
-                            url=row["asset"].get("url") if row.get("asset") else None,
-                        )
+                    asset=AssetModel(
+                        file_path=row["asset"].get("file_path")
                         if row.get("asset")
-                        else None
-                    ),
+                        else None,
+                        url=row["asset"].get("url") if row.get("asset") else None,
+                    )
+                    if row.get("asset")
+                    else None,
                     embedded=row.get("embedded", False),
                     embedded_chunks=0,  # Not needed in list view
                     insights_count=row.get("insights_count", 0),
@@ -268,39 +282,49 @@ async def get_sources(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching sources: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching sources: {e!s}")
+        logger.error(f"Error fetching sources: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error fetching sources: {str(e)}")
 
 
 @router.post("/sources", response_model=SourceResponse)
 async def create_source(
-    form_data: tuple[SourceCreate, UploadFile | None] = Depends(parse_source_form_data),
+    form_data: tuple[SourceCreate, Optional[UploadFile]] = Depends(
+        parse_source_form_data
+    ),
 ):
     """Create a new source with support for both JSON and multipart form data."""
     source_data, upload_file = form_data
+
+    # Initialize file_path before try block so exception handlers can reference it
+    file_path = None
 
     try:
         # Verify all specified notebooks exist (backward compatibility support)
         for notebook_id in source_data.notebooks or []:
             notebook = await Notebook.get(notebook_id)
             if not notebook:
-                raise HTTPException(status_code=404, detail=f"Notebook {notebook_id} not found")
+                raise HTTPException(
+                    status_code=404, detail=f"Notebook {notebook_id} not found"
+                )
 
         # Handle file upload if provided
-        file_path = None
         if upload_file and source_data.type == "upload":
             try:
                 file_path = await save_uploaded_file(upload_file)
             except Exception as e:
                 logger.error(f"File upload failed: {e}")
-                raise HTTPException(status_code=400, detail=f"File upload failed: {e!s}")
+                raise HTTPException(
+                    status_code=400, detail=f"File upload failed: {str(e)}"
+                )
 
         # Prepare content_state for processing
         content_state: dict[str, Any] = {}
 
         if source_data.type == "link":
             if not source_data.url:
-                raise HTTPException(status_code=400, detail="URL is required for link type")
+                raise HTTPException(
+                    status_code=400, detail="URL is required for link type"
+                )
             content_state["url"] = source_data.url
         elif source_data.type == "upload":
             # Use uploaded file path or provided file_path (backward compatibility)
@@ -310,11 +334,21 @@ async def create_source(
                     status_code=400,
                     detail="File upload or file_path is required for upload type",
                 )
+            # Validate file_path is within the uploads directory to prevent LFI
+            uploads_resolved = Path(UPLOADS_FOLDER).resolve()
+            file_resolved = Path(final_file_path).resolve()
+            if not str(file_resolved).startswith(str(uploads_resolved) + os.sep):
+                raise HTTPException(
+                    status_code=400,
+                    detail="Invalid file path: must be within the uploads directory",
+                )
             content_state["file_path"] = final_file_path
             content_state["delete_source"] = source_data.delete_source
         elif source_data.type == "text":
             if not source_data.content:
-                raise HTTPException(status_code=400, detail="Content is required for text type")
+                raise HTTPException(
+                    status_code=400, detail="Content is required for text type"
+                )
             content_state["content"] = source_data.content
         else:
             raise HTTPException(
@@ -327,17 +361,28 @@ async def create_source(
         for trans_id in transformation_ids:
             transformation = await Transformation.get(trans_id)
             if not transformation:
-                raise HTTPException(status_code=404, detail=f"Transformation {trans_id} not found")
+                raise HTTPException(
+                    status_code=404, detail=f"Transformation {trans_id} not found"
+                )
 
         # Branch based on processing mode
         if source_data.async_processing:
             # ASYNC PATH: Create source record first, then queue command
             logger.info("Using async processing path")
 
-            # Create minimal source record - let SurrealDB generate the ID
+            # Create source record with asset - let SurrealDB generate the ID
+            # Persist asset before save so it's available for retry if processing fails
+            if source_data.type == "link":
+                source_asset = Asset(url=source_data.url)
+            elif source_data.type == "upload":
+                source_asset = Asset(file_path=file_path or source_data.file_path)
+            else:
+                source_asset = None
+
             source = Source(
                 title=source_data.title or "Processing...",
                 topics=[],
+                asset=source_asset,
             )
             await source.save()
 
@@ -348,7 +393,7 @@ async def create_source(
 
             try:
                 # Import command modules to ensure they're registered
-                import commands.source_commands
+                import commands.source_commands  # noqa: F401
 
                 # Submit command for background processing
                 command_input = SourceProcessingInput(
@@ -401,7 +446,9 @@ async def create_source(
                         os.unlink(file_path)
                     except Exception:
                         pass
-                raise HTTPException(status_code=500, detail=f"Failed to queue processing: {e!s}")
+                raise HTTPException(
+                    status_code=500, detail=f"Failed to queue processing: {str(e)}"
+                )
 
         else:
             # SYNC PATH: Execute synchronously using execute_command_sync
@@ -409,7 +456,7 @@ async def create_source(
 
             try:
                 # Import command modules to ensure they're registered
-                import commands.source_commands
+                import commands.source_commands  # noqa: F401
 
                 # Create source record - let SurrealDB generate the ID
                 source = Source(
@@ -440,7 +487,7 @@ async def create_source(
                     "open_notebook",  # app name
                     "process_source",  # command name
                     command_input.model_dump(),
-                    300,  # 5 minute timeout for sync processing
+                    timeout=300,  # 5 minute timeout for sync processing
                 )
 
                 if not result.is_success():
@@ -466,21 +513,25 @@ async def create_source(
                     raise HTTPException(status_code=500, detail="Source ID is missing")
                 processed_source = await Source.get(source.id)
                 if not processed_source:
-                    raise HTTPException(status_code=500, detail="Processed source not found")
+                    raise HTTPException(
+                        status_code=500, detail="Processed source not found"
+                    )
 
                 embedded_chunks = await processed_source.get_embedded_chunks()
                 return SourceResponse(
                     id=processed_source.id or "",
                     title=processed_source.title,
                     topics=processed_source.topics or [],
-                    asset=(
-                        AssetModel(
-                            file_path=(processed_source.asset.file_path if processed_source.asset else None),
-                            url=(processed_source.asset.url if processed_source.asset else None),
-                        )
+                    asset=AssetModel(
+                        file_path=processed_source.asset.file_path
                         if processed_source.asset
-                        else None
-                    ),
+                        else None,
+                        url=processed_source.asset.url
+                        if processed_source.asset
+                        else None,
+                    )
+                    if processed_source.asset
+                    else None,
                     full_text=processed_source.full_text,
                     embedded=embedded_chunks > 0,
                     embedded_chunks=embedded_chunks,
@@ -516,14 +567,14 @@ async def create_source(
                 pass
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error creating source: {e!s}")
+        logger.error(f"Error creating source: {str(e)}")
         # Clean up uploaded file on unexpected errors if we created it
         if file_path and upload_file:
             try:
                 os.unlink(file_path)
             except Exception:
                 pass
-        raise HTTPException(status_code=500, detail=f"Error creating source: {e!s}")
+        raise HTTPException(status_code=500, detail=f"Error creating source: {str(e)}")
 
 
 @router.post("/sources/json", response_model=SourceResponse)
@@ -547,7 +598,9 @@ async def _resolve_source_file(source_id: str) -> tuple[str, str]:
     resolved_path = os.path.realpath(file_path)
 
     if not resolved_path.startswith(safe_root):
-        logger.warning(f"Blocked download outside uploads directory for source {source_id}: {resolved_path}")
+        logger.warning(
+            f"Blocked download outside uploads directory for source {source_id}: {resolved_path}"
+        )
         raise HTTPException(status_code=403, detail="Access to file denied")
 
     if not os.path.exists(resolved_path):
@@ -557,7 +610,7 @@ async def _resolve_source_file(source_id: str) -> tuple[str, str]:
     return resolved_path, filename
 
 
-def _is_source_file_available(source: Source) -> bool | None:
+def _is_source_file_available(source: Source) -> Optional[bool]:
     if not source or not source.asset or not source.asset.file_path:
         return None
 
@@ -597,20 +650,20 @@ async def get_source(source_id: str):
             "SELECT VALUE out FROM reference WHERE in = $source_id",
             {"source_id": ensure_record_id(source.id or source_id)},
         )
-        notebook_ids = [str(nb_id) for nb_id in notebooks_query] if notebooks_query else []
+        notebook_ids = (
+            [str(nb_id) for nb_id in notebooks_query] if notebooks_query else []
+        )
 
         return SourceResponse(
             id=source.id or "",
             title=source.title,
             topics=source.topics or [],
-            asset=(
-                AssetModel(
-                    file_path=source.asset.file_path if source.asset else None,
-                    url=source.asset.url if source.asset else None,
-                )
-                if source.asset
-                else None
-            ),
+            asset=AssetModel(
+                file_path=source.asset.file_path if source.asset else None,
+                url=source.asset.url if source.asset else None,
+            )
+            if source.asset
+            else None,
             full_text=source.full_text,
             embedded=embedded_chunks > 0,
             embedded_chunks=embedded_chunks,
@@ -627,8 +680,8 @@ async def get_source(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching source {source_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching source: {e!s}")
+        logger.error(f"Error fetching source {source_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error fetching source: {str(e)}")
 
 
 @router.head("/sources/{source_id}/download")
@@ -640,7 +693,7 @@ async def check_source_file(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error checking file for source {source_id}: {e!s}")
+        logger.error(f"Error checking file for source {source_id}: {str(e)}")
         raise HTTPException(status_code=500, detail="Failed to verify file")
 
 
@@ -657,7 +710,7 @@ async def download_source_file(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error downloading file for source {source_id}: {e!s}")
+        logger.error(f"Error downloading file for source {source_id}: {str(e)}")
         raise HTTPException(status_code=500, detail="Failed to download source file")
 
 
@@ -717,8 +770,10 @@ async def get_source_status(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching status for source {source_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching source status: {e!s}")
+        logger.error(f"Error fetching status for source {source_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error fetching source status: {str(e)}"
+        )
 
 
 @router.put("/sources/{source_id}", response_model=SourceResponse)
@@ -742,14 +797,12 @@ async def update_source(source_id: str, source_update: SourceUpdate):
             id=source.id or "",
             title=source.title,
             topics=source.topics or [],
-            asset=(
-                AssetModel(
-                    file_path=source.asset.file_path if source.asset else None,
-                    url=source.asset.url if source.asset else None,
-                )
-                if source.asset
-                else None
-            ),
+            asset=AssetModel(
+                file_path=source.asset.file_path if source.asset else None,
+                url=source.asset.url if source.asset else None,
+            )
+            if source.asset
+            else None,
             full_text=source.full_text,
             embedded=embedded_chunks > 0,
             embedded_chunks=embedded_chunks,
@@ -761,8 +814,8 @@ async def update_source(source_id: str, source_update: SourceUpdate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error updating source {source_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error updating source: {e!s}")
+        logger.error(f"Error updating source {source_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error updating source: {str(e)}")
 
 
 @router.post("/sources/{source_id}/retry", response_model=SourceResponse)
@@ -784,16 +837,25 @@ async def retry_source_processing(source_id: str):
                         detail="Source is already processing. Cannot retry while processing is active.",
                     )
             except Exception as e:
-                logger.warning(f"Failed to check current status for source {source_id}: {e}")
+                logger.warning(
+                    f"Failed to check current status for source {source_id}: {e}"
+                )
                 # Continue with retry if we can't check status
 
-        # Get notebooks that this source belongs to
-        query = "SELECT notebook FROM reference WHERE source = $source_id"
-        references = await repo_query(query, {"source_id": source_id})
-        notebook_ids = [str(ref["notebook"]) for ref in references]
+        # Get notebooks that this source belongs to. `reference` is a graph edge
+        # (RELATE source->reference->notebook), so it only has `in`/`out` columns —
+        # there is no `source`/`notebook` column. Mirror the working query at the
+        # source-list path above. See issue #861.
+        references = await repo_query(
+            "SELECT VALUE out FROM reference WHERE in = $source_id",
+            {"source_id": ensure_record_id(source.id or source_id)},
+        )
+        notebook_ids = [str(nb_id) for nb_id in references] if references else []
 
         if not notebook_ids:
-            raise HTTPException(status_code=400, detail="Source is not associated with any notebooks")
+            raise HTTPException(
+                status_code=400, detail="Source is not associated with any notebooks"
+            )
 
         # Prepare content_state based on source asset
         content_state = {}
@@ -806,16 +868,21 @@ async def retry_source_processing(source_id: str):
             elif source.asset.url:
                 content_state = {"url": source.asset.url}
             else:
-                raise HTTPException(status_code=400, detail="Source asset has no file_path or url")
-        # Check if it's a text source by trying to get full_text
-        elif source.full_text:
-            content_state = {"content": source.full_text}
+                raise HTTPException(
+                    status_code=400, detail="Source asset has no file_path or url"
+                )
         else:
-            raise HTTPException(status_code=400, detail="Cannot determine source content for retry")
+            # Check if it's a text source by trying to get full_text
+            if source.full_text:
+                content_state = {"content": source.full_text}
+            else:
+                raise HTTPException(
+                    status_code=400, detail="Cannot determine source content for retry"
+                )
 
         try:
             # Import command modules to ensure they're registered
-            import commands.source_commands
+            import commands.source_commands  # noqa: F401
 
             # Submit new command for background processing
             command_input = SourceProcessingInput(
@@ -832,7 +899,9 @@ async def retry_source_processing(source_id: str):
                 command_input.model_dump(),
             )
 
-            logger.info(f"Submitted retry processing command: {command_id} for source {source_id}")
+            logger.info(
+                f"Submitted retry processing command: {command_id} for source {source_id}"
+            )
 
             # Update source with new command ID
             source.command = ensure_record_id(f"command:{command_id}")
@@ -846,14 +915,12 @@ async def retry_source_processing(source_id: str):
                 id=source.id or "",
                 title=source.title,
                 topics=source.topics or [],
-                asset=(
-                    AssetModel(
-                        file_path=source.asset.file_path if source.asset else None,
-                        url=source.asset.url if source.asset else None,
-                    )
-                    if source.asset
-                    else None
-                ),
+                asset=AssetModel(
+                    file_path=source.asset.file_path if source.asset else None,
+                    url=source.asset.url if source.asset else None,
+                )
+                if source.asset
+                else None,
                 full_text=source.full_text,
                 embedded=embedded_chunks > 0,
                 embedded_chunks=embedded_chunks,
@@ -865,14 +932,20 @@ async def retry_source_processing(source_id: str):
             )
 
         except Exception as e:
-            logger.error(f"Failed to submit retry processing command for source {source_id}: {e}")
-            raise HTTPException(status_code=500, detail=f"Failed to queue retry processing: {e!s}")
+            logger.error(
+                f"Failed to submit retry processing command for source {source_id}: {e}"
+            )
+            raise HTTPException(
+                status_code=500, detail=f"Failed to queue retry processing: {str(e)}"
+            )
 
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error retrying source processing for {source_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error retrying source processing: {e!s}")
+        logger.error(f"Error retrying source processing for {source_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error retrying source processing: {str(e)}"
+        )
 
 
 @router.delete("/sources/{source_id}")
@@ -889,11 +962,11 @@ async def delete_source(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting source {source_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error deleting source: {e!s}")
+        logger.error(f"Error deleting source {source_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error deleting source: {str(e)}")
 
 
-@router.get("/sources/{source_id}/insights", response_model=list[SourceInsightResponse])
+@router.get("/sources/{source_id}/insights", response_model=List[SourceInsightResponse])
 async def get_source_insights(source_id: str):
     """Get all insights for a specific source."""
     try:
@@ -916,48 +989,62 @@ async def get_source_insights(source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching insights for source {source_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching insights: {e!s}")
+        logger.error(f"Error fetching insights for source {source_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error fetching insights: {str(e)}"
+        )
 
 
-@router.post("/sources/{source_id}/insights", response_model=SourceInsightResponse)
+@router.post(
+    "/sources/{source_id}/insights",
+    response_model=InsightCreationResponse,
+    status_code=202,
+)
 async def create_source_insight(source_id: str, request: CreateSourceInsightRequest):
-    """Create a new insight for a source by running a transformation."""
+    """
+    Start insight generation for a source by running a transformation.
+
+    This endpoint returns immediately with a 202 Accepted status.
+    The transformation runs asynchronously in the background via the job queue.
+    Poll GET /sources/{source_id}/insights to see when the insight is ready.
+    """
     try:
-        # Get source
+        # Validate source exists
         source = await Source.get(source_id)
         if not source:
             raise HTTPException(status_code=404, detail="Source not found")
 
-        # Get transformation
+        # Validate transformation exists
         transformation = await Transformation.get(request.transformation_id)
         if not transformation:
             raise HTTPException(status_code=404, detail="Transformation not found")
 
-        # Run transformation graph
-        from open_notebook.graphs.transformation import graph as transform_graph
-
-        await transform_graph.ainvoke(
-            input=dict(source=source, transformation=transformation)  # type: ignore[arg-type]
+        # Submit transformation as background job (fire-and-forget)
+        command_id = submit_command(
+            "open_notebook",
+            "run_transformation",
+            {
+                "source_id": source_id,
+                "transformation_id": request.transformation_id,
+            },
+        )
+        logger.info(
+            f"Submitted run_transformation command {command_id} for source {source_id}"
         )
 
-        # Get the newly created insight (last one)
-        insights = await source.get_insights()
-        if insights:
-            newest = insights[-1]
-            return SourceInsightResponse(
-                id=newest.id or "",
-                source_id=source_id,
-                insight_type=newest.insight_type,
-                content=newest.content,
-                created=str(newest.created),
-                updated=str(newest.updated),
-            )
-        else:
-            raise HTTPException(status_code=500, detail="Failed to create insight")
+        # Return immediately with command_id for status tracking
+        return InsightCreationResponse(
+            status="pending",
+            message="Insight generation started",
+            source_id=source_id,
+            transformation_id=request.transformation_id,
+            command_id=str(command_id),
+        )
 
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error creating insight for source {source_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error creating insight: {e!s}")
+        logger.error(f"Error starting insight generation for source {source_id}: {e}")
+        raise HTTPException(
+            status_code=500, detail=f"Error starting insight generation: {str(e)}"
+        )

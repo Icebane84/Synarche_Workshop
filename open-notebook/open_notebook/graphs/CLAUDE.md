@@ -1,38 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CLAUDE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# CLAUDE.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
-| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # Graphs Module
 
 LangGraph-based workflow orchestration for content processing, chat interactions, and AI-powered transformations.
@@ -56,6 +21,23 @@ LangGraph-based workflow orchestration for content processing, chat interactions
 - **Checkpointing**: `chat.py` and `source_chat.py` use SqliteSaver for message history (LangGraph's built-in persistence)
 - **Content extraction**: `source.py` uses content-core library with provider/model from DefaultModels; URLs and files both supported
 
+## Error Handling in Graphs
+
+All graph nodes use `classify_error()` from `open_notebook.utils.error_classifier` to catch raw LLM provider exceptions and re-raise them as typed `OpenNotebookError` subclasses with user-friendly messages. This ensures that errors from any AI provider (authentication failures, rate limits, model not found, network issues) are surfaced to the user with actionable messages instead of opaque stack traces.
+
+**Pattern in nodes**:
+```python
+from open_notebook.utils.error_classifier import classify_error
+
+try:
+    result = await model.ainvoke(...)
+except Exception as e:
+    exc_class, message = classify_error(e)
+    raise exc_class(message) from e
+```
+
+---
+
 ## Quirks & Edge Cases
 
 - **Async loop gymnastics**: ThreadPoolExecutor workaround needed because LangGraph invokes sync nodes but we call async functions; fragile if event loop state changes
@@ -73,6 +55,7 @@ LangGraph-based workflow orchestration for content processing, chat interactions
 - `ai_prompter`: Prompter for Jinja2 template rendering
 - `content_core`: `extract_content()` for file/URL processing
 - `open_notebook.ai.provision`: `provision_langchain_model()` (async factory with fallback logic)
+- `open_notebook.utils.error_classifier`: `classify_error()` for user-friendly LLM error messages
 - `open_notebook.domain.notebook`: Domain models (Source, Note, SourceInsight, vector_search)
 - `loguru`: Logging
 
@@ -94,11 +77,3 @@ result = await source_graph.ainvoke({
     "embed": True
 })
 ```
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

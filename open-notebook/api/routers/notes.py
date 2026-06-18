@@ -10,20 +10,11 @@ from open_notebook.exceptions import InvalidInputError
 router = APIRouter()
 
 
-@router.get("/notes", response_model=list[NoteResponse])
+@router.get("/notes", response_model=List[NoteResponse])
 async def get_notes(
-    notebook_id: str | None = Query(None, description="Filter by notebook ID"),
+    notebook_id: Optional[str] = Query(None, description="Filter by notebook ID"),
 ):
     """Get all notes with optional notebook filtering."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         if notebook_id:
             # Get notes for a specific notebook
@@ -51,8 +42,8 @@ async def get_notes(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching notes: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching notes: {e!s}")
+        logger.error(f"Error fetching notes: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error fetching notes: {str(e)}")
 
 
 @router.post("/notes", response_model=NoteResponse)
@@ -74,17 +65,20 @@ async def create_note(note_data: NoteCreate):
             title = result.get("output", "Untitled Note")
 
         # Validate note_type
-        note_type: Literal["human", "ai"] | None = None
+        note_type: Optional[Literal["human", "ai"]] = None
         if note_data.note_type in ("human", "ai"):
             note_type = note_data.note_type  # type: ignore[assignment]
         elif note_data.note_type is not None:
-            raise HTTPException(status_code=400, detail="note_type must be 'human' or 'ai'")
+            raise HTTPException(
+                status_code=400, detail="note_type must be 'human' or 'ai'"
+            )
+
         new_note = Note(
             title=title,
             content=note_data.content,
             note_type=note_type,
         )
-        await new_note.save()
+        command_id = await new_note.save()
 
         # Add to notebook if specified
         if note_data.notebook_id:
@@ -102,14 +96,15 @@ async def create_note(note_data: NoteCreate):
             note_type=new_note.note_type,
             created=str(new_note.created),
             updated=str(new_note.updated),
+            command_id=str(command_id) if command_id else None,
         )
     except HTTPException:
         raise
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error creating note: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error creating note: {e!s}")
+        logger.error(f"Error creating note: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error creating note: {str(e)}")
 
 
 @router.get("/notes/{note_id}", response_model=NoteResponse)
@@ -131,8 +126,8 @@ async def get_note(note_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching note {note_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching note: {e!s}")
+        logger.error(f"Error fetching note {note_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error fetching note: {str(e)}")
 
 
 @router.put("/notes/{note_id}", response_model=NoteResponse)
@@ -152,9 +147,11 @@ async def update_note(note_id: str, note_update: NoteUpdate):
             if note_update.note_type in ("human", "ai"):
                 note.note_type = note_update.note_type  # type: ignore[assignment]
             else:
-                raise HTTPException(status_code=400, detail="note_type must be 'human' or 'ai'")
+                raise HTTPException(
+                    status_code=400, detail="note_type must be 'human' or 'ai'"
+                )
 
-        await note.save()
+        command_id = await note.save()
 
         return NoteResponse(
             id=note.id or "",
@@ -163,14 +160,15 @@ async def update_note(note_id: str, note_update: NoteUpdate):
             note_type=note.note_type,
             created=str(note.created),
             updated=str(note.updated),
+            command_id=str(command_id) if command_id else None,
         )
     except HTTPException:
         raise
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error updating note {note_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error updating note: {e!s}")
+        logger.error(f"Error updating note {note_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error updating note: {str(e)}")
 
 
 @router.delete("/notes/{note_id}")
@@ -187,5 +185,5 @@ async def delete_note(note_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting note {note_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error deleting note: {e!s}")
+        logger.error(f"Error deleting note {note_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error deleting note: {str(e)}")

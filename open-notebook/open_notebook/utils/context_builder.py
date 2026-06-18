@@ -24,9 +24,9 @@ class ContextItem:
 
     id: str
     type: Literal["source", "note", "insight"]
-    content: dict[str, Any]
+    content: Dict[str, Any]
     priority: int = 0
-    token_count: int | None = None
+    token_count: Optional[int] = None
 
     def __post_init__(self):
         """Calculate token count for the content if not provided."""
@@ -39,12 +39,12 @@ class ContextItem:
 class ContextConfig:
     """Configuration for context building."""
 
-    sources: dict[str, str] | None = None  # {source_id: inclusion_level}
-    notes: dict[str, str] | None = None  # {note_id: inclusion_level}
+    sources: Optional[Dict[str, str]] = None  # {source_id: inclusion_level}
+    notes: Optional[Dict[str, str]] = None  # {note_id: inclusion_level}
     include_insights: bool = True
     include_notes: bool = True
-    max_tokens: int | None = None
-    priority_weights: dict[str, int] | None = None  # {type: weight}
+    max_tokens: Optional[int] = None
+    priority_weights: Optional[Dict[str, int]] = None  # {type: weight}
 
     def __post_init__(self):
         """Initialize default values."""
@@ -62,7 +62,7 @@ class ContextBuilder:
     from sources, notebooks, insights, and notes.
     """
 
-    def __init__(self, **kwargs) -> None:
+    def __init__(self, **kwargs):
         """
         Initialize ContextBuilder with flexible parameters.
 
@@ -79,14 +79,14 @@ class ContextBuilder:
         self.params = kwargs
 
         # Extract commonly used parameters
-        self.source_id: str | None = kwargs.get("source_id")
-        self.notebook_id: str | None = kwargs.get("notebook_id")
+        self.source_id: Optional[str] = kwargs.get("source_id")
+        self.notebook_id: Optional[str] = kwargs.get("notebook_id")
         self.include_insights: bool = kwargs.get("include_insights", True)
         self.include_notes: bool = kwargs.get("include_notes", True)
-        self.max_tokens: int | None = kwargs.get("max_tokens")
+        self.max_tokens: Optional[int] = kwargs.get("max_tokens")
 
         # Context configuration
-        context_config_arg: ContextConfig | None = kwargs.get("context_config")
+        context_config_arg: Optional[ContextConfig] = kwargs.get("context_config")
         self.context_config: ContextConfig
         if context_config_arg is None:
             self.context_config = ContextConfig(
@@ -98,11 +98,11 @@ class ContextBuilder:
             self.context_config = context_config_arg
 
         # Items storage
-        self.items: list[ContextItem] = []
+        self.items: List[ContextItem] = []
 
         logger.debug(f"ContextBuilder initialized with params: {list(kwargs.keys())}")
 
-    async def build(self) -> dict[str, Any]:
+    async def build(self) -> Dict[str, Any]:
         """
         Build context based on provided parameters.
 
@@ -136,10 +136,12 @@ class ContextBuilder:
             return self._format_response()
 
         except Exception as e:
-            logger.error(f"Error building context: {e!s}")
-            raise DatabaseOperationError(f"Failed to build context: {e!s}")
+            logger.error(f"Error building context: {str(e)}")
+            raise DatabaseOperationError(f"Failed to build context: {str(e)}")
 
-    async def _add_source_context(self, source_id: str, inclusion_level: str = "insights") -> None:
+    async def _add_source_context(
+        self, source_id: str, inclusion_level: str = "insights"
+    ) -> None:
         """
         Add source and its insights to context.
 
@@ -152,7 +154,9 @@ class ContextBuilder:
 
         try:
             # Ensure source ID has table prefix
-            full_source_id = source_id if source_id.startswith("source:") else f"source:{source_id}"
+            full_source_id = (
+                source_id if source_id.startswith("source:") else f"source:{source_id}"
+            )
 
             source = await Source.get(full_source_id)
             if not source:
@@ -160,7 +164,9 @@ class ContextBuilder:
                 return
 
             # Determine context size based on inclusion level
-            context_size: Literal["short", "long"] = "long" if "full content" in inclusion_level else "short"
+            context_size: Literal["short", "long"] = (
+                "long" if "full content" in inclusion_level else "short"
+            )
             source_context = await source.get_context(context_size=context_size)
 
             # Add source item
@@ -177,7 +183,9 @@ class ContextBuilder:
             if self.include_insights and "insights" in inclusion_level:
                 insights = await source.get_insights()
                 for insight in insights:
-                    insight_priority = (self.context_config.priority_weights or {}).get("insight", 75)
+                    insight_priority = (self.context_config.priority_weights or {}).get(
+                        "insight", 75
+                    )
                     insight_item = ContextItem(
                         id=insight.id or "",
                         type="insight",
@@ -196,7 +204,7 @@ class ContextBuilder:
         except NotFoundError:
             logger.warning(f"Source {source_id} not found")
         except Exception as e:
-            logger.error(f"Error adding source context for {source_id}: {e!s}")
+            logger.error(f"Error adding source context for {source_id}: {str(e)}")
             raise
 
     async def _add_notebook_context(self, notebook_id: str) -> None:
@@ -240,10 +248,12 @@ class ContextBuilder:
             logger.debug(f"Added notebook context for {notebook_id}")
 
         except Exception as e:
-            logger.error(f"Error adding notebook context for {notebook_id}: {e!s}")
+            logger.error(f"Error adding notebook context for {notebook_id}: {str(e)}")
             raise
 
-    async def _add_note_context(self, note_id: str, inclusion_level: str = "full content") -> None:
+    async def _add_note_context(
+        self, note_id: str, inclusion_level: str = "full content"
+    ) -> None:
         """
         Add note to context.
 
@@ -264,12 +274,16 @@ class ContextBuilder:
                 return
 
             # Get note context
-            context_size: Literal["short", "long"] = "long" if "full content" in inclusion_level else "short"
+            context_size: Literal["short", "long"] = (
+                "long" if "full content" in inclusion_level else "short"
+            )
             note_context = note.get_context(context_size=context_size)
 
             # Add note item
             priority = (self.context_config.priority_weights or {}).get("note", 50)
-            item = ContextItem(id=note.id or "", type="note", content=note_context, priority=priority)
+            item = ContextItem(
+                id=note.id or "", type="note", content=note_context, priority=priority
+            )
             self.add_item(item)
 
             logger.debug(f"Added note context for {note_id}")
@@ -277,7 +291,7 @@ class ContextBuilder:
         except NotFoundError:
             logger.warning(f"Note {note_id} not found")
         except Exception as e:
-            logger.error(f"Error adding note context for {note_id}: {e!s}")
+            logger.error(f"Error adding note context for {note_id}: {str(e)}")
 
     async def _process_custom_params(self) -> None:
         """Process any additional custom parameters."""
@@ -330,7 +344,9 @@ class ContextBuilder:
             current_tokens -= removed_item.token_count or 0
             removed_count += 1
 
-        logger.info(f"Removed {removed_count} items, final token count: {current_tokens}")
+        logger.info(
+            f"Removed {removed_count} items, final token count: {current_tokens}"
+        )
 
     def remove_duplicates(self) -> None:
         """Remove duplicate items based on ID."""
@@ -348,7 +364,7 @@ class ContextBuilder:
         if removed_count > 0:
             logger.debug(f"Removed {removed_count} duplicate items")
 
-    def _format_response(self) -> dict[str, Any]:
+    def _format_response(self) -> Dict[str, Any]:
         """
         Format the final response.
 
@@ -393,7 +409,9 @@ class ContextBuilder:
         if self.notebook_id:
             response["notebook_id"] = self.notebook_id
 
-        logger.info(f"Built context with {len(self.items)} items, {total_tokens} tokens")
+        logger.info(
+            f"Built context with {len(self.items)} items, {total_tokens} tokens"
+        )
 
         return response
 
@@ -403,9 +421,9 @@ class ContextBuilder:
 
 async def build_notebook_context(
     notebook_id: str,
-    context_config: ContextConfig | None = None,
-    max_tokens: int | None = None,
-) -> dict[str, Any]:
+    context_config: Optional[ContextConfig] = None,
+    max_tokens: Optional[int] = None,
+) -> Dict[str, Any]:
     """
     Build context for a notebook.
 
@@ -417,13 +435,15 @@ async def build_notebook_context(
     Returns:
         Built context
     """
-    builder = ContextBuilder(notebook_id=notebook_id, context_config=context_config, max_tokens=max_tokens)
+    builder = ContextBuilder(
+        notebook_id=notebook_id, context_config=context_config, max_tokens=max_tokens
+    )
     return await builder.build()
 
 
 async def build_source_context(
-    source_id: str, include_insights: bool = True, max_tokens: int | None = None
-) -> dict[str, Any]:
+    source_id: str, include_insights: bool = True, max_tokens: Optional[int] = None
+) -> Dict[str, Any]:
     """
     Build context for a single source.
 
@@ -435,16 +455,18 @@ async def build_source_context(
     Returns:
         Built context
     """
-    builder = ContextBuilder(source_id=source_id, include_insights=include_insights, max_tokens=max_tokens)
+    builder = ContextBuilder(
+        source_id=source_id, include_insights=include_insights, max_tokens=max_tokens
+    )
     return await builder.build()
 
 
 async def build_mixed_context(
-    source_ids: list[str] | None = None,
-    note_ids: list[str] | None = None,
-    notebook_id: str | None = None,
-    max_tokens: int | None = None,
-) -> dict[str, Any]:
+    source_ids: Optional[List[str]] = None,
+    note_ids: Optional[List[str]] = None,
+    notebook_id: Optional[str] = None,
+    max_tokens: Optional[int] = None,
+) -> Dict[str, Any]:
     """
     Build context from mixed sources.
 
@@ -467,5 +489,7 @@ async def build_mixed_context(
     if note_ids:
         context_config.notes = {nid: "full content" for nid in note_ids}
 
-    builder = ContextBuilder(notebook_id=notebook_id, context_config=context_config, max_tokens=max_tokens)
+    builder = ContextBuilder(
+        notebook_id=notebook_id, context_config=context_config, max_tokens=max_tokens
+    )
     return await builder.build()

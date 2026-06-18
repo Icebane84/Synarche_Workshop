@@ -1,35 +1,6 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CREATING-PODCASTS` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Creating Podcasts - Turn Research into Audio
 
-# creating-podcasts.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CREATING-PODCASTS-001`  | The Sovereign ID. |
-| **Official Name** | `creating-podcasts.md`        | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+Podcasts let you consume your research passively. This guide covers the complete workflow from setup to download.
 
 ---
 
@@ -103,7 +74,7 @@ An episode profile defines the structure and tone.
 **Option A: Use Preset Profile**
 
 ```
-Open Notebook provides templates:
+Open Notebook provides preset profiles:
 
 Academic Presentation (Monologue)
 ├─ 1 speaker
@@ -132,7 +103,6 @@ Solo Explanation (Monologue)
 ```
 
 **Pick based on your content:**
-
 - One main idea → Academic Presentation
 - You want to explain → Solo Explanation
 - Two competing views → Debate Format
@@ -170,22 +140,22 @@ Speakers are the "voice" of your podcast.
 **Option A: Use Preset Speakers**
 
 ```
-Open Notebook provides templates:
+Open Notebook provides preset profiles:
 
 "Expert Alex"
 - Expertise: Deep knowledge
 - Personality: Rigorous, patient
-- TTS: OpenAI (clear voice)
+- Voice Model: Selected from model registry
 
 "Curious Sam"
 - Expertise: Curious newcomer
 - Personality: Asks questions
-- TTS: Google (natural voice)
+- Voice Model: Selected from model registry
 
 "Skeptic Jordan"
 - Expertise: Critical perspective
 - Personality: Challenges assumptions
-- TTS: ElevenLabs (warm voice)
+- Voice Model: Selected from model registry
 
 For your first podcast: Use presets
 For custom podcast: Create your own
@@ -209,15 +179,17 @@ Personality:
  explains clearly, asks good questions"
 
 Voice Configuration:
-- TTS Provider: OpenAI / Google / ElevenLabs / Local
-- Voice selection: Choose from available voices
-- Accent (optional): British / American / etc.
+- Voice Model: Select from model registry (e.g., OpenAI TTS, Google TTS, ElevenLabs)
+- Voice: Choose from available voices for the selected model
+- Per-speaker override: Each speaker can optionally use a different voice model
+
+Credentials are automatically resolved from the model configuration.
 
 Example:
 Name: Dr. Research Expert
 Expertise: AI safety alignment research
 Personality: Rigorous, academic but accessible
-Voice: ElevenLabs - professional male voice
+Voice Model: ElevenLabs TTS (from registry), Voice: professional male
 ```
 
 ### Step 6: Generate Podcast
@@ -455,7 +427,6 @@ Rule: 3-5 sources per podcast
 **Problem**: TTS voice sounds unnatural
 
 **Solutions**:
-
 ```
 1. Switch provider: Try Google or ElevenLabs instead
 2. Choose different voice: Some voices more natural
@@ -468,7 +439,6 @@ Rule: 3-5 sources per podcast
 **Problem**: Hard to understand what's being said
 
 **Solutions**:
-
 ```
 1. Re-generate with different speaker
 2. Try different TTS provider
@@ -482,7 +452,6 @@ Rule: 3-5 sources per podcast
 **Problem**: Important information isn't in podcast
 
 **Solutions**:
-
 ```
 1. Include that source in content selection
 2. Review generated outline (check before generating)
@@ -495,9 +464,8 @@ Rule: 3-5 sources per podcast
 **Problem**: Speakers sound like same person
 
 **Solutions**:
-
 ```
-1. Choose different TTS providers (OpenAI + Google)
+1. Choose different voice models from the registry for each speaker
 2. Choose very different voice options
 3. Increase personality differences in profile
 4. Try different speaker count (2 vs 3 vs 4)
@@ -508,7 +476,6 @@ Rule: 3-5 sources per podcast
 **Problem**: "Podcast generation failed"
 
 **Solutions**:
-
 ```
 1. Check internet connection (especially TTS)
 2. Try again (might be temporary issue)
@@ -608,7 +575,6 @@ If you want to distribute (future feature):
 ## Best Practices
 
 ### Before Generation
-
 - [ ] Sources are processed and ready
 - [ ] You've chosen content to include
 - [ ] You have a clear episode profile
@@ -616,14 +582,12 @@ If you want to distribute (future feature):
 - [ ] Content is focused (3-5 sources max)
 
 ### During Generation
-
 - Don't close the browser (use background processing)
 - Check back in 5-15 minutes
 - Review transcript when complete
 - Listen to sample before downloading
 
 ### After Generation
-
 - [ ] Download MP3 to computer
 - [ ] Save in organized folder
 - [ ] Add metadata (title, description, date)
@@ -635,7 +599,6 @@ If you want to distribute (future feature):
 ## Use Cases
 
 ### Academic Researcher
-
 ```
 Podcast: Explaining your dissertation
 Speakers: You + colleague
@@ -644,7 +607,6 @@ Use: Share with advisors, test explanations
 ```
 
 ### Content Creator
-
 ```
 Podcast: Research-to-podcast article
 Speakers: Narrator + expert
@@ -653,7 +615,6 @@ Use: Transform article into podcast version
 ```
 
 ### Team Research
-
 ```
 Podcast: Weekly research updates
 Speakers: Multiple team members
@@ -662,7 +623,6 @@ Use: Team updates, knowledge sharing
 ```
 
 ### Learning/Teaching
-
 ```
 Podcast: Teaching material
 Speakers: Teacher + inquisitive student
@@ -716,13 +676,3 @@ After: Same research, multiple formats (read/listen)
 Podcasts aren't just for entertainment—they're a tool for making research more accessible, shareable, and consumable.
 
 That's why they're important for Open Notebook.
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
-
-- [[adding-sources]]

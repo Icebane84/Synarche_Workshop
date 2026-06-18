@@ -1,25 +1,16 @@
 import os
 from contextlib import asynccontextmanager
-from datetime import UTC, datetime, timezone
+from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, TypeVar, Union
 
 from loguru import logger
 from surrealdb import AsyncSurreal, RecordID  # type: ignore
 
-T = TypeVar("T", dict[str, Any], list[dict[str, Any]])
+T = TypeVar("T", Dict[str, Any], List[Dict[str, Any]])
 
 
 def get_database_url():
     """Get database URL with backward compatibility"""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     surreal_url = os.getenv("SURREAL_URL")
     if surreal_url:
         return surreal_url
@@ -46,53 +37,34 @@ def parse_record_ids(obj: Any) -> Any:
     return obj
 
 
-def ensure_record_id(value: str | RecordID) -> RecordID:
+def ensure_record_id(value: Union[str, RecordID]) -> RecordID:
     """Ensure a value is a RecordID."""
     if isinstance(value, RecordID):
         return value
     return RecordID.parse(value)
 
 
-class DatabaseManager:
-    _instance = None
-    _client = None
-
-    @classmethod
-    def get_instance(cls):
-        if cls._instance is None:
-            cls._instance = cls()
-        return cls._instance
-
-    async def get_db(self) -> AsyncSurreal:
-        if self._client is None:
-            self._client = AsyncSurreal(get_database_url())
-            await self._client.connect()
-            await self._client.signin(
-                {
-                    "username": os.environ.get("SURREAL_USER", "root"),
-                    "password": get_database_password(),
-                }
-            )
-            await self._client.use(
-                os.environ.get("SURREAL_NAMESPACE", "test"),
-                os.environ.get("SURREAL_DATABASE", "test"),
-            )
-        return self._client
-
-    async def close(self) -> None:
-        if self._client:
-            await self._client.close()
-            self._client = None
-
-
 @asynccontextmanager
 async def db_connection():
-    db = await DatabaseManager.get_instance().get_db()
-    yield db
-    # We do NOT close the connection here anymore, allowing reuse.
+    db = AsyncSurreal(get_database_url())
+    await db.signin(
+        {
+            "username": os.environ.get("SURREAL_USER"),
+            "password": get_database_password(),
+        }
+    )
+    await db.use(
+        os.environ.get("SURREAL_NAMESPACE"), os.environ.get("SURREAL_DATABASE")
+    )
+    try:
+        yield db
+    finally:
+        await db.close()
 
 
-async def repo_query(query_str: str, vars: dict[str, Any] | None = None) -> list[dict[str, Any]]:
+async def repo_query(
+    query_str: str, vars: Optional[Dict[str, Any]] = None
+) -> List[Dict[str, Any]]:
     """Execute a SurrealQL query and return the results"""
 
     async with db_connection() as connection:
@@ -110,12 +82,12 @@ async def repo_query(query_str: str, vars: dict[str, Any] | None = None) -> list
             raise
 
 
-async def repo_create(table: str, data: dict[str, Any]) -> dict[str, Any]:
+async def repo_create(table: str, data: Dict[str, Any]) -> Dict[str, Any]:
     """Create a new record in the specified table"""
     # Remove 'id' attribute if it exists in data
     data.pop("id", None)
-    data["created"] = datetime.now(UTC)
-    data["updated"] = datetime.now(UTC)
+    data["created"] = datetime.now(timezone.utc)
+    data["updated"] = datetime.now(timezone.utc)
     try:
         async with db_connection() as connection:
             result = parse_record_ids(await connection.insert(table, data))
@@ -132,8 +104,8 @@ async def repo_create(table: str, data: dict[str, Any]) -> dict[str, Any]:
 
 
 async def repo_relate(
-    source: str, relationship: str, target: str, data: dict[str, Any] | None = None
-) -> list[dict[str, Any]]:
+    source: str, relationship: str, target: str, data: Optional[Dict[str, Any]] = None
+) -> List[Dict[str, Any]]:
     """Create a relationship between two records with optional data"""
     if data is None:
         data = {}
@@ -149,34 +121,41 @@ async def repo_relate(
 
 
 async def repo_upsert(
-    table: str, id: str | None, data: dict[str, Any], add_timestamp: bool = False
-) -> list[dict[str, Any]]:
+    table: str, id: Optional[str], data: Dict[str, Any], add_timestamp: bool = False
+) -> List[Dict[str, Any]]:
     """Create or update a record in the specified table"""
     data.pop("id", None)
     if add_timestamp:
-        data["updated"] = datetime.now(UTC)
+        data["updated"] = datetime.now(timezone.utc)
     query = f"UPSERT {id if id else table} MERGE $data;"
     return await repo_query(query, {"data": data})
 
 
-async def repo_update(table: str, id: str, data: dict[str, Any]) -> list[dict[str, Any]]:
+async def repo_update(
+    table: str, id: str, data: Dict[str, Any]
+) -> List[Dict[str, Any]]:
     """Update an existing record by table and id"""
     # If id already contains the table name, use it as is
     try:
-        record_id = id if isinstance(id, RecordID) or (":" in id and id.startswith(f"{table}:")) else f"{table}:{id}"
+        if isinstance(id, RecordID) or (":" in id and id.startswith(f"{table}:")):
+            record_id = id
+        else:
+            record_id = f"{table}:{id}"
         data.pop("id", None)
         if "created" in data and isinstance(data["created"], str):
             data["created"] = datetime.fromisoformat(data["created"])
-        data["updated"] = datetime.now(UTC)
+        data["updated"] = datetime.now(timezone.utc)
         query = f"UPDATE {record_id} MERGE $data;"
         # logger.debug(f"Update query: {query}")
         result = await repo_query(query, {"data": data})
+        # if isinstance(result, list):
+        #     return [_return_data(item) for item in result]
         return parse_record_ids(result)
     except Exception as e:
-        raise RuntimeError(f"Failed to update record: {e!s}")
+        raise RuntimeError(f"Failed to update record: {str(e)}")
 
 
-async def repo_delete(record_id: str | RecordID):
+async def repo_delete(record_id: Union[str, RecordID]):
     """Delete a record by record id"""
 
     try:
@@ -184,10 +163,12 @@ async def repo_delete(record_id: str | RecordID):
             return await connection.delete(ensure_record_id(record_id))
     except Exception as e:
         logger.exception(e)
-        raise RuntimeError(f"Failed to delete record: {e!s}")
+        raise RuntimeError(f"Failed to delete record: {str(e)}")
 
 
-async def repo_insert(table: str, data: list[dict[str, Any]], ignore_duplicates: bool = False) -> list[dict[str, Any]]:
+async def repo_insert(
+    table: str, data: List[Dict[str, Any]], ignore_duplicates: bool = False
+) -> List[Dict[str, Any]]:
     """Create a new record in the specified table"""
     try:
         async with db_connection() as connection:
@@ -199,7 +180,12 @@ async def repo_insert(table: str, data: list[dict[str, Any]], ignore_duplicates:
     except RuntimeError as e:
         if ignore_duplicates and "already contains" in str(e):
             return []
-        logger.error(str(e))
+        # Log transaction conflicts at debug level (they are expected during concurrent operations)
+        error_str = str(e).lower()
+        if "transaction" in error_str or "conflict" in error_str:
+            logger.debug(str(e))
+        else:
+            logger.error(str(e))
         raise
     except Exception as e:
         if ignore_duplicates and "already contains" in str(e):

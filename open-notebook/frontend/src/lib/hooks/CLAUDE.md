@@ -1,38 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CLAUDE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# CLAUDE.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CLAUDE-001`             | The Sovereign ID. |
-| **Official Name**   | `CLAUDE.md`                   | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # Hooks Module
 
 React hooks for API data fetching, state management, and complex workflows (chat, streaming, file handling).
@@ -45,7 +10,7 @@ React hooks for API data fetching, state management, and complex workflows (chat
 - **Streaming hooks** (`useAsk`): SSE parsing for multi-stage Ask workflows (strategy → answers → final answer)
 - **Model/config hooks** (`useModels`, `useSettings`, `useTransformations`): Application-level settings and model management
 - **Utility hooks** (`useMediaQuery`, `useToast`, `useNavigation`, `useAuth`): UI state and auth checking
-- **i18n hook** (`useTranslation`): Proxy-based translation access with `t.section.key` pattern and language switching
+- **i18n hook** (`useTranslation`): Thin wrapper around react-i18next with `t('section.key')` pattern and language switching
 
 ## Important Patterns
 
@@ -57,7 +22,7 @@ React hooks for API data fetching, state management, and complex workflows (chat
 - **SSE streaming pattern**: `useAsk` manually parses newline-delimited JSON from `/api/search/ask`; handles incomplete buffers
 - **Status polling**: `useSourceStatus` auto-refetches every 2s while `status === 'running' | 'queued' | 'new'`
 - **Context building**: `useNotebookChat.buildContext()` assembles selected sources + notes with token/char counts
-- **i18n Proxy pattern**: `useTranslation` returns `t` object with Proxy; access `t.section.key` instead of `t('section.key')`
+- **i18n pattern**: `useTranslation` returns standard react-i18next `t` function; access translations via `t('section.key')`
 
 ## Key Dependencies
 
@@ -84,8 +49,7 @@ React hooks for API data fetching, state management, and complex workflows (chat
 - **Status polling race**: `useSourceStatus` may refetch stale data before server catches up; retry logic has 3-attempt limit
 - **Keyboard trap in dialogs**: Some hooks manage modal state; ensure Dialog/Modal components handle escape key properly
 - **Form data handling**: `useFileUpload` and source creation convert JSON fields to strings in FormData
-- **useTranslation depth limit**: Proxy limits nesting to 4 levels; deeper access returns path string as fallback
-- **useTranslation loop detection**: >1000 accesses to same key in 1s triggers error and breaks recursion
+- **useTranslation**: Thin wrapper preserving `setLanguage` with language change events for `LanguageLoadingOverlay`
 
 ## Testing Patterns
 
@@ -102,10 +66,127 @@ render(<Component />, { wrapper: QueryClientProvider })
 await waitFor(() => expect(queryClient.invalidateQueries).toHaveBeenCalled())
 ```
 
----
+## Credentials Hooks (`use-credentials.ts`)
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
+Hooks for managing AI provider credentials with TanStack Query integration, toast notifications, and cache invalidation.
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+### Query Keys
+
+```typescript
+export const CREDENTIAL_QUERY_KEYS = {
+  all: ['credentials'] as const,
+  status: ['credentials', 'status'] as const,
+  envStatus: ['credentials', 'env-status'] as const,
+  byProvider: (provider: string) => ['credentials', 'provider', provider] as const,
+  detail: (id: string) => ['credentials', id] as const,
+}
+```
+
+### Query Hooks
+
+| Hook | Description | Returns |
+|------|-------------|---------|
+| `useCredentialStatus()` | Get configuration status of all providers | `{ configured, source, encryption_configured }` |
+| `useEnvStatus()` | Get which providers have env vars set | `{ [provider]: boolean }` |
+| `useCredentials(provider?)` | List all credentials (optional filter) | `Credential[]` |
+| `useCredentialsByProvider(provider)` | List credentials for a specific provider | `Credential[]` |
+| `useCredential(credentialId)` | Get a specific credential | `Credential` |
+
+### Mutation Hooks
+
+| Hook | Description | Cache Invalidation |
+|------|-------------|-------------------|
+| `useCreateCredential()` | Create new credential | `all`, `providers` |
+| `useUpdateCredential()` | Update credential | `all`, `providers` |
+| `useDeleteCredential()` | Delete credential | `all`, `models`, `providers` |
+| `useTestCredential()` | Test credential connection | None (stores result locally) |
+| `useDiscoverModels()` | Discover models for credential | None |
+| `useRegisterModels()` | Register discovered models | `models`, `all` |
+| `useMigrateFromEnv()` | Migrate from env vars | `status`, `envStatus`, `models`, `providers` |
+| `useMigrateFromProviderConfig()` | Migrate from legacy ProviderConfig | `status`, `envStatus`, `models`, `providers` |
+
+### useTestCredential Details
+
+Returns extended interface with local state management for test results:
+
+```typescript
+const {
+  testCredential,        // (credentialId: string) => void
+  testCredentialAsync,   // (credentialId: string) => Promise<TestConnectionResult>
+  isPending,             // boolean
+  testResults,           // Record<string, TestConnectionResult>
+  clearResult,           // (credentialId: string) => void
+} = useTestCredential()
+```
+
+### Cache Invalidation Strategy
+
+All mutation hooks invalidate:
+- `CREDENTIAL_QUERY_KEYS.all` — refreshes all credential queries (cascades to filtered queries)
+- `MODEL_QUERY_KEYS.providers` — refreshes provider list
+
+Delete hook additionally invalidates:
+- `MODEL_QUERY_KEYS.models` — refreshes full model list (linked models may be deleted)
+
+Migration hooks additionally invalidate:
+- `CREDENTIAL_QUERY_KEYS.status` — refreshes configured/source info
+- `CREDENTIAL_QUERY_KEYS.envStatus` — refreshes env var status
+
+### Usage Example
+
+```typescript
+import {
+  useCredentialStatus,
+  useCredentials,
+  useCreateCredential,
+  useTestCredential,
+  useMigrateFromEnv
+} from '@/lib/hooks/use-credentials'
+
+function CredentialSettings() {
+  const { data: status, isLoading } = useCredentialStatus()
+  const { data: credentials } = useCredentials()
+  const createCredential = useCreateCredential()
+  const { testCredential, testResults, isPending } = useTestCredential()
+  const migrateFromEnv = useMigrateFromEnv()
+
+  const handleCreate = () => {
+    createCredential.mutate({
+      name: 'My OpenAI Key',
+      provider: 'openai',
+      modalities: ['language', 'embedding'],
+      api_key: 'sk-...'
+    })
+  }
+
+  const handleTest = (credentialId: string) => {
+    testCredential(credentialId)
+  }
+
+  const handleMigrate = () => {
+    migrateFromEnv.mutate()
+  }
+
+  return (
+    <div>
+      {credentials?.map(cred => (
+        <div key={cred.id}>
+          <span>{cred.name} ({cred.provider})</span>
+          <button onClick={() => handleTest(cred.id)} disabled={isPending}>Test</button>
+          {testResults[cred.id]?.success && <span>Connected!</span>}
+        </div>
+      ))}
+      <button onClick={handleCreate}>Add Credential</button>
+      <button onClick={handleMigrate}>Migrate from .env</button>
+    </div>
+  )
+}
+```
+
+### Important Notes
+
+- **Toast notifications**: All mutations show success/error toasts automatically
+- **i18n integration**: Toast messages use translation keys from `t('apiKeys.*')` and `t('common.*')`
+- **Error handling**: Uses `getApiErrorKey()` utility to extract error messages from API responses
+- **Local test results**: `useTestCredential` stores results in local state (not cached in TanStack Query)
+- **Migration feedback**: Migration hooks show different toasts based on migrated/skipped/error counts

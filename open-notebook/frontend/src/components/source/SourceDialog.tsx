@@ -1,54 +1,50 @@
-"use client";
+'use client'
 
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { SourceDetailContent } from "./SourceDetailContent";
-import { useTranslation } from "@/lib/hooks/use-translation";
+import { useRouter } from 'next/navigation'
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
+import { SourceDetailContent } from './SourceDetailContent'
+import { useTranslation } from '@/lib/hooks/use-translation'
 
 interface SourceDialogProps {
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
-  sourceId: string | null;
+  open: boolean
+  onOpenChange: (open: boolean) => void
+  sourceId: string | null
 }
 
 /**
  * Source Dialog Component
  *
  * Displays source details in a modal dialog.
- * Includes a "Chat with source" button that opens the full source page in a new tab.
+ * Includes a "Chat with source" button that navigates to the full source page in-app.
  */
-export function SourceDialog({
-  open,
-  onOpenChange,
-  sourceId,
-}: SourceDialogProps) {
-  const { t } = useTranslation();
+export function SourceDialog({ open, onOpenChange, sourceId }: SourceDialogProps) {
+  const { t } = useTranslation()
+  const router = useRouter()
   // Ensure source ID has 'source:' prefix for API calls and routing
   const sourceIdWithPrefix = sourceId
-    ? sourceId.includes(":")
-      ? sourceId
-      : `source:${sourceId}`
-    : null;
+    ? (sourceId.includes(':') ? sourceId : `source:${sourceId}`)
+    : null
 
   const handleChatClick = () => {
     if (sourceIdWithPrefix) {
-      window.open(`/sources/${sourceIdWithPrefix}`, "_blank");
-      // Modal stays open after opening chat
+      onOpenChange(false)
+      router.push(`/sources/${sourceIdWithPrefix}`)
     }
-  };
+  }
 
   const handleClose = () => {
-    onOpenChange(false);
-  };
+    onOpenChange(false)
+  }
 
   if (!sourceIdWithPrefix) {
-    return null;
+    return null
   }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-5xl max-h-[90vh] flex flex-col p-0">
         {/* Accessibility title (hidden visually but read by screen readers) */}
-        <DialogTitle className="sr-only">{t.sources.detailsTitle}</DialogTitle>
+        <DialogTitle className="sr-only">{t('sources.detailsTitle')}</DialogTitle>
 
         {/* Source detail content */}
         <div className="flex-1 overflow-y-auto min-h-0">
@@ -61,5 +57,5 @@ export function SourceDialog({
         </div>
       </DialogContent>
     </Dialog>
-  );
+  )
 }

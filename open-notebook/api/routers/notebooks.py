@@ -17,45 +17,73 @@ from open_notebook.exceptions import InvalidInputError
 router = APIRouter()
 
 
-@router.get("/notebooks", response_model=list[NotebookResponse])
+@router.get("/notebooks", response_model=List[NotebookResponse])
 async def get_notebooks(
-    archived: bool | None = Query(None, description="Filter by archived status"),
+    archived: Optional[bool] = Query(None, description="Filter by archived status"),
     order_by: str = Query("updated desc", description="Order by field and direction"),
 ):
     """Get all notebooks with optional filtering and ordering."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
-        # Prepare filter options
-        filters = {}
-        if archived is not None:
-            filters["archived"] = archived
+        # Validate order_by against allowlist to prevent SurrealQL injection
+        allowed_fields = {"name", "created", "updated"}
+        allowed_directions = {"asc", "desc"}
 
-        result = await Notebook.get_all(order_by=order_by, filters=filters)
+        parts = order_by.strip().lower().split()
+        if len(parts) == 1:
+            if parts[0] not in allowed_fields:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Invalid order_by field: '{order_by}'. Allowed fields: {', '.join(sorted(allowed_fields))}",
+                )
+            validated_order_by = parts[0]
+        elif len(parts) == 2:
+            if parts[0] not in allowed_fields or parts[1] not in allowed_directions:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Invalid order_by: '{order_by}'. Allowed fields: {', '.join(sorted(allowed_fields))}. Allowed directions: asc, desc",
+                )
+            validated_order_by = f"{parts[0]} {parts[1]}"
+        else:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid order_by format: '{order_by}'. Expected 'field' or 'field direction'",
+            )
+
+        # Build the query with counts
+        query = f"""
+            SELECT *,
+            count(<-reference.in) as source_count,
+            count(<-artifact.in) as note_count
+            FROM notebook
+            ORDER BY {validated_order_by}
+        """
+
+        result = await repo_query(query)
+
+        # Filter by archived status if specified
+        if archived is not None:
+            result = [nb for nb in result if nb.get("archived") == archived]
 
         return [
             NotebookResponse(
-                id=str(nb.id if hasattr(nb, "id") else nb.get("id", "")),
-                name=nb.name if hasattr(nb, "name") else nb.get("name", ""),
-                description=(nb.description if hasattr(nb, "description") else nb.get("description", "")),
-                archived=(nb.archived if hasattr(nb, "archived") else nb.get("archived", False)),
-                created=str(nb.created if hasattr(nb, "created") else nb.get("created", "")),
-                updated=str(nb.updated if hasattr(nb, "updated") else nb.get("updated", "")),
-                source_count=(nb.source_count if hasattr(nb, "source_count") else nb.get("source_count", 0)),
-                note_count=(nb.note_count if hasattr(nb, "note_count") else nb.get("note_count", 0)),
+                id=str(nb.get("id", "")),
+                name=nb.get("name", ""),
+                description=nb.get("description", ""),
+                archived=nb.get("archived", False),
+                created=str(nb.get("created", "")),
+                updated=str(nb.get("updated", "")),
+                source_count=nb.get("source_count", 0),
+                note_count=nb.get("note_count", 0),
             )
             for nb in result
         ]
+    except HTTPException:
+        raise
     except Exception as e:
-        logger.error(f"Error fetching notebooks: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching notebooks: {e!s}")
+        logger.error(f"Error fetching notebooks: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error fetching notebooks: {str(e)}"
+        )
 
 
 @router.post("/notebooks", response_model=NotebookResponse)
@@ -81,11 +109,15 @@ async def create_notebook(notebook: NotebookCreate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error creating notebook: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error creating notebook: {e!s}")
+        logger.error(f"Error creating notebook: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error creating notebook: {str(e)}"
+        )
 
 
-@router.get("/notebooks/{notebook_id}/delete-preview", response_model=NotebookDeletePreview)
+@router.get(
+    "/notebooks/{notebook_id}/delete-preview", response_model=NotebookDeletePreview
+)
 async def get_notebook_delete_preview(notebook_id: str):
     """Get a preview of what will be deleted when this notebook is deleted."""
     try:
@@ -108,7 +140,7 @@ async def get_notebook_delete_preview(notebook_id: str):
         logger.error(f"Error getting delete preview for notebook {notebook_id}: {e}")
         raise HTTPException(
             status_code=500,
-            detail=f"Error fetching notebook deletion preview: {e!s}",
+            detail=f"Error fetching notebook deletion preview: {str(e)}",
         )
 
 
@@ -142,8 +174,10 @@ async def get_notebook(notebook_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error fetching notebook {notebook_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching notebook: {e!s}")
+        logger.error(f"Error fetching notebook {notebook_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error fetching notebook: {str(e)}"
+        )
 
 
 @router.put("/notebooks/{notebook_id}", response_model=NotebookResponse)
@@ -185,6 +219,8 @@ async def update_notebook(notebook_id: str, notebook_update: NotebookUpdate):
                 source_count=nb.get("source_count", 0),
                 note_count=nb.get("note_count", 0),
             )
+
+        # Fallback if query fails
         return NotebookResponse(
             id=notebook.id or "",
             name=notebook.name,
@@ -200,8 +236,10 @@ async def update_notebook(notebook_id: str, notebook_update: NotebookUpdate):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
-        logger.error(f"Error updating notebook {notebook_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error updating notebook: {e!s}")
+        logger.error(f"Error updating notebook {notebook_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error updating notebook: {str(e)}"
+        )
 
 
 @router.post("/notebooks/{notebook_id}/sources/{source_id}")
@@ -241,8 +279,12 @@ async def add_source_to_notebook(notebook_id: str, source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error linking source {source_id} to notebook {notebook_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error linking source to notebook: {e!s}")
+        logger.error(
+            f"Error linking source {source_id} to notebook {notebook_id}: {str(e)}"
+        )
+        raise HTTPException(
+            status_code=500, detail=f"Error linking source to notebook: {str(e)}"
+        )
 
 
 @router.delete("/notebooks/{notebook_id}/sources/{source_id}")
@@ -267,8 +309,12 @@ async def remove_source_from_notebook(notebook_id: str, source_id: str):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error removing source {source_id} from notebook {notebook_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error removing source from notebook: {e!s}")
+        logger.error(
+            f"Error removing source {source_id} from notebook {notebook_id}: {str(e)}"
+        )
+        raise HTTPException(
+            status_code=500, detail=f"Error removing source from notebook: {str(e)}"
+        )
 
 
 @router.delete("/notebooks/{notebook_id}", response_model=NotebookDeleteResponse)
@@ -302,5 +348,7 @@ async def delete_notebook(
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error deleting notebook {notebook_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error deleting notebook: {e!s}")
+        logger.error(f"Error deleting notebook {notebook_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error deleting notebook: {str(e)}"
+        )

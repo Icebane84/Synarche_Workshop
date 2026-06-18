@@ -1,52 +1,29 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `LOCAL-TTS` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Local Text-to-Speech Setup
 
-# local-tts.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-LOCAL-TTS-001`          | The Sovereign ID. |
-| **Official Name** | `local-tts.md`                | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+Run text-to-speech locally for free, private podcast generation using OpenAI-compatible TTS servers.
 
 ---
 
 ## Why Local TTS?
 
-| Benefit       | Description                        |
-| ------------- | ---------------------------------- |
-| **Free**      | No per-character costs after setup |
-| **Private**   | Audio never leaves your machine    |
-| **Unlimited** | No rate limits or quotas           |
-| **Offline**   | Works without internet             |
+| Benefit | Description |
+|---------|-------------|
+| **Free** | No per-character costs after setup |
+| **Private** | Audio never leaves your machine |
+| **Unlimited** | No rate limits or quotas |
+| **Offline** | Works without internet |
 
 ---
 
 ## Quick Start with Speaches
 
 [Speaches](https://github.com/speaches-ai/speaches) is an open-source, OpenAI-compatible TTS server.
+
+> **💡 Ready-made Docker Compose files available:**
+> - **[docker-compose-speaches.yml](../../examples/docker-compose-speaches.yml)** - Speaches + Open Notebook
+> - **[docker-compose-full-local.yml](../../examples/docker-compose-full-local.yml)** - Speaches + Ollama (100% local setup)
+>
+> These include complete setup instructions and configuration examples. Just copy and run!
 
 ### Step 1: Create Docker Compose File
 
@@ -97,17 +74,21 @@ Play `test.mp3` to verify.
 
 ### Step 4: Configure Open Notebook
 
-**Docker deployment:**
+**Via Settings UI (Recommended):**
+1. Go to **Settings** → **API Keys**
+2. Click **Add Credential** → Select **OpenAI-Compatible**
+3. Enter base URL for TTS: `http://host.docker.internal:8969/v1` (Docker) or `http://localhost:8969/v1` (local)
+4. Click **Save**, then **Test Connection**
 
+**Legacy (Deprecated) — Environment variables:**
 ```yaml
 # In your Open Notebook docker-compose.yml
 environment:
   - OPENAI_COMPATIBLE_BASE_URL_TTS=http://host.docker.internal:8969/v1
 ```
 
-**Local development:**
-
 ```bash
+# Local development
 export OPENAI_COMPATIBLE_BASE_URL_TTS=http://localhost:8969/v1
 ```
 
@@ -129,26 +110,23 @@ export OPENAI_COMPATIBLE_BASE_URL_TTS=http://localhost:8969/v1
 The Kokoro model includes multiple voices:
 
 ### Female Voices
-
-| Voice ID    | Description           |
-| ----------- | --------------------- |
-| `af_bella`  | Clear, professional   |
-| `af_sarah`  | Warm, friendly        |
+| Voice ID | Description |
+|----------|-------------|
+| `af_bella` | Clear, professional |
+| `af_sarah` | Warm, friendly |
 | `af_nicole` | Energetic, expressive |
 
 ### Male Voices
-
-| Voice ID     | Description              |
-| ------------ | ------------------------ |
-| `am_adam`    | Deep, authoritative      |
+| Voice ID | Description |
+|----------|-------------|
+| `am_adam` | Deep, authoritative |
 | `am_michael` | Friendly, conversational |
 
 ### British Accents
-
-| Voice ID    | Description                  |
-| ----------- | ---------------------------- |
-| `bf_emma`   | British female, professional |
-| `bm_george` | British male, formal         |
+| Voice ID | Description |
+|----------|-------------|
+| `bf_emma` | British female, professional |
+| `bm_george` | British male, formal |
 
 ### Test Different Voices
 
@@ -197,31 +175,23 @@ volumes:
 
 ## Docker Networking
 
+When configuring your OpenAI-Compatible credential in **Settings → API Keys**, use the appropriate TTS base URL for your setup:
+
 ### Open Notebook in Docker (macOS/Windows)
 
-```bash
-OPENAI_COMPATIBLE_BASE_URL_TTS=http://host.docker.internal:8969/v1
-```
+**TTS Base URL:** `http://host.docker.internal:8969/v1`
 
 ### Open Notebook in Docker (Linux)
 
-```bash
-# Option 1: Docker bridge IP
-OPENAI_COMPATIBLE_BASE_URL_TTS=http://172.17.0.1:8969/v1
+**TTS Base URL (Option 1 — Docker bridge IP):** `http://172.17.0.1:8969/v1`
 
-# Option 2: Host networking
-docker run --network host ...
-```
+**Option 2:** Use host networking mode (`docker run --network host ...`), then use: `http://localhost:8969/v1`
 
 ### Remote Server
 
 Run Speaches on a different machine:
 
-```bash
-# On server, bind to all interfaces
-# Then in Open Notebook:
-OPENAI_COMPATIBLE_BASE_URL_TTS=http://server-ip:8969/v1
-```
+**TTS Base URL:** `http://server-ip:8969/v1` (replace with your server's IP)
 
 ---
 
@@ -289,12 +259,12 @@ docker compose exec speaches uv tool run speaches-cli model download speaches-ai
 
 ### Slow Generation
 
-| Solution     | How                           |
-| ------------ | ----------------------------- |
-| Use GPU      | Switch to `latest-cuda` image |
-| More CPU     | Allocate more cores in Docker |
-| Faster model | Use smaller/quantized models  |
-| SSD storage  | Move Docker volumes to SSD    |
+| Solution | How |
+|----------|-----|
+| Use GPU | Switch to `latest-cuda` image |
+| More CPU | Allocate more cores in Docker |
+| Faster model | Use smaller/quantized models |
+| SSD storage | Move Docker volumes to SSD |
 
 ---
 
@@ -302,12 +272,12 @@ docker compose exec speaches uv tool run speaches-cli model download speaches-ai
 
 ### Recommended Specs
 
-| Component | Minimum | Recommended                 |
-| --------- | ------- | --------------------------- |
-| CPU       | 2 cores | 4+ cores                    |
-| RAM       | 2 GB    | 4+ GB                       |
-| Storage   | 5 GB    | 10 GB (for multiple models) |
-| GPU       | None    | NVIDIA (optional)           |
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| CPU | 2 cores | 4+ cores |
+| RAM | 2 GB | 4+ GB |
+| Storage | 5 GB | 10 GB (for multiple models) |
+| GPU | None | NVIDIA (optional) |
 
 ### Resource Limits
 
@@ -329,15 +299,15 @@ docker stats speaches
 
 ## Comparison: Local vs Cloud
 
-| Aspect      | Local (Speaches)    | Cloud (OpenAI/ElevenLabs) |
-| ----------- | ------------------- | ------------------------- |
-| **Cost**    | Free                | $0.015-0.10/min           |
-| **Privacy** | Complete            | Data sent to provider     |
-| **Speed**   | Depends on hardware | Usually faster            |
-| **Quality** | Good                | Excellent                 |
-| **Setup**   | Moderate            | Simple API key            |
-| **Offline** | Yes                 | No                        |
-| **Voices**  | Limited             | Many options              |
+| Aspect | Local (Speaches) | Cloud (OpenAI/ElevenLabs) |
+|--------|------------------|---------------------------|
+| **Cost** | Free | $0.015-0.10/min |
+| **Privacy** | Complete | Data sent to provider |
+| **Speed** | Depends on hardware | Usually faster |
+| **Quality** | Good | Excellent |
+| **Setup** | Moderate | Simple API key |
+| **Offline** | Yes | No |
+| **Voices** | Limited | Many options |
 
 ### When to Use Local
 
@@ -361,21 +331,14 @@ docker stats speaches
 Any OpenAI-compatible TTS server works. The key is:
 
 1. Server implements `/v1/audio/speech` endpoint
-2. Set `OPENAI_COMPATIBLE_BASE_URL_TTS` to server URL
+2. Add an OpenAI-Compatible credential in **Settings → API Keys** with the TTS base URL
 3. Add model with provider `openai_compatible`
 
 ---
 
 ## Related
 
+- **[Local STT Setup](local-stt.md)** - Speech-to-text with Speaches
 - **[OpenAI-Compatible Providers](openai-compatible.md)** - General compatible provider setup
 - **[AI Providers](ai-providers.md)** - All provider configuration
 - **[Creating Podcasts](../3-USER-GUIDE/creating-podcasts.md)** - Using TTS for podcasts
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

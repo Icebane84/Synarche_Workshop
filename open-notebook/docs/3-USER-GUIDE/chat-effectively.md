@@ -1,35 +1,6 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CHAT-EFFECTIVELY` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Chat Effectively - Conversations with Your Research
 
-# chat-effectively.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CHAT-EFFECTIVELY-001`   | The Sovereign ID. |
-| **Official Name** | `chat-effectively.md`         | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+Chat is your main tool for exploratory questions and back-and-forth dialogue. This guide covers how to use it effectively.
 
 ---
 
@@ -46,7 +17,7 @@
 8. Repeat until satisfied
 ```
 
-That's it! But doing it _well_ requires understanding how context works.
+That's it! But doing it *well* requires understanding how context works.
 
 ---
 
@@ -57,7 +28,6 @@ Context controls **what the AI is allowed to see**. This is your most important 
 ### The Three Levels Explained
 
 **FULL CONTENT**
-
 - AI sees: Complete source text
 - Cost: 100 tokens per 1K tokens of source
 - Best for: Detailed analysis, precise citations
@@ -71,7 +41,6 @@ Result: Precise, detailed answers (higher cost)
 ```
 
 **SUMMARY ONLY**
-
 - AI sees: AI-generated 200-word summary (not full text)
 - Cost: ~10-20% of full content cost
 - Best for: Background material, reference context
@@ -85,7 +54,6 @@ Result: Faster, cheaper answers (loses precision)
 ```
 
 **NOT IN CONTEXT**
-
 - AI sees: Nothing
 - Cost: 0 tokens
 - Best for: Confidential, irrelevant, archived content
@@ -127,7 +95,6 @@ Result: No cost, no privacy risk for that source
 ### Context Strategies
 
 **Strategy 1: Minimalist**
-
 - Main source: Full Content
 - Everything else: Excluded
 - Result: Focused, cheap, precise
@@ -140,7 +107,6 @@ Use when:
 ```
 
 **Strategy 2: Comprehensive**
-
 - All sources: Full Content
 - Result: All context considered, expensive
 
@@ -152,7 +118,6 @@ Use when:
 ```
 
 **Strategy 3: Tiered**
-
 - Primary sources: Full Content
 - Secondary sources: Summary Only
 - Background/reference: Excluded
@@ -166,7 +131,6 @@ Use when:
 ```
 
 **Strategy 4: Privacy-First**
-
 - Sensitive docs: Excluded
 - Public research: Full Content
 - Result: Never send confidential data
@@ -185,7 +149,6 @@ Use when:
 ### Good Questions vs. Poor Questions
 
 **Poor Question**
-
 ```
 "What do you think?"
 
@@ -198,7 +161,6 @@ Result: Generic, shallow answer
 ```
 
 **Good Question**
-
 ```
 "Based on the paper's methodology section,
 what are the three main limitations the authors acknowledge?
@@ -216,7 +178,6 @@ Result: Precise, verifiable, useful answer
 ### Question Patterns That Work
 
 **Factual Questions**
-
 ```
 "What does the paper say about X?"
 "Who are the authors?"
@@ -226,7 +187,6 @@ Result: Simple, factual answers with citations
 ```
 
 **Analysis Questions**
-
 ```
 "How does this approach differ from the traditional method?"
 "What are the main assumptions underlying this argument?"
@@ -236,7 +196,6 @@ Result: Deeper thinking, comparison, critique
 ```
 
 **Synthesis Questions**
-
 ```
 "How do these two sources approach the problem differently?"
 "What's the common theme across all three papers?"
@@ -246,7 +205,6 @@ Result: Cross-source insights, connections
 ```
 
 **Actionable Questions**
-
 ```
 "What are the practical implications of this research?"
 "How could we apply these findings to our situation?"
@@ -280,7 +238,6 @@ Good questions have:
    "...link to the relevant section..."
 
 **Example:**
-
 ```
 Poor: "What about transformers?"
 Good: "In this research paper on machine learning,
@@ -461,7 +418,6 @@ Chat uses tokens for every response. Here's how to use efficiently:
 ### Reduce Token Usage
 
 **Minimize context**
-
 ```
 Option A: All sources, Full Content
   Cost per response: 5,000 tokens
@@ -473,7 +429,6 @@ Savings: 80% cheaper, same conversation
 ```
 
 **Shorter questions**
-
 ```
 Verbose: "Could you please analyze the methodology
          section of this paper and explain in detail
@@ -485,7 +440,6 @@ Savings: 20-30% per response
 ```
 
 **Use cheaper models**
-
 ```
 GPT-4o: $0.15 per 1M input tokens
 GPT-4o-mini: $0.03 per 1M input tokens
@@ -498,21 +452,18 @@ For deep analysis: Sonnet/Opus worth the cost
 ### Budget Strategies
 
 **Exploration budget**
-
 - Use cheap model
 - Broad context (understand landscape)
 - Short questions
 - Result: Low cost, good overview
 
 **Analysis budget**
-
 - Use powerful model
 - Focused context (main source only)
 - Detailed questions
 - Result: Higher cost, deep insights
 
 **Synthesis budget**
-
 - Use powerful model for final synthesis
 - Multiple sources (Full Content)
 - Complex comparative questions
@@ -524,22 +475,22 @@ For deep analysis: Sonnet/Opus worth the cost
 
 ### Poor Responses
 
-| Problem          | Cause                 | Solution                              |
-| ---------------- | --------------------- | ------------------------------------- |
-| Generic answers  | Vague question        | Be specific (see question patterns)   |
-| Missing context  | Not enough in context | Add sources or change to Full Content |
-| Incorrect info   | Source not in context | Add the relevant source               |
-| Hallucinating    | Model confused        | Ask for citations, verify claims      |
-| Shallow analysis | Wrong model           | Switch to more powerful model         |
+| Problem | Cause | Solution |
+|---------|-------|----------|
+| Generic answers | Vague question | Be specific (see question patterns) |
+| Missing context | Not enough in context | Add sources or change to Full Content |
+| Incorrect info | Source not in context | Add the relevant source |
+| Hallucinating | Model confused | Ask for citations, verify claims |
+| Shallow analysis | Wrong model | Switch to more powerful model |
 
 ### High Costs
 
-| Problem                | Cause                | Solution                                        |
-| ---------------------- | -------------------- | ----------------------------------------------- |
-| Expensive per response | Too much context     | Use Summary Only or exclude sources             |
-| Many follow-ups        | Exploratory chat     | Use Ask instead for single comprehensive answer |
-| Long conversations     | Keeping history      | Archive old chats, start fresh                  |
-| Large sources          | Full text in context | Use Summary Only for large documents            |
+| Problem | Cause | Solution |
+|---------|-------|----------|
+| Expensive per response | Too much context | Use Summary Only or exclude sources |
+| Many follow-ups | Exploratory chat | Use Ask instead for single comprehensive answer |
+| Long conversations | Keeping history | Archive old chats, start fresh |
+| Large sources | Full text in context | Use Summary Only for large documents |
 
 ---
 
@@ -571,7 +522,6 @@ For deep analysis: Sonnet/Opus worth the cost
 ## When to Use Chat vs. Ask
 
 **Use CHAT when:**
-
 - You want a dialogue
 - You're exploring a topic
 - You'll ask multiple related questions
@@ -579,7 +529,6 @@ For deep analysis: Sonnet/Opus worth the cost
 - You're not sure exactly what you need
 
 **Use ASK when:**
-
 - You have one specific question
 - You want a comprehensive answer
 - You want the system to auto-search
@@ -592,24 +541,14 @@ For deep analysis: Sonnet/Opus worth the cost
 
 Chat is fundamentally different from asking ChatGPT directly:
 
-| Aspect             | ChatGPT              | Open Notebook Chat                            |
-| ------------------ | -------------------- | --------------------------------------------- |
-| **Source control** | None (uses training) | You control which sources are visible         |
-| **Cost control**   | Per token            | Per token, but context is your choice         |
-| **Iteration**      | Works                | Works, with your sources changing dynamically |
-| **Citations**      | Made up often        | Tied to your sources (verifiable)             |
-| **Privacy**        | Your data to OpenAI  | Your data stays local (unless you choose)     |
+| Aspect | ChatGPT | Open Notebook Chat |
+|--------|---------|-------------------|
+| **Source control** | None (uses training) | You control which sources are visible |
+| **Cost control** | Per token | Per token, but context is your choice |
+| **Iteration** | Works | Works, with your sources changing dynamically |
+| **Citations** | Made up often | Tied to your sources (verifiable) |
+| **Privacy** | Your data to OpenAI | Your data stays local (unless you choose) |
 
 The key insight: **Chat is retrieval-augmented generation.** AI sees only what you put in context. You control the conversation and the information flow.
 
 That's why Chat is powerful for research. You're not just talking to an AI; you're having a conversation with your research itself.
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
-
-- [[adding-sources]]

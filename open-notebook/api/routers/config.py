@@ -40,7 +40,7 @@ def get_version() -> str:
         return "unknown"
 
 
-async def get_latest_version_cached(current_version: str) -> tuple[str | None, bool]:
+async def get_latest_version_cached(current_version: str) -> tuple[Optional[str], bool]:
     """
     Check for the latest version from GitHub with caching.
 
@@ -66,9 +66,13 @@ async def get_latest_version_cached(current_version: str) -> tuple[str | None, b
         logger.info("Checking for latest version from GitHub...")
 
         # Fetch latest version from GitHub with 10-second timeout
-        latest_version = await get_version_from_github_async("https://github.com/lfnovo/open-notebook", "main")
+        latest_version = await get_version_from_github_async(
+            "https://github.com/lfnovo/open-notebook", "main"
+        )
 
-        logger.info(f"Latest version from GitHub: {latest_version}, Current version: {current_version}")
+        logger.info(
+            f"Latest version from GitHub: {latest_version}, Current version: {current_version}"
+        )
 
         # Compare versions
         has_update = compare_versions(current_version, latest_version) < 0
@@ -108,7 +112,7 @@ async def check_database_health() -> dict:
         if result:
             return {"status": "online"}
         return {"status": "offline", "error": "Empty result"}
-    except TimeoutError:
+    except asyncio.TimeoutError:
         logger.warning("Database health check timed out after 2 seconds")
         return {"status": "offline", "error": "Health check timeout"}
     except Exception as e:

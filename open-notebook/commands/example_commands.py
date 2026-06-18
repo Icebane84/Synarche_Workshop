@@ -10,34 +10,34 @@ from surreal_commands import command
 class TextProcessingInput(BaseModel):
     text: str
     operation: str = "uppercase"  # uppercase, lowercase, word_count, reverse
-    delay_seconds: int | None = None  # For testing async behavior
+    delay_seconds: Optional[int] = None  # For testing async behavior
 
 
 class TextProcessingOutput(BaseModel):
     success: bool
     original_text: str
-    processed_text: str | None = None
-    word_count: int | None = None
+    processed_text: Optional[str] = None
+    word_count: Optional[int] = None
     processing_time: float
-    error_message: str | None = None
+    error_message: Optional[str] = None
 
 
 class DataAnalysisInput(BaseModel):
-    numbers: list[float]
+    numbers: List[float]
     analysis_type: str = "basic"  # basic, detailed
-    delay_seconds: int | None = None
+    delay_seconds: Optional[int] = None
 
 
 class DataAnalysisOutput(BaseModel):
     success: bool
     analysis_type: str
     count: int
-    sum: float | None = None
-    average: float | None = None
-    min_value: float | None = None
-    max_value: float | None = None
+    sum: Optional[float] = None
+    average: Optional[float] = None
+    min_value: Optional[float] = None
+    max_value: Optional[float] = None
     processing_time: float
-    error_message: str | None = None
+    error_message: Optional[str] = None
 
 
 @command("process_text", app="open_notebook")
@@ -46,15 +46,6 @@ async def process_text_command(input_data: TextProcessingInput) -> TextProcessin
     Example command for text processing. Tests basic command functionality
     and demonstrates different processing types.
     """
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     start_time = time.time()
 
     try:
@@ -109,7 +100,9 @@ async def analyze_data_command(input_data: DataAnalysisInput) -> DataAnalysisOut
     start_time = time.time()
 
     try:
-        logger.info(f"Analyzing {len(input_data.numbers)} numbers with {input_data.analysis_type} analysis")
+        logger.info(
+            f"Analyzing {len(input_data.numbers)} numbers with {input_data.analysis_type} analysis"
+        )
 
         # Simulate processing delay if specified
         if input_data.delay_seconds:
@@ -147,17 +140,3 @@ async def analyze_data_command(input_data: DataAnalysisInput) -> DataAnalysisOut
             processing_time=processing_time,
             error_message=str(e),
         )
-
-
-# Add debugging to confirm commands are registered
-logger.info("✅ Commands registered: process_text and analyze_data")
-logger.info("=== FINISHED IMPORTING example_commands.py ===")
-
-# Let's also verify what the registry contains
-try:
-    from surreal_commands import registry
-
-    commands = registry.list_commands()
-    logger.info(f"Registry after import: {commands}")
-except Exception as e:
-    logger.error(f"Error checking registry: {e}")

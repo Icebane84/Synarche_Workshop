@@ -12,15 +12,6 @@ router = APIRouter()
 @router.post("/embed", response_model=EmbedResponse)
 async def embed_content(embed_request: EmbedRequest):
     """Embed content for vector search."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         # Check if embedding model is available
         if not await model_manager.get_embedding_model():
@@ -34,7 +25,9 @@ async def embed_content(embed_request: EmbedRequest):
 
         # Validate item type
         if item_type not in ["source", "note"]:
-            raise HTTPException(status_code=400, detail="Item type must be either 'source' or 'note'")
+            raise HTTPException(
+                status_code=400, detail="Item type must be either 'source' or 'note'"
+            )
 
         # Branch based on processing mode
         if embed_request.async_processing:
@@ -43,7 +36,7 @@ async def embed_content(embed_request: EmbedRequest):
 
             try:
                 # Import commands to ensure they're registered
-                import commands.embedding_commands
+                import commands.embedding_commands  # noqa: F401
 
                 # Submit type-specific command
                 if item_type == "source":
@@ -71,7 +64,9 @@ async def embed_content(embed_request: EmbedRequest):
 
             except Exception as e:
                 logger.error(f"Failed to submit async embedding command: {e}")
-                raise HTTPException(status_code=500, detail=f"Failed to queue embedding: {e!s}")
+                raise HTTPException(
+                    status_code=500, detail=f"Failed to queue embedding: {str(e)}"
+                )
 
         else:
             # DOMAIN MODEL PATH: Submit job via domain model convenience methods
@@ -110,5 +105,9 @@ async def embed_content(embed_request: EmbedRequest):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Error embedding {embed_request.item_type} {embed_request.item_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error embedding content: {e!s}")
+        logger.error(
+            f"Error embedding {embed_request.item_type} {embed_request.item_id}: {str(e)}"
+        )
+        raise HTTPException(
+            status_code=500, detail=f"Error embedding content: {str(e)}"
+        )

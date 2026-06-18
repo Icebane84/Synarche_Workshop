@@ -3,10 +3,13 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from loguru import logger
 
 from open_notebook.ai.models import model_manager
+from open_notebook.exceptions import ConfigurationError
 from open_notebook.utils import token_count
 
 
-async def provision_langchain_model(content, model_id, default_type, **kwargs) -> BaseChatModel:
+async def provision_langchain_model(
+    content, model_id, default_type, **kwargs
+) -> BaseChatModel:
     """
     Returns the best model to use based on the context size and on whether there is a specific model being requested in Config.
     If context > 105_000, returns the large_context_model
@@ -19,7 +22,9 @@ async def provision_langchain_model(content, model_id, default_type, **kwargs) -
 
     if tokens > 105_000:
         selection_reason = f"large_context (content has {tokens} tokens)"
-        logger.debug(f"Using large context model because the content has {tokens} tokens")
+        logger.debug(
+            f"Using large context model because the content has {tokens} tokens"
+        )
         model = await model_manager.get_default_model("large_context", **kwargs)
     elif model_id:
         selection_reason = f"explicit model_id={model_id}"
@@ -37,7 +42,7 @@ async def provision_langchain_model(content, model_id, default_type, **kwargs) -
             f"model_id={model_id}, default_type={default_type}. "
             f"Please check Settings → Models and ensure a default model is configured for '{default_type}'."
         )
-        raise ValueError(
+        raise ConfigurationError(
             f"No model configured for {selection_reason}. "
             f"Please go to Settings → Models and configure a default model for '{default_type}'."
         )
@@ -48,7 +53,7 @@ async def provision_langchain_model(content, model_id, default_type, **kwargs) -
             f"Selection reason: {selection_reason}. "
             f"model_id={model_id}, default_type={default_type}."
         )
-        raise ValueError(
+        raise ConfigurationError(
             f"Model is not a LanguageModel: {model}. "
             f"Please check that the model configured for '{default_type}' is a language model, not an embedding or speech model."
         )
