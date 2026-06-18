@@ -86,6 +86,7 @@ lint:
         - "**/*.jsx"
         - "**/*.json"
         - "**/*.jsonc"
+        - "**/*.md"
         # Biome handles TS/JS/JSON; Prettier is only for HTML, CSS, YAML, Markdown
     - linters: [biome]
       paths:

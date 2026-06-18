@@ -99,8 +99,9 @@
     },
     "[markdown]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.tabSize": 2,
+      "editor.tabSize": 4,
       "editor.insertSpaces": true,
+      "editor.formatOnSave": false
     },
 
     "markdownlint.config": {
@@ -118,7 +119,7 @@
     "cSpell.customDictionaries": {
       "Phoenix Dictionary": {
         "name": "Phoenix Dictionary",
-        "path": "${workspaceFolder:📂 WORKSPACE ROOT}",
+        "path": "${workspaceFolder:📂 WORKSPACE ROOT}/.vscode/phoenix-words.txt",
         "addWords": true,
         "description": "Master dictionary for the Phoenix Protocol",
       },

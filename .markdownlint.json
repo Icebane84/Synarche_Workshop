@@ -1,0 +1,10 @@
+{
+  "extends": "./axion-core/standards/.markdownlint.json",
+  "MD013": false,
+  "MD043": false,
+  "PF003": false,
+  "PF021": false,
+  "PF023": false,
+  "PF024": false,
+  "PF028": false
+}
