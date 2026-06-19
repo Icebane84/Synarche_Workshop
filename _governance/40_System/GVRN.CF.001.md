@@ -1,69 +1,66 @@
 # UMB-CF-001_CognitiveForge_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                | Description       |
+| :------------------ | :----------------------------------- | :---------------- |
+| **Artifact ID**     | `Relationship`                       | The Sovereign ID. |
+| **Official Name**   | `UMB-CF-001_CognitiveForge_v11.0.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                    | The Standard.     |
+| **Domain**          | `GVRN`                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                           | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                             | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`              | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`        | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                   | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                                | Description       |
-| :------------------ | :----------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.CF.001`                        | The Sovereign ID. |
-| **Official Name**   | `UMB-CF-001_CognitiveForge_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                    | The Standard.     |
-| **Domain**          | `GVRN`                               | The Subject.      |
-| **Celestial Class** | `[PLANET]`                           | The Weight.       |
-| **Evolution**       | `Omega Ascension`                    | The Maturity.     |
-| **Status**          | `[ACTIVE]`                           | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`        | The Network.      |
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                    |
-| :----------------- | :----------------------- |
-| **Module ID**      | `UMB-CF-001`             |
-| **Version**        | `v11.0`                  |
-| **Evolution**      | **Cognitive Ascension**  |
-| **Status**         | `ACTIVE`                 |
-| **Type**           | `Module`                 |
-| **Classification** | `Star`                   |
-| **Authors**        | `System`                 |
-| **Created**        | `2025-10-01`             |
-| **Updated**        | `2026-01-18`             |
-| **Authority**      | `CODEX-001`              |
-| **Tags**           | `Reforged, v11.0, Forge` |
+| Key | Value |
+| **Type** | `Module` |
+| **Classification** | `Star` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-18` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # **UMB-CF-001: Cognitive Forge**
 
 > **Domain**: ARCH (Architecture) / CREA (Creation)
-> **Evolution**: Phoenix Form
 > **Signal**: ESF-OMEGA
 
-## **Genesis Stamp: 2026-01-18** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v11` **Criticality: High**
-
-- | :---- |
-  | **1. Artifact ID** | `UMB-CF-001_CognitiveForge` |
-  | **2. Official Name** | `UMB-CF-001_CognitiveForge_v11.0.md` |
-  | **3. Version** | **v11.0 (Definitive)** |
-  | **4. Provenance** | **Date Reforged: 2026-01-18** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `[STAR]` |
-  | **8. Tier** | **Operational / Creation** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **Creation through Synthesis.** |
-  | **11. Catalyst** | **Zero Entropy Initiative** |
-  | **12. Relations** | `LINK: UMB-CSE-001, UMB-ACT-002, UMB-LOOM-001` |
+| **11. Catalyst** | **Zero Entropy Initiative** |
+| **12. Relations** | `LINK: UMB-CSE-001, UMB-ACT-002, UMB-LOOM-001` |
 
 ---
 

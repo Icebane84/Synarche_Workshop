@@ -52,16 +52,14 @@ artifact_anchor:
       </section>
 
       <nav class="chart-navigation">
-        <button class="nav-item active" data-view="achievements">
-          ACHIEVEMENTS
-        </button>
-        <button class="nav-item" data-view="skills">SKILL TREE</button>
-        <button class="nav-item" data-view="lore">LORE</button>
+        <button class="nav-item active" data-view="achievements">CANONS</button>
+        <button class="nav-item" data-view="skills">AXIOMS</button>
+        <button class="nav-item" data-view="lore">CODEX</button>
       </nav>
 
       <main id="view-content">
+        <!-- Achievements View -->
         <div class="achievement-list" id="achievement-list">
-          <!-- Dynamic Achievements Injected Here -->
           <div class="achievement-item locked">
             <div class="achievement-info">
               <div class="achievement-name">GENESIS SEED</div>
@@ -70,6 +68,101 @@ artifact_anchor:
               </div>
             </div>
             <div class="achievement-reward">+500 Stardust</div>
+          </div>
+        </div>
+
+        <!-- Skills View -->
+        <div class="skills-grid" id="skills-view" style="display: none">
+          <!-- Coherence Card -->
+          <div class="skill-card" data-stat="coherence_index">
+            <div class="skill-header">
+              <div class="skill-name">COHERENCE INDEX</div>
+              <div class="skill-value" id="val-coherence_index">1.00</div>
+            </div>
+            <p class="skill-desc">
+              Governs structural integrity, alignment precision, and schema
+              enforcement reliability.
+            </p>
+            <div class="skill-action">
+              <button
+                class="btn-invest"
+                data-stat="coherence_index"
+                data-amount="100"
+              >
+                ✦ Invest 100
+              </button>
+            </div>
+          </div>
+
+          <!-- Synergy Card -->
+          <div class="skill-card" data-stat="synergy">
+            <div class="skill-header">
+              <div class="skill-name">SYNERGY</div>
+              <div class="skill-value" id="val-synergy">1.00</div>
+            </div>
+            <p class="skill-desc">
+              Amplifies cross-module interactions and speeds up OSLM pathfinding
+              efficiency.
+            </p>
+            <div class="skill-action">
+              <button class="btn-invest" data-stat="synergy" data-amount="100">
+                ✦ Invest 100
+              </button>
+            </div>
+          </div>
+
+          <!-- Adaptability Card -->
+          <div class="skill-card" data-stat="adaptability">
+            <div class="skill-header">
+              <div class="skill-name">ADAPTABILITY</div>
+              <div class="skill-value" id="val-adaptability">1.00</div>
+            </div>
+            <p class="skill-desc">
+              Improves tolerance for layout changes, fallback paths, and dynamic
+              model sizing.
+            </p>
+            <div class="skill-action">
+              <button
+                class="btn-invest"
+                data-stat="adaptability"
+                data-amount="100"
+              >
+                ✦ Invest 100
+              </button>
+            </div>
+          </div>
+
+          <!-- Transparency Card -->
+          <div class="skill-card" data-stat="transparency">
+            <div class="skill-header">
+              <div class="skill-name">TRANSPARENCY</div>
+              <div class="skill-value" id="val-transparency">1.00</div>
+            </div>
+            <p class="skill-desc">
+              Increases auditability, log clarity, and system state
+              explanations.
+            </p>
+            <div class="skill-action">
+              <button
+                class="btn-invest"
+                data-stat="transparency"
+                data-amount="100"
+              >
+                ✦ Invest 100
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lore View -->
+        <div class="lore-view" id="lore-view" style="display: none">
+          <div class="lore-container">
+            <div class="lore-title">CODEX LOGS</div>
+            <p class="lore-desc">
+              Synarchic Core Database is locked. Standard logs and compliance
+              specifications are active.
+            </p>
+            <div class="lore-status">ZERO ENTROPY STATE CONFIRMED</div>
           </div>
         </div>
       </main>

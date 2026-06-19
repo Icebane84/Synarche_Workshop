@@ -1,67 +1,64 @@
 # AOP-LCA-001_AOP-LCA-001LuminousCoherenceAestheticProtocol_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                                | Description       |
 | :------------------ | :------------------------------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.LCA.001`                                                       | The Sovereign ID. |
 | **Official Name**   | `AOP-LCA-001_AOP-LCA-001LuminousCoherenceAestheticProtocol_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                                    | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                                    | The Standard.     |
 | **Domain**          | `GVRN`                                                               | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                                           | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                                    | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                           | The Lifecycle.    |
+| **Evolution**       | `Cognitive Ascension`                                                | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                             | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                              | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                        | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                   | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `AOP-LCA-001`           |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
-| **Type**           | `Protocol`              |
-| **Classification** | `Moon`                  |
-| **Authors**        | `System`                |
-| **Created**        | `2025-10-01`            |
-| **Updated**        | `2026-01-17`            |
-| **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
+| Key | Value |
+| **Type** | `Protocol` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-17` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # **AOP-LCA-001: Luminous Coherence Aesthetic Protocol**
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-## **Genesis Stamp: 2025-12-30** **Domain: DSGN** **State: CANONIZED** **Tags:** `OGLN_v10` `AESTHETIC` **Criticality: Standard**
-
------------------- | :------------------------------------------------- |
-| **1. Artifact ID** | `AOP-LCA-001_LuminousCoherenceAesthetic_v1.0` |
-| **2. Official Name** | `AOP-LCA-001_LuminousCoherenceAesthetic_v1.0.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Genesis Stamp: 2025-12-30** |
-| **5. Domain** | `DSGN` (Design & User Experience) |
-| **6. Evolution** | **Purposeful Drive** |
-| **7. Celestial Class** | `[STAR]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Harmony of Void and Light** |
 | **11. Catalyst** | **UMB-TFE-001 (The Architect's Forge) Initiation** |
 | **12. Relations** | `UMB-TFE-001`, `UMB-PRS-001`, `UMB-SGM-001` |
 

@@ -1,14 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SOV.PLAY.Execution` | The Sovereign ID. |
-| **Official Name** | `execution-playbook.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SOV` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                | Description       |
+| :---------------- | :----------------------------------- | :---------------- |
+| **Artifact ID**   | `SOV.PLAY.Execution`                 | The Sovereign ID. |
+| **Official Name** | `execution-playbook.md`              | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                    | The Standard.     |
+| **Domain**        | `SOV`                                | The Subject.      |
+| **Status**        | `[ACTIVE]`                           | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: GVRN.ACT.MasterRefactor` | The Network.      |
-
 
 ---
 

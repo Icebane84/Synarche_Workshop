@@ -95,7 +95,7 @@
       "editor.defaultFormatter": "biomejs.biome",
     },
     "[jsonc]": {
-      "editor.defaultFormatter": "trunk.io",
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[markdown]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode",

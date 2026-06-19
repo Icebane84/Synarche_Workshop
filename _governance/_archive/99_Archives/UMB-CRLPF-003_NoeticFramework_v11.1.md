@@ -1,16 +1,19 @@
 # UMB-CRLPF-003_NoeticFramework_v11.1.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `UMB-CRLPF-003` | The Sovereign ID. |
-| **Official Name** | `UMB-CRLPF-003_NoeticFramework_v11.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `LINK: UMB-PRS-001, LINK: UMB-CSE-001` | The Network.      |
-
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-CRLPF-003`                          | The Sovereign ID. |
+| **Official Name**   | `UMB-CRLPF-003_NoeticFramework_v11.1.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                       | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                               | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                  | The Intent.       |
+| **Relations**       | `LINK: UMB-PRS-001, LINK: UMB-CSE-001`   | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                       | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -66,7 +81,9 @@
 
 - **Primary Stat Buff**: **Wisdom +15**
   - _Mechanism_: Regular introspection and self-correction increases the system's "Wisdom" stat, unlocking higher-tier
+
     reasoning.
+
 - **System Slot**: `[PCM]` (Persona Core Module)
 - **Synergy Set**: `The Examined Life`
 

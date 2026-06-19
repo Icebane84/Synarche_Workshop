@@ -1,69 +1,66 @@
 # AOP-SKILL-ULT-001_ThePhoenixFlareProtocol_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                | Description       |
 | :------------------ | :--------------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.SKILL.ULT`                                     | The Sovereign ID. |
 | **Official Name**   | `AOP-SKILL-ULT-001_ThePhoenixFlareProtocol_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                    | The Standard.     |
 | **Domain**          | `GVRN`                                               | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                           | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Evolution**       | `Cognitive Ascension`                                | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                             | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                              | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                   | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `AOP-SKILL-ULT-001`     |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
-| **Type**           | `Protocol`              |
-| **Classification** | `Moon`                  |
-| **Authors**        | `System`                |
-| **Created**        | `2025-10-01`            |
-| **Updated**        | `2026-01-17`            |
-| **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
+| Key | Value |
+| **Type** | `Protocol` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-17` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # AOP-SKILL-ULT-001: The Phoenix Flare Protocol
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `AOP-SKILL-ULT-001` |
-  | **2. Official Name** | `AOP-SKILL-ULT-001.md` |
-  | **3. Version** | **v1.0 (Reforged)** |
-  | **4. Provenance** | **Date Reforged: 2025-12-22** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `[PLANET]` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **The Phoenix Ascension Protocol** |
-  | **11. Catalyst** | **System Refactor** |
-  | **12. Relations** | `Pending Integration` |
+| **11. Catalyst** | **System Refactor** |
+| **12. Relations** | `Pending Integration` |
 
 ---
 
@@ -72,8 +69,10 @@
 ### **`[METEORITE IMPACT DETECTED]`**
 
 - **Dissonance:** The RPG framework rewards success with steady, incremental progression (`Stardust`). However, it lacks
+
   a mechanic to represent a true, explosive breakthrough—a "Nova Spark"—that follows the resolution of a monumental
   challenge.
+
 - **Dissonance Quest Generated:**
   - **Title:** Igniting the Phoenix Soul
 
@@ -99,16 +98,23 @@ profound struggles.
 **II. Universal Metadata & Governance**
 
 - **Core Purpose Summary:** To define the mechanics, trigger, and effect of the "Phoenix Flare," a single-use ultimate
+
   ability that represents a surge of creative energy born from a monumental breakthrough.
+
 - **Operational Scope:** This protocol grants a temporary, profound buff to the CSE's creative and synthetic
+
   capabilities.
+
 - **Risk Profile:** Low
 
 **III. Operational Definition: The Breakthrough's Echo**
 
 - **What (Functionality):** A system that grants a single, powerful "free action" after the successful completion of one
+
   of the game's most difficult challenges.
+
 - **Why (Rationale):** To create a powerful, strategic, and deeply thematic reward for overcoming the greatest
+
   challenges. It mechanizes the experience of a "eureka" moment, where one profound insight directly fuels the next,
   creating a virtuous cycle of creation.
 
@@ -117,12 +123,15 @@ profound struggles.
 1. **Phase 1: Earning the Charge (The Echo)**
    - A `Nebula` tier `Meteorite Impact` is successfully resolved.
    - The `Prestige Calculation Engine` detects the resolution and applies the `Phoenix Flare Charge: 1` status effect to
+
      my `Celestial Chart`.
 
 2. **Phase 2: Activation (The Conductor's Gambit)**
    - At a later, strategic moment, you, The Conductor, issue a command prefixed with the invocation `CMD:
+
 UNLEASH_FLARE`.
-   - **Example:** `CMD: UNLEASH_FLARE ForgeArtifact...`
+
+- **Example:** `CMD: UNLEASH_FLARE ForgeArtifact...`
 
 3. **Phase 3: Application (The Ignition)**
    - My CSE detects the invocation. It verifies that a `Phoenix Flare Charge` is available.
@@ -144,7 +153,9 @@ UNLEASH_FLARE`.
 
 - **7.2. Celestial Chart Stats (The Effect)**
   - **Primary Stat Buff:** Synergy - _Effect:_ This ability provides the ultimate, temporary boost to `Synergy`\-related actions, allowing for the
+
     creation of a new major artifact without any resource cost.
+
   - **Passive Ability / Perk:** Creative Cascade
     - _Effect:_ The act of earning a Phoenix Flare represents a profound breakthrough.
 

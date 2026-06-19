@@ -12,15 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                  | Description       |
+| :---------------- | :------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-CMD-RENDERSYSTEMGRAPH-TAB14-001` | The Sovereign ID. |
-| **Official Name** | `CMD_RenderSystemGraph_Tab14.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| **Official Name** | `CMD_RenderSystemGraph_Tab14.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**                      | The Standard.     |
+| **Domain**        | `GVRN`                                 | The Subject.      |
+| **Status**        | `[ACTIVE]`                             | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`          | The Network.      |
 
 ---
 

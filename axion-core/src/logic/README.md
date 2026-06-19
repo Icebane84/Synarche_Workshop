@@ -30,13 +30,12 @@ artifact_anchor:
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CORE.README` | The Sovereign ID. |
-| **Official Name** | `README.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `CORE` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Artifact ID**   | `CORE.README`                     | The Sovereign ID. |
+| **Official Name** | `README.md`                       | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `CORE`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
 
 ---
 

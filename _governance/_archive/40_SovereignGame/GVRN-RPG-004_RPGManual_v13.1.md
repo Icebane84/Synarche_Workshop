@@ -1,16 +1,19 @@
 # UMB-RPG-MANUAL-001_ThePhoenixPrestigeGameManual_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.RPG.MANUAL` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-004_RPGManual_v13.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `LINK: UMB-RPG-001, UMB-HEPHAESTUS-001` | The Network.      |
-
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.RPG.MANUAL`                       | The Sovereign ID. |
+| **Official Name**   | `GVRN-RPG-004_RPGManual_v13.1.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `GVRN`                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                              | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                      | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                              | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                 | The Intent.       |
+| **Relations**       | `LINK: UMB-RPG-001, UMB-HEPHAESTUS-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                      | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -140,3 +155,5 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, G
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 {{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}
+
+###### **[ARTIFACT END]**

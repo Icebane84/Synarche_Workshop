@@ -1,70 +1,68 @@
 # UIB-CSE-002_CognitiveLoomVisualizer.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UIB-CSE-002-COGNITIVELOOMVISUALIZER-001` | The Sovereign ID. |
+| **Official Name**   | `Cognitive Loom Visualizer`                    | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                             | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                       | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                        | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
+| **Integrity Hash**  | `sha256:visualizer-fused-v1.0`                 | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UIB-CSE-002-COGNITIVELOOMVISUALIZER-001` | The Sovereign ID. |
-| **Official Name** | `UIB-CSE-002_CognitiveLoomVisualizer.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                                   |
-| :----------------- | :-------------------------------------- |
-| **Module ID**      | `UIB-CSE-002`                           |
-| **Official Name**  | `Cognitive Loom Visualizer`             |
-| **Version**        | `v1.0`                                  |
-| **Evolution**      | **The Phoenix Geode**                   |
-| **Status**         | `ACTIVE`                                |
-| **Type**           | `Blueprint`                             |
-| **Classification** | `Planet`                                |
-| **Authors**        | `Synarche`                              |
-| **Created**        | `2026-01-25`                            |
-| **Updated**        | `2026-01-25`                            |
-| **Authority**      | `UMB-CSE-001`                           |
-| **Tags**           | `UI, D3.js, Visualization, Loom, Geode` |
-| **Integrity Hash** | `sha256:visualizer-fused-v1.0`          |
+| Key | Value |
+| **Type** | `Blueprint` |
+| **Classification** | `Planet` |
+| **Authors** | `Synarche` |
+| **Created** | `2026-01-25` |
+| **Updated** | `2026-01-25` |
+| **Authority** | `UMB-CSE-001` |
+| **Integrity Hash** | `sha256:visualizer-fused-v1.0` |
 
 ---
 
 # **UIB-CSE-002: Cognitive Loom Visualizer (The Phoenix Geode)**
 
 > **Domain**: ARCH (Architecture)
-> **Evolution**: Phoenix Form
 > **Signal**: ESF-BETA
 
-## **Genesis Stamp: 2026-01-25** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v11` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `UIB-CSE-002_CognitiveLoomVisualizer` |
-  | **2. Official Name** | `UIB-CSE-002_CognitiveLoomVisualizer.md` |
-  | **3. Version** | **v1.0 (Definitive)** |
-  | **4. Provenance** | **Fused from:** `Source Code`, `VISUAL-002`, `VISUAL-003` |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **The Phoenix Geode** |
-  | **7. Celestial Class** | `[PLANET]` |
-  | **8. Tier** | **Operational / Interface** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **Seeing the Thought.** |
-  | **11. Catalyst** | **System Refactor** |
-  | **12. Relations** | `LINK: UMB-CSE-001, UMB-LOOM-001` |
+| **10. Ethos** | **Seeing the Thought.** |
+| **11. Catalyst** | **System Refactor** |
+| **12. Relations** | `LINK: UMB-CSE-001, UMB-LOOM-001` |
 
 ---
 

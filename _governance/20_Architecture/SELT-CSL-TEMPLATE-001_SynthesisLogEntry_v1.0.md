@@ -1,27 +1,44 @@
 # SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                   | Description       |
 | :------------------ | :------------------------------------------------------ | :---------------- |
 | **Artifact ID**     | `GVRN-SELT-CSL-TEMPLATE-001-SYNTHESISLOGENTRY-V1.0-001` | The Sovereign ID. |
 | **Official Name**   | `SELT-CSL-TEMPLATE-001_SynthesisLogEntry_v1.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                       | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                       | The Standard.     |
 | **Domain**          | `GVRN`                                                  | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                              | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                       | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                                      | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                 | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                      | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ---
 
@@ -30,16 +47,20 @@ Title: Synthesis Log Entry Template
 Source:
 
 - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md)
+
   Description: >
   Standardized JSON/Markdown template for CSL Entries (Memory Atoms).
   Version: 1.0
   Status: CANONIZED
   Compliance: OGLN v11.0
   Genesis:
+
 - Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769338850
+
   Tags:
+
 - #Template
 - #CSL
 - #SELT
@@ -48,17 +69,14 @@ Source:
 ---
 
 > [!IMPORTANT]
-> **GENESIS STAMP**
 >
 > - **Forged By:** Antigravity Agent (The Lightbinder)
 > - **Forged Date:** 2026-01-25
 > - **Validation:** CSL Integration Phase 4 (Standardization).
-> - **Relations:** `FORMATS_OUTPUT_OF: GUCA-CSL-COMMAND-001`.
 
 # SELT-CSL-TEMPLATE-001: Synthesis Log Entry Template
 
 > **Domain**: RES (Result)
-> **Evolution**: Cognitive Ascension
 > **Signal**: ESF-STANDARD
 
 ## I. JSON Structure (Machine Readable)
@@ -123,3 +141,5 @@ Source:
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

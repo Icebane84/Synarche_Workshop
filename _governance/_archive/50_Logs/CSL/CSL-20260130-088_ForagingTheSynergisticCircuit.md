@@ -1,16 +1,19 @@
 # CSL-20260130-088_ForagingTheSynergisticCircuit.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CSL-20260130-088-FORAGINGTHESYNERGISTICCIRCUIT-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20260130-088_ForagingTheSynergisticCircuit.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                                     | Description       |
+| :------------------ | :-------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-20260130-088-FORAGINGTHESYNERGISTICCIRCUIT-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-20260130-088_ForagingTheSynergisticCircuit.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                        | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                   | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                        | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -61,22 +76,32 @@ without explicit relational anchoring. Furthermore, the linting ecosystem across
 By forging a **Synergistic Circuit**, we have transitioned from a collection of parts to a functional self-healing loop.
 
 1. **The SOT Loop**: `UMB-SOT-001` now explicitly **CONSULTS** the Matrix, **VERIFIES** availability via
+
    `initialize_matrix`, and **TRIGGERS** the Knight. This loop is metadata-anchored in the new **Definitive 13-Point
    Header**.
+
 2. **The Triple-Node Logic**: `.markdownlint.cjs` (`GVRN-LINT-001`), `cspell.json` (`GVRN-DICT-001`), and
+
    `axion-rules.cjs` (`UMB-RULES-001`) have been fused into a bidirectional trinity. The Dictionary declares, the Rules
    define, and the Linter enforces.
+
 3. **Topological Coherence**: Moving these "Standards Guards" to the **Project Root** of `axion-core` ensures
+
    auto-discovery by both IDE and CLI tools, reinforcing the principle that "Governance resides at the center of the
    Workspace."
 
 ### 3. Implications & Next Steps
 
 - **Impact**: The "Integrity Hash" in the 13-point header is now the standard for all core library artifacts, enabling
+
   future automated verification of provenance.
+
 - **Action**: Deprecate and archive the legacy configuration files in `_Desktop_Vault` to eliminate duplicate
+
   dissonance.
+
 - **Vision**: The "Crystalline Galaxy" visualization can now render these links as solid "Relational Bridges" rather
+
   than dotted "Inferred Connections."
 
 ---

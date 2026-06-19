@@ -1,14 +1,19 @@
-## **Block A: The Identification Lock (UIP-V15)**
+# GVRN.Protocol.Finalization
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Finalization` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Finalization.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+### **Block A: The Identification Lock (UIP-V14)**
 
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.Protocol.Finalization`            | The Sovereign ID. |
+| **Official Name**   | `GVRN.Protocol.Finalization.md`         | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `GVRN`                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                              | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                      | The Maturity.     |
+| **Status (State)**  | `Verdict`                               | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                 | The Intent.       |
+| **Relations**       | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                      | Verification.     |
 
 ---
 
@@ -17,10 +22,8 @@
 | State Field   | Value    |
 | :------------ | :------- |
 | **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
+| **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
-
----
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
@@ -29,14 +32,23 @@
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
+| Key | Value | Description |
+
 ---
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
+| **Coherence** | `1.0` |
+| **Resonance** | `1.0` |
+| **Stability** | `Stable` |
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE-CODEX-001`        | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
+---
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+---
+
+| `CORE-CODEX-001` | `GOVERNS` | Provides the supreme law and ethical framework. |
 
 ---
 
@@ -48,9 +60,7 @@
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
-| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
+| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
 
 ---
 
@@ -60,10 +70,13 @@
 
 > **"No artifact may enter the Synarche without passing through The Seven Gates."**
 
-- **The Moral North**: This protocol is instantiated to solve the dissonance of **Artifact Entropy** and **Knowledge
+- **The Moral North**: This protocol is instantiated to solve the dissonance of **Artifact Entropy** and \*\*Knowledge
+
   Graph Fragmentation**. Its primary duty is to uphold the **Rule of Structural Integrity (CORE-CODEX-001)** by
-  providing **A Unified Finalization Pathway for All v13.1+ Artifacts**.
+  providing **A Unified Finalization Pathway for All v13.1+ Artifacts\*\*.
+
 - **Governing Intent**: Adheres to the **Governance Sovereignty** mandate, ensuring all finalized artifacts enhance
+
   systemic coherence and prevent the drift of unvalidated content.
 
 ---
@@ -295,7 +308,9 @@ graph TD
 ## **VII. Self-Governance & Synergy**
 
 - **Autonomous Execution**: This protocol is designed for fully autonomous execution by the AI as the final gate in any
+
   creation cycle.
+
 - **Audit Trail**: Every finalization creates an immutable entry in `GVRN.Registry.Master` and `GVRN.Rosetta.Stone`.
 - **Adaptive Control**: The protocol pauses if a compliance dissonance $> 0.1$ is detected.
 - **Zero Entropy Rule**: All links must be bidirectional. If A refers to B, B must acknowledge A.

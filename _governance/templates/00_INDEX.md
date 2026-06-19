@@ -1,27 +1,19 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `00_INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# 00_INDEX.md
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                             | Description       |
 | :------------------ | :-------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-00-INDEX-001`               | The Sovereign ID. |
 | **Official Name**   | `00_INDEX.md`                     | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**                 | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                 | The Standard.     |
 | **Domain**          | `GVRN`                            | The Subject.      |
 | **Celestial Class** | `[PLANET]`                        | The Weight.       |
 | **Evolution**       | `Purposeful Drive`                | The Maturity.     |
-| **Status**          | `[ACTIVE]`                        | The Lifecycle.    |
+| **Status (State)**  | `[ACTIVE]`                        | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`           | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                | Verification.     |
 
 ---
 
@@ -39,6 +31,22 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# 00_INDEX.md
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 

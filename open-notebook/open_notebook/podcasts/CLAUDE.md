@@ -9,6 +9,7 @@ Encapsulates podcast metadata and configuration: speaker profiles (voice/persona
 ## Architecture Overview
 
 Two-tier profile system using the **model registry** for AI model references:
+
 - **SpeakerProfile**: `voice_model` (record<model> reference) + 1-4 speaker configurations (name, voice_id, backstory, personality). Per-speaker `voice_model` overrides supported.
 - **EpisodeProfile**: `outline_llm`/`transcript_llm` (record<model> references) for LLM selection, `language` field (BCP 47 locale code), segment count, briefing template.
 - **PodcastEpisode**: Generated episode record linking profiles, content, and async job.
@@ -20,11 +21,13 @@ All inherit from `ObjectModel` (SurrealDB base class with table_name and save/lo
 ### models.py
 
 #### `_resolve_model_config(model_id)` (module-level helper)
+
 - Loads a Model record by ID, resolves its credential, returns `(provider, model_name, config_dict)` tuple.
 - Used by `resolve_outline_config()`, `resolve_transcript_config()`, `resolve_tts_config()`, and per-speaker TTS overrides in `podcast_commands.py`.
 - Falls back to `provision_provider_keys()` if no credential is linked.
 
 #### SpeakerProfile
+
 - `voice_model`: Optional `record<model>` reference for TTS (replaces legacy `tts_provider`/`tts_model` strings).
 - Legacy fields `tts_provider`/`tts_model` kept as optional for migration compatibility.
 - `nullable_fields` ClassVar lists fields that may be null in the database.
@@ -35,6 +38,7 @@ All inherit from `ObjectModel` (SurrealDB base class with table_name and save/lo
 - `get_by_name()` async query by profile name.
 
 #### EpisodeProfile
+
 - `outline_llm`/`transcript_llm`: Optional `record<model>` references (replace legacy `outline_provider`/`outline_model`/`transcript_provider`/`transcript_model` strings).
 - `language`: Optional BCP 47 locale code for podcast language (e.g. `pt-BR`, `en-US`).
 - Legacy fields kept as optional for migration compatibility.
@@ -46,6 +50,7 @@ All inherit from `ObjectModel` (SurrealDB base class with table_name and save/lo
 - `get_by_name()` async query.
 
 #### PodcastEpisode
+
 - Stores episode_profile and speaker_profile as dicts (snapshots of config at generation time).
 - Optional audio_file path, transcript/outline dicts.
 - **Job tracking**: command field links to surreal-commands RecordID.

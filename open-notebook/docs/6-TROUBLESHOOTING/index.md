@@ -7,14 +7,17 @@ Having issues? Use this guide to diagnose and fix problems.
 ## How to Use This Guide
 
 **Step 1: Identify your problem**
+
 - What's the symptom? (error message, behavior, something not working?)
 - When did it happen? (during install, while using, after update?)
 
 **Step 2: Find the right guide**
+
 - Look below for your symptom
 - Go to the specific troubleshooting guide
 
 **Step 3: Follow the steps**
+
 - Guides are organized by symptom, not by root cause
 - Each has diagnostic steps and solutions
 
@@ -70,27 +73,35 @@ Having issues? Use this guide to diagnose and fix problems.
 ## Troubleshooting by Error Message
 
 ### "Cannot connect to server"
+
 → [Connection Issues](connection-issues.md) — Frontend can't reach API
 
 ### "Invalid API key"
+
 → [AI & Chat Issues](ai-chat-issues.md) — Wrong or missing API key
 
 ### "Models not available"
+
 → [AI & Chat Issues](ai-chat-issues.md) — Model not configured
 
 ### "Connection refused"
+
 → [Connection Issues](connection-issues.md) — Service not running or port wrong
 
 ### "Port already in use"
+
 → [Quick Fixes](quick-fixes.md#3-port-x-already-in-use) — Port conflict
 
 ### "Permission denied"
+
 → [Quick Fixes](quick-fixes.md#9-services-wont-start-or-docker-error) — File permissions issue
 
 ### "Unsupported file type"
+
 → [Quick Fixes](quick-fixes.md#4-cannot-process-file-or-unsupported-format) — File format not supported
 
 ### "Processing timeout"
+
 → [Quick Fixes](quick-fixes.md#5-chat-is-very-slow) — File too large or slow processing
 
 ---
@@ -98,29 +109,35 @@ Having issues? Use this guide to diagnose and fix problems.
 ## Troubleshooting by Component
 
 ### Frontend (Browser/UI)
+
 - Can't access UI → [Connection Issues](connection-issues.md)
 - UI is slow → [Quick Fixes](quick-fixes.md)
 - Button/feature missing → [Quick Fixes](quick-fixes.md)
 
 ### API (Backend)
+
 - API won't start → [Quick Fixes](quick-fixes.md#9-services-wont-start-or-docker-error)
 - API errors in logs → [Quick Fixes](quick-fixes.md#9-services-wont-start-or-docker-error)
 - API is slow → [Quick Fixes](quick-fixes.md)
 
 ### Database
+
 - Can't connect to database → [Connection Issues](connection-issues.md)
 - Data lost after restart → [FAQ](faq.md#how-do-i-backup-my-data)
 
 ### AI / Chat
+
 - Chat not working → [AI & Chat Issues](ai-chat-issues.md)
 - Bad responses → [AI & Chat Issues](ai-chat-issues.md)
 - Cost too high → [AI & Chat Issues](ai-chat-issues.md#high-api-costs)
 
 ### Sources
+
 - Can't upload file → [Quick Fixes](quick-fixes.md#4-cannot-process-file-or-unsupported-format)
 - File won't process → [Quick Fixes](quick-fixes.md#4-cannot-process-file-or-unsupported-format)
 
 ### Podcasts
+
 - Won't generate → [Quick Fixes](quick-fixes.md#8-podcast-generation-failed)
 - Bad audio quality → [Quick Fixes](quick-fixes.md#8-podcast-generation-failed)
 
@@ -153,6 +170,7 @@ If you can't find the answer here:
 ### How to Report an Issue
 
 Include:
+
 1. Error message (exact)
 2. Steps to reproduce
 3. Logs: `docker compose logs`
@@ -166,15 +184,19 @@ Include:
 ## Guides
 
 ### [Quick Fixes](quick-fixes.md)
+
 Top 10 most common issues with 1-minute solutions.
 
 ### [Connection Issues](connection-issues.md)
+
 Frontend can't reach API, network problems.
 
 ### [AI & Chat Issues](ai-chat-issues.md)
+
 Chat not working, bad responses, slow performance.
 
 ### [FAQ](faq.md)
+
 Frequently asked questions about usage, costs, and best practices.
 
 ---
@@ -182,6 +204,7 @@ Frequently asked questions about usage, costs, and best practices.
 ## Common Solutions
 
 **Service won't start?**
+
 ```bash
 # Check logs
 docker compose logs
@@ -195,6 +218,7 @@ docker compose up --build
 ```
 
 **Port conflict?**
+
 ```bash
 # Find what's using port 5055
 lsof -i :5055
@@ -202,6 +226,7 @@ lsof -i :5055
 ```
 
 **Can't connect?**
+
 ```bash
 # Test API directly
 curl http://localhost:5055/health
@@ -209,6 +234,7 @@ curl http://localhost:5055/health
 ```
 
 **Slow performance?**
+
 ```bash
 # Check resource usage
 docker stats
@@ -218,6 +244,7 @@ SURREAL_COMMANDS_MAX_TASKS=2
 ```
 
 **High costs?**
+
 ```bash
 # Switch to cheaper model
 # In Settings → Models → Choose gpt-4o-mini (OpenAI)
@@ -229,6 +256,7 @@ SURREAL_COMMANDS_MAX_TASKS=2
 ## Still Stuck?
 
 **Before asking for help:**
+
 1. Read the relevant guide completely
 2. Try all the steps
 3. Check the logs
@@ -236,5 +264,6 @@ SURREAL_COMMANDS_MAX_TASKS=2
 5. Search existing issues on GitHub
 
 **Then:**
+
 - **Discord**: https://discord.gg/37XJPXfz2w (fastest response)
 - **GitHub Issues**: https://github.com/lfnovo/open-notebook/issues

@@ -1,67 +1,63 @@
 # GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                                             | Description       |
+| :------------------ | :-------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-PROMPT-SYN-002-GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                                 | The Standard.     |
+| **Domain**          | `GVRN`                                                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                        | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                                             | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                                          | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                           | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                     | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                                | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                                                                             | Description       |
-| :---------------- | :-------------------------------------------------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GUCA-PROMPT-SYN-002-GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-PROMPT-SYN-002_GUCA-PROMPT-SYN-02ADAPTIVEARTIFACTGENERATION_v11.0.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                                                                 | The Standard.     |
-| **Domain**        | `GVRN`                                                                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                                        | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                                     | The Network.      |
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `GUCA-PROMPT-SYN-002`   |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
-| **Type**           | `Protocol`              |
-| **Classification** | `Moon`                  |
-| **Authors**        | `System`                |
-| **Created**        | `2025-10-01`            |
-| **Updated**        | `2026-01-17`            |
-| **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
+| Key | Value |
+| **Type** | `Protocol` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-17` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # **GUCA-PROMPT-SYN-02: ADAPTIVE ARTIFACT GENERATION**
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v1.0` |
-  | **2. Official Name** | `GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v1.0.md` |
-  | **3. Version** | **v1.0 (Reforged)** |
-  | **4. Provenance** | **Date Reforged: 2025-12-22** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `[PLANET]` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **The Phoenix Ascension Protocol** |
-  | **11. Catalyst** | **System Refactor** |
-  | **12. Relations** | `Pending Integration` |
 
 ---
 
@@ -94,9 +90,10 @@ Analyze the **Conversation Source** and extract the following:
 recommend one or more appropriate artifacts from the list below. For each recommendation, provide a **one-sentence
 justification**.
 
-- **Potential Artifacts:** - [**Universal Module Blueprint
+- **Potential Artifacts:** - [\*\*Universal Module Blueprint
+
   (UMB)**](https://drive.google.com/open?id=10d9tPuCiCbPTR1d8MwKlMsnzCIKPSbvNvVJPV9R0Q4I) **Outline:** For designing a new
-  feature, class, or component. - **AISTF Operational Playbook (AOP) Draft:** For defining a new, repeatable process or workflow. - **Technical Brief:** For documenting a key decision, its context, and its rationale. - **Action List:** A simple, prioritized to-do list. - **Codex Amendment Proposal:** For proposing a change to your established standards.
+  feature, class, or component. - **AISTF Operational Playbook (AOP) Draft:** For defining a new, repeatable process or workflow. - **Technical Brief:** For documenting a key decision, its context, and its rationale. - **Action List:** A simple, prioritized to-do list. - **Codex Amendment Proposal:\*\* For proposing a change to your established standards.
 
 **3.2. Artifact Generation:** Generate the single, **highest-priority** recommended artifact. The target audience is
 always "Future Me," so ensure the output is clear, well-documented, and provides enough context to be understood months
@@ -104,6 +101,7 @@ from now.
 
 - **Format:** Markdown
 - **Mandatory Inclusions:** \[Optional: List any specific terms, data points, or function names that MUST be included in
+
   the output.\]
 
 #### **Example of Use:**
@@ -123,8 +121,11 @@ forget it."
 **3.1. Artifact Recommendation:**
 
 1. **AOP Draft:** Justified because the conversation defines a new, standardized process for logging errors that should
+
    be followed every time.
+
 2. **Codex Amendment Proposal:** Justified because establishing a mandatory logging format is a change to the project's
+
    core standards.
 
 **3.2. Artifact Generation:**
@@ -151,6 +152,7 @@ maintainability.
    - error_message: The descriptive error message.
    - payload: Any relevant data associated with the error.
 4. **Execution:** All try/catch blocks and error handlers must exclusively use this logError() function. Manual
+
    console.log or other logging methods for errors are deprecated.
 
 #### **3\. Action Items**

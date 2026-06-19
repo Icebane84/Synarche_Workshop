@@ -12,6 +12,7 @@ Thank you for your interest in contributing to Open Notebook! We welcome contrib
 4. **Only then start coding** - This ensures your work aligns with the project's vision and architecture
 
 **Why this process?**
+
 - Prevents duplicate work
 - Ensures solutions align with our architecture and design principles
 - Saves your time by getting feedback before coding
@@ -65,6 +66,7 @@ Once your issue is assigned:
 ### What Makes a Good Contribution?
 
 ✅ **We love PRs that:**
+
 - Solve a real problem described in an issue
 - Follow our architecture and coding standards
 - Include tests and documentation
@@ -72,6 +74,7 @@ Once your issue is assigned:
 - Have clear commit messages
 
 ❌ **We may close PRs that:**
+
 - Don't have an associated approved issue
 - Introduce breaking changes without discussion
 - Conflict with our architectural vision
@@ -99,6 +102,7 @@ We use a **feature branch workflow**:
 ### Making Changes
 
 1. **Create a feature branch**:
+
 ```bash
 git checkout -b feature/amazing-new-feature
 ```
@@ -106,6 +110,7 @@ git checkout -b feature/amazing-new-feature
 2. **Make your changes** following our coding standards
 
 3. **Test your changes**:
+
 ```bash
 # Run tests
 uv run pytest
@@ -118,12 +123,14 @@ uv run ruff format .
 ```
 
 4. **Commit your changes**:
+
 ```bash
 git add .
 git commit -m "feat: add amazing new feature"
 ```
 
 5. **Push and create PR**:
+
 ```bash
 git push origin feature/amazing-new-feature
 # Then create a Pull Request on GitHub

@@ -1,24 +1,40 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CSL_TEMPLATE_V11_9` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `SYNG.PROT.CSLV119`             | The Sovereign ID. |
+| **Official Name**   | `CSL_TEMPLATE_v11_9.md`         | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `GVRN`                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                      | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`         | The Intent.       |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              | Verification.     |
+
 ---
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block B: State Vector (AGP-001)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.PROT.CSLV119` | The Sovereign ID. |
-| **Official Name** | `CSL_TEMPLATE_v11_9.md` | The Filename.     |
-| **Version**       | **v11.9 [OGLN]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
 
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+| Key | Value | Description |
 
 ---
 
@@ -65,3 +81,25 @@
 ---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: SYNG.PROT.CSLV119 VER: v11.9 [OGLN] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-17`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: sentinel-vigil
+        name: Sentinel Orchestrator Audit
+        entry: python axion-core/lab/sentinel_orchestrator.py . --quiet
+        language: system
+        pass_filenames: false
+        # You can set this to false if you only want to run it manually or on specific files
+        always_run: true

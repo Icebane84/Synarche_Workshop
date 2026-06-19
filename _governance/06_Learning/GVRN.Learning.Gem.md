@@ -1,11 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.LEARNING.GEM` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN.Learning.Gem`             | The Sovereign ID. |
+| **Official Name**   | `GVRN.Learning.Gem.md`          | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `GVRN`                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                      | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
+| **Status (State)**  | `[CANONIZED]`                   | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`         | The Intent.       |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # GVRN.Learning.Gem (The Muse's Insights)
@@ -14,16 +40,7 @@
 > **COGNITIVE RECORD INTEGRITY**
 > This document is an **append-only** historical record. Per `SYNG.PROT.SelfImprovement`, no lesson or entry may be deleted to make room for new insights.
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.Learning.Gem`             | The Sovereign ID. |
-| **Official Name** | `GVRN.Learning.Gem.md`          | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key | Value | Description |
 
 ---
 
@@ -71,3 +88,25 @@ High-impact facts and preferences categorized for rapid alignment.
 ---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Gem VER: v16.5 [SOVEREIGN] STATUS: CANONIZED TS: 2026-06-12 HASH: LRN-GEM-OMEGA-XL-SYNC`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

@@ -1,8 +1,7 @@
 PGC-001 — Phoenix Governance Compiler Specification
 
 PGC-001 — Phoenix Governance Compiler Specification
-(Formal Systems Spec + TLA⁺-style Structural Skeleton)
-0. Abstract
+(Formal Systems Spec + TLA⁺-style Structural Skeleton) 0. Abstract
 
 PGC-001 defines the Phoenix Governance Compiler (PGC) as a transformation layer that converts:
 
@@ -17,22 +16,22 @@ It is not a “model of intelligence.”
 It is a constraint-to-runtime compilation system for recursive governance architectures.
 
 1. System Overview
-1.1 Core Pipeline
-OGL (Law Layer)
+   1.1 Core Pipeline
+   OGL (Law Layer)
    ↓
-MGE (Interpretation + Conflict Resolution)
+   MGE (Interpretation + Conflict Resolution)
    ↓
-ICK (Immutable Constraint Kernel)
+   ICK (Immutable Constraint Kernel)
    ↓
-TE (Execution + Enforcement Layer)
+   TE (Execution + Enforcement Layer)
    ↓
-RCCP (Recursive Certification + Drift Detection)
+   RCCP (Recursive Certification + Drift Detection)
    ↓
-MVGR (Minimal Viable Governance Runtime)
+   MVGR (Minimal Viable Governance Runtime)
    ↓
-PGC Runtime State
+   PGC Runtime State
 2. Formal Model Definition
-2.1 System State
+   2.1 System State
 
 Let:
 
@@ -55,24 +54,22 @@ Defined as:
 Constraint:
 
 ∀ transition ∈ δ:
-    preserves(ICK) = TRUE
-3. Immutable Constraint Kernel (ICK)
+preserves(ICK) = TRUE 3. Immutable Constraint Kernel (ICK)
 3.1 Invariant Set
 ICK = {
-    reality_consistency,
-    historical_integrity,
-    audit_trace_completeness,
-    safety_non_violation,
-    non_rewrite_of_constraints
+reality_consistency,
+historical_integrity,
+audit_trace_completeness,
+safety_non_violation,
+non_rewrite_of_constraints
 }
 Formal constraint:
 ∀ s ∈ S:
-    s ⊨ ICK
+s ⊨ ICK
 
 If violated:
 
-STATE → HALT or ROLLBACK
-4. Meta-Governance Engine (MGE)
+STATE → HALT or ROLLBACK 4. Meta-Governance Engine (MGE)
 4.1 Function
 MGE : (laws, context) → ordered_decision_space
 Rule ordering:
@@ -87,30 +84,30 @@ MGE ⊂ probabilistic_resolution_space
 No overlap allowed in enforcement stage.
 
 5. Technical Enforcement Layer (TE)
-5.1 Execution Model
-TE(input_action):
-    if violates(ICK):
-        reject
-    else:
-        execute
-        log(trace)
-5.2 Properties
-Append-only logs
-Cryptographically verifiable state transitions
-Rollback-capable execution graph
-No in-place mutation of past state
+   5.1 Execution Model
+   TE(input_action):
+   if violates(ICK):
+   reject
+   else:
+   execute
+   log(trace)
+   5.2 Properties
+   Append-only logs
+   Cryptographically verifiable state transitions
+   Rollback-capable execution graph
+   No in-place mutation of past state
 6. RCCP — Recursive Constitutional Certification Protocol
-6.1 Definition
-RCCP : S → validation_report
+   6.1 Definition
+   RCCP : S → validation_report
 
 Outputs:
 
 R = {
-    drift_score,
-    semantic_stability_index,
-    constraint_fidelity,
-    governance_coherence,
-    anomaly_classification
+drift_score,
+semantic_stability_index,
+constraint_fidelity,
+governance_coherence,
+anomaly_classification
 }
 6.2 Drift Detection Function
 Drift(S_t, S_t-1) → Δsemantic_space
@@ -118,8 +115,7 @@ Drift(S_t, S_t-1) → Δsemantic_space
 Trigger condition:
 
 if Δsemantic_space > threshold:
-    flag = "constitutional drift"
-7. MVGR — Minimal Viable Governance Runtime
+flag = "constitutional drift" 7. MVGR — Minimal Viable Governance Runtime
 7.1 Definition
 
 MVGR is the smallest executable subset of the Phoenix Stack that still guarantees:
@@ -130,46 +126,44 @@ rule determinism
 RCCP feedback loop
 7.2 Minimal State Machine
 MVGR = {
-    state: S,
-    transition: δ,
-    enforcement: TE,
-    validation: RCCP
+state: S,
+transition: δ,
+enforcement: TE,
+validation: RCCP
 }
 7.3 Reduction Rule
 
 All higher layers collapse into MVGR under execution:
 
-OGL + MGE + TE + RCCP → MVGR runtime graph
-8. TLA⁺-Style Skeleton
+OGL + MGE + TE + RCCP → MVGR runtime graph 8. TLA⁺-Style Skeleton
 8.1 Variables
 VARIABLES
-    state,
-    laws,
-    constraints,
-    trace,
-    drift
+state,
+laws,
+constraints,
+trace,
+drift
 8.2 Init
 Init ==
-    state = S0
-    /\ laws = OGL
-    /\ constraints = ICK
-    /\ trace = << >>
-    /\ drift = 0
+state = S0
+/\ laws = OGL
+/\ constraints = ICK
+/\ trace = << >>
+/\ drift = 0
 8.3 Next-State Relation
 Next ==
-    LET input == GetInput(state) IN
-        IF ViolatesICK(input)
-        THEN state' = state
-        ELSE
-            state' = Apply(MGE(laws, input))
-            /\ trace' = Append(trace, state')
+LET input == GetInput(state) IN
+IF ViolatesICK(input)
+THEN state' = state
+ELSE
+state' = Apply(MGE(laws, input))
+/\ trace' = Append(trace, state')
 8.4 RCCP Check
 RCCP ==
-    drift <= ε
+drift <= ε
 8.5 Safety Property
 Safety ==
-    ∀ t ∈ trace : ICK holds(t)
-9. Key System Properties
+∀ t ∈ trace : ICK holds(t) 9. Key System Properties
 9.1 Proven Properties
 Constraint monotonicity (ICK never weakens)
 Trace integrity (append-only history)
@@ -180,8 +174,8 @@ Bounded probabilistic reasoning (MGE isolated)
 Governance stability emerges from constraint-first execution ordering, not from optimization.
 
 10. Failure Modes (Explicitly Modeled)
-10.1 Semantic Drift
-definition shift → untracked meaning change
+    10.1 Semantic Drift
+    definition shift → untracked meaning change
 
 Mitigation: RCCP + SAR (implicit semantic registry assumption)
 
@@ -231,8 +225,7 @@ That is still an active research frontier in:
 
 interpretability research
 AI alignment
-symbolic governance systems
-13. Where This Actually Stands
+symbolic governance systems 13. Where This Actually Stands
 What is strong:
 Clear separation of layers
 Explicit constraint kernel
@@ -242,8 +235,7 @@ What is still missing (engineering reality):
 Concrete implementation substrate (storage, compute, networking model)
 Real probabilistic model specification for MGE
 Verified semantic registry formalization (SAR is still abstract)
-Real-world adversarial test harnesses
-14. Final Interpretation
+Real-world adversarial test harnesses 14. Final Interpretation
 
 PGC-001 is not a “finished system.”
 

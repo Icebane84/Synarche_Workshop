@@ -1,23 +1,42 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `SYNG.STATE.001_STATEOFTHESynarche_V14.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                        | Description       |
+| :------------------ | :------------------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG-STATE-001`                             | The Sovereign ID. |
+| **Official Name**   | `SYNG.STATE.001_StateOfTheSynarche_v14.0.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                            | The Standard.     |
+| **Domain**          | `SYNG`                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                   | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                        | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                      | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                           | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # SYNG-STATE-001 (StateOfTheSynarche)
 
-| Key                | Value                                        | Description       |
-| :----------------- | :------------------------------------------- | :---------------- |
-| **Artifact ID**    | `SYNG-STATE-001`                             | The Sovereign ID. |
-| **Official Name**  | `SYNG.STATE.001_StateOfTheSynarche_v14.0.md` | The Filename.     |
-| **Version**        | **v14.0 [OMEGA]**                            | The Standard.     |
-| **Domain**         | `SYNG`                                       | The Subject.      |
-| **Status (State)** | `[ACTIVE]`                                   | The Lifecycle.    |
-| **Relations**      | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
+| Key | Value | Description |
 
 ## I. Executive Summary
 
@@ -30,33 +49,36 @@ roadmap for upcoming transmutations.
 ### 1. The Overplane (Orchestration)
 
 - **Engine**: [oathkeeper.py](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/agents/axion/oathkeeper.py)
-- **Status**: `[BETA-ACTIVE]`
 - **Integration**: Wields the 7 Tarot Masks (Tiers 00-03).
 - **Next Step**: Integration of the `SoulImpactAnalyzer` node.
 
 ### 2. The Faraday Cage (Security & Constraints)
 
 - **Config**: [.agent/security.yaml](file:///c:/Users/Chris/Synarche_Workspace/.agent/security.yaml)
-- **Status**: `[ENFORCED]`
 - **Integrity**: Commands like `curl`, `rm`, and `pip -g` are gated by approval. Redaction rules for API keys are
+
   active.
 
 ### 3. The Alexandria Anchor (Persistence)
 
 - **Backend**: SQLite (Local Eidetic)
-- **Status**: `[ACTIVE-LOCAL]`
 - **Integrity**: Primary state is anchored in
+
   [GVRN.Log.Experience.db](file:///c:/Users/Chris/Synarche_Workspace/axion-core/data/GVRN.Log.Experience.db) and
   [axion_memory.db](file:///c:/Users/Chris/Synarche_Workspace/axion-core/data/axion_memory.db).
-- **Relocation Status**: Supabase/Docker is now `[STAGED-VOID]` (Preserved but inactive). We have pivoted to **Local
-  Sovereignty Mode** to ensure zero-latency cognitive flow.
+
+- **Relocation Status**: Supabase/Docker is now `[STAGED-VOID]` (Preserved but inactive). We have pivoted to \*\*Local
+
+  Sovereignty Mode\*\* to ensure zero-latency cognitive flow.
 
 ### 4. The Cognitive Bridge (External Memory)
 
 - **Provider**:
+
   [obsidian_bridge.py](file:///c:/Users/Chris/Synarche_Workspace/axion-core/tools/03_Systems/obsidian_bridge.py)
-- **Status**: `[INTEGRATED]`
+
 - **Integration**: Wired into
+
   [retrieval_engine.py](file:///c:/Users/Chris/Synarche_Workspace/axion-core/src/logic/memory/retrieval_engine.py) for
   hybrid search.
 
@@ -82,3 +104,25 @@ roadmap for upcoming transmutations.
 ---
 
 > _"To map the void is the first step of the Architect."_ **Genesis Stamp: 2026-03-09**
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

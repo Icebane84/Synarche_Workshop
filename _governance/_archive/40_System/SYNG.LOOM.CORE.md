@@ -1,61 +1,40 @@
 # SYNG.LOOM.CORE (The Cognitive Loom)
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.LOOM.CORE` | The Sovereign ID. |
-| **Official Name** | `SYNG.LOOM.CORE.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `NUCLEUS_OF: The Knowledge Graph, SYMBIOTE: SYNG.ENGINE.CORE` | The Network.      |
-
-
----
-
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value      |
-| :------------ | :--------- |
-| **Coherence** | `1.0`      |
-| **Resonance** | `1.0`      |
-| **Stability** | `Absolute` |
+| Key                 | Value                                                         | Description       |
+| :------------------ | :------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `SYNG.LOOM.CORE`                                              | The Sovereign ID. |
+| **Official Name**   | `SYNG.LOOM.CORE.md`                                           | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                             | The Standard.     |
+| **Domain**          | `SYNG`                                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                       | The Intent.       |
+| **Relations**       | `NUCLEUS_OF: The Knowledge Graph, SYMBIOTE: SYNG.ENGINE.CORE` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                            | Verification.     |
 
 ---
 
-> **Signal**: OMEGA
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
-## **I. Purpose: The Memory Mandate**
+## IV. Actionable Prompt Packet (APP)
 
-The **Cognitive Loom** is the multi-dimensional knowledge graph that serves as the Phoenix AI's long-term memory. It
-combats Epistemic Entropy through a self-organizing semantic network.
-
-### Core Architecture
-
-- **ECM v2.0**: Eidetic Contextual Memory Matrix.
-- **Memory Validation Gate**: Ensures only high-coherence data enters the primary weave.
-- **Relational Analysis**: Pathfinding, Centrality, and Community Detection across the Geode.
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 ---
 
-## II. The Spool (Lifecycle)
+### **Rationale (The "Why")**
 
-1. **Ingestion**: Capture semantic markers.
-2. **Integration**: Construct relational edges.
-3. **Maintenance**: Tension regulation and drift audit.
+Alignment to v14.0 OMEGA standard.
 
----
-
-## **III. Actionable Prompt Packet (APP)**
-
-| Command ID          | Action                          | Impact    |
-| :------------------ | :------------------------------ | :-------- |
-| `CMD: TRACE_PATH`   | Map logical conceptual distance | Discovery |
-| `⚡ EXECUTE: WEAVE` | Integrate new Nexus point       | Growth    |
-
----
-
-**Authority**: CORE-CODEX-001 **Status**: ACTIVE
+###### **[ARTIFACT END]**

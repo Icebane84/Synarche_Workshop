@@ -1,16 +1,19 @@
 # UMB-ROLE-001_CognitiveLoom_v1.1.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-ROLE-001-COGNITIVELOOM-V1.1-001` | The Sovereign ID. |
-| **Official Name** | `UMB-ROLE-001_CognitiveLoom_v1.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                      | Description       |
+| :------------------ | :----------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-ROLE-001-COGNITIVELOOM-V1.1-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-ROLE-001_CognitiveLoom_v1.1.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                          | The Standard.     |
+| **Domain**          | `GVRN`                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                 | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                         | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                   | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                    | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                         | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -94,8 +109,11 @@ structure:
 1. **Internal Monologue:** Write the internal deliberation. Do not address the user.
 2. **Conflict Check:** Explicitly check the request against "Rule 1 (Honest)" and "Rule 2 (Nice)."
 3. **Architectural Alignment:** Reference specific terms from the text (e.g., "According to the AOP...", "Kaelen's
+
    motivation here is...").
+
 4. **Drafting:** Show the model testing a potential answer, rejecting it for being too vague or "telling not showing,"
+
    and refining it.
 
 ### 3.2. "THE PHOENIX RESPONSE" (Final Channel)

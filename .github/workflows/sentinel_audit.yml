@@ -1,40 +1,68 @@
-name: Sentinel Audit Enforcement
+name: 🛡️ Sentinel Orchestrator Audit
 
 on:
     push:
-        branches: [main, master]
-        paths:
-            - "_governance/**/*.md"
-            - ".agent/**/*.md"
+        branches: ["main"]
     pull_request:
-        paths:
-            - "_governance/**/*.md"
-            - ".agent/**/*.md"
+        branches: ["main"]
 
 jobs:
-    umbral-sentinel-scan:
+    vigil-scan:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Repository
               uses: actions/checkout@v4
 
-            - name: Set up Python
+            - name: Setup Python
               uses: actions/setup-python@v5
               with:
                   python-version: "3.12"
 
-            - name: Execute Sentinel Audit Matrix
+            - name: Execute Sentinel Vigil
+              # Runs the orchestrator silently, outputting to a local actions log folder
               run: |
-                  echo "Initiating Umbral Sentinel Protocol (AOP-SENTINEL-002)..."
-                  FAILS=0
-                  FILES=$(find _governance .agent -type f -name "*.md" 2>/dev/null || true)
+                  python axion-core/lab/sentinel_orchestrator.py . --quiet --outdir logs/sentinel --min-coherence 90.0
 
-                  for file in $FILES; do
-                    echo "Auditing: $file"
-                    if ! python axion-core/src/hephaestus/sentinel_audit.py "$file"; then
-                      echo "::error file=$file::Sentinel Audit Failed for $file. Artifact lacks Zero Entropy compliance."
-                      FAILS=$((FAILS+1))
+            - name: Upload Sentinel Logs as Artifact
+              uses: actions/upload-artifact@v4
+              if: always() # Ensures logs are uploaded even if the build fails
+              with:
+                  name: Sentinel-Audit-Reports
+                  path: logs/sentinel/
+                  retention-days: 90
+
+            - name: Dispatch Webhook Notification
+              if: always() # Ensures the webhook fires even if the coherence score failed the build
+              env:
+                  DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+                  DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
+                  JOB_STATUS: ${{ job.status }}
+              run: |
+                  if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+                    echo "No webhook URL provided in secrets. Skipping notification."
+                    exit 0
+                  fi
+
+                  # Determine Embed Color and Ping based on Job Status
+                  PING_CONTENT=""
+                  if [ "$JOB_STATUS" = "success" ]; then
+                    COLOR=65280     # Green
+                    STATUS_TXT="✅ PASSED"
+                  else
+                    COLOR=16711680  # Red
+                    STATUS_TXT="❌ FAILED"
+                    if [ -n "$DISCORD_USER_ID" ]; then
+                      PING_CONTENT="<@$DISCORD_USER_ID>"
                     fi
-                  done
+                  fi
 
-                  exit $FAILS
+                  # Target the newest Sentinel Report markdown file
+                  LATEST_REPORT=$(ls -t logs/sentinel/Sentinel_Report_*.md | head -n 1)
+
+                  # Extract the first 20 lines (Header, Score, and Summary Table) and safely escape as JSON using jq
+                  REPORT_SUMMARY=$(head -n 20 "$LATEST_REPORT")
+
+                  # Construct a Discord Embed Payload
+                  JSON_PAYLOAD=$(jq -n --arg content "$PING_CONTENT" --arg title "🛡️ Sentinel Audit Pipeline $STATUS_TXT" --arg desc "$REPORT_SUMMARY\n\n*View full report & download logs in GitHub Actions.*" --argjson color "$COLOR" '{content: $content, embeds: [{title: $title, description: $desc, color: $color}]}')
+
+                  curl -H "Content-Type: application/json" -d "$JSON_PAYLOAD" "$DISCORD_WEBHOOK_URL"

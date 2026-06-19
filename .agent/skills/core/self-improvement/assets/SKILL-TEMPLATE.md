@@ -1,14 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SKL.TEMPLATE.{{NAME}}` | The Sovereign ID. |
-| **Official Name** | `SKILL-TEMPLATE.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SKL` | The Subject.      |
-| **Status**        | `[DRAFT]` | The Lifecycle.    |
+| Key               | Value                                   | Description       |
+| :---------------- | :-------------------------------------- | :---------------- |
+| **Artifact ID**   | `SKL.TEMPLATE.{{NAME}}`                 | The Sovereign ID. |
+| **Official Name** | `SKILL-TEMPLATE.md`                     | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**        | `SKL`                                   | The Subject.      |
+| **Status**        | `[DRAFT]`                               | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
-
 
 ---
 

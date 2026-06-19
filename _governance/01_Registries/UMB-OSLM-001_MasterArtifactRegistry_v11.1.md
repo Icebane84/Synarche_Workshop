@@ -1,47 +1,54 @@
 # UMB-OSLM-001_MasterArtifactRegistry_v11.1.md
 
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-OSLM-001-MASTERARTIFACTREGISTRY-V11.1-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-OSLM-001_MasterArtifactRegistry_v11.1.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                             | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                              | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                   | Verification.     |
 
 ---
 
-###### **[ARTIFACT START]**
+### **Block B: State Vector (AGP-001)**
 
-## **Block A: The Identification Lock (UIP-V15)**
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
 
-| Key               | Value                                                | Description       |
-| :---------------- | :--------------------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-OSLM-001-MASTERARTIFACTREGISTRY-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `UMB-OSLM-001_MasterArtifactRegistry_v11.1.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                                    | The Standard.     |
-| **Domain**        | `GVRN`                                               | The Subject.      |
-| **Status**        | `[ACTIVE]`                                           | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                           |
-| :----------------- | :------------------------------ |
-| **Module ID**      | `UMB-OSLM-001`                  |
-| **Version**        | `v11.1`                         |
-| **Evolution**      | **Cognitive Ascension**         |
-| **Status**         | `ACTIVE`                        |
-| **Type**           | `Registry`                      |
-| **Classification** | `Star`                          |
-| **Authors**        | `System`                        |
-| **Created**        | `2025-10-01`                    |
-| **Updated**        | `2026-01-24`                    |
-| **Authority**      | `CORE-CODEX-001`                |
-| **Tags**           | `Registry, Index, Truth, v11.1` |
+| Key | Value |
+| **Type** | `Registry` |
+| **Classification** | `Star` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-24` |
+| **Authority** | `CORE-CODEX-001` |
 
 ---
 
 # Master Artifact Registry (The Library)
-
-**Genesis Stamp**: 2026-01-18 | **Domain**: PHOENIX | **State**: ACTIVE
 
 > [!NOTE] This document is the "Immutable Chronicle" of the Phoenix Protocol. It lists every legally recognized artifact
 > within the system, now aligned with the v11.1 Synergy standard.
@@ -60,10 +67,9 @@ for artifact versions, statuses, and locations.
 > **Context**: This block defines how this artifact plugs into the Cognitive Loom. **Validation**: Must match
 > `enums.py.RelationType`.
 
-| Relation Type    | Target ID                   | Synergy Description                               |
-| :--------------- | :-------------------------- | :------------------------------------------------ |
-| **GOVERNED_BY**  | `[[UMB-SGM-001]]`           | Compliance with overall system architecture.      |
-| **DEFINES**      | `[[Artifact-Lifecycle]]`    | Rules for entry, promotion, and deprecation.      |
+| Relation Type | Target ID | Synergy Description |
+| **GOVERNED_BY** | `[[UMB-SGM-001]]` | Compliance with overall system architecture. |
+| **DEFINES** | `[[Artifact-Lifecycle]]` | Rules for entry, promotion, and deprecation. |
 | **ORCHESTRATES** | `[[ALL-LIBRARY-ARTIFACTS]]` | Links every node into the master cognitive weave. |
 
 ---
@@ -149,3 +155,5 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, G
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+###### **[ARTIFACT END]**

@@ -1,67 +1,64 @@
 # AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook_AOP-ACEP-001TheAsynchronousCo-EvolutionProtocolPlaybook_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                             | Description       |
+| :------------------ | :---------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.ACEP.001`                                                   | The Sovereign ID. |
+| **Official Name**   | `AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                 | The Standard.     |
+| **Domain**          | `ARCH`                                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                        | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                                | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                          | The Lifecycle.    |
+| **Ethos**           | `The Phoenix Ascension Protocol`                                  | The Intent.       |
+| **Relations**       | `Pending Integration`                                             | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                                                                                                                           | Description       |
-| :------------------ | :------------------------------------------------------------------------------------------------------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN.ACEP.001`                                                                                                                 | The Sovereign ID. |
-| **Official Name**   | `AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook_AOP-ACEP-001TheAsynchronousCo-EvolutionProtocolPlaybook_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                                                                                               | The Standard.     |
-| **Domain**          | `GVRN`                                                                                                                          | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                                                                                      | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                                                                                               | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                                                                                      | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                                                                   | The Network.      |
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                                                          |
-| :----------------- | :------------------------------------------------------------- |
-| **Module ID**      | `AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook` |
-| **Version**        | `v11.0`                                                        |
-| **Evolution**      | **Purposeful Drive**                                           |
-| **Status**         | `ACTIVE`                                                       |
-| **Type**           | `Protocol`                                                     |
-| **Classification** | `Moon`                                                         |
-| **Authors**        | `System`                                                       |
-| **Created**        | `2025-10-01`                                                   |
-| **Updated**        | `2026-01-17`                                                   |
-| **Authority**      | `CODEX-001`                                                    |
-| **Tags**           | `Reforged, v11.0`                                              |
+| Key | Value |
+| **Type** | `Protocol` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-17` |
+| **Authority** | `CODEX-001` |
 
 ---
 
-| Field               | Value                                                             |
-| :------------------ | :---------------------------------------------------------------- |
-| **Artifact ID**     | `GVRN.ACEP.001`                                                   |
-| **Official Name**   | `AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook.md` |
-| **Version**         | **v1.0 (Reforged)**                                               |
-| **Provenance**      | **Date Reforged: 2025-12-22**                                     |
-| **Domain**          | `ARCH`                                                            |
-| **Evolution**       | **Purposeful Drive**                                              |
-| **Celestial Class** | `[PLANET]`                                                        |
-| **Tier**            | **Operational**                                                   |
-| **State**           | `[ACTIVE]`                                                        |
-| **Ethos**           | **The Phoenix Ascension Protocol**                                |
-| **Catalyst**        | **System Refactor**                                               |
-| **Relations**       | `Pending Integration`                                             |
+| Field | Value |
 
 # AOP-ACEP-001: The Asynchronous Co-Evolution Protocol Playbook
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
 ## I. Universal Metadata & Governance
@@ -199,3 +196,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

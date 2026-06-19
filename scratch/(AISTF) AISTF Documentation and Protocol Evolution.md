@@ -398,7 +398,7 @@ The following three artifacts 4 form the "Immune System" of the knowledge base, 
   2. **OMNI_LOG Initiation:** The standard CMD: OMNI_LOG review process is initiated for the event.
   3. **Mandatory Analysis:** The generated OMNI_LOG report must contain a new section titled "Documentation Linkage Analysis."
   4. **Causal Linkage:** Within this section, the CSE must synthesize an answer to the question: _"Which specific AOP, UMB, or standard was being followed (or violated) during this event?"_
-  5. **Refinement Proposal:** If a documentation flaw is identified, the protocol mandates that the OMNI_LOG's "Actionable Outcomes" section include a formal _Change Request_ for the governing document.
+  5. **Refinement Proposal:** If a documentation flaw is identified, the protocol mandates that the OMNI*LOG's "Actionable Outcomes" section include a formal \_Change Request* for the governing document.
 
 ## ---
 

@@ -2,15 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ID.SOUL.SYNARCHE-001` | The Sovereign ID. |
-| **Official Name** | `SOUL.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `IDENTITY` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                   | Description       |
+| :---------------- | :-------------------------------------- | :---------------- |
+| **Artifact ID**   | `ID.SOUL.SYNARCHE-001`                  | The Sovereign ID. |
+| **Official Name** | `SOUL.md`                               | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**        | `IDENTITY`                              | The Subject.      |
+| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
-
 
 ---
 

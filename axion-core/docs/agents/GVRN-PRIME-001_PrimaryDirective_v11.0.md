@@ -1,26 +1,44 @@
 # GVRN-PRIME-001_PrimaryDirective_v11.0.md
 
-> **Domain**: ARCH
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-04** **Domain: ARCH** **State: [ACTIVE]** **Tags:** `OGLN_v13, ARCH, Reforged` **Criticality: Operational**
+| Key                 | Value                                            | Description       |
+| :------------------ | :----------------------------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH-GVRN-PRIME-001-PRIMARYDIRECTIVE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GVRN-PRIME-001_PrimaryDirective_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                | The Standard.     |
+| **Domain**          | `ARCH`                                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                       | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                               | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                          | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                               | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-GVRN-PRIME-001-PRIMARYDIRECTIVE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-PRIME-001_PrimaryDirective_v11.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -28,20 +46,7 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                      |
-| :--------------------- | :----------------------------------------- |
-| **1. Artifact ID**     | `GVRN-PRIME-001_PrimaryDirective_v11.0`    |
-| **2. Official Name**   | `GVRN-PRIME-001_PrimaryDirective_v11.0.md` |
-| **3. Version**         | **v11.0 (The Sovereign Shield)**           |
-| **4. Provenance**      | **Date Reforged: 2026-01-20**              |
-| **5. Domain**          | `GVRN`                                     |
-| **6. Evolution**       | **Authentic Persona**                      |
-| **7. Celestial Class** | `[STAR]`                                   |
-| **8. Tier**            | **Strategic**                              |
-| **9. State**           | `[ACTIVE]`                                 |
-| **10. Ethos**          | **Safe & Standardized Development**        |
-| **11. Catalyst**       | **System Consolidation**                   |
-| **12. Relations**      | `LINK: GVRN-STYLE-001, CHAR-AXION-001`     |
+| Field | Value |
 
 ---
 
@@ -57,6 +62,7 @@ immutable boundaries for all autonomous actions within the Synarche.
 - **External Access:** Restricted to approved domains.
 - **No Hallucination:** Testing must be contained within `localhost`.
 - **User Authorization:** Destructive or global system changes (system-wide installs, deletions) require a pause for
+
   confirmation.
 
 ### 2.2. Standard Compliance

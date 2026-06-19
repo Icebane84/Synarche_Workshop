@@ -1,26 +1,19 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.SOT.SYNERGISTICOPPURTUNITYTRACKER` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# GVRN.SOT.SynergisticOpportunityTracker.md
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-SOT-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.SOT.SynergisticOppurtunityTracker.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                       | Description       |
+| :------------------ | :------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-SOT-001`                              | The Sovereign ID. |
+| **Official Name**   | `GVRN.SOT.SynergisticOppurtunityTracker.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                           | The Standard.     |
+| **Domain**          | `GVRN`                                      | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                  | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                       | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                  | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                     | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`               | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                          | Verification.     |
 
 ---
 
@@ -38,6 +31,22 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# GVRN.SOT.SynergisticOpportunityTracker.md
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -76,8 +85,10 @@ TRIGGERS, SOT dispatches fix requests to the Knight.
 ## II. Core Purpose & Objective
 
 - **Objective**: To serve as a core architectural module within the AI Self-Training Framework (AISTF) ecosystem,
+
   responsible for continuously monitoring the Cognitive Loom's knowledge base to identify, flag, and prioritize
   potential synergistic connections that could lead to new insights, efficiencies, or capabilities.
+
 - **Governing Ethos**: Synergistic Partner, Adaptive Ecosystem
 
 ---
@@ -93,7 +104,9 @@ active engine for discovery and evolution.
 
 1. **Synergy Flagging**: Scans artifacts for "Synergy Opportunity tags".
 2. **Relational Gravity Analysis**: Analyzes signatures and reciprocal scores between artifacts to identify latent
+
    connections.
+
 3. **Prioritization**: Assesses potential impact based on weighted metrics.
 
 ### C. Why (Phenomenological Impact)

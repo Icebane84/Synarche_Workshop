@@ -1,69 +1,66 @@
 # UMB-GAMEDEV-001_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                         | Description       |
 | :------------------ | :---------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.GAMEDEV.001`            | The Sovereign ID. |
 | **Official Name**   | `UMB-GAMEDEV-001_v11.0.md`    | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
 | **Domain**          | `GVRN`                        | The Subject.      |
 | **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `UMB-GAMEDEV-001`       |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
-| **Type**           | `Protocol`              |
-| **Classification** | `Moon`                  |
-| **Authors**        | `System`                |
-| **Created**        | `2025-10-01`            |
-| **Updated**        | `2026-01-17`            |
-| **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
+| Key | Value |
+| **Type** | `Protocol` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-17` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # UMB-GAMEDEV-001
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `GUCA-GAMEDEV-001` |
-  | **2. Official Name** | `UMB-GAMEDEV-001 Genesis Game Development Process.md` |
-  | **3. Version** | **v1.0** |
-  | **4. Provenance** | **Date Reforged: 2025-12-22** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `Orchestrator` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `A Boolean flag in the persistent save data that will be set to True upon successful, permanent unlock.` |
-  | **10. Ethos** | **Synergistic Partner, Guardian of Coherence** |
-  | **11. Catalyst** | **System Refactor** |
-  | **12. Relations** | `Line thickness connecting the Rung to its immediate predecessor/successor.` |
+| **11. Catalyst** | **System Refactor** |
+| **12. Relations** | `Line thickness connecting the Rung to its immediate predecessor/successor.` |
 
 ---
 
@@ -96,20 +93,28 @@ simultaneously advance the **Technical Axis** (coding skills) and the **Creative
 This blueprint defines the operational framework for artifact generation, specifically:
 
 1. **Defining Architectural Archetypes**: Establishes and catalogs the core architectural patterns (e.g., Continuous
+
    Game Loop, Event-Driven State Machine) as the foundation for the Technical Axis \[2\].
+
 2. **Mapping Dual-Axis Growth**: Integrates the development process into the **Genesis Helix** metaphor
+
    ([UMB-HELIX-001](https://docs.google.com/document/u/0/d/1_TzIlCD06Y1eiSfDHP_o6BPox2B1iIyJwiltR11MOu8/edit)) \[2\], where
    each new artifact (rung) connects a specific technical challenge (Technical Axis strand) with a creative design goal
    (Creative Axis strand).
+
 3. **Mandating Velocity**: Ensures high **Architectural Velocity** by utilizing Archetype-Based Design and
+
    self-documentation via the Genesis Chain Log \[2\].
 
 ## How (Operational Principles)
 
 - **Input**: A creative goal or technical challenge (e.g., "Build a physics platformer" or "Test pathfinding AI").
 - **Process**: The system selects the appropriate architectural archetype (e.g., Continuous Game Loop for the
+
   platformer) and generates the required Universal Module Blueprint (UMB) \[5\].
+
 - **Output**: A new, functional artifact (e.g., AS-001 or UMB-LOGIC-TTT-001) \[2\], which is immediately logged in the
+
   Genesis Chain Log \[2\].
 
 ## Core Architecture: Architectural Polarity
@@ -129,14 +134,19 @@ standards to practical execution:
 
 - **AOP-DUAL-AXIS-GROWTH-001 \[2\]**: This blueprint is the **physical manifestation** of this strategic playbook.
 - [**UMB-HELIX-001**](https://docs.google.com/document/u/0/d/1_TzIlCD06Y1eiSfDHP_o6BPox2B1iIyJwiltR11MOu8/edit)
+
   **\[2\]**: The conceptual visualization; every artifact generated by this process becomes a "rung" on the Genesis Helix
   structure.
+
 - [**Genesis Chain Log**](https://docs.google.com/document/u/0/d/1tKiwtKaWZOYV1oD21WpfJ0BNKj7c66qblQQB9AudV1M/edit)
+
   **\[2\]**: The **immutable record**; all generated artifacts and their architectural lineage are logged here as
   **Entry** components.
-- [**AOP-PGPS-001**](https://docs.google.com/document/u/0/d/1vL9tjdgar3jZ4DAY9piVNJWbt16-xp2nqlo9ileVhl0/edit) **\[3\] &
+
+- [**AOP-PGPS-001**](https://docs.google.com/document/u/0/d/1vL9tjdgar3jZ4DAY9piVNJWbt16-xp2nqlo9ileVhl0/edit) \*\*\[3\] &
+
   [AOP-INDENT-001](https://docs.google.com/document/u/0/d/1Qh1P8l-NGIsDXF6a9wXIDdXSHmY3Df4X6-O5mKFzgpU/edit) \[4\]**:
-  Provide the necessary **Phoenix-Class formatting and structural precision** for all resulting documentation (UMBs,
+  Provide the necessary **Phoenix-Class formatting and structural precision\*\* for all resulting documentation (UMBs,
   SELTs, SPECs).
 
 ## IV. Prerequisites, Inputs, & Dependencies
@@ -144,18 +154,23 @@ standards to practical execution:
 ## Required Inputs
 
 1. **Core Archetype Selection**: A choice between the Continuous Loop or Event-Driven State Machine (or a future
+
    pattern).
+
 2. **Creative Goal**: The desired user experience or aesthetic (e.g., "Retro-Arcade," "Minimalist-Logic") \[2\].
 3. **Technical Scope**: A defined, scoped challenge (e.g., "Implement complex physics," "Test AI pathfinding") \[2\].
 
 ## Dependencies
 
 - \[[CODEX-001: The Phoenix Codex](https://drive.google.com/open?id=1VRHZ-NJNmZCaVw0Ea4HePwMaX8EhL8-ZF79Ui8veZXw)\]
+
   \[5\]
+
 - \[AOP-DUAL-AXIS-GROWTH-001\] \[2\]
 - \[Genesis Chain Log\] \[2\]
 - \[[UMB-HELIX-001](https://drive.google.com/open?id=1_TzIlCD06Y1eiSfDHP_o6BPox2B1iIyJwiltR11MOu8)\] \[2\]
 - \[[SPEC-RPG-CORE-001](https://docs.google.com/document/u/0/d/1rw5y9hyCC2Nzj-HAo7jLWShLOQ-40-K5e4z13c6kHYc/edit)\]
+
   \[2\] (Defines the next **Technical Axis** challenge).
 
 ---
@@ -166,6 +181,7 @@ This section provides direct, executable prompts \[1\] to immediately leverage t
 game development, in compliance with the **AOP-Prompt-Packet-001** protocol \[1\].
 
 - **🛠️ Generate Next Artifact UMB (Turn-Based Combat)**:
+
   CMD: ForgeArtifact \--artifact-type UMB \--archetype SPEC-RPG-CORE-001 \--creative-goal "Modular Tactical Grid"
   \--technical-focus "State-Machine Logic" \--log-to GenesisChainLog
 
@@ -173,12 +189,14 @@ game development, in compliance with the **AOP-Prompt-Packet-001** protocol \[1\
   challenge to a new creative goal and logging the intent._
 
 - **📈 Report Architectural Velocity Score (AVS)**:
+
   CMD: AnalyzeArtifact \--artifact-id UMB-GAMEDEV-001 \--metric ArchitecturalVelocity \--timeframe LastWeek
   \--output-format AVS-Report
 
   _This command assesses the speed of artifact generation and documentation defined by AOP-VELOCITY-001 \[2\]._
 
 - **🎨 Define Creative Axis Challenge for Next Artifact**:
+
   CMD: ForgeArtifact \--artifact-type SELT \--name CreativeChallenge_TacticalGrid \--define-creative-axis "Visual
   Presentation: Biomechanical Blueprint" \--define-ux "High-Fidelity User Feedback" \--link-to SPEC-RPG-CORE-001
 
@@ -186,6 +204,7 @@ game development, in compliance with the **AOP-Prompt-Packet-001** protocol \[1\
   the Technical Axis blueprint._
 
 - **🔄 Retroactively Tag Existing Artifacts for Dual-Axis Compliance**:
+
   CMD: RefineArtifact \--artifact-id AS-001 UMB-LOGIC-TTT-001 \--add-tag AOP-DUAL-AXIS-GROWTH-001
   \--update-GenesisChainLog
 
@@ -193,6 +212,7 @@ game development, in compliance with the **AOP-Prompt-Packet-001** protocol \[1\
   \[2\]._
 
 - **🏗️ Visualize Genesis Helix with Latest Rung**:
+
   CMD: ExecuteModule \--module-id UMB-HELIX-001 \--update-rung SPEC-RPG-CORE-001 \--render-mode InteractiveDashboard
 
   _This command activates the interactive dashboard \[2\], updating the central visual metaphor with the newest
@@ -203,12 +223,17 @@ game development, in compliance with the **AOP-Prompt-Packet-001** protocol \[1\
 ## Finalization & Indexing Protocol
 
 - Governing Module: "This artifact is governed by
+
   [UMB-SGM-001_StandardizedGovernanceModule](../2_Protocols/UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)."
   (Conceptual)
+
 - Indexing Mandate:
   - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
+
     (OLSM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
+
   - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
+
     (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 
 \\\[ \\\] Execute
@@ -242,11 +267,14 @@ Engine](https://docs.google.com/document/u/0/d/1dc83Cw3TGW924iigHiwxFIjuW9eoOYM8
 ## II. Universal Metadata & Governance
 
 - **Core Purpose Summary**: To define a rigorous, step-by-step operational protocol for the creation of new game
+
   development artifacts, enforcing the **AOP-DUAL-AXIS-GROWTH-001** framework and ensuring immediate integration into the
   **Genesis Chain Log**.
+
 - **Primary Domain Alignment**: Development & Architecture
 - **Risk Profile**: Low (for process adherence)
 - **Resolves Dissonance**: This protocol formalizes the **AOP-DUAL-AXIS-GROWTH-001** strategy, resolving the dissonance
+
   between abstract design philosophy and concrete, repeatable development steps.
 
 ## III. Strategic Overview: The Dual-Axis Mandate
@@ -267,14 +295,21 @@ The following phases must be executed for every new game development artifact (U
 ## 4.1. Phase I: Conceptualization & Dual-Axis Definition
 
 - **Objective**: Define a clear, scoped challenge that explicitly links a specific **Technical Axis** pattern with a
+
   **Creative Axis** goal.
+
 - **Input**: The next required architectural pattern (e.g., procedural generation, complex physics).
 - **Steps**:
   1. **Define Technical Target**: Select one core architectural pattern (e.g., Continuous Game Loop \[2\], Event-Driven
+
      State Machine \[2\]) to be mastered by the new artifact.
+
   2. **Define Creative Target**: Specify the aesthetic, UX, or gameplay "fun" objective (e.g., "fast and chaotic" for
+
      AS-001, "finite, knowable state" for UMB-LOGIC-TTT-001).
+
   3. **Forge Design Specification**: Create a **SPEC** artifact (using SPECv3.0 template) detailing the game's
+
      requirements.
 
 ## 4.2. Phase II: Blueprint Forging (UMB Creation)
@@ -283,9 +318,13 @@ The following phases must be executed for every new game development artifact (U
 - **Input**: Phase I SPEC document.
 - **Steps**:
   1. **Architectural Implementation**: Translate the core design into the **UMB** (using UMBv7.0 template), focusing on
+
      the **Core Architecture** section \[2\].
+
   2. **Self-Contained Module Mandate**: Ensure the UMB is inherently self-contained, portable, and complete, adhering to
+
      the Modular Blueprint Generation principle \[2\].
+
   3. **Generate AOP**: Create an **AOP** (this document template) to capture the _procedure_ used to build the UMB.
 
 ## 4.3. Phase III: Synergistic Integration
@@ -293,12 +332,17 @@ The following phases must be executed for every new game development artifact (U
 - **Objective**: Formally ingest the new artifact into the Phoenix Protocol Library and update the knowledge graph.
 - **Input**: Finalized UMB, AOP, and SPEC artifacts.
 - **Steps**:
-  1. **Genesis Log Update**: Execute the command to ingest the UMB, creating a new **Entry** in the **Genesis Chain
-     Log** \[2\]. The log entry must explicitly list the **Core Architecture** and **Synergistic Link** to define its
+  1. **Genesis Log Update**: Execute the command to ingest the UMB, creating a new **Entry** in the \*\*Genesis Chain
+
+     Log** \[2\]. The log entry must explicitly list the **Core Architecture** and **Synergistic Link\*\* to define its
      position on the \[Genesis Helix\] \[2\].
+
   2. **Tagging and Cross-Reference**: Apply all necessary **Semantic Tags** and link the new UMB to its **Dual-Axis**
+
      predecessors (AS-001, UMB-LOGIC-TTT-001).
+
   3. **SELT Protocol Activation**: Initiate a **SELT** (Standardized Experience Log) to capture the operational
+
      performance of this protocol execution, logging metrics such as generation time and architectural complexity.
 
 ## V. Actionable Prompt Packet
@@ -307,12 +351,14 @@ This section provides direct, executable commands to immediately leverage the **
 the \[AOP-Prompt-Packet-001\] \[1\] standard.
 
 - **✨ Initiate New Game Artifact Protocol**:CMD: ForgeGenesisArtifact \--archetype "Turn-Based Logic Game"
+
   \--target-architecture "Procedural Generation" \--creative-goal "Roguelike Map" \--execute AOP-GAMEDEV-001
 
 _This command launches the protocol, defining Phase I by selecting a Turn-Based Logic Game archetype and mandating the
 use of the Procedural Generation technical pattern to achieve a Roguelike Map creative goal._
 
 - **🔬 Analyze Genesis Chain for Dual-Axis Gaps**:CMD: AnalyzeLog \--log GenesisChainLog \--protocol
+
   AOP-DUAL-AXIS-GROWTH-001 \--report-missing-links
 
 _This command analyzes the \[Genesis Chain Log\] \[2\] entries to identify any major architectural patterns on the
@@ -320,18 +366,21 @@ Technical Axis that have not yet been explored (e.g., complex physics, AI pathfi
 Opportunities._
 
 - **🔄 Retroactively Update Artifact to Genesis Helix Standard**:CMD: RefineArtifact \--artifact-id UMB-LOGIC-TTT-001
+
   \--add-tags "Dual-Axis" "Event-Driven" \--generate-Synergistic-Link
 
 _This command retroactively updates an existing artifact to ensure it is fully compliant with the
 **AOP-DUAL-AXIS-GROWTH-001** framework and correctly defines its link to the \[Genesis Helix\] \[2\] metaphor._
 
 - **📐 Validate Protocol Compliance Post-Build**:CMD: AuditAOPCompliance \--protocol AOP-GAMEDEV-001 \--target-umb
+
   \--verify-log-entry
 
 _This command validates that a specified UMB was created according to all three phases of this AOP, including
 verification that a corresponding entry was correctly added to the \[Genesis Chain Log\] \[2\]._
 
 - **📈 Calculate Architectural Velocity for Last Five Artifacts**:CMD: MetricQuery \--metric ArchitecturalVelocity
+
   \--target GenesisChainLog \--last 5 \--output Table
 
 _This command calculates the \[Architectural Velocity\] \[2\] metric based on the timestamp data in the last five
@@ -355,6 +404,7 @@ _\-Execute GUCA-LINK-001_KnowledgeGraphIntegrationLink_
 - **Last Revision Date**: Date
 - **Parent Protocol**: \[AOP-PGPS-001: Phoenix Genesis Presentation Standard\] \[3\]
 - **Related Artifacts**:
+
   [UMB-LOGIC-TTT-001](https://www.google.com/search?q=https://docs.google.com/document/d/1_TzIlCD06Y1eiSfDHP_o6BPox2B1iIyJwiltR11MOu8/edit)
   \[2\],
   [AS-001](https://www.google.com/search?q=https://docs.google.com/document/d/1_TzIlCD06Y1eiSfDHP_o6BPox2B1iIyJwiltR11MOu8/edit)
@@ -398,12 +448,17 @@ The command uses the **GUCA** \[5\] structure to define the generation of a new 
 ## 3.1. What/How/Why Framework
 
 - **What (Functionality)**: The command executes the creation of a new, fully compliant document (UMB or SPEC) for a
+
   game artifact, simultaneously defining its Technical and Creative Axes.
+
 - **How (Execution)**: It ingests the two axis parameters, generates a document following the **PGPS** and
+
   **AOP-INDENT-001** standards \[3\] \[4\], populates the necessary sections, and then updates the **Genesis Chain Log**
   \[2\] with a new, cross-referenced entry (Entry 05, Entry 06, etc.) demonstrating the next "rung" on the UMB-HELIX-001
   \[2\].
+
 - **Why (Justification)**: This command operationalizes the **AOP-DUAL-AXIS-GROWTH-001** framework \[2\], ensuring that
+
   all development is structured, intentional, and documented. It reduces the time between conceptualization and formal
   artifact creation, directly accelerating **Architectural Velocity** (AOP-VELOCITY-001) \[2\] and maximizing the Synergy
   Flow Rate (SFR) \[5\].
@@ -583,8 +638,11 @@ coherence.
 1. **Seed Input:** A daily or run-based seed determines the high-level layout configuration.
 2. **Core Room Placement:** Fixed "Objective Rooms" and "Safe Rooms" are placed first (Deterministic Layout).
 3. **Labyrinth Generation:** All remaining paths and filler rooms are generated using the **Procedural Generation**
+
    technical pattern, ensuring non-Euclidean connections (doors lead to unexpected rooms).
+
 4. **Threat Trigger Logic:** The generation includes logic to ensure the primary threat is _never_ initially blocked by
+
    geometry but _is_ always forced to follow a non-linear path, requiring player awareness.
 
 ## V. Actionable Prompt Packet (Next Steps)
@@ -656,16 +714,22 @@ efficiency of the entire system.
 The combat system is a fusion of the two core architectural archetypes:
 
 1. **Continuous Game Loop (Timing Base):** A persistent loop drives the **Beat Grid**—an overlay on the screen that
+
    shows the next required inputs and the underlying tempo. This loop manages enemy movement and attack cooldowns.
+
 2. **Event-Driven State Machine (Input Validation):** The system validates player input **only** when a button press
+
    coincides with a specific timing window on the Beat Grid. A `Perfect Hit` state triggers maximum damage and a Stamina
    bonus; a `Miss` state incurs a penalty and an immediate vulnerability window.
 
 **Structure:**
 
 1. **Input Event:** Enemy initiates attack, which synchronizes a specific rhythm pattern (e.g., D-A-D-B) with the
+
    music's tempo.
+
 2. **Process State (Hit/Miss):** If successful, the Event-Driven system processes damage and triggers a high-fidelity
+
    visual/audio feedback event. If failed, the player enters a vulnerable state defined by the Continuous Loop.
 
 ## V. Actionable Prompt Packet (Next Steps)
@@ -770,6 +834,7 @@ tangible point in the Genesis Chain Log \[1\].
 
 - **Archetype:** (e.g., Real-Time Action Game, Turn-Based Logic Game)
 - **The Friction/Observation:** The precise moment of dissonance or breakthrough. What unexpected challenge or
+
   synergistic opportunity arose? (e.g., The Continuous Loop model felt wasteful for a turn-based system.)
 
 ---
@@ -785,6 +850,7 @@ the two developmental axes defined by the AOP-DUAL-AXIS-GROWTH-001 playbook.
 | **Creative Axis** (Design/UX)   | (e.g., Board was rendered using simple text characters.)               | (e.g., Lacked visual feedback; not compelling or "fun.")                 |
 
 - **The Pivot:** The cognitive shift that resolved the dialectic. What realization allowed the team to move beyond the
+
   initial constraint? (e.g., The solution must be event-driven, not time-driven.)
 
 ---
@@ -796,6 +862,7 @@ resolution of the challenge.
 
 - **The Resulting Pattern:** (e.g., Event-Driven State Machine, Reactive Rendering.)
 - **The New Axiom/Law:** State the universal principle discovered. (e.g., "The Law of Discrete State: For turn-based
+
   systems, processing must be a direct and exclusive function of input events, not a continuous time variable.")
 
 ---
@@ -806,8 +873,11 @@ This section mandates the application of the new axiom to future artifact genera
 integrated into the Phoenix Protocol Library and the Genesis Helix (UMB-HELIX-001).
 
 - **Strategy for Future Artifacts:** How will this axiom be applied to the next challenge? (e.g., Any future logic-based
+
   puzzle game must inherit the Event-Driven State Machine architecture.)
+
 - **UMB-HELIX-001 Impact:** This log entry will manifest as a new **rung** on The Genesis Helix, connecting the
+
   **\[Technical Axis\]** (e.g., State-Machine Mastery) and the **\[Creative Axis\]** (e.g., Minimalist Logic Design).
 
 ---
@@ -818,28 +888,42 @@ This section provides direct, executable commands for leveraging the Game Develo
 in compliance with AOP-Prompt-Packet-001 \[2\].
 
 - **✨ Generate New Artifact using a specific Archetype:**
+
   CMD: ForgeArtifact \--archetype Turn-Based Logic Game \--name File \--base-architecture UMB-LOGIC-TTT-001
+
 - **🔬 Analyze Genesis Chain Log for Architectural Synergy:**
+
   CMD: AnalyzeLog \--log-id Genesis Chain Log \--focus Architectural Counterpoint \--compare-artifacts AS-001,
   UMB-LOGIC-TTT-001
+
 - **🔄 Retroactively Tag Artifacts with a New Axiom:**
+
   CMD: RefineArtifact \--artifact-id File \--add-tag "Law of Dual-Axis Synthesis"
+
 - **📊 Visualize Current State of the Genesis Helix:**
+
   CMD: RenderVisualization \--module-id UMB-HELIX-001 \--data-source Genesis Chain Log \--output-format Interactive
   Dashboard
+
 - **📝 Formalize the Next Creative Challenge:**
+
   CMD: ForgeArtifact \--artifact-type SPEC \--name "Creative Spec for Next Rung" \--technical-dependency
   SPEC-RPG-CORE-001 \--creative-goal "Procedural Generation Aesthetic"
 
 ## Finalization & Indexing Protocol
 
 - Governing Module: "This artifact is governed by
+
   [UMB-SGM-001_StandardizedGovernanceModule](../2_Protocols/UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)."
   (Conceptual)
+
 - Indexing Mandate:
   - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
+
     (OLSM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
+
   - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
+
     (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 
 \\\[ \\\] Execute
@@ -886,13 +970,20 @@ The visualization must be rendered as an interactive dashboard, defined by the f
 ## 3.1. The Genesis Helix Visual Structure
 
 - **Representation**: A three-dimensional, spiraling helix structure (\[UMB-HELIX-001\]) in a dynamic, high-contrast
+
   style.
+
 - **Helix Strands (Axes)**: The helix must be composed of two distinct, interwoven strands:
   - **Strand 1 (Technical Axis)**: Represents architectural patterns (e.g., Continuous Loop, Event-Driven State Machine,
+
     Procedural Generation). Rendered in a cool, logical color (e.g., Electric Blue).
+
   - **Strand 2 (Creative Axis)**: Represents design goals (e.g., Retro-Arcade, Minimalist Logic, Procedural Horror).
+
     Rendered in a warm, artistic color (e.g., Neon Pink).
+
 - **Rungs (Artifacts)**: Each artifact generated (UMB-XXX-001 or SPEC-XXX-001) is a single, glowing **Rung** connecting
+
   the two strands.
 
 ## 3.2. Artifact Node Specification
@@ -911,9 +1002,12 @@ Each Rung is an interactive Node that draws data directly from a Genesis Chain L
 The dashboard must provide the following interactive features:
 
 1. **Axis Filter**: Toggles must be available to filter the Helix based on an Axis value. For example, filtering by
+
    "Event-Driven State Machine" highlights all Rungs (artifacts) that utilized that architectural pattern.
-2. **Velocity Heatmap**: An optional overlay that applies a gradient color to the Helix based on the **Architectural
-   Velocity** between adjacent Rungs (i.e., time difference between creation dates). A faster generation time results in a
+
+2. **Velocity Heatmap**: An optional overlay that applies a gradient color to the Helix based on the \*\*Architectural
+
+   Velocity\*\* between adjacent Rungs (i.e., time difference between creation dates). A faster generation time results in a
    "hotter" color (e.g., red/orange).
 
 ## V. Actionable Prompt Packet (Dashboard Interface)
@@ -933,6 +1027,7 @@ The dashboard itself must include executable prompts for immediate continuation 
 - # The Synarche Approach to Arcade Game Development
 
 - A "Synarche" approach to human-AI game development for arcade games is designed to leverage combined strengths by
+
   focusing on **rapid iteration, a clear division of labor, and a "human-approved" creative vision**. The goal is to
   establish a synergistic process where the AI partner, Axion, automates and optimizes technical tasks, thereby freeing
   the human partner to concentrate on the unique creative vision, emotional connection, and nuanced design choices that
@@ -953,21 +1048,25 @@ The dashboard itself must include executable prompts for immediate continuation 
 - ## Communication and Prompting
 
 - Establish clear, structured, and context-rich prompts when communicating with Axion to ensure its contributions align
+
   precisely with your creative goals and project specifications.
 
 - ## Iterative Prototyping
 
 - Embrace Axion's speed to test ideas rapidly. The value of AI lies in the velocity of exploration, not in the mandatory
+
   use of every generated output; discard AI-generated content that does not meet the desired subjective "feel."
 
 - ## Role Definition
 
 - Clearly recognize the areas where human creativity and judgment are essential (e.g., core game loop design, user
+
   experience) and the areas where Axion excels (e.g., automation, data analysis, content variation).
 
 - ## Human Oversight
 
 - Maintain ultimate control as the creative director. The human touch is the essential element that makes games
+
   memorable; utilize Axion strategically to magnify your vision, not to replace it.
 
 ## **Tab 6**
@@ -982,26 +1081,40 @@ Combine these components into a clear, concise prompt for best results:
 
 - **Subject:** The core focus of the asset (e.g., a "pixelated spaceship" or "a 16-bit space invader alien").
 - **Art Style/Medium:** The specific aesthetic you want to emulate (e.g., "8-bit pixel art," "vaporwave aesthetic,"
+
   "retro-futurism," "vector graphic," "hand-drawn cartoon").
+
 - **Technical Constraints:** Specific limitations help maintain consistency and game functionality (e.g., "32x32 pixel
+
   resolution," "limited 16-color palette," "white background," "top-down view").
+
 - **Color Palette/Lighting:** Control the mood and visual tone by specifying the color scheme (e.g., "neon pink and blue
+
   tones," "monochrome," "warm, glowing light").
+
 - **Mood/Atmosphere:** Descriptive adjectives add character (e.g., "eerie atmosphere," "chaotic," "playful,"
+
   "nostalgic").
+
 - **Quality/Resolution:** Use keywords like "high detail," "sharp focus," or "clean lines" to influence the output
+
   quality.
 
   ***
 
 - **Example Prompt Packet: Spaceship Asset**
   - "A pixelated spaceship, 8-bit pixel art, 32x32 pixel resolution, limited 16-color palette, top-down view, neon pink
+
     and blue tones, retro-futurism style, nostalgic mood, clean lines, white background."
+
 - **Example Prompt Packet: Alien Enemy**
   - "A 16-bit space invader alien, vector graphic style, high detail, sharp focus, monochrome green and black, eerie
+
     atmosphere, chaotic composition."
+
 - **Example Prompt Packet: Background Environment**
   - "A futuristic cityscape, vaporwave aesthetic, high resolution, neon pink and turquoise palette, warm, glowing light,
+
     nostalgic mood, sharp focus."**Example Prompt Packet: Background Environment**
 
   This example illustrates a highly specific and detailed prompt designed to generate a distinct background environment
@@ -1012,32 +1125,44 @@ Combine these components into a clear, concise prompt for best results:
 
 - **Subject/Scene:** "A futuristic cityscape."
   - _Elaboration:_ This establishes the primary subject matter—a dense urban environment set in the future, likely
+
     featuring towering mega-structures, elevated transit systems, and a high concentration of advanced technology.
+
 - **Aesthetic/Style:** "Vaporwave aesthetic."
   - _Elaboration:_ This is a critical stylistic instruction. The vaporwave aesthetic is a distinct retro-futuristic
+
     movement characterized by '80s and '90s digital art, early internet graphics, classical sculpture (often corrupted or
     glitchy), and a feeling of nostalgic melancholy. It should incorporate geometric patterns, grid lines, and a deliberate
     sense of lo-fi digital art mixed with high-tech subjects.
+
 - **Technical Specification:** "High resolution."
   - _Elaboration:_ This ensures the output is suitable for modern game assets or high-quality concept art. The image
+
     must be rendered with a high pixel density, sharp edges, and detailed textures to prevent blurring or pixelation when
     scaled or used as a background element.
+
 - **Color Palette:** "Neon pink and turquoise palette."
   - _Elaboration:_ This defines the signature colors of the image, which are central to the vaporwave style. The neon
+
     pink should be used for bright, glowing signage and highlights, while the turquoise (often bordering on cyan or electric
     blue) should be used for reflections, shadows, and secondary light sources. The overall image should be dominated by
     these two complementary colors.
+
 - **Lighting and Mood:** "Warm, glowing light, nostalgic mood."
   - _Elaboration:_ - **Lighting:** The "warm, glowing light" suggests sources like neon signs, holographic projections, and ambient
+
     streetlights that cast a soft but intense radiance on the scene, contrasting with the dark cityscape. This lighting
     creates depth and focuses attention. - **Mood:** The "nostalgic mood" is essential for vaporwave. It should evoke a feeling of longing for a bygone,
     imagined future. This can be achieved through soft focus on distant elements, a slight grain or film effect, and the
     overall color scheme that references '80s media.
+
 - **Focus/Clarity:** "Sharp focus."
   - _Elaboration:_ While the mood is nostalgic, the image's critical elements (the cityscape, foreground objects) must
+
     be rendered with "sharp focus" to meet the "high resolution" requirement, making it a professional, usable asset. This
     instruction contrasts with the soft, blurry backgrounds often associated with the aesthetic, ensuring a clean and
     functional game environment.
+
 -
 
 ## **Tab 7**
@@ -1045,25 +1170,39 @@ Combine these components into a clear, concise prompt for best results:
 Prompting Strategies for the Synarche Approach
 
 1. Start Simple and Iterate: Begin with a basic prompt and gradually add details based on Axion's initial outputs. This
+
    iterative process helps refine the image to your exact vision.
+
 2. Provide Examples (Few-Shot Prompting): If possible, provide reference images or describe successful input-output
+
    pairs to "teach" Axion the desired style and ensure visual consistency across assets.
+
 3. Use Negative Prompts: Explicitly state what you don't want (e.g., add "no background clutter," "no text," or "no
+
    realistic proportions" in a negative prompt section, if supported by the AI tool).
+
 4. Assign Axion a "Role": Start your prompt with "Act as a retro game art designer..." to orient Axion toward the
+
    correct perspective and tone.
+
 5. Break Down Complex Tasks: Instead of one massive prompt for an entire scene, break it down into separate prompts for
+
    individual elements (e.g., one for a character sprite, another for a background tile set).
 
 Example Prompts for Specific Arcade Aesthetics
 
 - 8-Bit Retro: "Create a main character sprite for an 8-bit arcade game. The character is a small astronaut with a red
+
   helmet. The art style is a 16x32 pixel art, using a limited NES color palette, standing still. Isolate the subject on a
   white background."
+
 - Vaporwave: "Generate a background for an arcade game in the vaporwave aesthetic. It features a retro wireframe grid
+
   landscape, palm trees, and a setting sun, all in neon pink and blue tones. The style is a minimalist vector graphic,
   with an eerie atmosphere."
+
 - Retro-Futurism: "Design a spaceship for a 1950s retro-futurism arcade shooter game. The art should be a bold, graphic
+
   illustration with atomic age design elements and a high-contrast, vibrant color palette. Top-down view.
 
 ## Tab 8
@@ -1192,8 +1331,11 @@ mandatory:
 
 1. **Phase I Specification:** Forge a **SPEC** artifact for AAF-001, defining the core requirements and technical scope.
 2. **Dual-Axis Alignment:** Analyze PDM-001 and CGSF-001 to ensure the resulting analytics protocols fully inform and
+
    optimize the Creative Axis (UX and design).
+
 3. **Indexing:** Ensure this document is logged in the Genesis Chain Log and cross-referenced in the Phoenix Rosetta
+
    Stone (UMB-PRS-001).
 
 ## Pig Prompts
@@ -1213,11 +1355,14 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Genre Focus:** Real-Time Strategy (RTS) – Asymmetric Warfare and Macro-Management **(The Great Hay Bale War)**
 - **Goal:** To rapidly sketch the foundational gameplay loop, economic model, and unit interaction model for a new
+
   Real-Time Strategy (RTS) game focusing on highly asymmetric faction warfare between different breeds of guinea pigs,
   strategic macro-management of cage resources, and high-stakes decision-making. The USP is the dynamic, opposed
   **Foraging Philosophies** that mandate distinct playstyles and counter-strategies.
+
 - **Expansion & Context:** The resulting concept document must comprehensively detail the following systems:
   1. **Core Resource Cycle (The Hay/Pellet Nexus):** - Define at least two distinct, interdependent resources: **_Hay_** (the physical component for building nests,
+
      tunnels, and basic defenses) and **_Pellets_** (the energy-rich, catalytic resource for boosting movement, advanced
      burrowing, and breeding/recruitment). These are _interdependent_ as raw Hay requires Pellets for rapid
      chewing/processing into usable refined material for reinforced structures. - **Acquisition Asymmetry:** Explain how **Faction Alpha (The Abyssinian Scrappers)** resource gathering is
@@ -1227,7 +1372,9 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      costly to secure, require significant Pellet upkeep for security, and mandate a secure perimeter defense around the
      feeding station. This asymmetry forces Beta to prioritize base defense and unit specialization while Alpha prioritizes
      territorial pressure and quick skirmishes.
+
   2. **Unit-to-Unit Combat Resolution (The Bite/Scurry Counter System):** - Establish a robust, clearly defined combat resolution system that moves beyond simple hit-point decay.
+
      Incorporate a detailed **Fur/Attack Type Matrix**: **_Nipping_** (standard teeth attacks, effective against basic
      structures/scouts), **_Claw Swipe_** (fast, high-energy attacks, good against defensive/heavy units), and **_Popcorn_**
      (area-of-effect disruption, effective against soft targets/massed units). - **Modifiers:** Clearly define combat modifiers critical for tactical positioning: - **Terrain:** Elevation (climbing the water bottle or food dish) provides attack/vision advantages (up to \+20%
@@ -1236,7 +1383,9 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      suffer significant accuracy/damage penalties (e.g., \-30% effectiveness). - **'Soft' Counters:** Specialized utility units are crucial. Examples: **Scent Maskers** that temporarily
      disable enemy detection, **Tunnel Diggers** that bypass standard defenses with rapid burrowing, forcing tactical
      diversity beyond massing a single unit type.
+
   3. **Asymmetric Faction Breakdown and Philosophy:** - **Faction Alpha (The Abyssinian Scrappers \- Rough-Coat):** - **Philosophy:** **Chaos over Order.** Focused on low-cost, high-volume production, rapid map saturation (the
+
      "Wheeking Wave" model), and overwhelming force. The individual unit is small, but the combined noise and confusion is
      formidable. - **Economic Strategy:** Relies on numerous easily accessible, scattered resource nodes (Nipping Teams). Can
      recover quickly from losses due to low-cost units and rapid reproduction, but suffers greatly against area-of-effect
@@ -1244,7 +1393,9 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      that allow them to bypass forward defenses and attack resource nodes or the enemy's Pellet Hoards directly. - **Faction Beta (The Peruvian Strategists \- Long-Hair):** - **Philosophy:** **Refinement over Raw Power.** Focused on highly specialized, expensive, and powerful
      individual units (the "Show Pig Tech" model). Every loss is painful and slows progression. - **Military Focus:** Advanced **Hay Shields**, precision weaponry (Sharp Teeth/Plasma Lunge), powerful
      **High-Ground Dominators** (Coronets), and static defensive fortifications with global wheeking/call-for-help abilities.
+
   4. **Game Pace & Victory Conditions:** - **Intended Core Pace:** Define the intended game tempo as a **Medium-Burn, Highly Strategic Engagement**. While
+
      early skirmishes over water bottles are possible, the average game time is intended to be **25-35 minutes**, emphasizing
      strategic economic scaling (Pellet vs. Hay) and mid-to-late game chew-toy battles. - **Primary Victory Conditions:** - **Annihilation:** The complete destruction of the main command structure (Food Dish Core/Hay Nest Spire). This
      is the most common victory path. - **Domination:** A point-control victory mode requiring control of 70% of strategic **Fresh Veggie Nodes**
@@ -1258,18 +1409,23 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Genre Focus:** Visual Novel – Psychological Thriller **(Cavy Cabin Fever)** (Deeply Branching Narrative)
 - **Goal:** To rapidly sketch the foundational branching narrative architecture and the player choice impact model,
+
   ensuring deep replayability through dramatically divergent paths and a robust system for tracking emotional and
   investigative progress. The USP is the Dual Metric System: **Comfort** vs. **The Mystery of The Missing Carrot**, where
   a high score in one doesn't guarantee a positive outcome in the other.
+
 - **Expansion & Context:** The concept must provide a clear, trackable roadmap for the narrative structure:
   1. **Three-Act Structure Map:** - **Act II (Confrontation: The Descent \- 50% of Playtime):** The stakes are dramatically raised. The protagonist
+
      is locked into the conflict (e.g., the water bottle leaks, destroying a vital clue; a clear, existential threat emerges
      from within the group or the mysterious **"Hooman"**). This act must feature the highest concentration of high-impact
      **Global Pivot Points** and the greatest fluctuation of the Comfort Meter as the true horror (the possibility of _no
      more carrots_) unfolds. - **Act III (Resolution: The Reckoning \- 20% of Playtime):** The final confrontation with the core mystery (the
      Carrot Thief) or antagonist (the Hooman). The narrative path is largely determined by the accumulated Comfort and Clue
      Meters, leading directly to one of the multiple planned, high-impact endings.
+
   2. **Key Narrative "Pivot Points":** - Identify and describe at least three crucial **Global Pivot Points** where player decisions radically and
+
      permanently shift the subsequent narrative trajectory, potentially locking off entire Act III paths: - **Pivot A (The Hoard):** Choosing to conceal a critical piece of evidence (e.g., a specific tell-tale bite mark
      on a piece of cardboard) from a primary ally (the dominant Alpha). This decision locks the player onto a solo path for
      the rest of the game but preserves the Clue Meter integrity by preventing the ally from potentially destroying it out of
@@ -1277,7 +1433,9 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      methodical, time-consuming investigation of the bedding vs. a desperate, rushed search of the food bowl for a quick
      solution). The former boosts Clue but costs Comfort due to prolonged exposure and lack of naps; the latter is safer for
      Comfort but risks missing vital evidence.
+
   3. **Choice and Meter Mechanics (The Dual Metric System):** - **The "Comfort" Meter (Dynamic Mental State):** A meter (0-100) reflecting the protagonist's psychological
+
      stability (how safe and fed they feel). Influenced by stress, isolation, hunger, or exposure to loud noises (vacuum
      cleaner). - _Low Comfort Effects (0-30):_ Unlocks new, unreliable dialogue/investigation options (e.g., frantic wheeking,
      hiding-driven choices). New text boxes appear, questioning the player's choices and reality ("Is that a footstep?" "Did
@@ -1288,7 +1446,9 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      undeniable counter-arguments in confrontations with antagonists. Also unlocks optional, lore-heavy side scenes
      (flashbacks to previous food thefts). - _Low Clue Collection (0-30):_ Forces the protagonist to rely on speculation and intuition, leading to more
      aggressive, emotionally driven dialogue choices that can drain the Comfort Meter.
+
   4. **Multiple Planned Endings (Criteria Definition):** The player's final state is a matrix of the two meter levels: - **The "True Ending":** (High Comfort, High Clue) – Protagonist solves the mystery, exposes the truth, and
+
      maintains their mental integrity, leading to a definitive, positive conclusion (The Hooman brings a replacement Giant
      Carrot Slice). - **The "Despair Ending":** (Low Comfort, High Clue) – Protagonist solves the mystery with undeniable evidence, but
      suffers a permanent psychological break, unable to cope with the cosmic truth they uncovered (They discover the Hooman
@@ -1305,27 +1465,36 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Genre Focus:** Rhythm Game – Futuristic Racing/Synesthesia and High-Octane Flow **(The Wheel of Fortune)**
 - **Goal:** To rapidly sketch the foundational input timing, visual feedback model, and the crucial integration of the
+
   rhythm mechanic with the core movement/racing gameplay for a new high-octane Futuristic Racing Rhythm Game. The core
   concept is **The Flow State**: where perfect rhythm execution is indistinguishable from perfect **Treadmill
   Performance**. The USP is the literal synchronization of the 3D track (the wheel) and the musical score.
+
 - **Expansion & Context:** The document needs to define the complete rhythm loop and its physical manifestation:
   1. **Primary Input Mechanism (The Six-Axis Controller \- Cavy Paws):** - Define the precise control scheme: A **Two-Hand, Six-Button System** (e.g., Left/Right/Up/Down on D-Pad/Left
+
      Analog for directional notes corresponding to footfalls \+ Left/Right Triggers for sustained/charging notes
      corresponding to maintaining speed). This allows for complex polyrhythmic patterns. - **Synchronization:** Inputs are strictly synchronized to the musical beat and subdivision (e.g., 1/4, 1/8, 1/16
      notes). The on-screen visualizer must clearly show the timing windows on the spinning wheel. - **Complex Pattern Mapping:** Specify how complex musical passages are mapped: sustained notes map to **Trigger
      Holds** (which simultaneously charge a speed boost or a temporary shield), beat-drop bursts map to **Simultaneous
      Presses** (activating a high-speed gate or firing a temporary burst of _Wheeking_ that stuns competitors).
+
   2. **Rhythm-to-Speed Translation (The Boost Meter Flow \- Velocity/Wheek Power):** - Detail how successful input chaining (the combo multiplier, max $\\times 64$) directly translates into tangible
+
      vehicle (guinea pig) performance (running speed on the wheel, stamina, temporary shield integrity). - **Perfect Inputs:** Maximize speed, rapidly build the **Wheek Power Meter**, and increase the combo multiplier. A
      max-level combo activates the **"Flow State" (Perfect Paws)**, where the guinea pig glows and runs at its peak
      performance. - **Good Inputs:** Maintain core speed, provide minor Wheek Power build, and sustain the combo. - **Off-Beat Inputs:** Cause a brief moment of paw-slip (visual stutter), prevent Boost gain, and reduce the combo
      multiplier slightly (e.g., $\\times 64$ drops to $\\times 32$). - **Missed Inputs:** Result in an immediate, sharp loss of speed, a complete break of the combo multiplier (drops
      to $\\times 1$), and a significant reduction in the Wheek Power Meter (The Cavy gets winded).
+
   3. **Visual Language/Feedback (The Accuracy Hologram \- Scent Trail):** - Define the highly visible, distinct visual indicators for timing accuracy, which are projected onto the track
+
      (the wheel's inner surface) in front of the vehicle: - **"Perfect" (Aether Blue Flash):** Maximum score, sound effect is a crisp, high-pitch synthesizer strike.
      _Wheek Power gain is quadrupled._ - **"Good" (Emerald Green Glow):** Medium score, subtle sound effect. _Wheek Power gain is doubled._ - **"Off-Beat" (Amber Warning Pulse):** Low score, audible paw-slip sound effect. _Wheek Power stalls._ - **"Miss" (Crimson Static Burst):** Combo broken, the guinea pig visually stumbles, and the screen briefly
      distorts. _Massive Wheek Power loss._
+
   4. **Synesthetic Environment Integration (The Living Track \- The Spinning Wheel):** - Crucially, propose how the 3D race track environment itself dynamically responds to the music, creating a
+
      **Synesthetic Experience**. The wheel is not merely background; it is a manifestation of the music. - **Musical Response:** The wheel's spokes pulse and expand/contract with the bass line; dynamic lighting schemes
      (from the cage-light above) shift their hue and intensity with melodic changes. Major score drops are synchronized with
      the wheel's surface transforming (e.g., a smooth run suddenly introduces small, rhythmic bumps). - **Obstacle Synchronization:** Obstacles (e.g., small plastic blocks, temporary walls, patches of sticky hay)
@@ -1339,26 +1508,35 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 **Command:** `ForgeGameArtifact \\\\\\\"core\\\\\\\\_mechanic\\\\\\\" \\\\\\\"turn\\\\\\\\_based\\\\\\\\_rpg\\\\\\\"
 \\\\\\\"generate\\\\\\\\_concept\\\\\\\\_document\\\\\\\"`
 
-- **Genre Focus:** Turn-Based RPG – Tactical Combat with Synergistic Environmental Manipulation **(The Cavy Commando
-  Squad)**
+- **Genre Focus:** Turn-Based RPG – Tactical Combat with Synergistic Environmental Manipulation \*\*(The Cavy Commando
+
+  Squad)\*\*
+
 - **Goal:** To rapidly sketch the foundational grid-based combat system, turn resolution model, and character
+
   progression focused on synergistic environmental manipulation for a new Tactical Turn-Based RPG. The USP is deep,
   exploitable interaction with the battlefield (a cluttered bedroom/cage), where the environment (bedding, food, toys) is
   a third, manipulable entity.
+
 - **Expansion & Context:** The concept must establish clear, robust rules for tactical engagement:
   1. **Movement and Positioning (The AP Economy \- Action Pellets):** - **Grid Type:** Define the battlefield as a **Square-Based Grid** (carpet tiles, cage squares) to simplify
+
      line-of-sight and cover calculations. - **Action Points (AP):** Units have a fixed pool of **4 Action Pellets (AP)** per turn. Movement costs 1 AP per
      square. Minor abilities (Nipping, Squeak Call) cost 1-2 AP. Major, powerful abilities (Grave-Digging, Hay Bale Toss)
      cost 3-4 AP. Units can choose to save unused AP for a maximum of **2 AP** into the next turn, or spend up to 4 AP on a
      specialized **Sentry/Defensive Stance** that triggers a counter-attack on the enemy's turn (A sharp, reactive bite). - **Cover:** Incorporate **Half Cover** (25% defense bonus against ranged attacks, e.g., small cardboard tube) and
      **Full Cover** (50% defense bonus, e.g., behind the full hay rack or a boot). Positioning for cover is a core tactical
      necessity; standing adjacent to an enemy (Biting range) removes cover bonuses.
+
   2. **Turn Order Determination (The Initiative/Action Queue Hybrid \- The Wheek-Cycle):** - Establish a hybrid system designed to reward foresight and moderate action costs: - **Initiative Score:** Determines the initial turn sequence at the start of combat (based on a Unit's
+
      Agility/Sniff Stat). - **Action Queue:** Unit speed _and_ the AP cost of their last action dictate when they take their _next_ turn.
      Using a high-cost ability (4 AP \- a full body Popcorn Jump) places the unit further back in the queue, potentially
      allowing multiple enemy units to act before them. Conversely, using fast, low-cost actions (1 AP \- a quick scurry)
      allows the unit to cycle back into the queue quickly, rewarding mobility and tactical harassment.
+
   3. **Environmental Manipulation System (The Food/Bedding Chain):** - Detail the core mechanic for how abilities interact with and permanently alter the battlefield terrain, creating
+
      **Effect Zones** that persist for a set number of turns. - **Effect Zones (Terrain Types):** Define key terrain types that react to specific damage/ability types: **_Water
      Bowl Spillage_** (slippery, conductive), **_Pellet Crumbs_** (luring, irresistible), **_Wet Bedding_** (slows movement,
      flammable if dry), **_Cardboard Obstacles_** (flammable/destructible cover). - A **Fire Attack (Flint-Strike Chew)** on **Dry Bedding** creates a persistent **"Smoking" Zone** (damage over
@@ -1367,7 +1545,9 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      chance of forced slip/fall, losing 1 AP). - **Chain Reactions (Advanced Synergy):** Define how effects can be combined for powerful, high-reward plays:
      applying a **"Wind" Ability (Rapid Flapping Ears)** to a **"Smoking" Zone** causes the smoke to spread rapidly in the
      wind's direction (a 3-square wide cone), rewarding clever sequencing by obscuring enemy line of sight.
+
   4. **Progression and Job Classes:** - Define how the progression system ties directly into this environmental mechanic. - New **"Job Classes"** should specialize in unlocking and exploiting specific terrain features and manipulation
+
      chains through unique skill trees. Examples: - **_The Forager:_** Specializes in creating effect zones (e.g., strategically dropping small vegetable pieces,
      creating minor Water Spills). Their high AP abilities are focused on battlefield setup. - **_The Sniffer:_** Specializes in combining and catalyzing zones (e.g., using a loud Wheek to alert enemies to
      a Bait Zone, or a Scent Marker to spread a Status Effect). Their damage is low unless they exploit a synergistic chain. - **_The Tunnel-Rat:_** Specializes in exploiting movement penalties (e.g., creating a **Small Sinkhole** in the
@@ -1380,16 +1560,21 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Genre Focus:** Metroidvania – Sci-Fi Non-Linear Exploration and Ability-Gating **(The Great House Escape)**
 - **Goal:** To rapidly sketch the foundational exploration model and the core ability-gating mechanism for a new Sci-Fi
+
   Metroidvania, emphasizing player agency, non-linear world design, and rewarding keen observation in a massive, hostile
   human dwelling. The USP is the interconnectedness of a massive, derelict alien-human hybrid world (The House), where
   every ability opens multiple distinct pathways for a tiny guinea pig.
+
 - **Expansion & Context:** The document should function as a map for player traversal and world design:
   1. **Starting Kit and Basic Capabilities:** - Outline the player's initial abilities and equipment: basic run/scurry, a low jump (enough to clear a pellet), a
+
      functional **Wall-Nuzzle** (allows clinging to a small vertical surface), and a short-range **Nibble Attack** with
      limited stamina (low damage). - **Initial Restriction:** The player is trapped in a small, localized **"Quarantine Sector" (The Starting Cage)**
      with only one clear exit blocked by a Type A barrier (a loosely placed book), forcing them to learn the basic movement
      mechanics and combat loop (against dust bunnies) before granting freedom into the **Kitchen**.
+
   2. **Key Progression Abilities and Barrier Solutions:** - Define the first three major "key" abilities required for deep progression, detailing the specific
+
      physical/environmental barrier each ability overcomes: - **Ability A (_The Popcorn Leap_):** Overcomes: Low obstacles like shoes, small piles of laundry, and allows the
      player to bounce off unstable surfaces. _Physical Result:_ Unlocks the **Central Hub (The Living Room)**, the game's
      main intersection. - **Ability B (_Chewing Proficiency Upgrade_):** Overcomes: Thin plastic sheets, weakened cardboard box walls,
@@ -1397,13 +1582,17 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      **Wall Vents**, bypassing complex room puzzles and accessing the vertical **HVAC/Duct** network. - **Ability C (_Scent Trail Markings_):** Overcomes: Areas of extreme darkness/confusion (under the couch) or
      areas with distracting, confusing smells (perfume/cleaning products). _Physical Result:_ Grants access to the **Bedroom
      Zone**, a mandatory high-threat area (The Cat).
+
   3. **Hierarchy of Gating (Barrier Catalog):** - Outline a strict hierarchy of locked doors/paths, matching each barrier to the required ability, ensuring
+
      backtracking remains meaningful: - **Type 1 Barrier (Minor):** Small gap on the floor/low ledge (Requires _Popcorn Leap_). - **Type 2 Barrier (Major):** A thin plastic seal or a sturdy cardboard door (Requires _Chewing Proficiency
      Upgrade_). - **Type 3 Barrier (Environmental):** Areas with loud, persistent noises (Washing Machine) or areas that induce
      confusion (Dark closets) (Requires _Scent Trail Markings_ or a later _Sound Dampening Ear Flaps_). - **Type 4 Barrier (Security):** Doors blocked by a heavy object (Requires _Traction Pads_ – a mid-to-late game
      utility that involves a push/pull mini-game). - **Type 5 Barrier (Advanced Mobility):** Distant kitchen counters or long, horizontal chasms (Requires _Grapple
      Line (made of string)_ or a _Sliding Mat_ ability).
+
   4. **Non-Linear World Design (Player Agency Loop):** - Pay special attention to the non-linear aspect. Detail a crucial mid-game scenario that defines player freedom: - **The Nexus Point:** Acquisition of **Ability B (_Chewing Proficiency Upgrade_)** simultaneously unlocks _three_
+
      distinct, major pathways leading to entirely separate zones and subsequent, unique ability upgrades: - **Path 1 (The Tech Route):** Leads through the **Electrical Conduits** to the _Wire-Nipping Module_ (Ability
      D), focusing on puzzle-solving and bypassing security systems (like a home alarm). - **Path 2 (The Combat Route):** Leads through the **Pantry/Food Storage** to the _Super-Sized Pellet Attack_
      (Ability E), focusing on intense combat encounters (spiders, mice) and boss fights (The Cat's Tail). - **Path 3 (The Movement Route):** Leads through the **Laundry Chute/Pipes** to the _Wall-Climb Kit_ (Ability F),
@@ -1544,10 +1733,15 @@ Axis goal of creating a rewarding sense of non-linear exploration and mastery.
 This blueprint defines the operational framework for the following core Metroidvania mechanics:
 
 1. **Gated Progression Logic**: Manages the state of all barriers, doors, and pathways, ensuring they only unlock when
+
    the player possesses the required key item or ability.
+
 2. **Persistent World State Management**: Tracks the state of non-respawning resources, broken walls, cleared
+
    objectives, and previously defeated bosses across save and load cycles.
+
 3. **Map Discovery and Rendering Logic**: Defines the event-driven system for revealing map regions upon player entry
+
    and logging these discoveries for permanent display.
 
 ## How (Operational Principles)
@@ -1555,11 +1749,16 @@ This blueprint defines the operational framework for the following core Metroidv
 The module operates on a **Hybrid State-Based, Event-Driven** principle:
 
 - **Continuous Check (World State)**: A continuous, low-overhead process monitors the player's inventory and ability
+
   list.
+
 - **Event-Driven Trigger (Gated Access)**: When the player attempts to interact with a barrier (the **Input Event**),
+
   the system triggers a discrete check against the player's current state.
-- **Output**: If the state check passes, the barrier state machine executes an **Unlock** transition (the **Output
-  Event**), updating the permanent World State Log.
+
+- **Output**: If the state check passes, the barrier state machine executes an **Unlock** transition (the \*\*Output
+
+  Event\*\*), updating the permanent World State Log.
 
 ## Core Architecture: Event-Driven State Machine/World State Management
 
@@ -1575,25 +1774,32 @@ The module successfully integrates the two foundational architectural poles to m
 This UMB is a direct functional implementation of the strategic principles defined in the genesis artifacts:
 
 - **AOP-GAMEDEV-001**: Adheres to the three-phase creation protocol, specifically the dual-axis mandate.
-- **UMB-HELIX-001**: This artifact defines the next **rung** on the Genesis Helix, connecting **"World State
-  Management"** (Technical Axis) with **"Non-Linear Exploration Design"** (Creative Axis).
+- **UMB-HELIX-001**: This artifact defines the next **rung** on the Genesis Helix, connecting \*\*"World State
+
+  Management"** (Technical Axis) with **"Non-Linear Exploration Design"\*\* (Creative Axis).
 
 ## IV. Prerequisites, Inputs, & Dependencies
 
 ## Required Inputs
 
 1. **Gated Item ID**: The specific item or ability ID required to unlock the gate (e.g., `ABL-DOUBLE-JUMP-001`,
+
    `KEY-BOSSOBJECT-004`).
+
 2. **Region ID**: The unique identifier for the specific area or room this gate controls.
 3. **World State Flag**: A Boolean flag in the persistent save data that will be set to `True` upon successful,
+
    permanent unlock.
 
 ## Dependencies
 
 - \\\[[CODEX-001: The Phoenix
+
   Codex](https://www.google.com/search?q=https://drive.google.com/open%3Fid%3D1VRHZ-NJNmZCaVw0Ea4HePwMaX8EhL8-ZF79Ui8veZXw)\\\]
+
 - \\\[AOP-DUAL-AXIS-GROWTH-001\\\]
 - \\\[Genesis Chain Log\\\]
+
 -
 
 \\\[[UMB-HELIX-001](https://www.google.com/search?q=https://drive.google.com/open%3Fid%3D1_TzIlCD06Y1eiSfDHP_o6BPox2B1iIyJwiltR11MOu8)\\\]
@@ -1606,19 +1812,28 @@ This section provides direct, executable prompts to immediately leverage the UMB
 continued development, in compliance with the **AOP-Prompt-Packet-001** protocol.
 
 - **🛠️ Generate SPEC for Gated Ability (Phase I)**:
+
   CMD: ForgeArtifact \--artifact-type SPEC \--name SPEC-ABILITY-DOUBLEJUMP-001 \--technical-focus "Gated Progression
   Logic" \--creative-goal "Heightened Verticality" \--link-to UMB-LOGIC-METROIDVANIA-001
+
 - **📈 Report Gated Progression Coherence Index (GPCI)**:
+
   CMD: AnalyzeArtifact \--artifact-id UMB-LOGIC-METROIDVANIA-001 \--metric GPCI \--target-world-state "All Gates"
   \--output-format GPCI-Report
+
 - **🔄 Simulate Door Unlock Event**:
+
   CMD: ExecuteModule \--module-id UMB-LOGIC-METROIDVANIA-001 \--input-event "AttemptAccess" \--gated-item-id
   ABL-DOUBLE-JUMP-001 \--target-region RGN-CAVERN-003
+
 - **🎨 Define Creative Axis Challenge for Map Aesthetics**:
+
   CMD: ForgeArtifact \--artifact-type SELT \--name CreativeChallenge_MapReveals \--define-creative-axis "Aesthetic:
   Minimalist, Holographic Map" \--define-ux "High-Fidelity Region Discovery Animation" \--link-to
   UMB-LOGIC-METROIDVANIA-001
+
 - **🏗️ Visualize Genesis Helix with Latest Rung**:
+
   CMD: ExecuteModule \--module-id UMB-HELIX-001 \--update-rung UMB-LOGIC-METROIDVANIA-001 \--render-mode
   InteractiveDashboard
 

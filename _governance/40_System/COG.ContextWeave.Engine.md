@@ -1,24 +1,19 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `COG.CONTEXTWEAVE.ENGINE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `COG.ContextWeave.Engine` | The Sovereign ID. |
-| **Official Name** | `COG.ContextWeave.Engine.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `COG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `COG.ContextWeave.Engine`       | The Sovereign ID. |
+| **Official Name**   | `COG.ContextWeave.Engine.md`    | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `COG`                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                      | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
+| **Status (State)**  | `Verdict`                       | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`         | The Intent.       |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              | Verification.     |
 
 ---
 
@@ -39,6 +34,20 @@
 
 ---
 
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+---
+
 # The ContextWeave Engine (COG.ContextWeave.Engine)
 
 > **Domain**: COG (Cognition) **Signal**: HIGH
@@ -48,8 +57,6 @@
 ###### **[ARTIFACT START]**
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
-
-| Field | Value |
 
 ---
 

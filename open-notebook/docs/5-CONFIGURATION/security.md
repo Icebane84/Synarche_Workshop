@@ -10,10 +10,10 @@ Open Notebook encrypts API keys stored in the database using Fernet symmetric en
 
 ### Configuration Methods
 
-| Method | Documentation |
-|--------|---------------|
-| **Settings UI** | [API Configuration Guide](../3-USER-GUIDE/api-configuration.md) |
-| **Environment Variables** | This page (below) |
+| Method                    | Documentation                                                   |
+| ------------------------- | --------------------------------------------------------------- |
+| **Settings UI**           | [API Configuration Guide](../3-USER-GUIDE/api-configuration.md) |
+| **Environment Variables** | This page (below)                                               |
 
 ### Setup
 
@@ -28,9 +28,9 @@ Any string works — it will be securely derived via SHA-256 internally. Use a s
 
 ### Default Credentials
 
-| Setting | Default | Security Level |
-|---------|---------|----------------|
-| Password | `open-notebook-change-me` | Development only |
+| Setting        | Default                       | Security Level               |
+| -------------- | ----------------------------- | ---------------------------- |
+| Password       | `open-notebook-change-me`     | Development only             |
 | Encryption Key | **None** (must be configured) | Required for API key storage |
 
 **The encryption key has no default.** You must set `OPEN_NOTEBOOK_ENCRYPTION_KEY` before using the API key configuration feature. Without it, encrypting/decrypting API keys will fail.
@@ -47,12 +47,12 @@ environment:
 
 ### Security Notes
 
-| Scenario | Behavior |
-|----------|----------|
-| Key configured | API keys encrypted with your key |
+| Scenario          | Behavior                                          |
+| ----------------- | ------------------------------------------------- |
+| Key configured    | API keys encrypted with your key                  |
 | No key configured | Encryption/decryption will fail (key is required) |
-| Key changed | Old encrypted keys become unreadable |
-| Legacy data | Unencrypted keys still work (graceful fallback) |
+| Key changed       | Old encrypted keys become unreadable              |
+| Legacy data       | Unencrypted keys still work (graceful fallback)   |
 
 ### Key Management
 
@@ -66,11 +66,13 @@ environment:
 ## When to Use Password Protection
 
 ### Use it for:
+
 - Public cloud deployments (PikaPods, Railway, DigitalOcean)
 - Shared network environments
 - Any deployment accessible beyond localhost
 
 ### You can skip it for:
+
 - Local development on your machine
 - Private, isolated networks
 - Single-user local setups
@@ -225,14 +227,14 @@ notebooks = client.get_notebooks()
 ### JavaScript/TypeScript
 
 ```javascript
-const API_URL = 'http://localhost:5055';
-const PASSWORD = 'your_password';
+const API_URL = "http://localhost:5055";
+const PASSWORD = "your_password";
 
 async function getNotebooks() {
   const response = await fetch(`${API_URL}/api/notebooks`, {
     headers: {
-      'Authorization': `Bearer ${PASSWORD}`
-    }
+      Authorization: `Bearer ${PASSWORD}`,
+    },
   });
   return response.json();
 }
@@ -251,7 +253,7 @@ services:
     image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     ports:
-      - "127.0.0.1:8502:8502"  # Bind to localhost only
+      - "127.0.0.1:8502:8502" # Bind to localhost only
     environment:
       - OPEN_NOTEBOOK_PASSWORD=your_secure_password
     security_opt:
@@ -318,14 +320,14 @@ CORS_ORIGINS=https://notebook.example.com,https://admin.example.com
 
 Open Notebook's password protection provides **basic access control**, not enterprise-grade security:
 
-| Feature | Status |
-|---------|--------|
-| Password transmission | Plain text (use HTTPS!) |
-| Password storage | In memory |
-| User management | Single password for all |
-| Session timeout | None (until browser close) |
-| Rate limiting | None |
-| Audit logging | None |
+| Feature               | Status                     |
+| --------------------- | -------------------------- |
+| Password transmission | Plain text (use HTTPS!)    |
+| Password storage      | In memory                  |
+| User management       | Single password for all    |
+| Session timeout       | None (until browser close) |
+| Rate limiting         | None                       |
+| Audit logging         | None                       |
 
 ### Risk Mitigation
 
@@ -342,14 +344,14 @@ Open Notebook's password protection provides **basic access control**, not enter
 
 For deployments requiring advanced security:
 
-| Need | Solution |
-|------|----------|
-| SSO/OAuth | Implement OAuth2/SAML proxy |
-| Role-based access | Custom middleware |
-| Audit logging | Log aggregation service |
-| Rate limiting | API gateway or nginx |
-| Data encryption | Encrypt volumes at rest |
-| Network segmentation | Docker networks, VPC |
+| Need                 | Solution                    |
+| -------------------- | --------------------------- |
+| SSO/OAuth            | Implement OAuth2/SAML proxy |
+| Role-based access    | Custom middleware           |
+| Audit logging        | Log aggregation service     |
+| Rate limiting        | API gateway or nginx        |
+| Data encryption      | Encrypt volumes at rest     |
+| Network segmentation | Docker networks, VPC        |
 
 ---
 

@@ -1,37 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.TRIAGE.REPORT.001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# GVRN.Triage.Report.001.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                             | Description       |
 | :------------------ | :-------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-GVRN.TRIAGE.REPORT.001-001` | The Sovereign ID. |
 | **Official Name**   | `GVRN.Triage.Report.001.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                 | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                 | The Standard.     |
 | **Domain**          | `GVRN`                            | The Subject.      |
 | **Celestial Class** | `[PLANET]`                        | The Weight.       |
-| **Evolution**       | `Omega Ascension`                 | The Maturity.     |
-| **Status**          | `[ACTIVE]`                        | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                        | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`           | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`     | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# GVRN.Triage.Report.001.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # Refactor Ignition: Triage Report (Batch 001)
 
@@ -52,13 +64,11 @@ The scan identified a **Critical Mass of Rind** (Legacy Artifacts) that predates
 
 The following artifacts act as "Keystones" and must be refactored first to prevent dependency breaks during the wider rollout.
 
-| Legacy ID              | Proposed RNC ID (v13.0)     | Criticality   |
-| :--------------------- | :-------------------------- | :------------ |
-| `UMB-PHOENIX-CORE-002` | **`ARCH.Phoenix.Core`**     | **Axiomatic** |
-| `UMB-OSLM-001`         | **`GVRN.Registry.Master`**  | **Axiomatic** |
-| `UMB-LOOM-001`         | **`SYNG.Loom.Master`**      | **High**      |
-| `UMB-SGM-001`          | **`GVRN.Gov.Module`**       | **High**      |
-| `UMB-ESF-001`          | **`COG.Episemantics.Core`** | **High**      |
+| `UMB-PHOENIX-CORE-002` | **`ARCH.Phoenix.Core`** | **Axiomatic** |
+| `UMB-OSLM-001` | **`GVRN.Registry.Master`** | **Axiomatic** |
+| `UMB-LOOM-001` | **`SYNG.Loom.Master`** | **High** |
+| `UMB-SGM-001` | **`GVRN.Gov.Module`** | **High** |
+| `UMB-ESF-001` | **`COG.Episemantics.Core`** | **High** |
 
 ## III. Operational Queue (The Long Tail)
 
@@ -80,3 +90,5 @@ This will transmute the Core, Registry, Loom, Governance, and Episemantics layer
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

@@ -1,26 +1,44 @@
 # AOP-CW-001_ContextWeaveEngine_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-CW-001-CONTEXTWEAVEENGINE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-CW-001_ContextWeaveEngine_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                        | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                             | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-CW-001-CONTEXTWEAVEENGINE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-CW-001_ContextWeaveEngine_v11.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -29,16 +47,20 @@ Title: ContextWeave Engine Protocol
 Source:
 
 - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-CW-001_ContextWeaveEngine_v11.0.md)
+
   Description: >
   The operational framework for the ContextWeave Engine, responsible for dynamically interlinking conceptual contexts and pattern recognition in the Knowledge Graph.
   Version: 11.0
   Status: ACTIVE
   Compliance: OGLN v11.0
   Genesis:
+
 - Author: The Synarche Workshop
 - Date: 2026-01-17
 - Timestamp: 1768646400
+
   Tags:
+
 - #Context
 - #Weave
 - #PatternRecognition
@@ -47,17 +69,14 @@ Source:
 ---
 
 > [!IMPORTANT]
-> **GENESIS STAMP**
 >
 > - **Reforged By:** Antigravity Agent (The Lightbinder)
 > - **Reforged Date:** 2026-01-25
 > - **Validation:** PTAS Absorption Cluster.
-> - **Relations:** `POWERED_BY: UMB-LOOM-001`, `INPUT_FOR: UMB-CSE-001`, `MAPPED_TO: [[Phoenix_Form_Outline.md]]`.
 
 # AOP-CW-001: ContextWeave Engine Protocol
 
 > **Domain**: COG (Cognition)
-> **Evolution**: Cognitive Ascension
 > **Signal**: ESF-ALPHA
 
 ## I. Executive Summary
@@ -68,10 +87,10 @@ The **ContextWeave Engine** is the primary analytical engine for the Phoenix Syn
 
 ## II. Algorithmic Principles
 
-1.  **Adaptive Contextualization:** Dynamically adjusts analysis granularity based on data type.
-2.  **Emergent Pattern Recognition:** Identifies non-obvious connections between contexts.
-3.  **Self-Correction:** Refines relational inferences based on cognitive feedback.
-4.  **Scalable Weaving:** Maintains high performance across dense knowledge-graph traversals.
+1. **Adaptive Contextualization:** Dynamically adjusts analysis granularity based on data type.
+2. **Emergent Pattern Recognition:** Identifies non-obvious connections between contexts.
+3. **Self-Correction:** Refines relational inferences based on cognitive feedback.
+4. **Scalable Weaving:** Maintains high performance across dense knowledge-graph traversals.
 
 ---
 
@@ -132,3 +151,5 @@ Adjusts parameters via Reinforcement Learning based on the utility of generated 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

@@ -73,12 +73,14 @@ After starting the API and frontend, configure your AI provider via the Settings
 5. Click **Discover Models** → **Register Models**
 
 Popular providers:
+
 - **OpenAI** - https://platform.openai.com/api-keys
 - **Anthropic (Claude)** - https://console.anthropic.com/
 - **Google** - https://ai.google.dev/
 - **Groq** - https://console.groq.com/
 
 For local development, you can also use:
+
 - **Ollama** - Run locally without API keys (see "Local Ollama" below)
 
 > **Note:** API key environment variables (e.g., `OPENAI_API_KEY`) are deprecated. Use the Settings UI to manage credentials instead.
@@ -133,6 +135,7 @@ uv run python -m api.main
 ```
 
 Check the logs - you should see messages like:
+
 ```
 Running migration 001_initial_schema
 Running migration 002_add_vectors
@@ -153,6 +156,7 @@ make api
 ```
 
 You should see:
+
 ```
 INFO:     Application startup complete
 INFO:     Uvicorn running on http://0.0.0.0:5055
@@ -180,6 +184,7 @@ npm run dev
 ```
 
 You should see:
+
 ```
 > next dev
   ▲ Next.js 16.x
@@ -213,16 +218,19 @@ This starts SurrealDB, API, and frontend in one command.
 ### Individual Terminals (Recommended for Development)
 
 **Terminal 1 - Database:**
+
 ```bash
 make database
 ```
 
 **Terminal 2 - API:**
+
 ```bash
 make api
 ```
 
 **Terminal 3 - Frontend:**
+
 ```bash
 cd frontend && npm run dev
 ```
@@ -306,6 +314,7 @@ git push origin feature/my-feature -f
 **Problem**: API can't connect to SurrealDB
 
 **Solutions**:
+
 1. Check if SurrealDB is running: `docker ps | grep surrealdb`
 2. Verify URL in `.env`: Should be `ws://localhost:8000/rpc`
 3. Restart SurrealDB: `docker stop surrealdb && docker rm surrealdb`
@@ -316,6 +325,7 @@ git push origin feature/my-feature -f
 **Problem**: Port 5055 or 3000 is already in use
 
 **Solutions**:
+
 ```bash
 # Find process using port
 lsof -i :5055  # Check port 5055
@@ -332,6 +342,7 @@ uvicorn api.main:app --port 5056
 **Problem**: Import errors when running API
 
 **Solutions**:
+
 ```bash
 # Reinstall dependencies
 uv sync
@@ -345,6 +356,7 @@ pip install -e .
 **Problem**: API fails to start with migration errors
 
 **Solutions**:
+
 1. Check SurrealDB is running: `curl http://localhost:8000/`
 2. Check credentials in `.env` match your SurrealDB setup
 3. Check logs for specific migration error: `make api 2>&1 | grep -i migration`
@@ -355,6 +367,7 @@ pip install -e .
 **Problem**: Database schema seems outdated
 
 **Solutions**:
+
 1. Restart API - migrations run on startup: `make api`
 2. Check logs show "Migrations completed successfully"
 3. Verify `/migrations/` folder exists and has files
@@ -372,6 +385,7 @@ ollama pull mistral
 ```
 
 Then configure via the Settings UI:
+
 1. Go to **Settings** → **API Keys** → **Add Credential** → **Ollama**
 2. Enter base URL: `http://localhost:11434`
 3. Click **Save**, then **Test Connection**

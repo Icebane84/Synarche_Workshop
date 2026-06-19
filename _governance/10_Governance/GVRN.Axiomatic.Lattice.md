@@ -1,42 +1,52 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.AXIOMATIC.LATTICE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.Axiomatic.Lattice`      | The Sovereign ID. |
+| **Official Name**   | `GVRN.Axiomatic.Lattice.md`   | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[STAR]`                      | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `[CANONIZED]`                 | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # GVRN.Axiomatic.Lattice.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, Axiom, Lattice, Omega` **Criticality: Axiomatic**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description        |
-| :------------------ | :---------------------------- | :----------------- |
-| **Artifact ID**     | `GVRN.Axiomatic.Lattice`      | The Sovereign ID.  |
-| **Official Name**   | `GVRN.Axiomatic.Lattice.md`   | The Filename.      |
-| **Legacy ID**       | `UMB-LATTICE-001`             | The Transmuted ID. |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.      |
-| **Domain**          | `GVRN`                        | The Subject.       |
-| **Celestial Class** | `[STAR]`                      | The Weight.        |
-| **Evolution**       | `Omega Ascension`             | The Maturity.      |
-| **Status**          | `[CANONIZED]`                 | The Lifecycle.     |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.       |
+| Key | Value | Description |
+| **Legacy ID** | `UMB-LATTICE-001` | The Transmuted ID. |
 
 ---
-
-### **Block B: The Ethos Field (IDM-001)**
 
 > **"Geometry is the silence of Law."**
 

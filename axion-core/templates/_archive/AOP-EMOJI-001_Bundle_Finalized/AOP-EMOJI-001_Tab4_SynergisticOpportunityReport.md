@@ -12,15 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                      | Description       |
+| :---------------- | :--------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-AOP-EMOJI-001-TAB4-SYNERGISTICOPPORTUNITYREPORT-001` | The Sovereign ID. |
-| **Official Name** | `AOP-EMOJI-001_Tab4_SynergisticOpportunityReport.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| **Official Name** | `AOP-EMOJI-001_Tab4_SynergisticOpportunityReport.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**                                          | The Standard.     |
+| **Domain**        | `GVRN`                                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                              | The Network.      |
 
 ---
 

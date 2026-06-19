@@ -30,13 +30,12 @@ artifact_anchor:
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.Prot.Canonize` | The Sovereign ID. |
-| **Official Name** | `canonize.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Artifact ID**   | `ARCH.Prot.Canonize`              | The Sovereign ID. |
+| **Official Name** | `canonize.md`                     | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `ARCH`                            | The Subject.      |
+| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
 
 ---
 

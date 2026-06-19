@@ -17,9 +17,11 @@ Get Open Notebook running with **100% local AI** using Ollama. No cloud API keys
 ## Step 1: Choose Your Setup (1 min)
 
 ### Local Machine (Same Computer)
+
 Everything runs on your machine. Recommended for testing/learning.
 
 ### Remote Server (Raspberry Pi, NAS, Cloud VM)
+
 Run on a different computer, access from another. Needs network configuration.
 
 ---
@@ -29,6 +31,7 @@ Run on a different computer, access from another. Needs network configuration.
 Create a new folder `open-notebook-local` and add this file:
 
 **docker-compose.yml**:
+
 ```yaml
 services:
   surrealdb:
@@ -44,8 +47,8 @@ services:
     image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     ports:
-      - "8502:8502"  # Web UI (React frontend)
-      - "5055:5055"  # API (required!)
+      - "8502:8502" # Web UI (React frontend)
+      - "5055:5055" # API (required!)
     environment:
       # Encryption key for credential storage (required)
       - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
@@ -80,10 +83,10 @@ services:
     #        - driver: nvidia
     #          count: 1
     #          capabilities: [gpu]
-
 ```
 
 **Edit the file:**
+
 - Replace `change-me-to-a-secret-string` with your own secret (any string works)
 
 ---
@@ -122,6 +125,7 @@ This downloads the model (will take 1-5 minutes depending on your internet).
 ## Step 5: Access Open Notebook (instant)
 
 Open your browser:
+
 ```
 http://localhost:8502
 ```
@@ -208,6 +212,7 @@ You should see the Open Notebook interface.
 ### "ollama: command not found"
 
 Docker image name might be different:
+
 ```bash
 docker ps  # Find the Ollama container name
 docker exec <container_name> ollama pull mistral
@@ -216,6 +221,7 @@ docker exec <container_name> ollama pull mistral
 ### Model Download Stuck
 
 Check internet connection and restart:
+
 ```bash
 docker compose restart ollama
 ```
@@ -232,6 +238,7 @@ docker compose up -d
 ### Low Performance
 
 Check if GPU is available:
+
 ```bash
 # Show available GPUs
 docker exec open-notebook-local-ollama-1 ollama ps
@@ -294,12 +301,12 @@ docker exec open-notebook-local-ollama-1 ollama pull neural-chat
 
 ## Common Model Choices
 
-| Model | Speed | Quality | VRAM | Best For |
-|-------|-------|---------|------|----------|
-| **mistral** | Fast | Good | 4GB | Testing, general use |
-| **neural-chat** | Medium | Better | 6GB | Balanced, recommended |
-| **llama2** | Slow | Best | 8GB+ | Complex reasoning |
-| **phi** | Very Fast | Fair | 2GB | Minimal hardware |
+| Model           | Speed     | Quality | VRAM | Best For              |
+| --------------- | --------- | ------- | ---- | --------------------- |
+| **mistral**     | Fast      | Good    | 4GB  | Testing, general use  |
+| **neural-chat** | Medium    | Better  | 6GB  | Balanced, recommended |
+| **llama2**      | Slow      | Best    | 8GB+ | Complex reasoning     |
+| **phi**         | Very Fast | Fair    | 2GB  | Minimal hardware      |
 
 ---
 

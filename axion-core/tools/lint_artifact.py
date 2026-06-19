@@ -252,6 +252,37 @@ def lint_artifact(filepath: Path) -> bool:
         return False
 
 
+def is_ignored(path: Path) -> bool:
+    path_str = path.resolve().as_posix()
+    
+    # Ignored directory patterns
+    ignored_patterns = [
+        "/scratch/", "/open-notebook/", "/recovery/", "/incoming/", 
+        "/.git/", "/.github/", "/.vscode/", "/.agent/", "/.archives/", 
+        "/.pytest_cache/", "/.mypy_cache/", "/.ruff_cache/", 
+        "/node_modules/", "/vendor/", "/logs/", "/_logs/", "/axion-core/",
+        "/fde_engine/", "/where_light_fades/", "/nova_forge/",
+        "/_archive/", "/archive/", "/cdl/", "/templates/", "/_templates/"
+    ]
+    
+    # Root level ignored files
+    root_ignored_files = [
+        "readme.md", "gemini.md", "findings.md", "progress.md", 
+        "task_plan.md", "axion_manifest.md", "episemantic_validation_framework_analysis.md"
+    ]
+    
+    for pattern in ignored_patterns:
+        if pattern in path_str.lower():
+            return True
+            
+    if path.name.lower() in root_ignored_files:
+        if "_governance" not in path_str:
+            return True
+            
+    return False
+
+
+
 def scan_targets(targets: list[Path]) -> bool:
     """Recursively scans and lints all target artifacts."""
     overall_success = True
@@ -267,7 +298,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.target.is_dir():
-        targets = list(args.target.rglob("*.md"))
+        targets = [p for p in args.target.rglob("*.md") if not is_ignored(p)]
     else:
         targets = [args.target]
 
@@ -277,3 +308,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

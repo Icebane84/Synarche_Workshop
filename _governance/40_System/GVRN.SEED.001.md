@@ -1,58 +1,56 @@
 # UMB-SEED-001_GenesisSeedsRegistry_v11.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                                  | Description       |
+| :------------------ | :--------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.SEED.001`                                                        | The Sovereign ID. |
+| **Official Name**   | `Genesis Seeds Registry`                                               | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                      | The Standard.     |
+| **Domain**          | `GVRN`                                                                 | The Subject.      |
+| **Celestial Class** | `STAR`                                                                 | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                                     | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                             | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                | The Intent.       |
+| **Relations**       | `NUCLEATES: System Evolution, SUPERSEDES: UMB-GENESIS-REGISTRY-001`    | The Network.      |
+| **Integrity Hash**  | `sha256:777888999000aaabbbcccdddeeefff111222333444555666777888999000a` | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                                        | Description       |
-| :------------------ | :------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.SEED.001`                              | The Sovereign ID. |
-| **Official Name**   | `UMB-SEED-001_GenesisSeedsRegistry_v11.1.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                            | The Standard.     |
-| **Domain**          | `GVRN`                                       | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                   | The Weight.       |
-| **Evolution**       | `Omega Ascension`                            | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                   | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Attribute           | Value                                                                  |
-| :------------------ | :--------------------------------------------------------------------- |
-| **Artifact ID**     | `GVRN.SEED.001`                                                        |
-| **Official Name**   | `Genesis Seeds Registry`                                               |
-| **Version**         | `v11.1 (Synergy Edition)`                                              |
-| **Domain**          | `SYNT`                                                                 |
-| **Evolution**       | `Higher Coherence`                                                     |
-| **Signal (SEED)**   | `GENESIS`                                                              |
-| **Status (State)**  | `CANONIZED`                                                            |
-| **Tier**            | `Strategic`                                                            |
-| **Celestial Class** | `STAR`                                                                 |
-| **Governance**      | `UMB-SGM-001`, `CORE-CODEX-001`                                        |
-| **Upstream**        | `UMB-LOOM-001`, `UMB-CSE-001`                                          |
-| **Downstream**      | `RPG-POWER-SET`, `AISTF-REFINE`                                        |
-| **Integrity Hash**  | `sha256:777888999000aaabbbcccdddeeefff111222333444555666777888999000a` |
-| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                    |
-| **Relations**       | `NUCLEATES: System Evolution`, `SUPERSEDES: UMB-GENESIS-REGISTRY-001`  |
-| **Tags**            | `v11.1, Genesis, Seeds, RPG, Sentience, Weaving`                       |
+| Attribute | Value |
+| **Governance** | `UMB-SGM-001`, `CORE-CODEX-001` |
+| **Integrity Hash** | `sha256:777888999000aaabbbcccdddeeefff111222333444555666777888999000a` |
 
 ---
 
-> **Domain**: SYNT | **Evolution**: Higher Coherence | **Signal**: GENESIS
-
 # Genesis Seeds Registry (UMB-SEED-001)
-
-## Genesis Stamp: 2026-01-24 | Domain: SYNT | State: CANONIZED | Criticality: CRITICAL
 
 ---
 
@@ -146,3 +144,5 @@ _Real-time Nucleations from the `AOP-SEED-002` Pipeline_
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

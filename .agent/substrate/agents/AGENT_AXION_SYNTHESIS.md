@@ -10,15 +10,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG-AXION-SYNTHESIS-001` | The Sovereign ID. |
-| **Official Name** | `AGENT_AXION_SYNTHESIS.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| Key               | Value                         | Description       |
+| :---------------- | :---------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG-AXION-SYNTHESIS-001`    | The Sovereign ID. |
+| **Official Name** | `AGENT_AXION_SYNTHESIS.md`    | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**             | The Standard.     |
+| **Domain**        | `SYNG`                        | The Subject.      |
+| **Status**        | `[CANONIZED]`                 | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 

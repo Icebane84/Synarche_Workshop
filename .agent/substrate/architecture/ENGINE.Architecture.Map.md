@@ -4,13 +4,12 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.ARCH.EngineMap` | The Sovereign ID. |
-| **Official Name** | `ENGINE.Architecture.Map.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ENGINE` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
+| **Artifact ID**   | `SYNG.ARCH.EngineMap`             | The Sovereign ID. |
+| **Official Name** | `ENGINE.Architecture.Map.md`      | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `ENGINE`                          | The Subject.      |
+| **Status**        | `[CANONIZED]`                     | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
 
 ---
 

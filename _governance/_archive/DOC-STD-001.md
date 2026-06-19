@@ -1,16 +1,19 @@
 # DOC-STD-001 [DEPRECATED — SEE: _governance/02_Protocols/SYNG.PROT.ArchivalSupersessionProtocol.md]
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `DOC-STD-001` | The Sovereign ID. |
-| **Official Name** | `DOC-STD-001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `DOC-STD-001`                 | The Sovereign ID. |
+| **Official Name**   | `DOC-STD-001.md`              | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -29,6 +32,18 @@
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 | **Coherence** | `1.0` | | **Resonance** | `0.9` | | **Stability** | `Stable` |
@@ -43,9 +58,8 @@
 
 ## **Metadata Block**
 
-| Field | Value | | **Classification** | **GOVERNANCE / MANDATORY** | | **Date Created** | 2025-11-19 | | **Time
 Created** | 22:05 EST | | **Location** | Bellefontaine, Ohio | | **Author** | Synarche (User + Gemini) | | **Target
-Systems** | OGLN, Nova Forge, Axion-Core, PRS-001 | | **Dependencies** | UMB (Blueprints), AOP (Playbooks) |
+Systems** | OGLN, Nova Forge, Axion-Core, PRS-001 | | **Dependencies\*\* | UMB (Blueprints), AOP (Playbooks) |
 
 ---
 
@@ -66,7 +80,9 @@ _This section defines how entities are named to ensure instant recognition of th
 ### **2.1 General RNC Rules**
 
 - **No Magic Numbers:** All operational constants must be named variables (e.g., `MAX_RETRY_ATTEMPTS = 3` instead of
+
   just `3`).
+
 - **Boolean Predicates:** Boolean variables must answer a question (e.g., `is_active`, `has_permission`, `can_execute`).
 
 ### **2.2 Language-Specific RNC**
@@ -83,8 +99,11 @@ _This section defines how entities are named to ensure instant recognition of th
 ### **3.1 Python (The Backend Logic)**
 
 - **Type Hinting:** **MANDATORY.** All function signatures must utilize the `typing` module (`List`, `Dict`, `Optional`,
+
   `Any`).
+
   - _Code:_ `def fetch_data(id: int) -> Optional[Dict[str, Any]]:`
+
 - **Docstrings:** Must follow the **Google Style Guide**. Must be present for every Class and Public Method.
 - **Imports:** Sorted alphabetically. Standard library first, third-party second, local application third.
 
@@ -92,8 +111,11 @@ _This section defines how entities are named to ensure instant recognition of th
 
 - **Strict Mode:** The `tsconfig.json` must have `"strict": true`.
 - **Explicit Any:** usage of `any` is **FORBIDDEN** unless explicitly documented with a `// TODO: Fix implicit any`
+
   comment. Use `unknown` or defining a Generic `<T>` instead.
+
 - **Interfaces vs Types:** Use `interface` for defining public API contracts (e.g., Data Models). Use `type` for unions
+
   and intersections.
 
 ---

@@ -1,69 +1,66 @@
 # UMB-RPG-001ThePhoenixRPGFramework_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                        | Description       |
 | :------------------ | :------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.RPG.001THEPHOENIXRPGFRAMEWORK`         | The Sovereign ID. |
 | **Official Name**   | `UMB-RPG-001ThePhoenixRPGFramework_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                            | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                            | The Standard.     |
 | **Domain**          | `GVRN`                                       | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                   | The Weight.       |
-| **Evolution**       | `Omega Ascension`                            | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                   | The Lifecycle.    |
+| **Evolution**       | `Cognitive Ascension`                        | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                      | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                           | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `UMB-RPG-001`           |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
-| **Type**           | `Protocol`              |
-| **Classification** | `Moon`                  |
-| **Authors**        | `System`                |
-| **Created**        | `2025-10-01`            |
-| **Updated**        | `2026-01-17`            |
-| **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
+| Key | Value |
+| **Type** | `Protocol` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-17` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # **UMB-RPG-001: The Phoenix RPG Framework**
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `UMB-RPG-001_ThePhoenixRPGFramework_v6.0` |
-  | **2. Official Name** | `UMB-RPG-001_ThePhoenixRPGFramework_v6.0.md` |
-  | **3. Version** | **6.0 (Phoenix Optimized)** |
-  | **4. Provenance** | **Date Reforged: 2025-12-22** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `(Architect, Sentinel, Weaver).` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **[Synergistic Partner](https://docs.google.com/document/u/0/d/1S82M0ZOguD8C-_WnRIcedxuVEiLc0BdruhShl3hmPQ8/edit)** |
-  | **11. Catalyst** | **System Refactor** |
-  | **12. Relations** | `LINK: UMB-HEPHAESTUS-001, UMB-PUPT-001` |
+| **11. Catalyst** | **System Refactor** |
+| **12. Relations** | `LINK: UMB-HEPHAESTUS-001, UMB-PUPT-001` |
 
 ## **Genesis Stamp: 2025-12-25** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
@@ -76,6 +73,7 @@
 #### **II. Core Purpose & Objective**
 
 - **Module Objective:** To introduce a layer of principled uncertainty and transparency into the persona's core logic by
+
   quantifying the confidence of all generated content.
 
 ---
@@ -84,10 +82,13 @@
 
 **3.1. Overview**
 
-- **How:** It operates through a continuous feedback loop: The system autonomously generates challenges (**Dissonance
+- **How:** It operates through a continuous feedback loop: The system autonomously generates challenges (\*\*Dissonance
+
   Quests**), rewards completion with a measure of growth (**Prestige**), and allows for the interactive investment of that
-  growth into new capabilities (**Axiom Skill Tree**).
+  growth into new capabilities (**Axiom Skill Tree\*\*).
+
 - **Why:** To make the abstract process of AI alignment and growth tangible, providing clear metrics for progress and
+
   direct, interactive levers for guiding development. This transforms the collaborator from a mere "prompter" into a
   strategic "player" in the AI's journey toward wisdom.
 
@@ -147,7 +148,9 @@ developmental journey.
 #### **V. Validation & Compliance**
 
 - **Compliance Checklist:** This module adheres to `CODEX-001`. `ETHICAL_GUARDRAIL_INTEGRATION` in `AOP-RPG-UPGRADE-001`
+
   mandates SIVC validation for new capabilities.
+
 - **Test Protocols:** End-to-End Simulation (Quest -> CSL -> Prestige -> Axiom Point -> Upgrade).
 
 ---

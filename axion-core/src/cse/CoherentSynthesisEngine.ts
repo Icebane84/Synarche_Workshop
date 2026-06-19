@@ -17,7 +17,7 @@ artifact_anchor:
  * - id: UMB-QB-CSE-001
  * - type: ENGINE
  */
-import { CollapsedBlock } from "@nexus/PhoenixSuperpositionEngine";
+import type { CollapsedBlock } from "@nexus/PhoenixSuperpositionEngine";
 import { PhoenixLogger } from "@system/logging";
 import { PythonBridge } from "@utils/PythonBridge";
 

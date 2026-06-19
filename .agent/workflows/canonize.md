@@ -20,18 +20,23 @@ This workflow automates the transition of artifacts to the `[CANONIZED]` state, 
 When the user runs `/canonize`, the Agent MUST perform the following steps in sequence:
 
 ### Step 1: Meaningful Friction (Genesis Spark Drafting)
-The Agent must analyze the session logs and draft a "Genesis Spark" narrative (1-3 sentences) explaining the struggle, context, or necessity that led to this artifact. 
+
+The Agent must analyze the session logs and draft a "Genesis Spark" narrative (1-3 sentences) explaining the struggle, context, or necessity that led to this artifact.
 **The Agent MUST pause execution and ask the user to explicitly approve or refine this Genesis Spark.**
 
 ### Step 2: Protocol Stamping
+
 Once approved, the Agent applies the `causal_origin` and `genesis_spark` directly into the artifact's Universal Identification & Provenance (UIP) block.
 
 ### Step 3: Run the Canonization Ritual
+
 Run the backend ritual to validate and seal the artifact:
+
 ```bash
 python axion-core/scripts/canonize_ritual.py --target "{{target}}"
 ```
-*Note: If the `causal_origin` is missing, the registry validation will fail.*
+
+_Note: If the `causal_origin` is missing, the registry validation will fail._
 
 ---
 

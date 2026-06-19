@@ -39,6 +39,7 @@ Thanks for opening this issue! We'll review it and get back to you soon.
 **3. Decision Making**
 
 Ask yourself:
+
 - Does this align with our [design principles](design-principles.md)?
 - Is this something we want in the core project, or better as a plugin/extension?
 - Do we have the capacity to support this feature long-term?
@@ -49,6 +50,7 @@ Ask yourself:
 If the contributor checked "I am a developer and would like to work on this":
 
 **For Accepted Issues:**
+
 ```markdown
 Great idea! This aligns well with our goals, particularly [specific design principle].
 
@@ -62,6 +64,7 @@ Looking forward to your thoughts!
 ```
 
 **For Issues Needing Clarification:**
+
 ```markdown
 Thanks for offering to work on this! Before we proceed, we need to clarify a few things:
 
@@ -72,6 +75,7 @@ Once we have these details, we can discuss the best approach.
 ```
 
 **For Issues Not Aligned with Vision:**
+
 ```markdown
 Thank you for the suggestion and for offering to work on this!
 
@@ -85,12 +89,14 @@ We appreciate your interest in contributing! Feel free to check out our [open is
 ### Labels to Use
 
 **Priority:**
+
 - `priority: critical` - Security issues, data loss bugs
 - `priority: high` - Major functionality broken
 - `priority: medium` - Annoying bugs, useful features
 - `priority: low` - Nice to have, edge cases
 
 **Status:**
+
 - `needs-triage` - Not yet reviewed by maintainer
 - `needs-info` - Waiting for more information from reporter
 - `needs-discussion` - Requires community/team discussion
@@ -99,6 +105,7 @@ We appreciate your interest in contributing! Feel free to check out our [open is
 - `blocked` - Cannot proceed due to external dependency
 
 **Type:**
+
 - `bug` - Something is broken
 - `enhancement` - New feature or improvement
 - `documentation` - Documentation improvements
@@ -106,6 +113,7 @@ We appreciate your interest in contributing! Feel free to check out our [open is
 - `refactor` - Code cleanup/restructuring
 
 **Difficulty:**
+
 - `good first issue` - Good for newcomers
 - `help wanted` - Community contributions welcome
 - `advanced` - Requires deep codebase knowledge
@@ -123,6 +131,7 @@ We appreciate your interest in contributing! Feel free to check out our [open is
 - [ ] Are there tests? Screenshots (for UI changes)?
 
 **Red Flags** (may require closing PR):
+
 - No associated issue
 - Issue was not assigned to contributor
 - PR tries to solve multiple unrelated problems
@@ -141,6 +150,7 @@ We appreciate your interest in contributing! Feel free to check out our [open is
 **2. Code Quality Review**
 
 Python:
+
 - [ ] Follows PEP 8
 - [ ] Has type hints
 - [ ] Has docstrings
@@ -148,6 +158,7 @@ Python:
 - [ ] No security vulnerabilities
 
 TypeScript/Frontend:
+
 - [ ] Follows TypeScript best practices
 - [ ] Proper component structure
 - [ ] No console.logs left in production code
@@ -171,6 +182,7 @@ TypeScript/Frontend:
 ### Providing Feedback
 
 **Positive Feedback** (important!):
+
 ```markdown
 Thanks for this PR! I really like [specific thing they did well].
 
@@ -178,6 +190,7 @@ Thanks for this PR! I really like [specific thing they did well].
 ```
 
 **Requesting Changes:**
+
 ```markdown
 This is a great start! A few things to address:
 
@@ -189,6 +202,7 @@ Let me know if you have questions about any of this!
 ```
 
 **Suggesting Alternative Approach:**
+
 ```markdown
 I appreciate the effort you put into this! However, I'm concerned about [specific issue].
 
@@ -204,6 +218,7 @@ What do you think?
 **Situation**: Contributor wrote quality code, but solved the problem in a way that doesn't fit our architecture.
 
 **Response:**
+
 ```markdown
 Thank you for this PR! The code quality is great, and I can see you put thought into this.
 
@@ -221,17 +236,20 @@ Let me know what you prefer!
 **Situation**: Contributor submitted PR without going through issue approval process.
 
 **Response:**
+
 ```markdown
 Thanks for the PR! I appreciate you taking the time to contribute.
 
 However, to maintain project coherence, we require all PRs to be linked to an approved issue that was assigned to the contributor. This is explained in our [Contributing Guide](contributing.md).
 
 This helps us:
+
 - Ensure work aligns with project vision
 - Prevent duplicate efforts
 - Discuss approach before implementation
 
 Could you please:
+
 1. Create an issue describing this change
 2. Wait for it to be reviewed and assigned to you
 3. We can then reopen this PR or you can create a new one
@@ -244,12 +262,14 @@ Sorry for the inconvenience - this process helps us manage the project effective
 **Situation**: Well-intentioned feature that doesn't fit project goals.
 
 **Response:**
+
 ```markdown
 Thank you for this suggestion! I can see how this would be useful for [specific use case].
 
 After reviewing against our [design principles](design-principles.md), we've decided not to include this in the core project because [specific reason - e.g., "it conflicts with our 'Simplicity Over Features' principle" or "it would require dependencies that conflict with our privacy-first approach"].
 
 Some alternatives:
+
 - [If applicable] This could be built as a plugin/extension
 - [If applicable] This functionality might be achievable through [existing feature]
 - [If applicable] You might be interested in [other tool] which is designed for this use case
@@ -262,6 +282,7 @@ We appreciate your contribution and hope you understand. Feel free to check our 
 **Situation**: You requested changes, but contributor hasn't responded in 2+ weeks.
 
 **After 2 weeks:**
+
 ```markdown
 Hey there! Just checking in on this PR. Do you have time to address the feedback, or would you like someone else to take over?
 
@@ -269,6 +290,7 @@ No pressure either way - just want to make sure this doesn't fall through the cr
 ```
 
 **After 1 month with no response:**
+
 ```markdown
 Thanks again for starting this work! Since we haven't heard back, I'm going to close this PR for now.
 
@@ -278,6 +300,7 @@ We appreciate your contribution!
 ```
 
 Then:
+
 - Close the PR
 - Unassign the issue
 - Add `help wanted` label to the issue
@@ -287,16 +310,19 @@ Then:
 **Situation**: PR introduces breaking changes that weren't discussed.
 
 **Response:**
+
 ```markdown
 Thanks for this PR! However, I notice this introduces breaking changes that weren't discussed in the original issue.
 
 Breaking changes require:
+
 1. Prior discussion and approval
 2. Migration guide for users
 3. Deprecation period (when possible)
 4. Clear documentation of the change
 
 Could we discuss the breaking changes first? Specifically:
+
 - [What breaks and why]
 - [Who will be affected]
 - [Migration path]
@@ -316,6 +342,7 @@ After careful review, we've decided not to merge this PR because [specific reaso
 This isn't a reflection on your code quality - it's about maintaining focus on our core goals as outlined in [design-principles.md](design-principles.md).
 
 We'd love to have you contribute in other ways! Check out:
+
 - Good first issues
 - Help wanted issues
 - Our roadmap
@@ -360,7 +387,7 @@ This will be included in the next release.
 - Thank contributors for their time and effort
 - Assume good intentions
 - Be patient with newcomers
-- Explain *why*, not just *what*
+- Explain _why_, not just _what_
 
 ### Be Clear and Direct
 
@@ -392,6 +419,7 @@ This will be included in the next release.
 ## When in Doubt
 
 Ask yourself:
+
 1. Does this align with our [design principles](design-principles.md)?
 2. Will we be able to maintain this feature long-term?
 3. Does this benefit most users, or just an edge case?
@@ -399,6 +427,7 @@ Ask yourself:
 5. Would I want to support this in 2 years?
 
 If you're unsure, it's perfectly fine to:
+
 - Ask for input from other maintainers
 - Start a discussion issue
 - Sleep on it before making a decision

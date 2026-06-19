@@ -2,15 +2,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ID.MEM.AKASHIC-001` | The Sovereign ID. |
-| **Official Name** | `MEMORY.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `IDENTITY` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                       | Description       |
+| :---------------- | :-------------------------- | :---------------- |
+| **Artifact ID**   | `ID.MEM.AKASHIC-001`        | The Sovereign ID. |
+| **Official Name** | `MEMORY.md`                 | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**           | The Standard.     |
+| **Domain**        | `IDENTITY`                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                  | The Lifecycle.    |
 | **Relations**     | `REF: GVRN.Registry.Master` | The Network.      |
-
 
 ---
 

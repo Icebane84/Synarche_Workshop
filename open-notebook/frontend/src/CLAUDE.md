@@ -21,6 +21,7 @@ User interactions trigger mutations/queries via hooks, which communicate with th
 ## Architectural Layers
 
 ### Pages (`src/app/`) — Next.js App Router
+
 - `(auth)/login`: Authentication entry point
 - `(dashboard)/`: Protected routes (notebooks, sources, search, models, etc.)
 - Directory-based routing; each `page.tsx` is a route endpoint
@@ -28,6 +29,7 @@ User interactions trigger mutations/queries via hooks, which communicate with th
 - **Router groups** `(auth)`, `(dashboard)` organize routes by feature without affecting URL
 
 ### Components (`src/components/`) — Feature-Specific UI
+
 - **layout**: `AppShell.tsx`, `AppSidebar.tsx` — main layout wrapper used by all pages
 - **providers**: `ThemeProvider`, `QueryProvider`, `ModalProvider` — app-wide context setup
 - **auth**: `LoginForm.tsx` — authentication UI
@@ -40,12 +42,14 @@ User interactions trigger mutations/queries via hooks, which communicate with th
 ### Lib (`src/lib/`) — Data & State Layer
 
 #### `lib/api/` — Backend Communication
+
 - **`client.ts`**: Central Axios instance with auth interceptor, FormData handling, configurable request timeout (`NEXT_PUBLIC_API_TIMEOUT_MS`, default 10 min; `0` disables)
 - **`query-client.ts`**: TanStack Query configuration
 - **Resource modules** (`sources.ts`, `chat.ts`, `notebooks.ts`, etc.): Endpoint-specific functions returning typed responses
 - **Pattern**: All requests go through `apiClient`; auth token auto-added from localStorage
 
 #### `lib/hooks/` — React Query + Custom Logic
+
 - **Query hooks**: `useNotebookSources`, `useSources`, `useSource` — TanStack Query wrappers with cache keys
 - **Mutation hooks**: `useCreateSource`, `useUpdateSource`, `useDeleteSource` — mutations with toast feedback + cache invalidation
 - **Complex hooks**: `useNotebookChat`, `useSourceChat` — session management, message streaming, context building
@@ -53,15 +57,18 @@ User interactions trigger mutations/queries via hooks, which communicate with th
 - **Pattern**: Hooks return `{ data, isLoading, error, refetch }` + action functions; cache invalidation on mutations
 
 #### `lib/stores/` — Application State
+
 - **`auth-store.ts`**: Authentication state (token, isAuthenticated) with 30-second check caching
 - **Zustand + persist middleware**: Auto-syncs sensitive state to localStorage
 - **Pattern**: Store actions (`login()`, `logout()`, `checkAuth()`) update state; consumed via hooks in components
 
 #### `lib/types/` — TypeScript Definitions
+
 - API request/response shapes, domain models (Notebook, Source, Note, etc.)
 - Ensures type safety across API calls and store mutations
 
 #### `lib/locales/` — Internationalization (i18n)
+
 - **Locale files** (`en-US/`, `pt-BR/`, `zh-CN/`, `zh-TW/`, `ja-JP/`): Translation strings organized by feature
 - **`i18n.ts`**: i18next configuration with language detection
 - **`use-translation.ts`**: Thin wrapper around react-i18next's `useTranslation` with language change events
@@ -70,6 +77,7 @@ User interactions trigger mutations/queries via hooks, which communicate with th
 ## Data & Control Flow Walkthrough
 
 ### Example: Notebook Chat
+
 1. **Page** (`notebooks/[id]/page.tsx`) fetches initial data, passes `notebookId` to `ChatColumn` component
 2. **Hook call** (`useNotebookChat()`):
    - Queries sessions for notebook via TanStack Query
@@ -85,6 +93,7 @@ User interactions trigger mutations/queries via hooks, which communicate with th
 7. **Cache invalidation** on other source/note mutations ensures stale UI refreshes
 
 ### Example: File Upload with Source Creation
+
 1. **Component** (`SourceDialog`) renders form with file picker
 2. **Hook** (`useFileUpload`):
    - Converts file to FormData (JSON fields stringified)
@@ -97,27 +106,32 @@ User interactions trigger mutations/queries via hooks, which communicate with th
 ## Key Patterns & Cross-Layer Coordination
 
 ### Caching & Invalidation
+
 - **Query keys**: `QUERY_KEYS.notebook(id)`, `QUERY_KEYS.sources(notebookId)` — hierarchical structure
 - **Broad invalidation**: `['sources']` invalidates all source queries; trade-off between accuracy + performance
 - **Auto-refetch**: `refetchOnWindowFocus: true` on frequently-changing data (sources, notebooks)
 
 ### Auth & Protected Routes
+
 - **Proxy** (`src/proxy.ts`): Redirects root `/` to `/notebooks`
 - **Auth store**: Validates token via `/notebooks` API call (actual validation, not JWT decode)
 - **Interceptor**: Adds `Bearer {token}` to all requests; 401 response clears auth and redirects to login
 
 ### Modal State Management
+
 - **Modal hooks**: Components query modal state from stores
 - **Context**: Modals pass data (e.g., notebook ID) to child components
 - **Pattern**: One store per modal type; triggered by button clicks + data passing via hook arguments
 
 ### Error Handling
+
 - **API errors**: All request failures propagate to consuming code; components show toast notifications
 - **Error message resolution** (`lib/utils/error-handler.ts`): `getApiErrorMessage()` tries i18n mapping first via `ERROR_MAP`, then falls back to displaying the backend's descriptive error message directly. This ensures user-friendly error messages from the error classification system are shown as-is.
 - **Toast feedback**: Mutations show success/error toasts (from `sonner` library)
 - **Error boundary**: App-level error boundary catches React render errors; shows fallback UI
 
 ### FormData Handling
+
 - **JSON fields**: Nested objects (arrays, objects) must be JSON stringified before FormData
 - **Content-Type header**: Removed by interceptor for FormData requests (lets browser set boundary)
 - **Example**: `sources` array converted to string via `JSON.stringify()` before appending to FormData
@@ -132,6 +146,7 @@ User interactions trigger mutations/queries via hooks, which communicate with th
 ## Providers & Context Setup
 
 **Root layout** (`app/layout.tsx`) wraps app with (outermost → innermost):
+
 1. `ErrorBoundary` — React error boundary (catches all render errors)
 2. `ThemeProvider` — next-themes for light/dark mode
 3. `QueryProvider` — TanStack Query client

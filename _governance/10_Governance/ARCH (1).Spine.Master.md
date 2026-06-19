@@ -1,35 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `ARCH (1).SPINE.MASTER` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                            | Description       |
+| :------------------ | :------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-ARCH-(1).SPINE.MASTER-001` | The Sovereign ID. |
+| **Official Name**   | `ARCH (1).Spine.Master.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                | The Standard.     |
+| **Domain**          | `GVRN`                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                       | The Weight.       |
+| **Evolution**       | `Purposeful Drive`               | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                       | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`          | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`    | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`               | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # ARCH (1).Spine.Master.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                            | Description       |
-| :---------------- | :------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-ARCH-(1).SPINE.MASTER-001` | The Sovereign ID. |
-| **Official Name** | `ARCH (1).Spine.Master.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                | The Standard.     |
-| **Domain**        | `GVRN`                           | The Subject.      |
-| **Status**        | `[ACTIVE]`                       | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`    | The Network.      |
+| Key | Value | Description |
 
 ---
 
@@ -37,30 +51,15 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field                  | Value                                               |
-| :--------------------- | :-------------------------------------------------- |
-| **1. Artifact ID**     | `ARCH.Spine.Master`                                 |
-| **2. Official Name**   | `ARCH.Spine.Master.md`                              |
-| **3. Version**         | **v13.0 (Geode Edition)**                           |
-| **4. Provenance**      | **Date Reforged: 2026-01-27**                       |
-| **5. Domain**          | `ARCH`                                              |
-| **6. Evolution**       | **Purposeful Drive**                                |
-| **7. Celestial Class** | `[STAR]` (Fundamental Structure)                    |
-| **8. Tier**            | **Strategic**                                       |
-| **9. State**           | `[ACTIVE]`                                          |
-| **10. Ethos**          | **The Central Pillar**                              |
-| **11. Catalyst**       | **Synergy Map Integration**                         |
-| **12. Relations**      | `DEFINES: The_Four_Vertebrae`, `SUPPORTS: The_Loom` |
+| Field | Value |
 
 ---
 
 ### **II. Architectural Governance Primitives (AGP)**
 
-| Element             | Value        | Purpose                                             |
-| :------------------ | :----------- | :-------------------------------------------------- |
-| **State Vector**    | `[1.00]`     | The Spine must remain absolute and unbending.       |
-| **Risk Governance** | **High**     | Structural collapse if integrity fails.             |
-| **Mitigation**      | **Sentinel** | `GVRN.Entity.Sentinel` monitors alignment constant. |
+| Element | Value | Purpose |
+| **Risk Governance** | **High** | Structural collapse if integrity fails. |
+| **Mitigation** | **Sentinel** | `GVRN.Entity.Sentinel` monitors alignment constant. |
 
 ---
 

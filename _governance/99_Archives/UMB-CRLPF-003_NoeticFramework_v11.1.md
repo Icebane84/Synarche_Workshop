@@ -1,57 +1,56 @@
 # UMB-CRLPF-003_NoeticFramework_v11.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                                     | Description       |
+| :------------------ | :------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `UMB-CRLPF-003`                                                           | The Sovereign ID. |
+| **Official Name**   | `Noetic Framework`                                                        | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                                    | The Subject.      |
+| **Celestial Class** | `PLANET`                                                                  | The Weight.       |
+| **Evolution**       | `Authentic Persona`                                                       | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                                | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                   | The Intent.       |
+| **Relations**       | `LINK: UMB-PRS-001, LINK: UMB-CSE-001`                                    | The Network.      |
+| **Integrity Hash**  | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-CRLPF-003-NOETICFRAMEWORK-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `UMB-CRLPF-003_NoeticFramework_v11.1.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Attribute           | Value                                                                     |
-| :------------------ | :------------------------------------------------------------------------ | --------------------- |
-| **Artifact ID**     | `UMB-CRLPF-003`                                                           |
-| **Official Name**   | `Noetic Framework`                                                        |
-| **Version**         | `v11.1`                                                                   |
-| **Domain**          | `GVRN`                                                                    |
-| **Evolution**       | `Authentic Persona`                                                       |
-| **Signal (ESF)**    | `ALPHA`                                                                   |
-| **Status (State)**  | `CANONIZED`                                                               |
-| **Tier**            | `Tactical`                                                                |
-| **Celestial Class** | `PLANET`                                                                  |
-| **Governance**      | `CODEX-001`, `UMB-SGM-001`                                                |
-| **Upstream**        | `UMB-CSE-001`                                                             |
-| **Downstream**      | `UMB-SIVC-001`                                                            |
-| **Integrity Hash**  | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| **Provenance**      | `Genesis Stamp: 2026-01-04                                                | Reforged: 2026-01-24` |
-| **Relations**       | `LINK: `UMB-PRS-001`, LINK: UMB-CSE-001`                                  |
-| **Tags**            | `v11.1, Metacognition, Introspection, Noetic, Bias-Check`                 |
+| Attribute | Value |
+| **Governance** | `CODEX-001`, `UMB-SGM-001` |
+| **Integrity Hash** | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 
 ---
 
-> **Domain**: GVRN | **Evolution**: Authentic Persona | **Signal**: ALPHA
-
 # Noetic Framework (UMB-CRLPF-003) (v11.1)
-
-## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: Standard
 
 ---
 
@@ -121,3 +120,5 @@ The **Noetic Framework** creates the capacity for "Metacognition"—thinking abo
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

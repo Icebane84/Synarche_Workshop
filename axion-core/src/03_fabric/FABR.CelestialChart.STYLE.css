@@ -356,3 +356,137 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+/* Skills View Layout */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 242, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    0 0 12px rgba(0, 242, 255, 0.08);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.skill-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-glow);
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.4);
+}
+
+.skill-desc {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.skill-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.btn-invest {
+  background: rgba(0, 242, 255, 0.1);
+  border: 1px solid rgba(0, 242, 255, 0.3);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-invest:hover:not(:disabled) {
+  background: rgba(0, 242, 255, 0.25);
+  border-color: var(--accent-glow);
+  box-shadow: 0 0 8px rgba(0, 242, 255, 0.4);
+  transform: scale(1.03);
+}
+
+.btn-invest:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.btn-invest:disabled {
+  opacity: 0.4;
+  filter: grayscale(1);
+  cursor: not-allowed;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Lore View Layout */
+.lore-view {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lore-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lore-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: var(--prestige-gold);
+}
+
+.lore-desc {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.lore-status {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #00ff88;
+  letter-spacing: 0.05rem;
+}

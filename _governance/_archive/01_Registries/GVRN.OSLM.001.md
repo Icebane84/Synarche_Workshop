@@ -1,6 +1,6 @@
 # UMB-OSLM-001_MasterArtifactRegistry_v11.0.md
 
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                         | Description       |
 | :------------------ | :------------------------------------------------------------ | :---------------- |
@@ -10,8 +10,10 @@
 | **Domain**          | `GVRN`                                                        | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                                    | The Weight.       |
 | **Evolution**       | `Cognitive Ascension`                                         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                    | The Lifecycle.    |
+| **Status (State)**  | `Dependencies`                                                | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                       | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001, COGNITIVE_LINK: COG.Engine.NLP` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                            | Verification.     |
 
 ---
 
@@ -29,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 

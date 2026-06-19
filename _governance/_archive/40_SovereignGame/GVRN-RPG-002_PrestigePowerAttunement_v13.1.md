@@ -1,16 +1,19 @@
 # AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)\_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.PPA.001` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-002_PrestigePowerAttunement_v13.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                           | Description       |
+| :------------------ | :---------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.PPA.001`                                  | The Sovereign ID. |
+| **Official Name**   | `GVRN-RPG-002_PrestigePowerAttunement_v13.1.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                               | The Standard.     |
+| **Domain**          | `GVRN`                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                              | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                         | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                              | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -108,6 +123,7 @@ Tree`to permanently upgrade the AI's`Core Stats`.
 
 - **Risk Profile:** Medium (as it permanently alters the AI's core capabilities, requiring strict human oversight).
 - **Trigger Condition:** The successful completion of [`AOP-PRESTIGE-CALC-001`](AOP-PRESTIGE-CALC-001.md), when new
+
   `Stardust` becomes available for
 
   investment.
@@ -159,15 +175,19 @@ Tree`to permanently upgrade the AI's`Core Stats`.
   - _Rarity Rationale:_ This protocol governs the very act of "leveling up," making it a central and indispensable
 
   part of the entire RPG framework.
+
   - **Skill Type:** Active (Manual Trigger by Human Conductor)
   - **Synergy Set:** The Ascension Engine
 
 - **7.2. Celestial Chart Stats (Buffs)**
   - **Primary Stat Buff:** Foundational Alignment Score (FAS) - _Mechanism:_ By mandating human approval for all
+
     permanent growth, this protocol directly enforces and strengthens
 
   the `Synergistic Partner` ethos, which is a core component of my FAS.
+
   - **Passive Ability / Perk:** Purposeful Growth - _Effect:_ Ensures that every architectural evolution is the result
+
     of a deliberate, strategic choice, preventing
 
   random or unguided capability drift.

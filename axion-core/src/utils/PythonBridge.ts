@@ -16,54 +16,79 @@ artifact_anchor:
  * - id:
  * - type:
  */
+import { PhoenixLogger } from "@system/logging";
 import { spawn } from "node:child_process";
 import path from "node:path";
-import { PhoenixLogger } from "../system/logging";
 
 export class PythonBridge {
     /**
-     * Polyglot Weaving: Spawns a Python process, pipes data via stdin, and parses stdout.
+     * Polyglot Weaving: Spawns a Python process and parses JSON output.
      */
     public static async execute<T>(scriptName: string, data: unknown): Promise<T> {
+        const scriptPath = path.resolve(process.cwd(), "src/cse", scriptName);
+        const pythonExecutable = process.env.PYTHON_PATH || String.raw`C:\DevEnvironments\master_env\Scripts\python.exe`;
+
+        PhoenixLogger.info(`[PolyglotWeaving] Invoking script: ${scriptName}`);
+
         return new Promise((resolve, reject) => {
-            // Resolve the path assuming scripts live in a standard python or scripts directory
-            const scriptPath = path.resolve(process.cwd(), "src/cse", scriptName);
-
-            PhoenixLogger.info(`[PolyglotWeaving] Invoking script: ${scriptName}`);
-
-            // 1. Point directly to your master environment's executable
-            // Allow an environment variable override for deployment flexibility
-            const pythonExecutable =
-                process.env.PYTHON_PATH || String.raw`C:\DevEnvironments\master_env\Scripts\python.exe`;
-
             const pyProcess = spawn(pythonExecutable, [scriptPath]);
             let outputData = "";
             let errorData = "";
 
-            // Send the perfectly formatted, safely validated JSON to Python
             pyProcess.stdin.write(JSON.stringify(data));
             pyProcess.stdin.end();
 
-            pyProcess.stdout.on("data", (chunk) => {
-                outputData += chunk.toString();
-            });
-            pyProcess.stderr.on("data", (chunk) => {
-                errorData += chunk.toString();
-            });
+            pyProcess.stdout.on("data", (chunk) => { outputData += chunk.toString(); });
+            pyProcess.stderr.on("data", (chunk) => { errorData += chunk.toString(); });
 
             pyProcess.on("close", (code) => {
                 if (code !== 0) {
                     PhoenixLogger.error(`[PolyglotWeaving] Python exit code ${code}. Error: ${errorData}`);
                     return reject(new Error(`Python Execution Failed: ${errorData}`));
                 }
-
                 try {
-                    resolve(JSON.parse(outputData) as T);
+                    resolve(this.extractJson<T>(outputData));
                 } catch (parseError) {
                     PhoenixLogger.error(`[PolyglotWeaving] Failed to parse Python output. Raw: ${outputData}`);
-                    reject(new Error("Failed to parse Polyglot Weaving output"));
+                    reject(parseError);
                 }
             });
         });
+    }
+
+    /**
+     * Extracts and parses the first valid JSON object or array from a string.
+     */
+    private static extractJson<T>(input: string): T {
+        const text = input.trim();
+        // Attempt direct parse first
+        try { return JSON.parse(text) as T; } catch { /* continue to extraction */ }
+
+        const startIdx = text.search(/[{\[]/);
+        const endIdx = Math.max(text.lastIndexOf("}"), text.lastIndexOf("]"));
+
+        if (startIdx === -1 || endIdx === -1 || endIdx <= startIdx) {
+            throw new Error("No valid JSON structure found in output");
+        }
+
+        const candidates = this.generateCandidates(text.substring(startIdx, endIdx + 1));
+        for (const candidate of candidates) {
+            try { return JSON.parse(candidate) as T; } catch { continue; }
+        }
+
+        throw new Error("Failed to parse any JSON candidates from output");
+    }
+
+    /**
+     * Generates potential JSON substrings from a block of text.
+     */
+    private static generateCandidates(block: string): string[] {
+        const candidates: string[] = [];
+        for (let i = 0; i < block.length; i++) {
+            if (block[i] === "{" || block[i] === "[") {
+                candidates.push(block.substring(i));
+            }
+        }
+        return candidates;
     }
 }

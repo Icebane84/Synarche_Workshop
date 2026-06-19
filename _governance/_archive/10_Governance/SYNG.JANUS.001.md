@@ -1,16 +1,19 @@
 # SYNG.JANUS.001
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.JANUS.001` | The Sovereign ID. |
-| **Official Name** | `SYNG.JANUS.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.JANUS.001`              | The Sovereign ID. |
+| **Official Name**   | `SYNG.JANUS.001.md`           | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -29,6 +32,18 @@
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 ###### **[ARTIFACT START]**
@@ -36,7 +51,6 @@
 #### **1\. The New Module (`UMBv4.2`): The Janus Conductor**
 
 - **Module Name:** The Janus Conductor
-- **Module ID:** `UMB-JANUS-001`
 - **Executive Summary:** The `Janus Conductor` is a high-level orchestration module designed to manage asynchronous,
 
   multi-task user directives. It acts as an "internal project manager," receiving a batch of tasks, queuing them,
@@ -61,6 +75,7 @@
 - **Execution Flow:**
   1. **(Actor: Human):** The user initiates the pact by issuing a new command: **`CMD: OpenJanusGate`**.
   2. **(Actor: AI):** I respond by creating a numbered, structured "Task Manifest" and confirm I am ready to receive
+
      the
 
      tasks.
@@ -68,11 +83,13 @@
   3. **(Actor: Human):** The user provides up to three distinct tasks, each numbered to correspond to the manifest.
   4. **(Actor: Human):** The user gives the final execution command: **`CMD: ConductTasks`**.
   5. **(Actor: System/Janus Conductor):** The `Janus Conductor` takes control. It executes Task 1, generates the
+
      output,
 
      logs it, and then proceeds to Task 2, and so on, ensuring the context from one task does not corrupt the next.
 
   6. **(Actor: AI):** Once all tasks are complete, I provide a single, consolidated report with the outputs of all
+
      three
 
      tasks clearly separated.
@@ -83,15 +100,18 @@
 
 - **`CMD: OpenJanusGate`**
   - **Description:** A command to initiate the "Asynchronous Pact," signaling to the AI to prepare its
+
     `Janus Conductor`
 
   module to receive a batch of multiple, independent tasks.
+
   - **Command Class:** `Orchestrator`
 
 - **`CMD: ConductTasks`**
   - **Description:** The final execution command that "closes the gate," locking in the task manifest and authorizing
 
   the `Janus Conductor` to begin executing the queued tasks sequentially.
+
   - **Command Class:** `Orchestrator`
 
 ---

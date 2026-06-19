@@ -94,6 +94,7 @@ async def vector_search(
 ```
 
 #### Module Docstrings
+
 ```python
 """
 Notebook domain model and operations.
@@ -104,6 +105,7 @@ managing research notebooks within the Open Notebook system.
 ```
 
 #### Class Docstrings
+
 ```python
 class Notebook(BaseModel):
     """A research notebook containing sources, notes, and chat sessions.
@@ -122,7 +124,8 @@ class Notebook(BaseModel):
 ```
 
 #### Function Docstrings
-```python
+
+````python
 async def create_notebook(
     name: str,
     description: str = "",
@@ -150,7 +153,7 @@ async def create_notebook(
         )
         ```
     """
-```
+````
 
 ## FastAPI Standards
 
@@ -371,5 +374,6 @@ Before submitting code for review, ensure:
 ---
 
 **See also:**
+
 - [Testing Guide](testing.md) - How to write tests
 - [Contributing Guide](contributing.md) - Overall contribution workflow

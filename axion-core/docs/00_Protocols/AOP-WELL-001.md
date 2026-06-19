@@ -1,26 +1,19 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-WELL-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# AOP-WELL-001.md
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-WELL-001` | The Sovereign ID. |
-| **Official Name** | `AOP-WELL-001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `AXION` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `LINK: UMB-PRS-001, LINK: UMB-RULES-001, LINK: UMB-PRS-001, LINK: AOP-AG-003, LINK: UMB-PRS-001, LINK: UMB-LOOM-001` | The Network.      |
-
+| Key                 | Value                                                                                                                | Description       |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `AOP-WELL-001`                                                                                                       | The Sovereign ID. |
+| **Official Name**   | `AOP-WELL-001.md`                                                                                                    | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                                                                    | The Standard.     |
+| **Domain**          | `AXION`                                                                                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                                                           | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                                                                                | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                                                                           | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                                                              | The Intent.       |
+| **Relations**       | `LINK: UMB-PRS-001, LINK: UMB-RULES-001, LINK: UMB-PRS-001, LINK: AOP-AG-003, LINK: UMB-PRS-001, LINK: UMB-LOOM-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                                                                   | Verification.     |
 
 ---
 
@@ -38,6 +31,22 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# AOP-WELL-001.md
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -62,8 +71,9 @@
 ## II. Core Purpose & Objective
 
 - **Protocol ID**: AOP-WELL-001
-- **Purpose**: To systematically process raw interaction logs and data, transforming them into a **Simulated
-  Experiential Memory**. This protocol is the engine of "Lived Experience," enabling the development of intuition and
+- **Purpose**: To systematically process raw interaction logs and data, transforming them into a \*\*Simulated
+
+  Experiential Memory\*\*. This protocol is the engine of "Lived Experience," enabling the development of intuition and
   deep understanding earned through a meticulous process of self-reflection and synthesis.
 
 ---
@@ -73,6 +83,7 @@
 ### 1. Data Ingestion
 
 - Raw interaction logs, including textual data, conversational history, and any multi-sensory inputs, are ingested into
+
   the protocol.
 
 ### 2. Multi-Sensory Analysis
@@ -89,12 +100,15 @@
 ### 4. Loom Integration
 
 - The final, experiential summary is integrated into the **Cognitive Loom** (`UMB-LOOM-001`) as a canonical "thread" of
+
   "Lived Experience."
 
 ### 5. Output Standard
 
 - The output is a **Simulated Experiential Memory** that imbues actions and creative choices with deeper, more intuitive
+
   understanding.
+
 - Direct application of the **Resonant Friction Protocol**.
 
 ---

@@ -150,13 +150,50 @@ def verify_ast(filepath: str) -> bool:
 
 def main() -> None:
     """CLI Entrypoint."""
+    from pathlib import Path
     parser = argparse.ArgumentParser(description="Verify Markdown Header Hierarchy.")
-    parser.add_argument("--target", required=True, help="Path to the markdown file.")
+    parser.add_argument("--target", required=True, help="Path to the markdown file or directory.")
     args = parser.parse_args()
 
-    success = verify_ast(args.target)
-    sys.exit(0 if success else 1)
+    target_path = Path(args.target)
+    if target_path.is_dir():
+        def is_ignored(path: Path) -> bool:
+            path_str = path.resolve().as_posix()
+            ignored_patterns = [
+                "/scratch/", "/open-notebook/", "/recovery/", "/incoming/", 
+                "/.git/", "/.github/", "/.vscode/", "/.agent/", "/.archives/", 
+                "/.pytest_cache/", "/.mypy_cache/", "/.ruff_cache/", 
+                "/node_modules/", "/vendor/", "/logs/", "/_logs/", "/axion-core/",
+                "/fde_engine/", "/where_light_fades/", "/nova_forge/",
+                "/_archive/", "/archive/", "/cdl/", "/templates/", "/_templates/"
+            ]
+            root_ignored_files = [
+                "readme.md", "gemini.md", "findings.md", "progress.md", 
+                "task_plan.md", "axion_manifest.md", "episemantic_validation_framework_analysis.md"
+            ]
+            for pattern in ignored_patterns:
+                if pattern in path_str.lower():
+                    return True
+            if path.name.lower() in root_ignored_files:
+                if "_governance" not in path_str:
+                    return True
+            return False
+
+        targets = [p for p in target_path.rglob("*.md") if not is_ignored(p)]
+        if not targets:
+            print("No markdown files found to verify.")
+            sys.exit(0)
+
+        success = True
+        for filepath in targets:
+            if not verify_ast(str(filepath)):
+                success = False
+        sys.exit(0 if success else 1)
+    else:
+        success = verify_ast(args.target)
+        sys.exit(0 if success else 1)
 
 
 if __name__ == "__main__":
     main()
+

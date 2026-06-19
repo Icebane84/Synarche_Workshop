@@ -37,21 +37,22 @@ Each locale file exports a flat object with nested keys:
 ```typescript
 export const enUS = {
   common: {
-    save: 'Save',
-    cancel: 'Cancel',
-    delete: 'Delete',
+    save: "Save",
+    cancel: "Cancel",
+    delete: "Delete",
     // ...
   },
   notebooks: {
-    title: 'Notebooks',
-    createNew: 'Create Notebook',
+    title: "Notebooks",
+    createNew: "Create Notebook",
     // ...
   },
   // ... other sections
-}
+};
 ```
 
 **Sections**:
+
 - `common`: Shared UI elements (buttons, labels, actions)
 - `notebooks`, `sources`, `notes`: Feature-specific strings
 - `chat`, `search`, `podcasts`: Module-specific strings
@@ -83,11 +84,11 @@ function MyComponent() {
 Use `TFunction` from i18next:
 
 ```typescript
-import type { TFunction } from 'i18next'
+import type { TFunction } from "i18next";
 
 const getNavigation = (t: TFunction) => [
-  { name: t('navigation.sources'), href: '/sources' },
-]
+  { name: t("navigation.sources"), href: "/sources" },
+];
 ```
 
 ## Important Patterns
@@ -111,20 +112,20 @@ const getNavigation = (t: TFunction) => [
 2. Copy structure from `en-US/index.ts` and translate all strings
 3. Register in `locales/index.ts`:
    ```typescript
-   import { ptBR } from './pt-BR'
+   import { ptBR } from "./pt-BR";
    export const resources = {
      // ...existing
-     'pt-BR': { translation: ptBR },
-   }
+     "pt-BR": { translation: ptBR },
+   };
    export const languages: Language[] = [
      // ...existing
-     { code: 'pt-BR', label: 'Português' },
-   ]
+     { code: "pt-BR", label: "Português" },
+   ];
    ```
 4. Add to `utils/date-locale.ts`:
    ```typescript
-   import { ptBR } from 'date-fns/locale'
-   const LOCALE_MAP = { ...existing, 'pt-BR': ptBR }
+   import { ptBR } from "date-fns/locale";
+   const LOCALE_MAP = { ...existing, "pt-BR": ptBR };
    ```
 
 ## Important Quirks & Gotchas
@@ -138,17 +139,17 @@ const getNavigation = (t: TFunction) => [
 
 ```typescript
 // Mock useTranslation in tests (see test/setup.ts)
-vi.mock('@/lib/hooks/use-translation', () => ({
+vi.mock("@/lib/hooks/use-translation", () => ({
   useTranslation: () => ({
-    t: (key: string) => key,  // Identity function returns the key
-    language: 'en-US',
+    t: (key: string) => key, // Identity function returns the key
+    language: "en-US",
     setLanguage: vi.fn(),
   }),
-}))
+}));
 
 // Test locale completeness
-import { enUS, zhCN } from '@/lib/locales'
-const enKeys = Object.keys(flatten(enUS))
-const zhKeys = Object.keys(flatten(zhCN))
-expect(zhKeys).toEqual(enKeys)  // All keys present
+import { enUS, zhCN } from "@/lib/locales";
+const enKeys = Object.keys(flatten(enUS));
+const zhKeys = Object.keys(flatten(zhCN));
+expect(zhKeys).toEqual(enKeys); // All keys present
 ```

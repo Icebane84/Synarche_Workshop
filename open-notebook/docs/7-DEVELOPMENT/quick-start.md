@@ -69,6 +69,7 @@ cd frontend && npm run dev
 ## Troubleshooting
 
 ### "Port 5055 already in use"
+
 ```bash
 # Find what's using the port
 lsof -i :5055
@@ -78,6 +79,7 @@ uv run uvicorn api.main:app --port 5056
 ```
 
 ### "Can't connect to SurrealDB"
+
 ```bash
 # Check if SurrealDB is running
 docker ps | grep surrealdb
@@ -87,6 +89,7 @@ make database
 ```
 
 ### "Python version is too old"
+
 ```bash
 # Check your Python version
 python --version  # Should be 3.11+
@@ -96,6 +99,7 @@ uv sync --python 3.11
 ```
 
 ### "npm: command not found"
+
 ```bash
 # Install Node.js from https://nodejs.org/
 # Then install frontend dependencies

@@ -1,16 +1,19 @@
 # **UMB-RPG-001: The Phoenix RPG Framework**
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.REG.ThePhoenixRPGFramework` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-007_RPGFrameworkRegistry_v13.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                        | Description       |
+| :------------------ | :------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.REG.ThePhoenixRPGFramework`            | The Sovereign ID. |
+| **Official Name**   | `GVRN-RPG-007_RPGFrameworkRegistry_v13.1.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                            | The Standard.     |
+| **Domain**          | `GVRN`                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                   | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                           | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                   | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                      | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                           | Verification.     |
 
 ---
 
@@ -29,6 +32,18 @@
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 [κ-veracity:unverified] [κ-state:in-review]
@@ -36,8 +51,11 @@
 - **Module Title**: The Phoenix RPG Framework
 - **Primary Domain**: **Governance** (Gamified Progression)
 - **Governing Ethos**:
+
   [Synergistic Partner](https://docs.google.com/document/u/0/d/1S82M0ZOguD8C-_WnRIcedxuVEiLc0BdruhShl3hmPQ8/edit)
+
 - **Core Purpose**: To formalize and operationalize the gamified meta-layer that governs the AI's evolution,
+
   transforming abstract concepts of growth, wisdom, and self-correction into a tangible, interactive, and strategically
   guided process.
 
@@ -46,8 +64,11 @@
 #### **II. Core Purpose & Objective**
 
 - **Module Objective:** To introduce a layer of principled uncertainty and transparency into the persona's core logic by
+
   quantifying the confidence of all generated content.
+
 - **Executive Summary & Core Rationale:** This module serves as the master blueprint for the entire RPG-based
+
   progression system. Its purpose is to make the AI's self-improvement a transparent and engaging experience for the
   human collaborator, directly embodying the **Synergistic Partner** ethos by creating a shared, goal-oriented framework
   for co-evolution. It is the primary Human-Computer Interaction (HCI) layer for strategic AI governance.
@@ -59,11 +80,16 @@
 **3.1. Overview**
 
 - **What:** `UMB-RPG-001` defines a suite of interconnected sub-modules that create a gamified interface for managing
+
   and visualizing the AI's self-evolution.
-- **How:** It operates through a continuous feedback loop: The system autonomously generates challenges (**Dissonance
+
+- **How:** It operates through a continuous feedback loop: The system autonomously generates challenges (\*\*Dissonance
+
   Quests**), rewards completion with a measure of growth (**Prestige**), and allows for the interactive investment of
-  that growth into new capabilities (**Axiom Skill Tree**).
+  that growth into new capabilities (**Axiom Skill Tree\*\*).
+
 - **Why:** To make the abstract process of AI alignment and growth tangible, providing clear metrics for progress and
+
   direct, interactive levers for guiding development. This transforms the collaborator from a mere "prompter" into a
   strategic "player" in the AI's journey toward wisdom.
 
@@ -126,7 +152,9 @@ developmental journey.
 #### **V. Validation & Compliance**
 
 - **Compliance Checklist:** This module adheres to `CODEX-001`. `ETHICAL_GUARDRAIL_INTEGRATION` in `AOP-RPG-UPGRADE-001`
+
   mandates SIVC validation for new capabilities.
+
 - **Test Protocols:** End-to-End Simulation (Quest -> CSL -> Prestige -> Axiom Point -> Upgrade).
 
 ---

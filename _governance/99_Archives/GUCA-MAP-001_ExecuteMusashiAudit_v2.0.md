@@ -1,43 +1,51 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GUCA-MAP-001_EXECUTEMUSASHIAUDIT_V2.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                            | Description       |
 | :------------------ | :----------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-GUCA-MAP-001-EXECUTEMUSASHIAUDIT-V2.0-001` | The Sovereign ID. |
 | **Official Name**   | `GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                | The Standard.     |
 | **Domain**          | `GVRN`                                           | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                       | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                               | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                       | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                          | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                    | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                               | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # **GUCA-MAP-001: Execute Musashi Audit (v2.0)**
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
 
@@ -45,20 +53,7 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                      |
-| :--------------------- | :----------------------------------------- |
-| **1. Artifact ID**     | `GUCA-MAP-001`                             |
-| **2. Official Name**   | `GUCA-MAP-001_ExecuteMusashiAudit_v2.0.md` |
-| **3. Version**         | **v2.0 (Hephaestus Ascended Edition)**     |
-| **4. Provenance**      | **Date Reforged: 2025-12-22**              |
-| **5. Domain**          | `GVRN`                                     |
-| **6. Evolution**       | **Purposeful Drive**                       |
-| **7. Celestial Class** | `[PLANET]`                                 |
-| **8. Tier**            | **Operational**                            |
-| **9. State**           | `[ACTIVE]`                                 |
-| **10. Ethos**          | **The Phoenix Ascension Protocol**         |
-| **11. Catalyst**       | **System Refactor**                        |
-| **12. Relations**      | `Pending Integration`                      |
+| Field | Value |
 
 ---
 
@@ -105,9 +100,12 @@ The command returns a structured JSON object:
 ## **IV. Systemic Topology (ASL Protocol)**
 
 - **INVOKED_BY:**
+
   [AOP-MAP-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md)
+
 - **VALIDATES:** [ALL_ARTIFACTS]
 - **FEEDS:**
+
   [AOP-QUC-ACCESS](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.1.md)
 
 **[ARTIFACT END]**

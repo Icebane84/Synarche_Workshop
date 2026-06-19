@@ -1,59 +1,68 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CSL-20260131-091_AGENTICENFORCEMENT` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# CSL-20260131-091_AgenticEnforcement.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                          | Description       |
 | :------------------ | :--------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-CSL-20260131-091-AGENTICENFORCEMENT-001` | The Sovereign ID. |
 | **Official Name**   | `CSL-20260131-091_AgenticEnforcement.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                              | The Standard.     |
 | **Domain**          | `GVRN`                                         | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                        | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                             | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# CSL-20260131-091_AgenticEnforcement.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # CSL-20260131-091: Agentic Enforcement: The Sentinels
-
-> **Date**: 2026-01-31 | **Author**: Antigravity (The Lightbinder) | **Tags**: #Architecture, #Governance, #Enforcement, #Agentic
 
 ### 1. The Observation
 
 The workspace possessed powerful enforcement tools, but they lacked "Governance Authority":
 
-1.  **Status**: `Ruff` (Python) and `Trunk` (Meta) were configured but existed as "Utilities" rather than "Guardians".
-2.  **Gap**: They lacked the Universal Identification & Provenance (UIP) headers, meaning they were not formally recognized by the Phoenix Protocol as sources of truth.
+2. **Gap**: They lacked the Universal Identification & Provenance (UIP) headers, meaning they were not formally recognized by the Phoenix Protocol as sources of truth.
 
 ### 2. The Synthesis (Insight)
 
 To enter the **Agentic Era**, our enforcers must be canonized. They are not just tools; they are the immune system of the Synarche.
 
-1.  **Canonization of Ruff (`CFG-RUFF-001`)**:
-    - Injected the **13-point UIP Header** into `Synarche_Workspace/pyproject.toml`.
-    - Designated as "The Python Sentinel".
-2.  **Canonization of Trunk (`CFG-TRUNK-001`)**:
-    - Injected the **13-point UIP Header** into `.trunk/trunk.yaml`.
-    - Designated as "The Meta-Enforcer".
+1. **Canonization of Ruff (`CFG-RUFF-001`)**:
+   - Injected the **13-point UIP Header** into `Synarche_Workspace/pyproject.toml`.
+   - Designated as "The Python Sentinel".
+2. **Canonization of Trunk (`CFG-TRUNK-001`)**:
+   - Injected the **13-point UIP Header** into `.trunk/trunk.yaml`.
+   - Designated as "The Meta-Enforcer".
 
 ### 3. Implications & Next Steps
 
@@ -72,3 +81,5 @@ To enter the **Agentic Era**, our enforcers must be canonized. They are not just
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

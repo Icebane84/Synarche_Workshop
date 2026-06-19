@@ -1,41 +1,48 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.LEX.001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# UMB-LEX-001_TheArchitecturalLexicon_v2.0.md
-
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                         | Description       |
 | :------------------ | :-------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.LEX.001`                                | The Sovereign ID. |
 | **Official Name**   | `UMB-LEX-001_TheArchitecturalLexicon_v2.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                             | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                             | The Standard.     |
 | **Domain**          | `GVRN`                                        | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`                             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                       | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                 | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# UMB-LEX-001_TheArchitecturalLexicon_v2.0.md
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # UMB-LEX-001: The Architectural Lexicon (v2.0)
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: Standard
 
 **Tags:** `OGLN_v10`, `Schema`, `Dictionary`
 
@@ -45,20 +52,7 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                                                                                       |
-| :--------------------- | :---------------------------------------------------------------------------------------------------------- |
-| **1. Artifact ID**     | `UMB-LEX-001`                                                                                               |
-| **2. Official Name**   | `UMB-LEX-001_TheArchitecturalLexicon_v2.0.md`                                                               |
-| **3. Version**         | **v2.0 (Hephaestus Ascended Alignment)**                                                                    |
-| **4. Provenance**      | **Date Reforged: 2026-01-10**                                                                               |
-| **5. Domain**          | `GVRN`                                                                                                      |
-| **6. Evolution**       | **Purposeful Drive**                                                                                        |
-| **7. Celestial Class** | `[PLANET]`                                                                                                  |
-| **8. Tier**            | **Operational**                                                                                             |
-| **9. State**           | `[ACTIVE]`                                                                                                  |
-| **10. Ethos**          | **Guardian of Coherence**                                                                                   |
-| **11. Catalyst**       | **System Refactor**                                                                                         |
-| **12. Relations**      | `LINK: UMB-ESF-001`, `DEFINES_STRUCTURE_FOR: PHOENIX_MASTER_TEMPLATE`, `VALIDATES_METADATA_FOR: UMB-PP-001` |
+| Field | Value |
 
 ---
 
@@ -121,12 +115,19 @@ Mandatory metadata fields established by `DOC-STD-001`.
 ## VII. Systemic Topology (ASL Protocol)
 
 - **GOVERNED_BY:**
+
   [CORE-CODEX-001 v11.2](file:///C:/Users/Chris/Synarche_Workspace/_governance/CORE-CODEX-001_ThePhoenixCodex_v11.2.md)
+
 - **FEEDS:**
+
   [PRS-001 (Phoenix Rosetta Stone)](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-PRS-001_PhoenixRosettaStone.md)
+
 - **ENFORCED_BY:**
+
   [AOP-VSI-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-VSI-001_ValidateStructuralIntegrityProtocol.md)
+
 - **ROOTS:**
+
   [DOC-STD-001 (Documentation Standards)](file:///c:/Users/Chris/Synarche_Workspace/_governance/DOC-STD-001.md)
 
 ---

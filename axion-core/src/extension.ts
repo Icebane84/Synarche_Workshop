@@ -11,21 +11,22 @@ artifact_anchor:
   relations: []
 */
 
+import "./register-paths";
 import { exec } from "node:child_process";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as vscode from "vscode";
-import { PRS_001_SCHEMA } from "./constants/schemas";
-import { validateMetadata } from "./utils/validation";
+import { PhoenixSuperpositionEngine } from "@nexus/PhoenixSuperpositionEngine";
+import { WebClientStrategy } from "@nexus/WebClientStrategy";
 import { CelestialChartViewProvider } from "./CelestialChartView";
-import { PhoenixSuperpositionEngine } from "./nexus/PhoenixSuperpositionEngine";
-import { WebClientStrategy } from "./nexus/WebClientStrategy";
+import { PRS_001_SCHEMA } from "./constants/schemas";
+import { validateMetadata } from "@utils/validation";
 
 /**
  * Activates the Axion Core extension.
  * @param {vscode.ExtensionContext} context
  */
-export function activate(context: vscode.ExtensionContext) {
+export function activate(context: vscode.ExtensionContext): void {
   // Initialize standard strategies for the Phoenix Superposition Engine FSM
   PhoenixSuperpositionEngine.registerStrategy("WEB", WebClientStrategy);
 
@@ -35,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
       "axion.reforgeArtifact",
       handleReforgeArtifact,
     ),
-    vscode.commands.registerCommand("axion.executePRG", handleExecutePRG),
+    vscode.commands.registerCommand("axion.executePRG", handleExecutePrg),
     vscode.commands.registerCommand("axion.pushToForge", handlePushToForge),
     vscode.commands.registerCommand(
       "axion.traceCausality",
@@ -68,6 +69,19 @@ export function activate(context: vscode.ExtensionContext) {
       handleVerifyRegistry,
     ),
     vscode.commands.registerCommand("axion.spendStardust", handleSpendStardust),
+    vscode.commands.registerCommand("axion.spendStardustInteractive", async (stat: string, amount: number) => {
+      executePythonCli(["SPEND_STARDUST", `--target:${stat}`, `--amount:${amount}`, "--json"], (res) => {
+        if (res?.success) {
+          void vscode.window.showInformationMessage(`Successfully invested ${amount} Stardust into ${stat}!`);
+          void vscode.commands.executeCommand("axion.refreshUI");
+        } else {
+          void vscode.window.showErrorMessage(`Upgrade failed: ${res?.error || "Unknown error"}`);
+        }
+      });
+    }),
+    vscode.commands.registerCommand("axion.refreshUI", () => {
+      refreshData();
+    }),
   );
 
   const provider = new CelestialChartViewProvider(context.extensionUri);
@@ -80,16 +94,28 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   // Background refresh for UI
-  const refreshData = () => {
-    executePythonCLI(["get_player_state", "--json"], (state) => {
-      executePythonCLI(["get_achievements", "--json"], (achievements) => {
+  const refreshData = (): void => {
+    executePythonCli(["get_player_state", "--json"], (state) => {
+      if (state && !state.error) {
+        const xp = state.xp || 0;
+        const level = state.level || 1;
+        const nextLevelXp = level * 1000;
+        const progress = Math.min(100, Math.max(0, (xp / nextLevelXp) * 100));
+
         provider.updateStatus({
-          stardust: state.stardust,
-          rank: state.rank,
-          progress: state.xp_progress,
-          achievements: achievements,
+          stardust: state.stardust_available,
+          rank: state.prestige_class,
+          progress: progress,
+          achievements: state.achievements || [],
+          stats: {
+            // biome-ignore lint/style/useNamingConvention: database keys
+            coherence_index: state.coherence_index || 1,
+            synergy: state.synergy || 1,
+            adaptability: state.adaptability || 1,
+            transparency: state.transparency || 1,
+          },
         });
-      });
+      }
     });
   };
 
@@ -99,18 +125,18 @@ export function activate(context: vscode.ExtensionContext) {
 
 // --- Command Handlers ---
 
-async function handleTraverseSpine() {
+async function handleTraverseSpine(): Promise<void> {
   const artifactId = await vscode.window.showInputBox({
     prompt: 'Enter Artifact ID to start traversal (e.g. UMB-CSE-001) or "list"',
     placeHolder: "UMB-OSLM-001",
   });
 
   if (artifactId) {
-    executePythonCLI(["traverse_spine", artifactId]);
+    executePythonCli(["traverse_spine", artifactId]);
   }
 }
 
-async function handleReforgeArtifact() {
+async function handleReforgeArtifact(): Promise<void> {
   const target = await vscode.window.showInputBox({
     prompt: "Target Artifact ID or Path",
   });
@@ -119,12 +145,12 @@ async function handleReforgeArtifact() {
   });
 
   if (target && to) {
-    vscode.window.showInformationMessage(`Reforging ${target} to ${to}...`);
-    executePythonCLI(["reforge", "--target=" + target]);
+    void vscode.window.showInformationMessage(`Reforging ${target} to ${to}...`);
+    executePythonCli(["reforge", `--target=${target}`]);
   }
 }
 
-async function handleExecutePRG() {
+async function handleExecutePrg(): Promise<void> {
   const target = await vscode.window.showInputBox({
     prompt: "Target Context or Artifact ID",
   });
@@ -133,65 +159,65 @@ async function handleExecutePRG() {
   });
 
   if (target && level) {
-    vscode.window.showInformationMessage(
+    void vscode.window.showInformationMessage(
       `Initiating ${level} Phoenix Genesis Cycle...`,
     );
-    executePythonCLI(["genesis", target, level]);
+    executePythonCli(["genesis", target, level]);
   }
 }
 
-async function handlePushToForge() {
+async function handlePushToForge(): Promise<void> {
   const artifactId = await vscode.window.showInputBox({
     prompt: "Artifact ID to PUSH",
   });
   if (artifactId) {
-    vscode.window.showInformationMessage(
+    void vscode.window.showInformationMessage(
       `Synchronizing ${artifactId} with Tarot Forge...`,
     );
-    executePythonCLI(["push", artifactId]);
+    executePythonCli(["push", artifactId]);
   }
 }
 
-async function handleTraceCausality() {
+async function handleTraceCausality(): Promise<void> {
   const claim = await vscode.window.showInputBox({
     prompt: "Enter logical claim to trace",
   });
   if (claim) {
-    vscode.window.showInformationMessage(`Tracing causality for: ${claim}`);
-    executePythonCLI(["trace_causality", `--claim="${claim}"`]);
+    void vscode.window.showInformationMessage(`Tracing causality for: ${claim}`);
+    executePythonCli(["trace_causality", `--claim="${claim}"`]);
   }
 }
 
-async function handleVerifyTruth() {
+async function handleVerifyTruth(): Promise<void> {
   const statement = await vscode.window.showInputBox({
     prompt: "Enter statement to verify",
   });
   if (statement) {
-    executePythonCLI(["verify_truth", `--statement="${statement}"`]);
+    executePythonCli(["verify_truth", `--statement="${statement}"`]);
   }
 }
 
-async function handleConsultOracle() {
+async function handleConsultOracle(): Promise<void> {
   const topic = await vscode.window.showInputBox({
     prompt: "Consult Sophia on topic",
   });
   if (topic) {
-    executePythonCLI(["consult_oracle", `--topic="${topic}"`]);
+    executePythonCli(["consult_oracle", `--topic="${topic}"`]);
   }
 }
 
-async function handleSentinelScan() {
+async function handleSentinelScan(): Promise<void> {
   const target = await vscode.window.showInputBox({
     prompt: "Target directory or file",
     value: ".",
   });
   if (target) {
     // Calling INITIATE_COMPLIANCE_AUDIT via CLI
-    executePythonCLI(["INITIATE_COMPLIANCE_AUDIT", `--target="${target}"`]);
+    executePythonCli(["INITIATE_COMPLIANCE_AUDIT", `--target="${target}"`]);
   }
 }
 
-async function handleClaimAchievement(id?: string) {
+async function handleClaimAchievement(id?: string): Promise<void> {
   const claimId =
     id ||
     (await vscode.window.showInputBox({
@@ -199,33 +225,31 @@ async function handleClaimAchievement(id?: string) {
     }));
   if (claimId) {
     if (!id) {
-      vscode.window.showInformationMessage(
+      void vscode.window.showInformationMessage(
         `Claiming achievement: ${claimId}...`,
       );
     }
-    executePythonCLI(
+    executePythonCli(
       ["claim_achievement", `--id=${claimId}`, "--json"],
       (res) => {
         if (res.success) {
-          vscode.window.showInformationMessage(
+          void vscode.window.showInformationMessage(
             `Achievement Unlocked: ${claimId}! +${res.stardust_awarded} Stardust.`,
           );
-          // Trigger global refresh (if we can access the refreshData function,
-          // or just wait for the interval. For now, let's just trigger it manually if we were to expose it).
-          // Since refreshData is inside activate, we'd need to refactor.
+          void vscode.commands.executeCommand("axion.refreshUI");
         } else {
-          vscode.window.showErrorMessage(`Failed to claim: ${res.error}`);
+          void vscode.window.showErrorMessage(`Failed to claim: ${res.error}`);
         }
       },
     );
   }
 }
 
-async function handleCheckLevelStatus() {
-  executePythonCLI(["check_level_status", "STATUS"]);
+async function handleCheckLevelStatus(): Promise<void> {
+  executePythonCli(["check_level_status", "STATUS"]);
 }
 
-async function handleSpendStardust() {
+async function handleSpendStardust(): Promise<void> {
   const stats = ["coherence_index", "synergy", "adaptability", "transparency"];
   const stat = await vscode.window.showQuickPick(stats, {
     placeHolder: "Select stat to upgrade",
@@ -233,46 +257,43 @@ async function handleSpendStardust() {
   const amount = await vscode.window.showInputBox({
     prompt: "Enter Stardust amount to invest (100 = +0.1 boost)",
     value: "100",
-    validateInput: (text) => (isNaN(Number(text)) ? "Must be a number" : null),
+    validateInput: (text) => (Number.isNaN(Number(text)) ? "Must be a number" : null),
   });
 
   if (stat && amount) {
-    vscode.window.showInformationMessage(
-      `Investing ${amount} Stardust in ${stat}...`,
-    );
-    executePythonCLI(["SPEND_STARDUST", stat, amount]);
+    void vscode.commands.executeCommand("axion.spendStardustInteractive", stat, Number(amount));
   }
 }
 
-async function handleRunBackgroundTask() {
+async function handleRunBackgroundTask(): Promise<void> {
   const task = await vscode.window.showInputBox({
     prompt: "Describe background task",
   });
   if (task) {
-    executePythonCLI(["run_background_task", `--task="${task}"`]);
+    executePythonCli(["run_background_task", `--task="${task}"`]);
   }
 }
 
-async function handleGenerateBriefing() {
-  executePythonCLI(["generate_briefing", "NOW"]);
+async function handleGenerateBriefing(): Promise<void> {
+  executePythonCli(["generate_briefing", "NOW"]);
 }
 
 // --- New Handlers (Workspace Features) ---
 
-async function handleViewAuditLog() {
-  executePythonCLI(["ViewAuditLog", "--limit:5"]);
+async function handleViewAuditLog(): Promise<void> {
+  executePythonCli(["ViewAuditLog", "--limit:5"]);
 }
 
-async function handleLookupLore() {
+async function handleLookupLore(): Promise<void> {
   const query = await vscode.window.showInputBox({
     prompt: "Enter query for Lore Search",
   });
   if (query) {
-    executePythonCLI(["QUERY_LORE", `"${query}"`]);
+    executePythonCli(["QUERY_LORE", `"${query}"`]);
   }
 }
 
-async function handleIngestMindMap() {
+async function handleIngestMindMap(): Promise<void> {
   const options: vscode.OpenDialogOptions = {
     canSelectMany: false,
     openLabel: "Ingest Map",
@@ -283,19 +304,19 @@ async function handleIngestMindMap() {
   };
 
   const fileUri = await vscode.window.showOpenDialog(options);
-  if (fileUri && fileUri[0]) {
-    vscode.window.showInformationMessage(
+  if (fileUri?.[0]) {
+    void vscode.window.showInformationMessage(
       `Ingesting Mind Map: ${fileUri[0].fsPath}`,
     );
     // Wrap path in quotes to handle spaces
-    executePythonCLI(["ingest_mindmap", `"${fileUri[0].fsPath}"`]);
+    executePythonCli(["ingest_mindmap", `"${fileUri[0].fsPath}"`]);
   }
 }
 
-async function handleVerifyRegistry() {
+async function handleVerifyRegistry(): Promise<void> {
   const workspaceRoot = vscode.workspace.workspaceFolders?.[0].uri.fsPath;
   if (!workspaceRoot) {
-    vscode.window.showErrorMessage("No active workspace found.");
+    void vscode.window.showErrorMessage("No active workspace found.");
     return;
   }
 
@@ -319,13 +340,14 @@ async function handleVerifyRegistry() {
     validateMetadata(data, PRS_001_SCHEMA);
 
     channel.appendLine("[SUCCESS] Registry structural integrity verified.");
-    vscode.window.showInformationMessage(
+    void vscode.window.showInformationMessage(
       "Registry Validation Successful: Zero Entropy Detected.",
     );
-  } catch (error: any) {
-    channel.appendLine(`[Dissonance Detected]: ${error.message}`);
-    vscode.window.showErrorMessage(
-      `Registry Validation Failed: ${error.message}`,
+  } catch (error) {
+    const err = error as Error;
+    channel.appendLine(`[Dissonance Detected]: ${err.message}`);
+    void vscode.window.showErrorMessage(
+      `Registry Validation Failed: ${err.message}`,
     );
   }
 }
@@ -363,7 +385,7 @@ function getPythonExecutablePath(): string {
   }
 
   // 5. Check master environment default on Windows
-  const defaultEnvPath = "C:\\DevEnvironments\\master_env\\Scripts\\python.exe";
+  const defaultEnvPath = String.raw`C:\DevEnvironments\master_env\Scripts\python.exe`;
   if (fs.existsSync(defaultEnvPath)) {
     return defaultEnvPath;
   }
@@ -372,10 +394,79 @@ function getPythonExecutablePath(): string {
   return "python";
 }
 
+interface CliResponse {
+  success?: boolean;
+  error?: string;
+  xp?: number;
+  level?: number;
+  // biome-ignore lint/style/useNamingConvention: CLI keys
+  stardust_available?: number;
+  // biome-ignore lint/style/useNamingConvention: CLI keys
+  prestige_class?: string;
+  achievements?: string[];
+  // biome-ignore lint/style/useNamingConvention: CLI keys
+  coherence_index?: number;
+  synergy?: number;
+  adaptability?: number;
+  transparency?: number;
+  // biome-ignore lint/style/useNamingConvention: CLI keys
+  stardust_awarded?: number;
+}
+
+function findJsonBounds(str: string): [number, number] {
+  let start = -1;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "{" || str[i] === "[") {
+      start = i;
+      break;
+    }
+  }
+  let end = -1;
+  for (let i = str.length - 1; i >= 0; i--) {
+    if (str[i] === "}" || str[i] === "]") {
+      end = i;
+      break;
+    }
+  }
+  return [start, end];
+}
+
+function parseCandidateJsons(str: string, start: number, end: number): CliResponse | null {
+  const candidates: string[] = [];
+  for (let i = start; i <= end; i++) {
+    if (str[i] === "{" || str[i] === "[") {
+      candidates.push(str.substring(i, end + 1));
+    }
+  }
+  for (const candidate of candidates) {
+    try {
+      return JSON.parse(candidate) as CliResponse;
+    } catch {
+      // Try next candidate
+    }
+  }
+  return null;
+}
+
+function parseCliOutput(stdout: string): CliResponse | null {
+  const trimmed = stdout.trim();
+  try {
+    return JSON.parse(trimmed) as CliResponse;
+  } catch {
+    // Ignore and search for substring candidates
+  }
+
+  const [startIdx, endIdx] = findJsonBounds(stdout);
+  if (startIdx !== -1 && endIdx !== -1 && endIdx > startIdx) {
+    return parseCandidateJsons(stdout, startIdx, endIdx);
+  }
+  return null;
+}
+
 /**
  * Executes the centralized Python CLI and returns the output.
  */
-function executePythonCLI(args: string[], callback?: (data: any) => void) {
+function executePythonCli(args: string[], callback?: (data: CliResponse) => void): void {
   const pythonPath = getPythonExecutablePath();
   const workspaceRoot = path.resolve(__dirname, "..");
   const logicDir = path.join(workspaceRoot, "src", "logic");
@@ -383,24 +474,19 @@ function executePythonCLI(args: string[], callback?: (data: any) => void) {
 
   const command = `"${pythonPath}" "${cliPath}" ${args.join(" ")}`;
 
-  const channel = vscode.window.createOutputChannel("Axion [Core]");
-  // channel.show(true); // Don't pop up for every background call
-
-  exec(command, (error: Error | null, stdout: string, stderr: string) => {
+  exec(command, (error: Error | null, stdout: string, _stderr: string) => {
     if (error) {
       console.error(`[Axion] CLI Error: ${error.message}`);
     }
     if (stdout && callback) {
-      try {
-        const json = JSON.parse(stdout);
-        callback(json);
-      } catch (e) {
-        // Not JSON, ignore for callback
+      const parsed = parseCliOutput(stdout);
+      if (parsed !== null) {
+        callback(parsed);
       }
     }
   });
 }
 
-export function deactivate() {
+export function deactivate(): void {
   // No specific cleanup required.
 }

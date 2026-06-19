@@ -9,11 +9,13 @@ FastAPI application serving three architectural layers: routes (HTTP endpoints),
 ## Architecture Overview
 
 **Three layers**:
+
 1. **Routes** (`routers/*`): HTTP endpoints mapping to services
 2. **Services** (`*_service.py`): Business logic orchestrating domain models, database, graphs, AI providers
 3. **Models** (`models.py`): Pydantic request/response schemas with validation
 
 **Startup flow**:
+
 - Load .env environment variables
 - Initialize CORS middleware + password auth middleware
 - Run database migrations via AsyncMigrationManager on lifespan startup
@@ -21,6 +23,7 @@ FastAPI application serving three architectural layers: routes (HTTP endpoints),
 - Register all routers
 
 **Key services**:
+
 - `chat_service.py`: Invokes chat graph with messages, context
 - `podcast_service.py`: Orchestrates outline + transcript generation
 - `sources_service.py`: Content ingestion, vectorization, metadata
@@ -32,11 +35,13 @@ FastAPI application serving three architectural layers: routes (HTTP endpoints),
 ## Component Catalog
 
 ### Main Application
+
 - **main.py**: FastAPI app initialization, CORS setup, auth middleware, lifespan event, router registration
 - **Lifespan handler**: Runs AsyncMigrationManager on startup (database schema migration)
 - **Auth middleware**: PasswordAuthMiddleware protects endpoints (password-based access control)
 
 ### Services (Business Logic)
+
 - **chat_service.py**: Invokes chat.py graph; handles message history via SqliteSaver
 - **podcast_service.py**: Generates outline (outline.jinja), then transcript (transcript.jinja) for episodes
 - **sources_service.py**: Ingests files/URLs (content_core), extracts text, vectorizes, saves to SurrealDB
@@ -47,12 +52,14 @@ FastAPI application serving three architectural layers: routes (HTTP endpoints),
 - **notes_service.py**: Creates notes linked to sources/insights
 
 ### Models (Schemas)
+
 - **models.py**: Pydantic schemas for request/response validation
 - Request bodies: ChatRequest, CreateNoteRequest, PodcastGenerationRequest, etc.
 - Response bodies: ChatResponse, NoteResponse, PodcastResponse, etc.
 - Custom validators for enum fields, file paths, model references
 
 ### Routers
+
 - **routers/chat.py**: POST /chat
 - **routers/source_chat.py**: POST /source/{source_id}/chat
 - **routers/podcasts.py**: POST /podcasts, GET /podcasts/{id}, POST /podcasts/episodes/{id}/retry, etc.
@@ -109,16 +116,16 @@ FastAPI application serving three architectural layers: routes (HTTP endpoints),
 
 FastAPI exception handlers map custom exception types from `open_notebook.exceptions` to HTTP status codes. All error responses include CORS headers.
 
-| Exception Class | HTTP Status | Use Case |
-|----------------|-------------|----------|
-| `NotFoundError` | 404 | Resource not found |
-| `InvalidInputError` | 400 | Bad request data |
-| `AuthenticationError` | 401 | Invalid/missing API key |
-| `RateLimitError` | 429 | Provider rate limit exceeded |
-| `ConfigurationError` | 422 | Wrong model name, missing config |
-| `NetworkError` | 502 | Cannot reach AI provider |
-| `ExternalServiceError` | 502 | Provider returned error (500/503, context length) |
-| `OpenNotebookError` (base) | 500 | Any other application error |
+| Exception Class            | HTTP Status | Use Case                                          |
+| -------------------------- | ----------- | ------------------------------------------------- |
+| `NotFoundError`            | 404         | Resource not found                                |
+| `InvalidInputError`        | 400         | Bad request data                                  |
+| `AuthenticationError`      | 401         | Invalid/missing API key                           |
+| `RateLimitError`           | 429         | Provider rate limit exceeded                      |
+| `ConfigurationError`       | 422         | Wrong model name, missing config                  |
+| `NetworkError`             | 502         | Cannot reach AI provider                          |
+| `ExternalServiceError`     | 502         | Provider returned error (500/503, context length) |
+| `OpenNotebookError` (base) | 500         | Any other application error                       |
 
 ### Error Classification (`open_notebook.utils.error_classifier`)
 
@@ -158,25 +165,27 @@ The Credential Management system enables users to configure AI provider credenti
 
 **Endpoints**:
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/credentials` | List all credentials (optional `?provider=` filter) |
-| GET | `/credentials/by-provider/{provider}` | List credentials for a provider |
-| POST | `/credentials` | Create a new credential |
-| GET | `/credentials/{credential_id}` | Get a specific credential |
-| PUT | `/credentials/{credential_id}` | Update a credential |
-| DELETE | `/credentials/{credential_id}` | Delete a credential |
-| POST | `/credentials/{credential_id}/test` | Test connection using credential |
-| POST | `/credentials/{credential_id}/discover` | Discover available models |
-| POST | `/credentials/{credential_id}/register-models` | Register discovered models |
-| POST | `/credentials/migrate-from-provider-config` | Migrate from legacy ProviderConfig |
+| Method | Endpoint                                       | Description                                         |
+| ------ | ---------------------------------------------- | --------------------------------------------------- |
+| GET    | `/credentials`                                 | List all credentials (optional `?provider=` filter) |
+| GET    | `/credentials/by-provider/{provider}`          | List credentials for a provider                     |
+| POST   | `/credentials`                                 | Create a new credential                             |
+| GET    | `/credentials/{credential_id}`                 | Get a specific credential                           |
+| PUT    | `/credentials/{credential_id}`                 | Update a credential                                 |
+| DELETE | `/credentials/{credential_id}`                 | Delete a credential                                 |
+| POST   | `/credentials/{credential_id}/test`            | Test connection using credential                    |
+| POST   | `/credentials/{credential_id}/discover`        | Discover available models                           |
+| POST   | `/credentials/{credential_id}/register-models` | Register discovered models                          |
+| POST   | `/credentials/migrate-from-provider-config`    | Migrate from legacy ProviderConfig                  |
 
 **Supported Providers** (13 total):
+
 - Simple API key: `openai`, `anthropic`, `google`, `groq`, `mistral`, `deepseek`, `xai`, `openrouter`, `voyage`, `elevenlabs`
 - URL-based: `ollama`
 - Multi-field: `azure`, `vertex`, `openai_compatible`
 
 **Security Features**:
+
 - NEVER returns actual API key values (only metadata)
 - URL validation (SSRF protection) on all URL fields via `_validate_url()`
 - Allows private IPs and localhost for self-hosted services (Ollama, LM Studio)
@@ -185,6 +194,7 @@ The Credential Management system enables users to configure AI provider credenti
 ### Domain Model: `Credential` (`open_notebook/domain/credential.py`)
 
 Individual credential records replacing the old `ProviderConfig` singleton. Each credential stores:
+
 - Provider name, display name, modalities
 - Encrypted API key (via Fernet)
 - Provider-specific config (base_url, endpoint, api_version, etc.)
@@ -194,12 +204,14 @@ Individual credential records replacing the old `ProviderConfig` singleton. Each
 The `key_provider` module provisions DB-stored credentials into environment variables for Esperanto compatibility:
 
 **Database-first Pattern**:
+
 1. API endpoint saves keys to `Credential` records (encrypted in SurrealDB)
 2. Before model provisioning, `provision_provider_keys(provider)` checks DB, then env vars
 3. Keys from DB are set as environment variables for Esperanto compatibility
 4. Existing env vars remain unchanged if no DB config exists
 
 **Key Functions**:
+
 - `get_api_key(provider)`: Get API key (DB first, env fallback)
 - `provision_provider_keys(provider)`: Set env vars from DB for a provider
 - `provision_all_keys()`: Load all provider keys from DB into env vars
@@ -209,6 +221,7 @@ The `key_provider` module provisions DB-stored credentials into environment vari
 No changes to authentication. The `credentials` router uses the same `PasswordAuthMiddleware` as all other endpoints. Keys are protected by the same password-based auth.
 
 **Auth Flow** (unchanged from `api/auth.py`):
+
 - `PasswordAuthMiddleware`: Global middleware checking `Authorization: Bearer {password}` header
 - Default password: `open-notebook-change-me` (set `OPEN_NOTEBOOK_PASSWORD` in production)
 - Docker secrets support via `OPEN_NOTEBOOK_PASSWORD_FILE`
@@ -216,6 +229,7 @@ No changes to authentication. The `credentials` router uses the same `PasswordAu
 ### Connection Testing (`open_notebook/ai/connection_tester.py`)
 
 The `/credentials/{credential_id}/test` endpoint uses minimal API calls to verify credentials:
+
 - Loads Credential via `Credential.get(config_id)`, uses `credential.to_esperanto_config()`
 - Uses cheapest/smallest models per provider (TEST_MODELS map)
 - Returns success status and descriptive message
@@ -226,11 +240,13 @@ The `/credentials/{credential_id}/test` endpoint uses minimal API calls to verif
 Two migration endpoints help users transition to the credential system:
 
 **From environment variables** (`POST /credentials/migrate-from-env`):
+
 1. Checks each provider for env var presence
 2. Creates Credential records from env var values
 3. Returns summary: migrated, skipped, errors
 
 **From legacy ProviderConfig** (`POST /credentials/migrate-from-provider-config`):
+
 1. Reads old ProviderConfig records from database
 2. Converts each to individual Credential records
 3. Returns summary: migrated, skipped, errors

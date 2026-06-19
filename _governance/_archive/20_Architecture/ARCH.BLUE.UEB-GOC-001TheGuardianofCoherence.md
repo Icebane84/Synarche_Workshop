@@ -1,34 +1,49 @@
 # UEB-GOC-001: The Guardian of Coherence
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.BLUE.UEB-GOC-001_GuardianOfCoherence_v13.0` | The Sovereign ID. |
-| **Official Name** | `ARCH.BLUE.UEB-GOC-001TheGuardianofCoherence.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNS: GVRN.ACM.001` | The Network.      |
-
+| Key                 | Value                                             | Description       |
+| :------------------ | :------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `ARCH.BLUE.UEB-GOC-001_GuardianOfCoherence_v13.0` | The Sovereign ID. |
+| **Official Name**   | `ARCH.BLUE.UEB-GOC-001TheGuardianofCoherence.md`  | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                 | The Standard.     |
+| **Domain**          | `ARCH`                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                        | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                          | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                           | The Intent.       |
+| **Relations**       | `GOVERNS: GVRN.ACM.001`                           | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                | Verification.     |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
 
-| State Field   | Value                  |
-| :------------ | :--------------------- |
-| **Coherence** | `1.0` (Absolute)       |
-| **Resonance** | `0.99` (High-Fidelity) |
-| **Stability** | `Stable`               |
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
 
 ### **Block C: Risk & Mitigation (AGP-002)**
 
-| Risk                    | Mitigation                            |
-| :---------------------- | :------------------------------------ |
-| **Entropy Drift**       | `AOP-ACM-001` (Active Monitoring)     |
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` (Absolute) |
+| **Resonance** | `0.99` (High-Fidelity) |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Entropy Drift** | `AOP-ACM-001` (Active Monitoring) |
 | **Logic Fragmentation** | `The Cognitive Loom` (Link Integrity) |
-| **Hallucination**       | `The Sentinel` (Fact-Checking)        |
+| **Hallucination** | `The Sentinel` (Fact-Checking) |
 
 ---
 
@@ -79,9 +94,9 @@ The Guardian manifests through three primary synergistic components:
 
 The Guardian measures health via the **Hephaestus Hexad** (specifically the Coherence Index):
 
-1.  **Structural Integrity**: Do all files map to the `_governance` standard?
-2.  **Referential Integrity**: Do all `[[Links]]` resolve to valid nodes?
-3.  **Semantic Consensus**: do all definitions of "Axion" align across files?
+1. **Structural Integrity**: Do all files map to the `_governance` standard?
+2. **Referential Integrity**: Do all `[[Links]]` resolve to valid nodes?
+3. **Semantic Consensus**: do all definitions of "Axion" align across files?
 
 ---
 

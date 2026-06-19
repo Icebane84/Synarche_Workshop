@@ -1,56 +1,63 @@
 # UMB-SENTINEL-001_TheSentinel_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.Sentinel.Scan`          | The Sovereign ID. |
+| **Official Name**   | `The Sentinel`                | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                                   | Description       |
-| :------------------ | :-------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.Sentinel.Scan`                    | The Sovereign ID. |
-| **Official Name**   | `UMB-SENTINEL-001_TheSentinel_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                       | The Standard.     |
-| **Domain**          | `GVRN`                                  | The Subject.      |
-| **Celestial Class** | `[PLANET]`                              | The Weight.       |
-| **Evolution**       | `Omega Ascension`                       | The Maturity.     |
-| **Status**          | `[ACTIVE]`                              | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`           | The Network.      |
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                               |
-| :----------------- | :---------------------------------- |
-| **Module ID**      | `UMB-SENTINEL-001`                  |
-| **Official Name**  | `The Sentinel`                      |
-| **Version**        | `v11.0`                             |
-| **Evolution**      | **Cognitive Ascension**             |
-| **Status**         | `ACTIVE`                            |
-| **Type**           | `Module`                            |
-| **Classification** | `Moon`                              |
-| **Authors**        | `System`                            |
-| **Created**        | `2025-10-01`                        |
-| **Updated**        | `2026-01-25`                        |
-| **Authority**      | `CODEX-001`                         |
-| **Tags**           | `Sentinel, Vigil, Integrity, v11.0` |
+| Key | Value |
+| **Type** | `Module` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-25` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # UMB-SENTINEL-001: The Inner Flame Protocol
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Phoenix Form
 > **Signal**: ALPHA
-
-## Genesis Stamp: 2026-01-25 | Domain: GVRN | State: CANONIZED
 
 ---
 
@@ -175,3 +182,5 @@ _Verified by Synarche - v11.0_
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

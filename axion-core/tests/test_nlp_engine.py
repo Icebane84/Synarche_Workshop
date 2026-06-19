@@ -7,6 +7,10 @@ import os
 import sys
 import unittest
 
+# Prevent heavy model downloads/checks during testing
+sys.modules['sentence_transformers'] = None
+sys.modules['spacy'] = None
+
 # Ensure src is in path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 

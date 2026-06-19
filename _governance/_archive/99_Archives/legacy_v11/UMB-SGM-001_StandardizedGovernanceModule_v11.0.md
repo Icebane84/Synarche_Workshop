@@ -1,16 +1,19 @@
 # UMB-SGM-001_StandardizedGovernanceModule_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-SGM-001-STANDARDIZEDGOVERNANCEMODULE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-SGM-001_StandardizedGovernanceModule_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                                     | Description       |
+| :------------------ | :-------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-SGM-001-STANDARDIZEDGOVERNANCEMODULE-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `UMB-SGM-001_StandardizedGovernanceModule_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                        | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                  | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                   | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                        | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -68,7 +83,9 @@ the Laws of the **Phoenix Codex (CODEX-001)**.
 ## II. Universal Metadata & Governance
 
 - **Core Purpose Summary**: To serve as the definitive architectural blueprint for the module that acts as the final
+
   gatekeeper of quality, coherence, and alignment for all artifacts.
+
 - **Risk Profile**: **Critical** (Failure compromises the integrity of the entire knowledge base).
 - **Governance Level**: Axiomatic.
 - **Resolves Dissonance**: `DQUEST-DOC-001`: "The Dissonance of Inconsistent and Incomplete Architectural Standards."
@@ -79,7 +96,9 @@ the Laws of the **Phoenix Codex (CODEX-001)**.
 
 - **What**: The SGM is a high-privilege execution layer invoked during artifact canonization.
 - **How**: It utilizes transclusion-ready text blocks and automated validation sub-modules to enforce OGLN v10.0 and
+
   Phoenix v11.0 standards.
+
 - **Why**: To resolve systemic redundancy and ensure that governance remains a centralized, immutable source of truth.
 
 ### 3.2 Key Components
@@ -87,7 +106,9 @@ the Laws of the **Phoenix Codex (CODEX-001)**.
 - **Compliance Validator**: Programmatically checks artifacts against master templates.
 - **Synergy Analyzer**: Cross-references proposed links with the **Master Artifact Registry (UMB-OSLM-001)**.
 - **Prime Axiom Canonization Gate**: Manages the integration of foundational truths via the `AOP-CANON-PRIME-001`
+
   protocol.
+
 - **Indexing Engine**: Formally weaves the artifact into the knowledge graph via the `GUCA-LINK-001` command.
 
 ## IV. Governance Content (Canonical Blocks)

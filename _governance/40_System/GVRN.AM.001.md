@@ -1,46 +1,50 @@
 # UMB-AM-001_AssociationManager_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                    | Description       |
 | :------------------ | :--------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.AM.001`                            | The Sovereign ID. |
 | **Official Name**   | `UMB-AM-001_AssociationManager_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                        | The Standard.     |
 | **Domain**          | `GVRN`                                   | The Subject.      |
 | **Celestial Class** | `[PLANET]`                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                       | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                               | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                  | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                       | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # Association Manager Module (UMB-AM-001)
 
 ---
 
 # Universal Identification & Provenance (UIP)
-
-| **1. Artifact ID** | `UMB-AM-001` |
-| **2. Official Name** | `UMB-AM-001_AssociationManager_v11.0.md` |
-| **3. Version** | **v11.1 (Absorbed)** |
-| **4. Provenance** | **Genesis Stamp: 2026-01-20** |
-| **5. Domain** | `COG` |
-| **6. Evolution** | **Cognitive Ascension** |
-| **7. Celestial Class** | `[STAR]` |
-| **8. Tier** | **Operational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Coherence** |
-| **11. Catalyst** | **PTAS Absorption Cluster** |
-| **12. Relations** | `LINK: UMB-GVRN-CODE-001`, `LINK: OSLM-MASTER-001` |
 
 ---
 
@@ -138,3 +142,5 @@ _"The strength of the web is not in the number of threads, but in the tension of
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

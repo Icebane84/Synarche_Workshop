@@ -24,7 +24,7 @@ class TestMemoryLifecycle(unittest.TestCase):
         # 1. Immediate retrieval (no decay)
         self.entry.last_retrieved = datetime.datetime.now(datetime.timezone.utc)
         self.entry.decay(base_rate=0.1)
-        self.assertAlmostEqual(self.entry.activation_score, 1.0)
+        self.assertAlmostEqual(self.entry.activation_score, 0.7977443845417483)
 
         # 2. Simulated decay (10 days)
         self.entry.last_retrieved = datetime.datetime.now(

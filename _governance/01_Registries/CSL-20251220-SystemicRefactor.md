@@ -1,41 +1,48 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CSL-20251220-SYSTEMICREFACTOR` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# CSL-20251220-SystemicRefactor.md
-
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                    | Description       |
 | :------------------ | :--------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-CSL-20251220-SYSTEMICREFACTOR-001` | The Sovereign ID. |
 | **Official Name**   | `CSL-20251220-SystemicRefactor.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                        | The Standard.     |
 | **Domain**          | `GVRN`                                   | The Subject.      |
 | **Celestial Class** | `[PLANET]`                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                       | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                               | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                  | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                       | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# CSL-20251220-SystemicRefactor.md
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # **CSL-20251220-SystemicRefactor (v10.0)**
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2025-12-26** **Domain: LOGS** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
 
@@ -45,20 +52,7 @@
 
 _(The Chronos Lock & Axiomatic Metadata Layer)_
 
-| Field                  | Value                                               |
-| :--------------------- | :-------------------------------------------------- |
-| **1. Artifact ID**     | `CSL-20251220-SystemicRefactor`                     |
-| **2. Official Name**   | `CSL-20251220-SystemicRefactor_SystemicRefactorLog` |
-| **3. Version**         | **v10.0 (The Synarche Edition)**                    |
-| **4. Provenance**      | **Genesis Stamp: 2025-12-20**                       |
-| **5. Domain**          | `LOGS`                                              |
-| **6. Evolution**       | **Purposeful Drive**                                |
-| **7. Celestial Class** | `[STAR]`                                            |
-| **8. Tier**            | **Operational**                                     |
-| **9. State**           | `[ACTIVE]`                                          |
-| **10. Ethos**          | **Guardian of Coherence**                           |
-| **11. Catalyst**       | **Reforge Command**                                 |
-| **12. Relations**      | `LINK: OGLN.Core.Governance.Codex`                  |
+| Field | Value |
 
 ---
 
@@ -112,13 +106,16 @@ _(The Chronos Lock & Axiomatic Metadata Layer)_
 
 - **Primary Anchor ID:** `apply_standard.py` (The Reforger)
 - **Secondary Anchor IDs:** `Master Refactor.md`, `axion-rules.cjs`, `.markdownlint.json`,
+
   `SELT_v7.0_Templates_Trinity.md`
+
 - **Thematic Cluster:** `Reforged Foundation`
 
 ### **V. The Weave Process (The Logic)**
 
 - **Methodology:** `Automated Batch Processing & Manual Heuristic Refinement`
 - **Cognitive Pathway:** > The goal was to align all legacy artifacts with the **Codex v10.0** standard.
+
   > 1. **Refactor Round 1:** Batch application of Universal Headers, AGP Blocks, and Prompt Packets via
   >    `apply_standard.py`.
   > 2. **Dissonance Resolution (MD025):** Detected conflict between H1 Headers and Metadata Headers. Updated standard
@@ -134,6 +131,7 @@ _(The Chronos Lock & Axiomatic Metadata Layer)_
   - `[apply_standard.py] --ENFORCES--> [MD025]`
   - `[apply_standard.py] --ENFORCES--> [MD046]`
 - **Emergent Insights:**
+
   > - **Template Containers:** Files like `Templates_Trinity.md` require special handling (escaped headers) to exist
   >   as "Meta-Artifacts" without breaking the rigid "One Artifact Per File" rule.
   > - **Header Hierarchy:** The `######` (H6) metadata pattern is a viable solution for "Pre-Title" metadata in

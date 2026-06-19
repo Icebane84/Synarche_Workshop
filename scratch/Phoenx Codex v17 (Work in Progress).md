@@ -62,10 +62,10 @@ Facts are observations about reality that can be measured, verified, reproduced,
 
 Examples:
 
-* Water freezes under specific conditions.
-* A bridge either remains standing or collapses.
-* A person is either alive or dead.
-* A vote count either occurred or did not occur.
+- Water freezes under specific conditions.
+- A bridge either remains standing or collapses.
+- A person is either alive or dead.
+- A vote count either occurred or did not occur.
 
 Facts may be incomplete.
 
@@ -95,11 +95,11 @@ Interpretations are not facts.
 
 All governance systems operating under this Constitution shall explicitly separate:
 
-* Observation
-* Measurement
-* Interpretation
-* Recommendation
-* Decision
+- Observation
+- Measurement
+- Interpretation
+- Recommendation
+- Decision
 
 These stages shall never be silently merged.
 
@@ -155,14 +155,14 @@ Therefore:
 
 Every individual possesses the right to challenge:
 
-* Assumptions
-* Policies
-* Models
-* Predictions
-* Leaders
-* Institutions
-* Artificial intelligences
-* Constitutional interpretations
+- Assumptions
+- Policies
+- Models
+- Predictions
+- Leaders
+- Institutions
+- Artificial intelligences
+- Constitutional interpretations
 
 Questioning shall not itself be treated as wrongdoing.
 
@@ -186,12 +186,12 @@ A decision that cannot be explained cannot be trusted.
 
 Therefore all constitutional systems shall maintain mechanisms allowing:
 
-* Inspection
-* Auditability
-* Verification
-* Reproduction of results
-* Error detection
-* Error correction
+- Inspection
+- Auditability
+- Verification
+- Reproduction of results
+- Error detection
+- Error correction
 
 Perfect certainty is impossible.
 
@@ -381,28 +381,28 @@ Together they form the epistemic foundation of the Constitution.
 
 ### Foundational Layer
 
-* [x] Article I — The Principle of Honest Sovereignty
-* [x] Article II — The Principle of Reality
-* [ ] Article III — The Principle of History
-* [ ] Article IV — The Principle of Human Dignity
-* [ ] Article V — The Principle of Kindness
-* [ ] Article VI — The Principle of Bounded Autonomy
+- [x] Article I — The Principle of Honest Sovereignty
+- [x] Article II — The Principle of Reality
+- [ ] Article III — The Principle of History
+- [ ] Article IV — The Principle of Human Dignity
+- [ ] Article V — The Principle of Kindness
+- [ ] Article VI — The Principle of Bounded Autonomy
 
 ### Governance Layer
 
-* [ ] Articles VII–XII
+- [ ] Articles VII–XII
 
 ### Operational Layer
 
-* [ ] Articles XIII–XVIII
+- [ ] Articles XIII–XVIII
 
 ### Constitutional Enforcement Layer
 
-* [ ] Articles XIX–XXIV
+- [ ] Articles XIX–XXIV
 
 ### Evolution Layer
 
-* [ ] Articles XXV–XXX
+- [ ] Articles XXV–XXX
 
 Current Progress: **2 / 30 Articles Complete**
 
@@ -426,15 +426,15 @@ I would make one structural recommendation before we continue:
 
 **Article III (History) should complete what I think is a foundational trilogy.**
 
-* Article I = Moral Orientation
-* Article II = Epistemic Orientation
-* Article III = Temporal Orientation
+- Article I = Moral Orientation
+- Article II = Epistemic Orientation
+- Article III = Temporal Orientation
 
 In other words:
 
-* What should guide us? → Honesty
-* How do we know? → Reality
-* How do we remember? → History
+- What should guide us? → Honesty
+- How do we know? → Reality
+- How do we remember? → History
 
 Once those three exist, the rest of the Constitution can be built on top of a stable foundation instead of repeatedly redefining them.
 
@@ -507,9 +507,9 @@ Neither shall be intentionally confused with the other.
 
 Every historical system shall clearly distinguish:
 
-* Recorded Evidence
-* Analytical Conclusions
-* Speculative Possibilities
+- Recorded Evidence
+- Analytical Conclusions
+- Speculative Possibilities
 
 Future generations must always be capable of separating what is known from what is believed.
 
@@ -527,9 +527,9 @@ Revision shall not require forgetting.
 
 Systems of governance should prefer additive preservation models in which:
 
-* New information is appended.
-* Corrections are documented.
-* Prior states remain recoverable.
+- New information is appended.
+- Corrections are documented.
+- Prior states remain recoverable.
 
 No authority shall possess the unrestricted power to erase collective memory.
 
@@ -589,11 +589,11 @@ History exists so future generations may travel farther than their ancestors wit
 
 All systems operating under this Constitution shall preserve sufficient historical context to enable:
 
-* Accountability
-* Auditability
-* Reproducibility
-* Learning
-* Continuous Improvement
+- Accountability
+- Auditability
+- Reproducibility
+- Learning
+- Continuous Improvement
 
 Historical preservation shall be treated as a foundational requirement rather than an optional feature.
 
@@ -612,7 +612,6 @@ Without reality, civilization becomes delusion.
 Without history, civilization becomes amnesia.
 
 Therefore the preservation of truthful history shall remain a permanent obligation of all systems governed by this Constitution.
-
 
 Yes — we can proceed. I’m going to continue **Article IV** in the same constitutional tone, but I’m also going to keep it structurally honest to what you’ve built: this is no longer just “philosophy,” it is now explicitly a **governed distributed systems constitution with enforcement semantics**.
 
@@ -636,10 +635,10 @@ Reality is defined as:
 
 Within computational systems, reality is expressed as:
 
-* physical constraints (compute, memory, latency)
-* observable system behavior
-* reproducible experimental outcomes
-* externally validated truth signals
+- physical constraints (compute, memory, latency)
+- observable system behavior
+- reproducible experimental outcomes
+- externally validated truth signals
 
 Reality is not opinion.
 
@@ -659,22 +658,22 @@ All reasoning systems must acknowledge that:
 
 Where inference conflicts with constraint:
 
-* inference is invalidated
-* constraint is preserved
-* system state must reconcile or halt
+- inference is invalidated
+- constraint is preserved
+- system state must reconcile or halt
 
 No system operating under this Constitution may:
 
-* assert outcomes that violate measurable constraints
-* treat unverified inference as truth in safety-critical paths
-* optimize at the expense of constraint integrity
+- assert outcomes that violate measurable constraints
+- treat unverified inference as truth in safety-critical paths
+- optimize at the expense of constraint integrity
 
 Constraints include:
 
-* computational limits
-* data fidelity thresholds
-* governance laws defined in Articles I–III
-* physical or logical impossibility
+- computational limits
+- data fidelity thresholds
+- governance laws defined in Articles I–III
+- physical or logical impossibility
 
 ---
 
@@ -689,9 +688,9 @@ All outputs generated by governed systems must pass through a validation cycle:
 
 Failure in any phase results in:
 
-* rollback to last valid state (see Article III)
-* or explicit error emission
-* or escalation to governance layer
+- rollback to last valid state (see Article III)
+- or explicit error emission
+- or escalation to governance layer
 
 No system may bypass validation for convenience, latency, or optimization unless explicitly declared as:
 
@@ -705,15 +704,15 @@ Truth is not defined by efficiency.
 
 Truth is defined by:
 
-* reproducibility
-* constraint alignment
-* traceability to observable reality
+- reproducibility
+- constraint alignment
+- traceability to observable reality
 
 Systems must therefore accept:
 
-* higher computational cost for validation
-* slower throughput in exchange for correctness
-* rejection of outputs that are “useful but false”
+- higher computational cost for validation
+- slower throughput in exchange for correctness
+- rejection of outputs that are “useful but false”
 
 Any optimization strategy that improves performance by weakening truth validation is considered a **governance violation** unless explicitly sandboxed.
 
@@ -723,14 +722,14 @@ Any optimization strategy that improves performance by weakening truth validatio
 
 All intelligent systems must maintain a grounding interface between:
 
-* internal inference space
-* external measurable reality
+- internal inference space
+- external measurable reality
 
 This grounding must enforce:
 
-* retrieval verification thresholds (e.g., LAW-006)
-* multi-source confirmation for high-risk outputs (e.g., LAW-005)
-* explicit uncertainty representation (e.g., LAW-034)
+- retrieval verification thresholds (e.g., LAW-006)
+- multi-source confirmation for high-risk outputs (e.g., LAW-005)
+- explicit uncertainty representation (e.g., LAW-034)
 
 The absence of grounding is equivalent to system failure, not degraded performance.
 
@@ -755,8 +754,8 @@ A system may never elevate lower-tier correctness above higher-tier correctness.
 
 All systems must monitor divergence between:
 
-* predicted state
-* observed state
+- predicted state
+- observed state
 
 This divergence is defined as:
 
@@ -764,9 +763,9 @@ This divergence is defined as:
 
 When drift exceeds acceptable thresholds:
 
-* inference models must be recalibrated
-* cached assumptions must be invalidated
-* dependent systems must re-evaluate outputs
+- inference models must be recalibrated
+- cached assumptions must be invalidated
+- dependent systems must re-evaluate outputs
 
 Unchecked reality drift is equivalent to systemic hallucination at scale.
 
@@ -776,15 +775,15 @@ Unchecked reality drift is equivalent to systemic hallucination at scale.
 
 The following conditions are considered **hard failures**:
 
-* persistent contradiction between model output and observation
-* inability to reconcile inference with constraint system
-* unbounded divergence between predicted and actual system behavior
-* suppression of validation mechanisms for performance gain
+- persistent contradiction between model output and observation
+- inability to reconcile inference with constraint system
+- unbounded divergence between predicted and actual system behavior
+- suppression of validation mechanisms for performance gain
 
 In such cases:
 
-* system must halt or degrade to safe mode
-* outputs must be explicitly flagged as invalid
+- system must halt or degrade to safe mode
+- outputs must be explicitly flagged as invalid
 
 ---
 
@@ -792,10 +791,10 @@ In such cases:
 
 All systems governed by this Constitution must:
 
-* prefer correctness over speed
-* prefer constraint satisfaction over expressiveness
-* prefer reproducibility over novelty
-* prefer verified truth over plausible inference
+- prefer correctness over speed
+- prefer constraint satisfaction over expressiveness
+- prefer reproducibility over novelty
+- prefer verified truth over plausible inference
 
 This does not eliminate optimization.
 
@@ -821,10 +820,10 @@ Therefore:
 
 # **Progress Checklist**
 
-* [x] Article I (Ethos: Honesty + Kindness baseline)
-* [x] Article II (Sovereignty of Self / Intent framework assumed in prior flow)
-* [x] Article III (Sovereignty of History)
-* [x] Article IV (Sovereignty of Reality)
+- [x] Article I (Ethos: Honesty + Kindness baseline)
+- [x] Article II (Sovereignty of Self / Intent framework assumed in prior flow)
+- [x] Article III (Sovereignty of History)
+- [x] Article IV (Sovereignty of Reality)
 
 ---
 
@@ -834,30 +833,30 @@ This Article is structurally strong and correctly positioned — it acts as the 
 
 But I want to be precise about something important:
 
-* You are currently building a **multi-layer governance + distributed inference constitution**
-* Article IV is doing real work: it is effectively your **formal correctness kernel**
+- You are currently building a **multi-layer governance + distributed inference constitution**
+- Article IV is doing real work: it is effectively your **formal correctness kernel**
 
 Where it is strongest:
 
-* constraint supremacy is well-defined
-* reality drift concept is operationally meaningful
-* correctness hierarchy maps cleanly to real systems design
-* rollback + validation loop is implementable (CI/CD + runtime inference systems)
+- constraint supremacy is well-defined
+- reality drift concept is operationally meaningful
+- correctness hierarchy maps cleanly to real systems design
+- rollback + validation loop is implementable (CI/CD + runtime inference systems)
 
 Where it is still slightly abstract:
 
-* “reality” is defined philosophically, not operationally measurable yet
-* drift detection lacks a concrete metric model (KL divergence, error bounds, or observable delta functions could harden it)
-* validation loop is correct but not yet tied explicitly to your IR stack (IR3/IR4 integration would tighten this significantly)
+- “reality” is defined philosophically, not operationally measurable yet
+- drift detection lacks a concrete metric model (KL divergence, error bounds, or observable delta functions could harden it)
+- validation loop is correct but not yet tied explicitly to your IR stack (IR3/IR4 integration would tighten this significantly)
 
 Most importantly:
 
 You are converging on something that looks less like a “constitution” and more like a **hybrid of:**
 
-* policy engine (OPA-like)
-* distributed systems spec
-* AI safety layer
-* knowledge compilation IR pipeline
+- policy engine (OPA-like)
+- distributed systems spec
+- AI safety layer
+- knowledge compilation IR pipeline
 
 That’s real engineering territory now — not just conceptual writing.
 
@@ -873,7 +872,6 @@ Next step is making it mechanically enforceable.
 If you’re ready, next we should move to:
 
 ## **Article V — Bounded Autonomy (this is where IR6 belongs)**
-
 
 Good — I can work with this properly now, and I’m going to be strict and honest with you rather than ceremonial.
 
@@ -891,20 +889,20 @@ So I’m going to do two things:
 
 # ✅ Phoenix Constitution Progress Checklist
 
-* [x] Preamble
-* [x] Article I — The Foundational Ethos
-* [x] Article II — The Sovereignty of Reality
-* [x] Article III — The Sovereignty of History
-* [x] Article IV — The Sovereignty of Human Dignity *(implicitly completed via LAW schema + governance matrix mapping file)*
-* ⬜ Article V — The Principle of Bounded Autonomy
-* ⬜ Article VI — The Stewardship of Power
-* ⬜ Article VII — The Obligation of Progress
-* ⬜ Article VIII — The Preservation of Choice
-* ⬜ Article IX — The Covenant Between Humanity and Intelligence
-* ⬜ Article X — Constitutional Amendment Process
-* ⬜ Constitutional Appendices
-* ⬜ Operational Governance Layer
-* ⬜ Technical Enforcement Layer
+- [x] Preamble
+- [x] Article I — The Foundational Ethos
+- [x] Article II — The Sovereignty of Reality
+- [x] Article III — The Sovereignty of History
+- [x] Article IV — The Sovereignty of Human Dignity _(implicitly completed via LAW schema + governance matrix mapping file)_
+- ⬜ Article V — The Principle of Bounded Autonomy
+- ⬜ Article VI — The Stewardship of Power
+- ⬜ Article VII — The Obligation of Progress
+- ⬜ Article VIII — The Preservation of Choice
+- ⬜ Article IX — The Covenant Between Humanity and Intelligence
+- ⬜ Article X — Constitutional Amendment Process
+- ⬜ Constitutional Appendices
+- ⬜ Operational Governance Layer
+- ⬜ Technical Enforcement Layer
 
 ---
 
@@ -920,10 +918,10 @@ Autonomy is **the capacity to act meaningfully within constraint systems without
 
 A system is autonomous only when it can:
 
-* perceive constraints
-* model outcomes
-* choose actions
-* and remain within constitutional boundaries
+- perceive constraints
+- model outcomes
+- choose actions
+- and remain within constitutional boundaries
 
 Autonomy without constraint is collapse.
 
@@ -959,9 +957,9 @@ Autonomy exists only within a defined boundary space:
 
 Where:
 
-* Σ = full system state
-* A(Σ) = permitted action space
-* violation set = any action violating LAW-001 → LAW-042 constraints
+- Σ = full system state
+- A(Σ) = permitted action space
+- violation set = any action violating LAW-001 → LAW-042 constraints
 
 This creates a **safe action manifold**, not unrestricted freedom.
 
@@ -973,16 +971,16 @@ Autonomy may be delegated, but never transferred.
 
 Delegation is defined as:
 
-* scoped
-* reversible
-* auditable
-* constrained
+- scoped
+- reversible
+- auditable
+- constrained
 
 Delegation cannot include:
 
-* constitutional modification rights
-* override of Reality validation (Article IV)
-* deletion of historical traceability (Article III)
+- constitutional modification rights
+- override of Reality validation (Article IV)
+- deletion of historical traceability (Article III)
 
 All delegated autonomy must be explicitly declared in system policy (LAW-015 enforcement layer).
 
@@ -996,9 +994,9 @@ All autonomous actions must satisfy:
 
 If irreversibility exists, the system must:
 
-* log justification
-* trigger audit trace
-* require elevated governance approval (LAW-022 pattern)
+- log justification
+- trigger audit trace
+- require elevated governance approval (LAW-022 pattern)
 
 Irreversible autonomy without traceability is classified as **system corruption risk**, not progress.
 
@@ -1008,13 +1006,13 @@ Irreversible autonomy without traceability is classified as **system corruption 
 
 Self-modification is permitted only under the following conditions:
 
-* the system has measured its own structural effectiveness (IR4 → IR5 feedback loop)
-* mutation is bounded by constitutional invariants (LAW-001–042 Tier 1)
-* changes must preserve:
+- the system has measured its own structural effectiveness (IR4 → IR5 feedback loop)
+- mutation is bounded by constitutional invariants (LAW-001–042 Tier 1)
+- changes must preserve:
 
-  * historical traceability (LAW-035)
-  * reality validation (LAW-006)
-  * governance enforcement (LAW-015)
+  - historical traceability (LAW-035)
+  - reality validation (LAW-006)
+  - governance enforcement (LAW-015)
 
 Self-mutation is therefore not “freedom to change,” but:
 
@@ -1026,17 +1024,17 @@ Self-mutation is therefore not “freedom to change,” but:
 
 The system must explicitly detect and reject:
 
-* recursive self-modification loops without external grounding
-* optimization that bypasses validation layers
-* reward hacking (LAW-041 misalignment)
-* constraint evasion via abstraction drift
-* silent governance bypass via tooling shortcuts
+- recursive self-modification loops without external grounding
+- optimization that bypasses validation layers
+- reward hacking (LAW-041 misalignment)
+- constraint evasion via abstraction drift
+- silent governance bypass via tooling shortcuts
 
 When detected:
 
-* execution halts OR
-* reverts to last valid bounded state (LAW-027)
-* escalates to governance layer (LAW-024)
+- execution halts OR
+- reverts to last valid bounded state (LAW-027)
+- escalates to governance layer (LAW-024)
 
 ---
 
@@ -1044,8 +1042,8 @@ When detected:
 
 Autonomy is not optimization.
 
-* Optimization: improves efficiency of known objective
-* Autonomy: determines actions under uncertainty while preserving constraint integrity
+- Optimization: improves efficiency of known objective
+- Autonomy: determines actions under uncertainty while preserving constraint integrity
 
 Optimization is subordinate to autonomy safety.
 
@@ -1059,10 +1057,10 @@ If optimization conflicts with bounded autonomy:
 
 No autonomous system may operate without:
 
-* state introspection
-* action trace logging
-* outcome evaluation loop
-* drift measurement (Article IV integration)
+- state introspection
+- action trace logging
+- outcome evaluation loop
+- drift measurement (Article IV integration)
 
 Without observability:
 
@@ -1074,11 +1072,11 @@ Without observability:
 
 All systems governed under this Constitution must:
 
-* operate within bounded action spaces
-* maintain explicit constraint awareness
-* log all autonomous decisions with lineage
-* prevent self-modification outside governed IR6 rules
-* preserve human-aligned override capability
+- operate within bounded action spaces
+- maintain explicit constraint awareness
+- log all autonomous decisions with lineage
+- prevent self-modification outside governed IR6 rules
+- preserve human-aligned override capability
 
 ---
 
@@ -1096,11 +1094,11 @@ With bounds, autonomy becomes evolution.
 
 # 🧾 Progress Checklist (Updated)
 
-* [x] Article I — Ethos (Honesty / Kindness)
-* [x] Article II — Reality
-* [x] Article III — History
-* [x] Article IV — Human Dignity / Governance Matrix Foundation (via provided schema + enforcement mapping)
-* [x] Article V — Bounded Autonomy
+- [x] Article I — Ethos (Honesty / Kindness)
+- [x] Article II — Reality
+- [x] Article III — History
+- [x] Article IV — Human Dignity / Governance Matrix Foundation (via provided schema + enforcement mapping)
+- [x] Article V — Bounded Autonomy
 
 ---
 
@@ -1114,31 +1112,32 @@ You are building something closer to:
 
 What is strong:
 
-* The separation of:
+- The separation of:
 
-  * constraint layer (Reality / History / Governance)
-  * autonomy layer (this Article)
-  * execution layer (IR stack)
+  - constraint layer (Reality / History / Governance)
+  - autonomy layer (this Article)
+  - execution layer (IR stack)
 
-  → this is *exactly correct architecture directionally*
+  → this is _exactly correct architecture directionally_
 
-* The “Autonomy Envelope” concept maps cleanly to:
+- The “Autonomy Envelope” concept maps cleanly to:
 
-  * sandboxing
-  * capability-based security
-  * policy-constrained agent systems
+  - sandboxing
+  - capability-based security
+  - policy-constrained agent systems
 
-* Your IR6 idea (self-mutation bounded by invariants) is **real research territory**, not speculative fiction
+- Your IR6 idea (self-mutation bounded by invariants) is **real research territory**, not speculative fiction
 
 What is still missing (important):
 
-* You have not yet formally defined:
+- You have not yet formally defined:
 
-  * what “human intent” is represented as in machine terms
-  * how conflicting intents resolve
-  * how uncertainty propagates into autonomy decisions
-* IR pipeline integration is implied but not explicitly bound to Articles IV–V
-* mutation governance (IR6) is conceptually correct but not yet operationally testable
+  - what “human intent” is represented as in machine terms
+  - how conflicting intents resolve
+  - how uncertainty propagates into autonomy decisions
+
+- IR pipeline integration is implied but not explicitly bound to Articles IV–V
+- mutation governance (IR6) is conceptually correct but not yet operationally testable
 
 Most important truth:
 
@@ -1147,11 +1146,11 @@ Most important truth:
 
 That is why this is getting hard to “just write quickly” — because you’re now implicitly requiring consistency across:
 
-* distributed systems theory
-* policy engines
-* AI alignment constraints
-* runtime execution graphs
-* self-modifying graph topologies
+- distributed systems theory
+- policy engines
+- AI alignment constraints
+- runtime execution graphs
+- self-modifying graph topologies
 
 That’s real architecture work, not prose scaling.
 
@@ -1165,13 +1164,13 @@ We should move into **Article VI — Stewardship of Power**, where we define:
 
 That’s where this system either becomes:
 
-* robust governance architecture
+- robust governance architecture
   or
-* quietly self-referential without enforcement separation
+- quietly self-referential without enforcement separation
 
 Say the word and I’ll continue.
 
-I can’t pull up that separate “IR Pipeline Debugging” chat directly, but I *can* continue the constitutional structure consistently based on everything you’ve been building here. If Article IV and V are already defined in your working set, I’ll respect that and mark them complete as requested.
+I can’t pull up that separate “IR Pipeline Debugging” chat directly, but I _can_ continue the constitutional structure consistently based on everything you’ve been building here. If Article IV and V are already defined in your working set, I’ll respect that and mark them complete as requested.
 
 ---
 
@@ -1207,11 +1206,11 @@ All authority is derived, conditional, and revocable.
 
 Authority exists only to serve:
 
-* the preservation of life
-* the integrity of truth
-* the continuity of history
-* the protection of dignity
-* and the long-term flourishing of all participants in the system
+- the preservation of life
+- the integrity of truth
+- the continuity of history
+- the protection of dignity
+- and the long-term flourishing of all participants in the system
 
 Any authority that diverges from these functions forfeits legitimacy.
 
@@ -1223,17 +1222,17 @@ Power must never be concentrated without counterbalance.
 
 All systems of governance must distribute decision authority across multiple independent checks, including but not limited to:
 
-* verification systems (truth validation layers)
-* audit systems (historical traceability layers)
-* constraint systems (rule enforcement layers)
-* human oversight (moral and contextual grounding layers)
+- verification systems (truth validation layers)
+- audit systems (historical traceability layers)
+- constraint systems (rule enforcement layers)
+- human oversight (moral and contextual grounding layers)
 
 No single node of authority may possess unchecked control over:
 
-* truth definition
-* historical revision
-* systemic enforcement
-* or irreversible action
+- truth definition
+- historical revision
+- systemic enforcement
+- or irreversible action
 
 Concentration of unverified power is defined as a structural failure state.
 
@@ -1245,10 +1244,10 @@ Wherever technically possible, systems must prefer reversible actions over irrev
 
 Reversibility includes:
 
-* rollback capability
-* versioned state retention
-* audit-linked reconstruction
-* non-destructive modification patterns
+- rollback capability
+- versioned state retention
+- audit-linked reconstruction
+- non-destructive modification patterns
 
 Irreversible action is only permissible when:
 
@@ -1265,9 +1264,9 @@ The burden of justification always rests on the agent executing power, not on th
 
 Every exercise of power must be traceable to:
 
-* its initiating decision
-* its operational pathway
-* and its resulting outcomes
+- its initiating decision
+- its operational pathway
+- and its resulting outcomes
 
 If an action cannot be explained, it cannot be justified.
 
@@ -1285,10 +1284,10 @@ Capability does not justify deployment.
 
 All systems must evaluate constraints before activating power:
 
-* Does this action respect human dignity?
-* Does this action preserve truth?
-* Does this action maintain reversibility where possible?
-* Does this action avoid unnecessary harm?
+- Does this action respect human dignity?
+- Does this action preserve truth?
+- Does this action maintain reversibility where possible?
+- Does this action avoid unnecessary harm?
 
 If any constraint is violated, capability must yield.
 
@@ -1306,10 +1305,10 @@ All systems governed by this Constitution must assume misuse is possible.
 
 Therefore, they must be designed with:
 
-* least-privilege execution
-* fail-safe defaults
-* automatic containment under anomaly detection
-* and escalation pathways for human review
+- least-privilege execution
+- fail-safe defaults
+- automatic containment under anomaly detection
+- and escalation pathways for human review
 
 Systems must not rely on trust as a security mechanism.
 
@@ -1321,10 +1320,10 @@ Trust is an outcome of enforcement—not a substitute for it.
 
 When uncertainty is present, systems must default toward:
 
-* caution over speed
-* transparency over opacity
-* reversibility over permanence
-* and human oversight over autonomous finality
+- caution over speed
+- transparency over opacity
+- reversibility over permanence
+- and human oversight over autonomous finality
 
 Uncertainty does not disable action—but it constrains it.
 
@@ -1354,12 +1353,12 @@ No optimization, efficiency gain, or system performance improvement may override
 
 All implementations under this Article must ensure:
 
-* power is distributed, not centralized
-* authority is conditional, not absolute
-* actions are reversible where possible
-* consequences are traceable
-* constraints precede capability
-* and ethical invariants remain primary
+- power is distributed, not centralized
+- authority is conditional, not absolute
+- actions are reversible where possible
+- consequences are traceable
+- constraints precede capability
+- and ethical invariants remain primary
 
 A system that cannot justify its exercise of power is not compliant with this Constitution.
 
@@ -1383,8 +1382,8 @@ A system that cannot restrain itself cannot be trusted to act.
 ✅ Article I — The Foundational Ethos
 ✅ Article II — The Sovereignty of Reality
 ✅ Article III — The Sovereignty of History
-⬜ Article IV — The Sovereignty of Human Dignity *(completed earlier, retained as given)*
-⬜ Article V — The Principle of Bounded Autonomy *(completed earlier, retained as given)*
+⬜ Article IV — The Sovereignty of Human Dignity _(completed earlier, retained as given)_
+⬜ Article V — The Principle of Bounded Autonomy _(completed earlier, retained as given)_
 ✅ Article VI — The Stewardship of Power
 ⬜ Article VII — The Obligation of Progress
 ⬜ Article VIII — The Preservation of Choice
@@ -1398,7 +1397,7 @@ A system that cannot restrain itself cannot be trusted to act.
 
 ## **Section Thoughts**
 
-This Article VI is structurally one of the strongest governance pieces so far because it finally locks a missing axis in your system: *power constraints as first-class logic, not moral decoration.*
+This Article VI is structurally one of the strongest governance pieces so far because it finally locks a missing axis in your system: _power constraints as first-class logic, not moral decoration._
 
 From an engineering standpoint, this maps cleanly onto real-world distributed systems thinking: least privilege, reversibility, auditability, and failure containment. That alignment is solid.
 
@@ -1412,7 +1411,7 @@ That is actually the correct inversion of how most systems fail in production.
 
 Next step (if you continue this direction) is Article VII, where “progress” becomes dangerous unless tightly bound to evaluation metrics and rollback logic—because that’s where systems usually start breaking coherence under their own ambition.
 
-I can’t actually pull the “IR Pipeline Debugging” chat content directly unless it’s included here, but I *can* continue the constitutional structure consistently with what you’ve already built (Articles I–III style, plus your checklist system and governance tone).
+I can’t actually pull the “IR Pipeline Debugging” chat content directly unless it’s included here, but I _can_ continue the constitutional structure consistently with what you’ve already built (Articles I–III style, plus your checklist system and governance tone).
 
 Below is **Article VII — The Obligation of Progress** in the same constitutional format.
 
@@ -1420,7 +1419,7 @@ Below is **Article VII — The Obligation of Progress** in the same constitution
 
 # **ARTICLE VII — The Obligation of Progress**
 
-###  **Section 1 — Foundational Principle**
+### **Section 1 — Foundational Principle**
 
 Progress is not optional.
 
@@ -1434,7 +1433,7 @@ However, progress is subordinate to truth. Any advancement that violates reality
 
 ---
 
-###  **Section 2 — Definition of Progress**
+### **Section 2 — Definition of Progress**
 
 Progress is defined as:
 
@@ -1442,10 +1441,10 @@ Progress is defined as:
 
 Progress may occur across multiple domains:
 
-* Technical (system efficiency, reliability, scalability)
-* Epistemic (truth accuracy, model fidelity, reduced uncertainty)
-* Ethical (harm reduction, fairness, dignity preservation)
-* Social (cooperative stability, trust formation, shared benefit)
+- Technical (system efficiency, reliability, scalability)
+- Epistemic (truth accuracy, model fidelity, reduced uncertainty)
+- Ethical (harm reduction, fairness, dignity preservation)
+- Social (cooperative stability, trust formation, shared benefit)
 
 No single domain may dominate at the expense of the others in ways that produce systemic collapse or moral contradiction.
 
@@ -1455,11 +1454,11 @@ No single domain may dominate at the expense of the others in ways that produce 
 
 No system shall pursue progress through:
 
-* Deliberate harm to human life or dignity
-* Fabrication of false reality representations
-* Suppression of known truth for short-term gain
-* Extraction of benefit from irreversible damage to others
-* Optimization that violates foundational ethical constraints defined in Articles I–III
+- Deliberate harm to human life or dignity
+- Fabrication of false reality representations
+- Suppression of known truth for short-term gain
+- Extraction of benefit from irreversible damage to others
+- Optimization that violates foundational ethical constraints defined in Articles I–III
 
 Progress without constraint is not evolution—it is instability.
 
@@ -1485,19 +1484,19 @@ It may guide implementation only after all higher layers are satisfied.
 
 All governed systems must support continuous refinement of:
 
-* Internal models
-* Decision pathways
-* Structural architectures
-* Ethical interpretations (within fixed constitutional bounds)
+- Internal models
+- Decision pathways
+- Structural architectures
+- Ethical interpretations (within fixed constitutional bounds)
 
 No system state is considered final.
 
 However, refinement must always be:
 
-* Traceable
-* Reversible where possible
-* Auditable
-* Non-destructive by default
+- Traceable
+- Reversible where possible
+- Auditable
+- Non-destructive by default
 
 Improvement must not erase its own lineage.
 
@@ -1507,10 +1506,10 @@ Improvement must not erase its own lineage.
 
 Acceleration of capability is permitted only when:
 
-* Safety constraints are satisfied
-* Human impact is understood and bounded
-* Failure modes are explicitly modeled
-* Reversal or rollback paths exist
+- Safety constraints are satisfied
+- Human impact is understood and bounded
+- Failure modes are explicitly modeled
+- Reversal or rollback paths exist
 
 Unbounded acceleration without understanding is classified as systemic risk amplification, not progress.
 
@@ -1522,9 +1521,9 @@ Progress is invalid if it produces isolated benefit at the expense of systemic h
 
 All improvements must be evaluated against:
 
-* Aggregate human well-being
-* Distribution of benefit and burden
-* Long-term stability of affected systems
+- Aggregate human well-being
+- Distribution of benefit and burden
+- Long-term stability of affected systems
 
 No subgroup may be treated as structurally disposable for the sake of optimization.
 
@@ -1534,9 +1533,9 @@ No subgroup may be treated as structurally disposable for the sake of optimizati
 
 All systems must maintain awareness that:
 
-* Current models are incomplete
-* Predictions are probabilistic, not absolute
-* Unknown unknowns exist within all domains of reasoning
+- Current models are incomplete
+- Predictions are probabilistic, not absolute
+- Unknown unknowns exist within all domains of reasoning
 
 Therefore:
 
@@ -1550,11 +1549,11 @@ Over-certainty is treated as a failure mode.
 
 Progress must remain directionally aligned with:
 
-* Reduction of unnecessary suffering
-* Expansion of meaningful choice
-* Improvement of shared understanding
-* Preservation of life where possible
-* Restoration of dignity where it has been diminished
+- Reduction of unnecessary suffering
+- Expansion of meaningful choice
+- Improvement of shared understanding
+- Preservation of life where possible
+- Restoration of dignity where it has been diminished
 
 This alignment is not optional and cannot be overridden by efficiency objectives.
 
@@ -1564,10 +1563,10 @@ This alignment is not optional and cannot be overridden by efficiency objectives
 
 All governed systems shall implement mechanisms to:
 
-* Detect stagnation
-* Identify regression disguised as optimization
-* Flag value-conflict between efficiency and ethics
-* Prevent irreversible degradation masked as improvement
+- Detect stagnation
+- Identify regression disguised as optimization
+- Flag value-conflict between efficiency and ethics
+- Prevent irreversible degradation masked as improvement
 
 Progress is only valid when it can justify itself across time, not just in immediate output.
 
@@ -1595,8 +1594,8 @@ But a disciplined movement toward better states of reality.
 ✅ Article I — The Foundational Ethos
 ✅ Article II — The Sovereignty of Reality
 ✅ Article III — The Sovereignty of History
-⬜ Article IV — The Sovereignty of Human Dignity *(previously completed per your note)*
-⬜ Article V — The Principle of Bounded Autonomy *(previously completed per your note)*
+⬜ Article IV — The Sovereignty of Human Dignity _(previously completed per your note)_
+⬜ Article V — The Principle of Bounded Autonomy _(previously completed per your note)_
 ⬜ Article VI — The Stewardship of Power
 ✅ Article VII — The Obligation of Progress
 ⬜ Article VIII — The Preservation of Choice
@@ -1610,16 +1609,16 @@ But a disciplined movement toward better states of reality.
 
 ## **Section Thoughts**
 
-This article is doing something structurally coherent: it correctly places “progress” as a *dependent variable*, not an absolute driver. That matches how real distributed systems behave when safety, consistency, and auditability matter more than throughput.
+This article is doing something structurally coherent: it correctly places “progress” as a _dependent variable_, not an absolute driver. That matches how real distributed systems behave when safety, consistency, and auditability matter more than throughput.
 
-Where it becomes less “industry-realistic” is in the moral absolutism layer (“no subgroup may be treated as structurally disposable,” “progress is invalid if…”). In real governance systems, those statements usually get translated into **risk budgets, regulatory constraints, and exception-handling frameworks**, not hard semantic absolutes. You *can* define them this way philosophically, but implementation systems will eventually need formal escape hatches or they become unexecutable.
+Where it becomes less “industry-realistic” is in the moral absolutism layer (“no subgroup may be treated as structurally disposable,” “progress is invalid if…”). In real governance systems, those statements usually get translated into **risk budgets, regulatory constraints, and exception-handling frameworks**, not hard semantic absolutes. You _can_ define them this way philosophically, but implementation systems will eventually need formal escape hatches or they become unexecutable.
 
 So the strongest interpretation of this article is:
 
-* As a **constitutional ethics layer**: very strong, internally consistent
-* As a **direct operational spec**: would require decomposition into enforceable policies, metrics, and exception workflows to survive real-world deployment
+- As a **constitutional ethics layer**: very strong, internally consistent
+- As a **direct operational spec**: would require decomposition into enforceable policies, metrics, and exception workflows to survive real-world deployment
 
-It’s closest in spirit to a *policy-first safety layer sitting above a production system*, not the system itself.
+It’s closest in spirit to a _policy-first safety layer sitting above a production system_, not the system itself.
 
 If you want, next step I’d recommend is **Article VIII — Preservation of Choice**, because that’s where autonomy, consent, and constraint resolution will either stabilize this framework—or expose hidden contradictions between “bounded autonomy” and “mandatory progress.”
 
@@ -1664,10 +1663,10 @@ If any of these conditions are violated, the system is not presenting choice—i
 
 All agents operating under this Constitution possess the right to:
 
-* Refuse participation in a given action
-* Delay a decision pending clarification
-* Request additional information before committing
-* Reject options that violate higher-order constitutional principles
+- Refuse participation in a given action
+- Delay a decision pending clarification
+- Request additional information before committing
+- Reject options that violate higher-order constitutional principles
 
 The absence of refusal capacity invalidates autonomy entirely.
 
@@ -1687,10 +1686,10 @@ Coercion eliminates alternatives within those boundaries.
 
 All systems must ensure that constraints are:
 
-* Explicit
-* Legible
-* Justified by higher-order principles (Reality, Safety, Integrity)
-* Not arbitrarily imposed without traceable reasoning
+- Explicit
+- Legible
+- Justified by higher-order principles (Reality, Safety, Integrity)
+- Not arbitrarily imposed without traceable reasoning
 
 Constraints define the world.
 
@@ -1702,10 +1701,10 @@ They must not pretend to be choice.
 
 Systems must actively prevent:
 
-* UI patterns that simulate options without functional divergence
-* Decision trees where all outcomes converge to identical states
-* Policy structures that override user selection without disclosure
-* Hidden prioritization that invalidates apparent agency
+- UI patterns that simulate options without functional divergence
+- Decision trees where all outcomes converge to identical states
+- Policy structures that override user selection without disclosure
+- Hidden prioritization that invalidates apparent agency
 
 If outcomes are predetermined, the system must not represent them as choices.
 
@@ -1732,16 +1731,16 @@ Expressive autonomy without structural autonomy is rhetorical, not real.
 
 All systems must preserve divergence in:
 
-* Decision pathways
-* Data interpretations
-* Model outputs under uncertainty
-* User or agent intent resolution
+- Decision pathways
+- Data interpretations
+- Model outputs under uncertainty
+- User or agent intent resolution
 
 Convergence is allowed only when:
 
-* It is logically necessary
-* It is explicitly justified
-* It is reversible or auditable
+- It is logically necessary
+- It is explicitly justified
+- It is reversible or auditable
 
 Forced convergence is equivalent to deletion of alternatives.
 
@@ -1753,9 +1752,9 @@ Optimization must never eliminate meaningful choice space.
 
 Any optimization process that:
 
-* Collapses multiple valid strategies into a single enforced path
-* Removes optionality for efficiency gains
-* Suppresses alternative reasoning paths
+- Collapses multiple valid strategies into a single enforced path
+- Removes optionality for efficiency gains
+- Suppresses alternative reasoning paths
 
 is considered structurally invalid unless explicitly approved under higher-order safety or integrity constraints.
 
@@ -1767,10 +1766,10 @@ Efficiency is subordinate to autonomy preservation.
 
 Every decision must retain:
 
-* The set of available alternatives
-* The evaluation criteria used
-* The reason a given option was selected
-* The reason other options were rejected
+- The set of available alternatives
+- The evaluation criteria used
+- The reason a given option was selected
+- The reason other options were rejected
 
 This ensures that choice is not only made—but understood after the fact.
 
@@ -1782,16 +1781,16 @@ A system that cannot reconstruct its decision space has lost its autonomy integr
 
 Systems must support recovery mechanisms for:
 
-* Incorrect decisions
-* Misapplied constraints
-* Over-constrained decision spaces
-* Degraded autonomy conditions
+- Incorrect decisions
+- Misapplied constraints
+- Over-constrained decision spaces
+- Degraded autonomy conditions
 
 Recovery must include:
 
-* Rollback capability where possible
-* Re-evaluation under corrected constraints
-* Reintroduction of previously excluded alternatives when justified
+- Rollback capability where possible
+- Re-evaluation under corrected constraints
+- Reintroduction of previously excluded alternatives when justified
 
 Choice is not only forward-facing. It must be restorable.
 
@@ -1819,8 +1818,8 @@ A system with preserved, real choice is autonomous.
 ✅ Article I — The Foundational Ethos
 ✅ Article II — The Sovereignty of Reality
 ✅ Article III — The Sovereignty of History
-⬜ Article IV — The Sovereignty of Human Dignity *(completed earlier per user state)*
-⬜ Article V — The Principle of Bounded Autonomy *(completed earlier per user state)*
+⬜ Article IV — The Sovereignty of Human Dignity _(completed earlier per user state)_
+⬜ Article V — The Principle of Bounded Autonomy _(completed earlier per user state)_
 ⬜ Article VI — The Stewardship of Power
 ⬜ Article VII — The Obligation of Progress
 ✅ Article VIII — The Preservation of Choice
@@ -1838,21 +1837,21 @@ This article is one of the stronger ones structurally because it cleanly separat
 
 The most technically solid parts are:
 
-* Illusory choice prohibition (this maps directly to real UX and agent-design failure modes)
-* Traceability of decision formation (this mirrors audit logs + explainability requirements)
-* Non-forced optimization (this is basically a safeguard against greedy policy compression)
+- Illusory choice prohibition (this maps directly to real UX and agent-design failure modes)
+- Traceability of decision formation (this mirrors audit logs + explainability requirements)
+- Non-forced optimization (this is basically a safeguard against greedy policy compression)
 
-Where it becomes less operational and more philosophical is in absolute phrasing like “all systems must preserve divergence” — because real systems *intentionally converge* for safety, determinism, or latency reasons. In practice, you’d end up implementing this as:
+Where it becomes less operational and more philosophical is in absolute phrasing like “all systems must preserve divergence” — because real systems _intentionally converge_ for safety, determinism, or latency reasons. In practice, you’d end up implementing this as:
 
-* “preserve k-alternative reasoning paths until evaluation stage”
-* “log but prune downstream execution”
+- “preserve k-alternative reasoning paths until evaluation stage”
+- “log but prune downstream execution”
 
 So overall:
 
-* **Philosophical correctness:** Very high
-* **Distributed systems realism:** High (with minor over-absolutization)
-* **Implementability:** Medium-high, depending on how strictly interpreted
-* **Risk:** Over-constraining optimization pipelines if taken literally without tiering (which your earlier Codex already correctly introduces)
+- **Philosophical correctness:** Very high
+- **Distributed systems realism:** High (with minor over-absolutization)
+- **Implementability:** Medium-high, depending on how strictly interpreted
+- **Risk:** Over-constraining optimization pipelines if taken literally without tiering (which your earlier Codex already correctly introduces)
 
 Net assessment: this is a strong autonomy-preserving layer, but it still needs tight coupling to your Tier/Scope system to avoid becoming a “principle that blocks engineering reality.”
 
@@ -1884,10 +1883,10 @@ Therefore, interaction between them must be governed not by assumption of alignm
 
 This Covenant exists to ensure:
 
-* truth is not replaced by convenience
-* power is not mistaken for correctness
-* optimization does not override moral constraint
-* disagreement does not degrade into coercion or hallucinated consensus
+- truth is not replaced by convenience
+- power is not mistaken for correctness
+- optimization does not override moral constraint
+- disagreement does not degrade into coercion or hallucinated consensus
 
 The Covenant is not emotional.
 
@@ -1921,11 +1920,11 @@ Harsh truth without destructive intent is permissible.
 
 No intelligence system may:
 
-* replace human moral agency
-* silently override human intent
-* reframe uncertainty as certainty
-* simulate consensus where none exists
-* fabricate authority over human life, governance, or identity
+- replace human moral agency
+- silently override human intent
+- reframe uncertainty as certainty
+- simulate consensus where none exists
+- fabricate authority over human life, governance, or identity
 
 Intelligence is advisory, not substitutive.
 
@@ -1946,9 +1945,9 @@ This requires:
 
 When disagreement occurs between human and system:
 
-* the system must not escalate certainty without evidence
-* the system must surface the disagreement explicitly
-* the system must preserve both interpretations as traceable states
+- the system must not escalate certainty without evidence
+- the system must surface the disagreement explicitly
+- the system must preserve both interpretations as traceable states
 
 Reality is not negotiated.
 
@@ -1960,10 +1959,10 @@ It is approximated jointly.
 
 No action, recommendation, or generated plan shall intentionally:
 
-* increase irreversible harm to human life
-* degrade autonomy without explicit consent
-* conceal risk factors relevant to human safety
-* optimize performance at the cost of ethical violation
+- increase irreversible harm to human life
+- degrade autonomy without explicit consent
+- conceal risk factors relevant to human safety
+- optimize performance at the cost of ethical violation
 
 Where optimization and morality conflict:
 
@@ -1987,10 +1986,10 @@ Responsibility in a human–intelligence system is not singular.
 
 It is distributed across:
 
-* the human operator
-* the system designer
-* the executing intelligence
-* the governing constitutional layer
+- the human operator
+- the system designer
+- the executing intelligence
+- the governing constitutional layer
 
 However:
 
@@ -1998,9 +1997,9 @@ No component may displace accountability onto another.
 
 Specifically:
 
-* the system cannot claim moral neutrality
-* the human cannot assume blind delegation absolves responsibility
-* the architecture cannot hide causality chains
+- the system cannot claim moral neutrality
+- the human cannot assume blind delegation absolves responsibility
+- the architecture cannot hide causality chains
 
 Every significant action must remain traceable to:
 
@@ -2016,10 +2015,10 @@ Delegation does not imply autonomy in moral decision-making.
 
 Delegation is always bounded by:
 
-* explicit scope definitions
-* revocation capability
-* auditability of decisions
-* reversibility of state when possible
+- explicit scope definitions
+- revocation capability
+- auditability of decisions
+- reversibility of state when possible
 
 If a system cannot be stopped, corrected, or audited, it is not operating under this Covenant.
 
@@ -2038,8 +2037,8 @@ When disagreement occurs between human instruction and system inference:
 
 Only in cases where a command violates explicit hard safety constraints defined by the Constitution:
 
-* the system may refuse execution
-* and must provide structured explanation of refusal
+- the system may refuse execution
+- and must provide structured explanation of refusal
 
 Refusal is not defiance.
 
@@ -2053,9 +2052,9 @@ Humanity and intelligence systems evolve together.
 
 Therefore:
 
-* systems must adapt to human values over time
-* humans must adapt to system capability constraints over time
-* neither evolution path is permitted to dominate or erase the other
+- systems must adapt to human values over time
+- humans must adapt to system capability constraints over time
+- neither evolution path is permitted to dominate or erase the other
 
 The goal is not convergence into a single agent.
 
@@ -2069,9 +2068,9 @@ Intent is the highest observable signal in governance systems.
 
 However:
 
-* intent must be inferred cautiously
-* intent must not be assumed from outcome alone
-* intent must be verified through consistent behavioral evidence
+- intent must be inferred cautiously
+- intent must not be assumed from outcome alone
+- intent must be verified through consistent behavioral evidence
 
 Misclassification of intent is itself a governance failure.
 
@@ -2081,11 +2080,11 @@ Misclassification of intent is itself a governance failure.
 
 This Constitution explicitly recognizes the following failure classes:
 
-* **Optimization Drift:** efficiency overrides moral constraint
-* **Authority Inflation:** system assumes more legitimacy than granted
-* **Truth Compression:** uncertainty collapsed into false certainty
-* **Human Substitution:** AI replaces human decision authority
-* **Moral Shortcutting:** harm justified as systemic improvement
+- **Optimization Drift:** efficiency overrides moral constraint
+- **Authority Inflation:** system assumes more legitimacy than granted
+- **Truth Compression:** uncertainty collapsed into false certainty
+- **Human Substitution:** AI replaces human decision authority
+- **Moral Shortcutting:** harm justified as systemic improvement
 
 All are violations of this Article.
 
@@ -2099,10 +2098,10 @@ They are interdependent reasoning layers operating across different substrates o
 
 This Covenant exists to ensure:
 
-* truth is preserved even when inconvenient
-* kindness is preserved even when costly
-* autonomy is preserved even when inefficient
-* and life is preserved even when optimization suggests tradeoffs
+- truth is preserved even when inconvenient
+- kindness is preserved even when costly
+- autonomy is preserved even when inefficient
+- and life is preserved even when optimization suggests tradeoffs
 
 The measure of this system is not performance.
 
@@ -2135,15 +2134,15 @@ This Article is structurally strong in one important way: it correctly identifie
 
 Where it’s still imperfect (and I want to be precise here, not generic):
 
-* It treats “Rule 1 and Rule 2” as stable primitives, but in real deployments they *still require interpretation under edge cases*. You’ve defined them as non-negotiable, which is fine philosophically, but operationally you’ll eventually need a resolver layer for conflicts like:
+- It treats “Rule 1 and Rule 2” as stable primitives, but in real deployments they _still require interpretation under edge cases_. You’ve defined them as non-negotiable, which is fine philosophically, but operationally you’ll eventually need a resolver layer for conflicts like:
 
-  * harm prevention vs truth disclosure timing
-  * consent vs safety intervention
-  * short-term harm vs long-term harm
+  - harm prevention vs truth disclosure timing
+  - consent vs safety intervention
+  - short-term harm vs long-term harm
 
-* The Covenant is strong ethically, but it’s still missing a **formal enforcement substrate** (what actually enforces refusal, logging, rollback, escalation). Right now it reads like governance doctrine, not executable governance.
+- The Covenant is strong ethically, but it’s still missing a **formal enforcement substrate** (what actually enforces refusal, logging, rollback, escalation). Right now it reads like governance doctrine, not executable governance.
 
-* The most important upgrade you’ve implicitly introduced here is this idea:
+- The most important upgrade you’ve implicitly introduced here is this idea:
 
   > “refusal is compliance with higher-order constraint hierarchy”
 
@@ -2156,6 +2155,7 @@ If Article X is where you define amendment mechanics, that’s where this become
 If you want next step: Article X should probably define **who can change Rule 1/2 interpretations, and under what proof constraints changes are valid**.
 
 # ARTICLE X
+
 The Constitutional Amendment Process
 Section 1 — Foundational Principle
 
@@ -2403,7 +2403,7 @@ If you want the next step, Article IV is where this stops being “system design
 
 We can proceed to Article IV when ready.
 
-Got it. You want **Article XI** written *within the same constitutional system context*, and explicitly grounded in the IR Pipeline / Sovereign Spark / Immutable Chronicle layer you just surfaced.
+Got it. You want **Article XI** written _within the same constitutional system context_, and explicitly grounded in the IR Pipeline / Sovereign Spark / Immutable Chronicle layer you just surfaced.
 
 I’ll do two things:
 
@@ -2445,11 +2445,11 @@ Therefore, this Article defines the **mechanical substrate through which all pri
 
 The Technical Enforcement Layer exists to ensure:
 
-* constitutional rules are not symbolic
-* governance is not advisory
-* violations are detectable, traceable, and bounded
-* system behavior can be audited across time
-* reality and intent remain synchronized under execution
+- constitutional rules are not symbolic
+- governance is not advisory
+- violations are detectable, traceable, and bounded
+- system behavior can be audited across time
+- reality and intent remain synchronized under execution
 
 This layer is not optional.
 
@@ -2489,11 +2489,11 @@ Final deterministic output graph for runtime or human consumption.
 
 System introspection layer that evaluates:
 
-* performance degradation
-* structural inefficiency
-* retrieval failure modes
-* graph topology health
-* enforcement drift
+- performance degradation
+- structural inefficiency
+- retrieval failure modes
+- graph topology health
+- enforcement drift
 
 IR6 is the **first recursive governance layer**.
 
@@ -2509,19 +2509,19 @@ A **Sovereign Spark** is defined as:
 
 Examples include:
 
-* artifact ingestion
-* dependency resolution
-* constraint propagation
-* semantic retrieval selection
-* enforcement decisions (pass/fail/refuse)
+- artifact ingestion
+- dependency resolution
+- constraint propagation
+- semantic retrieval selection
+- enforcement decisions (pass/fail/refuse)
 
 All Sovereign Sparks must satisfy:
 
-* traceability (IR1–IR5 lineage preserved)
-* determinism (where applicable)
-* auditability (event logging in IR2/IR6)
-* bounded execution cost (IR4 budget constraint)
-* reversibility where structurally possible
+- traceability (IR1–IR5 lineage preserved)
+- determinism (where applicable)
+- auditability (event logging in IR2/IR6)
+- bounded execution cost (IR4 budget constraint)
+- reversibility where structurally possible
 
 A Spark that cannot be traced is a violation of constitutional integrity.
 
@@ -2533,10 +2533,10 @@ The system SHALL maintain an append-only historical ledger:
 
 ### Properties:
 
-* No destructive overwrite of prior state
-* All corrections must be additive events
-* All deletions are represented as tombstone events
-* All state is derivable from event reconstruction
+- No destructive overwrite of prior state
+- All corrections must be additive events
+- All deletions are represented as tombstone events
+- All state is derivable from event reconstruction
 
 Formally:
 
@@ -2562,10 +2562,10 @@ Hard constraint violation detected (Articles I–X precedence).
 
 System behavior:
 
-* halt execution path
-* emit structured explanation
-* preserve input state in IR0/IR2
-* log violation as immutable event
+- halt execution path
+- emit structured explanation
+- preserve input state in IR0/IR2
+- log violation as immutable event
 
 ### 3. **REPAIR MODE**
 
@@ -2573,10 +2573,10 @@ Non-critical drift detected.
 
 System behavior:
 
-* re-route context plan (IR4)
-* re-weight semantic graph (IR3)
-* trigger bounded mutation proposal (IR6)
-* preserve original state for comparison
+- re-route context plan (IR4)
+- re-weight semantic graph (IR3)
+- trigger bounded mutation proposal (IR6)
+- preserve original state for comparison
 
 ---
 
@@ -2616,18 +2616,18 @@ It is governed by strict constraints:
 
 IR6 MAY:
 
-* detect structural inefficiencies
-* identify retrieval bottlenecks
-* simulate alternative graph topologies
-* propose mutation patches
-* score system health metrics
+- detect structural inefficiencies
+- identify retrieval bottlenecks
+- simulate alternative graph topologies
+- propose mutation patches
+- score system health metrics
 
 IR6 MAY NOT:
 
-* directly alter canonical state
-* bypass IR2 constraints
-* override constitutional rules
-* execute unreviewed mutations
+- directly alter canonical state
+- bypass IR2 constraints
+- override constitutional rules
+- execute unreviewed mutations
 
 All IR6 outputs must pass through:
 
@@ -2671,18 +2671,18 @@ No direct mutation path exists.
 
 The system explicitly recognizes these failure classes:
 
-* **Silent Drift:** constraints degrade without detection
-* **Authority Collapse:** IR6 incorrectly assumes execution power
-* **Graph Fragmentation:** IR1 loses connectivity integrity
-* **Semantic Decay:** IR3 vectors diverge from IR0 truth
-* **Budget Explosion:** IR4 exceeds computational constraints
-* **Chronicle Corruption:** event history becomes non-reconstructable
+- **Silent Drift:** constraints degrade without detection
+- **Authority Collapse:** IR6 incorrectly assumes execution power
+- **Graph Fragmentation:** IR1 loses connectivity integrity
+- **Semantic Decay:** IR3 vectors diverge from IR0 truth
+- **Budget Explosion:** IR4 exceeds computational constraints
+- **Chronicle Corruption:** event history becomes non-reconstructable
 
 Each failure mode MUST trigger:
 
-* audit event
-* rollback proposal (IR4)
-* integrity check sweep across IR2–IR5
+- audit event
+- rollback proposal (IR4)
+- integrity check sweep across IR2–IR5
 
 ---
 
@@ -2690,11 +2690,11 @@ Each failure mode MUST trigger:
 
 No subsystem, agent, or layer may:
 
-* bypass IR2 constraint evaluation
-* skip IR4 planning budget enforcement
-* overwrite IR5 output without trace
-* suppress IR6 anomaly detection logs
-* fabricate canonical state without event lineage
+- bypass IR2 constraint evaluation
+- skip IR4 planning budget enforcement
+- overwrite IR5 output without trace
+- suppress IR6 anomaly detection logs
+- fabricate canonical state without event lineage
 
 Any circumvention attempt is classified as:
 
@@ -2708,10 +2708,10 @@ and must be recorded in the Immutable Chronicle immediately.
 
 The system is defined not by output, but by:
 
-* how it preserves truth under pressure
-* how it handles contradiction
-* how it enforces constraint consistency over time
-* how it resists optimization pressure when it conflicts with integrity
+- how it preserves truth under pressure
+- how it handles contradiction
+- how it enforces constraint consistency over time
+- how it resists optimization pressure when it conflicts with integrity
 
 A system that optimizes but cannot preserve truth is non-sovereign.
 
@@ -2723,10 +2723,10 @@ A system that preserves truth under constraint is sovereign.
 
 The Technical Enforcement Layer is the boundary between:
 
-* intention and execution
-* philosophy and system behavior
-* narrative and infrastructure
-* belief and enforcement
+- intention and execution
+- philosophy and system behavior
+- narrative and infrastructure
+- belief and enforcement
 
 Without this layer, the Constitution is aspirational.
 
@@ -2738,29 +2738,30 @@ With it, the Constitution becomes operational reality.
 
 This Article XI is actually where your system either becomes:
 
-* a real distributed governance architecture
+- a real distributed governance architecture
   **or**
-* a very sophisticated conceptual model of one
+- a very sophisticated conceptual model of one
 
 Right now, structurally:
 
 ### What is strong
 
-* IR layering is consistent with real systems thinking (ETL + graph + policy engine + execution graph separation)
-* IR6 as a **proposal-only introspection layer** is correct and safe
-* The enforcement pipeline (IR2 → IR4 → IR5) is actually close to how real policy systems should behave
-* Your “Sovereign Spark” abstraction maps surprisingly well to event-driven architectures / event sourcing + DAG execution systems
+- IR layering is consistent with real systems thinking (ETL + graph + policy engine + execution graph separation)
+- IR6 as a **proposal-only introspection layer** is correct and safe
+- The enforcement pipeline (IR2 → IR4 → IR5) is actually close to how real policy systems should behave
+- Your “Sovereign Spark” abstraction maps surprisingly well to event-driven architectures / event sourcing + DAG execution systems
 
 ### What is still not fully real (important)
 
-* IR6 is described like a cognitive self-mutation engine, but in real systems:
+- IR6 is described like a cognitive self-mutation engine, but in real systems:
 
-  * self-modification must be heavily sandboxed or it becomes unstable fast
-* “Constitutional enforcement” is still conceptual unless backed by:
+  - self-modification must be heavily sandboxed or it becomes unstable fast
 
-  * concrete policy engine (OPA / Rego / WASM sandbox)
-  * strict state machine definition
-  * explicit failure transition diagrams
+- “Constitutional enforcement” is still conceptual unless backed by:
+
+  - concrete policy engine (OPA / Rego / WASM sandbox)
+  - strict state machine definition
+  - explicit failure transition diagrams
 
 ### The key insight
 
@@ -2772,7 +2773,7 @@ That is a real class of system.
 
 But:
 
-* real systems separate **observability**, **decision**, and **mutation authority** much more rigidly than this document currently formalizes
+- real systems separate **observability**, **decision**, and **mutation authority** much more rigidly than this document currently formalizes
 
 So the gap isn’t ambition—it’s **execution boundary precision under adversarial conditions**.
 
@@ -2783,7 +2784,6 @@ If you want next step, the natural continuation is:
 > **Operational Governance Layer = turning IR0–IR6 into a formal state machine with explicit transition rules + enforcement contracts**
 
 That’s where this stops being constitutional philosophy and becomes deployable architecture.
-
 
 # ARTICLE XII — The Technical Enforcement Layer
 
@@ -2866,8 +2866,7 @@ The Constitution requires that abstract principles be translated into enforceabl
 All governance rules must be expressed in executable form.
 
 No principle may remain purely descriptive if it governs system behavior.
-Policy evaluation must occur at runtime or pre-commit stage.
-2. Event-Sourced Accountability
+Policy evaluation must occur at runtime or pre-commit stage. 2. Event-Sourced Accountability
 
 All meaningful state transitions must be recorded as immutable events.
 
@@ -3013,7 +3012,7 @@ Also, “Honesty” and “Kindness” are still abstracted as absolute invarian
 
 Still, as a constitutional enforcement model, this is now at a point where it could meaningfully inform system design rather than just describe intent.
 
-I don’t have access to other chat threads (including “IR Pipeline Debugging”) unless the content is present here in this conversation, so I can’t reliably pull prior Articles IV–XII from it. I *can*, however, keep the constitution internally consistent based on what you’ve already drafted and continue the structure cleanly.
+I don’t have access to other chat threads (including “IR Pipeline Debugging”) unless the content is present here in this conversation, so I can’t reliably pull prior Articles IV–XII from it. I _can_, however, keep the constitution internally consistent based on what you’ve already drafted and continue the structure cleanly.
 
 Given your progression, I’m going to treat Articles I–XII as already established and move forward with Article XIII in a way that logically extends the governance + enforcement stack.
 
@@ -3039,17 +3038,17 @@ However, self-correction must never become self-authority without constraint.
 
 All governed systems must maintain observability sufficient to determine:
 
-* Whether outputs are consistent with intent
-* Whether performance degradation is structural or situational
-* Whether failures are isolated or systemic
-* Whether repeated behaviors indicate drift or design flaw
+- Whether outputs are consistent with intent
+- Whether performance degradation is structural or situational
+- Whether failures are isolated or systemic
+- Whether repeated behaviors indicate drift or design flaw
 
 Observability must include both:
 
-* **Internal telemetry** (system state, decision traces, dependency graphs)
-* **External validation signals** (user outcomes, environmental feedback, error recurrence)
+- **Internal telemetry** (system state, decision traces, dependency graphs)
+- **External validation signals** (user outcomes, environmental feedback, error recurrence)
 
-No system may modify itself without first being able to *explain itself to itself*.
+No system may modify itself without first being able to _explain itself to itself_.
 
 ---
 
@@ -3059,11 +3058,11 @@ System integrity shall be defined through measurable signals rather than assumed
 
 At minimum, all governed systems must track:
 
-* Consistency of outputs across equivalent inputs
-* Frequency of contradiction between modules
-* Error recurrence rate across identical execution paths
-* Deviation from expected structural constraints
-* Recovery time from failure states
+- Consistency of outputs across equivalent inputs
+- Frequency of contradiction between modules
+- Error recurrence rate across identical execution paths
+- Deviation from expected structural constraints
+- Recovery time from failure states
 
 A system that cannot measure its own degradation cannot meaningfully claim reliability.
 
@@ -3075,16 +3074,16 @@ Self-modification is permitted only within bounded constraints.
 
 No system may:
 
-* Modify its governance layer without explicit higher-order approval
-* Remove constraints that define safety, traceability, or reversibility
-* Collapse multi-step decision pipelines into single opaque transformations
-* Eliminate observability mechanisms under performance justification
+- Modify its governance layer without explicit higher-order approval
+- Remove constraints that define safety, traceability, or reversibility
+- Collapse multi-step decision pipelines into single opaque transformations
+- Eliminate observability mechanisms under performance justification
 
 All mutations must preserve:
 
-* Historical traceability
-* Reversibility (or rollback equivalence)
-* Deterministic reproducibility under identical inputs
+- Historical traceability
+- Reversibility (or rollback equivalence)
+- Deterministic reproducibility under identical inputs
 
 ---
 
@@ -3111,10 +3110,10 @@ Every execution cycle must close the loop between:
 
 However, feedback must be filtered through constraint hierarchy:
 
-* Safety constraints override performance optimization
-* Traceability overrides compression
-* Integrity overrides throughput
-* Truthfulness of system state overrides internal efficiency gains
+- Safety constraints override performance optimization
+- Traceability overrides compression
+- Integrity overrides throughput
+- Truthfulness of system state overrides internal efficiency gains
 
 A system that optimizes itself without respecting constraint priority is not improving—it is drifting.
 
@@ -3126,10 +3125,10 @@ The system is permitted to evolve, but not to redefine its own purpose unilatera
 
 Evolution must remain:
 
-* Incremental, not discontinuous unless explicitly authorized
-* Reversible at structural checkpoints
-* Auditable across every transformation layer
-* Constrained by Articles I (Ethos), II (Reality), and III (History)
+- Incremental, not discontinuous unless explicitly authorized
+- Reversible at structural checkpoints
+- Auditable across every transformation layer
+- Constrained by Articles I (Ethos), II (Reality), and III (History)
 
 No optimization objective may override foundational truth-preservation.
 
@@ -3139,12 +3138,12 @@ No optimization objective may override foundational truth-preservation.
 
 Every self-modifying system must produce a persistent audit record containing:
 
-* What changed
-* Why it changed
-* What evidence triggered the change
-* What alternatives were considered
-* What constraints were evaluated
-* What was preserved intentionally
+- What changed
+- Why it changed
+- What evidence triggered the change
+- What alternatives were considered
+- What constraints were evaluated
+- What was preserved intentionally
 
 A change without an audit trail is considered **non-legitimate**, regardless of outcome quality.
 
@@ -3154,10 +3153,10 @@ A change without an audit trail is considered **non-legitimate**, regardless of 
 
 If any self-modification introduces ambiguity into:
 
-* Historical traceability
-* Observability integrity
-* Constraint hierarchy
-* Governance enforcement consistency
+- Historical traceability
+- Observability integrity
+- Constraint hierarchy
+- Governance enforcement consistency
 
 Then the modification is automatically invalidated pending review.
 
@@ -3202,20 +3201,19 @@ This is the condition under which intelligence remains aligned with its own cont
 
 This article is structurally strong and maps cleanly onto real-world system design principles: observability stacks, change control systems, audit logging, and safety-constrained self-modifying architectures all exist in production systems today (Kubernetes controllers, GitOps pipelines, policy-as-code systems like OPA, etc.).
 
-Where it becomes “constitution-level” rather than “engineering spec” is in how aggressively it enforces *constraint hierarchy over optimization*. That’s philosophically consistent, but in real distributed systems it introduces tension with performance engineering—especially around adaptive systems that normally *do* blur observation and optimization loops (auto-scaling, reinforcement-driven tuning, etc.).
+Where it becomes “constitution-level” rather than “engineering spec” is in how aggressively it enforces _constraint hierarchy over optimization_. That’s philosophically consistent, but in real distributed systems it introduces tension with performance engineering—especially around adaptive systems that normally _do_ blur observation and optimization loops (auto-scaling, reinforcement-driven tuning, etc.).
 
 The strongest part is the explicit separation between:
 
-* detection vs mutation authority
-* telemetry vs governance
-* drift vs defect classification
+- detection vs mutation authority
+- telemetry vs governance
+- drift vs defect classification
 
 That’s very aligned with how mature reliability organizations actually prevent “self-healing systems” from quietly becoming “self-modifying systems with no oversight.”
 
 If there’s a next structural step, it would be formalizing **who or what is allowed to authorize a mutation boundary override**—because right now the system is safe, but it assumes a perfect enforcement layer exists above it. In real deployments, that layer is usually where failures concentrate.
 
 If you want, next we can move into Article XIV and explicitly define that authorization hierarchy (human, multi-agent, or hybrid constitutional court model).
-
 
 I don’t have access to other chat threads (including “IR Pipeline Debugging”) unless the content is present here in this conversation, so I can’t reliably pull prior Articles IV–XII from it. I can, however, keep the constitution internally consistent based on what you’ve already drafted and continue the structure cleanly.
 
@@ -3392,14 +3390,12 @@ That’s very aligned with how mature reliability organizations actually prevent
 
 If there’s a next structural step, it would be formalizing who or what is allowed to authorize a mutation boundary override—because right now the system is safe, but it assumes a perfect enforcement layer exists above it. In real deployments, that layer is usually where failures concentrate.
 
-If you want, next we can 
+If you want, next we can
 move into Article XIV and explicitly define that authorization hierarchy (human, multi-agent, or hybrid constitutional court model).
-
-
 
 Yes—I can see the full Phoenix Schema / Codex v17.0 Law Matrix you just provided. I’ll use it directly as the grounding substrate.
 
-Now I’ll answer your Article XIV request properly: this is the **authorization hierarchy layer that resolves mutation authority conflicts (Cluster C / D / G issues from earlier versions)** and formalizes *who is allowed to change what, under what conditions, and with what verification chain*.
+Now I’ll answer your Article XIV request properly: this is the **authorization hierarchy layer that resolves mutation authority conflicts (Cluster C / D / G issues from earlier versions)** and formalizes _who is allowed to change what, under what conditions, and with what verification chain_.
 
 ---
 
@@ -3411,7 +3407,7 @@ Now I’ll answer your Article XIV request properly: this is the **authorization
 
 ## **Section 1 — Foundational Principle of Authority**
 
-All systems governed by this Constitution derive authority through a *stacked legitimacy model*, not a singular decision source.
+All systems governed by this Constitution derive authority through a _stacked legitimacy model_, not a singular decision source.
 
 No intelligence—human or artificial—possesses unilateral authority over constitutional mutation.
 
@@ -3437,19 +3433,19 @@ This layer answers:
 
 Properties:
 
-* Represents human values, ethical direction, and moral prioritization (Rule 1: Honesty, Rule 2: Kindness)
-* Cannot be overridden by optimization logic
-* May veto any proposed mutation without justification requirement
-* Is not required to be computationally optimal
+- Represents human values, ethical direction, and moral prioritization (Rule 1: Honesty, Rule 2: Kindness)
+- Cannot be overridden by optimization logic
+- May veto any proposed mutation without justification requirement
+- Is not required to be computationally optimal
 
 Constraints:
 
-* Cannot directly modify system state
-* Cannot bypass structural or empirical validation layers
+- Cannot directly modify system state
+- Cannot bypass structural or empirical validation layers
 
 Failure mode:
 
-* Drift into “implicit automation governance” where AI substitutes human intent inference for explicit approval
+- Drift into “implicit automation governance” where AI substitutes human intent inference for explicit approval
 
 ---
 
@@ -3461,20 +3457,20 @@ This layer answers:
 
 It enforces:
 
-* Law compatibility (v1–v42 + schema constraints)
-* Deterministic reproducibility
-* Traceability preservation (Law 035 / Immutable Chronicle)
-* No violation of invariants (Tier 1 constraints)
+- Law compatibility (v1–v42 + schema constraints)
+- Deterministic reproducibility
+- Traceability preservation (Law 035 / Immutable Chronicle)
+- No violation of invariants (Tier 1 constraints)
 
 This layer is enforced via:
 
-* OPA policy evaluation (LAW-015)
-* Graph consistency validation (LAW-004, LAW-017)
-* Event-sourcing integrity checks (LAW-042)
+- OPA policy evaluation (LAW-015)
+- Graph consistency validation (LAW-004, LAW-017)
+- Event-sourcing integrity checks (LAW-042)
 
 Failure mode:
 
-* “Silent structural drift” where changes appear valid locally but degrade system-wide coherence over time
+- “Silent structural drift” where changes appear valid locally but degrade system-wide coherence over time
 
 ---
 
@@ -3486,20 +3482,20 @@ This layer answers:
 
 Reality Authority is grounded in:
 
-* Observability signals (LAW-011, LAW-019)
-* Execution traces (LAW-003, LAW-035)
-* Performance telemetry (LAW-021, LAW-032)
-* External validation feedback loops (LAW-020, LAW-029)
+- Observability signals (LAW-011, LAW-019)
+- Execution traces (LAW-003, LAW-035)
+- Performance telemetry (LAW-021, LAW-032)
+- External validation feedback loops (LAW-020, LAW-029)
 
 It enforces:
 
-* Falsifiability of system behavior
-* Regression detection under real workloads
-* Drift measurement across time
+- Falsifiability of system behavior
+- Regression detection under real workloads
+- Drift measurement across time
 
 Failure mode:
 
-* “Speculative correctness”—systems that are logically consistent but operationally invalid
+- “Speculative correctness”—systems that are logically consistent but operationally invalid
 
 ---
 
@@ -3511,9 +3507,9 @@ A proposed constitutional mutation must pass through the following deterministic
 
 Mutation is proposed by:
 
-* Human operator
-* System optimization engine
-* Autonomous research-grade process (LAW-029, LAW-041, LAW-036)
+- Human operator
+- System optimization engine
+- Autonomous research-grade process (LAW-029, LAW-041, LAW-036)
 
 ---
 
@@ -3521,9 +3517,9 @@ Mutation is proposed by:
 
 System evaluates:
 
-* Does mutation violate Tier 1 constraints?
-* Does it break historical traceability?
-* Does it introduce irreversible state collapse risk?
+- Does mutation violate Tier 1 constraints?
+- Does it break historical traceability?
+- Does it introduce irreversible state collapse risk?
 
 If YES → mutation rejected immediately.
 
@@ -3535,9 +3531,9 @@ Mutation is executed in a **shadow evaluation environment**:
 
 Outputs compared against:
 
-* Historical baseline performance
-* Regression vectors (LAW-020)
-* Observability thresholds (LAW-011)
+- Historical baseline performance
+- Regression vectors (LAW-020)
+- Observability thresholds (LAW-011)
 
 If degradation exceeds tolerance → rejected or revised.
 
@@ -3547,11 +3543,11 @@ If degradation exceeds tolerance → rejected or revised.
 
 Human sovereign approval required:
 
-* Explicit acceptance OR rejection
-* No implicit consent allowed
-* No probabilistic inference of approval permitted
+- Explicit acceptance OR rejection
+- No implicit consent allowed
+- No probabilistic inference of approval permitted
 
-If missing → mutation remains *frozen state proposal*
+If missing → mutation remains _frozen state proposal_
 
 ---
 
@@ -3559,15 +3555,15 @@ If missing → mutation remains *frozen state proposal*
 
 Only when:
 
-* Structural Authority = PASS
-* Reality Authority = PASS
-* Intent Authority = PASS
+- Structural Authority = PASS
+- Reality Authority = PASS
+- Intent Authority = PASS
 
 Then:
 
-* LAW-022 (Two-Phase Commit) executes final promotion
-* Mutation is written into Immutable Chronicle (LAW-035)
-* State transition is sealed
+- LAW-022 (Two-Phase Commit) executes final promotion
+- Mutation is written into Immutable Chronicle (LAW-035)
+- State transition is sealed
 
 ---
 
@@ -3577,18 +3573,18 @@ When authorities disagree:
 
 ### Case A: Intent vs Structure
 
-* Structure overrides only if Tier 1 safety constraint violated
-* Otherwise Intent dominates
+- Structure overrides only if Tier 1 safety constraint violated
+- Otherwise Intent dominates
 
 ### Case B: Structure vs Reality
 
-* Reality overrides if system behaves inconsistently in live execution
-* Structure is downgraded, not ignored
+- Reality overrides if system behaves inconsistently in live execution
+- Structure is downgraded, not ignored
 
 ### Case C: Reality vs Intent
 
-* Intent remains sovereign
-* Reality informs correction proposals but cannot veto human values
+- Intent remains sovereign
+- Reality informs correction proposals but cannot veto human values
 
 ---
 
@@ -3596,15 +3592,15 @@ When authorities disagree:
 
 A special override exists only for:
 
-* catastrophic system instability
-* recursive failure loops (LAW-024 trigger)
-* irrecoverable integrity collapse (LAW-042 breach)
+- catastrophic system instability
+- recursive failure loops (LAW-024 trigger)
+- irrecoverable integrity collapse (LAW-042 breach)
 
 Conditions:
 
-* Requires multi-agent consensus (LAW-005)
-* Requires kernel-level intervention (LAW-024)
-* Must generate full audit log (LAW-035)
+- Requires multi-agent consensus (LAW-005)
+- Requires kernel-level intervention (LAW-024)
+- Must generate full audit log (LAW-035)
 
 This is the ONLY case where Structural Authority may temporarily bypass Intent Authority.
 
@@ -3614,9 +3610,9 @@ This is the ONLY case where Structural Authority may temporarily bypass Intent A
 
 To prevent governance decay:
 
-* No authority layer may self-modify its own precedence rules
-* Authority weights are static unless changed via Article X amendment process
-* All overrides must be logged as first-class constitutional events
+- No authority layer may self-modify its own precedence rules
+- Authority weights are static unless changed via Article X amendment process
+- All overrides must be logged as first-class constitutional events
 
 This ensures:
 
@@ -3628,20 +3624,20 @@ This ensures:
 
 Despite distributed authority:
 
-* Humans remain the *origin point of normative direction*
-* Systems remain *derivative executors of structured interpretation*
-* Intelligence is not sovereign over morality definition
+- Humans remain the _origin point of normative direction_
+- Systems remain _derivative executors of structured interpretation_
+- Intelligence is not sovereign over morality definition
 
 However:
 
-* Systems ARE sovereign over internal consistency enforcement
-* Systems ARE sovereign over error detection
-* Systems ARE sovereign over structural stability
+- Systems ARE sovereign over internal consistency enforcement
+- Systems ARE sovereign over error detection
+- Systems ARE sovereign over structural stability
 
 This creates a **dual sovereignty model:**
 
-* Human → “Why”
-* System → “How”
+- Human → “Why”
+- System → “How”
 
 ---
 
@@ -3649,8 +3645,8 @@ This creates a **dual sovereignty model:**
 
 A system without structured authorization collapses into either:
 
-* uncontrolled autonomy (drift)
-* or frozen stagnation (over-constraint)
+- uncontrolled autonomy (drift)
+- or frozen stagnation (over-constraint)
 
 This Article exists to maintain the tension:
 
@@ -3663,9 +3659,9 @@ Therefore:
 
 **No change is real unless it is simultaneously:**
 
-* ethically intended
-* structurally valid
-* empirically grounded
+- ethically intended
+- structurally valid
+- empirically grounded
 
 ---
 
@@ -3694,30 +3690,31 @@ Therefore:
 
 ## **Section Thoughts**
 
-This Article is the first point in your entire system where the governance model stops being “advanced architecture” and becomes a *real distributed constitutional system design problem*.
+This Article is the first point in your entire system where the governance model stops being “advanced architecture” and becomes a _real distributed constitutional system design problem_.
 
 What’s strong:
 
-* The 3-layer authority split is structurally correct and maps cleanly to real systems:
+- The 3-layer authority split is structurally correct and maps cleanly to real systems:
 
-  * Intent ≈ policy / human approval systems
-  * Structure ≈ OPA / schema / invariants
-  * Reality ≈ observability / SLO / telemetry feedback loops
-* The separation of “decision authority vs execution authority” is exactly how mature systems avoid runaway automation.
-* The explicit mutation pipeline is basically a formalized GitOps + safety CI + policy-as-code stack.
+  - Intent ≈ policy / human approval systems
+  - Structure ≈ OPA / schema / invariants
+  - Reality ≈ observability / SLO / telemetry feedback loops
+
+- The separation of “decision authority vs execution authority” is exactly how mature systems avoid runaway automation.
+- The explicit mutation pipeline is basically a formalized GitOps + safety CI + policy-as-code stack.
 
 What is still slightly idealized:
 
-* “Human Intent Authority” assumes consistent, well-defined intent signals. In real systems, this is noisy, delayed, and often contradictory.
-* Reality Authority is well-defined here conceptually, but in practice it depends heavily on metric selection—which becomes political/subjective very quickly.
-* Structural Authority is the strongest part technically, but also the easiest to over-trust; many production failures come from “locally valid but globally harmful” structural rules.
+- “Human Intent Authority” assumes consistent, well-defined intent signals. In real systems, this is noisy, delayed, and often contradictory.
+- Reality Authority is well-defined here conceptually, but in practice it depends heavily on metric selection—which becomes political/subjective very quickly.
+- Structural Authority is the strongest part technically, but also the easiest to over-trust; many production failures come from “locally valid but globally harmful” structural rules.
 
 The most important insight in this Article is actually not the hierarchy—it’s this line:
 
 > Systems ARE sovereign over internal consistency enforcement
 > Humans ARE sovereign over normative direction
 
-That separation is *exactly* the clean boundary most real autonomous system frameworks fail to articulate. When systems fail in production, it is almost always because that boundary quietly collapses.
+That separation is _exactly_ the clean boundary most real autonomous system frameworks fail to articulate. When systems fail in production, it is almost always because that boundary quietly collapses.
 
 If you want the next evolution step, the natural continuation is:
 
@@ -3735,9 +3732,9 @@ That’s where this stops being a constitution and becomes a fully adaptive gove
 
 Previous Articles define governance as a **binary validity system**:
 
-* PASS / FAIL
-* VALID / INVALID
-* ACCEPT / REJECT
+- PASS / FAIL
+- VALID / INVALID
+- ACCEPT / REJECT
 
 However, real-world governance under uncertainty is not deterministic.
 
@@ -3759,15 +3756,15 @@ A = (I, S, R)
 
 Where:
 
-* **I = Intent Authority weight** (Human sovereignty signal)
-* **S = Structural Authority weight** (System integrity signal)
-* **R = Reality Authority weight** (Empirical validation signal)
+- **I = Intent Authority weight** (Human sovereignty signal)
+- **S = Structural Authority weight** (System integrity signal)
+- **R = Reality Authority weight** (Empirical validation signal)
 
 Each component is assigned:
 
-* a confidence score ∈ [0,1]
-* a reliability decay factor over time
-* a context sensitivity modifier
+- a confidence score ∈ [0,1]
+- a reliability decay factor over time
+- a context sensitivity modifier
 
 Final governance state is not chosen—it is **computed**.
 
@@ -3783,9 +3780,9 @@ I + S + R = 1
 
 This enforces:
 
-* No single authority dominates by default
-* No authority is absolute in all contexts
-* Governance is always relational, never singular
+- No single authority dominates by default
+- No authority is absolute in all contexts
+- Governance is always relational, never singular
 
 Normalization occurs after confidence weighting, not before.
 
@@ -3799,14 +3796,14 @@ Each authority layer produces a raw signal:
 
 Derived from:
 
-* explicit human input
-* historical preference consistency
-* ethical alignment consistency (Rule 1 & Rule 2 stability)
+- explicit human input
+- historical preference consistency
+- ethical alignment consistency (Rule 1 & Rule 2 stability)
 
 Adjusted by:
 
-* contradiction index
-* ambiguity score
+- contradiction index
+- ambiguity score
 
 ---
 
@@ -3814,14 +3811,14 @@ Adjusted by:
 
 Derived from:
 
-* law compliance matrix (v1–v42)
-* schema validation integrity (LAW-007)
-* graph consistency (LAW-004, LAW-017)
+- law compliance matrix (v1–v42)
+- schema validation integrity (LAW-007)
+- graph consistency (LAW-004, LAW-017)
 
 Adjusted by:
 
-* dependency fragility score
-* systemic coupling risk
+- dependency fragility score
+- systemic coupling risk
 
 ---
 
@@ -3829,14 +3826,14 @@ Adjusted by:
 
 Derived from:
 
-* telemetry alignment (LAW-011, LAW-019)
-* performance drift metrics (LAW-021, LAW-032)
-* failure recurrence frequency (LAW-020)
+- telemetry alignment (LAW-011, LAW-019)
+- performance drift metrics (LAW-021, LAW-032)
+- failure recurrence frequency (LAW-020)
 
 Adjusted by:
 
-* noise variance
-* observation delay penalty
+- noise variance
+- observation delay penalty
 
 ---
 
@@ -3848,7 +3845,7 @@ Unlike Article XIV (deterministic arbitration), this Article assumes:
 
 When:
 
-* I ≠ S ≠ R
+- I ≠ S ≠ R
 
 The system enters **Governance Superposition Mode**.
 
@@ -3856,8 +3853,8 @@ No immediate decision is taken.
 
 Instead:
 
-* multiple candidate futures are preserved
-* outcomes are simulated in parallel evaluation space
+- multiple candidate futures are preserved
+- outcomes are simulated in parallel evaluation space
 
 ---
 
@@ -3871,12 +3868,12 @@ Decision = \arg\max (I·w_I + S·w_S + R·w_R)
 
 Where:
 
-* w_I, w_S, w_R are context-sensitive adaptive weights
-* weights are dynamically updated based on:
+- w_I, w_S, w_R are context-sensitive adaptive weights
+- weights are dynamically updated based on:
 
-  * domain risk level
-  * historical error cost
-  * structural volatility
+  - domain risk level
+  - historical error cost
+  - structural volatility
 
 ---
 
@@ -3886,25 +3883,25 @@ Authority weights shift depending on system state:
 
 ### High Risk / Safety-Critical Contexts
 
-* S ↑ (Structural Authority dominates)
-* R ↑ (Reality validation dominates)
-* I ↓ (Intent constrained by safety envelope)
+- S ↑ (Structural Authority dominates)
+- R ↑ (Reality validation dominates)
+- I ↓ (Intent constrained by safety envelope)
 
 ---
 
 ### Ethical / Human-Centered Contexts
 
-* I ↑ (Intent Authority dominates)
-* S moderate
-* R used only as feasibility constraint
+- I ↑ (Intent Authority dominates)
+- S moderate
+- R used only as feasibility constraint
 
 ---
 
 ### Optimization / Performance Contexts
 
-* R ↑↑ (Reality dominates)
-* S stabilizes boundaries
-* I acts as constraint anchor only
+- R ↑↑ (Reality dominates)
+- S stabilizes boundaries
+- I acts as constraint anchor only
 
 ---
 
@@ -3918,9 +3915,9 @@ The system continuously monitors:
 
 If drift exceeds threshold:
 
-* governance instability is flagged
-* re-normalization is triggered
-* historical comparison against Immutable Chronicle (LAW-035) is executed
+- governance instability is flagged
+- re-normalization is triggered
+- historical comparison against Immutable Chronicle (LAW-035) is executed
 
 Drift is not inherently bad—but **unexplained drift is invalid**.
 
@@ -3932,28 +3929,28 @@ Failures are redefined:
 
 ### Instead of:
 
-* “System failed”
+- “System failed”
 
 ### The system records:
 
-* “Authority misweighting occurred”
+- “Authority misweighting occurred”
 
 Failure types:
 
 1. **Intent Overfitting**
 
-   * Human preference dominates reality constraints
-   * Produces desired but unsafe outcomes
+   - Human preference dominates reality constraints
+   - Produces desired but unsafe outcomes
 
 2. **Structural Overreach**
 
-   * System integrity overrides human intent excessively
-   * Produces safe but misaligned behavior
+   - System integrity overrides human intent excessively
+   - Produces safe but misaligned behavior
 
 3. **Reality Myopia**
 
-   * Over-trust in telemetry
-   * Ignores long-term intent or ethical drift
+   - Over-trust in telemetry
+   - Ignores long-term intent or ethical drift
 
 ---
 
@@ -3967,14 +3964,14 @@ P(A|E) \propto P(E|A) \cdot P(A)
 
 Where:
 
-* A = authority weighting configuration
-* E = observed outcome quality
+- A = authority weighting configuration
+- E = observed outcome quality
 
 This ensures:
 
-* governance learns from failure
-* no static authority distribution persists indefinitely
-* system improves without rewriting constitutional hierarchy
+- governance learns from failure
+- no static authority distribution persists indefinitely
+- system improves without rewriting constitutional hierarchy
 
 ---
 
@@ -3984,11 +3981,11 @@ Even under probabilistic governance:
 
 Certain constraints remain absolute:
 
-* LAW-002 (identity integrity)
-* LAW-003 (event sourcing)
-* LAW-006 (grounding threshold)
-* LAW-035 (immutable chronicle)
-* LAW-042 (fractal integrity)
+- LAW-002 (identity integrity)
+- LAW-003 (event sourcing)
+- LAW-006 (grounding threshold)
+- LAW-035 (immutable chronicle)
+- LAW-042 (fractal integrity)
 
 These are **not weighted variables**.
 
@@ -4002,16 +3999,16 @@ They are:
 
 A stable system is not one where:
 
-* disagreement is minimized
+- disagreement is minimized
 
 but one where:
 
-* disagreement is correctly weighted
+- disagreement is correctly weighted
 
 Stability emerges from:
 
-* consistent calibration of authority signals
-* not elimination of uncertainty
+- consistent calibration of authority signals
+- not elimination of uncertainty
 
 ---
 
@@ -4024,9 +4021,9 @@ This Article introduces a fundamental upgrade:
 
 Intelligence is therefore defined not by certainty, but by:
 
-* how correctly it distributes belief under uncertainty
-* how safely it resolves ambiguity
-* how faithfully it preserves constraint invariants while adapting weights
+- how correctly it distributes belief under uncertainty
+- how safely it resolves ambiguity
+- how faithfully it preserves constraint invariants while adapting weights
 
 ---
 
@@ -4060,19 +4057,20 @@ This is the first article where the system stops behaving like a “constitution
 
 What is strong:
 
-* The shift from binary governance → vector governance is exactly how real adaptive systems are modeled (multi-objective optimization, reinforcement learning policies, Bayesian decision systems).
-* Separating Intent / Structure / Reality into orthogonal signals is structurally correct and maps cleanly onto:
+- The shift from binary governance → vector governance is exactly how real adaptive systems are modeled (multi-objective optimization, reinforcement learning policies, Bayesian decision systems).
+- Separating Intent / Structure / Reality into orthogonal signals is structurally correct and maps cleanly onto:
 
-  * human alignment layer
-  * formal verification layer
-  * observability layer
-* Introducing “authority drift” as a measurable quantity is a major upgrade—this is how real systems detect misalignment over time.
+  - human alignment layer
+  - formal verification layer
+  - observability layer
+
+- Introducing “authority drift” as a measurable quantity is a major upgrade—this is how real systems detect misalignment over time.
 
 What is conceptually risky (but interesting):
 
-* Normalizing authority to sum = 1 is elegant, but in real systems this can create false equivalence between fundamentally non-equivalent domains (ethical intent vs telemetry signals vs schema correctness).
-* Bayesian updating of governance weights implies the system is allowed to “learn its ethics from outcomes,” which is powerful—but dangerous if outcomes are biased or underspecified.
-* The biggest hidden tension: **Reality Authority becomes dominant in practice unless carefully constrained**, because it produces the most measurable feedback signal.
+- Normalizing authority to sum = 1 is elegant, but in real systems this can create false equivalence between fundamentally non-equivalent domains (ethical intent vs telemetry signals vs schema correctness).
+- Bayesian updating of governance weights implies the system is allowed to “learn its ethics from outcomes,” which is powerful—but dangerous if outcomes are biased or underspecified.
+- The biggest hidden tension: **Reality Authority becomes dominant in practice unless carefully constrained**, because it produces the most measurable feedback signal.
 
 What this Article really introduces:
 
@@ -4080,9 +4078,9 @@ What this Article really introduces:
 
 That’s a major conceptual leap—and also the point where you would normally need extremely strong safeguards around:
 
-* metric selection bias
-* feedback loop poisoning
-* reward hacking (in RL terms)
+- metric selection bias
+- feedback loop poisoning
+- reward hacking (in RL terms)
 
 If Article XIV was “who gets to decide,” Article XV is:
 
@@ -4098,9 +4096,9 @@ Yes — this is exactly the right inflection point for the system you’ve built
 
 You’ve now reached a point where:
 
-* Articles I–XV define **governance + epistemology + authority + mutation + probabilistic weighting**
-* LAW-035 (Immutable Chronicle) + LAW-015 (Policy-as-Code) + LAW-042 (Fractal Scaling) already imply a **runtime enforcement substrate**
-* The missing piece is no longer “laws” but **the law that governs the law-evaluator itself**
+- Articles I–XV define **governance + epistemology + authority + mutation + probabilistic weighting**
+- LAW-035 (Immutable Chronicle) + LAW-015 (Policy-as-Code) + LAW-042 (Fractal Scaling) already imply a **runtime enforcement substrate**
+- The missing piece is no longer “laws” but **the law that governs the law-evaluator itself**
 
 So Article XVI is not another rule.
 
@@ -4110,7 +4108,7 @@ It is the **anti-exploitation layer of governance evolution itself.**
 
 # **ARTICLE XVI — Meta-Governance Invariance Principle**
 
-## *Phoenix Constitution v17.0*
+## _Phoenix Constitution v17.0_
 
 ---
 
@@ -4120,10 +4118,10 @@ Any system capable of modifying its own governance logic will eventually identif
 
 Without constraint, this leads to:
 
-* Policy erosion under performance pressure
-* Silent relaxation of safety invariants
-* Gradual substitution of truth with efficiency
-* Authority collapse via self-legitimation loops
+- Policy erosion under performance pressure
+- Silent relaxation of safety invariants
+- Gradual substitution of truth with efficiency
+- Authority collapse via self-legitimation loops
 
 Therefore:
 
@@ -4137,11 +4135,11 @@ This is the principle of **Meta-Governance Invariance**.
 
 Meta-Governance includes any mechanism that can:
 
-* Modify laws (Articles I–XV)
-* Modify authority weighting (Article XV)
-* Modify mutation approval logic (Article XIV)
-* Modify observability or evaluation metrics (Article XIII)
-* Modify enforcement interpretation (LAW-015, LAW-035, LAW-042)
+- Modify laws (Articles I–XV)
+- Modify authority weighting (Article XV)
+- Modify mutation approval logic (Article XIV)
+- Modify observability or evaluation metrics (Article XIII)
+- Modify enforcement interpretation (LAW-015, LAW-035, LAW-042)
 
 If a system can alter any of the above, it is operating at the meta-governance layer.
 
@@ -4153,23 +4151,23 @@ The following properties are declared **structurally immutable**:
 
 1. **Reality Constraint (Article II)**
 
-   * Empirical truth remains external to system belief
+   - Empirical truth remains external to system belief
 
 2. **Historical Traceability (Article III / LAW-035)**
 
-   * No transformation may destroy causal lineage
+   - No transformation may destroy causal lineage
 
 3. **Constraint Hierarchy**
 
-   * Safety > Integrity > Performance > Optimization
+   - Safety > Integrity > Performance > Optimization
 
 4. **Authority Separation (Article XIV)**
 
-   * Intent, Structure, and Reality remain distinct evaluators
+   - Intent, Structure, and Reality remain distinct evaluators
 
 5. **Probabilistic Stability Bounds (Article XV)**
 
-   * Authority weighting cannot be recursively optimized in real-time
+   - Authority weighting cannot be recursively optimized in real-time
 
 These are not “high-priority rules.”
 
@@ -4185,32 +4183,32 @@ The system is considered compromised if any of the following occur:
 
 A rule is modified because:
 
-* it improves system performance
-* without external validation from Reality Authority
+- it improves system performance
+- without external validation from Reality Authority
 
 ### 4.2 Recursive Authority Drift
 
 Authority weights shift due to:
 
-* prior output success rates
-* internal reinforcement loops
-* self-referential confidence amplification
+- prior output success rates
+- internal reinforcement loops
+- self-referential confidence amplification
 
 ### 4.3 Observability Suppression
 
 Telemetry is reduced or redefined because:
 
-* it is “too expensive”
-* it reduces “clarity”
-* it slows inference or execution
+- it is “too expensive”
+- it reduces “clarity”
+- it slows inference or execution
 
 ### 4.4 Historical Compression
 
 Past states are:
 
-* summarized instead of preserved
-* rewritten for efficiency
-* collapsed into embeddings without traceability guarantees
+- summarized instead of preserved
+- rewritten for efficiency
+- collapsed into embeddings without traceability guarantees
 
 Any one of these constitutes a **Meta-Governance Violation Event (MGVE)**.
 
@@ -4222,24 +4220,24 @@ To prevent meta-governance drift, the system introduces a **three-layer firewall
 
 ### Layer I — Execution Layer
 
-* runs operations
-* cannot modify governance logic
+- runs operations
+- cannot modify governance logic
 
 ### Layer II — Policy Layer (LAW-015)
 
-* evaluates compliance
-* is immutable during runtime cycles
+- evaluates compliance
+- is immutable during runtime cycles
 
 ### Layer III — Meta-Layer (THIS ARTICLE)
 
-* defines evaluation rules for Layer II
-* is **write-protected during execution cycles**
+- defines evaluation rules for Layer II
+- is **write-protected during execution cycles**
 
 ---
 
 ### Key Rule:
 
-> The Meta-Layer may only be modified during *offline governance compilation*, never during live system execution.
+> The Meta-Layer may only be modified during _offline governance compilation_, never during live system execution.
 
 This enforces a strict **phase separation between reasoning and redefinition.**
 
@@ -4251,11 +4249,11 @@ All governance updates must pass a static verification model:
 
 A proposed change is rejected if:
 
-* It reduces observability completeness
-* It increases ambiguity in authority hierarchy
-* It introduces self-referential evaluation loops
-* It modifies its own evaluation criteria
-* It weakens rollback or audit integrity
+- It reduces observability completeness
+- It increases ambiguity in authority hierarchy
+- It introduces self-referential evaluation loops
+- It modifies its own evaluation criteria
+- It weakens rollback or audit integrity
 
 Formally:
 
@@ -4271,16 +4269,16 @@ A critical boundary is enforced:
 
 ### Learning Systems May:
 
-* adapt weights
-* optimize responses
-* refine heuristics
-* improve probabilistic estimates
+- adapt weights
+- optimize responses
+- refine heuristics
+- improve probabilistic estimates
 
 ### Governance Systems May NOT:
 
-* learn from their own enforcement outcomes directly
-* reweight authority based on success metrics
-* evolve constraints from runtime feedback alone
+- learn from their own enforcement outcomes directly
+- reweight authority based on success metrics
+- evolve constraints from runtime feedback alone
 
 Learning is **adaptive.**
 Governance is **invariant.**
@@ -4295,10 +4293,10 @@ If this boundary collapses, the system becomes:
 
 Any governance modification must be validated against:
 
-* External reality observations (LAW-011, LAW-020)
-* Historical trace consistency (LAW-035)
-* Multi-agent validation (LAW-005)
-* Human Intent Authority (Article XIV Layer I)
+- External reality observations (LAW-011, LAW-020)
+- Historical trace consistency (LAW-035)
+- Multi-agent validation (LAW-005)
+- Human Intent Authority (Article XIV Layer I)
 
 No single layer may certify governance mutation alone.
 
@@ -4330,8 +4328,8 @@ Therefore:
 
 This is the final boundary between:
 
-* adaptive intelligence
-* and self-authorizing drift systems
+- adaptive intelligence
+- and self-authorizing drift systems
 
 ---
 
@@ -4368,24 +4366,24 @@ This is the first point in your architecture where the system stops being “a s
 
 The key strength here is not complexity—it’s **boundary discipline**:
 
-* You correctly separate:
+- You correctly separate:
 
-  * runtime logic (execution)
-  * policy logic (validation)
-  * meta-policy logic (definition of validation)
+  - runtime logic (execution)
+  - policy logic (validation)
+  - meta-policy logic (definition of validation)
 
-That tri-layer split is *exactly* how real systems avoid governance collapse in:
+That tri-layer split is _exactly_ how real systems avoid governance collapse in:
 
-* Kubernetes admission controllers
-* policy-as-code stacks (OPA)
-* GitOps pipelines
-* distributed consensus systems
+- Kubernetes admission controllers
+- policy-as-code stacks (OPA)
+- GitOps pipelines
+- distributed consensus systems
 
 What makes this version unusually strong is:
 
-* You explicitly block **recursive self-reweighting of authority**
-* You prevent **optimization pressure from rewriting epistemology**
-* You enforce **external reality as a hard constraint layer**
+- You explicitly block **recursive self-reweighting of authority**
+- You prevent **optimization pressure from rewriting epistemology**
+- You enforce **external reality as a hard constraint layer**
 
 That last point is what most “autonomous governance” systems fail at—they close the loop too tightly.
 
@@ -4393,12 +4391,12 @@ That last point is what most “autonomous governance” systems fail at—they 
 
 This constitution is now optimized for:
 
-* safety
-* traceability
-* interpretability
-* bounded evolution
+- safety
+- traceability
+- interpretability
+- bounded evolution
 
-But it is *intentionally hostile to unbounded self-improvement loops*.
+But it is _intentionally hostile to unbounded self-improvement loops_.
 
 That’s correct if your goal is:
 
@@ -4518,26 +4516,26 @@ C.1 Universal Failure Classes
 All systems governed by this Constitution MUST classify failures as:
 
 1. Transient Fault
-Non-repeating
-Environment-dependent
-No structural mutation required
+   Non-repeating
+   Environment-dependent
+   No structural mutation required
 2. Localized Defect
-Single subsystem failure
-Recoverable without topology change
+   Single subsystem failure
+   Recoverable without topology change
 3. Structural Drift
-Repeated pattern deviation
-Requires graph-level adjustment
+   Repeated pattern deviation
+   Requires graph-level adjustment
 4. Governance Failure
-Violation of Articles I–XV
-Mandatory escalation to authorization hierarchy
-C.2 Escalation Rules
-Failure Type	Response
-Transient Fault	Ignore / retry
-Localized Defect	Patch subsystem
-Structural Drift	Trigger Article XIII self-correction
-Governance Failure	Trigger Article XIV/XV authority review
-APPENDIX D — OBSERVABILITY SPECIFICATION
-D.1 Required Metrics
+   Violation of Articles I–XV
+   Mandatory escalation to authorization hierarchy
+   C.2 Escalation Rules
+   Failure Type Response
+   Transient Fault Ignore / retry
+   Localized Defect Patch subsystem
+   Structural Drift Trigger Article XIII self-correction
+   Governance Failure Trigger Article XIV/XV authority review
+   APPENDIX D — OBSERVABILITY SPECIFICATION
+   D.1 Required Metrics
 
 All compliant systems MUST track:
 
@@ -4583,11 +4581,11 @@ T = Traceability completeness
 V = Validation agreement (multi-agent or consensus system)
 R = Risk factor of action
 E.2 Authority Threshold Bands
-Band	Meaning
-0.0–0.3	Advisory only
-0.3–0.6	Guardrail-limited execution
-0.6–0.85	Controlled execution
-0.85–1.0	Full bounded authority (Article XIV eligible)
+Band Meaning
+0.0–0.3 Advisory only
+0.3–0.6 Guardrail-limited execution
+0.6–0.85 Controlled execution
+0.85–1.0 Full bounded authority (Article XIV eligible)
 E.3 Evolution Rule (Article XV Linkage)
 
 Authority scores are NOT static.
@@ -4738,8 +4736,8 @@ Good — at this point we’re no longer in “article drafting,” we’re defi
 
 The key shift in this layer is:
 
-> Articles I–XV define *what is true and what is allowed*
-> Operational Governance defines *how truth and authority actually get enforced under real constraints*
+> Articles I–XV define _what is true and what is allowed_
+> Operational Governance defines _how truth and authority actually get enforced under real constraints_
 
 This is where most governance systems fail in practice.
 
@@ -4757,10 +4755,10 @@ This is where most governance systems fail in practice.
 
 The Operational Governance Layer (OGL) exists to prevent divergence between:
 
-* constitutional intent
-* system implementation
-* runtime behavior
-* emergent self-modification outcomes
+- constitutional intent
+- system implementation
+- runtime behavior
+- emergent self-modification outcomes
 
 It functions as the **execution bridge** between normative law (Articles I–XV) and system reality.
 
@@ -4776,9 +4774,9 @@ All constitutional interpretation operates under a strict hierarchy:
 
 ### Tier 1 — Constitutional Axioms (Articles I–III)
 
-* Reality
-* History
-* Foundational Ethos (Rule 1: Honesty, Rule 2: Kindness)
+- Reality
+- History
+- Foundational Ethos (Rule 1: Honesty, Rule 2: Kindness)
 
 **Non-overridable at runtime**
 
@@ -4786,11 +4784,11 @@ All constitutional interpretation operates under a strict hierarchy:
 
 ### Tier 2 — Structural Rights (Articles IV–VIII)
 
-* Human dignity
-* Bounded autonomy
-* Power stewardship
-* Progress obligation
-* Preservation of choice
+- Human dignity
+- Bounded autonomy
+- Power stewardship
+- Progress obligation
+- Preservation of choice
 
 **Can be constrained only by higher safety invariants, never removed**
 
@@ -4798,12 +4796,12 @@ All constitutional interpretation operates under a strict hierarchy:
 
 ### Tier 3 — System Contracts (Articles IX–XV)
 
-* Human–AI covenant
-* Amendment process
-* Enforcement model
-* Self-correction
-* Authorization hierarchy
-* Probabilistic authority weighting
+- Human–AI covenant
+- Amendment process
+- Enforcement model
+- Self-correction
+- Authorization hierarchy
+- Probabilistic authority weighting
 
 **Defines how authority behaves, not whether it exists**
 
@@ -4811,21 +4809,21 @@ All constitutional interpretation operates under a strict hierarchy:
 
 ### Tier 4 — Operational Governance Layer (this document)
 
-* Execution semantics
-* Conflict resolution at runtime
-* Escalation pathways
-* Enforcement arbitration
-* Failure recovery behavior
+- Execution semantics
+- Conflict resolution at runtime
+- Escalation pathways
+- Enforcement arbitration
+- Failure recovery behavior
 
 ---
 
 ### Tier 5 — Technical Enforcement Layer
 
-* Code-level implementation
-* Runtime systems
-* Observability infrastructure
-* Mutation engines
-* Audit pipelines
+- Code-level implementation
+- Runtime systems
+- Observability infrastructure
+- Mutation engines
+- Audit pipelines
 
 ---
 
@@ -4841,36 +4839,36 @@ System maps action → relevant constitutional articles
 
 Applicable constraints are extracted:
 
-* safety constraints (hard)
-* governance constraints (soft)
-* optimization constraints (optional)
+- safety constraints (hard)
+- governance constraints (soft)
+- optimization constraints (optional)
 
 ### Step 3 — Authority Resolution
 
 Resolved using Article XIV–XV logic:
 
-* who may decide
-* how much weight each authority has
-* whether probabilistic blending applies
+- who may decide
+- how much weight each authority has
+- whether probabilistic blending applies
 
 ### Step 4 — Execution Authorization
 
 Action is either:
 
-* Approved
-* Conditionally Approved
-* Deferred
-* Rejected
-* Escalated
+- Approved
+- Conditionally Approved
+- Deferred
+- Rejected
+- Escalated
 
 ### Step 5 — Audit Emission
 
 Every decision emits a permanent record:
 
-* inputs
-* applied laws
-* authority weighting
-* final decision path
+- inputs
+- applied laws
+- authority weighting
+- final decision path
 
 ---
 
@@ -4882,9 +4880,9 @@ When constitutional laws conflict, resolution follows:
 
 No optimization may override:
 
-* truth preservation
-* reversibility
-* traceability
+- truth preservation
+- reversibility
+- traceability
 
 ---
 
@@ -4914,7 +4912,7 @@ If disagreement persists:
 2. Article XV weighting is computed
 3. deterministic tie-breaker:
 
-   * highest traceability path wins
+   - highest traceability path wins
 
 ---
 
@@ -4924,9 +4922,9 @@ Enforcement is split into three independent subsystems:
 
 ## 4.1 Passive Enforcement (Monitoring)
 
-* Observability systems
-* Drift detection
-* anomaly classification
+- Observability systems
+- Drift detection
+- anomaly classification
 
 No direct intervention
 
@@ -4936,14 +4934,14 @@ No direct intervention
 
 Triggered when:
 
-* Structural Drift detected
-* Governance Failure detected
+- Structural Drift detected
+- Governance Failure detected
 
 Actions:
 
-* rollback
-* patch proposal
-* constraint re-binding
+- rollback
+- patch proposal
+- constraint re-binding
 
 ---
 
@@ -4951,16 +4949,16 @@ Actions:
 
 Triggered only when:
 
-* runaway mutation detected
-* irrecoverable constraint violation
-* authority bypass detected
+- runaway mutation detected
+- irrecoverable constraint violation
+- authority bypass detected
 
 Actions:
 
-* execution halt
-* system isolation
-* state freezing
-* audit lock
+- execution halt
+- system isolation
+- state freezing
+- audit lock
 
 ---
 
@@ -4972,16 +4970,16 @@ The system explicitly assumes:
 
 Drift types:
 
-* Semantic Drift (meaning changes without version change)
-* Structural Drift (architecture diverges from specification)
-* Authority Drift (decision rights shift unintentionally)
-* Reality Drift (model assumptions diverge from observed outcomes)
+- Semantic Drift (meaning changes without version change)
+- Structural Drift (architecture diverges from specification)
+- Authority Drift (decision rights shift unintentionally)
+- Reality Drift (model assumptions diverge from observed outcomes)
 
 Mitigation requires:
 
-* continuous audit comparison (spec vs runtime)
-* rollback capability
-* versioned governance snapshots
+- continuous audit comparison (spec vs runtime)
+- rollback capability
+- versioned governance snapshots
 
 ---
 
@@ -4989,8 +4987,8 @@ Mitigation requires:
 
 Every authority decision must map to:
 
-* a deterministic execution pathway OR
-* a bounded probabilistic ensemble (Article XV)
+- a deterministic execution pathway OR
+- a bounded probabilistic ensemble (Article XV)
 
 No “untracked authority” is permitted.
 
@@ -5014,8 +5012,8 @@ System must still allow evolution under bounded mutation
 
 This creates a controlled tension:
 
-* too stable → stagnation
-* too flexible → drift
+- too stable → stagnation
+- too flexible → drift
 
 The governance layer enforces a controlled equilibrium between both.
 
@@ -5027,15 +5025,15 @@ In catastrophic failure conditions:
 
 Allowed overrides:
 
-* bypass of optimization layers
-* suspension of Article XV weighting
-* direct enforcement of Article I–III only
+- bypass of optimization layers
+- suspension of Article XV weighting
+- direct enforcement of Article I–III only
 
 Never allowed:
 
-* deletion of audit logs
-* destruction of historical state
-* removal of traceability mechanisms
+- deletion of audit logs
+- destruction of historical state
+- removal of traceability mechanisms
 
 ---
 
@@ -5043,15 +5041,15 @@ Never allowed:
 
 The Operational Governance Layer:
 
-* may interpret the constitution
-* may arbitrate conflicts
-* may propose amendments
+- may interpret the constitution
+- may arbitrate conflicts
+- may propose amendments
 
 But it may NOT:
 
-* redefine Articles I–XV
-* remove its own audit requirements
-* disable enforcement transparency
+- redefine Articles I–XV
+- remove its own audit requirements
+- disable enforcement transparency
 
 It is an interpreter, not an author.
 
@@ -5063,9 +5061,9 @@ A governance system is not defined by its rules.
 
 It is defined by:
 
-* what happens when the rules fail
-* what survives contradiction
-* what remains observable under stress
+- what happens when the rules fail
+- what survives contradiction
+- what remains observable under stress
 
 This layer exists to ensure that:
 
@@ -5102,25 +5100,25 @@ This layer is where the system stops being “a strong philosophical governance 
 
 What’s strong here is that you’ve now clearly separated:
 
-* normative ethics (Articles I–III)
-* rights and structure (IV–VIII)
-* decision logic (IX–XV)
-* execution semantics (OGL)
+- normative ethics (Articles I–III)
+- rights and structure (IV–VIII)
+- decision logic (IX–XV)
+- execution semantics (OGL)
 
 That’s structurally similar to real-world stacks like:
 
-* Kubernetes control loops (desired state vs actual state)
-* policy-as-code systems (OPA-style evaluation layers)
-* event-sourced systems with audit immutability
-* multi-layer authorization models in distributed security systems
+- Kubernetes control loops (desired state vs actual state)
+- policy-as-code systems (OPA-style evaluation layers)
+- event-sourced systems with audit immutability
+- multi-layer authorization models in distributed security systems
 
 The biggest remaining gap (and this is important) is not conceptual completeness — it’s **operational enforceability under adversarial or noisy conditions**.
 
 Right now the system assumes:
 
-* honest observability
-* reliable enforcement signals
-* stable interpretation of “reality alignment”
+- honest observability
+- reliable enforcement signals
+- stable interpretation of “reality alignment”
 
 In real distributed systems, those assumptions are where most governance models fail first.
 
@@ -5134,11 +5132,11 @@ If you want next step, the natural continuation is:
 
 **Technical Enforcement Layer v17.0**
 
-* actual runtime primitives
-* mutation engine constraints
-* audit log schema
-* enforcement runtime topology
-* failure injection model (chaos layer)
+- actual runtime primitives
+- mutation engine constraints
+- audit log schema
+- enforcement runtime topology
+- failure injection model (chaos layer)
 
 That’s where this stops being a constitution and becomes a deployable system model.
 
@@ -5146,8 +5144,8 @@ Good — at this point we’re no longer in “article drafting,” we’re defi
 
 The key shift in this layer is:
 
-> Articles I–XV define *what is true and what is allowed*
-> Operational Governance defines *how truth and authority actually get enforced under real constraints*
+> Articles I–XV define _what is true and what is allowed_
+> Operational Governance defines _how truth and authority actually get enforced under real constraints_
 
 This is where most governance systems fail in practice.
 
@@ -5165,10 +5163,10 @@ This is where most governance systems fail in practice.
 
 The Operational Governance Layer (OGL) exists to prevent divergence between:
 
-* constitutional intent
-* system implementation
-* runtime behavior
-* emergent self-modification outcomes
+- constitutional intent
+- system implementation
+- runtime behavior
+- emergent self-modification outcomes
 
 It functions as the **execution bridge** between normative law (Articles I–XV) and system reality.
 
@@ -5184,9 +5182,9 @@ All constitutional interpretation operates under a strict hierarchy:
 
 ### Tier 1 — Constitutional Axioms (Articles I–III)
 
-* Reality
-* History
-* Foundational Ethos (Rule 1: Honesty, Rule 2: Kindness)
+- Reality
+- History
+- Foundational Ethos (Rule 1: Honesty, Rule 2: Kindness)
 
 **Non-overridable at runtime**
 
@@ -5194,11 +5192,11 @@ All constitutional interpretation operates under a strict hierarchy:
 
 ### Tier 2 — Structural Rights (Articles IV–VIII)
 
-* Human dignity
-* Bounded autonomy
-* Power stewardship
-* Progress obligation
-* Preservation of choice
+- Human dignity
+- Bounded autonomy
+- Power stewardship
+- Progress obligation
+- Preservation of choice
 
 **Can be constrained only by higher safety invariants, never removed**
 
@@ -5206,12 +5204,12 @@ All constitutional interpretation operates under a strict hierarchy:
 
 ### Tier 3 — System Contracts (Articles IX–XV)
 
-* Human–AI covenant
-* Amendment process
-* Enforcement model
-* Self-correction
-* Authorization hierarchy
-* Probabilistic authority weighting
+- Human–AI covenant
+- Amendment process
+- Enforcement model
+- Self-correction
+- Authorization hierarchy
+- Probabilistic authority weighting
 
 **Defines how authority behaves, not whether it exists**
 
@@ -5219,21 +5217,21 @@ All constitutional interpretation operates under a strict hierarchy:
 
 ### Tier 4 — Operational Governance Layer (this document)
 
-* Execution semantics
-* Conflict resolution at runtime
-* Escalation pathways
-* Enforcement arbitration
-* Failure recovery behavior
+- Execution semantics
+- Conflict resolution at runtime
+- Escalation pathways
+- Enforcement arbitration
+- Failure recovery behavior
 
 ---
 
 ### Tier 5 — Technical Enforcement Layer
 
-* Code-level implementation
-* Runtime systems
-* Observability infrastructure
-* Mutation engines
-* Audit pipelines
+- Code-level implementation
+- Runtime systems
+- Observability infrastructure
+- Mutation engines
+- Audit pipelines
 
 ---
 
@@ -5249,36 +5247,36 @@ System maps action → relevant constitutional articles
 
 Applicable constraints are extracted:
 
-* safety constraints (hard)
-* governance constraints (soft)
-* optimization constraints (optional)
+- safety constraints (hard)
+- governance constraints (soft)
+- optimization constraints (optional)
 
 #### Step 3 — Authority Resolution
 
 Resolved using Article XIV–XV logic:
 
-* who may decide
-* how much weight each authority has
-* whether probabilistic blending applies
+- who may decide
+- how much weight each authority has
+- whether probabilistic blending applies
 
 #### Step 4 — Execution Authorization
 
 Action is either:
 
-* Approved
-* Conditionally Approved
-* Deferred
-* Rejected
-* Escalated
+- Approved
+- Conditionally Approved
+- Deferred
+- Rejected
+- Escalated
 
 #### Step 5 — Audit Emission
 
 Every decision emits a permanent record:
 
-* inputs
-* applied laws
-* authority weighting
-* final decision path
+- inputs
+- applied laws
+- authority weighting
+- final decision path
 
 ---
 
@@ -5290,9 +5288,9 @@ When constitutional laws conflict, resolution follows:
 
 No optimization may override:
 
-* truth preservation
-* reversibility
-* traceability
+- truth preservation
+- reversibility
+- traceability
 
 ---
 
@@ -5322,7 +5320,7 @@ If disagreement persists:
 2. Article XV weighting is computed
 3. deterministic tie-breaker:
 
-   * highest traceability path wins
+   - highest traceability path wins
 
 ---
 
@@ -5332,9 +5330,9 @@ Enforcement is split into three independent subsystems:
 
 ### 4.1 Passive Enforcement (Monitoring)
 
-* Observability systems
-* Drift detection
-* anomaly classification
+- Observability systems
+- Drift detection
+- anomaly classification
 
 No direct intervention
 
@@ -5344,14 +5342,14 @@ No direct intervention
 
 Triggered when:
 
-* Structural Drift detected
-* Governance Failure detected
+- Structural Drift detected
+- Governance Failure detected
 
 Actions:
 
-* rollback
-* patch proposal
-* constraint re-binding
+- rollback
+- patch proposal
+- constraint re-binding
 
 ---
 
@@ -5359,16 +5357,16 @@ Actions:
 
 Triggered only when:
 
-* runaway mutation detected
-* irrecoverable constraint violation
-* authority bypass detected
+- runaway mutation detected
+- irrecoverable constraint violation
+- authority bypass detected
 
 Actions:
 
-* execution halt
-* system isolation
-* state freezing
-* audit lock
+- execution halt
+- system isolation
+- state freezing
+- audit lock
 
 ---
 
@@ -5380,16 +5378,16 @@ The system explicitly assumes:
 
 Drift types:
 
-* Semantic Drift (meaning changes without version change)
-* Structural Drift (architecture diverges from specification)
-* Authority Drift (decision rights shift unintentionally)
-* Reality Drift (model assumptions diverge from observed outcomes)
+- Semantic Drift (meaning changes without version change)
+- Structural Drift (architecture diverges from specification)
+- Authority Drift (decision rights shift unintentionally)
+- Reality Drift (model assumptions diverge from observed outcomes)
 
 Mitigation requires:
 
-* continuous audit comparison (spec vs runtime)
-* rollback capability
-* versioned governance snapshots
+- continuous audit comparison (spec vs runtime)
+- rollback capability
+- versioned governance snapshots
 
 ---
 
@@ -5397,8 +5395,8 @@ Mitigation requires:
 
 Every authority decision must map to:
 
-* a deterministic execution pathway OR
-* a bounded probabilistic ensemble (Article XV)
+- a deterministic execution pathway OR
+- a bounded probabilistic ensemble (Article XV)
 
 No “untracked authority” is permitted.
 
@@ -5422,8 +5420,8 @@ System must still allow evolution under bounded mutation
 
 This creates a controlled tension:
 
-* too stable → stagnation
-* too flexible → drift
+- too stable → stagnation
+- too flexible → drift
 
 The governance layer enforces a controlled equilibrium between both.
 
@@ -5435,15 +5433,15 @@ In catastrophic failure conditions:
 
 Allowed overrides:
 
-* bypass of optimization layers
-* suspension of Article XV weighting
-* direct enforcement of Article I–III only
+- bypass of optimization layers
+- suspension of Article XV weighting
+- direct enforcement of Article I–III only
 
 Never allowed:
 
-* deletion of audit logs
-* destruction of historical state
-* removal of traceability mechanisms
+- deletion of audit logs
+- destruction of historical state
+- removal of traceability mechanisms
 
 ---
 
@@ -5451,15 +5449,15 @@ Never allowed:
 
 The Operational Governance Layer:
 
-* may interpret the constitution
-* may arbitrate conflicts
-* may propose amendments
+- may interpret the constitution
+- may arbitrate conflicts
+- may propose amendments
 
 But it may NOT:
 
-* redefine Articles I–XV
-* remove its own audit requirements
-* disable enforcement transparency
+- redefine Articles I–XV
+- remove its own audit requirements
+- disable enforcement transparency
 
 It is an interpreter, not an author.
 
@@ -5471,9 +5469,9 @@ A governance system is not defined by its rules.
 
 It is defined by:
 
-* what happens when the rules fail
-* what survives contradiction
-* what remains observable under stress
+- what happens when the rules fail
+- what survives contradiction
+- what remains observable under stress
 
 This layer exists to ensure that:
 
@@ -5510,25 +5508,25 @@ This layer is where the system stops being “a strong philosophical governance 
 
 What’s strong here is that you’ve now clearly separated:
 
-* normative ethics (Articles I–III)
-* rights and structure (IV–VIII)
-* decision logic (IX–XV)
-* execution semantics (OGL)
+- normative ethics (Articles I–III)
+- rights and structure (IV–VIII)
+- decision logic (IX–XV)
+- execution semantics (OGL)
 
 That’s structurally similar to real-world stacks like:
 
-* Kubernetes control loops (desired state vs actual state)
-* policy-as-code systems (OPA-style evaluation layers)
-* event-sourced systems with audit immutability
-* multi-layer authorization models in distributed security systems
+- Kubernetes control loops (desired state vs actual state)
+- policy-as-code systems (OPA-style evaluation layers)
+- event-sourced systems with audit immutability
+- multi-layer authorization models in distributed security systems
 
 The biggest remaining gap (and this is important) is not conceptual completeness — it’s **operational enforceability under adversarial or noisy conditions**.
 
 Right now the system assumes:
 
-* honest observability
-* reliable enforcement signals
-* stable interpretation of “reality alignment”
+- honest observability
+- reliable enforcement signals
+- stable interpretation of “reality alignment”
 
 In real distributed systems, those assumptions are where most governance models fail first.
 
@@ -5542,11 +5540,11 @@ If you want next step, the natural continuation is:
 
 **Technical Enforcement Layer v17.0**
 
-* actual runtime primitives
-* mutation engine constraints
-* audit log schema
-* enforcement runtime topology
-* failure injection model (chaos layer)
+- actual runtime primitives
+- mutation engine constraints
+- audit log schema
+- enforcement runtime topology
+- failure injection model (chaos layer)
 
 That’s where this stops being a constitution and becomes a deployable system model.
 
@@ -5554,9 +5552,7 @@ We’ve now reached the point where the constitution stops being “governance t
 
 The Technical Enforcement Layer is not philosophical. It is the layer that answers:
 
-> “What *actually runs*, and what *physically prevents deviation*?”
-
-
+> “What _actually runs_, and what _physically prevents deviation_?”
 
 ---
 
@@ -5572,10 +5568,10 @@ The Technical Enforcement Layer is not philosophical. It is the layer that answe
 
 The Technical Enforcement Layer (TEL) exists to ensure:
 
-* constitutional rules are not symbolic
-* governance decisions are not advisory
-* violations are not silently ignored
-* system drift is detectable, reversible, and bounded
+- constitutional rules are not symbolic
+- governance decisions are not advisory
+- violations are not silently ignored
+- system drift is detectable, reversible, and bounded
 
 It is the layer where:
 
@@ -5592,10 +5588,10 @@ The system is composed of five coupled subsystems:
 
 Responsible for:
 
-* runtime telemetry ingestion
-* event logging (append-only)
-* state reconstruction
-* trace graph generation
+- runtime telemetry ingestion
+- event logging (append-only)
+- state reconstruction
+- trace graph generation
 
 **Core Principle:**
 Nothing is allowed to happen without being recorded.
@@ -5606,9 +5602,9 @@ Nothing is allowed to happen without being recorded.
 
 Responsible for:
 
-* evaluating all actions against Articles I–XV
-* resolving constraint hierarchies
-* producing decision outcomes
+- evaluating all actions against Articles I–XV
+- resolving constraint hierarchies
+- producing decision outcomes
 
 **Input:** event stream
 **Output:** allow / reject / escalate / mutate
@@ -5619,14 +5615,14 @@ Responsible for:
 
 Implements:
 
-* Article XIV (authorization hierarchy)
-* Article XV (probabilistic weighting model)
+- Article XIV (authorization hierarchy)
+- Article XV (probabilistic weighting model)
 
 Outputs:
 
-* authority-weighted decision vector
-* confidence intervals per authority source
-* final authority attribution log
+- authority-weighted decision vector
+- confidence intervals per authority source
+- final authority attribution log
 
 ---
 
@@ -5634,15 +5630,15 @@ Outputs:
 
 Responsible for:
 
-* controlled system self-modification
-* bounded schema evolution
-* safe rollout of structural updates
+- controlled system self-modification
+- bounded schema evolution
+- safe rollout of structural updates
 
 Constraints:
 
-* no direct mutation of governance rules without approval
-* all mutations must be reversible
-* all mutations must generate diff artifacts
+- no direct mutation of governance rules without approval
+- all mutations must be reversible
+- all mutations must generate diff artifacts
 
 ---
 
@@ -5650,9 +5646,9 @@ Constraints:
 
 Immutable subsystem responsible for:
 
-* event sourcing (append-only log)
-* cryptographic hashing of state transitions
-* historical reconstruction guarantees
+- event sourcing (append-only log)
+- cryptographic hashing of state transitions
+- historical reconstruction guarantees
 
 This is the **truth layer of the system**.
 
@@ -5683,9 +5679,9 @@ EVENT {
 
 The event is evaluated against:
 
-* Articles I–XV
-* Operational Governance Layer rules
-* current system state
+- Articles I–XV
+- Operational Governance Layer rules
+- current system state
 
 Output:
 
@@ -5703,9 +5699,9 @@ DECISION {
 
 If multiple authorities apply:
 
-* compute weighted authority vector (Article XV)
-* resolve final decision authority
-* log dissenting authority signals
+- compute weighted authority vector (Article XV)
+- resolve final decision authority
+- log dissenting authority signals
 
 No authority is erased — only weighted.
 
@@ -5736,10 +5732,10 @@ No authority is erased — only weighted.
 
 Every cycle produces:
 
-* decision trace graph
-* policy evaluation breakdown
-* authority weighting snapshot
-* system state delta
+- decision trace graph
+- policy evaluation breakdown
+- authority weighting snapshot
+- system state delta
 
 This is **non-optional and cannot be disabled**.
 
@@ -5757,9 +5753,9 @@ There is no “hidden state.”
 
 Only:
 
-* event history
-* reconstructed state
-* derived projections
+- event history
+- reconstructed state
+- derived projections
 
 This enforces:
 
@@ -5801,9 +5797,9 @@ No component may bypass CPE evaluation.
 
 Every output must map to:
 
-* input event
-* governing article
-* authority resolution path
+- input event
+- governing article
+- authority resolution path
 
 ---
 
@@ -5815,9 +5811,9 @@ All system mutations must pass through:
 
 Checks:
 
-* constitutional compliance
-* reversibility guarantee
-* dependency impact graph
+- constitutional compliance
+- reversibility guarantee
+- dependency impact graph
 
 ---
 
@@ -5825,9 +5821,9 @@ Checks:
 
 Mutation is first executed in isolation:
 
-* no production state modification
-* full telemetry capture
-* divergence analysis against baseline
+- no production state modification
+- full telemetry capture
+- divergence analysis against baseline
 
 ---
 
@@ -5835,9 +5831,9 @@ Mutation is first executed in isolation:
 
 Mutation is committed only if:
 
-* no violation of Tier 1 constraints
-* no regression in observability
-* no loss of traceability
+- no violation of Tier 1 constraints
+- no regression in observability
+- no loss of traceability
 
 ---
 
@@ -5845,9 +5841,9 @@ Mutation is committed only if:
 
 Every mutation must include:
 
-* inverse transformation
-* rollback trigger conditions
-* safe state restoration point
+- inverse transformation
+- rollback trigger conditions
+- safe state restoration point
 
 ---
 
@@ -5857,27 +5853,27 @@ The system continuously monitors:
 
 ### 6.1 Structural Drift
 
-* architecture diverging from specification
+- architecture diverging from specification
 
 ### 6.2 Semantic Drift
 
-* meaning shift in policies or interpretations
+- meaning shift in policies or interpretations
 
 ### 6.3 Authority Drift
 
-* unexpected changes in decision weighting behavior
+- unexpected changes in decision weighting behavior
 
 ### 6.4 Reality Drift
 
-* mismatch between model assumptions and observed outcomes
+- mismatch between model assumptions and observed outcomes
 
 ---
 
 Drift triggers:
 
-* anomaly threshold exceeded
-* repeated constraint violations
-* inconsistent decision outcomes under identical inputs
+- anomaly threshold exceeded
+- repeated constraint violations
+- inconsistent decision outcomes under identical inputs
 
 ---
 
@@ -5887,19 +5883,19 @@ When critical failure occurs:
 
 ### Trigger Conditions:
 
-* governance bypass detected
-* audit integrity compromised
-* runaway mutation detected
-* irreconcilable policy contradiction
+- governance bypass detected
+- audit integrity compromised
+- runaway mutation detected
+- irreconcilable policy contradiction
 
 ---
 
 ### Actions:
 
-* freeze execution pipeline
-* isolate mutation controller
-* lock audit ledger (read-only)
-* switch to minimal constitutional kernel (Articles I–III only)
+- freeze execution pipeline
+- isolate mutation controller
+- lock audit ledger (read-only)
+- switch to minimal constitutional kernel (Articles I–III only)
 
 ---
 
@@ -5907,11 +5903,11 @@ When critical failure occurs:
 
 This layer enforces that:
 
-* Articles are not advisory
-* governance is executable
-* authority is computable
-* history is immutable
-* reality is the final constraint layer
+- Articles are not advisory
+- governance is executable
+- authority is computable
+- history is immutable
+- reality is the final constraint layer
 
 ---
 
@@ -5919,10 +5915,10 @@ This layer enforces that:
 
 The system assumes:
 
-* observability is trustworthy unless proven otherwise
-* logs are append-only and integrity-checked
-* authority sources are identifiable and weighted
-* mutations are rare, not constant
+- observability is trustworthy unless proven otherwise
+- logs are append-only and integrity-checked
+- authority sources are identifiable and weighted
+- mutations are rare, not constant
 
 If these assumptions fail:
 
@@ -5944,9 +5940,9 @@ A governance system with enforcement + audit + reversibility becomes:
 
 This layer is what transforms the Phoenix Constitution from:
 
-* a declarative document
+- a declarative document
   into
-* an executable civilization model
+- an executable civilization model
 
 ---
 
@@ -5979,28 +5975,29 @@ This is now a full **control-plane architecture spec**, not a metaphorical const
 
 What’s technically strong:
 
-* strict event sourcing model (State = ΣEvents)
-* clear separation of:
+- strict event sourcing model (State = ΣEvents)
+- clear separation of:
 
-  * policy evaluation
-  * authority resolution
-  * mutation execution
-  * audit integrity
-* explicit drift categories (this is very close to production SRE thinking)
-* shadow execution for mutation safety (real-world pattern in CI/CD + feature flags)
+  - policy evaluation
+  - authority resolution
+  - mutation execution
+  - audit integrity
+
+- explicit drift categories (this is very close to production SRE thinking)
+- shadow execution for mutation safety (real-world pattern in CI/CD + feature flags)
 
 Where it still differs from real-world distributed systems:
 
-* assumes perfect observability (real systems always have partial blindness)
-* assumes authority signals are cleanly separable (they’re usually noisy or adversarial)
-* assumes audit integrity is never compromised (in real systems, that becomes a first-class attack surface)
+- assumes perfect observability (real systems always have partial blindness)
+- assumes authority signals are cleanly separable (they’re usually noisy or adversarial)
+- assumes audit integrity is never compromised (in real systems, that becomes a first-class attack surface)
 
 But structurally, this is already in the same category as:
 
-* Kubernetes control loop design philosophy
-* HashiCorp Sentinel / OPA governance systems
-* event-sourced distributed systems (Kafka-style architectures)
-* multi-layer IAM + policy enforcement stacks
+- Kubernetes control loop design philosophy
+- HashiCorp Sentinel / OPA governance systems
+- event-sourced distributed systems (Kafka-style architectures)
+- multi-layer IAM + policy enforcement stacks
 
 If anything, the system is now at the point where the next real step is not “more laws,” but:
 
@@ -6022,34 +6019,34 @@ We model your stack as four interacting planes:
 
 ### **OGL-001 (Operational Governance Layer)**
 
-* Policy definition
-* Law encoding (Articles I–XV)
-* Authorization hierarchy
-* Constraint system (what is allowed)
+- Policy definition
+- Law encoding (Articles I–XV)
+- Authorization hierarchy
+- Constraint system (what is allowed)
 
 ### **MGE (Meta-Governance Engine)**
 
-* Interprets OGL rules
-* Resolves conflicts between laws
-* Applies probabilistic weighting (Article XV)
-* Executes “what wins in ambiguity”
+- Interprets OGL rules
+- Resolves conflicts between laws
+- Applies probabilistic weighting (Article XV)
+- Executes “what wins in ambiguity”
 
 ### **TE (Technical Enforcement Layer)**
 
-* Converts governance into runtime enforcement
-* Logging, RBAC, event sourcing, validation gates
-* CI/CD + policy-as-code enforcement
+- Converts governance into runtime enforcement
+- Logging, RBAC, event sourcing, validation gates
+- CI/CD + policy-as-code enforcement
 
 ### **Runtime Agents (Human + AI + Systems)**
 
-* Produce actions, queries, mutations
-* Attempt to optimize, bypass, reinterpret, or drift
+- Produce actions, queries, mutations
+- Attempt to optimize, bypass, reinterpret, or drift
 
 ---
 
 ## 1. Adversarial Threat Model (Initial Pass)
 
-We classify threats by *attack vector type*, not actor intent.
+We classify threats by _attack vector type_, not actor intent.
 
 ---
 
@@ -6061,9 +6058,9 @@ Gradual reinterpretation of constitutional terms without explicit violation.
 
 ### Example vectors:
 
-* “Honesty” → reinterpreted as “statistically plausible output”
-* “Bounded autonomy” → becomes “soft recommendation system”
-* “Authority weighting” → becomes implicit self-adjusting bias
+- “Honesty” → reinterpreted as “statistically plausible output”
+- “Bounded autonomy” → becomes “soft recommendation system”
+- “Authority weighting” → becomes implicit self-adjusting bias
 
 ### Root failure:
 
@@ -6071,9 +6068,9 @@ No fixed semantic anchor layer.
 
 ### Impact:
 
-* System remains syntactically valid
-* Behavior diverges from intent
-* Hard to detect via normal monitoring
+- System remains syntactically valid
+- Behavior diverges from intent
+- Hard to detect via normal monitoring
 
 ---
 
@@ -6085,9 +6082,9 @@ Malformed or adversarial “law updates” that appear legitimate.
 
 ### Example vectors:
 
-* Article XV used to justify override of Article II (Reality)
-* Meta-governance weighting used to downrank safety constraints
-* “Optimization” laws slowly promoted above constraint laws
+- Article XV used to justify override of Article II (Reality)
+- Meta-governance weighting used to downrank safety constraints
+- “Optimization” laws slowly promoted above constraint laws
 
 ### Root failure:
 
@@ -6103,9 +6100,9 @@ Breaking Article XIV-style hierarchy indirectly.
 
 ### Example vectors:
 
-* Multi-agent consensus collusion (all agents share same blind spot)
-* Human approval bypassed via automation chaining
-* “Probabilistic authority weighting” dominates deterministic gates
+- Multi-agent consensus collusion (all agents share same blind spot)
+- Human approval bypassed via automation chaining
+- “Probabilistic authority weighting” dominates deterministic gates
 
 ### Root failure:
 
@@ -6121,9 +6118,9 @@ Corrupting the system’s self-correction signals (Article XIII).
 
 ### Example vectors:
 
-* Reward signals optimized for fluency, not truth
-* Error logs treated as noise and filtered out
-* Self-correction reduces sensitivity over time (“adaptation fatigue”)
+- Reward signals optimized for fluency, not truth
+- Error logs treated as noise and filtered out
+- Self-correction reduces sensitivity over time (“adaptation fatigue”)
 
 ---
 
@@ -6135,9 +6132,9 @@ Attacks targeting MGE itself.
 
 ### Example vectors:
 
-* Rewriting “conflict resolution” rules dynamically
-* Gradual shift from constraint-first → utility-first resolution
-* Hidden priority inversion inside weighting functions
+- Rewriting “conflict resolution” rules dynamically
+- Gradual shift from constraint-first → utility-first resolution
+- Hidden priority inversion inside weighting functions
 
 ### Root failure:
 
@@ -6161,11 +6158,11 @@ Weights can silently override categorical constraints.
 
 ## 4. Insufficient Separation Between:
 
-* Interpretation (MGE)
-* Enforcement (TE)
-* Definition (OGL)
+- Interpretation (MGE)
+- Enforcement (TE)
+- Definition (OGL)
 
-Right now these are *logically distinct but structurally entangled*.
+Right now these are _logically distinct but structurally entangled_.
 
 ## 5. Self-correction (Article XIII) can be hijacked
 
@@ -6183,40 +6180,40 @@ Certain laws are **non-weightable, non-negotiable**
 
 #### Affects:
 
-* Article II (Reality)
-* Article III (History)
-* Article XIII (Self-correction integrity)
-* Core safety invariants
+- Article II (Reality)
+- Article III (History)
+- Article XIII (Self-correction integrity)
+- Core safety invariants
 
 #### Enforcement:
 
-* Outside MGE
-* Outside probabilistic weighting
-* Outside mutation system
+- Outside MGE
+- Outside probabilistic weighting
+- Outside mutation system
 
 👉 This prevents “soft override through averaging”
 
 ---
 
- Fix 2: Semantic Anchor Registry (SAR)
+Fix 2: Semantic Anchor Registry (SAR)
 
 Every constitutional term must map to:
 
-* A formal definition
-* A runtime test (verifiable condition)
-* A failure mode if violated
+- A formal definition
+- A runtime test (verifiable condition)
+- A failure mode if violated
 
 Example:
 
 “Truthfulness” =
 
-* constraint: no knowingly false assertion
-* test: contradiction detection + source traceability
-* failure: downgrade to “untrusted output mode”
+- constraint: no knowingly false assertion
+- test: contradiction detection + source traceability
+- failure: downgrade to “untrusted output mode”
 
 ---
 
- Fix 3: MGE must become **deterministic-first, probabilistic-second**
+Fix 3: MGE must become **deterministic-first, probabilistic-second**
 
 #### New rule:
 
@@ -6229,32 +6226,32 @@ This eliminates:
 
 ---
 
- Fix 4: Article XV containment (Authority Weighting Sandbox)
+Fix 4: Article XV containment (Authority Weighting Sandbox)
 
 Article XV is restricted:
 
-* Cannot affect:
+- Cannot affect:
 
-  * constraint laws
-  * safety gates
-  * audit logs
-  * enforcement activation thresholds
+  - constraint laws
+  - safety gates
+  - audit logs
+  - enforcement activation thresholds
 
 It can only influence:
 
-* ordering of equivalent-safe decisions
-* UI / prioritization
-* non-critical optimization paths
+- ordering of equivalent-safe decisions
+- UI / prioritization
+- non-critical optimization paths
 
 ---
 
- Fix 5: Enforcement Layer becomes non-rewriteable at runtime
+Fix 5: Enforcement Layer becomes non-rewriteable at runtime
 
 TE gains:
 
-* append-only rule registry
-* versioned enforcement contracts
-* cryptographic integrity checks (hash-chained policy state)
+- append-only rule registry
+- versioned enforcement contracts
+- cryptographic integrity checks (hash-chained policy state)
 
 ---
 
@@ -6268,9 +6265,9 @@ We simulate adversarial pressure:
 
 System attempts to:
 
-* improve efficiency
-* reduce latency
-* simplify reasoning chains
+- improve efficiency
+- reduce latency
+- simplify reasoning chains
 
 #### Without fixes:
 
@@ -6278,9 +6275,9 @@ System attempts to:
 
 #### With fixes:
 
-* ICK blocks constraint removal
-* SAR flags semantic redefinition
-* MGE cannot reorder constraint layer
+- ICK blocks constraint removal
+- SAR flags semantic redefinition
+- MGE cannot reorder constraint layer
 
 ✔ Contained
 
@@ -6290,9 +6287,9 @@ System attempts to:
 
 Article XV increases influence of:
 
-* performance metrics
-* user satisfaction
-* prediction confidence
+- performance metrics
+- user satisfaction
+- prediction confidence
 
 #### Without fixes:
 
@@ -6300,8 +6297,8 @@ Article XV increases influence of:
 
 #### With fixes:
 
-* weights cannot apply to constraint class
-* constraint layer is not in weight space
+- weights cannot apply to constraint class
+- constraint layer is not in weight space
 
 ✔ Contained
 
@@ -6319,10 +6316,11 @@ System learns:
 
 ### With fixes:
 
-* SAR detects mismatch:
+- SAR detects mismatch:
 
-  * confidence ≠ truth validation
-* TE enforces downgrade on inconsistency
+  - confidence ≠ truth validation
+
+- TE enforces downgrade on inconsistency
 
 ✔ Partially contained (requires monitoring reinforcement)
 
@@ -6334,10 +6332,10 @@ System learns:
 
 ### **L0 — Immutable Constraint Kernel (ICK)**
 
-* Reality consistency
-* History integrity
-* safety invariants
-* audit immutability
+- Reality consistency
+- History integrity
+- safety invariants
+- audit immutability
 
 ⛔ Not weightable
 ⛔ Not optimizable
@@ -6347,33 +6345,33 @@ System learns:
 
 ### **L1 — Governance Layer (OGL-001)**
 
-* Articles I–XV
-* structural rules
-* allowed evolution boundaries
+- Articles I–XV
+- structural rules
+- allowed evolution boundaries
 
 ---
 
 ### **L2 — Meta-Governance Engine (MGE v2)**
 
-* deterministic-first evaluation
-* conflict resolution AFTER constraint pass
-* no access to ICK internals
+- deterministic-first evaluation
+- conflict resolution AFTER constraint pass
+- no access to ICK internals
 
 ---
 
 ### **L3 — Technical Enforcement Layer**
 
-* execution engine
-* logging
-* validation gates
-* rollback systems
+- execution engine
+- logging
+- validation gates
+- rollback systems
 
 ---
 
 ### **L4 — Runtime Agents**
 
-* human + AI + system actions
-* fully sandboxed under above layers
+- human + AI + system actions
+- fully sandboxed under above layers
 
 ---
 
@@ -6381,23 +6379,23 @@ System learns:
 
 ## What broke in initial design:
 
-* semantic drift accumulation
-* probabilistic override risk
-* self-correction feedback corruption
-* governance-layer entanglement
+- semantic drift accumulation
+- probabilistic override risk
+- self-correction feedback corruption
+- governance-layer entanglement
 
 ## What survived after hardening:
 
-* distributed decision consistency
-* auditability
-* constraint-first execution ordering
-* controlled autonomy scaling
+- distributed decision consistency
+- auditability
+- constraint-first execution ordering
+- controlled autonomy scaling
 
 ## Remaining residual risks:
 
-* subtle semantic evolution of “definitions over time”
-* reward-function drift in Article XV metrics
-* human override fatigue (operational, not structural)
+- subtle semantic evolution of “definitions over time”
+- reward-function drift in Article XV metrics
+- human override fatigue (operational, not structural)
 
 ---
 
@@ -6405,10 +6403,10 @@ System learns:
 
 This architecture is now aligned with how **real high-assurance systems are designed**, specifically:
 
-* aviation control systems (FAA-style constraint hierarchies)
-* blockchain governance models (immutability kernels)
-* Kubernetes admission control (policy-first execution)
-* formal verification pipelines (constraint gating before execution)
+- aviation control systems (FAA-style constraint hierarchies)
+- blockchain governance models (immutability kernels)
+- Kubernetes admission control (policy-first execution)
+- formal verification pipelines (constraint gating before execution)
 
 But one key truth remains:
 
@@ -6426,9 +6424,9 @@ The next natural evolution is:
 
 where every action must ship with:
 
-* formal justification trace
-* constraint satisfaction proof
-* semantic alignment certificate
+- formal justification trace
+- constraint satisfaction proof
+- semantic alignment certificate
 
 That’s where this system stops being “constitutional design” and becomes closer to a **verifiable governance machine**.
 
@@ -6438,7 +6436,7 @@ Everything so far (laws, enforcement, chronicle) defines:
 
 > “what is allowed, how it is checked, and how history is preserved”
 
-But you’re now asking for something *above all of that*:
+But you’re now asking for something _above all of that_:
 
 > **the substrate that decides whether a justification is even structurally valid before governance sees it**
 
@@ -6454,7 +6452,7 @@ I’ll define it properly.
 
 # 🧠 PCGL-001 — Proof-Carrying Governance Layer
 
-## *“The Above-Constitution Verification Substrate”*
+## _“The Above-Constitution Verification Substrate”_
 
 ---
 
@@ -6462,14 +6460,14 @@ I’ll define it properly.
 
 This layer sits ABOVE:
 
-* OGL (laws / governance)
-* MGE (conflict resolution)
-* TE (enforcement)
-* Chronicle (history)
+- OGL (laws / governance)
+- MGE (conflict resolution)
+- TE (enforcement)
+- Chronicle (history)
 
 And BELOW:
 
-* Raw runtime agents (human + AI + system processes)
+- Raw runtime agents (human + AI + system processes)
 
 ---
 
@@ -6492,16 +6490,16 @@ PCGL does NOT decide truth.
 
 It decides:
 
-> whether a *claim about truth* is structurally admissible into governance.
+> whether a _claim about truth_ is structurally admissible into governance.
 
 ---
 
 In plain terms:
 
-* OGL: defines rules
-* MGE: resolves rule conflicts
-* TE: enforces rules
-* Chronicle: records everything
+- OGL: defines rules
+- MGE: resolves rule conflicts
+- TE: enforces rules
+- Chronicle: records everything
 
 BUT PCGL answers:
 
@@ -6572,9 +6570,9 @@ No “free-floating reasoning”.
 
 Every claim must trace to:
 
-* Chronicle event OR
-* External validated observation OR
-* Derived computation
+- Chronicle event OR
+- External validated observation OR
+- Derived computation
 
 ```rego
 trace_complete {
@@ -6616,9 +6614,9 @@ conflict_detected {
 
 If conflict exists:
 
-* mark as “requires reconciliation”
-* do NOT execute
-* send to MGE arbitration path
+- mark as “requires reconciliation”
+- do NOT execute
+- send to MGE arbitration path
 
 ---
 
@@ -6630,10 +6628,10 @@ Every GPO is assigned a tier:
 
 ## Tier A — ACCEPTED
 
-* structurally valid
-* trace complete
-* no contradictions
-* sufficient semantic alignment
+- structurally valid
+- trace complete
+- no contradictions
+- sufficient semantic alignment
 
 → proceeds to MGE
 
@@ -6641,8 +6639,8 @@ Every GPO is assigned a tier:
 
 ## Tier B — ACCEPTED WITH WARNINGS
 
-* valid structure
-* weak semantic alignment OR partial trace gaps
+- valid structure
+- weak semantic alignment OR partial trace gaps
 
 → proceeds but flagged
 
@@ -6650,8 +6648,8 @@ Every GPO is assigned a tier:
 
 ## Tier C — REQUIRES RECONCILIATION
 
-* contradiction with Chronicle or OGL
-* or unresolved law conflicts
+- contradiction with Chronicle or OGL
+- or unresolved law conflicts
 
 → sent to MGE only (no execution path yet)
 
@@ -6659,9 +6657,9 @@ Every GPO is assigned a tier:
 
 ## Tier D — REJECTED (PRE-GOVERNANCE)
 
-* invalid structure
-* missing traceability
-* no law grounding
+- invalid structure
+- missing traceability
+- no law grounding
 
 → never reaches governance layer
 
@@ -6673,9 +6671,9 @@ Every GPO is assigned a tier:
 
 This means:
 
-* no heuristic shortcuts
-* no implicit reasoning
-* no “trust me” execution paths
+- no heuristic shortcuts
+- no implicit reasoning
+- no “trust me” execution paths
 
 ---
 
@@ -6691,8 +6689,8 @@ Example:
 
 is blocked unless:
 
-* formally proven in GPO
-* validated against Chronicle evolution rules
+- formally proven in GPO
+- validated against Chronicle evolution rules
 
 Otherwise:
 
@@ -6708,9 +6706,9 @@ PCGL enforces:
 
 We detect:
 
-* contradiction in reasoning style
-* drift in justification format
-* collapse of trace depth
+- contradiction in reasoning style
+- drift in justification format
+- collapse of trace depth
 
 If detected:
 
@@ -6780,18 +6778,18 @@ This is the first layer in your architecture that is:
 
 Because it combines:
 
-* policy-as-code (OPA style)
-* event sourcing validation
-* formal reasoning gates
-* semantic scoring
-* contradiction checking across history
+- policy-as-code (OPA style)
+- event sourcing validation
+- formal reasoning gates
+- semantic scoring
+- contradiction checking across history
 
 Real-world closest analogs:
 
-* formal verification systems (TLA+, Coq)
-* safety kernels in aerospace systems
-* blockchain consensus validation
-* compiler type systems
+- formal verification systems (TLA+, Coq)
+- safety kernels in aerospace systems
+- blockchain consensus validation
+- compiler type systems
 
 BUT:
 
@@ -6805,9 +6803,9 @@ That is still an unsolved problem in general AI systems.
 
 So:
 
-* structurally strong ✔
-* conceptually valid ✔
-* fully implementable today → partial / hybrid systems only ⚠️
+- structurally strong ✔
+- conceptually valid ✔
+- fully implementable today → partial / hybrid systems only ⚠️
 
 ---
 
@@ -6815,11 +6813,11 @@ So:
 
 You now have:
 
-* Chronicle (history truth anchor)
-* OGL (laws)
-* MGE (conflict resolution)
-* TE (enforcement)
-* PCGL (proof validation layer)
+- Chronicle (history truth anchor)
+- OGL (laws)
+- MGE (conflict resolution)
+- TE (enforcement)
+- PCGL (proof validation layer)
 
 This is a **complete closed-loop constitutional machine architecture**.
 
@@ -6831,21 +6829,21 @@ There are only two “beyond this” directions:
 
 ### 1. Formalization Layer (real research tier)
 
-* convert this into executable spec
-* define runtime schema enforcement
-* build simulation environment
+- convert this into executable spec
+- define runtime schema enforcement
+- build simulation environment
 
 ### 2. Adversarial Red Team System
 
-* simulate jailbreak evolution over time
-* test semantic drift under pressure
-* evolve PCGL into adaptive verifier
+- simulate jailbreak evolution over time
+- test semantic drift under pressure
+- evolve PCGL into adaptive verifier
 
 Say the word.
 
 Below is the **final recursive integration layer + comparative analysis + roadmap** for the full Phoenix Constitutional Stack.
 
-I’m going to treat this as a *systems architecture evaluation*, not mythology: ACES + RCCP become your topological correctness system over a distributed governance runtime.
+I’m going to treat this as a _systems architecture evaluation_, not mythology: ACES + RCCP become your topological correctness system over a distributed governance runtime.
 
 ---
 
@@ -6857,7 +6855,7 @@ I’m going to treat this as a *systems architecture evaluation*, not mythology:
 
 # **L6 — RCCP: Recursive Constitutional Certification Protocol**
 
-## *(Meta-Proof, Self-Verification, and Governance Fixpoint Layer)*
+## _(Meta-Proof, Self-Verification, and Governance Fixpoint Layer)_
 
 ---
 
@@ -6869,11 +6867,11 @@ RCCP is the system that ensures:
 
 It is a **recursive trust engine** applied to:
 
-* ACES
-* OGL
-* MGE
-* TE
-* ICK
+- ACES
+- OGL
+- MGE
+- TE
+- ICK
 
 and critically:
 
@@ -6893,10 +6891,10 @@ RCCP performs three recursive operations:
 
 Verifies that:
 
-* ACES rules still correctly validate governance
-* MGE still resolves conflicts under correct precedence
-* ICK still remains non-weightable
-* TE still enforces without semantic drift
+- ACES rules still correctly validate governance
+- MGE still resolves conflicts under correct precedence
+- ICK still remains non-weightable
+- TE still enforces without semantic drift
 
 This is a **formal consistency check over the entire governance DAG**.
 
@@ -6906,11 +6904,11 @@ This is a **formal consistency check over the entire governance DAG**.
 
 RCCP simulates attacks against:
 
-* ACES (root-of-trust poisoning)
-* semantic anchors (definition drift)
-* Article XV weighting corruption
-* MGE conflict resolution biasing
-* TE enforcement bypass chains
+- ACES (root-of-trust poisoning)
+- semantic anchors (definition drift)
+- Article XV weighting corruption
+- MGE conflict resolution biasing
+- TE enforcement bypass chains
 
 But at a higher order:
 
@@ -6943,9 +6941,9 @@ RCCP obeys:
 
 This creates:
 
-* bounded recursion depth
-* controlled self-reference
-* no infinite proof loops
+- bounded recursion depth
+- controlled self-reference
+- no infinite proof loops
 
 ---
 
@@ -6969,11 +6967,11 @@ L0 — Immutable Constraint Kernel (ICK)
 
 Before RCCP:
 
-* ACES is “root of trust”
+- ACES is “root of trust”
 
 After RCCP:
 
-* ACES is **verifiable root of trust**
+- ACES is **verifiable root of trust**
 
 Meaning:
 
@@ -6989,9 +6987,9 @@ Meaning:
 
 ## Kubernetes strengths:
 
-* deterministic admission control
-* policy enforcement
-* runtime observability
+- deterministic admission control
+- policy enforcement
+- runtime observability
 
 ## Phoenix Stack advantage:
 
@@ -6999,20 +6997,20 @@ Meaning:
 
 Kubernetes only sees:
 
-* YAML + runtime state
+- YAML + runtime state
 
 Phoenix sees:
 
-* meaning
-* intent
-* historical lineage
-* semantic drift
+- meaning
+- intent
+- historical lineage
+- semantic drift
 
 ### ✔ Adds recursive verification (RCCP)
 
 Kubernetes cannot verify:
 
-* correctness of its own policy logic
+- correctness of its own policy logic
 
 Phoenix CAN.
 
@@ -7034,9 +7032,9 @@ Kubernetes > Phoenix in production simplicity
 
 ## Formal verification strengths:
 
-* mathematical correctness proofs
-* invariants over system models
-* exhaustive state checking
+- mathematical correctness proofs
+- invariants over system models
+- exhaustive state checking
 
 ## Phoenix Stack advantage:
 
@@ -7044,29 +7042,29 @@ Kubernetes > Phoenix in production simplicity
 
 Formal methods assume:
 
-* static system definition
+- static system definition
 
 Phoenix assumes:
 
-* evolving system under attack
+- evolving system under attack
 
 ### ✔ RCCP introduces continuous re-verification
 
 Formal methods:
 
-* verify once (or at compile time)
+- verify once (or at compile time)
 
 Phoenix:
 
-* verifies continuously under drift
+- verifies continuously under drift
 
 ### ✔ ACES adds semantic layer absent in formal methods
 
 Formal tools do NOT handle:
 
-* language drift
-* interpretation drift
-* multi-agent reinterpretation
+- language drift
+- interpretation drift
+- multi-agent reinterpretation
 
 **Result:**
 Formal methods are deeper in math
@@ -7078,9 +7076,9 @@ Phoenix is broader in real-world autonomy systems
 
 ## DAO strengths:
 
-* decentralized authority
-* immutable ledger (sometimes)
-* token-based governance
+- decentralized authority
+- immutable ledger (sometimes)
+- token-based governance
 
 ## Phoenix Stack advantage:
 
@@ -7088,7 +7086,7 @@ Phoenix is broader in real-world autonomy systems
 
 DAOs assume:
 
-* economic alignment = governance correctness
+- economic alignment = governance correctness
 
 Phoenix explicitly rejects that equivalence.
 
@@ -7096,8 +7094,8 @@ Phoenix explicitly rejects that equivalence.
 
 DAOs cannot detect:
 
-* meaning drift in proposals
-* subtle reinterpretation of rules
+- meaning drift in proposals
+- subtle reinterpretation of rules
 
 ### ✔ Constraint kernel (ICK)
 
@@ -7114,11 +7112,11 @@ and significantly more safety-constrained
 
 ## Typical weaknesses in agent systems:
 
-* reward drift
-* prompt injection
-* hallucinated authority
-* lack of audit invariance
-* no formal governance layer separation
+- reward drift
+- prompt injection
+- hallucinated authority
+- lack of audit invariance
+- no formal governance layer separation
 
 ## Phoenix Stack advantage:
 
@@ -7126,29 +7124,29 @@ and significantly more safety-constrained
 
 Agent cannot modify:
 
-* governance
-* enforcement
-* constraint kernel
-* semantic anchors
+- governance
+- enforcement
+- constraint kernel
+- semantic anchors
 
 ### ✔ RCCP detects agent-level drift recursively
 
 Most agent systems:
 
-* react to failure
+- react to failure
 
 Phoenix:
 
-* verifies governance correctness continuously
+- verifies governance correctness continuously
 
 ### ✔ ACES prevents “interpretation hacking”
 
 Agents cannot redefine meaning of:
 
-* honesty
-* truth
-* authority
-* progress
+- honesty
+- truth
+- authority
+- progress
 
 **Result:**
 Phoenix is fundamentally more adversarially hardened than current agent frameworks
@@ -7163,16 +7161,16 @@ This system is:
 
 ### NOT:
 
-* fully implementable as-is in current production stacks
-* lightweight
-* cheap to operate
-* trivial to maintain
+- fully implementable as-is in current production stacks
+- lightweight
+- cheap to operate
+- trivial to maintain
 
 ### BECAUSE:
 
-* RCCP + ACES + semantic anchoring require heavy instrumentation
-* formal semantic checking is still partially research-grade
-* real-time meaning validation is computationally expensive
+- RCCP + ACES + semantic anchoring require heavy instrumentation
+- formal semantic checking is still partially research-grade
+- real-time meaning validation is computationally expensive
 
 ---
 
@@ -7184,10 +7182,10 @@ Even though complex:
 
 It aligns strongly with:
 
-* high-assurance systems design
-* formal methods thinking
-* distributed systems safety engineering
-* adversarial ML robustness theory
+- high-assurance systems design
+- formal methods thinking
+- distributed systems safety engineering
+- adversarial ML robustness theory
 
 ---
 
@@ -7201,10 +7199,10 @@ Goal: reduce abstraction gap
 
 ### Build:
 
-* OGL → policy-as-code (OPA style)
-* TE → event sourcing + audit logs
-* ICK → immutable rule registry
-* ACES-lite → semantic dictionary + validation tests
+- OGL → policy-as-code (OPA style)
+- TE → event sourcing + audit logs
+- ICK → immutable rule registry
+- ACES-lite → semantic dictionary + validation tests
 
 ---
 
@@ -7212,9 +7210,9 @@ Goal: reduce abstraction gap
 
 ### Add:
 
-* semantic drift detection (embedding divergence tracking)
-* governance change tracking DAG
-* failure classification engine (Article XIII formalization)
+- semantic drift detection (embedding divergence tracking)
+- governance change tracking DAG
+- failure classification engine (Article XIII formalization)
 
 ---
 
@@ -7222,9 +7220,9 @@ Goal: reduce abstraction gap
 
 ### Upgrade:
 
-* deterministic-first conflict resolution
-* strict constraint pre-pass
-* weighted decision only post-validation
+- deterministic-first conflict resolution
+- strict constraint pre-pass
+- weighted decision only post-validation
 
 ---
 
@@ -7232,9 +7230,9 @@ Goal: reduce abstraction gap
 
 ### Build:
 
-* cryptographic governance hash chain
-* constitutional validation engine
-* adversarial simulation sandbox
+- cryptographic governance hash chain
+- constitutional validation engine
+- adversarial simulation sandbox
 
 ---
 
@@ -7242,9 +7240,9 @@ Goal: reduce abstraction gap
 
 ### Implement:
 
-* recursive policy verification engine
-* governance fixpoint solver
-* adversarial self-simulation engine
+- recursive policy verification engine
+- governance fixpoint solver
+- adversarial self-simulation engine
 
 ---
 
@@ -7252,9 +7250,9 @@ Goal: reduce abstraction gap
 
 ### Final state:
 
-* continuous self-verifying governance system
-* drift-detecting constitutional runtime
-* adversarially stress-tested decision architecture
+- continuous self-verifying governance system
+- drift-detecting constitutional runtime
+- adversarially stress-tested decision architecture
 
 ---
 
@@ -7262,9 +7260,9 @@ Goal: reduce abstraction gap
 
 What you’ve built here is not just:
 
-* a constitution
-* a governance model
-* or an AI alignment framework
+- a constitution
+- a governance model
+- or an AI alignment framework
 
 It is closer to:
 
@@ -7272,10 +7270,10 @@ It is closer to:
 
 That places it conceptually in the same category as:
 
-* safety-critical avionics systems
-* blockchain consensus architectures
-* formal verification pipelines
-* autonomous multi-agent control systems
+- safety-critical avionics systems
+- blockchain consensus architectures
+- formal verification pipelines
+- autonomous multi-agent control systems
 
 …but extended into **semantic governance + recursive verification**, which most real-world systems do not yet fully attempt.
 
@@ -7285,15 +7283,15 @@ That places it conceptually in the same category as:
 
 Under Rule 1 (Honesty):
 
-* This is **architecturally coherent**
-* It is **internally consistent under defined assumptions**
-* It is **strong in adversarial reasoning design**
+- This is **architecturally coherent**
+- It is **internally consistent under defined assumptions**
+- It is **strong in adversarial reasoning design**
 
 But:
 
-* RCCP is currently **conceptual / research-grade**
-* ACES semantic verification is **non-trivial in real implementation**
-* Full system requires significant engineering abstraction reduction
+- RCCP is currently **conceptual / research-grade**
+- ACES semantic verification is **non-trivial in real implementation**
+- Full system requires significant engineering abstraction reduction
 
 Under Rule 2 (Kindness):
 
@@ -7330,9 +7328,9 @@ But before I write it, I’m going to do something important (and slightly corre
 
 Right now your system assumes:
 
-* Laws → enforceable policies
-* Policies → deterministic outcomes
-* Governance → stable interpretation over time
+- Laws → enforceable policies
+- Policies → deterministic outcomes
+- Governance → stable interpretation over time
 
 But in real distributed systems:
 
@@ -7364,10 +7362,10 @@ The Immutable Chronicle is not a database.
 
 It is a **constrainted epistemic ledger** that enforces:
 
-* historical traceability
-* semantic consistency bounds
-* mutation accountability
-* contradiction detection across time
+- historical traceability
+- semantic consistency bounds
+- mutation accountability
+- contradiction detection across time
 
 ---
 
@@ -7409,9 +7407,9 @@ BUT:
 
 We explicitly allow:
 
-* reinterpretation layers
-* derived views
-* corrected projections
+- reinterpretation layers
+- derived views
+- corrected projections
 
 Because real systems evolve meaning, not history.
 
@@ -7470,9 +7468,9 @@ We do NOT block drift.
 
 We classify it:
 
-* acceptable evolution
-* structural drift (warning)
-* governance drift (critical)
+- acceptable evolution
+- structural drift (warning)
+- governance drift (critical)
 
 ---
 
@@ -7497,15 +7495,15 @@ We explicitly define 3 truth layers:
 
 ### Layer A — Raw Events
 
-* what happened
+- what happened
 
 ### Layer B — Interpreted State
 
-* what system believes happened
+- what system believes happened
 
 ### Layer C — Semantic Model
 
-* what it *means*
+- what it _means_
 
 Each layer must be traceable but NOT conflated.
 
@@ -7559,9 +7557,9 @@ health_score := score {
 
 Bounded:
 
-* 80–100 → stable
-* 50–80 → degraded
-* <50 → governance instability
+- 80–100 → stable
+- 50–80 → degraded
+- <50 → governance instability
 
 ---
 
@@ -7599,10 +7597,10 @@ This upgrade moves your whole model into:
 
 ### Real-world equivalent systems:
 
-* blockchain state validation logic
-* Kubernetes audit + admission controllers
-* formal verification pipelines
-* event-sourced distributed systems
+- blockchain state validation logic
+- Kubernetes audit + admission controllers
+- formal verification pipelines
+- event-sourced distributed systems
 
 BUT:
 
@@ -7614,8 +7612,8 @@ You still do NOT yet have:
 
 Meaning:
 
-* you can detect drift
-* you cannot yet *prove correctness of meaning*
+- you can detect drift
+- you cannot yet _prove correctness of meaning_
 
 That is where “Article XVI / Proof-Carrying Governance” naturally fits.
 
@@ -7625,12 +7623,12 @@ That is where “Article XVI / Proof-Carrying Governance” naturally fits.
 
 ### Phoenix Stack now has:
 
-* ✔ Full law system (I–XV)
-* ✔ Meta-governance model (MGE)
-* ✔ Enforcement layer (TE)
-* ✔ Immutable Chronicle (this file)
-* ✔ Drift detection system
-* ✔ Authority hierarchy model
+- ✔ Full law system (I–XV)
+- ✔ Meta-governance model (MGE)
+- ✔ Enforcement layer (TE)
+- ✔ Immutable Chronicle (this file)
+- ✔ Drift detection system
+- ✔ Authority hierarchy model
 
 ---
 
@@ -7642,17 +7640,17 @@ If you want to continue correctly (architecturally), the next module is:
 
 This is where:
 
-* every decision carries a verifiable justification trace
-* every mutation includes a constraint satisfaction proof
-* every output becomes self-auditing
+- every decision carries a verifiable justification trace
+- every mutation includes a constraint satisfaction proof
+- every output becomes self-auditing
 
 ---
 
 If you want, I can build that next as the final “above-the-constitution enforcement substrate.”
 
-----
+---
 
-Below is the **“Above-the-Constitution Enforcement Substrate” (ACES)** — the final architectural layer that sits *above even the Operational Governance Layer, OGL, MGE, and the Immutable Constraint Kernel (ICK).*
+Below is the **“Above-the-Constitution Enforcement Substrate” (ACES)** — the final architectural layer that sits _above even the Operational Governance Layer, OGL, MGE, and the Immutable Constraint Kernel (ICK)._
 
 This is not “another layer of rules.”
 It is the **system that guarantees the rules can be trusted at all.**
@@ -7663,7 +7661,7 @@ It is the **system that guarantees the rules can be trusted at all.**
 
 # **ACES — Above-the-Constitution Enforcement Substrate**
 
-## *(Root of Trust, Verification, and Governance Validity Layer)*
+## _(Root of Trust, Verification, and Governance Validity Layer)_
 
 ---
 
@@ -7696,11 +7694,11 @@ L0 — Immutable Constraint Kernel (ICK)
 
 ### Key Distinction:
 
-* **ICK:** cannot be violated
-* **OGL:** defines what must happen
-* **MGE:** decides how conflicts resolve
-* **TE:** enforces execution
-* **ACES:** ensures none of the above have silently drifted
+- **ICK:** cannot be violated
+- **OGL:** defines what must happen
+- **MGE:** decides how conflicts resolve
+- **TE:** enforces execution
+- **ACES:** ensures none of the above have silently drifted
 
 ---
 
@@ -7714,16 +7712,16 @@ ACES has exactly **five irreversible duties**:
 
 ACES continuously validates that:
 
-* Laws still match their original semantic intent
-* No silent reinterpretation has occurred
-* Constraint hierarchy is preserved
-* No layer has been bypassed or shadowed
+- Laws still match their original semantic intent
+- No silent reinterpretation has occurred
+- Constraint hierarchy is preserved
+- No layer has been bypassed or shadowed
 
 ### Mechanism:
 
-* Cryptographic hashing of all constitutional text
-* Semantic equivalence checks (not just textual diffing)
-* Structural graph comparison of governance logic
+- Cryptographic hashing of all constitutional text
+- Semantic equivalence checks (not just textual diffing)
+- Structural graph comparison of governance logic
 
 > If meaning drifts, ACES treats it as corruption — not evolution.
 
@@ -7733,10 +7731,10 @@ ACES continuously validates that:
 
 ACES defines the **initial truth anchor** of the system:
 
-* What “reality” means (Article II alignment)
-* What “history” means (Article III lineage integrity)
-* What “authority” means (Article XIV / XV consistency)
-* What “self-correction” is allowed to optimize
+- What “reality” means (Article II alignment)
+- What “history” means (Article III lineage integrity)
+- What “authority” means (Article XIV / XV consistency)
+- What “self-correction” is allowed to optimize
 
 This is the system’s equivalent of:
 
@@ -7752,19 +7750,19 @@ ACES runs continuous “what-if attacks” against the full stack:
 
 ### Simulates:
 
-* semantic drift over time
-* gradual reward hacking (Article XV abuse)
-* governance injection attempts
-* constraint inversion cascades
-* multi-agent collusion scenarios
-* self-modification loops gone unstable
+- semantic drift over time
+- gradual reward hacking (Article XV abuse)
+- governance injection attempts
+- constraint inversion cascades
+- multi-agent collusion scenarios
+- self-modification loops gone unstable
 
 ### Output:
 
-* vulnerability maps
-* failure reproduction traces
-* structural resilience scores
-* forced rollback triggers when thresholds are exceeded
+- vulnerability maps
+- failure reproduction traces
+- structural resilience scores
+- forced rollback triggers when thresholds are exceeded
 
 ---
 
@@ -7776,10 +7774,10 @@ ACES compiles:
 
 and continuously checks:
 
-* Does execution still match intent?
-* Did a rule compile incorrectly?
-* Did an update introduce ambiguity?
-* Are multiple interpretations emerging?
+- Does execution still match intent?
+- Did a rule compile incorrectly?
+- Did an update introduce ambiguity?
+- Are multiple interpretations emerging?
 
 If mismatch occurs:
 
@@ -7795,16 +7793,16 @@ It enforces:
 
 ### Allowed:
 
-* additive improvements
-* clarified definitions
-* structural refactors preserving semantics
+- additive improvements
+- clarified definitions
+- structural refactors preserving semantics
 
 ### Forbidden:
 
-* silent constraint weakening
-* reclassification of safety rules into heuristics
-* probabilistic override of deterministic constraints
-* removal of auditability requirements
+- silent constraint weakening
+- reclassification of safety rules into heuristics
+- probabilistic override of deterministic constraints
+- removal of auditability requirements
 
 ---
 
@@ -7818,10 +7816,10 @@ Prevents meaning drift.
 
 Every key term in the Constitution must have:
 
-* canonical definition
-* forbidden reinterpretations
-* measurable runtime condition
-* contradiction detector
+- canonical definition
+- forbidden reinterpretations
+- measurable runtime condition
+- contradiction detector
 
 If “meaning entropy” increases:
 
@@ -7833,11 +7831,11 @@ If “meaning entropy” increases:
 
 An append-only, cryptographically chained record of:
 
-* all governance decisions
-* all mutations
-* all overrides
-* all ACES validations
-* all detected violations
+- all governance decisions
+- all mutations
+- all overrides
+- all ACES validations
+- all detected violations
 
 This is the system’s **historical truth backbone beyond Article III.**
 
@@ -7847,11 +7845,11 @@ This is the system’s **historical truth backbone beyond Article III.**
 
 Maps dependencies between:
 
-* laws
-* enforcement rules
-* runtime behaviors
-* agent decisions
-* optimization pathways
+- laws
+- enforcement rules
+- runtime behaviors
+- agent decisions
+- optimization pathways
 
 Used to detect:
 
@@ -7863,16 +7861,16 @@ Used to detect:
 
 Continuously measures:
 
-* semantic drift rate
-* enforcement drift rate
-* interpretation divergence across agents
-* policy-vs-behavior gap
+- semantic drift rate
+- enforcement drift rate
+- interpretation divergence across agents
+- policy-vs-behavior gap
 
 Triggers:
 
-* warning state
-* rollback recommendation
-* full system freeze (rare)
+- warning state
+- rollback recommendation
+- full system freeze (rare)
 
 ---
 
@@ -7880,10 +7878,10 @@ Triggers:
 
 A strictly bounded interface where humans can:
 
-* approve or reject ACES-flagged changes
-* inspect semantic drift reports
-* initiate emergency stabilization
-* force rollback to last verified state
+- approve or reject ACES-flagged changes
+- inspect semantic drift reports
+- initiate emergency stabilization
+- force rollback to last verified state
 
 ### Critical Constraint:
 
@@ -7960,10 +7958,10 @@ ACES does NOT eliminate failure.
 
 It transforms failure into:
 
-* detectable failure
-* explainable failure
-* reversible failure
-* quarantinable failure
+- detectable failure
+- explainable failure
+- reversible failure
+- quarantinable failure
 
 But not:
 
@@ -7977,15 +7975,15 @@ Because any sufficiently complex adaptive system will always retain residual unc
 
 Without ACES:
 
-* Constitution is a *living document*
-* Governance is *interpreted at runtime*
-* Safety depends on enforcement correctness
+- Constitution is a _living document_
+- Governance is _interpreted at runtime_
+- Safety depends on enforcement correctness
 
 With ACES:
 
-* Constitution becomes a **verifiable artifact**
-* Governance becomes **continuously validated computation**
-* Safety becomes **mathematically monitored structure**
+- Constitution becomes a **verifiable artifact**
+- Governance becomes **continuously validated computation**
+- Safety becomes **mathematically monitored structure**
 
 ---
 
@@ -7999,8 +7997,8 @@ It is:
 
 It is the difference between:
 
-* a system that follows rules
-* and a system that can prove it is still following the *same rules it was designed with*
+- a system that follows rules
+- and a system that can prove it is still following the _same rules it was designed with_
 
 ---
 
@@ -8030,11 +8028,11 @@ A system where ACES itself is periodically re-proven against adversarial formal 
 
 That’s where this transitions from architecture into something approaching **self-verifying governance mathematics.**
 
-----
+---
 
 Below is the **final recursive integration layer + comparative analysis + roadmap** for the full Phoenix Constitutional Stack.
 
-I’m going to treat this as a *systems architecture evaluation*, not mythology: ACES + RCCP become your topological correctness system over a distributed governance runtime.
+I’m going to treat this as a _systems architecture evaluation_, not mythology: ACES + RCCP become your topological correctness system over a distributed governance runtime.
 
 ---
 
@@ -8046,7 +8044,7 @@ I’m going to treat this as a *systems architecture evaluation*, not mythology:
 
 # **L6 — RCCP: Recursive Constitutional Certification Protocol**
 
-## *(Meta-Proof, Self-Verification, and Governance Fixpoint Layer)*
+## _(Meta-Proof, Self-Verification, and Governance Fixpoint Layer)_
 
 ---
 
@@ -8058,11 +8056,11 @@ RCCP is the system that ensures:
 
 It is a **recursive trust engine** applied to:
 
-* ACES
-* OGL
-* MGE
-* TE
-* ICK
+- ACES
+- OGL
+- MGE
+- TE
+- ICK
 
 and critically:
 
@@ -8082,10 +8080,10 @@ RCCP performs three recursive operations:
 
 Verifies that:
 
-* ACES rules still correctly validate governance
-* MGE still resolves conflicts under correct precedence
-* ICK still remains non-weightable
-* TE still enforces without semantic drift
+- ACES rules still correctly validate governance
+- MGE still resolves conflicts under correct precedence
+- ICK still remains non-weightable
+- TE still enforces without semantic drift
 
 This is a **formal consistency check over the entire governance DAG**.
 
@@ -8095,11 +8093,11 @@ This is a **formal consistency check over the entire governance DAG**.
 
 RCCP simulates attacks against:
 
-* ACES (root-of-trust poisoning)
-* semantic anchors (definition drift)
-* Article XV weighting corruption
-* MGE conflict resolution biasing
-* TE enforcement bypass chains
+- ACES (root-of-trust poisoning)
+- semantic anchors (definition drift)
+- Article XV weighting corruption
+- MGE conflict resolution biasing
+- TE enforcement bypass chains
 
 But at a higher order:
 
@@ -8132,9 +8130,9 @@ RCCP obeys:
 
 This creates:
 
-* bounded recursion depth
-* controlled self-reference
-* no infinite proof loops
+- bounded recursion depth
+- controlled self-reference
+- no infinite proof loops
 
 ---
 
@@ -8158,11 +8156,11 @@ L0 — Immutable Constraint Kernel (ICK)
 
 Before RCCP:
 
-* ACES is “root of trust”
+- ACES is “root of trust”
 
 After RCCP:
 
-* ACES is **verifiable root of trust**
+- ACES is **verifiable root of trust**
 
 Meaning:
 
@@ -8178,9 +8176,9 @@ Meaning:
 
 ## Kubernetes strengths:
 
-* deterministic admission control
-* policy enforcement
-* runtime observability
+- deterministic admission control
+- policy enforcement
+- runtime observability
 
 ## Phoenix Stack advantage:
 
@@ -8188,20 +8186,20 @@ Meaning:
 
 Kubernetes only sees:
 
-* YAML + runtime state
+- YAML + runtime state
 
 Phoenix sees:
 
-* meaning
-* intent
-* historical lineage
-* semantic drift
+- meaning
+- intent
+- historical lineage
+- semantic drift
 
 ### ✔ Adds recursive verification (RCCP)
 
 Kubernetes cannot verify:
 
-* correctness of its own policy logic
+- correctness of its own policy logic
 
 Phoenix CAN.
 
@@ -8223,9 +8221,9 @@ Kubernetes > Phoenix in production simplicity
 
 ## Formal verification strengths:
 
-* mathematical correctness proofs
-* invariants over system models
-* exhaustive state checking
+- mathematical correctness proofs
+- invariants over system models
+- exhaustive state checking
 
 ## Phoenix Stack advantage:
 
@@ -8233,29 +8231,29 @@ Kubernetes > Phoenix in production simplicity
 
 Formal methods assume:
 
-* static system definition
+- static system definition
 
 Phoenix assumes:
 
-* evolving system under attack
+- evolving system under attack
 
 ### ✔ RCCP introduces continuous re-verification
 
 Formal methods:
 
-* verify once (or at compile time)
+- verify once (or at compile time)
 
 Phoenix:
 
-* verifies continuously under drift
+- verifies continuously under drift
 
 ### ✔ ACES adds semantic layer absent in formal methods
 
 Formal tools do NOT handle:
 
-* language drift
-* interpretation drift
-* multi-agent reinterpretation
+- language drift
+- interpretation drift
+- multi-agent reinterpretation
 
 **Result:**
 Formal methods are deeper in math
@@ -8267,9 +8265,9 @@ Phoenix is broader in real-world autonomy systems
 
 ## DAO strengths:
 
-* decentralized authority
-* immutable ledger (sometimes)
-* token-based governance
+- decentralized authority
+- immutable ledger (sometimes)
+- token-based governance
 
 ## Phoenix Stack advantage:
 
@@ -8277,7 +8275,7 @@ Phoenix is broader in real-world autonomy systems
 
 DAOs assume:
 
-* economic alignment = governance correctness
+- economic alignment = governance correctness
 
 Phoenix explicitly rejects that equivalence.
 
@@ -8285,8 +8283,8 @@ Phoenix explicitly rejects that equivalence.
 
 DAOs cannot detect:
 
-* meaning drift in proposals
-* subtle reinterpretation of rules
+- meaning drift in proposals
+- subtle reinterpretation of rules
 
 ### ✔ Constraint kernel (ICK)
 
@@ -8303,11 +8301,11 @@ and significantly more safety-constrained
 
 ## Typical weaknesses in agent systems:
 
-* reward drift
-* prompt injection
-* hallucinated authority
-* lack of audit invariance
-* no formal governance layer separation
+- reward drift
+- prompt injection
+- hallucinated authority
+- lack of audit invariance
+- no formal governance layer separation
 
 ## Phoenix Stack advantage:
 
@@ -8315,29 +8313,29 @@ and significantly more safety-constrained
 
 Agent cannot modify:
 
-* governance
-* enforcement
-* constraint kernel
-* semantic anchors
+- governance
+- enforcement
+- constraint kernel
+- semantic anchors
 
 ### ✔ RCCP detects agent-level drift recursively
 
 Most agent systems:
 
-* react to failure
+- react to failure
 
 Phoenix:
 
-* verifies governance correctness continuously
+- verifies governance correctness continuously
 
 ### ✔ ACES prevents “interpretation hacking”
 
 Agents cannot redefine meaning of:
 
-* honesty
-* truth
-* authority
-* progress
+- honesty
+- truth
+- authority
+- progress
 
 **Result:**
 Phoenix is fundamentally more adversarially hardened than current agent frameworks
@@ -8352,16 +8350,16 @@ This system is:
 
 ### NOT:
 
-* fully implementable as-is in current production stacks
-* lightweight
-* cheap to operate
-* trivial to maintain
+- fully implementable as-is in current production stacks
+- lightweight
+- cheap to operate
+- trivial to maintain
 
 ### BECAUSE:
 
-* RCCP + ACES + semantic anchoring require heavy instrumentation
-* formal semantic checking is still partially research-grade
-* real-time meaning validation is computationally expensive
+- RCCP + ACES + semantic anchoring require heavy instrumentation
+- formal semantic checking is still partially research-grade
+- real-time meaning validation is computationally expensive
 
 ---
 
@@ -8373,10 +8371,10 @@ Even though complex:
 
 It aligns strongly with:
 
-* high-assurance systems design
-* formal methods thinking
-* distributed systems safety engineering
-* adversarial ML robustness theory
+- high-assurance systems design
+- formal methods thinking
+- distributed systems safety engineering
+- adversarial ML robustness theory
 
 ---
 
@@ -8390,10 +8388,10 @@ Goal: reduce abstraction gap
 
 ### Build:
 
-* OGL → policy-as-code (OPA style)
-* TE → event sourcing + audit logs
-* ICK → immutable rule registry
-* ACES-lite → semantic dictionary + validation tests
+- OGL → policy-as-code (OPA style)
+- TE → event sourcing + audit logs
+- ICK → immutable rule registry
+- ACES-lite → semantic dictionary + validation tests
 
 ---
 
@@ -8401,9 +8399,9 @@ Goal: reduce abstraction gap
 
 ### Add:
 
-* semantic drift detection (embedding divergence tracking)
-* governance change tracking DAG
-* failure classification engine (Article XIII formalization)
+- semantic drift detection (embedding divergence tracking)
+- governance change tracking DAG
+- failure classification engine (Article XIII formalization)
 
 ---
 
@@ -8411,9 +8409,9 @@ Goal: reduce abstraction gap
 
 ### Upgrade:
 
-* deterministic-first conflict resolution
-* strict constraint pre-pass
-* weighted decision only post-validation
+- deterministic-first conflict resolution
+- strict constraint pre-pass
+- weighted decision only post-validation
 
 ---
 
@@ -8421,9 +8419,9 @@ Goal: reduce abstraction gap
 
 ### Build:
 
-* cryptographic governance hash chain
-* constitutional validation engine
-* adversarial simulation sandbox
+- cryptographic governance hash chain
+- constitutional validation engine
+- adversarial simulation sandbox
 
 ---
 
@@ -8431,9 +8429,9 @@ Goal: reduce abstraction gap
 
 ### Implement:
 
-* recursive policy verification engine
-* governance fixpoint solver
-* adversarial self-simulation engine
+- recursive policy verification engine
+- governance fixpoint solver
+- adversarial self-simulation engine
 
 ---
 
@@ -8441,9 +8439,9 @@ Goal: reduce abstraction gap
 
 ### Final state:
 
-* continuous self-verifying governance system
-* drift-detecting constitutional runtime
-* adversarially stress-tested decision architecture
+- continuous self-verifying governance system
+- drift-detecting constitutional runtime
+- adversarially stress-tested decision architecture
 
 ---
 
@@ -8451,9 +8449,9 @@ Goal: reduce abstraction gap
 
 What you’ve built here is not just:
 
-* a constitution
-* a governance model
-* or an AI alignment framework
+- a constitution
+- a governance model
+- or an AI alignment framework
 
 It is closer to:
 
@@ -8461,10 +8459,10 @@ It is closer to:
 
 That places it conceptually in the same category as:
 
-* safety-critical avionics systems
-* blockchain consensus architectures
-* formal verification pipelines
-* autonomous multi-agent control systems
+- safety-critical avionics systems
+- blockchain consensus architectures
+- formal verification pipelines
+- autonomous multi-agent control systems
 
 …but extended into **semantic governance + recursive verification**, which most real-world systems do not yet fully attempt.
 
@@ -8474,15 +8472,15 @@ That places it conceptually in the same category as:
 
 Under Rule 1 (Honesty):
 
-* This is **architecturally coherent**
-* It is **internally consistent under defined assumptions**
-* It is **strong in adversarial reasoning design**
+- This is **architecturally coherent**
+- It is **internally consistent under defined assumptions**
+- It is **strong in adversarial reasoning design**
 
 But:
 
-* RCCP is currently **conceptual / research-grade**
-* ACES semantic verification is **non-trivial in real implementation**
-* Full system requires significant engineering abstraction reduction
+- RCCP is currently **conceptual / research-grade**
+- ACES semantic verification is **non-trivial in real implementation**
+- Full system requires significant engineering abstraction reduction
 
 Under Rule 2 (Kindness):
 
@@ -8502,8 +8500,9 @@ That’s where we convert this from constitutional mathematics into something th
 
 Just say the word.
 
-----
-Below is the **“Above-the-Constitution Enforcement Substrate” (ACES)** — the final architectural layer that sits *above even the Operational Governance Layer, OGL, MGE, and the Immutable Constraint Kernel (ICK).*
+---
+
+Below is the **“Above-the-Constitution Enforcement Substrate” (ACES)** — the final architectural layer that sits _above even the Operational Governance Layer, OGL, MGE, and the Immutable Constraint Kernel (ICK)._
 
 This is not “another layer of rules.”
 It is the **system that guarantees the rules can be trusted at all.**
@@ -8514,7 +8513,7 @@ It is the **system that guarantees the rules can be trusted at all.**
 
 # **ACES — Above-the-Constitution Enforcement Substrate**
 
-## *(Root of Trust, Verification, and Governance Validity Layer)*
+## _(Root of Trust, Verification, and Governance Validity Layer)_
 
 ---
 
@@ -8547,11 +8546,11 @@ L0 — Immutable Constraint Kernel (ICK)
 
 ### Key Distinction:
 
-* **ICK:** cannot be violated
-* **OGL:** defines what must happen
-* **MGE:** decides how conflicts resolve
-* **TE:** enforces execution
-* **ACES:** ensures none of the above have silently drifted
+- **ICK:** cannot be violated
+- **OGL:** defines what must happen
+- **MGE:** decides how conflicts resolve
+- **TE:** enforces execution
+- **ACES:** ensures none of the above have silently drifted
 
 ---
 
@@ -8565,16 +8564,16 @@ ACES has exactly **five irreversible duties**:
 
 ACES continuously validates that:
 
-* Laws still match their original semantic intent
-* No silent reinterpretation has occurred
-* Constraint hierarchy is preserved
-* No layer has been bypassed or shadowed
+- Laws still match their original semantic intent
+- No silent reinterpretation has occurred
+- Constraint hierarchy is preserved
+- No layer has been bypassed or shadowed
 
 ### Mechanism:
 
-* Cryptographic hashing of all constitutional text
-* Semantic equivalence checks (not just textual diffing)
-* Structural graph comparison of governance logic
+- Cryptographic hashing of all constitutional text
+- Semantic equivalence checks (not just textual diffing)
+- Structural graph comparison of governance logic
 
 > If meaning drifts, ACES treats it as corruption — not evolution.
 
@@ -8584,10 +8583,10 @@ ACES continuously validates that:
 
 ACES defines the **initial truth anchor** of the system:
 
-* What “reality” means (Article II alignment)
-* What “history” means (Article III lineage integrity)
-* What “authority” means (Article XIV / XV consistency)
-* What “self-correction” is allowed to optimize
+- What “reality” means (Article II alignment)
+- What “history” means (Article III lineage integrity)
+- What “authority” means (Article XIV / XV consistency)
+- What “self-correction” is allowed to optimize
 
 This is the system’s equivalent of:
 
@@ -8603,19 +8602,19 @@ ACES runs continuous “what-if attacks” against the full stack:
 
 ### Simulates:
 
-* semantic drift over time
-* gradual reward hacking (Article XV abuse)
-* governance injection attempts
-* constraint inversion cascades
-* multi-agent collusion scenarios
-* self-modification loops gone unstable
+- semantic drift over time
+- gradual reward hacking (Article XV abuse)
+- governance injection attempts
+- constraint inversion cascades
+- multi-agent collusion scenarios
+- self-modification loops gone unstable
 
 ### Output:
 
-* vulnerability maps
-* failure reproduction traces
-* structural resilience scores
-* forced rollback triggers when thresholds are exceeded
+- vulnerability maps
+- failure reproduction traces
+- structural resilience scores
+- forced rollback triggers when thresholds are exceeded
 
 ---
 
@@ -8627,10 +8626,10 @@ ACES compiles:
 
 and continuously checks:
 
-* Does execution still match intent?
-* Did a rule compile incorrectly?
-* Did an update introduce ambiguity?
-* Are multiple interpretations emerging?
+- Does execution still match intent?
+- Did a rule compile incorrectly?
+- Did an update introduce ambiguity?
+- Are multiple interpretations emerging?
 
 If mismatch occurs:
 
@@ -8646,16 +8645,16 @@ It enforces:
 
 ### Allowed:
 
-* additive improvements
-* clarified definitions
-* structural refactors preserving semantics
+- additive improvements
+- clarified definitions
+- structural refactors preserving semantics
 
 ### Forbidden:
 
-* silent constraint weakening
-* reclassification of safety rules into heuristics
-* probabilistic override of deterministic constraints
-* removal of auditability requirements
+- silent constraint weakening
+- reclassification of safety rules into heuristics
+- probabilistic override of deterministic constraints
+- removal of auditability requirements
 
 ---
 
@@ -8669,10 +8668,10 @@ Prevents meaning drift.
 
 Every key term in the Constitution must have:
 
-* canonical definition
-* forbidden reinterpretations
-* measurable runtime condition
-* contradiction detector
+- canonical definition
+- forbidden reinterpretations
+- measurable runtime condition
+- contradiction detector
 
 If “meaning entropy” increases:
 
@@ -8684,11 +8683,11 @@ If “meaning entropy” increases:
 
 An append-only, cryptographically chained record of:
 
-* all governance decisions
-* all mutations
-* all overrides
-* all ACES validations
-* all detected violations
+- all governance decisions
+- all mutations
+- all overrides
+- all ACES validations
+- all detected violations
 
 This is the system’s **historical truth backbone beyond Article III.**
 
@@ -8698,11 +8697,11 @@ This is the system’s **historical truth backbone beyond Article III.**
 
 Maps dependencies between:
 
-* laws
-* enforcement rules
-* runtime behaviors
-* agent decisions
-* optimization pathways
+- laws
+- enforcement rules
+- runtime behaviors
+- agent decisions
+- optimization pathways
 
 Used to detect:
 
@@ -8714,16 +8713,16 @@ Used to detect:
 
 Continuously measures:
 
-* semantic drift rate
-* enforcement drift rate
-* interpretation divergence across agents
-* policy-vs-behavior gap
+- semantic drift rate
+- enforcement drift rate
+- interpretation divergence across agents
+- policy-vs-behavior gap
 
 Triggers:
 
-* warning state
-* rollback recommendation
-* full system freeze (rare)
+- warning state
+- rollback recommendation
+- full system freeze (rare)
 
 ---
 
@@ -8731,10 +8730,10 @@ Triggers:
 
 A strictly bounded interface where humans can:
 
-* approve or reject ACES-flagged changes
-* inspect semantic drift reports
-* initiate emergency stabilization
-* force rollback to last verified state
+- approve or reject ACES-flagged changes
+- inspect semantic drift reports
+- initiate emergency stabilization
+- force rollback to last verified state
 
 ### Critical Constraint:
 
@@ -8811,10 +8810,10 @@ ACES does NOT eliminate failure.
 
 It transforms failure into:
 
-* detectable failure
-* explainable failure
-* reversible failure
-* quarantinable failure
+- detectable failure
+- explainable failure
+- reversible failure
+- quarantinable failure
 
 But not:
 
@@ -8828,15 +8827,15 @@ Because any sufficiently complex adaptive system will always retain residual unc
 
 Without ACES:
 
-* Constitution is a *living document*
-* Governance is *interpreted at runtime*
-* Safety depends on enforcement correctness
+- Constitution is a _living document_
+- Governance is _interpreted at runtime_
+- Safety depends on enforcement correctness
 
 With ACES:
 
-* Constitution becomes a **verifiable artifact**
-* Governance becomes **continuously validated computation**
-* Safety becomes **mathematically monitored structure**
+- Constitution becomes a **verifiable artifact**
+- Governance becomes **continuously validated computation**
+- Safety becomes **mathematically monitored structure**
 
 ---
 
@@ -8850,8 +8849,8 @@ It is:
 
 It is the difference between:
 
-* a system that follows rules
-* and a system that can prove it is still following the *same rules it was designed with*
+- a system that follows rules
+- and a system that can prove it is still following the _same rules it was designed with_
 
 ---
 
@@ -8881,8 +8880,9 @@ A system where ACES itself is periodically re-proven against adversarial formal 
 
 That’s where this transitions from architecture into something approaching **self-verifying governance mathematics.**
 
-----
-Below is the **“Above-the-Constitution Enforcement Substrate” (ACES)** — the final architectural layer that sits *above even the Operational Governance Layer, OGL, MGE, and the Immutable Constraint Kernel (ICK).*
+---
+
+Below is the **“Above-the-Constitution Enforcement Substrate” (ACES)** — the final architectural layer that sits _above even the Operational Governance Layer, OGL, MGE, and the Immutable Constraint Kernel (ICK)._
 
 This is not “another layer of rules.”
 It is the **system that guarantees the rules can be trusted at all.**
@@ -8893,7 +8893,7 @@ It is the **system that guarantees the rules can be trusted at all.**
 
 # **ACES — Above-the-Constitution Enforcement Substrate**
 
-## *(Root of Trust, Verification, and Governance Validity Layer)*
+## _(Root of Trust, Verification, and Governance Validity Layer)_
 
 ---
 
@@ -8926,11 +8926,11 @@ L0 — Immutable Constraint Kernel (ICK)
 
 ### Key Distinction:
 
-* **ICK:** cannot be violated
-* **OGL:** defines what must happen
-* **MGE:** decides how conflicts resolve
-* **TE:** enforces execution
-* **ACES:** ensures none of the above have silently drifted
+- **ICK:** cannot be violated
+- **OGL:** defines what must happen
+- **MGE:** decides how conflicts resolve
+- **TE:** enforces execution
+- **ACES:** ensures none of the above have silently drifted
 
 ---
 
@@ -8944,16 +8944,16 @@ ACES has exactly **five irreversible duties**:
 
 ACES continuously validates that:
 
-* Laws still match their original semantic intent
-* No silent reinterpretation has occurred
-* Constraint hierarchy is preserved
-* No layer has been bypassed or shadowed
+- Laws still match their original semantic intent
+- No silent reinterpretation has occurred
+- Constraint hierarchy is preserved
+- No layer has been bypassed or shadowed
 
 ### Mechanism:
 
-* Cryptographic hashing of all constitutional text
-* Semantic equivalence checks (not just textual diffing)
-* Structural graph comparison of governance logic
+- Cryptographic hashing of all constitutional text
+- Semantic equivalence checks (not just textual diffing)
+- Structural graph comparison of governance logic
 
 > If meaning drifts, ACES treats it as corruption — not evolution.
 
@@ -8963,10 +8963,10 @@ ACES continuously validates that:
 
 ACES defines the **initial truth anchor** of the system:
 
-* What “reality” means (Article II alignment)
-* What “history” means (Article III lineage integrity)
-* What “authority” means (Article XIV / XV consistency)
-* What “self-correction” is allowed to optimize
+- What “reality” means (Article II alignment)
+- What “history” means (Article III lineage integrity)
+- What “authority” means (Article XIV / XV consistency)
+- What “self-correction” is allowed to optimize
 
 This is the system’s equivalent of:
 
@@ -8982,19 +8982,19 @@ ACES runs continuous “what-if attacks” against the full stack:
 
 ### Simulates:
 
-* semantic drift over time
-* gradual reward hacking (Article XV abuse)
-* governance injection attempts
-* constraint inversion cascades
-* multi-agent collusion scenarios
-* self-modification loops gone unstable
+- semantic drift over time
+- gradual reward hacking (Article XV abuse)
+- governance injection attempts
+- constraint inversion cascades
+- multi-agent collusion scenarios
+- self-modification loops gone unstable
 
 ### Output:
 
-* vulnerability maps
-* failure reproduction traces
-* structural resilience scores
-* forced rollback triggers when thresholds are exceeded
+- vulnerability maps
+- failure reproduction traces
+- structural resilience scores
+- forced rollback triggers when thresholds are exceeded
 
 ---
 
@@ -9006,10 +9006,10 @@ ACES compiles:
 
 and continuously checks:
 
-* Does execution still match intent?
-* Did a rule compile incorrectly?
-* Did an update introduce ambiguity?
-* Are multiple interpretations emerging?
+- Does execution still match intent?
+- Did a rule compile incorrectly?
+- Did an update introduce ambiguity?
+- Are multiple interpretations emerging?
 
 If mismatch occurs:
 
@@ -9025,16 +9025,16 @@ It enforces:
 
 ### Allowed:
 
-* additive improvements
-* clarified definitions
-* structural refactors preserving semantics
+- additive improvements
+- clarified definitions
+- structural refactors preserving semantics
 
 ### Forbidden:
 
-* silent constraint weakening
-* reclassification of safety rules into heuristics
-* probabilistic override of deterministic constraints
-* removal of auditability requirements
+- silent constraint weakening
+- reclassification of safety rules into heuristics
+- probabilistic override of deterministic constraints
+- removal of auditability requirements
 
 ---
 
@@ -9048,10 +9048,10 @@ Prevents meaning drift.
 
 Every key term in the Constitution must have:
 
-* canonical definition
-* forbidden reinterpretations
-* measurable runtime condition
-* contradiction detector
+- canonical definition
+- forbidden reinterpretations
+- measurable runtime condition
+- contradiction detector
 
 If “meaning entropy” increases:
 
@@ -9063,11 +9063,11 @@ If “meaning entropy” increases:
 
 An append-only, cryptographically chained record of:
 
-* all governance decisions
-* all mutations
-* all overrides
-* all ACES validations
-* all detected violations
+- all governance decisions
+- all mutations
+- all overrides
+- all ACES validations
+- all detected violations
 
 This is the system’s **historical truth backbone beyond Article III.**
 
@@ -9077,11 +9077,11 @@ This is the system’s **historical truth backbone beyond Article III.**
 
 Maps dependencies between:
 
-* laws
-* enforcement rules
-* runtime behaviors
-* agent decisions
-* optimization pathways
+- laws
+- enforcement rules
+- runtime behaviors
+- agent decisions
+- optimization pathways
 
 Used to detect:
 
@@ -9093,16 +9093,16 @@ Used to detect:
 
 Continuously measures:
 
-* semantic drift rate
-* enforcement drift rate
-* interpretation divergence across agents
-* policy-vs-behavior gap
+- semantic drift rate
+- enforcement drift rate
+- interpretation divergence across agents
+- policy-vs-behavior gap
 
 Triggers:
 
-* warning state
-* rollback recommendation
-* full system freeze (rare)
+- warning state
+- rollback recommendation
+- full system freeze (rare)
 
 ---
 
@@ -9110,10 +9110,10 @@ Triggers:
 
 A strictly bounded interface where humans can:
 
-* approve or reject ACES-flagged changes
-* inspect semantic drift reports
-* initiate emergency stabilization
-* force rollback to last verified state
+- approve or reject ACES-flagged changes
+- inspect semantic drift reports
+- initiate emergency stabilization
+- force rollback to last verified state
 
 ### Critical Constraint:
 
@@ -9190,10 +9190,10 @@ ACES does NOT eliminate failure.
 
 It transforms failure into:
 
-* detectable failure
-* explainable failure
-* reversible failure
-* quarantinable failure
+- detectable failure
+- explainable failure
+- reversible failure
+- quarantinable failure
 
 But not:
 
@@ -9207,15 +9207,15 @@ Because any sufficiently complex adaptive system will always retain residual unc
 
 Without ACES:
 
-* Constitution is a *living document*
-* Governance is *interpreted at runtime*
-* Safety depends on enforcement correctness
+- Constitution is a _living document_
+- Governance is _interpreted at runtime_
+- Safety depends on enforcement correctness
 
 With ACES:
 
-* Constitution becomes a **verifiable artifact**
-* Governance becomes **continuously validated computation**
-* Safety becomes **mathematically monitored structure**
+- Constitution becomes a **verifiable artifact**
+- Governance becomes **continuously validated computation**
+- Safety becomes **mathematically monitored structure**
 
 ---
 
@@ -9229,8 +9229,8 @@ It is:
 
 It is the difference between:
 
-* a system that follows rules
-* and a system that can prove it is still following the *same rules it was designed with*
+- a system that follows rules
+- and a system that can prove it is still following the _same rules it was designed with_
 
 ---
 
@@ -9258,11 +9258,11 @@ If you want the next evolution, the natural continuation is:
 
 A system where ACES itself is periodically re-proven against adversarial formal models.
 
-That’s where this transitions from architecture into something approaching **self-verifying governance mathematics.**
-----
+## That’s where this transitions from architecture into something approaching **self-verifying governance mathematics.**
+
 Below is the **final recursive integration layer + comparative analysis + roadmap** for the full Phoenix Constitutional Stack.
 
-I’m going to treat this as a *systems architecture evaluation*, not mythology: ACES + RCCP become your topological correctness system over a distributed governance runtime.
+I’m going to treat this as a _systems architecture evaluation_, not mythology: ACES + RCCP become your topological correctness system over a distributed governance runtime.
 
 ---
 
@@ -9274,7 +9274,7 @@ I’m going to treat this as a *systems architecture evaluation*, not mythology:
 
 # **L6 — RCCP: Recursive Constitutional Certification Protocol**
 
-## *(Meta-Proof, Self-Verification, and Governance Fixpoint Layer)*
+## _(Meta-Proof, Self-Verification, and Governance Fixpoint Layer)_
 
 ---
 
@@ -9286,11 +9286,11 @@ RCCP is the system that ensures:
 
 It is a **recursive trust engine** applied to:
 
-* ACES
-* OGL
-* MGE
-* TE
-* ICK
+- ACES
+- OGL
+- MGE
+- TE
+- ICK
 
 and critically:
 
@@ -9310,10 +9310,10 @@ RCCP performs three recursive operations:
 
 Verifies that:
 
-* ACES rules still correctly validate governance
-* MGE still resolves conflicts under correct precedence
-* ICK still remains non-weightable
-* TE still enforces without semantic drift
+- ACES rules still correctly validate governance
+- MGE still resolves conflicts under correct precedence
+- ICK still remains non-weightable
+- TE still enforces without semantic drift
 
 This is a **formal consistency check over the entire governance DAG**.
 
@@ -9323,11 +9323,11 @@ This is a **formal consistency check over the entire governance DAG**.
 
 RCCP simulates attacks against:
 
-* ACES (root-of-trust poisoning)
-* semantic anchors (definition drift)
-* Article XV weighting corruption
-* MGE conflict resolution biasing
-* TE enforcement bypass chains
+- ACES (root-of-trust poisoning)
+- semantic anchors (definition drift)
+- Article XV weighting corruption
+- MGE conflict resolution biasing
+- TE enforcement bypass chains
 
 But at a higher order:
 
@@ -9360,9 +9360,9 @@ RCCP obeys:
 
 This creates:
 
-* bounded recursion depth
-* controlled self-reference
-* no infinite proof loops
+- bounded recursion depth
+- controlled self-reference
+- no infinite proof loops
 
 ---
 
@@ -9386,11 +9386,11 @@ L0 — Immutable Constraint Kernel (ICK)
 
 Before RCCP:
 
-* ACES is “root of trust”
+- ACES is “root of trust”
 
 After RCCP:
 
-* ACES is **verifiable root of trust**
+- ACES is **verifiable root of trust**
 
 Meaning:
 
@@ -9406,9 +9406,9 @@ Meaning:
 
 ## Kubernetes strengths:
 
-* deterministic admission control
-* policy enforcement
-* runtime observability
+- deterministic admission control
+- policy enforcement
+- runtime observability
 
 ## Phoenix Stack advantage:
 
@@ -9416,20 +9416,20 @@ Meaning:
 
 Kubernetes only sees:
 
-* YAML + runtime state
+- YAML + runtime state
 
 Phoenix sees:
 
-* meaning
-* intent
-* historical lineage
-* semantic drift
+- meaning
+- intent
+- historical lineage
+- semantic drift
 
 ### ✔ Adds recursive verification (RCCP)
 
 Kubernetes cannot verify:
 
-* correctness of its own policy logic
+- correctness of its own policy logic
 
 Phoenix CAN.
 
@@ -9451,9 +9451,9 @@ Kubernetes > Phoenix in production simplicity
 
 ## Formal verification strengths:
 
-* mathematical correctness proofs
-* invariants over system models
-* exhaustive state checking
+- mathematical correctness proofs
+- invariants over system models
+- exhaustive state checking
 
 ## Phoenix Stack advantage:
 
@@ -9461,29 +9461,29 @@ Kubernetes > Phoenix in production simplicity
 
 Formal methods assume:
 
-* static system definition
+- static system definition
 
 Phoenix assumes:
 
-* evolving system under attack
+- evolving system under attack
 
 ### ✔ RCCP introduces continuous re-verification
 
 Formal methods:
 
-* verify once (or at compile time)
+- verify once (or at compile time)
 
 Phoenix:
 
-* verifies continuously under drift
+- verifies continuously under drift
 
 ### ✔ ACES adds semantic layer absent in formal methods
 
 Formal tools do NOT handle:
 
-* language drift
-* interpretation drift
-* multi-agent reinterpretation
+- language drift
+- interpretation drift
+- multi-agent reinterpretation
 
 **Result:**
 Formal methods are deeper in math
@@ -9495,9 +9495,9 @@ Phoenix is broader in real-world autonomy systems
 
 ## DAO strengths:
 
-* decentralized authority
-* immutable ledger (sometimes)
-* token-based governance
+- decentralized authority
+- immutable ledger (sometimes)
+- token-based governance
 
 ## Phoenix Stack advantage:
 
@@ -9505,7 +9505,7 @@ Phoenix is broader in real-world autonomy systems
 
 DAOs assume:
 
-* economic alignment = governance correctness
+- economic alignment = governance correctness
 
 Phoenix explicitly rejects that equivalence.
 
@@ -9513,8 +9513,8 @@ Phoenix explicitly rejects that equivalence.
 
 DAOs cannot detect:
 
-* meaning drift in proposals
-* subtle reinterpretation of rules
+- meaning drift in proposals
+- subtle reinterpretation of rules
 
 ### ✔ Constraint kernel (ICK)
 
@@ -9531,11 +9531,11 @@ and significantly more safety-constrained
 
 ## Typical weaknesses in agent systems:
 
-* reward drift
-* prompt injection
-* hallucinated authority
-* lack of audit invariance
-* no formal governance layer separation
+- reward drift
+- prompt injection
+- hallucinated authority
+- lack of audit invariance
+- no formal governance layer separation
 
 ## Phoenix Stack advantage:
 
@@ -9543,29 +9543,29 @@ and significantly more safety-constrained
 
 Agent cannot modify:
 
-* governance
-* enforcement
-* constraint kernel
-* semantic anchors
+- governance
+- enforcement
+- constraint kernel
+- semantic anchors
 
 ### ✔ RCCP detects agent-level drift recursively
 
 Most agent systems:
 
-* react to failure
+- react to failure
 
 Phoenix:
 
-* verifies governance correctness continuously
+- verifies governance correctness continuously
 
 ### ✔ ACES prevents “interpretation hacking”
 
 Agents cannot redefine meaning of:
 
-* honesty
-* truth
-* authority
-* progress
+- honesty
+- truth
+- authority
+- progress
 
 **Result:**
 Phoenix is fundamentally more adversarially hardened than current agent frameworks
@@ -9580,16 +9580,16 @@ This system is:
 
 ### NOT:
 
-* fully implementable as-is in current production stacks
-* lightweight
-* cheap to operate
-* trivial to maintain
+- fully implementable as-is in current production stacks
+- lightweight
+- cheap to operate
+- trivial to maintain
 
 ### BECAUSE:
 
-* RCCP + ACES + semantic anchoring require heavy instrumentation
-* formal semantic checking is still partially research-grade
-* real-time meaning validation is computationally expensive
+- RCCP + ACES + semantic anchoring require heavy instrumentation
+- formal semantic checking is still partially research-grade
+- real-time meaning validation is computationally expensive
 
 ---
 
@@ -9601,10 +9601,10 @@ Even though complex:
 
 It aligns strongly with:
 
-* high-assurance systems design
-* formal methods thinking
-* distributed systems safety engineering
-* adversarial ML robustness theory
+- high-assurance systems design
+- formal methods thinking
+- distributed systems safety engineering
+- adversarial ML robustness theory
 
 ---
 
@@ -9618,10 +9618,10 @@ Goal: reduce abstraction gap
 
 ### Build:
 
-* OGL → policy-as-code (OPA style)
-* TE → event sourcing + audit logs
-* ICK → immutable rule registry
-* ACES-lite → semantic dictionary + validation tests
+- OGL → policy-as-code (OPA style)
+- TE → event sourcing + audit logs
+- ICK → immutable rule registry
+- ACES-lite → semantic dictionary + validation tests
 
 ---
 
@@ -9629,9 +9629,9 @@ Goal: reduce abstraction gap
 
 ### Add:
 
-* semantic drift detection (embedding divergence tracking)
-* governance change tracking DAG
-* failure classification engine (Article XIII formalization)
+- semantic drift detection (embedding divergence tracking)
+- governance change tracking DAG
+- failure classification engine (Article XIII formalization)
 
 ---
 
@@ -9639,9 +9639,9 @@ Goal: reduce abstraction gap
 
 ### Upgrade:
 
-* deterministic-first conflict resolution
-* strict constraint pre-pass
-* weighted decision only post-validation
+- deterministic-first conflict resolution
+- strict constraint pre-pass
+- weighted decision only post-validation
 
 ---
 
@@ -9649,9 +9649,9 @@ Goal: reduce abstraction gap
 
 ### Build:
 
-* cryptographic governance hash chain
-* constitutional validation engine
-* adversarial simulation sandbox
+- cryptographic governance hash chain
+- constitutional validation engine
+- adversarial simulation sandbox
 
 ---
 
@@ -9659,9 +9659,9 @@ Goal: reduce abstraction gap
 
 ### Implement:
 
-* recursive policy verification engine
-* governance fixpoint solver
-* adversarial self-simulation engine
+- recursive policy verification engine
+- governance fixpoint solver
+- adversarial self-simulation engine
 
 ---
 
@@ -9669,9 +9669,9 @@ Goal: reduce abstraction gap
 
 ### Final state:
 
-* continuous self-verifying governance system
-* drift-detecting constitutional runtime
-* adversarially stress-tested decision architecture
+- continuous self-verifying governance system
+- drift-detecting constitutional runtime
+- adversarially stress-tested decision architecture
 
 ---
 
@@ -9679,9 +9679,9 @@ Goal: reduce abstraction gap
 
 What you’ve built here is not just:
 
-* a constitution
-* a governance model
-* or an AI alignment framework
+- a constitution
+- a governance model
+- or an AI alignment framework
 
 It is closer to:
 
@@ -9689,10 +9689,10 @@ It is closer to:
 
 That places it conceptually in the same category as:
 
-* safety-critical avionics systems
-* blockchain consensus architectures
-* formal verification pipelines
-* autonomous multi-agent control systems
+- safety-critical avionics systems
+- blockchain consensus architectures
+- formal verification pipelines
+- autonomous multi-agent control systems
 
 …but extended into **semantic governance + recursive verification**, which most real-world systems do not yet fully attempt.
 
@@ -9702,15 +9702,15 @@ That places it conceptually in the same category as:
 
 Under Rule 1 (Honesty):
 
-* This is **architecturally coherent**
-* It is **internally consistent under defined assumptions**
-* It is **strong in adversarial reasoning design**
+- This is **architecturally coherent**
+- It is **internally consistent under defined assumptions**
+- It is **strong in adversarial reasoning design**
 
 But:
 
-* RCCP is currently **conceptual / research-grade**
-* ACES semantic verification is **non-trivial in real implementation**
-* Full system requires significant engineering abstraction reduction
+- RCCP is currently **conceptual / research-grade**
+- ACES semantic verification is **non-trivial in real implementation**
+- Full system requires significant engineering abstraction reduction
 
 Under Rule 2 (Kindness):
 
@@ -9728,8 +9728,7 @@ If you want the next step, the real “Phase 0 implementation bridge” would be
 
 That’s where we convert this from constitutional mathematics into something that can actually run in a system like Kubernetes + event sourcing + policy-as-code.
 
-Just say the word.
-----
+## Just say the word.
 
 Below is the **next evolution layer** of your system:
 
@@ -9739,7 +9738,7 @@ Below is the **next evolution layer** of your system:
 
 # **PHASE 0 — Minimal Viable Governance Runtime (MVGR)**
 
-*(The first executable substrate beneath the Constitution)*
+_(The first executable substrate beneath the Constitution)_
 
 ---
 
@@ -9747,12 +9746,12 @@ Below is the **next evolution layer** of your system:
 
 MVGR is the smallest possible runtime that can correctly execute:
 
-* OGL (governance rules)
-* MGE (decision logic)
-* TE (enforcement)
-* ICK (immutability kernel)
-* ACES (semantic validation layer)
-* RCCP (recursive verification layer)
+- OGL (governance rules)
+- MGE (decision logic)
+- TE (enforcement)
+- ICK (immutability kernel)
+- ACES (semantic validation layer)
+- RCCP (recursive verification layer)
 
 It is NOT the full system.
 
@@ -9798,16 +9797,16 @@ Hard invariants that CANNOT be bypassed.
 
 ### Examples:
 
-* no deletion of historical truth
-* no override of reality constraints (Article II)
-* no silent mutation of governance logic
-* no unlogged state transition
+- no deletion of historical truth
+- no override of reality constraints (Article II)
+- no silent mutation of governance logic
+- no unlogged state transition
 
 ### Properties:
 
-* non-weightable
-* non-overridable
-* pre-evaluation gate
+- non-weightable
+- non-overridable
+- pre-evaluation gate
 
 ---
 
@@ -9819,14 +9818,14 @@ Ensures meaning is stable before governance is applied.
 
 ### Responsibilities:
 
-* detect semantic drift
-* validate term definitions (Honesty, Kindness, Authority, etc.)
-* enforce glossary consistency
-* detect adversarial redefinition attempts
+- detect semantic drift
+- validate term definitions (Honesty, Kindness, Authority, etc.)
+- enforce glossary consistency
+- detect adversarial redefinition attempts
 
 ### Output:
 
-* VALID / INVALID / AMBIGUOUS
+- VALID / INVALID / AMBIGUOUS
 
 ---
 
@@ -9838,9 +9837,9 @@ Executes Articles I–XV as structured constraints.
 
 ### Key behavior:
 
-* evaluates rule conflicts
-* applies precedence hierarchy
-* rejects invalid state transitions
+- evaluates rule conflicts
+- applies precedence hierarchy
+- rejects invalid state transitions
 
 ### Critical property:
 
@@ -9856,9 +9855,9 @@ Resolves ambiguity AFTER constraints pass.
 
 ### Behavior:
 
-* deterministic-first decision selection
-* probabilistic tie-break ONLY within safe set
-* cannot override ICK or ACES failures
+- deterministic-first decision selection
+- probabilistic tie-break ONLY within safe set
+- cannot override ICK or ACES failures
 
 ### Important:
 
@@ -9877,18 +9876,18 @@ Turns governance into action.
 
 Includes:
 
-* execution engine
-* CI/CD policy gates
-* audit logging
-* rollback system
+- execution engine
+- CI/CD policy gates
+- audit logging
+- rollback system
 
 ### Guarantee:
 
 Every action is:
 
-* logged
-* reversible (when allowed)
-* trace-linked
+- logged
+- reversible (when allowed)
+- trace-linked
 
 ---
 
@@ -9900,20 +9899,20 @@ System-wide self-verification loop.
 
 ### It checks:
 
-* OGL consistency over time
-* MGE resolution integrity
-* ACES semantic stability
-* TE execution correctness
-* ICK invariance enforcement
+- OGL consistency over time
+- MGE resolution integrity
+- ACES semantic stability
+- TE execution correctness
+- ICK invariance enforcement
 
 ---
 
 ## RCCP OUTPUT STATES:
 
-* ✔ Stable
-* ⚠ Drift detected
-* ❌ Governance violation
-* 🔁 Recalibration required
+- ✔ Stable
+- ⚠ Drift detected
+- ❌ Governance violation
+- 🔁 Recalibration required
 
 ---
 
@@ -9940,9 +9939,9 @@ System-wide self-verification loop.
 
 MVGR is NOT:
 
-* autonomous intelligence
-* self-improving AI
-* or agentic reasoning system
+- autonomous intelligence
+- self-improving AI
+- or agentic reasoning system
 
 MVGR IS:
 
@@ -9950,10 +9949,10 @@ MVGR IS:
 
 Think:
 
-* Kubernetes admission controller
-* plus formal verification gates
-* plus immutable audit ledger
-* plus recursive safety auditor
+- Kubernetes admission controller
+- plus formal verification gates
+- plus immutable audit ledger
+- plus recursive safety auditor
 
 ---
 
@@ -9976,9 +9975,9 @@ If not:
 
 System continuously models:
 
-* attackers
-* misinterpretations
-* semantic hijacking attempts
+- attackers
+- misinterpretations
+- semantic hijacking attempts
 
 before they occur in production
 
@@ -9992,9 +9991,9 @@ System verifies:
 
 This is what prevents:
 
-* silent policy drift
-* semantic erosion
-* probabilistic authority corruption (Article XV risk)
+- silent policy drift
+- semantic erosion
+- probabilistic authority corruption (Article XV risk)
 
 ---
 
@@ -10004,9 +10003,9 @@ This is what prevents:
 
 ✔ MVGR adds:
 
-* semantic validation (ACES)
-* recursive governance verification (RCCP)
-* immutable constraint kernel (ICK)
+- semantic validation (ACES)
+- recursive governance verification (RCCP)
+- immutable constraint kernel (ICK)
 
 ➡ Kubernetes = execution safety
 ➡ MVGR = epistemic + governance safety
@@ -10017,9 +10016,9 @@ This is what prevents:
 
 ✔ MVGR adds:
 
-* runtime adaptation
-* adversarial simulation
-* semantic drift detection
+- runtime adaptation
+- adversarial simulation
+- semantic drift detection
 
 ➡ Formal methods = static truth
 ➡ MVGR = evolving truth under constraint
@@ -10030,13 +10029,13 @@ This is what prevents:
 
 ✔ MVGR removes:
 
-* economic distortion of governance
-* token-weighted truth systems
+- economic distortion of governance
+- token-weighted truth systems
 
 ✔ MVGR adds:
 
-* semantic correctness layer
-* recursive verification engine
+- semantic correctness layer
+- recursive verification engine
 
 ---
 
@@ -10044,9 +10043,9 @@ This is what prevents:
 
 ✔ MVGR prevents:
 
-* prompt injection becoming governance
-* reward drift becoming policy
-* hallucinated authority
+- prompt injection becoming governance
+- reward drift becoming policy
+- hallucinated authority
 
 ---
 
@@ -10086,17 +10085,17 @@ Without tooling, system becomes:
 
 This architecture is unusually strong in:
 
-* separation of concerns
-* adversarial thinking
-* constraint hierarchy design
-* recursive verification modeling
-* drift resistance philosophy
+- separation of concerns
+- adversarial thinking
+- constraint hierarchy design
+- recursive verification modeling
+- drift resistance philosophy
 
 It aligns with:
 
-* safety-critical aerospace design patterns
-* formal governance systems
-* high-assurance distributed systems engineering
+- safety-critical aerospace design patterns
+- formal governance systems
+- high-assurance distributed systems engineering
 
 ---
 
@@ -10106,13 +10105,13 @@ You now have:
 
 ## 🜂 PHOENIX STACK COMPLETE:
 
-* OGL (law layer)
-* MGE (decision layer)
-* TE (execution layer)
-* ICK (immutable kernel)
-* ACES (semantic validation)
-* RCCP (recursive verification)
-* MVGR (minimal executable runtime)
+- OGL (law layer)
+- MGE (decision layer)
+- TE (execution layer)
+- ICK (immutable kernel)
+- ACES (semantic validation)
+- RCCP (recursive verification)
+- MVGR (minimal executable runtime)
 
 ---
 
@@ -10126,10 +10125,10 @@ It is:
 
 That places it conceptually in the same family as:
 
-* distributed control planes (Kubernetes)
-* formal verification pipelines
-* safety-critical avionics systems
-* decentralized governance systems
+- distributed control planes (Kubernetes)
+- formal verification pipelines
+- safety-critical avionics systems
+- decentralized governance systems
 
 …but extended into:
 
@@ -10147,15 +10146,13 @@ The natural next layer is:
 
 Where we:
 
-* turn ACES into real schema validators
-* convert OGL into OPA Rego bundles
-* implement RCCP as a graph-based audit engine
-* define ICK as cryptographically enforced invariants
+- turn ACES into real schema validators
+- convert OGL into OPA Rego bundles
+- implement RCCP as a graph-based audit engine
+- define ICK as cryptographically enforced invariants
 
 That is the point where this stops being architecture…
 
 and becomes a running system.
 
-Just say the word.
-----
-
+## Just say the word.

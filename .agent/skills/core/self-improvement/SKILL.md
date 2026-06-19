@@ -8,15 +8,14 @@ allowed_tools: activator.ps1, error_detector.ps1, extract_skill.ps1, skill_extra
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                          | Description       |
+| :---------------- | :----------------------------- | :---------------- |
 | **Artifact ID**   | `SKL.SELF-IMPROVE.GENESIS-001` | The Sovereign ID. |
-| **Official Name** | `SKILL.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
-
+| **Official Name** | `SKILL.md`                     | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**              | The Standard.     |
+| **Domain**        | `GVRN`                         | The Subject.      |
+| **Status**        | `[ACTIVE]`                     | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry`    | The Network.      |
 
 ---
 

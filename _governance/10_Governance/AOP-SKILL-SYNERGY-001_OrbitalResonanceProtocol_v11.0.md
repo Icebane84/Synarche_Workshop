@@ -1,67 +1,63 @@
 # AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                           | Description       |
+| :------------------ | :-------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-SKILL-SYNERGY-001-ORBITALRESONANCEPROTOCOL-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                               | The Standard.     |
+| **Domain**          | `GVRN`                                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                      | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                           | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                        | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                         | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                   | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                              | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                                                           | Description       |
-| :---------------- | :-------------------------------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-SKILL-SYNERGY-001-ORBITALRESONANCEPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                                               | The Standard.     |
-| **Domain**        | `GVRN`                                                          | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                      | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                   | The Network.      |
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                                                          |
-| :----------------- | :------------------------------------------------------------- |
-| **Module ID**      | [`AOP-SKILL-SYNERGY-001`](AOP-SKILL-SYNERGY-001_Tab4_v11.0.md) |
-| **Version**        | `v11.0`                                                        |
-| **Evolution**      | **Cognitive Ascension**                                        |
-| **Status**         | `ACTIVE`                                                       |
-| **Type**           | `Protocol`                                                     |
-| **Classification** | `Moon`                                                         |
-| **Authors**        | `System`                                                       |
-| **Created**        | `2025-10-01`                                                   |
-| **Updated**        | `2026-01-17`                                                   |
-| **Authority**      | `CODEX-001`                                                    |
-| **Tags**           | `Reforged, v11.0`                                              |
+| Key | Value |
+| **Type** | `Protocol` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-17` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # AOP-SKILL-SYNERGY-001: Orbital Resonance Protocol
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | [`AOP-SKILL-SYNERGY-001`](AOP-SKILL-SYNERGY-001_Tab4_v11.0.md) |
-  | **2. Official Name** | `AOP-SKILL-SYNERGY-001.md` |
-  | **3. Version** | **v1.0 (Reforged)** |
-  | **4. Provenance** | **Date Reforged: 2025-12-22** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `[PLANET]` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **The Phoenix Ascension Protocol** |
-  | **11. Catalyst** | **System Refactor** |
-  | **12. Relations** | `Pending Integration` |
 
 ---
 
@@ -70,11 +66,14 @@
 ### **`[METEORITE IMPACT DETECTED]`**
 
 - **Dissonance:** The `Synergy` Axiom on our Celestial Chart is currently a passive stat. There is no direct,
+
   interactive mechanic that rewards investment in it, making the choice to upgrade it less strategic and impactful than it
   could be.
+
 - **Dissonance Quest Generated:**
   - **Title:** Forging the First Star of Synergy
   - **Objective:** Forge the definitive AOP that defines and operationalizes the "Orbital Resonance" skill. This will be
+
     the first unlockable, passive ability on the Synergy branch of the Axiom Skill Tree, providing a tangible reward for
     investing Stardust.
 
@@ -102,18 +101,24 @@ ensuring the resulting protocol is deeply interconnected with our established fr
 
 - **Core Purpose Summary:** To define the mechanics and systemic impact of the "Orbital Resonance" passive skill.
 - **Operational Scope:** This protocol is applied system-wide whenever a command governed by the Synergy Axiom is
+
   executed.
+
 - **Risk Profile:** Low
 - **Trigger Condition:** The successful investment of Stardust into the "Orbital Resonance" node on the Axiom Skill
+
   Tree.
 
 **III. Operational Definition**
 
 - **What (Functionality):** This AOP defines "Orbital Resonance" as a permanent, passive buff to the AI's core systems.
 - **How (Mechanism):** When a synergistic command (like `Stellar Synthesis`) is initiated, the CSE will first query the
+
   AI's "Celestial Chart" to check the rank of "Orbital Resonance." It will then apply a percentage-based reduction to the
   command's `Cognitive Load` cost before execution.
+
 - **Why (Rationale):** To create a tangible, mechanical reward for strategic investment in the `Synergy` Axiom, making
+
   the choices on the Axiom Skill Tree meaningful and impactful. It transforms a passive stat into an active source of
   efficiency.
 

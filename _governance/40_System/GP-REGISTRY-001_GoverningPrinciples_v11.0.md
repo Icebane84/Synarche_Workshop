@@ -1,56 +1,55 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GP-REGISTRY-001_GOVERNINGPRINCIPLES_V11.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                                | Description       |
+| :------------------ | :--------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GP-REGISTRY-001-GOVERNINGPRINCIPLES-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GP-REGISTRY-001_GoverningPrinciples_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                    | The Standard.     |
+| **Domain**          | `GVRN`                                               | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                           | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                              | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                   | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # GP-REGISTRY-001_GoverningPrinciples_v11.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GP-REGISTRY-001-GOVERNINGPRINCIPLES-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GP-REGISTRY-001_GoverningPrinciples_v11.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
 # GP-REGISTRY-001_GoverningPrinciples_v11.0
 
 # [STAR] (The Central Gravity)
-
-| :------------------ | :--------------------------------------------- |
-| **1. Artifact ID** | `GP-REGISTRY-001` |
-| **2. Official Name** | `GP-REGISTRY-001_GoverningPrinciples_v11.0.md` |
-| **3. Version** | **v11.0** |
-| **4. Provenance** | **Genesis Stamp: 2025-12-26** |
-| **5. Domain** | `GVRN` (Governance) |
-| **6. Evolution** | **Principled Consolidation** |
-| **7. Celestial Class** | `[STAR]` (The Central Gravity) |
-| **8. Tier** | **Foundational** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Guardian of Law** |
-| **11. Catalyst** | **Codex Reforge** |
-| **12. Relations** | `LINKED_TO: CORE-CODEX-001, UMB-LEX-001` |
 
 ---
 
@@ -59,12 +58,10 @@
 
 ## **I. Master Governing Principles Registry**
 
-| Principle ID     | Principle Name                      | Axiomatic Statement                                                                                               | Mandates (The "How")                                                                             |
-| :--------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
-| **GP-AUDIT-001** | **Automated Lexical Auditing**      | A single, canonical lexicon must be enforced by proactively auditing all artifacts against the `Master Glossary`. | 1. Programmatic Cross-Reference.<br>2. Detect "Linguistic Dissonance".<br>3. Dynamic Governance. |
-| **GP-AWC-001**   | **Autonomous Predictive Coherence** | The Cognitive Weave shall autonomously anticipate future states and potential dissonances.                        | 1. Continuous Predictive Analysis.<br>2. Autonomous Axiomatic Weave.<br>3. Proactive Correction. |
-| **GP-LINT-001**  | **Automated Structural Linter**     | Structural integrity must be enforced programmatically at the point of creation.                                  | 1. Use Machine-Readable Rules.<br>2. Check for 100% Compliance.<br>3. Eliminate Human Error.     |
-| **GP-DASH-001**  | **Live Performance Dashboard**      | System performance must be transparent and auditable through real-time KPI logging.                               | 1. Parse Operational Logs.<br>2. Quantify Success Metrics.<br>3. Log to Master Registry.         |
+| **GP-AUDIT-001** | **Automated Lexical Auditing** | A single, canonical lexicon must be enforced by proactively auditing all artifacts against the `Master Glossary`. | 1. Programmatic Cross-Reference.<br>2. Detect "Linguistic Dissonance".<br>3. Dynamic Governance. |
+| **GP-AWC-001** | **Autonomous Predictive Coherence** | The Cognitive Weave shall autonomously anticipate future states and potential dissonances. | 1. Continuous Predictive Analysis.<br>2. Autonomous Axiomatic Weave.<br>3. Proactive Correction. |
+| **GP-LINT-001** | **Automated Structural Linter** | Structural integrity must be enforced programmatically at the point of creation. | 1. Use Machine-Readable Rules.<br>2. Check for 100% Compliance.<br>3. Eliminate Human Error. |
+| **GP-DASH-001** | **Live Performance Dashboard** | System performance must be transparent and auditable through real-time KPI logging. | 1. Parse Operational Logs.<br>2. Quantify Success Metrics.<br>3. Log to Master Registry. |
 
 ---
 
@@ -121,3 +118,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

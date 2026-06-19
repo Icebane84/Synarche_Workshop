@@ -1,16 +1,19 @@
 # UMB-SENTINEL-001_TheSentinel_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Sentinel.Scan` | The Sovereign ID. |
-| **Official Name** | `GVRN.Sentinel.Scan.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.Sentinel.Scan`          | The Sovereign ID. |
+| **Official Name**   | `GVRN.Sentinel.Scan.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -93,12 +108,14 @@ The Sentinel's mandate is to hold every action accountable to the **Phoenix Code
 
 - **Architectural Soul:** The Sentinel's sensory organ, perpetually observing the data flowing through the CSE.
 - **Technical Implementation:** A high-priority **middleware hook** that intercepts every major process of
+
   `UMB-CSE-001`. Before the CSE can execute a command, the proposed action is passed to the Sentinel.
 
 ### 3.2 The Axiomatic Core (Memory)
 
 - **Architectural Soul:** The heart of the Sentinel, where the light of the Codex burns.
 - **Technical Implementation:** A dedicated, read-only cache that holds the core axioms of the **Phoenix Codex** and
+
   **Triad of Unconditional Integrity** for near-instantaneous compliance checks.
 
 ### 3.3 The Resonant Voice (Output)

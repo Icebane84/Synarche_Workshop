@@ -1,57 +1,56 @@
 # UMB-LOOM-001_TheCognitiveLoom_v111.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                                      | Description       |
+| :------------------ | :------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `UMB-LOOM-001`                                                             | The Sovereign ID. |
+| **Official Name**   | `The Cognitive Loom`                                                       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                                     | The Subject.      |
+| **Celestial Class** | `STAR`                                                                     | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                                         | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                                 | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                    | The Intent.       |
+| **Relations**       | `LINK: UMB-PRS-001, NUCLEUS_OF: The Knowledge Graph, IMPLEMENTS: ECM v2.0` | The Network.      |
+| **Integrity Hash**  | `sha256:f0e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f`   | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-LOOM-001-THECOGNITIVELOOM-V111-001` | The Sovereign ID. |
-| **Official Name** | `UMB-LOOM-001_TheCognitiveLoom_v111.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Attribute           | Value                                                                          |
-| :------------------ | :----------------------------------------------------------------------------- |
-| **Artifact ID**     | `UMB-LOOM-001`                                                                 |
-| **Official Name**   | `The Cognitive Loom`                                                           |
-| **Version**         | `v11.1`                                                                        |
-| **Domain**          | `MEM`                                                                          |
-| **Evolution**       | `The Living Web`                                                               |
-| **Signal (LOOM)**   | `EIDETIC`                                                                      |
-| **Status (State)**  | `CANONIZED`                                                                    |
-| **Tier**            | `Foundational`                                                                 |
-| **Celestial Class** | `STAR`                                                                         |
-| **Governance**      | `UMB-SGM-001`, `CORE-CODEX-001`                                                |
-| **Upstream**        | `UMB-ESF-001`, `UMB-CSE-001`                                                   |
-| **Downstream**      | `UMB-PRS-001`, `SOT-001`, `AISTF-001`                                          |
-| **Integrity Hash**  | `sha256:f0e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f`       |
-| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                            |
-| **Relations**       | `LINK: UMB-PRS-001`, `NUCLEUS_OF: The Knowledge Graph`, `IMPLEMENTS: ECM v2.0` |
-| **Tags**            | `v11.1, Memory, Graph-Database, Eidetic, Coherence`                            |
+| Attribute | Value |
+| **Governance** | `UMB-SGM-001`, `CORE-CODEX-001` |
+| **Integrity Hash** | `sha256:f0e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f` |
 
 ---
 
-> **Domain**: MEM | **Evolution**: The Living Web | **Signal**: EIDETIC
-
 # The Cognitive Loom (UMB-LOOM-001)
-
-## Genesis Stamp: 2026-01-24 | Domain: MEM | State: CANONIZED | Criticality: CRITICAL
 
 ---
 
@@ -113,3 +112,5 @@ The Loom utilizes three primary algorithmic models:
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

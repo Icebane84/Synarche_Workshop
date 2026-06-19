@@ -16,7 +16,9 @@ import argparse
 import asyncio
 import json
 import logging
+import re
 import sys
+import os
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
@@ -25,6 +27,13 @@ from typing import Any
 # --- LOGGING SETUP ---
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger("sentinel")
+
+# --- ANSI COLORS ---
+GREEN = "\033[92m"
+RED = "\033[91m"
+CYAN = "\033[96m"
+YELLOW = "\033[93m"
+RESET = "\033[0m"
 
 TOOLS_DIR = Path(__file__).parent
 
@@ -39,8 +48,9 @@ class SentinelReport:
 
 
 class SentinelOrchestrator:
-    def __init__(self, target: Path) -> None:
+    def __init__(self, target: Path, quiet: bool = False) -> None:
         self.target = target
+        self.quiet = quiet
         self.tools = [
             "compliance_audit.py",
             "ide_sentinel.py",
@@ -53,6 +63,7 @@ class SentinelOrchestrator:
             "sot_scanner.py",
             "resonance_scanner.py",
             "entropy_auditor.py",
+            "sentinel_sword.py",
         ]
 
     async def run_tool(self, tool_name: str) -> dict[str, Any]:
@@ -66,19 +77,47 @@ class SentinelOrchestrator:
             proc = await asyncio.create_subprocess_exec(
                 *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
             )
-            stdout, stderr = await proc.communicate()
 
-            output = stdout.decode(errors="replace").strip()
-            error = stderr.decode(errors="replace").strip()
+            stdout_lines = []
+            stderr_lines = []
+
+            async def stream_reader(stream: asyncio.StreamReader, prefix: str, dest_list: list[str], is_error: bool = False) -> None:
+                async for line in stream:
+                    text = line.decode(errors="replace").rstrip()
+                    dest_list.append(text)
+                    # Stream dynamically to the console as output arrives
+                    if not self.quiet:
+                        color = RED if is_error else CYAN
+                        logger.info(f"{color}[{prefix}]{RESET} {text}")
+
+            # Read stdout and stderr concurrently as they stream
+            await asyncio.gather(
+                stream_reader(proc.stdout, tool_name, stdout_lines),
+                stream_reader(proc.stderr, tool_name, stderr_lines, is_error=True)
+            )
+            await proc.wait()
+
+            output = "\n".join(stdout_lines).strip()
+            error = "\n".join(stderr_lines).strip()
 
             # Heuristic: If it looks like JSON, parse it.
             try:
                 data = json.loads(output)
+
+                # Hoist internal JSON status to influence the orchestrator's decision
+                internal_status = data.get("status")
+                if internal_status in ("PASS", "COMPLETE", "V-SAFE", "OK"):
+                    status_flag = "COMPLETE"
+                elif internal_status in ("FAIL", "ERROR", "CRITICAL_ERROR", "RISK_STATE"):
+                    status_flag = "FAILED"
+                else:
+                    status_flag = "COMPLETE" if proc.returncode == 0 else "FAILED"
             except json.JSONDecodeError:
                 data = {"stdout_summary": output[-500:], "error": error}
+                status_flag = "COMPLETE" if proc.returncode == 0 else "FAILED"
 
             return {
-                "status": "COMPLETE" if proc.returncode == 0 else "FAILED",
+                "status": status_flag,
                 "data": data,
             }
         except Exception as e:
@@ -96,7 +135,11 @@ class SentinelOrchestrator:
         for name, res in zip(self.tools, results, strict=False):
             report.tool_results[name] = res
             if res["status"] != "COMPLETE":
-                report.dissonance_alerts.append(f"Tool {name} status: {res['status']}")
+
+                # Extract detailed error messages from JSON if available
+                data = res.get("data", {})
+                error_msg = data.get("message") or data.get("error") or data.get("primary_violation") or "No specific message provided"
+                report.dissonance_alerts.append(f"{RED}[{name}] {res['status']}: {error_msg}{RESET}")
 
         # Calculate Heuristic Coherence Score
         passed = sum(1 for r in results if r["status"] == "COMPLETE")
@@ -107,16 +150,71 @@ class SentinelOrchestrator:
         return report
 
 
+def export_to_markdown(report: SentinelReport, out_dir: Path) -> None:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    safe_time = report.timestamp.replace(":", "-").split(".")[0]
+    md_file = out_dir / f"Sentinel_Report_{safe_time}.md"
+
+    # Regex to strip ANSI colors from alerts for the markdown file
+    ansi_escape = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
+
+    md_content = [
+        "# Sentinel Orchestrator — Vigil Report",
+        f"> **Timestamp:** {report.timestamp} | **Target:** `{report.target}`",
+        "",
+        f"### **System Coherence Score:** {report.coherence_score:.2f}%",
+        "",
+        "## Tool Execution Summary",
+        "| Tool | Status | Details |",
+        "| :--- | :--- | :--- |"
+    ]
+
+    for name, res in report.tool_results.items():
+        status = res['status']
+        if status != "COMPLETE":
+            data = res.get("data", {})
+            error_msg = data.get("message") or data.get("error") or data.get("primary_violation") or ""
+            clean_error = ansi_escape.sub('', str(error_msg)).replace('\n', '<br>')
+            md_content.append(f"| `{name}` | **{status}** | {clean_error} |")
+        else:
+            md_content.append(f"| `{name}` | **{status}** | - |")
+
+    md_content.extend(["", "## Dissonance Alerts", ""])
+
+    if report.dissonance_alerts:
+        for alert in report.dissonance_alerts:
+            clean_alert = ansi_escape.sub('', alert)
+            md_content.append(f"- {clean_alert}")
+    else:
+        md_content.append("*No dissonance alerts detected. Coherence is intact.*")
+
+    md_file.write_text("\n".join(md_content), encoding="utf-8")
+    logger.info(f"{CYAN}  Exported Markdown Report: {md_file}{RESET}")
+
+    # Automatically maintain an aggregated Index file in the target directory
+    index_file = out_dir / "Sentinel_Index.md"
+    if not index_file.exists():
+        index_file.write_text("# 🛡️ Sentinel Reports Index\n\n| Date | Report | Coherence Score | Alerts |\n| :--- | :--- | :--- | :--- |\n", encoding="utf-8")
+
+    alert_count = len(report.dissonance_alerts)
+    with open(index_file, "a", encoding="utf-8") as f:
+        f.write(f"| {report.timestamp.split('.')[0]} | [[{md_file.stem}]] | **{report.coherence_score:.2f}%** | {alert_count} |\n")
+
+
 async def main() -> None:
     parser = argparse.ArgumentParser(
         description="Sentinel Orchestrator — Master Audit Engine"
     )
     parser.add_argument("target", help="Directory or file to audit")
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
+    parser.add_argument("--quiet", action="store_true", help="Suppress dynamic stdout streaming")
+    parser.add_argument("--outdir", default="logs", help="Directory to save the markdown report")
+    parser.add_argument("--obsidian", default=os.getenv("OBSIDIAN_VAULT_PATH"), help="Obsidian vault path to push the report to")
+    parser.add_argument("--min-coherence", type=float, default=90.0, help="Minimum coherence score to pass (default 90.0)")
     args = parser.parse_args()
 
     target = Path(args.target).resolve()
-    orchestrator = SentinelOrchestrator(target)
+    orchestrator = SentinelOrchestrator(target, quiet=args.quiet)
     report = await orchestrator.execute_vigil()
 
     if args.json:
@@ -127,14 +225,30 @@ async def main() -> None:
         logger.info("=" * 80)
         logger.info(f"  Target:    {report.target}")
         logger.info(f"  Timestamp: {report.timestamp}")
-        logger.info(f"  Coherence: {report.coherence_score:.2f}%")
+
+        coh_color = GREEN if report.coherence_score == 100 else YELLOW if report.coherence_score > 0 else RED
+        logger.info(f"  Coherence: {coh_color}{report.coherence_score:.2f}%{RESET}")
         logger.info("-" * 80)
         logger.info(f"  Tools Executed: {len(report.tool_results)}")
         logger.info(f"  Alerts:         {len(report.dissonance_alerts)}")
         logger.info("-" * 80)
         for name, res in report.tool_results.items():
-            logger.info(f"  [{res['status']:<8}] {name}")
+            status = res['status']
+            status_color = GREEN if status == "COMPLETE" else RED
+            logger.info(f"  [{status_color}{status:<8}{RESET}] {name}")
         logger.info("=" * 80)
+
+        # Export the markdown report to the specified logs directory
+        export_to_markdown(report, Path(args.outdir))
+
+        # Automatically push to Obsidian vault if specified
+        if args.obsidian:
+            export_to_markdown(report, Path(args.obsidian))
+
+    # Enforce minimum coherence threshold by returning a non-zero exit code
+    if report.coherence_score < args.min_coherence:
+        logger.error(f"\n{RED}[CRITICAL] System Coherence Score ({report.coherence_score:.2f}%) is below the minimum threshold ({args.min_coherence}%). Failing build!{RESET}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

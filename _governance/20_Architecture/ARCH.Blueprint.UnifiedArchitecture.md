@@ -1,11 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `ARCH.BLUEPRINT.UNIFIEDARCHITECTURE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH.Blueprint.UnifiedArchitecture`    | The Sovereign ID. |
+| **Official Name**   | `ARCH.Blueprint.UnifiedArchitecture.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `GVRN`                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                              | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                   | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                 | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`           | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                      | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # **Architectural Blueprint: Antigravity Grand Unified Architecture**
@@ -22,8 +48,10 @@ The system transitions the IDE from a passive tool to a **Sovereign environment*
 Markdown files.
 
 - **Axion-Prime (The Sovereign):** The central orchestrator
+
   ([AOP-AG-003](https://aistudio.google.com/prompts/1gZt7mNWU-Ylig5X2tcvWKTov6oiu6Ske)) that manages specialized **Tarot
   Masks** (sub-agents) like the Sentinel and Magician.
+
 - **The Hephaestus Cycle:** A mandatory three-stage cognitive loop for all operations:
 
 1. **Dissonance:** Scan for entropy, gaps, or ambiguity.
@@ -31,9 +59,11 @@ Markdown files.
 3. **Transcendence:** Forge solutions only when the Aesthetic/Logic Score (AES) exceeds 8\.
 
 - **The Chronos Lock:** A [Law of Provenance](?tab=t.ukhimy2kn4s3) requiring every file to possess a 12-point metadata
+
   header (Artifact ID, State, Version) to prevent orphaned data.
 
 - **The Faraday Cage (`security.yaml`):** A strict hardware-level constraint layer that redacts secrets (`.env`), blocks
+
   destructive commands (`rm -rf`), and mandates "Nuclear Key" approval for high-stakes actions.
 
 ---
@@ -45,6 +75,7 @@ Workflows and skills define how the agent interacts with the codebase and extern
 - **Workflows (User-Pushed Macros):** Slash commands that trigger specific logic sequences:
 
 - `/scaffold`: Generates Implementation Plans using
+
   [LangGraph templates](https://aistudio.google.com/prompts/1gZt7mNWU-Ylig5X2tcvWKTov6oiu6Ske).
 
 - `/simulate`: Predictive "Blast Radius" analysis before modifying files.
@@ -54,6 +85,7 @@ Workflows and skills define how the agent interacts with the codebase and extern
 - **Skills (Agent-Pulled Tarot Deck):** Autonomous toolsets equipped based on detected intent:
 
 - **The Sentinel:** Enforces
+
   [Synarche Coding Standards](https://aistudio.google.com/prompts/1gZt7mNWU-Ylig5X2tcvWKTov6oiu6Ske) and verifies the
   Chronos Lock.
 
@@ -61,8 +93,9 @@ Workflows and skills define how the agent interacts with the codebase and extern
 
 - **The King:** Handles filesystem restructuring and metadata archival.
 
-- **The Synapse ([MCP](https://aistudio.google.com/prompts/1gZt7mNWU-Ylig5X2tcvWKTov6oiu6Ske)):** Utilizes the **Model
-  Context Protocol** (`mcp.yaml`) to connect Axion to GitHub, Postgres, and local toolchains without custom glue code.
+- **The Synapse ([MCP](https://aistudio.google.com/prompts/1gZt7mNWU-Ylig5X2tcvWKTov6oiu6Ske)):** Utilizes the \*\*Model
+
+  Context Protocol\*\* (`mcp.yaml`) to connect Axion to GitHub, Postgres, and local toolchains without custom glue code.
 
 ---
 
@@ -71,10 +104,15 @@ Workflows and skills define how the agent interacts with the codebase and extern
 The Overplane uses a sandboxed sensory layer to ingest external knowledge safely.
 
 - **Browser Subagent:** A headless Chromium instance driven by the agent to visually and programmatically interact with
+
   the web.
+
 - **Network Allowlist (`network.yaml`):** Restricts the Magician to approved domains (e.g., GitHub, Supabase Docs) while
+
   blocking distractions.
+
 - **Knowledge Graph (`knowledge.yaml`):** A native **RAG engine** that indexes local code (`src/`), governance protocols
+
   (`gvrn/`), and external technical guides for semantic retrieval via `@codebase` or `@docs`.
 
 ---
@@ -84,10 +122,15 @@ The Overplane uses a sandboxed sensory layer to ingest external knowledge safely
 Advanced multitasking through parallel agent threads and asynchronous communication.
 
 - **Task Groups:** Multi-agent orchestrators defined in `task-groups/`. Enables parallel execution (e.g., Weaver writes
+
   code while Sentinel audits and Scribe updates documentation simultaneously).
+
 - **Shadow Buffers:** All proposed code is written to a virtual layer. Changes only move to the physical disk after user
+
   **Canonization** (Sign-off).
+
 - **Decision Inbox (`inbox.yaml`):** An asynchronous queue for "Blockers" and "Approvals," allowing Axion to park
+
   high-stakes requests without breaking the Architect's flow state.
 
 ---
@@ -97,10 +140,15 @@ Advanced multitasking through parallel agent threads and asynchronous communicat
 The UI is configured to reflect the **Synarche Governance Hierarchy**.
 
 - **Tree by Intent:** The sidebar File Explorer (`ui-config.yaml`) groups files by their associated task or domain
+
   (ARCH, GVRN, SYNR) rather than just directory structure.
+
 - **Ghost Cursor:** Visualizes the agent's real-time thought process and typing within the editor, ensuring
+
   transparency.
+
 - **War Room Layout:** A customized `layout.yaml` that snaps the screen into a triptych: Editor \+ Browser \+ Terminal
+
   for high-intensity debugging.
 
 ---
@@ -113,3 +161,25 @@ saturation; however, the use of **MCP** and **Task Groups** mitigates this by is
 masks.
 
 **Would you like to initiate the `bootstrap_axion.py` script to generate this structure in your current workspace?**
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

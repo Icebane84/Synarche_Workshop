@@ -5,6 +5,7 @@
 ## Choose Your Path
 
 ### 🚀 I want to use OpenAI (Fastest)
+
 **5 minutes to running.** GPT, simple setup, powerful results.
 
 → [OpenAI Quick Start](quick-start-openai.md)
@@ -12,6 +13,7 @@
 ---
 
 ### ☁️ I want to use other cloud AI (Anthropic, Google, OpenRouter, etc.)
+
 **5 minutes to running.** Choose from 17+ AI providers.
 
 → [Cloud Providers Quick Start](quick-start-cloud.md)
@@ -19,6 +21,7 @@
 ---
 
 ### 🏠 I want to run locally (Ollama or LMStudio, completely private)
+
 **5 minutes to running.** Keep everything private, on your machine. No costs.
 
 → [Local Quick Start](quick-start-local.md)
@@ -38,13 +41,13 @@
 
 ## Why Open Notebook?
 
-| Feature | Open Notebook | Notebook LM |
-|---------|---|---|
-| **Privacy** | Self-hosted, your control | Cloud, Google's servers |
-| **AI Choice** | 17+ providers | Google's models only |
-| **Podcast Speakers** | 1-4 customizable | 2 only |
-| **Cost** | Completely free | Free (but your data) |
-| **Offline** | Yes  | No |
+| Feature              | Open Notebook             | Notebook LM             |
+| -------------------- | ------------------------- | ----------------------- |
+| **Privacy**          | Self-hosted, your control | Cloud, Google's servers |
+| **AI Choice**        | 17+ providers             | Google's models only    |
+| **Podcast Speakers** | 1-4 customizable          | 2 only                  |
+| **Cost**             | Completely free           | Free (but your data)    |
+| **Offline**          | Yes                       | No                      |
 
 ## Prerequisites
 

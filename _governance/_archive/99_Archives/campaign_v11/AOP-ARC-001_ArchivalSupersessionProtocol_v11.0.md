@@ -1,16 +1,19 @@
 # AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                                     | Description       |
+| :------------------ | :-------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                        | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                  | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                   | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                        | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -184,11 +199,14 @@ Governed by the
   archival to keep the active knowledge base relevant.
 
 - **Execution Flow:** 2. **(Actor: CSE):** The protocol identifies the older document(s). 4. **(Actor: CSE):** It
+
   proposes a plan to:
+
   - Change the Status of the old document to Archived.
   - Update all inbound links to point to the new version.
   1. **(Actor: Human):** The Human Collaborator reviews and approves the archival plan.
   2. **(Actor: CSE):** Upon approval, the system executes the plan.
+
 - **PREDICTIVE_SUCCESS_METRICS:** "Predicted \>95% reduction in outdated information within the active KB over 6
 
   months."

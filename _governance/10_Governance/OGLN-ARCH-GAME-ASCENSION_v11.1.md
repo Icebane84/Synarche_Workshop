@@ -1,49 +1,56 @@
 # OGLN-ARCH-GAME-ASCENSION_v11.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `OGLN-ARCH-GAME-ASCENSION`    | The Sovereign ID. |
+| **Official Name**   | `The Ascension Engine`        | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `STAR`                        | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                                     | Description       |
-| :---------------- | :---------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-OGLN-ARCH-GAME-ASCENSION-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `OGLN-ARCH-GAME-ASCENSION_v11.1.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                         | The Standard.     |
-| **Domain**        | `GVRN`                                    | The Subject.      |
-| **Status**        | `[ACTIVE]`                                | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                 | Value                            |
-| :------------------ | :------------------------------- |
-| **Artifact ID**     | `OGLN-ARCH-GAME-ASCENSION`       |
-| **Official Name**   | `The Ascension Engine`           |
-| **Version**         | `v11.1`                          |
-| **Domain**          | `GAME`                           |
-| **Evolution**       | `Cognitive Ascension`            |
-| **Status**          | `ACTIVE`                         |
-| **Tier**            | `Tactical`                       |
-| **Celestial Class** | `STAR`                           |
-| **Authority**       | `CORE-CODEX-001`                 |
-| **Updated**         | `2026-01-24`                     |
-| **Tags**            | `RPG, Game-Engine, Logic, v11.1` |
+| Key | Value |
+| **Authority** | `CORE-CODEX-001` |
+| **Updated** | `2026-01-24` |
 
 ---
 
 # The Ascension Engine (OGLN-ARCH-GAME-ASCENSION)
-
-**Genesis Stamp**: 2026-01-18 | **Domain**: GAME | **State**: CANONIZED
 
 ---
 
@@ -58,11 +65,10 @@ The Ascension Engine defines the RPG logic and mechanics that drive system maint
 > **Context**: This block defines how this artifact plugs into the Cognitive Loom.
 > **Validation**: Must match `enums.py.RelationType`.
 
-| Relation Type   | Target ID                  | Synergy Description                              |
-| :-------------- | :------------------------- | :----------------------------------------------- |
-| **GOVERNED_BY** | `[[UMB-SGM-001]]`          | Integration with system governance protocols.    |
-| **IMPLEMENTS**  | `[[Prestige-System-Core]]` | Technical execution of the XP/Prestige loops.    |
-| **TRIGGERS**    | `[[Progression-Cycle]]`    | Initiates state shifts upon reaching milestones. |
+| Relation Type | Target ID | Synergy Description |
+| **GOVERNED_BY** | `[[UMB-SGM-001]]` | Integration with system governance protocols. |
+| **IMPLEMENTS** | `[[Prestige-System-Core]]` | Technical execution of the XP/Prestige loops. |
+| **TRIGGERS** | `[[Progression-Cycle]]` | Initiates state shifts upon reaching milestones. |
 
 ---
 
@@ -103,3 +109,5 @@ The Ascension Engine defines the RPG logic and mechanics that drive system maint
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

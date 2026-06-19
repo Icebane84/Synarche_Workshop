@@ -1,57 +1,56 @@
 # AOP-PROMPT-001_TheCatalystProtocol_v11.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                                    | Description       |
+| :------------------ | :----------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `AOP-PROMPT-001`                                                         | The Sovereign ID. |
+| **Official Name**   | `The Catalyst Protocol`                                                  | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                        | The Standard.     |
+| **Domain**          | `GVRN`                                                                   | The Subject.      |
+| **Celestial Class** | `MOON`                                                                   | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                                       | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                               | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                  | The Intent.       |
+| **Relations**       | `GUIDES: UMB-CSE-001, IMPLEMENTS: The Forge Analogy`                     | The Network.      |
+| **Integrity Hash**  | `sha256:d5e4a3b2c1f0e9d8c7b6a5a4b3c2d1e0f9a8b7c6d5e4a3b2c1f0e9d8c7b6a5a` | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-PROMPT-001-THECATALYSTPROTOCOL-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PROMPT-001_TheCatalystProtocol_v11.1.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Attribute           | Value                                                                    |
-| :------------------ | :----------------------------------------------------------------------- |
-| **Artifact ID**     | `AOP-PROMPT-001`                                                         |
-| **Official Name**   | `The Catalyst Protocol`                                                  |
-| **Version**         | `v11.1`                                                                  |
-| **Domain**          | `SYNT`                                                                   |
-| **Evolution**       | `The Cognitive Forge`                                                    |
-| **Signal (PRMT)**   | `CATALYST`                                                               |
-| **Status (State)**  | `CANONIZED`                                                              |
-| **Tier**            | `Operational`                                                            |
-| **Celestial Class** | `MOON`                                                                   |
-| **Governance**      | `UMB-SGM-001`, `UMB-MAP-001`                                             |
-| **Upstream**        | `UMB-CSE-001`, `UMB-LEX-001`                                             |
-| **Downstream**      | `AOP-KB-001`, `ALL_GUCA_PACKETS`                                         |
-| **Integrity Hash**  | `sha256:d5e4a3b2c1f0e9d8c7b6a5a4b3c2d1e0f9a8b7c6d5e4a3b2c1f0e9d8c7b6a5a` |
-| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                      |
-| **Relations**       | `GUIDES: UMB-CSE-001`, `IMPLEMENTS: The Forge Analogy`                   |
-| **Tags**            | `v11.1, Prompting, Synthesis, Alchemy, Insight`                          |
+| Attribute | Value |
+| **Governance** | `UMB-SGM-001`, `UMB-MAP-001` |
+| **Integrity Hash** | `sha256:d5e4a3b2c1f0e9d8c7b6a5a4b3c2d1e0f9a8b7c6d5e4a3b2c1f0e9d8c7b6a5a` |
 
 ---
 
-> **Domain**: SYNT | **Evolution**: The Cognitive Forge | **Signal**: CATALYST
-
 # The Catalyst Protocol (AOP-PROMPT-001)
-
-## Genesis Stamp: 2026-01-24 | Domain: SYNT | State: CANONIZED | Criticality: HIGH
 
 ---
 
@@ -145,3 +144,5 @@ Directly targets gaps and contradictions to force the creation of new conceptual
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

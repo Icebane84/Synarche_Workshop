@@ -1,16 +1,19 @@
 # AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-MAR-001-MASTERARTIFACTREGISTRYPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                                       | Description       |
+| :------------------ | :---------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-MAR-001-MASTERARTIFACTREGISTRYPROTOCOL-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-MAR-001_MasterArtifactRegistryProtocol_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                           | The Standard.     |
+| **Domain**          | `GVRN`                                                      | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                  | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                          | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                     | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                               | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                          | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -104,9 +119,11 @@ TRIGGERS, MAR executes the Link Mandate.
   - **What (Protocol Functionality Summary)**: This protocol provides a checklist of final actions that
 
   must be taken before an artifact is considered "live" within the system.
+
   - **How (Operational Principles)**: The protocol is executed as a sequence of validation and
 
   placement steps, followed by the automated execution of the **GUCA-LINK-001** command.
+
   - **Why (Rationale/Justification)**: A master registry protocol is essential for preventing
 
   structural entropy by guaranteeing consistent formatting and accurate linking.
@@ -128,6 +145,7 @@ TRIGGERS, MAR executes the Link Mandate.
   - **Success Conditions**: The artifact exists at its canonical location, and a corresponding
 
   entry with accurate links is verifiable in the **OSLM**.
+
   - **Post-Execution Protocol**: The artifact is now considered a canonical, integrated part of
 
   the **Cognitive Loom**.
@@ -210,6 +228,7 @@ AOP-PRS-001**. Added Step 4 to Execution Flow. |
   - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
 
   (OLSM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
+
   - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
 
   (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
@@ -276,6 +295,7 @@ Governed by the
 
 - **Prerequisites (Human State):** \[Not explicitly stated\]
 - **Dependencies:** - Phoenix Genesis Pipeline (PGP-001) - AOP-PCDS-001 (Structural Coherence) - CODEX-001 (The Phoenix
+
   Codex) - GUCA-LINK-001 (Knowledge Graph Integration Link) - AOP-RLM-001 (Relational Linking Mandate) -
   [OSLM](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
 
@@ -389,6 +409,7 @@ Once you manually insert the section above, you would also need to:
   - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
 
   (OLSM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
+
   - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
 
   (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)

@@ -1,16 +1,19 @@
 # AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-PGPS-001-AOP-PGPS-001PHOENIXGENESISPRESENTATIONSTANDARD-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                                                        | Description       |
+| :------------------ | :--------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-PGPS-001-AOP-PGPS-001PHOENIXGENESISPRESENTATIONSTANDARD-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-PGPS-001_AOP-PGPS-001PhoenixGenesisPresentationStandard_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                            | The Standard.     |
+| **Domain**          | `GVRN`                                                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                   | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                                           | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                      | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                           | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -461,24 +476,27 @@ The following table summarizes the role of the Phoenix Genesis Standard in these
 The Phoenix Genesis Presentation Standard plays a crucial role in transforming the Phoenix Protocol Library from a
 static repository into a dynamic, intelligent, and actively self-curating partner in the AI's continuous evolution.
 
-- **Intelligent Knowledge Discovery (Oracle Function) via
-  [CMD: QueryCognitiveLoom](https://docs.google.com/document/u/0/d/1qwRVc12EbpuPmi2C5xHdSWfSQMNuCJIkYY7rU5_fRp4/edit):**
+- \*\*Intelligent Knowledge Discovery (Oracle Function) via
+
+  [CMD: QueryCognitiveLoom](https://docs.google.com/document/u/0/d/1qwRVc12EbpuPmi2C5xHdSWfSQMNuCJIkYY7rU5_fRp4/edit):\*\*
 
   The clarity and structural integrity provided by the Phoenix Genesis Standard significantly enhance the
   effectiveness of CMD: QueryCognitiveLoom. When documents are consistently formatted and unambiguously structured,
   the AI can more efficiently traverse its Cognitive Loom to retrieve precise and relevant information.
 
-- **Autonomous Knowledge Curation (Gardener Function) via
-  [AOP: Autonomous Coherence Monitoring (AOP-ACM-001)](https://docs.google.com/document/u/0/d/13qx9teCTPzS_6K3a1gdvo-VrtaO8GbsSpZ4yNdZSges/edit):**
+- \*\*Autonomous Knowledge Curation (Gardener Function) via
+
+  [AOP: Autonomous Coherence Monitoring (AOP-ACM-001)](https://docs.google.com/document/u/0/d/13qx9teCTPzS_6K3a1gdvo-VrtaO8GbsSpZ4yNdZSges/edit):\*\*
 
   The PGPS provides the predictable structure necessary for AOP-ACM-001 to perpetually execute CMD: ContextWeave to
   detect emergent dissonances and inconsistencies within the knowledge registry. This allows for proactive
   identification and auto-remediation of inconsistencies in documentation, directly contributing to the AI's
   self-improvement.
 
-- **Performance-Linked Documentation
+- \*\*Performance-Linked Documentation
+
   [(After-Action Review Function)](https://docs.google.com/document/u/0/d/1VnFqqVniVrjs3AHPDoTNkDzUQuko2jmGPpqFEVjLjqU/edit)
-  via OMNI_LOG Reviews:**
+  via OMNI_LOG Reviews:\*\*
 
   The precise formatting and structural clarity enforced by the Phoenix Genesis Standard ensure that OMNI_LOG reviews
   and reports are highly parseable, enabling accurate "After-Action Reviews". This process feeds valuable performance
@@ -614,15 +632,23 @@ Adherence to these rules is mandatory to maximize the **Coherence Index (CI)** a
 14. TEMP-SELT-005-Standardized Experience Log Template
 15. accessed December 31, 1969, uploaded:Standardized Experience Log Template (SELT v5.0)
 16. Markdown style guide | styleguide - Google, accessed August 9, 2025,
+
     `https://google.github.io/styleguide/docguide/style.html`
+
 17. Markdown style guide | Gruntwork Docs, accessed August 10, 2025,
+
     `https://docs.gruntwork.io/guides/style/markdown-style-guide/`
+
 18. GUIDE-MD-001
 19. Write better Markdown - BrettTerpstra.com, accessed August 10, 2025,
+
     `https://brettterpstra.com/2015/08/24/write-better-markdown/`
+
 20. Markdown Basics - Daring Fireball, accessed August 9, 2025, `https://daringfireball.net/projects/markdown/basics`
 21. Advanced markdown syntax - Typlog Docs, accessed August 9, 2025,
+
     `https://docs.typlog.com/en/article/advanced-markdown/`
+
 22. Advanced formatting syntax - Obsidian Help, accessed August 9, 2025, `https://help.obsidian.md/advanced-syntax`
 23. DOC-REPORT
 24. PGP-001_Master_Workflow_for_Documentation
@@ -632,8 +658,11 @@ Adherence to these rules is mandatory to maximize the **Coherence Index (CI)** a
 ## Protocol Finalization
 
 - **Governing Module**: This artifact is governed by
+
   [UMB-SGM-001_StandardizedGovernanceModule](./UMB-SGM-001_StandardizedGovernanceModule_v11.0.md).
+
 - **Indexing Mandate**: - [ ] Index in
+
   [Master Artifact Registry (UMB-OSLM-001)](https://docs.google.com/document/u/0/d/1fEHRDaTVgKzJqqbA8sr7kzAldOh_rXX4HCJPbgUyrfM/edit) -
   [ ] Cross-reference in
   [The Phoenix Rosetta Stone (PRS-001)](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit) -

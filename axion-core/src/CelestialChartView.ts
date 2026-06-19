@@ -11,6 +11,8 @@ artifact_anchor:
   relations: []
 */
 
+import * as fs from "node:fs";
+import * as path from "node:path";
 import * as vscode from "vscode";
 
 export class CelestialChartViewProvider implements vscode.WebviewViewProvider {
@@ -40,6 +42,10 @@ export class CelestialChartViewProvider implements vscode.WebviewViewProvider {
       switch (data.type) {
         case "achievementClaimed": {
           vscode.commands.executeCommand("axion.claimAchievement", data.id);
+          break;
+        }
+        case "investStardust": {
+          vscode.commands.executeCommand("axion.spendStardustInteractive", data.stat, data.amount);
           break;
         }
       }
@@ -81,63 +87,23 @@ export class CelestialChartViewProvider implements vscode.WebviewViewProvider {
 
     const nonce = getNonce();
 
-    return `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${webview.cspSource} 'unsafe-inline'; script-src 'nonce-${nonce}';">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="${styleResetUri}" rel="stylesheet">
-    <link href="${styleVSCodeUri}" rel="stylesheet">
-    <link href="${styleMainUri}" rel="stylesheet">
-    <title>Celestial Chart</title>
-</head>
-<body>
-    <div class="liquid-glass-container">
-        <header>
-            <h1 class="glow-text">AXION CELESTIAL HUB</h1>
-            <div class="prestige-badge">
-                <span id="prestige-rank">INITIATE</span>
-                <div class="progress-bar-container">
-                    <div id="prestige-progress" class="progress-bar" style="width: 30%"></div>
-                </div>
-            </div>
-        </header>
+    const htmlPath = path.join(
+      this._extensionUri.fsPath,
+      "src",
+      "03_fabric",
+      "FABR.CelestialChart.UI.html",
+    );
+    let htmlContent = fs.readFileSync(htmlPath, "utf8");
 
-        <section class="stardust-display">
-            <div class="stardust-icon">✦</div>
-            <div class="stardust-value" id="stardust-count">0</div>
-            <div class="stardust-label">COGNITIVE SYNERGY</div>
-        </section>
+    htmlContent = htmlContent
+      .replace(/\${cspSource}/g, webview.cspSource)
+      .replace(/\${nonce}/g, nonce)
+      .replace(/\${styleResetUri}/g, styleResetUri.toString())
+      .replace(/\${styleVSCodeUri}/g, styleVSCodeUri.toString())
+      .replace(/\${styleMainUri}/g, styleMainUri.toString())
+      .replace(/\${scriptUri}/g, scriptUri.toString());
 
-        <nav class="chart-navigation">
-            <button class="nav-item active" data-view="achievements">CANONS</button>
-            <button class="nav-item" data-view="skills">AXIOMS</button>
-            <button class="nav-item" data-view="lore">CODEX</button>
-        </nav>
-
-        <main id="view-content">
-            <div class="achievement-list" id="achievement-list">
-                <div class="achievement-item locked">
-                    <div class="achievement-info">
-                        <div class="achievement-name">COHERENCE_INIT</div>
-                        <div class="achievement-desc">Loading system integrity parameters...</div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <div class="sync-status">
-                <span class="status-dot green"></span>
-                <span class="status-text">COHERENCE: 100% [OMEGA]</span>
-            </div>
-        </footer>
-    </div>
-
-    <script nonce="${nonce}" src="${scriptUri}"></script>
-</body>
-</html>`;
+    return htmlContent;
   }
 }
 

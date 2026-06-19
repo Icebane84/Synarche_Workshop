@@ -1,9 +1,4 @@
-""" artifact_anchor:
-  id: GVRN.Standards.Test
-  version: v15.0 [OMEGA]
-  domain: GVRN
-  status: ACTIVE
-"""
+""" artifact_anchor: id: GVRN.Standards.Test version: v15.0 [OMEGA] domain: GVRN status: ACTIVE """
 
 # Test Configuration Blueprint
 

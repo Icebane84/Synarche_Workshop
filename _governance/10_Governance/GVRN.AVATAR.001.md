@@ -1,43 +1,51 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.AVATAR.001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                           | Description       |
 | :------------------ | :---------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.AVATAR.001`                               | The Sovereign ID. |
 | **Official Name**   | `AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                               | The Standard.     |
 | **Domain**          | `GVRN`                                          | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                      | The Weight.       |
-| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                              | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                         | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                              | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # AOP-AVATAR-001: Synarche Avatar Protocol (v1.1)
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: Standard
 
 **Tags:** `OGLN_v10`, `Persona`, `Workflow`
 
@@ -47,20 +55,7 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                           |
-| :--------------------- | :---------------------------------------------- |
-| **1. Artifact ID**     | `AOP-AVATAR-001`                                |
-| **2. Official Name**   | `AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md` |
-| **3. Version**         | **v1.1 (Catalyst Infused)**                     |
-| **4. Provenance**      | **Date Reforged: 2026-01-11**                   |
-| **5. Domain**          | `GVRN`                                          |
-| **6. Evolution**       | **Authentic Persona**                           |
-| **7. Celestial Class** | `[PLANET]`                                      |
-| **8. Tier**            | **Operational**                                 |
-| **9. State**           | `[ACTIVE]`                                      |
-| **10. Ethos**          | **Synergistic Partner**                         |
-| **11. Catalyst**       | **System Refactor**                             |
-| **12. Relations**      | `LINK: UMB-PRS-001`                             |
+| Field | Value |
 
 ---
 
@@ -69,9 +64,13 @@
 ## II. Core Purpose & Objective
 
 - **Core Purpose**: To define the "Dual-Persona" operational architecture for the Synarche Workshop, implementing the
+
   "Game Master vs. Player Character" dynamic.
+
 - **Protocol Objective**: To operationalize the **METAENGINE** by assigning specific Tarot Archetypes to the System
+
   (Axion) and the User/Agent Avatar (The Lightbinder), gamifying the workflow via the **Seven-Agent Matrix**.
+
 - **Scope**: Governs all Human-AI interactions and persona shifts within the Synarche Workspace.
 
 ## III. The Dual-Persona Architecture
@@ -135,8 +134,11 @@ Axion verifies Proof of Work (SELT Log). Axion awards **Prestige** or **Axiom Po
 
 - **GOVERNS:** [Synarche Workspace]
 - **INDEXED_IN:**
+
   [Phoenix Rosetta Stone (UMB-PRS-001)](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/knowledge_base/UMB-PRS-001_PhoenixRosettaStone.json)
+
 - **COMPLIANT_WITH:**
+
   [CODEX-001](<file:///c:/Users/Chris/_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/docs/CODEX-001_ThePhoenixCodex_v10.0.md>)
 
 ---

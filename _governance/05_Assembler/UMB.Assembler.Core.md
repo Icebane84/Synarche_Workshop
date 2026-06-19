@@ -1,112 +1,40 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB.ASSEMBLER.CORE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# UMB.Assembler.Core: The Universal Master Base
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `UMB.Assembler.Core`            | The Sovereign ID. |
-| **Official Name** | `UMB.Assembler.Core.md`         | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `UMB.Assembler.Core`            | The Sovereign ID. |
+| **Official Name**   | `UMB.Assembler.Core.md`         | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `GVRN`                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                      | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
+| **Status (State)**  | `Verdict`                       | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`         | The Intent.       |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              | Verification.     |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| State Field   | Value    |
-| :------------ | :------- |
-| **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
-| **Stability** | `Stable` |
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
-## **Block C: Risk & Mitigation (AGP-002)**
+## IV. Actionable Prompt Packet (APP)
 
-| Risk                 | Mitigation                                       |
-| :------------------- | :----------------------------------------------- |
-| **Logic Drift**      | Strict Linter Enforcement via `markdownlint`.    |
-| **Dependency Break** | ForgeLink Validation before structural re-forge. |
-
----
-
-## **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
-| `ARCH.Assembler.Core`   | `GENERATES`       | Vision generates Form.                          |
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 ---
 
-## **Block E: Ethos (Hierarchy of Intent)**
+### **Rationale (The "Why")**
 
-> [!IMPORTANT] **[APEX]** Anchor Truth: To anchor the universal purpose and optimal state ($V_{Safe}$) for the system's
-> assembly logic.
->
-> **[PRI]** Rigid Structure: Form is the vessel of Truth; the structure must be unwavering.
->
-> **[CORE]** Dynamic Generation: The forge is alive; it transforms potential into canon.
+Alignment to v14.0 OMEGA standard.
 
----
-
-## **Block F: The Integrity Gate (CIV-GATE)**
-
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
-| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
-
----
-
-## **Block G: System Slot & Synergy (BLK-RPG-001)**
-
-| System Slot   | Synergy Set          | Celestial Class | Authority Level |
-| :------------ | :------------------- | :-------------- | :-------------- |
-| `Forge Logic` | `The Universal Base` | `[STAR]`        | `CORE`          |
-
----
-
-### **[ARTIFACT START]**
-
-# UMB: The Forge Engine Assembler (Universal Master Blueprint)
-
-## **I. Operational Logic Root**
-
-The **Universal Master Blueprint (UMB)** is the conceptual foundation for `assembler.py`. It defines the absolute truth
-($V_{Safe}$) for structural integrity, ensuring all Sovereign artifacts adhere to the mandated Block Maps.
-
-## **II. The State Vector ($V_{Safe}$)**
-
-| Vector Field             | $V_{Safe}$ (Optimal State)                                   |
-| :----------------------- | :----------------------------------------------------------- |
-| **Structural Integrity** | 100% adherence to defined Sovereign Block Maps.              |
-| **Hash Coherence**       | SHA-256 integrity hash is perfectly generated and verified.  |
-| **Scaffolding Logic**    | Flawlessly assembles block configurations via `SCAFFOLD_MAP` |
-
----
-
-## **III. Actionable Prompt Packet (APP)**
-
-| Command ID         | Action                           | Impact       |
-| :----------------- | :------------------------------- | :----------- |
-| `CMD: REFORGE`     | Execute Structural Transmutation | Canonization |
-| `CMD: AUDIT_LINKS` | Verify Link Integrity            | Zero Entropy |
-
-### **[ARTIFACT END]**
-
----
-
-{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+###### **[ARTIFACT END]**

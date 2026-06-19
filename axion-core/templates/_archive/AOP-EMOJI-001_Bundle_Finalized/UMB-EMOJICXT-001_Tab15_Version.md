@@ -12,15 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `UMB-EMOJICXT-001` | The Sovereign ID. |
+| Key               | Value                               | Description       |
+| :---------------- | :---------------------------------- | :---------------- |
+| **Artifact ID**   | `UMB-EMOJICXT-001`                  | The Sovereign ID. |
 | **Official Name** | `UMB-EMOJICXT-001_Tab15_Version.md` | The Filename.     |
-| **Version**       | **v1.0** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| **Version**       | **v1.0**                            | The Standard.     |
+| **Domain**        | `GVRN`                              | The Subject.      |
+| **Status**        | `[ACTIVE]`                          | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`       | The Network.      |
 
 ---
 

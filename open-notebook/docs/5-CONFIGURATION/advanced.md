@@ -16,6 +16,7 @@ SURREAL_COMMANDS_MAX_TASKS=5
 ```
 
 **Guidelines:**
+
 - CPU: 2 cores → 2-3 tasks
 - CPU: 4 cores → 5 tasks (default)
 - CPU: 8+ cores → 10-20 tasks
@@ -69,6 +70,7 @@ TTS_BATCH_SIZE=2
 ```
 
 **Providers and recommendations:**
+
 - OpenAI: 5 (can handle many concurrent)
 - Google: 4 (good concurrency)
 - ElevenLabs: 2 (limited concurrent requests)
@@ -135,7 +137,7 @@ Edit `docker-compose.yml`:
 services:
   open-notebook:
     ports:
-      - "8001:8502"  # Change from 8502 to 8001
+      - "8001:8502" # Change from 8502 to 8001
 ```
 
 Access at: `http://localhost:8001`
@@ -148,10 +150,10 @@ API auto-detects to: `http://localhost:5055` ✓
 services:
   open-notebook:
     ports:
-      - "127.0.0.1:8502:8502"  # Frontend
-      - "5056:5055"            # Change API from 5055 to 5056
+      - "127.0.0.1:8502:8502" # Frontend
+      - "5056:5055" # Change API from 5055 to 5056
     environment:
-      - API_URL=http://localhost:5056  # Update API_URL
+      - API_URL=http://localhost:5056 # Update API_URL
 ```
 
 Access API directly: `http://localhost:5056/docs`
@@ -164,9 +166,9 @@ Access API directly: `http://localhost:5056/docs`
 services:
   surrealdb:
     ports:
-      - "8001:8000"  # Change from 8000 to 8001
+      - "8001:8000" # Change from 8000 to 8001
     environment:
-      - SURREAL_URL=ws://surrealdb:8001/rpc  # Update connection URL
+      - SURREAL_URL=ws://surrealdb:8001/rpc # Update connection URL
 ```
 
 **Important:** Internal Docker network uses container name (`surrealdb`), not `localhost`.
@@ -242,6 +244,7 @@ API_URL=https://mynotebook.example.com
 ### Firewall Rules
 
 Restrict access to your Open Notebook:
+
 - Port 8502 (frontend): Only from your IP
 - Port 5055 (API): Only from frontend
 - Port 8000 (SurrealDB): Never expose to internet
@@ -277,6 +280,7 @@ Get key from: https://jina.ai/
 ## Environment Variable Groups
 
 ### Credential Storage (Required)
+
 ```env
 OPEN_NOTEBOOK_ENCRYPTION_KEY    # Required for storing credentials
 ```
@@ -284,6 +288,7 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY    # Required for storing credentials
 AI provider API keys are configured via **Settings → API Keys** (not environment variables).
 
 ### Database
+
 ```env
 SURREAL_URL
 SURREAL_USER
@@ -293,6 +298,7 @@ SURREAL_DATABASE
 ```
 
 ### Performance
+
 ```env
 SURREAL_COMMANDS_MAX_TASKS
 SURREAL_COMMANDS_RETRY_ENABLED
@@ -303,6 +309,7 @@ SURREAL_COMMANDS_RETRY_WAIT_MAX
 ```
 
 ### API Settings
+
 ```env
 API_URL
 INTERNAL_API_URL
@@ -311,6 +318,7 @@ ESPERANTO_LLM_TIMEOUT
 ```
 
 ### Audio/TTS
+
 ```env
 TTS_BATCH_SIZE
 ```
@@ -318,6 +326,7 @@ TTS_BATCH_SIZE
 > **Note:** `ELEVENLABS_API_KEY` is deprecated. Configure ElevenLabs via **Settings → API Keys**.
 
 ### Debugging
+
 ```env
 LANGCHAIN_TRACING_V2
 LANGCHAIN_ENDPOINT
@@ -401,10 +410,10 @@ SURREAL_COMMANDS_RETRY_WAIT_STRATEGY=exponential_jitter
 
 ### Data Locations
 
-| Path | Contents |
-|------|----------|
-| `./data` or `/app/data` | Uploads, podcasts, checkpoints |
-| `./surreal_data` or `/mydata` | SurrealDB database files |
+| Path                          | Contents                       |
+| ----------------------------- | ------------------------------ |
+| `./data` or `/app/data`       | Uploads, podcasts, checkpoints |
+| `./surreal_data` or `/mydata` | SurrealDB database files       |
 
 ### Quick Backup
 
@@ -441,6 +450,7 @@ echo "Backup complete: open-notebook-$DATE.tar.gz"
 ```
 
 Add to cron:
+
 ```bash
 # Daily backup at 2 AM
 0 2 * * * /path/to/backup.sh >> /var/log/open-notebook-backup.log 2>&1
@@ -529,16 +539,19 @@ docker system prune -a
 ## Summary
 
 **Most deployments need:**
+
 - One AI provider API key
 - Default database settings
 - Default timeouts
 
 **Tune performance only if:**
+
 - You have specific bottlenecks
 - High-concurrency workload
 - Custom hardware (very fast or very slow)
 
 **Advanced features:**
+
 - Firecrawl for better web scraping
 - LangSmith for debugging workflows
 - Custom CA bundles for self-signed certs

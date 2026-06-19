@@ -22,14 +22,13 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `{{artifact_id}}` | The Sovereign ID. |
+| Key               | Value                    | Description       |
+| :---------------- | :----------------------- | :---------------- |
+| **Artifact ID**   | `{{artifact_id}}`        | The Sovereign ID. |
 | **Official Name** | `SELT-HEADER-UIP-001.md` | The Filename.     |
-| **Version**       | **{{version}}** | The Standard.     |
-| **Domain**        | `{{domain}}` | The Subject.      |
-| **Status**        | `{{status}}` | The Lifecycle.    |
-| **Relations**     | `{{relations}}` | The Network.      |
-
+| **Version**       | **{{version}}**          | The Standard.     |
+| **Domain**        | `{{domain}}`             | The Subject.      |
+| **Status**        | `{{status}}`             | The Lifecycle.    |
+| **Relations**     | `{{relations}}`          | The Network.      |
 
 ---

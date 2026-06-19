@@ -1,26 +1,41 @@
----
-id: GVRN.Kit.Transclusion
-name: The Manifesto of Transclusion
-tags: ["#GVRN/Kit/Transclusion", "#Modularity", "#PRS-002"]
-links: ["[[GVRN.Kit.Architecture]]", "[[GVRN.Codex.Phoenix]]"]
-relations:
-  - type: ENFORCES
-    target: "[[GVRN.Kit.Architecture]]"
-description: "Sovereign standards for modularity and reusability through the 7 Pillars of Transclusion."
----
-
 # THE MANIFESTO OF TRANSCLUSION | UMB-GVRN.Kit.Transclusion
 
-| Field           | Metadata                  |
-| :-------------- | :------------------------ |
-| **Provenance**  | Genesis Stamp: 2026-04-17 |
-| **Domain**      | GVRN.Kit.Transclusion     |
-| **State**       | 🟢 CANONIZED              |
-| **Criticality** | HIGH                      |
-| **Class**       | RELATIONAL                |
-| **Author**      | User & Antigravity        |
-| **Audit**       | Musashi (Pass)            |
-| **Integrity**   | [V15.0-OMEGA]             |
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.Kit.Transclusion`       | The Sovereign ID. |
+| **Official Name**   | `GVRN.Kit.Transclusion.md`    | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+| **Class** | RELATIONAL |
+| **Author** | User & Antigravity |
+| **Audit** | Musashi (Pass) |
+| **Integrity** | [V15.0-OMEGA] |
 
 ---
 
@@ -87,3 +102,25 @@ Whenever a component is "Transcluded" (ported) into a new project (e.g., **3D Ac
 ---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Kit.Transclusion VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: [CANONIZED] TS: 2026-04-17`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

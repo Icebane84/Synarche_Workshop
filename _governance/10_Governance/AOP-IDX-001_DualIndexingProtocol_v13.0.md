@@ -1,35 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-IDX-001_DUALINDEXINGPROTOCOL_V13.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                             | Description       |
+| :------------------ | :------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-IDX-001-DUALINDEXINGPROTOCOL-V13.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-IDX-001_DualIndexingProtocol_v13.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                 | The Standard.     |
+| **Domain**          | `GVRN`                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                        | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                           | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # AOP-IDX-001_DualIndexingProtocol_v13.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                                             | Description       |
-| :---------------- | :------------------------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-IDX-001-DUALINDEXINGPROTOCOL-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-IDX-001_DualIndexingProtocol_v13.0.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                                 | The Standard.     |
-| **Domain**        | `GVRN`                                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                                        | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
+| Key | Value | Description |
 
 ---
 
@@ -37,21 +51,8 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                                                                                                                                    |
-| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Artifact ID**     | `AOP-IDX-001`                                                                                                                                            |
-| **2. Official Name**   | `AOP-IDX-001_DualIndexingProtocol_v13.0.md`                                                                                                              |
-| **3. Version**         | **v13.0**                                                                                                                                                |
-| **4. Provenance**      | **Reforged: 2026-02-01**                                                                                                                                 |
-| **5. Domain**          | `GVRN` (Governance)                                                                                                                                      |
-| **6. Evolution**       | **Cognitive Ascension**                                                                                                                                  |
-| **7. Celestial Class** | `[PLANET]`                                                                                                                                               |
-| **8. Tier**            | **Operational**                                                                                                                                          |
-| **9. Status (State)**  | `[ACTIVE]`                                                                                                                                               |
-| **10. Ethos**          | **Retrieval Efficiency**                                                                                                                                 |
-| **11. Catalyst**       | **System Scale**                                                                                                                                         |
-| **12. Relations**      | `ENHANCES: [UMB-OSLM-001](../UMB-OSLM-001_MasterArtifactRegistry_v11.0.md)`, `GOVERNED_BY: [CORE-CODEX-001](../CORE-CODEX-001_ThePhoenixCodex_v13.0.md)` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                                                                                                       |
+| Field | Value |
+| **13. Integrity Hash** | `[AUTO-GENERATED]` |
 
 ---
 
@@ -60,10 +61,8 @@
 > [!NOTE]
 > The following block is parsed by `TOOL-MAP-001` for architectural visualization.
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                                     |
-| :---------------------- | :---------------- | :----------------------------------------------------- |
-| UMB-PRS-001             | UPDATES           | Automates the Quick Reference mapping.                 |
-| AOP-MAR-001             | SUBSUMES          | Integrates back-end storage with front-end visibility. |
+| UMB-PRS-001 | UPDATES | Automates the Quick Reference mapping. |
+| AOP-MAR-001 | SUBSUMES | Integrates back-end storage with front-end visibility. |
 
 ---
 

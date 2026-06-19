@@ -101,6 +101,7 @@ class SynarcheCLI(cmd.Cmd):
     def __init__(self) -> None:
         """Initialize the CLI and load the command registry and supporting managers."""
         super().__init__()
+        self._scheduler: Any = None
 
         # Resolve Registry Path
         registry_path = os.path.normpath(
@@ -299,10 +300,10 @@ class SynarcheCLI(cmd.Cmd):
         Usage: APPLY_STANDARD --target:<Artifact_ID>
         """
         try:
-            from hephaestus.reforger import Reforger
+            from hephaestus.reforger import OmegaReforger
         except ImportError:
             try:
-                from src.hephaestus.reforger import Reforger
+                from src.hephaestus.reforger import OmegaReforger
             except ImportError:
                 print("Error: Could not import Reforger module.")
                 return
@@ -317,8 +318,9 @@ class SynarcheCLI(cmd.Cmd):
             print("Usage: APPLY_STANDARD --target:<Artifact_ID/Path>")
             return
 
-        reforger = Reforger()
-        success = reforger.apply_standard(target)
+        from pathlib import Path
+        reforger = OmegaReforger(target)
+        success = reforger.reforge_file(Path(target))
         if success:
             print("[SUCCESS] Standard Applied.")
         else:
@@ -543,11 +545,12 @@ class SynarcheCLI(cmd.Cmd):
     def do_SPEND_STARDUST(self, arg: str) -> None:
         """Invests collected Stardust into core system stats.
 
-        Usage: SPEND_STARDUST --target:<stat> --amount:<int>
+        Usage: SPEND_STARDUST --target:<stat> --amount:<int> [--json]
         """
         args = arg.split()
         target = None
         amount = 0
+        is_json = "--json" in arg
         for a in args:
             if a.startswith("--target:"):
                 target = a.split(":", 1)[1]
@@ -558,12 +561,18 @@ class SynarcheCLI(cmd.Cmd):
                     pass
 
         if not target or amount <= 0:
-            print("Usage: SPEND_STARDUST --target:<stat> --amount:<int>")
+            if is_json:
+                print('{"success": false, "error": "Missing parameters"}')
+            else:
+                print("Usage: SPEND_STARDUST --target:<stat> --amount:<int>")
             return
 
-        print(f"Investing {amount} Stardust into {target}...")
+        if not is_json:
+            print(f"Investing {amount} Stardust into {target}...")
         res = self.rpg.invest_stardust(target, amount)
-        if res.get("success"):
+        if is_json:
+            print(json.dumps(res))
+        elif res.get("success"):
             print(f"[ASCENSION] {target} updated to {res.get('new_value')}.")
             print(f"Stardust Remaining: {res.get('stardust_remaining')}")
         else:
@@ -600,7 +609,7 @@ class SynarcheCLI(cmd.Cmd):
     # PAD-SIP: Cognitive Scheduler Commands
     # ------------------------------------------------------------------
 
-    def _get_scheduler(self):
+    def _get_scheduler(self) -> Any:
         """Lazy-initialise the CognitiveScheduler with the live MemorySystem."""
         if hasattr(self, "_scheduler") and self._scheduler:
             return self._scheduler
@@ -675,7 +684,7 @@ class SynarcheCLI(cmd.Cmd):
                 return
             print(f"[COG-SCHED] Starting async loop (interval={interval}s). Type 'cognitive stop' to halt.")
 
-            async def _run():
+            async def _run() -> None:
                 await sched.start_loop(tick_interval_s=interval)
 
             try:
@@ -723,6 +732,8 @@ class SynarcheCLI(cmd.Cmd):
                 "types_mod",
                 os.path.join(repo_root, "src", "engine", "types.py"),
             )
+            assert spec is not None
+            assert spec.loader is not None
             mod = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(mod)
             event = mod.CognitiveEvent(
@@ -745,6 +756,8 @@ class SynarcheCLI(cmd.Cmd):
                 "gov_eng",
                 os.path.join(repo_root, "src", "cse", "validators", "governance_engine.py"),
             )
+            assert spec is not None
+            assert spec.loader is not None
             mod = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(mod)
             eng = mod.GovernanceEngine()

@@ -1,25 +1,44 @@
 # GUCA-CSL-COMMAND-001_LogInteractionPrompts_v1.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                      | Description       |
+| :------------------ | :--------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-CSL-COMMAND-001-LOGINTERACTIONPROMPTS-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-CSL-COMMAND-001_LogInteractionPrompts_v1.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                          | The Standard.     |
+| **Domain**          | `GVRN`                                                     | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                 | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                         | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                 | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                    | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                              | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                         | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                                                      | Description       |
-| :---------------- | :--------------------------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GUCA-CSL-COMMAND-001-LOGINTERACTIONPROMPTS-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-CSL-COMMAND-001_LogInteractionPrompts_v1.0.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                                          | The Standard.     |
-| **Domain**        | `GVRN`                                                     | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                 | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                              | The Network.      |
+| Key | Value | Description |
 
 ---
 
@@ -28,16 +47,20 @@ Title: CSL Interaction Prompts
 Source:
 
 - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UWB-RPG-BUILD-001_StrategicCSLIntegrationBriefing.md)
+
   Description: >
   Defines the Universal Command Architecture (GUCA) prompts for interacting with the Collaborative Synthesis Log (CSL).
   Version: 11.0
   Status: ACTIVE
   Compliance: OGLN v11.0
   Genesis:
+
 - Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769338800
+
   Tags:
+
 - #Command
 - #CSL
 - #Interaction
@@ -46,17 +69,14 @@ Source:
 ---
 
 > [!IMPORTANT]
-> **GENESIS STAMP**
 >
 > - **Reforged By:** Antigravity Agent (The Lightbinder)
 > - **Reforged Date:** 2026-01-25
 > - **Validation:** CSL Integration Phase 3 (Interaction).
-> - **Relations:** `TRIGGERS: AOP-CSL-PLAYBOOK-001`, `OUTPUTS: SELT-CSL-TEMPLATE-001`.
 
 # GUCA-CSL-COMMAND-001: CSL Interaction Prompts
 
 > **Domain**: ACT (Action)
-> **Evolution**: Purposeful Drive
 > **Signal**: ESF-HIGH
 
 ## I. Primary Commands
@@ -106,3 +126,5 @@ Source:
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

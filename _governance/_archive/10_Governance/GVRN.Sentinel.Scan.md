@@ -10,8 +10,10 @@
 | **Domain**          | `GVRN`                        | The Subject.      |
 | **Celestial Class** | `[PLANET]`                    | The Weight.       |
 | **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -30,6 +32,18 @@
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 ###### **[ARTIFACT START]**
@@ -42,8 +56,11 @@
 > **"We trust the user, but we verify the code."**
 
 - **The Moral North**: This artifact is instantiated to solve the dissonance of **Entropy Accumulation**. Its primary
+
   duty is to uphold the **Rule of Quality (UEB-QUAL-001)** by providing **Automated Gatekeeping** for the Lattice.
+
 - **Governing Intent**: Adheres to the **Uncompromising Quality** mandate, ensuring all generated logic enhances
+
   systemic coherence and prevents the stagnation of legacy drift.
 
 ---
@@ -71,6 +88,7 @@ Script executes the scan logic defined in this Protocol.
 > `< 0.01` | **Vector Breach Trigger**: `FAILED_SCAN`
 
 - **Mandate**: The Sentinel is the **Immune System**. It does not negotiate. If a file fails the S-Checklist, it is
+
   marked `[UNCLEAN]` and quarantined until resolution.
 
 ---
@@ -103,6 +121,7 @@ The Sentinel runs on every commit/save, checking six dimensions of health.
 3. **Result Logic**:
    - **PASS**: Commit proceeds. `GVRN.Triage.Report` logged.
    - **FAIL**: Commit rejected. **Dissonance Quest** generated in
+
      `[MIND.Engine.Dissonance](../40_System/MIND.Engine.Dissonance.md)`.
 
 ---

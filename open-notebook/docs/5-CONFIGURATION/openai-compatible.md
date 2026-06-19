@@ -20,14 +20,14 @@ Open Notebook can connect to any server using this format.
 
 ## Common Compatible Servers
 
-| Server | Use Case | URL |
-|--------|----------|-----|
-| **LM Studio** | Desktop GUI for local models | https://lmstudio.ai |
+| Server                    | Use Case                      | URL                                                |
+| ------------------------- | ----------------------------- | -------------------------------------------------- |
+| **LM Studio**             | Desktop GUI for local models  | https://lmstudio.ai                                |
 | **Text Generation WebUI** | Full-featured local inference | https://github.com/oobabooga/text-generation-webui |
-| **vLLM** | High-performance serving | https://github.com/vllm-project/vllm |
-| **Ollama** | Simple local models | (Use native Ollama provider instead) |
-| **LocalAI** | Local AI inference | https://github.com/mudler/LocalAI |
-| **llama.cpp server** | Lightweight inference | https://github.com/ggerganov/llama.cpp |
+| **vLLM**                  | High-performance serving      | https://github.com/vllm-project/vllm               |
+| **Ollama**                | Simple local models           | (Use native Ollama provider instead)               |
+| **LocalAI**               | Local AI inference            | https://github.com/mudler/LocalAI                  |
+| **llama.cpp server**      | Lightweight inference         | https://github.com/ggerganov/llama.cpp             |
 
 ---
 
@@ -49,6 +49,7 @@ Open Notebook can connect to any server using this format.
 5. Click **Save**, then **Test Connection**
 
 **Legacy (Deprecated) — Environment variables:**
+
 ```bash
 export OPENAI_COMPATIBLE_BASE_URL=http://localhost:1234/v1
 export OPENAI_COMPATIBLE_API_KEY=not-needed
@@ -240,12 +241,12 @@ Then in **Settings → API Keys**, add an **OpenAI-Compatible** credential with 
 
 The model name must match what your server expects:
 
-| Server | Model Name Format |
-|--------|-------------------|
-| LM Studio | As shown in LM Studio UI |
-| vLLM | HuggingFace model path |
-| Text Gen WebUI | As loaded in UI |
-| llama.cpp | Model file name |
+| Server         | Model Name Format        |
+| -------------- | ------------------------ |
+| LM Studio      | As shown in LM Studio UI |
+| vLLM           | HuggingFace model path   |
+| Text Gen WebUI | As loaded in UI          |
+| llama.cpp      | Model file name          |
 
 ---
 
@@ -352,11 +353,11 @@ Alternatively, add each as a separate credential with its own base URL.
 
 ### Model Selection
 
-| Model Size | RAM Needed | Speed |
-|------------|------------|-------|
-| 7B | 8GB | Fast |
-| 13B | 16GB | Medium |
-| 70B | 64GB+ | Slow |
+| Model Size | RAM Needed | Speed  |
+| ---------- | ---------- | ------ |
+| 7B         | 8GB        | Fast   |
+| 13B        | 16GB       | Medium |
+| 70B        | 64GB+      | Slow   |
 
 ### Quantization
 
@@ -370,6 +371,7 @@ llama-3-8b-f16.gguf     → ~16GB RAM, slower
 ### GPU Acceleration
 
 Enable GPU in your server for much faster inference:
+
 - LM Studio: Settings → GPU layers
 - vLLM: Automatic with CUDA
 - llama.cpp: `--n-gpu-layers 35`
@@ -378,15 +380,16 @@ Enable GPU in your server for much faster inference:
 
 ## Comparison: Native vs Compatible
 
-| Aspect | Native Provider | OpenAI Compatible |
-|--------|-----------------|-------------------|
-| **Setup** | API key only | Server + configuration |
-| **Models** | Provider's models | Any compatible model |
-| **Cost** | Pay per token | Free (local) |
-| **Speed** | Usually fast | Depends on hardware |
-| **Features** | Full support | Basic features |
+| Aspect       | Native Provider   | OpenAI Compatible      |
+| ------------ | ----------------- | ---------------------- |
+| **Setup**    | API key only      | Server + configuration |
+| **Models**   | Provider's models | Any compatible model   |
+| **Cost**     | Pay per token     | Free (local)           |
+| **Speed**    | Usually fast      | Depends on hardware    |
+| **Features** | Full support      | Basic features         |
 
 Use OpenAI-compatible when:
+
 - Running local models
 - Using custom/fine-tuned models
 - Privacy requirements

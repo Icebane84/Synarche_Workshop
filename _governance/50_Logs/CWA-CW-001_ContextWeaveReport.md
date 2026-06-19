@@ -1,36 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CWA-CW-001_CONTEXTWEAVEREPORT` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                    | Description       |
+| :------------------ | :--------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-CWA-CW-001-CONTEXTWEAVEREPORT-001` | The Sovereign ID. |
+| **Official Name**   | `CWA-CW-001_ContextWeaveReport.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                        | The Standard.     |
+| **Domain**          | `GVRN`                                   | The Subject.      |
+| **Celestial Class** | `[PLANET]`                               | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                    | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                               | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                  | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                       | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # CWA-CW-001_ContextWeaveReport.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CWA-CW-001-CONTEXTWEAVEREPORT-001` | The Sovereign ID. |
-| **Official Name** | `CWA-CW-001_ContextWeaveReport.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -46,13 +59,9 @@ The **ContextWeave Engine** (v13.0) is correctly identified as the **"Loom's Ana
 
 The engine has detected the following axiomatic links:
 
-### **Tier 1: Direct Dependencies**
-
 - **SYNG.Loom.Master**: The primary data source. The Engine cannot function without the Loom's graph.
 - **SYNG.Engine.Core**: The primary consumer. The CSE relies on this Engine for "intuition" and context.
 - **GUCA-CWA-001**: The operational interface. This command is the sole trigger for the Engine's weave protocols.
-
-### **Tier 2: Synergistic Resonance**
 
 - **COG.Episemantics.Core**: Strong synergistic resonance detected. The Engine utilizes Episemantic Markers to weigh the strength of connections.
 - **UMB-LEX-002**: Governance alignment confirmed. Normalization protocols strictly adhere to the Enum Governance Matrix.
@@ -91,3 +100,5 @@ No legacy artifacts or deprecated references were found in the defining manifest
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

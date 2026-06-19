@@ -17,6 +17,7 @@ Three things:
 ## Quick Decision: Which Provider?
 
 ### Option 1: Cloud Provider (Fastest)
+
 - **OpenRouter (recommended)** (access to all models with one key)
 - **OpenAI** (GPT)
 - **Anthropic** (Claude)
@@ -28,11 +29,13 @@ Setup: Get API key → Add credential in Settings UI → Done
 → Go to **[AI Providers Guide](ai-providers.md)**
 
 ### Option 2: Local (Free & Private)
+
 - **Ollama** (open-source models, on your machine)
 
 → Go to **[Ollama Setup](ollama.md)**
 
 ### Option 3: OpenAI-Compatible
+
 - **LM Studio** (local)
 - **Custom endpoints**
 
@@ -56,7 +59,8 @@ Format: KEY=value, one per line
 
 ### `docker.env` (Docker Deployment)
 
-You will use this file to hold your environment variables if you are using docker-compose and prefer not to put the variables directly in the compose file. 
+You will use this file to hold your environment variables if you are using docker-compose and prefer not to put the variables directly in the compose file.
+
 ```
 Located in: project root (or ./docker)
 Use for: Docker deployments
@@ -70,8 +74,7 @@ Loaded by: docker-compose.yml
 
 All of the settings provided below are to be placed inside your environment file (.env or docker.env depending on your setup).
 
-
-###  Surreal Database
+### Surreal Database
 
 This is the database used by the app.
 
@@ -84,7 +87,6 @@ SURREAL_DATABASE=open_notebook
 ```
 
 > The only thing that is critical to not miss is the hostname in the `SURREAL_URL`. Check what URL to use based on your deployment, [here](database.md).
-
 
 ### AI Provider (Credentials)
 
@@ -105,8 +107,8 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 
 > **LM Studio / OpenAI-Compatible**: Add an OpenAI-Compatible credential in Settings → API Keys. See [OpenAI-Compatible Guide](openai-compatible.md).
 
-
 ### API URL (If Behind Reverse Proxy)
+
 You only need to worry about this if you are deploying on a proxy or if you are changing port information. Otherwise, skip this.
 
 ```
@@ -121,6 +123,7 @@ Auto-detection works for most setups.
 ## Configuration by Scenario
 
 ### Scenario 1: Docker on Localhost (Default)
+
 ```env
 # In docker.env:
 OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
@@ -129,6 +132,7 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 ```
 
 ### Scenario 2: Docker on Remote Server
+
 ```env
 # In docker.env:
 OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
@@ -136,6 +140,7 @@ API_URL=http://your-server-ip:5055
 ```
 
 ### Scenario 3: Behind Reverse Proxy (Nginx/Cloudflare)
+
 ```env
 # In docker.env:
 OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
@@ -144,6 +149,7 @@ API_URL=https://your-domain.com
 ```
 
 ### Scenario 4: Using Ollama Locally
+
 ```env
 # In .env:
 OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
@@ -151,6 +157,7 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 ```
 
 ### Scenario 5: Using Azure OpenAI
+
 ```env
 # In docker.env:
 OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
@@ -162,6 +169,7 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 ## Configuration Sections
 
 ### [AI Providers](ai-providers.md)
+
 - OpenAI configuration
 - Anthropic configuration
 - Google Gemini configuration
@@ -171,12 +179,14 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 - OpenAI-compatible configuration
 
 ### [Database](database.md)
+
 - SurrealDB setup
 - Connection strings
 - Database vs. namespace
 - Running your own SurrealDB
 
 ### [Advanced](advanced.md)
+
 - Ports and networking
 - Timeouts and concurrency
 - SSL/security
@@ -187,41 +197,48 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 - Debugging and logging
 
 ### [Reverse Proxy](reverse-proxy.md)
+
 - Nginx, Caddy, Traefik configs
 - Custom domain setup
 - SSL/HTTPS configuration
 - Coolify and other platforms
 
 ### [Security](security.md)
+
 - Password protection
 - API authentication
 - Production hardening
 - Firewall configuration
 
 ### [Local TTS](local-tts.md)
+
 - Speaches setup for local text-to-speech
 - GPU acceleration
 - Voice options
 - Docker networking
 
 ### [Local STT](local-stt.md)
+
 - Speaches setup for local speech-to-text
 - Whisper model options
 - GPU acceleration
 - Docker networking
 
 ### [Ollama](ollama.md)
+
 - Setting up and pointing to an Ollama server
 - Downloading models
 - Using embedding
 
 ### [OpenAI-Compatible Providers](openai-compatible.md)
+
 - LM Studio, vLLM, Text Generation WebUI
 - Connection configuration
 - Docker networking
 - Troubleshooting
 
 ### [Complete Reference](environment-reference.md)
+
 - All environment variables
 - Grouped by category
 - What each one does
@@ -288,14 +305,14 @@ After configuration, verify it works:
 
 ## Common Mistakes
 
-| Mistake | Problem | Fix |
-|---------|---------|-----|
-| No credential configured | Models not available | Add credential in Settings → API Keys |
-| Missing encryption key | Can't save credentials | Set OPEN_NOTEBOOK_ENCRYPTION_KEY |
-| Wrong database URL | Can't start API | Check SURREAL_URL format |
-| Expose port 5055 | "Can't connect to server" | Expose 5055 in docker-compose |
-| Typo in env var | Settings ignored | Check spelling (case-sensitive!) |
-| Don't restart | Old config still used | Restart services after env changes |
+| Mistake                  | Problem                   | Fix                                   |
+| ------------------------ | ------------------------- | ------------------------------------- |
+| No credential configured | Models not available      | Add credential in Settings → API Keys |
+| Missing encryption key   | Can't save credentials    | Set OPEN_NOTEBOOK_ENCRYPTION_KEY      |
+| Wrong database URL       | Can't start API           | Check SURREAL_URL format              |
+| Expose port 5055         | "Can't connect to server" | Expose 5055 in docker-compose         |
+| Typo in env var          | Settings ignored          | Check spelling (case-sensitive!)      |
+| Don't restart            | Old config still used     | Restart services after env changes    |
 
 ---
 
@@ -320,6 +337,7 @@ Once configured:
 ## Summary
 
 **Minimal configuration to run:**
+
 1. Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` in your environment
 2. Start services
 3. Add AI provider credential in Settings → API Keys

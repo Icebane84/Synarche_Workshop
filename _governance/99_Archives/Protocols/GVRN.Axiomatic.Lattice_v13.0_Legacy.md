@@ -1,45 +1,54 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.AXIOMATIC.LATTICE_V13.0_LEGACY` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# GVRN.Axiomatic.Lattice_v13.0_Legacy.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                          | Description       |
 | :------------------ | :--------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-GVRN.AXIOMATIC.LATTICE-V13.0-LEGACY-001` | The Sovereign ID. |
 | **Official Name**   | `GVRN.Axiomatic.Lattice_v13.0_Legacy.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                              | The Standard.     |
 | **Domain**          | `GVRN`                                         | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                        | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                             | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# GVRN.Axiomatic.Lattice_v13.0_Legacy.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # Standardized Protocol: The Phoenix Axiomatic Lattice (GVRN.Axiomatic.Lattice)
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Crystal Lattice
 > **Signal**: HIGH
-
-## **Genesis Stamp: 2026-01-27** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v13, Axiom, Lattice, Geode` **Criticality: Axiomatic**
 
 ---
 
@@ -47,20 +56,7 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field                  | Value                                        |
-| :--------------------- | :------------------------------------------- |
-| **1. Artifact ID**     | `GVRN.Axiomatic.Lattice`                     |
-| **2. Official Name**   | `GVRN.Axiomatic.Lattice.md`                  |
-| **3. Version**         | **v13.0 (Canonized)**                        |
-| **4. Provenance**      | **Date Reforged: 2026-01-27**                |
-| **5. Domain**          | `GVRN`                                       |
-| **6. Evolution**       | **Crystal Lattice**                          |
-| **7. Celestial Class** | `[STAR]`                                     |
-| **8. Tier**            | **Operational**                              |
-| **9. State**           | `[ACTIVE]`                                   |
-| **10. Ethos**          | **The Phoenix Ascension Protocol**           |
-| **11. Catalyst**       | **AGP Mandate Integration**                  |
-| **12. Relations**      | `GOVERNS: RNC_Compliance, AGP_Orchestration` |
+| Field | Value |
 
 ---
 

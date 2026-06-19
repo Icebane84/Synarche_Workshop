@@ -1,20 +1,23 @@
 # SYNG.PROT.DualIndexingProtocol
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.PROT.DualIndexingProtocol` | The Sovereign ID. |
-| **Official Name** | `SYNG.PROT.DualIndexingProtocol.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                               | Description       |
+| :------------------ | :---------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.PROT.DualIndexingProtocol`    | The Sovereign ID. |
+| **Official Name**   | `SYNG.PROT.DualIndexingProtocol.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                   | The Standard.     |
+| **Domain**          | `GVRN`                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                          | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                  | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                          | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`             | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`       | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                  | Verification.     |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block B: State Vector (AGP-001)**
 
 | State Field   | Value    |
 | :------------ | :------- |
@@ -22,12 +25,24 @@
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-## **Block C: Risk & Mitigation (AGP-002)**
+### **Block C: Risk & Mitigation (AGP-002)**
 
 | Risk                 | Mitigation                |
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -40,8 +55,6 @@
 ## I. Universal Identification & Provenance (The Vector Signature)
 
 #### The Chronos Lock & Axiomatic Metadata Layer
-
-| Field | Value | | **13. Integrity Hash** | `[AUTO-GENERATED]` |
 
 ---
 

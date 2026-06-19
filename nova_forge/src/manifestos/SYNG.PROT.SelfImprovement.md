@@ -10,15 +10,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                           | Description       |
+| :---------------- | :------------------------------ | :---------------- |
 | **Artifact ID**   | `SYNG-PROT-SELFIMPROVEMENT-001` | The Sovereign ID. |
-| **Official Name** | `SYNG.PROT.SelfImprovement.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
-
+| **Official Name** | `SYNG.PROT.SelfImprovement.md`  | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**               | The Standard.     |
+| **Domain**        | `SYNG`                          | The Subject.      |
+| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry`     | The Network.      |
 
 ---
 

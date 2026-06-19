@@ -1,47 +1,56 @@
 # UMB-ARCH-PRESTIGE-001_PhoenixPrestigeArchitecture_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                              | Description       |
 | :------------------ | :----------------------------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-UMB-ARCH-PRESTIGE-001-PHOENIXPRESTIGEARCHITECTURE-V11.0-001` | The Sovereign ID. |
 | **Official Name**   | `UMB-ARCH-PRESTIGE-001_PhoenixPrestigeArchitecture_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                                  | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                                  | The Standard.     |
 | **Domain**          | `GVRN`                                                             | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                                         | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                                  | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                         | The Lifecycle.    |
+| **Evolution**       | `Cognitive Ascension`                                              | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                           | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                            | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                      | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                 | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # Universal Identification & Provenance (UIP)
 
-> | **Metric**         | **Value**                      |
-> | :----------------- | :----------------------------- |
-> | **Module ID**      | `UMB-ARCH-PRESTIGE-001`        |
-> | **Version**        | `v11.0`                        |
-> | **Evolution**      | **Cognitive Ascension**        |
-> | **Status**         | `ACTIVE`                       |
-> | **Type**           | `Blueprint`                    |
-> | **Classification** | `Planet`                       |
-> | **Authors**        | `System`                       |
-> | **Created**        | `2025-10-01`                   |
-> | **Updated**        | `2026-01-18`                   |
-> | **Authority**      | `CODEX-001`                    |
-> | **Tags**           | `Architecture, Prestige, Game` |
+> | **Metric** | **Value** |
+> | **Type** | `Blueprint` |
+> | **Classification** | `Planet` |
+> | **Authors** | `System` |
+> | **Created** | `2025-10-01` |
+> | **Updated** | `2026-01-18` |
+> | **Authority** | `CODEX-001` |
 
 # UMB-ARCH-PRESTIGE-001: Phoenix Prestige Architecture
-
-**Genesis Stamp**: 2026-01-18 | **Domain**: ARCH | **State**: CANONIZED
 
 > [!NOTE]
 > This document outlines the canonized **Phoenix Prestige Game Architecture**, defining the relationships between the Manual, the Calculation Protocol, and the Expansions.
@@ -93,3 +102,5 @@ We are applying the **20 Upgrades** inspired by the Phoenix Geode metaphor as a 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

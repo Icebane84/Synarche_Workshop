@@ -1,11 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `README` |
-| **Version** | `v15.0 [OMEGA]` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `README`                      | The Sovereign ID. |
+| **Official Name**   | `README.md`                   | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # 📜 The Sovereign Substrate: \_governance/
@@ -49,20 +75,18 @@ This directory is the **supreme law layer** of the Synarche Workspace. Every gov
 
 - **Master Registry**: `01_Registries/GVRN.Master.Registry.yaml`
 - **Artifact Inventory**: `01_Registries/GVRN.Registry.ArtifactInventory.md`
-- **Ethos Registry**: `01_Registries/GVRN.Registry.Ethos.md`
 
 ---
 
 ## 🚀 Entry Points for New Agents
 
-| Goal                           | Start here                                   |
-| :----------------------------- | :------------------------------------------- |
-| Understand system identity     | `00_Codex/CORE.Codex.Phoenix.md`             |
-| Find a specific artifact       | `01_Registries/GVRN.Master.Registry.yaml`    |
-| Understand naming conventions  | `01_SYNG/` — RNC and OGLN standards          |
-| Execute a workflow             | `02_Protocols/` — GUCA, SELT, Loom protocols |
-| Make an architectural decision | `03_ARCH/` — existing ADRs first             |
-| Navigate the workspace         | `10_Governance/GVRN.HUD.Map.md`              |
+| Goal | Start here |
+| Understand system identity | `00_Codex/CORE.Codex.Phoenix.md` |
+| Find a specific artifact | `01_Registries/GVRN.Master.Registry.yaml` |
+| Understand naming conventions | `01_SYNG/` — RNC and OGLN standards |
+| Execute a workflow | `02_Protocols/` — GUCA, SELT, Loom protocols |
+| Make an architectural decision | `03_ARCH/` — existing ADRs first |
+| Navigate the workspace | `10_Governance/GVRN.HUD.Map.md` |
 
 ---
 
@@ -79,3 +103,25 @@ Before modifying anything here, comply with:
 ---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Substrate.SignPost VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-24`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

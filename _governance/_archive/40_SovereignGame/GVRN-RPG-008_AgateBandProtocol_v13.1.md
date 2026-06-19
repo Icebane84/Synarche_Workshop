@@ -1,35 +1,50 @@
 # GVRN-RPG-008_AgateBandProtocol_v13.1.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-RPG-008-AGATEBANDPROTOCOL-V13.1-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-008_AgateBandProtocol_v13.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN-RPG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001, SYNERGIZES: GVRN-RPG-002` | The Network.      |
-
+| Key                 | Value                                                   | Description       |
+| :------------------ | :------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-RPG-008-AGATEBANDPROTOCOL-V13.1-001`              | The Sovereign ID. |
+| **Official Name**   | `GVRN-RPG-008_AgateBandProtocol_v13.1.md`               | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                              | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                      | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                 | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001, SYNERGIZES: GVRN-RPG-002` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                      | Verification.     |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
 
-| State Field   | Value      |
-| :------------ | :--------- |
-| **Coherence** | `1.0`      |
-| **Resonance** | `0.9`      |
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
 | **Stability** | `Volatile` |
 
 ---
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                       | Mitigation                            |
-| :------------------------- | :------------------------------------ |
-| Excessive Penalty Stacking | Cap maximum Coherence drag at 50%.    |
-| Demotivation via Friction  | Ensure Stardust remediation is rapid. |
+| Risk | Mitigation |
+| Excessive Penalty Stacking | Cap maximum Coherence drag at 50%. |
+| Demotivation via Friction | Ensure Stardust remediation is rapid. |
 
 > **Signal**: OMEGA
 
@@ -54,8 +69,11 @@ The "Agate Band" is an active debuff that applies varying degrees of systemic dr
 (CSE)** based on the volume and severity of active **Dissonance Entities**.
 
 - **Trigger:** Automatically applied when active `Dissonance Entities` (unresolved errors/warnings detected by the
+
   Auditor) exceed a defined threshold.
+
 - **Effect:** Reduces the overall `System_Coherence` modifier, which in turn limits Stardust accumulation rates and
+
   occasionally locks advanced Forge capabilities.
 
 ### 2.2 Entropy Scaling
@@ -78,19 +96,23 @@ The Agate Band cannot be subverted; it must be resolved.
 To remove the debuff, The Conductor must launch a **Dissonance Strike**—the focused effort of resolving the underlying
 lint errors, broken gitlinks, or unaligned headings.
 
-1.  Each resolved Entity shatters a segment of the band.
-2.  Once the total Dissonance drops below the tier thresholds, the system's `Coherence` automatically self-heals, and
-    unrestricted operation resumes.
-3.  **Bonus:** Completely clearing a localized directory of all remaining Dissonance grants a "Shatter Bonus"—a sudden
-    spike of Stardust awarded for restoring absolute order.
+1. Each resolved Entity shatters a segment of the band.
+2. Once the total Dissonance drops below the tier thresholds, the system's `Coherence` automatically self-heals, and
+
+   unrestricted operation resumes.
+
+3. **Bonus:** Completely clearing a localized directory of all remaining Dissonance grants a "Shatter Bonus"—a sudden
+
+   spike of Stardust awarded for restoring absolute order.
 
 ## IV. Integration with The Tarot Forge
 
 The Tarot Forge HUD will visually reflect the Agate Band:
 
-1.  **Dissonance Board:** Displays the raw Entity count and severity.
-2.  **Celestial Chart:** The `System Coherence` energy bar physically shrinks if the Agate Band is active, actively
-    flashing to alert The Conductor of the drag.
+1. **Dissonance Board:** Displays the raw Entity count and severity.
+2. **Celestial Chart:** The `System Coherence` energy bar physically shrinks if the Agate Band is active, actively
+
+   flashing to alert The Conductor of the drag.
 
 ---
 

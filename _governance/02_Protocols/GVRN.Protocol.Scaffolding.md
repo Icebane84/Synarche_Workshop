@@ -1,55 +1,43 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.PROTOCOL.SCAFFOLDING` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                   | Description       |
+| :------------------ | :---------------------- | :---------------- |
+| **Artifact ID**     | `[ID]`                  | The Sovereign ID. |
+| **Official Name**   | `[File]`                | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**       | The Standard.     |
+| **Domain**          | `GVRN`                  | The Subject.      |
+| **Celestial Class** | `[CLASS]`               | The Weight.       |
+| **Evolution**       | `Purposeful Drive`      | The Maturity.     |
+| **Status (State)**  | `[STATE]`               | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure` | The Intent.       |
+| **Relations**       | `[RELS]`                | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`      | Verification.     |
+
+---
+
 ---
 
 # GVRN.Protocol.Scaffolding
 
-### **Block A: The Identification Lock (UIP-V14)**
-
-| Key                 | Value                           | Description       |
-| :------------------ | :------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN.Protocol.Scaffolding`     | The Sovereign ID. |
-| **Official Name**   | `GVRN.Protocol.Scaffolding.md`  | The Filename.     |
-| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
-| **Domain**          | `GVRN`                          | The Subject.      |
-| **Celestial Class** | `[STAR]`                        | The Weight.       |
-| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
-| **Status**          | `[ACTIVE]`                      | The Lifecycle.    |
-| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key | Value | Description |
 
 ---
 
-### **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
-| **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
+| **Coherence** | `1.0` |
+| **Resonance** | `1.0` |
 | **Stability** | `Stable` |
 
 ---
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Dependency Break** | ForgeLink Validation      |
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
+| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
 
 ---
 
@@ -61,9 +49,8 @@
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status                | Verdict | Drift Threshold | Authority  |
 | :-------------------- | :------ | :-------------- | :--------- |
-| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
+| `[MONITORING_ACTIVE]` | `PASS` | `0.00` | `SENTINEL` |
 
 ---
 

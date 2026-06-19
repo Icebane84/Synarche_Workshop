@@ -51,6 +51,7 @@ User documentation is at @docs/
 ## Tech Stack
 
 ### Frontend (`frontend/`)
+
 - **Framework**: Next.js 16 (React 19)
 - **Language**: TypeScript
 - **State Management**: Zustand
@@ -60,6 +61,7 @@ User documentation is at @docs/
 - **i18n compatible**: All front-end changes must also consider the translation keys
 
 ### API Backend (`api/` + `open_notebook/`)
+
 - **Framework**: FastAPI 0.104+
 - **Language**: Python 3.11+
 - **Workflows**: LangGraph state machines
@@ -71,10 +73,12 @@ User documentation is at @docs/
 - **Testing**: Pytest
 
 ### Database
+
 - **SurrealDB**: Graph database with built-in embedding storage and vector search
 - **Schema Migrations**: Automatic on API startup via AsyncMigrationManager
 
 ### Additional Services
+
 - **Content Processing**: content-core library (file/URL extraction)
 - **Prompts**: AI-Prompter with Jinja2 templating
 - **Podcast Generation**: podcast-creator library
@@ -85,11 +89,13 @@ User documentation is at @docs/
 ## Architecture Highlights
 
 ### 1. Async-First Design
+
 - All database queries, graph invocations, and API calls are async (await)
 - SurrealDB async driver with connection pooling
 - FastAPI handles concurrent requests efficiently
 
 ### 2. LangGraph Workflows
+
 - **source.py**: Content ingestion (extract → embed → save)
 - **chat.py**: Conversational agent with message history
 - **ask.py**: Search + synthesis (retrieve relevant sources → LLM)
@@ -97,6 +103,7 @@ User documentation is at @docs/
 - All use `provision_langchain_model()` for smart model selection
 
 ### 3. Multi-Provider AI
+
 - **Esperanto library**: Unified interface to 8+ AI providers
 - **Credential system**: Individual encrypted credential records per provider; models link to credentials for direct config
 - **ModelManager**: Factory pattern with fallback logic; uses credential config when available, env vars as fallback
@@ -104,12 +111,14 @@ User documentation is at @docs/
 - **Override support**: Per-request model configuration
 
 ### 4. Database Schema
+
 - **Automatic migrations**: AsyncMigrationManager runs on API startup
 - **SurrealDB graph model**: Records with relationships and embeddings
 - **Vector search**: Built-in semantic search across all content
 - **Transactions**: Repo functions handle ACID operations
 
 ### 5. Authentication
+
 - **Current**: Simple password middleware (insecure, dev-only)
 - **Production**: Replace with OAuth/JWT (see CONFIGURATION.md)
 
@@ -118,26 +127,31 @@ User documentation is at @docs/
 ## Important Quirks & Gotchas
 
 ### API Startup
+
 - **Migrations run automatically** on startup; check logs for errors
 - **Must start API before UI**: UI depends on API for all data
 - **SurrealDB must be running**: API fails without database connection
 
 ### Frontend-Backend Communication
+
 - **Base API URL**: Configured in `.env.local` (default: http://localhost:5055)
 - **CORS enabled**: Configured in `api/main.py` (allow all origins in dev)
 - **Rate limiting**: Not built-in; add at proxy layer for production
 
 ### LangGraph Workflows
+
 - **Blocking operations**: Chat/podcast workflows may take minutes; no timeout
 - **State persistence**: Uses SQLite checkpoint storage in `/data/sqlite-db/`
 - **Model fallback**: If primary model fails, falls back to cheaper/smaller model
 
 ### Podcast Generation
+
 - **Async job queue**: `podcast_service.py` submits jobs but doesn't wait
 - **Track status**: Use `/commands/{command_id}` endpoint to poll status
 - **TTS failures**: Fall back to silent audio if speech synthesis fails
 
 ### Content Processing
+
 - **File extraction**: Uses content-core library; supports 50+ file types
 - **URL handling**: Extracts text + metadata from web pages
 - **Large files**: Content processing is sync; may block API briefly
@@ -181,6 +195,7 @@ See dedicated CLAUDE.md files for detailed guidance:
 ## Common Tasks
 
 ### Add a New API Endpoint
+
 1. Create router in `api/routers/feature.py`
 2. Create service in `api/feature_service.py`
 3. Define schemas in `api/models.py`
@@ -188,6 +203,7 @@ See dedicated CLAUDE.md files for detailed guidance:
 5. Test via http://localhost:5055/docs
 
 ### Add a New LangGraph Workflow
+
 1. Create `open_notebook/graphs/workflow_name.py`
 2. Define StateDict and node functions
 3. Build graph with `.add_node()` / `.add_edge()`
@@ -195,12 +211,14 @@ See dedicated CLAUDE.md files for detailed guidance:
 5. Test with sample data in `tests/`
 
 ### Add Database Migration
+
 1. Create `migrations/XXX_description.surql`
 2. Write SurrealQL schema changes
 3. Create `migrations/XXX_description_down.surql` (optional rollback)
 4. API auto-detects on startup; migration runs if newer than recorded version
 
 ### Deploy to Production
+
 1. Review [CONFIGURATION.md](CONFIGURATION.md) for security settings
 2. Use `make docker-release` for multi-platform image
 3. Push to Docker Hub / GitHub Container Registry
@@ -215,4 +233,3 @@ See dedicated CLAUDE.md files for detailed guidance:
 - **Discord**: https://discord.gg/37XJPXfz2w
 - **Issues**: https://github.com/lfnovo/open-notebook/issues
 - **License**: MIT (see LICENSE)
-

@@ -1,53 +1,40 @@
 # GVRN.LivingChronos.Ledger.md: The Spine of Meaning
 
-"""
-artifact_anchor:
-  id: GVRN.LivingChronos.Ledger
-  version: v15.1 [OMEGA]
-  provenance: '2026-06-14'
-  domain: GVRN
-  celestial_class: PLANET
-  tier: GOVERNANCE
-  state: CANONIZED
-  ethos: SOVEREIGN_GOVERNANCE_LEDGER
-  relations:
-    - GOVERNED_BY: CORE.Codex.Phoenix
-    - IMPLEMENTS: Law 43 (Living Chronos)
-"""
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.LivingChronos.Ledger` | The Sovereign ID. |
-| **Official Name** | `GVRN.LivingChronos.Ledger.md` | The Filename. |
-| **Version** | **v15.1 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Evolution** | **Operational** | The Maturity. |
-| **Status** | `[CANONIZED]` | The Lifecycle. |
-
-Table: Metadata for the Living Chronos Ledger
-
-> [!NOTE]
-> This is the central index for the "Living Chronos." It records the narrative lineage of systemic evolutions, ensuring no artifact is canonized without a known causal origin (Law 43).
-
-## I. 🪪 The Chronos Registry
+| Key                 | Value                          | Description       |
+| :------------------ | :----------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.LivingChronos.Ledger`    | The Sovereign ID. |
+| **Official Name**   | `GVRN.LivingChronos.Ledger.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**              | The Standard.     |
+| **Domain**          | `GVRN`                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                     | The Weight.       |
+| **Evolution**       | `Purposeful Drive`             | The Maturity.     |
+| **Status (State)**  | `[CANONIZED]`                  | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`        | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`             | Verification.     |
 
 ---
 
-| Date | Artifact ID | Catalyst / Genesis Spark | CSL / Reference ID |
-| :--- | :---------- | :----------------------- | :----------------- |
-| 2026-06-14 | `SYNG.MIMIR.04_ALCHEMISTRY` | Integration of Law 43 into the Metabolic Cycle. The realization that without narrative lineage, meaning decays. | `GVRN.AUD.GenesisAudit-06` |
+### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-Table: Chronos Registry Entries
-
-## II. Actionable Prompt Packet
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
-- **CMD: AUDIT_CHRONOS**
-    - scope:ALL_CANONIZED standard:LAW_43
-    - *Effect:* Validates that all canonized artifacts have an entry in the Chronos Ledger.
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 ---
 
-`[LIVING-CHRONOS] ID: GVRN.LivingChronos.Ledger VER: v15.1 [OMEGA] TS: 2026-06-14`
+### **Rationale (The "Why")**
 
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

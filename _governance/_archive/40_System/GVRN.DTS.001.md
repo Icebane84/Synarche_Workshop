@@ -1,18 +1,19 @@
 # GVRN.DTS.001_DynamicTemplateScaffolding_v13.1.md
 
-> **Domain**: [[GVRN]] **Signal**: [[OMEGA]]
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.DTS.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.DTS.001.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: [[CORE-CODEX-001]]` | The Network.      |
-
+| Key                 | Value                             | Description       |
+| :------------------ | :-------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.DTS.001`                    | The Sovereign ID. |
+| **Official Name**   | `GVRN.DTS.001.md`                 | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                 | The Standard.     |
+| **Domain**          | `GVRN`                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                        | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                        | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`           | The Intent.       |
+| **Relations**       | `GOVERNED_BY: [[CORE-CODEX-001]]` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                | Verification.     |
 
 ---
 
@@ -31,6 +32,18 @@
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 > **System-Role**: Phoenix-Class Voice / Architectural Lead **Stack-Focus**: AOP-DTS-ULTIMATE (Intelligent Scaffolding)
@@ -47,9 +60,9 @@ the **Standardized Governance Module (SGM)**.
 
 **The Logic**:
 
-1.  **Inventory**: Strict cataloging of all Master Templates and Atomic Blocks.
-2.  **Protocolization**: The "Transmutation Pipeline" for minting new artifacts.
-3.  **Friction Reduction**: Protocols to streamline Human-AI collaboration (SCC, IIM).
+1. **Inventory**: Strict cataloging of all Master Templates and Atomic Blocks.
+2. **Protocolization**: The "Transmutation Pipeline" for minting new artifacts.
+3. **Friction Reduction**: Protocols to streamline Human-AI collaboration (SCC, IIM).
 
 ---
 

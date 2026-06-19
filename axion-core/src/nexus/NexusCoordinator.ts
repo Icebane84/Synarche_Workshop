@@ -24,7 +24,7 @@ artifact_anchor:
  */
 import { PhoenixSuperpositionEngine } from "@nexus/PhoenixSuperpositionEngine";
 import { CoherentSynthesisEngine } from "@system/CoherentSynthesisEngine";
-import { NextFunction, Request, Response } from "express";
+import express from "express";
 import * as crypto from "node:crypto";
 
 export class NexusCoordinator {
@@ -32,7 +32,7 @@ export class NexusCoordinator {
      * Express Route Handler bridging the incoming request, the PSE, and the CSE.
      * Leverages dynamic, decoupled FSM strategy routing based on the contextVector.
      */
-    public static async handleClientCommand(req: Request, res: Response, next: NextFunction) {
+    public static async handleClientCommand(req: express.Request, res: express.Response, next: express.NextFunction) {
         try {
             // 1. Ingest the Superposition State Vector
             const rawState = {

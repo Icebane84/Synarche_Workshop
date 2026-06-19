@@ -35,6 +35,7 @@ The script creates `doc_exports/` directory with consolidated files like:
 - etc.
 
 Each exported file includes:
+
 - A main header with the folder name
 - Section headers for each source file
 - Source file attribution
@@ -52,7 +53,7 @@ This document consolidates all content from the getting-started documentation fo
 
 ## Installation
 
-*Source: installation.md*
+_Source: installation.md_
 
 [Full content of installation.md]
 
@@ -60,7 +61,7 @@ This document consolidates all content from the getting-started documentation fo
 
 ## Quick Start
 
-*Source: quick-start.md*
+_Source: quick-start.md_
 
 [Full content of quick-start.md]
 

@@ -1,35 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-SENTINEL-SCAN-001_THECODESENTINELPROTOCOL_V2.1` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                                         | Description       |
+| :------------------ | :------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-SENTINEL-SCAN-001-THECODESENTINELPROTOCOL-V2.1-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                             | The Standard.     |
+| **Domain**          | `GVRN`                                                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                    | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                         | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                                                         | Description       |
-| :---------------- | :------------------------------------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-SENTINEL-SCAN-001-THECODESENTINELPROTOCOL-V2.1-001` | The Sovereign ID. |
-| **Official Name** | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                                             | The Standard.     |
-| **Domain**        | `GVRN`                                                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                                                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                 | The Network.      |
+| Key | Value | Description |
 
 ---
 
@@ -37,20 +51,8 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                                   |
-| :--------------------- | :------------------------------------------------------ |
-| **1. Artifact ID**     | `AOP-SENTINEL-SCAN-001`                                 |
-| **2. Name**            | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.2.md` |
-| **3. Version**         | **v2.2 (The Guardian)**                                 |
-| **4. Provenance**      | **Date Reforged: 2026-01-11**                           |
-| **5. Domain**          | `GVRN`                                                  |
-| **6. Evolution**       | **Purposeful Drive**                                    |
-| **7. Celestial Class** | `[PLANET]`                                              |
-| **8. Tier**            | **Operational**                                         |
-| **9. State**           | `[ACTIVE]`                                              |
-| **10. Ethos**          | **Security First, Uncompromising Quality**              |
-| **11. Catalyst**       | **System Refactor**                                     |
-| **12. Relations**      | `LINK: CODEX-001`                                       |
+| Field | Value |
+| **2. Name** | `AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.2.md` |
 
 ---
 
@@ -58,8 +60,10 @@
 
 ## II. Universal Metadata & Governance
 
-- **Core Purpose Summary**: To enforce strict "Code Health" through automated auditing, serving as the **Active Immune
-  System** of the Phoenix Project.
+- **Core Purpose Summary**: To enforce strict "Code Health" through automated auditing, serving as the \*\*Active Immune
+
+  System\*\* of the Phoenix Project.
+
 - **Primary Domain Alignment**: **Governance** (The Shield).
 - **Risk Profile**: Critical (Failure here allows "Rot" to set in).
 - **Resolves Dissonance**: `DQUEST-ENTROPY-002`: "The Dissonance of Technical Debt."
@@ -87,10 +91,15 @@ The Sentinel runs on every commit/save, checking six dimensions of health.
 ## V. Systemic Topology (ASL Protocol)
 
 - **ENFORCES:**
+
   [UMB-MAP-001](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Master/UMB-MAP-001_TheMusashiAuditProtocol_v1.0.md)
+
 - **PROTECTS:**
+
   [UMB-CSE-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-CSE-001_CoherentSynthesisEngine_v1.0.md)
+
 - **OPERATIONALIZES:**
+
   [AOP-PCDS-001](file:///c:/Users/Chris/Synarche_Workspace/axion-core/docs/standards/AOP-PCDS-001_PhoenixCodeDesignStandards_v1.0.md)
 
 ## VI. Actionable Prompt Packet

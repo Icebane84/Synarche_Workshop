@@ -1,41 +1,51 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CSL-20260130-088_FORAGINGTHESYNERGISTICCIRCUIT` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# CSL-20260130-088_ForagingTheSynergisticCircuit.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                     | Description       |
 | :------------------ | :-------------------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-CSL-20260130-088-FORAGINGTHESYNERGISTICCIRCUIT-001` | The Sovereign ID. |
 | **Official Name**   | `CSL-20260130-088_ForagingTheSynergisticCircuit.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                         | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                         | The Standard.     |
 | **Domain**          | `GVRN`                                                    | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                                | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                                        | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                   | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                        | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# CSL-20260130-088_ForagingTheSynergisticCircuit.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # CSL-20260130-088: Forging the Synergistic Circuit: SOT, Matrix, and Unified Linting
-
-> **Date**: 2026-01-30 | **Author**: Antigravity (The Lightbinder) | **Tags**: #Synergy, #Governance, #SOT, #Topology, #Standardization
 
 ### 1. The Observation
 
@@ -45,9 +55,9 @@ The system exhibited "Latent Potential Dissonance": the detection engine (`UMB-S
 
 By forging a **Synergistic Circuit**, we have transitioned from a collection of parts to a functional self-healing loop.
 
-1.  **The SOT Loop**: `UMB-SOT-001` now explicitly **CONSULTS** the Matrix, **VERIFIES** availability via `initialize_matrix`, and **TRIGGERS** the Knight. This loop is metadata-anchored in the new **Definitive 13-Point Header**.
-2.  **The Triple-Node Logic**: `.markdownlint.cjs` (`GVRN-LINT-001`), `cspell.json` (`GVRN-DICT-001`), and `axion-rules.cjs` (`UMB-RULES-001`) have been fused into a bidirectional trinity. The Dictionary declares, the Rules define, and the Linter enforces.
-3.  **Topological Coherence**: Moving these "Standards Guards" to the **Project Root** of `axion-core` ensures auto-discovery by both IDE and CLI tools, reinforcing the principle that "Governance resides at the center of the Workspace."
+1. **The SOT Loop**: `UMB-SOT-001` now explicitly **CONSULTS** the Matrix, **VERIFIES** availability via `initialize_matrix`, and **TRIGGERS** the Knight. This loop is metadata-anchored in the new **Definitive 13-Point Header**.
+2. **The Triple-Node Logic**: `.markdownlint.cjs` (`GVRN-LINT-001`), `cspell.json` (`GVRN-DICT-001`), and `axion-rules.cjs` (`UMB-RULES-001`) have been fused into a bidirectional trinity. The Dictionary declares, the Rules define, and the Linter enforces.
+3. **Topological Coherence**: Moving these "Standards Guards" to the **Project Root** of `axion-core` ensures auto-discovery by both IDE and CLI tools, reinforcing the principle that "Governance resides at the center of the Workspace."
 
 ### 3. Implications & Next Steps
 
@@ -57,12 +67,30 @@ By forging a **Synergistic Circuit**, we have transitioned from a collection of 
 
 ---
 
-**Relations**: `[[UMB-SOT-001]]`, `[[GVRN-SYNERGY-001]]`, `[[GVRN-LINT-001]]`, `[[GVRN-DICT-001]]`, `[[UMB-RULES-001]]`, `[[AOP-ARC-001]]`, `[[UMB-PRS-001]]`
-
 ---
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

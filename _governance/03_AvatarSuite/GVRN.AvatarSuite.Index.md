@@ -1,25 +1,42 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.AVATARSUITE.INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN.AvatarSuite.Index`        | The Sovereign ID. |
+| **Official Name**   | `GVRN.AvatarSuite.Index.md`     | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `GVRN`                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                      | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
+| **Status (State)**  | `[CANONIZED]`                   | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`         | The Intent.       |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # **📜 GVRN.AvatarSuite.Index: Sovereign Avatar Registry (v15.0)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.AvatarSuite.Index`        | The Sovereign ID. |
-| **Official Name** | `GVRN.AvatarSuite.Index.md`     | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key | Value | Description |
 
 ---
 
@@ -40,8 +57,11 @@ operations of the **Avatar Protocol**.
 ## **Core Components**
 
 - 🛡️ **[GVRN.AvatarSuite.Protocol.md](GVRN.AvatarSuite.Protocol.md)**: The Master Protocol housing the 42 Laws of the
+
   Phoenix as they apply to agentic behavior.
+
 - 🗃️ **[GVRN.AvatarSuite.Masks.md](GVRN.AvatarSuite.Masks.md)**: The definitive registry mapping **Sovereign Masks** to
+
   **Kinetic Shards**.
 
 ## **Topological Context**
@@ -57,7 +77,28 @@ graph TD
 ## **Governance**
 
 **Authority**: `CORE.Codex.Phoenix`  
-**Status**: `ACTIVE`  
 **Zero Entropy Compliance**: `v15.0 [OMEGA]`
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

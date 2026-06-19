@@ -1,36 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `INT-EMOJI-001_PHOENIXCONTEXTBROKER_V13.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                               | Description       |
+| :------------------ | :-------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-INT-EMOJI-001-PHOENIXCONTEXTBROKER-V13.0-001` | The Sovereign ID. |
+| **Official Name**   | `INT-EMOJI-001_PhoenixContextBroker_v13.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                   | The Standard.     |
+| **Domain**          | `GVRN`                                              | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                          | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                               | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                          | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                             | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                       | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                  | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # INT-EMOJI-001_PhoenixContextBroker_v13.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-INT-EMOJI-001-PHOENIXCONTEXTBROKER-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `INT-EMOJI-001_PhoenixContextBroker_v13.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -38,21 +51,8 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                                                      |
-| :--------------------- | :------------------------------------------------------------------------- |
-| **1. Artifact ID**     | `INT-EMOJI-001`                                                            |
-| **2. Official Name**   | `INT-EMOJI-001_PhoenixContextBroker_v13.0.md`                              |
-| **3. Version**         | **v13.0**                                                                  |
-| **4. Provenance**      | **Reforged: 2026-02-01**                                                   |
-| **5. Domain**          | `ARCH`                                                                     |
-| **6. Evolution**       | **Cognitive Ascension**                                                    |
-| **7. Celestial Class** | `[PLANET]`                                                                 |
-| **8. Tier**            | **Operational**                                                            |
-| **9. Status (State)**  | `[ACTIVE]`                                                                 |
-| **10. Ethos**          | **Semantic Enrichment**                                                    |
-| **11. Catalyst**       | **Protocol Visualization**                                                 |
-| **12. Relations**      | `LINK: [UMB-AG-001](../agents/UMB-AG-001_AntigravityIntegration_v13.0.md)` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                                         |
+| Field | Value |
+| **13. Integrity Hash** | `[AUTO-GENERATED]` |
 
 ---
 
@@ -92,12 +92,12 @@ Traditional logging and status indicators often fail to convey the nuanced, dyna
 
 The integration utilizes a **persistent webhook subscription model**.
 
-1.  **Event Trigger:** Commit to `PROJECT-OMEGA`.
-2.  **Payload:** Webhook with Entity ID and New State.
-3.  **Middleware:** Lightweight Middleware Component (LMC) receives payload.
-4.  **Query:** LMC queries `PHOENIX-EMOJICXT-001`.
-5.  **Retrieval:** Service returns Emoji URI/Unicode.
-6.  **Rendering:** UI renders context.
+1. **Event Trigger:** Commit to `PROJECT-OMEGA`.
+2. **Payload:** Webhook with Entity ID and New State.
+3. **Middleware:** Lightweight Middleware Component (LMC) receives payload.
+4. **Query:** LMC queries `PHOENIX-EMOJICXT-001`.
+5. **Retrieval:** Service returns Emoji URI/Unicode.
+6. **Rendering:** UI renders context.
 
 ## V. Actionable Prompt Packet (APP)
 

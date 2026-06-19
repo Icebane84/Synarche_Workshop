@@ -1,25 +1,68 @@
----
 # Block A: Universal Identification & Provenance (UIP-V15)
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                              | Description       |
+| :------------------ | :--------------------------------- | :---------------- |
+| **Artifact ID**     | `SELT.NexusIngestion.ShadowLog`    | The Sovereign ID. |
+| **Official Name**   | `SELT.NexusIngestion.ShadowLog.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                  | The Standard.     |
+| **Domain**          | `GVRN`                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                         | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                 | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                         | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`            | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`      | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                 | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 artifact_anchor:
-  id: "GVRN.NEXUS.INGEST.001"
-  version: "v15.0 [OMEGA]"
-  provenance: "2026-04-23"
-  domain: "GVRN"
-  celestial_class: "MOON"
-  tier: "DATA"
-  state: "CANONIZED"
-  ethos: "ZERO-ENTROPY_INGESTION_LOG"
-  relations:
+id: "GVRN.NEXUS.INGEST.001"
+version: "v15.0 [OMEGA]"
+provenance: "2026-04-23"
+domain: "GVRN"
+celestial_class: "MOON"
+tier: "DATA"
+state: "CANONIZED"
+ethos: "ZERO-ENTROPY_INGESTION_LOG"
+relations:
+
     - type: "SYNERGIZES"
+
       node: "INFR.FORGE_DAEMON.001"
+
     - type: "SYNERGIZES"
+
       node: "axion-core/src/cse/sourcemap.py"
+
     - type: "SYNERGIZES"
+
       node: "axion-core/src/nexus/nexus_worker.js"
+
     - type: "DEPENDS_ON"
+
       node: ".agent/workflows/validation/finalize_artifact.md"
+
     - type: "SYNERGIZES"
+
       node: ".agent/skills/synergistic-opportunity-weaving/SKILL.md"
+
 ---
 
 # SELT Shadow Log — @NEXUS Transclude Ingestion
@@ -57,20 +100,19 @@ artifact_anchor:
 
 ## II. Ingestion Manifest (The Cargo)
 
-| ID                      | Source File                                | Canonical Target                                      | Layer             |
-| :---------------------- | :----------------------------------------- | :---------------------------------------------------- | :---------------- |
-| TOOL.Forge.SourceMap    | `@NEXUS/import re.py`                      | `axion-core/src/cse/sourcemap.py`                     | `@system/`        |
-| TOOL.Forge.Daemon       | `@NEXUS/forge_daemon.py`                   | `axion-core/tools/forge_daemon.py`                    | `@system/`        |
-| TOOL.GUCA.Command       | `@NEXUS/GUCACommand.py`                    | `axion-core/src/cse/guca_command.py`                  | `@system/`        |
-| TOOL.Coverage.Gate      | `@NEXUS/check_coverage.py`                 | `axion-core/tools/check_coverage.py`                  | `@shield/`        |
-| NEXUS.Worker.State      | `@NEXUS/nexus_worker.js`                   | `axion-core/src/nexus/nexus_worker.js`                | `@nexus/`         |
-| NEXUS.Worker.Handshake  | `@NEXUS/nexus_handshake.js`                | `axion-core/src/nexus/nexus_handshake.js`             | `@nexus/@shield/` |
-| SHIELD.Challenge.Client | `@NEXUS/shield_challenge.js`               | `axion-core/src/nexus/shield_challenge.js`            | `@shield/`        |
-| FABRIC.Synapse.Logic    | `@NEXUS/useSynapseLogic.ts`                | `axion-core/src/nexus/useSynapseLogic.ts`             | `@nexus/`         |
-| TOOL.Forge.UMB          | `@NEXUS/Forge__UMB.js`                     | `_governance/tools/Forge__UMB.js`                     | `@loom/`          |
-| TOOL.CMD.WrapMetadata   | `@NEXUS/CMD.WRAP_METADATA.js`              | `.agent/tools/CMD.WRAP_METADATA.js`                   | `@system/`        |
-| GVRN.CI.ForgePR         | `@NEXUS/axion_forge_pr.yml`                | `.github/workflows/axion_forge_pr.yml`                | `@shield/`        |
-| SEED.Intent.Resolution  | `@NEXUS/SEED.GVRN.Intent_Resolution_...md` | `_governance/10_Governance/GVRN.Intent.Resolution.md` | `@atlas/`         |
+| ID | Source File | Canonical Target | Layer |
+| TOOL.Forge.SourceMap | `@NEXUS/import re.py` | `axion-core/src/cse/sourcemap.py` | `@system/` |
+| TOOL.Forge.Daemon | `@NEXUS/forge_daemon.py` | `axion-core/tools/forge_daemon.py` | `@system/` |
+| TOOL.GUCA.Command | `@NEXUS/GUCACommand.py` | `axion-core/src/cse/guca_command.py` | `@system/` |
+| TOOL.Coverage.Gate | `@NEXUS/check_coverage.py` | `axion-core/tools/check_coverage.py` | `@shield/` |
+| NEXUS.Worker.State | `@NEXUS/nexus_worker.js` | `axion-core/src/nexus/nexus_worker.js` | `@nexus/` |
+| NEXUS.Worker.Handshake | `@NEXUS/nexus_handshake.js` | `axion-core/src/nexus/nexus_handshake.js` | `@nexus/@shield/` |
+| SHIELD.Challenge.Client | `@NEXUS/shield_challenge.js` | `axion-core/src/nexus/shield_challenge.js` | `@shield/` |
+| FABRIC.Synapse.Logic | `@NEXUS/useSynapseLogic.ts` | `axion-core/src/nexus/useSynapseLogic.ts` | `@nexus/` |
+| TOOL.Forge.UMB | `@NEXUS/Forge__UMB.js` | `_governance/tools/Forge__UMB.js` | `@loom/` |
+| TOOL.CMD.WrapMetadata | `@NEXUS/CMD.WRAP_METADATA.js` | `.agent/tools/CMD.WRAP_METADATA.js` | `@system/` |
+| GVRN.CI.ForgePR | `@NEXUS/axion_forge_pr.yml` | `.github/workflows/axion_forge_pr.yml` | `@shield/` |
+| SEED.Intent.Resolution | `@NEXUS/SEED.GVRN.Intent_Resolution_...md` | `_governance/10_Governance/GVRN.Intent.Resolution.md` | `@atlas/` |
 
 ---
 
@@ -115,3 +157,25 @@ artifact_anchor:
 ---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: SELT.NexusIngestion.ShadowLog VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

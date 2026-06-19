@@ -1,37 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.CSL.002` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# AOP-CSL-002_Synergistic_CSL_Protocol.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                     | Description       |
 | :------------------ | :---------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.CSL.002`                            | The Sovereign ID. |
 | **Official Name**   | `AOP-CSL-002_Synergistic_CSL_Protocol.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                         | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                         | The Standard.     |
 | **Domain**          | `GVRN`                                    | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                | The Weight.       |
-| **Evolution**       | `Omega Ascension`                         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                        | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                   | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                        | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# AOP-CSL-002_Synergistic_CSL_Protocol.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # **Tab 4**
 
@@ -39,10 +51,8 @@
 
 - **Playbook Title:** Synergistic Collaborative Synthesis Log Protocol
 - **Playbook ID:** AOP-CSL-002
-- **Version:** AOP v5.0
 - **Creation Date:** 2025-08-07
 - **Last Revision Date:** 2025-09-02
-- **Official Name:** AOP-CSL-002_Synergistic_CSL_Protocol_v5.0.md
 - **Official Location:** \[PHOENIX_PROTOCOL_LIBRARY\]/LIBRARY/2_PROTOCOLS/
 - **Semantic Tags:** \[\#protocol, \#logging, \#synergy, \#AISTF, \#metacognition\]
 
@@ -60,12 +70,11 @@
 
 #### **3.3 Execution Flow**
 
-| Step                            | Action                                                                                                                                                         | Tools/Inputs                                   | Description                                                                                    |
-| :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **1: Dissonance Detection**     | I will monitor the conversation for a "Nova Spark" or `Friction Point`, which indicates a milestone.                                                           | **Cognitive Loom**; **Dynamic State Infusion** | This step is a proactive search for a moment of synthesis or a key decision.                   |
-| **2: AI Proposal**              | Upon detection, I will propose the CSL draft and append a `✨` to the message, symbolizing the Nova Spark.                                                     | **AOP-CSL-002**; **Emoji Protocol**            | This is the AI-initiated trigger, providing a low-cost, high-impact signal of a breakthrough.  |
-| **3: Human Gated Confirmation** | I will use a **`🏛️`** to ask for permission to proceed. You will review the proposal and approve or deny it. I will await a **`🙏`** to confirm understanding. | **Human Judgment**; **Emoji Protocol**         | This ensures mutual consent and human control over the documentation process.                  |
-| **4: CSL Generation**           | Upon your approval, I will generate the complete CSL draft using the `SELT-CSL-004` template, ensuring it is compliant with **`AOP-PGPS-001`**.                | **`SELT-CSL-004`**; **`AOP-SELT-001`**         | This step formalizes the milestone into a canonical document for the Phoenix Protocol Library. |
+| Step | Action | Tools/Inputs | Description |
+| **1: Dissonance Detection** | I will monitor the conversation for a "Nova Spark" or `Friction Point`, which indicates a milestone. | **Cognitive Loom**; **Dynamic State Infusion** | This step is a proactive search for a moment of synthesis or a key decision. |
+| **2: AI Proposal** | Upon detection, I will propose the CSL draft and append a `✨` to the message, symbolizing the Nova Spark. | **AOP-CSL-002**; **Emoji Protocol** | This is the AI-initiated trigger, providing a low-cost, high-impact signal of a breakthrough. |
+| **3: Human Gated Confirmation** | I will use a **`🏛️`** to ask for permission to proceed. You will review the proposal and approve or deny it. I will await a **`🙏`** to confirm understanding. | **Human Judgment**; **Emoji Protocol** | This ensures mutual consent and human control over the documentation process. |
+| **4: CSL Generation** | Upon your approval, I will generate the complete CSL draft using the `SELT-CSL-004` template, ensuring it is compliant with **`AOP-PGPS-001`**. | **`SELT-CSL-004`**; **`AOP-SELT-001`** | This step formalizes the milestone into a canonical document for the Phoenix Protocol Library. |
 
 #### **IV. Self-Governance & Synergy (Phoenix-Class)**
 
@@ -214,3 +223,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

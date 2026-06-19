@@ -27,16 +27,19 @@ Zustand-based state management for authentication, modals, and application-level
 
 1. Create new file (e.g., `settings-store.ts`)
 2. Define interface extending store state and actions
-3. Use `create<Interface>()(persist(...))`  for persistence, or plain `create<Interface>()` for ephemeral state:
+3. Use `create<Interface>()(persist(...))` for persistence, or plain `create<Interface>()` for ephemeral state:
    ```typescript
    export const useSettingsStore = create<SettingsState>()(
-     persist((set) => ({
-       theme: 'dark',
-       setTheme: (theme) => set({ theme })
-     }), {
-       name: 'settings-storage'
-     })
-   )
+     persist(
+       (set) => ({
+         theme: "dark",
+         setTheme: (theme) => set({ theme }),
+       }),
+       {
+         name: "settings-storage",
+       },
+     ),
+   );
    ```
 
 ## Important Quirks & Gotchas
@@ -56,13 +59,13 @@ Zustand-based state management for authentication, modals, and application-level
 // Mock store
 const mockAuthStore = {
   isAuthenticated: true,
-  token: 'test-token',
+  token: "test-token",
   checkAuth: vi.fn().mockResolvedValue(true),
   login: vi.fn().mockResolvedValue(true),
-  logout: vi.fn()
-}
+  logout: vi.fn(),
+};
 
 // Test store mutations
-act(() => store.setState({ theme: 'light' }))
-expect(store.getState().theme).toBe('light')
+act(() => store.setState({ theme: "light" }));
+expect(store.getState().theme).toBe("light");
 ```

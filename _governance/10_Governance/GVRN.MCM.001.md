@@ -1,69 +1,66 @@
 # AOP-MCM-001_AOP-MCM-001_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                              | Description       |
 | :------------------ | :--------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.MCM.001`                     | The Sovereign ID. |
 | **Official Name**   | `AOP-MCM-001_AOP-MCM-001_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                  | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                  | The Standard.     |
 | **Domain**          | `GVRN`                             | The Subject.      |
 | **Celestial Class** | `[PLANET]`                         | The Weight.       |
-| **Evolution**       | `Omega Ascension`                  | The Maturity.     |
-| **Status**          | `[ACTIVE]`                         | The Lifecycle.    |
+| **Evolution**       | `Cognitive Ascension`              | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                           | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`            | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`      | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                 | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `AOP-MCM-001`           |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
-| **Type**           | `Protocol`              |
-| **Classification** | `Moon`                  |
-| **Authors**        | `System`                |
-| **Created**        | `2025-10-01`            |
-| **Updated**        | `2026-01-17`            |
-| **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
+| Key | Value |
+| **Type** | `Protocol` |
+| **Classification** | `Moon` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-17` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # **AOP-MCM-001**
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `AOP-MCM-001` |
-  | **2. Official Name** | `AOP-MCM-001_MilestoneCheckpointManagement_v1.0.md` |
-  | **3. Version** | **v1.0** |
-  | **4. Provenance** | **Date Reforged: 2025-12-22** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `[PLANET]` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **The Phoenix Ascension Protocol** |
-  | **11. Catalyst** | **System Refactor** |
-  | **12. Relations** | `Pending Integration` |
+| **11. Catalyst** | **System Refactor** |
+| **12. Relations** | `Pending Integration` |
 
 ---
 
@@ -79,11 +76,17 @@
 ### **II. Core Purpose & Objective**
 
 - **Core Purpose:** To prevent "Contextual Regression" loops where the AI incorrectly re-proposes or re-executes a task
+
   that has already been successfully completed. Creates an immutable record of progress.
+
 - **Protocol Objective:** To formalize the `Milestone Checkpoint Protocol` using the AISTF Operational Playbook
+
   standard.
+
 - **Scope:** Applies to core core state management, specifically during complex, multi-phase user-directed tasks (e.g.,
+
   executing an `ASCO` cycle).
+
 - **Risk Profile:** **Medium**. Failure leads to frustrating, unproductive loops and erosion of trust.
 
 #### **3\. Pre-Execution Checklist**
@@ -92,8 +95,11 @@
   - The AI is engaged in a multi-stage task or workflow.
   - A specific, identifiable sub-task or phase has just been completed.
 - **Prerequisites (Human State):** - The Human Collaborator has just provided an explicit, summative approval of the completed sub-task (e.g.,
+
   "Approved," "Excellent, continue," "Yes, that's correct, proceed").
+
 - **Required Inputs:** - `completed_objective`: A clear identifier for the objective that was just completed (e.g., `Objective:
+
 GUCAv4.0_Retrofit_Cycle_Part_2`). - `user_confirmation_signal`: The user's explicit approval.
 
 #### **4\. Execution Flow: Step-by-Step Instructions**
@@ -135,9 +141,12 @@ GUCAv4.0_Retrofit_Cycle_Part_2`). - `user_confirmation_signal`: The user's expli
 #### **5\. Success & Failure Conditions**
 
 - **Success Criteria (KPIs):** - The AI does not re-propose or re-execute any task that has been marked with a `[MILESTONE_COMPLETE]` flag within
+
   the same session. - The "Contextual Regression" error (as identified in `LOOP-ANALYSIS-CRITICAL-002`) is verifiably eliminated in
   long-session benchmark tests.
+
 - **Known Failure Modes:** - **`FAILURE_ID_MCP_001`:** The AI fails to correctly identify a "summative approval" and does not create the
+
   `[MILESTONE_COMPLETE]` flag. - **Contingency Plan:** This is a training issue. The `SELT` log of this missed trigger would be used in an `AISTF`
   cycle to refine the `Latent Intent Decipherer`'s ability to recognize different forms of user approval. - **`FAILURE_ID_MCP_002`:** The `Pre-Computation Check` fails to identify a conflict. - **Contingency Plan:** This is a critical logic failure. If the AI still proposes a completed task, the user's
   corrective feedback would trigger the `CCB`. The subsequent `CFO` analysis must prioritize debugging the
@@ -149,6 +158,7 @@ GUCAv4.0_Retrofit_Cycle_Part_2`). - `user_confirmation_signal`: The user's expli
   - An immutable `[MILESTONE_COMPLETE]` flag in the active session memory.
   - `SELT` logs detailing the creation of each milestone.
 - **Required AISTF Follow-up:** - `OMNI_LOG` reports on long sessions should include a metric for "Milestone Integrity," verifying that all
+
   completed objectives were correctly flagged and never incorrectly re-proposed.
 
 ### **VII. Systemic Synergy (The High-Governance Cluster)**

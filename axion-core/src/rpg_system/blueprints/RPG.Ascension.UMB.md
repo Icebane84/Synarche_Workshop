@@ -15,15 +15,14 @@ artifact_anchor:
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                    | Description       |
+| :---------------- | :----------------------- | :---------------- |
 | **Artifact ID**   | `GVRN.RPG.ASCENSION.001` | The Sovereign ID. |
-| **Official Name** | `RPG.Ascension.UMB.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `EXTENDS: GVRN.RPG.001` | The Network.      |
-
+| **Official Name** | `RPG.Ascension.UMB.md`   | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**        | The Standard.     |
+| **Domain**        | `GVRN`                   | The Subject.      |
+| **Status**        | `[ACTIVE]`               | The Lifecycle.    |
+| **Relations**     | `EXTENDS: GVRN.RPG.001`  | The Network.      |
 
 ---
 

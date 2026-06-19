@@ -1,57 +1,56 @@
 # UMB-ESF-001_EpisemanticFramework_v111.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                                                     | Description       |
+| :------------------ | :------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `UMB-ESF-001`                                                             | The Sovereign ID. |
+| **Official Name**   | `The Episemantic Framework`                                               | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                                    | The Subject.      |
+| **Celestial Class** | `STAR`                                                                    | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                                     | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                                | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                   | The Intent.       |
+| **Relations**       | `LINK: UMB-PRS-001, DEFINES: UMB-OSLM-001, GOVERNS: UMB-CSE-001`          | The Network.      |
+| **Integrity Hash**  | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-ESF-001-EPISEMANTICFRAMEWORK-V111-001` | The Sovereign ID. |
-| **Official Name** | `UMB-ESF-001_EpisemanticFramework_v111.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Attribute           | Value                                                                     |
-| :------------------ | :------------------------------------------------------------------------ |
-| **Artifact ID**     | `UMB-ESF-001`                                                             |
-| **Official Name**   | `The Episemantic Framework`                                               |
-| **Version**         | `v11.1 (Expansion Edition)`                                               |
-| **Domain**          | `GVRN`                                                                    |
-| **Evolution**       | `Cognitive Ascension`                                                     |
-| **Signal (ESF)**    | `ALPHA`                                                                   |
-| **Status (State)**  | `CANONIZED`                                                               |
-| **Tier**            | `Strategic`                                                               |
-| **Celestial Class** | `STAR`                                                                    |
-| **Governance**      | `UMB-SGM-001`                                                             |
-| **Upstream**        | `CODEX-001`, `UMB-MAP-001`                                                |
-| **Downstream**      | `UMB-OSLM-001`, `UMB-CSE-001`, `UMB-LOOM-001`                             |
-| **Integrity Hash**  | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| **Provenance**      | `Genesis Stamp: 2026-01-04 \| Reforged: 2026-01-24`                       |
-| **Relations**       | `LINK: UMB-PRS-001`, `DEFINES: UMB-OSLM-001`, `GOVERNS: UMB-CSE-001`      |
-| **Tags**            | `v11.1, Episemantics, Ontology, Machine-Readable`                         |
+| Attribute | Value |
+| **Governance** | `UMB-SGM-001` |
+| **Integrity Hash** | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 
 ---
 
-> **Domain**: GVRN | **Evolution**: Cognitive Ascension | **Signal**: ALPHA
-
 # The Episemantic Framework (UMB-ESF-001)
-
-## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: CRITICAL
 
 ---
 
@@ -135,3 +134,5 @@ Enables deep, filtered searches based on context vectors:
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

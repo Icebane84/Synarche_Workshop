@@ -185,9 +185,9 @@ When reviewing PRs, check for:
 
 These vulnerabilities were reported by CERT-EU and are documented here as learning examples:
 
-| Version | Vulnerability | Severity | Advisory |
-|---------|--------------|----------|----------|
-| <= 1.8.2 | SurrealDB injection via `order_by` parameter | High (8.7) | [GHSA-5wj9-f8q5-8f9c](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-5wj9-f8q5-8f9c) |
-| <= 1.8.3 | RCE via Jinja2 SSTI in transformations | Critical (9.2) | [GHSA-f35w-wx37-26q7](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-f35w-wx37-26q7) |
-| <= 1.8.3 | Arbitrary file write via path traversal | High (7.0) | [GHSA-x4q2-89g5-594v](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-x4q2-89g5-594v) |
-| <= 1.8.3 | Arbitrary file read via LFI | High (8.2) | [GHSA-842v-h4cj-r646](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-842v-h4cj-r646) |
+| Version  | Vulnerability                                | Severity       | Advisory                                                                                               |
+| -------- | -------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------ |
+| <= 1.8.2 | SurrealDB injection via `order_by` parameter | High (8.7)     | [GHSA-5wj9-f8q5-8f9c](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-5wj9-f8q5-8f9c) |
+| <= 1.8.3 | RCE via Jinja2 SSTI in transformations       | Critical (9.2) | [GHSA-f35w-wx37-26q7](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-f35w-wx37-26q7) |
+| <= 1.8.3 | Arbitrary file write via path traversal      | High (7.0)     | [GHSA-x4q2-89g5-594v](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-x4q2-89g5-594v) |
+| <= 1.8.3 | Arbitrary file read via LFI                  | High (8.2)     | [GHSA-842v-h4cj-r646](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-842v-h4cj-r646) |

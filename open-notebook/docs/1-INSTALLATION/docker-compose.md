@@ -13,6 +13,7 @@ Multi-container setup with separate services. **Best for most users.**
 ## Step 1: Get docker-compose.yml (1 min)
 
 **Option A: Download from repository**
+
 ```bash
 curl -o docker-compose.yml https://raw.githubusercontent.com/lfnovo/open-notebook/main/docker-compose.yml
 ```
@@ -32,7 +33,7 @@ services:
   surrealdb:
     image: surrealdb/surrealdb:v2
     command: start --log info --user root --pass root rocksdb:/mydata/mydatabase.db
-    user: root  # Required for bind mounts on Linux
+    user: root # Required for bind mounts on Linux
     ports:
       - "8000:8000"
     volumes:
@@ -45,8 +46,8 @@ services:
   open_notebook:
     image: lfnovo/open_notebook:v1-latest
     ports:
-      - "8502:8502"  # Web UI
-      - "5055:5055"  # REST API
+      - "8502:8502" # Web UI
+      - "5055:5055" # REST API
     environment:
       # REQUIRED: Change this to your own secret string
       - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
@@ -66,6 +67,7 @@ services:
 ```
 
 **Edit the file:**
+
 - Replace `change-me-to-a-secret-string` with your own secret (any string works, e.g., `my-super-secret-key-123`)
 
 ---
@@ -79,12 +81,14 @@ docker compose up -d
 ```
 
 Wait 15-20 seconds for all services to start:
+
 ```
 ✅ surrealdb running on :8000
 ✅ open_notebook running on :8502 (UI) and :5055 (API)
 ```
 
 Check status:
+
 ```bash
 docker compose ps
 ```
@@ -94,6 +98,7 @@ docker compose ps
 ## Step 3: Verify Installation (1 min)
 
 **API Health:**
+
 ```bash
 curl http://localhost:5055/health
 # Should return: {"status": "healthy"}
@@ -101,6 +106,7 @@ curl http://localhost:5055/health
 
 **Frontend Access:**
 Open browser to:
+
 ```
 http://localhost:8502
 ```
@@ -122,6 +128,7 @@ You should see the Open Notebook interface!
 Your models are now available!
 
 > **Need an API key?** Get one from your chosen provider:
+>
 > - **OpenAI**: https://platform.openai.com/api-keys
 > - **Anthropic**: https://console.anthropic.com/
 > - **Google**: https://aistudio.google.com/
@@ -172,12 +179,14 @@ volumes:
 ```
 
 Then restart and pull a model:
+
 ```bash
 docker compose restart
 docker exec open-notebook-local-ollama-1 ollama pull mistral
 ```
 
 Configure Ollama in the Settings UI:
+
 1. Go to **Settings** → **API Keys**
 2. Click **Add Credential** → Select **Ollama**
 3. Enter base URL: `http://ollama:11434`
@@ -188,16 +197,16 @@ Configure Ollama in the Settings UI:
 
 ## Environment Variables Reference
 
-| Variable | Purpose | Example |
-|----------|---------|---------|
-| `OPEN_NOTEBOOK_ENCRYPTION_KEY` | Encryption key for credentials | `my-secret-key` |
-| `SURREAL_URL` | Database connection | `ws://surrealdb:8000/rpc` |
-| `SURREAL_USER` | Database user | `root` |
-| `SURREAL_PASSWORD` | Database password | `root` |
-| `SURREAL_NAMESPACE` | Database namespace | `open_notebook` |
-| `SURREAL_DATABASE` | Database name | `open_notebook` |
-| `API_URL` | API external URL | `http://localhost:5055` |
-| `OPEN_NOTEBOOK_EMBEDDING_BATCH_SIZE` | Override embedding batch size for stricter/local providers (recommended: `8` for CPU-only local setups) | `50` |
+| Variable                             | Purpose                                                                                                 | Example                   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ------------------------- |
+| `OPEN_NOTEBOOK_ENCRYPTION_KEY`       | Encryption key for credentials                                                                          | `my-secret-key`           |
+| `SURREAL_URL`                        | Database connection                                                                                     | `ws://surrealdb:8000/rpc` |
+| `SURREAL_USER`                       | Database user                                                                                           | `root`                    |
+| `SURREAL_PASSWORD`                   | Database password                                                                                       | `root`                    |
+| `SURREAL_NAMESPACE`                  | Database namespace                                                                                      | `open_notebook`           |
+| `SURREAL_DATABASE`                   | Database name                                                                                           | `open_notebook`           |
+| `API_URL`                            | API external URL                                                                                        | `http://localhost:5055`   |
+| `OPEN_NOTEBOOK_EMBEDDING_BATCH_SIZE` | Override embedding batch size for stricter/local providers (recommended: `8` for CPU-only local setups) | `50`                      |
 
 See [Environment Reference](../5-CONFIGURATION/environment-reference.md) for complete list.
 
@@ -206,11 +215,13 @@ See [Environment Reference](../5-CONFIGURATION/environment-reference.md) for com
 ## Common Tasks
 
 ### Stop Services
+
 ```bash
 docker compose down
 ```
 
 ### View Logs
+
 ```bash
 # All services
 docker compose logs -f
@@ -220,11 +231,13 @@ docker compose logs -f api
 ```
 
 ### Restart Services
+
 ```bash
 docker compose restart
 ```
 
 ### Update to Latest Version
+
 ```bash
 docker compose down
 docker compose pull
@@ -232,6 +245,7 @@ docker compose up -d
 ```
 
 ### Remove All Data
+
 ```bash
 docker compose down -v
 ```
@@ -243,16 +257,19 @@ docker compose down -v
 ### "Cannot connect to API" Error
 
 1. Check if Docker is running:
+
 ```bash
 docker ps
 ```
 
 2. Check if services are running:
+
 ```bash
 docker compose ps
 ```
 
 3. Check API logs:
+
 ```bash
 docker compose logs api
 ```
@@ -267,8 +284,8 @@ If you get "Port 8502 already in use", change the port:
 
 ```yaml
 ports:
-  - "8503:8502"  # Use 8503 instead
-  - "5055:5055"  # Keep API port same
+  - "8503:8502" # Use 8503 instead
+  - "5055:5055" # Keep API port same
 ```
 
 Then access at `http://localhost:8503`
@@ -288,11 +305,13 @@ Then access at `http://localhost:8503`
 ### Database Connection Issues
 
 Check SurrealDB is running:
+
 ```bash
 docker compose logs surrealdb
 ```
 
 Reset database:
+
 ```bash
 docker compose down -v
 docker compose up -d
@@ -311,11 +330,12 @@ This happens because SurrealDB runs as a non-root user but Docker creates bind m
 ```yaml
 surrealdb:
   image: surrealdb/surrealdb:v2
-  user: root  # Fix for Linux bind mount permissions
+  user: root # Fix for Linux bind mount permissions
   # ... rest of config
 ```
 
 Then restart:
+
 ```bash
 docker compose down -v
 docker compose up -d
@@ -347,6 +367,7 @@ Each example includes detailed comments and usage instructions.
 ## Production Deployment
 
 For production use, see:
+
 - [Security Hardening](../5-CONFIGURATION/security.md)
 - [Reverse Proxy](../5-CONFIGURATION/reverse-proxy.md)
 

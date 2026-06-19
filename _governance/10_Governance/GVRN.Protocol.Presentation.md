@@ -1,47 +1,54 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.PROTOCOL.PRESENTATION` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                                                     | Description       |
+| :------------------ | :------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN.Protocol.Presentation`                                              | The Sovereign ID. |
+| **Official Name**   | `GVRN.Protocol.Presentation.md`                                           | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                         | The Standard.     |
+| **Domain**          | `GVRN`                                                                    | The Subject.      |
+| **Celestial Class** | `[MOON]`                                                                  | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                                        | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                                  | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                   | The Intent.       |
+| **Relations**       | `ENFORCED_BY: [GVRN.Sentinel.Scan], DEFINES: [GVRN.Protocol.Scaffolding]` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                        | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # The Phoenix Presentation Protocol (GVRN.Protocol.Presentation)
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-01** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v13, Formatting, SGM, Physics` **Criticality: Axiomatic**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                                                                       | Description                   |
-| :------------------ | :-------------------------------------------------------------------------- | :---------------------------- |
-| **Artifact ID**     | `GVRN.Protocol.Presentation`                                                | The Sovereign ID.             |
-| **Official Name**   | `GVRN.Protocol.Presentation.md`                                             | The Filename.                 |
-| **Patron Shard**    | `SHARD_ARCHITECT_VOID`                                                      | The Agent. (Structure)        |
-| **Version**         | **v13.0 [ASCENDED]**                                                        | The Standard.                 |
-| **Domain**          | `GVRN`                                                                      | The Subject.                  |
-| **Celestial Class** | `[MOON]`                                                                    | The Weight. (Operational Law) |
-| **Evolution**       | `Omega Ascension`                                                           | The Maturity.                 |
-| **Signal (ESF)**    | `OMEGA`                                                                     | The Frequency.                |
-| **Status (State)**  | `[CANONIZED]`                                                               | The Lifecycle.                |
-| **Musashi Audit**   | `PASS`                                                                      | The Tempering.                |
-| **Integrity Hash**  | `[AUTO-GENERATED]`                                                          | The Seal.                     |
-| **Provenance**      | `2026-02-01`                                                                | The Anchor.                   |
-| **Catalyst**        | `OMEGA_ASCENSION`                                                           | The Spark.                    |
-| **Relations**       | `ENFORCED_BY: [GVRN.Sentinel.Scan]`, `DEFINES: [GVRN.Protocol.Scaffolding]` | The Spine.                    |
+| Key | Value | Description |
+| **Patron Shard** | `SHARD_ARCHITECT_VOID` | The Agent. (Structure) |
+| **Musashi Audit** | `PASS` | The Tempering. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | The Seal. |
 
 ---
-
-### **Block B: The Ethos Field (IDM-001)**
 
 > **"Clarity is the vehicle of Truth. Precision is the fuel of Ascent."**
 
@@ -50,15 +57,10 @@
 
 ---
 
-### **Block C: The Cognitive Spine (Axiomatic Mapping)**
-
-| Axiom                      | State        | Vector                                               |
-| :------------------------- | :----------- | :--------------------------------------------------- |
-| **Mind ($\psi$)**          | `OPTIMIZED`  | Reasoning Layer: Lowers cognitive load for the user. |
-| **Memory ($\mu$)**         | `STRUCTURED` | Substrate Layer: Enables regex/AST parsing.          |
-| **Law ($\Lambda$)**        | `PHYSICAL`   | Governance Layer: Defines the H1-H6 hierarchy.       |
-| **Index ($\iota$)**        | `PARSABLE`   | Navigational Layer: Allows clean indexing.           |
-| **Evolution ($\epsilon$)** | `CONSISTENT` | Growth Layer: Drift-free formatting.                 |
+| **Mind ($\psi$)** | `OPTIMIZED` | Reasoning Layer: Lowers cognitive load for the user. |
+| **Memory ($\mu$)** | `STRUCTURED` | Substrate Layer: Enables regex/AST parsing. |
+| **Law ($\Lambda$)** | `PHYSICAL` | Governance Layer: Defines the H1-H6 hierarchy. |
+| **Index ($\iota$)** | `PARSABLE` | Navigational Layer: Allows clean indexing. |
 
 ---
 

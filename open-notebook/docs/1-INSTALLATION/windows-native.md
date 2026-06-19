@@ -188,12 +188,12 @@ GOOGLE_API_KEY=your-key-here
 
 Once running, add models in Settings. Common model names:
 
-| Provider  | Models                                                       |
-| --------- | ------------------------------------------------------------ |
-| OpenAI    | `gpt-4o`, `gpt-4o-mini`, `gpt-4-turbo`, `text-embedding-3-small` |
+| Provider  | Models                                                                                |
+| --------- | ------------------------------------------------------------------------------------- |
+| OpenAI    | `gpt-4o`, `gpt-4o-mini`, `gpt-4-turbo`, `text-embedding-3-small`                      |
 | Anthropic | `claude-sonnet-4-20250514`, `claude-3-5-sonnet-20241022`, `claude-3-5-haiku-20241022` |
-| Google    | `gemini-2.0-flash`, `gemini-1.5-pro`, `gemini-1.5-flash`     |
-| DeepSeek  | `deepseek-chat`, `deepseek-reasoner`                         |
+| Google    | `gemini-2.0-flash`, `gemini-1.5-pro`, `gemini-1.5-flash`                              |
+| DeepSeek  | `deepseek-chat`, `deepseek-reasoner`                                                  |
 
 ## Upgrading
 
@@ -239,5 +239,5 @@ Found another Windows-specific issue? Please share your solution!
 
 ---
 
-*Tested on Windows 11 ARM64 with Open Notebook v1.6.0*
-*Created: January 2026*
+_Tested on Windows 11 ARM64 with Open Notebook v1.6.0_
+_Created: January 2026_

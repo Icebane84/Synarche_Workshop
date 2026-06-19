@@ -74,35 +74,36 @@ Hooks for managing AI provider credentials with TanStack Query integration, toas
 
 ```typescript
 export const CREDENTIAL_QUERY_KEYS = {
-  all: ['credentials'] as const,
-  status: ['credentials', 'status'] as const,
-  envStatus: ['credentials', 'env-status'] as const,
-  byProvider: (provider: string) => ['credentials', 'provider', provider] as const,
-  detail: (id: string) => ['credentials', id] as const,
-}
+  all: ["credentials"] as const,
+  status: ["credentials", "status"] as const,
+  envStatus: ["credentials", "env-status"] as const,
+  byProvider: (provider: string) =>
+    ["credentials", "provider", provider] as const,
+  detail: (id: string) => ["credentials", id] as const,
+};
 ```
 
 ### Query Hooks
 
-| Hook | Description | Returns |
-|------|-------------|---------|
-| `useCredentialStatus()` | Get configuration status of all providers | `{ configured, source, encryption_configured }` |
-| `useEnvStatus()` | Get which providers have env vars set | `{ [provider]: boolean }` |
-| `useCredentials(provider?)` | List all credentials (optional filter) | `Credential[]` |
-| `useCredentialsByProvider(provider)` | List credentials for a specific provider | `Credential[]` |
-| `useCredential(credentialId)` | Get a specific credential | `Credential` |
+| Hook                                 | Description                               | Returns                                         |
+| ------------------------------------ | ----------------------------------------- | ----------------------------------------------- |
+| `useCredentialStatus()`              | Get configuration status of all providers | `{ configured, source, encryption_configured }` |
+| `useEnvStatus()`                     | Get which providers have env vars set     | `{ [provider]: boolean }`                       |
+| `useCredentials(provider?)`          | List all credentials (optional filter)    | `Credential[]`                                  |
+| `useCredentialsByProvider(provider)` | List credentials for a specific provider  | `Credential[]`                                  |
+| `useCredential(credentialId)`        | Get a specific credential                 | `Credential`                                    |
 
 ### Mutation Hooks
 
-| Hook | Description | Cache Invalidation |
-|------|-------------|-------------------|
-| `useCreateCredential()` | Create new credential | `all`, `providers` |
-| `useUpdateCredential()` | Update credential | `all`, `providers` |
-| `useDeleteCredential()` | Delete credential | `all`, `models`, `providers` |
-| `useTestCredential()` | Test credential connection | None (stores result locally) |
-| `useDiscoverModels()` | Discover models for credential | None |
-| `useRegisterModels()` | Register discovered models | `models`, `all` |
-| `useMigrateFromEnv()` | Migrate from env vars | `status`, `envStatus`, `models`, `providers` |
+| Hook                             | Description                        | Cache Invalidation                           |
+| -------------------------------- | ---------------------------------- | -------------------------------------------- |
+| `useCreateCredential()`          | Create new credential              | `all`, `providers`                           |
+| `useUpdateCredential()`          | Update credential                  | `all`, `providers`                           |
+| `useDeleteCredential()`          | Delete credential                  | `all`, `models`, `providers`                 |
+| `useTestCredential()`            | Test credential connection         | None (stores result locally)                 |
+| `useDiscoverModels()`            | Discover models for credential     | None                                         |
+| `useRegisterModels()`            | Register discovered models         | `models`, `all`                              |
+| `useMigrateFromEnv()`            | Migrate from env vars              | `status`, `envStatus`, `models`, `providers` |
 | `useMigrateFromProviderConfig()` | Migrate from legacy ProviderConfig | `status`, `envStatus`, `models`, `providers` |
 
 ### useTestCredential Details
@@ -111,24 +112,27 @@ Returns extended interface with local state management for test results:
 
 ```typescript
 const {
-  testCredential,        // (credentialId: string) => void
-  testCredentialAsync,   // (credentialId: string) => Promise<TestConnectionResult>
-  isPending,             // boolean
-  testResults,           // Record<string, TestConnectionResult>
-  clearResult,           // (credentialId: string) => void
-} = useTestCredential()
+  testCredential, // (credentialId: string) => void
+  testCredentialAsync, // (credentialId: string) => Promise<TestConnectionResult>
+  isPending, // boolean
+  testResults, // Record<string, TestConnectionResult>
+  clearResult, // (credentialId: string) => void
+} = useTestCredential();
 ```
 
 ### Cache Invalidation Strategy
 
 All mutation hooks invalidate:
+
 - `CREDENTIAL_QUERY_KEYS.all` — refreshes all credential queries (cascades to filtered queries)
 - `MODEL_QUERY_KEYS.providers` — refreshes provider list
 
 Delete hook additionally invalidates:
+
 - `MODEL_QUERY_KEYS.models` — refreshes full model list (linked models may be deleted)
 
 Migration hooks additionally invalidate:
+
 - `CREDENTIAL_QUERY_KEYS.status` — refreshes configured/source info
 - `CREDENTIAL_QUERY_KEYS.envStatus` — refreshes env var status
 

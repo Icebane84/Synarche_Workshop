@@ -1,16 +1,19 @@
 # GVRN.GVRN.014
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GVRN.014` | The Sovereign ID. |
-| **Official Name** | `GVRN.GVRN.014.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.GVRN.014`               | The Sovereign ID. |
+| **Official Name**   | `GVRN.GVRN.014.md`            | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -60,7 +75,9 @@ We are implementing a **"Fetch-Reason-Commit" Loop**.
 
 1. **Fetch (The Magician):** Pull raw, unstructured "Rind" (Legacy Data) from the database.
 2. **Reason (The Emperor/Weaver):** Hold the data in the Agent's Context Window. Apply the `GVRN.Catalog.Master` logic
+
    to restructure it.
+
 3. **Commit (The King):** Push the "Crystal" (Canonized Data) back to the database with a new version hash.
 
 ---
@@ -71,15 +88,20 @@ We are implementing a **"Fetch-Reason-Commit" Loop**.
 
 - **The Skill:** `supabase-transmuter` (Scan Function).
 - **The Agent's Thought:** "I see a row with ID `row_492`. The content looks like a Protocol, but the title is loose
+
   ('My Notes on Coding')."
+
 - **The Action:** The Agent tags this item for **renaming** and assigns it the archetype `AOP` (Operational Playbook)
+
   based on its content analysis.
 
 #### **Step 2: RNC Rename (The Emperor)**
 
 - **The Standard:** `Domain.Subject.Type` (e.g., `GVRN.Coding.Standard`).
 - **The Agent's Thought:** "Based on the content 'My Notes on Coding', this belongs to the `ARCH` (Architecture) domain.
+
   The subject is `Coding`. The type is `Standard`."
+
 - **The Transmutation:**
   - _Old ID:_ `row_492`
   - _New ID:_ `ARCH.Code.Std.Main_v1.0`
@@ -101,8 +123,11 @@ We are implementing a **"Fetch-Reason-Commit" Loop**.
 
 - **The Standard:** Synergistic Interconnection (Law of Manifest Mandate).
 - **The Agent's Thought:** "This document mentions 'Evolution'. I must link it to the `GVRN.Refactor.Protocol`. It also
+
   mentions 'Formatting', so I will link `AOP-PGPS-001`."
+
 - **The Action:** The Agent inserts a "Synergy Mapping" section at the bottom of the artifact, creating live edges in
+
   the knowledge graph.
 
 #### **Step 5: Code Scan (Knight of Swords)**
@@ -124,6 +149,7 @@ We are implementing a **"Fetch-Reason-Commit" Loop**.
 
 - **The Standard:** Archival & Canonization.
 - **The Action:** The Agent generates a **SHA-256 Hash** of the new content (The Integrity Seal) and calls the
+
   `commit_transmutation` tool to write it to Supabase.
 
 ---

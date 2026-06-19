@@ -16,9 +16,9 @@ artifact_anchor:
  * - id:
  * - type:
  */
-import * as assert from "assert";
-import { CollapsedBlock } from "@nexus/PhoenixSuperpositionEngine";
+import type { CollapsedBlock } from "@nexus/PhoenixSuperpositionEngine";
 import { PythonBridge } from "@utils/PythonBridge";
+import * as assert from "node:assert";
 
 suite("Integration Test: Python Polyglot Weaving", () => {
     test("should successfully pipe data to cse.py and receive JSON response", async () => {
@@ -37,7 +37,11 @@ suite("Integration Test: Python Polyglot Weaving", () => {
         };
 
         // 2. Act: Execute the bridge (This spawns the actual python process)
-        const result = await PythonBridge.execute<any>("cse.py", mockBlock);
+        interface MockResult {
+            status: string;
+            processedData: { command: string };
+        }
+        const result = await PythonBridge.execute<MockResult>("cse.py", mockBlock);
 
         // 3. Assert: Validate the Python script correctly received and processed the data
         assert.strictEqual(result.status, "SYNTHESIZED", "Python script did not return expected status");
@@ -48,7 +52,7 @@ suite("Integration Test: Python Polyglot Weaving", () => {
         // Send malformed data to force a crash in a hypothetical script or unhandled scenario
         try {
             // Pointing to a script that doesn't exist to force an error state
-            await PythonBridge.execute<any>("non_existent_script.py", {});
+            await PythonBridge.execute<unknown>("non_existent_script.py", {});
             assert.fail("Execution should have thrown an error");
         } catch (error) {
             assert.ok(error instanceof Error);

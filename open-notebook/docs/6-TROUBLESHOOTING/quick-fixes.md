@@ -30,6 +30,7 @@ docker compose restart
 ```
 
 **If still broken:**
+
 - Check `API_URL` in .env (should match your frontend URL)
 - See [Connection Issues](connection-issues.md)
 
@@ -53,6 +54,7 @@ docker compose restart
 ```
 
 **If still broken:**
+
 - Make sure key has no extra spaces
 - Generate a fresh key from provider dashboard
 - Check that `OPEN_NOTEBOOK_ENCRYPTION_KEY` is set in docker-compose.yml
@@ -293,13 +295,15 @@ docker compose restart
 **Solution:**
 
 ### Increase Download Timeout
+
 ```yaml
 # In docker-compose.yml environment:
 environment:
-  - UV_HTTP_TIMEOUT=600  # 10 minutes (default is 30s)
+  - UV_HTTP_TIMEOUT=600 # 10 minutes (default is 30s)
 ```
 
 ### Use Chinese Mirrors (if in China)
+
 ```yaml
 environment:
   - UV_HTTP_TIMEOUT=600
@@ -308,6 +312,7 @@ environment:
 ```
 
 **Alternative Chinese mirrors:**
+
 - Tsinghua: `https://pypi.tuna.tsinghua.edu.cn/simple`
 - Aliyun: `https://mirrors.aliyun.com/pypi/simple/`
 - Huawei: `https://repo.huaweicloud.com/repository/pypi/simple`
@@ -340,6 +345,7 @@ docker compose up --build
 ```
 
 **Reset to defaults:**
+
 ```bash
 # Backup your .env first!
 cp .env .env.backup

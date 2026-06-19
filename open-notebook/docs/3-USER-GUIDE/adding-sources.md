@@ -43,6 +43,7 @@ Sources are the raw materials of your research. This guide covers how to add dif
 ## Supported File Types
 
 ### Documents
+
 - **PDF** (.pdf) — Best support, including scanned PDFs with OCR
 - **Word** (.docx, .doc) — Full support
 - **PowerPoint** (.pptx) — Slides converted to text
@@ -56,6 +57,7 @@ Sources are the raw materials of your research. This guide covers how to add dif
 **Processing time:** 10 seconds - 2 minutes (depending on length and file type)
 
 ### Audio & Video
+
 - **Audio**: MP3, WAV, M4A, OGG, FLAC (~30 seconds - 3 minutes per hour)
 - **Video**: MP4, AVI, MOV, MKV, WebM (~3-10 minutes per hour)
 - **YouTube**: Direct URL support
@@ -64,6 +66,7 @@ Sources are the raw materials of your research. This guide covers how to add dif
 **Automatic transcription**: Audio/video is transcribed to text automatically. This requires enabling speech-to-text in settings.
 
 ### Web Content
+
 - **Articles**: Blog posts, news articles, Medium
 - **YouTube**: Full videos or playlists
 - **PDFs online**: Direct PDF links
@@ -72,6 +75,7 @@ Sources are the raw materials of your research. This guide covers how to add dif
 **Just paste the URL** in "Web Link" section.
 
 ### What Doesn't Work
+
 - Paywalled content (WSJ, FT, etc.) — Can't extract
 - Password-protected PDFs — Can't open
 - Pure image files (.jpg, .png) — Except scanned PDFs which have OCR
@@ -111,6 +115,7 @@ The system automatically does four things:
 ### PDFs
 
 **Best practices:**
+
 ```
 Clean PDFs:
   1. Upload → Done
@@ -129,12 +134,14 @@ Large PDFs (50+ pages):
 ```
 
 **Common issues:**
+
 - "Can't extract text" → PDF is corrupted or has copy protection
 - Solution: Try opening in Adobe. If it won't, the PDF is likely protected.
 
 ### Web Links / Articles
 
 **Best practices:**
+
 ```
 1. Copy full URL from browser: https://example.com/article-title
 2. Paste in "Web Link"
@@ -145,6 +152,7 @@ Processing time: Usually 5-15 seconds
 ```
 
 **What works:**
+
 - Standard web articles
 - Blog posts
 - News articles
@@ -153,6 +161,7 @@ Processing time: Usually 5-15 seconds
 - Substack articles
 
 **What doesn't work:**
+
 - Twitter threads (unreliable)
 - Paywalled articles (can't access)
 - JavaScript-heavy sites (content not extracted)
@@ -162,6 +171,7 @@ Processing time: Usually 5-15 seconds
 ### Audio Files
 
 **Best practices:**
+
 ```
 1. Ensure speech-to-text is enabled in Settings
 2. Upload MP3, WAV, or M4A file
@@ -174,6 +184,7 @@ Example:
 ```
 
 **Quality matters:**
+
 - Clear audio: Fast transcription
 - Muffled/noisy audio: Slower, less accurate transcription
 - Background noise: Try to minimize before uploading
@@ -183,6 +194,7 @@ Example:
 ### YouTube Videos
 
 **Best practices:**
+
 ```
 Two ways to add:
 
@@ -200,17 +212,20 @@ Method 2: Playlist
 ```
 
 **What's extracted:**
+
 - Captions/subtitles (if available)
 - Transcription (if captions aren't available)
 - Basic metadata (title, channel, length)
 
 **Processing:**
+
 - 10-minute video: ~2-3 minutes
 - 1-hour video: ~10-15 minutes
 
 ### Text / Paste Content
 
 **Best practices:**
+
 ```
 1. Select "Text" when adding source
 2. Paste or type content
@@ -242,11 +257,13 @@ Click on source → See:
 ### Organizing with Metadata
 
 You can add to each source:
+
 - **Title**: Better name than original filename
 - **Tags**: Category labels ("primary research", "background", "competitor analysis")
 - **Description**: A few notes about what it contains
 
 **Why this matters:**
+
 - Makes sources easier to find
 - Helps when contextualizing for Chat
 - Useful for organizing large notebooks
@@ -275,6 +292,7 @@ You control how AI accesses sources:
 ### Three Levels (for Chat)
 
 **Full Content:**
+
 ```
 AI sees: Complete source text
 Cost: 100% of tokens
@@ -283,6 +301,7 @@ Example: "Analyze this methodology paper closely"
 ```
 
 **Summary Only:**
+
 ```
 AI sees: AI-generated summary (not full text)
 Cost: ~10-20% of tokens
@@ -291,6 +310,7 @@ Example: "Use this as context but focus on the main source"
 ```
 
 **Not in Context:**
+
 ```
 AI sees: Nothing (excluded)
 Cost: 0 tokens
@@ -314,15 +334,15 @@ Example: "Keep this in notebook but don't use in this conversation"
 
 ## Common Mistakes
 
-| Mistake | What Happens | How to Fix |
-|---------|--------------|-----------|
-| Upload 200 sources at once | System gets slow, processing stalls | Add 10-20 at a time, wait for processing |
-| Use full content for all sources | Token usage skyrockets, expensive | Use "Summary" or "Excluded" for background material |
-| Add huge PDFs without splitting | Processing is slow, search results less precise | Consider splitting large PDFs into chapters |
-| Forget source titles | Can't distinguish between similar sources | Rename sources with descriptive titles right after uploading |
-| Don't tag sources | Hard to find and organize later | Add tags immediately: "primary", "background", etc. |
-| Mix languages in one source | Transcription/embedding quality drops | Keep each language in separate sources |
-| Use same source multiple times | Takes up space, creates confusion | Add once; reuse in multiple chats/notebooks |
+| Mistake                          | What Happens                                    | How to Fix                                                   |
+| -------------------------------- | ----------------------------------------------- | ------------------------------------------------------------ |
+| Upload 200 sources at once       | System gets slow, processing stalls             | Add 10-20 at a time, wait for processing                     |
+| Use full content for all sources | Token usage skyrockets, expensive               | Use "Summary" or "Excluded" for background material          |
+| Add huge PDFs without splitting  | Processing is slow, search results less precise | Consider splitting large PDFs into chapters                  |
+| Forget source titles             | Can't distinguish between similar sources       | Rename sources with descriptive titles right after uploading |
+| Don't tag sources                | Hard to find and organize later                 | Add tags immediately: "primary", "background", etc.          |
+| Mix languages in one source      | Transcription/embedding quality drops           | Keep each language in separate sources                       |
+| Use same source multiple times   | Takes up space, creates confusion               | Add once; reuse in multiple chats/notebooks                  |
 
 ---
 
@@ -356,18 +376,22 @@ Example: "Keep this in notebook but don't use in this conversation"
 ### Common Errors & Solutions
 
 **"Unsupported file type"**
+
 - You tried to upload a format not in the list (e.g., `.webp` image)
 - Solution: Convert to supported format (PDF for documents, MP3 for audio)
 
 **"Processing timeout"**
+
 - Very large file (>100MB) or very long audio
 - Solution: Split into smaller pieces or try uploading again
 
 **"Transcription failed"**
+
 - Audio quality too poor or language not detected
 - Solution: Re-record with better quality, or paste text transcript manually
 
 **"Web link won't extract"**
+
 - Website blocks automated access or uses JavaScript for content
 - Solution: Copy the article text and paste as "Text" instead
 
@@ -376,26 +400,31 @@ Example: "Keep this in notebook but don't use in this conversation"
 ## Tips for Best Results
 
 ### For PDFs
+
 - Clean, digital PDFs work best
 - Remove copy protection if present (legally)
 - Scanned PDFs work but take longer
 
 ### For Web Articles
+
 - Use full URL including domain
 - Avoid cookie/popup-laden sites
 - If extraction fails, copy-paste text instead
 
 ### For Audio
+
 - Clear, well-recorded audio transcribes better
 - Remove background noise if possible
 - YouTube videos usually have good transcriptions built-in
 
 ### For Large Documents
+
 - Consider splitting into smaller sources
 - Gives more precise search results
 - Processing is faster for smaller pieces
 
 ### For Organization
+
 - Name sources clearly (not "document_2.pdf")
 - Add tags immediately after uploading
 - Use descriptions for complex documents

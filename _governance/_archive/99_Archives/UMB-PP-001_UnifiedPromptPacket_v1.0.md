@@ -1,16 +1,19 @@
 # UMB-PP-001_UnifiedPromptPacket_v1.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-PP-001-UNIFIEDPROMPTPACKET-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-PP-001_UnifiedPromptPacket_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `DEFINED_BY: UMB-LEX-001, INSTANTIATES: PHOENIX_MASTER_TEMPLATE` | The Network.      |
-
+| Key                 | Value                                                            | Description       |
+| :------------------ | :--------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-PP-001-UNIFIEDPROMPTPACKET-V1.0-001`                   | The Sovereign ID. |
+| **Official Name**   | `UMB-PP-001_UnifiedPromptPacket_v1.0.md`                         | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                | The Standard.     |
+| **Domain**          | `GVRN`                                                           | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                       | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                               | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                         | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                          | The Intent.       |
+| **Relations**       | `DEFINED_BY: UMB-LEX-001, INSTANTIATES: PHOENIX_MASTER_TEMPLATE` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                               | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -89,7 +104,9 @@ not just a response, but a versioned artifact.
 The packet is divided into three functional zones:
 
 1. **The Meta-Heading**: Establishes the operational parameters and identifies which part of the Complete Stack is being
+
    invoked.
+
 2. **The Core Instruction (The "Meat")**: The specific task using the What/How/Why framework.
 3. **The Meta-Anchor**: The final checksum that locks the artifact into the Phoenix Rosetta Stone (PRS-001).
 

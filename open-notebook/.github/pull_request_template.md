@@ -31,6 +31,7 @@ Fixes #<!-- issue number -->
 - [ ] Manual testing performed (describe below)
 
 **Test Details:**
+
 <!-- Describe your testing approach -->
 
 ## Design Alignment
@@ -47,6 +48,7 @@ Fixes #<!-- issue number -->
 - [ ] Async-First for Performance
 
 **Explanation:**
+
 <!-- Brief explanation of how your changes align with these principles -->
 
 ## Checklist
@@ -54,6 +56,7 @@ Fixes #<!-- issue number -->
 <!-- Mark completed items with an "x" -->
 
 ### Code Quality
+
 - [ ] My code follows PEP 8 style guidelines (Python)
 - [ ] My code follows TypeScript best practices (Frontend)
 - [ ] I have added type hints to my code (Python)
@@ -63,23 +66,27 @@ Fixes #<!-- issue number -->
 - [ ] My changes generate no new warnings or errors
 
 ### Testing
+
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
 - [ ] I ran linting: `make ruff` or `ruff check . --fix`
 - [ ] I ran type checking: `make lint` or `uv run python -m mypy .`
 
 ### Documentation
+
 - [ ] I have updated the relevant documentation in `/docs` (if applicable)
 - [ ] I have added/updated docstrings for new/modified functions
 - [ ] I have updated the API documentation (if API changes were made)
 - [ ] I have added comments to complex logic
 
 ### Database Changes
+
 - [ ] I have created migration scripts for any database schema changes (in `/migrations`)
 - [ ] Migration includes both up and down scripts
 - [ ] Migration has been tested locally
 
 ### Breaking Changes
+
 - [ ] This PR includes breaking changes
 - [ ] I have documented the migration path for users
 - [ ] I have updated MIGRATION.md (if applicable)

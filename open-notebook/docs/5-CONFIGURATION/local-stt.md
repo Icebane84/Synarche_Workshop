@@ -6,12 +6,12 @@ Run speech-to-text locally for free, private audio/video transcription using Ope
 
 ## Why Local STT?
 
-| Benefit | Description |
-|---------|-------------|
-| **Free** | No per-minute costs after setup |
-| **Private** | Audio never leaves your machine |
-| **Unlimited** | No rate limits or quotas |
-| **Offline** | Works without internet |
+| Benefit       | Description                     |
+| ------------- | ------------------------------- |
+| **Free**      | No per-minute costs after setup |
+| **Private**   | Audio never leaves your machine |
+| **Unlimited** | No rate limits or quotas        |
+| **Offline**   | Works without internet          |
 
 ---
 
@@ -20,6 +20,7 @@ Run speech-to-text locally for free, private audio/video transcription using Ope
 [Speaches](https://github.com/speaches-ai/speaches) is an open-source, OpenAI-compatible server that supports both TTS and STT. It uses [faster-whisper](https://github.com/SYSTRAN/faster-whisper) for transcription.
 
 > **💡 Ready-made Docker Compose files available:**
+>
 > - **[docker-compose-speaches.yml](../../examples/docker-compose-speaches.yml)** - Speaches + Open Notebook
 > - **[docker-compose-full-local.yml](../../examples/docker-compose-full-local.yml)** - Speaches + Ollama (100% local setup)
 >
@@ -74,12 +75,14 @@ You should see the transcribed text in the response.
 ### Step 4: Configure Open Notebook
 
 **Via Settings UI (Recommended):**
+
 1. Go to **Settings** → **API Keys**
 2. Click **Add Credential** → Select **OpenAI-Compatible**
 3. Enter base URL for STT: `http://host.docker.internal:8969/v1` (Docker) or `http://localhost:8969/v1` (local)
 4. Click **Save**, then **Test Connection**
 
 **Legacy (Deprecated) — Environment variables:**
+
 ```yaml
 # In your Open Notebook docker-compose.yml
 environment:
@@ -108,14 +111,14 @@ export OPENAI_COMPATIBLE_BASE_URL_STT=http://localhost:8969/v1
 
 Speaches supports various Whisper model sizes. Larger models are more accurate but slower:
 
-| Model | Size | Speed | Accuracy | VRAM (GPU) |
-|-------|------|-------|----------|------------|
-| `Systran/faster-whisper-tiny` | ~75 MB | Fastest | Basic | ~1 GB |
-| `Systran/faster-whisper-base` | ~150 MB | Fast | Good | ~1 GB |
-| `Systran/faster-whisper-small` | ~500 MB | Medium | Better | ~2 GB |
-| `Systran/faster-whisper-medium` | ~1.5 GB | Slow | Great | ~5 GB |
-| `Systran/faster-whisper-large-v3` | ~3 GB | Slowest | Best | ~10 GB |
-| `Systran/faster-distil-whisper-small.en` | ~400 MB | Fast | Good (English only) | ~2 GB |
+| Model                                    | Size    | Speed   | Accuracy            | VRAM (GPU) |
+| ---------------------------------------- | ------- | ------- | ------------------- | ---------- |
+| `Systran/faster-whisper-tiny`            | ~75 MB  | Fastest | Basic               | ~1 GB      |
+| `Systran/faster-whisper-base`            | ~150 MB | Fast    | Good                | ~1 GB      |
+| `Systran/faster-whisper-small`           | ~500 MB | Medium  | Better              | ~2 GB      |
+| `Systran/faster-whisper-medium`          | ~1.5 GB | Slow    | Great               | ~5 GB      |
+| `Systran/faster-whisper-large-v3`        | ~3 GB   | Slowest | Best                | ~10 GB     |
+| `Systran/faster-distil-whisper-small.en` | ~400 MB | Fast    | Good (English only) | ~2 GB      |
 
 ### List Available Models
 
@@ -145,7 +148,7 @@ services:
     volumes:
       - hf-hub-cache:/home/ubuntu/.cache/huggingface/hub
     environment:
-      - WHISPER__TTL=-1  # Keep model in VRAM (recommended if you have enough memory)
+      - WHISPER__TTL=-1 # Keep model in VRAM (recommended if you have enough memory)
     restart: unless-stopped
     deploy:
       resources:
@@ -165,7 +168,7 @@ By default, Speaches unloads models after some time. To keep the Whisper model l
 
 ```yaml
 environment:
-  - WHISPER__TTL=-1  # Never unload
+  - WHISPER__TTL=-1 # Never unload
 ```
 
 This is recommended if you have enough RAM/VRAM, as loading the model can take a few seconds.
@@ -206,6 +209,7 @@ curl "http://localhost:8969/v1/audio/transcriptions" \
 ```
 
 Common language codes:
+
 - `en` - English
 - `ru` - Russian
 - `es` - Spanish
@@ -265,12 +269,12 @@ docker compose restart speaches
 
 ### Slow Transcription
 
-| Solution | How |
-|----------|-----|
-| Use GPU | Switch to `latest-cuda` image |
+| Solution      | How                                 |
+| ------------- | ----------------------------------- |
+| Use GPU       | Switch to `latest-cuda` image       |
 | Smaller model | Use `faster-whisper-tiny` or `base` |
-| More CPU | Allocate more cores in Docker |
-| SSD storage | Move Docker volumes to SSD |
+| More CPU      | Allocate more cores in Docker       |
+| SSD storage   | Move Docker volumes to SSD          |
 
 ---
 
@@ -278,12 +282,12 @@ docker compose restart speaches
 
 ### Recommended Specs
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| CPU | 2 cores | 4+ cores |
-| RAM | 2 GB | 8+ GB |
-| Storage | 5 GB | 10 GB (for multiple models) |
-| GPU | None | NVIDIA (optional, much faster) |
+| Component | Minimum | Recommended                    |
+| --------- | ------- | ------------------------------ |
+| CPU       | 2 cores | 4+ cores                       |
+| RAM       | 2 GB    | 8+ GB                          |
+| Storage   | 5 GB    | 10 GB (for multiple models)    |
+| GPU       | None    | NVIDIA (optional, much faster) |
 
 ### Resource Limits
 
@@ -305,15 +309,15 @@ docker stats speaches
 
 ## Comparison: Local vs Cloud
 
-| Aspect | Local (Speaches) | Cloud (OpenAI Whisper) |
-|--------|------------------|------------------------|
-| **Cost** | Free | $0.006/min |
-| **Privacy** | Complete | Data sent to provider |
-| **Speed** | Depends on hardware | Usually faster |
-| **Quality** | Excellent (same Whisper) | Excellent |
-| **Setup** | Moderate | Simple API key |
-| **Offline** | Yes | No |
-| **Languages** | 99+ | 99+ |
+| Aspect        | Local (Speaches)         | Cloud (OpenAI Whisper) |
+| ------------- | ------------------------ | ---------------------- |
+| **Cost**      | Free                     | $0.006/min             |
+| **Privacy**   | Complete                 | Data sent to provider  |
+| **Speed**     | Depends on hardware      | Usually faster         |
+| **Quality**   | Excellent (same Whisper) | Excellent              |
+| **Setup**     | Moderate                 | Simple API key         |
+| **Offline**   | Yes                      | No                     |
+| **Languages** | 99+                      | 99+                    |
 
 ### When to Use Local
 
@@ -344,12 +348,12 @@ See **[Local TTS Setup](local-tts.md)** for TTS configuration.
 
 Any OpenAI-compatible STT server works:
 
-| Server | Description |
-|--------|-------------|
-| [Speaches](https://github.com/speaches-ai/speaches) | TTS + STT in one (recommended) |
-| [faster-whisper-server](https://github.com/fedirz/faster-whisper-server) | Lightweight STT only |
-| [whisper.cpp](https://github.com/ggerganov/whisper.cpp) | C++ implementation with server mode |
-| [LocalAI](https://github.com/mudler/LocalAI) | Multi-model local AI server |
+| Server                                                                   | Description                         |
+| ------------------------------------------------------------------------ | ----------------------------------- |
+| [Speaches](https://github.com/speaches-ai/speaches)                      | TTS + STT in one (recommended)      |
+| [faster-whisper-server](https://github.com/fedirz/faster-whisper-server) | Lightweight STT only                |
+| [whisper.cpp](https://github.com/ggerganov/whisper.cpp)                  | C++ implementation with server mode |
+| [LocalAI](https://github.com/mudler/LocalAI)                             | Multi-model local AI server         |
 
 The key requirements:
 

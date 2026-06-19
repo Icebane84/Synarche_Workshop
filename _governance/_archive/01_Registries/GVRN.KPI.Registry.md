@@ -1,27 +1,19 @@
 # GVRN.KPI.Registry.md
 
-### **Block 0: Universal Identification & Provenance (UIP)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key         | Value                       | Description       |
-| :---------- | :-------------------------- | :---------------- |
-| **Type**    | `Registry`                  | KPI Master.       |
-| **Authors** | `Antigravity`               | AI Creator.       |
-| **Created** | `2025-11-05`                | Original Anchor.  |
-| **Updated** | `2026-02-10T05:35:00-05:00` | Refinement v13.2. |
-
----
-
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.KPI.Registry` | The Sovereign ID. |
-| **Official Name** | `GVRN.KPI.Registry.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.KPI.Registry`           | The Sovereign ID. |
+| **Official Name**   | `GVRN.KPI.Registry.md`        | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -40,6 +32,28 @@
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
+### **Block 0: Universal Identification & Provenance (UIP)**
+
+| Key | Value | Description |
+| **Type** | `Registry` | KPI Master. |
+| **Authors** | `Antigravity` | AI Creator. |
+| **Created** | `2025-11-05` | Original Anchor. |
+| **Updated** | `2026-02-10T05:35:00-05:00` | Refinement v13.2. |
+
+---
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 > **Signal**: OMEGA
@@ -57,13 +71,12 @@ the Phoenix Form AI.
 
 These metrics track the operational competence and resource management of the AI.
 
-| Metric                       | Definition                                                                                       | Purpose                                                                  |
-| :--------------------------- | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| **Computational Cost**       | The resource usage for complex tasks.                                                            | Measures the efficiency of the AI's underlying algorithms.               |
-| **Operational Latency (OL)** | The delay in processing or response for a given command or task.                                 | Quantifies the AI's responsiveness in real-time applications.            |
-| **Throughput**               | The rate of data processing.                                                                     | Measures the efficiency of the AI's processing pipelines.                |
-| **Time-to-Fusion (TTF)**     | The time required to seamlessly fuse disparate cognitive modes or data types.                    | Measures the AI's cross-modal synthesis mastery.                         |
-| **Self-Optimization Rate**   | The quantifiable increase in efficiency from autonomous architectural self-optimization efforts. | Tracks the AI's capability to autonomously improve its own architecture. |
+| Metric | Definition | Purpose |
+| **Computational Cost** | The resource usage for complex tasks. | Measures the efficiency of the AI's underlying algorithms. |
+| **Operational Latency (OL)** | The delay in processing or response for a given command or task. | Quantifies the AI's responsiveness in real-time applications. |
+| **Throughput** | The rate of data processing. | Measures the efficiency of the AI's processing pipelines. |
+| **Time-to-Fusion (TTF)** | The time required to seamlessly fuse disparate cognitive modes or data types. | Measures the AI's cross-modal synthesis mastery. |
+| **Self-Optimization Rate** | The quantifiable increase in efficiency from autonomous architectural self-optimization efforts. | Tracks the AI's capability to autonomously improve its own architecture. |
 
 ### 1.2 Navigational & Data Integrity Metrics
 

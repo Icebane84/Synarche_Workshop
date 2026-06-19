@@ -1,16 +1,19 @@
 # **📑 SYNG.DNA.Core: Dynamic Nexus Architect (DNA)**
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.DNA.Core` | The Sovereign ID. |
-| **Official Name** | `SYNG.DNA.Core.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001, IMPLEMENTED_BY: SYNG.Protocol.DNA, COMMANDED_BY: SYNG.Actuator.DNA` | The Network.      |
-
+| Key                 | Value                                                                                             | Description       |
+| :------------------ | :------------------------------------------------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `SYNG.DNA.Core`                                                                                   | The Sovereign ID. |
+| **Official Name**   | `SYNG.DNA.Core.md`                                                                                | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                                                 | The Standard.     |
+| **Domain**          | `SYNG`                                                                                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                                        | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                                                                | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                                                        | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                                                           | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001, IMPLEMENTED_BY: SYNG.Protocol.DNA, COMMANDED_BY: SYNG.Actuator.DNA` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                                                | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -65,6 +80,7 @@ The DNA operates on a **Predictive Routing Matrix**, analyzing three specific ve
 1. **Intent Vector**: Identifies the semantic "gravity" of the query to locate the primary relevant hubs in the Loom.
 2. **Load Vector**: Assesses real-time CCLI to avoid bottlenecks in over-taxed modules.
 3. **Link Latency**: Calculates the shortest "hop" distance between disparate artifacts to create temporary, high-speed
+
    "Synergy Chutes."
 
 ---

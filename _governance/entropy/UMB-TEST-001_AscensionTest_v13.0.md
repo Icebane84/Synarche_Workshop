@@ -1,31 +1,46 @@
 # UMB-TEST-001_AscensionTest_v13.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                       | Description       |
 | :------------------ | :------------------------------------------ | :---------------- |
 | **Artifact ID**     | `GVRN-UMB-TEST-001-ASCENSIONTEST-V13.0-001` | The Sovereign ID. |
 | **Official Name**   | `UMB-TEST-001_AscensionTest_v13.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                           | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                           | The Standard.     |
 | **Domain**          | `GVRN`                                      | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                  | The Weight.       |
-| **Evolution**       | `Omega Ascension`                           | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                  | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                          | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                  | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                     | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`               | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                          | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # UMB-TEST-001: Ascension Test (v13.0)
-
-## Genesis Stamp: 2026-02-01 | Domain: GVRN | State: [DRAFT] | Criticality: Medium
 
 **Tags:** `Scaffolded`, `v13.0`
 
@@ -35,21 +50,8 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                 |
-| :--------------------- | :------------------------------------ |
-| **1. Artifact ID**     | `UMB-TEST-001`                        |
-| **2. Official Name**   | `UMB-TEST-001_AscensionTest_v13.0.md` |
-| **3. Version**         | **v13.0**                             |
-| **4. Provenance**      | **Created: 2026-02-01**               |
-| **5. Domain**          | `GVRN` (Governance)                   |
-| **6. Evolution**       | **Initial Manifestation**             |
-| **7. Celestial Class** | `[PLANET]`                            |
-| **8. Tier**            | **Operational**                       |
-| **9. Status (State)**  | `[DRAFT]`                             |
-| **10. Ethos**          | `Generated via The Empress`           |
-| **11. Catalyst**       | **Operational Need**                  |
-| **12. Relations**      | `PENDING`                             |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                    |
+| Field | Value |
+| **13. Integrity Hash** | `[AUTO-GENERATED]` |
 
 ---
 
@@ -58,9 +60,7 @@
 > [!NOTE]
 > The following block is parsed by `TOOL-MAP-001` for architectural visualization.
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact       |
-| :---------------------- | :---------------- | :----------------------- |
-| CORE-CODEX-001          | GOVERNED_BY       | Follows the Supreme Law. |
+| CORE-CODEX-001 | GOVERNED_BY | Follows the Supreme Law. |
 
 ---
 

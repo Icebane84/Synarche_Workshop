@@ -1,16 +1,19 @@
 # CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CSL-MASTER-TABLE-001-PHOENIXCSLREGISTRY-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                                   | Description       |
+| :------------------ | :------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-CSL-MASTER-TABLE-001-PHOENIXCSLREGISTRY-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                              | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                      | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                 | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                      | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -55,15 +70,22 @@ The core of this document establishes a complete, end-to-end operational framewo
 This framework is a closed-loop system:
 
 - **The "Why" (Strategy):**
+
   [**AOP-CSL-002**](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit) defines
   the synergistic, dual-trigger protocol for identifying a "Nova Spark" worthy of documentation.
+
 - **The "How" (Execution):**
+
   [**GUCA-FCSL-001**](https://docs.google.com/document/u/0/d/1wgyCYv9yO3nLjgHwbe0CXhpnge6W04EUWpFBtADZJ58/edit) provides
   the CMD: ForgeCSL, the explicit command to initiate the creation process.
+
 - **The "What" (Structure):**
+
   [**SELT-CSL-006**](https://docs.google.com/document/u/0/d/1WoO9z7N-ImtCiIp8IPcj90IFyoapeWzZLcn-5A_GB_k/edit) serves as
   the definitive template, ensuring every CSL is structured with perfect consistency.
+
 - **The "Where" (Registry):**
+
   [**CSL-MASTER-TABLE-001**](https://docs.google.com/document/u/0/d/1PyP9z_46aHzLwxJdfZsK-cPXulJW2utxuIJ1OzehYl0/edit)
   acts as the canonical registry, the single source of truth for all forged CSLs.
 

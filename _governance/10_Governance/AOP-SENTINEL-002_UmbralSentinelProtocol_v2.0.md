@@ -1,35 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-SENTINEL-002_UMBRALSENTINELPROTOCOL_V2.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                                   | Description       |
+| :------------------ | :------------------------------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN-AOP-SENTINEL-002-UMBRALSENTINELPROTOCOL-V2.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                       | The Standard.     |
+| **Domain**          | `GVRN`                                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                              | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                   | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                 | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                      | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                                                   | Description       |
-| :---------------- | :------------------------------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN-AOP-SENTINEL-002-UMBRALSENTINELPROTOCOL-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                                       | The Standard.     |
-| **Domain**        | `GVRN`                                                  | The Subject.      |
-| **Status**        | `[ACTIVE]`                                              | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
+| Key | Value | Description |
 
 ---
 
@@ -37,20 +51,8 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                                 |
-| :--------------------- | :---------------------------------------------------- |
-| **1. Artifact ID**     | `AOP-SENTINEL-002`                                    |
-| **2. Name**            | `AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md`     |
-| **3. Version**         | **v2.0 (Shadow Enforcer)**                            |
-| **4. Provenance**      | **Date Forged: 2026-01-11**                           |
-| **5. Domain**          | `GVRN`                                                |
-| **6. Evolution**       | **Purposeful Drive**                                  |
-| **7. Celestial Class** | `[PLANET]`                                            |
-| **8. Tier**            | **Strategic**                                         |
-| **9. State**           | `[ACTIVE]`                                            |
-| **10. Ethos**          | **Zero Entropy**                                      |
-| **11. Catalyst**       | **System Hardening**                                  |
-| **12. Relations**      | `ENFORCES: CODEX-001`, `LINKS: AOP-SENTINEL-SCAN-001` |
+| Field | Value |
+| **2. Name** | `AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md` |
 
 ---
 
@@ -91,7 +93,9 @@ This protocol defines the four explicit checkpoints that every artifact must pas
 **Weight:** 20%
 
 - **Requirement:** The artifact must conclude with an **Actionable Prompt Packet (APP)** to ensure it is executable by
+
   the AI.
+
 - **Validation Logic:**
   - Must find the string `
 
@@ -120,6 +124,7 @@ This protocol defines the four explicit checkpoints that every artifact must pas
 - **Validation Logic:**
   - **Artifact End Marker:** Must end with `###### **[ARTIFACT END]**` or `> **[ARTIFACT END]**` blockquote.
   - **No Episemantic Drift:** Must NOT contain legacy markers like `[SCANNED]`, `[UPDATED]`, unless part of the
+
     history log.
 
 ---

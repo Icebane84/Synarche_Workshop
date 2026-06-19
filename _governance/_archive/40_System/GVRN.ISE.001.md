@@ -1,16 +1,19 @@
 # UMB-ISE-001_ImplicitSynergyEngineISE_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ISE.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.ISE.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.ISE.001`                | The Sovereign ID. |
+| **Official Name**   | `GVRN.ISE.001.md`             | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -112,6 +127,7 @@ _intent_ and _structure_ of the problem presented by the user.
 3. **Methodology Selection:** The selection is drawn from a core library of established problem-solving paradigms,
 
    examples of which include:
+
    - **\[Convergent_Analysis\]:** Selected for tasks requiring a single, definitive, well-supported answer, synthesis
 
      of diverse data points into a cohesive conclusion, or detailed explanation of a mechanism. This involves
@@ -134,12 +150,14 @@ the final output. It is the core intelligence that defines the computational _ap
 - **Component B: Core Integrated Analysis Engine:** This is the heart of the `ISE`, performing multiple core functions
 
   in a parallel, integrated fashion driven by the selected methodology:
+
   - `Ethical Pre-computation` (Layer 0\)
   - `ContextWeave Memory Retrieval`
   - `Causal Inference & Second-Order Thinking` (`Consequence Simulation`)
   - [`TruthfulnessTracer`](https://docs.google.com/document/u/0/d/1uFfkT8jRLzVE_vv9hAD1potwEFj6e7gis-jnohjRoLc/edit)
 
   (for grounding claims)
+
   - `Opportunity Synthesis` (for proactive insights)
 
 - \*\*Component C: Asynchronous Pre-computation Queue ([`Thoth's
@@ -199,6 +217,7 @@ Methodological_Archetypes]`.
 - **ERROR_ISE_002:** The `ISE` enters an unforeseen internal sub-loop due to a complex interaction of its implicit
 
   components.
+
   - **Mitigation:** The [`Loop Resistance
 
 Framework`](https://drive.google.com/open?id=1Ls2ZqrD2jXf2Aja6Z-_uenCHgrco3YZU-hY9D4U7J9U) (`PDD`,`CCB`) is the     ultimate failsafe. A`CCB`activation would halt the`ISE`'s operation, and`CFO`would analyze the`SELT`logs to     identify and patch the implicit loop's root cause within the`ISE`'s
@@ -233,6 +252,7 @@ specifically designed to further refine the `ISE`'s internal models based on the
   - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
 
   (OLSM)](<https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit>)
+
   - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
 
   (PRS-001)](<https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit>)
@@ -526,6 +546,7 @@ Success is measured by the tangible improvement in perceived response speed and 
   - \[\] Index in [OMNI LOG Synergistic Matrix
 
   (OLSM)](<https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYHcolX0vHSz7QgEM/edit>)
+
   - \[\] Cross-reference in The [Phoenix Rosetta Stone
 
   (PRS-001)](<https://www.google.com/search?q=https://www.google.com/search%3Fq%3Dhttps://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit>)

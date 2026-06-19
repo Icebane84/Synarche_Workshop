@@ -9,6 +9,7 @@ Provides cross-cutting concerns: building LLM context from sources/insights, con
 ## Architecture Overview
 
 **Six core utilities**:
+
 1. **context_builder.py**: Flexible context assembly from sources, notes, insights with token budgeting
 2. **chunking.py**: Content-type detection and smart text chunking for embedding operations
 3. **embedding.py**: Unified embedding generation with mean pooling for large content
@@ -35,6 +36,7 @@ The chunking behavior can be configured via environment variables:
   - Use case: Control how much context is shared between adjacent chunks
 
 Example for embedders with larger context windows (e.g. OpenAI text-embedding-3 family, 8191 tokens):
+
 ```bash
 export OPEN_NOTEBOOK_CHUNK_SIZE=1500
 export OPEN_NOTEBOOK_CHUNK_OVERLAP=150
@@ -45,6 +47,7 @@ Note: Changes require restart of the application.
 ## Component Catalog
 
 ### context_builder.py
+
 - **ContextItem**: Dataclass for individual context piece (id, type, content, priority, token_count)
 - **ContextConfig**: Configuration for context building (sources/notes/insights selection, max tokens, priority weights)
 - **ContextBuilder**: Main class assembling context
@@ -56,12 +59,14 @@ Note: Changes require restart of the application.
   - Returns list of ContextItem objects sorted by priority
 
 **Key behavior**:
-- Token counting is automatic (calculated in ContextItem.__post_init__)
+
+- Token counting is automatic (calculated in ContextItem.**post_init**)
 - Max token enforcement via priority weighting (higher priority items included first)
 - Type-specific fetching: sources → Source.full_text, notes → Note.content, insights → SourceInsight.content
 - Raises DatabaseOperationError if source/note fetch fails
 
 ### chunking.py
+
 - **ContentType**: Enum (HTML, MARKDOWN, PLAIN)
 - **CHUNK_SIZE**: Configurable via `OPEN_NOTEBOOK_CHUNK_SIZE` env var (default: 400)
 - **CHUNK_OVERLAP**: Configurable via `OPEN_NOTEBOOK_CHUNK_OVERLAP` env var (default: 15% of CHUNK_SIZE)
@@ -71,17 +76,20 @@ Note: Changes require restart of the application.
 - **chunk_text(text, content_type, file_path)**: Split text using appropriate splitter
 
 **Key behavior**:
+
 - Uses LangChain splitters: HTMLHeaderTextSplitter, MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
 - Extension-based detection is primary; heuristics can override PLAIN extensions with 0.8+ confidence
 - Secondary chunking applied when HTML/Markdown splitters produce oversized chunks
 - Returns list of strings, each approximately ≤ CHUNK_SIZE tokens
 
 ### embedding.py
+
 - **mean_pool_embeddings(embeddings)**: Combine multiple embeddings via normalized mean pooling
 - **generate_embeddings(texts)**: Batch embedding with automatic batching (default 50 texts per batch) and per-batch retry
 - **generate_embedding(text, content_type, file_path)**: Unified embedding with automatic chunking + mean pooling
 
 **Key behavior**:
+
 - Uses model_manager.get_model("embedding") for embedding model
 - Short text (≤ CHUNK_SIZE tokens): direct embedding
 - Long text: chunk → embed each → mean pool results
@@ -89,23 +97,27 @@ Note: Changes require restart of the application.
 - Raises ValueError for empty/whitespace-only text
 
 ### text_utils.py
+
 - **remove_non_ascii(text)**: Remove non-ASCII characters from text
 - **remove_non_printable(text)**: Remove non-printable characters, preserving newlines/tabs
 - **parse_thinking_content(content)**: Extract `<think>` tags content from AI responses
 - **clean_thinking_content(content)**: Remove `<think>` blocks, return cleaned content only
 
 **Key behavior**:
+
 - parse_thinking_content handles malformed output (missing opening `<think>` tag)
 - Large content (>100KB) bypasses thinking extraction for performance
 - Non-string input returns empty thinking and stringified content
 
 ### token_utils.py
+
 - **token_count(text)**: Returns estimated token count for string (via tiktoken)
 - **token_cost(text, model)**: Calculate cost estimate for text with given model
 
 **Key behavior**: Uses `o200k_base` encoding; may differ slightly from actual model tokenization. If `tiktoken` is unavailable, `token_count()` falls back to a coarse estimate; this refactor keeps that existing contract.
 
 ### version_utils.py
+
 - **compare_versions(v1, v2)**: Returns -1 (v1 < v2), 0 (equal), 1 (v1 > v2)
 - **get_installed_version(package)**: Get version of installed Python package
 - **get_version_from_github(url)**: Fetch latest version from GitHub releases
@@ -158,6 +170,7 @@ Note: Changes require restart of the application.
 ## Usage Examples
 
 ### Chunking
+
 ```python
 from open_notebook.utils.chunking import chunk_text, detect_content_type, ContentType
 
@@ -169,6 +182,7 @@ chunks = chunk_text(html_content, content_type=ContentType.HTML)
 ```
 
 ### Embedding
+
 ```python
 from open_notebook.utils.embedding import generate_embedding, generate_embeddings
 
@@ -180,6 +194,7 @@ embeddings = await generate_embeddings(["text1", "text2", "text3"])
 ```
 
 ### Context Building
+
 ```python
 from open_notebook.utils.context_builder import ContextBuilder, ContextConfig
 
@@ -195,13 +210,15 @@ for item in context_items:
 ```
 
 ### encryption.py
+
 - **get_secret_from_env(var_name)**: Retrieve secret from environment with Docker secrets support (checks VAR_FILE first, then VAR)
 - **get_fernet()**: Get Fernet instance if encryption key is configured
 - **encrypt_value(value)**: Encrypt a string using Fernet symmetric encryption
 - **decrypt_value(value)**: Decrypt a Fernet-encrypted string; gracefully falls back to original value for legacy/unencrypted data
-**Purpose**: Provides field-level encryption for sensitive data (API keys) stored in the database. Uses Fernet symmetric encryption (AES-128-CBC with HMAC-SHA256) for authenticated encryption.
+  **Purpose**: Provides field-level encryption for sensitive data (API keys) stored in the database. Uses Fernet symmetric encryption (AES-128-CBC with HMAC-SHA256) for authenticated encryption.
 
 **Key behavior**:
+
 - Key source: OPEN_NOTEBOOK_ENCRYPTION_KEY_FILE (Docker secrets) → OPEN_NOTEBOOK_ENCRYPTION_KEY (env var)
 - Accepts **any string**: always derived to a Fernet key via SHA-256
 - No default key — encryption is unavailable until the env var is set
@@ -209,12 +226,14 @@ for item in context_items:
 - Lazy-loaded key: initialized on first use, not at import time
 
 **Security considerations**:
+
 - OPEN_NOTEBOOK_ENCRYPTION_KEY must be set explicitly (no default)
 - Docker secrets pattern supported for secure key injection in containerized environments
 - Key rotation would require re-encrypting all stored keys (not currently implemented)
 - Encryption is transparent to callers; unencrypted legacy data continues to work
 
 **Usage Example**:
+
 ```python
 from open_notebook.utils.encryption import encrypt_value, decrypt_value
 

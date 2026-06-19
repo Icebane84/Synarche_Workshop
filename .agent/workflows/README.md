@@ -1,14 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                            | Description       |
+| :---------------- | :------------------------------- | :---------------- |
 | **Artifact ID**   | `SYNG.README.WorkflowsLifecycle` | The Sovereign ID. |
-| **Official Name** | `README.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `WORKFLOWS` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
-
+| **Official Name** | `README.md`                      | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                | The Standard.     |
+| **Domain**        | `WORKFLOWS`                      | The Subject.      |
+| **Status**        | `[ACTIVE]`                       | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry`      | The Network.      |
 
 ---
 

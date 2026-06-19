@@ -31,6 +31,7 @@ ollama serve
 Keep this terminal open. Ollama will run in the background.
 
 **Optional: Start Ollama on a custom port or network interface:**
+
 ```bash
 OLLAMA_HOST=0.0.0.0:11434 ollama serve
 ```
@@ -42,6 +43,7 @@ OLLAMA_HOST=0.0.0.0:11434 ollama serve
 Create a new folder `open-notebook-external-ollama` and add these files:
 
 **docker-compose.yml**:
+
 ```yaml
 services:
   surrealdb:
@@ -57,8 +59,8 @@ services:
     image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     ports:
-      - "8502:8502"  # Web UI (React frontend)
-      - "5055:5055"  # API (required!)
+      - "8502:8502" # Web UI (React frontend)
+      - "5055:5055" # API (required!)
     environment:
       # Encryption key for credential storage (required)
       - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
@@ -74,7 +76,6 @@ services:
     depends_on:
       - surrealdb
     restart: always
-
 ```
 
 **Note:** No Ollama service in Docker — we use the host's Ollama.
@@ -85,11 +86,11 @@ services:
 
 When Open Notebook runs inside Docker, it cannot reach `localhost:11434` on your host directly. Use the special hostname:
 
-| Host OS | Ollama URL in Open Notebook |
-|---------|----------------------------|
-| Linux | `http://host.containers.internal:11434` |
-| macOS | `http://host.docker.internal:11434` |
-| Windows | `http://host.docker.internal:11434` |
+| Host OS | Ollama URL in Open Notebook             |
+| ------- | --------------------------------------- |
+| Linux   | `http://host.containers.internal:11434` |
+| macOS   | `http://host.docker.internal:11434`     |
+| Windows | `http://host.docker.internal:11434`     |
 
 ---
 
@@ -133,6 +134,7 @@ Wait 10-15 seconds for services to start.
 ## Step 7: Access Open Notebook (instant)
 
 Open your browser:
+
 ```
 http://localhost:8502
 ```
@@ -155,6 +157,7 @@ http://localhost:8502
 ### "Connection failed" when testing Ollama credential
 
 1. Verify Ollama is running:
+
    ```bash
    curl http://localhost:11434/api/version
    ```
@@ -187,14 +190,15 @@ docker compose up -d
 
 ## Why External Ollama?
 
-| Approach | Ollama in Docker | Ollama External |
-|----------|-----------------|-----------------|
-| **Resource isolation** | Separated | Shares with host |
-| **GPU access** | Requires Docker GPU setup | Native GPU access |
-| **Model management** | Via `docker exec` | Via terminal directly |
-| **Memory usage** | Isolated from host | Shared with host apps |
+| Approach               | Ollama in Docker          | Ollama External       |
+| ---------------------- | ------------------------- | --------------------- |
+| **Resource isolation** | Separated                 | Shares with host      |
+| **GPU access**         | Requires Docker GPU setup | Native GPU access     |
+| **Model management**   | Via `docker exec`         | Via terminal directly |
+| **Memory usage**       | Isolated from host        | Shared with host apps |
 
 **External Ollama** is recommended if you:
+
 - Already have Ollama installed and configured
 - Want GPU access without Docker GPU passthrough complexity
 - Prefer managing models via command line directly

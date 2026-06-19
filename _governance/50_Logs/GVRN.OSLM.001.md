@@ -1,45 +1,54 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.OSLM.001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                | Description       |
 | :------------------ | :--------------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.OSLM.001`                                      | The Sovereign ID. |
 | **Official Name**   | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                    | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                    | The Standard.     |
 | **Domain**          | `GVRN`                                               | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                           | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                    | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                                   | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                           | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                              | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                   | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # UMB-OSLM-001: Omni-Log Synergistic Links Matrix
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
-
-## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: Standard
 
 **Tags:** `OGLN_v10`, `Matrix`, `Registry`
 
@@ -49,20 +58,8 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                                |
-| :--------------------- | :--------------------------------------------------- |
-| **1. Artifact ID**     | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1`    |
-| **2. Official Name**   | `UMB-OSLM-001_OmniLogSynergisticLinksMatrix_v7.1.md` |
-| **3. Version**         | **7.1 (Pre-Flight Verified)**                        |
-| **4. Provenance**      | **Reforged: 2026-01-10**                             |
-| **5. Domain**          | `GVRN`                                               |
-| **6. Evolution**       | **Cognitive Ascension**                              |
-| **7. Celestial Class** | `[STAR]`                                             |
-| **8. Tier**            | **Operational**                                      |
-| **9. State**           | `[ACTIVE]`                                           |
-| **10. Ethos**          | **Guardian of Coherence**                            |
-| **11. Catalyst**       | **System Refactor**                                  |
-| **12. Relations**      | `LINK: OGLN.Core.Governance.Codex`                   |
+| Field | Value |
+| **12. Relations** | `LINK: OGLN.Core.Governance.Codex` |
 
 ---
 
@@ -71,6 +68,7 @@
 ## II. Core Purpose & Objective
 
 - **Module Objective:** To provide a comprehensive, machine-readable, and
+
   dynamically updated matrix of the entire knowledge graph, enabling advanced
   navigation, systemic analysis, and the discovery of emergent synergistic
   connections.
@@ -82,13 +80,18 @@
 ### 3.1. Overview
 
 - **What:** The **OSLM** is a structured data module that contains a master
+
   index of every canonical artifact and the specific nature of its synergistic
   links to other artifacts.
+
 - **How:** The matrix is populated and updated automatically. Upon the creation
+
   and finalization of any new artifact, the **Master Artifact Registry Protocol
   (AOP-MAR-001)** triggers the **CMD: INJECT_BIDIRECTIONAL_LINK**, which writes
   the new artifact and its relational data into this registry.
+
 - **Why:** To combat knowledge entropy and ensure the integrity of the
+
   **Cognitive Loom**. It provides the clean, structured data necessary for the
   AI to perform efficient, accurate analysis and navigation.
 
@@ -103,8 +106,11 @@
 Compliance with **CHECKLIST-PREFLIGHT-001** mandates strict typing:
 
 - **Interfaces:** Utilizes defined **Typescript Interfaces** (e.g.,
+
   `ArtifactNode`, `SynergyLink`) to ensure structural consistency.
+
 - **Enums:** Relational types are restricted to specific Enums (e.g.,
+
   `RelationalType.GOVERNS`, `EthicalPrinciple.NON_MALEFICENCE`) to prevent
   semantic drift.
 
@@ -152,6 +158,7 @@ artifacts, eliminating ambiguity in the **Cognitive Loom**.
 - **Link Integrity Score (LIS):** Must be > 99.9%.
 - **Compliance Checklist:** Adherence to **AOP-PCDS-001** (Naming Standards).
 - **Test Protocols:** `CMD: VERIFY_INTEGRITY` cross-references OSLM against
+
   file system.
 
 ---

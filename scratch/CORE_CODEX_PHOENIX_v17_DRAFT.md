@@ -1,7 +1,9 @@
 # CORE.CODEX.PHOENIX v17.0-DRAFT
+
 ## Governance Evolution Blueprint
 
 This document is a proposed evolution path from v16.1 intended to raise:
+
 - Distributed Systems Accuracy → Very High
 - Governance Maturity → Very High
 - Operational Realism → Very High
@@ -30,6 +32,7 @@ Invariants → Constraints → Derived Behaviors → Observability → Mutation 
 ## Distributed Systems Accuracy
 
 Add:
+
 - Consistency model declarations
 - CAP tradeoff registry
 - Failure-domain mapping
@@ -40,6 +43,7 @@ Add:
 ## Governance Maturity
 
 Add:
+
 - ADR requirements
 - Governance versioning
 - Amendment process
@@ -49,6 +53,7 @@ Add:
 ## Operational Realism
 
 Add:
+
 - Cost budgets
 - Staffing assumptions
 - Scale gates
@@ -57,6 +62,7 @@ Add:
 ## Conflict Resolution
 
 Add:
+
 - Formal decision graph
 - Arbitration matrix
 - Tier-collision workflow
@@ -64,6 +70,7 @@ Add:
 ## Autonomous Safety
 
 Add:
+
 - Human approval boundaries
 - Risk classification engine
 - Rollback guarantees
@@ -72,6 +79,7 @@ Add:
 ## Production Readiness
 
 Add:
+
 - Testability requirements
 - Observability requirements
 - Recovery objectives
@@ -80,6 +88,7 @@ Add:
 ## Research Layer
 
 Separate all research systems into:
+
 - Sandbox
 - Experimental
 - Candidate
@@ -94,6 +103,7 @@ Separate all research systems into:
 State(t) = State(0) + ΣEvents
 
 Derived laws:
+
 - Sentinel's Oath
 - Preservation Mandate
 - Immutable Chronicle

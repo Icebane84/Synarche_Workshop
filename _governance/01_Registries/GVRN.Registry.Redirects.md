@@ -1,54 +1,61 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.REGISTRY.REDIRECTS` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                                                              | Description       |
+| :------------------ | :--------------------------------------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.Registry.Redirects`                                                          | The Sovereign ID. |
+| **Official Name**   | `GVRN.Registry.Redirects.md`                                                       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                                                  | The Standard.     |
+| **Domain**          | `GVRN`                                                                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                                                         | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                                                 | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                                                           | The Lifecycle.    |
+| **Ethos**           | `"We honor the past by remembering it, but we live in the future by renaming it."` | The Intent.       |
+| **Relations**       | `LINKS: GVRN.Registry.Master`                                                      | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                                                 | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # GVRN.Registry.Redirects.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, Redirects, Legacy_Map` **Criticality**: Operational
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description          |
-| :------------------ | :---------------------------- | :------------------- |
-| **Artifact ID**     | `GVRN.Registry.Redirects`     | The Sovereign ID.    |
-| **Official Name**   | `GVRN.Registry.Redirects.md`  | The Filename.        |
-| **Patron Shard**    | `SHARD_KING_ARCHIVAL`         | The Agent. (History) |
-| **Version**         | **v13.0 [ASCENDED]**          | The Standard.        |
-| **Domain**          | `GVRN`                        | The Subject.         |
-| **Celestial Class** | `[PLANET]`                    | The Weight.          |
-| **Evolution**       | `Omega Ascension`             | The Maturity.        |
-| **Signal (ESF)**    | `OMEGA`                       | The Frequency.       |
-| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.       |
-| **Relations**       | `LINKS: GVRN.Registry.Master` | The Network.         |
+| Key | Value | Description |
+| **Patron Shard** | `SHARD_KING_ARCHIVAL` | The Agent. (History) |
 
 ---
 
 # 📜 The Golden Thread: Legacy Redirect Registry
 
-> **Ethos**: "We honor the past by remembering it, but we live in the future by renaming it."
-
 This registry tracks the **Transmutation** of artifacts from the Legacy (v11.0) Identity to the Sovereign (v13.0) Identity. It serves as a permanent lookup table for `legacy_transmuter.py` and human auditors.
 
 ## I. Transmutation Log
 
-| Date       | Legacy ID (Old) | Sovereign ID (New) | Domain | Status       |
-| :--------- | :-------------- | :----------------- | :----- | :----------- |
-| 2026-02-04 | `UMB-SGM-001`   | `GVRN.Gov.Module`  | GVRN   | [TRANSMUTED] |
-| 2026-02-04 | `GVRN-ID-001`   | `GVRN.ID.Standard` | GVRN   | [TRANSMUTED] |
+| 2026-02-04 | `UMB-SGM-001` | `GVRN.Gov.Module` | GVRN | [TRANSMUTED] |
+| 2026-02-04 | `GVRN-ID-001` | `GVRN.ID.Standard` | GVRN | [TRANSMUTED] |
 
 > [!NOTE]
 > **[ARTIFACT END]**
@@ -152,3 +159,23 @@ This registry tracks the **Transmutation** of artifacts from the Legacy (v11.0) 
 | 2026-02-04 | `AOP-SEED-002` | `GVRN.SEED.002` | GVRN | [TRANSMUTED] |
 | 2026-02-04 | `AOP-CSL-002` | `GVRN.CSL.002` | GVRN | [TRANSMUTED] |
 | 2026-02-04 | `UMB-TPL-001` | `GVRN.TPL.001` | GVRN | [TRANSMUTED] |
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.

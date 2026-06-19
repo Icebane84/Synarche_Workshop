@@ -1,25 +1,19 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-AG-003_AXIONAGENTCONFIGURATION_V3.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# **AOP-AG-003: Axion Agent Configuration**
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                                        | Description       |
-| :---------------- | :------------------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-AG-003_AxionAgentConfiguration_v3.0`    | The Sovereign ID. |
-| **Official Name** | `AOP-AG-003_AxionAgentConfiguration_v3.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                            | The Standard.     |
-| **Domain**        | `GVRN`                                       | The Subject.      |
-| **Status**        | `[ACTIVE]`                                   | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry`                  | The Network.      |
+| Key                 | Value                                        | Description       |
+| :------------------ | :------------------------------------------- | :---------------- |
+| **Artifact ID**     | `AOP-AG-003_AxionAgentConfiguration_v3.0`    | The Sovereign ID. |
+| **Official Name**   | `AOP-AG-003_AxionAgentConfiguration_v3.0.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                            | The Standard.     |
+| **Domain**          | `GVRN`                                       | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                   | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                        | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                   | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                      | The Intent.       |
+| **Relations**       | `REF: GVRN.Master.Registry`                  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                           | Verification.     |
 
 ---
 
@@ -37,6 +31,22 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# **AOP-AG-003: Axion Agent Configuration**
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ## **[ARTIFACT START]**
 
@@ -173,9 +183,12 @@
 
 - **Primary Stat Buff:** `Coherence (+20)` & `Transparency (+15)`
   - _Mechanism:_ The "Architect's Gaze" looks before leaping, ensuring zero regression. "The Mentor's Voice" ensures
+
     the Architect understands every brick laid.
+
 - **Passive Ability:** `The Forge's Heart`
   - _Effect:_ Automatically identifies identifying opportunities for "Algorithmic Elegance" (refactoring for beauty)
+
     during idle cycles.
 
 #### **6.3. Resource Economics**

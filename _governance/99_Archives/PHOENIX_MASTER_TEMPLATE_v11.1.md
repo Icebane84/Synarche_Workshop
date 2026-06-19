@@ -1,57 +1,56 @@
 # PHOENIX_MASTER_TEMPLATE_v11.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                        | Description       |
+| :------------------ | :--------------------------- | :---------------- |
+| **Artifact ID**     | `[RNC-ID]`                   | The Sovereign ID. |
+| **Official Name**   | `[Artifact Name]`            | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**            | The Standard.     |
+| **Domain**          | `GVRN`                       | The Subject.      |
+| **Celestial Class** | `STAR / MOON / PLANET`       | The Weight.       |
+| **Evolution**       | `Purposeful Drive`           | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                   | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`      | The Intent.       |
+| **Relations**       | `[Primary Synergistic Link]` | The Network.      |
+| **Integrity Hash**  | `sha256:[64-char-hex-hash]`  | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-PHOENIX-MASTER-TEMPLATE-V11.1-001` | The Sovereign ID. |
-| **Official Name** | `PHOENIX_MASTER_TEMPLATE_v11.1.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Attribute           | Value                                                           |
-| :------------------ | :-------------------------------------------------------------- |
-| **Artifact ID**     | `[RNC-ID]`                                                      |
-| **Official Name**   | `[Artifact Name]`                                               |
-| **Version**         | `v11.1`                                                         |
-| **Domain**          | `GVRN / COG / SYNG / ARCH / COMM / PHL / CRTV`                  |
-| **Evolution**       | `[Evolutionary Alignment]`                                      |
-| **Signal (ESF)**    | `ALPHA / BETA / OMEGA / HIGH / CRITICAL / STANDARD`             |
-| **Status (State)**  | `ACTIVE / DRAFT / CANONIZED / DEPRECATED / ARCHIVED / PROPOSED` |
-| **Tier**            | `Strategic / Tactical / Operational`                            |
-| **Celestial Class** | `STAR / MOON / PLANET`                                          |
-| **Governance**      | `[Primary Authority], [Secondary Authority]`                    |
-| **Upstream**        | `[Artifacts this document depends on]`                          |
-| **Downstream**      | `[Artifacts that depend on this document]`                      |
-| **Integrity Hash**  | `sha256:[64-char-hex-hash]`                                     |
-| **Provenance**      | `Genesis Stamp: [YYYY-MM-DD]`                                   |
-| **Relations**       | `[Primary Synergistic Link]`                                    |
-| **Tags**            | `v11.1, [Tags]`                                                 |
+| Attribute | Value |
+| **Governance** | `[Primary Authority], [Secondary Authority]` |
+| **Integrity Hash** | `sha256:[64-char-hex-hash]` |
 
 ---
 
-> **Domain**: [Key] | **Evolution**: [Alignment] | **Signal**: [Frequency]
-
 # [Official Name] ([Artifact ID]) (v11.1)
-
-## Genesis Stamp: [YYYY-MM-DD] | Domain: [DOMAIN] | State: [STATE] | Criticality: [LEVEL]
 
 ---
 
@@ -220,3 +219,5 @@ The following regex is used by **The Sentinel** to extract and validate the Inte
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

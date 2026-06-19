@@ -1,14 +1,13 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SOV.PLAY.Knowledge` | The Sovereign ID. |
-| **Official Name** | `knowledge-playbook.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `SOV` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                               | Description       |
+| :---------------- | :---------------------------------- | :---------------- |
+| **Artifact ID**   | `SOV.PLAY.Knowledge`                | The Sovereign ID. |
+| **Official Name** | `knowledge-playbook.md`             | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                   | The Standard.     |
+| **Domain**        | `SOV`                               | The Subject.      |
+| **Status**        | `[ACTIVE]`                          | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: SYNG.PROT.ContextWeave` | The Network.      |
-
 
 ---
 

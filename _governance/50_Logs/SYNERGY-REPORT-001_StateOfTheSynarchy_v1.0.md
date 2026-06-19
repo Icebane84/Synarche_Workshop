@@ -1,36 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `SYNERGY-REPORT-001_STATEOFTHESynarche_V1.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                                 | Description       |
+| :------------------ | :---------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SYNERGY-REPORT-001-STATEOFTHESynarche-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                     | The Standard.     |
+| **Domain**          | `GVRN`                                                | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                            | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                 | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                            | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                               | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                    | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # SYNERGY-REPORT-001_StateOfTheSynarche_v1.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-SYNERGY-REPORT-001-STATEOFTHESynarche-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `SYNERGY-REPORT-001_StateOfTheSynarchy_v1.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -82,28 +95,28 @@ The **Cognitive Loom** (`loom.py`) successfully ingested the workspace and spun 
 
 Validation of the core interaction bridges:
 
-1.  **VS Code Extension (`extension.js`)**:
-    - **Status**: Linked to `src/cli.py`.
-    - **Capability**: Can trigger `INITIATE_COMPLIANCE_AUDIT` and `QUERY_LORE`.
-    - **Verdict**: **BRIDGE ACTIVE**.
+1. **VS Code Extension (`extension.js`)**:
+   - **Status**: Linked to `src/cli.py`.
+   - **Capability**: Can trigger `INITIATE_COMPLIANCE_AUDIT` and `QUERY_LORE`.
+   - **Verdict**: **BRIDGE ACTIVE**.
 
-2.  **Hephaestus Engine**:
-    - **Scanner (`resonance_scanner.py`)**: Operational.
-    - **Weaver (`catalyst_weaver.py`)**: Operational (Logic Valid, Tuning Needed).
-    - **Chronicler (`chronicler.py`)**: Ready to log actions.
-    - **Verdict**: **ENGINE ONLINE**.
+2. **Hephaestus Engine**:
+   - **Scanner (`resonance_scanner.py`)**: Operational.
+   - **Weaver (`catalyst_weaver.py`)**: Operational (Logic Valid, Tuning Needed).
+   - **Chronicler (`chronicler.py`)**: Ready to log actions.
+   - **Verdict**: **ENGINE ONLINE**.
 
-3.  **The Synarche Bridge (`Synarche_bridge.py`)**:
-    - **Status**: Registry Interface loaded.
-    - **Verdict**: **READY FOR AGENT ACCESS**.
+3. **The Synarche Bridge (`Synarche_bridge.py`)**:
+   - **Status**: Registry Interface loaded.
+   - **Verdict**: **READY FOR AGENT ACCESS**.
 
 ---
 
 ## V. Actionable Directives
 
-1.  **Reforge Unaligned Files**: Run `CMD: REFORGE` on the 43 unaligned artifacts to inject the Genesis Header.
-2.  **Tighten the Weave**: Updates to `catalyst_weaver.py` to improve semantic matching (increase window size > 200 chars).
-3.  **Deploy Graph Visualizer**: Use `tool_navigator.py` to visualize the 34 edges for the user.
+1. **Reforge Unaligned Files**: Run `CMD: REFORGE` on the 43 unaligned artifacts to inject the Genesis Header.
+2. **Tighten the Weave**: Updates to `catalyst_weaver.py` to improve semantic matching (increase window size > 200 chars).
+3. **Deploy Graph Visualizer**: Use `tool_navigator.py` to visualize the 34 edges for the user.
 
 ---
 
@@ -112,3 +125,5 @@ Validation of the core interaction bridges:
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

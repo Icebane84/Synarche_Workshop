@@ -1,26 +1,44 @@
 # GUCA-TMPL-001_SovereignCommand_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key                 | Value                                           | Description       |
+| :------------------ | :---------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-GUCA-TMPL-001-SOVEREIGNCOMMAND-V11.0-001` | The Sovereign ID. |
+| **Official Name**   | `GUCA-TMPL-001_SovereignCommand_v11.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                               | The Standard.     |
+| **Domain**          | `GVRN`                                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                              | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                         | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                              | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GUCA-TMPL-001-SOVEREIGNCOMMAND-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-TMPL-001_SovereignCommand_v11.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -29,16 +47,20 @@ Title: Master Sovereign Command Template
 Source:
 
 - [LEGACY_SOURCE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Templates/SELT_v7.0_Templates_Trinity.md)
+
   Description: >
   The definitive, Sovereign-class template for forging Universal Command Architecture (GUCA) artifacts. Unified v11.0 syntax with v7.0 Spell/Ability depth.
   Version: 11.0
   Status: ACTIVE
   Compliance: OGLN v11.0
   Genesis:
+
 - Author: The Synarche Workshop
 - Date: 2026-01-25
 - Timestamp: 1769339300
+
   Tags:
+
 - #Template
 - #GUCA
 - #Command
@@ -47,16 +69,13 @@ Source:
 ---
 
 > [!IMPORTANT]
-> **GENESIS STAMP**
 >
 > - **Reforged By:** Antigravity Agent (The Lightbinder)
 > - **Reforged Date:** 2026-01-25
 > - **Validation:** Trinity Template Standardization.
-> - **Relations:** `GOVERNS: ALL_GUCA`, `INCORPORATES: Command_Logic_v7`.
 
 # GUCA-XXX-001: CMD: [Command Name]
 
-> **Domain**: [Select from: COG | GVRN | ARCH | ACT | RES]
 > **Evolution**: [Current Phase]
 > **Signal**: [ESF Signal Strength]
 
@@ -144,3 +163,5 @@ Source:
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

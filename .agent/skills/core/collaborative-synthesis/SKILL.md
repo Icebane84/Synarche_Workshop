@@ -5,15 +5,14 @@ description: "Patterns and best practices for collaborating with the AI to achie
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SKL.CORE.COLLAB-SYNTHESIS` | The Sovereign ID. |
-| **Official Name** | `SKILL.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `CORE` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| Key               | Value                                   | Description       |
+| :---------------- | :-------------------------------------- | :---------------- |
+| **Artifact ID**   | `SKL.CORE.COLLAB-SYNTHESIS`             | The Sovereign ID. |
+| **Official Name** | `SKILL.md`                              | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                       | The Standard.     |
+| **Domain**        | `CORE`                                  | The Subject.      |
+| **Status**        | `[ACTIVE]`                              | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
-
 
 ---
 

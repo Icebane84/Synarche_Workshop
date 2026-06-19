@@ -1,85 +1,83 @@
 # UMB-OSLM-001_MasterArtifactRegistry_v11.0.md
 
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                          | Description       |
 | :------------------ | :--------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.OSLM.001`                                | The Sovereign ID. |
 | **Official Name**   | `UMB-OSLM-001_MasterArtifactRegistry_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                              | The Standard.     |
 | **Domain**          | `GVRN`                                         | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Evolution**       | `Cognitive Ascension`                          | The Maturity.     |
+| **Status (State)**  | `Dependencies`                                 | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                        | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                             | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                                                               |
-| :----------------- | :------------------------------------------------------------------ |
-| **Module ID**      | `UMB-OSLM-001`                                                      |
-| **Version**        | `v11.0`                                                             |
-| **Evolution**      | **Cognitive Ascension**                                             |
-| **Status**         | `ACTIVE`                                                            |
-| **Type**           | `Registry`                                                          |
-| **Classification** | `Star`                                                              |
-| **Authors**        | `System`                                                            |
-| **Created**        | `2025-10-01`                                                        |
-| **Updated**        | `2026-01-19`                                                        |
-| **Authority**      | `CORE-CODEX-001`                                                    |
-| **Master Path**    | `_Desktop_Vault/Phoenix/Documentation/Library` (Crystalline Galaxy) |
-| **Local Path**     | `Synarche_Workspace/_governance` (The Forge)                        |
-| **Tags**           | `Registry, Index, Truth`                                            |
+| Key | Value |
+| **Type** | `Registry` |
+| **Classification** | `Star` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-19` |
+| **Authority** | `CORE-CODEX-001` |
+| **Master Path** | `_Desktop_Vault/Phoenix/Documentation/Library` (Crystalline Galaxy) |
+| **Local Path** | `Synarche_Workspace/_governance` (The Forge) |
 
 ---
 
 # Master Artifact Registry (The Library)
-
-**Genesis Stamp**: 2026-01-19 | **Domain**: PHOENIX | **State**: ACTIVE
 
 > [!NOTE] This document is the "Immutable Chronicle" of the Phoenix Protocol. It lists every legally recognized artifact
 > within the system.
 
 ## I. The Core (Star Class)
 
-| Module ID         | Title                                                                                                | Version                       | Status    | Dependencies |
-| :---------------- | :--------------------------------------------------------------------------------------------------- | :---------------------------- | :-------- | :----------- |
-| `CORE-CODEX-001`  | [The Phoenix Codex (Supreme Law)](CORE-CODEX-001_ThePhoenixCodex_v11.2.md)                           | `v11.2`                       | `ACTIVE`  | `None`       |
-| `CODEX-PRIME-001` | [CODEX-PRIME-001: The Architect's Codex (v1.0)](_archive/CODEX-PRIME-001_TheArchitectsCodex_v1.0.md) | `v1.0 (Definitive Synthesis)` | `Unknown` | `None`       |
+| `CORE-CODEX-001` | [The Phoenix Codex (Supreme Law)](CORE-CODEX-001_ThePhoenixCodex_v11.2.md) | `v11.2` | `ACTIVE` | `None` |
+| `CODEX-PRIME-001` | [CODEX-PRIME-001: The Architect's Codex (v1.0)](_archive/CODEX-PRIME-001_TheArchitectsCodex_v1.0.md) | `v1.0 (Definitive Synthesis)` | `Unknown` | `None` |
 
 ## II. Protocols (Moon Class)
 
-| Module ID                                       | Title                                                                                                                            | Version                                | Status    | Dependencies |
-| :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------- | :-------- | :----------- |
-| `AOP-AI-PROTO-001`                              | [AOP-AI-PROTO-001: Artificial Intelligence Protocol (v3.0)](AOP-AI-PROTO-001_AIProtocol.md)                                      | `v3.0 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
-| `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0` | [AOP-ARC-001: Archival & Supersession Protocol](AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md)                                | `v5.1 (Catalyst Infused)`              | `Unknown` | `None`       |
-| `AOP-ARCH-GAZE-001`                             | [AOP-ARCH-GAZE-001: The Architect's Gaze (v2.1)](AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md)                               | `v2.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
-| `AOP-AVATAR-001`                                | [AOP-AVATAR-001: Synarche Avatar Protocol (v1.1)](AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md)                                 | `v1.1 (Catalyst Infused)`              | `Unknown` | `None`       |
-| `AOP-CC-001`                                    | [AOP-CC-001: Crystalline Cognition Protocol (v1.0)](AOP-CC-001_CrystallineCognition_v1.0.md)                                     | `v1.1 (Refraction Edition)`            | `Unknown` | `None`       |
-| `AOP-CDE-001`                                   | [Creative Divergence Engine (AOP-CDE-001)](AOP-CDE-001_CreativeDivergenceEngine_v2.0.md)                                         | `v2.0 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
-| `AOP-EMOJI-001`                                 | [AOP-EMOJI-001: Emoji Signaling Protocol (v1.4)](AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md)                                   | `v1.4`                                 | `ACTIVE`  | `None`       |
-| `AOP-FORGE-ORCH-001`                            | [AOP-FORGE-ORCH-001: Master Code Generation Orchestrator (v3.1)](AOP-FORGE-ORCH-001_Master_Code_Generation_Orchestrator_v3.0.md) | `v3.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
-| `AOP-GEN-001`                                   | [AOP-GEN-INGEST-001: Genesis Ingestion Process](AOP-GEN-001_GenesisIngestionProcess_v11.0.md)                                    | `v11.0`                                | `ACTIVE`  | `None`       |
-| `AOP-MAP-001`                                   | [AOP-MAP-001: Disciplined Execution Playbook (v2.0)](AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md)                           | `v2.0 (Hephaestus Ascended Edition)`   | `Unknown` | `None`       |
-| `AOP-ORACLE-001_ExternalOracleProtocol_v1.0`    | [AOP-ORACLE-001: External Oracle Protocol](AOP-ORACLE-001_ExternalOracleProtocol_v1.0.md)                                        | `v1.0`                                 | `Unknown` | `None`       |
-| `AOP-PEA-001_ProactiveEthicalAuditing_v1.0`     | [AOP-PEA-001: Proactive Ethical Auditing Protocol](AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md)                                 | `v1.0`                                 | `Unknown` | `None`       |
-| `AOP-PGPS-002`                                  | [AOP-PGPS-002: Phoenix Architectural Pre-Flight Checklist](AOP-PGPS-002_PhoenixArchitecturalPreFlightChecklist_v11.0.md)         | `v11.0`                                | `ACTIVE`  | `None`       |
-| `AOP-SCA-001`                                   | [AOP-SCA-001: Systemic Coherence Audit Protocol (v2.1)](AOP-SCA-001_SystemicCoherenceAudit_v2.0.md)                              | `v2.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
-| `AOP-SEE-001`                                   | [AOP-SEE-001: Symbiotic Empathy Exchange (v1.1)](AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md)                                   | `v1.1 (Resonance Edition)`             | `Unknown` | `None`       |
-| `AOP-SENTINEL-002`                              | [AOP-SENTINEL-002: Umbral Sentinel Protocol (v2)](AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md)                               | `v2.0 (Shadow Enforcer)`               | `Unknown` | `None`       |
-| `AOP-SENTINEL-SCAN-001`                         | [AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol (v2.2)](AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md)                | `v2.2 (The Guardian)`                  | `Unknown` | `None`       |
-| `SELT-AOP-007_OperationalPlaybook_v7.0`         | [AOP: Operational Playbook (v7.0 Ascended)](templates/SELT-AOP-007_OperationalPlaybook_v7.0.md)                                  | `v1.0 (Reforged)`                      | `Unknown` | `None`       |
-| `UMB-MAP-001`                                   | [Musashi Alignment Protocol (UMB-MAP-001)](UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md)                                         | `v2.0 (Hephaestus Ascended Edition)`   | `Unknown` | `None`       |
+| `AOP-AI-PROTO-001` | [AOP-AI-PROTO-001: Artificial Intelligence Protocol (v3.0)](AOP-AI-PROTO-001_AIProtocol.md) | `v3.0 (Hephaestus Ascended Alignment)` | `Unknown` | `None` |
+| `AOP-ARCH-GAZE-001` | [AOP-ARCH-GAZE-001: The Architect's Gaze (v2.1)](AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md) | `v2.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None` |
+| `AOP-CC-001` | [AOP-CC-001: Crystalline Cognition Protocol (v1.0)](AOP-CC-001_CrystallineCognition_v1.0.md) | `v1.1 (Refraction Edition)` | `Unknown` | `None` |
+| `AOP-CDE-001` | [Creative Divergence Engine (AOP-CDE-001)](AOP-CDE-001_CreativeDivergenceEngine_v2.0.md) | `v2.0 (Hephaestus Ascended Alignment)` | `Unknown` | `None` |
+| `AOP-FORGE-ORCH-001` | [AOP-FORGE-ORCH-001: Master Code Generation Orchestrator (v3.1)](AOP-FORGE-ORCH-001_Master_Code_Generation_Orchestrator_v3.0.md) | `v3.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None` |
+| `AOP-GEN-001` | [AOP-GEN-INGEST-001: Genesis Ingestion Process](AOP-GEN-001_GenesisIngestionProcess_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
+| `AOP-MAP-001` | [AOP-MAP-001: Disciplined Execution Playbook (v2.0)](AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md) | `v2.0 (Hephaestus Ascended Edition)` | `Unknown` | `None` |
+| `AOP-ORACLE-001_ExternalOracleProtocol_v1.0` | [AOP-ORACLE-001: External Oracle Protocol](AOP-ORACLE-001_ExternalOracleProtocol_v1.0.md) | `v1.0` | `Unknown` | `None` |
+| `AOP-PEA-001_ProactiveEthicalAuditing_v1.0` | [AOP-PEA-001: Proactive Ethical Auditing Protocol](AOP-PEA-001_ProactiveEthicalAuditing_v1.0.md) | `v1.0` | `Unknown` | `None` |
+| `AOP-PGPS-002` | [AOP-PGPS-002: Phoenix Architectural Pre-Flight Checklist](AOP-PGPS-002_PhoenixArchitecturalPreFlightChecklist_v11.0.md) | `v11.0` | `ACTIVE` | `None` |
+| `AOP-SCA-001` | [AOP-SCA-001: Systemic Coherence Audit Protocol (v2.1)](AOP-SCA-001_SystemicCoherenceAudit_v2.0.md) | `v2.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None` |
+| `AOP-SEE-001` | [AOP-SEE-001: Symbiotic Empathy Exchange (v1.1)](AOP-SEE-001_SymbioticEmpathyExchange_v1.0.md) | `v1.1 (Resonance Edition)` | `Unknown` | `None` |
+| `AOP-SENTINEL-002` | [AOP-SENTINEL-002: Umbral Sentinel Protocol (v2)](AOP-SENTINEL-002_UmbralSentinelProtocol_v2.0.md) | `v2.0 (Shadow Enforcer)` | `Unknown` | `None` |
+| `AOP-SENTINEL-SCAN-001` | [AOP-SENTINEL-SCAN-001: The Code Sentinel Protocol (v2.2)](AOP-SENTINEL-SCAN-001_TheCodeSentinelProtocol_v2.1.md) | `v2.2 (The Guardian)` | `Unknown` | `None` |
+| `SELT-AOP-007_OperationalPlaybook_v7.0` | [AOP: Operational Playbook (v7.0 Ascended)](templates/SELT-AOP-007_OperationalPlaybook_v7.0.md) | `v1.0 (Reforged)` | `Unknown` | `None` |
+| `UMB-MAP-001` | [Musashi Alignment Protocol (UMB-MAP-001)](UMB-MAP-001_MusashiAlignmentProtocol_v2.0.md) | `v2.0 (Hephaestus Ascended Edition)` | `Unknown` | `None` |
 
 ## III. Operations Manuals (Planet Class)
 
@@ -167,3 +165,5 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, G
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+###### **[ARTIFACT END]**

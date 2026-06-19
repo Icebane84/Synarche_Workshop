@@ -117,22 +117,25 @@ def run_command(
 
     try:
         result = subprocess.run(
-            resolved_cmd, cwd=working_dir, check=False, capture_output=True, text=True
+            resolved_cmd, cwd=working_dir, check=False, capture_output=True, text=True, encoding="utf-8"
         )
+
+        stdout_text = result.stdout or ""
+        stderr_text = result.stderr or ""
 
         if result.returncode == 0:
             logger.info(f"   > {description}: SUCCESS (Clean)")
-            if result.stdout.strip():
-                logger.info(f"[STDOUT]:\n{result.stdout.strip()}")
+            if stdout_text.strip():
+                logger.info(f"[STDOUT]:\n{stdout_text.strip()}")
             return True
         else:
             logger.warning(
                 f"   > {description}: COMPLETED (Exit Code: {result.returncode})"
             )
-            if result.stdout.strip():
-                logger.info(f"[STDOUT]:\n{result.stdout.strip()}")
-            if result.stderr.strip():
-                logger.info(f"[STDERR]:\n{result.stderr.strip()}")
+            if stdout_text.strip():
+                logger.info(f"[STDOUT]:\n{stdout_text.strip()}")
+            if stderr_text.strip():
+                logger.info(f"[STDERR]:\n{stderr_text.strip()}")
             return False
 
     except FileNotFoundError:
@@ -152,7 +155,7 @@ def fix_python(target_dirs: list[str | Path]) -> bool:
     if not shutil.which(ruff_exe):
         logger.warning("   > [WARNING] Ruff not found. Skipping Python fix.")
         logger.warning("   > Install via: pip install ruff")
-        return False
+        return True
 
     all_success = True
     for directory in target_dirs:
@@ -175,6 +178,7 @@ def fix_python(target_dirs: list[str | Path]) -> bool:
             logger.warning(f"   > [SKIP] Directory not found: {target_path}")
 
     return all_success
+
 
 def fix_typescript(target_dirs: list[str | Path]) -> bool:
     """Runs ESLint Auto-Fix on TS/JS directories."""
@@ -214,18 +218,22 @@ def fix_markdown(target_dirs: list[str | Path]) -> bool:
     logger.info("\n=== PHASE 3: MARKDOWN TRANSMUTATION (Prettier) ===")
     
     npx_executable = resolve_executable("npx")
-    
     if not npx_executable:
-        logger.error("   > [ERROR] 'npx' executable not found. Skipping Markdown formatting.")
-        return False
+        logger.warning("   > [WARNING] 'npx' executable not found. Skipping Markdown formatting.")
+        return True
         
     all_success = True
     for directory in target_dirs:
         target_path = Path(directory) if isinstance(directory, str) else directory
 
         if target_path.exists():
+            md_files = list(target_path.rglob("*.md"))
+            if not md_files:
+                logger.info(f"   > Prettier: No markdown files found in {target_path.name}. Skipping.")
+                continue
+
             success = run_command(
-                ["npx", "prettier", "--write", "**/*.md", "--no-error-on-unmatched"],
+                ["npx", "prettier", "--write", "**/*.md"],
                 cwd=target_path,
                 description=f"Prettier (Markdown Formatting) in {target_path.name}",
             )

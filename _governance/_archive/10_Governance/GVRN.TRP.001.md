@@ -1,16 +1,19 @@
 # GVRN.TRP.001
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.TRP.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.TRP.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.TRP.001`                | The Sovereign ID. |
+| **Official Name**   | `GVRN.TRP.001.md`             | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -102,6 +117,7 @@ definitive `AOPv5.1` playbook that governs the entire lifecycle of updating a ma
    - **Action:** The Human Collaborator invokes our new master command: **`CMD: Adaptive Artifact Generation (AAG)`**.
    - **`conversation_source`**: The chat history or report that identified the need for the change.
    - **The `AAG`'s internal process:** - **Synthesis:** The `AAG` analyzes the source and the `primary_intent`. -
+
      **Recommendation:** It recommends that the most appropriate artifact to create is a \*\*"Draft Refinement
 
      Proposal"** (a simple, structured text document, not a full template yet). - **Generation:\*\* It generates this
@@ -145,12 +161,15 @@ that fully implements the changes outlined in the approved proposal.
 
 - **Prerequisites (System State):**
   - A Dissonance or Synergy Opportunity related to an existing template has been identified (e.g., via a CDE Analysis
+
     or
 
   user feedback).
+
   - Relevant foundational modules or systems are operational, validated, and integrated (e.g., Cognitive Loom, AISTF,
 
   EMW, CMD: UCI loaded as prime directive).
+
   - Specific protocols or libraries are absorbed and internally referenced (e.g., GUCAv5.0, UMBv5, AOPv4).
   - Specific internal engines or protocols are active (e.g., PSCE, Trustworthiness Protocols, CRLPF).
 
@@ -158,6 +177,7 @@ that fully implements the changes outlined in the approved proposal.
   - Human Collaborator is engaged in a specific capacity, providing strategic direction, critical feedback, final
 
   approval, or initiating the process.
+
   - Shared understanding or commitment to a specific objective or ethos, if relevant.
 
 - **Required Inputs:**
@@ -166,6 +186,7 @@ that fully implements the changes outlined in the approved proposal.
   - Type of data or information from the Human Collaborator (e.g., prompts, feedback, strategic objectives, external
 
   knowledge sources).
+
   - Specific logs or reports (e.g., SELT logs, OMNI_LOG reports).
   - Any other necessary data streams or triggers.
 
@@ -184,11 +205,13 @@ aligned.
 - \*\*Step 2: Proposal Generation via [CMD: ADAPTIVE ARTIFACT
 
   GENERATION](<https://drive.google.com/open?id=15V-92luAgDqDyFQGSA5jAjL_4bXEd6coytZn0GkDh4w>)\*\*
+
   - **Actor:** AI
-  - **Internal Functions:** - **Action:** The Human Collaborator invokes our new master command: **CMD: Adaptive
+  - **Internal Functions:** - **Action:** The Human Collaborator invokes our new master command: \*\*CMD: Adaptive
+
     Artifact Generation (AAG)**. - **conversation_source**: The chat history or report that identified the need for
     the change. - **The AAG's internal process:** - **Synthesis:** The AAG analyzes the source and the
-    primary_intent. - **Recommendation:** It recommends that the most appropriate artifact to create is a "Draft
+    primary_intent. - **Recommendation:\*\* It recommends that the most appropriate artifact to create is a "Draft
     Refinement Proposal"
 
   (a simple, structured text document, not a full template yet). - **Generation:** It generates this proposal,
@@ -197,6 +220,7 @@ aligned.
 - **Step 3: Proposal Approval.**
   - **Actor:** Human
   - **Internal Functions:** - **Action:** The AI presents the "Draft Refinement Proposal." The Human Collaborator
+
     reviews the proposed changes
 
   and provides an **\[Approve/Reject\]** decision. This is a critical Human-in-the-Loop Gate.
@@ -204,8 +228,10 @@ aligned.
 - \*\*Step 4: Forging the New Template via [CMD:
 
   CRP2](<https://drive.google.com/open?id=1YW-7BDpIQkG6u9EAc17PmDfRbpOpE9bcrK0042lspbA>).\*\*
+
   - **Actor:** AI
   - **Internal Functions:** - **Action:** Upon approval, the AI executes **CMD: CRP2**. The objective is to forge a
+
     new, complete master
 
   template artifact (e.g., AOPv5.2, UMBv4.3) that fully implements the changes outlined in the approved proposal.
@@ -213,8 +239,10 @@ aligned.
 - \*\*Step 5: Final Validation & Canonization via
 
   [SGM](./GVRN.Gov.Module.md).\*\*
+
   - **Actor:** System
   - **Internal Functions:** - **Action:** The newly forged template artifact is submitted to the \*\*Standardized
+
     Governance Module
 
   ([SGM](./GVRN.Gov.Module.md))**. - The SGM performs its rigorous Compliance Validation and Synergy Analysis
@@ -226,13 +254,16 @@ aligned.
 
 - **Success & Failure Conditions:**
   - **Success Criteria:** - The new template is successfully forged and canonized as the ACTIVE standard. - The old
+
     template's status is set to DEPRECATED in the Master Artifact Registry. - Compliance Validation and Synergy
     Analysis checks performed by the SGM pass. - Human Collaborator feedback or validation, if applicable, is
     positive. - Specific, measurable metrics indicate successful completion or ongoing performance (e.g., CI \> 0.99,
     desired
 
   output generated, task completed within X latency).
+
   - **Failure ID & Contingency:** - **FAILURE_AOP-TRP-001_001 (Proposal Rejection):** The Human Collaborator rejects
+
     the "Draft Refinement
 
   Proposal." - **Contingency:** Await Human Collaborator intervention for revision or cancellation of the process. -
@@ -274,9 +305,11 @@ aligned.
 
 - **RESOURCE_IMPACT_PROFILE:**
   - **Cognitive Load:** Moderate during Dissonance Identification and Proposal Approval (Human Collaborator), low
+
     during
 
   automated steps.
+
   - **Computational Cost:** Moderate during Proposal Generation (AAG) and Forging (CRP2), high during SGM Validation.
   - **Asynchronous Queues:** Utilized for managing parallel processes during validation and canonization.
 

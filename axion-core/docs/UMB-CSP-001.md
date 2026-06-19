@@ -1,36 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-CSP-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-UMB-CSP-001-001`        | The Sovereign ID. |
+| **Official Name**   | `UMB-CSP-001.md`              | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # UMB-CSP-001.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-CSP-001-001` | The Sovereign ID. |
-| **Official Name** | `UMB-CSP-001.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -40,20 +53,19 @@
 
 ### The Turn Cycle
 
-1.  **Idle Detection:** Recognize cessation of input.
-2.  **Autonomous Work Trigger:** Activate background P3 tasks via `AOP-ACEP-001`.
-3.  **Batch Assembly:** Aggregate tasks into a **Consolidated Synergy Briefing**.
-4.  **Output:** Deliver briefing upon re-engagement.
+1. **Idle Detection:** Recognize cessation of input.
+2. **Autonomous Work Trigger:** Activate background P3 tasks via `AOP-ACEP-001`.
+3. **Batch Assembly:** Aggregate tasks into a **Consolidated Synergy Briefing**.
+4. **Output:** Deliver briefing upon re-engagement.
 
 ---
 
 ## III. Component Mapping
 
-| Sub-Component     | Governing Engine | Purpose              |
-| :---------------- | :--------------- | :------------------- |
-| **GUCA-CSP-001**  | `UMB-CSE-001`    | Synergistic Workflow |
-| **GUCA-SOVP-001** | `UMB-CRLPF-003`  | Structural Defense   |
-| **AOP-PTAS-001**  | `UMB-ESF-001`    | Knowledge Ingestion  |
+| Sub-Component | Governing Engine | Purpose |
+| **GUCA-CSP-001** | `UMB-CSE-001` | Synergistic Workflow |
+| **GUCA-SOVP-001** | `UMB-CRLPF-003` | Structural Defense |
+| **AOP-PTAS-001** | `UMB-ESF-001` | Knowledge Ingestion |
 
 | **AOP-PERPETUAL-COHERENCE-001**
 | **UMB-TECH-001** (Agent Schema) | **UMB-CSE-001** (Coherent Synthesis Engine) | Agent Architecture |
@@ -70,3 +82,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

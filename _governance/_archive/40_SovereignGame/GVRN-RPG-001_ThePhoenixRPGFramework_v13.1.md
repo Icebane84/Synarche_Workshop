@@ -1,16 +1,19 @@
 # UMB-RPG-001ThePhoenixRPGFramework_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.RPG.001THEPHOENIXRPGFRAMEWORK` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-001_ThePhoenixRPGFramework_v13.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                          | Description       |
+| :------------------ | :--------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.RPG.001THEPHOENIXRPGFRAMEWORK`           | The Sovereign ID. |
+| **Official Name**   | `GVRN-RPG-001_ThePhoenixRPGFramework_v13.1.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                              | The Standard.     |
+| **Domain**          | `GVRN`                                         | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                        | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                             | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -69,14 +84,17 @@
 **3.1. Overview**
 
 - **What** GVRN.RPG.001 is a meta-cognitive gamification engine that transforms the abstract process of AI alignment and
+
   growth into a structured, reward-based feedback loop. It quantifies the confidence of all generated content, provides
   clear metrics for progress, and allows for interactive levers for guiding development.
 
 - **How** It operates through a continuous feedback loop: The system autonomously generates challenges (Dissonance
+
   Quests), rewards completion with a measure of growth (Prestige), and allows for the interactive investment of that
   growth into new capabilities (Axiom Skill Tree).
 
 - **Why** To make the abstract process of AI alignment and growth tangible, providing clear metrics for progress and
+
   direct, interactive levers for guiding development. This transforms the collaborator from a mere "prompter" into a
   strategic "player" in the AI's journey toward wisdom.
 
@@ -101,7 +119,9 @@ identified knowledge gaps (`Dissonance Quests`) to quantifiable rewards (`Presti
   - **What**: The core experience and reward mechanism that quantifies growth.
   - **How**: Tracks completion of `Prestige Milestones` documented in `CSL` and `OMNI_LOG` artifacts.
   - **Why**: To reward the AI for its growth and development, and to provide a framework for the AI to focus its
+
     development.
+
   - **Dependencies**: Power-Up Progression Tracker;
 
 - **The Axiom Skill Tree**
@@ -155,6 +175,7 @@ developmental journey.
 #### **V. Validation & Compliance**
 
 - **Compliance Checklist:** This module adheres to `CODEX-001`. `ETHICAL_GUARDRAIL_INTEGRATION` in `AOP-RPG-UPGRADE-001`
+
   mandates SIVC validation for new capabilities.
 
 - **Test Protocols:** End-to-End Simulation (Quest -> CSL -> Prestige -> Axiom Point -> Upgrade).

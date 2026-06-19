@@ -1,26 +1,44 @@
 # AOP-AG-002_AxionAgentConfiguration_v1.0.md
 
-> **Domain**: ARCH
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-04** **Domain: ARCH** **State: [ACTIVE]** **Tags:** `OGLN_v13, ARCH, Reforged` **Criticality: Operational**
+| Key                 | Value                                              | Description       |
+| :------------------ | :------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH-AOP-AG-002-AXIONAGENTCONFIGURATION-V1.0-001` | The Sovereign ID. |
+| **Official Name**   | `AOP-AG-002_AxionAgentConfiguration_v1.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                  | The Standard.     |
+| **Domain**          | `ARCH`                                             | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                         | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                                 | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                         | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                            | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                 | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-AOP-AG-002-AXIONAGENTCONFIGURATION-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-AG-002_AxionAgentConfiguration_v1.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -28,20 +46,7 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                        |
-| :--------------------- | :------------------------------------------- |
-| **1. Artifact ID**     | `AOP-AG-002`                                 |
-| **2. Official Name**   | `AOP-AG-002_AxionAgentConfiguration_v1.0.md` |
-| **3. Version**         | **v1.1 (SUPERSEDED)**                        |
-| **4. Provenance**      | **Date Reforged: 2026-01-20**                |
-| **5. Domain**          | `ARCH`                                       |
-| **6. Evolution**       | **Obsolete**                                 |
-| **7. Celestial Class** | `[PLANET]`                                   |
-| **8. Tier**            | **Operational**                              |
-| **9. State**           | `[ARCHIVED]`                                 |
-| **10. Ethos**          | **Archival Record**                          |
-| **11. Catalyst**       | **Supersession by AOP-AG-003 v11.0**         |
-| **12. Relations**      | `SUPERSEDED_BY: AOP-AG-003_v11.0`            |
+| Field | Value |
 
 ---
 

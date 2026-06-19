@@ -1,52 +1,56 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `SYNG.LINK.SEMANTIC` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# SYNG.Link.Semantic: The Edge Taxonomy
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.Link.Semantic`              | The Sovereign ID. |
-| **Official Name** | `SYNG.Link.Semantic.md`           | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
-| **Domain**        | `LINK`                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key                 | Value                             | Description       |
+| :------------------ | :-------------------------------- | :---------------- |
+| **Artifact ID**     | `SYNG.Link.Semantic`              | The Sovereign ID. |
+| **Official Name**   | `SYNG.Link.Semantic.md`           | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                 | The Standard.     |
+| **Domain**          | `GVRN`                            | The Subject.      |
+| **Celestial Class** | `[PLANET]`                        | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                        | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`           | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                | Verification.     |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block B: State Vector (AGP-001)**
 
 | State Field   | Value    |
 | :------------ | :------- |
 | **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# SYNG.Link.Semantic: The Edge Taxonomy
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `1.0` |
 | **Stability** | `Stable` |
 
 ---
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                   | Mitigation              |
-| :--------------------- | :---------------------- |
-| **Taxonomy Drift**     | Strict Enum Enforcement |
-| **Relational Entropy** | Bidirectional Auditing  |
+| Risk | Mitigation |
+| **Taxonomy Drift** | Strict Enum Enforcement |
+| **Relational Entropy** | Bidirectional Auditing |
 
 ---
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID       | Relationship Type | Synergistic Impact                                    |
-| :---------------------------- | :---------------- | :---------------------------------------------------- |
-| `GVRN.Taxonomy.Relationships` | `SYNERGY`         | Provides the policy framework for use of these Enums. |
 
 ---
 
@@ -56,12 +60,11 @@ You cannot link what you cannot define. This artifact provides the controlled vo
 
 ## 🗂️ Edge Categories
 
-| Category       | Definition                                 | Vocabulary (Enums)    |
-| :------------- | :----------------------------------------- | :-------------------- |
+| Category | Definition | Vocabulary (Enums) |
 | **Structural** | Physical and logical project architecture. | `CONTAINS`, `EXTENDS` |
-| **Governance** | Hierarchical and protective layers.        | `GOVERNS`, `MONITORS` |
-| **Kinetic**    | Flow of data and triggering of logic.      | `TRIGGERS`, `INVOKES` |
-| **Synergy**    | High-level cognitive and emergent links.   | `ENHANCES`, `SYNERGY` |
+| **Governance** | Hierarchical and protective layers. | `GOVERNS`, `MONITORS` |
+| **Kinetic** | Flow of data and triggering of logic. | `TRIGGERS`, `INVOKES` |
+| **Synergy** | High-level cognitive and emergent links. | `ENHANCES`, `SYNERGY` |
 
 ## 🛠️ Usage Protocols
 
@@ -91,3 +94,23 @@ You cannot link what you cannot define. This artifact provides the controlled vo
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
 `[OMNI-ARTIFACT-ANCHOR] ID: SYNG.Link.Semantic VER: v15.0 [OMEGA] DOMAIN: LINK STATUS: [CANONIZED] TS: 2026-03-28 HASH: 3ac233640285a258`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.

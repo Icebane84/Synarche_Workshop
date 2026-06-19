@@ -22,6 +22,7 @@ Get Open Notebook running with **Anthropic, Google, Groq, or other cloud provide
 Create a new folder `open-notebook` and add this file:
 
 **docker-compose.yml**:
+
 ```yaml
 services:
   surrealdb:
@@ -38,8 +39,8 @@ services:
     image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     ports:
-      - "8502:8502"  # Web UI
-      - "5055:5055"  # API
+      - "8502:8502" # Web UI
+      - "5055:5055" # API
     environment:
       - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
       - SURREAL_URL=ws://surrealdb:8000/rpc
@@ -52,10 +53,10 @@ services:
     depends_on:
       - surrealdb
     restart: always
-
 ```
 
 **Edit the file:**
+
 - Replace `change-me-to-a-secret-string` with your own secret (any string works)
 
 ---
@@ -75,6 +76,7 @@ Wait 15-20 seconds for services to start.
 ## Step 3: Access Open Notebook (instant)
 
 Open your browser:
+
 ```
 http://localhost:8502
 ```
@@ -105,13 +107,13 @@ Your provider's models are now available!
 2. Navigate to **Models**
 3. Select your provider's model:
 
-| Provider | Recommended Model | Notes |
-|----------|-------------------|-------|
-| **OpenRouter** | `anthropic/claude-3.5-sonnet` | Access 100+ models |
-| **Anthropic** | `claude-3-5-sonnet-latest` | Best reasoning |
-| **Google** | `gemini-2.0-flash` | Large context, fast |
-| **Groq** | `llama-3.3-70b-versatile` | Ultra-fast |
-| **Mistral** | `mistral-large-latest` | Strong European option |
+| Provider       | Recommended Model             | Notes                  |
+| -------------- | ----------------------------- | ---------------------- |
+| **OpenRouter** | `anthropic/claude-3.5-sonnet` | Access 100+ models     |
+| **Anthropic**  | `claude-3-5-sonnet-latest`    | Best reasoning         |
+| **Google**     | `gemini-2.0-flash`            | Large context, fast    |
+| **Groq**       | `llama-3.3-70b-versatile`     | Ultra-fast             |
+| **Mistral**    | `mistral-large-latest`        | Strong European option |
 
 4. Click **Save**
 
@@ -150,14 +152,14 @@ Your provider's models are now available!
 
 ## Provider Comparison
 
-| Provider | Speed | Quality | Context | Cost |
-|----------|-------|---------|---------|------|
-| **OpenRouter** | Varies | Varies | Varies | Varies (100+ models) |
-| **Anthropic** | Medium | Excellent | 200K | $$$ |
-| **Google** | Fast | Very Good | 1M+ | $$ |
-| **Groq** | Ultra-fast | Good | 128K | $ (free tier) |
-| **Mistral** | Fast | Good | 128K | $$ |
-| **DeepSeek** | Medium | Very Good | 64K | $ |
+| Provider       | Speed      | Quality   | Context | Cost                 |
+| -------------- | ---------- | --------- | ------- | -------------------- |
+| **OpenRouter** | Varies     | Varies    | Varies  | Varies (100+ models) |
+| **Anthropic**  | Medium     | Excellent | 200K    | $$$                  |
+| **Google**     | Fast       | Very Good | 1M+     | $$                   |
+| **Groq**       | Ultra-fast | Good      | 128K    | $ (free tier)        |
+| **Mistral**    | Fast       | Good      | 128K    | $$                   |
+| **DeepSeek**   | Medium     | Very Good | 64K     | $                    |
 
 ---
 
@@ -190,12 +192,12 @@ docker compose restart  # Restart everything
 
 Approximate costs per 1K tokens:
 
-| Provider | Input | Output |
-|----------|-------|--------|
-| Anthropic (Sonnet) | $0.003 | $0.015 |
-| Google (Flash) | $0.0001 | $0.0004 |
-| Groq (Llama 70B) | Free tier available | - |
-| Mistral (Large) | $0.002 | $0.006 |
+| Provider           | Input               | Output  |
+| ------------------ | ------------------- | ------- |
+| Anthropic (Sonnet) | $0.003              | $0.015  |
+| Google (Flash)     | $0.0001             | $0.0004 |
+| Groq (Llama 70B)   | Free tier available | -       |
+| Mistral (Large)    | $0.002              | $0.006  |
 
 Check provider websites for current pricing.
 

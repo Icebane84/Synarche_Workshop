@@ -19,6 +19,7 @@ Get Open Notebook running with OpenAI's GPT models. Fast, powerful, and simple.
 Create a new folder `open-notebook` and add this file:
 
 **docker-compose.yml**:
+
 ```yaml
 services:
   surrealdb:
@@ -33,8 +34,8 @@ services:
     image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     ports:
-      - "8502:8502"  # Web UI
-      - "5055:5055"  # API
+      - "8502:8502" # Web UI
+      - "5055:5055" # API
     environment:
       # Encryption key for credential storage (required)
       - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
@@ -50,10 +51,10 @@ services:
     depends_on:
       - surrealdb
     restart: always
-
 ```
 
 **Edit the file:**
+
 - Replace `change-me-to-a-secret-string` with your own secret (any string works)
 
 ---
@@ -73,6 +74,7 @@ Wait 15-20 seconds for services to start.
 ## Step 3: Access Open Notebook (instant)
 
 Open your browser:
+
 ```
 http://localhost:8502
 ```
@@ -139,6 +141,7 @@ Your OpenAI models are now available!
 ## Using Different Models
 
 In your notebook, go to **Settings** → **Models** to choose:
+
 - `gpt-4o` - Best quality (recommended)
 - `gpt-4o-mini` - Fast and cheap (good for testing)
 
@@ -149,9 +152,10 @@ In your notebook, go to **Settings** → **Models** to choose:
 ### "Port 8502 already in use"
 
 Change the port in docker-compose.yml:
+
 ```yaml
 ports:
-  - "8503:8502"  # Use 8503 instead
+  - "8503:8502" # Use 8503 instead
 ```
 
 Then access at `http://localhost:8503`
@@ -184,6 +188,7 @@ docker compose restart  # Restart everything
 ## Cost Estimate
 
 OpenAI pricing (approximate):
+
 - **Conversation**: $0.01-0.10 per 1K tokens
 - **Embeddings**: $0.02 per 1M tokens
 - **Typical usage**: $1-5/month for light use, $20-50/month for heavy use

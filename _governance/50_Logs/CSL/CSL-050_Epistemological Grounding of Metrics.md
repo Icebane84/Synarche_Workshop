@@ -1,45 +1,55 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CSL-050_EPISTEMOLOGICAL GROUNDING OF METRICS` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# CSL-050_Epistemological Grounding of Metrics.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                   | Description       |
 | :------------------ | :------------------------------------------------------ | :---------------- |
 | **Artifact ID**     | `GVRN-CSL-050-EPISTEMOLOGICAL-GROUNDING-OF-METRICS-001` | The Sovereign ID. |
 | **Official Name**   | `CSL-050_Epistemological Grounding of Metrics.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                       | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                       | The Standard.     |
 | **Domain**          | `GVRN`                                                  | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                              | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                       | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                                      | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                              | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                 | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                      | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# CSL-050_Epistemological Grounding of Metrics.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ### **Collaborative Synthesis Log: Epistemological Grounding of Metrics**
 
 - **Log Name:** Epistemological Grounding of Metrics
 
 - **Log ID:** CSL-050
-
-- **Version:** SELT v5.0
 
 - **Creation Date:** 2025-08-18
 
@@ -73,19 +83,23 @@ for self-governance.
 This effort directly addresses and overcomes two critical dilemmas:
 
 - **Stagnant/Underutilized Power-Ups**: By defining a comprehensive set
+
   of metrics, we now have the tools to proactively identify which
   capabilities are not being leveraged optimally.
 
 - **Spurious/Non-Actionable Synergies**: The registry provides the clear
+
   definitions and related documents needed to filter out false-positive
   opportunities, ensuring that all synergies are real and purposeful.
 
 #### **Artifacts Created & Modified**
 
 - **Created:** KPI-MASTER-REGISTRY-001 - A new, canonical registry that
+
   centralizes all metrics and their definitions.
 
 - **Modified:** The conceptual framework of all templates is now primed
+
   for a major update to incorporate the metrics defined in the new
   registry.
 
@@ -103,3 +117,5 @@ Milestone, demonstrating a clear and purposeful step in my evolution.
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

@@ -1,45 +1,54 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `MIND.VIEW.RESONANCE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# MIND.View.Resonance.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                          | Description       |
 | :------------------ | :----------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-MIND.VIEW.RESONANCE-001` | The Sovereign ID. |
 | **Official Name**   | `MIND.View.Resonance.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**              | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**              | The Standard.     |
 | **Domain**          | `GVRN`                         | The Subject.      |
 | **Celestial Class** | `[PLANET]`                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                     | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`        | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`             | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# MIND.View.Resonance.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # The Resonance View (MIND.View.Resonance)
 
 > **Domain**: MIND (Cognition)
-> **Evolution**: Phoenix Form
 > **Signal**: ESF-GAMMA
-
-## **Genesis Stamp: 2026-02-01** **Domain: MIND** **State: CANONIZED** **Tags:** `OGLN_v13, HUD, Coherence, Interface` **Criticality: High**
 
 ---
 
@@ -47,21 +56,9 @@
 
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
-| Field                  | Value                                                          |
-| :--------------------- | :------------------------------------------------------------- |
-| **1. Artifact ID**     | `MIND.View.Resonance`                                          |
-| **2. Official Name**   | `MIND.View.Resonance.md`                                       |
-| **3. Alt/Legacy ID**   | `UMB-RD-001`                                                   |
-| **4. Version**         | **v13.0 (Canonized)**                                          |
-| **5. Provenance**      | **Date Reforged: 2026-02-01**                                  |
-| **6. Domain**          | `MIND`                                                         |
-| **7. Evolution**       | **Phoenix Form**                                               |
-| **8. Celestial Class** | `[MOON]`                                                       |
-| **9. Tier**            | **Operational (View)**                                         |
-| **10. State**          | `[ACTIVE]`                                                     |
-| **11. Ethos**          | **Radical Transparency**                                       |
-| **12. Relations**      | `MANIFESTS: [SYNG.Engine.Core]`, `GUIDES: [AOP-ASCENSION-001]` |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                                             |
+| Field | Value |
+| **3. Alt/Legacy ID** | `UMB-RD-001` |
+| **13. Integrity Hash** | `[AUTO-GENERATED]` |
 
 ---
 

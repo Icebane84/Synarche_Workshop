@@ -12,15 +12,14 @@
 
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
+| Key               | Value                                                                      | Description       |
+| :---------------- | :------------------------------------------------------------------------- | :---------------- |
 | **Artifact ID**   | `GVRN-UMB-EMOJICXT-001-EMOJICONTEXTUALSCOPINGENGINE-V1.1-CONSOLIDATED-001` | The Sovereign ID. |
-| **Official Name** | `UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| **Official Name** | `UMB-EMOJICXT-001_EmojiContextualScopingEngine_v1.1_Consolidated.md`       | The Filename.     |
+| **Version**       | **v13.1 [OMEGA]**                                                          | The Standard.     |
+| **Domain**        | `GVRN`                                                                     | The Subject.      |
+| **Status**        | `[ACTIVE]`                                                                 | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                              | The Network.      |
 
 ---
 

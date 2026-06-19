@@ -4,13 +4,12 @@
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.SKIL.AutonomousPilot` | The Sovereign ID. |
-| **Official Name** | `SKILL.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `DEV` | The Subject.      |
-| **Status**        | `[PILOT]` | The Lifecycle.    |
+| **Artifact ID**   | `SYNG.SKIL.AutonomousPilot`       | The Sovereign ID. |
+| **Official Name** | `SKILL.md`                        | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
+| **Domain**        | `DEV`                             | The Subject.      |
+| **Status**        | `[PILOT]`                         | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
 
 ---
 

@@ -1,11 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CREATION_JOURNAL_V15` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CREATION_JOURNAL_V15`        | The Sovereign ID. |
+| **Official Name**   | `CREATION_JOURNAL_V15.md`     | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 ---
@@ -43,6 +69,7 @@ Relations: IDENTITY: High Priestess (Knowledge)
 
 - [x] **Heartbeat**: Initially Confirmed [ACTIVE] connection on port 27124.
 - [x] \*\*- Discovery: Successful note listing (Stalled due to dropout).
+
       The [ObsidianBridge](file:///c:/Users/Chris/Synarche_Workspace/axion-core/tools/03_Systems/obsidian_bridge.py#42-127) was verified to be syntactically correct and imports cleanly after a final syntax fix in the core module. Although connection requires a live Obsidian instance, the wiring is established.
 
 ### Pivot: Local Sovereignty Persistence
@@ -92,3 +119,25 @@ The Antigravity Grand Unified Architecture proposed a shift from a "Codex" (rule
 
 - **Context**: Previous attempts to write these files resulted in 0-byte truncation.
 - **Action**: I am verifying filesystem integrity before each major pulse. If standard tool writes fail, I will escalate to system-level heredocs to ensure the "Words of Power" (source code) are carved into the disk.
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

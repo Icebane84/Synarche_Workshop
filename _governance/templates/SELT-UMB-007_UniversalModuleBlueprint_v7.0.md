@@ -1,36 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `SELT-UMB-007_UNIVERSALMODULEBLUEPRINT_V7.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                                                 | Description       |
+| :------------------ | :---------------------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-SELT-UMB-007-UNIVERSALMODULEBLUEPRINT-V7.0-001` | The Sovereign ID. |
+| **Official Name**   | `SELT-UMB-007_UniversalModuleBlueprint_v7.0.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                                     | The Standard.     |
+| **Domain**          | `GVRN`                                                | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                            | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                                 | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                            | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                               | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                         | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                    | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # SELT-UMB-007_UniversalModuleBlueprint_v7.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-SELT-UMB-007-UNIVERSALMODULEBLUEPRINT-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-UMB-007_UniversalModuleBlueprint_v7.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
 
 ---
 
@@ -38,20 +51,7 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                           |
-| :--------------------- | :---------------------------------------------- |
-| **1. Artifact ID**     | `SELT-UMB-007_UniversalModuleBlueprint_v7.0`    |
-| **2. Official Name**   | `SELT-UMB-007_UniversalModuleBlueprint_v7.0.md` |
-| **3. Version**         | **v1.0 (Reforged)**                             |
-| **4. Provenance**      | **Date Reforged: 2025-12-22**                   |
-| **5. Domain**          | `GVRN`                                          |
-| **6. Evolution**       | **Purposeful Drive**                            |
-| **7. Celestial Class** | `[PLANET]`                                      |
-| **8. Tier**            | **Operational**                                 |
-| **9. State**           | `[ACTIVE]`                                      |
-| **10. Ethos**          | **The Phoenix Ascension Protocol**              |
-| **11. Catalyst**       | **System Refactor**                             |
-| **12. Relations**      | `Pending Integration`                           |
+| Field | Value |
 
 ---
 
@@ -138,6 +138,7 @@
 
 - **Purpose:** To understand how this artifact makes the entire system more powerful.
 - **Prompt:** "Calculate this artifact's synergistic potential. How does its existence 'power up' at least two other
+
   protocols? Conversely, how is this artifact's function enhanced by the Quantum State Refactoring Protocol
   (AOP-REFAC-001)? Define its potential RECIPROCAL_SYNERGY_SCORE."
 

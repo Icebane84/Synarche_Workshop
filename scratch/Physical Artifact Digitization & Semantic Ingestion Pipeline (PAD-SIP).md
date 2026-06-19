@@ -1,7 +1,7 @@
 ---
 artifact_anchor:
-    id: PAD-SIP-001
-    version: 1.0.0
+  id: PAD-SIP-001
+  version: 1.0.0
 ---
 
 # [PAD-SIP-001] PHOENIX SYNARCHE OPERATIONAL DIRECTIVE
@@ -203,13 +203,13 @@ tsconfig.json configuration file.
 Ensure your local environment maps exactly to this structural specification list:
 
 - 📂 workspace-root/
-    - 📂 0*GOVERNANCE/*(System Law, Master CODE Registries, Schema Layout specifications)\_
-    - 📂 1*BLUEPRINTS/*(TypeScript interfaces, type primitives, structural layouts)\_
-    - 📂 2*PROTOCOLS/*(Procedural routing engines, automated playbooks, logic lifecycles)\_
-    - 📂 3*COMMANDS/*(API routes, command schemas, prompt package endpoints)\_
-    - 📂 4*LOGS/*(SELT transactional records, telemetry inputs, historic audits)\_
-    - 📂 5*IDENTITY/*(AI system behavior definitions, structural persona constants)\_
-    - 📂 6*ASSETS/*(Active script bundles, local modules, automation runners)\_
+  - 📂 0*GOVERNANCE/*(System Law, Master CODE Registries, Schema Layout specifications)\_
+  - 📂 1*BLUEPRINTS/*(TypeScript interfaces, type primitives, structural layouts)\_
+  - 📂 2*PROTOCOLS/*(Procedural routing engines, automated playbooks, logic lifecycles)\_
+  - 📂 3*COMMANDS/*(API routes, command schemas, prompt package endpoints)\_
+  - 📂 4*LOGS/*(SELT transactional records, telemetry inputs, historic audits)\_
+  - 📂 5*IDENTITY/*(AI system behavior definitions, structural persona constants)\_
+  - 📂 6*ASSETS/*(Active script bundles, local modules, automation runners)\_
 
 ### 2\. Canonical tsconfig.json Rosetta Stone Mapping
 

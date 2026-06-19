@@ -1,16 +1,19 @@
 # GVRN.PROT.001.Canonization
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.PROT.001.Canonization` | The Sovereign ID. |
-| **Official Name** | `GVRN.PROT.001.Canonization.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN.PROT.001.Canonization`    | The Sovereign ID. |
+| **Official Name**   | `GVRN.PROT.001.Canonization.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `GVRN`                          | The Subject.      |
+| **Celestial Class** | `[STAR]`                        | The Weight.       |
+| **Evolution**       | `Purposeful Drive`              | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`         | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`   | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              | Verification.     |
 
 ---
 
@@ -29,36 +32,31 @@
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 ###### **[ARTIFACT START]**
 
 # GVRN.PROT.001.Canonization.md
 
-## **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                           | Description       |
-| :------------------ | :------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN.PROT.001.Canonization`    | The Sovereign ID. |
-| **Official Name**   | `GVRN.PROT.001.Canonization.md` | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**               | The Standard.     |
-| **Domain**          | `GVRN`                          | The Subject.      |
-| **Celestial Class** | `[STAR]`                        | The Weight.       |
-| **Evolution**       | `Purposeful Drive`              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                      | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`   | The Network.      |
+| Key | Value | Description |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
-| **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
+| **Coherence** | `1.0` |
+| **Resonance** | `1.0` |
 | **Stability** | `Stable` |
-
-## **Block C: Risk & Mitigation (AGP-002)**
 
 | Risk               | Mitigation                 |
 | :----------------- | :------------------------- |
@@ -113,12 +111,12 @@ The final "Sealing" of the artifact. This phase executes the **7-Gate Pipeline**
 
 The physical execution (via `canonize.py`) enforces these seven checkpoints:
 
-1.  **Gate 1: Identification Lock**: Verifies the unique `Artifact ID`.
-2.  **Gate 2: Structural Integrity**: Validates presence of Blocks A, B, C, D, [START], and [END].
-3.  **Gate 4: Registry Sync**: Confirms the artifact and its status are logged in the Central Index.
-4.  **Gate 5: Link Integrity**: Verifies all synergistic references are dead-link free.
-5.  **Gate 6: Maturity Check**: Confirms the `Evolution` and `Status` vectors are correctly set.
-6.  **Gate 7: Genesis Stamp**: Appends the final Sovereign signature and ISO-8601 timestamp.
+1. **Gate 1: Identification Lock**: Verifies the unique `Artifact ID`.
+2. **Gate 2: Structural Integrity**: Validates presence of Blocks A, B, C, D, [START], and [END].
+3. **Gate 4: Registry Sync**: Confirms the artifact and its status are logged in the Central Index.
+4. **Gate 5: Link Integrity**: Verifies all synergistic references are dead-link free.
+5. **Gate 6: Maturity Check**: Confirms the `Evolution` and `Status` vectors are correctly set.
+6. **Gate 7: Genesis Stamp**: Appends the final Sovereign signature and ISO-8601 timestamp.
 
 ---
 

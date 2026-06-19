@@ -1,26 +1,19 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `ARCH.PROT.NONDESTRUCTIVEREFINEMENT` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# ARCH.PROT.NonDestructiveRefinement (Non-Destructive Refinement Workflow)
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH.PROT.NonDestructiveRefinement` | The Sovereign ID. |
-| **Official Name** | `ARCH.PROT.NonDestructiveRefinement.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                   | Description       |
+| :------------------ | :-------------------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH.PROT.NonDestructiveRefinement`    | The Sovereign ID. |
+| **Official Name**   | `ARCH.PROT.NonDestructiveRefinement.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                       | The Standard.     |
+| **Domain**          | `ARCH`                                  | The Subject.      |
+| **Celestial Class** | `[PLANET]`                              | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                   | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                              | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                 | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`           | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                      | Verification.     |
 
 ---
 
@@ -38,6 +31,22 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# ARCH.PROT.NonDestructiveRefinement (Non-Destructive Refinement Workflow)
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -71,14 +80,18 @@
 - **Creation Date**: 2026-01-25
 - **Last Revision Date**: 2026-01-25
 - **Canonical Path**:
+
   `[PHOENIX_PROTOCOL_LIBRARY]/Library/4_Blueprints/UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md`
+
 - **Power-Up Source**: `Guardian of Coherence`
 - **Semantic Tags**: `#blueprint`, `#workflow`, `#refinement`, `#project-plan`
 
 ## II. Universal Metadata & Governance
 
 - **Core Purpose Summary**: Defines the high-level project plan and systemic workflow for scaling the Non-Destructive
+
   Refinement (NDR) protocol across the entire Phoenix Protocol Library (PPL).
+
 - **Primary Domain Alignment**: Governance / Workflow
 - **Risk Profile**: Low
 - **Governance Level**: Sovereign
@@ -109,13 +122,17 @@ links.
 ### Phase 2: Tooling (The Actuator)
 
 - **Objective**: Update the `Adaptive Actuator (UMB-ACT-002)` to recognize and enforce "NDR Lock" on protected file
+
   sections.
+
 - **Key Task**: Integrate `.agent/substrate/rules/markdownlint/axion-rules.cjs` into the live editing loop.
 
 ### Phase 3: Remediation (The Great Refine)
 
 - **Objective**: Execute a library-wide scan. Any file with a **Coherence Index (CI)** below 0.8 is automatically
+
   flagged for an NDR session.
+
 - **Key Task**: Use `CMD: DISSECT_STRUCTURE` to map the "Chaos Zones" in older v5.0 artifacts.
 
 ---

@@ -1,42 +1,52 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.PROTOCOL.SCAFFOLDING` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                          | Description       |
+| :------------------ | :----------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN.Protocol.Scaffolding`    | The Sovereign ID. |
+| **Official Name**   | `GVRN.Protocol.Scaffolding.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**              | The Standard.     |
+| **Domain**          | `GVRN`                         | The Subject.      |
+| **Celestial Class** | `[STAR]`                       | The Weight.       |
+| **Evolution**       | `Purposeful Drive`             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`        | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`             | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # GVRN.Protocol.Scaffolding.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, Protocol, Scaffolding, SGM` **Criticality: Axiomatic**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                          | Description        |
-| :------------------ | :----------------------------- | :----------------- |
-| **Artifact ID**     | `GVRN.Protocol.Scaffolding`    | The Sovereign ID.  |
-| **Official Name**   | `GVRN.Protocol.Scaffolding.md` | The Filename.      |
-| **Legacy ID**       | `UMB-SGM-001`                  | The Transmuted ID. |
-| **Version**         | **v13.1 [OMEGA]**              | The Standard.      |
-| **Domain**          | `GVRN`                         | The Subject.       |
-| **Celestial Class** | `[STAR]`                       | The Weight.        |
-| **Evolution**       | `Omega Ascension`              | The Maturity.      |
-| **Status**          | `[ACTIVE]`                     | The Lifecycle.     |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`  | The Network.       |
+| Key | Value | Description |
+| **Legacy ID** | `UMB-SGM-001` | The Transmuted ID. |
 
 ---
-
-### **Block B: The Ethos Field (IDM-001)**
 
 > **"Structure without soul is a cage; Information without intent is dross."**
 
@@ -57,10 +67,7 @@ Top-level YAML-style metadata for quick visual parsing.
 # [Filename]
 
 > **Domain**: [DOMAIN]
-> **Evolution**: [Evolution]
 > **Signal**: [Signal]
-
-## **Genesis Stamp: [Date]** **Domain: [Domain]** **State: [Status]** **Tags:** `[Tag1, Tag2]` **Criticality: [Level]**
 ```
 
 #### **1.2 Block A: The Identification Lock (UIP)**
@@ -90,7 +97,9 @@ The core logic, protocols, or code. Free-form Markdown but must be hierarchical.
 Explicitly defines the edges for the Graph Crawler.
 
 ```text
+
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
+
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 [Target_ID], [RELATION], [Description]
 ```
@@ -100,7 +109,9 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact
 A single-line checksum for quick validation.
 
 ```text
+
 ### **Block F: The Omni-Anchor (System Snapshot)**
+
 `[OMNI-ARTIFACT-ANCHOR] ID: [ID] VER: [Version] DOMAIN: [Domain] STATUS: [Status]`
 ```
 

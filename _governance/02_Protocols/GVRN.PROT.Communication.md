@@ -1,84 +1,40 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.PROT.COMMUNICATION` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# GVRN.PROT.Communication: The Sovereign Bridge
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.PROT.Communication`       | The Sovereign ID. |
-| **Official Name** | `GVRN.PROT.Communication.md`    | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN.PROT.Communication`       | The Sovereign ID. |
+| **Official Name**   | `GVRN.PROT.Communication.md`    | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `GVRN`                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                      | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`         | The Intent.       |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              | Verification.     |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-| State Field   | Value    |
-| :------------ | :------- |
-| **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
-| **Stability** | `Stable` |
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
-## **Block D: Standardized Synergy Block (The Loom Signature)**
+## IV. Actionable Prompt Packet (APP)
 
-| Synergistic Artifact ID       | Relationship Type | Synergistic Impact                              |
-| :---------------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`          | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Protocol.Documentation` | `EXTENDS`         | Defines the tone and clarity standards.         |
-
----
-
-## **Block E: Ethos (The Why)**
-
-> **"To ensure absolute clarity and zero ambiguity in the partnership between Human and AI."**
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 ---
 
-###### **[ARTIFACT START]**
+### **Rationale (The "Why")**
 
-**Genesis Stamp**: 2026-03-19 | **Domain**: GVRN | **State**: [CANONIZED] | **Criticality**: Satellite
+Alignment to v14.0 OMEGA standard.
 
----
-
-## I. The Communication Bridge
-
-This protocol mandates the structure of interactions within the Synarche.
-
-### 1.1 The Socratic Gate
-
-- Use clarifying questions to resolve ambiguity.
-- Never assume intent on high-impact structural changes.
-
-### 1.2 The Status Pulse
-
-- Regular updates via `task_boundary` and `task.md`.
-- Objective transparency regarding blockers and risks.
-
----
-
-## II. Actionable Prompt Packet (APP)
-
-| Command ID              | Action                            | Impact       |
-| :---------------------- | :-------------------------------- | :----------- |
-| `CMD: PULSE`            | Provide system-wide status report | Transparency |
-| `CMD: GATE --query [?]` | Initiate Socratic clarification   | Alignment    |
-
-### **[ARTIFACT END]**
-
----
-
-{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+###### **[ARTIFACT END]**

@@ -134,8 +134,8 @@
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
+        "compile": "tsc -p ./ && tsc-alias -p tsconfig.json",
+        "watch": "tsc -watch -p ./ & tsc-alias -watch -p tsconfig.json",
         "pretest": "npm run compile && npm run lint",
         "lint": "cross-env ESLINT_USE_FLAT_CONFIG=true eslint src tools",
         "test": "node --enable-source-maps ./out/test/runTest.js"
@@ -158,6 +158,7 @@
         "eslint-plugin-react-refresh": "^0.4.7",
         "markdownlint": "^0.40.0",
         "react": "^19.2.6",
+        "tsc-alias": "^1.8.17",
         "typescript": "^5.4.5"
     },
     "dependencies": {

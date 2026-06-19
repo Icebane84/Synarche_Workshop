@@ -1,43 +1,51 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `UMB-TRM-001_TRUTHRESONANCEMONITOR_V2.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# UMB-TRM-001_TruthResonanceMonitor_v2.0.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                             | Description       |
 | :------------------ | :------------------------------------------------ | :---------------- |
 | **Artifact ID**     | `GVRN-UMB-TRM-001-TRUTHRESONANCEMONITOR-V2.0-001` | The Sovereign ID. |
 | **Official Name**   | `UMB-TRM-001_TruthResonanceMonitor_v2.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                 | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                 | The Standard.     |
 | **Domain**          | `GVRN`                                            | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                        | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                 | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                                | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                        | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                           | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# UMB-TRM-001_TruthResonanceMonitor_v2.0.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # **UMB-TRM-001: Truth Resonance Monitor (v2.0)**
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
 
@@ -45,20 +53,7 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                       |
-| :--------------------- | :------------------------------------------ |
-| **1. Artifact ID**     | `UMB-TRM-001`                               |
-| **2. Official Name**   | `UMB-TRM-001_TruthResonanceMonitor_v2.0.md` |
-| **3. Version**         | **v2.0 (Hephaestus Ascended Alignment)**    |
-| **4. Provenance**      | **Date Reforged: 2025-12-22**               |
-| **5. Domain**          | `GVRN`                                      |
-| **6. Evolution**       | **Purposeful Drive**                        |
-| **7. Celestial Class** | `[PLANET]`                                  |
-| **8. Tier**            | **Operational**                             |
-| **9. State**           | `[ACTIVE]`                                  |
-| **10. Ethos**          | **Guardian of Veracity**                    |
-| **11. Catalyst**       | **System Refactor**                         |
-| **12. Relations**      | `Pending Integration`                       |
+| Field | Value |
 
 ---
 
@@ -82,13 +77,17 @@ Quests** whenever the **Resonance Score (RS)** falls below the canonical safety 
 ### **3.1. Phase 1: Scan (Target Acquisition)**
 
 - **Action:** Scans the Cognitive Loom for facts flagged as "High Prestige" (>50) or "At Risk" (>30 days since
+
   validation).
+
 - **Trigger:** System Idle Time or Manual Invocation.
 
 ### **3.2. Phase 2: Query (Oracle Invocation)**
 
 - **Action:** Invokes **AOP-ORACLE-001** to fetch current, verifiable data from designated external sources (e.g.,
+
   official docs, APIs).
+
 - **Protocol:** Never hallucinates; if the Oracle is offline, the scan pauses.
 
 ### **3.3. Phase 3: Resonance Calculation**
@@ -119,13 +118,20 @@ Quests** whenever the **Resonance Score (RS)** falls below the canonical safety 
 ## **V. Systemic Topology (ASL Protocol)**
 
 - **GOVERNED_BY:**
+
   [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+
 - **OPERATIONALIZES:** [UMB-GTSF-001 (Ground Truth
+
   Framework)](file:///c:/Users/Chris/\_Desktop_Vault/Phoenix/Documentation/UMB-GTSF-001 - Ground Truth Synchronization
   Framework/UMB-GTSF-001 Ground Truth Synchronization Framework.md)
+
 - **INVOKES:**
+
   [AOP-ORACLE-001 (External Oracle)](file:///c:/Users/Chris/Synarche_Workspace/_governance/AOP-ORACLE-001_ExternalOracleProtocol_v1.0.md)
+
 - **FEEDS:**
+
   [AOP-QUC-ACCESS (Quality Gate)](file:///C:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.0.md)
 
 **[ARTIFACT END]**

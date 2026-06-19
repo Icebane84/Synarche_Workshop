@@ -1,6 +1,6 @@
-I’m going to be direct in a way that actually helps you build this into something *real*, not just more layered mythology-on-top-of-engineering.
+I’m going to be direct in a way that actually helps you build this into something _real_, not just more layered mythology-on-top-of-engineering.
 
-What you’ve produced in AOP-019 and AOP-020 is already **well above typical “system design fiction”** and *partially overlaps with real distributed systems patterns*. But it also has a few structural issues that will cap it from reaching “research-grade / industry professional” unless we fix them explicitly.
+What you’ve produced in AOP-019 and AOP-020 is already **well above typical “system design fiction”** and _partially overlaps with real distributed systems patterns_. But it also has a few structural issues that will cap it from reaching “research-grade / industry professional” unless we fix them explicitly.
 
 I’ll break this into three layers:
 
@@ -12,32 +12,32 @@ I’ll break this into three layers:
 
 You have independently converged on real concepts:
 
-* **Single-writer event loop** → aligns with:
+- **Single-writer event loop** → aligns with:
 
-  * actor model (Erlang, Akka)
-  * event sourcing (Kafka-style architectures)
-  * deterministic replay systems
+  - actor model (Erlang, Akka)
+  - event sourcing (Kafka-style architectures)
+  - deterministic replay systems
 
-* **Append-only causal ledger** → matches:
+- **Append-only causal ledger** → matches:
 
-  * CRDT-inspired audit logs
-  * event sourcing + CQRS patterns
-  * blockchain-adjacent immutability models (conceptually)
+  - CRDT-inspired audit logs
+  - event sourcing + CQRS patterns
+  - blockchain-adjacent immutability models (conceptually)
 
-* **Policy engine separation** → matches:
+- **Policy engine separation** → matches:
 
-  * OPA (Open Policy Agent)
-  * Kubernetes admission controllers
-  * policy-as-code systems
+  - OPA (Open Policy Agent)
+  - Kubernetes admission controllers
+  - policy-as-code systems
 
-* **Failure classification taxonomy** → aligns with:
+- **Failure classification taxonomy** → aligns with:
 
-  * SRE incident classification (Google-style)
-  * resilience engineering frameworks
+  - SRE incident classification (Google-style)
+  - resilience engineering frameworks
 
-* **Telemetry variance awareness** → this is actually *good systems thinking*:
+- **Telemetry variance awareness** → this is actually _good systems thinking_:
 
-  * resembles confidence-weighted inference in distributed observability systems
+  - resembles confidence-weighted inference in distributed observability systems
 
 ---
 
@@ -47,11 +47,11 @@ This is important, and I’m not softening it:
 
 #### ❌ 1. No formal consistency model is defined
 
-You *say* deterministic, but you don’t specify:
+You _say_ deterministic, but you don’t specify:
 
-* linearizability vs eventual consistency vs causal consistency
-* ordering guarantees across partitions
-* replay equivalence guarantees
+- linearizability vs eventual consistency vs causal consistency
+- ordering guarantees across partitions
+- replay equivalence guarantees
 
 Right now:
 
@@ -67,10 +67,10 @@ You rely on:
 
 But don’t define:
 
-* backpressure behavior
-* queue saturation semantics
-* blocking vs dropping policy
-* memory pressure handling
+- backpressure behavior
+- queue saturation semantics
+- blocking vs dropping policy
+- memory pressure handling
 
 In real systems, this is where 80% of failures happen.
 
@@ -80,9 +80,9 @@ In real systems, this is where 80% of failures happen.
 
 Your “Intent / Structure / Reality weights”:
 
-* are not normalized in a stable probabilistic space
-* lack calibration function
-* lack bounded interpretation layer
+- are not normalized in a stable probabilistic space
+- lack calibration function
+- lack bounded interpretation layer
 
 So:
 
@@ -90,13 +90,13 @@ So:
 
 ---
 
-#### ❌ 4. No invariants are *machine-verifiable*
+#### ❌ 4. No invariants are _machine-verifiable_
 
 You describe invariants, but do not encode:
 
-* invariant checker function
-* formal constraint validation layer
-* runtime assertion system
+- invariant checker function
+- formal constraint validation layer
+- runtime assertion system
 
 So enforcement is **descriptive, not enforceable**
 
@@ -104,9 +104,9 @@ So enforcement is **descriptive, not enforceable**
 
 #### ❌ 5. No separation between:
 
-* control plane
-* data plane
-* policy plane
+- control plane
+- data plane
+- policy plane
 
 Everything is mixed into a single conceptual kernel.
 
@@ -128,19 +128,19 @@ You need a declared law like:
 
 And then explicitly define:
 
-* ordering rule:
+- ordering rule:
 
 ```text
 event A < event B if parent_hash(A) is ancestor of B
 ```
 
-* replay function:
+- replay function:
 
 ```text
 state = fold(sorted(events_by_causal_order))
 ```
 
-This is what makes it *real engineering* instead of architecture poetry.
+This is what makes it _real engineering_ instead of architecture poetry.
 
 ---
 
@@ -150,14 +150,14 @@ Right now your queue is a silent assumption.
 
 You need:
 
-* max queue size
-* overflow policy:
+- max queue size
+- overflow policy:
 
 Pick ONE:
 
-* block (strict determinism)
-* drop-low-priority
-* spill-to-disk log segment (best option)
+- block (strict determinism)
+- drop-low-priority
+- spill-to-disk log segment (best option)
 
 This single change moves you into production-class territory.
 
@@ -183,14 +183,14 @@ score = sigmoid(w_i * I + w_s * S + w_r * R)
 
 and define:
 
-* normalization constraint
-* saturation behavior
-* uncertainty propagation
+- normalization constraint
+- saturation behavior
+- uncertainty propagation
 
 This is the difference between:
 
-* “cool scoring system”
-* and “research-grade inference layer”
+- “cool scoring system”
+- and “research-grade inference layer”
 
 ---
 
@@ -200,21 +200,21 @@ This is critical.
 
 ### 1. Control Plane
 
-* mutation rules
-* governance engine
-* policy enforcement
+- mutation rules
+- governance engine
+- policy enforcement
 
 ### 2. Data Plane
 
-* event stream
-* state store
-* replay engine
+- event stream
+- state store
+- replay engine
 
 ### 3. Observation Plane
 
-* telemetry
-* variance estimation
-* audit logs
+- telemetry
+- variance estimation
+- audit logs
 
 Right now all three are entangled → that’s your biggest scalability blocker.
 
@@ -238,8 +238,8 @@ def no_negative_priority(state, event):
 
 Then:
 
-* every event MUST pass invariant set
-* failure triggers deterministic route
+- every event MUST pass invariant set
+- failure triggers deterministic route
 
 This is what makes it “constitutional runtime”, not just “designed system”
 
@@ -257,10 +257,10 @@ It is closer to:
 
 > a hybrid between:
 
-* event-sourced distributed runtime
-* policy-driven actor system
-* epistemic governance layer
-* speculative AI operating substrate
+- event-sourced distributed runtime
+- policy-driven actor system
+- epistemic governance layer
+- speculative AI operating substrate
 
 ---
 
@@ -290,11 +290,11 @@ Meaning:
 
 You are missing:
 
-* formal consistency guarantees
-* explicit concurrency semantics
-* enforceable invariants
-* plane separation
-* bounded probabilistic models
+- formal consistency guarantees
+- explicit concurrency semantics
+- enforceable invariants
+- plane separation
+- bounded probabilistic models
 
 Once those are added:
 
@@ -304,7 +304,7 @@ Once those are added:
 
 # 5. What I recommend next (important fork)
 
-If you want this to become *real top-tier system design*, next step is NOT Article XVI or more expansion.
+If you want this to become _real top-tier system design_, next step is NOT Article XVI or more expansion.
 
 It is:
 
@@ -312,11 +312,11 @@ It is:
 
 Where we define:
 
-* formal execution semantics
-* state machine rules
-* invariant enforcement engine
-* failure model (complete)
-* deterministic replay contract
+- formal execution semantics
+- state machine rules
+- invariant enforcement engine
+- failure model (complete)
+- deterministic replay contract
 
 ---
 
@@ -324,9 +324,9 @@ Where we define:
 
 You’re building something that sits in a weird but interesting space: it’s half constitutional philosophy, half distributed systems architecture, and half epistemic control theory (yes, three halves — that’s intentional).
 
-The danger is that without formal tightening, it keeps scaling in *expressiveness* rather than *correctness*. That’s the classic failure mode of ambitious system frameworks: they become richer and more beautiful as descriptions while becoming less enforceable as systems.
+The danger is that without formal tightening, it keeps scaling in _expressiveness_ rather than _correctness_. That’s the classic failure mode of ambitious system frameworks: they become richer and more beautiful as descriptions while becoming less enforceable as systems.
 
-But the upside is real: the core idea — treating governance, history, and mutation as first-class causal structures — actually *does map onto real research directions* in distributed systems, especially around auditability, reproducibility, and safe autonomous agents.
+But the upside is real: the core idea — treating governance, history, and mutation as first-class causal structures — actually _does map onto real research directions_ in distributed systems, especially around auditability, reproducibility, and safe autonomous agents.
 
 You’re not far off. You just need to stop adding conceptual layers and start locking down **execution semantics and invariants like a compiler would, not like a constitution would.**
 
@@ -339,7 +339,6 @@ If you want, next step I can:
 3. Or refactor AOP-019/020 into a **clean production-grade architecture diagram + module boundary system**
 
 Your call.
-
 
 All three are needed eventually, but they are **not equal in leverage**.
 
@@ -359,19 +358,19 @@ Without this, everything else remains descriptive.
 
 This becomes the mathematical source of truth that defines:
 
-* what a state is
-* what a mutation is
-* what validity means
-* what authority means
-* what consistency means
-* what failure means
+- what a state is
+- what a mutation is
+- what validity means
+- what authority means
+- what consistency means
+- what failure means
 
 Think:
 
-* RFC
-* TLA+
-* Alloy
-* formal semantics
+- RFC
+- TLA+
+- Alloy
+- formal semantics
 
 combined.
 
@@ -394,12 +393,12 @@ Phoenix Constitutional Runtime
 
 containing:
 
-* protocol definitions
-* state machine definitions
-* wire formats
-* consistency guarantees
-* failure model
-* mutation model
+- protocol definitions
+- state machine definitions
+- wire formats
+- consistency guarantees
+- failure model
+- mutation model
 
 ---
 
@@ -544,10 +543,10 @@ Properties:
 
 T must be:
 
-* deterministic
-* auditable
-* reproducible
-* bounded
+- deterministic
+- auditable
+- reproducible
+- bounded
 
 ---
 
@@ -701,8 +700,8 @@ Phoenix adopts:
 
 not
 
-* eventual consistency
-* strong global consistency
+- eventual consistency
+- strong global consistency
 
 ---
 
@@ -870,9 +869,9 @@ new evidence may revise truth
 
 This directly links:
 
-* Article I (Honesty)
-* Article II (Reality)
-* Article III (History)
+- Article I (Honesty)
+- Article II (Reality)
+- Article III (History)
 
 to runtime execution.
 
@@ -884,9 +883,9 @@ to runtime execution.
 
 No subsystem may:
 
-* modify invariants
-* modify truth semantics
-* modify constitutional validation rules
+- modify invariants
+- modify truth semantics
+- modify constitutional validation rules
 
 without:
 
@@ -906,9 +905,9 @@ An implementation is Phoenix-compliant iff:
 
 every execution trace produces:
 
-* identical legal states
-* identical audit chains
-* identical invariant outcomes
+- identical legal states
+- identical audit chains
+- identical invariant outcomes
 
 under identical inputs.
 
@@ -934,11 +933,11 @@ Without PCSS-001, every implementation can interpret the Constitution differentl
 
 With PCSS-001, you now have the beginnings of a formal model that could eventually be expressed in:
 
-* TLA+
-* Alloy
-* Coq
-* Lean
-* Dafny
+- TLA+
+- Alloy
+- Coq
+- Lean
+- Dafny
 
 and subjected to actual verification.
 
@@ -952,20 +951,20 @@ It is specification rigor.
 
 Right now Phoenix has:
 
-* Constitutional Layer
-* Governance Layer
-* Enforcement Layer
-* Epistemology Layer
-* Causal Runtime Layer
+- Constitutional Layer
+- Governance Layer
+- Enforcement Layer
+- Epistemology Layer
+- Causal Runtime Layer
 
 But it does not yet have:
 
-* Formal State Definitions
-* Formal Invariants
-* Formal Transition Rules
-* Safety Proof Targets
-* Liveness Proof Targets
-* Machine-verifiable semantics
+- Formal State Definitions
+- Formal Invariants
+- Formal Transition Rules
+- Safety Proof Targets
+- Liveness Proof Targets
+- Machine-verifiable semantics
 
 That is exactly what RFC + TLA+ territory solves.
 
@@ -991,13 +990,13 @@ Classification: Governance-Aware Distributed Runtime
 
 The Phoenix Runtime is a governance-aware deterministic execution system designed to support:
 
-* traceable intelligence
-* bounded autonomy
-* constitutional constraint enforcement
-* historical preservation
-* causal execution
-* probabilistic authority arbitration
-* systemic self-correction
+- traceable intelligence
+- bounded autonomy
+- constitutional constraint enforcement
+- historical preservation
+- causal execution
+- probabilistic authority arbitration
+- systemic self-correction
 
 The system treats governance as a first-class runtime primitive rather than an external administrative process.
 
@@ -1009,16 +1008,16 @@ All state transitions are governed by constitutional constraints before executio
 
 Traditional distributed systems optimize for:
 
-* availability
-* consistency
-* throughput
+- availability
+- consistency
+- throughput
 
 Phoenix additionally optimizes for:
 
-* explainability
-* traceability
-* historical continuity
-* constitutional compliance
+- explainability
+- traceability
+- historical continuity
+- constitutional compliance
 
 The primary system invariant is:
 
@@ -1383,9 +1382,9 @@ count(active_writers) ≤ 1
 
 This eliminates:
 
-* write races
-* state corruption
-* non-deterministic commits
+- write races
+- state corruption
+- non-deterministic commits
 
 ---
 
@@ -1616,12 +1615,12 @@ That becomes:
 
 which would formally define:
 
-* evidence accumulation
-* confidence decay
-* contradiction persistence
-* authority calibration
-* epistemic drift detection
-* truth lineage graphs
+- evidence accumulation
+- confidence decay
+- contradiction persistence
+- authority calibration
+- epistemic drift detection
+- truth lineage graphs
 
 and would become the actual heart of the entire architecture.
 
@@ -1666,9 +1665,9 @@ If I were building this as a serious research-grade system, the next document wo
 
 **Depends On:**
 
-* RFC-PHX-000 Constitutional Runtime
-* AOP-019 Failure Epistemology Layer
-* AOP-020 Deterministic Causal Runtime
+- RFC-PHX-000 Constitutional Runtime
+- AOP-019 Failure Epistemology Layer
+- AOP-020 Deterministic Causal Runtime
 
 ---
 
@@ -1676,17 +1675,17 @@ If I were building this as a serious research-grade system, the next document wo
 
 The Constitutional Runtime governs:
 
-* what may happen
-* how it happens
-* who may authorize it
+- what may happen
+- how it happens
+- who may authorize it
 
 The Canonical Truth Engine governs:
 
-* what is believed
-* how confidence changes
-* how uncertainty is represented
-* how contradictions persist
-* how knowledge evolves
+- what is believed
+- how confidence changes
+- how uncertainty is represented
+- how contradictions persist
+- how knowledge evolves
 
 The Truth Engine exists because execution correctness and truth correctness are different problems.
 
@@ -1738,10 +1737,10 @@ No authority source may bypass this invariant.
 
 Not:
 
-* humans
-* AI
-* governance councils
-* constitutional courts
+- humans
+- AI
+- governance councils
+- constitutional courts
 
 Authority may prioritize investigation.
 
@@ -1900,9 +1899,9 @@ Confidence function:
 
 where:
 
-* E = evidence contribution
-* Q = evidence quality
-* N = normalization factor
+- E = evidence contribution
+- Q = evidence quality
+- N = normalization factor
 
 ---
 
@@ -1918,8 +1917,8 @@ Define:
 
 where:
 
-* λ = decay coefficient
-* t = elapsed time
+- λ = decay coefficient
+- t = elapsed time
 
 ---
 
@@ -2397,18 +2396,18 @@ This is where Phoenix starts becoming genuinely distinct from most software arch
 
 Most systems have:
 
-* a state model
-* an execution model
-* a permissions model
+- a state model
+- an execution model
+- a permissions model
 
 Very few have a formal epistemology model.
 
 The strongest part of RFC-PHX-001 is the separation of:
 
-* truth
-* confidence
-* authority
-* evidence
+- truth
+- confidence
+- authority
+- evidence
 
 That separation is critical. Many real-world failures (human and machine) happen because those concepts collapse into each other.
 
@@ -2434,8 +2433,8 @@ That is where Phoenix stops being an intelligent runtime and becomes a civilizat
 
 **Depends On:**
 
-* RFC-PHX-000 Constitutional Runtime
-* RFC-PHX-001 Canonical Truth Engine
+- RFC-PHX-000 Constitutional Runtime
+- RFC-PHX-001 Canonical Truth Engine
 
 ---
 
@@ -2453,12 +2452,12 @@ In distributed systems, disagreement is normal.
 
 Nodes may:
 
-* observe different realities
-* receive evidence at different times
-* possess different authority roles
-* experience partial failures
-* contain corrupted information
-* operate under incomplete visibility
+- observe different realities
+- receive evidence at different times
+- possess different authority roles
+- experience partial failures
+- contain corrupted information
+- operate under incomplete visibility
 
 Therefore:
 
@@ -2849,9 +2848,9 @@ Complete Internal State
 
 This allows:
 
-* privacy
-* scalability
-* bounded bandwidth
+- privacy
+- scalability
+- bounded bandwidth
 
 ---
 
@@ -2936,10 +2935,10 @@ Court Review
 
 The Court evaluates:
 
-* evidence
-* lineage
-* traceability
-* constitutional compliance
+- evidence
+- lineage
+- traceability
+- constitutional compliance
 
 ---
 
@@ -3250,9 +3249,9 @@ That is a much harder problem.
 
 The strongest concept introduced here is the distinction between:
 
-* consensus
-* truth
-* decision
+- consensus
+- truth
+- decision
 
 Most governance failures happen when those collapse into one thing.
 
@@ -3272,9 +3271,9 @@ RFC-PHX-003 is likely where Phoenix either becomes something genuinely novel or 
 
 **Depends On:**
 
-* RFC-PHX-000 Constitutional Runtime
-* RFC-PHX-001 Canonical Truth Engine
-* RFC-PHX-002 Distributed Consensus & Multi-Node Governance
+- RFC-PHX-000 Constitutional Runtime
+- RFC-PHX-001 Canonical Truth Engine
+- RFC-PHX-002 Distributed Consensus & Multi-Node Governance
 
 ---
 
@@ -3300,10 +3299,10 @@ Its purpose is to determine what is permissible.
 
 Every sufficiently complex system eventually encounters situations where:
 
-* evidence is incomplete
-* values conflict
-* constitutional provisions appear to compete
-* legitimate actors disagree
+- evidence is incomplete
+- values conflict
+- constitutional provisions appear to compete
+- legitimate actors disagree
 
 When ordinary mechanisms fail to converge, constitutional review becomes necessary.
 
@@ -3349,10 +3348,10 @@ A proposed amendment requires constitutional compatibility verification.
 
 The Court may not hear:
 
-* preference disputes
-* optimization disputes
-* aesthetic disagreements
-* popularity contests
+- preference disputes
+- optimization disputes
+- aesthetic disagreements
+- popularity contests
 
 ---
 
@@ -3654,10 +3653,10 @@ Certain situations require immediate action.
 
 Examples:
 
-* catastrophic failure
-* existential threat
-* constitutional collapse
-* irreversible harm
+- catastrophic failure
+- existential threat
+- constitutional collapse
+- irreversible harm
 
 ---
 
@@ -3720,9 +3719,9 @@ One of the Court's primary responsibilities is resisting governance capture.
 
 Capture occurs when:
 
-* authority protects itself
-* precedent protects itself
-* institutions prioritize survival over truth
+- authority protects itself
+- precedent protects itself
+- institutions prioritize survival over truth
 
 ---
 
@@ -3756,8 +3755,8 @@ Drift Metric:
 
 Where:
 
-* (I_t) = current interpretation
-* (C_0) = original constitutional intent
+- (I_t) = current interpretation
+- (C_0) = original constitutional intent
 
 ---
 
@@ -3939,9 +3938,9 @@ This is the first RFC where Phoenix starts resembling an actual governance opera
 
 RFC-000 through RFC-002 define:
 
-* execution
-* truth
-* consensus
+- execution
+- truth
+- consensus
 
 RFC-003 defines adjudication.
 
@@ -3963,9 +3962,9 @@ Almost none have a formal adjudication protocol.
 
 The strongest addition here is the distinction between:
 
-* truth
-* decision
-* constitution
+- truth
+- decision
+- constitution
 
 Those three concepts are usually collapsed into one another in both software systems and human institutions.
 
@@ -3986,7 +3985,7 @@ I’ll produce:
 
 # **RFC-PHX-004 — Phoenix Deterministic Causal Execution System**
 
-## *A Formal Specification for a Single-Writer, Event-Sourced, Causally Ordered Runtime Substrate*
+## _A Formal Specification for a Single-Writer, Event-Sourced, Causally Ordered Runtime Substrate_
 
 ---
 
@@ -3996,11 +3995,11 @@ This document specifies the Phoenix System as a **deterministic, event-sourced, 
 
 The system defines:
 
-* A single-writer causal event backbone
-* Append-only global state transitions
-* Explicit governance policy evaluation prior to mutation
-* Variance-aware epistemic arbitration of competing state interpretations
-* Formal failure routing instead of exception-based halting
+- A single-writer causal event backbone
+- Append-only global state transitions
+- Explicit governance policy evaluation prior to mutation
+- Variance-aware epistemic arbitration of competing state interpretations
+- Formal failure routing instead of exception-based halting
 
 The system is designed to guarantee:
 
@@ -4020,10 +4019,10 @@ S = (N, E, C, H)
 
 Where:
 
-* **N** = Node registry (entities + metadata)
-* **E** = Edge registry (relationships / dependencies)
-* **C** = Closure matrix (law → affected nodes)
-* **H** = Hash chain of causal events (append-only history)
+- **N** = Node registry (entities + metadata)
+- **E** = Edge registry (relationships / dependencies)
+- **C** = Closure matrix (law → affected nodes)
+- **H** = Hash chain of causal events (append-only history)
 
 ---
 
@@ -4054,10 +4053,10 @@ S(t) = fold(apply, E[0..t])
 
 This enforces:
 
-* Determinism
-* Replayability
-* Auditability
-* No hidden state mutation
+- Determinism
+- Replayability
+- Auditability
+- No hidden state mutation
 
 ---
 
@@ -4103,9 +4102,9 @@ if causal(e1 → e2) → index(e1) < index(e2)
 
 Concurrency is **logical, not structural**:
 
-* multiple writers MAY propose events
-* only one writer commits
-* ordering is preserved post-resolution
+- multiple writers MAY propose events
+- only one writer commits
+- ordering is preserved post-resolution
 
 This is equivalent to:
 
@@ -4156,9 +4155,9 @@ commit(e)
 
 ### 4.3 Key Constraint Class (Phoenix-specific)
 
-* Lexicon invariance
-* Domain boundary enforcement
-* Structural alias prevention
+- Lexicon invariance
+- Domain boundary enforcement
+- Structural alias prevention
 
 ---
 
@@ -4197,9 +4196,9 @@ C = {path_alpha, path_beta}
 
 Each path has:
 
-* intent weight (I)
-* structure weight (S)
-* reality weight (R)
+- intent weight (I)
+- structure weight (S)
+- reality weight (R)
 
 ---
 
@@ -4217,8 +4216,8 @@ argmax Score(path)
 
 Non-winning paths:
 
-* preserved in contradiction ledger
-* not deleted (key invariant)
+- preserved in contradiction ledger
+- not deleted (key invariant)
 
 ---
 
@@ -4366,9 +4365,9 @@ You assume single-writer = solved problem.
 
 In real systems:
 
-* failover
-* split brain
-* leader election
+- failover
+- split brain
+- leader election
 
 → not defined here
 
@@ -4378,9 +4377,9 @@ In real systems:
 
 No:
 
-* multi-region consistency
-* quorum model
-* conflict resolution across nodes
+- multi-region consistency
+- quorum model
+- conflict resolution across nodes
 
 ---
 
@@ -4388,9 +4387,9 @@ No:
 
 You model sequential execution, but not:
 
-* interleaving event races
-* network partition cases
-* partial write visibility
+- interleaving event races
+- network partition cases
+- partial write visibility
 
 ---
 
@@ -4402,9 +4401,9 @@ It is:
 
 Not:
 
-* provably correct
-* convergence guaranteed
-* monotonic under updates
+- provably correct
+- convergence guaranteed
+- monotonic under updates
 
 ---
 
@@ -4438,8 +4437,8 @@ You are **3 structural additions away**:
 
 ### 3. Replace heuristic arbitration with:
 
-* probabilistic model OR
-* lattice-structured decision space (CRDT-like ordering guarantee)
+- probabilistic model OR
+- lattice-structured decision space (CRDT-like ordering guarantee)
 
 ---
 
@@ -4457,7 +4456,7 @@ because the missing piece is not engineering—it is **formal closure over concu
 
 ---
 
-If you want, the next step that would actually push this into *publishable systems research territory* is:
+If you want, the next step that would actually push this into _publishable systems research territory_ is:
 
 ### → “RFC-PHX-005: Causal Consensus Layer + TLA+ Full Concurrency Model”
 
@@ -4465,7 +4464,7 @@ That’s the point where this stops being an architecture and becomes a **formal
 
 # **RFC-PHX-005 — Causal Consensus Layer & Full Concurrency Model**
 
-## *A Formal Specification for Byzantine-Resilient Event Agreement in the Phoenix Deterministic Kernel*
+## _A Formal Specification for Byzantine-Resilient Event Agreement in the Phoenix Deterministic Kernel_
 
 ---
 
@@ -4473,10 +4472,10 @@ That’s the point where this stops being an architecture and becomes a **formal
 
 This RFC extends **RFC-PHX-004 (Deterministic Causal Execution Substrate)** by introducing a **formal consensus and concurrency model** capable of:
 
-* Resolving multi-writer event disagreement
-* Maintaining causal ordering under partitioned execution
-* Enforcing deterministic convergence across distributed replicas
-* Providing a TLA+ verifiable model of event agreement
+- Resolving multi-writer event disagreement
+- Maintaining causal ordering under partitioned execution
+- Enforcing deterministic convergence across distributed replicas
+- Providing a TLA+ verifiable model of event agreement
 
 This is the missing layer between:
 
@@ -4484,7 +4483,7 @@ This is the missing layer between:
 
 It formalizes:
 
-> **how multiple causal kernels agree on *what actually happened*.**
+> **how multiple causal kernels agree on _what actually happened_.**
 
 ---
 
@@ -4496,11 +4495,11 @@ RFC-PHX-004 assumes:
 
 This breaks under real distributed conditions:
 
-* Node failure
-* Network partition
-* Parallel kernel execution
-* Concurrent event proposals
-* Partial replication lag
+- Node failure
+- Network partition
+- Parallel kernel execution
+- Concurrent event proposals
+- Partial replication lag
 
 Therefore:
 
@@ -4520,11 +4519,11 @@ S = (N, E, C, H, R)
 
 Where:
 
-* **N** = Nodes
-* **E** = Edges
-* **C** = Closure matrix
-* **H** = Event history log (local)
-* **R** = Replica set state vector
+- **N** = Nodes
+- **E** = Edges
+- **C** = Closure matrix
+- **H** = Event history log (local)
+- **R** = Replica set state vector
 
 ---
 
@@ -4538,9 +4537,9 @@ Replicas = {K1, K2, ..., Kn}
 
 Each replica maintains:
 
-* local event log Hᵢ
-* local state Sᵢ
-* proposal queue Qᵢ
+- local event log Hᵢ
+- local state Sᵢ
+- proposal queue Qᵢ
 
 ---
 
@@ -4573,9 +4572,9 @@ lim(t→∞) Sᵢ(t) = Sⱼ(t)
 
 Even under:
 
-* message delay
-* event reordering
-* node crash/recovery
+- message delay
+- event reordering
+- node crash/recovery
 
 ---
 
@@ -4589,8 +4588,8 @@ e = (id, actor, type, payload, parent_hash, vector_clock, signature)
 
 ### New fields:
 
-* **vector_clock** → causal tracking across replicas
-* **signature** → authenticity + anti-spoof integrity
+- **vector_clock** → causal tracking across replicas
+- **signature** → authenticity + anti-spoof integrity
 
 ---
 
@@ -4604,9 +4603,9 @@ e₁ → e₂  (causal precedence)
 
 IF:
 
-* same actor chain OR
-* vector_clock domination OR
-* parent_hash lineage
+- same actor chain OR
+- vector_clock domination OR
+- parent_hash lineage
 
 Otherwise:
 
@@ -4658,10 +4657,10 @@ V(e) ∈ {ACCEPT, REJECT, UNKNOWN}
 
 Based on:
 
-* policy engine validation
-* causal compatibility
-* resource constraints
-* local state alignment
+- policy engine validation
+- causal compatibility
+- resource constraints
+- local state alignment
 
 ---
 
@@ -4699,8 +4698,8 @@ and is appended to canonical log.
 
 > No event may enter canonical history unless it is both:
 >
-> * causally valid
-> * quorum approved
+> - causally valid
+> - quorum approved
 
 ---
 
@@ -4746,9 +4745,9 @@ We DO NOT delete conflicting events.
 
 We:
 
-* preserve both
-* mark one as canonical
-* retain alternative as shadow branch
+- preserve both
+- mark one as canonical
+- retain alternative as shadow branch
 
 ---
 
@@ -4774,8 +4773,8 @@ Hᵢ ← merge(H₁ ∪ H₂ ∪ ... ∪ Hₙ)
 
 Then:
 
-* re-sort via causal order
-* reapply deterministically
+- re-sort via causal order
+- reapply deterministically
 
 ---
 
@@ -4903,9 +4902,9 @@ Invariant_Determinism ==
 
 If split occurs:
 
-* each partition continues proposing
-* no commit unless quorum exists
-* results buffered as “tentative logs”
+- each partition continues proposing
+- no commit unless quorum exists
+- results buffered as “tentative logs”
 
 ---
 
@@ -4927,9 +4926,9 @@ ensures:
 
 If node misbehaves:
 
-* votes are discounted
-* signature invalidation
-* reputation weighting reduces influence
+- votes are discounted
+- signature invalidation
+- reputation weighting reduces influence
 
 ---
 
@@ -4947,7 +4946,7 @@ This is effectively:
 
 But with a key difference:
 
-> You are explicitly modeling epistemic disagreement as a *first-class state object*, not a bug.
+> You are explicitly modeling epistemic disagreement as a _first-class state object_, not a bug.
 
 ---
 
@@ -4955,19 +4954,19 @@ But with a key difference:
 
 RFC-004 had:
 
-* deterministic kernel
-* single writer
-* causal ordering
+- deterministic kernel
+- single writer
+- causal ordering
 
 RFC-005 adds:
 
 ### Now you have:
 
-* multi-node agreement
-* failure tolerance
-* network partition survival
-* Byzantine-aware weighting
-* formal convergence proof structure (TLA+ level)
+- multi-node agreement
+- failure tolerance
+- network partition survival
+- Byzantine-aware weighting
+- formal convergence proof structure (TLA+ level)
 
 ---
 
@@ -4979,10 +4978,10 @@ RFC-005 adds:
 
 Not production code yet—but:
 
-* formally specifiable
-* TLA+ modelable
-* correctness-arguable
-* academically defensible
+- formally specifiable
+- TLA+ modelable
+- correctness-arguable
+- academically defensible
 
 ---
 
@@ -4990,7 +4989,7 @@ Not production code yet—but:
 
 ### 1. Full Byzantine Fault Tolerance model
 
-You have *light weighting*, not PBFT-class guarantees.
+You have _light weighting_, not PBFT-class guarantees.
 
 ### 2. Formal liveness proof
 
@@ -5031,4 +5030,3 @@ That is where we turn this from:
 into:
 
 > “formally verifiable distributed consensus protocol candidate”
-

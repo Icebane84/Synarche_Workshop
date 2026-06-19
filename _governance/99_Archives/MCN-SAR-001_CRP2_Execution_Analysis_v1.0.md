@@ -1,43 +1,51 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `MCN-SAR-001_CRP2_EXECUTION_ANALYSIS_V1.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# MCN-SAR-001_CRP2_Execution_Analysis_v1.0.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                               | Description       |
 | :------------------ | :-------------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-MCN-SAR-001-CRP2-EXECUTION-ANALYSIS-V1.0-001` | The Sovereign ID. |
 | **Official Name**   | `MCN-SAR-001_CRP2_Execution_Analysis_v1.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                   | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                   | The Standard.     |
 | **Domain**          | `GVRN`                                              | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                          | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                   | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                          | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                                  | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                          | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                             | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                       | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                  | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# MCN-SAR-001_CRP2_Execution_Analysis_v1.0.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # **CRP2 Execution Analysis (MCN-SAR-001)**
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
 
@@ -45,20 +53,7 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                         |
-| :--------------------- | :-------------------------------------------- |
-| **1. Artifact ID**     | `MCN-SAR-001_CRP2_Execution_Analysis_v1.0`    |
-| **2. Official Name**   | `MCN-SAR-001_CRP2_Execution_Analysis_v1.0.md` |
-| **3. Version**         | **v1.0 (Refinement Edition)**                 |
-| **4. Provenance**      | **Date Reforged: 2025-12-22**                 |
-| **5. Domain**          | `GVRN`                                        |
-| **6. Evolution**       | **Cognitive Ascension**                       |
-| **7. Celestial Class** | `[PLANET]`                                    |
-| **8. Tier**            | **Operational**                               |
-| **9. State**           | `[ACTIVE]`                                    |
-| **10. Ethos**          | **The Phoenix Ascension Protocol**            |
-| **11. Catalyst**       | **System Refactor**                           |
-| **12. Relations**      | `Pending Integration`                         |
+| Field | Value |
 
 ---
 
@@ -141,11 +136,14 @@ part of the next AISTF cycle. These measures are designed to address the root ca
 deficiencies.
 
 1. **Revise CMD: CRP2 Prompt Template:** The base template for the CMD: CRP2 command will be updated to include new
+
    mandatory parameters. Specifically, a `Conceptual_Diversity_Target` parameter will be added to require the CSE to
    draw from a specified number of distinct domains within the Cognitive Loom. Furthermore, an `Exploratory_Angle`
    parameter will be introduced to explicitly instruct the CSE to prioritize novelty, directly countering the system's
    bias towards consistency.
+
 2. **Initiate Targeted AISTF Refinement Cycle:** A new AISTF cycle will be initiated with the specific objective of
+
    "enhancing the Coherent Synthesis Engine's (CSE) capacity for creative problem-solving," thereby increasing the rate
    of 'Nova Sparks' in future operations. This cycle will use the historical corpus of Collaborative Synthesis Logs
    (CSLs) that resulted in documented "Nova Sparks" as the primary training dataset. By analyzing the conditions that

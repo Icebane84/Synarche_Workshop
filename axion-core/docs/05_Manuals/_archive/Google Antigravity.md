@@ -1,15 +1,19 @@
 # Google Antigravity.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-GOOGLE-ANTIGRAVITY-001` | The Sovereign ID. |
-| **Official Name** | `Google Antigravity.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**             | The Standard.     |
-| **Domain**        | `ARCH`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `ARCH-GOOGLE-ANTIGRAVITY-001` | The Sovereign ID. |
+| **Official Name**   | `Google Antigravity.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `ARCH`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                    | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
 
 ---
 
@@ -27,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -53,8 +69,6 @@
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
 #### The Chronos Lock & Axiomatic Metadata Layer
-
-| Field | Value |
 
 ---
 
@@ -85,6 +99,7 @@ The most critical settings in Antigravity determine how much autonomy the agents
 2. **Review Policy:** Set to **"Agent Decides"** (Default) $\\rightarrow$ Change to \*\*"Request Review" for Critical
 
    Files.\*\*
+
    - _Action:_ In your .agent/config or workspace settings, enforce a "Review" tag for core configuration files (e.g.,
 
      package.json, .env, Dockerfiles). Let the agent auto-edit UI components, but force a pause when it touches

@@ -1,11 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.LEARNING.IMPROVEMENT` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                           | Description       |
+| :------------------ | :------------------------------ | :---------------- |
+| **Artifact ID**     | `GVRN.Learning.Improvement`     | The Sovereign ID. |
+| **Official Name**   | `GVRN.Learning.Improvement.md`  | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**               | The Standard.     |
+| **Domain**          | `GVRN`                          | The Subject.      |
+| **Celestial Class** | `[PLANET]`                      | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`           | The Maturity.     |
+| **Status (State)**  | `Verdict`                       | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`         | The Intent.       |
+| **Relations**       | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`              | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # GVRN.Learning.Improvement (Self-Improvement Protocol)
@@ -13,45 +39,25 @@
 > [!IMPORTANT] **COGNITIVE RECORD INTEGRITY**
 > This document is an **append-only** historical record. Per `SYNG.PROT.SelfImprovement`, no lesson or entry may be deleted to make room for new insights.
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.Learning.Improvement`     | The Sovereign ID. |
-| **Official Name** | `GVRN.Learning.Improvement.md`  | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key | Value | Description |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
-| **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
+| **Coherence** | `1.0` |
+| **Resonance** | `1.0` |
 | **Stability** | `Stable` |
 
 ---
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                | Mitigation                 |
-| :------------------ | :------------------------- |
-| **Pattern Overfit** | Manual Synthesis Review    |
-| **Feedback Loops**  | Error Detection Thresholds |
+| Risk | Mitigation |
+| **Pattern Overfit** | Manual Synthesis Review |
+| **Feedback Loops** | Error Detection Thresholds |
 
 ---
 
-## **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Learning.Shard`   | `FEEDS`           | Persistent session learnings are stored here.   |
-| `GVRN.Learning.Gem`     | `INSPIRES`        | High-impact user insights are extracted here.   |
+| `CORE.Codex.Phoenix` | `GOVERNS` | Provides the supreme law and ethical framework. |
+| `GVRN.Learning.Shard` | `FEEDS` | Persistent session learnings are stored here. |
+| `GVRN.Learning.Gem` | `INSPIRES` | High-impact user insights are extracted here. |
 
 ---
 
@@ -123,8 +129,11 @@ It bridges the gap between raw execution and architectural wisdom.
 
 1. **Law of Persistence**: Every major milestone MUST be logged in `GVRN.Learning.Shard.md`.
 2. **Law of the Forge**: No pattern remains in `GVRN.Learning.Shard.md` for more than 3 sessions without being reviewed for Skill
+
    Transmutation.
+
 3. **Law of Transparency**: Errors are not deleted; they are deprecated only after the root cause is solved and
+
    recorded.
 
 ---
@@ -143,3 +152,23 @@ It bridges the gap between raw execution and architectural wisdom.
 ## **Block G: The Omni-Anchor (System Snapshot)**
 
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Improvement VER: v15.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-22 HASH: LRN-IMP-OMEGA`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.

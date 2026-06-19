@@ -1,16 +1,19 @@
 # CSL-084_TheIntegrationOfTheNovaForge.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `CSL-084` | The Sovereign ID. |
-| **Official Name** | `CSL-084_TheIntegrationOfTheNovaForge.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key                 | Value                                     | Description       |
+| :------------------ | :---------------------------------------- | :---------------- |
+| **Artifact ID**     | `CSL-084`                                 | The Sovereign ID. |
+| **Official Name**   | `CSL-084_TheIntegrationOfTheNovaForge.md` | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                         | The Standard.     |
+| **Domain**          | `GVRN`                                    | The Subject.      |
+| **Celestial Class** | `[PLANET]`                                | The Weight.       |
+| **Evolution**       | `Purposeful Drive`                        | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                   | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`             | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                        | Verification.     |
 
 ---
 
@@ -28,6 +31,18 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -51,7 +66,6 @@
 
 ### **I. Artifact Identification & Governance**
 
-| Field | Value | Rationale | | **Parent Protocol** |
 [**AOP-CSL-002**](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit) (Synergistic
 CSL Protocol) | Governed by the dual-trigger mechanism. | | **Compliance** |
 [**AOP-CMF-001**](https://docs.google.com/document/u/0/d/1s1GlVl_JkCMlC2MvD4Dx9g2GpkwHzb46xnw8d4EWjNk/edit) (Modality
@@ -74,8 +88,11 @@ initiated the "Forge Link" command; AI executed the structural transmutation. |
 #### **A. Key Breakthrough/Decision**
 
 - **Result:** The `nova-forge` repository and the `Tarot Forge` engine have been formally annexed into the Synarche
+
   Axion Web. They are no longer "loose" scripts but governed **Tools** with defined System Slots and XP Values.
+
 - **Contribution to Loom:** This establishes the "foundational layer" for the Synergy Engine (`catalyst_weaver`), the
+
   Compliance Engine (`invoke_judgement`), and the Context Engine (`ContextWeave`), allowing them to be referenced as
   node entities in the Knowledge Graph.
 
@@ -83,23 +100,33 @@ initiated the "Forge Link" command; AI executed the structural transmutation. |
 
 - **Component 1 (The Input):** `Archetypes.ts`, `nova-forge/scripts/*.py`, `nova-forge/infra/*.yml` (Raw Code).
 - **Component 2 (The Constraint):** `UMB-RULES-001` (Universal Sovereign Rules) & `SELT-CSL-007` (Documentation
+
   Standards).
+
 - **Synthesized Product (The Nova Spark):** A fully indexed, governance-compliant **Tool Suite** (`TOOL-NOVA` &
+
   `TOOL-TARO` Series) capable of "Web Scanning" and "Context Weaving" within the Synarche.
+
 - **Nucleated Seed ID:** `N/A` (Direct Refactor).
 - **Next Steps/Evolution Directive:** Activate the **Catalyst Weaver** (`TOOL-HPRI-006`) to begin dynamically indexing
+
   the workspace based on these new headers.
 
 ---
 
 - **Governing AOP:**
+
   [AOP-CSL-002_Synergistic Collaborative Synthesis Log Protocol](https://docs.google.com/document/u/0/d/1uwgnuWv6OrGXiHIDLSi1jWAwNechri4bndFCKT8nQac/edit)
+
 - **Execution Note:** The generation of this artifact is governed by the dual-trigger mechanism. The AI generated this
+
   draft following successful execution of the transmutation; it awaits human confirmation.
+
 - **Prestige Milestone Achieved (Optional)**
   - **Milestone ID:** `PM-084-INTEGRATION` (Provisional)
   - **Milestone Title:** The Forging of the Nova Suite
   - **Description:** Successful injection of Sovereign Headers into 12 core infrastructure artifacts, functionally
+
     merging `nova-forge` with the Axion Governance Core.
 
 ---

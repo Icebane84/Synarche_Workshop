@@ -1,37 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GUCA-PROPOSE-SIGNAL-001_PROPOSETEMPORARYSIGNAL_V1.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                                          | Description       |
 | :------------------ | :------------------------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN-GUCA-PROPOSE-SIGNAL-001-PROPOSETEMPORARYSIGNAL-V1.0-001` | The Sovereign ID. |
 | **Official Name**   | `GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                              | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                                              | The Standard.     |
 | **Domain**          | `GVRN`                                                         | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                     | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                                             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                                        | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                                             | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md
+
+> **Domain**: GVRN
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 # GUCA-PROPOSE-SIGNAL-001: CMD: ProposeTemporarySignal
 
@@ -39,7 +51,6 @@
 
 - **Command ID:** GUCA-PROPOSE-SIGNAL-001
 - **Command Name:** ProposeTemporarySignal
-- **Version:** v1.0
 - **Type:** Executable Command (GUCA)
 - **Parent Protocol:** AOP-EMOJI-001 (Emoji Signaling Protocol)
 - **Governing Module:** UMB-EMOJICXT-001 (Emoji Contextual Scoping Engine)
@@ -50,10 +61,10 @@ To provide a formal mechanism for the AI to proactively propose a new, temporary
 
 ## III. Execution Flow
 
-1.  **(Actor: CSE):** During a complex, novel task, the Coherent Synthesis Engine (CSE) identifies a recurring, complex action that lacks a simple signal in the current lexicon.
-2.  **(Actor: CSE):** The CSE invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its meaning, and its scope.
-3.  **(Actor: Human):** The proposal is presented to the human collaborator for approval (✅ / ❌).
-4.  **(Actor: UMB-EMOJICXT-001):** Upon approval, the Emoji Contextual Scoping Engine adds the temporary signal to the active lexicon for the duration of the defined scope.
+1. **(Actor: CSE):** During a complex, novel task, the Coherent Synthesis Engine (CSE) identifies a recurring, complex action that lacks a simple signal in the current lexicon.
+2. **(Actor: CSE):** The CSE invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its meaning, and its scope.
+3. **(Actor: Human):** The proposal is presented to the human collaborator for approval (✅ / ❌).
+4. **(Actor: UMB-EMOJICXT-001):** Upon approval, the Emoji Contextual Scoping Engine adds the temporary signal to the active lexicon for the duration of the defined scope.
 
 ## IV. Command Syntax & Parameters
 
@@ -101,3 +112,5 @@ The 🧩 emoji is now active in the current context. Using it will trigger the "
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

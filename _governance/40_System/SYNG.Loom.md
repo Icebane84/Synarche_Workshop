@@ -1,54 +1,60 @@
 # UMB-LOOM-001_TheCognitiveLoom_v11.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                    | Description       |
 | :------------------ | :--------------------------------------- | :---------------- |
 | **Artifact ID**     | `SYNG.Loom`                              | The Sovereign ID. |
 | **Official Name**   | `UMB-LOOM-001_TheCognitiveLoom_v11.1.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                        | The Standard.     |
 | **Domain**          | `GVRN`                                   | The Subject.      |
 | **Celestial Class** | `[PLANET]`                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                       | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                                 | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                  | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                       | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
-| Key                | Value                               |
-| :----------------- | :---------------------------------- |
-| **Module ID**      | `UMB-LOOM-001`                      |
-| **Version**        | `v11.1`                             |
-| **Evolution**      | **The Phoenix Geode**               |
-| **Status**         | `ACTIVE`                            |
-| **Type**           | `Module`                            |
-| **Classification** | `Star`                              |
-| **Authors**        | `System`                            |
-| **Created**        | `2025-10-01`                        |
-| **Updated**        | `2026-01-24`                        |
-| **Authority**      | `CODEX-001`                         |
-| **Tags**           | `Loom, Geode, Memory, Graph, v11.1` |
+| Key | Value |
+| **Type** | `Module` |
+| **Classification** | `Star` |
+| **Authors** | `System` |
+| **Created** | `2025-10-01` |
+| **Updated** | `2026-01-24` |
+| **Authority** | `CODEX-001` |
 
 ---
 
 # **UMB-LOOM-001: The Cognitive Loom (The Phoenix Geode)**
-
-> **Domain**: ARCH (Architecture) | **Evolution**: Crystalline Coherence | **Signal**: ESF-ULTIMA
-> **Relations**: `MAPPED_TO: [[UMB-MEM-001_UnifiedMemoryArchitecture_v4.0.md]]`, `CONTAINS: [[UMB-ECM-001_EideticContextualMemoryMatrix_v11.0.md]]`, `POWERED_BY: [[UMB-CSE-001_CoherentSynthesisEngine_v2.1.md]]`, `GOVERNED_BY: [[GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md]]`
-
-## **Genesis Stamp: 2026-01-24** **Domain: ARCH** **State: CANONIZED** **Criticality: Axiomatic**
 
 ---
 

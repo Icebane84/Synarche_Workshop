@@ -1,26 +1,19 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `BLK-RISK-001_RISKSTATEBLOCK` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# BLK-RISK-001_RiskStateBlock.md
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-BLK-RISK-001-RISKSTATEBLOCK-001` | The Sovereign ID. |
-| **Official Name** | `BLK-RISK-001_RiskStateBlock.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
-
+| Key                 | Value                                  | Description       |
+| :------------------ | :------------------------------------- | :---------------- |
+| **Artifact ID**     | `GVRN-BLK-RISK-001-RISKSTATEBLOCK-001` | The Sovereign ID. |
+| **Official Name**   | `BLK-RISK-001_RiskStateBlock.md`       | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**                      | The Standard.     |
+| **Domain**          | `GVRN`                                 | The Subject.      |
+| **Celestial Class** | `[PLANET]`                             | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`                  | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                             | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix`      | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                     | Verification.     |
 
 ---
 
@@ -38,6 +31,22 @@
 | :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
+
+---
+
+# BLK-RISK-001_RiskStateBlock.md
+
+| Key | Value | Description |
+
+---
+
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+| Risk | Mitigation |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 

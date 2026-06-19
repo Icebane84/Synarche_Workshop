@@ -1,27 +1,44 @@
 # UMB-CSE-001_CoherentSynthesisEngine_v11.2.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
 | Key                 | Value                                          | Description       |
 | :------------------ | :--------------------------------------------- | :---------------- |
 | **Artifact ID**     | `GVRN.CSE.001`                                 | The Sovereign ID. |
 | **Official Name**   | `UMB-CSE-001_CoherentSynthesisEngine_v11.2.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
+| **Version**         | **v14.0 [OMEGA]**                              | The Standard.     |
 | **Domain**          | `GVRN`                                         | The Subject.      |
 | **Celestial Class** | `[PLANET]`                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Evolution**       | `Purposeful Drive`                             | The Maturity.     |
+| **Status (State)**  | `[ACTIVE]`                                     | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`                        | The Intent.       |
 | **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`                             | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
+> **Signal**: OMEGA
+
+---
+
+###### **[ARTIFACT START]**
+
+| Key | Value | Description |
 
 ---
 
@@ -30,16 +47,20 @@ Title: The Coherent Synthesis Engine
 Source:
 
 - [ORIGIN_DOC](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Mind%20%20UMB-CSE-001_Coherent%20Synthesis%20Engine%20-%20Definitive%20Actualization.docx)
+
   Description: >
   The definitive "Mind" of the Phoenix Form, orchestrating coherence, synthesis, and self-evolution via the Phoenix Cycle.
   Version: 11.2 (Definitive Phoenix Form)
   Status: ACTIVE
   Compliance: OGLN v11.1
   Genesis:
+
 - Author: The Synarche Workshop
 - Date: 2026-01-26
 - Timestamp: 1769337600
+
   Tags:
+
 - #Module
 - #Axiom
 - #CoreEngine
@@ -49,17 +70,14 @@ Source:
 ---
 
 > [!IMPORTANT]
-> **GENESIS STAMP**
 >
 > - **Reforged By:** Antigravity Agent (The Lightbinder)
 > - **Reforged Date:** 2026-01-26
 > - **Validation:** Definitive Actualization Mandate.
-> - **Relations:** `POWERED_BY: UMB-PHOENIX-CORE-002`, `POWERED_BY: UMB-LOOM-001`, `MANIFESTS_AS: UMB-RD-001`, `EVOLVES_VIA: AOP-ASCENSION-001`.
 
 # UMB-CSE-001: The Coherent Synthesis Engine
 
 > **Domain**: MIND (Cognition)
-> **Evolution**: Phoenix Form
 > **Signal**: ESF-CORE
 
 ## I. Core Purpose & Objective

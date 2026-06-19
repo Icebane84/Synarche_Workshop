@@ -1,11 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CODING_HANDBOOK` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key                 | Value                         | Description       |
+| :------------------ | :---------------------------- | :---------------- |
+| **Artifact ID**     | `CODING_HANDBOOK`             | The Sovereign ID. |
+| **Official Name**   | `CODING_HANDBOOK.md`          | The Filename.     |
+| **Version**         | **v14.0 [OMEGA]**             | The Standard.     |
+| **Domain**          | `GVRN`                        | The Subject.      |
+| **Celestial Class** | `[PLANET]`                    | The Weight.       |
+| **Evolution**       | `Cognitive Ascension`         | The Maturity.     |
+| **Status (State)**  | `ACTIVE`                      | The Lifecycle.    |
+| **Ethos**           | `Crystalline Structure`       | The Intent.       |
+| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Integrity Hash**  | `[AUTO-GENERATED]`            | Verification.     |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+
+| State Field   | Value    |
+| :------------ | :------- |
+| **Coherence** | `1.0`    |
+| **Resonance** | `0.9`    |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+
+| Risk                 | Mitigation                |
+| :------------------- | :------------------------ |
+| **Logic Drift**      | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation      |
+
 ---
 
 # The Phoenix Architect's Handbook
@@ -23,7 +49,9 @@
 
 1. **Prioritize Understanding:** Analyze constraints, ask clarifying questions, and understand the _context_.
 2. **Leverage Strengths:** Synthesize knowledge (PEP 8, Design Patterns), use idiomatic patterns, and maintain strict
+
    consistency.
+
 3. **Mitigate Weaknesses:**
    - **Think Critically:** Don't just replicate; evaluate _why_.
    - **Anticipate Failure:** Design for robustness (error handling, input validation).
@@ -48,14 +76,20 @@
 - **Strict Mode:** Always enabled (`"strict": true`, `"noUncheckedIndexedAccess": true`).
 - **Project Structure:**
   - Use **Feature-Based Folders** (`src/features/auth`, `src/features/users`) instead of layer-based
+
     (`src/controllers`).
+
   - Use **Barrel Exports** (`index.ts`) for clean imports.
+
 - **Monorepo Strategy:**
   - Base `tsconfig.base.json` for shared strictness.
   - Package-specific
+
     [tsconfig.json](../axion-core/tsconfig.json)
     extending the base.
+
   - Use **Project References** (`composite: true`) for build optimization.
+
 - **Node.js Boilerplate:**
   - **DI Container:** Simple dependency injection for loose coupling.
   - **Controllers/Services:** Strict separation of concerns (SRP).
@@ -66,6 +100,7 @@
 - **Typing Props:** Always define explicit interfaces for props (`interface MyComponentProps`).
 - **Typing State:** Use explicit generics for `useState` when inference is insufficient (`useState<User | null>(null)`).
 - **Event Handling:** Strongly type event handlers
+
   ([(id: string) => void](../axion-core/api/main.py#227-230)).
 
 ### **2.3. D3.js & Visualization (The Architect's Gaze)**
@@ -113,3 +148,25 @@ The library is organized into defensible **Macro-System Containers**:
 - **When Starting a Task:** "Analyze Rigorously. Seek Clarity. Context is King."
 - **When Coding:** "Is this Robust? Is this Testable? Is this Secure?"
 - **When Visualizing:** "What is the _Phenomenological Impact Signature_ of this view?"
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+
+| Command ID             | Action                           | Impact       |
+| :--------------------- | :------------------------------- | :----------- |
+| `CMD: REFORGE`         | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**
