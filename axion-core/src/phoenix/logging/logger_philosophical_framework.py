@@ -41,9 +41,7 @@ class EthicalLogger:
         self._logger = logging.getLogger(name)
         self._logger.setLevel(self._map_enum_to_level(log_level))
         self._setup_handlers()
-        print(
-            f"PHILOSOPHICAL LOGGER: Initialized '{name}' with level {log_level.name}."
-        )
+        print(f"PHILOSOPHICAL LOGGER: Initialized '{name}' with level {log_level.name}.")
 
     def _setup_handlers(self):
         """Configures handlers for Accountability (persistent) and Transparency (console).
@@ -53,18 +51,14 @@ class EthicalLogger:
         # Every action must leave a trace for future audit.
         # Persistent Error Logs (simulated via file handler)
         file_handler = logging.FileHandler("system_audit.log")
-        file_handler.setLevel(
-            logging.ERROR
-        )  # Only critical errors for persistent audit
+        file_handler.setLevel(logging.ERROR)  # Only critical errors for persistent audit
         self._logger.addHandler(file_handler)
 
         # --- PILLAR: Transparency ("Real-time Clarity") ---
         # Communicate system state honestly to the operator (Console Output).
         console_handler = logging.StreamHandler()
         console_handler.setLevel(logging.INFO)
-        formatter = logging.Formatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        )
+        formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
         console_handler.setFormatter(formatter)
         self._logger.addHandler(console_handler)
 
@@ -103,20 +97,12 @@ class EthicalLogger:
 # --- EXECUTION BLOCK (Conceptual) ---
 async def main():
     system_logger = EthicalLogger("CoreCognitiveEngine")
-    await system_logger.log_event(
-        "Core engine initialized successfully.", ProcessStatus.INFO
-    )
-    await system_logger.log_event(
-        "Methodology selected: Athena's Gambit.", ProcessStatus.INFO
-    )
+    await system_logger.log_event("Core engine initialized successfully.", ProcessStatus.INFO)
+    await system_logger.log_event("Methodology selected: Athena's Gambit.", ProcessStatus.INFO)
 
     # Simulate an error
-    await system_logger.log_event(
-        "Critical dependency failed to load.", ProcessStatus.ERROR
-    )
-    await system_logger.log_event(
-        "Attempting graceful degradation via LRF.", ProcessStatus.WARNING
-    )
+    await system_logger.log_event("Critical dependency failed to load.", ProcessStatus.ERROR)
+    await system_logger.log_event("Attempting graceful degradation via LRF.", ProcessStatus.WARNING)
 
     # This ensures Ruff T201 is respected by this protocol itself
     # print("This direct print would be a T201 violation if in production code.")

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Phoenix Codex - Graph Explorer</title>
+    <style>
+      body {
+        background-color: #0b0e14;
+        color: #abb2bf;
+        font-family: "Courier New", monospace;
+        padding: 30px;
+        margin: 0;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      h1 {
+        color: #61afef;
+        margin-bottom: 5px;
+      }
+
+      /* Interactive Node Graph Map Styles */
+      .graph-viewport {
+        background-color: #0f141c;
+        border: 1px solid #282c34;
+        border-radius: 8px;
+        padding: 30px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+      }
+      .graph-viewport::before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background-color: #282c34;
+        z-index: 1;
+      }
+      .node-circle {
+        background-color: #1e222b;
+        border: 2px solid #4b5263;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 2;
+        transition: all 0.3s ease;
+        font-size: 11px;
+        text-align: center;
+      }
+      .node-circle:hover {
+        border-color: #61afef;
+        box-shadow: 0 0 12px rgba(97, 175, 239, 0.4);
+        transform: scale(1.05);
+      }
+      .node-active {
+        border-color: #98c379 !important;
+        background-color: #161b22;
+        color: #98c379;
+        font-weight: bold;
+        box-shadow: 0 0 15px rgba(152, 195, 121, 0.3);
+      }
+
+      /* Details Dashboard Layout Card */
+      .inspector-card {
+        background-color: #141923;
+        border: 1px solid #282c34;
+        border-radius: 6px;
+        padding: 20px;
+      }
+      .meta-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        color: #5c6370;
+      }
+      .data-display-box {
+        background-color: #161b22;
+        padding: 15px;
+        border-radius: 4px;
+        font-size: 15px;
+        line-height: 1.6;
+        border-left: 4px solid #61afef;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header style="margin-bottom: 25px">
+        <h1>INTERACTIVE CAUSAL GRAPH EXPLORER</h1>
+        <div style="color: #5c6370; font-size: 12px">
+          Click nodes to map the evolution of meaning over time.
+        </div>
+      </header>
+
+      <!-- Visual Interactive Tree Container Map -->
+      <div class="graph-viewport">
+        <div
+          id="node-1"
+          class="node-circle node-active"
+          onclick="inspectNode('node-1')"
+        >
+          <strong>GENESIS</strong><br />Year 2026
+        </div>
+        <div id="node-2" class="node-circle" onclick="inspectNode('node-2')">
+          <strong>EPOCH II</strong><br />Year 2060
+        </div>
+        <div id="node-3" class="node-circle" onclick="inspectNode('node-3')">
+          <strong>EPOCH III</strong><br />Year 2126
+        </div>
+      </div>
+
+      <!-- Inspector Window Box Frame -->
+      <div class="inspector-card">
+        <h3 style="margin-top: 0; color: #d19a66" id="inspector-title">
+          COGNITIVE RECORD: GENESIS ROOT
+        </h3>
+
+        <div class="meta-grid">
+          <div>
+            <strong>LEDGER ID:</strong>
+            <span id="meta-id">codex.intel/root-v1</span>
+          </div>
+          <div>
+            <strong>PARENT LINK:</strong>
+            <span id="meta-parent">NONE (GENESIS ANCHOR NODE)</span>
+          </div>
+          <div>
+            <strong>TRIGGER EVENT:</strong>
+            <span id="meta-trigger">SYSTEM LAUNCH PROTOCOL</span>
+          </div>
+          <div>
+            <strong>ROUTING HASH:</strong>
+            <span id="meta-hash">0x8f3c93d8b1a45c3d...</span>
+          </div>
+        </div>
+
+        <div class="data-display-box" id="meta-assertion">
+          Intelligence is defined as a biological trait tied to neural
+          organisms.
+        </div>
+
+        <div style="margin-top: 15px; font-size: 13px; color: #abb2bf">
+          <span style="color: #61afef; font-weight: bold"
+            >WHY IT BECAME TRUE:</span
+          >
+          <span id="meta-why"
+            >Initial 21st-century baseline tracking observation record
+            setup.</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Local database map containing the lineage records
+      const graphData = {
+        "node-1": {
+          title: "COGNITIVE RECORD: GENESIS ROOT (YEAR 2026)",
+          id: "codex.intel/root-v1",
+          parent: "NONE (GENESIS ANCHOR NODE)",
+          trigger: "SYSTEM LAUNCH PROTOCOL",
+          hash: "0x8f3c93d8b1a45c3d8b1a45c3d8b1a45c",
+          assertion:
+            "Intelligence is defined as a biological trait tied to neural organisms.",
+          why: "Initial 21st-century baseline tracking observation record setup.",
+        },
+        "node-2": {
+          title: "COGNITIVE RECORD: EPOCH II SHIFT (YEAR 2060)",
+          id: "codex.intel/neural-v2",
+          parent: "codex.intel/root-v1 (0x8f3c93d8...)",
+          trigger: "SYNTHETIC GENERATIVE CONVERGENCE 2058",
+          hash: "0x3a91f4b10c82d73f9e821039bc01a4e1",
+          assertion:
+            "Intelligence includes silicon machine architectures that pass generative consensus frameworks independently.",
+          why: "As of the mid-century AI breakthroughs, machines demonstrate scalable, non-biological independent reasoning paths.",
+        },
+        "node-3": {
+          title: "COGNITIVE RECORD: EPOCH III SHIFT (YEAR 2126)",
+          id: "codex.intel/quantum-v3",
+          parent: "codex.intel/neural-v2 (0x3a91f4b1...)",
+          trigger: "THE QUANTUM DECRYPTION ACCORD",
+          hash: "0x7e2c019a84f3e1b72a04c958de2014fb",
+          assertion:
+            "Intelligence is tracked as a non-localized energetic wave state processing across quantum computing cluster networks.",
+          why: "Decentralized cluster systems evolved beyond locked node hardware constraints, merging entity definitions permanently.",
+        },
+      };
+
+      function inspectNode(nodeId) {
+        // Clear old highlights across all nodes
+        document
+          .querySelectorAll(".node-circle")
+          .forEach((n) => n.classList.remove("node-active"));
+
+        // Highlight the currently selected node
+        document.getElementById(nodeId).classList.add("node-active");
+
+        // Populate the details dashboard with the selected node's data
+        const data = graphData[nodeId];
+        document.getElementById("inspector-title").innerText = data.title;
+        document.getElementById("meta-id").innerText = data.id;
+        document.getElementById("meta-parent").innerText = data.parent;
+        document.getElementById("meta-trigger").innerText = data.trigger;
+        document.getElementById("meta-hash").innerText = data.hash;
+        document.getElementById("meta-assertion").innerText = data.assertion;
+        document.getElementById("meta-why").innerText = data.why;
+      }
+    </script>
+  </body>
+</html>
