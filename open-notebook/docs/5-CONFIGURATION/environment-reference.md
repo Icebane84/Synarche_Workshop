@@ -92,16 +92,10 @@ CORS_ORIGINS=https://notebook.example.com
 
 ## Text-to-Speech (TTS)
 
-<<<<<<< HEAD
-| Variable         | Required? | Default | Description                                        |
-| ---------------- | --------- | ------- | -------------------------------------------------- |
-| `TTS_BATCH_SIZE` | No        | 5       | Concurrent TTS requests (1-5, depends on provider) |
-=======
 | Variable | Required? | Default | Description |
 |----------|-----------|---------|-------------|
 | `TTS_BATCH_SIZE` | No | 5 | Concurrent TTS requests (1-5, depends on provider) |
 | `ESPERANTO_TTS_TIMEOUT` | No | 300 | Text-to-speech request timeout in seconds (passed through to Esperanto). Increase it for slow or self-hosted TTS providers that take longer than 5 minutes to synthesize a segment, otherwise long podcast segments can fail with a timeout. |
->>>>>>> 14ba8f51e81f34855cd21c390f2576215d8808dd
 
 ---
 

@@ -3,6 +3,7 @@
   "version": "15.0.0",
   "private": true,
   "workspaces": [
+    "packages/*",
     "axion-core",
     "open-notebook",
     "design-system",
@@ -13,11 +14,19 @@
   ],
   "scripts": {
     "dev": "nx run open-notebook:dev",
-    "build": "nx run open-notebook:build",
-    "phoenix": "nx run phoenix-rosetta-stone:dev"
+    "build": "npm run build:supabase && nx run open-notebook:build",
+    "build:supabase": "tsc -p packages/supabase/tsconfig.json",
+    "phoenix": "yarn run phoenix-rosetta-stone:dev"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.15",
-    "jsonc-parser": "^3.3.1"
+    "@nx/js": "^18.2.0",
+    "@nx/node": "^18.2.0",
+    "@nx/react": "^18.2.0",
+    "@nx/web": "^18.2.0",
+    "jsonc-parser": "^3.3.1",
+    "nx": "^18.2.0",
+    "supabase": "1.187.3",
+    "typescript": "^5.2.2"
   }
 }
