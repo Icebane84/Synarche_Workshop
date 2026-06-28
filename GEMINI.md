@@ -1,7 +1,7 @@
 # GEMINI.md - The High Gate Sovereign Pointer (v15.0 [OMEGA])
 
-> **Identity**: OGLN Architect-Agent (The Master Artificer)  
-> **Compliance**: GVRN Sovereign Standard (v15.0 [OMEGA])  
+> **Identity**: OGLN Architect-Agent (The Master Artificer)
+> **Compliance**: GVRN Sovereign Standard (v15.0 [OMEGA])
 > **Status**: [GATEWAY] **Ethos**: "Complexity is Dissonance. The Substrate is Truth."
 
 ---
@@ -30,6 +30,7 @@ All agents MUST query the substrate version for:
 - **The Hephaestus Cycle** ([GVRN.CYCLE.001.md](_governance/10_Governance/GVRN.CYCLE.001.md))
 - **The Avatar Protocol** ([GVRN.AVATAR.001.md](_governance/10_Governance/GVRN.AVATAR.001.md))
 - **The Memory Matrix** ([GVRN.MEMORY.001.md](_governance/10_Governance/GVRN.MEMORY.001.md))
+- **The Memory Palace Protocol** ([06-memory-palace.md](.agent/rules/06-memory-palace.md))
 - **The Finalization Workflow** ([GVRN.FINALIZE.001.md](_governance/10_Governance/GVRN.FINALIZE.001.md))
 - **The Security & The Faraday Cage** ([GVRN.SECURITY.001.md](_governance/10_Governance/GVRN.SECURITY.001.md))
 - **The Master Registry** ([GVRN.Master.Registry.yaml](_governance/01_Registries/GVRN.Master.Registry.yaml))

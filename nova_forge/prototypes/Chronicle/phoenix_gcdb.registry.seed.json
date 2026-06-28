@@ -1,0 +1,473 @@
+{
+  "registry_meta": {
+    "registry_id": "PHOENIX-GCDB-001",
+    "schema_version": "2.0.0",
+    "generated_at": "2026-06-26T00:00:00Z",
+    "canonical_policy_source": "phoenix_schema.normalized.json@v16.0",
+    "deployment_profile": "LOCAL_WORKSTATION",
+    "gcdb_chronicle_enabled": false,
+    "_note": "gcdb_chronicle_enabled is false because the server uses a JSONL journal, not a PostgreSQL registry. This is itself a finding (FND-006) against LAW-035 self-governance."
+  },
+  "objects": {
+    "findings": [
+      {
+        "id": "FND-001",
+        "object_type": "FINDING",
+        "title": "FINALIZE_PROPOSAL does not create reverse edge required by LAW-004",
+        "policy_ref": "LAW-004",
+        "finding_type": "MISSING",
+        "severity": "HIGH",
+        "policy_severity_inherited": "MUST",
+        "description": "LAW-004 requires every artifact to contain at least one verified bidirectional graph pointer. The compiled_block written on proposal ratification includes parent_hash (one direction) but no reverse edge is created in the same transaction. Every FINALIZE_PROPOSAL commit is non-compliant with the third validation criterion: 'Reverse edge exists or is created in the same transaction.'",
+        "affected_component": "phoenix_server.py::ImmutableKnowledgeSubstrate.commit_validated_event (FINALIZE_PROPOSAL branch)",
+        "discovered_at": "2026-06-26T00:00:00Z",
+        "status": "OPEN",
+        "remediation_plan": "When FINALIZE_PROPOSAL commits compiled_block, also write a reverse ref: graph.refs['refs/children/{parent_hash[:8]}'] = event.event_hash. A CTRL-047 code enforcement control should enforce this in the same transaction.",
+        "target_resolution": "2026-07-15T00:00:00Z",
+        "evidence_refs": [
+          "EVD-001"
+        ]
+      },
+      {
+        "id": "FND-002",
+        "object_type": "FINDING",
+        "title": "Storage layer is JSONL/JSON, not PostgreSQL \u2014 LAW-017 foreign key constraint unenforceable",
+        "policy_ref": "LAW-017",
+        "finding_type": "INCORRECT",
+        "severity": "CRITICAL",
+        "policy_severity_inherited": "MUST",
+        "description": "LAW-017 requires artifact references to resolve against PostgreSQL registry records with ON DELETE RESTRICT. The server uses append-only JSONL journal + JSON snapshot files. No relational database exists. All reference resolution happens in-memory against Python dicts with no FK constraints. The dependency 'PostgreSQL Master Registry' declared by LAW-017 is not deployed.",
+        "affected_component": "ImmutableKnowledgeSubstrate (entire storage layer)",
+        "discovered_at": "2026-06-26T00:00:00Z",
+        "status": "OPEN",
+        "remediation_plan": "Either: (a) introduce PostgreSQL as the authoritative backing store for node_registry and proposal_registry, or (b) raise a LAW-017 exception scoped to LOCAL_WORKSTATION deployment profile and document dict-based reference resolution as the approved local mechanism.",
+        "target_resolution": "2026-09-01T00:00:00Z",
+        "evidence_refs": [
+          "EVD-001"
+        ]
+      },
+      {
+        "id": "FND-003",
+        "object_type": "FINDING",
+        "title": "Fork resolution uses last-writer-wins, violating LAW-031 CRDT convergence requirements",
+        "policy_ref": "LAW-031",
+        "finding_type": "INCORRECT",
+        "severity": "HIGH",
+        "policy_severity_inherited": "MUST",
+        "description": "LAW-031 (now MUST) requires distributed merge functions to be commutative, associative, and idempotent. The current implementation uses a timestamp-then-lexicographic-node-ID tie-breaker (LWW). LWW is not commutative (two nodes applying the same fork in different order produce different main branch states) and not idempotent (repeated application changes refs). The OPEN-3 issue from v3.9.0 is a formal LAW-031 violation.",
+        "affected_component": "single_writer_processing_loop (fork resolution block)",
+        "discovered_at": "2026-06-26T00:00:00Z",
+        "status": "OPEN",
+        "remediation_plan": "Implement a true CRDT merge strategy. For a semantic graph, an Add-Wins CRDT or version-vector scheme is appropriate. The fork isolation path should record both branches in the DAG and defer main-pointer advancement to explicit MERGE_PROPOSAL events with consensus. This is a significant design change.",
+        "target_resolution": "2026-10-01T00:00:00Z",
+        "evidence_refs": [
+          "EVD-001"
+        ]
+      },
+      {
+        "id": "FND-004",
+        "object_type": "FINDING",
+        "title": "REGISTER_FORK compiled_block missing artifact_id, schema_version, and policy_refs (LAW-042)",
+        "policy_ref": "LAW-042",
+        "finding_type": "MISSING",
+        "severity": "MEDIUM",
+        "policy_severity_inherited": "SHOULD",
+        "description": "LAW-042 requires local instances to carry artifact_id, schema_version, and policy_refs to remain governable when isolated. Fork-isolated compiled_block dicts contain entry_id, term, assertion, parent_hash, causal_trigger, justification, event_hash, compiled_timestamp \u2014 none of the three required governance metadata fields.",
+        "affected_component": "single_writer_processing_loop (REGISTER_FORK compiled_block construction)",
+        "discovered_at": "2026-06-26T00:00:00Z",
+        "status": "UNDER_REMEDIATION",
+        "remediation_plan": "Add to compiled_block construction: artifact_id = 'CORE.CODEX.PhoenixSchema', schema_version = '16.0', policy_refs = ['LAW-004', 'LAW-031', 'LAW-035']. Three-line fix in the fork path of single_writer_processing_loop.",
+        "target_resolution": "2026-07-01T00:00:00Z",
+        "evidence_refs": [
+          "EVD-001"
+        ]
+      },
+      {
+        "id": "FND-005",
+        "object_type": "FINDING",
+        "title": "Evidence coverage is critically sparse \u2014 4 evidence objects for 42 laws and 229 relationships",
+        "policy_ref": "LAW-035",
+        "finding_type": "PARTIAL",
+        "severity": "HIGH",
+        "policy_severity_inherited": "MUST",
+        "description": "The GCDB currently contains 4 evidence objects supporting 229 relationships. LAW-035 requires permanent record-keeping. The relationship type EVIDENCED_BY exists but most VERIFICATIONS and CONTROLS are assertion-only with no linked artifact, log, policy file, or CI output. This means the compliance posture is largely undocumented trust rather than verifiable fact.",
+        "affected_component": "GCDB registry (evidence layer)",
+        "discovered_at": "2026-06-26T00:00:00Z",
+        "status": "OPEN",
+        "remediation_plan": "Establish a minimum evidence coverage target: every VERIFICATION with last_run_result=PASS must have at least one AVAILABLE EVD- object with a content_hash and collected_at timestamp. CI pipeline should auto-generate EVD objects on test completion.",
+        "target_resolution": "2026-08-01T00:00:00Z",
+        "evidence_refs": []
+      },
+      {
+        "id": "FND-006",
+        "object_type": "FINDING",
+        "title": "GCDB mutations are not themselves governed by LAW-035 (self-governance gap)",
+        "policy_ref": "LAW-035",
+        "finding_type": "MISSING",
+        "severity": "HIGH",
+        "policy_severity_inherited": "MUST",
+        "description": "LAW-035 requires state changes to be appended to AISTF_Transactions before active state derivation. The GCDB registry (phoenix_gcdb.registry.json) is the governance layer for the Phoenix system, but its own mutations (adding findings, updating exceptions, changing policy status) are not appended to the server chronicle. The governance layer is not governed by its own rules. gcdb_chronicle_enabled=false in registry_meta.",
+        "affected_component": "GCDB mutation pathway (file writes to phoenix_gcdb.registry.json)",
+        "discovered_at": "2026-06-26T00:00:00Z",
+        "status": "OPEN",
+        "remediation_plan": "Route GCDB writes through a COMMIT_GCDB_MUTATION event type in the server's tx_queue. commit_validated_event handles the new action_type, appending to AISTF_Transactions and the JSONL journal before the file is written. Set gcdb_chronicle_enabled=true.",
+        "target_resolution": "2026-08-15T00:00:00Z",
+        "evidence_refs": []
+      }
+    ],
+    "exceptions": [
+      {
+        "id": "EXC-001",
+        "object_type": "EXCEPTION",
+        "title": "Ed25519 header signatures accepted in place of mTLS for LOCAL_WORKSTATION profile",
+        "policy_ref": "LAW-013",
+        "scope": "Applies only when deployment_profile=LOCAL_WORKSTATION. All service calls on KUBERNETES profile must use mTLS as specified.",
+        "justification": "The server runs on a single local workstation (RTX 4090 / PRSVM). Deploying a certificate authority and mTLS sidecar proxy for a single-node local deployment adds operational burden without meaningful security benefit. Ed25519 signatures over the full request body in the X-Phoenix-Signature header provide equivalent node identity proof for the local context.",
+        "approved_by": "ARCHITECT",
+        "approved_at": "2026-06-26T00:00:00Z",
+        "expires_at": "2026-12-31T00:00:00Z",
+        "review_cadence": "P180D",
+        "risk_acceptance": {
+          "risk_ref": "RSK-001",
+          "accepted_by": "ARCHITECT",
+          "accepted_at": "2026-06-26T00:00:00Z",
+          "residual_risk_level": "LOW"
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "id": "EXC-002",
+        "object_type": "EXCEPTION",
+        "title": "LAW-032 and LAW-038 not enforced on LOCAL_WORKSTATION deployment profile",
+        "policy_ref": "LAW-032",
+        "scope": "Kubernetes HPA and GitOps Flux Sync controls are NOT_APPLICABLE on LOCAL_WORKSTATION. They become enforceable only when deployment_profile transitions to KUBERNETES.",
+        "justification": "LAW-032 (Kubernetes HPA autoscaling) and LAW-038 (GitOps Flux Sync) presuppose a Kubernetes cluster. The current deployment target is a local workstation. These laws carry SHOULD severity with conditional enforcement explicitly noted in the normalized schema.",
+        "approved_by": "ARCHITECT",
+        "approved_at": "2026-06-26T00:00:00Z",
+        "expires_at": "2027-06-26T00:00:00Z",
+        "review_cadence": "P365D",
+        "risk_acceptance": {
+          "risk_ref": "RSK-002",
+          "accepted_by": "ARCHITECT",
+          "accepted_at": "2026-06-26T00:00:00Z",
+          "residual_risk_level": "LOW"
+        },
+        "status": "ACTIVE"
+      }
+    ],
+    "risks": [
+      {
+        "id": "RSK-001",
+        "object_type": "RISK",
+        "title": "Node identity spoofing without mTLS in local deployment",
+        "severity": "MEDIUM",
+        "policy_refs": [
+          "LAW-013"
+        ],
+        "control_refs": [
+          "CTRL-013"
+        ],
+        "finding_refs": [],
+        "description": "Without mTLS, network-layer identity is not verified. An attacker with local network access could forge the X-Phoenix-Node-Id header. Ed25519 signatures prevent payload tampering but not header injection if the private key is compromised.",
+        "treatment": "MITIGATE",
+        "treatment_status": "IN_PROGRESS",
+        "owner": "Security",
+        "residual_severity": "LOW",
+        "next_review_at": "2026-12-31T00:00:00Z"
+      },
+      {
+        "id": "RSK-002",
+        "object_type": "RISK",
+        "title": "Missing HPA and GitOps controls create scaling and drift risk at production transition",
+        "severity": "LOW",
+        "policy_refs": [
+          "LAW-032",
+          "LAW-038"
+        ],
+        "control_refs": [],
+        "finding_refs": [],
+        "description": "When the system transitions from LOCAL_WORKSTATION to KUBERNETES, LAW-032 and LAW-038 controls must be implemented before deployment. Absent a pre-deployment checklist, these may be overlooked.",
+        "treatment": "MITIGATE",
+        "treatment_status": "NOT_STARTED",
+        "owner": "Infrastructure",
+        "residual_severity": "LOW",
+        "next_review_at": "2027-06-26T00:00:00Z"
+      },
+      {
+        "id": "RSK-003",
+        "object_type": "RISK",
+        "title": "Static AUTHORIZED_PUBLIC_KEYS with no rotation mechanism",
+        "severity": "CRITICAL",
+        "policy_refs": [],
+        "control_refs": [],
+        "finding_refs": [],
+        "description": "AUTHORIZED_PUBLIC_KEYS is a hardcoded dict in the server source. There is no key rotation control, revocation mechanism, or expiry. If a private key is compromised, the attacker retains permanent authenticated access until the source is edited and the server restarted. This is the largest unaddressed security gap in the implementation.",
+        "treatment": "MITIGATE",
+        "treatment_status": "NOT_STARTED",
+        "owner": "Security",
+        "residual_severity": "MEDIUM",
+        "next_review_at": "2026-09-01T00:00:00Z"
+      },
+      {
+        "id": "RSK-004",
+        "object_type": "RISK",
+        "title": "Fork resolution LWW strategy produces non-convergent distributed state",
+        "severity": "HIGH",
+        "policy_refs": [
+          "LAW-031"
+        ],
+        "control_refs": [],
+        "finding_refs": [
+          "FND-003"
+        ],
+        "description": "Two nodes that process the same conflicting proposal in different order will produce different DAG states. The system has no reconciliation mechanism. In a multi-node deployment, graph state divergence is guaranteed under concurrent fork conditions.",
+        "treatment": "MITIGATE",
+        "treatment_status": "NOT_STARTED",
+        "owner": "Distributed Systems",
+        "residual_severity": "MEDIUM",
+        "next_review_at": "2026-10-01T00:00:00Z"
+      }
+    ],
+    "metrics": [
+      {
+        "id": "MET-001",
+        "object_type": "METRIC",
+        "name": "policy_compliance_rate",
+        "value": 0.857,
+        "unit": "ratio_0_1",
+        "source": "GCDB derived: (42 laws - 6 findings with open status) / 42 laws",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "threshold": {
+          "operator": "gte",
+          "value": 0.9,
+          "breach_severity": "HIGH"
+        },
+        "direction": "HIGHER_IS_BETTER",
+        "policy_refs": [
+          "LAW-035"
+        ]
+      },
+      {
+        "id": "MET-002",
+        "object_type": "METRIC",
+        "name": "evidence_coverage_rate",
+        "value": 0.095,
+        "unit": "ratio_0_1",
+        "source": "GCDB derived: EVD objects with AVAILABLE status / total VERIFICATION objects",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "threshold": {
+          "operator": "gte",
+          "value": 0.7,
+          "breach_severity": "HIGH"
+        },
+        "direction": "HIGHER_IS_BETTER",
+        "policy_refs": [
+          "LAW-035",
+          "LAW-002"
+        ]
+      },
+      {
+        "id": "MET-003",
+        "object_type": "METRIC",
+        "name": "open_critical_findings",
+        "value": 1,
+        "unit": "count",
+        "source": "GCDB derived: count of FND objects where severity=CRITICAL and status=OPEN",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "threshold": {
+          "operator": "eq",
+          "value": 0,
+          "breach_severity": "CRITICAL"
+        },
+        "direction": "LOWER_IS_BETTER",
+        "policy_refs": [
+          "LAW-017"
+        ]
+      },
+      {
+        "id": "MET-004",
+        "object_type": "METRIC",
+        "name": "exception_expiry_proximity_days",
+        "value": 188,
+        "unit": "days",
+        "source": "GCDB derived: minimum days until any ACTIVE exception expires",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "threshold": {
+          "operator": "gte",
+          "value": 30,
+          "breach_severity": "MEDIUM"
+        },
+        "direction": "HIGHER_IS_BETTER",
+        "policy_refs": [
+          "LAW-013"
+        ]
+      },
+      {
+        "id": "MET-005",
+        "object_type": "METRIC",
+        "name": "must_laws_compliant_count",
+        "value": 13,
+        "unit": "count",
+        "source": "GCDB derived: MUST-severity laws with derived_status=COMPLIANT",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "threshold": {
+          "operator": "gte",
+          "value": 15,
+          "breach_severity": "CRITICAL"
+        },
+        "direction": "HIGHER_IS_BETTER",
+        "policy_refs": []
+      }
+    ],
+    "evidence": [
+      {
+        "id": "EVD-001",
+        "object_type": "EVIDENCE",
+        "title": "Phoenix Server v3.9.0 source code review",
+        "uri": "phoenix_server_v390.py",
+        "description": "Full source audit performed across versions v3.4.0 through v3.9.0. Findings FND-001 through FND-004 are directly traceable to specific functions and line ranges in this file.",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "collection_status": "AVAILABLE",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "id": "EVD-002",
+        "object_type": "EVIDENCE",
+        "title": "Phoenix Schema Normalized Spec v16.0",
+        "uri": "phoenix_schema.normalized.json",
+        "description": "Canonical 42-law policy contract used as the policy source for all GCDB POLICY objects.",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "collection_status": "AVAILABLE",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "id": "EVD-003",
+        "object_type": "EVIDENCE",
+        "title": "chronicle_integrity.rego \u2014 LAW-035 OPA policy",
+        "uri": "chronicle_integrity.rego",
+        "description": "Primary OPA policy enforcing LAW-035 Immutable Chronicle. Evaluated per-proposal in the /api/v1/governance/propose endpoint.",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "collection_status": "AVAILABLE",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "id": "EVD-004",
+        "object_type": "EVIDENCE",
+        "title": "GCDB Schema v2.0 \u2014 phoenix_gcdb.schema.v2.json",
+        "uri": "phoenix_gcdb.schema.v2.json",
+        "description": "Updated JSON Schema for the GCDB registry incorporating all v2.0 structural fixes.",
+        "collected_at": "2026-06-26T00:00:00Z",
+        "collection_status": "AVAILABLE",
+        "content_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "LAW-004",
+      "to": "FND-001",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-017",
+      "to": "FND-002",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-031",
+      "to": "FND-003",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-042",
+      "to": "FND-004",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-035",
+      "to": "FND-005",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-035",
+      "to": "FND-006",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "FND-003",
+      "to": "RSK-004",
+      "type": "CREATES_RISK"
+    },
+    {
+      "from": "LAW-013",
+      "to": "EXC-001",
+      "type": "HAS_EXCEPTION"
+    },
+    {
+      "from": "LAW-032",
+      "to": "EXC-002",
+      "type": "HAS_EXCEPTION"
+    },
+    {
+      "from": "EXC-001",
+      "to": "RSK-001",
+      "type": "HAS_EXCEPTION"
+    },
+    {
+      "from": "LAW-004",
+      "to": "LAW-031",
+      "type": "DEPENDS_ON",
+      "metadata": {
+        "note": "Bidirectional graph pointers depend on convergent merge semantics to stay valid across distributed state."
+      }
+    },
+    {
+      "from": "LAW-031",
+      "to": "LAW-035",
+      "type": "DEPENDS_ON",
+      "metadata": {
+        "note": "CRDT merge correctness must be chronicled; LAW-035 is a prerequisite for auditable merge history."
+      }
+    },
+    {
+      "from": "FND-001",
+      "to": "EVD-001",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "FND-002",
+      "to": "EVD-001",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "FND-003",
+      "to": "EVD-001",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "FND-004",
+      "to": "EVD-001",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "RSK-003",
+      "to": "LAW-013",
+      "type": "CREATES_RISK"
+    },
+    {
+      "from": "MET-001",
+      "to": "LAW-035",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "MET-002",
+      "to": "LAW-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "MET-003",
+      "to": "LAW-017",
+      "type": "SUPPORTED_BY"
+    }
+  ]
+}

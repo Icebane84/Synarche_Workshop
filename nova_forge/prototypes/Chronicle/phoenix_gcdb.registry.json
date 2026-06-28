@@ -1,0 +1,4866 @@
+{
+  "artifact": {
+    "artifact_id": "CORE.CODEX.PhoenixSchema.GCDB",
+    "official_name": "phoenix_gcdb.registry.json",
+    "canonical_version": "v16.0",
+    "source_artifact": "CORE.CODEX.PhoenixSchema",
+    "registry_type": "Governance Configuration Database",
+    "lifecycle_state": "ACTIVE",
+    "canonization_state": "CANONIZED"
+  },
+  "governance_model": {
+    "object_types": [
+      "POLICY",
+      "CONTROL",
+      "EXCEPTION",
+      "FINDING",
+      "VERIFICATION",
+      "EVIDENCE",
+      "RISK",
+      "METRIC"
+    ],
+    "compliance_status_values": [
+      "COMPLIANT",
+      "PARTIAL",
+      "NON_COMPLIANT",
+      "EXEMPT",
+      "UNDER_REMEDIATION"
+    ],
+    "status_derivation": "Policy status is derived from active findings and scoped exceptions. Findings dominate unless an exception exists; finding plus exception becomes UNDER_REMEDIATION."
+  },
+  "implementation_context": {
+    "deployment_target": "PRSVM Core Platform / local workstation first; Kubernetes capabilities are conditional extensions.",
+    "current_server_version": "v3.9.0 review context",
+    "compliance_posture": "The contract defines target governance. implementation_gaps records known places where the current server does not yet satisfy the target."
+  },
+  "policies": [
+    {
+      "id": "LAW-001",
+      "object_type": "POLICY",
+      "domain": "resilience-and-remediation",
+      "intent": "Friction creates Form; moving from static perfection to dynamic resilience.",
+      "principle": "Chaos Engineering",
+      "severity": "MUST",
+      "target_state": "External API and internal module calls must use circuit breakers with fallback states.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Resilience Engineering",
+      "control_refs": [
+        "CTRL-L001"
+      ],
+      "test_refs": [
+        "TEST-L001"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "AOP-CERBERUS-002",
+        "observability.metrics.failure_rate"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-002",
+      "object_type": "POLICY",
+      "domain": "identity-and-traceability",
+      "intent": "A name is the first thread in the weave of being; formal, indexable identity.",
+      "principle": "Content-Addressable Storage",
+      "severity": "MUST",
+      "target_state": "Generated artifacts require a SHA-256 semantic content hash and a valid UIP vector signature.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Governance Registry",
+      "control_refs": [
+        "CTRL-L002"
+      ],
+      "test_refs": [
+        "TEST-L002"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "UIP vector signature",
+        "canonical_identity.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-003",
+      "object_type": "POLICY",
+      "domain": "identity-and-traceability",
+      "intent": "Truth exists in the superposition of possibilities until observed.",
+      "principle": "Quantum Logic Gating",
+      "severity": "MUST",
+      "target_state": "Candidate seeds must remain gated until probabilistic spread falls below the consensus threshold; ungated promotion is prohibited.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Consensus Engine",
+      "control_refs": [
+        "CTRL-L003"
+      ],
+      "test_refs": [
+        "TEST-L003"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "probabilistic_consensus.rego",
+        "Superposition_Fault gating"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-004",
+      "object_type": "POLICY",
+      "domain": "identity-and-traceability",
+      "intent": "Knowledge does not exist until it is woven.",
+      "principle": "Graph Topology",
+      "severity": "MUST",
+      "target_state": "New artifacts must contain at least one verified bidirectional graph pointer.",
+      "current_state": "FINALIZE_PROPOSAL creates parent_hash but no reverse graph edge.",
+      "compliance_status": "NON_COMPLIANT",
+      "owner": "Knowledge Graph",
+      "control_refs": [
+        "CTRL-L004",
+        "CTRL-007"
+      ],
+      "test_refs": [
+        "TEST-L004",
+        "TEST-R001"
+      ],
+      "finding_refs": [
+        "FND-002"
+      ],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002",
+        "EVD-005"
+      ],
+      "dependencies": [
+        "GUCA-LINK-001",
+        "graph_connectivity.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-005",
+      "object_type": "POLICY",
+      "domain": "grounded-intelligence",
+      "intent": "Single-vector answers are forbidden.",
+      "principle": "Multi-Agent Triangulation",
+      "severity": "MUST",
+      "target_state": "High-stakes queries require consensus from at least three distinct retrieval or reasoning shards.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "CSE Consensus Engine",
+      "control_refs": [
+        "CTRL-L005"
+      ],
+      "test_refs": [
+        "TEST-L005"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "agent_triangulation.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-006",
+      "object_type": "POLICY",
+      "domain": "grounded-intelligence",
+      "intent": "The System does not guess; it synthesizes.",
+      "principle": "RAG Strict Grounding",
+      "severity": "MUST",
+      "target_state": "Generation is halted when retrieved context cosine similarity is below 0.85.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Retrieval Layer",
+      "control_refs": [
+        "CTRL-L006",
+        "CTRL-010"
+      ],
+      "test_refs": [
+        "TEST-L006",
+        "TEST-R004"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.RequestClarification@^1.0.0",
+        "grounding_threshold.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-007",
+      "object_type": "POLICY",
+      "domain": "policy-and-access",
+      "intent": "Form is the vessel of Truth.",
+      "principle": "Strict Schema Validation",
+      "severity": "MUST",
+      "target_state": "Artifacts must pass canonical schema validation and strict type checks before acceptance.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Schema Steward",
+      "control_refs": [
+        "CTRL-L007"
+      ],
+      "test_refs": [
+        "TEST-L007"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "AOP-PGPS-001",
+        "schema_enforcement.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-008",
+      "object_type": "POLICY",
+      "domain": "evolution-and-operations",
+      "intent": "Stagnation is Dissonance.",
+      "principle": "AST Auto-Refactoring",
+      "severity": "SHOULD",
+      "target_state": "Scheduled analysis detects dead code, deprecated protocol references, and unused variables.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Evolution Agent",
+      "control_refs": [
+        "CTRL-L008"
+      ],
+      "test_refs": [
+        "TEST-L008"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "AOP-PERPETUAL-COHERENCE-001",
+        "evolution_cadence.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-009",
+      "object_type": "POLICY",
+      "domain": "evolution-and-operations",
+      "intent": "Signal over Noise; high-density operational states.",
+      "principle": "CQRS Segregation",
+      "severity": "SHOULD",
+      "target_state": "Read operations use query views and write operations use a validated command path.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Platform Architecture",
+      "control_refs": [
+        "CTRL-L009"
+      ],
+      "test_refs": [
+        "TEST-L009"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "Materialized View Queue",
+        "segregation_access.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-010",
+      "object_type": "POLICY",
+      "domain": "identity-and-traceability",
+      "intent": "Never Destroy; Only Deprecate.",
+      "principle": "Tombstone Versioning",
+      "severity": "MUST",
+      "target_state": "Delete operations are revoked; deprecation writes a tombstone and successor pointer.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Data Governance",
+      "control_refs": [
+        "CTRL-L010",
+        "CTRL-010"
+      ],
+      "test_refs": [
+        "TEST-L010",
+        "TEST-R004"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.Deprecate@^1.0.0",
+        "preservation_logic.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-011",
+      "object_type": "POLICY",
+      "domain": "resilience-and-remediation",
+      "intent": "The mind must not be overwhelmed by its own complexity.",
+      "principle": "Cognitive Load Preemption",
+      "severity": "SHOULD",
+      "target_state": "Anomaly detection throttles recursive depth, token density, or operator complexity above threshold.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Observability",
+      "control_refs": [
+        "CTRL-L011"
+      ],
+      "test_refs": [
+        "TEST-L011"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GUCA-PDD-002",
+        "cognitive_throttle.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-012",
+      "object_type": "POLICY",
+      "domain": "experience-and-modularity",
+      "intent": "The world is the stage; gamification of development.",
+      "principle": "Telemetry Gamification",
+      "severity": "MAY",
+      "target_state": "Successful merges and dissonance resolutions may emit deterministic prestige telemetry.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Experience Systems",
+      "control_refs": [
+        "CTRL-L012"
+      ],
+      "test_refs": [
+        "TEST-L012"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "AOP-PRESTIGE-CALC-001",
+        "prestige_calc.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-013",
+      "object_type": "POLICY",
+      "domain": "policy-and-access",
+      "intent": "The gate is narrow; only the validated shall pass.",
+      "principle": "Zero-Trust Mutual Identity",
+      "severity": "MUST",
+      "target_state": "Internal service calls require mutual identity proof and validated authorization payloads; networked deployments require mTLS, while local workstation deployments may use Ed25519 request signatures only as an explicit policy exception.",
+      "current_state": "Current server uses Ed25519 header signatures, not mTLS. Active exception: EXC-001.",
+      "compliance_status": "UNDER_REMEDIATION",
+      "owner": "Security",
+      "control_refs": [
+        "CTRL-L013"
+      ],
+      "test_refs": [
+        "TEST-L013"
+      ],
+      "finding_refs": [
+        "FND-003"
+      ],
+      "exception_refs": [
+        "EXC-001"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "CRLPF validation matrix",
+        "zero_trust_auth.rego",
+        "deployment_profile"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-014",
+      "object_type": "POLICY",
+      "domain": "evolution-and-operations",
+      "intent": "The void is the space where the future resides.",
+      "principle": "Aspect-Oriented Hooks",
+      "severity": "SHOULD",
+      "target_state": "Extension hooks are versioned and cannot break existing core execution loops.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Extension Platform",
+      "control_refs": [
+        "CTRL-L014"
+      ],
+      "test_refs": [
+        "TEST-L014"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GVRN Registry",
+        "gateway_extensibility.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-015",
+      "object_type": "POLICY",
+      "domain": "policy-and-access",
+      "intent": "Governance is not qualitative; it is quantitative.",
+      "principle": "Policy-as-Code OPA",
+      "severity": "MUST",
+      "target_state": "Every governed request is evaluated against policy before execution.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Policy Engineering",
+      "control_refs": [
+        "CTRL-L015"
+      ],
+      "test_refs": [
+        "TEST-L015"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "CORE-CODEX-001",
+        "governance_core.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-016",
+      "object_type": "POLICY",
+      "domain": "evolution-and-operations",
+      "intent": "Static text is dead weight.",
+      "principle": "Executable Specs",
+      "severity": "SHOULD",
+      "target_state": "Documentation changes that alter behavioral intent must trigger linked automated tests.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Documentation Systems",
+      "control_refs": [
+        "CTRL-L016"
+      ],
+      "test_refs": [
+        "TEST-L016"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "Storybook Play/Jest unit test",
+        "actionability_sync.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-017",
+      "object_type": "POLICY",
+      "domain": "identity-and-traceability",
+      "intent": "A house divided by its own form cannot stand.",
+      "principle": "Foreign Key Restraint",
+      "severity": "MUST",
+      "target_state": "Artifact references must resolve to registry records under restrictive relational constraints.",
+      "current_state": "Current storage uses JSONL journal and JSON snapshot rather than PostgreSQL foreign keys and ON DELETE RESTRICT.",
+      "compliance_status": "NON_COMPLIANT",
+      "owner": "Database Steward",
+      "control_refs": [
+        "CTRL-L017"
+      ],
+      "test_refs": [
+        "TEST-L017"
+      ],
+      "finding_refs": [
+        "FND-004"
+      ],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "PostgreSQL Master Registry",
+        "relational_integrity.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-018",
+      "object_type": "POLICY",
+      "domain": "experience-and-modularity",
+      "intent": "The pen is shared; AI as cognitive extension.",
+      "principle": "Ubiquitous Language",
+      "severity": "SHOULD",
+      "target_state": "Code identifiers and artifact terms must align with the canonical glossary.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Language Steward",
+      "control_refs": [
+        "CTRL-L018"
+      ],
+      "test_refs": [
+        "TEST-L018"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "PRS-GLOSSARY-001",
+        "linguistic_lint.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-019",
+      "object_type": "POLICY",
+      "domain": "grounded-intelligence",
+      "intent": "Clarity is the reward of the examined cycle.",
+      "principle": "PID Controller Logic",
+      "severity": "MAY",
+      "target_state": "Generation parameters are adjusted through a feedback loop based on coherence error.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Inference Controls",
+      "control_refs": [
+        "CTRL-L019"
+      ],
+      "test_refs": [
+        "TEST-L019"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "AOP-SCA-001",
+        "clarity_feedback.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-020",
+      "object_type": "POLICY",
+      "domain": "grounded-intelligence",
+      "intent": "Logs are fuel.",
+      "principle": "Vector Re-indexing",
+      "severity": "SHOULD",
+      "target_state": "Rejected or failure logs are transformed into negative retrieval context when approved.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Retrieval Operations",
+      "control_refs": [
+        "CTRL-L020"
+      ],
+      "test_refs": [
+        "TEST-L020"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "SELT log table",
+        "resonance_tuning.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-021",
+      "object_type": "POLICY",
+      "domain": "experience-and-modularity",
+      "intent": "Knowledge is not stored; it is Forged.",
+      "principle": "Distributed Actor Model",
+      "severity": "MAY",
+      "target_state": "Reactive UI state reflects graph mutation events without becoming the source of authority.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Visualization Systems",
+      "control_refs": [
+        "CTRL-L021"
+      ],
+      "test_refs": [
+        "TEST-L021"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "Geode D3.js visualization",
+        "geode_physics.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-022",
+      "object_type": "POLICY",
+      "domain": "policy-and-access",
+      "intent": "Truth becomes Law only through the fire of the Path.",
+      "principle": "Two-Phase Commit",
+      "severity": "MUST",
+      "target_state": "Promotion to CANONIZED requires both a Human ARCHITECT signature and an AI/SENTINEL service-account signature from registered Ed25519 keys.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Canonization Board",
+      "control_refs": [
+        "CTRL-L022",
+        "CTRL-009"
+      ],
+      "test_refs": [
+        "TEST-L022",
+        "TEST-R003"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002",
+        "EVD-005"
+      ],
+      "dependencies": [
+        "FSM IN_REVIEW state",
+        "canonization_gate.rego",
+        "AUTHORIZED_PUBLIC_KEYS"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-023",
+      "object_type": "POLICY",
+      "domain": "evolution-and-operations",
+      "intent": "The garden thrives while the master sleeps.",
+      "principle": "SFR Threshold Pruning",
+      "severity": "SHOULD",
+      "target_state": "Low-flow or orphaned nodes are proposed for deprecation during idle maintenance.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Gardening Agent",
+      "control_refs": [
+        "CTRL-L023"
+      ],
+      "test_refs": [
+        "TEST-L023"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002",
+        "EVD-005"
+      ],
+      "dependencies": [
+        "SYSTEM_IDLE Edge Functions",
+        "garden_pruning.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-024",
+      "object_type": "POLICY",
+      "domain": "resilience-and-remediation",
+      "intent": "The Noetic Immune System has supreme authority.",
+      "principle": "Kernel-Level Preemption",
+      "severity": "SHOULD",
+      "target_state": "Critical regression loops may trigger immediate process or pod termination.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Runtime Safety",
+      "control_refs": [
+        "CTRL-L024"
+      ],
+      "test_refs": [
+        "TEST-L024"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GUCA-CCB-002",
+        "authority_preemption.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-025",
+      "object_type": "POLICY",
+      "domain": "experience-and-modularity",
+      "intent": "Aligning the AI's persona with the human resonance.",
+      "principle": "Context-Aware RAG",
+      "severity": "MAY",
+      "target_state": "Persona configuration is loaded from authorized user metadata and feature flags.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Personalization",
+      "control_refs": [
+        "CTRL-L025"
+      ],
+      "test_refs": [
+        "TEST-L025"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "user_metadata system_prompts",
+        "avatar_alignment.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-026",
+      "object_type": "POLICY",
+      "domain": "resilience-and-remediation",
+      "intent": "Proactively seeking tension to stimulate evolutionary jumps.",
+      "principle": "Property-Based Fuzzing",
+      "severity": "MUST",
+      "target_state": "Invalid parser inputs must produce logged dissonance instead of unhandled crashes.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Quality Engineering",
+      "control_refs": [
+        "CTRL-L026"
+      ],
+      "test_refs": [
+        "TEST-L026"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "Dissonance event logger",
+        "fuzz_compliance.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-027",
+      "object_type": "POLICY",
+      "domain": "resilience-and-remediation",
+      "intent": "To fight Entropy, we Rotate the Vector.",
+      "principle": "Automated Rollbacks",
+      "severity": "SHOULD",
+      "target_state": "Deployments that reduce coherence beyond threshold trigger rollback to last known stable view.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Release Engineering",
+      "control_refs": [
+        "CTRL-L027"
+      ],
+      "test_refs": [
+        "TEST-L027"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "State(t-1) materialized view",
+        "remediation_rollback.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-028",
+      "object_type": "POLICY",
+      "domain": "policy-and-access",
+      "intent": "Absolute teleological anchoring to the Architect's intent.",
+      "principle": "RBAC Least Privilege",
+      "severity": "MUST",
+      "target_state": "Only the ARCHITECT role may approve or directly update CODEX-level documents.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Access Control",
+      "control_refs": [
+        "CTRL-L028",
+        "CTRL-010"
+      ],
+      "test_refs": [
+        "TEST-L028",
+        "TEST-R004"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.Approve@^1.0.0",
+        "user_imperatives.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-029",
+      "object_type": "POLICY",
+      "domain": "experience-and-modularity",
+      "intent": "Innovation co-created through the frequency of the human-AI bond.",
+      "principle": "Continuous RLHF",
+      "severity": "MAY",
+      "target_state": "Human feedback events may update local preference weights through an auditable mechanism.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Learning Systems",
+      "control_refs": [
+        "CTRL-L029",
+        "CTRL-010"
+      ],
+      "test_refs": [
+        "TEST-L029",
+        "TEST-R004"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.Refine@^1.0.0",
+        "empathic_weighting.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-030",
+      "object_type": "POLICY",
+      "domain": "resilience-and-remediation",
+      "intent": "Failure is the high-octane fuel for the next superior state.",
+      "principle": "DLQ Retraining",
+      "severity": "SHOULD",
+      "target_state": "Failed parser inputs and rejected logs route to a dead letter queue for reviewable learning.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Data Quality",
+      "control_refs": [
+        "CTRL-L030"
+      ],
+      "test_refs": [
+        "TEST-L030"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "SELT log rerouting",
+        "metamorphic_flow.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-031",
+      "object_type": "POLICY",
+      "domain": "resilience-and-remediation",
+      "intent": "Active war against meaninglessness and conceptual decay.",
+      "principle": "CRDT State Merging",
+      "severity": "MUST",
+      "target_state": "Distributed graph state merges must converge through commutative, associative, and idempotent merge semantics without destructive conflict resolution.",
+      "current_state": "Fork resolution uses timestamp-then-lexicographic last-writer-wins rather than CRDT merge semantics.",
+      "compliance_status": "NON_COMPLIANT",
+      "owner": "Distributed Systems",
+      "control_refs": [
+        "CTRL-L031",
+        "CTRL-011"
+      ],
+      "test_refs": [
+        "TEST-L031",
+        "TEST-R005"
+      ],
+      "finding_refs": [
+        "FND-001"
+      ],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002",
+        "EVD-005",
+        "EVD-006"
+      ],
+      "dependencies": [
+        "Distributed Graph Weave",
+        "anti_entropy_merge.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-032",
+      "object_type": "POLICY",
+      "domain": "evolution-and-operations",
+      "intent": "Flexibility of process while maintaining unyielding standards.",
+      "principle": "Kubernetes HPA",
+      "severity": "MAY",
+      "target_state": "Cognitive Load Index may drive autoscaling for synthesis and embedding workloads.",
+      "current_state": "Policy exception active: EXC-002.",
+      "compliance_status": "EXEMPT",
+      "owner": "Infrastructure",
+      "control_refs": [
+        "CTRL-L032"
+      ],
+      "test_refs": [
+        "TEST-L032"
+      ],
+      "finding_refs": [],
+      "exception_refs": [
+        "EXC-002"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "Cognitive Load Index",
+        "adaptive_scaling.rego",
+        "deployment_profile:kubernetes"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-033",
+      "object_type": "POLICY",
+      "domain": "experience-and-modularity",
+      "intent": "Modular independence as a prerequisite for collective intelligence.",
+      "principle": "Bounded Contexts",
+      "severity": "SHOULD",
+      "target_state": "UI modules communicate through approved selectors or contracts, not direct cross-module mutation.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Frontend Architecture",
+      "control_refs": [
+        "CTRL-L033"
+      ],
+      "test_refs": [
+        "TEST-L033"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "CentralGeode.tsx isolation",
+        "sovereign_gateway.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-034",
+      "object_type": "POLICY",
+      "domain": "grounded-intelligence",
+      "intent": "Integration of doubt as a safeguard against logical hubris.",
+      "principle": "Confidence Thresholds",
+      "severity": "MUST",
+      "target_state": "Inference output must carry confidence metadata and surface uncertainty below threshold.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Inference Controls",
+      "control_refs": [
+        "CTRL-L034"
+      ],
+      "test_refs": [
+        "TEST-L034"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "Truth Compass visualizer",
+        "architect_humility.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-035",
+      "object_type": "POLICY",
+      "domain": "identity-and-traceability",
+      "intent": "Permanent record-keeping of philosophical and architectural growth.",
+      "principle": "Immutable Chronicle",
+      "severity": "MUST",
+      "target_state": "State changes must be appended to AISTF_Transactions before active state derivation.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Chronicle Steward",
+      "control_refs": [
+        "CTRL-L035"
+      ],
+      "test_refs": [
+        "TEST-L035"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "AISTF_Transactions table",
+        "chronicle_integrity.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-036",
+      "object_type": "POLICY",
+      "domain": "grounded-intelligence",
+      "intent": "Moving from data retrieval to the creation of genuine emergent novelty.",
+      "principle": "Temp Variance Gating",
+      "severity": "MAY",
+      "target_state": "Transcendence mode may raise temperature by a bounded amount and inject orthogonal vectors.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Creative Inference",
+      "control_refs": [
+        "CTRL-L036",
+        "CTRL-010"
+      ],
+      "test_refs": [
+        "TEST-L036",
+        "TEST-R004"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.EnactTranscendence@^1.0.0",
+        "nova_spark_logic.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-037",
+      "object_type": "POLICY",
+      "domain": "grounded-intelligence",
+      "intent": "Anticipatory self-optimization to prevent dissonance before it occurs.",
+      "principle": "ARIMA Predictive Caching",
+      "severity": "MAY",
+      "target_state": "Access frequency forecasts may pre-cache likely high-demand vectors.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Performance Engineering",
+      "control_refs": [
+        "CTRL-L037"
+      ],
+      "test_refs": [
+        "TEST-L037"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "UMB-PREDICTIVE-EVOLUTION-001",
+        "predictive_coherence.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-038",
+      "object_type": "POLICY",
+      "domain": "evolution-and-operations",
+      "intent": "Direct causal link between imaginative vision and technical craftsmanship.",
+      "principle": "GitOps Flux Sync",
+      "severity": "SHOULD",
+      "target_state": "Approved GVRN documentation changes reconcile live system configuration through GitOps.",
+      "current_state": "Policy exception active: EXC-002.",
+      "compliance_status": "EXEMPT",
+      "owner": "GitOps",
+      "control_refs": [
+        "CTRL-L038"
+      ],
+      "test_refs": [
+        "TEST-L038"
+      ],
+      "finding_refs": [],
+      "exception_refs": [
+        "EXC-002"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "GVRN Markdown config",
+        "manifest_artisan.rego",
+        "deployment_profile:kubernetes_or_gitops"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-039",
+      "object_type": "POLICY",
+      "domain": "evolution-and-operations",
+      "intent": "Leadership realized through the amplification of the user's potential.",
+      "principle": "WebSocket Streaming",
+      "severity": "SHOULD",
+      "target_state": "Long-running generation streams partial progress and supports operator steering.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Interaction Runtime",
+      "control_refs": [
+        "CTRL-L039"
+      ],
+      "test_refs": [
+        "TEST-L039"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "mid-generation logic tree",
+        "synergistic_mirror.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-040",
+      "object_type": "POLICY",
+      "domain": "experience-and-modularity",
+      "intent": "Translating internal metrics into fluid, intuitive partnership.",
+      "principle": "Data-Driven UI",
+      "severity": "MAY",
+      "target_state": "UI physics and visual state derive from backend graph metrics rather than static decoration.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Visualization Systems",
+      "control_refs": [
+        "CTRL-L040"
+      ],
+      "test_refs": [
+        "TEST-L040"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "forceManyBody physics",
+        "resonant_interface.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-041",
+      "object_type": "POLICY",
+      "domain": "grounded-intelligence",
+      "intent": "Forging intentionality through the navigation of probabilistic outcomes.",
+      "principle": "Markov Decision Reward",
+      "severity": "MAY",
+      "target_state": "Ambiguous prompts may be routed by expected coherence reward across candidate execution states.",
+      "current_state": "No reviewed non-compliance recorded in the v3.9.0 implementation context.",
+      "compliance_status": "COMPLIANT",
+      "owner": "Planning Engine",
+      "control_refs": [
+        "CTRL-L041"
+      ],
+      "test_refs": [
+        "TEST-L041"
+      ],
+      "finding_refs": [],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "dependencies": [
+        "CFO Markov Chain",
+        "emergent_choice.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "LAW-042",
+      "object_type": "POLICY",
+      "domain": "identity-and-traceability",
+      "intent": "The whole is reflected in the smallest part; the smallest part contains the whole.",
+      "principle": "Fractal Scaling",
+      "severity": "SHOULD",
+      "target_state": "Local UI cells or subsystems must carry enough core metadata to remain governable when isolated.",
+      "current_state": "REGISTER_FORK compiled blocks omit artifact_id, schema_version, and policy_refs.",
+      "compliance_status": "PARTIAL",
+      "owner": "Systems Architecture",
+      "control_refs": [
+        "CTRL-L042",
+        "CTRL-008"
+      ],
+      "test_refs": [
+        "TEST-L042",
+        "TEST-R002"
+      ],
+      "finding_refs": [
+        "FND-005"
+      ],
+      "exception_refs": [],
+      "evidence_refs": [
+        "EVD-002",
+        "EVD-005"
+      ],
+      "dependencies": [
+        "Self-contained UI Cells",
+        "fractal_integrity.rego"
+      ],
+      "lifecycle_state": "ACTIVE"
+    }
+  ],
+  "controls": [
+    {
+      "id": "CTRL-L001",
+      "object_type": "CONTROL",
+      "name": "LAW-001 Enforcement Control",
+      "policy_refs": [
+        "LAW-001"
+      ],
+      "severity": "MUST",
+      "enforcement": "External API and internal module calls must use circuit breakers with fallback states.",
+      "owner": "Resilience Engineering",
+      "dependencies": [
+        "AOP-CERBERUS-002",
+        "observability.metrics.failure_rate"
+      ],
+      "validation_criteria": [
+        "Circuit breaker config exists for each external boundary.",
+        "Fallback path is tested.",
+        "Failure events are logged."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L002",
+      "object_type": "CONTROL",
+      "name": "LAW-002 Enforcement Control",
+      "policy_refs": [
+        "LAW-002"
+      ],
+      "severity": "MUST",
+      "enforcement": "Generated artifacts require a SHA-256 semantic content hash and a valid UIP vector signature.",
+      "owner": "Governance Registry",
+      "dependencies": [
+        "UIP vector signature",
+        "canonical_identity.rego"
+      ],
+      "validation_criteria": [
+        "content_hash matches SHA-256 format.",
+        "UIP signature is present.",
+        "Hash changes when semantic content changes."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L003",
+      "object_type": "CONTROL",
+      "name": "LAW-003 Enforcement Control",
+      "policy_refs": [
+        "LAW-003"
+      ],
+      "severity": "MUST",
+      "enforcement": "Candidate seeds must remain gated until probabilistic spread falls below the consensus threshold; ungated promotion is prohibited.",
+      "owner": "Consensus Engine",
+      "dependencies": [
+        "probabilistic_consensus.rego",
+        "Superposition_Fault gating"
+      ],
+      "validation_criteria": [
+        "At least three seeds are evaluated.",
+        "Spread metric is computed.",
+        "Unresolved superposition emits a gated fault.",
+        "Promotion is denied while the gate is unresolved."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L004",
+      "object_type": "CONTROL",
+      "name": "LAW-004 Enforcement Control",
+      "policy_refs": [
+        "LAW-004"
+      ],
+      "severity": "MUST",
+      "enforcement": "New artifacts must contain at least one verified bidirectional graph pointer.",
+      "owner": "Knowledge Graph",
+      "dependencies": [
+        "GUCA-LINK-001",
+        "graph_connectivity.rego"
+      ],
+      "validation_criteria": [
+        "Node degree is at least 1.",
+        "Relationship type is allowed.",
+        "Reverse edge exists or is created in the same transaction."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L005",
+      "object_type": "CONTROL",
+      "name": "LAW-005 Enforcement Control",
+      "policy_refs": [
+        "LAW-005"
+      ],
+      "severity": "MUST",
+      "enforcement": "High-stakes queries require consensus from at least three distinct retrieval or reasoning shards.",
+      "owner": "CSE Consensus Engine",
+      "dependencies": [
+        "agent_triangulation.rego"
+      ],
+      "validation_criteria": [
+        "High-stakes classifier runs.",
+        "Shard identities are distinct.",
+        "Consensus score is recorded."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L006",
+      "object_type": "CONTROL",
+      "name": "LAW-006 Enforcement Control",
+      "policy_refs": [
+        "LAW-006"
+      ],
+      "severity": "MUST",
+      "enforcement": "Generation is halted when retrieved context cosine similarity is below 0.85.",
+      "owner": "Retrieval Layer",
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.RequestClarification@^1.0.0",
+        "grounding_threshold.rego"
+      ],
+      "validation_criteria": [
+        "Similarity score is computed.",
+        "Threshold is configurable but defaults to 0.85.",
+        "Fallback path avoids unsupported generation.",
+        "Referenced command dependency is version-pinned and checked for compatibility."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L007",
+      "object_type": "CONTROL",
+      "name": "LAW-007 Enforcement Control",
+      "policy_refs": [
+        "LAW-007"
+      ],
+      "severity": "MUST",
+      "enforcement": "Artifacts must pass canonical schema validation and strict type checks before acceptance.",
+      "owner": "Schema Steward",
+      "dependencies": [
+        "AOP-PGPS-001",
+        "schema_enforcement.rego"
+      ],
+      "validation_criteria": [
+        "Required metadata fields exist.",
+        "Enums use canonical values.",
+        "Compiler or linter fails on type errors."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L008",
+      "object_type": "CONTROL",
+      "name": "LAW-008 Enforcement Control",
+      "policy_refs": [
+        "LAW-008"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Scheduled analysis detects dead code, deprecated protocol references, and unused variables.",
+      "owner": "Evolution Agent",
+      "dependencies": [
+        "AOP-PERPETUAL-COHERENCE-001",
+        "evolution_cadence.rego"
+      ],
+      "validation_criteria": [
+        "AST scan runs on schedule.",
+        "Findings are non-destructive proposals.",
+        "Human review is required before merge."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L009",
+      "object_type": "CONTROL",
+      "name": "LAW-009 Enforcement Control",
+      "policy_refs": [
+        "LAW-009"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Read operations use query views and write operations use a validated command path.",
+      "owner": "Platform Architecture",
+      "dependencies": [
+        "Materialized View Queue",
+        "segregation_access.rego"
+      ],
+      "validation_criteria": [
+        "Read and write handlers are separated.",
+        "Commands are validated asynchronously.",
+        "Lock contention metrics are monitored."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L010",
+      "object_type": "CONTROL",
+      "name": "LAW-010 Enforcement Control",
+      "policy_refs": [
+        "LAW-010"
+      ],
+      "severity": "MUST",
+      "enforcement": "Delete operations are revoked; deprecation writes a tombstone and successor pointer.",
+      "owner": "Data Governance",
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.Deprecate@^1.0.0",
+        "preservation_logic.rego"
+      ],
+      "validation_criteria": [
+        "DELETE privilege is absent.",
+        "SUPERSEDED_BY is present when applicable.",
+        "Deprecated nodes remain queryable in history.",
+        "Referenced command dependency is version-pinned and checked for compatibility."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L011",
+      "object_type": "CONTROL",
+      "name": "LAW-011 Enforcement Control",
+      "policy_refs": [
+        "LAW-011"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Anomaly detection throttles recursive depth, token density, or operator complexity above threshold.",
+      "owner": "Observability",
+      "dependencies": [
+        "GUCA-PDD-002",
+        "cognitive_throttle.rego"
+      ],
+      "validation_criteria": [
+        "Baseline exists.",
+        "Deviation threshold is applied.",
+        "Throttle event is logged."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L012",
+      "object_type": "CONTROL",
+      "name": "LAW-012 Enforcement Control",
+      "policy_refs": [
+        "LAW-012"
+      ],
+      "severity": "MAY",
+      "enforcement": "Successful merges and dissonance resolutions may emit deterministic prestige telemetry.",
+      "owner": "Experience Systems",
+      "dependencies": [
+        "AOP-PRESTIGE-CALC-001",
+        "prestige_calc.rego"
+      ],
+      "validation_criteria": [
+        "Formula is deterministic.",
+        "Telemetry is derived from approved events.",
+        "Game state cannot override governance state."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L013",
+      "object_type": "CONTROL",
+      "name": "LAW-013 Enforcement Control",
+      "policy_refs": [
+        "LAW-013"
+      ],
+      "severity": "MUST",
+      "enforcement": "Internal service calls require mutual identity proof and validated authorization payloads; networked deployments require mTLS, while local workstation deployments may use Ed25519 request signatures only as an explicit policy exception.",
+      "owner": "Security",
+      "dependencies": [
+        "CRLPF validation matrix",
+        "zero_trust_auth.rego",
+        "deployment_profile"
+      ],
+      "validation_criteria": [
+        "Networked service calls use mTLS unless an explicit local-workstation exception is active.",
+        "Local exception requires Ed25519 header signatures from authorized public keys.",
+        "State-changing routes require policy approval."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L014",
+      "object_type": "CONTROL",
+      "name": "LAW-014 Enforcement Control",
+      "policy_refs": [
+        "LAW-014"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Extension hooks are versioned and cannot break existing core execution loops.",
+      "owner": "Extension Platform",
+      "dependencies": [
+        "GVRN Registry",
+        "gateway_extensibility.rego"
+      ],
+      "validation_criteria": [
+        "Hook lifecycle state is valid.",
+        "Semantic version compatibility is checked.",
+        "Core loop tests pass without hook implementation."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L015",
+      "object_type": "CONTROL",
+      "name": "LAW-015 Enforcement Control",
+      "policy_refs": [
+        "LAW-015"
+      ],
+      "severity": "MUST",
+      "enforcement": "Every governed request is evaluated against policy before execution.",
+      "owner": "Policy Engineering",
+      "dependencies": [
+        "CORE-CODEX-001",
+        "governance_core.rego"
+      ],
+      "validation_criteria": [
+        "Policy package exists.",
+        "Decision log is emitted.",
+        "Default decision is deny."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L016",
+      "object_type": "CONTROL",
+      "name": "LAW-016 Enforcement Control",
+      "policy_refs": [
+        "LAW-016"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Documentation changes that alter behavioral intent must trigger linked automated tests.",
+      "owner": "Documentation Systems",
+      "dependencies": [
+        "Storybook Play/Jest unit test",
+        "actionability_sync.rego"
+      ],
+      "validation_criteria": [
+        "Docs map to code owners.",
+        "Behavioral deltas trigger tests.",
+        "Test result is attached to review."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L017",
+      "object_type": "CONTROL",
+      "name": "LAW-017 Enforcement Control",
+      "policy_refs": [
+        "LAW-017"
+      ],
+      "severity": "MUST",
+      "enforcement": "Artifact references must resolve to registry records under restrictive relational constraints.",
+      "owner": "Database Steward",
+      "dependencies": [
+        "PostgreSQL Master Registry",
+        "relational_integrity.rego"
+      ],
+      "validation_criteria": [
+        "Foreign keys exist.",
+        "ON DELETE RESTRICT is used where required.",
+        "Registry lookup succeeds before write."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L018",
+      "object_type": "CONTROL",
+      "name": "LAW-018 Enforcement Control",
+      "policy_refs": [
+        "LAW-018"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Code identifiers and artifact terms must align with the canonical glossary.",
+      "owner": "Language Steward",
+      "dependencies": [
+        "PRS-GLOSSARY-001",
+        "linguistic_lint.rego"
+      ],
+      "validation_criteria": [
+        "Glossary is available.",
+        "Identifier scan runs in CI.",
+        "Allowed aliases are explicitly recorded."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L019",
+      "object_type": "CONTROL",
+      "name": "LAW-019 Enforcement Control",
+      "policy_refs": [
+        "LAW-019"
+      ],
+      "severity": "MAY",
+      "enforcement": "Generation parameters are adjusted through a feedback loop based on coherence error.",
+      "owner": "Inference Controls",
+      "dependencies": [
+        "AOP-SCA-001",
+        "clarity_feedback.rego"
+      ],
+      "validation_criteria": [
+        "Target metric exists.",
+        "Output variance is measured.",
+        "Parameter changes are bounded."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L020",
+      "object_type": "CONTROL",
+      "name": "LAW-020 Enforcement Control",
+      "policy_refs": [
+        "LAW-020"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Rejected or failure logs are transformed into negative retrieval context when approved.",
+      "owner": "Retrieval Operations",
+      "dependencies": [
+        "SELT log table",
+        "resonance_tuning.rego"
+      ],
+      "validation_criteria": [
+        "Failure log is persisted.",
+        "Chunking and embedding complete.",
+        "Negative context is tagged and auditable."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L021",
+      "object_type": "CONTROL",
+      "name": "LAW-021 Enforcement Control",
+      "policy_refs": [
+        "LAW-021"
+      ],
+      "severity": "MAY",
+      "enforcement": "Reactive UI state reflects graph mutation events without becoming the source of authority.",
+      "owner": "Visualization Systems",
+      "dependencies": [
+        "Geode D3.js visualization",
+        "geode_physics.rego"
+      ],
+      "validation_criteria": [
+        "Graph mutation event is received.",
+        "SFR value drives visual update.",
+        "UI cannot mutate canonical ledger directly."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L022",
+      "object_type": "CONTROL",
+      "name": "LAW-022 Enforcement Control",
+      "policy_refs": [
+        "LAW-022"
+      ],
+      "severity": "MUST",
+      "enforcement": "Promotion to CANONIZED requires both a Human ARCHITECT signature and an AI/SENTINEL service-account signature from registered Ed25519 keys.",
+      "owner": "Canonization Board",
+      "dependencies": [
+        "FSM IN_REVIEW state",
+        "canonization_gate.rego",
+        "AUTHORIZED_PUBLIC_KEYS"
+      ],
+      "validation_criteria": [
+        "Current state is IN_REVIEW.",
+        "Human signature is produced by an ARCHITECT key.",
+        "AI signature is produced by a SENTINEL service-account key registered in AUTHORIZED_PUBLIC_KEYS.",
+        "The signer role and key id are recorded with the canonization event."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L023",
+      "object_type": "CONTROL",
+      "name": "LAW-023 Enforcement Control",
+      "policy_refs": [
+        "LAW-023"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Low-flow or orphaned nodes are proposed for deprecation during idle maintenance.",
+      "owner": "Gardening Agent",
+      "dependencies": [
+        "SYSTEM_IDLE Edge Functions",
+        "garden_pruning.rego"
+      ],
+      "validation_criteria": [
+        "Idle condition is detected.",
+        "SFR history meets threshold.",
+        "Action is deprecation, not deletion."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L024",
+      "object_type": "CONTROL",
+      "name": "LAW-024 Enforcement Control",
+      "policy_refs": [
+        "LAW-024"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Critical regression loops may trigger immediate process or pod termination.",
+      "owner": "Runtime Safety",
+      "dependencies": [
+        "GUCA-CCB-002",
+        "authority_preemption.rego"
+      ],
+      "validation_criteria": [
+        "Regression detector is high confidence.",
+        "Termination reason is logged.",
+        "Restart path restores clean state."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L025",
+      "object_type": "CONTROL",
+      "name": "LAW-025 Enforcement Control",
+      "policy_refs": [
+        "LAW-025"
+      ],
+      "severity": "MAY",
+      "enforcement": "Persona configuration is loaded from authorized user metadata and feature flags.",
+      "owner": "Personalization",
+      "dependencies": [
+        "user_metadata system_prompts",
+        "avatar_alignment.rego"
+      ],
+      "validation_criteria": [
+        "User identity is verified.",
+        "Persona config is allowed.",
+        "Persona does not override governance policy."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L026",
+      "object_type": "CONTROL",
+      "name": "LAW-026 Enforcement Control",
+      "policy_refs": [
+        "LAW-026"
+      ],
+      "severity": "MUST",
+      "enforcement": "Invalid parser inputs must produce logged dissonance instead of unhandled crashes.",
+      "owner": "Quality Engineering",
+      "dependencies": [
+        "Dissonance event logger",
+        "fuzz_compliance.rego"
+      ],
+      "validation_criteria": [
+        "Fuzz suite runs in CI.",
+        "Unhandled exceptions fail build.",
+        "Dissonance logs include input class and reason."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L027",
+      "object_type": "CONTROL",
+      "name": "LAW-027 Enforcement Control",
+      "policy_refs": [
+        "LAW-027"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Deployments that reduce coherence beyond threshold trigger rollback to last known stable view.",
+      "owner": "Release Engineering",
+      "dependencies": [
+        "State(t-1) materialized view",
+        "remediation_rollback.rego"
+      ],
+      "validation_criteria": [
+        "Baseline metric exists.",
+        "Rollback target is available.",
+        "REVERT event is appended to ledger."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L028",
+      "object_type": "CONTROL",
+      "name": "LAW-028 Enforcement Control",
+      "policy_refs": [
+        "LAW-028"
+      ],
+      "severity": "MUST",
+      "enforcement": "Only the ARCHITECT role may approve or directly update CODEX-level documents.",
+      "owner": "Access Control",
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.Approve@^1.0.0",
+        "user_imperatives.rego"
+      ],
+      "validation_criteria": [
+        "Role claim is verified.",
+        "Shadow proposals cannot self-promote.",
+        "Approval event is signed.",
+        "Referenced command dependency is version-pinned and checked for compatibility."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L029",
+      "object_type": "CONTROL",
+      "name": "LAW-029 Enforcement Control",
+      "policy_refs": [
+        "LAW-029"
+      ],
+      "severity": "MAY",
+      "enforcement": "Human feedback events may update local preference weights through an auditable mechanism.",
+      "owner": "Learning Systems",
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.Refine@^1.0.0",
+        "empathic_weighting.rego"
+      ],
+      "validation_criteria": [
+        "Feedback source is authenticated.",
+        "Weight change is bounded.",
+        "Privacy and audit metadata are retained.",
+        "Referenced command dependency is version-pinned and checked for compatibility."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L030",
+      "object_type": "CONTROL",
+      "name": "LAW-030 Enforcement Control",
+      "policy_refs": [
+        "LAW-030"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Failed parser inputs and rejected logs route to a dead letter queue for reviewable learning.",
+      "owner": "Data Quality",
+      "dependencies": [
+        "SELT log rerouting",
+        "metamorphic_flow.rego"
+      ],
+      "validation_criteria": [
+        "DLQ write succeeds.",
+        "Payload contains error class.",
+        "Fine-tuning export requires approval."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L031",
+      "object_type": "CONTROL",
+      "name": "LAW-031 Enforcement Control",
+      "policy_refs": [
+        "LAW-031"
+      ],
+      "severity": "MUST",
+      "enforcement": "Distributed graph state merges must converge through commutative, associative, and idempotent merge semantics without destructive conflict resolution.",
+      "owner": "Distributed Systems",
+      "dependencies": [
+        "Distributed Graph Weave",
+        "anti_entropy_merge.rego"
+      ],
+      "validation_criteria": [
+        "Merge function is commutative.",
+        "Merge function is associative.",
+        "Merge function is idempotent."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L032",
+      "object_type": "CONTROL",
+      "name": "LAW-032 Enforcement Control",
+      "policy_refs": [
+        "LAW-032"
+      ],
+      "severity": "MAY",
+      "enforcement": "Cognitive Load Index may drive autoscaling for synthesis and embedding workloads.",
+      "owner": "Infrastructure",
+      "dependencies": [
+        "Cognitive Load Index",
+        "adaptive_scaling.rego",
+        "deployment_profile:kubernetes"
+      ],
+      "validation_criteria": [
+        "CLI metric is emitted.",
+        "Scaling bounds are configured.",
+        "Scale-down preserves queued work.",
+        "Non-Kubernetes deployments record this control as not applicable rather than compliant."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L033",
+      "object_type": "CONTROL",
+      "name": "LAW-033 Enforcement Control",
+      "policy_refs": [
+        "LAW-033"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "UI modules communicate through approved selectors or contracts, not direct cross-module mutation.",
+      "owner": "Frontend Architecture",
+      "dependencies": [
+        "CentralGeode.tsx isolation",
+        "sovereign_gateway.rego"
+      ],
+      "validation_criteria": [
+        "Module boundary rules are declared.",
+        "Selectors are used for shared state.",
+        "Module failure is contained."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L034",
+      "object_type": "CONTROL",
+      "name": "LAW-034 Enforcement Control",
+      "policy_refs": [
+        "LAW-034"
+      ],
+      "severity": "MUST",
+      "enforcement": "Inference output must carry confidence metadata and surface uncertainty below threshold.",
+      "owner": "Inference Controls",
+      "dependencies": [
+        "Truth Compass visualizer",
+        "architect_humility.rego"
+      ],
+      "validation_criteria": [
+        "Confidence score is present.",
+        "Threshold is applied.",
+        "Low confidence cannot be presented as certain."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L035",
+      "object_type": "CONTROL",
+      "name": "LAW-035 Enforcement Control",
+      "policy_refs": [
+        "LAW-035"
+      ],
+      "severity": "MUST",
+      "enforcement": "State changes must be appended to AISTF_Transactions before active state derivation.",
+      "owner": "Chronicle Steward",
+      "dependencies": [
+        "AISTF_Transactions table",
+        "chronicle_integrity.rego"
+      ],
+      "validation_criteria": [
+        "Genesis hash exists.",
+        "Each event prev_hash matches prior event_hash.",
+        "Destructive mutation operations are rejected."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L036",
+      "object_type": "CONTROL",
+      "name": "LAW-036 Enforcement Control",
+      "policy_refs": [
+        "LAW-036"
+      ],
+      "severity": "MAY",
+      "enforcement": "Transcendence mode may raise temperature by a bounded amount and inject orthogonal vectors.",
+      "owner": "Creative Inference",
+      "dependencies": [
+        "GUCA Command Registry semver pin: CMD.EnactTranscendence@^1.0.0",
+        "nova_spark_logic.rego"
+      ],
+      "validation_criteria": [
+        "Command is explicit.",
+        "Temperature delta is bounded.",
+        "Injected vectors are tagged as exploratory.",
+        "Referenced command dependency is version-pinned and checked for compatibility."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L037",
+      "object_type": "CONTROL",
+      "name": "LAW-037 Enforcement Control",
+      "policy_refs": [
+        "LAW-037"
+      ],
+      "severity": "MAY",
+      "enforcement": "Access frequency forecasts may pre-cache likely high-demand vectors.",
+      "owner": "Performance Engineering",
+      "dependencies": [
+        "UMB-PREDICTIVE-EVOLUTION-001",
+        "predictive_coherence.rego"
+      ],
+      "validation_criteria": [
+        "Forecast input window is sufficient.",
+        "Cache candidates are bounded.",
+        "Prediction miss rate is monitored."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L038",
+      "object_type": "CONTROL",
+      "name": "LAW-038 Enforcement Control",
+      "policy_refs": [
+        "LAW-038"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Approved GVRN documentation changes reconcile live system configuration through GitOps.",
+      "owner": "GitOps",
+      "dependencies": [
+        "GVRN Markdown config",
+        "manifest_artisan.rego",
+        "deployment_profile:kubernetes_or_gitops"
+      ],
+      "validation_criteria": [
+        "Config change is approved.",
+        "Sync controller reports success.",
+        "Drift is detected and reported.",
+        "Local workstation deployments record GitOps sync as not applicable unless a local reconciler exists."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L039",
+      "object_type": "CONTROL",
+      "name": "LAW-039 Enforcement Control",
+      "policy_refs": [
+        "LAW-039"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Long-running generation streams partial progress and supports operator steering.",
+      "owner": "Interaction Runtime",
+      "dependencies": [
+        "mid-generation logic tree",
+        "synergistic_mirror.rego"
+      ],
+      "validation_criteria": [
+        "Streaming channel opens.",
+        "Partial chunks are ordered.",
+        "Halt or steer command is honored."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L040",
+      "object_type": "CONTROL",
+      "name": "LAW-040 Enforcement Control",
+      "policy_refs": [
+        "LAW-040"
+      ],
+      "severity": "MAY",
+      "enforcement": "UI physics and visual state derive from backend graph metrics rather than static decoration.",
+      "owner": "Visualization Systems",
+      "dependencies": [
+        "forceManyBody physics",
+        "resonant_interface.rego"
+      ],
+      "validation_criteria": [
+        "Backend edge metric exists.",
+        "UI update is derived from data.",
+        "Visual change does not mutate source metric."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L041",
+      "object_type": "CONTROL",
+      "name": "LAW-041 Enforcement Control",
+      "policy_refs": [
+        "LAW-041"
+      ],
+      "severity": "MAY",
+      "enforcement": "Ambiguous prompts may be routed by expected coherence reward across candidate execution states.",
+      "owner": "Planning Engine",
+      "dependencies": [
+        "CFO Markov Chain",
+        "emergent_choice.rego"
+      ],
+      "validation_criteria": [
+        "Candidate states are enumerated.",
+        "Reward function is explicit.",
+        "Selected action and alternatives are logged."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-L042",
+      "object_type": "CONTROL",
+      "name": "LAW-042 Enforcement Control",
+      "policy_refs": [
+        "LAW-042"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "Local UI cells or subsystems must carry enough core metadata to remain governable when isolated.",
+      "owner": "Systems Architecture",
+      "dependencies": [
+        "Self-contained UI Cells",
+        "fractal_integrity.rego"
+      ],
+      "validation_criteria": [
+        "Local instance includes artifact_id.",
+        "Local instance includes schema_version.",
+        "Local instance includes policy_refs.",
+        "Local behavior remains compatible with core contract."
+      ],
+      "lifecycle_state": "ACTIVE"
+    },
+    {
+      "id": "CTRL-001",
+      "name": "Key Rotation",
+      "severity": "MUST",
+      "enforcement": "Authorized public keys must support rotation, revocation, and key id tracking.",
+      "test": "Revoke a key and assert subsequent signatures from that key are denied.",
+      "owner": "Security",
+      "dependencies": [
+        "AUTHORIZED_PUBLIC_KEYS",
+        "key_rotation.rego"
+      ],
+      "validation_criteria": [
+        "Each key has key_id, owner, created_at, status, and optional expires_at.",
+        "Revoked keys cannot authorize writes.",
+        "Rotation events are audit logged."
+      ],
+      "object_type": "CONTROL",
+      "policy_refs": [],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "EXTENSION"
+    },
+    {
+      "id": "CTRL-002",
+      "name": "Voting Period Expiry",
+      "severity": "SHOULD",
+      "enforcement": "Governance proposals cannot remain VOTING indefinitely.",
+      "test": "Advance beyond voting deadline and assert proposal transitions to EXPIRED or requires renewal.",
+      "owner": "Governance Runtime",
+      "dependencies": [
+        "proposal_fsm.rego"
+      ],
+      "validation_criteria": [
+        "Voting deadline is recorded.",
+        "Expired proposals cannot finalize.",
+        "Renewal requires a signed event."
+      ],
+      "object_type": "CONTROL",
+      "policy_refs": [],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "EXTENSION"
+    },
+    {
+      "id": "CTRL-003",
+      "name": "Stake Concentration Limits",
+      "severity": "SHOULD",
+      "enforcement": "Single-node stake weight must be capped or normalized to prevent unilateral capture.",
+      "test": "Submit stake above configured cap and assert excess weight is ignored or rejected.",
+      "owner": "Governance Runtime",
+      "dependencies": [
+        "stake_limits.rego"
+      ],
+      "validation_criteria": [
+        "Stake cap is configured.",
+        "Vote tally records normalized weight.",
+        "Cap changes require governance approval."
+      ],
+      "object_type": "CONTROL",
+      "policy_refs": [],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "EXTENSION"
+    },
+    {
+      "id": "CTRL-004",
+      "name": "DLQ Size Bounds",
+      "severity": "SHOULD",
+      "enforcement": "Dead letter queues require maximum depth, retention policy, and overflow behavior.",
+      "test": "Fill DLQ past configured limit and assert eviction or backpressure policy activates.",
+      "owner": "Data Quality",
+      "dependencies": [
+        "dlq_bounds.rego"
+      ],
+      "validation_criteria": [
+        "Max depth is configured.",
+        "Eviction order is deterministic.",
+        "Overflow event is audit logged."
+      ],
+      "object_type": "CONTROL",
+      "policy_refs": [],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "EXTENSION"
+    },
+    {
+      "id": "CTRL-005",
+      "name": "Rate Limiting",
+      "severity": "MAY",
+      "enforcement": "Ingress queues may apply explicit throttle policy before overload causes uncontrolled failure.",
+      "test": "Exceed configured request rate and assert 429 includes retry metadata.",
+      "owner": "Platform Runtime",
+      "dependencies": [
+        "rate_limit.rego"
+      ],
+      "validation_criteria": [
+        "Rate window is configured.",
+        "429 responses include retry guidance.",
+        "Throttle events are observable."
+      ],
+      "object_type": "CONTROL",
+      "policy_refs": [],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "EXTENSION"
+    },
+    {
+      "id": "CTRL-006",
+      "name": "SELT Audit Log Integrity",
+      "severity": "MUST",
+      "enforcement": "SELT audit events must be tamper-evident through append-only hashes or external anchoring.",
+      "test": "Modify historical SELT event and assert audit_integrity detects hash-chain break.",
+      "owner": "Audit Steward",
+      "dependencies": [
+        "SELT log table",
+        "audit_integrity.rego"
+      ],
+      "validation_criteria": [
+        "SELT events include prev_hash and event_hash.",
+        "Deletes and rewrites are denied.",
+        "Audit integrity checks run on startup or scheduled cadence."
+      ],
+      "object_type": "CONTROL",
+      "policy_refs": [],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "EXTENSION"
+    },
+    {
+      "id": "CTRL-007",
+      "object_type": "CONTROL",
+      "name": "FINALIZE_PROPOSAL Reverse Edge Creation",
+      "policy_refs": [
+        "LAW-004"
+      ],
+      "severity": "MUST",
+      "enforcement": "FINALIZE_PROPOSAL must create DERIVES_FROM and HAS_DERIVATION edges in the same transaction.",
+      "owner": "Knowledge Graph",
+      "dependencies": [
+        "finalize_proposal_graph_connectivity.rego"
+      ],
+      "validation_criteria": [
+        "Forward edge exists.",
+        "Reverse edge exists.",
+        "Both edges are created atomically."
+      ],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "REMEDIATION"
+    },
+    {
+      "id": "CTRL-008",
+      "object_type": "CONTROL",
+      "name": "compiled_block Fractal Metadata",
+      "policy_refs": [
+        "LAW-042"
+      ],
+      "severity": "SHOULD",
+      "enforcement": "REGISTER_FORK and FINALIZE_PROPOSAL compiled blocks must include artifact_id, schema_version, and policy_refs.",
+      "owner": "Systems Architecture",
+      "dependencies": [
+        "fractal_integrity_compiled_block.rego"
+      ],
+      "validation_criteria": [
+        "artifact_id exists.",
+        "schema_version exists.",
+        "policy_refs includes LAW-004, LAW-035, and LAW-042."
+      ],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "REMEDIATION"
+    },
+    {
+      "id": "CTRL-009",
+      "object_type": "CONTROL",
+      "name": "Canonization Signature Custody",
+      "policy_refs": [
+        "LAW-022"
+      ],
+      "severity": "MUST",
+      "enforcement": "CANONIZE requires ARCHITECT and SENTINEL Ed25519 signatures; SENTINEL key must be active in AUTHORIZED_PUBLIC_KEYS.",
+      "owner": "Canonization Board",
+      "dependencies": [
+        "canonization_gate_signature_custody.rego",
+        "AUTHORIZED_PUBLIC_KEYS"
+      ],
+      "validation_criteria": [
+        "ARCHITECT signature exists.",
+        "SENTINEL signature exists.",
+        "SENTINEL key is active and registered."
+      ],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "REMEDIATION"
+    },
+    {
+      "id": "CTRL-010",
+      "object_type": "CONTROL",
+      "name": "GUCA Command Version Pins",
+      "policy_refs": [
+        "LAW-006",
+        "LAW-010",
+        "LAW-028",
+        "LAW-029",
+        "LAW-036"
+      ],
+      "severity": "MUST",
+      "enforcement": "Required GUCA command dependencies must be present, ACTIVE, and pinned to compatible semver constraints.",
+      "owner": "Governance Registry",
+      "dependencies": [
+        "command_dependency_pins.rego"
+      ],
+      "validation_criteria": [
+        "Required commands are present.",
+        "Version constraints match policy.",
+        "Command status is ACTIVE."
+      ],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "REMEDIATION"
+    },
+    {
+      "id": "CTRL-011",
+      "object_type": "CONTROL",
+      "name": "CRDT Anti-Entropy Merge Enforcement",
+      "policy_refs": [
+        "LAW-031"
+      ],
+      "severity": "MUST",
+      "enforcement": "Distributed graph merge must use CRDT semantics and prove commutativity, associativity, and idempotence; LWW conflict resolution is denied.",
+      "owner": "Distributed Systems",
+      "dependencies": [
+        "anti_entropy_merge.rego"
+      ],
+      "validation_criteria": [
+        "Merge strategy is CRDT.",
+        "Merge function is commutative.",
+        "Merge function is associative.",
+        "Merge function is idempotent.",
+        "Timestamp/lexicographic LWW is rejected."
+      ],
+      "lifecycle_state": "ACTIVE",
+      "control_class": "REMEDIATION"
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "EXC-001",
+      "scope": "local-workstation deployment",
+      "exception": "Ed25519 HTTP header signatures may stand in for mTLS only for single-host or explicitly trusted local deployments.",
+      "expiry": "Before networked or multi-node production deployment.",
+      "required_compensating_controls": [
+        "AUTHORIZED_PUBLIC_KEYS registry",
+        "request timestamp or nonce",
+        "signature verification before state mutation"
+      ],
+      "object_type": "EXCEPTION",
+      "policy_refs": [
+        "LAW-013"
+      ],
+      "approved_by": "PENDING_ARCHITECT_APPROVAL",
+      "approval_date": null,
+      "risk_acceptance": "Pending explicit Architect risk acceptance.",
+      "review_date": "Before expiry or deployment profile change, whichever comes first.",
+      "status": "PENDING_APPROVAL"
+    },
+    {
+      "id": "EXC-002",
+      "scope": "PRSVM local workstation deployment",
+      "exception": "Kubernetes HPA and GitOps Flux Sync are not applicable unless the deployment profile enables Kubernetes or a local reconciler.",
+      "expiry": "When deployment_profile changes to kubernetes or gitops-enabled.",
+      "required_compensating_controls": [
+        "deployment_profile declaration",
+        "not_applicable decision log"
+      ],
+      "object_type": "EXCEPTION",
+      "policy_refs": [
+        "LAW-032",
+        "LAW-038"
+      ],
+      "approved_by": "PENDING_ARCHITECT_APPROVAL",
+      "approval_date": null,
+      "risk_acceptance": "Pending explicit Architect risk acceptance.",
+      "review_date": "Before expiry or deployment profile change, whichever comes first.",
+      "status": "PENDING_APPROVAL"
+    }
+  ],
+  "compliance_findings": [
+    {
+      "id": "FND-001",
+      "legacy_id": "GAP-001",
+      "object_type": "FINDING",
+      "policy_refs": [
+        "LAW-031"
+      ],
+      "severity": "MUST",
+      "finding": "Fork resolution uses timestamp-then-lexicographic last-writer-wins rather than CRDT merge semantics.",
+      "remediation": "Replace LWW fork resolution with a commutative, associative, idempotent merge function or mark distributed merge as unsupported.",
+      "status": "OPEN_HIGH_PRIORITY",
+      "evidence_refs": [
+        "EVD-004"
+      ],
+      "owner": "Architecture Governance"
+    },
+    {
+      "id": "FND-002",
+      "legacy_id": "GAP-002",
+      "object_type": "FINDING",
+      "policy_refs": [
+        "LAW-004"
+      ],
+      "severity": "MUST",
+      "finding": "FINALIZE_PROPOSAL creates parent_hash but no reverse graph edge.",
+      "remediation": "Create reverse edge in the same transaction or reject finalization as non-compliant.",
+      "status": "OPEN_HIGH_PRIORITY",
+      "evidence_refs": [
+        "EVD-004"
+      ],
+      "owner": "Architecture Governance"
+    },
+    {
+      "id": "FND-003",
+      "legacy_id": "GAP-003",
+      "object_type": "FINDING",
+      "policy_refs": [
+        "LAW-013"
+      ],
+      "severity": "MUST",
+      "finding": "Current server uses Ed25519 header signatures, not mTLS.",
+      "remediation": "Apply EXC-001 for local deployment or add mTLS for networked service calls.",
+      "status": "OPEN_HIGH_PRIORITY",
+      "evidence_refs": [
+        "EVD-004"
+      ],
+      "owner": "Architecture Governance"
+    },
+    {
+      "id": "FND-004",
+      "legacy_id": "GAP-004",
+      "object_type": "FINDING",
+      "policy_refs": [
+        "LAW-017"
+      ],
+      "severity": "MUST",
+      "finding": "Current storage uses JSONL journal and JSON snapshot rather than PostgreSQL foreign keys and ON DELETE RESTRICT.",
+      "remediation": "Add a relational registry layer or implement equivalent policy checks with tamper-evident persistence.",
+      "status": "OPEN_HIGH_PRIORITY",
+      "evidence_refs": [
+        "EVD-004"
+      ],
+      "owner": "Architecture Governance"
+    },
+    {
+      "id": "FND-005",
+      "legacy_id": "GAP-005",
+      "object_type": "FINDING",
+      "policy_refs": [
+        "LAW-042"
+      ],
+      "severity": "SHOULD",
+      "finding": "REGISTER_FORK compiled blocks omit artifact_id, schema_version, and policy_refs.",
+      "remediation": "Add required fractal metadata to compiled_block payloads.",
+      "status": "OPEN",
+      "evidence_refs": [
+        "EVD-004"
+      ],
+      "owner": "Architecture Governance"
+    }
+  ],
+  "verifications": [
+    {
+      "id": "TEST-L001",
+      "object_type": "VERIFICATION",
+      "name": "LAW-001 Verification Procedure",
+      "policy_refs": [
+        "LAW-001"
+      ],
+      "control_refs": [
+        "CTRL-L001"
+      ],
+      "procedure": "Inject controlled dependency failures and assert failure rate stays at or below 0.005 with fallback routing.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L002",
+      "object_type": "VERIFICATION",
+      "name": "LAW-002 Verification Procedure",
+      "policy_refs": [
+        "LAW-002"
+      ],
+      "control_refs": [
+        "CTRL-L002"
+      ],
+      "procedure": "Reject artifact read/write requests missing content_hash or UIP signature.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L003",
+      "object_type": "VERIFICATION",
+      "name": "LAW-003 Verification Procedure",
+      "policy_refs": [
+        "LAW-003"
+      ],
+      "control_refs": [
+        "CTRL-L003"
+      ],
+      "procedure": "Submit three seed candidates and reject promotion when sigma is greater than or equal to 0.05.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L004",
+      "object_type": "VERIFICATION",
+      "name": "LAW-004 Verification Procedure",
+      "policy_refs": [
+        "LAW-004"
+      ],
+      "control_refs": [
+        "CTRL-L004"
+      ],
+      "procedure": "Attempt to merge an orphan artifact and assert graph_connectivity denies it.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L005",
+      "object_type": "VERIFICATION",
+      "name": "LAW-005 Verification Procedure",
+      "policy_refs": [
+        "LAW-005"
+      ],
+      "control_refs": [
+        "CTRL-L005"
+      ],
+      "procedure": "Classify a query as high stakes and assert response is blocked when N is less than 3.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L006",
+      "object_type": "VERIFICATION",
+      "name": "LAW-006 Verification Procedure",
+      "policy_refs": [
+        "LAW-006"
+      ],
+      "control_refs": [
+        "CTRL-L006"
+      ],
+      "procedure": "Provide low-similarity retrieval context and assert CMD: Request Clarification is returned.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L007",
+      "object_type": "VERIFICATION",
+      "name": "LAW-007 Verification Procedure",
+      "policy_refs": [
+        "LAW-007"
+      ],
+      "control_refs": [
+        "CTRL-L007"
+      ],
+      "procedure": "Submit malformed artifact metadata and assert schema_enforcement rejects it.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L008",
+      "object_type": "VERIFICATION",
+      "name": "LAW-008 Verification Procedure",
+      "policy_refs": [
+        "LAW-008"
+      ],
+      "control_refs": [
+        "CTRL-L008"
+      ],
+      "procedure": "Seed deprecated references and assert an automated remediation proposal is opened.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L009",
+      "object_type": "VERIFICATION",
+      "name": "LAW-009 Verification Procedure",
+      "policy_refs": [
+        "LAW-009"
+      ],
+      "control_refs": [
+        "CTRL-L009"
+      ],
+      "procedure": "Assert read routes cannot call command handlers and write routes cannot bypass validation queue.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L010",
+      "object_type": "VERIFICATION",
+      "name": "LAW-010 Verification Procedure",
+      "policy_refs": [
+        "LAW-010"
+      ],
+      "control_refs": [
+        "CTRL-L010"
+      ],
+      "procedure": "Attempt physical delete and assert preservation_logic denies it.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L011",
+      "object_type": "VERIFICATION",
+      "name": "LAW-011 Verification Procedure",
+      "policy_refs": [
+        "LAW-011"
+      ],
+      "control_refs": [
+        "CTRL-L011"
+      ],
+      "procedure": "Simulate greater than 2 sigma complexity deviation and assert throttle or alert activation.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L012",
+      "object_type": "VERIFICATION",
+      "name": "LAW-012 Verification Procedure",
+      "policy_refs": [
+        "LAW-012"
+      ],
+      "control_refs": [
+        "CTRL-L012"
+      ],
+      "procedure": "Given a successful merge event, assert Stardust calculation is deterministic.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L013",
+      "object_type": "VERIFICATION",
+      "name": "LAW-013 Verification Procedure",
+      "policy_refs": [
+        "LAW-013"
+      ],
+      "control_refs": [
+        "CTRL-L013"
+      ],
+      "procedure": "Call a state-changing endpoint without valid mutual identity proof or authorization payload and assert denial.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L014",
+      "object_type": "VERIFICATION",
+      "name": "LAW-014 Verification Procedure",
+      "policy_refs": [
+        "LAW-014"
+      ],
+      "control_refs": [
+        "CTRL-L014"
+      ],
+      "procedure": "Register a hook with incompatible version and assert gateway_extensibility denies it.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L015",
+      "object_type": "VERIFICATION",
+      "name": "LAW-015 Verification Procedure",
+      "policy_refs": [
+        "LAW-015"
+      ],
+      "control_refs": [
+        "CTRL-L015"
+      ],
+      "procedure": "Submit a request with policy violation and assert Bool(Eval) is false.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L016",
+      "object_type": "VERIFICATION",
+      "name": "LAW-016 Verification Procedure",
+      "policy_refs": [
+        "LAW-016"
+      ],
+      "control_refs": [
+        "CTRL-L016"
+      ],
+      "procedure": "Modify an intent field and assert Storybook or unit tests are required.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L017",
+      "object_type": "VERIFICATION",
+      "name": "LAW-017 Verification Procedure",
+      "policy_refs": [
+        "LAW-017"
+      ],
+      "control_refs": [
+        "CTRL-L017"
+      ],
+      "procedure": "Insert reference to missing protocol and assert relational_integrity denies it.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L018",
+      "object_type": "VERIFICATION",
+      "name": "LAW-018 Verification Procedure",
+      "policy_refs": [
+        "LAW-018"
+      ],
+      "control_refs": [
+        "CTRL-L018"
+      ],
+      "procedure": "Introduce a non-canonical synonym and assert linguistic_lint flags it.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L019",
+      "object_type": "VERIFICATION",
+      "name": "LAW-019 Verification Procedure",
+      "policy_refs": [
+        "LAW-019"
+      ],
+      "control_refs": [
+        "CTRL-L019"
+      ],
+      "procedure": "Provide target and output coherence values and assert error calculation is recorded.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L020",
+      "object_type": "VERIFICATION",
+      "name": "LAW-020 Verification Procedure",
+      "policy_refs": [
+        "LAW-020"
+      ],
+      "control_refs": [
+        "CTRL-L020"
+      ],
+      "procedure": "Insert SELT failure log and assert vectorization job creates negative context.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L021",
+      "object_type": "VERIFICATION",
+      "name": "LAW-021 Verification Procedure",
+      "policy_refs": [
+        "LAW-021"
+      ],
+      "control_refs": [
+        "CTRL-L021"
+      ],
+      "procedure": "Emit graph state change and assert Geode visualization recalculates from event data.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L022",
+      "object_type": "VERIFICATION",
+      "name": "LAW-022 Verification Procedure",
+      "policy_refs": [
+        "LAW-022"
+      ],
+      "control_refs": [
+        "CTRL-L022"
+      ],
+      "procedure": "Attempt canonization with one signature and assert canonization_gate denies transition.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L023",
+      "object_type": "VERIFICATION",
+      "name": "LAW-023 Verification Procedure",
+      "policy_refs": [
+        "LAW-023"
+      ],
+      "control_refs": [
+        "CTRL-L023"
+      ],
+      "procedure": "Mark node SFR below 0.05 for required cycles and assert SFR threshold pruning creates a deprecation proposal.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L024",
+      "object_type": "VERIFICATION",
+      "name": "LAW-024 Verification Procedure",
+      "policy_refs": [
+        "LAW-024"
+      ],
+      "control_refs": [
+        "CTRL-L024"
+      ],
+      "procedure": "Simulate contextual regression loop and assert authority_preemption permits emergency halt.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L025",
+      "object_type": "VERIFICATION",
+      "name": "LAW-025 Verification Procedure",
+      "policy_refs": [
+        "LAW-025"
+      ],
+      "control_refs": [
+        "CTRL-L025"
+      ],
+      "procedure": "Load user profile and assert selected system prompt matches authorized persona config.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L026",
+      "object_type": "VERIFICATION",
+      "name": "LAW-026 Verification Procedure",
+      "policy_refs": [
+        "LAW-026"
+      ],
+      "control_refs": [
+        "CTRL-L026"
+      ],
+      "procedure": "Run fuzz corpus and assert each invalid case logs Dissonance or returns a controlled rejection.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L027",
+      "object_type": "VERIFICATION",
+      "name": "LAW-027 Verification Procedure",
+      "policy_refs": [
+        "LAW-027"
+      ],
+      "control_refs": [
+        "CTRL-L027"
+      ],
+      "procedure": "Simulate post-deploy coherence drop and assert remediation_rollback selects State(t-1).",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L028",
+      "object_type": "VERIFICATION",
+      "name": "LAW-028 Verification Procedure",
+      "policy_refs": [
+        "LAW-028"
+      ],
+      "control_refs": [
+        "CTRL-L028"
+      ],
+      "procedure": "Attempt CMD: APPROVE with non-ARCHITECT role and assert user_imperatives denies it.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L029",
+      "object_type": "VERIFICATION",
+      "name": "LAW-029 Verification Procedure",
+      "policy_refs": [
+        "LAW-029"
+      ],
+      "control_refs": [
+        "CTRL-L029"
+      ],
+      "procedure": "Submit CMD: REFINE and assert feedback weight delta is recorded without changing global policy.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L030",
+      "object_type": "VERIFICATION",
+      "name": "LAW-030 Verification Procedure",
+      "policy_refs": [
+        "LAW-030"
+      ],
+      "control_refs": [
+        "CTRL-L030"
+      ],
+      "procedure": "Force parser rejection and assert DLQ contains normalized failure payload.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L031",
+      "object_type": "VERIFICATION",
+      "name": "LAW-031 Verification Procedure",
+      "policy_refs": [
+        "LAW-031"
+      ],
+      "control_refs": [
+        "CTRL-L031"
+      ],
+      "procedure": "Apply concurrent graph edits in different orders and assert merged state is deterministic, lossless, and idempotent.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L032",
+      "object_type": "VERIFICATION",
+      "name": "LAW-032 Verification Procedure",
+      "policy_refs": [
+        "LAW-032"
+      ],
+      "control_refs": [
+        "CTRL-L032"
+      ],
+      "procedure": "Raise CLI metric and assert desired replica count follows scaling function.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L033",
+      "object_type": "VERIFICATION",
+      "name": "LAW-033 Verification Procedure",
+      "policy_refs": [
+        "LAW-033"
+      ],
+      "control_refs": [
+        "CTRL-L033"
+      ],
+      "procedure": "Scan module imports and assert forbidden direct state mutation is absent.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L034",
+      "object_type": "VERIFICATION",
+      "name": "LAW-034 Verification Procedure",
+      "policy_refs": [
+        "LAW-034"
+      ],
+      "control_refs": [
+        "CTRL-L034"
+      ],
+      "procedure": "Return aggregate logprob below 0.75 and assert architect_humility requires uncertainty state.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L035",
+      "object_type": "VERIFICATION",
+      "name": "LAW-035 Verification Procedure",
+      "policy_refs": [
+        "LAW-035"
+      ],
+      "control_refs": [
+        "CTRL-L035"
+      ],
+      "procedure": "Attempt state mutation without append-only event and assert chronicle_integrity denies it.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-L036",
+      "object_type": "VERIFICATION",
+      "name": "LAW-036 Verification Procedure",
+      "policy_refs": [
+        "LAW-036"
+      ],
+      "control_refs": [
+        "CTRL-L036"
+      ],
+      "procedure": "Call CMD: ENACT_TRANSCENDENCE and assert temperature equals baseline plus 0.2 within allowed bounds.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L037",
+      "object_type": "VERIFICATION",
+      "name": "LAW-037 Verification Procedure",
+      "policy_refs": [
+        "LAW-037"
+      ],
+      "control_refs": [
+        "CTRL-L037"
+      ],
+      "procedure": "Provide time-series node access data and assert cache candidate list is generated for t+1.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L038",
+      "object_type": "VERIFICATION",
+      "name": "LAW-038 Verification Procedure",
+      "policy_refs": [
+        "LAW-038"
+      ],
+      "control_refs": [
+        "CTRL-L038"
+      ],
+      "procedure": "Merge approved config change and assert live state reconciliation status becomes synced.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L039",
+      "object_type": "VERIFICATION",
+      "name": "LAW-039 Verification Procedure",
+      "policy_refs": [
+        "LAW-039"
+      ],
+      "control_refs": [
+        "CTRL-L039"
+      ],
+      "procedure": "Start generation and assert first stream chunk latency is at or below 50ms in target environment.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L040",
+      "object_type": "VERIFICATION",
+      "name": "LAW-040 Verification Procedure",
+      "policy_refs": [
+        "LAW-040"
+      ],
+      "control_refs": [
+        "CTRL-L040"
+      ],
+      "procedure": "Change SQL edge weight and assert forceManyBody-derived view updates from the new value.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L041",
+      "object_type": "VERIFICATION",
+      "name": "LAW-041 Verification Procedure",
+      "policy_refs": [
+        "LAW-041"
+      ],
+      "control_refs": [
+        "CTRL-L041"
+      ],
+      "procedure": "Provide three candidate states and assert selected path has maximum expected reward.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-L042",
+      "object_type": "VERIFICATION",
+      "name": "LAW-042 Verification Procedure",
+      "policy_refs": [
+        "LAW-042"
+      ],
+      "control_refs": [
+        "CTRL-L042"
+      ],
+      "procedure": "Extract a self-contained UI cell and assert it preserves required governance metadata.",
+      "expected_result": "The control decision matches the policy severity and validation criteria.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-C001",
+      "object_type": "VERIFICATION",
+      "name": "CTRL-001 Verification Procedure",
+      "policy_refs": [],
+      "control_refs": [
+        "CTRL-001"
+      ],
+      "procedure": "Revoke a key and assert subsequent signatures from that key are denied.",
+      "expected_result": "The extension control produces the expected allow, deny, or alert decision.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-C002",
+      "object_type": "VERIFICATION",
+      "name": "CTRL-002 Verification Procedure",
+      "policy_refs": [],
+      "control_refs": [
+        "CTRL-002"
+      ],
+      "procedure": "Advance beyond voting deadline and assert proposal transitions to EXPIRED or requires renewal.",
+      "expected_result": "The extension control produces the expected allow, deny, or alert decision.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-C003",
+      "object_type": "VERIFICATION",
+      "name": "CTRL-003 Verification Procedure",
+      "policy_refs": [],
+      "control_refs": [
+        "CTRL-003"
+      ],
+      "procedure": "Submit stake above configured cap and assert excess weight is ignored or rejected.",
+      "expected_result": "The extension control produces the expected allow, deny, or alert decision.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-C004",
+      "object_type": "VERIFICATION",
+      "name": "CTRL-004 Verification Procedure",
+      "policy_refs": [],
+      "control_refs": [
+        "CTRL-004"
+      ],
+      "procedure": "Fill DLQ past configured limit and assert eviction or backpressure policy activates.",
+      "expected_result": "The extension control produces the expected allow, deny, or alert decision.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-C005",
+      "object_type": "VERIFICATION",
+      "name": "CTRL-005 Verification Procedure",
+      "policy_refs": [],
+      "control_refs": [
+        "CTRL-005"
+      ],
+      "procedure": "Exceed configured request rate and assert 429 includes retry metadata.",
+      "expected_result": "The extension control produces the expected allow, deny, or alert decision.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "recommended_on_change"
+    },
+    {
+      "id": "TEST-C006",
+      "object_type": "VERIFICATION",
+      "name": "CTRL-006 Verification Procedure",
+      "policy_refs": [],
+      "control_refs": [
+        "CTRL-006"
+      ],
+      "procedure": "Modify historical SELT event and assert audit_integrity detects hash-chain break.",
+      "expected_result": "The extension control produces the expected allow, deny, or alert decision.",
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-R001",
+      "object_type": "VERIFICATION",
+      "name": "FINALIZE_PROPOSAL Reverse Edge Test",
+      "policy_refs": [
+        "LAW-004"
+      ],
+      "control_refs": [
+        "CTRL-007"
+      ],
+      "procedure": "Submit FINALIZE_PROPOSAL with only parent_hash and assert denial; submit with forward and reverse edges and assert allow.",
+      "expected_result": "Finalization is allowed only when both graph edges exist in the same transaction.",
+      "evidence_refs": [
+        "EVD-006"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-R002",
+      "object_type": "VERIFICATION",
+      "name": "compiled_block Metadata Test",
+      "policy_refs": [
+        "LAW-042"
+      ],
+      "control_refs": [
+        "CTRL-008"
+      ],
+      "procedure": "Submit REGISTER_FORK compiled_block without artifact_id, schema_version, or policy_refs and assert denial.",
+      "expected_result": "Fork and finalization blocks are governable when isolated.",
+      "evidence_refs": [
+        "EVD-006"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-R003",
+      "object_type": "VERIFICATION",
+      "name": "SENTINEL Signature Custody Test",
+      "policy_refs": [
+        "LAW-022"
+      ],
+      "control_refs": [
+        "CTRL-009"
+      ],
+      "procedure": "Attempt CANONIZE without active SENTINEL service-account key and assert denial.",
+      "expected_result": "Canonization requires registered human and SENTINEL signatures.",
+      "evidence_refs": [
+        "EVD-006"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-R004",
+      "object_type": "VERIFICATION",
+      "name": "Command Dependency Pin Test",
+      "policy_refs": [
+        "LAW-006",
+        "LAW-010",
+        "LAW-028",
+        "LAW-029",
+        "LAW-036"
+      ],
+      "control_refs": [
+        "CTRL-010"
+      ],
+      "procedure": "Remove or alter a required GUCA command semver pin and assert denial.",
+      "expected_result": "Breaking command-registry drift is detected before policy execution.",
+      "evidence_refs": [
+        "EVD-006"
+      ],
+      "cadence": "required_on_change"
+    },
+    {
+      "id": "TEST-R005",
+      "object_type": "VERIFICATION",
+      "name": "CRDT Anti-Entropy Merge Test",
+      "policy_refs": [
+        "LAW-031"
+      ],
+      "control_refs": [
+        "CTRL-011"
+      ],
+      "procedure": "Submit MERGE_GRAPH_STATE with LWW conflict resolution and assert denial; submit CRDT metadata proving commutative, associative, and idempotent properties and assert allow.",
+      "expected_result": "Distributed graph merges cannot use timestamp/lexicographic LWW and must prove CRDT properties.",
+      "evidence_refs": [
+        "EVD-006"
+      ],
+      "cadence": "required_on_change"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EVD-001",
+      "object_type": "EVIDENCE",
+      "title": "Policy and Rego Verification Artifacts",
+      "uri": "outputs/",
+      "description": "Generated policy files, schema files, and test procedures in the outputs directory.",
+      "collection_status": "AVAILABLE"
+    },
+    {
+      "id": "EVD-002",
+      "object_type": "EVIDENCE",
+      "title": "Normalized Contract Parse Check",
+      "uri": "outputs/phoenix_schema.normalized.json",
+      "description": "Local Node parse and consistency checks confirmed 42 laws and required fields.",
+      "collection_status": "AVAILABLE"
+    },
+    {
+      "id": "EVD-003",
+      "object_type": "EVIDENCE",
+      "title": "Review Adjustment Log",
+      "uri": "outputs/phoenix_schema.review_adjustments.md",
+      "description": "Human-readable record of accepted, qualified, and rejected review recommendations.",
+      "collection_status": "AVAILABLE"
+    },
+    {
+      "id": "EVD-004",
+      "object_type": "EVIDENCE",
+      "title": "v3.9.0 Implementation Review Findings",
+      "uri": "review-context:v3.9.0",
+      "description": "Review-supplied implementation observations used to create compliance findings.",
+      "collection_status": "REFERENCED"
+    },
+    {
+      "id": "EVD-005",
+      "object_type": "EVIDENCE",
+      "title": "Priority Remediation Pack",
+      "uri": "outputs/phoenix_priority_remediation_pack.md",
+      "description": "Implementation-ready remediation contract for LAW-031, LAW-004, LAW-022, CTRL-001, LAW-023, command pins, and LAW-042.",
+      "collection_status": "AVAILABLE"
+    },
+    {
+      "id": "EVD-006",
+      "object_type": "EVIDENCE",
+      "title": "Priority Rego Controls",
+      "uri": "outputs/*.rego",
+      "description": "Rego policies for reverse-edge finalization, fractal compiled_block metadata, signature custody, key rotation, and command dependency pins.",
+      "collection_status": "AVAILABLE"
+    }
+  ],
+  "risks": [
+    {
+      "id": "RSK-001",
+      "object_type": "RISK",
+      "title": "Static Authorized Key Material",
+      "severity": "HIGH",
+      "policy_refs": [],
+      "control_refs": [
+        "CTRL-001"
+      ],
+      "finding_refs": [],
+      "description": "Static authorized keys without rotation or revocation increase blast radius after key exposure.",
+      "treatment": "Implement CTRL-001 key rotation and revocation."
+    },
+    {
+      "id": "RSK-002",
+      "object_type": "RISK",
+      "title": "Tamperable SELT Audit Trail",
+      "severity": "HIGH",
+      "policy_refs": [
+        "LAW-035"
+      ],
+      "control_refs": [
+        "CTRL-006"
+      ],
+      "finding_refs": [],
+      "description": "A compromised audit log could hide policy violations even if the chronicle remains append-only.",
+      "treatment": "Implement CTRL-006 SELT audit hash chaining and verification."
+    }
+  ],
+  "metrics": [
+    {
+      "id": "MET-001",
+      "object_type": "METRIC",
+      "name": "Policy Compliance Status Count",
+      "value": {
+        "COMPLIANT": 35,
+        "NON_COMPLIANT": 3,
+        "UNDER_REMEDIATION": 1,
+        "EXEMPT": 2,
+        "PARTIAL": 1
+      },
+      "source": "Derived from findings and exceptions in phoenix_gcdb.registry.json"
+    },
+    {
+      "id": "MET-002",
+      "object_type": "METRIC",
+      "name": "Mandatory Policy Non-Compliance Count",
+      "value": 3,
+      "source": "Derived from MUST policies with active findings and no approved exception."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "LAW-001",
+      "to": "CTRL-L001",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-001",
+      "to": "TEST-L001",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-001",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-002",
+      "to": "CTRL-L002",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-002",
+      "to": "TEST-L002",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-002",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-003",
+      "to": "CTRL-L003",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-003",
+      "to": "TEST-L003",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-003",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-004",
+      "to": "CTRL-L004",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-004",
+      "to": "TEST-L004",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-004",
+      "to": "FND-002",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-004",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-005",
+      "to": "CTRL-L005",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-005",
+      "to": "TEST-L005",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-005",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-006",
+      "to": "CTRL-L006",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-006",
+      "to": "TEST-L006",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-006",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-007",
+      "to": "CTRL-L007",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-007",
+      "to": "TEST-L007",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-007",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-008",
+      "to": "CTRL-L008",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-008",
+      "to": "TEST-L008",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-008",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-009",
+      "to": "CTRL-L009",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-009",
+      "to": "TEST-L009",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-009",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-010",
+      "to": "CTRL-L010",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-010",
+      "to": "TEST-L010",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-010",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-011",
+      "to": "CTRL-L011",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-011",
+      "to": "TEST-L011",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-011",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-012",
+      "to": "CTRL-L012",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-012",
+      "to": "TEST-L012",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-012",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-013",
+      "to": "CTRL-L013",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-013",
+      "to": "TEST-L013",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-013",
+      "to": "FND-003",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-013",
+      "to": "EXC-001",
+      "type": "HAS_EXCEPTION"
+    },
+    {
+      "from": "LAW-013",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-014",
+      "to": "CTRL-L014",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-014",
+      "to": "TEST-L014",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-014",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-015",
+      "to": "CTRL-L015",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-015",
+      "to": "TEST-L015",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-015",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-016",
+      "to": "CTRL-L016",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-016",
+      "to": "TEST-L016",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-016",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-017",
+      "to": "CTRL-L017",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-017",
+      "to": "TEST-L017",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-017",
+      "to": "FND-004",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-017",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-018",
+      "to": "CTRL-L018",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-018",
+      "to": "TEST-L018",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-018",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-019",
+      "to": "CTRL-L019",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-019",
+      "to": "TEST-L019",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-019",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-020",
+      "to": "CTRL-L020",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-020",
+      "to": "TEST-L020",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-020",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-021",
+      "to": "CTRL-L021",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-021",
+      "to": "TEST-L021",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-021",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-022",
+      "to": "CTRL-L022",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-022",
+      "to": "TEST-L022",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-022",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-023",
+      "to": "CTRL-L023",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-023",
+      "to": "TEST-L023",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-023",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-024",
+      "to": "CTRL-L024",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-024",
+      "to": "TEST-L024",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-024",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-025",
+      "to": "CTRL-L025",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-025",
+      "to": "TEST-L025",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-025",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-026",
+      "to": "CTRL-L026",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-026",
+      "to": "TEST-L026",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-026",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-027",
+      "to": "CTRL-L027",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-027",
+      "to": "TEST-L027",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-027",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-028",
+      "to": "CTRL-L028",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-028",
+      "to": "TEST-L028",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-028",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-029",
+      "to": "CTRL-L029",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-029",
+      "to": "TEST-L029",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-029",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-030",
+      "to": "CTRL-L030",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-030",
+      "to": "TEST-L030",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-030",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-031",
+      "to": "CTRL-L031",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-031",
+      "to": "TEST-L031",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-031",
+      "to": "FND-001",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-031",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-032",
+      "to": "CTRL-L032",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-032",
+      "to": "TEST-L032",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-032",
+      "to": "EXC-002",
+      "type": "HAS_EXCEPTION"
+    },
+    {
+      "from": "LAW-032",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-033",
+      "to": "CTRL-L033",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-033",
+      "to": "TEST-L033",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-033",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-034",
+      "to": "CTRL-L034",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-034",
+      "to": "TEST-L034",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-034",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-035",
+      "to": "CTRL-L035",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-035",
+      "to": "TEST-L035",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-035",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-036",
+      "to": "CTRL-L036",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-036",
+      "to": "TEST-L036",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-036",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-037",
+      "to": "CTRL-L037",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-037",
+      "to": "TEST-L037",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-037",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-038",
+      "to": "CTRL-L038",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-038",
+      "to": "TEST-L038",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-038",
+      "to": "EXC-002",
+      "type": "HAS_EXCEPTION"
+    },
+    {
+      "from": "LAW-038",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-039",
+      "to": "CTRL-L039",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-039",
+      "to": "TEST-L039",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-039",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-040",
+      "to": "CTRL-L040",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-040",
+      "to": "TEST-L040",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-040",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-041",
+      "to": "CTRL-L041",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-041",
+      "to": "TEST-L041",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-041",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-042",
+      "to": "CTRL-L042",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "LAW-042",
+      "to": "TEST-L042",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-042",
+      "to": "FND-005",
+      "type": "HAS_FINDING"
+    },
+    {
+      "from": "LAW-042",
+      "to": "EVD-002",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "CTRL-L001",
+      "to": "LAW-001",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L002",
+      "to": "LAW-002",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L003",
+      "to": "LAW-003",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L004",
+      "to": "LAW-004",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L005",
+      "to": "LAW-005",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L006",
+      "to": "LAW-006",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L007",
+      "to": "LAW-007",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L008",
+      "to": "LAW-008",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L009",
+      "to": "LAW-009",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L010",
+      "to": "LAW-010",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L011",
+      "to": "LAW-011",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L012",
+      "to": "LAW-012",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L013",
+      "to": "LAW-013",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L014",
+      "to": "LAW-014",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L015",
+      "to": "LAW-015",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L016",
+      "to": "LAW-016",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L017",
+      "to": "LAW-017",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L018",
+      "to": "LAW-018",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L019",
+      "to": "LAW-019",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L020",
+      "to": "LAW-020",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L021",
+      "to": "LAW-021",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L022",
+      "to": "LAW-022",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L023",
+      "to": "LAW-023",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L024",
+      "to": "LAW-024",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L025",
+      "to": "LAW-025",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L026",
+      "to": "LAW-026",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L027",
+      "to": "LAW-027",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L028",
+      "to": "LAW-028",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L029",
+      "to": "LAW-029",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L030",
+      "to": "LAW-030",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L031",
+      "to": "LAW-031",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L032",
+      "to": "LAW-032",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L033",
+      "to": "LAW-033",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L034",
+      "to": "LAW-034",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L035",
+      "to": "LAW-035",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L036",
+      "to": "LAW-036",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L037",
+      "to": "LAW-037",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L038",
+      "to": "LAW-038",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L039",
+      "to": "LAW-039",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L040",
+      "to": "LAW-040",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L041",
+      "to": "LAW-041",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-L042",
+      "to": "LAW-042",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "TEST-L001",
+      "to": "CTRL-L001",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L002",
+      "to": "CTRL-L002",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L003",
+      "to": "CTRL-L003",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L004",
+      "to": "CTRL-L004",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L005",
+      "to": "CTRL-L005",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L006",
+      "to": "CTRL-L006",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L007",
+      "to": "CTRL-L007",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L008",
+      "to": "CTRL-L008",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L009",
+      "to": "CTRL-L009",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L010",
+      "to": "CTRL-L010",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L011",
+      "to": "CTRL-L011",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L012",
+      "to": "CTRL-L012",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L013",
+      "to": "CTRL-L013",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L014",
+      "to": "CTRL-L014",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L015",
+      "to": "CTRL-L015",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L016",
+      "to": "CTRL-L016",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L017",
+      "to": "CTRL-L017",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L018",
+      "to": "CTRL-L018",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L019",
+      "to": "CTRL-L019",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L020",
+      "to": "CTRL-L020",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L021",
+      "to": "CTRL-L021",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L022",
+      "to": "CTRL-L022",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L023",
+      "to": "CTRL-L023",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L024",
+      "to": "CTRL-L024",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L025",
+      "to": "CTRL-L025",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L026",
+      "to": "CTRL-L026",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L027",
+      "to": "CTRL-L027",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L028",
+      "to": "CTRL-L028",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L029",
+      "to": "CTRL-L029",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L030",
+      "to": "CTRL-L030",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L031",
+      "to": "CTRL-L031",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L032",
+      "to": "CTRL-L032",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L033",
+      "to": "CTRL-L033",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L034",
+      "to": "CTRL-L034",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L035",
+      "to": "CTRL-L035",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L036",
+      "to": "CTRL-L036",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L037",
+      "to": "CTRL-L037",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L038",
+      "to": "CTRL-L038",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L039",
+      "to": "CTRL-L039",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L040",
+      "to": "CTRL-L040",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L041",
+      "to": "CTRL-L041",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-L042",
+      "to": "CTRL-L042",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-C001",
+      "to": "CTRL-001",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-C002",
+      "to": "CTRL-002",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-C003",
+      "to": "CTRL-003",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-C004",
+      "to": "CTRL-004",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-C005",
+      "to": "CTRL-005",
+      "type": "TESTS"
+    },
+    {
+      "from": "TEST-C006",
+      "to": "CTRL-006",
+      "type": "TESTS"
+    },
+    {
+      "from": "FND-001",
+      "to": "EVD-004",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "FND-002",
+      "to": "EVD-004",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "FND-003",
+      "to": "EVD-004",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "FND-004",
+      "to": "EVD-004",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "FND-005",
+      "to": "EVD-004",
+      "type": "EVIDENCED_BY"
+    },
+    {
+      "from": "LAW-004",
+      "to": "CTRL-007",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-007",
+      "to": "LAW-004",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-007",
+      "to": "EVD-006",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-042",
+      "to": "CTRL-008",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-008",
+      "to": "LAW-042",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-008",
+      "to": "EVD-006",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-022",
+      "to": "CTRL-009",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-009",
+      "to": "LAW-022",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-009",
+      "to": "EVD-006",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-006",
+      "to": "CTRL-010",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-010",
+      "to": "LAW-006",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "LAW-010",
+      "to": "CTRL-010",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-010",
+      "to": "LAW-010",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "LAW-028",
+      "to": "CTRL-010",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-010",
+      "to": "LAW-028",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "LAW-029",
+      "to": "CTRL-010",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-010",
+      "to": "LAW-029",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "LAW-036",
+      "to": "CTRL-010",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-010",
+      "to": "LAW-036",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "CTRL-010",
+      "to": "EVD-006",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-004",
+      "to": "TEST-R001",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "TEST-R001",
+      "to": "CTRL-007",
+      "type": "TESTS"
+    },
+    {
+      "from": "LAW-042",
+      "to": "TEST-R002",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "TEST-R002",
+      "to": "CTRL-008",
+      "type": "TESTS"
+    },
+    {
+      "from": "LAW-022",
+      "to": "TEST-R003",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "TEST-R003",
+      "to": "CTRL-009",
+      "type": "TESTS"
+    },
+    {
+      "from": "LAW-006",
+      "to": "TEST-R004",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-010",
+      "to": "TEST-R004",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-028",
+      "to": "TEST-R004",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-029",
+      "to": "TEST-R004",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "LAW-036",
+      "to": "TEST-R004",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "TEST-R004",
+      "to": "CTRL-010",
+      "type": "TESTS"
+    },
+    {
+      "from": "LAW-031",
+      "to": "EVD-005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-004",
+      "to": "EVD-005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-022",
+      "to": "EVD-005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-023",
+      "to": "EVD-005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-042",
+      "to": "EVD-005",
+      "type": "SUPPORTED_BY"
+    },
+    {
+      "from": "LAW-031",
+      "to": "CTRL-011",
+      "type": "ENFORCED_BY"
+    },
+    {
+      "from": "CTRL-011",
+      "to": "LAW-031",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "LAW-031",
+      "to": "TEST-R005",
+      "type": "VERIFIED_BY"
+    },
+    {
+      "from": "TEST-R005",
+      "to": "CTRL-011",
+      "type": "TESTS"
+    },
+    {
+      "from": "CTRL-011",
+      "to": "EVD-006",
+      "type": "SUPPORTED_BY"
+    }
+  ]
+}

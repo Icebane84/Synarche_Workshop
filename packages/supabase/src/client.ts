@@ -39,9 +39,17 @@ function resolveEnv(key: string): string | undefined {
 
 const supabaseUrl = resolveEnv("NEXT_PUBLIC_SUPABASE_URL");
 const supabaseKey =
+  resolveEnv("SUPABASE_ANON_KEY") ??
+  resolveEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY") ??
   resolveEnv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY") ??
-  resolveEnv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY") ??
-  resolveEnv("SUPABASE_ANON_KEY");
+  resolveEnv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY");
+
+console.log("[Synarche · Supabase] Initializing client with:", {
+  url: supabaseUrl,
+  hasKey: !!supabaseKey,
+  keySnippet: supabaseKey ? `${supabaseKey.substring(0, 8)}...` : undefined,
+  resolvedFrom: supabaseKey === resolveEnv("SUPABASE_ANON_KEY") ? "SUPABASE_ANON_KEY" : "PUBLISHABLE_KEY"
+});
 
 if (!supabaseUrl) {
   throw new Error(
