@@ -15,7 +15,12 @@
       "@universe/*": ["./axion-core/_universe/*"],
       "@logging": ["./axion-core/src/system/logging/index.ts"],
       "@logging/*": ["./axion-core/src/system/logging/*"],
-      "@utils/*": ["./axion-core/src/utils/*"]
+      "@utils/*": ["./axion-core/src/utils/*"],
+      "@utils": ["./axion-core/src/utils/index.ts"],
+
+      /* --- Shared Substrate Packages --- */
+      "@synarche/nexus-signalbus": ["./packages/nexus-signalbus/src/index.ts"],
+      "@synarche/supabase": ["./packages/supabase/src/index.ts"]
     }
   },
   "exclude": [
@@ -31,6 +36,9 @@
     ".git",
     "**/_governance",
     "**/_governance/**/*",
+    ".vscode",
+    "**/.vscode",
+    "**/.vscode/**/*",
     "**/.archives",
     "**/.archives/**/*",
     "**/.mypy_cache",

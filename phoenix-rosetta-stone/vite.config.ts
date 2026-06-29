@@ -20,6 +20,7 @@ export default defineConfig({
     alias: {
       "@": path.resolve(dirname, "./src"),
       "@supabase-shared": path.resolve(dirname, "../../packages/supabase/src"),
+      "@synarche/nexus-signalbus": path.resolve(dirname, "../packages/nexus-signalbus/src/index.ts"),
     },
   },
   test: {

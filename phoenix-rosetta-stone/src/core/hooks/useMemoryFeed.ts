@@ -25,8 +25,10 @@ interface UseMemoryFeedResult {
   setFilters: (filters: MemoryFilters) => void;
   refetch: () => void;
   insert: (entry: { content: string; domain: string; memory_layer?: number }) => Promise<void>;
+  updateState: (id: number, state: MemoryEntry["state"]) => Promise<void>;
   archive: (id: number) => Promise<void>;
   remove: (id: number) => Promise<void>;
+  checkResonance: (entityId: string, content: string) => Promise<any>;
 }
 
 const PAGE_SIZE = 20;
@@ -83,13 +85,17 @@ export function useMemoryFeed(): UseMemoryFeedResult {
     if (err) setError(err.message);
   };
 
-  const archive = async (id: number) => {
+  const updateState = async (id: number, state: MemoryEntry["state"]) => {
     const { error: err } = await supabase
       .from("memory_entries")
-      .update({ state: "Archived" })
+      .update({ state })
       .eq("id", id);
     if (err) setError(err.message);
-    else setMemories((prev) => prev.map((m) => m.id === id ? { ...m, state: "Archived" } : m));
+    else setMemories((prev) => prev.map((m) => m.id === id ? { ...m, state } : m));
+  };
+
+  const archive = async (id: number) => {
+    await updateState(id, "Archived");
   };
 
   const remove = async (id: number) => {
@@ -98,5 +104,13 @@ export function useMemoryFeed(): UseMemoryFeedResult {
     else setMemories((prev) => prev.filter((m) => m.id !== id));
   };
 
-  return { memories, total, isLoading, error, page, setPage, setFilters, refetch: fetch, insert, archive, remove };
+  const checkResonance = async (entityId: string, content: string) => {
+    const { data, error: err } = await supabase.functions.invoke("sentinel-dissonance-check", {
+      body: { entity_id: entityId, content, generate_quest: true },
+    });
+    if (err) throw err;
+    return data;
+  };
+
+  return { memories, total, isLoading, error, page, setPage, setFilters, refetch: fetch, insert, updateState, archive, remove, checkResonance };
 }

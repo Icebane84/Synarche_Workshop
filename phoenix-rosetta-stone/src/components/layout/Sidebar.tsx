@@ -67,6 +67,24 @@ export const Sidebar: React.FC = () => {
         </svg>
       ),
     },
+    {
+      name: "Tarot Forge",
+      path: "/tarot",
+      icon: (
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.595 15.12a2 2 0 00-1.802.735l-.105.132a2 2 0 00-.332 1.705l.775 3.1a2 2 0 001.94 1.515h12.02a2 2 0 001.94-1.515l.775-3.1a2 2 0 00-.332-1.705l-.105-.132zM12 3v9m-4-6l4-4 4 4" />
+        </svg>
+      ),
+    },
+    {
+      name: "Neo-Genesis",
+      path: "/evolution",
+      icon: (
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.595 15.12a2 2 0 00-1.802.735l-.105.132a2 2 0 00-.332 1.705l.775 3.1a2 2 0 001.94 1.515h12.02a2 2 0 001.94-1.515l.775-3.1a2 2 0 00-.332-1.705l-.105-.132zM12 3v9m-4-6l4-4 4 4" />
+        </svg>
+      ),
+    },
   ];
 
   return (

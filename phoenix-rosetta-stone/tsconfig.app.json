@@ -34,7 +34,8 @@
       "@shield/*": ["src/security/*"],
       "@pulse/*": ["src/telemetry/*"],
       "@loom/*": ["src/styles/*"],
-      "@archive/*": ["src/archive/*"]
+      "@archive/*": ["src/archive/*"],
+      "@synarche/nexus-signalbus": ["../packages/nexus-signalbus/src/index.ts"]
     }
   },
   "include": ["src"]

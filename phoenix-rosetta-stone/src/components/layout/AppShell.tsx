@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Sidebar } from "./Sidebar";
 import { ActivityRail } from "./ActivityRail";
 import { UserSwitcher } from "./UserSwitcher";
 import { useUserContext, USER_THEME } from "@/core/useUserContext";
+import { useToast } from "@/components/ui/Toast";
+import { NexusSignalBusClient, NexusSignalEnvelope } from "@synarche/nexus-signalbus";
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -10,7 +12,34 @@ interface AppShellProps {
 
 export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   const { activeUser } = useUserContext();
+  const { addToast } = useToast();
   const theme = USER_THEME[activeUser];
+
+  useEffect(() => {
+    const bus = new NexusSignalBusClient("phoenix-rosetta-stone");
+    const unsubscribe = bus.subscribe((signal: NexusSignalEnvelope) => {
+      if (signal.sourceApp !== "phoenix-rosetta-stone") {
+        if (signal.action === "ASCEND_ERA") {
+          addToast({
+            title: "🌟 NEXUS SIGNAL RECEIVED",
+            message: `[${signal.sourceApp}] Species ascended to ${signal.payload.nextStage} Era! (+250 RPG XP)`,
+            type: "info",
+          });
+        } else if (signal.action === "COLONIZE_PLANET") {
+          addToast({
+            title: "🚀 NEXUS SIGNAL RECEIVED",
+            message: `[${signal.sourceApp}] Established outpost on ${signal.payload.planetName}! (+100 RPG XP)`,
+            type: "info",
+          });
+        }
+      }
+    });
+
+    return () => {
+      unsubscribe();
+      bus.close();
+    };
+  }, [addToast]);
 
   return (
     <div className="flex w-screen h-screen overflow-hidden bg-nebula-void text-white font-sans">
