@@ -1,14 +1,17 @@
 // cspell:disable
 {
   "folders": [
-    {
-      "name": "📂 WORKSPACE ROOT",
-      "path": ".",
-    },
-    {
-      "path": "../_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/.agent",
-    },
-  ],
+	{
+		"name": "📂 WORKSPACE ROOT",
+		"path": "."
+	},
+	{
+		"path": "../_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/.agent"
+	},
+	{
+		"path": "../_Desktop_Vault"
+	}
+],
   "settings": {
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.indexing": false,
@@ -26,7 +29,7 @@
       "**/scratch",
       "**/incoming",
       "**/dist",
-      "**/out",
+      "**/out"
     ],
 
     "editor.fontSize": 16,
@@ -38,42 +41,28 @@
     "editor.minimap.enabled": false,
     "editor.fontLigatures": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
     },
 
     "eslint.useFlatConfig": true,
-    "eslint.validate": [
-      "javascript",
-      "typescript",
-      "typescriptreact",
-      "markdown",
-    ],
+    "eslint.validate": ["javascript", "typescript", "typescriptreact", "markdown"],
     "eslint.workingDirectories": [
       { "directory": "axion-core", "changeProcessCWD": true },
       { "directory": "phoenix-rosetta-stone", "changeProcessCWD": true },
       { "directory": "design-system", "changeProcessCWD": true },
       { "directory": ".", "changeProcessCWD": false },
       { "directory": "open-notebook", "changeProcessCWD": true },
-      { "directory": "nova_forge", "changeProcessCWD": true },
+      { "directory": "nova_forge", "changeProcessCWD": true }
     ],
     "eslint.run": "onSave",
 
-    "mypy-type-checker.args": [
-      "--config-file",
-      "./axion-core/standards/mypy.ini",
-    ],
+    "mypy-type-checker.args": ["--config-file", "./axion-core/standards/mypy.ini"],
     "mypy-type-checker.importStrategy": "fromEnvironment",
-    "mypy-type-checker.interpreter": [
-      "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
-    ],
-    "mypy-type-checker.path": [
-      "C:\\DevEnvironments\\master_env\\Scripts\\mypy.exe",
-    ],
+    "mypy-type-checker.interpreter": ["C:\\DevEnvironments\\master_env\\Scripts\\python.exe"],
+    "mypy-type-checker.path": ["C:\\DevEnvironments\\master_env\\Scripts\\mypy.exe"],
     "mypy.dmypyExecutable": "C:\\DevEnvironments\\master_env\\Scripts\\dmypy.exe",
 
-    "ruff.interpreter": [
-      "C:\\DevEnvironments\\master_env\\Scripts\\python.exe",
-    ],
+    "ruff.interpreter": ["C:\\DevEnvironments\\master_env\\Scripts\\python.exe"],
     "ruff.path": ["C:\\DevEnvironments\\master_env\\Scripts\\ruff.exe"],
     "ruff.importStrategy": "fromEnvironment",
     "ruff.configuration": "${workspaceFolder:📂 WORKSPACE ROOT}/axion-core/standards/pyproject.toml",
@@ -82,34 +71,34 @@
       "editor.defaultFormatter": "charliermarsh.ruff",
       "editor.codeActionsOnSave": {
         "source.fixAll": "explicit",
-        "source.organizeImports": "explicit",
-      },
+        "source.organizeImports": "explicit"
+      }
     },
     "[javascript]": {
-      "editor.defaultFormatter": "biomejs.biome",
+      "editor.defaultFormatter": "biomejs.biome"
     },
     "[typescript]": {
-      "editor.defaultFormatter": "biomejs.biome",
+      "editor.defaultFormatter": "biomejs.biome"
     },
     "[json]": {
-      "editor.defaultFormatter": "biomejs.biome",
+      "editor.defaultFormatter": "biomejs.biome"
     },
     "[jsonc]": {
-      "editor.defaultFormatter": "trunk.io",
+      "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[markdown]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.tabSize": 2,
-      "editor.insertSpaces": true,
+      "editor.insertSpaces": true
     },
 
     "markdownlint.config": {
       "MD013": false,
-      "MD033": false,
+      "MD033": false
     },
     "markdownlint.customRules": [
       "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/axion-rules.cjs",
-      "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/phoenix-rules.cjs",
+      "./axion-core/standards/eslint-plugin-phoenix/markdownlint-rules/phoenix-rules.cjs"
     ],
     "markdownlint.run": "onSave",
 
@@ -120,8 +109,8 @@
         "name": "Phoenix Dictionary",
         "path": "${workspaceFolder:📂 WORKSPACE ROOT}",
         "addWords": true,
-        "description": "Master dictionary for the Phoenix Protocol",
-      },
+        "description": "Master dictionary for the Phoenix Protocol"
+      }
     },
     "cSpell.words": [
       "AISTF",
@@ -191,7 +180,7 @@
       "**/node_modules": true,
       "**/dist": true,
       "**/out": true,
-      "**/.tmp.*": true,
+      "**/.tmp.*": true
     },
     "files.watcherExclude": {
       "**/__pycache__/**": true,
@@ -212,20 +201,20 @@
       "**/incoming/**": true,
       "**/_governance/**": true,
       "**/.archives/**": true,
-      "**/.tmp.*": true,
+      "**/.tmp.*": true
     },
     "errorLens.fontStyleItalic": true,
     "errorLens.fontWeight": "400",
     "errorLens.gutterIconsEnabled": true,
     "errorLens.messageBackgroundMode": "line",
     "sonarlint.rules": {
-      "javascript:S106": "off",
+      "javascript:S106": "off"
     },
     "sonarlint.analysisExcludesStandalone": "**/stubs/**,**/*.pyi",
     "explorer.excludeGitIgnore": false,
     "files.autoSave": "off",
     "terminal.integrated.suggest.providers": {
-      "lsp": true,
+      "lsp": true
     },
     "debug.console.closeOnEnd": true,
     "geminicodeassist.updateChannel": "Insiders",
@@ -277,17 +266,17 @@
     "powershell.integratedConsole.showOnStartup": false,
     "prettier.experimentalTernaries": true,
     "[toml]": {
-      "editor.defaultFormatter": "tamasfe.even-better-toml",
+      "editor.defaultFormatter": "tamasfe.even-better-toml"
     },
     "python.analysis.completeFunctionParens": true,
     "python.pyrefly.configpath": "./axion-core\\standards\\pyrefly.toml",
     "python.pyrefly.runnableCodeLens": true,
     "trunk.path": "./axion-core/tools/trunk.exe",
     "terminal.integrated.env.windows": {
-      "PATH": "./axion-core/tools;C:\\DevEnvironments\\master_env\\Scripts;${env:PATH}",
+      "PATH": "./axion-core/tools;C:\\DevEnvironments\\master_env\\Scripts;${env:PATH}"
     },
     "code-runner.executorMap": {
-      "python": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe -u",
+      "python": "C:\\DevEnvironments\\master_env\\Scripts\\python.exe -u"
     },
     "code-runner.runInTerminal": true,
     "mypy.debugLogging": true,
@@ -305,19 +294,19 @@
         "previewLimit": 50,
         "driver": "SQLite",
         "database": "${workspaceFolder:📂 WORKSPACE ROOT}/axion-core/data/axion_memory.db",
-        "name": "Axion_Memory",
-      },
+        "name": "Axion_Memory"
+      }
     ],
     "sqltools.useNodeRuntime": true,
     "python.pyrefly.configPath": "./axion-core/standards/pyrefly.toml",
     "python.analysis.packageIndexDepths": [
       {
         "name": "axion-core",
-        "depth": 2,
-      },
+        "depth": 2
+      }
     ],
     "editor.codeActions.triggerOnFocusChange": false,
-    "powershell.cwd": "📂 WORKSPACE ROOT",
+    "powershell.cwd": "📂 WORKSPACE ROOT"
   },
   "extensions": {
     "recommendations": [
@@ -332,8 +321,8 @@
       "dbaeumer.vscode-eslint",
       "esbenp.prettier-vscode",
       "formulahendry.code-runner",
-      "biomejs.biome",
-    ],
+      "biomejs.biome"
+    ]
   },
   "tasks": {
     "version": "2.0.0",
@@ -342,20 +331,20 @@
         "label": "GVRN: Re-Index Master Registry",
         "type": "shell",
         "command": "python axion-core/scripts/gen_registry_entries.py",
-        "problemMatcher": [],
+        "problemMatcher": []
       },
       {
         "label": "EVO: Run AISTF Cycle",
         "type": "shell",
         "command": "python axion-core/forge/evolution_engine.py --root .",
-        "problemMatcher": [],
+        "problemMatcher": []
       },
       {
         "label": "GVRN: Run Canonization Audit",
         "type": "shell",
         "command": "python axion-core/scripts/canonization_audit.py",
-        "problemMatcher": [],
-      },
-    ],
-  },
+        "problemMatcher": []
+      }
+    ]
+  }
 }
