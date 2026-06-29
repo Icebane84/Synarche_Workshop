@@ -1,0 +1,12 @@
+Auditing Library: c:\Users\Chris\Synarche_Workspace\_governance\10_Governance\GVRN.Protocol.Scaffolding.md
+
+=== COMPLIANCE AUDIT SUMMARY ===
+Total Scanned: 1
+PASSED:        0
+WARNING:       0
+FAILED:        1
+================================
+
+--- Top 5 Most Dissonant (FAIL) ---
+[FAIL] . (Score: 0.70)
+  !! Geometry: H1 Singularity violation (Found 2 H1 headers outside UIP).

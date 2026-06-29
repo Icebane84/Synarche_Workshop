@@ -1,0 +1,19 @@
+# -----------------------------------------------------------------------------
+# PHOENIX SYNARCHE PROTOCOL - PYREFLY CONFIGURATION (v13.1 OMEGA)
+# -----------------------------------------------------------------------------
+#
+# Artifact ID:    CFG-PYREFLY-001
+# Official Name:  pyrefly.toml
+# Version:        v13.0 [OMEGA]
+# Domain:         GVRN
+# Status:         [ACTIVE]
+# Relations:      GOVERNED_BY: CORE-CODEX-001
+#
+# -----------------------------------------------------------------------------
+
+[tool.pyrefly]
+# Enable strict type error diagnostics by default
+displayTypeErrors = "force-on"
+
+# Project Roots
+source_directories = ["axion-core", "src"]

@@ -1,0 +1,29 @@
+{
+    "timestamp": "2026-01-25T18:59:00Z",
+    "total_scanned": 18,
+    "dissonance_count": 3,
+    "coherence_index": 83.33333333333334,
+    "mismatches": [
+        {
+            "id": "SELT-AOP-007_OperationalPlaybook_v7.0",
+            "file": "SELT-AOP-007_OperationalPlaybook_v7.0.md",
+            "type": "Version Drift",
+            "expected": "v1.0 (Reforged)",
+            "actual": "v13.1 [OMEGA]"
+        },
+        {
+            "id": "SELT-GUCA-007_UniversalCommandArchitecture_v7.0",
+            "file": "SELT-GUCA-007_UniversalCommandArchitecture_v7.0.md",
+            "type": "Version Drift",
+            "expected": "v1.0 (Reforged)",
+            "actual": "v13.1 [OMEGA]"
+        },
+        {
+            "id": "SELT-UMB-007_UniversalModuleBlueprint_v7.0",
+            "file": "SELT-UMB-007_UniversalModuleBlueprint_v7.0.md",
+            "type": "Version Drift",
+            "expected": "v1.0 (Reforged)",
+            "actual": "v13.1 [OMEGA]"
+        }
+    ]
+}

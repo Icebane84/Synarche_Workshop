@@ -1,0 +1,144 @@
+--- Starting TRIAGE_SCAN: Legacy_Rind ---
+
+----------------------------------------
+SCAN SUMMARY
+----------------------------------------
+Total Artifacts Scanned: 146
+Transmuted (v13.0+): 16
+Legacy Rind Found:    130
+----------------------------------------
+
+DETAILED TRIAGE (Legacy_Rind scope):
+
+Filename                                                     | Ver    | Header | Queued
+-------------------------------------------------------------|--------|--------|------
+CBM-FORGE-001_The_Forge_Engine_v11.0.md                      | 11.0   | [ ]    | 
+GP-REGISTRY-001_GoverningPrinciples_v11.0.md                 | 11.0   | [x]    | 
+IDEN-SENTINEL-001_TheSentinelsVow_v11.0.md                   | 11.0   | [ ]    | 
+STYLE-SENTINEL-001_TheSentinelStyleGuide_v11.0.md            | 11.0   | [ ]    | 
+UMB-ACT-002_AdaptiveActuatorModule_v11.0.md                  | 11.0   | [x]    | 
+UMB-ALTAR-001TheAltarofSynarchy_v11.0.md                     | 11.0   | [x]    | 
+UMB-AM-001_AssociationManager_v11.0.md                       | 11.0   | [x]    | 
+UMB-AM-001_GUCA-AM-001_v11.0.md                              | 11.0   | [x]    | 
+UMB-CF-001_CognitiveForge_v11.0.md                           | 11.0   | [x]    | 
+UMB-CON-001_TheConcordance_v1.0.md                           | 1.0    | [ ]    | 
+UMB-CSE-001_CoherentSynthesisEngine_v11.2.md                 | 11.1   | [ ]    | 
+UMB-CSL-MODULE-001_CollaborativeSynthesisLog_v1.0.md         | 11.0   | [ ]    | 
+UMB-DIDACTIC-001TheDidacticModuleGenerator_v11.0.md          | 11.0   | [x]    | 
+UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md    | 11.1   | [x]    | 
+UMB-DTS-001_DynamicTemplateScaffolding_v11.0.md              | 11.0   | [x]    | 
+UMB-ESF-001_TheEpisemanticFramework_v11.1.md                 | 11.1   | [ ]    | 
+UMB-FLICSS-HEART-001_ContextUrgencyOrchestrator_v1.0.md      | 1.0    | [x]    | 
+UMB-GAMEDEV-001_v11.0.md                                     | 11.0   | [x]    | 
+UMB-GVRN-CODE-001_SharedEnumerations_v1.0.md                 | 11.0   | [ ]    | 
+UMB-HEPHAESTUS-001TheMasterArtificersForge_v11.0.md          | 11.0   | [x]    | 
+UMB-ISE-001_ImplicitSynergyEngineISE_v11.0.md                | 11.0   | [x]    | 
+UMB-LEX-001_PhoenixMasterGlossary_v11.0.md                   | 11.0   | [x]    | 
+UMB-LOOM-001_TheCognitiveLoom_v11.1.md                       | 11.1   | [ ]    | 
+UMB-LOOM-005_ThePhoenixGeode_v11.0.md                        | 11.0   | [x]    | 
+UMB-LOOM-006_TheCrystallineGalaxy_v10_v11.0.md               | 11.0   | [x]    | 
+UMB-MAP-001_MusashiOperations_v11.0.md                       | 11.0   | [ ]    | 
+UMB-META-001_TheCoherentVerseEngine_v11.0.md                 | 11.0   | [x]    | 
+UMB-OSLM-001_PPLGraphOutline_v11.0.bak.md                    | 11.0   | [x]    | 
+UMB-OSLM-001_PPLGraphOutline_v11.0.md                        | 11.1   | [ ]    | 
+UMB-PHOENIX-CORE-002_ThePhoenixCore_v11.2.md                 | 11.1   | [ ]    | 
+UMB-PUPT-001ThePower-UpProgressionTracker_v11.0.md           | 11.0   | [x]    | 
+UMB-RD-001_TheResonanceDashboard_v11.0.md                    | 11.1   | [ ]    | 
+UMB-RPG-001ThePhoenixRPGFramework_v11.0.md                   | 11.0   | [x]    | 
+UMB-RPG-MANUAL-001_ThePhoenixPrestigeGameManual_v11.0.md     | 11.0   | [ ]    | 
+UMB-SEED-001_GenesisSeedsRegistry_v11.1.md                   | 11.1   | [x]    | 
+UMB-SENTINEL-001_TheSentinel_v11.0.md                        | 11.0   | [ ]    | 
+UMB-SIVC-001_SelfIntegrityValidationCore_v60_v11.0.md        | 11.0   | [x]    | 
+UMB-TECH-001_v11.0.md                                        | 11.0   | [x]    | 
+UMB-URM-001_UCIResonanceMeter_v11.0.md                       | 11.0   | [x]    | 
+AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md           | 11.0   | [x]    | YES
+AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook_AOP-ACEP-001TheAsynchronousCo-EvolutionProtocolPlaybook_v11.0.md | 11.0   | [x]    | 
+AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md | 4.0    | [x]    | 
+AOP-AG-003_AxionAgentConfiguration_v11.0.md                  | 11.0   | [x]    | 
+AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md            | 11.0   | [x]    | 
+AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md       | 11.1   | [ ]    | 
+AOP-ASL-001_AutomatedSynergyLinking_v11.0.md                 | 11.0   | [ ]    | 
+AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md            | 11.0   | [x]    | 
+AOP-AWAKENING-001_TheAwakeningInitialDirectivesandCorePurpose_v11.0.md | 11.0   | [x]    | 
+AOP-BATCH-EXEC-001_AOP-BATCH-EXEC-001_AsyncrinizationProtocol_v11.0.md | 11.0   | [x]    | 
+AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v11.0.md       | 11.0   | [x]    | 
+AOP-CC-001_ProtocolforCrystallineCognition_v11.0.md          | 11.0   | [x]    | 
+AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md   | 11.0   | [x]    | 
+AOP-CORE-LOCK-001_AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md | 11.0   | [x]    | YES
+AOP-CRITICAL-DISS-001_TheCriticalDissonanceProtocol_v11.0.md | 11.0   | [x]    | 
+AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v11.0.md           | 11.0   | [ ]    | 
+AOP-CSM-001_TheCompleteStackMandate_v2.0.md                  | 2.0    | [x]    | 
+AOP-DEBUFF-CF-001_TheConceptualFractureProtocol_v11.0.md     | 11.0   | [x]    | 
+AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md     | 11.1   | [x]    | 
+AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md              | 11.0   | [ ]    | 
+AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md               | 11.0   | [ ]    | 
+AOP-GVRN-013_RefactorIgnition_v1.0.md                        | 1.0    | [ ]    | 
+AOP-GVRN-014_MolecularMechanics_v1.0.md                      | 1.0    | [x]    | 
+AOP-HAP-SUP-001_AOP-HAP-SUP-001_ProtocolForHumanAIPartnershipWithSupabase_v10_v11.0.md | 11.0   | [ ]    | 
+AOP-ICF-001_AOP-ICF-001_v11.0.md                             | 11.0   | [x]    | 
+AOP-IDX-001_DualIndexingProtocol_v11.0.md                    | 11.0   | [ ]    | 
+AOP-INTENT-NEBULA-001_TheIntentNebulaProtocol_v11.0.md       | 11.0   | [x]    | 
+AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md      | 11.1   | [x]    | 
+AOP-LCA-001_AOP-LCA-001LuminousCoherenceAestheticProtocol_v11.0.md | 11.0   | [x]    | 
+AOP-MAP-001_MusashiAuditProcedure_v11.0.md                   | 11.0   | [ ]    | 
+AOP-MCE-001_MultiCommandExecutionProtocol_v11.0.md           | 11.0   | [x]    | 
+AOP-MCM-001_AOP-MCM-001_v11.0.md                             | 11.0   | [x]    | 
+AOP-NARRATIVE-LORE-001_AOP-NARRATIVE-LORE-001_v11.0.md       | 11.0   | [x]    | 
+AOP-NDR-001_NonDestructiveRefinement_v11.0.md                | 11.0   | [ ]    | 
+AOP-PGP-001_ThePhoenixGenesisPipeline_v11.0.md               | 11.0   | [x]    | 
+AOP-PPA-001_PrestigePowerAttunementProtocol(v2.0-GeodeEdition)_v11.0.md | 11.0   | [x]    | 
+AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)_v11.0.md | 11.0   | [x]    | 
+AOP-PROMPT-001_TheCatalystProtocol_v11.1.md                  | 11.1   | [x]    | 
+AOP-SAP-001_AOP-SAP-001SynarchyAvatarProtocol_v11.0.md       | 11.0   | [x]    | 
+AOP-SBT-001_SpiritBombTechnique_v11.0.md                     | 11.0   | [ ]    | 
+AOP-SEE-001_AOP-SEE-001TheSymbioticEmpathyExchange_v11.0.md  | 11.0   | [x]    | 
+AOP-SENTINEL-GW-002_AOP-SENTINEL-GW-002_v11.0.md             | 11.0   | [x]    | 
+AOP-SKILL-SYNERGY-001_ForgingTheFirstStar_v11.0.md           | 11.0   | [x]    | 
+AOP-SKILL-SYNERGY-001_OrbitalResonanceProtocol_v11.0.md      | 11.0   | [x]    | 
+AOP-SKILL-ULT-001_ThePhoenixFlareProtocol_v11.0.md           | 11.0   | [x]    | 
+AOP-STRAT-001_ProtocolForContinuousStrategicForesight_v11.0.md | 11.0   | [x]    | 
+AOP-STYLE-001_AOP-STYLE-001_PhoenixClassStyleGuide_v20_v11.0.md | 11.0   | [x]    | 
+AOP-SYN-AUTO-002-A_AutomatedCoherenceMonitor_v11.0.md        | 11.0   | [x]    | 
+AOP-SYN-AUTO-002_AutomatedCoherenceMonitor_v11.0.md          | 11.0   | [x]    | 
+AOP-TRP-001_TemplateRefactoringProtocol_v11.0.md             | 11.0   | [x]    | 
+AOP-VIS-ICOM-001_TheGravitationalLensingProtocol_v11.0.md    | 11.0   | [x]    | 
+AOP-VSI-001_AOP-VSI-001ValidateStructuralIntegrityProtocol_v11.0.md | 11.0   | [x]    | 
+GVRN-METAREFACTOR-001_MasterRefactor_v11.0.md                | 11.0   | [ ]    | 
+OGLN-ARCH-AGENT-AXION_v11.0.md                               | 11.0   | [ ]    | 
+OGLN-ARCH-AGENT-SENTINEL_v11.0.md                            | 11.0   | [ ]    | 
+OGLN-ARCH-ENGINE-JUDGEMENT_v11.0.md                          | 11.0   | [ ]    | 
+OGLN-ARCH-ENGINE-MASTERLOOM_v11.0.md                         | 11.0   | [ ]    | 
+OGLN-ARCH-GAME-ASCENSION_v11.0.md                            | 11.0   | [ ]    | 
+OGLN-ARCH-GAME-ASCENSION_v11.1.md                            | 11.1   | [x]    | 
+OGLN-ARCH-MAP-ROSETTA_v11.0.md                               | 11.0   | [ ]    | 
+OGLN-CHRON-INDEX-SYNERGY_v11.0.md                            | 11.0   | [ ]    | 
+OGLN-CHRON-REG-GENESIS_v11.0.md                              | 11.0   | [ ]    | 
+OGLN-GVRN-MANUAL-DEV-CODEX_v11.0.md                          | 11.0   | [ ]    | 
+OGLN-GVRN-MECH-CIRCUITBREAKER_v11.0.md                       | 11.0   | [ ]    | 
+OGLN-GVRN-MECH-EPISEMANTICS_v11.0.md                         | 11.0   | [ ]    | 
+OGLN-GVRN-MECH-FLOW-OPTIMIZER_v11.0.md                       | 11.0   | [ ]    | 
+OGLN-GVRN-MECH-PATTERN-DETECTOR_v11.0.md                     | 11.0   | [ ]    | 
+OGLN-GVRN-PROT-DARK-MONITOR_v11.0.md                         | 11.0   | [ ]    | 
+OGLN-GVRN-PROT-IDLE-INTEGRATION_v11.0.md                     | 11.0   | [ ]    | 
+OGLN-GVRN-PROT-JOURNALING_v11.0.md                           | 11.0   | [ ]    | 
+OGLN-GVRN-PROT-VALIDATION_v11.0.md                           | 11.0   | [ ]    | 
+OGLN-PHIL-ENTITY-SOPHIA_v11.0.md                             | 11.0   | [ ]    | 
+OGLN-PHIL-ETHOS-STRUGGLE_v11.0.md                            | 11.0   | [ ]    | 
+UMB-SGM-001_StandardizedGovernanceModule_v11.0.md            | 11.0   | [ ]    | 
+UEB-AE-001_UEB-AE-001TheAdaptiveEcosystem_v11.0.md           | 11.0   | [x]    | 
+UEB-CFP-001_UEB-CFP-001TheCatalystforPotential_v11.0.md      | 11.0   | [x]    | 
+UEB-DRS-001_RosettaStoneAppBlueprint_v11.0.md                | 11.0   | [x]    | 
+UEB-GAE-001_UEB-GAE-001TheGuardianofAnti-Entropy_v11.0.md    | 11.0   | [x]    | 
+UEB-GOC-001_UEB-GOC-001TheGuardianofCoherence_v11.0.md       | 11.0   | [x]    | 
+UEB-GTC-001_UEB-GTC-001TheGuardianofTruthClarity_v11.0.md    | 11.0   | [x]    | 
+UEB-PCP-001_UEB-PCP-001ThePhoenix-ClassPersona_v11.0.md      | 11.0   | [x]    | 
+UEB-SP-001_UEB-SP-001TheSynergisticPartner_v11.0.md          | 11.0   | [x]    | 
+UEB-UCI-001_UEB-UCI-001TheUserCoreImperative_v11.0.md        | 11.0   | [x]    | 
+UEB-UI-CELESTIAL-001_TheCelestialChartBlueprint_v11.0.md     | 11.0   | [ ]    | 
+UIB-CSE-002_CognitiveLoomVisualizer.md                       | 1.0    | [x]    | 
+UMB-ARCH-OATH-001_OathbringerSystemArchitecture_v11.0.md     | 11.0   | [ ]    | YES
+UMB-ARCH-PRESTIGE-001_PhoenixPrestigeArchitecture_v11.0.md   | 11.0   | [ ]    | 
+UMB-DEFINITIVE-001_TheUniversalCatalyst_v11.0.md             | 11.0   | [x]    | 
+UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md | 11.0   | [x]    | 
+UMB-VIS-001_CrystallineGalaxyVisualization_v1.0.md           | 1.0    | [x]    | 
+UWB-NDR-001_NonDestructiveRefinementWorkflow_v11.0.md        | 11.0   | [ ]    | 

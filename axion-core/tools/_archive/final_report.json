@@ -1,0 +1,68 @@
+{
+    "mode": "forge",
+    "timestamp": null,
+    "forge_plan": {
+        "GVRN-STYLE-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "CSL-LINK-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "AOP-MAP-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "GUCA-MAP-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "GVRN-SYNERGY-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "METRIC-AES-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "SYNERGY-REPORT-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "UMB-ASF-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "AOP-GEN-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "AOP-PGPS-002": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "CODEX-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "METRIC-AES-002": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "UMB-PP-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "UMB-ROLE-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "UMB-RPG-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "UMB-STRUCT-001": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "AOP-SEED-002": [
+            "MISSING_LINK: UMB-PRS-001"
+        ],
+        "**SELT-CSL-007**": [
+            "MISSING_LINK: UMB-PRS-001"
+        ]
+    },
+    "audit_results": {
+        "lis_score": "23.08%",
+        "metrics": {
+            "total_artifacts": 44,
+            "total_links": 1560,
+            "valid_links": 360
+        }
+    }
+}

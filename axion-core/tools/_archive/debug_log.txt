@@ -1,0 +1,21 @@
+\U0001f31f Starting RAG Graph Generation in C:\Users\Chris\Synarche_Workspace\axion-core
+\U0001f31f Starting RAG Graph Generation in C:\Users\Chris\Synarche_Workspace\axion-core
+   Target Directories: ['Documentation', 'docs', 'c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation']
+   Skipping missing directory: C:\Users\Chris\Synarche_Workspace\axion-core\Documentation
+   Using C:\Users\Chris\Synarche_Workspace\axion-core\docs (19 files)
+   Using c:\Users\Chris\_Desktop_Vault\Phoenix\Documentation (618 files)
+   Processing 637 files...
+Traceback (most recent call last):
+  File "C:\Users\Chris\Synarche_Workspace\axion-core\tools\generate_rag_graph.py", line 323, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Chris\Synarche_Workspace\axion-core\tools\generate_rag_graph.py", line 302, in main
+    parse_oslm(root, search_dirs, graph)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chris\Synarche_Workspace\axion-core\tools\generate_rag_graph.py", line 135, in parse_oslm
+    print(f"\U0001f4d6 Parsing Explicit Edges from {oslm_file.name}...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Chris\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4d6' in position 0: character maps to <undefined>

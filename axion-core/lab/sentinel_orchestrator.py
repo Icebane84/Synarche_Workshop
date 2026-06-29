@@ -19,6 +19,7 @@ import logging
 import re
 import sys
 import os
+import sys
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
@@ -36,6 +37,7 @@ YELLOW = "\033[93m"
 RESET = "\033[0m"
 
 TOOLS_DIR = Path(__file__).parent.parent / "tools"
+TOOLS_DIR = Path(__file__).parent
 
 
 @dataclass
@@ -51,6 +53,8 @@ class SentinelOrchestrator:
     def __init__(self, target: Path, quiet: bool = False) -> None:
         self.target = target
         self.quiet = quiet
+    def __init__(self, target: Path) -> None:
+        self.target = target
         self.tools = [
             "compliance_audit.py",
             "ide_sentinel.py",
@@ -83,6 +87,13 @@ class SentinelOrchestrator:
             data = {"stdout_summary": output[-500:], "error": error}
             status_flag = "COMPLETE" if returncode == 0 else "FAILED"
             return status_flag, data
+
+            "aes_calculator.py",
+            "synergy_calculator.py",
+            "sot_scanner.py",
+            "resonance_scanner.py",
+            "entropy_auditor.py",
+        ]
 
     async def run_tool(self, tool_name: str) -> dict[str, Any]:
         """Runs a single tool and returns its output parsing."""
@@ -127,6 +138,22 @@ class SentinelOrchestrator:
                 "status": status_flag,
                 "data": data,
             }
+            cmd = [sys.executable, str(tool_path), str(self.target)]
+            proc = await asyncio.create_subprocess_exec(
+                *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
+            )
+            stdout, stderr = await proc.communicate()
+
+            output = stdout.decode(errors="replace").strip()
+            error = stderr.decode(errors="replace").strip()
+
+            # Heuristic: If it looks like JSON, parse it.
+            try:
+                data = json.loads(output)
+            except json.JSONDecodeError:
+                data = {"stdout_summary": output[-500:], "error": error}
+
+            return {"status": "COMPLETE" if proc.returncode == 0 else "FAILED", "data": data}
         except Exception as e:
             return {"status": "ERROR", "message": str(e)}
 
@@ -135,6 +162,7 @@ class SentinelOrchestrator:
         report = SentinelReport(
             timestamp=datetime.now().isoformat(), target=str(self.target)
         )
+        report = SentinelReport(timestamp=datetime.now().isoformat(), target=str(self.target))
 
         tasks = [self.run_tool(t) for t in self.tools]
         results = await asyncio.gather(*tasks)
@@ -153,6 +181,11 @@ class SentinelOrchestrator:
         report.coherence_score = (
             (passed / len(self.tools)) * 100.0 if self.tools else 0.0
         )
+                report.dissonance_alerts.append(f"Tool {name} status: {res['status']}")
+
+        # Calculate Heuristic Coherence Score
+        passed = sum(1 for r in results if r["status"] == "COMPLETE")
+        report.coherence_score = (passed / len(self.tools)) * 100.0 if self.tools else 0.0
 
         return report
 
@@ -214,6 +247,14 @@ async def main() -> None:
 
     target = Path(args.target).resolve()
     orchestrator = SentinelOrchestrator(target, quiet=args.quiet)
+async def main() -> None:
+    parser = argparse.ArgumentParser(description="Sentinel Orchestrator — Master Audit Engine")
+    parser.add_argument("target", help="Directory or file to audit")
+    parser.add_argument("--json", action="store_true", help="Output raw JSON")
+    args = parser.parse_args()
+
+    target = Path(args.target).resolve()
+    orchestrator = SentinelOrchestrator(target)
     report = await orchestrator.execute_vigil()
 
     if args.json:
@@ -232,6 +273,7 @@ async def main() -> None:
         else:
             coh_color = RED
         logger.info(f"  Coherence: {coh_color}{report.coherence_score:.2f}%{RESET}")
+        logger.info(f"  Coherence: {report.coherence_score:.2f}%")
         logger.info("-" * 80)
         logger.info(f"  Tools Executed: {len(report.tool_results)}")
         logger.info(f"  Alerts:         {len(report.dissonance_alerts)}")
@@ -259,3 +301,9 @@ async def main() -> None:
 if __name__ == "__main__":
     asyncio.run(main())
 
+            logger.info(f"  [{res['status']:<8}] {name}")
+        logger.info("=" * 80)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

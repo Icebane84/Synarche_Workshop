@@ -1,0 +1,91 @@
+# -----------------------------------------------------------------------------
+# PHOENIX SYNARCHE PROTOCOL - RUFF CONFIGURATION
+# -----------------------------------------------------------------------------
+#
+# ###### [ARTIFACT START]
+#
+# ### Block A: The Identification Lock (UIP-V13)
+#
+# Key               | Value                           | Description
+# :---              | :---                            | :---
+# Artifact ID       | CFG-RUFF-001                    | The Sovereign ID.
+# Official Name     | pyproject.toml                  | The Filename.
+# Version           | v13.0 [OMEGA]                   | The Standard.
+# Domain            | GVRN                            | The Subject.
+# Celestial Class   | [STAR]                          | The Weight.
+# Evolution         | Omega Ascension                 | The Maturity.
+# Status            | [ACTIVE]                        | The Lifecycle.
+# Relations         | GOVERNED_BY: CORE-CODEX-001     | The Network.
+#
+# ---
+#
+# ### Block B: The Ethos Field (IDM-001)
+#
+# > "The Code is the Law."
+#
+# *   **The Mandate**: This configuration governs the linting and formatting standards for the Python ecosystem.
+#
+# ---
+#
+# ### Block C: The Cognitive Spine (Axiomatic Mapping)
+#
+# Axiom             | State           | Vector
+# :---              | :---            | :---
+# Law               | SUPREME         | Enforces Pythonic Purity.
+# Order             | ABSOLUTE        | Zero tolerance for lint errors.
+# Truth             | BINARY          | Pass/Fail.
+#
+# ---
+#
+# ### Block D: Standardized Synergy Block (The Loom Signature)
+#
+# Synergistic Artifact ID, Relationship Type, Synergistic Impact
+# CORE-CODEX-001, GOVERNS, The Codex defines the rules enforced here.
+# axion-core, APPLIES_TO, This config governs the Axion Core agent.
+#
+# -----------------------------------------------------------------------------
+
+[tool.ruff]
+# CODEX v10.0 Standard: 120 line length
+line-length = 120
+indent-width = 4
+
+# Target Python 3.10+
+target-version = "py310"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+# I = Isort (Imports sorting)
+# N = Pep8 Naming
+# UP = PyUpgrade (Modernize code)
+# B = Bugbear (Potential bugs)
+# C901 = McCabe Complexity (Warns on high complexity)
+# SIM = Flake8-Simplify (Reduces redundant code like S5713)
+# TRY = Tryceratops (Improves exception handling)
+# PL = Pylint (Catches unreachable code S1763)
+# RUF = Ruff-specific rules
+# ARG = Flake8-Unused-Arguments (S1172)
+select = ["E4", "E7", "E9", "F", "I", "N", "UP", "B", "C901", "SIM", "TRY", "PL", "RUF", "ARG", "ANN", "T20"]
+ignore = ["TRY003", "PLR0913", "ANN101", "ANN102"] # Ignore overly strict message checks, arg count, and self/cls typing
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+
+[tool.pyrefly]
+# Enforce Phoenix Law: Binary Truth in Typing
+# displayTypeErrors = "force-on" is managed via VS Code settings or pyrefly.toml
