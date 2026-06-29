@@ -1,6 +1,6 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.4.15/schema.json",
-  "extends": ["./axion-core/standards/biome.json"],
+  "extends": ["./axion-core/standards/biome.base.json"],
   "vcs": {
     "enabled": true,
     "clientKind": "git",
