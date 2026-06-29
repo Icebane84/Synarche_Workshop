@@ -1,0 +1,388 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "phoenix_gcdb.schema.json",
+  "title": "Phoenix GCDB Registry Schema",
+  "version": "2.0.0",
+  "description": "JSON Schema for the Phoenix Governance Configuration Database. Validates all first-class object types and their relationships. v2.0 adds: MITIGATES relationship type, metric unit/threshold fields, exception expiry model, temporal audit fields on all objects, and finding severity-awareness.",
+  "type": "object",
+  "required": ["registry_meta", "objects", "relationships"],
+  "additionalProperties": false,
+  "properties": {
+    "registry_meta": {
+      "type": "object",
+      "required": ["registry_id", "schema_version", "generated_at", "canonical_policy_source", "deployment_profile"],
+      "additionalProperties": false,
+      "properties": {
+        "registry_id":              { "type": "string" },
+        "schema_version":           { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "generated_at":             { "type": "string", "format": "date-time" },
+        "canonical_policy_source":  { "type": "string" },
+        "deployment_profile":       { "enum": ["LOCAL_WORKSTATION", "KUBERNETES", "HYBRID"] },
+        "gcdb_chronicle_enabled":   {
+          "type": "boolean",
+          "description": "When true, all GCDB mutations are themselves appended to AISTF_Transactions (LAW-035 self-governance). MUST be true in KUBERNETES profile."
+        }
+      }
+    },
+    "objects": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policies":      { "type": "array", "items": { "$ref": "#/$defs/policy" } },
+        "controls":      { "type": "array", "items": { "$ref": "#/$defs/control" } },
+        "exceptions":    { "type": "array", "items": { "$ref": "#/$defs/exception" } },
+        "findings":      { "type": "array", "items": { "$ref": "#/$defs/finding" } },
+        "verifications": { "type": "array", "items": { "$ref": "#/$defs/verification" } },
+        "evidence":      { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+        "risks":         { "type": "array", "items": { "$ref": "#/$defs/risk" } },
+        "metrics":       { "type": "array", "items": { "$ref": "#/$defs/metric" } }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/relationship" }
+    }
+  },
+
+  "$defs": {
+
+    "policy": {
+      "type": "object",
+      "required": ["id", "object_type", "domain", "intent", "principle", "enforcement", "severity", "test", "owner", "dependencies", "validation_criteria"],
+      "additionalProperties": false,
+      "properties": {
+        "id":          { "type": "string", "pattern": "^LAW-[0-9]{3}$" },
+        "object_type": { "const": "POLICY" },
+        "domain": {
+          "enum": [
+            "identity-and-traceability",
+            "resilience-and-remediation",
+            "grounded-intelligence",
+            "policy-and-access",
+            "evolution-and-operations",
+            "experience-and-modularity"
+          ]
+        },
+        "intent":              { "type": "string", "minLength": 10 },
+        "principle":           { "type": "string", "minLength": 2 },
+        "enforcement":         { "type": "string", "minLength": 10 },
+        "severity":            { "enum": ["MUST", "SHOULD", "MAY"] },
+        "test":                { "type": "string", "minLength": 10 },
+        "owner":               { "type": "string" },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Dependency string. CMD references MUST be semver-pinned: 'CMD: APPROVE@1.0.0'. Rego references use filename only."
+          }
+        },
+        "validation_criteria": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "derived_status": {
+          "description": "Computed at query time from findings and exceptions. Never hand-assigned.",
+          "enum": ["COMPLIANT", "NON_COMPLIANT", "PARTIAL", "EXEMPT", "UNDER_REMEDIATION"],
+          "readOnly": true
+        },
+        "last_reviewed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+
+    "control": {
+      "type": "object",
+      "required": ["id", "object_type", "title", "policy_refs", "mechanism", "enforcement_layer", "implementation_status"],
+      "additionalProperties": false,
+      "properties": {
+        "id":          { "type": "string", "pattern": "^CTRL-[0-9]{3}$" },
+        "object_type": { "const": "CONTROL" },
+        "title":       { "type": "string" },
+        "description": { "type": "string" },
+        "policy_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^LAW-[0-9]{3}$" },
+          "minItems": 1
+        },
+        "mechanism": {
+          "description": "How this control operates technically.",
+          "enum": [
+            "CODE_ENFORCEMENT",
+            "OPA_POLICY",
+            "SCHEMA_VALIDATION",
+            "CIRCUIT_BREAKER",
+            "AUDIT_LOG",
+            "HUMAN_GATE",
+            "AUTOMATED_TEST",
+            "INFRA_CONFIG",
+            "EXTENSION_HOOK"
+          ]
+        },
+        "enforcement_layer": {
+          "enum": ["RUNTIME", "BUILD", "DEPLOY", "DESIGN", "OPERATIONAL"]
+        },
+        "implementation_status": {
+          "enum": ["IMPLEMENTED", "PARTIAL", "PLANNED", "NOT_APPLICABLE"]
+        },
+        "rego_file":        { "type": "string", "description": "Associated .rego policy filename if mechanism is OPA_POLICY." },
+        "code_ref":         { "type": "string", "description": "File path or function reference if mechanism is CODE_ENFORCEMENT." },
+        "control_extension": {
+          "type": "boolean",
+          "default": false,
+          "description": "True for non-canonical controls (key rotation, rate limiting, etc.) that enforce operational security without belonging to the 42-law canon."
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "exception": {
+      "type": "object",
+      "required": ["id", "object_type", "title", "policy_ref", "scope", "justification", "approved_by", "approved_at", "expires_at", "review_cadence", "risk_acceptance"],
+      "additionalProperties": false,
+      "properties": {
+        "id":          { "type": "string", "pattern": "^EXC-[0-9]{3}$" },
+        "object_type": { "const": "EXCEPTION" },
+        "title":       { "type": "string" },
+        "policy_ref":  { "type": "string", "pattern": "^LAW-[0-9]{3}$" },
+        "scope":       { "type": "string", "description": "Exact boundary of what this exception permits. Must be narrowly scoped." },
+        "justification": { "type": "string", "minLength": 20 },
+        "approved_by": { "type": "string" },
+        "approved_at": { "type": "string", "format": "date-time" },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "FIX: Exceptions must expire. A permanent exception is a policy change, not an exception. Required field."
+        },
+        "review_cadence": {
+          "type": "string",
+          "description": "ISO 8601 duration (e.g. P90D = every 90 days). Exception must be re-approved at this cadence or it lapses."
+        },
+        "risk_acceptance": {
+          "type": "object",
+          "required": ["risk_ref", "accepted_by", "accepted_at"],
+          "properties": {
+            "risk_ref":    { "type": "string", "pattern": "^RSK-[0-9]{3}$" },
+            "accepted_by": { "type": "string" },
+            "accepted_at": { "type": "string", "format": "date-time" },
+            "residual_risk_level": { "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] }
+          }
+        },
+        "status": {
+          "enum": ["ACTIVE", "EXPIRED", "REVOKED"],
+          "description": "Derived from expires_at vs current time. EXPIRED exceptions are not counted as mitigations."
+        }
+      }
+    },
+
+    "finding": {
+      "type": "object",
+      "required": ["id", "object_type", "title", "policy_ref", "finding_type", "severity", "description", "affected_component", "discovered_at", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id":          { "type": "string", "pattern": "^FND-[0-9]{3}$" },
+        "object_type": { "const": "FINDING" },
+        "title":       { "type": "string" },
+        "policy_ref":  { "type": "string", "pattern": "^LAW-[0-9]{3}$" },
+        "finding_type": {
+          "enum": ["MISSING", "INCORRECT", "PARTIAL", "OBSOLETE", "RISKY"]
+        },
+        "severity": {
+          "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+          "description": "Finding severity is independent of policy severity. A MAY-law finding can be CRITICAL if it creates operational risk."
+        },
+        "policy_severity_inherited": {
+          "type": "string",
+          "enum": ["MUST", "SHOULD", "MAY"],
+          "description": "The severity of the parent policy. When policy is MUST and finding_type is MISSING, derived_status MUST be NON_COMPLIANT regardless of finding severity."
+        },
+        "description":        { "type": "string", "minLength": 20 },
+        "affected_component": { "type": "string" },
+        "discovered_at":      { "type": "string", "format": "date-time" },
+        "status": {
+          "enum": ["OPEN", "UNDER_REMEDIATION", "RESOLVED", "ACCEPTED_RISK"]
+        },
+        "remediation_plan":  { "type": "string" },
+        "target_resolution": { "type": "string", "format": "date-time" },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^EVD-[0-9]{3}$" }
+        }
+      }
+    },
+
+    "verification": {
+      "type": "object",
+      "required": ["id", "object_type", "title", "policy_ref", "procedure", "expected_result", "verification_type", "last_run_at", "last_run_result"],
+      "additionalProperties": false,
+      "properties": {
+        "id":          { "type": "string", "pattern": "^TEST-[0-9]{3}$" },
+        "object_type": { "const": "VERIFICATION" },
+        "title":       { "type": "string" },
+        "policy_ref":  { "type": "string", "pattern": "^LAW-[0-9]{3}$" },
+        "procedure":   { "type": "string", "minLength": 10 },
+        "expected_result": { "type": "string" },
+        "verification_type": {
+          "enum": ["AUTOMATED_CI", "MANUAL_AUDIT", "OPA_EVAL", "INTEGRATION_TEST", "FUZZ_RUN", "CHAOS_INJECT"]
+        },
+        "last_run_at":     { "type": "string", "format": "date-time" },
+        "last_run_result": { "enum": ["PASS", "FAIL", "SKIP", "NOT_RUN"] },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^EVD-[0-9]{3}$" }
+        },
+        "cadence": {
+          "type": "string",
+          "description": "ISO 8601 duration for automated runs (e.g. P1D = daily, P7D = weekly)."
+        },
+        "ci_job_ref": {
+          "type": "string",
+          "description": "CI pipeline job name or URL if verification_type is AUTOMATED_CI."
+        }
+      }
+    },
+
+    "evidence": {
+      "type": "object",
+      "required": ["id", "object_type", "title", "uri", "description", "collection_status", "collected_at"],
+      "additionalProperties": false,
+      "properties": {
+        "id":          { "type": "string", "pattern": "^EVD-[0-9]{3}$" },
+        "object_type": { "const": "EVIDENCE" },
+        "title":       { "type": "string" },
+        "uri":         { "type": "string" },
+        "description": { "type": "string" },
+        "collected_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "FIX: Evidence without a timestamp cannot demonstrate recency. Required field."
+        },
+        "collection_status": {
+          "enum": ["AVAILABLE", "REFERENCED", "MISSING", "PENDING"]
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Evidence that ages out (e.g. a 90-day-old CI run) should be flagged PENDING re-collection."
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 of the evidence artifact. Allows tamper detection consistent with LAW-002."
+        }
+      }
+    },
+
+    "risk": {
+      "type": "object",
+      "required": ["id", "object_type", "title", "severity", "policy_refs", "control_refs", "finding_refs", "description", "treatment", "treatment_status", "owner"],
+      "additionalProperties": false,
+      "properties": {
+        "id":          { "type": "string", "pattern": "^RSK-[0-9]{3}$" },
+        "object_type": { "const": "RISK" },
+        "title":       { "type": "string" },
+        "severity":    { "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] },
+        "policy_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^LAW-[0-9]{3}$" }
+        },
+        "control_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^CTRL-[0-9]{3}$" }
+        },
+        "finding_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^FND-[0-9]{3}$" }
+        },
+        "description": { "type": "string", "minLength": 20 },
+        "treatment": {
+          "enum": ["MITIGATE", "ACCEPT", "TRANSFER", "AVOID"],
+          "description": "Standard risk treatment strategy."
+        },
+        "treatment_status": {
+          "enum": ["NOT_STARTED", "IN_PROGRESS", "COMPLETE", "ACCEPTED"]
+        },
+        "owner":            { "type": "string" },
+        "residual_severity": {
+          "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+          "description": "Severity after controls and mitigations are applied. Should be lower than severity."
+        },
+        "next_review_at":   { "type": "string", "format": "date-time" }
+      }
+    },
+
+    "metric": {
+      "type": "object",
+      "required": ["id", "object_type", "name", "value", "unit", "source", "collected_at"],
+      "additionalProperties": false,
+      "properties": {
+        "id":          { "type": "string", "pattern": "^MET-[0-9]{3}$" },
+        "object_type": { "const": "METRIC" },
+        "name":        { "type": "string" },
+        "value":       { "description": "Numeric or string metric value." },
+        "unit": {
+          "type": "string",
+          "description": "FIX: Unit is required. Examples: 'ratio_0_1', 'percent', 'count', 'ms', 'boolean'. Without unit, values are not comparable."
+        },
+        "source":        { "type": "string" },
+        "collected_at":  { "type": "string", "format": "date-time" },
+        "threshold": {
+          "type": "object",
+          "description": "Optional compliance threshold. When defined, metric value is automatically compared at collection time.",
+          "required": ["operator", "value"],
+          "properties": {
+            "operator": { "enum": ["gte", "lte", "gt", "lt", "eq"] },
+            "value":    {},
+            "breach_severity": { "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] }
+          }
+        },
+        "direction": {
+          "enum": ["HIGHER_IS_BETTER", "LOWER_IS_BETTER", "TARGET_VALUE"],
+          "description": "Tells dashboards and trend analysis which direction indicates improvement."
+        },
+        "policy_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^LAW-[0-9]{3}$" }
+        }
+      }
+    },
+
+    "relationship": {
+      "type": "object",
+      "required": ["from", "to", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "from": { "type": "string" },
+        "to":   { "type": "string" },
+        "type": {
+          "enum": [
+            "ENFORCED_BY",
+            "VERIFIED_BY",
+            "HAS_FINDING",
+            "HAS_EXCEPTION",
+            "SUPPORTED_BY",
+            "IMPLEMENTS",
+            "TESTS",
+            "EVIDENCED_BY",
+            "MITIGATES",
+            "CREATES_RISK",
+            "DEPENDS_ON",
+            "SUPERSEDES"
+          ],
+          "description": "FIX: Added MITIGATES (CTRL→RSK), CREATES_RISK (FND→RSK), DEPENDS_ON (LAW→LAW), SUPERSEDES (LAW→LAW for tombstone versioning)."
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Optional relationship-level metadata.",
+          "properties": {
+            "strength":    { "enum": ["WEAK", "MODERATE", "STRONG"] },
+            "created_at":  { "type": "string", "format": "date-time" },
+            "note":        { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

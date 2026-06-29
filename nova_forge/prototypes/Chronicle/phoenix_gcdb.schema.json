@@ -1,0 +1,616 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://synarche.local/schemas/phoenix-gcdb.schema.json",
+  "title": "Phoenix Governance Configuration Database Registry",
+  "type": "object",
+  "required": [
+    "artifact",
+    "governance_model",
+    "implementation_context",
+    "policies",
+    "controls",
+    "exceptions",
+    "compliance_findings",
+    "verifications",
+    "evidence",
+    "risks",
+    "metrics",
+    "relationships"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact": {
+      "type": "object"
+    },
+    "governance_model": {
+      "type": "object"
+    },
+    "implementation_context": {
+      "type": "object"
+    },
+    "policies": {
+      "type": "array",
+      "minItems": 42,
+      "maxItems": 42,
+      "items": {
+        "$ref": "#/$defs/policy"
+      }
+    },
+    "controls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/control"
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/exception"
+      }
+    },
+    "compliance_findings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/finding"
+      }
+    },
+    "verifications": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/verification"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/risk"
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/metric"
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relationship"
+      }
+    }
+  },
+  "$defs": {
+    "refId": {
+      "type": "string",
+      "pattern": "^(LAW|CTRL|TEST|FND|EXC|EVD|RSK|MET)-[A-Z0-9-]+$"
+    },
+    "severity": {
+      "enum": [
+        "MUST",
+        "SHOULD",
+        "MAY",
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "status": {
+      "enum": [
+        "COMPLIANT",
+        "PARTIAL",
+        "NON_COMPLIANT",
+        "EXEMPT",
+        "UNDER_REMEDIATION"
+      ]
+    },
+    "policy": {
+      "type": "object",
+      "required": [
+        "id",
+        "object_type",
+        "domain",
+        "intent",
+        "principle",
+        "severity",
+        "target_state",
+        "current_state",
+        "compliance_status",
+        "owner",
+        "control_refs",
+        "test_refs",
+        "finding_refs",
+        "exception_refs",
+        "evidence_refs",
+        "dependencies",
+        "lifecycle_state"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^LAW-[0-9]{3}$"
+        },
+        "object_type": {
+          "const": "POLICY"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "intent": {
+          "type": "string"
+        },
+        "principle": {
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "MUST",
+            "SHOULD",
+            "MAY"
+          ]
+        },
+        "target_state": {
+          "type": "string"
+        },
+        "current_state": {
+          "type": "string"
+        },
+        "compliance_status": {
+          "$ref": "#/$defs/status"
+        },
+        "owner": {
+          "type": "string"
+        },
+        "control_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "test_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "finding_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exception_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lifecycle_state": {
+          "type": "string"
+        }
+      }
+    },
+    "control": {
+      "type": "object",
+      "required": [
+        "id",
+        "object_type",
+        "name",
+        "policy_refs",
+        "severity",
+        "enforcement",
+        "owner",
+        "dependencies",
+        "validation_criteria",
+        "lifecycle_state"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^CTRL-[A-Z0-9-]+$"
+        },
+        "object_type": {
+          "const": "CONTROL"
+        },
+        "name": {
+          "type": "string"
+        },
+        "policy_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^LAW-[0-9]{3}$"
+          }
+        },
+        "severity": {
+          "enum": [
+            "MUST",
+            "SHOULD",
+            "MAY"
+          ]
+        },
+        "enforcement": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string"
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "validation_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lifecycle_state": {
+          "type": "string"
+        }
+      }
+    },
+    "exception": {
+      "type": "object",
+      "required": [
+        "id",
+        "object_type",
+        "policy_refs",
+        "scope",
+        "exception",
+        "expiry",
+        "required_compensating_controls",
+        "approved_by",
+        "approval_date",
+        "risk_acceptance",
+        "review_date",
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^EXC-[0-9]{3}$"
+        },
+        "object_type": {
+          "const": "EXCEPTION"
+        },
+        "policy_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scope": {
+          "type": "string"
+        },
+        "exception": {
+          "type": "string"
+        },
+        "expiry": {
+          "type": "string"
+        },
+        "required_compensating_controls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "approved_by": {
+          "type": "string"
+        },
+        "approval_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "risk_acceptance": {
+          "type": "string"
+        },
+        "review_date": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PENDING_APPROVAL",
+            "APPROVED",
+            "EXPIRED",
+            "REVOKED"
+          ]
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "required": [
+        "id",
+        "legacy_id",
+        "object_type",
+        "policy_refs",
+        "severity",
+        "finding",
+        "remediation",
+        "status",
+        "evidence_refs",
+        "owner"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^FND-[0-9]{3}$"
+        },
+        "legacy_id": {
+          "type": "string"
+        },
+        "object_type": {
+          "const": "FINDING"
+        },
+        "policy_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "severity": {
+          "enum": [
+            "MUST",
+            "SHOULD",
+            "MAY"
+          ]
+        },
+        "finding": {
+          "type": "string"
+        },
+        "remediation": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "owner": {
+          "type": "string"
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "id",
+        "object_type",
+        "name",
+        "policy_refs",
+        "control_refs",
+        "procedure",
+        "expected_result",
+        "evidence_refs",
+        "cadence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^TEST-[A-Z0-9]+$"
+        },
+        "object_type": {
+          "const": "VERIFICATION"
+        },
+        "name": {
+          "type": "string"
+        },
+        "policy_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "control_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "procedure": {
+          "type": "string"
+        },
+        "expected_result": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cadence": {
+          "type": "string"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "id",
+        "object_type",
+        "title",
+        "uri",
+        "description",
+        "collection_status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^EVD-[0-9]{3}$"
+        },
+        "object_type": {
+          "const": "EVIDENCE"
+        },
+        "title": {
+          "type": "string"
+        },
+        "uri": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "collection_status": {
+          "enum": [
+            "AVAILABLE",
+            "REFERENCED",
+            "MISSING",
+            "PENDING"
+          ]
+        }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "required": [
+        "id",
+        "object_type",
+        "title",
+        "severity",
+        "policy_refs",
+        "control_refs",
+        "finding_refs",
+        "description",
+        "treatment"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^RSK-[0-9]{3}$"
+        },
+        "object_type": {
+          "const": "RISK"
+        },
+        "title": {
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "CRITICAL"
+          ]
+        },
+        "policy_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "control_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "finding_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "treatment": {
+          "type": "string"
+        }
+      }
+    },
+    "metric": {
+      "type": "object",
+      "required": [
+        "id",
+        "object_type",
+        "name",
+        "value",
+        "source"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^MET-[0-9]{3}$"
+        },
+        "object_type": {
+          "const": "METRIC"
+        },
+        "name": {
+          "type": "string"
+        },
+        "value": {},
+        "source": {
+          "type": "string"
+        }
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "required": [
+        "from",
+        "to",
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "ENFORCED_BY",
+            "VERIFIED_BY",
+            "HAS_FINDING",
+            "HAS_EXCEPTION",
+            "SUPPORTED_BY",
+            "IMPLEMENTS",
+            "TESTS",
+            "EVIDENCED_BY"
+          ]
+        }
+      }
+    }
+  }
+}

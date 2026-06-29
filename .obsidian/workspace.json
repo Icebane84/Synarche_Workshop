@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "94ae16147360b23e",
+    "type": "split",
+    "children": [
+      {
+        "id": "63afbad6bc7068f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0485ab2d5eee0b96",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7ac9e8891a616abe",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d36f767736171dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "141b2c445bf2db38",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a5a4c4dd9d717cb7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b81def66c418924f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a61cb3ff1f80e8da",
+    "type": "split",
+    "children": [
+      {
+        "id": "be28ffd4ef12e3cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8794fd6a0bca625",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "f7e36e2feb64943b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "bbf7f196d0312147",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4accb94c8a2ed6c3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2700494b580c1d09",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "0485ab2d5eee0b96",
+  "lastOpenFiles": [
+    "open-notebook/frontend/node_modules/is-string/LICENSE",
+    "open-notebook/frontend/node_modules/is-shared-array-buffer/LICENSE",
+    "open-notebook/frontend/node_modules/iterator.prototype/test/index.js",
+    "open-notebook/frontend/node_modules/iterator.prototype/test",
+    "open-notebook/frontend/node_modules/lightningcss/node/targets.js.flow",
+    "open-notebook/frontend/node_modules/lightningcss/node/targets.d.ts",
+    "open-notebook/frontend/node_modules/lightningcss/node/index.mjs",
+    "open-notebook/frontend/node_modules/lightningcss/node/index.js.flow",
+    "open-notebook/frontend/node_modules/lightningcss/node/index.js",
+    "open-notebook/frontend/node_modules/lightningcss/node/index.d.ts",
+    "open-notebook/frontend/node_modules/lightningcss/node/flags.js",
+    "open-notebook/frontend/node_modules/@tanstack/react-query/build/codemods/src/v5/keep-previous-data/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-radio-group/node_modules/@radix-ui/react-roving-focus/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-radio-group/node_modules/@radix-ui/react-presence/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-radio-group/node_modules/@radix-ui/primitive/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-presence/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-popper/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-focus-guards/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-dismissable-layer/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/primitive/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-presence/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-focus-guards/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-dismissable-layer/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/primitive/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-collapsible/node_modules/@radix-ui/react-presence/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-collapsible/node_modules/@radix-ui/primitive/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-alert-dialog/node_modules/@radix-ui/react-dialog/README.md",
+    "open-notebook/frontend/node_modules/@radix-ui/react-accordion/node_modules/@radix-ui/primitive/README.md",
+    "open-notebook/frontend/node_modules/@humanfs/node/node_modules/@humanwhocodes/retry/README.md",
+    "open-notebook/frontend/node_modules/refractor/node_modules/@types/unist/README.md",
+    "open-notebook/frontend/node_modules/refractor/node_modules/@types/hast/README.md",
+    "open-notebook/frontend/node_modules/parse-entities/node_modules/@types/unist/README.md",
+    "open-notebook/frontend/node_modules/@vitest/ui/dist/client/favicon.svg",
+    "open-notebook/frontend/node_modules/@vitest/ui/dist/client/bg.png",
+    "open-notebook/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/README.md",
+    "open-notebook/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/glob-parent/README.md",
+    "open-notebook/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/glob-parent/CHANGELOG.md",
+    "open-notebook/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/fast-glob/README.md"
+  ]
+}
