@@ -10,6 +10,8 @@
 
 ### **[ARTIFACT START]**
 
+---
+
 ## **Block A: The Identification Lock (UIP-V15)**
 
 ---
@@ -81,3 +83,5 @@ This plan outlines the systematic, non-destructive search and consolidation of d
 * [ ] `loom.py pull` runs successfully and indexes all new files.
 
 ### **[ARTIFACT END]**
+
+---
