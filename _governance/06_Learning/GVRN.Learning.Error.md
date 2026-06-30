@@ -79,6 +79,9 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 | 2026-04-09 | ERR-LOG-016 | Metadata Truncation          | Lack of state-buffering in text replacement TOOL                                 | [FIXED]     |
 | 2026-04-12 | ERR-LOG-017 | Python Shadowing             | Local enum.py colliding with stdlib enum                                         | [FIXED]     |
 | 2026-05-28 | ERR-LOG-018 | Identified in test_error.log | [2026-05-28 21:40:00] ERROR: Test verification Exception in AxionEngine launcher | [PENDING]   |
+| 2026-05-22 | ERR-LOG-019 | Audit Violation T201         | Forbidden print() statement used instead of logger                               | [RESOLVED]  |
+| 2026-05-23 | ERR-LOG-020 | Superposition Collapse Block | JWT signature verification failed on block-secure-888                            | [RESOLVED]  |
+| 2026-05-28 | ERR-LOG-021 | Synarche Protocol Violation  | Logic Dissonance decorator exception triggered in test_ecs_phoenix.py             | [RESOLVED]  |
 
 ---
 
@@ -255,6 +258,27 @@ Every error is recorded as a lesson. We do not hide failures; we transmute them.
 
 - **Analysis:** Automated scan detected exit/crash signatures in log file.
 - **Remediation:** Investigate the log file (test_error.log) for: "[2026-05-28 21:40:00] ERROR: Test verification Exception in AxionEngine launcher".
+
+### ERR-LOG-019: Audit Violation T201 (Forbidden Print)
+
+---
+
+- **Analysis:** Code audit detected forbidden use of `print()` in development. Standard OMEGA rules forbid raw print calls to preserve system console output cleanly.
+- **Remediation:** Replaced `print()` occurrences with standard logger library hooks (`logger.info` or `logger.warning`).
+
+### ERR-LOG-020: Superposition Collapse FAILED
+
+---
+
+- **Analysis:** JWT signature validation failures or epistemic pathogen triggers in block checks caused Status Engine verification loops.
+- **Remediation:** Enforced proper mock environment credentials and configured the Redis cache breaker.
+
+### ERR-LOG-021: Synarche Protocol Violation (Logic Dissonance)
+
+---
+
+- **Analysis:** Exceptions were thrown inside `test_ecs_phoenix.py` executing `synarche_audit.py` decorators due to unregistered test structures.
+- **Remediation:** Reconciled decorators signature compatibility with target testing structures.
 
 ---
 
