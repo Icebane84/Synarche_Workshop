@@ -1,5 +1,5 @@
-import React from "react";
-import { Menu, Zap, Command, Wifi, WifiOff, Database, Activity } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Menu, Zap, Command, Wifi, WifiOff, Database, Activity, Maximize, Minimize } from "lucide-react";
 import { useUIStore } from "../store/uiStore";
 import { useTheme } from "../hooks/useTheme";
 import { useFileSystemStore } from "../store/fileSystemStore";
@@ -17,6 +17,25 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
     const isLocalConnected = useFileSystemStore((state) => state.isConnected);
     const { isSimulationMode, connectionStatus, initialize: initializeTasks } = useTaskStore();
     const { maintenanceMode, setMaintenanceMode } = useCoherenceStore();
+    const [isFullscreen, setIsFullscreen] = useState(false);
+
+    const toggleFullscreen = () => {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen().then(() => setIsFullscreen(true)).catch(err => {
+                console.error(`Error attempting to enable fullscreen: ${err.message}`);
+            });
+        } else {
+            document.exitFullscreen().then(() => setIsFullscreen(false));
+        }
+    };
+
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(!!document.fullscreenElement);
+        };
+        document.addEventListener("fullscreenchange", handleFullscreenChange);
+        return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    }, []);
 
     return (
         <header
@@ -150,6 +169,16 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
                         <option value="Permissioned">Permissioned</option>
                         <option value="Sovereign">Sovereign</option>
                     </select>
+                </Tooltip>
+
+                {/* Fullscreen Toggle */}
+                <Tooltip label={isFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}>
+                    <button
+                        onClick={toggleFullscreen}
+                        className={`p-2 bg-black/40 border border-${theme.primary}-500/20 text-${theme.primary}-400 hover:bg-${theme.primary}-500/10 rounded-full transition-all duration-300 flex items-center justify-center`}
+                    >
+                        {isFullscreen ? <Minimize size={14} /> : <Maximize size={14} />}
+                    </button>
                 </Tooltip>
 
                 <div
