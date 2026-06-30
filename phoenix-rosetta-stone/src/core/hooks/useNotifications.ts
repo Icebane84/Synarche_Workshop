@@ -1,5 +1,8 @@
 /**
  * @artifact src/core/hooks/useNotifications.ts
+ * @relations
+ * REF: useActionLog.ts
+ * REF: useMemoryFeed.ts
  * Notifications feed with unread count and live INSERT subscription.
  */
 

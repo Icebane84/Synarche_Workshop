@@ -1,5 +1,7 @@
 /**
  * @fileoverview System Commands [OMEGA v15.0]
+ * @relations
+ * REF: useSynapseLogic.ts
  * GOVERNED_BY: [Immutable Archive Protocol](file:///c:/Users/Chris/_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/docs/AOP-ARC-001_ImmutableArchiveProtocol_v13.1.md)
  */
 import { useCoherenceStore } from '../../store/coherenceStore';

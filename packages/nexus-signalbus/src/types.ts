@@ -21,6 +21,11 @@ export interface AscendEraPayload {
   nextStage: string;
 }
 
+export interface MissionCompletePayload {
+  missionName: string;
+  xpReward: number;
+}
+
 export interface ColonizePlanetPayload {
   planetName: string;
 }

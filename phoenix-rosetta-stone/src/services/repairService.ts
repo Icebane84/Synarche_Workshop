@@ -5,6 +5,9 @@ import { recoveryService } from './RecoveryService';
 
 /**
  * RepairService [OMEGA v15.2]
+ * @relations
+ * REF: AutonomousRepairService.ts
+ * REF: RecoveryService.ts
  * The "Code Smith" engine for automated dissonance resolution.
  */
 

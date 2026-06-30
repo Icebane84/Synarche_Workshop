@@ -1,5 +1,8 @@
 /**
  * @artifact src/core/hooks/useActionLog.ts
+ * @relations
+ * REF: useMemoryFeed.ts
+ * REF: useNotifications.ts
  * Live-streaming axiom_action_log — the HUD's activity ticker.
  */
 

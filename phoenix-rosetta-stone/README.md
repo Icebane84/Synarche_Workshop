@@ -6,34 +6,47 @@ environment.
 
 ## Features
 
-- **Sentient Messaging:** A dynamic chat interface that tracks "Coherence" (your mental focus). The more you engage, the
+---
+
+* **Sentient Messaging:** A dynamic chat interface that tracks "Coherence" (your mental focus). The more you engage, the
   clearer the AI becomes.
-- **The Oracle:** A central state management system (Zustand) that serves as the "Collective Unconscious" for your
+* **The Oracle:** A central state management system (Zustand) that serves as the "Collective Unconscious" for your
   application.
-- **Backend Agnostic:** Built on a modular "Fabric" architecture, allowing you to swap out Supabase, Firebase, or custom
+* **Backend Agnostic:** Built on a modular "Fabric" architecture, allowing you to swap out Supabase, Firebase, or custom
   AI providers without rewriting the UI.
 
 ## Getting Started
 
+---
+
 ### 1. Prerequisites
 
-- Node.js (v18+)
-- A Supabase Project (URL and Anon Key) if you intend to use the default backend.
+---
+
+* Node.js (v18+)
+* A Supabase Project (URL and Anon Key) if you intend to use the default backend.
 
 ### 2. Setup
 
-1.  Clone the repository.
-2.  Install dependencies:
+---
+
+1. Clone the repository.
+2. Install dependencies:
+
     ```bash
     npm install
     ```
-3.  Configure Environment Variables: Create a `.env.local` file in the root directory:
+
+3. Configure Environment Variables: Create a `.env.local` file in the root directory:
+
     ```env
     VITE_SUPABASE_URL=your-supabase-url
     VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
     ```
 
 ### 3. Run the App
+
+---
 
 Start the development server:
 
@@ -43,29 +56,37 @@ npm run dev
 
 ## Architecture
 
+---
+
 Phoenix uses a layered architecture to ensure scalability and maintainability:
 
-- **Fabric (src/ui):** The presentation layer. Contains React components and UI logic.
-- **Nexus (src/core):** The business logic layer. Handles data fetching and external API interactions.
-- **Essence (src/state & src/types):** The state management and data definition layer.
+* **Fabric (src/ui):** The presentation layer. Contains React components and UI logic.
+* **Nexus (src/CORE):** The business logic layer. Handles data fetching and external API interactions.
+* **Essence (src/state & src/types):** The state management and data definition layer.
 
 ## Ecosystem
+
+---
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses
+* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses
   [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses
+* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses
   [SWC](https://swc.rs/)
 
 ## React Compiler
+
+---
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see
 [this documentation](https://react.dev/learn/react-compiler/installation).
 
 ## Expanding the ESLint configuration
+
+---
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 

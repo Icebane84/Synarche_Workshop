@@ -1,3 +1,7 @@
+/**
+ * @relations
+ * REF: systemCommands.ts
+ */
 import { useState, useMemo, useEffect } from "react";
 import { useCognitiveCore } from "@state/useCognitiveCore";
 import { NexusSignalBusClient } from "@synarche/nexus-signalbus";

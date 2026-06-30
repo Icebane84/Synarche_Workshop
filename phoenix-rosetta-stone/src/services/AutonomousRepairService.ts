@@ -6,6 +6,9 @@ import { resolveDissonance } from './repairService';
 
 /**
  * AutonomousRepairService [OMEGA v15.3]
+ * @relations
+ * REF: RecoveryService.ts
+ * REF: repairService.ts
  * The "Self-Healing" heart of the Phoenix Protocol.
  * Periodically scans for dissonances and manages the repair lifecycle.
  */

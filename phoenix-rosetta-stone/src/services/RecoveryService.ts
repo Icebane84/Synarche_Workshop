@@ -3,6 +3,9 @@ import { writeToLocalFile, readLocalFile } from './fileSystemService';
 
 /**
  * RecoveryService [OMEGA v15.3]
+ * @relations
+ * REF: AutonomousRepairService.ts
+ * REF: repairService.ts
  * The "Git-Lite" substrate for non-destructive architectural repair.
  * Manages snapshots and rollbacks in the /.phoenix/restoration directory.
  */

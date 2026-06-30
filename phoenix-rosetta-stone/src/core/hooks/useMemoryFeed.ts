@@ -1,5 +1,8 @@
 /**
  * @artifact src/core/hooks/useMemoryFeed.ts
+ * @relations
+ * REF: useActionLog.ts
+ * REF: useNotifications.ts
  * Paginated memory_entries with live INSERT subscription.
  */
 
