@@ -20,6 +20,25 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
     const { activeUser } = useUserContext();
     const { addToast } = useToast();
     const [isSynapseOpen, setIsSynapseOpen] = useState(false);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+
+    const toggleFullscreen = () => {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen().then(() => setIsFullscreen(true)).catch(err => {
+                console.error(`Error attempting to enable fullscreen: ${err.message}`);
+            });
+        } else {
+            document.exitFullscreen().then(() => setIsFullscreen(false));
+        }
+    };
+
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(!!document.fullscreenElement);
+        };
+        document.addEventListener("fullscreenchange", handleFullscreenChange);
+        return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    }, []);
 
     useEffect(() => {
         const bus = new NexusSignalBusClient("phoenix-rosetta-stone");
@@ -95,6 +114,15 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                     </div>
 
                     <div className="flex items-center gap-4">
+                        {/* Fullscreen Button */}
+                        <button
+                            onClick={toggleFullscreen}
+                            className="p-1.5 rounded bg-white/5 border border-white/10 text-white/60 hover:text-white hover:bg-white/10 transition-colors font-mono text-xs cursor-pointer"
+                            title="Toggle Fullscreen"
+                        >
+                            {isFullscreen ? "[ 🗗 ]" : "[ ⛶ ]"}
+                        </button>
+
                         {/* Terminal Button */}
                         <button
                             onClick={() => setIsSynapseOpen(true)}
