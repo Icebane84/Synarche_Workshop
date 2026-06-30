@@ -130,7 +130,7 @@ def status_server():
 
     print("\n=== Preview Status ===")
     if running:
-        print("✅ Status: Running"g")
+        print("✅ Status: Running")
         print(f"🔢 PID: {pid}")
         print(f"🌐 URL: {url} (Likely)")
         print(f"📝 Logs: {LOG_FILE}")
