@@ -9,7 +9,7 @@ import { useCognitiveCore } from "./useCognitiveCore";
  * requirement for Explainable AI (XAI).
  */
 const CognitiveStoreVisualizer = () => {
-  const { messages, coherenceIndex, isProcessing, submitMessage } =
+  const { messages, coherenceIndex, isLoading, submitMessage } =
     useCognitiveCore();
 
   // Utility to fire a test message into the store
@@ -49,12 +49,12 @@ const CognitiveStoreVisualizer = () => {
             </h3>
             <div
               className={`px-3 py-1 rounded text-xs inline-block ${
-                isProcessing
+                isLoading
                   ? "bg-amber-500/20 text-amber-300 border border-amber-500/30 animate-pulse"
                   : "bg-green-500/20 text-green-300 border border-green-500/30"
               }`}
             >
-              {isProcessing ? "SYNTHESIZING..." : "IDLE"}
+              {isLoading ? "SYNTHESIZING..." : "IDLE"}
             </div>
           </div>
 
@@ -64,7 +64,7 @@ const CognitiveStoreVisualizer = () => {
             </h3>
             <button
               onClick={handleTestStimulus}
-              disabled={isProcessing}
+              disabled={isLoading}
               className="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded transition-colors disabled:opacity-50 text-xs"
             >
               Inject Test Stimulus

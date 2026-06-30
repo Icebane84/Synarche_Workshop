@@ -13,14 +13,25 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@babel/parser": "^7.29.3",
+    "@babel/traverse": "^7.29.0",
+    "@babel/types": "^7.29.0",
+    "@google/genai": "^2.10.0",
     "@supabase/supabase-js": "^2.105.1",
     "@tailwindcss/vite": "^4.2.4",
     "@types/d3": "^7.4.3",
+    "@types/three": "^0.185.0",
     "d3": "^7.9.0",
+    "dotenv": "^17.4.2",
+    "framer-motion": "^12.42.0",
+    "idb-keyval": "^6.2.6",
+    "lucide-react": "^1.22.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-force-graph-3d": "^1.29.1",
     "react-router-dom": "^7.14.2",
     "tailwindcss": "^4.2.4",
+    "three": "^0.185.0",
     "zustand": "^5.0.12"
   },
   "devDependencies": {

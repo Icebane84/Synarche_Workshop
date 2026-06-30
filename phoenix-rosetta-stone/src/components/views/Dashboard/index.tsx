@@ -76,17 +76,17 @@ export const DashboardView: React.FC = () => {
           ) : (
             <div>
               <div className="text-2xl font-bold text-white/90 mb-2">
-                {stats?.coherence ?? 0}%
+                {stats?.coherence_index ?? 0}%
               </div>
               <StatBar
                 label="Alignment"
-                value={stats?.coherence ?? 0}
+                value={stats?.coherence_index ?? 0}
                 max={100}
                 colorClass="bg-coherence-indigo"
                 showDetails={false}
               />
               <div className="text-[10px] text-white/40 mt-1 text-right">
-                Resonance Drift: {100 - (stats?.coherence ?? 0)}%
+                Resonance Drift: {100 - (stats?.coherence_index ?? 0)}%
               </div>
             </div>
           )}
@@ -100,7 +100,7 @@ export const DashboardView: React.FC = () => {
           ) : (
             <div>
               <div className="text-2xl font-bold text-white/90 mb-1" style={{ color: theme.accent }}>
-                ✨ {player?.stardust ?? 0}
+                ✨ {stats?.stardust_available ?? 0}
               </div>
               <div className="text-[10px] text-white/40 mt-2">
                 Current spending capacity on cognitive directives.
@@ -209,7 +209,7 @@ export const DashboardView: React.FC = () => {
                 />
                 <StatBar
                   label="Ascension"
-                  value={stats?.form_ascension ?? 0}
+                  value={stats?.form_ascension_state ?? 0}
                   colorClass="bg-form-ascension"
                 />
               </div>

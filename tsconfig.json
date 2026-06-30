@@ -15,7 +15,8 @@
       "@universe/*": ["./axion-core/_universe/*"],
       "@logging": ["./axion-core/src/system/logging/index.ts"],
       "@logging/*": ["./axion-core/src/system/logging/*"],
-      "@utils/*": ["./axion-core/src/utils/*"]
+      "@utils/*": ["./axion-core/src/utils/*"],
+	  "@synarche": ["./packages"]
     }
   },
   "exclude": [

@@ -1,7 +1,7 @@
 /** @fabric GVRN.Core.Fabric.State.Cognitive */
 
 import type { ChatMessage } from "@essence/index";
-import { supabase } from "@nexus/index";
+import { supabase } from "../services/supabaseClient";
 import { create } from "zustand";
 
 interface CognitiveState {

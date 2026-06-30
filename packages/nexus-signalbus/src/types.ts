@@ -16,3 +16,12 @@ export interface NexusSignalEnvelope<T = Record<string, any>> {
 }
 
 export type NexusSignalListener = (signal: NexusSignalEnvelope) => void;
+
+export interface AscendEraPayload {
+  nextStage: string;
+}
+
+export interface ColonizePlanetPayload {
+  planetName: string;
+}
+

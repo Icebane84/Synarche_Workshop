@@ -22,10 +22,10 @@ export function useRealtime<T extends PublicTable>(
     if (!enabled) return;
 
     const channel = supabase
-      .channel(`realtime:${table}:${event}:${Math.random()}`)
+      .channel(`realtime:${String(table)}:${event}:${Math.random()}`)
       .on(
         "postgres_changes",
-        { event, schema: "public", table },
+        { event: event as any, schema: "public", table: String(table) },
         callback,
       )
       .subscribe();

@@ -43,7 +43,7 @@ export const ActivityRail: React.FC = () => {
                   </span>
                 </div>
                 <div className="text-white/80 leading-normal line-clamp-3 select-text">
-                  {entry.details || entry.description}
+                  {entry.outcome || (entry.payload ? JSON.stringify(entry.payload) : "")}
                 </div>
                 {entry.triggered_by && (
                   <div className="text-[9px] text-celestial-blue/60 mt-0.5 text-right font-mono font-semibold">

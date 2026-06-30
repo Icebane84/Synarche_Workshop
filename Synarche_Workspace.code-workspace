@@ -33,7 +33,7 @@
     ],
 
     "editor.fontSize": 16,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultFormatter": "biomejs.biome",
     "editor.semanticHighlighting.enabled": true,
     "editor.guides.bracketPairs": true,

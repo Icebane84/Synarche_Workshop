@@ -3,10 +3,10 @@
  * Paginated memory_entries with live INSERT subscription.
  */
 
-import { useState, useEffect, useCallback } from "react";
-import { supabase } from "@/core/supabase";
+import type { MemoryEntry } from "@core/supabase";
+import { supabase } from "@core/supabase";
+import { useCallback, useEffect, useState } from "react";
 import { useRealtime } from "./useRealtime";
-import type { MemoryEntry } from "@/core/supabase";
 
 interface MemoryFilters {
   domain?: string;

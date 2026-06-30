@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { supabase } from "@/core/supabase";
-import { LivePill } from "@/components/ui/LivePill";
+import React, { useState, useEffect, useMemo } from "react";
+import { supabase } from "@core/supabase";
+import { LivePill } from "@components/ui/LivePill";
+import { ChronosTimeline, TimelineEvent } from "@components/layout/ChronosTimeline";
 
 export const ChronicleView: React.FC = () => {
   const [episodes, setEpisodes] = useState<any[]>([]);
@@ -24,6 +25,18 @@ export const ChronicleView: React.FC = () => {
     fetchChronicle();
   }, []);
 
+  // Map episodes to Chronos Timeline events format
+  const timelineEvents = useMemo<TimelineEvent[]>(() => {
+    return episodes.map((ep) => ({
+      id: ep.id.toString(),
+      title: `Episode #${ep.id}`,
+      status: ep.status === "In Progress" || ep.status === "To Do" ? ep.status : "Completed",
+      priority: Math.abs(ep.coherence_delta || 0) > 5 ? "High" : (ep.memory_count || 0) > 1 ? "Medium" : "Low",
+      timestamp: Date.parse(ep.started_at || new Date().toISOString()),
+      notes: ep.summary || "Summary generation pending.",
+    }));
+  }, [episodes]);
+
   return (
     <div className="space-y-6 animate-appear">
       {/* Header */}
@@ -37,6 +50,9 @@ export const ChronicleView: React.FC = () => {
           </p>
         </div>
       </div>
+
+      {/* Interactive Timeline */}
+      {episodes.length > 0 && <ChronosTimeline events={timelineEvents} />}
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column: Episodes List */}

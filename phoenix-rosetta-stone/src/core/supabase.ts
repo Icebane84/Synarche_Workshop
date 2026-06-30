@@ -1,6 +1,7 @@
 /** @nexus GVRN.Core.Nexus.Backend */
 
 import { createClient } from "@supabase/supabase-js";
+export * from "@synarche/supabase";
 
 // Environment variables must be set in .env.local
 const supabaseUrl =
