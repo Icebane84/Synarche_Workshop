@@ -33,7 +33,7 @@ skills:
   path: /.agent/skills/core/plan-writing
 - documented: true
   id: self-improvement
-  path: /.agent/skills/core/self-improvement
+  path: /.agent/skills/self-improvement
 - documented: true
   id: sovereign-commands
   path: /.agent/skills/core/sovereign-commands

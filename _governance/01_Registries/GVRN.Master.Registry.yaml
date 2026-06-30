@@ -19797,7 +19797,7 @@ SKL.SELF-IMPROVE.GENESIS-001:
   official_name: SKILL.md
   parsed_relations:
   - REF:GVRN.Master.Registry
-  path: .agent/skills/core/self-improvement/SKILL.md
+  path: .agent/skills/self-improvement/SKILL.md
   relations: 'REF: GVRN.Master.Registry'
   status: '[ACTIVE]'
   version: v15.0 [OMEGA]
@@ -19808,7 +19808,7 @@ SKL.TEMPLATE.{{NAME}}:
   official_name: SKILL-TEMPLATE.md
   parsed_relations:
   - GOVERN_BY:CORE.Codex.ThePhoenixCodex
-  path: .agent/skills/core/self-improvement/assets/SKILL-TEMPLATE.md
+  path: .agent/skills/self-improvement/assets/SKILL-TEMPLATE.md
   relations: 'GOVERN_BY: CORE.Codex.ThePhoenixCodex'
   status: '[DRAFT]'
   version: v15.0 [OMEGA]
@@ -21054,7 +21054,7 @@ SYNG.SKILL.SelfImprove:
   official_name: README.md
   parsed_relations:
   - REF:GVRN.Master.Registry
-  path: .agent/skills/core/self-improvement/README.md
+  path: .agent/skills/self-improvement/README.md
   relations: 'REF: GVRN.Master.Registry'
   status: '[ACTIVE]'
   version: v15.0 [OMEGA]

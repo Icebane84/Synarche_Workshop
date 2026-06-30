@@ -22327,7 +22327,7 @@
     "parsed_relations": [
       "REF:GVRN.Master.Registry"
     ],
-    "path": ".agent/skills/core/self-improvement/SKILL.md",
+    "path": ".agent/skills/self-improvement/SKILL.md",
     "content_hash": "d34efbc68228dd714597ab77a370f29428d6c05d6f9930fbab4beacaf47c31d0"
   },
   "SKL.TEMPLATE.{{NAME}}": {
@@ -22340,7 +22340,7 @@
     "parsed_relations": [
       "GOVERN_BY:CORE.Codex.ThePhoenixCodex"
     ],
-    "path": ".agent/skills/core/self-improvement/assets/SKILL-TEMPLATE.md",
+    "path": ".agent/skills/self-improvement/assets/SKILL-TEMPLATE.md",
     "content_hash": "53534cc8bd113b9655202afe0b71431b48ef202a362127c6a907656a328f24c8"
   },
   "SOV.PLAY.Execution": {
@@ -23775,7 +23775,7 @@
     "parsed_relations": [
       "REF:GVRN.Master.Registry"
     ],
-    "path": ".agent/skills/core/self-improvement/README.md",
+    "path": ".agent/skills/self-improvement/README.md",
     "content_hash": "fd2ba14be4123880f63649bec4aa7d7b186d75fdbee7893c2fa50c97a241c7be"
   },
   "SYNG.SKILL.SovereignCmds": {
