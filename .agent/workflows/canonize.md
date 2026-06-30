@@ -29,7 +29,7 @@ Once approved, the Agent applies the `causal_origin` and `genesis_spark` directl
 ### Step 3: Run the Canonization Ritual
 Run the backend ritual to validate and seal the artifact:
 ```bash
-python axion-core/scripts/canonize_ritual.py --target "{{target}}"
+python axion-core/scripts/register_canonical.py --target "{{target}}"
 ```
 *Note: If the `causal_origin` is missing, the registry validation will fail.*
 

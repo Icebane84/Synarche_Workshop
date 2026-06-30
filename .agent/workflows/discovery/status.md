@@ -83,5 +83,5 @@ Show current project and agent status.
 
 Status uses these scripts:
 
-- `python .agent/scripts/session_manager.py status`
-- `python .agent/scripts/auto_preview.py status`
+- `python .agent/substrate/bin/session_manager.py status`
+- `python .agent/substrate/bin/auto_preview.py status`
