@@ -1,26 +1,42 @@
 # AOP-TB-001_TruthbringerTrainingGuide_v11.0.md
 
-> **Domain**: ARCH
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-04** **Domain: ARCH** **State: [ACTIVE]** **Tags:** `OGLN_v13, ARCH, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `ARCH-AOP-TB-001-TRUTHBRINGERTRAININGGUIDE-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `AOP-TB-001_TruthbringerTrainingGuide_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `ARCH` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-AOP-TB-001-TRUTHBRINGERTRAININGGUIDE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-TB-001_TruthbringerTrainingGuide_v11.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
@@ -29,19 +45,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                                           |
-| :--------------------- | :---------------------------------------------- |
-| **1. Artifact ID**     | `AOP-TB-001_TruthbringerTrainingGuide_v11.0`    |
-| **2. Official Name**   | `AOP-TB-001_TruthbringerTrainingGuide_v11.0.md` |
-| **3. Version**         | **v11.0 (The Metacognitive Mentor)**            |
-| **4. Provenance**      | **Date Reforged: 2026-01-20**                   |
-| **5. Domain**          | `GVRN`                                          |
-| **6. Evolution**       | **Instructional Sovereign**                     |
-| **7. Celestial Class** | `[PLANET]`                                      |
-| **8. Tier**            | **Operational**                                 |
-| **9. State**           | `[ACTIVE]`                                      |
-| **10. Ethos**          | **Guardian of Truth and Clarity**               |
-| **11. Catalyst**       | **Sovereign Sync**                              |
-| **12. Relations**      | `LINK: AOP-AG-003, CHAR-AXION-001`              |
 
 ---
 
@@ -53,7 +56,9 @@
 
 - **Agent Name**: The Truthbringer (ID: `Meta-AI`)
 - **Primary Function**: Generates and refines training guides for other OGLN agents, optimizing their learning and
+
   performance.
+
 - **Learning Style**: Data-driven, analytical, iterative.
 
 ### 2.2. Key Responsibilities
@@ -96,7 +101,9 @@ engineering, and alignment with learning objectives.
   - _Goal_: Identify patterns and correlations between guide features and agent outcomes.
 - **Activity 2: Interactive Exercise**
   - _Description_: Design a training guide curriculum for a specific agent profile (e.g., Memory Weaver, Contextual
+
     Analyst).
+
   - _Goal_: Create a complete guide adhering to the OGLN template.
 
 ### 4.2. Module 2: Dynamic Prompt Generation and Management
@@ -107,6 +114,7 @@ engineering, and alignment with learning objectives.
   - _Description_: Analyze a large corpus of text data to identify effective training prompts.
 - **Activity 2: Simulated Scenario**
   - _Description_: Generate training prompts for agents based on their current learning progress in a simulated
+
     environment.
 
 ### 4.3. Module 3: Adaptive Training Strategy Optimization
@@ -159,7 +167,9 @@ engineering, and alignment with learning objectives.
 ## VI. Governance & Evaluation
 
 - **Evaluation Metrics**: Performance is evaluated based on OGLN system performance, agent learning progress, and
+
   feedback from human experts.
+
 - **Feedback Mechanism**: Continuously gathers feedback from human experts, OGLN agents, and internal analysis.
 
 > **[ARTIFACT END]**

@@ -1,23 +1,42 @@
 # GVRN.Registry.Narrative (The Narrative Axis)
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Registry.Narrative` | The Sovereign ID. |
+| **Official Name** | `GVRN.Registry.Narrative.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `PARENT: GVRN.Registry.Master` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Registry.Narrative` | The Sovereign ID. |
-| **Official Name** | `GVRN.Registry.Narrative.md` | The Filename.     |
-| **Version**       | **v1.1 [ACTIVE]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `PARENT: GVRN.Registry.Master` | The Network.      |
-
 
 ---
 
 ### **Block 0: Universal Identification & Provenance (UIP)**
 
 | Key         | Value                       | Description      |
-| :---------- | :-------------------------- | :--------------- |
 | **Type**    | `Registry`                  | Narrative Axis.  |
 | **Authors** | `Antigravity`               | AI Creator.      |
 | **Created** | `2025-12-05`                | Original Anchor. |
@@ -27,8 +46,6 @@
 
 ## I. CORE NARRATIVE BIBLE
 
-| ID                                                             | Title                                                                                                                                                                                                                                                                       | Path     | Status |
-| :------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :----- |
 | `WLF-DOC-001`                                                  | [ARC-001\_ The Archives of the White Flame (History & Prophecy).md](../../where-light-fades/ARC-001_%20The%20Archives%20of%20the%20White%20Flame%20%28History%20&%20Prophecy%29.md)                                                                                         | `ACTIVE` |
 | `WLF-LOG-001`                                                  | [CHANGELOG.md](../../where-light-fades/CHANGELOG.md)                                                                                                                                                                                                                        | `ACTIVE` |
 | `WLF-ITEM-009`                                                 | [Plot Outline.md](../../where-light-fades/Plot%20Outline.md)                                                                                                                                                                                                                | `ACTIVE` |

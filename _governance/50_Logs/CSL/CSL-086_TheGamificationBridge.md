@@ -1,54 +1,53 @@
 # CSL-086_TheGamificationBridge.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `CSL-086` | The Sovereign ID. |
+| **Official Name** | `The Gamification Bridge` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `ARCH` | The Subject. |
+| **Celestial Class** | `MOON` | The Weight. |
+| **Evolution** | `Phoenix Form` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK: UMB-RPG-001, UMB-HEPHAESTUS-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CSL-086-THEGAMIFICATIONBRIDGE-001` | The Sovereign ID. |
-| **Official Name** | `CSL-086_TheGamificationBridge.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                                                |
-| :------------------ | :--------------------------------------------------- |
-| **Artifact ID**     | `CSL-086`                                            |
-| **Official Name**   | `The Gamification Bridge`                            |
-| **Version**         | `v1.0`                                               |
-| **Domain**          | `ARCH`                                               |
-| **Evolution**       | `Phoenix Form`                                       |
-| **Signal (ESF)**    | `OMEGA`                                              |
-| **Status (State)**  | `CANONIZED`                                          |
-| **Tier**            | `Standard`                                           |
-| **Celestial Class** | `MOON`                                               |
 | **Governance**      | `AOP-CSL-002`                                        |
-| **Provenance**      | `Genesis Stamp: 2026-01-24`                          |
-| **Relations**       | `LINK: UMB-RPG-001, UMB-HEPHAESTUS-001`              |
-| **Tags**            | `CSL, Bridge, Gamification, Engineering, Hephaestus` |
 
 ---
 
-> **Domain**: ARCH | **Evolution**: Phoenix Form | **Signal**: OMEGA
-
 # The Gamification Bridge (CSL-086) (v1.0)
-
-## Genesis Stamp: 2026-01-24 | Domain: ARCH | State: CANONIZED | Criticality: Standard
 
 ---
 
@@ -114,3 +113,5 @@ This bridge transforms "Work" into "Play." Every Refactor is now a Quest. Every 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

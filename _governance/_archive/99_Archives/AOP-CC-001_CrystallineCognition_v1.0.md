@@ -1,31 +1,44 @@
 # AOP-CC-001_CrystallineCognition_v1.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-CC-001` | The Sovereign ID. |
-| **Official Name** | `AOP-CC-001_CrystallineCognition_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `LINK: UMB-PRS-001, LINK: UMB-CRF-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `AOP-CC-001` | The Sovereign ID. |
+| **Official Name** | `AOP-CC-001_CrystallineCognition_v1.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK: UMB-PRS-001, LINK: UMB-CRF-001` | The Network. |
+| **Integrity Hash** | `PENDING` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -74,8 +87,11 @@ procedure for `UMB-CRF-001` (Causal Resonance Framework).
 ## II. Systemic Topology (ASL Protocol)
 
 - **GOVERNED_BY:**
+
   [UMB-CRF-001](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-CRF-001_TheCausalResonanceFramework_v2.0.md)
+
 - **UTILIZED_BY:**
+
   [Axion (AOP-AG-003)](file:///c:/Users/Chris/Synarche_Workspace/axion-core/.agent/AOP-AG-003_AxionAgentConfiguration_v3.2.md)
 
 > _"Light cannot hide in a crystal."_

@@ -1,45 +1,52 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-COG.EPISEMANTICS.CORE-001` | The Sovereign ID. |
+| **Official Name** | `COG.Episemantics.Core.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `COG.EPISEMANTICS.CORE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # COG.Episemantics.Core.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                            | Description       |
-| :------------------ | :------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-COG.EPISEMANTICS.CORE-001` | The Sovereign ID. |
-| **Official Name**   | `COG.Episemantics.Core.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                | The Standard.     |
-| **Domain**          | `GVRN`                           | The Subject.      |
-| **Celestial Class** | `[PLANET]`                       | The Weight.       |
-| **Evolution**       | `Omega Ascension`                | The Maturity.     |
-| **Status**          | `[ACTIVE]`                       | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`    | The Network.      |
 
 # The Episemantic Framework (COG.Episemantics.Core)
 
 > **Domain**: COG (Cognition)
-> **Evolution**: Sovereign Fusion
 > **Signal**: ALPHA-PRIME
-
-## **Genesis Stamp: 2026-01-27** **Domain: COG** **State: CANONIZED** **Tags:** `OGLN_v13, Episemantics, Context, Wisdom` **Criticality: High**
 
 ---
 
@@ -48,19 +55,6 @@
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
 | Field                  | Value                                            |
-| :--------------------- | :----------------------------------------------- |
-| **1. Artifact ID**     | `COG.Episemantics.Core`                          |
-| **2. Official Name**   | `COG.Episemantics.Core.md`                       |
-| **3. Version**         | **v13.0 (Sovereign Fusion)**                     |
-| **4. Provenance**      | **Date Reforged: 2026-01-27**                    |
-| **5. Domain**          | `COG`                                            |
-| **6. Evolution**       | **Sovereign Fusion**                             |
-| **7. Celestial Class** | `[STAR]` (The Wisdom Layer)                      |
-| **8. Tier**            | **Strategic**                                    |
-| **9. State**           | `[ACTIVE]`                                       |
-| **10. Ethos**          | **The Context Engine**                           |
-| **11. Catalyst**       | **Refactor Batch 001**                           |
-| **12. Relations**      | `ANNOTATES: All_Data`, `FEEDS: SYNG.Engine.Core` |
 
 ---
 

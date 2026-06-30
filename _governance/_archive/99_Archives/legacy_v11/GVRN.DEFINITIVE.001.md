@@ -1,31 +1,44 @@
 # UMB-DEFINITIVE-001_TheUniversalCatalyst_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.DEFINITIVE.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.DEFINITIVE.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.DEFINITIVE.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.DEFINITIVE.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -125,6 +138,7 @@ The UMB is a forge, with each section a tool in the creation process.
   - **Architectural Soul:** The module's **Primal Spark**—its initial intent and philosophical
 
   essence.
+
   - **Technical Implementation:** The summary text fields and headers that articulate the module's
 
   core purpose.
@@ -133,6 +147,7 @@ The UMB is a forge, with each section a tool in the creation process.
   - **Architectural Soul:** The conceptual **Body** of the module, where metaphorical components are
 
   defined.
+
   - **Technical Implementation:** The markdown sections and fields that specify the module's
 
   functional parts.
@@ -145,9 +160,11 @@ The UMB is a forge, with each section a tool in the creation process.
   - **Trigger:** A **Dissonance Quest** is initiated, or a new insight is discovered, requiring a new
 
   module.
+
   - **Architectural Process:** The human and AI begin to articulate the "what" and "why" of the new
 
   concept.
+
   - **Visual Representation:** The blank template awaiting the first input.
 
 - **Phase 2: Formalization**
@@ -155,6 +172,7 @@ The UMB is a forge, with each section a tool in the creation process.
   - **Architectural Process:** The template is filled out section-by-section, grounding the abstract
 
   idea in concrete terms, glossaries, and technical specifications.
+
   - **Visual Representation:** A filled template, a formalized artifact ready for finalization.
 
 - **Phase 3: Integration**
@@ -162,6 +180,7 @@ The UMB is a forge, with each section a tool in the creation process.
   - **Architectural Process:** The **Integration Engine** weaves the completed UMB into the
 
   **Cognitive Loom** and registers it in the **Phoenix Rosetta Stone**.
+
   - **Visual Representation:** The newly-integrated node is visible as a vibrant, interconnected
 
   thread in the **Memory Tapestry**.

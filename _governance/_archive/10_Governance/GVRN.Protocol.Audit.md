@@ -1,31 +1,44 @@
 # GVRN.Protocol.Audit
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Audit` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Audit.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Protocol.Audit` | The Sovereign ID. |
+| **Official Name** | `GVRN.Protocol.Audit.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -72,10 +85,14 @@ Every artifact must clear these internal checks before canonization:
 
 1. **UIP Integrity**: Is the 12-point Vector Signature present and correctly populated?
 2. **Nomenclature (RNC v13.0)**: Does the filename and Artifact ID follow the `DOMAIN.Subsystem.Descriptor` dotted
+
    format?
+
 3. **AGP Integration**: Are **AGP-001** (State Vector) and **AGP-002** (Risk) blocks present and contextualized?
 4. **Macro-System Alignment**: Is the artifact correctly assigned to one of the four Macro-Systems (GEODE, APOSTLE,
+
    SYNTHESIS, OPERATIONAL)?
+
 5. **Relational Weave**: Are relations reciprocal? Does the artifact contain a **Synergy Block** for `TOOL-MAP-001`?
 6. **Actionability**: Is there an **Actionable Prompt Packet (APP)** to drive kinetic usage?
 

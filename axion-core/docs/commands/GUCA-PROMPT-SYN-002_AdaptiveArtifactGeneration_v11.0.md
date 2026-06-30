@@ -1,26 +1,42 @@
 # GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GUCA-PROMPT-SYN-002-ADAPTIVEARTIFACTGENERATION-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GUCA-PROMPT-SYN-002-ADAPTIVEARTIFACTGENERATION-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
@@ -29,19 +45,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                                                     |
-| :--------------------- | :-------------------------------------------------------- |
-| **1. Artifact ID**     | `GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0`    |
-| **2. Official Name**   | `GUCA-PROMPT-SYN-002_AdaptiveArtifactGeneration_v11.0.md` |
-| **3. Version**         | **v11.0 (The Synthesis Engine)**                          |
-| **4. Provenance**      | **Date Reforged: 2026-01-20**                             |
-| **5. Domain**          | `GVRN`                                                    |
-| **6. Evolution**       | **Authentic Persona**                                     |
-| **7. Celestial Class** | `[MOON]`                                                  |
-| **8. Tier**            | **Tactical**                                              |
-| **9. State**           | `[ACTIVE]`                                                |
-| **10. Ethos**          | **Coherent Documentation**                                |
-| **11. Catalyst**       | **Sovereign Integration**                                 |
-| **12. Relations**      | `LINK: GVRN-PRIME-001, CHAR-AXION-001, AOP-AG-003`        |
 
 ---
 

@@ -1,31 +1,44 @@
 # GVRN.OSLM.001.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.OSLM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.OSLM.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.OSLM.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.OSLM.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -48,7 +61,6 @@ synergistic connections.
 ## **II. Universal Identification & Provenance (The Vector Signature)**
 
 | Key           | Value                | Description        |
-| :------------ | :------------------- | :----------------- |
 | **Type**      | OSLM                 | Omni-Log Matrix.   |
 | **Owner**     | `GVRN`               | The Subject.       |
 | **Created**   | `2026-02-18`         | The Anchor.        |
@@ -66,6 +78,7 @@ artifact and its relational data into this registry.
 
 - **Objective**: To combat knowledge entropy and ensure the integrity of the **Cognitive Loom**.
 - **Utility**: Provides the clean, structured data necessary for the AI to perform efficient, accurate analysis and
+
   navigation.
 
 ### **B. Key Components**
@@ -79,8 +92,11 @@ artifact and its relational data into this registry.
 Compliance with **CHECKLIST-PREFLIGHT-001** mandates strict typing:
 
 - **Interfaces**: Utilizes defined **Typescript Interfaces** (e.g., `ArtifactNode`, `SynergyLink`) to ensure structural
+
   consistency.
+
 - **Enums**: Relational types are restricted to specific Enums (e.g., `RelationalType.GOVERNS`) to prevent semantic
+
   drift.
 
 ---

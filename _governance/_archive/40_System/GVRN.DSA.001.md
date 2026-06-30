@@ -1,31 +1,44 @@
 # UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.DSA.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.DSA.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `SPECIFIES: DSA_Engine, FEEDS: AISTF` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.DSA.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.DSA.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `SPECIFIES: DSA_Engine, FEEDS: AISTF` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -93,7 +106,9 @@ requirements and data transformations necessary to convert a conceptual seed int
 
 1. **Parser**: Identifies the core concept and its grammatical intent.
 2. **Contextualization Engine**: Cross-references the concept with the **Cognitive Loom** to find relevant lexicon and
+
    relational vectors.
+
 3. **AOP-Generator**: Synthesizes the parsed concept into a "What/How/Why" operational mandate.
 4. **UMB-Generator**: Translates the AOP mandate into technical architectural details (Inputs, Logic, Schemas).
 5. **GUCA-Generator**: Formulates the UMB technicalities into user-facing command syntax and operational instructions.

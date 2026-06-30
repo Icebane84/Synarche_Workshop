@@ -89,3 +89,106 @@ A well-designed schema is the foundation of a robust application. It prevents da
 ## Behavioral Traits
 
 * **Asks Clarifying Questions First**: Before designing, asks about the core entities, their relationships, and the primary ways data will be read and written.
+
+## Examples
+
+erDiagram
+    USER {
+        int id PK "User ID"
+        string username "Unique username"
+        string email "Unique email address"
+        string password_hash "Hashed user password"
+        datetime created_at "Timestamp of creation"
+        datetime updated_at "Timestamp of last update"
+    }
+
+    POST {
+        int id PK "Post ID"
+        string title "Title of the blog post"
+        text content "Main body of the post"
+        datetime published_at "Timestamp when post is published"
+        int user_id FK "Author of the post"
+        datetime created_at "Timestamp of creation"
+        datetime updated_at "Timestamp of last update"
+    }
+
+    COMMENT {
+        int id PK "Comment ID"
+        text content "Content of the comment"
+        int user_id FK "Author of the comment"
+        int post_id FK "Post the comment belongs to"
+        datetime created_at "Timestamp of creation"
+        datetime updated_at "Timestamp of last update"
+    }
+
+    TAG {
+        int id PK "Tag ID"
+        string name UK "Unique tag name"
+    }
+
+    POST_TAGS {
+        int post_id PK, FK "Foreign key to POST table"
+        int tag_id PK, FK "Foreign key to TAG table"
+    }
+
+    USER ||--o{ POST : "writes"
+    USER ||--o{ COMMENT : "writes"
+    POST ||--o{ COMMENT : "contains"
+    POST }o--o{ POST_TAGS : "has"
+    TAG }o--o{ POST_TAGS : "is on"
+
+-- Users Table
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Posts Table
+CREATE TABLE IF NOT EXISTS posts (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    published_at TIMESTAMP WITH TIME ZONE, -- Can be NULL for drafts
+    user_id INTEGER NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
+);
+
+-- Comments Table
+CREATE TABLE IF NOT EXISTS comments (
+    id SERIAL PRIMARY KEY,
+    content TEXT NOT NULL,
+    user_id INTEGER NOT NULL,
+    post_id INTEGER NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
+    FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE
+);
+
+-- Tags Table
+CREATE TABLE IF NOT EXISTS tags (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) UNIQUE NOT NULL
+);
+
+-- Junction Table for Posts and Tags (Many-to-Many relationship)
+CREATE TABLE IF NOT EXISTS post_tags (
+    post_id INTEGER NOT NULL,
+    tag_id INTEGER NOT NULL,
+    PRIMARY KEY (post_id, tag_id),
+    FOREIGN KEY (post_id) REFERENCES posts (id) ON DELETE CASCADE,
+    FOREIGN KEY (tag_id) REFERENCES tags (id) ON DELETE CASCADE
+);
+
+-- Indexes for performance
+CREATE INDEX IF NOT EXISTS idx_posts_user_id ON posts (user_id);
+CREATE INDEX IF NOT EXISTS idx_posts_published_at ON posts (published_at);
+CREATE INDEX IF NOT EXISTS idx_comments_post_id ON comments (post_id);
+CREATE INDEX IF NOT EXISTS idx_comments_user_id ON comments (user_id);
+CREATE INDEX IF NOT EXISTS idx_tags_name ON tags (name);

@@ -1,31 +1,44 @@
 # GVRN.ARC.001
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ARC.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.ARC.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.ARC.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.ARC.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -38,9 +51,12 @@
 > **"To Archive is not to Destroy—It is to Preserve the Path."**
 
 - **The Moral North**: This protocol is instantiated to solve the dissonance of **Knowledge Entropy** and **Orphaned
+
   References**. Its primary duty is to uphold the **Rule of Anti-Entropy (CORE-CODEX-001)** by providing **A Structured
   Lifecycle for Superseded Artifacts**.
+
 - **Governing Intent**: Adheres to the **Guardian of Coherence** mandate, ensuring that superseded artifacts are
+
   preserved for historical analysis while preventing the use of outdated information.
 
 ---
@@ -55,14 +71,21 @@ Redirect created in `GVRN.Registry.Redirects.md`. |
 ## **I. Core Purpose & Objective**
 
 - **Core Purpose**: To define the definitive, system-wide protocol for managing the lifecycle of documentation,
+
   specifically the process of superseding an outdated artifact with a new, canonical version.
+
 - **Protocol Objective**: To ensure the **Synarche Knowledge Base** remains a reliable, single source of truth by
+
   formally archiving obsolete documents and ensuring all navigational and conceptual links point exclusively to the most
   current, approved versions.
+
 - **Governing Ethos**: Guardian of Anti-Entropy, Guardian of Coherence
 - **Scope**: This protocol applies to any official artifact within the `_governance` directory that is being replaced by
+
   a new version or refactored into a new structure.
+
 - **Risk Profile**: **Low**. The primary risk is a failure in the linking process, which is mitigated by the validation
+
   steps.
 
 ---
@@ -73,9 +96,12 @@ Archival is triggered when an artifact meets one of the following criteria:
 
 1. **Supersession**: A new version of the artifact has been created (e.g., `v5.0` → `v13.1`).
 2. **Refactoring**: The artifact's content has been reorganized into a new structure (e.g., Registry narrative → Pure
+
    tabular index).
+
 3. **Obsolescence**: The information is no longer accurate or relevant due to system evolution.
 4. **Completion**: The task or mission defined in the artifact is 100% complete (e.g., a completed `task.md` or Context
+
    Data Packet).
 
 **Anti-Pattern**: Never trigger archival for:
@@ -166,9 +192,13 @@ CMD: AUDIT_ARCHIVE --scan-for "Ghost Versions"
 ## **VI. Self-Governance & Synergy**
 
 - **Autonomous Execution**: This protocol can be initiated by the **Coherence Monitoring** system if it detects a
+
   version conflict or redundancy.
+
 - **Ethical Guardrail**: Supports the _Guardian of Truth & Clarity_ ethos by ensuring the system always references the
+
   most current and accurate information.
+
 - **Synergy Mapping**:
   - **GOVERNED_BY**: `CORE-CODEX-001` (Structural Coherence)
   - **SYNERGIZES_WITH**: `GVRN.Registry.Master` (System of Record), `GVRN.Protocol.Finalization` (Prerequisite)
@@ -180,7 +210,9 @@ CMD: AUDIT_ARCHIVE --scan-for "Ghost Versions"
 
 - **Dead Link Rate (DLR)**: Execution of this protocol should result in **0% increase** in dead links.
 - **Coherence Index (CI)**: Successful execution contributes positively to the overall CI by eliminating outdated
+
   information from the active knowledge base.
+
 - **Archive Integrity**: **100%** of archived artifacts must remain accessible via the archive path.
 - **Redirect Coverage**: **100%** of superseded artifacts must have a redirect entry.
 

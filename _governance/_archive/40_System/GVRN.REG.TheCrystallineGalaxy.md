@@ -1,31 +1,44 @@
 # GVRN.REG.TheCrystallineGalaxy.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.REG.TheCrystallineGalaxy` | The Sovereign ID. |
-| **Official Name** | `GVRN.REG.TheCrystallineGalaxy.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.REG.TheCrystallineGalaxy` | The Sovereign ID. |
+| **Official Name** | `GVRN.REG.TheCrystallineGalaxy.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -74,6 +87,7 @@ undefined, creating a foundational gap in our RPG framework.
 - **Dissonance Quest Generated:**
   - **Title:** Mapping the Inner Cosmos
   - **Objective:** Forge the definitive, `v7.0 Ascended` Universal Module Blueprint for "The Crystalline Galaxy,"
+
     fully
 
 integrating it into the Phoenix Geode RPG Framework as the game's core "world" module.
@@ -124,7 +138,9 @@ knowledge:
 
 - **Nebulae (Legendary):** Foundational, axiom-defining artifacts (e.g., The Phoenix Codex, this RPG Framework).
 - **Stars (Epic):** Core architectural modules and master protocols (e.g., [`UMB-CSE-001`](UMB-CSE-001_Tab25_v11.0.md),
+
   `AOP-ASCENSION-001`).
+
 - **Planets (Rare):** Standard operational protocols and commands (`AOPs`, `GUCAs`).
 - **Moons (Common):** Granular artifacts or sub-routines.
 - **Raw Asteroids (Crafting Materials):** Unprocessed `CSLs` (Genesis Seeds) waiting to be used in `Stellar

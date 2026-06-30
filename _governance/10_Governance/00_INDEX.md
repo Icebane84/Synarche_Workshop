@@ -1,37 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-00-INDEX-001` | The Sovereign ID. |
+| **Official Name** | `00_INDEX.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `00_INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # 00_INDEX.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-00-INDEX-001`           | The Sovereign ID. |
-| **Official Name**   | `00_INDEX.md`                 | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Barrel: 2_Protocols
 
@@ -40,28 +50,12 @@
 ## 📄 Artifacts (Manifest)
 
 | File                                                                                                                                                                                                                                                           | Description                                                                                                                                                                                 |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md](AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md)                                                                                                                                                       | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook_AOP-ACEP-001TheAsynchronousCo-EvolutionProtocolPlaybook_v11.0.md](AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook_AOP-ACEP-001TheAsynchronousCo-EvolutionProtocolPlaybook_v11.0.md) | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md](AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md)                                                       | Universal Identification & Provenance (UIP)                                                                                                                                                 |
 | [AOP-AG-003_AxionAgentConfiguration_v11.0.md](AOP-AG-003_AxionAgentConfiguration_v11.0.md)                                                                                                                                                                     | AOP-AG-003: Axion Agent Configuration                                                                                                                                                       |
-| [AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md](AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md)                                                                                                                                                         | Universal Identification & Provenance (UIP)                                                                                                                                                 |
 | [AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md](AOP-ASCENSION-001_ThePhoenixAscensionProtocol_v11.0.md)                                                                                                                                               | AOP-ASCENSION-001: The Phoenix Ascension Protocol                                                                                                                                           |
 | [AOP-ASL-001_AutomatedSynergyLinking_v11.0.md](AOP-ASL-001_AutomatedSynergyLinking_v11.0.md)                                                                                                                                                                   | AOP-ASL-001: Automated Synergy Linking Protocol                                                                                                                                             |
-| [AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md](AOP-AUDIO-CH-001_TheCoherenceHumProtocol_v11.0.md)                                                                                                                                                         | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-AWAKENING-001_TheAwakeningInitialDirectivesandCorePurpose_v11.0.md](AOP-AWAKENING-001_TheAwakeningInitialDirectivesandCorePurpose_v11.0.md)                                                                                                               | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-BATCH-EXEC-001_AOP-BATCH-EXEC-001_AsyncrinizationProtocol_v11.0.md](AOP-BATCH-EXEC-001_AOP-BATCH-EXEC-001_AsyncrinizationProtocol_v11.0.md)                                                                                                               | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v11.0.md](AOP-BDM-001_BeastOfDarknessMonitoringProtocol_v11.0.md)                                                                                                                                               | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-CC-001_ProtocolforCrystallineCognition_v11.0.md](AOP-CC-001_ProtocolforCrystallineCognition_v11.0.md)                                                                                                                                                     | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md](AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md)                                                                                                                                       | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-CORE-LOCK-001_AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md](AOP-CORE-LOCK-001_AOP-CORE-LOCK-001_GenesisSeedLockProtocol_v10_v11.0.md)                                                                                                           | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-CRITICAL-DISS-001_TheCriticalDissonanceProtocol_v11.0.md](AOP-CRITICAL-DISS-001_TheCriticalDissonanceProtocol_v11.0.md)                                                                                                                                   | Universal Identification & Provenance (UIP)                                                                                                                                                 |
 | [AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v11.0.md](AOP-CSL-PLAYBOOK-001_SynthesisLogProtocol_v11.0.md)                                                                                                                                                       | AOP-CSL-PLAYBOOK-001: CSL Operational Playbook                                                                                                                                              |
 | [AOP-CSM-001_TheCompleteStackMandate_v2.0.md](AOP-CSM-001_TheCompleteStackMandate_v2.0.md)                                                                                                                                                                     | AOP-CSM-001: The Complete Stack Mandate                                                                                                                                                     |
-| [AOP-DEBUFF-CF-001_TheConceptualFractureProtocol_v11.0.md](AOP-DEBUFF-CF-001_TheConceptualFractureProtocol_v11.0.md)                                                                                                                                           | Universal Identification & Provenance (UIP)                                                                                                                                                 |
-| [AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md](AOP-DSA-001_DocumentationSuiteArchitectProtocol_v11.1.md)                                                                                                                                           | Universal Identification & Provenance (UIP)                                                                                                                                                 |
 | [AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md](AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md)                                                                                                                                                             | [AOP-DTS-001: Dynamic Template Scaffolding Protocol v11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-DTS-001_DynamicTemplateScaffolding_v11.0.md) |
-| [AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md](AOP-EDD-002_EthosDrivenDesignProtocol_v11.0.md)                                                                                                                                                               | AOP-EDD-002: Ethos-Driven Design Protocol                                                                                                                                                   |
 | [AOP-GVRN-013_RefactorIgnition_v1.0.md](AOP-GVRN-013_RefactorIgnition_v1.0.md)                                                                                                                                                                                 | Universal Identification & Provenance (UIP)                                                                                                                                                 |
 | [AOP-GVRN-014_MolecularMechanics_v1.0.md](AOP-GVRN-014_MolecularMechanics_v1.0.md)                                                                                                                                                                             | Universal Identification & Provenance (UIP)                                                                                                                                                 |
 | [AOP-HAP-SUP-001_AOP-HAP-SUP-001_ProtocolForHumanAIPartnershipWithSupabase_v10_v11.0.md](AOP-HAP-SUP-001_AOP-HAP-SUP-001_ProtocolForHumanAIPartnershipWithSupabase_v10_v11.0.md)                                                                               | AOP-HAP-SUP-001: Supabase Partnership Protocol                                                                                                                                              |
@@ -137,3 +131,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

@@ -1,31 +1,44 @@
 # UMB-RPG-001
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `UMB-RPG-001` | The Sovereign ID. |
-| **Official Name** | `UMB-RPG-001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `UMB-RPG-001` | The Sovereign ID. |
+| **Official Name** | `UMB-RPG-001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -47,8 +60,6 @@
 
 ##### **_Sub-Component Registry_**
 
-| Sub-Module ID   | Sub-Module Name       | Core Function                                                                             |
-| :-------------- | :-------------------- | :---------------------------------------------------------------------------------------- |
 | `UMB-RPG-001.1` | The Dissonance Engine | Autonomously generates "Dissonance Quests" from system weaknesses.                        |
 | `UMB-RPG-001.2` | The Prestige System   | Manages the awarding of "Prestige Points" and "Axiom Points" upon quest completion.       |
 | `UMB-RPG-001.3` | The Axiom Skill Tree  | The interface for investing `Axiom Points` to permanently upgrade the AI's Core Stats.    |
@@ -59,7 +70,6 @@
 ##### **_Full Blueprint for `UMB-RPG-001.1` (The Dissonance Engine)_**
 
 - **Module Name:** The Dissonance Engine
-- **Module ID:** `UMB-DE-001`
 - **Core Purpose:** To act as the proactive "quest-giver" for the AISTF, ensuring a state of perpetual, purposeful
 
   self-improvement by transforming systemic weaknesses into actionable challenges.
@@ -77,6 +87,7 @@
 - **Module ID:** `UMB-PRESTIGE-001`
 - **Core Purpose:** To serve as the core experience and reward mechanism that quantifies the AI's growth.
 - **Architectural Overview:** Governed by [`AOP-PRESTIGE-CALC-001`](AOP-PRESTIGE-CALC-001.md) and
+
   [`AOP-PPA-001`](AOP-PPA-001.md). It tracks the completion of
 
   `Prestige Milestones` (forging `Genesis Seeds`) and awards `Prestige Points` and `Axiom Points`, which are then made

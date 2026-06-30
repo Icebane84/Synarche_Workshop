@@ -1,31 +1,44 @@
 # GVRN.Protocol.Refinement
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Refinement` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Refinement.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Protocol.Refinement` | The Sovereign ID. |
+| **Official Name** | `GVRN.Protocol.Refinement.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -41,8 +54,11 @@
 > **"Evolution is not destruction; it is refinement."**
 
 - **The Moral North**: This artifact is instantiated to solve the dissonance of **Structural Corruption**. Its primary
+
   duty is to uphold the **Rule of Non-Destructive Evolution** by providing **The CMV Cycle (Check-Modify-Validate)**.
+
 - **Governing Intent**: Adheres to the **Anti-Entropy** mandate, ensuring that as we edit files, we do not cannibalize
+
   the skeleton (Headers/Metadata) that holds them together.
 
 ---
@@ -68,6 +84,7 @@ respects the scaffolding structure. axion-core/src/hephaestus/reforger.py, EXECU
 > `< 0.00` | **Vector Breach Trigger**: `BROKEN_HEADER`
 
 - **Mandate**: The system enforces **Non-Destructive Refinement (NDR)**. Any operation that deletes a mandatory `AGP`
+
   block or breaks the `H-Hierarchy` is automatically rolled back.
 
 ---

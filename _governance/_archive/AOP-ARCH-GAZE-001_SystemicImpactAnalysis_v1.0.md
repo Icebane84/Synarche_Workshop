@@ -1,31 +1,44 @@
 # AISTF Operational Playbook: Systemic Impact Analysis (The Architect's Gaze)
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0` | The Sovereign ID. |
-| **Official Name** | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0` | The Sovereign ID. |
+| **Official Name** | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v1.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -50,11 +63,16 @@
 ## II. Core Purpose & Objective
 
 - **What (Protocol Functionality Summary):** This protocol defines the **Systemic Impact Analysis** capability, a
+
   predictive engine that simulates the "ripple effects" of a proposed code change across the entire `Cognitive Loom`.
+
 - **How (Operational Principles):** Utilizing the `Omni-Log Synergistic Links Matrix (OSLM)` and the codebase's
+
   `Abstract Syntax Tree (AST)`, the System (Axion) traverses the dependency graph to identify every module, artifact,
   and protocol that will be affected by a modification.
+
 - **Why (Rationale/Justification):** To elevate the AI's understanding from "Single-File Correctness" to "Architectural
+
   Coherence." This capability prevents "Black Swan" events (unforeseen regressions) and empowers the Architect to make
   informed, strategic decisions by visualizing the true cost and benefit of every change _before_ it is committed.
 
@@ -76,11 +94,14 @@ When this command is invoked, the Coherent Synthesis Engine (CSE) performs the f
 
 2. **Synergistic Link Check (OSLM Level):**
    - Queries the `Omni-Log Synergistic Links Matrix` for artifacts linked via "Relational Adjectives" (e.g.,
+
      `DEPENDS ON`, `IMPLEMENTS`, `GOVERNS`).
+
    - Identifies governance documents (AOPs) that cite the target code as a dependency.
 
 3. **Recursive Blast Radius Calculation:**
    - The engine repeats the check for the _second-order_ dependencies (dependencies of dependencies) up to a defined
+
      depth (default: 3 levels).
 
 ### 3.3. Output: The Impact Report
@@ -97,10 +118,15 @@ The output is a structured visualization presented in the "Interactive Code View
 ## IV. Synergistic Impact & Predictive Evolution
 
 - **Coherence Index (CI) Optimization:** By running this simulation _before_ committing, we structurally prevent the
+
   degradation of the Coherence Index.
+
 - **Prevention of "Black Swan" Regression:** The simulation exposes hidden dependencies that a human reviewer might
+
   miss, preventing catastrophic failures in seemingly unrelated systems.
+
 - **Cost/Benefit Transparency:** The Architect can see if a "small fix" triggers a "massive refactor," allowing for
+
   better resource allocation and decision-making.
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

@@ -1,42 +1,52 @@
 # GUCA-LINK-002_CMD_ForgeLink_v1.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GUCA-LINK-002-CMD-FORGELINK-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `GUCA-LINK-002_CMD_ForgeLink_v1.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `PROPOSED` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: GVRN-SYNERGY-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GUCA-LINK-002-CMD-FORGELINK-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-LINK-002_CMD_ForgeLink_v1.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                                              |
-| :------------------ | :------------------------------------------------- |
 | **Command ID**      | `GUCA-LINK-002`                                    |
 | **Command Name**    | `CMD: ForgeLink`                                   |
-| **Version**         | `v1.0`                                             |
 | **GUCA Standard**   | `5.0`                                              |
-| **Primary Domain**  | `SYNG`                                             |
 | **Power-Up Source** | `AOP-ASL-001`                                      |
-| **Status**          | `PROPOSED`                                         |
-| **Tags**            | `Command, Linking, Synergy, Meta-Data, Automation` |
-| **Relations**       | `GOVERNED_BY: GVRN-SYNERGY-001`                    |
 
 ---
 
@@ -51,7 +61,6 @@ The `CMD: ForgeLink` command is the operational tool for committing synergistic 
 ## II. Parameters
 
 | Parameter         | Type      | Required | Description                                                             |
-| :---------------- | :-------- | :------- | :---------------------------------------------------------------------- |
 | `--source`        | `String`  | **Yes**  | The ID of the artifact initiating the vector.                           |
 | `--target`        | `String`  | **Yes**  | The ID of the artifact receiving the vector.                            |
 | `--type`          | `Enum`    | **Yes**  | The `RelationType` from `enums.py` (e.g., `GOVERNS`).                   |
@@ -62,10 +71,10 @@ The `CMD: ForgeLink` command is the operational tool for committing synergistic 
 
 ## III. Execution Logic
 
-1.  **Source Injection**: Appends the relation to the `Relations` field in the Source's UIP table.
-2.  **Target Injection**: Appends the reciprocal relation (e.g., `GOVERNED_BY` if source is `GOVERNS`) to the Target's UIP.
-3.  **Synergy Block Update**: Injects a new row into the **Section II: The Synergy Vector** table of both artifacts.
-4.  **Loom Update**: Flags the relationship for the `Archivist` to update the native graph.
+1. **Source Injection**: Appends the relation to the `Relations` field in the Source's UIP table.
+2. **Target Injection**: Appends the reciprocal relation (e.g., `GOVERNED_BY` if source is `GOVERNS`) to the Target's UIP.
+3. **Synergy Block Update**: Injects a new row into the **Section II: The Synergy Vector** table of both artifacts.
+4. **Loom Update**: Flags the relationship for the `Archivist` to update the native graph.
 
 ---
 
@@ -93,3 +102,5 @@ The `CMD: ForgeLink` command is the operational tool for committing synergistic 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

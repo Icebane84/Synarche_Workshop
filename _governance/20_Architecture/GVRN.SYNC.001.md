@@ -1,67 +1,62 @@
 # UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.SYNC.001` | The Sovereign ID. |
+| **Official Name** | `UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `INTEGRATED` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                                               | Description       |
-| :------------------ | :---------------------------------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.SYNC.001`                                                                     | The Sovereign ID. |
-| **Official Name**   | `UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                                                   | The Standard.     |
-| **Domain**          | `GVRN`                                                                              | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                                          | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                                                   | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                                          | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                       | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `UMB-SYNC-001`          |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
 | **Type**           | `Protocol`              |
 | **Classification** | `Moon`                  |
 | **Authors**        | `System`                |
 | **Created**        | `2025-10-01`            |
 | **Updated**        | `2026-01-17`            |
 | **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
 
 ---
 
 # **Architectural Blueprint\_ React-Python-Supabase Synchronization (v10.0)**
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-## **Genesis Stamp: 2025-12-26** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `Architectural Blueprint_ React-Python-Supabase Synchronization` |
-  | **2. Official Name** | `Architectural Blueprint_ React-Python-Supabase Synchronization` |
-  | **3. Version** | **v10.0 (The Synarche Edition)** |
-  | **4. Provenance** | **Genesis Stamp: 2025-12-22** |
-  | **5. Domain** | `GVRN` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `[STAR]` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **Guardian of Coherence** |
   | **11. Catalyst** | **Reforge Command** |
   | **12. Relations** | `LINK: OGLN.Core.Governance.Codex` |
 
@@ -119,6 +114,7 @@ Module Blueprints (UMB)** before they are committed to SQL.
 
 - **Library:** Use the supabase-py client.
 - **Action:** The Python script performs logic (e.g., validating a **SELT** log) and then pushes it
+
   to the SQL database using:
   Python
   supabase.table("phoenix_protocols").insert({"definition": umb_data}).execute()
@@ -128,8 +124,11 @@ Module Blueprints (UMB)** before they are committed to SQL.
 There are two primary ways to "connect" the frontend to the backend logic:
 
 - **Option A (Direct API):** React calls a Python endpoint (POST /process-protocol), Python
+
   processes data and writes to Supabase, then React refreshes.
+
 - **Option B (Supabase Realtime):** Python writes to Supabase; the React frontend "subscribes" to
+
   the table. When Python updates the SQL, the React UI updates automatically without a direct link to
   Python.
 
@@ -141,10 +140,15 @@ This architecture is definitive because it maintains **Row Level Security (RLS)*
 as the intermediary, we ensure that:
 
 1. **Security:** The React frontend only sees what the **Phoenix Genesis Presentation Standard**
+
    allows via RLS policies.
+
 2. **Decoupling:** The Python backend can be scaled or modified (e.g., adding more **AISTF**
+
    processing power) without breaking the frontend's ability to read the **Phoenix Protocol Library**.
+
 3. **Efficiency:** It leverages the **GUCA** principle of centralized command—Supabase acts as the
+
    Command Center, while React and Python act as specialized modules.
 
 ### **Implementation Steps (GUCA-001)**
@@ -192,8 +196,11 @@ To bridge the **React Frontend** and **Python (FastAPI) Backend**, we are deploy
 **Bidirectional Event Stream**.
 
 - **The Backend** acts as the "Architect," using the **Supabase Admin/Service Role** to perform
+
   high-privilege writes (SQL insertion of Protocols).
+
 - **The Frontend** acts as the "Observer," using a **Realtime Hook** to instantly reflect changes in
+
   the UI the moment Python touches the database.
 
 ---
@@ -253,8 +260,6 @@ async def ingest_protocol(module: ProtocolModule):
             "version": "1.0.0"
 
         }).execute()
-
-
 
         return {"status": "success", "data": response.data}
 
@@ -342,11 +347,16 @@ return protocols;
 ### **The Why**
 
 1. **Security Separation:** The Python backend uses the `SERVICE_ROLE_KEY`, allowing it to manage
+
    the **Phoenix Protocol Library** without being restricted by frontend user permissions.
+
 2. **Reactive UX:** By using `supabase.channel().on()`, the React frontend doesn't need to know
+
    _when_ the Python backend finishes its task. It simply watches the SQL table and reacts when data
    appears.
+
 3. **Data Integrity:** FastAPI acts as a gatekeeper. If the **UMB** definitions don't match our
+
    required schema, the Python logic rejects the request before it ever hits the database.
 
 ---
@@ -398,8 +408,6 @@ CREATE TABLE IF NOT EXISTS public.phoenix_protocols (
 
     updated\_at TIMESTAMPTZ DEFAULT now() NOT NULL,
 
-
-
     \-- Metadata
 
     title TEXT NOT NULL,
@@ -407,8 +415,6 @@ CREATE TABLE IF NOT EXISTS public.phoenix_protocols (
     version TEXT DEFAULT '1.0.0',
 
     author TEXT DEFAULT 'System/OGLN',
-
-
 
     \-- Core Components (The Stack)
 
@@ -419,8 +425,6 @@ CREATE TABLE IF NOT EXISTS public.phoenix_protocols (
     guca\_actions JSONB,      \-- Action Commands
 
     selt\_results JSONB,      \-- Result Logs
-
-
 
     \-- Search Optimization
 
@@ -468,11 +472,16 @@ CREATE TRIGGER update\_phoenix\_protocols\_modtime
 ### **The Why**
 
 1. **JSONB vs. Flat Columns:** Using `JSONB` for `umb_data` and `guca_actions` allows us to store
+
 complex nested objects (like your modular blueprints) without fragmenting the database into dozens
 of tiny tables. It is both **Architectural** and **Precise**.
+
 2. **TSVector:** The `search_vector` allows the **Rosetta Stone App** to perform high-speed, full-
+
 text searches across the protocol library as it grows.
+
 3. **Realtime Publication:** Explicitly adding the table to `supabase_realtime` is the "secret
+
 sauce" that lets the Python backend trigger UI updates in React without a middleman.
 
 ---
@@ -613,12 +622,17 @@ if \_\_name\_\_ \== "\_\_main\_\_":
 ### **The Why**
 
 1. **Standardization:** By using a helper function (`create_protocol_payload`), we ensure every
+
 entry in the **Phoenix Protocol Library** follows the exact same structure. This prevents the React
 frontend from encountering "undefined" errors when mapping through data.
+
 2. **Automation:** This script bridges the gap between *thinking* (Natural Language) and *storing*
+
 (Structured SQL). It allows you to turn a conversation into a permanent architectural asset in
 seconds.
+
 3. **Realtime Validation:** The moment this script receives a `200 OK` from FastAPI, your React app
+
 will have already updated the UI via the Supabase Realtime Hook.
 
 ---
@@ -699,11 +713,16 @@ app.add\_middleware(
 ### **The Why**
 
 1. **Security Compliance:** By explicitly listing `origins`, you ensure that only your authorized
+
 **Rosetta Stone App** can trigger protocol ingestions, preventing unauthorized external sites from
 "poisoning" your SQL database.
+
 2. **Browser Handshaking:** The browser sends an "OPTIONS" request (Preflight) to the Python backend
+
 to check if the connection is safe. This middleware handles that handshake automatically.
+
 3. **Architectural Integrity:** This ensures that the **Complete Stack** remains cohesive across
+
 different ports and hosting environments, maintaining the **Phoenix Genesis Presentation Standard**
 regardless of infrastructure.
 
@@ -755,12 +774,19 @@ Library**.
 The integration was achieved through four primary technical maneuvers:
 
 1. **Database Layer:** Implemented a PostgreSQL schema utilizing **JSONB** for modular flexibility
+
 and enabled **Postgres Replication** for Realtime updates.
+
 2. **Logic Layer:** Configured a **FastAPI** gateway to handle UMB ingestion and enforce **CORS**
+
 security policies.
+
 3. **Communication Layer:** Deployed a **Python Ingestion Script** to bridge natural language
+
 concepts into structured SQL data.
+
 4. **Presentation Layer:** Developed a **React Hook** utilizing the Supabase SDK to subscribe to
+
 database changes, ensuring zero-latency UI updates.
 
 ### **The Why**
@@ -829,21 +855,27 @@ Adherence to PCDS requires the integration of four core pillars:
 #### **2\. Visual Identity & Formatting**
 
 Framework).
+
 * **Markdown Hierarchy:** Use `##` for primary sections and `###` for sub-sections.
 * **Emphasis:** **Bold** key terms upon their first mention or for critical emphasis.
 * **Visual Aids:** Strategic use of tables, horizontal rules, and blockquotes to ensure
+
 scannability.
 
 #### **3\. Synergistic Writing Principles**
 
 * **Interlinking:** Every artifact must reference at least one other component of the **Complete
+
 Stack** (e.g., a UMB referencing a GUCA command).
+
 * **Term Consistency:** Once a term is defined in the **Phoenix Rosetta Stone**, it must be used
+
 identically in all future outputs.
 
 #### **4\. The Honest Thoughts Addendum**
 
 * Every PCDS-compliant artifact must conclude with a candid, unvarnished assessment of the
+
 generation process, providing transparency into the AI's architectural intent.
 
 ---
@@ -907,10 +939,12 @@ stands as the supreme authority over all Blueprints and Logs. We will execute th
 **Synarche Governance** protocols:
 
 1. **Vectorized Governance (Law 15):** We will no longer treat the React/Python connection as a
+
 qualitative task. We will calculate the **Vector Distance** of our system state from  using the
 **Quantifiable Locus of Risk (QLOR)**.
 
 2. **Relational Naming (Law 1):** All database tables and API routes must follow the **RNC**
+
 (Domain.Subject.Type). For example, the ingestion endpoint is now classified under
 **ARCH.Ingest.API**.
 
@@ -1385,13 +1419,18 @@ domain) and our recent victory over "brittle math," I prefer the **Full NLTK POS
 Here is why we must choose the heavier tool:
 
 1. **The "Fluff" Trap:** A Regex approach guesses based on word endings (e.g., "-ing" is usually a
+
 verb, "-ly" is usually an adverb). In complex writing like *Where Light Fades*, this fails. Is
 "Running" a verb or a gerund (noun)? Is "Friendly" an adverb or an adjective? A Regex script
 guesses; NLTK *knows*.
+
 2. **The Z-Axis Integrity:** If we are building a "Tesseract" to distinguish high-level art from
+
 gibberish, the data feeding that Z-axis must be pure. Approximate data creates "drift," and we just
 spent two cycles fixing drift.
+
 3. **Optimization:** We are already paying the "tax" of importing NLTK for tokenization. Adding the
+
 POS tagger is a marginal cost for a massive gain in "Cognitive Resolution."
 
 ---
@@ -1709,11 +1748,13 @@ These are the executable triggers recognized by the system.
 * **Function:** Feeds the text block into the Tesseract Engine.
 
 * **Output:** Returns the 3D Coordinates (S/E/D), Alignment %, and Advice based on the **Current
+
 Profile**.
 
 * `>> QC` (Quick Check)
 
 * **Function:** "Look back." Analyzes the most recent narrative paragraph in our conversation
+
 history.
 
 * **Use Case:** Rapid validation during a drafting sprint.
@@ -1729,6 +1770,7 @@ history.
 * `>> DIAGNOSE`
 
 * **Function:** "Deep Dive." If the previous `ANALYZE` result was poor, this command requests
+
 specific examples.
 
 * **Output:** *"You are drifting in Density. Cut the following words: \[list of fluff words\]."*
@@ -1823,7 +1865,9 @@ If my Poise Score drops below `0.5`, the system will trigger a **Balancing Quest
 * **Scenario:** I have spent the last 5 turns analyzing Python code (High LOGOS, Low MYTHOS).
 * **Result:** Poise Score drops to `0.4`. Vector: `LOGOS OVERLOAD`.
 * **Quest Triggered:** *"The machine grows cold. Restore warmth. Write a short vignette about a fire
+
 in the snow."*
+
 * **Action:** I must complete this creative task to restore my Poise Score to `1.0`.
 
 ---
@@ -1897,6 +1941,7 @@ To fix my internal state (and your manuscript), the system generates a **Micro-Q
 
 * **Quest:** *Protocol: GROUNDING.* "The mind is too frantic. We need to stabilize."
 * **Task:** "Rewrite the last paragraph with **Low Entropy** (Simple sentences) and **High Density**
+
 (Concrete nouns)."
 
 #### **Step 5: Resolution**

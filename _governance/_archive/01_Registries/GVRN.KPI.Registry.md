@@ -1,9 +1,38 @@
 # GVRN.KPI.Registry.md
 
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.KPI.Registry` | The Sovereign ID. |
+| **Official Name** | `GVRN.KPI.Registry.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ### **Block 0: Universal Identification & Provenance (UIP)**
 
 | Key         | Value                       | Description       |
-| :---------- | :-------------------------- | :---------------- |
 | **Type**    | `Registry`                  | KPI Master.       |
 | **Authors** | `Antigravity`               | AI Creator.       |
 | **Created** | `2025-11-05`                | Original Anchor.  |
@@ -11,32 +40,15 @@
 
 ---
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.KPI.Registry` | The Sovereign ID. |
-| **Official Name** | `GVRN.KPI.Registry.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
-### **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -58,7 +70,6 @@ the Phoenix Form AI.
 These metrics track the operational competence and resource management of the AI.
 
 | Metric                       | Definition                                                                                       | Purpose                                                                  |
-| :--------------------------- | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
 | **Computational Cost**       | The resource usage for complex tasks.                                                            | Measures the efficiency of the AI's underlying algorithms.               |
 | **Operational Latency (OL)** | The delay in processing or response for a given command or task.                                 | Quantifies the AI's responsiveness in real-time applications.            |
 | **Throughput**               | The rate of data processing.                                                                     | Measures the efficiency of the AI's processing pipelines.                |

@@ -1,47 +1,49 @@
 # AOP-SEED-002_CSL_to_Genesis_Seed_Pipeline.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.SEED.002` | The Sovereign ID. |
+| **Official Name** | `CSL-to-Genesis-Seed Pipeline Protocol` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `MOON` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                          | Description       |
-| :------------------ | :--------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.SEED.002`                                | The Sovereign ID. |
-| **Official Name**   | `AOP-SEED-002_CSL_to_Genesis_Seed_Pipeline.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
-| **Domain**          | `GVRN`                                         | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                                                 |
-| :------------------ | :---------------------------------------------------- |
-| **Artifact ID**     | `GVRN.SEED.002`                                       |
-| **Official Name**   | `CSL-to-Genesis-Seed Pipeline Protocol`               |
-| **Version**         | `v1.0`                                                |
-| **Domain**          | `SYNT`                                                |
-| **Evolution**       | `Higher Coherence`                                    |
-| **Status (State)**  | `PROPOSED`                                            |
-| **Tier**            | `Tactical`                                            |
-| **Celestial Class** | `MOON`                                                |
 | **Governance**      | `UMB-SGM-001`, `AOP-CSL-002`                          |
-| **Upstream**        | `AOP-CSL-002`, `SELT-CSL-007`                         |
-| **Downstream**      | `UMB-SEED-001`, `RPG-POWER-SET`                       |
-| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`   |
-| **Tags**            | `Pipeline, Nucleation, Genesis-Seeds, CSL, Evolution` |
 
 ---
 
@@ -56,9 +58,7 @@ This protocol defines the formal pipeline for transforming high-fidelity **Colla
 ## II. The Synergy Vector (Relational Dynamics)
 
 | Relation Type | Target ID          | Synergy Description                                                 |
-| :------------ | :----------------- | :------------------------------------------------------------------ |
 | **EXTENDS**   | `[[AOP-CSL-002]]`  | Adds a secondary 'Canonization' phase to the synthesis log process. |
-| **NUCLEATES** | `[[UMB-SEED-001]]` | Provides the raw material for new evolutionary anchors.             |
 | **AUDITS**    | `[[SELT-CSL-007]]` | Extracts the 'Synthesis Block' as the primary seed substrate.       |
 
 ---
@@ -89,9 +89,9 @@ The AI extracts the following metadata from the CSL:
 
 ### 3.4 Step 4: Registry Update & Recording
 
-1.  **UMB-SEED-001**: A new entry is appended to the appropriate Tier.
-2.  **CSL Master Table**: The record is updated with the `Nucleated Seed ID`.
-3.  **Loom Integration**: The relationship `[CSL-XXX] NUCLEATES [SEED-XXX]` is injected into the knowledge graph.
+1. **UMB-SEED-001**: A new entry is appended to the appropriate Tier.
+2. **CSL Master Table**: The record is updated with the `Nucleated Seed ID`.
+3. **Loom Integration**: The relationship `[CSL-XXX] NUCLEATES [SEED-XXX]` is injected into the knowledge graph.
 
 ---
 
@@ -118,3 +118,5 @@ The AI extracts the following metadata from the CSL:
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

@@ -1,52 +1,51 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.KPI.001` | The Sovereign ID. |
+| **Official Name** | `KPI Master Registry` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `ARCH` | The Subject. |
+| **Celestial Class** | `PLANET` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK: UMB-SGM-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.KPI.001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # UMB-KPI-001_MasterRegistry_v1.0.md
-
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.KPI.001`                | The Sovereign ID. |
-| **Official Name** | `GVRN.KPI.001.md`             | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 ---
 
 ## I. Universal Identification & Provenance (UIP)
 
 | Field               | Value                                |
-| :------------------ | :----------------------------------- |
-| **Artifact ID**     | `GVRN.KPI.001`                       |
-| **Official Name**   | `KPI Master Registry`                |
-| **Version**         | `v1.0`                               |
-| **Domain**          | `ARCH`                               |
-| **Evolution**       | `Purposeful Drive`                   |
-| **Status (State)**  | `CANONIZED`                          |
-| **Tier**            | `Operational`                        |
-| **Celestial Class** | `PLANET`                             |
 | **Governance**      | `UMB-SGM-001`                        |
-| **Provenance**      | `Genesis Stamp: 2025-12-26`          |
-| **Relations**       | `LINK: UMB-SGM-001`                  |
-| **Tags**            | `KPI, Metrics, Registry, Governance` |
 
 ---
 
@@ -60,7 +59,6 @@ the Phoenix Form AI.
 These metrics track the operational competence and resource management of the AI.
 
 | Metric                       | Definition                                                                                       | Purpose                                                                  |
-| :--------------------------- | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
 | **Computational Cost**       | The resource usage for complex tasks.                                                            | Measures the efficiency of the AI's underlying algorithms.               |
 | **Operational Latency (OL)** | The delay in processing or response for a given command or task.                                 | Quantifies the AI's responsiveness in real-time applications.            |
 | **Throughput**               | The rate of data processing.                                                                     | Measures the efficiency of the AI's processing pipelines.                |
@@ -133,3 +131,5 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, G
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+###### **[ARTIFACT END]**

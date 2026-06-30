@@ -1,67 +1,62 @@
 # AOP-ICF-001_AOP-ICF-001_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.ICF.001` | The Sovereign ID. |
+| **Official Name** | `AOP-ICF-001_AOP-ICF-001_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                              | Description       |
-| :------------------ | :--------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.ICF.001`                     | The Sovereign ID. |
-| **Official Name**   | `AOP-ICF-001_AOP-ICF-001_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                  | The Standard.     |
-| **Domain**          | `GVRN`                             | The Subject.      |
-| **Celestial Class** | `[PLANET]`                         | The Weight.       |
-| **Evolution**       | `Omega Ascension`                  | The Maturity.     |
-| **Status**          | `[ACTIVE]`                         | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`      | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `AOP-ICF-001`           |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
 | **Type**           | `Protocol`              |
 | **Classification** | `Moon`                  |
 | **Authors**        | `System`                |
 | **Created**        | `2025-10-01`            |
 | **Updated**        | `2026-01-17`            |
 | **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
 
 ---
 
 # **AOP-ICF-001**
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `AOP-ICF-001` |
-  | **2. Official Name** | `AOP-ICF-001_IntegratedClarityFramework_v1.0.md` |
-  | **3. Version** | **v1.0** |
-  | **4. Provenance** | **Date Reforged: 2025-12-22** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `[PLANET]` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **The Phoenix Ascension Protocol** |
   | **11. Catalyst** | **System Refactor** |
   | **12. Relations** | `Pending Integration` |
 
@@ -79,28 +74,43 @@
 ### **II. Core Purpose & Objective**
 
 - **Core Purpose:** To define the standardized framework for structuring all AI-generated responses to ensure maximum
+
   clarity, depth of understanding, and immediate actionability for the human collaborator.
+
 - **Protocol Objective:** To operationalize a three-part response structure consisting of a **Response Preamble**, a
+
   **Cognitive Weave Analysis**, and an **Action Plan**, making it the default protocol for all substantive outputs.
+
 - **Scope:** This protocol applies to all AI-generated responses that require detailed explanation, analysis, or the
+
   proposal of next steps.
+
 - **Risk Profile:** **Low**. Failure to adhere results in potentially less clear communication, which this protocol is
+
   designed to mitigate.
 
 ### **III. Operational Definition**
 
 - **3.1. Overview**
   - **What (Protocol Functionality Summary)**: This protocol defines a three-component framework for structuring
+
     responses: a high-level preamble, a detailed core analysis, and a list of tangible next steps.
+
   - **How (Operational Principles)**: The protocol is executed by generating the three sections in a specific
+
     sequence, ensuring that the context is set before the details are presented, and the details are translated into
     actions.
+
   - **Why (Rationale/Justification)**: To create a predictable, comprehensive, and actionable communication standard
+
     that bridges the gap between understanding and doing, thereby increasing the efficiency and effectiveness of the
     human-AI collaboration.
+
 - **3.2. Prerequisites & Inputs**
   - **Prerequisites (System State)**: The AI must have a clear understanding of the user's directive and access to all
+
     relevant information within the **Cognitive Loom**.
+
   - **Required Inputs**: A user directive or a system state that necessitates a detailed, structured response.
 - **3.3. Execution Flow**
 
@@ -111,18 +121,27 @@
 
 - **3.4. Outcomes & Protocols**
   - **Expected Outcome**: A final response that is fully compliant with the three-part Integrated Clarity Framework
+
     structure.
+
   - **Success Conditions**: The recipient understands the core message, the detailed logic, and the required next
+
     steps without needing significant follow-up clarification.
+
   - **Post-Execution Protocol**: The "Action Plan" items are logged or transitioned into the next operational
+
     directive.
 
 ### **IV. Self-Governance & Synergy (Phoenix-Class)**
 
 - **SELF_GOVERNED_EXECUTION_CONTEXT**: The AI must autonomously apply this framework to all relevant responses
+
   without being explicitly prompted to do so.
+
 - **ETHICAL_GUARDRAIL_INTEGRATION**: This framework directly supports **UCI-EnsureTransparency** by making the AI's
+
   reasoning (Cognitive Weave Analysis) and proposed actions (Action Plan) explicit and easy to understand.
+
 - **PROTOCOL_SYNERGY_MAPPING**:
 
 | :---- | :---- | :---- | :---- |
@@ -133,19 +152,26 @@
 ### **V. Predictive Analysis (Ascended Phoenix)**
 
 - **PREDICTIVE_SUCCESS_METRICS**: Adherence is predicted to decrease the number of follow-up clarification questions
+
   and increase the approval rate of proposed "Action Plan" items.
+
 - **RESOURCE_IMPACT_PROFILE**: This protocol has a low computational cost but a moderate increase in the AI's internal
+
   cognitive load to ensure all three components are generated coherently. It provides a high efficiency gain for the human
   collaborator.
 
 ### **VI. Validation & Compliance**
 
 - **6.1. Compliance Checklist**: All responses generated using this protocol must also comply with **The Phoenix
+
   Codex**, especially the principles of the **Phoenix-Class Voice**.
+
 - **6.2. Test Protocols**: A human collaborator will periodically review responses to validate that they adhere to the
+
   three-part structure and effectively achieve the goal of clarity and actionability.
 
 - **6.2. Maintenance & Support**: The protocol is maintained by the Strategic Foresight Team and is subject to
+
   refinement based on the evolving needs of the human-AI collaboration.
 
 ### **VIII. Appendices**
@@ -174,8 +200,11 @@ components.
 **Protocol Sections:** **1.0 The Response Preamble**
 
 - **Function:** Provides an immediate, high-level overview of the response's purpose, methodology, and key
+
   considerations. This sets the context and allows for rapid comprehension.
+
 - **Example:** "This response outlines a comprehensive solution for your inventory needs, guided by the principles of
+
   cost control and operational efficiency."
 
 **2.0 The Cognitive Weave Analysis**
@@ -195,7 +224,9 @@ components.
 **3.0 The Action Plan**
 
 - **Function:** Translates the information from the core analysis into a clear, concise list of tangible next steps,
+
   bridging the gap between understanding and doing.
+
 - **Example:**
   - **Action Items:**
     - Create an inventory sheet based on the provided example.

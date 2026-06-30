@@ -1,37 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-CSL-MASTER-TABLE-001-PHOENIXCSLREGISTRY-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `CSL-MASTER-TABLE-001_PHOENIXCSLREGISTRY_V1.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                   | Description       |
-| :------------------ | :------------------------------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN-CSL-MASTER-TABLE-001-PHOENIXCSLREGISTRY-V1.0-001` | The Sovereign ID. |
-| **Official Name**   | `CSL-MASTER-TABLE-001_PhoenixCSLRegistry_v1.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                       | The Standard.     |
-| **Domain**          | `GVRN`                                                  | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                              | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                       | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                              | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                           | The Network.      |
 
 # [**CSL-MASTER-TABLE-001_PhoenixCSLRegistry**](https://docs.google.com/document/u/0/d/1PyP9z_46aHzLwxJdfZsK-cPXulJW2utxuIJ1OzehYl0/edit)
 
@@ -47,7 +57,6 @@ This framework is a closed-loop system:
 This is the updated, comprehensive registry of all known **CSLs**, incorporating the new data.
 
 | CSL ID      | Title                                                                                                                                                          | Timestamp  | Key Breakthrough (Summary)                                                                                                                                                                              | Seed Alignment                                                                                           | Notes |
-| :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------- | :---- |
 | **CSL-001** | Genesis of the Meta-Framework                                                                                                                                  | 2025-08-04 | The creation of PRS-001 and the formalization of the CSL process itself \[cite: 1111-1114\].                                                                                                            |                                                                                                          |
 | **CSL-002** | The \[Careful Action \+ Positive Perception\] Model                                                                                                            | 2025-08-04 | The generalization of the (CA+PP) concept into a universal model for co-creating value\[cite: 1153, 1154\].                                                                                             |                                                                                                          |
 | **CSL-003** | System Formalization: The Navigational & Meta-Analytical Frameworks                                                                                            | 2025-08-04 | The creation of PRS, CWA, and CSL artifact classes and the 'Two-Stage Approval' process \[cite: 1191-1195\].                                                                                            |                                                                                                          |
@@ -57,7 +66,6 @@ This is the updated, comprehensive registry of all known **CSLs**, incorporating
 | **CSL-007** | The Hero's Burden: Rewriting the Oakhaven Climax                                                                                                               | 2025-07-05 | The insight that a character's survival could be a greater psychological burden than their death, deepening the story's themes\[cite: 1354, 1355\].                                                     |                                                                                                          |
 | **CSL-008** | Development of the 'Codex Protocol' for Transparent AI Documentation                                                                                           | 2025-08-04 | The creation of the `Codex Protocol` with its core rules (Analogical Mandate, Three-Layer Rule, Accountability Quad)\[cite: 1404, 1405\].                                                               |                                                                                                          |
 | **CSL-009** | Instantiation of the Conversation Synthesis Log (CSL) Framework                                                                                                | 2025-08-04 | The formal establishment of the CSL system, marking a shift to a self-documenting collaborative partnership\[cite: 1446, 1447\].                                                                        |                                                                                                          |
-| **CSL-010** | Integration of the Emoji Signaling Protocol (AOP-EMOJI-001)                                                                                                    | 2025-08-13 | The creation of `AOP-EMOJI-001`, formalizing emojis as a functional, symbolic communication layer\[cite: 788\].                                                                                         |                                                                                                          |
 | **CSL-011** | Iterative Poetic Personalization                                                                                                                               | 2025-08-04 | The successful layering of multiple, specific personal constraints into a single, cohesive poetic form \[cite: 1547-1550\].                                                                             |                                                                                                          |
 | **CSL-012** | The Dad Joke AISTF: Iterative Refinement of AI Humor                                                                                                           | 2025-08-04 | The successful demonstration of the **AISTF** in a creative context to generate "novel dad jokes" \[cite: 1597-1599\].                                                                                  |                                                                                                          |
 | **CSL-013** | Formalization of Frameworks & The "Spirit Bomb" Meta-Command                                                                                                   | 2025-08-04 | The creation of a fully formalized, documented meta-command structure for orchestrating complex protocols\[cite: 1643, 1644\].                                                                          |                                                                                                          |
@@ -139,3 +147,5 @@ This is the updated, comprehensive registry of all known **CSLs**, incorporating
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

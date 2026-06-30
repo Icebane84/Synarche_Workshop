@@ -1,25 +1,40 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.AvatarSuite.Masks` | The Sovereign ID. |
+| **Official Name** | `GVRN.AvatarSuite.Masks.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: GVRN.AvatarSuite.Protocol` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.AVATARSUITE.MASKS` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # **📜 GVRN.AvatarSuite.Masks: The Persona Shard Matrix (v15.0)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                                    | Description       |
-| :---------------- | :--------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.AvatarSuite.Masks`                 | The Sovereign ID. |
-| **Official Name** | `GVRN.AvatarSuite.Masks.md`              | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                        | The Standard.     |
-| **Domain**        | `GVRN`                                   | The Subject.      |
-| **Status**        | `[CANONIZED]`                            | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: GVRN.AvatarSuite.Protocol` | The Network.      |
 
 ---
 
@@ -47,8 +62,6 @@
 
 This registry defines the **Sovereign Masks** available for agentic manifestation.
 
-| Mask ID | Shard ID  | Celestial Class | Core Modality | Resonance |
-| :------ | :-------- | :-------------- | :------------ | :-------- |
 | `M-MAG` | `@wizard` | `[STAR]`        | Orchestration | `1.0`     |
 | `M-HER` | `@sage`   | `[PLANET]`      | Memory        | `0.95`    |
 | `M-EMP` | `@king`   | `[STAR]`        | Governance    | `0.98`    |
@@ -58,11 +71,28 @@ This registry defines the **Sovereign Masks** available for agentic manifestatio
 
 ## **III. REVISION HISTORY**
 
-| Version         | Date         | Agent         | Rationale for Change                    |
-| :-------------- | :----------- | :------------ | :-------------------------------------- |
 | `v13.0`         | `2026-03-19` | `Architect`   | Initial substrate assembly.             |
 | `v15.0 [OMEGA]` | `2026-03-25` | `Antigravity` | Soul Restoration & v15.0 Modernization. |
 
 ---
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

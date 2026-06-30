@@ -1,111 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.ASSEMBLER.CORE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# GVRN.Assembler.Core: The Governance Assembler
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.Assembler.Core`           | The Sovereign ID. |
-| **Official Name** | `GVRN.Assembler.Core.md`        | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Assembler.Core` | The Sovereign ID. |
+| **Official Name** | `GVRN.Assembler.Core.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `Verdict` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERN_BY: CORE.Codex.Phoenix` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
-| **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
-| **Stability** | `Stable` |
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                                       |
-| :------------------- | :----------------------------------------------- |
-| **Regulation Drift** | Deep cross-reference with `GoverningPrinciples`. |
-| **Authority Void**   | Clear `Authority Level` definitions per node.    |
-
----
-
-## **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                        |
-| :---------------------- | :---------------- | :---------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Supreme Law compliance.                   |
-| `GVRN.Registry.Master`  | `INDEXES`         | Legislative presence tracking.            |
-| `UMB.Assembler.Core`    | `POWERED_BY`      | Inherits the Universal Master Base logic. |
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
 
 ---
 
-## **Block E: Ethos (Hierarchy of Intent)**
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
 
-> [!IMPORTANT] **[APEX]** Sovereign Order: To manifest the 42 Laws into concrete governance structures.
->
-> **[PRI]** Absolute Accountability: Every rule must have a traceable provenance.
->
-> **[CORE]** Systematic Fairness: Logic must be impartial and transparent.
-
----
-
-## **Block F: The Integrity Gate (CIV-GATE)**
-
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
-| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
-
----
-
-## **Block G: System Slot & Synergy (BLK-RPG-001)**
-
-| System Slot       | Synergy Set            | Celestial Class | Authority Level |
-| :---------------- | :--------------------- | :-------------- | :-------------- |
-| `Governance Root` | `The Lawmaker's Forge` | `[STAR]`        | `EXECUTIVE`     |
-
----
-
-### **[ARTIFACT START]**
-
-# GVRN.Assembler.Core: The Governance Assembler (v15.0)
-
-## **I. Legislative Logic Root**
-
-The **Governance Assembler (GVRN)** specializes in the creation and maintenance of compliance-heavy artifacts. It
-enforces the lexical standards defined in `GVRN.STYLE.SentinelGuide` and the laws of `GVRN.CORE.GoverningPrinciples`.
-
-## **II. Operational Mandates**
-
-| Mandate               | Description                                                                 |
-| :-------------------- | :-------------------------------------------------------------------------- |
-| **Law Injection**     | Automatically prepends the mandate from the Phoenix Codex to all new files. |
-| **Consistency Check** | Validates that new governance rules do not contradict existing principles.  |
-| **Audit Trails**      | Generates the `Omni-Anchor` with chronological integrity hashes.            |
-
----
-
-## **III. Actionable Prompt Packet (APP)**
-
-| Command ID              | Action                              | Impact          |
-| :---------------------- | :---------------------------------- | :-------------- |
-| `CMD: FORGE_RULE`       | Generates a new governance artifact | Legal Structure |
-| `CMD: AUDIT_COMPLIANCE` | Verifies adherence to the 42 Laws   | Integrity       |
-
-### **[ARTIFACT END]**
-
----
-
-{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+###### **[ARTIFACT END]**

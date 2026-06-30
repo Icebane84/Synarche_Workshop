@@ -1,58 +1,54 @@
 # UMB-OSLM-001_MasterArtifactRegistry_v11.0.md
 
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `UMB-OSLM-001` | The Sovereign ID. |
+| **Official Name** | `Master Artifact Registry` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[STAR]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `Dependencies` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `Governed by GVRN-SYNERGY-001` | The Network. |
+| **Integrity Hash** | `REGENERATED` | Verification. |
 
 ---
 
-###### **[ARTIFACT START]**
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-OSLM-001-MASTERARTIFACTREGISTRY-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-OSLM-001_MasterArtifactRegistry_v11.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                          |
-| :------------------ | :----------------------------- |
-| **Artifact ID**     | `UMB-OSLM-001`                 |
-| **Official Name**   | `Master Artifact Registry`     |
-| **Version**         | `v11.0`                        |
-| **Domain**          | `OSLM`                         |
-| **Evolution**       | **Cognitive Ascension**        |
-| **Signal (ESF)**    | `ESF-STAR`                     |
-| **Status (State)**  | `ACTIVE`                       |
-| **Tier**            | **Strategic**                  |
-| **Celestial Class** | `[STAR]`                       |
 | **Integrity Hash**  | `REGENERATED`                  |
-| **Provenance**      | `Genesis Stamp: 2025-10-01`    |
 | **Updated**         | `2026-02-01`                   |
-| **Relations**       | `Governed by GVRN-SYNERGY-001` |
 
 ---
 
 # Master Artifact Registry (The Library)
-
-**Genesis Stamp**: 2026-02-01 | **Domain**: PHOENIX | **State**: ACTIVE
 
 > [!NOTE] This document is the "Immutable Chronicle" of the Phoenix Protocol. It lists every legally recognized artifact
 > within the system.
 
 ## I. The Core (Star Class)
 
-| Module ID           | Title                                                                                                                          | Version                       | Status    | Dependencies |
-| :------------------ | :----------------------------------------------------------------------------------------------------------------------------- | :---------------------------- | :-------- | :----------- |
 | `CODEX-PRIME-001`   | [CODEX-PRIME-001: The Architect's Codex (v1.0)](_governance/_archive/CODEX-PRIME-001_TheArchitectsCodex_v1.0.md)               | `v1.0 (Definitive Synthesis)` | `Unknown` | `None`       |
 | `CORE-CODEX-001`    | [CORE-CODEX-001_ThePhoenixCodex_v11.2](_governance/CORE-CODEX-001_ThePhoenixCodex_v11.2.md)                                    | `Unknown`                     | `Unknown` | `None`       |
 | `PHOENIX-CORE-002`  | [UMB-PHOENIX-CORE-002: The Phoenix Core (The Living Star)](_governance/1_Modules/UMB-PHOENIX-CORE-002_ThePhoenixCore_v11.2.md) | `Unknown`                     | `Unknown` | `None`       |
@@ -61,10 +57,7 @@
 
 ## II. Protocols (Moon Class)
 
-| Module ID                                                      | Title                                                                                                                                                                                                                                                                          | Version                                | Status    | Dependencies                               |
-| :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------- | :-------- | :----------------------------------------- |
 | `AOP-AAR-001`                                                  | [The After-Action Review Protocol](_governance/2_Protocols/AOP-AAR-001_TheAfter-ActionReviewProtocol_v11.0.md)                                                                                                                                                                 | `v11.0`                                | `ACTIVE`  | `None`                                     |
-| `AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook` | [AOP-ACEP-001: The Asynchronous Co-Evolution Protocol Playbook](\_governance/2_Protocols/AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook_AOP-ACEP-001TheAsynchronousCo-EvolutionProtocolPlaybook_v11.0.md)                                                        | `v11.0`                                | `ACTIVE`  | `None`                                     |
 | `AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0`             | [AOP-ACM-001: Autonomous Coherence Monitoring](_governance/2_Protocols/AOP-ACM-001_Autonomous-Coherence-Monitoring_v4.0_AOP-ACM-001AutonomousCoherenceMonitoring_v11.0.md)                                                                                                     | `v11.0`                                | `ACTIVE`  | `None`                                     |
 | `AOP-AG-002`                                                   | [AOP-AG-002: Axion Agent Configuration](axion-core/docs/agents/_archive/AOP-AG-002_AxionAgentConfiguration_v1.0.md)                                                                                                                                                            | `v1.1 (SUPERSEDED)`                    | `Unknown` | `None`                                     |
 | `AOP-AG-003`                                                   | [AOP-AG-003: Axion Agent Configuration](_governance/2_Protocols/AOP-AG-003_AxionAgentConfiguration_v11.0.md)                                                                                                                                                                   | `v11.0 (The Ascended Artificer)`       | `Unknown` | `None`                                     |
@@ -990,3 +983,5 @@
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

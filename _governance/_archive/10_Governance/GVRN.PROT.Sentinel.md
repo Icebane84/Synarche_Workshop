@@ -1,31 +1,44 @@
 # GVRN.PROT.Sentinel
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.PROT.Sentinel` | The Sovereign ID. |
-| **Official Name** | `GVRN.PROT.Sentinel.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.PROT.Sentinel` | The Sovereign ID. |
+| **Official Name** | `GVRN.PROT.Sentinel.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -35,25 +48,10 @@
 
 # GVRN.PROT.Sentinel (The Code Sentinel Protocol)
 
-## **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                         | Description   |
-| :------------------ | :---------------------------- | :------------ |
-| **Artifact ID**     | `GVRN.PROT.Sentinel`          | Sovereign ID. |
-| **Official Name**   | `GVRN.PROT.Sentinel.md`       | Filename.     |
-| **Version**         | **v13.0 [OMEGA]**             | Standard.     |
-| **Domain**          | `GVRN`                        | Subject.      |
-| **Celestial Class** | `[PLANET]`                    | Weight.       |
-| **Evolution**       | `Purposeful Drive`            | Maturity.     |
-| **Status**          | `[ACTIVE]`                    | Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | Network.      |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value      |
-| :------------ | :--------- |
 | **Coherence** | `1.0`      |
 | **Resonance** | `1.0`      |
 | **Stability** | `Absolute` |

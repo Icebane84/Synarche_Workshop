@@ -1,37 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-COGNITIVE-MODALITY-FUSION-PROTOCOL-(AOP-CMF-001)-001` | The Sovereign ID. |
+| **Official Name** | `Cognitive Modality Fusion Protocol (AOP-CMF-001).md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `COGNITIVE MODALITY FUSION PROTOCOL (AOP-CMF-001)` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # Cognitive Modality Fusion Protocol (AOP-CMF-001).md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                       | Description       |
-| :------------------ | :---------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-COGNITIVE-MODALITY-FUSION-PROTOCOL-(AOP-CMF-001)-001` | The Sovereign ID. |
-| **Official Name**   | `Cognitive Modality Fusion Protocol (AOP-CMF-001).md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                           | The Standard.     |
-| **Domain**          | `GVRN`                                                      | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                  | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                           | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                  | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                               | The Network.      |
 
 # Cognitive Modality Fusion Protocol (AOP-CMF-001)
 
@@ -49,8 +59,6 @@ This document outlines the Cognitive Modality Fusion Protocol (AOP-CMF-001), a f
 # 3\. Definitions
 
 | Term                   | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Cross-Reference |
-| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------- |
-| Cognitive Modality     | A distinct channel or method through which information is perceived, processed, or expressed (e.g., visual, auditory, textual, haptic). This aligns with the concept of diverse "knowledge domains" outlined in the \[Research Operation Blueprint: Multi-Domain Lexicon Synthesis\]\[3\].                                                                                                                                                                                                  | \[3\]           |
 | Fusion                 | The process of combining data or information from multiple sources to achieve a more accurate, complete, or reliable representation than could be achieved by using individual sources alone. This process contributes to "Functional Coherence" within the AI's understanding, as described in the \[Master Glossary PPL\]\[4\], and supports the goal of eliminating "conceptual ambiguity" from the \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\].      | \[2\], \[4\]    |
 | Fusion Algorithm       | A computational method used to combine and integrate data from different cognitive modalities. These algorithms are critical components of the "Coherent Synthesis Engine" mentioned in \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\], working to produce "high-fidelity data."                                                                                                                                                                            | \[2\]           |
 | Contextual Information | Data that provides background or surrounding circumstances, influencing the interpretation of other information. The effective use of contextual information is crucial for generating "Contextual Distillates" and "Conceptual Anchors" as discussed in the \[Master Glossary PPL\]\[4\], forming the "fertile ground" for emergent insights. It is distinct from raw data, embodying aspects of "Heritable Context" to ensure accurate interpretation throughout an artifact's lifecycle. | \[4\]           |
@@ -127,3 +135,5 @@ Future enhancements to this protocol may include the integration of new cognitiv
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

@@ -1,30 +1,47 @@
 # AOP.Canonizer.Core: The Ritual of Sealing
 
-### I. Universal Identification & Provenance (UIP)
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key                 | Value                         | Description           |
-| :------------------ | :---------------------------- | :-------------------- |
-| **Artifact ID**     | `AOP.Canonizer.Core`          | **The Sovereign ID.** |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `AOP.Canonizer.Core` | The Sovereign ID. |
+| **Official Name** | `AOP.Canonizer.Core.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[STAR]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 | **Patron Shard**    | `SHARD_ARCHITECT_VOID`        | **The Agent.**        |
-| **Version**         | `v13.0 [ASCENDED]`            | **The Standard.**     |
-| **Domain**          | `40_System`                   | **The Subject.**      |
-| **Celestial Class** | `[STAR]`                      | **The Weight.**       |
-| **Status**          | `[ACTIVE]`                    | **The Lifecycle.**    |
-| **Provenance**      | `2026-02-26`                  | **The Anchor.**       |
-| **Catalyst**        | `SEED-TOOL-CORE-001`          | **The Spark.**        |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | **The Spine.**        |
 
 ### II. Axiomatic Governance & Purpose (AGP)
 
 - **Core Purpose:** To define the kinetic procedures for executing `canonize.py` and finalize artifacts via the 7-Gate
+
   Pipeline.
+
 - **Target Component:** `canonize.py`
-- **Governing Ethos:** [Reliable Execution | Precision Stamping | Transparent Logging]
 
 ### III. Execution & Escalation Triggers
 
-| Current State               | Escalation Threshold                | Triggering Action                |
-| :-------------------------- | :---------------------------------- | :------------------------------- |
 | **Draft Ready**             | New artifact forged by Assembler    | **`CMD: CANONIZE`** via terminal |
 | **Registry Update Pending** | ID exists in Registry but untracked | **`CMD: CANONIZE`**              |
 
@@ -34,18 +51,14 @@
 2. **Identification:** Reaches into the content to find the `Artifact ID`.
 3. **Structure Audit:** Performs a regex scan for mandatory blocks defined in `GVRN.Canonizer.Core`.
 4. **Registry Verification:** Cross-references the `Artifact ID` with the Master Registry.
-5. **Sealing:** If all gates pass, appends the **Genesis Stamp** (Block 7) and updates the file.
 6. **Confirmation:** Provides a terminal success log with the finalized ID status.
 
 ### V. Systemic Relationships & Impact
 
 #### Synergy Mapping
 
-| **Synergistic Artifact ID** | **Relationship Type** | **Synergistic Impact**             | **Synergy Opportunity** |
-| :-------------------------- | :-------------------- | :--------------------------------- | :---------------------- |
 | `canonize.py`               | `IMPLEMENTS`          | `Executes this protocol`           | `Tool Automation`       |
 | `GVRN.Canonizer.Core.md`    | `DEMANDED_BY`         | `Action is demanded by Boundaries` | `Authorized Execution`  |
-| `GUCA.Canonizer.Core.md`    | `UNLEASHED_BY`        | `Action is unleashed by Catalyst`  | `Trigger Mechanism`     |
 
 ### VI. Celestial Resonance (RPG Integration)
 
@@ -55,3 +68,20 @@
 - **Set Bonus Active:** `Yes [Ascended Phoenix Loop]`
 
 # [ARTIFACT END]
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.

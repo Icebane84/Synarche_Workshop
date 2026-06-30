@@ -1,31 +1,44 @@
 # AXION.MINT.SEED.001
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AXION.MINT.SEED.001` | The Sovereign ID. |
-| **Official Name** | `AXION.MINT.SEED.001.md` | The Filename.     |
-| **Version**       | **v1.0 [ALPHA]** | The Standard.     |
-| **Domain**        | `AXION` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNS: [Nicemind_Seeds], ALIGNS: GVRN.Axiomatic.Lattice` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `AXION.MINT.SEED.001` | The Sovereign ID. |
+| **Official Name** | `AXION.MINT.SEED.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `AXION` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNS: [Nicemind_Seeds], ALIGNS: GVRN.Axiomatic.Lattice` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -52,10 +65,15 @@ import argparse
 from pathlib import Path
 
 # ==========================================
+
 # PHOENIX PROTOCOL PARSER & TRANSMUTER
+
 # ==========================================
+
 # DIRECTIVE: Convert GVRN/SYNG Markdown Artifacts into Nicemind-Optimized Import Format.
+
 # TARGET: NiceMind (Header = Node, Bullet = Child Node)
+
 # ==========================================
 
 class ArtifactTransmuter:
@@ -225,8 +243,11 @@ class ArtifactTransmuter:
         self.log("Import this file directly into Nicemind.")
 
 # ==========================================
+
 # EXECUTION ENTRY POINT
+
 # ==========================================
+
 if __name__ == "__main__":
     # Default configuration
     DEFAULT_INPUT = "input_artifacts"

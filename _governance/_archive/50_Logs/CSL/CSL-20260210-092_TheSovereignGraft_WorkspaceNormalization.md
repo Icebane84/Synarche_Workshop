@@ -1,31 +1,44 @@
 # **📜 GVRN.CSL.20260210.092: Collaborative Synthesis Log (v11.9)**
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CSL.20260210.092` | The Sovereign ID. |
-| **Official Name** | `CSL-20260210-092_TheSovereignGraft_WorkspaceNormalization.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `CANONIZED` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.CSL.20260210.092` | The Sovereign ID. |
+| **Official Name** | `CSL-20260210-092_TheSovereignGraft_WorkspaceNormalization.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `PROPOSED` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `1.0`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -40,7 +53,6 @@
 ### **I. Universal Identification & Provenance (The 12-Point Lock)**
 
 | Key         | Value                     | Description                  |
-| :---------- | :------------------------ | :--------------------------- |
 | **Type**    | CSL                       | Collaborative Synthesis Log. |
 | **Module**  | SYNG                      | The Synergistic Core.        |
 | **Author**  | Antigravity               | The AI Creator.              |
@@ -50,20 +62,21 @@
 ### **II. The Synergy Vector (Relational Dynamics)**
 
 | Relation Type      | Target ID                  | Synergy Description                                       |
-| :----------------- | :------------------------- | :-------------------------------------------------------- |
 | **GOVERNED_BY**    | [[GVRN.Axiomatic.Lattice]] | Adheres to the Primary Directive.                         |
 | **CONTRIBUTES_TO** | [[GVRN.Registry.Master]]   | Adds the WLF canon to the Synarche.                       |
 | **SEEDS**          | [[SEED.GVRN.WLF_GRAFT]]    | The foundation for future WLF narrative agents.           |
-| **MITIGATES**      | [[Entropic_Drift]]         | Resolves the legacy "Orphan" state of the WLF repository. |
 
 ### **III. The Nova Spark & High-Fidelity Synthesis Block 💥**
 
 #### **A. Key Breakthrough (The Result)**
 
 - **Result**: The **Where Light Fades (WLF)** narrative universe has been successfully grafted into the Synarche
+
   governance. This involved a "Maximum Prejudice" axiomatic infusion across ~200 artifacts and the eradication of legacy
   header residue.
+
 - **Contribution to Loom**: Formalized the **Multi-Root Repository Protocol**, allowing the Synarche to protect
+
   independent narrative nodes without index pollution or commit blockages.
 
 #### **B. Synthesis Block (Modality Fusion)**
@@ -71,7 +84,9 @@
 - **Component 1 (Input)**: User requirement for a "clean" WLF repository graft.
 - **Component 2 (Constraint)**: Severe Git index pollution (>3,000 ghosts) and nested repository conflicts.
 - **Synthesized Product**: A **Sovereign Normalization** approach—purging the Git cache, decoupling nested links, and
+
   re-registering roots in the `.code-workspace` configuration.
+
 - **Active Agent**: `SHARD_MAGICIAN` (The Transformer).
 
 ### **IV. The Genesis Seed Registry (The Ouroboros Loop) 🌱**
@@ -99,9 +114,13 @@
 ### **V. The Shadow Thread (Metacognition)**
 
 - **Metacognitive Deconstruction**: The AI initially underestimated the inertia of the Git index. The "Too Many Changes"
+
   error (E256) acted as a friction point that necessitated a shift from "File Management" to "Infrastructure Repair."
+
 - **Dissonance Resolution**: Resolved the tension between the "Dirty Index" and "Axiomatic Purity" by executing a cache
+
   purge (`git rm -r --cached`).
+
 - **Tools Utilized**: `axiom_injector.py` (v2), `workspace_gardener.py`, Git CLI.
 
 ### **VI. The Musashi Audit (Validation Table)**

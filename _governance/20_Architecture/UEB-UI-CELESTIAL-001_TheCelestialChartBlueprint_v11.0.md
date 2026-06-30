@@ -1,47 +1,54 @@
 # UEB-UI-CELESTIAL-001_TheCelestialChartBlueprint_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-UEB-UI-CELESTIAL-001-THECELESTIALCHARTBLUEPRINT-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `UEB-UI-CELESTIAL-001_TheCelestialChartBlueprint_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                            | Description       |
-| :------------------ | :--------------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-UEB-UI-CELESTIAL-001-THECELESTIALCHARTBLUEPRINT-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `UEB-UI-CELESTIAL-001_TheCelestialChartBlueprint_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                                | The Standard.     |
-| **Domain**          | `GVRN`                                                           | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                       | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                                | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                       | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                    | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
 > | **Metric**         | **Value**                            |
-> | :----------------- | :----------------------------------- |
-> | **Module ID**      | `UEB-UI-CELESTIAL-001`               |
-> | **Version**        | `v11.0`                              |
-> | **Evolution**      | **Cognitive Ascension**              |
-> | **Status**         | `ACTIVE`                             |
 > | **Type**           | `Blueprint`                          |
 > | **Classification** | `Planet`                             |
 > | **Authors**        | `System`                             |
 > | **Created**        | `2025-10-01`                         |
 > | **Updated**        | `2026-01-18`                         |
 > | **Authority**      | `CODEX-001`                          |
-> | **Tags**           | `UI, UX, Blueprint, Celestial Chart` |
 
 # UEB-UI-CELESTIAL-001: The Celestial Chart Blueprint
-
-**Genesis Stamp**: 2026-01-18 | **Domain**: ARCH | **State**: CANONIZED
 
 > [!NOTE]
 > This is the **Conceptual UI/UX Blueprint** for The Celestial Chart, the primary interface for The Conductor to monitor and guide Axion's evolution.
@@ -105,3 +112,5 @@ This blueprint transforms our collaboration from a conversation into a shared ex
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

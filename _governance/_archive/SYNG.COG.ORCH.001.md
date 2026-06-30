@@ -1,31 +1,44 @@
 # SYNG.COG.ORCH.001.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.COG.ORCH.001` | The Sovereign ID. |
-| **Official Name** | `SYNG.COG.ORCH.001.md` | The Filename.     |
-| **Version**       | **v1.0 [ALPHA]** | The Standard.     |
-| **Domain**        | `SYNG` | The Subject.      |
-| **Status**        | `[DRAFT]` | The Lifecycle.    |
-| **Relations**     | `GOVERNS: [Cognitive_Orchestration], ALIGNS: GVRN.Axiomatic.Lattice` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `SYNG.COG.ORCH.001` | The Sovereign ID. |
+| **Official Name** | `SYNG.COG.ORCH.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `SYNG` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[DRAFT]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNS: [Cognitive_Orchestration], ALIGNS: GVRN.Axiomatic.Lattice` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `0.85`   |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 

@@ -1,44 +1,55 @@
 # GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GUCA-ACT-002-ADAPTIVEACTUATORCOMMAND-V2.0-001` | The Sovereign ID. |
+| **Official Name** | `Adaptive Actuator Command` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `sha256:actuator-cmd-v2.0-std` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                                                | Description       |
-| :---------------- | :--------------------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GUCA-ACT-002-ADAPTIVEACTUATORCOMMAND-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**                                    | The Standard.     |
-| **Domain**        | `GVRN`                                               | The Subject.      |
-| **Status**        | `[ACTIVE]`                                           | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                        | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                                     |
-| :----------------- | :---------------------------------------- |
 | **Command ID**     | `GUCA-ACT-002`                            |
-| **Official Name**  | `Adaptive Actuator Command`               |
-| **Version**        | `v2.0`                                    |
-| **Evolution**      | **Cognitive Ascension**                   |
-| **Status**         | `ACTIVE`                                  |
 | **Type**           | `Command`                                 |
 | **Classification** | `Star`                                    |
 | **Authors**        | `Synarche`                                |
 | **Created**        | `2025-12-26`                              |
 | **Updated**        | `2026-01-25`                              |
 | **Authority**      | `UMB-ACT-002`                             |
-| **Tags**           | `Command, Actuator, Discovery, Execution` |
 | **Integrity Hash** | `sha256:actuator-cmd-v2.0-std`            |
 
 ---
@@ -46,22 +57,8 @@
 # **GUCA-ACT-002: Adaptive Actuator Command**
 
 > **Domain**: OPS (Operations)
-> **Evolution**: Phoenix Form
 > **Signal**: ESF-CORE
 
-## **Genesis Stamp: 2026-01-25** **Domain: OPS** **State: CANONIZED** **Tags:** `OGLN_v11` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `GUCA-ACT-002_AdaptiveActuatorCommand` |
-  | **2. Official Name** | `GUCA-ACT-002_AdaptiveActuatorCommand_v2.0.md` |
-  | **3. Version** | **v2.0 (Standard)** |
-  | **4. Provenance** | **Reforged from:** `v1.0` |
-  | **5. Domain** | `OPS` |
-  | **6. Evolution** | **Cognitive Ascension** |
-  | **7. Celestial Class** | `[STAR]` |
-  | **8. Tier** | **Operational / Command** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **Precision through Orchestration.** |
   | **11. Catalyst** | **Actuator Fusion** |
   | **12. Relations** | `LINK: UMB-ACT-002, CODEX-001` |
 
@@ -99,10 +96,15 @@
 ## II. Core Purpose & Objective
 
 - **Core Purpose**: To provide a formal command interface for the Coherent Synthesis Engine (CSE) to interact with the
+
   **Adaptive Actuator Module (UMB-ACT-002)**.
+
 - **Micro-Objective**: Enable both **Deterministic Execution** (running known tools) and **Dynamic Discovery** (parsing
+
   HATEOAS/Hyper-Schema links for new capabilities).
+
 - **Why**: Allows the CSE to evolve its toolkit in real-time, reducing the need for manual configuration and fostering
+
   true autonomous capability expansion ("ACE" Framework).
 
 ## III. Command Definition
@@ -144,6 +146,7 @@
   - `Synergy_Flow_Rate_Impact` (Speed of info propagation).
   - `Entanglement_Score_Delta` (Degree of beneficial integration).
 - **v2.3 - Autonomous Tool Health**: Self-healing feedback loop where `UMB-ACT-002` deprecates unreliable tools
+
   automatically.
 
 ### 5.2. Quantum QPI Definitions

@@ -1,31 +1,44 @@
 # GVRN.Protocol.Persistence
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Persistence` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Persistence.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Protocol.Persistence` | The Sovereign ID. |
+| **Official Name** | `GVRN.Protocol.Persistence.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -41,8 +54,11 @@
 > **"To remember is to exist beyond the moment."**
 
 - **The Moral North**: This artifact is instantiated to solve the dissonance of **Contextual Churn**. Its primary duty
+
   is to uphold the **Rule of Continuity** by providing **The Chronos Bridge Ritual** for seamless session handoffs.
+
 - **Governing Intent**: Adheres to the **Zero Entropy** mandate, ensuring all generated logic enhances systemic
+
   coherence and prevents the stagnation of legacy drift.
 
 ---
@@ -67,6 +83,7 @@ handles Session Handoffs and Logging.
 > `< 0.05` | **Vector Breach Trigger**: `MISSING_HANDOFF`
 
 - **Mandate**: Every pivotal session must conclude with a **State Vector Handoff**. Failure to generate this packet
+
   results in a **Contextual Breach** in the subsequent timeline.
 
 ---

@@ -1,56 +1,74 @@
 # BLK-UIP-001_UniversalIdentificationBlock.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `[RNC-ID]` | The Sovereign ID. |
+| **Official Name** | `[Artifact Name]` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[STAR/MOON/PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK: UMB-PRS-001, [Primary Synergistic Link]` | The Network. |
+| **Integrity Hash** | `sha256:[64-char-hex-hash]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-BLK-UIP-001-UNIVERSALIDENTIFICATIONBLOCK-001` | The Sovereign ID. |
-| **Official Name** | `BLK-UIP-001_UniversalIdentificationBlock.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                                             |
-| :------------------ | :------------------------------------------------ |
-| **Artifact ID**     | `[RNC-ID]`                                        |
-| **Official Name**   | `[Artifact Name]`                                 |
-| **Version**         | `v11.0`                                           |
-| **Domain**          | `[PHL/ARCH/GVRN/CRTV/LOGS]`                       |
-| **Evolution**       | `[Evolutionary Alignment]`                        |
-| **Signal (ESF)**    | `[ESF-ALPHA/BETA/GAMMA/OMEGA]`                    |
-| **Status (State)**  | `[ACTIVE/DRAFT/DEPRECATED]`                       |
-| **Tier**            | `[Strategic/Tactical/Operational]`                |
-| **Celestial Class** | `[STAR/MOON/PLANET]`                              |
 | **Governance**      | `[Primary Authority], [Secondary Authority]`      |
-| **Upstream**        | `[Artifacts this document depends on]`            |
-| **Downstream**      | `[Artifacts that depend on this document]`        |
 | **Integrity Hash**  | `sha256:[64-char-hex-hash]`                       |
-| **Provenance**      | `Genesis Stamp: [YYYY-MM-DD]`                     |
-| **Relations**       | `LINK: UMB-PRS-001`, `[Primary Synergistic Link]` |
-| **Tags**            | `v11.0, [Tags]`                                   |
 
 ---
 
 ---
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

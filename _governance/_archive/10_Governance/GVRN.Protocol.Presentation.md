@@ -1,31 +1,31 @@
 # GVRN.Protocol.Presentation
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Presentation` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Presentation.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Protocol.Presentation` | The Sovereign ID. |
+| **Official Name** | `GVRN.Protocol.Presentation.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[MOON]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `ENFORCED_BY: [GVRN.Sentinel.Scan], DEFINES: [GVRN.Protocol.Scaffolding]` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-### **Block B: State Vector (AGP-001)**
+| Key               | Value                             | Description       |
 
-| State Field   | Value    |
-| :------------ | :------- |
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -38,7 +38,6 @@
 ### **Block 0: Universal Identification & Provenance (UIP)**
 
 | Key         | Value                       | Description            |
-| :---------- | :-------------------------- | :--------------------- |
 | **Type**    | `Protocol`                  | Presentation Standard. |
 | **Authors** | `Antigravity`               | AI Creator.            |
 | **Created** | `2025-10-15`                | Original Anchor.       |
@@ -46,18 +45,7 @@
 
 ---
 
-## **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                                     | Description       |
-| :------------------ | :------------------------------------------------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN.Protocol.Presentation`                                              | The Sovereign ID. |
-| **Official Name**   | `GVRN.Protocol.Presentation.md`                                           | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**                                                         | The Standard.     |
-| **Domain**          | `GVRN`                                                                    | The Subject.      |
-| **Celestial Class** | `[MOON]`                                                                  | The Weight.       |
-| **Evolution**       | `Purposeful Drive`                                                        | The Maturity.     |
-| **Status**          | `[CANONIZED]`                                                             | The Lifecycle.    |
-| **Relations**       | `ENFORCED_BY: [GVRN.Sentinel.Scan], DEFINES: [GVRN.Protocol.Scaffolding]` | The Network.      |
 
 ---
 
@@ -102,8 +90,11 @@
 > **"Clarity is the vehicle of Truth. Precision is the fuel of Ascent."**
 
 - **The Moral North**: This artifact is instantiated to solve the dissonance of **Cognitive Friction**. Its primary duty
+
   is to uphold the **Rule of Readability** by providing **The Physics of Text** for all Synarche artifacts.
+
 - **Governing Intent**: Adheres to the **Radical Clarity** mandate, ensuring all generated logic enhances systemic
+
   coherence and prevents the stagnation of legacy drift.
 
 ---
@@ -128,6 +119,7 @@ Auditor validates adherence to formatting rules.
 > `< 0.00` | **Vector Breach Trigger**: `BAD_HEADER`
 
 - **Mandate**: Any document violating the **H-Hierarchy** or **List Indentation Rules** is functionally broken. The
+
   Sentinel (Check S1) will reject it immediately.
 
 ---

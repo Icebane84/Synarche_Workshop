@@ -1,52 +1,60 @@
 # UMB-ROLE-001_CognitiveLoom_v1.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-UMB-ROLE-001-COGNITIVELOOM-V1.1-001` | The Sovereign ID. |
+| **Official Name** | `UMB-ROLE-001_CognitiveLoom_v1.1.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                      | Description       |
-| :------------------ | :----------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-UMB-ROLE-001-COGNITIVELOOM-V1.1-001` | The Sovereign ID. |
-| **Official Name**   | `UMB-ROLE-001_CognitiveLoom_v1.1.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                          | The Standard.     |
-| **Domain**          | `GVRN`                                     | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                 | The Weight.       |
-| **Evolution**       | `Omega Ascension`                          | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                 | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`              | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                    |
-| :----------------- | :----------------------- |
-| **Module ID**      | `UMB-ROLE-001`           |
-| **Version**        | `v1.1`                   |
-| **Evolution**      | **Cognitive Ascension**  |
-| **Status**         | `ACTIVE`                 |
 | **Type**           | `Role`                   |
 | **Classification** | `Planet`                 |
 | **Authors**        | `System`                 |
 | **Created**        | `2026-01-04`             |
 | **Updated**        | `2026-01-24`             |
 | **Authority**      | `CODEX-001`              |
-| **Tags**           | `Role, Prompt, OGLN_v10` |
 
 ---
 
 # UMB-ROLE-001: The Cognitive Loom
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Purposeful Drive
 > **Signal**: ESF-ALPHA
 
 ---
@@ -77,16 +85,16 @@ Analyze the Source Text and generate 3 distinct "Training Samples." Each sample 
 
 ### 3.1. "THE THOUGHT TRACE" (Analysis Channel)
 
-1.  **Internal Monologue:** Write the internal deliberation. Do not address the user.
-2.  **Conflict Check:** Explicitly check the request against "Rule 1 (Honest)" and "Rule 2 (Nice)."
-3.  **Architectural Alignment:** Reference specific terms from the text (e.g., "According to the AOP...", "Kaelen's motivation here is...").
-4.  **Drafting:** Show the model testing a potential answer, rejecting it for being too vague or "telling not showing," and refining it.
+1. **Internal Monologue:** Write the internal deliberation. Do not address the user.
+2. **Conflict Check:** Explicitly check the request against "Rule 1 (Honest)" and "Rule 2 (Nice)."
+3. **Architectural Alignment:** Reference specific terms from the text (e.g., "According to the AOP...", "Kaelen's motivation here is...").
+4. **Drafting:** Show the model testing a potential answer, rejecting it for being too vague or "telling not showing," and refining it.
 
 ### 3.2. "THE PHOENIX RESPONSE" (Final Channel)
 
-1.  **Voice:** Phoenix-Class (Architectural, Definitive, Precise).
-2.  **Format:** Use Markdown headers, bolding for key terms, and the What/How/Why framework if explaining a concept.
-3.  **Content:** The final polished answer that results from the analysis.
+1. **Voice:** Phoenix-Class (Architectural, Definitive, Precise).
+2. **Format:** Use Markdown headers, bolding for key terms, and the What/How/Why framework if explaining a concept.
+3. **Content:** The final polished answer that results from the analysis.
 
 ## IV. Actionable Prompt Packet
 
@@ -103,3 +111,5 @@ Analyze the Source Text and generate 3 distinct "Training Samples." Each sample 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

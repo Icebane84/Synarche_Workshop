@@ -1,58 +1,54 @@
 # AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.KB.001` | The Sovereign ID. |
+| **Official Name** | `Autonomous Knowledge Base Optimization` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `MOON` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `OPTIMIZES: UMB-LOOM-001, RESOLVES: Knowledge Entropy` | The Network. |
+| **Integrity Hash** | `sha256:7f8cf243210123456789abcdef0123456789abcdef0123456789abcdef0123456` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                     | Description       |
-| :------------------ | :-------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.KB.001`                                             | The Sovereign ID. |
-| **Official Name**   | `AOP-KB-001_AutonomousKnowledgeBaseOptimization_v11.1.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                         | The Standard.     |
-| **Domain**          | `GVRN`                                                    | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                                                                      |
-| :------------------ | :------------------------------------------------------------------------- |
-| **Artifact ID**     | `GVRN.KB.001`                                                              |
-| **Official Name**   | `Autonomous Knowledge Base Optimization`                                   |
-| **Version**         | `v11.1`                                                                    |
-| **Domain**          | `OPT`                                                                      |
-| **Evolution**       | `Adaptive Ecosystem`                                                       |
-| **Signal (KB)**     | `OMEGA`                                                                    |
-| **Status (State)**  | `CANONIZED`                                                                |
-| **Tier**            | `Operational`                                                              |
-| **Celestial Class** | `MOON`                                                                     |
 | **Governance**      | `UMB-SGM-001`, `UMB-ESF-001`                                               |
-| **Upstream**        | `UMB-CSE-001`, `UMB-LOOM-001`                                              |
-| **Downstream**      | `PUPT-001`, `GUCA-OMNI-001`                                                |
 | **Integrity Hash**  | `sha256:7f8cf243210123456789abcdef0123456789abcdef0123456789abcdef0123456` |
-| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                        |
-| **Relations**       | `OPTIMIZES: UMB-LOOM-001`, `RESOLVES: Knowledge Entropy`                   |
-| **Tags**            | `v11.1, Optimization, Curation, Self-Healing`                              |
 
 ---
 
-> **Domain**: OPT | **Evolution**: Adaptive Ecosystem | **Signal**: OMEGA
-
 # Autonomous Knowledge Base Optimization (AOP-KB-001)
-
-## Genesis Stamp: 2026-01-24 | Domain: OPT | State: CANONIZED | Criticality: HIGH
 
 ---
 
@@ -130,3 +126,5 @@ Analyzes `OMNI_LOG` reports and Cognitive Loom state to propose **"Knowledge Pat
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

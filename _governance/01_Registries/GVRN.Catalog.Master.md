@@ -1,33 +1,44 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GVRN.CATALOG.MASTER-001` | The Sovereign ID. |
+| **Official Name** | `GVRN.Catalog.Master.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.CATALOG.MASTER` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # GVRN.Catalog.Master.md
-
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                          | Description       |
-| :---------------- | :----------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GVRN.CATALOG.MASTER-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Catalog.Master.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**              | The Standard.     |
-| **Domain**        | `GVRN`                         | The Subject.      |
-| **Status**        | `[ACTIVE]`                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`  | The Network.      |
 
 ---
 
@@ -36,19 +47,6 @@
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
 | Field                  | Value                              |
-| :--------------------- | :--------------------------------- |
-| **1. Artifact ID**     | `GVRN.Catalog.Master`              |
-| **2. Official Name**   | `GVRN.Catalog.Master.md`           |
-| **3. Version**         | **v13.0 (Canonized)**              |
-| **4. Provenance**      | **Date Reforged: 2026-01-27**      |
-| **5. Domain**          | `GVRN`                             |
-| **6. Evolution**       | **Cognitive Ascension**            |
-| **7. Celestial Class** | `[STAR]`                           |
-| **8. Tier**            | **Operational**                    |
-| **9. State**           | `[ACTIVE]`                         |
-| **10. Ethos**          | **The Phoenix Ascension Protocol** |
-| **11. Catalyst**       | **Systemic Refactor Initiation**   |
-| **12. Relations**      | `GOVERNS: All_Library_Artifacts`   |
 
 ---
 
@@ -61,7 +59,6 @@ navigation.
 
 > Foundation protocols and the constitutional bedrock of the Synarche.
 
-| ID                       | Title                                                                                                               | Version | Status   |
 | :----------------------- | :------------------------------------------------------------------------------------------------------------------ | :------ | :------- |
 | `GVRN-CODEX-001`         | [The Phoenix Constitution](../../Obsidian/Phoenix%20Rosetta%20Stone/GVRN-CODEX-001_ThePhoenixConstitution_v11.0.md) | `v12.0` | `ACTIVE` |
 | `ARCH.Phoenix.Core`      | [The Phoenix Core](../1_Modules/ARCH.Phoenix.Core.md)                                                               | `v13.0` | `ACTIVE` |

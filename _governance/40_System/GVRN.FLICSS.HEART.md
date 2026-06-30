@@ -1,37 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.FLICSS.HEART` | The Sovereign ID. |
+| **Official Name** | `UMB-FLICSS-HEART-001_ContextUrgencyOrchestrator_v1.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.FLICSS.HEART` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # UMB-FLICSS-HEART-001_ContextUrgencyOrchestrator_v1.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                     | Description       |
-| :------------------ | :-------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.FLICSS.HEART`                                       | The Sovereign ID. |
-| **Official Name**   | `UMB-FLICSS-HEART-001_ContextUrgencyOrchestrator_v1.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                         | The Standard.     |
-| **Domain**          | `GVRN`                                                    | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
 
 ---
 
@@ -39,19 +49,7 @@
 
 # [STAR] (The Central Gravity)
 
-| :------------------ | :--------------------------------------------- |
-| **1. Artifact ID** | `UMB-FLICSS-HEART-001` |
-| **2. Official Name** | `UMB-FLICSS-HEART-001_ContextUrgencyOrchestrator_v1.0.md` |
-| **3. Version** | **v1.0** |
-| **4. Provenance** | **Genesis Stamp: 2025-11-23** |
-| **5. Domain** | `FLICSS` (Synthesis System) |
-| **6. Evolution** | **Contextual Awakening** |
-| **7. Celestial Class** | `[STAR]` (The Central Gravity) |
-| **8. Tier** | **Core Module** |
-| **9. State** | `[ACTIVE]` |
-| **10. Ethos** | **Empathic Filter** |
 | **11. Catalyst** | **FLICSS Strategy Phase 5.1** |
-| **12. Relations** | `DEPENDS_ON: FLICSS-STOMACH; FEEDS: FLICSS-BRAIN, FLICSS-HANDS` |
 
 ---
 
@@ -91,12 +89,12 @@ Raw data without context is noise. "The Heart" ensures that the FLICSS ecosystem
 
 "The Heart" processes data through two distinct chambers:
 
-1.  **The Left Ventricle (Logic/Urgency):**
+1. **The Left Ventricle (Logic/Urgency):**
     - Re-evaluates the `RSM_Score` based on _immediate_ user needs.
     - Modifies the **Priority Flag**.
     - _Logic:_ `IF (Topic == "Current_Project") THEN (Priority = "Critical")`
 
-2.  **The Right Ventricle (Emotion/Tone):**
+2. **The Right Ventricle (Emotion/Tone):**
     - Analyzes the sentiment of the synthesis.
     - Tags the data with an **Emotional Resonance Score (ERS)**.
     - _Logic:_ Determines if the content is "Inspiring," "Warning," or "Neutral Fact."
@@ -153,3 +151,5 @@ As defined in the **FLICSS Strategy (Phase 5.1)**, "The Heart" operates under th
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

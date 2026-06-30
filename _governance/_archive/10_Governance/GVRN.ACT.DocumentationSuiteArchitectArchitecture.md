@@ -1,31 +1,44 @@
 # GVRN.ACT.DocumentationSuiteArchitectArchitecture
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.DocumentationSuiteArchitectArchitecture` | The Sovereign ID. |
-| **Official Name** | `GVRN.ACT.DocumentationSuiteArchitectArchitecture.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.ACT.DocumentationSuiteArchitectArchitecture` | The Sovereign ID. |
+| **Official Name** | `GVRN.ACT.DocumentationSuiteArchitectArchitecture.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -86,6 +99,7 @@ actionable command.
 ### 3.3 Arguments
 
 - **[Concept]**: A concise, descriptive string (token or phrase) representing the idea, module, or process for which a
+
   documentation suite is required.
 
 ---
@@ -121,12 +135,17 @@ knowledge base.
 ## VII. Systemic Synergy
 
 - **Governed By**:
+
   [**GVRN.Gov.Module**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/GVRN.Gov.Module.md)
   (Standardized Governance).
+
 - **Interface Link**:
+
   [**PRS-001**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UMB-PRS-001_ThePhoenixRosettaStone.md)
   (Phoenix Rosetta Stone).
+
 - **Engine Provider**:
+
   [**UMB-DSA-001**](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v11.1.md).
 
 ---

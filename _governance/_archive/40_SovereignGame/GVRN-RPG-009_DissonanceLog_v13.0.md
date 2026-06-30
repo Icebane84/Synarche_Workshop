@@ -1,67 +1,37 @@
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-RPG-009` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-009_DissonanceLog_v13.0.md` | The Filename.     |
-| **Version**       | **v13.0** | The Standard.     |
-| **Domain**        | `GVRN-RPG` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
-
----
-
-###### **[ARTIFACT START]**
-
 # Dissonance Log: The Hybrid Combat System
 
-**Phase**: 01 **Objective**:
+### **Block A: The Identification Lock (UIP-V14)**
 
-**Phase**: 02 **Objective**:
-
-**Phase**: 03 **Objective**:
-
-**Phase**: 04 **Objective**:
-
-**Phase**: 05 **Objective**:
-
-**Phase**: 06 **Objective**:
-
-**Phase**: 07 **Objective**:
-
-**Phase**: 08 **Objective**:
-
-**Phase**: 09 **Objective**:
-
-**Phase**: 10 **Objective**:
-
-**Phase**: 11 **Objective**:
-
-**Phase**: 12 **Objective**:
-
-**Phase**: 13 **Objective**:
-
-**Phase**: 14 **Objective**: Build the "Dissonance Engine" (Hybrid CLI/Visual) for the Tarot Forge.
-
-## Combat log
-
-### [INIT] System Initialization
-
-- **Strategy**: Hybrid Sovereign (Visual Strategy + CLI Tactics).
-- **Components**:
-  1.  **Bridge Scanner**: Node.js backend logic to detect "Enemies" (Lint Errors).
-  2.  **Quest Board**: React UI to visualize Enemies as Cards.
-  3.  **Strike Protocol**: Bridge command to execute fixes (`npm run lint --fix`).
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-RPG-009` | The Sovereign ID. |
+| **Official Name** | `GVRN-RPG-009_DissonanceLog_v13.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
 ## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
 
-- `CMD: REVIEW_LOG` -> "Read historical combat logistics."
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
 
 ###### **[ARTIFACT END]**
-
-{{TRANSCLUDE: SELT-ANCHOR-OMNI.md}}

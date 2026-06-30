@@ -1,43 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-DOC-STD-001-001` | The Sovereign ID. |
+| **Official Name** | `DOC-STD-001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `DOC-STD-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # DOC-STD-001.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-DOC-STD-001-001`        | The Sovereign ID. |
-| **Official Name**   | `DOC-STD-001.md`              | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # **DOC-STD-001: Synarche Universal Documentation Standards (v2.1)**
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
 
@@ -46,19 +52,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                                    |
-| :--------------------- | :--------------------------------------- |
-| **1. Artifact ID**     | `DOC-STD-001`                            |
-| **2. Official Name**   | `DOC-STD-001.md`                         |
-| **3. Version**         | **v2.1 (Hephaestus Ascended Alignment)** |
-| **4. Provenance**      | **Date Reforged: 2025-12-22**            |
-| **5. Domain**          | `GVRN`                                   |
-| **6. Evolution**       | **Purposeful Drive**                     |
-| **7. Celestial Class** | `[PLANET]`                               |
-| **8. Tier**            | **Operational**                          |
-| **9. State**           | `(Canonization Status)`                  |
-| **10. Ethos**          | **Guardian of Coherence**                |
-| **11. Catalyst**       | **System Refactor**                      |
-| **12. Relations**      | `Pending Integration`                    |
 
 ---
 
@@ -128,12 +121,19 @@ results in a **BLOCKER** status at the Quality Gate.
 ## **VII. Systemic Topology (ASL Protocol)**
 
 - **GOVERNED_BY:**
+
   [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+
 - **ENFORCES:**
+
   [AOP-PCDS-001 (Canonical Design)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-PCDS-001_PhoenixCanonicalDesignStandard.md)
+
 - **FEEDS:**
+
   [PRS-001 (Rosetta Stone)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/PRS-001_Phoenix_Rosetta_Stone.md)
+
 - **ROOTS:**
+
   [AOP-VSI-001 (Structural Integrity)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-VSI-001_ValidateStructuralIntegrityProtocol_v2.1.md)
 
 **[ARTIFACT END]**

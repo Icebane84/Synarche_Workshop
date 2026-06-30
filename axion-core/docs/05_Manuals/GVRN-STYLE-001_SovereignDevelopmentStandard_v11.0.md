@@ -1,30 +1,44 @@
 # GVRN-STYLE-001_SovereignDevelopmentStandard_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                                                        | Description       |
-| :---------------- | :----------------------------------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-GVRN-STYLE-001-SOVEREIGNDEVELOPMENTSTANDARD-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `GVRN-STYLE-001_SovereignDevelopmentStandard_v11.0.md`       | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]**                                            | The Standard.     |
-| **Domain**        | `ARCH`                                                       | The Subject.      |
-| **Status**        | `ACTIVE`                                                     | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001`                                | The Network.      |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `ARCH-GVRN-STYLE-001-SOVEREIGNDEVELOPMENTSTANDARD-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `GVRN-STYLE-001_SovereignDevelopmentStandard_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `ARCH` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                                                        | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -71,6 +85,7 @@
 ### 1.2. Destructive Actions
 
 - **Redline Policy:** Pause and request explicit user review for any command that targets system state globally (`rm`,
+
   `npm install -g`, `curl`, `wget`).
 
 ## II. Coding Standards (Algorithmic Elegance)

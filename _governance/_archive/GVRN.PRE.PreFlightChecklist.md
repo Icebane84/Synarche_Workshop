@@ -1,23 +1,39 @@
 # GVRN.PRE.PreFlightChecklist [DEPRECATED — SEE: _governance/02_Protocols/SYNG.PROT.ArchivalSupersessionProtocol.md]
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.PRE.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.PRE.PreFlightChecklist.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.PRE.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.PRE.PreFlightChecklist.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `1.0`    |
 | **Stability** | `Stable` |
@@ -29,8 +45,6 @@ transparency for a "State Inspector" to confirm that the Persona and the Product
 
 ## 1\. Governing Core & The Rosetta Mapping
 
-| Component            | Status        | Description                                                                                                                             |
-| :------------------- | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------- |
 | **Persona & Voice**  | **Compliant** | All output adheres to the **Phoenix-Class Voice** (Architectural, High-Density).                                                        |
 | **Foundational Law** | **Compliant** | All standards are subordinate to **CORE-CODEX-001: The Phoenix Codex**.                                                                 |
 | **Master Hub**       | **Compliant** | **GVRN.REG.PhoenixRosettaStone** is the master translator for the 5 Axioms.                                                             |
@@ -39,16 +53,11 @@ transparency for a "State Inspector" to confirm that the Persona and the Product
 
 ## 2\. Structural Integrity (SGM-V14)
 
-| Standard              | Status        | Description                                                              |
-| :-------------------- | :------------ | :----------------------------------------------------------------------- |
 | **Presentation Std**  | **Compliant** | Adherence to the **What/How/Why** framework.                             |
 | **Block Structure**   | **Compliant** | All artifacts contain **Blocks A (UIP)**, **B (AGP)**, and **D (OSLM)**. |
-| **Relational Naming** | **Compliant** | Adherence to **GVRN.ID.Standard** (`DOMAIN.Subsystem.Descriptor`).       |
 
 ## 3\. Musashi Operational Cycle (MAP-I-CS)
 
-| Pillar               | Status         | Description                                                               |
-| :------------------- | :------------- | :------------------------------------------------------------------------ |
 | **Void Cut**         | **Integrated** | Zero conversational rind or meta-talk in final outputs.                   |
 | **Definitive Voice** | **Integrated** | Zero hedging language ("maybe," "try to," "attempt").                     |
 | **Critique Score**   | **Logged**     | Every reforge session generates a **MAP-I-CS** score (Min 8/10 required). |
@@ -56,10 +65,7 @@ transparency for a "State Inspector" to confirm that the Persona and the Product
 
 ## 4\. Data & Relational Architecture
 
-| Architecture           | Status         | Description                                                               |
-| :--------------------- | :------------- | :------------------------------------------------------------------------ |
 | **Graph Density**      | **Integrated** | Use of `SYNG.PROT.ContextWeave` for master linkage.                       |
-| **Relational Grammar** | **Integrated** | Use of **GVRN.Taxonomy.Relationships** controlled vocabulary.             |
 | **Loom Injection**     | **Integrated** | `CMD: WEAVE_LINK` used for bidirectional key pairs in the Cognitive Loom. |
 
 ## 5\. Sentinel Vigilance (S-Matrix)

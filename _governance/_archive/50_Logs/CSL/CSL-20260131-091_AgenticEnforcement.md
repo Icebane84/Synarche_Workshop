@@ -1,31 +1,44 @@
 # CSL-20260131-091_AgenticEnforcement.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CSL-20260131-091-AGENTICENFORCEMENT-001` | The Sovereign ID. |
-| **Official Name** | `CSL-20260131-091_AgenticEnforcement.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-CSL-20260131-091-AGENTICENFORCEMENT-001` | The Sovereign ID. |
+| **Official Name** | `CSL-20260131-091_AgenticEnforcement.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -54,6 +67,7 @@
 The workspace possessed powerful enforcement tools, but they lacked "Governance Authority":
 
 2. **Gap**: They lacked the Universal Identification & Provenance (UIP) headers, meaning they were not formally
+
    recognized by the Phoenix Protocol as sources of truth.
 
 ### 2. The Synthesis (Insight)
@@ -72,8 +86,11 @@ the Synarche.
 
 - **Trusted Agents**: Future agents can rely on these files as authoritative standards.
 - **Strict Mode**: The configurations enforce strict compliance (v11.3), creating a safe environment for autonomous code
+
   generation.
+
 - **Unified Domain**: These tools now synergize with `cspell.json` and `.markdownlint.cjs` to form a complete
+
   "Governance Grid".
 
 ---

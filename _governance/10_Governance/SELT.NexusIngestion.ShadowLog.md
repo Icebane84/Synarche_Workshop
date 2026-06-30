@@ -1,5 +1,35 @@
----
 # Block A: Universal Identification & Provenance (UIP-V15)
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `SELT.NexusIngestion.ShadowLog` | The Sovereign ID. |
+| **Official Name** | `SELT.NexusIngestion.ShadowLog.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 artifact_anchor:
   id: "GVRN.NEXUS.INGEST.001"
   version: "v15.0 [OMEGA]"
@@ -10,15 +40,25 @@ artifact_anchor:
   state: "CANONIZED"
   ethos: "ZERO-ENTROPY_INGESTION_LOG"
   relations:
+
     - type: "SYNERGIZES"
+
       node: "INFR.FORGE_DAEMON.001"
+
     - type: "SYNERGIZES"
+
       node: "axion-core/src/cse/sourcemap.py"
+
     - type: "SYNERGIZES"
+
       node: "axion-core/src/nexus/nexus_worker.js"
+
     - type: "DEPENDS_ON"
+
       node: ".agent/workflows/validation/finalize_artifact.md"
+
     - type: "SYNERGIZES"
+
       node: ".agent/skills/synergistic-opportunity-weaving/SKILL.md"
 ---
 
@@ -58,7 +98,6 @@ artifact_anchor:
 ## II. Ingestion Manifest (The Cargo)
 
 | ID                      | Source File                                | Canonical Target                                      | Layer             |
-| :---------------------- | :----------------------------------------- | :---------------------------------------------------- | :---------------- |
 | TOOL.Forge.SourceMap    | `@NEXUS/import re.py`                      | `axion-core/src/cse/sourcemap.py`                     | `@system/`        |
 | TOOL.Forge.Daemon       | `@NEXUS/forge_daemon.py`                   | `axion-core/tools/forge_daemon.py`                    | `@system/`        |
 | TOOL.GUCA.Command       | `@NEXUS/GUCACommand.py`                    | `axion-core/src/cse/guca_command.py`                  | `@system/`        |
@@ -115,3 +154,22 @@ artifact_anchor:
 ---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: SELT.NexusIngestion.ShadowLog VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-23`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

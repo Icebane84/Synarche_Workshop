@@ -1,26 +1,42 @@
 # Google Antigravity.md
 
-> **Domain**: ARCH
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-04** **Domain: ARCH** **State: [ACTIVE]** **Tags:** `OGLN_v13, ARCH, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `ARCH-GOOGLE-ANTIGRAVITY-001` | The Sovereign ID. |
+| **Official Name** | `Google Antigravity.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `ARCH` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-GOOGLE-ANTIGRAVITY-001` | The Sovereign ID. |
-| **Official Name** | `Google Antigravity.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
@@ -29,19 +45,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                              |
-| :--------------------- | :--------------------------------- |
-| **1. Artifact ID**     | `Google Antigravity`               |
-| **2. Official Name**   | `Google Antigravity.md`            |
-| **3. Version**         | **v1.0 (Reforged)**                |
-| **4. Provenance**      | **Date Reforged: 2025-12-22**      |
-| **5. Domain**          | `ARCH`                             |
-| **6. Evolution**       | **Purposeful Drive**               |
-| **7. Celestial Class** | `[PLANET]`                         |
-| **8. Tier**            | **Operational**                    |
-| **9. State**           | `[ACTIVE]`                         |
-| **10. Ethos**          | **The Phoenix Ascension Protocol** |
-| **11. Catalyst**       | **System Refactor**                |
-| **12. Relations**      | `Pending Integration`              |
 
 ---
 
@@ -58,17 +61,23 @@ The most critical settings in Antigravity determine how much autonomy the agents
 
 - **Location:** Settings \> Agent Permissions
 - **The Problem:** The default "Turbo" or "Auto" modes can allow the agent to execute destructive terminal commands
+
   (like rm \-rf) or hallucinate package installations without your consent.
 
 **Recommendation:**
 
 1. **Terminal Execution:** Set to **"Auto" (with Allow List)** instead of "Turbo."
    - _Why:_ "Turbo" executes everything blindly. "Auto" allows safe commands (like ls, git status, npm run build) but
+
      pauses to ask you for permission before running potentially destructive commands (like rm, sudo, or external curl
      requests).
+
 2. **Review Policy:** Set to **"Agent Decides"** (Default) $\\rightarrow$ Change to **"Request Review" for Critical
+
    Files.**
+
    - _Action:_ In your .agent/config or workspace settings, enforce a "Review" tag for core configuration files (e.g.,
+
      package.json, .env, Dockerfiles). Let the agent auto-edit UI components, but force a pause when it touches
      infrastructure.
 
@@ -82,11 +91,16 @@ cloning a malicious repo that contains hidden instructions for the agent).
 1. **Browser Allow List:**
    - **Setting:** Agent Browser \> Allowed Domains
    - **Action:** Do _not_ leave this open. Restrict the agent's browser access to documentation sites (e.g.,
+
      docs.python.org, stackoverflow.com, localhost) and your specific testing URLs.
+
    - _Benefit:_ Prevents the agent from accidentally exfiltrating data to unknown servers or downloading malicious code
+
      from unverified sources during a "research" task.
+
 2. **Disable "Auto-Execute" for MCP Tools:**
    - If you connect external tools (Model Context Protocol), ensure **"Human in the Loop"** is checked. Do not let the
+
      agent trigger external API calls (e.g., to Slack or Stripe) without your click-to-confirm.
 
 #### **Phase 3: Workflow Optimization (The ".agent" Directory)**
@@ -100,9 +114,12 @@ Procedures" (SOPs) for the AI, ensuring it codes _your_ way.
    - Navigate to .agent/workflows (or create it).
    - Create a file named refactor_protocol.md.
    - **Content:** Write a specific prompt that defines your coding style. "When refactoring, ALWAYS: 1\. Create a
+
      backup of the file. 2\. Use TypeScript strict mode. 3\. Add JSDoc comments to new functions. 4\. Run 'npm test'
      before finishing."
+
    - _Benefit:_ Now, when you type "Refactor this" in the chat, the agent follows your strict .md protocol rather than
+
      its generic training data.
 
 #### **Phase 4: Model Strategy**
@@ -110,8 +127,11 @@ Procedures" (SOPs) for the AI, ensuring it codes _your_ way.
 Antigravity allows you to hot-swap models. Don't use the most expensive model for everything.
 
 - **For Architecture/Planning (Agent Manager):** Select **Gemini 3 Pro** (or the highest reasoning model available). You
+
   need the "Big Brain" to plan the task list and dependency tree.
+
 - **For Routine Coding (Editor):** Switch to a faster, lower-latency model (like **Gemini Flash** or a standard coding
+
   model) if available. This reduces lag when the agent is just generating boilerplate UI code.
 
 ### **Summary Checklist**

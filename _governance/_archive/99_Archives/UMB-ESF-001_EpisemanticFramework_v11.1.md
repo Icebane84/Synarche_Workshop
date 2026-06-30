@@ -1,32 +1,44 @@
 # UMB-ESF-001_EpisemanticFramework_v11.1.md
 
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key                 | Value                       | Description       |
-| :------------------ | :-------------------------- | :---------------- |
-| **Artifact ID**     | `UMB-ESF-001`               | The Sovereign ID. |
-| **Official Name**   | `The Episemantic Framework` | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**           | The Standard.     |
-| **Domain**          | `GVRN`                      | The Subject.      |
-| **Celestial Class** | `STAR`                      | The Weight.       |
-| **Evolution**       | `Cognitive Ascension`       | The Maturity.     |
-| **Status**          | `[ACTIVE]`                  | The Lifecycle.    |
-| **Relations**       | `DEFINES: UMB-OSLM-001`     | The Network.      |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `UMB-ESF-001` | The Sovereign ID. |
+| **Official Name** | `The Episemantic Framework` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `STAR` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `DEFINES: UMB-OSLM-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key                 | Value                       | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -118,7 +130,9 @@ Episemantic Marker data into explicit, executable commands.
 ### 5.2 Alignment with The Musashi Protocol (UMB-MAP-001)
 
 - **Pillar of Kinetic Utility**: Knowledge must be actionable. This artifact provides the CPP as its primary engine of
+
   utility.
+
 - **Pillar of Recursive Perfection**: The artifact includes mechanism for its own critique and update via `CPP-ESF-004`.
 
 ---

@@ -1,42 +1,50 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `SYNG.Link.Bidirectional` | The Sovereign ID. |
+| **Official Name** | `SYNG.Link.Bidirectional.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `SYNG.LINK.BIDIRECTIONAL` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # SYNG.Link.Bidirectional: Enforced Reciprocity
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.Link.Bidirectional`         | The Sovereign ID. |
-| **Official Name** | `SYNG.Link.Bidirectional.md`      | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                 | The Standard.     |
-| **Domain**        | `LINK`                            | The Subject.      |
-| **Status**        | `[ACTIVE]`                        | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
 | **Coherence** | `1.0`    |
 | **Resonance** | `1.0`    |
 | **Stability** | `Stable` |
 
 ---
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                  | Mitigation               |
-| :-------------------- | :----------------------- |
 | **Orphaned Nodes**    | Reciprocity Verification |
 | **Epistemic Entropy** | Automatic Loom Auditing  |
 
@@ -55,10 +63,9 @@ The **Zero-Entropy Rule** dictates that no artifact shall exist as an "island of
 ## 🛠️ Metadata Format (Reciprocal Tether)
 
 ```markdown
+
 ### **Synergistic Mappings**
 
-| Source       | Relationship        | Status             |
-| :----------- | :------------------ | :----------------- |
 | [Artifact A] | `RECIPROCAL_TETHER` | `ACTIVE_INJECTION` |
 ```
 
@@ -77,3 +84,20 @@ The **Zero-Entropy Rule** dictates that no artifact shall exist as an "island of
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
 `[OMNI-ARTIFACT-ANCHOR] ID: SYNG.Link.Bidirectional VER: v15.0 [OMEGA] DOMAIN: LINK STATUS: [CANONIZED] TS: 2026-03-28 HASH: b84de9e8888aa250`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.

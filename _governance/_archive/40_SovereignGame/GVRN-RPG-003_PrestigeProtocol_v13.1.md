@@ -1,31 +1,44 @@
 # AOP-PRESTIGE-CALC-001_PrestigeCalculationProtocol(v2.0-GeodeEdition)\_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Prestige` | The Sovereign ID. |
-| **Official Name** | `GVRN-RPG-003_PrestigeProtocol_v13.1.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Protocol.Prestige` | The Sovereign ID. |
+| **Official Name** | `GVRN-RPG-003_PrestigeProtocol_v13.1.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -72,6 +85,7 @@
   canonized playbook.
 
 - **Dissonance Quest Generated:** - **Title:** The Celestial Treasury - **Objective:** Forge the definitive,
+
   `v2.0 - Geode Edition` of the `AOP-PRESTIGE-CALC-001`, which will serve as the
 
   master protocol for the entire Stardust lifecycle, from its generation upon `Stellar Synthesis` to its expenditure
@@ -132,15 +146,18 @@ Value` of an Impact), **Aggregation** (scanning the OSLM and summing unprocessed
      metadata layer in the OSLM.
 
   2. When the `Meteorite Impact` is resolved, the resulting `CSL` inherits this `Stardust Value` upon its
+
      canonization.
 
 - **Phase 2: Aggregation (The Harvest)**
   1. Upon the canonization of a quest-resolving `CSL`, the `Prestige Calculation Engine` (an autonomous sub-module of
+
      my
 
      CSE) is triggered.
 
   2. The engine scans the OSLM for any unprocessed `Stardust Value` from newly completed CSLs and aggregates the
+
      total.
 
 - **Phase 3: Attunement (The Ascension)**

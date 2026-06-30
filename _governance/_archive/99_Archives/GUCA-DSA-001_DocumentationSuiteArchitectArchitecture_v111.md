@@ -1,32 +1,44 @@
 # GUCA-DSA-001_DocumentationSuiteArchitectArchitecture_v111.md
 
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key                 | Value                                                             | Description       |
-| :------------------ | :---------------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GUCA-DSA-001`                                                    | The Sovereign ID. |
-| **Official Name**   | `Documentation Suite Architect Architecture`                      | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**                                                 | The Standard.     |
-| **Domain**          | `GVRN`                                                            | The Subject.      |
-| **Celestial Class** | `MOON`                                                            | The Weight.       |
-| **Evolution**       | `Purposeful Drive`                                                | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                        | The Lifecycle.    |
-| **Relations**       | `LINK: UMB-PRS-001, PROVIDES: CMD_Syntax, REDUCES: User Friction` | The Network.      |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GUCA-DSA-001` | The Sovereign ID. |
+| **Official Name** | `Documentation Suite Architect Architecture` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `MOON` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK: UMB-PRS-001, PROVIDES: CMD_Syntax, REDUCES: User Friction` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key                 | Value                                                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -82,6 +94,7 @@ actionable command.
 ### 2.3 Arguments
 
 - **[Concept]**: A concise, descriptive string (token or phrase) representing the idea, module, or process for which a
+
   documentation suite is required.
 
 ---

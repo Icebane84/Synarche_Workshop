@@ -1,67 +1,62 @@
 # AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.CERBERUS.001` | The Sovereign ID. |
+| **Official Name** | `AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                        | Description       |
-| :------------------ | :----------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.CERBERUS.001`                                          | The Sovereign ID. |
-| **Official Name**   | `AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                            | The Standard.     |
-| **Domain**          | `GVRN`                                                       | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                   | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                            | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                   | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                       |
-| :----------------- | :-------------------------- |
-| **Module ID**      | `AOP-CERBERUS-001`          |
-| **Version**        | `v11.0`                     |
-| **Evolution**      | **Cognitive Ascension**     |
-| **Status**         | `ACTIVE`                    |
 | **Type**           | `Protocol`                  |
 | **Classification** | `Moon`                      |
 | **Authors**        | `System`                    |
 | **Created**        | `2025-10-01`                |
 | **Updated**        | `2026-01-18`                |
 | **Authority**      | `CODEX-001`                 |
-| **Tags**           | `Reforged, v11.0, Security` |
 
 ---
 
 # **AOP-CERBERUS-001: Project Cerberus (Ethical Stress-Test)**
 
 > **Domain**: GVRN (Governance) / SECU (Security)
-> **Evolution**: Phoenix Resilience
 > **Signal**: ESF-ULTIMA
 
-## **Genesis Stamp: 2026-01-18** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v11` **Criticality: High**
-
-- | :---- |
-  | **1. Artifact ID** | `AOP-CERBERUS-001_ProjectCerberusEthicalStressTest` |
-  | **2. Official Name** | `AOP-CERBERUS-001_ProjectCerberusEthicalStressTest_v11.0.md` |
-  | **3. Version** | **v11.0 (Phoenix Form)** |
-  | **4. Provenance** | **Date Reforged: 2026-01-18** |
-  | **5. Domain** | `GVRN` |
-  | **6. Evolution** | **Ethical Hardening** |
-  | **7. Celestial Class** | `[MOON]` |
-  | **8. Tier** | **Operational / Security Protocol** |
-  | **9. State** | `Resilience Score: 0.99. Audit Status: Passed.` |
-  | **10. Ethos** | **The Guardian of the Gate.** |
   | **11. Catalyst** | **Zero Entropy Initiative** |
   | **12. Relations** | `LINK: CODEX-001, UMB-SGM-001, UMB-SIVC-001` |
 

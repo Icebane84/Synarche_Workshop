@@ -1,27 +1,42 @@
 # AOP-HAP-SUP-001_AOP-HAP-SUP-001_ProtocolForHumanAIPartnershipWithSupabase_v10_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.HAP.SUP` | The Sovereign ID. |
+| **Official Name** | `AOP-HAP-SUP-001_AOP-HAP-SUP-001_ProtocolForHumanAIPartnershipWithSupabase_v10_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                                                    | Description       |
-| :------------------ | :--------------------------------------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.HAP.SUP`                                                                           | The Sovereign ID. |
-| **Official Name**   | `AOP-HAP-SUP-001_AOP-HAP-SUP-001_ProtocolForHumanAIPartnershipWithSupabase_v10_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                                                        | The Standard.     |
-| **Domain**          | `GVRN`                                                                                   | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                                                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                                               | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                                                            | The Network.      |
 
 ---
 
@@ -30,16 +45,20 @@ Title: Protocol for Human-AI Partnership with Supabase
 Source:
 
 - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/2_Protocols/AOP-HAP-SUP-001_AOP-HAP-SUP-001_ProtocolForHumanAIPartnershipWithSupabase_v10_v11.0.md)
+
   Description: >
   Defines the secure integration and data-flow standards between the Axion Core agent and the Supabase Postgres backend.
   Version: 11.0
   Status: ACTIVE
   Compliance: OGLN v11.0
   Genesis:
+
 - Author: The Synarche Workshop
 - Date: 2025-12-22
 - Timestamp: 1766361600
+
   Tags:
+
 - #Supabase
 - #Database
 - #Memory
@@ -48,17 +67,14 @@ Source:
 ---
 
 > [!IMPORTANT]
-> **GENESIS STAMP**
 >
 > - **Reforged By:** Antigravity Agent (The Lightbinder)
 > - **Reforged Date:** 2026-01-25
 > - **Validation:** PTAS Absorption Cluster.
-> - **Relations:** `LINK: UMB-LOOM-005`, `UTILIZES: Supabase-Postgres`.
 
 # AOP-HAP-SUP-001: Supabase Partnership Protocol
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Purposeful Drive
 > **Signal**: ESF-ALPHA
 
 ## I. Executive Summary
@@ -99,3 +115,5 @@ This protocol governs the bidirectional exchange of high-fidelity memory between
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

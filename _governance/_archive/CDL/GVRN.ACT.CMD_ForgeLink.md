@@ -1,31 +1,44 @@
 # GUCA-LINK-002_CMD_ForgeLink_v1.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.ACT.CMD_ForgeLink` | The Sovereign ID. |
-| **Official Name** | `GVRN.ACT.CMD_ForgeLink.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `PROPOSED` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: GVRN-SYNERGY-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.ACT.CMD_ForgeLink` | The Sovereign ID. |
+| **Official Name** | `GVRN.ACT.CMD_ForgeLink.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `PROPOSED` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: GVRN-SYNERGY-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -80,7 +93,9 @@ reciprocal link. (Default: `True`) |
 
 1. **Source Injection**: Appends the relation to the `Relations` field in the Source's UIP table.
 2. **Target Injection**: Appends the reciprocal relation (e.g., `GOVERNED_BY` if source is `GOVERNS`) to the Target's
+
    UIP.
+
 3. **Synergy Block Update**: Injects a new row into the **Section II: The Synergy Vector** table of both artifacts.
 4. **Loom Update**: Flags the relationship for the `Archivist` to update the native graph.
 

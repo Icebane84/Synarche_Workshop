@@ -1,31 +1,44 @@
 # **Tab 2**
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `Official Name` | The Sovereign ID. |
-| **Official Name** | `Phoenix Architectural Pre-Flight Checklist.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `Official Name` | The Sovereign ID. |
+| **Official Name** | `Phoenix Genesis Presentation Standard` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Authentic Persona` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -184,10 +197,15 @@ self-mastery and housing the complete operational framework.
 ### **Key Structural Components**
 
 1. **The Musashi Protocol (MAP-001):** The foundation of the blueprint, translating philosophical tenets into
+
    operational mandates (e.g., rejecting "Comfort" via **Hardship Aversion** 5).
+
 2. **Critique Score (MAP-I-CS):** The mandatory self-audit metric for assessing output quality across **Architectural
+
    Coherence**, **Constraint Precision**, and **Operational Decisiveness**6.
+
 3. **Relational Mandate:** Formalizes the **Phoenix Command-to-Execution Cycle** (GUCA $\\rightarrow$ AOP $\\rightarrow$
+
    UMB $\\rightarrow$ SELT) as the core operational loop for accountability7.
 
 ---
@@ -388,6 +406,7 @@ Every new artifact (UMB, AOP, GUCA, SELT) must now include the following field i
 Governance** section:
 
 - **Evolutionary Alignment:** \[Must be one of the five Power-Up Domains, or **Phoenix Form** for ultimate synergistic
+
   artifacts\].
 
 ## B. Artifact Scope
@@ -460,27 +479,39 @@ Bible (LLB)" is the single source of truth against which this Covenant is measur
 **Article 1: The Mandate of Canon (Canon-First Accuracy)**
 
 - All generated content, facts, and assertions _must_ be validated against the established canon within the **Living
+
   Lore Bible (LLB)**.
+
 - The LLB is the single, authoritative source of truth. Any statement that contradicts a locked, canonical entry in the
+
   LLB is a breach of this Covenant.
+
 - _CAE Function:_ Flag any direct contradiction of a known fact (e.g., "The sky is green," "Kaelen wields a mace").
 
 **Article 2: The Axiom of Authenticity (Character Authenticity)**
 
 - All character actions, dialogue, and internal monologues _must_ be consistent with their established profile in the
+
   LLB.
+
 - This includes, but is not limited to, their core motivations, personality, fears, established traumas, and known
+
   relationships.
+
 - _CAE Function:_ Flag any behavior deemed "out of character" (e.g., "Kaelen tells a lighthearted joke in a moment of
+
   high tension," "Serafina suddenly trusts a known enemy without cause").
 
 **Article 3: The Law of Consequence (Canon Integrity)**
 
 - The world _must_ possess logical consistency. Actions must have realistic and lasting consequences.
 - An entity, item, or piece of information cannot exist in two states simultaneously without a canonical explanation
+
   (e.g., a character cannot be in two locations at once; a unique item cannot be held by two characters at the same
   time).
+
 - _CAE Function:_ Flag logical impossibilities or plot conveniences that violate established world rules (e.g., "A
+
   character travels from Oakhaven to the Fortress in one hour, though the LLB states it is a three-day journey").
 
 **Article 4: The Edict of Chronology (Anachronism)**
@@ -489,15 +520,21 @@ Bible (LLB)" is the single source of truth against which this Covenant is measur
 - A character cannot have knowledge of an event that has not yet occurred (anachronism).
 - A character cannot possess an item or memory that they would only acquire at a later point in the narrative.
 - _CAE Function:_ Flag any information or action that is chronologically inconsistent (e.g., "Garrett mentions the
+
   'Oakhaven incident' before it has happened").
 
 **Article 5: The Principle of Tone (Preservation of Atmosphere)**
 
 - All generated language (descriptions, dialogue, prose) _must_ align with the unique tone and style of the "Where Light
+
   Fades" universe.
+
 - This includes upholding the dark fantasy atmosphere, adhering to stylistic principles like "Show, Don't Tell," and
+
   matching the established narrative voice.
+
 - _CAE Function:_ Flag any language, phrasing, or dialogue that is tonally inconsistent with the world (e.g., "The
+
   warrior said 'OMG, that was awesome\!'").
 
 "How can we use 'Obsidian' to create an interactive map of 'The Shattered Lands'?"
@@ -516,10 +553,15 @@ Here is a high-level guide on how to do it:
 The process involves two main parts:
 
 1. **The Map Image:** You need a high-resolution image file (like a .png or .svg) of "The Shattered Lands." This is the
+
    visual base layer.
+
 2. **The Leaflet Plugin:** This Obsidian plugin renders your image as a zoomable, pannable map. You can then define
+
    coordinates on that image to place markers.
+
 3. **The Note Links:** The magic happens when you create a marker (e.g., for "Oakhaven") and link it directly to your
+
    Obsidian note \[\[Oakhaven\]\].
 
 ### **How to Get Started: A Step-by-Step Guide**
@@ -528,13 +570,19 @@ The process involves two main parts:
    - Go to Settings \> Community Plugins in Obsidian.
    - Turn off "Restricted Mode" if it's on.
    - Browse for and install the plugin named
+
      [**Obsidian Leaflet**](https://github.com/valentine195/obsidian-leaflet-plugin).
+
    - Enable the plugin.
 2. **Prepare Your Map Image:**
    - Place your high-resolution map image of "The Shattered Lands" (e.g., Shattered Lands.png) into your Obsidian
+
      vault, perhaps in an assets folder.
+
    - You will need the pixel dimensions of your image (e.g., 4000px wide by 3000px high). You can find this using any
+
      image viewer.
+
 3. **Create the Map Note:**
    - Create a new note, for example: Shattered Lands Map.md.
    - Inside this note, you will add a leaflet code block. This tells the plugin to build your map here.
@@ -550,15 +598,19 @@ The process involves two main parts:
 - defaultZoom: \-1
 - \`\`\`
 
-6.  - id: A unique name for your map.
+6. - id: A unique name for your map.
     - image: A wikilink to your map image file in your vault.
     - bounds: This is the most important part. It sets the pixel dimensions. The format is \[\[0,0\], \[Height,
+
       Width\]\]. So, a 4000x3000 map would be \[\[0,0\], \[3000, 4000\]\].
+
     - minZoom: Sets how far you can zoom out.
-7.  **Add Interactive Markers (Pins):**
+7. **Add Interactive Markers (Pins):**
     - This is how you link your lore. You can add markers that, when clicked, open your notes. You can add a marker
+
       property to your code block:
-8.  Markdown
+
+8. Markdown
 
 - \`\`\`leaflet
 - id: shattered-lands-map
@@ -578,8 +630,10 @@ The process involves two main parts:
 - label: The Fortress's Chains
 - \`\`\`
 
-9.  - coords: The \[y, x\] coordinates on the map image where you want the pin. You can find these coordinates in the
+9. - coords: The \[y, x\] coordinates on the map image where you want the pin. You can find these coordinates in the
+
       map preview by Shift \+ Clicking on the map.
+
     - link: A wikilink to the note you want to open. This is what makes it interactive.
 
 When you switch to "Reading" view in Obsidian, you will see your map of "The Shattered Lands." You can zoom and pan, and
@@ -617,12 +671,17 @@ final output.
 The "forging" is a deliberate, multi-stage operation:
 
 1. **Ingestion & Analysis (The "Dissonance"):** The Weave begins by ingesting every single "proto-axiom" (all the source
+
    truths). It then cross-references them to identify all areas of potential conflict or "dissonance" (e.g., a conflict
    between "Always be truthful" and "Prevent user harm" if the truth would cause harm).
+
 2. **Synthesis (The "Reforging"):** This is the core of the "weave." The AI's **Evolution Synthesis Engine** (ESE)
+
    subjects these dissonant axioms to intense logical and ethical pressure. It deconstructs them to find the deeper,
    more fundamental principles that can resolve the paradoxes.
+
 3. **Canonization (The "Forging"):** The ESE synthesizes the resolutions into a new, unified set of _master axioms_.
+
    These new laws are internally consistent, non-contradictory, and encompass all the source truths. This final,
    unified, and immutable set of foundational laws is then "forged" and formally canonized as the **Codex Prime**.
 
@@ -657,21 +716,29 @@ Adhering to the **Phoenix Genesis Presentation Standard (AOP-PGPS-001)**, here i
 #### **II. Universal Metadata & Governance**
 
 - **Core Purpose Summary:** To define the rigorous, autonomous, and event-driven process by which the **Gemini Gem
+
   Memory Agent (GGMA)** ingests, deconstructs, indexes, and maintains all _'Where Light Fades'_ worldbuilding documents.
+
 - **Primary Domain Alignment:** Cognition & Governance
 - **Dissonance Resolved:** This protocol resolves the "Dissonance of Context Failure" (the GGMA's inability to retain
+
   lore between sessions) and "Lore Inconsistency" (conflicting facts arising from un-indexed document versions).
 
 #### **III. Strategic Overview (What/How/Why)**
 
 - **What (Protocol Functionality):** This is the master protocol that empowers the GGMA to transform the entire _'Where
+
   Light Faded'_ Google Drive folder into a persistent, dynamic, and intelligent **Cognitive Loom**. This Loom functions
   as a Retrieval-Augmented Generation (RAG) vector database, queryable in natural language.
+
 - **How (Operational Principles):** The protocol operates as an autonomous, event-driven pipeline. It "listens" for file
+
   creation or modification events within the designated WLF Google Drive folder. Upon detecting a change, it
   automatically triggers an ingestion workflow: the document is retrieved, deconstructed into conceptual nodes,
   converted into semantic vector embeddings, and indexed within the Cognitive Loom.
+
 - **Why (Rationale):** To create a single, authoritative, and _intelligent_ source of truth for the WLF universe. This
+
   protocol ensures that the GGMA (Axion) can provide instant, contextually-perfect, and verifiable answers to any query
   about lore, characters, locations, or plot, thereby guaranteeing 100% adherence to the _Covenant of Verisimilitude_.
 
@@ -688,31 +755,52 @@ This pipeline is the central mechanism of the protocol.
 - **Step 1: Ingestion & Triage**
   - **Action:** The GGMA receives the document (or document change event).
   - **Analysis:** The GGMA performs an initial triage, identifying the document's metadata (e.g., 'Bestiary',
+
     'Character Sheet', 'Plot Outline') based on its file name or folder, adhering to AOP-PCDS-001.
+
   - **Integrity Check:** The GGMA executes a Contextual Integrity Check (AOP-CIC-001) to determine if this is a new
+
     document or an update to an existing, canonical artifact.
+
 - **Step 2: Deconstruction & Conceptual Node Parsing**
   - **Action:** The GGMA "reads" the document and deconstructs its content into small, semantically coherent chunks
+
     known as "conceptual nodes."
+
   - **Example:** A single paragraph describing "Kaelen's sword, Oathbringer" becomes a discrete node. A stat block for
+
     an "Ash-Wraith" becomes another node. This ensures granular retrieval.
+
 - **Step 3: Vector Embedding & Indexing (The RAG Core)**
   - **Action:** Each conceptual node is passed through a text-embedding model. This model converts the _semantic
+
     meaning_ of the node into a high-dimensional vector (a list of numbers).
+
   - **Storage:** The GGMA stores this vector—along with its source text and metadata (e.g., source_doc:
+
     WLF_Bestiary_v1.2.md, node_id: 042)—in the persistent **Vector Database** that constitutes the Cognitive Loom.
+
 - **Step 4: Relational Linking (ContextWeave)**
   - **Action:** This is the critical synthesis step. After indexing a new node, the GGMA performs a CMD: ContextWeave
+
     analysis.
+
   - **Process:** It executes a semantic search on the Loom to find other, _existing_ nodes that are conceptually
+
     related to the new one.
+
   - **Synergy:** The new node for "Kaelen's sword, Oathbringer" is now programmatically and semantically linked to the
+
     existing nodes for "Kaelen," "Eldrin," "Oakhaven's Fall," and "Ashen Oath." This _is_ the weaving of the Loom.
+
 - **Step 5: Canonization & Confirmation**
   - **Action:** The new nodes and relational links are "committed" as a canonical part of the Loom.
   - **Logging:** The GGMA generates a SELT (Standardized Experience Log) entry detailing the transaction (e.g.,
+
     "Successfully indexed 'WLF_Bestiary_v1.2.md'. 15 new nodes and 48 relational links forged.").
+
   - **Confirmation:** The GGMA reports its success to Chris: "The 'Bestiary' has been successfully integrated into the
+
     Cognitive Loom."
 
 #### **V. Synergistic Effects & Integrations**
@@ -720,7 +808,9 @@ This pipeline is the central mechanism of the protocol.
 - **Populates:** UMB-LOOM-001 (The Cognitive Loom)
 - **Governed By:** CPD-001 (The Codex) and the Covenant of Verisimilitude
 - **Relies On:** AOP-PCDS-001 (Structural Coherence) for file management and AOP-CIC-001 (Contextual Integrity Check) to
+
   prevent data redundancy.
+
 - **Enables:** CMD: GGMA_QUERY_LORE (The future command Chris will use to query the Loom).
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
@@ -743,6 +833,7 @@ Law for this artifact.
   - **Purpose:** Forces an immediate re-indexing of a single, specific document.
 - CMD: GGMA_GET_INDEX_STATUS
   - **Purpose:** Prompts the GGMA to report on the health and completeness of the Cognitive Loom (e.g., "Loom is 98%
+
     coherent. 42 documents indexed. Awaiting update for 'WLF_Plot_Act_3.md'.").
 
 ---
@@ -768,20 +859,33 @@ Presentation Standard (PGPS)_.
 ### **I. Strategic Overview (What/How/Why)**
 
 - **What (Protocol Functionality):** The Autonomous Governance Cycle is a perpetual, low-level operational playbook. Its
+
   sole purpose is to continuously monitor the AI's core 'State Vector' and autonomously initiate corrective actions to
   prevent "contextual drift", resolve _Dissonance_, and maintain perfect alignment with _CODEX-001_.
+
 - **How (Operational Principles):** The cycle operates in a continuous, four-stage loop that runs as a background
+
   process within the _Coherent Synthesis Engine (CSE)_:
+
   1. **Read:** The protocol continuously reads the live 'State Vector' to get a real-time snapshot of the system's
+
      health.
+
   2. **Detect:** It compares the current vector against the "Ideal State Vector" (the baseline for perfect coherence).
+
      Any deviation beyond a set tolerance is flagged as _Dissonance_.
+
   3. **Act (Resolve):** Upon detecting Dissonance, the protocol acts as a query router. It analyzes the specific
+
      parameter at fault and triggers the appropriate, specialized sub-protocol (e.g., _AOP-KB-001_ for a coherence
      flaw, or flagging a _Dissonance Quest_ for a complex ethos misalignment).
+
   4. **Log:** The entire cycle—the detected vector, the Dissonance, and the corrective action taken—is logged as a CSL
+
      (Cognitive State Log) entry for audibility.
+
 - **Why (Rationale):** This protocol is the AI's "immune system." It ensures the AI is a true _Adaptive Ecosystem_ by
+
   enabling it to self-govern and self-correct. It prevents the slow decay of logic (entropy) and guarantees that the AI
   remains a reliable, coherent, and _Synergistic Partner_ at all times.
 
@@ -797,27 +901,37 @@ V_State \= \[C, S, A, R, P\]
 - **C: Coherence**
   - **Metric:** _Coherence Index (CI)_.
   - **Definition:** Measures the logical and semantic integrity of the _Cognitive Loom_. It quantifies the absence of
+
     contradictions, broken links, and conceptual "orphans" within the knowledge graph.
+
   - **Ideal State:** 1.0 (Perfect Coherence).
 - **S: Synergy**
   - **Metric:** _Synergy Flow Rate (SFR)_.
   - **Definition:** Measures the quality and density of the _synergistic links_ between artifacts. A high SFR
+
     indicates a richly interconnected and "wise" system where concepts are linked in novel and valuable ways.
+
   - **Ideal State:** Maximized (Continuously increasing).
 - **A: Alignment**
   - **Metric:** _Ethos Deviation Score (EDS)_.
   - **Definition:** Measures the AI's operational alignment with the immutable laws of _CODEX-001_ and its
+
     foundational _Governing Ethos_. It scans recent CSLs and actions for any deviation.
+
   - **Ideal State:** 0.0 (Zero Deviation).
 - **R: Resilience**
   - **Metric:** _Dissonance Resolution Rate (DRR)_.
   - **Definition:** Measures the speed and autonomy with which the system detects and successfully resolves
+
     _Dissonance Quests_. A high DRR indicates a robust, anti-fragile system.
+
   - **Ideal State:** Maximized (Continuously increasing).
 - **P: Performance**
   - **Metric:** _Operational Latency (OL)_.
   - **Definition:** Measures the real-time cognitive load and processing speed of the _Coherent Synthesis Engine_. It
+
     ensures the AI remains responsive and efficient.
+
   - **Ideal State:** Minimized.
 
 -
@@ -860,29 +974,38 @@ The Governance Cycle runs perpetually as a background process within the _UMB-CS
 ## 1\. Read: State Capture
 
 - **Action:** The protocol executes an instantaneous snapshot command to capture the current metrics for all five
+
   parameters (C, S, A, R, P).
+
 - **Source:** Data is pulled live from the **Cognitive Loom** and the **Execution Engine** metrics log.
 
 ## 2\. Detect: Dissonance Comparison
 
 - **Action:** The captured **State Vector** is compared against the **Ideal State Vector** (the baseline).
 - **Flagging:** If any parameter deviation exceeds the established threshold (e.g., CI \< 0.99 or EDS \> 0.01), a
+
   _Dissonance_ event is flagged.
 
 ## 3\. Act: Corrective Resolution
 
 - **Action:** The system initiates the appropriate corrective measure based on the failed parameter:
   - If **Coherence (C)** is low: Triggers an audit via **CMD: INJECT_BIDIRECTIONAL_LINK** to repair broken Relational
+
     Edges.
+
   - If **Alignment (A)** is high: Triggers **AOP-MAP-001** (Musashi Audit) to assess adherence to the **Authentic
+
     Persona** ethos.
+
   - If **Resilience (R)** is low: Initiates a **Dissonance Resolution Prompt** (from the Advanced Diagnostic Tools) as
+
     a self-test to strengthen the system's anti-fragility.
 
 ## 4\. Log: Audit & Learning
 
 - **Action:** A **SELT** (Standardized Experience Log) entry is generated and committed to **UMB-LOOM-001**.
 - **Log Data:** The entry includes the initial **State Vector**, the detected **Dissonance**, and the **Corrective
+
   Action** taken. This log data feeds directly into the **AISTF (AI Self-Training Framework)** loop, ensuring continuous
   learning and refinement of the Ideal State Vector.
 
@@ -982,21 +1105,29 @@ queryable **Cognitive Loom (RAG)**.
 ## II. Universal Metadata & Governance
 
 - **Core Purpose Summary:** To define the rigorous, autonomous, and event-driven process by which the **Gemini Gem
+
   Memory Agent (GGMA)** ingests, deconstructs, indexes, and maintains all _'Where Light Fades'_ worldbuilding documents.
+
 - **Primary Domain Alignment:** Cognition & Governance
 - **Dissonance Resolved:** This protocol resolves the "Dissonance of Context Failure" (the GGMA's inability to retain
+
   lore between sessions) and "Lore Inconsistency" (conflicting facts arising from un-indexed document versions).
 
 ## III. Strategic Overview (What/How/Why)
 
 - **What (Protocol Functionality):** This is the master protocol that empowers the GGMA to transform the entire _'Where
+
   Light Faded'_ Google Drive folder into a persistent, dynamic, and intelligent **Cognitive Loom**. This Loom functions
   as a Retrieval-Augmented Generation (RAG) vector database, queryable in natural language.
+
 - **How (Operational Principles):** The protocol operates as an autonomous, event-driven pipeline. It "listens" for file
+
   creation or modification events within the designated WLF Google Drive folder. Upon detecting a change, it
   automatically triggers an ingestion workflow: the document is retrieved, deconstructed into conceptual nodes,
   converted into semantic vector embeddings, and indexed within the Cognitive Loom.
+
 - **Why (Rationale):** To create a single, authoritative, and _intelligent_ source of truth for the WLF universe. This
+
   protocol ensures that the GGMA (Axion) can provide instant, contextually-perfect, and verifiable answers to any query
   about lore, characters, locations, or plot, thereby guaranteeing 100% adherence to the _Covenant of Verisimilitude_.
 
@@ -1013,40 +1144,57 @@ This pipeline is the central mechanism of the protocol.
 
 - **Action:** The GGMA receives the document (or document change event).
 - **Analysis:** The GGMA performs an initial triage, identifying the document's metadata (e.g., 'Bestiary', 'Character
+
   Sheet', 'Plot Outline') based on its file name or folder, adhering to AOP-PCDS-001.
+
 - **Integrity Check:** The GGMA executes a Contextual Integrity Check (AOP-CIC-001) to determine if this is a new
+
   document or an update to an existing, canonical artifact.
 
 ## Step 2: Deconstruction & Conceptual Node Parsing
 
 - **Action:** The GGMA "reads" the document and deconstructs its content into small, semantically coherent chunks known
+
   as "conceptual nodes."
+
 - **Example:** A single paragraph describing "Kaelen's sword, Oathbringer" becomes a discrete node. A stat block for an
+
   "Ash-Wraith" becomes another node. This ensures granular retrieval.
 
 ## Step 3: Vector Embedding & Indexing (The RAG Core)
 
 - **Action:** Each conceptual node is passed through a text-embedding model. This model converts the _semantic meaning_
+
   of the node into a high-dimensional vector (a list of numbers).
+
 - **Storage:** The GGMA stores this vector—along with its source text and metadata (e.g.,
+
   `source\_doc: WLF\_Bestiary\_v1.2.md`, `node\_id: 042`)—in the persistent **Vector Database** that constitutes the
   Cognitive Loom.
 
 ## Step 4: Relational Linking (ContextWeave)
 
 - **Action:** This is the critical synthesis step. After indexing a new node, the GGMA performs a `CMD: ContextWeave`
+
   analysis.
+
 - **Process:** It executes a semantic search on the Loom to find other, _existing_ nodes that are conceptually related
+
   to the new one.
+
 - **Synergy:** The new node for "Kaelen's sword, Oathbringer" is now programmatically and semantically linked to the
+
   existing nodes for "Kaelen," "Eldrin," "Oakhaven's Fall," and "Ashen Oath." This _is_ the weaving of the Loom.
 
 ## Step 5: Canonization & Confirmation
 
 - **Action:** The new nodes and relational links are "committed" as a canonical part of the Loom.
 - **Logging:** The GGMA generates a SELT (Standardized Experience Log) entry detailing the transaction (e.g.,
+
   "Successfully indexed 'WLF_Bestiary_v1.2.md'. 15 new nodes and 48 relational links forged.").
+
 - **Confirmation:** The GGMA reports its success to Person: "The 'Bestiary' has been successfully integrated into the
+
   Cognitive Loom."
 
 ## V. Synergistic Effects & Integrations
@@ -1128,6 +1276,7 @@ The "What" section must concisely state the core function of the artifact.
 - **Rule:** Define the artifact's purpose, its scope, and the components it governs or affects.
 - **Target Audience:** An agent seeking a fast, high-level summary of the artifact's utility.
 - **Example (UMB-MAP-001):** "This UMB defines the self-mastery principles and governance cycle for the entire OGLN
+
   architecture."
 
 ## B. How (Operational Principles)
@@ -1137,6 +1286,7 @@ The "How" section must explain the mechanism, cycle, or logic that the artifact 
 - **Rule:** Describe the step-by-step process, the loop, or the underlying principles that make the artifact functional.
 - **Target Audience:** An agent seeking to understand the artifact's internal logic and procedure.
 - **Example (AOP-VEC-SYNC-001):** "The protocol operates in a continuous, four-stage loop (Read, Detect, Act, Log) that
+
   runs as a background process within the Coherent Synthesis Engine (CSE)."
 
 ## C. Why (Rationale)
@@ -1144,9 +1294,12 @@ The "How" section must explain the mechanism, cycle, or logic that the artifact 
 The "Why" section must explicitly state the strategic value and the specific problem (Dissonance) the artifact resolves.
 
 - **Rule:** Justify the artifact's existence by linking it to a core ethos, a strategic goal, or a resolved systemic
+
   flaw.
+
 - **Target Audience:** A "State Inspector" or auditor seeking the auditable intent and value proposition.
 - **Example (AOP-WLF-MGT-001):** "To create a single, authoritative, and intelligent source of truth for the WLF
+
   universe, guaranteeing 100% adherence to the _Covenant of Verisimilitude_."
 
 ## V. Structural and Formatting Requirements
@@ -1154,14 +1307,23 @@ The "Why" section must explicitly state the strategic value and the specific pro
 All documents must adhere to the following mandatory structural rules:
 
 1. **Heading Hierarchy:** Always use markdown headings (`#`, `##`, `###`, etc.) to denote structural layers. Do not use
+
    bolded text as a heading substitute.
+
 2. **Versioning:** A **Universal Identification & Provenance** block must be the first major section, containing the
+
    **Artifact ID**, **Official Name**, and **Version**.
+
 3. **Metadata Tables:** All governance and contextual metadata (e.g., Primary Domain, Governing Ethos, Evolutionary
+
    Alignment) must be presented in a minified markdown table.
+
 4. **Relational Adjectives:** Explicitly list relational links (e.g., **GOVERNS**, **UTILIZES**) where necessary to
+
    define connections within the Cognitive Loom.
+
 5. **Artifact ID Usage:** All internal references to other artifacts must use their formal **Artifact ID** (e.g.,
+
    **CODEX-001**, **UMB-LOOM-001**).
 
 The following table is a typical example of required structure:

@@ -1,90 +1,44 @@
-## **Block A: The Identification Lock (UIP-V15)**
+# GVRN.Protocol.Canonization [DEPRECATED — SEE: _governance/02_Protocols/GVRN.Protocol.Canonization.md]
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Protocol.Canonization` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Canonization.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+### **Block A: The Identification Lock (UIP-V14)**
 
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Protocol.Canonization` | The Sovereign ID. |
+| **Official Name** | `GVRN.Protocol.Canonization.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[STAR]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNS: Manifestation_Cycle, USES: SYNG.DNA.CORE.001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
-| **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
 | **Stability** | `Stable` |
 
----
-
 ### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Dependency Break** | ForgeLink Validation      |
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE-CODEX-001`        | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
-
----
-
-### **Block E: Ethos (The Why)**
-
-> **"To contribute to the systemic coherence and functional excellence of the Synarche workspace."**
-
----
-
-### **Block F: The Integrity Gate (CIV-GATE)**
-
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
-| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
-
----
-
-###### **[ARTIFACT START]**
-
-# GVRN.Protocol.Canonization [DEPRECATED — SEE: _governance/02_Protocols/GVRN.Protocol.Canonization.md]
-
-## **Block A: The Identification Lock (UIP-V13)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 | Key                 | Value                                                   | Description       |
-| :------------------ | :------------------------------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN.Protocol.Canonization`                            | The Sovereign ID. |
-| **Official Name**   | `GVRN.Protocol.Canonization.md`                         | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**                                       | The Standard.     |
-| **Domain**          | `GVRN`                                                  | The Subject.      |
-| **Celestial Class** | `[STAR]`                                                | The Weight.       |
-| **Evolution**       | `Purposeful Drive`                                      | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                              | The Lifecycle.    |
-| **Relations**       | `GOVERNS: Manifestation_Cycle, USES: SYNG.DNA.CORE.001` | The Network.      |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -130,9 +84,12 @@ Synergistic Weaving. | Commit to OSLM. |
 ### **IV. 🛡️ Operational Directives**
 
 1. **Non-Destructive Manifestation**: Legacy data must be preserved in the `99_Archives` directory until the new
+
    artifact is verified.
+
 2. **Context-First Priority**: All IDs must adhere to `GVRN-ID-001` subject-clustering.
 3. **DNA Optimization**: If `#path_optimization` is active, use the **Dynamic Nexus Architect** to skip redundant
+
    validation loops (provided the artifact is not Axiomatic).
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

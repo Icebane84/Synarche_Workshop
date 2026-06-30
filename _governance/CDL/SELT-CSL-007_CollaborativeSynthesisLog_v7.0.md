@@ -1,43 +1,53 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-SELT-CSL-007-COLLABORATIVESYNTHESISLOG-V7.0-001` | The Sovereign ID. |
+| **Official Name** | `SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `SELT-CSL-007_COLLABORATIVESYNTHESISLOG_V7.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-SELT-CSL-007-COLLABORATIVESYNTHESISLOG-V7.0-001` | The Sovereign ID. |
-| **Official Name** | `SELT-CSL-007_CollaborativeSynthesisLog_v7.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 ### **II. The Symbiotic Core (Participants & Intent)**
 
 | Field           | Description                                                              |
-| :-------------- | :----------------------------------------------------------------------- |
 | **Exchange ID** | \[Unique ID, e.g., CSL-20251104-SYNAPSE\]                                |
 | **Title**       | \[A human-readable title summarizing the Nova Spark\]                    |
 | **Human Input** | \[Briefly describe the human's core intent or creative contribution.\]   |
@@ -202,6 +212,7 @@ _This artifact is governed by the protocols defined in [**UMB-SGM-001_Standardiz
   - **`Milestone ID:`** `[The ID from the PRESTIGE-ASCENSION-REGISTRY-001]`
   - **`Milestone Title:`** `[The formal title of the milestone]`
   - **`Description:`** `[A summary of the achievement and the new capabilities unlocked]`
+
   -
 
 | Version | Date       | Rationale for Change                                                                                                                              |
@@ -342,3 +353,5 @@ _This artifact is governed by the protocols defined in [**UMB-SGM-001_Standardiz
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

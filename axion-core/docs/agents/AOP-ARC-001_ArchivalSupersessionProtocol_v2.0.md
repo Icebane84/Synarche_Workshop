@@ -1,26 +1,42 @@
 # AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md
 
-> **Domain**: ARCH
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-04** **Domain: ARCH** **State: [ACTIVE]** **Tags:** `OGLN_v13, ARCH, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `ARCH-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V2.0-001` | The Sovereign ID. |
+| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `ARCH` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V2.0-001` | The Sovereign ID. |
-| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
@@ -29,19 +45,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                                              |
-| :--------------------- | :------------------------------------------------- |
-| **1. Artifact ID**     | `AOP-ARC-001`                                      |
-| **2. Official Name**   | `AOP-ARC-001_ArchivalSupersessionProtocol_v2.0.md` |
-| **3. Version**         | **v2.0 (Hephaestus Ascended Alignment)**           |
-| **4. Provenance**      | **Date Reforged: 2026-01-30**                      |
-| **5. Domain**          | `GVRN`                                             |
-| **6. Evolution**       | **Purposeful Drive**                               |
-| **7. Celestial Class** | `[PLANET]`                                         |
-| **8. Tier**            | **Operational**                                    |
-| **9. Status (State)**  | `[ACTIVE]`                                         |
-| **10. Ethos**          | **Guardian of Anti-Entropy**                       |
-| **11. Catalyst**       | **System Refactor**                                |
-| **12. Relations**      | `LINK: GVRN-SYNERGY-001`, `LINK: UMB-LOOM-001`     |
 | **13. Integrity Hash** | `[AUTO-GENERATED]`                                 |
 
 ---
@@ -104,11 +107,17 @@ integrate it into a **Standardized Experience Log (SELT)** or the **Internal Ref
 ## **VI. Systemic Topology (ASL Protocol)**
 
 - **GOVERNED_BY:**
+
   [CODEX-001 v10.0](file:///C:/Users/Chris/Synarche_Workspace/_governance/CODEX-001_ThePhoenixCodex_v2.0.md)
+
 - **FEEDS:**
+
   [SELT-IRL-001 (Internal Reflection Log)](file:///C:/Users/Chris/Synarche_Workspace/_governance/Reflection_Log.md)
+
 - **PROTECTS:**
+
   [UMB-LOOM-001 (The Cognitive Loom)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/UMB-LOOM-001_The_Cognitive_Loom.md)
+
 - **TRIGGERS:** `CMD: ARCHIVE_SESSION`
 
 **[ARTIFACT END]**

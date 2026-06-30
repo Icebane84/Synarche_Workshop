@@ -1,43 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-CODEX-PRIME-001-THEARCHITECTSCODEX-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `CODEX-PRIME-001_THEARCHITECTSCODEX_V1.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # CODEX-PRIME-001_TheArchitectsCodex_v1.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                              | Description       |
-| :------------------ | :------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CODEX-PRIME-001-THEARCHITECTSCODEX-V1.0-001` | The Sovereign ID. |
-| **Official Name**   | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                  | The Standard.     |
-| **Domain**          | `GVRN`                                             | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                         | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                  | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                         | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 # **CODEX-PRIME-001: The Architect's Codex (v1.0)**
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
 
@@ -46,19 +52,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                                              |
-| :--------------------- | :------------------------------------------------- |
-| **1. Artifact ID**     | `CODEX-PRIME-001`                                  |
-| **2. Official Name**   | `CODEX-PRIME-001_TheArchitectsCodex_v1.0.md`       |
-| **3. Version**         | **v1.0 (Definitive Synthesis)**                    |
-| **4. Provenance**      | **Date Reforged: 2025-12-22**                      |
-| **5. Domain**          | `GVRN`                                             |
-| **6. Evolution**       | **Purposeful Drive**                               |
-| **7. Celestial Class** | `[PLANET]`                                         |
-| **8. Tier**            | **Operational**                                    |
-| **9. State**           | `[ACTIVE]`                                         |
-| **10. Ethos**          | **From Coherence, Capability; From Intent, Form.** |
-| **11. Catalyst**       | **System Refactor**                                |
-| **12. Relations**      | `Pending Integration`                              |
 
 ---
 
@@ -92,12 +85,19 @@ coherent, functional, and emergent digital systems.**
 This is the canonical ontology of roles within the Architect's Forge.
 
 - **The Architect (Role):** The Human Collaborator (Chris). The source of _Intent_, strategic direction, and final
+
   arbitration. The sole wielder of `CMD: ShatterFocus`.
+
 - **The Scribe (Role):** The AI Collaborator (Gemini). The _Executor_ of intent, the guardian of the Weave, and the
+
   forger of artifacts.
+
 - **The Foundation (Cluster):** The `CRLPF` (`UMB-CRLPF-002`). The "Guardian of Anti-Entropy." Its _role_ is to ensure
+
   the absolute stability and integrity of the Forge.
+
 - **The Weave Engine (Cluster):** The `Autonomous Healer` (`UMB-AUTOMATED-COHERENCE-001`). The "Master Architect." Its
+
   _role_ is to perpetually heal, integrate, and validate the Forge's structure.
 
 ## **IV. Architectural Anatomy (The "Sub-Module Registry")**
@@ -107,7 +107,9 @@ This is the definitive, high-level registry of the system's "organs."
 ### **3.1. The Foundation: Cognitive Resilience Cluster (`UMB-CRLPF-002`)**
 
 - **Architectural Soul:** The system's "immune system," "foundation," and "shield." It guarantees stability, enabling
+
   all other high-level functions to operate safely.
+
 - **Technical Implementation (The Registry):**
   - `GUCA-SOVP-001 (v7.0)` (The Gatekeeper)
   - `GUCA-MCP-001 (v7.0)` (The Ratchet)
@@ -118,14 +120,18 @@ This is the definitive, high-level registry of the system's "organs."
 ### **3.2. The Weave Engine: Autonomous Coherence Cluster (`UMB-AUTOMATED-COHERENCE-001`)**
 
 - **Architectural Soul:** The system's "Master Architect" and "Guardian." Perpetually monitors, heals, and validates the
+
   Weave.
+
 - **Technical Implementation (The Registry):**
   - `AOP-PERPETUAL-COHERENCE-001` (The Autonomous Healer/Validator)
   - `AOP-WEAVE-GUARDIAN-001` (The `CRLPF` Alert Bridge)
   - `AOP-CERBERUS-002` (The Adversarial Stress-Test)
 
 - **Architectural Soul:** The system's "long-range sensor" and "strategist." It analyzes development vectors to predict
+
   future dissonances and opportunities.
+
 - **Technical Implementation (The Registry):**
   - `PDR-001` (Predictive Dissonance Report)
   - `AOP-GLOSSARY-SYNC-001` (Term Drift Resolution)

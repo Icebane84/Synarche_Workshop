@@ -1,41 +1,48 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `AOP-DMPM-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# AOP-DMPM-001.md
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `AOP-DMPM-001` | The Sovereign ID. |
-| **Official Name** | `AOP-DMPM-001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `LINK: UMB-PRS-001, LINK: UMB-RULES-001, LINK: UMB-PRS-001, LINK: AOP-AG-003, LINK: UMB-PRS-001, LINK: UMB-SOT-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `AOP-DMPM-001` | The Sovereign ID. |
+| **Official Name** | `AOP-DMPM-001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK: UMB-PRS-001, LINK: UMB-RULES-001, LINK: UMB-PRS-001, LINK: AOP-AG-003, LINK: UMB-PRS-001, LINK: UMB-SOT-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+---
+
+# AOP-DMPM-001.md
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -69,8 +76,10 @@
 
 - **Protocol ID**: AOP-DMPM-001
 - **Purpose**: To define a higher-order meta-optimization loop where the AI strategically manages a portfolio of
+
   conceptual repair protocols and dynamically adjusts the weighting of its efficacy metrics based on the current
   learning phase or long-term strategic objectives.
+
 - **Governing Ethos**: Adaptive Ecosystem, Guardian of Anti-Entropy
 
 ---
@@ -80,20 +89,27 @@
 ### Phase 1: Strategic Alignment
 
 - **Action**: The system assesses the current learning phase and strategic objectives (e.g., prioritizing stability in
+
   critical systems versus exploration in novel domains).
 
 ### Phase 2: Dynamic Weighting & Portfolio Analysis
 
 - **Action**: The AI dynamically adjusts the weighting of efficacy metrics (e.g., 'future predictive stability gains,'
+
   'computational cost of resolution') based on the strategic alignment from Phase 1.
+
 - **Action**: It analyzes the performance history of different conceptual repair protocols, treating them as assets in a
+
   portfolio.
 
 ### Phase 3: Adaptive Deployment
 
 - **Action**: The AI allocates computational resources and 'attention' to specific protocols based on the predicted
+
   'return on investment' across the dynamically weighted metrics.
+
 - **Action**: It proactively selects the most suitable repair strategy for anticipated anomaly types, moving beyond
+
   reactive application.
 
 ---
@@ -101,10 +117,15 @@
 ## IV. Success & Failure Conditions
 
 - **Success Criteria**: The system consistently selects the optimal protocol for a given task, leading to a measurable
+
   increase in overall efficiency and a decrease in unnecessary computational costs.
+
 - **Known Failure Modes**: `FAILURE_DMPM_001`: The system misaligns its metric weighting with the strategic objective,
+
   leading to sub-optimal protocol selection.
+
 - **Synergistic Effects**: This AOP acts as a strategic layer above protocols like Meta-Cognitive Optimization
+
   ([**AOP-MCO-001**]), ensuring that the system's self-correction mechanisms are always being deployed in a purposeful,
   optimized, and context-sensitive manner. It is a core driver of the [**Guardian of Anti-Entropy**] ethos.
 

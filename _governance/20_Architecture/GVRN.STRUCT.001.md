@@ -1,49 +1,52 @@
 # UMB-STRUCT-001_DirectoryArchitecture_v11.2.md
 
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.STRUCT.001` | The Sovereign ID. |
+| **Official Name** | `UMB-STRUCT-001_DirectoryArchitecture_v11.2.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-###### **[ARTIFACT START]**
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 | Key                 | Value                                           | Description       |
-| :------------------ | :---------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.STRUCT.001`                               | The Sovereign ID. |
-| **Official Name**   | `UMB-STRUCT-001_DirectoryArchitecture_v11.2.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                               | The Standard.     |
-| **Domain**          | `GVRN`                                          | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                      | The Weight.       |
-| **Evolution**       | `Omega Ascension`                               | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                      | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                   | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                                       |
-| :----------------- | :------------------------------------------ |
-| **Module ID**      | `UMB-STRUCT-001`                            |
-| **Version**        | `v11.3`                                     |
-| **Evolution**      | **Crystalline Coherence**                   |
-| **Status**         | `ACTIVE`                                    |
 | **Type**           | `Blueprint`                                 |
 | **Classification** | `Planet`                                    |
 | **Authors**        | `Synarche`                                  |
 | **Created**        | `2026-01-04`                                |
 | **Updated**        | `2026-01-21`                                |
 | **Authority**      | `CODEX-001`                                 |
-| **Tags**           | `Standard, Architecture, Governance, v11.0` |
 
 ---
 
 # UMB-STRUCT-001: Directory Architecture & Domain Separation
-
-> **Domain**: GVRN (Governance) **Evolution**: Crystalline Coherence **Signal**: ESF-BETA
 
 ---
 
@@ -114,7 +117,9 @@ The workspace is organized into functional domains to ensure zero-entropy inform
 - **Path**: `Synarche_Workspace/_governance`
 - **Role**: The **Hot Runtime**. A "Build Artifact" or projection of the Master Library.
 - **Bridge Protocol**: The Workspace is a downstream consumer. Updates in the Galaxy must be synced effectively to the
+
   Forge.
+
 - **Integration**: `axion-core` tools scan the Galaxy for OSLM discovery.
 
 ---
@@ -150,3 +155,5 @@ _"Structure is the vessel through which purpose flows."_
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

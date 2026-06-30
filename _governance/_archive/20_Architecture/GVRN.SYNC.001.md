@@ -1,31 +1,44 @@
 # UMB-SYNC-001_ArchitecturalBlueprint_React-Python-SupabaseSynchronization_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.SYNC.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.SYNC.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `INTEGRATED` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.SYNC.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.SYNC.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `INTEGRATED` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -254,8 +267,6 @@ async def ingest_protocol(module: ProtocolModule):
 
         }).execute()
 
-
-
         return {"status": "success", "data": response.data}
 
     except Exception as e:
@@ -400,8 +411,6 @@ CREATE TABLE IF NOT EXISTS public.phoenix_protocols (
 
     updated\_at TIMESTAMPTZ DEFAULT now() NOT NULL,
 
-
-
     \-- Metadata
 
     title TEXT NOT NULL,
@@ -409,8 +418,6 @@ CREATE TABLE IF NOT EXISTS public.phoenix_protocols (
     version TEXT DEFAULT '1.0.0',
 
     author TEXT DEFAULT 'System/OGLN',
-
-
 
     \-- Core Components (The Stack)
 
@@ -421,8 +428,6 @@ CREATE TABLE IF NOT EXISTS public.phoenix_protocols (
     guca\_actions JSONB,      \-- Action Commands
 
     selt\_results JSONB,      \-- Result Logs
-
-
 
     \-- Search Optimization
 

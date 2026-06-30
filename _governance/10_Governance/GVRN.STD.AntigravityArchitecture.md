@@ -1,32 +1,43 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.STD.AntigravityArchitecture` | The Sovereign ID. |
+| **Official Name** | `GVRN.STD.AntigravityArchitecture.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERN_BY: CORE.Codex.Phoenix` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.STD.ANTIGRAVITYARCHITECTURE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # GVRN.STD.AntigravityArchitecture.md
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                                 | Description       |
-| :---------------- | :------------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.STD.AntigravityArchitecture`    | The Sovereign ID. |
-| **Official Name** | `GVRN.STD.AntigravityArchitecture.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**                     | The Standard.     |
-| **Domain**        | `GVRN`                                | The Subject.      |
-| **Status**        | `[CANONIZED]`                         | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`       | The Network.      |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value     |
-| :------------ | :-------- |
 | **Coherence** | `1.0`     |
 | **Resonance** | `1.0`     |
 | **Stability** | `Eternal` |
@@ -87,3 +98,20 @@ The **Google Antigravity platform** functions as a high-performance operational 
 ---
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.

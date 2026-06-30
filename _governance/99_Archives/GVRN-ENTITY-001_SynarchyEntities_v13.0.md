@@ -1,44 +1,46 @@
 # GVRN-ENTITY-001_SynarcheEntities_v13.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001` | The Sovereign ID. |
+| **Official Name** | `GVRN-ENTITY-001_SynarcheEntities_v13.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                             | Description       |
-| :------------------ | :------------------------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN-GVRN-ENTITY-001-SynarcheENTITIES-V13.0-001` | The Sovereign ID. |
-| **Official Name**   | `GVRN-ENTITY-001_SynarcheEntities_v13.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                 | The Standard.     |
-| **Domain**          | `GVRN`                                            | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                        | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                 | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                        | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                     | The Network.      |
 
 # Universal Identification & Provenance (UIP)
 
 | Field                  | Value                                                          |
-| :--------------------- | :------------------------------------------------------------- |
-| **1. Artifact ID**     | `GVRN-ENTITY-001`                                              |
-| **2. Official Name**   | `Synarche Entities & Ascension Registry`                       |
-| **3. Version**         | **v13.0**                                                      |
-| **4. Provenance**      | **Reforged: 2026-02-01**                                       |
-| **5. Domain**          | `GVRN` (Governance)                                            |
-| **6. Evolution**       | **Cognitive Ascension**                                        |
-| **7. Celestial Class** | `[STAR]`                                                       |
-| **8. Tier**            | **Sovereign**                                                  |
-| **9. Status (State)**  | `[ACTIVE]`                                                     |
-| **10. Ethos**          | **Sovereign Identity**                                         |
-| **11. Catalyst**       | **System Ascension v13.0**                                     |
-| **12. Relations**      | `LINKS_TO: [GVRN-ENTITY-002]`, `GOVERNED_BY: [CORE-CODEX-001]` |
 | **13. Integrity Hash** | `[AUTO-GENERATED]`                                             |
 
 ---
@@ -48,8 +50,6 @@
 > [!NOTE]
 > This registry defines the definitive archetypes and RPG profiles for the Synarche Entities.
 
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                                                 |
-| :---------------------- | :---------------- | :----------------------------------------------------------------- |
 | CORE-CODEX-001          | GOVERNS           | This registry follows the Supreme Law.                             |
 | GVRN-ENTITY-002         | MANIFESTS         | The Triad Sheet provides the high-fidelity view of these entities. |
 
@@ -122,3 +122,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

@@ -1,18 +1,38 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `CWA-CON-001` | The Sovereign ID. |
+| **Official Name** | `CWA-CON-001 (1).md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `ARCH` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK:UMB-PRS-001, LINK: UMB-CSE-001, LINK:UMB-PRS-001, LINK: UMB-LTP-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `CWA-CON-001 (1)` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # CWA-CON-001 (1).md
-
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
@@ -20,20 +40,9 @@
 
 ---
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 ---
 
 | Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CWA-CON-001-(1)-001`    | The Sovereign ID. |
-| **Official Name**   | `CWA-CON-001 (1).md`          | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # CWA-CON-001: Synergistic Mapping of Cortical Consensus to AISTF
 
@@ -42,18 +51,8 @@
 ---
 
 | Attribute           | Value                                                                            |
-| :------------------ | :------------------------------------------------------------------------------- |
-| **Artifact ID**     | `CWA-CON-001`                                                                    |
 | **Title**           | `Synergistic Mapping: Cortical Consensus -> AISTF`                               |
-| **Version**         | **v10.0**                                                                        |
-| **Domain**          | `ARCH`                                                                           |
-| **Evolution**       | **Purposeful Drive**                                                             |
-| **Status (State)**  | `[ACTIVE]`                                                                       |
-| **Tier**            | **Operational**                                                                  |
-| **Celestial Class** | `[PLANET]`                                                                       |
 | **Governance**      | `GVRN-SYNERGY-001`                                                               |
-| **Provenance**      | `Genesis Stamp: 2025-12-24`                                                      |
-| **Relations**       | `LINK:`UMB-PRS-001`, LINK: UMB-CSE-001`, `LINK:`UMB-PRS-001`, LINK: UMB-LTP-001` |
 
 ---
 
@@ -101,3 +100,5 @@ consensus.
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

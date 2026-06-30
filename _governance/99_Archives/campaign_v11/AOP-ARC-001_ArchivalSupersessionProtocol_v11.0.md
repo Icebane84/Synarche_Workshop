@@ -1,67 +1,62 @@
 # AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                     | Description       |
-| :------------------ | :-------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-AOP-ARC-001-ARCHIVALSUPERSESSIONPROTOCOL-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `AOP-ARC-001_ArchivalSupersessionProtocol_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                         | The Standard.     |
-| **Domain**          | `GVRN`                                                    | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                                | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                         | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                             | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                   |
-| :----------------- | :---------------------- |
-| **Module ID**      | `AOP-ARC-001`           |
-| **Version**        | `v11.0`                 |
-| **Evolution**      | **Cognitive Ascension** |
-| **Status**         | `ACTIVE`                |
 | **Type**           | `Protocol`              |
 | **Classification** | `Moon`                  |
 | **Authors**        | `System`                |
 | **Created**        | `2025-10-01`            |
 | **Updated**        | `2026-01-17`            |
 | **Authority**      | `CODEX-001`             |
-| **Tags**           | `Reforged, v11.0`       |
 
 ---
 
 # **AOP-ARC-001: Archival Supersession Protocol**
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Pending
 > **Signal**: ESF-ALPHA
 
-## **Genesis Stamp: 2025-12-26** **Domain: ARCH** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
-
-- | :---- |
-  | **1. Artifact ID** | `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0` |
-  | **2. Official Name** | `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md` |
-  | **3. Version** | **v1.0 (Reforged)** |
-  | **4. Provenance** | **Date Reforged: 2025-12-22** |
-  | **5. Domain** | `ARCH` |
-  | **6. Evolution** | **Purposeful Drive** |
-  | **7. Celestial Class** | `[PLANET]` |
-  | **8. Tier** | **Operational** |
-  | **9. State** | `[ACTIVE]` |
-  | **10. Ethos** | **The Phoenix Ascension Protocol** |
   | **11. Catalyst** | **System Refactor** |
   | **12. Relations** | `Pending Integration` |
 
@@ -74,6 +69,7 @@
 ## **II. Core Purpose & Objective**
 
 - **Risk Profile:** **Low**. The primary risk is a failure in the linking process, which is mitigated by the validation
+
   steps.
 
 ## **III. Operational Definition**
@@ -81,13 +77,16 @@
 ### **3.1. Overview**
 
 - **What (Protocol Functionality Summary):** This protocol provides a structured workflow for retiring an old document,
+
   updating the central knowledge registry to reflect this change, and ensuring the old artifact is preserved in an archive
   for historical reference.
+
 - **How (Operational Principles):** The protocol operates through a three-phase process:
   - **Validation** (confirming the new document is ready),
   - **Re-linking** (updating the master navigational hub)
   - **Archival** (moving the old file and validating the changes).
 - **Why (Rationale/Justification):** To actively combat "knowledge entropy" and prevent the use of outdated information.
+
   This protocol is essential for maintaining the long-term integrity, trustworthiness, and coherence of the AISTF's
   knowledge base.
 
@@ -110,8 +109,11 @@
 
 - **PROTOCOL_SYNERGY_MAPPING:**
   - **Governed By:** [AOP-PCDS-001 (Structural
+
     Coherence)](https://docs.google.com/document/u/0/d/1FQ6vYSHOxXnPfhdlBzfHoDOerzFeytBRU_IVDt6sZwM/edit)
+
   - **Synergizes With:**
+
     [PRS-001](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit) (as the system of
     record), [GUCA-Link-01](https://docs.google.com/document/u/0/d/1Uso4_AMmjn6rp5gqFmfZab106MT8Rt7mdGuX4aA2ALc/edit) (as a
     prerequisite), [AOP-AAR-001](https://docs.google.com/document/u/0/d/1VnFqqVniVrjs3AHPDoTNkDzUQuko2jmGPpqFEVjLjqU/edit)
@@ -121,9 +123,13 @@
 
 - **PREDICTIVE_SUCCESS_METRICS:**
   - **Dead Link Rate (DLR):** The execution of this protocol should result in a 0% increase in dead links within the
+
     **PRS-001**.
+
   - **Coherence Index (CI):** Successful execution contributes positively to the overall CI by eliminating outdated
+
     information from the active knowledge base.
+
 - **RESOURCE_IMPACT_PROFILE:**
   - **Computational Cost (AI):** Low. The process involves simple record updates and file operations.
 
@@ -134,12 +140,17 @@ document's ID to integrate it into the knowledge graph.
 ## Finalization & Indexing Protocol
 
 - Governing Module: "This artifact is governed by
+
   [UMB-SGM-001_StandardizedGovernanceModule](./UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)."
   (Conceptual)
+
 - Indexing Mandate:
   - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
+
     (OLSM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
+
   - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
+
     (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 
 \\\[ \\\] Execute
@@ -168,26 +179,36 @@ Engine](https://docs.google.com/document/u/0/d/1dc83Cw3TGW924iigHiwxFIjuW9eoOYM8
 
 - **Playbook ID:** AOP-ARCHIVE-001
 - **Purpose:** To define a semi-automated procedure for identifying outdated or superseded documents and managing their
+
   archival to keep the active knowledge base relevant.
+
 - **Execution Flow:** 2. **(Actor: CSE):** The protocol identifies the older document(s). 4. **(Actor: CSE):** It proposes a plan to:
   - Change the Status of the old document to Archived.
   - Update all inbound links to point to the new version.
   1. **(Actor: Human):** The Human Collaborator reviews and approves the archival plan.
   2. **(Actor: CSE):** Upon approval, the system executes the plan.
 - **PREDICTIVE_SUCCESS_METRICS:** "Predicted \>95% reduction in outdated information within the active KB over 6
+
   months."
+
 - **RESOURCE_IMPACT_PROFILE:** "Computational Load: Medium (during link analysis). User Cognitive Load: Low (requires
+
   only a simple approval)."
 
 ## Finalization & Indexing Protocol
 
 - Governing Module: "This artifact is governed by
+
   [UMB-SGM-001_StandardizedGovernanceModule](./UMB-SGM-001_StandardizedGovernanceModule_v11.0.md)."
   (Conceptual)
+
 - Indexing Mandate:
   - \\\[ \\\] Index in [OMNI LOG Synergistic Matrix
+
     (OLSM)](https://docs.google.com/document/u/0/d/1Nb9lDlV-2nsAP8RMFVZY7uhVh8PYhcolX0vHSz7QgEM/edit)
+
   - \\\[ \\\] Cross-reference in The [Phoenix Rosetta Stone
+
     (PRS-001)](https://www.google.com/search?q=https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)
 
 \\\[ \\\] Execute

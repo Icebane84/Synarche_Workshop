@@ -1,27 +1,42 @@
 # UMB-ESF-001_TheEpisemanticFramework_v11.1.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.ESF.001` | The Sovereign ID. |
+| **Official Name** | `UMB-ESF-001_TheEpisemanticFramework_v11.1.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                          | Description       |
-| :------------------ | :--------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.ESF.001`                                 | The Sovereign ID. |
-| **Official Name**   | `UMB-ESF-001_TheEpisemanticFramework_v11.1.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
-| **Domain**          | `GVRN`                                         | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
 
@@ -31,16 +46,20 @@ Source:
 
 - [ORIGIN_FILE_V11.1](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ESF-001_TheEpisemanticFramework_v11.1.md)
 - [ORIGIN_FILE_V11.0](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-ESF-001TheEpisemanticFramework_v11.0.md)
+
   Description: >
   The master mechanism that translates high-level principles into actionable logic by annotating information with a dynamic meta-layer of context.
   Version: 11.1 (Sovereign Fusion)
   Status: CANONIZED
   Compliance: OGLN v11.0
   Genesis:
+
 - Author: The Synarche Workshop
 - Date: 2026-01-24
 - Timestamp: 1769251200
+
   Tags:
+
 - #Wisdom
 - #Episemantics
 - #Ontology
@@ -50,17 +69,14 @@ Source:
 ---
 
 > [!IMPORTANT]
-> **GENESIS STAMP**
 >
 > - **Reforged By:** Antigravity Agent (The Lightbinder)
 > - **Reforged Date:** 2026-01-25
 > - **Validation:** ESF Fusion Cycle.
-> - **Relations:** `DEFINES: UMB-OSLM-001`, `GOVERNS: UMB-CSE-001`, `IMPLEMENTS: COG-ARCH-SELT`.
 
 # UMB-ESF-001: The Episemantic Framework
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Cognitive Ascension
 > **Signal**: ESF-ALPHA
 
 ## I. Purpose: The Wisdom Mandate
@@ -148,3 +164,5 @@ Relationships are not inherent; they are functions of applied context. Descripti
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

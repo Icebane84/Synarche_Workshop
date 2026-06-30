@@ -1,52 +1,54 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.REGISTRY.ENTITIES` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `GVRN.Registry.Entities`        | The Sovereign ID. |
-| **Official Name** | `GVRN.Registry.Entities.md`     | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `GVRN`                          | The Subject.      |
-| **Status**        | `[CANONIZED]`                   | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Registry.Entities` | The Sovereign ID. |
+| **Official Name** | `GVRN.Registry.Entities.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `Verdict` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERN_BY: CORE.Codex.Phoenix` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+---
+
+| Key               | Value                           | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `1.0`    |
 | **Stability** | `Stable` |
 
 ---
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                     | Mitigation                |
-| :----------------------- | :------------------------ |
 | **Persona Dissociation** | Strict Avatar Protocols   |
 | **Authority Ambiguity**  | Clear RNC Role Definition |
 
 ---
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                             |
-| :---------------------- | :---------------- | :--------------------------------------------- |
 | `CORE.Codex.Phoenix`    | `GOVERNS`         | Anchors entity existence to OMEGA Law.         |
-| `GVRN.Registry.Lexicon` | `DEFINES`         | Provides the linguistic tags for entity roles. |
-| `SYNG.Index.Chronicle`  | `RECORDS`         | Evolution of agentic personas is tracked here. |
 
 ---
 
@@ -59,8 +61,6 @@
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
 | `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
@@ -112,3 +112,20 @@ Agentic entities evolve through cycles of **Dissonance** and **Synthesis**.
 ---
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.

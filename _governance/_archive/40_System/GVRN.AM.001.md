@@ -1,31 +1,44 @@
 # GVRN.AM.001_AssociationManager_v13.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.AM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.AM.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.AM.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.AM.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -75,15 +88,20 @@ iterative reinforcement.
 
 - **What**: The AM is the "muscle" of the knowledge graph, responsible for strengthening or pruning connections.
 - **How**: It utilizes a **Weighted Bi-directional Link** structure ($Mem_A \leftrightarrow Mem_B$) managed by the
+
   **Adaptive Link Heuristic Engine**.
+
 - **Why**: To prevent the knowledge base from becoming a flat, unprioritized list of facts, ensuring that "Truth" has
+
   greater gravity than "Data."
 
 ### 3.2 Key Components
 
 - **Weighted Link**: A relationship object containing a scalar `weight` ($0.0 - 1.0$) and `confidence_interval`.
 - **Reinforcement Engine**: Algorithms for `Iterative Reinforcement` (multiplicative growth) and `Explicit Adjustment`
+
   (absolute setting).
+
 - **Prioritized Retrieval Gate**: A query filter that returns only links meeting a specific `MinStrength` threshold.
 
 ## IV. Operational Playbook (AOP-AM-001)

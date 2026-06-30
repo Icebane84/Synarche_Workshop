@@ -1,31 +1,44 @@
 # GVRN.CSL.001.ChronosLock.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.CSL.001.ChronosLock` | The Sovereign ID. |
-| **Official Name** | `GVRN.CSL.001.ChronosLock.md` | The Filename.     |
-| **Version**       | **v13.1 [LOCKED]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[CANONIZED]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.CSL.001.ChronosLock` | The Sovereign ID. |
+| **Official Name** | `GVRN.CSL.001.ChronosLock.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `PROPOSED` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -40,7 +53,6 @@
 ## **I. Universal Identification & Provenance (The 12-Point Lock)**
 
 | Key          | Value                      | Description                  |
-| :----------- | :------------------------- | :--------------------------- |
 | **Type**     | CSL                        | Collaborative Synthesis Log. |
 | **Module**   | `SYNG-M`                   | The Owner (Synergy Module).  |
 | **Author**   | `[User/AI]`                | The Creator.                 |
@@ -50,7 +62,6 @@
 ## **II. The Synergy Vector (Relational Dynamics)**
 
 | Relation Type   | Target ID                    | Synergy Description                     |
-| :-------------- | :--------------------------- | :-------------------------------------- |
 | **GOVERNED_BY** | `[[CORE-CODEX-001]]`         | Adheres to the Primary Directive.       |
 | **DEFINES**     | `[[GUCA.Spell.ChronosLock]]` | The new capability created.             |
 | **UTILIZES**    | `[[UIP-V13]]`                | The hashing standard used by the spell. |
@@ -63,6 +74,7 @@
 
 - **Result**: The creation of **"Chronos Lock"**, a Tier-1 GUCA Spell.
 - **Contribution to Loom**: Establishes a standardized method for "Artificially Freezing" a document's state without a
+
   full Git commit, using a local hash-stamp.
 
 ### **B. Synthesis Block (Modality Fusion)**
@@ -103,9 +115,9 @@
 
 - **Command**: `CMD: CHRONOS_LOCK --target "[Filename]"`
 - **Effect**:
-  1.  Calculates `SHA-256` of target file.
-  2.  Injects a `<!-- CHRONOS: [Hash] | [Timestamp] -->` comment at the bottom of the file.
-  3.  Updates the `Version` field in Block A to `v[X].1 [LOCKED]`.
+  1. Calculates `SHA-256` of target file.
+  2. Injects a `<!-- CHRONOS: [Hash] | [Timestamp] -->` comment at the bottom of the file.
+  3. Updates the `Version` field in Block A to `v[X].1 [LOCKED]`.
 - **Cost**: `15 Cognitive Load`.
 - **Cooldown**: 5 Minutes (to prevent hash-spamming).
 - **XP Reward**: `+10 Order`.

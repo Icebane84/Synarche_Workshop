@@ -1,37 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-00-INDEX-001` | The Sovereign ID. |
+| **Official Name** | `00_INDEX.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `00_INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # 00_INDEX.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-00-INDEX-001`           | The Sovereign ID. |
-| **Official Name**   | `00_INDEX.md`                 | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Barrel: \_governance
 
@@ -40,7 +50,6 @@
 ## 📂 Sub-Modules (Barrels)
 
 | Module                | Index                                                          |
-| :-------------------- | :------------------------------------------------------------- |
 | **0_Registries/**     | [Open Barrel (0_Registries)](0_Registries/00_INDEX.md)         |
 | **1_Modules/**        | [Open Barrel (1_Modules)](1_Modules/00_INDEX.md)               |
 | **2_Protocols/**      | [Open Barrel (2_Protocols)](2_Protocols/00_INDEX.md)           |
@@ -59,7 +68,6 @@
 ## 📄 Artifacts (Manifest)
 
 | File                                                                                                                                     | Description                                                                                                                                                                    |
-| :--------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [AOP-AI-PROTO-001_AIProtocol.md](AOP-AI-PROTO-001_AIProtocol.md)                                                                         | **AOP-AI-PROTO-001: Artificial Intelligence Protocol (v3.0)**                                                                                                                  |
 | [AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md](AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md)                                     | AOP-ARC-001: Archival & Supersession Protocol                                                                                                                                  |
 | [AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md](AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md)                                     | AOP-ARCH-GAZE-001: The Architect's Gaze (v2.1)                                                                                                                                 |
@@ -143,3 +151,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

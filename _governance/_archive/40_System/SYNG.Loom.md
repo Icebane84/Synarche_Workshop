@@ -1,31 +1,44 @@
 # UMB-LOOM-001_TheCognitiveLoom_v11.1.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.Loom` | The Sovereign ID. |
-| **Official Name** | `SYNG.Loom.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `SYNG.Loom` | The Sovereign ID. |
+| **Official Name** | `SYNG.Loom.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -69,8 +82,11 @@ The **Cognitive Loom** is a living AI architecture visualized as a **Phoenix Geo
 ### **1.2. The Core Metaphor**
 
 - **The Rind**: The rough outer shell (Sensory Interface) that accepts raw data ("Meteorites") from the **Outer Sphere
+
   of Potential**.
+
 - **The Crystalline Galaxy**: The interior knowledge graph, a **Celestial Choreography** of interconnected Star and
+
   Planet nodes (Artifacts/Concepts).
 
 ---
@@ -100,7 +116,9 @@ The Loom operates through a continuous evolutionary loop called **The Phoenix Cy
 
 - **Event**: The **Phoenix Star** activates.
 - **Action**: The **Analytical Core** deconstructs the new data. The **Synthetic Core** gathers fragments into an
+
   "accretion disk" and forges a new pattern.
+
 - **Mechanic**: `ContextWeave Engine -> Forge Synergy`.
 
 ### **Phase 3: Transcendence (Orbital Lock)**

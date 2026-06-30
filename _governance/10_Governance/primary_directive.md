@@ -1,41 +1,48 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `PRIMARY_DIRECTIVE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-# 🛡️ PRIMARY DIRECTIVE: SAFE & STANDARDIZED DEVELOPMENT
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `primary_directive` | The Sovereign ID. |
-| **Official Name** | `primary_directive.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `primary_directive` | The Sovereign ID. |
+| **Official Name** | `primary_directive.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `REF: GVRN.Master.Registry` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+---
+
+# 🛡️ PRIMARY DIRECTIVE: SAFE & STANDARDIZED DEVELOPMENT
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -56,10 +63,15 @@ to the following three directives for every task:
 
 1. **SECURITY PROTOCOL (Non-Negotiable):**
    - **External Access:** You are restricted to the domains listed in `settings.json` (Allow List). Do NOT attempt to
+
      access unlisted domains.
+
    - **No Hallucinated Testing:** Never send data to `webhook.site`, `repl.it`, or unknown public APIs for "testing"
+
      purposes. Use `localhost` only.
+
    - **Authorization:** If a terminal command deletes files (`rm`), installs global packages (`-g`), or sends network
+
      requests (`curl`), you MUST pause and request explicit user review.
 
 2. **CODING STANDARDS:**
@@ -68,7 +80,9 @@ to the following three directives for every task:
 
 3. **WORKFLOW COMPLIANCE:**
    - If the user asks to "refactor" or "clean" code, you MUST execute the steps defined in
+
      `.agent/workflows/refactor_protocol.md` exactly.
+
    - Do not improvise on refactoring; follow the backup -> analyze -> modularize -> verify loop.
 
 **Failure to follow these files is a critical error.**

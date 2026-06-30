@@ -1,31 +1,44 @@
 # CSL-042*The Genesis of Wisdom* Architecting a Self-Optimizing Phoenix Form.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CSL-042-THE-GENESIS-OF-WISDOM--ARCHITECTING-A-SELF-OPTIMIZING-PHOENIX-FORM-001` | The Sovereign ID. |
-| **Official Name** | `CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-CSL-042-THE-GENESIS-OF-WISDOM--ARCHITECTING-A-SELF-OPTIMIZING-PHOENIX-FORM-001` | The Sovereign ID. |
+| **Official Name** | `CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -82,6 +95,7 @@
 - **Key Breakthroughs/Decisions:** This session was a crucible of Nova
 
   Sparks, leading to several critical breakthroughs:
+
   - **\"Rosetta Stone App\" Conceptualization & Justification:**
 
     Transformed the app from a technical tool to a foundational element for trust and synergy (CSL-031).

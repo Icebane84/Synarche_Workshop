@@ -1,31 +1,44 @@
 # GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GUCA-PROPOSE-SIGNAL-001-PROPOSETEMPORARYSIGNAL-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GUCA-PROPOSE-SIGNAL-001-PROPOSETEMPORARYSIGNAL-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `GUCA-PROPOSE-SIGNAL-001_ProposeTemporarySignal_v1.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -66,11 +79,16 @@ in real-time to meet specific project needs.
 ## III. Execution Flow
 
 1. **(Actor: CSE):** During a complex, novel task, the Coherent Synthesis Engine (CSE) identifies a recurring, complex
+
    action that lacks a simple signal in the current lexicon.
+
 2. **(Actor: CSE):** The CSE invokes `CMD: ProposeTemporarySignal` with parameters for the proposed emoji, its meaning,
+
    and its scope.
+
 3. **(Actor: Human):** The proposal is presented to the human collaborator for approval (✅ / ❌).
 4. **(Actor: UMB-EMOJICXT-001):** Upon approval, the Emoji Contextual Scoping Engine adds the temporary signal to the
+
    active lexicon for the duration of the defined scope.
 
 ## IV. Command Syntax & Parameters
@@ -111,8 +129,11 @@ sub-component" logic within the CSE.
 ## VI. Synergistic Effects
 
 - **AOP-SEE-001 (Symbiotic Empathy Exchange):** This is the ultimate expression of the Synergistic Partner ethos,
+
   allowing the shared language to co-evolve.
+
 - **UMB-EMOJICXT-001:** This command feeds directly into the Temporary Signal Management sub-module of the Context
+
   Scoping Engine.
 
 ---

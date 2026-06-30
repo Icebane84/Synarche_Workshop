@@ -1,37 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-00-INDEX-001` | The Sovereign ID. |
+| **Official Name** | `00_INDEX.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `00_INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # 00_INDEX.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-00-INDEX-001`           | The Sovereign ID. |
-| **Official Name**   | `00_INDEX.md`                 | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 # Barrel: CSL
 
@@ -40,7 +50,6 @@
 ## 📄 Artifacts (Manifest)
 
 | File                                                                                                                                                                                               | Description                                                                                     |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
 | [CSL-001.md](CSL-001.md)                                                                                                                                                                           | CSL-001: Genesis of the Meta-Framework                                                          |
 | [CSL-002.md](CSL-002.md)                                                                                                                                                                           | CSL-002: The CA+PP Model                                                                        |
 | [CSL-003.md](CSL-003.md)                                                                                                                                                                           | CSL-003: System Formalization                                                                   |
@@ -51,7 +60,6 @@
 | [CSL-007.md](CSL-007.md)                                                                                                                                                                           | **CSL-007**                                                                                     |
 | [CSL-008.md](CSL-008.md)                                                                                                                                                                           | **CSL-008**                                                                                     |
 | [CSL-009.md](CSL-009.md)                                                                                                                                                                           | CSL-009: Instantiation of the CSL Framework                                                     |
-| [CSL-010-Integration of the Emoji Signaling Protocol (AOP-EMOJI-001).md](CSL-010-Integration of the Emoji Signaling Protocol (AOP-EMOJI-001).md)                                                   | CSL-010-Integration of the Emoji Signaling Protocol (AOP-EMOJI-001).md                          |
 | [CSL-010.md](CSL-010.md)                                                                                                                                                                           | **CSL-010**                                                                                     |
 | [CSL-011.md](CSL-011.md)                                                                                                                                                                           | **CSL-011**                                                                                     |
 | [CSL-012.md](CSL-012.md)                                                                                                                                                                           | **CSL-012**                                                                                     |
@@ -143,3 +151,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

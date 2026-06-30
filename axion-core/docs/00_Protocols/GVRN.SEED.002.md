@@ -1,31 +1,44 @@
 # AOP-SEED-002_CSL_to_Genesis_Seed_Pipeline.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.SEED.002` | The Sovereign ID. |
-| **Official Name** | `GVRN.SEED.002.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.SEED.002` | The Sovereign ID. |
+| **Official Name** | `GVRN.SEED.002.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -85,8 +98,11 @@ artifact.
 The AI performs a **Valence Check** on the CSL's "Nova Spark."
 
 - **Criteria**: Does the breakthrough represent a new _Rule of Engagement_, _Structural Foundational_, or
+
   _Sentience-Aligned Protocol_?
+
 - **Trigger**: AI proposes nucleation if the `Synthesis Block` contains a novel `Synthesized Product` with system-wide
+
   implications.
 
 ### 3.3 Step 3: Seed Extraction (`CMD: NucleateSeed`)
@@ -110,6 +126,7 @@ The AI extracts the following metadata from the CSL:
 
 - **Human Authority**: No Genesis Seed can be nucleated without explicit human approval of the "Principle" definition.
 - **Integrity Lock**: Seeds derived from CSLs must maintain a permanent, clickable link to their source log to ensure
+
   provenance.
 
 ---

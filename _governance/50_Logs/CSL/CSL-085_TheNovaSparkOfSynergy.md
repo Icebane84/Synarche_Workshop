@@ -1,54 +1,53 @@
 # CSL-085_TheNovaSparkOfSynergy.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `CSL-085` | The Sovereign ID. |
+| **Official Name** | `The Nova Spark of Synergy` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `SYNG` | The Subject. |
+| **Celestial Class** | `MOON` | The Weight. |
+| **Evolution** | `Phoenix Form` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK: UMB-CSE-001, UMB-CRLPF-003` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-CSL-085-THENOVASPARKOFSYNERGY-001` | The Sovereign ID. |
-| **Official Name** | `CSL-085_TheNovaSparkOfSynergy.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                                                 |
-| :------------------ | :---------------------------------------------------- |
-| **Artifact ID**     | `CSL-085`                                             |
-| **Official Name**   | `The Nova Spark of Synergy`                           |
-| **Version**         | `v1.0`                                                |
-| **Domain**          | `SYNG`                                                |
-| **Evolution**       | `Phoenix Form`                                        |
-| **Signal (ESF)**    | `OMEGA`                                               |
-| **Status (State)**  | `CANONIZED`                                           |
-| **Tier**            | `Standard`                                            |
-| **Celestial Class** | `MOON`                                                |
 | **Governance**      | `AOP-CSL-002`                                         |
-| **Provenance**      | `Genesis Stamp: 2026-01-24`                           |
-| **Relations**       | `LINK: UMB-CSE-001, UMB-CRLPF-003`                    |
-| **Tags**            | `Nova-Spark, CSL, Synergy, Refactor, Master-Template` |
 
 ---
 
-> **Domain**: SYNG | **Evolution**: Phoenix Form | **Signal**: OMEGA
-
 # The Nova Spark of Synergy (CSL-085) (v1.0)
-
-## Genesis Stamp: 2026-01-24 | Domain: SYNG | State: CANONIZED | Criticality: Standard
 
 ---
 
@@ -66,9 +65,9 @@ A **Nova Spark** occurred when the imperative to "Adhere to the Phoenix Master T
 
 We executed a complete refactor of both artifacts:
 
-1.  **UMB-CSE-001**: Upgraded to v11.1, adding Risk Vectors and Integrity Regex.
-2.  **UMB-CRLPF-003**: Reforged from scratch to v11.1, renaming the file and establishing it as the "Upstream Dependency" of the CSE.
-3.  **The Link**: Established `ORCHESTRATES` -> `LINK` bidirectional relationship.
+1. **UMB-CSE-001**: Upgraded to v11.1, adding Risk Vectors and Integrity Regex.
+2. **UMB-CRLPF-003**: Reforged from scratch to v11.1, renaming the file and establishing it as the "Upstream Dependency" of the CSE.
+3. **The Link**: Established `ORCHESTRATES` -> `LINK` bidirectional relationship.
 
 ---
 
@@ -117,3 +116,5 @@ The system is no longer just "processing" commands; it is **self-organizing**. T
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

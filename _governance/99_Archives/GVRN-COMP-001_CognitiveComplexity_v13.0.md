@@ -1,41 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GVRN-COMP-001-COGNITIVECOMPLEXITY-V13.0-001` | The Sovereign ID. |
+| **Official Name** | `GVRN-COMP-001_CognitiveComplexity_v13.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN-COMP-001_COGNITIVECOMPLEXITY_V13.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # GVRN-COMP-001_CognitiveComplexity_v13.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                              | Description       |
-| :------------------ | :------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-GVRN-COMP-001-COGNITIVECOMPLEXITY-V13.0-001` | The Sovereign ID. |
-| **Official Name**   | `GVRN-COMP-001_CognitiveComplexity_v13.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                  | The Standard.     |
-| **Domain**          | `GVRN`                                             | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                         | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                  | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                         | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                      | The Network.      |
 
 # GVRN-COMP-001: Cognitive Complexity Standard (v13.0)
-
-## Genesis Stamp: 2026-02-01 | Domain: GVRN | State: CANONIZED | Criticality: Critical
 
 **Tags:** `Standards`, `Understandability`, `Metrics`, `Sonar`, `v13.0`
 
@@ -46,19 +54,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                                                                       |
-| :--------------------- | :-------------------------------------------------------------------------- |
-| **1. Artifact ID**     | `GVRN-COMP-001`                                                             |
-| **2. Official Name**   | `GVRN-COMP-001_CognitiveComplexity_v13.0.md`                                |
-| **3. Version**         | **v13.0**                                                                   |
-| **4. Provenance**      | **Genesis Stamp: 2026-02-01**                                               |
-| **5. Domain**          | `GVRN` (Governance)                                                         |
-| **6. Evolution**       | **Cognitive Ascension**                                                     |
-| **7. Celestial Class** | `[PLANET]`                                                                  |
-| **8. Tier**            | **Strategic**                                                               |
-| **9. Status (State)**  | `[ACTIVE]`                                                                  |
-| **10. Ethos**          | **Understandability**                                                       |
-| **11. Catalyst**       | **Intellectual Integrity**                                                  |
-| **12. Relations**      | `GOVERNED_BY: [CORE-CODEX-001](../CORE-CODEX-001_ThePhoenixCodex_v13.0.md)` |
 | **13. Integrity Hash** | `[AUTO-GENERATED]`                                                          |
 
 ---

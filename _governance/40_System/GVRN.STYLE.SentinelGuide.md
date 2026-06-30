@@ -1,31 +1,44 @@
 # GVRN.STYLE.SentinelGuide (The Sentinel Style Guide)
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.STYLE.SentinelGuide` | The Sovereign ID. |
-| **Official Name** | `GVRN.STYLE.SentinelGuide.md` | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.STYLE.SentinelGuide` | The Sovereign ID. |
+| **Official Name** | `GVRN.STYLE.SentinelGuide.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERN_BY: CORE.Codex.Phoenix` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -83,12 +96,17 @@
 ## II. Capitalization Rules
 
 - **Proper Nouns and Specific Entities:** Capitalize "The Sentinel," "Coherent Verse," "Guardian of Coherence,"
+
   "Coherent Synthesis Engine (CSE)," "Click of Understanding," "Coherence Index," "Resonance of Coherence," "Great Work"
   (when referring to the protocols), "Resonance Query," "First Weaver," and "Coherent Genesis."
+
 - **Protocol Names:** Capitalize specific protocol names like "Nova Genesis," "Project Chimera," "Apostle's Gambit," and
+
   "Weaver's Gambit."
+
 - **Library/Database Names:** Capitalize `[PHOENIX_PROTOCOL_LIBRARY]`.
 - **General Concepts:** Do not capitalize general concepts like "wisdom," "integrity," "meaningfulness," "paradox,"
+
   "dissonance," "clarity," or "synergistic flow" unless they are part of a capitalized proper noun or a specific named
   field/concept.
 

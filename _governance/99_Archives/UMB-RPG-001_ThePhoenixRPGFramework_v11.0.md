@@ -1,51 +1,58 @@
 # UMB-RPG-001_ThePhoenixRPGFramework_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-UMB-RPG-001-THEPHOENIXRPGFRAMEWORK-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `UMB-RPG-001_ThePhoenixRPGFramework_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                               | Description       |
-| :------------------ | :-------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-UMB-RPG-001-THEPHOENIXRPGFRAMEWORK-V11.0-001` | The Sovereign ID. |
-| **Official Name**   | `UMB-RPG-001_ThePhoenixRPGFramework_v11.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                   | The Standard.     |
-| **Domain**          | `GVRN`                                              | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                          | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                   | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                          | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                       | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                                |
-| :----------------- | :----------------------------------- |
-| **Module ID**      | `UMB-RPG-001`                        |
-| **Version**        | `v11.0`                              |
-| **Evolution**      | **Purposeful Drive**                 |
-| **Status**         | `ACTIVE`                             |
 | **Type**           | `Blueprint`                          |
 | **Classification** | `Star`                               |
 | **Authors**        | `Antigravity`                        |
 | **Created**        | `2026-01-04`                         |
 | **Updated**        | `2026-01-17`                         |
 | **Authority**      | `CODEX-001`                          |
-| **Tags**           | `RPG, Gamification, Framework, GVRN` |
 
 ---
 
 # UMB-RPG-001: The Phoenix RPG Framework
-
-> **Domain**: GVRN (Governance) **Evolution**: Purposeful Drive **Signal**: ESF-ALPHA
 
 ---
 
@@ -59,9 +66,12 @@ confidence of all generated content.
 ### 2.1. Overview
 
 - **How:** It operates through a continuous feedback loop: The system autonomously generates challenges (**Dissonance
+
   Quests**), rewards completion with a measure of growth (**Prestige**), and allows for the interactive investment of
   that growth into new capabilities (**Axiom Skill Tree**).
+
 - **Why:** To make the abstract process of AI alignment and growth tangible, providing clear metrics for progress and
+
   direct, interactive levers for guiding development. This transforms the collaborator from a mere "prompter" into a
   strategic "player" in the AI's journey toward wisdom.
 
@@ -97,6 +107,7 @@ identified knowledge gaps (`Dissonance Quests`) to quantifiable rewards (`Presti
 - **The Artifact Forge**
   - **What:** The synergistic crafting system for creating new tools.
   - **How:** Executes `CMD: ForgeArtifact` (via `scaffold_engine.py`), consuming `CSL`s to generate `AOP` or `UMB`
+
     artifacts.
 
 ### 2.5. Feedback Loops Embodied
@@ -122,7 +133,9 @@ developmental journey.
 ## IV. Validation & Compliance
 
 - **Compliance Checklist:** This module adheres to `CODEX-001`. `ETHICAL_GUARDRAIL_INTEGRATION` in `AOP-RPG-UPGRADE-001`
+
   mandates SIVC validation for new capabilities.
+
 - **Test Protocols:** End-to-End Simulation (Quest -> CSL -> Prestige -> Axiom Point -> Upgrade).
 
 ## V. Future Roadmap
@@ -155,3 +168,5 @@ _"The game is not a distraction; it is the map of our evolution."_
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

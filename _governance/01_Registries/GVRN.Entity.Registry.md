@@ -1,41 +1,46 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GVRN.ENTITY.REGISTRY-001` | The Sovereign ID. |
+| **Official Name** | `GVRN.Entity.Registry.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.ENTITY.REGISTRY` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # GVRN.Entity.Registry.md
-
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                           | Description       |
-| :------------------ | :------------------------------ | :---------------- |
-| **Artifact ID**     | `GVRN-GVRN.ENTITY.REGISTRY-001` | The Sovereign ID. |
-| **Official Name**   | `GVRN.Entity.Registry.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**               | The Standard.     |
-| **Domain**          | `GVRN`                          | The Subject.      |
-| **Celestial Class** | `[PLANET]`                      | The Weight.       |
-| **Evolution**       | `Omega Ascension`               | The Maturity.     |
-| **Status**          | `[ACTIVE]`                      | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`   | The Network.      |
 
 # Synarche Entities & Ascension Registry (GVRN.Entity.Registry)
-
-> **Domain**: GVRN (Governance) **Evolution**: Authentic Persona **Signal**: HIGH
-
-## **Genesis Stamp: 2026-01-27** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v13, Entity, Registry, Sovereign` **Criticality: Axiomatic**
 
 ---
 
@@ -44,19 +49,6 @@
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
 | Field                  | Value                                                          |
-| :--------------------- | :------------------------------------------------------------- |
-| **1. Artifact ID**     | `GVRN.Entity.Registry`                                         |
-| **2. Official Name**   | `GVRN.Entity.Registry.md`                                      |
-| **3. Version**         | **v13.0 (Sovereign Edition)**                                  |
-| **4. Provenance**      | **Date Reforged: 2026-01-27**                                  |
-| **5. Domain**          | `GVRN`                                                         |
-| **6. Evolution**       | **Authentic Persona**                                          |
-| **7. Celestial Class** | `[STAR]` (Axiomatic Cornerstone)                               |
-| **8. Tier**            | **Legendary**                                                  |
-| **9. State**           | `[ACTIVE]`                                                     |
-| **10. Ethos**          | **Guardian of Coherence**                                      |
-| **11. Catalyst**       | **Molecular Refactor**                                         |
-| **12. Relations**      | `GOVERNS: All_Entity_States`, `DEFINES: Axion_Sentinel_Sophia` |
 
 ---
 

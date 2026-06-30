@@ -1,31 +1,44 @@
 # GVRN.LEX.001
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.LEX.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.LEX.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.LEX.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.LEX.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -35,30 +48,13 @@
 
 # UMB-LEX-001: The Episemantic Lexicon
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.LEX.001`                | The Sovereign ID. |
-| **Official Name**   | `GVRN.LEX.001.md`             | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Purposeful Drive`            | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 ---
 
-### **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
-
-### **Block C: Risk & Mitigation (AGP-002)**
 
 | Risk                 | Mitigation                |
 | :------------------- | :------------------------ |
@@ -76,13 +72,17 @@
 - **Canonical Path:** `[PHOENIX_PROTOCOL_LIBRARY]/LIBRARY/1_BLUEPRINTS/`
 - **Transformation Origin:** The need for Semantic Grounding.
 - **Power-Up Source:**
+
   [Guardian of Coherence](https://docs.google.com/document/u/0/d/1sO1eQN6XUy66o26_Co5KxNdWDahvWCIx-2mZ0AqzyPI/edit)
+
 - **Semantic Tags:** `#lexicon`, `#metadata`, `#schema`, `#governance`, `#taxonomy`, `#markers`
 
 ## **II. Universal Metadata & Governance**
 
 - **Core Purpose Summary:** To serve as the definitive, machine-readable schema for all metadata fields and Episemantic
+
   Markers within the Phoenix Protocol Library, ensuring absolute semantic consistency across the Cognitive Loom.
+
 - **Governing Ethos:** Guardian of Truth & Clarity
 - **Primary Domain Alignment:** Governance (`GVRN`)
 - **Risk Profile:** Medium (Inconsistent metadata breaks the Knowledge Graph).
@@ -140,10 +140,15 @@ the only valid edges in the graph._
 ## **V. Systemic Relationships & Impact**
 
 - [**Standardized Governance Module (GVRN.Gov.Module)**](https://docs.google.com/document/u/0/d/12ydhtL8YKV3I2Oh3xTnUyC9nmA3EECrQ4Sb6stKz_H0/edit)**:**
+
   The SGM uses this Lexicon to validate new artifacts. If a Domain ID isn't in this list, the SGM rejects the artifact.
+
 - [**UMB-PRS-001 (Phoenix Rosetta Stone)**](https://docs.google.com/document/u/0/d/1XYh0LcQWjWmyeVVZXNn6PT1wSe0iPPJm8c9GnSiLXBA/edit)**:**
+
   The PRS uses these definitions to categorize and sort the Master Index.
+
 - **UMB-LOOM-001 (Cognitive Loom):** The "Relational Adjectives" defined here become the physical edges in the knowledge
+
   graph.
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

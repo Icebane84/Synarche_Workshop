@@ -1,42 +1,50 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Pipe.Operational` | The Sovereign ID. |
+| **Official Name** | `GVRN.Pipe.Operational.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.PIPE.OPERATIONAL` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # GVRN.Pipe.Operational.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, Pipeline, Evolution` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                         | Description        |
-| :------------------ | :---------------------------- | :----------------- |
-| **Artifact ID**     | `GVRN.Pipe.Operational`       | The Sovereign ID.  |
-| **Official Name**   | `GVRN.Pipe.Operational.md`    | The Filename.      |
 | **Legacy ID**       | `UMB-PIPE-001`                | The Transmuted ID. |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.      |
-| **Domain**          | `GVRN`                        | The Subject.       |
-| **Celestial Class** | `[PLANET]`                    | The Weight.        |
-| **Evolution**       | `Omega Ascension`             | The Maturity.      |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.     |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.       |
 
 ---
-
-### **Block B: The Ethos Field (IDM-001)**
 
 > **"Growth without structure is just swelling."**
 
@@ -50,7 +58,6 @@
 This pipeline executes the rigorous transformation logic required to upgrade the Synarche.
 
 | Stage   | Name                           | Action Protocol                                                 |
-| :------ | :----------------------------- | :-------------------------------------------------------------- |
 | **I**   | **Deep Analysis** (Discovery)  | Identify gaps, bugs, or opportunities. Output: `task.md` entry. |
 | **II**  | **Codification** (Design)      | Define the new standard or protocol. Output: `GVRN.*` Draft.    |
 | **III** | **Blueprint** (Planning)       | Construct the strategic roadmap via `implementation_plan.md`.   |

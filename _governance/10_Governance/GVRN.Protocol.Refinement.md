@@ -1,47 +1,52 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Protocol.Refinement` | The Sovereign ID. |
+| **Official Name** | `GVRN.Protocol.Refinement.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[MOON]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `OPERATIONALIZES: [PHIL.Ethos.Struggle], ENFORCED_BY: [GVRN.Sentinel.Scan]` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.PROTOCOL.REFINEMENT` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # The Refinement Protocol (GVRN.Protocol.Refinement)
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-01** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v13, Refinement, Safety, Anti-Entropy` **Criticality: Axiomatic**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                                         | Description                   |
-| :------------------ | :---------------------------------------------------------------------------- | :---------------------------- |
-| **Artifact ID**     | `GVRN.Protocol.Refinement`                                                    | The Sovereign ID.             |
-| **Official Name**   | `GVRN.Protocol.Refinement.md`                                                 | The Filename.                 |
 | **Patron Shard**    | `SHARD_PRIESTESS_SYNERGY`                                                     | The Agent. (The Healer)       |
-| **Version**         | **v13.0 [ASCENDED]**                                                          | The Standard.                 |
-| **Domain**          | `GVRN`                                                                        | The Subject.                  |
-| **Celestial Class** | `[MOON]`                                                                      | The Weight. (Operational Law) |
-| **Evolution**       | `Omega Ascension`                                                             | The Maturity.                 |
-| **Signal (ESF)**    | `OMEGA`                                                                       | The Frequency.                |
-| **Status (State)**  | `[CANONIZED]`                                                                 | The Lifecycle.                |
 | **Musashi Audit**   | `PASS`                                                                        | The Tempering.                |
 | **Integrity Hash**  | `[AUTO-GENERATED]`                                                            | The Seal.                     |
-| **Provenance**      | `2026-02-01`                                                                  | The Anchor.                   |
-| **Catalyst**        | `OMEGA_ASCENSION`                                                             | The Spark.                    |
-| **Relations**       | `OPERATIONALIZES: [PHIL.Ethos.Struggle]`, `ENFORCED_BY: [GVRN.Sentinel.Scan]` | The Spine.                    |
 
 ---
-
-### **Block B: The Ethos Field (IDM-001)**
 
 > **"Evolution is not destruction; it is refinement."**
 
@@ -50,10 +55,6 @@
 
 ---
 
-### **Block C: The Cognitive Spine (Axiomatic Mapping)**
-
-| Axiom                      | State       | Vector                                                  |
-| :------------------------- | :---------- | :------------------------------------------------------ |
 | **Mind ($\psi$)**          | `SURGICAL`  | Reasoning Layer: Edits are precise, not broad.          |
 | **Memory ($\mu$)**         | `PRESERVED` | Substrate Layer: History is kept; only dross is burned. |
 | **Law ($\Lambda$)**        | `PROTECTED` | Governance Layer: `AGP` blocks are immutable.           |
@@ -95,21 +96,21 @@ The Engine must follow this Three-Step Loop for all edits.
 
 ### **Phase 1: Check (Source Grounding)**
 
-1.  **Dissect**: Parse the target file. Identify `AGP` blocks and `H1-H6` structure.
-2.  **Calibrate**: Does the proposed edit align with the `Ethos`?
-3.  **Lock**: Mark Metadata and Headers as `[READ_ONLY]`.
+1. **Dissect**: Parse the target file. Identify `AGP` blocks and `H1-H6` structure.
+2. **Calibrate**: Does the proposed edit align with the `Ethos`?
+3. **Lock**: Mark Metadata and Headers as `[READ_ONLY]`.
 
 ### **Phase 2: Modify (Non-Destructive Insertion)**
 
-1.  **Generate**: Create the new content in a buffer.
-2.  **Insert**: Place content _between_ the locked nodes.
-3.  **Format**: Enforce `GVRN.Protocol.Presentation` (Lists, Spacing).
+1. **Generate**: Create the new content in a buffer.
+2. **Insert**: Place content _between_ the locked nodes.
+3. **Format**: Enforce `GVRN.Protocol.Presentation` (Lists, Spacing).
 
 ### **Phase 3: Validate (Integrity Audit)**
 
-1.  **Audit**: Run `GVRN.Sentinel.Scan` (Check S2/S3).
-2.  **Commit**: If PASS, write to disk.
-3.  **Rollback**: If FAIL, discard buffer and alert user.
+1. **Audit**: Run `GVRN.Sentinel.Scan` (Check S2/S3).
+2. **Commit**: If PASS, write to disk.
+3. **Rollback**: If FAIL, discard buffer and alert user.
 
 ---
 

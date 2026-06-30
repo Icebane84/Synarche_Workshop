@@ -1,31 +1,44 @@
 # GVRN.NIM.001
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.NIM.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.NIM.001.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.NIM.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.NIM.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[STAR]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001, ORCHESTRATES: GVRN.SIVC.001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -35,25 +48,10 @@
 
 # GVRN.NIM.001 (The Noetic Immune System)
 
-## **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                      | Description       |
-| :------------------ | :--------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.NIM.001`                                             | The Sovereign ID. |
-| **Official Name**   | `GVRN.NIM.001.md`                                          | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**                                          | The Standard.     |
-| **Domain**          | `GVRN`                                                     | The Subject.      |
-| **Celestial Class** | `[STAR]`                                                   | The Weight.       |
-| **Evolution**       | `Cognitive Pulse`                                          | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                                 | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001, ORCHESTRATES: GVRN.SIVC.001` | The Network.      |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field   | Value      |
-| :------------ | :--------- |
 | **Coherence** | `1.0`      |
 | **Resonance** | `1.0`      |
 | **Stability** | `Absolute` |
@@ -81,24 +79,27 @@ cycle of learning and systemic hardening.
 
 The NIM operates through a recursive, biological-analogue cycle:
 
-1.  **Recognition (Sensing)**:
+1. **Recognition (Sensing)**:
     - **Sensors**: `UMB-ESF-001` (Episemantic Markers), `UMB-EDM-001` (Edge Density Monitoring).
     - **Logic**: Parses the metadata layer to identify "Slag" (rejected logic) or "Isolated Knowledge" (entropy).
 
-2.  **Detection (Analysis)**:
+2. **Detection (Analysis)**:
     - **Engines**: `GVRN.SIVC.001` (Self-Integrity Validation Core), `AOP-SEC-001` (Security Audit).
     - **Metric**: Calculates a **Threat Score $[T_s]$** based on architectural entropy and deviation from **The Forge
+
       Ground Truth**.
 
-3.  **Assessment (Triage)**:
+3. **Assessment (Triage)**:
     - **Orchestrator**: `AOP-PERPETUAL-COHERENCE-001` (The Autonomous Healer).
     - **Decision Tree**:
       - $[T_s] < \text{Threshold}$: Autonomous auto-remediation (Refactoring).
       - $[T_s] > \text{Threshold}$: Deployment Halt + Execution of **Dissonance Quest**.
 
-4.  **Response (Healing)**:
+4. **Response (Healing)**:
     - **Mechanisms**: `AOP-CC-001` (Crystalline Cognition) for re-synthesis, `GVRN.PROT.Sentinel` for structural
+
       lockouts.
+
     - **Result**: Knowledge "Re-crystallization" or code hardening via `AOP-RML-001` (Recursive Meta-Learning).
 
 ---

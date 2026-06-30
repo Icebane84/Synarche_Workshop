@@ -1,31 +1,44 @@
 # GVRN.Metric.Elegance (The Algorithmic Elegance Score)
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Metric.Elegance` | The Sovereign ID. |
-| **Official Name** | `GVRN.Metric.Elegance.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `EVALUATES: Engineering_Elegance, SYNERGY: METRIC-AES-002` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Metric.Elegance` | The Sovereign ID. |
+| **Official Name** | `GVRN.Metric.Elegance.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `EVALUATES: Engineering_Elegance, SYNERGY: METRIC-AES-002` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-## **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -46,7 +59,6 @@ Flow** of a solution. It is the tool used to determine if a Coder has ascended t
 ## **II. ⚖️ The Elegance Rubric**
 
 | Criterion       | Dimension | Low (1-3)                | Mid (4-7)                   | High (8-10)                         |
-| :-------------- | :-------- | :----------------------- | :-------------------------- | :---------------------------------- |
 | **Conciseness** | Parsimony | Verbose; redundant.      | Clean; standard.            | **"Code Haiku"**; maximal impact.   |
 | **Ingenuity**   | Insight   | Brute force; copy-paste. | Well-applied best practice. | **Paradigm Shift**; lateral genius. |
 | **Readability** | Narrative | Requires deciphering.    | Clear names; standard flow. | **Self-Documenting Prose**.         |

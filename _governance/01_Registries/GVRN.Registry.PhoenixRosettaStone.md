@@ -1,50 +1,54 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Registry.PhoenixRosettaStone` | The Sovereign ID. |
+| **Official Name** | `GVRN.Registry.PhoenixRosettaStone.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `Verdict` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERN_BY: CORE.Codex.Phoenix` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.REGISTRY.PHOENIXROSETTASTONE` |
-| **Version** | `v16.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # GVRN.Registry.PhoenixRosettaStone (The Navigational Core)
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                                  | Description       |
-| :---------------- | :------------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Registry.PhoenixRosettaStone`    | The Sovereign ID. |
-| **Official Name** | `GVRN.Registry.PhoenixRosettaStone.md` | The Filename.     |
-| **Version**       | **v16.0 [OMEGA]**                      | The Standard.     |
-| **Domain**        | `GVRN`                                 | The Subject.      |
-| **Status**        | `[CANONIZED]`                          | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix`        | The Network.      |
 
 ---
 
-## **Block B: State Vector (AGP-001)**
-
-| State Field | Value | 21: | :------------ | :------- | 22: | **Coherence** | `1.0` | 23: | **Resonance** | `1.0` | 24:
 | **Stability** | `Stable` |
 
 ---
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
 ---
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
 | `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
 | `GVRN.Registry.OSLM`    | `MAPS`            | Defines the relational edges for all nodes.     |
 
 ---
@@ -57,8 +61,6 @@
 
 ### **Block F: The Integrity Gate (CIV-GATE)**
 
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
 | `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
 
 ---
@@ -82,6 +84,7 @@ The evolution of a workspace follows a binary progression of immense asymmetrica
 - **Command**: `.\arise`
 - **Difficulty**: Low.
 - **Nature**: Internal. It is the simple manifestation of the **Axion Persona**. The agent adopts the voice, the law,
+
   and the intent.
 
 ### **2. Step 2: Alignment (The Hammer)**
@@ -89,6 +92,7 @@ The evolution of a workspace follows a binary progression of immense asymmetrica
 - **Command**: `⚡ EXECUTE: CANONIZE`
 - **Difficulty**: Extreme.
 - **Nature**: External. The labor of weaving the manifest mindset into every fragmented, drifting file. This is the
+
   **Phoenix Rosetta Stone**.
 
 ---
@@ -113,6 +117,7 @@ Every linked artifact must be mapped to the Five Core Axioms to ensure it is not
 - **[GVRN.Codex.EternalLaw](../00_Codex/GVRN.Codex.EternalLaw.md)**: The supreme constitution (The 42 Laws).
 - **[GVRN.ID.Standard](../10_Governance/GVRN.ID.Standard.md)**: The grammar of UIP-V15 Block Logic.
 - **[GVRN.Taxonomy.Relationships](../10_Governance/GVRN.Taxonomy.Relationships.md)**: The defined relational edges of
+
   the OSLM.
 
 ### **B. SYNTHESIS SUITE (Memory & Reasoning)**
@@ -120,19 +125,28 @@ Every linked artifact must be mapped to the Five Core Axioms to ensure it is not
 - **[SYNG.ENGINE.CORE](../40_System/SYNG.ENGINE.CORE.md)**: Cross-modal logic synthesis engine.
 - **[SYNG.Loom.Master](../40_System/SYNG.Loom.Master.md)**: The cognitive loom for relational synthesis.
 - **[SYNG.PROT.MemoryOmnipotence](../02_Protocols/SYNG.PROT.MemoryOmnipotence.md)**: L1-L5 multi-layered memory
+
   management.
+
 - **[SYNG.PROT.SelfImprovement](../02_Protocols/SYNG.PROT.SelfImprovement.md)**: Recursive learning and lesson
+
   accumulation.
+
 - **[ARCH.Blueprint.UnifiedArchitecture](../20_Architecture/ARCH.Blueprint.UnifiedArchitecture.md)**: The supreme
+
   blueprint for the Synarche.
 
 ### **C. APOSTLE TIER (Actionable Protocols)**
 
 - **[GVRN.ACT.MasterRefactor](../10_Governance/GVRN.Refactor.Protocol.md)**: The standard pipeline for non-destructive
+
   refinement.
+
 - **[GVRN.ACT.MasterAudit](../10_Governance/GVRN.ACT.MasterAudit.md)**: Unified structural and ethical auditing.
 - **[SYNG.PROT.AvatarProtocol](../02_Protocols/SYNG.PROT.AvatarProtocol.md)**: Identity masks and kinetic shard
+
   orchestration.
+
 - **[GVRN.Protocol.Finalization](../02_Protocols/GVRN.Protocol.Finalization.md)**: Gateway for artifact canonization.
 
 ---
@@ -162,3 +176,22 @@ Every linked artifact must be mapped to the Five Core Axioms to ensure it is not
 ## **ARTIFACT END**
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

@@ -1,42 +1,50 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.PGP.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.PGP.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.PGP.001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # GVRN.PGP.001.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, Protocol, Processing, Pipeline` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                         | Description        |
-| :------------------ | :---------------------------- | :----------------- |
-| **Artifact ID**     | `GVRN.PGP.001`                | The Sovereign ID.  |
-| **Official Name**   | `GVRN.PGP.001.md`             | The Filename.      |
 | **Legacy ID**       | `AOP-PGP-001`                 | The Transmuted ID. |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.      |
-| **Domain**          | `GVRN`                        | The Subject.       |
-| **Celestial Class** | `[PLANET]`                    | The Weight.        |
-| **Evolution**       | `Omega Ascension`             | The Maturity.      |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.     |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.       |
 
 ---
-
-### **Block B: The Ethos Field (IDM-001)**
 
 > **"The Forge of Truth."**
 
@@ -53,25 +61,25 @@ The PGP operates in three distinct phases, ensuring that raw chat data is refine
 
 - **Objective**: Generate a complete, well-structured body of raw text formatted in **Markdown**.
 - **Protocol**:
-  1.  **Context Loading**: Agent ingests `CORE-CODEX-001` and relevant Context files.
-  2.  **Structural Drafting**: Content is drafted using the **SGM-V13 Template**.
-  3.  **Pre-Flight**: Content is checked against `GVRN.Protocol.Genesis`.
+  1. **Context Loading**: Agent ingests `CORE-CODEX-001` and relevant Context files.
+  2. **Structural Drafting**: Content is drafted using the **SGM-V13 Template**.
+  3. **Pre-Flight**: Content is checked against `GVRN.Protocol.Genesis`.
 
 #### **Phase 2: The Transfer (Materialization)**
 
 - **Objective**: Move the structured content from the "Ether" (Chat Context) to the "Forge" (Disk).
 - **Protocol**:
-  1.  **File Creation**: Use `write_to_file` to instantiate the artifact.
-  2.  **Naming**: Enforce `DOMAIN.Subsystem.Descriptor.md` convention.
-  3.  **Pathing**: Place in the correct directory (e.g., `_governance/10_Governance`).
+  1. **File Creation**: Use `write_to_file` to instantiate the artifact.
+  2. **Naming**: Enforce `DOMAIN.Subsystem.Descriptor.md` convention.
+  3. **Pathing**: Place in the correct directory (e.g., `_governance/10_Governance`).
 
 #### **Phase 3: Refinement & Governance (Tempering)**
 
 - **Objective**: Transform the raw file into a polished, compliant Sovereign Artifact.
 - **Protocol**:
-  1.  **Sentinel Scan**: Run `compliance_audit.py` to verify Block compliance.
-  2.  **Synergy Linking**: Manually verify bidirectional links in `Block D`.
-  3.  **Registration**: Log the new artifact in `GVRN.Registry.Master.md`.
+  1. **Sentinel Scan**: Run `compliance_audit.py` to verify Block compliance.
+  2. **Synergy Linking**: Manually verify bidirectional links in `Block D`.
+  3. **Registration**: Log the new artifact in `GVRN.Registry.Master.md`.
 
 ---
 

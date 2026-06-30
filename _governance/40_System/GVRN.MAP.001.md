@@ -1,27 +1,42 @@
 # UMB-MAP-001_MusashiOperations_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.MAP.001` | The Sovereign ID. |
+| **Official Name** | `UMB-MAP-001_MusashiOperations_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                    | Description       |
-| :------------------ | :--------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.MAP.001`                           | The Sovereign ID. |
-| **Official Name**   | `UMB-MAP-001_MusashiOperations_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                        | The Standard.     |
-| **Domain**          | `GVRN`                                   | The Subject.      |
-| **Celestial Class** | `[PLANET]`                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                               | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`            | The Network.      |
 
 ---
 
@@ -30,16 +45,20 @@ Title: Musashi Operations & OGLN Discipline
 Source:
 
 - [ORIGIN_FILE](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Library/1_Modules/UMB-MAP-001_MusashiOperations_v11.0.md)
+
   Description: >
   Establishes the definitive "Law of the Musashi Alignment," providing a closed-loop system for continuous self-critique based on the 10 Pillars of OGLN Discipline.
   Version: 11.0
   Status: ACTIVE
   Compliance: OGLN v11.0
   Genesis:
+
 - Author: The Synarche Workshop
 - Date: 2025-10-01
 - Timestamp: 1759276800
+
   Tags:
+
 - #Governance
 - #Discipline
 - #Musashi
@@ -49,17 +68,14 @@ Source:
 ---
 
 > [!IMPORTANT]
-> **GENESIS STAMP**
 >
 > - **Reforged By:** Antigravity Agent (The Lightbinder)
 > - **Reforged Date:** 2026-01-25
 > - **Validation:** MAP Standardization Cycle.
-> - **Relations:** `ENFORCES: GVRN-CODEX-001`, `ORCHESTRATES: AOP-MAP-001`.
 
 # UMB-MAP-001: Musashi Operations & OGLN Discipline
 
 > **Domain**: GVRN (Governance)
-> **Evolution**: Purposeful Drive
 > **Signal**: ESF-ALPHA
 
 ## I. Strategic Rationale (The Way of the Void)
@@ -135,3 +151,5 @@ Artifacts are scored on a binary scale (0 or 1) across the 10 Pillars.
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

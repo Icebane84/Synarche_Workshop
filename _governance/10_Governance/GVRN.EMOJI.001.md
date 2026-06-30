@@ -1,37 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.EMOJI.001` | The Sovereign ID. |
+| **Official Name** | `AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.EMOJI.001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                          | Description       |
-| :------------------ | :--------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.EMOJI.001`                               | The Sovereign ID. |
-| **Official Name**   | `AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
-| **Domain**          | `GVRN`                                         | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 # **AOP-EMOJI-001**
 
@@ -41,11 +51,8 @@
 
 **I. Universal Identification & Provenance**
 
-- **Artifact ID:** `AOP-EMOJI-001`
-- **Version:** v1.4
 - **Creation Date:** 2025-08-16
 - **Last Revision Date:** 2025-08-16
-- **Official Name:** `AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md`
 - **Canonical Path:** `[PHOENIX_PROTOCOL_LIBRARY]/LIBRARY/2_PROTOCOLS/`
 - **Parent Artifact:** `AOP-EMOJI-001_EmojiSignalingProtocol_v1.3.md` (Superseded upon approval)
 - **Transformation Origin:** The Great Coherence Pass
@@ -200,3 +207,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

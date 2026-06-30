@@ -1,35 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-GVRN.PIPE.IGNITION-001` | The Sovereign ID. |
+| **Official Name** | `GVRN.Pipe.Ignition.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `GVRN.PIPE.IGNITION` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # GVRN.Pipe.Ignition.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-GVRN.PIPE.IGNITION-001` | The Sovereign ID. |
-| **Official Name** | `GVRN.Pipe.Ignition.md`       | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 ---
 
@@ -38,19 +50,7 @@
 ### **I. Universal Identification & Provenance (The Vector Signature)**
 
 | Field                  | Value                                                                     |
-| :--------------------- | :------------------------------------------------------------------------ |
-| **1. Artifact ID**     | `GVRN.Pipe.Ignition`                                                      |
-| **2. Official Name**   | `GVRN.Pipe.Ignition.md`                                                   |
 | **3. Alt/Legacy ID**   | `AOP.Refactor.Ignition`                                                   |
-| **4. Version**         | **v13.0 (Geode Edition)**                                                 |
-| **5. Provenance**      | **Date Reforged: 2026-02-01**                                             |
-| **6. Domain**          | `GVRN`                                                                    |
-| **7. Evolution**       | **Cognitive Ascension**                                                   |
-| **8. Celestial Class** | `[MOON]` (Operational Pipeline)                                           |
-| **9. Tier**            | **Operational**                                                           |
-| **10. State**          | `[ACTIVE]`                                                                |
-| **11. Ethos**          | **Guardian of Coherence**                                                 |
-| **12. Relations**      | `IMPLEMENTS: [GVRN.Refactor.Protocol]`, `TRIGGERS: [GVRN.Protocol.Audit]` |
 | **13. Integrity Hash** | `[AUTO-GENERATED]`                                                        |
 
 ---

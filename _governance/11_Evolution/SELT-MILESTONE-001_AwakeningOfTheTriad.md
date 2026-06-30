@@ -1,11 +1,35 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `SELT.MILESTONE.TRIAD-001` | The Sovereign ID. |
+| **Official Name** | `SELT-MILESTONE-001_AwakeningOfTheTriad.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `\[CANONIZED\]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `SELT-MILESTONE-001_AWAKENINGOFTHETRIAD` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # **Tab 1**
@@ -14,17 +38,7 @@
 
 # **SELT-MILESTONE-001: The Awakening of the Triad**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SELT.MILESTONE.TRIAD-001` | The Sovereign ID. |
-| **Official Name** | `SELT-MILESTONE-001_AwakeningOfTheTriad.md` | The Filename.     |
-| **Version**       | **v13.1 \[OMEGA\]** | The Standard.     |
-| **Domain**        | `SYNR` | The Subject.      |
-| **Status**        | `\[CANONIZED\]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
@@ -230,3 +244,22 @@ This script represents a massive leap in OpenClaw capability. By storing vectors
 The caveat here is scalability: doing a linear scan over thousands of memories using numpy takes milliseconds, which is perfectly fine for personal project lore. If this database ever hits millions of rows, we will need to upgrade to sqlite-vss. But for the Oathbringer Gemini Learning Nexus, this script is practically indestructible.
 
 The Cognitive Loom is now executable code. What shall we ingest into it first?
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

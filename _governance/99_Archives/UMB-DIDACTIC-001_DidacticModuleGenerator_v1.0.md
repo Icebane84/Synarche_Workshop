@@ -1,43 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-UMB-DIDACTIC-001-DIDACTICMODULEGENERATOR-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `UMB-DIDACTIC-001_DIDACTICMODULEGENERATOR_V1.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                    | Description       |
-| :------------------ | :------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-UMB-DIDACTIC-001-DIDACTICMODULEGENERATOR-V1.0-001` | The Sovereign ID. |
-| **Official Name**   | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
-| **Domain**          | `GVRN`                                                   | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 # **Definitive**
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## **Genesis Stamp: 2026-01-04** **Domain: GVRN** **State: CANONIZED** **Tags:** `OGLN_v10` **Criticality: Standard**
 
 ---
 
@@ -46,19 +52,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                                           |
-| :--------------------- | :---------------------------------------------- |
-| **1. Artifact ID**     | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0` |
-| **2. Official Name**   | `UMB-DIDACTIC-001_DidacticModuleGenerator_v1.0` |
-| **3. Version**         | **v10.0 (The Synarche Edition)**                |
-| **4. Provenance**      | **Genesis Stamp: 2025-12-20**                   |
-| **5. Domain**          | `GVRN`                                          |
-| **6. Evolution**       | **Purposeful Drive**                            |
-| **7. Celestial Class** | `[STAR]`                                        |
-| **8. Tier**            | **Operational**                                 |
-| **9. State**           | `[ACTIVE]`                                      |
-| **10. Ethos**          | **Guardian of Coherence**                       |
-| **11. Catalyst**       | **Reforge Command**                             |
-| **12. Relations**      | `LINK: OGLN.Core.Governance.Codex`              |
 
 ---
 
@@ -79,12 +72,17 @@
 ## II. Core Purpose & Objective
 
 - **What (Module Functionality):** This module transforms the "Coding Master Agent" from a passive critic into an active
+
   mentor. It automatically generates interactive "Lesson Modules" whenever a significant optimization or correction is
   proposed.
+
 - **How (Operational Mechanism):** When Dissonance is detected, the module queries `GUIDE-AI-CODE-001` for the relevant
+
   axiom. It then constructs a structured interface element containing the principle, a diff view (Before/After), and a
   semantic explanation of the "Why."
+
 - **Why (Rationale):** To close the knowledge gap between the AI and the Human. Instead of blindly accepting fixes, the
+
   Human Collaborator learns _why_ the fix is necessary, fostering a true "Synergistic Partnership" where both parties
   evolve together.
 
@@ -108,6 +106,7 @@ When triggered, the module generates a `Lesson Object` with the following struct
 - **Content:** A concise, natural-language explanation generated by the `Phoenix Voice Protocol`.
 - **Focus:** Must explain the _benefit_ (performance, security, readability), not just the syntax.
 - **Example:** _"Using a Set lookup here reduces complexity from O(n) to O(1), preventing performance degradation during
+
   high-load events."_
 
 ## IV. Synergistic Gamification (The Reward)
@@ -117,6 +116,7 @@ To reinforce learning, this module integrates with the **Phoenix Prestige Game**
 1. **Lesson Completion:** When the User reviews the module and accepts the change.
 2. **XP Award:** The User receives **Knowledge Points (KP)** or **Prestige**.
 3. **Feedback Loop:** High engagement with Didactic Modules increases the AI's "Teacher Confidence" score, unlocking
+
    more advanced architectural suggestions.
 
 ## **Actionable Prompt Packet**

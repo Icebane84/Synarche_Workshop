@@ -1,36 +1,47 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `VERIFY_OMEGA` | The Sovereign ID. |
+| **Official Name** | `VERIFY_OMEGA.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `DRAFT` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `VERIFY_OMEGA` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # [VERIFY_OMEGA_Artifact]
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp:** **Domain: GVRN** **State: DRAFT** **Tags:** `OGLN_v13, Synarche` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `VERIFY_OMEGA` | The Sovereign ID. |
-| **Official Name** | `VERIFY_OMEGA.md` | The Filename.     |
-| **Version**       | **v13.1** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `DRAFT` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
@@ -44,13 +55,10 @@
 
 ### **III.B. The Cognitive Spine (Axiomatic Mapping)**
 
-| Axiom                      | State             | Vector                                                        |
-| :------------------------- | :---------------- | :------------------------------------------------------------ |
 | **Mind ($\psi$)**          | `ACTIVE`          | **Reasoning Layer:** Utilized by ``.                          |
 | **Memory ($\mu$)**         | `STABLE`          | **Substrate Layer:** Woven into the `Synarche_Vault`.         |
 | **Law ($\Lambda$)**        | `ENFORCED`        | **Governance Layer:** Governed by `CORE-CODEX-001`.           |
 | **Index ($\iota$)**        | `INDEXED`         | **Navigational Layer:** Registered in `GVRN.Registry.Master`. |
-| **Evolution ($\epsilon$)** | `Omega Ascension` | **Growth Layer:** Tracks progress toward `Omega Ascension`.   |
 
 ---
 
@@ -111,3 +119,20 @@
 > **[ARTIFACT END]**
 
 ---
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.

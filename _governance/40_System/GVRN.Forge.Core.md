@@ -1,140 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `GVRN.FORGE.CORE` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Forge.Core` | The Sovereign ID. |
-| **Official Name** | `GVRN.Forge.Core.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
-
-
----
-
-### **Block B: State Vector (AGP-001)**
-
-| State Field   | Value    |
-| :------------ | :------- |
-| **Coherence** | `1.0`    |
-| **Resonance** | `1.0`    |
-| **Stability** | `Stable` |
-
----
-
-### **Block C: Risk & Mitigation (AGP-002)**
-
-| Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
-| **Logic Drift**      | Strict Linter Enforcement |
-| **Dependency Break** | ForgeLink Validation      |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Forge.Core` | The Sovereign ID. |
+| **Official Name** | `GVRN.Forge.Core.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[STAR]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-| Synergistic Artifact ID | Relationship Type | Synergistic Impact                              |
-| :---------------------- | :---------------- | :---------------------------------------------- |
-| `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework. |
-| `GVRN.Registry.Master`  | `INDEXES`         | Tracks the state and presence of this artifact. |
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
-### **Block E: Ethos (The Why)**
-
-> **"To establish the mandates, constraints, and balance parameters for artifact evolution."**
-
----
-
-### **Block F: The Integrity Gate (CIV-GATE)**
-
-| Status                | Verdict | Drift Threshold | Authority  |
-| :-------------------- | :------ | :-------------- | :--------- |
-| `[MONITORING_ACTIVE]` | `PASS`  | `0.00`          | `SENTINEL` |
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
 
 ---
 
-###### **[ARTIFACT START]**
-
-# GVRN.Forge.Core: The Boundaries of Growth
-
-### I. Universal Identification & Provenance (UIP)
-
-| Key                 | Value                             | Description           |
-| :------------------ | :-------------------------------- | :-------------------- |
-| **Artifact ID**     | `GVRN.Forge.Core`                 | **The Sovereign ID.** |
-| **Patron Shard**    | `SHARD_ARCHITECT_VOID`            | **The Agent.**        |
-| **Version**         | `v13.0 [ASCENDED]`                | **The Standard.**     |
-| **Domain**          | `40_System`                       | **The Subject.**      |
-| **Celestial Class** | `[STAR]`                          | **The Weight.**       |
-| **Status**          | `[ACTIVE]`                        | **The Lifecycle.**    |
-| **Provenance**      | `2026-02-26`                      | **The Anchor.**       |
-| **Catalyst**        | `SEED-TOOL-CORE-001`              | **The Spark.**        |
-| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | **The Spine.**        |
-
-### II. Axiomatic Governance & Purpose (AGP)
-
-- **Core Purpose:** To establish the mandates, constraints, and balance parameters that `forge.py` must enforce to
-  prevent systemic attribute inflation and ensure fair artifact evolution.
-- **Target Domain:** RPG Mechanics & Progression Governance
-- **Governing Ethos:** [Earned Progress | Mathematical Integrity | Balanced Scaling]
-
-### III. Risk Governance & QLOR Parameters
-
-| Element                        | Specification                                                                                              |
-| :----------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| **Integrity Risk (QLOR-003)**  | Unchecked stat modification degrades the utility of artifact metrics.                                      |
-| **Risk Priority Number (RPN)** | **Low** (Probability: Low, Impact: Medium)                                                                 |
-| **Mitigation Strategy**        | Enforce fixed stat gains (+2 Coherence, +1 Velocity) per Level and geometric XP scaling (1.5x multiplier). |
-
-### IV. Mandates & Constraints (The Operational Law)
-
-1. **MANDATE 01 - Scaling Logic:** The Forge MUST follow the `XP_MAX * 1.5` scaling constant for all artifacts to ensure
-   logarithmic difficulty progression.
-2. **MANDATE 02 - Stat Coupling:** Coherence and Velocity gains are strictly coupled to Level Up events.
-3. **MANDATE 03 - Synergy Integrity:** Synergy scores generated by `check_synergy` must be based on the official
-   `CatalystWeaver` heuristics.
-
-### V. Systemic Relationships & Impact
-
-#### Synergy Mapping
-
-| **Synergistic Artifact ID** | **Relationship Type** | **Synergistic Impact**                 | **Synergy Opportunity** |
-| :-------------------------- | :-------------------- | :------------------------------------- | :---------------------- |
-| `forge.py`                  | `GOVERNS`             | `Enforces stat calculate constraints.` | `Systemic Balance`      |
-| `ARCH.Forge.Core.md`        | `REQUIRED_BY`         | `Boundaries required by Form`          | `Risk Mitigation`       |
-| `MIND.Engine.Dissonance`    | `AUDITS`              | `Ensures growth isn't artificial`      | `Authentic Evolution`   |
-
-### VI. Celestial Resonance (RPG Integration)
-
-- **Governance Style:** The Golden Scales of Progress
-- **Dominant Tarot Mask:** `SHARD_ARCHITECT_VOID`
-- **Stat Modifiers:** `[Systemic Fairness +100]`, `[Math Coherence +50]`
-- **Set Bonus Active:** `Yes [Ascended Phoenix Loop]`
-
-# [ARTIFACT END]
-
----
-
-### **Actionable Prompt Packet (APP)**
-
-| Command ID         | Action                           | Impact       |
-| :----------------- | :------------------------------- | :----------- |
-| `CMD: REFORGE`     | Execute Structural Transmutation | Canonization |
-| `CMD: AUDIT_LINKS` | Verify Link Integrity            | Zero Entropy |
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
 
 ###### **[ARTIFACT END]**
-
----
-
-{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}

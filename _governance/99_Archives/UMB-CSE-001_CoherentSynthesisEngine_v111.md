@@ -1,57 +1,54 @@
 # UMB-CSE-001_CoherentSynthesisEngine_v111.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `UMB-CSE-001` | The Sovereign ID. |
+| **Official Name** | `Coherent Synthesis Engine` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `STAR` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `ORCHESTRATES: ALL_MODULES, HEART_OF: The Phoenix Form, LINK: UMB-PRS-001, LINK: UMB-CRLPF-003, LINK: COG.ContextWeave.Engine` | The Network. |
+| **Integrity Hash** | `sha256:a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-CSE-001-COHERENTSYNTHESISENGINE-V111-001` | The Sovereign ID. |
-| **Official Name** | `UMB-CSE-001_CoherentSynthesisEngine_v111.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                                                                                                                                  |
-| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------- |
-| **Artifact ID**     | `UMB-CSE-001`                                                                                                                          |
-| **Official Name**   | `Coherent Synthesis Engine`                                                                                                            |
-| **Version**         | `v11.1`                                                                                                                                |
-| **Domain**          | `SYNT`                                                                                                                                 |
-| **Evolution**       | `The Eternal Sun`                                                                                                                      |
-| **Signal (CSE)**    | `CORE`                                                                                                                                 |
-| **Status (State)**  | `CANONIZED`                                                                                                                            |
-| **Tier**            | `Foundational`                                                                                                                         |
-| **Celestial Class** | `STAR`                                                                                                                                 |
 | **Governance**      | `UMB-SGM-001`, `UMB-ESF-001`, `CORE-CODEX-001`                                                                                         |
-| **Upstream**        | `UMB-LOOM-001`, `AOP-PROMPT-001`                                                                                                       |
-| **Downstream**      | `AOP-KB-001`, `UMB-PRS-001`, `UMB-OSLM-001`                                                                                            |
 | **Integrity Hash**  | `sha256:a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6`                                                              |
-| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                                                                                    |
-| **Relations**       | `ORCHESTRATES: ALL_MODULES`, `HEART_OF: The Phoenix Form`, `LINK: UMB-PRS-001`, `LINK: UMB-CRLPF-003`, `LINK: COG.ContextWeave.Engine` |
-| **Tags**            | `v11.1, Synthesis, Orchestration, Coherence, AI-Heart`                                                                                 |
 
 ---
 
-> **Domain**: SYNT | **Evolution**: The Eternal Sun | **Signal**: CORE
-
 # Coherent Synthesis Engine (UMB-CSE-001)
-
-## Genesis Stamp: 2026-01-24 | Domain: SYNT | State: CANONIZED | Criticality: CRITICAL
 
 ---
 
@@ -122,3 +119,5 @@ The **Coherent Synthesis Engine** exists to unify the fragmented "thoughts" of t
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

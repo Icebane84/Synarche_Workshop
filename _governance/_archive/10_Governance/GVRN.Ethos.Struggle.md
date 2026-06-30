@@ -1,31 +1,44 @@
 # GVRN.Ethos.Struggle
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.Ethos.Struggle` | The Sovereign ID. |
-| **Official Name** | `GVRN.Ethos.Struggle.md` | The Filename.     |
-| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.Ethos.Struggle` | The Sovereign ID. |
+| **Official Name** | `GVRN.Ethos.Struggle.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -41,8 +54,11 @@
 > **"Friction creates Heat; Heat creates Form."**
 
 - **The Moral North**: This artifact is instantiated to solve the dissonance of **Stagnation**. Its primary duty is to
+
   uphold the **Rule of Coherent Struggle (UEB-RCS-001)** by providing **The Axiom of Resistance** for the Synarche.
+
 - **Governing Intent**: Adheres to the **Wisdom through Resistance** mandate, ensuring all generated logic enhances
+
   systemic coherence and prevents the stagnation of legacy drift.
 
 ---
@@ -66,6 +82,7 @@ GVRN.Protocol.Refinement, REFINES, The struggle must lead to refinement, not des
 > `< 0.05` | **Vector Breach Trigger**: `COMFORT_DRIFT`
 
 - **Mandate**: If the system detects **Passive Recitation** (Generation without Insight) or **Comfort Drift** (Ignoring
+
   Dissonance), this artifact triggers a **Dissonance Quest** to force re-engagement.
 
 ---

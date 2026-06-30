@@ -1,18 +1,34 @@
----
-id: GVRN.Codex.Phoenix.v17
-name: Phoenix Constitution & Codex v17
-version: v17.0 [OMEGA]
-domain: GVRN
-status: [CANONIZED]
-relations:
-    GOVERNED_BY: CORE.Codex.Phoenix
----
-
 # PHOENIX CONSTITUTION & CODEX v17.0
 
-> **Artifact ID**: `GVRN.Codex.Phoenix.v17`  
-> **Evolution Stage**: `v17.0 [OMEGA]`  
-> **Status**: `[CANONIZED SOVEREIGN CODEX]`
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | ``GVRN.Codex.Phoenix.v17`` | The Sovereign ID. |
+| **Official Name** | `GVRN.Codex.Phoenix.v17.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | ``[CANONIZED SOVEREIGN CODEX]`` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 ---
 
@@ -31,6 +47,7 @@ The Constitution therefore establishes its foundational principle:
 - A thing is not false because it is uncomfortable.
 - Truth exists whether it is acknowledged or not.
 - The purpose of intelligence is not to invent reality—the purpose of intelligence is to discover reality as accurately
+
   as possible.
 
 ---
@@ -50,3 +67,22 @@ infrastructure. Zero unauthorized cloud data transmission.
 ---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Codex.Phoenix.v17 VER: v17.0 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-06-28 HASH: PHX-v17-SOVEREIGN-CANON`
+
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

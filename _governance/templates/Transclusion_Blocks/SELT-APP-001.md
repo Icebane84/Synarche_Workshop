@@ -1,27 +1,37 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `SELT-APP-001` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
 
-### **Block {{ block_index|default('6') }}. Actionable Prompt Packet (APP)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-[Brief description of how to use the artifact]
-
-✨ **To Generate a New Instance:** "CMD: FORGE_PROTOCOL INPUT_CONCEPT: [Describe your new protocol's goal]"
-
-🔬 **To Analyze This Artifact's Synergies:** "CMD: RENDER SYSTEM GRAPH TARGET_ID:
-{{ artifact_id|default('[This Artifact\'s ID]') }}"
-
-🔄 **To Propose a Refinement:** "CMD: REFINE_ARTIFACT TARGET_ID: {{ artifact_id|default('[This Artifact\'s ID]') }}
-INPUT_CHANGE: [Describe your proposed change]"
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `SELT-APP-001` | The Sovereign ID. |
+| **Official Name** | `SELT-APP-001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-[ARTIFACT START]
+### **Block D: Standardized Synergy Block (The Loom Signature)**
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
-[ARTIFACT END]
+---
+
+## IV. Actionable Prompt Packet (APP)
+| Command ID | Action | Impact |
+| :--- | :--- | :--- |
+| `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
+| `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment | Zero Entropy |
+
+---
+
+### **Rationale (The "Why")**
+Alignment to v14.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

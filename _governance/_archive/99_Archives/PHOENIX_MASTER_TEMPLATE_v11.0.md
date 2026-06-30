@@ -1,32 +1,44 @@
 # PHOENIX_MASTER_TEMPLATE_v11.0.md
 
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key                 | Value                        | Description       |
-| :------------------ | :--------------------------- | :---------------- |
-| **Artifact ID**     | `[RNC-ID]`                   | The Sovereign ID. |
-| **Official Name**   | `[Artifact Name]`            | The Filename.     |
-| **Version**         | **v13.0 [OMEGA]**            | The Standard.     |
-| **Domain**          | `GVRN`                       | The Subject.      |
-| **Celestial Class** | `[STAR/MOON/PLANET]`         | The Weight.       |
-| **Evolution**       | `Purposeful Drive`           | The Maturity.     |
-| **Status**          | `[ACTIVE]`                   | The Lifecycle.    |
-| **Relations**       | `[Primary Synergistic Link]` | The Network.      |
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `[RNC-ID]` | The Sovereign ID. |
+| **Official Name** | `[Artifact Name]` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[STAR/MOON/PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `[Primary Synergistic Link]` | The Network. |
+| **Integrity Hash** | `sha256:[64-char-hex-hash]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key                 | Value                        | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 

@@ -1,36 +1,48 @@
 # UMB-OSLM-001_PPLGraphOutline_v11.0.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-UMB-OSLM-001-PPLGRAPHOUTLINE-V11.0-001` | The Sovereign ID. |
+| **Official Name** | `UMB-OSLM-001_PPLGraphOutline_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-OSLM-001-PPLGRAPHOUTLINE-V11.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-OSLM-001_PPLGraphOutline_v11.0.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key           | Value           |
-| :------------ | :-------------- |
-| **Module ID** | `UMB-OSLM-001`  |
-| **Version**   | `v11.1`         |
-| **Status**    | `ACTIVE`        |
 | **Type**      | `Master Matrix` |
 
 ---
@@ -41,8 +53,6 @@
 
 ## V. Master Synergistic Links Matrix
 
-| Source Artifact                       | Relationship      | Target Artifact     | Description                                                                                                |
-| :------------------------------------ | :---------------- | :------------------ | :--------------------------------------------------------------------------------------------------------- |
 | `UMB-CSE-001`                         | Synergistic Link  | `GUCA-CWA-001`      | The CSE directly utilizes the Context Weave Command for graph analysis.                                    |
 | `GUCA-CWA-001`                        | Synergistic Link  | `UMB-CSE-001`       | The CSE directly utilizes the Context Weave Command for graph analysis.                                    |
 | `UWB-NDR-001`                         | Synergistic Link  | `GUCA-MAP-001`      | Non-destructive refinement workflow utilizes Musashi Audit for structural validation.                      |
@@ -143,3 +153,5 @@
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

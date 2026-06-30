@@ -1,31 +1,44 @@
 # code-style-guide.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `ARCH-CODE-STYLE-GUIDE-001` | The Sovereign ID. |
-| **Official Name** | `LEGACY-code-style-guide.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `ARCH` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `ARCH-CODE-STYLE-GUIDE-001` | The Sovereign ID. |
+| **Official Name** | `LEGACY-code-style-guide.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `ARCH` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -62,13 +75,17 @@ maintain **Zero Entropy**.
 ### 1.2 The Vector Signature (UIP v11.0 Enhanced)
 
 - **Mandatory Fields**: `Artifact ID`, `Official Name`, `Version` (v11.0+), `Domain`, `Evolution`, `Signal (ESF)`,
+
   `Status`, `Tier`, `Celestial Class`.
+
 - **H1 Singularity**: The document must have exactly one H1 (`# Title`), typically following the UIP.
 
 ### 1.3 Structural Geometry
 
 - **Indentation**: STRICT 4-space indentation for all lists and sub-lists. 2-space indentation is a compliance
+
   violation.
+
 - **Sectioning**:
   - Use Roman Numerals for top-level headers (e.g., `## I. Overview`).
   - Use decimal notation for sub-headers (e.g., `### 1.1 Details`).
@@ -77,7 +94,9 @@ maintain **Zero Entropy**.
 ### 1.4 Actionable Prompt Packet (APP)
 
 - **Location**: The final section of the document, labeled `IV. Actionable Prompt Packet (APP)` (or appropriate Roman
+
   Numeral).
+
 - **Structure**: Must contain a table or blockquote defining specific `CMD:` triggers or `⚡ EXECUTE:` actions.
 - **Marker**: Must end with `###### **[ARTIFACT END]**`.
 

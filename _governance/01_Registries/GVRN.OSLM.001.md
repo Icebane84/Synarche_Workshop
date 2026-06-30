@@ -1,36 +1,42 @@
 # UMB-OSLM-001_MasterArtifactRegistry_v11.0.md
 
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.OSLM.001` | The Sovereign ID. |
+| **Official Name** | `UMB-OSLM-001_MasterArtifactRegistry_v11.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Cognitive Ascension` | The Maturity. |
+| **Status (State)** | `Dependencies` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
-###### **[ARTIFACT START]**
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-### **Block A: The Identification Lock (UIP-V13)**
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
 
 | Key                 | Value                                          | Description       |
-| :------------------ | :--------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN.OSLM.001`                                | The Sovereign ID. |
-| **Official Name**   | `UMB-OSLM-001_MasterArtifactRegistry_v11.0.md` | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                              | The Standard.     |
-| **Domain**          | `GVRN`                                         | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                     | The Weight.       |
-| **Evolution**       | `Omega Ascension`                              | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                     | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                  | The Network.      |
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Key                | Value                                                               |
-| :----------------- | :------------------------------------------------------------------ |
-| **Module ID**      | `UMB-OSLM-001`                                                      |
-| **Version**        | `v11.0`                                                             |
-| **Evolution**      | **Cognitive Ascension**                                             |
-| **Status**         | `ACTIVE`                                                            |
 | **Type**           | `Registry`                                                          |
 | **Classification** | `Star`                                                              |
 | **Authors**        | `System`                                                            |
@@ -39,35 +45,25 @@
 | **Authority**      | `CORE-CODEX-001`                                                    |
 | **Master Path**    | `_Desktop_Vault/Phoenix/Documentation/Library` (Crystalline Galaxy) |
 | **Local Path**     | `Synarche_Workspace/_governance` (The Forge)                        |
-| **Tags**           | `Registry, Index, Truth`                                            |
 
 ---
 
 # Master Artifact Registry (The Library)
-
-**Genesis Stamp**: 2026-01-19 | **Domain**: PHOENIX | **State**: ACTIVE
 
 > [!NOTE] This document is the "Immutable Chronicle" of the Phoenix Protocol. It lists every legally recognized artifact
 > within the system.
 
 ## I. The Core (Star Class)
 
-| Module ID         | Title                                                                                                | Version                       | Status    | Dependencies |
-| :---------------- | :--------------------------------------------------------------------------------------------------- | :---------------------------- | :-------- | :----------- |
 | `CORE-CODEX-001`  | [The Phoenix Codex (Supreme Law)](CORE-CODEX-001_ThePhoenixCodex_v11.2.md)                           | `v11.2`                       | `ACTIVE`  | `None`       |
 | `CODEX-PRIME-001` | [CODEX-PRIME-001: The Architect's Codex (v1.0)](_archive/CODEX-PRIME-001_TheArchitectsCodex_v1.0.md) | `v1.0 (Definitive Synthesis)` | `Unknown` | `None`       |
 
 ## II. Protocols (Moon Class)
 
-| Module ID                                       | Title                                                                                                                            | Version                                | Status    | Dependencies |
-| :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------- | :-------- | :----------- |
 | `AOP-AI-PROTO-001`                              | [AOP-AI-PROTO-001: Artificial Intelligence Protocol (v3.0)](AOP-AI-PROTO-001_AIProtocol.md)                                      | `v3.0 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
-| `AOP-ARC-001_ArchivalSupersessionProtocol_v5.0` | [AOP-ARC-001: Archival & Supersession Protocol](AOP-ARC-001_ArchivalSupersessionProtocol_v5.0.md)                                | `v5.1 (Catalyst Infused)`              | `Unknown` | `None`       |
 | `AOP-ARCH-GAZE-001`                             | [AOP-ARCH-GAZE-001: The Architect's Gaze (v2.1)](AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md)                               | `v2.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
-| `AOP-AVATAR-001`                                | [AOP-AVATAR-001: Synarche Avatar Protocol (v1.1)](AOP-AVATAR-001_SynarcheAvatarProtocol_v1.1.md)                                 | `v1.1 (Catalyst Infused)`              | `Unknown` | `None`       |
 | `AOP-CC-001`                                    | [AOP-CC-001: Crystalline Cognition Protocol (v1.0)](AOP-CC-001_CrystallineCognition_v1.0.md)                                     | `v1.1 (Refraction Edition)`            | `Unknown` | `None`       |
 | `AOP-CDE-001`                                   | [Creative Divergence Engine (AOP-CDE-001)](AOP-CDE-001_CreativeDivergenceEngine_v2.0.md)                                         | `v2.0 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
-| `AOP-EMOJI-001`                                 | [AOP-EMOJI-001: Emoji Signaling Protocol (v1.4)](AOP-EMOJI-001_EmojiSignalingProtocol_v1.4.md)                                   | `v1.4`                                 | `ACTIVE`  | `None`       |
 | `AOP-FORGE-ORCH-001`                            | [AOP-FORGE-ORCH-001: Master Code Generation Orchestrator (v3.1)](AOP-FORGE-ORCH-001_Master_Code_Generation_Orchestrator_v3.0.md) | `v3.1 (Hephaestus Ascended Alignment)` | `Unknown` | `None`       |
 | `AOP-GEN-001`                                   | [AOP-GEN-INGEST-001: Genesis Ingestion Process](AOP-GEN-001_GenesisIngestionProcess_v11.0.md)                                    | `v11.0`                                | `ACTIVE`  | `None`       |
 | `AOP-MAP-001`                                   | [AOP-MAP-001: Disciplined Execution Playbook (v2.0)](AOP-MAP-001_DisciplinedExecutionPlaybook_v2.0.md)                           | `v2.0 (Hephaestus Ascended Edition)`   | `Unknown` | `None`       |
@@ -167,3 +163,5 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, G
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+###### **[ARTIFACT END]**

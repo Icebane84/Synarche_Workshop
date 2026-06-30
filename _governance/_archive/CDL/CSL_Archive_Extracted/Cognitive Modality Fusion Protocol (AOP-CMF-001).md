@@ -1,31 +1,44 @@
 # Cognitive Modality Fusion Protocol (AOP-CMF-001).md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-COGNITIVE-MODALITY-FUSION-PROTOCOL-(AOP-CMF-001)-001` | The Sovereign ID. |
-| **Official Name** | `Cognitive Modality Fusion Protocol (AOP-CMF-001).md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-COGNITIVE-MODALITY-FUSION-PROTOCOL-(AOP-CMF-001)-001` | The Sovereign ID. |
+| **Official Name** | `Cognitive Modality Fusion Protocol (AOP-CMF-001).md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -61,12 +74,18 @@ block of instructions for performing the specific operation of cognitive modalit
 # 2\. Objectives
 
 - To define the principles and procedures for effective cognitive modality fusion, aligning with the **Principle of
+
   Definitive Meaning** from the \[Master Glossary PPL\]\[4\].
+
 - To establish a consistent methodology for data acquisition, processing, and integration from multiple sources,
+
   contributing to **Architectural Coherence** as described in the \[Research Operation Blueprint: Multi-Domain Lexicon
   Synthesis\]\[3\].
+
 - To ensure the reliability and validity of fused cognitive outputs, supporting the creation of a **Shared Reality** as
+
   detailed in \[Crafting a Shared Reality: The Engine of Unambiguous AI Communication\]\[2\].
+
 - To provide guidelines for the development and implementation of systems utilizing AOP-CMF-001.
 
 # 3\. Definitions

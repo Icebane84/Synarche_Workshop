@@ -1,57 +1,54 @@
 # UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v111.md
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+### **Block A: The Identification Lock (UIP-V14)**
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `UMB-DSA-001` | The Sovereign ID. |
+| **Official Name** | `Documentation Suite Architect Blueprint` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `STAR` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `LINK: UMB-PRS-001, SPECIFIES: DSA_Engine, FEEDS: AISTF` | The Network. |
+| **Integrity Hash** | `sha256:111222333444555666777888999abcdef111222333444555666777888999a` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+> **Signal**: OMEGA
 
 ---
 
 ###### **[ARTIFACT START]**
 
-## **Block A: The Identification Lock (UIP-V15)**
-
 | Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-UMB-DSA-001-DOCUMENTATIONSUITEARCHITECTBLUEPRINT-V111-001` | The Sovereign ID. |
-| **Official Name** | `UMB-DSA-001_DocumentationSuiteArchitectBlueprint_v111.md` | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 
 ---
 
 # Universal Identification & Provenance (UIP)
 
 | Attribute           | Value                                                                  |
-| :------------------ | :--------------------------------------------------------------------- |
-| **Artifact ID**     | `UMB-DSA-001`                                                          |
-| **Official Name**   | `Documentation Suite Architect Blueprint`                              |
-| **Version**         | `v11.1`                                                                |
-| **Domain**          | `SYNT`                                                                 |
-| **Evolution**       | `Conceptual Engineering`                                               |
-| **Signal (DSA)**    | `BLUEPRINT`                                                            |
-| **Status (State)**  | `CANONIZED`                                                            |
-| **Tier**            | `Strategic`                                                            |
-| **Celestial Class** | `STAR`                                                                 |
 | **Governance**      | `UMB-SGM-001`                                                          |
-| **Upstream**        | `AOP-DSA-001`, `UMB-LOOM-001`                                          |
-| **Downstream**      | `GUCA-DSA-001`                                                         |
 | **Integrity Hash**  | `sha256:111222333444555666777888999abcdef111222333444555666777888999a` |
-| **Provenance**      | `Genesis Stamp: 2026-01-24 \| Reforged: 2026-01-24`                    |
-| **Relations**       | `LINK: UMB-PRS-001`, `SPECIFIES: DSA_Engine`, `FEEDS: AISTF`           |
-| **Tags**            | `v11.1, Blueprint, Logic, Engine, Specifications`                      |
 
 ---
 
-> **Domain**: SYNT | **Evolution**: Conceptual Engineering | **Signal**: BLUEPRINT
-
 # Documentation Suite Architect Blueprint (UMB-DSA-001)
-
-## Genesis Stamp: 2026-01-24 | Domain: SYNT | State: CANONIZED | Criticality: HIGH
 
 ---
 
@@ -106,3 +103,5 @@ This blueprint ensures the underlying logic of the DSA engine is transparent, te
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+###### **[ARTIFACT END]**

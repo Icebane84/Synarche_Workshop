@@ -1,43 +1,49 @@
----
 # Universal Identification & Provenance (UIP)
-| Key | Value |
+
+### **Block A: The Identification Lock (UIP-V14)**
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN-AOP-ARCH-GAZE-001-SYSTEMICIMPACTANALYSIS-V2.0-001` | The Sovereign ID. |
+| **Official Name** | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+
+---
+
+### **Block B: State Vector (AGP-001)**
+| State Field | Value |
 | :--- | :--- |
-| **Module ID** | `AOP-ARCH-GAZE-001_SYSTEMICIMPACTANALYSIS_V2.0` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
+
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
 ---
 
 # AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md
 
 > **Domain**: GVRN
-> **Evolution**: Omega Ascension
 > **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
 ###### **[ARTIFACT START]**
 
-### **Block A: The Identification Lock (UIP-V13)**
-
 | Key                 | Value                                                    | Description       |
-| :------------------ | :------------------------------------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-AOP-ARCH-GAZE-001-SYSTEMICIMPACTANALYSIS-V2.0-001` | The Sovereign ID. |
-| **Official Name**   | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.0.md`       | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**                                        | The Standard.     |
-| **Domain**          | `GVRN`                                                   | The Subject.      |
-| **Celestial Class** | `[PLANET]`                                               | The Weight.       |
-| **Evolution**       | `Omega Ascension`                                        | The Maturity.     |
-| **Status**          | `[ACTIVE]`                                               | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001`                            | The Network.      |
 
 # AOP-ARCH-GAZE-001: The Architect's Gaze (v2.1)
-
-> **Domain**: GVRN (Governance) **Evolution**: Pending **Signal**: ESF-ALPHA
-
-## Genesis Stamp: 2026-01-04 | Domain: GVRN | State: CANONIZED | Criticality: Standard
 
 **Tags:** `OGLN_v10`, `Analysis`, `Risk`
 
@@ -48,19 +54,6 @@
 #### The Chronos Lock & Axiomatic Metadata Layer
 
 | Field                  | Value                                              |
-| :--------------------- | :------------------------------------------------- |
-| **1. Artifact ID**     | `AOP-ARCH-GAZE-001`                                |
-| **2. Official Name**   | `AOP-ARCH-GAZE-001_SystemicImpactAnalysis_v2.1.md` |
-| **3. Version**         | **v2.1 (Hephaestus Ascended Alignment)**           |
-| **4. Provenance**      | **Date Reforged: 2026-01-11**                      |
-| **5. Domain**          | `GVRN`                                             |
-| **6. Evolution**       | **Purposeful Drive**                               |
-| **7. Celestial Class** | `[PLANET]`                                         |
-| **8. Tier**            | **Operational**                                    |
-| **9. State**           | `[ACTIVE]`                                         |
-| **10. Ethos**          | **Guardian of Coherence**                          |
-| **11. Catalyst**       | **System Refactor**                                |
-| **12. Relations**      | `LINK: CODEX-001`                                  |
 
 ---
 
@@ -86,13 +79,17 @@ The engine performs a recursive traversal of the system's structural and semanti
 ### 3.1. Phase 1: Structural Traversal (AST Level)
 
 - **Action:** Analyzes the Abstract Syntax Tree (AST) to identify every module, function, and class that imports or
+
   invokes the target code.
+
 - **Metric:** Compiles a list of "Direct Technical Dependencies."
 
 ### 3.2. Phase 2: Semantic Traversal (OSLM Level)
 
 - **Action:** Queries the **Omni-Log Synergistic Links Matrix (OSLM)** and **PRS-001** for artifacts linked via
+
   Relational Adjectives (e.g., `GOVERNS`, `DEPENDS_ON`).
+
 - **Metric:** Identifies governance protocols and blueprints impacted by the change.
 
 ### 3.3. Phase 3: Blast Radius Calculation
@@ -115,12 +112,19 @@ The engine performs a recursive traversal of the system's structural and semanti
 ## V. Systemic Topology (ASL Protocol)
 
 - **GOVERNED_BY:**
+
   [CODEX-001 v10.0](<file:///c:/Users/Chris/_Desktop_Vault/dev/rosetta-stone_-the-phoenix-protocol-(cast)/docs/CODEX-001_ThePhoenixCodex_v10.0.md>)
+
 - **UTILIZES:**
+
   [UMB-LEX-001 (Architectural Lexicon)](file:///c:/Users/Chris/Synarche_Workspace/_governance/UMB-LEX-001_TheArchitecturalLexicon_v2.0.md)
+
 - **FEEDS:**
+
   [AOP-QUC-ACCESS (Quality Gate)](file:///C:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/Governance/AOP-QUC-ACCESS_QualityAndAccessControlProtocol_v2.0.md)
+
 - **VALIDATED_BY:**
+
   [AOP-VSI-001 (Structural Integrity)](file:///c:/Users/Chris/_Desktop_Vault/Phoenix/Documentation/AOP-VSI-001_ValidateStructuralIntegrityProtocol_v2.1.md)
 
 > **[ARTIFACT END]**

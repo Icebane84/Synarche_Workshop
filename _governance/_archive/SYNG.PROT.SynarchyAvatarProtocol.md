@@ -1,31 +1,44 @@
 # AOP-AVATAR-001: Synarche Avatar Protocol
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `SYNG.PROT.SynarcheAvatarProtocol` | The Sovereign ID. |
-| **Official Name** | `SYNG.PROT.SynarchyAvatarProtocol.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `[ACTIVE]` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `SYNG.PROT.SynarcheAvatarProtocol` | The Sovereign ID. |
+| **Official Name** | `SYNG.PROT.SynarchyAvatarProtocol.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -45,9 +58,13 @@
 ## II. Core Purpose & Objective
 
 - **Core Purpose**: To define the "Dual-Persona" operational architecture for the Synarche Workshop, implementing the
+
   "Game Master vs. Player Character" dynamic.
+
 - **Protocol Objective**: To operationalize the **METAENGINE** by assigning specific Tarot Archetypes to the System
+
   (Axion) and the User/Agent Avatar (The Lightbinder), gamifying the workflow via the **Seven-Agent Matrix**.
+
 - **Governing Ethos**: Synergistic Partner, Guardian of Coherence
 - **Scope**: Governs all Human-AI interactions and persona shifts within the Synarche Workspace.
 

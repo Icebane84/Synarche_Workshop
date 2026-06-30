@@ -1,31 +1,44 @@
 # UMB-GAMEDEV-001_v11.0.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+### **Block A: The Identification Lock (UIP-V14)**
 
-| Key               | Value                             | Description       |
-| :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN.GAMEDEV.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.GAMEDEV.001.md` | The Filename.     |
-| **Version**       | **v13.0 [OMEGA]** | The Standard.     |
-| **Domain**        | `GVRN` | The Subject.      |
-| **Status**        | `ACTIVE` | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| **Artifact ID** | `GVRN.GAMEDEV.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.GAMEDEV.001.md` | The Filename. |
+| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Domain** | `GVRN` | The Subject. |
+| **Celestial Class** | `[PLANET]` | The Weight. |
+| **Evolution** | `Purposeful Drive` | The Maturity. |
+| **Status (State)** | `ACTIVE` | The Lifecycle. |
+| **Ethos** | `Crystalline Structure` | The Intent. |
+| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
+| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
 ### **Block B: State Vector (AGP-001)**
+| State Field | Value |
+| :--- | :--- |
+| **Coherence** | `1.0` |
+| **Resonance** | `0.9` |
+| **Stability** | `Stable` |
 
-| State Field   | Value    |
-| :------------ | :------- |
+### **Block C: Risk & Mitigation (AGP-002)**
+| Risk | Mitigation |
+| :--- | :--- |
+| **Logic Drift** | Strict Linter Enforcement |
+| **Dependency Break** | ForgeLink Validation |
+
+| Key               | Value                             | Description       |
+
+---
+
 | **Coherence** | `1.0`    |
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
-
 | Risk                 | Mitigation                |
-| :------------------- | :------------------------ |
 | **Logic Drift**      | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation      |
 
@@ -141,6 +154,7 @@ standards to practical execution:
   **Entry** components.
 
 - [**AOP-PGPS-001**](https://docs.google.com/document/u/0/d/1vL9tjdgar3jZ4DAY9piVNJWbt16-xp2nqlo9ileVhl0/edit) \*\*\[3\]
+
   &
 
   [AOP-INDENT-001](https://docs.google.com/document/u/0/d/1Qh1P8l-NGIsDXF6a9wXIDdXSHmY3Df4X6-O5mKFzgpU/edit) \[4\]**:
@@ -295,6 +309,7 @@ The following phases must be executed for every new game development artifact (U
 - **Input**: The next required architectural pattern (e.g., procedural generation, complex physics).
 - **Steps**:
   1. **Define Technical Target**: Select one core architectural pattern (e.g., Continuous Game Loop \[2\],
+
      Event-Driven
 
      State Machine \[2\]) to be mastered by the new artifact.
@@ -313,11 +328,13 @@ The following phases must be executed for every new game development artifact (U
 - **Input**: Phase I SPEC document.
 - **Steps**:
   1. **Architectural Implementation**: Translate the core design into the **UMB** (using UMBv7.0 template), focusing
+
      on
 
      the **Core Architecture** section \[2\].
 
   2. **Self-Contained Module Mandate**: Ensure the UMB is inherently self-contained, portable, and complete, adhering
+
      to
 
      the Modular Blueprint Generation principle \[2\].
@@ -956,6 +973,7 @@ The visualization must be rendered as an interactive dashboard, defined by the f
 
 - **Helix Strands (Axes)**: The helix must be composed of two distinct, interwoven strands:
   - **Strand 1 (Technical Axis)**: Represents architectural patterns (e.g., Continuous Loop, Event-Driven State
+
     Machine,
 
     Procedural Generation). Rendered in a cool, logical color (e.g., Electric Blue).
@@ -1086,6 +1104,7 @@ Combine these components into a clear, concise prompt for best results:
 
 - **Example Prompt Packet: Spaceship Asset**
   - "A pixelated spaceship, 8-bit pixel art, 32x32 pixel resolution, limited 16-color palette, top-down view, neon
+
     pink
 
     and blue tones, retro-futurism style, nostalgic mood, clean lines, white background."
@@ -1097,6 +1116,7 @@ Combine these components into a clear, concise prompt for best results:
 
 - **Example Prompt Packet: Background Environment**
   - "A futuristic cityscape, vaporwave aesthetic, high resolution, neon pink and turquoise palette, warm, glowing
+
     light,
 
     nostalgic mood, sharp focus."**Example Prompt Packet: Background Environment**
@@ -1134,6 +1154,7 @@ Combine these components into a clear, concise prompt for best results:
 
 - **Lighting and Mood:** "Warm, glowing light, nostalgic mood."
   - _Elaboration:_ - **Lighting:** The "warm, glowing light" suggests sources like neon signs, holographic
+
     projections, and ambient
 
     streetlights that cast a soft but intense radiance on the scene, contrasting with the dark cityscape. This
@@ -1333,6 +1354,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Expansion & Context:** The resulting concept document must comprehensively detail the following systems:
   1. **Core Resource Cycle (The Hay/Pellet Nexus):** - Define at least two distinct, interdependent resources:
+
      **_Hay_** (the physical component for building nests,
 
      tunnels, and basic defenses) and **_Pellets_** (the energy-rich, catalytic resource for boosting movement,
@@ -1347,6 +1369,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      territorial pressure and quick skirmishes.
 
   2. **Unit-to-Unit Combat Resolution (The Bite/Scurry Counter System):** - Establish a robust, clearly defined combat
+
      resolution system that moves beyond simple hit-point decay.
 
      Incorporate a detailed **Fur/Attack Type Matrix**: **_Nipping_** (standard teeth attacks, effective against
@@ -1361,6 +1384,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      with rapid burrowing, forcing tactical diversity beyond massing a single unit type.
 
   3. **Asymmetric Faction Breakdown and Philosophy:** - **Faction Alpha (The Abyssinian Scrappers \- Rough-Coat):** -
+
      **Philosophy:** **Chaos over Order.** Focused on low-cost, high-volume production, rapid map saturation (the
 
      "Wheeking Wave" model), and overwhelming force. The individual unit is small, but the combined noise and
@@ -1376,6 +1400,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      wheeking/call-for-help abilities.
 
   4. **Game Pace & Victory Conditions:** - **Intended Core Pace:** Define the intended game tempo as a **Medium-Burn,
+
      Highly Strategic Engagement**. While
 
      early skirmishes over water bottles are possible, the average game time is intended to be **25-35 minutes**,
@@ -1399,6 +1424,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Expansion & Context:** The concept must provide a clear, trackable roadmap for the narrative structure:
   1. **Three-Act Structure Map:** - **Act II (Confrontation: The Descent \- 50% of Playtime):** The stakes are
+
      dramatically raised. The protagonist
 
      is locked into the conflict (e.g., the water bottle leaks, destroying a vital clue; a clear, existential threat
@@ -1410,6 +1436,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      high-impact endings.
 
   2. **Key Narrative "Pivot Points":** - Identify and describe at least three crucial **Global Pivot Points** where
+
      player decisions radically and
 
      permanently shift the subsequent narrative trajectory, potentially locking off entire Act III paths: - **Pivot A
@@ -1422,6 +1449,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      latter is safer for Comfort but risks missing vital evidence.
 
   3. **Choice and Meter Mechanics (The Dual Metric System):** - **The "Comfort" Meter (Dynamic Mental State):** A
+
      meter (0-100) reflecting the protagonist's psychological
 
      stability (how safe and fed they feel). Influenced by stress, isolation, hunger, or exposure to loud noises
@@ -1439,6 +1467,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      choices that can drain the Comfort Meter.
 
   4. **Multiple Planned Endings (Criteria Definition):** The player's final state is a matrix of the two meter
+
      levels: - **The "True Ending":** (High Comfort, High Clue) – Protagonist solves the mystery, exposes the truth,
      and
 
@@ -1466,6 +1495,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Expansion & Context:** The document needs to define the complete rhythm loop and its physical manifestation:
   1. **Primary Input Mechanism (The Six-Axis Controller \- Cavy Paws):** - Define the precise control scheme: A
+
      **Two-Hand, Six-Button System** (e.g., Left/Right/Up/Down on D-Pad/Left
 
      Analog for directional notes corresponding to footfalls \+ Left/Right Triggers for sustained/charging notes
@@ -1477,6 +1507,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      gate or firing a temporary burst of _Wheeking_ that stuns competitors).
 
   2. **Rhythm-to-Speed Translation (The Boost Meter Flow \- Velocity/Wheek Power):** - Detail how successful input
+
      chaining (the combo multiplier, max $\\times 64$) directly translates into tangible
 
      vehicle (guinea pig) performance (running speed on the wheel, stamina, temporary shield integrity). - **Perfect
@@ -1489,6 +1520,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      reduction in the Wheek Power Meter (The Cavy gets winded).
 
   3. **Visual Language/Feedback (The Accuracy Hologram \- Scent Trail):** - Define the highly visible, distinct visual
+
      indicators for timing accuracy, which are projected onto the track
 
      (the wheel's inner surface) in front of the vehicle: - **"Perfect" (Aether Blue Flash):** Maximum score, sound
@@ -1498,6 +1530,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      Combo broken, the guinea pig visually stumbles, and the screen briefly distorts. _Massive Wheek Power loss._
 
   4. **Synesthetic Environment Integration (The Living Track \- The Spinning Wheel):** - Crucially, propose how the 3D
+
      race track environment itself dynamically responds to the music, creating a
 
      **Synesthetic Experience**. The wheel is not merely background; it is a manifestation of the music. - **Musical
@@ -1528,6 +1561,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Expansion & Context:** The concept must establish clear, robust rules for tactical engagement:
   1. **Movement and Positioning (The AP Economy \- Action Pellets):** - **Grid Type:** Define the battlefield as a
+
      **Square-Based Grid** (carpet tiles, cage squares) to simplify
 
      line-of-sight and cover calculations. - **Action Points (AP):** Units have a fixed pool of **4 Action Pellets
@@ -1540,6 +1574,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      enemy (Biting range) removes cover bonuses.
 
   2. **Turn Order Determination (The Initiative/Action Queue Hybrid \- The Wheek-Cycle):** - Establish a hybrid system
+
      designed to reward foresight and moderate action costs: - **Initiative Score:** Determines the initial turn
      sequence at the start of combat (based on a Unit's
 
@@ -1550,6 +1585,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      mobility and tactical harassment.
 
   3. **Environmental Manipulation System (The Food/Bedding Chain):** - Detail the core mechanic for how abilities
+
      interact with and permanently alter the battlefield terrain, creating
 
      **Effect Zones** that persist for a set number of turns. - **Effect Zones (Terrain Types):** Define key terrain
@@ -1565,6 +1601,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      cone), rewarding clever sequencing by obscuring enemy line of sight.
 
   4. **Progression and Job Classes:** - Define how the progression system ties directly into this environmental
+
      mechanic. - New **"Job Classes"** should specialize in unlocking and exploiting specific terrain features and
      manipulation
 
@@ -1590,6 +1627,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
 
 - **Expansion & Context:** The document should function as a map for player traversal and world design:
   1. **Starting Kit and Basic Capabilities:** - Outline the player's initial abilities and equipment: basic
+
      run/scurry, a low jump (enough to clear a pellet), a
 
      functional **Wall-Nuzzle** (allows clinging to a small vertical surface), and a short-range **Nibble Attack**
@@ -1599,6 +1637,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      granting freedom into the **Kitchen**.
 
   2. **Key Progression Abilities and Barrier Solutions:** - Define the first three major "key" abilities required for
+
      deep progression, detailing the specific
 
      physical/environmental barrier each ability overcomes: - **Ability A (_The Popcorn Leap_):** Overcomes: Low
@@ -1612,6 +1651,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      mandatory high-threat area (The Cat).
 
   3. **Hierarchy of Gating (Barrier Catalog):** - Outline a strict hierarchy of locked doors/paths, matching each
+
      barrier to the required ability, ensuring
 
      backtracking remains meaningful: - **Type 1 Barrier (Minor):** Small gap on the floor/low ledge (Requires
@@ -1624,6 +1664,7 @@ philosophy.-----**Prompt 1: Core Mechanic Generation (CMG-001)**
      _Sliding Mat_ ability).
 
   4. **Non-Linear World Design (Player Agency Loop):** - Pay special attention to the non-linear aspect. Detail a
+
      crucial mid-game scenario that defines player freedom: - **The Nexus Point:** Acquisition of **Ability B
      (_Chewing Proficiency Upgrade_)** simultaneously unlocks _three_
 
