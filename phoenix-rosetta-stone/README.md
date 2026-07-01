@@ -4,7 +4,7 @@
 primary "face" of the **GVRN Protocol**, demonstrating how AI agents and human intent can merge seamlessly within a 3D
 environment.
 
-## Features
+## I. Features
 
 ---
 
@@ -15,18 +15,18 @@ environment.
 * **Backend Agnostic:** Built on a modular "Fabric" architecture, allowing you to swap out Supabase, Firebase, or custom
   AI providers without rewriting the UI.
 
-## Getting Started
+## II. Getting Started
 
 ---
 
-### 1. Prerequisites
+### A. Prerequisites
 
 ---
 
 * Node.js (v18+)
 * A Supabase Project (URL and Anon Key) if you intend to use the default backend.
 
-### 2. Setup
+### B. Setup
 
 ---
 
@@ -44,7 +44,7 @@ environment.
     VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
     ```
 
-### 3. Run the App
+### C. Run the App
 
 ---
 
@@ -54,7 +54,7 @@ Start the development server:
 npm run dev
 ```
 
-## Architecture
+## III. Architecture
 
 ---
 
@@ -64,7 +64,7 @@ Phoenix uses a layered architecture to ensure scalability and maintainability:
 * **Nexus (src/CORE):** The business logic layer. Handles data fetching and external API interactions.
 * **Essence (src/state & src/types):** The state management and data definition layer.
 
-## Ecosystem
+## IV. Ecosystem
 
 ---
 
@@ -77,14 +77,14 @@ Currently, two official plugins are available:
 * [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses
   [SWC](https://swc.rs/)
 
-## React Compiler
+## V. React Compiler
 
 ---
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see
 [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## VI. Expanding the ESLint configuration
 
 ---
 
