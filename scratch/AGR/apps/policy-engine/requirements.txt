@@ -16,3 +16,4 @@ opentelemetry-sdk
 opa-wasm
 
 protobuf
+nats-py

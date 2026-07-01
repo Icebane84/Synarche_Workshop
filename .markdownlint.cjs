@@ -40,7 +40,7 @@ module.exports = {
         default: true,
         MD001: { level: 1 },
         MD003: { style: "atx" },
-        MD004: { style: "dash" },
+        MD004: { style: "asterisk" },
         MD005: true,
         MD007: { indent: 4 },
         MD009: { br_spaces: 0 },

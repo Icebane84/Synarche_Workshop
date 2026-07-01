@@ -586,10 +586,20 @@ module.exports = [
             if (child.type === "strong_open" || child.type === "em_open") {
               const formatType =
                 child.type === "strong_open" ? "Bold text (`**`)" : "Italic text (`*`)";
+              const cleanLine = token.line
+                .replace(/\*\*([^*]+)\*\*/g, '$1')
+                .replace(/__([^_]+)__/g, '$1')
+                .replace(/\*([^*]+)\*/g, '$1')
+                .replace(/_([^_]+)_/g, '$1');
               onError({
                 lineNumber: token.lineNumber,
                 detail: `${formatType} is not allowed inside headings.`,
                 context: token.line,
+                fixInfo: {
+                  editColumn: 1,
+                  deleteCount: token.line.length,
+                  insertText: cleanLine,
+                },
               });
             }
           });

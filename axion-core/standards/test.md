@@ -5,12 +5,16 @@
   status: ACTIVE
 """
 
-# Test Configuration Blueprint
+# TEST Configuration Blueprint
 
 This is a blueprint and collaboration.
 
 ## Actionable Prompt Packet (APP)
 
-- **Directive:** This is a test template for validation.
+---
+
+* **Directive:** This is a TEST template for validation.
 
 ## [ARTIFACT END]
+
+---

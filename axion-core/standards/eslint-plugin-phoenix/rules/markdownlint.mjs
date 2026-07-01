@@ -12,6 +12,7 @@ export default {
             description: "Run Phoenix markdownlint rules natively inside ESLint",
             recommended: true,
         },
+        fixable: "code",
         schema: [],
     },
     create(context) {
@@ -89,10 +90,26 @@ export default {
                         column: result.errorRange ? result.errorRange[0] : 1,
                     };
 
-                    context.report({
+                    const reportObject = {
                         loc: loc,
                         message: `[${ruleNames}] ${description}${detail}`,
-                    });
+                    };
+
+                    if (result.fixInfo) {
+                        reportObject.fix = (fixer) => {
+                            const lines = sourceCode.split("\n");
+                            let startOffset = 0;
+                            for (let i = 0; i < (result.lineNumber || 1) - 1; i++) {
+                                startOffset += lines[i].length + 1;
+                            }
+                            const editColumn = result.fixInfo.editColumn || 1;
+                            startOffset += editColumn - 1;
+                            const endOffset = startOffset + (result.fixInfo.deleteCount || 0);
+                            return fixer.replaceTextRange([startOffset, endOffset], result.fixInfo.insertText || "");
+                        };
+                    }
+
+                    context.report(reportObject);
                 }
             },
         };
