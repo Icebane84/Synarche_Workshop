@@ -1,0 +1,12 @@
+Semantic_Anchor,Category,Extracted_Value
+z.fromJSONSchema(),Method,Experimental utility for converting a JSON Schema into a Zod schema
+z.toJSONSchema(),Method,Core utility for converting a Zod schema into its JSON Schema equivalent
+target,Configuration,Specifies the output schema version (e.g., draft-2020-12, openapi-3.0)
+io,Configuration,Toggles extraction between the schema's default output type or its input type
+metadata,Configuration,Injects a z.globalRegistry to map id/title/description to the JSON output
+unrepresentable,Constraint,Dictates handling of non-JSON types (default "throw", optional "any")
+Unrepresentable Types,Architecture,bigint / symbol / undefined / void / date / map / set / nan / custom
+cycles,Configuration,Dictates infinite loop resolution (default "ref" via $ref, optional "throw")
+reused,Configuration,Dictates handling of duplicated schemas (default "inline", optional "ref" via $defs)
+override,Callback,Exposes ctx.zodSchema and ctx.jsonSchema for manual mutation during conversion
+uri,Configuration,Function map translating internal id values into fully-qualified external URIs

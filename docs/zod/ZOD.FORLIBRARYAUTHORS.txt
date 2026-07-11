@@ -1,0 +1,10 @@
+Semantic_Anchor,Category,Extracted_Value
+Standard Schema,Architecture,Shared interface for black-box validation recommended over direct Zod dependency when specific functionality is not required
+Zod 3 Lifecycle,Status,Functionally end-of-life; new libraries must target Zod 4 exclusively
+Peer Dependencies,Configuration,Libraries must specify "zod" in peerDependencies (e.g. "^4.0.0") to allow users to bring their own instance
+Core Import Protocol,Architecture,Import exclusively from "zod/v4/core" to ensure universal compatibility across Zod and Zod Mini
+Forbidden Subpaths,Constraint,Direct imports from "zod", "zod/v4", or "zod/v4/mini" isolate libraries to specific package distributions and break shared compatibility
+Dual Support (Dependencies),Configuration,Widen peer dependency to "^3.25.0 || ^4.0.0" to support both v3 and v4 users simultaneously
+Dual Support (Runtime),Utility,Evaluate the "_zod" property to differentiate Zod 4 schemas from Zod 3 schemas ("_def") at runtime
+Schema Type Inference,TypeScript,Generic parameters must extend z4.$ZodType (or specific subclasses like $ZodObject) to preserve method signatures and prevent type widening
+Top-Level Parsing,Method,Execute parsing via z4.parse() or z4.safeParse() because Zod Core $ZodType base classes do not implement execution methods

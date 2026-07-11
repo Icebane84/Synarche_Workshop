@@ -306,7 +306,8 @@
       }
     ],
     "editor.codeActions.triggerOnFocusChange": false,
-    "powershell.cwd": "📂 WORKSPACE ROOT"
+	"powershell.cwd": "📂 WORKSPACE ROOT",
+	"godotTools.editorPath.godot4": "c:\\Users\\Chris\\Godot_v4.6.2\\Godot_v4.6.2-stable_win64.exe"
   },
   "extensions": {
     "recommendations": [

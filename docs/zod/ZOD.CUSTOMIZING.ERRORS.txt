@@ -1,0 +1,15 @@
+Semantic_Anchor,Category,Extracted_Value
+ZodError,Class,Subclass surfacing validation errors containing an .issues array
+Issue Structure,Metadata,Contains a human-readable message and structured issue metadata
+Error Parameter (String),Method,Overrides the default schema error message with a static string
+Error Parameter (Object),Method,Overrides the default schema error using an { error: ... } object
+Error Map,Function,Dynamic error customization function executed at parse time
+iss Object,Structure,Discriminated union providing issue code/input/path metadata
+Per-parse Customization,Method,Local error map injection via .parse() options
+reportInput,Flag,Includes raw input data in issues (default false for security)
+Global Customization,Method,z.config({ customError: ... }) establishes a baseline global error map
+Internationalization,Utility,z.config() loads predefined language locales from zod/locales
+Precedence (1 - Highest),Hierarchy,Schema-level error ("hard coded" into schema definition)
+Precedence (2 - High),Hierarchy,Per-parse error (passed into .parse method)
+Precedence (3 - Medium),Hierarchy,Global error map (passed into z.config customError)
+Precedence (4 - Lowest),Hierarchy,Locale error map (passed into z.config)

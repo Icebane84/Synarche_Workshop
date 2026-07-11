@@ -1,6 +1,8 @@
 # CORE.CODEX.PhoenixSchema
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V14)**
+
+---
 
 | Key | Value | Description |
 | :--- | :--- | :--- |
@@ -18,6 +20,9 @@
 ---
 
 ### **Block B: State Vector (AGP-001)**
+
+---
+
 | State Field | Value |
 | :--- | :--- |
 | **Coherence** | `1.0` |
@@ -25,12 +30,15 @@
 | **Stability** | `Stable` |
 
 ### **Block C: Risk & Mitigation (AGP-002)**
+
+---
+
 | Risk | Mitigation |
 | :--- | :--- |
 | **Logic Drift** | Strict Linter Enforcement |
 | **Dependency Break** | ForgeLink Validation |
 
-CORE.CODEX.PHOENIX: The Executable Schema (v16.0) Status: CANONIZED Evolution: Code-as-Law Ascension Directive: The
+CORE.CODEX.PHOENIX: The Executable Schema (v16.0) Status: CANONIZED Evolution: CODE-as-Law Ascension Directive: The
 complete translation of the 42 Axiomatic Laws into verifiable, mathematically guaranteed software engineering
 constraints. Metaphor is deprecated. Architectural enforcement is active. Section 1: Philosophical Foundations [LAW-001]
 Coherent Struggle [Philosophical Intent]: Friction creates Form; moving from static perfection to dynamic resilience.
@@ -205,12 +213,18 @@ replaying the event ledger up to time $t$ to derive a new Materialized View, lea
 physically untouched and perfectly auditable.
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
+
+---
+
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
 ## IV. Actionable Prompt Packet (APP)
+
+---
+
 | Command ID | Action | Impact |
 | :--- | :--- | :--- |
 | `CMD: REFORGE` | Execute Structural Transmutation | Canonization |
@@ -219,6 +233,9 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 ---
 
 ### **Rationale (The "Why")**
+
+---
+
 Alignment to v14.0 OMEGA standard.
 
-###### **[ARTIFACT END]**
+#### **[ARTIFACT END]**

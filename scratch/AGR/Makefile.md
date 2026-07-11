@@ -10,7 +10,7 @@ lint:
 format:
 	ruff format .
 
-test:
+TEST:
 	pytest
 
 build:

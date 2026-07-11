@@ -1,0 +1,12 @@
+Semantic_Anchor,Category,Extracted_Value
+zod/v4,Architecture,Flagship library balancing developer experience and bundle size
+Zod Mini,Alternative,Optimized package strictly constrained for minimal bundle sizes
+Type System,Architecture,API maps one-to-one to the TypeScript type system
+z.ZodType,Base Class,Foundation that all Zod schemas extend
+z.$ZodType,Core Dependency,Base class imported from zod/v4/core
+Parsing Methods,Method,.parse() / .safeParse() / .parseAsync() / .safeParseAsync()
+Refinement Methods,Method,.refine() / .superRefine()
+.overwrite(),Deprecation,Deprecated method superseded by .check()
+Wrappers,Utility,.optional() / .nullable() / .array() / .transform() / .pipe() / .catch()
+Metadata Methods,Method,.register() / .describe() / .meta()
+Utility Methods,Method,.check() / .clone() / .brand() / .isOptional() / .isNullable()

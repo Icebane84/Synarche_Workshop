@@ -1,0 +1,14 @@
+Semantic_Anchor,Category,Extracted_Value
+Zod,Core Definition,TypeScript-first schema validation with static type inference
+Zod 4,Status,Stable
+Architecture,Dependency,Zero external dependencies
+Architecture,Compatibility,Works in Node.js and all modern browsers
+Architecture,Payload,Tiny: 2kb core bundle (gzipped)
+Architecture,API,Immutable API: methods return a new instance
+Installation,NPM,npm install zod
+Installation,JSR,@zod/zod on jsr.io
+Constraint,TypeScript Version,Tested against TypeScript v5.5 and later
+Constraint,Compiler Option,"strict" mode must be enabled in tsconfig.json
+Ecosystem,Highlighted Integration,tRPC (End-to-end typesafe APIs)
+Ecosystem,Highlighted Integration,React Hook Form (Zod resolver)
+Ecosystem,Highlighted Integration,zshy (Bundler-free build tool)

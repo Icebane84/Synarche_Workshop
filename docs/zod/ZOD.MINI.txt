@@ -1,0 +1,12 @@
+Semantic_Anchor,Category,Extracted_Value
+Zod Mini,Definition,Tree-shakable variant of Zod replacing chained methods with a functional API
+Import Path,Configuration,import * as z from "zod/mini"
+Tree-shaking,Architecture,Top-level functions enable modern bundlers to perform dead-code elimination on unused validations
+Bundle Size,Metric,Provides approximately 64% reduction in bundle size compared to standard Zod
+Use Case Constraints,Architecture,Recommended strictly for bundle-sensitive front-end environments (e.g., slow mobile networks); unnecessary for backend/serverless environments
+Base Class,Inheritance,z.ZodMiniType (extends z.core.$ZodType)
+Core Parsing,Method,.parse() / .safeParse() / .parseAsync() / .safeParseAsync() remain fully implemented
+.check(),Method,Core mutation method replacing chained validations; accepts top-level check functions
+Check Functions,Utility,z.minLength() / z.maxLength() / z.regex() / z.trim() injected sequentially into .check()
+Metadata Methods,Method,.register() / .brand() / .clone() remain implemented on the base class
+Localization,Constraint,No default locale is loaded to save space; z.locales.en() must be manually configured if standard error messages are required

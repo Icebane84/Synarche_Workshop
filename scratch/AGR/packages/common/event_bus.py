@@ -1,7 +1,7 @@
 import asyncio
 import orjson
 
-from nats.aio.client import Client
+from nats.aio.client import Client # type: ignore
 
 from events import EventEnvelope
 

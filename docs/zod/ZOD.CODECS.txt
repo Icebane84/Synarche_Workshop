@@ -1,0 +1,13 @@
+Semantic_Anchor,Category,Extracted_Value
+z.codec(),Primitive,Defines a bi-directional transformation between an input schema and an output schema
+Forward Transformation,Method,.parse() and .decode() process data from Input to Output
+Backward Transformation,Method,.encode() processes data from Output to Input
+z.invertCodec(),Utility,Derives a reverse codec by swapping input/output schemas and decode/encode transforms
+Type-safe Inputs,Architecture,.decode() and .encode() enforce strongly-typed inputs at compile time (unlike .parse() which accepts unknown)
+Async / Safe Variants,Method,Supports .decodeAsync() / .safeDecode() / .safeDecodeAsync() for asynchronous or non-throwing execution
+Pipes,Architecture,Codecs are internally implemented as subclasses of ZodPipe with interstitial transform logic
+Refinements,Constraint,Validation checks (e.g. .refine() / .min()) execute safely in both forward and backward directions
+Defaults / Prefaults,Constraint,.default() values are applied exclusively in the forward direction
+Catch,Constraint,.catch() fallbacks are applied exclusively in the forward direction
+Transforms,Constraint,Standard .transform() is unidirectional; executing .encode() on a schema with a transform throws a runtime error
+Network Boundary,Use Case,Enables unified schemas for converting wire formats (JSON) to rich domain representations (Dates / Maps)

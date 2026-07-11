@@ -1,0 +1,11 @@
+Semantic_Anchor,Category,Extracted_Value
+Zod Core,Architecture,Sub-package exporting base classes designed exclusively for extension rather than direct consumption
+z.$ZodType,Base Class,Foundation for all Zod schemas accepting Output and Input generic parameters
+z.$ZodTypes,Type Union,Comprehensive union of all first-party schema subclasses (e.g. $ZodString / $ZodObject)
+_zod,Internals,Encapsulated property housing the schema definition (.def) and internal parser implementation (.run())
+.def,Metadata,JSON-serializable object completely describing the schema instance (type / checks)
+Top-Level Parsing,Method,Execution methods (z.parse / z.safeParse) exist as standalone functions because Core classes contain no methods
+z.$ZodCheck,Base Class,Foundation for all post-parsing refinements that do not alter the inferred type
+Format Intersection,Architecture,Specific utilities (e.g. z.email) implement both $ZodType and $ZodCheck interfaces to function as both schemas and refinements
+z.$ZodError,Class,Base error implementation that deliberately does not extend the built-in Error class for performance optimization
+$ZodIssueBase,Interface,Core metadata structure for validation failures containing code / path / message properties

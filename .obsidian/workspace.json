@@ -11,10 +11,14 @@
             "id": "0485ab2d5eee0b96",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "axion-core/docs/05_Manuals/_archive/AOP-AG-002_AxionAgentConfiguration_v1.0.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "AOP-AG-002_AxionAgentConfiguration_v1.0"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "conceptual engineering",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -178,43 +183,43 @@
   },
   "active": "0485ab2d5eee0b96",
   "lastOpenFiles": [
-    "open-notebook/frontend/node_modules/is-string/LICENSE",
-    "open-notebook/frontend/node_modules/is-shared-array-buffer/LICENSE",
-    "open-notebook/frontend/node_modules/iterator.prototype/test/index.js",
-    "open-notebook/frontend/node_modules/iterator.prototype/test",
-    "open-notebook/frontend/node_modules/lightningcss/node/targets.js.flow",
-    "open-notebook/frontend/node_modules/lightningcss/node/targets.d.ts",
-    "open-notebook/frontend/node_modules/lightningcss/node/index.mjs",
-    "open-notebook/frontend/node_modules/lightningcss/node/index.js.flow",
-    "open-notebook/frontend/node_modules/lightningcss/node/index.js",
-    "open-notebook/frontend/node_modules/lightningcss/node/index.d.ts",
-    "open-notebook/frontend/node_modules/lightningcss/node/flags.js",
-    "open-notebook/frontend/node_modules/@tanstack/react-query/build/codemods/src/v5/keep-previous-data/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-radio-group/node_modules/@radix-ui/react-roving-focus/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-radio-group/node_modules/@radix-ui/react-presence/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-radio-group/node_modules/@radix-ui/primitive/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-presence/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-popper/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-focus-guards/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-dismissable-layer/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-popover/node_modules/@radix-ui/primitive/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-presence/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-focus-guards/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-dismissable-layer/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/primitive/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-collapsible/node_modules/@radix-ui/react-presence/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-collapsible/node_modules/@radix-ui/primitive/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-alert-dialog/node_modules/@radix-ui/react-dialog/README.md",
-    "open-notebook/frontend/node_modules/@radix-ui/react-accordion/node_modules/@radix-ui/primitive/README.md",
-    "open-notebook/frontend/node_modules/@humanfs/node/node_modules/@humanwhocodes/retry/README.md",
-    "open-notebook/frontend/node_modules/refractor/node_modules/@types/unist/README.md",
-    "open-notebook/frontend/node_modules/refractor/node_modules/@types/hast/README.md",
-    "open-notebook/frontend/node_modules/parse-entities/node_modules/@types/unist/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/zod/index.d.cts",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown/tsconfig.json",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown/package.json",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown/LICENSE",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown/index.js",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown/index.d.ts",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown/eslint.config.mjs",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown/CHANGELOG.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/hasown",
+    "nova_forge/prototypes/folklore_decayer/node_modules/imurmurhash/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/imurmurhash/package.json",
+    "nova_forge/prototypes/folklore_decayer/node_modules/imurmurhash/imurmurhash.min.js",
+    "nova_forge/prototypes/folklore_decayer/node_modules/imurmurhash/imurmurhash.js",
+    "nova_forge/prototypes/folklore_decayer/node_modules/camelcase-css/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/estraverse/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/esutils/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/globby/readme.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/@babel/plugin-transform-react-jsx-self/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/flatted/golang/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/flatted/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/levn/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/eslint-scope/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/debug/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/@typescript-eslint/types/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/@types/babel__core/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/didyoumean/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/rimraf/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/rimraf/CHANGELOG.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/argparse/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/argparse/CHANGELOG.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/json-schema-traverse/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/cross-spawn/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/is-glob/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/fast-deep-equal/README.md",
+    "nova_forge/prototypes/folklore_decayer/node_modules/esrecurse/README.md",
     "open-notebook/frontend/node_modules/@vitest/ui/dist/client/favicon.svg",
-    "open-notebook/frontend/node_modules/@vitest/ui/dist/client/bg.png",
-    "open-notebook/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/README.md",
-    "open-notebook/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/glob-parent/README.md",
-    "open-notebook/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/glob-parent/CHANGELOG.md",
-    "open-notebook/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/fast-glob/README.md"
+    "open-notebook/frontend/node_modules/@vitest/ui/dist/client/bg.png"
   ]
 }

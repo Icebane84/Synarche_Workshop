@@ -4,6 +4,10 @@
   "vcs": {
     "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": true
+    "useIgnoreFile": true,
+    "root": "."
+  }
+  ,"files": {
+    "includes": ["**", "!!**/.trunk"]
   }
 }

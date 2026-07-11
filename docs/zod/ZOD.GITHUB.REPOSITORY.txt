@@ -1,0 +1,15 @@
+Semantic_Anchor,Category,Extracted_Value
+colinhacks/zod,Identifier,Primary GitHub repository hosting the Zod ecosystem
+TypeScript,Language,Primary codebase language (89.3% composition)
+packages/,Workspace,Monorepo directory containing core and sub-package source code
+rfcs/,Governance,Directory housing Request for Comments (architectural proposals)
+.github/workflows/,CI/CD,Directory containing GitHub Actions automation pipelines
+CLAUDE.md / AGENTS.md,AI Configuration,Targeted directives and context for LLM agents operating within the repository
+biome.jsonc,Toolchain,Configuration file for the Biome formatter and linter
+pnpm-workspace.yaml,Package Manager,Configuration defining the pnpm monorepo structure
+vitest.config.ts,Testing,Root configuration for the Vitest test runner
+.mcp.json,Integration,Configuration file for Model Context Protocol server integrations
+Stars,Community Metric,43.2k (indicates high ecosystem adoption)
+Forks,Community Metric,2.1k (indicates active community contribution)
+Dependents,Community Metric,2.9m repositories utilize the library
+MIT License,Governance,Permissive open-source legal framework governing the codebase

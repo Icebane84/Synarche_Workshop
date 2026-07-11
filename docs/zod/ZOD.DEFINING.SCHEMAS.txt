@@ -1,0 +1,17 @@
+Semantic_Anchor,Category,Extracted_Value
+Primitives,Schema Definition,z.string() / z.number() / z.boolean() establish base scalar types
+Coercion,Schema Definition,z.coerce forces input conversion to the target primitive
+Literals,Schema Definition,z.literal() enforces exact value matching
+Strings (Validation),Method,.min() / .max() / .regex() append constraints to string schemas
+Strings (Format),Utility,z.email() / z.url() / z.uuid() enforce standardized string structures
+Objects (Base),Primitive,z.object() constructs key-value schema dictionaries
+Objects (Strictness),Method,z.strictObject() / z.looseObject() dictate handling of unrecognized keys
+Objects (Extension),Method,.extend() / .safeExtend() merge or augment existing object schemas
+Objects (Utility),Method,.pick() / .omit() / .partial() / .required() derive new schemas from existing objects
+Arrays,Primitive,z.array() defines homogenous list constraints
+Unions (Standard),Primitive,z.union() evaluates input sequentially against provided schema options
+Unions (Discriminated),Primitive,z.discriminatedUnion() optimizes union parsing via a shared literal key
+Refinements,Method,.refine() / .superRefine() inject custom validation logic returning boolean or discrete issues
+Transforms,Method,.transform() / .pipe() mutate data sequentially during or post-validation
+Defaults,Utility,.default() / .catch() provide fallback values for missing or invalid data
+Branded Types,Utility,.brand() simulates nominal typing for structural equivalence safety

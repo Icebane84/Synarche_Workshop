@@ -1,0 +1,8 @@
+Semantic_Anchor,Category,Extracted_Value
+z.treeifyError(),Method,Converts a ZodError into a nested object mirroring the schema structure
+Tree Structure,Metadata,Exposes errors / properties / items fields for deep path traversal
+z.prettifyError(),Method,Generates a human-readable string representation of the error
+z.formatError(),Method,Deprecated utility superseded by z.treeifyError()
+z.flattenError(),Method,Retrieves a clean shallow error object optimized for flat schemas
+formErrors,Structure,Array containing top-level errors where the path is empty
+fieldErrors,Structure,Object mapping specific schema fields to arrays of localized error strings

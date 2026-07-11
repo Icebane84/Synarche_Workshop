@@ -1,0 +1,14 @@
+Semantic_Anchor,Category,Extracted_Value
+tRPC,API Libraries,Build end-to-end typesafe APIs without GraphQL
+nestjs-zod,API Libraries,Integrate NestJS DTOs with Zod and generate OpenAPI docs
+Express Zod API,API Libraries,Build Express-based APIs with I/O validation and type-safe clients
+Superforms,Form Integrations,Type-safe form management tailored for SvelteKit
+conform,Form Integrations,Type-safe form validation utilizing web fundamentals for SSR frameworks (Remix/Next.js)
+prisma-zod-generator,Zod to X,Generate Zod schemas from Prisma schemas with full ZodObject method support
+zod-openapi,Zod to X,Derive OpenAPI v3.x documentation directly from Zod schemas
+orval,X to Zod,Generate Zod schemas automatically from OpenAPI specifications
+Hey API,X to Zod,OpenAPI to TypeScript codegen yielding production-ready SDKs and Zod schemas
+@traversable/zod-test,Mocking Libraries,Random Zod schema generator built for fuzz testing valid and invalid data
+zod-schema-faker,Mocking Libraries,Generate mock data deterministically from Zod schemas
+eslint-plugin-zod,Zod Utilities,Enforce architectural best practices via custom linting rules
+Zod AOT,Zod Utilities,Compile Zod schemas into zero-overhead validation functions at build time

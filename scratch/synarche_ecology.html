@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Synarche III: Ecological Information Engine</title>
+  <style>
+    :root {
+      --bg: #05060b;
+      --panel: #0d0f1a;
+      --accent: #00ffff;
+      --accent-alt: #007fff;
+      --text: #f0f4f8;
+      --text-dim: #4a5568;
+      --border: #1a1d30;
+      --danger: #ff0055;
+      --success: #00ffaa;
+      --warning: #ffaa00;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Courier New', Courier, monospace;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 5px;
+      background: linear-gradient(to right, var(--accent), var(--accent-alt));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+    .subtitle {
+      font-size: 0.75rem;
+      color: #718096;
+      margin-top: 5px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 340px 1fr 340px;
+      gap: 20px;
+      width: 100%;
+      max-width: 1300px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+    .panel-title {
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      color: var(--accent);
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+    }
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+    }
+    .metric-value {
+      color: var(--accent-alt);
+      font-weight: bold;
+    }
+    /* Thermodynamic Interface */
+    .heat-box {
+      background: rgba(255, 183, 0, 0.02);
+      border: 1px solid rgba(255, 183, 0, 0.15);
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .heat-val {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--warning);
+      text-shadow: 0 0 10px rgba(255, 183, 0, 0.2);
+    }
+    .thermal-bar {
+      width: 100%;
+      height: 6px;
+      background: #11131c;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .thermal-fill {
+      height: 100%;
+      background: var(--warning);
+      width: 0%;
+      transition: width 0.1s;
+    }
+    /* Real-Time Gene Mapping */
+    .gene-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .gene-item {
+      background: rgba(255,255,255,0.01);
+      border: 1px solid rgba(255,255,255,0.03);
+      padding: 8px;
+      border-radius: 2px;
+    }
+    .gene-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      margin-bottom: 4px;
+    }
+    .gene-bar {
+      width: 100%;
+      height: 4px;
+      background: #1a202c;
+    }
+    .gene-fill {
+      height: 100%;
+      background: var(--accent);
+      width: 0%;
+      transition: width 0.2s;
+    }
+    /* Arena and Graphics */
+    .combat-arena {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      flex-grow: 1;
+    }
+    .fighters {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    .fighter-box {
+      flex: 1;
+      background: rgba(0,0,0,0.4);
+      border: 1px solid var(--border);
+      padding: 12px;
+      text-align: center;
+    }
+    .fighter-box.enemy { border-color: var(--danger); }
+    .hp-bar {
+      width: 100%;
+      height: 10px;
+      background: #11131c;
+      margin-top: 8px;
+    }
+    .hp-fill {
+      height: 100%;
+      background: var(--success);
+      width: 100%;
+      transition: width 0.1s;
+    }
+    .enemy .hp-fill { background: var(--danger); }
+    .adaptive-shield {
+      width: 100%;
+      background: rgba(0, 127, 255, 0.1);
+      border: 1px solid #007fff;
+      font-size: 0.65rem;
+      color: #007fff;
+      padding: 4px;
+      margin-top: 6px;
+      text-align: left;
+    }
+    .shield-fill {
+      height: 4px;
+      background: #007fff;
+      width: 0%;
+      margin-top: 2px;
+    }
+    /* Tactical Interfaces */
+    .tactical-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .tac-btn {
+      background: #11131c;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px;
+      font-size: 0.65rem;
+      cursor: pointer;
+      font-family: monospace;
+      transition: all 0.2s;
+    }
+    .tac-btn:hover:not(:disabled) {
+      border-color: var(--accent);
+      background: rgba(0, 255, 255, 0.05);
+    }
+    .tac-btn:disabled {
+      color: var(--text-dim);
+      border-color: #11131c;
+      cursor: not-allowed;
+    }
+    .spoof-active {
+      border-color: var(--warning) !important;
+      color: var(--warning) !important;
+      box-shadow: 0 0 5px rgba(255, 170, 0, 0.2);
+    }
+    /* Terminal Output */
+    .combat-log {
+      height: 130px;
+      background: #040508;
+      border: 1px solid var(--border);
+      padding: 8px;
+      font-size: 0.75rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .log-siphon { color: var(--success); }
+    .log-damage { color: var(--danger); }
+    .log-sys { color: var(--warning); }
+    .log-eco { color: #805ad5; }
+    /* Draft Matrix */
+    .draft-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .draft-card {
+      background: rgba(255,255,255,0.01);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .draft-card:hover {
+      border-color: var(--accent);
+      background: rgba(0, 255, 255, 0.02);
+    }
+    .draft-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .draft-payload {
+      font-size: 0.7rem;
+      color: #718096;
+    }
+    .draft-alignment {
+      font-size: 0.65rem;
+      color: var(--accent-alt);
+      text-align: right;
+    }
+    .btn {
+      background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+      color: #000;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: monospace;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SYNARCHE III</h1>
+    <div class="subtitle">Ecosystem Information and Generational Genetics Engine</div>
+  </header>
+
+  <div class="grid">
+    
+    <!-- LEFT PANEL: Dynamic Multiplier Sheet -->
+    <div class="panel">
+      <div class="panel-title">Character Parameters</div>
+      
+      <div class="heat-box">
+        <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">System Heat Signature</div>
+        <div class="heat-val" id="heat-display">0.0°C</div>
+        <div class="thermal-bar"><div class="thermal-fill" id="thermal-fill"></div></div>
+      </div>
+
+      <div class="metric-row">
+        <span>Asymptotic Multiplier (Φ):</span>
+        <span class="metric-value" id="phi-display">1.00x</span>
+      </div>
+      <div class="metric-row">
+        <span>Active Damage:</span>
+        <span class="metric-value" id="stat-damage">10.0</span>
+      </div>
+      <div class="metric-row">
+        <span>Attack Frequency:</span>
+        <span class="metric-value" id="stat-speed">1.00 /s</span>
+      </div>
+      <div class="metric-row">
+        <span>Strike Latency:</span>
+        <span class="metric-value" id="stat-cooldown">1000ms</span>
+      </div>
+      <div class="metric-row">
+        <span>Active Accuracy:</span>
+        <span class="metric-value" id="stat-accuracy">100.0%</span>
+      </div>
+      <div class="metric-row">
+        <span>Self-Healing Loop:</span>
+        <span class="metric-value" id="stat-lifesteal">0.0%</span>
+      </div>
+
+      <div class="panel-title" style="margin-top: 15px;">Ecological Genome Mapping</div>
+      <div class="gene-list" id="gene-display">
+        <!-- Dyn generated -->
+      </div>
+    </div>
+
+    <!-- CENTER PANEL: Interactive Physical Arena -->
+    <div class="panel">
+      <div class="panel-title">Information Battlefield</div>
+      
+      <div class="combat-arena">
+        <div class="fighters">
+          <!-- Player -->
+          <div class="fighter-box">
+            <h4 style="color: var(--accent);">Our System</h4>
+            <div class="hp-bar"><div class="hp-fill" id="player-hp-fill"></div></div>
+            <div id="player-hp-text" style="font-size:0.7rem; margin-top:4px;">100 / 100</div>
+          </div>
+          <!-- Target -->
+          <div class="fighter-box enemy">
+            <h4 id="enemy-name" style="color: var(--danger);">deploy target...</h4>
+            <div class="hp-bar"><div class="hp-fill" id="enemy-hp-fill"></div></div>
+            <div id="enemy-hp-text" style="font-size:0.7rem; margin-top:4px;">0 / 0</div>
+            
+            <!-- Adaptive Multi-Vector Shielding -->
+            <div class="adaptive-shield">
+              <div style="display: flex; justify-content: space-between;">
+                <span>Reactive Shielding:</span>
+                <span id="enemy-shield-text">0.0</span>
+              </div>
+              <div class="shield-fill" id="enemy-shield-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tactical Interventions with Physical Feedback -->
+        <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border); padding: 12px;">
+          <div style="font-size: 0.7rem; color: var(--accent); margin-bottom: 8px; text-transform:uppercase; letter-spacing:1px;">Active Signal Modulators</div>
+          <div class="tactical-grid">
+            <button class="tac-btn" id="btn-overload" onclick="triggerOverload()">Overload<br>(Strike Clock)</button>
+            <button class="tac-btn" id="btn-ground" onclick="triggerGround()">Ground<br>(Transfer Shield)</button>
+            <button class="tac-btn" id="btn-spoof" onclick="triggerSpoof()">Spoof<br>(Decoy Signal)</button>
+          </div>
+        </div>
+
+        <div class="combat-log" id="log-display"></div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL: Evolutionary Redraw Panel -->
+    <div class="panel">
+      <div class="panel-title">Stochastic Specimen Selection</div>
+      <div style="font-size: 0.65rem; color: #718096; margin-bottom: 12px; line-height: 1.3;">
+        Ecosystem generates specimens stochastically based on Cosine Similarity. Highly tailored builds draw similar targets.
+      </div>
+      
+      <div class="draft-container" id="draft-display"></div>
+      
+      <button class="btn btn-secondary" style="margin-top:10px;" onclick="stochasticRedraw()">Stochastic Redraw</button>
+      
+      <div class="panel-title" style="margin-top: 15px;">Phoenix Rebirth</div>
+      <button class="btn" style="background: linear-gradient(135deg, var(--danger), #ff50a0); color:#fff;" onclick="triggerRebirth()">Trigger Rebirth</button>
+      <div style="text-align: center; font-size: 0.7rem; color: #718096; margin-top: 8px;" id="rebirth-display">
+        Accumulated Run Debt: 0.00
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // State Space Definition
+    let player = {
+      hp: 100, maxHp: 100, baseDmg: 10, speed: 1.0, lifesteal: 0,
+      cooldownTimer: 0, // Critical Bugfix: Initialize cooldownTimer to prevent NaN propagation
+      stats: {
+        Bleed: 0,
+        Freeze: 0,
+        Haste: 0,
+        Pierce: 0,
+        Siphon: 0
+      }
+    };
+
+    let ecosystem = {
+      resistances: { Bleed: 0, Freeze: 0, Haste: 0, Pierce: 0, Siphon: 0 },
+      pressureLimit: 12.0, // Total Thermodynamic Adaptability Cap (Conservation Law)
+      adaptationRate: 0.8,
+      decayRate: 0.3
+    };
+
+    let enemy = null;
+    let heat = 0.0;
+    let runDebt = 0.0;
+    let spoofActive = false;
+    let overloadActive = false;
+
+    // Specimen Library
+    const monsterLibrary = [
+      { id: "v_bat", name: "Generational Bat", baseHp: 40, dmg: 4, stats: { Haste: 2, Siphon: 1, Pierce: 0 }, baseProb: 0.4 },
+      { id: "stone_turtle", name: "Stone Turtle", baseHp: 140, dmg: 3, stats: { Pierce: -0.5, Haste: -1.2, Bleed: 1 }, baseProb: 0.3 },
+      { id: "ink_slime", name: "Ink Drip Slime", baseHp: 65, dmg: 5, stats: { Bleed: 3, Freeze: 1.5, Haste: 0.5 }, baseProb: 0.35 },
+      { id: "void_astronaut", name: "Void Astronaut", baseHp: 170, dmg: 9, stats: { Siphon: 3, Pierce: 2.5, Freeze: 1 }, baseProb: 0.15 }
+    ];
+
+    // Log-Saturation Multiplier
+    function calculatePhi() {
+      let sumOfSquares = 0;
+      Object.keys(player.stats).forEach(key => {
+        let val = player.stats[key];
+        let weight = 1.0 / (1.0 + Math.log(1.0 + Math.abs(val)));
+        sumOfSquares += weight * Math.pow(val, 2);
+      });
+      let phiRaw = Math.sqrt(sumOfSquares);
+      let alpha = 2.0, beta = 0.25;
+      let phi = 1.0 + alpha * Math.log(1.0 + beta * phiRaw);
+      document.getElementById('phi-display').innerText = phi.toFixed(2) + "x";
+      return phi;
+    }
+
+    // Weapon Cooldown governed by Speed and Thermal Signatures
+    function getAttackCooldown() {
+      let speed = player.speed + (player.stats.Haste || 0);
+      if (overloadActive) {
+        speed += 12.0; // Overload introduces raw mechanical frequency
+      }
+      speed = Math.max(0.1, speed);
+      return 80 + 920 * Math.exp(-0.06 * speed);
+    }
+
+    // Render Genes with Environmental Resistances
+    function renderGenes() {
+      let html = '';
+      Object.keys(ecosystem.resistances).forEach(key => {
+        let val = ecosystem.resistances[key];
+        let pct = (val / ecosystem.pressureLimit) * 100;
+        html += `
+          <div class="gene-item">
+            <div class="gene-header">
+              <span>${key} Resistance</span>
+              <span>${val.toFixed(1)} / ${ecosystem.pressureLimit}</span>
+            </div>
+            <div class="gene-bar"><div class="gene-fill" style="width: ${pct}%;"></div></div>
+          </div>
+        `;
+      });
+      document.getElementById('gene-display').innerHTML = html;
+    }
+
+    // Cosine Vector Alignment
+    function getCosineSimilarity(vP, vE) {
+      let dot = 0, normP = 0, normE = 0;
+      Object.keys(player.stats).forEach(k => {
+        let pVal = player.stats[k];
+        let eVal = vE[k] || 0;
+        dot += pVal * eVal;
+        normP += pVal * pVal;
+        normE += eVal * eVal;
+      });
+      if (normP === 0 || normE === 0) return 0.5;
+      return dot / (Math.sqrt(normP) * Math.sqrt(normE));
+    }
+
+    // Stochastic Sampling Draft (Roulette selection using Alignment)
+    function stochasticRedraw() {
+      let candidates = [];
+      let totalProbability = 0;
+
+      monsterLibrary.forEach(mon => {
+        let similarity = getCosineSimilarity(player.stats, mon.stats);
+        let alignment = 1.0 + 2.0 * similarity;
+        let adjustedProb = mon.baseProb * alignment;
+        candidates.push({ mon, adjustedProb, similarity });
+        totalProbability += adjustedProb;
+      });
+
+      let selectedList = [];
+      let pool = [...candidates];
+
+      for (let i = 0; i < 3; i++) {
+        if (pool.length === 0) break;
+        let currentTotal = pool.reduce((acc, c) => acc + c.adjustedProb, 0);
+        let roll = Math.random() * currentTotal;
+        let accumulator = 0;
+        let selectedIndex = 0;
+
+        for (let j = 0; j < pool.length; j++) {
+          accumulator += pool[j].adjustedProb;
+          if (roll <= accumulator) {
+            selectedIndex = j;
+            break;
+          }
+        }
+        selectedList.push(pool[selectedIndex]);
+        pool.splice(selectedIndex, 1);
+      }
+
+      let draftHTML = '';
+      selectedList.forEach(c => {
+        let statsStr = Object.entries(c.mon.stats)
+          .filter(([k, v]) => v !== 0)
+          .map(([k, v]) => `${k}:${v > 0 ? '+' : ''}${v}`)
+          .join(', ');
+
+        draftHTML += `
+          <div class="draft-card" onclick="startFight('${c.mon.id}')">
+            <div class="draft-header">
+              <span>${c.mon.name}</span>
+              <span style="color:#718096;">HP:${c.mon.baseHp}</span>
+            </div>
+            <div class="draft-payload">Yield: ${statsStr}</div>
+            <div class="draft-alignment">Alignment: ${(c.similarity * 100).toFixed(0)}%</div>
+          </div>
+        `;
+      });
+
+      document.getElementById('draft-display').innerHTML = draftHTML;
+    }
+
+    // Initiating Fights
+    function startFight(monsterId) {
+      let template = monsterLibrary.find(m => m.id === monsterId);
+      if (!template) return;
+
+      enemy = {
+        id: template.id,
+        name: template.name,
+        hp: template.baseHp,
+        maxHp: template.baseHp,
+        dmg: template.dmg,
+        stats: { ...template.stats },
+        cooldownTimer: 0,
+        shield: 0,
+        bleedTicks: 0,
+        freezeTicks: 0,
+        combatDuration: 0.0 // Tracks runtime for informational leakage calculations
+      };
+
+      document.getElementById('enemy-name').innerText = enemy.name;
+      logEvent(`Deployed specimen: ${enemy.name}. Adaptation loops online.`, 'log-sys');
+      updateUI();
+    }
+
+    // Tactical Module Modulators
+    function triggerOverload() {
+      overloadActive = true;
+      logEvent("CRITICAL ENGINE OVERLOAD: Weapon frequency spiked. High kinetic output is causing extreme heat leaks.", "log-sys");
+      document.getElementById('btn-overload').disabled = true;
+    }
+
+    function triggerGround() {
+      if (enemy && enemy.shield > 0) {
+        let shieldStrength = enemy.shield;
+        enemy.shield = 0;
+        
+        // Bypassing is not free: transfer grounding shield into thermal feedback
+        let heatInjected = shieldStrength * 1.5;
+        heat += heatInjected;
+        
+        // Grounding also gives the enemy a sudden speed rush
+        enemy.cooldownTimer += 600; 
+
+        logEvent(`GROUND COMPLETED: Neutralized ${shieldStrength.toFixed(1)} shield points. Dissipated heat absorbed (+${heatInjected.toFixed(1)}°C). Enemy speed surged.`, "log-sys");
+      } else {
+        logEvent("Grounding failed: No active energy signatures detected.", "log-sys");
+      }
+    }
+
+    function triggerSpoof() {
+      spoofActive = !spoofActive;
+      let btn = document.getElementById('btn-spoof');
+      if (spoofActive) {
+        btn.classList.add('spoof-active');
+        logEvent("SIGNAL DECOY ONLINE: Transmitting spoofed Freeze and Bleed frequency to confuse generational adaptation trackers.", "log-sys");
+      } else {
+        btn.classList.remove('spoof-active');
+        logEvent("SIGNAL DECOY OFFLINE: Restoring raw informational footprint.", "log-sys");
+      }
+    }
+
+    // Logging Output Panel
+    function logEvent(text, cssClass) {
+      let logBox = document.getElementById('log-display');
+      let entry = document.createElement('p');
+      entry.className = `log-entry ${cssClass}`;
+      entry.innerText = `[SYS] ${text}`;
+      logBox.appendChild(entry);
+      logBox.scrollTop = logBox.scrollHeight;
+    }
+
+    // Main Closed-Loop Processing Tick
+    let lastTime = Date.now();
+    setInterval(() => {
+      let now = Date.now();
+      let dt = (now - lastTime) / 1000;
+      lastTime = now;
+
+      // Handle Heat sinks
+      let heatDecay = 1.8;
+      if (overloadActive) {
+        heat += 12.0 * dt; // Build heat while overloaded
+      }
+      heat = Math.max(0, heat - heatDecay * dt);
+      
+      // Update thermodynamic graphics
+      document.getElementById('heat-display').innerText = `${heat.toFixed(1)}°C`;
+      let thermalPct = Math.min(100, (heat / 60.0) * 100);
+      document.getElementById('thermal-fill').style.width = thermalPct + '%';
+
+      if (heat > 45.0) {
+        // High heat leaks thermal damage directly
+        player.hp = Math.max(1, player.hp - 3.5 * dt);
+      }
+
+      if (!enemy || enemy.hp <= 0 || player.hp <= 0) return;
+
+      enemy.combatDuration += dt;
+      let phi = calculatePhi();
+      let attackCd = getAttackCooldown();
+      let attacksPerSecond = 1000.0 / attackCd;
+
+      // Accuracy degradation caused by excess heat
+      let activeAccuracy = 1.0;
+      if (heat > 35.0) {
+        activeAccuracy = Math.max(0.20, 1.0 - 0.02 * (heat - 35.0));
+      }
+
+      // Check run health bounds (Run Debt accumulation)
+      let currentNetSpeed = player.speed + (player.stats.Haste || 0);
+      if (currentNetSpeed < 1.0) {
+        runDebt += Math.abs(1.0 - currentNetSpeed) * dt;
+        document.getElementById('rebirth-display').innerText = `Accumulated Run Debt: ${runDebt.toFixed(2)}`;
+      }
+
+      // Adaptability multi-vector loops: Enemy shield grows with speed and incoming DPS
+      let rawDpsEst = (player.baseDmg * phi) * attacksPerSecond;
+      let targetShieldGrowth = 1.8 * attacksPerSecond + 0.08 * rawDpsEst;
+      
+      // Shield adaptation is hampered if target is frozen
+      if (enemy.freezeTicks > 0) {
+        targetShieldGrowth *= 0.35;
+      }
+      let targetShieldDecay = 1.0;
+      enemy.shield = Math.max(0, enemy.shield + (targetShieldGrowth - targetShieldDecay * enemy.shield) * dt);
+
+      // Fight Timers
+      player.cooldownTimer += dt * 1000;
+      enemy.cooldownTimer += dt * 1000;
+
+      // Player System Execution Phase
+      if (player.cooldownTimer >= attackCd) {
+        player.cooldownTimer = 0;
+
+        if (Math.random() > activeAccuracy) {
+          logEvent("Strike missed! Laser guidance corrupted by thermodynamic thermal drift.", "log-damage");
+        } else {
+          // Check enemy resistances (Direct interaction with generational adaptive genome)
+          let pierceDmg = (player.stats.Pierce || 0) * phi;
+          let baseDamage = (player.baseDmg * phi);
+          
+          let enemyPierceResistance = ecosystem.resistances.Pierce || 0;
+          let netPierce = Math.max(0, pierceDmg - enemyPierceResistance * 2);
+
+          let netDmg = Math.max(1.0, (baseDamage + netPierce) - enemy.shield);
+          enemy.hp = Math.max(0, enemy.hp - netDmg);
+
+          logEvent(`Struck target for ${netDmg.toFixed(1)} dmg (Shield: ${enemy.shield.toFixed(1)})`, 'log-siphon');
+
+          // Apply Status Effects governed by adaptive genome
+          let bleedResistance = ecosystem.resistances.Bleed || 0;
+          if (player.stats.Bleed > 0 && Math.random() < (0.45 - bleedResistance * 0.025)) {
+            enemy.bleedTicks += 4; // inflict bleed stacks
+            logEvent("Applied Bleed ticks to target.", "log-sys");
+          }
+
+          let freezeResistance = ecosystem.resistances.Freeze || 0;
+          if (player.stats.Freeze > 0 && Math.random() < (0.35 - freezeResistance * 0.025)) {
+            enemy.freezeTicks += 3;
+            logEvent("Applied cryogenic Freeze to target.", "log-sys");
+          }
+
+          // Recovery Siphoning
+          let siphonResistance = ecosystem.resistances.Siphon || 0;
+          let netSiphon = Math.max(0, (player.lifesteal + (player.stats.Siphon || 0) * 0.02) - siphonResistance * 0.015);
+          if (netSiphon > 0) {
+            let heal = Math.min(player.maxHp - player.hp, netDmg * netSiphon);
+            player.hp += heal;
+            if (heal > 0) logEvent(`Siphoned +${heal.toFixed(1)} HP from target.`, 'log-siphon');
+          }
+        }
+      }
+
+      // Bleed Damage over Time
+      if (enemy.bleedTicks > 0) {
+        enemy.hp = Math.max(0, enemy.hp - 2.5 * dt);
+        enemy.bleedTicks = Math.max(0, enemy.bleedTicks - dt);
+      }
+      if (enemy.freezeTicks > 0) {
+        enemy.freezeTicks = Math.max(0, enemy.freezeTicks - dt);
+      }
+
+      // Enemy Action Cycle
+      let enemyCooldownMax = 1200;
+      if (enemy.freezeTicks > 0) {
+        enemyCooldownMax *= 1.8; // freeze slows down enemy cooldown loop
+      }
+      if (enemy.cooldownTimer >= enemyCooldownMax) {
+        enemy.cooldownTimer = 0;
+        let damageInflicted = enemy.dmg;
+        player.hp = Math.max(0, player.hp - damageInflicted);
+        logEvent(`${enemy.name} hits us for ${damageInflicted} damage.`, 'log-damage');
+      }
+
+      // Post-Combat Resolution
+      if (enemy.hp <= 0) {
+        logEvent(`Defeated ${enemy.name}! Permanent stat siphoned directly.`, 'log-siphon');
+        
+        // Direct absorption of candidate specimen's traits
+        Object.keys(enemy.stats).forEach(k => {
+          player.stats[k] = (player.stats[k] || 0) + enemy.stats[k];
+          logEvent(`Siphoned trait [${k}] by ${enemy.stats[k]} units.`, 'log-siphon');
+        });
+
+        // GENERATIONAL ADAPTATION COMPILING (Success-Weighted Learning)
+        // The ecosystem learns from how it died and adapts specifically to successful strategies
+        let adaptationPayload = {};
+        if (spoofActive) {
+          // Player spoofed sensor footprints: target adapts incorrectly
+          adaptationPayload = { Bleed: 3.5, Freeze: 3.5, Pierce: 0, Haste: 0, Siphon: 0 };
+          logEvent("Ecosystem sensors spoofed! Generational resistance redirected to decoy coordinates.", "log-eco");
+        } else {
+          // Track actual success parameters
+          adaptationPayload.Bleed = enemy.bleedTicks > 0 ? 1.5 : 0;
+          adaptationPayload.Freeze = enemy.freezeTicks > 0 ? 1.5 : 0;
+          adaptationPayload.Pierce = (player.stats.Pierce || 0) > 0 ? 2.0 : 0;
+          adaptationPayload.Siphon = (player.stats.Siphon || 0) > 0 ? 1.5 : 0;
+          adaptationPayload.Haste = (player.stats.Haste || 0) > 0 ? 1.0 : 0;
+        }
+
+        // Apply adaptation increments amplified by Heat leakage
+        let leakageAmplifier = 1.0 + (heat / 20.0);
+        Object.keys(ecosystem.resistances).forEach(k => {
+          let delta = (adaptationPayload[k] || 0) * ecosystem.adaptationRate * leakageAmplifier;
+          ecosystem.resistances[k] += delta;
+        });
+
+        // Thermodynamic Normalization (Conservation of Pressure)
+        let currentTotalPressure = Object.values(ecosystem.resistances).reduce((a, b) => a + b, 0);
+        if (currentTotalPressure > ecosystem.pressureLimit) {
+          let normalizer = ecosystem.pressureLimit / currentTotalPressure;
+          Object.keys(ecosystem.resistances).forEach(k => {
+            ecosystem.resistances[k] *= normalizer;
+          });
+          logEvent("Conservation of Pressure active: Ecosystem defenses normalized to total system constraints.", "log-eco");
+        }
+
+        // Naturally decay unused channels
+        Object.keys(ecosystem.resistances).forEach(k => {
+          if (!adaptationPayload[k]) {
+            ecosystem.resistances[k] = Math.max(0, ecosystem.resistances[k] - ecosystem.decayRate);
+          }
+        });
+
+        player.hp = player.maxHp;
+        enemy = null;
+        overloadActive = false; // reset overload
+        renderGenes();
+        stochasticRedraw();
+      } else if (player.hp <= 0) {
+        logEvent(`Player state collapsed due to environmental pressure. Build debt logged.`, 'log-damage');
+        player.hp = player.maxHp;
+        enemy = null;
+        overloadActive = false;
+        stochasticRedraw();
+      }
+
+      updateUI();
+    }, 50);
+
+    // Dynamic UI Updates
+    function updateUI() {
+      let pPct = (player.hp / player.maxHp) * 100;
+      document.getElementById('player-hp-fill').style.width = pPct + '%';
+      document.getElementById('player-hp-text').innerText = `${player.hp.toFixed(0)} / ${player.maxHp}`;
+      
+      let attackCd = getAttackCooldown();
+      let strikesPerSec = 1000.0 / attackCd;
+      document.getElementById('stat-speed').innerText = `${strikesPerSec.toFixed(2)} / s`;
+      document.getElementById('stat-cooldown').innerText = `${attackCd.toFixed(0)}ms`;
+      document.getElementById('stat-damage').innerText = (player.baseDmg * (parseFloat(document.getElementById('phi-display').innerText) || 1)).toFixed(1);
+      
+      let activeAccuracy = 1.0;
+      if (heat > 35.0) {
+        activeAccuracy = Math.max(0.20, 1.0 - 0.02 * (heat - 35.0));
+      }
+      document.getElementById('stat-accuracy').innerText = (activeAccuracy * 100).toFixed(1) + '%';
+
+      let netSiphon = Math.max(0, (player.lifesteal + (player.stats.Siphon || 0) * 0.02) - (ecosystem.resistances.Siphon || 0) * 0.015);
+      document.getElementById('stat-lifesteal').innerText = (netSiphon * 100).toFixed(1) + '%';
+
+      if (enemy) {
+        let ePct = (enemy.hp / enemy.maxHp) * 100;
+        document.getElementById('enemy-hp-fill').style.width = ePct + '%';
+        document.getElementById('enemy-hp-text').innerText = `${enemy.hp.toFixed(0)} / ${enemy.maxHp}`;
+        
+        document.getElementById('enemy-shield-text').innerText = enemy.shield.toFixed(1);
+        let shPct = Math.min(100, (enemy.shield / 35) * 100);
+        document.getElementById('enemy-shield-fill').style.width = shPct + '%';
+      } else {
+        document.getElementById('enemy-hp-fill').style.width = '0%';
+        document.getElementById('enemy-shield-fill').style.width = '0%';
+        document.getElementById('enemy-shield-text').innerText = '0.0';
+        document.getElementById('enemy-hp-text').innerText = '0 / 0';
+        document.getElementById('enemy-name').innerText = 'Awaiting Specimen...';
+      }
+    }
+
+    // Phoenix Rebirth Sequence
+    function triggerRebirth() {
+      let startingBoost = Math.sqrt(runDebt) * 0.45;
+      logEvent(`REBIRTH TRIGGERED: Converted growth debt into permanent starting speed (+${startingBoost.toFixed(2)} Haste)`, 'log-sys');
+      
+      player.speed += startingBoost;
+      Object.keys(player.stats).forEach(k => player.stats[k] = 0);
+      player.hp = player.maxHp;
+      player.cooldownTimer = 0; // Clear player cooldown on rebirth
+      enemy = null;
+      runDebt = 0;
+      heat = 0;
+      spoofActive = false;
+      overloadActive = false;
+
+      // Clear layout toggles
+      document.getElementById('btn-spoof').classList.remove('spoof-active');
+      document.getElementById('btn-overload').disabled = false;
+      document.getElementById('rebirth-display').innerText = `Accumulated Run Debt: 0.00`;
+
+      calculatePhi();
+      renderGenes();
+      stochasticRedraw();
+    }
+
+    // Initial Processing
+    calculatePhi();
+    renderGenes();
+    stochasticRedraw();
+  </script>
+</body>
+</html>

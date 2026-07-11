@@ -1,0 +1,11 @@
+Semantic_Anchor,Category,Extracted_Value
+z.registry(),Primitive,Instantiates a typed or generic collection of schemas
+Registry Methods,Method,.add() / .has() / .get() / .remove() / .clear() execute core collection operations
+id Property,Constraint,Triggers an Error if duplicated within any registry
+.register(),Method,Appends schema to registry and uniquely returns the original mutable schema instance
+z.globalRegistry,Global State,Default registry utilizing the base GlobalMeta interface
+GlobalMeta,Interface,Extensible type definition for global metadata properties via declaration merging
+.meta(),Method,Registers metadata into z.globalRegistry and returns a new immutable instance
+.describe(),Method,Shorthand wrapper for .meta() that populates only the description field
+z.$output / z.$input,Utility,Special symbols referencing inferred output/input types within custom registries
+Registry Constraints,Architecture,Accepts a secondary generic (e.g. z.ZodString) to strictly constrain allowed schemas
