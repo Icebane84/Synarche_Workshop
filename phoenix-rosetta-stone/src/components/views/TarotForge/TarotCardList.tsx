@@ -15,11 +15,11 @@ export const TarotCardList: React.FC<TarotCardListProps> = ({
 }) => {
     return (
         <div className="space-y-2.5">
-            {deck.map((card) => {
+            {deck.map((card, idx) => {
                 const isSelected = selectedCard.id === card.id;
                 return (
                     <div
-                        key={card.id}
+                        key={card.id || card.name || `card-${idx}`}
                         role="button"
                         tabIndex={0}
                         aria-selected={isSelected}

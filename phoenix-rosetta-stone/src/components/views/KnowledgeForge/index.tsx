@@ -295,9 +295,9 @@ export const KnowledgeForgeView: React.FC = () => {
                 No substrate documents matched search criteria.
               </div>
             ) : (
-              filteredDocs.map((doc) => (
+              filteredDocs.map((doc, idx) => (
                 <div
-                  key={doc.id}
+                  key={doc.id || doc.title || `doc-${idx}`}
                   className={`p-4 rounded-xl border transition-all ${
                     selectedDoc?.id === doc.id
                       ? 'bg-cyan-950/40 border-cyan-400/60 shadow-[0_0_15px_rgba(100,220,255,0.15)]'

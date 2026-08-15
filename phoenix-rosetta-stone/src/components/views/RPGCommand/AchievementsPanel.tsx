@@ -15,9 +15,9 @@ export const AchievementsPanel: React.FC<AchievementsPanelProps> = ({ achievemen
 
   return (
     <div className="space-y-3">
-      {achievements.map((ach) => (
+      {achievements.map((ach, idx) => (
         <div
-          key={ach.id}
+          key={ach.id || ach.title || `ach-${idx}`}
           className="bg-panel-bg/40 border border-white/5 rounded-lg p-3 font-mono text-xs flex gap-3 relative overflow-hidden"
         >
           <div className="text-xl">🏆</div>

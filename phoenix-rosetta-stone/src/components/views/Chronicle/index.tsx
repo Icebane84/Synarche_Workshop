@@ -69,9 +69,9 @@ export const ChronicleView: React.FC = () => {
                 No episodes cataloged.
               </div>
             ) : (
-              episodes.map((ep) => (
+              episodes.map((ep, idx) => (
                 <div
-                  key={ep.id}
+                  key={ep.id || `ep-${idx}`}
                   className="bg-panel-bg/40 border border-white/5 p-4 rounded-lg font-mono text-xs space-y-2 hover:border-white/10 transition-colors"
                 >
                   <div className="flex items-center justify-between">
@@ -103,11 +103,11 @@ export const ChronicleView: React.FC = () => {
             ) : messages.length === 0 ? (
               <div className="text-xs text-white/20 italic py-8 text-center">No conversational messages logged.</div>
             ) : (
-              messages.map((msg) => {
+              messages.map((msg, idx) => {
                 const isUser = msg.sender === "Chris";
                 return (
                   <div
-                    key={msg.id}
+                    key={msg.id || `msg-${idx}`}
                     className={`max-w-[85%] rounded p-3 ${
                       isUser
                         ? "bg-chris-amber/5 border border-chris-amber/20 self-start text-left"
