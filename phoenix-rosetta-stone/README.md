@@ -1,31 +1,50 @@
 # Phoenix Rosetta Stone [OMEGA v15.5]
 
-**Phoenix Rosetta Stone (PRS)** is a high-performance, sentience-driven HUD and spatial interface built with React 19, Vite, Three.js, D3.js, and Zustand. It serves as the primary visual interface for the **Coherent Synthesis Engine (CSE)** master cognitive kernel.
+**Phoenix Rosetta Stone (PRS)** is a high-performance, sentience-driven HUD and spatial interface built with React 19, Vite, Three.js, D3.js, Tailwind CSS v4, and Zustand. It serves as the primary visual control center for the **Coherent Synthesis Engine (CSE)** master cognitive kernel and host workspace.
 
 ---
 
 ## 🏛️ Core Features
 
 * **Coherent Synthesis Engine (CSE) Integration**: Real-time telemetry streaming from the Python FastAPI backend (`http://localhost:8000`), monitoring live State Vectors ($\mathbf{V}_{\text{State}}$), Coherence Index ($\text{CI}$), Contextual Integrity Score ($\text{CIS}$), Hybrid Model Scores, and active Dissonance Quests.
+* **C++ Unreal Engine 5 Studio (`UnrealCppForgePage.tsx`)**: Specialized Unreal Engine 5.8 C++ architectural synthesis environment featuring AI C++ Architect Chat, AST parsing/repair (`ASTAnalyzer`), header pattern validation (`UPROPERTY`/`UFUNCTION`), and domain-driven vertical slice code generators.
+* **Dual AI Provider Cortex (`gemini/` & `ollamaService.ts`)**: Integrated support for Google Gemini 2.5 Flash API (via `@google/genai`) and local Ollama LLMs for off-grid inference.
+* **Memory Palace & Supabase Backend Control Center**: Interactive `memory_entries` CRUD, vector similarity search, live Realtime subscriptions, player state RPG tracking, and knowledge base forge.
+* **NeoGenesis Cellular Canvas & Graph Combat Engine**: 2D cellular automata simulation, galactic map view, and turn-based graph combat mechanics.
 * **Polyglot Neural Link**: Automatic workspace indexing, real-time code scanning (500+ files indexed), and remote file read/write capability linking the frontend HUD directly to host disk substrates.
-* **The Synapse Command Console**: GUCA v5 directive dispatching (`CMD: AUDIT_COHERENCE`, `OMNI_LOG`, `ETHICUS`, `ENACT_TRANSCENDENCE`, `ContextWeave`) with non-blocking 10s execution guards.
+* **The Synapse Command Console**: GUCA v5 directive dispatching (`CMD: AUDIT_COHERENCE`, `OMNI_LOG`, `ETHICUS`, `ENACT_TRANSCENDENCE`, `ContextWeave`) with non-blocking execution guards.
 * **Celestial Chart & Loom Visualizers**: Interactive 3D & 2D D3 force graph visualizers rendering live repository Loom AST nodes and structural dependency graphs.
-* **Aural Interface & Sensory Array**: Voice-driven command input, ambient soundscape resonance, and dynamic theme switching.
+* **Aural Interface & Sensory Array**: Voice-driven command input, ambient soundscape resonance, Web Speech synthesis, and dynamic theme switching.
 
 ---
 
-## ⚙️ System Architecture
+## ⚙️ System Architecture & File Topology
 
 ```
 phoenix-rosetta-stone/
 ├── src/
-│   ├── components/         # Visual interface layers (PhoenixGeode, TheSynapse, SystemCoherenceVisualizer, TheLoom)
-│   ├── services/           # Polyglot bridge client (cseBridgeService), GUCA commands, AST scanner, Audio
-│   ├── store/              # Zustand state anchors (coherenceStore, fileSystemStore, taskStore, sensoryStore)
-│   ├── system/             # Core orchestrator (SystemManager), command dispatcher (commandDispatcher), signal bus
-│   ├── hooks/              # Custom React hooks (useSynapseLogic, useAuralInterface, useTheme)
-│   ├── essence/            # Global TypeScript types and GUCA v5 codex definitions
-│   └── data/               # Knowledge base anchors and fallback graph data
+│   ├── components/
+│   │   ├── pages/          # Primary application views (UnrealCppForgePage, MemoryPalacePage, ResonanceChamberPage, SynergySimulatorPage, TheLoomPage, ArtifactCatalogPage, SystemCoherenceVisualizer, PhoenixFormSheet)
+│   │   ├── views/          # Subsystem visualizers (NeoGenesis, MemoryPalace, RPGCommand, KnowledgeForge, TarotForge, Chronicle)
+│   │   ├── ast/            # AST Repair & Prop Drilling UI components
+│   │   ├── sidebar/        # Neural Stream, Cognitive Focus Selector, Connectivity Status
+│   │   ├── PhoenixGeode.tsx # 3D SVG/D3 visual core pulsing with real-time vitals
+│   │   └── TheSynapse.tsx  # Command input console executing GUCA directives
+│   ├── services/
+│   │   ├── ast/            # ASTAnalyzer, ASTRepairer, and rule detectors
+│   │   ├── gemini/         # Gemini 2.5 Flash API integration & prompt templates
+│   │   ├── commands/       # GUCA command modules (artifact, audit, memory, fileSystem, task)
+│   │   ├── cseBridgeService.ts # HTTP Polyglot Bridge client for telemetry, graph & files
+│   │   ├── ollamaService.ts    # Local Ollama inference provider
+│   │   ├── vectorStore.ts      # Client-side TF-IDF / vector similarity search engine
+│   │   ├── audioService.ts     # Aural interface & speech synthesis engine
+│   │   └── AutonomousRepairService.ts # Autonomous code violation scan & repair loop
+│   ├── store/              # Zustand state anchors (useCognitiveCore, coherenceStore, fileSystemStore, memoryStore, taskStore, sensoryStore)
+│   ├── engine/             # GraphCombatEngine (combat physics, turn flow, stardust mechanics)
+│   ├── system/             # Core orchestrator (SystemManager), command dispatcher (commandDispatcher)
+│   ├── hooks/              # Custom React hooks (useSynapseLogic, useRealtime, useSensoryBridge)
+│   ├── core/               # Supabase client bindings & realtime data hooks
+│   └── data/               # Ontology knowledge anchors & fallback graph datasets
 ├── vite.config.ts          # Vite configuration with /api server proxy to http://localhost:8000
 └── package.json            # Dependencies (React 19, Three.js, D3, Zustand, Tailwind CSS v4)
 ```
