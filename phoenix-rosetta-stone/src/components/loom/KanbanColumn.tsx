@@ -74,9 +74,9 @@ export const KanbanColumn: React.FC<KanbanColumnProps> = ({
             <div className="flex-1 overflow-y-auto space-y-4 pr-1 custom-scrollbar min-h-0">
                 {tasks.length > 0 ? (
                     <AnimatePresence mode="popLayout">
-                        {tasks.slice(0, visibleCount).map((task) => (
+                        {tasks.slice(0, visibleCount).map((task, idx) => (
                             <TaskCard
-                                key={task.id}
+                                key={`${task.id || 'task'}-${task.timestamp || idx}-${idx}`}
                                 task={task}
                                 onSelect={() => { onSelectTask(task.id); }}
                                 onStatusChange={(newStatus) => { onStatusChange(task.id, newStatus); }}

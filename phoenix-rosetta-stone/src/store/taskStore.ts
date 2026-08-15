@@ -145,13 +145,21 @@ export const useTaskStore = create<TaskState>((set, get) => {
 
                 if (fetchError) throw fetchError;
 
-                const fetchedTasks: Task[] = data.map(
-                    (item: Record<string, unknown>) =>
-                        ({
-                            ...item,
-                            timestamp: new Date(item.timestamp as string | number).getTime(),
-                        }) as Task,
-                );
+                const seenIds = new Set<string>();
+                const fetchedTasks: Task[] = [];
+
+                for (const item of (data ?? [])) {
+                    let id = (item.id as string) || `TASK-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+                    if (seenIds.has(id)) {
+                        id = `${id}-${Math.random().toString(36).slice(2, 6)}`;
+                    }
+                    seenIds.add(id);
+                    fetchedTasks.push({
+                        ...item,
+                        id,
+                        timestamp: new Date(item.timestamp as string | number).getTime(),
+                    } as Task);
+                }
 
                 set({ 
                     tasks: fetchedTasks, 
@@ -201,8 +209,9 @@ export const useTaskStore = create<TaskState>((set, get) => {
         },
 
         addTask: async (taskData) => {
+            const uniqueSuffix = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
             const newTask: Task = {
-                id: `TASK-${String(Date.now().toString().slice(-6))}`,
+                id: `TASK-${uniqueSuffix}`,
                 timestamp: Date.now(),
                 status: 'To Do',
                 title: taskData.title,
@@ -212,7 +221,10 @@ export const useTaskStore = create<TaskState>((set, get) => {
             };
 
             // Optimistic Update: Always update local state immediately
-            set((state) => ({ tasks: [newTask, ...state.tasks] }));
+            set((state) => {
+                const filtered = state.tasks.filter((t) => t.id !== newTask.id);
+                return { tasks: [newTask, ...filtered] };
+            });
 
             if (get().isSimulationMode) {
                 return newTask;

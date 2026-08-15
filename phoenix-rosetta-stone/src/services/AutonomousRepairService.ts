@@ -62,15 +62,15 @@ class AutonomousRepairService {
 
     private async scanFileViolations(
         file: LocalFile,
-        tasks: Task[],
         addTask: (taskData: { title: string; notes: string; source: TaskSource; priority?: TaskPriority }) => Promise<Task | null>,
         isSovereign: boolean
     ): Promise<void> {
         const violations = await astAnalyzer.analyzeFile(file.path, file.content);
         if (!violations || violations.length === 0) return;
 
-        // Check for existing open task for this file
-        const existingTask = tasks.find(
+        // Check for existing open task for this file dynamically
+        const currentTasks = useTaskStore.getState().tasks;
+        const existingTask = currentTasks.find(
             (t) => t.notes?.includes(`File: ${file.path}`) && t.status !== 'Completed'
         );
         if (existingTask) return;
@@ -105,7 +105,7 @@ class AutonomousRepairService {
     private async pulse() {
         const { maintenanceMode } = useCoherenceStore.getState();
         const { scannedFiles, isConnected, rootHandle, setScannedFiles } = useFileSystemStore.getState();
-        const { tasks, addTask } = useTaskStore.getState();
+        const { addTask } = useTaskStore.getState();
 
         if (maintenanceMode === 'Manual' || this.isScanning || !isConnected) return;
 
@@ -115,7 +115,7 @@ class AutonomousRepairService {
         try {
             const activeFiles = await this.ensureActiveFiles(scannedFiles, rootHandle, setScannedFiles);
             for (const file of activeFiles) {
-                await this.scanFileViolations(file, tasks, addTask, isSovereign);
+                await this.scanFileViolations(file, addTask, isSovereign);
             }
         } catch (error) {
             console.error('[AutonomousRepairService] Pulse Fault:', error);
