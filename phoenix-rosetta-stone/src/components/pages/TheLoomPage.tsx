@@ -12,6 +12,7 @@ import ChronosTimeline from '../ChronosTimeline';
 import Tooltip from '../common/Tooltip';
 import { KanbanColumn } from '../loom/KanbanColumn';
 import { TaskDetailsModal } from '../loom/TaskDetailsModal';
+import { ASTDependencyView } from '../loom/ASTDependencyView';
 
 /**
  * The Loom Page [OMEGA v15.0]
@@ -31,34 +32,31 @@ const TheLoomPage: React.FC = () => {
     const connectionStatus = useTaskStore((state) => state.connectionStatus);
     const error = useTaskStore((state) => state.error);
     const initialize = useTaskStore((state) => state.initialize);
-    const subscribe = useTaskStore((state) => state.subscribe);
-    const unsubscribe = useTaskStore((state) => state.unsubscribe);
     const deleteTask = useTaskStore((state) => state.deleteTask);
+    const batchUpdateStatus = useTaskStore((state) => state.batchUpdateStatus);
+    const batchDeleteTasks = useTaskStore((state) => state.batchDeleteTasks);
+    const purgeSimulationTasks = useTaskStore((state) => state.purgeSimulationTasks);
+    const autoRepairAllHigh = useTaskStore((state) => state.autoRepairAllHigh);
 
     // Coherence Store (Autonomy)
     const maintenanceMode = useCoherenceStore((state) => state.maintenanceMode);
     const setMaintenanceMode = useCoherenceStore((state) => state.setMaintenanceMode);
 
     // Sensory Extension
-    const initializeSensors = useSensoryStore((state) => state.initializeSensors);
     const resonance = useSensoryResonance();
 
     // Local State
     const [selectedTaskId, setSelectedTaskId] = useState<string | null>(null);
+    const [selectedTaskIds, setSelectedTaskIds] = useState<Set<string>>(new Set());
+    const [isAutoRepairing, setIsAutoRepairing] = useState(false);
     const [viewMode, setViewMode] = useState<'kanban' | 'chronos' | 'ast'>('kanban');
     const [searchQuery, setSearchQuery] = useState('');
-    const [sourceFilter] = useState<TaskSource | 'All'>('All');
+    const [sourceFilter, setSourceFilter] = useState<TaskSource | 'All'>('All');
     const [visibleCounts, setVisibleCounts] = useState<Record<TaskStatus, number>>({
         'To Do': 50,
         'In Progress': 50,
         Completed: 50,
     });
-
-    // Lifecycle
-    useEffect(() => {
-        // No-op: SystemManager handles global initialization.
-        // We just keep the hook reference for future local-only triggers if needed.
-    }, []);
 
     // Derived Logic
     const selectedTask = useMemo(() => tasks.find((t) => t.id === selectedTaskId) ?? null, [tasks, selectedTaskId]);
@@ -89,7 +87,64 @@ const TheLoomPage: React.FC = () => {
         return grouped;
     }, [tasks, searchQuery, sourceFilter]);
 
+    const visibleTaskIds = useMemo(() => {
+        const ids: string[] = [];
+        COLUMNS.forEach((status) => {
+            tasksByStatus[status].slice(0, visibleCounts[status]).forEach((t) => ids.push(t.id));
+        });
+        return ids;
+    }, [tasksByStatus, visibleCounts]);
+
     // Handlers
+    const toggleSelectTask = (taskId: string) => {
+        setSelectedTaskIds((prev) => {
+            const next = new Set(prev);
+            if (next.has(taskId)) {
+                next.delete(taskId);
+            } else {
+                next.add(taskId);
+            }
+            return next;
+        });
+    };
+
+    const handleSelectAllVisible = () => {
+        if (selectedTaskIds.size >= visibleTaskIds.length && visibleTaskIds.length > 0) {
+            setSelectedTaskIds(new Set());
+        } else {
+            setSelectedTaskIds(new Set(visibleTaskIds));
+        }
+    };
+
+    const handleBatchComplete = async () => {
+        if (selectedTaskIds.size === 0) return;
+        await batchUpdateStatus(Array.from(selectedTaskIds), 'Completed');
+        setSelectedTaskIds(new Set());
+    };
+
+    const handleBatchDelete = async () => {
+        if (selectedTaskIds.size === 0) return;
+        if (confirm(`Purge ${selectedTaskIds.size} selected tasks?`)) {
+            await batchDeleteTasks(Array.from(selectedTaskIds));
+            setSelectedTaskIds(new Set());
+        }
+    };
+
+    const handleAutoRepairHigh = async () => {
+        setIsAutoRepairing(true);
+        try {
+            await autoRepairAllHigh();
+        } finally {
+            setIsAutoRepairing(false);
+        }
+    };
+
+    const handlePurgeSimulation = async () => {
+        if (confirm('Clear synthetic simulation tasks?')) {
+            await purgeSimulationTasks();
+        }
+    };
+
     const handleClearCompleted = async () => {
         const completed = tasks.filter((t) => t.status === 'Completed');
         if (confirm(`Eradicate ${completed.length} completed wefts from the weave?`)) {
@@ -109,14 +164,14 @@ const TheLoomPage: React.FC = () => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="h-full w-full p-6 flex flex-col transition-colors duration-1000 contain-content"
+            className="h-full w-full p-6 flex flex-col transition-colors duration-1000 contain-content overflow-y-auto"
             style={{
                 backgroundColor: `var(--color-void)`,
-                borderColor: resonance.accentColor + '22', // Subtle transparent border
+                borderColor: resonance.accentColor + '22',
             }}
         >
             {/* Header */}
-            <header className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <header className="mb-6 flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div>
                     <h2
                         className="text-4xl font-thin tracking-[0.25em] text-white transition-all duration-1000"
@@ -133,28 +188,95 @@ const TheLoomPage: React.FC = () => {
                     </div>
                 </div>
 
-                    <div className="flex flex-wrap items-center gap-4">
-                        <AutonomySelector mode={maintenanceMode} setMode={setMaintenanceMode} />
-                        
-                        <div className="relative glass-panel px-4 py-2 flex items-center gap-3">
-                            <Search size={14} className="text-weft-muted" />
-                            <input
-                                type="text"
-                                placeholder="TRACE WEFT..."
-                                value={searchQuery}
-                                onChange={(e) => {
-                                    setSearchQuery(e.target.value);
-                                }}
-                                className="bg-transparent text-xs font-mono text-weft focus:outline-none w-40 md:w-64"
-                            />
-                        </div>
-
-                        <ViewModeToggle view={viewMode} setView={setViewMode} />
+                <div className="flex flex-wrap items-center gap-3">
+                    <AutonomySelector mode={maintenanceMode} setMode={setMaintenanceMode} />
+                    
+                    <div className="relative glass-panel px-3 py-1.5 flex items-center gap-2">
+                        <Search size={14} className="text-weft-muted" />
+                        <input
+                            type="text"
+                            placeholder="TRACE WEFT..."
+                            value={searchQuery}
+                            onChange={(e) => {
+                                setSearchQuery(e.target.value);
+                            }}
+                            className="bg-transparent text-xs font-mono text-weft focus:outline-none w-36 md:w-52"
+                        />
                     </div>
+
+                    <ViewModeToggle view={viewMode} setView={setViewMode} />
+                </div>
             </header>
 
+            {/* Batch Action Bar & Domain Filters */}
+            <div className="mb-6 bg-black/40 border border-cyan-900/40 rounded-xl p-3 flex flex-wrap items-center justify-between gap-3 backdrop-blur-sm">
+                {/* Domain Filter Tabs */}
+                <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="text-[10px] uppercase font-mono text-cyan-400 mr-1 tracking-wider">Source:</span>
+                    {(['All', 'Dissonance Scanner', 'Manual', 'Synergy Simulator', 'Neural Link'] as const).map((src) => (
+                        <button
+                            key={src}
+                            onClick={() => setSourceFilter(src)}
+                            className={`px-2.5 py-1 rounded text-[10px] font-mono transition-all ${
+                                sourceFilter === src
+                                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40'
+                                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                            }`}
+                        >
+                            {src}
+                        </button>
+                    ))}
+                </div>
+
+                {/* Batch Action Buttons */}
+                <div className="flex items-center gap-2 flex-wrap">
+                    <button
+                        onClick={handleAutoRepairHigh}
+                        disabled={isAutoRepairing}
+                        className="flex items-center gap-1.5 px-3 py-1 text-[11px] font-mono rounded bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/40 transition-all disabled:opacity-50"
+                    >
+                        <RefreshCw size={12} className={isAutoRepairing ? 'animate-spin' : ''} />
+                        <span>{isAutoRepairing ? 'Healing...' : 'Auto-Repair High'}</span>
+                    </button>
+
+                    {selectedTaskIds.size > 0 && (
+                        <>
+                            <button
+                                onClick={handleBatchComplete}
+                                className="flex items-center gap-1 px-3 py-1 text-[11px] font-mono rounded bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 transition-all"
+                            >
+                                <ShieldCheck size={12} />
+                                <span>Complete ({selectedTaskIds.size})</span>
+                            </button>
+
+                            <button
+                                onClick={handleBatchDelete}
+                                className="flex items-center gap-1 px-3 py-1 text-[11px] font-mono rounded bg-red-500/10 hover:bg-red-500/20 text-red-300 border border-red-500/40 transition-all"
+                            >
+                                <ShieldAlert size={12} />
+                                <span>Purge ({selectedTaskIds.size})</span>
+                            </button>
+                        </>
+                    )}
+
+                    <button
+                        onClick={handlePurgeSimulation}
+                        className="px-2.5 py-1 text-[10px] font-mono rounded text-slate-400 hover:text-slate-200 hover:bg-white/5 border border-slate-800 transition-all"
+                    >
+                        Clean Sandbox
+                    </button>
+
+                    <button
+                        onClick={handleSelectAllVisible}
+                        className="px-2.5 py-1 text-[10px] font-mono rounded text-cyan-400 hover:bg-cyan-500/10 border border-cyan-500/30 transition-all"
+                    >
+                        {selectedTaskIds.size >= visibleTaskIds.length && visibleTaskIds.length > 0 ? 'Deselect All' : 'Select All'}
+                    </button>
+                </div>
+            </div>
+
             {/* Content Area */}
-            <main className="flex-1 overflow-hidden relative">
+            <main className="flex-1 overflow-hidden relative min-h-[500px]">
                 <AnimatePresence mode="wait">
                     {viewMode === 'kanban' ? (
                         <motion.div
@@ -162,7 +284,7 @@ const TheLoomPage: React.FC = () => {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 20 }}
-                            className="h-full grid grid-cols-1 md:grid-cols-3 gap-8"
+                            className="h-full grid grid-cols-1 md:grid-cols-3 gap-6"
                         >
                             {COLUMNS.map((status) => (
                                 <KanbanColumn
@@ -172,6 +294,8 @@ const TheLoomPage: React.FC = () => {
                                     visibleCount={visibleCounts[status]}
                                     onSelectTask={setSelectedTaskId}
                                     onStatusChange={updateTaskStatus}
+                                    selectedTaskIds={selectedTaskIds}
+                                    onToggleSelectTask={toggleSelectTask}
                                     onLoadMore={() => {
                                         setVisibleCounts((v) => ({ ...v, [status]: v[status] + 50 }));
                                     }}
@@ -186,7 +310,7 @@ const TheLoomPage: React.FC = () => {
                             initial={{ opacity: 0, scale: 0.98 }}
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0.98 }}
-                            className="h-full"
+                            className="h-full overflow-y-auto"
                         >
                             <ChronosTimeline tasks={tasks} />
                         </motion.div>
@@ -196,9 +320,9 @@ const TheLoomPage: React.FC = () => {
                             initial={{ opacity: 0, y: 15 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -15 }}
-                            className="h-full"
+                            className="h-full overflow-y-auto"
                         >
-                            <ASTHeatmapVisualizer />
+                            <ASTDependencyView />
                         </motion.div>
                     )}
                 </AnimatePresence>

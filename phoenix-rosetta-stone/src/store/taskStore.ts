@@ -58,6 +58,15 @@ interface TaskState {
 
     /** Triggers the autonomous repair service for a specific task. */
     resolveDissonance: (taskId: string) => Promise<{ success: boolean; message: string }>;
+
+    /** Batch status updates across multiple tasks. */
+    batchUpdateStatus: (taskIds: string[], status: TaskStatus) => Promise<void>;
+    /** Batch delete across multiple tasks. */
+    batchDeleteTasks: (taskIds: string[]) => Promise<void>;
+    /** Purges mock and simulation tasks. */
+    purgeSimulationTasks: () => Promise<void>;
+    /** Automatically resolves all high-priority dissonance scanner tasks. */
+    autoRepairAllHigh: () => Promise<{ resolved: number; failed: number }>;
 }
 
 const MOCK_TASKS: Task[] = [
@@ -358,6 +367,67 @@ export const useTaskStore = create<TaskState>((set, get) => {
         resolveDissonance: async (taskId) => {
             const { resolveDissonance: serviceResolve } = await import('../services/repairService');
             return serviceResolve(taskId);
+        },
+
+        batchUpdateStatus: async (taskIds, status) => {
+            const idSet = new Set(taskIds);
+            set((state) => ({
+                tasks: state.tasks.map((t) => (idSet.has(t.id) ? { ...t, status } : t)),
+            }));
+            if (!get().isSimulationMode) {
+                try {
+                    await supabase.from('tasks').update({ status }).in('id', taskIds);
+                } catch (e) {
+                    console.error('[The Loom] Batch status update failed:', e);
+                }
+            }
+            useCoherenceStore.getState().addNovaSpark(`Batch Update: ${taskIds.length} tasks transitioned to ${status}.`);
+        },
+
+        batchDeleteTasks: async (taskIds) => {
+            const idSet = new Set(taskIds);
+            set((state) => ({
+                tasks: state.tasks.filter((t) => !idSet.has(t.id)),
+            }));
+            if (!get().isSimulationMode) {
+                try {
+                    await supabase.from('tasks').delete().in('id', taskIds);
+                } catch (e) {
+                    console.error('[The Loom] Batch delete failed:', e);
+                }
+            }
+            useCoherenceStore.getState().addNovaSpark(`Batch Purge: ${taskIds.length} tasks removed from the weave.`);
+        },
+
+        purgeSimulationTasks: async () => {
+            set((state) => ({
+                tasks: state.tasks.filter((t) => !t.id.startsWith('TASK-SIM-')),
+            }));
+            useCoherenceStore.getState().addNovaSpark('Loom Purge: Simulation artifacts cleared.');
+        },
+
+        autoRepairAllHigh: async () => {
+            const highTasks = get().tasks.filter(
+                (t) => t.priority === 'High' && t.status !== 'Completed' && t.source === 'Dissonance Scanner'
+            );
+            let resolved = 0;
+            let failed = 0;
+            const { resolveDissonance: serviceResolve } = await import('../services/repairService');
+
+            for (const t of highTasks) {
+                try {
+                    const result = await serviceResolve(t.id);
+                    if (result.success) {
+                        resolved++;
+                    } else {
+                        failed++;
+                    }
+                } catch {
+                    failed++;
+                }
+            }
+            useCoherenceStore.getState().addNovaSpark(`Auto-Repair Complete: ${resolved} resolved, ${failed} unresolvable.`);
+            return { resolved, failed };
         },
     };
 });

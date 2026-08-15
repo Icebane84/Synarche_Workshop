@@ -47,9 +47,17 @@ interface TaskCardProps {
     task: Task;
     onSelect: () => void;
     onStatusChange?: (status: TaskStatus) => void;
+    isSelected?: boolean;
+    onToggleSelect?: () => void;
 }
 
-export const TaskCard: React.FC<TaskCardProps> = ({ task, onSelect, onStatusChange }) => {
+export const TaskCard: React.FC<TaskCardProps> = ({ 
+    task, 
+    onSelect, 
+    onStatusChange,
+    isSelected = false,
+    onToggleSelect,
+}) => {
     const sourceMeta = sourceMetadata[task.source];
     const priorityMeta = priorityMetadata[task.priority];
     
@@ -122,17 +130,35 @@ export const TaskCard: React.FC<TaskCardProps> = ({ task, onSelect, onStatusChan
             />
 
             <div className="pl-2">
-                <div className="flex justify-between items-start gap-4">
-                    <div className="space-y-1">
-                        <p className="text-weft font-medium text-sm leading-tight group-hover:text-cyan-200 transition-colors">
-                            {task.title}
-                        </p>
-                        {isRepairing && (
-                            <div className="flex items-center gap-1.5 text-[8px] font-mono text-amber-500 uppercase tracking-widest animate-pulse">
-                                <Loader size={8} className="animate-spin" />
-                                Repairing Substrate...
-                            </div>
+                <div className="flex justify-between items-start gap-3">
+                    <div className="flex items-start gap-2.5 min-w-0">
+                        {onToggleSelect && (
+                            <button
+                                type="button"
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    onToggleSelect();
+                                }}
+                                className={`mt-0.5 w-3.5 h-3.5 rounded border transition-all flex items-center justify-center shrink-0 ${
+                                    isSelected
+                                        ? 'bg-cyan-500 border-cyan-400 text-black shadow-[0_0_8px_rgba(6,182,212,0.6)]'
+                                        : 'border-slate-700 hover:border-cyan-500/50 bg-black/40'
+                                }`}
+                            >
+                                {isSelected && <CheckCircle size={10} className="stroke-[3]" />}
+                            </button>
                         )}
+                        <div className="space-y-1 min-w-0">
+                            <p className="text-weft font-medium text-sm leading-tight group-hover:text-cyan-200 transition-colors">
+                                {task.title}
+                            </p>
+                            {isRepairing && (
+                                <div className="flex items-center gap-1.5 text-[8px] font-mono text-amber-500 uppercase tracking-widest animate-pulse">
+                                    <Loader size={8} className="animate-spin" />
+                                    Repairing Substrate...
+                                </div>
+                            )}
+                        </div>
                     </div>
                     
                     <div className="flex items-center gap-1.5">

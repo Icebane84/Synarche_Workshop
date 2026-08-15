@@ -19,6 +19,8 @@ interface KanbanColumnProps {
     onLoadMore: () => void;
     onClearCompleted?: () => void;
     onDrop: (e: React.DragEvent<HTMLDivElement>, status: TaskStatus) => void;
+    selectedTaskIds?: Set<string>;
+    onToggleSelectTask?: (taskId: string) => void;
 }
 
 export const KanbanColumn: React.FC<KanbanColumnProps> = ({
@@ -30,6 +32,8 @@ export const KanbanColumn: React.FC<KanbanColumnProps> = ({
     onLoadMore,
     onClearCompleted,
     onDrop,
+    selectedTaskIds,
+    onToggleSelectTask,
 }) => {
     const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
         e.preventDefault();
@@ -76,6 +80,8 @@ export const KanbanColumn: React.FC<KanbanColumnProps> = ({
                                 task={task}
                                 onSelect={() => { onSelectTask(task.id); }}
                                 onStatusChange={(newStatus) => { onStatusChange(task.id, newStatus); }}
+                                isSelected={selectedTaskIds?.has(task.id)}
+                                onToggleSelect={onToggleSelectTask ? () => onToggleSelectTask(task.id) : undefined}
                             />
                         ))}
                     </AnimatePresence>

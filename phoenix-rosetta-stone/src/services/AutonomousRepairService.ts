@@ -60,45 +60,41 @@ class AutonomousRepairService {
         }
     }
 
-    private async processViolation(
-        file: LocalFile,
-        violation: ASTViolation,
-        tasks: Task[],
-        addTask: (taskData: Omit<Task, 'id' | 'status' | 'createdAt' | 'updatedAt'>) => Promise<Task | undefined>,
-        isSovereign: boolean
-    ): Promise<void> {
-        const existingTask = tasks.some(
-            (t) => t.notes?.includes(`File: ${file.path}`) && t.title.includes(violation.type) && t.status !== 'Completed'
-        );
-        if (existingTask) return;
-
-        const title = `[MAINTENANCE] ${violation.type}: ${file.name}`;
-        const queueTag = isSovereign ? '[AUTONOMOUS_QUEUE]' : '[PROPOSED]';
-        const notes = `Dissonance Type: ${violation.type}\nFile: ${file.path}\nMessage: ${violation.message}\n\n${queueTag}`;
-        const priority = violation.severity === 'high' ? 'High' : 'Medium';
-
-        const task = await addTask({
-			title,
-			notes,
-			source: 'Dissonance Scanner',
-			priority,
-			timestamp: 0
-		});
-
-        if (isSovereign && task) {
-            await resolveDissonance(task.id);
-        }
-    }
-
     private async scanFileViolations(
         file: LocalFile,
         tasks: Task[],
-        addTask: (taskData: Omit<Task, 'id' | 'status' | 'createdAt' | 'updatedAt'>) => Promise<Task | undefined>,
+        addTask: (taskData: { title: string; notes: string; source: TaskSource; priority?: TaskPriority }) => Promise<Task | null>,
         isSovereign: boolean
     ): Promise<void> {
         const violations = await astAnalyzer.analyzeFile(file.path, file.content);
-        for (const violation of violations) {
-            await this.processViolation(file, violation, tasks, addTask, isSovereign);
+        if (!violations || violations.length === 0) return;
+
+        // Check for existing open task for this file
+        const existingTask = tasks.find(
+            (t) => t.notes?.includes(`File: ${file.path}`) && t.status !== 'Completed'
+        );
+        if (existingTask) return;
+
+        const hasHigh = violations.some((v) => v.severity === 'high');
+        const priority = hasHigh ? 'High' : 'Medium';
+        const title = `[MAINTENANCE] ${file.name} (${violations.length} ${violations.length === 1 ? 'issue' : 'issues'})`;
+        const queueTag = isSovereign ? '[AUTONOMOUS_QUEUE]' : '[PROPOSED]';
+
+        const breakdown = violations
+            .map((v, i) => `${i + 1}. [${v.severity.toUpperCase()}] ${v.type}: ${v.message} (Line ${v.line ?? 1})`)
+            .join('\n');
+
+        const notes = `File: ${file.path}\nDissonance Count: ${violations.length}\n\nBreakdown:\n${breakdown}\n\n${queueTag}`;
+
+        const task = await addTask({
+            title,
+            notes,
+            source: 'Dissonance Scanner',
+            priority,
+        });
+
+        if (isSovereign && task) {
+            await resolveDissonance(task.id);
         }
     }
 
