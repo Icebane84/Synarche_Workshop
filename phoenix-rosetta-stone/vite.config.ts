@@ -37,6 +37,9 @@ export default defineConfig(({ mode }) => {
         "@": path.resolve(dirname, "src"),
         "@components": path.resolve(dirname, "src/components"),
         "@core": path.resolve(dirname, "src/core"),
+        "@store": path.resolve(dirname, "src/store"),
+        "@state": path.resolve(dirname, "src/store"),
+        "@services": path.resolve(dirname, "src/services"),
       },
     },
 

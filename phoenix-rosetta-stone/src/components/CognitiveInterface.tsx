@@ -24,7 +24,7 @@ import {
 import React, { useState, useEffect, useRef } from 'react';
 import { useTheme } from '../hooks/useTheme';
 import { createRecognitionSession, stopAuralResponse, transmitAuralResponse } from '../services/audioService';
-import { useCognitiveCore } from '../state/useCognitiveCore';
+import { useCognitiveCore } from '../store/useCognitiveCore';
 import Tooltip from './common/Tooltip';
 
 const Spinner: React.FC<{ color?: string }> = ({ color = 'cyan' }) => (
