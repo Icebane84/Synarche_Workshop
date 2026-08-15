@@ -147,3 +147,7 @@ For complex operations (e.g., "Refactor Artifact, Update Links, and Log Event"),
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+## Reciprocal Links
+
+- [ARCH.PROT.NonDestructiveRefinement.md](../20_Architecture/ARCH.PROT.NonDestructiveRefinement.md)

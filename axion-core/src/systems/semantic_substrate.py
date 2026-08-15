@@ -83,7 +83,7 @@ class SectionNode:
 class MMAPSCCFrame:
     """
     Durable, offset-addressable binary container for an SCC macro-node execution frame.
-    Elimines slow runtime text serialization loops.
+    Eliminates slow runtime text serialization loops.
     """
 
     HEADER_FMT = "<III I 32s"  # scc_id, version, dirty, state_size, state_hash
@@ -167,7 +167,7 @@ class TarjanSCCEngine:
         self.sccs: list[list[str]] = []
 
     def compute_sccs(self) -> list[list[str]]:
-        for node in list(self.index.forward.keys()):
+        for node in self.index.forward.keys():
             if node not in self.index_map:
                 self._strong_connect(node)
         return self.sccs
@@ -313,7 +313,7 @@ class AutonomousSemanticOSSubstrate:
             for file in files:
                 if file.endswith(".md"):
                     path = os.path.join(root, file)
-                    node_id, domain, deps, sections = self._parse_source_file(path)
+                    node_id, domain, deps, _ = self._parse_source_file(path)
 
                     self.symbol_table[node_id] = domain
                     raw_deps_cache[node_id] = deps
@@ -437,7 +437,7 @@ class AutonomousSemanticOSSubstrate:
                                 if last_seen_hashes.get(path) != file_hash:
                                     # Trigger an incremental update pass if an explicit file change is detected
                                     if path in last_seen_hashes:
-                                        node_id, domain, deps, sections = self._parse_source_file(path)
+                                        node_id, _, deps, _ = self._parse_source_file(path)
                                         print(f"\n[HOT RELOAD] File system update detected for module: {node_id}")
                                         self.trigger_runtime_mutation(node_id, "dependencies", ", ".join(deps))
                                     last_seen_hashes[path] = file_hash

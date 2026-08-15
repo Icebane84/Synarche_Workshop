@@ -12,20 +12,12 @@ from open_notebook.podcasts.models import EpisodeProfile, PodcastEpisode, Speake
 class PodcastGenerationRequest(BaseModel):
     """Request model for podcast generation"""
 
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     episode_profile: str
     speaker_profile: str
     episode_name: str
-    content: str | None = None
-    notebook_id: str | None = None
-    briefing_suffix: str | None = None
+    content: Optional[str] = None
+    notebook_id: Optional[str] = None
+    briefing_suffix: Optional[str] = None
 
 
 class PodcastGenerationResponse(BaseModel):
@@ -46,9 +38,9 @@ class PodcastService:
         episode_profile_name: str,
         speaker_profile_name: str,
         episode_name: str,
-        notebook_id: str | None = None,
-        content: str | None = None,
-        briefing_suffix: str | None = None,
+        notebook_id: Optional[str] = None,
+        content: Optional[str] = None,
+        briefing_suffix: Optional[str] = None,
     ) -> str:
         """Submit a podcast generation job for background processing"""
         try:
@@ -57,8 +49,9 @@ class PodcastService:
             if not episode_profile:
                 raise ValueError(f"Episode profile '{episode_profile_name}' not found")
 
-            # Validate speaker profile exists
-            speaker_profile = await SpeakerProfile.get_by_name(speaker_profile_name)
+            # Resolve the user-facing speaker profile name to a record ID at
+            # the API boundary (#630) - everything downstream works with IDs.
+            speaker_profile = await SpeakerProfile.resolve(speaker_profile_name)
             if not speaker_profile:
                 raise ValueError(f"Speaker profile '{speaker_profile_name}' not found")
 
@@ -67,18 +60,26 @@ class PodcastService:
                 try:
                     notebook = await Notebook.get(notebook_id)
                     # Get notebook context (this may need to be adjusted based on actual Notebook implementation)
-                    content = await notebook.get_context() if hasattr(notebook, "get_context") else str(notebook)
+                    content = (
+                        await notebook.get_context()
+                        if hasattr(notebook, "get_context")
+                        else str(notebook)
+                    )
                 except Exception as e:
-                    logger.warning(f"Failed to get notebook content, using notebook_id as content: {e}")
+                    logger.warning(
+                        f"Failed to get notebook content, using notebook_id as content: {e}"
+                    )
                     content = f"Notebook ID: {notebook_id}"
 
             if not content:
-                raise ValueError("Content is required - provide either content or notebook_id")
+                raise ValueError(
+                    "Content is required - provide either content or notebook_id"
+                )
 
-            # Prepare command arguments
+            # Prepare command arguments (speaker profile as record ID)
             command_args = {
                 "episode_profile": episode_profile_name,
-                "speaker_profile": speaker_profile_name,
+                "speaker_profile": str(speaker_profile.id),
                 "episode_name": episode_name,
                 "content": str(content),
                 "briefing_suffix": briefing_suffix,
@@ -87,7 +88,7 @@ class PodcastService:
             # Ensure command modules are imported before submitting
             # This is needed because submit_command validates against local registry
             try:
-                import commands.podcast_commands
+                import commands.podcast_commands  # noqa: F401
             except ImportError as import_err:
                 logger.error(f"Failed to import podcast commands: {import_err}")
                 raise ValueError("Podcast commands not available")
@@ -99,18 +100,20 @@ class PodcastService:
             if not job_id:
                 raise ValueError("Failed to get job_id from submit_command")
             job_id_str = str(job_id)
-            logger.info(f"Submitted podcast generation job: {job_id_str} for episode '{episode_name}'")
+            logger.info(
+                f"Submitted podcast generation job: {job_id_str} for episode '{episode_name}'"
+            )
             return job_id_str
 
         except Exception as e:
             logger.error(f"Failed to submit podcast generation job: {e}")
             raise HTTPException(
                 status_code=500,
-                detail=f"Failed to submit podcast generation job: {e!s}",
+                detail="Failed to submit podcast generation job",
             )
 
     @staticmethod
-    async def get_job_status(job_id: str) -> dict[str, Any]:
+    async def get_job_status(job_id: str) -> Dict[str, Any]:
         """Get status of a podcast generation job"""
         try:
             status = await get_command_status(job_id)
@@ -118,14 +121,20 @@ class PodcastService:
                 "job_id": job_id,
                 "status": status.status if status else "unknown",
                 "result": status.result if status else None,
-                "error_message": getattr(status, "error_message", None) if status else None,
-                "created": str(status.created) if status and hasattr(status, "created") and status.created else None,
-                "updated": str(status.updated) if status and hasattr(status, "updated") and status.updated else None,
+                "error_message": getattr(status, "error_message", None)
+                if status
+                else None,
+                "created": str(status.created)
+                if status and hasattr(status, "created") and status.created
+                else None,
+                "updated": str(status.updated)
+                if status and hasattr(status, "updated") and status.updated
+                else None,
                 "progress": getattr(status, "progress", None) if status else None,
             }
         except Exception as e:
             logger.error(f"Failed to get podcast job status: {e}")
-            raise HTTPException(status_code=500, detail=f"Failed to get job status: {e!s}")
+            raise HTTPException(status_code=500, detail="Failed to get job status")
 
     @staticmethod
     async def list_episodes() -> list:
@@ -135,7 +144,7 @@ class PodcastService:
             return episodes
         except Exception as e:
             logger.error(f"Failed to list podcast episodes: {e}")
-            raise HTTPException(status_code=500, detail=f"Failed to list episodes: {e!s}")
+            raise HTTPException(status_code=500, detail="Failed to list episodes")
 
     @staticmethod
     async def get_episode(episode_id: str) -> PodcastEpisode:
@@ -145,7 +154,7 @@ class PodcastService:
             return episode
         except Exception as e:
             logger.error(f"Failed to get podcast episode {episode_id}: {e}")
-            raise HTTPException(status_code=404, detail=f"Episode not found: {e!s}")
+            raise HTTPException(status_code=404, detail="Episode not found")
 
 
 class DefaultProfiles:
@@ -163,7 +172,9 @@ class DefaultProfiles:
 
             # This would create profiles, but since we have migration data,
             # this is mainly for future extensibility
-            logger.info("Default episode profiles should be created via database migration")
+            logger.info(
+                "Default episode profiles should be created via database migration"
+            )
             return []
 
         except Exception as e:
@@ -182,7 +193,9 @@ class DefaultProfiles:
 
             # This would create profiles, but since we have migration data,
             # this is mainly for future extensibility
-            logger.info("Default speaker profiles should be created via database migration")
+            logger.info(
+                "Default speaker profiles should be created via database migration"
+            )
             return []
 
         except Exception as e:

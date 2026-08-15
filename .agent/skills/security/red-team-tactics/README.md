@@ -10,6 +10,7 @@
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 # Red Team Tactics Shard (.agent/skills/security/red-team-tactics)

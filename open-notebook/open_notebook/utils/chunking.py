@@ -7,8 +7,14 @@ Supports HTML, Markdown, and plain text with appropriate splitters for each type
 Key functions:
 - detect_content_type(): Detects content type from file extension or content heuristics
 - chunk_text(): Splits text into chunks using appropriate splitter for content type
+
+Environment Variables:
+    OPEN_NOTEBOOK_CHUNK_SIZE: Maximum chunk size in tokens (default: 400)
+    OPEN_NOTEBOOK_CHUNK_OVERLAP: Overlap between chunks in tokens (default: 15% of CHUNK_SIZE)
+    OPEN_NOTEBOOK_MIN_CHUNK_SIZE: Minimum chunk size in tokens (default: 5)
 """
 
+import os
 import re
 from enum import Enum
 from pathlib import Path
@@ -21,10 +27,101 @@ from langchain_text_splitters import (
 )
 from loguru import logger
 
-# Constants
-CHUNK_SIZE = 1200  # characters
-CHUNK_OVERLAP = 180  # 15% of chunk size
+from .token_utils import token_count
+
+
+def _get_chunk_size() -> int:
+    """Get chunk size from environment variable or use default."""
+    chunk_size_str = os.getenv("OPEN_NOTEBOOK_CHUNK_SIZE")
+    if chunk_size_str:
+        try:
+            chunk_size = int(chunk_size_str)
+            if chunk_size < 100:
+                logger.warning(
+                    f"OPEN_NOTEBOOK_CHUNK_SIZE ({chunk_size}) is too small. "
+                    f"Using minimum value of 100."
+                )
+                return 100
+            if chunk_size > 8192:
+                logger.warning(
+                    f"OPEN_NOTEBOOK_CHUNK_SIZE ({chunk_size}) is very large. "
+                    f"This may cause issues with some embedding models."
+                )
+            logger.info(f"Using custom chunk size: {chunk_size} tokens")
+            return chunk_size
+        except ValueError:
+            logger.warning(
+                f"Invalid OPEN_NOTEBOOK_CHUNK_SIZE value: '{chunk_size_str}'. "
+                f"Using default: 400"
+            )
+    return 400
+
+
+def _get_chunk_overlap(chunk_size: int) -> int:
+    """Get chunk overlap from environment variable or calculate default (15% of chunk size)."""
+    overlap_str = os.getenv("OPEN_NOTEBOOK_CHUNK_OVERLAP")
+    if overlap_str:
+        try:
+            overlap = int(overlap_str)
+            if overlap < 0:
+                logger.warning(
+                    f"OPEN_NOTEBOOK_CHUNK_OVERLAP ({overlap}) cannot be negative. "
+                    f"Using 0."
+                )
+                return 0
+            if overlap >= chunk_size:
+                logger.warning(
+                    f"OPEN_NOTEBOOK_CHUNK_OVERLAP ({overlap}) cannot be >= chunk size ({chunk_size}). "
+                    f"Using 15% of chunk size: {int(chunk_size * 0.15)}"
+                )
+                return int(chunk_size * 0.15)
+            logger.info(f"Using custom chunk overlap: {overlap} tokens")
+            return overlap
+        except ValueError:
+            logger.warning(
+                f"Invalid OPEN_NOTEBOOK_CHUNK_OVERLAP value: '{overlap_str}'. "
+                f"Using default: 15% of chunk size"
+            )
+    return int(chunk_size * 0.15)
+
+
+def _get_min_chunk_size() -> int:
+    """Get minimum chunk size from environment variable or use default.
+
+    Chunks below this token count are dropped. Some splitters (notably the
+    HTML header splitter on complex pages) can emit single-character or
+    punctuation-only chunks that produce useless or null embeddings —
+    llama.cpp's OpenAI-compatible endpoint, for example, returns null vector
+    elements for such inputs and crashes downstream parsing.
+    """
+    raw = os.getenv("OPEN_NOTEBOOK_MIN_CHUNK_SIZE")
+    if raw is None:
+        return 5
+    try:
+        value = int(raw)
+        if value < 0:
+            logger.warning(
+                f"OPEN_NOTEBOOK_MIN_CHUNK_SIZE ({value}) cannot be negative. Using 0."
+            )
+            return 0
+        return value
+    except ValueError:
+        logger.warning(
+            f"Invalid OPEN_NOTEBOOK_MIN_CHUNK_SIZE value: '{raw}'. Using default: 5"
+        )
+        return 5
+
+
+# Constants (computed at import time from environment variables)
+CHUNK_SIZE = _get_chunk_size()
+CHUNK_OVERLAP = _get_chunk_overlap(CHUNK_SIZE)
+MIN_CHUNK_SIZE = _get_min_chunk_size()
 HIGH_CONFIDENCE_THRESHOLD = 0.8  # Threshold for heuristics to override extension
+
+logger.debug(
+    f"Chunking configuration: CHUNK_SIZE={CHUNK_SIZE}, "
+    f"CHUNK_OVERLAP={CHUNK_OVERLAP}, MIN_CHUNK_SIZE={MIN_CHUNK_SIZE}"
+)
 
 
 class ContentType(Enum):
@@ -74,8 +171,8 @@ _EXTENSION_TO_CONTENT_TYPE = {
 
 
 def detect_content_type_from_extension(
-    file_path: str | None,
-) -> ContentType | None:
+    file_path: Optional[str],
+) -> Optional[ContentType]:
     """
     Detect content type from file extension.
 
@@ -95,7 +192,7 @@ def detect_content_type_from_extension(
         return None
 
 
-def detect_content_type_from_heuristics(text: str) -> tuple[ContentType, float]:
+def detect_content_type_from_heuristics(text: str) -> Tuple[ContentType, float]:
     """
     Detect content type using content heuristics.
 
@@ -222,7 +319,7 @@ def _calculate_markdown_score(text: str) -> float:
     return min(score, 1.0)
 
 
-def detect_content_type(text: str, file_path: str | None = None) -> ContentType:
+def detect_content_type(text: str, file_path: Optional[str] = None) -> ContentType:
     """
     Detect content type using file extension (primary) and heuristics (fallback).
 
@@ -246,7 +343,10 @@ def detect_content_type(text: str, file_path: str | None = None) -> ContentType:
 
     # If no extension or generic extension, use heuristics
     if extension_type is None:
-        logger.debug(f"No file extension, using heuristics: {heuristic_type.value} (confidence: {confidence:.2f})")
+        logger.debug(
+            f"No file extension, using heuristics: {heuristic_type.value} "
+            f"(confidence: {confidence:.2f})"
+        )
         return heuristic_type
 
     # If extension suggests plain text but heuristics are very confident, override
@@ -290,14 +390,14 @@ def _get_plain_splitter() -> RecursiveCharacterTextSplitter:
     return RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE,
         chunk_overlap=CHUNK_OVERLAP,
-        length_function=len,
+        length_function=token_count,
         separators=["\n\n", "\n", ". ", ", ", " ", ""],
     )
 
 
-def _apply_secondary_chunking(chunks: list[str]) -> list[str]:
+def _apply_secondary_chunking(chunks: List[str]) -> List[str]:
     """
-    Apply secondary chunking to ensure no chunk exceeds CHUNK_SIZE.
+    Apply secondary chunking to ensure no chunk exceeds CHUNK_SIZE tokens.
 
     Used when primary splitters (HTML/Markdown) produce oversized chunks.
     """
@@ -305,7 +405,7 @@ def _apply_secondary_chunking(chunks: list[str]) -> list[str]:
     secondary_splitter = _get_plain_splitter()
 
     for chunk in chunks:
-        if len(chunk) > CHUNK_SIZE:
+        if token_count(chunk) > CHUNK_SIZE:
             # Split oversized chunk
             sub_chunks = secondary_splitter.split_text(chunk)
             result.extend(sub_chunks)
@@ -317,9 +417,9 @@ def _apply_secondary_chunking(chunks: list[str]) -> list[str]:
 
 def chunk_text(
     text: str,
-    content_type: ContentType | None = None,
-    file_path: str | None = None,
-) -> list[str]:
+    content_type: Optional[ContentType] = None,
+    file_path: Optional[str] = None,
+) -> List[str]:
     """
     Split text into chunks using appropriate splitter for content type.
 
@@ -329,13 +429,14 @@ def chunk_text(
         file_path: Optional file path for content type detection
 
     Returns:
-        List of text chunks, each <= CHUNK_SIZE characters
+        List of text chunks, each approximately <= CHUNK_SIZE tokens
     """
     if not text or not text.strip():
         return []
 
     # Short text doesn't need chunking
-    if len(text) <= CHUNK_SIZE:
+    text_tokens = token_count(text)
+    if text_tokens <= CHUNK_SIZE:
         return [text]
 
     # Detect content type if not provided
@@ -345,20 +446,26 @@ def chunk_text(
     logger.debug(f"Chunking text with content type: {content_type.value}")
 
     # Select appropriate splitter
+    chunks: List[str]
     if content_type == ContentType.HTML:
-        splitter = _get_html_splitter()
+        html_splitter = _get_html_splitter()
         # HTML splitter returns Document objects
-        docs = splitter.split_text(text)
-        chunks = [doc.page_content if hasattr(doc, "page_content") else str(doc) for doc in docs]
+        docs = html_splitter.split_text(text)
+        chunks = [
+            doc.page_content if hasattr(doc, "page_content") else str(doc)
+            for doc in docs
+        ]
     elif content_type == ContentType.MARKDOWN:
-        splitter = _get_markdown_splitter()
+        md_splitter = _get_markdown_splitter()
         # Markdown splitter returns Document objects
-        docs = splitter.split_text(text)
-        chunks = [doc.page_content if hasattr(doc, "page_content") else str(doc) for doc in docs]
+        docs = md_splitter.split_text(text)
+        chunks = [
+            doc.page_content if hasattr(doc, "page_content") else str(doc)
+            for doc in docs
+        ]
     else:
         # Plain text - use recursive splitter directly
-        splitter = _get_plain_splitter()
-        chunks = splitter.split_text(text)
+        chunks = _get_plain_splitter().split_text(text)
 
     # Apply secondary chunking if needed (for HTML/Markdown that may produce large chunks)
     if content_type in (ContentType.HTML, ContentType.MARKDOWN):
@@ -367,5 +474,21 @@ def chunk_text(
     # Filter out empty chunks
     chunks = [c.strip() for c in chunks if c and c.strip()]
 
-    logger.debug(f"Created {len(chunks)} chunks from {len(text)} characters")
+    # Drop chunks below the minimum token threshold. These are typically
+    # punctuation or single-character fragments left over from header-based
+    # splitters; embedding them is wasteful and some providers return null
+    # vector elements for such inputs (which then crash response parsing).
+    # Only filter when more than one chunk exists and at least one chunk
+    # would survive — never return an empty list because of this filter.
+    if MIN_CHUNK_SIZE > 0 and len(chunks) > 1:
+        kept = [c for c in chunks if token_count(c) >= MIN_CHUNK_SIZE]
+        if kept:
+            dropped = len(chunks) - len(kept)
+            if dropped > 0:
+                logger.debug(
+                    f"Dropped {dropped} chunk(s) below MIN_CHUNK_SIZE={MIN_CHUNK_SIZE} tokens"
+                )
+            chunks = kept
+
+    logger.debug(f"Created {len(chunks)} chunks from {text_tokens} tokens")
     return chunks

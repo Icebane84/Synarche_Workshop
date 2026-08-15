@@ -45,7 +45,6 @@ export const ActiveDissonances: Story = {
         ],
         onResolveClick: (id) => {
             console.log(`Synthesis initiated for ${id}`);
-            alert(`Triggered CMD: ENACT_TRANSCENDENCE for ${id}`);
         },
     },
 };

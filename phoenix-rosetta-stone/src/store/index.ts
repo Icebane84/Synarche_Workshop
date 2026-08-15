@@ -6,9 +6,12 @@
 
 // src/store/index.ts
 export * from './coherenceStore';
-export * from './taskStore';
-export * from './sensoryStore';
-export * from './memoryStore';
 export * from './fileSystemStore';
+export * from './knowledgeStore';
 export * from './logStore';
+export * from './memoryStore';
+export * from './sensoryStore';
+export * from './taskStore';
 export * from './uiStore';
+export * from './useCognitiveCore';
+

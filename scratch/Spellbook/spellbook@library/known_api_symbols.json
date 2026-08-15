@@ -1,0 +1,25 @@
+{
+  "_comment": "Seed manifest. Extend per-class as you verify real signatures against your engine version's headers. known_methods = confirmed real. known_hallucinated = confirmed NOT real, seen fabricated by agents before (fail loudly, cite the correction). Anything called that's in neither list is UNVERIFIED, not passed silently.",
+  "UFieldSystemComponent": {
+    "known_methods": ["ApplyPhysicsField"],
+    "known_hallucinated": [
+      "ApplyStrainField",
+      "ApplyLinearVelocityField",
+      "ApplyRadialForce",
+      "ApplyDestructionField"
+    ]
+  },
+  "URadialFalloff": {
+    "known_methods": ["SetRadialFalloff"],
+    "known_hallucinated": []
+  },
+  "URadialVector": {
+    "known_methods": ["SetRadialVector"],
+    "known_hallucinated": [],
+    "note": "SetRadialVector's exact param order was not independently confirmed as of 2026-07-23 — treat calls to it as WARNING even when spelled correctly, until verified against your engine's RadialVector.h."
+  },
+  "UFieldSystemMetaData": {
+    "known_methods": [],
+    "known_hallucinated": []
+  }
+}

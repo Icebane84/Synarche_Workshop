@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `AOP-AG-003_AxionAgentConfiguration_v3.0` | The Sovereign ID. |
-| **Official Name** | `AOP-AG-003_AxionAgentConfiguration_v3.0.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `REF: GVRN.Master.Registry` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `AOP-AG-003_AxionAgentConfiguration_v3.0` | The Sovereign ID. |
+| **Official Name** | `AOP-AG-003_AxionAgentConfiguration_v3.0.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
+
 
 ---
 
@@ -226,3 +223,7 @@ Law for this artifact.
 ## **[ARTIFACT END]**
 
 {{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
+
+## Reciprocal Links
+
+- [GVRN.AI.PROTO.md](../10_Governance/GVRN.AI.PROTO.md)

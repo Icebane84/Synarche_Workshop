@@ -22,6 +22,7 @@
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 
+
 ---
 
 ### **AISTF Initiative: `AOP-EMOJI-001` v2.0 - "The Living Lexicon"**

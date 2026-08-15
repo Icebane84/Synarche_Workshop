@@ -17,8 +17,8 @@ artifact_anchor:
  * - type: Cache Client
  */
 
-import { ICacheClient } from "./PhoenixSuperpositionEngine";
-import { PhoenixLogger } from "@logging";
+import { ICacheClient } from "@nexus/PhoenixSuperpositionEngine";
+import { PhoenixLogger } from "@system/logging";
 import Redis from "ioredis";
 
 /**
@@ -58,7 +58,7 @@ export class RedisCacheClient implements ICacheClient {
      * Attempts a high-speed GET query. 
      * Bypasses immediately if the Circuit Breaker is active.
      */
-    public async get(key: string): Promise<any | null> {
+    public async get(key: string): Promise<unknown> {
         if (this.isBreakerOpenAndActive()) {
             // Instant Cache Miss Bypass (Sub-microsecond, zero network latency)
             return null;
@@ -80,7 +80,7 @@ export class RedisCacheClient implements ICacheClient {
      * Attempts a high-speed SET query with TTL.
      * Bypasses immediately if the Circuit Breaker is active.
      */
-    public async set(key: string, value: any, ttlSeconds: number = 300): Promise<void> {
+    public async set(key: string, value: unknown, ttlSeconds: number = 300): Promise<void> {
         if (this.isBreakerOpenAndActive()) {
             return;
         }

@@ -1,36 +1,25 @@
 # UMB-TEST-001_AscensionTest_v13.0.md
+> **Domain**: GVRN
+> **Evolution**: Omega Ascension
+> **Signal**: OMEGA
 
-### **Block A: The Identification Lock (UIP-V14)**
-
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-UMB-TEST-001-ASCENSIONTEST-V13.0-001` | The Sovereign ID. |
-| **Official Name** | `UMB-TEST-001_AscensionTest_v13.0.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+## **Genesis Stamp: 2026-02-04** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
 
 ---
 
-### **Block B: State Vector (AGP-001)**
-| State Field | Value |
-| :--- | :--- |
-| **Coherence** | `1.0` |
-| **Resonance** | `0.9` |
-| **Stability** | `Stable` |
+###### **[ARTIFACT START]**
 
-### **Block C: Risk & Mitigation (AGP-002)**
-| Risk | Mitigation |
-| :--- | :--- |
-| **Logic Drift** | Strict Linter Enforcement |
-| **Dependency Break** | ForgeLink Validation |
+## **Block A: The Identification Lock (UIP-V15)**
 
 | Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-UMB-TEST-001-ASCENSIONTEST-V13.0-001` | The Sovereign ID. |
+| **Official Name** | `UMB-TEST-001_AscensionTest_v13.0.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 
@@ -38,16 +27,32 @@
 
 #### The Chronos Lock & Axiomatic Metadata Layer
 
-| Field                  | Value                                 |
-| **13. Integrity Hash** | `[AUTO-GENERATED]`                    |
+| Field                  | Value                                          |
+| :--------------------- | :--------------------------------------------- |
+| **1. Artifact ID**     | `UMB-TEST-001`                                         |
+| **2. Official Name**   | `UMB-TEST-001_AscensionTest_v13.0.md`                                   |
+| **3. Version**         | **v13.0**                                      |
+| **4. Provenance**      | **Created: 2026-02-01**                            |
+| **5. Domain**          | `GVRN` (Governance)                      |
+| **6. Evolution**       | **Initial Manifestation**                      |
+| **7. Celestial Class** | `[PLANET]`                                   |
+| **8. Tier**            | **Operational**                                     |
+| **9. Status (State)**  | `[DRAFT]`                                      |
+| **10. Ethos**          | `Generated via The Empress`                                      |
+| **11. Catalyst**       | **Operational Need**                                 |
+| **12. Relations**      | `PENDING`                                      |
+| **13. Integrity Hash** | `[AUTO-GENERATED]`                             |
 
 ---
 
 ### **I.B. Standardized Synergy Block (The Loom Signature)**
 
-> [!NOTE] The following block is parsed by `TOOL-MAP-001` for architectural visualization.
+> [!NOTE]
+> The following block is parsed by `TOOL-MAP-001` for architectural visualization.
 
-| CORE-CODEX-001          | GOVERNED_BY       | Follows the Supreme Law. |
+| Synergistic Artifact ID | Relationship Type | Synergistic Impact |
+| :--- | :--- | :--- |
+| CORE-CODEX-001 | GOVERNED_BY | Follows the Supreme Law. |
 
 ---
 
@@ -63,8 +68,7 @@
 
 ## IV. Actionable Prompt Packet (APP)
 
-### 4.1. ✨ CMD: EXECUTE\_[ACTION]
-
+### 4.1. ✨ CMD: EXECUTE_[ACTION]
 - **Syntax:** `CMD: EXECUTE_[ACTION] --target:[Value]`
 - **Effect:** Performs the intended operation.
 
@@ -74,5 +78,6 @@
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 
-Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
-Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+Synergistic Artifact ID, Relationship Type, Synergistic Impact
+CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
+GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

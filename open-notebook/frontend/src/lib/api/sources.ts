@@ -10,12 +10,14 @@ import {
   UpdateSourceRequest,
 } from "@/lib/types/api";
 
+export type SourceSortField = "created" | "updated" | "title" | "insights_count" | "embedded" | "type";
+
 export const sourcesApi = {
   list: async (params?: {
     notebook_id?: string;
     limit?: number;
     offset?: number;
-    sort_by?: "created" | "updated";
+    sort_by?: SourceSortField;
     sort_order?: "asc" | "desc";
   }) => {
     const response = await apiClient.get<SourceListResponse[]>("/sources", {

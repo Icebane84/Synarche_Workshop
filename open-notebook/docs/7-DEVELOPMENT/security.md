@@ -1,8 +1,6 @@
 # Security Guidelines
 
-This document outlines security practices for Open Notebook development. It is informed by real vulnerabilities
-discovered through coordinated disclosure with [CERT-EU](https://cert.europa.eu) and should be treated as mandatory
-reading for all contributors.
+This document outlines security practices for Open Notebook development. It is informed by real vulnerabilities discovered through coordinated disclosure with [CERT-EU](https://cert.europa.eu) and should be treated as mandatory reading for all contributors.
 
 ## Reporting Vulnerabilities
 
@@ -19,8 +17,7 @@ We follow coordinated vulnerability disclosure and will work with you on a fix b
 
 **Rule: Never interpolate user input into SurrealQL queries via f-strings.**
 
-SurrealQL injection is the equivalent of SQL injection. User-controlled values must be passed as parameterized bind
-variables using `$variable` syntax.
+SurrealQL injection is the equivalent of SQL injection. User-controlled values must be passed as parameterized bind variables using `$variable` syntax.
 
 ### Parameterized queries (safe)
 
@@ -41,8 +38,7 @@ result = await repo_query(f"SELECT * FROM source WHERE id = {source_id}")
 
 ### ORDER BY and other clauses that can't be parameterized
 
-`ORDER BY`, `LIMIT`, and similar clauses typically cannot accept bind variables in SurrealDB. Use **allowlist
-validation** instead:
+`ORDER BY`, `LIMIT`, and similar clauses typically cannot accept bind variables in SurrealDB. Use **allowlist validation** instead:
 
 ```python
 # Good: validate against allowlist, then interpolate
@@ -73,8 +69,7 @@ See `api/routers/sources.py` for the reference implementation of sort parameter 
 
 **Rule: Always use `SandboxedEnvironment` when rendering Jinja2 templates that contain user-provided content.**
 
-The [ai-prompter](https://github.com/lfnovo/ai-prompter) library (>= 0.4.0) uses `SandboxedEnvironment` by default,
-which blocks access to dangerous Python attributes like `__globals__`, `__subclasses__`, and `__init__`.
+The [ai-prompter](https://github.com/lfnovo/ai-prompter) library (>= 0.4.0) uses `SandboxedEnvironment` by default, which blocks access to dangerous Python attributes like `__globals__`, `__subclasses__`, and `__init__`.
 
 ### What SandboxedEnvironment prevents
 
@@ -89,6 +84,10 @@ which blocks access to dangerous Python attributes like `__globals__`, `__subcla
 - Never downgrade ai-prompter below 0.4.0
 - If using Jinja2 directly (outside ai-prompter), always use `jinja2.sandbox.SandboxedEnvironment`
 - Never pass user-provided strings to `jinja2.Environment` or `jinja2.Template` directly
+
+### Third-party libraries with the same shape
+
+The `podcast_creator` library's `configure("templates", {...})` compiles the given string directly as Jinja2 template source (`Prompter(template_text=...)` in its `config.py`) - the identical pattern to the vulnerability above. `commands/podcast_commands.py` never calls it (confirmed: podcast generation always uses the file-based `prompts/podcast/*.jinja` templates in this repo), so this is currently dormant, not exploitable. If a "custom podcast template" feature is ever added, route user/profile text through a fixed, developer-authored template with the text passed in as a plain variable - do not wire it into `configure("templates", ...)`.
 
 ---
 
@@ -115,8 +114,7 @@ Key points:
 
 - Use `os.path.basename()` to strip directory components from user-provided filenames
 - Use `Path.resolve()` to resolve symlinks and `..` components
-- Use `startswith()` with a **trailing `os.sep`** to prevent sibling directory bypass (e.g., `/uploads_evil/` matching
-  `/uploads`)
+- Use `startswith()` with a **trailing `os.sep`** to prevent sibling directory bypass (e.g., `/uploads_evil/` matching `/uploads`)
 
 ### File path inputs
 
@@ -144,18 +142,15 @@ Never pass user-provided file paths directly to file reading or content extracti
 
 ### Authentication
 
-Open Notebook currently uses simple password-based middleware (`PasswordAuthMiddleware`). This is suitable for
-single-user self-hosted deployments but should be hardened for production:
+Open Notebook currently uses simple password-based middleware (`PasswordAuthMiddleware`). This is suitable for single-user self-hosted deployments but should be hardened for production:
 
-- Change the default password (`OPEN_NOTEBOOK_PASSWORD`)
+- Set `OPEN_NOTEBOOK_PASSWORD` explicitly - there is no hardcoded default password; if it's unset, auth is fully disabled (all requests pass through unchecked)
 - Change the default encryption key (`OPEN_NOTEBOOK_ENCRYPTION_KEY`)
 - Consider deploying behind a reverse proxy with proper authentication (OAuth, OIDC)
 
 ### CORS
 
-The default CORS configuration allows all origins (`allow_origins=["*"]`). This is tracked for improvement in
-[#730](https://github.com/lfnovo/open-notebook/issues/730). For production deployments, restrict origins to only the
-frontend URL.
+The default CORS configuration allows all origins (`allow_origins=["*"]`). `allow_credentials` is tied to that: `False` for the default wildcard (avoids Starlette reflecting any Origin alongside credentials), automatically `True` once `CORS_ORIGINS` is explicitly scoped to specific origins. For production deployments, still restrict `CORS_ORIGINS` to only the frontend URL.
 
 ---
 
@@ -194,9 +189,9 @@ When reviewing PRs, check for:
 
 These vulnerabilities were reported by CERT-EU and are documented here as learning examples:
 
-| Version  | Vulnerability                                | Severity       | Advisory                                                                                               |
-| -------- | -------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------ |
-| <= 1.8.2 | SurrealDB injection via `order_by` parameter | High (8.7)     | [GHSA-5wj9-f8q5-8f9c](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-5wj9-f8q5-8f9c) |
-| <= 1.8.3 | RCE via Jinja2 SSTI in transformations       | Critical (9.2) | [GHSA-f35w-wx37-26q7](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-f35w-wx37-26q7) |
-| <= 1.8.3 | Arbitrary file write via path traversal      | High (7.0)     | [GHSA-x4q2-89g5-594v](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-x4q2-89g5-594v) |
-| <= 1.8.3 | Arbitrary file read via LFI                  | High (8.2)     | [GHSA-842v-h4cj-r646](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-842v-h4cj-r646) |
+| Version | Vulnerability | Severity | Advisory |
+|---------|--------------|----------|----------|
+| <= 1.8.2 | SurrealDB injection via `order_by` parameter | High (8.7) | [GHSA-5wj9-f8q5-8f9c](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-5wj9-f8q5-8f9c) |
+| <= 1.8.3 | RCE via Jinja2 SSTI in transformations | Critical (9.2) | [GHSA-f35w-wx37-26q7](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-f35w-wx37-26q7) |
+| <= 1.8.3 | Arbitrary file write via path traversal | High (7.0) | [GHSA-x4q2-89g5-594v](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-x4q2-89g5-594v) |
+| <= 1.8.3 | Arbitrary file read via LFI | High (8.2) | [GHSA-842v-h4cj-r646](https://github.com/lfnovo/open-notebook/security/advisories/GHSA-842v-h4cj-r646) |

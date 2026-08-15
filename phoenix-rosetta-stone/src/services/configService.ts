@@ -10,6 +10,9 @@ export const systemConfig = {
     geminiKey: import.meta.env.GEMINI_API_KEY || import.meta.env.VITE_GEMINI_API_KEY || '',
     supabaseUrl: import.meta.env.NEXT_PUBLIC_SUPABASE_URL || import.meta.env.VITE_SUPABASE_URL || '',
     supabaseKey: import.meta.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY || '',
+    ollamaUrl: import.meta.env.VITE_OLLAMA_URL || 'http://localhost:11434',
+    ollamaModel: import.meta.env.VITE_OLLAMA_MODEL || 'llama3.1:8b',
+    provider: (import.meta.env.VITE_LLM_PROVIDER || 'auto') as 'auto' | 'ollama' | 'gemini',
   },
   constants: {
     SESSION_ID: 'SESSION-PHOENIX-001',

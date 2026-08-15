@@ -34,8 +34,9 @@ export const analyzeProjectStructureAsync = async (files: LocalFile[]): Promise<
         }
 
         // 2. OMEGA v15.1 Metrics
-        // Dependency Graph Extraction
-        const importMatches = Array.from(file.content.matchAll(/import\s+.*?\s+from\s+['"](.*?)['"]/g));
+		// Dependency Graph Extraction (Zero Backtracking, Linear O(N) regex)
+		const importMatches = Array.from(file.content.matchAll(/from\s*['"]([^'"]+)['"]/g));
+
         const deps: string[] = [];
         for (const match of importMatches) {
             totalImports++;

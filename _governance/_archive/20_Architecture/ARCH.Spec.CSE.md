@@ -1,19 +1,16 @@
 # ARCH.Spec.CSE (Coherent Synthesis Engine Specification)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `ARCH.Spec.CSE` | The Sovereign ID. |
-| **Official Name** | `ARCH.Spec.CSE.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `ARCH` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `DEFINES: GVRN.CSE.001, ALIGNS: SYNG.Loom.Master` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `ARCH.Spec.CSE` | The Sovereign ID. |
+| **Official Name** | `ARCH.Spec.CSE.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `ARCH` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `DEFINES: GVRN.CSE.001, ALIGNS: SYNG.Loom.Master` | The Network.      |
+
 
 ---
 

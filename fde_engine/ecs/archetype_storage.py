@@ -13,7 +13,7 @@
 **Ethos:** Memory is Static; Only Pointers Move.
 """
 
-from typing import Any, FrozenSet, Type, dict
+from typing import Any, Dict, FrozenSet, List, Type
 
 
 class Archetype:

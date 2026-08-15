@@ -25,8 +25,8 @@ description: "The style guide for the agent."
 | **Domain**          | `GVRN`                        | The Subject.      |
 | **Celestial Class** | `[PLANET]`                    | The Weight.       |
 | **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+| **Status**          | `[DEPRECATED]`                | The Lifecycle.    |
+| **Relations**       | `SUPERSEDED_BY: GVRN.Style.SovereignStandard` | The Network.      |
 
 # 🛡️ AGENT STYLE GUIDE (v13.0)
 

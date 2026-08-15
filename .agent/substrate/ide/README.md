@@ -10,6 +10,7 @@
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 # 🖥️ IDE Integration & Environment (.agent/substrate/ide)

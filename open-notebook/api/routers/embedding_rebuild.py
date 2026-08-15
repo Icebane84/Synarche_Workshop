@@ -11,6 +11,7 @@ from api.models import (
     RebuildStatusResponse,
 )
 from open_notebook.database.repository import repo_query
+from open_notebook.exceptions import OpenNotebookError
 
 router = APIRouter()
 
@@ -106,6 +107,10 @@ async def start_rebuild(request: RebuildRequest):
             message=f"Rebuild operation started. Estimated {total_estimate} items to process.",
         )
 
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
         logger.error(f"Failed to start rebuild: {e}")
         logger.exception(e)
@@ -171,6 +176,8 @@ async def get_rebuild_status(command_id: str):
         return response
 
     except HTTPException:
+        raise
+    except OpenNotebookError:
         raise
     except Exception as e:
         logger.error(f"Failed to get rebuild status: {e}")

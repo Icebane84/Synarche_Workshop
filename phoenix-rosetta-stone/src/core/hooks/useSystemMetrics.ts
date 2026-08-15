@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
 import { useCognitiveCore } from "@state/useCognitiveCore";
+import { useEffect, useRef, useState } from "react";
 
 export interface BiometricHistory {
   pulse: number[]; // FPS
@@ -8,6 +8,16 @@ export interface BiometricHistory {
 }
 
 const HISTORY_LENGTH = 15; // Compact history for mini sparklines
+
+/**
+ * Cryptographically secure random float generator [0, 1) for UI telemetry.
+ * Uses Web Crypto API (crypto.getRandomValues) to eliminate SonarQube S2245 warnings.
+ */
+const getRandomFloat = (): number => {
+  const array = new Uint32Array(1);
+  crypto.getRandomValues(array);
+  return array[0] / (0xffffffff + 1);
+};
 
 export const useSystemMetrics = () => {
   const [history, setHistory] = useState<BiometricHistory>({
@@ -44,9 +54,9 @@ export const useSystemMetrics = () => {
       const coherence = cognitiveState.coherenceIndex;
 
       // Simulate cognitive pressure (high during load, default low/medium fluctuations)
-      const simulatedPressure = isProcessing 
-        ? 0.75 + Math.random() * 0.15 
-        : 0.12 + Math.random() * 0.08;
+      const simulatedPressure = isProcessing
+        ? 0.75 + getRandomFloat() * 0.15
+        : 0.12 + getRandomFloat() * 0.08;
 
       // Temperature is the inverse of coherence
       const calculatedTemp = Math.max(0, 1 - coherence);

@@ -1,19 +1,16 @@
 # Synthesis Insights: The Coherent Synthesis Engine [v15.0 OMEGA]
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.ID.SynthesisInsights` | The Sovereign ID. |
-| **Official Name** | `GVRN.ID.SynthesisInsights.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ID.SynthesisInsights` | The Sovereign ID. |
+| **Official Name** | `GVRN.ID.SynthesisInsights.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.CSL.DocumentationEvolution` | The Sovereign ID. |
-| **Official Name** | `GVRN.CSL.DocumentationEvolution.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `REF: GVRN.Documentation.Index` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.CSL.DocumentationEvolution` | The Sovereign ID. |
+| **Official Name** | `GVRN.CSL.DocumentationEvolution.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `REF: GVRN.Documentation.Index` | The Network.      |
+
 
 ---
 
@@ -58,7 +55,12 @@ This synthesis marks the shift from **Static Archiving** (storing rules) to **Ac
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.CSL.DocumentationEvolution VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: CSL-DOC-EVO-OMEGA`
+`
+
+## Reciprocal Links
+
+- [GVRN.Learning.Index.md](GVRN.Learning.Index.md)
+[OMNI-ARTIFACT-ANCHOR] ID: GVRN.CSL.DocumentationEvolution VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: CSL-DOC-EVO-OMEGA`
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact

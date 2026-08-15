@@ -4,6 +4,8 @@ import {
   CreateModelRequest,
   ModelDefaults,
   ProviderAvailability,
+  ModelTestResult,
+  AutoAssignResult,
 } from "@/lib/types/models";
 
 export const modelsApi = {
@@ -42,6 +44,16 @@ export const modelsApi = {
   getProviders: async () => {
     const response =
       await apiClient.get<ProviderAvailability>("/models/providers");
+    return response.data;
+  },
+
+  testModel: async (id: string) => {
+    const response = await apiClient.post<ModelTestResult>(`/models/${id}/test`);
+    return response.data;
+  },
+
+  autoAssign: async () => {
+    const response = await apiClient.post<AutoAssignResult>("/models/auto-assign");
     return response.data;
   },
 };

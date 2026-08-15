@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `SYNG.WALK.ExecutionChronicle` | The Sovereign ID. |
-| **Official Name** | `SYNG.WALK.ExecutionChronicle.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `SYNG` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.WALK.ExecutionChronicle` | The Sovereign ID. |
+| **Official Name** | `SYNG.WALK.ExecutionChronicle.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `SYNG` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
+
 
 ---
 

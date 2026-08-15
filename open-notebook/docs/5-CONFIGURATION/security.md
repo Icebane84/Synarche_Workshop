@@ -1,48 +1,76 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `SECURITY` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Security Configuration
 
-# security.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+Protect your Open Notebook deployment with password authentication and production hardening.
 
 ---
 
-###### **[ARTIFACT START]**
+## API Key Encryption
 
-## **Block A: The Identification Lock (UIP-V15)**
+Open Notebook encrypts API keys stored in the database using Fernet symmetric encryption (AES-128-CBC with HMAC-SHA256).
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-SECURITY-001`           | The Sovereign ID. |
-| **Official Name** | `security.md`                 | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+### Configuration Methods
+
+| Method | Documentation |
+|--------|---------------|
+| **Settings UI** | [API Configuration Guide](../3-USER-GUIDE/api-configuration.md) |
+| **Environment Variables** | This page (below) |
+
+### Setup
+
+Set the encryption key to any secret string:
+
+```bash
+# .env or docker.env
+OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-passphrase
+```
+
+Any string works — it will be securely derived via SHA-256 internally. Use a strong passphrase for production deployments.
+
+### Default Credentials
+
+| Setting | Default | Security Level |
+|---------|---------|----------------|
+| Password | None - auth is fully disabled until `OPEN_NOTEBOOK_PASSWORD` is set | Development only |
+| Encryption Key | **None** (must be configured) | Required for API key storage |
+
+**The encryption key has no default.** You must set `OPEN_NOTEBOOK_ENCRYPTION_KEY` before using the API key configuration feature. Without it, encrypting/decrypting API keys will fail.
+
+### Docker Secrets Support
+
+Both settings support Docker secrets via `_FILE` suffix:
+
+```yaml
+environment:
+  - OPEN_NOTEBOOK_PASSWORD_FILE=/run/secrets/app_password
+  - OPEN_NOTEBOOK_ENCRYPTION_KEY_FILE=/run/secrets/encryption_key
+```
+
+### Security Notes
+
+| Scenario | Behavior |
+|----------|----------|
+| Key configured | API keys encrypted with your key |
+| No key configured | Encryption/decryption will fail (key is required) |
+| Key changed | Old encrypted keys become unreadable |
+| Legacy data | Unencrypted keys still work (graceful fallback) |
+
+### Key Management
+
+- **Keep secret**: Never commit the encryption key to version control
+- **Backup securely**: Store the key separately from database backups
+- **No rotation yet**: Changing the key requires re-saving all API keys
+- **Per-deployment**: Each instance should have its own encryption key
 
 ---
 
 ## When to Use Password Protection
 
 ### Use it for:
-
 - Public cloud deployments (PikaPods, Railway, DigitalOcean)
 - Shared network environments
 - Any deployment accessible beyond localhost
 
 ### You can skip it for:
-
 - Local development on your machine
 - Private, isolated networks
 - Single-user local setups
@@ -54,13 +82,13 @@
 ### Docker Deployment
 
 ```yaml
-# docker-compose.yml
+# Add to your docker-compose.yml (requires surrealdb service, see installation guide)
 services:
   open_notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+    image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     environment:
-      - OPENAI_API_KEY=sk-...
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY=your-secret-encryption-key
       - OPEN_NOTEBOOK_PASSWORD=your_secure_password
     # ... rest of config
 ```
@@ -69,9 +97,11 @@ Or using environment file:
 
 ```bash
 # docker.env
-OPENAI_API_KEY=sk-...
+OPEN_NOTEBOOK_ENCRYPTION_KEY=your-secret-encryption-key
 OPEN_NOTEBOOK_PASSWORD=your_secure_password
 ```
+
+> **Important**: The encryption key is **required** for credential storage. Without it, you cannot save AI provider credentials via the Settings UI. If you change or lose the encryption key, all stored credentials become unreadable.
 
 ### Development Setup
 
@@ -195,14 +225,14 @@ notebooks = client.get_notebooks()
 ### JavaScript/TypeScript
 
 ```javascript
-const API_URL = "http://localhost:5055";
-const PASSWORD = "your_password";
+const API_URL = 'http://localhost:5055';
+const PASSWORD = 'your_password';
 
 async function getNotebooks() {
   const response = await fetch(`${API_URL}/api/notebooks`, {
     headers: {
-      Authorization: `Bearer ${PASSWORD}`,
-    },
+      'Authorization': `Bearer ${PASSWORD}`
+    }
   });
   return response.json();
 }
@@ -215,12 +245,13 @@ async function getNotebooks() {
 ### Docker Security
 
 ```yaml
+# Add to your docker-compose.yml (requires surrealdb service, see installation guide)
 services:
   open_notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+    image: lfnovo/open_notebook:v1-latest
     pull_policy: always
     ports:
-      - "127.0.0.1:8502:8502" # Bind to localhost only
+      - "127.0.0.1:8502:8502"  # Bind to localhost only
     environment:
       - OPEN_NOTEBOOK_PASSWORD=your_secure_password
     security_opt:
@@ -256,20 +287,45 @@ iptables -A INPUT -p tcp --dport 5055 -j DROP
 
 See [Reverse Proxy Configuration](reverse-proxy.md) for complete nginx/Caddy/Traefik setup with HTTPS.
 
+### CORS Origins
+
+The API accepts cross-origin requests from any origin by default (`*`). This is convenient for development and diverse self-hosted setups, but it's not recommended for internet-facing production deployments because any website the user visits can issue authenticated cross-origin requests to your API.
+
+When `CORS_ORIGINS` is not set, the API logs a startup warning prompting you to configure it.
+
+**For production, set `CORS_ORIGINS` to your frontend's actual origin(s):**
+
+```bash
+# Single origin
+CORS_ORIGINS=https://notebook.example.com
+
+# Multiple origins (comma-separated)
+CORS_ORIGINS=https://notebook.example.com,https://admin.example.com
+```
+
+**Guidelines:**
+
+- Always use HTTPS origins in production.
+- List only the exact origins that should be allowed to call the API.
+- Include the scheme and port (if non-default): `https://example.com`, `http://192.168.1.10:3000`.
+- Changes require an API restart to take effect.
+
+**Error responses** (401, 404, 500, etc.) also respect the configured origins — they only include `Access-Control-Allow-Origin` for allowed origins, so error bodies are not leaked cross-origin when `CORS_ORIGINS` is configured.
+
 ---
 
 ## Security Limitations
 
 Open Notebook's password protection provides **basic access control**, not enterprise-grade security:
 
-| Feature               | Status                     |
-| --------------------- | -------------------------- |
-| Password transmission | Plain text (use HTTPS!)    |
-| Password storage      | In memory                  |
-| User management       | Single password for all    |
-| Session timeout       | None (until browser close) |
-| Rate limiting         | None                       |
-| Audit logging         | None                       |
+| Feature | Status |
+|---------|--------|
+| Password transmission | Plain text (use HTTPS!) |
+| Password storage | In memory |
+| User management | Single password for all |
+| Session timeout | None (until browser close) |
+| Rate limiting | None |
+| Audit logging | None |
 
 ### Risk Mitigation
 
@@ -286,14 +342,14 @@ Open Notebook's password protection provides **basic access control**, not enter
 
 For deployments requiring advanced security:
 
-| Need                 | Solution                    |
-| -------------------- | --------------------------- |
-| SSO/OAuth            | Implement OAuth2/SAML proxy |
-| Role-based access    | Custom middleware           |
-| Audit logging        | Log aggregation service     |
-| Rate limiting        | API gateway or nginx        |
-| Data encryption      | Encrypt volumes at rest     |
-| Network segmentation | Docker networks, VPC        |
+| Need | Solution |
+|------|----------|
+| SSO/OAuth | Implement OAuth2/SAML proxy |
+| Role-based access | Custom middleware |
+| Audit logging | Log aggregation service |
+| Rate limiting | API gateway or nginx |
+| Data encryption | Encrypt volumes at rest |
+| Network segmentation | Docker networks, VPC |
 
 ---
 
@@ -364,11 +420,3 @@ If you discover security vulnerabilities:
 - **[Reverse Proxy](reverse-proxy.md)** - HTTPS and SSL setup
 - **[Advanced Configuration](advanced.md)** - Ports, timeouts, and SSL settings
 - **[Environment Reference](environment-reference.md)** - All configuration options
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

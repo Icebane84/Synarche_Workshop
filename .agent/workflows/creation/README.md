@@ -10,6 +10,7 @@
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 # 🎨 Creation & Synthesis Lifecycle (.agent/workflows/creation)

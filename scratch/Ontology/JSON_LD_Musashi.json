@@ -1,0 +1,19 @@
+{
+  "@context": {
+	"phx": "https://synarche.org/ontology/v15.1/",
+	"schema": "http://schema.org/",
+	"phoenixTerm": "phx:phoenixTerm",
+	"industryEquivalent": "phx:industryEquivalent",
+	"functionalDefinition": "phx:functionalDefinition",
+	"relatedTo": {
+	  "@id": "phx:relatedTo",
+	  "@type": "@id"
+	}
+  },
+  "@id": "phx:governance/MusashiAudit",
+  "@type": "phx:ValidationSuite",
+  "phoenixTerm": "Musashi Audit",
+  "industryEquivalent": "Multi-Stage Validation Suite",
+  "functionalDefinition": "A 5-dimensional terminal check for artifact integrity.",
+  "relatedTo": "phx:agents/Sentinel"
+}

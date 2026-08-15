@@ -113,7 +113,12 @@ GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 ### **Block F: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Axiomatic.Lattice VER: v13.1 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED`
+`
+
+## Reciprocal Links
+
+- [GVRN.Catalog.Master.md](../01_Registries/GVRN.Catalog.Master.md)
+[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Axiomatic.Lattice VER: v13.1 [OMEGA] DOMAIN: GVRN STATUS: CANONIZED`
 
 > [!NOTE]
 > **[ARTIFACT END]**

@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `UMB-EVO-001` | The Sovereign ID. |
-| **Official Name** | `UMB-EVO-001_Blueprint_of_the_Evolution_Engine.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `COG` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[INITIATING]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `UMB-EVO-001` | The Sovereign ID. |
+| **Official Name** | `UMB-EVO-001_Blueprint_of_the_Evolution_Engine.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `COG` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

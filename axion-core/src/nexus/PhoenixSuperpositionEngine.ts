@@ -51,7 +51,7 @@ export interface CollapsedBlock<T> {
  * CASTS: Computational Abstraction and Systemic Transformation Strategies.
  * Defines the schema (NIM Gate) and the transmutation logic for a specific payload type.
  */
-export interface CASTS_Strategy<T, U = any> {
+export interface CASTS_Strategy<T, U = unknown> {
     strategyName: string;
     schema: z.ZodType<U>;
     transmute: (parsedData: U) => T;
@@ -62,9 +62,9 @@ export interface CASTS_Strategy<T, U = any> {
  * Plug-and-play cache client interface to ensure absolute runtime portability.
  * Can be backed by in-memory mock caches, local SQLite engines, or production Redis.
  */
-export interface ICacheClient {
-    get(key: string): Promise<any | null>;
-    set(key: string, value: any, ttlSeconds?: number): Promise<void>;
+export interface ICacheClient<TStore = unknown> {
+    get(key: string): Promise<TStore | null>;
+    set(key: string, value: TStore, ttlSeconds?: number): Promise<void>;
 }
 
 /**
@@ -72,15 +72,15 @@ export interface ICacheClient {
  * Serves as the dynamic state-translation and routing nexus within the Nova Forge.
  */
 export class PhoenixSuperpositionEngine {
-    private static strategyRegistry = new Map<string, CASTS_Strategy<any>>();
+    private static strategyRegistry = new Map<string, CASTS_Strategy<unknown>>();
     private static cacheClient: ICacheClient | null = null;
 
     /**
      * Registers a transformation strategy dynamically (DAMP / CASTS compliant).
      */
-    public static registerStrategy(name: string, strategy: CASTS_Strategy<any>): void {
+    public static registerStrategy<T, U>(name: string, strategy: CASTS_Strategy<T, U>): void {
         const normalizedName = name.toUpperCase();
-        this.strategyRegistry.set(normalizedName, strategy);
+        this.strategyRegistry.set(normalizedName, strategy as unknown as CASTS_Strategy<unknown>);
         PhoenixLogger.info(`[PSE] CASTS Strategy registered: ${normalizedName}`);
     }
 
@@ -111,7 +111,7 @@ export class PhoenixSuperpositionEngine {
 
             // 2. High-Speed Cache Interception (Sub-50ms Bypass)
             if (this.cacheClient) {
-                const cached = await this.cacheClient.get(payload.blockId);
+                const cached = await this.cacheClient.get(payload.blockId) as CollapsedBlock<T | Buffer> | null;
                 if (cached) {
                     const latencyMs = Date.now() - startTime;
                     return {
@@ -140,13 +140,13 @@ export class PhoenixSuperpositionEngine {
             const validatedData = await this.applyNIMGate(payload.rawPayload, strategy.schema);
 
             // 5. CASTS Transmutation
-            let transmutedData = strategy.transmute(validatedData);
+            let transmutedData: T | Buffer = strategy.transmute(validatedData) as T;
 
             // 6. Polyglot Output Packaging (Conditional Byte Packing)
             const isGameClient =
                 payload.contextVector.includes("CLIENT_GAME") || payload.contextVector.includes("GAME");
             if (isGameClient && strategy.packToBinary) {
-                transmutedData = strategy.packToBinary(transmutedData) as any;
+                transmutedData = strategy.packToBinary(transmutedData) as T | Buffer;
             }
 
             // 7. Superposition Collapse: Final Deterministic Assembly
@@ -221,7 +221,7 @@ export class PhoenixSuperpositionEngine {
      */
     private static collapse<T>(
         payload: SuperpositionPayload,
-        data: any,
+        data: T | Buffer,
         strategyName: string,
         latencyMs: number,
     ): CollapsedBlock<T | Buffer> {

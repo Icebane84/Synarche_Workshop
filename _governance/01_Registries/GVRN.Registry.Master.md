@@ -35,3 +35,13 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 Alignment to v14.0 OMEGA standard.
 
 ###### **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [SYKB_03_Registries.md](../knowledge_export/SYKB_03_Registries.md)
+- [GVRN.Registry.PhoenixRosettaStone.md](GVRN.Registry.PhoenixRosettaStone.md)
+- [GVRN.Catalog.Master.md](GVRN.Catalog.Master.md)
+- [GVRN.TRIAD.Subsystem.md](../00_Codex/GVRN.TRIAD.Subsystem.md)
+- [GVRN.SOUL.Sentinel.md](../00_Codex/GVRN.SOUL.Sentinel.md)
+- [GVRN.SOUL.Axion.md](../00_Codex/GVRN.SOUL.Axion.md)
+- [CODING_HANDBOOK.md](../CODING_HANDBOOK.md)

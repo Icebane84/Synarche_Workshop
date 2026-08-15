@@ -1,26 +1,42 @@
+import os
+from typing import Optional
+
 from dotenv import load_dotenv
 from supabase import Client, create_client
 
-# Load from .env.local explicitly for testing
-load_dotenv(".env.local")
 
-url = "https://rtjkhpotguwngfpvhfej.supabase.co"
-key = "your-supabase-service-role-key-here"
+def _build_client() -> Optional[Client]:
+    load_dotenv(".env.local")
 
-print(f"Testing connection to {url}...")
-try:
-    supabase: Client = create_client(url, key)
-    # Check schema of axion_state
-    print("Checking 'axion_state' columns...")
-    res = supabase.rpc("get_schema_info", {"table_name": "axion_state"}).execute()
-    # If get_schema_info doesn't exist, we can try a raw query if we have a custom rpc or just check what we get from a select * limit 1
-    # Actually, we can just use the error messages from table calls to infer existence.
-    # To get columns without rpc, we can try to select a non-existent column and see the error.
+    url = os.environ.get("SUPABASE_URL", "")
+    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+    if not url or not key or "your-supabase" in key.lower():
+        print("[WARN] Supabase credentials are not configured; skipping connection test.")
+        return None
 
-    # Let's try to insert a dummy record to see if it works
-    print("Attempting to select from axion_state...")
-    res = supabase.table("axion_state").select("*").limit(1).execute()
-    print(f"axion_state: {res.data}")
+    try:
+        return create_client(url, key)
+    except Exception as exc:
+        print(f"[WARN] Failed to initialize Supabase client: {exc}")
+        return None
 
-except Exception as e:
-    print(f"Connection Failed: {e}")
+
+def main() -> None:
+    supabase = _build_client()
+    if supabase is None:
+        return
+
+    print(f"Testing connection to {os.environ.get('SUPABASE_URL', '')}...")
+    try:
+        print("Checking 'axion_state' columns...")
+        supabase.rpc("get_schema_info", {"table_name": "axion_state"}).execute()
+
+        print("Attempting to select from axion_state...")
+        res = supabase.table("axion_state").select("*").limit(1).execute()
+        print(f"axion_state: {getattr(res, 'data', None)}")
+    except Exception as exc:
+        print(f"Connection Failed: {exc}")
+
+
+if __name__ == "__main__":
+    main()

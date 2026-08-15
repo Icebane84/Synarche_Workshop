@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-07-25T10:23:33.646753Z",
+  "verified_files": [
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_026_mass_kinetic_cleave_component.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_027_posture_combat_component.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_028_berserk_character_orchestration.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_029_angular_counter_component.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_030_directional_cleave_interface.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_031_mass_kinetic_audio_subsystem.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_032_dynamic_occlusion_audio_linker.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_033_mass_kinetic_niagara_bridge.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_034_weapon_resistance_warper.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_035_camera_resistance_dilation.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_036_berserker_armor_override_component.cpp",
+    "C:\\Users\\Chris\\Synarche_Workspace\\scratch\\dragonslayer\\prs_001_eng_037_berserk_automation_test_suite.cpp"
+  ],
+  "violations": {},
+  "exit_code": 0,
+  "telemetry_metrics": {
+    "files_scanned": {
+      "value": 12,
+      "provenance": "MEASURED"
+    },
+    "violation_count": {
+      "value": 0,
+      "provenance": "MEASURED"
+    },
+    "exit_code": {
+      "value": 0,
+      "provenance": "MEASURED"
+    }
+  }
+}

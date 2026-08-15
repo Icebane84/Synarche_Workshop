@@ -6,7 +6,7 @@
 | **Version**       | **v13.0**                                      |
 | **Evolution**     | `SOVEREIGN`                                    |
 | **Status (State)**| `[CANONIZED]`                                  |
-| **Celestial Class**| `[STAR]`                                       |
+| **Celestial Class**| `[STAR]`                                      |
 | **Integrity Hash**| `[AUTO-GENERATED]`                             |.
 
 ---
@@ -45,23 +45,13 @@ for old_name, new_name in renames.items():
         uip_end_match = re.search(r"\|\s*\*\*Relations\*\*\s*\|.*?\|.*?\|", content)
         if uip_end_match:
             insert_str = "\n| **Integrity Hash** | `[AUTO-GENERATED]` | Validation |"
-            content = (
-                content[: uip_end_match.end()]
-                + insert_str
-                + content[uip_end_match.end() :]
-            )
+            content = content[: uip_end_match.end()] + insert_str + content[uip_end_match.end() :]
         elif "**Relations**" not in content and "Status (State)" in content:
             # Fallback for GVRN.REG.ThePhoenixRPGFramework.md
-            uip_end_match = re.search(
-                r"\|\s*\*\*Status \(State\)\*\*\s*\|.*?\|.*?\|", content
-            )
+            uip_end_match = re.search(r"\|\s*\*\*Status \(State\)\*\*\s*\|.*?\|.*?\|", content)
             if uip_end_match:
                 insert_str = "\n| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |\n| **Integrity Hash** | `[AUTO-GENERATED]` | Validation |"
-                content = (
-                    content[: uip_end_match.end()]
-                    + insert_str
-                    + content[uip_end_match.end() :]
-                )
+                content = content[: uip_end_match.end()] + insert_str + content[uip_end_match.end() :]
 
     # H1 Singularity
     class H1Replacer:
@@ -96,4 +86,4 @@ for old_name, new_name in renames.items():
     # Delete old file if different
     if old_name != new_name:
         os.remove(old_path)
-print("Fixes applied.")  # noqa: T201
+print("Fixes applied.")

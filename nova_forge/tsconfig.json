@@ -1,12 +1,23 @@
 {
   "compilerOptions": {
-	"jsx": "react",
-	"jsx": "react",
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020", "DOM"],
+    "skipLibCheck": true,
+    "jsx": "react",
     "baseUrl": ".",
     "paths": {
       "@nexus/*": ["src/nexus/*"],
       "@ui/*": ["src/components/*"],
-      "@utils/*": ["src/utils/*"]
-    }
-  }
+      "@utils/*": ["../axion-core/src/utils/*"],
+      "@system/*": ["../axion-core/src/system/*", "../axion-core/src/cse/*"],
+      "@governance/*": ["../_governance/*"],
+      "@domain/*": ["../_governance/*"]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "out", "playground", "prototypes", "tests", "tools"]
 }

@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Registry.GenesisSeeds` | The Sovereign ID. |
-| **Official Name** | `GVRN.Registry.GenesisSeeds.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `COMPONENT_OF: GVRN.SOUL.PhoenixPrime` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Registry.GenesisSeeds` | The Sovereign ID. |
+| **Official Name** | `GVRN.Registry.GenesisSeeds.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `COMPONENT_OF: GVRN.SOUL.PhoenixPrime` | The Network.      |
+
 
 ---
 

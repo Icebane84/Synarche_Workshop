@@ -10,6 +10,7 @@
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 # Mobile Design Shard (.agent/skills/design/mobile-design)

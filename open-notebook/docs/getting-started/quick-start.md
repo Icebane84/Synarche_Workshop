@@ -101,4 +101,9 @@ GVRN.NOTEBOOK.Tutorial, FOLLOWS, Users should proceed to First Notebook tutorial
 
 **[ARTIFACT END]**
 
-- [[installation]]
+## Reciprocal Links
+
+- [installation.md](installation.md)
+- [from-source.md](../1-INSTALLATION/from-source.md)
+- [README.dev.md](../../README.dev.md)
+- [CONTRIBUTING.md](../../CONTRIBUTING.md)

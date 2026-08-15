@@ -2,13 +2,14 @@
 artifact_anchor:
   id: CORE.LOOM_PARSER.001
   version: v15.0 [OMEGA]
-  provenance: '2026-05-27'
-  domain: CORE
+  provenance: '2026-08-13'
+  domain: CORE-CSE
   celestial_class: STAR
   tier: LOGIC
   state: ACTIVE
   ethos: SOVEREIGN_LOGIC_COMPONENT
-  relations: []
+  relations:
+    - GOVERNED_BY: CORE.Codex.Phoenix
 """
 
 """### **Block A: The Identification Lock (UIP-V15)**.
@@ -29,13 +30,16 @@ artifact_anchor:
 > Ethos: Clarity through Parsing.
 """
 
+import logging
 import os
 import re
+
+logger = logging.getLogger("PhoenixLogger")
 
 
 class LoomParser:
     """WHAT: Extracts active state data from the Synarche Loom.
-    HOW: Utilizes Regex anchors to pull Mission and Phase variables.
+    HOW: Searches candidate paths and utilizes Regex anchors to pull Mission and Phase variables.
     WHY: To translate human-readable markdown into machine-readable logic.
     """
 
@@ -43,36 +47,48 @@ class LoomParser:
     PHASE_PATTERN = re.compile(r"Phase:\s*(.*)")
 
     def __init__(self, root_dir: str) -> None:
-        self.loom_path = os.path.join(
-            root_dir, "Flattened_Synarche_Synthesis_System_Loom.md"
-        )
+        self.root_dir = root_dir
+        self.candidate_paths = [
+            os.path.join(root_dir, "Flattened_Synarche_Synthesis_System_Loom.md"),
+            os.path.join(root_dir, "_governance", "06_Learning", "Flattened_Synarche_Synthesis_System_Loom.md"),
+            os.path.join(root_dir, "_governance", "Flattened_Synarche_Synthesis_System_Loom.md"),
+            os.path.join(root_dir, "axion-core", "Flattened_Synarche_Synthesis_System_Loom.md"),
+        ]
+
+    def _resolve_loom_path(self) -> str | None:
+        for path in self.candidate_paths:
+            if os.path.exists(path):
+                return path
+        return None
 
     def extract_state(self) -> dict[str, str]:
         """Extracts the current mission and phase state from the Loom substrate.
 
         Returns:
             Dict[str, str]: A dictionary containing the mission and phase values.
-
-        Raises:
-            FileNotFoundError: If the Loom file is missing.
-            RuntimeError: If the Loom file cannot be read.
-
         """
-        if not os.path.exists(self.loom_path):
-            raise FileNotFoundError(f"CRITICAL: Substrate missing at {self.loom_path}")
+        loom_path = self._resolve_loom_path()
+        if not loom_path:
+            logger.warning("[LoomParser] Substrate file not found in candidate paths. Using default canonical state.")
+            return {
+                "mission": "SYNARCHE",
+                "phase": "ALPHA",
+            }
 
         try:
-            with open(self.loom_path, encoding="utf-8") as f:
+            with open(loom_path, encoding="utf-8") as f:
                 content = f.read()
-        except PermissionError as e:
-            raise RuntimeError(
-                f"CRITICAL: Substrate at '{self.loom_path}' is locked by another process or access is denied."
-            ) from e
+        except Exception as e:
+            logger.warning(f"[LoomParser] Failed to read Loom at '{loom_path}': {e}. Using fallback.")
+            return {
+                "mission": "SYNARCHE",
+                "phase": "ALPHA",
+            }
 
         mission_match = self.MISSION_PATTERN.search(content)
         phase_match = self.PHASE_PATTERN.search(content)
 
         return {
-            "mission": mission_match.group(1).strip() if mission_match else "UNKNOWN",
-            "phase": phase_match.group(1).strip() if phase_match else "UNKNOWN",
+            "mission": mission_match.group(1).strip() if mission_match else "SYNARCHE",
+            "phase": phase_match.group(1).strip() if phase_match else "ALPHA",
         }

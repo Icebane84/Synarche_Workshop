@@ -1,14 +1,20 @@
-"""### **Block A: The Identification Lock (UIP-V15)**.
+from dataclasses import dataclass, field
+from typing import FrozenSet, Type
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID** | `CORE-FDE-DAG-SYSTEM_SIGNATURE` | The Sovereign ID. |
-| **Official Name** | `system_signature.py`                  | The Filename.     |
-| **Version** | **v1.0 [BASELINE]** | The Standard.     |
-| **Domain** | `DAG`                    | The Subject.      |
-| **Status** | `[ACTIVE]`                    | The Lifecycle.    |
 
-**Location:** `fde_engine/dag/system_signature.py`
+@dataclass(frozen=True)
+class SystemSignature:
+    """Read/Write/Accumulate contract for ECS System execution."""
 
-**Ethos:** Absolute Determinism. Zero Logic Drift.
-"""
+    reads: FrozenSet[Type] = field(default_factory=frozenset)
+    writes: FrozenSet[Type] = field(default_factory=frozenset)
+    accumulates: FrozenSet[Type] = field(default_factory=frozenset)
+
+    def conflicts_with(self, other: "SystemSignature") -> bool:
+        """Returns True if there is a Write-Read or Write-Write conflict."""
+        if self.writes & (other.reads | other.writes):
+            return True
+        if other.writes & (self.reads | self.writes):
+            return True
+        return False
+

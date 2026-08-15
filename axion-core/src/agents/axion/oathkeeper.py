@@ -50,3 +50,4 @@
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
 `[OMNI-ARTIFACT-ANCHOR] ID: CORE.oathkeeper VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [CANONIZED] TS: 2026-03-28 HASH: 8b27d7dd96329230`
+"""

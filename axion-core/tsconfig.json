@@ -12,6 +12,7 @@
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
+        "jsx": "react-jsx",
         "paths": {
             "@system/*": ["./src/system/*", "./src/cse/*"],
             "@domain/*": ["./src/02_domain/*"],
@@ -23,12 +24,11 @@
             "@pulse/*": ["./_logs/*"],
             "@loom/*": ["./templates/*"],
             "@archive/*": ["./archives/*"],
-            "@universe/*": ["./_universe/*"],
-            "@logging": ["./src/system/logging/index.ts"],
             "@logging/*": ["./src/system/logging/*"],
-            "@utils/*": ["./src/utils/*"]
+            "@utils/*": ["./src/utils/*"],
+            "@governance/*": ["../_governance/*"]
         }
     },
     "include": ["src"],
-    "exclude": ["node_modules", ".vscode-test", "src/nexus/useNexusHandshake.ts"]
+    "exclude": ["node_modules", ".vscode-test", "src/nexus/useNexusHandshake.ts", "src/utils/PythonBridge1.ts"]
 }

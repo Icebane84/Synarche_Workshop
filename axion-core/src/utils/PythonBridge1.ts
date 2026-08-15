@@ -1,4 +1,9 @@
 // src/utils/PythonBridge.ts
+/**
+ * artifact_anchor:
+ * - id: 
+ * - type: 
+ */
 import * as net from 'net';
 import { useStore } from '../store'; // Hook straight into Zustand state core
 

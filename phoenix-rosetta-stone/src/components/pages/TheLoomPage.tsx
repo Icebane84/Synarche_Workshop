@@ -45,7 +45,7 @@ const TheLoomPage: React.FC = () => {
 
     // Local State
     const [selectedTaskId, setSelectedTaskId] = useState<string | null>(null);
-    const [viewMode, setViewMode] = useState<'kanban' | 'chronos'>('kanban');
+    const [viewMode, setViewMode] = useState<'kanban' | 'chronos' | 'ast'>('kanban');
     const [searchQuery, setSearchQuery] = useState('');
     const [sourceFilter] = useState<TaskSource | 'All'>('All');
     const [visibleCounts, setVisibleCounts] = useState<Record<TaskStatus, number>>({
@@ -180,7 +180,7 @@ const TheLoomPage: React.FC = () => {
                                 />
                             ))}
                         </motion.div>
-                    ) : (
+                    ) : viewMode === 'chronos' ? (
                         <motion.div
                             key="chronos"
                             initial={{ opacity: 0, scale: 0.98 }}
@@ -189,6 +189,16 @@ const TheLoomPage: React.FC = () => {
                             className="h-full"
                         >
                             <ChronosTimeline tasks={tasks} />
+                        </motion.div>
+                    ) : (
+                        <motion.div
+                            key="ast"
+                            initial={{ opacity: 0, y: 15 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -15 }}
+                            className="h-full"
+                        >
+                            <ASTHeatmapVisualizer />
                         </motion.div>
                     )}
                 </AnimatePresence>
@@ -260,30 +270,47 @@ const ConnectionStatus = ({ status }: { status: 'disconnected' | 'connecting' | 
     );
 };
 
+import ASTHeatmapVisualizer from '../ast/ASTHeatmapVisualizer';
+import { Layers } from 'lucide-react';
+
 const ViewModeToggle = ({
     view,
     setView,
 }: {
-    view: 'kanban' | 'chronos';
-    setView: (v: 'kanban' | 'chronos') => void;
+    view: 'kanban' | 'chronos' | 'ast';
+    setView: (v: 'kanban' | 'chronos' | 'ast') => void;
 }) => (
     <div className="glass-panel p-1 flex gap-1">
-        <button
-            onClick={() => {
-                setView('kanban');
-            }}
-            className={`p-2 rounded-lg transition-all ${view === 'kanban' ? 'bg-cyan-500/10 text-cyan-400 shadow-inner' : 'text-weft-muted hover:text-weft'}`}
-        >
-            <Kanban size={16} />
-        </button>
-        <button
-            onClick={() => {
-                setView('chronos');
-            }}
-            className={`p-2 rounded-lg transition-all ${view === 'chronos' ? 'bg-cyan-500/10 text-cyan-400 shadow-inner' : 'text-weft-muted hover:text-weft'}`}
-        >
-            <Clock size={16} />
-        </button>
+        <Tooltip label="Logic Matrix (Kanban)">
+            <button
+                onClick={() => {
+                    setView('kanban');
+                }}
+                className={`p-2 rounded-lg transition-all ${view === 'kanban' ? 'bg-cyan-500/10 text-cyan-400 shadow-inner' : 'text-weft-muted hover:text-weft'}`}
+            >
+                <Kanban size={16} />
+            </button>
+        </Tooltip>
+        <Tooltip label="Chronos Timeline">
+            <button
+                onClick={() => {
+                    setView('chronos');
+                }}
+                className={`p-2 rounded-lg transition-all ${view === 'chronos' ? 'bg-cyan-500/10 text-cyan-400 shadow-inner' : 'text-weft-muted hover:text-weft'}`}
+            >
+                <Clock size={16} />
+            </button>
+        </Tooltip>
+        <Tooltip label="AST Dependency Heatmap">
+            <button
+                onClick={() => {
+                    setView('ast');
+                }}
+                className={`p-2 rounded-lg transition-all ${view === 'ast' ? 'bg-cyan-500/10 text-cyan-400 shadow-inner' : 'text-weft-muted hover:text-weft'}`}
+            >
+                <Layers size={16} />
+            </button>
+        </Tooltip>
     </div>
 );
 

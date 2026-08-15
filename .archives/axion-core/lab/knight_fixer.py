@@ -19,6 +19,29 @@ import re
 SKIP_DIRS = {".git", "__pycache__", ".venv", "node_modules"}
 
 
+def _sort_imports(code: str) -> str:
+    """A simple import sorter.
+
+    This is a basic implementation. For production, a library like `isort` is more robust.
+    It finds blocks of imports, sorts them, and rewrites them. It does not handle
+    grouping (standard, third-party, local) for simplicity.
+    """
+    lines = code.split('\n')
+    new_lines = []
+    import_block = []
+
+    for line in lines:
+        if line.startswith('import ') or line.startswith('from '):
+            import_block.append(line)
+        else:
+            if import_block:
+                new_lines.extend(sorted(list(set(import_block))))
+                import_block = []
+            new_lines.append(line)
+
+    return '\n'.join(new_lines)
+
+
 def fix_file(filepath: str, dry_run: bool = False) -> bool:
     """Apply automated fixes to a single Python file. Returns True if changed."""
     try:
@@ -35,6 +58,9 @@ def fix_file(filepath: str, dry_run: bool = False) -> bool:
 
     # Collapse 3+ consecutive blank lines to 2
     fixed = re.sub(r"\n{3,}", "\n\n", fixed)
+
+    # Sort import statements
+    fixed = _sort_imports(fixed)
 
     # Ensure exactly one newline at end of file
     fixed = fixed.rstrip("\n") + "\n"

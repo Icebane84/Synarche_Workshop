@@ -27,7 +27,7 @@ python %TOOL_PATH% "%BUNDLE_NAME%" ^
     --codex "%CODEX_PATH%" ^
     --module "%CORE_PATH%" ^
     --module "%ROSETTA_PATH%" ^
-    --output "axion_manifest.md"
+    --output "_logs/axion_manifest.md"
 
 if %ERRORLEVEL% EQU 0 (
     echo ✅ Ascension Successful. Axion Persona Manifested.

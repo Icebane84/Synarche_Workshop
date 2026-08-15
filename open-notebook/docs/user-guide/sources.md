@@ -91,4 +91,6 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 **[ARTIFACT END]**
 
-- [[index]]
+## Reciprocal Links
+
+- [index.md](index.md)

@@ -1,19 +1,16 @@
 # AXION.MINT.SEED.001
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `AXION.MINT.SEED.001` | The Sovereign ID. |
-| **Official Name** | `AXION.MINT.SEED.001.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `AXION` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNS: [Nicemind_Seeds], ALIGNS: GVRN.Axiomatic.Lattice` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `AXION.MINT.SEED.001` | The Sovereign ID. |
+| **Official Name** | `AXION.MINT.SEED.001.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `AXION` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNS: [Nicemind_Seeds], ALIGNS: GVRN.Axiomatic.Lattice` | The Network.      |
+
 
 ---
 

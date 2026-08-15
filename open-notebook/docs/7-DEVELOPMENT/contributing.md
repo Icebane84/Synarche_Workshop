@@ -1,63 +1,40 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `CONTRIBUTING` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# contributing.md
-
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-CONTRIBUTING-001`       | The Sovereign ID. |
-| **Official Name**   | `contributing.md`             | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # Contributing to Open Notebook
 
 Thank you for your interest in contributing to Open Notebook! We welcome contributions from developers of all skill levels. This guide will help you understand our contribution workflow and what makes a good contribution.
 
-## 🚨 Issue-First Workflow
+## 🚦 Issue-First Workflow (for anything non-trivial)
 
-**To maintain project coherence and avoid wasted effort, please follow this process:**
+**To maintain project coherence and avoid wasted effort, non-trivial work starts with an issue:**
 
 1. **Create an issue first** - Before writing any code, create an issue describing the bug or feature
 2. **Propose your solution** - Explain how you plan to implement the fix or feature
 3. **Wait for assignment** - A maintainer will review and assign the issue to you if approved
 4. **Only then start coding** - This ensures your work aligns with the project's vision and architecture
 
-**Why this process?**
+**When you can skip the issue and just open a PR:**
+- Typos, broken links, and small documentation clarifications
+- Small, obvious bug fixes — a few lines, one clear right answer, no design decisions
+- Translation fixes or completing missing i18n keys
 
+**When an issue is definitely required first:**
+- New features, of any size
+- Architecture or structural changes
+- Breaking changes
+- Anything where the *how* has more than one reasonable answer
+
+**Already coded something sizeable without an issue?** Don't throw it away: mark the PR as **draft**, open an issue describing the problem and your approach, and link it from the PR. Our triage is fast — expect a call within 1–2 days.
+
+**Why this process?**
 - Prevents duplicate work
 - Ensures solutions align with our architecture and design principles
 - Saves your time by getting feedback before coding
 - Helps maintainers manage the project direction
 
-> ⚠️ **Pull requests without an assigned issue may be closed**, even if the code is good. We want to respect your time by making sure work is aligned before it starts.
+> ⚠️ **Non-trivial pull requests without an issue may be closed**, even if the code is good. We want to respect your time by making sure work is aligned before it starts.
 
 ## Code of Conduct
 
-By participating in this project, you are expected to uphold our Code of Conduct. Be respectful, constructive, and collaborative.
+By participating in this project, you are expected to uphold our [Code of Conduct](/CODE_OF_CONDUCT.md). Be respectful, constructive, and collaborative.
 
 ## How Can I Contribute?
 
@@ -87,7 +64,7 @@ By participating in this project, you are expected to uphold our Code of Conduct
 Once your issue is assigned:
 
 1. **Fork the repo** and create your branch from `main`
-2. **Understand our vision and principles** - Read [design-principles.md](design-principles.md) to understand what guides our decisions
+2. **Understand our vision and principles** - Read [VISION.md](../../VISION.md) (what the product is and where it's going) and [design-principles.md](design-principles.md) (engineering practices)
 3. **Follow our architecture** - Refer to the architecture documentation to understand project structure
 4. **Write quality code** - Follow the standards outlined in [code-standards.md](code-standards.md)
 5. **Test your changes** - See [testing.md](testing.md) for test guidelines
@@ -101,7 +78,6 @@ Once your issue is assigned:
 ### What Makes a Good Contribution?
 
 ✅ **We love PRs that:**
-
 - Solve a real problem described in an issue
 - Follow our architecture and coding standards
 - Include tests and documentation
@@ -109,12 +85,23 @@ Once your issue is assigned:
 - Have clear commit messages
 
 ❌ **We may close PRs that:**
-
-- Don't have an associated approved issue
+- Are non-trivial and don't have an associated approved issue (small obvious fixes are exempt — see the issue-first workflow above)
 - Introduce breaking changes without discussion
 - Conflict with our architectural vision
 - Lack tests or documentation
 - Try to solve multiple unrelated problems
+
+### AI-Assisted and Agent-Generated PRs
+
+A large share of contributions — including our own — are written with coding agents (Claude Code, Cursor, Copilot, etc.). That's welcome. The tool doesn't change the contract; **the operator does not stop being the author**:
+
+1. **You own the PR.** You must have read, understood, and be able to explain every line of the diff. "The agent wrote it" is never an answer in review.
+2. **Issue-first still applies to anything non-trivial.** Agents make it cheap to produce large unsolicited PRs — those get closed like any other unassigned PR, regardless of code quality. (Small obvious fixes are exempt, same as for humans; a sizeable PR without an issue can be converted to draft while its issue goes through triage.)
+3. **Tests must have actually run.** Paste real output. An agent *claiming* tests pass is not test evidence.
+4. **Point your agent at the right context.** The repo ships `AGENTS.md` files (root, `open_notebook/`, `frontend/`) with the normative rules, and [change-playbooks.md](change-playbooks.md) with step-by-step recipes — agents that read them produce PRs that pass review faster.
+5. **Keep it scoped.** Agents tend to "improve" surrounding code along the way. Unrelated refactors belong in separate issues/PRs.
+
+Disclosure of AI assistance is appreciated but optional — responsibility for the result is what matters, and it's yours either way.
 
 ## Git Commit Messages
 
@@ -137,7 +124,6 @@ We use a **feature branch workflow**:
 ### Making Changes
 
 1. **Create a feature branch**:
-
 ```bash
 git checkout -b feature/amazing-new-feature
 ```
@@ -145,7 +131,6 @@ git checkout -b feature/amazing-new-feature
 2. **Make your changes** following our coding standards
 
 3. **Test your changes**:
-
 ```bash
 # Run tests
 uv run pytest
@@ -158,14 +143,12 @@ uv run ruff format .
 ```
 
 4. **Commit your changes**:
-
 ```bash
 git add .
 git commit -m "feat: add amazing new feature"
 ```
 
 5. **Push and create PR**:
-
 ```bash
 git push origin feature/amazing-new-feature
 # Then create a Pull Request on GitHub
@@ -222,7 +205,9 @@ We're actively looking for contributions in these areas:
 
 ### Documentation References
 
-- [Design Principles](design-principles.md) - Understanding our project vision
+- [VISION.md](../../VISION.md) - Product identity and current posture
+- [Design Principles](design-principles.md) - Engineering practices and anti-patterns
+- [Decision Records](decisions/README.md) - Why things are the way they are
 - [Code Standards](code-standards.md) - Coding guidelines by language
 - [Testing Guide](testing.md) - How to write tests
 - [Development Setup](development-setup.md) - Getting started locally
@@ -241,11 +226,3 @@ We recognize contributions through:
 Thank you for contributing to Open Notebook! Your contributions help make research more accessible and private for everyone.
 
 For questions about this guide or contributing in general, please reach out on [Discord](https://discord.gg/37XJPXfz2w) or open a GitHub Discussion.
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

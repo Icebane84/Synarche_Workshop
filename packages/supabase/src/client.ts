@@ -37,52 +37,52 @@ function resolveEnv(key: string): string | undefined {
   return undefined;
 }
 
-const supabaseUrl = resolveEnv("NEXT_PUBLIC_SUPABASE_URL");
-const supabaseKey =
-  resolveEnv("SUPABASE_ANON_KEY") ??
-  resolveEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY") ??
-  resolveEnv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY") ??
-  resolveEnv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY");
-
-console.log("[Synarche · Supabase] Initializing client with:", {
-  url: supabaseUrl,
-  hasKey: !!supabaseKey,
-  keySnippet: supabaseKey ? `${supabaseKey.substring(0, 8)}...` : undefined,
-  resolvedFrom: supabaseKey === resolveEnv("SUPABASE_ANON_KEY") ? "SUPABASE_ANON_KEY" : "PUBLISHABLE_KEY"
-});
-
-if (!supabaseUrl) {
-  throw new Error(
-    "[Synarche · Supabase] NEXT_PUBLIC_SUPABASE_URL is not defined. " +
-      "Check .env.local at the workspace root.",
-  );
-}
-
-if (!supabaseKey) {
-  throw new Error(
-    "[Synarche · Supabase] No Supabase key found. " +
-      "Set NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY or SUPABASE_ANON_KEY in .env.local.",
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Singleton client
-// Lazily initialised — safe for both extension (Node) and browser contexts.
-// ---------------------------------------------------------------------------
-
-let _client: SupabaseClient<Database> | null = null;
+// Top-level lazy client instance
+let _client: SupabaseClient<any> | null = null;
 
 /**
  * Returns the shared Supabase client instance.
  * Creates it on first call; subsequent calls return the same instance.
  */
-export function getSupabaseClient(): SupabaseClient<Database> {
+export function getSupabaseClient(): SupabaseClient<any> {
   if (!_client) {
+    const supabaseUrl =
+      resolveEnv("NEXT_PUBLIC_SUPABASE_URL") ??
+      resolveEnv("SUPABASE_URL") ??
+      resolveEnv("VITE_SUPABASE_URL");
+
+    const supabaseKey =
+      resolveEnv("SUPABASE_ANON_KEY") ??
+      resolveEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY") ??
+      resolveEnv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY") ??
+      resolveEnv("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY") ??
+      resolveEnv("VITE_SUPABASE_ANON_KEY");
+
+    console.log("[Synarche · Supabase] Initializing client with:", {
+      url: supabaseUrl,
+      hasKey: !!supabaseKey,
+      keySnippet: supabaseKey ? `${supabaseKey.substring(0, 8)}...` : undefined,
+    });
+
+    if (!supabaseUrl) {
+      throw new Error(
+        "[Synarche · Supabase] NEXT_PUBLIC_SUPABASE_URL / VITE_SUPABASE_URL is not defined. " +
+          "Check .env.local at the workspace root.",
+      );
+    }
+
+    if (!supabaseKey) {
+      throw new Error(
+        "[Synarche · Supabase] No Supabase key found. " +
+          "Set NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY or SUPABASE_ANON_KEY in .env.local.",
+      );
+    }
+
     const isNode =
       typeof process !== "undefined" &&
       typeof (process as any).versions?.node !== "undefined";
 
-    _client = createClient<Database>(supabaseUrl!, supabaseKey!, {
+    _client = createClient(supabaseUrl, supabaseKey, {
       auth: {
         // Disable browser-only auth storage when running in Node/VS Code
         persistSession: !isNode,
@@ -94,5 +94,11 @@ export function getSupabaseClient(): SupabaseClient<Database> {
   return _client;
 }
 
-/** Convenience singleton export */
-export const supabase = getSupabaseClient();
+/** Lazy Proxy singleton export — defers client initialization until first property dereference */
+export const supabase: SupabaseClient<any> = new Proxy({} as SupabaseClient<any>, {
+  get(_target, prop) {
+    const client = getSupabaseClient();
+    const val = (client as any)[prop];
+    return typeof val === "function" ? val.bind(client) : val;
+  },
+});

@@ -82,102 +82,118 @@ KEY_MAP = {
 }
 
 
-def _extract_title(content: str) -> str:
-    """Finds the first H1 that is NOT UIP related."""
-    h1_matches = re.finditer(r"^#\s+(.+)$", content, re.MULTILINE)
-    for match in h1_matches:
-        candidate = match.group(1).replace("*", "").strip()
-        if (
-            "Universal Identification & Provenance" not in candidate
-            and "UIP" not in candidate
-        ):
-            return candidate
-    return "Unknown"
+class ArtifactParser:
+    """Parses a single artifact file to extract UIP metadata."""
 
+    def _extract_title(self, content: str) -> str:
+        """Finds the first H1 that is NOT UIP related."""
+        h1_matches = re.finditer(r"^#\s+(.+)$", content, re.MULTILINE)
+        for match in h1_matches:
+            candidate = match.group(1).replace("*", "").strip()
+            if (
+                "Universal Identification & Provenance" not in candidate
+                and "UIP" not in candidate
+            ):
+                return candidate
+        return "Unknown"
 
-def _process_uip_row(line: str, uip: dict[str, str]) -> None:
-    """Processes a single row of the UIP table."""
-    parts = [p.strip() for p in line.split("|")]
-    if len(parts) < MIN_UIP_PARTS:
-        return
+    def _process_uip_row(self, line: str, uip: dict[str, str]) -> None:
+        """Processes a single row of the UIP table."""
+        parts = [p.strip() for p in line.split("|")]
+        if len(parts) < MIN_UIP_PARTS:
+            return
 
-    # Key cleaning: remove numbers, stars, backticks
-    raw_key = parts[1].replace("*", "").replace("`", "").strip()
-    # Remove leading numbers like "1. "
-    clean_key = re.sub(r"^\d+\.\s*", "", raw_key)
+        raw_key = re.sub(r"^\d+\.\s*", "", parts[1].replace("*", "").replace("`", "").strip())
+        val = parts[2].replace("`", "").replace("*", "").strip()
 
-    val = parts[2].replace("`", "").replace("*", "").strip()
+        if raw_key in KEY_MAP:
+            mapped_key = KEY_MAP[raw_key]
+            if mapped_key == "Dependencies":
+                val = val.replace("[", "").replace("]", "").strip()
+            uip[mapped_key] = val
 
-    # Dynamic mapping
-    if clean_key in KEY_MAP:
-        mapped_key = KEY_MAP[clean_key]
-        if mapped_key == "Dependencies":
-            # Standardize: remove brackets
-            val = val.replace("[", "").replace("]", "").strip()
-        uip[mapped_key] = val
+    def _parse_uip_metadata(self, content: str, uip: dict[str, str]) -> None:
+        """Parses the UIP Table and maps keys to the uip dict."""
+        lines = content.split("\n")
+        in_uip = False
+        for line in lines:
+            if "Universal Identification & Provenance" in line or "The Vector Signature" in line:
+                in_uip = True
+                continue
 
+            if in_uip and line.strip().startswith("|"):
+                self._process_uip_row(line, uip)
 
-def _parse_uip_metadata(content: str, uip: dict[str, str]) -> None:
-    """Parses the UIP Table and maps keys to the uip dict."""
-    lines = content.split("\n")
-    in_uip = False
-    for line in lines:
-        # Check for UIP header (any header level or plain text)
-        if (
-            "Universal Identification & Provenance" in line
-            or "The Vector Signature" in line
-        ):
-            in_uip = True
-            continue
+            if in_uip and (line.strip() == "---" or line.startswith("##")) and uip.get(KEY_MODULE_ID) != "Unknown":
+                break
 
-        if in_uip and line.strip().startswith("|"):
-            _process_uip_row(line, uip)
+    def parse_file(self, filepath: str) -> dict[str, str]:
+        """Extracts UIP data from a file with enhanced flexibility for legacy formats."""
+        uip: dict[str, str] = {
+            KEY_MODULE_ID: "Unknown",
+            "Version": "Unknown",
+            "Classification": "Unknown",
+            "Status": "Unknown",
+            "Type": "Unknown",
+            "Title": "Unknown",
+            "Dependencies": "None",
+        }
 
-        # Stop at horizontal rule or next major section if we have the ID
-        if (
-            in_uip
-            and (line.strip() == "---" or line.startswith("##"))
-            and uip[KEY_MODULE_ID] != "Unknown"
-        ):
-            break
+        try:
+            with open(filepath, encoding="utf-8") as f:
+                content = f.read()
+        except Exception:
+            logger.exception(f"Error reading {filepath}")
+            return uip
 
+        uip["Title"] = self._extract_title(content)
+        self._parse_uip_metadata(content, uip)
 
-def parse_uip(filepath: str) -> dict[str, str]:
-    """Extracts UIP data from a file with enhanced flexibility for legacy formats."""
-    uip: dict[str, str] = {
-        KEY_MODULE_ID: "Unknown",
-        "Version": "Unknown",
-        "Classification": "Unknown",
-        "Status": "Unknown",
-        "Type": "Unknown",
-        "Title": "Unknown",
-        "Dependencies": "None",
-    }
-
-    try:
-        with open(filepath, encoding="utf-8") as f:
-            content = f.read()
-    except Exception:
-        logger.exception(f"Error reading {filepath}")
         return uip
 
-    uip["Title"] = _extract_title(content)
-    _parse_uip_metadata(content, uip)
 
-    return uip
+class ArtifactCategorizer:
+    """Categorizes artifacts based on type and heuristics."""
+
+    CATEGORIES = ["Core", "Protocol", "Manual", "Plan", "Log", "Other"]
+
+    def _apply_type_heuristics(self, artifact: dict[str, str]) -> None:
+        """Guesses type based on filename or title."""
+        filename = artifact.get("Filename", "")
+        title = artifact.get("Title", "")
+        if "CORE" in filename or "CODEX" in filename:
+            artifact["Type"] = "Core"
+        elif "AOP" in filename or "Protocol" in title or "UMB" in filename:
+            artifact["Type"] = "Protocol"
+        elif "PLAN" in filename:
+            artifact["Type"] = "Plan"
+        elif "LOG" in filename or "CSL" in filename:
+            artifact["Type"] = "Log"
+        elif "REF" in filename or "Manual" in title:
+            artifact["Type"] = "Manual"
+
+    def categorize(self, artifacts: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
+        """Categorizes a list of artifacts."""
+        categories: dict[str, list[dict[str, str]]] = {cat: [] for cat in self.CATEGORIES}
+
+        for artifact in artifacts:
+            if artifact.get("Type") == "Unknown":
+                self._apply_type_heuristics(artifact)
+
+            artifact_type = artifact.get("Type", "Other")
+            if artifact_type in categories:
+                categories[artifact_type].append(artifact)
+            else:
+                categories["Other"].append(artifact)
+        return categories
 
 
-def render_table(items: list[dict[str, str]]) -> str:
-    """Helper to render markdown table."""
-    s = ""
-    for item in sorted(items, key=lambda x: x[KEY_MODULE_ID]):
-        s += f"| `{item[KEY_MODULE_ID]}` | [{item['Title']}]({item['RelPath']}) | `{item['Version']}` | `{item['Status']}` |\n"
-    return s
+class MarkdownRenderer:
+    """Renders categorized artifacts into a Markdown registry file."""
 
-
-def _get_registry_header(timestamp: str) -> str:
-    """Returns the standardized registry header (v14.0)."""
-    return f"""# GVRN.REG.ArtifactInventory: Master Artifact Inventory (v14.0)
+    def _get_registry_header(self, timestamp: str) -> str:
+        """Returns the standardized registry header."""
+        return f"""# GVRN.REG.ArtifactInventory: Master Artifact Inventory (v14.0)
 
 ## Genesis Stamp: {timestamp} | Domain: GVRN | State: [ACTIVE] | Criticality: Star
 
@@ -213,49 +229,45 @@ def _get_registry_header(timestamp: str) -> str:
 ---
 """
 
+    def _render_table(self, items: list[dict[str, str]]) -> str:
+        """Helper to render a markdown table for a category."""
+        rows = [
+            f"| `{item[KEY_MODULE_ID]}` | [{item['Title']}]({item['RelPath']}) | `{item['Version']}` | `{item['Status']}` |"
+            for item in sorted(items, key=lambda x: x[KEY_MODULE_ID])
+        ]
+        return "\n".join(rows) + "\n" if rows else ""
 
-def generate_markdown(artifacts: list[dict[str, str]]) -> str:
-    """Generates the UMB-OSLM-001 content."""
-    timestamp = datetime.now().strftime("%Y-%m-%d")
-    md = _get_registry_header(timestamp)
+    def render(self, categories: dict[str, list[dict[str, str]]]) -> str:
+        """Generates the full Markdown content."""
+        timestamp = datetime.now().strftime("%Y-%m-%d")
+        md_content = self._get_registry_header(timestamp)
 
-    # Categorize
-    categories: dict[str, list[dict[str, str]]] = {
-        cat: [] for cat in ["Core", "Protocol", "Manual", "Plan", "Log", "Other"]
-    }
+        # Render Core section
+        md_content += "## III. The Core (Star Class)\n\n"
+        md_content += TABLE_HEADER
+        md_content += self._render_table(categories["Core"])
 
-    for a in artifacts:
-        if a["Type"] == "Unknown":
-            _apply_type_heuristics(a)
+        # Render other sections
+        section_map = [
+            ("IV. Protocols & Blueprints (Planet & Moon Class)", "Protocol"),
+            ("V. Experience Logs & Archives", "Log"),
+            ("VI. Strategic Plans", "Plan"),
+        ]
 
-        t = a["Type"]
-        if t in categories:
-            categories[t].append(a)
-        else:
-            categories["Other"].append(a)
+        for title, key in section_map:
+            if categories[key]:
+                md_content += f"\n## {title}\n\n"
+                md_content += TABLE_HEADER
+                md_content += self._render_table(categories[key])
 
-    # Render Sections
-    md += "## III. The Core (Star Class)\n\n"
-    md += TABLE_HEADER
-    md += render_table(categories["Core"])
+        # Render Other/Manuals section
+        other_and_manuals = categories["Manual"] + categories["Other"]
+        if other_and_manuals:
+            md_content += "\n## VII. Operations Manuals & Reference\n\n"
+            md_content += TABLE_HEADER
+            md_content += self._render_table(other_and_manuals)
 
-    section_map = [
-        ("IV. Protocols & Blueprints (Planet & Moon Class)", "Protocol"),
-        ("V. Experience Logs & Archives", "Log"),
-        ("VI. Strategic Plans", "Plan"),
-    ]
-
-    for title, key in section_map:
-        md += f"\n## {title}\n\n"
-        md += TABLE_HEADER
-        md += render_table(categories[key])
-
-    if categories["Other"]:
-        md += "\n## VII. Operations Manuals & Reference\n\n"
-        md += TABLE_HEADER
-        md += render_table(categories["Other"])
-
-    md += """
+        md_content += """
 ---
 
 ## VII. Actionable Prompt Packet
@@ -270,69 +282,82 @@ def generate_markdown(artifacts: list[dict[str, str]]) -> str:
 
 ---
 """
-    return md
+        return md_content
 
 
-def _apply_type_heuristics(a: dict[str, str]) -> None:
-    """Guesses type based on filename or title."""
-    f = a["Filename"]
-    if "CORE" in f or "CODEX" in f:
-        a["Type"] = "Core"
-    elif "AOP" in f or "Protocol" in a["Title"]:
-        a["Type"] = "Protocol"
-    elif "MAN" in f or "Manual" in a["Title"] or "UMB" in f:
-        a["Type"] = "Protocol"  # UMB/AOP are often grouped as Blueprints/Protocols
-    elif "PLAN" in f:
-        a["Type"] = "Plan"
-    elif "LOG" in f or "CSL" in f:
-        a["Type"] = "Log"
-    elif "REF" in f:
-        a["Type"] = "Other"
+class ArtifactScanner:
+    """Scans a directory for artifacts and uses a parser to extract data."""
+
+    def __init__(self, parser: ArtifactParser, target_dir: str, output_dir: str):
+        self.parser = parser
+        self.target_dir = target_dir
+        self.output_dir = output_dir
+
+    def scan(self) -> list[dict[str, str]]:
+        """Scans the target directory for artifacts and parses them."""
+        artifacts: list[dict[str, str]] = []
+        for root, dirs, files in os.walk(self.target_dir):
+            dirs[:] = [d for d in dirs if d not in ("node_modules", ".git")]
+
+            for f in files:
+                if not f.endswith(".md") or "GVRN.REG.ArtifactInventory" in f:
+                    continue
+
+                path = os.path.join(root, f)
+                data = self.parser.parse_file(path)
+
+                rel_path = os.path.relpath(path, self.output_dir)
+                data["RelPath"] = rel_path.replace("\\", "/")
+                data["Filename"] = f
+
+                if data[KEY_MODULE_ID] == "Unknown":
+                    id_match = re.search(r"([A-Z]+-[A-Z]+-\d+)", f)
+                    if id_match:
+                        data[KEY_MODULE_ID] = id_match.group(1)
+
+                artifacts.append(data)
+                logger.info(f"Index: {data[KEY_MODULE_ID]} - {data['Title']}")
+        return artifacts
 
 
-def scan_artifacts(target_dir: str, output_file_dir: str) -> list[dict[str, str]]:
-    """Scans the target directory for artifacts and parses them."""
-    artifacts: list[dict[str, str]] = []
+class RegistryGenerator:
+    """Orchestrates the generation of the artifact registry."""
 
-    for root, dirs, files in os.walk(target_dir):
-        # Filter directories in place
-        dirs[:] = [d for d in dirs if d not in ("node_modules", ".git")]
+    def __init__(self, target_dir: str, output_file: str):
+        self.target_dir = target_dir
+        self.output_file = output_file
+        self.output_dir = os.path.dirname(output_file)
 
-        for f in files:
-            if not f.endswith(".md") or "GVRN.REG.ArtifactInventory" in f:
-                continue
+    def generate(self) -> None:
+        """Executes the full registry generation pipeline."""
+        logger.info(f"Generating Master Artifact Registry for: {self.target_dir}")
 
-            path = os.path.join(root, f)
-            data = parse_uip(path)
+        parser = ArtifactParser()
+        scanner = ArtifactScanner(parser, self.target_dir, self.output_dir)
+        artifacts = scanner.scan()
 
-            # Map RelPath for registry
-            rel_path = os.path.relpath(path, output_file_dir)
-            data["RelPath"] = rel_path.replace("\\", "/")
-            data["Filename"] = f
+        if self.output_file.endswith(".json"):
+            self._save_json(artifacts)
+        else:
+            self._save_markdown(artifacts)
 
-            # Assign ID from Filename if parse failed
-            if data[KEY_MODULE_ID] == "Unknown":
-                id_match = re.search(r"([A-Z]+-[A-Z]+-\d+)", f)
-                if id_match:
-                    data[KEY_MODULE_ID] = id_match.group(1)
+        logger.info(f"\nRegistry written to: {self.output_file}")
 
-            artifacts.append(data)
-            logger.info(f"Index: {data[KEY_MODULE_ID]} - {data['Title']}")
-
-    return artifacts
-
-
-def save_registry(artifacts: list[dict[str, str]], output_file: str) -> None:
-    """Saves the registry to the specified output file."""
-    if output_file.endswith(".json"):
-        with open(output_file, "w", encoding="utf-8") as f:
+    def _save_json(self, artifacts: list[dict[str, str]]) -> None:
+        """Saves the registry as a JSON file."""
+        with open(self.output_file, "w", encoding="utf-8") as f:
             json.dump(artifacts, f, indent=4)
-    else:
-        content = generate_markdown(artifacts)
-        with open(output_file, "w", encoding="utf-8") as f:
-            f.write(content)
 
-    logger.info(f"\nRegistry written to: {output_file}")
+    def _save_markdown(self, artifacts: list[dict[str, str]]) -> None:
+        """Saves the registry as a Markdown file."""
+        categorizer = ArtifactCategorizer()
+        categories = categorizer.categorize(artifacts)
+
+        renderer = MarkdownRenderer()
+        content = renderer.render(categories)
+
+        with open(self.output_file, "w", encoding="utf-8") as f:
+            f.write(content)
 
 
 def main() -> None:
@@ -348,16 +373,13 @@ def main() -> None:
     args = parser.parse_args()
 
     target_dir = os.path.abspath(args.target_dir)
-    output_file = (
-        args.output
-        if args.output
-        else os.path.join(target_dir, "01_Registries", "GVRN.REG.ArtifactInventory.md")
-    )
+    if args.output:
+        output_file = os.path.abspath(args.output)
+    else:
+        output_file = os.path.join(target_dir, "01_Registries", "GVRN.REG.ArtifactInventory.md")
 
-    logger.info(f"Generating Master Artifact Registry for: {target_dir}")
-
-    artifacts = scan_artifacts(target_dir, os.path.dirname(output_file))
-    save_registry(artifacts, output_file)
+    generator = RegistryGenerator(target_dir, output_file)
+    generator.generate()
 
 
 if __name__ == "__main__":

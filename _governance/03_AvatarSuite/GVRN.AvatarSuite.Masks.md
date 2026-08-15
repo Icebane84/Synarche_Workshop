@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.AvatarSuite.Masks` | The Sovereign ID. |
-| **Official Name** | `GVRN.AvatarSuite.Masks.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: GVRN.AvatarSuite.Protocol` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.AvatarSuite.Masks` | The Sovereign ID. |
+| **Official Name** | `GVRN.AvatarSuite.Masks.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: GVRN.AvatarSuite.Protocol` | The Network.      |
+
 
 ---
 
@@ -96,3 +93,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 Alignment to v14.0 OMEGA standard.
 
 ###### **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [GVRN.AvatarSuite.Index.md](GVRN.AvatarSuite.Index.md)

@@ -255,12 +255,12 @@ class CatalystWeaver:
 
         return new_edges
 
-    def weave(self, target_identifier: str) -> None:
+    def weave(self, target_identifier: str) -> list[dict[str, Any]]:
         target_node = self.get_node_by_id_or_path(target_identifier)
         if not target_node:
-            return
+            return []
 
-        synergy_links = []
+        synergy_links: list[dict[str, Any]] = []
 
         for node in self.nodes:
             if node.get("id") == target_node.get("id"):
@@ -281,7 +281,6 @@ class CatalystWeaver:
                 )
 
         # Sort by score
-        # Sort by score
         synergy_links.sort(key=lambda x: x["score"], reverse=True)
         return synergy_links
 
@@ -296,6 +295,40 @@ class CatalystWeaver:
         except Exception as e:
             print(f"[ERROR] Failed to save graph: {e}")
 
+    def _parse_artifact_id(self, content: str, filename: str) -> str | None:
+        """Extract an artifact ID from file content. Returns None if not an artifact."""
+        match = re.search(
+            r"Artifact ID.*[:|`]\s*([A-Z]{3,}-[A-Z]{3,}-[0-9]{3,})",
+            content,
+            re.IGNORECASE,
+        )
+        if match:
+            return match.group(1).strip("` ")
+        if "# TOOL-" in content or "Artifact ID" in content:
+            return filename
+        return None
+
+    def _upsert_node(self, artifact_id: str, content: str, full_path: Path) -> bool:
+        """Create or update a node. Returns True if new, False if updated."""
+        node_data = {
+            "id": artifact_id,
+            "type": "Artifact",
+            "content": content[:500],
+            "metadata": {
+                "filepath": str(full_path.absolute()),
+                "filename": full_path.name,
+                "size": len(content),
+            },
+        }
+        existing = next(
+            (n for n in self.nodes if n["id"] == artifact_id), None
+        )
+        if existing:
+            existing.update(node_data)
+            return False
+        self.nodes.append(node_data)
+        return True
+
     def scan(self, target_dir: str) -> None:
         """Recursively scans a directory for artifacts and adds them to the graph."""
         print(f"[INFO] Scanning {target_dir} for artifacts...")
@@ -307,7 +340,6 @@ class CatalystWeaver:
         new_count = 0
         updated_count = 0
 
-        # Walk through the directory
         for root, _, files in os.walk(target_path):
             for file in files:
                 if not file.endswith((".py", ".md", ".ts", ".js", ".yml", ".yaml")):
@@ -316,47 +348,14 @@ class CatalystWeaver:
                 full_path = Path(root) / file
                 try:
                     content = full_path.read_text(encoding="utf-8", errors="ignore")
-
-                    # Check for UIP Header or Artifact ID regex
-                    match = re.search(
-                        r"Artifact ID.*[:|`]\s*([A-Z]{3,}-[A-Z]{3,}-[0-9]{3,})",
-                        content,
-                        re.IGNORECASE,
-                    )
-                    if not match:
-                        # Fallback: Check for standard header start
-                        if not ("# TOOL-" in content or "Artifact ID" in content):
-                            continue
-                        # If simple header exists but regex missed, use filename as ID fallback or skip
-                        artifact_id = file
-                    else:
-                        artifact_id = match.group(1).strip("` ")
-
-                    # Create/Update Node
-                    node_data = {
-                        "id": artifact_id,
-                        "type": "Artifact",
-                        "content": content[:500],  # Store snippet only to save space
-                        "metadata": {
-                            "filepath": str(full_path.absolute()),
-                            "filename": file,
-                            "size": len(content),
-                        },
-                    }
-
-                    # Check if exists
-                    existing = next(
-                        (n for n in self.nodes if n["id"] == artifact_id), None
-                    )
-                    if existing:
-                        existing.update(node_data)
-                        updated_count += 1
-                    else:
-                        self.nodes.append(node_data)
+                    artifact_id = self._parse_artifact_id(content, file)
+                    if artifact_id is None:
+                        continue
+                    if self._upsert_node(artifact_id, content, full_path):
                         new_count += 1
-
+                    else:
+                        updated_count += 1
                 except Exception:
-                    # print(f"[WARN] Could not read {file}: {e}")
                     pass
 
         print(f"[INFO] Scan complete. New: {new_count}, Updated: {updated_count}")
@@ -364,7 +363,6 @@ class CatalystWeaver:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="The Catalyst Weaver")
     parser = argparse.ArgumentParser(description="The Catalyst Weaver")
     parser.add_argument(
         "command", choices=["weave", "scan", "weave_all"], help="Command to execute"

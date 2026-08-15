@@ -17,7 +17,7 @@ js
  * @shield/: Integrated Cryptographic Handshake
  */
 const connections = new Map(); // Track ports + Auth status
-let stateVector = { syncCount: 0, lastEvent: "BOOT_SUCCESS", securityLevel: "SIVC_ACTIVE" };
+const stateVector = { syncCount: 0, lastEvent: "BOOT_SUCCESS", securityLevel: "SIVC_ACTIVE" };
 
 const SYSTEMIC_SECRET = "PHOENIX_INIT_VECTOR_001"; // Pre-shared Key
 

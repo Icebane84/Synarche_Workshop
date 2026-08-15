@@ -80,6 +80,12 @@
         "syntax": "CMD: ExploreConnections concepts:[List of Concept Names/IDs] using_kb:[KB Identifier/Chat History] angles:[Optional List of Exploration Angles]",
         "description": "Generates novel, speculative connections between distinct concepts, leveraging the knowledge base and analytical angles.",
         "example_usage": "CMD: ExploreConnections concepts:[\"Artificial Intelligence\", \"Climate Change\"] using_kb:\"Research Database\" angles:[\"Ethical Implications\", \"Potential Solutions\"]\""
+      },
+      {
+        "name": "ContextWeave",
+        "syntax": "CMD: ContextWeave --source:\"[ID]\" --target:\"[ID]\" --type:\"[Relation]\"",
+        "description": "Establishes a bidirectional semantic link between two workspace artifacts, injecting relation edges into the knowledge graph.",
+        "example_usage": "CMD: ContextWeave --source:\"SEC-KEY-001\" --target:\"CORE-CODEX-001\" --type:\"GOVERNED_BY\""
       }
     ]
   },
@@ -262,6 +268,12 @@
         "syntax": "CMD: AUDIT_IDE",
         "description": "Scans the VS Code configuration and workspace alignment using `ide_sentinel.py`.",
         "example_usage": "CMD: AUDIT_IDE"
+      },
+      {
+        "name": "Autonomous Governance & Conformance Audit (AGCA)",
+        "syntax": "CMD: AGCA --target:\"[File/Dir]\" --mode:[STRICT/LAX]",
+        "description": "Performs an autonomous audit of target files or directories against active governance schemas and OMEGA standards.",
+        "example_usage": "CMD: AGCA --target:\"./_governance\" --mode:STRICT"
       }
     ],
     "Reasoning & Verification": [

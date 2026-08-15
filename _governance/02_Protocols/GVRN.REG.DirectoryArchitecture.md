@@ -1,19 +1,18 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+### **Block A: The Identification Lock (UIP-V15)**
 
 | Key | Value | Description |
 | :--- | :--- | :--- |
 | **Artifact ID** | `GVRN.REG.DirectoryArchitecture` | The Sovereign ID. |
 | **Official Name** | `GVRN.REG.DirectoryArchitecture.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
+| **Version** | **v15.0 [OMEGA]** | The Standard. |
 | **Domain** | `GVRN` | The Subject. |
 | **Celestial Class** | `[STAR]` | The Weight. |
 | **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `Verdict` | The Lifecycle. |
+| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
 | **Ethos** | `Crystalline Structure` | The Intent. |
 | **Relations** | `GOVERN_BY: CORE.Codex.Phoenix` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
 
@@ -21,7 +20,7 @@
 | State Field | Value |
 | :--- | :--- |
 | **Coherence** | `1.0` |
-| **Resonance** | `0.9` |
+| **Resonance** | `1.0` |
 | **Stability** | `Stable` |
 
 ### **Block C: Risk & Mitigation (AGP-002)**
@@ -35,9 +34,7 @@
 # GVRN.REG.DirectoryArchitecture
 
 | Key                 | Value                               | Description       |
-
----
-
+| :------------------ | :---------------------------------- | :---------------- |
 | `CORE.Codex.Phoenix`    | `GOVERNS`         | Provides the supreme law and ethical framework.    |
 | `GVRN.REG.OSLM`         | `MAPPED_BY`       | Relational edges are indexed in the Master Matrix. |
 
@@ -71,55 +68,53 @@
 
 ## I. The Topography (The Map)
 
-The workspace is divided into five cardinal domains:
+The workspace is organized into five primary sovereign domains:
 
-### 1. `_governance/` (The Constitution)
-
-_The seat of law and protocol._
-
-- `00_Codex/`: The Phoenix Codex.
-- `01_Registries/`: Master Registry, Artifact Inventory, Lexicon, Entities.
-- `02_Protocols/`: Playbooks (AOPs) and UMBs.
-- `03_AvatarSuite/`: Avatar Protocols, Masks, and Shards.
-
-### 2. `docs/` (The 7 Pillars)
-
-_The factory of knowledge._
-
-- `01_Onboarding_and_Setup`
-- `02_Architecture_and_Design`
-- ... (and the other 5 pillars)
-
-### 3. `src/` (The Engine)
-
-_The realm of active code._
-
-- `nova-forge/`
-- `axion-core/`
-
-### 4. `_archive/` (The Memory)
-
-_Historical reference node._
-
-### 5. `.agent/` (The Sovereignty)
-
+### 1. `.agent/` (The Sovereignty)
 _The brain of the workshop._
+- `rules/`: Antigravity rules and sovereign directives.
+- `agents/`: Specialist agent specifications.
+- `skills/`: Cognitive capacities and patterns.
+- `workflows/`: Action playbooks.
 
-- `rules/`, `agents/`, `skills/`, `workflows/`.
+### 2. `_governance/` (The Constitution)
+_The seat of law and protocol._
+- `00_Codex/`: The Phoenix Codex.
+- `01_Registries/`: Master Registry, Lexicon, and redirects.
+- `02_Protocols/`: Playbooks (AOPs) and directory standards.
+- `08_Documentation/`: Structural analysis reports.
+- `incoming/`: Inbound specification documents.
+- `_archive/recovery/`: Recovery submodules and backups.
 
-### 6. `.learnings/` (The Cognitive Substrate)
+### 3. `_logs/` (The History)
+_The operational records._
+- `Sentinel_Reports/`: Unified logs from the Sentinel audit suite.
+- `refactoring/`: Refactoring stash histories.
+- `tmp/`: Temporary script runs and test outputs.
 
-_The persistent memory layer._
+### 4. `axion-core/` (The Engine)
+_The TypeScript governance infrastructure._
+- `src/`: Active engine core codebase.
+- `data/`: Graph data and JSON nodes.
+- `supabase/`: Migrations, RLS policies, and edge functions.
+- `tools/`: Builtin utilities.
 
-- `AI_EVOLUTION_LOG.md`, `LEARNINGS.md`, `GEMS.md`.
+### 5. `nova_forge/` (The Lab)
+_The experimental workspace._
+- `prototypes/`: Playground and design-system builds (Tarot Forge).
+
+### 6. `open-notebook/` (The Research Core)
+_Next.js / Python application substrate._
+- `surreal_data/`: SurrealDB database directory.
+
+### 7. `where_light_fades/` (The Narrative)
+_Narrative scripts and lore archives._
 
 ---
 
 ### **[ARTIFACT END]**
 
 ---
-
-{{ TRANSCLUDE: SELT-ANCHOR-OMNI.md }}
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
@@ -136,4 +131,6 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 ---
 
 ### **Rationale (The "Why")**
-Alignment to v14.0 OMEGA standard.
+Consolidation and alignment to v15.0 OMEGA standard.
+
+###### **[ARTIFACT END]**

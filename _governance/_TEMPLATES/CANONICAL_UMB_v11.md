@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `{{ RNC_ID }}` | The Sovereign ID. |
-| **Official Name** | `CANONICAL_UMB_v11.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `{{ celestial_class` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `{{ status` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `{{ primary_link` | The Network. |
-| **Integrity Hash** | `{{ integrity_hash` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `{{ RNC_ID }}` | The Sovereign ID. |
+| **Official Name** | `CANONICAL_UMB_v11.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `{{ primary_link` | The Network.      |
+
 
 ---
 

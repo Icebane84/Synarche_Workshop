@@ -56,7 +56,7 @@ function activate(context) {
     console.log("Axion Core extension is now active in the Synarche Workspace.");
 
     // Example command implementation for 'axion.reforgeArtifact' from your package.json
-    let reforgeCommand = vscode.commands.registerCommand("axion.reforgeArtifact", () => {
+    const reforgeCommand = vscode.commands.registerCommand("axion.reforgeArtifact", () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
             vscode.window.showInformationMessage("Cannot reforge: No active text editor.");
@@ -107,12 +107,12 @@ function activate(context) {
     };
 
     // Command: Hello World
-    let helloWorld = vscode.commands.registerCommand("axion.helloWorld", () => {
+    const helloWorld = vscode.commands.registerCommand("axion.helloWorld", () => {
         vscode.window.showInformationMessage("Hello World from Axion Core!");
     });
 
     // Command: Audit Compliance
-    let auditCompliance = vscode.commands.registerCommand("axion.auditCompliance", async () => {
+    const auditCompliance = vscode.commands.registerCommand("axion.auditCompliance", async () => {
         const activeEditor = vscode.window.activeTextEditor;
         if (!activeEditor) {
             vscode.window.showErrorMessage("No active editor found.");
@@ -144,7 +144,7 @@ function activate(context) {
     });
 
     // Command: Lookup Lore
-    let lookupLore = vscode.commands.registerCommand("axion.lookupLore", async () => {
+    const lookupLore = vscode.commands.registerCommand("axion.lookupLore", async () => {
         const query = await vscode.window.showInputBox({
             prompt: "Enter your lore query (e.g. 'The Phoenix Protocol')",
             placeHolder: "Search the knowledge base...",
@@ -174,7 +174,7 @@ function activate(context) {
     });
 
     // Command: View Audit Log
-    let viewAuditLog = vscode.commands.registerCommand("axion.viewAuditLog", async () => {
+    const viewAuditLog = vscode.commands.registerCommand("axion.viewAuditLog", async () => {
         vscode.window.withProgress(
             {
                 location: vscode.ProgressLocation.Notification,

@@ -44,9 +44,7 @@ class CoherentSynthesisEngine:
     """
 
     def __init__(self) -> None:
-        self.root_dir = os.path.dirname(
-            os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        )
+        self.root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         self.parser = LoomParser(self.root_dir)
         self.validator = LawValidator(self.root_dir)
         self.logger = SeltLogger(self.root_dir)
@@ -67,7 +65,7 @@ class CoherentSynthesisEngine:
 
             # Step 3: Calculate Entropy
             entropy_level = len(drift_findings) * 0.5
-            status = "STABLE" if entropy_level == 0.0 else "DEGRADED"
+            status = "STABLE" if entropy_level == 0 else "DEGRADED"
 
             # Step 4: Log
             self.logger.record_synthesis(status, entropy_level, drift_findings)

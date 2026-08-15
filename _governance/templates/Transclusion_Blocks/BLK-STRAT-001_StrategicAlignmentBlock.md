@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-BLK-STRAT-001-STRATEGICALIGNMENTBLOCK-001` | The Sovereign ID. |
-| **Official Name** | `BLK-STRAT-001_StrategicAlignmentBlock.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-BLK-STRAT-001-STRATEGICALIGNMENTBLOCK-001` | The Sovereign ID. |
+| **Official Name** | `BLK-STRAT-001_StrategicAlignmentBlock.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 
@@ -109,3 +106,7 @@ Law for this artifact.
 | `⚡ EXECUTE: CANONIZE` | Formally Cement Alignment        | Zero Entropy |
 
 ###### **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [00_INDEX.md](../00_INDEX.md)

@@ -23,6 +23,12 @@ interface ProcessedLink extends d3.SimulationLinkDatum<Node> {
     target: Node;
 }
 
+const getRandomFloat = (): number => {
+    const array = new Uint32Array(1);
+    crypto.getRandomValues(array);
+    return array[0] / (0xffffffff + 1);
+};
+
 const PhoenixGeode: React.FC = () => {
     const containerRef = useRef<HTMLDivElement>(null);
     const simulationRef = useRef<d3.Simulation<Node, ProcessedLink> | null>(null);
@@ -102,7 +108,7 @@ const PhoenixGeode: React.FC = () => {
         const numNodes = isRepairing ? 80 : 45; // Denser geode during repair
         const nodes: Node[] = d3.range(numNodes).map((i) => ({
             id: i,
-            r: (isRepairing ? 4 : 2.5) + Math.random() * 5,
+            r: (isRepairing ? 4 : 2.5) + getRandomFloat() * 5,
             color: geodeColor,
         }));
 

@@ -3,7 +3,7 @@ import sqlite3
 from typing import Annotated, Dict, List, Optional
 
 from ai_prompter import Prompter
-from langchain_core.messages import AIMessage, SystemMessage
+from langchain_core.messages import SystemMessage
 from langchain_core.runnables import RunnableConfig
 from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.graph import END, START, StateGraph
@@ -13,47 +13,63 @@ from typing_extensions import TypedDict
 from open_notebook.ai.provision import provision_langchain_model
 from open_notebook.config import LANGGRAPH_CHECKPOINT_FILE
 from open_notebook.domain.notebook import Source, SourceInsight
+from open_notebook.exceptions import OpenNotebookError
 from open_notebook.utils import clean_thinking_content
-from open_notebook.utils.context_builder import ContextBuilder
+from open_notebook.utils.context_builder import build_source_context
+from open_notebook.utils.error_classifier import classify_error
+from open_notebook.utils.text_utils import extract_text_content
 
 
 class SourceChatState(TypedDict):
     messages: Annotated[list, add_messages]
     source_id: str
-    source: Source | None
-    insights: list[SourceInsight] | None
-    context: str | None
-    model_override: str | None
-    context_indicators: dict[str, list[str]] | None
+    source: Optional[Source]
+    insights: Optional[List[SourceInsight]]
+    context: Optional[str]
+    model_override: Optional[str]
+    context_indicators: Optional[Dict[str, List[str]]]
 
 
-def call_model_with_source_context(state: SourceChatState, config: RunnableConfig) -> dict:
+def call_model_with_source_context(
+    state: SourceChatState, config: RunnableConfig
+) -> dict:
     """
     Main function that builds source context and calls the model.
 
     This function:
-    1. Uses ContextBuilder to build source-specific context
+    1. Uses build_source_context to build source-specific context
     2. Applies the source_chat Jinja2 prompt template
     3. Handles model provisioning with override support
     4. Tracks context indicators for referenced insights/content
     """
+    try:
+        return _call_model_with_source_context_inner(state, config)
+    except OpenNotebookError:
+        raise
+    except Exception as e:
+        error_class, user_message = classify_error(e)
+        raise error_class(user_message) from e
+
+
+def _call_model_with_source_context_inner(
+    state: SourceChatState, config: RunnableConfig
+) -> dict:
     source_id = state.get("source_id")
     if not source_id:
         raise ValueError("source_id is required in state")
 
-    # Build source context using ContextBuilder (run async code in new loop)
+    # Build source context using build_source_context (run async code in new loop)
     def build_context():
         """Build context in a new event loop"""
         new_loop = asyncio.new_event_loop()
         try:
             asyncio.set_event_loop(new_loop)
-            context_builder = ContextBuilder(
-                source_id=source_id,
-                include_insights=True,
-                include_notes=False,  # Focus on source-specific content
-                max_tokens=50000,  # Reasonable limit for source context
+            return new_loop.run_until_complete(
+                build_source_context(
+                    source_id=source_id,
+                    max_tokens=50000,  # Reasonable limit for source context
+                )
             )
-            return new_loop.run_until_complete(context_builder.build())
         finally:
             new_loop.close()
             asyncio.set_event_loop(None)
@@ -88,7 +104,11 @@ def call_model_with_source_context(state: SourceChatState, config: RunnableConfi
 
     if context_data.get("insights"):
         for insight_data in context_data["insights"]:
-            insight = SourceInsight(**insight_data) if isinstance(insight_data, dict) else insight_data
+            insight = (
+                SourceInsight(**insight_data)
+                if isinstance(insight_data, dict)
+                else insight_data
+            )
             insights.append(insight)
             context_indicators["insights"].append(insight.id)
 
@@ -104,8 +124,10 @@ def call_model_with_source_context(state: SourceChatState, config: RunnableConfi
     }
 
     # Apply the source_chat prompt template
-    system_prompt = Prompter(prompt_template="source_chat/system").render(data=prompt_data)
-    payload = [SystemMessage(content=system_prompt), *state.get("messages", [])]
+    system_prompt = Prompter(prompt_template="source_chat/system").render(
+        data=prompt_data
+    )
+    payload = [SystemMessage(content=system_prompt)] + state.get("messages", [])
 
     # Handle async model provisioning from sync context
     def run_in_new_loop():
@@ -116,7 +138,8 @@ def call_model_with_source_context(state: SourceChatState, config: RunnableConfi
             return new_loop.run_until_complete(
                 provision_langchain_model(
                     str(payload),
-                    config.get("configurable", {}).get("model_id") or state.get("model_override"),
+                    config.get("configurable", {}).get("model_id")
+                    or state.get("model_override"),
                     "chat",
                     max_tokens=8192,
                 )
@@ -139,7 +162,8 @@ def call_model_with_source_context(state: SourceChatState, config: RunnableConfi
         model = asyncio.run(
             provision_langchain_model(
                 str(payload),
-                config.get("configurable", {}).get("model_id") or state.get("model_override"),
+                config.get("configurable", {}).get("model_id")
+                or state.get("model_override"),
                 "chat",
                 max_tokens=8192,
             )
@@ -148,7 +172,7 @@ def call_model_with_source_context(state: SourceChatState, config: RunnableConfi
     ai_message = model.invoke(payload)
 
     # Clean thinking content from AI response (e.g., <think>...</think> tags)
-    content = ai_message.content if isinstance(ai_message.content, str) else str(ai_message.content)
+    content = extract_text_content(ai_message.content)
     cleaned_content = clean_thinking_content(content)
     cleaned_message = ai_message.model_copy(update={"content": cleaned_content})
 
@@ -162,12 +186,12 @@ def call_model_with_source_context(state: SourceChatState, config: RunnableConfi
     }
 
 
-def _format_source_context(context_data: dict) -> str:
+def _format_source_context(context_data: Dict) -> str:
     """
     Format the context data into a readable string for the prompt.
 
     Args:
-        context_data: Context data from ContextBuilder
+        context_data: Context data from build_source_context
 
     Returns:
         Formatted context string
@@ -195,8 +219,12 @@ def _format_source_context(context_data: dict) -> str:
         for insight in context_data["insights"]:
             if isinstance(insight, dict):
                 context_parts.append(f"**Insight ID:** {insight.get('id', 'Unknown')}")
-                context_parts.append(f"**Type:** {insight.get('insight_type', 'Unknown')}")
-                context_parts.append(f"**Content:** {insight.get('content', 'No content')}")
+                context_parts.append(
+                    f"**Type:** {insight.get('insight_type', 'Unknown')}"
+                )
+                context_parts.append(
+                    f"**Content:** {insight.get('content', 'No content')}"
+                )
                 context_parts.append("")  # Empty line for separation
 
     # Add metadata

@@ -63,11 +63,17 @@ const StarField: React.FC = () => {
     );
 };
 
+const getRandomFloat = (): number => {
+    const array = new Uint32Array(1);
+    crypto.getRandomValues(array);
+    return array[0] / (0xffffffff + 1);
+};
+
 // Helper to generate CSS box-shadow stars
 const generateStars = (n: number, _size: number) => {
-    let value = `${(Math.random() * 2000).toString()}px ${(Math.random() * 2000).toString()}px #FFF`;
+    let value = `${(getRandomFloat() * 2000).toString()}px ${(getRandomFloat() * 2000).toString()}px #FFF`;
     for (let i = 2; i <= n; i++) {
-        value += `, ${(Math.random() * 2000).toString()}px ${(Math.random() * 2000).toString()}px #FFF`;
+        value += `, ${(getRandomFloat() * 2000).toString()}px ${(getRandomFloat() * 2000).toString()}px #FFF`;
     }
     return value;
 };

@@ -819,6 +819,7 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
-- [[ai-providers]]
+## Reciprocal Links
 
-- [[openai-compatible]]
+- [ai-providers.md](ai-providers.md)
+- [openai-compatible.md](openai-compatible.md)

@@ -45,8 +45,10 @@ const ArtifactCatalogPage: React.FC = () => {
     useEffect(() => {
         const fetch = async () => {
             const result = await dispatchCommand(fetchAllArtifactsCommand, {});
-            if (result.success && result.data) {
+            if (result.success && result.data && Array.isArray(result.data.artifacts)) {
                 setArtifacts(result.data.artifacts as Artifact[]);
+            } else {
+                setArtifacts([]);
             }
             setIsLoading(false);
         };
@@ -55,18 +57,20 @@ const ArtifactCatalogPage: React.FC = () => {
 
     const filtered = useMemo(() => {
         const query = searchQuery.toLowerCase();
-        return artifacts.filter(
+        return (artifacts || []).filter(
             (a) =>
-                a.name.toLowerCase().includes(query) ||
-                a.id.toLowerCase().includes(query) ||
-                a.type.toLowerCase().includes(query) ||
-                a.description.toLowerCase().includes(query),
+                (a.name || '').toLowerCase().includes(query) ||
+                (a.id || '').toLowerCase().includes(query) ||
+                (a.type || '').toLowerCase().includes(query) ||
+                (a.description || '').toLowerCase().includes(query),
         );
     }, [artifacts, searchQuery]);
 
     const statsByType = useMemo(() => {
-        return artifacts.reduce<Record<string, number>>((acc, a) => {
-            acc[a.type] = (acc[a.type] || 0) + 1;
+        return (artifacts || []).reduce<Record<string, number>>((acc, a) => {
+            if (a && a.type) {
+                acc[a.type] = (acc[a.type] || 0) + 1;
+            }
             return acc;
         }, {});
     }, [artifacts]);

@@ -26,7 +26,9 @@ artifact_anchor:
 
 # canonize.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+## Block A: The Identification Lock (UIP-V15)
+
+---
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
@@ -37,10 +39,11 @@ artifact_anchor:
 | **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
 
-
 ---
 
-## **Block B: State Vector (AGP-001)**
+## Block B: State Vector (AGP-001)
+
+---
 
 | State Field   | Value    |
 | :------------ | :------- |
@@ -50,7 +53,9 @@ artifact_anchor:
 
 ---
 
-## **Block C: Risk & Mitigation (AGP-002)**
+## Block C: Risk & Mitigation (AGP-002)
+
+---
 
 | Risk                     | Mitigation                  |
 | :----------------------- | :-------------------------- |
@@ -59,13 +64,19 @@ artifact_anchor:
 
 ---
 
-### **[ARTIFACT START]**
+### [ARTIFACT START]
 
-## **I. THE CANONIZATION PROTOCOL**
+---
+
+## I. THE CANONIZATION PROTOCOL
+
+---
 
 This workflow automates the transition of artifacts to the `[CANONIZED]` state, ensuring total systemic alignment and cryptographic integrity.
 
-### **1. Trigger Execution**
+### 1. Trigger Execution
+
+---
 
 Run the following command in the terminal:
 
@@ -73,7 +84,9 @@ Run the following command in the terminal:
 python axion-core/scripts/canonize_ritual.py --target "{{target}}"
 ```
 
-### **2. The Seven Gates Audit**
+### 2. The Seven Gates Audit
+
+---
 
 The script executes the following validations:
 
@@ -81,7 +94,9 @@ The script executes the following validations:
 2. **Registry Handshake**: Confirms entry in `GVRN.Master.Registry.yaml`.
 3. **Linter Pass**: (Optional) Verifies standard markdown compliance.
 
-### **3. The Three Seals Ritual**
+### 3. The Three Seals Ritual
+
+---
 
 1. **Seal of Status**: Block A status is set to `[CANONIZED]`.
 2. **Seal of Synchronicity**: Registry entries are updated with atomic precision.
@@ -89,19 +104,23 @@ The script executes the following validations:
 
 ---
 
-## **II. Actionable Prompt Packet (APP)**
+## II. Actionable Prompt Packet (APP)
+
+---
 
 | Command ID             | Action                          | Impact       |
 | :--------------------- | :------------------------------ | :----------- |
 | `⚡ EXECUTE: CANONIZE` | Initiate the automated ritual   | Zero Entropy |
 | `CMD: AUDIT_REGISTRY`  | Verify registry synchronization | Coherence    |
 
-### **[ARTIFACT END]**
+### [ARTIFACT END]
 
 ---
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
+### Block G: The Omni-Anchor (System Snapshot)
+
+---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: ARCH.Prot.Canonize VER: v15.0 [OMEGA] DOMAIN: ARCH STATUS: [CANONIZED] TS: 2026-03-28 HASH: 2f0a72316f3928fa`

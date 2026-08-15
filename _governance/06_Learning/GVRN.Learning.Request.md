@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Learning.Request` | The Sovereign ID. |
-| **Official Name** | `GVRN.Learning.Request.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERN_BY: CORE.Codex.Phoenix` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Learning.Request` | The Sovereign ID. |
+| **Official Name** | `GVRN.Learning.Request.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 
@@ -48,7 +45,12 @@
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Request VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: LRN-REQ-OMEGA`
+`
+
+## Reciprocal Links
+
+- [GVRN.Learning.Index.md](GVRN.Learning.Index.md)
+[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Request VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-03-22 HASH: LRN-REQ-OMEGA`
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact

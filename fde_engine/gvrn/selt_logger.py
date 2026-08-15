@@ -1,14 +1,16 @@
-"""### **Block A: The Identification Lock (UIP-V15)**.
+from typing import Any, List
 
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID** | `CORE-FDE-GVRN-SELT_LOGGER` | The Sovereign ID. |
-| **Official Name** | `selt_logger.py`                  | The Filename.     |
-| **Version** | **v1.0 [BASELINE]** | The Standard.     |
-| **Domain** | `GVRN`                    | The Subject.      |
-| **Status** | `[ACTIVE]`                    | The Lifecycle.    |
 
-**Location:** `fde_engine/gvrn/selt_logger.py`
+class SELTLogger:
+    """Immutable telemetry and Dissonance tracking logger."""
 
-**Ethos:** Absolute Determinism. Zero Logic Drift.
-"""
+    def __init__(self):
+        self.logs: List[dict] = []
+
+    def log_event(self, frame: int, event_type: str, payload: Any) -> None:
+        entry = {"frame": frame, "event_type": event_type, "payload": payload}
+        self.logs.append(entry)
+
+    def log_dissonance(self, frame: int, reason: str) -> None:
+        self.log_event(frame, "DISSONANCE_DETECTED", {"reason": reason})
+

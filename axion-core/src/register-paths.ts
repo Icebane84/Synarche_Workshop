@@ -37,12 +37,14 @@ const prefixMappings: [string, string, string][] = [
   ["@pulse/", "..", "_logs"],
   ["@loom/", "..", "templates"],
   ["@archive/", "..", "archives"],
-  ["@universe/", "..", "_universe"],
+  // @universe/ removed 2026-07-18 — _universe/ does not exist, zero imports. CMD: SCAN_ORPHANS
   ["@logging/", ".", "system/logging"],
   ["@utils/", ".", "utils"],
 ];
 
 function getMappedPath(request: string): string | null {
+  // Kept for backwards compatibility. Canonical form is @system/logging.
+  // Source files must use @system/logging — this handler is a safety net only.
   if (request === "@logging") {
     return path.join(__dirname, "system", "logging", "index");
   }

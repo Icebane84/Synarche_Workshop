@@ -1,6 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-## **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
+
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.SOUL.Axion` | The Sovereign ID. |
+| **Official Name** | `GVRN.SOUL.Axion.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 
@@ -14,7 +24,7 @@
 | **Evolution** | `Cognitive Ascension` | The Maturity. |
 | **Status (State)** | `[ASCENDED]` | The Lifecycle. |
 | **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network. |
+| **Relations** | `GOVERNED_BY: GVRN.CODEX.PHOENIX.001` | The Network. |
 | **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
 
 ---
@@ -207,7 +217,7 @@ distance and enhance architectural clarity.
 * **GOVERNS**: [SYNG.ENGINE.AxionCore](../../axion-core)
 * **STEWARDS**: [SYNG.Loom.Master](../40_System/SYNG.Loom.Master.md)
 * **ADHERES_TO**: [GVRN.Registry.Master](../01_Registries/GVRN.Registry.Master.md)
-* **ANCHORED_BY**: [CORE.Codex.Phoenix](CORE.Codex.Phoenix.md)
+* **ANCHORED_BY**: [GVRN.CODEX.PHOENIX.001](CORE.Codex.Phoenix.md)
 * **MEMBER_OF**: [GVRN.TRIAD.Subsystem](GVRN.TRIAD.Subsystem.md)
 
 ### **{ ARTIFACT END }**
@@ -243,3 +253,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 Alignment to v14.0 OMEGA standard.
 
 #### **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [GVRN.SOUL.Sophia.md](GVRN.SOUL.Sophia.md)

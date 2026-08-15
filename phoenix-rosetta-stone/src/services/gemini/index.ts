@@ -1,16 +1,17 @@
+import { GroundedResponse, GroundingSource, SystemContext } from '@essence/types';
 import { GenerateContentResponse, Type } from '@google/genai';
 import { useCoherenceStore } from '../../store/coherenceStore';
 import { useTaskStore } from '../../store/taskStore';
-import { GroundedResponse, GroundingSource, SystemContext } from '@essence/types';
 import { commandRegistry } from '../commands/registry';
 import { systemConfig } from '../configService';
+import { queryOllamaCore } from '../ollamaService';
 import { generateAndPersistLog } from '../seltGenerator';
-import { getGeminiClient, callGeminiWithRetry } from './client';
+import { callGeminiWithRetry, getGeminiClient } from './client';
 import { performHybridRetrieval } from './retrieval';
-import { systemInstructions, formatSystemContext, NEURAL_LINK_INSTRUCTION } from './templates';
+import { ASHEN_OATH_UNREAL_CODING_INSTRUCTION, formatSystemContext, NEURAL_LINK_INSTRUCTION, SOVEREIGN_CODING_STANDARD_INSTRUCTION, systemInstructions } from './templates';
 
 /**
- * @fileoverview Main entry point for the modular Gemini Service.
+ * @fileoverview Main entry point for the modular Cognitive Core service.
  */
 
 const getFallbackContext = (): SystemContext => {
@@ -25,31 +26,73 @@ const getFallbackContext = (): SystemContext => {
     };
 };
 
-export const queryCognitiveCore = async (
-    prompt: string,
-    context?: SystemContext,
-    image?: { data: string; mimeType: string },
-): Promise<{ text: string; toolCall?: { name: string; args: Record<string, unknown> } }> => {
-    if (!systemConfig.api.geminiKey) return { text: 'Gemini Service is not available. Please configure the API Key.' };
+export interface ChatHistoryItem {
+    sender: 'user' | 'ai' | 'system';
+    text: string;
+}
 
-    const ai = getGeminiClient();
-    const cognitiveFocus = useCoherenceStore.getState().cognitiveFocus;
-    const baseInstruction = systemInstructions[cognitiveFocus];
-    const activeContext = context ?? getFallbackContext();
-
-    const { titles: retrievedTitles, content: ragContent } = await performHybridRetrieval(prompt);
+const buildSystemInstruction = (
+    baseInstruction: string,
+    activeContext: SystemContext,
+    pastSessionsContext?: string,
+    ragContent?: string
+): string => {
     const ragInstruction = ragContent ? `\n\n[RAG_CONTEXT]\n${ragContent}\n[/RAG_CONTEXT]` : '';
+    const pastChatsInstruction = pastSessionsContext
+        ? `\n\n[PAST_CHAT_SESSIONS_MEMORY]\nYou have direct access to the user's past archived chat threads across all sessions for context reference:\n${pastSessionsContext}\n[/PAST_CHAT_SESSIONS_MEMORY]`
+        : '';
     const contextInstruction = `\n\n${formatSystemContext(activeContext)}`;
-    const finalSystemInstruction = baseInstruction + contextInstruction + ragInstruction;
+    return baseInstruction + contextInstruction + pastChatsInstruction + ragInstruction + `\n\n${SOVEREIGN_CODING_STANDARD_INSTRUCTION}\n\n${ASHEN_OATH_UNREAL_CODING_INSTRUCTION}`;
+};
+
+const executeOllamaQuery = async (
+    prompt: string,
+    systemInstruction: string,
+    history: ChatHistoryItem[]
+): Promise<{ text: string; toolCall?: { name: string; args: Record<string, unknown> } }> => {
+    const ollamaHistory = history.map((h) => ({
+        role: (h.sender === 'user' ? 'user' : 'assistant') as 'user' | 'assistant',
+        content: h.text,
+    }));
 
     try {
-        const contents: ({ text: string } | { inlineData: { data: string; mimeType: string } })[] = [{ text: prompt }];
-        if (image) contents.push({ inlineData: { data: image.data, mimeType: image.mimeType } });
+        return await queryOllamaCore(prompt, systemInstruction + NEURAL_LINK_INSTRUCTION, ollamaHistory);
+    } catch (err: unknown) {
+        const errText = err instanceof Error ? err.message : String(err);
+        console.warn('[CognitiveCore] Ollama connection failed, falling back:', errText);
+        return {
+            text: `[Local AI Offline] Could not reach Ollama at ${systemConfig.api.ollamaUrl} (${errText}). Ensure 'ollama serve' is running.`,
+        };
+    }
+};
+
+const executeGeminiQuery = async (
+    prompt: string,
+    finalSystemInstruction: string,
+    history: ChatHistoryItem[],
+    image?: { data: string; mimeType: string },
+    activeContext?: SystemContext,
+    retrievedTitles: string[] = []
+): Promise<{ text: string; toolCall?: { name: string; args: Record<string, unknown> } }> => {
+    if (!systemConfig.api.geminiKey) return { text: 'Gemini Service is not available. Please configure the API Key or run local Ollama.' };
+
+    const ai = getGeminiClient();
+
+    try {
+        const historyContents = history.map((h) => ({
+            role: h.sender === 'user' ? 'user' : 'model',
+            parts: [{ text: h.text }],
+        }));
+
+        const currentPromptPart: ({ text: string } | { inlineData: { data: string; mimeType: string } })[] = [{ text: prompt }];
+        if (image) currentPromptPart.push({ inlineData: { data: image.data, mimeType: image.mimeType } });
+
+        const contents = [...historyContents, { role: 'user', parts: currentPromptPart }];
 
         const response: GenerateContentResponse = await callGeminiWithRetry(() =>
             ai.models.generateContent({
                 model: 'gemini-2.0-flash-lite-001',
-                contents: { parts: contents },
+                contents,
                 config: {
                     systemInstruction: finalSystemInstruction + NEURAL_LINK_INSTRUCTION,
                     tools: [
@@ -104,12 +147,38 @@ export const queryCognitiveCore = async (
         if (!text && formattedToolCall) text = `[Neural Link] Executing Direct Interface: ${formattedToolCall.name}...`;
         text ??= 'No response generated.';
 
-        void generateAndPersistLog(prompt, text, activeContext, retrievedTitles);
+        if (activeContext) {
+            void generateAndPersistLog(prompt, text, activeContext, retrievedTitles);
+        }
         return { text, toolCall: formattedToolCall };
     } catch (error) {
         console.error('Error querying Gemini API:', error);
         return { text: error instanceof Error ? `Error: ${error.message}` : 'An unknown error occurred.' };
     }
+};
+
+export const queryCognitiveCore = async (
+    prompt: string,
+    context?: SystemContext,
+    image?: { data: string; mimeType: string },
+    history: ChatHistoryItem[] = [],
+    pastSessionsContext?: string,
+): Promise<{ text: string; toolCall?: { name: string; args: Record<string, unknown> } }> => {
+    const cognitiveFocus = useCoherenceStore.getState().cognitiveFocus;
+    const baseInstruction = systemInstructions[cognitiveFocus];
+    const activeContext = context ?? getFallbackContext();
+
+    const { titles: retrievedTitles, content: ragContent } = await performHybridRetrieval(prompt);
+    const finalSystemInstruction = buildSystemInstruction(baseInstruction, activeContext, pastSessionsContext, ragContent);
+
+    const isProviderOllama = systemConfig.api.provider === 'ollama';
+    const isAutoWithoutGemini = !systemConfig.api.geminiKey && systemConfig.api.provider === 'auto';
+
+    if (isProviderOllama || isAutoWithoutGemini) {
+        return executeOllamaQuery(prompt, finalSystemInstruction, history);
+    }
+
+    return executeGeminiQuery(prompt, finalSystemInstruction, history, image, activeContext, retrievedTitles);
 };
 
 export const searchWithCognitiveCore = async (prompt: string, context?: SystemContext): Promise<GroundedResponse> => {
@@ -168,4 +237,3 @@ export const interpretNaturalLanguageCommand = async (query: string): Promise<st
         return null;
     }
 };
-

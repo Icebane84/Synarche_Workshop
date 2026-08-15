@@ -4,7 +4,7 @@ import { AppShell } from '@/components/layout/AppShell'
 import { ProviderStatus } from './components/ProviderStatus'
 import { ModelTypeSection } from './components/ModelTypeSection'
 import { DefaultModelsSection } from './components/DefaultModelsSection'
-import { useModels, useModelDefaults, useProviders } from '@/lib/hooks/use-models'
+import { useModels, useModelDefaults, useProviderAvailability } from '@/lib/hooks/use-models'
 import { LoadingSpinner } from '@/components/common/LoadingSpinner'
 import { RefreshCw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -14,7 +14,7 @@ export default function ModelsPage() {
   const { t } = useTranslation()
   const { data: models, isLoading: modelsLoading, refetch: refetchModels } = useModels()
   const { data: defaults, isLoading: defaultsLoading, refetch: refetchDefaults } = useModelDefaults()
-  const { data: providers, isLoading: providersLoading, refetch: refetchProviders } = useProviders()
+  const { data: providers, isLoading: providersLoading, refetch: refetchProviders } = useProviderAvailability()
 
   const handleRefresh = () => {
     refetchModels()

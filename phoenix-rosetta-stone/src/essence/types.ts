@@ -122,6 +122,16 @@ export interface GroundedResponse {
     sources: GroundingSource[];
 }
 
+export interface ChatMessage {
+    id: string;
+    sender: 'user' | 'ai' | 'system';
+    text: string;
+    timestamp?: number;
+    sources?: GroundingSource[];
+    activeToolCall?: string;
+    error?: boolean;
+}
+
 // --- Sensory Bridge Interfaces ---
 export interface SensoryData {
     timestamp: number;

@@ -1,9 +1,9 @@
-import { knowledgeBase } from '../../data/knowledgeBase';
+import { useKnowledgeStore } from '../../store/knowledgeStore';
 import { useTaskStore } from '../../store/taskStore';
 import { retrieveContext } from '../vectorStore';
 
 /**
- * @fileoverview Hybrid RAG retrieval logic for the Gemini Service.
+ * @fileoverview Hybrid RAG retrieval logic for the Cognitive Core.
  */
 
 export const performHybridRetrieval = async (query: string) => {
@@ -11,10 +11,12 @@ export const performHybridRetrieval = async (query: string) => {
 
     if (isSimulationMode) {
         const localResults = await retrieveContext(query, 3);
-        return {
-            titles: localResults.map((r) => r.title),
-            content: localResults.map((r) => `[Source: ${r.title}]\n${r.content}`).join('\n\n'),
-        };
+        if (localResults.length > 0) {
+            return {
+                titles: localResults.map((r) => r.title),
+                content: localResults.map((r) => `[Source: ${r.title}]\n${r.content}`).join('\n\n'),
+            };
+        }
     }
 
     try {
@@ -27,19 +29,11 @@ export const performHybridRetrieval = async (query: string) => {
         }
         throw new Error('Vector Store Empty'); // Trigger fallback
     } catch {
-        const lowerQuery = query.toLowerCase();
-        const keywords = lowerQuery.split(/\s+/).filter((k) => k.length > 3);
-        const localMatches = knowledgeBase
-            .filter((doc) => {
-                const lowerContent = doc.content.toLowerCase();
-                const lowerTitle = doc.title.toLowerCase();
-                return lowerTitle.includes(lowerQuery) || keywords.some((k) => lowerContent.includes(k));
-            })
-            .slice(0, 2);
+        const localMatches = useKnowledgeStore.getState().searchDocuments(query).slice(0, 3);
 
         return {
             titles: localMatches.map((d) => d.title),
-            content: localMatches.map((d) => `[Local Fallback: ${d.title}]\n${d.content}`).join('\n\n'),
+            content: localMatches.map((d) => `[Local Knowledge Base: ${d.title}]\n${d.content}`).join('\n\n'),
         };
     }
 };

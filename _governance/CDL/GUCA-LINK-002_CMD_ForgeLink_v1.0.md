@@ -1,19 +1,16 @@
 # GUCA-LINK-002_CMD_ForgeLink_v1.0.md
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-GUCA-LINK-002-CMD-FORGELINK-V1.0-001` | The Sovereign ID. |
-| **Official Name** | `GUCA-LINK-002_CMD_ForgeLink_v1.0.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `PROPOSED` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: GVRN-SYNERGY-001` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-GUCA-LINK-002-CMD-FORGELINK-V1.0-001` | The Sovereign ID. |
+| **Official Name** | `GUCA-LINK-002_CMD_ForgeLink_v1.0.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: GVRN-SYNERGY-001` | The Network.      |
+
 
 ---
 
@@ -104,3 +101,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 ###### **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [UMB-OSLM-001_MasterArtifactRegistry_v11.1.md](../01_Registries/UMB-OSLM-001_MasterArtifactRegistry_v11.1.md)

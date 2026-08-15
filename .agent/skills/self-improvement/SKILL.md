@@ -18,6 +18,7 @@ allowed_tools: activator.ps1, error_detector.ps1, extract_skill.ps1, skill_extra
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 ## **Block B: State Vector (AGP-001)**

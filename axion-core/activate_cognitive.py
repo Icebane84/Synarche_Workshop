@@ -39,7 +39,7 @@ from pathlib import Path
 from typing import Any
 
 # Force UTF-8 output on Windows terminals
-if sys.platform == "win32" and isinstance(sys.stdout, io.TextIOWrapper):
+if sys.platform == "win32" and isinstance(sys.stdout, io.TextIOWrapper):  # type: ignore[attr-defined]
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 # ---------------------------------------------------------------------------

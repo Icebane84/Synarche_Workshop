@@ -54,8 +54,7 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
-- [[connection-issues]]
+## Reciprocal Links
 
-- [[quick-fixes]]
-
-- [[quick-fixes]]
+- [quick-fixes.md](../6-TROUBLESHOOTING/quick-fixes.md)
+- [connection-issues.md](../6-TROUBLESHOOTING/connection-issues.md)

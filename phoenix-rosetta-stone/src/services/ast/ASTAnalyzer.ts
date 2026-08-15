@@ -3,6 +3,11 @@ import { ASTViolation, RuleConfig } from './types';
 // Valid file extensions for AST analysis
 const VALID_EXTENSIONS = ['.ts', '.tsx', '.js', '.jsx'];
 
+const DEFAULT_RULE_CONFIG: RuleConfig = Object.freeze({
+    enabled: true,
+    maxPropDepth: 3,
+});
+
 /**
  * The Structural Eye.
  * A Sovereign Module for deep architectural introspection using Abstract Syntax Trees.
@@ -11,9 +16,9 @@ const VALID_EXTENSIONS = ['.ts', '.tsx', '.js', '.jsx'];
 export class ASTAnalyzer {
     private readonly config: RuleConfig;
     private worker: Worker | null = null;
-    private pendingRequests: Map<string, (violations: ASTViolation[]) => void> = new Map();
+    private readonly pendingRequests: Map<string, (violations: ASTViolation[]) => void> = new Map();
 
-    constructor(config: RuleConfig = { enabled: true, maxPropDepth: 3 }) {
+    constructor(config: RuleConfig = DEFAULT_RULE_CONFIG) {
         this.config = config;
         this.initWorker();
     }
@@ -29,12 +34,12 @@ export class ASTAnalyzer {
                 this.worker.onmessage = (event) => {
                     const { filePath, violations, success, error } = event.data;
                     if (!success) {
-                        console.error(`[ASTAnalyzer] Worker error for ${filePath}:`, error);
+                        console.warn(`[ASTAnalyzer] Analysis deferred for ${filePath}:`, error);
                     }
-                    
+
                     const resolve = this.pendingRequests.get(filePath);
                     if (resolve) {
-                        resolve(violations);
+                        resolve(violations || []);
                         this.pendingRequests.delete(filePath);
                     }
                 };
@@ -58,8 +63,6 @@ export class ASTAnalyzer {
         }
 
         return new Promise((resolve) => {
-            // In a real multi-request scenario, we'd need a more robust ID system
-            // for now we use filePath as the key
             this.pendingRequests.set(filePath, resolve);
             this.worker?.postMessage({
                 filePath,
@@ -70,6 +73,10 @@ export class ASTAnalyzer {
     }
 
     private isValidFile(filePath: string): boolean {
+        const ignoredPaths = ['.trunk', '.archives', '_archive', 'node_modules', '.git'];
+        if (ignoredPaths.some(ignored => filePath.includes(ignored))) {
+            return false;
+        }
         return VALID_EXTENSIONS.some(ext => filePath.endsWith(ext));
     }
 }

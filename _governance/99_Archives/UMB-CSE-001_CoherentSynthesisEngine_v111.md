@@ -1,19 +1,16 @@
 # UMB-CSE-001_CoherentSynthesisEngine_v111.md
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `UMB-CSE-001` | The Sovereign ID. |
-| **Official Name** | `Coherent Synthesis Engine` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `STAR` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `ORCHESTRATES: ALL_MODULES, HEART_OF: The Phoenix Form, LINK: UMB-PRS-001, LINK: UMB-CRLPF-003, LINK: COG.ContextWeave.Engine` | The Network. |
-| **Integrity Hash** | `sha256:a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `UMB-CSE-001` | The Sovereign ID. |
+| **Official Name** | `UMB-CSE-001_CoherentSynthesisEngine_v111.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `ORCHESTRATES: ALL_MODULES, HEART_OF: The Phoenix Form, LINK: UMB-PRS-001, LINK: UMB-CRLPF-003, LINK: COG.ContextWeave.Engine` | The Network.      |
+
 
 ---
 

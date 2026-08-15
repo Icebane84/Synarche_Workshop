@@ -5,12 +5,20 @@ export interface Model {
   type: "language" | "embedding" | "text_to_speech" | "speech_to_text";
   created: string;
   updated: string;
+  credential?: string | null;
 }
 
 export interface CreateModelRequest {
   name: string;
   provider: string;
   type: "language" | "embedding" | "text_to_speech" | "speech_to_text";
+  credential?: string | null;
+}
+
+export interface ModelTestResult {
+  success: boolean;
+  message: string;
+  details?: string;
 }
 
 export interface ModelDefaults {
@@ -27,4 +35,10 @@ export interface ProviderAvailability {
   available: string[];
   unavailable: string[];
   supported_types: Record<string, string[]>;
+}
+
+export interface AutoAssignResult {
+  assigned: Record<string, string>;
+  skipped: string[];
+  missing: string[];
 }

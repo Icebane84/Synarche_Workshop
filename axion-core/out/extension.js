@@ -1,4 +1,16 @@
 "use strict";
+/*
+artifact_anchor:
+  id: CORE.EXTENSION.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -40,10 +52,10 @@ const fs = __importStar(require("node:fs"));
 const path = __importStar(require("node:path"));
 const vscode = __importStar(require("vscode"));
 const schemas_1 = require("./constants/schemas");
-const validation_1 = require("./utils/validation");
+const validation_1 = require("@utils/validation");
 const CelestialChartView_1 = require("./CelestialChartView");
-const PhoenixSuperpositionEngine_1 = require("./nexus/PhoenixSuperpositionEngine");
-const WebClientStrategy_1 = require("./nexus/WebClientStrategy");
+const PhoenixSuperpositionEngine_1 = require("@nexus/PhoenixSuperpositionEngine");
+const WebClientStrategy_1 = require("@nexus/WebClientStrategy");
 /**
  * Activates the Axion Core extension.
  * @param {vscode.ExtensionContext} context

@@ -14,14 +14,11 @@
  *   const { data, error } = await supabase.from('memory_entries').select();
  */
 import { type SupabaseClient } from "@supabase/supabase-js";
-import type { Database } from "./types.js";
 /**
  * Returns the shared Supabase client instance.
  * Creates it on first call; subsequent calls return the same instance.
  */
-export declare function getSupabaseClient(): SupabaseClient<Database>;
-/** Convenience singleton export */
-export declare const supabase: SupabaseClient<Database, "public", "public", never, {
-    PostgrestVersion: "12";
-}>;
+export declare function getSupabaseClient(): SupabaseClient<any>;
+/** Lazy Proxy singleton export — defers client initialization until first property dereference */
+export declare const supabase: SupabaseClient<any>;
 //# sourceMappingURL=client.d.ts.map

@@ -12,8 +12,8 @@ import logging
 from dataclasses import asdict, dataclass
 from typing import Any
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+# Initialize standard logging as synarche_logger is not available
+logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
 # --- CORE ARCHITECTURE (The Loom) ---
@@ -68,9 +68,7 @@ class MasterWeaver:
             instruction: The instruction text.
 
         """
-        self.bundle.context_commands.append(
-            {"handle": handle, "instruction": instruction}
-        )
+        self.bundle.context_commands.append({"handle": handle, "instruction": instruction})
 
     def inject_blueprint(self, name: str, schema: dict[str, Any]) -> None:
         """Injects a structural blueprint into the bundle.
@@ -191,18 +189,14 @@ def weave_the_ark(version: str, output_file: str) -> None:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Generates the Synarche Core Protocol Artifact."
-    )
+    parser = argparse.ArgumentParser(description="Generates the Synarche Core Protocol Artifact.")
     parser.add_argument(
         "--version",
         type=str,
         default="2.0.0-Genesis",
         help="Version string for the artifact.",
     )
-    parser.add_argument(
-        "--output", type=str, default="synarche_core.json", help="Output filename."
-    )
+    parser.add_argument("--output", type=str, default="synarche_core.json", help="Output filename.")
 
     args = parser.parse_args()
     weave_the_ark(args.version, args.output)

@@ -10,6 +10,7 @@
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 # Behavioral Modes Shard (.agent/skills/core/behavioral-modes)

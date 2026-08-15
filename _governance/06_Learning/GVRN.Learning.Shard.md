@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Learning.Shard` | The Sovereign ID. |
-| **Official Name** | `GVRN.Learning.Shard.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Ethos** | `"Zero Entropy. Coherence through Confrontation."` | The Intent. |
-| **Relations** | `GOVERN_BY: CORE.Codex.Phoenix` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Learning.Shard` | The Sovereign ID. |
+| **Official Name** | `GVRN.Learning.Shard.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 
@@ -590,9 +587,57 @@ Weapon Mods, Amplify (Prestige), and Telemetry panels paused the game but failed
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v16.5 [SOVEREIGN] STATUS: CANONIZED TS: 2026-06-12 HASH: LRN-SHARD-OMEGA-XL-SYNC`
+### **[GEM-024] [CROSS-LANGUAGE ENGINE RESOLUTION & GRAPH OPTIMIZATION] [SYMPHONIC WEAVING RESILIENCE]**
 
-- [[GVRN.Learning.Index]]
+**Timestamp**: 2026-07-22T03:10:00 **Oracle**: OGLN Artificer-Agent **Domain**: CORE (Symphonic Port & SOW)
+
+#### **The Catalyst (Dissonance)**
+- Spawning Python subprocesses within the TypeScript VS Code extension layer incurs excessive latency, demanding local engine porting.
+- Windows CP1252 character encoding limits cause print crashes on unicode emojis.
+- Large untracked directories, virtual environments, and archives result in O(N^2) comparison space explosion during Graph Synergy scans.
+
+#### **The Synthesis (Resolution)**
+- **TS Engine Port**: Fabricated `ContextWeave.ts`, `RNCEngine.ts`, and `LoomEngine.ts` inside `nova_forge/src/engine`, resolving compiler targets to `ES2020` and mapping standard workspace aliases.
+- **Console Encoding Hardening**: Patched all SOW Python utilities (`sot_scanner.py`, `synergy_calculator.py`, `forge_backlinks.py`) to reconfigure stdout to `utf-8` using `sys.stdout.reconfigure(encoding="utf-8")`.
+- **Walk Pruning Optimization**: Implemented in-place directory pruning (`dirs[:]`) to exclude `.venv`, `.git`, `node_modules`, and backup archives, reducing scan times from indefinite hanging to <2 seconds.
+- **Relational Markdown Links**: Transitioned automated weaving from wiki-style pointers to relative path-mapped markdown links, improving Graph Synergy Score (GSS) from **66.91** to **70.01**.
+
+#### **The Transcendence (Insight)**
+> "Cross-language alignment requires strict type boundaries and atomic test suites. Walking a directory structure without pruning is a recipe for space complexity doom; always constrain your traversals and reconfigure your streams for absolute unicode resonance."
+
+**[STATUS: CANONIZED] [XP: +500]**
+
+---
+
+### **[GEM-023] [WORKSPACE GRAPH TRAVERSAL & CONTEXT OPTIMIZATION] [SLIDING WINDOW COGNITIVE WALKER]**
+
+**Timestamp**: 2026-07-25T07:31:00 **Oracle**: OGLN Artificer-Agent **Domain**: CORE (Orchestration & Attention Optimization)
+
+#### **The Catalyst (Dissonance)**
+- Monolithic workspace queries bloat prompt windows, exhausting context ceilings and driving hallucinated model completions.
+- Silent deletion of files or Windows backslash separators in hash ledgers caused lookup failures (`UNVERIFIED` mismatches) or false cached assurances.
+
+#### **The Synthesis (Resolution)**
+- **Sliding-Window State Machine**: Designed `workspace_walker.py` to route nodes sequentially, caching files whose Waning Seal is `STILL_VALID` and only inlining raw contents when stale or unverified.
+- **Normalization Ingestion**: Standardized all lookup and ledger paths to Unix forward slashes, resolving OS separator mismatches on Windows.
+- **Missing File Safeties**: Created explicit error paths for missing/deleted files to prevent misleading caching messages.
+- **Verification Coverage**: Implemented a 7-test regression suite ensuring lookup validity and traversal safety.
+
+#### **The Transcendence (Insight)**
+> "To navigate an interconnected workspace safely, treat code as a graph of spec-impl edges rather than folders. By binding prompt rendering to cryptographic seals, we conserve attention and maintain verifiable truth."
+
+**[STATUS: CANONIZED] [XP: +600]**
+
+---
+
+`
+
+## Reciprocal Links
+
+- [GVRN.Learning.Index.md](GVRN.Learning.Index.md)
+
+[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Learning.Shard VER: v16.6 [SOVEREIGN] STATUS: CANONIZED TS: 2026-07-22 HASH: LRN-SHARD-OMEGA-SOW-WEAVE`
+
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact

@@ -43,34 +43,34 @@ export enum ProcessStatus {
 export class PhoenixLogger {
     private static logFilePath = path.resolve(process.cwd(), "error_audit.log");
 
-    public static info(message: string, ...optionalParams: any[]): void {
+    public static info(message: string, ...optionalParams: unknown[]): void {
         this.log(ProcessStatus.INFO, message, optionalParams);
     }
 
-    public static warning(message: string, ...optionalParams: any[]): void {
+    public static warning(message: string, ...optionalParams: unknown[]): void {
         this.log(ProcessStatus.WARNING, message, optionalParams);
     }
 
-    public static error(message: string, ...optionalParams: any[]): void {
+    public static error(message: string, ...optionalParams: unknown[]): void {
         this.log(ProcessStatus.ERROR, message, optionalParams);
     }
 
-    public static critical(message: string, ...optionalParams: any[]): void {
+    public static critical(message: string, ...optionalParams: unknown[]): void {
         this.log(ProcessStatus.CRITICAL, message, optionalParams);
     }
 
-    public static debug(message: string, ...optionalParams: any[]): void {
+    public static debug(message: string, ...optionalParams: unknown[]): void {
         this.log(ProcessStatus.DEBUG, message, optionalParams);
     }
 
-    public static trace(message: string, ...optionalParams: any[]): void {
+    public static trace(message: string, ...optionalParams: unknown[]): void {
         this.log(ProcessStatus.TRACE, message, optionalParams);
     }
 
     /**
      * Formats and logs the message as per the Phoenix Logging Protocol.
      */
-    private static log(level: ProcessStatus, message: string, params: any[]): void {
+    private static log(level: ProcessStatus, message: string, params: unknown[]): void {
         const timestamp = new Date().toISOString().replace("T", " ").substring(0, 19);
         const paramStr = params && params.length > 0 ? " " + params.map(p => typeof p === "object" ? JSON.stringify(p) : String(p)).join(" ") : "";
         const formattedMessage = `${timestamp} - PhoenixLogger - ${level} - ${message}${paramStr}`;

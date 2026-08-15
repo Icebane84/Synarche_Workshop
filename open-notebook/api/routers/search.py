@@ -1,5 +1,5 @@
 import json
-from collections.abc import AsyncGenerator
+from typing import AsyncGenerator
 
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
@@ -8,7 +8,11 @@ from loguru import logger
 from api.models import AskRequest, AskResponse, SearchRequest, SearchResponse
 from open_notebook.ai.models import Model, model_manager
 from open_notebook.domain.notebook import text_search, vector_search
-from open_notebook.exceptions import DatabaseOperationError, InvalidInputError
+from open_notebook.exceptions import (
+    DatabaseOperationError,
+    InvalidInputError,
+    OpenNotebookError,
+)
 from open_notebook.graphs.ask import graph as ask_graph
 
 router = APIRouter()
@@ -17,15 +21,6 @@ router = APIRouter()
 @router.post("/search", response_model=SearchResponse)
 async def search_knowledge_base(search_request: SearchRequest):
     """Search the knowledge base using text or vector search."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         if search_request.type == "vector":
             # Check if embedding model is available for vector search
@@ -60,11 +55,15 @@ async def search_knowledge_base(search_request: SearchRequest):
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except DatabaseOperationError as e:
-        logger.error(f"Database error during search: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Search failed: {e!s}")
+        logger.error(f"Database error during search: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Unexpected error during search: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Search failed: {e!s}")
+        logger.error(f"Unexpected error during search: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
 
 
 async def stream_ask_response(
@@ -74,8 +73,10 @@ async def stream_ask_response(
     try:
         final_answer = None
 
-        async for chunk in ask_graph.astream(
-            input=dict(question=question),  # type: ignore[arg-type]
+        # LangGraph accepts a partial state dict at runtime, but its typed
+        # overloads require the full state type (langgraph typing limitation).
+        async for chunk in ask_graph.astream(  # type: ignore[call-overload]
+            input=dict(question=question),
             config=dict(
                 configurable=dict(
                     strategy_model=strategy_model.id,
@@ -111,8 +112,11 @@ async def stream_ask_response(
         yield f"data: {json.dumps(completion_data)}\n\n"
 
     except Exception as e:
-        logger.error(f"Error in ask streaming: {e!s}")
-        error_data = {"type": "error", "message": str(e)}
+        from open_notebook.utils.error_classifier import classify_error
+
+        _, user_message = classify_error(e)
+        logger.error(f"Error in ask streaming: {str(e)}")
+        error_data = {"type": "error", "message": user_message}
         yield f"data: {json.dumps(error_data)}\n\n"
 
 
@@ -150,15 +154,24 @@ async def ask_knowledge_base(ask_request: AskRequest):
 
         # For streaming response
         return StreamingResponse(
-            stream_ask_response(ask_request.question, strategy_model, answer_model, final_answer_model),
-            media_type="text/plain",
+            stream_ask_response(
+                ask_request.question, strategy_model, answer_model, final_answer_model
+            ),
+            media_type="text/event-stream",
+            headers={
+                "Cache-Control": "no-cache",
+                "Connection": "keep-alive",
+                "X-Accel-Buffering": "no",
+            },
         )
 
     except HTTPException:
         raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error in ask endpoint: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Ask operation failed: {e!s}")
+        logger.error(f"Error in ask endpoint: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Ask operation failed: {str(e)}")
 
 
 @router.post("/search/ask/simple", response_model=AskResponse)
@@ -195,8 +208,10 @@ async def ask_knowledge_base_simple(ask_request: AskRequest):
 
         # Run the ask graph and get final result
         final_answer = None
-        async for chunk in ask_graph.astream(
-            input=dict(question=ask_request.question),  # type: ignore[arg-type]
+        # LangGraph accepts a partial state dict at runtime, but its typed
+        # overloads require the full state type (langgraph typing limitation).
+        async for chunk in ask_graph.astream(  # type: ignore[call-overload]
+            input=dict(question=ask_request.question),
             config=dict(
                 configurable=dict(
                     strategy_model=strategy_model.id,
@@ -216,6 +231,8 @@ async def ask_knowledge_base_simple(ask_request: AskRequest):
 
     except HTTPException:
         raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error in ask simple endpoint: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Ask operation failed: {e!s}")
+        logger.error(f"Error in ask simple endpoint: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Ask operation failed: {str(e)}")

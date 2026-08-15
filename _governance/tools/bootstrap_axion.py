@@ -31,10 +31,10 @@ agents:
     role: "Architect & Orchestrator"
     avatar: "assets/axion.png"
     capabilities: ["full_access", "browser_control", "mcp_client"]
-    default_rules: 
+    default_rules:
       - ".agent/rules/00-axion-prime.md"
       - ".agent/rules/01-chronos-lock.md"
-  
+
   - id: "axion-sentinel"
     name: "The Sentinel"
     role: "Auditor"
@@ -46,7 +46,7 @@ agents:
     role: "Researcher"
     color: "#aaff00"
     capabilities: ["internet_access", "ingest_tools"]
-    
+
   - id: "sophia"
     name: "Sophia"
     role: "Oracle"
@@ -121,11 +121,11 @@ mode: "strict"
 
 secrets:
   patterns: ["sk-proj-*", "ghp_*", "**/.env", "SUPABASE_*"]
-  inject_env: true 
+  inject_env: true
 
 filesystem:
   read_only: [".git/", ".agent/security.yaml", "node_modules/"]
-  blocked_operations: ["delete **/*"] 
+  blocked_operations: ["delete **/*"]
 
 terminal:
   require_approval: ["npm publish", "docker system prune", "rm -rf *", "git push --force"]
@@ -138,7 +138,7 @@ network:
     - "npmjs.com"
     - "localhost:*"
     - "docs.*"
-    - "*.supabase.co" 
+    - "*.supabase.co"
 """,
     # -------------------------------------------------------------------------
     # 4. WORKFLOWS (USER COMMANDS)
@@ -219,41 +219,63 @@ import os
 import json
 import difflib
 from datetime import datetime
-from supabase import create_client, Client
+from typing import Any, Optional
+
+from supabase import Client, create_client
 
 # --- CONFIGURATION ---
-URL = os.environ.get("SUPABASE_URL")
-KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
-try:
-    supabase: Client = create_client(URL, KEY)
-except:
-    supabase = None
+URL = os.environ.get("SUPABASE_URL", "")
+KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+
+
+def _build_client() -> Optional[Client]:
+    if not URL or not KEY or "your-supabase" in KEY.lower():
+        return None
+
+    try:
+        return create_client(URL, KEY)
+    except Exception:
+        return None
+
+
+supabase: Optional[Client] = _build_client()
 
 TARGET_TABLE = "knowledge_base"
 HISTORY_TABLE = "knowledge_history"
 
-def fetch_batch(limit=5):
-    if not supabase: return []
-    response = supabase.table(TARGET_TABLE)\\
-        .select("*")\\
-        .not_.contains("metadata", '{"version": "v10.0"}')\\
-        .limit(limit)\\
+
+def fetch_batch(limit: int = 5) -> list[dict[str, Any]]:
+    if supabase is None:
+        return []
+
+    response = (
+        supabase.table(TARGET_TABLE)
+        .select("*")
+        .not_.contains("metadata", '{"version": "v10.0"}')
+        .limit(limit)
         .execute()
-    return response.data
+    )
+    data = getattr(response, "data", None)
+    return data if isinstance(data, list) else []
+
 
 def generate_diff(original: str, new: str) -> str:
     diff = difflib.unified_diff(
         original.splitlines(),
         new.splitlines(),
-        fromfile='Legacy',
-        tofile='Canonized',
-        lineterm=''
+        fromfile="Legacy",
+        tofile="Canonized",
+        lineterm="",
     )
-    return '\\n'.join(diff)
+    return "\\n".join(diff)
 
-def commit_transmutation(id: str, new_content: str, new_title: str, categorization: dict):
-    if not supabase: return {"error": "No Connection"}
-    
+
+def commit_transmutation(
+    id: str, new_content: str, new_title: str, categorization: dict[str, Any]
+) -> dict[str, Any]:
+    if supabase is None:
+        return {"error": "No Connection"}
+
     # 1. Archive
     current = supabase.table(TARGET_TABLE).select("*").eq("id", id).single().execute()
     if current.data:
@@ -278,13 +300,13 @@ def commit_transmutation(id: str, new_content: str, new_title: str, categorizati
         "title": new_title,
         "metadata": new_metadata
     }).eq("id", id).execute()
-    
+
     return {"status": "success", "id": id}
 
 if __name__ == "__main__":
     import sys
     cmd = sys.argv[1]
-    
+
     if cmd == "fetch":
         print(json.dumps(fetch_batch()))
     elif cmd == "diff":
@@ -349,7 +371,7 @@ tasks:
     role: "Axion-Sentinel"
     depends_on: ["forge_content"]
     goal: "Create 'Refactor Review' Artifact with Diffs. WAIT for approval."
-    
+
   - id: "finalize"
     role: "Axion-Prime"
     depends_on: ["present_artifact"]
@@ -436,7 +458,7 @@ strategy:
 policy:
   allow_external: true
   headless: false
-  viewport: 
+  viewport:
     width: 1920
     height: 1080
 """,

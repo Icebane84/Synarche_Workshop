@@ -18,7 +18,7 @@ artifact_anchor:
  */
 import { spawn } from "node:child_process";
 import path from "node:path";
-import { PhoenixLogger } from "../system/logging";
+import { PhoenixLogger } from "@system/logging";
 
 export class PythonBridge {
     /**

@@ -64,10 +64,10 @@ def execute_chat(txt_input, context, current_session):
     current_state = st.session_state[current_session.id]
     current_state["messages"] += [txt_input]
     current_state["context"] = context
-    result = chat_graph.invoke(
+    result = asyncio.run(chat_graph.ainvoke(
         input=current_state,
         config=RunnableConfig(configurable={"thread_id": current_session.id}),
-    )
+    ))
     current_session.save()
     return result
 

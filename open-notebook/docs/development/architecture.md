@@ -286,7 +286,13 @@ DEFINE FIELD speakers.*.backstory ON TABLE speaker_profile TYPE option<string>;
 DEFINE FIELD speakers.*.personality ON TABLE speaker_profile TYPE option<string>;
 ```
 
-### Relationships
+### Relations
+
+- [frontend.md](../7-DEVELOPMENT/frontend.md)
+- [from-source.md](../1-INSTALLATION/from-source.md)
+- [CONTRIBUTING.md](../../CONTRIBUTING.md)
+- [AGENTS.md](../../open_notebook/AGENTS.md)
+hips
 
 **Record Links** (SurrealDB native relationships):
 

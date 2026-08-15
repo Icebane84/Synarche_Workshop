@@ -1,4 +1,17 @@
 "use strict";
+/*
+artifact_anchor:
+  id: CORE.SCHEMAS.001
+  version: v15.0 [OMEGA]
+  provenance: '2026-05-27'
+  domain: CORE
+  celestial_class: STAR
+  tier: LOGIC
+  state: ACTIVE
+  ethos: SOVEREIGN_LOGIC_COMPONENT
+  relations: []
+*/
+/** biome-ignore-all lint/style/useNamingConvention:false */
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -34,7 +47,7 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PRS_001_SCHEMA = exports.SOVEREIGN_ID_REGEX = void 0;
-const standards = __importStar(require("../../../_governance/13_Standardization/GVRN.Standards.json"));
+const standards = __importStar(require("@governance/13_Standardization/GVRN.Standards.json"));
 /**
  * Sovereign ID Regex: Supports legacy IDs (PRS-001) and OMEGA v15.0 standards (DOMAIN.TYPE.CLASS.SUBSYSTEM.DESCRIPTOR)
  * Pulled from GVRN.Standards.json

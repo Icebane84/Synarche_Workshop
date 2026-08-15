@@ -22,6 +22,7 @@
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

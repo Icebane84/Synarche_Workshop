@@ -1,11 +1,11 @@
 import { useCoherenceStore } from '../../store/coherenceStore';
 import { useFileSystemStore } from '../../store/fileSystemStore';
 import { useTaskStore } from '../../store/taskStore';
-import { ExperienceLog, DispatchResult } from '@essence/types';
+import { DispatchResult } from '@essence/types';
 import { analyzeProjectStructure } from '../astService';
 import { transmitAuralResponse } from '../audioService';
 import { openDirectoryPicker, scanDirectoryRecursively, writeToLocalFile } from '../fileSystemService';
-import { supabase } from '../supabaseClient';
+import { CSEBridgeService } from '../cseBridgeService';
 
 export const handleFileSystemCommand = async (
     commandId: string,
@@ -15,8 +15,8 @@ export const handleFileSystemCommand = async (
 
     switch (commandId) {
         case 'CMD_SCAN_LOCAL_PROJECT': {
-            const { scannedFiles, projectName } = useFileSystemStore.getState();
-            if (scannedFiles.length === 0)
+            const { scannedFiles, projectName, isConnected } = useFileSystemStore.getState();
+            if (scannedFiles.length === 0 && !isConnected)
                 return {
                     success: false,
                     message: 'Neural Link inactive. Please bridge to a project directory first.',
@@ -24,23 +24,6 @@ export const handleFileSystemCommand = async (
                 };
 
             await transmitAuralResponse(`Initiating Structural Eye audit of project: ${projectName ?? 'Unknown'}`);
-
-            // --- Integration: Cloud Audit Handshake ---
-            let cloudAuditResult = null;
-            if (supabase.functions) {
-                try {
-                    const { data, error } = await (
-                        supabase.functions as unknown as {
-                            invoke: (name: string, options: { body: Record<string, unknown> }) => Promise<{ data: unknown; error: { message: string } | null }>;
-                        }
-                    ).invoke('process-project-audit', {
-                        body: { projectName: projectName ?? 'Unknown', fileCount: scannedFiles.length },
-                    });
-                    if (!error) cloudAuditResult = data;
-                } catch {
-                    console.warn('[Cloud Relay] Substrate audit relay failed. Proceeding with local verification.');
-                }
-            }
 
             const report = await analyzeProjectStructure(scannedFiles);
             const { addTask } = useTaskStore.getState();
@@ -57,7 +40,6 @@ export const handleFileSystemCommand = async (
             addNovaSpark(
                 `Structural Audit Complete: ${report.violations.length.toString()} architectural dissonances identified.`,
             );
-            if (cloudAuditResult) addNovaSpark('Cloud Relay: Substrate verification confirmed by Sovereign Edge.');
 
             return {
                 success: true,
@@ -65,7 +47,6 @@ export const handleFileSystemCommand = async (
                 data: {
                     dissonancesFound: report.violations.length,
                     stats: report.stats,
-                    cloudConfirmation: cloudAuditResult,
                 },
             };
         }
@@ -82,23 +63,31 @@ export const handleFileSystemCommand = async (
                 await transmitAuralResponse(`Neural Link active. Sector ${handle.name} synchronized.`);
                 return { success: true, message: `Successfully linked to ${handle.name}.` };
             }
-            return { success: false, message: 'Connection handshake cancelled by user.' };
+            // Fallback to Polyglot Bridge Connection
+            await useFileSystemStore.getState().connectPolyglotBridge();
+            addNovaSpark('Neural Link established via Polyglot CSE Bridge Gateway.');
+            return { success: true, message: 'Polyglot Neural Link established with workspace.' };
         }
 
         case 'CMD_APPLY_FIX': {
-            const { rootHandle } = useFileSystemStore.getState();
-            if (!rootHandle)
+            const { rootHandle, isConnected } = useFileSystemStore.getState();
+            const filePath = params.filePath as string;
+            const content = params.patchContent as string;
+
+            await transmitAuralResponse(`Attempting Code Smith repair on sector ${filePath}.`);
+
+            let success = false;
+            if (rootHandle) {
+                success = await writeToLocalFile(rootHandle, filePath, content);
+            } else if (isConnected) {
+                success = await CSEBridgeService.writeRemoteFile(filePath, content);
+            } else {
                 return {
                     success: false,
                     message: 'Neural Link inactive. Manual write access required.',
                     data: { isNeuralError: true },
                 };
-
-            const filePath = params.filePath as string;
-            const content = params.patchContent as string;
-
-            await transmitAuralResponse(`Attempting Code Smith repair on sector ${filePath}.`);
-            const success = await writeToLocalFile(rootHandle, filePath, content);
+            }
 
             if (success) {
                 addNovaSpark(`Code Smith: Patched ${filePath}.`);
@@ -123,31 +112,40 @@ export const handleFileSystemCommand = async (
         }
 
         case 'CMD_READ_FILE': {
-            const { rootHandle } = useFileSystemStore.getState();
-            if (!rootHandle)
+            const { rootHandle, isConnected } = useFileSystemStore.getState();
+            const filePath = params.filePath as string;
+
+            if (!rootHandle && !isConnected)
                 return {
                     success: false,
                     message: 'Neural Link inactive. Read access denied.',
                     data: { isNeuralError: true },
                 };
 
-            const filePath = params.filePath as string;
             await transmitAuralResponse(`Accessing sector ${filePath}.`);
 
-            const { readLocalFile } = await import('../fileSystemService');
+            const doRead = async (p: string): Promise<string | null> => {
+                if (rootHandle) {
+                    const { readLocalFile } = await import('../fileSystemService');
+                    return await readLocalFile(rootHandle, p);
+                } else if (isConnected) {
+                    return await CSEBridgeService.readRemoteFile(p);
+                }
+                return null;
+            };
 
-            // Smart Extension Resolution
-            let content = await readLocalFile(rootHandle, filePath);
             let resolvedPath = filePath;
+            let content = await doRead(filePath);
 
             if (content === null) {
                 const CommonExtensions = ['.tsx', '.ts', '.js', '.jsx', '.json', '.css', '.md'];
 
-                // 1. Try appending extensions (if no extension provided or just in case)
+                // 1. Try appending extensions
                 for (const ext of CommonExtensions) {
                     const tryPath = filePath + ext;
-                    if ((await readLocalFile(rootHandle, tryPath)) !== null) {
-                        content = await readLocalFile(rootHandle, tryPath);
+                    const res = await doRead(tryPath);
+                    if (res !== null) {
+                        content = res;
                         resolvedPath = tryPath;
                         break;
                     }
@@ -158,11 +156,11 @@ export const handleFileSystemCommand = async (
                     const basePath = filePath.substring(0, filePath.lastIndexOf('.'));
                     for (const ext of CommonExtensions) {
                         const tryPath = basePath + ext;
-                        // Avoid re-trying the original failed path
                         if (tryPath === filePath) continue;
 
-                        if ((await readLocalFile(rootHandle, tryPath)) !== null) {
-                            content = await readLocalFile(rootHandle, tryPath);
+                        const res = await doRead(tryPath);
+                        if (res !== null) {
+                            content = res;
                             resolvedPath = tryPath;
                             break;
                         }

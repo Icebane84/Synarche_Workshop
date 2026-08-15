@@ -22,6 +22,7 @@
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 
+
 ---
 
 activation: glob: "\*_/_.{ts,py,md,tsx,js}"

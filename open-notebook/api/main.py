@@ -1,3 +1,10 @@
+# Load environment variables
+from dotenv import load_dotenv
+
+load_dotenv()
+
+import asyncio
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
@@ -7,20 +14,23 @@ from loguru import logger
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from api.auth import PasswordAuthMiddleware
-from api.middleware import RequestIDMiddleware
+from api.middleware import MaxBodySizeMiddleware, get_max_upload_size_bytes
 from api.routers import (
     auth,
+    capabilities,
     chat,
     config,
-    context,
+    credentials,
     embedding,
     embedding_rebuild,
     episode_profiles,
     insights,
+    languages,
     models,
     notebooks,
     notes,
     podcasts,
+    providers,
     search,
     settings,
     source_chat,
@@ -32,20 +42,135 @@ from api.routers import commands as commands_router
 from open_notebook.database.async_migrate import AsyncMigrationManager
 from open_notebook.exceptions import (
     AuthenticationError,
+    ConfigurationError,
+    ExternalServiceError,
     InvalidInputError,
+    NetworkError,
     NotFoundError,
+    OpenNotebookError,
     RateLimitError,
+    UnsupportedTypeException,
 )
+from open_notebook.utils.encryption import get_secret_from_env
+
+
+def _parse_cors_origins(raw: str) -> list[str]:
+    """Parse CORS_ORIGINS env value into a list of origins."""
+    value = raw.strip()
+    if value == "*":
+        return ["*"]
+    return [origin.strip() for origin in value.split(",") if origin.strip()]
+
+
+# Parsed once at module load; CORS_ORIGINS changes require a restart.
+_cors_origins_raw = os.getenv("CORS_ORIGINS")
+CORS_ALLOWED_ORIGINS = _parse_cors_origins(_cors_origins_raw or "*")
+CORS_IS_DEFAULT_WILDCARD = _cors_origins_raw is None
+# Keyed on the parsed list, not on whether the env var was set: an operator
+# who explicitly sets CORS_ORIGINS=* must get the same wildcard treatment as
+# the default, or credentials would combine with a wildcard origin - the
+# exact reflect-any-Origin behavior this flag exists to prevent.
+CORS_ALLOW_CREDENTIALS = "*" not in CORS_ALLOWED_ORIGINS
+
+# Parsed once at module load; OPEN_NOTEBOOK_MAX_UPLOAD_SIZE_MB changes require a restart.
+MAX_UPLOAD_SIZE_BYTES = get_max_upload_size_bytes()
+
+DATABASE_STARTUP_RETRY_ATTEMPTS = 12
+DATABASE_STARTUP_RETRY_INITIAL_DELAY_SECONDS = 1
+DATABASE_STARTUP_RETRY_MAX_DELAY_SECONDS = 5
+# Per-probe ceiling so a hung connection cannot exceed the retry budget or
+# block startup indefinitely. A probe that exceeds this is treated as a
+# transient failure and retried like any other unreachable-database attempt.
+DATABASE_STARTUP_RETRY_PROBE_TIMEOUT_SECONDS = 5
+
+
+def _cors_headers(request: Request) -> dict[str, str]:
+    """
+    Build CORS headers for error responses.
+
+    Mirrors Starlette CORSMiddleware behavior: reflects the request Origin
+    when the origin is allowed (or when wildcard is configured, since
+    browsers reject `Access-Control-Allow-Origin: *` combined with
+    credentials). Omits `Access-Control-Allow-Origin` for disallowed
+    origins so the browser blocks the error body from leaking cross-origin.
+    Only claims Access-Control-Allow-Credentials when the real CORSMiddleware
+    would (see its allow_credentials comment above) - otherwise error
+    responses would grant credentialed access the success path doesn't.
+    """
+    origin = request.headers.get("origin")
+    headers: dict[str, str] = {
+        "Access-Control-Allow-Methods": "*",
+        "Access-Control-Allow-Headers": "*",
+    }
+    if CORS_ALLOW_CREDENTIALS:
+        headers["Access-Control-Allow-Credentials"] = "true"
+
+    if origin and ("*" in CORS_ALLOWED_ORIGINS or origin in CORS_ALLOWED_ORIGINS):
+        headers["Access-Control-Allow-Origin"] = origin
+        headers["Vary"] = "Origin"
+
+    return headers
+
 
 # Import commands to register them in the API process
 try:
-    # Attempt to import commands, but don't fail hard if it doesn't work
-    # This is often needed if commands module depends on things not available yet
-    import commands
-
     logger.info("Commands imported in API process")
 except Exception as e:
-    logger.warning(f"Note: commands module import skipped: {e}")
+    logger.error(f"Failed to import commands in API process: {e}")
+
+
+async def _wait_for_database(migration_manager: AsyncMigrationManager) -> None:
+    """
+    Wait for SurrealDB to accept connections before running migrations.
+
+    Docker Compose can start the API before the database name is resolvable. Keep
+    migration errors fail-fast by only retrying this lightweight readiness probe.
+    """
+    attempts = max(1, DATABASE_STARTUP_RETRY_ATTEMPTS)
+    delay = DATABASE_STARTUP_RETRY_INITIAL_DELAY_SECONDS
+
+    for attempt in range(1, attempts + 1):
+        try:
+            await asyncio.wait_for(
+                migration_manager.ping(),
+                timeout=DATABASE_STARTUP_RETRY_PROBE_TIMEOUT_SECONDS,
+            )
+            if attempt > 1:
+                logger.info(f"Database became reachable on attempt {attempt}")
+            return
+        except Exception as e:
+            if attempt == attempts:
+                logger.error(
+                    f"Database did not become reachable after {attempts} attempts"
+                )
+                raise
+
+            logger.warning(
+                "Database is not reachable yet "
+                f"(attempt {attempt}/{attempts}): {str(e)}. "
+                f"Retrying in {delay:g} seconds..."
+            )
+            await asyncio.sleep(delay)
+            delay = min(delay * 2, DATABASE_STARTUP_RETRY_MAX_DELAY_SECONDS)
+
+
+async def _run_database_migrations() -> None:
+    """Run startup database migrations after SurrealDB is reachable."""
+    migration_manager = AsyncMigrationManager()
+    await _wait_for_database(migration_manager)
+
+    current_version = await migration_manager.get_current_version()
+    logger.info(f"Current database version: {current_version}")
+
+    if await migration_manager.needs_migration():
+        logger.warning("Database migrations are pending. Running migrations...")
+        await migration_manager.run_migration_up()
+        new_version = await migration_manager.get_current_version()
+        logger.success(
+            f"Migrations completed successfully. Database is now at version {new_version}"
+        )
+    else:
+        logger.info("Database is already at the latest version. No migrations needed.")
 
 
 @asynccontextmanager
@@ -54,26 +179,26 @@ async def lifespan(app: FastAPI):
     Lifespan event handler for the FastAPI application.
     Runs database migrations automatically on startup.
     """
-    # Startup: Run database migrations
+    # Startup: Security checks
     logger.info("Starting API initialization...")
 
-    try:
-        migration_manager = AsyncMigrationManager()
-        current_version = await migration_manager.get_current_version()
-        logger.info(f"Current database version: {current_version}")
+    # Security check: Encryption key
+    if not get_secret_from_env("OPEN_NOTEBOOK_ENCRYPTION_KEY"):
+        logger.warning(
+            "OPEN_NOTEBOOK_ENCRYPTION_KEY not set. "
+            "API key encryption will fail until this is configured. "
+            "Set OPEN_NOTEBOOK_ENCRYPTION_KEY to any secret string."
+        )
 
-        if await migration_manager.needs_migration():
-            logger.warning("Database migrations are pending. Running migrations...")
-            await migration_manager.run_migration_up()
-            new_version = await migration_manager.get_current_version()
-            logger.success(f"Migrations completed successfully. Database is now at version {new_version}")
-        else:
-            logger.info("Database is already at the latest version. No migrations needed.")
+    # Run database migrations
+
+    try:
+        await _run_database_migrations()
     except Exception as e:
-        logger.error(f"CRITICAL: Database migration failed: {e!s}")
+        logger.error(f"CRITICAL: Database migration failed: {str(e)}")
         logger.exception(e)
         # Fail fast - don't start the API with an outdated database schema
-        raise RuntimeError(f"Failed to run database migrations: {e!s}") from e
+        raise RuntimeError(f"Failed to run database migrations: {str(e)}") from e
 
     logger.success("API initialization completed successfully")
 
@@ -87,9 +212,18 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Open Notebook API",
     description="API for Open Notebook - Research Assistant",
-    version="0.3.3",
     lifespan=lifespan,
 )
+
+if CORS_IS_DEFAULT_WILDCARD:
+    logger.warning(
+        "CORS_ORIGINS is not set — API accepts cross-origin requests from any "
+        "origin (default: '*'). For production deployments, set CORS_ORIGINS to "
+        "your frontend origin(s), e.g. "
+        "CORS_ORIGINS=https://notebook.example.com"
+    )
+else:
+    logger.info(f"CORS allowed origins: {CORS_ALLOWED_ORIGINS}")
 
 # Add password authentication middleware first
 # Exclude /api/auth/status and /api/config from authentication
@@ -106,74 +240,34 @@ app.add_middleware(
     ],
 )
 
-# Add middleware
+# Reject oversized request bodies before they reach auth or routing - added
+# after PasswordAuthMiddleware (so it wraps around it) so a too-large request
+# is rejected before spending any work checking credentials.
+logger.info(
+    f"Max request body size: {MAX_UPLOAD_SIZE_BYTES / (1024 * 1024):g}MB "
+    "(set OPEN_NOTEBOOK_MAX_UPLOAD_SIZE_MB to change)"
+)
+app.add_middleware(MaxBodySizeMiddleware, max_body_size=MAX_UPLOAD_SIZE_BYTES)
+
+# Add CORS middleware last (so it processes first, and so it can attach
+# CORS headers to a 413 raised by MaxBodySizeMiddleware)
+#
+# allow_credentials is tied to whether CORS_ORIGINS resolves to specific
+# origins: combining allow_origins=["*"] with allow_credentials=True makes
+# Starlette reflect the request's Origin header verbatim (browsers reject a
+# literal "*" alongside credentials), which defeats the origin allowlist.
+# The frontend never sends credentialed requests (withCredentials: false)
+# and auth is a Bearer header, not a cookie, so this isn't independently
+# exploitable today - but there's no reason to allow it for any wildcard
+# case. Once an operator explicitly scopes CORS_ORIGINS to real origins,
+# credentialed cross-origin requests to those origins are safe to allow.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origins
-    allow_credentials=True,
+    allow_origins=CORS_ALLOWED_ORIGINS,
+    allow_credentials=CORS_ALLOW_CREDENTIALS,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-app.add_middleware(RequestIDMiddleware)
-
-
-# Global Exception Handler
-@app.exception_handler(Exception)
-async def global_exception_handler(request: Request, exc: Exception):
-    """
-    Global exception handler to catch unhandled exceptions and return
-    a safe 500 response with the Request ID.
-    """
-    request_id = getattr(request.state, "request_id", "unknown")
-
-    logger.error(f"Unhandled exception (ID: {request_id}): {exc}")
-    # logger.exception(exc)  # Log full traceback
-
-    return JSONResponse(
-        status_code=500,
-        content={
-            "detail": "Internal Server Error",
-            "request_id": request_id,
-            "message": "An unexpected error occurred. Please contact support with the Request ID.",
-        },
-        headers={
-            "X-Request-ID": request_id,
-            "Access-Control-Allow-Origin": "*",  # Ensure CORS for errors
-        },
-    )
-
-
-@app.exception_handler(NotFoundError)
-async def not_found_exception_handler(request: Request, exc: NotFoundError):
-    return JSONResponse(
-        status_code=404,
-        content={"detail": str(exc)},
-    )
-
-
-@app.exception_handler(AuthenticationError)
-async def authentication_exception_handler(request: Request, exc: AuthenticationError):
-    return JSONResponse(
-        status_code=401,
-        content={"detail": str(exc)},
-    )
-
-
-@app.exception_handler(InvalidInputError)
-async def invalid_input_exception_handler(request: Request, exc: InvalidInputError):
-    return JSONResponse(
-        status_code=400,
-        content={"detail": str(exc)},
-    )
-
-
-@app.exception_handler(RateLimitError)
-async def rate_limit_exception_handler(request: Request, exc: RateLimitError):
-    return JSONResponse(
-        status_code=429,
-        content={"detail": "Rate limit exceeded. Please try again later."},
-    )
 
 
 # Custom exception handler to ensure CORS headers are included in error responses
@@ -188,19 +282,93 @@ async def custom_http_exception_handler(request: Request, exc: StarletteHTTPExce
     FastAPI, this handler won't be called. In that case, configure your reverse proxy
     to add CORS headers to error responses.
     """
-    # Get the origin from the request
-    origin = request.headers.get("origin", "*")
-
     return JSONResponse(
         status_code=exc.status_code,
         content={"detail": exc.detail},
-        headers={
-            **(exc.headers or {}),
-            "Access-Control-Allow-Origin": origin,
-            "Access-Control-Allow-Credentials": "true",
-            "Access-Control-Allow-Methods": "*",
-            "Access-Control-Allow-Headers": "*",
-        },
+        headers={**(exc.headers or {}), **_cors_headers(request)},
+    )
+
+
+@app.exception_handler(NotFoundError)
+async def not_found_error_handler(request: Request, exc: NotFoundError):
+    return JSONResponse(
+        status_code=404,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
+    )
+
+
+@app.exception_handler(InvalidInputError)
+async def invalid_input_error_handler(request: Request, exc: InvalidInputError):
+    return JSONResponse(
+        status_code=400,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
+    )
+
+
+@app.exception_handler(AuthenticationError)
+async def authentication_error_handler(request: Request, exc: AuthenticationError):
+    return JSONResponse(
+        status_code=401,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
+    )
+
+
+@app.exception_handler(RateLimitError)
+async def rate_limit_error_handler(request: Request, exc: RateLimitError):
+    return JSONResponse(
+        status_code=429,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
+    )
+
+
+@app.exception_handler(ConfigurationError)
+async def configuration_error_handler(request: Request, exc: ConfigurationError):
+    return JSONResponse(
+        status_code=422,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
+    )
+
+
+@app.exception_handler(NetworkError)
+async def network_error_handler(request: Request, exc: NetworkError):
+    return JSONResponse(
+        status_code=502,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
+    )
+
+
+@app.exception_handler(ExternalServiceError)
+async def external_service_error_handler(request: Request, exc: ExternalServiceError):
+    return JSONResponse(
+        status_code=502,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
+    )
+
+
+@app.exception_handler(UnsupportedTypeException)
+async def unsupported_type_error_handler(
+    request: Request, exc: UnsupportedTypeException
+):
+    return JSONResponse(
+        status_code=415,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
+    )
+
+
+@app.exception_handler(OpenNotebookError)
+async def open_notebook_error_handler(request: Request, exc: OpenNotebookError):
+    return JSONResponse(
+        status_code=500,
+        content={"detail": str(exc)},
+        headers=_cors_headers(request),
     )
 
 
@@ -213,9 +381,10 @@ app.include_router(models.router, prefix="/api", tags=["models"])
 app.include_router(transformations.router, prefix="/api", tags=["transformations"])
 app.include_router(notes.router, prefix="/api", tags=["notes"])
 app.include_router(embedding.router, prefix="/api", tags=["embedding"])
-app.include_router(embedding_rebuild.router, prefix="/api/embeddings", tags=["embeddings"])
+app.include_router(
+    embedding_rebuild.router, prefix="/api/embeddings", tags=["embeddings"]
+)
 app.include_router(settings.router, prefix="/api", tags=["settings"])
-app.include_router(context.router, prefix="/api", tags=["context"])
 app.include_router(sources.router, prefix="/api", tags=["sources"])
 app.include_router(insights.router, prefix="/api", tags=["insights"])
 app.include_router(commands_router.router, prefix="/api", tags=["commands"])
@@ -224,6 +393,10 @@ app.include_router(episode_profiles.router, prefix="/api", tags=["episode-profil
 app.include_router(speaker_profiles.router, prefix="/api", tags=["speaker-profiles"])
 app.include_router(chat.router, prefix="/api", tags=["chat"])
 app.include_router(source_chat.router, prefix="/api", tags=["source-chat"])
+app.include_router(credentials.router, prefix="/api", tags=["credentials"])
+app.include_router(providers.router, prefix="/api", tags=["providers"])
+app.include_router(capabilities.router, prefix="/api", tags=["capabilities"])
+app.include_router(languages.router, prefix="/api", tags=["languages"])
 
 
 @app.get("/")

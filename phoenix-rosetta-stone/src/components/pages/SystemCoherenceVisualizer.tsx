@@ -41,6 +41,8 @@ const relationshipStrength: Record<GraphLink['relationship'], number> = {
 
 const linkColorScale = d3.scaleSequential(d3.interpolateCool).domain([0.3, 1]);
 
+import { CSEBridgeService } from '../../services/cseBridgeService';
+
 const SystemCoherenceVisualizer: React.FC = () => {
     const svgRef = useRef<SVGSVGElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -51,17 +53,39 @@ const SystemCoherenceVisualizer: React.FC = () => {
     const [isAnalyzing, setIsAnalyzing] = useState<boolean>(false);
     const [synergyReport, setSynergyReport] = useState<{ message: string; synergies: string[] } | null>(null);
     const [sfrThreshold, setSfrThreshold] = useState<number>(0);
+    const [activeGraph, setActiveGraph] = useState<{ nodes: GraphNode[]; links: GraphLink[] }>(graphData);
 
     const addNovaSpark = useCoherenceStore((state) => state.addNovaSpark);
     const addTask = useTaskStore((state) => state.addTask);
 
+    // Fetch live Loom Graph from CSE backend
+    useEffect(() => {
+        let isMounted = true;
+        CSEBridgeService.fetchLoomGraph().then((liveData) => {
+            if (isMounted && liveData && liveData.nodes.length > 0) {
+                const formattedNodes: GraphNode[] = liveData.nodes.map((n) => ({
+                    id: n.id,
+                    label: n.label,
+                    type: (n.type as GraphNode['type']) || 'Document',
+                }));
+                const formattedLinks: GraphLink[] = liveData.links.map((l) => ({
+                    source: l.source,
+                    target: l.target,
+                    relationship: (l.relationship.toLowerCase() as GraphLink['relationship']) || 'informs',
+                }));
+                setActiveGraph({ nodes: formattedNodes, links: formattedLinks });
+            }
+        });
+        return () => { isMounted = false; };
+    }, []);
+
     const augmentedLinks = useMemo(
         () =>
-            graphData.links.map((link) => ({
+            activeGraph.links.map((link) => ({
                 ...link,
                 strength: relationshipStrength[link.relationship] || 0.1,
             })),
-        [],
+        [activeGraph],
     );
 
     useEffect(() => {
@@ -72,7 +96,7 @@ const SystemCoherenceVisualizer: React.FC = () => {
 
         svg.selectAll('*').remove();
 
-        const nodes: SimulationNode[] = graphData.nodes.map((n) => ({ ...n }));
+        const nodes: SimulationNode[] = activeGraph.nodes.map((n) => ({ ...n }));
         const links: SimulationLink[] = augmentedLinks.map((l) => ({ ...l }) as unknown as SimulationLink);
 
         const simulation = d3

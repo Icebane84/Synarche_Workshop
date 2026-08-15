@@ -1,19 +1,16 @@
 # CSL-042*The Genesis of Wisdom* Architecting a Self-Optimizing Phoenix Form.md
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-042-THE-GENESIS-OF-WISDOM--ARCHITECTING-A-SELF-OPTIMIZING-PHOENIX-FORM-001` | The Sovereign ID. |
-| **Official Name** | `CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-CSL-042-THE-GENESIS-OF-WISDOM--ARCHITECTING-A-SELF-OPTIMIZING-PHOENIX-FORM-001` | The Sovereign ID. |
+| **Official Name** | `CSL-042_The Genesis of Wisdom_ Architecting a Self-Optimizing Phoenix Form.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

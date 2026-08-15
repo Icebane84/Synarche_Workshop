@@ -32,7 +32,8 @@ export default [
         ],
     },
     {
-        files: ["src/**/*.ts", "tools/**/*.js", "tools/**/*.cjs"],
+        files: ["**/*.ts"],
+        ignores: ["src/nexus/useNexusHandshake.ts", "src/utils/PythonBridge1.ts", "tools/**/*.ts", "phoenix-rosetta-stone/**", "**/phoenix-rosetta-stone/**"],
         languageOptions: {
             parser: tsParser,
             parserOptions: {
@@ -76,7 +77,36 @@ export default [
         },
     },
     {
-        files: ["**/*.tsx", "**/react-app/**/*.ts"],
+        files: ["**/*.js", "**/*.cjs"],
+        languageOptions: {
+            ecmaVersion: "latest",
+            sourceType: "module",
+        },
+        rules: {
+            "no-var": "error",
+            "prefer-const": "error",
+            eqeqeq: "error",
+        },
+    },
+    {
+        files: ["src/nexus/useNexusHandshake.ts", "src/utils/PythonBridge1.ts", "tools/**/*.ts"],
+        languageOptions: {
+            parser: tsParser,
+            parserOptions: {
+                ecmaVersion: "latest",
+                sourceType: "module",
+            },
+        },
+        plugins: {
+            phoenix: phoenixPlugin,
+        },
+        rules: {
+            "no-var": "error",
+            "prefer-const": "error",
+        },
+    },
+    {
+        files: ["**/*.tsx", "**/react-app/**/*.ts", "phoenix-rosetta-stone/**/*.ts"],
         languageOptions: {
             parser: tsParser,
             globals: globals.browser,

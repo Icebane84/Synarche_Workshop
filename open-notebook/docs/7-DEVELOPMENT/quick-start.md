@@ -1,35 +1,59 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `QUICK-START` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
+# Quick Start - Development
 
-# quick-start.md
+Get Open Notebook running locally in 5 minutes.
 
-> **Domain**: GVRN
-> **Evolution**: Omega Ascension
-> **Signal**: OMEGA
+## Prerequisites
 
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
+- **Python 3.11+**
+- **Git**
+- **uv** (package manager) - install with `curl -LsSf https://astral.sh/uv/install.sh | sh`
+- **Docker** (optional, for SurrealDB)
 
----
+## 1. Clone the Repository (2 min)
 
-###### **[ARTIFACT START]**
+```bash
+# Fork the repository on GitHub first, then clone your fork
+git clone https://github.com/YOUR_USERNAME/open-notebook.git
+cd open-notebook
 
-## **Block A: The Identification Lock (UIP-V15)**
+# Add upstream remote for updates
+git remote add upstream https://github.com/lfnovo/open-notebook.git
+```
 
-| Key               | Value                         | Description       |
-| :---------------- | :---------------------------- | :---------------- |
-| **Artifact ID**   | `GVRN-QUICK-START-001`        | The Sovereign ID. |
-| **Official Name** | `quick-start.md`              | The Filename.     |
-| **Version**       | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**        | `GVRN`                        | The Subject.      |
-| **Status**        | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+## 2. Install Dependencies (2 min)
+
+```bash
+# Install Python dependencies
+uv sync
+
+# Verify uv is working
+uv --version
+```
+
+## 3. Start Services (1 min)
+
+In separate terminal windows:
+
+```bash
+# Terminal 1: Start SurrealDB (database)
+make database
+# or: docker run -d --name surrealdb -p 127.0.0.1:8000:8000 surrealdb/surrealdb:v2 start --user root --pass password memory
+
+# Terminal 2: Start API (backend on port 5055)
+make api
+# or: uv run --env-file .env uvicorn api.main:app --host 0.0.0.0 --port 5055
+
+# Terminal 3: Start Frontend (UI on port 3000)
+cd frontend && npm run dev
+```
+
+## 4. Verify Everything Works (instant)
+
+- **API Health**: http://localhost:5055/health → should return `{"status": "ok"}`
+- **API Docs**: http://localhost:5055/docs → interactive API documentation
+- **Frontend**: http://localhost:3000 → Open Notebook UI
+
+**All three show up?** ✅ You're ready to develop!
 
 ---
 
@@ -45,7 +69,6 @@
 ## Troubleshooting
 
 ### "Port 5055 already in use"
-
 ```bash
 # Find what's using the port
 lsof -i :5055
@@ -55,7 +78,6 @@ uv run uvicorn api.main:app --port 5056
 ```
 
 ### "Can't connect to SurrealDB"
-
 ```bash
 # Check if SurrealDB is running
 docker ps | grep surrealdb
@@ -65,7 +87,6 @@ make database
 ```
 
 ### "Python version is too old"
-
 ```bash
 # Check your Python version
 python --version  # Should be 3.11+
@@ -75,7 +96,6 @@ uv sync --python 3.11
 ```
 
 ### "npm: command not found"
-
 ```bash
 # Install Node.js from https://nodejs.org/
 # Then install frontend dependencies
@@ -106,11 +126,3 @@ open http://localhost:5055/docs
 ---
 
 Need more help? See [Development Setup](development-setup.md) for details or join our [Discord](https://discord.gg/37XJPXfz2w).
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact
-CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
-GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

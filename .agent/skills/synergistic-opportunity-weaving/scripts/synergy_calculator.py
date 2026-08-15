@@ -15,7 +15,11 @@
 import argparse
 import os
 import re
+import sys
 from typing import Any
+
+# Windows console unicode compatibility
+sys.stdout.reconfigure(encoding="utf-8")
 
 
 def extract_metadata(content: str) -> dict[str, str]:
@@ -72,7 +76,13 @@ def calculate_gss(directory: str) -> dict[str, Any]:
 
     # Pass 1: Discover nodes
     extensions = (".md", ".py", ".ts", ".js", ".groovy", ".java", ".json")
-    for root, _, files in os.walk(directory):
+    exclude_dirs = {
+        "node_modules", "_archive", "archive", "99_Archives", "60_Archives", "entropy",
+        "incoming", "dist", "out", "playground", "prototypes", "tests", "tools", "_governance"
+    }
+    for root, dirs, files in os.walk(directory):
+        # Prune hidden directories and excluded folders
+        dirs[:] = [d for d in dirs if d not in exclude_dirs and not d.startswith(".")]
         for f in files:
             if f.lower().endswith(extensions):
                 filepath = os.path.join(root, f)

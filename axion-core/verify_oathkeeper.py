@@ -1,5 +1,7 @@
-from src.agents.axion.oathkeeper import AxionOathkeeper
 import asyncio
+
+from src.agents.axion.oathkeeper import AxionOathkeeper
+
 
 async def test():
     try:

@@ -45,8 +45,12 @@ class World:
 
         self.registry._entity_index = snap["entity_index"].copy()
         for sig, arch_snap in snap["archetypes"].items():
+            if sig not in self.registry._archetypes:
+                from fde_engine.ecs.archetype_storage import Archetype
+                self.registry._archetypes[sig] = Archetype(sig)
             arch = self.registry._archetypes[sig]
             arch.entity_ids = arch_snap["entity_ids"].copy()
             arch.columns = {
                 ctype: col.copy() for ctype, col in arch_snap["columns"].items()
             }
+            arch.size = arch_snap["size"]

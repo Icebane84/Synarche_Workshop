@@ -1,4 +1,4 @@
-﻿// <reference types="vitest/config" />
+// <reference types="vitest/config" />
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
@@ -20,9 +20,20 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), tailwindcss()],
 
+    server: {
+      proxy: {
+        "/api": {
+          target: "http://localhost:8000",
+          changeOrigin: true,
+          secure: false,
+        },
+      },
+    },
+
     resolve: {
       tsconfigPaths: true,
       alias: {
+        "@synarche/supabase": path.resolve(dirname, "../packages/supabase/src/index.ts"),
         "@": path.resolve(dirname, "src"),
         "@components": path.resolve(dirname, "src/components"),
         "@core": path.resolve(dirname, "src/core"),

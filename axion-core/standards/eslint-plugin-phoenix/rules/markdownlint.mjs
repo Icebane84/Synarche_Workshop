@@ -104,7 +104,14 @@ export default {
                             }
                             const editColumn = result.fixInfo.editColumn || 1;
                             startOffset += editColumn - 1;
-                            const endOffset = startOffset + (result.fixInfo.deleteCount || 0);
+                            let endOffset;
+                            if (result.fixInfo.deleteCount === -1) {
+                                const lineIndex = (result.lineNumber || 1) - 1;
+                                const isLastLine = lineIndex === lines.length - 1;
+                                endOffset = startOffset + lines[lineIndex].length + (isLastLine ? 0 : 1);
+                            } else {
+                                endOffset = startOffset + (result.fixInfo.deleteCount || 0);
+                            }
                             return fixer.replaceTextRange([startOffset, endOffset], result.fixInfo.insertText || "");
                         };
                     }

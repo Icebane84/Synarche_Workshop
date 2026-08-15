@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `SELT.AOP.007` | The Sovereign ID. |
-| **Official Name** | `SELT-AOP-007_OperationalPlaybook_v7.0.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[TEMPLATED]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERN_BY: GVRN.Codex.Genesis` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SELT.AOP.007` | The Sovereign ID. |
+| **Official Name** | `SELT-AOP-007_OperationalPlaybook_v7.0.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERN_BY: GVRN.Codex.Genesis` | The Network.      |
+
 
 ---
 
@@ -58,7 +55,12 @@ This template defines the step-by-step operational workflows for complex tasks w
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: SELT.AOP.007 VER: v15.0 [OMEGA] STATUS: TEMPLATED TS: 2026-04-05 HASH: AOP-V7-OMEGA`
+`
+
+## Reciprocal Links
+
+- [00_INDEX.md](../00_INDEX.md)
+[OMNI-ARTIFACT-ANCHOR] ID: SELT.AOP.007 VER: v15.0 [OMEGA] STATUS: TEMPLATED TS: 2026-04-05 HASH: AOP-V7-OMEGA`
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact

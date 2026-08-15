@@ -15,6 +15,10 @@
 import argparse
 import os
 import re
+import sys
+
+# Windows console unicode compatibility
+sys.stdout.reconfigure(encoding="utf-8")
 
 
 def extract_metadata(content: str) -> dict[str, str]:
@@ -74,7 +78,13 @@ def scan_opportunities(directory: str) -> None:
     # Pass 1: Parse All
     print(">>> Scanning The Loom...")
     extensions = (".md", ".py", ".ts", ".js", ".groovy", ".java", ".json")
-    for root, _, files in os.walk(directory):
+    exclude_dirs = {
+        "node_modules", "_archive", "archive", "99_Archives", "60_Archives", "entropy",
+        "incoming", "dist", "out", "playground", "prototypes", "tests", "tools", "_governance"
+    }
+    for root, dirs, files in os.walk(directory):
+        # Prune hidden directories and excluded folders
+        dirs[:] = [d for d in dirs if d not in exclude_dirs and not d.startswith(".")]
         for f in files:
             if f.lower().endswith(extensions):
                 path = os.path.join(root, f)

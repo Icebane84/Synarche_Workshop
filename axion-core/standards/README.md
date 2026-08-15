@@ -52,10 +52,10 @@ outside governance.
 
 ---
 
-- ❌ Python source CODE of any kind
-- ❌ TEST files
-- ❌ Documentation (`.md` narrative files) — those live in `_governance/08_Documentation/`
-- ❌ Per-module `.pylintrc` or local overrides — all rules are centralised here
+* ❌ Python source CODE of any kind
+* ❌ TEST files
+* ❌ Documentation (`.md` narrative files) — those live in `_governance/08_Documentation/`
+* ❌ Per-module `.pylintrc` or local overrides — all rules are centralised here
 
 ---
 
@@ -65,9 +65,7 @@ outside governance.
 
 | Governing artifact                  | Location               |
 | :---------------------------------- | :--------------------- |
-| `GVRN.Style.001` (Coding Standards) | `_governance/02_GVRN/` |
-| `GVRN.Guide.Coding.md`              | `_governance/` (root)  |
-| `CODING_HANDBOOK.md`                | `_governance/` (root)  |
+| `GVRN.Style.SovereignStandard.v15.1.md` | `_governance/02_GVRN/` |
 
 ---
 
@@ -75,7 +73,7 @@ outside governance.
 
 ---
 
-- **Directive:** Ensure any new TOOL configuration added to this directory is registered in `pyproject.toml` or the
+* **Directive:** Ensure any new TOOL configuration added to this directory is registered in `pyproject.toml` or the
   corresponding tool chain config, and aligned with the coding standards in `_governance/02_GVRN/`.
 
 ---

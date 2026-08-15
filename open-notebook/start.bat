@@ -4,6 +4,10 @@ echo ===================================================
 echo   🚀 Starting Open Notebook Services...
 echo ===================================================
 
+set PYTHONUTF8=1
+set PYTHONIOENCODING=utf-8
+
+
 echo.
 echo [1/4] Starting SurrealDB database container...
 docker compose up -d surrealdb

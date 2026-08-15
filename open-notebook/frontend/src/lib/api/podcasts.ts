@@ -119,4 +119,14 @@ export const podcastsApi = {
     );
     return response.data;
   },
+
+  listLanguages: async () => {
+    const response = await apiClient.get<Array<{ code: string; name: string }>>("/languages");
+    return response.data;
+  },
+
+  retryEpisode: async (episodeId: string) => {
+    const response = await apiClient.post<PodcastEpisode>(`/podcasts/episodes/${episodeId}/retry`);
+    return response.data;
+  },
 };

@@ -1,25 +1,37 @@
 import os
+import re
 from contextlib import asynccontextmanager
-from datetime import UTC, datetime, timezone
+from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, TypeVar, Union
 
 from loguru import logger
 from surrealdb import AsyncSurreal, RecordID  # type: ignore
+from surrealdb.data.types.table import Table  # type: ignore
 
-T = TypeVar("T", dict[str, Any], list[dict[str, Any]])
+T = TypeVar("T", Dict[str, Any], List[Dict[str, Any]])
+
+# Bare SurrealDB table/relation identifier: no ':', whitespace, or query
+# syntax. Used to validate the parts of RELATE/UPSERT/UPDATE that name a
+# table or edge-relation and therefore can't be bound as a query parameter
+# (SurrealQL only allows binding record/table *values*, not identifiers in
+# that position).
+_IDENTIFIER_RE = re.compile(r"^[a-zA-Z_][a-zA-Z0-9_]*$")
 
 
-def get_database_url():
+def _ensure_safe_identifier(value: str, kind: str) -> str:
+    """Validate a table/relationship name before it is interpolated into a query."""
+    if not isinstance(value, str) or not _IDENTIFIER_RE.match(value):
+        raise ValueError(f"Invalid {kind} name: {value!r}")
+    return value
+
+
+def _get_env_or_default(name: str, default: str) -> str:
+    value = os.getenv(name)
+    return value if value else default
+
+
+def get_database_url() -> str:
     """Get database URL with backward compatibility"""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     surreal_url = os.getenv("SURREAL_URL")
     if surreal_url:
         return surreal_url
@@ -30,9 +42,19 @@ def get_database_url():
     return f"ws://{address}/rpc:{port}"
 
 
-def get_database_password():
+def get_database_password() -> str:
     """Get password with backward compatibility"""
-    return os.getenv("SURREAL_PASSWORD") or os.getenv("SURREAL_PASS")
+    return os.getenv("SURREAL_PASSWORD") or os.getenv("SURREAL_PASS") or "root"
+
+
+def get_database_namespace() -> str:
+    """Get configured SurrealDB namespace."""
+    return _get_env_or_default("SURREAL_NAMESPACE", "open_notebook")
+
+
+def get_database_name() -> str:
+    """Get configured SurrealDB database name."""
+    return _get_env_or_default("SURREAL_DATABASE", "open_notebook")
 
 
 def parse_record_ids(obj: Any) -> Any:
@@ -46,53 +68,32 @@ def parse_record_ids(obj: Any) -> Any:
     return obj
 
 
-def ensure_record_id(value: str | RecordID) -> RecordID:
+def ensure_record_id(value: Union[str, RecordID]) -> RecordID:
     """Ensure a value is a RecordID."""
     if isinstance(value, RecordID):
         return value
     return RecordID.parse(value)
 
 
-class DatabaseManager:
-    _instance = None
-    _client = None
-
-    @classmethod
-    def get_instance(cls):
-        if cls._instance is None:
-            cls._instance = cls()
-        return cls._instance
-
-    async def get_db(self) -> AsyncSurreal:
-        if self._client is None:
-            self._client = AsyncSurreal(get_database_url())
-            await self._client.connect()
-            await self._client.signin(
-                {
-                    "username": os.environ.get("SURREAL_USER", "root"),
-                    "password": get_database_password(),
-                }
-            )
-            await self._client.use(
-                os.environ.get("SURREAL_NAMESPACE", "test"),
-                os.environ.get("SURREAL_DATABASE", "test"),
-            )
-        return self._client
-
-    async def close(self) -> None:
-        if self._client:
-            await self._client.close()
-            self._client = None
-
-
 @asynccontextmanager
 async def db_connection():
-    db = await DatabaseManager.get_instance().get_db()
-    yield db
-    # We do NOT close the connection here anymore, allowing reuse.
+    db = AsyncSurreal(get_database_url())
+    await db.signin(
+        {
+            "username": os.environ.get("SURREAL_USER"),
+            "password": get_database_password(),
+        }
+    )
+    await db.use(get_database_namespace(), get_database_name())
+    try:
+        yield db
+    finally:
+        await db.close()
 
 
-async def repo_query(query_str: str, vars: dict[str, Any] | None = None) -> list[dict[str, Any]]:
+async def repo_query(
+    query_str: str, vars: Optional[Dict[str, Any]] = None
+) -> List[Dict[str, Any]]:
     """Execute a SurrealQL query and return the results"""
 
     async with db_connection() as connection:
@@ -110,12 +111,12 @@ async def repo_query(query_str: str, vars: dict[str, Any] | None = None) -> list
             raise
 
 
-async def repo_create(table: str, data: dict[str, Any]) -> dict[str, Any]:
+async def repo_create(table: str, data: Dict[str, Any]) -> Dict[str, Any]:
     """Create a new record in the specified table"""
     # Remove 'id' attribute if it exists in data
     data.pop("id", None)
-    data["created"] = datetime.now(UTC)
-    data["updated"] = datetime.now(UTC)
+    data["created"] = datetime.now(timezone.utc)
+    data["updated"] = datetime.now(timezone.utc)
     try:
         async with db_connection() as connection:
             result = parse_record_ids(await connection.insert(table, data))
@@ -132,51 +133,72 @@ async def repo_create(table: str, data: dict[str, Any]) -> dict[str, Any]:
 
 
 async def repo_relate(
-    source: str, relationship: str, target: str, data: dict[str, Any] | None = None
-) -> list[dict[str, Any]]:
+    source: Union[str, RecordID],
+    relationship: str,
+    target: Union[str, RecordID],
+    data: Optional[Dict[str, Any]] = None,
+) -> List[Dict[str, Any]]:
     """Create a relationship between two records with optional data"""
     if data is None:
         data = {}
-    query = f"RELATE {source}->{relationship}->{target} CONTENT $data;"
+    # relationship is an edge-table name, not a record value, so it can't be
+    # bound as a query parameter; validate it against an identifier allowlist
+    # instead of trusting the caller. source/target are always bound.
+    _ensure_safe_identifier(relationship, "relationship")
+    query = f"RELATE $source->{relationship}->$target CONTENT $data;"
     # logger.debug(f"Relate query: {query}")
 
     return await repo_query(
         query,
         {
+            "source": ensure_record_id(source),
+            "target": ensure_record_id(target),
             "data": data,
         },
     )
 
 
 async def repo_upsert(
-    table: str, id: str | None, data: dict[str, Any], add_timestamp: bool = False
-) -> list[dict[str, Any]]:
+    table: str, id: Optional[str], data: Dict[str, Any], add_timestamp: bool = False
+) -> List[Dict[str, Any]]:
     """Create or update a record in the specified table"""
     data.pop("id", None)
     if add_timestamp:
-        data["updated"] = datetime.now(UTC)
-    query = f"UPSERT {id if id else table} MERGE $data;"
-    return await repo_query(query, {"data": data})
+        data["updated"] = datetime.now(timezone.utc)
+    _ensure_safe_identifier(table, "table")
+    target: Union[RecordID, Table] = ensure_record_id(id) if id else Table(table)
+    query = "UPSERT $target MERGE $data;"
+    return await repo_query(query, {"target": target, "data": data})
 
 
-async def repo_update(table: str, id: str, data: dict[str, Any]) -> list[dict[str, Any]]:
+async def repo_update(
+    table: str, id: Union[str, RecordID], data: Dict[str, Any]
+) -> List[Dict[str, Any]]:
     """Update an existing record by table and id"""
     # If id already contains the table name, use it as is
     try:
-        record_id = id if isinstance(id, RecordID) or (":" in id and id.startswith(f"{table}:")) else f"{table}:{id}"
+        _ensure_safe_identifier(table, "table")
+        if isinstance(id, RecordID):
+            record_id: RecordID = id
+        elif ":" in id and id.startswith(f"{table}:"):
+            record_id = ensure_record_id(id)
+        else:
+            record_id = RecordID(table, id)
         data.pop("id", None)
         if "created" in data and isinstance(data["created"], str):
             data["created"] = datetime.fromisoformat(data["created"])
-        data["updated"] = datetime.now(UTC)
-        query = f"UPDATE {record_id} MERGE $data;"
+        data["updated"] = datetime.now(timezone.utc)
+        query = "UPDATE $target MERGE $data;"
         # logger.debug(f"Update query: {query}")
-        result = await repo_query(query, {"data": data})
+        result = await repo_query(query, {"target": record_id, "data": data})
+        # if isinstance(result, list):
+        #     return [_return_data(item) for item in result]
         return parse_record_ids(result)
     except Exception as e:
-        raise RuntimeError(f"Failed to update record: {e!s}")
+        raise RuntimeError(f"Failed to update record: {str(e)}")
 
 
-async def repo_delete(record_id: str | RecordID):
+async def repo_delete(record_id: Union[str, RecordID]):
     """Delete a record by record id"""
 
     try:
@@ -184,10 +206,12 @@ async def repo_delete(record_id: str | RecordID):
             return await connection.delete(ensure_record_id(record_id))
     except Exception as e:
         logger.exception(e)
-        raise RuntimeError(f"Failed to delete record: {e!s}")
+        raise RuntimeError(f"Failed to delete record: {str(e)}")
 
 
-async def repo_insert(table: str, data: list[dict[str, Any]], ignore_duplicates: bool = False) -> list[dict[str, Any]]:
+async def repo_insert(
+    table: str, data: List[Dict[str, Any]], ignore_duplicates: bool = False
+) -> List[Dict[str, Any]]:
     """Create a new record in the specified table"""
     try:
         async with db_connection() as connection:
@@ -199,7 +223,12 @@ async def repo_insert(table: str, data: list[dict[str, Any]], ignore_duplicates:
     except RuntimeError as e:
         if ignore_duplicates and "already contains" in str(e):
             return []
-        logger.error(str(e))
+        # Log transaction conflicts at debug level (they are expected during concurrent operations)
+        error_str = str(e).lower()
+        if "transaction" in error_str or "conflict" in error_str:
+            logger.debug(str(e))
+        else:
+            logger.error(str(e))
         raise
     except Exception as e:
         if ignore_duplicates and "already contains" in str(e):

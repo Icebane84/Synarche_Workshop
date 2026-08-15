@@ -45,7 +45,8 @@ All contribution guidelines have been consolidated into the new development docu
 
 - **Want to contribute code?** → [Contributing Guide](docs/7-DEVELOPMENT/contributing.md)
 - **Want to understand the architecture?** → [Architecture Overview](docs/7-DEVELOPMENT/architecture.md)
-- **Want to understand our design philosophy?** → [Design Principles](docs/7-DEVELOPMENT/design-principles.md)
+- **Want to understand what we're building?** → [Vision & Principles](VISION.md)
+- **Want to understand our engineering practices?** → [Design Principles](docs/7-DEVELOPMENT/design-principles.md)
 - **Are you a maintainer?** → [Maintainer Guide](docs/7-DEVELOPMENT/maintainer-guide.md)
 - **New developer?** → [Quick Start](docs/7-DEVELOPMENT/quick-start.md)
 
@@ -53,7 +54,9 @@ All contribution guidelines have been consolidated into the new development docu
 
 ## The Issue-First Workflow
 
-**TL;DR**: Create an issue first, get it assigned, THEN code.
+**TL;DR**: For anything non-trivial — features, architecture changes — create an issue first, get
+it assigned, THEN code. Small obvious fixes (typos, docs, tiny bugs) can go straight to a PR.
+Already coded something bigger? Mark the PR as draft and open the issue — triage takes 1–2 days.
 
 This prevents wasted effort and ensures your work aligns with the project.
 [See details →](docs/7-DEVELOPMENT/contributing.md)
@@ -102,4 +105,3 @@ For all contribution details, see **[docs/7-DEVELOPMENT/contributing.md](docs/7-
 Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
 Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
-- [[README.dev]]

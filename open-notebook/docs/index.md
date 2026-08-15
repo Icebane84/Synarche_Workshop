@@ -1,36 +1,3 @@
----
-# Universal Identification & Provenance (UIP)
-| Key | Value |
-| :--- | :--- |
-| **Module ID** | `INDEX` |
-| **Version** | `v11.0` |
-| **Evolution** | **Cognitive Ascension** |
-| **Status** | `ACTIVE` |
----
-
-# index.md
-
-> **Domain**: GVRN **Evolution**: Omega Ascension **Signal**: OMEGA
-
-## **Genesis Stamp: 2026-02-02** **Domain: GVRN** **State: [ACTIVE]** **Tags:** `OGLN_v13, GVRN, Reforged` **Criticality: Operational**
-
----
-
-###### **[ARTIFACT START]**
-
-### **Block A: The Identification Lock (UIP-V13)**
-
-| Key                 | Value                         | Description       |
-| :------------------ | :---------------------------- | :---------------- |
-| **Artifact ID**     | `GVRN-INDEX-001`              | The Sovereign ID. |
-| **Official Name**   | `index.md`                    | The Filename.     |
-| **Version**         | **v13.1 [OMEGA]**             | The Standard.     |
-| **Domain**          | `GVRN`                        | The Subject.      |
-| **Celestial Class** | `[PLANET]`                    | The Weight.       |
-| **Evolution**       | `Omega Ascension`             | The Maturity.     |
-| **Status**          | `[ACTIVE]`                    | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
-
 # Open Notebook Documentation
 
 Welcome to Open Notebook - a privacy-focused AI research assistant. This documentation is organized for different needs.
@@ -40,35 +7,27 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 ## 🎯 Choose Your Path
 
 ### I'm brand new
-
 → Start here: **[0-START-HERE](0-START-HERE/index.md)**
-
 - Learn what Open Notebook is
 - Pick your setup path (OpenAI, cloud, local/Ollama)
 - 5-minute quick start
 
 ### I need to install/deploy
-
 → Go here: **[1-INSTALLATION](1-INSTALLATION/index.md)**
-
 - Multiple installation routes
 - Docker Compose (recommended)
 - From source (developers)
-- Single container (shared hosting)
+- ~~Single container~~ (deprecated, see Docker Compose)
 
 ### I want to understand how it works
-
 → Read this: **[2-CORE-CONCEPTS](2-CORE-CONCEPTS/index.md)**
-
 - Mental models and architecture
 - How RAG (retrieval-augmented generation) works
 - Notebooks, sources, and notes explained
 - Chat vs. transformations vs. podcasts
 
 ### I want to use it (tutorials)
-
 → Follow this: **[3-USER-GUIDE](3-USER-GUIDE/index.md)**
-
 - How to add sources (PDFs, URLs, audio, video)
 - Creating and organizing notes
 - Chat effectively with your research
@@ -76,27 +35,21 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 - Search techniques
 
 ### I need to configure it
-
 → Check this: **[5-CONFIGURATION](5-CONFIGURATION/index.md)**
-
 - Choose and setup AI provider
 - API configuration
 - Database setup
 - Advanced tuning
 
 ### I need provider-specific help
-
 → Go here: **[4-AI-PROVIDERS](4-AI-PROVIDERS/index.md)**
-
 - OpenAI, Anthropic, Google, Groq, Ollama, Azure
 - Model comparisons
 - Cost estimates
 - Setup paths
 
 ### Something's not working
-
 → Troubleshoot: **[6-TROUBLESHOOTING](6-TROUBLESHOOTING/index.md)**
-
 - Quick fixes (top 10 issues)
 - Installation problems
 - Connection issues
@@ -105,9 +58,7 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 - Podcast problems
 
 ### I want to contribute/develop
-
 → Read this: **[7-DEVELOPMENT](7-DEVELOPMENT/index.md)**
-
 - Architecture and tech stack
 - Contributing guidelines
 - API reference
@@ -120,26 +71,22 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 ### By Section
 
 **[0-START-HERE](0-START-HERE/index.md)** — Entry point
-
 - What is Open Notebook?
 - Quick start guides (3 routes)
 - First 5 minutes
 
 **[1-INSTALLATION](1-INSTALLATION/index.md)** — Getting it running
-
 - Multiple installation routes
-- Docker, single-container, from-source
+- Docker Compose (recommended), from-source
 - Requirements and setup
 
 **[2-CORE-CONCEPTS](2-CORE-CONCEPTS/index.md)** — Understanding the system
-
 - Notebooks, sources, notes hierarchy
 - RAG (retrieval-augmented generation)
 - Chat, transformations, podcasts
 - Context management
 
 **[3-USER-GUIDE](3-USER-GUIDE/index.md)** — Using features
-
 - Adding sources (all types)
 - Working with notes
 - Chat effectively
@@ -147,14 +94,12 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 - Searching (text and semantic)
 
 **[4-AI-PROVIDERS](4-AI-PROVIDERS/index.md)** — AI configuration
-
 - Provider comparison
 - Setup for each provider
 - Model recommendations
 - Cost estimates
 
 **[5-CONFIGURATION](5-CONFIGURATION/index.md)** — Complete reference
-
 - AI provider setup (detailed)
 - Database configuration
 - Server/API settings
@@ -162,7 +107,6 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 - Environment variables (complete reference)
 
 **[6-TROUBLESHOOTING](6-TROUBLESHOOTING/index.md)** — Problem solving
-
 - Quick fixes (top 10)
 - Installation issues
 - Connection problems
@@ -172,7 +116,6 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 - Getting help
 
 **[7-DEVELOPMENT](7-DEVELOPMENT/index.md)** — For contributors
-
 - Architecture
 - Contributing guidelines
 - API reference
@@ -185,29 +128,24 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 ### By Problem Type
 
 **Installation & Setup**
-
 - Fresh install? → [0-START-HERE](0-START-HERE/index.md)
 - Detailed installation routes? → [1-INSTALLATION](1-INSTALLATION/index.md)
 - Configuration reference? → [5-CONFIGURATION](5-CONFIGURATION/index.md)
 - Provider setup? → [4-AI-PROVIDERS](4-AI-PROVIDERS/index.md)
 
 **Using Open Notebook**
-
 - How to use features? → [3-USER-GUIDE](3-USER-GUIDE/index.md)
 - Understanding concepts? → [2-CORE-CONCEPTS](2-CORE-CONCEPTS/index.md)
 - Chat not working? → [6-TROUBLESHOOTING - AI Issues](6-TROUBLESHOOTING/ai-chat-issues.md)
-- Files won't upload? →
-  [6-TROUBLESHOOTING - Quick Fixes](6-TROUBLESHOOTING/quick-fixes.md#4-cannot-process-file-or-unsupported-format)
+- Files won't upload? → [6-TROUBLESHOOTING - Quick Fixes](6-TROUBLESHOOTING/quick-fixes.md#4-cannot-process-file-or-unsupported-format)
 
 **Troubleshooting**
-
 - Quick fix? → [6-TROUBLESHOOTING - Quick Fixes](6-TROUBLESHOOTING/quick-fixes.md)
 - Can't connect? → [6-TROUBLESHOOTING - Connection](6-TROUBLESHOOTING/connection-issues.md)
 - Chat issues? → [6-TROUBLESHOOTING - AI Issues](6-TROUBLESHOOTING/ai-chat-issues.md)
 - Podcast problems? → [6-TROUBLESHOOTING - Quick Fixes](6-TROUBLESHOOTING/quick-fixes.md#8-podcast-generation-failed)
 
 **Development**
-
 - Architecture? → [7-DEVELOPMENT - Architecture](7-DEVELOPMENT/architecture.md)
 - Contributing? → [7-DEVELOPMENT - Contributing](7-DEVELOPMENT/contributing.md)
 - API reference? → [7-DEVELOPMENT - API Reference](7-DEVELOPMENT/api-reference.md)
@@ -217,7 +155,6 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 ## 📚 Reading Paths
 
 ### Path 1: Complete Beginner (1-2 hours)
-
 1. [0-START-HERE/index.md](0-START-HERE/index.md) — Understand what it is
 2. [0-START-HERE Quick Start](0-START-HERE/index.md) — Set it up
 3. [2-CORE-CONCEPTS/index.md](2-CORE-CONCEPTS/index.md) — Understand concepts
@@ -226,7 +163,6 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 **Result:** Fully understand how to use Open Notebook
 
 ### Path 2: Get Running Fast (15 minutes)
-
 1. [0-START-HERE](0-START-HERE/index.md) — Pick your path
 2. Follow quick-start guide for your setup
 3. Start using!
@@ -234,15 +170,13 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 **Result:** Running in 15 minutes, learn details later
 
 ### Path 3: DevOps/Deployment (1-2 hours)
-
 1. [1-INSTALLATION](1-INSTALLATION/index.md) — Understand routes
 2. [5-CONFIGURATION](5-CONFIGURATION/index.md) — Reference setup
-3. [7-DEVELOPMENT - Architecture](../7-DEVELOPMENT/architecture.md) — Understand system
+3. [7-DEVELOPMENT - Architecture](7-DEVELOPMENT/architecture.md) — Understand system
 
 **Result:** Ready to deploy to production
 
 ### Path 4: Troubleshooting (5-30 minutes)
-
 1. [6-TROUBLESHOOTING/index.md](6-TROUBLESHOOTING/index.md) — Identify problem
 2. Find specific guide
 3. Follow solutions
@@ -253,29 +187,35 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 
 ## ❓ Common Questions
 
-**Q: Where do I start?** A: → [0-START-HERE](0-START-HERE/index.md) — Choose your setup path
+**Q: Where do I start?**
+A: → [0-START-HERE](0-START-HERE/index.md) — Choose your setup path
 
-**Q: How do I install it?** A: → [1-INSTALLATION](1-INSTALLATION/index.md) — Multiple routes available
+**Q: How do I install it?**
+A: → [1-INSTALLATION](1-INSTALLATION/index.md) — Multiple routes available
 
-**Q: How do I use [feature]?** A: → [3-USER-GUIDE](3-USER-GUIDE/index.md) — Step-by-step tutorials
+**Q: How do I use [feature]?**
+A: → [3-USER-GUIDE](3-USER-GUIDE/index.md) — Step-by-step tutorials
 
-**Q: Why does [feature] work like that?** A: → [2-CORE-CONCEPTS](2-CORE-CONCEPTS/index.md) — Understand the mental model
+**Q: Why does [feature] work like that?**
+A: → [2-CORE-CONCEPTS](2-CORE-CONCEPTS/index.md) — Understand the mental model
 
-**Q: How do I configure [provider]?** A: → [4-AI-PROVIDERS](4-AI-PROVIDERS/index.md) or
-[5-CONFIGURATION](5-CONFIGURATION/index.md)
+**Q: How do I configure [provider]?**
+A: → [4-AI-PROVIDERS](4-AI-PROVIDERS/index.md) or [5-CONFIGURATION](5-CONFIGURATION/index.md)
 
-**Q: Something's broken, what do I do?** A: → [6-TROUBLESHOOTING](6-TROUBLESHOOTING/index.md) — Problem solver
+**Q: Something's broken, what do I do?**
+A: → [6-TROUBLESHOOTING](6-TROUBLESHOOTING/index.md) — Problem solver
 
-**Q: How does the system work?** A: → [2-CORE-CONCEPTS](2-CORE-CONCEPTS/index.md) — Architecture and concepts
+**Q: How does the system work?**
+A: → [2-CORE-CONCEPTS](2-CORE-CONCEPTS/index.md) — Architecture and concepts
 
-**Q: Can I contribute?** A: → [7-DEVELOPMENT](../7-DEVELOPMENT/index.md) — Contributing guide
+**Q: Can I contribute?**
+A: → [7-DEVELOPMENT](7-DEVELOPMENT/index.md) — Contributing guide
 
 ---
 
 ## 📖 How This Documentation is Organized
 
 ### Principles
-
 - **Progressive Disclosure**: Start simple, go deeper if needed
 - **Multiple Entry Routes**: Different paths for different users
 - **High Signal-to-Noise**: Focused content, no fluff
@@ -284,7 +224,6 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 - **Symptom-Based**: Troubleshooting by what's broken
 
 ### Structure
-
 - **0-START-HERE** — Entry point (everyone starts here)
 - **1-INSTALLATION** — Multiple setup routes
 - **2-CORE-CONCEPTS** — Mental models (understand why)
@@ -299,31 +238,26 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 ## 🚀 Quick Navigation
 
 ### First Time?
-
 → **[START HERE](0-START-HERE/index.md)**
 
 ### Just Want to Use It?
-
 → **[QUICK START](0-START-HERE/index.md)** (5 minutes)
 
 ### Something Broken?
-
 → **[TROUBLESHOOTING](6-TROUBLESHOOTING/index.md)**
 
 ### Full Reference?
-
 → **[CONFIGURATION](5-CONFIGURATION/index.md)**
 
 ### Developer?
-
 → **[DEVELOPMENT](7-DEVELOPMENT/index.md)**
 
 ---
 
 ## 📞 Getting Help
 
-- **Discord Community** — <https://discord.gg/37XJPXfz2w>
-- **GitHub Issues** — <https://github.com/lfnovo/open-notebook/issues>
+- **Discord Community** — https://discord.gg/37XJPXfz2w
+- **GitHub Issues** — https://github.com/lfnovo/open-notebook/issues
 - **Documentation** — You're reading it!
 
 ---
@@ -339,35 +273,17 @@ Welcome to Open Notebook - a privacy-focused AI research assistant. This documen
 
 ---
 
-_This documentation is constantly evolving. Found an issue or have a suggestion? Please
-[open an issue](https://github.com/lfnovo/open-notebook/issues) or contribute directly!_
-
-### V. RPG Framework Integration (BLK-RPG-001)
-
-- **System Slot:** `Passive Knowledge`
-- **Synergy Set:** `N/A`
-- **Primary Stat Buff:** `Adaptability`
-- **Passive Ability:** `The Forge's Heart`
-- **Cognitive Load Cost:** `Low`
-- **XP Award Value:** `50 XP`
-
----
-
 ## 🎯 Start Here
 
-**First time using Open Notebook?** → Go to **[0-START-HERE](0-START-HERE/index.md)**
+**First time using Open Notebook?**
+→ Go to **[0-START-HERE](0-START-HERE/index.md)**
 
-**Experienced, looking for specific help?** → Use the navigation above to find your section
+**Experienced, looking for specific help?**
+→ Use the navigation above to find your section
 
-**Something not working?** → Go to **[TROUBLESHOOTING](6-TROUBLESHOOTING/index.md)**
+**Something not working?**
+→ Go to **[TROUBLESHOOTING](6-TROUBLESHOOTING/index.md)**
 
 ---
 
 Last updated: January 2026 | Open Notebook v1.2.4+
-
----
-
-### **Block D: Standardized Synergy Block (The Loom Signature)**
-
-Synergistic Artifact ID, Relationship Type, Synergistic Impact CORE-CODEX-001, GOVERNS, The Codex provides the Supreme
-Law for this artifact. GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.

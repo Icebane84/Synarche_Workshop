@@ -15,6 +15,7 @@ description: "Patterns and best practices for interacting with the InsForge back
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 # 🏗️ InsForge Frontend SDK Skill

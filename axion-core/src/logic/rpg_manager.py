@@ -48,7 +48,8 @@ import json
 import os
 import sqlite3
 from datetime import datetime
-from typing import Any, TypedDict
+from typing import Any, Optional, TypedDict
+
 from dotenv import load_dotenv
 
 try:
@@ -112,18 +113,18 @@ class RPGManager:
 
         # Initialize Supabase client if configured
         self.use_supabase: bool = False
-        self.supabase_client: Any = None
+        self.supabase_client: Optional[Any] = None
 
         if _SUPABASE_AVAILABLE:
-            url = os.environ.get("SUPABASE_URL")
-            key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+            url = os.environ.get("SUPABASE_URL", "")
+            key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
             if url and key and "YOUR-SERVICE-ROLE-KEY" not in key and "your-supabase" not in key:
                 try:
                     self.supabase_client = create_client(url, key)
                     self.use_supabase = True
                     print(f"[RPG] Supabase remote connection active for: {url}")
-                except Exception as e:
-                    print(f"[RPG] Failed to initialize Supabase client: {e}")
+                except Exception as exc:
+                    print(f"[RPG] Failed to initialize Supabase client: {exc}")
 
     def _init_sqlite_db(self) -> None:
         """Initializes the local SQLite database schema if missing."""

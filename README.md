@@ -4,6 +4,8 @@ Welcome to the **Synarche Sovereign Workspace**, the digital overplane for the O
 
 ## 🏛️ Block A: Identification Lock
 
+---
+
 | Key                 | Value                |
 | :------------------ | :------------------- |
 | **Workspace ID**    | `SYNC.ROOT.Entryway` |
@@ -15,19 +17,27 @@ Welcome to the **Synarche Sovereign Workspace**, the digital overplane for the O
 
 ## 🛰️ SOVEREIGN COMMAND CENTER (Antigravity HUD)
 
+---
+
 The Synarche is optimized for **Google Antigravity** navigation. Use the following `@mentions` and `/workflows` to cross-reference the OMEGA substrate.
 
 ## 🕹️ Frequent `@mentions`
+
+---
 
 | Artifact            | Antigravity Anchor                   | Domain          |
 | :------------------ | :----------------------------------- | :-------------- |
 | **Sovereign Rules** | `@[GEMINI.md]`                       | Rule Gateway    |
 | **Active Mission**  | `@[task.md]`                         | Current Phase   |
 | **Agent Roster**    | `@[AGENTS.md]`                       | Specialist List |
-| **Core Roadmap**    | `@[ARCHITECTURE.md]`                 | Unified View    |
+| **CORE Roadmap**    | `@[ARCHITECTURE.md]`                 | Unified View    |
 | **Skills Registry** | `@[README.md]` (in `.agent/skills/`) | Capabilities    |
 
-### 🚀 Active `/workflows`
+---
+
+## 🚀 Active `/workflows`
+
+---
 
 | Command   | Trigger File                          | Purpose                                      |
 | :-------- | :------------------------------------ | :------------------------------------------- |
@@ -38,6 +48,8 @@ The Synarche is optimized for **Google Antigravity** navigation. Use the followi
 ---
 
 ## 🧭 AGENTIC ONBOARDING (Primary Protocol)
+
+---
 
 All agents entering the Synarche MUST execute the following initialization cycle:
 
@@ -50,44 +62,56 @@ All agents entering the Synarche MUST execute the following initialization cycle
 
 ## 🗺️ Logical Domains
 
+---
+
 The workspace is organized into five primary sovereign domains:
 
-1. **🧠 THE MIND (`.agent/`)**: Core agentic rules, skills, and orchestrations.
-   - [Architecture Index](.agent/ARCHITECTURE.md)
-   - [Substrate Rules](.agent/substrate/README.md)
-2. **📜 THE LAW (`_governance/`)**: The protocols, registries, and architecture blueprints.
-   - [Governance Index](_governance/README.md)
-   - [Master Registry](_governance/01_Registries/GVRN.Master.Registry.yaml)
-3. **⚙️ THE ENGINE (`axion-core/`)**: Active implementation logic and runtime scripts.
-   - [Engine Index](axion-core/README.md)
-4. **🧪 THE LAB (`nova_forge/`)**: Experimental and prototyping laboratory.
-   - [Forge Index](nova_forge/README.md)
-5. **📖 THE NARRATIVE (`where_light_fades/`)**: Strategic narrative and creative development.
+1. **🧠 THE MIND (`.agent/`)**: CORE agentic rules, skills, and orchestrations.
+    * [Architecture Index](.agent/ARCHITECTURE.md)
+    * [Substrate Rules](.agent/substrate/README.md) @[GEMINI.md]
+    * [Agent Roster](.agent/AGENTS.md)
+
+---
+
+1. **📜 THE LAW (`_governance/`)**: The protocols, registries, and architecture blueprints.
+    * [Governance Index](_governance/README.md)
+    * [Master Registry](_governance/01_Registries/GVRN.Master.Registry.yaml)
+2. **⚙️ THE ENGINE (`axion-core/`)**: Active implementation logic and runtime scripts.
+    * [Engine Index](axion-core/README.md)
+3. **🧪 THE LAB (`nova_forge/`)**: Experimental and prototyping laboratory.
+    * [Forge Index](nova_forge/README.md)
+4. **📖 THE NARRATIVE (`where_light_fades/`)**: Strategic narrative and creative development.
 
 ---
 
 ## 📂 Sovereign Domain Inventories (Zero Entropy)
 
+---
+
 ### 📜 THE LAW ([\_governance/](_governance/README.md))
 
-- **`00_Codex/`**: The heart of the system (Phoenix Law).
-- **`01_Registries/`**: Master Inventory and Artifact registries.
-- **`03_AvatarSuite/`**: Avatar Protocol & Sovereign Masks.
-- **`04_Finalization/`**: The Canonization Gate.
-- **`05_Assembler/`**: The Assembly Engine.
-- **`06_Learning/`**: PERSISTENCE: Session Shards and Cognitive Gems.
-- **`07_Canonizer/`**: The Sealing Protocol.
-- **`09_Link/`**: The Link Subsystem (Edge Taxonomy & Reciprocity).
-- **`10_Governance/`**: Active HUD and Governance nodes.
-- **`11_Evolution/`**: EVOLUTION: The AI Self-Training Framework (AISTF).
-- **`20_Architecture/`**: System blueprints (UMB/ARCH).
+---
 
-### ⚙️ THE ENGINE ([axion-core/](axion-core/README.md))
+* **`00_Codex/`**: The heart of the system (Phoenix Law).
+* **`01_Registries/`**: Master Inventory and Artifact registries.
+* **`03_AvatarSuite/`**: Avatar Protocol & Sovereign Masks.
+* **`04_Finalization/`**: The Canonization Gate.
+* **`05_Assembler/`**: The Assembly Engine.
+* **`06_Learning/`**: PERSISTENCE: Session Shards and Cognitive Gems.
+* **`07_Canonizer/`**: The Sealing Protocol.
+* **`09_Link/`**: The Link Subsystem (Edge Taxonomy & Reciprocity).
+* **`10_Governance/`**: Active HUD and Governance nodes.
+* **`11_Evolution/`**: EVOLUTION: The AI Self-Training Framework (AISTF).
+* **`20_Architecture/`**: System blueprints (UMB/ARCH).
 
-- **`src/`**: Primary logic substrate.
-- **`forge/`**: Cognitive engines (Evolution, CSE, Transclusion).
-- **`scripts/`**: Maintenance and deployment utilities.
-- **Verification**: `tests/`, `tools/`
+### ⚙️ THE ENGINE ([axion-CORE/](axion-core/README.md))
+
+---
+
+* **`src/`**: Primary logic substrate.
+* **`forge/`**: Cognitive engines (Evolution, CSE, Transclusion).
+* **`scripts/`**: Maintenance and deployment utilities.
+* **Verification**: `tests/`, `tools/`
 
 ---
 

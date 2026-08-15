@@ -21,3 +21,7 @@
 ---
 
 `[PLAN-REGISTRY] ID: GVRN.SOUL.04.REGISTRY VER: v15.0 [OMEGA] STATUS: CANONIZED`
+
+## Reciprocal Links
+
+- [PLAN-soul-forging.md](../PLAN-soul-forging.md)

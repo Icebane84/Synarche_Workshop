@@ -12,6 +12,7 @@
 | **Relations**     | `REF: GVRN.Registry.Master` | The Network.      |
 
 
+
 ---
 
 ## 1. THE 5-LAYER MEMORY MODEL

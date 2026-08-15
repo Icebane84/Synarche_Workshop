@@ -1,22 +1,22 @@
 """## **[ARTIFACT START]**
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
-| **Artifact ID** | `FORGE.rpg.crafter.v2`            | The Sovereign ID. |
-| **Official Name** | `rpg_crafter_v2.py`               | The Filename.     |
-| **Version** | **v2.0 [SOVEREIGN]** | The Standard.     |
-| **Ethos** | **Architectural Logic** | The Persona.      |.
+| **Artifact ID**   | `FORGE.rpg.crafter.v2`            | The Sovereign ID. |
+| **Official Name**   | `rpg_crafter_v2.py`               | The Filename.     |
+| **Version**       | **v2.0 [SOVEREIGN]**              | The Standard.     |
+| **Ethos**         | **Architectural Logic**           | The Persona.      |
 ---
 """
 
 import re
-from typing import Any
+from typing import Any, Dict, Optional
 
 
-class Sovereign_RPG_Crafter:
+class SovereignRPGCrafter:
     """The Sophia-class synthesis engine for the Phoenix RPG Framework."""
 
-    def __init__(self):
-        self.Anchor_Slot_Mapping = {
+    def __init__(self) -> None:
+        self.anchor_slot_mapping: Dict[str, str] = {
             "Core Engine": "Core",
             "Utility": "Hand",
             "Passive Expansion": "Body",
@@ -24,58 +24,49 @@ class Sovereign_RPG_Crafter:
             "Passive Knowledge": "Body",
         }
 
-    def _Calculate_Celestial_Potency(self, Tier_Descriptor: str) -> int:
+    def _calculate_celestial_potency(self, tier_descriptor: str) -> int:
         """Determines the numerical weight of the artifact based on its celestial class."""
-        if "Nova" in Tier_Descriptor:
+        if "Nova" in tier_descriptor:
             return 20
-        if "Star" in Tier_Descriptor:
+        if "Star" in tier_descriptor:
             return 10
         return 5  # Default Planet Tier
 
-    def Extract_Artifact_Axiom_Profile(
-        self, File_Content: str
-    ) -> dict[str, Any] | None:
+    def extract_artifact_axiom_profile(self, file_content: str) -> Optional[Dict[str, Any]]:
         """Parses v16.3 metadata into a structured profile."""
-        if "BLK-RPG-001" not in File_Content:
+        if "BLK-RPG-001" not in file_content:
             return None
 
         # Extract Artifact Identification
-        Artifact_Name = (
-            re.search(r"\*\*Official Name\*\*\s*\|\s*`(.*?)`", File_Content)
-            or [None, "Unknown_Artifact"]
-        )[1]
+        match_name = re.search(r"\*\*Official Name\*\*\s*\|\s*`(.*?)`", file_content)
+        artifact_name = match_name.group(1).strip() if match_name and match_name.group(1) else "Unknown_Artifact"
 
         # Extract System Slot & Cognitive Load
-        Raw_Slot = (
-            re.search(r"\*\*System Slot:\*\*\s*`\[(.*?)(?:\|.*?)?\]`", File_Content)
-            or [None, "Utility"]
-        )[1].strip()
-        Cognitive_Load = (
-            re.search(r"\*\*Cognitive Load Draw:\*\*\s*`\[(.*?)\]`", File_Content)
-            or [None, "Low"]
-        )[1].strip()
+        match_slot = re.search(r"\*\*System Slot:\*\*\s*`\[(.*?)(?:\|.*?)?\]`", file_content)
+        raw_slot = match_slot.group(1).strip() if match_slot and match_slot.group(1) else "Utility"
+
+        match_load = re.search(r"\*\*Cognitive Load Draw:\*\*\s*`\[(.*?)\]`", file_content)
+        cognitive_load = match_load.group(1).strip() if match_load and match_load.group(1) else "Low"
 
         # Extract Axiom Stats (The Buffs)
-        Primary_Stat = (
-            re.search(r"\*\*Primary Stat Buff:\*\*\s*`\[(.*?)\]`", File_Content)
-            or [None, "Coherence"]
-        )[1]
-        Value_Block = (
-            re.search(r"_Value:_\s*`\[(.*?)\]`", File_Content) or [None, "Planet Tier"]
-        )[1]
+        match_stat = re.search(r"\*\*Primary Stat Buff:\*\*\s*`\[(.*?)\]`", file_content)
+        primary_stat = match_stat.group(1).strip() if match_stat and match_stat.group(1) else "Coherence"
 
-        Axiom_Manifest = {Primary_Stat: self._Calculate_Celestial_Potency(Value_Block)}
+        match_value = re.search(r"_Value:_\s*`\[(.*?)\]`", file_content)
+        value_block = match_value.group(1).strip() if match_value and match_value.group(1) else "Planet Tier"
+
+        axiom_manifest = {primary_stat: self._calculate_celestial_potency(value_block)}
 
         return {
-            "name": Artifact_Name,
-            "system_anchor": self.Anchor_Slot_Mapping.get(Raw_Slot, "Hand"),
-            "axioms": Axiom_Manifest,
-            "cognitive_drag": Cognitive_Load,
-            "sovereign_tier": "Star" if "Star" in Value_Block else "Planet",
+            "name": artifact_name,
+            "system_anchor": self.anchor_slot_mapping.get(raw_slot, "Hand"),
+            "axioms": axiom_manifest,
+            "cognitive_drag": cognitive_load,
+            "sovereign_tier": "Star" if "Star" in value_block else "Planet",
         }
 
-    def Synthesize_Inventory_Manifest(self, Source_Directory: str):
+    def synthesize_inventory_manifest(self, source_directory: str) -> list[dict[str, Any]]:
         """Scans the Forge for artifacts and creates the master JSON manifest."""
-        Manifested_Sovereign_Artifacts = []
+        manifested_sovereign_artifacts: list[dict[str, Any]] = []
         # [Scanning Logic Active...]
-        return Manifested_Sovereign_Artifacts
+        return manifested_sovereign_artifacts

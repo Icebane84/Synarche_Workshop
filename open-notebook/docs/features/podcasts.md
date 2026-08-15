@@ -83,3 +83,8 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
     - _Function:_ Scripting -> Synthesis -> Mixing pipeline.
 
 **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [ADR-004-background-workers.md](../7-DEVELOPMENT/decisions/ADR-004-background-workers.md)
+- [AGENTS.md](../../open_notebook/AGENTS.md)

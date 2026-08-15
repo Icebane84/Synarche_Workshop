@@ -17,6 +17,7 @@ import {
     Swords,
     ScrollText,
     Bell,
+    Code2,
 } from 'lucide-react';
 import { useUIStore } from '../store/uiStore';
 import { useTheme } from '../hooks/useTheme';
@@ -70,6 +71,7 @@ const navGroups = [
         title: 'Command',
         items: [
             { name: 'RPG Interface', path: '/command/rpg', icon: Swords },
+            { name: 'C++ Unreal Studio', path: '/command/cpp-forge', icon: Code2 },
         ],
     },
     {

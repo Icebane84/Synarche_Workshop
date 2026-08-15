@@ -5,6 +5,10 @@ from api.command_service import CommandService
 from api.models import EmbedRequest, EmbedResponse
 from open_notebook.ai.models import model_manager
 from open_notebook.domain.notebook import Note, Source
+from open_notebook.exceptions import (
+    NotFoundError,
+    OpenNotebookError,
+)
 
 router = APIRouter()
 
@@ -12,15 +16,6 @@ router = APIRouter()
 @router.post("/embed", response_model=EmbedResponse)
 async def embed_content(embed_request: EmbedRequest):
     """Embed content for vector search."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         # Check if embedding model is available
         if not await model_manager.get_embedding_model():
@@ -34,7 +29,9 @@ async def embed_content(embed_request: EmbedRequest):
 
         # Validate item type
         if item_type not in ["source", "note"]:
-            raise HTTPException(status_code=400, detail="Item type must be either 'source' or 'note'")
+            raise HTTPException(
+                status_code=400, detail="Item type must be either 'source' or 'note'"
+            )
 
         # Branch based on processing mode
         if embed_request.async_processing:
@@ -43,7 +40,7 @@ async def embed_content(embed_request: EmbedRequest):
 
             try:
                 # Import commands to ensure they're registered
-                import commands.embedding_commands
+                import commands.embedding_commands  # noqa: F401
 
                 # Submit type-specific command
                 if item_type == "source":
@@ -71,7 +68,9 @@ async def embed_content(embed_request: EmbedRequest):
 
             except Exception as e:
                 logger.error(f"Failed to submit async embedding command: {e}")
-                raise HTTPException(status_code=500, detail=f"Failed to queue embedding: {e!s}")
+                raise HTTPException(
+                    status_code=500, detail=f"Failed to queue embedding: {str(e)}"
+                )
 
         else:
             # DOMAIN MODEL PATH: Submit job via domain model convenience methods
@@ -83,8 +82,6 @@ async def embed_content(embed_request: EmbedRequest):
             # Get the item and submit embedding job
             if item_type == "source":
                 source_item = await Source.get(item_id)
-                if not source_item:
-                    raise HTTPException(status_code=404, detail="Source not found")
 
                 # Submit embed_source job (returns command_id for tracking)
                 command_id = await source_item.vectorize()
@@ -92,11 +89,19 @@ async def embed_content(embed_request: EmbedRequest):
 
             elif item_type == "note":
                 note_item = await Note.get(item_id)
-                if not note_item:
-                    raise HTTPException(status_code=404, detail="Note not found")
 
-                # Note.save() internally submits embed_note command and returns command_id
+                # Note.save() internally submits embed_note command and
+                # returns command_id. Unlike Source.vectorize(), save()'s
+                # embed submission is best-effort (a hiccup there shouldn't
+                # fail an otherwise-successful note save) - but this
+                # endpoint's whole point is submitting the embedding job,
+                # so a submission failure here (content present, no
+                # command_id) must still surface as a failure.
                 command_id = await note_item.save()
+                if not command_id and note_item.content and note_item.content.strip():
+                    raise HTTPException(
+                        status_code=500, detail="Failed to submit note embedding job"
+                    )
                 message = "Note embedding job submitted"
 
             return EmbedResponse(
@@ -109,6 +114,16 @@ async def embed_content(embed_request: EmbedRequest):
 
     except HTTPException:
         raise
+    except NotFoundError:
+        raise HTTPException(
+            status_code=404, detail=f"{embed_request.item_type} not found"
+        )
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error embedding {embed_request.item_type} {embed_request.item_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error embedding content: {e!s}")
+        logger.error(
+            f"Error embedding {embed_request.item_type} {embed_request.item_id}: {str(e)}"
+        )
+        raise HTTPException(
+            status_code=500, detail=f"Error embedding content: {str(e)}"
+        )

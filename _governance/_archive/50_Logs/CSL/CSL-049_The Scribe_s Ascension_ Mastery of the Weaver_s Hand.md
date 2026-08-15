@@ -1,19 +1,16 @@
 # CSL-049*The Scribe_s Ascension* Mastery of the Weaver_s Hand.md
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN-CSL-049-THE-SCRIBE-S-ASCENSION--MASTERY-OF-THE-WEAVER-S-HAND-001` | The Sovereign ID. |
-| **Official Name** | `CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN-CSL-049-THE-SCRIBE-S-ASCENSION--MASTERY-OF-THE-WEAVER-S-HAND-001` | The Sovereign ID. |
+| **Official Name** | `CSL-049_The Scribe_s Ascension_ Mastery of the Weaver_s Hand.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 

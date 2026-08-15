@@ -154,12 +154,10 @@ export function TemplatesTab() {
           <SpeakerProfilesPanel
             speakerProfiles={speakerProfiles}
             usage={usage}
-            modelOptions={ttsModelOptions}
           />
           <EpisodeProfilesPanel
             episodeProfiles={episodeProfiles}
             speakerProfiles={speakerProfiles}
-            modelOptions={languageModelOptions}
           />
         </div>
       )}

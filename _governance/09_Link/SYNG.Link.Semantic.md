@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `SYNG.Link.Semantic` | The Sovereign ID. |
-| **Official Name** | `SYNG.Link.Semantic.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.Link.Semantic` | The Sovereign ID. |
+| **Official Name** | `SYNG.Link.Semantic.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 
@@ -91,7 +88,12 @@ You cannot link what you cannot define. This artifact provides the controlled vo
 
 ### **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: SYNG.Link.Semantic VER: v15.0 [OMEGA] DOMAIN: LINK STATUS: [CANONIZED] TS: 2026-03-28 HASH: 3ac233640285a258`
+`
+
+## Reciprocal Links
+
+- [SYNG.Link.Quad.md](SYNG.Link.Quad.md)
+[OMNI-ARTIFACT-ANCHOR] ID: SYNG.Link.Semantic VER: v15.0 [OMEGA] DOMAIN: LINK STATUS: [CANONIZED] TS: 2026-03-28 HASH: 3ac233640285a258`
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact

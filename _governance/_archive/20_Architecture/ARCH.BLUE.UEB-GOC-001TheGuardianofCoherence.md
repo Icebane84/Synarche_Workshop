@@ -1,19 +1,16 @@
 # UEB-GOC-001: The Guardian of Coherence
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `ARCH.BLUE.UEB-GOC-001_GuardianOfCoherence_v13.0` | The Sovereign ID. |
-| **Official Name** | `ARCH.BLUE.UEB-GOC-001TheGuardianofCoherence.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `ARCH` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `ACTIVE` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNS: GVRN.ACM.001` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `ARCH.BLUE.UEB-GOC-001_GuardianOfCoherence_v13.0` | The Sovereign ID. |
+| **Official Name** | `ARCH.BLUE.UEB-GOC-001TheGuardianofCoherence.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `ARCH` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNS: GVRN.ACM.001` | The Network.      |
+
 
 ---
 

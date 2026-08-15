@@ -38,6 +38,7 @@ RELATION_RE = re.compile(r"(\w+):\s*([\w.-]+)", re.IGNORECASE)
 
 
 def calculate_content_hash(content: str) -> str:
+    content = content.replace("\r\n", "\n")
     # Remove Block A to isolate the "Soul" content
     match = BLOCK_A_HEADER_RE.search(content)
     if match:
@@ -58,6 +59,45 @@ def calculate_content_hash(content: str) -> str:
 
 def parse_markdown_metadata(content: str) -> dict[str, str] | None:
     meta: dict[str, str] = {}
+
+    # Check for HTML comment frontmatter <!-- artifact_anchor: ... -->
+    if "artifact_anchor:" in content:
+        try:
+            start_idx = content.find("artifact_anchor:")
+            comment_end = content.find("-->", start_idx)
+            yaml_text = content[start_idx:comment_end] if comment_end != -1 else content[start_idx:start_idx+1000]
+            frontmatter = yaml.safe_load(yaml_text)
+            if isinstance(frontmatter, dict):
+                anchor = frontmatter.get("artifact_anchor") or frontmatter
+                if isinstance(anchor, dict):
+                    aid = anchor.get("id") or anchor.get("artifact_id")
+                    if aid:
+                        meta["artifact_id"] = str(aid)
+                        meta["version"] = str(anchor.get("version", "v15.0 [OMEGA]"))
+                        meta["status"] = str(anchor.get("state", anchor.get("status", "[ACTIVE]")))
+                        meta["domain"] = str(anchor.get("domain", "GVRN"))
+                        return meta
+        except Exception:
+            pass
+
+    if content.startswith("---"):
+        try:
+            parts = content.split("---", 2)
+            if len(parts) >= 3:
+                frontmatter = yaml.safe_load(parts[1])
+                if isinstance(frontmatter, dict):
+                    anchor = frontmatter.get("artifact_anchor") or frontmatter
+                    if isinstance(anchor, dict):
+                        aid = anchor.get("id") or anchor.get("artifact_id")
+                        if aid:
+                            meta["artifact_id"] = str(aid)
+                            meta["version"] = str(anchor.get("version", "v15.0 [OMEGA]"))
+                            meta["status"] = str(anchor.get("state", anchor.get("status", "[ACTIVE]")))
+                            meta["domain"] = str(anchor.get("domain", "GVRN"))
+                            return meta
+        except Exception:
+            pass
+
     if "Block A:" in content:
         lines = content.split("\n")
         in_block = False
@@ -178,8 +218,30 @@ class GVRNLoom:
                     except Exception as e:
                         logger.warning(f"Error reading {fpath}: {e}")
 
+        # Prune registry entries for files that no longer exist on disk
+        missing_ids = [
+            aid for aid, meta in list(self.registry.items())
+            if meta.get("path") and not (WORKSPACE_ROOT / meta["path"]).exists()
+        ]
+        for aid in missing_ids:
+            logger.info(f"Pruning obsolete registry entry for missing file: {aid}")
+            del self.registry[aid]
+
+        # Ensure content_hash is updated for all registered artifacts whose files exist on disk
+        for aid, meta in self.registry.items():
+            path_str = meta.get("path")
+            if path_str:
+                fpath = WORKSPACE_ROOT / path_str
+                if fpath.exists():
+                    try:
+                        with open(fpath, encoding="utf-8") as f:
+                            content = f.read().replace("\r\n", "\n")
+                            meta["content_hash"] = calculate_content_hash(content)
+                    except Exception:
+                        pass
+
         self.save_registry()
-        logger.info(f"Sync complete. Registry updated with {found_count} artifacts.")
+        logger.info(f"Sync complete. Registry updated with {found_count} artifacts ({len(missing_ids)} obsolete pruned).")
 
     def propagate_to_workspace(self, artifact_id_filter: str | None = None) -> None:
         logger.info("Propagating Registry to Workspace (PUSH)...")
@@ -262,7 +324,7 @@ class GVRNLoom:
 
             try:
                 with open(fpath, encoding="utf-8") as f:
-                    content = f.read()
+                    content = f.read().replace("\r\n", "\n")
 
                 # 1. Integrity Hash Audit
                 current_hash = calculate_content_hash(content)

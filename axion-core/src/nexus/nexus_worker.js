@@ -16,7 +16,7 @@ artifact_anchor:
  * Persistent State Orchestrator for the Multi-Nexus.
  */
 const connections = [];
-let stateVector = {
+const stateVector = {
   themeHue: 210,
   syncCount: 0,
   lastEvent: "INITIALIZED"
@@ -80,7 +80,7 @@ onconnect = (e) => {
  * @archive/: SELT Ledger Compression Protocol
  */
 const ARCHIVE_LIMIT = 1000;
-let systemicLedger = []; // Persistent SELT Repository
+const systemicLedger = []; // Persistent SELT Repository
 
 onconnect = (e) => {
   const port = e.ports[0];

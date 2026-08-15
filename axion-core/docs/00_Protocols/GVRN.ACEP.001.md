@@ -1,19 +1,16 @@
 # AOP-ACEP-001_The Asynchronous Co-Evolution Protocol Playbook_AOP-ACEP-001TheAsynchronousCo-EvolutionProtocolPlaybook_v11.0.md
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.ACEP.001` | The Sovereign ID. |
-| **Official Name** | `GVRN.ACEP.001.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `ARCH` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `ACTIVE` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `Pending Integration` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ACEP.001` | The Sovereign ID. |
+| **Official Name** | `GVRN.ACEP.001.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `ARCH` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `Pending Integration` | The Network.      |
+
 
 ---
 

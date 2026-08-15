@@ -939,7 +939,7 @@ module.exports = [
               detail: "Multiple consecutive blank lines are not allowed.",
               fixInfo: {
                 editColumn: 1,
-                deleteCount: line.length + 1,
+                deleteCount: -1,
               },
             });
           }

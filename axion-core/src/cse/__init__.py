@@ -2,50 +2,79 @@
 artifact_anchor:
   id: CORE.INIT.001
   version: v15.0 [OMEGA]
-  provenance: '2026-05-27'
+  provenance: '2026-08-13'
   domain: CORE
   celestial_class: STAR
   tier: LOGIC
   state: ACTIVE
   ethos: SOVEREIGN_LOGIC_COMPONENT
-  relations: []
+  relations:
+    - GOVERNED_BY: CORE.Codex.Phoenix
 """
 
-"""# CSE-INIT: Coherent Synthesis Engine Module Initialization.
+"""# CSE-INIT: Coherent Synthesis Engine Module Initialization."""
 
-# I. Universal Identification & Provenance (The Vector Signature)
-| Field | Value |
-| :--- | :--- |
-| **1. Artifact ID** | `CSE-INIT` |
-| **2. Official Name** | `__init__.py` |
-| **3. Version** | **v15.0 [OMEGA]** |
-| **4. Provenance** | **Reforged: 2026-04-28** |
-| **5. Domain** | `TECH.CSE` |
-| **6. Evolution** | **Modular Harmony** |
-| **7. Celestial Class** | `[MOON]` |
-| **8. Tier** | **Operational** |
-| **9. Status (State)** | `[ACTIVE]` |
-| **10. Ethos** | **Coherent Orchestration** |
-| **11. Integrity Hash** | `[UIP-V15-LOCK]` |
-
----
-
-### **I.B. Axiom Reference**
-> "Synthesis begins with the first connection." — Axiom of CSE
-"""
-
-from .engine.engine_v2 import CoherentSynthesisEngine
+from .engine import (
+    AdaptiveOpportunityWeave,
+    CoherenceAnalysisResult,
+    CoherenceAttractorCore,
+    CoherentSynthesisEngine,
+    ConsequenceSimulationResult,
+    DissonanceSignature,
+    MethodologySelection,
+    MethodologySelectorLayer,
+    ProposedSynergyLink,
+    ReasoningArchetype,
+    ReflexiveConsequenceProjector,
+    SimulatedRisk,
+    StateVector,
+    SynergyWeaveResult,
+    TelemetryEngine,
+)
+from .guca_command import (
+    AuditCoherenceCommand,
+    ContextWeaveCommand,
+    EnactTranscendenceCommand,
+    EthicalEvaluationCommand,
+    GUCACommand,
+    GUCAExecutor,
+    OmniLogCommand,
+)
 from .loggers.selt_logger import SeltLogger
 from .managers.guca_parser import GucaParser
 from .managers.mcp_injector import McpInjector
 from .parsers.loom_parser import LoomParser
-from .validators import LawValidator
+from .validators import GovernanceEngine, GovernanceRule, GovernanceVerdict, LawValidator
 
 __all__ = [
+    "AdaptiveOpportunityWeave",
+    "AuditCoherenceCommand",
+    "CoherenceAnalysisResult",
+    "CoherenceAttractorCore",
     "CoherentSynthesisEngine",
+    "ConsequenceSimulationResult",
+    "ContextWeaveCommand",
+    "DissonanceSignature",
+    "EnactTranscendenceCommand",
+    "EthicalEvaluationCommand",
+    "GUCACommand",
+    "GUCAExecutor",
+    "GovernanceEngine",
+    "GovernanceRule",
+    "GovernanceVerdict",
     "GucaParser",
     "LawValidator",
     "LoomParser",
     "McpInjector",
+    "MethodologySelection",
+    "MethodologySelectorLayer",
+    "OmniLogCommand",
+    "ProposedSynergyLink",
+    "ReasoningArchetype",
+    "ReflexiveConsequenceProjector",
     "SeltLogger",
+    "SimulatedRisk",
+    "StateVector",
+    "SynergyWeaveResult",
+    "TelemetryEngine",
 ]

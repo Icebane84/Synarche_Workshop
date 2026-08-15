@@ -515,3 +515,7 @@ OPENAI_COMPATIBLE_BASE_URL=http://localhost:1234/v1
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+## Reciprocal Links
+
+- [reverse-proxy.md](../5-CONFIGURATION/reverse-proxy.md)

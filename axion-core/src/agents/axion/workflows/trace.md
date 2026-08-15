@@ -26,7 +26,9 @@ artifact_anchor:
 
 # trace.md
 
-## **Block A: The Identification Lock (UIP-V15)**
+## Block A: The Identification Lock (UIP-V15)
+
+---
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
@@ -37,10 +39,11 @@ artifact_anchor:
 | **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
-
 ---
 
-### **Block B: State Vector (AGP-001)**
+### Block B: State Vector (AGP-001)
+
+---
 
 | State Field   | Value    |
 | :------------ | :------- |
@@ -48,7 +51,9 @@ artifact_anchor:
 | **Resonance** | `0.9`    |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
+### Block C: Risk & Mitigation (AGP-002)
+
+---
 
 | Risk                 | Mitigation                |
 | :------------------- | :------------------------ |
@@ -59,13 +64,15 @@ artifact_anchor:
 
 ---
 
-###### **[ARTIFACT START]**
+#### [ARTIFACT START]
 
 | **Integrity Hash** | `[AUTO-GENERATED]` | The Seal. |
 
 ---
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
+### Block D: Standardized Synergy Block (The Loom Signature)
+
+---
 
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
@@ -73,6 +80,8 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 ---
 
 ## IV. Actionable Prompt Packet (APP)
+
+---
 
 | Command ID             | Action                           | Impact       |
 | :--------------------- | :------------------------------- | :----------- |
@@ -94,7 +103,7 @@ description: Trace semantic resonance and dissonance
 powershell -Command "Invoke-RestMethod -Uri 'https://rtjkhpotguwngfpvhfej.supabase.co/functions/v1/detect-dissonance' -Method Post -Headers @{ Authorization = 'Bearer sb_publishable_APS-_w0TK4EeBkvmoRu5Zw_1nEsOLiD' } -Body (Get-Content -Path '{{target}}' -Raw)"
 ```
 
-2. Analyze the resonance score and any generated quests.
+1. Analyze the resonance score and any generated quests.
 
 ---
 
@@ -103,10 +112,12 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Rosetta.Stone, INDEXES, This workflow is registered in the Rosetta Stone.
 GVRN-UEB-PCP-001, UTILIZED_BY, Synergizes with the Phoenix-Class Persona identity.
 
-###### **[ARTIFACT END]**
+### [ARTIFACT END]
 
 ---
 
-### **Block G: The Omni-Anchor (System Snapshot)**
+### Block G: The Omni-Anchor (System Snapshot)
+
+---
 
 `[OMNI-ARTIFACT-ANCHOR] ID: CORE.trace VER: v15.0 [OMEGA] DOMAIN: CORE STATUS: [SYNTHESIZED] TS: 2026-03-28 HASH: OMEGA-V15`

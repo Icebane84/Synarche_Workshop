@@ -91,4 +91,13 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
-- [[quick-fixes]]
+## Reciprocal Links
+
+- [quick-fixes.md](../6-TROUBLESHOOTING/quick-fixes.md)
+- [docker-compose.md](../1-INSTALLATION/docker-compose.md)
+- [quick-start-openai.md](../0-START-HERE/quick-start-openai.md)
+- [quick-start-local.md](../0-START-HERE/quick-start-local.md)
+- [quick-start-cloud.md](../0-START-HERE/quick-start-cloud.md)
+- [README.dev.md](../../README.dev.md)
+- [CONFIGURATION.md](../../CONFIGURATION.md)
+- [AGENTS.md](../../open_notebook/AGENTS.md)

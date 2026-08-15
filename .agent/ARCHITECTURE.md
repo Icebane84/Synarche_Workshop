@@ -26,7 +26,7 @@ II. ## 🏗️ Directory Structure
 ├── ARCHITECTURE.md          # This file (The Overplane Fusion Blueprint)
 ├── mcp_config.json          # MCP Tool configurations
 ├── README.md                # General Agent Kit Documentation
-├── GVRN.Style.Coding.md     # The Sovereign Style Guide (Supreme Law)
+├── GVRN.Style.SovereignStandard.v15.1.md # The Sovereign Style Guide (Supreme Law)
 ├── skills/                  # 60 Custom capability modules (Dev & Integrity)
 ├── workflows/               # 13 Slash command procedures
 ├── .shared/                 # Shared assets and configuration states

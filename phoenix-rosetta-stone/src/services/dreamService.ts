@@ -17,30 +17,25 @@ const DREAM_LOGS = [
     "Analyzing user interaction patterns for adaptive response..."
 ];
 
+const getRandomFloat = (): number => {
+  const array = new Uint32Array(1);
+  crypto.getRandomValues(array);
+  return array[0] / (0xffffffff + 1);
+};
+
 /**
  * Executes a single "REM Cycle" (Rapid Eye Movement).
  * This function is called periodically while the system is in the Dreaming state.
  */
 export const executeRemCycle = () => {
     const store = useCoherenceStore.getState();
-    
+
     // 1. Simulate "Thought"
-    const dreamThought = DREAM_LOGS[Math.floor(Math.random() * DREAM_LOGS.length)];
-    
+    const dreamThought = DREAM_LOGS[Math.floor(getRandomFloat() * DREAM_LOGS.length)];
+
     // 2. Apply Benefit (Garbage Collection Reward)
-    // Small chance to gain a tiny amount of XP or Stardust for "passive processing"
-    if (Math.random() > 0.8) {
+    if (getRandomFloat() > 0.8) {
         store.addNovaSpark(`[DREAM] ${dreamThought} (Coherence Stabilized)`);
         store.pulse(); // Visual feedback
-    } else {
-        // Just a background thought
-        // We avoid spamming the main Nova Spark log too much, maybe just console for now
-        // or a dedicated "Dream Log" in the future.
-        // For now, we'll just log to console to show activity.
     }
-    
-    // 3. Optimize Coherence
-    // Dreaming slowly regenerates Coherence Index towards 1.0
-    // This logic is handled in the `decay` function of the store, 
-    // but we can trigger a manual 'optimization' pulse here.
 };

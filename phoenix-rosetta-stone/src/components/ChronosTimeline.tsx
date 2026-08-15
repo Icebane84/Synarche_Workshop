@@ -282,4 +282,4 @@ const ChronosTimeline: React.FC<ChronosTimelineProps> = ({ tasks }) => {
     );
 };
 
-export default ChronosTimeline;
+export default React.memo(ChronosTimeline);

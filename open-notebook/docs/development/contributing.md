@@ -789,8 +789,11 @@ Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
-- [[code-standards]]
+## Reciprocal Links
 
-- [[development-setup]]
-
-- [[testing]]
+- [maintainer-guide.md](../7-DEVELOPMENT/maintainer-guide.md)
+- [development-setup.md](../7-DEVELOPMENT/development-setup.md)
+- [code-standards.md](../7-DEVELOPMENT/code-standards.md)
+- [from-source.md](../1-INSTALLATION/from-source.md)
+- [README.dev.md](../../README.dev.md)
+- [MAINTAINER_GUIDE.md](../../MAINTAINER_GUIDE.md)

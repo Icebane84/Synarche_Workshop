@@ -12,6 +12,7 @@
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 # 🛠️ Sovereign Skills Registry

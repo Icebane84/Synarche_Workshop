@@ -9,6 +9,12 @@ interface CellularCanvasProps {
   setLogs: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
+const getRandomFloat = (): number => {
+  const array = new Uint32Array(1);
+  crypto.getRandomValues(array);
+  return array[0] / (0xffffffff + 1);
+};
+
 export const CellularCanvas: React.FC<CellularCanvasProps> = ({
   stats,
   setStats,
@@ -29,8 +35,8 @@ export const CellularCanvas: React.FC<CellularCanvasProps> = ({
   // Particle Spawner
   const spawnParticleSparks = (x: number, y: number, color: string, count = 12) => {
     for (let i = 0; i < count; i++) {
-      const angle = Math.random() * Math.PI * 2;
-      const speed = Math.random() * 4 + 1;
+      const angle = getRandomFloat() * Math.PI * 2;
+      const speed = getRandomFloat() * 4 + 1;
       particlesRef.current.push({
         x,
         y,
@@ -38,8 +44,8 @@ export const CellularCanvas: React.FC<CellularCanvasProps> = ({
         vy: Math.sin(angle) * speed,
         color,
         life: 0,
-        maxLife: Math.random() * 20 + 15,
-        size: Math.random() * 3 + 2,
+        maxLife: getRandomFloat() * 20 + 15,
+        size: getRandomFloat() * 3 + 2,
       });
     }
   };
@@ -49,11 +55,11 @@ export const CellularCanvas: React.FC<CellularCanvasProps> = ({
     const nutArr: Nutrient[] = [];
     for (let i = 0; i < 25; i++) {
       nutArr.push({
-        x: Math.random() * 600,
-        y: Math.random() * 400,
-        size: Math.random() * 4 + 3,
-        color: Math.random() > 0.3 ? "#00f0ff" : Math.random() > 0.5 ? "#a855f7" : "#f59e0b",
-        type: Math.random() > 0.3 ? "amino" : Math.random() > 0.5 ? "lipid" : "mutagen",
+        x: getRandomFloat() * 600,
+        y: getRandomFloat() * 400,
+        size: getRandomFloat() * 4 + 3,
+        color: getRandomFloat() > 0.3 ? "#00f0ff" : getRandomFloat() > 0.5 ? "#a855f7" : "#f59e0b",
+        type: getRandomFloat() > 0.3 ? "amino" : getRandomFloat() > 0.5 ? "lipid" : "mutagen",
       });
     }
     nutrientsRef.current = nutArr;
@@ -101,8 +107,8 @@ export const CellularCanvas: React.FC<CellularCanvasProps> = ({
 
       ctx.save();
       if (shakeRef.current > 0) {
-        const dx = (Math.random() - 0.5) * shakeRef.current;
-        const dy = (Math.random() - 0.5) * shakeRef.current;
+        const dx = (getRandomFloat() - 0.5) * shakeRef.current;
+        const dy = (getRandomFloat() - 0.5) * shakeRef.current;
         ctx.translate(dx, dy);
         shakeRef.current *= 0.85;
         if (shakeRef.current < 0.5) shakeRef.current = 0;
@@ -165,8 +171,8 @@ export const CellularCanvas: React.FC<CellularCanvasProps> = ({
             playSound("absorb");
           }
 
-          n.x = Math.random() * canvas.width;
-          n.y = Math.random() * canvas.height;
+          n.x = getRandomFloat() * canvas.width;
+          n.y = getRandomFloat() * canvas.height;
           const dnaGained = n.type === "mutagen" ? 6 : 3;
           setStats((prev) => {
             const newDna = prev.dna + dnaGained * prev.ingestion;

@@ -1,22 +1,18 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      /* --- The Master Star-Chart (PRS-001) --- */
-      "@system/*": ["./axion-core/src/system/*", "./axion-core/src/cse/*"],
-      "@domain/*": ["./axion-core/src/02_domain/*"],
-      "@nexus/*": ["./axion-core/src/nexus/*"],
-      "@fabric/*": ["./axion-core/src/03_fabric/*"],
-      "@atlas/*": ["./axion-core/src/01_atlas/*"],
+      "@system/*":  ["./axion-core/src/system/*", "./axion-core/src/cse/*"],
+      "@domain/*":  ["./_governance/*"],
+      "@nexus/*":   ["./axion-core/src/nexus/*"],
+      "@fabric/*":  ["./design-system/*"],
+      "@atlas/*":   ["./_governance/01_Registries/*"],
       "@essence/*": ["./axion-core/src/types/*"],
-      "@shield/*": ["./axion-core/sentinel/*"],
-      "@pulse/*": ["./axion-core/_logs/*"],
-      "@loom/*": ["./axion-core/templates/*"],
-      "@archive/*": ["./axion-core/archives/*"],
-      "@universe/*": ["./axion-core/_universe/*"],
-      "@logging": ["./axion-core/src/system/logging/index.ts"],
-      "@logging/*": ["./axion-core/src/system/logging/*"],
-      "@utils/*": ["./axion-core/src/utils/*"],
-	  "@synarche": ["./packages"]
+      "@shield/*":  ["./axion-core/sentinel/*"],
+      "@pulse/*":   ["./axion-core/_logs/*"],
+      "@loom/*":    ["./_governance/templates/*"],
+      "@archive/*": ["./_governance/99_Archives/*"],
+      "@synarche":  ["./packages"]
     }
   },
   "exclude": [

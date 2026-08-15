@@ -1,19 +1,16 @@
 # LOGS.CSL.TheFinalWeave.md
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `LOGS.CSL.TheFinalWeave` | The Sovereign ID. |
-| **Official Name** | `LOGS.CSL.TheFinalWeave.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `LOGS` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `CAPTURES: [UMB-META-001], DEFINES: [PEF-v2.0]` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `LOGS.CSL.TheFinalWeave` | The Sovereign ID. |
+| **Official Name** | `LOGS.CSL.TheFinalWeave.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `LOGS` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `CAPTURES: [UMB-META-001], DEFINES: [PEF-v2.0]` | The Network.      |
+
 
 ---
 

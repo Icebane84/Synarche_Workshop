@@ -93,7 +93,9 @@ export default function CentralGeode({ nodes, links, globalCoherence, onNodeClic
             nodeSelection.attr("cx", (d) => d.x!).attr("cy", (d) => d.y!);
         });
 
-        return () => simulation.stop(); // Clean up on unmount
+        return () => {
+            simulation.stop();
+        }; // Clean up on unmount
     }, [nodes, links, onNodeClick]);
 
     return (

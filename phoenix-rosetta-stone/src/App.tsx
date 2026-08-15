@@ -10,13 +10,13 @@ import { SystemManager } from './system/SystemManager';
 import ErrorBoundary from './components/common/ErrorBoundary';
 
 // Pages
-import ArtifactCatalogPage from './components/pages/ArtifactCatalogPage';
-import CognitiveProcessPage from './components/pages/CognitiveProcessPage';
 import HomePage from './components/pages/HomePage';
-import PhoenixFormSheet from './components/pages/PhoenixFormSheet';
-import ResonanceChamberPage from './components/pages/ResonanceChamberPage';
-import SynergySimulatorPage from './components/pages/SynergySimulatorPage';
 
+const ArtifactCatalogPage = lazy(() => import('./components/pages/ArtifactCatalogPage'));
+const CognitiveProcessPage = lazy(() => import('./components/pages/CognitiveProcessPage'));
+const PhoenixFormSheet = lazy(() => import('./components/pages/PhoenixFormSheet'));
+const ResonanceChamberPage = lazy(() => import('./components/pages/ResonanceChamberPage'));
+const SynergySimulatorPage = lazy(() => import('./components/pages/SynergySimulatorPage'));
 const TheLoomPage = lazy(() => import('./components/pages/TheLoomPage'));
 const MemoryPalacePage = lazy(() => import('./components/pages/MemoryPalacePage'));
 const SystemCoherenceVisualizer = lazy(() => import('./components/pages/SystemCoherenceVisualizer'));
@@ -24,6 +24,7 @@ const TarotForgePage = lazy(() => import('./components/pages/TarotForgePage'));
 const KnowledgeForgePage = lazy(() => import('./components/pages/KnowledgeForgePage'));
 const NeoGenesisPage = lazy(() => import('./components/pages/NeoGenesisPage'));
 const RPGCommandPage = lazy(() => import('./components/pages/RPGCommandPage'));
+const UnrealCppForgePage = lazy(() => import('./components/pages/UnrealCppForgePage'));
 const ChroniclePage = lazy(() => import('./components/pages/ChroniclePage'));
 const NotificationsPage = lazy(() => import('./components/pages/NotificationsPage'));
 
@@ -78,6 +79,7 @@ function AppContent() {
 
                                     {/* Command Routes */}
                                     <Route path="/command/rpg" element={<RPGCommandPage />} />
+                                    <Route path="/command/cpp-forge" element={<UnrealCppForgePage />} />
 
                                     {/* System Routes */}
                                     <Route path="/chronicle" element={<ChroniclePage />} />

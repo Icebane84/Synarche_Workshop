@@ -19,7 +19,7 @@ artifact_anchor:
 import { captureException } from "@sentry/node";
 import { LoomError } from "@utils/LoomError";
 import { NextFunction, Request, Response } from "express";
-import { PhoenixLogger } from "../system/logging";
+import { PhoenixLogger } from "@system/logging";
 
 /**
  * Global Error Handler: Normalizes all errors into LoomErrors,

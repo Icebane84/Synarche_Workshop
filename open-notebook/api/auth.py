@@ -1,22 +1,28 @@
-import os
+import secrets
 from typing import Optional
 
-from fastapi import Depends, HTTPException, Request
-from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
-from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.responses import JSONResponse
+from fastapi import Request
+from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
+from starlette.responses import JSONResponse, Response
+from starlette.types import ASGIApp
+
+from open_notebook.utils.encryption import get_secret_from_env
 
 
 class PasswordAuthMiddleware(BaseHTTPMiddleware):
     """
     Middleware to check password authentication for all API requests.
-    Only active when OPEN_NOTEBOOK_PASSWORD environment variable is set.
+    Auth is fully disabled (no hardcoded default password) if
+    OPEN_NOTEBOOK_PASSWORD is not set.
+    Supports Docker secrets via OPEN_NOTEBOOK_PASSWORD_FILE.
     """
 
-    def __init__(self, app, excluded_paths: list | None = None) -> None:
+    def __init__(
+        self, app: ASGIApp, excluded_paths: Optional[list[str]] = None
+    ) -> None:
         super().__init__(app)
-        self.password = os.environ.get("OPEN_NOTEBOOK_PASSWORD")
-        self.excluded_paths = excluded_paths or [
+        self.password = get_secret_from_env("OPEN_NOTEBOOK_PASSWORD")
+        self.excluded_paths: list[str] = excluded_paths or [
             "/",
             "/health",
             "/docs",
@@ -24,7 +30,9 @@ class PasswordAuthMiddleware(BaseHTTPMiddleware):
             "/redoc",
         ]
 
-    async def dispatch(self, request: Request, call_next):
+    async def dispatch(
+        self, request: Request, call_next: RequestResponseEndpoint
+    ) -> Response:
         # Skip authentication if no password is set
         if not self.password:
             return await call_next(request)
@@ -59,8 +67,10 @@ class PasswordAuthMiddleware(BaseHTTPMiddleware):
                 headers={"WWW-Authenticate": "Bearer"},
             )
 
-        # Check password
-        if credentials != self.password:
+        # Check password (constant-time to avoid a timing side-channel)
+        if not secrets.compare_digest(
+            credentials.encode("utf-8"), self.password.encode("utf-8")
+        ):
             return JSONResponse(
                 status_code=401,
                 content={"detail": "Invalid password"},
@@ -70,39 +80,3 @@ class PasswordAuthMiddleware(BaseHTTPMiddleware):
         # Password is correct, proceed with the request
         response = await call_next(request)
         return response
-
-
-# Optional: HTTPBearer security scheme for OpenAPI documentation
-security = HTTPBearer(auto_error=False)
-
-
-def check_api_password(
-    credentials: HTTPAuthorizationCredentials | None = Depends(security),
-) -> bool:
-    """
-    Utility function to check API password.
-    Can be used as a dependency in individual routes if needed.
-    """
-    password = os.environ.get("OPEN_NOTEBOOK_PASSWORD")
-
-    # No password set, allow access
-    if not password:
-        return True
-
-    # No credentials provided
-    if not credentials:
-        raise HTTPException(
-            status_code=401,
-            detail="Missing authorization",
-            headers={"WWW-Authenticate": "Bearer"},
-        )
-
-    # Check password
-    if credentials.credentials != password:
-        raise HTTPException(
-            status_code=401,
-            detail="Invalid password",
-            headers={"WWW-Authenticate": "Bearer"},
-        )
-
-    return True

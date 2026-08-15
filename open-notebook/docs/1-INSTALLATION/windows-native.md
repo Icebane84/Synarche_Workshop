@@ -1,7 +1,6 @@
 # Open Notebook Windows Installation Guide (Native, No Docker)
 
-This guide documents how to install and run [Open Notebook](https://github.com/lfnovo/open-notebook) on Windows
-**natively without Docker or WSL**.
+This guide documents how to install and run [Open Notebook](https://github.com/lfnovo/open-notebook) on Windows **natively without Docker or WSL**.
 
 ## Who Is This For?
 
@@ -30,48 +29,48 @@ This guide documents how to install and run [Open Notebook](https://github.com/l
 
 1. **Clone and setup:**
 
-    ```bash
-    cd %USERPROFILE%\Projects  # or your preferred location
-    git clone https://github.com/lfnovo/open-notebook.git
-    cd open-notebook
-    uv sync
-    cd frontend && npm install && cd ..
-    ```
+   ```bash
+   cd %USERPROFILE%\Projects  # or your preferred location
+   git clone https://github.com/lfnovo/open-notebook.git
+   cd open-notebook
+   uv sync
+   cd frontend && npm install && cd ..
+   ```
 
 2. **Configure `.env`:**
-    - Copy `.env.example` to `.env`
 
-    - Add your API keys
+   - Copy `.env.example` to `.env`
 
-    - **CRITICAL:** Change `SURREAL_URL` from `localhost` to `127.0.0.1`:
+   - Add your API keys
 
-        ```env
-        SURREAL_URL="ws://127.0.0.1:8000/rpc"
-        ```
+   - **CRITICAL:** Change `SURREAL_URL` from `localhost` to `127.0.0.1`:
+
+     ```env
+     SURREAL_URL="ws://127.0.0.1:8000/rpc"
+     ```
 
 3. **Start the four services**, each in its own terminal, from the `open-notebook` folder.
 
-    > Open Notebook does not ship a launcher script — start the services manually as below (or wrap them in your own
-    > `.bat`, see [Optional: one-click launcher](#optional-one-click-launcher)).
+   > Open Notebook does not ship a launcher script — start the services manually as below (or wrap them in your own `.bat`, see [Optional: one-click launcher](#optional-one-click-launcher)).
 
-    ```batch
-    REM Optional: point Open Notebook at a separate data folder (see Issue 4 below).
-    REM Set this in each terminal before running, or skip to use ./data.
-    set DATA_FOLDER=%USERPROFILE%\Projects\open-notebook-data
+   ```batch
+   REM Optional: point Open Notebook at a separate data folder (see Issue 4 below).
+   REM Set this in each terminal before running, or skip to use ./data.
+   set DATA_FOLDER=%USERPROFILE%\Projects\open-notebook-data
 
-    REM Terminal 1 — SurrealDB
-    surreal start --user root --pass root --bind 127.0.0.1:8000 rocksdb:%DATA_FOLDER%\surrealdb
+   REM Terminal 1 — SurrealDB
+   surreal start --user root --pass root --bind 127.0.0.1:8000 rocksdb:%DATA_FOLDER%\surrealdb
 
-    REM Terminal 2 — API
-    uv run --env-file .env run_api.py
+   REM Terminal 2 — API
+   uv run --env-file .env run_api.py
 
-    REM Terminal 3 — Worker (module form avoids the Windows "canonicalize" error, see Issue 3)
-    set PYTHONPATH=%CD%
-    uv run --env-file .env python -m surreal_commands.cli.worker --import-modules commands
+   REM Terminal 3 — Worker (module form avoids the Windows "canonicalize" error, see Issue 3)
+   set PYTHONPATH=%CD%
+   uv run --env-file .env python -m surreal_commands.cli.worker --import-modules commands
 
-    REM Terminal 4 — Frontend
-    cd frontend && npm run dev
-    ```
+   REM Terminal 4 — Frontend
+   cd frontend && npm run dev
+   ```
 
 4. **Open the app:** http://127.0.0.1:3000
 
@@ -95,8 +94,9 @@ YourProjectsFolder\
 
 ## Optional: one-click launcher
 
-Open Notebook does not ship a launcher, but you can save the following as `start-open-notebook.bat` (anywhere you like)
-to start all four services with a double-click. Adjust `ROOT` and `DATA_ROOT` to match your setup.
+Open Notebook does not ship a launcher, but you can save the following as
+`start-open-notebook.bat` (anywhere you like) to start all four services with a
+double-click. Adjust `ROOT` and `DATA_ROOT` to match your setup.
 
 ```batch
 @echo off
@@ -230,12 +230,12 @@ GOOGLE_API_KEY=your-key-here
 
 Once running, add models in Settings. Common model names:
 
-| Provider  | Models                                                                                |
-| --------- | ------------------------------------------------------------------------------------- |
-| OpenAI    | `gpt-4o`, `gpt-4o-mini`, `gpt-4-turbo`, `text-embedding-3-small`                      |
+| Provider  | Models                                                       |
+| --------- | ------------------------------------------------------------ |
+| OpenAI    | `gpt-4o`, `gpt-4o-mini`, `gpt-4-turbo`, `text-embedding-3-small` |
 | Anthropic | `claude-sonnet-4-20250514`, `claude-3-5-sonnet-20241022`, `claude-3-5-haiku-20241022` |
-| Google    | `gemini-2.0-flash`, `gemini-1.5-pro`, `gemini-1.5-flash`                              |
-| DeepSeek  | `deepseek-chat`, `deepseek-reasoner`                                                  |
+| Google    | `gemini-3.5-flash`, `gemini-2.5-flash`, `gemini-2.5-pro`     |
+| DeepSeek  | `deepseek-chat`, `deepseek-reasoner`                         |
 
 ## Upgrading
 
@@ -281,4 +281,5 @@ Found another Windows-specific issue? Please share your solution!
 
 ---
 
-_Tested on Windows 11 ARM64 with Open Notebook v1.6.0_ _Created: January 2026_
+*Tested on Windows 11 ARM64 with Open Notebook v1.6.0*
+*Created: January 2026*

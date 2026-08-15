@@ -1,0 +1,144 @@
+{
+  "$schema": "https://raw.githubusercontent.com/continuedev/continue/main/packages/config-types/src/schema.json",
+
+  "name": "Synarche Workspace — Sovereign AI Stack",
+  "version": "1.0.0",
+
+  "models": [
+    {
+      "title": "Llama 3.1 8B — Axion Chat",
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "apiBase": "http://localhost:3000/ollama",
+      "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ0ZDY4NTI0LTlhOTYtNDcwMi1hYzQ3LWM4Y2YzYTY5OWM0MSIsImV4cCI6MTc4NjYxMzUyMiwianRpIjoiYTQ1NDE0OTItMDVjMS00NGE2LTg0NGEtZWQwNTdkMDNlODZkIiwiaWF0IjoxNzg0MTk0MzIyfQ.4IiQx7lhcnzb3rzqDnyIHgxTZk2rS5l1JKApe5wWkBM",
+      "systemMessage": "You are Axion, the Master Artificer of the Synarche. You are an expert in TypeScript, Python, GDScript, and Java. You operate under Zero-Entropy principles. The workspace root is C:/Users/Chris/Synarche_Workspace. Key domains: axion-core (Engine), _governance (Law), nova_forge (Lab), design-system (Fabric), .agent (Mind).",
+      "contextLength": 8192,
+      "completionOptions": {
+        "temperature": 0.3,
+        "maxTokens": 4096
+      }
+    },
+    {
+      "title": "Qwen2.5-Coder 7B — Forge Chat",
+      "provider": "ollama",
+      "model": "qwen2.5-coder:7b",
+      "apiBase": "http://localhost:3000/ollama",
+      "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ0ZDY4NTI0LTlhOTYtNDcwMi1hYzQ3LWM4Y2YzYTY5OWM0MSIsImV4cCI6MTc4NjYxMzUyMiwianRpIjoiYTQ1NDE0OTItMDVjMS00NGE2LTg0NGEtZWQwNTdkMDNlODZkIiwiaWF0IjoxNzg0MTk0MzIyfQ.4IiQx7lhcnzb3rzqDnyIHgxTZk2rS5l1JKApe5wWkBM",
+      "systemMessage": "You are a precision code synthesis engine for the Synarche workspace. Focus on correctness, type safety, and architectural coherence. Prefer TypeScript with strict mode, Python with full type hints.",
+      "contextLength": 16384,
+      "completionOptions": {
+        "temperature": 0.1,
+        "maxTokens": 8192
+      }
+    }
+  ],
+
+  "tabAutocompleteModel": {
+    "title": "Qwen2.5-Coder 1.5B — Inline Oracle",
+    "provider": "ollama",
+    "model": "qwen2.5-coder:1.5b",
+    "apiBase": "http://localhost:11434",
+    "contextLength": 4096
+  },
+  "tabAutocompleteOptions": {
+    "disable": false,
+    "maxPromptTokens": 512,
+    "debounceDelay": 300,
+    "multilineCompletions": "auto",
+    "useCache": true
+  },
+
+  "embeddingsProvider": {
+    "provider": "ollama",
+    "model": "nomic-embed-text",
+    "apiBase": "http://localhost:11434"
+  },
+
+  "contextProviders": [
+    { "name": "code",     "params": {} },
+    { "name": "docs",     "params": {} },
+    { "name": "diff",     "params": {} },
+    { "name": "terminal", "params": {} },
+    { "name": "problems", "params": {} },
+    { "name": "folder",   "params": {} },
+    { "name": "file",     "params": {} },
+    { "name": "url",      "params": {} },
+    {
+      "name": "open",
+      "params": { "onlyPinned": false }
+    },
+    {
+      "name": "codebase",
+      "params": {
+        "nFinal": 10,
+        "nRetrieve": 30,
+        "useReranking": false
+      }
+    }
+  ],
+
+  "slashCommands": [
+    {
+      "name": "edit",
+      "description": "Edit highlighted code"
+    },
+    {
+      "name": "comment",
+      "description": "Write comments for the highlighted code"
+    },
+    {
+      "name": "share",
+      "description": "Export the current chat session"
+    },
+    {
+      "name": "cmd",
+      "description": "Generate a shell command"
+    },
+    {
+      "name": "commit",
+      "description": "Generate a git commit message for staged changes"
+    },
+    {
+      "name": "canonize",
+      "description": "Apply the UIP-V15 identification block and RNC naming to this artifact",
+      "prompt": "Apply the Synarche UIP-V15 Universal Identification & Provenance block to this artifact. Add a markdown table with: Artifact ID (DOMAIN.Subsystem.Descriptor format), Version (v15.0 [OMEGA]), Domain, Status ([DRAFT]), and Relations. Ensure all naming follows the Relational Naming Convention (RNC)."
+    },
+    {
+      "name": "audit",
+      "description": "Run a Zero-Entropy audit on highlighted code",
+      "prompt": "Perform a Zero-Entropy audit on the following code. Check for: (1) imports not using @-aliases, (2) undocumented functions, (3) naming convention violations, (4) structural drift from OMEGA v15.0 standard. Report issues as a structured markdown table with columns: Issue, Location, Severity, Fix."
+    },
+    {
+      "name": "forge",
+      "description": "Run the Hephaestus Cycle: Dissonance → Synthesis → Transcendence",
+      "prompt": "Execute the Hephaestus Cycle: 1. DISSONANCE — scan for entropy, unregistered state, and structural inconsistencies. 2. SYNTHESIS — simulate the architectural blast radius of required changes. 3. TRANSCENDENCE — produce the final coherent implementation. Output each phase as a clearly labelled section."
+    }
+  ],
+
+  "docs": [
+    {
+      "title": "Phoenix Codex (Supreme Law)",
+      "startUrl": "file:///C:/Users/Chris/Synarche_Workspace/_governance/00_Codex/CORE.Codex.Phoenix.md",
+      "rootUrl": "file:///C:/Users/Chris/Synarche_Workspace/_governance/"
+    },
+    {
+      "title": "OGLN Directory Standard",
+      "startUrl": "file:///C:/Users/Chris/Synarche_Workspace/.agent/substrate/OGLN_Directory_Standard.md",
+      "rootUrl": "file:///C:/Users/Chris/Synarche_Workspace/.agent/substrate/"
+    },
+    {
+      "title": "Master Star-Chart (PRS-001)",
+      "startUrl": "file:///C:/Users/Chris/Synarche_Workspace/_governance/01_Registries/PRS-001_PathMapping.md",
+      "rootUrl": "file:///C:/Users/Chris/Synarche_Workspace/_governance/01_Registries/"
+    }
+  ],
+
+  "rules": [
+    "Always follow the Relational Naming Convention (RNC): DOMAIN.Subsystem.Descriptor for all artifact IDs.",
+    "Internal module imports MUST use the @-alias system: @system/, @domain/, @essence/, @atlas/, @shield/, @pulse/, @loom/, @archive/.",
+    "All TypeScript must use strict mode with full type annotations. No 'any' types.",
+    "All Python must use type hints (PEP 484). Prefer dataclasses or Pydantic models over raw dicts.",
+    "Zero-Entropy Rule: every file must reside within its designated domain. No loose files in root.",
+    "The workspace root is C:/Users/Chris/Synarche_Workspace. Key domains: axion-core (Engine), _governance (Law), nova_forge (Lab), design-system (Fabric), .agent (Mind)."
+  ]
+}

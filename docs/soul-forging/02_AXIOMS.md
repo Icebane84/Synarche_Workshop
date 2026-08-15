@@ -26,3 +26,7 @@
 ---
 
 `[PLAN-AXIOM] ID: GVRN.SOUL.02.AXIOM VER: v15.0 [OMEGA] STATUS: CANONIZED`
+
+## Reciprocal Links
+
+- [PLAN-soul-forging.md](../PLAN-soul-forging.md)

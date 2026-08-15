@@ -1,6 +1,6 @@
 # CORE.CODEX.PhoenixSchema
 
-## **Block A: The Identification Lock (UIP-V14)**
+## Block A: The Identification Lock (UIP-V14)
 
 ---
 
@@ -19,7 +19,7 @@
 
 ---
 
-### **Block B: State Vector (AGP-001)**
+### Block B: State Vector (AGP-001)
 
 ---
 
@@ -29,7 +29,7 @@
 | **Resonance** | `0.9` |
 | **Stability** | `Stable` |
 
-### **Block C: Risk & Mitigation (AGP-002)**
+### Block C: Risk & Mitigation (AGP-002)
 
 ---
 
@@ -212,7 +212,7 @@ enforces the formula $State(t) = State(0) + \sum Events$. "Mutations" to the per
 replaying the event ledger up to time $t$ to derive a new Materialized View, leaving the historical foundational anchors
 physically untouched and perfectly auditable.
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
+### Block D: Standardized Synergy Block (The Loom Signature)
 
 ---
 
@@ -232,10 +232,19 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 
 ---
 
-### **Rationale (The "Why")**
+### Rationale (The "Why")
 
 ---
 
 Alignment to v14.0 OMEGA standard.
 
-#### **[ARTIFACT END]**
+#### [ARTIFACT END]
+
+## Reciprocal Links
+
+---
+
+* [SYKB_01_SynarcheCore.md](../knowledge_export/SYKB_01_SynarcheCore.md)
+* [GVRN.Codex.EternalLaw.md](../00_Codex/GVRN.Codex.EternalLaw.md)
+* [CORE.Codex.Phoenix.md](../00_Codex/CORE.Codex.Phoenix.md)
+* [CORE-CODEX-001_ThePhoenixCodex_v13.1.md](../00_Codex/CORE-CODEX-001_ThePhoenixCodex_v13.1.md)

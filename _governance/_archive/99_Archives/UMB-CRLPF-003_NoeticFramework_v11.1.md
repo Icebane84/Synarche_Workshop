@@ -1,19 +1,16 @@
 # UMB-CRLPF-003_NoeticFramework_v11.1.md
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `UMB-CRLPF-003` | The Sovereign ID. |
-| **Official Name** | `UMB-CRLPF-003_NoeticFramework_v11.1.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `LINK: UMB-PRS-001, LINK: UMB-CSE-001` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `UMB-CRLPF-003` | The Sovereign ID. |
+| **Official Name** | `UMB-CRLPF-003_NoeticFramework_v11.1.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `LINK: UMB-PRS-001, LINK: UMB-CSE-001` | The Network.      |
+
 
 ---
 

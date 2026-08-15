@@ -16,10 +16,10 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as vscode from "vscode";
 import { PRS_001_SCHEMA } from "./constants/schemas";
-import { validateMetadata } from "./utils/validation";
+import { validateMetadata } from "@utils/validation";
 import { CelestialChartViewProvider } from "./CelestialChartView";
-import { PhoenixSuperpositionEngine } from "./nexus/PhoenixSuperpositionEngine";
-import { WebClientStrategy } from "./nexus/WebClientStrategy";
+import { PhoenixSuperpositionEngine } from "@nexus/PhoenixSuperpositionEngine";
+import { WebClientStrategy } from "@nexus/WebClientStrategy";
 
 /**
  * Activates the Axion Core extension.

@@ -227,7 +227,10 @@ services:
     image: vllm/vllm-openai:latest
     command: --model meta-llama/Llama-3.1-8B-Instruct
     ports:
-      - "8000:8000"
+      # Localhost only (vLLM has no authentication by default), on host port
+      # 8001 because SurrealDB already publishes 8000. Open Notebook reaches
+      # vLLM over the compose network at http://vllm:8000/v1 regardless.
+      - "127.0.0.1:8001:8000"
     volumes:
       - ~/.cache/huggingface:/root/.cache/huggingface
     deploy:
@@ -439,3 +442,7 @@ Use OpenAI-compatible when:
 Synergistic Artifact ID, Relationship Type, Synergistic Impact
 CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
+
+## Reciprocal Links
+
+- [local-stt.md](local-stt.md)

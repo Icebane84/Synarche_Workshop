@@ -12,6 +12,7 @@
 | **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
 
 
+
 ---
 
 # 🧠 The Sovereign Mind (.agent)

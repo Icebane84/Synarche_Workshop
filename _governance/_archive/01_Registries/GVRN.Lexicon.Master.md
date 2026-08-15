@@ -1,19 +1,16 @@
 # Standardized Lexicon: The Phoenix Synarche Vocabulary (GVRN.Lexicon.Master)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Lexicon.Master` | The Sovereign ID. |
-| **Official Name** | `GVRN.Lexicon.Master.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `ACTIVE, DRAFT, CANONIZED, DEPRECATED, ARCHIVED, PROPOSED, SOVEREIGN` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `DEFINES: [All_System_Taxonomies]` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Lexicon.Master` | The Sovereign ID. |
+| **Official Name** | `GVRN.Lexicon.Master.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `DEFINES: [All_System_Taxonomies]` | The Network.      |
+
 
 ---
 

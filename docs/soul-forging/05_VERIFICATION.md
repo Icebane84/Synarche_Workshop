@@ -26,3 +26,7 @@
 ---
 
 `[PLAN-VERIFY] ID: GVRN.SOUL.05.VERIFY VER: v15.0 [OMEGA] STATUS: CANONIZED`
+
+## Reciprocal Links
+
+- [PLAN-soul-forging.md](../PLAN-soul-forging.md)

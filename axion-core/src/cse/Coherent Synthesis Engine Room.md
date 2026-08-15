@@ -24,7 +24,7 @@ artifact_anchor:
 
 ---
 
-axion-core/src/cse/ ├── **init**.py ├── engine.py  
+axion-CORE/src/cse/ ├── **init**.py ├── engine.py
 ├── parsers/ (Loom Ingestion) ├── validators/ (Governance) ├── loggers/ (SELT) └── managers/ [NEW] ├── guca_parser.py
 (Sub-Component 4: Capability Extraction) └── mcp_injector.py (Sub-Component 5: Tool Registration)
 

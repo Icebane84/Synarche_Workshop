@@ -18,6 +18,7 @@
     "@babel/types": "^7.29.0",
     "@google/genai": "^2.10.0",
     "@supabase/supabase-js": "^2.105.1",
+    "@synarche/supabase": "*",
     "@tailwindcss/vite": "^4.2.4",
     "@types/d3": "^7.4.3",
     "@types/three": "^0.185.0",

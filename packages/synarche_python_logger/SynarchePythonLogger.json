@@ -1,0 +1,19 @@
+{
+  "Artifact_ID": "UMB-LOG-001",
+  "Module_Name": "SynarchePythonLogger",
+  "Responsibility": "To provide a standardized, configurable logging utility for Python applications within the Synarche ecosystem.",
+  "Inputs": {
+	"name": "str",
+	"level": "int (e.g., logging.INFO)",
+	"log_to_console": "bool",
+	"log_file_path": "Optional[str]"
+  },
+  "Outputs": {
+	"logger": "logging.Logger"
+  },
+  "Dependencies": [
+	"logging (Python standard library)",
+	"typing (Python standard library)"
+  ],
+  "Error_Strategy": "If configuration fails (e.g., invalid file path), log a critical error to stderr and raise a FileNotFoundError or ValueError. The function should not fail silently."
+}

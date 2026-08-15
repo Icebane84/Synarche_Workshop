@@ -1,19 +1,16 @@
 # GVRN.Protocol.Presentation
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Protocol.Presentation` | The Sovereign ID. |
-| **Official Name** | `GVRN.Protocol.Presentation.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[MOON]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[CANONIZED]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `ENFORCED_BY: [GVRN.Sentinel.Scan], DEFINES: [GVRN.Protocol.Scaffolding]` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Protocol.Presentation` | The Sovereign ID. |
+| **Official Name** | `GVRN.Protocol.Presentation.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `ENFORCED_BY: [GVRN.Sentinel.Scan], DEFINES: [GVRN.Protocol.Scaffolding]` | The Network.      |
+
 
 ---
 

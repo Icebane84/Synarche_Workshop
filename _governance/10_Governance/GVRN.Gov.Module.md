@@ -35,3 +35,7 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 Alignment to v14.0 OMEGA standard.
 
 ###### **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [GVRN.Catalog.Master.md](../01_Registries/GVRN.Catalog.Master.md)

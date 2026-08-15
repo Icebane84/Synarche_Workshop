@@ -58,7 +58,7 @@ export async function weaver(request) {
             loom: /###? \*\*Block .*?The Synergy Loom.*?\*\*\n+([\s\S]*?)(?=\n###?|$)/i,
         };
 
-        let compressedMetadata = {};
+        const compressedMetadata = {};
 
         for (const [key, pattern] of Object.entries(blocks)) {
             const match = content.match(pattern);

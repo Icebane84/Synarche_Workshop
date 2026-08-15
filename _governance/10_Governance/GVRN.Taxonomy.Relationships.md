@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.Taxonomy.Relationships` | The Sovereign ID. |
-| **Official Name** | `GVRN.Taxonomy.Relationships.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `Verdict` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `DEFINED_BY: GVRN.REG.Lexicon, GOVERNED_BY: SYNG.Link.Semantic` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.Taxonomy.Relationships` | The Sovereign ID. |
+| **Official Name** | `GVRN.Taxonomy.Relationships.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `DEFINED_BY: GVRN.REG.Lexicon, GOVERNED_BY: SYNG.Link.Semantic` | The Network.      |
+
 
 ---
 
@@ -35,3 +32,8 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 Alignment to v14.0 OMEGA standard.
 
 ###### **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [SYKB_03_Registries.md](../knowledge_export/SYKB_03_Registries.md)
+- [GVRN.Registry.PhoenixRosettaStone.md](../01_Registries/GVRN.Registry.PhoenixRosettaStone.md)

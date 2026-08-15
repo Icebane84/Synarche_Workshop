@@ -1,0 +1,19 @@
+{
+  "records": [
+    {
+      "artifact_path": "axion-core/tools/cpp_verifier.py",
+      "content_sha256": "68b2a7e1c911a035b395e1f38bf3728fe054f6224ac08063787a144cef7b15d7",
+      "status": "STILL_VALID"
+    },
+    {
+      "artifact_path": "scratch/dragonslayer/prs_001_eng_026_mass_kinetic_cleave_component.cpp",
+      "content_sha256": "959ef848a075c307de9741c6b056bc124c226d58a48f9293e2162a01b5754e8c",
+      "status": "STILL_VALID"
+    },
+    {
+      "artifact_path": "_governance/50_Logs/LOG.MECS.TELEMETRY_CPP.json",
+      "content_sha256": "030e69f2ca4dbb90336eeb781fe71aa6d10113eca5e8a54801fb9cc2621dc1b9",
+      "status": "STILL_VALID"
+    }
+  ]
+}

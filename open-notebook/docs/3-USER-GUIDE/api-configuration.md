@@ -2,8 +2,7 @@
 
 Configure AI provider credentials through the Settings UI. No file editing required.
 
-> **Credential System**: Open Notebook uses encrypted credentials stored in the database. Each credential connects to a
-> provider and allows you to discover, register, and test models.
+> **Credential System**: Open Notebook uses encrypted credentials stored in the database. Each credential connects to a provider and allows you to discover, register, and test models.
 
 ---
 
@@ -29,13 +28,12 @@ Add `OPEN_NOTEBOOK_ENCRYPTION_KEY` to your docker-compose.yml:
 
 ```yaml
 environment:
-    - OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-passphrase
+  - OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-passphrase
 ```
 
 Any string works as a key — it will be securely derived via SHA-256 internally.
 
-> **Warning**: If you change or lose the encryption key, **all stored credentials become unreadable**. Back up your
-> encryption key securely and separately from your database backups.
+> **Warning**: If you change or lose the encryption key, **all stored credentials become unreadable**. Back up your encryption key securely and separately from your database backups.
 
 ### Docker Secrets Support
 
@@ -44,28 +42,28 @@ Both password and encryption key support Docker secrets:
 ```yaml
 # docker-compose.yml
 services:
-    open_notebook:
-        environment:
-            - OPEN_NOTEBOOK_PASSWORD_FILE=/run/secrets/app_password
-            - OPEN_NOTEBOOK_ENCRYPTION_KEY_FILE=/run/secrets/encryption_key
-        secrets:
-            - app_password
-            - encryption_key
+  open_notebook:
+    environment:
+      - OPEN_NOTEBOOK_PASSWORD_FILE=/run/secrets/app_password
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY_FILE=/run/secrets/encryption_key
+    secrets:
+      - app_password
+      - encryption_key
 
 secrets:
-    app_password:
-        file: ./secrets/password.txt
-    encryption_key:
-        file: ./secrets/encryption_key.txt
+  app_password:
+    file: ./secrets/password.txt
+  encryption_key:
+    file: ./secrets/encryption_key.txt
 ```
 
 ### Encryption Details
 
 API keys stored in the database are encrypted using Fernet (AES-128-CBC + HMAC-SHA256).
 
-| Configuration         | Behavior                        |
-| --------------------- | ------------------------------- |
-| Encryption key set    | Keys encrypted with your key    |
+| Configuration | Behavior |
+|---------------|----------|
+| Encryption key set | Keys encrypted with your key |
 | No encryption key set | Storing credentials is disabled |
 
 ---
@@ -86,32 +84,32 @@ Navigation: Settings → API Keys
 
 ### Cloud Providers
 
-| Provider      | Required Fields | Optional Fields |
-| ------------- | --------------- | --------------- |
-| OpenAI        | API Key         | —               |
-| Anthropic     | API Key         | —               |
-| Google Gemini | API Key         | —               |
-| Groq          | API Key         | —               |
-| Mistral       | API Key         | —               |
-| DeepSeek      | API Key         | —               |
-| xAI           | API Key         | —               |
-| OpenRouter    | API Key         | —               |
-| Voyage AI     | API Key         | —               |
-| ElevenLabs    | API Key         | —               |
+| Provider | Required Fields | Optional Fields |
+|----------|-----------------|-----------------|
+| OpenAI | API Key | — |
+| Anthropic | API Key | — |
+| Google Gemini | API Key | — |
+| Groq | API Key | — |
+| Mistral | API Key | — |
+| DeepSeek | API Key | — |
+| xAI | API Key | — |
+| OpenRouter | API Key | — |
+| Voyage AI | API Key | — |
+| ElevenLabs | API Key | — |
 
 ### Local/Self-Hosted
 
-| Provider | Required Fields | Notes                                                       |
-| -------- | --------------- | ----------------------------------------------------------- |
-| Ollama   | Base URL        | Typically `http://localhost:11434` or `http://ollama:11434` |
+| Provider | Required Fields | Notes |
+|----------|-----------------|-------|
+| Ollama | Base URL | Typically `http://localhost:11434` or `http://ollama:11434` |
 
 ### Enterprise
 
-| Provider          | Required Fields                        | Optional Fields                                       |
-| ----------------- | -------------------------------------- | ----------------------------------------------------- |
-| Azure OpenAI      | API Key, URL Base (Azure endpoint)     | Service-specific endpoints (LLM, Embedding, STT, TTS) |
-| OpenAI-Compatible | Base URL                               | API Key, Service-specific configs                     |
-| Vertex AI         | Project ID, Location, Credentials Path | —                                                     |
+| Provider | Required Fields | Optional Fields |
+|----------|-----------------|-----------------|
+| Azure OpenAI | API Key, URL Base (Azure endpoint) | Service-specific endpoints (LLM, Embedding, STT, TTS) |
+| OpenAI-Compatible | Base URL | API Key, Service-specific configs |
+| Vertex AI | Project ID, Location, Credentials Path | — |
 
 ---
 
@@ -131,11 +129,11 @@ Navigation: Settings → API Keys
 1. On your new credential card, click **Test Connection**
 2. Wait for the result:
 
-| Result            | Meaning                           |
-| ----------------- | --------------------------------- |
-| Success           | Key is valid, provider accessible |
-| Invalid API key   | Check key format and value        |
-| Connection failed | Check URL, network, firewall      |
+| Result | Meaning |
+|--------|---------|
+| Success | Key is valid, provider accessible |
+| Invalid API key | Check key format and value |
+| Connection failed | Check URL, network, firewall |
 
 ### Step 3: Discover Models
 
@@ -154,7 +152,6 @@ Navigation: Settings → API Keys
 ## Multi-Credential Support
 
 Each provider can have **multiple credentials**. This is useful when:
-
 - You have different API keys for different projects
 - You want to test with different endpoints
 - Multiple team members need separate credentials
@@ -169,7 +166,6 @@ Each provider can have **multiple credentials**. This is useful when:
 ### How Models Link to Credentials
 
 When you register models from a credential, those models are linked to that specific credential. This means:
-
 - Each model knows which API key to use
 - You can have models from different credentials for the same provider
 - Deleting a credential removes its linked models
@@ -180,11 +176,11 @@ When you register models from a credential, those models are linked to that spec
 
 Click **Test Connection** to verify your credential:
 
-| Result              | Meaning                               |
-| ------------------- | ------------------------------------- |
-| Success             | Key is valid, provider accessible     |
-| Invalid API key     | Check key format and value            |
-| Connection failed   | Check URL, network, firewall          |
+| Result | Meaning |
+|--------|---------|
+| Success | Key is valid, provider accessible |
+| Invalid API key | Check key format and value |
+| Connection failed | Check URL, network, firewall |
 | Model not available | Key valid but model access restricted |
 
 Test uses inexpensive models (e.g., `gpt-3.5-turbo`, `claude-3-haiku`) to minimize cost.
@@ -218,8 +214,7 @@ Ollama allows localhost and private IPs since it runs locally.
 4. Test connection
 5. Discover and register models
 
-The URL Base field is automatically mapped to the Azure endpoint. The API version defaults to `2024-10-21` if not set
-via environment variable.
+The URL Base field is automatically mapped to the Azure endpoint. The API version defaults to `2024-10-21` if not set via environment variable.
 
 ### OpenAI-Compatible
 
@@ -231,7 +226,6 @@ For custom OpenAI-compatible servers (LM Studio, vLLM, etc.):
 4. Optionally configure per-service URLs
 
 Supports separate configurations for:
-
 - LLM (language models)
 - Embedding
 - STT (speech-to-text)
@@ -241,10 +235,10 @@ Supports separate configurations for:
 
 Google Cloud's enterprise AI platform:
 
-| Field            | Example                         |
-| ---------------- | ------------------------------- |
-| Project ID       | `my-gcp-project`                |
-| Location         | `us-central1`                   |
+| Field | Example |
+|-------|---------|
+| Project ID | `my-gcp-project` |
+| Location | `us-central1` |
 | Credentials Path | `/path/to/service-account.json` |
 
 ---
@@ -261,11 +255,11 @@ If you have existing API keys in environment variables (from a previous version)
 
 ### Migration Behavior
 
-| Scenario             | Action                          |
-| -------------------- | ------------------------------- |
-| Key in env only      | Migrated to database            |
-| Key in database only | No change                       |
-| Key in both          | Database version kept (skipped) |
+| Scenario | Action |
+|----------|--------|
+| Key in env only | Migrated to database |
+| Key in database only | No change |
+| Key in both | Database version kept (skipped) |
 
 ### After Migration
 
@@ -276,7 +270,6 @@ If you have existing API keys in environment variables (from a previous version)
 ### Migration Banner Visibility
 
 The migration banner only appears when:
-
 - You have environment variables configured
 - Those providers are **not** already in the database
 - If all env providers are already migrated, the banner won't show
@@ -300,17 +293,17 @@ If you're upgrading from an older version that used the ProviderConfig system:
 
 API keys stored in the database are encrypted using Fernet (AES-128-CBC + HMAC-SHA256).
 
-| Configuration         | Behavior                                 |
-| --------------------- | ---------------------------------------- |
-| Encryption key set    | Keys encrypted with your key             |
+| Configuration | Behavior |
+|---------------|----------|
+| Encryption key set | Keys encrypted with your key |
 | No encryption key set | Storing API keys in database is disabled |
 
 ### Default Credentials
 
-| Setting        | Default Value             | Production Recommendation                               |
-| -------------- | ------------------------- | ------------------------------------------------------- |
-| Password       | `open-notebook-change-me` | Set `OPEN_NOTEBOOK_PASSWORD`                            |
-| Encryption Key | None (must be set)        | Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` to any secret string |
+| Setting | Default Value | Production Recommendation |
+|---------|---------------|---------------------------|
+| Password | None - auth is fully disabled until set | Set `OPEN_NOTEBOOK_PASSWORD` |
+| Encryption Key | None (must be set) | Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` to any secret string |
 
 **For production deployments, always set custom credentials.**
 
@@ -328,28 +321,28 @@ API keys stored in the database are encrypted using Fernet (AES-128-CBC + HMAC-S
 
 ### Credential Not Saving
 
-| Symptom              | Cause                     | Solution                                                 |
-| -------------------- | ------------------------- | -------------------------------------------------------- |
-| Save button disabled | Empty or invalid input    | Enter a valid key                                        |
-| Error on save        | Encryption key not set    | Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` in docker-compose.yml |
-| Error on save        | Database connection issue | Check database status                                    |
+| Symptom | Cause | Solution |
+|---------|-------|----------|
+| Save button disabled | Empty or invalid input | Enter a valid key |
+| Error on save | Encryption key not set | Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` in docker-compose.yml |
+| Error on save | Database connection issue | Check database status |
 
 ### Test Connection Fails
 
-| Error              | Cause               | Solution                           |
-| ------------------ | ------------------- | ---------------------------------- |
-| Invalid API key    | Wrong key or format | Verify key from provider dashboard |
-| Connection refused | Wrong URL           | Check base URL format              |
-| Timeout            | Network issue       | Check firewall, proxy settings     |
-| 403 Forbidden      | IP restriction      | Whitelist your server IP           |
+| Error | Cause | Solution |
+|-------|-------|----------|
+| Invalid API key | Wrong key or format | Verify key from provider dashboard |
+| Connection refused | Wrong URL | Check base URL format |
+| Timeout | Network issue | Check firewall, proxy settings |
+| 403 Forbidden | IP restriction | Whitelist your server IP |
 
 ### Migration Issues
 
-| Problem                          | Solution                                  |
-| -------------------------------- | ----------------------------------------- |
-| No migration banner              | No env vars detected, or already migrated |
-| Partial migration                | Check error list, fix and retry           |
-| Keys not working after migration | Clear browser cache, restart services     |
+| Problem | Solution |
+|---------|----------|
+| No migration banner | No env vars detected, or already migrated |
+| Partial migration | Check error list, fix and retry |
+| Keys not working after migration | Clear browser cache, restart services |
 
 ### Provider Shows "Not Configured"
 
@@ -363,28 +356,23 @@ API keys stored in the database are encrypted using Fernet (AES-128-CBC + HMAC-S
 ## Provider-Specific Notes
 
 ### OpenAI
-
 - Keys start with `sk-proj-` (project keys) or `sk-` (legacy)
 - Requires billing enabled on account
 
 ### Anthropic
-
 - Keys start with `sk-ant-`
 - Check account has API access enabled
 
 ### Google Gemini
-
 - Keys start with `AIzaSy`
 - Free tier has rate limits
 
 ### Ollama
-
 - No API key required
 - Default URL: `http://localhost:11434` (local) or `http://ollama:11434` (Docker)
 - Ensure Ollama server is running
 
 ### Azure OpenAI
-
 - Enter your Azure endpoint in the **URL Base** field (format: `https://{resource-name}.openai.azure.com`)
 - API version defaults to `2024-10-21`; override via `AZURE_OPENAI_API_VERSION` environment variable if needed
 - Deployment names configured separately when registering models via the credential's Discover Models dialog

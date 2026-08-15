@@ -4,10 +4,10 @@
  * Powers all live-update panels in the HUD.
  */
 
-import { useEffect } from "react";
-import { supabase } from "@/core/supabase";
 import type { Database } from "@/core/supabase";
+import { supabase } from "@/core/supabase";
 import type { RealtimePostgresChangesPayload } from "@supabase/supabase-js";
+import { useEffect } from "react";
 
 type PublicTable = keyof Database["public"]["Tables"];
 type RealtimeEvent = "INSERT" | "UPDATE" | "DELETE" | "*";
@@ -21,8 +21,9 @@ export function useRealtime<T extends PublicTable>(
   useEffect(() => {
     if (!enabled) return;
 
+    const channelId = typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}`;
     const channel = supabase
-      .channel(`realtime:${String(table)}:${event}:${Math.random()}`)
+      .channel(`realtime:${String(table)}:${event}:${channelId}`)
       .on(
         "postgres_changes",
         { event: event as any, schema: "public", table: String(table) },

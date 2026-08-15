@@ -10,6 +10,7 @@
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 # 🪜 ASCENT-IMPACT: The Hierarchy of Ascent

@@ -43,7 +43,7 @@ class ChunkExecutor:
 
                 # 2. split into chunks
                 for arch in arches:
-                    total = len(arch.entity_ids)
+                    total = arch.size
 
                     for i in range(0, total, self.chunk_size):
                         chunk = ArchetypeChunk(arch, i, min(i + self.chunk_size, total))

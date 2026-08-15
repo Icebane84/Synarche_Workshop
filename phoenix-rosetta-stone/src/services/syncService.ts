@@ -1,4 +1,3 @@
-
 import { ExperienceLog } from '@essence/types';
 import { dispatchCommand } from '../system/commandDispatcher';
 import { syncSkillSeltCommand } from './commands/definitions/utilityCommands';
@@ -15,7 +14,7 @@ export const triggerSovereignSync = async (log: ExperienceLog) => {
 
     // Determine the skill name from the module or intent
     // Defaulting to plan-writing or the module of origin
-    const skillName = log.contextualMeta.moduleOfOrigin === 'CognitiveInterface' 
+    const skillName = log.contextualMeta.moduleOfOrigin === 'CognitiveInterface'
         ? 'plan-writing' // Pilot default
         : log.contextualMeta.moduleOfOrigin.toLowerCase();
 

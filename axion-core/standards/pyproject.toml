@@ -61,7 +61,6 @@ exclude = [
     "**/recovery",
     "**/open-notebook",
     "**/incoming",
-    "**/nova_forge",
     "**/fde_engine",
     "**/.agent",
     "**/.archives",

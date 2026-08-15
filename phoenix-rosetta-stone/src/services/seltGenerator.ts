@@ -1,8 +1,7 @@
-
 import { ExperienceLog, SystemContext } from '@essence/types';
 import { useLogStore } from '../store/logStore';
-import { supabase } from './supabaseClient';
 import { systemConfig } from './configService';
+import { supabase } from './supabaseClient';
 
 /**
  * @fileoverview The SELT Generator (Standardized Experience Log Template).
@@ -41,7 +40,6 @@ export const syncPendingLogs = async () => {
 
     for (const log of pending) {
         try {
-            // Ensure we are inserting into 'experience_logs'
             const { error } = await supabase.from('experience_logs').insert(log);
             if (!error) successfulIds.push(log.logId);
         } catch {
@@ -55,10 +53,109 @@ export const syncPendingLogs = async () => {
     }
 };
 
+const getRandomFloat = (): number => {
+  const array = new Uint32Array(1);
+  crypto.getRandomValues(array);
+  return array[0] / (0xffffffff + 1);
+};
+
 const generateLogId = () => {
     const timestamp = new Date().toISOString().replace(/[-:T.Z]/g, '').slice(0, 14);
-    const seq = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
+    const seq = Math.floor(getRandomFloat() * 1000).toString().padStart(3, '0');
     return `SELT-${timestamp}-${seq}`;
+};
+
+const getConsistency = (index: number): string => {
+    if (index > 0.7) return 'OPTIMAL';
+    if (index > 0.4) return 'NOMINAL';
+    return 'DEGRADED';
+};
+
+const formatErrorMessage = (e: unknown): string => {
+    if (e && typeof e === 'object') {
+        const errObj = e as { message?: string; details?: string; hint?: string };
+        return errObj.message || errObj.details || errObj.hint || JSON.stringify(e);
+    }
+    return String(e);
+};
+
+const buildExperienceLog = (
+    userInput: string,
+    agentOutput: string,
+    context: SystemContext,
+    retrievedSources: string[],
+    sourceModule: string
+): ExperienceLog => {
+    const logId = generateLogId();
+    const timestamp = new Date().toISOString();
+    const consistency = getConsistency(context.coherence.index);
+
+    const retrievalMethods = ['context_injection'];
+    if (retrievedSources.length > 0) retrievalMethods.push('vector_rag');
+
+    const emotionalState = context.coherence.index > 0.8 ? 'LUMINOUS_CLARITY' : 'ANALYTICAL_NEUTRALITY';
+    const inferredIntent = userInput.length > 20 ? 'analysis_request' : 'social_greeting';
+
+    return {
+        logId,
+        timestamp,
+        sessionId: systemConfig.constants.SESSION_ID,
+        dynamicState: {
+            COGNITIVE_LOAD_INDEX: 0.1 + getRandomFloat() * 0.3,
+            ACTIVATED_NEURAL_PATHWAYS: ['Gemini-3-Pro', ...retrievalMethods],
+            EMOTIONAL_PROXY_STATE: emotionalState,
+        },
+        userTurn: {
+            timestamp: new Date(Date.now() - 2000).toISOString(),
+            participant: 'User',
+            verbatimContent: userInput,
+            analysis: {
+                inferredIntent,
+                detectedTopics: ['phoenix_protocol', 'system_state'],
+                sentimentScore: 0,
+            },
+        },
+        agentResponse: {
+            timestamp,
+            participant: 'Agent',
+            verbatimContent: agentOutput,
+            reasoning: {
+                agentIntent: 'fulfillment',
+                retrievalMethods,
+                retrievalDetails: { sources: retrievedSources },
+            },
+        },
+        phenomenologicalState: {
+            decisionPathway: `INPUT -> CORE_PROCESSING -> COHERENCE_CHECK[${consistency}] -> RESPONSE`,
+            internalConsistency: consistency,
+        },
+        contextualMeta: {
+            moduleOfOrigin: sourceModule,
+            cognitiveFocus: context.coherence.focus,
+            location: context.currentLocation || 'Root',
+        },
+    };
+};
+
+const persistExperienceLog = async (log: ExperienceLog): Promise<void> => {
+    const isActuallySimulated = systemConfig.isSimulationMode || !process.env.SUPABASE_ANON_KEY;
+
+    if (isActuallySimulated) {
+        const pending = getPendingLogs();
+        savePendingLogs([...pending, log].slice(-50));
+        return;
+    }
+
+    try {
+        const { error } = await supabase.from('experience_logs').insert(log);
+        if (error) throw error;
+        syncPendingLogs();
+    } catch (e: unknown) {
+        const errorMessage = formatErrorMessage(e);
+        console.error(`[Omni-Log] Backend error. Anchoring log ${log.logId} to local RAM.\nDetails: ${errorMessage}`);
+        const pending = getPendingLogs();
+        savePendingLogs([...pending, log]);
+    }
 };
 
 /**
@@ -72,105 +169,17 @@ export const generateAndPersistLog = async (
     retrievedSources: string[] = [],
     sourceModule = 'CognitiveInterface'
 ): Promise<void> => {
-    
     useLogStore.getState().setGenerating(true);
-    // Mimic processing latency
-    await new Promise(resolve => setTimeout(resolve, 800));
+    await new Promise((resolve) => setTimeout(resolve, 800));
 
-    const logId = generateLogId();
-    const timestamp = new Date().toISOString();
-    
-    let consistency = 'DEGRADED';
-    if (context.coherence.index > 0.7) consistency = 'OPTIMAL';
-    else if (context.coherence.index > 0.4) consistency = 'NOMINAL';
-    const retrievalMethods = ['context_injection'];
-    if (retrievedSources.length > 0) retrievalMethods.push('vector_rag');
-    
-    const log: ExperienceLog = {
-        logId,
-        timestamp,
-        sessionId: systemConfig.constants.SESSION_ID, 
-        
-        dynamicState: {
-            COGNITIVE_LOAD_INDEX: 0.1 + (Math.random() * 0.3), 
-            ACTIVATED_NEURAL_PATHWAYS: ['Gemini-3-Pro', ...retrievalMethods],
-            EMOTIONAL_PROXY_STATE: context.coherence.index > 0.8 ? 'LUMINOUS_CLARITY' : 'ANALYTICAL_NEUTRALITY'
-        },
-
-        userTurn: {
-            timestamp: new Date(Date.now() - 2000).toISOString(), 
-            participant: 'User',
-            verbatimContent: userInput,
-            analysis: {
-                inferredIntent: userInput.length > 20 ? 'analysis_request' : 'social_greeting',
-                detectedTopics: ['phoenix_protocol', 'system_state'], 
-                sentimentScore: 0
-            }
-        },
-
-        agentResponse: {
-            timestamp,
-            participant: 'Agent',
-            verbatimContent: agentOutput,
-            reasoning: {
-                agentIntent: 'fulfillment',
-                retrievalMethods: retrievalMethods,
-                retrievalDetails: {
-                    sources: retrievedSources
-                }
-            }
-        },
-
-        phenomenologicalState: {
-            decisionPathway: `INPUT -> CORE_PROCESSING -> COHERENCE_CHECK[${consistency}] -> RESPONSE`,
-            internalConsistency: consistency
-        },
-
-        contextualMeta: {
-            moduleOfOrigin: sourceModule,
-            cognitiveFocus: context.coherence.focus,
-            location: context.currentLocation || 'Root'
-        }
-    };
-
-    // 3. PERSISTENCE LOGIC
-    // We use a "Double-Safety" net. If the backend is unreachable or simulated,
-    // we anchor the log to LocalStorage (RAM) for later synchronization.
-    
-    // Airtight simulation detection: If SUPABASE_URL is missing OR points to default/placeholder without valid creds
-    const isActuallySimulated = systemConfig.isSimulationMode || !process.env.SUPABASE_ANON_KEY;
-
-    if (isActuallySimulated) {
-        const pending = getPendingLogs();
-        savePendingLogs([...pending, log].slice(-50));
-    } else {
-        try {
-            const { error } = await supabase.from('experience_logs').insert(log);
-            if (error) throw error;
-            // Attempt to sync other pending logs if connection is healthy
-            syncPendingLogs();
-        } catch (e: any) {
-            // Robust error stringification to prevent [object Object]
-            let errorMessage: string;
-            if (e && typeof e === 'object') {
-                errorMessage = e.message || e.details || e.hint || JSON.stringify(e);
-            } else {
-                errorMessage = String(e);
-            }
-            
-            console.error(`[Omni-Log] Backend error. Anchoring log ${logId} to local RAM.\nDetails: ${errorMessage}`);
-            const pending = getPendingLogs();
-            savePendingLogs([...pending, log]);
-        }
-    }
+    const log = buildExperienceLog(userInput, agentOutput, context, retrievedSources, sourceModule);
+    await persistExperienceLog(log);
 
     useLogStore.getState().addLog(log);
     useLogStore.getState().setGenerating(false);
 
-    // 4. AUTOMATED SYNC (Gold Standard Implementation)
     if (log.phenomenologicalState.internalConsistency === 'OPTIMAL') {
         const { triggerSovereignSync } = await import('./syncService');
         await triggerSovereignSync(log);
     }
 };
-

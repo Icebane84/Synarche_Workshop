@@ -10,6 +10,7 @@
 | **Relations**     | `GOVERN_BY: CORE.Codex.ThePhoenixCodex` | The Network.      |
 
 
+
 ---
 
 ### **Block B: State Vector (AGP-001)**

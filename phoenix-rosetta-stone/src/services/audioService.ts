@@ -1,6 +1,8 @@
+// cspell:ignore genai Zira Kore cooldown
+
+import { SpeechRecognitionErrorEvent, SpeechRecognitionEvent } from '@essence/types';
 import { GoogleGenAI, Modality } from '@google/genai';
 import { useCoherenceStore } from '../store/coherenceStore';
-import { SpeechRecognitionErrorEvent, SpeechRecognitionEvent } from '@essence/types';
 import { systemConfig } from './configService';
 
 /**
@@ -35,7 +37,7 @@ function decodeBase64(base64: string) {
     const len = binaryString.length;
     const bytes = new Uint8Array(len);
     for (let i = 0; i < len; i++) {
-        bytes[i] = binaryString.charCodeAt(i);
+        bytes[i] = binaryString.codePointAt(i);
     }
     return bytes;
 }
@@ -67,37 +69,52 @@ function decodeAudioData(
 let isRateLimited = false;
 let rateLimitResetTime = 0;
 
+const checkRateLimitCircuitBreaker = (): boolean => {
+    if (!isRateLimited) return false;
+    if (Date.now() < rateLimitResetTime) {
+        console.warn('[Voice of the Machine] Rate limit active. Using browser fallback.');
+        return true;
+    }
+    isRateLimited = false;
+    return false;
+};
+
+const VOICE_MAP: Record<string, { voiceName: string; emotionPrefix: string }> = {
+    'Security Audit': { voiceName: 'Charon', emotionPrefix: 'Say strictly and clearly: ' },
+    'Creative Ideation': { voiceName: 'Kore', emotionPrefix: 'Say inspirationally and melodic: ' },
+    'Strategy': { voiceName: 'Fenrir', emotionPrefix: 'Say authoritative and resonant: ' },
+};
+
+const getVoiceConfig = (focus: string) => {
+    return VOICE_MAP[focus] ?? { voiceName: 'Zephyr', emotionPrefix: 'Say calmly: ' };
+};
+
+const handleTTSError = (err: unknown): void => {
+    const errorMessage = err instanceof Error ? err.message : String(err);
+    const isRateLimit =
+        errorMessage.includes('429') ||
+        errorMessage.includes('RESOURCE_EXHAUSTED') ||
+        (typeof err === 'object' && err !== null && 'status' in err && (err as { status: number }).status === 429);
+
+    if (isRateLimit) {
+        console.warn('[Voice of the Machine] Gemini TTS Rate Limit Exceeded. Switching to local synthesis for 60 seconds.');
+        isRateLimited = true;
+        rateLimitResetTime = Date.now() + 60000;
+    } else {
+        console.warn('[Voice of the Machine] Gemini TTS failed, falling back to browser synthesis.', err);
+    }
+};
+
 const playGeminiSpeech = async (text: string) => {
     if (!systemConfig.api.geminiKey) return false;
-
-    // Circuit Breaker Check
-    if (isRateLimited) {
-        if (Date.now() < rateLimitResetTime) {
-            console.warn('[Voice of the Machine] Rate limit active. Using browser fallback.');
-            return false;
-        }
-        isRateLimited = false; // Reset if time passed
-    }
+    if (checkRateLimitCircuitBreaker()) return false;
 
     const focus = useCoherenceStore.getState().cognitiveFocus;
-    let voiceName = 'Zephyr';
-    let emotionPrefix = 'Say calmly: ';
-
-    // Personality Mapping based on Cognitive Focus
-    if (focus === 'Security Audit') {
-        voiceName = 'Charon';
-        emotionPrefix = 'Say strictly and clearly: ';
-    } else if (focus === 'Creative Ideation') {
-        voiceName = 'Kore';
-        emotionPrefix = 'Say inspirationally and melodic: ';
-    } else if (focus === 'Strategy') {
-        voiceName = 'Fenrir';
-        emotionPrefix = 'Say authoritative and resonant: ';
-    }
+    const { voiceName, emotionPrefix } = getVoiceConfig(focus);
 
     try {
         const response = await ai.models.generateContent({
-            model: 'gemini-2.0-flash-lite-001', // Trying Flash Lite for better quota
+            model: 'gemini-2.0-flash-lite-001',
             contents: [{ parts: [{ text: `${emotionPrefix}${text}` }] }],
             config: {
                 responseModalities: [Modality.AUDIO],
@@ -127,38 +144,44 @@ const playGeminiSpeech = async (text: string) => {
         source.start();
         return true;
     } catch (err: unknown) {
-        const errorMessage = err instanceof Error ? err.message : String(err);
-        const isRateLimit = errorMessage.includes('429') || 
-                           errorMessage.includes('RESOURCE_EXHAUSTED') ||
-                           (typeof err === 'object' && err !== null && 'status' in err && (err as {status: number}).status === 429);
-
-        if (isRateLimit) {
-            console.warn(
-                '[Voice of the Machine] Gemini TTS Rate Limit Exceeded. Switching to local synthesis for 60 seconds.',
-            );
-            isRateLimited = true;
-            rateLimitResetTime = Date.now() + 60000; // 60s cooldown
-        } else {
-            console.warn('[Voice of the Machine] Gemini TTS failed, falling back to browser synthesis.', err);
-        }
+        handleTTSError(err);
         return false;
     }
 };
 
+export const stopAuralResponse = () => {
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+    }
+    if (audioContext) {
+        audioContext.close().catch(() => {});
+        audioContext = null;
+    }
+};
+
 export const transmitAuralResponse = async (text: string) => {
+    stopAuralResponse();
     const success = await playGeminiSpeech(text);
     if (success) return;
 
     if (!('speechSynthesis' in window)) return;
-    window.speechSynthesis.cancel();
 
-    const utterance = new SpeechSynthesisUtterance(text);
+    // Clean markdown symbols from text for clearer speech synthesis
+    const cleanText = text
+        .replace(/`{1,3}[\s\S]*?`{1,3}/g, '')
+        .replace(/[*#_~[\]()]/g, ' ')
+        .replace(/TOOL_CALL:.*$/gm, '')
+        .trim();
+
+    if (!cleanText) return;
+
+    const utterance = new SpeechSynthesisUtterance(cleanText);
     if (!synthesisVoice) initBrowserVoice();
     if (synthesisVoice) utterance.voice = synthesisVoice;
 
     utterance.pitch = 1.0;
-    utterance.rate = 1.1;
-    utterance.volume = 0.8;
+    utterance.rate = 1.05;
+    utterance.volume = 0.9;
 
     window.speechSynthesis.speak(utterance);
 };

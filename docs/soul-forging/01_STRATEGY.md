@@ -17,3 +17,7 @@ Ground the **Master Artificer (Axion)** identity in the **Synarche Soul** layer,
 ---
 
 `[ARTIFACT-ANCHOR] ID: PLAN.SOUL.01 VER: v15.0 [OMEGA] STATUS: PLANNING`
+
+## Reciprocal Links
+
+- [PLAN-soul-forging.md](../PLAN-soul-forging.md)

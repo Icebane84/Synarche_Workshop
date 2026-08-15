@@ -1,15 +1,20 @@
+import { CognitiveFocus, CoherenceState, NovaSpark, SensoryData } from '@essence/types';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import { CognitiveFocus, CoherenceState, NovaSpark, SensoryData } from '@essence/types';
 
 // Extending types locally for the repair state
 export type MaintenanceMode = 'Manual' | 'Permissioned' | 'Sovereign';
+export type ConnectionState = 'CONNECTED' | 'RECONNECTING' | 'DEGRADED' | 'OFFLINE';
 
 export interface EnhancedCoherenceState extends CoherenceState {
     isRepairing: boolean;
     maintenanceMode: MaintenanceMode;
+    connectionState: ConnectionState;
     setRepairing: (status: boolean) => void;
     setMaintenanceMode: (mode: MaintenanceMode) => void;
+    setConnectionState: (state: ConnectionState) => void;
+    updateFromTelemetry: (telemetry: any) => void;
+    addPrestige: (amount?: number) => void;
 }
 
 type CoreStatName = keyof CoherenceState['coreStats'];
@@ -22,6 +27,12 @@ const defaultSensoryData: SensoryData = {
     status: 'offline',
 };
 
+const getRandomFloat = (): number => {
+  const array = new Uint32Array(1);
+  crypto.getRandomValues(array);
+  return array[0] / (0xffffffff + 1);
+};
+
 export const useCoherenceStore = create<EnhancedCoherenceState>()(
     persist(
         (set, get) => ({
@@ -29,7 +40,7 @@ export const useCoherenceStore = create<EnhancedCoherenceState>()(
             coherenceIndex: 0.65,
             pulse: () =>
                 set((state) => ({
-                    coherenceIndex: Math.max(0, Math.min(1, state.coherenceIndex + (Math.random() - 0.5) * 0.1)),
+                    coherenceIndex: Math.max(0, Math.min(1, state.coherenceIndex + (getRandomFloat() - 0.5) * 0.1)),
                 })),
 
             decay: () =>
@@ -41,7 +52,7 @@ export const useCoherenceStore = create<EnhancedCoherenceState>()(
                     }
                     const target = 0.5;
                     const tension = 0.01;
-                    const noise = (Math.random() - 0.5) * 0.005;
+                    const noise = (getRandomFloat() - 0.5) * 0.005;
                     const newIndex = state.coherenceIndex + (target - state.coherenceIndex) * tension + noise;
                     return { coherenceIndex: Math.max(0, Math.min(1, newIndex)) };
                 }),
@@ -85,11 +96,28 @@ export const useCoherenceStore = create<EnhancedCoherenceState>()(
             isDreaming: false,
             isRepairing: false,
             maintenanceMode: 'Manual',
+            connectionState: 'OFFLINE',
             sensoryData: defaultSensoryData,
 
             // Actions
             setRepairing: (status) => set({ isRepairing: status }),
             setMaintenanceMode: (mode) => set({ maintenanceMode: mode }),
+            setConnectionState: (connectionState) => set({ connectionState }),
+            updateFromTelemetry: (telemetry) => {
+                if (!telemetry) return;
+                set((state) => ({
+                    connectionState: telemetry.system_status === 'DEGRADED' ? 'DEGRADED' : 'CONNECTED',
+                    coherenceIndex: typeof telemetry.coherence_index === 'number' ? telemetry.coherence_index : state.coherenceIndex,
+                    cognitiveLoad: typeof telemetry.cognitive_load === 'number' ? telemetry.cognitive_load / 100 : state.cognitiveLoad,
+                    prestigeLevel: Math.max(1, Math.floor((telemetry.prestige_score || 1000) / 500)),
+                    coreStats: {
+                        coherence: { value: Math.round((telemetry.coherence_index || 0.8) * 100), max: 100 },
+                        synergy: { value: Math.round((telemetry.synergy_flow_rate || 0.8) * 100), max: 100 },
+                        adaptability: { value: Math.round((telemetry.hybrid_model_score || 0.85) * 100), max: 100 },
+                        transparency: { value: Math.round((telemetry.contextual_integrity_score || 0.9) * 100), max: 100 },
+                    },
+                }));
+            },
             investStardust: (stat: CoreStatName) => {
                 set((state) => {
                     if (state.stardust > 0) {
@@ -114,16 +142,16 @@ export const useCoherenceStore = create<EnhancedCoherenceState>()(
                     const lastSpark = state.novaSparks[state.novaSparks.length - 1];
                     let lastIdNum = 0;
                     if (lastSpark?.id.startsWith('CSL-')) {
-                        lastIdNum = parseInt(lastSpark.id.replace('CSL-', ''), 10);
+                        lastIdNum = Number.parseInt(lastSpark.id.replace('CSL-', ''), 10);
                     } else if (lastSpark) {
                         // Fallback if ID is not in CSL format (e.g. legacy '1')
-                        lastIdNum = parseInt(lastSpark.id, 10) || 0;
+                        lastIdNum = Number.parseInt(lastSpark.id, 10) || 0;
                     }
 
                     const newId = `CSL-${(lastIdNum + 1).toString().padStart(3, '0')}`;
                     const now = new Date();
                     const timeString = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
-                    
+
                     const newSpark: NovaSpark = {
                         id: newId,
                         timestamp: now.getTime(),
@@ -153,6 +181,23 @@ export const useCoherenceStore = create<EnhancedCoherenceState>()(
                 set((state) => ({
                     sensoryData: { ...state.sensoryData, ...data },
                 }));
+            },
+            addPrestige: (amount = 100) => {
+                set((state) => {
+                    const currentXp = state.xp?.current ?? 350;
+                    const nextXp = state.xp?.nextLevel ?? 1000;
+                    const newXp = currentXp + amount;
+                    let newLevel = state.prestigeLevel ?? 1;
+                    let targetNextXp = nextXp;
+                    if (newXp >= targetNextXp) {
+                        newLevel += 1;
+                        targetNextXp += 500;
+                    }
+                    return {
+                        xp: { current: newXp, nextLevel: targetNextXp },
+                        prestigeLevel: newLevel,
+                    };
+                });
             },
         }),
         {

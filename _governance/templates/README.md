@@ -1,19 +1,16 @@
 # 🏗️ DOMAIN: TEMPLATES
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `README` | The Sovereign ID. |
-| **Official Name** | `README.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: CORE-CODEX-001` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `README` | The Sovereign ID. |
+| **Official Name** | `README.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: CORE-CODEX-001` | The Network.      |
+
 
 ---
 
@@ -53,7 +50,12 @@ This directory serves as the canonical repository for all **Universal Module Blu
 
 ---
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.DOMAIN.Templates VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28`
+`
+
+## Reciprocal Links
+
+- [GVRN.Learning.Evolution.md](../06_Learning/GVRN.Learning.Evolution.md)
+[OMNI-ARTIFACT-ANCHOR] ID: GVRN.DOMAIN.Templates VER: v15.0 [OMEGA] STATUS: CANONIZED TS: 2026-04-28`
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact

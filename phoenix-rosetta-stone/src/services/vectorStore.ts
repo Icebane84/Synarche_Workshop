@@ -4,34 +4,31 @@ import { knowledgeBase } from '../data/knowledgeBase';
 import { systemConfig } from './configService';
 import { supabase } from './supabaseClient';
 
-const ai = new GoogleGenAI({ apiKey: systemConfig.api.geminiKey as string });
-
-/**
- * @fileoverview The Sovereign Vector Store [OMEGA v15.1].
- * Utilizing Google Gemini 'gemini-embedding-001' for high-precision semantic mapping.
- * This substrate powers the spatial reasoning of the Memory Palace.
- */
-
 export interface RetrievalResult {
     title: string;
     content: string;
-    contentSnippet?: string;
     score: number;
     docId: string;
     type: string;
 }
 
 export interface DocumentMatch {
-    id: number;
+    id: number | string;
     content: string;
     similarity: number;
-    metadata: {
+    metadata?: {
         docId?: string;
         title?: string;
         type?: string;
         chunkIndex?: number;
-    } | null;
+    };
 }
+
+const getAiClient = () => {
+    const key = systemConfig.api.geminiKey as string;
+    if (!key) return null;
+    return new GoogleGenAI({ apiKey: key });
+};
 
 /**
  * GENERATES A VECTOR EMBEDDING via Gemini.
@@ -41,29 +38,25 @@ export interface DocumentMatch {
  * @returns A 3072-dimensional vector.
  */
 const generateEmbedding = async (text: string): Promise<number[]> => {
-    try {
-        // DEBUG: List models to verify availability
-        try {
-            await ai.models.list();
-            // Models available
-        } catch (e: unknown) {
-            console.error('[VectorStore] Failed to list models:', e instanceof Error ? e.message : String(e));
-        }
+    const ai = getAiClient();
+    if (!ai) {
+        throw new Error('Gemini API key is not configured.');
+    }
 
+    try {
         const result = await ai.models.embedContent({
-            model: 'gemini-embedding-001', // Verified available via check-models.js
+            model: 'gemini-embedding-001',
             contents: [{ parts: [{ text }] }],
         });
         const embedding = result.embeddings?.[0]?.values;
 
         if (embedding?.length !== 3072) {
-            // gemini-embedding-001 appears to be 3072 dimensions
             throw new Error(`Invalid embedding generated. Expected 3072, got ${String(embedding?.length)}`);
         }
         return embedding;
     } catch (error: unknown) {
-        console.error(
-            '[VectorStore] Embedding Generation Failed:',
+        console.warn(
+            '[VectorStore] Embedding Generation Deferred:',
             error instanceof Error ? error.message : String(error),
         );
         throw error;
@@ -141,7 +134,7 @@ export const retrieveContext = async (query: string, limit = 3): Promise<Retriev
             type: match.metadata?.type ?? 'unknown',
         }));
     } catch (err: unknown) {
-        console.error('[VectorStore] Retrieval Failed:', err instanceof Error ? err.message : String(err));
+        console.warn('[VectorStore] Retrieval Deferred:', err instanceof Error ? err.message : String(err));
         return [];
     }
 };

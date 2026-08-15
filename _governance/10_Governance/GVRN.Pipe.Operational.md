@@ -101,7 +101,12 @@ GVRN.Protocol.Presentation, COMPLIES_WITH, Enforces the Presentation Standard.
 
 ### **Block F: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Pipe.Operational VER: v13.1 [OMEGA] DOMAIN: GVRN STATUS: ACTIVE`
+`
+
+## Reciprocal Links
+
+- [GVRN.Catalog.Master.md](../01_Registries/GVRN.Catalog.Master.md)
+[OMNI-ARTIFACT-ANCHOR] ID: GVRN.Pipe.Operational VER: v13.1 [OMEGA] DOMAIN: GVRN STATUS: ACTIVE`
 
 > [!NOTE]
 > **[ARTIFACT END]**

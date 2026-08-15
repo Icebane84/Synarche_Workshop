@@ -78,7 +78,7 @@ export class InventorySystem {
      * Returns the current total stat bonuses from all equipped items.
      */
     calculateStats() {
-        let totalStats = {};
+        const totalStats = {};
         for (const slot in this.slots) {
             const item = this.slots[slot];
             if (item && item.stats) {

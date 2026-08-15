@@ -1,0 +1,27 @@
+{
+  "rnc_compliance": {
+	"exclude_files": [
+	  "my_custom_script.py",
+	  "generated_schema.ts"
+	],
+	"exclude_folders": [
+	  "temp_build_output",
+	  "legacy_components"
+	]
+  },
+  "import_paths": {
+	"exclude_files": [
+	  "some_generated_file.js"
+	],
+	"exclude_folders": [
+	  "vendor_libs"
+	]
+  },
+  "magic_numbers": {
+	"threshold": 3,
+	"exclude_numbers": [100, 360, 255, 60, 24],
+	"exclude_files": ["constants.py", "math_utils.js"],
+	"exclude_folders": ["tests"]
+  },
+  "history_reports_dir": "./audit_history"
+}

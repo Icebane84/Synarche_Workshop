@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `GVRN.ACT.MasterAudit` | The Sovereign ID. |
-| **Official Name** | `GVRN.ACT.MasterAudit.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `Verdict` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `DEFINED_BY: GVRN.REG.Lexicon` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `GVRN.ACT.MasterAudit` | The Sovereign ID. |
+| **Official Name** | `GVRN.ACT.MasterAudit.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `DEFINED_BY: GVRN.REG.Lexicon` | The Network.      |
+
 
 ---
 
@@ -109,7 +106,13 @@ Every audit must pass through the following seven gates to achieve OMEGA status:
 
 ## **Block G: The Omni-Anchor (System Snapshot)**
 
-`[OMNI-ARTIFACT-ANCHOR] ID: GVRN.ACT.MasterAudit VER: v15.0 [STAR] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: AUDIT-OMEGA-V15`
+`
+
+## Reciprocal Links
+
+- [SYKB_03_Registries.md](../knowledge_export/SYKB_03_Registries.md)
+- [GVRN.Registry.PhoenixRosettaStone.md](../01_Registries/GVRN.Registry.PhoenixRosettaStone.md)
+[OMNI-ARTIFACT-ANCHOR] ID: GVRN.ACT.MasterAudit VER: v15.0 [STAR] DOMAIN: GVRN STATUS: CANONIZED TS: 2026-03-19 HASH: AUDIT-OMEGA-V15`
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**
 Synergistic Artifact ID, Relationship Type, Synergistic Impact

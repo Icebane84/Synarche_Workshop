@@ -1,19 +1,16 @@
 # Universal Identification & Provenance (UIP)
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `{{ RNC\_ID }}` | The Sovereign ID. |
-| **Official Name** | `{{ FILENAME }}` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `{{ CELESTIAL\_CLASS }}` | The Weight. |
-| **Evolution** | `Cognitive Ascension` | The Maturity. |
-| **Status (State)** | `{{ STATUS }}` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)` | The Network. |
-| **Integrity Hash** | `{{ INTEGRITY\_HASH }}` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `{{ RNC\_ID }}` | The Sovereign ID. |
+| **Official Name** | `GUCA_Template-Genesis Universal Command Architecture (v13.1 OMEGA).md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GOVERNED_BY: [CORE.Codex.Phoenix](https://drive.google.com/open?id=13kGcmnAyLwNijTHJd2gCGkZxFB7jLrvd)` | The Network.      |
+
 
 ---
 

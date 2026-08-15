@@ -28,7 +28,7 @@ description: "The Sovereign UAM compiler and topology analyzer for enforcing UIP
 | **Celestial Class** | `[STAR]`                          | The Weight.       |
 | **Evolution**       | `Omega Ascension`                 | The Maturity.     |
 | **Status**          | `[ACTIVE]`                        | The Lifecycle.    |
-| **Relations**       | `GOVERNED_BY: CORE.Codex.Phoenix` | The Network.      |
+| **Relations**       | `GOVERNED_BY: GVRN.CODEX.PHOENIX.001` | The Network.      |
 
 ---
 
@@ -76,5 +76,5 @@ flags.
 
 | Synergistic Artifact ID | Relationship Type | Synergistic Impact                            |
 | :---------------------- | :---------------- | :-------------------------------------------- |
-| CORE.Codex.Phoenix      | GOVERNS           | Provides the supreme law and boundary checks. |
+| GVRN.CODEX.PHOENIX.001  | GOVERNS           | Provides the supreme law and boundary checks. |
 | GVRN.Master.Registry    | INDEXES           | Cataloged inside the master index directory.  |

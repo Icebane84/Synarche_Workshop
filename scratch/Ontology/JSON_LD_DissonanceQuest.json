@@ -1,0 +1,41 @@
+{
+  "@context": {
+	"phx": "https://synarche.org/ontology/v15.1/",
+	"schema": "http://schema.org/",
+	"phoenixTerm": "phx:phoenixTerm",
+	"industryEquivalent": "phx:industryEquivalent",
+	"functionalDefinition": "phx:functionalDefinition",
+	"relatedTo": {
+	  "@id": "phx:relatedTo",
+	  "@type": "@id"
+	},
+	"isResolvedBy": {
+	  "@id": "phx:isResolvedBy",
+	  "@type": "@id"
+	},
+	"triggers": {
+	  "@id": "phx:triggers",
+	  "@type": "@id"
+	}
+  },
+  "@graph": [
+	{
+	  "@id": "phx:governance/MusashiAudit",
+	  "@type": "phx:ValidationSuite",
+	  "phoenixTerm": "Musashi Audit",
+	  "industryEquivalent": "Multi-Stage Validation Suite",
+	  "functionalDefinition": "A 5-dimensional terminal check for artifact integrity.",
+	  "relatedTo": "phx:agents/Sentinel",
+	  "triggers": "phx:governance/DissonanceQuest"
+	},
+	{
+	  "@id": "phx:governance/DissonanceQuest",
+	  "@type": "phx:DebuggingRefactoringTask",
+	  "phoenixTerm": "Dissonance Quest",
+	  "industryEquivalent": "Debugging / Refactoring Task",
+	  "functionalDefinition": "A prioritized mission to resolve system contradictions.",
+	  "relatedTo": "phx:agents/Sentinel",
+	  "isResolvedBy": "phx:governance/MusashiAudit"
+	}
+  ]
+}

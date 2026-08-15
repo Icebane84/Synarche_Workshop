@@ -1,13 +1,14 @@
 ## **Block A: The Identification Lock (UIP-V15)**
 
-| Key               | Value                           | Description       |
-| :---------------- | :------------------------------ | :---------------- |
-| **Artifact ID**   | `SYNG.Agents.SynergyMatrix`     | The Sovereign ID. |
-| **Official Name** | `SYNG.Agents.SynergyMatrix.md`  | The Filename.     |
-| **Version**       | **v15.0 [OMEGA]**               | The Standard.     |
-| **Domain**        | `SYNG`                          | The Subject.      |
-| **Status**        | `[ACTIVE]`                      | The Lifecycle.    |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `SYNG.Agents.SynergyMatrix` | The Sovereign ID. |
+| **Official Name** | `SYNG.AGENTS.SynergyMatrix.md` | The Filename.     |
+| **Version**       | **v15.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `SYNG` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `GOVERN_BY: CORE.Codex.Phoenix` | The Network.      |
+
 
 ---
 

@@ -14,73 +14,80 @@ from api.models import (
 )
 from open_notebook.ai.models import Model
 from open_notebook.domain.transformation import DefaultPrompts, Transformation
-from open_notebook.exceptions import InvalidInputError
+from open_notebook.exceptions import InvalidInputError, OpenNotebookError
 from open_notebook.graphs.transformation import graph as transformation_graph
 
 router = APIRouter()
 
 
-@router.get("/transformations", response_model=list[TransformationResponse])
+def _transformation_response(transformation: Transformation) -> TransformationResponse:
+    return TransformationResponse(
+        id=transformation.id or "",
+        name=transformation.name,
+        title=transformation.title,
+        description=transformation.description,
+        prompt=transformation.prompt,
+        apply_default=transformation.apply_default,
+        model_id=transformation.model_id,
+        created=str(transformation.created),
+        updated=str(transformation.updated),
+    )
+
+
+@router.get("/transformations", response_model=List[TransformationResponse])
 async def get_transformations():
     """Get all transformations."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         transformations = await Transformation.get_all(order_by="name asc")
 
         return [
-            TransformationResponse(
-                id=transformation.id or "",
-                name=transformation.name,
-                title=transformation.title,
-                description=transformation.description,
-                prompt=transformation.prompt,
-                apply_default=transformation.apply_default,
-                created=str(transformation.created),
-                updated=str(transformation.updated),
-            )
+            _transformation_response(transformation)
             for transformation in transformations
         ]
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error fetching transformations: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching transformations: {e!s}")
+        logger.error(f"Error fetching transformations: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error fetching transformations: {str(e)}"
+        )
 
 
 @router.post("/transformations", response_model=TransformationResponse)
 async def create_transformation(transformation_data: TransformationCreate):
     """Create a new transformation."""
     try:
+        # Reject unknown model references up front (same check as execute);
+        # otherwise an invalid model_id is stored and only fails at run time.
+        if transformation_data.model_id:
+            model = await Model.get(transformation_data.model_id)
+            if not model:
+                raise HTTPException(status_code=404, detail="Model not found")
+
         new_transformation = Transformation(
             name=transformation_data.name,
             title=transformation_data.title,
             description=transformation_data.description,
             prompt=transformation_data.prompt,
             apply_default=transformation_data.apply_default,
+            model_id=transformation_data.model_id,
         )
         await new_transformation.save()
 
-        return TransformationResponse(
-            id=new_transformation.id or "",
-            name=new_transformation.name,
-            title=new_transformation.title,
-            description=new_transformation.description,
-            prompt=new_transformation.prompt,
-            apply_default=new_transformation.apply_default,
-            created=str(new_transformation.created),
-            updated=str(new_transformation.updated),
-        )
+        return _transformation_response(new_transformation)
+    except HTTPException:
+        raise
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error creating transformation: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error creating transformation: {e!s}")
+        logger.error(f"Error creating transformation: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error creating transformation: {str(e)}"
+        )
 
 
 @router.post("/transformations/execute", response_model=TransformationExecuteResponse)
@@ -92,31 +99,41 @@ async def execute_transformation(execute_request: TransformationExecuteRequest):
         if not transformation:
             raise HTTPException(status_code=404, detail="Transformation not found")
 
-        # Validate model exists
-        model = await Model.get(execute_request.model_id)
-        if not model:
-            raise HTTPException(status_code=404, detail="Model not found")
+        model_id = execute_request.model_id or transformation.model_id
 
-        # Execute the transformation
-        result = await transformation_graph.ainvoke(
-            dict(  # type: ignore[arg-type]
+        # Validate explicit or transformation-specific model exists.
+        # None is allowed so the graph can use the configured transformation default.
+        if model_id:
+            model = await Model.get(model_id)
+            if not model:
+                raise HTTPException(status_code=404, detail="Model not found")
+
+        # Execute the transformation.
+        # LangGraph accepts a partial state dict at runtime, but its typed
+        # overloads require the full state type (langgraph typing limitation).
+        result = await transformation_graph.ainvoke(  # type: ignore[call-overload]
+            dict(
                 input_text=execute_request.input_text,
                 transformation=transformation,
             ),
-            config=dict(configurable={"model_id": execute_request.model_id}),
+            config=dict(configurable={"model_id": model_id}),
         )
 
         return TransformationExecuteResponse(
             output=result["output"],
             transformation_id=execute_request.transformation_id,
-            model_id=execute_request.model_id,
+            model_id=model_id,
         )
 
     except HTTPException:
         raise
+    except OpenNotebookError:
+        raise  # Let global exception handlers return proper status codes
     except Exception as e:
-        logger.error(f"Error executing transformation: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error executing transformation: {e!s}")
+        logger.error(f"Error executing transformation: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error executing transformation: {str(e)}"
+        )
 
 
 @router.get("/transformations/default-prompt", response_model=DefaultPromptResponse)
@@ -125,10 +142,19 @@ async def get_default_prompt():
     try:
         default_prompts: DefaultPrompts = await DefaultPrompts.get_instance()  # type: ignore[assignment]
 
-        return DefaultPromptResponse(transformation_instructions=default_prompts.transformation_instructions or "")
+        return DefaultPromptResponse(
+            transformation_instructions=default_prompts.transformation_instructions
+            or ""
+        )
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error fetching default prompt: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching default prompt: {e!s}")
+        logger.error(f"Error fetching default prompt: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error fetching default prompt: {str(e)}"
+        )
 
 
 @router.put("/transformations/default-prompt", response_model=DefaultPromptResponse)
@@ -137,16 +163,28 @@ async def update_default_prompt(prompt_update: DefaultPromptUpdate):
     try:
         default_prompts: DefaultPrompts = await DefaultPrompts.get_instance()  # type: ignore[assignment]
 
-        default_prompts.transformation_instructions = prompt_update.transformation_instructions
+        default_prompts.transformation_instructions = (
+            prompt_update.transformation_instructions
+        )
         await default_prompts.update()
 
-        return DefaultPromptResponse(transformation_instructions=default_prompts.transformation_instructions)
+        return DefaultPromptResponse(
+            transformation_instructions=default_prompts.transformation_instructions
+        )
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error updating default prompt: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error updating default prompt: {e!s}")
+        logger.error(f"Error updating default prompt: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error updating default prompt: {str(e)}"
+        )
 
 
-@router.get("/transformations/{transformation_id}", response_model=TransformationResponse)
+@router.get(
+    "/transformations/{transformation_id}", response_model=TransformationResponse
+)
 async def get_transformation(transformation_id: str):
     """Get a specific transformation by ID."""
     try:
@@ -154,25 +192,24 @@ async def get_transformation(transformation_id: str):
         if not transformation:
             raise HTTPException(status_code=404, detail="Transformation not found")
 
-        return TransformationResponse(
-            id=transformation.id or "",
-            name=transformation.name,
-            title=transformation.title,
-            description=transformation.description,
-            prompt=transformation.prompt,
-            apply_default=transformation.apply_default,
-            created=str(transformation.created),
-            updated=str(transformation.updated),
-        )
+        return _transformation_response(transformation)
     except HTTPException:
         raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error fetching transformation {transformation_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching transformation: {e!s}")
+        logger.error(f"Error fetching transformation {transformation_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error fetching transformation: {str(e)}"
+        )
 
 
-@router.put("/transformations/{transformation_id}", response_model=TransformationResponse)
-async def update_transformation(transformation_id: str, transformation_update: TransformationUpdate):
+@router.put(
+    "/transformations/{transformation_id}", response_model=TransformationResponse
+)
+async def update_transformation(
+    transformation_id: str, transformation_update: TransformationUpdate
+):
     """Update a transformation."""
     try:
         transformation = await Transformation.get(transformation_id)
@@ -190,26 +227,28 @@ async def update_transformation(transformation_id: str, transformation_update: T
             transformation.prompt = transformation_update.prompt
         if transformation_update.apply_default is not None:
             transformation.apply_default = transformation_update.apply_default
+        if "model_id" in transformation_update.model_fields_set:
+            # Validate a newly supplied model reference (allow clearing to None).
+            if transformation_update.model_id:
+                model = await Model.get(transformation_update.model_id)
+                if not model:
+                    raise HTTPException(status_code=404, detail="Model not found")
+            transformation.model_id = transformation_update.model_id
 
         await transformation.save()
 
-        return TransformationResponse(
-            id=transformation.id or "",
-            name=transformation.name,
-            title=transformation.title,
-            description=transformation.description,
-            prompt=transformation.prompt,
-            apply_default=transformation.apply_default,
-            created=str(transformation.created),
-            updated=str(transformation.updated),
-        )
+        return _transformation_response(transformation)
     except HTTPException:
         raise
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error updating transformation {transformation_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error updating transformation: {e!s}")
+        logger.error(f"Error updating transformation {transformation_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error updating transformation: {str(e)}"
+        )
 
 
 @router.delete("/transformations/{transformation_id}")
@@ -225,6 +264,10 @@ async def delete_transformation(transformation_id: str):
         return {"message": "Transformation deleted successfully"}
     except HTTPException:
         raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error deleting transformation {transformation_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error deleting transformation: {e!s}")
+        logger.error(f"Error deleting transformation {transformation_id}: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Error deleting transformation: {str(e)}"
+        )

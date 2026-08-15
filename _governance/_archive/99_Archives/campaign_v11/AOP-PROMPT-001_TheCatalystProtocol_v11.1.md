@@ -1,19 +1,16 @@
 # AOP-PROMPT-001_TheCatalystProtocol_v11.1.md
 
-### **Block A: The Identification Lock (UIP-V14)**
+## **Block A: The Identification Lock (UIP-V15)**
 
-| Key | Value | Description |
-| :--- | :--- | :--- |
-| **Artifact ID** | `AOP-PROMPT-001` | The Sovereign ID. |
-| **Official Name** | `AOP-PROMPT-001_TheCatalystProtocol_v11.1.md` | The Filename. |
-| **Version** | **v14.0 [OMEGA]** | The Standard. |
-| **Domain** | `GVRN` | The Subject. |
-| **Celestial Class** | `[PLANET]` | The Weight. |
-| **Evolution** | `Purposeful Drive` | The Maturity. |
-| **Status (State)** | `[ACTIVE]` | The Lifecycle. |
-| **Ethos** | `Crystalline Structure` | The Intent. |
-| **Relations** | `GUIDES: UMB-CSE-001, IMPLEMENTS: The Forge Analogy` | The Network. |
-| **Integrity Hash** | `[AUTO-GENERATED]` | Verification. |
+| Key               | Value                             | Description       |
+| :---------------- | :-------------------------------- | :---------------- |
+| **Artifact ID**   | `AOP-PROMPT-001` | The Sovereign ID. |
+| **Official Name** | `AOP-PROMPT-001_TheCatalystProtocol_v11.1.md` | The Filename.     |
+| **Version**       | **v14.0 [OMEGA]** | The Standard.     |
+| **Domain**        | `GVRN` | The Subject.      |
+| **Status**        | `[ACTIVE]` | The Lifecycle.    |
+| **Relations**     | `GUIDES: UMB-CSE-001, IMPLEMENTS: The Forge Analogy` | The Network.      |
+
 
 ---
 

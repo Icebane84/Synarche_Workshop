@@ -15,8 +15,16 @@
 import argparse
 import os
 import re
+import sys
 
-SKIP_DIRS = {".git", "node_modules", ".venv"}
+# Windows console unicode compatibility
+sys.stdout.reconfigure(encoding="utf-8")
+
+SKIP_DIRS = {
+    ".git", "node_modules", ".venv", ".mypy_cache", ".ruff_cache",
+    "_archive", "archive", "99_Archives", "60_Archives", "entropy",
+    "incoming", "dist", "out", "playground", "prototypes", "tests", "tools", "_governance"
+}
 LINK_RE = re.compile(r"\[\[([^\]]+)\]\]|\[([^\]]+)\]\(([^)]+\.md)\)")
 
 

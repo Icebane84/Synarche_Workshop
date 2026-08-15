@@ -202,6 +202,6 @@ const ParameterWeaver: React.FC<ParameterWeaverProps> = ({ command, onSubmit, on
         </div>
     );
 };
-export default ParameterWeaver;
+export default React.memo(ParameterWeaver);
 
 

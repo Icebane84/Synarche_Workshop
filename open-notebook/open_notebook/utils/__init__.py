@@ -2,10 +2,11 @@
 Utils package for Open Notebook.
 
 To avoid circular imports, import functions directly:
-- from open_notebook.utils.context_builder import ContextBuilder
+- from open_notebook.utils.context_builder import build_notebook_context, build_source_context
 - from open_notebook.utils import token_count, compare_versions
 - from open_notebook.utils.chunking import chunk_text, detect_content_type, ContentType
 - from open_notebook.utils.embedding import generate_embedding, generate_embeddings
+- from open_notebook.utils.encryption import encrypt_value, decrypt_value
 """
 
 from .chunking import (
@@ -21,6 +22,11 @@ from .embedding import (
     generate_embeddings,
     mean_pool_embeddings,
 )
+from .encryption import (
+    decrypt_value,
+    encrypt_value,
+)
+from .model_utils import full_model_dump
 from .text_utils import (
     clean_thinking_content,
     parse_thinking_content,
@@ -39,23 +45,28 @@ __all__ = [
     "CHUNK_SIZE",
     "ContentType",
     "chunk_text",
-    "clean_thinking_content",
-    # Version utils
-    "compare_versions",
     "detect_content_type",
     "detect_content_type_from_extension",
     "detect_content_type_from_heuristics",
     # Embedding
     "generate_embedding",
     "generate_embeddings",
-    "get_installed_version",
-    "get_version_from_github",
     "mean_pool_embeddings",
-    "parse_thinking_content",
     # Text utils
     "remove_non_ascii",
     "remove_non_printable",
-    "token_cost",
+    "parse_thinking_content",
+    "clean_thinking_content",
     # Token utils
     "token_count",
+    "token_cost",
+    # Version utils
+    "compare_versions",
+    "get_installed_version",
+    "get_version_from_github",
+    # Encryption utils
+    "decrypt_value",
+    "encrypt_value",
+    # Model utils
+    "full_model_dump",
 ]

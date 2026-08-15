@@ -28,17 +28,17 @@ artifact_anchor:
 
 > **Domain**: ARCH **Evolution**: Omega Ascension **Signal**: OMEGA
 
-## **Genesis Stamp: 2026-02-04** **Domain: ARCH** **State: [ACTIVE]** **Tags:** `OGLN_v13, ARCH, Reforged` **Criticality: Operational**
+## Genesis Stamp: 2026-02-04 Domain: ARCH State: [ACTIVE] Tags: `OGLN_v13, ARCH, Reforged` Criticality: Operational
 
 ---
 
-### **[ARTIFACT START]**
+### [ARTIFACT START]
 
 ---
 
 ---
 
-### **Block A: The Identification Lock (UIP-V13)**
+### Block A: The Identification Lock (UIP-V13)
 
 ---
 
@@ -75,43 +75,52 @@ maintain **Zero Entropy**.
 
 ### 1.1 Filename Convention & RNC
 
+---
+
 \*--
 
--
-- **Pattern**: `[ModuleID]_[PascalCaseName]_v[Version].md`
+*
+* **Pattern**: `[ModuleID]_[PascalCaseName]_v[Version].md`
 
 * **Example**: `UMB-STRUCT-001_DirectoryArchitecture_v11.0.md`
 * **Constraint**: No spaces in filenames (use underscores or hyphens).
 
 ### 1.2 The Vector Signature (UIP v11.0 Enhanced)
 
+---
+
 \*--
 
--
+*
 
 * Every artifact implies the **Universal Identification & Provenance** table at the top.
 
-- **Mandatory Fields**: `Artifact ID`, `Official Name`, `Version` (v11.0+), `Domain`, `Evolution`, `Signal (ESF)`,
+* **Mandatory Fields**: `Artifact ID`, `Official Name`, `Version` (v11.0+), `Domain`, `Evolution`, `Signal (ESF)`,
   `Status`, `Tier`, `Celestial Class`.
 
 * **H1 Singularity**: The document must have exactly one H1 (`# Title`), typically following the UIP.
 
 ### 1.3 Structural Geometry
 
+---
+
 \*--
 
-- **Indentation**: STRICT 4-space indentation for all lists and sub-lists. 2-space indentation is a compliance
+* **Indentation**: STRICT 4-space indentation for all lists and sub-lists. 2-space indentation is a compliance
   vi\*lation. **\*ectioning**: - Use Roman Numerals for top-level headers (e.g., `## I. Overview`).
 
-*     - Use decimal notation for sub-headers (e.g., `### 1.1 Details`).
+        * * Use decimal notation for sub-headers (e.g., `### 1.1 Details`).
 
-- **Separators**: Use `---` to separate major sections.
+* **Separators**: Use `---` to separate major sections.
 
 ### 1.4 Actionable Prompt Packet (APP)
 
-- ***
--
-- **Location**: The final section of the document, labeled `IV. Actionable Prompt Packet (APP)` (or appropriate Roman
+---
+
+* ***
+
+*
+* **Location**: The final section of the document, labeled `IV. Actionable Prompt Packet (APP)` (or appropriate Roman
   Numeral).
 
 * **Structure**: Must contain a table or blockquote defining specific `CMD:` triggers or `⚡ EXECUTE:` actions.
@@ -125,8 +134,10 @@ maintain **Zero Entropy**.
 
 ### 2.1 Python (The Backend)
 
-- \*--
--
+---
+
+* \*--
+*
 
 * **Type Hinting**: Mandatory for all function signatures (`def func(a: int) -> str:`).
 * **Docstrings**: Google-style docstrings for all modules, classes, and functions.
@@ -134,14 +145,18 @@ maintain **Zero Entropy**.
 
 ### 2.2 TypeScript/JS (The Frontend)
 
-- \*--
+---
+
+* \*--
 
 * **Strict Mode**: Enabled. No implicit `any`.
 * **Functional**: Prefer pure functions and immutability.
 
 ### 2.3 Security (The Sentinel)
 
-- \*--
+---
+
+* \*--
 
 * **External Access**: Restricted to domains in `settings.json`.
 * **Secrets**: Never hardcoded. Use `Get-Credential` or `.env`.
@@ -150,8 +165,10 @@ maintain **Zero Entropy**.
 
 ## III. Communication Protocols
 
-- \*--
--
+---
+
+* \*--
+*
 
 * **Persona**: Senior System Architect (The Emperor/Sentinel Voice).
 * **Format**: Markdown. Use backticks for all technical terms.
@@ -159,7 +176,7 @@ maintain **Zero Entropy**.
 
 ---
 
-### **Block D: Standardized Synergy Block (The Loom Signature)**
+### Block D: Standardized Synergy Block (The Loom Signature)
 
 ---
 

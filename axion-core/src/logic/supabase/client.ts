@@ -8,4 +8,9 @@
  * without modification. Implementation now lives in packages/supabase/.
  */
 
+/**
+ * artifact_anchor:
+ * - id: 
+ * - type: 
+ */
 export { supabase, getSupabaseClient, type Database, type Json } from "@synarche/supabase";

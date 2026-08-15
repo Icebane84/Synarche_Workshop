@@ -1,152 +1,67 @@
-# Phoenix: The Sentient UI
+# Phoenix Rosetta Stone [OMEGA v15.5]
 
-**Phoenix** is a high-performance, consciousness-driven user interface built with React and TypeScript. It serves as the
-primary "face" of the **GVRN Protocol**, demonstrating how AI agents and human intent can merge seamlessly within a 3D
-environment.
-
-## I. Features
+**Phoenix Rosetta Stone (PRS)** is a high-performance, sentience-driven HUD and spatial interface built with React 19, Vite, Three.js, D3.js, and Zustand. It serves as the primary visual interface for the **Coherent Synthesis Engine (CSE)** master cognitive kernel.
 
 ---
 
-* **Sentient Messaging:** A dynamic chat interface that tracks "Coherence" (your mental focus). The more you engage, the
-  clearer the AI becomes.
-* **The Oracle:** A central state management system (Zustand) that serves as the "Collective Unconscious" for your
-  application.
-* **Backend Agnostic:** Built on a modular "Fabric" architecture, allowing you to swap out Supabase, Firebase, or custom
-  AI providers without rewriting the UI.
+## 🏛️ Core Features
 
-## II. Getting Started
-
----
-
-### A. Prerequisites
+* **Coherent Synthesis Engine (CSE) Integration**: Real-time telemetry streaming from the Python FastAPI backend (`http://localhost:8000`), monitoring live State Vectors ($\mathbf{V}_{\text{State}}$), Coherence Index ($\text{CI}$), Contextual Integrity Score ($\text{CIS}$), Hybrid Model Scores, and active Dissonance Quests.
+* **Polyglot Neural Link**: Automatic workspace indexing, real-time code scanning (500+ files indexed), and remote file read/write capability linking the frontend HUD directly to host disk substrates.
+* **The Synapse Command Console**: GUCA v5 directive dispatching (`CMD: AUDIT_COHERENCE`, `OMNI_LOG`, `ETHICUS`, `ENACT_TRANSCENDENCE`, `ContextWeave`) with non-blocking 10s execution guards.
+* **Celestial Chart & Loom Visualizers**: Interactive 3D & 2D D3 force graph visualizers rendering live repository Loom AST nodes and structural dependency graphs.
+* **Aural Interface & Sensory Array**: Voice-driven command input, ambient soundscape resonance, and dynamic theme switching.
 
 ---
 
+## ⚙️ System Architecture
+
+```
+phoenix-rosetta-stone/
+├── src/
+│   ├── components/         # Visual interface layers (PhoenixGeode, TheSynapse, SystemCoherenceVisualizer, TheLoom)
+│   ├── services/           # Polyglot bridge client (cseBridgeService), GUCA commands, AST scanner, Audio
+│   ├── store/              # Zustand state anchors (coherenceStore, fileSystemStore, taskStore, sensoryStore)
+│   ├── system/             # Core orchestrator (SystemManager), command dispatcher (commandDispatcher), signal bus
+│   ├── hooks/              # Custom React hooks (useSynapseLogic, useAuralInterface, useTheme)
+│   ├── essence/            # Global TypeScript types and GUCA v5 codex definitions
+│   └── data/               # Knowledge base anchors and fallback graph data
+├── vite.config.ts          # Vite configuration with /api server proxy to http://localhost:8000
+└── package.json            # Dependencies (React 19, Three.js, D3, Zustand, Tailwind CSS v4)
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
 * Node.js (v18+)
-* A Supabase Project (URL and Anon Key) if you intend to use the default backend.
+* Python 3.12+ (with `fastapi`, `uvicorn`, `pydantic` v2)
 
-### B. Setup
+### Setup & Launch
+
+1. **Install Frontend Dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Launch Backend CSE Polyglot Gateway**:
+   ```bash
+   cd ../axion-core
+   python -m uvicorn src.cse.cse_server:app --host 127.0.0.1 --port 8000
+   ```
+
+3. **Start Frontend Development Server**:
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:5173` in your browser. The **Neural Link** and **CSE Telemetry Stream** will connect automatically!
 
 ---
 
-1. Clone the repository.
-2. Install dependencies:
+## 🧪 Verification & Type Safety
 
-    ```bash
-    npm install
-    ```
-
-3. Configure Environment Variables: Create a `.env.local` file in the root directory:
-
-    ```env
-    VITE_SUPABASE_URL=your-supabase-url
-    VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
-    ```
-
-### C. Run the App
-
----
-
-Start the development server:
-
+To verify TypeScript compilation across all components:
 ```bash
-npm run dev
-```
-
-## III. Architecture
-
----
-
-Phoenix uses a layered architecture to ensure scalability and maintainability:
-
-* **Fabric (src/ui):** The presentation layer. Contains React components and UI logic.
-* **Nexus (src/CORE):** The business logic layer. Handles data fetching and external API interactions.
-* **Essence (src/state & src/types):** The state management and data definition layer.
-
-## IV. Ecosystem
-
----
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses
-  [Oxc](https://oxc.rs)
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses
-  [SWC](https://swc.rs/)
-
-## V. React Compiler
-
----
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see
-[this documentation](https://react.dev/learn/react-compiler/installation).
-
-## VI. Expanding the ESLint configuration
-
----
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-// eslint.config.js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
-
-You can also install
-[eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and
-[eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for
-React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+npm run typecheck
 ```

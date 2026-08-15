@@ -1,6 +1,0 @@
---- Resonance Audit ---
-_governance\00_Codex\CORE.Codex.Phoenix.md: v15=True, canonized=True, anchor=True, ts_25=True
-_governance\10_Governance\GVRN.HUD.CommandCenter.md: v15=True, canonized=True, anchor=True, ts_25=True
-_governance\10_Governance\GVRN.HUD.Map.md: v15=True, canonized=True, anchor=True, ts_25=True
-_governance\10_Governance\GVRN.AG.003.md: v15=True, canonized=True, anchor=True, ts_25=True
-_governance\10_Governance\GVRN.Sentinel.Umbra.md: v15=True, canonized=True, anchor=True, ts_25=True

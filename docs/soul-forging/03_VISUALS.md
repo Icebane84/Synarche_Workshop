@@ -26,3 +26,7 @@
 ---
 
 `[PLAN-VISUAL] ID: GVRN.SOUL.03.VISUAL VER: v15.0 [OMEGA] STATUS: CANONIZED`
+
+## Reciprocal Links
+
+- [PLAN-soul-forging.md](../PLAN-soul-forging.md)

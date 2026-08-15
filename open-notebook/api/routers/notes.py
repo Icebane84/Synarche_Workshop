@@ -5,33 +5,26 @@ from loguru import logger
 
 from api.models import NoteCreate, NoteResponse, NoteUpdate
 from open_notebook.domain.notebook import Note
-from open_notebook.exceptions import InvalidInputError
+from open_notebook.exceptions import (
+    InvalidInputError,
+    NotFoundError,
+    OpenNotebookError,
+)
 
 router = APIRouter()
 
 
-@router.get("/notes", response_model=list[NoteResponse])
+@router.get("/notes", response_model=List[NoteResponse])
 async def get_notes(
-    notebook_id: str | None = Query(None, description="Filter by notebook ID"),
+    notebook_id: Optional[str] = Query(None, description="Filter by notebook ID"),
 ):
     """Get all notes with optional notebook filtering."""
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         if notebook_id:
             # Get notes for a specific notebook
             from open_notebook.domain.notebook import Notebook
 
             notebook = await Notebook.get(notebook_id)
-            if not notebook:
-                raise HTTPException(status_code=404, detail="Notebook not found")
             notes = await notebook.get_notes()
         else:
             # Get all notes
@@ -50,9 +43,13 @@ async def get_notes(
         ]
     except HTTPException:
         raise
+    except NotFoundError:
+        raise HTTPException(status_code=404, detail="Notebook not found")
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error fetching notes: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching notes: {e!s}")
+        logger.error(f"Error fetching notes: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error fetching notes: {str(e)}")
 
 
 @router.post("/notes", response_model=NoteResponse)
@@ -65,8 +62,10 @@ async def create_note(note_data: NoteCreate):
             from open_notebook.graphs.prompt import graph as prompt_graph
 
             prompt = "Based on the Note below, please provide a Title for this content, with max 15 words"
-            result = await prompt_graph.ainvoke(
-                {  # type: ignore[arg-type]
+            # LangGraph accepts a partial state dict at runtime, but its typed
+            # overloads require the full state type (langgraph typing limitation).
+            result = await prompt_graph.ainvoke(  # type: ignore[call-overload]
+                {
                     "input_text": note_data.content,
                     "prompt": prompt,
                 }
@@ -74,25 +73,27 @@ async def create_note(note_data: NoteCreate):
             title = result.get("output", "Untitled Note")
 
         # Validate note_type
-        note_type: Literal["human", "ai"] | None = None
+        note_type: Optional[Literal["human", "ai"]] = None
         if note_data.note_type in ("human", "ai"):
             note_type = note_data.note_type  # type: ignore[assignment]
         elif note_data.note_type is not None:
-            raise HTTPException(status_code=400, detail="note_type must be 'human' or 'ai'")
+            raise HTTPException(
+                status_code=400, detail="note_type must be 'human' or 'ai'"
+            )
+
         new_note = Note(
             title=title,
             content=note_data.content,
             note_type=note_type,
         )
-        await new_note.save()
+        command_id = await new_note.save()
 
         # Add to notebook if specified
         if note_data.notebook_id:
             from open_notebook.domain.notebook import Notebook
 
-            notebook = await Notebook.get(note_data.notebook_id)
-            if not notebook:
-                raise HTTPException(status_code=404, detail="Notebook not found")
+            # Verify the notebook exists (raises NotFoundError -> 404)
+            await Notebook.get(note_data.notebook_id)
             await new_note.add_to_notebook(note_data.notebook_id)
 
         return NoteResponse(
@@ -102,14 +103,19 @@ async def create_note(note_data: NoteCreate):
             note_type=new_note.note_type,
             created=str(new_note.created),
             updated=str(new_note.updated),
+            command_id=str(command_id) if command_id else None,
         )
     except HTTPException:
         raise
+    except NotFoundError:
+        raise HTTPException(status_code=404, detail="Notebook not found")
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error creating note: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error creating note: {e!s}")
+        logger.error(f"Error creating note: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error creating note: {str(e)}")
 
 
 @router.get("/notes/{note_id}", response_model=NoteResponse)
@@ -117,8 +123,6 @@ async def get_note(note_id: str):
     """Get a specific note by ID."""
     try:
         note = await Note.get(note_id)
-        if not note:
-            raise HTTPException(status_code=404, detail="Note not found")
 
         return NoteResponse(
             id=note.id or "",
@@ -130,9 +134,13 @@ async def get_note(note_id: str):
         )
     except HTTPException:
         raise
+    except NotFoundError:
+        raise HTTPException(status_code=404, detail="Note not found")
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error fetching note {note_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error fetching note: {e!s}")
+        logger.error(f"Error fetching note {note_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error fetching note: {str(e)}")
 
 
 @router.put("/notes/{note_id}", response_model=NoteResponse)
@@ -140,8 +148,6 @@ async def update_note(note_id: str, note_update: NoteUpdate):
     """Update a note."""
     try:
         note = await Note.get(note_id)
-        if not note:
-            raise HTTPException(status_code=404, detail="Note not found")
 
         # Update only provided fields
         if note_update.title is not None:
@@ -152,9 +158,11 @@ async def update_note(note_id: str, note_update: NoteUpdate):
             if note_update.note_type in ("human", "ai"):
                 note.note_type = note_update.note_type  # type: ignore[assignment]
             else:
-                raise HTTPException(status_code=400, detail="note_type must be 'human' or 'ai'")
+                raise HTTPException(
+                    status_code=400, detail="note_type must be 'human' or 'ai'"
+                )
 
-        await note.save()
+        command_id = await note.save()
 
         return NoteResponse(
             id=note.id or "",
@@ -163,14 +171,19 @@ async def update_note(note_id: str, note_update: NoteUpdate):
             note_type=note.note_type,
             created=str(note.created),
             updated=str(note.updated),
+            command_id=str(command_id) if command_id else None,
         )
     except HTTPException:
         raise
+    except NotFoundError:
+        raise HTTPException(status_code=404, detail="Note not found")
     except InvalidInputError as e:
         raise HTTPException(status_code=400, detail=str(e))
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error updating note {note_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error updating note: {e!s}")
+        logger.error(f"Error updating note {note_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error updating note: {str(e)}")
 
 
 @router.delete("/notes/{note_id}")
@@ -178,14 +191,16 @@ async def delete_note(note_id: str):
     """Delete a note."""
     try:
         note = await Note.get(note_id)
-        if not note:
-            raise HTTPException(status_code=404, detail="Note not found")
 
         await note.delete()
 
         return {"message": "Note deleted successfully"}
     except HTTPException:
         raise
+    except NotFoundError:
+        raise HTTPException(status_code=404, detail="Note not found")
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error deleting note {note_id}: {e!s}")
-        raise HTTPException(status_code=500, detail=f"Error deleting note: {e!s}")
+        logger.error(f"Error deleting note {note_id}: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error deleting note: {str(e)}")

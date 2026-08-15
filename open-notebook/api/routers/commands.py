@@ -6,14 +6,17 @@ from pydantic import BaseModel, Field
 from surreal_commands import registry
 
 from api.command_service import CommandService
+from open_notebook.exceptions import OpenNotebookError
 
 router = APIRouter()
 
 
 class CommandExecutionRequest(BaseModel):
-    command: str = Field(..., description="Command function name (e.g., 'process_text')")
+    command: str = Field(
+        ..., description="Command function name (e.g., 'generate_podcast')"
+    )
     app: str = Field(..., description="Application name (e.g., 'open_notebook')")
-    input: dict[str, Any] = Field(..., description="Arguments to pass to the command")
+    input: Dict[str, Any] = Field(..., description="Arguments to pass to the command")
 
 
 class CommandJobResponse(BaseModel):
@@ -25,11 +28,11 @@ class CommandJobResponse(BaseModel):
 class CommandJobStatusResponse(BaseModel):
     job_id: str
     status: str
-    result: dict[str, Any] | None = None
-    error_message: str | None = None
-    created: str | None = None
-    updated: str | None = None
-    progress: dict[str, Any] | None = None
+    result: Optional[Dict[str, Any]] = None
+    error_message: Optional[str] = None
+    created: Optional[str] = None
+    updated: Optional[str] = None
+    progress: Optional[Dict[str, Any]] = None
 
 
 @router.post("/commands/jobs", response_model=CommandJobResponse)
@@ -40,23 +43,16 @@ async def execute_command(request: CommandExecutionRequest):
 
     Example request:
     {
-        "command": "process_text",
+        "command": "generate_podcast",
         "app": "open_notebook",
         "input": {
-            "text": "Hello world",
-            "operation": "uppercase"
+            "episode_profile": "tech_experts",
+            "speaker_profile": "tech_experts",
+            "episode_name": "My Episode",
+            "content": "Content to discuss"
         }
     }
     """
-
-    # --- RPG FRAMEWORK INTEGRATION (BLK-RPG-001) ---
-    # System Slot: Passive Knowledge
-    # Synergy Set: N/A
-    # Primary Stat Buff: Adaptability
-    # Passive Ability: The Forge's Heart (Auto-Refactor)
-    # Cognitive Load Cost: Low
-    # XP Award Value: 50 XP
-
     try:
         # Submit command using app name (not module name)
         job_id = await CommandService.submit_command_job(
@@ -71,9 +67,15 @@ async def execute_command(request: CommandExecutionRequest):
             message=f"Command '{request.command}' submitted successfully",
         )
 
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error submitting command: {e!s}")
-        raise HTTPException(status_code=500, detail="Failed to submit command")
+        logger.error(f"Error submitting command: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail="Failed to submit command"
+        )
 
 
 @router.get("/commands/jobs/{job_id}", response_model=CommandJobStatusResponse)
@@ -83,15 +85,21 @@ async def get_command_job_status(job_id: str):
         status_data = await CommandService.get_command_status(job_id)
         return CommandJobStatusResponse(**status_data)
 
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error fetching job status: {e!s}")
-        raise HTTPException(status_code=500, detail="Failed to fetch job status")
+        logger.error(f"Error fetching job status: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail="Failed to fetch job status"
+        )
 
 
-@router.get("/commands/jobs", response_model=list[dict[str, Any]])
+@router.get("/commands/jobs", response_model=List[Dict[str, Any]])
 async def list_command_jobs(
-    command_filter: str | None = Query(None, description="Filter by command name"),
-    status_filter: str | None = Query(None, description="Filter by status"),
+    command_filter: Optional[str] = Query(None, description="Filter by command name"),
+    status_filter: Optional[str] = Query(None, description="Filter by status"),
     limit: int = Query(50, description="Maximum number of jobs to return"),
 ):
     """List command jobs with optional filtering"""
@@ -101,9 +109,15 @@ async def list_command_jobs(
         )
         return jobs
 
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error listing command jobs: {e!s}")
-        raise HTTPException(status_code=500, detail="Failed to list command jobs")
+        logger.error(f"Error listing command jobs: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail="Failed to list command jobs"
+        )
 
 
 @router.delete("/commands/jobs/{job_id}")
@@ -113,9 +127,15 @@ async def cancel_command_job(job_id: str):
         success = await CommandService.cancel_command_job(job_id)
         return {"job_id": job_id, "cancelled": success}
 
+    except HTTPException:
+        raise
+    except OpenNotebookError:
+        raise
     except Exception as e:
-        logger.error(f"Error cancelling command job: {e!s}")
-        raise HTTPException(status_code=500, detail="Failed to cancel command job")
+        logger.error(f"Error cancelling command job: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail="Failed to cancel command job"
+        )
 
 
 @router.get("/commands/registry/debug")
@@ -156,7 +176,7 @@ async def debug_registry():
         }
 
     except Exception as e:
-        logger.error(f"Error debugging registry: {e!s}")
+        logger.error(f"Error debugging registry: {str(e)}")
         return {
             "error": str(e),
             "total_commands": 0,

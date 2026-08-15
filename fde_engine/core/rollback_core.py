@@ -43,7 +43,7 @@ class SnapshotBuffer:
         self.size = size
 
     def save(self, frame, world):
-        self.buffer[frame] = copy.deepcopy(world)
+        self.buffer[frame] = world.snapshot()
 
         old = frame - self.size
         if old in self.buffer:
@@ -72,17 +72,18 @@ class RollbackEngine:
             self.rollback(frame, world)
 
 
-def rollback(self, target_frame, world):
-    print(f"[ROLLBACK] Mismatch detected. Rewinding to frame {target_frame - 1}")
+    def rollback(self, target_frame, world):
+        print(f"[ROLLBACK] Mismatch detected. Rewinding to frame {target_frame - 1}")
 
-    # 1. Load the shallow pointer dictionary
-    restored_snap = self.snapshots.load(target_frame - 1)
+        # 1. Load historical snapshot
+        restored_snap = self.snapshots.load(target_frame - 1)
 
-    # 2. Instruct the World to re-align its internal pointers
-    world.restore(restored_snap)
+        # 2. Instruct World to restore state
+        world.restore(restored_snap)
 
-    # 3. Resimulate forward
-    for f in range(target_frame, self.current_frame + 1):
-        world.current_inputs = self.input_log.get(f)
-        self.scheduler.run_frame(world)
-        self.snapshots.save(f, world)
+        # 3. Resimulate forward to current frame
+        for f in range(target_frame, self.current_frame + 1):
+            world.current_inputs = self.input_log.get(f)
+            self.scheduler.run_frame(world)
+            self.snapshots.save(f, world)
+

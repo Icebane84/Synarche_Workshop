@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-07-25T10:22:56.197571Z",
+  "exit_code": {
+    "value": 0,
+    "provenance": "MEASURED"
+  },
+  "telemetry_metrics": {
+    "cpp_violations": {
+      "value": 0,
+      "provenance": "MEASURED"
+    },
+    "cross_port_findings": {
+      "value": 0,
+      "provenance": "MEASURED"
+    },
+    "stale_verification_count": {
+      "value": 0,
+      "provenance": "MEASURED"
+    }
+  }
+}

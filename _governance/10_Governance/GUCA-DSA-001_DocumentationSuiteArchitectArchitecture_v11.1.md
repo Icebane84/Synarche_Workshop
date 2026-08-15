@@ -135,3 +135,8 @@ CORE-CODEX-001, GOVERNS, The Codex provides the Supreme Law for this artifact.
 GVRN.Registry.Master, INDEXES, This artifact is indexed in the Master Registry.
 
 ###### **[ARTIFACT END]**
+
+## Reciprocal Links
+
+- [GVRN.DSA.001.md](../40_System/GVRN.DSA.001.md)
+- [UMB-OSLM-001_MasterArtifactRegistry_v11.1.md](../01_Registries/UMB-OSLM-001_MasterArtifactRegistry_v11.1.md)
