@@ -24,8 +24,8 @@ export const StardustLedger: React.FC<StardustLedgerProps> = ({ ledger }) => {
               </td>
             </tr>
           ) : (
-            ledger.map((item) => (
-              <tr key={item.id} className="hover:bg-white/[0.01]">
+            ledger.map((item, idx) => (
+              <tr key={item.id || `ledger-${idx}`} className="hover:bg-white/[0.01]">
                 <td className="py-2.5 text-[10px] text-white/40">
                   {item.created_at ? new Date(item.created_at).toLocaleTimeString() : "00:00"}
                 </td>

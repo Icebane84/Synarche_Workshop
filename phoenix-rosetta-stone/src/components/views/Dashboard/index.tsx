@@ -153,9 +153,9 @@ export const DashboardView: React.FC = () => {
                 No memory fragments detected. Create one in the Memory Palace.
               </div>
             ) : (
-              recentMemories.map((memory) => (
+              recentMemories.map((memory, idx) => (
                 <div 
-                  key={memory.id} 
+                  key={memory.id || `memory-${idx}`} 
                   className="bg-panel-bg/40 border border-white/5 p-4 rounded-lg hover:border-white/10 transition-colors font-mono"
                 >
                   <div className="flex items-center justify-between mb-2">

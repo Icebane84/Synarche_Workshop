@@ -40,9 +40,9 @@ export const NotificationsView: React.FC = () => {
           </div>
         ) : (
           <div className="space-y-3">
-            {notifications.map((notif) => (
+            {notifications.map((notif, idx) => (
               <div
-                key={notif.id}
+                key={notif.id || `notif-${idx}`}
                 className={`bg-panel-bg/40 border p-4 rounded-lg font-mono text-xs flex items-start gap-4 transition-all duration-300 ${
                   notif.read ? "border-white/5 opacity-70" : "border-celestial-blue/30 shadow-[0_0_10px_rgba(119,181,254,0.05)]"
                 }`}

@@ -26,14 +26,14 @@ export const ActivityRail: React.FC = () => {
         ) : entries.length === 0 ? (
           <div className="text-xs text-white/20 italic">No kinetic records found.</div>
         ) : (
-          entries.map((entry) => {
+          entries.map((entry, idx) => {
             const dateStr = entry.timestamp 
               ? new Date(entry.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }) 
               : "00:00:00";
 
             return (
               <div 
-                key={entry.id} 
+                key={entry.id || `entry-${entry.timestamp || idx}-${idx}`} 
                 className="text-xs border-b border-white/5 pb-2 animate-appear hover:bg-white/[0.02] p-1 rounded transition-colors"
               >
                 <div className="flex items-center justify-between gap-1 text-[10px] text-white/30 mb-0.5">

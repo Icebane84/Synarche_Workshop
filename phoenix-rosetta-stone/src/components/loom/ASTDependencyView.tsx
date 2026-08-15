@@ -68,9 +68,9 @@ export const ASTDependencyView: React.FC = () => {
 
             {/* File Health Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                {filteredFiles.map(({ file, tasks: fileTasks, hasHigh, isClean }) => (
+                {filteredFiles.map(({ file, tasks: fileTasks, hasHigh, isClean }, idx) => (
                     <div
-                        key={file.path}
+                        key={file.path || file.name || `ast-file-${idx}`}
                         className={`p-3 rounded-lg border transition-all ${
                             isClean
                                 ? 'bg-slate-950/40 border-emerald-900/30 hover:border-emerald-500/40'
