@@ -90,7 +90,13 @@ const TheLoomPage: React.FC = () => {
     const visibleTaskIds = useMemo(() => {
         const ids: string[] = [];
         COLUMNS.forEach((status) => {
-            tasksByStatus[status].slice(0, visibleCounts[status]).forEach((t) => ids.push(t.id));
+            tasksByStatus[status]
+                .slice(0, visibleCounts[status])
+                .forEach((t) => {
+                    if (t.id && t.id.trim() !== '') {
+                        ids.push(t.id);
+                    }
+                });
         });
         return ids;
     }, [tasksByStatus, visibleCounts]);
@@ -213,9 +219,9 @@ const TheLoomPage: React.FC = () => {
                 {/* Domain Filter Tabs */}
                 <div className="flex items-center gap-1.5 flex-wrap">
                     <span className="text-[10px] uppercase font-mono text-cyan-400 mr-1 tracking-wider">Source:</span>
-                    {(['All', 'Dissonance Scanner', 'Manual', 'Synergy Simulator', 'Neural Link'] as const).map((src) => (
+                    {(['All', 'Dissonance Scanner', 'Manual', 'Synergy Simulator', 'Neural Link'] as const).map((src, idx) => (
                         <button
-                            key={src}
+                            key={src || `src-${idx}`}
                             onClick={() => setSourceFilter(src)}
                             className={`px-2.5 py-1 rounded text-[10px] font-mono transition-all ${
                                 sourceFilter === src
@@ -447,9 +453,9 @@ const AutonomySelector = ({ mode, setMode }: { mode: MaintenanceMode; setMode: (
 
     return (
         <div className="glass-panel p-1 flex gap-1">
-            {modes.map((m) => (
+            {modes.map((m, idx) => (
                 <button
-                    key={m.id}
+                    key={m.id || `mode-${idx}`}
                     onClick={() => { setMode(m.id); }}
                     className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-all text-[10px] uppercase tracking-widest font-mono ${
                         mode === m.id 
