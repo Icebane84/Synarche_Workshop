@@ -94,8 +94,11 @@ export const useTaskStore = create<TaskState>((set, get) => {
     // Hoisted helper functions to avoid nesting depth issues (S2004)
     const handleInsert = (payload: { new: Record<string, unknown> }) => {
         const payloadTask = payload.new as unknown as Task & { timestamp: string | number };
+        const rawId = payloadTask.id ? String(payloadTask.id).trim() : '';
+        const id = rawId !== '' ? rawId : `TASK-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
         const newTask = {
             ...payloadTask,
+            id,
             timestamp: new Date(payloadTask.timestamp).getTime(),
         } as Task;
 
@@ -108,8 +111,11 @@ export const useTaskStore = create<TaskState>((set, get) => {
 
     const handleUpdate = (payload: { new: Record<string, unknown> }) => {
         const payloadTask = payload.new as unknown as Task & { timestamp: string | number };
+        const rawId = payloadTask.id ? String(payloadTask.id).trim() : '';
+        const id = rawId !== '' ? rawId : `TASK-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
         const updatedTask = {
             ...payloadTask,
+            id,
             timestamp: new Date(payloadTask.timestamp).getTime(),
         } as Task;
 
@@ -149,7 +155,8 @@ export const useTaskStore = create<TaskState>((set, get) => {
                 const fetchedTasks: Task[] = [];
 
                 for (const item of (data ?? [])) {
-                    let id = (item.id as string) || `TASK-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+                    const rawId = item.id ? String(item.id).trim() : '';
+                    let id = rawId !== '' ? rawId : `TASK-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
                     if (seenIds.has(id)) {
                         id = `${id}-${Math.random().toString(36).slice(2, 6)}`;
                     }

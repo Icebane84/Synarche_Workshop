@@ -74,16 +74,22 @@ export const KanbanColumn: React.FC<KanbanColumnProps> = ({
             <div className="flex-1 overflow-y-auto space-y-4 pr-1 custom-scrollbar min-h-0">
                 {tasks.length > 0 ? (
                     <AnimatePresence mode="popLayout">
-                        {tasks.slice(0, visibleCount).map((task, idx) => (
-                            <TaskCard
-                                key={`${task.id || 'task'}-${task.timestamp || idx}-${idx}`}
-                                task={task}
-                                onSelect={() => { onSelectTask(task.id); }}
-                                onStatusChange={(newStatus) => { onStatusChange(task.id, newStatus); }}
-                                isSelected={selectedTaskIds?.has(task.id)}
-                                onToggleSelect={onToggleSelectTask ? () => onToggleSelectTask(task.id) : undefined}
-                            />
-                        ))}
+                        {tasks.slice(0, visibleCount).map((task, idx) => {
+                            const cardKey = task.id && task.id.trim() !== ''
+                                ? task.id
+                                : `task-fallback-${task.timestamp || Date.now()}-${idx}`;
+
+                            return (
+                                <TaskCard
+                                    key={cardKey}
+                                    task={task}
+                                    onSelect={() => { onSelectTask(task.id); }}
+                                    onStatusChange={(newStatus) => { onStatusChange(task.id, newStatus); }}
+                                    isSelected={selectedTaskIds?.has(task.id)}
+                                    onToggleSelect={onToggleSelectTask ? () => onToggleSelectTask(task.id) : undefined}
+                                />
+                            );
+                        })}
                     </AnimatePresence>
                 ) : (
                     <div className="h-full flex items-center justify-center text-weft-muted text-[10px] uppercase tracking-tighter opacity-20">
