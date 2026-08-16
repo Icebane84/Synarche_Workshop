@@ -1,0 +1,165 @@
+{
+  "producer_ground_truth": {
+    "scenario_1_nominal": {
+      "initial_pressure": 0.4,
+      "event_id": "e006-event-nominal-001",
+      "verdicts_count": 0,
+      "pattern_hits_count": 0,
+      "expected_verdicts": 0
+    },
+    "scenario_2_stress": {
+      "initial_pressure": 0.85,
+      "event_id": "e006-event-stress-002",
+      "verdicts_count": 1,
+      "verdict_rules": [
+        "GOV-002"
+      ],
+      "expected_verdicts": 1
+    },
+    "scenario_3_overflow": {
+      "initial_pressure": 0.95,
+      "event_id": "e006-event-overflow-003",
+      "verdicts_count": 2,
+      "verdict_rules": [
+        "GOV-002",
+        "GOV-007"
+      ],
+      "pattern_hits_count": 1,
+      "expected_verdicts": 2
+    },
+    "scenario_4_risk": {
+      "initial_risk": 0.92,
+      "event_id": "e006-event-risk-004",
+      "verdicts_count": 1,
+      "verdict_rules": [
+        "GOV-006"
+      ],
+      "expected_verdicts": 1
+    }
+  },
+  "wire_payload": {
+    "scenario_nominal": {
+      "contract_version": "v0.1",
+      "initial_pressure": 0.4,
+      "state": {
+        "contract_version": "v0.1",
+        "tick_count": 1,
+        "active_nodes": 4000,
+        "attention_budget": 0.7499999999999999,
+        "governance_verdicts": [],
+        "pattern_hits": []
+      },
+      "event": {
+        "contract_version": "v0.1",
+        "id": "e006-event-nominal-001",
+        "source": "Agent.SensoryStream",
+        "type": "NOMINAL_EXPERIENCE",
+        "payload": "Continuous operational sensory ingestion under stable vitals.",
+        "timestamp": "2026-08-16T14:00:00+00:00"
+      }
+    },
+    "scenario_stress": {
+      "contract_version": "v0.1",
+      "initial_pressure": 0.85,
+      "state": {
+        "contract_version": "v0.1",
+        "tick_count": 1,
+        "active_nodes": 8500,
+        "attention_budget": 0.7499999999999999,
+        "governance_verdicts": [
+          {
+            "contract_version": "v0.1",
+            "rule_id": "GOV-002",
+            "fired": true,
+            "effect": "trigger_maintenance_cycle",
+            "field": "memory_pressure",
+            "actual": 0.85,
+            "threshold": 0.75
+          }
+        ],
+        "pattern_hits": []
+      },
+      "event": {
+        "contract_version": "v0.1",
+        "id": "e006-event-stress-002",
+        "source": "Agent.MemoryStressTest",
+        "type": "MEMORY_STRESS_EXPERIENCE",
+        "payload": "Heavy associative ingestion triggering memory stress cascade.",
+        "timestamp": "2026-08-16T14:01:00+00:00"
+      }
+    },
+    "scenario_overflow": {
+      "contract_version": "v0.1",
+      "initial_pressure": 0.95,
+      "state": {
+        "contract_version": "v0.1",
+        "tick_count": 1,
+        "active_nodes": 9500,
+        "attention_budget": 0.7499999999999999,
+        "governance_verdicts": [
+          {
+            "contract_version": "v0.1",
+            "rule_id": "GOV-002",
+            "fired": true,
+            "effect": "trigger_maintenance_cycle",
+            "field": "memory_pressure",
+            "actual": 0.95,
+            "threshold": 0.75
+          },
+          {
+            "contract_version": "v0.1",
+            "rule_id": "GOV-007",
+            "fired": true,
+            "effect": "trigger_pattern_mine",
+            "field": "memory_pressure",
+            "actual": 0.95,
+            "threshold": 0.9
+          }
+        ],
+        "pattern_hits": [
+          {
+            "trigger": "overflow_pressure"
+          }
+        ]
+      },
+      "event": {
+        "contract_version": "v0.1",
+        "id": "e006-event-overflow-003",
+        "source": "Agent.MemoryOverflow",
+        "type": "OVERFLOW_EXPERIENCE",
+        "payload": "Overflow pressure exceeding 0.90 threshold for pattern mining.",
+        "timestamp": "2026-08-16T14:02:00+00:00"
+      }
+    },
+    "scenario_risk": {
+      "contract_version": "v0.1",
+      "initial_risk": 0.92,
+      "state": {
+        "contract_version": "v0.1",
+        "tick_count": 1,
+        "active_nodes": 4000,
+        "attention_budget": 0.7499999999999999,
+        "governance_verdicts": [
+          {
+            "contract_version": "v0.1",
+            "rule_id": "GOV-006",
+            "fired": true,
+            "effect": "block_action",
+            "field": "action_risk_score",
+            "actual": 0.92,
+            "threshold": 0.85
+          }
+        ],
+        "pattern_hits": []
+      },
+      "event": {
+        "contract_version": "v0.1",
+        "id": "e006-event-risk-004",
+        "source": "Agent.RiskActor",
+        "type": "HIGH_RISK_ACTION_EXPERIENCE",
+        "payload": "Attempting destructive or unverified state reconfiguration.",
+        "timestamp": "2026-08-16T14:03:00+00:00"
+      }
+    }
+  }
+}

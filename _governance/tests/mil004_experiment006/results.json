@@ -1,0 +1,119 @@
+{
+  "experiment": "MIL-004 / Experiment 006",
+  "boundary": "CognitiveEvent -> CognitiveScheduler -> CognitiveState -> GovernanceEngine -> Verdict",
+  "composite_invariants": {
+    "state_dependent_causality_proven": true,
+    "control_case_non_firing_proven": true,
+    "governance_side_effect_propagation_proven": true,
+    "sibling_contract_conformance_proven": true,
+    "multi_contract_semantic_integrity_proven": true
+  },
+  "overall_status": "PROVEN",
+  "total_assertions": 7,
+  "passed_count": 7,
+  "failed_count": 0,
+  "assertions": [
+    {
+      "name": "1. Contract Version Discriminant",
+      "status": "PASSED",
+      "details": {
+        "version": "v0.1"
+      }
+    },
+    {
+      "name": "2. Nominal Control Case (Pressure 0.40 -> Zero Governance Verdicts Fired)",
+      "status": "PASSED",
+      "details": {
+        "initialPressure": 0.4,
+        "verdictsCount": 0
+      }
+    },
+    {
+      "name": "3. State-Dependent Causality (Pressure 0.85 -> GOV-002 Trigger Maintenance Fired)",
+      "status": "PASSED",
+      "details": {
+        "initialPressure": 0.85,
+        "fired": true,
+        "verdicts": [
+          {
+            "contract_version": "v0.1",
+            "rule_id": "GOV-002",
+            "fired": true,
+            "effect": "trigger_maintenance_cycle",
+            "field": "memory_pressure",
+            "actual": 0.85,
+            "threshold": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "name": "4. Governance Effect Propagation (Pressure 0.95 -> GOV-007 Fired & Pattern Hit Injected)",
+      "status": "PASSED",
+      "details": {
+        "overflowVerdicts": [
+          {
+            "contract_version": "v0.1",
+            "rule_id": "GOV-002",
+            "fired": true,
+            "effect": "trigger_maintenance_cycle",
+            "field": "memory_pressure",
+            "actual": 0.95,
+            "threshold": 0.75
+          },
+          {
+            "contract_version": "v0.1",
+            "rule_id": "GOV-007",
+            "fired": true,
+            "effect": "trigger_pattern_mine",
+            "field": "memory_pressure",
+            "actual": 0.95,
+            "threshold": 0.9
+          }
+        ],
+        "patternHits": [
+          {
+            "trigger": "overflow_pressure"
+          }
+        ]
+      }
+    },
+    {
+      "name": "5. Event Metadata Risk Gating (Risk 0.92 -> GOV-006 Block Action Fired)",
+      "status": "PASSED",
+      "details": {
+        "fired": true,
+        "eventType": "HIGH_RISK_ACTION_EXPERIENCE",
+        "verdicts": [
+          {
+            "contract_version": "v0.1",
+            "rule_id": "GOV-006",
+            "fired": true,
+            "effect": "block_action",
+            "field": "action_risk_score",
+            "actual": 0.92,
+            "threshold": 0.85
+          }
+        ]
+      }
+    },
+    {
+      "name": "6. Sibling Contract Conformance (State Verdicts Conform to GovernanceVerdictContract_v0_1)",
+      "status": "PASSED",
+      "details": {
+        "stressVerdictValid": true,
+        "overflowVerdictValid": true,
+        "riskVerdictValid": true
+      }
+    },
+    {
+      "name": "7. Multi-Contract Semantic Integrity (Event Ingestion -> State Progression -> Attention Decay)",
+      "status": "PASSED",
+      "details": {
+        "eventPayload": "Heavy associative ingestion triggering memory stress cascade.",
+        "tickCount": 1,
+        "attentionBudget": 0.7499999999999999
+      }
+    }
+  ]
+}
