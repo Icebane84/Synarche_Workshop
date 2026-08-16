@@ -12,6 +12,7 @@
 | **Relations**     | `GOVERNS: DOCUMENTATION_SUBSYSTEM` | The Network.      |
 
 
+
 ---
 
 ### **Block B: State Vector (AGP-001)**

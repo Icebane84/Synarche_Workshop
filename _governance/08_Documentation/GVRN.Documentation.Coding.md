@@ -12,6 +12,7 @@
 | **Relations**     | `GOVERNS: ALL_DEVELOPMENT` | The Network.      |
 
 
+
 ---
 
 ### **Block B: State Vector (AGP-001)**

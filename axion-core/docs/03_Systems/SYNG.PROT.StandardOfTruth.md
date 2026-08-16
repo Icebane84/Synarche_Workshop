@@ -12,6 +12,7 @@
 | **Relations**     | `MONITORS: SYNG.LOOM.CORE, GOVERNED_BY: CORE-CODEX-001` | The Network.      |
 
 
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

@@ -23,6 +23,7 @@
 
 
 
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

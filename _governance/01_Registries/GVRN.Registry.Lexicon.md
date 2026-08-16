@@ -12,6 +12,7 @@
 | **Relations**     | `DEFINES: GVRN.Taxonomy.Relationships` | The Network.      |
 
 
+
 ---
 
 ### **Block B: State Vector (AGP-001)**

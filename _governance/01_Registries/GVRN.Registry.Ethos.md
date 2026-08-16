@@ -12,6 +12,7 @@
 | **Relations**     | `INDEXES: CORE.Codex.Phoenix` | The Network.      |
 
 
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

@@ -12,6 +12,7 @@
 | **Relations**     | `GOVERNED_BY: GVRN.CODEX.STAR.CORE.001` | The Network.      |
 
 
+
 ---
 
 ### **Block D: Standardized Synergy Block (The Loom Signature)**

@@ -13,6 +13,7 @@
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
 
+
 ---
 
 ### **Block B: State Vector (AGP-001)**

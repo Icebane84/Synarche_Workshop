@@ -12,6 +12,7 @@
 | **Relations**     | `GOVERN_BY: GVRN.Codex.Genesis` | The Network.      |
 
 
+
 ---
 
 ### **Block B: State Vector (AGP-001)**

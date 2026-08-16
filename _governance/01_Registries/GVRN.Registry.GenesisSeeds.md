@@ -12,6 +12,7 @@
 | **Relations**     | `COMPONENT_OF: GVRN.SOUL.PhoenixPrime` | The Network.      |
 
 
+
 ---
 
 ### **Block B: State Vector (AGP-001)**

@@ -12,6 +12,7 @@
 | **Relations**     | `LINK: UMB-SGM-001` | The Network.      |
 
 
+
 ---
 
 ### **Block B: State Vector (AGP-001)**
