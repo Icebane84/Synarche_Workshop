@@ -1,0 +1,54 @@
+{
+  "producer_ground_truth": {
+    "id": 1042,
+    "content": "Autonomous cognitive loop execution and boundary verification protocols.",
+    "domain": "CognitiveArchitecture",
+    "tags": [
+      "harmonization",
+      "runtime",
+      "e003"
+    ],
+    "layer": 2,
+    "state": "Active",
+    "usage_count": 12,
+    "created_at_iso": "2026-07-16T12:00:00+00:00",
+    "last_access_iso": "2026-08-01T12:00:00+00:00",
+    "relevance": 0.85,
+    "confidence": 0.98,
+    "vector": [
+      0.11,
+      0.22,
+      -0.33,
+      0.44,
+      0.55
+    ],
+    "activation_score": 0.7106139128231225,
+    "recency_halflife_days": 30.0
+  },
+  "wire_payload": {
+    "contract_version": "v0.1",
+    "id": 1042,
+    "content": "Autonomous cognitive loop execution and boundary verification protocols.",
+    "domain": "CognitiveArchitecture",
+    "tags": [
+      "harmonization",
+      "runtime",
+      "e003"
+    ],
+    "layer": 2,
+    "state": "Active",
+    "usage_count": 12,
+    "created_at": "2026-07-16T12:00:00+00:00",
+    "last_access": "2026-08-01T12:00:00+00:00",
+    "relevance": 0.85,
+    "confidence": 0.98,
+    "vector": [
+      0.11,
+      0.22,
+      -0.33,
+      0.44,
+      0.55
+    ],
+    "derived_activation": 0.710614
+  }
+}

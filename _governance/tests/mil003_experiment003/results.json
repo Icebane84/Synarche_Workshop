@@ -1,0 +1,113 @@
+{
+  "experiment": "MIL-003 / Experiment 003",
+  "boundary": "Python MemoryEntry -> Wire -> TypeScript MemoryNodeContract_v0_1",
+  "boundary_integrity": {
+    "persisted_state_preserved": true,
+    "derived_state_non_authority_proven": true,
+    "lifecycle_rules_deterministic": true,
+    "mathematical_formula_parity": true
+  },
+  "overall_status": "PROVEN",
+  "total_assertions": 11,
+  "passed_count": 11,
+  "failed_count": 0,
+  "assertions": [
+    {
+      "name": "1. Contract Version Discriminant",
+      "status": "PASSED",
+      "details": {
+        "expected": "v0.1",
+        "actual": "v0.1"
+      }
+    },
+    {
+      "name": "2. Persisted Integer ID Preservation",
+      "status": "PASSED",
+      "details": {
+        "expected": 1042,
+        "actual": 1042
+      }
+    },
+    {
+      "name": "3. Content & Domain Preservation",
+      "status": "PASSED",
+      "details": {
+        "expectedDomain": "CognitiveArchitecture",
+        "actualDomain": "CognitiveArchitecture"
+      }
+    },
+    {
+      "name": "4. Tags Classification Parity",
+      "status": "PASSED",
+      "details": {
+        "expected": [
+          "harmonization",
+          "runtime",
+          "e003"
+        ],
+        "actual": [
+          "harmonization",
+          "runtime",
+          "e003"
+        ]
+      }
+    },
+    {
+      "name": "5. Memory Layer Stratification Preservation (L2 Kinetic)",
+      "status": "PASSED",
+      "details": {
+        "expected": 2,
+        "actual": 2
+      }
+    },
+    {
+      "name": "6. 4-State Machine Value Preservation ('Active')",
+      "status": "PASSED",
+      "details": {
+        "expected": "Active",
+        "actual": "Active"
+      }
+    },
+    {
+      "name": "7. Relevance & Epistemic Confidence Parity",
+      "status": "PASSED",
+      "details": {
+        "relevance": 0.85,
+        "confidence": 0.98
+      }
+    },
+    {
+      "name": "8. Vector Embedding Array Fidelity",
+      "status": "PASSED",
+      "details": {
+        "length": 5
+      }
+    },
+    {
+      "name": "9. Derived Activation Float Parity",
+      "status": "PASSED",
+      "details": {
+        "producer": 0.7106139128231225,
+        "wire": 0.710614,
+        "delta": 8.717687749459913e-8
+      }
+    },
+    {
+      "name": "10. Derived State Non-Authority & Deterministic Recalculation",
+      "status": "PASSED",
+      "details": {
+        "recalculated": 0.7068294420654346
+      }
+    },
+    {
+      "name": "11. 4-State Machine Rule Evaluation Determinism (MemoryProtocols Parity)",
+      "status": "PASSED",
+      "details": {
+        "activeTransition": "Active",
+        "fadingTransition": "Fading",
+        "consolidatedTransition": "Consolidated",
+        "archivedTransition": "Archived"
+      }
+    }
+  ]
+}
