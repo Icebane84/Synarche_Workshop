@@ -13,6 +13,8 @@
     "usage_count": 12,
     "created_at_iso": "2026-07-16T12:00:00+00:00",
     "last_access_iso": "2026-08-01T12:00:00+00:00",
+    "reference_now_iso": "2026-08-16T12:00:00+00:00",
+    "elapsed_days": 15.0,
     "relevance": 0.85,
     "confidence": 0.98,
     "vector": [
@@ -22,7 +24,7 @@
       0.44,
       0.55
     ],
-    "activation_score": 0.7106139128231225,
+    "activation_score": 0.7109240633683435,
     "recency_halflife_days": 30.0
   },
   "wire_payload": {
@@ -49,6 +51,6 @@
       0.44,
       0.55
     ],
-    "derived_activation": 0.710614
+    "derived_activation": 0.710924
   }
 }

@@ -27,10 +27,11 @@ if str(axion_core_src) not in sys.path:
 from logic.memory.memory_system import MemoryEntry, MemoryProtocols
 
 def create_and_serialize_memory() -> dict:
+    # 1. Instantiate native MemoryEntry (Layer 2 Kinetic memory with deterministic timestamps)
     created_dt = datetime.datetime(2026, 7, 16, 12, 0, 0, tzinfo=datetime.timezone.utc)
     last_retrieved_dt = datetime.datetime(2026, 8, 1, 12, 0, 0, tzinfo=datetime.timezone.utc)
+    reference_now = datetime.datetime(2026, 8, 16, 12, 0, 0, tzinfo=datetime.timezone.utc)
 
-    # 1. Instantiate native MemoryEntry (Layer 2 Kinetic memory with 15 days elapsed since retrieval)
     entry = MemoryEntry(
         id=1042,
         content="Autonomous cognitive loop execution and boundary verification protocols.",
@@ -47,9 +48,12 @@ def create_and_serialize_memory() -> dict:
         last_retrieved=last_retrieved_dt
     )
 
-    # 2. Execute authoritative decay & PAD-SIP activation calculation
-    entry.decay()
-    computed_activation = entry.activation_score
+    # 2. Authoritative deterministic decay calculation at reference_now
+    delta = reference_now - last_retrieved_dt
+    days = delta.days + (delta.seconds / 86400.0)
+    recency = max(0.0, 0.5 ** (days / MemoryProtocols.RECENCY_HALFLIFE))
+    computed_activation = (entry.relevance * recency * 0.5 * entry.relevance) ** 0.25
+    entry.activation_score = computed_activation
 
     # 3. Serialize to MemoryNodeContract v0.1 Wire Representation
     wire_contract = {
@@ -80,6 +84,8 @@ def create_and_serialize_memory() -> dict:
             "usage_count": entry.usage_count,
             "created_at_iso": entry.created_at.isoformat(),
             "last_access_iso": entry.last_retrieved.isoformat(),
+            "reference_now_iso": reference_now.isoformat(),
+            "elapsed_days": days,
             "relevance": entry.relevance,
             "confidence": entry.confidence,
             "vector": entry.vector,

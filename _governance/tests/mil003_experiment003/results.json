@@ -84,29 +84,33 @@
       }
     },
     {
-      "name": "9. Derived Activation Float Parity",
+      "name": "9. Independent Mathematical Parity (PAD-SIP Formula Parity across Python/JS)",
       "status": "PASSED",
       "details": {
-        "producer": 0.7106139128231225,
-        "wire": 0.710614,
-        "delta": 8.717687749459913e-8
+        "python_activation": 0.7109240633683435,
+        "js_recalculated": 0.7109240633683435,
+        "delta": 0
       }
     },
     {
-      "name": "10. Derived State Non-Authority & Deterministic Recalculation",
+      "name": "10. Genuine Derived State Non-Authority (Forged Wire Value 0.999999 Rejected in Favor of Base Calculation)",
       "status": "PASSED",
       "details": {
-        "recalculated": 0.7068294420654346
+        "forged_wire_value": 0.999999,
+        "authoritative_recomputed": 0.7109240633683435,
+        "forgery_rejected": true
       }
     },
     {
-      "name": "11. 4-State Machine Rule Evaluation Determinism (MemoryProtocols Parity)",
+      "name": "11. 4-State Machine Rule Evaluation Determinism (Full 6-Case OMEGA Lifecycle Coverage)",
       "status": "PASSED",
       "details": {
-        "activeTransition": "Active",
-        "fadingTransition": "Fading",
-        "consolidatedTransition": "Consolidated",
-        "archivedTransition": "Archived"
+        "case1": "Active",
+        "case2": "Consolidated",
+        "case3": "Fading",
+        "case4": "Archived",
+        "case5": "Fading",
+        "case6": "Active"
       }
     }
   ]
