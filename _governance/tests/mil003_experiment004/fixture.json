@@ -1,0 +1,122 @@
+{
+  "producer_ground_truth": {
+    "edges": [
+      {
+        "edge_id": "edge-e004-similar-001",
+        "source_id": 1042,
+        "target_id": 1088,
+        "rel_type": "SIMILAR_TO",
+        "strength": 0.88,
+        "created_at_iso": "2026-08-16T12:00:00+00:00",
+        "metadata": {
+          "similarity_metric": "cosine",
+          "threshold": 0.85
+        },
+        "expected_semantics": "SYMMETRIC"
+      },
+      {
+        "edge_id": "edge-e004-caused-002",
+        "source_id": 1042,
+        "target_id": 1001,
+        "rel_type": "CAUSED_BY",
+        "strength": 0.95,
+        "created_at_iso": "2026-08-16T12:00:00+00:00",
+        "metadata": {
+          "causal_confidence": 0.95,
+          "mechanism": "temporal_precedence"
+        },
+        "expected_semantics": "ASYMMETRIC_CAUSAL"
+      },
+      {
+        "edge_id": "edge-e004-governed-003",
+        "source_id": 1042,
+        "target_id": 2001,
+        "rel_type": "GOVERNED_BY",
+        "strength": 1.0,
+        "created_at_iso": "2026-08-16T12:00:00+00:00",
+        "metadata": {
+          "law_anchor": "CORE.Codex.Phoenix",
+          "enforceable": true
+        },
+        "expected_semantics": "ASYMMETRIC_GOVERNANCE"
+      }
+    ]
+  },
+  "wire_payload": {
+    "edge_similar": {
+      "contract_version": "v0.1",
+      "id": "edge-e004-similar-001",
+      "source": {
+        "domain": "RUNTIME_INSTANCE",
+        "token_type": "INTEGER_PK",
+        "value": 1042
+      },
+      "target": {
+        "domain": "RUNTIME_INSTANCE",
+        "token_type": "INTEGER_PK",
+        "value": 1088
+      },
+      "type": "SIMILAR_TO",
+      "extensions": {
+        "runtime": {
+          "strength": 0.88,
+          "created_at": "2026-08-16T12:00:00+00:00",
+          "metadata": {
+            "similarity_metric": "cosine",
+            "threshold": 0.85
+          }
+        }
+      }
+    },
+    "edge_caused": {
+      "contract_version": "v0.1",
+      "id": "edge-e004-caused-002",
+      "source": {
+        "domain": "RUNTIME_INSTANCE",
+        "token_type": "INTEGER_PK",
+        "value": 1042
+      },
+      "target": {
+        "domain": "RUNTIME_INSTANCE",
+        "token_type": "INTEGER_PK",
+        "value": 1001
+      },
+      "type": "CAUSED_BY",
+      "extensions": {
+        "runtime": {
+          "strength": 0.95,
+          "created_at": "2026-08-16T12:00:00+00:00",
+          "metadata": {
+            "causal_confidence": 0.95,
+            "mechanism": "temporal_precedence"
+          }
+        }
+      }
+    },
+    "edge_governed": {
+      "contract_version": "v0.1",
+      "id": "edge-e004-governed-003",
+      "source": {
+        "domain": "RUNTIME_INSTANCE",
+        "token_type": "INTEGER_PK",
+        "value": 1042
+      },
+      "target": {
+        "domain": "RUNTIME_INSTANCE",
+        "token_type": "INTEGER_PK",
+        "value": 2001
+      },
+      "type": "GOVERNED_BY",
+      "extensions": {
+        "runtime": {
+          "strength": 1.0,
+          "created_at": "2026-08-16T12:00:00+00:00",
+          "metadata": {
+            "law_anchor": "CORE.Codex.Phoenix",
+            "enforceable": true
+          }
+        }
+      }
+    }
+  }
+}

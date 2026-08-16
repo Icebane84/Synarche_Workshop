@@ -1,0 +1,139 @@
+{
+  "experiment": "MIL-003 / Experiment 004",
+  "boundary": "CognitiveEdge (Runtime) -> EdgeContract_v0_1 -> Cross-Domain Semantics",
+  "boundary_integrity": {
+    "ordered_topology_preserved": true,
+    "relationship_semantics_differentiated": true,
+    "runtime_strength_isolated": true,
+    "cross_domain_identity_translation_proven": true,
+    "negative_rejection_proven": true
+  },
+  "overall_status": "PROVEN",
+  "total_assertions": 11,
+  "passed_count": 11,
+  "failed_count": 0,
+  "assertions": [
+    {
+      "name": "1. Contract Version Discriminant",
+      "status": "PASSED",
+      "details": {
+        "version": "v0.1"
+      }
+    },
+    {
+      "name": "2. Ordered Endpoint Topology Preservation",
+      "status": "PASSED",
+      "details": {
+        "similar": {
+          "source": 1042,
+          "target": 1088
+        },
+        "caused": {
+          "source": 1042,
+          "target": 1001
+        },
+        "governed": {
+          "source": 1042,
+          "target": 2001
+        }
+      }
+    },
+    {
+      "name": "3. Discriminated Identity Domain Preservation (RUNTIME_INSTANCE / INTEGER_PK)",
+      "status": "PASSED",
+      "details": {
+        "domain": "RUNTIME_INSTANCE",
+        "token_type": "INTEGER_PK"
+      }
+    },
+    {
+      "name": "4. Relationship Type Preservation",
+      "status": "PASSED",
+      "details": {
+        "similar": "SIMILAR_TO",
+        "caused": "CAUSED_BY",
+        "governed": "GOVERNED_BY"
+      }
+    },
+    {
+      "name": "5. Symmetric Semantic Invariance (SIMILAR_TO is Symmetric)",
+      "status": "PASSED",
+      "details": {
+        "direct": {
+          "isRelated": true,
+          "semanticStrength": 0.88,
+          "relation": "SIMILAR_TO"
+        },
+        "inverse": {
+          "isRelated": true,
+          "semanticStrength": 0.88,
+          "relation": "SIMILAR_TO"
+        }
+      }
+    },
+    {
+      "name": "6. Asymmetric Causal Semantics (CAUSED_BY is Strictly Asymmetric)",
+      "status": "PASSED",
+      "details": {
+        "validDirect": {
+          "isCause": true,
+          "relation": "CAUSED_BY"
+        },
+        "invalidInverse": {
+          "isCause": false
+        }
+      }
+    },
+    {
+      "name": "7. Asymmetric Governance Semantics (GOVERNED_BY is Strictly Asymmetric)",
+      "status": "PASSED",
+      "details": {
+        "validDirect": {
+          "isGoverned": true,
+          "relation": "GOVERNED_BY"
+        },
+        "invalidInverse": {
+          "isGoverned": false
+        }
+      }
+    },
+    {
+      "name": "8. Continuous Runtime Strength Preservation in Extension",
+      "status": "PASSED",
+      "details": {
+        "similarStrength": 0.88,
+        "causedStrength": 0.95,
+        "governedStrength": 1
+      }
+    },
+    {
+      "name": "9. Static Graph Projection (Runtime Strength Cleanly Isolated from Static Topology)",
+      "status": "PASSED",
+      "details": {
+        "staticEdge": {
+          "source": "1042",
+          "target": "2001",
+          "type": "GOVERNED_BY"
+        }
+      }
+    },
+    {
+      "name": "10. Cross-Domain Identity Translation (Runtime PK -> Artifact Identity via IdentityReference)",
+      "status": "PASSED",
+      "details": {
+        "sourceArtifact": "CORE-LOGIC-MEMORY-001",
+        "targetArtifact": "CORE-CODEX-PHOENIX-001",
+        "type": "GOVERNED_BY"
+      }
+    },
+    {
+      "name": "11. Negative Edge Validation (Malformed Edge Invariants Correctly Rejected)",
+      "status": "PASSED",
+      "details": {
+        "missingTargetRejected": true,
+        "emptyTypeRejected": true,
+        "validEdgeAccepted": true
+      }
+    }
+  ]
+}
