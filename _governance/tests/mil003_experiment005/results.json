@@ -1,0 +1,108 @@
+{
+  "experiment": "MIL-003 / Experiment 005",
+  "boundary": "GovernanceVerdict (Runtime) -> Wire -> GovernanceVerdictContract_v0_1",
+  "boundary_integrity": {
+    "verdict_reporting_parity_proven": true,
+    "evaluation_vs_execution_separation_proven": true,
+    "drift_extension_isolated": true,
+    "negative_rejection_proven": true
+  },
+  "overall_status": "PROVEN",
+  "total_assertions": 7,
+  "passed_count": 7,
+  "failed_count": 0,
+  "assertions": [
+    {
+      "name": "1. Contract Version Discriminant",
+      "status": "PASSED",
+      "details": {
+        "expected": "v0.1"
+      }
+    },
+    {
+      "name": "2. Triggered Verdict Field Parity",
+      "status": "PASSED",
+      "details": {
+        "vTriggered": {
+          "contract_version": "v0.1",
+          "rule_id": "GOV-MEM-001",
+          "fired": true,
+          "effect": "block_action",
+          "field": "memory_pressure",
+          "actual": 0.8,
+          "threshold": 0.75
+        }
+      }
+    },
+    {
+      "name": "3. Nominal Rule Evaluation Parity (fired === false)",
+      "status": "PASSED",
+      "details": {
+        "vNominal": {
+          "contract_version": "v0.1",
+          "rule_id": "GOV-MEM-001",
+          "fired": false,
+          "effect": "block_action",
+          "field": "memory_pressure",
+          "actual": 0.5,
+          "threshold": 0.75
+        }
+      }
+    },
+    {
+      "name": "4. Evaluation != Execution Invariant (Verdict Emission Does Not Automatically Execute Effect)",
+      "status": "PASSED",
+      "details": {
+        "queueStatus": [
+          {
+            "action_id": "act-001",
+            "status": "PENDING"
+          },
+          {
+            "action_id": "act-002",
+            "status": "PENDING"
+          }
+        ]
+      }
+    },
+    {
+      "name": "5. Explicit Execution Boundary (Effect Applied Only by Dedicated Executor)",
+      "status": "PASSED",
+      "details": {
+        "gatedQueue": [
+          {
+            "action_id": "act-001",
+            "status": "BLOCKED_BY_GOVERNANCE",
+            "rule": "GOV-MEM-001"
+          },
+          {
+            "action_id": "act-002",
+            "status": "BLOCKED_BY_GOVERNANCE",
+            "rule": "GOV-MEM-001"
+          }
+        ]
+      }
+    },
+    {
+      "name": "6. Drift Extension Namespace Preservation",
+      "status": "PASSED",
+      "details": {
+        "driftExtension": {
+          "target_mission": "SYNARCHE",
+          "findings": [
+            "MISSION_DRIFT: Loom(SYNARCHE) != Law(UNDEFINED)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "7. Negative Verdict Validation (Malformed Verdicts Correctly Rejected)",
+      "status": "PASSED",
+      "details": {
+        "reject1": true,
+        "reject2": true,
+        "acceptValid": true
+      }
+    }
+  ]
+}

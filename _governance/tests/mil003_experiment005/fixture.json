@@ -1,0 +1,64 @@
+{
+  "producer_ground_truth": {
+    "case_a": {
+      "rule_id": "GOV-MEM-001",
+      "fired": true,
+      "effect": "block_action",
+      "field": "memory_pressure",
+      "actual": 0.8,
+      "threshold": 0.75,
+      "expected_behavior": "VERDICT_ISSUED_NO_AUTOMATIC_EXECUTION"
+    },
+    "case_b": {
+      "rule_id": "GOV-MEM-001",
+      "fired": false,
+      "field": "memory_pressure",
+      "actual": 0.5,
+      "threshold": 0.75,
+      "expected_behavior": "CONDITION_NOT_MET_NO_VERDICT"
+    },
+    "case_c": {
+      "rule_id": "GOV-LAW-002",
+      "fired": true,
+      "effect": "flag_dissonance",
+      "target_mission": "SYNARCHE"
+    }
+  },
+  "wire_payload": {
+    "verdict_triggered": {
+      "contract_version": "v0.1",
+      "rule_id": "GOV-MEM-001",
+      "fired": true,
+      "effect": "block_action",
+      "field": "memory_pressure",
+      "actual": 0.8,
+      "threshold": 0.75
+    },
+    "rule_nominal_result": {
+      "contract_version": "v0.1",
+      "rule_id": "GOV-MEM-001",
+      "fired": false,
+      "effect": "block_action",
+      "field": "memory_pressure",
+      "actual": 0.5,
+      "threshold": 0.75
+    },
+    "verdict_drift": {
+      "contract_version": "v0.1",
+      "rule_id": "GOV-LAW-002",
+      "fired": true,
+      "effect": "flag_dissonance",
+      "field": "mission_alignment",
+      "actual": "DRIFT_DETECTED",
+      "threshold": "SYNARCHE",
+      "extensions": {
+        "drift": {
+          "target_mission": "SYNARCHE",
+          "findings": [
+            "MISSION_DRIFT: Loom(SYNARCHE) != Law(UNDEFINED)"
+          ]
+        }
+      }
+    }
+  }
+}
