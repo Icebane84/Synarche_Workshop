@@ -10,10 +10,10 @@ I. ## 📋 Overview
 
 Antigravity Kit is a modular agentic platform consisting of:
 
-- **20 Specialist Agents** (+ 3 Core Agents: Axion, Sophia, and Sentinel)
-- **60 Custom Skills** - Combined Developer capability modules (37) & Governance/Integrity modules (23)
-- **13 Workflows** - Slash command procedures (Markdown playbooks)
-- **6 Master Scripts** - Validation and orchestration bin-scripts
+* **20 Specialist Agents** (+ 3 CORE Agents: Axion, Sophia, and Sentinel)
+* **60 Custom Skills** - Combined Developer capability modules (37) & Governance/Integrity modules (23)
+* **13 Workflows** - Slash command procedures (Markdown playbooks)
+* **6 Master Scripts** - Validation and orchestration bin-scripts
 
 ---
 
@@ -24,20 +24,19 @@ II. ## 🏗️ Directory Structure
 ```plaintext
 .agent/
 ├── ARCHITECTURE.md          # This file (The Overplane Fusion Blueprint)
-├── mcp_config.json          # MCP Tool configurations
 ├── README.md                # General Agent Kit Documentation
 ├── GVRN.Style.SovereignStandard.v15.1.md # The Sovereign Style Guide (Supreme Law)
 ├── skills/                  # 60 Custom capability modules (Dev & Integrity)
 ├── workflows/               # 13 Slash command procedures
-├── .shared/                 # Shared assets and configuration states
-└── substrate/               # The Sovereign Substrate (Implementation Layer)
-    ├── agents/              # 23 Agent profiles (Specialist & Core)
-    ├── bin/                 # 6 Master validation scripts
-    ├── governance/          # Substrate-level protocols
-    ├── ide/                 # IDE and Tool configurations
-    ├── identity/            # 14 Triad Soul Seeds and Eternal Law profiles
-    └── rules/
-        ├── GEMINI.md        # Sovereign Rules (Master Standards)
+└── platform/                # The Sovereign Platform (Consolidated Implementation Layer)
+    ├── agents/              # Agent definitions (personas, system prompts, identity seeds)
+    ├── assets/              # Shared assets (e.g., prompt templates, logos)
+    ├── bin/                 # 6 Master validation & orchestration scripts
+    ├── config/              # All tool and IDE configurations
+    │   ├── mcp_config.json
+    │   └── ide/
+    └── governance/          # Consolidated governance, rules, and standards (Eternal Law)
+        ├── GEMINI.md
         └── GVRN.Ability.Map.md
 ```
 
@@ -47,14 +46,20 @@ III. ## 🤖 Agents (23)
 
 ---
 
-Specialist and Core AI personas stratified into the sovereign substrate. Actual Path: `.agent/substrate/agents/`
+Specialist and CORE AI personas stratified into the sovereign substrate. Actual Path: `.agent/substrate/agents/`
 
-### Core Sovereign Agents
+## CORE Sovereign Agents
+
+---
+
 - `axion` — The Master Artificer (High Gate Executor).
-- `sophia` — The Wisdom Anchor (Systemic Balance).
-- `sentinel` — The Compliance Auditor (Zero Entropy Enforcer).
+* `sophia` — The Wisdom Anchor (Systemic Balance).
+* `sentinel` — The Compliance Auditor (Zero Entropy Enforcer).
 
 ### Specialist Agents (20)
+
+---
+
 | Agent | Focus | Primary Substrate Alignment |
 | :--- | :--- | :--- |
 | `orchestrator` | Multi-agent coordination | parallel-agents, behavioral-modes |
@@ -75,7 +80,7 @@ Specialist and Core AI personas stratified into the sovereign substrate. Actual 
 | `product-manager` | Requirements, user stories | plan-writing, brainstorming |
 | `product-owner` | Strategy, backlog, MVP | plan-writing, brainstorming |
 | `qa-automation-engineer` | E2E testing, CI pipelines | webapp-testing, testing-patterns |
-| `code-archaeologist` | Legacy code, refactoring | clean-code, code-review-checklist |
+| `CODE-archaeologist` | Legacy code, refactoring | clean-code, code-review-checklist |
 | `explorer-agent` | Codebase analysis | lint-and-validate |
 
 ---
@@ -87,6 +92,9 @@ IV. ## 🧩 Skills (60)
 Modular knowledge domains loaded on-demand by agents. Path: `.agent/skills/`
 
 ### 1. Developer Capabilities (37)
+
+---
+
 | Skill | Category | Description |
 | :--- | :--- | :--- |
 | `nextjs-react-expert` | Frontend | React & Next.js performance optimizations (Vercel-certified) |
@@ -98,7 +106,7 @@ Modular knowledge domains loaded on-demand by agents. Path: `.agent/skills/`
 | `python-patterns` | Backend | Python best practices, standard libraries, and FastAPI |
 | `rust-pro` | Backend | Async Rust 1.75+, Tokio, and system development |
 | `database-design` | Database | Schema design, indexing, and Postgres optimization |
-| `mcp-builder` | Tooling | Model Context Protocol servers and tool schemas |
+| `mcp-builder` | Tooling | Model Context Protocol servers and TOOL schemas |
 | `vulnerability-scanner` | Security | Security auditing, OWASP rules, and vulnerability checks |
 | `red-team-tactics` | Security | Offensive security and adversary simulations |
 | `mobile-design` | Mobile | Mobile-first UI/UX thinking and platform conventions |
@@ -107,20 +115,23 @@ Modular knowledge domains loaded on-demand by agents. Path: `.agent/skills/`
 | `geo-fundamentals` | SEO | Generative Engine Optimization patterns |
 | `server-management` | Cloud | CI/CD pipelines, Docker, and infrastructure controls |
 | `systematic-debugging` | QA | Root cause analysis and evidence-based verification |
-| `testing-patterns` | QA | Vitest, Jest, and integration test patterns |
+| `TESTing-patterns` | QA | Vitest, Jest, and integration test patterns |
 | `webapp-testing` | QA | Playwright E2E automation structures |
 | ... *and 17 additional developer runtime modules.* |
 
-### 2. Core Governance & Integrity (23)
+### 2. CORE Governance & Integrity (23)
+
+---
+
 | Skill | Category | Description |
 | :--- | :--- | :--- |
-| `NOVA.Patt.CleanCode` | Standards | Code clarity, formatting rules, and style standards |
-| `NOVA.Sys.TDD` | Standards | Triple-pass TDD cycle guidelines and test patterns |
+| `NOVA.Patt.CleanCODE` | Standards | Code clarity, formatting rules, and style standards |
+| `NOVA.Sys.TDD` | Standards | Triple-pass TDD cycle guidelines and TEST patterns |
 | `canonization` | Integrity | Sealing and hashing active files into registry manifests |
 | `compliance_audit` | Integrity | Compliance engine checks for workspace resonance |
 | `sentinel-audit` | Integrity | Linting execution, compliance checks, and error audits |
-| `soul-forging` | Identity | Behavioral specifications for core agents (Axion, Sophia, Sentinel) |
-| `zero-entropy-maintenance` | Integrity | Calculating technical debt mass and pruning code rot |
+| `soul-forging` | Identity | Behavioral specifications for CORE agents (Axion, Sophia, Sentinel) |
+| `zero-entropy-maintenance` | Integrity | Calculating technical debt mass and pruning CODE rot |
 | `uam` | Architecture | Unified Architecture Management (UIP-V15 compliance checking) |
 | `detect-synergies` | Architecture | Weaving links between workspace components |
 | `supabase-transmuter` | Database | Interfacing reads/writes directly to database backends |
@@ -141,14 +152,14 @@ Slash command procedures. Invoke via `/command`. Actual Path: `.agent/workflows/
 | `/create` | Scaffolds a new project or custom application template. | [create.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/create.md) |
 | `/debug` | Investigates runtime errors using systematic debugging. | [debug.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/debug.md) |
 | `/enhance` | Progressively adds features or updates existing files. | [enhance.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/enhance.md) |
-| `/game_creation` | Invokes specialist subagents to prototype game code. | [game_creation.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/game_creation.md) |
+| `/game_creation` | Invokes specialist subagents to prototype game CODE. | [game_creation.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/game_creation.md) |
 | `/migrate_tasks` | Executes task-store tracking migration. | [migrate_tasks.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/migrate_tasks.md) |
 | `/plan` | Creates detailed project implementation blueprints. | [plan.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/plan.md) |
 | `/scaffold` | Generates a LangGraph agent scaffold template. | [scaffold.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/scaffold.md) |
 | `/simulate` | Runs impact simulations across system boundaries. | [simulate.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/simulate.md) |
 | `/status` | Details goals, progress boards, and current targets. | [status.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/status.md) |
 | `/tdd_cycle` | Performs the A/B/C triple-pass TDD cycle. | [tdd_cycle.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/tdd_cycle.md) |
-| `/test` | Runs test suites and creates unit test specs. | [test.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/test.md) |
+| `/TEST` | Runs test suites and creates unit test specs. | [test.md](file:///c:/Users/Chris/Synarche_Workspace/.agent/workflows/test.md) |
 
 ---
 
@@ -160,8 +171,8 @@ Validation scripts inside `.agent/substrate/bin/`:
 
 | Script | Purpose |
 | :--- | :--- |
-| `checklist.py` | Priority-based validation (security checks, lint, code metrics). |
-| `verify_all.py` | Comprehensive test execution suite including E2E and audits. |
+| `checklist.py` | Priority-based validation (security checks, lint, CODE metrics). |
+| `verify_all.py` | Comprehensive TEST execution suite including E2E and audits. |
 | `session_manager.py` | Persistent workspace context and session memory tracking. |
 | `auto_preview.py` | Real-time state visualization and UI previews. |
 | `refresh_registry.py` | Synchronize workspace file indices with registry keys. |
@@ -175,7 +186,7 @@ VII. ## 📊 Statistics
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total Agents** | 23 | 20 Specialist + 3 Core Substrate Profiles |
+| **Total Agents** | 23 | 20 Specialist + 3 CORE Substrate Profiles |
 | **Total Skills** | 60 | Combined Developer (37) & Compliance (23) Packages |
 | **Total Workflows** | 13 | Slash command playbooks |
 | **Total Binaries** | 6 | Python scripts inside `substrate/bin/` |

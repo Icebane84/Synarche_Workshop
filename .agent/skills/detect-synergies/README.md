@@ -1,4 +1,6 @@
-## **Block A: The Identification Lock (UIP-V15)**
+## Block A: The Identification Lock (UIP-V15)
+
+---
 
 | Key               | Value                             | Description       |
 | :---------------- | :-------------------------------- | :---------------- |
@@ -9,8 +11,6 @@
 | **Status**        | `[ACTIVE]` | The Lifecycle.    |
 | **Relations**     | `REF: GVRN.Master.Registry` | The Network.      |
 
-
-
 ---
 
 # Detect Synergies Shard (.agent/skills/Detect Synergies)
@@ -19,8 +19,10 @@ Specialized protocols for extracting session learnings, correlating multi-agent 
 
 ## 🛠️ Performance Metrics
 
-- **Skill Shard**: [SKILL.md](SKILL.md)
-- **Primary Focus**: Cross-domain Synthesis & Learning Extraction
+---
+
+* **Skill Shard**: [SKILL.md](SKILL.md)
+* **Primary Focus**: Cross-domain Synthesis & Learning Extraction
 
 ---
 

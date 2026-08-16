@@ -1,0 +1,94 @@
+{
+  "experiment": "MIL-003 / Experiment 002",
+  "boundary": "EventContract_v0_1 -> Adapter -> NexusSignalBusClient (Live Runtime)",
+  "boundary_integrity": {
+    "acceptance_proven": true,
+    "rejection_proven": true,
+    "semantic_preservation_proven": true
+  },
+  "overall_status": "PROVEN",
+  "total_assertions": 10,
+  "passed_count": 10,
+  "failed_count": 0,
+  "assertions": [
+    {
+      "name": "1. Adapter Execution & Envelope Generation",
+      "status": "PASSED",
+      "details": {
+        "id": "e001-test-event-uuid4-fixture"
+      }
+    },
+    {
+      "name": "2. Sender BroadcastChannel Initialized",
+      "status": "PASSED",
+      "details": {
+        "channelName": "synarche_proven_arrow_e002_channel"
+      }
+    },
+    {
+      "name": "3. Subscriber Received Exactly One Event",
+      "status": "PASSED",
+      "details": {
+        "receivedCount": 1
+      }
+    },
+    {
+      "name": "4. Event ID Preserved through Bus Dispatch",
+      "status": "PASSED",
+      "details": {
+        "expected": "e001-test-event-uuid4-fixture",
+        "actual": "e001-test-event-uuid4-fixture"
+      }
+    },
+    {
+      "name": "5. Source Identity Preserved through Bus Dispatch",
+      "status": "PASSED",
+      "details": {
+        "expected": "Agent.TarotArtificer",
+        "actual": "Agent.TarotArtificer"
+      }
+    },
+    {
+      "name": "6. Event Type Preserved through Bus Dispatch",
+      "status": "PASSED",
+      "details": {
+        "expected": "COGNITIVE_EXPERIENCE",
+        "actual": "COGNITIVE_EXPERIENCE"
+      }
+    },
+    {
+      "name": "7. Payload Content Preserved through Bus Dispatch",
+      "status": "PASSED",
+      "details": {
+        "expected": "Synthesized cross-language semantic bridge verification payload.",
+        "actual": "Synthesized cross-language semantic bridge verification payload."
+      }
+    },
+    {
+      "name": "8. Timestamp Converted Losslessly to Millisecond Epoch",
+      "status": "PASSED",
+      "details": {
+        "expected": 1786887000123,
+        "actual": 1786887000123
+      }
+    },
+    {
+      "name": "9. Unknown Extension Does Not Corrupt Native Envelope",
+      "status": "PASSED",
+      "details": {
+        "receivedId": "e002-custom-ext-001",
+        "payload": {
+          "level": 42,
+          "score": 9999
+        }
+      }
+    },
+    {
+      "name": "10. Malformed Envelope Is Rejected by isNexusSignalEnvelope Guard",
+      "status": "PASSED",
+      "details": {
+        "rejected": true
+      }
+    }
+  ]
+}

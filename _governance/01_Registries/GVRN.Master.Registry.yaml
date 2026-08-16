@@ -16363,14 +16363,10 @@ SYNG.SKILL.DbDesign:
   version: v15.0 [OMEGA]
 SYNG.SKILL.DetectSynergy:
   artifact_id: SYNG.SKILL.DetectSynergy
-  content_hash: 4ccd3ebb2707d1595b271484e881f0e81a7b33139099ccf48ad7142d6177b496
-  domain: SKILLS
+  content_hash: 176aa90423d722faf27b0bfaa001fccfeb4ad02a599104f465c6fc4a0689d85b
   official_name: README.md
-  parsed_relations:
-  - REF:GVRN.Master.Registry
   path: .agent/skills/detect-synergies/README.md
-  relations: 'REF: GVRN.Master.Registry'
-  status: '[ACTIVE]'
+  status: CANONIZED TS
   version: v15.0 [OMEGA]
 SYNG.SKILL.FrontendDesign:
   artifact_id: SYNG.SKILL.FrontendDesign

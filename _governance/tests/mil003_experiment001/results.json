@@ -1,0 +1,124 @@
+{
+  "experiment": "MIL-003 / Experiment 001",
+  "boundary": "Python CognitiveEvent -> JSON -> TypeScript EventContract_v0_1",
+  "overall_status": "PROVEN",
+  "timestamp_classification": "LOSSLESS_TO_MILLISECOND (SUB_MS_TRUNCATED)",
+  "total_assertions": 11,
+  "passed_count": 11,
+  "failed_count": 0,
+  "assertions": [
+    {
+      "name": "Contract Version Discriminant",
+      "status": "PASSED",
+      "details": {
+        "expected": "v0.1",
+        "actual": "v0.1"
+      }
+    },
+    {
+      "name": "ID Preservation (event_id -> id)",
+      "status": "PASSED",
+      "details": {
+        "expected": "e001-test-event-uuid4-fixture",
+        "actual": "e001-test-event-uuid4-fixture"
+      }
+    },
+    {
+      "name": "Source System Preservation",
+      "status": "PASSED",
+      "details": {
+        "expected": "Agent.TarotArtificer",
+        "actual": "Agent.TarotArtificer"
+      }
+    },
+    {
+      "name": "Event Type Preservation",
+      "status": "PASSED",
+      "details": {
+        "expected": "COGNITIVE_EXPERIENCE",
+        "actual": "COGNITIVE_EXPERIENCE"
+      }
+    },
+    {
+      "name": "Payload Content Preservation (content -> payload)",
+      "status": "PASSED",
+      "details": {
+        "expected": "Synthesized cross-language semantic bridge verification payload.",
+        "actual": "Synthesized cross-language semantic bridge verification payload."
+      }
+    },
+    {
+      "name": "Timestamp Parseability (ISO-8601 -> JS Date)",
+      "status": "PASSED",
+      "details": {
+        "raw_iso": "2026-08-16T13:30:00.123456+00:00",
+        "parsed_epoch_ms": 1786887000123
+      }
+    },
+    {
+      "name": "Timestamp Epoch Millisecond Parity",
+      "status": "PASSED",
+      "details": {
+        "producer_epoch_ms": 1786887000123,
+        "consumer_epoch_ms": 1786887000123,
+        "delta_ms": 0,
+        "sub_millisecond_loss": "Microseconds truncated to milliseconds in JS standard Date"
+      }
+    },
+    {
+      "name": "Vector Embedding Fidelity",
+      "status": "PASSED",
+      "details": {
+        "expected_len": 5,
+        "actual_len": 5,
+        "sample_producer": [
+          0.123456,
+          -0.654321,
+          0.987654
+        ],
+        "sample_consumer": [
+          0.123456,
+          -0.654321,
+          0.987654
+        ]
+      }
+    },
+    {
+      "name": "Importance Score Parity",
+      "status": "PASSED",
+      "details": {
+        "expected": 0.85,
+        "actual": 0.85
+      }
+    },
+    {
+      "name": "Nested Metadata Fidelity",
+      "status": "PASSED",
+      "details": {
+        "expected": {
+          "session_id": "sess-omega-99",
+          "priority_tier": 1,
+          "nested": {
+            "verified": true,
+            "lossless": true
+          }
+        },
+        "actual": {
+          "session_id": "sess-omega-99",
+          "priority_tier": 1,
+          "nested": {
+            "verified": true,
+            "lossless": true
+          }
+        }
+      }
+    },
+    {
+      "name": "Extension Discrimination (kind === 'cognitive')",
+      "status": "PASSED",
+      "details": {
+        "kind": "cognitive"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "producer_ground_truth": {
+    "event_id": "e001-test-event-uuid4-fixture",
+    "event_type": "COGNITIVE_EXPERIENCE",
+    "source": "Agent.TarotArtificer",
+    "content": "Synthesized cross-language semantic bridge verification payload.",
+    "timestamp_iso": "2026-08-16T13:30:00.123456+00:00",
+    "timestamp_epoch_ms": 1786887000123,
+    "timestamp_microseconds": 123456,
+    "vector": [
+      0.123456,
+      -0.654321,
+      0.987654,
+      0.0,
+      0.42
+    ],
+    "importance": 0.85,
+    "metadata": {
+      "session_id": "sess-omega-99",
+      "priority_tier": 1,
+      "nested": {
+        "verified": true,
+        "lossless": true
+      }
+    }
+  },
+  "wire_payload": {
+    "contract_version": "v0.1",
+    "id": "e001-test-event-uuid4-fixture",
+    "source": "Agent.TarotArtificer",
+    "type": "COGNITIVE_EXPERIENCE",
+    "payload": "Synthesized cross-language semantic bridge verification payload.",
+    "timestamp": "2026-08-16T13:30:00.123456+00:00",
+    "extension": {
+      "kind": "cognitive",
+      "data": {
+        "vector": [
+          0.123456,
+          -0.654321,
+          0.987654,
+          0.0,
+          0.42
+        ],
+        "importance": 0.85,
+        "metadata": {
+          "session_id": "sess-omega-99",
+          "priority_tier": 1,
+          "nested": {
+            "verified": true,
+            "lossless": true
+          }
+        }
+      }
+    }
+  }
+}

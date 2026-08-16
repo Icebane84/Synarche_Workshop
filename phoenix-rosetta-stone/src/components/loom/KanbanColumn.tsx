@@ -1,9 +1,9 @@
-import React from 'react';
-import { Trash2, ChevronDown } from 'lucide-react';
-import { Task, TaskStatus } from '@essence/types';
-import { TaskCard } from './TaskCard';
-import Tooltip from '../common/Tooltip';
-import { AnimatePresence, motion } from 'framer-motion';
+import { Task, TaskStatus } from "@essence/types";
+import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown, Trash2 } from "lucide-react";
+import React from "react";
+import Tooltip from "../common/Tooltip";
+import { TaskCard } from "./TaskCard";
 
 /**
  * KanbanColumn Component [OMEGA v15.0]
@@ -37,17 +37,17 @@ export const KanbanColumn: React.FC<KanbanColumnProps> = ({
 }) => {
     const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
         e.preventDefault();
-        e.currentTarget.classList.add('bg-cyan-500/5', 'border-cyan-500/20');
+        e.currentTarget.classList.add("bg-cyan-500/5", "border-cyan-500/20");
     };
 
     const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
-        e.currentTarget.classList.remove('bg-cyan-500/5', 'border-cyan-500/20');
+        e.currentTarget.classList.remove("bg-cyan-500/5", "border-cyan-500/20");
     };
 
     return (
         <div
             onDrop={(e) => {
-                e.currentTarget.classList.remove('bg-cyan-500/5', 'border-cyan-500/20');
+                e.currentTarget.classList.remove("bg-cyan-500/5", "border-cyan-500/20");
                 onDrop(e, status);
             }}
             onDragOver={handleDragOver}
@@ -58,7 +58,7 @@ export const KanbanColumn: React.FC<KanbanColumnProps> = ({
                 <span>{status}</span>
                 <div className="flex items-center gap-3">
                     <span className="text-[10px] font-mono opacity-40">{tasks.length}</span>
-                    {status === 'Completed' && tasks.length > 0 && onClearCompleted && (
+                    {status === "Completed" && tasks.length > 0 && onClearCompleted && (
                         <Tooltip label="Eradicate Completed Wefts">
                             <button
                                 onClick={onClearCompleted}
@@ -75,16 +75,21 @@ export const KanbanColumn: React.FC<KanbanColumnProps> = ({
                 {tasks.length > 0 ? (
                     <AnimatePresence mode="popLayout">
                         {tasks.slice(0, visibleCount).map((task, idx) => {
-                            const cardKey = task.id && task.id.trim() !== ''
-                                ? task.id
-                                : `task-fallback-${task.timestamp || Date.now()}-${idx}`;
+                            const cardKey =
+                                task.id && task.id.trim() !== ""
+                                    ? task.id
+                                    : `task-fallback-${task.timestamp || Date.now()}-${idx}`;
 
                             return (
                                 <TaskCard
                                     key={cardKey}
                                     task={task}
-                                    onSelect={() => { onSelectTask(task.id); }}
-                                    onStatusChange={(newStatus) => { onStatusChange(task.id, newStatus); }}
+                                    onSelect={() => {
+                                        onSelectTask(task.id);
+                                    }}
+                                    onStatusChange={(newStatus) => {
+                                        onStatusChange(task.id, newStatus);
+                                    }}
                                     isSelected={selectedTaskIds?.has(task.id)}
                                     onToggleSelect={onToggleSelectTask ? () => onToggleSelectTask(task.id) : undefined}
                                 />
